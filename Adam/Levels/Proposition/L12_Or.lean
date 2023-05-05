@@ -107,6 +107,5 @@ Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.  H
 **Robo** Keine Ahnung.  War, glaube ich, vorinstalliert.
 "
 
-
-NewTactic assumption rcases
+NewTactic rcases
 DisabledTactic tauto

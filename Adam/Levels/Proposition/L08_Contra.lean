@@ -31,5 +31,4 @@ worin der Widerspruch besteht:  Die Annahme `n ≠ 10` ist genau die Negation vo
 Man muss `≠` immer als `¬(· = ·)` lesen.
 "
 
-NewTactic contradiction
 DisabledTactic tauto
