@@ -12,13 +12,8 @@ ENV PATH="${PATH}:/root/.elan/bin"
 # Copy the game to `game`
 COPY . ./game
 
-WORKDIR /game
-RUN lake update && lake clean && lake exe cache get
-
-WORKDIR /game/lake-packages/GameServer/server/
-RUN lake clean && lake build
-
-WORKDIR /game
-RUN lake build
+RUN cd /game && lake update && lake clean && lake exe cache get &&\
+    cd /game/lake-packages/GameServer/server/ && lake clean && lake build &&\
+    cd /game && lake build && rm -rf /root/.cache
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
