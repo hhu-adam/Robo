@@ -17,3 +17,5 @@ RUN cd /game && lake update && lake clean && lake exe cache get &&\
     cd /game && lake build && rm -rf /root/.cache
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
+
+CMD ./gameserver --server /game/ Adam Adam
