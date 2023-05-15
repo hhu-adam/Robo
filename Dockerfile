@@ -18,4 +18,4 @@ RUN cd /game && lake update && lake clean && lake exe cache get &&\
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
 
-CMD ./gameserver --server /game/ Adam Adam
+CMD ./gameserver --server /game/ Game Game
