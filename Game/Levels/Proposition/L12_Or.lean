@@ -7,7 +7,6 @@ set_option tactic.hygienic false
 --set_option autoImplicit false
 
 
-Game "Adam"
 World "Proposition"
 Level 13
 

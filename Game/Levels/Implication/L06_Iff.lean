@@ -1,6 +1,5 @@
 import Game.Metadata
 
-Game "Adam"
 World "Implication"
 Level 6
 

@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 universe u
 
-Game "Adam"
 World "Module2"
 Level 8
 

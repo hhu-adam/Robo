@@ -2,7 +2,6 @@ import Game.Metadata
 
 import Game.ToBePorted
 
-Game "Adam"
 World "Contradiction"
 Level 2
 

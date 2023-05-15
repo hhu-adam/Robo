@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 import Game.ToBePorted
 
-Game "Adam"
 World "SetTheory2"
 Level 2
 

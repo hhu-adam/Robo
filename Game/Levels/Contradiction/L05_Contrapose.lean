@@ -4,7 +4,6 @@ import Std.Tactic.RCases
 import Game.ToBePorted
 import Game.Levels.Predicate
 
-Game "Adam"
 World "Contradiction"
 Level 5
 

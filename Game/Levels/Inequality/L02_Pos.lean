@@ -6,7 +6,6 @@ set_option tactic.hygienic false
 
 open Nat
 
-Game "Adam"
 World "Inequality"
 Level 2
 

@@ -21,7 +21,6 @@ import Game.Levels.LinearAlgebra.N07_Prod
 import Game.Levels.LinearAlgebra.N08_Prod
 import Game.Levels.LinearAlgebra.N09_Prod
 
-Game "Adam"
 World "Module"
 Title "Vektorraum"
 
@@ -32,10 +31,8 @@ einer Einführungsvorlesung antrifft: Man definiert ein \"Modul\" (Plural: Modul
 über einem Ring. Ein Modul über einem *Körper* wird dann auch \"Vektorraum\" genannt.
 "
 
-Game "Adam"
 World "Basis"
 Title "Lineare Abbildungen"
 
-Game "Adam"
 World "Module2"
 Title "Mehr Vektorräume"

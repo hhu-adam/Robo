@@ -3,7 +3,6 @@ import Game.Levels.Lean.L02_Universe
 import Game.Levels.Lean.L03_ImplicitArguments
 import Game.Levels.Lean.L04_InstanceArguments
 
-Game "Adam"
 World "Lean"
 Title "Lean"
 

@@ -4,7 +4,6 @@ import Game.Metadata
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Induction"
 Level 1
 

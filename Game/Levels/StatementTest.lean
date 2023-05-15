@@ -1,7 +1,6 @@
 -- import Game.Metadata
 -- import Mathlib
 
--- Game "Adam"
 -- World "TestWorld"
 -- Level 1
 

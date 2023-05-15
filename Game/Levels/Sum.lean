@@ -5,7 +5,6 @@ import Game.Levels.Sum.L04_SumOdd
 import Game.Levels.Sum.L05_SumComm
 import Game.Levels.Sum.L06_Summary
 
-Game "Adam"
 World "Sum"
 Title "Endliche Summe"
 

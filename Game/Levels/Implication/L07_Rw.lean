@@ -5,7 +5,6 @@ import Init.Data.ToString
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Implication"
 Level 7
 

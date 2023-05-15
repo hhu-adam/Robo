@@ -2,7 +2,6 @@ import Game.Metadata
 import Std.Tactic.RCases
 import Game.Options.MathlibPart
 
-Game "Adam"
 World "Proposition"
 Level 7
 

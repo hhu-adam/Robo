@@ -5,7 +5,6 @@ import Game.Options.MathlibPart
 set_option tactic.hygienic false
 set_option autoImplicit false
 
-Game "Adam"
 World "SetTheory"
 Level 1
 

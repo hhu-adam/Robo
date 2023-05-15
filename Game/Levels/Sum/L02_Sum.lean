@@ -7,7 +7,6 @@ import Game.Options.MathlibPart
 set_option tactic.hygienic false
 open Finset
 
-Game "Adam"
 World "Sum"
 Level 2
 

@@ -1,7 +1,6 @@
 import Game.Metadata
 
 
-Game "Adam"
 World "Numbers"
 Level 2
 

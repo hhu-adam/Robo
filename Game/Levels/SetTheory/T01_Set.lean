@@ -4,7 +4,6 @@
 
 -- set_option tactic.hygienic false
 
--- Game "Adam"
 -- World "SetTheory"
 -- Level 1
 

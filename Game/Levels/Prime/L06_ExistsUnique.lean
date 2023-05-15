@@ -3,7 +3,6 @@ import Game.Options.MathlibPart
 
 import Game.ToBePorted
 
-Game "Adam"
 World "Prime"
 Level 4
 

@@ -5,7 +5,6 @@ import Game.Options.MathlibPart
 
 import Game.Levels.Sum.L03_ArithSum
 
-Game "Adam"
 World "Sum"
 Level 4
 

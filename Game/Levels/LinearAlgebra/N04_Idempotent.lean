@@ -2,7 +2,6 @@ import Game.Metadata
 
 import Game.Options.MathlibPart
 
-Game "Adam"
 World "Module2"
 Level 4
 

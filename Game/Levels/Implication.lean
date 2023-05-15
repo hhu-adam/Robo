@@ -12,7 +12,6 @@ import Game.Levels.Implication.L11_ByCases
 import Game.Levels.Implication.L12_Rw
 import Game.Levels.Implication.L13_Summary
 
-Game "Adam"
 World "Implication"
 Title "Implis"
 

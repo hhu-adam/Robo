@@ -1,7 +1,6 @@
 import Game.Metadata
 import Game.Options.MathlibPart
 
-Game "Adam"
 World "Nat2"
 Level 5
 

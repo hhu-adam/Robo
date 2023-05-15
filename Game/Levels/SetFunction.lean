@@ -3,6 +3,5 @@ import Game.Levels.SetFunction.L02_Preimage
 import Game.Levels.SetFunction.L03_Range
 import Game.Levels.SetFunction.L04_ImageUnion
 
-Game "Adam"
 World "SetFunction"
 Title "Abbildungen 2"

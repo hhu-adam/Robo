@@ -18,7 +18,6 @@ import Game.Levels.SetTheory.L13_Insert
 -- import Game.Levels.SetTheory.L18_SetOf
 -- import Game.Levels.SetTheory.L19_Subtype
 
-Game "Adam"
 World "SetTheory"
 Title "Mengenlehre"
 
@@ -40,6 +39,5 @@ Sofort begrüßt euch eine ältere Frau, die sich als *Mengea*, die Beschützeri
 vorstellt.
 "
 
--- Game "Adam"
 -- World "SetTheory2"
 -- Title "Mehr Mengenlehre"

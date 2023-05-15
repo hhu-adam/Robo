@@ -3,7 +3,6 @@ import Game.Levels.Prime.L01_Dvd
 -- import Game.Levels.Prime.L05_Prime
 -- import Game.Levels.Prime.L06_ExistsUnique
 
-Game "Adam"
 World "Prime"
 Title "Teilbarkeit"
 

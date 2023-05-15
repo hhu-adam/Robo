@@ -5,7 +5,6 @@ import Game.Options.MathlibPart
 
 import Game.ToBePorted
 
-Game "Adam"
 World "Sum"
 Level 5
 

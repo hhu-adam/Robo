@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "SetTheory"
 Level 3
 

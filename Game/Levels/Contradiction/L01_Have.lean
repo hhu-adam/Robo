@@ -4,7 +4,6 @@ import Game.ToBePorted
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Contradiction"
 Level 1
 

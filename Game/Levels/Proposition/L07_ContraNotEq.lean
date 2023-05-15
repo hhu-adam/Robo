@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 import Game.ToBePorted
 
-Game "Adam"
 World "Proposition"
 Level 8
 

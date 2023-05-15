@@ -7,7 +7,6 @@
 
 -- open Nat
 
--- Game "Adam"
 -- World "Sum"
 -- Level 2
 

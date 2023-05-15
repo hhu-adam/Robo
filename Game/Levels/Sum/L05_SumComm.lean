@@ -10,7 +10,6 @@ set_option tactic.hygienic false
 open BigOperators
 open Finset
 
-Game "Adam"
 World "Sum"
 Level 5
 

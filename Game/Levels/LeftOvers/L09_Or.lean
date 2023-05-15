@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Implication"
 Level 9
 

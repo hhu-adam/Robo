@@ -4,7 +4,6 @@ import Game.Levels.Inequality.L03_Linarith
 import Game.Levels.Inequality.L04_Linarith
 import Game.Levels.Inequality.L05_DrinkersParadox
 
-Game "Adam"
 World "Inequality"
 Title "Traum"
 

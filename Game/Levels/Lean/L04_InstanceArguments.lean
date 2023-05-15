@@ -6,7 +6,6 @@ import Game.ToBePorted
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Lean"
 Level 4
 

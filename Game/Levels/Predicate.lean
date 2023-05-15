@@ -8,7 +8,6 @@ import Game.Levels.Predicate.L07_Exists
 import Game.Levels.Predicate.L08_Forall
 import Game.Levels.Predicate.L09_PushNeg
 
-Game "Adam"
 World "Predicate"
 Title "Quantus"
 

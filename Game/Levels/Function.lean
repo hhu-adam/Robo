@@ -8,7 +8,6 @@ import Game.Levels.Function.L07_Surjective
 import Game.Levels.Function.L08_Bijective
 import Game.Levels.Function.L09_Inverse
 
-Game "Adam"
 World "Function"
 Title "Abbildungen"
 

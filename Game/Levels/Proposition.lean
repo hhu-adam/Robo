@@ -13,7 +13,6 @@ import Game.Levels.Proposition.L11_Or
 import Game.Levels.Proposition.L12_Or
 import Game.Levels.Proposition.L13_Summary
 
-Game "Adam"
 World "Proposition"
 Title "Logo"
 

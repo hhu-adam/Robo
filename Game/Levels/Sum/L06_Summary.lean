@@ -5,7 +5,6 @@ import Game.Options.MathlibPart
 
 import Game.Levels.Sum.L05_SumComm
 
-Game "Adam"
 World "Sum"
 Level 6
 

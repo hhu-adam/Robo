@@ -4,7 +4,6 @@ import Game.Options.MathlibPart
 
 open Submodule
 
-Game "Adam"
 World "Module2"
 Level 6
 

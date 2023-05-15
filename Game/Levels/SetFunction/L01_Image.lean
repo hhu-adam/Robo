@@ -2,7 +2,6 @@ import Game.Metadata
 
 import Game.Options.MathlibPart
 
-Game "Adam"
 World "SetFunction"
 Level 1
 

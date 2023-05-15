@@ -19,7 +19,6 @@ import Game.Levels.Function
 
 
 
-Game "Adam"
 Title "Lean 4 game"
 Introduction
 "

@@ -1,6 +1,5 @@
 import Game.Metadata
 
-Game "Adam"
 World "Inequality"
 Level 1
 

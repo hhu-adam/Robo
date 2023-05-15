@@ -6,7 +6,6 @@ import Game.StructInstWithHoles
 
 set_option tactic.hygienic false
 
-Game "Adam"
 World "Module"
 Level 1
 

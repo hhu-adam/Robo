@@ -5,7 +5,6 @@ import Game.Levels.Contradiction.L04_ByContra
 import Game.Levels.Contradiction.L05_Contrapose
 import Game.Levels.Contradiction.L06_Summary
 
-Game "Adam"
 World "Contradiction"
 Title "Spinoza"
 
