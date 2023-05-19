@@ -7,6 +7,7 @@ import Game.Levels.Predicate.L06_Exists
 import Game.Levels.Predicate.L07_Exists
 import Game.Levels.Predicate.L08_Forall
 import Game.Levels.Predicate.L09_PushNeg
+import Game.Levels.Predicate.L10_DrinkersParadox
 
 World "Predicate"
 Title "Quantus"
