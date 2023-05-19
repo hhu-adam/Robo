@@ -2,7 +2,6 @@ import Game.Levels.Inequality.L01_LE
 import Game.Levels.Inequality.L02_Pos
 import Game.Levels.Inequality.L03_Linarith
 import Game.Levels.Inequality.L04_Linarith
-import Game.Levels.Inequality.L05_DrinkersParadox
 
 World "Inequality"
 Title "Luna"
