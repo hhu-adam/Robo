@@ -11,10 +11,7 @@ Title "Simp"
 
 Introduction
 "
-**Unbekannte**: Willkommen auf *Indu*, unserem Planeten! Bevor ich euch herumzeigen will,
-sagt mir, ob ihr unsere Lebensweise zu verstehen und schätzen wisst:
-In diesem Kapitel lernen wir endliche Summen und mehr Übungen zur Induktion.
-
+**Babylonier**:  
 "
 
 -- Eine endliche Summe läuft erstmal immer über einen endlichen Index

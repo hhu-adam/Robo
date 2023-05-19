@@ -7,7 +7,7 @@ Title "Genau dann, wenn"
 
 Introduction
 "
-**Operationsleiter:** Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen konnten.  Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von solchen Doppelbändern abgeraten wird.  Aber vielleicht sind sie ja unter bestimmten Voraussetzungen doch sicher?  Was meint Ihr zu diesem Fall?
+**Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen konnten.  Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von solchen Doppelbändern abgeraten wird.  Aber vielleicht sind sie ja unter bestimmten Voraussetzungen doch sicher?  Was meint Ihr zu diesem Fall?
 "
 
 Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by

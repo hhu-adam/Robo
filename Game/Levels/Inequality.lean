@@ -13,18 +13,18 @@ Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche ei
 
 Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die du je gesehen hast.  Ein kleines Mädchen begrüßt Euch. 
 
-**Lina:**  Ich bin Lina, die einzige Bewohnerin von Luna.
+**Lina**:  Ich bin Lina, die einzige Bewohnerin von Luna.
 
 Dann sieht sie Robo.
 
-**Lina:** Naja, eigentlich sind wir hier auch zu zweit …
+**Lina**: Naja, eigentlich sind wir hier auch zu zweit …
 
 Sie dreht sich um und ruft etwas, da kommt ein Smart-Elf angefahren.
 
-**Lina:** Das ist Ritha!
+**Lina**: Das ist Ritha!
 
 Robo findet sie offensichtlich süß.  
 
-**Lina:** Aber jetzt steht mal hier nicht so unordentlich herum, bitte! Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte.  Sonst komme ich hier noch ganz durcheinander. 
+**Lina**: Aber jetzt steht mal hier nicht so unordentlich herum, bitte! Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte.  Sonst komme ich hier noch ganz durcheinander. 
 
 "
