@@ -84,26 +84,4 @@ Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.
 
 Die Frage war wieder zu konkret.  Betretenes Schweigen.
 
-**Robo**:  Lass nur.  Ich schlage vor, wir machen als nächstes einen Ausflug auf den Asteroiden da
-drüben.  Und bevor du fragst – hier ist wieder ein Überblick, was du auf diesem Planeten
-gelernt hast.
-
-|               | Beschreibung                |
-|:--------------|:----------------------------|
-| `ℕ`           | Die natürlichen Zahlen.     |
-| `∃`           | Existential-Quantifier      |
-| `∀`           | Forall-Quantifier           |
-| `Even n`      | `n` ist gerade              |
-| `Odd n`       | `n` ist ungerade            |
-
-|       | Taktik                    | Beispiel                                               |
-|:------|:--------------------------|:-------------------------------------------------------|
-| *12ᶜ* | `rw`                      | Umschreiben mit Gleichungen.                           |
-| 13    | `ring`                    | Löst Gleichungen mit `+, -, *, ^`.                     |
-| 14    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
-| 15    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
-| *7ᶜ*  | `rcases h with ⟨x, hx⟩`   | Um ein `∃` in den Annahmen zu zerlegen.                |
-| *8ᵇ*  | `intro`                   | Um ein `∀` im Goal anzugehen.                          |
-| 16    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
-
 "
