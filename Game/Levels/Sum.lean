@@ -6,13 +6,10 @@ import Game.Levels.Sum.L05_SumComm
 import Game.Levels.Sum.L06_Summary
 
 World "Sum"
-Title "Endliche Summe"
+Title "Babylon"
 
-Introduction "Ihr steigt in eurer Raumschiff und setzt eure Reise fort.
-
-Bald erreicht ihr einen neuen Planet. Die oberfläche scheint steinig zu sein, aber nicht etwa
-geröll oder Chaos. Stattdessen, scheinen unzählige Steinplatten zu bizzaren hohen Türme
-gestapelt und die ganze Landschaft wirkt wie ein grosses Puzzle in dem jede Platte
-feinsäuberlich auf den darunterliegenden Platten aufbaut.
+Introduction "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme
+gestapelt sind.  Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte
+feinsäuberlich auf den darunterliegenden Platten aufbaut.  Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann.
 
 Bald trefft ihr auch die Bewohner dieses Planeten an."
