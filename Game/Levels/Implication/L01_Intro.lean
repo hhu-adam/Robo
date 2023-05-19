@@ -30,7 +30,7 @@ Statement (A B : Prop) (hb : B) : A → (A ∧ B) := by
 
   **Robo**: Ja, gute Idee.  Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel `h`, und schreib `intro h`."
   intro hA
-  Hint "**Du**: OK.  Jetzt habe ich also sowohl `{A}` als auch `{B}` in meinen Annahmen und muss `{A} ∧ {B}` zeigen.
+  Hint "**Du**: Okay.  Jetzt habe ich also sowohl `{A}` als auch `{B}` in meinen Annahmen und muss `{A} ∧ {B}` zeigen.
 
   **Robo**:  Genau.  Und wie das geht, weißt du ja schon."
   constructor

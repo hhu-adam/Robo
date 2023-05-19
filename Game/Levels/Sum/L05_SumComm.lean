@@ -17,13 +17,17 @@ Title "Summe vertauschen"
 
 Introduction
 "
-Nun aber zeigt euch eure Begleiterin zwei weitere Türme mit einer kleinen Brücke, die
-zwischen den beiden verläuft. Die Tafel am Eingang wurde von einem herunterfallenden Stein
-zerstört. Auf der oberen Hälfte steht nur folgendes:
+**Babylonier**:  Schaut mal, da vorn stehen zwei Freunde von mir.  Ich muss euch unbedingt vorstellen!
+
+Die beiden Freunde stehen vor zwei Türmen mit einer kleinen Brücke, die zwischen den ihnen verläuft. 
+Aber die Tafel am Eingang ist so sehr verwittert, dass sie nicht mehr lesbar ist.
+Auf der oberen Hälfte steht nur folgendes, *in einer Form, die Du verstehst*:
 
 $$\\sum_{i=0}^n\\sum_{j=0}^m a_{ij} = \\sum_{j=0}^m\\sum_{i=0}^n a_{ij}$$
 
-**Du**: Ich glaube, ich kann das in eurem Dialekt formulieren und euch damit helfen!
+Natürlich fangt ihr an zu rätseln, was darunter stand.
+
+**Robo**: Probier mal, das im lokalen Dialekt zu formulieren.
 "
 
 
@@ -41,9 +45,9 @@ NewLemma Finset.sum_comm
 LemmaTab "Sum"
 
 Conclusion "
-  Euer Begleiter ist ganz begeistert als er dir das Stück Papier aus den Händen nimmt,
-  auf dem du die Aussage gekritzelt hast. Gleich zückt sie einen Meißel und beginnt eine
+  Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,
+  auf das du die Aussage gekritzelt hast. Gleich zückt einer einen Meißel und sie beginnen, eine
   neue Platte zu erstellen.
 
-  Ihr winkt ihr noch zum Abschied und geht weiter.
+  Ihr beschließt, euch noch ein bisschen allein umzusehen.
 "

@@ -18,7 +18,7 @@ Introduction "Auf dem Schwestermond Quantus erwartet Euch bereits ein großer An
 
 **Alle** *(im Chor)*:  Wir sind schon alle hier!
 
-**Du**:  Ok.  Und wer von Euch ist die Königin?
+**Du**:  Okay.  Und wer von Euch ist die Königin?
 
 Nun herrscht betretenes Schweigen.  Alle zucken mit den Schultern.
 

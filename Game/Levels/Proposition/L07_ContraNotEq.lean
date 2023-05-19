@@ -31,7 +31,7 @@ Jetzt habe ich bewiesen, dass eine beliebige natürliche Zahl gleich 37 ist?
 **Robo**: Nein, nicht doch.  Nur eine beliebige Zahl, die ungleich sich selbst ist, ist gleich 37.
 Und gleich 38, und gleich 39, …
 
-**Du**: Ok, ok, verstehe.
+**Du**: Okay, okay, verstehe.
 "
 
 DisabledTactic tauto

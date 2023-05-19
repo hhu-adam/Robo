@@ -53,7 +53,7 @@ sei wahr."
   assumption
 
 Conclusion
-"**Du**  Ok, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
+"**Du**  Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
 Kannst du mir vorher noch einmal kurz alles Leansch zusammenfassen,
 das du mir bis hierher beigebracht hast?
 

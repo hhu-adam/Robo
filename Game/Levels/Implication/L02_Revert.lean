@@ -21,7 +21,7 @@ Statement (A B : Prop) (ha : A) (h : A → B) : B := by
 
   **Du**:  Robo!  Gefragt ist ein Beweis und kein historischer Aufsatz!   Oder komme ich hier etwa mit `mopo` oder so etwas weiter?
 
-  **Robo**:  Ok, nein, sorry.  `mopo` gibt es nicht.  Probier lieber `revert {ha}`."
+  **Robo**:  Okay, nein, sorry.  `mopo` gibt es nicht.  Probier lieber `revert {ha}`."
   revert ha
   Hint "**Du**:  Aha.  `revert` ist qausi `intro` rückwärts.
 

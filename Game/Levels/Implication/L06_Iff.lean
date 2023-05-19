@@ -24,7 +24,7 @@ Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
 
 Conclusion
 "
-**Operationsleiter**: Ok, das leuchtet mir ein.
+**Operationsleiter**: Okay, das leuchtet mir ein.
 
 **Robo** *(zu dir)*: Übrigens, so wie bei `(h : A ∧ B)` die beiden Teile `h.left` und `h.right` heißen,
 heißen bei `(h : A ↔ B)` die beiden Teile `h.mp` und `h.mpr`.
