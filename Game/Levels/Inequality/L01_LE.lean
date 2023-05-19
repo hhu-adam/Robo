@@ -13,13 +13,6 @@ Du fühlst Dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu
 
 **Lina**: Nun, man muss schon das ein oder andere wissen … Zum Glück hilft mir Ritha.   Wenn Du mal probieren willst … hier ist mir gestern etwas verrutscht.
 "
-/-- …und deshalb sind `≥` und `>` eigentlich nur Notationen für `≤`,
-welches man übrigens `\\le` schreibt, was für Less-Equal (also Kleinergleich) steht…
-
-**Du**: Wir haben's verstanden, man benützt also Standartmässig lieber `≤` und `<`,
-aber damit weiß ich eh nichts anzufangen.--/
-
-
 
 Statement
   (n m : ℕ) : m < n ↔ m.succ ≤ n := by
