@@ -12,7 +12,7 @@ import Game.Levels.Predicate.L10_DrinkersParadox
 World "Predicate"
 Title "Quantus"
 
-Introduction "Auf dem Schwestermond Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.  Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.  Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
+Introduction "Auf Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.  Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.  Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
 
 **Du**: Wir haben einen Brief für Eure Königin.  Könntet Ihr uns zu Eurer Königin führen?
 
