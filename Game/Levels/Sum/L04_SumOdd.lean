@@ -8,8 +8,6 @@ import Game.Levels.Sum.L03_ArithSum
 World "Sum"
 Level 4
 
-set_option tactic.hygienic false
-
 open Fin
 open BigOperators
 

@@ -11,7 +11,7 @@ Title "Simp"
 
 Introduction
 "
-**Babylonier**:  Jeder Turm hat einen Inschrift.  Da könnt ihr noch einmal genau nachlesen, warum er steht.  Hier zum Beispiel.  
+**Babylonier**:  Jeder Turm hat eine Inschrift.  Da könnt ihr noch einmal genau nachlesen, warum er steht.  Hier zum Beispiel.  
 "
 
 -- Eine endliche Summe läuft erstmal immer über einen endlichen Index

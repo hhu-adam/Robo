@@ -22,7 +22,7 @@ Dich beschleicht ein ungutes Gefühl.
 
 **Babylonier**:  100 Pro!  
 
-**Du**:  Wir baut ihr denn diese Meisterwerke?
+**Du**:  Wie baut ihr denn diese Meisterwerke?
 
 **Babylonier**: Ganz einfach!  Ein Stein nach dem anderen.
 "

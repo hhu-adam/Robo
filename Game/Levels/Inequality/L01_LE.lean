@@ -7,7 +7,7 @@ Title "Kleinergleich"
 
 Introduction
 "
-Du fühlst Dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.
+Du fühlst dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.
 
 **Du**: Ist gut, wir bemühen uns, nichts durcheinander zu bringen.  Ist es sehr schwer, hier Ordnung zu halten.
 

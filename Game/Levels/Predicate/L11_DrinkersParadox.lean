@@ -7,7 +7,6 @@ Level 11
 
 Title "Drinker's Paradox"
 
-set_option tactic.hygienic false
 
 Introduction
 "
@@ -24,7 +23,7 @@ Du kratzt Dich am Kopf.
 
 **Du**:  Was??
 
-**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst Du das nicht?  Dann lies das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
+**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
 
 **Du**: Glaube ich nicht.
 

@@ -17,7 +17,7 @@ Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Fra
 open Nat
 
 Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
-  Hint "**Du**: Oha.  Ganz links ein `¬`.  Was Du nicht sagst …"
+  Hint "**Du**: Oha.  Ganz links ein `¬`.  Was du nicht sagst …"
   Branch
     unfold Odd
     push_neg

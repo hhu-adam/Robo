@@ -77,7 +77,7 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
   Hint "**Du**: Ich glaube, ich sehe hier eine Gaußsche Summe!!
 
   **Robo**: Ich habe dir das vorhin temporär als `arithmetic_sum` gespeichert.
-  Das kannst Du jetzt benutzen."
+  Das kannst du jetzt benutzen."
   rw [arithmetic_sum]
   Hint "**Du**: Jetzt sollten es eigentlich nur noch arithmetische Operationen sein."
   ring
