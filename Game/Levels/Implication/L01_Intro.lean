@@ -15,7 +15,7 @@ Introduction
 
 Statement (A B : Prop) (hb : B) : A → (A ∧ B) := by
   Hint "
-  **Operationsleiter:**  Die Arbeiten meinen, das wäre so richtig und wir würden das dringend brauchen.  Aber keiner kann es mir beweisen.
+  **Operationsleiter**:  Die Arbeiten meinen, das wäre so richtig und wir würden das dringend brauchen.  Aber keiner kann es mir beweisen.
 
   **Du**: Einen Moment.  Das ist ja gerade so eine Implikation (`\\to`).  Wir nehmen an, dass `{B}` gilt, und wollen zeigen, dass dann gilt `{A}` impliziert `{A} und {B}`. Ja, klar! Natürlich stimmt das.
 
@@ -30,18 +30,18 @@ Statement (A B : Prop) (hb : B) : A → (A ∧ B) := by
 
   **Robo**: Ja, gute Idee.  Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel `h`, und schreib `intro h`."
   intro hA
-  Hint "**Du**: OK.  Jetzt habe ich also sowohl `{A}` als auch `{B}` in meinen Annahmen und muss `{A} ∧ {B}` zeigen.
+  Hint "**Du**: Okay.  Jetzt habe ich also sowohl `{A}` als auch `{B}` in meinen Annahmen und muss `{A} ∧ {B}` zeigen.
 
   **Robo**:  Genau.  Und wie das geht, weißt du ja schon."
   constructor
   assumption
   assumption
 
-Conclusion "**Operationsleiter:** Perfekt!  Danke schön!
+Conclusion "**Operationsleiter**: Perfekt!  Danke schön!
 
 Er geht zu einer Schalttafel und ein paar Knöpfe.  Irgendwo setzt sich lautstark ein Förderband in Bewegung.
 
-**Operationsleiter:** Habt Ihr vielleicht noch ein paar Minuten?
+**Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "
 
 NewTactic intro

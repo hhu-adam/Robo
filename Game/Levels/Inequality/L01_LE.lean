@@ -7,27 +7,20 @@ Title "Kleinergleich"
 
 Introduction
 "
-*(Gespräch)*
+Du fühlst dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.
 
-**Robo** (*lallend*, oder war's fröhlich proklamierend?):
-…und deshalb sind `≥` und `>` eigentlich nur Notationen für `≤`,
-welches man übrigens `\\le` schreibt, was für Less-Equal (also Kleinergleich) steht…
+**Du**: Ist gut, wir bemühen uns, nichts durcheinander zu bringen.  Ist es sehr schwer, hier Ordnung zu halten.
 
-**Du**: Wir haben's verstanden, man benützt also Standartmässig lieber `≤` und `<`,
-aber damit weiß ich eh nichts anzufangen.
-
-**dritte Person**: Komm schon, das kannst du ja sicher:
+**Lina**: Nun, man muss schon das ein oder andere wissen … Zum Glück hilft mir Ritha.   Wenn Du mal probieren willst … hier ist mir gestern etwas verrutscht.
 "
 
 Statement
   (n m : ℕ) : m < n ↔ m.succ ≤ n := by
-  Hint "**Robo**: Du Narr! Das ist doch eine Kuriosität, dass `m < n` auf `ℕ` per Definition
-  als `m + 1 ≤ n` definiert ist!
+  Hint "**Robo**: Denk lieber nicht zu lange darüber nach.  Das ist eine Kuriosität, dass `m < n` auf `ℕ` per Definition  als `m + 1 ≤ n` definiert ist!
 
-  **dritte Person**: Du verdirbst den Witz! Ich wollte ihn doch nur testen."
+  **Lina**: Du verdirbst den Witz!  Ich wollte ihn doch nur testen."
   rfl
 
 OnlyTactic rfl
 
-Conclusion "**Du**: Ha. ha… Na aber jetzt mal ehrlich, könnt ihr mir ein bisschen mehr
-erzählen?"
+Conclusion "**Du**: Ha, ha … Und was muss man noch wissen?"

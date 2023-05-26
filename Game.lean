@@ -61,7 +61,8 @@ Conclusion
 
 
 Path Proposition → Implication → Predicate → Predicate → Contradiction → Sum → Lean → Function
-Path Predicate → Inequality → Sum
+-- Path Predicate → Inequality → Sum
+Path Proposition → Inequality → Function
 -- Path Inequality → Prime
 -- Path Sum → Inequality -- → Induction
 -- Path SetTheory2 → Numbers

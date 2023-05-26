@@ -2,15 +2,28 @@ import Game.Levels.Inequality.L01_LE
 import Game.Levels.Inequality.L02_Pos
 import Game.Levels.Inequality.L03_Linarith
 import Game.Levels.Inequality.L04_Linarith
-import Game.Levels.Inequality.L05_DrinkersParadox
 
 World "Inequality"
-Title "Traum"
+Title "Luna"
 
 Introduction "
-Später erinnerst du dich gar nicht mehr wo und wann du diese Unterhaltung hattest, geschweige
-denn mit wem. Vielleicht war es ein Traum, oder eine Erscheinung. Vielleicht war es
-auch nur eines Abends über einer Runde Getränke.
+Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.  
+Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche eine kleine Öffnung, von der eine Treppe ins Innnere führt. Ihr landet und steigt neugierig hinab.  
 
-Aber auf jedenfall hast du irgendwo gelernt, was du nun weisst.
+Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die du je gesehen hast.  Ein kleines Mädchen begrüßt Euch. 
+
+**Lina**:  Ich bin Lina, die einzige Bewohnerin von Luna.
+
+Dann sieht sie Robo.
+
+**Lina**: Naja, eigentlich sind wir hier auch zu zweit …
+
+Sie dreht sich um und ruft etwas, da kommt ein Smart-Elf angefahren.
+
+**Lina**: Das ist Ritha!
+
+Robo findet sie offensichtlich süß.  
+
+**Lina**: Aber jetzt steht mal hier nicht so unordentlich herum, bitte! Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte.  Sonst komme ich hier noch ganz durcheinander. 
+
 "

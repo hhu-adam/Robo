@@ -66,7 +66,7 @@ LemmaDoc Nat.pos_iff_ne_zero as "pos_iff_ne_zero" in "Nat"
 "
 
 -- TODO: Not minimal description
-LemmaDoc zero_add as "zero_add" in "Addition"
+LemmaDoc Nat.zero_add as "zero_add" in "Addition"
 "
 `zero_add (a : ℕ) : 0 + a = a`
 
@@ -78,7 +78,7 @@ LemmaDoc zero_add as "zero_add" in "Addition"
 * Mathlib Doc: [#zero_add](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Defs.html#zero_add)
 "
 
-LemmaDoc add_zero as "add_zero" in "Addition"
+LemmaDoc Nat.add_zero as "add_zero" in "Addition"
 "
 This lemma says `∀ a : ℕ, a + 0 = a`.
 
@@ -86,7 +86,7 @@ This lemma says `∀ a : ℕ, a + 0 = a`.
 
 * Mathlib Doc"
 
-LemmaDoc add_succ as "add_succ" in "Addition"
+LemmaDoc Nat.add_succ as "add_succ" in "Addition"
 "This lemma says `∀ a b : ℕ, a + succ b = succ (a + b)`.
 
 ## Eigenschaften

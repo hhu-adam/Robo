@@ -13,14 +13,14 @@ Title "Arithmetische Summe"
 
 Introduction
 "
-**Du**: Wie werden solche Meisterwerke eigentlich gebaut?
+**Babylonier**: Kommt, ich zeig Euch mal einen unserer schönsten Türme!
 
-Da zeigt eure Begleitung auf eine kleine Steinplatte neben dem Eingang,
-auf der eien Beschreibung gekritzelt ist.
+Nach einem kurzen Spaziergang steht ihr davon.
 
-**Robo**: Das ist wohl der bekannte arithmetische Turm von Indu, über den hab ich schon
-einmal Daten verarbeitet. Und die antwort auf deine Frage: Vermutlich ein Stein nach
-dem anderen.
+**Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!
+Über den hab ich schon einmal Daten verarbeitet. 
+
+**Babylonier**:  Richtig.  Gauß war ein Babylonier!
 "
 
 open Fin
@@ -30,19 +30,20 @@ open BigOperators
 Statement arithmetic_sum
     "$2 \\cdot \\sum_{i = 0}^n i = n \\cdot (n + 1)$."
     (n : ℕ) : 2 * (∑ i : Fin (n + 1), ↑i) = n * (n + 1) := by
-  Hint "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,
-  wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?
-  Ich würde gerne Induktion über $n$ anwenden.
+  Hint "**Du**: Hmm, das habe ich auch schon einmal gesehen. 
+  Wenn ich mich recht erinnere, zeigt man das am einfachsten durch Induktion.
 
-  **Robo**: Ja dann ist's einfach `induction n with d hd`! Der `with d hd` teil ist
-  Optional und hilft dir die Induktionsvariable und -hypothese zu benennen."
+  **Robo**:  Wenn Du meinst … Auf Leansch wäre das:  `induction n with d hd`! 
+  Der Zusatz `with d hd` ist natürlich optional.  
+  Du kannst damit Namen für Induktionsvariable (d) und -hypothese (h) vorgeben."
   induction n with d hd
-  Hint "**Du**: Zuerst den Induktionsanfang…
+  Hint "**Du**: Zuerst der Induktionsanfang …
 
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   simp
-  Hint "**Robo**: Jetzt im Induktionsschritt: Bei Induktion über endlichen Summen willst du
-  immer mit `rw [sum_univ_castSucc]` anfangen" -- :
+  Hint "**Robo**: Jetzt der Induktionsschritt.
+  Bei Induktion über endlichen Summen beginnst du den Induktionsschritt 
+  immer mit `rw [sum_univ_castSucc]`."
 
   -- $$\\sum_\{i=0}^n a_i = \\sum_{i=0}^\{n-1} a_i + a_n$$"
   rw [sum_univ_castSucc]
@@ -54,20 +55,20 @@ Statement arithmetic_sum
   simp
   Hint "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?
 
-  **Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als Integer anschaut,
-  also die natürliche Abbildung `ℕ ↪ ℤ`. Oder hier, wenn ein Element `x : Fin n` stattdessen als
-  Element in `(↑x : ℕ)` angeschaut wird.
-
-  **Robo**: Übrigens, um die Induktionshypothese anzuwenden brauchst du zuerst das Lemma
-  `mul_add`."
+  **Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,
+  also die natürliche Abbildung `ℕ ↪ ℤ` benutzt. Oder hier, wenn ein Element `x : Fin n` als
+  Element `(↑x : ℕ)` betrachtet wird."
+  Hint (hidden := true)
+  "**Robo**: Um die Induktionshypothese anzuwenden, brauchst du zuerst das Lemma `mul_add`."
   rw [mul_add]
-  Hint "**Du**: Und wie wende ich jetzt die Induktionshypothese an?
+  Hint (hidden := true)
+  "**Du**: Und wie wende ich jetzt die Induktionshypothese an?
 
   **Robo mit `rw` wie jede andere Annahme auch."
   rw [hd]
   Hint "**Du**: Der Rest ist einfach Rechnerei.
 
-  **Robo**: Dann wir `ring` wohl keine Probleme haben."
+  **Robo**: Dann wird `ring` wohl keine Probleme haben."
   -- Hint "**Robo**: Jetzt musst du noch kurz `rw [Nat.succ_eq_add_one]` anwenden.
 
   -- **Du**: Aber wieso?

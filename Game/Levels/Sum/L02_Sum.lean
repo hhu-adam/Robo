@@ -14,9 +14,7 @@ Title "endliche Summe"
 
 Introduction
 "
-Während euch die Person zu einem besonders herausragenden Steinturm führt, löchert
-sie euch noch weiter mit Fragen.
-"
+Ihr schaut euch den nächsten Turm an."
 
 open BigOperators
 
@@ -25,17 +23,20 @@ Statement
     (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : ℕ)) := by
   Hint "**Du**: Hmm, wieder `simp`?
 
-  **Robo**: Nicht ganz. `simp` benützt nur Lemmas, die klar eine Vereinfachung darstellen,
-  und in deiner Bibliothek mit `@[simp]` markiert wird. Hier brauchen wir eine andere
-  Umformung:
+  **Robo**: Nicht ganz. `simp` benützt nur Lemmas, die klar eine Vereinfachung darstellen.
+  Im Lean-Duden sind diese Lemmas mit `@[simp]` markiert.
+  Hier brauchen wir aber folgende Identität:
 
   $$
   \\sum_\{i = 0}^n a_i + b_i = \\sum_\{i = 0}^n a_i + \\sum_\{j = 0}^n b_j
   $$
 
-  **Robo**: Da unklar ist, welche Seite \"einfacher\" ist, wird so ein Lemma nicht mit
-  `@[simp]` markiert. Das heisst du musst `sum_add_distrib` mit `rw`
-  explizit anwenden.
+  **Robo**: Und da bei dieser Identität unklar ist, welche Seite „einfacher“ ist, wird so ein Lemma nicht mit
+  `@[simp]` markiert. 
+
+  **Du**: Hat diese Gleichheit denn wenigstens einen Namen.
+
+  **Robo**:  Sie heißt `sum_add_distrib`.
   "
   rw [sum_add_distrib]
   Hint "**Robo**: Die zweite Summe `∑ x : Fin n, 1` kann jetzt aber mit
@@ -52,5 +53,4 @@ Statement
 NewLemma Finset.sum_add_distrib add_comm
 LemmaTab "Sum"
 
-Conclusion "Eure Begleitung scheint mit der Antwort zu frieden zu sein und zeigt
-freudig an dem Turm empor, den ihr soeben erreicht habt."
+Conclusion "Der Babylonier macht ein sehr zufriedenes Gesicht."

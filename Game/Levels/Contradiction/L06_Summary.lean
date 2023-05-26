@@ -29,7 +29,7 @@ open Nat
 Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
   Hint "Sobald Ihr Euch sicher vom Gravitationsfeld des Asteroiden befreit habt, beugt Ihr Euch wieder über die Aufgabe.
 
-  **Robo**:  Ok, also diesmal fangen wir mit `by_contra g` an!"
+  **Robo**:  Okay, also diesmal fangen wir mit `by_contra g` an!"
   by_contra g
   Hint "**Robo**: Jetzt würde ich einen Widerspruch zu `Odd (n ^ 2)` führen."
   Hint (hidden := true) "**Robo**: Also `suffices g : ¬ Odd (n ^ 2)`."

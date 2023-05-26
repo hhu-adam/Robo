@@ -17,13 +17,13 @@ Title "Implis"
 
 Introduction
 "
-Zurück im Raumschiff macht ihr euch auf den Weg zu einem der beiden Monde, die ebenfalls
+Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Planeten, der ebenfalls
 bewohnt zu sein scheinen.
 
 **Du**: Ich habe immer noch das Gefühl, dass ich die Aufgabe von Königin *Logisinde* ohne `tauto` nicht hätte lösen können.
 Kamen in der Aufgabe nicht auch Implikationen vor?
 
-**Robo**: Vielleicht haben wir ja auf dem Mond *Implis*, den wir gerade ansteuern, Gelegenheit, noch etwas dazuzulernen.  Festhalten bitte …
+**Robo**: Vielleicht haben wir ja auf dem Planeten *Implis*, den wir gerade ansteuern, Gelegenheit, noch etwas dazuzulernen.  Festhalten bitte …
 
 Und damit leitet Robo den Landeanflug ein.
 

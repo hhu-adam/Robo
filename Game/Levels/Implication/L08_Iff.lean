@@ -32,7 +32,7 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   apply h.mp
   assumption
 
-Conclusion "**Operationsleiter**:  Ok, super.  Das müsste passen.
+Conclusion "**Operationsleiter**:  Okay, super.  Das müsste passen.
 
 Er telefoniert wieder.
 

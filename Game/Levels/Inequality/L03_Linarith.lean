@@ -8,19 +8,21 @@ Title "Linarith"
 
 Introduction
 "
-**dritte Person**: Nah wenn wir so spielen:
+**Ritha**: Und wie wärs hiermit?
 "
 
 Statement (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by
-  Hint "**Du**: `simp` geht hier nicht, was mir ja auch einläuchtet.
+  Hint "**Du**: `simp` geht hier nicht vermutlich nicht …
 
-  **Robo**: Ist auch keine Vereinfachung, die du machen willst. Stattdessen,
-  `linarith` kann lineare Gleichungen und Ungleichungen lösen. Das ist das Powertool
-  in der hinsicht."
+  **Robo**: Nein, ist ja auch keine Vereinfachung, die du machen willst. 
+
+  **Lina**:  Hier brauchst Du unser absolutes Powertool!
+
+  **Ritha**: `linarith`"
   linarith
 
 NewTactic linarith
 NewLemma Nat.pos_iff_ne_zero
 LemmaTab "Nat"
 
-Conclusion "**Du**: Naja so beeindruckend war das jetzt auch noch nicht."
+Conclusion "**Du**: Naja, so beeindruckend war das jetzt auch noch nicht."

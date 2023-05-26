@@ -1,2 +1,5 @@
 build/
 lake-packages/
+*.~undo-tree~
+*.*#
+*.*~
