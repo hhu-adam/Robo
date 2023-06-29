@@ -107,7 +107,7 @@ LemmaDoc not_forall as "not_forall" in "Logic"
 
 LemmaDoc not_exists as "not_exists" in "Logic"
 "
-`not_exists {α : Sort _} {P : α → Prop} : (¬∃ x, P x) ↔ ∀ (x : α), ¬P x.
+`not_exists {α : Sort _} {P : α → Prop} : (¬∃ x, P x) ↔ ∀ (x : α), ¬P x`
 
 ## Eigenschaften
 
