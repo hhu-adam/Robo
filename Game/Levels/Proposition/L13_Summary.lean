@@ -112,5 +112,4 @@ Conclusion
 Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon.
 "
 
-NewTactic left right assumption constructor rcases rfl contradiction trivial
 DisabledTactic tauto

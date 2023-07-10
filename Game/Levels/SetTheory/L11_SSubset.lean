@@ -32,6 +32,5 @@ Statement
   rw [mem_diff]
   exact hx
 
-NewTactic constructor intro rw assumption rcases simp tauto trivial
 NewLemma Set.subset_def Set.ssubset_def not_imp Set.mem_diff
 LemmaTab "Set"

@@ -20,5 +20,4 @@ Statement
   use 1
   ring
 
-NewTactic constructor intro rw assumption rcases simp tauto trivial
 LemmaTab "Set"

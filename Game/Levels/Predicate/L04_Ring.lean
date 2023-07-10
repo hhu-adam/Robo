@@ -21,5 +21,3 @@ Statement
 
 Conclusion
 ""
-
-NewTactic ring rw

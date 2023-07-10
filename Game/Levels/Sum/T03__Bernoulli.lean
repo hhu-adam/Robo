@@ -43,5 +43,3 @@ Statement
   -- simp [nat_succ]
   -- rw [mul_add, hn]
   -- ring
-
-NewTactic ring

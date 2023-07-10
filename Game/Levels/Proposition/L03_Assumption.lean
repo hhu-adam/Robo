@@ -31,5 +31,4 @@ Conclusion
 **Untertan** Das ging ja schnell. Super! Vielen Dank.
 "
 
-NewTactic assumption
 DisabledTactic tauto

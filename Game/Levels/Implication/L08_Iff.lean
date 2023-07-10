@@ -39,5 +39,4 @@ Er telefoniert wieder.
 **Operationsleiter**: Bingo!
 "
 
-NewTactic apply assumption
 DisabledTactic tauto rw

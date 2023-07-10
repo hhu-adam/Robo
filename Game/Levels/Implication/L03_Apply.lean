@@ -20,7 +20,7 @@ Statement (A B : Prop) (hA : A) (h : A → B) : B := by
   Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
   assumption
 
-Conclusion "Diesmal scheint das Telefont erfolgreich zu verlaufen."
+Conclusion "Diesmal scheint das Telefonat erfolgreich zu verlaufen."
 
 NewTactic apply
 DisabledTactic revert tauto

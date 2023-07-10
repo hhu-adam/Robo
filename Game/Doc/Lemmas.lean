@@ -86,7 +86,7 @@ This lemma says `∀ a : ℕ, a + 0 = a`.
 
 * Mathlib Doc"
 
-LemmaDoc add_succ as "add_succ" in "Addition"
+LemmaDoc Nat.add_succ as "add_succ" in "Addition"
 "This lemma says `∀ a b : ℕ, a + succ b = succ (a + b)`.
 
 ## Eigenschaften

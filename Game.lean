@@ -60,7 +60,7 @@ Conclusion
 "Fertig!"
 
 
-Path Proposition → Implication → Predicate → Predicate → Contradiction → Sum → Lean → Function
+Path Proposition → Implication → Predicate → Contradiction → Sum → Lean → Function
 Path Predicate → Inequality → Sum
 -- Path Inequality → Prime
 -- Path Sum → Inequality -- → Induction
