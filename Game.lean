@@ -59,17 +59,4 @@ Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email oder erstelle 
 Conclusion
 "Fertig!"
 
-
--- Path Proposition → Implication → Predicate → Contradiction → Sum → Lean → Function
--- Path Predicate → Inequality → Sum
--- Path Inequality → Prime
--- Path Sum → Inequality -- → Induction
--- Path SetTheory2 → Numbers
-
--- Path Lean → SetTheory -- → SetTheory2
-
--- Path SetTheory2 → SetFunction → Module
--- Path Function → SetFunction
--- Path Module → Basis → Module2
-
 MakeGame
