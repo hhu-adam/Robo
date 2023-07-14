@@ -19,7 +19,12 @@
     "rev": "071464ac36e339afb7a87640aa1f8121f707a59a",
     "name": "aesop",
     "inputRev?": "master"}},
-  {"path": {"name": "GameServer", "dir": "./../lean4game/server"}},
+  {"git":
+   {"url": "https://github.com/leanprover-community/lean4game.git",
+    "subDir?": "server",
+    "rev": "73ca0f4d958e7c6f28940c05377215b83c571ca0",
+    "name": "GameServer",
+    "inputRev?": "main"}},
   {"git":
    {"url": "https://github.com/leanprover/std4",
     "subDir?": null,

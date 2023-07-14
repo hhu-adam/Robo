@@ -25,7 +25,7 @@ ignoriert.
 Spezifischer muss man erst werden wenn man sowas wie Kategorientheorie anschaut, wo
 man die Universen tatsächlich kontrollieren muss.
 
-**Du**: Oke, hier rein, da raus. Aber hast du mir noch eine Aufgabe?
+**Du**: Okay, hier rein, da raus. Aber hast du mir noch eine Aufgabe?
 "
 
 universe u

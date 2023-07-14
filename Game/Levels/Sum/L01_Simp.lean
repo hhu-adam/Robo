@@ -11,10 +11,7 @@ Title "Simp"
 
 Introduction
 "
-**Unbekannte**: Willkommen auf *Indu*, unserem Planeten! Bevor ich euch herumzeigen will,
-sagt mir, ob ihr unsere Lebensweise zu verstehen und schätzen wisst:
-In diesem Kapitel lernen wir endliche Summen und mehr Übungen zur Induktion.
-
+**Babylonier**:  Jeder Turm hat eine Inschrift.  Da könnt ihr noch einmal genau nachlesen, warum er steht.  Hier zum Beispiel.  
 "
 
 -- Eine endliche Summe läuft erstmal immer über einen endlichen Index
@@ -43,24 +40,24 @@ open BigOperators
 
 Statement (n : ℕ) : (∑ i : Fin n, (0 + 0)) = 0 := by
   Hint "
-    **Du**: Oh das ist ganz schön viel neues… Mal sehen, das sagt wohl
-    $( \\sum_i 0 + 0 ) = 0$. Dann ist das vielleicht doch nicht so komplex.
+    **Du**: Oh das ist ganz schön viel neues … mal sehen …
 
-    **Robo**: Genau! Man schreibt `\\sum`. Beachte den Index:
-    $( \\sum_\{i=0}^\{n-1} 0 + 0 ) = 0$, also `Fin n` ist ein Typ mit den Elementen
-    $(0, \\ldots, n-1)$.
+    Das sieht aus wie $( \\sum_i 0 + 0 ) = 0$. 
 
-    **Du**: Oke, also `Fin n` hat `n` Elemente. Und was mach ich jetzt?
+    **Robo**: Genau! Man schreibt `\\sum`. Und `i : Fin n` bedeutet,
+    dass summiert wird über $0$, $1$, …, $n-1$.
 
-    **Robo**: `simp` ist eine ganz starke Taktik, die viele Terme vereinfacht, wir
-    fangen besser an, diese zu benützen.
+    **Du**: Okay. Und was mach ich jetzt?
 
-    Irgendwie hast du das Gefühl ein Déjà-vue zu haben…"
+    **Robo**: `simp` ist eine starke Taktik, die viele Terme vereinfacht.
+    Wir fangen besser an, sie zu benutzen.
+
+    Irgendwie hast du das Gefühl, ein Déjà-vue zu haben …"
   simp
 
 OnlyTactic simp
 LemmaTab "Sum"
 
-Conclusion "**Unbekannte**: Sehr gut, folgt mir!"
+Conclusion "**Babylonier**: Seht ihr, das passt!"
 
 -- TODO: Cannot write $\\{0\\}$ inside a hint.

@@ -57,11 +57,11 @@ Die Ziele stehen ja jeweils in den *Annahmen*.
 
 Conclusion
 "
-**Robo** Super!
+**Robo**: Super!
 
 Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 
-**Robo** Meinst du, dieser Hebel, an dem \"Editor mode\" steht, ist echt?
+**Robo**: Meinst du, dieser Hebel, an dem \"Editor mode\" steht, ist echt?
 Oder ist der nur gemalt?  Probier mal!
 "
 

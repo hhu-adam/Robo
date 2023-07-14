@@ -59,7 +59,7 @@ Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
 DisabledTactic tauto
 
 Conclusion "**Operationsleiter**: Das ist ja fantastisch!  Tausend Dank!  Dann will ich Euch auch gar nicht länger aufhalten.
-Ihr wollt bestimmt weiter zu Quantus, unserem Schestermond, oder?
+Ihr wollt bestimmt weiter zum Planeten Quantus, oder?
 
 **Du**: Ehm, vielleicht …
 

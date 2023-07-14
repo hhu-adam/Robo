@@ -8,9 +8,7 @@ Title "Linarith"
 
 Introduction
 "
-**Robo**: Die Taktik kann aber noch viel mehr.
-
-**weitere Person**: Hier, probier mal!
+**Robo**:  Dann versuchs mal hiermit!
 
 $$
 \\begin{aligned}
@@ -23,4 +21,5 @@ $$
 Statement (x y : ℤ) (h₂ : 5 * y ≤ 35 - 2 * x) (h₃ : 2 * y ≤ x + 3) : y ≤ 5 := by
   linarith
 
-Conclusion "**Du**: Boah, das ist schon gar nicht schlecht."
+Conclusion "**Du**: Boah, nicht schlecht."
+  
