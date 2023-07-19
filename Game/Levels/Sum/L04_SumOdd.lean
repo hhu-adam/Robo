@@ -29,8 +29,8 @@ Statement
   induction n
   simp
   Hint (hidden := true) "Den Induktionschritt mit Summen willst du
-  eigentlich immer mit `rw [sum_univ_castSucc]` beginnen."
-  rw [sum_univ_castSucc]
+  eigentlich immer mit `rw [sum_univ_castSuccEmb]` beginnen."
+  rw [sum_univ_castSuccEmb]
   simp
   rw [n_ih]
   --rw [Nat.succ_eq_add_one]

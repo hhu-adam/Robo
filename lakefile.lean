@@ -20,7 +20,7 @@ open Lean in
    : Elab.Command.CommandElabM Unit)
 
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git"@"fc4a489c2af75f687338fe85c8901335360f8541"
+  "https://github.com/leanprover-community/mathlib4.git" @ "88e129706828e01b7622d6635af1ca6667e25bac"
 
 package Game where
   moreLeanArgs := #["-Dtactic.hygienic=false"]

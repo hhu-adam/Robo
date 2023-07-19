@@ -39,7 +39,7 @@ Statement
   -- induction' n with n hn
   -- simp
   -- sorry
-  -- rw [Fin.sum_univ_castSucc]
+  -- rw [Fin.sum_univ_castSuccEmb]
   -- simp [nat_succ]
   -- rw [mul_add, hn]
   -- ring

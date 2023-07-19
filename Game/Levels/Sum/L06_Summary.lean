@@ -44,9 +44,9 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
   induction m
   Hint "**Du**: Also den Induktionsanfang kann man einfach zeigen…"
   simp
-  Hint (hidden := true) "**Robo**: Und jetzt wieder `rw [sum_univ_castSucc]` und `simp` um vorwärts zu
+  Hint (hidden := true) "**Robo**: Und jetzt wieder `rw [sum_univ_castSuccEmb]` und `simp` um vorwärts zu
   kommen!"
-  rw [Fin.sum_univ_castSucc]
+  rw [Fin.sum_univ_castSuccEmb]
   simp
   Hint "**Robo**: Siehst du die Induktionshypothese hier drin?"
   rw [n_ih]
@@ -55,21 +55,21 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
 
   Der Golem schaut dich finster an.
 
-  **Robo**: Du willst `sum_univ_castSucc` auf der rechten Seite anwenden, aber es
+  **Robo**: Du willst `sum_univ_castSuccEmb` auf der rechten Seite anwenden, aber es
   gibt mehrere Orte, wo das Lemma passen würde.
-  Deshalb musst du mit `rw [sum_univ_castSucc (n := {n} + 1)]` angeben, wo genau.
+  Deshalb musst du mit `rw [sum_univ_castSuccEmb (n := {n} + 1)]` angeben, wo genau.
 
   **Du**: Was bedeutet das?
 
   **Robo** Das Lemma hat eine Annahme `n` und du sagst ihm explizit, was es für dieses `n`
   einsetzen muss, nämlich `{n} + 1`"
   Branch
-    rw [Fin.sum_univ_castSucc]
-    Hint "**Robo**: Das hat jetzt einfach `Fin.sum_univ_castSucc` am ersten Ort angewendet,
+    rw [Fin.sum_univ_castSuccEmb]
+    Hint "**Robo**: Das hat jetzt einfach `Fin.sum_univ_castSuccEmb` am ersten Ort angewendet,
     wo das möglich war. Das ist nicht so ideal, die like Seite war schon okay.
 
     **Robo**: Geh doch zurück und bring `rw` dazu am anderen Ort umzuschreiben."
-  rw [Fin.sum_univ_castSucc (n := n + 1)]
+  rw [Fin.sum_univ_castSuccEmb (n := n + 1)]
   simp
   Hint "**Robo**: `add_pow_two` ist auch noch nützlich!"
   rw [add_pow_two]

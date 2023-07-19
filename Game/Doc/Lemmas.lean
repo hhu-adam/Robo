@@ -307,14 +307,14 @@ LemmaDoc Finset.sum_add_distrib as "sum_add_distrib" in "Sum"
 * Mathlib Doc: [#Finset.sum_add_distrib](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/BigOperators/Basic.html#Finset.sum_add_distrib)
 "
 
-LemmaDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "Sum"
+LemmaDoc Fin.sum_univ_castSuccEmb as "sum_univ_castSuccEmb" in "Sum"
 "
 
 ## Eigenschaften
 
 * `simp`-Lemma: Nein
 * Namespace: `Fin`
-* Mathlib Doc: [#sum_univ_castSucc](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/BigOperators/Fin.html#Fin.sum_univ_castSucc)
+* Mathlib Doc: [#sum_univ_castSuccEmb](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/BigOperators/Fin.html#Fin.sum_univ_castSuccEmb)
 "
 
 LemmaDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "Sum"
