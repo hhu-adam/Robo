@@ -59,4 +59,6 @@ Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email oder erstelle 
 Conclusion
 "Fertig!"
 
+Dependency Inequality → SetTheory
+
 MakeGame
