@@ -12,10 +12,23 @@ ENV PATH="${PATH}:/root/.elan/bin"
 # Copy the game to `game`
 COPY . ./game
 
-RUN cd /game && lake update && lake clean && lake exe cache get &&\
-    cd /game/lake-packages/GameServer/server/ && lake clean && lake build &&\
-    cd /game && lake build && rm -rf /root/.cache
+# Update the game
+WORKDIR /game
+RUN lake update
+RUN lake clean
+RUN lake exe cache get
+
+# Build the gameserver first
+WORKDIR /game/lake-packages/GameServer/server/
+RUN lake clean
+RUN lake build
+
+# Build the game
+WORKDIR /game
+lake build
+
+# Remove the cache from the docker container
+rm -rf /root/.cache
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
-
 CMD ./gameserver --server /game/
