@@ -25,7 +25,7 @@ RUN lake build
 
 # Build the game
 WORKDIR /game
-lake build
+RUN lake build
 
 # Remove the cache from the docker container
 rm -rf /root/.cache
