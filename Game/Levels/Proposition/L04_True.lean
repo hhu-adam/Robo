@@ -10,7 +10,8 @@ Introduction
 Der nächste Untertan in der Reihe ist ein Schelm.
 "
 
-Statement "" : True := by
+/--  -/
+Statement : True := by
   Hint "
 **Robo**  Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
 bedingungslos wahr ist.

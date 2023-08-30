@@ -16,7 +16,7 @@ von Mengen: $\\bigcup_i A_ i$ und $\\bigcap_j B_ j$.
 
 open Set
 
-Statement
-"" : True := sorry
+/--  -/
+Statement : True := sorry
 
 LemmaTab "Set"

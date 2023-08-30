@@ -13,8 +13,8 @@ Introduction
 Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes Anliegen.
 "
 
-Statement ""
-  (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
+/--  -/
+Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
   Hint "
 **Du**  Jetzt müssen wir wohl die Annahme de-konstruieren.
 

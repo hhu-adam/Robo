@@ -32,8 +32,8 @@ namespace LevelFunction4
 def f : ℚ → ℚ := fun x ↦ 5 * x
 def g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
 
-Statement ""
-    : f ∘ g = g ∘ f := by
+/--  -/
+Statement : f ∘ g = g ∘ f := by
   Hint "
   **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.
 

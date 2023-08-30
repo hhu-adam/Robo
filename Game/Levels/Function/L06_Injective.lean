@@ -38,7 +38,8 @@ open Function
 
 def f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
 
-Statement "" : ¬ (f + f).Injective := by
+/--  -/
+Statement : ¬ (f + f).Injective := by
   unfold Injective
   Hint "**Robo**: Das ist sicher ein Hinweis.
 

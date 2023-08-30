@@ -31,9 +31,8 @@ example (n : ℕ) : (∑ i : Fin (n + 1), ↑(2 * i - 1)) = n ^ 2 := by
 
 #check Finset.sum_comm
 
-Statement
-"Zeige $\\sum_{i = 0}^n i = \\frac{n ⬝ (n + 1)}{2}$."
-  (n : ℕ) : (∑ i : Fin (n + 1), ↑i) = n * (n + 1) / 2 := by
+/-- Zeige $\\sum_{i = 0}^n i = \\frac{n ⬝ (n + 1)}{2}$. -/
+Statement (n : ℕ) : (∑ i : Fin (n + 1), ↑i) = n * (n + 1) / 2 := by
   sorry
   -- apply hh1
   -- induction' n with n hn

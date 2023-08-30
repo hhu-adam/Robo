@@ -26,8 +26,8 @@ Die folgende Aufgabe ist entsprechend mit `rfl` lösbar.
 
 open Set
 
-Statement
-"Die Menge $\\{4, 9\\}$ ist per Definition $\\{4}\\cup\\{9\\}$." :
+/-- Die Menge $\\{4, 9\\}$ ist per Definition $\\{4}\\cup\\{9\\}$. -/
+Statement :
     ({4, 9} : Set ℕ) = Set.insert 4 {9} := by
   rfl
 

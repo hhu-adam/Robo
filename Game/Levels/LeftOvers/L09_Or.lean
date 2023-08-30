@@ -20,10 +20,9 @@ umzugehen um folgende Aussage zu beweisen.
 | Goal    | `constructor`            | `left`/`right`            |
 "
 
-Statement and_or_imp
-    "Angenommen $(A \\land B) \\lor (A \\Rightarrow C)$ und $A$ sind wahr, zeige dass
-    $B \\lor (C \\land A)$ wahr ist."
-    (A B C : Prop) (h : (A ∧ B) ∨ (A → C)) (hA : A) : (B ∨ (C ∧ A)) := by
+/-- Angenommen $(A \\land B) \\lor (A \\Rightarrow C)$ und $A$ sind wahr, zeige dass
+    $B \\lor (C \\land A)$ wahr ist. -/ Statement and_or_imp
+ (A B C : Prop) (h : (A ∧ B) ∨ (A → C)) (hA : A) : (B ∨ (C ∧ A)) := by
   rcases h with h₁ | h₂
   left
   rcases h₁ with ⟨x, y⟩

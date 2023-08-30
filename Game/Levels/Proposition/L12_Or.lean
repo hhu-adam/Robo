@@ -17,8 +17,8 @@ Introduction
 Der nächste bitte …
 "
 
-Statement ""
-    (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
+/--  -/
+Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
   Hint "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir,
 wie die Klammern gesetzt sind. Irre…
 

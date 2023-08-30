@@ -16,7 +16,8 @@ Introduction
 
 open Function
 
-Statement "" : Bijective (fun (n : ℤ) ↦ n + 1) := by
+/--  -/
+Statement : Bijective (fun (n : ℤ) ↦ n + 1) := by
   Hint "
   **Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.
 

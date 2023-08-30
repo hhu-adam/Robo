@@ -25,8 +25,8 @@ wichtigsten Taktiken für diese Situation an.
 
 -- Note: The other direction would need arguing by cases.
 
-Statement ""
-  (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
+/--  -/
+Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
   Hint (hidden := true)
   "**Robo**: Ich würd zuerst die Annahme {h} mit `rcases {h}` aufteilen."
   Branch

@@ -20,9 +20,8 @@ Note: `rw [subset_def]` macht das gleiche für `⊆`.
 
 open Set
 
-Statement
-""
-    (A B : Set ℕ) (h : A ⊂ B) : ∃ x, x ∈ B \ A := by
+/--  -/
+Statement (A B : Set ℕ) (h : A ⊂ B) : ∃ x, x ∈ B \ A := by
   cases' h with h₁ h₂
   rw [subset_def] at h₂
   rw [not_forall] at h₂

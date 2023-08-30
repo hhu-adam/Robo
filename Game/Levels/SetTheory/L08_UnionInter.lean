@@ -21,9 +21,8 @@ der Aussage `C \\ (A ∩ B) + …` wird vermutlich mit `diff_inter_…` anfangen
 
 open Set
 
-Statement
-""
-    (A B : Set ℕ) : univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
+/--  -/
+Statement (A B : Set ℕ) : univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
   rw [diff_inter]
   Hint (hidden := true) "mit `union_assoc` und `union_diff_distrib` kannst du
   auf der rechten Seite weiterkommen."

@@ -13,8 +13,8 @@ Introduction
 
 open Set
 
-Statement
-"" :
+/--  -/
+Statement :
     3 ∈ {n : ℕ | Odd n}  := by
   rw [mem_setOf]
   use 1

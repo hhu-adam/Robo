@@ -40,8 +40,7 @@ def my_zero_map : V →ₗ[R] W :=
 
 "
 
-Statement
-"
+/--
 Zeige dass die Abbildung
 
 ```
@@ -50,8 +49,8 @@ Zeige dass die Abbildung
 ```
 
 `ℝ`-linear ist.
-"
-    : ℝ² →ₗ[ℝ] ℝ² :=
+ -/
+Statement : ℝ² →ₗ[ℝ] ℝ² :=
   { toFun := fun v ↦ ![5 * (v 1) + 2 * (v 2), (v 1) - (v 2)]
     map_add' := by
       -- Wähle zwei beliebige Vektoren mit `intros` aus.

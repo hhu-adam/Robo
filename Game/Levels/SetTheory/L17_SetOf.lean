@@ -14,8 +14,8 @@ Introduction
 
 open Set
 
-Statement
-"" :
+/--  -/
+Statement :
     {2, 7} ⊆ {n : ℕ | n = 2 ∨ (n ≤ 10 ∧ Odd n)}  := by
   rw [setOf_or, setOf_and]
   intro x hx

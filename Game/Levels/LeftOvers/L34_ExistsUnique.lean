@@ -12,7 +12,8 @@ TODO: Es existiert genau eine gerade Primzahl.
 
 "
 
-Statement "" : True := by
+/--  -/
+Statement : True := by
   trivial
 
 Conclusion

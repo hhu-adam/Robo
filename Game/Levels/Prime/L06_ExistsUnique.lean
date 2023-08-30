@@ -16,9 +16,8 @@ Hier lässt sich noch eine neue Notation einführen: `∃!` bedeutet
 
 "
 
-Statement
-"Zeige dass die einzige gerade Primzahl $2$ ist."
-    : ∃! p, Nat.Prime p ∧ Even p := by
+/-- Zeige dass die einzige gerade Primzahl $2$ ist. -/
+Statement : ∃! p, Nat.Prime p ∧ Even p := by
   use 2
   constructor
   simp

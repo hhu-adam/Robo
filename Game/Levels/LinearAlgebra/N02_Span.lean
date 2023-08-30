@@ -23,8 +23,8 @@ usally denoted `f(M) = {y | ∃ x ∈ M, f(x) = y}` in mathematical texts.
 set_option autoImplicit false
 -- set_option pp.all true
 
-Statement
-"" : True := by
+/--  -/
+Statement : True := by
   sorry
 
 -- example {K V W : Type} [Field K] [AddCommMonoid V] [AddCommMonoid W]

@@ -19,7 +19,8 @@ Bevor er dieses aushändigt, will er aber folgendes wissen:
 
 open Function
 
-Statement "" : Surjective (fun (n : ℤ) ↦ n + 1) := by
+/--  -/
+Statement : Surjective (fun (n : ℤ) ↦ n + 1) := by
   Hint "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.
 
   **Du**: Dann kann ich das auch einfach wie Quantifier behandeln?

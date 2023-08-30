@@ -14,9 +14,8 @@ Introduction
 Dieses Kapitel enthält noch ein paar Übungen zur Induktion.
 "
 
-Statement
-"Zeige dass $5^n + 7$ durch $4$ teilbar ist."
-    (n : ℕ) : 4 ∣ 5^n + 7 := by
+/-- Zeige dass $5^n + 7$ durch $4$ teilbar ist. -/
+Statement (n : ℕ) : 4 ∣ 5^n + 7 := by
   induction n
   simp
   rcases n_ih

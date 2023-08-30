@@ -15,9 +15,8 @@ sind `not_mem_compl_iff` und `compl_eq_univ_diff`.
 
 open Set
 
-Statement
-""
-    (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
+/--  -/
+Statement (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
   Hint "Start doch mit `apply Subset.antisymm`."
   apply Subset.antisymm
   simp only [subset_univ]

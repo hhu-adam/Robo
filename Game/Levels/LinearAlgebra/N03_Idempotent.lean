@@ -12,9 +12,8 @@ Introduction
 
 "
 
-Statement
-""
-    {R V : Type _} [Semiring R] [AddCommGroup V] [Module R V]
+/--  -/
+Statement {R V : Type _} [Semiring R] [AddCommGroup V] [Module R V]
     (p : V →ₗ[R] V) (h : p ∘ p = p) : LinearMap.ker p ⊔ LinearMap.range p = ⊤ := by
   sorry
   --   rw eq_top_iff,

@@ -12,8 +12,8 @@ Introduction
 Als nächstes kommen drei Querulanten.  Der erste hat folgendes Problem:
 "
 
-Statement ""
-    (A : Prop) (h : False) : A := by
+/--  -/
+Statement (A : Prop) (h : False) : A := by
   Hint "**Du** Wenn ich das jetzt richtig lese, ist `{A}` eine Aussage,
 und wir haben außerdem eine Annahme names `{h}`, die besagt …
 

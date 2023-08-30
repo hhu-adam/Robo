@@ -18,7 +18,8 @@ Plötzlich begegnet ihr einem älteren Wesen mit Fakel. Auf die Frage antwortet 
 "
 open Set Function
 
-Statement "" : Injective (fun (n : ℤ) ↦ n + 3) := by
+/--  -/
+Statement : Injective (fun (n : ℤ) ↦ n + 3) := by
   Hint "**Robo**: `Injective` ist als `∀ \{a b : U}, f a = f b → a = b`
   definiert, also kannst du mit `intro` anfangen."
   intro a b

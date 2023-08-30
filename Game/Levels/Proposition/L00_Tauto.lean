@@ -17,8 +17,8 @@ Dazwischen sollst du offenbar einen Beweis eintragen.
 Du siehst Robo hilflos an.
 "
 
-Statement ""
-    (A B C : Prop) :
+/--  -/
+Statement (A B C : Prop) :
     ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C) := by
   Hint "**Robo**  Das ist ganz einfach.  Mit `{A} {B} {C} : Prop` meint sie:
   `{A}`, `{B}` und `{C}` sind irgendwelche Aussagen (*propositions*).

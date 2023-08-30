@@ -10,9 +10,8 @@ Introduction
 "
 "
 
-Statement
-""
-    (U : Set ℕ) (f : ℕ → ℕ) : U ⊆ f ⁻¹' (f '' U) := by
+/--  -/
+Statement (U : Set ℕ) (f : ℕ → ℕ) : U ⊆ f ⁻¹' (f '' U) := by
   intro x hx
   use x
   constructor

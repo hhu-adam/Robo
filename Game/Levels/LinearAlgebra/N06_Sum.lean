@@ -15,9 +15,8 @@ Eine interne Summe über eine Familie von Untermodulen `(T : ι → submodule K 
 wird als `⨆ (i : ι), T i` geschrieben (`\\supr`).
 "
 
-Statement
-""
-    {K V ι : Type _} [Field K] [AddCommMonoid V] [Module K V]
+/--  -/
+Statement {K V ι : Type _} [Field K] [AddCommMonoid V] [Module K V]
     (T : ι → Submodule K V) : (⨆ (i : ι), T i) = span K ( ⋃ i, T i) := by
   rw [Submodule.span_unionᵢ]
   simp
