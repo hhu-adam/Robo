@@ -8,7 +8,7 @@ def LocalGameServer : Dependency := {
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" "main" "server"
+  src := Source.git "https://github.com/leanprover-community/lean4game.git" "73b80e714dd4712f11675a59d67980e3815b53c9" "server"
 }
 
 /- Choose dependency depending on the environment variable NODE_ENV -/
@@ -20,7 +20,7 @@ open Lean in
    : Elab.Command.CommandElabM Unit)
 
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git" @ "88e129706828e01b7622d6635af1ca6667e25bac"
+  "https://github.com/leanprover-community/mathlib4.git" @ "658235826386f03bfb2b231fa42ead956567ce60"
 
 package Game where
   moreLeanArgs := #["-Dtactic.hygienic=false"]

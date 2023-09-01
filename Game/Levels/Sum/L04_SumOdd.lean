@@ -28,8 +28,8 @@ Statement (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
   induction n
   simp
   Hint (hidden := true) "Den Induktionschritt mit Summen willst du
-  eigentlich immer mit `rw [sum_univ_castSuccEmb]` beginnen."
-  rw [sum_univ_castSuccEmb]
+  eigentlich immer mit `rw [sum_univ_castSucc]` beginnen."
+  rw [sum_univ_castSucc]
   simp
   rw [n_ih]
   --rw [Nat.succ_eq_add_one]

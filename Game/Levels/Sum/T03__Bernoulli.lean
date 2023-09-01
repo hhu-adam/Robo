@@ -38,7 +38,7 @@ Statement (n : ℕ) : (∑ i : Fin (n + 1), ↑i) = n * (n + 1) / 2 := by
   -- induction' n with n hn
   -- simp
   -- sorry
-  -- rw [Fin.sum_univ_castSuccEmb]
+  -- rw [Fin.sum_univ_castSucc]
   -- simp [nat_succ]
   -- rw [mul_add, hn]
   -- ring

@@ -18,8 +18,7 @@ import Game.Levels.Function
 --import Game.Levels.LinearAlgebra
 
 
-
-Title "Lean 4 game"
+Title "Game over oder QED?"
 Introduction
 "
 # Game Over oder QED?
@@ -33,27 +32,44 @@ die in Form von grauen Punkten dargestellt sind. Gelöste Levels werden grün.
 
 Klicke auf den ersten Planeten *Logo*, um deine Reise zu starten.
 
-### Spielstand
+
+### More
+Schau im Menü unter \"Game Info\" für mehr Informationen zum Spiel.
+"
+
+Info
+"
+## Spielstand
 
 Dein Spielstand wird lokal in deinem Browser als *site data* gespeichert.
 Solltest du diese löschen, verlierst du deinen Spielstand!
 Viele Browser löschen *site data* und *cookies* zusammen.
-Du kannst aber jederzeit jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
+Wenn du \"Game rules: lax\" auswählst kannst aber jederzeit jedes Level spielen,
+auch wenn du vorhergende Levels noch nicht gelöst hast.
 
-### Funding
+## Funding
 
 Dieses Lernspiel wurde und wird im Rahmen des Projekts
 [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
 an der Heinrich-Heine-Universität Düsseldorf entwickelt.
-Es wird finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.
+Es wird finanziert durch das Programm *Freiraum 2022* der
+*Stiftung Innovation in der Hochschullehre*.
 
-### Kontakt
+## Credits
+
+* **Creators:** Jon Eugster, Alexander Bentkamp, Marcus Zibrowius
+* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
+
+## Kontakt
 
 Das Spiel befindet sich noch in der Entwicklung.
 Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email oder erstelle einen
-[Issue auf Github](https://github.com/leanprover-community/lean4game/issues).
+Issue auf Github:
 
-[Jon Eugster](https://www.math.hhu.de/lehrstuehle-/-personen-/-ansprechpartner/innen/lehrstuehle-des-mathematischen-instituts/lehrstuhl-fuer-algebraische-geometrie/team/jon-eugster)
+* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues).
+* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
+
+Kontakt: [Jon Eugster](https://www.math.hhu.de/lehrstuehle-/-personen-/-ansprechpartner/innen/lehrstuehle-des-mathematischen-instituts/lehrstuhl-fuer-algebraische-geometrie/team/jon-eugster)
 "
 
 Conclusion

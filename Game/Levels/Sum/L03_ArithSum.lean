@@ -41,10 +41,10 @@ open BigOperators
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   simp
   Hint "**Robo**: Jetzt im Induktionsschritt: Bei Induktion über endlichen Summen willst du
-  immer mit `rw [sum_univ_castSuccEmb]` anfangen" -- :
+  immer mit `rw [sum_univ_castSucc]` anfangen" -- :
 
   -- $$\\sum_\{i=0}^n a_i = \\sum_{i=0}^\{n-1} a_i + a_n$$"
-  rw [sum_univ_castSuccEmb]
+  rw [sum_univ_castSucc]
   -- TODO: Bug. Dieser Hint wird nicht angezeigt.
   Hint "**Du**: Oh das sieht jetz aber kompliziert aus…
 
@@ -86,7 +86,7 @@ open BigOperators
   ring
 
 NewTactic induction
-NewLemma Fin.sum_univ_castSuccEmb Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
+NewLemma Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
 LemmaTab "Sum"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,
