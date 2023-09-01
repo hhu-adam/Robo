@@ -21,8 +21,8 @@ im Grunde die Definition einsetzt.
 
 open Set
 
-Statement
-"" (X Y : Set ℕ):
+/--  -/
+Statement (X Y : Set ℕ):
     𝒫 X ∪ 𝒫 Y ⊆ 𝒫 (X ∪ Y)  := by
   Hint "**Robo**: Fang mal mit `intro` an, wie das bei `⊆` fast immer der Fall ist."
   intro A hA

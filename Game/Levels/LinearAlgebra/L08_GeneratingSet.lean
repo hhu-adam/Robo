@@ -20,9 +20,8 @@ open Submodule Set Finsupp
 
 open BigOperators -- Summen Notation
 
-Statement
-  "Zeige, dass `![1, 0], ![1, 1]` den ganzen `ℝ`-Vektorraum `ℝ²` aufspannt."
-    : ⊤ ≤ span ℝ (Set.range ![(![1, 0] : Fin 2 → ℝ), ![1, 1]]) := by
+/-- Zeige, dass `![1, 0], ![1, 1]` den ganzen `ℝ`-Vektorraum `ℝ²` aufspannt. -/
+Statement : ⊤ ≤ span ℝ (Set.range ![(![1, 0] : Fin 2 → ℝ), ![1, 1]]) := by
   --rw [top_le_span_range_iff_forall_exists_fun]
   sorry
   --   intro v,

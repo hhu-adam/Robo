@@ -25,7 +25,7 @@ ein Lemma von vorhin
 lemma Fin.sum_univ_castSucc {β : Type _} [AddCommMonoid β]
     {n : ℕ} (f : Fin (n + 1) → β) :
     ∑ i : Fin (n + 1), f i =
-    ∑ i : Fin n, f (↑Fin.castSucc.toEmbedding i) + f (Fin.last n) := by
+    ∑ i : Fin n, f (Fin.castSucc i) + f (Fin.last n) := by
   sorry
 ```
 

@@ -21,7 +21,8 @@ example (f : ℤ → ℤ) (h : StrictMono f) : Injective f := by
 
 -- Odd.strictMono_pow
 
-Statement "" : Injective (fun (n : ℤ) ↦ n^3 + (n + 3)) := by
+/--  -/
+Statement : Injective (fun (n : ℤ) ↦ n^3 + (n + 3)) := by
   Hint "**Du**: Hmm, das ist etwas schwieriger…
 
   **Robo**: Aber ich hab einen Trick auf Lager:

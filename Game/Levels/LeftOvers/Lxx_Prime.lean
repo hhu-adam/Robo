@@ -39,9 +39,8 @@ entweder `a` oder `b` eins.
 
 "
 
-Statement
-  "Wenn `n * m` eine Primzahl ist, dann ist einer der beiden Faktoren eins."
-  (p n m : ℕ) (h : prime p) (h₂ : p = m * n) : n = 1 ∨ m = 1 := by
+/-- Wenn `n * m` eine Primzahl ist, dann ist einer der beiden Faktoren eins. -/
+Statement (p n m : ℕ) (h : prime p) (h₂ : p = m * n) : n = 1 ∨ m = 1 := by
   unfold prime at h
   rcases h with ⟨l, r⟩
   apply r

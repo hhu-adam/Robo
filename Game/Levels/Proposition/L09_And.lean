@@ -13,7 +13,8 @@ Introduction
 Der nächste Formalosoph in der Reihe hat seine Frage bereìts mitgebracht.
 Er legt sie uns vor, setzt sich hin und häkelt.
 "
-Statement "" (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
+/--  -/
+Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   Hint
 "
 **Du**:  Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir

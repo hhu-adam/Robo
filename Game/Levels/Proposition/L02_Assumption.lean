@@ -10,8 +10,8 @@ Introduction
 Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne. Es ist schüchtern und schreibt bloß.
 "
 
-Statement ""
-    (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := by
+/--  -/
+Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := by
   Hint "
 **Robo**: `{n} : ℕ` bedeutet, `{n}` ist eine natürliche Zahl.
 

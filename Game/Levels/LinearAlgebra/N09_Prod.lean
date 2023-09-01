@@ -27,8 +27,8 @@ example : Module K (Π₀ i, V i) := inferInstance
 
 variable {U : Type u} [AddCommMonoid U] [Module K U]
 
-Statement
-"" : True := by
+/--  -/
+Statement : True := by
   sorry
 
 -- -- :(

@@ -32,7 +32,6 @@ end
 Äquivalenz als Vektorräume schreibt man als `ℝ`-lineare Äquivalenz `≃ₗ[ℝ]`.
 "
 
-Statement
-"Zeige dass das Produkt `ℝ × ℝ` und `ℝ²` isomorph sind als `ℝ`-Vektorräume."
-    : ((Fin 2) → ℝ) ≃ₗ[ℝ] ℝ × ℝ := by
+/-- Zeige dass das Produkt `ℝ × ℝ` und `ℝ²` isomorph sind als `ℝ`-Vektorräume. -/
+Statement : ((Fin 2) → ℝ) ≃ₗ[ℝ] ℝ × ℝ := by
   sorry

@@ -17,8 +17,8 @@ Introduction
 Der nächste bitte …
 "
 
-Statement ""
-    (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
+/--  -/
+Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
   Hint "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir,
 wie die Klammern gesetzt sind. Irre…
 
@@ -35,22 +35,20 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
 
 **Robo** Ja, aber diesmal nicht `rcases {h} with ⟨h₁, h₂⟩`, sondern `rcases {h} with h | h`."
   rcases h with h | h
-  Hint "**Robo**
-Jetzt musst du dein Ziel zweimal beweisen:
-Einmal unter Annahme der linken Seite `{A} ∨ {B}`,
-und einmal unter Annahme der rechten Seite `{A}`.
-Hier haben nehmen wir an, die linke Seite
-sei wahr."
-  Hint (hidden := true) " **Robo** Wie man mit einem Und in den Annahmen umgeht,
-weißt du doch schon:
-`rcases h with ⟨h₁, h₂⟩`.  Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
-  rcases h with ⟨h₁, h₂⟩
-  Hint "**Robo** Jetzt musst du dein Ziel zweimal beweisen:
-Einmal unter Annahme der linken Seite `{A}`,
-und einmal unter Annahme der rechten Seite `{A} ∨ {B}`. Hier haben nehmen wir an, die linke Seite
-sei wahr."
-  assumption
-  assumption
+  · Hint "**Robo**
+    Jetzt musst du dein Ziel zweimal beweisen:
+    Einmal unter Annahme der linken Seite `{A} ∧ {B}`,
+    und einmal unter Annahme der rechten Seite `{A}`.
+    Hier haben nehmen wir an, die linke Seite
+    sei wahr."
+    Hint (hidden := true) " **Robo** Wie man mit einem Und in den Annahmen umgeht,
+    weißt du doch schon:
+    `rcases h with ⟨h₁, h₂⟩`.  Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
+    rcases h with ⟨h₁, h₂⟩
+    assumption
+  · Hint (strict := true) "**Robo** Jetzt musst du dein Ziel noch unter der rechten Annahme
+    von `({A} ∧ {B}) ∨ {A}` zeigen, also angenommen, `{A}` sei wahr."
+    assumption
 
 Conclusion
 "**Du**  Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
@@ -106,5 +104,4 @@ Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.  H
 **Robo** Keine Ahnung.  War, glaube ich, vorinstalliert.
 "
 
-NewTactic rcases
 DisabledTactic tauto

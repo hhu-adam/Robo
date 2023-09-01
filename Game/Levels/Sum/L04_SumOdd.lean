@@ -18,10 +18,9 @@ Introduction
 Aus reiner Neugierde gehst Du zu einem etwas kleineren Nachbarsturm hinüber.
 "
 
-Statement
-    "$\\sum_{i = 0}^n (2i + 1) = n ^ 2$."
-    (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
-  Hint "**Robo**: Da steht nichts neues, oder? Viel Glück."
+/-- $\\sum_{i = 0}^n (2n + 1) = n ^ 2$. -/
+Statement (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
+  Hint "**Robo**: Das funktioniert genau gleich wie zuvor, viel Glück."
   induction n
   simp
   Hint (hidden := true) "Den Induktionschritt bei Summen solltest du wie gesagt

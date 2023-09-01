@@ -14,9 +14,9 @@ Introduction
 Auftritt dritter Querulant.
 "
 
-Statement ""
-  (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
-  Hint "**Du**: Wieder ein Widerspruch in den Annahmen?
+/--  -/
+Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
+  Hint "**Du** Wieder ein Widerspruch in den Annahmen?
 
 **Robo**: Ich sehe, du hast langsam den Dreh raus."
   contradiction

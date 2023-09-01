@@ -18,7 +18,7 @@ Introduction
 Nach einem kurzen Spaziergang steht ihr davon.
 
 **Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!
-Über den hab ich schon einmal Daten verarbeitet. 
+Über den hab ich schon einmal Daten verarbeitet.
 
 **Babylonier**:  Richtig.  Gauß war ein Babylonier!
 "
@@ -27,14 +27,14 @@ open Fin
 
 open BigOperators
 
-Statement arithmetic_sum
-    "$2 \\cdot \\sum_{i = 0}^n i = n \\cdot (n + 1)$."
-    (n : ℕ) : 2 * (∑ i : Fin (n + 1), ↑i) = n * (n + 1) := by
-  Hint "**Du**: Hmm, das habe ich auch schon einmal gesehen. 
-  Wenn ich mich recht erinnere, zeigt man das am einfachsten durch Induktion.
+/-- $2 \\cdot \\sum_{i = 0}^n i = n \\cdot (n + 1)$. -/ Statement arithmetic_sum
+ (n : ℕ) : 2 * (∑ i : Fin (n + 1), ↑i) = n * (n + 1) := by
+  Hint "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,
+  wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?
+  Ich würde gerne Induktion über $n$ anwenden.
 
-  **Robo**:  Wenn Du meinst … Auf Leansch wäre das:  `induction n with d hd`! 
-  Der Zusatz `with d hd` ist natürlich optional.  
+  **Robo**:  Wenn Du meinst … Auf Leansch wäre das:  `induction n with d hd`!
+  Der Zusatz `with d hd` ist natürlich optional.
   Du kannst damit Namen für Induktionsvariable (d) und -hypothese (h) vorgeben."
   induction n with d hd
   Hint "**Du**: Zuerst der Induktionsanfang …
@@ -42,7 +42,7 @@ Statement arithmetic_sum
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   simp
   Hint "**Robo**: Jetzt der Induktionsschritt.
-  Bei Induktion über endlichen Summen beginnst du den Induktionsschritt 
+  Bei Induktion über endlichen Summen beginnst du den Induktionsschritt
   immer mit `rw [sum_univ_castSucc]`."
 
   -- $$\\sum_\{i=0}^n a_i = \\sum_{i=0}^\{n-1} a_i + a_n$$"

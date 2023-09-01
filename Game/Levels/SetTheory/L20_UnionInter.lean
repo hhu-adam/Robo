@@ -16,8 +16,7 @@ von Mengen: $\\bigcup_i A_ i$ und $\\bigcap_j B_ j$.
 
 open Set
 
-Statement
-"" : True := sorry
+/--  -/
+Statement : True := sorry
 
-NewTactic constructor intro rw assumption rcases simp tauto trivial
 LemmaTab "Set"

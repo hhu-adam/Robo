@@ -9,8 +9,7 @@ Title "Rewrite"
 Introduction
 ""
 
-Statement
-"
+/--
 $$
 \\begin{aligned}
   a &= b \\\\
@@ -18,8 +17,8 @@ $$
   \\vdash b + b ^ 2 &= b + 1
 \\end{aligned}
 $$
-"
-(a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
+ -/
+Statement (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
   Hint "**Du**: Hier muss man, glaube ich, einfach in Annahme `{g}` die Variable `{a}` durch `{b}` ersetzen.
 
   **Robo**: Genau! Das machst du mit `rw [{h}] at {g}`."

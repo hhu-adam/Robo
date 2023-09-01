@@ -14,7 +14,8 @@ dass es auf der Insel nur einen gäbe, aber sie bedrängt euch so mit einer Frag
 dass sie euch gar nicht sagt, wo dieser zu finden sei.
 "
 
-Statement "" : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
+/--  -/
+Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   Hint
   "
   **Robo**: `f : ℤ → ℤ` ist die Notation für eine Funktion und `f x` ist diese Funktion

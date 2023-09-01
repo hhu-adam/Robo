@@ -15,9 +15,8 @@ Introduction
 "
 "
 
-Statement
-"Zeige, dass `![1, 0], ![1, 1]` linear unabhängig über `ℝ` sind."
-    : LinearIndependent ℝ ![(![1, 0] : ℝ²), ![1, 1]] := by
+/-- Zeige, dass `![1, 0], ![1, 1]` linear unabhängig über `ℝ` sind. -/
+Statement : LinearIndependent ℝ ![(![1, 0] : ℝ²), ![1, 1]] := by
   Hint "`rw [Fintype.linearIndependent_iff]`"
   rw [Fintype.linearIndependent_iff]
   Hint "`intros c h`"

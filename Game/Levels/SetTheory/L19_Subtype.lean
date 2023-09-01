@@ -13,12 +13,11 @@ Introduction
 
 open Set
 
-Statement
-"" :
+/--  -/
+Statement :
     3 ∈ {n : ℕ | Odd n}  := by
   rw [mem_setOf]
   use 1
   ring
 
-NewTactic constructor intro rw assumption rcases simp tauto trivial
 LemmaTab "Set"

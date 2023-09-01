@@ -37,7 +37,8 @@ open Function
 
 def f (x : ℤ) : ℤ := (x + 4)
 
-Statement "" (x : ℤ) : ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
+/--  -/
+Statement (x : ℤ) : ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
   Hint
   "**Du**: Ist `g ∘ f` Komposition von Funktionen?
 

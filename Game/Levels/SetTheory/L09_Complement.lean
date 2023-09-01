@@ -15,9 +15,8 @@ sind `not_mem_compl_iff` und `compl_eq_univ_diff`.
 
 open Set
 
-Statement
-""
-    (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
+/--  -/
+Statement (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
   Hint "Start doch mit `apply Subset.antisymm`."
   apply Subset.antisymm
   simp only [subset_univ]
@@ -33,7 +32,6 @@ Statement
   rw [not_mem_compl_iff] at h4
   assumption
 
-NewTactic constructor intro rw assumption rcases simp tauto trivial
 NewLemma Set.not_mem_compl_iff Set.mem_of_subset_of_mem Set.compl_eq_univ_diff
 DisabledTactic tauto
 LemmaTab "Set"

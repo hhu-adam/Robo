@@ -44,9 +44,8 @@ Für jede Komponente kann man dann mit `simp` und `ring` weiterkommen.
 local notation "ℚ³" => Fin 3 → ℚ
 local notation "ℚ^(" n ")" => (Fin n) → ℚ
 
-Statement
-""
-    : ![ (2 : ℚ), 5 ] + ![ 1/2, -7 ] = ![5/2, -2] := by
+/--  -/
+Statement : ![ (2 : ℚ), 5 ] + ![ 1/2, -7 ] = ![5/2, -2] := by
   funext i
   fin_cases i <;>
   simp <;>

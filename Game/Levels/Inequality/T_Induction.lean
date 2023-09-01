@@ -19,11 +19,10 @@ Die Leantaktik `induction n` führt einen Induktionsbeweis über `(n : ℕ)`. Hi
 ein abstraktes Beispiel.
 "
 
-Statement
-"Sei $P(n)$ eine logische Aussage über die natürliche Zahl.
+/-- Sei $P(n)$ eine logische Aussage über die natürliche Zahl.
 Agenommen $P(0)$ ist wahr und $P(m) \\Rightarrow P(m+1)$ für alle $m$,
-dann gilt $P(n)$ für alle $n \\in \\mathbb{N}.$"
-    (n : ℕ) (P : ℕ → Prop) (h_base : P 0) (h_step : ∀ m, P m → P m.succ) : P n := by
+dann gilt $P(n)$ für alle $n \\in \\mathbb{N}.$ -/
+Statement (n : ℕ) (P : ℕ → Prop) (h_base : P 0) (h_step : ∀ m, P m → P m.succ) : P n := by
   induction n
   assumption
   apply h_step

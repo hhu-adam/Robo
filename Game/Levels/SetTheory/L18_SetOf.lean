@@ -21,8 +21,8 @@ Entsprechend hilft auch hier `setOf_and`.
 
 open Set
 
-Statement
-"" (S : Set ℤ) :
+/--  -/
+Statement (S : Set ℤ) :
     { x ∈ (S : Set ℤ) | 0 ≤ x} ⊆ S := by
   simp
 

@@ -22,7 +22,7 @@ aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst.
 open Function
 
 --TODO: This is a really hard proof
-Statement Function.bijective_iff_has_inverse "" {A B : Type} (f : A → B) :
+/--  -/ Statement Function.bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
   Hint "**Du**: Nah da sagt mir so manches nichts, aber ich kann ja mal mit dem `↔` anfangen,
   das kenn ich ja schon."

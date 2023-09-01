@@ -14,9 +14,8 @@ Introduction
 Der nächste bitte …
 "
 
-Statement
-""
-    (A B : Prop) (hA : A) : A ∨ (¬ B) := by
+/--  -/
+Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
   Hint "**Du** Muss ich jetzt wieder das Beweisziel de-konstruieren?
 
 **Robo** Nein, viel einfacher.  Wenn du eine Oder-Aussage beweisen sollst, musst du dich

@@ -25,8 +25,6 @@ Kinder zuhörten. Eines der beiden Mädchen hat ebenfalls eine Frage.
 -- Die Taktik `tauto` macht das automatisch, aber um dies zu lernen ist `tauto` hier deaktiviert.
 -- Benutze also `intro`:
 
-namespace MySet
-
 open Set
 
 Statement Set.subset_univ (A : Set ℕ) : A ⊆ univ := by
@@ -44,5 +42,3 @@ NewDefinition Symbol.Subset
 LemmaTab "Set"
 
 Conclusion "Damit drehen sich die beiden Mädchen um und folgen dem Jungen."
-
-end MySet

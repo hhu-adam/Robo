@@ -16,7 +16,8 @@ Du schaust ihn fassungslos an.
 Er schreibt es dir wieder auf.
 "
 
-Statement "" :
+/--  -/
+Statement :
   42 = 42 := by
   Hint " **Robo**: Ist doch klar.  Du musst ihn einfach daran erinnern,
     dass Gleichheit *reflexiv* ist. Probier mal `rfl`."

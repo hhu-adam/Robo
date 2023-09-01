@@ -11,8 +11,8 @@ Introduction
 Ein dritter Untertan kommt mit folgendem Problem.
 "
 
-Statement ""
-  (A : Prop) (hA : A) : A := by
+/--  -/
+Statement (A : Prop) (hA : A) : A := by
   Hint "
 **Robo**: Hier bedeutet `{A} : Prop` wieder, dass `{A}` irgendeine Aussage ist.
    Und `{hA}` ist eine Name für die Annahme, dass `{A}` wahr ist.
@@ -31,5 +31,4 @@ Conclusion
 **Untertan**: Das ging ja schnell. Super! Vielen Dank.
 "
 
-NewTactic assumption
 DisabledTactic tauto

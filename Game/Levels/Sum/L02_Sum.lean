@@ -18,9 +18,8 @@ Ihr schaut euch den nächsten Turm an."
 
 open BigOperators
 
-Statement
-    "$\\sum_{i=0}^{n-1} (i + 1) = n + \\sum_{i=0}^{n-1} i$."
-    (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : ℕ)) := by
+/-- $\\sum_{i=0}^{n-1} (i + 1) = n + \\sum_{i=0}^{n-1} i$. -/
+Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : ℕ)) := by
   Hint "**Du**: Hmm, wieder `simp`?
 
   **Robo**: Nicht ganz. `simp` benützt nur Lemmas, die klar eine Vereinfachung darstellen.

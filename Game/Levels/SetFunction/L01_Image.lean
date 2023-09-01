@@ -37,9 +37,8 @@ Mit `ext i` kann man Gleichheit von Mengen angehen.
 --     /- Image of Union -/
 -- lemma image_unionₓ
 
-Statement
-""
-    (S T : Set ℕ) (f : ℕ → ℕ) : (f '' S) ∪ (f '' T) = f '' (S ∪ T) := by
+/--  -/
+Statement (S T : Set ℕ) (f : ℕ → ℕ) : (f '' S) ∪ (f '' T) = f '' (S ∪ T) := by
   Hint "Fang mal mit `ext i` an."
   ext i
   rw [mem_union]

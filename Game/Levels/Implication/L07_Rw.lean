@@ -39,6 +39,6 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
 
 Conclusion "**Operationsleiter**:  Wenn Ihr so weitermacht, dann kommen wir ja durch den ganzen Packen durch!"
 
-NewTactic rw assumption
+NewTactic rw
 DisabledTactic tauto
 -- NewLemma Iff.symm
