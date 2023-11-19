@@ -93,16 +93,16 @@ LemmaDoc Nat.add_succ as "add_succ" in "Addition"
 
 * Mathlib Doc: [#]()"
 
-LemmaDoc not_forall as "not_forall" in "Logic"
+LemmaDoc Classical.not_forall as "not_forall" in "Logic"
 "
 `not_forall {α : Sort _} {P : α → Prop} : ¬(∀ x, → P x) ↔ ∃ x, ¬P x`
 
 ## Eigenschaften
 
 * `simp`-Lemma: Ja
-* Namespace: `-`
-* Minimal Import: `Mathlib.Logic.Basic`
-* Mathlib Doc: [#not_forall](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Logic/Basic.html#not_forall)
+* Namespace: `Classical`
+* Minimal Import: `Std.Logic`
+* Mathlib Doc: [#not_forall](https://leanprover-community.github.io/mathlib4_docs/Std/Logic.html#Classical.not_forall)
 "
 
 LemmaDoc not_exists as "not_exists" in "Logic"
