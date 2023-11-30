@@ -1,8 +1,4 @@
-import Std.Tactic.RCases
-import Mathlib.Tactic.LeftRight
-import Mathlib.Tactic.Contrapose
-import Mathlib.Tactic.Use
-import Mathlib.Tactic.Ring
+import Mathlib.Tactic
 import Mathlib.Tactic.Linarith
 import Mathlib.Data.Nat.Parity
 import Mathlib.Algebra.BigOperators.Fin

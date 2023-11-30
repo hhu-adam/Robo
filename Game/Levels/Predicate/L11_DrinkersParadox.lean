@@ -17,9 +17,9 @@ Wieder herrscht längeres Schweigen.  Dann auf einmal:
 
 **Alle**:  Es gibt unter uns eine Person, wenn die redet, dann reden alle!
 
-Du kratzt Dich am Kopf.  
+Du kratzt Dich am Kopf.
 
-**Robo**:  Ist doch klar.  Das ist auf jedem bewohnten Planeten so! 
+**Robo**:  Ist doch klar.  Das ist auf jedem bewohnten Planeten so!
 
 **Du**:  Was??
 
@@ -34,22 +34,22 @@ open Function
 
 Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
-  Hint "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …  
+  Hint "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …
   Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
   die wahr oder falsch ist. Soweit so gut.
   Und was bedeutet `Inhabited People`?
 
-  **Robo**: Das ist Leansch für nicht-leer.  Das heißt einfach, es gibt mindestens eine Person. 
+  **Robo**: Das ist Leansch für nicht-leer.  Das heißt einfach, es gibt mindestens eine Person.
   Du kannst dadurch jederzeit `default`, oder lang
   `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
 
   **Du**: Und wie fang ich jetzt an?
 
-  **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.  
+  **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
   Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
   `∀ (y : People), isDrinking y` wahr oder falsch ist."
   Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
-  by_cases ∀ y, isDrinking y
+  by_cases h : ∀ y, isDrinking y
   Hint (hidden := true) "**Du**: Und wen nehm ich jetzt?
 
   **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."

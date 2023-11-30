@@ -1,5 +1,4 @@
 build/
 lake-packages/
-*.~undo-tree~
-*.*#
-*.*~
+.lake/
+**/.DS_Store

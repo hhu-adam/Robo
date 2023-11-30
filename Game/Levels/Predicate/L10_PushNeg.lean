@@ -11,10 +11,10 @@ Title "PushNeg"
 
 Introduction
 "
-Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet. 
+Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet.
 "
 
-open Nat
+open Nat Classical
 
 Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   Hint "**Du**: Oha.  Ganz links ein `¬`.  Was du nicht sagst …"
@@ -52,7 +52,7 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   use n
   --ring
 
-NewLemma Nat.even_iff_not_odd Nat.odd_iff_not_even not_exists not_forall
+NewLemma Nat.even_iff_not_odd Nat.odd_iff_not_even not_exists Classical.not_forall
 
 Conclusion "Die Formalosophinnen sind ganz begeistert.
 Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.

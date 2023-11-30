@@ -51,7 +51,8 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   Branch
     intro x
     Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
-  simp only [sub_lt_self_iff, forall_const]
+  simp? says
+    simp only [sub_lt_self_iff, zero_lt_one, forall_const]
 
 NewDefinition Symbol.function
 LemmaTab "Function"

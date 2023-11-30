@@ -56,6 +56,9 @@ Statement : ¬ (f + f).Injective := by
   use 2
   use 3
   simp
+  -- TODO: is that a regression?
+  Hint "Das Goal kannst du nun mit `rfl` schliessen."
+  rfl
 
 LemmaTab "Function"
 

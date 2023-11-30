@@ -93,7 +93,7 @@ LemmaDoc Nat.add_succ as "add_succ" in "Addition"
 
 * Mathlib Doc: [#]()"
 
-LemmaDoc not_forall as "not_forall" in "Logic"
+LemmaDoc Classical.not_forall as "not_forall" in "Logic"
 "
 `not_forall {α : Sort _} {P : α → Prop} : ¬(∀ x, → P x) ↔ ∃ x, ¬P x`
 
