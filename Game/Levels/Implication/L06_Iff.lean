@@ -11,7 +11,7 @@ Introduction
 "
 
 Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
-  Hint "**Robo**: `→` ist natürlich Leansch für `$\\iff$`.
+  Hint "**Robo**: `A ↔ B` ist natürlich Leansch für $A \\iff B$, also genau-dann-wenn.
   Die Aussage `A ↔ B` besteht also aus zwei Teilen; sie ist als `⟨A → B, B → A⟩` definiert.
 
   **Du**: Also ganz ähnlich wie das UND, `A ∧ B`?
