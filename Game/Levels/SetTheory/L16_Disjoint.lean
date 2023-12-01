@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-import Game.Options.MathlibPart
+
 
 World "SetTheory2"
 Level 3

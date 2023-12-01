@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Options.MathlibPart
+
 
 World "Function"
 Level 1

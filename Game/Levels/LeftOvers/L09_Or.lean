@@ -1,6 +1,6 @@
 import Game.Metadata
-import Std.Tactic.RCases
-import Game.Options.MathlibPart
+
+
 
 set_option tactic.hygienic false
 

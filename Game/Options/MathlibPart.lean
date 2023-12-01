@@ -1,4 +1,5 @@
 import Std.Tactic.RCases
+import Mathlib.Tactic.ApplyAt
 import Mathlib.Tactic.LeftRight
 import Mathlib.Tactic.Contrapose
 import Mathlib.Tactic.Use
