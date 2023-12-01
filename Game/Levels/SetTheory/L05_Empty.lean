@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.Levels.SetTheory.L04_SubsetEmpty
 
-import Game.Options.MathlibPart
+
 
 set_option tactic.hygienic false
 

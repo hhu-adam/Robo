@@ -100,9 +100,9 @@ LemmaDoc Classical.not_forall as "not_forall" in "Logic"
 ## Eigenschaften
 
 * `simp`-Lemma: Ja
-* Namespace: `-`
-* Minimal Import: `Mathlib.Logic.Basic`
-* Mathlib Doc: [#not_forall](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Logic/Basic.html#not_forall)
+* Namespace: `Classical`
+* Minimal Import: `Std.Logic`
+* Mathlib Doc: [#not_forall](https://leanprover-community.github.io/mathlib4_docs/Std/Logic.html#Classical.not_forall)
 "
 
 LemmaDoc not_exists as "not_exists" in "Logic"

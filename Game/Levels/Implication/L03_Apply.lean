@@ -15,8 +15,13 @@ Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~`revert`
 "
 
 Statement (A B : Prop) (hA : A) (h : A → B) : B := by
-  Hint "**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, mit Implikation mit `apply {h}` anzuwenden."
-  apply h
+  Hint 
+  "**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.  
+  Du hast zwei Möglichkeiten:  `apply {h}` macht im `B` im Ziel zu `A`, `apply {h} at `{hA}` macht `A` in der Annahme zu `B`."
+  Branch 
+    apply h
+    assumption
+  apply h at hA
   Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
   assumption
 

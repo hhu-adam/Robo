@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Options.MathlibPart
+
 
 -- TODO: `even`/`odd` sind in Algebra.Parity. Not ported yet
 def even (a : ℕ) : Prop := ∃ r, a = 2 * r

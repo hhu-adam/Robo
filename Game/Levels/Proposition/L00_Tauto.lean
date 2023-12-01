@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Options.MathlibPart
+
 
 World "Proposition"
 Level 1

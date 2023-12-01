@@ -1,5 +1,5 @@
 import Game.Metadata
-import Std.Tactic.RCases
+
 
 set_option tactic.hygienic false
 
