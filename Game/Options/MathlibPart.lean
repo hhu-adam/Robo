@@ -1,5 +1,4 @@
 import Mathlib.Tactic
-import Mathlib.Tactic.Linarith
 import Mathlib.Data.Nat.Parity
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.LinearAlgebra.LinearIndependent
