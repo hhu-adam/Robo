@@ -14,7 +14,7 @@ import Game.Levels.Implication.L12_Summary
 World "Implication"
 Title "Implis"
 
-Image "images/planet_logos.jpg"
+-- Image "images/planet_logos.jpg"
 
 Introduction
 "
