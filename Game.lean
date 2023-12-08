@@ -18,7 +18,7 @@ import Game.Levels.Function
 --import Game.Levels.LinearAlgebra
 
 
-Title "Game over oder QED?"
+Title "Formaloversum"
 Introduction
 "
 # Game Over oder QED?
@@ -77,9 +77,11 @@ Conclusion
 
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "English"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+Languages "German"
+CaptionShort "Erkunde das Leansche Universum mit deinem Robo, welcher dir bei der Verständigung mit den Formalosophen zur Seite steht."
+CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein und schneidet danach verschiedene Bereiche des Bachelorstudiums an.
+
+(Das Spiel befindet sich noch in der Entstehungsphase.)"
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/cover.png"
 
