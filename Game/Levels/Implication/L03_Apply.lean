@@ -14,14 +14,16 @@ Leider läuft das Telefonat nicht so gut.  Er legt wieder auf und schüttelt mit
 Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~`revert`~, und legt Euch das Blatt ein zweites Mal vor.
 "
 
-Statement (A B : Prop) (hA : A) (h : A → B) : B := by
+Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
   Hint 
-  "**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.  
-  Du hast zwei Möglichkeiten:  `apply {h}` macht im `B` im Ziel zu `A`, `apply {h} at `{hA}` macht `A` in der Annahme zu `B`."
+  "**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.
+  Probier doch mal `apply hAB at h`."
   Branch 
-    apply h
+    apply hAB
+    Hint
+    "**Robo**:  Ich sagte `… at h`.  Aber einfach nur `apply hAB` funktioniert offenbar auch.  Jetzt hast Du sozusagen `hAB` auf das Beweisziel `B` angewendet, und musst nur noch `A` beweisen."
     assumption
-  apply h at hA
+  apply hAB at h
   Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
   assumption
 
@@ -29,9 +31,3 @@ Conclusion "Diesmal scheint das Telefonat erfolgreich zu verlaufen."
 
 NewTactic apply
 DisabledTactic revert tauto
-
--- Katex notes
--- `\\(    \\)` or `$   $` for inline
--- and `$$  $$` block.
--- align block:
--- $$\\begin{aligned} 2x - 4 &= 6 \\\\ 2x &= 10 \\\\ x &= 5 \\end{aligned}$$

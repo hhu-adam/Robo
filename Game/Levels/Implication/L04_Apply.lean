@@ -16,11 +16,15 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
   Hint "**Du**: Ich soll Implikationen $A \\Rightarrow B \\Rightarrow C$ zu $A \\Rightarrow C$
   kombinieren?
 
-  **Robo**: Am besten fängst du mit `intro` an und arbeitest dich dann rückwärts durch."
-  intro hA
+  **Robo**: Vielleicht fängst du wieder mit `intro` an?"
+  intro h
   Hint (hidden := true) "**Robo**: Das ist wieder eine Anwendung von `apply`."
-  apply g
-  apply f
+  Branch
+    apply g
+    apply f
+    assumption
+  apply f at h
+  apply g at h
   assumption
 
 Conclusion "**Operationsleiter**:  Ihr seid echt super!"

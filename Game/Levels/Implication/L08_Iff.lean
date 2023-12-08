@@ -13,23 +13,22 @@ Introduction
 "
 
 Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
-  Hint "**Du**: Naja ich kann wohl immerhin mal mit `intro` anfangen und annehmen,
-  dass `{A}` wahr sei …
+  Hint "**Du**: Naja ich kann wohl immerhin mal mit `intro` anfangen …
 
   **Robo**: … und dann schauen wir weiter!"
   intro hA
   Hint "**Robo**: Also eine Implikation wendet man mit `apply` an …
 
-  **Du**: Weiß ich doch!"
-  apply g
-  Hint "**Robo**: … und du kannst die Implikation `{A} → {B}` genau gleich mit
-  `apply {h}.mp` anwenden.
+  **Du**: Weiß ich doch!  Aber `h` ist keine Implikation, sondern eine Äquivalenz.  Da würde ich doch eigentlich `rw [← h]` sagen wollen.
 
-  **Du**: Aber normalerweise könnte ich hier auch `rw [← h]` sagen, oder?
-
-  **Robo**: Ja ja, nur nicht auf der anderen Seite des Mondes.
-  "
-  apply h.mp
+  **Robo**:  Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`.  Du kannst sie mit `apply ({h}.mp) at …` anwenden."
+  Branch 
+    apply g
+    Hint "**Robo**: So kannst Du natürlich auch anfangen."
+    apply h.mp
+    assumption
+  apply (h.mp) at hA
+  apply g at hA
   assumption
 
 Conclusion "**Operationsleiter**:  Okay, super.  Das müsste passen.

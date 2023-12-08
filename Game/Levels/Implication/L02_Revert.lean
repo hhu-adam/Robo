@@ -14,15 +14,15 @@ Introduction
 
 Er übergibt Euch das oberste Blatt."
 
-Statement (A B : Prop) (ha : A) (h : A → B) : B := by
+Statement (A B : Prop) (hA : A) (h : A → B) : B := by
   Hint "**Operationsleiter**: Das ist von einem Kollegen.
 
   **Robo**:  Oh, das hab ich schon einmal irgendwo gelesen.  Warte mal … Richtig!  Das war damals, als ich Wikipedia gecrawlt habe: `Der Modus ponens ist eine schon in der antiken Logik geläufige Schlussfigur, die in vielen logischen …`
 
   **Du**:  Robo!  Gefragt ist ein Beweis und kein historischer Aufsatz!   Oder komme ich hier etwa mit `mopo` oder so etwas weiter?
 
-  **Robo**:  Okay, nein, sorry.  `mopo` gibt es nicht.  Probier lieber `revert {ha}`."
-  revert ha
+  **Robo**:  Okay, nein, sorry.  `mopo` gibt es nicht.  Probier lieber `revert {hA}`."
+  revert hA
   Hint "**Du**:  Aha.  `revert` ist qausi `intro` rückwärts.
 
   **Robo**: Genau.  `intro` nimmt die Prämisse aus einer Implikation `{A} \\to {B}` im Beweisziel und macht daraus eine Annahme.  `revert` nimmt umgekehrt eine Annahme und setzt sie als Implikationsprämisse vor das Beweisziel.  Aber nun mach schon fertig."

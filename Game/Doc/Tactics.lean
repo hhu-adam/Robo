@@ -22,33 +22,27 @@ Goal
 
 TacticDoc apply
 "
-`apply my_lemma` Versucht das Goal mit der Aussage des Lemmas zu unifizieren
-und erstellt ein neues Goal pro Annahme des Lemmas, die noch zu zeigen ist.
+Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.  Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und erhalten `A` als neues Beweisziel.   In beiden Fällen kann die Implikation `hAB` wahlweise als Annahme gegeben oder ein bereits bekanntes Lemma sein.
 
-## Details
-`apply` funktioniert gleichermassen für Lemmas wie für Implikationen
-wie z.B. `(h : A → B)`.
 
 ## Beispiel
 
-Gegeben folgendes Lemma:
+Gegeben sei für `n : ℕ` folgendes Lemma:
 ```
-lemma Nat.eq_zero_of_le_zero {n : ℕ} (h : n ≤ 0) : n = 0 := by sorry
-```
-
-Und folgendes Problem:
-
+lemma lem (h : n ≤ 0) : n = 0 
 ```
 
-Objekte
-  n : ℕ
-  ...
+Finden wir nun als Beweisziel
+
+```
 Goal
   n = 0
 ```
 
-Hier ändert `apply Nat.eq_zero_of_le_zero` das Goal zu `n ≤ 0` durch Anwendung
-des Lemmas.
+vor, so ändert `apply lem` das Beweisziel zu `n ≤ 0`.
+
+(Das Lemma ist gemeinhin als `Nat.eq_zero_of_le_zero` bekannt.)
+
 "
 
 TacticDoc by_cases

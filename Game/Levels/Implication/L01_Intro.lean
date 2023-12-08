@@ -13,7 +13,7 @@ Introduction
 **Operationsleiter**: Hier, zum Beispiel:
 "
 
-Statement (A B : Prop) (hb : B) : A → (A ∧ B) := by
+Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
   Hint "
   **Operationsleiter**:  Die Arbeiten meinen, das wäre so richtig und wir würden das dringend brauchen.  Aber keiner kann es mir beweisen.
 
