@@ -16,6 +16,8 @@ import Game.Levels.Proposition.L13_Summary
 World "Proposition"
 Title "Logo"
 
+Image "images/planet_logos.jpg"
+
 Introduction "
 Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit
 bist du ausversehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück.
