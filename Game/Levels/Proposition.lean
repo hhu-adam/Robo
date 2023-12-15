@@ -16,7 +16,7 @@ import Game.Levels.Proposition.L13_Summary
 World "Proposition"
 Title "Logo"
 
-Image "images/planet_logos.jpg"
+Image "images/planet_logos.png"
 
 Introduction "
 Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit

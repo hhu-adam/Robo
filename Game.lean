@@ -59,6 +59,7 @@ Es wird finanziert durch das Programm *Freiraum 2022* der
 
 * **Creators:** Jon Eugster, Alexander Bentkamp, Marcus Zibrowius
 * **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
+* **Illustrationen:** Dušan Pavlić
 
 ## Kontakt
 
