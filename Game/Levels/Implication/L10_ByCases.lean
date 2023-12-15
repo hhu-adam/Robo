@@ -15,7 +15,7 @@ Beim nächsten Problem stutzt der Operationsleiter.
 "
 
 Statement (A : Prop) : ¬A ∨ A := by
-  Hint "**Du**: Naja, eine der beiden Aussagen `A` oder `¬A` wird schon wahr sein.  
+  Hint (strict := true) "**Du**: Naja, eine der beiden Aussagen `A` oder `¬A` wird schon wahr sein.
 
 **Robo**: Klarer Fall für eine Fallunterscheidung, würde ich sagen. Probier mal `by_cases h : A`."
   by_cases h : A
