@@ -11,11 +11,11 @@ Introduction
 
 /--
 $$
-\\begin{aligned}
-  a &= b \\\\
-  a + a ^ 2 &= b + 1 \\\\
-  \\vdash b + b ^ 2 &= b + 1
-\\end{aligned}
+\begin{aligned}
+  a &= b \\
+  a + a ^ 2 &= b + 1 \\
+  \vdash b + b ^ 2 &= b + 1
+\end{aligned}
 $$
  -/
 Statement (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
