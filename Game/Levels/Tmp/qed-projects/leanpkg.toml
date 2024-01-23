@@ -1,0 +1,8 @@
+[package]
+name = "qed-projects"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.50.3"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "b76e9f654df09f8a832aeee712511fe5f3e57869"}

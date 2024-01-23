@@ -1,0 +1,1 @@
+Aufgaben LA: http://reh.math.uni-duesseldorf.de/~zibrowius/TeachingRepo/Lineare%20Algebra%20(2021-22)/Aufgaben-I/

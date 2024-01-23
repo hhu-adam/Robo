@@ -1,0 +1,8 @@
+[package]
+name = "LA_game"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.50.3"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "996b0ff959da753a555053a480f36e5f264d4207"}

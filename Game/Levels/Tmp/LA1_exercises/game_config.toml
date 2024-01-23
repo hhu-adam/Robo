@@ -1,0 +1,167 @@
+name = "Lineare Algebra"
+version = "0.0.2"
+extra_files = "extras"
+intro = "src/intro.lean"
+
+[[worlds]]
+name = "Einführung & Logik"
+id = 1
+parents = []
+levels = [
+	"src/basics/equality/equality_001.lean",
+	"src/basics/equality/equality_002.lean",
+	"src/basics/logic/logic_001.lean",
+	"src/basics/logic/logic_002.lean",
+	"src/basics/logic/logic_003.lean",
+	"src/basics/logic/logic_004.lean",
+	"src/basics/logic/logic_005.lean",
+	"src/basics/logic/logic_006.lean",
+	"src/basics/logic/quantors_001.lean",
+	"src/basics/logic/quantors_002.lean",
+]
+
+[[worlds]]
+name = "Natürliche Zahlen"
+id = 2
+parents = [1]
+levels = [
+	"src/basics/numbers/nat_001.lean",
+	"src/basics/numbers/nat_002.lean",
+	"src/basics/numbers/nat_003.lean",
+	"src/basics/numbers/nat_004.lean",
+	"src/basics/numbers/nat_005.lean",
+	"src/basics/numbers/nat_006.lean",
+	"src/basics/numbers/nat_007.lean",
+	"src/basics/numbers/nat_008.lean",
+	"src/basics/numbers/nat_009.lean",
+]
+
+[[worlds]]
+name = "Mehr Zahlen"
+id = 3
+parents = [2]
+levels = [
+	"src/basics/numbers/pnat_001.lean",
+	"src/basics/numbers/pnat_002.lean",
+	"src/basics/numbers/integer.lean",
+	"src/basics/numbers/rational.lean",
+	"src/basics/numbers/real.lean",
+	"src/basics/numbers/complex.lean",
+]
+
+[[worlds]]
+name = "Mengenlehre"
+id = 4
+parents = []
+levels = [
+	"src/basics/union_sup.lean",
+	"src/basics/power_set_fin.lean",
+]
+
+[[worlds]]
+name = "Vektorräume/Moduln"
+id = 5
+parents = [2]
+levels = [
+	"src/vectorspace/definition/def_01.lean",
+	"src/vectorspace/definition/def_02.lean",
+	"src/vectorspace/definition/def_03.lean",
+	"src/vectorspace/definition/def_04.lean",
+	"src/vectorspace/definition/def_05.lean",
+	"src/vectorspace/definition/def_06.lean",
+]
+
+[[worlds]]
+name = "Vektornotation"
+id = 6
+parents = [5]
+levels = [
+	"src/vectorspace/definition/vector_notation.lean",
+	"src/vectorspace/definition/vector_notation_b.lean",
+]
+
+[[worlds]]
+name = "Untervektorräume"
+id = 7
+parents = [6]
+levels = [
+	"src/vectorspace/submodule/definition.lean",
+	"src/vectorspace/submodule/definition_b.lean",
+	"src/vectorspace/submodule/generating_set.lean",
+]
+
+[[worlds]]
+name = "Lineare Abbildungen"
+id = 8
+parents = [6]
+levels = [
+	"src/vectorspace/linear_map/linear_map.lean",
+	"src/vectorspace/linear_map/linear_map_b.lean",
+]
+
+[[worlds]]
+name = "Basis"
+id = 9
+parents = [7]
+levels = [
+	"src/vectorspace/basis/lin_indep.lean",
+	"src/vectorspace/basis/basis.lean",
+	"src/vectorspace/basis/basis_2.lean",
+]
+
+[[worlds]]
+name = "Untervektorräume 2"
+id = 10
+parents = [7, 8]
+levels = [
+	 "src/vectorspace/submodule/span_1.lean",
+	 "src/vectorspace/submodule/span_2.lean",
+	 "src/vectorspace/submodule/idempotent_fun_1.lean",
+	 "src/vectorspace/submodule/idempotent_fun_2.lean",
+]
+
+[[worlds]]
+name = "Summe/Produkt"
+id = 11
+parents = [10]
+levels = [
+	"src/vectorspace/submodule/sum_prod_1.lean",
+	"src/vectorspace/submodule/sum_prod_2.lean",
+	"src/vectorspace/submodule/sum_prod_3.lean",
+	"src/vectorspace/submodule/sum_prod_4.lean",
+	"src/vectorspace/submodule/sum_prod_5.lean",
+]
+
+
+[[worlds]]
+name = "Matrizen"
+id = 12
+parents = [8]
+levels = [
+	"src/dummy.lean",
+]
+
+[[worlds]]
+name = "Weiteres"
+id = 13
+parents = [9]
+levels = [
+	"src/vectorspace/basis/real_uncountable.lean",
+	"src/vectorspace/basis/card_fin_field.lean",
+]
+
+[[worlds]]
+name = "Rang und Dimension"
+id = 14
+parents = [9]
+levels = [
+	"src/dummy.lean",
+]
+
+[[worlds]]
+name = "Ergänzungs- und Hauptsatz"
+id = 15
+parents = [14]
+levels = [
+	"src/dummy.lean",
+]
