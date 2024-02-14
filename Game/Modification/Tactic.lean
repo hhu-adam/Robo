@@ -65,6 +65,7 @@ elab (name := _root_.MyNat.induction) "induction " tgts:(casesTarget,+)
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimInfo `CustomTactic.rec'
+    -- TODO: in v4.6.0 we'll need to replace `targets` with `targets.1`
     let targets ← addImplicitTargets elimInfo targets
     evalInduction.checkTargets targets
     let targetFVarIds := targets.map (·.fvarId!)
