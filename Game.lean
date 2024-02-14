@@ -17,6 +17,7 @@ import Game.Levels.Function
 --import Game.Levels.SetFunction
 --import Game.Levels.LinearAlgebra
 
+import Game.Levels.NewStuff
 
 Title "Formaloversum"
 Introduction
