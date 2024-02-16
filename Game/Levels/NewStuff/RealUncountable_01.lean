@@ -23,6 +23,7 @@ Statement cardinal_eq_of_finite_basis {K V : Type u} {ι : Type u} [Field K] [Ad
   simp only [Cardinal.mk_fintype, Cardinal.pow_cast_right]
   apply Cardinal.power_nat_le
   rfl
+  -- TODO: Project by Eduart Bopp
 
 NewTheorem Cardinal.mk_congr Cardinal.power_def Cardinal.mk_fintype
   Cardinal.pow_cast_right Cardinal.power_nat_le

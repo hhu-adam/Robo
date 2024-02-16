@@ -11,7 +11,7 @@ import Game.Levels.Sum
 --import Game.Levels.Numbers
 import Game.Levels.Inequality
 
-import Game.Levels.Lean
+-- import Game.Levels.Lean
 import Game.Levels.SetTheory
 import Game.Levels.Function
 --import Game.Levels.SetFunction
