@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 29 13:10:38 2024\n"
+"POT-Creation-Date: Thu Feb 29 17:08:21 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
