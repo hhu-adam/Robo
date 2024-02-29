@@ -31,6 +31,6 @@ Statement Set.nonempty_iff_ne_empty
   push_neg
   rfl
 
-NewLemma ne_eq Set.eq_empty_iff_forall_not_mem
+NewTheorem ne_eq Set.eq_empty_iff_forall_not_mem
 NewDefinition Set.Nonempty
 LemmaTab "Set"

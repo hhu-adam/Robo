@@ -49,5 +49,5 @@ Statement Set.eq_empty_iff_forall_not_mem {A : Type _} (s : Set A) :
   rw [←subset_empty_iff]
   rfl -- This is quite a miracle :)
 
-NewLemma Set.subset_empty_iff
+NewTheorem Set.subset_empty_iff
 LemmaTab "Set"

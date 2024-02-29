@@ -31,7 +31,7 @@ Statement (A B : Set ℕ) : univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A 
   rw [univ_union]
 
 DisabledTactic tauto
-NewLemma Set.diff_inter Set.union_assoc Set.union_diff_distrib Set.univ_union
+NewTheorem Set.diff_inter Set.union_assoc Set.union_diff_distrib Set.univ_union
 LemmaTab "Set"
 
 Conclusion "Wie du vielleicht bemerkt hast, könnte `tauto` sowas automatisch lösen."

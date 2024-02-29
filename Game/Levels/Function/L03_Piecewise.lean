@@ -80,7 +80,7 @@ Statement : f ∘ g = g ∘ f := by
 
 NewTactic funext simp_rw linarith
 
-NewLemma not_le if_pos if_neg
+NewTheorem not_le if_pos if_neg
 LemmaTab "Logic"
 
 -- -- TODO : This does not trigger.

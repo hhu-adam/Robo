@@ -32,4 +32,4 @@ Statement : ⊤ ≤ span ℝ (Set.range ![(![1, 0] : Fin 2 → ℝ), ![1, 1]]) :
   --   fin_cases i;
   --   simp,
 
---NewLemma top_le_span_range_iff_forall_exists_fun le_top
+--NewTheorem top_le_span_range_iff_forall_exists_fun le_top

@@ -31,7 +31,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
   $$
 
   **Robo**: Und da bei dieser Identität unklar ist, welche Seite „einfacher“ ist, wird so ein Lemma nicht mit
-  `@[simp]` markiert. 
+  `@[simp]` markiert.
 
   **Du**: Hat diese Gleichheit denn wenigstens einen Namen.
 
@@ -49,7 +49,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
   auch manuell machen."
   ring
 
-NewLemma Finset.sum_add_distrib add_comm
+NewTheorem Finset.sum_add_distrib add_comm
 LemmaTab "Sum"
 
 Conclusion "Der Babylonier macht ein sehr zufriedenes Gesicht."

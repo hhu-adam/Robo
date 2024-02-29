@@ -43,5 +43,5 @@ Statement (X Y : Set ℕ):
     assumption
   tauto
 
-NewLemma Set.mem_powerset_iff Set.subset_union_of_subset_left Set.subset_union_of_subset_right
+NewTheorem Set.mem_powerset_iff Set.subset_union_of_subset_left Set.subset_union_of_subset_right
 LemmaTab "Set"

@@ -21,7 +21,7 @@ man die de-Morganschen Regeln einfach selber beweisen könnten.
 
 
 Die meisten Aufgaben über Mengen sind eine Kombination von `rw` und `simp_rw` verschiedenster
-NewLemma in `import Mathlib.Data.Set`.
+NewTheorem in `import Mathlib.Data.Set`.
 
 Die Taktik `simp_rw` funktioniert ähnlich wie `rw`, aber sie versucht jedes Lemma so oft
 wie möglich anzuwenden. Wir kennen also 4 etwas verwandte Optionen um Lemmas und Theoreme zu
@@ -56,5 +56,5 @@ Statement
 OnlyTactic rw simp_rw tauto trivial assumption rfl «have» «suffices»
 NewTactic simp_rw
 LemmaTab "Set"
-NewLemma Set.mem_compl_iff Set.compl_union Set.diff_diff Set.compl_inter
+NewTheorem Set.mem_compl_iff Set.compl_union Set.diff_diff Set.compl_inter
   Set.diff_eq_compl_inter Set.inter_comm

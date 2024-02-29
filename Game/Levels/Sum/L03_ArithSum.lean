@@ -88,7 +88,7 @@ open BigOperators
   ring
 
 NewTactic induction
-NewLemma Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
+NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
 LemmaTab "Sum"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,

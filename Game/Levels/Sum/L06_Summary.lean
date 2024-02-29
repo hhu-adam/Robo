@@ -57,7 +57,7 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
 
   **Du**: Ich will `sum_univ_castSucc` auf der rechten Seite anwenden, aber es gibt mehrere Orte, wo das Lemma passen würde, und ich will es nur an einer bestimmten Stelle anwenden.
 
-  **Robo**:  
+  **Robo**:
   Mit `rw [sum_univ_castSucc (n := {n} + 1)]` kannst du angeben, wo genau.
 
   **Du**: Was bedeutet das?
@@ -82,11 +82,10 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
   Hint "**Du**: Jetzt sollten es eigentlich nur noch arithmetische Operationen sein."
   ring
 
-NewLemma add_pow_two
+NewTheorem add_pow_two
 LemmaTab "Sum"
 
 Conclusion "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie
 aggressiv war, sondern nur eine sehr tiefe Stimme hat.
 
 Mit einem kleinen Erdbeben setzt er sich hin und winkt euch dankend zu."
-

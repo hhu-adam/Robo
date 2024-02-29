@@ -31,5 +31,5 @@ Statement :
   rw [hx]
   ring
 
-NewLemma Set.setOf_or Set.setOf_and Set.mem_inter_iff
+NewTheorem Set.setOf_or Set.setOf_and Set.mem_inter_iff
 LemmaTab "Set"

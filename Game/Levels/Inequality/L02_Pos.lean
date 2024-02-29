@@ -49,7 +49,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   apply Nat.succ_pos
 
 NewTactic simp
-NewLemma Nat.succ_pos
+NewTheorem Nat.succ_pos
 DisabledLemma Nat.pos_iff_ne_zero Nat.succ_pos'
 LemmaTab "Nat"
 

@@ -32,6 +32,6 @@ Statement (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
   rw [not_mem_compl_iff] at h4
   assumption
 
-NewLemma Set.not_mem_compl_iff Set.mem_of_subset_of_mem Set.compl_eq_univ_diff
+NewTheorem Set.not_mem_compl_iff Set.mem_of_subset_of_mem Set.compl_eq_univ_diff
 DisabledTactic tauto
 LemmaTab "Set"

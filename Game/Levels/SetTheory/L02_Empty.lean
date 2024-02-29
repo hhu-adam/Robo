@@ -23,7 +23,7 @@ open Set
   **Robo**: Dann behaupte das doch."
   tauto
 
-NewLemma Set.mem_univ
+NewTheorem Set.mem_univ
 LemmaTab "Set"
 
 Conclusion "Der Junge rennt weiter.

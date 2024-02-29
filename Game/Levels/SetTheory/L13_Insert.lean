@@ -34,5 +34,5 @@ Statement :
   simp_rw [mem_insert_iff, mem_singleton_iff] at *
   tauto
 
-NewLemma Set.mem_insert_iff Set.mem_singleton_iff
+NewTheorem Set.mem_insert_iff Set.mem_singleton_iff
 LemmaTab "Set"

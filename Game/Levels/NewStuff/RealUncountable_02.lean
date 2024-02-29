@@ -52,13 +52,13 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
     -- Q abzählbar, widerspruch
     contradiction
 
-  intro h
+  by_contra h
   -- Widerspruch: Wir wissen dass ℝ nicht countable ist.
   apply Cardinal.not_countable_real
   rw [← Cardinal.le_aleph0_iff_set_countable]
   rw [Cardinal.mk_univ]
   set B := Basis.ofVectorSpace ℚ ℝ
-  convert cardinal_eq_of_finite_basis _ B
+  apply cardinal_eq_of_finite_basis _ B
   simp only [Cardinal.mk_denumerable]
 
 NewTheorem Cardinal.not_countable_real Cardinal.le_aleph0_iff_set_countable

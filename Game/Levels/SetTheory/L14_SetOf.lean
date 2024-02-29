@@ -31,5 +31,5 @@ Statement : 3 ∈ {n : ℕ | Odd n}  := by
   use 1
   ring
 
-NewLemma Set.mem_setOf
+NewTheorem Set.mem_setOf
 LemmaTab "Set"

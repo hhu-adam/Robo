@@ -41,4 +41,4 @@ Conclusion "**Operationsleiter**:  Wenn Ihr so weitermacht, dann kommen wir ja d
 
 NewTactic rw
 DisabledTactic tauto
--- NewLemma Iff.symm
+-- NewTheorem Iff.symm

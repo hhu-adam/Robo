@@ -75,7 +75,8 @@ example :
     (∃ (W : Submodule k V), W.carrier = U₁.carrier ∪ U₂.carrier) ↔
     U₁ ≤ U₂ ∨ U₂ ≤ U₁ := by
   constructor
-  · sorry
+  · intro h
+    sorry
   · intro h
     use U₁ ⊔ U₂
     sorry

@@ -34,7 +34,7 @@ Statement (p : ℕ) (h : Nat.Prime p) : ∀ (x : ℕ), (x ∣ p) → x = 1 ∨ x
   rcases h with ⟨_, h₂⟩
   assumption
 
-NewLemma Nat.prime_def_lt''
+NewTheorem Nat.prime_def_lt''
 
 Conclusion "**Du**: Ich sehe, meine \"Definition\" hätte auch `1` als Primzahl deklariert. Gut,
 dass wir das überprüft haben.

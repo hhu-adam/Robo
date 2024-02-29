@@ -41,7 +41,7 @@ Statement
   **Robo**: Doch, probier mal `sum_comm`."
   rw [Finset.sum_comm]
 
-NewLemma Finset.sum_comm
+NewTheorem Finset.sum_comm
 LemmaTab "Sum"
 
 Conclusion "

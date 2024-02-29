@@ -22,7 +22,7 @@ Statement (n : ℕ) : 4 ∣ 5^n + 7 := by
   rw [Nat.pow_succ, Nat.mul_succ, add_assoc, h, mul_comm, ←mul_add]
   simp
 
---NewLemma Nat.pow_succ, Nat.mul_succ, add_assoc, mul_comm, ←mul_add
+--NewTheorem Nat.pow_succ, Nat.mul_succ, add_assoc, mul_comm, ←mul_add
 
 -- example (n : ℕ) : Even (n^2 + n) := by
 --   induction n

@@ -67,7 +67,7 @@ Statement (x : ℤ) : ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
   ring
 
 NewTactic «let»
-NewLemma Function.comp_apply
+NewTheorem Function.comp_apply
 LemmaTab "Function"
 
 Conclusion "**Du**: Dann verstehst du etwas Mathe?
