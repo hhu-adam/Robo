@@ -14,21 +14,14 @@ Introduction
 
 **Benedictus**:  Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber Ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe Sie Euch mit auf die Reise. Aber nun seht zu, dass Ihr weiterkommt!"
 
--- Statt mit `contrapose`  `by_contra` ein Widerspruchsbeweis.
--- Probiers doch einfach!
--- In diesem Kapitel hast du also folgende Taktiken kennengelernt:
-
-
--- Als Vergleich zwischen Beweisen \"per Widerspruch\"
--- und \"per Kontraposition\", beweise die Gleiche Aufgabe indem
--- du mit `by_contra` einen Widerspruch suchst.
-
 open Nat
 
 Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
-  Hint "Sobald Ihr Euch sicher vom Gravitationsfeld des Asteroiden befreit habt, beugt Ihr Euch wieder über die Aufgabe.
+  Hint "
+    Sobald Ihr Euch sicher vom Gravitationsfeld des Asteroiden befreit habt, beugt Ihr
+    Euch wieder über die Aufgabe.
 
-  **Robo**:  Okay, also diesmal fangen wir mit `by_contra g` an!"
+    **Robo**:  Okay, also diesmal fangen wir mit `by_contra g` an!"
   by_contra g
   Hint "**Robo**: Jetzt würde ich einen Widerspruch zu `Odd (n ^ 2)` führen."
   Hint (hidden := true) "**Robo**: Also `suffices g : ¬ Odd (n ^ 2)`."
@@ -40,7 +33,8 @@ Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
 
 DisabledTactic contrapose revert
 
-Conclusion "**Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.
+Conclusion "
+**Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.
 
 
 |       | Taktik          | Beispiel                                               |

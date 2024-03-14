@@ -38,37 +38,5 @@ Der erste Querulant ist offenbar zufrieden.
  wir haben eine `contradiction` in unserem Annahmen, also folgt jede beliebige Aussage.
 "
 
-/--
-`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.
-
-## Details
-Ein Widerspruch in den Annahmen kann unter anderem folgendermassen aussehen:
-
-* `(h : n ≠ n)`
-* `(h : A)` und `(h' : ¬A)`
-* `(h : False)` (i.e. ein Beweis von `False`)
-
-## Beispiel
-
-Folgenes Goal wird von `contradiction` bewiesen
-
-## Hilfreiche Resultate
-
-* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu
-  schliessen, der mit `by_contra` eröffnet wurde.
-* Ein Beweis von `False` representiert in Lean einen Widerspruch.
-
-```
-Objekte:
-  (n m : ℕ)
-  (h : n = m)
-  (g : n ≠ m)
-Goal
-  37 = 60
-```
-nach dem Motto \"ein Widerspruch beweist alles.\"
--/
-TacticDoc contradiction
-
 NewTactic contradiction
 DisabledTactic tauto

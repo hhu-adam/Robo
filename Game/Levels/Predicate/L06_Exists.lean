@@ -68,33 +68,6 @@ Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
 -- be that it distinguishes between the defEq states while `(strict := false)`
 -- would show the hint regardless of a `unfold Even`.
 
-/--
-`unfold myDef` öffnet eine Definition im Goal.
-
-## Details
-Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken
-(z.B. `push_neg`, `rw`) brauchen aber manchmal die Hilfe.
-
-`unfold myDef at h` kann auch Definitionen in Annahmen öffnen
-
-## Hilfreiche Resultate
-
-* `change P` ist eine andere Taktik, die das aktuelle Goal in einen DefEq-Ausdruck umschreibt.
-  Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
--/
-TacticDoc unfold
-
-/--
-Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben
-mit dem man das Goal beweisen möchte.
-
-## Details
-
-`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt
-schließen.
--/
-TacticDoc use
-
 NewTactic unfold use
 NewDefinition Even Odd
 

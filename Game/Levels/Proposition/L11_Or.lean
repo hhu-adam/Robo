@@ -32,23 +32,5 @@ Conclusion
 Auch dieser Formalosoph zieht zufrieden von dannen.
 "
 
-/--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.
-
-## Hilfreiche Resultate
-
-* `right` entscheidet sich für die linke Seite.
--/
-TacticDoc left
-
-/--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.
-
-## Hilfreiche Resultate
-
-* `left` entscheidet sich für die linke Seite.
--/
-TacticDoc right
-
 NewTactic left right
 DisabledTactic tauto

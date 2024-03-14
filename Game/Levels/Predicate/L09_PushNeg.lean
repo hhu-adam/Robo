@@ -46,20 +46,6 @@ Statement {X : Type} (P : X → Prop) :
   push_neg
   assumption
 
-/--
-`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.
-
-## Details
-
-`psuh_neg` schiebt das `¬` soweit nach innen wie möglich.
-
-## Hilfreiche Resultate
-
-* Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet
-  werden.
--/
-TacticDoc push_neg
-
 NewTactic push_neg
 
 Conclusion

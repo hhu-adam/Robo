@@ -31,19 +31,5 @@ Wie in einer Mathe-Vorlesung?
 Das funktioniert nur in einer Handvoll Situationen.
 "
 
-/--
-`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
-
-## Details
-Die Taktiken, die verwendet werden sind:
-
-* `assumption`
-* `rfl`
-* `contradiction`
-* und noch 3 andere, die hier nicht behandelt werden
-  (`decide`, `apply True.intro`, `apply And.intro`).
--/
-TacticDoc trivial
-
 NewTactic trivial
 DisabledTactic tauto

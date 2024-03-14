@@ -37,24 +37,5 @@ Conclusion
 zerbrochen habe!
 "
 
-/--
-`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.
-
-## Beispiel
-
-`assumption` sucht durch die Annahmen und merkt dass `h` genau mit dem Goal übereinstimmt.
-
-```
-Objekte
-  a b c d : ℕ
-  h : a + b = c
-  g : a * b = 16
-  t : c = 12
-Goal
-  a + b = c
-```
--/
-TacticDoc assumption
-
 NewTactic assumption
 DisabledTactic tauto

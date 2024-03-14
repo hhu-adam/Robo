@@ -38,34 +38,5 @@ Statement (A B : Prop) (hA : A) (h : A → B) : B := by
 
 Conclusion "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
 
-/--
-`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.
-
-## Hilfreiche Resultate
-
-* `revert` ist das Gegenteil von `intro`.
-* `revert` kann insbesondere nützlich sein, um anschliessend `contrapose` zu verwenden.
-
-## Beispiel
-
-```
-Objekte
-  A P : Prop
-  h : P
-Goal
-  A
-```
-
-hier ändert `revert h` den Status zu
-
-```
-Objekte
-  A P : Prop
-Goal
-  P → A
-```
--/
-TacticDoc revert
-
 NewTactic revert
 DisabledTactic tauto

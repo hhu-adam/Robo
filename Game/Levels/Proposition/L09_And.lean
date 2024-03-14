@@ -46,29 +46,5 @@ Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 Oder ist der nur gemalt?  Probier mal!
 "
 
-/--
-`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist
-
-## Detail
-Wenn das Goal eine Struktur ist, wie z.B. `A ∧ B` welches zwei Felder hat `⟨A, B⟩`, dann
-erzeugt `constructor` ein Goal pro Feld der Struktur.
-
-## Hilfreiche Resultate
-
-* Das Gegenteil von `constructor` ist `⟨_, _⟩` (`\\<>`), der *anonyme Konstruktor*.
-Dieser enspricht ungefähr der Tupel-Notation in
-\"eine Gruppe ist ein Tupel $(G, 0, +)$, sodass …\".
-
-## Beispiel
-
-```
-example {A B : Prop} (h : A) (g : B) : A ∧ B := by
-  constructor
-  · assumption
-  · assumption
-```
--/
-TacticDoc constructor
-
 NewTactic constructor
 DisabledTactic tauto

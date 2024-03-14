@@ -34,33 +34,5 @@ Conclusion
 `rcases h with ⟨h₁, ⟨h₂ , h₃⟩⟩`.
 "
 
-/--
-`rcases h` teilt eine Annahme `h` in ihre Einzelteile auf.
-
-## Details
-Für Annahmen die Strukturen sind, wie z.B. `h : A ∧ B` (oder `∃x, P x`) kann man die
-Einzelteile mit  `rcases h with ⟨a, b⟩` (oder `rcases h with ⟨x, hx⟩`) benennen.
-
-Für eine Annahme der Form `h : A ∨ B` kann man mit `rcases h with ha | hb` zwei Goals
-erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechten.
-
-## Hilfreiche Resultate
-
-* Für `n : ℕ` hat `rcases n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
-  dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht.
-* In Lean gibt es auch die Taktik `cases`, die gleich funktioniert wie `rcases` aber
-  einen mehrzeiligen Syntax hat:
-  ```
-  cases h with
-  | inl ha =>
-    sorry
-  | inr hb =>
-    sorry
-  ```
-  Hier sind `inl`/`inr` die Namen der Fälle und `ha`/`hb` sind frei gewählte Namen für die
-  freien Variablen
--/
-TacticDoc rcases
-
 NewTactic rcases
 DisabledTactic tauto

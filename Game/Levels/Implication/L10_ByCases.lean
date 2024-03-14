@@ -33,26 +33,5 @@ Conclusion
 Der Operationsleiter nickt zustimmend.
 "
 
-/--
-`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme
-`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.
-
-## Details
-
-`P` kann eine beliegige Aussage sein, die als entweder wahr oder falsch angenommen wird.
-
-## Beispiel
-
-```
-example (A : Prop) : A ∨ ¬ A := by
-  by_cases h : A
-  · left
-    assumption
-  · right
-    assumption
-```
--/
-TacticDoc by_cases
-
 NewTactic by_cases
 DisabledTactic tauto

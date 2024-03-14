@@ -10,34 +10,20 @@ Introduction
 **Benedictus**:  Hier, schaut mal. Das habe ich für Euch vorbereitet.
 "
 
--- Manchmal, wollen wir nicht am aktuellen Goal arbeiten, sondern zuerst ein
--- Zwischenresultat beweisen, welches wir dann benützen können.
-
--- Mit `have [Name] : [Aussage]` kann man ein Zwischenresultat erstellen,
--- dass man anschliessen beweisen muss.
-
--- Wenn du zum Beispiel die Annahmen `(h : A → ¬ B)` und `(ha : A)` hast, kannst
--- du mit
--- ```
--- have g : ¬ B
--- apply h
--- assumption
--- ```
--- eine neue Annahme `(g : ¬ B)` erstellen. Danach beweist du zuerst diese Annahme,
--- bevor du dann mit dem Beweis forfährst.
-
 Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   Hint "**Du**: Also als erstes teile ich wohl mal das Und (`∧`) auf."
   rcases k with ⟨h₁, h₂⟩
-  Hint (strict := true) "**Du**: Und jetzt …
+  Hint (strict := true) "
+    **Du**: Und jetzt …
 
-  **Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.
+    **Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.
 
-  **Robo**:  Ja!  Probier mal `have g : ¬ B`!"
+    **Robo**:  Ja!  Probier mal `have g : ¬ B`!"
   have g : ¬ B
-  · Hint "**Du**: Was?  Jetzt hab ich einfach angenommen, dass sei richtig?
+  · Hint "
+      **Du**: Was?  Jetzt hab ich einfach angenommen, dass sei richtig?
 
-    **Robo**: Nee, jetzt musst du das erst noch beweisen, bevor du es dann benutzen kannst."
+      **Robo**: Nee, jetzt musst du das erst noch beweisen, bevor du es dann benutzen kannst."
     Hint (hidden := true) "**Robo**: `apply` sollte helfen"
     apply h
     assumption
@@ -46,7 +32,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   **Robo**: `contradiction`."
   contradiction
 
+Conclusion "**Benedictus**: Das sieht gut aus!"
+
 NewTactic «have»
 DisabledTactic «suffices»
-
-Conclusion "**Benedictus**: Das sieht gut aus!"

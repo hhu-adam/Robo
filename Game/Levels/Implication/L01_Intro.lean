@@ -51,15 +51,5 @@ Förderband in Bewegung.
 **Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "
 
-/--
-`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.
-Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.
-
-## Hilfreiche Resultate
-
-* `revert h` macht das Gegenteil von `intro`.
--/
-TacticDoc intro
-
 NewTactic intro
 DisabledTactic tauto

@@ -40,20 +40,5 @@ Conclusion
 **Operationsleiter**:  Wenn Ihr so weitermacht, dann kommen wir ja durch den ganzen Packen durch!
 "
 
-/--
-Wenn man eine Annahme `(h : X = Y)` hat, kann man mit
-`rw [h]` alle `X` im Goal durch `Y` ersetzen.
-
-## Details
-
-* `rw [←h]` wendet `h` rückwärts an und ersetzt alle `Y` durch `X`.
-* `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.
-* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).
-
-`rw` funktioniert gleichermassen mit Annahmen `(h : X = Y)` also auch
-mit Theoremen/Lemmas der Form `X = Y`
--/
-TacticDoc rw
-
 NewTactic rw
 DisabledTactic tauto
