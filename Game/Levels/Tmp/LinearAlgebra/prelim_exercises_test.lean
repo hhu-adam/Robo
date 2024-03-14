@@ -117,7 +117,6 @@ instance foo : AddCommGroup V := Real.instAddCommGroupReal
 -- example [Module ℚ V] :
 
 
-set_option trace.Meta.synthInstance true in
 
 #check Module
 

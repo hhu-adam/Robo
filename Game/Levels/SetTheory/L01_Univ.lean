@@ -1,10 +1,5 @@
 import Game.Metadata
 
-
-
-set_option tactic.hygienic false
-set_option autoImplicit false
-
 World "SetTheory"
 Level 1
 
@@ -30,26 +25,27 @@ erklärt mir doch folgendes:
 
 open Set
 
-/--  -/ Statement Set.mem_univ {A : Type} (x : A) : x ∈ (univ : Set A) := by
-  Hint "**Du**: Also `A` ist ein `Type`, `x` ist ein Element in `A`…
+Statement Set.mem_univ {A : Type} (x : A) : x ∈ (univ : Set A) := by
+  Hint "
+    **Du**: Also `A` ist ein `Type`, `x` ist ein Element in `A`…
 
-  **Robo** … und `univ` ist die Menge aller Elemente in `A`.
+    **Robo** … und `univ` ist die Menge aller Elemente in `A`.
 
-  **Du** ist das nicht einfach `A` selber?
+    **Du** ist das nicht einfach `A` selber?
 
-  **Robo** Fast, aber das eine ist ein `Type`, das andere eine Menge, also vom Typ `Set A`.
+    **Robo** Fast, aber das eine ist ein `Type`, das andere eine Menge, also vom Typ `Set A`.
 
-  **Du**: Unlogisch.
+    **Du**: Unlogisch.
 
-  **Mengites**: Naja, Typen und Mengen sind halt zwei unterschiedliche Sachen und wenn ihr
-  über Mengen sprechen wollt, müssen alles Mengen sein.
+    **Mengites**: Naja, Typen und Mengen sind halt zwei unterschiedliche Sachen und wenn ihr
+    über Mengen sprechen wollt, müssen alles Mengen sein.
 
-  **Du**: Na gut. Und wieso `x ∈ univ` und nicht `x : univ` wie bei Typen?
+    **Du**: Na gut. Und wieso `x ∈ univ` und nicht `x : univ` wie bei Typen?
 
-  **Robo**: Jedes Element `(x : A)` hat entweder die Eigenschaft `x ∈ U` oder `x ∉ U` für eine
-  Menge `(U : Set A)`. (`\\in`, `\\nin`)
+    **Robo**: Jedes Element `(x : A)` hat entweder die Eigenschaft `x ∈ U` oder `x ∉ U` für eine
+    Menge `(U : Set A)`. (`\\in`, `\\nin`)
 
-  **Du**: Also das ist ja dann `trivial`. Hoffentlich sehen die das hier auch so…"
+    **Du**: Also das ist ja dann `trivial`. Hoffentlich sehen die das hier auch so…"
   trivial
 
 TheoremTab "Set"

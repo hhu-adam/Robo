@@ -22,7 +22,8 @@ World "SetTheory"
 Title "Mengenlehre"
 
 Introduction
-"[Note: von hier an sind die Levels leider noch nicht vollständig. Evt. müsst ihr etwas ausprobieren oder
+"[Note: von hier an sind die Levels leider noch nicht vollständig. Evt. müsst ihr etwas
+ausprobieren oder
 fragen, wenn ihr nicht weiterkommt.]
 
 Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische

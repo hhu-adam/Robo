@@ -33,8 +33,6 @@ example :
 
 #check Submodule.inclusion
 
-set_option trace.Meta.synthInstance true in
-
 #check U₁ ⊔ U₂
 
 #check Submodule
@@ -146,8 +144,6 @@ noncomputable
 abbrev RQ := (NormedSpace.toModule : Module ℚ ℝ)
 
 example (a : ℚ) (b : ℝ) : a • b = RQ.smul a b := rfl
-
-set_option trace.Meta.synthInstance true in
 
 example (q : ℤ) (r : ℝ) : q * r = q * r := by
   have y : (q : ℚ) • r = q * r := rfl

@@ -1,9 +1,5 @@
 import Game.Metadata
 
-
-
-
-set_option tactic.hygienic false
 open Finset
 
 World "Sum"
