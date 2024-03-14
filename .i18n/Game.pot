@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Mar 14 19:57:36 2024\n"
+"POT-Creation-Date: Thu Mar 14 20:36:13 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -814,7 +814,8 @@ msgstr ""
 msgid "\n"
 "**Operationsleiter**: Perfekt!  Danke schön!\n"
 "\n"
-"Er geht zu einer Schalttafel und ein paar Knöpfe. Irgendwo setzt sich lautstark ein Förderband in Bewegung.\n"
+"Er geht zu einer Schalttafel und ein paar Knöpfe. Irgendwo setzt sich lautstark ein\n"
+"Förderband in Bewegung.\n"
 "\n"
 "**Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?\n"
 ""
@@ -907,19 +908,25 @@ msgstr ""
 msgid "\n"
 "Leider läuft das Telefonat nicht so gut. Er legt wieder auf und schüttelt mit dem Kopf.\n"
 "\n"
-"**Operationsleiter**: Der Kollege auf der anderen Seite des Mondes versteht kein `revert`. Oder er tut zumindest so. Habt Ihr noch eine andere Idee?\n"
+"**Operationsleiter**: Der Kollege auf der anderen Seite des Mondes versteht kein `revert`. Oder\n"
+"er tut zumindest so. Habt Ihr noch eine andere Idee?\n"
 "\n"
-"Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~`revert`~, und legt Euch das Blatt ein zweites Mal vor.\n"
+"Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~`revert`~, und legt Euch\n"
+"das Blatt ein zweites Mal vor.\n"
 ""
 msgstr ""
 
 #: Game.Levels.Implication.L03_Apply
-msgid "**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.\n"
+msgid "\n"
+"**Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.\n"
 "Probier doch mal `apply hAB at h`."
 msgstr ""
 
 #: Game.Levels.Implication.L03_Apply
-msgid "**Robo**:  Ich sagte `… at h`. Aber einfach nur `apply hAB` funktioniert offenbar auch. Jetzt hast Du sozusagen `hAB` auf das Beweisziel `B` angewendet, und musst nur noch `A` beweisen."
+msgid "\n"
+"**Robo**:  Ich sagte `… at h`. Aber einfach nur `apply hAB` funktioniert offenbar auch.\n"
+"Jetzt hast Du sozusagen `hAB` auf das Beweisziel `B` angewendet, und musst nur\n"
+"noch `A` beweisen."
 msgstr ""
 
 #: Game.Levels.Implication.L03_Apply
@@ -1247,7 +1254,8 @@ msgstr ""
 msgid "\n"
 "Beim nächsten Problem stutzt der Operationsleiter.\n"
 "\n"
-"**Operationsleiter**:  Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt. Das ist gar nicht von mir. Sieht aber irgendwie interessant aus.\n"
+"**Operationsleiter**:  Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt. Das ist\n"
+"gar nicht von mir. Sieht aber irgendwie interessant aus.\n"
 ""
 msgstr ""
 
@@ -1445,16 +1453,35 @@ msgstr ""
 msgid "**Du**: Das ist doch Schulmathematik! Man rechnet das einfach aus,\n"
 "indem man die Terme umsortiert.\n"
 "\n"
-"**Robo**: Wenn die Gleichung stimmt, kannst du auf Leansch sogar einfach mit `ring` beweisen, dass das so ist.\n"
+"**Robo**: Wenn die Gleichung stimmt, kannst du auf Leansch sogar einfach\n"
+"mit `ring` beweisen, dass das so ist.\n"
 "\n"
 "**Du**: Aber `ℕ` ist doch gar kein Ring?\n"
 "\n"
-"**Robo**: `ring` funktioniert sogar für sogenannte Halbringe. Ich glaube, man sagt `ring`, weil es in  (kommutativen) Ringen am besten funktioniert.\n"
-""
+"**Robo**: `ring` funktioniert sogar für sogenannte Halbringe. Ich glaube,\n"
+"man sagt `ring`, weil es in  (kommutativen) Ringen am besten funktioniert."
 msgstr ""
 
 #: Game.Levels.Predicate.L01_Ring
 msgid ""
+msgstr ""
+
+#: Game.Levels.Predicate.L01_Ring
+msgid "Löst Gleichungen mit den Operationen `+, -, *, ^`.\n"
+"\n"
+"## Details\n"
+"Insbesondere funktioniert `ring` in Ringen/Semiringen wie z.B. `ℕ, ℤ, ℚ, …`\n"
+"(i.e. Typen `R` mit Instanzen `Ring R` oder `Semiring R`).\n"
+"Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.\n"
+"\n"
+"## Hilfreiche Resultate\n"
+"\n"
+"* `ring` kann nicht wirklich mit Division (`/`) oder Inversen (`⁻¹`) umgehen. Dafür ist die\n"
+"  Taktik `field_simp` gedacht, und die typische Sequenz ist\n"
+"  ```\n"
+"  field_simp\n"
+"  ring\n"
+"  ```"
 msgstr ""
 
 #: Game.Levels.Predicate.L02_Rewrite
@@ -1466,7 +1493,8 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Predicate.L02_Rewrite
-msgid "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis* schon gelöst hatten.\n"
+msgid "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis*\n"
+"schon gelöst hatten.\n"
 "Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!\n"
 "\n"
 "**Robo**: Richtig. Und im Grunde macht das gar keinen Unterscheid.\n"
@@ -1508,7 +1536,9 @@ msgid "$$\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L03_Rewrite
-msgid "**Du**: Hier muss man, glaube ich, einfach in Annahme `«{g}»` die Variable `«{a}»` durch `«{b}»` ersetzen.\n"
+msgid "\n"
+"**Du**: Hier muss man, glaube ich, einfach in Annahme `«{g}»` die\n"
+"Variable `«{a}»` durch `«{b}»` ersetzen.\n"
 "\n"
 "**Robo**: Genau! Das machst du mit `rw [«{h}»] at «{g}»`."
 msgstr ""
@@ -1519,7 +1549,8 @@ msgstr ""
 
 #: Game.Levels.Predicate.L03_Rewrite
 msgid "\n"
-"**Robo**: Noch ein Trick: Mit `rw [h] at *` kann man gleichzeitig mittels `h` **alle** Annahmen und das Goal umschreiben.\n"
+"**Robo**: Noch ein Trick: Mit `rw [h] at *` kann man gleichzeitig mittels `h` **alle**\n"
+"Annahmen und das Goal umschreiben.\n"
 ""
 msgstr ""
 
@@ -1532,10 +1563,12 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Predicate.L04_Ring
-msgid "**Du**: Ich vermute, wenn ich zuerst alles so umschreibe, dass\n"
+msgid "\n"
+"**Du**: Ich vermute, wenn ich zuerst alles so umschreibe, dass\n"
 "das Beweisziel nur noch rechnen und umsortieren zu beweisen ist, erledigt `ring` den Rest!\n"
 "\n"
-"**Robo**: Genau. Und noch ein Trick:  Zwei Schritte `rw [h₁]` und `rw [h₂]` kann man zu einem einzigen Schritt zusammenfassen: `rw [h₁, h₂]`."
+"**Robo**: Genau. Und noch ein Trick:  Zwei Schritte `rw [h₁]` und `rw [h₂]` kann man zu\n"
+"einem einzigen Schritt zusammenfassen: `rw [h₁, h₂]`."
 msgstr ""
 
 #: Game.Levels.Predicate.L04_Ring
@@ -1555,9 +1588,11 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L05_Rfl
-msgid "**Du**: Wieso nicht `ring`?\n"
+msgid "\n"
+"**Du**: Wieso nicht `ring`?\n"
 "\n"
-"**Robo**: Klar, `ring` würde normalerweise auch funktioneren. Aber ich würde mich hier dem Mehrheitswillen beugen …"
+"**Robo**: Klar, `ring` würde normalerweise auch funktioneren. Aber ich würde mich hier\n"
+"dem Mehrheitswillen beugen …"
 msgstr ""
 
 #: Game.Levels.Predicate.L05_Rfl
@@ -1576,8 +1611,11 @@ msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
 msgid "\n"
-"Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich nicht einigen, welche.\n"
-"Ihr heute abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo vorsichtshalber schon einmal die entsprechenden Definitionen an:\n"
+"Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen\n"
+"applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich\n"
+"nicht einigen, welche.\n"
+"Ihr heute abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo\n"
+"vorsichtshalber schon einmal die entsprechenden Definitionen an:\n"
 "\n"
 "```\n"
 "def Even (n : ℕ) : Prop := ∃ r, n = r + r\n"
@@ -1594,32 +1632,36 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "**Robo**: Wie du oben siehst, ist `Even n` dadurch definiert,\n"
+msgid "\n"
+"**Robo**: Wie du oben siehst, ist `Even n` dadurch definiert,\n"
 "dass ein `r` existiert so dass `r + r = n` ist. Am besten\n"
 "öffnest du diese Definition mit `unfold Even at *` einmal.\n"
 "Dann siehst du besser, was los ist."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
+msgid "\n"
+"Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "**Du**: Also von `«{h}»` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = n` …\n"
+msgid "\n"
+"**Du**: Also von `«{h}»` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = n` …\n"
 "\n"
 "**Robo**: Mit `rcases h with ⟨r, hr⟩` kannst du dieses `r` tatsächlich einführen."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "**Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = n^2`?\n"
+msgid "\n"
+"**Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = n^2`?\n"
 "\n"
 "**Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "**Robo**: Also sowas ähnliches wie `use 4 * r ^ 3`, aber ich kann\n"
-"dir leider nicht sagen, welche Zahl passt.\n"
-""
+msgid "\n"
+"**Robo**: Also sowas ähnliches wie `use 4 * r ^ 3`, aber ich kann\n"
+"dir leider nicht sagen, welche Zahl passt."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
@@ -1631,10 +1673,36 @@ msgid "**Du**: Ah, und jetzt `ring`!"
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
-msgid "**Du**: Ah, und jetzt `ring`!\n"
+msgid "\n"
+"**Du**: Ah, und jetzt `ring`!\n"
 "\n"
 "**Robo**: Aber zuerst musst du noch mit\n"
 "`rw` `n` durch `r + r` ersetzen, da `ring` das sonst nicht weiß."
+msgstr ""
+
+#: Game.Levels.Predicate.L06_Exists
+msgid "`unfold myDef` öffnet eine Definition im Goal.\n"
+"\n"
+"## Details\n"
+"Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken\n"
+"(z.B. `push_neg`, `rw`) brauchen aber manchmal die Hilfe.\n"
+"\n"
+"`unfold myDef at h` kann auch Definitionen in Annahmen öffnen\n"
+"\n"
+"## Hilfreiche Resultate\n"
+"\n"
+"* `change P` ist eine andere Taktik, die das aktuelle Goal in einen DefEq-Ausdruck umschreibt.\n"
+"  Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen."
+msgstr ""
+
+#: Game.Levels.Predicate.L06_Exists
+msgid "Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben\n"
+"mit dem man das Goal beweisen möchte.\n"
+"\n"
+"## Details\n"
+"\n"
+"`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt\n"
+"schließen."
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
@@ -1652,7 +1720,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: mit `rcases h with ⟨r, hr⟩` kannst du wieder\n"
+msgid "\n"
+"**Robo**: mit `rcases h with ⟨r, hr⟩` kannst du wieder\n"
 "das `r` nehmen, das laut Annahme existieren muss.\n"
 "\n"
 "**Robo**: Oder aber, du fängst mit `unfold Odd at *` an."
@@ -1663,44 +1732,35 @@ msgid "**Robo**: Mit `unfold Odd at *` öffnest du alle Definitionen von `Odd`."
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: mit `rcases h with ⟨r, hr⟩` kannst du wieder\n"
+msgid "\n"
+"**Robo**: mit `rcases h with ⟨r, hr⟩` kannst du wieder\n"
 "das `r` nehmen, das laut Annahme existieren muss."
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: Ich hab noch einen Trick auf Lager:\n"
+msgid "\n"
+"**Robo**: Ich hab noch einen Trick auf Lager:\n"
 "Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest\n"
 "du schon jetzt mit `rw [«{hr}»]` weitermachen …"
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
+msgid "\n"
+"**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
 "Normalform um, das hilft beim Vergleichen."
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Du**: Was bedeutet `ring_nf`?\n"
-"\n"
-"**Robo**: Wenn man `ring` nicht am Schluss benützt, sollte man stattdessen `ring_nf`\n"
-"schreiben, aber die funktionieren praktisch gleich."
-msgstr ""
-
-#: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: Ich hab noch einen Trick auf Lager:\n"
+msgid "\n"
+"**Robo**: Ich hab noch einen Trick auf Lager:\n"
 "Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest\n"
 "Du schon jetzt mit `rw [«{hr}»]` weitermachen…"
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
-msgid "**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
+msgid "\n"
+"**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
 "Normalform um, das hilft beim Vergleichen."
-msgstr ""
-
-#: Game.Levels.Predicate.L07_Exists
-msgid "**Du**: Was bedeutet `ring_nf`?\n"
-"\n"
-"**Robo**: Wenn man `ring` nicht am Schluss benützt, sollte man stattdessen `ring_nf`\n"
-"schreiben, aber die funktionieren praktisch gleich."
 msgstr ""
 
 #: Game.Levels.Predicate.L07_Exists
@@ -1712,20 +1772,22 @@ msgid "Für alle"
 msgstr ""
 
 #: Game.Levels.Predicate.L08_Forall
-msgid "\n"
-"Nach längerem Durcheinander findet ein weiteres Blatt aus der Menge zu Euch.\n"
-""
+msgid "Nach längerem Durcheinander findet ein weiteres Blatt aus der Menge zu Euch."
 msgstr ""
 
 #: Game.Levels.Predicate.L08_Forall
-msgid "**Du**: Das `∀` heisst sicher "für alle".\n"
+msgid "\n"
+"**Du**: Das `∀` heisst sicher "für alle".\n"
 "\n"
 "**Robo**: Und man schreibt `\forall`. Ein `∀ x, …` im Beweisziel kannst du wie eine\n"
 "Implikation mit `intro x` angehen."
 msgstr ""
 
 #: Game.Levels.Predicate.L08_Forall
-msgid "Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen beratschlagen sich, was sie Euch noch vorlegen wollen."
+msgid "\n"
+"Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen\n"
+"beratschlagen sich, was sie Euch noch vorlegen wollen.\n"
+""
 msgstr ""
 
 #: Game.Levels.Predicate.L09_PushNeg
@@ -1739,7 +1801,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L09_PushNeg
-msgid "**Du**: Was ist denn jetzt dieses P?\n"
+msgid "\n"
+"**Du**: Was ist denn jetzt dieses P?\n"
 "\n"
 "**Robo**: P ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `X`.\n"
 "Zum Beispiel könnte `X` wieder der Typ der natürlichen Zahlen sein.\n"
@@ -1753,8 +1816,7 @@ msgid "**Du**: Was ist denn jetzt dieses P?\n"
 "**Du**:  Gut. Dann ist auch ziemlich klar, was hier die Aussage ist.\n"
 "Und du wolltest mir jetzt verraten, wie ich das auf Leansch zeige?\n"
 "\n"
-"**Robo**:  Genau. Was du brauchst, ist `push_neg`.\n"
-""
+"**Robo**:  Genau. Was du brauchst, ist `push_neg`."
 msgstr ""
 
 #: Game.Levels.Predicate.L09_PushNeg
@@ -1762,11 +1824,27 @@ msgid "**Robo**: Das ist jetzt trivial, oder?"
 msgstr ""
 
 #: Game.Levels.Predicate.L09_PushNeg
-msgid "**Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf das Beweisziel anwenden, wohl aber auf `«{h}»`."
+msgid "\n"
+"**Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf\n"
+"das Beweisziel anwenden, wohl aber auf `«{h}»`."
 msgstr ""
 
 #: Game.Levels.Predicate.L09_PushNeg
-msgid "**Robo**:  Gut gemacht. Intern benutzt `push_neg` übringens zwei Lemmas:\n"
+msgid "`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.\n"
+"\n"
+"## Details\n"
+"\n"
+"`psuh_neg` schiebt das `¬` soweit nach innen wie möglich.\n"
+"\n"
+"## Hilfreiche Resultate\n"
+"\n"
+"* Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet\n"
+"  werden."
+msgstr ""
+
+#: Game.Levels.Predicate.L09_PushNeg
+msgid "\n"
+"**Robo**:  Gut gemacht. Intern benutzt `push_neg` übringens zwei Lemmas:\n"
 "\n"
 " - `not_exists (A : Prop) : ¬ (∃ x, A) ↔ ∀x, (¬A)`\n"
 " - `not_forall (A : Prop) : ¬ (∀ x, A) ↔ ∃x, (¬A)`\n"
@@ -1794,7 +1872,8 @@ msgid "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
 msgstr ""
 
 #: Game.Levels.Predicate.L10_PushNeg
-msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+msgid "\n"
+"**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 "Ich würde nochmal zurückgehen und schauen,\n"
 "dass du irgendwie `¬Odd` erhältst.\n"
 "Das kannst du dann mit `rw [←even_iff_not_odd]`\n"
@@ -1802,7 +1881,9 @@ msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L10_PushNeg
-msgid "**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das Lemma `←even_iff_not_odd` brauchen.\n"
+msgid "\n"
+"**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das\n"
+"Lemma `←even_iff_not_odd` brauchen.\n"
 "\n"
 "**Du**: Könnte ich jetzt schon `rw [←even_iff_not_odd]` anwenden?\n"
 "\n"
@@ -1827,7 +1908,8 @@ msgid "**Robo**: Gute Wahl! Jetzt kannst du `←even_iff_not_odd` verwenden."
 msgstr ""
 
 #: Game.Levels.Predicate.L10_PushNeg
-msgid "Die Formalosophinnen sind ganz begeistert.\n"
+msgid "\n"
+"Die Formalosophinnen sind ganz begeistert.\n"
 "Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.\n"
 "\n"
 "**Du**: Kann uns hier irgendjemand vielleicht ein bisschen Orientierung im Formaloversum geben?\n"
@@ -1837,7 +1919,6 @@ msgid "Die Formalosophinnen sind ganz begeistert.\n"
 "**Du**:  Wer denn?\n"
 "\n"
 "Die Frage war wieder zu konkret. Betretenes Schweigen.\n"
-"\n"
 ""
 msgstr ""
 
@@ -1847,7 +1928,6 @@ msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
 msgid "\n"
-"\n"
 "**Du**: Könnte ihr eigentlich immer nur im Chor oder durcheinander reden?\n"
 "\n"
 "Wieder herrscht längeres Schweigen. Dann auf einmal:\n"
@@ -1860,7 +1940,9 @@ msgid "\n"
 "\n"
 "**Du**:  Was??\n"
 "\n"
-"**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.\n"
+"**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies\n"
+"das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit\n"
+"der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.\n"
 "\n"
 "**Du**: Glaube ich nicht.\n"
 "\n"
@@ -1869,7 +1951,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
-msgid "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …\n"
+msgid "\n"
+"**Du**: Also, `isDrinking` ist wieder so ein Prädikat …\n"
 "Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,\n"
 "die wahr oder falsch ist. Soweit so gut.\n"
 "Und was bedeutet `Inhabited People`?\n"
@@ -1890,7 +1973,8 @@ msgid "**Robo**: Schau mal `by_cases` an."
 msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
-msgid "**Du**: Und wen nehm ich jetzt?\n"
+msgid "\n"
+"**Du**: Und wen nehm ich jetzt?\n"
 "\n"
 "**Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
 msgstr ""

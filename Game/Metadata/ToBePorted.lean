@@ -1,4 +1,7 @@
-import Game.Options.MathlibPart
+import Game.Metadata.FromMathlib
+
+-- TODO: This file might be superfluous!
+
 
 open BigOperators
 

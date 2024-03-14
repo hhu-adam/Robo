@@ -14,12 +14,12 @@ Beim nächsten Problem bekommt ihr ausnahmsweise Hilfe vom Publikum.
 "
 
 Statement : 1 + 1 = 2 := by
-  Hint "**Du**: Wieso nicht `ring`?
+  Hint "
+    **Du**: Wieso nicht `ring`?
 
-  **Robo**: Klar, `ring` würde normalerweise auch funktioneren. Aber ich würde mich hier dem Mehrheitswillen beugen …"
+    **Robo**: Klar, `ring` würde normalerweise auch funktioneren. Aber ich würde mich hier
+    dem Mehrheitswillen beugen …"
   rfl
-
-OnlyTactic rfl
 
 Conclusion
 "
@@ -29,3 +29,5 @@ Conclusion
 
 **Robo**: Ich glaube eher nicht.
 "
+
+OnlyTactic rfl

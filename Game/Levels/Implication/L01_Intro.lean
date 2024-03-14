@@ -45,7 +45,8 @@ Conclusion
 "
 **Operationsleiter**: Perfekt!  Danke schön!
 
-Er geht zu einer Schalttafel und ein paar Knöpfe. Irgendwo setzt sich lautstark ein Förderband in Bewegung.
+Er geht zu einer Schalttafel und ein paar Knöpfe. Irgendwo setzt sich lautstark ein
+Förderband in Bewegung.
 
 **Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "

@@ -1,6 +1,4 @@
 import GameServer.Commands
-import Game.Tactics
-
 
 TacticDoc by_contra
 "
@@ -183,21 +181,6 @@ Goal
 ```
 "
 
-TacticDoc push_neg
-"
-`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.
-
-## Details
-
-`psuh_neg` schiebt das `¬` soweit nach innen wie möglich.
-
-## Hilfreiche Resultate
-
-* Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet
-  werden.
-"
-
-
 TacticDoc refine
 "
 `refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne
@@ -208,34 +191,6 @@ z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spie
 bei diesem Syntax.)
 "
 
-
-
-
-TacticDoc ring_nf
-"\"ring Normal Form\": Identisch zu `ring`. `ring` wird geschrieben, wenn die Taktik das Goal schliesst, `ring_nf`
-wenn man diese innerhalb eines Taktikblockes brauchen will.
-"
-
-TacticDoc ring
-"
-Löst Gleichungen mit den Operationen `+, -, *, ^`.
-
-## Details
-Insbesondere funktioniert `ring` in Ringen/Semiringen wie z.B. `ℕ, ℤ, ℚ, …`
-(i.e. Typen `R` mit Instanzen `Ring R` oder `Semiring R`).
-Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
-
-## Hilfreiche Resultate
-
-* `ring` kann nicht wirklich mit Division (`/`) oder Inversen (`⁻¹`) umgehen. Dafür ist die
-  Taktik `field_simp` gedacht, und die typische Sequenz ist
-  ```
-  field_simp
-  ring
-  ```
-* Wenn `ring` nicht abschliesst, sagt es man solle `ring_nf` verwenden. Normalerweise heisst
-  das aber, dass man was falsch gemacht hat und die Seiten der Gleichung noch nicht gleich sind.
-"
 
 
 TacticDoc simp
@@ -280,36 +235,4 @@ Mathematisch braucht man diese in ein bisschen unterschiedlichen Fällen:
   das genügt, danach muss man nur noch `P` beweisen.
 * `have h : P` : Ein (kleines) Zwischenresultat. Als erstes folgt dann der Beweis dieses
 Resultats, anschliessend setzt man den Beweis mit Hilfe des Zwischenresultats fort.
-"
-
-
-TacticDoc unfold
-"
-`unfold myDef` öffnet eine Definition im Goal.
-
-## Details
-Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken
-(z.B. `push_neg`, `rw`) brauchen aber manchmal die Hilfe.
-
-`unfold myDef at h` kann auch Definitionen in Annahmen öffnen
-
-## Hilfreiche Resultate
-
-* `change P` ist eine andere Taktik, die das aktuelle Goal in einen DefEq-Ausdruck umschreibt.
-  Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
-"
-
-TacticDoc use
-"
-Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben
-mit dem man das Goal beweisen möchte.
-
-## Details
-
-`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt
-schließen.
-"
-
-TacticDoc ext
-"
 "

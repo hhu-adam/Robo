@@ -1,6 +1,5 @@
 import Game.Metadata
 
-import Game.ToBePorted
 
 World "Proposition"
 Level 8

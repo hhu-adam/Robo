@@ -1,16 +1,12 @@
 import Game.Metadata
 
-
-
 World "Predicate"
 Level 11
 
 Title "Drinker's Paradox"
 
-
 Introduction
 "
-
 **Du**: Könnte ihr eigentlich immer nur im Chor oder durcheinander reden?
 
 Wieder herrscht längeres Schweigen. Dann auf einmal:
@@ -23,7 +19,9 @@ Du kratzt Dich am Kopf.
 
 **Du**:  Was??
 
-**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
+**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies
+das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit
+der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
 
 **Du**: Glaube ich nicht.
 
@@ -34,25 +32,27 @@ open Function
 
 Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
-  Hint "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …
-  Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
-  die wahr oder falsch ist. Soweit so gut.
-  Und was bedeutet `Inhabited People`?
+  Hint "
+    **Du**: Also, `isDrinking` ist wieder so ein Prädikat …
+    Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
+    die wahr oder falsch ist. Soweit so gut.
+    Und was bedeutet `Inhabited People`?
 
-  **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-  Du kannst dadurch jederzeit `default`, oder lang
-  `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
+    **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
+    Du kannst dadurch jederzeit `default`, oder lang
+    `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
 
-  **Du**: Und wie fang ich jetzt an?
+    **Du**: Und wie fang ich jetzt an?
 
-  **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
-  Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
-  `∀ (y : People), isDrinking y` wahr oder falsch ist."
+    **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
+    Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
+    `∀ (y : People), isDrinking y` wahr oder falsch ist."
   Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
   by_cases h : ∀ y, isDrinking y
-  Hint (hidden := true) "**Du**: Und wen nehm ich jetzt?
+  Hint (hidden := true) "
+    **Du**: Und wen nehm ich jetzt?
 
-  **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
+    **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
   use (default : People)
   intro
   assumption
@@ -91,7 +91,6 @@ TheoremTab "Logic"
 NewDefinition Inhabited
 NewTheorem Inhabited.default
 
-#check Inhabited.default
 Conclusion
 "
 **Du**:  Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!
