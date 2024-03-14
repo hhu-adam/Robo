@@ -10,33 +10,27 @@ Title "Komposition"
 Introduction
 "
 Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür
-zwei Wächtern. Der eine zeigt euch ein Blatt mit
-
-```
-def f : ℚ → ℚ := fun x ↦ 5 * x
-```
-
-der andere eines mit
-
-```
-def g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
-```
-
-und gibt dir ein Blatt mit einer einzelnen Zeile am oberen Ende.
+zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere
+ein `g` eingraviert. dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
 "
 
 open Set Function
 
-namespace LevelFunction4
-
-def f : ℚ → ℚ := fun x ↦ 5 * x
-def g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
-
-Statement : f ∘ g = g ∘ f := by
+Statement :
+    let f : ℚ → ℚ := fun x ↦ 5 * x
+    let g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
+    f ∘ g = g ∘ f := by
   Hint "
-    **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.
+    **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition."
+  Hint (hidden := true) "
+    **Du**: So viele Zeichen…
 
-    **Du**: Und ich soll zeigen, dass die beiden vertauschbar sind?
+    **Robo**: Die beiden `let` solltest du mit `intro f g` in die Annahmen raufnehmen,
+    dann ists etwas übersichtlicher!
+    "
+  intro f g
+  Hint "
+    **Du**: Also, ich soll zeigen, dass die beiden vertauschbar sind?
 
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
     dann für dieses."
@@ -46,36 +40,23 @@ Statement : f ∘ g = g ∘ f := by
 
     **Robo**: Mit `simp` klappt das."
   simp
-  Hint "**Robo**: Jetzt würde ich einmal mit `unfold g` die Definition von `g` öffnen."
-  unfold g
   Hint "
     **Robo**: Jetzt kannst du nämlich eine Fallunterscheidung
     machen, `by_cases h : 0 ≤ {x}`.
 
     **Du**: Damit krieg ich die Fälle `0 ≤ {x}` und `{x} < 0`?
 
-    **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche, und man
-    könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 < {x}` wechseln."
+    **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
+    und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 < {x}` wechseln."
   by_cases h : 0 ≤ x
   · Hint "
-      **Robo**: Um das ausrechnen zu können, brauchst du nicht nur `0 ≤ x` sondern auch noch
-      eine neue Annahme `0 ≤ f x`.
-
-      **Du**: Also `have h₂ : _`?"
-    have h' : 0 ≤ f x
-    · unfold f
-      linarith
-    rw [if_pos h]
-    rw [if_pos h']
-    unfold f
+      **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung um das if-then-else zu
+      reduzieren."
+    rw [if_pos h, if_pos h]
     ring
-  · have h' : ¬ (0 ≤ f x)
-    unfold f
-    linarith
-    rw [if_neg h]
-    rw [if_neg h']
-    unfold f
-    ring
+  · Hint "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
+    Hint "**Robo**: `if_neg`, genau!"
+    rw [if_neg h, if_neg h]
 
 Conclusion
 "
@@ -87,5 +68,3 @@ NewTactic funext simp_rw linarith
 
 NewTheorem not_le if_pos if_neg
 TheoremTab "Logic"
-
-end LevelFunction4

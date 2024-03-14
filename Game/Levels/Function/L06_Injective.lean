@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Function"
 Level 6
 
@@ -31,13 +29,12 @@ $$
 Darunter steht in leicht leuchtender Schrift:
 "
 
-namespace FunctionLvl7
-
 open Function
 
-def f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
-
-Statement : ¬ (f + f).Injective := by
+Statement :
+    let f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
+    ¬ Injective (f + f) := by
+  intro f
   unfold Injective
   Hint "
     **Robo**: Das ist sicher ein Hinweis.
@@ -55,10 +52,7 @@ Statement : ¬ (f + f).Injective := by
     **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   use 2
   use 3
-  simp
-  -- TODO: is that a regression?
-  Hint "Das Goal kannst du nun mit `rfl` schliessen."
-  rfl
+  decide
 
 TheoremTab "Function"
 
@@ -68,5 +62,3 @@ Als ihr das Problem gelöst habt, erschleicht euch ein starkes
 Gefühl, dass dies der falsche Weg ist.
 Also geht ihr zurück und nehmt die rechte Gabelung.
 "
-
-end FunctionLvl7

@@ -11,11 +11,10 @@ Sofort hackt die ältere Gestalt nach:
 
 open Set Function
 
-example (f : ℤ → ℤ) (h : StrictMono f) : Injective f := by
-  apply StrictMono.injective
-  assumption
-
-Statement : Injective (fun (n : ℤ) ↦ n^3 + (n + 3)) := by
+Statement :
+    let f := fun (n : ℤ) ↦ n^3 + (n + 3)
+    Injective f := by
+  intro f
   Hint "
     **Du**: Hmm, das ist etwas schwieriger…
 
@@ -35,16 +34,16 @@ Statement : Injective (fun (n : ℤ) ↦ n^3 + (n + 3)) := by
 
     **Robo**: Dafür hab ich `StrictMono.add` bereit!"
   apply StrictMono.add
-  Hint "**Du**: Hmm, darauf hab ich jetzt wenig Lust. Gibt's dafür auch was? Das gilt ja nur
-    wenn der Exponent ungerade ist.
+  · Hint "**Du**: Hmm, darauf hab ich jetzt wenig Lust. Gibt's dafür auch was? Das gilt ja nur
+      wenn der Exponent ungerade ist.
 
-    **Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
-  apply Odd.strictMono_pow
-  Hint (hidden := true) "**Du**: Ist das nicht ne Trivialität? Warte mal!"
-  trivial
-  Hint "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
-  intro a b
-  simp
+      **Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
+    apply Odd.strictMono_pow
+    Hint (hidden := true) "**Du**: Ist das nicht ne Trivialität? Warte mal!"
+    trivial
+  · Hint "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
+    intro a b
+    simp
 
 NewDefinition Injective
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow

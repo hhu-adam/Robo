@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Function"
 Level 7
 
@@ -19,8 +17,10 @@ Bevor er dieses aushändigt, will er aber folgendes wissen:
 
 open Function
 
-/--  -/
-Statement : Surjective (fun (n : ℤ) ↦ n + 1) := by
+Statement :
+    let f := fun (n : ℤ) ↦ n + 1
+    Surjective f := by
+  intro f
   Hint "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.
 
   **Du**: Dann kann ich das auch einfach wie Quantifier behandeln?
