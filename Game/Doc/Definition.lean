@@ -2,79 +2,64 @@ import GameServer.Commands
 
 /-! ## Definitions -/
 
--- DefinitionDoc Even as "Even"
--- "
--- `even n` ist definiert als `∃ r, a = 2 * r`.
--- Die Definition kann man mit `unfold even at *` einsetzen.
--- ## Eigenschaften
 
--- * Mathlib Doc: [#Even](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Parity.html#Even)"
 
--- DefinitionDoc Odd as "Odd"
--- "
--- `odd n` ist definiert als `∃ r, a = 2 * r + 1`.
--- Die Definition kann man mit `unfold odd at *` einsetzen.
+/--
+Eine Funktion `f` is injektiv wenn:
 
--- * Mathlib Doc: [Odd](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Parity.html#Odd)"
+```
+∀ a b, f a = f b → a = b
+```
+-/
+DefinitionDoc Function.Injective as "Injective"
 
--- DefinitionDoc Injective as "Injective"
--- "
--- `Injective f` ist definiert als
 
--- ```
--- ∀ a b, f a = f b → a = b
--- ```
--- definiert.
 
--- * Mathlib Doc: [Injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Init/Function.html#Function.Injective)"
+/--
+Eine Funktion `f` is surjektiv wenn:
 
--- DefinitionDoc Surjective as "Surjective"
--- "
--- `Surjective f` ist definiert als
+```
+∀ a, ∃ b, f a = b
+```
+-/
+DefinitionDoc Function.Surjective as "Surjective"
 
--- ```
--- ∀ a, (∃ b, f a = b)
--- ```
 
--- * Mathlib Doc: [Surjective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Init/Function.html#Function.Surjective)"
 
--- DefinitionDoc Bijective as "Bijective"
--- "
+/--
+Eine Funktion `f` is bijectiv wenn sie injektiv und surjektiv ist.
+-/
+DefinitionDoc Function.Bijective as "Bijective"
 
--- ## Eigenschaften
 
--- * Mathlib Doc: [#Bijective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Init/Function.html#Function.Bijective)
--- "
 
--- DefinitionDoc LeftInverse as "LeftInverse"
--- "
+/--
+`f` ist strikt monoton wenn
 
--- ## Eigenschaften
+```
+∀ a b, a < b → f a < f b
+```
+-/
+DefinitionDoc Function.StrictMono as "StrictMono"
 
--- * Mathlib Doc: [#LeftInverse](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Init/Function.html#Function.LeftInverse)
--- "
 
--- DefinitionDoc RightInverse as "RightInverse"
--- "
 
--- ## Eigenschaften
+/--
+Anonyme Funktionen kann man mit `fun (x : ℤ) => 2 * x` definieren und
+wie andere Objekte verwenden.
 
--- * Mathlib Doc: [#RightInverse](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Init/Logic.html#RightInverse)
--- "
+Note: `=>` wird in mathlib oft auch `↦` (`\\maps`) geschrieben.
+-/
+DefinitionDoc Symbol.function as "fun x => _"
 
--- DefinitionDoc StrictMono as "StrictMono"
--- "
--- `StrictMono f` ist definiert als
 
--- ```
--- ∀ a b, a < b → f a < f b
--- ```
 
--- ## Eigenschaften
 
--- * Mathlib Doc: [#StrictMono](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Monotone/Basic.html#StrictMono)
 
--- "
+
+
+
+
 
 -- DefinitionDoc Disjoint as "Disjoint"
 -- "
@@ -100,13 +85,4 @@ import GameServer.Commands
 -- loslegen.
 
 -- Alternativ kann man mit `rw[Set.subset_def]` die Definition explizit einsetzen.
--- "
-
-
--- DefinitionDoc Symbol.function as "fun x => _" "
-
--- Anonyme funktionen kann man mit `fun (x : ℤ) => 2 * x` definieren und
--- wie andere Objekte verwenden.
-
--- Note: `=>` wird in mathlib oft auch `↦` (`\\maps`) geschrieben.
 -- "

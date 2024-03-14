@@ -39,7 +39,7 @@ Statement :
   Hint (hidden := true) "**Du**: Kann man das wohl vereinfachen?"
   simp
 
-NewDefinition Injective
+NewDefinition Function.Injective
 TheoremTab "Function"
 
 Conclusion "**Du** Woa das war ja einfach!"

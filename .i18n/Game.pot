@@ -1,12 +1,47 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Mar 14 23:00:48 2024\n"
+"POT-Creation-Date: Thu Mar 14 23:12:28 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
+
+#: Game.Doc.Definition
+msgid "Eine Funktion `f` is injektiv wenn:\n"
+"\n"
+"```\n"
+"∀ a b, f a = f b → a = b\n"
+"```"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Eine Funktion `f` is surjektiv wenn:\n"
+"\n"
+"```\n"
+"∀ a, ∃ b, f a = b\n"
+"```"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Eine Funktion `f` is bijectiv wenn sie injektiv und surjektiv ist."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`f` ist strikt monoton wenn\n"
+"\n"
+"```\n"
+"∀ a b, a < b → f a < f b\n"
+"```"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Anonyme Funktionen kann man mit `fun (x : ℤ) => 2 * x` definieren und\n"
+"wie andere Objekte verwenden.\n"
+"\n"
+"Note: `=>` wird in mathlib oft auch `↦` (`\\maps`) geschrieben."
+msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so\n"

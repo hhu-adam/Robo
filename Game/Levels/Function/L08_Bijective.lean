@@ -30,7 +30,7 @@ Statement :
   use y-1
   simp
 
-NewDefinition Bijective
+NewDefinition Function.Bijective
 TheoremTab "Function"
 
 Conclusion
