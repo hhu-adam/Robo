@@ -1,14 +1,14 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Mar 14 21:38:05 2024\n"
+"POT-Creation-Date: Thu Mar 14 21:50:19 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so\n"
 "verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.\n"
 "Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und\n"
@@ -38,7 +38,7 @@ msgid "Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, s
 "(Das Lemma ist gemeinhin als `Nat.eq_zero_of_le_zero` bekannt.)"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.\n"
 "\n"
 "## Beispiel\n"
@@ -56,7 +56,7 @@ msgid "`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.\n"
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme\n"
 "`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.\n"
 "\n"
@@ -76,7 +76,7 @@ msgid "`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine 
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`by_contra h` startet einen Widerspruchsbeweis.\n"
 "\n"
 "## Details\n"
@@ -93,7 +93,7 @@ msgid "`by_contra h` startet einen Widerspruchsbeweis.\n"
 "in ähnlichen Situationen nutzbar wie `by_contra`"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das alte Goal defEq sind.\n"
 "\n"
 "## Details\n"
@@ -114,7 +114,7 @@ msgid "`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das a
 "über die Multiplikation beweisen."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist\n"
 "\n"
 "## Detail\n"
@@ -137,7 +137,7 @@ msgid "`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist\n"
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.\n"
 "\n"
 "## Details\n"
@@ -168,7 +168,7 @@ msgid "`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Ann
 "nach dem Motto \"ein Widerspruch beweist alles.\""
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`contrapose` ändert ein Goal der Form `A → B` zu `¬B → ¬A` und führt damit\n"
 "eine Beweis durch Kontraposition.\n"
 "\n"
@@ -178,11 +178,11 @@ msgid "`contrapose` ändert ein Goal der Form `A → B` zu `¬B → ¬A` und fü
 "  `contrapose` verwendet."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`exact h` schliesst das Goal wenn der Term `h` mit dem Goal übereinstimmt."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`fin_cases i` führt eine Fallunterscheidung wenn `i` ein endlicher Typ ist.\n"
 "\n"
 "## Details\n"
@@ -192,7 +192,7 @@ msgid "`fin_cases i` führt eine Fallunterscheidung wenn `i` ein endlicher Typ i
 "In diesem Fall bewirkt `fin_cases i` dass man Komponentenweise arbeitet."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`funext x` wird bei Gleichungen von Funktionen `f = g` gebraucht. Das Goal wird zu\n"
 "`f x = g x`.\n"
 "\n"
@@ -201,7 +201,7 @@ msgid "`funext x` wird bei Gleichungen von Funktionen `f = g` gebraucht. Das Goa
 "angewendet auf jedes Element identisch sind. `funext x` benützt dieses Argument."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`have h : P` führt ein Zwischenresultat ein.\n"
 "\n"
 "## Details\n"
@@ -216,7 +216,7 @@ msgid "`have h : P` führt ein Zwischenresultat ein.\n"
 "  eine temporäre Definition einführt."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`induction n` führt einen Induktionsbeweis über `n`.\n"
 "\n"
 "## Detail\n"
@@ -267,7 +267,7 @@ msgid "`induction n` führt einen Induktionsbeweis über `n`.\n"
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.\n"
 "Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.\n"
 "\n"
@@ -276,7 +276,7 @@ msgid "`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.
 "* `revert h` macht das Gegenteil von `intro`."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.\n"
 "\n"
 "## Hilfreiche Resultate\n"
@@ -284,7 +284,7 @@ msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die l
 "* `right` entscheidet sich für die linke Seite."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.\n"
 "\n"
 "## Hilfreiche Resultate\n"
@@ -294,7 +294,7 @@ msgid "`let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.\n"
 "  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`linarith` löst Systeme linearer (Un-)Gleichungen.\n"
 "\n"
 "## Detail\n"
@@ -316,7 +316,7 @@ msgid "`linarith` löst Systeme linearer (Un-)Gleichungen.\n"
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.\n"
 "\n"
 "## Details\n"
@@ -329,7 +329,7 @@ msgid "`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `�
 "  werden."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`rcases h` teilt eine Annahme `h` in ihre Einzelteile auf.\n"
 "\n"
 "## Details\n"
@@ -356,7 +356,7 @@ msgid "`rcases h` teilt eine Annahme `h` in ihre Einzelteile auf.\n"
 "  freien Variablen"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne\n"
 "Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.\n"
 "\n"
@@ -365,7 +365,7 @@ msgid "`refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im
 "bei diesem Syntax.)"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.\n"
 "\n"
 "## Hilfreiche Resultate\n"
@@ -393,7 +393,7 @@ msgid "`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal
 "```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`rfl` beweist ein Goal der Form `X = X`.\n"
 "\n"
 "## Detail\n"
@@ -422,7 +422,7 @@ msgid "`rfl` beweist ein Goal der Form `X = X`.\n"
 "denn Lean liest dies intern als `0.succ.succ = 0.succ.succ`."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.\n"
 "\n"
 "## Hilfreiche Resultate\n"
@@ -430,7 +430,7 @@ msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die 
 "* `left` entscheidet sich für die linke Seite."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Löst Gleichungen mit den Operationen `+, -, *, ^`.\n"
 "\n"
 "## Details\n"
@@ -448,7 +448,7 @@ msgid "Löst Gleichungen mit den Operationen `+, -, *, ^`.\n"
 "  ```"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Wenn man eine Annahme `(h : X = Y)` hat, kann man mit\n"
 "`rw [h]` alle `X` im Goal durch `Y` ersetzen.\n"
 "\n"
@@ -462,7 +462,7 @@ msgid "Wenn man eine Annahme `(h : X = Y)` hat, kann man mit\n"
 "mit Theoremen/Lemmas der Form `X = Y`"
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`simp` versucht alle Vereinfachungslemmas anzuwenden, die in der `mathlib` mit `@[simp]`\n"
 "gekennzeichnet sind.\n"
 "\n"
@@ -474,7 +474,7 @@ msgid "`simp` versucht alle Vereinfachungslemmas anzuwenden, die in der `mathlib
 "  `simp only [...]` Aussage ersetzt werden, um den Beweis stabiler zu machen."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`simp_rw [h₁, h₂, h₃]` versucht wie `rw` jedes Lemma der Reihe nach zu Umschreiben zu verwenden,\n"
 "verwendet aber jedes Lemma so oft es kann.\n"
 "\n"
@@ -488,7 +488,7 @@ msgid "`simp_rw [h₁, h₂, h₃]` versucht wie `rw` jedes Lemma der Reihe nach
 "  Sachen."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Goal direkt folgen soll.\n"
 "\n"
 "## Details\n"
@@ -503,7 +503,7 @@ msgid "`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Goal 
 "Resultats, anschliessend setzt man den Beweis mit Hilfe des Zwischenresultats fort."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.\n"
 "\n"
 "## Details\n"
@@ -516,7 +516,7 @@ msgid "`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goa
 "  (`decide`, `apply True.intro`, `apply And.intro`)."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "`unfold myDef` öffnet eine Definition im Goal.\n"
 "\n"
 "## Details\n"
@@ -531,7 +531,7 @@ msgid "`unfold myDef` öffnet eine Definition im Goal.\n"
 "  Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen."
 msgstr ""
 
-#: Game.Doc.Tactics
+#: Game.Doc.Tactic
 msgid "Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben\n"
 "mit dem man das Goal beweisen möchte.\n"
 "\n"
@@ -1905,7 +1905,8 @@ msgid "**Robo**: Vielleicht hilft jetzt `even_iff_not_odd` weiter?"
 msgstr ""
 
 #: Game.Levels.Contradiction.L05_Contrapose
-msgid "**Du**:  Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma\n"
+msgid "\n"
+"**Du**:  Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma\n"
 "`even_square` anwenden!"
 msgstr ""
 
@@ -1994,10 +1995,6 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L01_Function
 msgid "\n"
 "**Robo**: `f : ℤ → ℤ` ist die Notation für eine Funktion und `f x` ist diese Funktion\n"
 "angewendet auf ein Element `(x : ℤ)`.\n"
@@ -2019,16 +2016,14 @@ msgid "\n"
 "\end{aligned}\n"
 "$$\n"
 "\n"
-"**Robo**: PS, `↦` ist `\mapsto`. Aber man kann auch stattdessen `=>` benützen.\n"
-""
+"**Robo**: PS, `↦` ist `\mapsto`. Aber man kann auch stattdessen `=>` benützen."
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
 msgid "\n"
 "**Du**: Ja aber was mach ich damit?\n"
 "\n"
-"**Robo**: Wie immer gehst du ein `∃` mit `use …` an.\n"
-""
+"**Robo**: Wie immer gehst du ein `∃` mit `use …` an."
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
@@ -2040,7 +2035,8 @@ msgid "**Du**: Zu was sich das wohl vereinfacht?"
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
-msgid "Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend\n"
+msgid "\n"
+"Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend\n"
 "in eine Richtung. Ihr folgt ihrem Finger und euch fällt in weiter ferne eine pompöse Struktur\n"
 "auf einem flachen Hügel auf.\n"
 ""
@@ -2078,11 +2074,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Function.L02_Let
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L02_Let
-msgid "**Du**: Ist `g ∘ f` Komposition von Funktionen?\n"
+msgid "\n"
+"**Du**: Ist `g ∘ f` Komposition von Funktionen?\n"
 "\n"
 "**Robo**: Richtig! Das schreibt man mit `\comp`.\n"
 "\n"
@@ -2094,8 +2087,9 @@ msgid "**Du**: Ist `g ∘ f` Komposition von Funktionen?\n"
 msgstr ""
 
 #: Game.Levels.Function.L02_Let
-msgid "**Robo**: `((fun (x : ℤ) ↦ x - 3) ∘ f) x` ist per Definition `(fun (x : ℤ) ↦ x - 3) (f x)`, aber mit\n"
-"`rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das\n"
+msgid "\n"
+"**Robo**: `((fun (x : ℤ) ↦ x - 3) ∘ f) x` ist per Definition `(fun (x : ℤ) ↦ x - 3) (f x)`,\n"
+"aber mit `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das\n"
 "Lemma auch."
 msgstr ""
 
@@ -2104,13 +2098,15 @@ msgid "**Robo**: gute Wahl! Jetzt kannst du diese mit `use g` benützen."
 msgstr ""
 
 #: Game.Levels.Function.L02_Let
-msgid "**Robo**: `(«{g}» ∘ f) x` ist per Definition `«{g}» (f x)`, aber mit\n"
+msgid "\n"
+"**Robo**: `(«{g}» ∘ f) x` ist per Definition `«{g}» (f x)`, aber mit\n"
 "`rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das\n"
 "Lemma auch."
 msgstr ""
 
 #: Game.Levels.Function.L02_Let
-msgid "**Robo**: Wie schon gehabt hat `ring` Schwierigkeiten, Definitionen zu öffnen.\n"
+msgid "\n"
+"**Robo**: Wie schon gehabt hat `ring` Schwierigkeiten, Definitionen zu öffnen.\n"
 "Du kannst mit `unfold f` oder `rw [f]` nachhelfen."
 msgstr ""
 
@@ -2147,26 +2143,20 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L03_Piecewise
 msgid "\n"
 "**Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.\n"
 "\n"
 "**Du**: Und ich soll zeigen, dass die beiden vertauschbar sind?\n"
 "\n"
 "**Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das\n"
-"dann für dieses.\n"
-""
+"dann für dieses."
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
 msgid "\n"
 "**Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) «{x}»` zu `g (f «{x}»)` umschreiben?\n"
 "\n"
-"**Robo**: Mit `simp` klappt das.\n"
-""
+"**Robo**: Mit `simp` klappt das."
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
@@ -2174,7 +2164,8 @@ msgid "**Robo**: Jetzt würde ich einmal mit `unfold g` die Definition von `g` �
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
-msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
+msgid "\n"
+"**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 "machen, `by_cases h : 0 ≤ «{x}»`.\n"
 "\n"
 "**Du**: Damit krieg ich die Fälle `0 ≤ «{x}»` und `«{x}» < 0`?\n"
@@ -2184,15 +2175,18 @@ msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
-msgid "**Robo**: Um das ausrechnen zu können, brauchst du nicht nur `0 ≤ x` sondern auch noch\n"
+msgid "\n"
+"**Robo**: Um das ausrechnen zu können, brauchst du nicht nur `0 ≤ x` sondern auch noch\n"
 "eine neue Annahme `0 ≤ f x`.\n"
 "\n"
 "**Du**: Also `have h₂ : _`?"
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
-msgid "Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den\n"
-"Durchgang frei."
+msgid "\n"
+"Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den\n"
+"Durchgang frei.\n"
+""
 msgstr ""
 
 #: Game.Levels.Function.L04_Injective
@@ -2211,11 +2205,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Function.L04_Injective
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L04_Injective
-msgid "**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
+msgid "\n"
+"**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
 "definiert, also kannst du mit `intro` anfangen."
 msgstr ""
 
@@ -2242,11 +2233,8 @@ msgid "\n"
 msgstr ""
 
 #: Game.Levels.Function.L05_Injective
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Hmm, das ist etwas schwieriger…\n"
+msgid "\n"
+"**Du**: Hmm, das ist etwas schwieriger…\n"
 "\n"
 "**Robo**: Aber ich hab einen Trick auf Lager:\n"
 "Das Lemma `StrictMono.injective` sagt, dass jede strikt monotone Funktion injektive ist,\n"
@@ -2266,7 +2254,8 @@ msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von v
 msgstr ""
 
 #: Game.Levels.Function.L05_Injective
-msgid "**Du**: Jetzt möchte ich strikte Monotonie von `n ^ 3` und `n + 3` separat zeigen,\n"
+msgid "\n"
+"**Du**: Jetzt möchte ich strikte Monotonie von `n ^ 3` und `n + 3` separat zeigen,\n"
 "schliesslich scheint es mir als wär das zweite wieder einfach.\n"
 "\n"
 "**Robo**: Dafür hab ich `StrictMono.add` bereit!"
@@ -2288,9 +2277,11 @@ msgid "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität 
 msgstr ""
 
 #: Game.Levels.Function.L05_Injective
-msgid "**Du**: Danke vielmals!\n"
+msgid "\n"
+"**Du**: Danke vielmals!\n"
 "\n"
-"Und damit lässt das Wesen mitten im Gang stehen, wo es weiter über Injektivität nachdenkt."
+"Und damit lässt das Wesen mitten im Gang stehen, wo es weiter über Injektivität nachdenkt.\n"
+""
 msgstr ""
 
 #: Game.Levels.Function.L06_Injective
@@ -2318,17 +2309,13 @@ msgid "\n"
 "\end{cases}\n"
 "$$\n"
 "\n"
-"\n"
 "Darunter steht in leicht leuchtender Schrift:\n"
 ""
 msgstr ""
 
 #: Game.Levels.Function.L06_Injective
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L06_Injective
-msgid "**Robo**: Das ist sicher ein Hinweis.\n"
+msgid "\n"
+"**Robo**: Das ist sicher ein Hinweis.\n"
 "\n"
 "**Du**: Aber `¬ Injective` sagt mir nichts…\n"
 "\n"
@@ -2342,7 +2329,8 @@ msgid "**Robo**: Das war `push_neg`."
 msgstr ""
 
 #: Game.Levels.Function.L06_Injective
-msgid "**Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?\n"
+msgid "\n"
+"**Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?\n"
 "\n"
 "**Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
 msgstr ""
@@ -2431,10 +2419,6 @@ msgid "\n"
 "Offensichtlich kennt er diese Aussage als `Function.bijective_iff_has_inverse` aus seinen Büchern,\n"
 "aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst.\n"
 ""
-msgstr ""
-
-#: Game.Levels.Function.L09_Inverse
-msgid ""
 msgstr ""
 
 #: Game.Levels.Function.L09_Inverse
@@ -2547,11 +2531,13 @@ msgid "**Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`\n"
 msgstr ""
 
 #: Game.Levels.Function.L09_Inverse
-msgid "Endlich entkommt ihr der Bibliothek.\n"
+msgid "\n"
+"Endlich entkommt ihr der Bibliothek.\n"
 "\n"
 "**Robo**: Da würden mich keine zehn Pferde nochmals hineinbringen!\n"
 "\n"
-"**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?"
+"**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?\n"
+""
 msgstr ""
 
 #: Game.Levels.Function

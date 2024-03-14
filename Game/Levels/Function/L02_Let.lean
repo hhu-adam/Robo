@@ -35,34 +35,36 @@ und:
 
 open Function
 
-def f (x : ℤ) : ℤ := (x + 4)
+def f := fun (x : ℤ) ↦ (x + 4)
 
-/--  -/
 Statement (x : ℤ) : ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
-  Hint
-  "**Du**: Ist `g ∘ f` Komposition von Funktionen?
+  Hint "
+    **Du**: Ist `g ∘ f` Komposition von Funktionen?
 
-  **Robo**: Richtig! Das schreibt man mit `\\comp`.
+    **Robo**: Richtig! Das schreibt man mit `\\comp`.
 
-    **Du** Und hier könnte ich also zuerst
-  `let g := fun (x : ℤ) ↦ _` definieren, anstatt direkt
-  `use fun (x : ℤ) ↦ _`?
+      **Du** Und hier könnte ich also zuerst
+    `let g := fun (x : ℤ) ↦ _` definieren, anstatt direkt
+    `use fun (x : ℤ) ↦ _`?
 
-  **Robo**: Genau! Das ist zwar praktisch das gleiche, aber kann manchmal nützlich sein."
+    **Robo**: Genau! Das ist zwar praktisch das gleiche, aber kann manchmal nützlich sein."
   Branch
     use fun (x : ℤ) ↦ x - 3
-    Hint "**Robo**: `((fun (x : ℤ) ↦ x - 3) ∘ f) x` ist per Definition `(fun (x : ℤ) ↦ x - 3) (f x)`, aber mit
-    `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
-    Lemma auch."
+    Hint "
+      **Robo**: `((fun (x : ℤ) ↦ x - 3) ∘ f) x` ist per Definition `(fun (x : ℤ) ↦ x - 3) (f x)`,
+      aber mit `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
+      Lemma auch."
   let g := fun (x : ℤ) ↦ x - 3
   Hint "**Robo**: gute Wahl! Jetzt kannst du diese mit `use g` benützen."
   use g
-  Hint "**Robo**: `({g} ∘ f) x` ist per Definition `{g} (f x)`, aber mit
-  `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
-  Lemma auch."
+  Hint "
+    **Robo**: `({g} ∘ f) x` ist per Definition `{g} (f x)`, aber mit
+    `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
+    Lemma auch."
   simp
-  Hint "**Robo**: Wie schon gehabt hat `ring` Schwierigkeiten, Definitionen zu öffnen.
-  Du kannst mit `unfold f` oder `rw [f]` nachhelfen."
+  Hint "
+    **Robo**: Wie schon gehabt hat `ring` Schwierigkeiten, Definitionen zu öffnen.
+    Du kannst mit `unfold f` oder `rw [f]` nachhelfen."
   unfold f
   ring
 

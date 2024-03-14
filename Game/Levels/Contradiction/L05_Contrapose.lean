@@ -33,8 +33,9 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
   Hint (hidden := true) "**Robo**: Vielleicht hilft jetzt `even_iff_not_odd` weiter?"
   rw [← even_iff_not_odd]
   rw [← even_iff_not_odd]
-  Hint "**Du**:  Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
-  `even_square` anwenden!"
+  Hint "
+    **Du**:  Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
+    `even_square` anwenden!"
   apply even_square
 
 NewTactic contrapose
