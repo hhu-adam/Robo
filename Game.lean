@@ -1,22 +1,16 @@
 import Game.Metadata
 
-import Game.Levels.Proposition
-import Game.Levels.Implication
-import Game.Levels.Predicate
 import Game.Levels.Contradiction
--- import Game.Levels.Prime
-import Game.Levels.Sum
--- import Game.Levels.Induction
-
---import Game.Levels.Numbers
-import Game.Levels.Inequality
-
--- import Game.Levels.Lean
-import Game.Levels.SetTheory
 import Game.Levels.Function
---import Game.Levels.SetFunction
---import Game.Levels.LinearAlgebra
+import Game.Levels.Implication
+import Game.Levels.Inequality
+import Game.Levels.Prime
+import Game.Levels.Predicate
+import Game.Levels.Proposition
+import Game.Levels.SetTheory
+import Game.Levels.Sum
 
+-- Temporary Worlds that aren't yet fleshed out
 import Game.Levels.NewStuff
 
 Title "Formaloversum"

@@ -1,7 +1,7 @@
 import Game.Levels.Prime.L01_Dvd
--- import Game.Levels.Prime.L04_Prime
--- import Game.Levels.Prime.L05_Prime
--- import Game.Levels.Prime.L06_ExistsUnique
+import Game.Levels.Prime.L02_Prime
+import Game.Levels.Prime.L03_Prime
+import Game.Levels.Prime.L06_ExistsUnique
 
 World "Prime"
 Title "Teilbarkeit"
