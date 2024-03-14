@@ -35,7 +35,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   assumption
 
 DisabledTactic rw
-DisabledLemma Classical.not_not
+DisabledTheorem Classical.not_not
 TheoremTab "Logic"
 
 Conclusion ""

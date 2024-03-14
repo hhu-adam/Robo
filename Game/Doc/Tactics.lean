@@ -158,29 +158,6 @@ TacticDoc «let»
   beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
 "
 
-TacticDoc linarith
-"
-`linarith` löst Systeme linearer (Un-)Gleichungen.
-
-## Detail
-`linarith` kann lineare Gleichungen und Ungleichungen beweisen indem
-es das Gegenteil vom Goal annimmt und versucht einen Widerspruch in den
-Annahmen zu erzeugen (Widerspruchsbeweis). Es braucht ein `≤` definiert um
-zu funktionieren.
-
-## Beispiel
-
-Folgendes kann `linarith` beweisen.
-```
-Objekte
-  x y : ℤ
-  h₁ : 5 * y ≤ 35 - 2 * x
-  h₂ : 2 * y ≤ x + 3
-Goal
-  y ≤ 5
-```
-"
-
 TacticDoc refine
 "
 `refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne
@@ -189,21 +166,6 @@ Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.
 (*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,
 z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spieles bleiben wir
 bei diesem Syntax.)
-"
-
-
-
-TacticDoc simp
-"
-`simp` versucht alle Vereinfachungslemmas anzuwenden, die in der `mathlib` mit `@[simp]`
-gekennzeichnet sind.
-
-## Details
-
-* `simp?` zeigt welche Lemmas verwendet wurden.
-* `simp [my_lemma]` fügt zudem `my_lemma` temporär zur Menge der `simp`-Lemmas hinzu.
-* ein `simp`, das nicht am Ende des Beweis steht sollte durch eine entsprechende
-  `simp only [...]` Aussage ersetzt werden, um den Beweis stabiler zu machen.
 "
 
 TacticDoc simp_rw

@@ -10,11 +10,13 @@ Title "Kleinergleich"
 
 Introduction
 "
-**Lina**: Man muss zum Beispiel wissen, dass `n ≠ 0` für natürliche Zahlen nichts anderes bedeutet als `0 < n`.
+**Lina**: Man muss zum Beispiel wissen, dass `n ≠ 0` für natürliche Zahlen nichts anderes
+bedeutet als `0 < n`.
 
 **Robo**: Und da gibts leider keinen Standard zu …
 
-**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben. Aber wenn man neu hier ist, sollte man das vielleicht noch einmal selbst beweisen?
+**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben. Aber wenn man neu hier
+ist, sollte man das vielleicht noch einmal selbst beweisen?
 "
 
 Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
@@ -45,11 +47,22 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   Hint "**Robo**: Warte! Für den Rest zitieren wir einfach ein anderes Lemma: `Nat.suc_pos`."
   apply Nat.succ_pos
 
+/--
+`simp` versucht alle Vereinfachungslemmas anzuwenden, die in der `mathlib` mit `@[simp]`
+gekennzeichnet sind.
+
+## Details
+
+* `simp?` zeigt welche Lemmas verwendet wurden.
+* `simp [my_lemma]` fügt zudem `my_lemma` temporär zur Menge der `simp`-Lemmas hinzu.
+* ein `simp`, das nicht am Ende des Beweis steht sollte durch eine entsprechende
+  `simp only [...]` Aussage ersetzt werden, um den Beweis stabiler zu machen.
+-/
+TacticDoc simp
+
 NewTactic simp
 NewTheorem Nat.succ_pos
-DisabledLemma Nat.pos_iff_ne_zero Nat.succ_pos'
+DisabledTheorem Nat.pos_iff_ne_zero Nat.succ_pos'
 TheoremTab "Nat"
 
-Conclusion "**Du**: `simp` ist ja echt nicht schlecht …
-
-"
+Conclusion "**Du**: `simp` ist ja echt nicht schlecht …"

@@ -45,4 +45,4 @@ Statement dvd_add (n m k : ℕ) (h : m ∣ n) (g : m ∣ k) : m ∣ n + k := by
   rw [h, g]
   ring
 
-DisabledLemma dvd_add
+DisabledTheorem dvd_add
