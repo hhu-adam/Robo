@@ -13,13 +13,13 @@ Introduction
 
 **Du**: Könnte ihr eigentlich immer nur im Chor oder durcheinander reden?
 
-Wieder herrscht längeres Schweigen.  Dann auf einmal:
+Wieder herrscht längeres Schweigen. Dann auf einmal:
 
 **Alle**:  Es gibt unter uns eine Person, wenn die redet, dann reden alle!
 
 Du kratzt Dich am Kopf.
 
-**Robo**:  Ist doch klar.  Das ist auf jedem bewohnten Planeten so!
+**Robo**:  Ist doch klar. Das ist auf jedem bewohnten Planeten so!
 
 **Du**:  Was??
 
@@ -27,7 +27,7 @@ Du kratzt Dich am Kopf.
 
 **Du**: Glaube ich nicht.
 
-**Robo**:  Glaube ich schon.  Ich glaube sogar, du kannst das beweisen.  Hier, probier mal!
+**Robo**:  Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!
 "
 
 open Function
@@ -39,7 +39,7 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   die wahr oder falsch ist. Soweit so gut.
   Und was bedeutet `Inhabited People`?
 
-  **Robo**: Das ist Leansch für nicht-leer.  Das heißt einfach, es gibt mindestens eine Person.
+  **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
   Du kannst dadurch jederzeit `default`, oder lang
   `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
 

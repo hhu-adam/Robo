@@ -17,7 +17,7 @@ Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Fra
 open Nat Classical
 
 Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
-  Hint "**Du**: Oha.  Ganz links ein `¬`.  Was du nicht sagst …"
+  Hint "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
   Branch
     unfold Odd
     push_neg
@@ -63,6 +63,6 @@ Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.
 
 **Du**:  Wer denn?
 
-Die Frage war wieder zu konkret.  Betretenes Schweigen.
+Die Frage war wieder zu konkret. Betretenes Schweigen.
 
 "

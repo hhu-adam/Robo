@@ -7,9 +7,6 @@ import Game.Levels.Sum.L05_SumComm
 
 World "Sum"
 Level 6
-
-set_option tactic.hygienic false
-
 Title "Zusammenfassung"
 
 Introduction

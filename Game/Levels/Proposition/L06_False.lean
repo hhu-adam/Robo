@@ -7,7 +7,7 @@ Title "Aus Falschem folgt vieles."
 
 Introduction
 "
-Als nächstes kommen drei Querulanten.  Der erste hat folgendes Problem:
+Als nächstes kommen drei Querulanten. Der erste hat folgendes Problem:
 "
 
 Statement (A : Prop) (h : False) : A := by
@@ -18,14 +18,14 @@ Statement (A : Prop) (h : False) : A := by
 
     **Du**: Ich dachte, `False` gilt nie?
 
-    **Robo**: Ja, genau.  Die Annahme ist `False`, also falsch.
+    **Robo**: Ja, genau. Die Annahme ist `False`, also falsch.
     Und aus einer falschen Annahme kann man bekanntlich alles beweisen!
     Insbesondere die gesuchte Aussage `{A}`.
 
     **Du**: Und wie erkläre ich das jetzt diesem Formalosophen?
 
     **Robo**: Ich glaube, du musst ihn darauf hinweisen, dass zwischen der allgemeingültigen
-    Annahme `True` und seiner Annahme `False` ein Widerspruch besteht.  Probier mal `contradiction`."
+    Annahme `True` und seiner Annahme `False` ein Widerspruch besteht. Probier mal `contradiction`."
   contradiction
 
 Conclusion

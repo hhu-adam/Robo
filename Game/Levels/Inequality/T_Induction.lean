@@ -7,9 +7,6 @@ Level 1
 
 Title "Induktion"
 
-set_option tactic.hygienic false
-
-
 Introduction
 "
 Hier lernst du Induktion und Ungleichungen kennen. Beides essenziele Grundlagen, die du

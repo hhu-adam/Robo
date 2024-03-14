@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-set_option tactic.hygienic false
-
 open Nat
 
 World "Inequality"
@@ -17,7 +14,7 @@ Introduction
 
 **Robo**: Und da gibts leider keinen Standard zu …
 
-**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben.  Aber wenn man neu hier ist, sollte man das vielleicht noch einmal selbst beweisen?
+**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben. Aber wenn man neu hier ist, sollte man das vielleicht noch einmal selbst beweisen?
 "
 
 Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by

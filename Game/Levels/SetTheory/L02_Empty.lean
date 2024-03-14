@@ -1,8 +1,5 @@
 import Game.Metadata
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 2
 

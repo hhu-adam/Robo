@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-set_option tactic.hygienic false
-
 World "Proposition"
 Level 14
 
@@ -11,7 +8,7 @@ Title "Zusammenfassung"
 
 Introduction
 "
-Der letzte Untertan tritt vor.  Ihr Anliegen ist etwas komplizierter als die vorherigen.
+Der letzte Untertan tritt vor. Ihr Anliegen ist etwas komplizierter als die vorherigen.
 
 **Robo** Wirf einfach alles drauf, was du gelernt hast.
 Hier, ich bin sogar so nett und zeig dir noch einmal die vier

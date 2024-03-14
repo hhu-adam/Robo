@@ -14,12 +14,12 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
   Hint "
     **Du**:  Jetzt müssen wir wohl die Annahme de-konstruieren.
 
-    **Robo**: Ja, genau.  Das geht am einfachsten mit `rcases {h} with ⟨h₁, h₂⟩`.
+    **Robo**: Ja, genau. Das geht am einfachsten mit `rcases {h} with ⟨h₁, h₂⟩`.
 
     **Du**: Moment, wie schreib ich *das* denn hier auf?
 
     **Robo**: Die bleiden Klammern schreibst du als `\\<` und `\\>`, oder gleichzeitig als `\\<>`.
-    Und h₁ schreibst du einfach als `h\\1`.  Aber du kannst dir auch einfach andere Namen
+    Und h₁ schreibst du einfach als `h\\1`. Aber du kannst dir auch einfach andere Namen
     für `h₁` und `h₂`, zum Beispiel `rcases {h} with ⟨hA, hBC⟩`"
   Branch
     rcases h with ⟨h₁, h₂⟩

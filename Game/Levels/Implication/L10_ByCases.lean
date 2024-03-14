@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Implication"
 Level 10
 
@@ -11,15 +9,19 @@ Introduction
 "
 Beim nächsten Problem stutzt der Operationsleiter.
 
-**Operationsleiter**:  Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt.  Das ist gar nicht von mir.  Sieht aber irgendwie interessant aus.
+**Operationsleiter**:  Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt. Das ist gar nicht von mir. Sieht aber irgendwie interessant aus.
 "
 
 Statement (A : Prop) : ¬A ∨ A := by
-  Hint (strict := true) "**Du**: Naja, eine der beiden Aussagen `A` oder `¬A` wird schon wahr sein.
+  Hint (strict := true) "
+    **Du**: Naja, eine der beiden Aussagen `A` oder `¬A` wird schon wahr sein.
 
-**Robo**: Klarer Fall für eine Fallunterscheidung, würde ich sagen. Probier mal `by_cases h : A`."
+    **Robo**: Klarer Fall für eine Fallunterscheidung, würde ich sagen. Probier
+    mal `by_cases h : A`."
   by_cases h : A
-  Hint "**Robo**: Siehst du, jetzt hat der Beweis zwei Teile.  Im ersten Teil nimmst du an, dass `A` wahr ist. Im zweiten nimmst du an, dass `A` falsch ist."
+  Hint "
+    **Robo**: Siehst du, jetzt hat der Beweis zwei Teile. Im ersten Teil nimmst
+    du an, dass `A` wahr ist. Im zweiten nimmst du an, dass `A` falsch ist."
   right
   assumption
   left
@@ -29,6 +31,27 @@ Conclusion
 "
 Der Operationsleiter nickt zustimmend.
 "
+
+/--
+`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme
+`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.
+
+## Details
+
+`P` kann eine beliegige Aussage sein, die als entweder wahr oder falsch angenommen wird.
+
+## Beispiel
+
+```
+example (A : Prop) : A ∨ ¬ A := by
+  by_cases h : A
+  · left
+    assumption
+  · right
+    assumption
+```
+-/
+TacticDoc by_cases
 
 NewTactic by_cases
 DisabledTactic tauto

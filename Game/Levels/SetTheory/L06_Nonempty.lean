@@ -2,9 +2,6 @@ import Game.Metadata
 import Game.Levels.SetTheory.L05_Empty
 
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 6
 

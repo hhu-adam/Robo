@@ -14,7 +14,7 @@ Statement
   Hint "**Du**: Ich vermute, wenn ich zuerst alles so umschreibe, dass
   das Beweisziel nur noch rechnen und umsortieren zu beweisen ist, erledigt `ring` den Rest!
 
-  **Robo**: Genau.  Und noch ein Trick:  Zwei Schritte `rw [h₁]` und `rw [h₂]` kann man zu einem einzigen Schritt zusammenfassen: `rw [h₁, h₂]`."
+  **Robo**: Genau. Und noch ein Trick:  Zwei Schritte `rw [h₁]` und `rw [h₂]` kann man zu einem einzigen Schritt zusammenfassen: `rw [h₁, h₂]`."
   rw [h, g]
   ring
 

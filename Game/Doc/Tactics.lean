@@ -1,51 +1,6 @@
 import GameServer.Commands
 import Game.Tactics
 
-TacticDoc apply
-"
-Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.  Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und erhalten `A` als neues Beweisziel.   In beiden Fällen kann die Implikation `hAB` wahlweise als Annahme gegeben oder ein bereits bekanntes Lemma sein.
-
-
-## Beispiel
-
-Gegeben sei für `n : ℕ` folgendes Lemma:
-```
-lemma lem (h : n ≤ 0) : n = 0
-```
-
-Finden wir nun als Beweisziel
-
-```
-Goal
-  n = 0
-```
-
-vor, so ändert `apply lem` das Beweisziel zu `n ≤ 0`.
-
-(Das Lemma ist gemeinhin als `Nat.eq_zero_of_le_zero` bekannt.)
-
-"
-
-TacticDoc by_cases
-"
-`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme
-`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.
-
-## Details
-
-`P` kann eine beliegige Aussage sein, die als entweder wahr oder falsch angenommen wird.
-
-## Beispiel
-
-```
-example (A : Prop) : A ∨ ¬ A := by
-  by_cases h : A
-  · left
-    assumption
-  · right
-    assumption
-```
-"
 
 TacticDoc by_contra
 "
@@ -194,16 +149,6 @@ example (n : ℕ) : 4 ∣ 5^n + 7 := by
 ```
 "
 
-TacticDoc intro
-"
-`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.
-Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.
-
-## Hilfreiche Resultate
-
-* `revert h` macht das Gegenteil von `intro`.
-"
-
 TacticDoc «let»
 "
 `let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.
@@ -263,34 +208,7 @@ z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spie
 bei diesem Syntax.)
 "
 
-TacticDoc revert
-"
-`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.
 
-## Hilfreiche Resultate
-
-* `revert` ist das Gegenteil von `intro`.
-* `revert` kann insbesondere nützlich sein, um anschliessend `contrapose` zu verwenden.
-
-## Beispiel
-
-```
-Objekte
-  A P : Prop
-  h : P
-Goal
-  A
-```
-
-hier ändert `revert h` den Status zu
-
-```
-Objekte
-  A P : Prop
-Goal
-  P → A
-```
-"
 
 
 TacticDoc ring_nf
@@ -319,20 +237,6 @@ Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
   das aber, dass man was falsch gemacht hat und die Seiten der Gleichung noch nicht gleich sind.
 "
 
-TacticDoc rw
-"
-Wenn man eine Annahme `(h : X = Y)` hat, kann man mit
-`rw [h]` alle `X` im Goal durch `Y` ersetzen.
-
-## Details
-
-* `rw [←h]` wendet `h` rückwärts an und ersetzt alle `Y` durch `X`.
-* `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.
-* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).
-
-`rw` funktioniert gleichermassen mit Annahmen `(h : X = Y)` also auch
-mit Theoremen/Lemmas der Form `X = Y`
-"
 
 TacticDoc simp
 "

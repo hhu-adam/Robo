@@ -1,8 +1,5 @@
 import Game.Metadata
 
-
-set_option tactic.hygienic false
-
 World "Predicate"
 Level 7
 
@@ -10,7 +7,7 @@ Title "Gerade/Ungerade"
 
 Introduction
 "
-Sofort taucht das nächste Blatt auf.  Anscheinend hatten sie sich auf einen Kompromiss geeinigt.
+Sofort taucht das nächste Blatt auf. Anscheinend hatten sie sich auf einen Kompromiss geeinigt.
 "
 
 Statement (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by

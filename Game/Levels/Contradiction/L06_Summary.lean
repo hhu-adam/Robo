@@ -13,7 +13,7 @@ Introduction
 "
 **Du**: Aber hätten wir die letzte Aufgabe nicht genauso gut per Widerspruch beweisen können?
 
-**Benedictus**:  Klar.  Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber Ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe Sie Euch mit auf die Reise.  Aber nun seht zu, dass Ihr weiterkommt!"
+**Benedictus**:  Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber Ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe Sie Euch mit auf die Reise. Aber nun seht zu, dass Ihr weiterkommt!"
 
 -- Statt mit `contrapose`  `by_contra` ein Widerspruchsbeweis.
 -- Probiers doch einfach!

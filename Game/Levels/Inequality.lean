@@ -7,10 +7,10 @@ World "Inequality"
 Title "Luna"
 
 Introduction "
-Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.  
-Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche eine kleine Öffnung, von der eine Treppe ins Innnere führt. Ihr landet und steigt neugierig hinab.  
+Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.
+Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche eine kleine Öffnung, von der eine Treppe ins Innnere führt. Ihr landet und steigt neugierig hinab.
 
-Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die du je gesehen hast.  Ein kleines Mädchen begrüßt Euch. 
+Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die du je gesehen hast. Ein kleines Mädchen begrüßt Euch.
 
 **Lina**:  Ich bin Lina, die einzige Bewohnerin von Luna.
 
@@ -22,8 +22,8 @@ Sie dreht sich um und ruft etwas, da kommt ein Smart-Elf angefahren.
 
 **Lina**: Das ist Ritha!
 
-Robo findet sie offensichtlich süß.  
+Robo findet sie offensichtlich süß.
 
-**Lina**: Aber jetzt steht mal hier nicht so unordentlich herum, bitte! Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte.  Sonst komme ich hier noch ganz durcheinander. 
+**Lina**: Aber jetzt steht mal hier nicht so unordentlich herum, bitte! Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte. Sonst komme ich hier noch ganz durcheinander.
 
 "

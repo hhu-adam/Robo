@@ -1,9 +1,6 @@
 import Game.Metadata
 
 import Game.ToBePorted
-
-set_option tactic.hygienic false
-
 World "Contradiction"
 Level 1
 
@@ -11,7 +8,7 @@ Title "Was wir haben, haben wir."
 
 Introduction
 "
-**Benedictus**:  Hier, schaut mal.  Das habe ich für Euch vorbereitet.
+**Benedictus**:  Hier, schaut mal. Das habe ich für Euch vorbereitet.
 "
 
 -- Manchmal, wollen wir nicht am aktuellen Goal arbeiten, sondern zuerst ein

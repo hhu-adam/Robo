@@ -6,9 +6,6 @@ World "Function"
 Level 9
 
 Title "Inverse"
-
-set_option tactic.hygienic false
-
 Introduction
 "
 Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass

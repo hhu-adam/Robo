@@ -4,9 +4,6 @@ import Game.ToBePorted
 
 
 import Game.Levels.Sum.L04_SumOdd
-
-set_option tactic.hygienic false
-
 open BigOperators
 open Finset
 
@@ -17,7 +14,7 @@ Title "Summe vertauschen"
 
 Introduction
 "
-**Babylonier**:  Schaut mal, da vorn stehen zwei Freunde von mir.  Ich muss euch unbedingt vorstellen!
+**Babylonier**:  Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!
 
 Die beiden Freunde stehen vor zwei Türmen mit einer kleinen Brücke, die zwischen den ihnen verläuft.
 Aber die Tafel am Eingang ist so sehr verwittert, dass sie nicht mehr lesbar ist.

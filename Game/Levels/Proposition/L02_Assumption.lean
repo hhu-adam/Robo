@@ -28,7 +28,7 @@ Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := b
 
     **Du**: ???
 
-    **Robo**: Du musst ihm das halt explizit sagen.  Probiers mal mit `assumption`."
+    **Robo**: Du musst ihm das halt explizit sagen. Probiers mal mit `assumption`."
   assumption
 
 Conclusion

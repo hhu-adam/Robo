@@ -3,9 +3,6 @@ import Game.Metadata
 
 
 import Game.StructInstWithHoles
-
-set_option tactic.hygienic false
-
 World "Module"
 Level 1
 

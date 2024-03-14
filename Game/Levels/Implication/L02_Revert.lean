@@ -1,34 +1,71 @@
 import Game.Metadata
 
-set_option tactic.hygienic false
-
 World "Implication"
 Level 2
 
 Title "Revert"
 
 Introduction
-"Der Operationsleiter holt aus einem Container einen Stapel Papier hervor.
+"
+Der Operationsleiter holt aus einem Container einen Stapel Papier hervor.
 
-**Operationsleiter**: Hier hat sich echt einiges angesammelt.  Wäre echt super, wenn Ihr mir noch ein bisschen helfen könntet.
+**Operationsleiter**: Hier hat sich echt einiges angesammelt. Wäre echt super, wenn Ihr mir
+noch ein bisschen helfen könntet.
 
-Er übergibt Euch das oberste Blatt."
+Er übergibt Euch das oberste Blatt.
+"
 
 Statement (A B : Prop) (hA : A) (h : A → B) : B := by
-  Hint "**Operationsleiter**: Das ist von einem Kollegen.
+  Hint "
+    **Operationsleiter**: Das ist von einem Kollegen.
 
-  **Robo**:  Oh, das hab ich schon einmal irgendwo gelesen.  Warte mal … Richtig!  Das war damals, als ich Wikipedia gecrawlt habe: `Der Modus ponens ist eine schon in der antiken Logik geläufige Schlussfigur, die in vielen logischen …`
+    **Robo**:  Oh, das hab ich schon einmal irgendwo gelesen. Warte mal … Richtig!  Das war
+    damals, als ich Wikipedia gecrawlt habe: `Der Modus ponens ist eine schon in der antiken
+    Logik geläufige Schlussfigur, die in vielen logischen …`
 
-  **Du**:  Robo!  Gefragt ist ein Beweis und kein historischer Aufsatz!   Oder komme ich hier etwa mit `mopo` oder so etwas weiter?
+    **Du**:  Robo!  Gefragt ist ein Beweis und kein historischer Aufsatz!   Oder komme ich hier
+    etwa mit `mopo` oder so etwas weiter?
 
-  **Robo**:  Okay, nein, sorry.  `mopo` gibt es nicht.  Probier lieber `revert {hA}`."
+    **Robo**:  Okay, nein, sorry.  `mopo` gibt es nicht. Probier lieber `revert {hA}`."
   revert hA
-  Hint "**Du**:  Aha.  `revert` ist qausi `intro` rückwärts.
+  Hint "
+    **Du**:  Aha.  `revert` ist qausi `intro` rückwärts.
 
-  **Robo**: Genau.  `intro` nimmt die Prämisse aus einer Implikation `{A} \\to {B}` im Beweisziel und macht daraus eine Annahme.  `revert` nimmt umgekehrt eine Annahme und setzt sie als Implikationsprämisse vor das Beweisziel.  Aber nun mach schon fertig."
+    **Robo**: Genau.  `intro` nimmt die Prämisse aus einer Implikation `{A} \\to {B}` im
+    Beweisziel und macht daraus eine Annahme.  `revert` nimmt umgekehrt eine Annahme und
+    setzt sie als Implikationsprämisse vor das Beweisziel. Aber nun mach schon fertig."
   assumption
 
 Conclusion "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
+
+/--
+`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.
+
+## Hilfreiche Resultate
+
+* `revert` ist das Gegenteil von `intro`.
+* `revert` kann insbesondere nützlich sein, um anschliessend `contrapose` zu verwenden.
+
+## Beispiel
+
+```
+Objekte
+  A P : Prop
+  h : P
+Goal
+  A
+```
+
+hier ändert `revert h` den Status zu
+
+```
+Objekte
+  A P : Prop
+Goal
+  P → A
+```
+-/
+TacticDoc revert
 
 NewTactic revert
 DisabledTactic tauto

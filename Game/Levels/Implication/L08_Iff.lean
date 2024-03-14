@@ -1,7 +1,5 @@
 import Game.Metadata
 
-set_option tactic.hygienic false
-
 World "Implication"
 Level 8
 
@@ -9,20 +7,25 @@ Title "Genau dann wenn"
 
 Introduction
 "
-  **Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen.  Ich glaube, `rw` mag der auch nicht.  Geht das trotzdem?
+**Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen. Ich glaube,
+`rw` mag der auch nicht. Geht das trotzdem?
 "
 
 Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
-  Hint "**Du**: Naja ich kann wohl immerhin mal mit `intro` anfangen …
+  Hint "
+    **Du**: Naja ich kann wohl immerhin mal mit `intro` anfangen …
 
-  **Robo**: … und dann schauen wir weiter!"
+    **Robo**: … und dann schauen wir weiter!"
   intro hA
-  Hint "**Robo**: Also eine Implikation wendet man mit `apply` an …
+  Hint "
+    **Robo**: Also eine Implikation wendet man mit `apply` an …
 
-  **Du**: Weiß ich doch!  Aber `h` ist keine Implikation, sondern eine Äquivalenz.  Da würde ich doch eigentlich `rw [← h]` sagen wollen.
+    **Du**: Weiß ich doch!  Aber `h` ist keine Implikation, sondern eine Äquivalenz.
+    Da würde ich doch eigentlich `rw [← h]` sagen wollen.
 
-  **Robo**:  Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`.  Du kannst sie mit `apply ({h}.mp) at …` anwenden."
-  Branch 
+    **Robo**:  Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`. Du kannst sie
+    mit `apply ({h}.mp) at …` anwenden."
+  Branch
     apply g
     Hint "**Robo**: So kannst Du natürlich auch anfangen."
     apply h.mp
@@ -31,7 +34,8 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   apply g at hA
   assumption
 
-Conclusion "**Operationsleiter**:  Okay, super.  Das müsste passen.
+Conclusion "
+**Operationsleiter**:  Okay, super. Das müsste passen.
 
 Er telefoniert wieder.
 

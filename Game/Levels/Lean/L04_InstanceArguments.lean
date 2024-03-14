@@ -3,9 +3,6 @@ import Game.Metadata
 
 
 import Game.ToBePorted
-
-set_option tactic.hygienic false
-
 World "Lean"
 Level 4
 

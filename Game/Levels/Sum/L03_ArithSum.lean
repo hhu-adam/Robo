@@ -3,9 +3,6 @@ import Game.Metadata
 
 
 import Game.ToBePorted
-
-set_option tactic.hygienic false
-
 World "Sum"
 Level 3
 
@@ -20,7 +17,7 @@ Nach einem kurzen Spaziergang steht ihr davon.
 **Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!
 Über den hab ich schon einmal Daten verarbeitet.
 
-**Babylonier**:  Richtig.  Gauß war ein Babylonier!
+**Babylonier**:  Richtig. Gauß war ein Babylonier!
 "
 
 open Fin

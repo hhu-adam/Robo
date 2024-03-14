@@ -36,7 +36,7 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
     sei wahr."
     Hint (hidden := true) " **Robo** Wie man mit einem Und in den Annahmen umgeht,
     weißt du doch schon:
-    `rcases h with ⟨h₁, h₂⟩`.  Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
+    `rcases h with ⟨h₁, h₂⟩`. Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
     rcases h with ⟨h₁, h₂⟩
     assumption
   · Hint (strict := true) "**Robo** Jetzt musst du dein Ziel noch unter der rechten Annahme
@@ -48,7 +48,7 @@ Conclusion
 Kannst du mir vorher noch einmal kurz alles Leansch zusammenfassen,
 das du mir bis hierher beigebracht hast?
 
-Robo strahlt überglücklich.  Noch *nie* warst du so auf ihn angewiesen.
+Robo strahlt überglücklich. Noch *nie* warst du so auf ihn angewiesen.
 
 **Robo** Na klar, schau her!
 
@@ -79,7 +79,7 @@ Robo strahlt überglücklich.  Noch *nie* warst du so auf ihn angewiesen.
 
 ## Taktiken
 
-Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.  Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
+Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`. Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
 
 |    | Taktik                    | Beispiel                                          |
 |:---|:--------------------------|:--------------------------------------------------|
@@ -94,7 +94,7 @@ Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.  H
 
 **Du** Woher weißt du das eigentlich alles?
 
-**Robo** Keine Ahnung.  War, glaube ich, vorinstalliert.
+**Robo** Keine Ahnung. War, glaube ich, vorinstalliert.
 "
 
 DisabledTactic tauto
