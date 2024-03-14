@@ -64,9 +64,34 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
   contradiction
 
-LemmaTab "Logic"
-NewDefinition Inhabited
+/--
+`Inhabited U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
+enthält.
 
+Hat man eine solche Instanz, kann man immer das Element `(default : U)` verwenden.
+
+Was `default` genau ist hängt davon ab, wie `Inhabited U` bewiesen wurde. Es könnte
+also alles sein und man sollte sich nicht darauf verlassen, dass `default` eine
+bestimmte Eigenschaft hat. Z.B. ist `(default : ℕ) = 0` aber es hätte genau so gut
+als `1` oder `2` definiert werden können.
+-/
+DefinitionDoc Inhabited as "Inhabited"
+
+/-- Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.
+
+Man sollte generell nichts über `default` annehmen, aussert dass es existiert.
+
+Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:
+z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`
+die leere Menge `∅`, etc.
+-/
+TheoremDoc Inhabited.default as "default" in "Logic"
+
+TheoremTab "Logic"
+NewDefinition Inhabited
+NewTheorem Inhabited.default
+
+#check Inhabited.default
 Conclusion
 "
 **Du**:  Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!

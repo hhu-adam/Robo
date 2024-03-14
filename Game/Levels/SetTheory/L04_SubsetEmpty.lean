@@ -50,4 +50,4 @@ Statement Set.subset_empty_iff {A : Type _} (s : Set A) :
 
 DisabledTactic tauto
 NewTheorem Set.Subset.antisymm Set.Subset.antisymm_iff Set.empty_subset
-LemmaTab "Set"
+TheoremTab "Set"

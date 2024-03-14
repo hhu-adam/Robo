@@ -35,4 +35,4 @@ Statement :
   tauto
 
 NewTheorem Set.mem_insert_iff Set.mem_singleton_iff
-LemmaTab "Set"
+TheoremTab "Set"

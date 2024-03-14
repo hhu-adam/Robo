@@ -1,12 +1,5 @@
 import Game.Metadata
 
-
-
-set_option tactic.hygienic false
-
---set_option autoImplicit false
-
-
 World "Proposition"
 Level 13
 

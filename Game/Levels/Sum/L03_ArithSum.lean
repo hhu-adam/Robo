@@ -89,7 +89,7 @@ open BigOperators
 
 NewTactic induction
 NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,
 Steintürme in allen Formen und Höhen stehen."

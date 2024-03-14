@@ -31,7 +31,7 @@ Statement : Surjective (fun (n : ℤ) ↦ n + 1) := by
   simp
 
 NewDefinition Surjective
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion
 "Der Gelehrte händigt euch schmunzelnd das Buch aus."

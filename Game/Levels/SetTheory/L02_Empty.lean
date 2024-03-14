@@ -24,7 +24,7 @@ open Set
   tauto
 
 NewTheorem Set.mem_univ
-LemmaTab "Set"
+TheoremTab "Set"
 
 Conclusion "Der Junge rennt weiter.
 

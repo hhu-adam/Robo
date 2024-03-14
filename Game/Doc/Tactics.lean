@@ -1,25 +1,6 @@
 import GameServer.Commands
 import Game.Tactics
 
-TacticDoc assumption
-"
-`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.
-
-## Beispiel
-
-`assumption` sucht durch die Annahmen und merkt dass `h` genau mit dem Goal übereinstimmt.
-
-```
-Objekte
-  a b c d : ℕ
-  h : a + b = c
-  g : a * b = 16
-  t : c = 12
-Goal
-  a + b = c
-```
-"
-
 TacticDoc apply
 "
 Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.  Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und erhalten `A` als neues Beweisziel.   In beiden Fällen kann die Implikation `hAB` wahlweise als Annahme gegeben oder ein bereits bekanntes Lemma sein.
@@ -29,7 +10,7 @@ Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so verwa
 
 Gegeben sei für `n : ℕ` folgendes Lemma:
 ```
-lemma lem (h : n ≤ 0) : n = 0 
+lemma lem (h : n ≤ 0) : n = 0
 ```
 
 Finden wir nun als Beweisziel
@@ -106,61 +87,7 @@ kann man mit `change (1 : ℚ) * b = b` das Goal umschreiben und anschliessend m
 über die Multiplikation beweisen.
 "
 
-TacticDoc constructor
-"
-`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist
 
-## Detail
-Wenn das Goal eine Struktur ist, wie z.B. `A ∧ B` welches zwei Felder hat `⟨A, B⟩`, dann
-erzeugt `constructor` ein Goal pro Feld der Struktur.
-
-## Hilfreiche Resultate
-
-* Das Gegenteil von `constructor` ist `⟨_, _⟩` (`\\<>`), der *anonyme Konstructor*.
-Dieser enspricht ungefähr der Tupel-Notation in
-\"eine Gruppe ist ein Tupel $(G, 0, +)$, sodass …\".
-
-## Beispiel
-
-```
-example {A B : Prop} (h : A) (g : B) : A ∧ B := by
-  constructor
-  · assumption
-  · assumption
-```
-"
-
-TacticDoc contradiction
-"
-`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.
-
-## Details
-Ein Widerspruch in den Annahmen kann unter anderem folgendermassen aussehen:
-
-* `(h : n ≠ n)`
-* `(h : A)` und `(h' : ¬A)`
-* `(h : False)` (i.e. ein Beweis von `False`)
-
-## Beispiel
-
-Folgenes Goal wird von `contradiction` bewiesen
-
-## Hilfreiche Resultate
-
-* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu
-  schliessen, der mit `by_contra` eröffnet wurde.
-* Ein Beweis von `False` representiert in Lean einen Widerspruch.
-
-```
-Objekte:
-  (n m : ℕ)
-  (h : n = m)
-  (g : n ≠ m)
-Goal
-  37 = 60
-```
-nach dem Motto \"ein Widerspruch beweist alles.\"
-"
 
 TacticDoc contrapose
 "
@@ -277,15 +204,6 @@ Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzug
 * `revert h` macht das Gegenteil von `intro`.
 "
 
-TacticDoc left
-"
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.
-
-## Hilfreiche Resultate
-
-* `right` entscheidet sich für die linke Seite.
-"
-
 TacticDoc «let»
 "
 `let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.
@@ -334,33 +252,6 @@ TacticDoc push_neg
   werden.
 "
 
-TacticDoc rcases
-"
-`rcases h` teilt eine Annahme `h` in ihre Einzelteile auf.
-
-## Details
-Für Annahmen die Strukturen sind, wie z.B. `h : A ∧ B` (oder `∃x, P x`) kann man die
-Einzelteile mit  `rcases h with ⟨a, b⟩` (oder `rcases h with ⟨x, hx⟩`) benennen.
-
-Für eine Annahme der Form `h : A ∨ B` kann man mit `rcases h with ha | hb` zwei Goals
-erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechten.
-
-## Hilfreiche Resultate
-
-* Für `n : ℕ` hat `rcases n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
-  dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht.
-* In Lean gibt es auch die Taktik `cases`, die gleich funktioniert wie `rcases` aber
-  einen mehrzeiligen Syntax hat:
-  ```
-  cases h with
-  | inl ha =>
-    sorry
-  | inr hb =>
-    sorry
-  ```
-  Hier sind `inl`/`inr` die Namen der Fälle und `ha`/`hb` sind frei gewählte Namen für die
-  freien Variablen
-"
 
 TacticDoc refine
 "
@@ -401,44 +292,6 @@ Goal
 ```
 "
 
-TacticDoc rfl
-"
-`rfl` beweist ein Goal der Form `X = X`.
-
-## Detail
-
-`rfl` beweist jedes Goal `A = B` wenn `A` und `B` per Definition das gleiche sind (DefEq).
-Andere Taktiken rufen `rfl` oft am Ende versteckt
-automatisch auf um zu versuchen, den Beweis zu schliessen.
-
-
-## Beispiel
-`rfl` kann folgende Goals beweisen:
-
-```
-Objekte
-  a b c : ℕ
-Goal:
-  (a + b) * c = (a + b) * c
-```
-
-```
-Objekte
-  n : ℕ
-Goal
-  1 + 1 = 2
-```
-denn Lean liest dies intern als `0.succ.succ = 0.succ.succ`.
-"
-
-TacticDoc right
-"
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.
-
-## Hilfreiche Resultate
-
-* `left` entscheidet sich für die linke Seite.
-"
 
 TacticDoc ring_nf
 "\"ring Normal Form\": Identisch zu `ring`. `ring` wird geschrieben, wenn die Taktik das Goal schliesst, `ring_nf`
@@ -525,26 +378,6 @@ Mathematisch braucht man diese in ein bisschen unterschiedlichen Fällen:
 Resultats, anschliessend setzt man den Beweis mit Hilfe des Zwischenresultats fort.
 "
 
-TacticDoc tauto
-"
-## Beschreibung
-
-TODO
-"
-
-TacticDoc trivial
-"
-`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
-
-## Details
-Die Taktiken, die verwendet werden sind:
-
-* `assumption`
-* `rfl`
-* `contradiction`
-* und noch 3 andere, die hier nicht behandelt werden
-  (`decide`, `apply True.intro`, `apply And.intro`).
-"
 
 TacticDoc unfold
 "

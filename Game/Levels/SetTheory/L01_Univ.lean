@@ -52,6 +52,6 @@ open Set
   **Du**: Also das ist ja dann `trivial`. Hoffentlich sehen die das hier auch so…"
   trivial
 
-LemmaTab "Set"
+TheoremTab "Set"
 
 Conclusion "**Mengea**: Ja das stimmt schon. Dann wünsche ich euch viel Erfolg auf eurer Reise!"

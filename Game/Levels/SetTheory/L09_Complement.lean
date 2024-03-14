@@ -34,4 +34,4 @@ Statement (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
 
 NewTheorem Set.not_mem_compl_iff Set.mem_of_subset_of_mem Set.compl_eq_univ_diff
 DisabledTactic tauto
-LemmaTab "Set"
+TheoremTab "Set"

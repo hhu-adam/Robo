@@ -10,26 +10,25 @@ Introduction
 Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne. Es ist schüchtern und schreibt bloß.
 "
 
-/--  -/
 Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := by
   Hint "
-**Robo**: `{n} : ℕ` bedeutet, `{n}` ist eine natürliche Zahl.
+    **Robo**: `{n} : ℕ` bedeutet, `{n}` ist eine natürliche Zahl.
 
-**Du**: Warum schreibt er dann nicht `{n} ∈ ℕ`??
+    **Du**: Warum schreibt er dann nicht `{n} ∈ ℕ`??
 
-**Robo**: Weil das hier alles komische Typen sind …  Ich kann dir das später mal in Ruhe erklären.
-Jetzt will ich erst einmal die Frage entschlüsseln.
+    **Robo**: Weil das hier alles komische Typen sind …  Ich kann dir das später mal in Ruhe erklären.
+    Jetzt will ich erst einmal die Frage entschlüsseln.
 
-**Robo**: Also, `{h₁}`, `{h₂}`, `{h₃}` sind einfach nur Namen für verschiedene Annahmen, und zwar
-für die Annahme `n < 10`, `1 < n` und `n ≠ 5`. Beweisen sollen wir: `1 < n`.
+    **Robo**: Also, `{h₁}`, `{h₂}`, `{h₃}` sind einfach nur Namen für verschiedene Annahmen, und zwar
+    für die Annahme `n < 10`, `1 < n` und `n ≠ 5`. Beweisen sollen wir: `1 < n`.
 
-**Du**: Aber das war doch gerade eine der Annahmen.
+    **Du**: Aber das war doch gerade eine der Annahmen.
 
-**Robo**: Ja, stimmt.
+    **Robo**: Ja, stimmt.
 
-**Du**: ???
+    **Du**: ???
 
-**Robo**: Du musst ihm das halt explizit sagen.  Probiers mal mit `assumption`."
+    **Robo**: Du musst ihm das halt explizit sagen.  Probiers mal mit `assumption`."
   assumption
 
 Conclusion
@@ -37,6 +36,25 @@ Conclusion
 **Untertan**: Ja richtig! Wenn Ihr nur wüsstet, was ich mir an dieser Frage schon den Kopf
 zerbrochen habe!
 "
+
+/--
+`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.
+
+## Beispiel
+
+`assumption` sucht durch die Annahmen und merkt dass `h` genau mit dem Goal übereinstimmt.
+
+```
+Objekte
+  a b c d : ℕ
+  h : a + b = c
+  g : a * b = 16
+  t : c = 12
+Goal
+  a + b = c
+```
+-/
+TacticDoc assumption
 
 NewTactic assumption
 DisabledTactic tauto

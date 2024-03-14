@@ -10,16 +10,14 @@ Introduction
 Der nächste Untertan in der Reihe ist ein Schelm.
 "
 
-/--  -/
 Statement : True := by
   Hint "
-**Robo**:  Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
-bedingungslos wahr ist.
+    **Robo**:  Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
+    bedingungslos wahr ist.
 
-**Du**: Und was genau ist dann zu beweisen?
+    **Du**: Und was genau ist dann zu beweisen?
 
-**Robo**: Ich glaube, nichts. Ich glaube, du kannst einfach `trivial` schreiben.
-"
+    **Robo**: Ich glaube, nichts. Ich glaube, du kannst einfach `trivial` schreiben."
   trivial
 
 Conclusion
@@ -32,6 +30,20 @@ Wie in einer Mathe-Vorlesung?
 **Robo**: Nein, das `trivial` hier hat eine ziemlich spezielle Bedeutung.
 Das funktioniert nur in einer Handvoll Situationen.
 "
+
+/--
+`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
+
+## Details
+Die Taktiken, die verwendet werden sind:
+
+* `assumption`
+* `rfl`
+* `contradiction`
+* und noch 3 andere, die hier nicht behandelt werden
+  (`decide`, `apply True.intro`, `apply And.intro`).
+-/
+TacticDoc trivial
 
 NewTactic trivial
 DisabledTactic tauto

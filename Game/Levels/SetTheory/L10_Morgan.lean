@@ -55,6 +55,6 @@ Statement
 
 OnlyTactic rw simp_rw tauto trivial assumption rfl «have» «suffices»
 NewTactic simp_rw
-LemmaTab "Set"
+TheoremTab "Set"
 NewTheorem Set.mem_compl_iff Set.compl_union Set.diff_diff Set.compl_inter
   Set.diff_eq_compl_inter Set.inter_comm

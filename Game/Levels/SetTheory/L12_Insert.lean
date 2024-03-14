@@ -32,4 +32,4 @@ Statement :
   rfl
 
 OnlyTactic rfl
-LemmaTab "Set"
+TheoremTab "Set"

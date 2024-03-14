@@ -19,4 +19,4 @@ open Set
 /--  -/
 Statement : True := sorry
 
-LemmaTab "Set"
+TheoremTab "Set"

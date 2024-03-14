@@ -32,4 +32,4 @@ Statement : 3 ∈ {n : ℕ | Odd n}  := by
   ring
 
 NewTheorem Set.mem_setOf
-LemmaTab "Set"
+TheoremTab "Set"

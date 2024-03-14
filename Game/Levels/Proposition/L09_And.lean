@@ -1,8 +1,5 @@
 import Game.Metadata
 
-
-set_option tactic.hygienic false
-
 World "Proposition"
 Level 10
 
@@ -15,46 +12,29 @@ Er legt sie uns vor, setzt sich hin und häkelt.
 "
 /--  -/
 Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
-  Hint
-"
-**Du**:  Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir
-dass `{A} und {B}` gilt.  Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung.
-Kann ich nicht wieder `trivial` sagen?
+  Hint "
+    **Du**:  Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir
+    dass `{A} und {B}` gilt.  Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung.
+    Kann ich nicht wieder `trivial` sagen?
 
-**Robo**: Nee, diesmal wird das nicht funktionieren.
-Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal `constructor`.
+    **Robo**: Nee, diesmal wird das nicht funktionieren.
+    Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal `constructor`.
 
-**Du**: Du meinst, `destructor`??
+    **Du**: Du meinst, `destructor`??
 
-**Robo**: Nein, `constructor`. Ich weiß das ist verwirrend,
-aber die nennen das hier so weil man die Aussage aus mehreren Teilen
-konstruieren kann.
-"
+    **Robo**: Nein, `constructor`. Ich weiß das ist verwirrend,
+    aber die nennen das hier so weil man die Aussage aus mehreren Teilen
+    konstruieren kann."
   constructor
-  -- TODO: (BUG) Hier werden beide der folgenden Hints angezeigt.
-  -- Das logiste Verhalten wäre, wenn jeder nur am richtigen Ort
-  -- angezeigt würde.
-  -- Ein cooles Feature wäre, wenn man nur diesen ersten Hint schreiben könnte
-  -- und dieser dann automatisch auch beim zweiten Goal angezeigt wird, aber dann mit `B` statt `A`.
-  Hint (hidden := true)
-"
-**Robo**: Schau mal, das ist Zauberpapier.
-Jetzt haben wir auf einmal zwei Beweisziele.
-Hier ist dast Ziel `{A}`.
-Ich glaube, du weißt schon, wie man die jeweils erreicht.
-Die Ziele stehen ja jeweils in den *Annahmen*.
-"
+  -- gleicher Hint wie unten!
   assumption
-  Hint (hidden := true)
-"
-**Robo**: Schau mal, das ist Zauberpapier.
-Jetzt haben wir auf einmal zwei Beweisziele.
-Hier ist dast Ziel `{B}`.
-Ich glaube, du weißt schon, wie man die jeweils erreicht.
-Die Ziele stehen ja jeweils in den *Annahmen*.
-"
+  Hint (hidden := true) "
+    **Robo**: Schau mal, das ist Zauberpapier.
+    Jetzt haben wir auf einmal zwei Beweisziele.
+    Hier ist dast Ziel `{B}`.
+    Ich glaube, du weißt schon, wie man die jeweils erreicht.
+    Die Ziele stehen ja jeweils in den *Annahmen*."
   assumption
-
 
 Conclusion
 "
@@ -65,6 +45,30 @@ Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 **Robo**: Meinst du, dieser Hebel, an dem \"Editor mode\" steht, ist echt?
 Oder ist der nur gemalt?  Probier mal!
 "
+
+/--
+`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist
+
+## Detail
+Wenn das Goal eine Struktur ist, wie z.B. `A ∧ B` welches zwei Felder hat `⟨A, B⟩`, dann
+erzeugt `constructor` ein Goal pro Feld der Struktur.
+
+## Hilfreiche Resultate
+
+* Das Gegenteil von `constructor` ist `⟨_, _⟩` (`\\<>`), der *anonyme Konstruktor*.
+Dieser enspricht ungefähr der Tupel-Notation in
+\"eine Gruppe ist ein Tupel $(G, 0, +)$, sodass …\".
+
+## Beispiel
+
+```
+example {A B : Prop} (h : A) (g : B) : A ∧ B := by
+  constructor
+  · assumption
+  · assumption
+```
+-/
+TacticDoc constructor
 
 NewTactic constructor
 DisabledTactic tauto

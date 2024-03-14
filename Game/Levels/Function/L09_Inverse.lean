@@ -100,7 +100,7 @@ open Function
 NewDefinition LeftInverse RightInverse
 NewTheorem Exists.choose Exists.choose_spec congrArg congrFun
 DisabledLemma Function.bijective_iff_has_inverse
-LemmaTab "Logic"
+TheoremTab "Logic"
 
 
 Conclusion

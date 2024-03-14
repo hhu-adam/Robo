@@ -41,7 +41,7 @@ Statement (m : ℕ) :
   rfl
 
 OnlyTactic rw rfl simp trivial
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "
 **Du**: Danke Robo!

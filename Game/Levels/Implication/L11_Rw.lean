@@ -37,4 +37,4 @@ Conclusion
 
 DisabledTactic tauto apply
 NewTheorem Classical.not_not
-LemmaTab "Logic"
+TheoremTab "Logic"

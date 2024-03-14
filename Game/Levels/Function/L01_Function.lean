@@ -55,7 +55,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
     simp only [sub_lt_self_iff, zero_lt_one, forall_const]
 
 NewDefinition Symbol.function
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion "Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend
 in eine Richtung. Ihr folgt ihrem Finger und euch fällt in weiter ferne eine pompöse Struktur

@@ -31,7 +31,7 @@ Statement : Bijective (fun (n : ℤ) ↦ n + 1) := by
   simp
 
 NewDefinition Bijective
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion
 "Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und

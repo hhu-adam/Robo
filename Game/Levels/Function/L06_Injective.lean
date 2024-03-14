@@ -60,7 +60,7 @@ Statement : ¬ (f + f).Injective := by
   Hint "Das Goal kannst du nun mit `rfl` schliessen."
   rfl
 
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion
 "

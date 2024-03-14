@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 import Game.ToBePorted
 
 World "Proposition"
@@ -16,9 +14,10 @@ Auftritt zweiter Querulant.
 
 /--  -/
 Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
-  Hint "**Du** Ist `{n} ≠ {n}` nicht auch ein Widerspruch?
+  Hint "
+    **Du** Ist `{n} ≠ {n}` nicht auch ein Widerspruch?
 
-**Robo**: Probiers mal!"
+    **Robo**: Probiers mal!"
   contradiction
 
 Conclusion

@@ -42,7 +42,7 @@ Statement
   rw [Finset.sum_comm]
 
 NewTheorem Finset.sum_comm
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "
   Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,

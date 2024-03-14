@@ -30,6 +30,6 @@ Statement : Injective (fun (n : ℤ) ↦ n + 3) := by
   simp
 
 NewDefinition Injective
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion "**Du** Woa das war ja einfach!"

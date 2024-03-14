@@ -26,4 +26,4 @@ Statement (S : Set ℤ) :
     { x ∈ (S : Set ℤ) | 0 ≤ x} ⊆ S := by
   simp
 
-LemmaTab "Set"
+TheoremTab "Set"

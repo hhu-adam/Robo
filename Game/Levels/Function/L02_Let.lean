@@ -68,7 +68,7 @@ Statement (x : ℤ) : ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
 
 NewTactic «let»
 NewTheorem Function.comp_apply
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion "**Du**: Dann verstehst du etwas Mathe?
 

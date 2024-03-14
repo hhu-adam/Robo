@@ -53,7 +53,7 @@ Statement : Injective (fun (n : ℤ) ↦ n^3 + (n + 3)) := by
 
 NewDefinition Injective
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion "**Du**: Danke vielmals!
 

@@ -50,6 +50,6 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
   ring
 
 NewTheorem Finset.sum_add_distrib add_comm
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "Der Babylonier macht ein sehr zufriedenes Gesicht."

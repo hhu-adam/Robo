@@ -55,6 +55,6 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
 
 NewTactic contrapose
 DisabledTactic by_contra
-LemmaTab "Nat"
+TheoremTab "Nat"
 
 Conclusion "**Benedictus**: Hervorragend!  Ich glaube, damit seid Ihr jetzt ganz gut gewappnet."

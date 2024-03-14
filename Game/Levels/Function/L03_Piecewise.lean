@@ -81,7 +81,7 @@ Statement : f ∘ g = g ∘ f := by
 NewTactic funext simp_rw linarith
 
 NewTheorem not_le if_pos if_neg
-LemmaTab "Logic"
+TheoremTab "Logic"
 
 -- -- TODO : This does not trigger.
 -- -- TODO: These 5 hints should be mutually exclusive. i.e. they should not trigger

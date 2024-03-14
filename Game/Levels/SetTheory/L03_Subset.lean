@@ -39,6 +39,6 @@ Statement Set.subset_univ (A : Set ℕ) : A ⊆ univ := by
 
 DisabledTactic tauto simp
 NewDefinition Symbol.Subset
-LemmaTab "Set"
+TheoremTab "Set"
 
 Conclusion "Damit drehen sich die beiden Mädchen um und folgen dem Jungen."

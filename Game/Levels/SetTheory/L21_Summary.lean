@@ -20,4 +20,4 @@ Statement :
   use 1
   ring
 
-LemmaTab "Set"
+TheoremTab "Set"
