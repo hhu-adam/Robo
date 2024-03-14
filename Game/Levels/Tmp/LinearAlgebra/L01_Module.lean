@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 
-import Game.StructInstWithHoles
+import Game.Metadata.StructInstWithHoles
 World "Module"
 Level 1
 
