@@ -10,16 +10,14 @@ Introduction
 Der nächste Untertan in der Reihe ist ein Schelm.
 "
 
-/--  -/
 Statement : True := by
   Hint "
-**Robo**:  Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
-bedingungslos wahr ist.
+    **Robo**:  Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
+    bedingungslos wahr ist.
 
-**Du**: Und was genau ist dann zu beweisen?
+    **Du**: Und was genau ist dann zu beweisen?
 
-**Robo**: Ich glaube, nichts. Ich glaube, du kannst einfach `trivial` schreiben.
-"
+    **Robo**: Ich glaube, nichts. Ich glaube, du kannst einfach `trivial` schreiben."
   trivial
 
 Conclusion

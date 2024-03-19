@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Function"
 Level 8
 
@@ -16,8 +14,10 @@ Introduction
 
 open Function
 
-/--  -/
-Statement : Bijective (fun (n : ℤ) ↦ n + 1) := by
+Statement :
+    let f := fun (n : ℤ) ↦ n + 1
+    Bijective f := by
+  intro f
   Hint "
   **Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.
 
@@ -30,8 +30,8 @@ Statement : Bijective (fun (n : ℤ) ↦ n + 1) := by
   use y-1
   simp
 
-NewDefinition Bijective
-LemmaTab "Function"
+NewDefinition Function.Bijective
+TheoremTab "Function"
 
 Conclusion
 "Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und

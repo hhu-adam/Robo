@@ -2,10 +2,6 @@ import Game.Metadata
 
 
 
-import Game.ToBePorted
-
-set_option tactic.hygienic false
-
 World "Lean"
 Level 4
 
@@ -41,7 +37,7 @@ Statement (m : ℕ) :
   rfl
 
 OnlyTactic rw rfl simp trivial
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "
 **Du**: Danke Robo!

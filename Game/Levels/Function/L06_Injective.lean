@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Function"
 Level 6
 
@@ -28,39 +26,35 @@ f(n) = \\begin{cases}
 \\end{cases}
 $$
 
-
 Darunter steht in leicht leuchtender Schrift:
 "
 
-namespace FunctionLvl7
-
 open Function
 
-def f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
-
-/--  -/
-Statement : ¬ (f + f).Injective := by
+Statement :
+    let f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
+    ¬ Injective (f + f) := by
+  intro f
   unfold Injective
-  Hint "**Robo**: Das ist sicher ein Hinweis.
+  Hint "
+    **Robo**: Das ist sicher ein Hinweis.
 
-  **Du**: Aber `¬ Injective` sagt mir nichts…
+    **Du**: Aber `¬ Injective` sagt mir nichts…
 
-  **Robo**: Könntest du etwas mit `¬ ∀` anfangen? Dann könntest du ja `Injektive` zuerst öffnen.
+    **Robo**: Könntest du etwas mit `¬ ∀` anfangen? Dann könntest du ja `Injektive` zuerst öffnen.
 
-  **Du**: Darüber haben wir doch mal was gelernt…"
+    **Du**: Darüber haben wir doch mal was gelernt…"
   Hint (hidden := true) "**Robo**: Das war `push_neg`."
   push_neg
-  Hint "**Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?
+  Hint "
+    **Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?
 
-  **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
+    **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   use 2
   use 3
-  simp
-  -- TODO: is that a regression?
-  Hint "Das Goal kannst du nun mit `rfl` schliessen."
-  rfl
+  decide
 
-LemmaTab "Function"
+TheoremTab "Function"
 
 Conclusion
 "
@@ -68,5 +62,3 @@ Als ihr das Problem gelöst habt, erschleicht euch ein starkes
 Gefühl, dass dies der falsche Weg ist.
 Also geht ihr zurück und nehmt die rechte Gabelung.
 "
-
-end FunctionLvl7

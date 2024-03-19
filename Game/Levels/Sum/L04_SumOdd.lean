@@ -1,6 +1,5 @@
 import Game.Metadata
 
-import Game.ToBePorted
 
 
 import Game.Levels.Sum.L03_ArithSum
@@ -31,4 +30,4 @@ Statement (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
   --rw [Nat.succ_eq_add_one]
   ring
 
-LemmaTab "Sum"
+TheoremTab "Sum"

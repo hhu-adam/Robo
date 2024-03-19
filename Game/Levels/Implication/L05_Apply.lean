@@ -7,7 +7,7 @@ Title "Implikation"
 
 Introduction
 "
-Die nächste Seite sieht ein bisschen komplizierter aus.  Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.
+Die nächste Seite sieht ein bisschen komplizierter aus. Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.
   $$
   \\begin{CD}
        A  @>{f}>> B @<{g}<< C    \\\\
@@ -20,10 +20,12 @@ Die nächste Seite sieht ein bisschen komplizierter aus.  Damit Ihr nicht die Ü
 "
 Statement
     (A B C D E F G H I : Prop)
-    (f : A → B) (g : C → B) (h : A → D) (i : B → E) (j : C → F) (k : E → D) (l : E → F) (m : G → D) (n : H → E) (p : F → I) (q : H → G) (r : H → I) : A → I := by
-  Hint "**Du**: Also ich muss einen Pfad von Implikationen $A \\Rightarrow I$ finden.
+    (f : A → B) (g : C → B) (h : A → D) (i : B → E) (j : C → F) (k : E → D) (l : E → F)
+    (m : G → D) (n : H → E) (p : F → I) (q : H → G) (r : H → I) : A → I := by
+  Hint "
+    **Du**: Also ich muss einen Pfad von Implikationen $A \\Rightarrow I$ finden.
 
-  **Robo**:  Lass mich mal raten, wie wir anfangen … Wieder `intro`?"
+    **Robo**:  Lass mich mal raten, wie wir anfangen … Wieder `intro`?"
 
   intro hyp
   Hint (hidden := true) "**Robo**: Na wieder `apply`, was sonst."
@@ -45,7 +47,7 @@ Statement
       Hint "**Robo**: Halt! Falsch abgebogen."
     apply f
     assumption
-  Branch 
+  Branch
     apply h at hyp
     Hint "**Robo**: Bist du dir sicher?"
   apply f at hyp
@@ -58,8 +60,9 @@ Statement
   assumption
 
 Conclusion
-"Der Operationsleiter bedankt sich wieder artig.  Er drückt wieder auf ein paar Knöpfe, und mit einem lauten Ratteln springen mehrere Förderbänder gleichzeitig wieder an."
+"
+Der Operationsleiter bedankt sich wieder artig. Er drückt wieder auf ein paar Knöpfe,
+und mit einem lauten Ratteln springen mehrere Förderbänder gleichzeitig wieder an.
+"
 
 DisabledTactic tauto
-
--- https://www.jmilne.org/not/Mamscd.pdf

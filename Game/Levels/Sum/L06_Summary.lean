@@ -1,15 +1,11 @@
 import Game.Metadata
 
-import Game.ToBePorted
 
 
 import Game.Levels.Sum.L05_SumComm
 
 World "Sum"
 Level 6
-
-set_option tactic.hygienic false
-
 Title "Zusammenfassung"
 
 Introduction
@@ -83,7 +79,7 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1),
   ring
 
 NewTheorem add_pow_two
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie
 aggressiv war, sondern nur eine sehr tiefe Stimme hat.

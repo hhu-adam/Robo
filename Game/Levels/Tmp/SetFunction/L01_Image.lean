@@ -8,9 +8,6 @@ Level 1
 Title ""
 
 open Set
-
-set_option tactic.hygienic false
-
 Introduction
 "
 Das Bild einer Funktion ist eine Menge, die als `f '' S` geschrieben wird.
@@ -71,4 +68,4 @@ Statement (S T : Set ℕ) (f : ℕ → ℕ) : (f '' S) ∪ (f '' T) = f '' (S �
   assumption
 
 NewTactic ext
-LemmaTab "Set"
+TheoremTab "Set"

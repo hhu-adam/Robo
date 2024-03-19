@@ -9,18 +9,18 @@ World "Sum"
 Title "Babylon"
 
 Introduction "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme
-gestapelt sind.  Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte
-feinsäuberlich auf den darunterliegenden Platten aufbaut.  Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann.  Bald trefft ihr auch den ersten Bewohner dieses Planeten an.
+gestapelt sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte
+feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.
 
-**Babylonier**: Willkommen auf *Babylon*! 
+**Babylonier**: Willkommen auf *Babylon*!
 
-**Du**: Oh …  
+**Du**: Oh …
 
 Dich beschleicht ein ungutes Gefühl.
 
 **Du**:  Seid ihr euch sicher, dass diese Türme stabil sind?
 
-**Babylonier**:  100 Pro!  
+**Babylonier**:  100 Pro!
 
 **Du**:  Wie baut ihr denn diese Meisterwerke?
 

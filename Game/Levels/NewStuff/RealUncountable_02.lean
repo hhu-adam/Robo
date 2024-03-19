@@ -1,8 +1,6 @@
 import Game.Metadata
 import Game.Levels.NewStuff.RealUncountable_01
 
-set_option autoImplicit false
-
 World "TmpRealsUncountable"
 Level 2
 

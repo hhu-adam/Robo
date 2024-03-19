@@ -16,16 +16,15 @@ Du schaust ihn fassungslos an.
 Er schreibt es dir wieder auf.
 "
 
-/--  -/
 Statement :
   42 = 42 := by
-  Hint " **Robo**: Ist doch klar.  Du musst ihn einfach daran erinnern,
+  Hint "**Robo**: Ist doch klar. Du musst ihn einfach daran erinnern,
     dass Gleichheit *reflexiv* ist. Probier mal `rfl`."
   rfl
 
 Conclusion
 "
-**Untertan**: Ah, richtig. Ja, Sie haben ja so recht.  Das vergesse ich immer.  Rfl, rfl, rfl …
+**Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich immer. Rfl, rfl, rfl …
 "
 
 NewTactic rfl

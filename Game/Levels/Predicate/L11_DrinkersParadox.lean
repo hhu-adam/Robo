@@ -1,58 +1,58 @@
 import Game.Metadata
 
-
-
 World "Predicate"
 Level 11
 
 Title "Drinker's Paradox"
 
-
 Introduction
 "
-
 **Du**: Könnte ihr eigentlich immer nur im Chor oder durcheinander reden?
 
-Wieder herrscht längeres Schweigen.  Dann auf einmal:
+Wieder herrscht längeres Schweigen. Dann auf einmal:
 
 **Alle**:  Es gibt unter uns eine Person, wenn die redet, dann reden alle!
 
 Du kratzt Dich am Kopf.
 
-**Robo**:  Ist doch klar.  Das ist auf jedem bewohnten Planeten so!
+**Robo**:  Ist doch klar. Das ist auf jedem bewohnten Planeten so!
 
 **Du**:  Was??
 
-**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
+**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies
+das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit
+der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
 
 **Du**: Glaube ich nicht.
 
-**Robo**:  Glaube ich schon.  Ich glaube sogar, du kannst das beweisen.  Hier, probier mal!
+**Robo**:  Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!
 "
 
 open Function
 
 Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
-  Hint "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …
-  Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
-  die wahr oder falsch ist. Soweit so gut.
-  Und was bedeutet `Inhabited People`?
+  Hint "
+    **Du**: Also, `isDrinking` ist wieder so ein Prädikat …
+    Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
+    die wahr oder falsch ist. Soweit so gut.
+    Und was bedeutet `Inhabited People`?
 
-  **Robo**: Das ist Leansch für nicht-leer.  Das heißt einfach, es gibt mindestens eine Person.
-  Du kannst dadurch jederzeit `default`, oder lang
-  `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
+    **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
+    Du kannst dadurch jederzeit `default`, oder lang
+    `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
 
-  **Du**: Und wie fang ich jetzt an?
+    **Du**: Und wie fang ich jetzt an?
 
-  **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
-  Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
-  `∀ (y : People), isDrinking y` wahr oder falsch ist."
+    **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
+    Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
+    `∀ (y : People), isDrinking y` wahr oder falsch ist."
   Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
   by_cases h : ∀ y, isDrinking y
-  Hint (hidden := true) "**Du**: Und wen nehm ich jetzt?
+  Hint (hidden := true) "
+    **Du**: Und wen nehm ich jetzt?
 
-  **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
+    **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
   use (default : People)
   intro
   assumption
@@ -64,8 +64,32 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
   contradiction
 
-LemmaTab "Logic"
+/--
+`Inhabited U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
+enthält.
+
+Hat man eine solche Instanz, kann man immer das Element `(default : U)` verwenden.
+
+Was `default` genau ist hängt davon ab, wie `Inhabited U` bewiesen wurde. Es könnte
+also alles sein und man sollte sich nicht darauf verlassen, dass `default` eine
+bestimmte Eigenschaft hat. Z.B. ist `(default : ℕ) = 0` aber es hätte genau so gut
+als `1` oder `2` definiert werden können.
+-/
+DefinitionDoc Inhabited as "Inhabited"
+
+/-- Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.
+
+Man sollte generell nichts über `default` annehmen, aussert dass es existiert.
+
+Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:
+z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`
+die leere Menge `∅`, etc.
+-/
+TheoremDoc Inhabited.default as "default" in "Logic"
+
+TheoremTab "Logic"
 NewDefinition Inhabited
+NewTheorem Inhabited.default
 
 Conclusion
 "

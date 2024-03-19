@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-set_option tactic.hygienic false
-
 open Nat
 
 World "Inequality"
@@ -13,11 +10,13 @@ Title "Kleinergleich"
 
 Introduction
 "
-**Lina**: Man muss zum Beispiel wissen, dass `n ≠ 0` für natürliche Zahlen nichts anderes bedeutet als `0 < n`.
+**Lina**: Man muss zum Beispiel wissen, dass `n ≠ 0` für natürliche Zahlen nichts anderes
+bedeutet als `0 < n`.
 
 **Robo**: Und da gibts leider keinen Standard zu …
 
-**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben.  Aber wenn man neu hier ist, sollte man das vielleicht noch einmal selbst beweisen?
+**Ritha**: Man kann das einfach mit `Nat.pos_iff_ne_zero` umschreiben. Aber wenn man neu hier
+ist, sollte man das vielleicht noch einmal selbst beweisen?
 "
 
 Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
@@ -50,9 +49,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
 
 NewTactic simp
 NewTheorem Nat.succ_pos
-DisabledLemma Nat.pos_iff_ne_zero Nat.succ_pos'
-LemmaTab "Nat"
+DisabledTheorem Nat.pos_iff_ne_zero Nat.succ_pos'
+TheoremTab "Nat"
 
-Conclusion "**Du**: `simp` ist ja echt nicht schlecht …
-
-"
+Conclusion "**Du**: `simp` ist ja echt nicht schlecht …"

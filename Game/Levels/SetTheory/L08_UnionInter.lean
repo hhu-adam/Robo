@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 8
 
@@ -32,6 +29,6 @@ Statement (A B : Set ℕ) : univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A 
 
 DisabledTactic tauto
 NewTheorem Set.diff_inter Set.union_assoc Set.union_diff_distrib Set.univ_union
-LemmaTab "Set"
+TheoremTab "Set"
 
 Conclusion "Wie du vielleicht bemerkt hast, könnte `tauto` sowas automatisch lösen."

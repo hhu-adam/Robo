@@ -32,9 +32,9 @@ subspaces is contained in the other.
 Boss level, option 2a: Show that the lattice of subspaces of a vector space satisfies the modular law.
 Boss level, option 2b:  When does a collection of subspaces form a decomposition of the entire space?  (3 subspaces or general version wtih n subspaces)
 
-Marcus: I would be happy with any one of the boss levels in these lattice planets. I imagine that if you pick, say, 1b as a boss level, you could still include 1a as a walk-through exercise that leads up to that boss level.  Similarly for 2a/2b.
+Marcus: I would be happy with any one of the boss levels in these lattice planets. I imagine that if you pick, say, 1b as a boss level, you could still include 1a as a walk-through exercise that leads up to that boss level. Similarly for 2a/2b.
 
-## Vector spaces of infinite fields 
+## Vector spaces of infinite fields
 Follow-up to planets on the lattice of subspaces.
 
 Boss level:  Show that a vector space over an infinite field cannot be a finite union of proper subspaces.
@@ -57,13 +57,13 @@ Boss level:  Show that sqrt{p} is not rational for any prime p.
 
 Follow-up to planets on unique factorization (and reals of rationals -- abstract version)
 
-Boss level: Show that $\log p_i$ are linearly independent over $ℚ$ where $p_i$ are prime numbers. 
+Boss level: Show that $\log p_i$ are linearly independent over $ℚ$ where $p_i$ are prime numbers.
 
 This uses cardinality argument (cardinal_eq_of_finite_basis) and the unique factorization of integers into primes.
 
 ## Matrices 1
 
-Boss level: every matrix can be written as a sum of a symmetric (A^+ = A) and a skew-symmetric matrix. 
+Boss level: every matrix can be written as a sum of a symmetric (A^+ = A) and a skew-symmetric matrix.
 
 ## Matrices 2 (++)
 
@@ -118,5 +118,3 @@ $$ \begin{bmatrix}
 \end{bmatrix} $$
 
 3. Show that this map is never invertible.
-
-

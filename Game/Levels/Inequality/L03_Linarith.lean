@@ -21,8 +21,8 @@ Statement (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by
   **Ritha**: `linarith`"
   linarith
 
+Conclusion "**Du**: Naja, so beeindruckend war das jetzt auch noch nicht."
+
 NewTactic linarith
 NewTheorem Nat.pos_iff_ne_zero
-LemmaTab "Nat"
-
-Conclusion "**Du**: Naja, so beeindruckend war das jetzt auch noch nicht."
+TheoremTab "Nat"

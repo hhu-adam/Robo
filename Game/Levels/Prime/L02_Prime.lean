@@ -1,7 +1,6 @@
 import Game.Metadata
 
 
-import Game.ToBePorted
 
 World "Prime"
 Level 2
@@ -31,7 +30,7 @@ Statement (p : ℕ) (h : Nat.Prime p) : ∀ (x : ℕ), (x ∣ p) → x = 1 ∨ x
   `Nat.Prime p` ist als `Irreducible p` definiert, was wiederum anhand von Einheiten
   definiert ist… Da verlieren wir uns in Definition die wir im Moment gar nicht brauchen."
   rw [Nat.prime_def_lt''] at h
-  rcases h with ⟨_, h₂⟩
+  rcases h with ⟨h₁, h₂⟩
   assumption
 
 NewTheorem Nat.prime_def_lt''

@@ -42,4 +42,4 @@ Statement :
   ring
 
 NewDefinition Disjoint
-LemmaTab "Set"
+TheoremTab "Set"

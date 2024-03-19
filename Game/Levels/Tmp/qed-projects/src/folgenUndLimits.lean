@@ -9,15 +9,15 @@ import topology.instances.real
 import topology.algebra.order.intermediate_value
 
 
--- Sei I = [a,b] und f_I-> R stetig mit f(I) untermenge von I 
+-- Sei I = [a,b] und f_I-> R stetig mit f(I) untermenge von I
 --zz ∃ x ∈ I: f(x)=x
 
 --def stetig (f : _) (x : RR) := ∀ eps, ∃ delta, _
 
-def lok_stetig (f: ℝ → ℝ) (x: ℝ):=  
+def lok_stetig (f: ℝ → ℝ) (x: ℝ):=
 ∀ (ε:ℝ), ∃ δ > 0, ∀ (x0: ℝ), |x0-x| < δ → |f(x0)-f(x)| < ε
 
-def stetig (I: set ℝ) (f: ℝ → ℝ ) := 
+def stetig (I: set ℝ) (f: ℝ → ℝ ) :=
 ∀ x ∈ I, lok_stetig f x
 
 --Zwischenwertsatz muss gezeigt werden
@@ -31,8 +31,6 @@ end
 -/
 
 #check intermediate_value_Icc
-
-set_option profiler true
 
 lemma nullstelle {a b : ℝ} (j: a ≤ b) {g : ℝ  → ℝ}
   (h0: continuous_on g (set.Icc a b)) (l: (0 : ℝ) ∈ set.Icc (g a) (g b)) :
@@ -48,16 +46,16 @@ begin
 --Für den Beweis definieren wir eine Funktion, welche aus f und x besteht--
   let g:= λ (x : ℝ), x - f x,
 --Wollen zeigen, dass g stetig ist--
-  have cg: continuous_on g (set.Icc a b),{  
+  have cg: continuous_on g (set.Icc a b),{
     apply continuous_on.sub,
-    apply continuous_on_id, 
+    apply continuous_on_id,
     apply h0, },
 --Wollen zeigen, dass 0 ein Element von [g(a),g(b)] ist--
-  have l: ((0: ℝ) ∈ set.Icc (g a) (g b)), 
+  have l: ((0: ℝ) ∈ set.Icc (g a) (g b)),
     rw [set.mem_Icc],
     constructor,
     {
-    simp, 
+    simp,
     rw [set.ssubset_def] at h1,
     rcases h1,
     rw [set.subset_def] at h1_left,
@@ -67,7 +65,7 @@ begin
     tauto,},
 ------------------------------------------------------------------
     {
-    simp, 
+    simp,
     rw [set.ssubset_def] at h1,
     rcases h1,
     rw [set.subset_def] at h1_left,

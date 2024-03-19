@@ -6,9 +6,6 @@ World "Function"
 Level 9
 
 Title "Inverse"
-
-set_option tactic.hygienic false
-
 Introduction
 "
 Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass
@@ -22,7 +19,7 @@ aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst.
 open Function
 
 --TODO: This is a really hard proof
-/--  -/ Statement Function.bijective_iff_has_inverse {A B : Type} (f : A → B) :
+Statement Function.bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
   Hint "**Du**: Nah da sagt mir so manches nichts, aber ich kann ja mal mit dem `↔` anfangen,
   das kenn ich ja schon."
@@ -99,13 +96,15 @@ open Function
 
 NewDefinition LeftInverse RightInverse
 NewTheorem Exists.choose Exists.choose_spec congrArg congrFun
-DisabledLemma Function.bijective_iff_has_inverse
-LemmaTab "Logic"
+DisabledTheorem Function.bijective_iff_has_inverse
+TheoremTab "Logic"
 
 
 Conclusion
-"Endlich entkommt ihr der Bibliothek.
+"
+Endlich entkommt ihr der Bibliothek.
 
 **Robo**: Da würden mich keine zehn Pferde nochmals hineinbringen!
 
-**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?"
+**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?
+"

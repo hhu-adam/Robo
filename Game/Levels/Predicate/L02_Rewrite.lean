@@ -1,19 +1,18 @@
 import Game.Metadata
 
-
 World "Predicate"
 Level 2
 
 Title "Rewrite"
 
-Introduction
-""
+Introduction ""
 
 Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
-  Hint "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis* schon gelöst hatten.
+  Hint "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis*
+  schon gelöst hatten.
   Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!
 
-  **Robo**: Richtig.  Und im Grunde macht das gar keinen Unterscheid.
+  **Robo**: Richtig. Und im Grunde macht das gar keinen Unterscheid.
   Du kannst `=` und `↔` praktisch mit `rw` praktisch gleich behandeln."
 
   Hint (hidden := true) "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?
@@ -26,5 +25,4 @@ Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c :
   rw [←h₂]
   assumption
 
-Conclusion
-""
+Conclusion ""

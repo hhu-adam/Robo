@@ -2,7 +2,6 @@ import Game.Metadata
 
 
 
-import Game.ToBePorted
 
 World "SetTheory2"
 Level 2
@@ -44,4 +43,4 @@ Statement (X Y : Set ℕ):
   tauto
 
 NewTheorem Set.mem_powerset_iff Set.subset_union_of_subset_left Set.subset_union_of_subset_right
-LemmaTab "Set"
+TheoremTab "Set"

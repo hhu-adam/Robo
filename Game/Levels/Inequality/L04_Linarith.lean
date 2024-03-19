@@ -1,6 +1,5 @@
 import Game.Metadata
 
-
 World "Inequality"
 Level 4
 
@@ -22,4 +21,3 @@ Statement (x y : ℤ) (h₂ : 5 * y ≤ 35 - 2 * x) (h₃ : 2 * y ≤ x + 3) : y
   linarith
 
 Conclusion "**Du**: Boah, nicht schlecht."
-  

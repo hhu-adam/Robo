@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 7
 
@@ -26,4 +23,4 @@ Statement (A B : Set ℕ) : (A ∪ ∅) ∩ B = A ∩ (univ ∩ B) := by
   simp
 
 NewTactic simp
-LemmaTab "Set"
+TheoremTab "Set"

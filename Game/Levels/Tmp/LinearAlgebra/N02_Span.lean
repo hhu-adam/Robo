@@ -20,7 +20,6 @@ usally denoted `f(M) = {y | ∃ x ∈ M, f(x) = y}` in mathematical texts.
 -- TODO: This is blocked by
 -- https://github.com/leanprover/lean4/issues/2074
 
-set_option autoImplicit false
 -- set_option pp.all true
 
 /--  -/

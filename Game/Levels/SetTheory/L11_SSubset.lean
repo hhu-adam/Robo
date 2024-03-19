@@ -32,4 +32,4 @@ Statement (A B : Set ℕ) (h : A ⊂ B) : ∃ x, x ∈ B \ A := by
   exact hx
 
 NewTheorem Set.subset_def Set.ssubset_def not_imp Set.mem_diff
-LemmaTab "Set"
+TheoremTab "Set"

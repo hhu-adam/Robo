@@ -1,8 +1,5 @@
 import Game.Metadata
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 2
 
@@ -15,19 +12,22 @@ Ihr zieht also durch die Gegend und redet mit den Leuten. Ein Junge rennt zu euc
 
 open Set
 
-/--  -/ Statement Set.not_mem_empty {A : Type} (x : A) :
+Statement Set.not_mem_empty {A : Type} (x : A) :
     x ∉ (∅ : Set A) := by
-  Hint "**Du**: Kein Element ist in der leeren Menge enthalten? Das ist ja alles
-  tautologisches Zeugs...
+  Hint "
+    **Du**: Kein Element ist in der leeren Menge enthalten? Das ist ja alles
+    tautologisches Zeugs...
 
-  **Robo**: Dann behaupte das doch."
+    **Robo**: Dann behaupte das doch."
   tauto
 
 NewTheorem Set.mem_univ
-LemmaTab "Set"
+TheoremTab "Set"
 
-Conclusion "Der Junge rennt weiter.
+Conclusion "
+Der Junge rennt weiter.
 
 **Du**: So wird das ganze schon angenehmer.
 
-**Robo**: Die Leere Menge schreibst du mit `\\empty` falls du die nochmals brauchst."
+**Robo**: Die Leere Menge schreibst du mit `\\empty` falls du die nochmals brauchst.
+"

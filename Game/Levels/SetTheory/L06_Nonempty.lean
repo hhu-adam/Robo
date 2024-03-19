@@ -2,9 +2,6 @@ import Game.Metadata
 import Game.Levels.SetTheory.L05_Empty
 
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 6
 
@@ -33,4 +30,4 @@ Statement Set.nonempty_iff_ne_empty
 
 NewTheorem ne_eq Set.eq_empty_iff_forall_not_mem
 NewDefinition Set.Nonempty
-LemmaTab "Set"
+TheoremTab "Set"

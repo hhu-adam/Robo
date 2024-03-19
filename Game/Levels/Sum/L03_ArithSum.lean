@@ -2,10 +2,6 @@ import Game.Metadata
 
 
 
-import Game.ToBePorted
-
-set_option tactic.hygienic false
-
 World "Sum"
 Level 3
 
@@ -20,7 +16,7 @@ Nach einem kurzen Spaziergang steht ihr davon.
 **Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!
 Über den hab ich schon einmal Daten verarbeitet.
 
-**Babylonier**:  Richtig.  Gauß war ein Babylonier!
+**Babylonier**:  Richtig. Gauß war ein Babylonier!
 "
 
 open Fin
@@ -89,7 +85,7 @@ open BigOperators
 
 NewTactic induction
 NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
-LemmaTab "Sum"
+TheoremTab "Sum"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,
 Steintürme in allen Formen und Höhen stehen."

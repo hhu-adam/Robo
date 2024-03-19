@@ -9,4 +9,7 @@ import Mathlib.Algebra.Module.Pi          -- definiert `Module ℚ (fin 2 → �
 import Mathlib.Data.Fin.VecNotation
 import Mathlib.Tactic.FinCases
 
+import Mathlib.Init.Data.Nat.Basic -- Imports the notation ℕ.
+import Std.Tactic.RCases
+
 import Mathlib

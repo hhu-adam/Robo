@@ -2,9 +2,6 @@ import Game.Metadata
 import Game.Levels.SetTheory.L04_SubsetEmpty
 
 
-
-set_option tactic.hygienic false
-
 World "SetTheory"
 Level 5
 
@@ -50,4 +47,4 @@ Statement Set.eq_empty_iff_forall_not_mem {A : Type _} (s : Set A) :
   rfl -- This is quite a miracle :)
 
 NewTheorem Set.subset_empty_iff
-LemmaTab "Set"
+TheoremTab "Set"

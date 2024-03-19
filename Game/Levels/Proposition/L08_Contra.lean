@@ -1,9 +1,6 @@
 import Game.Metadata
 
 
-
-import Game.ToBePorted
-
 World "Proposition"
 Level 9
 
@@ -16,16 +13,15 @@ Auftritt dritter Querulant.
 
 /--  -/
 Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
-  Hint "**Du** Wieder ein Widerspruch in den Annahmen?
+  Hint "
+    **Du** Wieder ein Widerspruch in den Annahmen?
 
-**Robo**: Ich sehe, du hast langsam den Dreh raus."
+    **Robo**: Ich sehe, du hast langsam den Dreh raus."
   contradiction
-
-
 
 Conclusion
 "
-**Robo**: Gut gemacht.  Bei dieser Frage ist auch ein bisschen offensichtlicher,
+**Robo**: Gut gemacht. Bei dieser Frage ist auch ein bisschen offensichtlicher,
 worin der Widerspruch besteht:  Die Annahme `n ≠ 10` ist genau die Negation von `n = 10`.
 Man muss `≠` immer als `¬(· = ·)` lesen.
 "

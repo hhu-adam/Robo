@@ -14,33 +14,40 @@ import Game.Levels.Predicate.L11_DrinkersParadox
 World "Predicate"
 Title "Quantus"
 
-Introduction "Auf Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.  Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.  Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
+Introduction "Auf Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.
+Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.
+Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
 
-**Du**: Wir haben einen Brief für Eure Königin.  Könntet Ihr uns zu Eurer Königin führen?
+**Du**: Wir haben einen Brief für Eure Königin. Könntet Ihr uns zu Eurer Königin führen?
 
 **Alle** *(im Chor)*:  Wir sind schon alle hier!
 
-**Du**:  Okay.  Und wer von Euch ist die Königin?
+**Du**:  Okay. Und wer von Euch ist die Königin?
 
-Nun herrscht betretenes Schweigen.  Alle zucken mit den Schultern.
+Nun herrscht betretenes Schweigen. Alle zucken mit den Schultern.
 
 **Du**:  Habt Ihr überhaupt eine Königin?
 
-**Alle** *(im Chor)*: Ja, ja.  Wir haben eine Königen, wir haben eine Königen.
+**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königen, wir haben eine Königen.
 
-**Robo** *(zu dir)*:  Ich fasse mal zusammen.  Es existiert eine Königen, aber keiner weiß, wer sie ist …
+**Robo** *(zu dir)*:  Ich fasse mal zusammen. Es existiert eine Königen, aber keiner weiß, wer
+sie ist …
 
 **Du**: Ist das nicht ein Widerspruch?
 
-**Robo**: Fragst du, du als Mathematiker?  Nein, das ist kein Widerspruch. Das ist einfach eine „reine Existenzaussage“.
+**Robo**: Fragst du, du als Mathematiker?  Nein, das ist kein Widerspruch. Das ist einfach eine
+„reine Existenzaussage“.
 
 Du bist dir nicht ganz sicher, wie ernst er das meint.
 
-**Du**:  Dann ich schlage vor, wir übergeben das Päckchen einfach an *alle* Bewohner.  Dann haben wir es ja insbesondere der Königin übergeben.
+**Du**:  Dann ich schlage vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben
+wir es ja insbesondere der Königin übergeben.
 
-**Du** *(in die Menge*):  Wir haben Euch ein Päckchen von Implis gebracht.  Hier, das ist für Euch.
+**Du** *(in die Menge*):  Wir haben Euch ein Päckchen von Implis gebracht. Hier, das ist für Euch.
 
-Robo spuckt es aus, wirft es in die Menge, und die Formalosophinnen reißen es auf.  Darin befinden sich ein paar loser Seiten, die sie sofort eingehend studieren.
+Robo spuckt es aus, wirft es in die Menge, und die Formalosophinnen reißen es auf. Darin befinden
+sich ein paar loser Seiten, die sie sofort eingehend studieren.
 
-Zwei Minuten später liegen die Seiten wieder bei Euch.  Es sind wieder mathematische Probleme.  Und die Formalosophinnen wollen sehen, wie Ihr sie löst.
+Zwei Minuten später liegen die Seiten wieder bei Euch. Es sind wieder mathematische Probleme.
+Und die Formalosophinnen wollen sehen, wie Ihr sie löst.
 "
