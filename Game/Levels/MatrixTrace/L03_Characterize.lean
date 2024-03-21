@@ -104,11 +104,19 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
           rw [map_sum]
           simp_rw [map_sum, SMulHomClass.map_smul]
           rfl
+        _ = ∑ i : Fin (n + 1), ∑ j : Fin (n + 1), if i = j then (A i j) else 0 := by
+          congr
+          ext i
+          congr
+          ext j
+          by_cases h : i = j
+          · rw [if_pos h, h, H1, H5, mul_one]
+          · rw [if_neg h, H6 i j h, mul_zero]
         _ = ∑ i : Fin (n + 1), (A i i) * f (E i i) := by
           congr
           ext i
           simp_rw [H1, H5, mul_one]
-          sorry
+          simp
         _ = ∑ i : Fin (n + 1), (A i i) * f (E 0 0) := by simp_rw [H1]
         _ = f (E 0 0) * (∑ i : Fin (n + 1), (A i i)) := by rw [← Finset.sum_mul, mul_comm]
         _ = f (E 0 0) * trace A := by rfl
@@ -124,7 +132,7 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
           rw [tmp3]
           congr
           ext i
-          rw [H1]
+          simp_rw [H1]
         _ = f (∑ i : Fin (n + 1), E i i) := by exact (map_sum f (fun x => E x x) Finset.univ).symm
         _ = f 1 := by rw [tmp1]
         _ = succ n := by rw [h₂]
