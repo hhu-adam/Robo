@@ -1,22 +1,22 @@
---import Game.Metadata
+-- import Game.Metadata
 import GameServer.Commands
 
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Matrix.Basic
 import Mathlib.LinearAlgebra.Trace
 
---import Game.StructInstWithHoles
+import Mathlib
 
-set_option tactic.hygienic false
+notation R"^"n" × "m => Matrix (Fin n) (Fin m) R
 
 World "Trace"
-Level 3 -- boss level
+Level 1
 
 Title "Trace"
 
 Introduction
 "
-The trace of as a map from the space of `n × n` matrices to the field of scalars has the following properties:
+The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:
 1. It is linear, witnessed by `traceLinear`.
 2. The trace of a identity matrix is the dimension of the matrix, i.e.
 `trace (1 : Matrix α α ℝ) = Fintype.card α`.
@@ -25,7 +25,7 @@ The trace of as a map from the space of `n × n` matrices to the field of scalar
 We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.
 "
 
-open Matrix BigOperators StdBasisMatrix
+open Nat Matrix BigOperators StdBasisMatrix
 
 #check Matrix
 
@@ -48,46 +48,63 @@ lemma E_mul_E_ne {i j k l : Fin n} (h : j ≠ k) :
     E i j * E k l = 0 := by
   exact mul_of_ne i j 1 h 1
 
-theorem linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ) (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) : f.toFun = trace := by
-  ext A
-  cases n with
-  | zero =>
-    simp [trace_eq_zero_of_isEmpty]
-    have : A = 0 := by
+lemma tmp1 {n : ℕ} : ∑ i : Fin (n + 1), E i i = 1 := by sorry
+
+lemma tmp2 {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) (i j) : A i j • E i j = stdBasisMatrix i j (A i j) := sorry
+
+Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
+    (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
+    ↑f = trace := by
+  funext A
+  rcases n
+  · simp
+    have hA : A = 0 := by
       apply Subsingleton.elim
-    simp only [this, f.map_zero]
-  | succ n =>
-    have H1 : ∀ (j : Fin (n + 1)),  f (E j j) = f (E 0 0) := by
+    rw [hA, f.map_zero]
+  · have H1 : ∀ (j : Fin (n + 1)),  f (E j j) = f (E 0 0) := by
       intro j
       calc
-        f (E j j) = f (E j 0 * E 0 j) := by rw [mul_same, mul_one]
+        f (E j j)
+        _ = f (E j 0 * E 0 j) := by rw [mul_same, mul_one]
         _ = f (E 0 j * E j 0) := by rw [h₁]
         _ = f (E 0 0) := by rw [mul_same, mul_one]
     have H2 : ∀ (i j : Fin (n + 1)), (i ≠ j) → f (E i j) = 0 := by
       intro i j hne
       calc
-        f (E i j) = f (E i 0 * E 0 j) := by rw [mul_same, mul_one]
+        f (E i j)
+        _ = f (E i 0 * E 0 j) := by rw [mul_same, mul_one]
         _ = f (E 0 j * E i 0) := by rw [h₁]
         _ = f (0) := by rw [mul_of_ne 0 j 1 hne.symm 1] -- rw [E_mul_E_ne hne.symm]
         _ = 0 := by simp only [map_zero]
     have H3 : f (A) = f (E 0 0) * trace A := by
       calc
-        f (A) = f (∑ i : Fin (n + 1), ∑ j : Fin (n + 1), (A i j) • E i j) := by sorry
+        f (A)
+        _ = f (∑ i : Fin (n + 1), ∑ j : Fin (n + 1), (A i j) • E i j) := by
+          apply congrArg
+          simp_rw [tmp2]
+          exact matrix_eq_sum_std_basis A
+
         _ = ∑ i : Fin (n + 1), ∑ j : Fin (n + 1), (A i j) * f (E i j) := by
           rw [map_sum]
           simp_rw [map_sum, SMulHomClass.map_smul]
           rfl
         _ = ∑ i : Fin (n + 1), (A i i) * f (E i i) := by sorry
         _ = ∑ i : Fin (n + 1), (A i i) * f (E 0 0) := by simp_rw [H1]
-        _ = f (E 0 0) * trace A := by sorry --Finset.sum_mul_distrib
-    have H4 : (n + 1) * f (E 0 0) = n + 1 := by
-      calc
-        (n + 1) * f (E 0 0) = f ((n + 1) • E 0 0) := by sorry
-        _ = f (∑ i : Fin (n + 1) , E 0 0) := by sorry
+        _ = f (E 0 0) * (∑ i : Fin (n + 1), (A i i)) := by rw [← Finset.sum_mul, mul_comm]
+        _ = f (E 0 0) * trace A := by rfl
+    have H4 : (↑(n + 1) : ℝ) * f (E 0 0) = n + 1 := by
+            calc
+        ↑(n + 1) * f (E 0 0)
+        _ = f ((↑(n + 1) : ℝ) • E 0 0) := by exact LinearMap.map_smul' f ↑(n + 1) (E 0 0) |>.symm
+        _ = f (∑ i : Fin (n + 1) , E 0 0) := by
+
+          sorry
+          done
         _ = ∑ i : Fin (n + 1), f (E i i) := by sorry
-        _ = f (∑ i : Fin (n + 1), E i i) := by sorry
-        _ = f (1) := by sorry
-        _ = n + 1 := by sorry
+        _ = f (∑ i : Fin (n + 1), E i i) := by exact (map_sum f (fun x => E x x) Finset.univ).symm
+        _ = f 1 := by rw [tmp1]
+        _ = succ n := by rw [h₂]
+        _ = n + 1 := by rw [succ_eq_add_one, cast_add, cast_one]
     have H5 : f (E 0 0) = 1 := by
       sorry
     simp [H5] at H3

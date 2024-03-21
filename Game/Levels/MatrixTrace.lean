@@ -1,4 +1,4 @@
-import Game.Levels.Trace.BossLevel
+import Game.Levels.MatrixTrace.L03_Characterize
 
 World "Trace"
 Title "Trace"
