@@ -7,7 +7,7 @@ import Mathlib.LinearAlgebra.Trace
 
 import Mathlib
 
-notation R"^"n" × "m => Matrix (Fin n) (Fin m) R
+notation R"^("n"×"m")" => Matrix (Fin n) (Fin m) R
 
 World "Trace"
 Level 1
@@ -51,8 +51,27 @@ lemma E_mul_E_ne {n : ℕ} {i j k l : Fin n} (h : j ≠ k) :
     E i j * E k l = 0 := by
   exact mul_of_ne i j 1 h 1
 
-lemma tmp1 {n : ℕ} : ∑ i : Fin (n + 1), E i i = 1 := by
-  sorry
+lemma tmp0 {n : ℕ} {i : Fin n} :
+    E i i = stdBasisMatrix i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
+  rw [one_apply_eq]
+
+lemma tmp1 {n : ℕ} : ∑ i : Fin (n), E i i = 1 := by
+  unfold E
+  rw [matrix_eq_sum_std_basis (1 : Matrix (Fin n) (Fin n) ℝ)]
+  simp_rw [tmp0]
+  symm
+  calc ∑ i : Fin n, ∑ j : Fin n, stdBasisMatrix i j ((1 : Matrix (Fin n) (Fin n) ℝ) i j)
+  _ = ∑ i : Fin n, ∑ j : Fin n, stdBasisMatrix i j (if i = j then 1 else 0) := rfl
+  _ = ∑ i : Fin n, ∑ j : Fin n, (if i = j then stdBasisMatrix i j 1 else 0) := by
+    congr
+    funext i
+    congr
+    funext j
+    split
+    · simp
+    · simp
+  _ = ∑ i : Fin n, stdBasisMatrix i i 1 := by simp
+  _ = ∑ x : Fin n, stdBasisMatrix x x ((1 : Matrix (Fin n) (Fin n) ℝ) x x) := by simp
 
 lemma tmp2 {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) (i j) :
     A i j • E i j = stdBasisMatrix i j (A i j) := by

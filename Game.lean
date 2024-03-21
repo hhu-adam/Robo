@@ -9,7 +9,7 @@ import Game.Levels.Predicate
 import Game.Levels.Proposition
 import Game.Levels.SetTheory
 import Game.Levels.Sum
-import Game.Levels.Trace
+import Game.Levels.MatrixTrace
 
 -- Temporary Worlds that aren't yet fleshed out
 import Game.Levels.NewStuff

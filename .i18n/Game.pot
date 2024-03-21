@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Mar 21 15:38:04 2024\n"
+"POT-Creation-Date: Thu Mar 21 17:17:07 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4272,6 +4272,31 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 ""
 msgstr ""
 
+#: Game.Levels.MatrixTrace.L03_Characterize
+msgid "Trace"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L03_Characterize
+msgid "\n"
+"The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:\n"
+"1. It is linear, witnessed by `traceLinear`.\n"
+"2. The trace of a identity matrix is the dimension of the matrix, i.e.\n"
+"`trace (1 : Matrix α α ℝ) = Fintype.card α`.\n"
+"3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.\n"
+"\n"
+"We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace
+msgid "Trace"
+msgstr ""
+
+#: Game.Levels.MatrixTrace
+msgid "\n"
+""
+msgstr ""
+
 #: Game.Levels.NewStuff.RealUncountable_01
 msgid "überabzählbare reele Zahlen"
 msgstr ""
@@ -4387,7 +4412,7 @@ msgid "\n"
 "\n"
 "## Credits\n"
 "\n"
-"* **Creators:** Jon Eugster, Alexander Bentkamp, Marcus Zibrowius\n"
+"* **Creators:** Jon Eugster, Alexander Bentkamp, Marcus Zibrowius, Sina Hazratpour\n"
 "* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n"
 "* **Illustrationen:** Dušan Pavlić\n"
 "\n"
