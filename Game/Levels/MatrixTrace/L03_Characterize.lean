@@ -10,7 +10,7 @@ import Mathlib.LinearAlgebra.Trace
 set_option tactic.hygienic false
 
 World "Trace"
-Level 1
+Level 3 -- boss level
 
 Title "Trace"
 
