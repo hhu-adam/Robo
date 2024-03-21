@@ -75,7 +75,7 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
     rw [hA, f.map_zero]
   · have H5 : f (E 0 0) = 1 := by
       sorry
-    have H6 : ∀ i j, i ≠ j → f (E i j) = 1 := by
+    have H6 : ∀ i j, i ≠ j → f (E i j) = 0 := by
       -- is this true?
       sorry
     have H1 : ∀ (j : Fin (n + 1)),  f (E j j) = f (E 0 0) := by
