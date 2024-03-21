@@ -73,7 +73,12 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
     have hA : A = 0 := by
       apply Subsingleton.elim
     rw [hA, f.map_zero]
-  · have H1 : ∀ (j : Fin (n + 1)),  f (E j j) = f (E 0 0) := by
+  · have H5 : f (E 0 0) = 1 := by
+      sorry
+    have H6 : ∀ i j, i ≠ j → f (E i j) = 1 := by
+      -- is this true?
+      sorry
+    have H1 : ∀ (j : Fin (n + 1)),  f (E j j) = f (E 0 0) := by
       intro j
       calc
         f (E j j)
@@ -102,7 +107,7 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
         _ = ∑ i : Fin (n + 1), (A i i) * f (E i i) := by
           congr
           ext i
-          -- That seems wrong
+          simp_rw [H1, H5, mul_one]
           sorry
         _ = ∑ i : Fin (n + 1), (A i i) * f (E 0 0) := by simp_rw [H1]
         _ = f (E 0 0) * (∑ i : Fin (n + 1), (A i i)) := by rw [← Finset.sum_mul, mul_comm]
@@ -124,7 +129,5 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
         _ = f 1 := by rw [tmp1]
         _ = succ n := by rw [h₂]
         _ = n + 1 := by rw [succ_eq_add_one, cast_add, cast_one]
-    have H5 : f (E 0 0) = 1 := by
-      sorry
     simp [H5] at H3
     assumption
