@@ -67,9 +67,6 @@ lemma tmp3 {n m : ℕ}
 Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     ↑f = trace := by
-
-  have H5 : ∀ i j, f (E i j) = 1 := by
-    sorry
   funext A
   rcases n
   · simp
@@ -105,7 +102,6 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
         _ = ∑ i : Fin (n + 1), (A i i) * f (E i i) := by
           congr
           ext i
-          simp_rw [H5, mul_one]
           -- That seems wrong
           sorry
         _ = ∑ i : Fin (n + 1), (A i i) * f (E 0 0) := by simp_rw [H1]
@@ -123,11 +119,12 @@ Statement linearMap_eq_trace {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[�
           rw [tmp3]
           congr
           ext i
-          rw [H5, H5]
+          rw [H1]
         _ = f (∑ i : Fin (n + 1), E i i) := by exact (map_sum f (fun x => E x x) Finset.univ).symm
         _ = f 1 := by rw [tmp1]
         _ = succ n := by rw [h₂]
         _ = n + 1 := by rw [succ_eq_add_one, cast_add, cast_one]
-
+    have H5 : f (E 0 0) = 1 := by
+      sorry
     simp [H5] at H3
     assumption
