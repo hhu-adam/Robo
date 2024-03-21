@@ -11,6 +11,9 @@ import Game.Levels.Function.L09_Inverse
 World "Function"
 Title "Abbildungen"
 
+Image "images/FullSizeOriginals/Robo.png"
+
+
 Introduction "
 Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf
 eine Insel komplett mit Wasser bedeckt zu sein scheint.

@@ -16,7 +16,7 @@ import Game.Levels.Proposition.L13_Summary
 World "Proposition"
 Title "Logo"
 
-Image "images/planet_logos.png"
+Image "images/FullSizeOriginals/QueenOfLogic.png"
 
 Introduction "
 Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit

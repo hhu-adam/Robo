@@ -8,6 +8,8 @@ import Game.Levels.Contradiction.L06_Summary
 World "Contradiction"
 Title "Spinoza"
 
+Image "images/FullSizeOriginals/Spinonza.png"
+
 Introduction "
 **Robo**:  Ich glaube, das ist Spinoza, einer der ganz wenigen Asteroiden vom Type QED. Schnell. Wir müssen uns ein bisschen beeilen, sonst verpassen wir ihn.
 

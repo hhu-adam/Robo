@@ -14,6 +14,8 @@ import Game.Levels.Implication.L12_Summary
 World "Implication"
 Title "Implis"
 
+Image "images/FullSizeOriginals/Implication.png"
+
 Introduction
 "
 Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Planeten, der ebenfalls
