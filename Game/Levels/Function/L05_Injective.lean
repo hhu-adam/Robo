@@ -2,7 +2,7 @@ import Game.Metadata
 
 World "Function"
 Level 5
-Title ""
+Title "Monotone Funktionen"
 
 Introduction
 "
@@ -14,7 +14,6 @@ open Set Function
 Statement :
     let f := fun (n : ℤ) ↦ n^3 + (n + 3)
     Injective f := by
-  intro f
   Hint "
     **Du**: Hmm, das ist etwas schwieriger…
 
@@ -42,8 +41,25 @@ Statement :
     Hint (hidden := true) "**Du**: Ist das nicht ne Trivialität? Warte mal!"
     trivial
   · Hint "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
+    Hint (hidden := true) "
+      **Du**: oder …?
+
+      **Robo**: Doch, doch. Schau mal mit `unfold` hinein in die Definition.
+    "
     intro a b
     simp
+
+/-- Dieses Lemma sagt `StrictMono f → Injective f`. -/
+TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"
+
+/-- Für ungerades `n` is `x ↦ x ^ n` strikt monoton.
+
+*Bemerkung*: Das Lemma ist im namespace `Odd`, damit man `hn.strictMono_pow` für den
+Beweis `hn : Odd n` schreiben könnte. -/
+TheoremDoc Odd.strictMono_pow as "Odd.strictMono_pow" in "Function"
+
+/-- Wenn `f,g` beide strikt monoton sind, dann ist es `f + g` auch. -/
+TheoremDoc StrictMono.add as "StrictMono.add" in "Function"
 
 NewDefinition Injective
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow

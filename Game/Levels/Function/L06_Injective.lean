@@ -3,7 +3,7 @@ import Game.Metadata
 World "Function"
 Level 6
 
-Title "Injektive"
+Title "Nicht Injektiv"
 
 Introduction
 "
@@ -11,11 +11,8 @@ Weiterirrend kommt ihr an eine Verzweigung.
 
 **Robo**: Sieht beides gleich aus.
 
-Ein paar Schritte in den linken Korridor hinein seht ihr auf dem Boden ein Blatt mit Gekritzel:
+Ein paar Schritte in den linken Korridor hinein seht ihr auf dem Boden ein Blatt mit Gekritzel.
 
-```
-def f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
-```
 
 **Du**: Hier haben wir wieder eine stückweise Funktion
 
@@ -32,10 +29,8 @@ Darunter steht in leicht leuchtender Schrift:
 open Function
 
 Statement :
-    let f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1
+    let f : ℕ → ℕ := fun n ↦ if Even n then n^2 else n+1;
     ¬ Injective (f + f) := by
-  intro f
-  unfold Injective
   Hint "
     **Robo**: Das ist sicher ein Hinweis.
 
@@ -45,6 +40,8 @@ Statement :
 
     **Du**: Darüber haben wir doch mal was gelernt…"
   Hint (hidden := true) "**Robo**: Das war `push_neg`."
+  unfold Injective
+  Hint (hidden := true) "**Robo**: Das war `push_neg`."
   push_neg
   Hint "
     **Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?
@@ -52,7 +49,7 @@ Statement :
     **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   use 2
   use 3
-  decide
+  trivial
 
 TheoremTab "Function"
 

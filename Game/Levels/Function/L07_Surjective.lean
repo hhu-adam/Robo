@@ -20,7 +20,6 @@ open Function
 Statement :
     let f := fun (n : ℤ) ↦ n + 1
     Surjective f := by
-  intro f
   Hint "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.
 
   **Du**: Dann kann ich das auch einfach wie Quantifier behandeln?
@@ -28,6 +27,9 @@ Statement :
   **Robo**: Schieß drauf los!"
   intro y
   use y-1
+  Hint (hidden := true) "
+    **Du**: das is doch eigentlich ganz einfach… Kann man das denn
+    noch weiter vereinfachen?"
   simp
 
 NewDefinition Function.Surjective

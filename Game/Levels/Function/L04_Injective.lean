@@ -3,7 +3,7 @@ import Game.Metadata
 World "Function"
 Level 4
 
-Title ""
+Title "Injektivität"
 
 Introduction
 "
@@ -12,15 +12,13 @@ Ihr läuft durch verschiedenste Gänge der Bibliothek, allesamt mit Büchern ent
 **Du**: Wenn wir wüssten, dass nur ein möglicher Weg hierhin führt, könnten wir
 ausschliessen, dass wir im Kreis laufen.
 
-Plötzlich begegnet ihr einem älteren Wesen mit Fakel. Auf die Frage antwortet es mit
+Plötzlich begegnet ihr einem älteren Wesen mit Fakel. Auf die Frage antwortet es mit folgendem:
 "
 open Set Function
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 3
     Injective f := by
-  Hint "**Du**: Gleich einmal das `let` in die Annahmen rauf!"
-  intro f
   Hint "
     **Robo**: `Injective` ist als `∀ \{a b : U}, f a = f b → a = b`
     definiert, also kannst du mit `intro` anfangen.
@@ -37,7 +35,11 @@ Statement :
     simp at h
     assumption
   Hint (hidden := true) "**Du**: Kann man das wohl vereinfachen?"
-  simp
+  Branch
+    simp
+  intro ha
+  simp at ha
+  assumption
 
 NewDefinition Function.Injective
 TheoremTab "Function"

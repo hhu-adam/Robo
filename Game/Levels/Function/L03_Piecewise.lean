@@ -5,7 +5,7 @@ import Game.Metadata
 World "Function"
 Level 3
 
-Title "Komposition"
+Title "Stückweise Definition"
 
 Introduction
 "
@@ -21,15 +21,8 @@ Statement :
     let g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
     f ∘ g = g ∘ f := by
   Hint "
-    **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition."
-  Hint (hidden := true) "
-    **Du**: So viele Zeichen…
+    **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.
 
-    **Robo**: Die beiden `let` solltest du mit `intro f g` in die Annahmen raufnehmen,
-    dann ists etwas übersichtlicher!
-    "
-  intro f g
-  Hint "
     **Du**: Also, ich soll zeigen, dass die beiden vertauschbar sind?
 
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
@@ -55,7 +48,7 @@ Statement :
     rw [if_pos h, if_pos h]
     ring
   · Hint "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
-    Hint "**Robo**: `if_neg`, genau!"
+    Hint (hidden := true) "**Robo**: `if_neg`, genau!"
     rw [if_neg h, if_neg h]
 
 Conclusion
@@ -64,7 +57,23 @@ Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den
 Durchgang frei.
 "
 
-NewTactic funext simp_rw linarith
+NewTactic funext
 
-NewTheorem not_le if_pos if_neg
+/--
+Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert
+`rw [if_pos h]` reduziert eine Aussage `if A then B else C` zu `B`.
+
+Umgekehrt kann man `if_neg` verwenden wenn `h : ¬ A`.
+-/
+TheoremDoc if_pos as "if_pos" in "Logic"
+
+/--
+Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert
+`rw [if_neg h]` reduziert eine Aussage `if A then B else C` zu `C`.
+
+Umgekehrt kann man `if_pos` verwenden wenn `h : A`.
+-/
+TheoremDoc if_neg as "if_neg" in "Logic"
+
+NewTheorem if_pos if_neg
 TheoremTab "Logic"

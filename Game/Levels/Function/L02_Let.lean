@@ -1,7 +1,5 @@
 import Game.Metadata
 
-
-
 World "Function"
 Level 2
 
@@ -15,30 +13,21 @@ Ihr macht euch auf Richtung Bibliothek entlang kleiner Pfade zwischen verschiede
 aber wie kann ich der einen Namen geben?
 
 **Robo**: Wenn jemand hier lokal eine Funktion definiert, werden die dir
-`let f := fun (x : ℤ) ↦ x - 1; …` vor die Aussage schreiben.
+`f : ℤ → ℤ := fun x ↦ x - 1; …` als Objekt mitgeben.
 
 **Robo**: Im Beweis hingegen, kannst du mit `let f := fun (x : ℤ) ↦ x - 1` dir selbst eine
 temporäre Definition machen.
-
-**Du**: Ohne `;`?
-
-**Robo**: Ja, hier im Beweis ist das `;` nicht nötig weil du ja einen Schritt nach dem anderen
-auf neue Zeilen schreibst. Komm, ich mache dir einmal ein Beispiel:
 "
 
 open Function
 
-Statement (x : ℤ) :
-    let f : ℤ → ℤ := fun x ↦ x + 4
-    ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 1 := by
-  Hint "
-    **Du**: Das sieht etwas unleserlich aus, wieso steht das `f` nicht bei den Annahmen oben?
+--set_option pp.all true
 
-    **Robo**: Mit `intro f` kannst du genau das erreichen!"
-  intro f
+Statement (x : ℤ) :
+    let f : ℤ → ℤ := fun x ↦ x + 5
+    ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 2 := by
   Hint "
-    **Du**: Das sieht schon viel besser aus!
-    Ist `g ∘ {f}` Komposition von Funktionen?
+    **Du**: Ist `g ∘ {f}` Komposition von Funktionen?
 
     **Robo**: Richtig! Das schreibt man mit `\\comp`.
 
@@ -62,11 +51,20 @@ Statement (x : ℤ) :
     Lemma auch."
   Branch
     simp
+    Hint (hidden := true) "
+      **Robo**: Das sieht nach einem Fall für `ring` aus."
+    ring
   rw [comp_apply]
-  Hint "
-    **Robo**: Wie schon gehabt hat `ring` Schwierigkeiten, Definitionen zu öffnen.
-    Du kannst mit `unfold f` oder `rw [f]` nachhelfen."
+  Hint (hidden := true) "
+    **Robo**: `ring` sieht durch lokale Definitionen wie
+    `{f}` und `{g}` hindurch,
+    du kannst es also direkt benützen."
   ring
+
+/--
+Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
+-/
+TheoremDoc Function.comp_apply as "comp_apply" in "Function"
 
 NewTactic «let»
 NewTheorem Function.comp_apply

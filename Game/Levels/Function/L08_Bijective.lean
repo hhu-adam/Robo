@@ -2,8 +2,7 @@ import Game.Metadata
 
 World "Function"
 Level 8
-
-Title ""
+Title "Bijektivität"
 
 Introduction
 "
@@ -17,11 +16,10 @@ open Function
 Statement :
     let f := fun (n : ℤ) ↦ n + 1
     Bijective f := by
-  intro f
   Hint "
-  **Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.
+    **Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.
 
-  **Du**: Dann ist das ja ganz simpel!"
+    **Du**: Dann ist das ja ganz simpel!"
   unfold Bijective
   constructor
   intro a b
@@ -34,5 +32,7 @@ NewDefinition Function.Bijective
 TheoremTab "Function"
 
 Conclusion
-"Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und
-zeigt euch den Weg nach draußen."
+"
+Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und
+zeigt euch den Weg nach draußen.
+"
