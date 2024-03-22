@@ -19,7 +19,7 @@ Introduction
 
 open Nat Matrix BigOperators StdBasisMatrix
 
--- Not used later on in our proofs, but possibly useful and can be safely removed, or given as a hint
+-- Not used later on, can be safely removed, or given as a hint
 lemma tmp0 {n : ℕ} {i : Fin n} :
     E i i = stdBasisMatrix i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
   rw [one_apply_eq]

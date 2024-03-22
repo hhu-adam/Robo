@@ -14,7 +14,7 @@ Title "Trace"
 
 Introduction
 "
-In this level, we will show that a linear functional `f` on the space of matrices which kills all commutators also kills all off-diagonal elementary basis matrices.
+
 "
 
 open Nat Matrix BigOperators StdBasisMatrix
@@ -22,7 +22,7 @@ open Nat Matrix BigOperators StdBasisMatrix
 -- H2
 lemma apply_ebasis_off_diag {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin n.succ ), (i ≠ j) → f (E i j) = 0 := by
+    ∀ (i j : Fin (n + 1)), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
   trans f (E i 0 * E 0 j)
   · rw [mul_same, mul_one]

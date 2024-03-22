@@ -15,12 +15,11 @@ Title "Trace"
 
 Introduction
 "
-A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills all commutators and moreover satisfies `f(1) = n` has the property that `f(E 0 0) = 1`.
+
 "
 
 open Nat Matrix BigOperators StdBasisMatrix
 
-#check commutator
 
 lemma apply_ebasis_00 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
@@ -47,6 +46,15 @@ lemma apply_ebasis_00 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ
     · rw [← map_sum f (fun x => E x x) Finset.univ]
       rw [ebasis_diag_sum_eq_one]
       simp only [h₂]
+
+
+
+#check nat_mul_inj'
+#check Nat.cast_injective
+
+example {n : ℕ} [NeZero n] (a : ℝ) (h : n * a = n)  : a = 1 := by
+  rw [nat_mul_inj' (h.trans (mul_one (n : ℝ)).symm)]
+  exact NeZero.ne n
 
 lemma tmp7 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
