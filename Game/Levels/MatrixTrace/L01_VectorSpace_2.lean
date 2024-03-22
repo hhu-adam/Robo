@@ -79,4 +79,4 @@ Statement FirstColumnSumZero'
     }
 
 NewTheorem Finset.mul_sum zero_add Matrix.add_apply
-NewTactic change refine exact
+NewTactic change refine
