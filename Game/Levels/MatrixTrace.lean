@@ -1,7 +1,7 @@
-import Game.Levels.MatrixTrace.L08_Characterize
+import Game.Levels.MatrixTrace.L01_VectorSpace
 
-World "Trace"
-Title "Trace"
+World "Matrix"
+Title "Matrix"
 
 -- Image "images/FullSizeOriginals/Robo.png"
 
