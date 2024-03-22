@@ -5,7 +5,7 @@ import Mathlib.Data.Real.Basic
 
 import Game.Levels.Sum
 
-import Game.MetaData.StructInstWithHoles
+import Game.Metadata.StructInstWithHoles
 
 set_option tactic.hygienic false
 
@@ -35,12 +35,18 @@ def first_column_sum_zero {n : ℕ} [NeZero n] : Set (Matrix (Fin n) (Fin n) ℝ
   fun A => ∑ i, A i 0 = 0
 
 def FirstColumnSumZero {n : ℕ} [NeZero n] : Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) where
-  carrier := fun A => ∑ i, A i 0 = 0
+  carrier := {A | ∑ i, A i 0 = 0}
   add_mem' := by
     intro A B hA hB
     change (∑ i, (A + B) i 0 ) = 0
     simp [add_apply A B]
     rw [sum_add_distrib]
     rw [hA, hB, zero_add]
-  zero_mem' := sorry
-  smul_mem' := sorry
+  zero_mem' := by
+    simp
+  smul_mem' := by
+    simp
+    intro c A hA
+    rw [← Finset.mul_sum]
+    rw [hA]
+    simp
