@@ -33,50 +33,69 @@ def first_column_sum_zero' {n : ℕ} [NeZero n] : Set (Matrix (Fin n) (Fin n) �
   fun A => ∑ i, A i 0 = 0
 
 Statement FirstColumnSumZero'
+    (preample := refine { carrier := M, ?..})
     {n : ℕ} [NeZero n] :
     let M := {A : Matrix (Fin n) (Fin n) ℝ | ∑ i, A i 0 = 0}
     Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) := by
-  Template
-    exact {
-      carrier := M,
-      add_mem' := by
-        Hole
-          intro A B hA hB
-          Hint "`change (∑ i, (A + B) i 0 ) = 0`"
-          change (∑ i, (A + B) i 0 ) = 0
-          Hint "`simp [add_apply A B]`"
-          simp [add_apply A B]
-          Hint "`rw [sum_add_distrib]`"
-          rw [sum_add_distrib]
-          Hint "`rw [hA, hB, zero_add]`"
-          rw [hA, hB, zero_add]
-      zero_mem' := by
-        Hole
-          Hint "somwhat ugly…
+  Hint "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:
 
-          This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.
+  * Abgeschlossenheit unter `+`
+  * Enthält `0`
+  * Abgeschlossenheit unter `•`.
 
-          here we show that `0 ∈ (M, +)` as a submonoid.
+  Wir fangen mit dem ersten an:
 
-          `simp`"
-          simp
-      smul_mem' := by
-        Hole
-          Hint "Oh god, is this ugly!
+  `intro A B hA hB`
+  "
+  · intro A B hA hB
+    Hint "`change (∑ i, (A + B) i 0 ) = 0`"
+    change (∑ i, (A + B) i 0 ) = 0
+    Hint "`simp [add_apply A B]`"
+    simp [add_apply A B]
+    Hint "`rw [sum_add_distrib]`"
+    rw [sum_add_distrib]
+    Hint "`rw [hA, hB, zero_add]`"
+    rw [hA, hB, zero_add]
+  · Hint "somwhat ugly…
 
-          similar reason as above, a simple `dsimp only` also brings this into a readably form
+    This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.
 
-          `simp`"
-          simp
-          Hint "`intro c A hA`"
-          intro c A hA
-          Hint "`rw [← Finset.mul_sum]`"
-          rw [← Finset.mul_sum]
-          Hint "`rw [hA]`"
-          rw [hA]
-          Hint "`simp`"
-          simp
-    }
+    here we show that `0 ∈ (M, +)` as a submonoid.
+
+    `simp`"
+    simp
+  · Hint "Oh god, is this ugly!
+
+    similar reason as above, a simple `dsimp only` also brings this into a readably form
+
+    `simp`"
+    simp
+    Hint "`intro c A hA`"
+    intro c A hA
+    Hint "`rw [← Finset.mul_sum]`"
+    rw [← Finset.mul_sum]
+    Hint "`rw [hA]`"
+    rw [hA]
+    Hint "`simp`"
+    simp
+
+
+  -- exact {
+  -- carrier := {A | ∑ i, A i 0 = 0}
+  -- add_mem' := by
+  --   intro A B hA hB
+  --   change (∑ i, (A + B) i 0 ) = 0
+  --   simp [add_apply A B]
+  --   rw [sum_add_distrib]
+  --   rw [hA, hB, zero_add]
+  -- zero_mem' := by
+  --   simp
+  -- smul_mem' := by
+  --   simp
+  --   intro c A hA
+  --   rw [← Finset.mul_sum]
+  --   rw [hA]
+  --   simp }
 
 NewTheorem Finset.mul_sum zero_add Matrix.add_apply
 NewTactic change refine
