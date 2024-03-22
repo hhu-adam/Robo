@@ -33,7 +33,7 @@ def first_column_sum_zero' {n : ℕ} [NeZero n] : Set (Matrix (Fin n) (Fin n) �
   fun A => ∑ i, A i 0 = 0
 
 Statement FirstColumnSumZero'
-    (preample := refine { carrier := M, ?..})
+    (preample := refine { carrier := M, ?..} <;> dsimp)
     {n : ℕ} [NeZero n] :
     let M := {A : Matrix (Fin n) (Fin n) ℝ | ∑ i, A i 0 = 0}
     Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) := by
