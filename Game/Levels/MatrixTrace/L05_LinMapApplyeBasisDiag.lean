@@ -19,6 +19,7 @@ Introduction
 
 open Nat Matrix BigOperators StdBasisMatrix
 
+-- H1
 lemma apply_ebasis_diag {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h : ∀ A B, f (A * B) = f (B * A)) (j : Fin n.succ) :
     f (E j j) = f (E 0 0) := by

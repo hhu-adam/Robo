@@ -1,9 +1,9 @@
 -- import Game.Metadata
 import GameServer.Commands
 
-import Game.Levels.MatrixTrace.L03_eBasisSpan
+import Game.Levels.MatrixTrace.L05_LinMapApplyeBasisDiag
+import Game.Levels.MatrixTrace.L06_LinMapApplyeBasisOffDiag
 
-import Mathlib
 
 World "Trace"
 Level 1
@@ -26,32 +26,12 @@ open Nat Matrix BigOperators StdBasisMatrix
 set_option relaxedAutoImplicit false
 set_option autoImplicit false
 
-
 /- Statements about linear maps and sums. -/
 
 lemma tmp3 {n m : ℕ}
     (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ) (A : Matrix (Fin n) (Fin n) ℝ) :
     f (∑ _i : Fin m, A) = ∑ _i : Fin m, f A := by
   exact map_sum f (fun _x => A) Finset.univ
-
-/- Exercises specific about our `f` -/
-
-lemma H1 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
-    (h : ∀ A B, f (A * B) = f (B * A)) (j : Fin n.succ) :
-    f (E j j) = f (E 0 0) := by
-  trans f (E j 0 * E 0 j)
-  · rw [mul_same, mul_one]
-  · rw [h, mul_same, mul_one]
-
-lemma H2 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
-    (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin (n + 1)), (i ≠ j) → f (E i j) = 0 := by
-  intro i j hne
-  trans f (E i 0 * E 0 j)
-  · rw [mul_same, mul_one]
-  · rw [h₁]
-    rw [mul_of_ne 0 j 1 hne.symm 1] -- rw [E_mul_E_ne hne.symm]
-    simp
 
 lemma H4 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
