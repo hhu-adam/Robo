@@ -34,19 +34,73 @@ open Nat Matrix BigOperators StdBasisMatrix Finset
 def first_column_sum_zero {n : ℕ} [NeZero n] : Set (Matrix (Fin n) (Fin n) ℝ) :=
   fun A => ∑ i, A i 0 = 0
 
-def FirstColumnSumZero {n : ℕ} [NeZero n] : Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) where
-  carrier := {A | ∑ i, A i 0 = 0}
-  add_mem' := by
-    intro A B hA hB
+Statement FirstColumnSumZero {n : ℕ} [NeZero n] :
+    let M := {A : Matrix (Fin n) (Fin n) ℝ | ∑ i, A i 0 = 0}
+    Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) := by
+  Hint "*Diesen 1. Schritt würde ich vorschlagen im Spiel als `Preample` zu verstecken,
+  so dass er automatisch passiert.*
+
+  `refine \{ carrier := M, ?..}`"
+  refine { carrier := M, ?..}
+  Hint "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:
+
+  * Abgeschlossenheit unter `+`
+  * Enthält `0`
+  * Abgeschlossenheit unter `•`.
+
+  Wir fangen mit dem ersten an:
+
+  `intro A B hA hB`
+  "
+  · intro A B hA hB
+    Hint "`change (∑ i, (A + B) i 0 ) = 0`"
     change (∑ i, (A + B) i 0 ) = 0
+    Hint "`simp [add_apply A B]`"
     simp [add_apply A B]
+    Hint "`rw [sum_add_distrib]`"
     rw [sum_add_distrib]
+    Hint "`rw [hA, hB, zero_add]`"
     rw [hA, hB, zero_add]
-  zero_mem' := by
+  · Hint "somwhat ugly…
+
+    This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.
+
+    here we show that `0 ∈ (M, +)` as a submonoid.
+
+    `simp`"
     simp
-  smul_mem' := by
+  · Hint "Oh god, is this ugly!
+
+    similar reason as above, a simple `dsimp only` also brings this into a readably form
+
+    `simp`"
     simp
+    Hint "`intro c A hA`"
     intro c A hA
+    Hint "`rw [← Finset.mul_sum]`"
     rw [← Finset.mul_sum]
+    Hint "`rw [hA]`"
     rw [hA]
+    Hint "`simp`"
     simp
+
+
+  -- exact {
+  -- carrier := {A | ∑ i, A i 0 = 0}
+  -- add_mem' := by
+  --   intro A B hA hB
+  --   change (∑ i, (A + B) i 0 ) = 0
+  --   simp [add_apply A B]
+  --   rw [sum_add_distrib]
+  --   rw [hA, hB, zero_add]
+  -- zero_mem' := by
+  --   simp
+  -- smul_mem' := by
+  --   simp
+  --   intro c A hA
+  --   rw [← Finset.mul_sum]
+  --   rw [hA]
+  --   simp }
+
+NewTheorem Finset.mul_sum zero_add Matrix.add_apply
+NewTactic change refine
