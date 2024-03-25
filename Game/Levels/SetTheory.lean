@@ -21,7 +21,7 @@ import Game.Levels.SetTheory.L13_Insert
 World "SetTheory"
 Title "Mengenlehre"
 
-Image "images/FullSizeOriginals/Robo.png"
+Image "images/SetTheory.png"
 
 Introduction
 "[Note: von hier an sind die Levels leider noch nicht vollständig. Evt. müsst ihr etwas

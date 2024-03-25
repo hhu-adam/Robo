@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Mar 21 17:17:07 2024\n"
+"POT-Creation-Date: Mon Mar 25 11:46:05 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4272,24 +4272,224 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 ""
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L03_Characterize
-msgid "Trace"
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "Matrix"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L03_Characterize
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "\n"
-"The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:\n"
-"1. It is linear, witnessed by `traceLinear`.\n"
-"2. The trace of a identity matrix is the dimension of the matrix, i.e.\n"
-"`trace (1 : Matrix α α ℝ) = Fintype.card α`.\n"
-"3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.\n"
-"\n"
-"We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.\n"
+"The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
+"In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
 ""
 msgstr ""
 
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "*Diesen 1. Schritt würde ich vorschlagen im Spiel als `Preample` zu verstecken,\n"
+"so dass er automatisch passiert.*\n"
+"\n"
+"`refine { carrier := M, ?..}`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:\n"
+"\n"
+"* Abgeschlossenheit unter `+`\n"
+"* Enthält `0`\n"
+"* Abgeschlossenheit unter `•`.\n"
+"\n"
+"Wir fangen mit dem ersten an:\n"
+"\n"
+"`intro A B hA hB`\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`change (∑ i, (A + B) i 0 ) = 0`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`simp [add_apply A B]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [sum_add_distrib]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [hA, hB, zero_add]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "somwhat ugly…\n"
+"\n"
+"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
+"\n"
+"here we show that `0 ∈ (M, +)` as a submonoid.\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "Oh god, is this ugly!\n"
+"\n"
+"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`intro c A hA`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [← Finset.mul_sum]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [hA]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "\n"
+"The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
+"In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:\n"
+"\n"
+"* Abgeschlossenheit unter `+`\n"
+"* Enthält `0`\n"
+"* Abgeschlossenheit unter `•`.\n"
+"\n"
+"Wir fangen mit dem ersten an:\n"
+"\n"
+"`intro A B hA hB`\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`change (∑ i, (A + B) i 0 ) = 0`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`simp [add_apply A B]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`rw [sum_add_distrib]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`rw [hA, hB, zero_add]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "somwhat ugly…\n"
+"\n"
+"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
+"\n"
+"here we show that `0 ∈ (M, +)` as a submonoid.\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "Oh god, is this ugly!\n"
+"\n"
+"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`intro c A hA`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`rw [← Finset.mul_sum]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`rw [hA]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+msgid "`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "\n"
+"The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
+"In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`change (∑ i, (A + B) i 0 ) = 0`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`simp [add_apply A B]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`rw [sum_add_distrib]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`rw [hA, hB, zero_add]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "somwhat ugly…\n"
+"\n"
+"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
+"\n"
+"here we show that `0 ∈ (M, +)` as a submonoid.\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "Oh god, is this ugly!\n"
+"\n"
+"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
+"\n"
+"`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`intro c A hA`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`rw [← Finset.mul_sum]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`rw [hA]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+msgid "`simp`"
+msgstr ""
+
 #: Game.Levels.MatrixTrace
-msgid "Trace"
+msgid "Matrix"
 msgstr ""
 
 #: Game.Levels.MatrixTrace

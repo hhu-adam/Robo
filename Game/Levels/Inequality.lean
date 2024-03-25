@@ -6,7 +6,7 @@ import Game.Levels.Inequality.L04_Linarith
 World "Inequality"
 Title "Luna"
 
-Image "images/FullSizeOriginals/Moon-Luna.png"
+Image "images/MoonLuna.png"
 
 Introduction "
 Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.

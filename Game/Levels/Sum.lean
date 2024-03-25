@@ -8,7 +8,7 @@ import Game.Levels.Sum.L06_Summary
 World "Sum"
 Title "Babylon"
 
-Image "images/FullSizeOriginals/Babylon.png"
+Image "images/Babylon.png"
 
 
 Introduction "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme

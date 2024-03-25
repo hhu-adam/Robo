@@ -11,7 +11,7 @@ import Game.Levels.Function.L09_Inverse
 World "Function"
 Title "Abbildungen"
 
-Image "images/FullSizeOriginals/Robo.png"
+Image "images/Librarian.png"
 
 
 Introduction "

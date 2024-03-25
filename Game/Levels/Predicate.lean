@@ -14,7 +14,7 @@ import Game.Levels.Predicate.L11_DrinkersParadox
 World "Predicate"
 Title "Quantus"
 
-Image "images/FullSizeOriginals/Quantus.png"
+Image "images/Quantus.png"
 
 Introduction "Auf Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.
 Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.
