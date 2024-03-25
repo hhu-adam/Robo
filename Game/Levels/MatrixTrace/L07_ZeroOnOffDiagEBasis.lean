@@ -1,7 +1,7 @@
 --import Game.Metadata
 import GameServer.Commands
 
-import Game.Levels.MatrixTrace.L03_eBasisSpan
+import Game.Levels.MatrixTrace.L03_EBasisSpan
 
 --import Game.StructInstWithHoles
 
@@ -20,12 +20,12 @@ In this level, we will show that a linear functional `f` on the space of matrice
 open Nat Matrix BigOperators StdBasisMatrix
 
 -- H2
-lemma apply_ebasis_off_diag {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
+lemma zero_on_offdiag_ebasis_of_zero_on_commutator {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin n.succ ), (i ≠ j) → f (E i j) = 0 := by
+    ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
-  trans f (E i 0 * E 0 j)
+  trans f (E i j * E j j)
   · rw [mul_same, mul_one]
   · rw [h₁]
-    rw [mul_of_ne 0 j 1 hne.symm 1]
+    rw [mul_of_ne j j 1 hne.symm 1]
     simp

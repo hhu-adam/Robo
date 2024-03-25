@@ -2,7 +2,7 @@
 import GameServer.Commands
 
 
-import Game.Levels.MatrixTrace.L02_eBasisRescale
+import Game.Levels.MatrixTrace.L02_EBasisRescale
 
 
 
@@ -24,7 +24,7 @@ lemma tmp0 {n : ℕ} {i : Fin n} :
     E i i = stdBasisMatrix i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
   rw [one_apply_eq]
 
-lemma ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin (n + 1), E i i = 1 := by
+lemma ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
   rw [matrix_eq_sum_std_basis 1]
   congr
   ext i r s

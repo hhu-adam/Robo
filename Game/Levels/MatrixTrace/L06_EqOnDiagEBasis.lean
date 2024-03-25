@@ -1,7 +1,7 @@
 --import Game.Metadata
 import GameServer.Commands
 
-import Game.Levels.MatrixTrace.L03_eBasisSpan
+import Game.Levels.MatrixTrace.L03_EBasisSpan
 
 --import Game.StructInstWithHoles
 
@@ -22,7 +22,7 @@ A linear functional `f` on the space of `n × n` matrices which kills all commut
 open Nat Matrix BigOperators StdBasisMatrix
 
 -- H1
-lemma apply_ebasis_diag {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
+lemma eq_on_diag_ebasis_of_zero_on_commutator {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h : ∀ A B, f (A * B) = f (B * A))  :
     ∀ (i j : Fin n), f (E i i) = f (E j j) := by
   intro i j
