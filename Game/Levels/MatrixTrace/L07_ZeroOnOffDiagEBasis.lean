@@ -20,7 +20,7 @@ In this level, we will show that a linear functional `f` on the space of matrice
 open Nat Matrix BigOperators StdBasisMatrix
 
 -- H2
-lemma zero_on_offdiag_ebasis_of_zero_on_commutator {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
+lemma zero_on_offdiag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
     ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne

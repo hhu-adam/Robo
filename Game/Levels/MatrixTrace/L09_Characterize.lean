@@ -21,7 +21,7 @@ The trace as a map from the space of `n × n` matrices to the field of scalars h
 We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix BigOperators StdBasisMatrix Finset
 
 set_option relaxedAutoImplicit false
 set_option autoImplicit false
@@ -34,8 +34,18 @@ set_option autoImplicit false
 
 /- The Statement -/
 
+#check (![] : Matrix (Fin 0) (Fin 0) ℝ) = 0
+
+-- example {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ) : ↑ f = f.toFun := rfl
+
 Statement {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
-    f.toFun = trace := by
+    trace = f := by
   ext A
-  rw [eq_sum_apply_diag_ebasis (zero_on_offdiag_ebasis_of_zero_on_commutator h₁)]
+  rw [eq_sum_apply_diag_ebasis (zero_on_offdiag_ebasis h₁)]
+  rcases n
+  · simp
+  · simp_rw [eq_on_diag_ebasis h₁ _ 0]
+    rw [← sum_mul]
+    rw [one_on_diag_ebasis h₁ h₂ 0]
+    simp [trace]

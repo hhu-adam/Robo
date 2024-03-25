@@ -2,7 +2,7 @@
 import GameServer.Commands
 
 
-import Game.Levels.MatrixTrace.L02_EBasisRescale
+import Game.Levels.MatrixTrace.L02_SmulEBasis
 
 
 
