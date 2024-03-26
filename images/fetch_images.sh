@@ -13,8 +13,10 @@ for filename in ./tmp-download/fullsize/*; do
 
   convert -resize $NEWSIZE $filename $NEWFILE
 
-  echo "copying and reducing $filename to $NEWFILE."
+  echo "Copying and reducing $filename to $NEWFILE."
 
 done
+
+echo "Deleting ./tmp-download."
 
 rm -rf ./tmp-download
