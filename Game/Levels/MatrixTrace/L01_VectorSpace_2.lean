@@ -61,7 +61,7 @@ Statement FirstColumnSumZero'
   · intro A B hA hB
     Hint (hidden := true) "
       A definitionally equal goal is `(∑ i, ({A} + {B}) i 0 ) = 0`.
-      Tactic change can be used to change the goal to this.
+      Tactic `change` can be used to change the goal to this.
       However, strictly speaking, this is not necessary since `simp` sees through such equalities."
     Branch
       change (∑ i, (A + B) i 0 ) = 0
