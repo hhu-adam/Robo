@@ -1,1 +1,3 @@
-All images in this game are under copyright and may not be reused or redistributed beyond this game's context.
+This work © 2024 is licensed under CC BY 4.0
+
+Please consult https://github.com/hhu-adam/Robo-Images for the LICENSING information of these images.
