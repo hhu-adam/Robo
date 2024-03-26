@@ -1,14 +1,7 @@
--- import Game.Metadata
-import GameServer.Commands
-
-import Game.Levels.MatrixTrace.L05_EvalOnEBasis
-import Game.Levels.MatrixTrace.L06_EvalOnEBasis
-import Game.Levels.MatrixTrace.L07_EvalOnEBasis
 import Game.Levels.MatrixTrace.L08_EvalOnEBasis
 
-
 World "Matrix"
-Level 11
+Level 9
 
 Title "Matrix"
 
@@ -25,29 +18,60 @@ We show that these properties characterize the trace, that is any map satisfying
 
 open Nat Matrix BigOperators StdBasisMatrix Finset
 
-set_option relaxedAutoImplicit false
-set_option autoImplicit false
-
-/- Statements about linear maps and sums. -/
-
-
-#check mul_eq_mul_left_iff
-
-
-/- The Statement -/
-
-#check (![] : Matrix (Fin 0) (Fin 0) ℝ) = 0
-
--- example {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ) : ↑ f = f.toFun := rfl
-
-Statement trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
+Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     trace = f := by
+  Hint (hidden := true) "**Du**: Zwei Funktionen sind gleich wenn sie auf
+  allen Elementen gleich sind…
+
+  **Robo**: Das war `ext A`!"
   ext A
-  rw [eq_sum_apply_diag_ebasis (zero_on_offdiag_ebasis h₁)]
+  Hint "**Du**: Hatten wir nicht eben gerade, dass `f {A}` also Summe über `{A} i j * f (E i j)`
+  schreiben kann?
+
+  **Robo**: Was du vorhin bewiesen hast, hies `eq_sum_apply_diag_ebasis`."
+  Branch
+    rw [eq_sum_apply_diag_ebasis (zero_on_offdiag_ebasis h₁)]
+    rcases n
+    · simp
+    · simp_rw [eq_on_diag_ebasis h₁ _ 0] -- we dont need this statement
+      rw [← sum_mul]
+      rw [one_on_diag_ebasis h₁ h₂ 0]
+      simp [trace]
+  rw [eq_sum_apply_diag_ebasis] -- Lvl 5
+  Hint "**Du**: Und jetzt? Stimmt das überhaupt für `n = 0`?
+
+  **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`!
+
+  **Du**: Nah dann kann ich ja mal diesen Fall zuerst machen."
+  Hint (hidden := true) "**Robo**: das war `rcases n`."
   rcases n
-  · simp
-  · simp_rw [eq_on_diag_ebasis h₁ _ 0]
-    rw [← sum_mul]
-    rw [one_on_diag_ebasis h₁ h₂ 0]
-    simp [trace]
+  · Hint (hidden := true) "
+      **Robo**: Den Fall `n = 0` kann sogar ich! Ich wende einfach
+      immer `simp` an und das Betriebsystem gibt ein wohliges Schnurren zurück."
+    simp
+  · Hint "**Du**: Wir hatten doch auch schon dass für unser `{f}` gilt dass `f (E i i) = 1`!
+
+    **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
+    Hint (hidden := true) "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,
+    `rw` kann das nicht.
+
+    **Du**: Ah, und die expliziten Argumente sollte ich wohl auch noch angeben."
+    simp_rw [one_on_diag_ebasis h₁ h₂] -- Lvl 8
+    Hint (hidden := true) "**Du** Jetzt `mul_one`?"
+    simp_rw [mul_one]
+    Hint "**Robo**: Die beiden sind per Definition gleich!"
+    rfl
+  Hint "**Du**: Wo kommt denn das her?
+
+  **Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument
+  ausgelassen, jetzt kannst du es noch nachholen."
+  intro i j hij
+  Hint "**Du**: Robo, wie hies das nochmals, dass unser `{f}` ausserhalb der Diagonale null ist?
+
+  **Robo**: `zero_on_offdiag_ebasis`."
+  apply zero_on_offdiag_ebasis -- Lvl 7
+  assumption
+  assumption
+
+TheoremTab "Matrix"

@@ -1,15 +1,7 @@
---import Game.Metadata
-import GameServer.Commands
-
-import Game.Levels.MatrixTrace.L06_EvalOnEBasis
 import Game.Levels.MatrixTrace.L07_EvalOnEBasis
 
---import Game.StructInstWithHoles
-
-set_option tactic.hygienic false
-
 World "Matrix"
-Level 10
+Level 8
 
 Title "Matrix"
 
@@ -24,7 +16,7 @@ open Nat Matrix BigOperators StdBasisMatrix
 
 #check NeZero
 
-Statement one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
+Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     ∀ i, f (E i i) = 1 := by
   intro i
@@ -53,3 +45,5 @@ Statement one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ
       simp only [h₂]
       simp
   simp
+
+TheoremTab "Matrix"

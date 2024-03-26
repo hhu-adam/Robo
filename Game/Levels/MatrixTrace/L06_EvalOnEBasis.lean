@@ -1,14 +1,7 @@
---import Game.Metadata
-import GameServer.Commands
-
-import Game.Levels.MatrixTrace.L03_EBasisSpan
-
---import Game.StructInstWithHoles
-
-set_option tactic.hygienic false
+import Game.Levels.MatrixTrace.L05_EvalOnEBasis
 
 World "Matrix"
-Level 8
+Level 6
 
 Title "Matrix"
 
@@ -21,10 +14,12 @@ A linear functional `f` on the space of `n × n` matrices which kills all commut
 
 open Nat Matrix BigOperators StdBasisMatrix
 
-Statement eq_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
+Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h : ∀ A B, f (A * B) = f (B * A))  :
     ∀ (i j : Fin n), f (E i i) = f (E j j) := by
   intro i j
   trans f (E i j * E j i)
   · rw [mul_same, mul_one]
   · rw [h, mul_same, mul_one]
+
+TheoremTab "Matrix"

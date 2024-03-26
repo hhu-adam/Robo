@@ -1,14 +1,11 @@
---import Game.Metadata
-import GameServer.Commands
-
-import Game.Levels.MatrixTrace.L01_VectorSpace
+import Game.Levels.MatrixTrace.L03_EBasisSpan
 
 --import Game.StructInstWithHoles
 
 set_option tactic.hygienic false
 
 World "Matrix"
-Level 6
+Level 4
 
 Title "Matrix"
 
@@ -51,3 +48,5 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   rfl
 
 NewTheorem Fintype.card_fin Matrix.trace_one Matrix.trace_smul Matrix.trace_sub
+
+TheoremTab "Matrix"
