@@ -18,6 +18,17 @@ Introduction
 "
 The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.
 In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.
+
+In Lean we provide a submodule structure by filling in the holes of the following structure:
+```
+def FirstColumnSumZero {n : ℕ} [NeZero n] : Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) where
+   carrier := fun A => ∑ i, A i 0 = 0
+   add_mem' := sorry
+   zero_mem' := sorry
+   smul_mem' := sorry
+
+```
+
 "
 
 open Nat Matrix BigOperators StdBasisMatrix Finset
