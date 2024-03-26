@@ -7,10 +7,10 @@ import Game.Levels.MatrixTrace.L03_EBasisSpan
 
 set_option tactic.hygienic false
 
-World "Trace"
-Level 5
+World "Matrix"
+Level 9
 
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -20,7 +20,7 @@ In this level, we will show that a linear functional `f` on the space of matrice
 open Nat Matrix BigOperators StdBasisMatrix
 
 -- H2
-lemma zero_on_offdiag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
+Statement zero_on_offdiag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
     ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne

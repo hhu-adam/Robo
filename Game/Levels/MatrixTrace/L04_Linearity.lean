@@ -7,10 +7,10 @@ import Game.Levels.MatrixTrace.L01_VectorSpace
 
 set_option tactic.hygienic false
 
-World "Trace"
-Level 4
+World "Matrix"
+Level 6
 
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -49,3 +49,5 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   rw [trace_one]
   rw [Fintype.card_fin]
   rfl
+
+NewTheorem Fintype.card_fin Matrix.trace_one Matrix.trace_smul Matrix.trace_sub

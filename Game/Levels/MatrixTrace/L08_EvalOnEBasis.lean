@@ -1,17 +1,17 @@
 --import Game.Metadata
 import GameServer.Commands
 
-import Game.Levels.MatrixTrace.L06_EqOnDiagEBasis
-import Game.Levels.MatrixTrace.L07_ZeroOnOffDiagEBasis
+import Game.Levels.MatrixTrace.L06_EvalOnEBasis
+import Game.Levels.MatrixTrace.L07_EvalOnEBasis
 
 --import Game.StructInstWithHoles
 
 set_option tactic.hygienic false
 
-World "Trace"
-Level 7
+World "Matrix"
+Level 10
 
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -24,7 +24,7 @@ open Nat Matrix BigOperators StdBasisMatrix
 
 #check NeZero
 
-lemma one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
+Statement one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     ∀ i, f (E i i) = 1 := by
   intro i

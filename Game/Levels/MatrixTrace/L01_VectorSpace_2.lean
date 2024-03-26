@@ -48,15 +48,19 @@ Statement FirstColumnSumZero'
   `intro A B hA hB`
   "
   · intro A B hA hB
-    Hint "`change (∑ i, (A + B) i 0 ) = 0`"
-    change (∑ i, (A + B) i 0 ) = 0
-    Hint "`simp [add_apply A B]`"
+    Hint (hidden := true) "
+      A definitionally equal goal is `(∑ i, ({A} + {B}) i 0 ) = 0`.
+      Tactic change can be used to change the goal to this.
+      However, strictly speaking, this is not necessary since `simp` sees through such equalities."
+    Branch
+      change (∑ i, (A + B) i 0 ) = 0
+    Hint (hidden := true) "`add_apply {A} {B}` simplifies the pointwise addition of two matrices."
     simp [add_apply A B]
-    Hint "`rw [sum_add_distrib]`"
+    Hint (hidden := true) "`rw [sum_add_distrib]`"
     rw [sum_add_distrib]
-    Hint "`rw [hA, hB, zero_add]`"
+    Hint (hidden := true) "`rw [{hA}, {hB}, zero_add]`"
     rw [hA, hB, zero_add]
-  · Hint "somwhat ugly…
+  · Hint (hidden := true) "somwhat ugly…
 
     This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.
 
@@ -97,5 +101,5 @@ Statement FirstColumnSumZero'
   --   rw [hA]
   --   simp }
 
-NewTheorem Finset.mul_sum zero_add Matrix.add_apply
+NewTheorem Finset.mul_sum zero_add Finset.sum_add_distrib Matrix.add_apply
 NewTactic change refine

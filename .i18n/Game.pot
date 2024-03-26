@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Mar 25 11:46:05 2024\n"
+"POT-Creation-Date: Tue Mar 26 14:40:56 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2025,7 +2025,7 @@ msgstr ""
 msgid "\n"
 "Auf die Frage hin, ob sie von einem Bibliothek wisse, erzählt euch das kleine Mädchen,\n"
 "dass es auf der Insel nur einen gäbe, aber sie bedrängt euch so mit einer Frage,\n"
-"dass sie euch gar nicht sagt, wo dieser zu finden sei. This is my addition.\n"
+"dass sie euch gar nicht sagt, wo dieser zu finden sei.\n"
 ""
 msgstr ""
 
@@ -4378,11 +4378,14 @@ msgid "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:\n"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`change (∑ i, (A + B) i 0 ) = 0`"
+msgid "\n"
+"A definitionally equal goal is `(∑ i, («{A}» + «{B}») i 0 ) = 0`.\n"
+"Tactic change can be used to change the goal to this.\n"
+"However, strictly speaking, this is not necessary since `simp` sees through such equalities."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`simp [add_apply A B]`"
+msgid "`add_apply «{A}» «{B}»` simplifies the pointwise addition of two matrices."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_2
@@ -4390,7 +4393,7 @@ msgid "`rw [sum_add_distrib]`"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`rw [hA, hB, zero_add]`"
+msgid "`rw [«{hA}», «{hB}», zero_add]`"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_2
@@ -4486,6 +4489,126 @@ msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_VectorSpace_3
 msgid "`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L04_Linearity
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L04_Linearity
+msgid "\n"
+"The trace of a square matrix is the sum of the elements on its main diagonal. It is a linear map from the space of square matrices to the field of scalars. The lineariry is witnessed by the term `traceLinearMap` in Mathlib.\n"
+"\n"
+"In Mathlib, trace is defined as the sum of the entries in the diagonal vector of a matrix:\n"
+"\n"
+"```\n"
+"∑ i, diag A i\n"
+"```\n"
+"\n"
+"where `diag A i = A i i`. You can prove `trace A = ∑ i, A i i` by `rfl`.\n"
+"\n"
+"The trace of a identity matrix is the dimension of the matrix:\n"
+"\n"
+"```\n"
+"trace_one : trace (1 : Matrix α α ℝ) = Fintype.card α\n"
+"```\n"
+"\n"
+"Since `Fin n` has `n` elements, we have:\n"
+"\n"
+"```\n"
+"trace (1 : Matrix (Fin n) (Fin n) ℝ) = n\n"
+"```\n"
+"\n"
+"Use `trace_add` and `trace_sub` are special cases of the linearity of the trace which state that the trace of the sum of two matrices is the sum of their traces, and the trace of the difference of two matrices is the difference of their traces.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L02_SmulEBasis
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L02_SmulEBasis
+msgid "\n"
+"The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0` elsewhere. They are extemely sparse. In below, `E i j` are defined in terms of mathlib's `stdBasisMatrix`.\n"
+"\n"
+"`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere.  `stdBasisMatrix` matrices are closed under scalar multiplication, becasue\n"
+"`c • stdBasisMatrix i j 1 = stdBasisMatrix i j c`, a theorem witnessed by `smul_stdBasisMatrix`.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L05_EvalOnEBasis
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L05_EvalOnEBasis
+msgid "\n"
+"A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills\n"
+"all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`\n"
+"for all `i : Fin n`.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L03_EBasisSpan
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L03_EBasisSpan
+msgid "\n"
+"`stdBasisMatrix i j c` spans the vector space of matrices of a given size. This is witnessed by `matrix_eq_sum_std_basis`. In this level, you will show that the identity matrix is the sum of the matrices `E i i`.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EvalOnEBasis
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EvalOnEBasis
+msgid "\n"
+"The commutator of two matrices is defined as the difference between their product and the product\n"
+"of the matrices in the opposite order, that is the commutator of `A` and `B` is `A * B - B * A`.\n"
+"A linear functional `f` on the space of `n × n` matrices which kills all commutators has the same value on all the diagonal elemantary basis matrices, i.e. `f (E i i) = f (E j j)` for all `i` and `j`.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "\n"
+"In this level, we will show that a linear functional `f` on the space of matrices which kills all commutators also kills all off-diagonal elementary basis matrices.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "\n"
+"A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills\n"
+"all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`\n"
+"for all `i : Fin n`.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "Matrix"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "\n"
+"The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:\n"
+"1. It is linear, witnessed by `traceLinear`.\n"
+"2. The trace of a identity matrix is the dimension of the matrix, i.e.\n"
+"`trace (1 : Matrix α α ℝ) = Fintype.card α`.\n"
+"3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.\n"
+"\n"
+"We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.\n"
+""
 msgstr ""
 
 #: Game.Levels.MatrixTrace

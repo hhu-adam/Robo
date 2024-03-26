@@ -1,14 +1,16 @@
 -- import Game.Metadata
 import GameServer.Commands
 
-import Game.Levels.MatrixTrace.L05_EqOnEBasisDiagSum
-import Game.Levels.MatrixTrace.L08_OneOnDiagEBasis
+import Game.Levels.MatrixTrace.L05_EvalOnEBasis
+import Game.Levels.MatrixTrace.L06_EvalOnEBasis
+import Game.Levels.MatrixTrace.L07_EvalOnEBasis
+import Game.Levels.MatrixTrace.L08_EvalOnEBasis
 
 
-World "Trace"
-Level 1
+World "Matrix"
+Level 11
 
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -38,7 +40,7 @@ set_option autoImplicit false
 
 -- example {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ) : ↑ f = f.toFun := rfl
 
-Statement {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
+Statement trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     trace = f := by
   ext A

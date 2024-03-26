@@ -8,10 +8,10 @@ import Game.Levels.MatrixTrace.L02_SmulEBasis
 
 set_option tactic.hygienic false
 
-World "Trace"
-Level 5
+World "Matrix"
+Level 7
 
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -22,7 +22,7 @@ for all `i : Fin n`.
 
 open Nat Matrix BigOperators StdBasisMatrix Finset
 
-lemma eq_sum_apply_diag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
+Statement eq_sum_apply_diag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
     (h : ∀ i j, i ≠ j → f (E i j) = 0)
     (A : Matrix _ _ ℝ) :
     f A = ∑ i : Fin n, (A i i) * f (E i i) := by

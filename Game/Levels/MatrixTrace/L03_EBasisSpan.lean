@@ -1,15 +1,12 @@
 -- import Game.Metadata
 import GameServer.Commands
 
-
 import Game.Levels.MatrixTrace.L02_SmulEBasis
 
+World "Matrix"
+Level 5
 
-
-World "Trace"
-Level 3
-
-Title "Trace"
+Title "Matrix"
 
 Introduction
 "
@@ -24,7 +21,7 @@ lemma tmp0 {n : ℕ} {i : Fin n} :
     E i i = stdBasisMatrix i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
   rw [one_apply_eq]
 
-lemma ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
+Statement ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
   rw [matrix_eq_sum_std_basis 1]
   congr
   ext i r s
@@ -36,3 +33,6 @@ lemma ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
       symm
       exact h₂
     simp [one_apply, if_neg h₃]
+
+
+NewTheorem Matrix.one_apply Finset.mem_singleton ebasis_diag_sum_eq_one
