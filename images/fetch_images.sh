@@ -11,7 +11,7 @@ for filename in ./tmp-download/fullsize/*; do
 
   NEWFILE=$(dirname $0)/$(basename $filename)
 
-  convert -resize $NEWSIZE $filename $NEWFILE
+  convert -thumbnail $NEWSIZE $filename $NEWFILE
 
   echo "Copying and reducing $filename to $NEWFILE."
 
