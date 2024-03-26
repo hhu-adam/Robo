@@ -11,7 +11,7 @@ for filename in ./tmp-download/fullsize/*; do
 
   NEWFILE=$(dirname $0)/$(basename $filename)
 
-  convert -thumbnail $NEWSIZE -define png:exclude-chunks=date $filename $NEWFILE
+  convert -thumbnail $NEWSIZE -define png:exclude-chunks=date -define png:include-chunk=none $filename $NEWFILE
 
   echo "Copying and reducing $filename to $NEWFILE."
 
