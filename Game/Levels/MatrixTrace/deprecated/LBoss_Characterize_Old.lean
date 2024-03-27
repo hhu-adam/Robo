@@ -97,7 +97,8 @@ lemma H1 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
 
 lemma H2 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin (n + 1)), (i ≠ j) → f (E i j) = 0 := by
+    ∀ (i j :
+     Fin (n + 1)), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
   trans f (E i 0 * E 0 j)
   · rw [mul_same, mul_one]
