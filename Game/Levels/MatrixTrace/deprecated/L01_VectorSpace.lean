@@ -38,6 +38,8 @@ instance (n : ℕ) : Module ℝ (Matrix (Fin n) (Fin n) ℝ) := by infer_instanc
 
 #check Submodule
 
+whatsnew in
+theorem foo : 42 = 6 * 7 := rfl
 
 -- Remark: maybe we should introduce `funext` or `ext` before if we have not done so.
 instance (n : ℕ) : Module ℝ (Matrix (Fin n) (Fin n) ℝ) where
