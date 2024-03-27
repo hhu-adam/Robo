@@ -80,7 +80,7 @@ proof-sketch: any two matrix in the span of these vectors commute: S T = T S.
 
 ## Quotients (++)
 
-__Boss level__ Any function $f \colon A \to B$ is a function can be factored into three functions $f = i \circ g \circ q $ where $q$ is a surjection, $h$ is a bijection, and $i$ is an injection.
+__Boss level__ Any function $f \colon A \to B$ can be factored into three functions as $f = i \circ g \circ q $ where $q$ is a surjection, $h$ is a bijection, and $i$ is an injection.
 
 
 ### Alternative questions for quotients
