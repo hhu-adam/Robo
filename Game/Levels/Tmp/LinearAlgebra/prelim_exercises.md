@@ -80,7 +80,28 @@ proof-sketch: any two matrix in the span of these vectors commute: S T = T S.
 
 ## Quotients (++)
 
-__Boss level__ Any function $f \colon A \to B$ can be factored into three functions as $f = i \circ g \circ q $ where $q$ is a surjection, $h$ is a bijection, and $i$ is an injection.
+__Boss level__ Any function $f \colon A \to B$ can be factored into three functions as $f = i \circ g \circ q $ where $q$ is a surjection, $h$ is a bijection, and $i$ is an injection. (This is the first isomorphism theorem for sets.)
+
+Here's how we are going to frame this statement in the game:
+
+```lean
+Statement (f: A -> B) :
+  ∃ (q : A -> C) (h : C -> D) (i : D -> B), Surjective q ∧ Bijective h ∧ Injective i ∧ f = i ∘ h ∘ q :=
+
+```
+
+Alternatively, we can ask the user to provide an instance of the factorization structure:
+```lean
+def Fact (f: A -> B) : Type :=
+  C : Type
+  D : Type
+  q : A -> C
+  h : C -> D
+  i : D -> B
+  surj : Surjective q
+  bij : Bijective h
+  inj : Injective i
+```
 
 
 ### Alternative questions for quotients
