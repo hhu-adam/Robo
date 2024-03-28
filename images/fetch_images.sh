@@ -2,7 +2,7 @@
 
 cd "$(dirname $0)"
 
-git clone https://github.com/hhu-adam/Robo-Images.git ./tmp-download
+git clone https://github.com/joneugster/Robo-Images.git ./tmp-download
 
 NEWSIZE="1000x1000^"
 
