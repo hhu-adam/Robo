@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Mar 26 14:55:12 2024\n"
+"POT-Creation-Date: Sat Mar 30 11:04:23 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4280,226 +4280,103 @@ msgstr ""
 msgid "\n"
 "The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
 "In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
-""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "*Diesen 1. Schritt würde ich vorschlagen im Spiel als `Preample` zu verstecken,\n"
-"so dass er automatisch passiert.*\n"
-"\n"
-"`refine { carrier := M, ?..}`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:\n"
-"\n"
-"* Abgeschlossenheit unter `+`\n"
-"* Enthält `0`\n"
-"* Abgeschlossenheit unter `•`.\n"
-"\n"
-"Wir fangen mit dem ersten an:\n"
-"\n"
-"`intro A B hA hB`\n"
-""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`change (∑ i, (A + B) i 0 ) = 0`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`simp [add_apply A B]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`rw [sum_add_distrib]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`rw [hA, hB, zero_add]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "somwhat ugly…\n"
-"\n"
-"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
-"\n"
-"here we show that `0 ∈ (M, +)` as a submonoid.\n"
-"\n"
-"`simp`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "Oh god, is this ugly!\n"
-"\n"
-"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
-"\n"
-"`simp`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`intro c A hA`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`rw [← Finset.mul_sum]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`rw [hA]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace
-msgid "`simp`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "\n"
-"The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
-"In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
 "\n"
 "In Lean we provide a submodule structure by filling in the holes of the following structure:\n"
 "```\n"
-"def FirstColumnSumZero {n : ℕ} [NeZero n] : Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) where\n"
-"   carrier := fun A => ∑ i, A i 0 = 0\n"
-"   add_mem' := sorry\n"
-"   zero_mem' := sorry\n"
-"   smul_mem' := sorry\n"
-"\n"
+"def FirstColumnSumZero {n : ℕ} [NeZero n] :\n"
+"    Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) where\n"
+"  carrier := {A | ∑ i, A i 0 = 0}\n"
+"  add_mem' := sorry\n"
+"  zero_mem' := sorry\n"
+"  smul_mem' := sorry\n"
 "```\n"
-"\n"
 ""
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "Wir müssen jetzt die drei Axiome eines Untermoduls `S` zeigen:\n"
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "**Du**: Robo, kannst du mir helfen?\n"
 "\n"
-"* Abgeschlossenheit unter `+`\n"
-"* Enthält `0`\n"
-"* Abgeschlossenheit unter `•`.\n"
-"\n"
-"Wir fangen mit dem ersten an:\n"
-"\n"
-"`intro A B hA hB`\n"
+"**Robo**: Klar, den Untervektorraum kann ich definieren, aber ich verstehe die Mathe nicht.\n"
+"Hier sind die drei Goals die noch übrig sind.\n"
 ""
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "**Du**: Ich verstehe, beim ersten müssen wir zeigen, dass `a + b` wieder in `M` ist."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "\n"
 "A definitionally equal goal is `(∑ i, («{A}» + «{B}») i 0 ) = 0`.\n"
-"Tactic change can be used to change the goal to this.\n"
+"Tactic `change` can be used to change the goal to this.\n"
 "However, strictly speaking, this is not necessary since `simp` sees through such equalities."
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "`add_apply «{A}» «{B}»` simplifies the pointwise addition of two matrices."
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "`rw [sum_add_distrib]`"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "`rw [«{hA}», «{hB}», zero_add]`"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "somwhat ugly…\n"
-"\n"
-"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
-"\n"
-"here we show that `0 ∈ (M, +)` as a submonoid.\n"
-"\n"
-"`simp`"
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "**Robo**: Dieses Goal verlangt, dass `0` in `M` liegt."
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "Oh god, is this ugly!\n"
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "**Du**: Ah und das letzte Goal will dass `r • a` in `M` liegt!\n"
 "\n"
-"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
-"\n"
-"`simp`"
+"**Robo**: sieht ganz so aus!"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`intro c A hA`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`rw [← Finset.mul_sum]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
-msgid "`rw [hA]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_2
+#: Game.Levels.MatrixTrace.L01_VectorSpace
 msgid "`simp`"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`intro c A hA`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [← Finset.mul_sum]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`rw [hA]`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_VectorSpace
+msgid "`simp`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L02_SmulEBasis
 msgid "Matrix"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
+#: Game.Levels.MatrixTrace.L02_SmulEBasis
 msgid "\n"
-"The collection `ℝ^(m×n)` of `m × n` matrices with real-valued entries forms a vector space over `ℝ`.\n"
-"In this level you prove that for `n > 0` the collection of square matrices of size `n × n` with the property that the sum of whose first column is zero forms a subspace of `ℝ^(n×n)`.\n"
+"The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0` elsewhere. They are extemely sparse. In below, `E i j` are defined in terms of mathlib's `stdBasisMatrix`.\n"
+"\n"
+"`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere.  `stdBasisMatrix` matrices are closed under scalar multiplication, becasue\n"
+"`c • stdBasisMatrix i j 1 = stdBasisMatrix i j c`, a theorem witnessed by `smul_stdBasisMatrix`.\n"
+"\n"
 ""
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`change (∑ i, (A + B) i 0 ) = 0`"
+#: Game.Levels.MatrixTrace.L03_EBasisSpan
+msgid "Matrix"
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`simp [add_apply A B]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`rw [sum_add_distrib]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`rw [hA, hB, zero_add]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "somwhat ugly…\n"
+#: Game.Levels.MatrixTrace.L03_EBasisSpan
+msgid "\n"
+"`stdBasisMatrix i j c` spans the vector space of matrices of a given size. This is witnessed by `matrix_eq_sum_std_basis`. In this level, you will show that the identity matrix is the sum of the matrices `E i i`.\n"
 "\n"
-"This is because `Submodule` consists of `AddSubmonoid` and `SubMulAction`.\n"
-"\n"
-"here we show that `0 ∈ (M, +)` as a submonoid.\n"
-"\n"
-"`simp`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "Oh god, is this ugly!\n"
-"\n"
-"similar reason as above, a simple `dsimp only` also brings this into a readably form\n"
-"\n"
-"`simp`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`intro c A hA`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`rw [← Finset.mul_sum]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`rw [hA]`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_VectorSpace_3
-msgid "`simp`"
+""
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_Linearity
@@ -4535,20 +4412,6 @@ msgid "\n"
 ""
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L02_SmulEBasis
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_SmulEBasis
-msgid "\n"
-"The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0` elsewhere. They are extemely sparse. In below, `E i j` are defined in terms of mathlib's `stdBasisMatrix`.\n"
-"\n"
-"`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere.  `stdBasisMatrix` matrices are closed under scalar multiplication, becasue\n"
-"`c • stdBasisMatrix i j 1 = stdBasisMatrix i j c`, a theorem witnessed by `smul_stdBasisMatrix`.\n"
-"\n"
-""
-msgstr ""
-
 #: Game.Levels.MatrixTrace.L05_EvalOnEBasis
 msgid "Matrix"
 msgstr ""
@@ -4558,17 +4421,6 @@ msgid "\n"
 "A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills\n"
 "all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`\n"
 "for all `i : Fin n`.\n"
-""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03_EBasisSpan
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03_EBasisSpan
-msgid "\n"
-"`stdBasisMatrix i j c` spans the vector space of matrices of a given size. This is witnessed by `matrix_eq_sum_std_basis`. In this level, you will show that the identity matrix is the sum of the matrices `E i i`.\n"
-"\n"
 ""
 msgstr ""
 
@@ -4592,6 +4444,30 @@ msgstr ""
 msgid "\n"
 "In this level, we will show that a linear functional `f` on the space of matrices which kills all commutators also kills all off-diagonal elementary basis matrices.\n"
 ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Wie könnte ich denn `«{h₁}»` hier gut verwenden?\n"
+"\n"
+"**Du**: Wie wär's wenn ich `E i j` aufteile als `E i j * E j j`, denn die Umkehrung\n"
+"`E j j * E i j` sollte `0` sein!\n"
+"\n"
+"**Robo*: Wenn du meinst, du kannst diese Gleichung mit einem Zwischenschritt\n"
+"`f (E i j) = f (E i j * E j j) = 0` lösen, dann kannst du `trans f (E i j * E j j)`\n"
+"verwenden.\n"
+""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: Zuerst die erste der beiden Gleichungen…"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: … und dann die Zweite."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "`E.mul_of_ne j j hne.symm`"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
@@ -4620,6 +4496,72 @@ msgid "\n"
 "\n"
 "We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.\n"
 ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Zwei Funktionen sind gleich wenn sie auf\n"
+"allen Elementen gleich sind…\n"
+"\n"
+"**Robo**: Das war `ext A`!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Hatten wir nicht eben gerade, dass `f «{A}»` also Summe über `«{A}» i j * f (E i j)`\n"
+"schreiben kann?\n"
+"\n"
+"**Robo**: Was du vorhin bewiesen hast, hies `eq_sum_apply_diag_ebasis`."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Und jetzt? Stimmt das überhaupt für `n = 0`?\n"
+"\n"
+"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`!\n"
+"\n"
+"**Du**: Nah dann kann ich ja mal diesen Fall zuerst machen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: das war `rcases n`."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "\n"
+"**Robo**: Den Fall `n = 0` kann sogar ich! Ich wende einfach\n"
+"immer `simp` an und das Betriebsystem gibt ein wohliges Schnurren zurück."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Wir hatten doch auch schon dass für unser `«{f}»` gilt dass `f (E i i) = 1`!\n"
+"\n"
+"**Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,\n"
+"`rw` kann das nicht.\n"
+"\n"
+"**Du**: Ah, und die expliziten Argumente sollte ich wohl auch noch angeben."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du** Jetzt `mul_one`?"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: Die beiden sind per Definition gleich!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Wo kommt denn das her?\n"
+"\n"
+"**Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument\n"
+"ausgelassen, jetzt kannst du es noch nachholen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Robo, wie hies das nochmals, dass unser `«{f}»` ausserhalb der Diagonale null ist?\n"
+"\n"
+"**Robo**: `zero_on_offdiag_ebasis`."
 msgstr ""
 
 #: Game.Levels.MatrixTrace
@@ -4704,7 +4646,7 @@ msgid "Vermutlich viel zu schwierig!"
 msgstr ""
 
 #: Game
-msgid "Formaloversum"
+msgid "Robo"
 msgstr ""
 
 #: Game

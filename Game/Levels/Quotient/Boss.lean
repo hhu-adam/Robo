@@ -1,8 +1,6 @@
 import Game.Metadata
 import Game.Metadata.StructInstWithHoles
 
-import Game.Levels.Sum
-
 
 World "Quotient"
 Level 100
@@ -15,6 +13,17 @@ Any function `f : A → B` can be factored into three functions as `f = m ∘ i 
 "
 
 open Set Function
+
+#check image
+#check image_union
+
+#check Quotient.mk
+#check Quotient.mk'
+#check Quotient.mk''
+
+#check prod_quotient_preimage_eq_image
+
+-- instance (f : A → B) : Setoid A := inferInstance
 
 
 Statement (f : A -> B) :
