@@ -4,12 +4,20 @@ import Game.Metadata.StructInstWithHoles
 import Game.Levels.Quotient.Respect
 
 World "Quotient"
-Level 4
+Level 5
 
 Title "Quotient"
 
 Introduction
 "
+The crucial universal property of `Quotient r` is the following statement:
+If `f : A → B` is any function that respects the congruence `r` in the sense that
+for every `x y : A`, `r x y` implies `f x = f y`, then `f` uniquely lifts to a function `Quotient.lift f : Quotient r → B`
+defined on a typical element `⟦a⟧` by
+```
+Quotient.lift f ⟦a⟧ = f a
+```
+
 In this level you prove that the quotient lift of `rangeFactorization f` with respect to the
 congruence relation `ker f` is a bijection.
 
