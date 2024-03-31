@@ -6,7 +6,7 @@ import Game.Levels.Quotient.Respect
 import Game.Levels.Quotient.Bijection
 
 World "Quotient"
-Level 100
+Level 5
 
 Title "Quotient"
 

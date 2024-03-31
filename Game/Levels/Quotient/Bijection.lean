@@ -19,29 +19,17 @@ Given a map `f : A → B`, the theorem `ker_lift_injective` says that the canoni
 
 open Function Set Setoid Quotient
 
-#check rangeFactorization_eq
-
-#check ker_lift_injective
-
-section
-variable {α : Type*} {β : Type*} (f : α → β)
-
-#check Quotient.mk
-#check Quotient.mk'
-
-#check @Quotient.lift _ _ (ker f) f (fun _ _ h => h)
-
-#check ker_lift_injective (rangeFactorization f)
-
-
-theorem ker_lift_injective (f : α → β) : Injective (@Quotient.lift _ _ (ker f) f fun _ _ h => h) :=
-  fun x y => Quotient.inductionOn₂' x y fun _ _ h => Quotient.sound' h
-
-end
-
 Statement bij_quotient_lift_range_fac (f : A → B) :
     Bijective (Quotient.lift (rangeFactorization f) respects_ker_rel) := by
   constructor
   · intro x y h
-    sorry
-  · sorry
+    apply ker_lift_injective f
+    rcases x with ⟨a⟩
+    rcases y with ⟨b⟩
+    injections
+  · intro ⟨b, a, h⟩
+    use Quotient.mk (ker f) a
+    apply Subtype.ext
+    exact h
+
+-- Remark: another way to prove the injectivity and surjectivity of the quotient lift is to use the cancellation properties. This would still use `ker_lift_injective`
