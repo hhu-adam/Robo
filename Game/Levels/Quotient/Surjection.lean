@@ -1,9 +1,6 @@
 import Game.Metadata
 import Game.Metadata.StructInstWithHoles
 
-import Game.Levels.Quotient.FibreSetoid
-
-
 World "Quotient"
 Level 2
 
@@ -30,9 +27,9 @@ In this level you show that the function `Quotient.mk : A → Quotient fiber_set
 
 "
 
-open Function
+open Function Set Setoid
 
-Statement {f : A → B} : Surjective (Quotient.mk <| fibre_setoid <| f) := by
+Statement surj_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk <| ker <| f) := by
   intro b
   induction b using Quotient.ind
   use a
