@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Mar 30 11:04:23 2024\n"
+"POT-Creation-Date: Sun Mar 31 15:57:31 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4569,6 +4569,112 @@ msgid "Matrix"
 msgstr ""
 
 #: Game.Levels.MatrixTrace
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient.Kernel
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient.Kernel
+msgid "\n"
+"A setoid structure on a type `A` provides a relation `r : A → A → Prop` which is congruence (aka equivalence relation). The congruence `r` tell us which elements of `A` are congruent to other elements of `A`.\n"
+"\n"
+"\n"
+"We show that every function `f : A → B` induces a congruence on `A`: We say elements `x` and `y` of `A` are in the same fibre of `f` if `f x = f y`.\n"
+"```\n"
+"x ~ y ↔ f x = f y\n"
+"```\n"
+"This is a congruence on `A` denoted by `ker f`.\n"
+"\n"
+"You might be familiar with the kernel of a group homomorphism. The kernel of a group homomorphism is the set of elements that are sent to the identity element of the codomain. The kernel of a group homomorphism is a subgroup of the domain.\n"
+"\n"
+"In this level you show that these two notions of kernel coincide: Two elements `x` and `y` of `A` are kernel congruent if and only if their difference is in the kernel of `f`.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient.Surjection
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient.Surjection
+msgid "\n"
+"For a congruence `r` on a type `A`, the quotient type `Quotient r` is the type of\n"
+"elements of `A` modulo `r`.  A mathematically common notation for `Quotient r` is `A / r`.\n"
+"We can think of `Quotient r` as the collection of equivalence classes `⟦a⟧` of elements `a : A` modulo `r`.\n"
+"The function `Quotient.mk : A → Quotient r` maps an element `a : A` to its equivalence class `⟦a⟧`.\n"
+"If elements `a b : A` are congruent, then `⟦a⟧ = ⟦b⟧`. This fact is witnessed\n"
+"by `Quotient.sound`.\n"
+"\n"
+"The simplest induction principle `Quotient.ind` for the quotient type states that a property of elements of `Quotient r` can be proved by showing that it holds for all congruence classes `⟦a⟧`. In other words, if a property `P` holds for all congruence classes `⟦a⟧`, then `P` holds for all elements of `Quotient r`.\n"
+"\n"
+"The crucial universal property of `Quotient r` is the following statement:\n"
+"If `f : A → B` is any function that\n"
+"respects the congruence `r` in the sense that for every `x y : A`,\n"
+"`r x y` implies `f x = f y`, then `f` uniquely lifts to a function `Quotient.lift f : Quotient r → B`\n"
+"defined on each equivalence class `⟦a⟧` by `Quotient.lift f ⟦a⟧ = f a`.\n"
+"\n"
+"In this level you show that the function `Quotient.mk : A → Quotient fiber_setoid` is surjective.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient.Respect
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient.Respect
+msgid "\n"
+"The image of a subset `S` of `A` along a function `f : A → B` is the set of\n"
+"all elements `b : B` such that there exists an element `a ∈ S` with `f a = b`.\n"
+"In Lean, the image `S` along `f` is defined by `Set.image f S`, and denoted by `f '' S`.\n"
+"\n"
+"The range of a function `f : A → B` is the image of the largest subset of `A`, that is `A` itself`, along `f`. In Lean the range of `f` is defined by `Set.range f`. Note that\n"
+"`range f` can be promoted to a subtype of `B` with an injection function\n"
+"`Subtype.val : range f → B`. The injectivity is witnessed by `val_injective`.\n"
+"\n"
+"`rangeFactorization f` lands in the range of `f` and is defined by\n"
+"\n"
+"```\n"
+"rangeFactorization f x = ⟨f x, mem_range_self x⟩\n"
+"```\n"
+"\n"
+"In this level you show that `rangeFactorization f` respects the congruence `ker f` on `A`.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient.Bijection
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient.Bijection
+msgid "\n"
+"In this level you prove that the quotient lift of `rangeFactorization f` with respect to the\n"
+"congruence relation `ker f` is a bijection.\n"
+"\n"
+"Given a map `f : A → B`, the theorem `ker_lift_injective` says that the canonical map from the quotient of `A` by the congruence `ker f` to `B` is injective.\n"
+"\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient.Factorization
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient.Factorization
+msgid "\n"
+"Any function `f : A → B` can be factored into three functions as `f = m ∘ i ∘ q` where `q` is a surjection, `i` is a bijection, and `m` is an injection.\n"
+""
+msgstr ""
+
+#: Game.Levels.Quotient
+msgid "Quotient"
+msgstr ""
+
+#: Game.Levels.Quotient
 msgid "\n"
 ""
 msgstr ""

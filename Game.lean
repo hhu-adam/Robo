@@ -10,6 +10,7 @@ import Game.Levels.Proposition
 import Game.Levels.SetTheory
 import Game.Levels.Sum
 import Game.Levels.MatrixTrace
+import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
 import Game.Levels.NewStuff
