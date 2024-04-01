@@ -11,7 +11,8 @@ Introduction
 Given a setoid structure `s` on `A` and an element `a : A` the equivalence class of `a`
 is the set of all elements of `A` that are congruent to `a`, namely `{x : A | s.Rel x a}`.
 
-We say a function `f : A → B` is equifibred if for any two elements `x` and `y` of `B` the preimages of `x` and `y` are equivlanet.
+We say a function `f : A → B` is equifibred if for any two elements `x` and `y` of `B` the
+preimages of `x` and `y` are equivlanet.
 
 In this level you show that the equivalence classes of an equifibred function are all equivalent.
 
