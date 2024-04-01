@@ -10,7 +10,7 @@ Introduction
 "
 Strikte Teilmengen sind in Lean eher selten, aber wir schauen sie hier
 trotzdem kurz an : `A ⊂ B` (`\\ssub`) bedeutet `(A ⊆ B) ∧ (¬B ⊆ A)`.
-Entsprechend, kann man die gleichen Methoden wie beim UND benützen
+Entsprechend, kann man die gleichen Methoden wie beim UND benutzen
 (`rcases`/`constructor`).
 
 Zudem kann man mit `rw [ssubset_def]` explizit die Definition einsetzen.
