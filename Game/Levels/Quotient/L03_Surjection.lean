@@ -29,6 +29,6 @@ In this level you show that the function `Quotient.mk : A → A/(ker f)` is surj
 open Function Set Setoid
 
 Statement surj_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk <| ker <| f) := by
-  intro b
-  induction b using Quotient.ind
+  intro q
+  induction q using Quotient.ind
   use a
