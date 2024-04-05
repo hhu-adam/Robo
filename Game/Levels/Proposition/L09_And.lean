@@ -7,7 +7,7 @@ Title "Und"
 
 Introduction
 "
-Der nächste Formalosoph in der Reihe hat seine Frage bereìts mitgebracht.
+Der nächste Formalosoph in der Reihe hat seine Frage bereits mitgebracht.
 Er legt sie uns vor, setzt sich hin und häkelt.
 "
 /--  -/
