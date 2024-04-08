@@ -1,49 +1,37 @@
-import Mathlib.Lean.Expr.Basic
 import Lean.Elab.Tactic.Basic
-import Mathlib.Init.Data.Nat.Notation
+import Lean.Elab.Tactic.Induction
+import Std.Tactic.OpenPrivate
+import Std.Data.List.Basic
 
-open Lean.Meta Lean.Elab.Tactic Lean.Parser.Tactic
+import Mathlib.Lean.Expr.Basic
+import Mathlib.Tactic.Cases
+
+namespace Robo
 
 /-!
 # Modified `induction` tactic
 
-Modify `induction` tactic to use the cases `0` and `n + 1` (isnstead of `zero` and `succ n`)
-and support the lean3-style `with` keyword.
+Modify `induction` tactic to always show `(0 : Nat)` instead of `Nat.zero` and
+to support the lean3-style `with` keyword.
 
 This is mainly copied and modified from the mathlib-tactic `induction'`.
 -/
 
-/-- Custom induction principle that uses `0` and `n + 1` instead
-of `Nat.zero` and `Nat.succ n`. -/
-def CustomTactic.rec' {P : ℕ → Prop} (zero : P 0)
-    (succ : (n : ℕ) → (n_ih : P n) → P (n + 1)) (t : ℕ) : P t := by
+/--
+Custom induction principial for the tactics `induction`.
+Used to show `0` instead of `Nat.zero` in the base case.
+-/
+def Nat.rec' {P : Nat → Prop} (zero : P 0)
+    (succ : (n : Nat) → (n_ih : P n) → P (Nat.succ n)) (t : Nat) : P t := by
   induction t with
   | zero => assumption
   | succ n =>
     apply succ
     assumption
 
-namespace Lean.Parser.Tactic
+open Lean Parser Tactic
 open Meta Elab Elab.Tactic
-
-open private getAltNumFields in evalCases ElimApp.evalAlts.go in
-def _root_.CustomTactic.ElimApp.evalNames (elimInfo : ElimInfo) (alts : Array ElimApp.Alt) (withArg : Syntax)
-    (numEqs := 0) (numGeneralized := 0) (toClear : Array FVarId := #[]) :
-    Lean.Elab.Term.TermElabM (Array MVarId) := do
-  let mut names : List Syntax := withArg[1].getArgs |>.toList
-  let mut subgoals := #[]
-  for { name := altName, mvarId := g, .. } in alts do
-    let numFields ← getAltNumFields elimInfo altName
-    let (altVarNames, names') := names.splitAtD numFields (Unhygienic.run `(_))
-    names := names'
-    let (fvars, g) ← g.introN numFields <| altVarNames.map (getNameOfIdent' ·[0])
-    let some (g, subst) ← Cases.unifyEqs? numEqs g {} | pure ()
-    let (_, g) ← g.introNP numGeneralized
-    let g ← liftM $ toClear.foldlM (·.tryClear) g
-    for fvar in fvars, stx in altVarNames do
-      g.withContext <| (subst.apply <| .fvar fvar).addLocalVarInfoForBinderIdent ⟨stx⟩
-    subgoals := subgoals.push g
-  pure subgoals
+open Mathlib.Tactic
 
 open private getElimNameInfo generalizeTargets generalizeVars in evalInduction in
 
@@ -52,33 +40,51 @@ Modified `induction` tactic for this game.
 
 Usage: `induction n with d hd`.
 
-For this game, `induction n` uses the cases `0` and `n + 1` instead of `Nat.zero` and
-`Nat.succ n`. These are defEq, but it's currently annoying that `ring` does not like the
-latter forms.
-
 *(The actual `induction` tactic has a more complex `with`-argument that works differently)*
 -/
-elab (name := _root_.MyNat.induction) "induction " tgts:(casesTarget,+)
-    withArg:((" with " (colGt binderIdent)+)?)
-    : tactic => do
-  let targets ← elabCasesTargets tgts.1.getSepArgs
+elab (name := Robo.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
+    usingArg:((" using " ident)?)
+    withArg:((" with" (ppSpace colGt binderIdent)+)?)
+    genArg:((" generalizing" (ppSpace colGt ident)+)?) : tactic => do
+  let (targets, toTag) ← elabCasesTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
-    let elimInfo ← getElimInfo `CustomTactic.rec'
-    -- TODO: in v4.6.0 we'll need to replace `targets` with `targets.1`
-    let targets ← addImplicitTargets elimInfo targets.1
+    let elimInfo ← getElimNameInfo usingArg targets (induction := true)
+
+    -- Edit: If `Nat.rec` is used, we want to use `Robo.Nat.rec'` instead.
+    let elimInfo ← match elimInfo.elimExpr.getAppFn.constName? with
+    | some `Nat.rec =>
+      let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
+        match usingArg.raw with
+        | .node info kind #[] =>
+          -- TODO: How do you construct syntax in a semi-userfriendly way??
+          .node info kind #[.atom info "using", .ident info "Robo.Nat.rec'".toSubstring `Robo.Nat.rec' []]
+        | other => other ⟩
+      let newElimInfo ← getElimNameInfo modifiedUsingArgs targets (induction := false)
+      pure newElimInfo
+    | _ => pure elimInfo
+
+    let targets ← addImplicitTargets elimInfo targets
     evalInduction.checkTargets targets
     let targetFVarIds := targets.map (·.fvarId!)
     g.withContext do
+      let genArgs ← if genArg.1.isNone then pure #[] else getFVarIds genArg.1[1].getArgs
       let forbidden ← mkGeneralizationForbiddenSet targets
       let mut s ← getFVarSetToGeneralize targets forbidden
+      for v in genArgs do
+        if forbidden.contains v then
+          throwError "variable cannot be generalized \
+            because target depends on it{indentExpr (mkFVar v)}"
+        if s.contains v then
+          throwError "unnecessary 'generalizing' argument, \
+            variable '{mkFVar v}' is generalized automatically"
+        s := s.insert v
       let (fvarIds, g) ← g.revert (← sortFVarIds s.toArray)
-      let result ← withRef tgts <| ElimApp.mkElimApp elimInfo targets (← g.getTag)
-      let elimArgs := result.elimApp.getAppArgs
-      ElimApp.setMotiveArg g elimArgs[elimInfo.motivePos]!.mvarId! targetFVarIds
-      g.assign result.elimApp
-      let subgoals ← CustomTactic.ElimApp.evalNames elimInfo result.alts withArg
-        (numGeneralized := fvarIds.size) (toClear := targetFVarIds)
-      setGoals <| (subgoals ++ result.others).toList ++ gs
-
-end Lean.Parser.Tactic
+      g.withContext do
+        let result ← withRef tgts <| ElimApp.mkElimApp elimInfo targets (← g.getTag)
+        let elimArgs := result.elimApp.getAppArgs
+        ElimApp.setMotiveArg g elimArgs[elimInfo.motivePos]!.mvarId! targetFVarIds
+        g.assign result.elimApp
+        let subgoals ← ElimApp.evalNames elimInfo result.alts withArg
+          (generalized := fvarIds) (toClear := targetFVarIds) (toTag := toTag)
+        setGoals <| (subgoals ++ result.others).toList ++ gs
