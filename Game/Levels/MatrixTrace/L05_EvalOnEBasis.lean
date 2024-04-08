@@ -33,7 +33,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) 
   ext j
   by_cases h₁ : i = j
   · rw [if_pos h₁]
-    subst h₁
+    rw [h₁]
     rfl
   · rw [if_neg h₁]
     simp [h]
