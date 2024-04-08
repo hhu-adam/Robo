@@ -7,7 +7,7 @@ Title "Inverse"
 Introduction
 "
 Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass
-eine Inverse Funktion existiert. Jetzt steht ihr aber schon seit einer halben Stunde rum
+eine Inverse Funktion existiere. Jetzt steht ihr aber schon seit einer halben Stunde rum
 und der Gelehrte möchte wissen, wie das den genau ginge.
 
 Offensichtlich kennt er diese Aussage als `Function.bijective_iff_has_inverse` aus seinen Büchern,
