@@ -13,7 +13,7 @@ Er legt sie uns vor, setzt sich hin und häkelt.
 /--  -/
 Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   Hint "
-    **Du**:  Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir
+    **Du**: Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir
     dass `{A} und {B}` gilt. Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung.
     Kann ich nicht wieder `trivial` sagen?
 
@@ -43,7 +43,7 @@ Conclusion
 Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 
 **Robo**: Meinst du, dieser Hebel, an dem \"Editor mode\" steht, ist echt?
-Oder ist der nur gemalt?  Probier mal!
+Oder ist der nur gemalt? Probier mal!
 "
 
 NewTactic constructor

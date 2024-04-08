@@ -7,14 +7,14 @@ Title "Lemmas"
 
 Introduction
 "
-**Operationsleiter**:  Wieder etwas für den Kollegen …. Und er wollte wieder einen
+**Operationsleiter**: Wieder etwas für den Kollegen …. Und er wollte wieder einen
 Beweise ohne `apply`. Ich sehe hier auch, dass ich mir schon einmal etwas
 hierzu notiert hatte. Richtig, es gibt da dieses Lemma:
 ```
 lemma not_not (A : Prop) : ¬¬A ↔ A
 ```
 
-**Operationsleiter**:  Schafft Ihr das damit?
+**Operationsleiter**: Schafft Ihr das damit?
 "
 
 Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B ∧ (¬¬C) := by

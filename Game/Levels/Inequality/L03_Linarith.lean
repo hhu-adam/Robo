@@ -16,7 +16,7 @@ Statement (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by
 
   **Robo**: Nein, ist ja auch keine Vereinfachung, die du machen willst.
 
-  **Lina**:  Hier brauchst Du unser absolutes Powertool!
+  **Lina**: Hier brauchst Du unser absolutes Powertool!
 
   **Ritha**: `linarith`"
   linarith

@@ -30,7 +30,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
 
   **Du**: Hat diese Gleichheit denn wenigstens einen Namen.
 
-  **Robo**:  Sie heißt `sum_add_distrib`.
+  **Robo**: Sie heißt `sum_add_distrib`.
   "
   rw [sum_add_distrib]
   Hint "**Robo**: Die zweite Summe `∑ x : Fin n, 1` kann jetzt aber mit

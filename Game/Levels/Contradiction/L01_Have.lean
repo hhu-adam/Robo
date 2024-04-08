@@ -7,7 +7,7 @@ Title "Was wir haben, haben wir."
 
 Introduction
 "
-**Benedictus**:  Hier, schaut mal. Das habe ich für Euch vorbereitet.
+**Benedictus**: Hier, schaut mal. Das habe ich für Euch vorbereitet.
 "
 
 Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
@@ -18,10 +18,10 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
     **Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.
 
-    **Robo**:  Ja!  Probier mal `have g : ¬ B`!"
+    **Robo**: Ja! Probier mal `have g : ¬ B`!"
   have g : ¬ B
   · Hint "
-      **Du**: Was?  Jetzt hab ich einfach angenommen, dass sei richtig?
+      **Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?
 
       **Robo**: Nee, jetzt musst du das erst noch beweisen, bevor du es dann benutzen kannst."
     Hint (hidden := true) "**Robo**: `apply` sollte helfen"

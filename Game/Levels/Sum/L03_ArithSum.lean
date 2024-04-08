@@ -16,7 +16,7 @@ Nach einem kurzen Spaziergang steht ihr davon.
 **Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!
 Über den hab ich schon einmal Daten verarbeitet.
 
-**Babylonier**:  Richtig. Gauß war ein Babylonier!
+**Babylonier**: Richtig. Gauß war ein Babylonier!
 "
 
 open Fin
@@ -29,7 +29,7 @@ open BigOperators
   wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?
   Ich würde gerne Induktion über $n$ anwenden.
 
-  **Robo**:  Wenn Du meinst … Auf Leansch wäre das:  `induction n with d hd`!
+  **Robo**: Wenn du meinst … Auf Leansch wäre das: `induction n with d hd`!
   Der Zusatz `with d hd` ist natürlich optional.
   Du kannst damit Namen für Induktionsvariable (d) und -hypothese (h) vorgeben."
   induction n with d hd

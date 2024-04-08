@@ -21,11 +21,11 @@ feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so
 
 Dich beschleicht ein ungutes Gefühl.
 
-**Du**:  Seid ihr euch sicher, dass diese Türme stabil sind?
+**Du**: Seid ihr euch sicher, dass diese Türme stabil sind?
 
-**Babylonier**:  100 Pro!
+**Babylonier**: 100 Pro!
 
-**Du**:  Wie baut ihr denn diese Meisterwerke?
+**Du**: Wie baut ihr denn diese Meisterwerke?
 
-**Babylonier**: Ganz einfach!  Ein Stein nach dem anderen.
+**Babylonier**: Ganz einfach! Ein Stein nach dem anderen.
 "

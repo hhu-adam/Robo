@@ -35,6 +35,6 @@ Statement (A B : Prop) (g : A → B) (b : ¬ B) : ¬ A := by
   apply g
   assumption
 
-Conclusion "**Benedictus**:  Ich sehe schon, Ihr lernt schnell!"
+Conclusion "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
 
 NewTactic by_contra

@@ -9,7 +9,7 @@ Introduction
 "
 Beim nächsten Problem stutzt der Operationsleiter.
 
-**Operationsleiter**:  Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt. Das ist
+**Operationsleiter**: Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt. Das ist
 gar nicht von mir. Sieht aber irgendwie interessant aus.
 "
 

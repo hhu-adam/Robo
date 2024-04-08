@@ -17,7 +17,7 @@ Statement (x y : ℕ) : (x + y) ^ 2 = x ^ 2 + 2 * x * y + y ^ 2 := by
     **Du**: Aber `ℕ` ist doch gar kein Ring?
 
     **Robo**: `ring` funktioniert sogar für sogenannte Halbringe. Ich glaube,
-    man sagt `ring`, weil es in  (kommutativen) Ringen am besten funktioniert."
+    man sagt `ring`, weil es in (kommutativen) Ringen am besten funktioniert."
   ring
 
 Conclusion ""

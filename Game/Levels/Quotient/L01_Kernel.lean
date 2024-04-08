@@ -34,7 +34,7 @@ open Function Set Setoid
 #check Con.ker_apply
 #check AddCon.ker_apply
 
-Statement {A B : Type*} [AddGroup A]  [AddGroup B] {f : A →+ B} {x y : A} :
+Statement {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
     (ker f).Rel x y ↔ (x - y) ∈ f.ker := by
   constructor
   · intro h
@@ -48,7 +48,7 @@ Statement {A B : Type*} [AddGroup A]  [AddGroup B] {f : A →+ B} {x y : A} :
 
 
 -- alternate proof using `AddMonoidHom.mem_ker` from mathlib
--- example {A B : Type*} [AddGroup A]  [AddGroup B] {f : A →+ B} {x y : A} :
+-- example {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
 --     (ker f).Rel x y ↔ (x - y) ∈ f.ker := by
 --   simp_rw [AddMonoidHom.mem_ker f]
 --   simp only [map_sub]

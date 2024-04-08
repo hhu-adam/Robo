@@ -20,10 +20,10 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   Hint "
     **Robo**: Also eine Implikation wendet man mit `apply` an …
 
-    **Du**: Weiß ich doch!  Aber `h` ist keine Implikation, sondern eine Äquivalenz.
+    **Du**: Weiß ich doch! Aber `h` ist keine Implikation, sondern eine Äquivalenz.
     Da würde ich doch eigentlich `rw [← h]` sagen wollen.
 
-    **Robo**:  Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`. Du kannst sie
+    **Robo**: Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`. Du kannst sie
     mit `apply ({h}.mp) at …` anwenden."
   Branch
     apply g
@@ -35,7 +35,7 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   assumption
 
 Conclusion "
-**Operationsleiter**:  Okay, super. Das müsste passen.
+**Operationsleiter**: Okay, super. Das müsste passen.
 
 Er telefoniert wieder.
 

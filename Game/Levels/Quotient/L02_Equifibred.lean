@@ -27,7 +27,7 @@ end
 
 
 Statement equiv_classes_of_equifibred (f : A → B)
-    (e : ∀ b b'  : B, (f ⁻¹' {b}) ≃ (f ⁻¹' {b'})) :
+    (e : ∀ b b' : B, (f ⁻¹' {b}) ≃ (f ⁻¹' {b'})) :
     ∀ u v, u ∈ (ker f).classes → v ∈ (ker f).classes → u ≃ v := by
   intro u v hu hv
   refine {?..!}

@@ -16,7 +16,7 @@ open Set
 
 /--  -/
 Statement :
-    {2, 7} ⊆ {n : ℕ | n = 2 ∨ (n ≤ 10 ∧ Odd n)}  := by
+    {2, 7} ⊆ {n : ℕ | n = 2 ∨ (n ≤ 10 ∧ Odd n)} := by
   rw [setOf_or, setOf_and]
   intro x hx
   rw [mem_union, mem_inter_iff]

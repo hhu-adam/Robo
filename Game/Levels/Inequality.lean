@@ -16,7 +16,7 @@ Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche ei
 Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die du je gesehen hast.
 Ein kleines Mädchen begrüßt Euch.
 
-**Lina**:  Ich bin Lina, die einzige Bewohnerin von Luna.
+**Lina**: Ich bin Lina, die einzige Bewohnerin von Luna.
 
 Dann sieht sie Robo.
 

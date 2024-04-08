@@ -39,7 +39,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.su
     trans ∑ i : Fin n.succ, f (E i i)
     · congr
       ext j
-      simp only [eq_on_diag_ebasis  h₁ i j]
+      simp only [eq_on_diag_ebasis h₁ i j]
     · rw [← map_sum f (fun x => E x x) Finset.univ]
       rw [ebasis_diag_sum_eq_one]
       simp only [h₂]

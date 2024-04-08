@@ -18,12 +18,12 @@ das Blatt ein zweites Mal vor.
 
 Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
   Hint "
-    **Robo**:  Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.
+    **Robo**: Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.
     Probier doch mal `apply hAB at h`."
   Branch
     apply hAB
     Hint "
-      **Robo**:  Ich sagte `… at h`. Aber einfach nur `apply hAB` funktioniert offenbar auch.
+      **Robo**: Ich sagte `… at h`. Aber einfach nur `apply hAB` funktioniert offenbar auch.
       Jetzt hast Du sozusagen `hAB` auf das Beweisziel `B` angewendet, und musst nur
       noch `A` beweisen."
     assumption

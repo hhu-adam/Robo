@@ -75,7 +75,7 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
 
 Conclusion
 "
-**Robo** Bravo!  Jetzt aber nichts wie weg hier, bevor sich eine neue Schlange bildet!
+**Robo** Bravo! Jetzt aber nichts wie weg hier, bevor sich eine neue Schlange bildet!
 
 Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon.
 "

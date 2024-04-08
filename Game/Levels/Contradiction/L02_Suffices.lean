@@ -8,7 +8,7 @@ Title "Es reicht!"
 
 Introduction
 "
-**Benedictus**:  Ihr hättet natürlich auch erst das Hauptresultat und dann das
+**Benedictus**: Ihr hättet natürlich auch erst das Hauptresultat und dann das
 Zwischenresultat beweisen können. Das könnt Ihr ja mal an dieser Aufgabe probieren, die ist
 ganz ähnlich.
 "
@@ -32,7 +32,7 @@ Statement
 
 Conclusion
 "
-**Benedictus**:  Genau so meinte ich das. Ob Ihr nun in Zukunft  `have` und
+**Benedictus**: Genau so meinte ich das. Ob Ihr nun in Zukunft `have` und
 `suffices` verwendet, ist reine Geschmacksfrage. Hauptsache, Ihr wisst, wie Ihr
 entfernte Ziele in kleinen Schritte erreicht.
 "

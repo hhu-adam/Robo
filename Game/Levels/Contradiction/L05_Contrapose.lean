@@ -8,7 +8,7 @@ Title "Kontraposition"
 
 Introduction
 "
-**Benedictus**:  Gut, hier ist die angekündigte Frage. Versucht mal einen *direkten*
+**Benedictus**: Gut, hier ist die angekündigte Frage. Versucht mal einen *direkten*
 Beweis, ohne `by_contra`.
 "
 
@@ -20,13 +20,13 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
     Quantus schon gezeigt hatten. Hier steht ja im Grunde `Odd (n^2) → Odd n`. Und unter
     Kontraposition ist das äquivalent zu `Even n → Even (n^2)`.
 
-    **Du**:  Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein `→`.
+    **Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein `→`.
 
-    **Robo**:  Erinner dich an `revert`. Mit `revert {h}` kannst du die Annahme `{h}` als
+    **Robo**: Erinner dich an `revert`. Mit `revert {h}` kannst du die Annahme `{h}` als
     Implikationsannahme ins Beweissziel schieben."
   revert h
   Hint "
-    **Du**: Und jetzt kann ich dieses Kontrapositionslemma anwenden?  Wie hieß das noch einmal?
+    **Du**: Und jetzt kann ich dieses Kontrapositionslemma anwenden? Wie hieß das noch einmal?
 
     **Robo**: Tatsächlich kannst auch einfach `contrapose` schreiben."
   contrapose
@@ -34,7 +34,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
   rw [← even_iff_not_odd]
   rw [← even_iff_not_odd]
   Hint "
-    **Du**:  Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
+    **Du**: Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
     `even_square` anwenden!"
   apply even_square
 
@@ -42,4 +42,4 @@ NewTactic contrapose
 DisabledTactic by_contra
 TheoremTab "Nat"
 
-Conclusion "**Benedictus**: Hervorragend!  Ich glaube, damit seid Ihr jetzt ganz gut gewappnet."
+Conclusion "**Benedictus**: Hervorragend! Ich glaube, damit seid Ihr jetzt ganz gut gewappnet."

@@ -12,7 +12,7 @@ Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkeln
 
 Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
   Hint "
-    **Du**:  Jetzt müssen wir wohl die Annahme de-konstruieren.
+    **Du**: Jetzt müssen wir wohl die Annahme de-konstruieren.
 
     **Robo**: Ja, genau. Das geht am einfachsten mit `rcases {h} with ⟨h₁, h₂⟩`.
 
@@ -23,7 +23,7 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
     für `h₁` und `h₂`, zum Beispiel `rcases {h} with ⟨hA, hBC⟩`"
   Branch
     rcases h with ⟨h₁, h₂⟩
-    Hint "**Robo**: Das sieht doch schon besser aus!  Gleich nochmal!"
+    Hint "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
   rcases h with ⟨_, ⟨g , _⟩⟩
   Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
   assumption
