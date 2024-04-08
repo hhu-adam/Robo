@@ -8,11 +8,11 @@ Title "Schnittmenge und Vereinigung"
 
 Introduction
 "
-Ansonsten gibt es jegliche Lemmas in der Mathlib
+Ansonsten gibt es jegliche Lemmata in der Mathlib
 die beim Umgang mit diesen Operationen weiterhelfen. Schaue in der Bibliothek auf
-der Seite nach Lemmas, die dir hier weiterhelfen!
+der Seite nach Lemmata, die dir hier weiterhelfen!
 
-Denk daran, die lemma Namen sind blockweise aus der Aussage konstruiert. Ein lemma mit
+Denk daran, die Lemma-Namen sind blockweise aus der Aussage konstruiert. Ein Lemma mit
 der Aussage `C \\ (A ∩ B) + …` wird vermutlich mit `diff_inter_…` anfangen.
 "
 

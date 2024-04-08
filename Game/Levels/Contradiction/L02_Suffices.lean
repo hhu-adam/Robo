@@ -16,7 +16,7 @@ ganz ähnlich.
 Statement
     (A B : Prop) (h : A → ¬ B) (k₁ : A) (k₂ : B) : False := by
   Hint "
-    **Robo**: Ich weiss was er meint! Anstatt `have` kannst du auch `suffices`
+    **Robo**: Ich weiß was er meint! Anstatt `have` kannst du auch `suffices`
     verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.
 
     **Du**: Also nach `suffices g : ¬B` muss ich dann zuerst zeigen, wie man mit `g` den Beweis

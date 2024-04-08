@@ -11,7 +11,7 @@ Introduction
 **Benedictus**:  Ich habe noch eine schöne Frage zu ungeraden Quadraten für Euch.
 Aber vorher beweist Ihr besser noch diese Äquivalenz hier. Ich gaube, die hat sogar
 bei Euch einen Namen: *Kontrapositionsäquivalenz*, oder so etwas. Auf Leansch nennen wir
-die Äuqivalenz einfach `not_imp_not`. Ist doch viel einleuchtender, oder?
+die Äquivalenz einfach `not_imp_not`. Ist doch viel einleuchtender, oder?
 "
 
 Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
@@ -21,7 +21,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
     **Robo**:  Ja, klar hast du das schon einmal gesehen. Das benutzen Mathematiker doch ständig.
     Wenn ihnen zu $A ⇒ B$ nichts einfällt, zeigen sie stattdessen $¬B ⇒ ¬A$. Ich würde das ja
     statt *Kontraposition* oder `not_imp_not` eher *von_hinten_durch_die_Brust_ins_Auge* nennen.
-    Aber gut, ich will mich nicht einmisschen."
+    Aber gut, ich will mich nicht einmischen."
   Hint (hidden := true) "**Robo**: Fang doch mal mit `constructor` an."
   constructor
   intro h b

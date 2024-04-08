@@ -8,7 +8,7 @@ Title "Linarith"
 
 Introduction
 "
-**Ritha**: Und wie wärs hiermit?
+**Ritha**: Und wie wär's hiermit?
 "
 
 Statement (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by

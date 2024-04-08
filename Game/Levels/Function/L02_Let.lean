@@ -7,15 +7,15 @@ Title "let"
 
 Introduction
 "
-Ihr macht euch auf Richtung Bibliothek entlang kleiner Pfade zwischen verschiedenster Behausungen.
+Ihr macht euch auf in Richtung Bibliothek entlang kleiner Pfade zwischen verschiedensten Behausungen.
 
-**Du**: Sag mal, ich weiss jetzt dass ich eine Funktion als `fun x ↦ x - 1` definieren kann,
-aber wie kann ich der einen Namen geben?
+**Du**: Sag mal, ich weiß jetzt dass ich eine Funktion als `fun x ↦ x - 1` definieren kann,
+aber wie kann ich ihr einen Namen geben?
 
 **Robo**: Wenn jemand hier lokal eine Funktion definiert, werden die dir
 `f : ℤ → ℤ := fun x ↦ x - 1; …` als Objekt mitgeben.
 
-**Robo**: Im Beweis hingegen, kannst du mit `let f := fun (x : ℤ) ↦ x - 1` dir selbst eine
+**Robo**: Im Beweis hingegen, kannst du dir mit `let f := fun (x : ℤ) ↦ x - 1` selbst eine
 temporäre Definition machen.
 "
 

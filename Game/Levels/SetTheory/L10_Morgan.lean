@@ -9,7 +9,7 @@ Title "Morgansche Regeln"
 
 Introduction
 "
-Die De-Morgan'schen Regeln sagen `(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ`
+Die De-Morganschen Regeln sagen `(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ`
 und `(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ` sind in Lean als
 
 `compl_union` und `compl_inter`.
@@ -17,14 +17,14 @@ und `(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ` sind in Lean als
 
 Zudem gibt es die Lemmas `mem_compl_iff : x ∈ Aᶜ ↔ x ∉ A` und
 `not_mem_compl_iff`, mit welchen
-man die de-Morganschen Regeln einfach selber beweisen könnten.
+man die De-Morganschen Regeln einfach selber beweisen könnten.
 
 
 Die meisten Aufgaben über Mengen sind eine Kombination von `rw` und `simp_rw` verschiedenster
 NewTheorem in `import Mathlib.Data.Set`.
 
 Die Taktik `simp_rw` funktioniert ähnlich wie `rw`, aber sie versucht jedes Lemma so oft
-wie möglich anzuwenden. Wir kennen also 4 etwas verwandte Optionen um Lemmas und Theoreme zu
+wie möglich anzuwenden. Wir kennen also 4 etwas verwandte Optionen um Lemmata und Theoreme zu
 brauchen:
 
 - `rw [lemma_A, lemma_B]`: führt jedes Lemma genau einmal aus in der Reihenfolge.
@@ -43,7 +43,7 @@ open Set
 Statement
     (A B C : Set ℕ) : (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
   Hint "Oft kann es auch nützlich sein, mit `rw [← …]` rückwärts umzuschreiben.
-  Der ganze Level ist mit `rw`/`simp_rw` und den Lemmas in deiner Bibliothek
+  Das ganze Level ist mit `rw`/`simp_rw` und den Lemmata in deiner Bibliothek
   lösbar."
   rw [←compl_union]
   rw [←union_diff_distrib]

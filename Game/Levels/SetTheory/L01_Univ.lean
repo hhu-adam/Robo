@@ -11,7 +11,7 @@ Introduction
 euch, dieses zu entschlüsseln ist, euch ausgiebig mit der Bevölkerung hier zu unterhalten.
 Lebt mit ihnen, redet mit ihnen und ihr werdet die Sprache automatisch lernen.
 
-**Mengea**: Seit aber vorgewarnt, die Leute hier denken ganz viel über Mengen nach,
+**Mengea**: Seid aber vorgewarnt, die Leute hier denken ganz viel über Mengen nach,
 womit sie immer *homogene Mengen* meinen. Eine Menge natürlicher Zahlen `{1, 4, 6}` ist
 verständlich, aber sowas wie eine Menge `{(2 : ℕ), {3, 1}, \"e\", (1 : ℂ)}` gibt es hier
 einfach nicht. Punkt.
@@ -19,7 +19,7 @@ einfach nicht. Punkt.
 **Robo**: Als Kontext: Wenn `A` ein beliebiger `Type` ist, dann ist `(U : Set A)` eine Menge
 mit Elementen aus `A`
 
-**Mengea**: Damit ich weiss, dass ihr euch grundsätzlich mit den Leuten austauschen könnt,
+**Mengea**: Damit ich weiß, dass ihr euch grundsätzlich mit den Leuten austauschen könnt,
 erklärt mir doch folgendes:
 "
 

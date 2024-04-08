@@ -10,7 +10,7 @@ Introduction
 Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen
 applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich
 nicht einigen, welche.
-Ihr heute abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo
+Ihr hört abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo
 vorsichtshalber schon einmal die entsprechenden Definitionen an:
 
 ```

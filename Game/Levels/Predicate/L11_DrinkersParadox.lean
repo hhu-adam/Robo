@@ -79,7 +79,7 @@ DefinitionDoc Inhabited as "Inhabited"
 
 /-- Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.
 
-Man sollte generell nichts über `default` annehmen, aussert dass es existiert.
+Man sollte generell nichts über `default` annehmen, außer dass es existiert.
 
 Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:
 z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`

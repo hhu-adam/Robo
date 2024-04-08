@@ -12,7 +12,7 @@ Introduction
 Etwas weiter kommt ihr an einem kleinen Gemüsestand vorbei. Da ihr nicht so
 richtig einen Plan habt, fragt ihr den Verkäufer.
 
-**Verkäufer**: Hier ist was ganz wichtiges, was ihr noch oft brauchen werdet:
+**Verkäufer**: Hier ist was ganz Wichtiges, was ihr noch oft brauchen werdet:
 Ein zentrales Lemma ist `Subset.antisymm_iff` welches folgendes sagt:
 
 ```

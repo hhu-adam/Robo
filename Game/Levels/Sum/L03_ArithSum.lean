@@ -60,7 +60,7 @@ open BigOperators
   Hint (hidden := true)
   "**Du**: Und wie wende ich jetzt die Induktionshypothese an?
 
-  **Robo mit `rw` wie jede andere Annahme auch."
+  **Robo** mit `rw` wie jede andere Annahme auch."
   rw [hd]
   Hint "**Du**: Der Rest ist einfach Rechnerei.
 

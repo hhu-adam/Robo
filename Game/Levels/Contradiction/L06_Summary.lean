@@ -24,7 +24,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
     **Robo**:  Okay, also diesmal fangen wir mit `by_contra g` an!"
   by_contra g
   Hint "**Robo**: Jetzt würde ich einen Widerspruch zu `Odd (n ^ 2)` führen."
-  Hint (hidden := true) "**Robo**: Also `suffices g : ¬ Odd (n ^ 2)`."
+  Hint (hidden := true) "**Robo**: Also `suffices d : ¬ Odd (n ^ 2)`."
   suffices d : ¬ Odd (n ^ 2)
   contradiction
   rw [←even_iff_not_odd] at *
