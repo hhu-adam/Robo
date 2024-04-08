@@ -4,7 +4,7 @@ import Game.Levels.Contradiction
 import Game.Levels.Function
 import Game.Levels.Implication
 import Game.Levels.Inequality
-import Game.Levels.Prime
+-- import Game.Levels.Prime
 import Game.Levels.Predicate
 import Game.Levels.Proposition
 import Game.Levels.SetTheory
@@ -13,7 +13,7 @@ import Game.Levels.MatrixTrace
 import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
-import Game.Levels.NewStuff
+-- import Game.Levels.NewStuff
 
 Title "Robo"
 Introduction
@@ -84,6 +84,8 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 CoverImage "images/cover.png"
 
 Dependency Inequality → SetTheory
+
+set_option lean4game.showDependencyReasons true
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

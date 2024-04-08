@@ -1,5 +1,5 @@
 import Game.Metadata
-
+import Game.Levels.SetTheory.L11_SSubset
 
 
 World "SetTheory"
@@ -26,7 +26,7 @@ Die folgende Aufgabe ist entsprechend mit `rfl` lösbar.
 
 open Set
 
-/-- Die Menge $\\{4, 9\\}$ ist per Definition $\\{4}\\cup\\{9\\}$. -/
+/-- Die Menge `{4, 9}` ist per Definition `{4} ∪ {9}`. -/
 Statement :
     ({4, 9} : Set ℕ) = Set.insert 4 {9} := by
   rfl

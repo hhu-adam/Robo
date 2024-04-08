@@ -58,6 +58,9 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   assumption
   Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
   push_neg at h
+  Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
+  
+  **Robo**: Schau dir mal an wie man `rcases` auf die Annahme `{h}` anwenden könnte."
   rcases h with ⟨p, hp⟩
   use p
   intro hp'

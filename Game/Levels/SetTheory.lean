@@ -11,12 +11,15 @@ import Game.Levels.SetTheory.L10_Morgan
 import Game.Levels.SetTheory.L11_SSubset
 import Game.Levels.SetTheory.L12_Insert
 import Game.Levels.SetTheory.L13_Insert
--- import Game.Levels.SetTheory.L14_SetOf
--- import Game.Levels.SetTheory.L15_Powerset
--- import Game.Levels.SetTheory.L16_Disjoint
--- import Game.Levels.SetTheory.L17_SetOf
--- import Game.Levels.SetTheory.L18_SetOf
--- import Game.Levels.SetTheory.L19_Subtype
+import Game.Levels.SetTheory.L14_SetOf
+import Game.Levels.SetTheory.L15_Powerset
+import Game.Levels.SetTheory.L16_Disjoint
+import Game.Levels.SetTheory.L17_SetOf
+import Game.Levels.SetTheory.L18_SetOf
+import Game.Levels.SetTheory.L19_Subtype
+import Game.Levels.SetTheory.L20_UnionInter
+import Game.Levels.SetTheory.L21_Summary
+
 
 World "SetTheory"
 Title "Mengenlehre"
@@ -24,11 +27,7 @@ Title "Mengenlehre"
 Image "images/SetTheory.png"
 
 Introduction
-"[Note: von hier an sind die Levels leider noch nicht vollständig. Evt. müsst ihr etwas
-ausprobieren oder
-fragen, wenn ihr nicht weiterkommt.]
-
-Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
+"Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
 Gesellschaften wohnen, die sich in der Einöde zurechtfinden.
 
 Ihr steuert einen der wenigen befestigten Standorte am Fuße eines Berges an.
@@ -42,5 +41,5 @@ Sofort begrüßt euch eine ältere Frau, die sich als *Mengea*, die Beschützeri
 vorstellt.
 "
 
--- World "SetTheory2"
--- Title "Mehr Mengenlehre"
+World "SetTheory2"
+Title "Mehr Mengenlehre"

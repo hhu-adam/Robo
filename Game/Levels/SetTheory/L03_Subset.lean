@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Levels.SetTheory.L02_Empty
 
 
 World "SetTheory"
@@ -30,12 +31,19 @@ Statement Set.subset_univ (A : Set ℕ) : A ⊆ univ := by
   **Du**: Also kann ich mit `intro` anfangen, wie ich das bei einem `∀` funktioniert?
 
   **Robo**: Das ist korrekt."
-  intro h hA
+  intro h _hA
   Hint (hidden := true) "**Robo**: Das dürfte eine Trivialität sein."
-  trivial --apply mem_univ -- or `trivial`.
+  simp
+
+/--
+`A ⊆ B` ist definiert als `∀ x, x ∈ A → x ∈ B`.
+
+(`\sub`)
+-/
+DefinitionDoc Set.Subset as "⊆"
 
 DisabledTactic tauto simp
-NewDefinition Symbol.Subset
+NewDefinition Set.Subset
 TheoremTab "Set"
 
 Conclusion "Damit drehen sich die beiden Mädchen um und folgen dem Jungen."

@@ -1,5 +1,5 @@
 import Game.Metadata
-
+import Game.Levels.SetTheory.L06_Nonempty
 
 World "SetTheory"
 Level 7
@@ -18,9 +18,7 @@ leeren Menge vereinfachen.
 
 open Set
 
-/--  -/
 Statement (A B : Set ℕ) : (A ∪ ∅) ∩ B = A ∩ (univ ∩ B) := by
   simp
 
-NewTactic simp
 TheoremTab "Set"
