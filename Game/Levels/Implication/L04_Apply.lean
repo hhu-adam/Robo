@@ -7,7 +7,7 @@ Title "Implikation"
 
 Introduction
 "
-**Operationsleiter**:  Das hier ist jetzt weider ein lokales Problem.
+**Operationsleiter**:  Das hier ist jetzt wieder ein lokales Problem.
 "
 
 Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
