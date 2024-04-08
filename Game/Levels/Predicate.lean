@@ -16,7 +16,7 @@ Title "Quantus"
 
 Image "images/Quantus.png"
 
-Introduction "Auf Quantus erwartet Euch bereits ein großer Ansammlung von Formalosopheninnen.
+Introduction "Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosopheninnen.
 Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.
 Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
 
