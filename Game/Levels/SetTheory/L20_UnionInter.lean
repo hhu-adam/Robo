@@ -1,5 +1,5 @@
 import Game.Metadata
-
+import Game.Levels.SetTheory.L19_Subtype
 
 
 World "SetTheory2"
@@ -17,6 +17,7 @@ von Mengen: $\\bigcup_i A_ i$ und $\\bigcap_j B_ j$.
 open Set
 
 /--  -/
-Statement : True := sorry
+Statement : True := by
+  trivial
 
 TheoremTab "Set"

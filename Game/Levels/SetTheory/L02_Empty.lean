@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Levels.SetTheory.L01_Univ
 
 World "SetTheory"
 Level 2
@@ -19,10 +20,14 @@ Statement Set.not_mem_empty {A : Type} (x : A) :
     tautologisches Zeugs...
 
     **Robo**: Dann behaupte das doch."
-  tauto
+  simp
 
-NewTheorem Set.mem_univ
+DefinitionDoc Set.empty as "∅"
+
+NewDefinition Set.empty
+--NewTheorem Set.mem_univ
 TheoremTab "Set"
+
 
 Conclusion "
 Der Junge rennt weiter.

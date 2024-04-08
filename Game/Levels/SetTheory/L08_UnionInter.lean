@@ -1,5 +1,5 @@
 import Game.Metadata
-
+import Game.Levels.SetTheory.L07_UnionInter
 
 World "SetTheory"
 Level 8
@@ -31,4 +31,5 @@ DisabledTactic tauto
 NewTheorem Set.diff_inter Set.union_assoc Set.union_diff_distrib Set.univ_union
 TheoremTab "Set"
 
-Conclusion "Wie du vielleicht bemerkt hast, könnte `tauto` sowas automatisch lösen."
+-- Nein kann es nicht. Wieso nicht?
+-- Conclusion "Wie du vielleicht bemerkt hast, könnte `tauto` sowas automatisch lösen."

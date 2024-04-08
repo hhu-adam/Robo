@@ -16,11 +16,13 @@ richtig einen Plan habt, fragt ihr den Verkäufer.
 Ein zentrales Lemma ist `Subset.antisymm_iff` welches folgendes sagt:
 
 ```
-lemma antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A
+lemma antisymm_iff {α : Type} {A B : Set α} :
+  A = B ↔ A ⊆ B ∧ B ⊆ A
 ```
 
-Fast immer wenn man Gleichheiten von Mengen zeigen muss, will man diese in zwei Ungleichungen
-aufteilen.
+** Verkäufer**: Fast immer wenn man Gleichheiten von Mengen zeigen muss, will
+man diese in zwei Ungleichungen aufteilen. Hier, ich gebe euch mal ein
+Beispiel:
 "
 
 open Set Subset
@@ -28,23 +30,39 @@ open Set Subset
 Statement Set.subset_empty_iff {A : Type _} (s : Set A) :
     s ⊆ ∅ ↔ s = ∅ := by
   Hint "**Du**: Ja, die einzige Teilmenge der leeren Menge ist die leere Menge.
-  Das ist doch eine Tautologie?
+  Das wird schon stimmen.
 
-  **Robo**: Ja schon, aber zuerst einmal explizit."
+  **Verkäufer**: Also zeig mir das mal!"
   Hint (hidden := true) "**Robo**: Fang doch einmal mit `constructor` an."
   constructor
-  intro h
-  Hint "**Robo**: Gleichheit zwischen Mengen kann man zum Beispiel zeigen,
-  indem man `A ⊆ B` und `B ⊆ A` zeigt.
+  · intro h
+    Hint "**Verkäufer**: Jetzt könnt ihr mein Lieblingslemma brauchen!
 
-  Dieser Schritt ist `apply Subset.antisymm`"
-  apply Subset.antisymm
-  assumption
-  Hint "**Robo**: Hier ist das Lemma `empty_subset` hilfreich."
-  apply empty_subset
-  intro h
-  rw [h]
+    Dann sind `s ⊆ ∅` und `∅ ⊆ s` separat zu zeigen."
+    Branch
+      -- alternative
+      apply Subset.antisymm
+    rw [Subset.antisymm_iff]
+    Branch
+      constructor
+      · assumption
+      · simp only [empty_subset]
+    tauto
+  · intro h
+    Hint (hidden := true) "**Robo**: Was kann man denn mit `{h}` jetzt machen?
+
+    **Du**: Wenn ich damit umschreibe erhalte ich `∅ ⊆ ∅`.
+
+    **Robo**: Was `rw` als Reflexivität direkt löst!
+    "
+    -- TODO: Is it confusing that `rw` closes this?
+    rw [h]
+
+Conclusion ""
+
+/---/
+TheoremDoc Set.Subset.antisymm_iff as "Subset.antisymm_iff" in "Set"
 
 DisabledTactic tauto
-NewTheorem Set.Subset.antisymm Set.Subset.antisymm_iff Set.empty_subset
+NewTheorem Set.Subset.antisymm_iff Set.empty_subset
 TheoremTab "Set"
