@@ -120,7 +120,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       rw [hR]
 
 NewDefinition LeftInverse RightInverse
-NewTheorem Exists.choose Exists.choose_spec congrArg congrFun
+NewTheorem Exists.choose Exists.choose_spec
 DisabledTheorem Function.bijective_iff_has_inverse
 TheoremTab "Logic"
 
