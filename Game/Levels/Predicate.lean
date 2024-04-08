@@ -30,9 +30,9 @@ Nun herrscht betretenes Schweigen. Alle zucken mit den Schultern.
 
 **Du**:  Habt Ihr überhaupt eine Königin?
 
-**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königen, wir haben eine Königen.
+**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königin, wir haben eine Königin.
 
-**Robo** *(zu dir)*:  Ich fasse mal zusammen. Es existiert eine Königen, aber keiner weiß, wer
+**Robo** *(zu dir)*:  Ich fasse mal zusammen. Es existiert eine Königin, aber keiner weiß, wer
 sie ist …
 
 **Du**: Ist das nicht ein Widerspruch?
@@ -42,13 +42,13 @@ sie ist …
 
 Du bist dir nicht ganz sicher, wie ernst er das meint.
 
-**Du**:  Dann ich schlage vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben
+**Du**:  Dann schlage ich vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben
 wir es ja insbesondere der Königin übergeben.
 
-**Du** *(in die Menge*):  Wir haben Euch ein Päckchen von Implis gebracht. Hier, das ist für Euch.
+**Du** *(in die Menge)*:  Wir haben Euch ein Päckchen von Implis gebracht. Hier, das ist für Euch.
 
 Robo spuckt es aus, wirft es in die Menge, und die Formalosophinnen reißen es auf. Darin befinden
-sich ein paar loser Seiten, die sie sofort eingehend studieren.
+sich ein paar lose Seiten, die sie sofort eingehend studieren.
 
 Zwei Minuten später liegen die Seiten wieder bei Euch. Es sind wieder mathematische Probleme.
 Und die Formalosophinnen wollen sehen, wie Ihr sie löst.
