@@ -16,7 +16,7 @@ Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := b
 
     **Du**: Warum schreibt er dann nicht `{n} ∈ ℕ`??
 
-    **Robo**: Weil das hier alles komische Typen sind …  Ich kann dir das später mal in Ruhe erklären.
+    **Robo**: Weil das hier alles komische Typen sind … Ich kann dir das später mal in Ruhe erklären.
     Jetzt will ich erst einmal die Frage entschlüsseln.
 
     **Robo**: Also, `{h₁}`, `{h₂}`, `{h₃}` sind einfach nur Namen für verschiedene Annahmen, und zwar

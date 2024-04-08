@@ -7,7 +7,7 @@ Title "Linarith"
 
 Introduction
 "
-**Robo**:  Dann versuchs mal hiermit!
+**Robo**: Dann versuchs mal hiermit!
 
 $$
 \\begin{aligned}

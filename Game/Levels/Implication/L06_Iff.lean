@@ -10,7 +10,7 @@ Introduction
 **Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen
 konnten. Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von
 solchen Doppelbändern abgeraten wird. Aber vielleicht sind sie ja unter bestimmten
-Voraussetzungen doch sicher?  Was meint Ihr zu diesem Fall?
+Voraussetzungen doch sicher? Was meint Ihr zu diesem Fall?
 "
 
 Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
@@ -37,7 +37,7 @@ heißen bei `(h : A ↔ B)` die beiden Teile `h.mp` und `h.mpr`.
 **Du**: Also `h.mp` ist `A → B`? Wieso `mp`?
 
 **Robo**: `mp` steht für Modus Ponens`. Der Modus ponens ist eine schon in der antiken
-Logik geläufige Schlussfigur, die in vielen logischen Systemen …  Ach nee, das wolltest
+Logik geläufige Schlussfigur, die in vielen logischen Systemen … Ach nee, das wolltest
 du ja nicht hören. Das \"r\" in `mpr` steht für \"reverse\", weil's die Rückrichtung ist.
 "
 

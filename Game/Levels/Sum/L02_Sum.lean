@@ -17,8 +17,8 @@ open BigOperators
 Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : ℕ)) := by
   Hint "**Du**: Hmm, wieder `simp`?
 
-  **Robo**: Nicht ganz. `simp` benützt nur Lemmas, die klar eine Vereinfachung darstellen.
-  Im Lean-Duden sind diese Lemmas mit `@[simp]` markiert.
+  **Robo**: Nicht ganz. `simp` benützt nur Lemmata, die klar eine Vereinfachung darstellen.
+  Im Lean-Duden sind diese Lemmata mit `@[simp]` markiert.
   Hier brauchen wir aber folgende Identität:
 
   $$
@@ -30,7 +30,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
 
   **Du**: Hat diese Gleichheit denn wenigstens einen Namen.
 
-  **Robo**:  Sie heißt `sum_add_distrib`.
+  **Robo**: Sie heißt `sum_add_distrib`.
   "
   rw [sum_add_distrib]
   Hint "**Robo**: Die zweite Summe `∑ x : Fin n, 1` kann jetzt aber mit

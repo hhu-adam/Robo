@@ -22,7 +22,7 @@ dieses Element erfüllt ist.
 
 open Set
 
-Statement : 3 ∈ {n : ℕ | Odd n}  := by
+Statement : 3 ∈ {n : ℕ | Odd n} := by
   rw [mem_setOf]
   Hint (hidden := true) "**Robo**: Zur Erinnerung, wenn du nicht mehr weisst, wie `Odd` definiert
   ist, benutze `rw [Odd]`."

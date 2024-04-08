@@ -11,21 +11,21 @@ Introduction
 
 Wieder herrscht längeres Schweigen. Dann auf einmal:
 
-**Alle**:  Es gibt unter uns eine Person, wenn die redet, dann reden alle!
+**Alle**: Es gibt unter uns eine Person, wenn die redet, dann reden alle!
 
 Du kratzt Dich am Kopf.
 
-**Robo**:  Ist doch klar. Das ist auf jedem bewohnten Planeten so!
+**Robo**: Ist doch klar. Das ist auf jedem bewohnten Planeten so!
 
-**Du**:  Was??
+**Du**: Was??
 
-**Robo**:  Das ist eine Version vom Drinker's Paradox!  Kennst du das nicht?  Dann lies
-das am besten Mal in deiner Handbibliothek nach!  *In jeder Bar gibt es eine Person mit
-der Eigenschaft, dass alle trinken, wenn sie trinkt.*  Genauer gesagt: in jeder nicht-leeren Bar.
+**Robo**: Das ist eine Version vom Drinker's Paradox! Kennst du das nicht? Dann lies
+das am besten Mal in deiner Handbibliothek nach! *In jeder Bar gibt es eine Person mit
+der Eigenschaft, dass alle trinken, wenn sie trinkt.* Genauer gesagt: in jeder nicht-leeren Bar.
 
 **Du**: Glaube ich nicht.
 
-**Robo**:  Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!
+**Robo**: Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!
 "
 
 open Function
@@ -59,7 +59,7 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
   push_neg at h
   Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
-  
+
   **Robo**: Schau dir mal an wie man `rcases` auf die Annahme `{h}` anwenden könnte."
   rcases h with ⟨p, hp⟩
   use p
@@ -82,7 +82,7 @@ DefinitionDoc Inhabited as "Inhabited"
 
 /-- Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.
 
-Man sollte generell nichts über `default` annehmen, aussert dass es existiert.
+Man sollte generell nichts über `default` annehmen, außer dass es existiert.
 
 Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:
 z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`
@@ -96,9 +96,9 @@ NewTheorem Inhabited.default
 
 Conclusion
 "
-**Du**:  Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!
+**Du**: Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!
 
-**Robo**:  Dann fliegen wir am besten weiter!  Aber bevor du fragst – hier ist wieder ein Überblick, was du auf diesem Planeten gelernt hast.
+**Robo**: Dann fliegen wir am besten weiter! Aber bevor du fragst – hier ist wieder ein Überblick, was du auf diesem Planeten gelernt hast.
 
 
 |               | Beschreibung                |

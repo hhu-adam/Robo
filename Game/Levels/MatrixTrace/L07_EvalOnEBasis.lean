@@ -12,7 +12,7 @@ In this level, we will show that a linear functional `f` on the space of matrice
 
 open Nat Matrix BigOperators StdBasisMatrix
 
--- TODO: (JE) does it make sense to copy some API from `StdBasisMatrix` to  `E`?
+-- TODO: (JE) does it make sense to copy some API from `StdBasisMatrix` to `E`?
 -- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
 theorem Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
   apply Matrix.StdBasisMatrix.mul_of_ne (h := h)

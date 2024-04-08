@@ -60,9 +60,9 @@ Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.
 
 **Du**: Kann uns hier irgendjemand vielleicht ein bisschen Orientierung im Formaloversum geben?
 
-**Alle**:  Ja, ja.
+**Alle**: Ja, ja.
 
-**Du**:  Wer denn?
+**Du**: Wer denn?
 
 Die Frage war wieder zu konkret. Betretenes Schweigen.
 "

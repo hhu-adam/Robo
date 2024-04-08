@@ -9,7 +9,7 @@ Introduction
 "
 The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0` elsewhere. They are extemely sparse. In below, `E i j` are defined in terms of mathlib's `stdBasisMatrix`.
 
-`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere.  `stdBasisMatrix` matrices are closed under scalar multiplication, becasue
+`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere. `stdBasisMatrix` matrices are closed under scalar multiplication, becasue
 `c • stdBasisMatrix i j 1 = stdBasisMatrix i j c`, a theorem witnessed by `smul_stdBasisMatrix`.
 
 "

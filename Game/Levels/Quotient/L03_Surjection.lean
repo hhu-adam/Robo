@@ -9,12 +9,12 @@ Title "Quotient"
 Introduction
 "
 For a congruence `r` on a type `A`, the quotient type `Quotient r` is the type of
-elements of `A` modulo `r`.  In `Quotient r` two elements `a` and `b` of `A`
+elements of `A` modulo `r`. In `Quotient r` two elements `a` and `b` of `A`
 are considered equal if they are congruent modulo `r`.
 
 A mathematically common notation for `Quotient r` is `A/r`.
 
-There is a function `Quotient.mk : A → Quotient r` which maps an element `a : A` to  `⟦a⟧`, a
+There is a function `Quotient.mk : A → Quotient r` which maps an element `a : A` to `⟦a⟧`, a
 typical element of `Quotient r`.
 
 If elements `a b : A` are congruent, then `⟦a⟧ = ⟦b⟧`. This fact is witnessed by `Quotient.sound`.

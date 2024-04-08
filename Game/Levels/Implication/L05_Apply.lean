@@ -25,7 +25,7 @@ Statement
   Hint "
     **Du**: Also ich muss einen Pfad von Implikationen $A \\Rightarrow I$ finden.
 
-    **Robo**:  Lass mich mal raten, wie wir anfangen … Wieder `intro`?"
+    **Robo**: Lass mich mal raten, wie wir anfangen … Wieder `intro`?"
 
   intro hyp
   Hint (hidden := true) "**Robo**: Na wieder `apply`, was sonst."
@@ -54,7 +54,7 @@ Statement
   apply i at hyp
   Branch
     apply k at hyp
-    Hint "**Robo**:  Ehm …"
+    Hint "**Robo**: Ehm …"
   apply l at hyp
   apply p at hyp
   assumption

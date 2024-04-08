@@ -20,9 +20,9 @@ Statement
   (n m : ℕ) : m < n ↔ m.succ ≤ n := by
   Hint "
     **Robo**: Denk lieber nicht zu lange darüber nach. Das ist eine Kuriosität,
-    dass `m < n` auf `ℕ` per Definition  als `m + 1 ≤ n` definiert ist!
+    dass `m < n` auf `ℕ` per Definition als `m + 1 ≤ n` definiert ist!
 
-    **Lina**: Du verdirbst den Witz!  Ich wollte ihn doch nur testen."
+    **Lina**: Du verdirbst den Witz! Ich wollte ihn doch nur testen."
   rfl
 
 OnlyTactic rfl

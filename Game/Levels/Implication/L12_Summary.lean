@@ -7,12 +7,12 @@ Title "Zusammenfassung"
 
 Introduction
 "
-**Operationsleiter**: Ihr habt mir wirklich so geholfen!  Hier ist das letzte Problem.
+**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem.
 Das habe ich von meinem Vorgänger geerbt. Er hat behauptet, wenn wir das lösen können,
 dann läuft hier wieder alles. Aber es sah mir immer viel zu schwierig aus, um es überhaupt
 zu versuchen. Wollt Ihr es einmal probieren?
 
-**Du**: Klar, zeig her!  Robo, kannst du mir vielleicht auch noch einmal so eine nette
+**Du**: Klar, zeig her! Robo, kannst du mir vielleicht auch noch einmal so eine nette
 Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten gelernt habe?
 
 **Robo**: Hier ist die Übersicht:
@@ -61,14 +61,14 @@ Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
 DisabledTactic tauto
 
 Conclusion "
-**Operationsleiter**: Das ist ja fantastisch!  Tausend Dank!  Dann will ich Euch auch gar
+**Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich Euch auch gar
 nicht länger aufhalten.
 Ihr wollt bestimmt weiter zum Planeten Quantus, oder?
 
 **Du**: Ehm, vielleicht …
 
 **Operationsleiter**: Dann habe ich noch eine letzte Bitte. Ich habe hier noch ein Päckchen
-für die Königin von Quantus!  Auch schon von meinem Vorgänger geerbt. Die Post will es
+für die Königin von Quantus! Auch schon von meinem Vorgänger geerbt. Die Post will es
 nicht annehmen, weil ich die Adresse nicht weiß. Könntet Ihr es vielleicht zu ihr mitnehmen?
 
 **Du**: Klar! Robo, halt mal.

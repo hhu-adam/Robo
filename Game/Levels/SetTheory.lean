@@ -30,7 +30,7 @@ Introduction
 "Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
 Gesellschaften wohnen, die sich in der Einöde zurechtfinden.
 
-Ihr steuert einen der wenigen befestigten Standorte am Fusse eines Berges an.
+Ihr steuert einen der wenigen befestigten Standorte am Fuße eines Berges an.
 
 **Robo**: Die Bevölkerung hier lebt so abgekapselt vom Rest des Universums, dass sie sich
 vermutlich noch viel besser mit alter Sprache und Schrift auskennt.

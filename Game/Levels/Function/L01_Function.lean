@@ -9,7 +9,7 @@ Title "Anonyme Funktionen"
 
 Introduction
 "
-Auf die Frage hin, ob sie von einem Bibliothek wisse, erzählt euch das kleine Mädchen,
+Auf die Frage hin, ob sie von einer Bibliothek wisse, erzählt euch das kleine Mädchen,
 dass es auf der Insel nur einen gäbe, aber sie bedrängt euch so mit einer Frage,
 dass sie euch gar nicht sagt, wo dieser zu finden sei.
 "
@@ -24,7 +24,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
     **Robo**: Doch, die brauchen das gleiche Zeichen für beides.
 
     **Du**: Dann ist `f : ℤ → ℤ` also einfach abstrakt irgendeine Funktion,
-    wie definier ich aber jetzt konkret eine Abbildungsvorschrift?
+    wie definiere ich aber jetzt konkret eine Abbildungsvorschrift?
 
     **Robo**: Man kennt hier eine Notation für eine anonyme Funktion:
     `fun (x : ℤ) ↦ x ^ 2` ist

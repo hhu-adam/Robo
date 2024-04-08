@@ -22,7 +22,7 @@ open Set
 
 /--  -/
 Statement (X Y : Set ℕ):
-    𝒫 X ∪ 𝒫 Y ⊆ 𝒫 (X ∪ Y)  := by
+    𝒫 X ∪ 𝒫 Y ⊆ 𝒫 (X ∪ Y) := by
   Hint "**Robo**: Fang mal mit `intro` an, wie das bei `⊆` fast immer der Fall ist."
   intro A hA
   Hint "**Robo**: Als nächstes must du noch die Annahme `{A} ∈ 𝒫 X ∪ 𝒫 Y` zu

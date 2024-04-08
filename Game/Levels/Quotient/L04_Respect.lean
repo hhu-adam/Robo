@@ -30,7 +30,7 @@ In this level you show that `rangeFactorization f` respects the congruence `ker 
 open Function Set Setoid
 
 Statement respects_ker_rel {f : A → B} :
-    ∀ (x y : A), (ker f).Rel x y →  rangeFactorization f x = rangeFactorization f y := by
+    ∀ (x y : A), (ker f).Rel x y → rangeFactorization f x = rangeFactorization f y := by
   intro x y h
   ext
   simp only [rangeFactorization_coe]

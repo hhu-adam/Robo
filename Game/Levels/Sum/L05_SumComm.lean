@@ -13,7 +13,7 @@ Title "Summe vertauschen"
 
 Introduction
 "
-**Babylonier**:  Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!
+**Babylonier**: Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!
 
 Die beiden Freunde stehen vor zwei Türmen mit einer kleinen Brücke, die zwischen den ihnen verläuft.
 Aber die Tafel am Eingang ist so sehr verwittert, dass sie nicht mehr lesbar ist.
@@ -29,7 +29,7 @@ Natürlich fangt ihr an zu rätseln, was darunter stand.
 
 Statement
 (n m : ℕ) : ∑ i : Fin n, ∑ j : Fin m, ( 2 ^ (i : ℕ) * (1 + j) : ℕ) =
-    ∑ j : Fin m, ∑ i : Fin n, ( 2 ^ (i : ℕ)  * (1 + j) : ℕ) := by
+    ∑ j : Fin m, ∑ i : Fin n, ( 2 ^ (i : ℕ) * (1 + j) : ℕ) := by
   Hint "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um sicher zu sein.
 
   **Du**: Hast du nicht ein Lemma dafür?

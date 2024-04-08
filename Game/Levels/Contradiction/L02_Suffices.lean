@@ -8,7 +8,7 @@ Title "Es reicht!"
 
 Introduction
 "
-**Benedictus**:  Ihr hättet natürlich auch erst das Hauptresultat und dann das
+**Benedictus**: Ihr hättet natürlich auch erst das Hauptresultat und dann das
 Zwischenresultat beweisen können. Das könnt Ihr ja mal an dieser Aufgabe probieren, die ist
 ganz ähnlich.
 "
@@ -16,7 +16,7 @@ ganz ähnlich.
 Statement
     (A B : Prop) (h : A → ¬ B) (k₁ : A) (k₂ : B) : False := by
   Hint "
-    **Robo**: Ich weiss was er meint! Anstatt `have` kannst du auch `suffices`
+    **Robo**: Ich weiß was er meint! Anstatt `have` kannst du auch `suffices`
     verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.
 
     **Du**: Also nach `suffices g : ¬B` muss ich dann zuerst zeigen, wie man mit `g` den Beweis
@@ -32,7 +32,7 @@ Statement
 
 Conclusion
 "
-**Benedictus**:  Genau so meinte ich das. Ob Ihr nun in Zukunft  `have` und
+**Benedictus**: Genau so meinte ich das. Ob Ihr nun in Zukunft `have` und
 `suffices` verwendet, ist reine Geschmacksfrage. Hauptsache, Ihr wisst, wie Ihr
 entfernte Ziele in kleinen Schritte erreicht.
 "

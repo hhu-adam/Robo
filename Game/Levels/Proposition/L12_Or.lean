@@ -44,7 +44,7 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
     assumption
 
 Conclusion
-"**Du**  Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
+"**Du** Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
 Kannst du mir vorher noch einmal kurz alles Leansch zusammenfassen,
 das du mir bis hierher beigebracht hast?
 

@@ -235,7 +235,7 @@ weitermachen und das Zwischenresultat verwenden kann.
 
 ## Hilfreiche Resultate
 
-* `suffices h : P` funktioniert genau gleich, aussert das die beiden entstehenden Beweise
+* `suffices h : P` funktioniert genau gleich, außer dass die beiden entstehenden Beweise
   vertauscht sind.
 * `let h : Prop := A ∧ B` ist verwandt mit `have`, mit Unterschied, dass man mit `let`
   eine temporäre Definition einführt.
@@ -256,8 +256,8 @@ Diese Taktik erstellt zwei Goals:
 ## Modifikationen in diesem Spiel
 
 * `induction n with d hd` benennt Induktionsvariable und -hypothese. (das ist Lean3-Syntax)
-und funktioniert ausserhalb vom Spiel nicht genau so.
-* Ausserhalb des Spiels kriegst du `Nat.zero` und `Nat.succ n` anstatt `0` und `n + 1`
+und funktioniert außerhalb vom Spiel nicht genau so.
+* Außerhalb des Spiels kriegst du `Nat.zero` und `Nat.succ n` anstatt `0` und `n + 1`
 als Fälle. Diese
 Terme sind DefEq, aber manchmal benötigt man die lemmas `zero_eq` und `Nat.succ_eq_add_one`
 um zwischen den schreibweisen zu wechseln
@@ -364,7 +364,7 @@ TacticDoc linarith
 
 ## Details
 
-`psuh_neg` schiebt das `¬` soweit nach innen wie möglich.
+`push_neg` schiebt das `¬` soweit nach innen wie möglich.
 
 ## Hilfreiche Resultate
 

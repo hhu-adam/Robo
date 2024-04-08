@@ -15,11 +15,11 @@
 
 -- Introduction
 -- "
--- 2^n > n^2   für   n ≥ 5
+-- 2^n > n^2 für n ≥ 5
 -- "
 
 -- Statement
--- "2^n > n^2   für   n ≥ 5"
+-- "2^n > n^2 für n ≥ 5"
 --     (n : ℕ) : (n + 5)^2 < 2 ^ (n + 5) := by
 -- induction' n with n ih
 -- simp
@@ -33,4 +33,4 @@
 -- example (n : ℕ) (h : 5 ≤ n) : n^2 < 2 ^ n
 -- | 0 | 1 | 2 | 3 | 4 => by
 --   sorry
--- | n + 5  => by sorry
+-- | n + 5 => by sorry

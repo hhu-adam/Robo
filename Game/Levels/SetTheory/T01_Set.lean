@@ -1,6 +1,6 @@
 -- import Game.Metadata
 
--- 
+--
 
 -- set_option tactic.hygienic false
 
@@ -20,7 +20,7 @@
 -- Menge `{(2 : ℕ), {3, 1}, \"e\", (1 : ℂ)}` definieren, da die Elemente unterschiedliche Typen haben.
 
 -- Für einen Typen `{X : Type*}` definiert damit also `set X` der Type aller Mengen mit Elementen aus
--- `X`.  `set.univ` ist dann ganz `X` also Menge betrachtet, und es ist wichtig den Unterschied
+-- `X`. `set.univ` ist dann ganz `X` also Menge betrachtet, und es ist wichtig den Unterschied
 -- zu kennen: `(univ : set X)` und `(X : Typ*)` haben nicht den gleichen Typ und sind damit auch nicht
 -- austauschbar!
 

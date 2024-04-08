@@ -7,14 +7,14 @@ Title "Simp"
 
 Introduction
 "
-**Babylonier**:  Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum er steht. Hier zum Beispiel.
+**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum er steht. Hier zum Beispiel.
 "
 
 -- Eine endliche Summe läuft erstmal immer über einen endlichen Index
 -- `Fin n`, welcher $n$ Elemente
 -- $\\{0, 1, \\ldots, n-1\\}$ beinhaltet.
 
--- Der Syntax für  $\\sum_{i=0}^n a_i$ ist `∑ i : Fin n, _` (\\sum)
+-- Der Syntax für $\\sum_{i=0}^n a_i$ ist `∑ i : Fin n, _` (\\sum)
 
 -- Als erstes kann die Taktik `simp` (für \"simplification\") ganz viel Triviales vereinfachen.
 -- `simp` ist eine der stärksten Taktiken in Lean und verwendet
