@@ -1,13 +1,13 @@
 import Game.Metadata
 
 World "Implication"
-Level 7
+Level 8
 
 Title "Genau dann, wenn"
 
 Introduction
 "
-**Operationsleiter**: Hier ist noch so etwas.
+**Operationsleiter**: Hier, könnt ihr dazu auch was sagen?
 "
 
 Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : B ↔ C := by

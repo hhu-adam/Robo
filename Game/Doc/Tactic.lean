@@ -580,6 +580,25 @@ TacticDoc «suffices»
 
 
 /--
+`symm` (für "symmetry") kann Gleichheiten oder `↔` umdrehen. `symm at h` dreht eine Gleichheit
+(oder `↔`) in der Annahme `h`.
+
+## Details
+
+Man kann auch `h.symm` für die gedrehte Annahme schreiben, wenn man diese irgendwo
+verwendet. Das verwendet intern die Lemmata
+`Eq.symm` oder `Iff.symm`.
+
+## Beispiel
+
+ist das Goal `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `symm at h` die Annahme
+`(h : z = w)` in `(h : w = z)` um.
+-/
+TacticDoc symm
+
+
+
+/--
 `trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
 
 ## Details

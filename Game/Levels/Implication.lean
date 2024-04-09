@@ -4,12 +4,13 @@ import Game.Levels.Implication.L03_Apply
 import Game.Levels.Implication.L04_Apply
 import Game.Levels.Implication.L05_Apply
 import Game.Levels.Implication.L06_Iff
-import Game.Levels.Implication.L07_Rw
-import Game.Levels.Implication.L08_Iff
+import Game.Levels.Implication.L07_Symm
+import Game.Levels.Implication.L08_Rw
 import Game.Levels.Implication.L09_Iff
-import Game.Levels.Implication.L10_ByCases
-import Game.Levels.Implication.L11_Rw
-import Game.Levels.Implication.L12_Summary
+import Game.Levels.Implication.L10_Iff
+import Game.Levels.Implication.L11_ByCases
+import Game.Levels.Implication.L12_Rw
+import Game.Levels.Implication.L13_Summary
 
 World "Implication"
 Title "Implis"

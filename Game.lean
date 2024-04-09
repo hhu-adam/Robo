@@ -7,10 +7,13 @@ import Game.Levels.Inequality
 -- import Game.Levels.Prime
 import Game.Levels.Predicate
 import Game.Levels.Proposition
-import Game.Levels.SetTheory
 import Game.Levels.Sum
-import Game.Levels.MatrixTrace
-import Game.Levels.Quotient
+
+
+-- TMP: disable non-complete levels for the seminar
+-- import Game.Levels.SetTheory
+-- import Game.Levels.MatrixTrace
+-- import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
 -- import Game.Levels.NewStuff
@@ -83,9 +86,9 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/cover.png"
 
-Dependency Inequality → SetTheory
+-- Dependency Inequality → SetTheory
 
-set_option lean4game.showDependencyReasons true
+-- set_option lean4game.showDependencyReasons true
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

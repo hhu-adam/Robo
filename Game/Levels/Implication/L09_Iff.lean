@@ -7,39 +7,39 @@ Title "Genau dann wenn"
 
 Introduction
 "
-**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen.
-Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis,
-aber den mochte er nicht. Er wollte einen Beweis, der weder `rw` noch `apply` verwendet!!
-
-Er holt tief Luft und seuft.
-
-**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist.
-Aber meint Ihr, Ihr schafft das?
+**Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen. Ich glaube,
+`rw` mag der auch nicht. Geht das trotzdem?
 "
 
-Statement (A B : Prop) : (A ↔ B) → (A → B) := by
-  Hint "**Du**: Hmm, mindestens mit der Implikation kann ich anfangen."
-  Hint (hidden := true) "**Robo**: Genau, das war `intro`."
-  intro h
+Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   Hint "
-    **Du**: Also, ich kenne `rw [{h}]` und `apply ({h}.mp)`, aber das wollten wir ja
-    diesmal vermeiden.
+    **Du**: Naja ich kann wohl immerhin mal mit `intro` anfangen …
 
-    **Robo**: Was du machen könntest, ist, mit `rcases {h} with ⟨mp, mpr⟩` die Annahme
-    in zwei Teile aufteilen."
+    **Robo**: … und dann schauen wir weiter!"
+  intro hA
+  Hint "
+    **Robo**: Also eine Implikation wendet man mit `apply` an …
+
+    **Du**: Weiß ich doch! Aber `{h}` ist keine Implikation, sondern eine Äquivalenz.
+    Da würde ich doch eigentlich `rw [← {h}]` sagen wollen.
+
+    **Robo**: Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`. Du kannst sie
+    mit `apply ({h}.mp) at …` anwenden."
   Branch
-    intro
-    Hint "
-      **Robo**: Hier müsstest du jetzt `rw [←{h}]` oder `apply {h}.mp` benutzen.
-      Geh lieber einen Schritt zurück, sodass das Goal `A → B` ist."
-  rcases h with ⟨mp, mpr⟩
-  Hint (hidden := true) "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
+    apply g
+    Hint "**Robo**: So kannst Du natürlich auch anfangen."
+    apply h.mp
+    assumption
+  apply (h.mp) at hA
+  apply g at hA
   assumption
 
-Conclusion
-"
-**Operationsleiter**: Perfekt, das sollte reichen!
+Conclusion "
+**Operationsleiter**: Okay, super. Das müsste passen.
+
+Er telefoniert wieder.
+
+**Operationsleiter**: Bingo!
 "
 
-OnlyTactic intro rcases assumption
-DisabledTactic rw apply tauto
+DisabledTactic tauto rw

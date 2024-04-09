@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Implication"
-Level 12
+Level 13
 
 Title "Zusammenfassung"
 
@@ -35,6 +35,7 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 | 11  | `by_cases`                | Fallunterscheidung `P` und `¬P`                        |
 | 12  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.              |
 | 12ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist. |
+| 13  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                            |
 "
 
 Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
