@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Metadata.StructInstWithHoles
 
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Real.Basic
@@ -46,7 +47,7 @@ open Nat Matrix BigOperators StdBasisMatrix Finset
 --   fun A => ∑ i, A i 0 = 0
 
 Statement FirstColumnSumZero
-    (preample := refine { carrier := M, ?..} <;> dsimp only)
+    (preamble := refine { carrier := M, ?..} <;> dsimp only)
     {n : ℕ} [NeZero n] :
     let M := {A : Matrix (Fin n) (Fin n) ℝ | ∑ i, A i 0 = 0}
     Submodule ℝ (Matrix (Fin n) (Fin n) ℝ) := by
