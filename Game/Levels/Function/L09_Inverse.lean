@@ -50,18 +50,18 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       constructor
       · Hint "**Robo**: fang mal mit `intro` an."
         intro x
-        Hint "**Du**: kompliziert.
+        -- Hint "**Du**: kompliziert.
 
-        **Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
-        simp
+        -- **Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
+        -- simp
         -- now we're back on the path with no `g` in the goal
         apply hI
         apply Exists.choose_spec (hS (f x))
       · Hint "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
         intro x
-        Hint "**Du**: Kann ich das vereinfachen?"
-        simp
-        -- back on the path witout `g`
+        -- Hint "**Du**: Kann ich das vereinfachen?"
+        -- simp
+        -- -- back on the path witout `g`
         apply Exists.choose_spec (hS x)
     use fun x => (hS x).choose
     constructor

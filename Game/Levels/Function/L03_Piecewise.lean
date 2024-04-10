@@ -42,12 +42,18 @@ Statement :
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
     und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 < {x}` wechseln."
   by_cases h : 0 ≤ x
-  · Hint "
+  · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.
+
+    **Robo**: Dann brauch mal `simp [f, g]`!"
+    simp [f, g]
+    Hint "
       **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung um das if-then-else zu
       reduzieren."
     rw [if_pos h, if_pos h]
     ring
-  · Hint "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
+  · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
+    simp [f, g]
+    Hint "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
     Hint (hidden := true) "**Robo**: `if_neg`, genau!"
     rw [if_neg h, if_neg h]
 

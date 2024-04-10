@@ -30,15 +30,11 @@ Statement :
     unfold Injective
   intro a b
   Branch
-    intro h
-    Hint "**Robot**: Jetzt musst du wohl `{h}` vereinfachen."
-    simp at h
-    assumption
-  Hint (hidden := true) "**Du**: Kann man das wohl vereinfachen?"
-  Branch
-    simp
+    simp [f]
   intro ha
-  simp at ha
+  Hint "**Du**: Jetzt will ich wohl mit der Definition von `{f}` die
+  Annahme `{ha}` vereinfachen."
+  simp [f] at ha
   assumption
 
 NewDefinition Function.Injective

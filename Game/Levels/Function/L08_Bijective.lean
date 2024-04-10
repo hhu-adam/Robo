@@ -22,11 +22,12 @@ Statement :
     **Du**: Dann ist das ja ganz simpel!"
   unfold Bijective
   constructor
-  intro a b
-  simp
-  intro y
-  use y-1
-  simp
+  · intro a b hab
+    simp [f] at hab -- TODO: is there a better way?
+    assumption
+  · intro y
+    use y-1
+    simp [f]
 
 NewDefinition Function.Bijective
 TheoremTab "Function"
