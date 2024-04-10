@@ -1,7 +1,7 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.6.1\n"
+msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 10 00:12:20 2024\n"
+"POT-Creation-Date: Wed Apr 10 17:41:18 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2090,8 +2090,18 @@ msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
+msgid "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.\n"
+"\n"
+"**Robo**: Dann brauch mal `simp [f, g]`!"
+msgstr ""
+
+#: Game.Levels.Function.L03_Piecewise
 msgid "**Robo**: Jetzt hast du `rw [if_pos «{h}»]` zur Verfügung um das if-then-else zu\n"
 "reduzieren."
+msgstr ""
+
+#: Game.Levels.Function.L03_Piecewise
+msgid "**Robo**: Nochmals `simp [f, g]`."
 msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
@@ -2144,11 +2154,8 @@ msgid "**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
 msgstr ""
 
 #: Game.Levels.Function.L04_Injective
-msgid "**Robot**: Jetzt musst du wohl `«{h}»` vereinfachen."
-msgstr ""
-
-#: Game.Levels.Function.L04_Injective
-msgid "**Du**: Kann man das wohl vereinfachen?"
+msgid "**Du**: Jetzt will ich wohl mit der Definition von `«{f}»` die\n"
+"Annahme `«{ha}»` vereinfachen."
 msgstr ""
 
 #: Game.Levels.Function.L04_Injective
@@ -2309,7 +2316,9 @@ msgstr ""
 
 #: Game.Levels.Function.L07_Surjective
 msgid "**Du**: das is doch eigentlich ganz einfach… Kann man das denn\n"
-"noch weiter vereinfachen?"
+"noch weiter vereinfachen?\n"
+"\n"
+"**Robo**: Wenn du `«{f}»` auch einsetzt vermutlich schon."
 msgstr ""
 
 #: Game.Levels.Function.L07_Surjective
@@ -2382,17 +2391,7 @@ msgid "**Robo**: fang mal mit `intro` an."
 msgstr ""
 
 #: Game.Levels.Function.L09_Inverse
-msgid "**Du**: kompliziert.\n"
-"\n"
-"**Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
-msgstr ""
-
-#: Game.Levels.Function.L09_Inverse
 msgid "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
-msgstr ""
-
-#: Game.Levels.Function.L09_Inverse
-msgid "**Du**: Kann ich das vereinfachen?"
 msgstr ""
 
 #: Game.Levels.Function.L09_Inverse
