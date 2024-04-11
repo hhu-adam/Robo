@@ -37,6 +37,21 @@ Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     Hint "
       Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
   unfold Even at *
+  Branch
+    clear h -- we do that so the hint gets displayed regardless of the presence of additional hyps.
+    use n^2/2
+    Hint "Ein verwirrtes murmeln geht durch die Menge.
+
+    **Du**: Warte mal, wieso ist `n^2 / 2` überhaupt wieder eine natürliche Zahl?
+
+    **Robo**: Division auf `ℕ` wird in Lean immer abgerundet. Für `n = 1` steht da also
+
+    ```
+    1^2 = (1^2) / 2 + (1^2)/2
+    ```
+
+    was ausgerechnet `1 = 1/2 + 1/2 = 0 + 0` ist, du bist also auf dem Holzweg!
+    "
   Hint "
     **Du**: Also von `{h}` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = n` …
 
