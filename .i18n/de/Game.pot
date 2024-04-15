@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 10 17:41:18 2024\n"
+"POT-Creation-Date: Mon Apr 15 12:22:10 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1459,6 +1459,20 @@ msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
 msgid "Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
+msgstr ""
+
+#: Game.Levels.Predicate.L06_Exists
+msgid "Ein verwirrtes murmeln geht durch die Menge.\n"
+"\n"
+"**Du**: Warte mal, wieso ist `n^2 / 2` überhaupt wieder eine natürliche Zahl?\n"
+"\n"
+"**Robo**: Division auf `ℕ` wird in Lean immer abgerundet. Für `n = 1` steht da also\n"
+"\n"
+"```\n"
+"1^2 = (1^2) / 2 + (1^2)/2\n"
+"```\n"
+"\n"
+"was ausgerechnet `1 = 1/2 + 1/2 = 0 + 0` ist, du bist also auf dem Holzweg!"
 msgstr ""
 
 #: Game.Levels.Predicate.L06_Exists
@@ -3500,6 +3514,638 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 "**Du**: Wie baut ihr denn diese Meisterwerke?\n"
 "\n"
 "**Babylonier**: Ganz einfach! Ein Stein nach dem anderen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "Mengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "**Mengea**: Ich würde leider den Inhalt jenes Buches eh nicht verstehen. Aber der beste Weg für\n"
+"euch, dieses zu entschlüsseln ist, euch ausgiebig mit der Bevölkerung hier zu unterhalten.\n"
+"Lebt mit ihnen, redet mit ihnen und ihr werdet die Sprache automatisch lernen.\n"
+"\n"
+"**Mengea**: Seid aber vorgewarnt, die Leute hier denken ganz viel über Mengen nach,\n"
+"womit sie immer *homogene Mengen* meinen. Eine Menge natürlicher Zahlen `{1, 4, 6}` ist\n"
+"verständlich, aber sowas wie eine Menge `{(2 : ℕ), {3, 1}, \"e\", (1 : ℂ)}` gibt es hier\n"
+"einfach nicht. Punkt.\n"
+"\n"
+"**Robo**: Als Kontext: Wenn `A` ein beliebiger `Type` ist, dann ist `(U : Set A)` eine Menge\n"
+"mit Elementen aus `A`\n"
+"\n"
+"**Mengea**: Damit ich weiß, dass ihr euch grundsätzlich mit den Leuten austauschen könnt,\n"
+"erklärt mir doch folgendes:"
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "**Du**: Also `A` ist ein `Type`, `x` ist ein Element in `A`…\n"
+"\n"
+"**Robo** … und `univ` ist die Menge aller Elemente in `A`.\n"
+"\n"
+"**Du** ist das nicht einfach `A` selber?\n"
+"\n"
+"**Robo** Fast, aber das eine ist ein `Type`, das andere eine Menge, also vom Typ `Set A`.\n"
+"\n"
+"**Du**: Unlogisch?\n"
+"\n"
+"**Mengites**: Naja, Typen und Mengen sind halt zwei unterschiedliche Sachen und wenn ihr\n"
+"über Mengen sprechen wollt, müssen alles Mengen sein.\n"
+"\n"
+"**Du**: Na gut. Und wieso `x ∈ univ` und nicht `x : univ` wie bei Typen?\n"
+"\n"
+"**Robo**: Jedes Element `(x : A)` hat entweder die Eigenschaft `x ∈ U` (`\\in`) oder `x ∉ U`\n"
+"(`\\nin`) für eine Menge `(U : Set A)`.\n"
+"\n"
+"**Du**: Also das ist ja dann `trivial`. Hoffentlich sehen die das hier auch so…"
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "Die Menge `(univ : Set A)` ist die Menge aller Elemente in `A`. Obwohl mathematisch `A` und\n"
+"`(univ : Set A)` so erscheinen, als seien sie das gleiche, ist das in Leans Typentheorie nicht so.\n"
+"Elemente haben immer Typ `x : A`, aber sie können Elemente von verschiedenen \"Teilmengen\" von `A`\n"
+"-- `U : Set A` -- sein. Z.B. gilt immer `x ∈ univ` und nie `x ∈ ∅`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "TODO. Siehe `univ`.\n"
+"\n"
+"`x ∉ A` ist eine Notation für `¬ (x ∈ A)`.\n"
+"\n"
+"(`\\in`, `\\nin`)"
+msgstr ""
+
+#: Game.Levels.SetTheory.L01_Univ
+msgid "**Mengea**: Ja das stimmt schon. Dann wünsche ich euch viel Erfolg auf eurer Reise!"
+msgstr ""
+
+#: Game.Levels.SetTheory.L02_Empty
+msgid "leere Menge"
+msgstr ""
+
+#: Game.Levels.SetTheory.L02_Empty
+msgid "Ihr zieht also durch die Gegend und redet mit den Leuten. Ein Junge rennt zu euch und fragt:"
+msgstr ""
+
+#: Game.Levels.SetTheory.L02_Empty
+msgid "**Du**: Kein Element ist in der leeren Menge enthalten? Das ist ja alles\n"
+"tautologisches Zeugs...\n"
+"\n"
+"**Robo**: Dann behaupte das doch."
+msgstr ""
+
+#: Game.Levels.SetTheory.L02_Empty
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L02_Empty
+msgid "Der Junge rennt weiter.\n"
+"\n"
+"**Du**: So wird das ganze schon angenehmer.\n"
+"\n"
+"**Robo**: Die Leere Menge schreibst du mit `\\empty` falls du die nochmals brauchst."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "Teilmengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "Ihr bemerkt, dass mit dem Jungen noch zwei andere\n"
+"Kinder zuhörten. Eines der beiden Mädchen hat ebenfalls eine Frage."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "**Robo**: `A ⊆ B` ist als `∀ x, x ∈ A → x ∈ B` definiert.\n"
+"\n"
+"**Du**: Also kann ich mit `intro` anfangen, wie ich das bei einem `∀` funktioniert?\n"
+"\n"
+"**Robo**: Das ist korrekt."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "**Robo**: Das dürfte eine Trivialität sein."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "`A ⊆ B` ist definiert als `∀ x, x ∈ A → x ∈ B`.\n"
+"\n"
+"(`\\sub`)"
+msgstr ""
+
+#: Game.Levels.SetTheory.L03_Subset
+msgid "Damit drehen sich die beiden Mädchen um und folgen dem Jungen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "Teilmengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "Etwas weiter kommt ihr an einem kleinen Gemüsestand vorbei. Da ihr nicht so\n"
+"richtig einen Plan habt, fragt ihr den Verkäufer.\n"
+"\n"
+"**Verkäufer**: Hier ist was ganz Wichtiges, was ihr noch oft brauchen werdet:\n"
+"Ein zentrales Lemma ist `Subset.antisymm_iff` welches folgendes sagt:\n"
+"\n"
+"```\n"
+"lemma antisymm_iff {α : Type} {A B : Set α} :\n"
+"  A = B ↔ A ⊆ B ∧ B ⊆ A\n"
+"```\n"
+"\n"
+"** Verkäufer**: Fast immer wenn man Gleichheiten von Mengen zeigen muss, will\n"
+"man diese in zwei Ungleichungen aufteilen. Hier, ich gebe euch mal ein\n"
+"Beispiel:"
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "**Du**: Ja, die einzige Teilmenge der leeren Menge ist die leere Menge.\n"
+"Das wird schon stimmen.\n"
+"\n"
+"**Verkäufer**: Also zeig mir das mal!"
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "**Robo**: Fang doch einmal mit `constructor` an."
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "**Verkäufer**: Jetzt könnt ihr mein Lieblingslemma brauchen!\n"
+"\n"
+"Dann sind `s ⊆ ∅` und `∅ ⊆ s` separat zu zeigen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid "**Robo**: Was kann man denn mit `«{h}»` jetzt machen?\n"
+"\n"
+"**Du**: Wenn ich damit umschreibe erhalte ich `∅ ⊆ ∅`.\n"
+"\n"
+"**Robo**: Was `rw` als Reflexivität direkt löst!"
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L04_SubsetEmpty
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L05_Empty
+msgid "Empty"
+msgstr ""
+
+#: Game.Levels.SetTheory.L05_Empty
+msgid "Zeige folgendes Lemma, welches wir gleich brauchen werden:"
+msgstr ""
+
+#: Game.Levels.SetTheory.L05_Empty
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L05_Empty
+msgid "Das Lemma `subset_empty_iff` von letzter Aufgabe könnte hilfreich sein."
+msgstr ""
+
+#: Game.Levels.SetTheory.L05_Empty
+msgid "jetzt könntest du «{h8}» mit `rcases` aufteilen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "Nonempty"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "Das Gegenteil von `A = ∅` ist `A ≠ ∅`, aber in Lean wird der Ausdruck `A.Nonempty` bevorzugt.\n"
+"Dieser ist dadurch existiert, dass in `A` ein Element existiert: `∃x, x ∈ A`.\n"
+"\n"
+"Zeige dass die beiden Ausdrücke äquivalent sind:"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Robo**: Am besten fängst du mit `unfold Set.Nonempty` an."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "`push_neg` kann hier helfen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Du**: Eben hatten wir doch etwas zu `«{s}» = ∅`.\n"
+"\n"
+"**Robo**: Das war `eq_empty_iff_forall_not_mem`. Du kannst ja einen\n"
+"Widerspruchsbeweis anfangen, dann kannst du dieses Lemma an der Annahme `«{s}» = ∅`\n"
+"benützen!"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Robo** Widerspruch war `by_contra hf`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Du**: Also ich weiss, dass es ein `x` gibt in `«{s}»` und dass gleichzeitig alle\n"
+"`x` nicht in `«{s}»` sind, das ist doch ein Widerspruch!\n"
+"\n"
+"**Robo**: Ja aber nur `contradiction` wird noch nicht reichen, da diese noch nicht\n"
+"syntaktisch negationen voneinander sind.\n"
+"\n"
+"**Du**: Na dann sollte das zumindest eine Tautologie sein."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Du**: Vermutlich sollten wir hier aber dafür\n"
+"einen Beweis per Widerspruch anfangen?"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Robo**: Für dieses Problem ist es vermutlich besser nur\n"
+"`push_neg at «{hf}»` zu verwenden, damit `«{h}»: «{s}» ≠ ∅` unverändert bleibt!\n"
+"\n"
+"**Du**: Wieso macht `push_neg` denn das?\n"
+"\n"
+"**Robo**: Weiss ich auch nicht…"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Du**: Ist das nicht nochmals eine Seite des Lemmas von\n"
+"vorhin?\n"
+"\n"
+"**Robo**: Ja, `eq_empty_iff_forall_not_mem` ist nochmals nützlich"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Robo**: Mein System sagt, dass Kontraposition nützlich sein könnte.\n"
+"\n"
+"**Du**: Ja, dann sieht es schon wieder ähnlich dem Lemma von vorhin."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Robo**: `push_neg at *` könnte helfen die ganzen `¬` wegzukriegen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06_Nonempty
+msgid "**Du**: Und wie hies das Lemma nochmals?\n"
+"\n"
+"**Robo**: `eq_empty_iff_forall_not_mem`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L07_UnionInter
+msgid "Schnittmenge und Vereinigung"
+msgstr ""
+
+#: Game.Levels.SetTheory.L07_UnionInter
+msgid "Die klassischen Mengenoperationen sind\n"
+"Schnittmenge `∩` (`\\inter`), Vereinigung `∪` (`\\union`) und\n"
+"Differenz `\\` (`\\\\`).\n"
+"\n"
+"Die Taktik `simp` kann triviale Aussagen with Vereinigung mit der\n"
+"leeren Menge vereinfachen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08_UnionInter
+msgid "Schnittmenge und Vereinigung"
+msgstr ""
+
+#: Game.Levels.SetTheory.L08_UnionInter
+msgid "Ansonsten gibt es jegliche Lemmata in der Mathlib\n"
+"die beim Umgang mit diesen Operationen weiterhelfen. Schaue in der Bibliothek auf\n"
+"der Seite nach Lemmata, die dir hier weiterhelfen!\n"
+"\n"
+"Denk daran, die Lemma-Namen sind blockweise aus der Aussage konstruiert. Ein Lemma mit\n"
+"der Aussage `C \\ (A ∩ B) + …` wird vermutlich mit `diff_inter_…` anfangen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08_UnionInter
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L08_UnionInter
+msgid "mit `union_assoc` und `union_diff_distrib` kannst du\n"
+"auf der rechten Seite weiterkommen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Komplement"
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Das Komplement einer Menge wird als `Aᶜ` (`\\^c`) geschrieben. Wichtige Lemmata\n"
+"sind `not_mem_compl_iff` und `compl_eq_univ_diff`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "**Du**: Gleichheit von Mengen. Das ist sicher wieder ein Fall für beide\n"
+"Inkusionen.\n"
+"\n"
+"**Robo**: Das war `Subset.antisymm_iff`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "**Robo**: `⊆ univ` ist ein Fall für `simp`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Da `⊆` als `∀x, x ∈ A → x ∈ B ` definiert ist, fängst du\n"
+"am besten mit `intro` an."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Eine Möglichkeit ist, eine Fallunterscheidung zu machen: `by_cases g: «{x}» ∈ «{A}»ᶜ`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Hier könnte `mem_of_subset_of_mem` hilfreich werden."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09_Complement
+msgid "Diese Richtung geben wir als Lemma: `not_mem_compl_iff`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L10_Morgan
+msgid "Morgansche Regeln"
+msgstr ""
+
+#: Game.Levels.SetTheory.L10_Morgan
+msgid "Die De-Morganschen Regeln sagen `(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ`\n"
+"und `(A ∩ B)ᶜ = Aᶜ ∪ Bᶜ` sind in Lean als\n"
+"\n"
+"`compl_union` und `compl_inter`.\n"
+"\n"
+"\n"
+"Zudem gibt es die Lemmas `mem_compl_iff : x ∈ Aᶜ ↔ x ∉ A` und\n"
+"`not_mem_compl_iff`, mit welchen\n"
+"man die De-Morganschen Regeln einfach selber beweisen könnten.\n"
+"\n"
+"\n"
+"Die meisten Aufgaben über Mengen sind eine Kombination von `rw` und `simp_rw` verschiedenster\n"
+"NewTheorem in `import Mathlib.Data.Set`.\n"
+"\n"
+"Die Taktik `simp_rw` funktioniert ähnlich wie `rw`, aber sie versucht jedes Lemma so oft\n"
+"wie möglich anzuwenden. Wir kennen also 4 etwas verwandte Optionen um Lemmata und Theoreme zu\n"
+"brauchen:\n"
+"\n"
+"- `rw [lemma_A, lemma_B]`: führt jedes Lemma genau einmal aus in der Reihenfolge.\n"
+"- `simp_rw [lemma_A, lemma_B]` : führt jedes Lemma in Reihenfolge so oft aus wie möglich.\n"
+"- `simp only [lemma_A, lemma_B]` : sucht eine Kombination der beiden Lemmas, ohne bestimmte\n"
+"                                   Reihenfolge.\n"
+"- `simp [lemma_A, lemma_B]` : Braucht die beiden Lemmas und alle simp-Lemmas."
+msgstr ""
+
+#: Game.Levels.SetTheory.L10_Morgan
+msgid "Oft kann es auch nützlich sein, mit `rw [← …]` rückwärts umzuschreiben.\n"
+"Das ganze Level ist mit `rw`/`simp_rw` und den Lemmata in deiner Bibliothek\n"
+"lösbar."
+msgstr ""
+
+#: Game.Levels.SetTheory.L11_SSubset
+msgid "Strikte Teilmenge"
+msgstr ""
+
+#: Game.Levels.SetTheory.L11_SSubset
+msgid "Strikte Teilmengen sind in Lean eher selten, aber wir schauen sie hier\n"
+"trotzdem kurz an : `A ⊂ B` (`\\ssub`) bedeutet `(A ⊆ B) ∧ (¬B ⊆ A)`.\n"
+"Entsprechend, kann man die gleichen Methoden wie beim UND benützen\n"
+"(`rcases`/`constructor`).\n"
+"\n"
+"Zudem kann man mit `rw [ssubset_def]` explizit die Definition einsetzen.\n"
+"\n"
+"Note: `rw [subset_def]` macht das gleiche für `⊆`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L11_SSubset
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L12_Insert
+msgid "Konkrete Mengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L12_Insert
+msgid "Nun schauen wir uns konkrete Mengen an. Man schreibt diese mit\n"
+"geschweiften Klammern: `{0, 4, 117, 3}`. Meistens muss man\n"
+"den Typ explizit angeben, weil Lean nicht weiss, ob man mit `Set` (Mengen)\n"
+"oder `Finset` (endliche Mengen) arbeiten möchte: `({4, 9} : Set ℕ)`.\n"
+"\n"
+"`Finset` schauen wir uns später an.\n"
+"\n"
+"Um mit expliziten Mengen zu arbeiten, ist die Implementationsweise wichtig.\n"
+"\n"
+"Intern ist eine Menge `{0, 9, 5, 2}` iterativ als Vereinigung von\n"
+"Singletons definiert: `{0} ∪ ( {9} ∪ ( {5} ∪ {2} ))`.\n"
+"\n"
+"Die folgende Aufgabe ist entsprechend mit `rfl` lösbar."
+msgstr ""
+
+#: Game.Levels.SetTheory.L12_Insert
+msgid "Die Menge `{4, 9}` ist per Definition `{4} ∪ {9}`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L13_Insert
+msgid "Konkrete Mengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L13_Insert
+msgid "Um zu überprüfen, dass gewisse Elemente in\n"
+"konkreten Mengen enthalten sind, gibt es nicht direkt eine Taktik, aber ein\n"
+"einfaches Rezept:\n"
+"\n"
+"```\n"
+"simp_rw [mem_insert_iff, mem_singleton_iff] at *\n"
+"```\n"
+"\n"
+"vereinfacht Aussagen der Form `6 ∈ {0, 6, 1}` zu `(6 = 0) ∨ (6 = 6) ∨ (6 = 1)`,\n"
+"und dann kann `tauto` diese Aussage beweisen.\n"
+"\n"
+"Bei `⊆` kann man wie schon vorher zuerst mit `intro x hx` die Definition\n"
+"auseinandernehmen und dann gleich vorgehen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L13_Insert
+msgid "Fang wieder mit `rw [subset_def]` oder direkt mit `intro` an."
+msgstr ""
+
+#: Game.Levels.SetTheory.L14_SetOf
+msgid "Mengen mit Konditionen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L14_SetOf
+msgid "Eine wichtige mathematische Notation ist Teilmengen zu erstellen,\n"
+"die gewissen Bedingungen unterliegen.\n"
+"\n"
+"`{n : ℕ | Odd n}` ist die Menge aller natürlichen Zahlen, die ungerade sind.\n"
+"Diese Konstruktion hat in Lean den Namen `setOf`\n"
+"\n"
+"Um zu beweisen, dass ein Element in einer Teilmenge mit Bedingungen ist, braucht\n"
+"man `rw [mem_setOf]`. Danach muss man zeigen, dass die Bedinung für\n"
+"dieses Element erfüllt ist."
+msgstr ""
+
+#: Game.Levels.SetTheory.L14_SetOf
+msgid "**Robo**: Zur Erinnerung, wenn du nicht mehr weisst, wie `Odd` definiert\n"
+"ist, benutze `rw [Odd]`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "Potenzmenge"
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "Eine andere wichtige Menge ist die Potenzmenge einer Menge, welche als\n"
+"`𝒫 A` geschrieben wird (`\\powerset`). Diese ist als `{S | S ⊆ A}` definiert, also\n"
+"alle Mengen, die in $A$ enthalten sind.\n"
+"\n"
+"Eines der wichtigsten Lemmas ist `mem_powerset_iff: x ∈ 𝒫 s ↔ x ⊆ s` welches\n"
+"im Grunde die Definition einsetzt."
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "**Robo**: Fang mal mit `intro` an, wie das bei `⊆` fast immer der Fall ist."
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "**Robo**: Als nächstes must du noch die Annahme `«{A}» ∈ 𝒫 X ∪ 𝒫 Y` zu\n"
+"`«{A}» ∈ (𝒫 X) ∨ «{A}» ∈ (𝒫 Y)` wechseln. Dafür kennst du schon ein Lemma."
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "**Robo**: Jetzt wär der Zeitpunkt um `mem_powerset_iff` mal überall anzuwenden."
+msgstr ""
+
+#: Game.Levels.SetTheory.L15_Powerset
+msgid "**Robo**: Jetzt kann `tauto` den rest übernehmen, vielleicht solltest du diese\n"
+"Hilfe annehmen.\n"
+"Wenn nicht, brauchst du vermutlich die Lemmas `Set.subset_union_of_subset_left`\n"
+"und `Set.subset_union_of_subset_right`"
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid "Um anzunehmen, dass zwei Mengen disjunkt sind schreibt man\n"
+"`Disjoint S T`, welches dadurch definiert ist das die\n"
+"einzige gemeinsame Teilmenge die leere Menge ist,\n"
+"also etwa `A ⊆ S → A ⊆ T → A ⊆ ∅`.\n"
+"\n"
+"Beachte, dass `Disjoint` in Lean genereller definiert ist als\n"
+"für Mengen, deshalb siehst du die Symbole\n"
+"`≤` anstatt `⊆` und `⊥` anstatt `∅`, aber diese bedeuten genau\n"
+"das gleiche."
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid "**Robo**: Öffne als erstes mal `Disjoint`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid "**Robo**: Das sieht jetzt ein bisschen gefürchig aus, aber das ist einfach ein `∃`.\n"
+"Was du jetzt angeben musst, ist eine Menge, die Teilmenge beider Mengen\n"
+"`{n : ℤ | ∃ k, n = 2 * k}` und `{3, 5, 6, 9, 11}` ist."
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid "**Robo**: Versuch einmal `use {6}`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L16_Disjoint
+msgid "**Robo**: Schau mal wie weit `simp` kommt."
+msgstr ""
+
+#: Game.Levels.SetTheory.L17_SetOf
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L17_SetOf
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L17_SetOf
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L18_SetOf
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L18_SetOf
+msgid "Zu der Teilmengen-Schreibweise (`SetOf`) gibt es noch zwei spezielle\n"
+"Syntax, die abundzu auftreten.\n"
+"\n"
+"Der erste ist `{ x ∈ S | 0 ≤ x}` ( für z.B `(S : Set ℤ)`),\n"
+"welcher eine Abkürzung für `{ x : ℤ | x ∈ S ∧ 0 ≤ x}` ist.\n"
+"Entsprechend hilft auch hier `setOf_and`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L18_SetOf
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L19_Subtype
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L19_Subtype
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L19_Subtype
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L20_UnionInter
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L20_UnionInter
+msgid "Wir haben bereits `∪` und `∩` kennengelernt. Von beiden gibt es auch eine Version für Familien\n"
+"von Mengen: $\\bigcup_i A_ i$ und $\\bigcap_j B_ j$."
+msgstr ""
+
+#: Game.Levels.SetTheory.L20_UnionInter
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L21_Summary
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L21_Summary
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L21_Summary
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "Mengenlehre"
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische\n"
+"Gesellschaften wohnen, die sich in der Einöde zurechtfinden.\n"
+"\n"
+"Ihr steuert einen der wenigen befestigten Standorte am Fuße eines Berges an.\n"
+"\n"
+"**Robo**: Die Bevölkerung hier lebt so abgekapselt vom Rest des Universums, dass sie sich\n"
+"vermutlich noch viel besser mit alter Sprache und Schrift auskennt.\n"
+"\n"
+"**Du**: Hoffen wir, dass sie uns weiterhelfen können dieses Buch der Urbilder zu entschlüsseln.\n"
+"\n"
+"Sofort begrüßt euch eine ältere Frau, die sich als *Mengea*, die Beschützerin des Mondes,\n"
+"vorstellt."
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "Mehr Mengenlehre"
 msgstr ""
 
 #: Game
