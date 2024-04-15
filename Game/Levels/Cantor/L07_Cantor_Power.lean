@@ -19,8 +19,6 @@ In this level you show prove a type-theoretic formulation of this theorem.
 
 open Set Function
 
-#check Nonempty.exists
-
 theorem Cantor_power {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
   intro f
   intro h
