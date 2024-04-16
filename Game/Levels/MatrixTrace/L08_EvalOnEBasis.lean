@@ -7,16 +7,23 @@ Title "Matrix"
 
 Introduction
 "
-A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills
-all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`
-for all `i : Fin n`.
+Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhung. In der Ferne fählt dir sofort
+ein dunkler Punkt auf, auf den Robo auch zeigt.
+
+**Du**: Schau mal, das wird es wohl sein! Und von hier kann man auch perfekt seine Grösse
+abschätzen.
+
+**Robo**: Sieht so aus, als währen ihm alle diagonalen Elemente `E i i` nicht nur \"gleich\"
+sondern \"eins\". Aber können wir mehr herausfinden?
+"
+
+Conclusion "
+  **Du**: Los, lass uns näher gehen.
 "
 
 open Nat Matrix BigOperators StdBasisMatrix
 
-#check NeZero
-
-/-- Level 8 -/
+/---/
 TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 
 Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →ₗ[ℝ] ℝ}
@@ -42,14 +49,26 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
     **Robo**: `simp` kann das sicher komplett vereinfachen."
     unfold E
     simp
-  · Hint "**Du**: Als nächstes ziehen wir "
-    rw [map_sum]
-    trans ∑ i : Fin n.succ, f (E i i)
-    · congr
+  · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
+    Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
+    `∑ i, f (E i i)` zeigen."
+    trans f (∑ i, E i i)
+    · Branch
+        congr
+        Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
+      Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
+
+      **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
+      rw [map_sum]
+      Hint "**Du**: Nochmals!"
+      rw [map_sum]
+      congr
       ext j
+      Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
+      Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
       rw [eq_on_diag_ebasis] -- Lvl 5
       assumption
-    · rw [← map_sum]
+    · Hint (hidden := true) "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
       rw [ebasis_diag_sum_eq_one] -- Lvl 4
       rw [h₂]
       simp

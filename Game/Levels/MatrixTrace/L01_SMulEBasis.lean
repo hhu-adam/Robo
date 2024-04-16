@@ -7,7 +7,7 @@ import Mathlib.Data.Real.Basic
 World "Trace"
 Level 1
 
-Title "E-Basis"
+Title "Standardbasis"
 
 Introduction
 "
@@ -46,6 +46,9 @@ Ring annehmen kann.
 Das Spiel bevorzugt `E` um die lesbarkeit zu erhöhen.
 -/
 DefinitionDoc Matrix.E as "E"
+
+/---/
+TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
     A i j • E i j = stdBasisMatrix i j (A i j) := by

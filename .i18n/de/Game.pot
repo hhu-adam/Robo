@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Apr 16 13:38:35 2024\n"
+"POT-Creation-Date: Tue Apr 16 17:07:39 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -3517,7 +3517,7 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "E-Basis"
+msgid "Standardbasis"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_SMulEBasis
@@ -3570,12 +3570,13 @@ msgid "**Du**: Ob das wohl was bringt?\n"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L02_EBasis
-msgid "Matrix"
+msgid "Falsche Indizes"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L02_EBasis
 msgid "Kurze Zeit später findet ihr noch mals einen sehr ähnlichen Zettel, wieder\n"
-"vollgekritzelt, aber die erste Zeile lässt sich gerade noch ausmachen."
+"vollgekritzelt und vieles sieht falsch oder durchgestrichen aus.\n"
+"Die erste Zeile aber lässt sich gerade noch ausmachen."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L02_EBasis
@@ -3583,6 +3584,10 @@ msgid "**Robo**: Ich speichere dieses `E.mul_of_ne` auch mal, wer weiss.\n"
 "\n"
 "  **Du**: Jetzt bin ich aber neugierig, wer das ist. Komm, lass uns\n"
 "  weitergehen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L02_EBasis
+msgid ""
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L02_EBasis
@@ -3595,7 +3600,7 @@ msgid "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `«{h}»` explizit 
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L03_MatrixEqSum
-msgid "Matrix"
+msgid "Summe von Basiselementen"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L03_MatrixEqSum
@@ -3649,13 +3654,14 @@ msgid "**Robo**: Diese Form kenne ich aus meiner Bibliothek, das ist\n"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_EBasisDiagSum
-msgid "Matrix"
+msgid "Einheitsmatrix"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_EBasisDiagSum
-msgid "**Du**: Zeig mal, was hast du da?\n"
+msgid "**Du**: Zeig mal, was hast du da? Was zur Einheit der Matrizen? Passend für die\n"
+"vermeintliche Versammlung von vorhin.\n"
 "\n"
-"**Robo**: Scheint, als hättest du vorhin das richtige angeschaut. Schau, hier\n"
+"**Robo**: Und schau, scheint so als hättest du vorhin das richtige angeschaut. Hier\n"
 "kann man soweit ich sehe gleich mit `matrix_eq_sum_ebasis` beginnen.\n"
 "Kannst du mal schauen, ob das stimmt?\n"
 "\n"
@@ -3667,6 +3673,10 @@ msgstr ""
 #: Game.Levels.MatrixTrace.L04_EBasisDiagSum
 msgid "**Du**: Ich habe langsam eine Vermutung, dass wir jemandem folgen, der\n"
 "sich doch für die Diagonale von Matrizen interessiert."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L04_EBasisDiagSum
+msgid ""
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_EBasisDiagSum
@@ -3730,22 +3740,46 @@ msgid "**Robo**: und da das falsch ist kannst du `rw` und `if_neg` weiterkommen.
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
-msgid "Matrix"
+msgid "Kommutator"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
-msgid "The commutator of two matrices is defined as the difference between their product and the product\n"
-"of the matrices in the opposite order, that is the commutator of `A` and `B` is `A * B - B * A`.\n"
-"A linear functional `f` on the space of `n × n` matrices which kills all commutators has the same value on all the diagonal elemantary basis matrices, i.e. `f (E i i) = f (E j j)` for all `i` and `j`."
+msgid "Der Spur folgend unter einem breiten Baum findet ihr im Schatten ein komisches regloses etwas.\n"
+"\n"
+"$$\n"
+"[A, B] = AB - BA\n"
+"$$\n"
+"\n"
+"Beim genauen inspizieren stellt Robo fest dass er dieses unter dem Namen Matrizenkommutator kennt.\n"
+"\n"
+"**Du**: Das sieht ziemlich nihiliert aus.\n"
+"\n"
+"**Robo**: Und schau hier ist noch was in den Baum gekritzelt."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
-msgid "**Du**: Wie kann ich denn wohl am besten die Annahme `«{h₁}»` brauchen, dazu müsste\n"
+msgid "**Du**: Ich glaube, die Annahme dass unser etwas Kommutatoren nihiliert, nehmen wir jetzt erst\n"
+"einmal mit."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
+msgid "**Du**: Also wenn unser etwas Kommutatoren nihiliert, dann sind für es auch die Werte\n"
+"aller `E i i` gleich. Stimmt das wohl?\n"
+"\n"
+"**Robo**: Lass es uns herausfinden!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
+msgid "**Du**: Was mache ich wohl mit unserer Annahme `«{h₁}»`, dazu müsste\n"
 "ich wohl zuerst eine Multiplikation haben.\n"
 "\n"
 "**Robo**: als was möchtest du denn `E i i` darstellen?\n"
 "\n"
-"** Du**: Ich habe eine Idee: Man könnte `E i i = (E i j) * (E j i)` darstellen, das sollte gehen.\n"
+"** Du**: Man könnte `E i i = (E i j) * (E j i)` darstellen, das sollte gehen.\n"
 "\n"
 "**Robo**: Dann hab ich das Werkzeug dazu! Schreib `trans f (E i j * E j i)`, dann hast du zwei\n"
 "Goals `f (E i i) = f (E i j * E j i) = f (E j j)`, die du dann einzeln zeigen kannst."
@@ -3765,48 +3799,164 @@ msgid "**Robo**: Hast du das nicht alles gemacht, weil du `«{h₁}»` brauchen\
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "Matrix"
+msgid "Kommutator"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "In this level, we will show that a linear functional `f` on the space of matrices which kills all commutators also kills all off-diagonal elementary basis matrices."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "**Du**: Wie könnte ich denn `«{h₁}»` hier gut verwenden?\n"
+msgid "Gleich neben dem Baum findest du auch noch eine Notiz in der gross `E i j` durchgestrichen ist.\n"
 "\n"
-"**Du**: Wie wär's wenn ich `E i j` aufteile als `E i j * E j j`, denn die Umkehrung\n"
+"**Du**: Merkwürdig, die diagonalen `E i i` sind ihm alle gleich, die anderen `E i j` interessieren\n"
+"es nicht."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
+msgid "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und\n"
+"unvorsichtiger als zuvor."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
+msgid "**Robo**: Wie könnten wir ich denn `«{h₁}»` hier verwenden?\n"
+"\n"
+"**Du**: Wie wär's damit, wenn wir `E i j` als `E i j * E j j` aufteilen, und dann kommutieren, denn die Umkehrung\n"
 "`E j j * E i j` sollte `0` sein!\n"
 "\n"
-"**Robo*: Wenn du meinst, du kannst diese Gleichung mit einem Zwischenschritt\n"
+"**Robo*: Wenn du meinst. Du kannst diese Gleichung mit einem Zwischenschritt\n"
 "`f (E i j) = f (E i j * E j j) = 0` lösen, dann kannst du `trans f (E i j * E j j)`\n"
 "verwenden."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "**Robo**: Zuerst die erste der beiden Gleichungen…"
+msgid "**Du**: Ehm, das sehe ich einfach von der Definition.\n"
+"\n"
+"**Robo**: Vergiss nicht, dass du `unfold E` angeben musst oder alternative `simp [E]`."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "**Robo**: …und dann die Zweite."
+msgid "**Robo**: Und hier wolltest du jetzt kommutieren?\n"
+"\n"
+"**Du**: Genau! Schau:"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-msgid "`E.mul_of_ne`"
+msgid "**Robo**: Das hatten wir auf dem zweiten Pergamentstück, das wir gefunden haben!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
+msgid "**Robo**: Das hiess `E.mul_of_ne`."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L07_EvalOnEBasis
-msgid "Matrix"
+msgid "Kommutator"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L07_EvalOnEBasis
-msgid "A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills\n"
-"all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`\n"
-"for all `i : Fin n`."
+msgid "Ihr findet nochmals einen Hinweis, aber in der Eile verliert ihr die Fährte.\n"
+"\n"
+"Während Robo die nähere Umgebung absucht, setzt du dich etwas erschöpft hin und starrst\n"
+"unter der warmen Sonne etwas bedusselt auf das letzte Pergament."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L07_EvalOnEBasis
-msgid "TODO: In Level 5"
+msgid "**Du**: Danke für das Wasser, Robo! Hast du eigentlich die Fährte wiedergefunden?\n"
+"\n"
+"**Robo**: Komm mal mit, da hinten hab ich auf jeden Fall etwas gesehen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Ich versteh einfach nicht was es von uns will! Aber bleibt wohl nichts\n"
+"anderes übrig als das hier mal anzuschauen…\n"
+"\n"
+"**Du** (*brummelnd*): Ich glaube ich möchte das `A` in `f A`, als Summe von Basismatrizen\n"
+"schreiben, nicht aber\n"
+"das andere `A` weiter hinten.\n"
+"\n"
+"Von hinter einem Grassbüschel hörst du den unterstützenden Ruf\n"
+"\n"
+"**Robo**: `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du** (*schreiend*): Was meinst du damit?\n"
+"\n"
+"**Robo** (*ebenfalls schreiend*): Na das Lemma ist `matrix_eq_sum_ebasis A` und `nth_rw 1` sagt,\n"
+"dass du nur das erste `A` ersetzen willst. `rw` würde beide ersetzen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Hmm ne, vielleicht ist `rw` doch eine schlechte Idee, das sieht zu\n"
+"kompliziert aus. Lass mich es doch mit `nth_rw` versuchen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du** (*in Gedanken*): Jetzt die Funktion in die Summe rein… Und ja nicht an Wasser denken…\n"
+"Aber Wasser hatte es doch auf Babylon auch für die schönen Gärten… Woran war ich nochmals?"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Ah ja, im Zweifelsfall vereinfachen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Die Summe der Summe der Summe der…\n"
+"\n"
+"**Robo*: Hey, woran bist du eigentlich?\n"
+"\n"
+"**Du**: Keine Ahnung!\n"
+"\n"
+"**Robo**: Mach doch folgenden Zwischenschritt:\n"
+"\n"
+"`trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Summe gleich Summe, `congr`-`ext` macht da der Dumme."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: Vielleicht gleich nocheinmal?"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "Robo reicht dir eine Flasche Wasser. Keine Ahnung wo er die her hatte.\n"
+"\n"
+"**Du**: Ah langsam seh ich es wieder klarer. Fall Unterscheidung auf `i = j` ist angesagt!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: `by_cases` war das, genau!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: Hier ist `if_pos «{h₂}»` nützlich."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: …und hier `if_neg «{h₂}»`.\n"
+"\n"
+"**Du**: Kenn ich doch noch."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: `f (E i j)` ist doch Null, das war doch vorhin so!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Robo**: Und das hiess `zero_on_offDiag_ebasis`."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L07_EvalOnEBasis
+msgid "**Du**: Und ich dachte schon das wär's.\n"
+"\n"
+"**Robo**: Fast, da ist noch die zweite Hälfte des `trans`-Befehls oben. Diese Hälfte\n"
+"ist aber nur vereinfachen."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
@@ -3814,13 +3964,22 @@ msgid "Matrix"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills\n"
-"all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`\n"
-"for all `i : Fin n`."
+msgid "Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhung. In der Ferne fählt dir sofort\n"
+"ein dunkler Punkt auf, auf den Robo auch zeigt.\n"
+"\n"
+"**Du**: Schau mal, das wird es wohl sein! Und von hier kann man auch perfekt seine Grösse\n"
+"abschätzen.\n"
+"\n"
+"**Robo**: Sieht so aus, als währen ihm alle diagonalen Elemente `E i i` nicht nur \"gleich\"\n"
+"sondern \"eins\". Aber können wir mehr herausfinden?"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "Level 8"
+msgid "**Du**: Los, lass uns näher gehen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid ""
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
@@ -3849,58 +4008,106 @@ msgid "**Du**: Genau, dann ist diese erste Gleichheit nur die konstante Summe au
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Als nächstes ziehen wir"
+msgid "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L09_Characterize
-msgid "Matrix"
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt\n"
+"`∑ i, f (E i i)` zeigen."
 msgstr ""
 
-#: Game.Levels.MatrixTrace.L09_Characterize
-msgid "The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:\n"
-"1. It is linear, witnessed by `traceLinear`.\n"
-"2. The trace of a identity matrix is the dimension of the matrix, i.e.\n"
-"`trace (1 : Matrix α α ℝ) = Fintype.card α`.\n"
-"3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.\n"
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Du**: Nein, das ist jetzt mathematisch falsch!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Robo**: Jetzt wieder `congr`-`ext`?\n"
 "\n"
-"We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.\n"
+"**Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Du**: Nochmals!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
+msgid "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "Trace"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "Während ihr euch anschleicht.\n"
 "\n"
-"TODO: `trace A` is def.eq zu `∑ i, A i i`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Du**: Zwei Funktionen sind gleich wenn sie auf\n"
-"allen Elementen gleich sind…\n"
+"**Du** (**flüsternd**): Weisst du was? Mit all den Spuren, die wir gefunden haben, bin\n"
+"ich zum Schluss gekommen, dass es gar nicht mehrere solche Wesen gibt, sondern nur eins.\n"
 "\n"
-"**Robo**: Das war `ext A`!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Du**: Hatten wir nicht eben gerade, dass `f «{A}»` also Summe über `«{A}» i j * f (E i j)`\n"
-"schreiben kann?\n"
+"**Robo**: Wie kommst du darauf?\n"
 "\n"
-"**Robo**: Was du vorhin bewiesen hast, hies `eq_sum_apply_diag_ebasis`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Du**: Und jetzt? Stimmt das überhaupt für `n = 0`?\n"
+"**Du**: Schau, seine Grösse und vorliebe für Kommutatoren, und all die anderen Sachen,\n"
+"damit kann man doch zeigen, dass es eindeutig identifiziert werden kann!\n"
 "\n"
-"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`!\n"
+"**Robo**: Das musst du mir genauer erklären.\n"
 "\n"
-"**Du**: Nah dann kann ich ja mal diesen Fall zuerst machen."
+"**Du**: Klar, aber lass uns das da vorne währenddessen beobachten. Und wegen seiner Liebe\n"
+"zu Diagonalen nenne ich es zwischenzeitlich \"Tracy\"."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Robo**: das war `rcases n`."
+msgid "Ihr beobachtet voller Entzücken diese offenbar einzigartige Wesen auf diesem Planeten.\n"
+"\n"
+"Als ihr näher kommt scheint euch Tracy zu bemerken, aber es scheint dadurch keinesfalls gestört\n"
+"zu sein."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Robo**: Den Fall `n = 0` kann sogar ich! Ich wende einfach\n"
-"immer `simp` an und das Betriebsystem gibt ein wohliges Schnurren zurück."
+msgid ""
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_Characterize
-msgid "**Du**: Wir hatten doch auch schon dass für unser `«{f}»` gilt dass `f (E i i) = 1`!\n"
+msgid "**Robo**: Also die Spuren bei unserem Raumschiff, das war sicher Tracy?\n"
+"\n"
+"**Du**: Ja, schau. Zwei so Dinger sind identisch wenn sich für äusseren Einflüsse\n"
+"komplett identisch verhalten."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: Also `ext` in mathematischem Jargon!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Und dann schreibe mal `f A` als Summe von Basiselementen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: Ah und den Fall `n = 0` sehe ich sofort!\n"
+"\n"
+"**Du**: Wirklich?\n"
+"\n"
+"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `rcases n`.\n"
+"\n"
+"**Du**: Nicht `induction n`?\n"
+"\n"
+"**Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Robo**: Ich hab einfach `simp` ausprobiert und das Betriebsystem\n"
+"gibt ein wohliges Schnurren zurück. Probier es mal."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L09_Characterize
+msgid "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!\n"
 "\n"
 "**Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
 msgstr ""
@@ -3909,7 +4116,7 @@ msgstr ""
 msgid "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,\n"
 "`rw` kann das nicht.\n"
 "\n"
-"**Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben!"
+"**Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_Characterize
@@ -3935,33 +4142,31 @@ msgid "Nicht genau definiert als, aber per Definition äquivalent zu:\n"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L10_Linearity
-msgid "Matrix"
+msgid "Trace"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L10_Linearity
-msgid "The trace of a square matrix is the sum of the elements on its main diagonal. It is a linear map from the space of square matrices to the field of scalars. The lineariry is witnessed by the term `traceLinearMap` in Mathlib.\n"
+msgid "Tracy kommt zu euch hin und fängt an mit euch zu spielen. Belustigt gibt es euch verschiedenste\n"
+"Aufgaben und Terme, und ihr versucht diese schnell genug zu kombinieren."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid "Nach einem längeren spielhaften Austausch über Matrizen, deren Spur, und\n"
+"Standardbasen, beschliesst ihr auch auf den Rückweg zu machen.\n"
 "\n"
-"In Mathlib, trace is defined as the sum of the entries in the diagonal vector of a matrix:\n"
+"Ihr verlauft euch sofort, doch Tracy ist euch offenbar gefolgt und führt euch queer durch\n"
+"die Grasslandschaft schnurstrakts zu eurem Schiff zurück."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch alles\n"
+"mit `simp` wenn wir nicht am spielen wären.\n"
 "\n"
-"```\n"
-"∑ i, diag A i\n"
-"```\n"
-"\n"
-"where `diag A i = A i i`. You can prove `trace A = ∑ i, A i i` by `rfl`.\n"
-"\n"
-"The trace of a identity matrix is the dimension of the matrix:\n"
-"\n"
-"```\n"
-"trace_one : trace (1 : Matrix α α ℝ) = Fintype.card α\n"
-"```\n"
-"\n"
-"Since `Fin n` has `n` elements, we have:\n"
-"\n"
-"```\n"
-"trace (1 : Matrix (Fin n) (Fin n) ℝ) = n\n"
-"```\n"
-"\n"
-"Use `trace_add` and `trace_sub` are special cases of the linearity of the trace which state that the trace of the sum of two matrices is the sum of their traces, and the trace of the difference of two matrices is the difference of their traces."
+"**Du**: Ist doch egal, das macht Spass!"
 msgstr ""
 
 #: Game.Levels.MatrixTrace

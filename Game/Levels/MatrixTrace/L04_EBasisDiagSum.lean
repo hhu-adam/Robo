@@ -3,13 +3,14 @@ import Game.Levels.MatrixTrace.L03_MatrixEqSum
 World "Trace"
 Level 4
 
-Title "Matrix"
+Title "Einheitsmatrix"
 
 Introduction
 "
-**Du**: Zeig mal, was hast du da?
+**Du**: Zeig mal, was hast du da? Was zur Einheit der Matrizen? Passend für die
+vermeintliche Versammlung von vorhin.
 
-**Robo**: Scheint, als hättest du vorhin das richtige angeschaut. Schau, hier
+**Robo**: Und schau, scheint so als hättest du vorhin das richtige angeschaut. Hier
 kann man soweit ich sehe gleich mit `matrix_eq_sum_ebasis` beginnen.
 Kannst du mal schauen, ob das stimmt?
 
@@ -38,6 +39,9 @@ open Nat Matrix BigOperators StdBasisMatrix
 --   rw [one_apply]
 --   unfold E
 --   simp?
+
+/---/
+TheoremDoc Matrix.ebasis_diag_sum_eq_one as "ebasis_diag_sum_eq_one" in "Matrix"
 
 Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
   rw [matrix_eq_sum_ebasis 1] -- Lvl 3

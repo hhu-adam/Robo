@@ -3,14 +3,15 @@ import Game.Levels.MatrixTrace.L01_SMulEBasis
 World "Trace"
 Level 2
 
-Title "Matrix"
+Title "Falsche Indizes"
 
 -- TODO: Do we need this level??
 
 Introduction
 "
 Kurze Zeit später findet ihr noch mals einen sehr ähnlichen Zettel, wieder
-vollgekritzelt, aber die erste Zeile lässt sich gerade noch ausmachen.
+vollgekritzelt und vieles sieht falsch oder durchgestrichen aus.
+Die erste Zeile aber lässt sich gerade noch ausmachen.
 "
 
 Conclusion "
@@ -21,6 +22,9 @@ Conclusion "
 "
 
 open Nat Matrix BigOperators
+
+/---/
+TheoremDoc Matrix.E.mul_of_ne as "E.mul_of_ne" in "Matrix"
 
 -- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
 Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by

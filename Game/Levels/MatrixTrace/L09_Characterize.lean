@@ -3,55 +3,70 @@ import Game.Levels.MatrixTrace.L08_EvalOnEBasis
 World "Trace"
 Level 9
 
-Title "Matrix"
+Title "Trace"
 
 Introduction
 "
-The trace as a map from the space of `n × n` matrices to the field of scalars has the following properties:
-1. It is linear, witnessed by `traceLinear`.
-2. The trace of a identity matrix is the dimension of the matrix, i.e.
-`trace (1 : Matrix α α ℝ) = Fintype.card α`.
-3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.
+Während ihr euch anschleicht.
 
-We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.
+**Du** (**flüsternd**): Weisst du was? Mit all den Spuren, die wir gefunden haben, bin
+ich zum Schluss gekommen, dass es gar nicht mehrere solche Wesen gibt, sondern nur eins.
 
-TODO: `trace A` is def.eq zu `∑ i, A i i`.
+**Robo**: Wie kommst du darauf?
 
+**Du**: Schau, seine Grösse und vorliebe für Kommutatoren, und all die anderen Sachen,
+damit kann man doch zeigen, dass es eindeutig identifiziert werden kann!
+
+**Robo**: Das musst du mir genauer erklären.
+
+**Du**: Klar, aber lass uns das da vorne währenddessen beobachten. Und wegen seiner Liebe
+zu Diagonalen nenne ich es zwischenzeitlich \"Tracy\"."
+
+Conclusion "
+
+Ihr beobachtet voller Entzücken diese offenbar einzigartige Wesen auf diesem Planeten.
+
+Als ihr näher kommt scheint euch Tracy zu bemerken, aber es scheint dadurch keinesfalls gestört
+zu sein.
 "
 
 open Nat Matrix BigOperators StdBasisMatrix Finset
 
+/---/
+TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
+
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     trace = f := by
-  Hint (hidden := true) "**Du**: Zwei Funktionen sind gleich wenn sie auf
-  allen Elementen gleich sind…
+  Hint "**Robo**: Also die Spuren bei unserem Raumschiff, das war sicher Tracy?
 
-  **Robo**: Das war `ext A`!"
+    **Du**: Ja, schau. Zwei so Dinger sind identisch wenn sich für äusseren Einflüsse
+    komplett identisch verhalten."
+  Hint (hidden := true) "
+    **Robo**: Also `ext` in mathematischem Jargon!"
   ext A
-  Hint "**Du**: Hatten wir nicht eben gerade, dass `f {A}` also Summe über `{A} i j * f (E i j)`
-  schreiben kann?
-
-  **Robo**: Was du vorhin bewiesen hast, hies `eq_sum_apply_diag_ebasis`."
+  Hint "**Du**: Und dann schreibe mal `f A` als Summe von Basiselementen."
   rw [eq_sum_apply_diag_ebasis] -- Lvl 7
-  Hint "**Du**: Und jetzt? Stimmt das überhaupt für `n = 0`?
+  Hint "**Robo**: Ah und den Fall `n = 0` sehe ich sofort!
 
-  **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`!
+    **Du**: Wirklich?
 
-  **Du**: Nah dann kann ich ja mal diesen Fall zuerst machen."
-  Hint (hidden := true) "**Robo**: das war `rcases n`."
+    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `rcases n`.
+
+    **Du**: Nicht `induction n`?
+
+    **Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
   rcases n
-  · Hint (hidden := true) "
-      **Robo**: Den Fall `n = 0` kann sogar ich! Ich wende einfach
-      immer `simp` an und das Betriebsystem gibt ein wohliges Schnurren zurück."
+  · Hint (hidden := true) "**Robo**: Ich hab einfach `simp` ausprobiert und das Betriebsystem
+      gibt ein wohliges Schnurren zurück. Probier es mal."
     simp
-  · Hint "**Du**: Wir hatten doch auch schon dass für unser `{f}` gilt dass `f (E i i) = 1`!
+  · Hint "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
 
-    **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
+      **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
     Hint (hidden := true) "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,
-    `rw` kann das nicht.
+      `rw` kann das nicht.
 
-    **Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben!"
+      **Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
     simp_rw [one_on_diag_ebasis h₁ h₂] -- Lvl 8
     Hint (hidden := true) "**Du** `_ * 1` ist `simp`, oder?"
     simp

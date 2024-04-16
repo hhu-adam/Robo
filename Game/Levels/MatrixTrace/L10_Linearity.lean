@@ -7,45 +7,43 @@ set_option tactic.hygienic false
 World "Trace"
 Level 10
 
-Title "Matrix"
+Title "Trace"
 
 Introduction
 "
-The trace of a square matrix is the sum of the elements on its main diagonal. It is a linear map from the space of square matrices to the field of scalars. The lineariry is witnessed by the term `traceLinearMap` in Mathlib.
-
-In Mathlib, trace is defined as the sum of the entries in the diagonal vector of a matrix:
-
-```
-∑ i, diag A i
-```
-
-where `diag A i = A i i`. You can prove `trace A = ∑ i, A i i` by `rfl`.
-
-The trace of a identity matrix is the dimension of the matrix:
-
-```
-trace_one : trace (1 : Matrix α α ℝ) = Fintype.card α
-```
-
-Since `Fin n` has `n` elements, we have:
-
-```
-trace (1 : Matrix (Fin n) (Fin n) ℝ) = n
-```
-
-Use `trace_add` and `trace_sub` are special cases of the linearity of the trace which state that the trace of the sum of two matrices is the sum of their traces, and the trace of the difference of two matrices is the difference of their traces.
-
+Tracy kommt zu euch hin und fängt an mit euch zu spielen. Belustigt gibt es euch verschiedenste
+Aufgaben und Terme, und ihr versucht diese schnell genug zu kombinieren.
 "
 
-open Matrix BigOperators
+Conclusion "Nach einem längeren spielhaften Austausch über Matrizen, deren Spur, und
+Standardbasen, beschliesst ihr auch auf den Rückweg zu machen.
+
+Ihr verlauft euch sofort, doch Tracy ist euch offenbar gefolgt und führt euch queer durch
+die Grasslandschaft schnurstrakts zu eurem Schiff zurück."
+
+open Matrix BigOperators Fintype
 
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
-    trace (A - t • 1) = trace A - t * n := by
-  --rw [trace_sub]
-  --rw [trace_smul]
-  --rw [trace_one]
-  simp?
+    trace (A - t • 1) = trace A - t • n := by
+  Hint "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
+  rw [trace_sub]
+  rw [trace_smul]
+  rw [trace_one]
+  Hint "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch alles
+  mit `simp` wenn wir nicht am spielen wären.
 
-NewTheorem Fintype.card_fin Matrix.trace_one Matrix.trace_smul Matrix.trace_sub
+  **Du**: Ist doch egal, das macht Spass!"
+  rw [card_fin]
+
+/---/
+TheoremDoc Matrix.trace_one as "trace_one" in "Matrix"
+
+/---/
+TheoremDoc Matrix.trace_smul as "trace_smul" in "Matrix"
+
+/---/
+TheoremDoc Matrix.trace_sub as "trace_sub" in "Matrix"
+
+NewTheorem Matrix.trace_one Matrix.trace_smul Matrix.trace_sub
 OnlyTactic rw
 TheoremTab "Matrix"

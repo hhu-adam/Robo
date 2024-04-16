@@ -3,7 +3,7 @@ import Game.Levels.MatrixTrace.L02_EBasis
 World "Trace"
 Level 3
 
-Title "Matrix"
+Title "Summe von Basiselementen"
 
 Introduction "Ihr kommt an eine Stelle, wo das Gras auf einer grösseren, quadratischen
 Fläche heruntergetreten ist. Spuren führen kreuz und queer und in verschiedene
