@@ -1,11 +1,11 @@
-import Game.Levels.MatrixTrace.L03_EBasisSpan
+import Game.Levels.MatrixTrace.L09_Characterize
 
 --import Game.StructInstWithHoles
 
 set_option tactic.hygienic false
 
-World "Matrix"
-Level 4
+World "Trace"
+Level 10
 
 Title "Matrix"
 
@@ -41,12 +41,11 @@ open Matrix BigOperators
 
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
     trace (A - t • 1) = trace A - t * n := by
-  rw [trace_sub]
-  rw [trace_smul]
-  rw [trace_one]
-  rw [Fintype.card_fin]
-  rfl
+  --rw [trace_sub]
+  --rw [trace_smul]
+  --rw [trace_one]
+  simp?
 
 NewTheorem Fintype.card_fin Matrix.trace_one Matrix.trace_smul Matrix.trace_sub
-
+OnlyTactic rw
 TheoremTab "Matrix"

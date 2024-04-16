@@ -1,9 +1,11 @@
-import Game.Levels.MatrixTrace.L01_VectorSpace
+import Game.Levels.MatrixTrace.L01_SMulEBasis
 
-World "Matrix"
+World "Trace"
 Level 2
 
 Title "Matrix"
+
+-- TODO: Do we need this level??
 
 Introduction
 "
@@ -14,16 +16,13 @@ The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0
 
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix BigOperators
 
-abbrev E {n : ℕ} (i j : Fin n) : Matrix (Fin n) (Fin n) ℝ :=
-  stdBasisMatrix i j 1
 
-Statement Matrix.smul_ebasis {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) (i j) : A i j • E i j = stdBasisMatrix i j (A i j) := by
-  simp
-  -- simp only [smul_stdBasisMatrix]
-  -- simp only [smul_eq_mul, mul_one]
+-- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
+Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
+  unfold E
+  simp [h]
 
-NewTheorem Matrix.smul_stdBasisMatrix mul_one smul_eq_mul
-
+NewDefinition Matrix.E
 TheoremTab "Matrix"

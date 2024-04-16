@@ -1,6 +1,6 @@
 import Game.Levels.MatrixTrace.L08_EvalOnEBasis
 
-World "Matrix"
+World "Trace"
 Level 9
 
 Title "Matrix"
@@ -14,6 +14,9 @@ The trace as a map from the space of `n × n` matrices to the field of scalars h
 3. The matrices in the trace of a product can be switched without changing the result, i.e. `trace (A * B) = trace (B * A)`. This is witnessed by `trace_mul_comm`.
 
 We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.
+
+TODO: `trace A` is def.eq zu `∑ i, A i i`.
+
 "
 
 open Nat Matrix BigOperators StdBasisMatrix Finset
@@ -30,15 +33,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   schreiben kann?
 
   **Robo**: Was du vorhin bewiesen hast, hies `eq_sum_apply_diag_ebasis`."
-  Branch
-    rw [eq_sum_apply_diag_ebasis (zero_on_offdiag_ebasis h₁)]
-    rcases n
-    · simp
-    · simp_rw [eq_on_diag_ebasis h₁ _ 0] -- we dont need this statement
-      rw [← sum_mul]
-      rw [one_on_diag_ebasis h₁ h₂ 0]
-      simp [trace]
-  rw [eq_sum_apply_diag_ebasis] -- Lvl 5
+  rw [eq_sum_apply_diag_ebasis] -- Lvl 7
   Hint "**Du**: Und jetzt? Stimmt das überhaupt für `n = 0`?
 
   **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`!
@@ -56,22 +51,27 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
     Hint (hidden := true) "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,
     `rw` kann das nicht.
 
-    **Du**: Ah, und die expliziten Argumente sollte ich wohl auch noch angeben."
+    **Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben!"
     simp_rw [one_on_diag_ebasis h₁ h₂] -- Lvl 8
-    Hint (hidden := true) "**Du** Jetzt `mul_one`?"
-    simp_rw [mul_one]
+    Hint (hidden := true) "**Du** `_ * 1` ist `simp`, oder?"
+    simp
     Hint "**Robo**: Die beiden sind per Definition gleich!"
     rfl
-  Hint "**Du**: Wo kommt denn das her?
+  Hint "**Du**: Wo kommt denn das Goal her?
 
   **Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument
   ausgelassen, jetzt kannst du es noch nachholen."
-  intro i j hij
-  Hint "**Du**: Robo, wie hies das nochmals, dass unser `{f}` ausserhalb der Diagonale null ist?
-
-  **Robo**: `zero_on_offdiag_ebasis`."
-  apply zero_on_offdiag_ebasis -- Lvl 7
-  assumption
   assumption
 
+/--
+
+Nicht genau definiert als, aber per Definition äquivalent zu:
+`trace A = ∑ i, A i i`.
+
+Mathlib benutzt den Term `diag A i` auf den wir hier nicht genauer eingehen.
+
+-/
+DefinitionDoc Matrix.trace as "trace"
+
+NewDefinition Matrix.trace
 TheoremTab "Matrix"

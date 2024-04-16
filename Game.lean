@@ -12,7 +12,7 @@ import Game.Levels.Sum
 
 -- TMP: disable non-complete levels for the seminar
 -- import Game.Levels.SetTheory
--- import Game.Levels.MatrixTrace
+import Game.Levels.MatrixTrace
 -- import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out

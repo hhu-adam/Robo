@@ -1,6 +1,6 @@
 import Game.Levels.MatrixTrace.L07_EvalOnEBasis
 
-World "Matrix"
+World "Trace"
 Level 8
 
 Title "Matrix"
@@ -16,34 +16,45 @@ open Nat Matrix BigOperators StdBasisMatrix
 
 #check NeZero
 
-Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
+/-- Level 8 -/
+TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
+
+Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     ∀ i, f (E i i) = 1 := by
   intro i
-  apply nat_mul_inj'
-  have : n.succ * f (E i i) = f ( (n.succ : ℝ) • E i i) := by
-    --unfold E
-    rw [LinearMap.map_smul f]
-    simp only [smul_eq_mul]
-  rw [this]
-  trans f (∑ _i : Fin n.succ, E i i)
-  · congr
-    rw [Fin.sum_const n.succ]
-    simp only [smul_stdBasisMatrix]
-    simp only [smul_eq_mul]
-    simp only [mul_one]
-    simp only [nsmul_eq_mul]
-    simp only [cast_add, cast_one, mul_one]
-  · rw [map_sum f (fun x => E i i) Finset.univ]
-    --rw [apply_ebasis_diag h₁]
+  -- apply Nat.mul_left_cancel
+  Hint "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber
+  beide Seiten mit `(n + 1)` multiplizieren.
+
+  **Robo**: Da gibt es verschiedene Möglichkeiten.
+  Gib folgendes ein: `apply nat_mul_inj' (n := n.succ)`!"
+  apply nat_mul_inj' (n := n.succ) -- TODO: is there a better way to write this?
+  Hint ""
+  rw [←smul_eq_mul, ← LinearMap.map_smul]
+  Hint "**Du**: Das Argument auf der linken Seite kann ich jetzt als konstante Summe
+  darstellen.
+
+  **Robo**: Probier `trans {f} (∑ x : Fin {n}.succ, E {i} {i})`."
+  trans f (∑ x : Fin n.succ, E i i)
+  · Hint "**Du**: Genau, dann ist diese erste Gleichheit nur die konstante Summe ausrechnen.
+
+    **Robo**: `simp` kann das sicher komplett vereinfachen."
+    unfold E
+    simp
+  · Hint "**Du**: Als nächstes ziehen wir "
+    rw [map_sum]
     trans ∑ i : Fin n.succ, f (E i i)
     · congr
       ext j
-      simp only [eq_on_diag_ebasis h₁ i j]
-    · rw [← map_sum f (fun x => E x x) Finset.univ]
-      rw [ebasis_diag_sum_eq_one]
-      simp only [h₂]
+      rw [eq_on_diag_ebasis] -- Lvl 5
+      assumption
+    · rw [← map_sum]
+      rw [ebasis_diag_sum_eq_one] -- Lvl 4
+      rw [h₂]
       simp
   simp
 
 TheoremTab "Matrix"
+
+#check mul_left_cancel_iff

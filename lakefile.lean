@@ -54,3 +54,5 @@ package Game where
 
 @[default_target]
 lean_lib Game
+
+set_option autoImplicit false

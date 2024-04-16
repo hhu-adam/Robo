@@ -1,43 +1,44 @@
-import Game.Levels.MatrixTrace.L06_EvalOnEBasis
+import Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
 
-World "Matrix"
+--import Game.StructInstWithHoles
+
+World "Trace"
 Level 7
 
 Title "Matrix"
 
 Introduction
 "
-In this level, we will show that a linear functional `f` on the space of matrices which kills all commutators also kills all off-diagonal elementary basis matrices.
+A linear functional `f` on the space of `n × n` matrices (for non-zero `n`) which kills
+all commutators and moreover satisfies `f(1) = n` has the property that `f (E i i) = 1`
+for all `i : Fin n`.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix BigOperators StdBasisMatrix Finset
 
--- TODO: (JE) does it make sense to copy some API from `StdBasisMatrix` to `E`?
--- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
-theorem Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
-  apply Matrix.StdBasisMatrix.mul_of_ne (h := h)
+/-- TODO: In Level 5 -/
+TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"
 
-Statement Matrix.zero_on_offdiag_ebasis {n : ℕ} {f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ}
-    (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
-  intro i j hne
-  Hint "**Du**: Wie könnte ich denn `{h₁}` hier gut verwenden?
 
-  **Du**: Wie wär's wenn ich `E i j` aufteile als `E i j * E j j`, denn die Umkehrung
-  `E j j * E i j` sollte `0` sein!
+Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
+    (h₁ : ∀ A B, f (A * B) = f (B * A))
+    (A : Mat[n,n][ℝ]) :
+    f A = ∑ i : Fin n, (A i i) * f (E i i) := by
+  nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
+  -- simp [map_sum]
+  simp
+  trans ∑ i : Fin n, ∑ j : Fin n, if i = j then (A i j) * f (E i j) else 0
+  · congr
+    ext i
+    congr
+    ext j
+    by_cases h₂ : i = j
+    · rw [if_pos h₂]
+    · rw [if_neg h₂]
+      simp
+      right
+      apply Matrix.zero_on_offDiag_ebasis h₁ -- Lvl 6
+      assumption
+  · simp
 
-  **Robo*: Wenn du meinst, du kannst diese Gleichung mit einem Zwischenschritt
-  `f (E i j) = f (E i j * E j j) = 0` lösen, dann kannst du `trans f (E i j * E j j)`
-  verwenden.
-  "
-  trans f (E i j * E j j)
-  · Hint "**Robo**: Zuerst die erste der beiden Gleichungen…"
-    rw [StdBasisMatrix.mul_same, mul_one]
-  · Hint "**Robo**: … und dann die Zweite."
-    rw [h₁]
-    Hint "`E.mul_of_ne j j hne.symm`"
-    rw [E.mul_of_ne j j hne.symm]
-    simp
-
-NewTheorem Matrix.E.mul_of_ne
 TheoremTab "Matrix"
