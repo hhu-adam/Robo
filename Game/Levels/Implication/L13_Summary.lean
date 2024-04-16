@@ -38,6 +38,8 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 | 13  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                            |
 "
 
+set_option tactic.hygienic false
+
 Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
   Hint "**Du** *(flüsternd)*: Ist das nicht die Definition von `→`?
 
@@ -45,6 +47,10 @@ Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
   constructor
   intro h
   Hint (hidden := true) "**Robo**: Vielleicht kannst du wieder `by_cases` benutzen."
+  Branch
+    by_cases A
+
+
   by_cases hA : A
   apply h at hA
   right
@@ -54,6 +60,10 @@ Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
   Hint (hidden := true) "**Robo**: Na Implikationen gehst du immer mit `intro` an."
   intro h
   intro ha
+  Branch
+    by_cases ha : A
+  Branch
+    by_cases A
   Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `rcases` aufteilen."
   rcases h with h | h
   contradiction

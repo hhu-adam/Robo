@@ -16,7 +16,7 @@ open Function Set
 
 
 theorem cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) :
-    ∀ (s : Y → Y), ∃ x, IsFixedPt s x:=
+    ∀ (s : Y → Y), ∃ x, IsFixedPt s x :=
   by
     intro s
     let g : A → Y := fun (a : A) ↦ s (f a a)   --s ∘ f ∘ (δ A)

@@ -16,7 +16,7 @@ In this level you show that the set of the fixed points of the negation operator
 open Function Set
 
 
--- Note: do we prefer `Not` instead of `(¬ .)`?
+-- Note: do we prefer `Not` instead of `(¬ .)`? -- JE: no
 Statement no_fixedpoints_of_not : ¬ ∃ (x : Prop),  IsFixedPt (¬ .) x := by
   push_neg
   intro P h

@@ -23,4 +23,6 @@ theorem Cantor_power {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
   intro f
   intro h
   apply no_fixedpoints_of_not
-  apply cantor_diagonal f h (fun x => ¬x)
+  -- JE: might be cumbersome. I just left it here for the moment for reference.
+  let g : A → A → Prop := fun (a b : A) => (b ∈ f a)
+  apply cantor_diagonal g h (fun x => ¬x)

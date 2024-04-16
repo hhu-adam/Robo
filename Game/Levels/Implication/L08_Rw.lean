@@ -41,4 +41,5 @@ Conclusion
 "
 
 NewTactic rw
+NewHiddenTactic nth_rw
 DisabledTactic tauto
