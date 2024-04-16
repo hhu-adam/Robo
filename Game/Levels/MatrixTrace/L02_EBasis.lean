@@ -9,19 +9,26 @@ Title "Matrix"
 
 Introduction
 "
-The matrix `E i j` is defined as the matrix with a `1` at position `i, j` and `0` elsewhere. They are extemely sparse. In below, `E i j` are defined in terms of mathlib's `stdBasisMatrix`.
+Kurze Zeit später findet ihr noch mals einen sehr ähnlichen Zettel, wieder
+vollgekritzelt, aber die erste Zeile lässt sich gerade noch ausmachen.
+"
 
-`stdBasisMatrix i j c` is the matrix with `c` at position `i, j` and `0` elsewhere. `stdBasisMatrix` matrices are closed under scalar multiplication, becasue
-`c • stdBasisMatrix i j 1 = stdBasisMatrix i j c`, a theorem witnessed by `smul_stdBasisMatrix`.
+Conclusion "
+  **Robo**: Ich speichere dieses `E.mul_of_ne` auch mal, wer weiss.
 
+  **Du**: Jetzt bin ich aber neugierig, wer das ist. Komm, lass uns
+  weitergehen.
 "
 
 open Nat Matrix BigOperators
 
-
 -- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
 Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
+  Hint "**Du**: Vielleicht sind das wirklich irgendwelche Tipps. Der hier scheint
+  ganz ähnlich zu funktionieren: Wenn man zwei Standardmatrizen zusammenzählt und die Indizes nicht stimmen, kriegt man Null.
+  "
   unfold E
+  Hint (hidden := true) "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `{h}` explizit braucht!"
   simp [h]
 
 NewDefinition Matrix.E

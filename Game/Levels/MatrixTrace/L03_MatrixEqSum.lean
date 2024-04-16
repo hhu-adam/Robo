@@ -5,9 +5,17 @@ Level 3
 
 Title "Matrix"
 
-Introduction ""
+Introduction "Ihr kommt an eine Stelle, wo das Gras auf einer grösseren, quadratischen
+Fläche heruntergetreten ist. Spuren führen kreuz und queer und in verschiedene
+Richtungen weg.
 
-Conclusion ""
+Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.
+Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
+
+Conclusion "
+Du beschliesst einer besonders markanten Spur zu folgen. Robo zieht dir hinterher und schnappt
+sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
+"
 
 open Nat Matrix BigOperators StdBasisMatrix
 
@@ -23,11 +31,22 @@ TheoremDoc Matrix.matrix_eq_sum_std_basis as "matrix_eq_sum_std_basis" in "Matri
 
 Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     A = ∑ i : Fin n, ∑ j : Fin n, (A i j) • E i j := by
-  Hint "**Du**: Da kann ich ja gleich das anwenden, was wir soeben gemacht haben."
+  Hint "**Du**: Eine Matrix kann man als Summe von Basismatrizen schreiben, soweit so gut…
+
+    **Robo**: Da kann ich ja gleich die Resultate anwenden, die wir soeben gefunden haben!"
   Hint (hidden := true) "**Robo**: Unter Summen braucht man `simp_rw`."
+  Branch
+    unfold E
+    Hint "**Robo**: Naja, jetzt führst du den Beweis vom ersten Pergament einfach nochmals,
+    aber nur zu, Übung macht den Meister.
+
+    **Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
+    simp
   simp_rw [Matrix.smul_ebasis] -- Lvl 1
   Hint "**Robo**: Diese Form kenne ich aus meiner Bibliothek, das ist
-  `apply matrix_eq_sum_std_basis`."
+  `apply matrix_eq_sum_std_basis`.
+
+  **Du**: Danke, das möchte ich eh nicht manuell machen."
   apply matrix_eq_sum_std_basis
 
 NewTheorem Matrix.matrix_eq_sum_std_basis

@@ -19,7 +19,7 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A))  :
     ∀ (i j : Fin n), f (E i i) = f (E j j) := by
   intro i j
-  Hint "**Du**: Wie kann ich denn wohl am besten die Annahme `{h}` brauchen, dazu müsste
+  Hint "**Du**: Wie kann ich denn wohl am besten die Annahme `{h₁}` brauchen, dazu müsste
   ich wohl zuerst eine Multiplikation haben.
 
   **Robo**: als was möchtest du denn `E i i` darstellen?
@@ -35,7 +35,7 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     **Robo**: Da `E` ganz konkret definiert ist, kann das `simp` bestimmt."
     unfold E
     simp
-  · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h}` brauchen
+  · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h₁}` brauchen
     wolltest?
 
     **Du**: Ah ja, stimmt!"
