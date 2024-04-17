@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Apr 16 17:07:39 2024\n"
+"POT-Creation-Date: Wed Apr 17 08:49:21 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -3544,6 +3544,10 @@ msgid "`E i j` ist die `n × n`-Matrix (mit Werten in `ℝ`) mit einer `1` an\n"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L01_SMulEBasis
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L01_SMulEBasis
 msgid "**Du**: Bei dem Wesen gings wohl um Matrizen. Was es wohl sein mag?\n"
 "\n"
 "**Robo**: `stdBasisMatrix i j (1 : ℝ)` kenne ich, das ist die Standardbasis\n"
@@ -4167,6 +4171,18 @@ msgid "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch al
 "mit `simp` wenn wir nicht am spielen wären.\n"
 "\n"
 "**Du**: Ist doch egal, das macht Spass!"
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid ""
+msgstr ""
+
+#: Game.Levels.MatrixTrace.L10_Linearity
+msgid ""
 msgstr ""
 
 #: Game.Levels.MatrixTrace

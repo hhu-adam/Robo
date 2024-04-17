@@ -29,7 +29,7 @@ Statement (A B : Prop) (hA : A) (h : A → B) : B := by
     **Robo**: Okay, nein, sorry. `mopo` gibt es nicht. Probier lieber `revert {hA}`."
   revert hA
   Hint "
-    **Du**: Aha. `revert` ist qausi `intro` rückwärts.
+    **Du**: Aha. `revert` ist quasi `intro` rückwärts.
 
     **Robo**: Genau. `intro` nimmt die Prämisse aus einer Implikation `{A} \\to {B}` im
     Beweisziel und macht daraus eine Annahme. `revert` nimmt umgekehrt eine Annahme und
