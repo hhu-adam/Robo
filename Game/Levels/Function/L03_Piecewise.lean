@@ -40,7 +40,7 @@ Statement :
     **Du**: Damit krieg ich die Fälle `0 ≤ {x}` und `{x} < 0`?
 
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
-    und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 < {x}` wechseln."
+    und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 > {x}` wechseln."
   by_cases h : 0 ≤ x
   · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.
 
