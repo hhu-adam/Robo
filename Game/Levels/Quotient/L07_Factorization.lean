@@ -26,8 +26,15 @@ Statement (A : Type u₁) (B : Type u₂) (f : A -> B) :
   use (Quotient.mk <| ker <| f)
   use (Quotient.lift (rangeFactorization f) respects_ker_rel)
   use Subtype.val
-  refine ⟨?_, ?_, ?_, ?_⟩
-  · rfl
-  · exact surj_quotient_mk_ker f
-  · exact bij_quotient_lift_range_fac f
-  · exact Subtype.val_injective
+  Branch
+    refine ⟨?_, ?_, ?_, ?_⟩
+    · rfl
+    · exact surj_quotient_mk_ker f
+    · exact bij_quotient_lift_range_fac f
+    · exact Subtype.val_injective
+  simp
+  constructor
+  · apply surj_quotient_mk_ker
+  · constructor
+    · apply bij_quotient_lift_range_fac
+    · apply Subtype.val_injective

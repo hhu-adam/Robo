@@ -18,6 +18,8 @@ open Set Function Setoid Cardinal
 
 #check range
 
+-- JE: Another Level, leading up to this one. Could even go into the "FixedPoints"-planet
+-- we talked about
 theorem tmp₀ (f : Function.End A) (h : f ∘ f = f) : range f = fixedPoints f := by
   apply Subset.antisymm
   · intro x hx
