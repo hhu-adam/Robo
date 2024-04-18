@@ -36,6 +36,12 @@ open Function Set Setoid
 
 Statement {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
     (ker f).Rel x y ↔ (x - y) ∈ f.ker := by
+  Branch
+    -- alternative proof using `AddMonoidHom.mem_ker` from mathlib
+    simp_rw [AddMonoidHom.mem_ker f]
+    simp only [map_sub]
+    simp [ker_def]
+    simp [sub_eq_zero]
   constructor
   · intro h
     simp [ker_def] at h
@@ -45,12 +51,3 @@ Statement {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
     simp [ker_def]
     rw [← sub_eq_zero, ← f.map_sub]
     exact h
-
-
--- alternate proof using `AddMonoidHom.mem_ker` from mathlib
--- example {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
---     (ker f).Rel x y ↔ (x - y) ∈ f.ker := by
---   simp_rw [AddMonoidHom.mem_ker f]
---   simp only [map_sub]
---   simp [ker_def]
---   simp [sub_eq_zero]
