@@ -17,7 +17,7 @@ Wenn Du mal probieren willst … hier ist mir gestern etwas verrutscht.
 "
 
 Statement
-  (n m : ℕ) : m < n ↔ m.succ ≤ n := by
+  (n m : ℕ) : m < n ↔ m + 1 ≤ n := by
   Hint "
     **Robo**: Denk lieber nicht zu lange darüber nach. Das ist eine Kuriosität,
     dass `m < n` auf `ℕ` per Definition als `m + 1 ≤ n` definiert ist!
