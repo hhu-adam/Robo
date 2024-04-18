@@ -16,22 +16,25 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   Hint "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
   Branch
     unfold Odd
-    push_neg
     Hint "
       **Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.
-      Ich würde nochmal zurückgehen und schauen,
-      dass du irgendwie `¬Odd` erhältst.
-      Das kannst du dann mit `rw [←even_iff_not_odd]`
-      zu `Even` umwandeln."
+      Ich würde nochmal zurückgehen und `Odd` behalten,
+      damit man schlussendlich `even_iff_not_odd` brauchen kann!"
   push_neg
   intro n
+  Branch
+    unfold Odd
+    Hint "
+      **Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.
+      Ich würde nochmal zurückgehen und `Odd` behalten,
+      damit man schlussendlich `even_iff_not_odd` brauchen kann!"
   Hint "
     **Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das
-    Lemma `←even_iff_not_odd` brauchen.
+    Lemma `even_iff_not_odd` brauchen.
 
-    **Du**: Könnte ich jetzt schon `rw [←even_iff_not_odd]` anwenden?
+    **Du**: Könnte ich jetzt schon `even_iff_not_odd` anwenden?
 
-    **Robo**: Nee, `rw` kann nicht innerhalb von Quantoren umschreiben.
+    **Robo**: Nein, `rw` kann nicht innerhalb von Quantoren umschreiben.
 
     **Du**: Aber wie würde ich das machen?
 
@@ -39,13 +42,13 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
     Ich würde jetzt lieber mit `use` eine richtige Zahl angeben, und danach umschreiben."
   Branch
     use n + 2
-    Hint "**Robo**: Gute Wahl! Jetzt kannst du `←even_iff_not_odd` verwenden."
+    Hint "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
   Branch
     use n + 4
-    Hint "**Robo**: Gute Wahl! Jetzt kannst du `←even_iff_not_odd` verwenden."
+    Hint "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
   use n
-  Hint "**Robo**: Gute Wahl! Jetzt kannst du `←even_iff_not_odd` verwenden."
-  rw [←even_iff_not_odd]
+  Hint "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
+  rw [← even_iff_not_odd]
   Branch
     tauto
   unfold Even
