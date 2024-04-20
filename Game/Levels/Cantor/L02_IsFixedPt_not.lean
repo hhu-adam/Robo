@@ -21,8 +21,9 @@ Statement no_fixedpoints_of_not : ¬ ∃ (x : Prop),  IsFixedPt (¬ .) x := by
   push_neg
   intro P h
   dsimp [IsFixedPt] at h
-  --simp_all only [eq_iff_iff]
-  --simp only [not_iff_self] at h
+  Branch
+    simp_all only [eq_iff_iff]
+    simp only [not_iff_self] at h
   tauto
 
 

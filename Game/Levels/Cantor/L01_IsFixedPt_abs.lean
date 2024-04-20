@@ -20,7 +20,8 @@ Statement : ∀ (x : ℝ), IsFixedPt abs x ↔ 0 ≤ x := by
   constructor
   · intro h
     rw [← h]
-    --simp only [abs_nonneg]
+    Branch
+      simp only [abs_nonneg]
     positivity
   · intro h
     dsimp [IsFixedPt]

@@ -26,8 +26,9 @@ theorem cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) :
     dsimp [IsFixedPt]
     simp [← this]
     symm
-    apply congr_fun ha
-    -- rw [ha]
+    Branch
+      apply congr_fun ha
+    rw [ha]
 
 
 
