@@ -1,5 +1,4 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 World "Cantor"
 Level 6

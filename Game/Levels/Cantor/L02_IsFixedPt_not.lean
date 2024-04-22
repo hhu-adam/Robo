@@ -1,11 +1,10 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 
 World "Cantor"
 Level 2
 
-Title "Cantor"
+Title "Not fixed points"
 
 Introduction
 "

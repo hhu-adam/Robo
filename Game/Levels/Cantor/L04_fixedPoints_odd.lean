@@ -1,10 +1,9 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 World "Cantor"
 Level 4
 
-Title "Cantor"
+Title "Odd fixed points"
 
 Introduction
 "
@@ -23,6 +22,8 @@ open Function Set Setoid
 
 Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) :
     x ∈ fixedPoints f ↔ - x ∈ fixedPoints f := by
+  Branch
+    sorry
   constructor
   · intro h
     apply mem_fixedPoints_iff.mpr

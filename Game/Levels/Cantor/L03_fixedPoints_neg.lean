@@ -4,7 +4,7 @@ import Game.Metadata.StructInstWithHoles
 World "Cantor"
 Level 3
 
-Title "Cantor"
+Title "Neg fixed points"
 
 Introduction
 "

@@ -1,8 +1,8 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
+
 
 import Game.Levels.Cantor.L02_IsFixedPt_not
-import Game.Levels.Cantor.L06_fixedPoints_Cantor
+import Game.Levels.Cantor.L07_fixedPoints_Cantor
 
 World "Cantor"
 Level 7
