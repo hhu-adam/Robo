@@ -18,7 +18,7 @@ In this level you show that for an idempotent function `f : A -> A`, the types `
 open Set Function Setoid Cardinal
 
 
-Statement (f : Function.End A) (h : f ∘ f = f) : Quotient (ker f) ≃ fixedPoints f := by
+Statement (f : A → A) (h : f ∘ f = f) : Quotient (ker f) ≃ fixedPoints f := by
   trans -- apply Equiv.trans
   exact Equiv.ofBijective (Quotient.lift (rangeFactorization f) respects_ker_rel) (bij_quotient_lift_range_fac f)
   rw [range_fixedPoints]
