@@ -2,9 +2,9 @@ import Game.Metadata
 import Game.Metadata.StructInstWithHoles
 
 World "Quotient"
-Level 2
+Level 8
 
-Title "Quotient"
+Title "Equifibred"
 
 Introduction
 "
@@ -36,6 +36,20 @@ example (h : u ∈ (ker f).classes) : ∃ y, u = f ⁻¹' ({f y}) := by
   use y
   rw [hy]
   aesop
+section
+
+end
+
+
+Statement (h : u ∈ (ker f).classes) : ∃ y, u = f ⁻¹' ({f y}) := by
+  simp_rw [classes, mem_setOf] at h
+  obtain ⟨y, hy⟩ := h
+  use y
+  ext
+  simp only [mem_setOf_eq, mem_preimage, mem_singleton_iff]
+  aesop
+
+
 
 Statement equiv_classes_of_equifibred (f : A → B)
     (e : ∀ b b'  : B, (f ⁻¹' {b}) ≃ (f ⁻¹' {b'})) :

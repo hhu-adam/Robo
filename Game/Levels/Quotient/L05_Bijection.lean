@@ -6,7 +6,7 @@ import Game.Levels.Quotient.L04_Respect
 World "Quotient"
 Level 5
 
-Title "Quotient"
+Title "Bijection"
 
 Introduction
 "

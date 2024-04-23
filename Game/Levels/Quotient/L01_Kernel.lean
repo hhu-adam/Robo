@@ -5,7 +5,7 @@ import Mathlib.GroupTheory.Subgroup.Basic
 World "Quotient"
 Level 1
 
-Title "Quotient"
+Title "Kernel"
 
 Introduction
 "

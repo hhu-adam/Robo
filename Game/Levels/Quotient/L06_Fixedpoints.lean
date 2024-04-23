@@ -8,7 +8,7 @@ import Game.Levels.Cantor.L06_fixedPoints_range
 World "Quotient"
 Level 6
 
-Title "Quotient"
+Title "Fixed points"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Metadata.StructInstWithHoles
 World "Quotient"
 Level 4
 
-Title "Quotient"
+Title "Respect"
 
 Introduction
 "
