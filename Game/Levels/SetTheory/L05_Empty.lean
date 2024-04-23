@@ -9,7 +9,9 @@ Title "Empty"
 
 Introduction
 "
-Zeige folgendes Lemma, welches wir gleich brauchen werden:
+**Robo**: Ist das denn wirklich so wichtig?
+
+**Verkäufer**: Hier, beantworte mir doch mal folgendes.
 "
 
 open Set Subset
@@ -19,7 +21,6 @@ TheoremDoc Set.eq_empty_iff_forall_not_mem as "eq_empty_iff_forall_not_mem" in "
 
 Statement Set.eq_empty_iff_forall_not_mem {A : Type _} (s : Set A) :
     s = ∅ ↔ ∀ x, x ∉ s := by
-  Hint "Das Lemma `subset_empty_iff` von letzter Aufgabe könnte hilfreich sein."
   Branch
     -- User solution by Yagub A.
     constructor

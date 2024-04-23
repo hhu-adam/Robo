@@ -17,7 +17,7 @@ import Game.Levels.MatrixTrace
 -- import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
--- import Game.Levels.NewStuff
+import Game.Levels.NewStuff
 
 Title "Robo"
 Introduction

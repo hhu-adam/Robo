@@ -8,18 +8,14 @@ Title "Schnittmenge und Vereinigung"
 
 Introduction
 "
-Ansonsten gibt es jegliche Lemmata in der Mathlib
-die beim Umgang mit diesen Operationen weiterhelfen. Schaue in der Bibliothek auf
-der Seite nach Lemmata, die dir hier weiterhelfen!
-
-Denk daran, die Lemma-Namen sind blockweise aus der Aussage konstruiert. Ein Lemma mit
-der Aussage `C \\ (A ∩ B) + …` wird vermutlich mit `diff_inter_…` anfangen.
+**Verkäufer**: Ich habe aber was interessanteres:
 "
 
 open Set
 
 /--  -/
 Statement (A B : Set ℕ) : univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
+  Hint "**Robo**: Ich habe dir ein paar Sachen aus meinem Speicher zusammengekratzt."
   rw [diff_inter]
   Hint (hidden := true) "mit `union_assoc` und `union_diff_distrib` kannst du
   auf der rechten Seite weiterkommen."

@@ -9,7 +9,9 @@ Title "Nonempty"
 
 Introduction
 "
-Das Gegenteil von `A = ∅` ist `A ≠ ∅`, aber in Lean wird der Ausdruck `A.Nonempty` bevorzugt.
+**Du**: Kann ich noch mehr üben?
+
+**Verkäufer**: Das Gegenteil von `A = ∅` ist `A ≠ ∅`, aber in Lean wird der Ausdruck `A.Nonempty` bevorzugt.
 Dieser ist dadurch existiert, dass in `A` ein Element existiert: `∃x, x ∈ A`.
 
 Zeige dass die beiden Ausdrücke äquivalent sind:

@@ -9,8 +9,7 @@ Title "Komplement"
 
 Introduction
 "
-Das Komplement einer Menge wird als `Aᶜ` (`\\^c`) geschrieben. Wichtige Lemmata
-sind `not_mem_compl_iff` und `compl_eq_univ_diff`.
+**Dame**: Ok gut. Aber hier nochmals was, was ich in der Zeitung gelesen habe:
 "
 
 open Set

@@ -24,13 +24,13 @@ import Game.Levels.SetTheory.L21_Summary
 World "SetTheory"
 Title "Mengenlehre"
 
--- Image "images/SetTheory.png"
-Image "images/WIP.png"
+Image "images/SetTheory.png"
+-- Image "images/WIP.png"
 
 Introduction
 "
-[WIP: Dieser Mond sieht brüchig und kurz vor dem implodieren aus. Besser, schnell
-abzuhauen, wenn etwas nicht klappt.]
+[Du betrittst einen Teil des Universums, der noch in der Entstehung ist.
+Lass dich auf Ungereimtheiten, Stolperfallen, und Handlungslöcher ein. Viel Gück!]
 
 Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
 Gesellschaften wohnen, die sich in der Einöde zurechtfinden.

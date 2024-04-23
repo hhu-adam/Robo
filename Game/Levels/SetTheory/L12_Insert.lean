@@ -9,19 +9,11 @@ Title "Konkrete Mengen"
 
 Introduction
 "
-Nun schauen wir uns konkrete Mengen an. Man schreibt diese mit
-geschweiften Klammern: `{0, 4, 117, 3}`. Meistens muss man
-den Typ explizit angeben, weil Lean nicht weiss, ob man mit `Set` (Mengen)
-oder `Finset` (endliche Mengen) arbeiten möchte: `({4, 9} : Set ℕ)`.
+**Du**: Das ist ja alles schön und gut, aber ich weiss immernoch nicht, wie
+ich eine ganz simple Menge wie `{4, 9}` notiere…
 
-`Finset` schauen wir uns später an.
-
-Um mit expliziten Mengen zu arbeiten, ist die Implementationsweise wichtig.
-
-Intern ist eine Menge `{0, 9, 5, 2}` iterativ als Vereinigung von
-Singletons definiert: `{0} ∪ ( {9} ∪ ( {5} ∪ {2} ))`.
-
-Die folgende Aufgabe ist entsprechend mit `rfl` lösbar.
+**Verkäufer**: Genau so! Aber diese endlichen Mengen sind alles iterative
+Konstruktionen aus `Set.insert` und `singleton`. Hier zum Beispiel:
 "
 
 open Set
@@ -29,6 +21,7 @@ open Set
 /-- Die Menge `{4, 9}` ist per Definition `{4} ∪ {9}`. -/
 Statement :
     ({4, 9} : Set ℕ) = Set.insert 4 {9} := by
+  Hint "**Du**: Das wär ja dann `rfl`."
   rfl
 
 OnlyTactic rfl

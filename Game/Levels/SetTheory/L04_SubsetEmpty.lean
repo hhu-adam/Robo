@@ -20,7 +20,7 @@ lemma antisymm_iff {α : Type} {A B : Set α} :
   A = B ↔ A ⊆ B ∧ B ⊆ A
 ```
 
-** Verkäufer**: Fast immer wenn man Gleichheiten von Mengen zeigen muss, will
+**Verkäufer**: Fast immer wenn man Gleichheiten von Mengen zeigen muss, will
 man diese in zwei Ungleichungen aufteilen. Hier, ich gebe euch mal ein
 Beispiel:
 "

@@ -8,12 +8,9 @@ Title "Schnittmenge und Vereinigung"
 
 Introduction
 "
-Die klassischen Mengenoperationen sind
-Schnittmenge `∩` (`\\inter`), Vereinigung `∪` (`\\union`) und
-Differenz `\\` (`\\\\`).
+Eine alte Dame kommt daher und wendet sich zu Verkäufer.
 
-Die Taktik `simp` kann triviale Aussagen with Vereinigung mit der
-leeren Menge vereinfachen.
+**Dame**: Du, ich hatte einen Gedanken. Kannst du mir folgendes erklären?
 "
 
 open Set

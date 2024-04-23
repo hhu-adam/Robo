@@ -23,8 +23,16 @@ Zeige dass ℝ kein endlich dimensionaler ℚ-Vektorraum ist.
 Statement : ¬ FiniteDimensional ℚ ℝ := by
   Branch
     -- TODO: Eduart Bopp's Beweis
+    Hint "
+    `let B := Basis.ofVectorSpace ℚ ℝ` gibt dir eine Basis von $\\mathbb\{R}$ über $\\mathbb\{Q}$.
+    Mache dann einen Widerspruchsbeweis und brauche folgende Resultate:
 
-    set B := Basis.ofVectorSpace ℚ ℝ
+    * `Cardinal.not_countable_real`: Das Hilfslemma von vorhin.
+    * `Cardinal.not_countable_real` : $\\mathbb\{R}$ ist überabzählbar.
+
+    Fange vielleicht auch damit an, `#ℚ = ℵ₀` zu zeigen.
+    "
+    let B := Basis.ofVectorSpace ℚ ℝ
     -- beginnt Gegenbeweis
     by_contra
     -- Angenomme R wäre ein endlich dimensionaler ℚ-Vektorraum ist.
@@ -55,11 +63,12 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
   apply Cardinal.not_countable_real
   rw [← Cardinal.le_aleph0_iff_set_countable]
   rw [Cardinal.mk_univ]
-  set B := Basis.ofVectorSpace ℚ ℝ
+  let B := Basis.ofVectorSpace ℚ ℝ
   apply cardinal_eq_of_finite_basis _ B
   simp only [Cardinal.mk_denumerable]
 
 NewTheorem Cardinal.not_countable_real Cardinal.le_aleph0_iff_set_countable
   Cardinal.mk_univ Cardinal.cardinal_eq_of_finite_basis Cardinal.mk_denumerable
+  Cardinal.mk_le_aleph0_iff Cardinal.mk_le_aleph0_iff
 
 NewDefinition Basis.ofVectorSpace
