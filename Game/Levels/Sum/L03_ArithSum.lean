@@ -77,7 +77,7 @@ open BigOperators
   -- **Robo**: Vielleicht wenn wir einmal einem Techniker begegnen, der mir ein Update
   -- einspielen kann…"
   -- Branch
-  --   ring_nf
+  --   ring
   --   Hint "**Robo**: Wie gesagt, brauch doch `rw [Nat.succ_eq_add_one]` als Fix für meine
   --   kleinen Maken."
   -- rw [Nat.succ_eq_add_one]

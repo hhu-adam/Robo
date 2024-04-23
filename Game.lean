@@ -11,7 +11,8 @@ import Game.Levels.Sum
 
 
 -- TMP: disable non-complete levels for the seminar
--- import Game.Levels.SetTheory
+import Game.Levels.SetTheory
+import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
 -- import Game.Levels.Quotient
 

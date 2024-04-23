@@ -44,7 +44,11 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : 
   auch manuell machen."
   ring
 
-NewTheorem Finset.sum_add_distrib add_comm
+/---/
+TheoremDoc Finset.sum_add_distrib as "sum_add_distrib" in "Sum"
+
+NewTheorem Finset.sum_add_distrib
+-- TODO: where does add_comm belong?
 TheoremTab "Sum"
 
 Conclusion "Der Babylonier macht ein sehr zufriedenes Gesicht."

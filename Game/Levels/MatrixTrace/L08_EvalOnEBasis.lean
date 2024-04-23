@@ -35,9 +35,10 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   beide Seiten mit `(n + 1)` multiplizieren.
 
   **Robo**: Da gibt es verschiedene Möglichkeiten.
-  Gib folgendes ein: `apply nat_mul_inj' (n := n.succ)`!"
+  Gib folgendes ein: `apply nat_mul_inj' (n := n.succ)`!" -- TODO: introduce earlier.
   apply nat_mul_inj' (n := n.succ) -- TODO: is there a better way to write this?
-  Hint ""
+  Hint "(*Stimme von oben*) : Der nächste Schritt ist `rw [←smul_eq_mul, ← LinearMap.map_smul]`,
+  aber das kannst du nicht wissen." -- TODO: introduce earlier.
   rw [←smul_eq_mul, ← LinearMap.map_smul]
   Hint "**Du**: Das Argument auf der linken Seite kann ich jetzt als konstante Summe
   darstellen.
@@ -74,6 +75,15 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
       simp
   simp
 
+-- TODO: Move!
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "Matrix"
+
 TheoremTab "Matrix"
+NewTheorem smul_eq_mul LinearMap.map_smul nat_mul_inj'
 
 #check mul_left_cancel_iff

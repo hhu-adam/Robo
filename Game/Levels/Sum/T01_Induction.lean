@@ -25,7 +25,7 @@
 -- simp
 -- rw [succ_eq_add_one]
 -- simp_rw [add_pow_two] at *
--- ring_nf at ih ⊢
+-- ring at ih ⊢
 -- sorry
 
 

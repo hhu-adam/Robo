@@ -44,6 +44,8 @@ TheoremDoc Matrix.trace_smul as "trace_smul" in "Matrix"
 /---/
 TheoremDoc Matrix.trace_sub as "trace_sub" in "Matrix"
 
-NewTheorem Matrix.trace_one Matrix.trace_smul Matrix.trace_sub
+NewTheorem Matrix.trace_one Matrix.trace_smul Matrix.trace_sub Fintype.card_fin
 OnlyTactic rw
 TheoremTab "Matrix"
+
+-- TODO: Move `Fintype.card_fin` to a different planet!

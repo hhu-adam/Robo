@@ -48,7 +48,11 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
       kompliziert aus. Lass mich es doch mit `nth_rw` versuchen."
   nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
   Hint "**Du** (*in Gedanken*): Jetzt die Funktion in die Summe rein… Und ja nicht an Wasser denken…
-  Aber Wasser hatte es doch auf Babylon auch für die schönen Gärten… Woran war ich nochmals?"
+    Aber Wasser hatte es doch auf Babylon… Woran war ich nochmals?"
+  Hint "**Robo** (*von irgendwo*): Das klingt nach `map_sum`, aber das hatten wir
+  auf Babylon nicht gesehen, da fantasierst du. Aber `simp` kennt dieses Lemma sonst auch."
+  Branch
+    simp
   rw [map_sum] -- simp knows this
   Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
   simp
@@ -92,6 +96,12 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     "
     simp
 
-TheoremTab "Matrix"
+-- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
+/--
+Lineare Abbildungen (oder genereller "additive" Abbildungen) kann man mit einer
+Summe vertauschen.
+-/
+TheoremDoc map_sum as "map_sum" in "Sum"
 
-#check LinearMap.map_smul
+TheoremTab "Matrix"
+NewTheorem map_sum

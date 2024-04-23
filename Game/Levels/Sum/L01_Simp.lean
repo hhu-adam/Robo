@@ -7,7 +7,8 @@ Title "Simp"
 
 Introduction
 "
-**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum er steht. Hier zum Beispiel.
+**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen,
+warum er steht. Hier zum Beispiel.
 "
 
 -- Eine endliche Summe läuft erstmal immer über einen endlichen Index
@@ -46,14 +47,21 @@ Statement (n : ℕ) : (∑ i : Fin n, (0 + 0)) = 0 := by
     **Du**: Okay. Und was mach ich jetzt?
 
     **Robo**: `simp` ist eine starke Taktik, die viele Terme vereinfacht.
-    Wir fangen besser an, sie zu benutzen.
-
-    Irgendwie hast du das Gefühl, ein Déjà-vue zu haben …"
+    Wir fangen besser an, sie zu benützen."
   simp
 
-OnlyTactic simp
+OnlyTactic simp simp_rw
+NewTactic simp_rw
 TheoremTab "Sum"
 
-Conclusion "**Babylonier**: Seht ihr, das passt!"
+-- TODO: I think it's a bug in the game that `trans _ (Fin n) _` triggers `Fin`,
+-- but for now I introduce this definition here instead of `MatrixTrace`
+NewDefinition Fin
 
--- TODO: Cannot write $\\{0\\}$ inside a hint.
+Conclusion "**Babylonier**: Seht ihr, das passt!
+
+**Robo**: Mir fällt gerade ein, du hattest ja mal gefragt bezüglich `rw` unter Quantoren.
+Mit Summen ist das das gleiche: Hier musst du immer `simp_rw` verwenden, wenn du innerhalb
+einer Summe was umschreiben möchtest."
+
+-- TODO: Add a level about `simp_rw`!

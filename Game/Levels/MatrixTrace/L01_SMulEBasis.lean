@@ -45,13 +45,13 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
     A i j • E i j = stdBasisMatrix i j (A i j) := by
   Hint "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen. Was meints du?
 
-  **Robo**: Ja! `stdBasisMatrix i j (a)` kenne ich, das ist die Matrizen, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.
+  **Robo**: Ja! `stdBasisMatrix i j a` kenne ich, das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.
 
   **Du**: Und die `E`s sind dann einfach eine Abkürzung für den Fall `a = 1`?
 
-  **Robo**: So siehts aus.  Und `A i j` ist einfach der Eintrag der Matrix `A` an der Position `(i, j)`.
+  **Robo**: So sieht's aus. Und `A i j` ist einfach der Eintrag der Matrix `A` an der Position `(i, j)`.
 
-  **Du**: Ah, verstehe.  Da steht also kein Produkt von Matrizen, sondern nur eine Skalarmultiplikation.  Dann ist das ja einfach.
+  **Du**: Ah, verstehe. Da steht also kein Produkt von Matrizen, sondern nur eine Skalarmultiplikation. Dann ist das ja einfach.
 
   **Robo**: Ja. Ich denke wenn du mit `unfold E` anfängst, geht der Rest wie von selbst.
   "

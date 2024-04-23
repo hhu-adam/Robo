@@ -48,8 +48,11 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.
   Denkst du das funktioniert ähnlich wie mit den Funktionen, da bei dieser Bibliothek?
 
-  **Robo**: Die beiden Taktiken `congr` und `ext` könnten dir hir tatsächlich helfen."
-  congr
+  **Robo**: Die beiden Taktiken `congr` und `ext` könnten dir hir tatsächlich helfen.
+
+  *(von oben)*: Wurde noch nicht erklärt, aber zukünftig werden `ext` und
+  `congr` schon früher eingeführt."
+  congr -- TODO: Modify story
   ext i r s
   Hint "**Du**: Oh, jetzt habe ich nicht nur den Summationsindex, sondern auch noch die beiden
   Indices `{r},{s}` der Matrizen eingeführt. Aber das sollte passen. Nur… die verbeleibende Summe
@@ -58,7 +61,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   **Robo**: Das ist nicht so schön, aber mit `rw [← Finset.sum_subset (Finset.subset_univ {i})]`
   könntest du diese so umschreiben, dass die Summe nur über dem Singleton `\{{i}}` läuft."
   -- have h : {i} ⊆ (Finset.univ : Fin n) := Finset.subset_univ {i}
-  rw [← Finset.sum_subset (Finset.subset_univ {i})]
+  rw [← Finset.sum_subset (Finset.subset_univ {i})] -- TODO: better hint once lemmas are introduced
   · Hint "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,
     bei diesem ist `1 i i` wieder Eins, und `1 • _` vereinfacht sich auch!"
     Hint (hidden := true) "**Robo**: `simp` klingt wirklich nach einer guten Idee."
@@ -95,6 +98,26 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     rw [if_neg h₃]
     simp
 
-NewTheorem Matrix.one_apply
+-- TODO: Introduce in other planet
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc Finset.sum_subset as "Finset.sum_subset" in "Matrix"
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc Finset.subset_univ as "Finset.subset_univ" in "Matrix"
+/-- Zwei Funktionen sind gleich, wenn sie auf allen Elementen gleich sind.
+
+Wenn das Goal `f = g` ist, kann man mit `ext i`, ein Element `i` einführen, und dann zeigen,
+dass `f i = g i` ist.
+
+`ext` versucht, so viele Indices einzufügen wie möglich `funext i` führt nur den spezifizierten ein.
+-/
+TacticDoc ext
+/-- `congr` versucht, eine Gleichung `_ = _` auf eine Gleichung von Untertermen zu reduzieren. Zum
+Beispiel ein Goal der Form `f a = f b` wird durch `congr` zu `a = b` reduziert. -/
+TacticDoc congr
+
+
+NewTheorem Matrix.one_apply Finset.sum_subset Finset.subset_univ
+NewTactic ext congr
+NewHiddenTactic funext
 
 TheoremTab "Matrix"

@@ -24,10 +24,15 @@ import Game.Levels.SetTheory.L21_Summary
 World "SetTheory"
 Title "Mengenlehre"
 
-Image "images/SetTheory.png"
+-- Image "images/SetTheory.png"
+Image "images/WIP.png"
 
 Introduction
-"Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
+"
+[WIP: Dieser Mond sieht brüchig und kurz vor dem implodieren aus. Besser, schnell
+abzuhauen, wenn etwas nicht klappt.]
+
+Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische
 Gesellschaften wohnen, die sich in der Einöde zurechtfinden.
 
 Ihr steuert einen der wenigen befestigten Standorte am Fuße eines Berges an.
@@ -43,3 +48,8 @@ vorstellt.
 
 World "SetTheory2"
 Title "Mehr Mengenlehre"
+
+Image "images/WIP.png"
+
+Introduction "Dieser Planet ist kahl un leer und noch unentdeckt. Zeit und Geschichte scheint es
+hier nicht zu geben."

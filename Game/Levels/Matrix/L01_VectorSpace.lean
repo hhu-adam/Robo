@@ -1,5 +1,4 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Real.Basic
@@ -7,7 +6,7 @@ import Mathlib.Data.Real.Basic
 import Game.Levels.Sum
 
 
-World "Trace"
+World "Matrix"
 Level 1
 
 Title "Matrix"
@@ -113,6 +112,13 @@ Conclusion ""
 /---/
 TheoremDoc Matrix.add_apply as "Matrix.add_apply" in "Matrix"
 
-NewTheorem Matrix.add_apply
+
+-- TODO: Move
+/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+TheoremDoc Finset.mul_sum as "Finset.mul_sum" in "Matrix"
+
+
+
+NewTheorem Matrix.add_apply Finset.mul_sum
 
 TheoremTab "Matrix"
