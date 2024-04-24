@@ -18,7 +18,7 @@ theorem cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) :
     ∀ (s : Y → Y), ∃ x, IsFixedPt s x :=
   by
     intro s
-    let g : A → Y := fun (a : A) ↦ s (f a a)   --s ∘ f ∘ (δ A)
+    let g : A → Y := fun (a : A) ↦ s (f a a)
     obtain ⟨a, ha⟩ := hsurj g
     have : g a = s (f a a) := by rfl
     use (f a a)

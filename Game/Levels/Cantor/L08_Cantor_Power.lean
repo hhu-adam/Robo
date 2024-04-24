@@ -5,7 +5,7 @@ import Game.Levels.Cantor.L02_IsFixedPt_not
 import Game.Levels.Cantor.L07_fixedPoints_Cantor
 
 World "Cantor"
-Level 7
+Level 8
 
 Title "Cantor"
 
@@ -19,7 +19,7 @@ In this level you show prove a type-theoretic formulation of this theorem.
 
 open Set Function
 
-theorem Cantor_power {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
+Statement Cantor_power {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
   intro f
   intro h
   apply no_fixedpoints_of_not
