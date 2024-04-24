@@ -17,13 +17,12 @@ open Set Function
 Statement {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
   intro f hf
   let C := { a | a ∉ f a }
-  rcases hf C with ⟨c, hc⟩
+  obtain ⟨c, hc⟩ := hf C
   have h : c ∉ f c := by
       intro h₁
       have : c ∉ f c := by
-        rw [hc] at h₁
-        assumption
+        rwa [hc] at h₁
       contradiction
   suffices (c ∈ f c) by contradiction
   rw [hc]
-  assumption
+  exact h
