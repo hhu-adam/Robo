@@ -8,7 +8,8 @@ Title "Idemptonent fixed points"
 open Function Set
 
 Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoints f := by
-  apply Subset.antisymm
+  rw [Subset.antisymm_iff]
+  constructor
   · intro x hx
     rcases hx
     rw [← h_1]
@@ -16,9 +17,12 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
     unfold IsFixedPt
     rw [mem_setOf]
     apply congr_fun at h -- :D
-    simp only [comp_apply] at h
+    simp at h
     rw [h]
   · intro x hx
-    rw [mem_range] -- is simp
+    simp
     use x
     trivial
+
+NewTheorem congr_fun
+TheoremTab "Function"

@@ -19,7 +19,7 @@ We use `∀ x, f (ga x) = gb (f x)` as the definition, so given `h : Function.Se
 open Function Nat
 
 
-Statement {f : α → ℕ} {z : α} (h : f z = 0) {s : α → α}
+Statement {f : α → ℕ} {z : α} (h : f z = 0) {g : α → α}
     (hs : Semiconj f s succ) : Surjective f := by
   intro n
   induction n with n hn

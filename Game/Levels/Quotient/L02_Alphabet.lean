@@ -38,8 +38,14 @@ def hole : Alphabet → Fin 3
   | _ => 0
 
 lemma hole_eq (x : Alphabet) : hole x = 0 ∨ hole x = 1 ∨ hole x = 2 := by
-  cases x
-  iterate tauto
+  rcases x <;> tauto
+
+-- {S | ∃ i, S = (hole ⁻¹' {i})}   -->   Quotient
+
+-- MZ: canonical bijection between the set of equiv classes and the Quotient type.
+-- is it in mathlib?
+
+
 
 /-- A direct proof that `hole ⁻¹' {i}` forms a parition of Alphabet. -/
 lemma hole_parition (x : Alphabet) :
@@ -47,9 +53,15 @@ lemma hole_parition (x : Alphabet) :
   unfold IsPartition
   constructor
   · intro h
-    simp at h
+    rw [mem_setOf] at h
     rcases h with ⟨i, hi⟩
-    cases i
+    rw [Subset.antisymm_iff] at hi
+    rcases hi with ⟨_, hi⟩
+
+    fin_cases i
+
+    sorry
+    sorry
     sorry
   · intro a
     use hole ⁻¹' {hole a}
@@ -66,7 +78,7 @@ lemma hole_parition (x : Alphabet) :
       intro h
       aesop
 
-/- A direct proof that `hole ⁻¹' {i}` forms a parition of Alphabet by using the fact that `hole ⁻¹' {i}` are equivalence classes of `ker hole`.
+/- A direct proof that `hole ⁻¹' {i}` forms a partition of Alphabet by using the fact that `hole ⁻¹' {i}` are equivalence classes of `ker hole`.
 -/
 
 Statement class_iff_fibre {S : Set Alphabet} : S ∈ (ker hole).classes ↔  ∃ i, S = hole ⁻¹' ({hole i}) := by
@@ -82,13 +94,16 @@ Statement class_iff_fibre {S : Set Alphabet} : S ∈ (ker hole).classes ↔  ∃
       simp [ker_def]
     simp [hy]
     simp [ker_def]
-  · sorry
+  · intro ⟨x, hx⟩
+    rw [hx]
+    sorry
 
 
 lemma hole_parition' (x : Alphabet) :
     IsPartition {S | ∃ i, S = (hole ⁻¹' {i})} := by
-  rw [class_iff_fibre]
-  apply isPartition_classes
+  sorry
+  -- rw [class_iff_fibre]
+  -- apply isPartition_classes
 
 
 

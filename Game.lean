@@ -14,6 +14,7 @@ import Game.Levels.Sum
 import Game.Levels.SetTheory
 import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
+import Game.Levels.Cantor
 -- import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
@@ -79,7 +80,7 @@ Conclusion
 
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "German"
+Languages "de"
 CaptionShort "Erkunde das Leansche Universum mit deinem Robo, welcher dir bei der Verständigung mit den Formalosophen zur Seite steht."
 CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein und schneidet danach verschiedene Bereiche des Bachelorstudiums an.
 

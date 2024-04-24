@@ -9,6 +9,8 @@ Title "Reals Are Uncountable"
 Introduction "Dieser Planet ist kahl un leer und noch unentdeckt. Zeit und Geschichte scheint es
 hier nicht zu geben."
 
+Image "images/WIP.png"
+
 -- -- Boss level: there are infinitely many primes
 -- World "TmpInfinitudePrimes"
 -- Title "Satz von Euklid"

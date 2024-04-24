@@ -17,7 +17,7 @@ open BigOperators
 Statement (n : ℕ) : ∑ i : Fin n, ((i : ℕ) + 1) = n + (∑ i : Fin n, (i : ℕ)) := by
   Hint "**Du**: Hmm, wieder `simp`?
 
-  **Robo**: Nicht ganz. `simp` benützt nur Lemmata, die klar eine Vereinfachung darstellen.
+  **Robo**: Nicht ganz. `simp` benutzt nur Lemmata, die klar eine Vereinfachung darstellen.
   Im Lean-Duden sind diese Lemmata mit `@[simp]` markiert.
   Hier brauchen wir aber folgende Identität:
 

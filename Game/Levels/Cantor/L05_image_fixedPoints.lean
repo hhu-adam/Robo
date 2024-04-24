@@ -19,7 +19,11 @@ under the operation of taking the image of `f`.
 open Function Set
 
 Statement (f : X → X) : f '' (fixedPoints f)  ⊆ fixedPoints f := by
-  intro y ⟨x, h⟩
-  rw [← h.2]
+  intro y hy
+  rcases hy with ⟨x, h₁, h₂⟩
+  rw [← h₂]
   apply IsFixedPt.apply
-  exact h.1
+  assumption
+
+NewTheorem Function.IsFixedPt.apply
+TheoremTab "Function"

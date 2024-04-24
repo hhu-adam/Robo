@@ -101,7 +101,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       Hint "
         **Robo**: Im nächsten Schritt must du `LeftInverse` brauchen um das Goal
         zu `g (f a) = g (f b)` zu wechseln: schau mal was du mit
-        `have w := {hL} {a}` kriegst und ob du das mit `rw` benützen kannst."
+        `have w := {hL} {a}` kriegst und ob du das mit `rw` benutzen kannst."
       have w := hL a
       rw [← w, ← hL b]
       Hint (hidden := true) "
@@ -116,7 +116,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       Hilft das rauszufinden was du hier brauchen musst?"
       use g x
       Hint (hidden := true) "**Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`
-      benützen."
+      benutzen."
       rw [hR]
 
 NewDefinition LeftInverse RightInverse

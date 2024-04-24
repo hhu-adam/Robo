@@ -23,10 +23,10 @@ lemma cardinal_eq_of_finite_basis
   #V ≤ cardinal.aleph_0 :=
 begin
   -- Schreibe `V` als Funktion `ι → K` (`ι` ist eine Basis), weil
-  -- wir dann `cardinal.power_def` benützen können.
+  -- wir dann `cardinal.power_def` benutzen können.
   rw cardinal.mk_congr (h2.equiv_fun.to_equiv),
   rw <-cardinal.power_def,
-  
+
   rw h,
   -- forme #ι  in fintype um
   simp only [cardinal.mk_fintype, cardinal.pow_cast_right],
@@ -35,12 +35,12 @@ begin
   -- reflexiv
   refl,
 
-  
+
   -- Ebenfalls hilfreich: `cardinal.power_nat_le`
 
 end
 
--- Resultat, dass ℝ nicht abzählbar ist 
+-- Resultat, dass ℝ nicht abzählbar ist
 #check cardinal.not_countable_real
 
 -- Eine Menge ist abzählbar gdw ihre Kardinalität `≤ ℵ₀` ist
@@ -75,7 +75,7 @@ begin
   --#R <= #Q
   have cardinal_ineq : #ℝ ≤ cardinal.aleph_0 :=
     cardinal_eq_of_finite_basis h_ℚ B,
-  
+
   -- R überabzählbar
   have h3 := cardinal.not_countable_real,
 

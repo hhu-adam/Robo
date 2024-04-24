@@ -3,7 +3,7 @@ import Game.Metadata.StructInstWithHoles
 
 import Game.Levels.Quotient.L04_Respect
 import Game.Levels.Quotient.L05_Bijection
-import Game.Levels.Cantor.L06_fixedPoints_range
+import Game.Levels.Cantor
 
 World "Quotient"
 Level 6

@@ -24,13 +24,20 @@ Statement : fixedPoints (fun (x : ℝ) => -x) = {0} := by
   ext
   constructor
   · intro h
-    apply mem_fixedPoints_iff.mp at h
-    simp only [neg_eq_self_iff] at h
+    rw [mem_fixedPoints_iff] at h
     Branch
-      simpa [mem_singleton_iff] using h
-    tauto
+      simp only [neg_eq_self_iff] at h
+    simp at h
+    Branch
+      tauto
+    rw [mem_singleton_iff]
+    assumption
   · intro h
-    simp only [mem_singleton_iff] at h
+    rw [mem_singleton_iff] at h
     rw [h]
-    apply mem_fixedPoints_iff.mpr
-    simp only [neg_zero]
+    rw [mem_fixedPoints_iff]
+    simp
+
+NewDefinition Function.fixedPoints
+NewTheorem Function.mem_fixedPoints_iff
+TheoremTab "Function"

@@ -29,7 +29,7 @@ warum er steht. Hier zum Beispiel.
 --   sorry
 -- ```
 
--- Die Taktik `simp` benützt alle Lemmas, die mit `@[simp]` markiert sind.
+-- Die Taktik `simp` benutzt alle Lemmas, die mit `@[simp]` markiert sind.
 
 -- (Tipp: `simp?` zeigt an, welche Lemmas `simp` benutzen würde.)
 
@@ -47,7 +47,7 @@ Statement (n : ℕ) : (∑ i : Fin n, (0 + 0)) = 0 := by
     **Du**: Okay. Und was mach ich jetzt?
 
     **Robo**: `simp` ist eine starke Taktik, die viele Terme vereinfacht.
-    Wir fangen besser an, sie zu benützen."
+    Wir fangen besser an, sie zu benutzen."
   simp
 
 OnlyTactic simp simp_rw

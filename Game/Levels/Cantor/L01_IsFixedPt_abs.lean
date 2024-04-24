@@ -20,7 +20,22 @@ Statement : ∀ (x : ℝ), IsFixedPt abs x ↔ 0 ≤ x := by
     rw [← h]
     Branch
       simp only [abs_nonneg]
-    positivity
+    Branch
+      positivity
+    simp
   · intro h
-    dsimp [IsFixedPt]
-    rw [abs_of_nonneg h]
+    unfold IsFixedPt
+    Branch
+      rw [abs_of_nonneg h]
+    simp
+    assumption
+
+
+/---/
+DefinitionDoc abs as "|·|"
+
+NewDefinition Function.IsFixedPt abs
+-- NewTactic positivity
+-- NewTheorem abs_of_nonneg abs_nonneg
+
+TheoremTab "Function"

@@ -220,7 +220,7 @@ TacticDoc fin_cases
 
 ## Details
 Nach dem Motto `f = g ↔ ∀ x, f x = g x` sind zwei Funktionen dann identisch, wenn sie
-angewendet auf jedes Element identisch sind. `funext x` benützt dieses Argument.
+angewendet auf jedes Element identisch sind. `funext x` benutzt dieses Argument.
 -/
 TacticDoc funext
 

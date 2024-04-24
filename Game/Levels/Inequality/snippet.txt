@@ -1,5 +1,5 @@
  …und deshalb sind `≥` und `>` eigentlich nur Notationen für `≤`,
 welches man übrigens `\\le` schreibt, was für Less-Equal (also Kleinergleich) steht…
 
-**Du**: Wir haben's verstanden, man benützt also Standartmässig lieber `≤` und `<`,
+**Du**: Wir haben's verstanden, man benutzt also Standartmässig lieber `≤` und `<`,
 aber damit weiß ich eh nichts anzufangen.

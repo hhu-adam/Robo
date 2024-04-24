@@ -43,7 +43,7 @@ Statement (x : ℤ) :
       aber mit `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
       Lemma auch."
   let g := fun (x : ℤ) ↦ x - 3
-  Hint "**Robo**: gute Wahl! Jetzt kannst du diese mit `use g` benützen."
+  Hint "**Robo**: gute Wahl! Jetzt kannst du diese mit `use g` benutzen."
   use g
   Hint "
     **Robo**: `({g} ∘ f) x` ist per Definition `{g} (f x)`, aber mit
@@ -58,7 +58,7 @@ Statement (x : ℤ) :
   Hint (hidden := true) "
     **Robo**: `ring` sieht durch lokale Definitionen wie
     `{f}` und `{g}` hindurch,
-    du kannst es also direkt benützen."
+    du kannst es also direkt benutzen."
   ring
 
 /--

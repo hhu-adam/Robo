@@ -4,7 +4,7 @@ import data.set.finite
 import data.multiset.finset_ops
 import tactic
 
-/-Hier geht es ersten darum, den Unterschied zwischen 
+/-Hier geht es ersten darum, den Unterschied zwischen
   ‘set U‘ und ‘finset U‘ einzuf ̈uhren.
   F ̈ur ‘finset U‘ sind diese Aufgaben dann alle praktisch trivial.
   F ̈ur ‘(S : set U)‘, muss man die Annahme ‘[finite S]‘
@@ -13,14 +13,14 @@ import tactic
 /-Nr.1 Jede endliche Vereinigung endlicher Menge
        ist wieder endlich.-/
 
-/-Nr.2 Die Potenzmenge einer endlichen Menge 
+/-Nr.2 Die Potenzmenge einer endlichen Menge
        ist wieder endlich.-/
 
-/-Nr.3 Ist M endlich und nicht leer, so sind die Menge 
+/-Nr.3 Ist M endlich und nicht leer, so sind die Menge
        P0(M ) ⊂ P(M ) der Teilmengen, die aus einer
        geraden Anzahl von Elementen bestehen, und die Menge
-       P1(M ) der Teilmengen, die aus einer 
-       ungeraden Anzahl von Elementen bestehen, 
+       P1(M ) der Teilmengen, die aus einer
+       ungeraden Anzahl von Elementen bestehen,
        gleich m ̈achtig.-/
 
 /-Nr.1-/
@@ -37,9 +37,9 @@ end
 
 example (N : set ℕ ) [h1 : N.finite]
         (A : N  → set ℤ ) (h2 : ∀ i : N, set.finite (A i))
-       : 
+       :
        set.finite (⋃ i : N, (A i)) :=
-begin  
+begin
   -- Das ist um zwischen `set.finite N` (i.e. `N.finite`) und `finite N` hin und
   -- her zu wechseln. Du könntest alternative auch einfach `[h1: finite N]` oben
   -- schreiben
@@ -55,7 +55,7 @@ example (A B : finset ℤ)
        :
        (A ∪ B : finset ℤ) :=
 begin
-       
+
 end
 
 
@@ -78,12 +78,12 @@ begin
 
   intro S,
   split,
-  { 
+  {
     sorry
   },
   { -- Hint: wenn du an eine Stelle kommst, an der du `... = S` hast,
     -- wobei `S ⊆ M` eine Teilmenge ist, dann kannst du mit `have k : S.finite := ...` beweisen
-    -- (mit `finite.subset`) und dann folgende Taktik benützen:
+    -- (mit `finite.subset`) und dann folgende Taktik benutzen:
     -- `lift S to finset U using k,`
     -- Das ersetzt dann `S` durch `↑S` wobei dann `S` neu ein `finset` ist anstatt ein `set`.
     sorry
@@ -96,4 +96,3 @@ endiche Menge und per Definition ist dann `M.powerset` wieder ein `finset`.
 
 Ein `finset` kann mit `(M : set U)` oder `↑M` in ein `set` coerced werden.
 -/
-

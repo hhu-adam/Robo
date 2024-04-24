@@ -22,15 +22,16 @@ open Function Set Setoid
 
 Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) :
     x ∈ fixedPoints f ↔ - x ∈ fixedPoints f := by
-  Branch
-    sorry
   constructor
   · intro h
-    apply mem_fixedPoints_iff.mpr
+    rw [mem_fixedPoints_iff]
     rw [h_odd x]
     rw [h]
   · intro h
-    apply mem_fixedPoints_iff.mpr
-    rw [mem_fixedPoints_iff] at h
+    rw [mem_fixedPoints_iff] at *
     rw [h_odd x] at h
-    apply neg_inj.mp h
+    rw [neg_inj] at h
+    assumption
+
+NewTheorem neg_inj
+TheoremTab "Function"

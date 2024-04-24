@@ -14,7 +14,7 @@ zusammen, so heisst das Lemma `1 * a = a` entsprechend `one_mul`.
 
 /- Lemma : no-side-bar
 Finde die Lemmas `add_zero`, `zero_add`, `mul_zero`, `zero_mul`, `mul_one`, `one_mul`
-links bei den bekannten Lemmas und benütze diese, um folgendes zu beweisen.
+links bei den bekannten Lemmas und benutze diese, um folgendes zu beweisen.
 -/
 example (a b c : ℕ)  : 0 * 0 * b + (a + 0) * 1 + 1 * c = a + c :=
 begin

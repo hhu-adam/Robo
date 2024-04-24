@@ -1,4 +1,5 @@
 import Game.Levels.Quotient.L01_Kernel
+import Game.Levels.Quotient.L02_Alphabet
 import Game.Levels.Quotient.L03_Surjection
 import Game.Levels.Quotient.L04_Respect
 import Game.Levels.Quotient.L05_Bijection

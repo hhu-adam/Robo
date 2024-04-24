@@ -30,5 +30,10 @@ open Function Set Setoid
 
 Statement surj_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk <| ker <| f) := by
   intro q
-  induction q using Quotient.ind
-  use a
+  -- "choose a representative `b`"
+  obtain ⟨b⟩ := q
+  -- change ∃ a, ⟦a⟧ = ⟦b⟧ -- why does this not pp correctly?
+  -- rcases q with ⟨b⟩
+  --induction q using Quotient.ind with b
+  use b
+  rfl

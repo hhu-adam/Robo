@@ -36,7 +36,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
     \\end\{aligned}
     $$
 
-    **Robo**: PS, `↦` ist `\\mapsto`. Aber man kann auch stattdessen `=>` benützen."
+    **Robo**: PS, `↦` ist `\\mapsto`. Aber man kann auch stattdessen `=>` benutzen."
   Hint (hidden := true) "
     **Du**: Ja aber was mach ich damit?
 

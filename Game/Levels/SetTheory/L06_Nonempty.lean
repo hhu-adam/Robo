@@ -36,7 +36,7 @@ Statement Set.nonempty_iff_ne_empty
 
     **Robo**: Das war `eq_empty_iff_forall_not_mem`. Du kannst ja einen
     Widerspruchsbeweis anfangen, dann kannst du dieses Lemma an der Annahme `{s} = ∅`
-    benützen!"
+    benutzen!"
     Hint (hidden := true) "**Robo** Widerspruch war `by_contra hf`."
     by_contra hf
     rw [eq_empty_iff_forall_not_mem] at hf

@@ -22,7 +22,7 @@ dass man bei Zahlen explizit einen Typ angeben muss, sonst denkt sich
 Lean, man arbeite über `ℕ`.
 
 Um direkt Vektoroperationen über `ℚ` auszurechnen, kann man oft
-`#eval` benützen:
+`#eval` benutzen:
 
 ```
 #eval ![ (2 : ℚ), 5 ] + ![ 1/2, -7 ]
@@ -30,7 +30,7 @@ Um direkt Vektoroperationen über `ℚ` auszurechnen, kann man oft
 zeigt `![5/2, -2]` an.
 
 Um eine Gleichheit in einem Beweis zu verwenden, muss man andere Taktiken
-benützen.
+benutzen.
 
 Am hilfreichsten ist die kombination `funext i, fin_cases i`, die
 Dann eine Vektorgleichung komponentenweise aufteilt.

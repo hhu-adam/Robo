@@ -23,7 +23,7 @@ end
 
 /- Hint : Law-of-excluded-middle
 `tauto!` ist noch ein bisschen stärker als `tauto` indem
-es das Law-of-excluded-middle aktiv benützt.
+es das Law-of-excluded-middle aktiv benutzt.
 
 (Oben reicht `tauto`, weil es ein Statement in der Library findet
 so dass es das Law-of-excluded-middle nicht selber

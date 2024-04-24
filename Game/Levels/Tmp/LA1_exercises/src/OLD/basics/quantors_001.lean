@@ -15,7 +15,7 @@ Das Komma `,` trennt die Variablen vom Statement.
 - Ein `(h : ∃ x, ...)` in den Annahmen kann man mit `cases h with x hx` beseitigen und tatsächlich
   ein solches `x` auswählen.
 - Ein `∃` im Goal muss man konkret erstellen. Wenn man also ein `x` hat, kann man
-  `use x` benützen, um dieses einzuführen.
+  `use x` benutzen, um dieses einzuführen.
 - Um ein neues Zwischenresultat mit `∃` zu erstellen, braucht man die
   Konstruktor-Schreibweise `⟨ , ⟩`:
   `have h_new : ∃ x, P x := ⟨y, Py⟩` (angenommen man hat `y` und den Beweis `P y` schon).
@@ -42,7 +42,7 @@ und tatsächlich ein solches `x` auswählen.
 /- Hint : Gegenrichtung, after `by_contradiction`.
 Von hier hast zwei Möglichkeiten:
 1) Da eine Annahme `(h : ¬∃ (x : U), P x)` im Grunde `(h : ∃ (x : U), P x → false)` ist,
-   kannst du mit `apply h` Fortschritt machen und danach `use` benützen.
+   kannst du mit `apply h` Fortschritt machen und danach `use` benutzen.
 2) oder kreeire einen direkten Widerspruch zu `(h : ¬∃ (x : U), P x)` mit
    `have h' : ∃ x, P x := ⟨_, _⟩` (und ersetzt die `_`).
 -/
@@ -72,4 +72,3 @@ begin
     -- contradiction
   }
 end
-
