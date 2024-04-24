@@ -5,7 +5,9 @@ import Game.Levels.Cantor.L04_fixedPoints_odd
 import Game.Levels.Cantor.L05_image_fixedPoints
 import Game.Levels.Cantor.L06_fixedPoints_range
 import Game.Levels.Cantor.L07_fixedPoints_Cantor
-import Game.Levels.Cantor.L08_Cantor_Power
+import Game.Levels.Cantor.L08_fixedPoints_Cantor
+import Game.Levels.Cantor.L09_Cantor_Power
+import Game.Levels.Cantor.L10_Cantor_Power
 
 World "Cantor"
 Title "Cantor"
