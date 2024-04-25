@@ -22,7 +22,8 @@ import Game.Levels.SetTheory.L21_Summary
 
 
 World "SetTheory"
-Title "Mengenlehre"
+Title "Synolos"
+-- griechisch Menge = Synolon
 
 Image "images/SetTheory.png"
 -- Image "images/WIP.png"
