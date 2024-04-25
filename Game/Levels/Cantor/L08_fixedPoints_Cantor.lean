@@ -13,7 +13,6 @@ prove the Cantor diagonal theorem.
 
 open Function Set
 
-
 Statement cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) :
     ∀ (s : Y → Y), ∃ x, IsFixedPt s x :=
   by
@@ -24,3 +23,6 @@ Statement cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) :
     apply cantor_diagonal_isFixedPt g s
     simp
     assumption
+
+NewTheorem cantor_diagonal
+TheoremTab "Function"

@@ -37,4 +37,5 @@ by
   simp only [mem_fixedPoints_iff] at h
   tauto
 
+NewTheorem no_fixedpoints_of_not
 TheoremTab "Function"

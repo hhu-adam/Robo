@@ -19,3 +19,6 @@ Statement cantor_diagonal_isFixedPt {f : A → A → Y} (g : A → Y) (s : Y →
     rw [← h₂] at h₁
     symm
     exact h₁ a
+
+NewTheorem cantor_diagonal_isFixedPt
+TheoremTab "Function"
