@@ -1,5 +1,4 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 import Game.Levels.Quotient.L04_Respect
 

@@ -1,5 +1,4 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 World "Quotient"
 Level 8
@@ -21,6 +20,7 @@ In this level you show that the equivalence classes of an equifibred function ar
 open Function Set Setoid
 
 -- Note: (JE, SH): replace this level with a better one Sina has in mind?
+-- SH: See L02_Alphabet
 
 section
 -- The following lemma is useful: it says that the elements related to x ∈ α by the kernel of f are those in the preimage of f(x) under f.
@@ -36,10 +36,6 @@ example (h : u ∈ (ker f).classes) : ∃ y, u = f ⁻¹' ({f y}) := by
   use y
   rw [hy]
   aesop
-section
-
-end
-
 
 Statement (h : u ∈ (ker f).classes) : ∃ y, u = f ⁻¹' ({f y}) := by
   simp_rw [classes, mem_setOf] at h
@@ -49,23 +45,17 @@ Statement (h : u ∈ (ker f).classes) : ∃ y, u = f ⁻¹' ({f y}) := by
   simp only [mem_setOf_eq, mem_preimage, mem_singleton_iff]
   aesop
 
-
-
 Statement equiv_classes_of_equifibred (f : A → B)
     (e : ∀ b b'  : B, (f ⁻¹' {b}) ≃ (f ⁻¹' {b'})) :
     ∀ u v, u ∈ (ker f).classes → v ∈ (ker f).classes → #u = #v := by
   intro u v hu hv
   simp_rw [classes, mem_setOf] at hu hv
-
-  change ∃ y, u = f ⁻¹' ({f y}) at hu
-  change ∃ y, v = f ⁻¹' ({f y}) at hv
-
+  -- change ∃ y, u = f ⁻¹' ({f y}) at hu
+  -- change ∃ y, v = f ⁻¹' ({f y}) at hv
   -- change ∃ y, u = {x | f x = f y} at hu
   -- change ∃ y, v = {x | f x = f y} at hv
-
   rcases hu with ⟨w, hw⟩
   rcases hv with ⟨z, hz⟩
-
   apply mk_congr
   rw [hw, hz]
   exact e (f w) (f z)

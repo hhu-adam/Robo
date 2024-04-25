@@ -1,5 +1,4 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 
 World "Quotient"
 Level 4
