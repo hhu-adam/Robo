@@ -4,31 +4,31 @@ import Game.Metadata
 World "Cantor"
 Level 2
 
-Title "Not fixed points"
+Title "Keine Fixpunkte"
 
 Introduction
-"
-In this level you show that the set of the fixed points of the negation operator `¬ . : Prop → Prop` is empty.
-
-Die Funktion `¬ : Prop → Prop` hat keine Fixpunkte.
-
-
-
-"
+""
 
 open Function Set
 
-
-
-Statement no_fixedpoints_of_not : ¬ ∃ (A : Prop),  IsFixedPt (¬ .) A := by
-  push_neg
-  intro P h
-  unfold IsFixedPt at h
+Statement not_isFixedPt_not : ¬ ∃ (A : Prop),  IsFixedPt (¬ .) A := by
+  Hint "**Du**: Ja, `¬(·)` hat keinen Fixpunkt, keine Aussage kann gleichzeitig
+    wahr und falsch sein!"
   Branch
-    simp_all only [eq_iff_iff]
-    simp only [not_iff_self] at h
+    by_contra h
+    rcases h with ⟨A, hA⟩
+    unfold IsFixedPt at hA
+    simp at hA -- a bit magical
+  Branch
+    push_neg
+    intro P h
+    unfold IsFixedPt at h
+    Branch
+      simp_all only [eq_iff_iff]
+      simp only [not_iff_self] at h
+    tauto
+  unfold IsFixedPt
   tauto
-
 
 theorem no_fixedpoints_of_not' : fixedPoints (¬ .) = ∅ :=
 by

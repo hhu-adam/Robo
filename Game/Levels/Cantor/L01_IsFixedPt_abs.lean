@@ -3,17 +3,29 @@ import Game.Metadata
 World "Cantor"
 Level 1
 
-Title "Absolute fixed point"
+Title "Fixpunkte"
 
 Introduction
 "
-For an endo-function `f : α → α` the proposition `IsFixedPt f x` asserst that `x` is a fixed point
-of `f`, that is `f x = x`.
 "
 
 open Function Set
 
 Statement : ∀ (x : ℝ), IsFixedPt abs x ↔ 0 ≤ x := by
+  Hint "**Robo**: `IsFixedPt f x` ist die Aussage `f x = x`.
+
+  **Du**: Und `abs` ist der Betrag? Was mache ich damit?
+
+  **Robo**: Ich denke so einfache Sachen, die `0` beinhalten kann `simp` ganz gut,
+  aber ich habe hier auch noch zwei Resultate, die hilfreich aussehen."
+  Branch
+    unfold IsFixedPt
+    intro x
+    constructor
+    · intro h
+      rw [← h]
+      exact abs_nonneg _
+    · exact abs_of_nonneg
   intro x
   constructor
   · intro h
@@ -30,12 +42,11 @@ Statement : ∀ (x : ℝ), IsFixedPt abs x ↔ 0 ≤ x := by
     simp
     assumption
 
-
 /---/
 DefinitionDoc abs as "|·|"
+/---/
+DefinitionDoc Function.IsFixedPt as "IsFixedPt"
 
 NewDefinition Function.IsFixedPt abs
--- NewTactic positivity
--- NewTheorem abs_of_nonneg abs_nonneg
-
+NewTheorem abs_of_nonneg abs_nonneg
 TheoremTab "Function"

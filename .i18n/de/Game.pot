@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 24 13:50:21 2024\n"
+"POT-Creation-Date: Thu Apr 25 15:53:31 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4998,12 +4998,24 @@ msgid "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslands
 msgstr ""
 
 #: Game.Levels.Cantor.L01_IsFixedPt_abs
-msgid "Absolute fixed point"
+msgid "Fixpunkte"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_IsFixedPt_abs
-msgid "For an endo-function `f : α → α` the proposition `IsFixedPt f x` asserst that `x` is a fixed point\n"
-"of `f`, that is `f x = x`."
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L01_IsFixedPt_abs
+msgid "**Robo**: `IsFixedPt f x` ist die Aussage `f x = x`.\n"
+"\n"
+"**Du**: Und `abs` ist der Betrag? Was mache ich damit?\n"
+"\n"
+"**Robo**: Ich denke so einfache Sachen, die `0` beinhalten kann `simp` ganz gut,\n"
+"aber ich habe hier auch noch zwei Resultate, die hilfreich aussehen."
+msgstr ""
+
+#: Game.Levels.Cantor.L01_IsFixedPt_abs
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L01_IsFixedPt_abs
@@ -5011,11 +5023,16 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_not
-msgid "Not fixed points"
+msgid "Keine Fixpunkte"
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_not
-msgid "In this level you show that the set of the fixed points of the negation operator `¬ . : Prop → Prop` is empty."
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L02_IsFixedPt_not
+msgid "**Du**: Ja, `¬(·)` hat keinen Fixpunkt, keine Aussage kann gleichzeitig\n"
+"wahr und falsch sein!"
 msgstr ""
 
 #: Game.Levels.Cantor.L03_fixedPoints_neg
@@ -5023,13 +5040,26 @@ msgid "Neg fixed points"
 msgstr ""
 
 #: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "For an endofunction `f : α → α` the set of fixed points of `f` is defined as follows:\n"
+msgid "Negierung hat hingegen genau einen Fixpunkt."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_fixedPoints_neg
+msgid "**Du**: `fixedPoints f` ist dann wohl die Menge aller Fixpunkte?\n"
 "\n"
-"```\n"
-"def fixedPoints (f : α → α) : Set α :=\n"
-"  { x : α | IsFixedPt f x }\n"
-"```\n"
-"In this level you will prove that an odd function ℝ → ℝ has exactly one fixed point."
+"**Robo**: Ja, genau: `fixedPoints f := { x | IsFixedPt f x }`.\n"
+"\n"
+"**Du**: Welche Optionen habe ich nochmals bei Gleichungen von Mengen?\n"
+"\n"
+"**Robo** Entweder du brauchst `ext x` um `x ∈ A ↔ x ∈ B` zu zeigen, oder\n"
+"du benützt `rw [Subset.antisymm_iff]` um dann `A ⊆ B ∧ B ⊆ A` zu zeigen."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_fixedPoints_neg
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L03_fixedPoints_neg
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L04_fixedPoints_odd
@@ -5037,14 +5067,7 @@ msgid "Odd fixed points"
 msgstr ""
 
 #: Game.Levels.Cantor.L04_fixedPoints_odd
-msgid "For an endofunction `f : α → α` the set of fixed points of `f` is defined as follows:\n"
-"\n"
-"```\n"
-"def fixedPoints (f : α → α) : Set α :=\n"
-"  { x : α | IsFixedPt f x }\n"
-"```\n"
-"\n"
-"In this level you will prove that an the set of fixed points of an odd function is closed under negation."
+msgid "Bei einer ungeraden Funktionen sind Fixpunkte symmetrisch um Null herum."
 msgstr ""
 
 #: Game.Levels.Cantor.L05_image_fixedPoints
@@ -5052,12 +5075,7 @@ msgid "Image of fixed points"
 msgstr ""
 
 #: Game.Levels.Cantor.L05_image_fixedPoints
-msgid "The image of a subset `S` of `A` along a function `f : A → B` is the set of\n"
-"all elements `b : B` such that there exists an element `a ∈ S` with `f a = b`.\n"
-"In Lean, the image `S` along `f` is defined by `Set.image f S`, and denoted by `f '' S`.\n"
-"\n"
-"In this level, we will prove that the set of fixed points of a function `f : X → X` is closed\n"
-"under the operation of taking the image of `f`."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L06_fixedPoints_range
@@ -5072,14 +5090,50 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L08_Cantor_Power
+#: Game.Levels.Cantor.L08_fixedPoints_Cantor
 msgid "Cantor"
 msgstr ""
 
-#: Game.Levels.Cantor.L08_Cantor_Power
+#: Game.Levels.Cantor.L08_fixedPoints_Cantor
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Cantor"
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
 msgid "Cantor's famous theorem states that there is no surjective function from a set to its power set.\n"
 "\n"
 "In this level you show prove a type-theoretic formulation of this theorem."
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Widerspruch."
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Überleg mal, wie man `cantor_diagonal` von vorhin verwenden kann."
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Zum Beispiel mit `apply cantor_diagonal at «{h}»`!"
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Welche Funktion `Prop → Prop` kennst du denn die keinen Fixpunkt hat?"
+msgstr ""
+
+#: Game.Levels.Cantor.L09_Cantor_Power
+msgid "Wie wäre es mit `fun (A : Prop) ↦ ¬ A`?"
+msgstr ""
+
+#: Game.Levels.Cantor.L10_Cantor_Power
+msgid "Cantor"
+msgstr ""
+
+#: Game.Levels.Cantor.L10_Cantor_Power
+msgid "In this level you give a second proof of Cantor's theorem by proving a contradiction using the set `{ a | a ∉ f a }`."
 msgstr ""
 
 #: Game.Levels.Cantor

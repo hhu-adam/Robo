@@ -7,22 +7,25 @@ Title "Cantor"
 
 Introduction
 "
-
-In this level you give a second proof of Cantor's theorem by proving a contradiction using the set `{ a | a ∉ f a }`.
-
 "
 
 open Set Function
 
 Statement {A : Type*} : ∀ (f : A → Set A), ¬ Surjective f := by
-  intro f hf
+  intro f
+  by_contra hf
   let C := { a | a ∉ f a }
-  obtain ⟨c, hc⟩ := hf C
-  have h : c ∉ f c := by
-      intro h₁
-      have : c ∉ f c := by
-        rwa [hc] at h₁
-      contradiction
-  suffices (c ∈ f c) by contradiction
-  rw [hc]
-  exact h
+  have hsurj := hf C
+  rcases hsurj with ⟨y, hy⟩
+  unfold_let C at hy
+  by_cases y ∈ f y
+  · suffices hn : y ∉ f y
+    · contradiction
+    rw [hy]
+    rw [mem_setOf]
+    simp
+    assumption
+  · apply h
+    rw [hy]
+    rw [mem_setOf]
+    assumption

@@ -3,11 +3,31 @@ import Game.Metadata
 World "Cantor"
 Level 6
 
-Title "Idemptonent fixed points"
+Title "Idempotent"
 
 open Function Set
 
 Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoints f := by
+  Hint "**Du**: Etwas womit ich unsicher bin, wie spielt da wohl `{f} ∘ {f} = {f}` mit rein?
+
+  **Robo**: Vermutlich willst du das irgendwann auf ein bestimmtes `x` anwenden.
+
+  Dafür kannst du irgendwann `apply congr_fun at {h}` brauchen, damit
+  du `∀ x, ({f} ∘ {f}) x = {f} x` kriegst."
+  apply congr_fun at h
+  Branch
+    ext i
+    rw [mem_range]
+    rw [mem_fixedPoints]
+    unfold IsFixedPt
+    constructor
+    · intro ⟨y, hy⟩
+      rw [← hy]
+      Hint (hidden := true) "**Robo**: Wir hatten einmal `Function.comp_apply`!"
+      simp_rw [comp_apply] at h
+      rw [h y]
+    · intro hf
+      use i
   rw [Subset.antisymm_iff]
   constructor
   · intro x hx
@@ -16,8 +36,7 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
     unfold fixedPoints
     unfold IsFixedPt
     rw [mem_setOf]
-    apply congr_fun at h -- :D
-    simp at h
+    simp only [comp_apply] at h
     rw [h]
   · intro x hx
     simp
