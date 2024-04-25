@@ -75,7 +75,7 @@ TheoremDoc if_pos as "if_pos" in "Logic"
 
 /--
 Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert
-`rw [if_neg h]` reduziert eine Aussage `if A then B else C` zu `C`.
+`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.
 
 Umgekehrt kann man `if_pos` verwenden wenn `h : A`.
 -/
