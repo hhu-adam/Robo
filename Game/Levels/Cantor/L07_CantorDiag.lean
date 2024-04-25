@@ -49,6 +49,7 @@ Statement cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) (s : Y → 
   rw [h]
   rw [hy]
 
+TheoremTab "Function"
 
 -- theorem cantor_diagonal' (f : A → A → Y) (hsurj : Surjective f) :
 --     ∀ (s : Y → Y), Nonempty (fixedPoints s) :=

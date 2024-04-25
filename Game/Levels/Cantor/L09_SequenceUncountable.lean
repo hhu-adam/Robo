@@ -24,3 +24,5 @@ Statement (f : ℕ → ℕ → ℕ) : ∃ (g : ℕ → ℕ), ∀ (n : ℕ), f n 
   unfold Surjective at h
   push_neg at h
   assumption
+
+TheoremTab "Function"
