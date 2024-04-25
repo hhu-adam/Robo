@@ -6,7 +6,7 @@ Title "Monotone Funktionen"
 
 Introduction
 "
-Sofort hackt die ältere Gestalt nach:
+Sofort hakt die ältere Gestalt nach:
 "
 
 open Set Function
