@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 24 13:50:21 2024\n"
+"POT-Creation-Date: Thu Apr 25 16:47:17 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2144,7 +2144,7 @@ msgstr ""
 
 #: Game.Levels.Function.L03_Piecewise
 msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert\n"
-"`rw [if_neg h]` reduziert eine Aussage `if A then B else C` zu `C`.\n"
+"`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.\n"
 "\n"
 "Umgekehrt kann man `if_pos` verwenden wenn `h : A`."
 msgstr ""
@@ -2185,7 +2185,7 @@ msgid "Monotone Funktionen"
 msgstr ""
 
 #: Game.Levels.Function.L05_Injective
-msgid "Sofort hackt die ältere Gestalt nach:"
+msgid "Sofort hakt die ältere Gestalt nach:"
 msgstr ""
 
 #: Game.Levels.Function.L05_Injective
@@ -4121,7 +4121,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory
-msgid "Mengenlehre"
+msgid "Synolos"
 msgstr ""
 
 #: Game.Levels.SetTheory
@@ -5015,7 +5015,9 @@ msgid "Not fixed points"
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_not
-msgid "In this level you show that the set of the fixed points of the negation operator `¬ . : Prop → Prop` is empty."
+msgid "In this level you show that the set of the fixed points of the negation operator `¬ . : Prop → Prop` is empty.\n"
+"\n"
+"Die Funktion `¬ : Prop → Prop` hat keine Fixpunkte."
 msgstr ""
 
 #: Game.Levels.Cantor.L03_fixedPoints_neg
@@ -5070,16 +5072,6 @@ msgstr ""
 
 #: Game.Levels.Cantor.L07_fixedPoints_Cantor
 msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L08_Cantor_Power
-msgid "Cantor"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_Cantor_Power
-msgid "Cantor's famous theorem states that there is no surjective function from a set to its power set.\n"
-"\n"
-"In this level you show prove a type-theoretic formulation of this theorem."
 msgstr ""
 
 #: Game.Levels.Cantor

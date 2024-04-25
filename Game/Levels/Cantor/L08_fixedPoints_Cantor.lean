@@ -1,5 +1,7 @@
 import Game.Metadata
 
+import Game.Levels.Cantor.L07_fixedPoints_Cantor
+
 World "Cantor"
 Level 8
 
