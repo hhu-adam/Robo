@@ -5,6 +5,9 @@ Level 5
 
 Title "Image of fixed points"
 
+-- Maybe we don't need this level.
+-- At least this year they also don't know about `Function.image` yet.
+
 Introduction
 "
 

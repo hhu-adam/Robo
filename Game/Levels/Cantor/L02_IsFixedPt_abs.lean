@@ -1,12 +1,16 @@
 import Game.Metadata
+import Game.Levels.Cantor.L01_CantorPowerset
 
 World "Cantor"
-Level 1
+Level 2
 
 Title "Fixpunkte"
 
 Introduction
 "
+**Du**: Also wie ist das mit der Diagonalen?
+
+**Cantor**: Um das genauer zu erläutern muss ich euch zuerst ein paar rätsel zu Fixpunkten stellen.
 "
 
 open Function Set

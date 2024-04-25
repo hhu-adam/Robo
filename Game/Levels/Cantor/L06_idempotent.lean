@@ -1,9 +1,17 @@
 import Game.Metadata
+import Game.Levels.Cantor.L05_IsFixedPt_odd
 
 World "Cantor"
 Level 6
 
 Title "Idempotent"
+
+Introduction "
+**Cantor**: Also noch ein letztes Rätsel, dann kommen wir gleich zurück zum
+Diagonalargument.
+
+**Robo**: Oh das sieht anspruchsvoller aus.
+"
 
 open Function Set
 
@@ -21,9 +29,9 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
     rw [mem_fixedPoints]
     unfold IsFixedPt
     constructor
-    · intro ⟨y, hy⟩
+    · intro hx
+      rcases hx with ⟨y, hy⟩
       rw [← hy]
-      Hint (hidden := true) "**Robo**: Wir hatten einmal `Function.comp_apply`!"
       simp_rw [comp_apply] at h
       rw [h y]
     · intro hf
@@ -36,12 +44,16 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
     unfold fixedPoints
     unfold IsFixedPt
     rw [mem_setOf]
-    simp only [comp_apply] at h
+    Hint (hidden := true) "**Robo**: Wir hatten einmal `Function.comp_apply`!"
+    simp_rw [comp_apply] at h
     rw [h]
   · intro x hx
     simp
     use x
     trivial
+
+/---/
+TheoremDoc congr_fun as "congr_fun" in "Function"
 
 NewTheorem congr_fun
 TheoremTab "Function"

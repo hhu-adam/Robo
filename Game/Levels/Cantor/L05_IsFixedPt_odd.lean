@@ -1,13 +1,19 @@
 import Game.Metadata
+import Game.Levels.Cantor.L04_IsFixedPt_not
 
 World "Cantor"
-Level 4
+Level 5
 
-Title "Odd fixed points"
+Title "Fixpunkte"
 
 Introduction
 "
-Bei einer ungeraden Funktionen sind Fixpunkte symmetrisch um Null herum.
+**Cantor**: Zum Beispiel bei ungeraden Funktionen. Da sind die Fixpunkte symmetrisch.
+
+**Du** (*flüsternd zu Robo*): Das hat jetzt wirklich nichts mehr mit der ursprünglichen
+Frage zu tun
+
+**Robo** (*leise*): Na komm schon, wir kommen bestimmt gleich dazu.
 "
 
 open Function Set Setoid

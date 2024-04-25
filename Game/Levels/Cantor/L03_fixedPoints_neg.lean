@@ -1,18 +1,17 @@
 import Game.Metadata
+import Game.Levels.Cantor.L02_IsFixedPt_abs
 
 World "Cantor"
 Level 3
 
-Title "Neg fixed points"
+Title "Fixpunkt"
 
 Introduction
 "
-Negierung hat hingegen genau einen Fixpunkt.
+**Cantor**: Oder schaut hier, die Menge der Fixpunkte von `-(·)` ist ein Singleton.
 "
 
 open Function Set Setoid
-
-#check Neg.neg (α := ℝ)
 
 Statement :
     fixedPoints (fun (x : ℝ) => -x) = {0} := by
