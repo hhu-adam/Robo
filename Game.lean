@@ -14,7 +14,7 @@ import Game.Levels.Sum
 import Game.Levels.SetTheory
 import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
--- import Game.Levels.Cantor
+import Game.Levels.Cantor
 -- import Game.Levels.Quotient
 
 -- Temporary Worlds that aren't yet fleshed out
