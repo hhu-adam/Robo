@@ -4,6 +4,7 @@ import Game.Levels.Cantor.L03_fixedPoints_neg
 import Game.Levels.Cantor.L04_IsFixedPt_not
 import Game.Levels.Cantor.L05_IsFixedPt_odd
 import Game.Levels.Cantor.L06_idempotent
+import Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
 import Game.Levels.Cantor.L07_CantorDiag
 import Game.Levels.Cantor.L08_CantorPowerset
 
