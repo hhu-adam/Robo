@@ -16,7 +16,7 @@ Brauche `unfold_let C` wenn eine lokale Definition in deinen Annahmen ist. Alter
 funktionert auch `simp [C]`.]
 "
 
-Conclusion "**Du**: Uff. Aber erlich habe ich die das \"Diagonale\" daran noch nicht
+Conclusion "**Du**: Uff. Aber ehrlich habe ich die das \"Diagonale\" daran noch nicht
 ganz gesehen.
 
 
