@@ -5,13 +5,11 @@ Level 2
 
 Title "Falsche Indizes"
 
--- TODO: Do we need this level??
-
 Introduction
 "
-Kurze Zeit später findet ihr einen sehr ähnlichen Zettel, wieder
+Kurze Zeit später findet ihr zwei sehr ähnlichen Zettel, wieder
 vollgekritzelt, fast alles durchgestrichen.
-Die erste Zeile aber lässt sich gerade noch ausmachen.
+Die erste Zeile aber lässt sich jeweils gerade noch ausmachen.
 "
 
 Conclusion "
@@ -27,12 +25,12 @@ TheoremDoc Matrix.E.mul_of_ne as "E.mul_of_ne" in "Matrix"
 
 -- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
 Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
-  Hint "**Du**: Vielleicht sind das wirklich irgendwelche Tipps. Der hier scheint
-  ganz ähnlich zu funktionieren: Wenn man zwei Standardmatrizen zusammenzählt und die Indizes nicht stimmen, erhält man Null.
+  Hint "**Du**: Das sieht jetzt aber nach Matrizen-Multiplikation aus.
+  Müsste so auch stimmen.
   "
   unfold E
   Hint (hidden := true) "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `{h}` explizit braucht!"
   simp [h]
 
-NewDefinition Matrix.E
+NewTheorem Matrix.E.mul_of_ne
 TheoremTab "Matrix"

@@ -1,89 +1,108 @@
-import Game.Levels.MatrixTrace.L07_EvalOnEBasis
+import Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
+
+--import Game.StructInstWithHoles
 
 World "Trace"
 Level 8
 
-Title "Matrix"
+Title "Die Summe der Summe der Summe"
 
 Introduction
 "
-Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhung. In der Ferne fählt dir sofort
-ein dunkler Punkt auf, auf den Robo auch zeigt.
-
-**Du**: Schau mal, das wird es wohl sein! Und von hier kann man auch perfekt seine Grösse
-abschätzen.
-
-**Robo**: Sieht so aus, als währen ihm alle diagonalen Elemente `E i i` nicht nur \"gleich\"
-sondern \"eins\". Aber können wir mehr herausfinden?
+Ihr findet nochmals einen Hinweis, aber in der Eile verliert ihr die Fährte.
+Du bist inzwischen sehr durstig.  
+Während Robo die nähere Umgebung absucht, setzt du dich erschöpft hin und
+starrst unter der warmen Sonne etwas beduselt auf den Pergamentfetzen.
 "
 
-Conclusion "
-  **Du**: Los, lass uns näher gehen.
-"
+Conclusion "**Du**: Na endlich.  
 
-open Nat Matrix BigOperators StdBasisMatrix
+Robo reicht dir eine Flasche Wasser.
+
+**Du**: Wo hast du die denn auf einmal her? 
+
+**Robo**: Trick 17.
+
+**Du**:  Und hast du die Fährte wiedergefunden?
+
+**Robo**:  Ja, komm mit! Da hinten hab ich etwas gesehen."
+
+open Nat Matrix BigOperators StdBasisMatrix Finset
 
 /---/
-TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
+TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"
 
-Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →ₗ[ℝ] ℝ}
-    (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
-    ∀ i, f (E i i) = 1 := by
-  intro i
-  -- apply Nat.mul_left_cancel
-  Hint "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber
-  beide Seiten mit `(n + 1)` multiplizieren.
+Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
+    (h₁ : ∀ A B, f (A * B) = f (B * A))
+    (A : Mat[n,n][ℝ]) :
+    f A = ∑ i : Fin n, (A i i) * f (E i i) := by
+  Hint "**Du**: Ich versteh beim besten Willen nicht, was das jetzt soll! 
+  Vermutlich sollte ich das `A` in `f A` als Summe von Basismatrizen
+  schreiben, nicht aber das andere `A` weiter hinten.
 
-  **Robo**: Da gibt es verschiedene Möglichkeiten.
-  Gib folgendes ein: `apply nat_mul_inj' (n := n.succ)`!" -- TODO: introduce earlier.
-  apply nat_mul_inj' (n := n.succ) -- TODO: is there a better way to write this?
-  Hint "(*Stimme von oben*) : Der nächste Schritt ist `rw [←smul_eq_mul, ← LinearMap.map_smul]`,
-  aber das kannst du nicht wissen." -- TODO: introduce earlier.
-  rw [←smul_eq_mul, ← LinearMap.map_smul]
-  Hint "**Du**: Das Argument auf der linken Seite kann ich jetzt als konstante Summe
-  darstellen.
+  **Robo** (*aus der Ferne*): `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
+  Hint (hidden := true) "**Du** (*schreiend*): Was meinst du damit?
 
-  **Robo**: Probier `trans {f} (∑ x : Fin {n}.succ, E {i} {i})`."
-  trans f (∑ x : Fin n.succ, E i i)
-  · Hint "**Du**: Genau, dann ist diese erste Gleichheit nur die konstante Summe ausrechnen.
-
-    **Robo**: `simp` kann das sicher komplett vereinfachen."
-    unfold E
+  **Robo** (*ebenfalls schreiend*): Na, du willst bestimmt `matrix_eq_sum_ebasis A` anwenden, aber mit `nth_rw 1` und nicht mit `rw`.
+  `rw [matrix_eq_sum_ebasis A]` würde beide `A`s ersetzen."
+  Branch
+      rw [matrix_eq_sum_ebasis A]
+      Hint "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee. 
+      Das sieht zu kompliziert aus. Lass es mich doch mit `nth_rw` versuchen."
+  nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
+  Hint "**Du** (*in Gedanken*): Jetzt die Funktion in die Summe rein… Und ja nicht an Wasser denken…
+    Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
+  Hint "**Robo** (*von irgendwo*): Das klingt nach `map_sum`, aber das hatten wir
+  auf Babylon nicht gesehen, das fantasierst du. Aber `simp` kennt dieses Lemma sonst auch."
+  Branch
     simp
-  · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-    Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
-    `∑ i, f (E i i)` zeigen."
-    trans f (∑ i, E i i)
-    · Branch
-        congr
-        Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
-      Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
-
-      **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
-      rw [map_sum]
-      Hint "**Du**: Nochmals!"
-      rw [map_sum]
-      congr
-      ext j
-      Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
-      Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
-      rw [eq_on_diag_ebasis] -- Lvl 5
-      assumption
-    · Hint (hidden := true) "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
-      rw [ebasis_diag_sum_eq_one] -- Lvl 4
-      rw [h₂]
-      simp
+  rw [map_sum] -- simp knows this
+  Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
   simp
+  Hint "**Du**: Die Summe der Summe der Summe der…
 
--- TODO: Move!
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "Matrix"
+  **Robo*: Hey, woran bist du eigentlich?
+
+  **Du**: Keine Ahnung!
+
+  **Robo**: Mach doch folgenden Zwischenschritt:
+
+  `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`"
+  trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0
+  · Hint "**Du**: Summe gleich Summe, `congr`-`ext` macht da der Dumme."
+    congr
+    ext i
+    Hint (hidden := true) "**Robo**: Vielleicht gleich nocheinmal?"
+    congr
+    ext j
+    Hint "**Du**: Und jetzt Fallunterscheidung zu `i = j`…"
+    Hint (hidden := true) "**Robo**: `by_cases` war das, genau!"
+    by_cases h₂ : i = j
+    · Hint "**Robo**: Hier ist `if_pos {h₂}` nützlich."
+      rw [if_pos h₂]
+    · Hint "**Robo**: …und hier `if_neg {h₂}`.
+
+      **Du**: Weiß ich doch."
+      rw [if_neg h₂]
+      Hint "**Du**: `f (E i j)` ist doch Null, hatten wir doch schon gesehen!"
+      Hint (hidden := true) "**Robo**: Und das hieß `zero_on_offDiag_ebasis`."
+      rw [zero_on_offDiag_ebasis]
+      · simp
+      · assumption
+      · assumption
+  · Hint "**Du**: Und ich dachte schon das wär's.
+
+    **Robo**: Fast, da ist noch die zweite Hälfte des `trans`-Befehls oben. Diese Hälfte
+    ist ganz einfach.
+    "
+    simp
+
+-- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
+/--
+Lineare Abbildungen (oder genereller "additive" Abbildungen) kann man mit einer
+Summe vertauschen.
+-/
+TheoremDoc map_sum as "map_sum" in "Sum"
 
 TheoremTab "Matrix"
-NewTheorem smul_eq_mul LinearMap.map_smul nat_mul_inj'
-
-#check mul_left_cancel_iff
+NewTheorem map_sum

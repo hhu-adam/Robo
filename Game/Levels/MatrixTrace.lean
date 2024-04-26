@@ -1,16 +1,17 @@
 import Game.Levels.MatrixTrace.L01_SMulEBasis
 import Game.Levels.MatrixTrace.L02_EBasis
-import Game.Levels.MatrixTrace.L03_MatrixEqSum
-import Game.Levels.MatrixTrace.L04_EBasisDiagSum
-import Game.Levels.MatrixTrace.L05_EBasisEqOnDiag
-import Game.Levels.MatrixTrace.L06_EBasisZeroOffDiag
-import Game.Levels.MatrixTrace.L07_EvalOnEBasis
+import Game.Levels.MatrixTrace.L03
+import Game.Levels.MatrixTrace.L04_MatrixEqSum
+import Game.Levels.MatrixTrace.L05_EBasisDiagSum
+import Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
+import Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
 import Game.Levels.MatrixTrace.L08_EvalOnEBasis
-import Game.Levels.MatrixTrace.L09_Characterize
-import Game.Levels.MatrixTrace.L10_Linearity
+import Game.Levels.MatrixTrace.L09_EvalOnEBasis
+import Game.Levels.MatrixTrace.L10_Characterize
+import Game.Levels.MatrixTrace.L11_Linearity
 
 World "Trace"
-Title "Trace"
+Title "Robotswana"
 
 Image "images/Robo.png"
 
