@@ -30,17 +30,17 @@ der Eigenschaft, dass alle trinken, wenn sie trinkt.* Genauer gesagt: in jeder n
 
 open Function
 
-Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
+Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
   Hint "
     **Du**: Also, `isDrinking` ist wieder so ein Prädikat …
     Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
     die wahr oder falsch ist. Soweit so gut.
-    Und was bedeutet `Inhabited People`?
+    Und was bedeutet `Nonempty People`?
 
     **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-    Du kannst dadurch jederzeit `default`, oder lang
-    `(default : Person)`, schreiben, wenn du irgendeine Person brauchst.
+    Mit `rcases {h_nonempty} with ⟨pers⟩` kannst du dir eine `pers : Person` aussuchen,
+    die es per Annahme gibt.
 
     **Du**: Und wie fang ich jetzt an?
 
@@ -52,8 +52,12 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   Hint (hidden := true) "
     **Du**: Und wen nehm ich jetzt?
 
-    **Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
-  use (default : People)
+    **Robo**: Wie gesagt, `rcases h_nonempty with ⟨d⟩` gibt dir eine x-beliebige Person `d`."
+  Branch
+    -- less pretty alternative
+    have d := Classical.choice h_nonempty
+  rcases h_nonempty with ⟨d⟩
+  use d
   intro
   assumption
   Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
@@ -68,31 +72,15 @@ Statement {People : Type} [Inhabited People] (isDrinking : People → Prop) :
   contradiction
 
 /--
-`Inhabited U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
+`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
 enthält.
 
-Hat man eine solche Instanz, kann man immer das Element `(default : U)` verwenden.
-
-Was `default` genau ist hängt davon ab, wie `Inhabited U` bewiesen wurde. Es könnte
-also alles sein und man sollte sich nicht darauf verlassen, dass `default` eine
-bestimmte Eigenschaft hat. Z.B. ist `(default : ℕ) = 0` aber es hätte genau so gut
-als `1` oder `2` definiert werden können.
+Wenn `h : Nonempty U`, dann kriegt man mit `rcases h with ⟨d⟩` eine solches Element `d : U`.
 -/
-DefinitionDoc Inhabited as "Inhabited"
-
-/-- Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.
-
-Man sollte generell nichts über `default` annehmen, außer dass es existiert.
-
-Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:
-z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`
-die leere Menge `∅`, etc.
--/
-TheoremDoc Inhabited.default as "default" in "Logic"
+DefinitionDoc Nonempty as "Nonempty"
 
 TheoremTab "Logic"
-NewDefinition Inhabited
-NewTheorem Inhabited.default
+NewDefinition Nonempty
 
 Conclusion
 "
