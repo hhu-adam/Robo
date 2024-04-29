@@ -55,7 +55,7 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
     **Robo**: Wie gesagt, `rcases h_nonempty with ⟨d⟩` gibt dir eine x-beliebige Person `d`."
   Branch
     -- less pretty alternative
-    have d := Classical.choice h_nonempty
+    have _d := Classical.choice h_nonempty
   rcases h_nonempty with ⟨d⟩
   use d
   intro
