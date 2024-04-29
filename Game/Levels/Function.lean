@@ -1,12 +1,13 @@
 import Game.Levels.Function.L01_Function
 import Game.Levels.Function.L02_Let
 import Game.Levels.Function.L03_Piecewise
-import Game.Levels.Function.L04_Injective
-import Game.Levels.Function.L05_Injective
-import Game.Levels.Function.L06_Injective
-import Game.Levels.Function.L07_Surjective
-import Game.Levels.Function.L08_Bijective
-import Game.Levels.Function.L09_Inverse
+
+-- import Game.Levels.Function.L10_Injective
+-- import Game.Levels.Function.L10_Injective
+-- import Game.Levels.Function.L06_Injective
+-- import Game.Levels.Function.L07_Surjective
+-- import Game.Levels.Function.L11_Bijective
+-- import Game.Levels.Function.L12_Inverse
 
 World "Function"
 Title "Abbildungen"
