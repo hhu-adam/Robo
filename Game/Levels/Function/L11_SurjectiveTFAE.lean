@@ -1,0 +1,42 @@
+import Game.Metadata
+
+World "Function"
+Level 11
+
+Title "Range of Surjection"
+
+
+Introduction
+"
+The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements
+`x` in the domain of `f` such that `f x` is in `S`.
+
+```
+f ⁻¹' S = {x | f x ∈ S}
+```
+
+"
+
+open Function Set
+
+Statement {f : A → B} :
+    List.TFAE [Surjective f, ∀ b : B, Set.Nonempty (f ⁻¹' { b }), HasRightInverse f] := by
+  tfae_have 1 → 2
+  · intro h b
+    exact h b
+  tfae_have 2 → 3
+  . intro h
+    Branch
+      use fun b ↦ (h b).choose
+      intro b
+      dsimp
+      exact (h b).choose_spec
+    choose g hg using h
+    use g
+    exact hg
+  tfae_have 3 → 1
+  . intro ⟨g, inv⟩
+    intro b
+    use g b
+    apply inv
+  tfae_finish

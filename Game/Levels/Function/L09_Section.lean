@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Function"
-Level 8
+Level 9
 
 Title "Section"
 
@@ -10,7 +10,6 @@ Introduction
 "
 
 We say `f : A → B` has a right inverse if there exists a function `g : B → A` such that `f ∘ g = id`.
-
 "
 
 open Function

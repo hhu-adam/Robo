@@ -9,7 +9,6 @@ Title "Section"
 Introduction
 "
 A function `g : B → A` is a right inverse of a function `f : A → B` if `f ∘ g = id`.
-
 "
 
 open Function
@@ -31,19 +30,3 @@ Statement (f g : ℤ × ℤ → ℤ × ℤ) (hf : ∀ m n, f (m , n) = (m + n , 
     simp [fst_eq]
   · symm
     linear_combination 1* snd_eq - 1 * fst_eq
-
-
-
--- Statement (preamble := intro h) (g : ℤ × ℤ → ℤ × ℤ) :
---     let f : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (m + n, m + 2 * n)
---     (RightInverse f g) → g = fun (a, b) ↦ (2 * a - b, b - a) := by
-  /-
-  g : ℤ × ℤ → ℤ × ℤ
-  f : ℤ × ℤ → ℤ × ℤ := fun x =>
-    match x with
-    | (m, n) => (m + n, m + 2 * n)
-  h : Function.RightInverse f g
-  ⊢ g = fun x =>
-    match x with
-    | (a, b) => (2 * a - b, b - a)
-  -/
