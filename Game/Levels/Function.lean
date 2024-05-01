@@ -23,8 +23,8 @@ import Game.Levels.Function.L22_Inverse
 import Game.Levels.Function.L23_Equivalence
 import Game.Levels.Function.L24_EquivalenceBijection
 import Game.Levels.Function.L25_CurryEquiv
-import Game.Levels.Function.L26_CurrySurjective
-import Game.Levels.Function.L27_Diagonal
+import Game.Levels.Function.L26_Diagonal
+import Game.Levels.Function.L27_CurrySurjective
 
 World "Function"
 Title "Abbildungen"

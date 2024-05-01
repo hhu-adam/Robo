@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed May  1 12:17:01 2024\n"
+"POT-Creation-Date: Wed May  1 20:41:43 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2262,7 +2262,9 @@ msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is 
 "\n"
 "```\n"
 "f ⁻¹' S = {x | f x ∈ S}\n"
-"```"
+"```\n"
+"\n"
+"`HasRightInverse.surjective`"
 msgstr ""
 
 #: Game.Levels.Function.L12_Injective
@@ -2655,30 +2657,38 @@ msgid "An equivalence `α : A ≃ B` between `A` and `B` consists of a pair of f
 "In this level you construct an equivalence between functions from `Fin 3` to `A` and triples of elements of `A`."
 msgstr ""
 
-#: Game.Levels.Function.L24_CurryEquiv
+#: Game.Levels.Function.L24_EquivalenceBijection
+msgid "Bijection of Equivalence"
+msgstr ""
+
+#: Game.Levels.Function.L24_EquivalenceBijection
+msgid "In this level you show that there every bijection gives rise to an equivalence."
+msgstr ""
+
+#: Game.Levels.Function.L25_CurryEquiv
 msgid "Curry"
 msgstr ""
 
-#: Game.Levels.Function.L24_CurryEquiv
+#: Game.Levels.Function.L25_CurryEquiv
 msgid "In this level, you will learn about currying. Currying is the process of transforming a function that takes multiple arguments into a function that takes one argument and returns another function that takes the next argument, and so on, until all arguments have been supplied. This is useful because it allows you to partially apply a function, which means you can supply some of the arguments now and the rest later.\n"
 "\n"
 "This insight was first made explicit separately by Moses Ilyich Schönfinkel in the 19th century and later in the 20th century by Haskell Curry."
 msgstr ""
 
-#: Game.Levels.Function.L25_CurrySurjective
+#: Game.Levels.Function.L26_Diagonal
 msgid "Diagonal"
 msgstr ""
 
-#: Game.Levels.Function.L25_CurrySurjective
+#: Game.Levels.Function.L26_Diagonal
+msgid "In this level, you will prove that the the diagonal function is injective."
+msgstr ""
+
+#: Game.Levels.Function.L27_CurrySurjective
+msgid "Not exhausted by naturals."
+msgstr ""
+
+#: Game.Levels.Function.L27_CurrySurjective
 msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L26_Diagonal
-msgid "Diagonal"
-msgstr ""
-
-#: Game.Levels.Function.L26_Diagonal
-msgid "In this level, you will prove that the"
 msgstr ""
 
 #: Game.Levels.Function
