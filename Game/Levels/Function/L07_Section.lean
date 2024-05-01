@@ -16,7 +16,7 @@ In this level, you will prove that if `g` is a right inverse of `f`, then the co
 
 open Function
 
-Statement RightInverse.comp_eq_id {f : A -> B} {g : B -> A} :
+Statement rightInverse_iff_comp {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ f ∘ g = id := by
   constructor
   · intro h
@@ -31,3 +31,6 @@ Statement RightInverse.comp_eq_id {f : A -> B} {g : B -> A} :
     intro h
     intro x
     exact congr_fun h x
+
+NewTheorem Function.rightInverse_iff_comp
+TheoremTab "Function"
