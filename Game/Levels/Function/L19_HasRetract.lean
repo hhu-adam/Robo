@@ -3,7 +3,7 @@ import Game.Metadata
 World "Function"
 Level 19
 
-Title "Injectives have retract."
+Title "Functions with left inverses are injective."
 
 
 Introduction

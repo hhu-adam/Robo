@@ -20,6 +20,11 @@ import Game.Levels.Function.L19_HasRetract
 import Game.Levels.Function.L20_HasRetract
 import Game.Levels.Function.L21_Bijective
 import Game.Levels.Function.L22_Inverse
+import Game.Levels.Function.L23_Equivalence
+import Game.Levels.Function.L24_EquivalenceBijection
+import Game.Levels.Function.L25_CurryEquiv
+import Game.Levels.Function.L26_CurrySurjective
+import Game.Levels.Function.L27_Diagonal
 
 World "Function"
 Title "Abbildungen"

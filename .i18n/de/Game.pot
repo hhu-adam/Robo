@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Apr 26 15:55:26 2024\n"
+"POT-Creation-Date: Wed May  1 12:17:01 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1722,11 +1722,11 @@ msgstr ""
 msgid "**Du**: Also, `isDrinking` ist wieder so ein Prädikat …\n"
 "Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,\n"
 "die wahr oder falsch ist. Soweit so gut.\n"
-"Und was bedeutet `Inhabited People`?\n"
+"Und was bedeutet `Nonempty People`?\n"
 "\n"
 "**Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.\n"
-"Du kannst dadurch jederzeit `default`, oder lang\n"
-"`(default : Person)`, schreiben, wenn du irgendeine Person brauchst.\n"
+"Mit `rcases «{h_nonempty}» with ⟨pers⟩` kannst du dir eine `pers : Person` aussuchen,\n"
+"die es per Annahme gibt.\n"
 "\n"
 "**Du**: Und wie fang ich jetzt an?\n"
 "\n"
@@ -1742,7 +1742,7 @@ msgstr ""
 #: Game.Levels.Predicate.L11_DrinkersParadox
 msgid "**Du**: Und wen nehm ich jetzt?\n"
 "\n"
-"**Robo**: Wie gesagt, `default` ist eine x-beliebige Person."
+"**Robo**: Wie gesagt, `rcases h_nonempty with ⟨d⟩` gibt dir eine x-beliebige Person `d`."
 msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
@@ -1760,25 +1760,10 @@ msgid "**Robo**: Was siehst du, wenn du `«{hp}»` und `«{hp'}»` anschaust?"
 msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
-msgid "`Inhabited U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element\n"
+msgid "`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element\n"
 "enthält.\n"
 "\n"
-"Hat man eine solche Instanz, kann man immer das Element `(default : U)` verwenden.\n"
-"\n"
-"Was `default` genau ist hängt davon ab, wie `Inhabited U` bewiesen wurde. Es könnte\n"
-"also alles sein und man sollte sich nicht darauf verlassen, dass `default` eine\n"
-"bestimmte Eigenschaft hat. Z.B. ist `(default : ℕ) = 0` aber es hätte genau so gut\n"
-"als `1` oder `2` definiert werden können."
-msgstr ""
-
-#: Game.Levels.Predicate.L11_DrinkersParadox
-msgid "Das default-Element aus einem Typ mit einer `Inhabited U`-Instanz.\n"
-"\n"
-"Man sollte generell nichts über `default` annehmen, außer dass es existiert.\n"
-"\n"
-"Nichtsdestotrotz, werden in Praxis oft semi-kanonische default-Elemente gewählt:\n"
-"z.B. in `ℕ`, `ℤ`, `ℚ`, … ist `default` als `0` definiert, in `Set X` is `default`\n"
-"die leere Menge `∅`, etc."
+"Wenn `h : Nonempty U`, dann kriegt man mit `rcases h with ⟨d⟩` eine solches Element `d : U`."
 msgstr ""
 
 #: Game.Levels.Predicate.L11_DrinkersParadox
@@ -2149,11 +2134,142 @@ msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduzie
 "Umgekehrt kann man `if_pos` verwenden wenn `h : A`."
 msgstr ""
 
-#: Game.Levels.Function.L04_Injective
+#: Game.Levels.Function.L04_Surjective
+msgid "Surjektive"
+msgstr ""
+
+#: Game.Levels.Function.L04_Surjective
+msgid "Endlich kommt ihr in einen große, beleuchteten zentralen Raum.\n"
+"Alle Wände sind voll mit Büchern und\n"
+"in der Mitte sitzt an einem einsamen\n"
+"Tisch ein Gelehrter, der tatsächlich das gesuchte Buch zeigen kann.\n"
+"\n"
+"Bevor er dieses aushändigt, will er aber folgendes wissen:"
+msgstr ""
+
+#: Game.Levels.Function.L04_Surjective
+msgid "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.\n"
+"\n"
+"**Du**: Dann kann ich das auch einfach wie Quantifier behandeln?\n"
+"\n"
+"**Robo**: Schieß drauf los!"
+msgstr ""
+
+#: Game.Levels.Function.L04_Surjective
+msgid "**Du**: das is doch eigentlich ganz einfach… Kann man das denn\n"
+"noch weiter vereinfachen?\n"
+"\n"
+"**Robo**: Wenn du `«{f}»` auch einsetzt vermutlich schon."
+msgstr ""
+
+#: Game.Levels.Function.L04_Surjective
+msgid "Der Gelehrte händigt euch schmunzelnd das Buch aus."
+msgstr ""
+
+#: Game.Levels.Function.L05_Surjective
+msgid "Semiconjugate"
+msgstr ""
+
+#: Game.Levels.Function.L05_Surjective
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L05_Surjective
+msgid "`fun_arg`"
+msgstr ""
+
+#: Game.Levels.Function.L06_SurjectiveRange
+msgid "Range of Surjection"
+msgstr ""
+
+#: Game.Levels.Function.L06_SurjectiveRange
+msgid "The range of a function is the set of all outputs.\n"
+"\n"
+"In this level you show that a function is surjective if and only if the range of\n"
+"the function is equal to the universal subset of the codomain. For `f : A → B`,\n"
+"the range of `f` is defined as\n"
+"\n"
+"```\n"
+"range f : Set B := {b | ∃ a, f a = b}\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Function.L07_Section
+msgid "Section"
+msgstr ""
+
+#: Game.Levels.Function.L07_Section
+msgid "A function `g : B → A` is a right inverse of a function `f : A → B` if for all `a : A`, `f (g a) = a`.\n"
+"\n"
+"In this level, you will prove that if `g` is a right inverse of `f`, then the composition `f ∘ g` is the identity function on `B`."
+msgstr ""
+
+#: Game.Levels.Function.L08_Section
+msgid "Section"
+msgstr ""
+
+#: Game.Levels.Function.L08_Section
+msgid "A function `g : B → A` is a right inverse of a function `f : A → B` if `f ∘ g = id`."
+msgstr ""
+
+#: Game.Levels.Function.L09_Section
+msgid "Section"
+msgstr ""
+
+#: Game.Levels.Function.L09_Section
+msgid "We say `f : A → B` has a right inverse if there exists a function `g : B → A` such that `f ∘ g = id`."
+msgstr ""
+
+#: Game.Levels.Function.L10_Section
+msgid "Range of Surjection"
+msgstr ""
+
+#: Game.Levels.Function.L10_Section
+msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements\n"
+"`x` in the domain of `f` such that `f x` is in `S`.\n"
+"\n"
+"```\n"
+"f ⁻¹' S = {x | f x ∈ S}\n"
+"```\n"
+"\n"
+"We call the preimage `f ⁻¹' { b }` of the singleton `{ b }` the fiber of `b`.\n"
+"\n"
+"The theorem `surjective_iff_hasRightInverse` says that a function `f : A → B` is\n"
+"surjective if and only if it has a right inverse. In this level, you will prove\n"
+"a closely related statement: that a function with nonempty fibers has a right inverse."
+msgstr ""
+
+#: Game.Levels.Function.L10_Section
+msgid "..."
+msgstr ""
+
+#: Game.Levels.Function.L10_Section
+msgid "..."
+msgstr ""
+
+#: Game.Levels.Function.L10_Section
+msgid "Since we know that for each `b : B`, the fiber is nonempty, we can choose some element of that fibre using the axiom of choice.\n"
+"The tactic `choose g hg using nonempty_fibre` creates a function which chooses an `a : A` and `hg` witnesses that `a` is in the fiber of `b`."
+msgstr ""
+
+#: Game.Levels.Function.L11_SurjectiveTFAE
+msgid "Range of Surjection"
+msgstr ""
+
+#: Game.Levels.Function.L11_SurjectiveTFAE
+msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements\n"
+"`x` in the domain of `f` such that `f x` is in `S`.\n"
+"\n"
+"```\n"
+"f ⁻¹' S = {x | f x ∈ S}\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Function.L12_Injective
 msgid "Injektivität"
 msgstr ""
 
-#: Game.Levels.Function.L04_Injective
+#: Game.Levels.Function.L12_Injective
 msgid "Ihr läuft durch verschiedenste Gänge der Bibliothek, allesamt mit Büchern entlang der Wände.\n"
 "\n"
 "**Du**: Wenn wir wüssten, dass nur ein möglicher Weg hierhin führt, könnten wir\n"
@@ -2162,7 +2278,7 @@ msgid "Ihr läuft durch verschiedenste Gänge der Bibliothek, allesamt mit Büch
 "Plötzlich begegnet ihr einem älteren Wesen mit Fakel. Auf die Frage antwortet es mit folgendem:"
 msgstr ""
 
-#: Game.Levels.Function.L04_Injective
+#: Game.Levels.Function.L12_Injective
 msgid "**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
 "definiert, also kannst du mit `intro` anfangen.\n"
 "\n"
@@ -2171,97 +2287,20 @@ msgid "**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
 "**Robo**: Dann schaust du mit `unfold Injective` in die Definition rein."
 msgstr ""
 
-#: Game.Levels.Function.L04_Injective
+#: Game.Levels.Function.L12_Injective
 msgid "**Du**: Jetzt will ich wohl mit der Definition von `«{f}»` die\n"
 "Annahme `«{ha}»` vereinfachen."
 msgstr ""
 
-#: Game.Levels.Function.L04_Injective
+#: Game.Levels.Function.L12_Injective
 msgid "**Du** Woa das war ja einfach!"
 msgstr ""
 
-#: Game.Levels.Function.L05_Injective
-msgid "Monotone Funktionen"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "Sofort hakt die ältere Gestalt nach:"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Hmm, das ist etwas schwieriger…\n"
-"\n"
-"**Robo**: Aber ich hab einen Trick auf Lager:\n"
-"Das Lemma `StrictMono.injective` sagt, dass jede strikt monotone Funktion injektive ist,\n"
-"und ich habe das Gefühl Monotonie ist hier einfacher zu zeigen."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Robo**: `apply` ist wonach du suchst."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Jetzt möchte ich strikte Monotonie von `n ^ 3` und `n + 3` separat zeigen,\n"
-"schliesslich scheint es mir als wär das zweite wieder einfach.\n"
-"\n"
-"**Robo**: Dafür hab ich `StrictMono.add` bereit!"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Hmm, darauf hab ich jetzt wenig Lust. Gibt's dafür auch was? Das gilt ja nur\n"
-"wenn der Exponent ungerade ist.\n"
-"\n"
-"**Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Ist das nicht ne Trivialität? Warte mal!"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: oder …?\n"
-"\n"
-"**Robo**: Doch, doch. Schau mal mit `unfold` hinein in die Definition."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "Dieses Lemma sagt `StrictMono f → Injective f`."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "Für ungerades `n` is `x ↦ x ^ n` strikt monoton.\n"
-"\n"
-"*Bemerkung*: Das Lemma ist im namespace `Odd`, damit man `hn.strictMono_pow` für den\n"
-"Beweis `hn : Odd n` schreiben könnte."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "Wenn `f,g` beide strikt monoton sind, dann ist es `f + g` auch."
-msgstr ""
-
-#: Game.Levels.Function.L05_Injective
-msgid "**Du**: Danke vielmals!\n"
-"\n"
-"Und damit lässt das Wesen mitten im Gang stehen, wo es weiter über Injektivität nachdenkt."
-msgstr ""
-
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "Nicht Injektiv"
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "Weiterirrend kommt ihr an eine Verzweigung.\n"
 "\n"
 "**Robo**: Sieht beides gleich aus.\n"
@@ -2281,7 +2320,7 @@ msgid "Weiterirrend kommt ihr an eine Verzweigung.\n"
 "Darunter steht in leicht leuchtender Schrift:"
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "**Robo**: Das ist sicher ein Hinweis.\n"
 "\n"
 "**Du**: Aber `¬ Injective` sagt mir nichts…\n"
@@ -2291,84 +2330,182 @@ msgid "**Robo**: Das ist sicher ein Hinweis.\n"
 "**Du**: Darüber haben wir doch mal was gelernt…"
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "**Robo**: Das war `push_neg`."
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "**Robo**: Das war `push_neg`."
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "**Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?\n"
 "\n"
 "**Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
 msgstr ""
 
-#: Game.Levels.Function.L06_Injective
+#: Game.Levels.Function.L13_Injective
 msgid "Als ihr das Problem gelöst habt, erschleicht euch ein starkes\n"
 "Gefühl, dass dies der falsche Weg ist.\n"
 "Also geht ihr zurück und nehmt die rechte Gabelung."
 msgstr ""
 
-#: Game.Levels.Function.L07_Surjective
-msgid "Surjektive"
+#: Game.Levels.Function.L14_InjectiveRange
+msgid "Range of Injective"
 msgstr ""
 
-#: Game.Levels.Function.L07_Surjective
-msgid "Endlich kommt ihr in einen große, beleuchteten zentralen Raum.\n"
-"Alle Wände sind voll mit Büchern und\n"
-"in der Mitte sitzt an einem einsamen\n"
-"Tisch ein Gelehrter, der tatsächlich das gesuchte Buch zeigen kann.\n"
+#: Game.Levels.Function.L14_InjectiveRange
+msgid "For an injective function `f : A → B` the fibres of the elements in the range\n"
+"are singletons."
+msgstr ""
+
+#: Game.Levels.Function.L15_Injective
+msgid "Monotone Funktionen"
+msgstr ""
+
+#: Game.Levels.Function.L15_Injective
+msgid "A function `f : A → B` between preorders `A` and `B` is strictly monotone\n"
+"if `a < b` implies `f a < f b`."
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "Monotone Funktionen"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "Sofort hakt die ältere Gestalt nach:"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Hmm, das ist etwas schwieriger…\n"
 "\n"
-"Bevor er dieses aushändigt, will er aber folgendes wissen:"
+"**Robo**: Aber ich hab einen Trick auf Lager:\n"
+"Das Lemma `StrictMono.injective` sagt, dass jede strikt monotone Funktion injektive ist,\n"
+"und ich habe das Gefühl Monotonie ist hier einfacher zu zeigen."
 msgstr ""
 
-#: Game.Levels.Function.L07_Surjective
-msgid "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.\n"
+#: Game.Levels.Function.L16_Injective
+msgid "**Robo**: `apply` ist wonach du suchst."
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Jetzt möchte ich strikte Monotonie von `n ^ 3` und `n + 3` separat zeigen,\n"
+"schliesslich scheint es mir als wär das zweite wieder einfach.\n"
 "\n"
-"**Du**: Dann kann ich das auch einfach wie Quantifier behandeln?\n"
+"**Robo**: Dafür hab ich `StrictMono.add` bereit!"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Hmm, darauf hab ich jetzt wenig Lust. Gibt's dafür auch was? Das gilt ja nur\n"
+"wenn der Exponent ungerade ist.\n"
 "\n"
-"**Robo**: Schieß drauf los!"
+"**Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
 msgstr ""
 
-#: Game.Levels.Function.L07_Surjective
-msgid "**Du**: das is doch eigentlich ganz einfach… Kann man das denn\n"
-"noch weiter vereinfachen?\n"
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Ist das nicht ne Trivialität? Warte mal!"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: oder …?\n"
 "\n"
-"**Robo**: Wenn du `«{f}»` auch einsetzt vermutlich schon."
+"**Robo**: Doch, doch. Schau mal mit `unfold` hinein in die Definition."
 msgstr ""
 
-#: Game.Levels.Function.L07_Surjective
-msgid "Der Gelehrte händigt euch schmunzelnd das Buch aus."
+#: Game.Levels.Function.L16_Injective
+msgid "Dieses Lemma sagt `StrictMono f → Injective f`."
 msgstr ""
 
-#: Game.Levels.Function.L08_Bijective
+#: Game.Levels.Function.L16_Injective
+msgid "Für ungerades `n` is `x ↦ x ^ n` strikt monoton.\n"
+"\n"
+"*Bemerkung*: Das Lemma ist im namespace `Odd`, damit man `hn.strictMono_pow` für den\n"
+"Beweis `hn : Odd n` schreiben könnte."
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "Wenn `f,g` beide strikt monoton sind, dann ist es `f + g` auch."
+msgstr ""
+
+#: Game.Levels.Function.L16_Injective
+msgid "**Du**: Danke vielmals!\n"
+"\n"
+"Und damit lässt das Wesen mitten im Gang stehen, wo es weiter über Injektivität nachdenkt."
+msgstr ""
+
+#: Game.Levels.Function.L17_Retract
+msgid "Left Inverse"
+msgstr ""
+
+#: Game.Levels.Function.L17_Retract
+msgid "A function `f : A → B` has a left inverse if there exists a function\n"
+"  `g : B → A` such that `g ∘ f = id`.\n"
+"\n"
+"  In this level, you will prove that the successor function on the natural numbers has a left inverse."
+msgstr ""
+
+#: Game.Levels.Function.L18_Extend
+msgid "Choosing an arbitrary element of a nonempty type."
+msgstr ""
+
+#: Game.Levels.Function.L18_Extend
+msgid "In this level you show that an injective function with a nonempty domain has a left inverse."
+msgstr ""
+
+#: Game.Levels.Function.L19_HasRetract
+msgid "Functions with left inverses are injective."
+msgstr ""
+
+#: Game.Levels.Function.L19_HasRetract
+msgid "In this level you show that a function which has a left inverse is injective."
+msgstr ""
+
+#: Game.Levels.Function.L20_HasRetract
+msgid "Injections with nonempty domain have retract."
+msgstr ""
+
+#: Game.Levels.Function.L20_HasRetract
+msgid "In this level you show that an injective function with a nonempty domain has a left inverse."
+msgstr ""
+
+#: Game.Levels.Function.L21_Bijective
 msgid "Bijektivität"
 msgstr ""
 
-#: Game.Levels.Function.L08_Bijective
+#: Game.Levels.Function.L21_Bijective
 msgid "**Du**: Ehm, und wie kommen wir da wieder raus?\n"
 "\n"
 "**Gelehrter**: Gerne zeige ich euch den Weg, nachdem ihr mir auch noch folgendes erklärt:"
 msgstr ""
 
-#: Game.Levels.Function.L08_Bijective
+#: Game.Levels.Function.L21_Bijective
 msgid "**Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.\n"
 "\n"
 "**Du**: Dann ist das ja ganz simpel!"
 msgstr ""
 
-#: Game.Levels.Function.L08_Bijective
+#: Game.Levels.Function.L21_Bijective
 msgid "Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und\n"
 "zeigt euch den Weg nach draußen."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "Inverse"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass\n"
 "eine Inverse Funktion existiere. Jetzt steht ihr aber schon seit einer halben Stunde rum\n"
 "und der Gelehrte möchte wissen, wie das den genau ginge.\n"
@@ -2377,17 +2514,17 @@ msgid "Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch be
 "aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Nah da sagt mir so manches nichts, aber ich kann ja mal mit dem `↔` anfangen,\n"
 "das kenn ich ja schon."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Tipp. Teil doch `Bijective` mit `rcases «{h}» with ⟨hI, hS⟩` in\n"
 "`Injective` und `Surjective` auf!"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Ja was ist eigentlich die Inverse von `«{f}»`…?\n"
 "\n"
 "**Robo**: Hast du eine Idee?\n"
@@ -2404,103 +2541,144 @@ msgid "**Du**: Ja was ist eigentlich die Inverse von `«{f}»`…?\n"
 "darüber zu beweisen, wenn es mehrere Möglichkeiten gäbe."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: fang mal mit `intro` an."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: fang mal mit `intro` an."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: kompliziert.\n"
 "\n"
 "**Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Das kann ich jetzt nicht zeigen solange ich nicht weiss, dass nur genau ein\n"
 "Urbild besteht.\n"
 "\n"
 "**Robo**: Dann wende doch mit `apply «{hI}»` die Injektivität an!"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Dies ist jetzt eine etwas tautologische Aussage. In Lean ist das\n"
 "`Exists.choose_spec`. Konkret `apply Exists.choose_spec («{hS}» (f x))`."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Kann ich das vereinfachen?"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Also wieder `Exists.choose_spec`?\n"
 "\n"
 "**Robo**: Genau! Diesmal mit dem Argument `(«{hS}» x)`."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Die eine Richtung ist gezeigt. Jetzt auf zur Rückrichtung!"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Zerlege `«{h}»` noch soweit du kannst!"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Das UND auch noch!"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Das `Bijective` kannst du auch aufteilen."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Injektivität ist der schwierige Teil. Fang mal an mit `intro`."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Im nächsten Schritt must du `LeftInverse` brauchen um das Goal\n"
 "zu `g (f a) = g (f b)` zu wechseln: schau mal was du mit\n"
 "`have w := «{hL}» «{a}»` kriegst und ob du das mit `rw` benutzen kannst."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Du**: Wenn die Argumente `f a = f b` gleich sind, ist dann auch `g (f a) = g (f b)`,\n"
 "wie sag ich das?\n"
 "\n"
 "**Robo**: Also wenn du `f a = f b` hast, kannst du ja auch einfach damit umschreiben."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "Die Surjektivität sollte einfacher sein."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Psst, mit `RightInverse g f` weisst du, dass `f (g x) = x`.\n"
 "Hilft das rauszufinden was du hier brauchen musst?"
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "**Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`\n"
 "benutzen."
 msgstr ""
 
-#: Game.Levels.Function.L09_Inverse
+#: Game.Levels.Function.L22_Inverse
 msgid "Endlich entkommt ihr der Bibliothek.\n"
 "\n"
 "**Robo**: Da würden mich keine zehn Pferde nochmals hineinbringen!\n"
 "\n"
 "**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?"
+msgstr ""
+
+#: Game.Levels.Function.L23_Equivalence
+msgid "Triple"
+msgstr ""
+
+#: Game.Levels.Function.L23_Equivalence
+msgid "An equivalence `α : A ≃ B` between `A` and `B` consists of a pair of functions `f : A → B` and `g : B → A` such that `f ∘ g = id` and `g ∘ f = id`.\n"
+"\n"
+"`finTwoArrowEquiv` constructs an equivalence between functions from `Fin 2` to `A` and pairs of elements of `A`, that is an equivalence\n"
+"  ```\n"
+"  (Fin 2 → A) ≃ A × A\n"
+"\n"
+"  ```\n"
+"In this level you construct an equivalence between functions from `Fin 3` to `A` and triples of elements of `A`."
+msgstr ""
+
+#: Game.Levels.Function.L24_CurryEquiv
+msgid "Curry"
+msgstr ""
+
+#: Game.Levels.Function.L24_CurryEquiv
+msgid "In this level, you will learn about currying. Currying is the process of transforming a function that takes multiple arguments into a function that takes one argument and returns another function that takes the next argument, and so on, until all arguments have been supplied. This is useful because it allows you to partially apply a function, which means you can supply some of the arguments now and the rest later.\n"
+"\n"
+"This insight was first made explicit separately by Moses Ilyich Schönfinkel in the 19th century and later in the 20th century by Haskell Curry."
+msgstr ""
+
+#: Game.Levels.Function.L25_CurrySurjective
+msgid "Diagonal"
+msgstr ""
+
+#: Game.Levels.Function.L25_CurrySurjective
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L26_Diagonal
+msgid "Diagonal"
+msgstr ""
+
+#: Game.Levels.Function.L26_Diagonal
+msgid "In this level, you will prove that the"
 msgstr ""
 
 #: Game.Levels.Function
@@ -5015,8 +5193,9 @@ msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
 msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → Set A` gibt? Faszinierend\n"
-"oder? Wie das geht? Nehmt doch einmal die Menge `{ a | a ∉ f a }`. Wenn `f` surjektiv wäre,\n"
-"welches `a : A` würde diese Menge als Bildpunkt haben?\n"
+"oder? Wie das geht? Nehmt doch einmal die Menge `C := { a | a ∉ f a }`. Wenn `f` surjektiv wäre,\n"
+"welches `a : A` würde diese Menge als Bildpunkt haben? Hier, ich gebe euch einfach `C` auch\n"
+"schon mit!\n"
 "\n"
 "[Tipp: `unfold_let` ist wie `unfold` und wird zukünftig in Lean zusammengeführt.\n"
 "Brauche `unfold_let C` wenn eine lokale Definition in deinen Annahmen ist. Alternativ\n"
@@ -5024,7 +5203,7 @@ msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → S
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Uff. Aber erlich habe ich die das \"Diagonale\" daran noch nicht\n"
+msgid "**Du**: Uff. Aber ehrlich habe ich die das \"Diagonale\" daran noch nicht\n"
 "ganz gesehen.\n"
 "\n"
 "\n"
@@ -5036,20 +5215,24 @@ msgid "**Du**: Also ein Widerspruchsbeweis?"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Robo**: Also wir sollen `let C := { a | a ∉ f a }` anschauen."
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
 msgid "**Du**: Und jetzt existiert durch Surjektivität ein Urbild von `«{C}»`.\n"
 "\n"
-"**Cantor**: Genau! Und dann überlegt euch, ob `y ∈ f y` ist oder nicht für\n"
-"dieses Urbild `y`!"
+"**Cantor**: Genau! Und dann überlegt euch, ob `b ∈ f b` ist oder nicht für\n"
+"dieses Urbild `b`!"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Jetzt will ich ja auch noch `y ∉ f y` zeigen für den Widerspruch.\n"
+msgid "**Robo**: Das machen wir glaubs am besten mit `by_cases`."
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Du**: Jetzt will ich ja auch noch `«{b}» ∉ «{f}» «{b}»` zeigen für den Widerspruch.\n"
 "\n"
-"**Robo**: Dann sag doch `suffices hn : «{y}» ∉ «{f}» «{y}»`, erinnerst du dich?"
+"**Robo**: Dann sag doch `suffices hn : «{b}» ∉ «{f}» «{b}»`, erinnerst du dich?"
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Robo**: Und noch den Fall wenn `«{b}» ∉ «{f}» «{b}»`"
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_abs
@@ -5167,26 +5350,36 @@ msgstr ""
 msgid ""
 msgstr ""
 
+#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
+msgid "Diagonalargument"
+msgstr ""
+
+#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
+msgid "**Cantor**: Genug gerätselt, jetzt aber zum Diagonalargument. Wenn wir eine surjektive\n"
+"Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : A → A` einen Fixpunkt.\n"
+"\n"
+"**Du**: Und welcher Punkt ist das?\n"
+"\n"
+"**Cantor**: Gute Frage! Hier, ich geb euch eine Aufgabe um das herauszufinden."
+msgstr ""
+
+#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
+msgid "**Cantor**: Diese Aufgabe soll euch vermitteln, wie ihr den Fixpunkt kriegt!"
+msgstr ""
+
+#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
+msgid "**Du**: Also ist der Fixpunkt dieses diagonale Element `f b b`, für ein `b`\n"
+"  das irgendwie aus der Surjektivität kommt…\n"
+"\n"
+"  **Cantor**: Und damit auf zum Hauptsatz!"
+msgstr ""
+
 #: Game.Levels.Cantor.L07_CantorDiag
 msgid "Diagonalargument"
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Genug gerätselt, jetzt aber zum Diagonalargument. Wir hatten doch\n"
-"die Menge `C := { a | a ∉ f a }` angeschaut, und dann bewiesen dass diese kein Urbild unter `f`\n"
-"haben kann.\n"
-"\n"
-"Aber eine Menge `X : Set A` kann ich auch mit dem Prädikat `X' : A → Prop` gleichsetzen, dann\n"
-"wäre mein `C` von vorhin stattdessen `fun (a : A) ↦ ¬ (f a a)`.\n"
-"\n"
-"**Du**: Ich verstehe, dann ist `f : A → A → Prop` und mit `f a a` schauen wir uns sozusagen\n"
-"die Diagonale an.\n"
-"\n"
-"**Cantor**: Und dann statt `Prop` schauen wir ein beliebiges `Y` an und anstatt `¬(·)` nehmen\n"
-"wir ein allgemeines `s : Y → Y`!\n"
-"\n"
-"**Robo*: Übrigens, in Lean ist `Set A` tatsächlich explizit als `A → Prop` definiert,\n"
-"diese \"Gleichsetzung\" ist also sozusagen die Definition."
+msgid "**Cantor**: Viel Glück!"
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
@@ -5195,17 +5388,29 @@ msgid "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngl
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Also anstatt `C := { a | a ∉ f a }` braucht ihr jetzt\n"
-"`let c : A → Y := fun (a : A) ↦ s (f a a)`"
+msgid "**Cantor**: Mit der Aufgabe vorhin könnt\n"
+"ihr sicher herausfinden, was das richtige `c : A → Y` ist, auf das ihr die Surjektivität\n"
+"anwenden wollt."
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Und gleich noch einen Tipp. Irgendwann hilft es, wenn man\n"
-"das Hilfslemma `have h : ∀ x, s (f x x) = c x` zeigt!"
+msgid "**Robo**: So viel weiss ich: die Funktion\n"
+"definieren wir mit\n"
+"\n"
+"```\n"
+"let c : A → Y := fun a ↦ _\n"
+"```\n"
+"\n"
+"aber den Wert musst schon du herausfinden!"
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Du**: Dann mache ich mich mal an das Hilfslemma!"
+msgid "**Cantor**: Gute Wahl!"
+msgstr ""
+
+#: Game.Levels.Cantor.L07_CantorDiag
+msgid "**Cantor**: Das sieht gut aus, jetzt können wir ja\n"
+"`cantor_diagonal_isFixedPt` von vorhin brauchen!"
 msgstr ""
 
 #: Game.Levels.Cantor.L08_CantorPowerset
@@ -5213,9 +5418,16 @@ msgid "Diagonalargument"
 msgstr ""
 
 #: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Du**: Robo, kannst du dich and die ürsprüngliche Aufgabe erinnern?\n"
+msgid "**Du**: Und wie hängt das jetzt damit zusammen, dass es keine Surjektive Funktion\n"
+"`f : A → Set A` gibt?\n"
 "\n"
-"**Robo**: Bitte sehr!"
+"**Cantor**: Ganz einfach, nehmt `s` als die Funktion `fun x ↦ ¬ x`.\n"
+"\n"
+"**Robo**: In Lean kann man nämlich eine Menge `U : Set A` mit dem Prädikat\n"
+"`{ x : A | x ∈ U } : A → Prop` gleichsetzen, die sind per Definition dasselbe.\n"
+"Damit kann man `f : A → Set A` auch als `f : A → A → Prop` sehen.\n"
+"\n"
+"**Du**: Und `{ a | a ∉ f a }` ist `s (f a a)` für `s : (fun x ↦ ¬ x)`, alles klar."
 msgstr ""
 
 #: Game.Levels.Cantor.L08_CantorPowerset

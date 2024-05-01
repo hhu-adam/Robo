@@ -4,7 +4,7 @@ World "Function"
 Level 18
 
 
-Title "Injections with nonempty domain have retract."
+Title "Choosing an arbitrary element of a nonempty type."
 
 
 Introduction

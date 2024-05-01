@@ -15,11 +15,13 @@ The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set
 f ⁻¹' S = {x | f x ∈ S}
 ```
 
+`HasRightInverse.surjective`
+
 "
 
 open Function Set
 
-Statement {f : A → B} :
+Statement Surjective.tfae (f : A → B) :
     List.TFAE [Surjective f, ∀ b : B, Set.Nonempty (f ⁻¹' { b }), HasRightInverse f] := by
   tfae_have 1 → 2
   · intro h b
@@ -35,8 +37,14 @@ Statement {f : A → B} :
     use g
     exact hg
   tfae_have 3 → 1
-  . intro ⟨g, inv⟩
+  . Branch
+      apply HasRightInverse.surjective
+    intro ⟨g, inv⟩
     intro b
     use g b
     apply inv
   tfae_finish
+
+
+-- NewTheorem HasRightInverse.surjective
+-- TheoremTab "Function"
