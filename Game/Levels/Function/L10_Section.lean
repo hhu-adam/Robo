@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Function"
+World "Function2"
 Level 10
 
 Title "Range of Surjection"

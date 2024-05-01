@@ -1,7 +1,7 @@
 import Game.Metadata
 
 import Game.Levels.Contradiction
-import Game.Levels.Function
+import Game.Levels.OLDFunction
 import Game.Levels.Implication
 import Game.Levels.Inequality
 -- import Game.Levels.Prime

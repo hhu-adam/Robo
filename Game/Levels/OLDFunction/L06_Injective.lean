@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Function2"
-Level 13
+World "Function"
+Level 6
 
 Title "Nicht Injektiv"
 

@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Function"
+World "Function2"
 Level 7
 
 Title "Section"

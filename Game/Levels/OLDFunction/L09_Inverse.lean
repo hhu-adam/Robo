@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Function2"
-Level 22
+World "Function"
+Level 9
 
 Title "Inverse"
 Introduction

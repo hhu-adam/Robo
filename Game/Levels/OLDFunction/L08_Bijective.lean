@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Function2"
-Level 21
+World "Function"
+Level 8
 Title "Bijektivität"
 
 Introduction

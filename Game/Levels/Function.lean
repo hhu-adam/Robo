@@ -26,7 +26,7 @@ import Game.Levels.Function.L25_CurryEquiv
 import Game.Levels.Function.L26_Diagonal
 import Game.Levels.Function.L27_CurrySurjective
 
-World "Function"
+World "Function2"
 Title "Abbildungen"
 
 Image "images/Librarian.png"

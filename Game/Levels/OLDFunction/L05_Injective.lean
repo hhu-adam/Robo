@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Function2"
-Level 16
+World "Function"
+Level 5
 Title "Monotone Funktionen"
 
 Introduction
