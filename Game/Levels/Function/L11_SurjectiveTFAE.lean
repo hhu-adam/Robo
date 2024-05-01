@@ -45,6 +45,5 @@ Statement Surjective.tfae (f : A → B) :
     apply inv
   tfae_finish
 
-
--- NewTheorem HasRightInverse.surjective
--- TheoremTab "Function"
+NewTheorem Function.HasRightInverse.surjective
+TheoremTab "Function"
