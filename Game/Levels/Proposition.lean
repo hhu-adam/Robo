@@ -20,7 +20,7 @@ Image "images/QueenOfLogic.png"
 
 Introduction "
 Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit
-bist du ausversehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück.
+bist du aus Versehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück.
 Richte dich besser darauf ein, hier bleiben und dich zurechtzufinden zu müssen.
 
 Wie es aussieht, gibt es hier viele nette kleine Planeten. Alle bewohnbar, und bis zu
@@ -34,7 +34,7 @@ Es gibt nur zwei Schwierigkeiten: Erstens haben die Formalosophen allem Anschein
 exklusiv in einem dir fremden Dialekt, den sie Leansch [liːnʃ] nennen.
 
 Zum Glück hat Robo mit dir das Universum gewechselt.
-Robo, das ist dein kleiner SmartElf. Robo ist war auch nicht die mathematische Leuchte, die du Dir
+Robo, das ist dein kleiner SmartElf. Robo ist zwar auch nicht die mathematische Leuchte, die du Dir
 in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.
 Und das ist Gold wert.
 "
