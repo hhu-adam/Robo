@@ -22,7 +22,7 @@ Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
 
     **Du**: Du meinst, `destructor`??
 
-    **Robo**: Nein, `constructor`. Ich weiß das ist verwirrend,
+    **Robo**: Nein, `constructor`. Ich weiß, das ist verwirrend,
     aber die nennen das hier so weil man die Aussage aus mehreren Teilen
     konstruieren kann."
   constructor
