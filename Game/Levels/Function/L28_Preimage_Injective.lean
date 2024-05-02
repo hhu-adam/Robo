@@ -14,7 +14,7 @@ by taking the preimage of sets of `B`. Recall that
 preimage f S = f ⁻¹' S = {a | f a ∈ S}
 ```
 
-Show that `preimage f` is injective iff f is surjective. P(f) is surjective iff f is injective.
+Show that `preimage f` is injective iff f is surjective.
 
 "
 
