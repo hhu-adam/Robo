@@ -22,7 +22,7 @@ In this level you construct an equivalence between functions from `Fin 3` to `A`
 open Function
 
 Statement finThreeArrowEquiv : (Fin 3 → A) ≃ A × A × A := by
-  refine {?..!}
+  refine { ?..! }
   · exact fun f => (f 0, f 1, f 2)
   · exact fun t => fun
     | 0 => t.1
@@ -30,8 +30,12 @@ Statement finThreeArrowEquiv : (Fin 3 → A) ≃ A × A × A := by
     | 2 => t.2.2
   · intro f
     simp
-    funext x
-    cases x
-    aesop
+    ext x
+    fin_cases x
+    simp
+    simp
+    simp
   · intro t
     simp
+
+NewTactic refine exact

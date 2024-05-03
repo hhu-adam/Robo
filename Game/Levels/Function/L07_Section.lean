@@ -20,7 +20,7 @@ Statement rightInverse_iff_comp {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ f ∘ g = id := by
   constructor
   · intro h
-    funext x
+    ext x
     Branch
       rw [comp_apply]
       rw [h x]
@@ -30,7 +30,10 @@ Statement rightInverse_iff_comp {f : A -> B} {g : B -> A} :
       apply congr_fun
     intro h
     intro x
-    exact congr_fun h x
+    have h := congr_fun h
+    apply h
 
-NewTheorem Function.rightInverse_iff_comp
+NewTactic ext congr
+NewDefinition Function.RightInverse
+NewTheorem Function.rightInverse_iff_comp congr_fun congr_arg
 TheoremTab "Function"

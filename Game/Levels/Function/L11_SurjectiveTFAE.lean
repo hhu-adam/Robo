@@ -25,17 +25,17 @@ Statement Surjective.tfae (f : A → B) :
     List.TFAE [Surjective f, ∀ b : B, Set.Nonempty (f ⁻¹' { b }), HasRightInverse f] := by
   tfae_have 1 → 2
   · intro h b
-    exact h b
+    apply h
   tfae_have 2 → 3
   . intro h
     Branch
       use fun b ↦ (h b).choose
       intro b
-      dsimp
+      simp
       exact (h b).choose_spec
     choose g hg using h
     use g
-    exact hg
+    assumption
   tfae_have 3 → 1
   . Branch
       apply HasRightInverse.surjective
@@ -47,3 +47,4 @@ Statement Surjective.tfae (f : A → B) :
 
 NewTheorem Function.HasRightInverse.surjective
 TheoremTab "Function"
+NewHiddenTactic tfae_have tfae_finish

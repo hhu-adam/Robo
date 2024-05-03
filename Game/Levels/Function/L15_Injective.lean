@@ -15,14 +15,14 @@ open Set Function
 Statement StrictMono.injective {A B : Type*} [LinearOrder α] [Preorder β] {f : α → β}
     (hf : StrictMono f)  : Injective f := by
   intro a b h
-  obtain hlt | heq | hgt := lt_trichotomy a b
+  rcases lt_trichotomy a b with hlt | heq | hgt
   · apply hf at hlt
     rw [h] at hlt
-    exfalso
-    exact lt_irrefl (f b) hlt
-  · exact heq
+    simp at *
+  · assumption
   · -- proof by symmetry (e.g. `wlog` or `swap`)
     apply hf at hgt
     rw [h] at hgt
-    exfalso
-    exact lt_irrefl (f b) hgt
+    simp at *
+
+NewTheorem lt_trichotomy

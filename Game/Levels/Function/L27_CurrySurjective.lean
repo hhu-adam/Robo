@@ -16,11 +16,18 @@ open Function Nat
 Statement (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
   constructor
   · intro h
-    dsimp [Surjective] at h
+    simp [Surjective] at h
     push_neg at h
-    simpa only [ne_comm] using h
+    rcases h with ⟨w, hw⟩
+    use w
+    intro n
+    rw [ne_comm]
+    apply hw
   · intro ⟨g, hg⟩
     intro hf
-    obtain ⟨n, hn⟩ :=  hf g
+    rcases hf g with ⟨n, hn⟩
     apply hg n
-    exact hn.symm
+    symm
+    assumption
+
+NewTheorem ne_comm

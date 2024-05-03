@@ -20,8 +20,10 @@ Statement Injective.hasLeftInverse [Nonempty A] (f : A → B) (hf : Injective f)
     HasLeftInverse f := by
   let finv : B → A := fun b => if h : ∃ x, f x = b then h.choose else Classical.arbitrary A
   use finv
-  dsimp [LeftInverse]
+  simp [LeftInverse]
   intro x
   apply hf
   simp only [finv, dif_pos (⟨x, rfl⟩ : ∃ x', f x' = f x)]
   apply Exists.choose_spec (⟨x, rfl⟩ : ∃ x', f x' = f x)
+
+NewTheorem dif_pos

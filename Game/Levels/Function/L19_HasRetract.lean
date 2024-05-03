@@ -15,9 +15,11 @@ open Function
 
 Statement HasLeftInverse.injective {f : α → β} (h : HasLeftInverse f) :
     Injective f := by
-  obtain ⟨finv, inv⟩ := h
+  rcases h with ⟨finv, inv⟩
   intro a b eq
   trans finv (f a)
   · rw [inv]
   · rw [eq]
     rw [inv]
+
+NewTactic trans

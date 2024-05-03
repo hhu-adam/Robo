@@ -31,7 +31,7 @@ Statement (nonempty_fibre : ∀ b : B, Set.Nonempty (f ⁻¹' { b })) : HasRight
       "
       use fun b ↦ (nonempty_fibre b).choose
       intro b
-      dsimp
+      simp
       Hint "
       ...
       "
@@ -42,4 +42,6 @@ Statement (nonempty_fibre : ∀ b : B, Set.Nonempty (f ⁻¹' { b })) : HasRight
       "
   choose g hg using nonempty_fibre
   use g
-  exact hg
+  assumption
+
+NewTactic choose

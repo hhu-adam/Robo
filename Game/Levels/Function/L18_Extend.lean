@@ -18,8 +18,8 @@ open Function Set Nat
 Statement {A : Type*} [Nonempty A] (f : ℕ → A) :
     ∃ g : ℤ → A, ∀ n : ℕ, (f n = g n) := by
   let g : ℤ → A := fun
-    | Int.ofNat n => f n
-    | Int.negSucc _ => Classical.arbitrary A
+    | .ofNat n => f n
+    | .negSucc _ => Classical.arbitrary A
   use g
   intro n
   rfl
@@ -30,7 +30,9 @@ example {A : Type*} [Nonempty A] (f : ℕ → A) :
   let g : ℤ → A := fun
     | 0 => Classical.arbitrary A
     | Nat.succ n => f (succ n)
-    | Int.negSucc _ => Classical.arbitrary A
+    | .negSucc _ => Classical.arbitrary A
   use g
   intro n hn
   rw [← Nat.succ_pred_eq_of_pos hn]
+
+NewTheorem Classical.arbitrary

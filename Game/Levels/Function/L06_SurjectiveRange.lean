@@ -35,11 +35,15 @@ Statement surjective_iff_range {f : A → B} : Surjective f ↔ range f = univ :
     constructor
     · tauto
     · intro
-      exact hf b
+      apply hf
   · intro h
     intro b
     Branch
-      change b ∈ range f
-      rw [h]
-      exact mem_univ b
-    simpa [← h] using mem_univ b
+      simpa [← h] using mem_univ b
+
+    change b ∈ range f
+    rw [h]
+    simp
+
+NewDefinition Set.range
+NewTactic change

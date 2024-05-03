@@ -34,16 +34,16 @@ Statement preimage_injective {f : A → B} : Injective (preimage f) ↔ Surjecti
       rw [← image_preimage_eq S hsurj, ← image_preimage_eq T hsurj, heq]
     apply Subset.antisymm
     · intro y hy
-      obtain ⟨x, hx⟩ := hsurj y
+      rcases hsurj y with ⟨x, hx⟩
       rw [← hx] at hy
-      have : x ∈ f⁻¹' S := by exact mem_preimage.mp hy
+      have : x ∈ f⁻¹' S := by apply mem_preimage.mp hy
       rw [heq] at this
       rw [← hx]
-      exact mem_preimage.mp this
+      apply mem_preimage.mp this
     · intro y hy
-      obtain ⟨x, hx⟩ := hsurj y
+      rcases hsurj y with ⟨x, hx⟩
       rw [← hx] at hy
-      have : x ∈ f⁻¹' T := by exact mem_preimage.mp hy
+      have : x ∈ f⁻¹' T := by apply mem_preimage.mp hy
       rw [← heq] at this
       rw [← hx]
-      exact mem_preimage.mp this
+      apply mem_preimage.mp this

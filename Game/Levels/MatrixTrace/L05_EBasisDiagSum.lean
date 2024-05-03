@@ -16,7 +16,7 @@ Introduction
 **Robo**: Egal, jetzt sind wir schon ein gutes Stücken weiter. Probier jetzt hier einmal!
 "
 
-Conclusion "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die 
+Conclusion "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die
 die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 
 
@@ -114,7 +114,7 @@ TacticDoc congr
 
 
 NewTheorem Matrix.one_apply Finset.sum_subset Finset.subset_univ
-NewTactic ext congr
-NewHiddenTactic funext
+-- NewTactic ext congr
+-- NewHiddenTactic funext
 
 TheoremTab "Matrix"

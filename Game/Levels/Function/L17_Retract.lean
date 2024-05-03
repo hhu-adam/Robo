@@ -28,3 +28,5 @@ Statement : HasLeftInverse Nat.succ  := by
     simp
   intro n
   rfl
+
+  NewDefinition Function.LeftInverse Function.HasLeftInverse

@@ -23,3 +23,5 @@ Statement :
   simp [g, f]
   ring
   tauto
+
+NewDefinition Function.HasRightInverse

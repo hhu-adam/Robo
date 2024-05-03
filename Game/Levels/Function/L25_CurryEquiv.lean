@@ -25,5 +25,7 @@ Statement curry_equiv {A : Type u₁} {B : Type u₂} {C : Type u₃} :
   · Branch
       exact uncurry
     exact (fun f => fun p => f p.1 p.2)
-  · exact uncurry_curry
-  · exact curry_uncurry
+  · apply uncurry_curry
+  · apply curry_uncurry
+
+NewTheorem Function.curry_uncurry Function.uncurry_curry
