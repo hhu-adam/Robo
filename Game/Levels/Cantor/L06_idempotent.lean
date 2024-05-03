@@ -55,5 +55,5 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
 /---/
 TheoremDoc congr_fun as "congr_fun" in "Function"
 
-NewTheorem congr_fun
+-- NewTheorem congr_fun
 TheoremTab "Function"
