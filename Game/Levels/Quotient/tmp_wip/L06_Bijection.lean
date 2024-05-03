@@ -3,7 +3,7 @@ import Game.Metadata
 import Game.Levels.Quotient.L04_Respect
 
 World "Quotient"
-Level 5
+Level 6
 
 Title "Bijection"
 

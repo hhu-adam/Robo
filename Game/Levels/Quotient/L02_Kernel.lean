@@ -3,7 +3,7 @@ import Game.Metadata.StructInstWithHoles
 import Mathlib.GroupTheory.Subgroup.Basic
 
 World "Quotient"
-Level 1
+Level 2
 
 Title "Kernel"
 
@@ -28,11 +28,6 @@ In this level you show that these two notions of kernel coincide: Two elements `
 "
 
 open Function Set Setoid
-
-#check MonoidHom.mker
-#check MonoidHom.ker
-#check Con.ker_apply
-#check AddCon.ker_apply
 
 Statement {A B : Type*} [AddGroup A] [AddGroup B] {f : A →+ B} {x y : A} :
     (ker f).Rel x y ↔ (x - y) ∈ f.ker := by

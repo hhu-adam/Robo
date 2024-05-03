@@ -5,7 +5,7 @@ import Game.Levels.Quotient.L05_Bijection
 import Game.Levels.Cantor
 
 World "Quotient"
-Level 6
+Level 7
 
 Title "Fixed points"
 

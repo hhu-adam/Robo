@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quotient"
-Level 8
+Level 9
 
 Title "Equifibred"
 
