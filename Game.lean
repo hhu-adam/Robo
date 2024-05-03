@@ -1,10 +1,11 @@
 import Game.Metadata
 
+import DevPlanets
+
 import Game.Levels.Contradiction
 import Game.Levels.OLDFunction
 import Game.Levels.Implication
 import Game.Levels.Inequality
--- import Game.Levels.Prime
 import Game.Levels.Predicate
 import Game.Levels.Proposition
 import Game.Levels.Sum
@@ -15,10 +16,8 @@ import Game.Levels.SetTheory
 import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
 import Game.Levels.Cantor
--- import Game.Levels.Quotient
 
--- Temporary Worlds that aren't yet fleshed out
-import Game.Levels.NewStuff
+
 
 Title "Robo"
 Introduction
