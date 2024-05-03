@@ -1,6 +1,6 @@
 import Game.Metadata
 
-import DevPlanets
+import Game.DevPlanets
 
 import Game.Levels.Contradiction
 import Game.Levels.OLDFunction
