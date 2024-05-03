@@ -16,7 +16,7 @@ In this level, you will prove that if `g` is a right inverse of `f`, then the co
 
 open Function
 
-Statement rightInverse_iff_comp {f : A -> B} {g : B -> A} :
+Statement rightInverse_iff_comp {A B : Type} {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ f ∘ g = id := by
   constructor
   · intro h
@@ -30,10 +30,13 @@ Statement rightInverse_iff_comp {f : A -> B} {g : B -> A} :
       apply congr_fun
     intro h
     intro x
-    have h := congr_fun h
-    apply h
+    Branch
+      rw [← @comp_apply _ _ _ f g x, h]
+      simp
+    have h' := congr_fun h
+    apply h'
 
 NewTactic ext congr
 NewDefinition Function.RightInverse
-NewTheorem Function.rightInverse_iff_comp congr_fun congr_arg
+NewTheorem Function.rightInverse_iff_comp congr_arg
 TheoremTab "Function"

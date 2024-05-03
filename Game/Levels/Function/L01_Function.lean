@@ -10,7 +10,7 @@ Title "Anonyme Funktionen"
 Introduction
 "
 Auf die Frage hin, ob sie von einer Bibliothek wisse, erzählt euch das kleine Mädchen,
-dass es auf der Insel nur einen gäbe, aber sie bedrängt euch so mit einer Frage,
+dass es auf der Insel nur eine gäbe, aber sie bedrängt euch so mit einer Frage,
 dass sie euch gar nicht sagt, wo dieser zu finden sei.
 "
 

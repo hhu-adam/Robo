@@ -27,13 +27,13 @@ Statement :
 
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
     dann für dieses."
-  funext x
+  ext x
   Hint "
     **Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) {x}` zu `g (f {x})` umschreiben?
 
     **Robo**: Mit `simp` klappt das."
   simp
-  Hint "
+  Hint (strict := true) "
     **Robo**: Jetzt kannst du nämlich eine Fallunterscheidung
     machen, `by_cases h : 0 ≤ {x}`.
 
@@ -63,7 +63,7 @@ Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den
 Durchgang frei.
 "
 
-NewTactic funext
+NewTactic ext -- TODO: could also use `funext`
 
 /--
 Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert

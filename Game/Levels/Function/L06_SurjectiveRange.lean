@@ -29,6 +29,7 @@ Statement surjective_iff_range {f : A → B} : Surjective f ↔ range f = univ :
     exact eq_univ_iff_forall.symm
   constructor
   · intro hf
+    Hint "**Du**: Wie zeigt man denn schon wieder Gleichheit von Mengen?"
     ext b
     Branch
       tauto
@@ -40,10 +41,12 @@ Statement surjective_iff_range {f : A → B} : Surjective f ↔ range f = univ :
     intro b
     Branch
       simpa [← h] using mem_univ b
-
-    change b ∈ range f
+    Hint "**Robo**: Ich habe ein relevantes Resultat gefunden: `Set.mem_range`.
+    Such das mal in denem Inventar!
+    "
+    rw [← Set.mem_range]
     rw [h]
     simp
 
 NewDefinition Set.range
-NewTactic change
+NewTheorem Set.mem_range
