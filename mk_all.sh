@@ -9,7 +9,7 @@ for planet in Game/Levels/*/; do
 
   NEW=`git ls-files "$planet/*.lean" | LC_ALL=C sort | sed 's/\.lean//;s,/,.,g;s/^/import /'`
 
-  echo "\n\n\n"
+  # echo "\n\n\n"
   echo $NEW
 
   echo -e "$NEW\n$(cat $FILE)" > $FILE

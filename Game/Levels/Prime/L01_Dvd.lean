@@ -46,3 +46,9 @@ Statement dvd_add (n m k : ℕ) (h : m ∣ n) (g : m ∣ k) : m ∣ n + k := by
   ring
 
 DisabledTheorem dvd_add
+
+/-- (Warning: the unicode symbol `∣` (`\\dvd`) and the ASCII symbol `|` are not the same!
+Use the former for dividing.) -/
+DefinitionDoc Symbol.dvd as "· ∣ ·"
+
+NewDefinition Symbol.dvd

@@ -17,6 +17,8 @@ und ich glaube einfach, der ist in so jungen Jahren bereits schlauer als ich.
 Hier etwas Kontext:
 "
 
+open Nat
+
 Statement (p : ℕ) (h : Nat.Prime p) : ∀ (x : ℕ), (x ∣ p) → x = 1 ∨ x = p := by
   Hint "**Du**: Die einzigen Teiler einer Primzahl sind `1` und `p`, ist das
   nicht eine der möglichen Definitionen über `ℕ`?
