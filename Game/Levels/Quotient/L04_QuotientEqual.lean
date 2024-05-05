@@ -28,3 +28,6 @@ Statement {p q : ℤ × ℤ} (h : (⟦ p ⟧ : Sym2 ℤ)  = ⟦ q ⟧) : p.1 + p
     · simp
     · simp
       simp [add_comm]
+
+NewTheorem Quotient.eq
+TheoremTab "Quotient"
