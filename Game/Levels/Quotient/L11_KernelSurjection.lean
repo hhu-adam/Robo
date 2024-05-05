@@ -22,3 +22,6 @@ Statement surj_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk <| ker <|
   --induction q using Quotient.ind with b
   use b
   rfl
+
+NewTheorem surj_quotient_mk_ker
+TheoremTab "Quotient"

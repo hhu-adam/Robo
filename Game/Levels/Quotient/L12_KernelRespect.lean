@@ -34,3 +34,6 @@ Statement respects_ker_rel {f : A → B} :
   ext
   simp only [rangeFactorization_coe]
   exact h
+
+NewTheorem respects_ker_rel
+TheoremTab "Quotient"

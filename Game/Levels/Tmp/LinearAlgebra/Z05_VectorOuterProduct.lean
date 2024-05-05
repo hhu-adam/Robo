@@ -4,11 +4,12 @@ import GameServer.Commands
 import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Matrix.Basic
+import Mathlib.Data.Matrix.Notation
 
 import Game.Levels.Tmp.LinearAlgebra.Z01_Vector
 
 
-import Game.StructInstWithHoles
+--import Game.StructInstWithHoles
 
 set_option tactic.hygienic false
 

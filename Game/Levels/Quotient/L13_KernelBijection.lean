@@ -32,3 +32,6 @@ Statement bij_quotient_lift_range_fac (f : A → B) :
 
 -- Remark: another way to prove the injectivity and surjectivity of the quotient lift is to use
 --the cancellation properties. This would still use `ker_lift_injective`
+
+NewTheorem bij_quotient_lift_range_fac
+TheoremTab "Quotient"
