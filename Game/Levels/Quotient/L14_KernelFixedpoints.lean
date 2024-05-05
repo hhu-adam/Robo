@@ -1,11 +1,7 @@
 import Game.Metadata
 
-import Game.Levels.Quotient.L04_Respect
-import Game.Levels.Quotient.L05_Bijection
-import Game.Levels.Cantor
-
 World "Quotient"
-Level 7
+Level 14
 
 Title "Fixed points"
 

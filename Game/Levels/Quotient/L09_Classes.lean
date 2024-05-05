@@ -1,18 +1,18 @@
 import Game.Metadata
-import Game.Levels.Quotient.L01_Classes
+import Game.Levels.Quotient.L08_Classes
 
 World "Quotient"
-Level 4
+Level 9
 
 Title "Classes"
 
 Introduction
 "
-Given a setoid structure `s` on `A` and an element `a : A` the equivalence class of `a`
-is the set of all elements of `A` that are congruent to `a`, namely `{x : A | s.Rel x a}`.
+Recall from the previuos level that given a setoid structure `s` on `A` and an element `a : A`
+the equivalence class of `a` is the set of all elements of `A` that are congruent to `a`, namely `{x : A | s.Rel x a}`.
 
 In this level we show that the set of equivalence classes of `A` under the relation `s` is in
-bijection with the quotient `A/s` of `A` by `s`.
+bijection with the quotient `Quotient s`.
 
 "
 
@@ -45,3 +45,7 @@ Statement bijective_of_quotient_to_classes (s : Setoid A) :
     dsimp
     symm
     assumption
+
+
+NewTheorem Quotient.lift_mk
+TheoremTab "Quotient"

@@ -1,17 +1,13 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
 import Mathlib.GroupTheory.Subgroup.Basic
 
 World "Quotient"
-Level 2
+Level 10
 
 Title "Kernel"
 
 Introduction
 "
-A setoid structure on a type `A` provides a relation `r : A → A → Prop` which is congruence (aka equivalence relation). The congruence `r` tell us which elements of `A` are congruent to other elements of `A`.
-
-
 We show that every function `f : A → B` induces a congruence on `A`. We say elements `x`
 and `y` of `A` are kernel-congruent if `f x = f y`.
 This is the equivalence relation `ker f` on `A` denoted by `ker f`.

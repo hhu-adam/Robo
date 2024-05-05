@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quotient"
-Level 1
+Level 8
 
 Title "Classes"
 
@@ -9,8 +9,9 @@ Introduction
 "
 A setoid structure on a type `A` provides a congruence (aka equivalence relation)
 `r : A → A → Prop`.
-Given a setoind `s` on `A` and the congruence `s.Rel` tells us which elements of `A` are related
-to each other by the relation `s.Rel`.
+Given a setoind `s` on `A`, the congruence `s.Rel` tells us which elements of `A` are related
+to each other by the relation `s.Rel`. We sometimes write `a ≈ b` if `a` and `b`
+are congruent modulo `r`.
 
 Given a setoid structure `s` on `A` and an element `a : A` the equivalence class of `a`
 is the set of all elements of `A` that are congruent to `a`, namely `{x : A | s.Rel x a}`.
@@ -19,7 +20,7 @@ In this level you shall prove that the equivalence class of `a` is the same as t
 
 "
 
-open Function Set Setoid
+open Setoid
 
 /- SH: Hard to believe this is not in mathlib!  -/
 /- SH: this is groupoid version of the yoneda lemma for the proposition valued functors.-/
@@ -48,5 +49,5 @@ Statement Setoid.rel_iff_eq_classes {s : Setoid A} (a b : A) :
     exact this
 
 
-NewTheorem Setoid.rel_iff_eq_classes
+NewTheorem Setoid.rel_iff_eq_classes Setoid.symm Setoid.trans
 TheoremTab "Quotient"

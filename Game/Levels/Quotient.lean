@@ -1,5 +1,7 @@
-import Game.Levels.Quotient.L01_Classes
-import Game.Levels.Quotient.L02_Kernel
+-- import Game.Levels.Quotient.L01_Perm
+
+-- import Game.Levels.Quotient.L01_Classes
+-- import Game.Levels.Quotient.L02_Kernel
 --import Game.Levels.Quotient.L04_Classes
 --import Game.Levels.Quotient.L02_Alphabet
 --import Game.Levels.Quotient.L03_Surjection

@@ -1,12 +1,7 @@
 import Game.Metadata
-import Game.Metadata.StructInstWithHoles
-
-import Game.Levels.Quotient.L03_Surjection
-import Game.Levels.Quotient.L04_Respect
-import Game.Levels.Quotient.L05_Bijection
 
 World "Quotient"
-Level 8
+Level 15
 
 Title "Factorization"
 
