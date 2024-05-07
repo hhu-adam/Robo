@@ -38,4 +38,5 @@ Statement finThreeArrowEquiv : (Fin 3 → A) ≃ A × A × A := by
   · intro t
     simp
 
-NewTactic refine exact
+NewTactic refine exact fin_cases
+-- TODO: fin_cases should be in set-theory

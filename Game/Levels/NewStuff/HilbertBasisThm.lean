@@ -27,7 +27,6 @@ lemma ideal_eq_iff_carrier_eq (a : Ideal R) (b : Ideal R) :
     change Ideal.span a.carrier = Ideal.span b.carrier
     exact congr_arg Ideal.span h
 
-
 Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetherianRing R[X] := by
   --Behauptung: Sei R ein noetherscher Ring. Dann ist auch R[X] noethersch.
   --Es reicht zu zeigen: Jedes Ideal a ⊴ R[X] ist endlich erzeugt.
@@ -153,7 +152,6 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
         rw [Ideal.span_le]
         assumption
       · change b N ≤ ⨆ (n : ℕ), b n
-        simp
         rw [le_iSup_iff]
         intros I hI
         exact (hI N)
@@ -249,6 +247,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
             exact And.left hg
         · change g.leadingCoeff = (lcoeff R d₀) g
           simp
+          sorry
 
       change u ∈ ⨆ (n : ℕ), b n
       exact Ideal.mem_iSup_of_mem d₀ this

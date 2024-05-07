@@ -25,9 +25,10 @@ import Game.Levels.Function.L24_EquivalenceBijection
 import Game.Levels.Function.L25_CurryEquiv
 import Game.Levels.Function.L26_Diagonal
 import Game.Levels.Function.L27_CurrySurjective
+import Game.Levels.Function.L28_Preimage_Injective
 
 World "Function2"
-Title "Abbildungen"
+Title "[WIP] Funktionen"
 
 Image "images/Librarian.png"
 

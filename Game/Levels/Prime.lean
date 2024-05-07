@@ -8,7 +8,7 @@ import Game.Levels.Prime.L07_InfinitudePrimes
 import Game.Levels.Prime.L08_InfinitudePrimes
 
 World "Prime"
-Title "Primzahlen"
+Title "[WIP] Primzahlen"
 
 Introduction "Ihr schlendert durch die Befestigung ohne direktes Ziel. Und sprecht mit
 verschiedenen Einwohnern."

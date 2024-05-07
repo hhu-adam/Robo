@@ -1,7 +1,5 @@
 import Game.Metadata
 
-import Game.DevPlanets
-
 import Game.Levels.Contradiction
 import Game.Levels.OLDFunction
 import Game.Levels.Implication
@@ -10,14 +8,13 @@ import Game.Levels.Predicate
 import Game.Levels.Proposition
 import Game.Levels.Sum
 
-
--- TMP: disable non-complete levels for the seminar
 import Game.Levels.SetTheory
 import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
 import Game.Levels.Cantor
 
-
+-- *uncomment the following line to get the incomplete planets.*
+-- import Game.DevPlanets
 
 Title "Robo"
 Introduction
@@ -87,7 +84,7 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/cover.png"
 
--- Dependency Inequality → SetTheory
+Dependency Sum → Function
 
 -- set_option lean4game.showDependencyReasons true
 

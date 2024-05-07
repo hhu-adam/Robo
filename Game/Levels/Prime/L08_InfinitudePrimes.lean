@@ -36,3 +36,5 @@ Statement Nat.exists_infinite_primes' :
       assumption
   · use 2
     trivial
+
+#check pred_inj

@@ -23,6 +23,7 @@ open Function Set
 Statement preimage_injective {f : A → B} : Injective (preimage f) ↔ Surjective f := by
   constructor
   · intro hinj y
+    Hint "Now `change (f ⁻¹' \{{y}}).Nonempty`"
     change (f ⁻¹' {y}).Nonempty
     rw [nonempty_iff_ne_empty]
     rw [← preimage_empty]
@@ -32,7 +33,8 @@ Statement preimage_injective {f : A → B} : Injective (preimage f) ↔ Surjecti
     intro S T heq
     Branch
       rw [← image_preimage_eq S hsurj, ← image_preimage_eq T hsurj, heq]
-    apply Subset.antisymm
+    rw [Subset.antisymm_iff]
+    constructor
     · intro y hy
       rcases hsurj y with ⟨x, hx⟩
       rw [← hx] at hy
@@ -47,3 +49,6 @@ Statement preimage_injective {f : A → B} : Injective (preimage f) ↔ Surjecti
       rw [← heq] at this
       rw [← hx]
       apply mem_preimage.mp this
+
+NewTheorem Set.preimage_empty
+NewHiddenTactic change

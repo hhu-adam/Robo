@@ -16,7 +16,7 @@ Und dabei ist das weit über seiner Altersstufe!
 "
 
 Statement
-  (p : ℕ) (h₂ : 2 ≤ p): Nat.Prime p ↔ ∀ (a b : ℕ), p ∣ a * b → p ∣ a ∨ p ∣ b := by
+  (dp : ℕ) (h₂ : 2 ≤ p): Nat.Prime p ↔ ∀ (a b : ℕ), p ∣ a * b → p ∣ a ∨ p ∣ b := by
   Hint "**Du**: Naja, mal schauen wie weit man mit `intro` und `constructor` kommt…"
   constructor
   intro h a b

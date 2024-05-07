@@ -24,7 +24,7 @@ open Function List Sym Quotient
 #check Quot.surjective_lift
 
 
-Statement Quotinet.surjective_lift {A B : Type*} [s : Setoid A] {f : A → B}
+Statement Quotinet.surjective_lift {A B : Type*} (s : Setoid A) {f : A → B}
     (f_resp_rel : ∀ a₁ a₂, a₁ ≈ a₂ → f a₁ = f a₂) :
     Function.Surjective (Quotient.lift f f_resp_rel) ↔ Function.Surjective f := by
   constructor
@@ -32,6 +32,7 @@ Statement Quotinet.surjective_lift {A B : Type*} [s : Setoid A] {f : A → B}
     rw [← Quotient.lift_comp_mk f]
     apply h.comp
     apply surjective_quotient_mk'
+    done
   · intro h
     apply Surjective.of_comp (g:= Quotient.mk s)
     simp [h]

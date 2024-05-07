@@ -114,7 +114,7 @@ TacticDoc congr
 
 
 NewTheorem Matrix.one_apply Finset.sum_subset Finset.subset_univ
--- NewTactic ext congr
--- NewHiddenTactic funext
+NewTactic ext congr -- TODO
+NewHiddenTactic funext -- TODO
 
 TheoremTab "Matrix"

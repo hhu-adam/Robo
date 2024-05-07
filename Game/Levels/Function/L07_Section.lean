@@ -37,6 +37,7 @@ Statement rightInverse_iff_comp {A B : Type} {f : A -> B} {g : B -> A} :
     apply h'
 
 NewTactic ext congr
+NewHiddenTactic funext -- TODO: mention funext in the docs for ext
 NewDefinition Function.RightInverse
 NewTheorem Function.rightInverse_iff_comp congr_arg
 TheoremTab "Function"

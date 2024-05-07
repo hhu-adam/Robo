@@ -20,7 +20,6 @@ import Game.Levels.SetTheory.L19_Subtype
 import Game.Levels.SetTheory.L20_UnionInter
 import Game.Levels.SetTheory.L21_Summary
 
-
 World "SetTheory"
 Title "Synolos"
 -- griechisch Menge = Synolon
@@ -48,7 +47,7 @@ vorstellt.
 "
 
 World "SetTheory2"
-Title "Mehr Mengenlehre"
+Title "[WIP] Mengenlehre 2"
 
 Image "images/WIP.png"
 
