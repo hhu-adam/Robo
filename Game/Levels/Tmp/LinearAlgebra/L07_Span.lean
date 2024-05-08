@@ -36,3 +36,26 @@ Statement {V K : Type _} [Field K] [AddCommMonoid V] [Module K V] (M : Set V) {x
   apply smul_mem
   apply mem_span_of_mem
   assumption
+
+
+#check SetLike
+
+
+
+section
+variable (R M : Type*) [Semiring R] [AddCommMonoid M] [Module R M] (N : Submodule R M)
+
+#synth SetLike (Submodule R M) (M)
+
+#check (N : Set M)
+
+end
+
+
+example {a b : ℝ} (M : Set (Fin 2 → ℝ))
+    (h₁ : ![a,b] ∈ M) (h₂ : ![a+b, a-b] ∈ M) (hM : span ℝ M ⊆ (Fin 2 → ℝ) ) :
+      a = 0 := by
+  sorry
+
+
+#check Basis.mem_span
