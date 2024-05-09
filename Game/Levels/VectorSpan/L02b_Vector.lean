@@ -16,8 +16,11 @@ open Real
 #check Matrix.zero_empty
 
 example {x : ℝ} (h : ![x] = 0) : x = 0 := by
-  -- simp_all only [Matrix.cons_eq_zero_iff,
-  --   Matrix.zero_empty,
-  --   and_true]
-  apply Matrix.cons_eq_zero_iff.mp at h
-  exact h.1
+  simp at h
+
+
+  -- -- simp_all only [Matrix.cons_eq_zero_iff,
+  -- --   Matrix.zero_empty,
+  -- --   and_true]
+  -- apply Matrix.cons_eq_zero_iff.mp at h
+  -- exact h.1
