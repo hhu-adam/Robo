@@ -11,7 +11,7 @@ Introduction
 "
 Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür
 zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere
-ein `g` eingraviert. dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
+ein `g` eingraviert. Dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
 "
 
 open Set Function
@@ -37,7 +37,7 @@ Statement :
     **Robo**: Jetzt kannst du nämlich eine Fallunterscheidung
     machen, `by_cases h : 0 ≤ {x}`.
 
-    **Du**: Damit krieg ich die Fälle `0 ≤ {x}` und `{x} < 0`?
+    **Du**: Damit krieg ich die Fälle `0 ≤ {x}` und `0 > {x}`?
 
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
     und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 > {x}` wechseln."

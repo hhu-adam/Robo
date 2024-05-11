@@ -9,7 +9,7 @@ Title "Kontraposition"
 Introduction
 "
 **Benedictus**: Ich habe noch eine schöne Frage zu ungeraden Quadraten für Euch.
-Aber vorher beweist Ihr besser noch diese Äquivalenz hier. Ich gaube, die hat sogar
+Aber vorher beweist Ihr besser noch diese Äquivalenz hier. Ich glaube, die hat sogar
 bei Euch einen Namen: *Kontrapositionsäquivalenz*, oder so etwas. Auf Leansch nennen wir
 die Äquivalenz einfach `not_imp_not`. Ist doch viel einleuchtender, oder?
 "
