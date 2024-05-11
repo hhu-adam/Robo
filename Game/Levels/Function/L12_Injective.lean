@@ -12,7 +12,7 @@ Ihr läuft durch verschiedenste Gänge der Bibliothek, allesamt mit Büchern ent
 **Du**: Wenn wir wüssten, dass nur ein möglicher Weg hierhin führt, könnten wir
 ausschliessen, dass wir im Kreis laufen.
 
-Plötzlich begegnet ihr einem älteren Wesen mit Fakel. Auf die Frage antwortet es mit folgendem:
+Plötzlich begegnet ihr einem älteren Wesen mit Fackel. Auf die Frage antwortet es mit folgendem:
 "
 open Set Function
 
