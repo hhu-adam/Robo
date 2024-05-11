@@ -11,7 +11,7 @@ Introduction
 "
 Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür
 zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere
-ein `g` eingraviert. dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
+ein `g` eingraviert. Dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
 "
 
 open Set Function
