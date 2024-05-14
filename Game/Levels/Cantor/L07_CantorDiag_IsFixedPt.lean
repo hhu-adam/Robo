@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L06_idempotent
 
 World "Cantor"
-Level 7
+Level 8
 
 Title "Diagonalargument"
 

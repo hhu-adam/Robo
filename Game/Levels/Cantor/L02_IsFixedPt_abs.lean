@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L01_CantorPowerset
 
 World "Cantor"
-Level 2
+Level 3
 
 Title "Fixpunkte"
 

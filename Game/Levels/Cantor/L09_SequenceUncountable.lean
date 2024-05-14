@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L08_CantorPowerset
 
 World "Cantor"
-Level 10
+Level 11
 
 Title "Cantor"
 

@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L05_IsFixedPt_odd
 
 World "Cantor"
-Level 6
+Level 7
 
 Title "Idempotent"
 

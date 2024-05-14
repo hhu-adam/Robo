@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L03_fixedPoints_neg
 
 World "Cantor"
-Level 4
+Level 5
 
 Title "Keine Fixpunkte"
 

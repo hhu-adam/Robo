@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
 
 World "Cantor"
-Level 8
+Level 9
 
 Title "Diagonalargument"
 

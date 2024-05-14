@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L02_IsFixedPt_abs
 
 World "Cantor"
-Level 3
+Level 4
 
 Title "Fixpunkt"
 

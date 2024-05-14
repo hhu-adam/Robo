@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue May 14 11:22:48 2024\n"
+"POT-Creation-Date: Tue May 14 13:40:09 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -5003,19 +5003,43 @@ msgid "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslands
 " vereinzelten Bäumen hindurch. Ihr beratet kurz und beschließt, den Spuren zu folgen."
 msgstr ""
 
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "Cantor's Diagonalargument"
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → Set A` gibt? Faszinierend\n"
+"oder?\n"
+"\n"
+"**Cantor**: Wie das geht? Hier, ist eine kleine Hilfe:"
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "**Du**: Ich denke eine Fallunterscheidung auf `«{a}» ∈ «{f}» «{a}»` könnte sinnvoll sein."
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "**Robo**: Das wäre `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`."
+msgstr ""
+
+#: Game.Levels.Cantor.L00_CantorPowerset
+msgid "**Robo**: Mach mal mit `suffices : «{a}» ∉ «{f}» «{a}»` weiter!"
+msgstr ""
+
 #: Game.Levels.Cantor.L01_CantorPowerset
 msgid "Cantor's Diagonalargument"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → Set A` gibt? Faszinierend\n"
-"oder? Wie das geht? Nehmt doch einmal die Menge `C := { a | a ∉ f a }`. Wenn `f` surjektiv wäre,\n"
-"welches `a : A` würde diese Menge als Bildpunkt haben? Hier, ich gebe euch einfach `C` auch\n"
-"schon mit!\n"
-"\n"
-"[Tipp: `unfold_let` ist wie `unfold` und wird zukünftig in Lean zusammengeführt.\n"
-"Brauche `unfold_let C` wenn eine lokale Definition in deinen Annahmen ist. Alternativ\n"
-"funktionert auch `simp [C]`.]"
+msgid "**Cantor**: Also und jetzt die eigentliche Aussage!"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
@@ -5031,24 +5055,16 @@ msgid "**Du**: Also ein Widerspruchsbeweis?"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Und jetzt existiert durch Surjektivität ein Urbild von `«{C}»`.\n"
+msgid "**Robo**: als Erinnerung: Wenn du so etwas wie `?f` siehst, bedeutet das, dass\n"
+"noch nicht spezifiziert wurde welche Funktion benützt wird. Du hättest besser\n"
+"`apply cantor_helper f` geschrieben. Aber du kannst auch einfach mal weitermachen, als ob `?f`\n"
+"schon `«{f}»` wäre, und vermutlich wird Lean das irgendwann automatisch einfüllen."
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Cantor**: Wendet doch gleich das Resultat von vorhin an!\n"
 "\n"
-"**Cantor**: Genau! Und dann überlegt euch, ob `b ∈ f b` ist oder nicht für\n"
-"dieses Urbild `b`!"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Robo**: Das machen wir glaubs am besten mit `by_cases`."
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Jetzt will ich ja auch noch `«{b}» ∉ «{f}» «{b}»` zeigen für den Widerspruch.\n"
-"\n"
-"**Robo**: Dann sag doch `suffices hn : «{b}» ∉ «{f}» «{b}»`, erinnerst du dich?"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Robo**: Und noch den Fall wenn `«{b}» ∉ «{f}» «{b}»`"
+"**Robo**: Ich hab das als `cantor_helper f` gespeichert."
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_abs

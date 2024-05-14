@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.Levels.Cantor.L07_CantorDiag
 
 World "Cantor"
-Level 9
+Level 10
 
 Title "Diagonalargument"
 
@@ -43,27 +43,5 @@ Statement cantor_power : ∀ (f : A → Set A), ¬ Surjective f := by
     contradiction
   apply not_isFixedPt_not -- Lvl 4
   apply h
-
-
--- the following implies `cantor_power` but not vice versa.
--- maybe add this before L01_CantorPowerSet
-example (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
-  push_neg
-  intro a
-  intro h
-  by_cases a ∈ f a
-  · suffices : a ∉ f a
-    · contradiction
-    rw [h] at h_1
-    rw [mem_setOf] at h_1
-    assumption
-  sorry
-
-#check Set.preimage
-
-example (f : A → Set A) : f ⁻¹' { { a | a ∉ f a } } = ∅ := by
- sorry
-
-
 
 TheoremTab "Function"
