@@ -61,7 +61,7 @@ Statement : Module ℚ ℝ := by
   refine \{ ?..! }
   ```
   "
-  refine { ?..! }
+  refine' { .. }
   · Hint "**Robo**: Hier musst du die Skalarmultiplikation angeben.
     Benutze dafür `exact fun (a : ℚ) (r : ℝ) => ↑a * r`."
     exact fun (a : ℚ) (r : ℝ) => ↑a * r

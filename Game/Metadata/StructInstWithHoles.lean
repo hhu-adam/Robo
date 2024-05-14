@@ -19,7 +19,7 @@ set_option autoImplicit true
   i.e. holes of "variable length", which are represented via via the syntax `?..`, `?..!`, etc.,
   e.g. `{ x := 0, ?.. }`.
   This serves to port the functionality of mathlib3's `refine_struct { .. }`, but via `refine`
-  (e.g. `refine { ?.. }`).
+  (e.g. `refine' { .. }`).
   Lean currently already supports one form of variadic hole in structure instances, namely `..`,
   which fills all unspecified fields with natural metavariables and which is frequently used in
   pattern matching.

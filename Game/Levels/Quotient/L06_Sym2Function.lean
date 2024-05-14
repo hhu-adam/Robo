@@ -31,9 +31,9 @@ open Function List Sym
 attribute [local instance] Sym2.Rel.setoid
 
 Statement {A B : Type*} : (Sym2 A → B) ≃ { f : A → A → B // ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } := by
-  refine {?..!}
+  refine' { .. }
   · intro f
-    refine {?..!}
+    refine' { .. }
     · exact fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
     · intro a₁ a₂
       dsimp
