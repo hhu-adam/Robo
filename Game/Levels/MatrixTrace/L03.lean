@@ -22,5 +22,4 @@ Statement Matrix.E.mul_same {n : ℕ} (i j k : Fin n) : E i j * E j k = E i k  :
   unfold E
   simp
 
-NewTheorem Matrix.E.mul_same
 TheoremTab "Matrix"
