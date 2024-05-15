@@ -37,7 +37,7 @@ open BigOperators
 
 Statement (m : ℕ) : (∑ i : Fin (m + 1), (i : ℕ)^3) = (∑ i : Fin (m + 1), (i : ℕ))^2 := by
   Hint "**Du**: Gulp. Naja das wird schon klappen. Also man fängt wieder mit Induktion an …"
-  induction m
+  induction m with n n_ih
   Hint "**Du**: Also den Induktionsanfang kann man einfach zeigen …"
   simp
   Hint (hidden := true) "**Robo**: Und jetzt wieder `rw [sum_univ_castSucc]` und `simp`, um vorwärts zu
