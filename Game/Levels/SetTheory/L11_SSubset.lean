@@ -10,7 +10,7 @@ Introduction
 "
 Die Dame geht mit ihrem Einkauf davon.
 
-**Verkäufer**: Wisst ihr, seit einer weile redet sie eigentlich immer über den Unterschied
+**Verkäufer**: Wisst ihr, seit einer Weile redet sie eigentlich immer über den Unterschied
 von `⊂` und `⊆`, aber heute nicht. Könnt ihr mir schon mal helfen, damit ich morgen
 gewappnet bin?
 "
