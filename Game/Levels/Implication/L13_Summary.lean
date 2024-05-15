@@ -40,7 +40,10 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 
 set_option tactic.hygienic false
 
-Statement imp_iff_not_or (A B : Prop) : (A → B) ↔ ¬ A ∨ B := by
+/---/
+TheoremDoc imp_iff_not_or as "imp_iff_not_or" in "Logic"
+
+Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
   Hint "**Du** *(flüsternd)*: Ist das nicht die Definition von `→`?
 
   **Robo** *(flüsternd)*: Könnte man so sehen. Aber auf Leansch ist das bloß eine Äquivalenz."
