@@ -30,7 +30,7 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
     Hint "**Robo**: So kannst Du natürlich auch anfangen."
     apply h.mp
     assumption
-  apply (h.mp) at hA
+  apply h.mp at hA
   apply g at hA
   assumption
 
