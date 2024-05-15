@@ -26,6 +26,9 @@ open Nat Matrix BigOperators StdBasisMatrix
 /---/
 TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 
+-- set_option trace.Meta.synthInstance true in
+-- set_option pp.explicit true in
+
 Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     ∀ i, f (E i i) = 1 := by
@@ -47,9 +50,16 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   trans f (∑ x : Fin n.succ, E i i)
   · Hint "**Du**: Genau, dann müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.
 
-    **Robo**: `simp` kann das sicher komplett vereinfachen."
-    unfold E
-    simp
+    **Robo**: `simp [E]` kann das sicher komplett vereinfachen." -- TODO: Better hint
+    Branch
+      simp
+      rw [← smul_eq_mul]
+      rw [← LinearMap.map_smul]
+      rw [←smul_eq_mul]
+      unfold E
+      simp
+      --rfl -- Doesn't work because there are two different smuls.
+    simp? [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
   · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
     Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
     `{f} (∑ x, E x x)` zeigen."
