@@ -49,4 +49,5 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   **Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
   apply matrix_eq_sum_std_basis
 
+NewTheorem Matrix.matrix_eq_sum_std_basis
 TheoremTab "Matrix"
