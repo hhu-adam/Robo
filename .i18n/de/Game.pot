@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue May 14 13:40:09 2024\n"
+"POT-Creation-Date: Wed May 15 12:52:10 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4759,10 +4759,10 @@ msgid "Matrix"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhe. \n"
+msgid "Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhe.\n"
 "Robo zeigt auf einen Punkt in der Ferne.\n"
 "\n"
-"**Robo**: Schau mal, da liegt es! \n"
+"**Robo**: Schau mal, da liegt es!\n"
 "\n"
 "**Du**: Und was *ist* das???\n"
 "\n"
@@ -4779,10 +4779,10 @@ msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
 msgid "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber\n"
-"beide Seiten mit `(n + 1)` multiplizieren.\n"
+"beide Seiten mit `(«{n}» + 1)` multiplizieren.\n"
 "\n"
 "**Robo**: Da gibt es verschiedene Möglichkeiten.  Zum Beispiel:\n"
-"`apply nat_mul_inj' (n := n.succ)`!"
+"`apply nat_mul_inj' (n := «{n}».succ)`!"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
@@ -4809,7 +4809,7 @@ msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
 msgid "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt\n"
-"`∑ i, f (E i i)` zeigen."
+"`«{f}» (∑ x, E x x)` zeigen."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis

@@ -7,10 +7,10 @@ Title "Matrix"
 
 Introduction
 "
-Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhe. 
+Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhe.
 Robo zeigt auf einen Punkt in der Ferne.
 
-**Robo**: Schau mal, da liegt es! 
+**Robo**: Schau mal, da liegt es!
 
 **Du**: Und was *ist* das???
 
@@ -32,10 +32,10 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   intro i
   -- apply Nat.mul_left_cancel
   Hint "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber
-  beide Seiten mit `(n + 1)` multiplizieren.
+  beide Seiten mit `({n} + 1)` multiplizieren.
 
   **Robo**: Da gibt es verschiedene Möglichkeiten.  Zum Beispiel:
-   `apply nat_mul_inj' (n := n.succ)`!" -- TODO: introduce earlier.
+    `apply nat_mul_inj' (n := {n}.succ)`!" -- TODO: introduce earlier.
   apply nat_mul_inj' (n := n.succ) -- TODO: is there a better way to write this?
   Hint "(*Stimme von oben*) : Der nächste Schritt ist `rw [←smul_eq_mul, ← LinearMap.map_smul]`,
   aber das kannst du nicht wissen." -- TODO: introduce earlier.
@@ -52,8 +52,8 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
     simp
   · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
     Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
-    `∑ i, f (E i i)` zeigen."
-    trans f (∑ i, E i i)
+    `{f} (∑ x, E x x)` zeigen."
+    trans f (∑ x, E x x)
     · Branch
         congr
         Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
