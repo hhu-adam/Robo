@@ -9,7 +9,7 @@ Title "Konkrete Mengen"
 
 Introduction
 "
-**Du**: Das ist ja alles schön und gut, aber ich weiss immernoch nicht, wie
+**Du**: Das ist ja alles schön und gut, aber ich weiß immer noch nicht, wie
 ich eine ganz simple Menge wie `{4, 9}` notiere…
 
 **Verkäufer**: Genau so! Aber diese endlichen Mengen sind alles iterative

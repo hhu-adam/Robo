@@ -17,7 +17,7 @@ open Set
 /--  -/
 Statement (A : Set ℕ) (h : Aᶜ ⊆ A) : A = univ := by
   Hint "**Du**: Gleichheit von Mengen. Das ist sicher wieder ein Fall für beide
-  Inkusionen.
+  Inklusionen.
 
   **Robo**: Das war `Subset.antisymm_iff`.
 
