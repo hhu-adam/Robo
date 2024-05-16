@@ -11,8 +11,8 @@ Title ""
 Introduction
 "
 Um anzunehmen, dass zwei Mengen disjunkt sind, schreibt man
-`Disjoint S T`, welches dadurch definiert ist das die
-einzige gemeinsame Teilmenge, die leere Menge ist,
+`Disjoint S T`, welches dadurch definiert ist, dass die
+einzige gemeinsame Teilmenge die leere Menge ist,
 also etwa `A ⊆ S → A ⊆ T → A ⊆ ∅`.
 
 Beachte, dass `Disjoint` in Lean genereller definiert ist als
