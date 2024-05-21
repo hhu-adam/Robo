@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function2"
-Level 25
+Level 26
 
 Title "Curry"
 

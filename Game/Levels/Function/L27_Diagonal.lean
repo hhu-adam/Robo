@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function2"
-Level 26
+Level 27
 
 Title "Diagonal"
 

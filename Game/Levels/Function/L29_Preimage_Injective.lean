@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function2"
-Level 28
+Level 29
 
 Title "Preimage of surjective is injective"
 

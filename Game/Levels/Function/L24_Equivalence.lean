@@ -1,9 +1,8 @@
 import Game.Metadata
 
 
-
 World "Function2"
-Level 23
+Level 24
 
 Title "Triple"
 
