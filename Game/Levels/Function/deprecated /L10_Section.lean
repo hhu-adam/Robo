@@ -1,7 +1,6 @@
 import Game.Metadata
 
 World "Function2"
-Level 10
 
 Title "Range of Surjection"
 
@@ -25,12 +24,19 @@ a closely related statement: that a function with nonempty fibers has a right in
 open Function
 
 Statement (nonempty_fibre : ∀ b : B, Set.Nonempty (f ⁻¹' { b })) : HasRightInverse f := by
+  Branch
+      Hint "
+      ...
+      "
+      use fun b ↦ (nonempty_fibre b).choose
+      intro b
+      simp
+      Hint "
+      ...
+      "
+      exact (nonempty_fibre b).choose_spec
   Hint "
       Since we know that for each `b : B`, the fiber is nonempty, we can choose some element of that fibre using the axiom of choice.
       The tactic `choose g hg using nonempty_fibre` creates a function which chooses an `a : A` and `hg` witnesses that `a` is in the fiber of `b`.
-      "
-  choose g hg using nonempty_fibre
-  use g
-  assumption
 
 NewTactic choose

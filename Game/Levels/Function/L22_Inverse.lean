@@ -16,108 +16,76 @@ aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst.
 
 namespace Function
 
+-- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
+  -- some Mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
+
 --TODO: `unfolding` at random places breaks all the hints...
+
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
-  -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
-  -- some Mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
-  Hint "**Du**: Nah da sagt mir so manches nichts, aber ich kann ja mal mit dem `↔` anfangen,
-  das kenn ich ja schon."
   constructor
   · intro h
     Hint "
-      **Robo**: Tipp. Teil doch `Bijective` mit `rcases {h} with ⟨hI, hS⟩` in
+      **Robo**: Tipp. Teil doch `Bijective` mit `obtain ⟨hinj, hsurj⟩  := {h}` in
       `Injective` und `Surjective` auf!"
-    rcases h with ⟨hI, hS⟩
+    obtain ⟨hinj, hsurj⟩  := h
     Hint "
       **Du**: Ja was ist eigentlich die Inverse von `{f}`…?
 
       **Robo**: Hast du eine Idee?
 
-      **Du**: Also von der Surjektivität weiss ich, dass für alle `y` ein Urbild existiert
-      und mit der Injektivität könnte ich dann zeigen, dass dieses eindeutig ist.
+      **Du**: Also von der Surjektivität weiss ich, dass für alle `y : B` ein Urbild `x : A` existiert.
 
-      **Robo**: Also Schritt für Schritt: Mit `fun y ↦ ({hS} y).choose ` kannst du eine Funktion
-      definieren, die `y` irgendein Urbild zuweist.
-
-      **Du**: Die ist aber nicht wohldefiniert, oder?
-
-      **Robo**: In der Mathe nicht. In Lean geht das ganz gut, aber es ist dann unmöglich etwas
-      darüber zu beweisen, wenn es mehrere Möglichkeiten gäbe."
-    Branch
-      let g := fun x => (hS x).choose
-      use g
-      constructor
-      · Hint "**Robo**: fang mal mit `intro` an."
-        intro x
-        -- Hint "**Du**: kompliziert.
-
-        -- **Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
-        -- simp
-        -- now we're back on the path with no `g` in the goal
-        apply hI
-        apply Exists.choose_spec (hS (f x))
-      · Hint "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
-        intro x
-        -- Hint "**Du**: Kann ich das vereinfachen?"
-        -- simp
-        -- -- back on the path witout `g`
-        apply Exists.choose_spec (hS x)
-    use fun x => (hS x).choose
+      **Robo**: Mit `choose g hg using {hsurj} ` kannst du eine Funktion
+      definieren, die `y` irgendein Urbild zuweist."
+    choose g hg using hsurj
+    Hint "
+      something about the fact that ` ∀ (b : B), f (g b) = b` implies {g} is a right inverse of {f}. We use this in the next step to prove
+      {g} is also a left inverse of {f}.
+    "
+    have hR : RightInverse g f := by
+        exact hg
+    use g
     constructor
-    · Hint "**Robo**: fang mal mit `intro` an."
-      intro x
-      Hint "**Du**: kompliziert.
-
-      **Robo**: Aber mit `simp` kannst du es ja etwas vereinfachen."
-      simp
-      Hint "**Du**: Das kann ich jetzt nicht zeigen solange ich nicht weiss, dass nur genau ein
-      Urbild besteht.
-
-      **Robo**: Dann wende doch mit `apply {hI}` die Injektivität an!"
-      apply hI
-      Hint "**Robo**: Dies ist jetzt eine etwas tautologische Aussage. In Lean ist das
-      `Exists.choose_spec`. Konkret `apply Exists.choose_spec ({hS} (f x))`."
-      apply Exists.choose_spec (hS (f x))
-    · Hint "**Robo**: Gut! Auf zum Rechtsinversen! Fang auch hier wieder mit `intro` an."
-      intro x
-      Hint "**Du**: Kann ich das vereinfachen?"
-      simp
+    · Hint "
+      **Robo**: Mit `dsimp` kannst du es ja etwas vereinfachen."
+      dsimp [LeftInverse]
       Hint "
-        **Du**: Also wieder `Exists.choose_spec`?
-
-        **Robo**: Genau! Diesmal mit dem Argument `({hS} x)`."
-      apply Exists.choose_spec (hS x)
-  · Hint "**Robo**: Die eine Richtung ist gezeigt. Jetzt auf zur Rückrichtung!"
-    intro h
+      **Robo**: fang mal mit `intro` an."
+      intro x
+      have : f (g (f x)) = f x  := by rw [hR]
+      Branch
+        apply hinj at this
+        assumption
+      apply hinj
+      assumption
+    · exact hR
+  · intro h
+    --obtain ⟨g, hL, hR⟩ := h
     Hint "**Robo**: Zerlege `{h}` noch soweit du kannst!"
-    rcases h with ⟨g, h⟩
+    obtain ⟨g, h⟩ := h
     Hint "**Robo**: Das UND auch noch!"
-    rcases h with ⟨hL, hR⟩
-    Hint "**Robo**: Das `Bijective` kannst du auch aufteilen."
+    obtain ⟨hL, hR⟩  := h
     constructor
-    · Hint "**Robo**: Injektivität ist der schwierige Teil. Fang mal an mit `intro`."
-      intro a b hab
-      Hint "
-        **Robo**: Im nächsten Schritt must du `LeftInverse` brauchen um das Goal
-        zu `g (f a) = g (f b)` zu wechseln: schau mal was du mit
-        `have w := {hL} {a}` kriegst und ob du das mit `rw` benutzen kannst."
-      have w := hL a
-      rw [← w, ← hL b]
+    Hint "
+      **Robo**: Injektivität ist der schwierige Teil. Fang mal an mit `intro`."
+    · intro a b eq
+      rw [← hL a, ← hL b]
+      Branch
+        congr
       Hint (hidden := true) "
         **Du**: Wenn die Argumente `f a = f b` gleich sind, ist dann auch `g (f a) = g (f b)`,
         wie sag ich das?
 
       **Robo**: Also wenn du `f a = f b` hast, kannst du ja auch einfach damit umschreiben."
-      rw [hab]
-    · Hint "Die Surjektivität sollte einfacher sein."
-      intro x
-      Hint (hidden := true) "**Robo**: Psst, mit `RightInverse g f` weisst du, dass `f (g x) = x`.
-      Hilft das rauszufinden was du hier brauchen musst?"
-      use g x
-      Hint (hidden := true) "**Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`
-      benutzen."
+      rw [eq]
+    · intro b
+      use g b
+      Hint (hidden := true) "
+        **Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`
+        benutzen."
       rw [hR]
+
 
 NewDefinition LeftInverse RightInverse
 NewTheorem Exists.choose Exists.choose_spec
