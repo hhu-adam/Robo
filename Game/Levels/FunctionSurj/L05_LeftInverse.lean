@@ -19,7 +19,7 @@ open Function
 Statement {A B : Type} {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ LeftInverse f g :=
   by
-  Hint "
+  Hint (hidden := true) "
     Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition.
   "
   Branch
