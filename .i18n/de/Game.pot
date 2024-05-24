@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed May 15 12:52:10 2024\n"
+"POT-Creation-Date: Fri May 24 10:48:09 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1192,6 +1192,10 @@ msgid "**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das let
 "| 12  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.              |\n"
 "| 12ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist. |\n"
 "| 13  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                            |"
+msgstr ""
+
+#: Game.Levels.Implication.L13_Summary
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implication.L13_Summary
@@ -3838,7 +3842,7 @@ msgstr ""
 
 #: Game.Levels.SetTheory.L09_Complement
 msgid "**Du**: Gleichheit von Mengen. Das ist sicher wieder ein Fall für beide\n"
-"Inkusionen.\n"
+"Inklusionen.\n"
 "\n"
 "**Robo**: Das war `Subset.antisymm_iff`."
 msgstr ""
@@ -3883,7 +3887,7 @@ msgstr ""
 #: Game.Levels.SetTheory.L11_SSubset
 msgid "Die Dame geht mit ihrem Einkauf davon.\n"
 "\n"
-"**Verkäufer**: Wisst ihr, seit einer weile redet sie eigentlich immer über den Unterschied\n"
+"**Verkäufer**: Wisst ihr, seit einer Weile redet sie eigentlich immer über den Unterschied\n"
 "von `⊂` und `⊆`, aber heute nicht. Könnt ihr mir schon mal helfen, damit ich morgen\n"
 "gewappnet bin?"
 msgstr ""
@@ -3897,7 +3901,7 @@ msgid "Konkrete Mengen"
 msgstr ""
 
 #: Game.Levels.SetTheory.L12_Insert
-msgid "**Du**: Das ist ja alles schön und gut, aber ich weiss immernoch nicht, wie\n"
+msgid "**Du**: Das ist ja alles schön und gut, aber ich weiß immer noch nicht, wie\n"
 "ich eine ganz simple Menge wie `{4, 9}` notiere…\n"
 "\n"
 "**Verkäufer**: Genau so! Aber diese endlichen Mengen sind alles iterative\n"
@@ -4019,8 +4023,8 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L16_Disjoint
-msgid "Um anzunehmen, dass zwei Mengen disjunkt sind schreibt man\n"
-"`Disjoint S T`, welches dadurch definiert ist das die\n"
+msgid "Um anzunehmen, dass zwei Mengen disjunkt sind, schreibt man\n"
+"`Disjoint S T`, welches dadurch definiert ist, dass die\n"
 "einzige gemeinsame Teilmenge die leere Menge ist,\n"
 "also etwa `A ⊆ S → A ⊆ T → A ⊆ ∅`.\n"
 "\n"
@@ -4066,7 +4070,7 @@ msgstr ""
 
 #: Game.Levels.SetTheory.L18_SetOf
 msgid "Zu der Teilmengen-Schreibweise (`SetOf`) gibt es noch zwei spezielle\n"
-"Syntax, die abundzu auftreten.\n"
+"Syntax, die ab und zu auftreten.\n"
 "\n"
 "Der erste ist `{ x ∈ S | 0 ≤ x}` ( für z.B `(S : Set ℤ)`),\n"
 "welcher eine Abkürzung für `{ x : ℤ | x ∈ S ∧ 0 ≤ x}` ist.\n"
@@ -4800,7 +4804,7 @@ msgstr ""
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
 msgid "**Du**: Genau, dann müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.\n"
 "\n"
-"**Robo**: `simp` kann das sicher komplett vereinfachen."
+"**Robo**: `simp [E]` kann das sicher komplett vereinfachen."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
