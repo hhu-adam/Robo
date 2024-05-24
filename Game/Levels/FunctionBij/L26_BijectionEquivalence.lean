@@ -21,5 +21,3 @@ Statement Equiv.ofBijective (f : A → B) (h : Bijective f) : A ≃ B := by
   · exact g
   · exact hg.left
   · exact hg.right
-
-NewTheorem Equiv.ofBijective
