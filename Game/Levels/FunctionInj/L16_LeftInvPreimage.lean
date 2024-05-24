@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function2"
-Level 23
+Level 16
 
 Title "Preimage of the inverse"
 

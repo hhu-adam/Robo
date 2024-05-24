@@ -1,0 +1,27 @@
+import Game.Metadata
+
+
+World "Function3"
+Level 26
+
+Title "Bijection of Equivalence"
+
+Introduction
+"
+In this level you show that there every bijection gives rise to an equivalence.
+"
+
+open Function
+
+#check Equiv.ofBijective
+
+Statement Equiv.ofBijective (f : A → B) (h : Bijective f) : A ≃ B := by
+  have := bijective_iff_has_inverse.mp h
+  choose g hg using this
+  fconstructor
+  · exact f
+  · exact g
+  · exact hg.left
+  · exact hg.right
+
+NewTheorem Function.RightInverse.surjective Equiv.injective

@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Function2"
+World "Function3"
 Level 24
 
 Title "Triple"
@@ -21,7 +21,8 @@ In this level you construct an equivalence between functions from `Fin 3` to `A`
 open Function
 
 Statement finThreeArrowEquiv : (Fin 3 → A) ≃ A × A × A := by
-  refine' { .. }
+  --refine' { .. }
+  fconstructor
   · exact fun f => (f 0, f 1, f 2)
   · exact fun t => fun
     | 0 => t.1
@@ -37,5 +38,5 @@ Statement finThreeArrowEquiv : (Fin 3 → A) ≃ A × A × A := by
   · intro t
     simp
 
-NewTactic refine exact fin_cases
+NewTactic refine fconstructor exact fin_cases
 -- TODO: fin_cases should be in set-theory

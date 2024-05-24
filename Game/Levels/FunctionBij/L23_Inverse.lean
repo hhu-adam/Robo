@@ -1,7 +1,8 @@
 import Game.Metadata
 
-World "Function2"
-Level 22
+
+World "Function3"
+Level 23
 
 Title "Inverse"
 Introduction
@@ -28,7 +29,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Hint "
       **Robo**: Tipp. Teil doch `Bijective` mit `obtain ⟨hinj, hsurj⟩  := {h}` in
       `Injective` und `Surjective` auf!"
-    obtain ⟨hinj, hsurj⟩  := h
+    obtain ⟨finj, fsurj⟩  := h
     Hint "
       **Du**: Ja was ist eigentlich die Inverse von `{f}`…?
 
@@ -36,9 +37,9 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
 
       **Du**: Also von der Surjektivität weiss ich, dass für alle `y : B` ein Urbild `x : A` existiert.
 
-      **Robo**: Mit `choose g hg using {hsurj} ` kannst du eine Funktion
+      **Robo**: Mit `choose g hg using {fsurj} ` kannst du eine Funktion
       definieren, die `y` irgendein Urbild zuweist."
-    choose g hg using hsurj
+    choose g hg using fsurj
     Hint "
       something about the fact that ` ∀ (b : B), f (g b) = b` implies {g} is a right inverse of {f}. We use this in the next step to prove
       {g} is also a left inverse of {f}.
@@ -47,7 +48,11 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
         exact hg
     use g
     constructor
-    · Hint "
+    · Branch
+        dsimp [Function.RightInverse]
+        apply rightInverse_of_injective_of_leftInverse finj
+        assumption
+      Hint "
       **Robo**: Mit `dsimp` kannst du es ja etwas vereinfachen."
       dsimp [LeftInverse]
       Hint "
@@ -55,9 +60,9 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       intro x
       have : f (g (f x)) = f x  := by rw [hR]
       Branch
-        apply hinj at this
+        apply finj at this
         assumption
-      apply hinj
+      apply finj
       assumption
     · exact hR
   · intro h
