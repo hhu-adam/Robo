@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 22
+Level 11
 
 Title "Injections with nonempty domain have retract."
 

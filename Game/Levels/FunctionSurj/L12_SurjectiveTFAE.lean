@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionInj"
+World "FunctionSurj"
 Level 12
 
 Title "Every surjection has a right inverse"

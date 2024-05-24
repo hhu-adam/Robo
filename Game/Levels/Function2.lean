@@ -1,17 +1,17 @@
-import Game.Levels.FunctionInj.L12_Injective
-import Game.Levels.FunctionInj.L13_Injective
-import Game.Levels.FunctionInj.L14_InjectiveRange
-import Game.Levels.FunctionInj.L15_Injective
-import Game.Levels.FunctionInj.L16_LeftInvPreimage
-import Game.Levels.FunctionInj.L17_Injective
-import Game.Levels.FunctionInj.L18_SuccHasLeftInv
-import Game.Levels.FunctionInj.L19_Extend
-import Game.Levels.FunctionInj.L20_InjOfHasLeftInv
-import Game.Levels.FunctionInj.L21_RightInvOfLeftInv
-import Game.Levels.FunctionInj.L22_InjHasLeftInv
+import Game.Levels.FunctionInj.L01_Injective
+import Game.Levels.FunctionInj.L02_Injective
+import Game.Levels.FunctionInj.L03_InjectiveRange
+import Game.Levels.FunctionInj.L04_Injective
+import Game.Levels.FunctionInj.L05_Injective
+import Game.Levels.FunctionInj.L06_SuccHasLeftInv
+import Game.Levels.FunctionInj.L07_Extend
+import Game.Levels.FunctionInj.L08_LeftInvPreimage
+import Game.Levels.FunctionInj.L09_InjOfHasLeftInv
+import Game.Levels.FunctionInj.L10_RightInvOfLeftInv
+import Game.Levels.FunctionInj.L11_InjHasLeftInv
 
 
-World "Function2"
+World "FunctionInj"
 Title "[WIP] Funktionen"
 
 Image "images/Librarian.png"

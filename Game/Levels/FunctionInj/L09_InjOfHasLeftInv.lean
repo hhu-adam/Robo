@@ -2,10 +2,9 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 20
+Level 9
 
 Title "Functions with left inverses are injective."
-
 
 Introduction
 "

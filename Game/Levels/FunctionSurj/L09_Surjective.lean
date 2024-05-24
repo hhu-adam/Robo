@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionInj"
+World "FunctionSurj"
 Level 9
 
 Title "A function which semiconjugates an endofunction to the

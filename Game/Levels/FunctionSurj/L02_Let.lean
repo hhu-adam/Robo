@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionInj"
+World "FunctionSurj"
 Level 2
 
 Title "let"

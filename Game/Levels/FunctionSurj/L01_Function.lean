@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionInj"
+World "FunctionSurj"
 Level 1
 
 Title "Anonyme Funktionen"

@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 13
+Level 2
 
 Title "Nicht Injektiv"
 

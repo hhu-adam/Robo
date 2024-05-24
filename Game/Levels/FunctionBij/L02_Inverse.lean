@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "Function3"
-Level 23
+World "FunctionBij"
+Level 2
 
 Title "Inverse"
 Introduction
@@ -93,7 +93,6 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
 
 
 NewDefinition LeftInverse RightInverse
-NewTheorem Exists.choose Exists.choose_spec
 DisabledTheorem Function.bijective_iff_has_inverse
 TheoremTab "Logic"
 

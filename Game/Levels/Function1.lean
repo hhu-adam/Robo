@@ -11,7 +11,7 @@ import Game.Levels.FunctionSurj.L10_SurjectiveRange
 import Game.Levels.FunctionSurj.L11_SurjectiveHasRightInverse
 import Game.Levels.FunctionSurj.L12_SurjectiveTFAE
 
-World "Function1"
+World "FunctionSurj"
 Title "[WIP] Funktionen"
 
 Image "images/Librarian.png"

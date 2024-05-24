@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "Function3"
-Level 28
+World "FunctionBij"
+Level 7
 
 Title "Not exhausted by naturals."
 

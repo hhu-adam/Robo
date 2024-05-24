@@ -1,15 +1,14 @@
+import Game.Levels.FunctionBij.L01_Bijective
+import Game.Levels.FunctionBij.L02_Inverse
+import Game.Levels.FunctionBij.L03_Equivalence
+import Game.Levels.FunctionBij.L04_EquivalenceBijection
+import Game.Levels.FunctionBij.L05_BijectionEquivalence
+import Game.Levels.FunctionBij.L06_CurryEquiv
+import Game.Levels.FunctionBij.L07_CurrySurjective
+import Game.Levels.FunctionBij.L08_Diagonal
+import Game.Levels.FunctionBij.L09_Preimage_Injective
 
-import Game.Levels.FunctionBij.L22_Bijective
-import Game.Levels.FunctionBij.L23_Inverse
-import Game.Levels.FunctionBij.L24_Equivalence
-import Game.Levels.FunctionBij.L25_EquivalenceBijection
-import Game.Levels.FunctionBij.L26_BijectionEquivalence
-import Game.Levels.FunctionBij.L27_CurryEquiv
-import Game.Levels.FunctionBij.L28_CurrySurjective
-import Game.Levels.FunctionBij.L29_Diagonal
-import Game.Levels.FunctionBij.L30_Preimage_Injective
-
-World "Function3"
+World "FunctionBij"
 Title "[WIP] Funktionen"
 
 Image "images/Librarian.png"

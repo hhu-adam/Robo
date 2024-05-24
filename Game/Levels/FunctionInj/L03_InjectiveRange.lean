@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 14
+Level 3
 
 Title "Range of Injective"
 

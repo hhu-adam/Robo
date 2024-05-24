@@ -1,9 +1,8 @@
 import Game.Metadata
 
 
-
-World "Function2"
-Level 25
+World "FunctionBij"
+Level 4
 
 Title "Bijection of Equivalence"
 

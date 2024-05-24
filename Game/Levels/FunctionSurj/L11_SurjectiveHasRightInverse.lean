@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionInj"
+World "FunctionSurj"
 Level 11
 
 Title "Every function with nonempty fibres has a right inverse."

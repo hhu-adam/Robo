@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function2"
-Level 16
+Level 8
 
 Title "Preimage of the inverse"
 
@@ -19,7 +19,8 @@ f '' S = {b : B | ∃ a : A, a ∈ S ∧ f a = b}
 Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`
 is the proof that `a` is in `S` and `f a = b`.
 
-The image of function with a left inverse is a subset of the preimage of the inverse of
+The image of function with a left in
+verse is a subset of the preimage of the inverse of
 the same subset.
 "
 

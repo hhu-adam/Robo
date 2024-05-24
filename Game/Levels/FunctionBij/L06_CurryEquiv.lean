@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "Function3"
-Level 27
+World "FunctionBij"
+Level 6
 
 Title "Curry"
 
