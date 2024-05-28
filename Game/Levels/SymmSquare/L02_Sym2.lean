@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Quotient"
+World "Symmetric Square"
 Level 2
 
 Title "Permutation Equivalence Relation"

@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Quotient"
+World "Symmetric Square"
 Level 1
 
 Title "Symmetric square relation is transitive"

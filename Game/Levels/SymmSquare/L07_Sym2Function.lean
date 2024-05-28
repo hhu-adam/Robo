@@ -1,8 +1,8 @@
 import Game.Metadata
-import Game.Levels.Quotient.L02_Sym2
+import Game.Levels.SymmSquare.L02_Sym2
 
-World "Quotient"
-Level 6
+World "Symmetric Square"
+Level 7
 
 Title "Classifying Symmetric Functions"
 
@@ -26,20 +26,25 @@ are symmetric in their arguments.
 
 "
 
-open Function List Sym
+open Function Sym
 
 attribute [local instance] Sym2.Rel.setoid
 
-Statement {A B : Type*} : (Sym2 A → B) ≃ { f : A → A → B // ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } := by
-  refine' { .. }
+Statement Sym2.liftEquiv {A B : Type*} :
+    (Sym2 A → B) ≃ { f : A → A → B | ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } := by
+  --refine' { .. }
+  fconstructor
   · intro f
-    refine' { .. }
+    --refine' { .. }
+    fconstructor
     · exact fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
     · intro a₁ a₂
-      dsimp
       Branch
-        apply congr_arg f
-      congr 1
+        dsimp
+        congr 1
+        apply Quotient.sound
+        apply Sym2.Rel.swap
+      apply congr_arg f
       apply Quotient.sound
       apply Sym2.Rel.swap
   · intro f

@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Quotient"
+World "Symmetric Square"
 Level 3
 
 Title "Equal Unordered Pairs"
@@ -21,9 +21,12 @@ attribute [local instance] Sym2.Rel.setoid
 
 /-- (1, -2) and (-2, 1) are equal as unordered pairs of integers. -/
 Statement : (⟦ (1, -2) ⟧ : Sym2 ℤ) = ⟦ (-2, 1) ⟧ := by
+  Branch
+    simp [Quotient.eq]
+    apply Sym2.Rel.swap
   apply Quotient.sound
   apply Sym2.Rel.swap
 
 
-NewTheorem Quotient.sound
+NewTheorem Quotient.sound Quotient.eq
 TheoremTab "Quotient"

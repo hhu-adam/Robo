@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quotient"
-Level 11
+Level 13
 
 Title "Surjection"
 
@@ -13,15 +13,21 @@ In this level you show that the function `Quotient.mk : A → A/(ker f)` is surj
 
 open Function Set Setoid
 
-Statement surj_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk <| ker <| f) := by
+Statement surjective_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk (ker f)) := by
   intro q
   -- "choose a representative `b`"
-  obtain ⟨b⟩ := q
+  -- obtain ⟨b⟩ := q
   -- change ∃ a, ⟦a⟧ = ⟦b⟧ -- why does this not pp correctly?
   -- rcases q with ⟨b⟩
   --induction q using Quotient.ind with b
-  use b
-  rfl
+  exact Quotient.exists_rep q
 
-NewTheorem surj_quotient_mk_ker
+
+-- example (A : Type) (s: Setoid A) : Surjective (Quotient.mk s) := by
+--   intro q
+--   exact Quotient.exists_rep q
+
+
+
+NewTheorem surjective_quotient_mk_ker
 TheoremTab "Quotient"

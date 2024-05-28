@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Quotient"
+World "Symmetric Square"
 Level 5
 
 Title "Symmetric Function"
@@ -29,7 +29,9 @@ Statement (f : Sym2 A → B) :
   intro a₁ a₂
   dsimp
   Branch
-    apply congr_arg f
-  congr 1
+    congr 1
+    apply Quotient.sound
+    apply Sym2.Rel.swap
+  apply congr_arg f
   apply Quotient.sound
   apply Sym2.Rel.swap

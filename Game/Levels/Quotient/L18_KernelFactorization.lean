@@ -1,7 +1,8 @@
 import Game.Metadata
+import Game.Levels.Quotient.L13_KernelRespect
 
 World "Quotient"
-Level 15
+Level 18
 
 Title "Factorization"
 
@@ -20,18 +21,18 @@ Statement (A : Type) (B : Type) (f : A -> B) :
     f = m ∘ i ∘ q ∧ Surjective q ∧ Bijective i ∧ Injective m := by
   use (Quotient (α := A) (ker f))
   use (range f)
-  use (Quotient.mk <| ker <| f)
+  use (Quotient.mk (ker f))
   use (Quotient.lift (rangeFactorization f) respects_ker_rel)
   use Subtype.val
   Branch
-    refine ⟨?_, ?_, ?_, ?_⟩
+    fconstructor
     · rfl
-    · exact surj_quotient_mk_ker f
-    · exact bij_quotient_lift_range_fac f
+    · exact surjective_quotient_mk_ker f
+    · exact bijective_quotient_lift_range_fac f
     · exact Subtype.val_injective
   simp
   constructor
-  · apply surj_quotient_mk_ker
+  · apply surjective_quotient_mk_ker
   · constructor
-    · apply bij_quotient_lift_range_fac
+    · apply bijective_quotient_lift_range_fac
     · apply Subtype.val_injective
