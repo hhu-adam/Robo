@@ -2,7 +2,8 @@ import Mathlib.Topology.Instances.Real
 open BigOperators Function Set Filter Topology TopologicalSpace
 
 /- # Topology via Filters
-inspired by MIL.
+inspired by MIL and Patrick Massot's slides:
+https://www.imo.universite-paris-saclay.fr/~patrick.massot/topology.pdf
 -/
 
 
