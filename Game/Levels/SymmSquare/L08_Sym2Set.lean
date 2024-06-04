@@ -15,9 +15,10 @@ with 1 or 2 elements.
 
 open Function Sym Finset
 
--- PR to mathlib #13302
+
+-- PRd to mathlib #13302
 @[simp]
-theorem card_one_or_two {A : Type*} [DecidableEq A] (a b : A) :
+theorem card_pair_eq_one_or_two {A : Type*} [DecidableEq A] (a b : A) :
     ({a,b} : Finset A).card = 1 ∨ ({a,b} : Finset A).card = 2 := by
   simp [card_insert_eq_ite]
   tauto
