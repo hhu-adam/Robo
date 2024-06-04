@@ -6,8 +6,7 @@ import Mathlib.Data.Real.Basic
 import Game.Levels.MatrixSpan.L14
 import Game.Levels.MatrixSpan.L15
 
-import Game.Levels.MatrixTrace.L03
-
+import Game.Levels.MatrixTrace
 
 World "Span"
 Level 16
@@ -22,12 +21,12 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset BigOperators Matrix
 
 example {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
     Submodule.span ℝ (Submonoid.powers A).carrier ≠ ⊤ := by
   intro hspan
-  have h₁ : E 0 (n + 1) ∈ Submodule.span ℝ (Submonoid.powers A).carrier := by
+  have h₁ : Matrix.E 0 (n + 1) ∈ Submodule.span ℝ (Submonoid.powers A).carrier := by
     rw [hspan]
     simp only [Submodule.mem_top]
   have h₂ : E (n + 1) 0 ∈ Submodule.span ℝ (Submonoid.powers A).carrier := by
