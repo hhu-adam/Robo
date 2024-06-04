@@ -33,16 +33,13 @@ example {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
     rw [hspan]
     simp only [Submodule.mem_top]
   have h₃ := by apply powers_span_commute h₁ h₂
-  --unfold E at *
   rw [Matrix.E.mul_same, Matrix.E.mul_same] at h₃
-  --unfold E at h₃
   simp at h₃
   --revert h₃
   have := (congr_fun₂ h₃ 0 0)
   simp at this
   unfold E at this
   simp at this
-  --sorry
   unfold stdBasisMatrix at this
   rw [if_neg] at this
   simp at *
