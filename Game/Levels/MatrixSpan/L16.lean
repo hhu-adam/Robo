@@ -6,7 +6,7 @@ import Mathlib.Data.Real.Basic
 import Game.Levels.MatrixSpan.L14
 import Game.Levels.MatrixSpan.L15
 
-import Game.Levels.MatrixTrace.L02_EBasis
+import Game.Levels.MatrixTrace.L03
 
 
 World "Span"
