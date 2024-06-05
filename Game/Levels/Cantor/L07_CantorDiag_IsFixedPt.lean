@@ -9,7 +9,7 @@ Title "Diagonalargument"
 Introduction
 "
 **Cantor**: Genug gerätselt, jetzt aber zum Diagonalargument. Wenn wir eine surjektive
-Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : A → A` einen Fixpunkt.
+Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : Y → Y` einen Fixpunkt.
 
 **Du**: Und welcher Punkt ist das?
 
