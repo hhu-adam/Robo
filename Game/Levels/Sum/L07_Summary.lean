@@ -2,10 +2,10 @@ import Game.Metadata
 
 
 
-import Game.Levels.Sum.L05_SumComm
+import Game.Levels.Sum.L06_SumComm
 
 World "Sum"
-Level 6
+Level 7
 Title "Zusammenfassung"
 
 Introduction

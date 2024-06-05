@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed May 29 13:39:49 2024\n"
+"POT-Creation-Date: Wed Jun  5 17:13:44 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -3236,10 +3236,26 @@ msgid "Ihr schaut euch den nächsten Turm an."
 msgstr ""
 
 #: Game.Levels.Sum.L02_Sum
-msgid "$\\sum_{i=0}^{n-1} (i + 1) = n + \\sum_{i=0}^{n-1} i$."
+msgid "$\\sum_{i=0}^{n-1} 2 = n × 2$."
 msgstr ""
 
 #: Game.Levels.Sum.L02_Sum
+msgid "simp!"
+msgstr ""
+
+#: Game.Levels.Sum.L03_Sum
+msgid "endliche Summe"
+msgstr ""
+
+#: Game.Levels.Sum.L03_Sum
+msgid "Ihr schaut euch den nächsten Turm an."
+msgstr ""
+
+#: Game.Levels.Sum.L03_Sum
+msgid "$\\sum_{i=0}^{n-1} (i + 1) = n + \\sum_{i=0}^{n-1} i$."
+msgstr ""
+
+#: Game.Levels.Sum.L03_Sum
 msgid "**Du**: Hmm, wieder `simp`?\n"
 "\n"
 "**Robo**: Nicht ganz. `simp` benutzt nur Lemmata, die klar eine Vereinfachung darstellen.\n"
@@ -3258,12 +3274,12 @@ msgid "**Du**: Hmm, wieder `simp`?\n"
 "**Robo**: Sie heißt `sum_add_distrib`."
 msgstr ""
 
-#: Game.Levels.Sum.L02_Sum
+#: Game.Levels.Sum.L03_Sum
 msgid "**Robo**: Die zweite Summe `∑ x : Fin n, 1` kann jetzt aber mit\n"
 "`simp` zu `n` vereinfacht werden."
 msgstr ""
 
-#: Game.Levels.Sum.L02_Sum
+#: Game.Levels.Sum.L03_Sum
 msgid "**Robo**: Bis auf Umordnung sind jetzt beide Seiten gleich!\n"
 "\n"
 "**Du**: Dann greift jetzt wohl `ring`!\n"
@@ -3272,19 +3288,19 @@ msgid "**Robo**: Bis auf Umordnung sind jetzt beide Seiten gleich!\n"
 "auch manuell machen."
 msgstr ""
 
-#: Game.Levels.Sum.L02_Sum
+#: Game.Levels.Sum.L03_Sum
 msgid ""
 msgstr ""
 
-#: Game.Levels.Sum.L02_Sum
+#: Game.Levels.Sum.L03_Sum
 msgid "Der Babylonier macht ein sehr zufriedenes Gesicht."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "Arithmetische Summe"
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Babylonier**: Kommt, ich zeig Euch mal einen unserer schönsten Türme!\n"
 "\n"
 "Nach einem kurzen Spaziergang steht ihr davon.\n"
@@ -3295,11 +3311,11 @@ msgid "**Babylonier**: Kommt, ich zeig Euch mal einen unserer schönsten Türme!
 "**Babylonier**: Richtig. Gauß war ein Babylonier!"
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "$2 \\cdot \\sum_{i = 0}^n i = n \\cdot (n + 1)$."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,\n"
 "wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?\n"
 "Ich würde gerne Induktion über $n$ anwenden.\n"
@@ -3309,26 +3325,26 @@ msgid "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,\n"
 "Du kannst damit Namen für Induktionsvariable (d) und -hypothese (h) vorgeben."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Zuerst der Induktionsanfang …\n"
 "\n"
 "**Robo**: Diesen kannst du oft mit `simp` abkürzen!"
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Robo**: Jetzt der Induktionsschritt.\n"
 "Bei Induktion über endlichen Summen beginnst du den Induktionsschritt\n"
 "immer mit `rw [sum_univ_castSucc]`."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Oh das sieht jetz aber kompliziert aus…\n"
 "\n"
-"**Robo**: Da musst du etwas drüber hinweg lesen. Am besten machst du kurz `simp`,\n"
+"**Robo**: Da musst du etwas darüber hinweg lesen. Am besten machst du kurz `simp`,\n"
 "dann sieht's schon wieder besser aus."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?\n"
 "\n"
 "**Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,\n"
@@ -3336,53 +3352,53 @@ msgid "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?\n"
 "Element `(↑x : ℕ)` betrachtet wird."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Robo**: Um die Induktionshypothese anzuwenden, brauchst du zuerst das Lemma `mul_add`."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Und wie wende ich jetzt die Induktionshypothese an?\n"
 "\n"
 "**Robo** mit `rw` wie jede andere Annahme auch."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "**Du**: Der Rest ist einfach Rechnerei.\n"
 "\n"
 "**Robo**: Dann wird `ring` wohl keine Probleme haben."
 msgstr ""
 
-#: Game.Levels.Sum.L03_ArithSum
+#: Game.Levels.Sum.L04_ArithSum
 msgid "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,\n"
 "Steintürme in allen Formen und Höhen stehen."
 msgstr ""
 
-#: Game.Levels.Sum.L04_SumOdd
+#: Game.Levels.Sum.L05_SumOdd
 msgid "Summe aller ungeraden Zahlen"
 msgstr ""
 
-#: Game.Levels.Sum.L04_SumOdd
+#: Game.Levels.Sum.L05_SumOdd
 msgid "Aus reiner Neugierde gehst Du zu einem etwas kleineren Nachbarsturm hinüber."
 msgstr ""
 
-#: Game.Levels.Sum.L04_SumOdd
+#: Game.Levels.Sum.L05_SumOdd
 msgid "$\\sum_{i = 0}^{n-1} (2i + 1) = n ^ 2$."
 msgstr ""
 
-#: Game.Levels.Sum.L04_SumOdd
+#: Game.Levels.Sum.L05_SumOdd
 msgid "**Robo**: Das funktioniert genau gleich wie zuvor, viel Glück."
 msgstr ""
 
-#: Game.Levels.Sum.L04_SumOdd
+#: Game.Levels.Sum.L05_SumOdd
 msgid "Den Induktionschritt bei Summen solltest du wie gesagt\n"
 "immer mit `rw [sum_univ_castSucc]` beginnen."
 msgstr ""
 
-#: Game.Levels.Sum.L05_SumComm
+#: Game.Levels.Sum.L06_SumComm
 msgid "Summe vertauschen"
 msgstr ""
 
-#: Game.Levels.Sum.L05_SumComm
+#: Game.Levels.Sum.L06_SumComm
 msgid "**Babylonier**: Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!\n"
 "\n"
 "Die beiden Freunde stehen vor zwei Türmen mit einer kleinen Brücke, die zwischen den ihnen verläuft.\n"
@@ -3396,7 +3412,7 @@ msgid "**Babylonier**: Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss
 "**Robo**: Probier mal, das im lokalen Dialekt zu formulieren."
 msgstr ""
 
-#: Game.Levels.Sum.L05_SumComm
+#: Game.Levels.Sum.L06_SumComm
 msgid "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um sicher zu sein.\n"
 "\n"
 "**Du**: Hast du nicht ein Lemma dafür?\n"
@@ -3404,7 +3420,7 @@ msgid "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um siche
 "**Robo**: Doch, probier mal `sum_comm`."
 msgstr ""
 
-#: Game.Levels.Sum.L05_SumComm
+#: Game.Levels.Sum.L06_SumComm
 msgid "Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,\n"
 "  auf das du die Aussage gekritzelt hast. Gleich zückt einer einen Meißel und sie beginnen, eine\n"
 "  neue Platte zu erstellen.\n"
@@ -3412,11 +3428,11 @@ msgid "Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier übe
 "  Ihr beschließt, euch noch ein bisschen allein umzusehen."
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "Zusammenfassung"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Robo, gib mir doch nochmals eine Übersicht, bitte.\n"
 "\n"
 "**Robo**: Aber klar:\n"
@@ -3438,24 +3454,24 @@ msgid "**Du**: Robo, gib mir doch nochmals eine Übersicht, bitte.\n"
 "bedrohlich an und fragt in tiefer Stimme:"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Gulp. Naja das wird schon klappen. Also man fängt wieder mit Induktion an …"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Also den Induktionsanfang kann man einfach zeigen …"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Robo**: Und jetzt wieder `rw [sum_univ_castSucc]` und `simp`, um vorwärts zu\n"
 "kommen!"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Robo**: Siehst du die Induktionshypothese hier drin?"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Okay, damit habe ich die linke Seite der Gleichung ziemlich gut bearbeitet.\n"
 "Aber, ehm, mit der Rechten komme ich nicht weiter …\n"
 "\n"
@@ -3472,29 +3488,29 @@ msgid "**Du**: Okay, damit habe ich die linke Seite der Gleichung ziemlich gut b
 "einsetzen muss, nämlich `«{n}» + 1`"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Robo**: Das hat jetzt einfach `Fin.sum_univ_castSucc` am ersten Ort angewendet,\n"
 "wo das möglich war. Das ist nicht so ideal, die linke Seite war schon okay.\n"
 "\n"
 "**Robo**: Geh doch zurück und bring `rw` dazu am anderen Ort umzuschreiben."
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Robo**: `add_pow_two` ist auch noch nützlich!"
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Ich glaube, ich sehe hier eine Gaußsche Summe!!\n"
 "\n"
 "**Robo**: Ich habe dir das vorhin temporär als `arithmetic_sum` gespeichert.\n"
 "Das kannst du jetzt benutzen."
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "**Du**: Jetzt sollten es eigentlich nur noch arithmetische Operationen sein."
 msgstr ""
 
-#: Game.Levels.Sum.L06_Summary
+#: Game.Levels.Sum.L07_Summary
 msgid "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie\n"
 "aggressiv war, sondern nur eine sehr tiefe Stimme hat.\n"
 "\n"
@@ -3523,1786 +3539,6 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 "**Du**: Wie baut ihr denn diese Meisterwerke?\n"
 "\n"
 "**Babylonier**: Ganz einfach! Ein Stein nach dem anderen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "Mengen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "**Mengea**: Ich würde leider den Inhalt jenes Buches eh nicht verstehen. Aber der beste Weg für\n"
-"euch, dieses zu entschlüsseln ist, euch ausgiebig mit der Bevölkerung hier zu unterhalten.\n"
-"Lebt mit ihnen, redet mit ihnen und ihr werdet die Sprache automatisch lernen.\n"
-"\n"
-"**Mengea**: Seid aber vorgewarnt, die Leute hier denken ganz viel über Mengen nach,\n"
-"womit sie immer *homogene Mengen* meinen. Eine Menge natürlicher Zahlen `{1, 4, 6}` ist\n"
-"verständlich, aber sowas wie eine Menge `{(2 : ℕ), {3, 1}, \"e\", (1 : ℂ)}` gibt es hier\n"
-"einfach nicht. Punkt.\n"
-"\n"
-"**Robo**: Als Kontext: Wenn `A` ein beliebiger `Type` ist, dann ist `(U : Set A)` eine Menge\n"
-"mit Elementen aus `A`\n"
-"\n"
-"**Mengea**: Damit ich weiß, dass ihr euch grundsätzlich mit den Leuten austauschen könnt,\n"
-"erklärt mir doch folgendes:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "**Du**: Also `A` ist ein `Type`, `x` ist ein Element in `A`…\n"
-"\n"
-"**Robo** … und `univ` ist die Menge aller Elemente in `A`.\n"
-"\n"
-"**Du** ist das nicht einfach `A` selber?\n"
-"\n"
-"**Robo** Fast, aber das eine ist ein `Type`, das andere eine Menge, also vom Typ `Set A`.\n"
-"\n"
-"**Du**: Unlogisch?\n"
-"\n"
-"**Mengites**: Naja, Typen und Mengen sind halt zwei unterschiedliche Sachen und wenn ihr\n"
-"über Mengen sprechen wollt, müssen alles Mengen sein.\n"
-"\n"
-"**Du**: Na gut. Und wieso `x ∈ univ` und nicht `x : univ` wie bei Typen?\n"
-"\n"
-"**Robo**: Jedes Element `(x : A)` hat entweder die Eigenschaft `x ∈ U` (`\\in`) oder `x ∉ U`\n"
-"(`\\nin`) für eine Menge `(U : Set A)`.\n"
-"\n"
-"**Du**: Also das ist ja dann `trivial`. Hoffentlich sehen die das hier auch so…"
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "Die Menge `(univ : Set A)` ist die Menge aller Elemente in `A`. Obwohl mathematisch `A` und\n"
-"`(univ : Set A)` so erscheinen, als seien sie das gleiche, ist das in Leans Typentheorie nicht so.\n"
-"Elemente haben immer Typ `x : A`, aber sie können Elemente von verschiedenen \"Teilmengen\" von `A`\n"
-"-- `U : Set A` -- sein. Z.B. gilt immer `x ∈ univ` und nie `x ∈ ∅`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "TODO. Siehe `univ`.\n"
-"\n"
-"`x ∉ A` ist eine Notation für `¬ (x ∈ A)`.\n"
-"\n"
-"(`\\in`, `\\nin`)"
-msgstr ""
-
-#: Game.Levels.SetTheory.L01_Univ
-msgid "**Mengea**: Ja das stimmt schon. Dann wünsche ich euch viel Erfolg auf eurer Reise!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L02_Empty
-msgid "leere Menge"
-msgstr ""
-
-#: Game.Levels.SetTheory.L02_Empty
-msgid "Ihr zieht also durch die Gegend und redet mit den Leuten. Ein Junge rennt zu euch und fragt:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L02_Empty
-msgid "**Du**: Kein Element ist in der leeren Menge enthalten? Das ist ja alles\n"
-"tautologisches Zeugs...\n"
-"\n"
-"**Robo**: Dann behaupte das doch."
-msgstr ""
-
-#: Game.Levels.SetTheory.L02_Empty
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L02_Empty
-msgid "Der Junge rennt weiter.\n"
-"\n"
-"**Du**: So wird das ganze schon angenehmer.\n"
-"\n"
-"**Robo**: Die Leere Menge schreibst du mit `\\empty` falls du die nochmals brauchst."
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "Teilmengen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "Ihr bemerkt, dass mit dem Jungen noch zwei andere\n"
-"Kinder zuhörten. Eines der beiden Mädchen hat ebenfalls eine Frage."
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "**Robo**: `A ⊆ B` ist als `∀ x, x ∈ A → x ∈ B` definiert.\n"
-"\n"
-"**Du**: Also kann ich mit `intro` anfangen, wie ich das bei einem `∀` funktioniert?\n"
-"\n"
-"**Robo**: Das ist korrekt."
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "**Robo**: Das dürfte eine Trivialität sein."
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "`A ⊆ B` ist definiert als `∀ x, x ∈ A → x ∈ B`.\n"
-"\n"
-"(`\\sub`)"
-msgstr ""
-
-#: Game.Levels.SetTheory.L03_Subset
-msgid "Damit drehen sich die beiden Mädchen um und folgen dem Jungen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "Teilmengen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "Etwas weiter kommt ihr an einem kleinen Gemüsestand vorbei. Da ihr nicht so\n"
-"richtig einen Plan habt, fragt ihr den Verkäufer.\n"
-"\n"
-"**Verkäufer**: Hier ist was ganz Wichtiges, was ihr noch oft brauchen werdet:\n"
-"Ein zentrales Lemma ist `Subset.antisymm_iff` welches folgendes sagt:\n"
-"\n"
-"```\n"
-"lemma antisymm_iff {α : Type} {A B : Set α} :\n"
-"  A = B ↔ A ⊆ B ∧ B ⊆ A\n"
-"```\n"
-"\n"
-"**Verkäufer**: Fast immer wenn man Gleichheiten von Mengen zeigen muss, will\n"
-"man diese in zwei Ungleichungen aufteilen. Hier, ich gebe euch mal ein\n"
-"Beispiel:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "**Du**: Ja, die einzige Teilmenge der leeren Menge ist die leere Menge.\n"
-"Das wird schon stimmen.\n"
-"\n"
-"**Verkäufer**: Also zeig mir das mal!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "**Robo**: Fang doch einmal mit `constructor` an."
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "**Verkäufer**: Jetzt könnt ihr mein Lieblingslemma brauchen!\n"
-"\n"
-"Dann sind `s ⊆ ∅` und `∅ ⊆ s` separat zu zeigen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid "**Robo**: Was kann man denn mit `«{h}»` jetzt machen?\n"
-"\n"
-"**Du**: Wenn ich damit umschreibe erhalte ich `∅ ⊆ ∅`.\n"
-"\n"
-"**Robo**: Was `rw` als Reflexivität direkt löst!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L04_SubsetEmpty
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L05_Empty
-msgid "Empty"
-msgstr ""
-
-#: Game.Levels.SetTheory.L05_Empty
-msgid "**Robo**: Ist das denn wirklich so wichtig?\n"
-"\n"
-"**Verkäufer**: Hier, beantworte mir doch mal folgendes."
-msgstr ""
-
-#: Game.Levels.SetTheory.L05_Empty
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L05_Empty
-msgid "jetzt könntest du «{h8}» mit `rcases` aufteilen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "Nonempty"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Kann ich noch mehr üben?\n"
-"\n"
-"**Verkäufer**: Das Gegenteil von `A = ∅` ist `A ≠ ∅`, aber in Lean wird der Ausdruck `A.Nonempty` bevorzugt.\n"
-"Dieser ist dadurch existiert, dass in `A` ein Element existiert: `∃x, x ∈ A`.\n"
-"\n"
-"Zeige dass die beiden Ausdrücke äquivalent sind:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Robo**: Am besten fängst du mit `unfold Set.Nonempty` an."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "`push_neg` kann hier helfen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Eben hatten wir doch etwas zu `«{s}» = ∅`.\n"
-"\n"
-"**Robo**: Das war `eq_empty_iff_forall_not_mem`. Du kannst ja einen\n"
-"Widerspruchsbeweis anfangen, dann kannst du dieses Lemma an der Annahme `«{s}» = ∅`\n"
-"benutzen!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Robo** Widerspruch war `by_contra hf`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Also ich weiss, dass es ein `x` gibt in `«{s}»` und dass gleichzeitig alle\n"
-"`x` nicht in `«{s}»` sind, das ist doch ein Widerspruch!\n"
-"\n"
-"**Robo**: Ja aber nur `contradiction` wird noch nicht reichen, da diese noch nicht\n"
-"syntaktisch negationen voneinander sind.\n"
-"\n"
-"**Du**: Na dann sollte das zumindest eine Tautologie sein."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Vermutlich sollten wir hier aber dafür\n"
-"einen Beweis per Widerspruch anfangen?"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Robo**: Für dieses Problem ist es vermutlich besser nur\n"
-"`push_neg at «{hf}»` zu verwenden, damit `«{h}»: «{s}» ≠ ∅` unverändert bleibt!\n"
-"\n"
-"**Du**: Wieso macht `push_neg` denn das?\n"
-"\n"
-"**Robo**: Weiss ich auch nicht…"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Ist das nicht nochmals eine Seite des Lemmas von\n"
-"vorhin?\n"
-"\n"
-"**Robo**: Ja, `eq_empty_iff_forall_not_mem` ist nochmals nützlich"
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Robo**: Mein System sagt, dass Kontraposition nützlich sein könnte.\n"
-"\n"
-"**Du**: Ja, dann sieht es schon wieder ähnlich dem Lemma von vorhin."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Robo**: `push_neg at *` könnte helfen die ganzen `¬` wegzukriegen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L06_Nonempty
-msgid "**Du**: Und wie hies das Lemma nochmals?\n"
-"\n"
-"**Robo**: `eq_empty_iff_forall_not_mem`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L07_UnionInter
-msgid "Schnittmenge und Vereinigung"
-msgstr ""
-
-#: Game.Levels.SetTheory.L07_UnionInter
-msgid "Eine alte Dame kommt daher und wendet sich zu Verkäufer.\n"
-"\n"
-"**Dame**: Du, ich hatte einen Gedanken. Kannst du mir folgendes erklären?"
-msgstr ""
-
-#: Game.Levels.SetTheory.L08_UnionInter
-msgid "Schnittmenge und Vereinigung"
-msgstr ""
-
-#: Game.Levels.SetTheory.L08_UnionInter
-msgid "**Verkäufer**: Ich habe aber was interessanteres:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L08_UnionInter
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L08_UnionInter
-msgid "**Robo**: Ich habe dir ein paar Sachen aus meinem Speicher zusammengekratzt."
-msgstr ""
-
-#: Game.Levels.SetTheory.L08_UnionInter
-msgid "mit `union_assoc` und `union_diff_distrib` kannst du\n"
-"auf der rechten Seite weiterkommen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "Komplement"
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "**Dame**: Ok gut. Aber hier nochmals was, was ich in der Zeitung gelesen habe:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "**Du**: Gleichheit von Mengen. Das ist sicher wieder ein Fall für beide\n"
-"Inklusionen.\n"
-"\n"
-"**Robo**: Das war `Subset.antisymm_iff`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "**Robo**: `⊆ univ` ist ein Fall für `simp`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "Da `⊆` als `∀x, x ∈ A → x ∈ B ` definiert ist, fängst du\n"
-"am besten mit `intro` an."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "Eine Möglichkeit ist, eine Fallunterscheidung zu machen: `by_cases g: «{x}» ∈ «{A}»ᶜ`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "Hier könnte `mem_of_subset_of_mem` hilfreich werden."
-msgstr ""
-
-#: Game.Levels.SetTheory.L09_Complement
-msgid "Diese Richtung geben wir als Lemma: `not_mem_compl_iff`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L10_Morgan
-msgid "Morgansche Regeln"
-msgstr ""
-
-#: Game.Levels.SetTheory.L10_Morgan
-msgid "**Verkäufer**: Haben Sie schon von Morgan gehört? Der hatte letztig dieses ungelöste Problem!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L10_Morgan
-msgid "**Robo**: Oh du lieber Schaltkreis. Hier ist sind noch mehr aus meinem Speicher."
-msgstr ""
-
-#: Game.Levels.SetTheory.L11_SSubset
-msgid "Strikte Teilmenge"
-msgstr ""
-
-#: Game.Levels.SetTheory.L11_SSubset
-msgid "Die Dame geht mit ihrem Einkauf davon.\n"
-"\n"
-"**Verkäufer**: Wisst ihr, seit einer Weile redet sie eigentlich immer über den Unterschied\n"
-"von `⊂` und `⊆`, aber heute nicht. Könnt ihr mir schon mal helfen, damit ich morgen\n"
-"gewappnet bin?"
-msgstr ""
-
-#: Game.Levels.SetTheory.L11_SSubset
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L12_Insert
-msgid "Konkrete Mengen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L12_Insert
-msgid "**Du**: Das ist ja alles schön und gut, aber ich weiß immer noch nicht, wie\n"
-"ich eine ganz simple Menge wie `{4, 9}` notiere…\n"
-"\n"
-"**Verkäufer**: Genau so! Aber diese endlichen Mengen sind alles iterative\n"
-"Konstruktionen aus `Set.insert` und `singleton`. Hier zum Beispiel:"
-msgstr ""
-
-#: Game.Levels.SetTheory.L12_Insert
-msgid "Die Menge `{4, 9}` ist per Definition `{4} ∪ {9}`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L12_Insert
-msgid "**Du**: Das wär ja dann `rfl`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "Konkrete Mengen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "**Verkäufer**: Ja, also hier ein besseres Beispiel:\n"
-"\n"
-"Um zu überprüfen, dass gewisse Elemente in\n"
-"konkreten Mengen enthalten sind, gibt es nicht direkt eine Taktik, aber ein\n"
-"einfaches Rezept:\n"
-"\n"
-"```\n"
-"simp_rw [mem_insert_iff, mem_singleton_iff] at *\n"
-"```\n"
-"\n"
-"vereinfacht Aussagen der Form `6 ∈ {0, 6, 1}` zu `(6 = 0) ∨ (6 = 6) ∨ (6 = 1)`,\n"
-"und dann kann `tauto` diese Aussage beweisen.\n"
-"\n"
-"Bei `⊆` kann man wie schon vorher zuerst mit `intro x hx` die Definition\n"
-"auseinandernehmen und dann gleich vorgehen."
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "Fang wieder mit `rw [subset_def]` oder direkt mit `intro` an."
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "**Du**: Das ist ja die eigentliche Aufgabe.\n"
-"\n"
-"**Verkäufer**: Solche Aufgaben sind immer mit\n"
-"`simp_rw [mem_insert_iff, mem_singleton_iff] at *` gefolgt von `tauto` lösbar!"
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "**Robo**: Das kann aber ganz schön lang werden.\n"
-"\n"
-"**Verkäufer**: Ich habe mir noch nie überlegt, was passiert wenn man über zu große Mengen\n"
-"nachdenkt…"
-msgstr ""
-
-#: Game.Levels.SetTheory.L13_Insert
-msgid "Damit lässt ihr den Verkäufer mit seinen Mengen an Obst zurück und wandert weiter."
-msgstr ""
-
-#: Game.Levels.SetTheory.L14_SetOf
-msgid "Mengen mit Konditionen"
-msgstr ""
-
-#: Game.Levels.SetTheory.L14_SetOf
-msgid "Eine wichtige mathematische Notation ist Teilmengen zu erstellen,\n"
-"die gewissen Bedingungen unterliegen.\n"
-"\n"
-"`{n : ℕ | Odd n}` ist die Menge aller natürlichen Zahlen, die ungerade sind.\n"
-"Diese Konstruktion hat in Lean den Namen `setOf`\n"
-"\n"
-"Um zu beweisen, dass ein Element in einer Teilmenge mit Bedingungen ist, braucht\n"
-"man `rw [mem_setOf]`. Danach muss man zeigen, dass die Bedinung für\n"
-"dieses Element erfüllt ist."
-msgstr ""
-
-#: Game.Levels.SetTheory.L14_SetOf
-msgid "**Robo**: Zur Erinnerung, wenn du nicht mehr weisst, wie `Odd` definiert\n"
-"ist, benutze `rw [Odd]`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "Potenzmenge"
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "Eine andere wichtige Menge ist die Potenzmenge einer Menge, welche als\n"
-"`𝒫 A` geschrieben wird (`\\powerset`). Diese ist als `{S | S ⊆ A}` definiert, also\n"
-"alle Mengen, die in $A$ enthalten sind.\n"
-"\n"
-"Eines der wichtigsten Lemmas ist `mem_powerset_iff: x ∈ 𝒫 s ↔ x ⊆ s` welches\n"
-"im Grunde die Definition einsetzt."
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "**Robo**: Fang mal mit `intro` an, wie das bei `⊆` fast immer der Fall ist."
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "**Robo**: Als nächstes must du noch die Annahme `«{A}» ∈ 𝒫 X ∪ 𝒫 Y` zu\n"
-"`«{A}» ∈ (𝒫 X) ∨ «{A}» ∈ (𝒫 Y)` wechseln. Dafür kennst du schon ein Lemma."
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "**Robo**: Jetzt wär der Zeitpunkt um `mem_powerset_iff` mal überall anzuwenden."
-msgstr ""
-
-#: Game.Levels.SetTheory.L15_Powerset
-msgid "**Robo**: Jetzt kann `tauto` den rest übernehmen, vielleicht solltest du diese\n"
-"Hilfe annehmen.\n"
-"Wenn nicht, brauchst du vermutlich die Lemmas `Set.subset_union_of_subset_left`\n"
-"und `Set.subset_union_of_subset_right`"
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid "Um anzunehmen, dass zwei Mengen disjunkt sind, schreibt man\n"
-"`Disjoint S T`, welches dadurch definiert ist, dass die\n"
-"einzige gemeinsame Teilmenge die leere Menge ist,\n"
-"also etwa `A ⊆ S → A ⊆ T → A ⊆ ∅`.\n"
-"\n"
-"Beachte, dass `Disjoint` in Lean genereller definiert ist als\n"
-"für Mengen, deshalb siehst du die Symbole\n"
-"`≤` anstatt `⊆` und `⊥` anstatt `∅`, aber diese bedeuten genau\n"
-"das gleiche."
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid "**Robo**: Öffne als erstes mal `Disjoint`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid "**Robo**: Das sieht jetzt ein bisschen gefürchig aus, aber das ist einfach ein `∃`.\n"
-"Was du jetzt angeben musst, ist eine Menge, die Teilmenge beider Mengen\n"
-"`{n : ℤ | ∃ k, n = 2 * k}` und `{3, 5, 6, 9, 11}` ist."
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid "**Robo**: Versuch einmal `use {6}`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L16_Disjoint
-msgid "**Robo**: Schau mal wie weit `simp` kommt."
-msgstr ""
-
-#: Game.Levels.SetTheory.L17_SetOf
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L17_SetOf
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L17_SetOf
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L18_SetOf
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L18_SetOf
-msgid "Zu der Teilmengen-Schreibweise (`SetOf`) gibt es noch zwei spezielle\n"
-"Syntax, die ab und zu auftreten.\n"
-"\n"
-"Der erste ist `{ x ∈ S | 0 ≤ x}` ( für z.B `(S : Set ℤ)`),\n"
-"welcher eine Abkürzung für `{ x : ℤ | x ∈ S ∧ 0 ≤ x}` ist.\n"
-"Entsprechend hilft auch hier `setOf_and`."
-msgstr ""
-
-#: Game.Levels.SetTheory.L18_SetOf
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L19_Subtype
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L19_Subtype
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L19_Subtype
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L20_UnionInter
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L20_UnionInter
-msgid "Wir haben bereits `∪` und `∩` kennengelernt. Von beiden gibt es auch eine Version für Familien\n"
-"von Mengen: $\\bigcup_i A_ i$ und $\\bigcap_j B_ j$."
-msgstr ""
-
-#: Game.Levels.SetTheory.L20_UnionInter
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L21_Summary
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L21_Summary
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory.L21_Summary
-msgid ""
-msgstr ""
-
-#: Game.Levels.SetTheory
-msgid "Synolos"
-msgstr ""
-
-#: Game.Levels.SetTheory
-msgid "[Du betrittst einen Teil des Universums, der noch in der Entstehung ist.\n"
-"Lass dich auf Ungereimtheiten, Stolperfallen, und Handlungslöcher ein. Viel Gück!]\n"
-"\n"
-"Der größere der beiden Monde sieht dunkelrot und karg aus. Trotzdem sollen dort nomadische\n"
-"Gesellschaften wohnen, die sich in der Einöde zurechtfinden.\n"
-"\n"
-"Ihr steuert einen der wenigen befestigten Standorte am Fuße eines Berges an.\n"
-"\n"
-"**Robo**: Die Bevölkerung hier lebt so abgekapselt vom Rest des Universums, dass sie sich\n"
-"vermutlich noch viel besser mit alter Sprache und Schrift auskennt.\n"
-"\n"
-"**Du**: Hoffen wir, dass sie uns weiterhelfen können dieses Buch der Urbilder zu entschlüsseln.\n"
-"\n"
-"Sofort begrüßt euch eine ältere Frau, die sich als *Mengea*, die Beschützerin des Mondes,\n"
-"vorstellt."
-msgstr ""
-
-#: Game.Levels.SetTheory
-msgid "[WIP] Mengenlehre 2"
-msgstr ""
-
-#: Game.Levels.SetTheory
-msgid "Dieser Planet ist kahl un leer und noch unentdeckt. Zeit und Geschichte scheint es\n"
-"hier nicht zu geben."
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "[Es] fragt euch folgendes:\n"
-"\n"
-"```\n"
-"def FirstColumnSumZero {n : ℕ} [NeZero n] :\n"
-"    Submodule ℝ (Mat[n,n][ℝ]) where\n"
-"  carrier := {A | ∑ i, A i 0 = 0}\n"
-"  add_mem' := sorry\n"
-"  zero_mem' := sorry\n"
-"  smul_mem' := sorry\n"
-"```\n"
-"\n"
-"**Du**: Also die Frage ist, ob die Menge aller `n×n`-Matrizen über $\\mathbb{R}$ mit der\n"
-"ersten Spalte null auch wieder einen $\\mathbb{R}$-Vektorraum bildet. Aber wie gehe ich jetzt mit\n"
-"dieser Struktur vor? Robo, kannst du mir helfen?\n"
-"\n"
-"**Robo**: Klar, den Untervektorraum kann ich definieren, aber ich verstehe die Mathe nicht.\n"
-"Hier sind die drei Goals die noch übrig sind:"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: Ich verstehe, beim ersten müssen wir zeigen, dass `a + b` wieder in `M` ist."
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: Haben wir nicht schon gesehen, was dieses `∈ M` bedeutet?\n"
-"\n"
-"**Robo**: Wir hatten einmal `Set.mem_setOf`, das wird dir helfen!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: also vermutlich will ich ja jetzt sagen, dass\n"
-"$(«{a}» + «{b}»)(i,j) = a(i,j) + b (i,j)$ ist.\n"
-"\n"
-"**Robo**: Das ist `Matrix.add_apply`. Und vergiss nicht, dass man unter Summen\n"
-"`simp_rw` verwenden muss anstatt `rw`!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: Darüber hatten wir mal auf Babylon geredet, wie hiess dass nochmals?"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: `sum_add_distrib`."
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Ob deine Annahmen wohl was nützen?"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Du könntest aber noch mit `rw [mem_setOf] at *` die Annahmen\n"
-"in die richtige Form bringen!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Dieses Goal verlangt, dass `0` in `M` liegt.\n"
-"\n"
-"**Du**: Ich würd wohl wie vorher gleich mit `mem_setOf` anfangen!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Den Fall wo alles Null ist kann `simp` ganz gut!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: Ah und das letzte Goal will dass `r • a` in `M` liegt!\n"
-"\n"
-"**Robo**: sieht ganz so aus!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: `mem_setOf`, dass weisst du doch schon!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Du**: Ich weiss nicht, was ich mit der Skalarmultiplikation mache. eigenlich ist der\n"
-"innere Teil ja einfach `«{c}» • («{a}» i 0)`.\n"
-"\n"
-"**Robo**: Das klingt nach einem Fall für `simp`!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Meine Datenbank mit alten Konversationen sagt, dass wir mal `mul_sum`\n"
-"hatten auf Babylon."
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Du willst von rechts nach links umschreiben, also brauchst du hier\n"
-"ein `←mul_sum`."
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "**Robo**: Du könntest aber noch mit `rw [mem_setOf] at «{ha}»` die Annahmen\n"
-"in die richtige Form bringen!"
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid ""
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid ""
-msgstr ""
-
-#: Game.Levels.Matrix.L01_VectorSpace
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.Matrix
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.Matrix
-msgid "Dieser Planet ist kahl un leer und noch unentdeckt. Zeit und Geschichte scheint es\n"
-"hier nicht zu geben."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "Standardbasis"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "Den Spuren folgend, findet ihr ein Stück Pergament, auf dem zuoberst\n"
-"eine Notiz steht.\n"
-"\n"
-"```\n"
-"E i j := stdBasisMatrix i j (1 : ℝ)\n"
-"```\n"
-"\n"
-"Darunter ein bisschen wildes Gekritzel, das aber deutlich mit einer klaren\n"
-"Zeile angefangen hat:"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "`E i j` ist die `n × n`-Matrix (mit Werten in `ℝ`) mit einer `1` an\n"
-"Stelle $(i, j)$ und null überall sonst.\n"
-"\n"
-"Bemerkung: Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,\n"
-"welche auch nicht-quadratisch sein kann und einen beliebigen Wert `a` aus einem beliebigen\n"
-"Ring annehmen kann.\n"
-"\n"
-"Das Spiel bevorzugt `E`, um die Lesbarkeit zu erhöhen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen. Was meints du?\n"
-"\n"
-"**Robo**: Ja! `stdBasisMatrix i j a` kenne ich, das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.\n"
-"\n"
-"**Du**: Und die `E`s sind dann einfach eine Abkürzung für den Fall `a = 1`?\n"
-"\n"
-"**Robo**: So sieht's aus. Und `A i j` ist einfach der Eintrag der Matrix `A` an der Position `(i, j)`.\n"
-"\n"
-"**Du**: Ah, verstehe. Da steht also kein Produkt von Matrizen, sondern nur eine Skalarmultiplikation. Dann ist das ja einfach.\n"
-"\n"
-"**Robo**: Ja. Ich denke wenn du mit `unfold E` anfängst, geht der Rest wie von selbst."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L01_SMulEBasis
-msgid "**Du**: Ob das wohl was bringt?\n"
-"\n"
-"**Robo**: Ich speichere das mal als `Matrix.smul_ebasis` ab, falls wir es nochmals\n"
-"brauchen.\n"
-"\n"
-"Damit folgt ihr weiter der Spur."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid "Falsche Indizes"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid "Kurze Zeit später findet ihr zwei sehr ähnlichen Zettel, wieder\n"
-"vollgekritzelt, fast alles durchgestrichen.\n"
-"Die erste Zeile aber lässt sich jeweils gerade noch ausmachen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid "**Robo**: Ich speichere dieses `E.mul_of_ne` auch mal, wer weiß.\n"
-"\n"
-"  **Du**: Jetzt bin ich aber neugierig, wer diese Zettel hier verloren oder weggeworfen hat. Komm, lass uns weitergehen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid "**Du**: Das sieht jetzt aber nach Matrizen-Multiplikation aus.\n"
-"Müsste so auch stimmen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L02_EBasis
-msgid "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `«{h}»` explizit braucht!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03
-msgid "Richtige Indizes"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03
-msgid "**Du**: Jetzt bin ich aber neugierig, wer diese Zettel hier verloren oder weggeworfen hat. Komm, lass uns weitergehen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L03
-msgid "**Du**:  Sieht auch richtig aus."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "Summe von Basiselementen"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen\n"
-"Fläche heruntergetrampelt ist. Spuren führen kreuz und queer und in verschiedene\n"
-"Richtungen weg.\n"
-"\n"
-"Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\n"
-"Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "Du beschliesst einer besonders markanten Spur zu folgen. Robo zieht dir hinterher und schnappt\n"
-"sich beim gehen noch ein willkürliches Stück Pergament vom Boden."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "Sagt aus, dass man jede $(n × n)$-Matrix (über $\\mathbb{R}$) $A$ schreiben kann\n"
-"als $A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$.\n"
-"\n"
-"Siehe auch `matrix_eq_sum_std_basis`, welches die generalisierte Form für\n"
-"$(m × n)$-Matrix (über beliebigem $R$) ist."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendensystem für den Raum der Matrizen bilden.\n"
-"\n"
-"**Robo**: Da kannst du bestimmt gleich die Resultate anwenden, die wir schon gefunden haben!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "**Robo**: Unter Summen braucht man `simp_rw`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament wiederholen.\n"
-"Nur zu, Übung macht den Meister.\n"
-"\n"
-"**Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus meiner Bibliothek.\n"
-"Das ist genau `apply matrix_eq_sum_std_basis`.\n"
-"\n"
-"**Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "Einheitsmatrix"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Zeig mal, was hast du da? Was zur Einheitsmatrix? Passend für unsere Sammlung?\n"
-"\n"
-"**Robo**: Ja, schau. Ich glaube, hier kannst Du gleich mit `matrix_eq_sum_ebasis` beginnen.\n"
-"\n"
-"**Du**: Ich frage mich, ob wir noch wichtiges auf dem Platz zurückgelassen haben?\n"
-"\n"
-"**Robo**: Egal, jetzt sind wir schon ein gutes Stücken weiter. Probier jetzt hier einmal!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die\n"
-"die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.\n"
-"Denkst du das funktioniert ähnlich wie mit den Funktionen, da bei dieser Bibliothek?\n"
-"\n"
-"**Robo**: Die beiden Taktiken `congr` und `ext` könnten dir hier tatsächlich helfen.\n"
-"\n"
-"*(von oben)*: Wurde noch nicht erklärt, aber zukünftig werden `ext` und\n"
-"`congr` schon früher eingeführt."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Oh, jetzt habe ich nicht nur den Summationsindex, sondern auch noch die beiden\n"
-"Indices `«{r}»,«{s}»` der Matrizen eingeführt. Aber das sollte passen. Nur… die verbleibende Summe\n"
-"ist ja überall Null außer beim Index `«{i}»`.\n"
-"\n"
-"**Robo**: Ist das so?  Lass mich mal suchen…  Nicht schön, sollte aber funktionieren:  mit `rw [← Finset.sum_subset (Finset.subset_univ {«{i}»})]`\n"
-"solltest du die Summe so umschreiben können, dass sie nur über dem Singleton `{«{i}»}` läuft."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,\n"
-"bei diesem ist `1 i i` wieder Eins, und `1 • _` vereinfacht sich auch!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Robo**: `simp` klingt wirklich nach einer guten Idee."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Aber was mache ich hier? `«{h₂}»` sagt ja mehr oder weniger dass `i ≠ x` ist.\n"
-"\n"
-"**Robo**: Ja, aber nicht ganz. Führ das doch mit `have h₃ : i ≠ x` ein und zeig das kurz!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Robo**: Umgekehrt wäre es nützlicher, da\n"
-"`1 i x` als `if i = x then _ else _` definiert ist!\n"
-"\n"
-"**Du**: Du hast recht, ich brauch gleich `i = x` oder `i ≠ x`. Lass mich das ändern."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Als erstes würde ich mal schauen, ob sich `«{h₂}»` vereinfacht."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Hmm, jetzt ist das erstmal verdreht.\n"
-"\n"
-"**Robo**: Erinnere dich an `symm`!\n"
-"\n"
-"**Du**: Richtig, das brauchten wir ja schon bei diesem wilden Typen mit seinen Förderbändern."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Wie setze ich denn jetzt die Definition für `1 «{i}» «{x}»` ein?\n"
-"\n"
-"**Robo**: `Matrix.one_apply`!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Robo**: Und da das falsch ist, kannst du mit `rw` und `if_neg` weiterkommen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "Zwei Funktionen sind gleich, wenn sie auf allen Elementen gleich sind.\n"
-"\n"
-"Wenn das Goal `f = g` ist, kann man mit `ext i`, ein Element `i` einführen, und dann zeigen,\n"
-"dass `f i = g i` ist.\n"
-"\n"
-"`ext` versucht, so viele Indices einzufügen wie möglich `funext i` führt nur den spezifizierten ein."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "`congr` versucht, eine Gleichung `_ = _` auf eine Gleichung von Untertermen zu reduzieren. Zum\n"
-"Beispiel ein Goal der Form `f a = f b` wird durch `congr` zu `a = b` reduziert."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "Ein nihilierter Kommutator"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "Der Spur folgend kommt ihr an einem großen Baum. Im Schatten findet ihr ein regloses Etwas:\n"
-"\n"
-"$$\n"
-"[A, B] = AB - BA\n"
-"$$\n"
-"\n"
-"**Robo**:  Ach ja, ein Kommutator!\n"
-"\n"
-"**Du**: Der sieht aber ziemlich nihiliert aus.  Ich glaube, der ist verdurstet.\n"
-"\n"
-"**Robo**: Und schau, hier ist noch was in den Baum gekritzelt."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "**Robo**: Ich glaube, die Annahme, dass Kommutatoren nihiliert werden, nehmen wir jetzt erst\n"
-"einmal mit.\n"
-"\n"
-"**Du**: Schön.  Sagte ich bereits, dass ich langsam Durst habe?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "**Du**: Mit anderen Worten: Wenn `f` Kommutatoren nihiliert, dann stimmen seine Werte\n"
-"auf allen `E i i` überein. Stimmt das??\n"
-"\n"
-"**Robo**: Lass es uns herausfinden!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "**Du**: Aber was soll ich denn mit unserer Annahme `«{h₁}»` anfangen!\n"
-"Ich müsste überhaupt erst einmal eine Multiplikation haben.\n"
-"\n"
-"**Robo**: Du müsstest ein Matrizenprodukt `A * B` finden, für das  `f (E i i) = f (A * B) = f (E j j)` gilt.\n"
-"Dann könnstest du `trans f (A * B)` schreiben, um zwei Beweisziele – `f (E i i) = f (A * B)` und `f (A * B) = f (E j j)` – zu erhalten,\n"
-"bei denen `«{h₁}»` vielleicht anwendbar ist."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "**Robo**: Hatten wir nicht `E i k = (E i j) * (E j k)` auf einem dieser Zettel?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
-msgid "**Robo**: Hast du das nicht alles gemacht, weil du `«{h₁}»` brauchen\n"
-"wolltest?\n"
-"\n"
-"**Du**: Ah ja, stimmt!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "Desinteresse"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgestrichen ist.\n"
-"\n"
-"**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren nicht."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und\n"
-"unvorsichtiger als zuvor."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "**Robo**: Wie könnten wir denn hier `«{h₁}»` verwenden?\n"
-"\n"
-"**Du**: Wie wär's, wenn wir diesmal `E i j` als Produkt `E i j * E j j` schreiben?\n"
-"\n"
-"**Robo**:  Wieso gerade so?\n"
-"\n"
-"**Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich Null!  Hatten wir doch auch schon, `E.mul_of_ne` oder so etwas."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "**Robo*: Wie du meinst. Dann probier doch am besten `trans f (E i j * E j j)`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "**Du**: Ehm, das sehe ich einfach von der Definition.\n"
-"\n"
-"**Robo**: Vergiss nicht `unfold E`, oder sag `simp`, dass es die Definition von `E` benutzen soll (`simp [E]`)."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
-msgid "**Robo**: Und hier wolltest du jetzt kommutieren?\n"
-"\n"
-"**Du**: Genau!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "Die Summe der Summe der Summe"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "Ihr findet nochmals einen Hinweis, aber in der Eile verliert ihr die Fährte.\n"
-"Du bist inzwischen sehr durstig.  \n"
-"Während Robo die nähere Umgebung absucht, setzt du dich erschöpft hin und\n"
-"starrst unter der warmen Sonne etwas beduselt auf den Pergamentfetzen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Na endlich.  \n"
-"\n"
-"Robo reicht dir eine Flasche Wasser.\n"
-"\n"
-"**Du**: Wo hast du die denn auf einmal her? \n"
-"\n"
-"**Robo**: Trick 17.\n"
-"\n"
-"**Du**:  Und hast du die Fährte wiedergefunden?\n"
-"\n"
-"**Robo**:  Ja, komm mit! Da hinten hab ich etwas gesehen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Ich versteh beim besten Willen nicht, was das jetzt soll! \n"
-"Vermutlich sollte ich das `A` in `f A` als Summe von Basismatrizen\n"
-"schreiben, nicht aber das andere `A` weiter hinten.\n"
-"\n"
-"**Robo** (*aus der Ferne*): `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du** (*schreiend*): Was meinst du damit?\n"
-"\n"
-"**Robo** (*ebenfalls schreiend*): Na, du willst bestimmt `matrix_eq_sum_ebasis A` anwenden, aber mit `nth_rw 1` und nicht mit `rw`.\n"
-"`rw [matrix_eq_sum_ebasis A]` würde beide `A`s ersetzen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee. \n"
-"Das sieht zu kompliziert aus. Lass es mich doch mit `nth_rw` versuchen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du** (*in Gedanken*): Jetzt die Funktion in die Summe rein… Und ja nicht an Wasser denken…\n"
-"Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo** (*von irgendwo*): Das klingt nach `map_sum`, aber das hatten wir\n"
-"auf Babylon nicht gesehen, das fantasierst du. Aber `simp` kennt dieses Lemma sonst auch."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Ah ja, im Zweifelsfall vereinfachen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Die Summe der Summe der Summe der…\n"
-"\n"
-"**Robo*: Hey, woran bist du eigentlich?\n"
-"\n"
-"**Du**: Keine Ahnung!\n"
-"\n"
-"**Robo**: Mach doch folgenden Zwischenschritt:\n"
-"\n"
-"`trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Summe gleich Summe, `congr`-`ext` macht da der Dumme."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo**: Vielleicht gleich nocheinmal?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Und jetzt Fallunterscheidung zu `i = j`…"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo**: `by_cases` war das, genau!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo**: Hier ist `if_pos «{h₂}»` nützlich."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo**: …und hier `if_neg «{h₂}»`.\n"
-"\n"
-"**Du**: Weiß ich doch."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: `f (E i j)` ist doch Null, hatten wir doch schon gesehen!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Robo**: Und das hieß `zero_on_offDiag_ebasis`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Und ich dachte schon das wär's.\n"
-"\n"
-"**Robo**: Fast, da ist noch die zweite Hälfte des `trans`-Befehls oben. Diese Hälfte\n"
-"ist ganz einfach."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "Lineare Abbildungen (oder genereller \"additive\" Abbildungen) kann man mit einer\n"
-"Summe vertauschen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Matrix"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Keine fünfzig Meter weiter kommt ihr auf eine kleine Anhöhe.\n"
-"Robo zeigt auf einen Punkt in der Ferne.\n"
-"\n"
-"**Robo**: Schau mal, da liegt es!\n"
-"\n"
-"**Du**: Und was *ist* das???\n"
-"\n"
-"**Robo**:  Weiß nicht.  Aber mein Gefühl sagt mir, diese Zettel sind eine Art Steckbrief.  Schau mal, hier ist noch einer.  Ich glaube, der sagt, wie groß es ist."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Okay. Lass uns vorsichtig näher gehen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber\n"
-"beide Seiten mit `(«{n}» + 1)` multiplizieren.\n"
-"\n"
-"**Robo**: Da gibt es verschiedene Möglichkeiten.  Zum Beispiel:\n"
-"`apply nat_mul_inj' (n := «{n}».succ)`!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "(*Stimme von oben*) : Der nächste Schritt ist `rw [←smul_eq_mul, ← LinearMap.map_smul]`,\n"
-"aber das kannst du nicht wissen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Das Argument auf der linken Seite kann ich jetzt als konstante Summe\n"
-"darstellen.\n"
-"\n"
-"**Robo**: Probier `trans «{f}» (∑ x : Fin «{n}».succ, E «{i}» «{i}»)`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Genau, dann müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.\n"
-"\n"
-"**Robo**: `simp [E]` kann das sicher komplett vereinfachen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt\n"
-"`«{f}» (∑ x, E x x)` zeigen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Nein, das ist jetzt mathematisch falsch!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Robo**: Jetzt wieder `congr`-`ext`?\n"
-"\n"
-"**Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Nochmals!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L09_EvalOnEBasis
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "Trace"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "Ihr schleicht euch langsam an.\n"
-"\n"
-"**Du** (**flüsternd**): Ich glaube, du hattest Recht.  Diese Zettel sind eine Art Steckbrief!  \n"
-"Und sie beschreiben dieses Wesen hier eindeutig!\n"
-"\n"
-"**Robo**: Wie meinst du das?\n"
-"\n"
-"**Du**: Schau doch, seine Größe, seine Vorliebe für Kommutatoren, und all die anderen Sachen,\n"
-"damit kann es eindeutig identifiziert werden kann!\n"
-"\n"
-"**Robo**: Das musst du mir genauer erklären.\n"
-"\n"
-"**Du**:  Ich versuch's mal. Gibt es in Leansch einen Namen für die Spur? \n"
-"\n"
-"**Robo**: Ja klar, die heißt natürlich `trace`.  Manche Formalosophen nennen sie auch liebevoll Tracy.\n"
-"\n"
-"Du nimmst einen der Pergamentfetzen und schreibst auf die Rückseite."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: Tatsache. Du hattest Recht.\n"
-"\n"
-"Ihr beobachtet voller Entzücken dieses offenbar einzigartige Wesen auf diesem Planeten.\n"
-"\n"
-"Als ihr näher kommt, scheint euch Tracy zu bemerken.  Aber es scheint dadurch keinesfalls gestört\n"
-"zu sein."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Du**:  Hier sind noch einmal alle Eigenschaften zusammengefasst.  \n"
-"\n"
-"**Robo**:  Und du behauptest, nur Tracy hat diese Eigenschaften?\n"
-"\n"
-"**Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auch allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: `ext`!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Du**: Und jetzt schreiben wir `f A` als Summe von Basiselementen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: Den Fall `n = 0` sehe ich sofort!\n"
-"\n"
-"**Du**: Wirklich?\n"
-"\n"
-"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `rcases n`.\n"
-"\n"
-"**Du**: Nicht `induction n`?\n"
-"\n"
-"**Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: Ich hab im Kopf mal `simp` ausprobiert. Probier es auch mal."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!\n"
-"\n"
-"**Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,\n"
-"`rw` kann das nicht.\n"
-"\n"
-"**Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Du** `_ * 1` ist `simp`, oder?"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Robo**: Die beiden Seiten sind per Definition gleich!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?\n"
-"\n"
-"**Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument\n"
-"ausgelassen.  Jetzt kannst du es noch nachholen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L10_Characterize
-msgid "Nicht genau definiert als, aber per Definition äquivalent zu:\n"
-"`trace A = ∑ i, A i i`.\n"
-"\n"
-"Mathlib benutzt den Term `diag A i` auf den wir hier nicht genauer eingehen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid "Trace"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid "Als ihr mit etwas Abstand stehen bleibt, kommt Tracy auf euch zugelaufen und fängt an zu spielen. Belustigt gibt es euch verschiedenste\n"
-"Aufgaben und Terme, und ihr versucht, diese schnell genug zu kombinieren."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid "Schließlich macht ihr euch auf den Rückweg.\n"
-"Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch\n"
-"die Grasslandschaft zurück zu eurem Schiff."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch alles\n"
-"mit `simp` wenn wir nicht am spielen wären.\n"
-"\n"
-"**Du**: Ist doch egal, das macht Spass!"
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace.L11_Linearity
-msgid ""
-msgstr ""
-
-#: Game.Levels.MatrixTrace
-msgid "Robotswana"
-msgstr ""
-
-#: Game.Levels.MatrixTrace
-msgid "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslandschaft hinaus.\n"
-"\n"
-"Nach etwas Umschauen entdeckt Robo Spuren, die von eurem Landeplatz wegführen, zwischen\n"
-" vereinzelten Bäumen hindurch. Ihr beratet kurz und beschließt, den Spuren zu folgen."
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "Cantor's Diagonalargument"
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → Set A` gibt? Faszinierend\n"
-"oder?\n"
-"\n"
-"**Cantor**: Wie das geht? Hier, ist eine kleine Hilfe:"
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Du**: Ich denke eine Fallunterscheidung auf `«{a}» ∈ «{f}» «{a}»` könnte sinnvoll sein."
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Robo**: Das wäre `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`."
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Robo**: Mach mal mit `suffices : «{a}» ∉ «{f}» «{a}»` weiter!"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "Cantor's Diagonalargument"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Cantor**: Also und jetzt die eigentliche Aussage!"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Uff. Aber ehrlich habe ich die das \"Diagonale\" daran noch nicht\n"
-"ganz gesehen.\n"
-"\n"
-"\n"
-"**Cantor**: Natürlich, das kann ich euch zeigen, aber da muss ich etwas ausholen…"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Also ein Widerspruchsbeweis?"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Robo**: als Erinnerung: Wenn du so etwas wie `?f` siehst, bedeutet das, dass\n"
-"noch nicht spezifiziert wurde welche Funktion benützt wird. Du hättest besser\n"
-"`apply cantor_helper f` geschrieben. Aber du kannst auch einfach mal weitermachen, als ob `?f`\n"
-"schon `«{f}»` wäre, und vermutlich wird Lean das irgendwann automatisch einfüllen."
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Cantor**: Wendet doch gleich das Resultat von vorhin an!\n"
-"\n"
-"**Robo**: Ich hab das als `cantor_helper f` gespeichert."
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "Fixpunkte"
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "**Du**: Also wie ist das mit der Diagonalen?\n"
-"\n"
-"**Cantor**: Um das genauer zu erläutern muss ich euch zuerst ein paar rätsel zu Fixpunkten stellen."
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "**Robo**: `IsFixedPt f x` ist die Aussage `f x = x`.\n"
-"\n"
-"**Du**: Und `abs` ist der Betrag? Was mache ich damit?\n"
-"\n"
-"**Robo**: Ich denke so einfache Sachen, die `0` beinhalten kann `simp` ganz gut,\n"
-"aber ich habe hier auch noch zwei Resultate, die hilfreich aussehen."
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "Fixpunkt"
-msgstr ""
-
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "**Cantor**: Oder schaut hier, die Menge der Fixpunkte von `-(·)` ist ein Singleton."
-msgstr ""
-
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "**Du**: `fixedPoints f` ist dann wohl die Menge aller Fixpunkte?\n"
-"\n"
-"**Robo**: Ja, genau: `fixedPoints f := { x | IsFixedPt f x }`.\n"
-"\n"
-"**Du**: Welche Optionen habe ich nochmals bei Gleichungen von Mengen?\n"
-"\n"
-"**Robo** Entweder du brauchst `ext x` um `x ∈ A ↔ x ∈ B` zu zeigen, oder\n"
-"du benützt `rw [Subset.antisymm_iff]` um dann `A ⊆ B ∧ B ⊆ A` zu zeigen."
-msgstr ""
-
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "Keine Fixpunkte"
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Cantor**: Aber auf was ich eigentlich hinaus wollte, ist die Fixpunkte von `¬` anzuschauen;\n"
-"Es gibt nämlich keine!"
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Du**: Und was hatten jetzt Fixpunkte mit dem Diagonalargument zu tun?\n"
-"\n"
-"**Cantor**: Nur Geduld! Ich habe gerade so viel Spaß!"
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Du**: Ja, `¬(·)` hat keinen Fixpunkt, keine Aussage kann gleichzeitig\n"
-"wahr und falsch sein!"
-msgstr ""
-
-#: Game.Levels.Cantor.L05_IsFixedPt_odd
-msgid "Fixpunkte"
-msgstr ""
-
-#: Game.Levels.Cantor.L05_IsFixedPt_odd
-msgid "**Cantor**: Zum Beispiel bei ungeraden Funktionen. Da sind die Fixpunkte symmetrisch.\n"
-"\n"
-"**Du** (*flüsternd zu Robo*): Das hat jetzt wirklich nichts mehr mit der ursprünglichen\n"
-"Frage zu tun\n"
-"\n"
-"**Robo** (*leise*): Na komm schon, wir kommen bestimmt gleich dazu."
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "Idempotent"
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Cantor**: Also noch ein letztes Rätsel, dann kommen wir gleich zurück zum\n"
-"Diagonalargument.\n"
-"\n"
-"**Robo**: Oh das sieht anspruchsvoller aus."
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Du**: Etwas womit ich unsicher bin, wie spielt da wohl `«{f}» ∘ «{f}» = «{f}»` mit rein?\n"
-"\n"
-"**Robo**: Vermutlich willst du das irgendwann auf ein bestimmtes `x` anwenden.\n"
-"\n"
-"Dafür kannst du irgendwann `apply congr_fun at «{h}»` brauchen, damit\n"
-"du `∀ x, («{f}» ∘ «{f}») x = «{f}» x` kriegst."
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Robo**: Wir hatten einmal `Function.comp_apply`!"
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "Diagonalargument"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Cantor**: Genug gerätselt, jetzt aber zum Diagonalargument. Wenn wir eine surjektive\n"
-"Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : A → A` einen Fixpunkt.\n"
-"\n"
-"**Du**: Und welcher Punkt ist das?\n"
-"\n"
-"**Cantor**: Gute Frage! Hier, ich geb euch eine Aufgabe um das herauszufinden."
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Cantor**: Diese Aufgabe soll euch vermitteln, wie ihr den Fixpunkt kriegt!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Du**: Also ist der Fixpunkt dieses diagonale Element `f b b`, für ein `b`\n"
-"  das irgendwie aus der Surjektivität kommt…\n"
-"\n"
-"  **Cantor**: Und damit auf zum Hauptsatz!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "Diagonalargument"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Viel Glück!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche\n"
-"Aufgabe nochmals lösen."
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Mit der Aufgabe vorhin könnt\n"
-"ihr sicher herausfinden, was das richtige `c : A → Y` ist, auf das ihr die Surjektivität\n"
-"anwenden wollt."
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Robo**: So viel weiss ich: die Funktion\n"
-"definieren wir mit\n"
-"\n"
-"```\n"
-"let c : A → Y := fun a ↦ _\n"
-"```\n"
-"\n"
-"aber den Wert musst schon du herausfinden!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Gute Wahl!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Das sieht gut aus, jetzt können wir ja\n"
-"`cantor_diagonal_isFixedPt` von vorhin brauchen!"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "Diagonalargument"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Du**: Und wie hängt das jetzt damit zusammen, dass es keine Surjektive Funktion\n"
-"`f : A → Set A` gibt?\n"
-"\n"
-"**Cantor**: Ganz einfach, nehmt `s` als die Funktion `fun x ↦ ¬ x`.\n"
-"\n"
-"**Robo**: In Lean kann man nämlich eine Menge `U : Set A` mit dem Prädikat\n"
-"`{ x : A | x ∈ U } : A → Prop` gleichsetzen, die sind per Definition dasselbe.\n"
-"Damit kann man `f : A → Set A` auch als `f : A → A → Prop` sehen.\n"
-"\n"
-"**Du**: Und `{ a | a ∉ f a }` ist `s (f a a)` für `s : (fun x ↦ ¬ x)`, alles klar."
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Cantor**: Ein Widerspruchsbeweis ist die Kür der Mathematik."
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Du**: Also hier jetzt `cantor_diagonal` verwenden?"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Robo**: Zum Beispiel mit `apply cantor_diagonal at «{h}»`!"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Cantor**: Nein, nein! Wir wollten doch\n"
-"mein schönes Theorem `cantor_diagonal` verwenden!"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Cantor**: Wir hatten doch geübt, dass `¬(·)` keinen Fixpunkt hat.\n"
-"\n"
-"**Robo**: Das habe ich als `not_isFixedPt_not` gepspeichert"
-msgstr ""
-
-#: Game.Levels.Cantor
-msgid "Cantor"
-msgstr ""
-
-#: Game.Levels.Cantor
-msgid "Auf eurer Reise kommt ihr an einem Zwergplaneten vorbei. Darauf steht ein Haus mit unendlich vielen\n"
-"Türen auf jeder Seite. Ihr macht euch einen Spass daran von einem Ecken aus gleichzeitig Türen\n"
-"aufzutun und zu beobachten wie sich dein Schatten mit dem von Robo kreuzt.\n"
-"\n"
-"Dann entdeckt ihr einen Mann, der draussen sitzt. In der Hand hält er eine Schriftrolle\n"
-"auf der unendliche Zahlenfolgen geschrieben sind, und die Rolle scheint in einem riesigen\n"
-"Haufen ausgerolltem Papier zu enden.\n"
-"\n"
-"Die Person stellt sich euch als Cantor der Magier vor."
 msgstr ""
 
 #: Game

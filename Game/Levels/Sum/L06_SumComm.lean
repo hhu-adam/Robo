@@ -1,13 +1,12 @@
 import Game.Metadata
 
 
-
-import Game.Levels.Sum.L04_SumOdd
+import Game.Levels.Sum.L05_SumOdd
 open BigOperators
 open Finset
 
 World "Sum"
-Level 5
+Level 6
 
 Title "Summe vertauschen"
 

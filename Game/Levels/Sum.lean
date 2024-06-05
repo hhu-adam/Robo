@@ -1,9 +1,10 @@
 import Game.Levels.Sum.L01_Simp
 import Game.Levels.Sum.L02_Sum
-import Game.Levels.Sum.L03_ArithSum
-import Game.Levels.Sum.L04_SumOdd
-import Game.Levels.Sum.L05_SumComm
-import Game.Levels.Sum.L06_Summary
+import Game.Levels.Sum.L03_Sum
+import Game.Levels.Sum.L04_ArithSum
+import Game.Levels.Sum.L05_SumOdd
+import Game.Levels.Sum.L06_SumComm
+import Game.Levels.Sum.L07_Summary
 
 World "Sum"
 Title "Babylon"
