@@ -52,7 +52,7 @@ open BigOperators
 
   **Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,
   also die natürliche Abbildung `ℕ ↪ ℤ` benutzt. Oder hier, wenn ein Element `x : Fin n` als
-  Element `(↑x : ℕ)` betrachtet wird."
+  Element `↑x : ℕ` betrachtet wird."
   Hint (hidden := true)
   "**Robo**: Um die Induktionshypothese anzuwenden, brauchst du zuerst das Lemma `mul_add`."
   rw [mul_add]
