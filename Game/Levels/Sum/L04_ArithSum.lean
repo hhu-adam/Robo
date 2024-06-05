@@ -18,9 +18,7 @@ Nach einem kurzen Spaziergang steht ihr davon.
 **Babylonier**: Richtig. Gauß war ein Babylonier!
 "
 
-open Fin
-
-open BigOperators
+open Fin BigOperators
 
 /-- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/ Statement arithmetic_sum
  (n : ℕ) : 2 * (∑ i : Fin (n + 1), (i : ℕ)) = n * (n + 1) := by
