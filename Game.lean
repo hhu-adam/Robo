@@ -9,7 +9,6 @@ import Game.Levels.Proposition
 import Game.Levels.Sum
 
 import Game.Levels.SetTheory
-import Game.Levels.Matrix
 import Game.Levels.MatrixTrace
 import Game.Levels.Cantor
 
