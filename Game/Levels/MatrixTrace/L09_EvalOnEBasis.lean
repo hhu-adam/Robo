@@ -33,57 +33,83 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     ∀ i, f (E i i) = 1 := by
   intro i
-  -- apply Nat.mul_left_cancel
-  Hint "**Du**: Ich glaube, ich habe eine Idee! Dafür muss ich aber
-  beide Seiten mit `({n} + 1)` multiplizieren.
+  Hint "
+   Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:
 
-  **Robo**: Da gibt es verschiedene Möglichkeiten.  Zum Beispiel:
-    `apply nat_mul_inj' (n := {n}.succ)`!" -- TODO: introduce earlier.
-  apply nat_mul_inj' (n := n.succ) -- TODO: is there a better way to write this?
-  Hint "(*Stimme von oben*) : Der nächste Schritt ist `rw [←smul_eq_mul, ← LinearMap.map_smul]`,
-  aber das kannst du nicht wissen." -- TODO: introduce earlier.
-  rw [←smul_eq_mul, ← LinearMap.map_smul]
-  Hint "**Du**: Das Argument auf der linken Seite kann ich jetzt als konstante Summe
-  darstellen.
+   **Du**: Ich glaube, ich habe eine Idee! Das `({n} + 1)`-fache der Gleichung kann ich mit den vorherigen Resulaten wie folgt nachrechnen:
+  $$\begin{aligned}
+    (n+1) \\cdot f(E_{i i})
+    &= \\sum_j f(E_{i i}) \\\\
+    &= \\sum_j f(E_{j j}) \\\\
+    &= f(1) \\\\
+    &= n + 1
+    \\end{aligned}
+  $$
 
-  **Robo**: Probier `trans {f} (∑ x : Fin {n}.succ, E {i} {i})`."
-  trans f (∑ x : Fin n.succ, E i i)
-  · Hint "**Du**: Genau, dann müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.
+  **Robo**: Du willst also zunächst ausnutzen, dass Multiplikation mit `({n} + 1)` injektiv ist?
+     Da kann ich ausnahmsweise aushelfen:
+    `apply nat_mul_inj' (n := {n}.succ)`!
+    "
+  apply nat_mul_inj' (n := n.succ)
+    -- TODO: introduce `nat_mul_inj'` earlier.
+    -- TODO: latex code throws errors.
+  Hint (hidden := true) "
+  **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes
+  `trans ∑ j : Fin n.succ, f (E i i)`.
+  "
+  Branch
+    rw [←smul_eq_mul, ← LinearMap.map_smul]
+    Hint "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest.
+      Könnte aber auch funktionieren.
+      Probier mal `trans {f} (∑ j : Fin {n}.succ, E {i} {i})` als nächsten Schritt.
+      "
+    trans f (∑ x : Fin n.succ, E i i)
+    · Hint "**Du**: Genau, jetzt müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.
 
-    **Robo**: `simp [E]` kann das sicher komplett vereinfachen." -- TODO: Better hint
-    Branch
-      simp
-      rw [← smul_eq_mul]
-      rw [← LinearMap.map_smul]
-      rw [←smul_eq_mul]
-      unfold E
-      simp
-      --rfl -- Doesn't work because there are two different smuls.
-    simp? [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
-  · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-    Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
-    `{f} (∑ x, E x x)` zeigen."
-    trans f (∑ x, E x x)
-    · Branch
+      **Robo**: `simp [E]` kann das sicher komplett vereinfachen." -- TODO: Better hint
+      simp [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
+    · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
+      Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
+      `{f} (∑ x, E x x)` zeigen."
+      trans f (∑ x, E x x)
+      · Branch
+          congr
+          Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
+        Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
+
+        **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
+        rw [map_sum]
+        Hint "**Du**: Nochmals!"
+        rw [map_sum]
         congr
-        Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
-      Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
+        ext j
+        Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
+        Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
+        rw [eq_on_diag_ebasis] -- Lvl 5
+        assumption
+      · Hint (hidden := true) "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
+        rw [ebasis_diag_sum_eq_one] -- Lvl 4
+        rw [h₂]
+        simp
+  · trans ∑ j : Fin n.succ, f (E i i)
+    · simp
+    · trans ∑ j : Fin n.succ, f (E j j )
+      · congr
+        ext
+        Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
+        rw [eq_on_diag_ebasis] -- Lvl 5
+        assumption
+      · trans f 1
+        · Hint (hidden := true) "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß `eq_sum_apply_diag_ebasis`."
+          rw [eq_sum_apply_diag_ebasis] -- Lvl 8
+          · simp
+          · assumption
+        · Hint (hidden := true) "**Robo**: Probier mal `rw [{h₂}]`."
+          rw [h₂]
+          simp
+  · simp
 
-      **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
-      rw [map_sum]
-      Hint "**Du**: Nochmals!"
-      rw [map_sum]
-      congr
-      ext j
-      Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
-      Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
-      rw [eq_on_diag_ebasis] -- Lvl 5
-      assumption
-    · Hint (hidden := true) "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
-      rw [ebasis_diag_sum_eq_one] -- Lvl 4
-      rw [h₂]
-      simp
-  simp
+
 
 -- TODO: Move!
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
@@ -91,7 +117,7 @@ TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
 TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "Matrix"
+TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "Nat"
 
 TheoremTab "Matrix"
 NewTheorem smul_eq_mul LinearMap.map_smul nat_mul_inj'
