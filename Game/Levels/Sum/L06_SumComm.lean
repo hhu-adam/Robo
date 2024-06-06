@@ -1,6 +1,5 @@
 import Game.Metadata
 
-
 import Game.Levels.Sum.L05_SumOdd
 open BigOperators
 open Finset
@@ -27,8 +26,8 @@ Natürlich fangt ihr an zu rätseln, was darunter stand.
 
 
 Statement
-(n m : ℕ) : ∑ i : Fin n, ∑ j : Fin m, ( 2 ^ (i : ℕ) * (1 + j) : ℕ) =
-    ∑ j : Fin m, ∑ i : Fin n, ( 2 ^ (i : ℕ) * (1 + j) : ℕ) := by
+(n m : ℕ) : ∑ i : Fin n, ∑ j : Fin m, (2 ^ i * (1 + j)) =
+    ∑ j : Fin m, ∑ i : Fin n, (2 ^ i * (1 + j)) := by
   Hint "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um sicher zu sein.
 
   **Du**: Hast du nicht ein Lemma dafür?

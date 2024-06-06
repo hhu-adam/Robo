@@ -15,6 +15,10 @@ open Lean PrettyPrinter Delaborator SubExpr
 
 namespace Matrix
 
+-- RP'd to mathlib: #85107
+/-- Short notation for `n x m`-Matrices. -/
+notation (name := concreteMatrix) "Mat["n","m"]["R"]" => Matrix (Fin n) (Fin m) R
+
 /-- Unexpander for the notation `![![x, y, …], ![z, w, …], …]`.
 
 Note that `!![x, y, …; z, w, …; …]` expands to `Matrix.of ![![x, y, …], ![z, w, …], …]`,

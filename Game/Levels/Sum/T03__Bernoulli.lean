@@ -23,9 +23,10 @@ example (x : ℕ) (n : ℕ) : 1 + n * x ≤ (x + 1) ^ n := by
   rw [Nat.pow_succ]
   sorry
 
-example (n : ℕ) : (∑ i : Fin (n + 1), ↑(2 * i - 1)) = n ^ 2 := by
+example (n : ℕ) : (∑ i : Fin (n + 1), 2 * i - 1) = n ^ 2 := by
   induction' n with n hn
   simp
+  sorry
 
 #check Finset.sum_comm
 
