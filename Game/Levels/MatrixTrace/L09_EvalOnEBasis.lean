@@ -37,13 +37,13 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
    Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:
 
    **Du**: Ich glaube, ich habe eine Idee! Das `({n} + 1)`-fache der Gleichung kann ich mit den vorherigen Resulaten wie folgt nachrechnen:
-  $$\begin{aligned}
-    (n+1) \\cdot f(E_{i i})
-    &= \\sum_j f(E_{i i}) \\\\
-    &= \\sum_j f(E_{j j}) \\\\
+  $$\\begin\{aligned}
+    (n+1) \\cdot f(E_\{i i})
+    &= \\sum_j f(E_\{i i}) \\\\
+    &= \\sum_j f(E_\{j j}) \\\\
     &= f(1) \\\\
     &= n + 1
-    \\end{aligned}
+    \\end\{aligned}
   $$
 
   **Robo**: Du willst also zunächst ausnutzen, dass Multiplikation mit `({n} + 1)` injektiv ist?
