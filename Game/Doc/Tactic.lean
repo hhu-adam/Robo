@@ -151,7 +151,7 @@ TacticDoc constructor
 `contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.
 
 ## Details
-Ein Widerspruch in den Annahmen kann unter anderem folgendermassen aussehen:
+Ein Widerspruch in den Annahmen kann unter anderem folgendermaßen aussehen:
 
 * `(h : n ≠ n)`
 * `(h : A)` und `(h' : ¬A)`
@@ -530,7 +530,7 @@ Wenn man eine Annahme `(h : X = Y)` hat, kann man mit
 * `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.
 * `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).
 
-`rw` funktioniert gleichermassen mit Annahmen `(h : X = Y)` also auch
+`rw` funktioniert gleichermaßen mit Annahmen `(h : X = Y)` also auch
 mit Theoremen/Lemmas der Form `X = Y`
 -/
 TacticDoc rw
@@ -604,7 +604,26 @@ ist das Goal `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `sym
 -/
 TacticDoc symm
 
+/--
+Wenn man `X = Z` zeigen möchte, kann man mit
+`trans Y` einen Zwischenschritt `Y` einfügen.  
+Zu zeigen sind dann also `X = Y`  und `Y = Z`.
 
+## Details
+`trans` ist besondern gut geeignet, um eine Gleichung `X = Z ` 
+durch eine „Rechnung“ der Form `X = Y₁ = Y₂ = Y₃ … = Z` Schritt für Schritt nachzuweisen:
+
+* `trans Y₁`
+* Beweis von `X = Y₁`
+* `trans Y₂`
+* Beweis von `Y₁ = Y₂`
+* `trans Y₃`
+* …
+* Beweis von `… = Z`
+
+Genauso wie für Gleichungen `X = Z` funktioniert `trans` auch für Äquivalenzen `X ↔ Z` und gewisse transitive Relationen im Beweisziel.  
+-/
+TacticDoc trans
 
 /--
 `trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.

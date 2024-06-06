@@ -22,9 +22,11 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
   assumption
 Conclusion
 "
-**Du**: Das fühlte sich tatsächlich besser an.  Wir können weitermachen.
+**Robo**: Und, war das besser? 
+
+**Du**:  Weiß nicht.  Wir können jedenfalls weitermachen.
 "
 
-NewTactic trans -- TODO
+NewTactic trans
 
 DisabledTactic tauto rw nth_rw
