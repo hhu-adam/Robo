@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Implication"
-Level 11
+Level 12
 
 Title "by_cases"
 

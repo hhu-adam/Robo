@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Implication"
-Level 12
+Level 13
 
 Title "Lemmas"
 

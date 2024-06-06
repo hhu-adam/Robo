@@ -60,4 +60,3 @@ bei denen `{h₁}` vielleicht anwendbar ist."
     simp
 
 TheoremTab "Matrix"
-NewTactic trans -- TODO
