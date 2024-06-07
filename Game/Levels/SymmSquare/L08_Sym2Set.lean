@@ -49,7 +49,7 @@ theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
 
 Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A | S.card = 1 ∨ S.card = 2 } := by
   fconstructor
-  · exact Quot.lift (fun ⟨a, b⟩ => ⟨{a,b}, card_one_or_two a b ⟩) (by aesop)
+  · exact Quot.lift (fun ⟨a, b⟩ => ⟨{a,b}, card_pair_eq_one_or_two a b ⟩) (by aesop)
   · exact fun ⟨S, h⟩ => sorry
   · sorry
   · sorry

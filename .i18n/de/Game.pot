@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Jun  5 17:13:44 2024\n"
+"POT-Creation-Date: Thu Jun  6 14:33:45 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -3239,10 +3239,6 @@ msgstr ""
 msgid "$\\sum_{i=0}^{n-1} 2 = n × 2$."
 msgstr ""
 
-#: Game.Levels.Sum.L02_Sum
-msgid "simp!"
-msgstr ""
-
 #: Game.Levels.Sum.L03_Sum
 msgid "endliche Summe"
 msgstr ""
@@ -3349,7 +3345,7 @@ msgid "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?\n"
 "\n"
 "**Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,\n"
 "also die natürliche Abbildung `ℕ ↪ ℤ` benutzt. Oder hier, wenn ein Element `x : Fin n` als\n"
-"Element `(↑x : ℕ)` betrachtet wird."
+"Element `↑x : ℕ` betrachtet wird."
 msgstr ""
 
 #: Game.Levels.Sum.L04_ArithSum
