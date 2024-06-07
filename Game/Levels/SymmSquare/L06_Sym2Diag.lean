@@ -17,5 +17,5 @@ An an element of `Sym2 α` is on the diagonal if it is of the form `(a, a)`.
 
 open Sym2
 
-example {α : Type*} (s : Sym2 α) (sdiag : Sym2.IsDiag s) : { s : Finset α | s.card = 1} := by
-  sorry
+-- example {α : Type*} (s : Sym2 α) (sdiag : Sym2.IsDiag s) : { s : Finset α | s.card = 1} := by
+--   sorry
