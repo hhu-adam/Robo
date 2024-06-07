@@ -1,3 +1,10 @@
+-- imports used in custom tactics
+import Mathlib.Lean.Expr.Basic
+import Mathlib.Tactic.Cases
+import Mathlib.Tactic.LinearCombination
+import Mathlib.Tactic.Ring
+
+
 import Mathlib.Tactic
 import Mathlib.Data.Nat.Parity
 import Mathlib.Algebra.BigOperators.Fin
@@ -18,7 +25,3 @@ import Mathlib.Tactic.Have
 
 -- TODO
 import Mathlib
-
--- RP'd to mathlib: #85107
-/-- Short notation for `n x m`-Matrices. -/
-notation (name := concreteMatrix) "Mat["n","m"]["R"]" => Matrix (Fin n) (Fin m) R

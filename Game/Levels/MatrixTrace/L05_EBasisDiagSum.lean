@@ -97,9 +97,9 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
 
 -- TODO: Introduce in other planet
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc Finset.sum_subset as "Finset.sum_subset" in "Matrix"
+TheoremDoc Finset.sum_subset as "Finset.sum_subset" in "Finset"
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc Finset.subset_univ as "Finset.subset_univ" in "Matrix"
+TheoremDoc Finset.subset_univ as "Finset.subset_univ" in "Finset"
 /-- Zwei Funktionen sind gleich, wenn sie auf allen Elementen gleich sind.
 
 Wenn das Goal `f = g` ist, kann man mit `ext i`, ein Element `i` einführen, und dann zeigen,
