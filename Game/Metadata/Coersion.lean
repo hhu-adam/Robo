@@ -32,18 +32,12 @@ unsafe def addNatCoe' (p : Term) (i : Ident) : Term := { raw :=
   -- type without any hints.
   -- This also allows for sums of matrices to parse.
   | .node _ `Lean.Parser.Term.app _ => p.raw
+  -- Equality should be a function application too, but `a = b` and `Eq a b`
+  -- seem to be apriory different terms, so we exclude the former
   | .node _ `«term_=_» _ => p.raw
   -- On encountering a coersion of the form `(_ : Fin _)` we should stop
   | .node _ `Lean.Parser.Term.typeAscription #[_, _, _, .node _ `null #[.node _ `Lean.Parser.Term.app #[.ident _ _ `Fin _, _]], _] =>
     p.raw
-
-    -- dbg_trace "{a} {b} {c} {d} {e}"
-
-    -- let x : Syntax := .node info `Lean.Parser.Term.typeAscription
-    --     #[.atom info "(", .ident info "i" `i default, .atom info ":", .node info `null
-    --       #[.node info `Lean.Parser.Term.app #[.ident info "Fin" `Fin default, .ident info "n" `n default]], .atom info ")"]
-    -- dbg_trace "{x}\n"
-
   | .node info kind args =>
     -- go recursively into each node
     .node info kind (args.map (addNatCoe' ⟨·⟩ i))
@@ -67,8 +61,6 @@ def addNatCoe (p : Term) (i : Ident) : Term := p
 scoped macro_rules (kind := BigOperators.bigsum)
   | `(∑ $i:ident, $body) => `(Finset.sum Finset.univ (fun $i:ident ↦ $(addNatCoe body i)))
   | `(∑ $i:ident : $t, $body) => `(Finset.sum Finset.univ (fun $i:ident : $t ↦ $(addNatCoe body i)))
-
-
 
 open Lean PrettyPrinter.Delaborator SubExpr in
 
