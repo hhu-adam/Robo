@@ -43,8 +43,8 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   $$
   \\begin\{aligned}
     f(A) 
-     = f( \\sum_\{i,j} A_\{i,j} ⬝ E_\{i,j} ) \\\\
-    &= \\sum_\{i,j} A_\{i,j} ⬝ f(E_\{i,j}) \\\\
+    &= f\\left( \\sum_\{i,j} A_\{i,j} ⬝ E_\{i,j} \\right) \\\\
+    &= \\sum_\{i,j} A_\{i,j} ⬝ f(E_\{i,j})   \\\\
     &= \\sum_\{i,j} A_\{i,i} ⬝ f(E_\{i,i}) 
   \\end\{aligned}
   $$
