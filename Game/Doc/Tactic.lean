@@ -122,11 +122,11 @@ TacticDoc change
 
 
 /--
-`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist
+`constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.
 
 ## Detail
-Wenn das Goal eine Struktur ist, wie z.B. `A ∧ B` welches zwei Felder hat `⟨A, B⟩`, dann
-erzeugt `constructor` ein Goal pro Feld der Struktur.
+Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`. 
+Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.
 
 ## Hilfreiche Resultate
 
