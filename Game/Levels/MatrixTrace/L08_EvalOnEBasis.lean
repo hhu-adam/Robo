@@ -88,7 +88,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     Hint (hidden := true) "**Robo**: Vielleicht gleich nocheinmal?"
     congr
     ext j
-    Hint "**Du**: Und jetzt Fallunterscheidung zu `i = j`…"
+    Hint "**Du**: Und jetzt Fallunterscheidung zu `{i} = {j}`…"
     Hint (hidden := true) "**Robo**: `by_cases` war das, genau!"
     by_cases h₂ : i = j
     · Hint "**Robo**: Hier ist `if_pos {h₂}` nützlich."
