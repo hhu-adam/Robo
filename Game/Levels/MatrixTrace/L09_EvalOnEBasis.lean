@@ -36,7 +36,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   Hint "
    Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:
 
-   **Du**: Ich glaube, ich habe eine Idee! Das `({n} + 1)`-fache der Gleichung kann ich mit den vorherigen Resulaten wie folgt nachrechnen:
+   **Du**: Ich glaube, ich habe eine Idee! Das `({n} + 1)`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:
   $$
     \\begin\{aligned}
     (n+1) \\cdot f(E_\{i i})
