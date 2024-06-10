@@ -51,16 +51,35 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
 
   **Robo**: So sieht's aus. Und `A i j` ist einfach der Eintrag der Matrix `A` an der Position `(i, j)`.
 
-  **Du**: Ah, verstehe. Da steht also kein Produkt von Matrizen, sondern nur eine Skalarmultiplikation. Dann ist das ja einfach.
+  **Du**: Ah, verstehe. Da steht also kein Produkt von Matrizen, sondern nur eine Skalarmultiplikation. Etwas in der Art von …
 
-  **Robo**: Ja. Ich denke wenn du mit `unfold E` anfängst, geht der Rest wie von selbst.
+  Du kritzelst auf das Papier:
+
+  $$
+  A_\{i,j} \\cdot 
+  \\begin\{pmatrix}
+  0 & 0 & 0\\\\
+  1 & 0 & 0 \\\\
+  0 & 0 & 0 
+  \\end\{pmatrix}
+  =
+  \\begin\{pmatrix}
+  0 & 0 & 0\\\\
+  A_\{i,j} & 0 & 0 \\\\
+  0 & 0 & 0 
+  \\end\{pmatrix}
+  $$
+
+  **Du**: Dann ist das ja mal wieder… …offensichtlich!?
+
+  **Robo**: Ja. Ich denke, wenn du mit `unfold E` anfängst, geht der Rest wie von selbst.
   "
   unfold E
   simp
 
-Conclusion "**Du**: Ob das wohl was bringt?
+Conclusion "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?
 
-**Robo**: Ich speichere das mal als `Matrix.smul_ebasis` ab, falls wir es nochmals
+**Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als `Matrix.smul_ebasis` ab, falls wir es nochmals
 brauchen.
 
 Damit folgt ihr weiter der Spur.

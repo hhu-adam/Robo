@@ -36,9 +36,24 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     (h₁ : ∀ A B, f (A * B) = f (B * A))
     (A : Mat[n,n][ℝ]) :
     f A = ∑ i : Fin n, (A i i) * f (E i i) := by
-  Hint "**Du**: Ich versteh beim besten Willen nicht, was das jetzt soll! 
-  Vermutlich sollte ich das `A` in `f A` als Summe von Basismatrizen
-  schreiben, nicht aber das andere `A` weiter hinten.
+  Hint "**Du**: Was das wohl jetzt soll …?
+  
+  Du kritzelst einen bisschen herum.
+
+  $$
+  \\begin\{aligned}
+    f(A) 
+     = f( \\sum_\{i,j} A_\{i,j} ⬝ E_\{i,j} ) \\\\
+    &= \\sum_\{i,j} A_\{i,j} ⬝ f(E_\{i,j}) \\\\
+    &= \\sum_\{i,j} A_\{i,i} ⬝ f(E_\{i,i}) 
+  \\end\{aligned}
+  $$
+
+  **Du**: Ja, so könnte das gehen.  Ich schreibe `A` als Summe von Basismatrizen,
+  nutze dann die Linearität, und zuletzt, dass `f` auf den `E i j` mit `i ≠ j` verschwindet.
+
+  Vermutlich sollte ich also als erstes das `A` in `f A` als Summe von Basismatrizen
+  schreiben, nicht aber das andere `A` weiter hinten.   
 
   **Robo** (*aus der Ferne*): `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
   Hint (hidden := true) "**Du** (*schreiend*): Was meinst du damit?
@@ -50,20 +65,18 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
       Hint "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee. 
       Das sieht zu kompliziert aus. Lass es mich doch mit `nth_rw` versuchen."
   nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
-  Hint "**Du** (*in Gedanken*): Jetzt die Funktion in die Summe rein… Und ja nicht an Wasser denken…
+  Hint "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser denken…
     Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
-  Hint "**Robo** (*von irgendwo*): Das klingt nach `map_sum`, aber das hatten wir
-  auf Babylon nicht gesehen, das fantasierst du. Aber `simp` kennt dieses Lemma sonst auch."
+  Hint "**Robo** (*von irgendwo*): Das klingt nach `map_sum`.  Glaub nicht, dass wir
+  das auf Babylon gesehen haben, das fantasierst du. Aber `simp` kennt dieses Lemma bestimmt."
   Branch
     simp
   rw [map_sum] -- simp knows this
   Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
   simp
-  Hint "**Du**: Die Summe der Summe der Summe der…
+  Hint "**Robo*: Wie weit bist du jetzt?
 
-  **Robo*: Hey, woran bist du eigentlich?
-
-  **Du**: Keine Ahnung!
+  **Du**: Ich muss noch irgendwie einbringen, dass `f` auf den `E i j` mit `i≠j` verschwindet.
 
   **Robo**: Mach doch folgenden Zwischenschritt:
 

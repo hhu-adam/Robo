@@ -13,7 +13,7 @@ Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergament
 Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
 
 Conclusion "
-Du beschliesst einer besonders markanten Spur zu folgen. Robo zieht dir hinterher und schnappt
+Du beschließt, einer besonders markanten Spur zu folgen. Robo zieht dir hinterher und schnappt
 sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
 "
 
