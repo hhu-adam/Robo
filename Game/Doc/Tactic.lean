@@ -329,10 +329,14 @@ TacticDoc left
 * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber
   Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht
   beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
+* `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht.
 -/
 TacticDoc «let»
 
-
+/--
+`set f := _` funktioniert wie `let` aber versucht auch `f` im Goal überall einzusetzen.
+-/
+TacticDoc set
 
 /--
 `linarith` löst Systeme linearer (Un-)Gleichungen.
