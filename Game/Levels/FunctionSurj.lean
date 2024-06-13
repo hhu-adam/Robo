@@ -12,7 +12,7 @@ import Game.Levels.FunctionSurj.L11_SurjectiveHasRightInverse
 import Game.Levels.FunctionSurj.L12_SurjectiveTFAE
 
 World "FunctionSurj"
-Title "[WIP] Funktionen"
+Title "Surjektivität"
 
 Image "images/Librarian.png"
 

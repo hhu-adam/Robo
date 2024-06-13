@@ -9,7 +9,7 @@ import Game.Levels.FunctionBij.L08_Diagonal
 import Game.Levels.FunctionBij.L09_Preimage_Injective
 
 World "FunctionBij"
-Title "[WIP] Funktionen"
+Title "Bijektivität"
 
 Image "images/Librarian.png"
 

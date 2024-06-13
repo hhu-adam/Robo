@@ -12,7 +12,7 @@ import Game.Levels.FunctionInj.L11_InjHasLeftInv
 
 
 World "FunctionInj"
-Title "[WIP] Funktionen"
+Title "Injektivität"
 
 Image "images/Librarian.png"
 
