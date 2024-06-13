@@ -48,4 +48,4 @@ Statement : ![ (2 : ℚ), 5 ] + ![ 1/2, -7 ] = ![5/2, -2] := by
   simp <;>
   ring
 
-NewTactic fin_cases funext
+NewTactic fin_cases

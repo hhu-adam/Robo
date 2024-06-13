@@ -67,5 +67,4 @@ Statement (S T : Set ℕ) (f : ℕ → ℕ) : (f '' S) ∪ (f '' T) = f '' (S �
   assumption
   assumption
 
-NewTactic ext
 TheoremTab "Set"

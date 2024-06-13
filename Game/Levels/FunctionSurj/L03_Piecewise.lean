@@ -62,7 +62,8 @@ Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den
 Durchgang frei.
 "
 
-NewTactic ext -- TODO: could also use `funext`
+NewTactic ext
+NewHiddenTactic funext
 
 /--
 Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert

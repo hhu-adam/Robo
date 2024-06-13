@@ -52,8 +52,4 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoi
     use x
     trivial
 
-/---/
-TheoremDoc congr_fun as "congr_fun" in "Function"
-
-NewTheorem congr_fun -- TODO
 TheoremTab "Function"
