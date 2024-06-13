@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jun 10 15:50:11 2024\n"
+"POT-Creation-Date: Thu Jun 13 14:22:57 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -162,11 +162,11 @@ msgid "`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das a
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`constructor` teilt ein Goal auf, wenn das Goal eine Struktur ist\n"
+msgid "`constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.\n"
 "\n"
 "## Detail\n"
-"Wenn das Goal eine Struktur ist, wie z.B. `A ∧ B` welches zwei Felder hat `⟨A, B⟩`, dann\n"
-"erzeugt `constructor` ein Goal pro Feld der Struktur.\n"
+"Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`.\n"
+"Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.\n"
 "\n"
 "## Hilfreiche Resultate\n"
 "\n"
@@ -577,11 +577,11 @@ msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Wenn man `X = Z` zeigen möchte, kann man mit\n"
-"`trans Y` einen Zwischenschritt `Y` einfügen.  \n"
+"`trans Y` einen Zwischenschritt `Y` einfügen.\n"
 "Zu zeigen sind dann also `X = Y`  und `Y = Z`.\n"
 "\n"
 "## Details\n"
-"`trans` ist besondern gut geeignet, um eine Gleichung `X = Z ` \n"
+"`trans` ist besondern gut geeignet, um eine Gleichung `X = Z `\n"
 "durch eine „Rechnung“ der Form `X = Y₁ = Y₂ = Y₃ … = Z` Schritt für Schritt nachzuweisen:\n"
 "\n"
 "* `trans Y₁`\n"
@@ -631,6 +631,10 @@ msgid "Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konk
 "\n"
 "`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt\n"
 "schließen."
+msgstr ""
+
+#: Game.Doc.Tactic
+msgid "`tauto` proves all logical tautologies."
 msgstr ""
 
 #: Game.Levels.Contradiction.L01_Have
@@ -4679,7 +4683,7 @@ msgid "**Robo**: Vielleicht gleich nocheinmal?"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
-msgid "**Du**: Und jetzt Fallunterscheidung zu `i = j`…"
+msgid "**Du**: Und jetzt Fallunterscheidung zu `«{i}» = «{j}»`…"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L08_EvalOnEBasis
@@ -4742,7 +4746,7 @@ msgstr ""
 #: Game.Levels.MatrixTrace.L09_EvalOnEBasis
 msgid "Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:\n"
 "\n"
-"**Du**: Ich glaube, ich habe eine Idee! Das `(«{n}» + 1)`-fache der Gleichung kann ich mit den vorherigen Resulaten wie folgt nachrechnen:\n"
+"**Du**: Ich glaube, ich habe eine Idee! Das `(«{n}» + 1)`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:\n"
 "$$\n"
 "\\begin{aligned}\n"
 "(n+1) \\cdot f(E_{i i})\n"

@@ -125,7 +125,7 @@ TacticDoc change
 `constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.
 
 ## Detail
-Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`. 
+Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`.
 Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.
 
 ## Hilfreiche Resultate
@@ -606,11 +606,11 @@ TacticDoc symm
 
 /--
 Wenn man `X = Z` zeigen möchte, kann man mit
-`trans Y` einen Zwischenschritt `Y` einfügen.  
+`trans Y` einen Zwischenschritt `Y` einfügen.
 Zu zeigen sind dann also `X = Y`  und `Y = Z`.
 
 ## Details
-`trans` ist besondern gut geeignet, um eine Gleichung `X = Z ` 
+`trans` ist besondern gut geeignet, um eine Gleichung `X = Z `
 durch eine „Rechnung“ der Form `X = Y₁ = Y₂ = Y₃ … = Z` Schritt für Schritt nachzuweisen:
 
 * `trans Y₁`
@@ -621,7 +621,7 @@ durch eine „Rechnung“ der Form `X = Y₁ = Y₂ = Y₃ … = Z` Schritt für
 * …
 * Beweis von `… = Z`
 
-Genauso wie für Gleichungen `X = Z` funktioniert `trans` auch für Äquivalenzen `X ↔ Z` und gewisse transitive Relationen im Beweisziel.  
+Genauso wie für Gleichungen `X = Z` funktioniert `trans` auch für Äquivalenzen `X ↔ Z` und gewisse transitive Relationen im Beweisziel.
 -/
 TacticDoc trans
 
@@ -669,3 +669,6 @@ mit dem man das Goal beweisen möchte.
 schließen.
 -/
 TacticDoc use
+
+/-- `tauto` proves all logical tautologies.-/
+TacticDoc tauto

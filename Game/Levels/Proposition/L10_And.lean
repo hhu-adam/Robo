@@ -22,9 +22,9 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
     Und h₁ schreibst du einfach als `h\\1`. Aber du kannst dir auch einfach andere Namen
     für `h₁` und `h₂`, zum Beispiel `rcases {h} with ⟨hA, hBC⟩`"
   Branch
-    rcases h with ⟨h₁, h₂⟩
+    rcases h with ⟨_h₁, _h₂⟩
     Hint "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
-  rcases h with ⟨_, ⟨g , _⟩⟩
+  rcases h with ⟨_left, ⟨g , _right⟩⟩
   Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
   assumption
 
