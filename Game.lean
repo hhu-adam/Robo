@@ -87,7 +87,12 @@ CoverImage "images/cover.png"
 
 --Dependency Sum → FunctionSurj
 
+Dependency FunctionInj → FunctionBij -- Because of def `Injective`
+
 -- set_option lean4game.showDependencyReasons true
+
+-- need to open all namespaces with local definitions
+open BigOperators
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame
