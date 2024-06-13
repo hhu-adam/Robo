@@ -403,6 +403,9 @@ erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechte
 -/
 TacticDoc rcases
 
+-- TODO:
+/-- obtain ⟨arg1, arg2⟩ := h decomposes `h` to its parts `arg1` and `arg2`-/
+TacticDoc obtain
 
 
 /--

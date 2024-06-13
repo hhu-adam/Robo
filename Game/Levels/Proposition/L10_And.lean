@@ -34,5 +34,5 @@ Conclusion
 `rcases h with ⟨h₁, ⟨h₂ , h₃⟩⟩`.
 "
 
-NewTactic rcases
+NewTactic rcases obtain --TODO: remove `rcases` and replace by `obtain`.
 DisabledTactic tauto

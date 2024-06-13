@@ -1,7 +1,9 @@
 import Game.Metadata
 
 import Game.Levels.Contradiction
-import Game.Levels.OLDFunction
+import Game.Levels.FunctionSurj
+import Game.Levels.FunctionInj
+import Game.Levels.FunctionBij
 import Game.Levels.Implication
 import Game.Levels.Inequality
 import Game.Levels.Predicate
@@ -83,7 +85,7 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/cover.png"
 
-Dependency Sum → Function
+--Dependency Sum → FunctionSurj
 
 -- set_option lean4game.showDependencyReasons true
 
