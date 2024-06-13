@@ -15,9 +15,7 @@ Title "Span"
 
 /- # Introduction
 
-The universal property of the submodule `Submodule.span K S`  spanned by a set
-`S : Set M` is that `x ∈ Submodule.span K S` iff `x ∈ P` for any submodule `P`
-containing `S`.
+
 
 -/
 
@@ -35,7 +33,6 @@ example {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
   have h₃ := by apply powers_span_commute h₁ h₂
   rw [Matrix.E.mul_same, Matrix.E.mul_same] at h₃
   simp at h₃
-  --revert h₃
   have := (congr_fun₂ h₃ 0 0)
   simp at this
   unfold E at this
