@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jun 13 16:28:37 2024\n"
+"POT-Creation-Date: Thu Jun 13 17:48:01 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -338,7 +338,12 @@ msgid "`let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.\n"
 "\n"
 "* `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber\n"
 "  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht\n"
-"  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar."
+"  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.\n"
+"* `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht."
+msgstr ""
+
+#: Game.Doc.Tactic
+msgid "`set f := _` funktioniert wie `let` aber versucht auch `f` im Goal überall einzusetzen."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -2224,6 +2229,10 @@ msgstr ""
 msgid ""
 msgstr ""
 
+#: Game.Levels.FunctionSurj.L06_RightInverse
+msgid "`set` funktioniert wie `let` aber setzt die neue Definition auch im Goal gleich ein."
+msgstr ""
+
 #: Game.Levels.FunctionSurj.L07_RightInverse
 msgid "Does it have a right inverse?"
 msgstr ""
@@ -2357,7 +2366,7 @@ msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is 
 msgstr ""
 
 #: Game.Levels.FunctionSurj
-msgid "[WIP] Funktionen"
+msgid "Surjektivität"
 msgstr ""
 
 #: Game.Levels.FunctionSurj
@@ -2611,7 +2620,7 @@ msgid "In this level you show that an injective function with a nonempty domain 
 msgstr ""
 
 #: Game.Levels.FunctionInj
-msgid "[WIP] Funktionen"
+msgid "Injektivität"
 msgstr ""
 
 #: Game.Levels.FunctionInj
@@ -2795,7 +2804,7 @@ msgid "Now `change (f ⁻¹' {«{y}»}).Nonempty`"
 msgstr ""
 
 #: Game.Levels.FunctionBij
-msgid "[WIP] Funktionen"
+msgid "Bijektivität"
 msgstr ""
 
 #: Game.Levels.FunctionBij
@@ -5419,10 +5428,6 @@ msgstr ""
 
 #: Game.Levels.Cantor.L06_idempotent
 msgid "**Robo**: Wir hatten einmal `Function.comp_apply`!"
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt

@@ -63,7 +63,6 @@ TheoremDoc Odd.strictMono_pow as "Odd.strictMono_pow" in "Function"
 /-- Wenn `f,g` beide strikt monoton sind, dann ist es `f + g` auch. -/
 TheoremDoc StrictMono.add as "StrictMono.add" in "Function"
 
-NewDefinition Injective
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow
 TheoremTab "Function"
 
