@@ -34,7 +34,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   Hint "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendensystem für den Raum der Matrizen bilden.
 
     **Robo**: Da kannst du bestimmt gleich die Resultate anwenden, die wir schon gefunden haben!"
-  Hint (hidden := true) "**Robo**: Unter Summen braucht man `simp_rw`."
+  Hint (hidden := true) "**Robo**: Schau zuerst den Ausdruck `(A i j) • E i j` an. Unter Summen braucht man `simp_rw`."
   Branch
     unfold E
     Hint "**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament wiederholen.
