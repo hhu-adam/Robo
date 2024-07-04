@@ -16,6 +16,9 @@ In this level, you will prove that if `g` is a right inverse of `f`, then the co
 equals the identity function on `B`.
 
 "
+-- TODO: introduce comp_apply
+-- TODO: introduce congr_fun
+
 
 open Function
 
@@ -33,11 +36,11 @@ Statement rightInverse_iff_comp {A B : Type} {f : A -> B} {g : B -> A} :
       apply congr_fun
     intro h
     intro x
+    -- TODO: Insert a Hint here about rw [← comp_apply] not working as expected.
     Branch
       rw [← @comp_apply _ _ _ f g x, h]
       simp
-    have h' := congr_fun h
-    apply h'
+    apply congr_fun h
 
 NewTactic congr
 NewHiddenTactic funext -- TODO: mention funext in the docs for ext
