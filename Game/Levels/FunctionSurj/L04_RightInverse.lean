@@ -37,9 +37,10 @@ Statement rightInverse_iff_comp {A B : Type} {f : A -> B} {g : B -> A} :
     intro h
     intro x
     -- TODO: Insert a Hint here about rw [← comp_apply] not working as expected.
+    -- rw [← comp_apply (f:= f)] works.
     Branch
-      rw [← @comp_apply _ _ _ f g x, h]
-      simp
+      apply congr_fun at h
+      apply h
     apply congr_fun h
 
 NewTactic congr
