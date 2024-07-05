@@ -60,24 +60,25 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   -- have h : {i} ⊆ (Finset.univ : Fin n) := Finset.subset_univ {i}
   rw [← Finset.sum_subset (Finset.subset_univ {i})] -- TODO: better hint once lemmas are introduced
   · Hint "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,
-    bei diesem ist `1 i i` wieder Eins, und `1 • _` vereinfacht sich auch!"
+    bei diesem ist `1 {i} {i}` wieder Eins, und `1 • _` vereinfacht sich auch!"
     Hint (hidden := true) "**Robo**: `simp` klingt wirklich nach einer guten Idee."
     simp
   · intro x h₁ h₂
     clear h₁ -- not needed
-    Hint "**Du**: Aber was mache ich hier? `{h₂}` sagt ja mehr oder weniger dass `i ≠ x` ist.
+    Hint "**Du**: Aber was mache ich hier? `{h₂}` sagt ja mehr oder weniger dass `{i} ≠ {x}` ist.
 
-    **Robo**: Ja, aber nicht ganz. Führ das doch mit `have h₃ : i ≠ x` ein und zeig das kurz!"
+    **Robo**: Ja, aber nicht ganz. Führ das doch mit `have h₃ : {i} ≠ {x}` ein und zeig das kurz!"
     -- TODO: There are other ways to get `i ≠ x`!
     Branch
       have h₃ : x ≠ i
       Hint "**Robo**: Umgekehrt wäre es nützlicher, da
-      `1 i x` als `if i = x then _ else _` definiert ist!
+      `1 {i} {x}` als `if {i} = {x} then _ else _` definiert ist!
 
-      **Du**: Du hast recht, ich brauch gleich `i = x` oder `i ≠ x`. Lass mich das ändern."
+      **Du**: Du hast recht, ich brauch gleich `{i} = {x}` oder `{i} ≠ {x}`. Lass mich das ändern."
     have h₃ : i ≠ x
     · Hint "**Du**: Als erstes würde ich mal schauen, ob sich `{h₂}` vereinfacht."
       simp at h₂
+      -- TODO : `tauto` already solves this.
       Hint "**Du**: Hmm, jetzt ist das erstmal verdreht.
 
       **Robo**: Erinnere dich an `symm`!
@@ -111,7 +112,6 @@ TacticDoc ext
 /-- `congr` versucht, eine Gleichung `_ = _` auf eine Gleichung von Untertermen zu reduzieren. Zum
 Beispiel ein Goal der Form `f a = f b` wird durch `congr` zu `a = b` reduziert. -/
 TacticDoc congr
-
 
 NewTheorem Matrix.one_apply Finset.sum_subset Finset.subset_univ
 
