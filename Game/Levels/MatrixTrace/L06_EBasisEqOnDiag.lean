@@ -41,22 +41,26 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
 
   **Robo**: Lass es uns herausfinden!"
   intro i j
-  Hint "**Du**: Aber was soll ich denn mit unserer Annahme `{h₁}` anfangen!
-  Ich müsste überhaupt erst einmal eine Multiplikation haben.
+  Branch
+    Hint "**Du**: Aber was soll ich denn mit unserer Annahme `{h₁}` anfangen!
+    Ich müsste überhaupt erst einmal eine Multiplikation haben.
 
-  **Robo**: Du müsstest ein Matrizenprodukt `A * B` finden, für das  `f (E i i) = f (A * B) = f (E j j)` gilt.
-  Dann könnstest du `trans f (A * B)` schreiben, um zwei Beweisziele – `f (E i i) = f (A * B)` und `f (A * B) = f (E j j)` – zu erhalten,
-bei denen `{h₁}` vielleicht anwendbar ist."
-  Hint (hidden := true) "**Robo**: Hatten wir nicht `E i k = (E i j) * (E j k)` auf einem dieser Zettel?"
-  trans f (E i j * E j i)
-  · unfold E
-    simp
-  · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h₁}` brauchen
-    wolltest?
+    **Robo**: Du müsstest ein Matrizenprodukt `A * B` finden, für das  `f (E i i) = f (A * B) = f (E j j)` gilt.
+    Dann könnstest du `trans f (A * B)` schreiben, um zwei Beweisziele – `f (E i i) = f (A * B)` und `f (A * B) = f (E j j)` – zu erhalten,
+  bei denen `{h₁}` vielleicht anwendbar ist."
+    Hint (hidden := true) "**Robo**: Hatten wir nicht `E i k = (E i j) * (E j k)` auf einem dieser Zettel?"
+    trans f (E i j * E j i)
+    · unfold E
+      simp
+    · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h₁}` brauchen
+      wolltest?
 
-    **Du**: Ah ja, stimmt!"
-    rw [h₁]
-    unfold E
-    simp
+      **Du**: Ah ja, stimmt!"
+      rw [h₁]
+      unfold E
+      simp
+  have w := h₁ (E i j) (E j i)
+  simp [E.mul_same] at w
+  assumption
 
 TheoremTab "Matrix"
