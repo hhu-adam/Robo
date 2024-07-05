@@ -9,7 +9,7 @@ Introduction
 "
 Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgestrichen ist.
 
-**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren nicht.
+**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren uns nicht.
 
 "
 
@@ -25,6 +25,11 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :
     ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
+  Branch
+    have w := h₁ (E i j) (E j j)
+    simp [E.mul_same, E.mul_of_ne _ _ hne] at w
+    simp [E.mul_of_ne _ _ hne.symm] at w
+    assumption
   Hint "**Robo**: Wie könnten wir denn hier `{h₁}` verwenden?
 
   **Du**: Wie wär's, wenn wir diesmal `E i j` als Produkt `E i j * E j j` schreiben?
@@ -46,6 +51,8 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     · simp
     · symm
       assumption
+
+
 
 NewTheorem Matrix.E.mul_of_ne
 TheoremTab "Matrix"
