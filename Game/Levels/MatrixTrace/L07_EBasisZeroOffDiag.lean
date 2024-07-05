@@ -26,31 +26,32 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
   Branch
-    have w := h₁ (E i j) (E j j)
-    simp [E.mul_same, E.mul_of_ne _ _ hne] at w
-    simp [E.mul_of_ne _ _ hne.symm] at w
-    assumption
-  Hint "**Robo**: Wie könnten wir denn hier `{h₁}` verwenden?
+    Hint "**Robo**: Wie könnten wir denn hier `{h₁}` verwenden?
 
-  **Du**: Wie wär's, wenn wir diesmal `E i j` als Produkt `E i j * E j j` schreiben?
+    **Du**: Wie wär's, wenn wir diesmal `E i j` als Produkt `E i j * E j j` schreiben?
 
-  **Robo**:  Wieso gerade so?
+    **Robo**:  Wieso gerade so?
 
-  **Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich Null!  Hatten wir doch auch schon, `E.mul_of_ne` oder so etwas."
-  Hint (hidden := true) "**Robo*: Wie du meinst. Dann probier doch am besten `trans f (E i j * E j j)`."
-  trans f (E i j * E j j)
-  · Hint (hidden := true) "**Du**: Ehm, das sehe ich einfach von der Definition.
+    **Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich Null!  Hatten wir doch auch schon, `E.mul_of_ne` oder so etwas."
+    Hint (hidden := true) "**Robo*: Wie du meinst. Dann probier doch am besten `trans f (E i j * E j j)`."
+    trans f (E i j * E j j)
+    · Hint (hidden := true) "**Du**: Ehm, das sehe ich einfach von der Definition.
 
-    **Robo**: Vergiss nicht `unfold E`, oder sag `simp`, dass es die Definition von `E` benutzen soll (`simp [E]`)."
-    simp [E]
-  · Hint "**Robo**: Und hier wolltest du jetzt kommutieren?
+      **Robo**: Vergiss nicht `unfold E`, oder sag `simp`, dass es die Definition von `E` benutzen soll (`simp [E]`)."
+      simp [E]
+    · Hint "**Robo**: Und hier wolltest du jetzt kommutieren?
 
-    **Du**: Genau!"
-    rw [h₁]
-    rw [E.mul_of_ne] -- Lvl 2
-    · simp
-    · symm
-      assumption
+      **Du**: Genau!"
+      rw [h₁]
+      rw [E.mul_of_ne] -- Lvl 2
+      · simp
+      · symm
+        assumption
+  have w := h₁ (E i j) (E j j)
+  simp [E.mul_same, E.mul_of_ne _ _ hne] at w
+  simp [E.mul_of_ne _ _ hne.symm] at w
+  assumption
+
 
 
 
