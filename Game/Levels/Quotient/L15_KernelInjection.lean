@@ -17,13 +17,13 @@ Given a map `f : A → B`, the theorem `ker_lift_injective` says that the canoni
 
 open Function Set Setoid Quotient
 
--- #check Setoid.ker_lift_injective
+--#check Setoid.ker_lift_injective
 
-Statement {f : A → B} :
-    have respects_ker_rel : ∀ (a b : A), (ker f).Rel a b → f a = f b := by
+Statement ker_lift_injective (f : A → B) :
+    have H : ∀ (a b : A), (ker f).Rel a b → f a = f b := by
       intro a b h
       assumption
-    Injective (Quotient.lift (s:= ker f) f respects_ker_rel) := by
+    Injective (Quotient.lift (s:= ker f) f H) := by
   intro x y h
   obtain ⟨a, ha⟩ := Quotient.exists_rep x
   obtain ⟨b, hb⟩ := Quotient.exists_rep y

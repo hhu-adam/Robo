@@ -15,7 +15,8 @@ Diagonalargument.
 
 open Function Set
 
-Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) : range f = fixedPoints f := by
+Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) :
+    range f = fixedPoints f := by
   Hint "**Du**: Etwas womit ich unsicher bin, wie spielt da wohl `{f} ∘ {f} = {f}` mit rein?
 
   **Robo**: Vermutlich willst du das irgendwann auf ein bestimmtes `x` anwenden.

@@ -18,27 +18,24 @@ lift map from  `A/ker f → B` is injective.
 
 open Function Set Setoid Quotient
 
-section
-variable (f : A → B)
-#check ker_lift_injective (rangeFactorization f)
-end
 Statement bijective_quotient_lift_range_fac (f : A → B) :
     Bijective (Quotient.lift (rangeFactorization f) respects_ker_rel) := by
   constructor
-  · intro a b h
-    apply ker_lift_injective (rangeFactorization f) h
-    rcases x with ⟨a⟩
-    --obtain ⟨a, ha⟩ := Quotient.exists_rep x
-    rcases y with ⟨b⟩
-    --obtain ⟨b, hb⟩ := Quotient.exists_rep y
-    injections
+  · intro q q' h
+    obtain ⟨a, ha⟩ := Quotient.exists_rep q
+    obtain ⟨a', ha'⟩ := Quotient.exists_rep q'
+    rw [← ha, ← ha'] at h
+    simp [Quotient.lift_mk] at h
+    rw [← ha, ← ha']
+    simpa [rangeFactorization] using h
   · intro ⟨b, a, h⟩
     use Quotient.mk (ker f) a
     apply Subtype.ext
     exact h
 
 -- Remark: another way to prove the injectivity and surjectivity of the quotient lift is to use
---the cancellation properties. This would still use `ker_lift_injective`
+--the cancellation properties. This would use `ker_lift_injective`
+-- `ker_lift_injective (rangeFactorization f)`
 
 NewTheorem bijective_quotient_lift_range_fac
 TheoremTab "Quotient"

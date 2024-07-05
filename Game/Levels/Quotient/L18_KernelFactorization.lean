@@ -1,5 +1,7 @@
 import Game.Metadata
-import Game.Levels.Quotient.L13_KernelRespect
+import Game.Levels.Quotient.L13_KernelSurjection
+import Game.Levels.Quotient.L14_KernelRespect
+import Game.Levels.Quotient.L16_KernelBijection
 
 World "Quotient"
 Level 18
@@ -14,8 +16,6 @@ a surjection, `i` is a bijection, and `m` is an injection.
 
 open Set Function Setoid
 
-#check Function.comp
-
 Statement (A : Type) (B : Type) (f : A -> B) :
     ∃ (C : Type) (D : Type) (q : A -> C) (i : C -> D) (m : D -> B),
     f = m ∘ i ∘ q ∧ Surjective q ∧ Bijective i ∧ Injective m := by
@@ -24,12 +24,12 @@ Statement (A : Type) (B : Type) (f : A -> B) :
   use (Quotient.mk (ker f))
   use (Quotient.lift (rangeFactorization f) respects_ker_rel)
   use Subtype.val
-  Branch
-    fconstructor
-    · rfl
-    · exact surjective_quotient_mk_ker f
-    · exact bijective_quotient_lift_range_fac f
-    · exact Subtype.val_injective
+  -- Branch
+  --   fconstructor
+  --   · rfl
+  --   · sorry --exact surjective_quotient_mk_ker f
+  --   · sorry -- exact bijective_quotient_lift_range_fac f
+  --   · exact Subtype.val_injective
   simp
   constructor
   · apply surjective_quotient_mk_ker
