@@ -15,7 +15,7 @@ open Function Set
 
 attribute [local instance] Classical.propDecidable
 
-Statement Injective.hasLeftInverse [Nonempty A] (f : A → B) (hf : Injective f) :
+Statement Injective.hasLeftInverse {A B : Type} [Nonempty A] (f : A → B) (hf : Injective f) :
     HasLeftInverse f := by
   let finv : B → A := fun b => if h : ∃ x, f x = b then h.choose else Classical.arbitrary A
   use finv

@@ -13,7 +13,7 @@ Introduction
 
 open Function
 
-Statement HasLeftInverse.injective {f : α → β} (h : HasLeftInverse f) :
+Statement HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     Injective f := by
   obtain ⟨finv, inv⟩ := h
   intro a b eq

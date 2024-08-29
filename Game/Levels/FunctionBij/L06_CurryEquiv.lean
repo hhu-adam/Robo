@@ -1,5 +1,6 @@
 import Game.Metadata
 
+universe u₁ u₂ u₃
 
 World "FunctionBij"
 Level 6

@@ -16,7 +16,7 @@ Aufgabe nochmals lösen."
 
 open Function Set
 
-Statement cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) (s : Y → Y) :
+Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hsurj : Surjective f) (s : Y → Y) :
     ∃ x, IsFixedPt s x := by
   Hint (strict := true) "**Cantor**: Mit der Aufgabe vorhin könnt
   ihr sicher herausfinden, was das richtige `c : A → Y` ist, auf das ihr die Surjektivität

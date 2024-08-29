@@ -18,7 +18,7 @@ Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : Y → Y` einen
 
 open Function Set
 
-Statement cantor_diagonal_isFixedPt {f : A → A → Y} {s : Y → Y}
+Statement cantor_diagonal_isFixedPt {A Y : Type} {f : A → A → Y} {s : Y → Y}
     (c : A → Y) (c_def : ∀ a, c a = s (f a a)) {b : A} (hb : f b = c) :
     IsFixedPt s (f b b) := by
   Hint "**Cantor**: Diese Aufgabe soll euch vermitteln, wie ihr den Fixpunkt kriegt!"

@@ -20,7 +20,7 @@ Show that `preimage f` is injective iff f is surjective.
 
 open Function Set
 
-Statement preimage_injective {f : A → B} : Injective (preimage f) ↔ Surjective f := by
+Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
   constructor
   · intro hinj y
     Hint "Now `change (f ⁻¹' \{{y}}).Nonempty`"

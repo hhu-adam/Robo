@@ -31,7 +31,7 @@ Statement dvd_add (n m k : ℕ) (h : m ∣ n) (g : m ∣ k) : m ∣ n + k := by
   ein spezieller, den man mit `\\|` schreibt.
   Definiert ist dieses Symbol als `∃ c, n = m * c`.
 
-  **Du**: Dann kann ich direkt `rcases` und `use` verwenden, wie wenns ein `∃` wäre?
+  **Du**: Dann kann ich direkt `obtain` und `use` verwenden, wie wenns ein `∃` wäre?
 
   **Robo**: Genau!"
   Hint (hidden := true) "**Robo**: Fang doch damit an, mit `obtain ⟨x ,hx⟩ := _`

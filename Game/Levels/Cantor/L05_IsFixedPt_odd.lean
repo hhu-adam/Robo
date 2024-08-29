@@ -18,7 +18,7 @@ Frage zu tun
 
 open Function Set Setoid
 
-Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) :
+Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     IsFixedPt f x ↔ IsFixedPt f (- x) := by
   constructor
   · intro h

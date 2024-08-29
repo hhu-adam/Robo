@@ -13,7 +13,7 @@ In this level you show that there every bijection gives rise to an equivalence.
 
 open Function
 
-Statement Equiv.ofBijective (f : A → B) (h : Bijective f) : A ≃ B := by
+Statement Equiv.ofBijective {A B : Type} (f : A → B) (h : Bijective f) : A ≃ B := by
   have := bijective_iff_has_inverse.mp h
   choose g hg using this
   fconstructor

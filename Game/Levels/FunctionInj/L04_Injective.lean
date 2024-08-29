@@ -14,7 +14,7 @@ if `a < b` implies `f a < f b`.
 
 open Set Function
 
-Statement StrictMono.injective {A B : Type*} [LinearOrder α] [Preorder β] {f : α → β}
+Statement StrictMono.injective {A B : Type} [LinearOrder A] [Preorder B] {f : A → B}
     (hf : StrictMono f)  : Injective f := by
   intro a b h
   obtain hlt | heq | hgt := lt_trichotomy a b

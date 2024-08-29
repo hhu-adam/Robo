@@ -16,7 +16,7 @@ open Function Set
 
 #check rightInverse_of_injective_of_leftInverse
 
-theorem rightInverse_of_injective_of_leftInverse {f : α → β} {g : β → α} (injf : Injective f)
+theorem rightInverse_of_injective_of_leftInverse {A B : Type} {f : A → B} {g : B → A} (injf : Injective f)
     (hL : LeftInverse f g) : RightInverse f g := by
   intro x
   have h : f (g (f x)) = f x := by

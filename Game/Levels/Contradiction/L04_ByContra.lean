@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.Implication -- to make sure `rw` doc is imported
+import Game.Levels.Implis -- to make sure `rw` doc is imported
 
 World "Contradiction"
 Level 4

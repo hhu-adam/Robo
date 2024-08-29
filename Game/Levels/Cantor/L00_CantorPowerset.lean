@@ -19,7 +19,7 @@ open Set Function
 
 -- the following implies `cantor_power` but not vice versa.
 -- maybe add this before L01_CantorPowerSet
-Statement cantor_helper (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
+Statement cantor_helper {A : Type*} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
   Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
   Branch
     push_neg

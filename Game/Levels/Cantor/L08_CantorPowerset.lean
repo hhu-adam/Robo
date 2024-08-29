@@ -22,7 +22,7 @@ Damit kann man `f : A → Set A` auch als `f : A → A → Prop` sehen.
 
 open Set Function
 
-Statement cantor_power : ∀ (f : A → Set A), ¬ Surjective f := by
+Statement cantor_power {A : Type} : ∀ (f : A → Set A), ¬ Surjective f := by
   intro f
   Hint (hidden := true) "**Cantor**: Ein Widerspruchsbeweis ist die Kür der Mathematik."
   by_contra h

@@ -13,7 +13,7 @@ Introduction
 
 open Function Nat
 
-Statement (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
+Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
   constructor
   · intro h
     simp [Surjective] at h

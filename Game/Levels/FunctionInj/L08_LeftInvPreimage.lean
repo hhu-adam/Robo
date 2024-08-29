@@ -26,7 +26,7 @@ the same subset.
 
 open Function Set
 
-Statement image_subset_preimage_of_inverse {f : A → B} {g : B → A} (hL : LeftInverse g f)
+Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B → A} (hL : LeftInverse g f)
     (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
   intro b hb

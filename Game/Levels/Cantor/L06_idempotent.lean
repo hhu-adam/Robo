@@ -15,7 +15,7 @@ Diagonalargument.
 
 open Function Set
 
-Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) :
+Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
     range f = fixedPoints f := by
   Hint "**Du**: Etwas womit ich unsicher bin, wie spielt da wohl `{f} ∘ {f} = {f}` mit rein?
 
@@ -40,7 +40,7 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) :
   rw [Subset.antisymm_iff]
   constructor
   · intro x hx
-    rcases hx
+    obtain ⟨⟩ := hx
     rw [← h_1]
     unfold fixedPoints
     unfold IsFixedPt

@@ -27,7 +27,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   **Du** (*flüsternd*): Wer will hier wen beeindrucken?
 
   **Robo** (*laut und selbstsicher*): Wir fangen mit `obtain ⟨⟩ := n an!"
-  rcases n
+  obtain ⟨⟩ := n
   Hint "**Du**: Hmm, das muss man doch vereinfachen können.
 
   **Robo** (*flüsternd*): Zweiter pompöser Auftritt: sag einfach `simp` und lass das alles
