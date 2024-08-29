@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionSurj"
-Level 3
+Level 4
 
 Title "Stückweise Definition"
 
@@ -31,7 +31,8 @@ Statement :
     **Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) {x}` zu `g (f {x})` umschreiben?
 
     **Robo**: Mit `simp` klappt das."
-  simp
+  simp -- or simp [f, g]
+  -- TODO: add `(defeq := _)` so that this triggers for `simp [f, g]` too
   Hint (strict := true) "
     **Robo**: Jetzt kannst du nämlich eine Fallunterscheidung
     machen, `by_cases h : 0 ≤ {x}`.

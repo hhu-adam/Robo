@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "FunctionSurj"
-Level 7
+Level 10
 
 Title "Does it have a right inverse?"
 
@@ -19,9 +19,8 @@ Statement :
     HasRightInverse f := by
   let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (2 * m - n, n - m)
   use g
-  intro ⟨x, y⟩
+  intro m
   simp [g, f]
   ring
-  tauto
 
 NewDefinition Function.HasRightInverse

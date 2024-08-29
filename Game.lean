@@ -1,12 +1,12 @@
 import Game.Metadata
 
 import Game.Levels.Logos
+import Game.Levels.Implis
 
 -- import Game.Levels.Contradiction
 -- import Game.Levels.FunctionSurj
 -- import Game.Levels.FunctionInj
 -- import Game.Levels.FunctionBij
--- import Game.Levels.Implication
 -- import Game.Levels.Inequality
 -- import Game.Levels.Predicate
 -- import Game.Levels.Sum

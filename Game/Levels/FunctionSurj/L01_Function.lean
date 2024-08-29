@@ -13,7 +13,8 @@ dass es auf der Insel nur eine gäbe, aber sie bedrängt euch so mit einer Frage
 dass sie euch gar nicht sagt, wo dieser zu finden sei.
 "
 
-Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
+Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
+  -- TODO: anpassen?
   Hint"
     **Robo**: `f : ℤ → ℤ` ist die Notation für eine Funktion und `f x` ist diese Funktion
     angewendet auf ein Element `(x : ℤ)`.
@@ -36,24 +37,12 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
     $$
 
     **Robo**: PS, `↦` ist `\\mapsto`. Aber man kann auch stattdessen `=>` benutzen."
-  Hint (hidden := true) "
-    **Du**: Ja aber was mach ich damit?
+  rfl
 
-    **Robo**: Wie immer gehst du ein `∃` mit `use …` an."
-  use (fun x ↦ x - 1)
-  Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
-  Branch
-    intro x
-    Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
-    simp
-  simp
 
 NewDefinition Symbol.function
 TheoremTab "Function"
 
 Conclusion
 "
-Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend
-in eine Richtung. Ihr folgt ihrem Finger und euch fällt in weiter ferne eine pompöse Struktur
-auf einem flachen Hügel auf.
 "

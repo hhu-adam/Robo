@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Implication"
+World "Implis"
 Level 1
 
 Title "Intro"
@@ -51,5 +51,7 @@ Förderband in Bewegung.
 **Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "
 
+
+NewDefinition Arrow
 NewTactic intro
 DisabledTactic tauto

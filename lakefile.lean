@@ -46,14 +46,14 @@ package Game where
   moreLeanArgs := #[
     "-Dtactic.hygienic=false",
     "-Dlinter.unusedVariables.funArgs=false",
+    "-DautoImplicit=false",
     "-Dtrace.debug=false"]
   moreServerOptions := #[
     ⟨`tactic.hygienic, false⟩,
     ⟨`linter.unusedVariables.funArgs, true⟩,
+    ⟨`autoImplicit, false⟩,
     ⟨`trace.debug, true⟩]
   weakLeanArgs := #[]
 
 @[default_target]
 lean_lib Game
-
-set_option autoImplicit false

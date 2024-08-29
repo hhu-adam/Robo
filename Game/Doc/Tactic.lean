@@ -304,6 +304,22 @@ TacticDoc induction
 `intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.
 Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.
 
+## Beispiele
+
+```
+Goal:
+  ∀ (m n : ℕ), n ≤ m ∨ m ≤ n
+```
+
+die Taktik `intro a n` führt 2 Variablen ein und gibt diesen die Namen `a` und `n`:
+
+```
+Objekte:
+  a n : ℕ
+Goal:
+  n ≤ a ∨ a ≤ n
+```
+
 ## Hilfreiche Resultate
 
 * `revert h` macht das Gegenteil von `intro`.
@@ -435,7 +451,7 @@ Annahmen:
   g₂ : B → C
 Goal:
   C
-``
+```
 
 ## Hilfreiche Resultate
 
@@ -467,6 +483,29 @@ TacticDoc refine'
 
 /--
 `revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.
+
+## Beispiel
+
+```
+Objekte:
+  A B : Prop
+Annahmen:
+  h : A
+  g : A → B
+Goal:
+  B
+```
+
+In diesem Fall bewirkt `revert h`, dass `h` aus den Annahmen vorne als `A →` ans Goal angefügt wird:
+
+```
+Objekte:
+  A B : Prop
+Annahmen:
+  g : A → B
+Goal:
+  a → B
+`
 
 ## Hilfreiche Resultate
 
