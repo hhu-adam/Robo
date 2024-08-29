@@ -41,4 +41,5 @@ Logik geläufige Schlussfigur, die in vielen logischen Systemen … Ach nee, das
 du ja nicht hören. Das \"r\" in `mpr` steht für \"reverse\", weil's die Rückrichtung ist.
 "
 
+NewDefinition Iff
 DisabledTactic tauto rw

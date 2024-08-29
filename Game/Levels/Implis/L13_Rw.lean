@@ -38,6 +38,6 @@ Conclusion
 **Robo**: Ja, `rw` versucht immer anschließend `rfl` aufzurufen, und das hat hier funktioniert.
 "
 
-DisabledTactic tauto apply
+OnlyTactic rw
 NewTheorem Classical.not_not
 TheoremTab "Logic"

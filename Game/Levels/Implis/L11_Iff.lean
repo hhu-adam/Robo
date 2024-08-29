@@ -25,14 +25,14 @@ Statement (A B : Prop) : (A ↔ B) → (A → B) := by
     **Du**: Also, ich kenne `rw [{h}]` und `apply ({h}.mp)`, aber das wollten wir ja
     diesmal vermeiden.
 
-    **Robo**: Was du machen könntest, ist, mit `rcases {h} with ⟨mp, mpr⟩` die Annahme
+    **Robo**: Was du machen könntest, ist, mit `obtain ⟨mp, mpr⟩ := {h}` die Annahme
     in zwei Teile aufteilen."
   Branch
     intro
     Hint "
       **Robo**: Hier müsstest du jetzt `rw [←{h}]` oder `apply {h}.mp` benutzen.
       Geh lieber einen Schritt zurück, sodass das Goal `A → B` ist."
-  rcases h with ⟨mp, mpr⟩
+  obtain ⟨mp, _mpr⟩ := h
   Hint (hidden := true) "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
   assumption
 
@@ -41,5 +41,5 @@ Conclusion
 **Operationsleiter**: Perfekt, das sollte reichen!
 "
 
-OnlyTactic intro rcases assumption
+OnlyTactic intro obtain assumption
 DisabledTactic rw apply tauto

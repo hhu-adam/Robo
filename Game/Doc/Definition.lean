@@ -81,7 +81,7 @@ DefinitionDoc Symbol.function as "fun x => _"
 
 -- Auf Mengen (`Set`) ist `A ⊆ B` als `∀x, x ∈ A → x ∈ B` implementiert.
 
--- Im goal kann man direkt `intro x hx` machen, in einer Annahme, kann man mit `rcases`
+-- Im goal kann man direkt `intro x hx` machen, in einer Annahme, kann man mit `obtain`
 -- loslegen.
 
 -- Alternativ kann man mit `rw[Set.subset_def]` die Definition explizit einsetzen.
@@ -110,7 +110,14 @@ Die Aussage `False : Prop` ist nie wahr.
 Lean benützt diese intern für Widersprüche, ein Widerspruch ist ein Beweis `(hF : False)` von
 `False` und z.B. `¬ A` ist als `A → False` implementiert.
 -/
-DefinitionDoc False as "True"
+DefinitionDoc False as "False"
+
+/-- Genau-dann-wenn (if-and-only-if). Can meistens mit `constructor` oder `obtain ⟨fwd, bwd⟩ := h`
+in Einzelteile zerlegt werden.
+
+Bei einer Annahme `h : A ↔ B`, heissen die Einzelteile zudem `h.mp : A → B` und `h.mpr : B → A`.
+-/
+DefinitionDoc Iff as "↔"
 
 /--
 Ungleichheit `x ≠ y` ist definiert als `x = y → False`.

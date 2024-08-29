@@ -26,22 +26,20 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 
 ## Taktiken
 
-|     | Taktik                    | Beispiel                                               |
-|:----|:--------------------------|:-------------------------------------------------------|
-| 8   | `intro`                   | Für eine Implikation im Goal.                          |
-| 9   | `revert`                  | Umkehrung von `intro`.                                 |
-| 10  | `apply`                   | Wendet eine Implikation auf das Goal an.               |
-| 10ᵇ | `apply`                   | Wendet ein Lemma an.                                   |
-| 11  | `by_cases`                | Fallunterscheidung `P` und `¬P`                        |
-| 12  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.              |
-| 12ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist. |
-| 13  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                            |
+|     | Taktik                    | Beispiel                                                   |
+|:----|:--------------------------|:-----------------------------------------------------------|
+| 8   | `intro`                   | Für eine Implikation im Goal.                              |
+| 9   | `revert`                  | Umkehrung von `intro`.                                     |
+| 10  | `apply`                   | Wendet Implikation/Theorem (rückwärts) auf das Goal an.    |
+| 10ᵇ | `apply at`                | Wendet Implikation/Theorem (forwärts) auf eine Annahme an. |
+| 11  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                                |
+| 12  | `trans`                   | Ändert `A ↔ C` zu `A ↔ B` und `B ↔ C`                      |
+| 13  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.                  |
+| 13ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist.     |
+| 14  | `by_cases`                | Fallunterscheidung `P` und `¬P`                            |
 "
 
 set_option tactic.hygienic false
-
-/---/
-TheoremDoc imp_iff_not_or as "imp_iff_not_or" in "Logic"
 
 Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
   Hint "**Du** *(flüsternd)*: Ist das nicht die Definition von `→`?
@@ -67,8 +65,8 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
     by_cases ha : A
   Branch
     by_cases A
-  Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `rcases` aufteilen."
-  rcases h with h | h
+  Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `obtian` aufteilen."
+  obtain h | h :=  h
   contradiction
   assumption
 

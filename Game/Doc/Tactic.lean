@@ -505,7 +505,7 @@ Annahmen:
   g : A → B
 Goal:
   a → B
-`
+```
 
 ## Hilfreiche Resultate
 
@@ -522,7 +522,7 @@ Goal
   A
 ```
 
-hier ändert `revert h` den Status zu
+hier ändert `revert h` das Goal zu
 
 ```
 Objekte
@@ -619,13 +619,34 @@ Wenn man eine Annahme `(h : X = Y)` hat, kann man mit
 * `rw [←h]` wendet `h` rückwärts an und ersetzt alle `Y` durch `X`.
 * `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.
 * `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).
+* `rw [my_theorem]` sucht nach dem ersten Ort, wo es umschreiben kann um die Impliziten
+  Argumente von `my_theorem` zu füllen
+* `nth_rw 2 [my_theorem]` ist eine Variante, die stattdessen am 2. Ort umschreibt.
 
 `rw` funktioniert gleichermaßen mit Annahmen `(h : X = Y)` also auch
 mit Theoremen/Lemmas der Form `X = Y`
+
+## Beispiel
+
+```
+Objekte:
+  m n : ℕ
+  f g : ℕ → ℕ
+Annahmen:
+  h₁ : m = n
+  h₂ : f = g
+Goal:
+  f m = g n
+```
+
+`rw [h₂]` schreibt das Goal zu `g n = g m` um, ein weiteres `rw [h₁]` dann zu `g m = g m`, was es
+direkt auch schließt.
+
 -/
 TacticDoc rw
 
-
+/-- (shouldn't be visible to the player!) -/
+TacticDoc nth_rw
 
 /--
 `simp` versucht alle Vereinfachungslemmas anzuwenden, die in der `mathlib` mit `@[simp]`
@@ -711,8 +732,25 @@ durch eine „Rechnung“ der Form `X = Y₁ = Y₂ = Y₃ … = Z` Schritt für
 * …
 * Beweis von `… = Z`
 
-Genauso wie für Gleichungen `X = Z` funktioniert `trans` auch für Äquivalenzen `X ↔ Z` und gewisse transitive Relationen im Beweisziel.
+Genauso wie für Gleichungen `X = Z` funktioniert `trans` auch für Äquivalenzen `X ↔ Z` und gewisse
+transitive Relationen im Beweisziel.
+
+## Beispiel
+
+```
+Objekte:
+  A B C : Prop
+Annahmen:
+  h₁ : A ↔ B
+  h₂ : B ↔ C
+Goal:
+  A ↔ C
+```
+
+Die Taktik `trans B` erstellt dann aus dem Goal zwei neue `A ↔ B` und `B ↔ C`.
+
 -/
+
 TacticDoc trans
 
 /--
