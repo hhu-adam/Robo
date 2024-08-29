@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionSurj"
-Level 10
+Level 13
 
 Title "Range of Surjection"
 
@@ -23,7 +23,7 @@ range f : Set B := {b | ∃ a, f a = b}
 
 open Function Set
 
-Statement surjective_iff_range {f : A → B} : Surjective f ↔ range f = univ := by
+Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
   Branch
     exact eq_univ_iff_forall.symm
   constructor
@@ -35,17 +35,18 @@ Statement surjective_iff_range {f : A → B} : Surjective f ↔ range f = univ :
     constructor
     · tauto
     · intro
+      Hint "**Robo**: Ich habe ein relevantes Resultat gefunden: `mem_range`.
+      Such das mal in denem Inventar!
+      "
+      rw [mem_range] -- not necessary but desirable for the user.
       apply hf
   · intro h
     intro b
     Branch
       simpa [← h] using mem_univ b
-    Hint "**Robo**: Ich habe ein relevantes Resultat gefunden: `Set.mem_range`.
-    Such das mal in denem Inventar!
-    "
-    rw [← Set.mem_range]
+    rw [← mem_range]
     rw [h]
-    simp
+    tauto
 
 NewDefinition Set.range
 NewTheorem Set.mem_range

@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionSurj"
-Level 2
+Level 3
 
 Title "let"
 
@@ -44,12 +44,13 @@ Statement (x : ℤ) :
       aber mit `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
       Lemma auch."
   let g := fun (x : ℤ) ↦ x - 3
-  Hint "**Robo**: gute Wahl! Jetzt kannst du diese mit `use g` benutzen."
+  Hint "**Robo**: Jetzt kannst du diese mit `use g` benutzen."
   use g
   Hint "
     **Robo**: `({g} ∘ f) x` ist per Definition `{g} (f x)`, aber mit
     `rw [comp_apply]` kann man das explizit umschreiben, aber `simp` kennt das
-    Lemma auch."
+    Lemma auch. Und `simp [f, {g}]` setzt zudem die Definitionen von `f` und `{g}`
+    ein."
   Branch
     simp
     Hint (hidden := true) "

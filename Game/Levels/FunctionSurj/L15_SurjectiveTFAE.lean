@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionSurj"
-Level 12
+Level 15
 
 Title "Every surjection has a right inverse"
 
@@ -22,7 +22,7 @@ f ⁻¹' S = {x | f x ∈ S}
 
 open Function Set
 
-Statement Surjective.tfae (f : A → B) :
+Statement {A B : Type} (f : A → B) :
     List.TFAE [Surjective f, ∀ b : B, Set.Nonempty (f ⁻¹' { b }), HasRightInverse f] := by
   tfae_have 1 → 2
   · intro h b
@@ -38,19 +38,12 @@ Statement Surjective.tfae (f : A → B) :
     use g
     assumption
   tfae_have 3 → 1
-  . Branch
-      apply HasRightInverse.surjective
+  . -- this is `Function.HasRightInverse.surjective`
     intro ⟨g, inv⟩
     intro b
     use g b
     apply inv
   tfae_finish
 
-section
-variable {f : A → B}
-#check (Surjective.tfae f).out 1 2
-end
-
-NewTheorem Function.HasRightInverse.surjective
 TheoremTab "Function"
-NewHiddenTactic tfae_have tfae_finish
+NewTactic tfae_have tfae_finish -- TODO: introduce in Spinoza
