@@ -1,17 +1,17 @@
-import Game.Levels.Predicate.L01_Ring
-import Game.Levels.Predicate.L02_Rewrite
-import Game.Levels.Predicate.L03_Rewrite
-import Game.Levels.Predicate.L04_Ring
-import Game.Levels.Predicate.L05_Rfl
-import Game.Levels.Predicate.L06_Exists
-import Game.Levels.Predicate.L07_Exists
-import Game.Levels.Predicate.L08_Forall
-import Game.Levels.Predicate.L09_PushNeg
-import Game.Levels.Predicate.L10_PushNeg
-import Game.Levels.Predicate.L11_DrinkersParadox
+import Game.Levels.Quantus.L01_Ring
+import Game.Levels.Quantus.L02_Rewrite
+import Game.Levels.Quantus.L03_Rewrite
+import Game.Levels.Quantus.L04_Ring
+import Game.Levels.Quantus.L05_Rfl
+import Game.Levels.Quantus.L06_Exists
+import Game.Levels.Quantus.L07_Exists
+import Game.Levels.Quantus.L08_Forall
+import Game.Levels.Quantus.L09_PushNeg
+import Game.Levels.Quantus.L10_PushNeg
+import Game.Levels.Quantus.L11_DrinkersParadox
 
 
-World "Predicate"
+World "Quantus"
 Title "Quantus"
 
 Image "images/Quantus.png"
