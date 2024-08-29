@@ -1,18 +1,19 @@
 import Game.Metadata
 
-import Game.Levels.Contradiction
-import Game.Levels.FunctionSurj
-import Game.Levels.FunctionInj
-import Game.Levels.FunctionBij
-import Game.Levels.Implication
-import Game.Levels.Inequality
-import Game.Levels.Predicate
-import Game.Levels.Proposition
-import Game.Levels.Sum
+import Game.Levels.Logos
 
-import Game.Levels.SetTheory
-import Game.Levels.MatrixTrace
-import Game.Levels.Cantor
+-- import Game.Levels.Contradiction
+-- import Game.Levels.FunctionSurj
+-- import Game.Levels.FunctionInj
+-- import Game.Levels.FunctionBij
+-- import Game.Levels.Implication
+-- import Game.Levels.Inequality
+-- import Game.Levels.Predicate
+-- import Game.Levels.Sum
+
+-- import Game.Levels.SetTheory
+-- import Game.Levels.MatrixTrace
+-- import Game.Levels.Cantor
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
@@ -87,7 +88,7 @@ CoverImage "images/cover.png"
 
 --Dependency Sum → FunctionSurj
 
-Dependency FunctionInj → FunctionBij -- Because of def `Injective`
+-- Dependency FunctionInj → FunctionBij -- Because of def `Injective`
 
 -- set_option lean4game.showDependencyReasons true
 

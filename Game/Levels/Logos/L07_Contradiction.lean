@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 7
 
 Title "Aus Falschem folgt vieles."

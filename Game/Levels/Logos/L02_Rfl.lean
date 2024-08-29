@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 2
 
 Title "Aller Anfang ist... ein Einzeiler?"
@@ -26,6 +26,8 @@ Conclusion
 "
 **Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich immer. Rfl, rfl, rfl …
 "
+
+NewDefinition Eq
 
 NewTactic rfl
 DisabledTactic tauto

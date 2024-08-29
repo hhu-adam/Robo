@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Proposition"
+World "Logos"
 Level 14
 
 Title "Zusammenfassung"
@@ -15,8 +15,8 @@ Hier, ich bin sogar so nett und zeig dir noch einmal die vier
 wichtigsten Taktiken für diese Situation an.
 
 | (Übersicht) | Und (`∧`)                | Oder (`∨`)              |
-|-------------|:-------------------------|:------------------------|
-| Annahme     | `rcases h with ⟨h₁, h₂⟩` | `rcases h with h \\| h` |
+|:------------|:-------------------------|:------------------------|
+| Annahme     | `obtain ⟨h₁, h₂⟩ := h`   | `obtain h \\| h := h`   |
 | Goal        | `constructor`            | `left`/`right`          |
 "
 
@@ -27,19 +27,19 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
     "**Robo**: Ich würd zuerst die Annahme {h} mit `rcases {h}` aufteilen."
   Branch
     constructor
-    · rcases h with h' | h'
+    · obtain h' | h' := h
       · left
         assumption
-      · rcases h' with ⟨h₁, h₂⟩
+      · obtain ⟨h₁, _h₂⟩ := h'
         right
         assumption
-    · rcases h with h' | h'
+    · obtain h' | h' := h
       · left
         assumption
-      · rcases h' with ⟨h₁, h₂⟩
+      · obtain ⟨_h₁, h₂⟩ := h'
         right
         assumption
-  rcases h
+  obtain h | h := h
   Hint (hidden := true) "**Robo**: Jetzt kannst du das `∧` im Goal mit `constructor` angehen."
   · constructor
     · left
@@ -47,26 +47,26 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
     · left
       assumption
   · Hint (hidden := true)
-      "**Robo**: Hier würde ich die Annahme {h} nochmals mit `rcases` aufteilen."
+      "**Robo**: Hier würde ich die Annahme {h} nochmals mit `obtain` aufteilen."
     Branch
       constructor
       · Hint "**Robo**: Der Nachteil an der Reihenfolge ist, dass du jetzt in jedem Untergoal
-          `rcases h` aufrufen musst."
+          `obtain ⟨⟩ := h` aufrufen musst."
         Branch
           right
-          rcases h with ⟨h₁, h₂⟩
+          obtain ⟨h₁, _h₂⟩ := h
           assumption
-        rcases h with ⟨h₁, h₂⟩
+        obtain ⟨h₁, _h₂⟩ := h
         right
         assumption
       · Branch
           right
-          rcases h with ⟨h₁, h₂⟩
+          obtain ⟨_h₁, h₂⟩ := h
           assumption
-        rcases h with ⟨h₁, h₂⟩
+        obtain ⟨_h₁, h₂⟩ := h
         right
         assumption
-    rcases h with ⟨h₁, h₂⟩
+    obtain ⟨h₁, h₂⟩ := h
     constructor
     · right
       assumption

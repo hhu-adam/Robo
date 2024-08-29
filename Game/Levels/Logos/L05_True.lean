@@ -1,9 +1,9 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 5
 
-Title "True/False"
+Title "True or False"
 
 Introduction
 "
@@ -31,5 +31,6 @@ Wie in einer Mathe-Vorlesung?
 Das funktioniert nur in einer Handvoll Situationen.
 "
 
+NewDefinition True
 NewTactic trivial
 DisabledTactic tauto

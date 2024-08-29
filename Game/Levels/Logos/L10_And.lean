@@ -1,38 +1,51 @@
 import Game.Metadata
 
-World "Proposition"
-Level 11
+World "Logos"
+Level 10
 
 Title "Und"
 
 Introduction
 "
-Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes Anliegen.
+Der nächste Formalosoph in der Reihe hat seine Frage bereits mitgebracht.
+Er legt sie uns vor, setzt sich hin und häkelt.
 "
-
-Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
+/--  -/
+Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   Hint "
-    **Du**: Jetzt müssen wir wohl die Annahme de-konstruieren.
+    **Du**: Also, wir haben zwei Annahmen: `{A}` gilt, und `{B}` gilt auch. Und beweisen sollen wir
+    dass `{A} und {B}` gilt. Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung.
+    Kann ich nicht wieder `trivial` sagen?
 
-    **Robo**: Ja, genau. Das geht am einfachsten mit `rcases {h} with ⟨h₁, h₂⟩`.
+    **Robo**: Nee, diesmal wird das nicht funktionieren.
+    Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal `constructor`.
 
-    **Du**: Moment, wie schreib ich *das* denn hier auf?
+    **Du**: Du meinst, `destructor`??
 
-    **Robo**: Die bleiden Klammern schreibst du als `\\<` und `\\>`, oder gleichzeitig als `\\<>`.
-    Und h₁ schreibst du einfach als `h\\1`. Aber du kannst dir auch einfach andere Namen
-    für `h₁` und `h₂`, zum Beispiel `rcases {h} with ⟨hA, hBC⟩`"
-  Branch
-    rcases h with ⟨_h₁, _h₂⟩
-    Hint "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
-  rcases h with ⟨_left, ⟨g , _right⟩⟩
-  Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
+    **Robo**: Nein, `constructor`. Ich weiß, das ist verwirrend,
+    aber die nennen das hier so weil man die Aussage aus mehreren Teilen
+    konstruieren kann."
+  constructor
+  -- gleicher Hint wie unten!
+  assumption
+  Hint (hidden := true) "
+    **Robo**: Schau mal, das ist Zauberpapier.
+    Jetzt haben wir auf einmal zwei Beweisziele.
+    Hier ist dast Ziel `{B}`.
+    Ich glaube, du weißt schon, wie man die jeweils erreicht.
+    Die Ziele stehen ja jeweils in den *Annahmen*."
   assumption
 
 Conclusion
 "
-**Robo**: Du hättest das übrigens auch direkt verschachtelt schreiben können:
-`rcases h with ⟨h₁, ⟨h₂ , h₃⟩⟩`.
+**Robo**: Super!
+
+Ihm scheinen diese Fragen inzwischen Spaß zu machen.
+
+**Robo**: Meinst du, dieser Hebel, an dem \"Editor mode\" steht, ist echt?
+Oder ist der nur gemalt? Probier mal!
 "
 
-NewTactic rcases obtain --TODO: remove `rcases` and replace by `obtain`.
+NewDefinition And
+NewTactic constructor
 DisabledTactic tauto

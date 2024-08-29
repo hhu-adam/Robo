@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 6
 
 Title "Not"
@@ -29,4 +29,5 @@ Conclusion
 Die Schwester lacht und eilt ihrem Bruder hinterher.
 "
 
+NewDefinition False Not
 DisabledTactic tauto
