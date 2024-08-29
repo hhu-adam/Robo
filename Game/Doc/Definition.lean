@@ -19,7 +19,7 @@ DefinitionDoc Function.Injective as "Injective"
 Eine Funktion `f` is surjektiv wenn:
 
 ```
-∀ a, ∃ b, f a = b
+∀ b, ∃ a, f a = b
 ```
 -/
 DefinitionDoc Function.Surjective as "Surjective"
