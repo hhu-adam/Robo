@@ -1,32 +1,34 @@
 
-| Level                  | new name   | levels         | tried? | hints  | story  | summary    | picture | optional changes                                                      |
-|:-----------------------|:-----------|:---------------|:-------|:-------|:-------|:-----------|:--------|:----------------------------------------------------------------------|
-| Cantor                 | ==         | ++             | +      | +      | +      |            | +++     | move first problem somewhere else                                     |
-| [[Continuity]]         |            |                |        |        |        |            |         |                                                                       |
-| Contradiction          | Spinoza    | ++             | ++     | ++     | ++     |            | +++     | add WLOG tactic?  ad TFAE tactics?                                    |
-| FunctionBij            | Isos?      | +              | TODO   |        | TODO   |            | TODO    | remove linear_combination                                             |
-| FunctionInj            | Monos?     | +              | TODO   |        | TODO   |            | TODO    |                                                                       |
-| FunctionSurj           | Epos?      | +              | TODO   |        | TODO   |            | TODO    |                                                                       |
-| Implication            | Implis     | +++            | +++    | +++    | ++     | o (update) | +++     | (check trans tactic for implications? -- Jon has added it to level 9) |
-| Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++     | add some help for Analysis-level                                      |
-| MatrixSpan             | TODO       | o TODO: sorrys | TODO   | TODO   | TODO   |            | TODO    |                                                                       |
-| MatrixTrace            | Robotswana | ++             | +      | update | update |            | +++     |                                                                       |
-| +NewStuff+             |            |                |        |        |        |            |         |                                                                       |
-| Predicate              | Quantus    | +++            | +++    | +++    | +++    | +          | +++     |                                                                       |
-| Prime                  | TODO       | +              | TODO   | TODO   | TODO   |            | TODO    |                                                                       |
-| Proposition            | Logos      | +++            | +++    | +++    | +++    | +          | +++     |                                                                       |
-| [[Quantum]]            |            |                |        |        |        |            |         |                                                                       |
-| Quotient               | TODO       | 7-?            | TODO   |        | TODO   |            |         |                                                                       |
-| SetTheory              | Synolos    | TODO           |        |        |        |            | ??      | (add intervals?? -- only necessary for analysis)                      |
-| ~FiniteSetTheory       |            | TODO           |        |        |        |            | TODO    |                                                                       |
-| Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++     | TODO: add sum over zeroes, adding over singleton                      |
-| SymmSquare             | TODO       | o TODO: L08    | TODO   | TODO   | TODO   |            | TODO    |                                                                       |
-| [[Tmp]]                |            |                |        |        |        |            |         |                                                                       |
-| [[VectorSpan]]         |            |                |        |        |        |            |         |                                                                       |
-| ~GoodByePlanet         |            | TODO (.)       |        |        |        |            |         |                                                                       |
-| ? RealUncountable      |            | TODO .         |        |        |        |            |         |                                                                       |
-| [[ContinuousFunction]] |            | TODO ..        |        |        |        |            |         |                                                                       |
-| [[CosExtInequality]]   |            | TODO ...       |        |        |        |            |         |                                                                       |
+| Level                  | new name   | levels         | tried? | hints  | story  | summary    | picture     | optional changes                                                      |
+|:-----------------------|:-----------|:---------------|:-------|:-------|:-------|:-----------|:------------|:----------------------------------------------------------------------|
+| Proposition            | Logos      | +++            | +++    | +++    | +++    | +          | +++         |                                                                       |
+| Implication            | Implis     | +++            | +++    | +++    | ++     | o (update) | +++         | (check trans tactic for implications? -- Jon has added it to level 9) |
+| Predicate              | Quantus    | +++            | +++    | +++    | +++    | +          | +++         |                                                                       |
+| Contradiction          | Spinoza    | ++             | ++     | ++     | ++     |            | +++         | add WLOG tactic?  ad TFAE tactics?                                    |
+| Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++         | add some help for Analysis-level                                      |
+| Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                      |
+| FunctionBij            | Isos?      | +              | TODO   |        | TODO   |            | TODO        | remove linear_combination                                             |
+| FunctionInj            | Monos?     | +              | TODO   |        | TODO   |            | TODO        |                                                                       |
+| FunctionSurj           | Epos?      | +              | TODO   |        | TODO   |            | TODO        |                                                                       |
+| Cantor                 | ==         | ++             | +      | +      | +      |            | +++         | move first problem somewhere else                                     |
+| MatrixSpan             | TODO       | o TODO: sorrys | TODO   | TODO   | TODO   |            | TODO        |                                                                       |
+| MatrixTrace            | Robotswana | ++             | +      | update | update |            | +++         |                                                                       |
+| SetTheory              | Synolos    | TODO           |        |        |        |            | ??          | (add intervals?? -- only necessary for analysis)                      |
+| ~FiniteSetTheory       | TODO       | TODO           |        |        |        |            | TODO        |                                                                       |
+| SymmSquare             | TODO       | o TODO: L08    | TODO   | TODO   | TODO   |            | TODO        |                                                                       |
+| Quotient               | TODO       | 7-?            | TODO   |        | TODO   |            | TODO        |                                                                       |
+| Prime                  | TODO       | +              | TODO   | TODO   | TODO   |            | TODO        |                                                                       |
+| ? RealUncountable      | TODO       | TODO .         |        |        |        |            |             |                                                                       |
+| GoodByePlanet          |            | TODO (.)       |        |        |        |            | Spacecraft? |                                                                       |
+|                        |            |                |        |        |        |            |             |                                                                       |
+| [[[Continuity]]]       |            |                |        |        |        |            |             |                                                                       |
+| [[ContinuousFunction]] |            | TODO ..        |        |        |        |            |             |                                                                       |
+| [[CosExtInequality]]   |            | TODO ...       |        |        |        |            |             |                                                                       |
+|                        |            |                |        |        |        |            |             |                                                                       |
+| [[Tmp]]                |            |                |        |        |        |            |             |                                                                       |
+| [[VectorSpan]]         |            |                |        |        |        |            |             |                                                                       |
+| [[NewStuff]]           |            |                |        |        |        |            |             |                                                                       |
+| [[Quantum]]            |            |                |        |        |        |            |             |                                                                       |
 
 ### Tactics
 
@@ -36,19 +38,9 @@
 
 ### FunctionSurj
 ````
-L01: fix notation → 
-  
-L02: "Gute Wahl" appears for wrong choices of g
-     simp [f,g] should be a hint already in this level, not in level L03
-     
 L03: Hint "Fallunterscheidung" does not trigger after "simp[g,f]" in place of "simp"
   
-L04 (NEW):
-     MATHS:
-        Is the point of the level to introduce `congr_fun` ?
-        (Can probably solve level without this, so congr_fun needs to be stressed in the hints.)
-        `congr_arg` is also marked as new, but not used??
-     
+L04:     
      DOCUMENTATION
         Namespaces: Function.RightInverse
         move congr_fun to Function tab
