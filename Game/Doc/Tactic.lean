@@ -402,12 +402,28 @@ TacticDoc linarith
 
 * Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet
   werden.
+
+## Beispiel
+
+```
+Objekte:
+  x : ℝ
+  f : ℝ → ℝ
+Goal:
+  ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
+```
+
+`push_neg` wandelt dies in folgendes Goal um:
+
+```
+Objekte:
+  x : ℝ
+  f : ℝ → ℝ
+Goal:
+  ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
+```
 -/
 TacticDoc push_neg
-
-/-- obtain ⟨arg1, arg2⟩ := h decomposes `h` to its parts `arg1` and `arg2`-/
-TacticDoc obtain
-
 
 /--
 `obtain ⟨⟩ := h` teilt eine Annahme `h` in ihre Einzelteile auf.
@@ -605,6 +621,16 @@ Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
   field_simp
   ring
   ```
+
+### Beispiel
+
+
+Dieses Goal kann mit der Taktik `ring` gelöst werden:
+
+```
+Goal:
+  1 + n * 2 + n + 12 = 3 * n + 13
+```
 -/
 TacticDoc ring
 
@@ -793,8 +819,23 @@ Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken
 
 ## Hilfreiche Resultate
 
-* `change P` ist eine andere Taktik, die das aktuelle Goal in einen DefEq-Ausdruck umschreibt.
-  Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
+* `unfold f` kann insbesondere nötig sein, wenn man danach `rw` benützt,
+  da `rw` nicht durch Definitionen hindurch sieht.
+* `unfold f` oder `simp only [f]` machen praktisch das Gleiche.
+* Im Moment kennt Mathlib auch noch `unfold_let`: `unfold` ist für Definitionen, `unfold_let`
+  für `let`-Statements.
+* `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Goal in einen DefEq-Ausdruck
+  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
+
+## Beispiel
+
+```
+Goal:
+  Even 0
+```
+
+Auch wenn `rfl` dieses Goal lösen kann, kann es nützlich sein `unfold Even` zu benützen um die
+Definition hinter `Even` zu sehen.
 -/
 TacticDoc unfold
 
@@ -808,6 +849,15 @@ mit dem man das Goal beweisen möchte.
 
 `use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt
 schließen.
+
+## Beispiel
+
+```
+Goal:
+  ∃ x, x + 3 = 4
+```
+
+hier würde man `use 1` benützen.
 -/
 TacticDoc use
 

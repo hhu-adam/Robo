@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Predicate"
+World "Quantus"
 Level 10
 
 Title "PushNeg"
@@ -10,7 +10,7 @@ Introduction
 Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet.
 "
 
-open Nat Classical
+open Nat
 
 Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   Hint "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
@@ -53,6 +53,17 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
     tauto
   unfold Even
   use n
+
+/-- Eine Zahl ist gerade wenn sie nicht ungerade ist. -/
+TheoremDoc Nat.even_iff_not_odd as "even_iff_not_odd" in "ℕ"
+
+-- Note: These three are just added for completeness.
+/-- Eine Zahl ist ungerade wenn sie nicht gerade ist. -/
+TheoremDoc Nat.odd_iff_not_even as "even_iff_not_odd" in "ℕ"
+/-- Statt diesem Theorem kannst du `push_neg` verwenden. -/
+TheoremDoc not_exists as "not_exists" in "Logic"
+/-- Statt diesem Theorem kannst du `push_neg` verwenden. -/
+TheoremDoc Classical.not_forall as "not_forall" in "Logic"
 
 NewTheorem Nat.even_iff_not_odd Nat.odd_iff_not_even not_exists Classical.not_forall
 

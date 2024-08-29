@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Predicate"
+World "Quantus"
 Level 7
 
 Title "Gerade/Ungerade"

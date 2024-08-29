@@ -104,6 +104,9 @@ Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
 -/
 DefinitionDoc Eq as "="
 
+/-- `Even n` ist die Aussage dass `n : ℕ` gerade ist. -/
+DefinitionDoc Even as "Even"
+
 /--
 Die Aussage `False : Prop` ist nie wahr.
 
@@ -125,11 +128,22 @@ Ungleichheit `x ≠ y` ist definiert als `x = y → False`.
 DefinitionDoc Ne as "≠"
 
 /--
+`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
+enthält.
+
+Wenn `h : Nonempty U`, dann kriegt man mit `obtain ⟨d⟩ := h` eine solches Element `d : U`.
+-/
+DefinitionDoc Nonempty as "Nonempty"
+
+/--
 `¬ A` ist intern als `A → False` implementiert.
 
 Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`.
 -/
 DefinitionDoc Not as "¬"
+
+/-- `Odd n` ist die Aussage dass `n : ℕ` ungerade ist. -/
+DefinitionDoc Odd as "Odd"
 
 /--
 `A ∨ B` ("oder") ist die Aussage mindestens eine der Aussagen `A`, `B` wahr ist.

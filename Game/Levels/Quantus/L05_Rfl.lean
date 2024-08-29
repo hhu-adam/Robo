@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Predicate"
+World "Quantus"
 Level 5
 
 Title "Definitionally equal"

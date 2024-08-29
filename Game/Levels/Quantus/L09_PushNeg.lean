@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Predicate"
+World "Quantus"
 Level 9
 
 Title "PushNeg"
@@ -18,12 +18,14 @@ Statement {X : Type} (P : X → Prop) :
   Hint "
     **Du**: Was ist denn jetzt dieses P?
 
-    **Robo**: P ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `X`.
-              Zum Beispiel könnte `X` wieder der Typ der natürlichen Zahlen sein.
-              Und `P x` könnte die Aussage sein:
-              Die natürliche Zahl `x` ist gerade. Oder: `x` hat sieben Primfaktoren. Oder: `x` ist Robo's Lieblingszahl. Oder …
+    **Robo**: `{P}` ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `{X}`.
+              Zum Beispiel könnte `{X}` wieder der Typ der natürlichen Zahlen sein.
+              Und `{P} x` könnte die Aussage sein:
+              Die natürliche Zahl `x` ist gerade. Oder: `x` hat sieben Primfaktoren. Oder: `x`
+              ist Robo's Lieblingszahl. Oder …
 
-    **Du**: Schon gut, ich glaub ich habs verstanden. `P` ist sozusagen eine Abbildung, die ein Element `x : X` nimmt und auf eine Aussage wirft.
+    **Du**: Schon gut, ich glaub ich habs verstanden. `{P}` ist sozusagen eine Abbildung, die
+    ein Element `x : {X}` nimmt und auf eine Aussage wirft.
 
     **Robo**: Ja, sozusagen.
 

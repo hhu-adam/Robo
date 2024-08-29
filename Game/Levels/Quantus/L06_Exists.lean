@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Predicate"
+World "Quantus"
 Level 6
 
 Title "Gerade/Ungerade"
@@ -26,10 +26,15 @@ def Odd (n : ℕ) : Prop := ∃ r, n = 2 * r + 1
 Schließlich taucht von irgendwo aus der Menge folgendes Papier auf:
 "
 
-Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
+open Nat
+
+/-- Das Quadrat einer geraden Zahl ist gerade. -/
+TheoremDoc Nat.even_square as "even_square" in "ℕ"
+
+Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   Hint "
-    **Robo**: Wie du oben siehst, ist `Even n` dadurch definiert,
-    dass ein `r` existiert so dass `r + r = n` ist. Am besten
+    **Robo**: Wie du oben siehst, ist `Even {n}` dadurch definiert,
+    dass ein `r` existiert so dass `r + r = {n}` ist. Am besten
     öffnest du diese Definition mit `unfold Even at *` einmal.
     Dann siehst du besser, was los ist."
   Branch
@@ -42,27 +47,27 @@ Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     use n^2/2
     Hint "Ein verwirrtes murmeln geht durch die Menge.
 
-    **Du**: Warte mal, wieso ist `n^2 / 2` überhaupt wieder eine natürliche Zahl?
+    **Du**: Warte mal, wieso ist `{n} ^ 2 / 2` überhaupt wieder eine natürliche Zahl?
 
-    **Robo**: Division auf `ℕ` wird in Lean immer abgerundet. Für `n = 1` steht da also
+    **Robo**: Division auf `ℕ` wird in Lean immer abgerundet. Für `{n} = 1` steht da also
 
     ```
-    1^2 = (1^2) / 2 + (1^2)/2
+    1 ^ 2 = (1 ^ 2) / 2 + (1 ^ 2) / 2
     ```
 
-    was ausgerechnet `1 = 1/2 + 1/2 = 0 + 0` ist, du bist also auf dem Holzweg!
+    was ausgerechnet `1 = 1 / 2 + 1 / 2 = 0 + 0` ist, du bist also auf dem Holzweg!
     "
   Hint "
-    **Du**: Also von `{h}` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = n` …
+    **Du**: Also von `{h}` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = {n}` …
 
-    **Robo**: Mit `obtain ⟨r, hr⟩ := h` kannst du dieses `r` tatsächlich einführen."
+    **Robo**: Mit `obtain ⟨r, hr⟩ := {h}` kannst du dieses `r` tatsächlich einführen."
   obtain ⟨r, hr⟩ := h
   Hint "
-    **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = n^2`?
+    **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = {n} ^ 2`?
 
     **Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
   Hint (hidden := true) "
-    **Robo**: Also sowas ähnliches wie `use 4 * r ^ 3`, aber ich kann
+    **Robo**: Also sowas ähnliches wie `use 4 * {r} ^ 3`, aber ich kann
     dir leider nicht sagen, welche Zahl passt."
   Branch
     rw [hr]
@@ -75,13 +80,9 @@ Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Du**: Ah, und jetzt `ring`!
 
     **Robo**: Aber zuerst musst du noch mit
-    `rw` `n` durch `r + r` ersetzen, da `ring` das sonst nicht weiß."
+    `rw` `n` durch `{r} + {r}` ersetzen, da `ring` das sonst nicht weiß."
   rw [hr]
   ring
-
--- TODO: [Comment] For me the expected behaviour of `(strict := true)` would
--- be that it distinguishes between the defEq states while `(strict := false)`
--- would show the hint regardless of a `unfold Even`.
 
 NewTactic unfold use
 NewDefinition Even Odd

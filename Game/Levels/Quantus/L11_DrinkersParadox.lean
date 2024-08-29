@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Predicate"
+World "Quantus"
 Level 11
 
 Title "Drinker's Paradox"
@@ -71,14 +71,6 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
   Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
   contradiction
 
-/--
-`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
-enthält.
-
-Wenn `h : Nonempty U`, dann kriegt man mit `obtain ⟨d⟩ := h` eine solches Element `d : U`.
--/
-DefinitionDoc Nonempty as "Nonempty"
-
 TheoremTab "Logic"
 NewDefinition Nonempty
 
@@ -91,7 +83,6 @@ Conclusion
 
 |               | Beschreibung                |
 |:--------------|:----------------------------|
-| `ℕ`           | Die natürlichen Zahlen.     |
 | `∃`           | Existential-Quantifier      |
 | `∀`           | Forall-Quantifier           |
 | `Even n`      | `n` ist gerade              |
@@ -99,11 +90,11 @@ Conclusion
 
 |       | Taktik                    | Beispiel                                               |
 |:------|:--------------------------|:-------------------------------------------------------|
-| *12ᶜ* | `rw`                      | Umschreiben mit Gleichungen.                           |
-| 13    | `ring`                    | Löst Gleichungen mit `+, -, *, ^`.                     |
-| 14    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
-| 15    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
-| *7ᶜ*  | `obtain ⟨x, hx⟩ := h`   | Um ein `∃` in den Annahmen zu zerlegen.                |
+| *13ᶜ* | `rw`                      | Umschreiben mit Gleichungen.                           |
+| 15    | `ring`                    | Löst Gleichungen mit `+, -, *, ^`.                     |
+| 16    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
+| 17    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
+| *7ᵈ*  | `obtain ⟨x, hx⟩ := h`     | Um ein `∃` in den Annahmen zu zerlegen.                |
 | *8ᵇ*  | `intro`                   | Um ein `∀` im Goal anzugehen.                          |
-| 16    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
+| 18    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
 "

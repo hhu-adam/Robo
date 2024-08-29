@@ -120,7 +120,7 @@ TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
 TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
 /-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "Nat"
+TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "ℕ"
 
 TheoremTab "Matrix"
 NewTheorem smul_eq_mul LinearMap.map_smul nat_mul_inj'
