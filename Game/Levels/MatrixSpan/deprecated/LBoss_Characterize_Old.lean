@@ -137,7 +137,7 @@ lemma H4' {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
 lemma H5 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
     f (E 0 0) = 1 := by
-  rcases H4' h₁ h₂
+  obtain ⟨⟩ := H4' h₁ h₂
   · assumption
   · exfalso
     apply succ_ne_zero n
@@ -190,7 +190,7 @@ Statement {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     ↑f = trace := by
   ext A
-  rcases n
+  obtain ⟨⟩ := n
   · simp
     rw [← f.map_zero]
     congr

@@ -52,7 +52,7 @@ begin
   split,
   { intro hS,
     simp at ⊢ hS,
-    rcases hS with ⟨S_fin, h_S_fin, h_S_fin'⟩,
+    obtain ⟨S_fin, h_S_fin, h_S_fin'⟩ := hS,
     rw [←h_S_fin', ←h_M_fin],
     simp,
     exact h_S_fin,

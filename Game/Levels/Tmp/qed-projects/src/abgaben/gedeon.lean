@@ -1,6 +1,6 @@
 import data.real.basic
 import topology.basic
-import tactic 
+import tactic
 import data.set.basic
 import order.interval
 import data.real.sign
@@ -19,10 +19,10 @@ def I (a:ℝ)(b:ℝ ) : set ℝ := { x:ℝ | a ≤ x ∧  x ≤ b}
 
 /-epsylon delta kriterium für lokale stetigkeit
 Sei f : D -> ℝ  eine abb =>
-f stetig  in x0 ∈ D <=> ∀ ε>0 ∃δ>0 ∀x∈D : |x0 -x| < δ => |f(a) -f(x0)| <ε 
+f stetig  in x0 ∈ D <=> ∀ ε>0 ∃δ>0 ∀x∈D : |x0 -x| < δ => |f(a) -f(x0)| <ε
 -/
 def lok_stetig_def (x0:ℝ )(f:ℝ  -> ℝ ):Prop:=
-∀(ε:ℝ ), ε > 0 ∧  ∃ δ > 0, ∀ (x:ℝ) , |x0 -x| < δ -> |f(x) -f(x0)| <ε 
+∀(ε:ℝ ), ε > 0 ∧  ∃ δ > 0, ∀ (x:ℝ) , |x0 -x| < δ -> |f(x) -f(x0)| <ε
 
 
 /-globale stetigkeit <=> lokal stetig auf ganz R-/
@@ -37,7 +37,7 @@ end
 
 
 /-Bolzanos Nullstellensatz:
-Sei F eine stetige funktion und f(a) < 0 ∧  f(b) > 0 mit a,b ∈ ℝ 
+Sei F eine stetige funktion und f(a) < 0 ∧  f(b) > 0 mit a,b ∈ ℝ
 => ∃ x ∈ [a,b] : f(x) = 0
 -/
 
@@ -51,7 +51,7 @@ Sei F eine stetige funktion und f(a) < 0 ∧  f(b) > 0 mit a,b ∈ ℝ
 noncomputable theory
 
 noncomputable
-def bisection (f : ℝ → ℝ) : ℝ → ℝ → ℕ → ℝ × ℝ  
+def bisection (f : ℝ → ℝ) : ℝ → ℝ → ℕ → ℝ × ℝ
 | a b 0 := (a, b)
 | a b (n + 1) :=
   let c := (b - a)/2 in
@@ -80,7 +80,7 @@ end
 def limit {f : ℕ → ℝ} (h : converges f) := (limit_exists f h).some
 
 lemma bisection_converges (f : ℝ → ℝ) (a b : ℝ) :
-  converges (bisection_folge f a b) := 
+  converges (bisection_folge f a b) :=
 begin
   intros ε hε,
   use nat.ceil((b - a)/(2*ε)),
@@ -90,7 +90,7 @@ begin
   sorry
 end
 
-lemma bisection_limit_in (f : ℝ → ℝ) (a b : ℝ) : (limit (bisection_converges f a b)) ∈ I a b := 
+lemma bisection_limit_in (f : ℝ → ℝ) (a b : ℝ) : (limit (bisection_converges f a b)) ∈ I a b :=
 begin
   sorry
 end
@@ -106,17 +106,17 @@ f(a) <= 0 ∧  f(b) >= 0 -> ∃ x ∈ I a b, f(x) = 0 :=
 begin
   intro i,
   by_cases  a = b,
- { 
-  rcases i with ⟨ ga,gb⟩, 
+ {
+  obtain ⟨ ga,gb⟩ := i,
   use a,
   split,
   unfold I,
 
-   
+
   rw[<-h],
   sorry,
   rw[<-h] at gb,
-  sorry, 
+  sorry,
   },
 /-
  Beweisstratege:
@@ -129,7 +129,7 @@ begin
   unfold I,
   simp [stetig] at hf,
   simp [lok_stetig_def] at hf,
-  
+
   let x := limit (bisection_converges f a b),
   use x,
   constructor,
@@ -151,7 +151,7 @@ have hd: (g(a) <= 0) ∧ (g(b) >=0),sorry,
 
 {
   have:= bolzanos_nullstellensatz D a b g g_stetig ha hb hd ,
-  rcases this with ⟨x,h,hx⟩ ,
+  obtain ⟨x,h,hx⟩ := this ,
   use x,
   split,
   apply h,

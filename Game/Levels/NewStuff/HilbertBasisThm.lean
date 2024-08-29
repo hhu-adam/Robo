@@ -57,7 +57,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
       intro y
       by_cases hy : y ∈ b n
       · rw [Submodule.mem_map] at hy
-        rcases hy with ⟨x,hx⟩
+        obtain ⟨x,hx⟩ := hy
         use x
         intro
         assumption
@@ -77,7 +77,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
 
     --Sei S eine erzeugende Menge von b(n).
     intro n
-    rcases R_noetherian (b n) with ⟨S,hS⟩
+    obtain ⟨S,hS⟩ := R_noetherian (b n)
 
     --Offenbar gilt S ⊆ b(n).
     have S_subset_bn : ↑S ⊆ (b n).carrier
@@ -90,7 +90,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
     · intros x hx
       norm_cast at hx
       rw [Finset.mem_image] at hx
-      rcases hx with ⟨y, hy, hxy⟩
+      obtain ⟨y, hy, hxy⟩ := hx
       subst hxy
       apply (hμ n y (S_subset_bn hy)).1.2
     · rw [← hS]
@@ -105,11 +105,11 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
         exact (hμ n y (S_subset_bn hy)).2
       · intros x hx
         rw [Finset.coe_image, Set.mem_image] at hx
-        rcases hx with ⟨y, hy, hxy⟩
+        obtain ⟨y, hy, hxy⟩ := hx
         --norm_cast at hy
         rw [Finset.coe_image, Set.mem_image] at hy
         subst hxy
-        rcases hy with ⟨x, hx, hxy⟩
+        obtain ⟨x, hx, hxy⟩ := hy
         subst hxy
         rw [(hμ n x (S_subset_bn hx)).2]
         exact hx
@@ -127,7 +127,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
   --B von dein Leitkoeffizienten der Polynome in F(N) erzeugt wird.
   have exists_N : ∃ (N : ℕ), B = Ideal.span (Finset.image (η N) (F N))
   · --Sei S ⊆ B eine erzeugende Menge von B.
-    rcases R_noetherian B with ⟨S,hS⟩
+    obtain ⟨S,hS⟩ := R_noetherian B
     have S_subset_B : ↑S ⊆ B.carrier
     · rw [← hS]
       apply Ideal.subset_span
@@ -140,7 +140,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
       --S finite ⇒ ∃ (N : ℕ), ∀ (s : S), s ∈ (b N)
 
 
-    rcases S_subset_bN with ⟨N,hN⟩
+    obtain ⟨N,hN⟩ := S_subset_bN
 
     have B_eq_bk : B = (b N)
     · suffices : B ≤ b N ∧ B ≥ b N
@@ -161,7 +161,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
     exact (hF N).right
 
   --Wähle N minimal.
-  rcases exists_N with ⟨N, hN⟩
+  obtain ⟨N, hN⟩ := exists_N
   have N_minimal : ∀ (n : ℕ), n < N → B < Ideal.span (Finset.image (η n) (F n))
   · sorry
 
@@ -186,7 +186,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
     intro i
     rw [Set.iUnion_subset_iff]
     intro hi
-    rcases hF i with ⟨P,hP⟩
+    obtain ⟨P,hP⟩ := hF i
     assumption
 
   --Aus FU ⊆ a folgt sofort ⟨FU⟩ = A ⊴ a.
@@ -211,9 +211,9 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
     rw [Set.ssubset_iff_of_subset A_subset_a] at A_ssubset_a
 
     have C : ∃ g : R[X], g ∈ a.carrier ∧ g ∉ A.carrier
-    · rcases A_ssubset_a with ⟨g,gh⟩
+    · obtain ⟨g,gh⟩ := A_ssubset_a
       use g
-      -- rcases gh with ⟨g',hg'⟩
+      -- obtain ⟨g',hg'⟩ := gh
       -- change g ∈ a.carrier ∧ g ∉ A.carrier
       -- constructor
       -- assumption
@@ -221,7 +221,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
 
 
     --Wähle g mit minimalem Grad.
-    rcases C with ⟨g,hg⟩
+    obtain ⟨g,hg⟩ := C
     have g_minimal : ∀ (f : R[X]), f.degree < g.degree → ¬(f ∈ a.carrier ∧ f ∉ A.carrier)
     · sorry --wlog_sorry
 
@@ -258,7 +258,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
       rw [hN] at u_in_B
       rw [← Ideal.submodule_span_eq] at u_in_B
       rw [mem_span_finset] at u_in_B
-      rcases u_in_B with ⟨ρ,hρ⟩
+      obtain ⟨ρ,hρ⟩ := u_in_B
 
       --no shot
 

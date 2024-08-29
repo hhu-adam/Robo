@@ -78,7 +78,7 @@ begin
   { apply nullstelle j cg l, },
 --Wollen nur noch zeigen, wenn g(x)=x-f(x)=0 <=> x=f(x)--
   simp only [g] at g0,
-  rcases g0 with ⟨x, hx, hx2⟩,
+  obtain ⟨x, hx, hx2⟩ := g0,
   use x,
   constructor,
   assumption,

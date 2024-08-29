@@ -25,7 +25,7 @@ Statement (n : ℕ) : 4 ∣ 5^n + 7 := by
 --   induction n
 --   simp
 --   rw [Nat.succ_eq_add_one]
---   rcases n_ih with ⟨x, h⟩
+--   obtain ⟨x, h⟩ := n_ih
 --   use x + n_1 + 1
 --   ring_nf at *
 --   rw [←h]

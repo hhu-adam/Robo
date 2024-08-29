@@ -19,7 +19,7 @@ open Function Set
 Statement Injective.exists_unique_of_mem_range {f : A → B} (hf : Injective f)
     {b : B} (hb : b ∈ range f) :
     ∃! a, f a = b := by
-  rcases hb with ⟨a, ha⟩
+  obtain ⟨a, ha⟩ := hb
   use a
   constructor
   · assumption

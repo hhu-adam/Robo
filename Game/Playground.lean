@@ -9,7 +9,7 @@
 --     -- hard.
 --     sorry
 --   · intro h
---     rcases h with ⟨g, h⟩
+--     obtain ⟨g, h⟩ := h
 --     unfold Injective
 --     intro a b hab
 --     rw [←id_eq a, ←id_eq b]
@@ -87,7 +87,7 @@
 
 
 -- example (n m : ℕ) (g : m ≠ 0) (h : n ∣ m) : n ≤ m := by
---   rcases h with ⟨x, hx⟩
+--   obtain ⟨x, hx⟩ := h
 --   rw [hx]
 --   apply le_cancel_left
 --   by_contra k

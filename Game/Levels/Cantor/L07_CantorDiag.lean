@@ -32,7 +32,7 @@ Statement cantor_diagonal (f : A → A → Y) (hsurj : Surjective f) (s : Y → 
   "
   let c : A → Y := fun (a : A) ↦ s (f a a)
   Hint "**Cantor**: Gute Wahl!"
-  rcases hsurj c with ⟨a, ha⟩
+  obtain ⟨a, ha⟩ := hsurj c
   use (f a a)
   Hint (hidden := true) "**Cantor**: Das sieht gut aus, jetzt können wir ja
   `cantor_diagonal_isFixedPt` von vorhin brauchen!"

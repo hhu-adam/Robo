@@ -37,7 +37,7 @@ erstellen, wie du schon einmal beim `∃` gesehen hast: `(⟨n, h⟩ : ℕ+)`
 /--  -/
 Statement (a : ℕ+) : (a : ℕ) ≠ 0 := by
   apply ne_of_gt
-  rcases a with ⟨a, ha⟩
+  obtain ⟨a, ha⟩ := a
   assumption
 
 

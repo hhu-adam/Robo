@@ -42,7 +42,7 @@ Statement (S T : Set ℕ) (f : ℕ → ℕ) : (f '' S) ∪ (f '' T) = f '' (S �
   simp_rw [mem_image]
   constructor
   intro h
-  rcases h with ⟨x, hx, hx'⟩ | ⟨x, hx, hx'⟩
+  obtain ⟨x, hx, hx'⟩ := h | ⟨x, hx, hx'⟩
   use x
   constructor
   apply mem_union_left

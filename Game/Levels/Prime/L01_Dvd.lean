@@ -34,10 +34,10 @@ Statement dvd_add (n m k : ℕ) (h : m ∣ n) (g : m ∣ k) : m ∣ n + k := by
   **Du**: Dann kann ich direkt `rcases` und `use` verwenden, wie wenns ein `∃` wäre?
 
   **Robo**: Genau!"
-  Hint (hidden := true) "**Robo**: Fang doch damit an, mit `rcases _ with ⟨x ,hx⟩`
+  Hint (hidden := true) "**Robo**: Fang doch damit an, mit `obtain ⟨x ,hx⟩ := _`
   alle Hyptothesen aufzuteilen."
-  rcases h with ⟨x, h⟩
-  rcases g with ⟨y, g⟩
+  obtain ⟨x, h⟩ := h
+  obtain ⟨y, g⟩ := g
   Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben so dass
   `{n} + {k} = {m} * _` gilt."
   use x + y

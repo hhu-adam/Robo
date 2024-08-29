@@ -21,7 +21,7 @@ Statement :
   intro x hx
   rw [mem_union, mem_inter_iff]
   simp_rw [mem_setOf, mem_insert_iff, mem_singleton_iff] at *
-  rcases hx with hx | hx
+  obtain hx | hx := hx
   left
   assumption
   right

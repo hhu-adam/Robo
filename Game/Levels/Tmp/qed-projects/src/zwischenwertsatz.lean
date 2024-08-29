@@ -107,7 +107,7 @@ begin
   intro i,
   by_cases  a = b,
  {
-  rcases i with ⟨ ga,gb⟩,
+  obtain ⟨ ga,gb⟩ := i,
   use a,
   split,
   unfold I,
@@ -152,7 +152,7 @@ have hd: (g(a) <= 0) ∧ (g(b) >=0),sorry,
 
 {
   have:= bolzanos_nullstellensatz D a b g g_stetig ha hb hd ,
-  rcases this with ⟨x,h,hx⟩ ,
+  obtain ⟨x,h,hx⟩ := this ,
   use x,
   split,
   apply h,

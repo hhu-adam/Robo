@@ -35,7 +35,7 @@ Statement (X Y : Set ℕ):
   Wenn nicht, brauchst du vermutlich die Lemmas `Set.subset_union_of_subset_left`
   und `Set.subset_union_of_subset_right`"
   Branch
-    rcases hA with hA | hA
+    obtain hA | hA := hA
     apply subset_union_of_subset_left
     assumption
     apply subset_union_of_subset_right

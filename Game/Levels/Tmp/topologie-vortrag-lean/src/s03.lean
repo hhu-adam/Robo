@@ -23,7 +23,7 @@ selbe ist, wie die, welche in Lean bereits definiert ist.
 Das wird unseren Beweis im kommenden vereinfachen
 -/
 
-lemma I_is_unit_interval : I = unit_interval := 
+lemma I_is_unit_interval : I = unit_interval :=
   begin
     split,
   end
@@ -61,7 +61,7 @@ example : is_path_connected I :=
         unfold joined_in,
         -- Wir möchten nun diesen Pfad konstruieren.
         let f : path 0 y := { to_fun := (λ t, t*y),
-        continuous_to_fun := by continuity, 
+        continuous_to_fun := by continuity,
         source' := by simp,
         target' := by simp,
         },
@@ -72,31 +72,31 @@ example : is_path_connected I :=
         simp,
         -- wir zeigen nun, dass wenn $y$ und $y_1$ in $I$ liegen, dann auch $y*y_1$ in $I$ liegt.
         split,
-        { 
+        {
           apply mul_nonneg,
           {
             -- zeige hier, dass $y$ größer gleich 0 ist, wenn es aus $I$ kommt
             -- rewrite anwenden
             simp [I] at h,
-            rcases h with ⟨h1, h2⟩,
+            obtain ⟨h1, h2⟩ := h,
             -- unfold unit_interval at y',
             -- norm_cast at h1,
             -- let y'' :  := coe y',
             have lal := y'.property,
-            rcases lal with ⟨lal1, lal2⟩,
+            obtain ⟨lal1, lal2⟩ := lal,
             assumption,
           },
           {
             -- zeige hier, dass $y$ größer gleich 0 ist, wenn es aus $I$ kommt
             -- simp [set.mem_def] at h,
-            rcases h with ⟨h1, h2⟩,
+            obtain ⟨h1, h2⟩ := h,
             assumption,
           }
         },
         {
           -- zeige hier, dass $y$ kleiner gleich 1 ist, wenn es aus $I$ kommt
           simp [I] at h,
-          rcases h with ⟨h1, h2⟩,
+          obtain ⟨h1, h2⟩ := h,
           -- convert y' into an element of I
           have temp := y'.property,
           have temp2 := temp.2,

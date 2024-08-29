@@ -287,7 +287,7 @@ Proof 9:   gcd(a, n) | c → a * x ≡ c (mod n)
 theorem gcd_equiv (a b n : ℤ) ( c : ℕ): (int.gcd a n ∣ c)  → ∃ x, a * x ≡ c [ZMOD n]:=
 begin
     intro h₁,
-    rcases h₁ with ⟨k, hk⟩,
+    obtain ⟨k, hk⟩ := h₁,
     let x := a.gcd_a n,
     have bez := int.gcd_eq_gcd_ab a n, -- Bezout's Lemma
     rw hk,

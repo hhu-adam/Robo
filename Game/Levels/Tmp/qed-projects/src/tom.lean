@@ -48,7 +48,7 @@ begin
   intro h₁,
   rw[legendre_sym.eq_one_iff] at h₁,
   unfold is_square at h₁,
-  rcases h₁ with ⟨hj,hr⟩,
+  obtain ⟨hj,hr⟩ := h₁,
   use hj,
   simp at hr,
   rw[hr],
@@ -56,7 +56,7 @@ begin
   simp,
   assumption,
   intro hr,
-  rcases hr with ⟨hr,hj⟩,
+  obtain ⟨hr,hj⟩ := hr,
   rw[legendre_sym.eq_one_iff],
   simp,
   unfold is_square,
@@ -136,12 +136,12 @@ end
 example (p q : ℕ) (prime_p : fact (nat.prime p)) (prime_q : fact (nat.prime q)) (h:(p ≡ 3 [ZMOD 4]) ∧ (q ≡ 3 [ZMOD 4])) (g : p ≠ q) :
   legendre_sym p q * legendre_sym q p = -1 :=
 begin
-  rcases h with ⟨h₁,h₂⟩,
+  obtain ⟨h₁,h₂⟩ := h,
   unfold legendre_sym,
   simp,
   rw[int.modeq_iff_add_fac] at *,
-  rcases h₁ with ⟨x,h₁x⟩,
-  rcases h₂ with ⟨y,h₂y⟩,
+  obtain ⟨x,h₁x⟩ := h₁,
+  obtain ⟨y,h₂y⟩ := h₂,
   rw[lol] at h₁x,
   rw[h₂y] at h₁x,
   simp,

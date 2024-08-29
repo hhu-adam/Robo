@@ -31,7 +31,7 @@ Statement range_fixedPoints (f : A → A) (h : f ∘ f = f) :
     unfold IsFixedPt
     constructor
     · intro hx
-      rcases hx with ⟨y, hy⟩
+      obtain ⟨y, hy⟩ := hx
       rw [← hy]
       simp_rw [comp_apply] at h
       rw [h y]

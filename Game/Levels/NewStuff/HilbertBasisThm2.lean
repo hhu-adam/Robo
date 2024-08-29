@@ -24,9 +24,9 @@ theorem Polynomial.isNoetherianRing' {R : Type*} [CommRing R]
 
   let M : Ideal R := WellFounded.min X₁ S S_notempty
   have hm : M ∈ S := WellFounded.min_mem X₁ S S_notempty
-  rcases hm with ⟨N, HN⟩
+  obtain ⟨N, HN⟩ := hm
 
-  rcases I.is_fg_degreeLE N with ⟨s, hs⟩
+  obtain ⟨s, hs⟩ := I.is_fg_degreeLE N
 
   have hm2 : ∀ k, I.leadingCoeffNth k ≤ M := by
     intro k
@@ -54,7 +54,7 @@ theorem Polynomial.isNoetherianRing' {R : Type*} [CommRing R]
   intro p hp
   generalize hn : p.natDegree = k
   induction' k using Nat.strong_induction_on with k ih generalizing p
-  rcases le_or_lt k N with h | h
+  obtain h | h := le_or_lt k N
   · subst k
     refine' hs2 ⟨Polynomial.mem_degreeLE.2
       (le_trans Polynomial.degree_le_natDegree <| WithBot.coe_le_coe.2 h), hp⟩
@@ -75,7 +75,7 @@ theorem Polynomial.isNoetherianRing' {R : Type*} [CommRing R]
       exact hm2 k ((I.mem_leadingCoeffNth _ _).2
         ⟨_, hp, hn ▸ Polynomial.degree_le_natDegree, rfl⟩)
     rw [I.mem_leadingCoeffNth] at this
-    rcases this with ⟨q, hq, hdq, hlqp⟩
+    obtain ⟨q, hq, hdq, hlqp⟩ := this
     have hq0 : q ≠ 0 := by
       intro H
       rw [← Polynomial.leadingCoeff_eq_zero] at H

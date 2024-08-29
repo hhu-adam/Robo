@@ -12,7 +12,7 @@ Introduction
 
 Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   Hint "**Du**: Also als erstes teile ich wohl mal das Und (`∧`) auf."
-  rcases k with ⟨h₁, h₂⟩
+  obtain ⟨h₁, h₂⟩ := k
   Hint (strict := true) "
     **Du**: Und jetzt …
 

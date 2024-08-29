@@ -73,7 +73,7 @@ Statement (a b : ℝ) (hab : a ≤ b) (f : ℝ → ℝ) (f_cont : ContinuousOn f
 --Wir wollen also unsere Annahme t so geeignet umschreiben, dass wir das zu zeigende dort stehen haben.
 
   simp only [g] at t         --Dafür setzen wir g in t ein.
-  rcases t with ⟨x, hx, hx2⟩   --Dann teilen wir t auf in mehrere Aussagen.
+  obtain ⟨x, hx, hx2⟩ := t   --Dann teilen wir t auf in mehrere Aussagen.
   use x                       --Unser durch t gefundenes x wollen wir für unseren Beweis nutzen.
   --Jetzt muss gezeigt werden, dass x im gewünschten Intervall ist und die gewünschte Eigenschaft erfüllt.
   constructor

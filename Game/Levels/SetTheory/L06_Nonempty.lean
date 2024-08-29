@@ -48,7 +48,7 @@ Statement Set.nonempty_iff_ne_empty
 
     **Du**: Na dann sollte das zumindest eine Tautologie sein."
     Branch
-      rcases h with ⟨x, hx⟩
+      obtain ⟨x, hx⟩ := h
       -- TODO: bad style
       apply hf
       assumption

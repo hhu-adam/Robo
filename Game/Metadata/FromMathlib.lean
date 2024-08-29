@@ -17,7 +17,6 @@ import Mathlib.Data.Fin.VecNotation
 import Mathlib.Tactic.FinCases
 
 import Mathlib.Init.Data.Nat.Basic -- Imports the notation ℕ.
--- import Std.Tactic.RCases
 
 -- not imported by default but important for the game.
 -- enables `have x : A` as a tactic.

@@ -65,7 +65,7 @@
 -- --   simp only [empty_subset]
 -- --   intro a
 -- --   rw [Subset.antisymm_iff] at a
--- --   rcases a with ⟨h₁, h₂⟩
+-- --   obtain ⟨h₁, h₂⟩ := a
 -- --   assumption
 
 -- -- -- eq_empty_iff_forall_not_mem
@@ -121,7 +121,7 @@
 --     · left
 --       rw [Finset.subset_insert_iff_of_not_mem]
 --   · intro h
---     rcases h with h | ⟨B, h₁, h₂⟩
+--     obtain h | ⟨B, h₁, h₂⟩ := h
 --     · exact le_trans h (subset_insert x A)
 --     · rw [←h₂]
 --       exact insert_subset_insert h₁
@@ -201,10 +201,10 @@
 --       assumption
 --   · intro h
 --     rw [mem_union, mem_setOf] at h
---     rcases h with h | h
+--     obtain h | h := h
 --     · apply mem_powerset' h
 --       simp
---     · rcases h with ⟨B, hB⟩
+--     · obtain ⟨B, hB⟩ := h
 --       rw [←hB.2]
 --       apply mem_powerset' hB.1
 --       simp

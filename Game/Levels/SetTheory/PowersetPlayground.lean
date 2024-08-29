@@ -23,7 +23,7 @@ theorem subset_insert_iff_of_not_mem {U : Type _ } {s t : Set U} {a : U} (h : a 
   · intro g y hy
     specialize g hy
     rw [mem_insert_iff] at g
-    rcases g with g | g
+    obtain g | g := g
     · rw [g] at hy
       contradiction
     · assumption
@@ -50,7 +50,7 @@ lemma mem_powerset_insert_iff {U : Type _} (A S : Set U) (x : U) :
     · left
       exact (subset_insert_iff_of_not_mem hs).mp h
   · intro h
-    rcases h with h | ⟨B, h₁, h₂⟩
+    obtain h | ⟨B, h₁, h₂⟩ := h
     · exact le_trans h (subset_insert x A)
     · rw [←h₂]
       exact insert_subset_insert h₁

@@ -55,8 +55,8 @@ Statement even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   Hint "
     **Du**: Also von `{h}` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = n` …
 
-    **Robo**: Mit `rcases h with ⟨r, hr⟩` kannst du dieses `r` tatsächlich einführen."
-  rcases h with ⟨r, hr⟩
+    **Robo**: Mit `obtain ⟨r, hr⟩ := h` kannst du dieses `r` tatsächlich einführen."
+  obtain ⟨r, hr⟩ := h
   Hint "
     **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = n^2`?
 

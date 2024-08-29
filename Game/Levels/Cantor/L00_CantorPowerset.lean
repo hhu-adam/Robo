@@ -27,7 +27,7 @@ Statement cantor_helper (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f 
     by_contra _ha
 
   by_contra h
-  rcases h with ⟨a, ha⟩
+  obtain ⟨a, ha⟩ := h
   Hint (strict := true) "**Du**: Ich denke eine Fallunterscheidung auf `{a} ∈ {f} {a}` könnte sinnvoll sein."
   Hint (hidden := true) (strict := true) "**Robo**: Das wäre `by_cases h₁ : {a} ∈ {f} {a}`."
   by_cases h₁ : a ∈ f a

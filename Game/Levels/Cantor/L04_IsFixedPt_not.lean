@@ -21,7 +21,7 @@ Statement not_isFixedPt_not : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
     wahr und falsch sein!"
   Branch
     by_contra h
-    rcases h with ⟨P, hP⟩
+    obtain ⟨P, hP⟩ := h
     unfold IsFixedPt at hP
     simp at hP -- a bit magical
   Branch

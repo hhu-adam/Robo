@@ -9,7 +9,7 @@ Introduction
 "
 Ihr schleicht euch langsam an.
 
-**Du** (**flüsternd**): Ich glaube, du hattest Recht.  Diese Zettel sind eine Art Steckbrief!  
+**Du** (**flüsternd**): Ich glaube, du hattest Recht.  Diese Zettel sind eine Art Steckbrief!
 Und sie beschreiben dieses Wesen hier eindeutig!
 
 **Robo**: Wie meinst du das?
@@ -19,7 +19,7 @@ damit kann es eindeutig identifiziert werden kann!
 
 **Robo**: Das musst du mir genauer erklären.
 
-**Du**:  Ich versuch's mal. Gibt es in Leansch einen Namen für die Spur? 
+**Du**:  Ich versuch's mal. Gibt es in Leansch einen Namen für die Spur?
 
 **Robo**: Ja klar, die heißt natürlich `trace`.  Manche Formalosophen nennen sie auch liebevoll Tracy.
 
@@ -43,10 +43,10 @@ TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     trace = f := by
-  Hint "**Du**:  Hier sind noch einmal alle Eigenschaften zusammengefasst.  
-    
+  Hint "**Du**:  Hier sind noch einmal alle Eigenschaften zusammengefasst.
+
     **Robo**:  Und du behauptest, nur Tracy hat diese Eigenschaften?
-  
+
     **Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auch allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
   Hint (hidden := true) "
     **Robo**: `ext`!"
@@ -57,12 +57,12 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
 
     **Du**: Wirklich?
 
-    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `rcases n`.
+    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n.
 
     **Du**: Nicht `induction n`?
 
     **Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
-  rcases n
+  obtain ⟨⟩ := n
   · Hint (hidden := true) "**Robo**: Ich hab im Kopf mal `simp` ausprobiert. Probier es auch mal."
     simp
   · Hint "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!

@@ -10,7 +10,7 @@ Title "Bernoulli Ungleichung"
 
 Introduction
 "
-TODO: Induktion (& induktion vs rcases)
+TODO: Induktion (& induktion vs obtain)
 
 "
 

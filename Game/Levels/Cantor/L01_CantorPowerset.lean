@@ -31,7 +31,7 @@ Statement {A : Type*} (f : A → Set A) :
   --   **Cantor**: Genau! Und dann überlegt euch, ob `b ∈ f b` ist oder nicht für
   --   dieses Urbild `b`!"
   --   have hsurj := hf { a | a ∉ f a }
-  --   rcases hsurj with ⟨b, hb⟩
+  --   obtain ⟨b, hb⟩ := hsurj
   --   Hint (hidden := true) "**Robo**: Das machen wir glaubs am besten mit `by_cases`."
   --   by_cases b ∈ f b
   --   · Branch
@@ -62,7 +62,7 @@ Statement {A : Type*} (f : A → Set A) :
 
   **Robo**: Ich hab das als `cantor_helper f` gespeichert."
   apply cantor_helper f
-  rcases hf { x | x ∉ f x } with ⟨w, hw⟩
+  obtain ⟨w, hw⟩ := hf { x | x ∉ f x }
   use w
 
 NewHiddenTactic unfold_let -- TODO: remove

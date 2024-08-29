@@ -58,7 +58,7 @@ theorem sum_range_id_mul_two' (n : ℕ) : (∑ i in range n, i) * 2 = n * (n - 1
 
 open Finset in
 theorem sum_cubes (n : ℕ) : (∑ i in range n, i^3) = (∑ i in range n, i)^2 := by
-  rcases n with n
+  obtain n := n
   · apply Nat.eq_of_mul_eq_mul_right (show 0 < 2^2 by norm_num)
     rw [←mul_pow, sum_range_id_mul_two]
 

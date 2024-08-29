@@ -18,7 +18,7 @@ Statement surjective_quotient_mk_ker (f : A → B) : Surjective (Quotient.mk (ke
   -- "choose a representative `b`"
   -- obtain ⟨b⟩ := q
   -- change ∃ a, ⟦a⟧ = ⟦b⟧ -- why does this not pp correctly?
-  -- rcases q with ⟨b⟩
+  -- obtain ⟨b⟩ := q
   --induction q using Quotient.ind with b
   exact Quotient.exists_rep q
 

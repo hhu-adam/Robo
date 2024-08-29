@@ -63,7 +63,7 @@ begin
     intro y,
       by_cases hy : y ∈ b k,
       { rw [submodule.mem_map] at hy,
-        rcases hy with ⟨x,hx⟩,
+        obtain ⟨x,hx⟩ := hy,
         use x,
         intro,
         assumption,
@@ -99,7 +99,7 @@ begin
     { intros x hx,
       norm_cast at hx,
       rw [finset.mem_image] at hx,
-      rcases hx with ⟨y, hy, hxy⟩,
+      obtain ⟨y, hy, hxy⟩ := hx,
       subst hxy,
       apply (hμ k y (S_subset_bk hy)).1.2, },
     { rw [← hS],
@@ -114,11 +114,11 @@ begin
         exact (hμ k y (S_subset_bk hy)).2, },
       { intros x hx,
         rw set.mem_image at hx,
-        rcases hx with ⟨y, hy, hxy⟩,
+        obtain ⟨y, hy, hxy⟩ := hx,
         norm_cast at hy,
         rw [finset.mem_image] at hy,
         subst hxy,
-        rcases hy with ⟨x, hx, hxy⟩,
+        obtain ⟨x, hx, hxy⟩ := hy,
         subst hxy,
         rw (hμ k x (S_subset_bk hx)).2,
         exact hx,
@@ -143,7 +143,7 @@ begin
       sorry --Schwierig, aber machbar.
     },
 
-    rcases S_subset_bk with ⟨k,hk⟩,
+    obtain ⟨k,hk⟩ := S_subset_bk,
 
     have bb_eq_bk : bb = (b k), {
       suffices : bb ≤ b k ∧ bb ≥ b k, {
@@ -171,7 +171,7 @@ begin
     assumption
   },
 
-  rcases exists_FF with ⟨K, FF, hFFA, hFF⟩,
+  obtain ⟨K, FF, hFFA, hFF⟩ := exists_FF,
 
   --Wenn K minimal gewählt wurde, dann ist K der höchste Grad der Polynome in FF.
   --Aber man kann auch K beliebig groß genug wählen. Dann sei d = max{ deg(f) | f ∈ FF }.
@@ -255,9 +255,9 @@ begin
 
     let P : R[X] → Prop := λ p, p ∈ a.carrier ∧ p ∉ aa.carrier,
     have C : ∃ g : R[X], P g, {
-      rcases aa_ssubset_a with ⟨g,gh⟩,
+      obtain ⟨g,gh⟩ := aa_ssubset_a,
       use g,
-      rcases gh with ⟨g',hg'⟩,
+      obtain ⟨g',hg'⟩ := gh,
       change g ∈ a.carrier ∧ g ∉ aa.carrier,
       constructor,
       assumption,
@@ -265,7 +265,7 @@ begin
     },
 
     --Wähle g ∈ a von minimalem Grad.
-    rcases C with ⟨g,hg⟩,
+    obtain ⟨g,hg⟩ := C,
     --wlog h' : ∀ p, P p → g.degree ≤ p.degree,
     have g_min : ∀ p, P p → g.degree ≤ p.degree, {
       sorry --wlog_sorry
@@ -322,7 +322,7 @@ begin
       },
 
       rw [mem_span_finset] at u_in_S,
-      rcases u_in_S with ⟨ρ,hρ⟩,
+      obtain ⟨ρ,hρ⟩ := u_in_S,
 
 
       --let g₀ := monomial 0 (σ 0) + monomial 1 (σ 1),
@@ -361,5 +361,3 @@ begin
   assumption,
 
 end
-
-

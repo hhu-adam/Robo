@@ -10,7 +10,7 @@ import ring_theory.bezout
 theorem gcd_equiv (a b n : ℤ   ) ( c : ℕ): (int.gcd a n ∣ c)  → ∃ x, a * x ≡ c [ZMOD n]:=
 begin
     intro h₁,
-    rcases h₁ with ⟨k, hk⟩,  
+    obtain ⟨k, hk⟩ := h₁,
     let x := a.gcd_a n,
     let y := a.gcd_b n,
     have bez := int.gcd_eq_gcd_ab a n,
@@ -25,7 +25,7 @@ end
 theorem gcd_equiv (n a b : ℤ) (c : ℕ): (int.gcd a n ∣ c)  → ∃ x, a * x ≡ c [ZMOD n]:=
 begin
     intro h₁,
-    rcases h₁ with ⟨k, hk⟩,
+    obtain ⟨k, hk⟩ := h₁,
 
     -- I am not sure how you would introduce new variables
     -- For now I just used new assumptions that need to be proved later
@@ -37,13 +37,13 @@ begin
     norm_num,
     rw [bez],
     use k*z,
-    rw add_mul, 
+    rw add_mul,
     rw int.modeq_iff_dvd,
     ring,
     rw mul_comm y,
     rw mul_assoc,
     simp?,
-    
+
     rw ←zmod.eq_iff_modeq_nat,
 
 

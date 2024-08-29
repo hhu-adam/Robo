@@ -32,7 +32,7 @@
 
 ### Tactics
 
-- replace `rcases` by `obtain`
+- replace `rcases` by `obtain` (JE: DONE)
 - recursive `constructor` -- some version of `refine`??
 - we've thrown out `injection` tactic
 - we've thrown out `linear_combination` tactic

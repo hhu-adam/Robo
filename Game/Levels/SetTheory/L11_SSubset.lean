@@ -19,10 +19,10 @@ open Set
 
 /--  -/
 Statement (A B : Set ℕ) (h : A ⊂ B) : ∃ x, x ∈ B \ A := by
-  rcases h with ⟨h₁, h₂⟩
+  obtain ⟨h₁, h₂⟩ := h
   rw [subset_def] at h₂
   rw [not_forall] at h₂
-  rcases h₂ with ⟨x, hx⟩
+  obtain ⟨x, hx⟩ := h₂
   use x
   rw [not_imp] at hx
   rw [mem_diff]

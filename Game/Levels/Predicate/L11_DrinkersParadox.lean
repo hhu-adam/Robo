@@ -39,7 +39,7 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
     Und was bedeutet `Nonempty People`?
 
     **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-    Mit `rcases {h_nonempty} with ⟨pers⟩` kannst du dir eine `pers : Person` aussuchen,
+    Mit `obtain ⟨pers⟩ := {h_nonempty}` kannst du dir eine `pers : Person` aussuchen,
     die es per Annahme gibt.
 
     **Du**: Und wie fang ich jetzt an?
@@ -52,11 +52,11 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
   Hint (hidden := true) "
     **Du**: Und wen nehm ich jetzt?
 
-    **Robo**: Wie gesagt, `rcases h_nonempty with ⟨d⟩` gibt dir eine x-beliebige Person `d`."
+    **Robo**: Wie gesagt, `obtain ⟨d⟩ := h_nonempty` gibt dir eine x-beliebige Person `d`."
   Branch
     -- less pretty alternative
     have _d := Classical.choice h_nonempty
-  rcases h_nonempty with ⟨d⟩
+  obtain ⟨d⟩ := h_nonempty
   use d
   intro
   assumption
@@ -64,8 +64,8 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
   push_neg at h
   Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
 
-  **Robo**: Schau dir mal an wie man `rcases` auf die Annahme `{h}` anwenden könnte."
-  rcases h with ⟨p, hp⟩
+  **Robo**: Schau dir mal an wie man `obtain` auf die Annahme `{h}` anwenden könnte."
+  obtain ⟨p, hp⟩ := h
   use p
   intro hp'
   Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
@@ -75,7 +75,7 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
 `Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
 enthält.
 
-Wenn `h : Nonempty U`, dann kriegt man mit `rcases h with ⟨d⟩` eine solches Element `d : U`.
+Wenn `h : Nonempty U`, dann kriegt man mit `obtain ⟨d⟩ := h` eine solches Element `d : U`.
 -/
 DefinitionDoc Nonempty as "Nonempty"
 
@@ -103,7 +103,7 @@ Conclusion
 | 13    | `ring`                    | Löst Gleichungen mit `+, -, *, ^`.                     |
 | 14    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
 | 15    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
-| *7ᶜ*  | `rcases h with ⟨x, hx⟩`   | Um ein `∃` in den Annahmen zu zerlegen.                |
+| *7ᶜ*  | `obtain ⟨x, hx⟩ := h`   | Um ein `∃` in den Annahmen zu zerlegen.                |
 | *8ᵇ*  | `intro`                   | Um ein `∀` im Goal anzugehen.                          |
 | 16    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
 "

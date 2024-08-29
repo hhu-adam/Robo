@@ -13,7 +13,7 @@ umzugehen um folgende Aussage zu beweisen.
 
 |         | Und                      | Oder                      |
 |---------|:-------------------------|:--------------------------|
-| Annahme | `rcases h with ⟨h₁, h₂⟩` | `rcases h with h₁ \\| h₂` |
+| Annahme | `obtain ⟨h₁, h₂⟩ := h` | `rcases h with h₁ \\| h₂` |
 | Goal    | `constructor`            | `left`/`right`            |
 "
 
@@ -22,7 +22,7 @@ umzugehen um folgende Aussage zu beweisen.
  (A B C : Prop) (h : (A ∧ B) ∨ (A → C)) (hA : A) : (B ∨ (C ∧ A)) := by
   rcases h with h₁ | h₂
   left
-  rcases h₁ with ⟨x, y⟩
+  obtain ⟨x, y⟩ := h₁
   assumption
   right
   constructor
@@ -48,10 +48,10 @@ HiddenHint (A : Prop) (B : Prop) (C : Prop) (h : B) (hA : A) : B ∨ (C ∧ A) =
 "`left` oder `right`?"
 
 Hint (A : Prop) (B : Prop) (C : Prop) (h : A ∧ B) (hA : A) : B ∨ (C ∧ A) =>
-"Ein UND in den Annahmen kann man mit `rcases h with ⟨h₁, h₂⟩` aufteilen."
+"Ein UND in den Annahmen kann man mit `obtain ⟨h₁, h₂⟩ := h` aufteilen."
 
 Hint (A : Prop) (B : Prop) (C : Prop) (h : A ∧ B) (hA : A) : B =>
-"Ein UND in den Annahmen kann man mit `rcases h with ⟨h₁, h₂⟩` aufteilen."
+"Ein UND in den Annahmen kann man mit `obtain ⟨h₁, h₂⟩ := h` aufteilen."
 
 Hint (A : Prop) (B : Prop) (C : Prop) (h : A ∧ B) : C =>
 "Sackgasse."

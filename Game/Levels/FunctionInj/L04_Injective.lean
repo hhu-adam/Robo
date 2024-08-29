@@ -17,7 +17,7 @@ open Set Function
 Statement StrictMono.injective {A B : Type*} [LinearOrder α] [Preorder β] {f : α → β}
     (hf : StrictMono f)  : Injective f := by
   intro a b h
-  rcases lt_trichotomy a b with hlt | heq | hgt
+  obtain hlt | heq | hgt := lt_trichotomy a b
   · apply hf at hlt
     rw [h] at hlt
     simp at *

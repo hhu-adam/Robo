@@ -18,7 +18,7 @@ open Function Set
 Statement (f : X → X) : f '' (fixedPoints f)  ⊆ fixedPoints f := by
   Branch
     intro y hy
-    rcases hy with ⟨x, h₁, h₂⟩
+    obtain ⟨x, h₁, h₂⟩ := hy
     rw [← h₂]
     apply IsFixedPt.apply
     assumption

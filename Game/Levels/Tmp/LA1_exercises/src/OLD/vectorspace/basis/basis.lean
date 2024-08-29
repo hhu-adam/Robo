@@ -65,7 +65,7 @@ end
 -- def A : ℚ^(3,2) := ![![ 2, 3],
 --                      ![ 0, 1],
 --                      ![-1, 0]]
- 
+
 -- def B : ℚ^(5,3) := !![ 2, 3.5, 1  ;
 --                        0, 1  , 4  ;
 --                       -1, 0.6, 8  ;
@@ -133,15 +133,15 @@ end
 --     simp only [pi.add_apply, pi.smul_apply, pi.zero_apply] at h',
 --     change c 0 * 0 + (c 1 * 0 + c 2 * 3) = 0 at h',
 --     linarith,
---   }, 
+--   },
 -- end
 
 
--- -- 
+-- --
 
 
 -- /--
--- A family of elements is generating if it spans the entire module. 
+-- A family of elements is generating if it spans the entire module.
 -- -/
 -- def generating (R : Type*) {M ι : Type*}
 --   [ring R] [add_comm_monoid M] [module R M] (V : ι → M) :=
@@ -238,7 +238,7 @@ end
 --   ∃ (coef : fin n →₀ R), v = ∑ i, (coef i) • (b i) :=
 -- begin
 --   rw [finsupp.mem_span_image_iff_total R] at h,
---   rcases h with ⟨coef, h₁, h₂⟩,
+--   obtain ⟨coef, h₁, h₂⟩ := h,
 --   use coef,
 --   rw ←h₂,
 --   rw finsupp.total_apply,
@@ -322,9 +322,9 @@ end
 -- --   constructor,
 -- --   {
 -- --     intro h,
-    
+
 -- --     let x := (finsupp.mem_span_image_iff_total _).1,
-    
+
 -- --   }, sorry
 
 -- --   --rw mem_span_finset,
@@ -504,13 +504,13 @@ end
 
 -- -- --   intro i,
 -- -- --   apply subset_span,
-  
+
 -- -- --   change coeff i • b i ∈ set.range b,
 -- -- --   have := (span R (set.range b)).smul_mem (coeff i),
 -- -- -- end
 
 
--- -- #check span.repr 
+-- -- #check span.repr
 -- -- #check mem_span_finset
 -- -- #check span_range_eq_supr -- Then express as internal sum.
 
@@ -546,8 +546,8 @@ end
 -- --     let coef : fin n → R := λ i, (span.repr R (set.range b) ⟨v, h⟩) ⟨b i, by simp⟩,
 -- --     use coef,
 -- --     simp_rw [coef],
-    
-    
+
+
 
 -- --     -- Most statements are about `∑ i, f i` and it can't match `coef i • b i` with `f? i`.
 -- --     change ∃ (coef : fin n → R), v = ∑ (i : fin n), (λ j, coef j • b j) i,

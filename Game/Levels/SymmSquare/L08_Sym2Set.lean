@@ -46,14 +46,14 @@ theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
     S.card = 1 ∨ S.card = 2 ↔ ∃ a b, S = {a,b} := by
   constructor
   · intro h
-    rcases h with h | h
+    obtain h | h := h
     · rw [card_eq_one] at h
-      rcases h with ⟨s, hs⟩
+      obtain ⟨s, hs⟩ := h
       use s, s
       simp
       assumption
     · rw [card_eq_two] at h
-      rcases h with ⟨s, t, _h₁, h₂⟩
+      obtain ⟨s, t, _h₁, h₂⟩ := h
       use s, t
   · rintro ⟨a, b, rfl⟩
     simp
@@ -65,7 +65,7 @@ Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 
         -- this would be `aesop` but it's too slow so I replaced it while working on it.
         intro a b h
         rw [Sym2.rel_iff'] at h
-        rcases h with h | h
+        obtain h | h := h
         dsimp only
         · rw [h]
         · rw [h]
@@ -100,7 +100,7 @@ Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 
         rw [Prod.fst_swap, Prod.snd_swap]
         assumption
   · intro y
-    rcases y with y | y
+    obtain y | y := y
     · have y₂ := y.2
       rw [card_eq_one] at y₂
       choose a ha using y₂

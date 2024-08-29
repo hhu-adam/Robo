@@ -23,7 +23,7 @@ Statement Nat.exists_infinite_primes' :
   have ⟨q, _hq₁, hq₂⟩ := Set.Finite.exists_maximal_wrt (id : ℕ → ℕ) allPrimes h ?_
   · simp? at hq₂
     have l03 := Nat.exists_infinite_primes (q+1)
-    rcases l03 with ⟨P, hP₁, hP₂⟩
+    obtain ⟨P, hP₁, hP₂⟩ := l03
     have hP₃ : q ≤ P := by
       apply le_of_succ_le
       assumption

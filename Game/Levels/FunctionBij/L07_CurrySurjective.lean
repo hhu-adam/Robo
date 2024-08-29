@@ -18,14 +18,14 @@ Statement (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g 
   · intro h
     simp [Surjective] at h
     push_neg at h
-    rcases h with ⟨w, hw⟩
+    obtain ⟨w, hw⟩ := h
     use w
     intro n
     rw [ne_comm]
     apply hw
   · intro ⟨g, hg⟩
     intro hf
-    rcases hf g with ⟨n, hn⟩
+    obtain ⟨n, hn⟩ := hf g
     apply hg n
     symm
     assumption

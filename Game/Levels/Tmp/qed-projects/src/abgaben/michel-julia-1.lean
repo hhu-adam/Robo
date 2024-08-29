@@ -7,7 +7,7 @@ import algebra.support
 import topology.instances.real
 import topology.algebra.order.intermediate_value
 
--- Sei I = [a, b] und f : I → R stetig mit f(I) ⊂ I. 
+-- Sei I = [a, b] und f : I → R stetig mit f(I) ⊂ I.
 -- Zeige, dass es ein x ∈ I gibt, so dass f(x) = x.
 
 --------------------------------------------------
@@ -24,8 +24,8 @@ end
 
 -------------------------------------------------
 
-example (a b: ℝ) (h3: a ≤ b ) (f : ℝ → ℝ ) 
-[h1: continuous_on f (set.Icc a b)] [h2: set.image f (set.Icc a b) ⊂ set.Icc a b]: 
+example (a b: ℝ) (h3: a ≤ b ) (f : ℝ → ℝ )
+[h1: continuous_on f (set.Icc a b)] [h2: set.image f (set.Icc a b) ⊂ set.Icc a b]:
 ∃ (x ∈ (set.Icc a b)), f x = x :=
 
 begin
@@ -49,16 +49,16 @@ have cg : continuous_on g (set.Icc a b),
   have nl: ((0 : ℝ ) ∈ (set.Icc (g a) (g b))),
     rw[set.mem_Icc],                  --Dafür schreiben wir das Intervall um
     constructor,                      --und teilen die Aussage in zwei Teile, die wir zeigen wollen.
-    
+
     --Zuerst: g(a) ≤ 0
     simp,                             --Setzen g ein und vereinfachen das zu Zeigende.
-    --Die gewünschte Aussage steht im Grunde in unser Annahme h2, 
+    --Die gewünschte Aussage steht im Grunde in unser Annahme h2,
     --weswegen wir diese geeignet umschreiben und für unseren Fall spezialisieren.
-    rw [set.ssubset_def] at h2, 
+    rw [set.ssubset_def] at h2,
     rcases h2,
     rw [set.subset_def] at h2_left,
     specialize h2_left (f a),
-    simp? at h2_left, 
+    simp? at h2_left,
     specialize h2_left (a),
     tauto,
 
@@ -84,7 +84,7 @@ have cg : continuous_on g (set.Icc a b),
 --Wir wollen also unsere Annahme t so geeignet umschreiben, dass wir das zu zeigende dort stehen haben.
 
   simp only [g] at t,          --Dafür setzen wir g in t ein.
-  rcases t with ⟨x, hx, hx2⟩,   --Dann teilen wir t auf in mehrere Aussagen.
+  obtain ⟨x, hx, hx2⟩ := t,   --Dann teilen wir t auf in mehrere Aussagen.
   use x,                       --Unser durch t gefundenes x wollen wir für unseren Beweis nutzen.
   --Jetzt muss gezeigt werden, dass x im gewünschten Intervall ist und die gewünschte Eigenschaft erfüllt.
   constructor,
@@ -94,4 +94,3 @@ have cg : continuous_on g (set.Icc a b),
   refine sub_eq_zero.mp _,
   assumption,
 end
-

@@ -54,7 +54,7 @@ begin
       intro y,
         by_cases hy : y ∈ b n,
         { rw [submodule.mem_map] at hy,
-          rcases hy with ⟨x,hx⟩,
+          obtain ⟨x,hx⟩ := hy,
           use x,
           intro,
           assumption,
@@ -86,7 +86,7 @@ begin
     { intros x hx,
       norm_cast at hx,
       rw [finset.mem_image] at hx,
-      rcases hx with ⟨y, hy, hxy⟩,
+      obtain ⟨y, hy, hxy⟩ := hx,
       subst hxy,
       apply (hμ n y (S_subset_bn hy)).1.2, },
     { rw [← hS],
@@ -101,11 +101,11 @@ begin
         exact (hμ n y (S_subset_bn hy)).2, },
       { intros x hx,
         rw finset.mem_image at hx,
-        rcases hx with ⟨y, hy, hxy⟩,
+        obtain ⟨y, hy, hxy⟩ := hx,
         --norm_cast at hy,
         rw [finset.mem_image] at hy,
         subst hxy,
-        rcases hy with ⟨x, hx, hxy⟩,
+        obtain ⟨x, hx, hxy⟩ := hy,
         subst hxy,
         rw (hμ n x (S_subset_bn hx)).2,
         exact hx,
@@ -140,7 +140,7 @@ begin
       sorry
     },
 
-    rcases S_subset_bN with ⟨N,hN⟩,
+    obtain ⟨N,hN⟩ := S_subset_bN,
 
     have B_eq_bk : B = (b N), {
       suffices : B ≤ b N ∧ B ≥ b N, {
@@ -167,7 +167,7 @@ begin
   },
 
   --Wähle N minimal.
-  rcases exists_N with ⟨N,hN⟩,
+  obtain ⟨N,hN⟩ := exists_N,
   have N_minimal : ∀ (n : ℕ), n < N → B < ideal.span (finset.image (η n) (F n)), {
     sorry --wlog_sorry
   },
@@ -223,9 +223,9 @@ begin
     rw [set.ssubset_iff_of_subset A_subset_a] at A_ssubset_a,
 
     have C : ∃ g : R[X], g ∈ a.carrier ∧ g ∉ A.carrier, {
-      rcases A_ssubset_a with ⟨g,gh⟩,
+      obtain ⟨g,gh⟩ := A_ssubset_a,
       use g,
-      rcases gh with ⟨g',hg'⟩,
+      obtain ⟨g',hg'⟩ := gh,
       change g ∈ a.carrier ∧ g ∉ A.carrier,
       constructor,
       assumption,
@@ -233,7 +233,7 @@ begin
     },
 
     --Wähle g mit minimalem Grad.
-    rcases C with ⟨g,hg⟩,
+    obtain ⟨g,hg⟩ := C,
     have g_minimal : ∀ (f : R[X]), f.degree < g.degree → ¬(f ∈ a.carrier ∧ f ∉ A.carrier), {
       sorry --wlog_sorry
     },
@@ -277,7 +277,7 @@ begin
       rw [hN] at u_in_B,
       rw [← ideal.submodule_span_eq] at u_in_B,
       rw [mem_span_finset] at u_in_B,
-      rcases u_in_B with ⟨ρ,hρ⟩,
+      obtain ⟨ρ,hρ⟩ := u_in_B,
 
       --no shot
 
@@ -313,4 +313,3 @@ begin
   rw [ideal_eq_iff_carrier_eq],
   assumption,
 end
-

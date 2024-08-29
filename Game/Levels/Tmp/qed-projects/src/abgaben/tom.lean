@@ -14,7 +14,7 @@ example (a b : ℕ) (p : ℕ) (prime_p : fact (nat.prime p)):
 begin
   intro h,
   unfold legendre_sym, -- wird benötigt damit wir a,b in zmod haben
-  rw [← zmod.eq_iff_modeq_nat] at h, 
+  rw [← zmod.eq_iff_modeq_nat] at h,
   simp,
   rw[h],
 
@@ -41,14 +41,14 @@ end
 open_locale big_operators
 
 -- wenn das legendre symbol 1 ist, existiert ein x aus zmod p mit x^2 = a
-lemma is_qr (p : ℕ) [h : (p > 2)] [prime_p : fact (nat.prime p)] (a : zmod p) [ t : a ≠0]   : 
+lemma is_qr (p : ℕ) [h : (p > 2)] [prime_p : fact (nat.prime p)] (a : zmod p) [ t : a ≠0]   :
   legendre_sym p a = 1 ↔ ∃ x : zmod p, x^2 = a :=
 begin
   constructor,
   intro h₁,
   rw[legendre_sym.eq_one_iff] at h₁,
   unfold is_square at h₁,
-  rcases h₁ with ⟨hj,hr⟩,
+  obtain ⟨hj,hr⟩ := h₁,
   use hj,
   simp at hr,
   rw[hr],
@@ -56,7 +56,7 @@ begin
   simp,
   assumption,
   intro hr,
-  rcases hr with ⟨hr,hj⟩,
+  obtain ⟨hr,hj⟩ := hr,
   rw[legendre_sym.eq_one_iff],
   simp,
   unfold is_square,
@@ -66,9 +66,9 @@ begin
   simp,
   assumption,
 end
-lemma anz_qr (p : ℕ) (h : (p > 2)) (prime_p : fact (nat.prime p)) (a : zmod p)  : 
+lemma anz_qr (p : ℕ) (h : (p > 2)) (prime_p : fact (nat.prime p)) (a : zmod p)  :
    (nat.card {a : zmod p | ∃ x : zmod p, x^2 = a} = (p-1)/2) ∧ (nat.card {a : zmod p | ¬∃ x : zmod p, x^2 = a}) = (p-1)/2:=
-  
+
   --unter den zahlen 1,...,p-1 sind genau (p-1)/2 quadratische Reste mod p (und (p-1)/2 quadratische nichtreste)
 begin
   sorry
@@ -85,7 +85,7 @@ begin
     --apply quadratic_char_dichotomy,
     --simp,
   },
-  
+
 
   --apply [quadratic_char_dichotomy t],
 end
@@ -94,12 +94,12 @@ end
 example (p q : ℕ) (prime_p : fact (nat.prime p)) (prime_q : fact (nat.prime q)) (h:(p ≡ 3 [ZMOD 4]) ∧ (q ≡ 3 [ZMOD 4])) (g : p ≠ q) :
   legendre_sym p q * legendre_sym q p = -1 :=
 begin
-  rcases h with ⟨h₁,h₂⟩, 
+  obtain ⟨h₁,h₂⟩ := h,
   unfold legendre_sym,
   simp,
   rw[int.modeq_iff_add_fac] at *,
-  rcases h₁ with ⟨x,h₁x⟩,
-  rcases h₂ with ⟨y,h₂y⟩,
+  obtain ⟨x,h₁x⟩ := h₁,
+  obtain ⟨y,h₂y⟩ := h₂,
   rw[lol] at h₁x,
   rw[h₂y] at h₁x,
   simp,
