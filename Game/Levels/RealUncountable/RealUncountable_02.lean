@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.NewStuff.RealUncountable_01
+import Game.Levels.RealUncountable.RealUncountable_01
 
 World "TmpRealsUncountable"
 Level 2
