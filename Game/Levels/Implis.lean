@@ -13,7 +13,7 @@ import Game.Levels.Implis.L12_ByCases
 import Game.Levels.Implis.L13_Rw
 import Game.Levels.Implis.L14_Summary
 
-World "Implication"
+World "Implis"
 Title "Implis"
 
 Image "images/Implication.png"

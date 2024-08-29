@@ -93,6 +93,13 @@ DefinitionDoc Symbol.function as "fun x => _"
 DefinitionDoc And as "∧"
 
 /--
+* Für `A B : Prop` ist `A → B` eine Implikation "`A` impliziert `B`"
+* Für andere `X Y : Type` ist `X → Y` eine Funktion, die Werte aus `X` nach `Y` abbildet,
+  z.B. `f : ℕ → ℤ := n ↦ -n`.
+-/
+DefinitionDoc Arrow as "→"
+
+/--
 Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
 -/
 DefinitionDoc Eq as "="
