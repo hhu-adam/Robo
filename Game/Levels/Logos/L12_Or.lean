@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 12
 
 Title "Oder"
@@ -32,5 +32,6 @@ Conclusion
 Auch dieser Formalosoph zieht zufrieden von dannen.
 "
 
+NewDefinition Or
 NewTactic left right
 DisabledTactic tauto

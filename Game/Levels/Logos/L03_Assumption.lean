@@ -1,14 +1,17 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 3
 
 Title "Annahmen"
 
 Introduction
 "
-Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne. Es ist schüchtern und schreibt bloß.
+Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne.
+Es ist schüchtern und schreibt bloß.
 "
+
+set_option linter.unusedVariables false in
 
 Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := by
   Hint "
@@ -16,11 +19,11 @@ Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := b
 
     **Du**: Warum schreibt er dann nicht `{n} ∈ ℕ`??
 
-    **Robo**: Weil das hier alles komische Typen sind … Ich kann dir das später mal in Ruhe erklären.
-    Jetzt will ich erst einmal die Frage entschlüsseln.
+    **Robo**: Weil das hier alles komische Typen sind … Ich kann dir das später mal in Ruhe
+    erklären. Jetzt will ich erst einmal die Frage entschlüsseln.
 
-    **Robo**: Also, `{h₁}`, `{h₂}`, `{h₃}` sind einfach nur Namen für verschiedene Annahmen, und zwar
-    für die Annahme `n < 10`, `1 < n` und `n ≠ 5`. Beweisen sollen wir: `1 < n`.
+    **Robo**: Also, `{h₁}`, `{h₂}`, `{h₃}` sind einfach nur Namen für verschiedene Annahmen,
+    und zwar für die Annahme `n < 10`, `1 < n` und `n ≠ 5`. Beweisen sollen wir: `1 < n`.
 
     **Du**: Aber das war doch gerade eine der Annahmen.
 

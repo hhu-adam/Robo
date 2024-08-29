@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 13
 
 Title "Oder"
@@ -24,10 +24,10 @@ Zuerst ein \"Und\" im Ziel, dann \"Und\" in der Annahme, dann \"Oder\" im Ziel u
 **Robo** Lass ihnen doch ihren Spaß.
 Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten weiterfliegen.
 
-**Du** Also, wieder `rcases …`?
+**Du** Also, wieder `obtain …`?
 
-**Robo** Ja, aber diesmal nicht `rcases {h} with ⟨h₁, h₂⟩`, sondern `rcases {h} with h | h`."
-  rcases h with h | h
+**Robo** Ja, aber diesmal nicht `obtain ⟨h₁, h₂⟩ := {h}`, sondern `obtain h | h := {h}`."
+  obtain h | h := h
   · Hint "**Robo**
     Jetzt musst du dein Ziel zweimal beweisen:
     Einmal unter Annahme der linken Seite `{A} ∧ {B}`,
@@ -36,8 +36,8 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
     sei wahr."
     Hint (hidden := true) " **Robo** Wie man mit einem Und in den Annahmen umgeht,
     weißt du doch schon:
-    `rcases h with ⟨h₁, h₂⟩`. Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
-    rcases h with ⟨h₁, h₂⟩
+    `obtain ⟨h₁, h₂⟩ := {h}`. Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
+    obtain ⟨h₁, _h₂⟩ := h
     assumption
   · Hint (strict := true) "**Robo** Jetzt musst du dein Ziel noch unter der rechten Annahme
     von `({A} ∧ {B}) ∨ {A}` zeigen, also angenommen, `{A}` sei wahr."
@@ -73,13 +73,12 @@ Robo strahlt überglücklich. Noch *nie* warst du so auf ihn angewiesen.
 | `(A : Prop)`  | Eine logische Aussage.                                                   |
 | `(ha : A)`    | Ein Beweis, dass die logische Aussage `(A : Prop)` wahr ist.             |
 | `(h : A ∧ B)` | Eine Annahme, die den Namen `h` bekommen hat.                            |
-| `⟨·,·⟩`       | Schreibweise für Struktur mit mehreren Feldern (kommt später im Detail). |
-| `h.1, h.2, …` | Die einzelnen Felder der Stuktur. Auch `h.[Name des Feldes]`             |
 
 
 ## Taktiken
 
-Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`. Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
+Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.
+Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
 
 |    | Taktik                    | Beispiel                                          |
 |:---|:--------------------------|:--------------------------------------------------|
@@ -89,8 +88,8 @@ Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`. Hi
 | 4  | `trivial`                 | Kombiniert die obigen drei Taktiken (und mehr).   |
 | 5  | `constructor`             | Teilt ein UND im Goal auf.                        |
 | 6  | `left`/`right`            | Beweist eine Seite eines ODER im Goal.            |
-| 7ᵃ | `rcases h with ⟨h₁, h₂⟩`  | Teilt ein UND in den Annahmen auf.                |
-| 7ᵇ | `rcases h with h \\| h`   | Teilt ein ODER in den Annahmen in zwei Fälle auf. |
+| 7ᵃ | `obtain ⟨h₁, h₂⟩ := h`    | Teilt ein UND in den Annahmen auf.                |
+| 7ᵇ | `obtain h := h \\| h`     | Teilt ein ODER in den Annahmen in zwei Fälle auf. |
 
 **Du** Woher weißt du das eigentlich alles?
 

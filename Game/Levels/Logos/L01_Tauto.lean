@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Proposition"
+World "Logos"
 Level 1
 
 Title "Automatisierung"
@@ -41,6 +41,8 @@ Conclusion
 Aber glaubt bloß nicht, dass Ihr damit auf *diesem* Planeten viel weiterkommt!
 Meine Untertanen verstehen `tauto` nicht. Da müsst Ihr Euch schon etwas mehr anstrengen.
 "
+
+NewDefinition «Prop»
 
 TheoremTab "Logic"
 NewTactic tauto

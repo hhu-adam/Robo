@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Proposition"
+World "Logos"
 Level 8
 
 Title "Aus Falschem folgt vieles."
@@ -32,4 +32,5 @@ Und gleich 38, und gleich 39, …
 **Du**: Okay, okay, verstehe.
 "
 
+NewDefinition Ne
 DisabledTactic tauto

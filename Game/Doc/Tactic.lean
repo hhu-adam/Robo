@@ -125,6 +125,7 @@ TacticDoc change
 `constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.
 
 ## Detail
+
 Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`.
 Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.
 
@@ -151,6 +152,7 @@ TacticDoc constructor
 `contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.
 
 ## Details
+
 Ein Widerspruch in den Annahmen kann unter anderem folgendermaßen aussehen:
 
 * `(h : n ≠ n)`
@@ -161,12 +163,6 @@ Ein Widerspruch in den Annahmen kann unter anderem folgendermaßen aussehen:
 
 Folgenes Goal wird von `contradiction` bewiesen
 
-## Hilfreiche Resultate
-
-* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu
-  schliessen, der mit `by_contra` eröffnet wurde.
-* Ein Beweis von `False` representiert in Lean einen Widerspruch.
-
 ```
 Objekte:
   (n m : ℕ)
@@ -175,7 +171,13 @@ Objekte:
 Goal
   37 = 60
 ```
-nach dem Motto \"ein Widerspruch beweist alles.\"
+
+## Hilfreiche Resultate
+
+* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu
+  schliessen, der mit `by_contra` eröffnet wurde.
+* Ein Beweis von `False` representiert in Lean einen Widerspruch.
+  nach dem Motto \"ein Widerspruch beweist alles.\"
 -/
 TacticDoc contradiction
 
@@ -282,8 +284,8 @@ da dieser sich über mehrere Zeilen erstreckt wird er im Spiel nicht eingeführt
 Beide sind DefEq, aber manche Taktiken können nicht damit umgehen
 
 * Siehe Definition `∑` für Hilfe mit Induktion über Summen.
-* `rcases n` ist sehr ähnlich zu `induction n`. Der Unterschied ist, dass bei
-`rcases` keine Induktionshypothese im Fall `n + 1` zur Verfügung steht.
+* `obtain ⟨⟩ := n` ist sehr ähnlich zu `induction n`. Der Unterschied ist, dass bei
+`obtain` keine Induktionshypothese im Fall `n + 1` zur Verfügung steht.
 
 ## Beispiel
 
@@ -313,9 +315,19 @@ TacticDoc intro
 /--
 Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.
 
+## Beispiele
+
+Folgendes Beispiel kann mit `left` und `assumption` gelöst werden.
+```
+Objekte:
+  ha : A
+Goal:
+  A ∨ B
+```
+
 ## Hilfreiche Resultate
 
-* `right` entscheidet sich für die linke Seite.
+* `right` entscheidet sich für die right Seite.
 -/
 TacticDoc left
 
@@ -377,38 +389,59 @@ TacticDoc linarith
 -/
 TacticDoc push_neg
 
+/-- obtain ⟨arg1, arg2⟩ := h decomposes `h` to its parts `arg1` and `arg2`-/
+TacticDoc obtain
 
 
 /--
-`rcases h` teilt eine Annahme `h` in ihre Einzelteile auf.
+`obtain ⟨⟩ := h` teilt eine Annahme `h` in ihre Einzelteile auf.
 
 ## Details
 Für Annahmen die Strukturen sind, wie z.B. `h : A ∧ B` (oder `∃x, P x`) kann man die
-Einzelteile mit  `rcases h with ⟨a, b⟩` (oder `rcases h with ⟨x, hx⟩`) benennen.
+Einzelteile mit  `obtain ⟨a, b⟩ := h` benennen.
 
-Für eine Annahme der Form `h : A ∨ B` kann man mit `rcases h with ha | hb` zwei Goals
+Für eine Annahme der Form `h : A ∨ B` kann man mit `obtain ha | hb := h` zwei Goals
 erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechten.
+
+Die Wildcard `obtain ⟨⟩ := h` entscheidet selbständig, welcher Fall vorliegt und
+benennt die entehenden Annahmen.
+
+## Beispiele
+
+```
+Annahmen:
+  h : A ∧ B
+  g : A → C ∨ B → C
+Goal:
+  C
+```
+
+wenn man hier `obtain ⟨h₁, h₂⟩ := h` und danach `obtain g₁ | g₂ := g` benützt, kriegt man
+zwei Goals:
+
+```
+Annahmen:
+  h₁ : A
+  h₂ : B
+  g₁ : A → C
+Goal:
+  C
+```
+
+```
+Annahmen:
+  h₁ : A
+  h₂ : B
+  g₂ : B → C
+Goal:
+  C
+``
 
 ## Hilfreiche Resultate
 
-* Für `n : ℕ` hat `rcases n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
+* Für `n : ℕ` hat `obtain ⟨⟩ := n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
   dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht.
-* In Lean gibt es auch die Taktik `cases`, die gleich funktioniert wie `rcases` aber
-  einen mehrzeiligen Syntax hat:
-  ```
-  cases h with
-  | inl ha =>
-    sorry
-  | inr hb =>
-    sorry
-  ```
-  Hier sind `inl`/`inr` die Namen der Fälle und `ha`/`hb` sind frei gewählte Namen für die
-  freien Variablen
 -/
-TacticDoc rcases
-
--- TODO:
-/-- obtain ⟨arg1, arg2⟩ := h decomposes `h` to its parts `arg1` and `arg2`-/
 TacticDoc obtain
 
 
@@ -497,6 +530,17 @@ TacticDoc rfl
 
 /--
 Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.
+
+## Beispiele
+
+Folgendes Beispiel kann mit `right` und `assumption` gelöst werden.
+```
+Objekte:
+  hB : B
+Goal:
+  A ∨ B
+```
+
 
 ## Hilfreiche Resultate
 
@@ -636,13 +680,26 @@ TacticDoc trans
 `trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
 
 ## Details
-Die Taktiken, die verwendet werden sind:
+Die Taktiken, die verwendet werden sind unter anderem:
 
 * `assumption`
 * `rfl`
 * `contradiction`
 * und noch 3 andere, die hier nicht behandelt werden
   (`decide`, `apply True.intro`, `apply And.intro`).
+
+## Beispiel
+
+Das folgende Goal ist `trivial`:
+
+```
+Objekte:
+  n m : ℕ
+  h : n ≤ m
+Goal:
+  n ≤ m
+```
+
 -/
 TacticDoc trivial
 
@@ -677,5 +734,18 @@ schließen.
 -/
 TacticDoc use
 
-/-- `tauto` proves all logical tautologies.-/
+/--
+`tauto` proves all logical tautologies.
+
+## Beispiel
+
+Folgendes Goal ist mit `tauto` lösbar
+
+```
+Objekte:
+  (A B C : Prop)
+Goal:
+  ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C)
+```
+-/
 TacticDoc tauto

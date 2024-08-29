@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Proposition"
+World "Logos"
 Level 10
 
 Title "Und"
@@ -46,5 +46,6 @@ Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 Oder ist der nur gemalt? Probier mal!
 "
 
+NewDefinition And
 NewTactic constructor
 DisabledTactic tauto

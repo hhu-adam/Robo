@@ -86,3 +86,49 @@ DefinitionDoc Symbol.function as "fun x => _"
 
 -- Alternativ kann man mit `rw[Set.subset_def]` die Definition explizit einsetzen.
 -- "
+
+/--
+`A ∧ B` ("und") ist die Aussage dass sowohl `A` als auch `B` wahr ist.
+-/
+DefinitionDoc And as "∧"
+
+/--
+Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
+-/
+DefinitionDoc Eq as "="
+
+/--
+Die Aussage `False : Prop` ist nie wahr.
+
+Lean benützt diese intern für Widersprüche, ein Widerspruch ist ein Beweis `(hF : False)` von
+`False` und z.B. `¬ A` ist als `A → False` implementiert.
+-/
+DefinitionDoc False as "True"
+
+/--
+Ungleichheit `x ≠ y` ist definiert als `x = y → False`.
+-/
+DefinitionDoc Ne as "≠"
+
+/--
+`¬ A` ist intern als `A → False` implementiert.
+
+Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`.
+-/
+DefinitionDoc Not as "¬"
+
+/--
+`A ∨ B` ("oder") ist die Aussage mindestens eine der Aussagen `A`, `B` wahr ist.
+-/
+DefinitionDoc Or as "∨"
+
+/-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
+nicht beweisbar ist.
+
+Siehe auch `(True : Prop)` und `(False : Prop)` die uneingeschränkt wahre (rsp. falsche)
+Aussage.
+-/
+DefinitionDoc «Prop» as "Prop"
+
+/-- Die Aussage `True : Prop` ist immer wahr. -/
+DefinitionDoc True as "True"
