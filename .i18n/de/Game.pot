@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jun 13 17:48:01 2024\n"
+"POT-Creation-Date: Thu Aug 29 10:52:20 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4622,7 +4622,7 @@ msgid "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendens
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_MatrixEqSum
-msgid "**Robo**: Unter Summen braucht man `simp_rw`."
+msgid "**Robo**: Schau zuerst den Ausdruck `(A i j) • E i j` an. Unter Summen braucht man `simp_rw`."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L04_MatrixEqSum
@@ -4683,7 +4683,7 @@ msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisDiagSum
 msgid "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,\n"
-"bei diesem ist `1 i i` wieder Eins, und `1 • _` vereinfacht sich auch!"
+"bei diesem ist `1 «{i}» «{i}»` wieder Eins, und `1 • _` vereinfacht sich auch!"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisDiagSum
@@ -4691,16 +4691,16 @@ msgid "**Robo**: `simp` klingt wirklich nach einer guten Idee."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisDiagSum
-msgid "**Du**: Aber was mache ich hier? `«{h₂}»` sagt ja mehr oder weniger dass `i ≠ x` ist.\n"
+msgid "**Du**: Aber was mache ich hier? `«{h₂}»` sagt ja mehr oder weniger dass `«{i}» ≠ «{x}»` ist.\n"
 "\n"
-"**Robo**: Ja, aber nicht ganz. Führ das doch mit `have h₃ : i ≠ x` ein und zeig das kurz!"
+"**Robo**: Ja, aber nicht ganz. Führ das doch mit `have h₃ : «{i}» ≠ «{x}»` ein und zeig das kurz!"
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisDiagSum
 msgid "**Robo**: Umgekehrt wäre es nützlicher, da\n"
-"`1 i x` als `if i = x then _ else _` definiert ist!\n"
+"`1 «{i}» «{x}»` als `if «{i}» = «{x}» then _ else _` definiert ist!\n"
 "\n"
-"**Du**: Du hast recht, ich brauch gleich `i = x` oder `i ≠ x`. Lass mich das ändern."
+"**Du**: Du hast recht, ich brauch gleich `«{i}» = «{x}»` oder `«{i}» ≠ «{x}»`. Lass mich das ändern."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L05_EBasisDiagSum
@@ -4810,7 +4810,7 @@ msgstr ""
 #: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
 msgid "Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgestrichen ist.\n"
 "\n"
-"**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren nicht."
+"**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren uns nicht."
 msgstr ""
 
 #: Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
