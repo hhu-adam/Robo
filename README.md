@@ -4,7 +4,7 @@ A game for learning lean 4 where a cute little Robo joins you on your exploratio
 
 The game is primarily in German and can be played at the [Lean Game Server](https://adam.math.hhu.de/).
 
-# Development
+# Contribution
 
 ## Bugs
 
@@ -24,7 +24,10 @@ essentially finalised:
 * Logos
 * Implis
 
-## Contribution
+For translation, we use (`lean-i18n`)[https://github.com/hhu-adam/lean-i18n]. In particular, you can (optionally) build the lean project `Robo` once to make sure the file `.i18n/de/Game.pot` is up-to-date,
+then use any software to create a file `./i18n/en/Game.po` containing the translations (where you replace `en` with the ISO language code for your language). The recommended software for editing PO-files is (Poedit)[https://poedit.net/]
+
+## New Content
 
 Contributions of new planets are welcome! Each planet in the game talks about a new topic
 in a standard Mathematics undergrad (bachelor) curriculum at university.
