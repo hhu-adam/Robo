@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.Sum
+import Game.Levels.Babylon
 
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Real.Basic
@@ -56,17 +56,17 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   Du kritzelst auf das Papier:
 
   $$
-  A_\{i,j} \\cdot 
+  A_\{i,j} \\cdot
   \\begin\{pmatrix}
   0 & 0 & 0\\\\
   1 & 0 & 0 \\\\
-  0 & 0 & 0 
+  0 & 0 & 0
   \\end\{pmatrix}
   =
   \\begin\{pmatrix}
   0 & 0 & 0\\\\
   A_\{i,j} & 0 & 0 \\\\
-  0 & 0 & 0 
+  0 & 0 & 0
   \\end\{pmatrix}
   $$
 

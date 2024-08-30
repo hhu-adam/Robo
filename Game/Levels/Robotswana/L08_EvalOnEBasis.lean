@@ -1,4 +1,4 @@
-import Game.Levels.MatrixTrace.L07_EBasisZeroOffDiag
+import Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 
 --import Game.StructInstWithHoles
 
@@ -10,16 +10,16 @@ Title "Die Summe der Summe der Summe"
 Introduction
 "
 Ihr findet nochmals einen Hinweis, aber in der Eile verliert ihr die Fährte.
-Du bist inzwischen sehr durstig.  
+Du bist inzwischen sehr durstig.
 Während Robo die nähere Umgebung absucht, setzt du dich erschöpft hin und
 starrst unter der warmen Sonne etwas beduselt auf den Pergamentfetzen.
 "
 
-Conclusion "**Du**: Na endlich.  
+Conclusion "**Du**: Na endlich.
 
 Robo reicht dir eine Flasche Wasser.
 
-**Du**: Wo hast du die denn auf einmal her? 
+**Du**: Wo hast du die denn auf einmal her?
 
 **Robo**: Trick 17.
 
@@ -37,15 +37,15 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     (A : Mat[n,n][ℝ]) :
     f A = ∑ i : Fin n, (A i i) * f (E i i) := by
   Hint "**Du**: Was das wohl jetzt soll …?
-  
+
   Du kritzelst einen bisschen herum.
 
   $$
   \\begin\{aligned}
-    f(A) 
+    f(A)
     &= f\\left( \\sum_\{i,j} A_\{i,j} ⬝ E_\{i,j} \\right) \\\\
     &= \\sum_\{i,j} A_\{i,j} ⬝ f(E_\{i,j})   \\\\
-    &= \\sum_\{i,j} A_\{i,i} ⬝ f(E_\{i,i}) 
+    &= \\sum_\{i,j} A_\{i,i} ⬝ f(E_\{i,i})
   \\end\{aligned}
   $$
 
@@ -53,7 +53,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   nutze dann die Linearität, und zuletzt, dass `f` auf den `E i j` mit `i ≠ j` verschwindet.
 
   Vermutlich sollte ich also als erstes das `A` in `f A` als Summe von Basismatrizen
-  schreiben, nicht aber das andere `A` weiter hinten.   
+  schreiben, nicht aber das andere `A` weiter hinten.
 
   **Robo** (*aus der Ferne*): `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
   Hint (hidden := true) "**Du** (*schreiend*): Was meinst du damit?
@@ -62,7 +62,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   `rw [matrix_eq_sum_ebasis A]` würde beide `A`s ersetzen."
   Branch
       rw [matrix_eq_sum_ebasis A]
-      Hint "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee. 
+      Hint "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee.
       Das sieht zu kompliziert aus. Lass es mich doch mit `nth_rw` versuchen."
   nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
   Hint "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser denken…

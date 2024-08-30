@@ -1,4 +1,4 @@
-import Game.Levels.MatrixTrace.L05_EBasisDiagSum
+import Game.Levels.Robotswana.L05_EBasisDiagSum
 
 World "Trace"
 Level 6

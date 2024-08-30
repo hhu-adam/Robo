@@ -1,4 +1,4 @@
-import Game.Levels.MatrixTrace.L06_EBasisEqOnDiag
+import Game.Levels.Robotswana.L06_EBasisEqOnDiag
 
 World "Trace"
 Level 7

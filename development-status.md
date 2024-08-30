@@ -12,7 +12,7 @@
 | FunctionSurj           | Epos?      | +              | +      |        | TODO   |            | TODO        |                                                                                                       |
 | Cantor                 | ==         | ++             | +      | +      | +      |            | +++         | move first problem somewhere else                                                                     |
 | MatrixSpan             | TODO       | o TODO: sorrys | TODO   | TODO   | TODO   |            | TODO        |                                                                                                       |
-| MatrixTrace            | Robotswana | ++             | +      | update | update |            | +++         |                                                                                                       |
+| Robotswana             | ==         | ++             | +      | update | update |            | +++         |                                                                                                       |
 | SetTheory              | Synolos    | TODO           |        |        |        |            | ??          | (add intervals?? -- only necessary for analysis)                                                      |
 | ~FiniteSetTheory       | TODO       | TODO           |        |        |        |            | TODO        |                                                                                                       |
 | SymmSquare             | TODO       | o TODO: L08    | TODO   | TODO   | TODO   |            | TODO        |                                                                                                       |

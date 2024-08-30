@@ -8,12 +8,13 @@ import Game.Levels.Spinoza
 import Game.Levels.Luna
 import Game.Levels.Babylon
 
+import Game.Levels.Cantor
+import Game.Levels.Robotswana
+
 -- import Game.Levels.FunctionSurj
 -- import Game.Levels.FunctionInj
 -- import Game.Levels.FunctionBij
 -- import Game.Levels.SetTheory
--- import Game.Levels.MatrixTrace
--- import Game.Levels.Cantor
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets

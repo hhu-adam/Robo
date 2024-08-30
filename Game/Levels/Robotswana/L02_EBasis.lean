@@ -1,4 +1,4 @@
-import Game.Levels.MatrixTrace.L01_SMulEBasis
+import Game.Levels.Robotswana.L01_SMulEBasis
 
 World "Trace"
 Level 2
