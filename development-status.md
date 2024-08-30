@@ -179,3 +179,25 @@ rw [hL]
 - **does not compile in web editor** (error `failed to synthesize Decidable (…)`)
 - **solution looks complicated, not possible to guess from previous levels!**
 - still uses `choose_spec`, which we were trying to eliminate by using the `choose` tactic
+ 
+My solution:
+````
+  have a₀ : A := Classical.arbitrary A  
+  have : ∀ b : B, ∃ a : A, b ∈ range f → f a = b := by
+    intro b
+    by_cases hb : b ∈ range f
+    obtain ⟨a,ha⟩ := hb
+    use a
+    intro h
+    assumption
+    use a₀
+    intro h
+    contradiction
+  choose g hg using this
+  use g
+  intro a
+  apply hf
+  apply hg
+  simp
+````
+Perhaps the `have` statement should be a separate previous level, which then needs to be retyped verbatim in the boss level.
