@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Contradiction"
+World "Spinoza"
 Level 2
 
 Title "Es reicht!"

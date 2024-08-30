@@ -4,6 +4,8 @@ import Game.Levels.Logos
 import Game.Levels.Implis
 import Game.Levels.Quantus
 
+import Game.Levels.Spinoza
+
 -- import Game.Levels.Contradiction
 -- import Game.Levels.FunctionSurj
 -- import Game.Levels.FunctionInj

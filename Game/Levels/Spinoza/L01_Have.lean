@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Contradiction"
+World "Spinoza"
 Level 1
 
 Title "Was wir haben, haben wir."

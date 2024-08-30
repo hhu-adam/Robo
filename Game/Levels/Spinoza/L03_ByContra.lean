@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Contradiction"
+World "Spinoza"
 Level 3
 
 Title "Widerspruch"

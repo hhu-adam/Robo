@@ -1,10 +1,10 @@
 
 | Planet                 | new name   | levels         | tried? | hints  | story  | summary    | picture     | desirable changes                                                                                     |
 |:-----------------------|:-----------|:---------------|:-------|:-------|:-------|:-----------|:------------|:------------------------------------------------------------------------------------------------------|
-| Logos                  | ==         | +++            | +++    | +++    | +++    | +          | +++         |                                                                                                       |
-| Implis                 | ==         | +++            | +++    | +++    | ++     | +          | +++         |                                                                                                       |
+| Logos                  | ==         | +++            | +++    | +++    | +++    | +          | +++         |  JE: DONE                                                                                             |
+| Implis                 | ==         | +++            | +++    | +++    | ++     | +          | +++         |  JE: DONE                                                                                             |
 | Quantus                | ==         | +++            | +++    | +++    | +++    | +          | +++         | TODO: add ∃! ?                                                                                        |
-| Contradiction          | Spinoza    | ++             | ++     | ++     | ++     |            | +++         | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
+| Spinoza                | ==         | ++             | ++     | ++     | ++     |            | +++         | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
 | Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++         | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
 | Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                                                      |
 | FunctionBij            | Isos?      | +              | TODO   |        | TODO   |            | TODO        | remove linear_combination                                                                             |
@@ -176,10 +176,10 @@ rw [hL]
 - **does not compile in web editor** (error `failed to synthesize Decidable (…)`)
 - **solution looks complicated, not possible to guess from previous levels!**
 - still uses `choose_spec`, which we were trying to eliminate by using the `choose` tactic
- 
+
 My solution:
 ````
-  have a₀ : A := Classical.arbitrary A  
+  have a₀ : A := Classical.arbitrary A
   have : ∀ b : B, ∃ a : A, b ∈ range f → f a = b := by
     intro b
     by_cases hb : b ∈ range f

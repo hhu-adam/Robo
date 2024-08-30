@@ -1,9 +1,8 @@
 import Game.Metadata
 
-import Game.Levels.Predicate
+import Game.Levels.Quantus
 
-
-World "Contradiction"
+World "Spinoza"
 Level 6
 
 Title "Contradiction"

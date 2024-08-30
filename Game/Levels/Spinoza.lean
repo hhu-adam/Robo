@@ -1,11 +1,11 @@
-import Game.Levels.Contradiction.L01_Have
-import Game.Levels.Contradiction.L02_Suffices
-import Game.Levels.Contradiction.L03_ByContra
-import Game.Levels.Contradiction.L04_ByContra
-import Game.Levels.Contradiction.L05_Contrapose
-import Game.Levels.Contradiction.L06_Summary
+import Game.Levels.Spinoza.L01_Have
+import Game.Levels.Spinoza.L02_Suffices
+import Game.Levels.Spinoza.L03_ByContra
+import Game.Levels.Spinoza.L04_ByContra
+import Game.Levels.Spinoza.L05_Contrapose
+import Game.Levels.Spinoza.L06_Summary
 
-World "Contradiction"
+World "Spinoza"
 Title "Spinoza"
 
 Image "images/Spinoza.png"

@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.Levels.Implis -- to make sure `rw` doc is imported
 
-World "Contradiction"
+World "Spinoza"
 Level 4
 
 Title "Kontraposition"
