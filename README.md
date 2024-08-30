@@ -53,6 +53,25 @@ style throughout the game.
 
 # Techincal
 
+## Building
+
+You can build the game just like a regular Lean project. In particular, inside `Robo/` you should call
+
+```
+lake update -R
+lake build
+```
+
+*Note: the repo is set up in a way that `lake update` is NOT destructive and can be called liberally anytime. (This is not true for other Lean projects)*
+
+## Updating Lean/Mathlib
+
+In order to update the Lean version used by the game, you should follow these steps:
+
+* See what versions are available of `lean4game`: [Releases](https://github.com/leanprover-community/lean4game/releases)
+* Modify the file `lean-toolchain` to contain the string `leanprover/lean4:v4.7.0` where `v4.7.0` is replaced by the newest version available.
+* Call `lake update -R` and `lake build`. Your game now uses the specified Lean version and the corresponding mathlib release.
+
 ## Renaming levels
 
 If you rename Levels under `Game/Levels/{MyPlanet}/_.lean` you can automatically update the planet file `Game/Levels/{MyPlanet}.lean`:
