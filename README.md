@@ -23,7 +23,6 @@ essentially finalised:
 
 * Logos
 * Implis
-* Quantus
 
 ## Contribution
 
