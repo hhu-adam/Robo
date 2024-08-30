@@ -64,6 +64,8 @@ lake build
 
 *Note: the repo is set up in a way that `lake update` is NOT destructive and can be called liberally anytime. (This is not true for other Lean projects)*
 
+*Note: `lake update` will call the two commands `lake exe cache get` (retrieve the latest mathlib cache) and `lake build gameserver` (build the gameserver executable); so if you're not calling `lake update`, you should call these two commands manually.*
+
 ## Updating Lean/Mathlib
 
 In order to update the Lean version used by the game, you should follow these steps:
