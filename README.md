@@ -2,7 +2,7 @@
 
 A game for learning lean 4 where a cute little Robo joins you on your exploration through the universe inhabited by formalosophers.
 
-The game is in German.
+The game is primarily in German and can be played at the [Lean Game Server](https://adam.math.hhu.de/).
 
 # Development
 
