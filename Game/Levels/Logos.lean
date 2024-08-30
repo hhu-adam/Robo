@@ -13,6 +13,10 @@ import Game.Levels.Logos.L12_Or
 import Game.Levels.Logos.L13_Or
 import Game.Levels.Logos.L14_Summary
 
+/-!
+The planet `Logos` is about first-order-logic.
+-/
+
 World "Logos"
 Title "Logos"
 

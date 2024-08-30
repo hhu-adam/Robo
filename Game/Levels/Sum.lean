@@ -4,7 +4,17 @@ import Game.Levels.Sum.L03_Sum
 import Game.Levels.Sum.L04_ArithSum
 import Game.Levels.Sum.L05_SumOdd
 import Game.Levels.Sum.L06_SumComm
+import Game.Levels.Sum.L07
 import Game.Levels.Sum.L07_Summary
+import Game.Levels.Sum.L08
+import Game.Levels.Sum.T01_Induction
+import Game.Levels.Sum.T02_Induction
+import Game.Levels.Sum.T03__Bernoulli
+
+/-!
+The planet `Babylon` is about finite sums `∑`.
+(mainly taking values in `ℕ`/`ℤ`/`ℚ`/`ℝ`).
+-/
 
 World "Sum"
 Title "Babylon"

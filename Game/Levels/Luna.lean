@@ -1,7 +1,11 @@
-import Game.Levels.Inequality.L01_LE
-import Game.Levels.Inequality.L02_Pos
-import Game.Levels.Inequality.L03_Linarith
-import Game.Levels.Inequality.L04_Linarith
+import Game.Levels.Luna.L01_LE
+import Game.Levels.Luna.L02_Pos
+import Game.Levels.Luna.L03_Linarith
+import Game.Levels.Luna.L04_Linarith
+
+/-!
+The planet Luna is about inequalities `≤` and the tactic `linarith`.
+-/
 
 World "Inequality"
 Title "Luna"

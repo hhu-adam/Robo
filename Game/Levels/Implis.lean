@@ -13,6 +13,10 @@ import Game.Levels.Implis.L12_ByCases
 import Game.Levels.Implis.L13_Rw
 import Game.Levels.Implis.L14_Summary
 
+/-!
+The planet `Implis` is about implications `→` and iff-statements `↔`.
+-/
+
 World "Implis"
 Title "Implis"
 

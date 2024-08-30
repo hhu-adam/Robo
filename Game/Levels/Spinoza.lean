@@ -5,6 +5,11 @@ import Game.Levels.Spinoza.L04_ByContra
 import Game.Levels.Spinoza.L05_Contrapose
 import Game.Levels.Spinoza.L06_Summary
 
+/-!
+The planet `Spinoza` is about common proof technics, such as "proof by contradiction",
+"broof by contra-position", etc.
+-/
+
 World "Spinoza"
 Title "Spinoza"
 
