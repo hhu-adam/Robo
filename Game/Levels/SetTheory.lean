@@ -19,13 +19,15 @@ import Game.Levels.SetTheory.L18_SetOf
 import Game.Levels.SetTheory.L19_Subtype
 import Game.Levels.SetTheory.L20_UnionInter
 import Game.Levels.SetTheory.L21_Summary
+import Game.Levels.SetTheory.PowersetPlayground
+import Game.Levels.SetTheory.T01_Set
+import Game.Levels.SetTheory.T04_xx
 
 World "SetTheory"
 Title "Synolos"
 -- griechisch Menge = Synolon
 
 Image "images/SetTheory.png"
--- Image "images/WIP.png"
 
 Introduction
 "
@@ -49,7 +51,7 @@ vorstellt.
 World "SetTheory2"
 Title "[WIP] Mengenlehre 2"
 
-Image "images/WIP.png"
+Image "images/Robo/Surprised.png"
 
 Introduction "Dieser Planet ist kahl un leer und noch unentdeckt. Zeit und Geschichte scheint es
 hier nicht zu geben."

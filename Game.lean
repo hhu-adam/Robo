@@ -11,6 +11,8 @@ import Game.Levels.Babylon
 import Game.Levels.Cantor
 import Game.Levels.Robotswana
 
+import Game.Levels.End
+
 -- import Game.Levels.FunctionSurj
 -- import Game.Levels.FunctionInj
 -- import Game.Levels.FunctionBij
@@ -85,10 +87,14 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 
 (Das Spiel befindet sich noch in der Entstehungsphase.)"
 -- Prerequisites "" -- add this if your game depends on other games
-CoverImage "images/cover.png"
+CoverImage "images/Cover.png"
 
 
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
+
+Dependency Robotswana → End
+Dependency Cantor → End
+
 
 -- Dependency Sum → FunctionSurj
 -- Dependency FunctionInj → FunctionBij -- Because of def `Injective`

@@ -1,6 +1,6 @@
 import Game.Levels.Robotswana.L05_EBasisDiagSum
 
-World "Trace"
+World "Robotswana"
 Level 6
 
 Title "Ein nihilierter Kommutator"

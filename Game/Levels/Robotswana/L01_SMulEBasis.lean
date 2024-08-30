@@ -4,7 +4,7 @@ import Game.Levels.Babylon
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Data.Real.Basic
 
-World "Trace"
+World "Robotswana"
 Level 1
 
 Title "Standardbasis"

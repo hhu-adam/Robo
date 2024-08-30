@@ -6,4 +6,4 @@ The images here are reduced verions of the ones at [Robo-Images](https://github.
 
 ## Quality
 
-You can modify `NEWSIZE` in this script to the desired quality. Look up [imagemagick docs](https://imagemagick.org/script/convert.php) for details about the `convert` command. 
+You can modify `NEWSIZE` in this script to the desired quality. Look up [imagemagick docs](https://imagemagick.org/script/convert.php) for details about the `convert` command.

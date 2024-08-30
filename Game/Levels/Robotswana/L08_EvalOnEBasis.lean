@@ -2,7 +2,7 @@ import Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 
 --import Game.StructInstWithHoles
 
-World "Trace"
+World "Robotswana"
 Level 8
 
 Title "Die Summe der Summe der Summe"

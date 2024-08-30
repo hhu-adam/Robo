@@ -1,6 +1,6 @@
 import Game.Levels.Robotswana.L06_EBasisEqOnDiag
 
-World "Trace"
+World "Robotswana"
 Level 7
 
 Title "Desinteresse"

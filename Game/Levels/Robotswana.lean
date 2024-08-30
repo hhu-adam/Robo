@@ -13,7 +13,7 @@ import Game.Levels.Robotswana.L11_Linearity
 World "Robotswana"
 Title "Robotswana"
 
-Image "images/Robo.png"
+Image "images/Robotswana.png"
 
 Introduction "
 Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslandschaft hinaus.

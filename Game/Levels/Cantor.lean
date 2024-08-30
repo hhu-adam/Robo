@@ -17,7 +17,7 @@ The planet `Cantor` talks about Cantor's diagonal argument and about fixed point
 World "Cantor"
 Title "Cantor"
 
-Image "images/Robo.png"
+Image "images/Cantor.png"
 
 Introduction "
 Auf eurer Reise kommt ihr an einem Zwergplaneten vorbei. Darauf steht ein Haus mit unendlich vielen

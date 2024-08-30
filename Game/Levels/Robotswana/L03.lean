@@ -1,6 +1,6 @@
 import Game.Levels.Robotswana.L02_EBasis
 
-World "Trace"
+World "Robotswana"
 Level 3
 
 Title "Richtige Indizes"

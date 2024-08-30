@@ -4,7 +4,7 @@ import Game.Levels.Robotswana.L10_Characterize
 
 set_option tactic.hygienic false
 
-World "Trace"
+World "Robotswana"
 Level 11
 
 Title "Trace"
