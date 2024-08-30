@@ -32,24 +32,8 @@ then use any software to create a file `./i18n/en/Game.po` containing the transl
 Contributions of new planets are welcome! Each planet in the game talks about a new topic
 in a standard Mathematics undergrad (bachelor) curriculum at university.
 
-1. First, find an interesting target excercise for your topic of interest
-   (referred to as "Boss Level" here). Ideally it is an exercise which could also
-   be found on an excersise sheet in class, and ideally it is something that does not
-   exists as theorem in mathlib (although this is optional).
-1. Proof this exercise in Lean, PR your suggestion to
-   `Robo/Game/Levels/NewStuff/{MyNewExercise}.lean`, and
-   ask for feedback from us!
-   (note: the proof does not have to be curated at this step, but it helps demonstrating
-   which parts of the proof you intend to separate into their own levels)
-1. If you receive positive feedback, it's time to split your proof into a series of levels
-   leading up to your Boss Level. You can PR them to single files `Robo/Game/Levels/NewStuff/{MyNewExercise}/L{no}_{Keyword}.lean` and import these in `{MyNewExercise}.lean`.
-   Consult the [Lean4game documentation](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md#3-creating-a-level)
-   about level creation.
-1. Once the level structure stands and has been reviewed, it is time to add `Hints` and
-   a story to your Level
-
-See also the [Style Guide](./STYLEGUIDE.md) where we started keeping track on uniform
-style throughout the game.
+Please follow our [Contribution Guide](./docs/NewPlanet.md) which helps you creating
+new content step-by-step.
 
 # Techincal
 
