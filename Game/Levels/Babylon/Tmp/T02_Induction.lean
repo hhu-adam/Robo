@@ -4,7 +4,7 @@
 
 -- set_option tactic.hygienic false
 
--- World "Sum"
+-- World "Babylon"
 -- Level 2
 
 -- Title "endliche Summe"

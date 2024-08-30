@@ -5,15 +5,12 @@ import Game.Levels.Implis
 import Game.Levels.Quantus
 
 import Game.Levels.Spinoza
+import Game.Levels.Luna
+import Game.Levels.Babylon
 
--- import Game.Levels.Contradiction
 -- import Game.Levels.FunctionSurj
 -- import Game.Levels.FunctionInj
 -- import Game.Levels.FunctionBij
--- import Game.Levels.Inequality
--- import Game.Levels.Predicate
--- import Game.Levels.Sum
-
 -- import Game.Levels.SetTheory
 -- import Game.Levels.MatrixTrace
 -- import Game.Levels.Cantor
@@ -89,14 +86,15 @@ CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein u
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/cover.png"
 
---Dependency Sum → FunctionSurj
 
+/-! If you need to add manual dependencies in your planet graph, you can do so here: -/
+
+-- Dependency Sum → FunctionSurj
 -- Dependency FunctionInj → FunctionBij -- Because of def `Injective`
-
 -- set_option lean4game.showDependencyReasons true
 
--- need to open all namespaces with local definitions
-open BigOperators
+/-! Build the game. Show's warnings if it found a problem with your game.
 
-/-! Build the game. Show's warnings if it found a problem with your game. -/
+(need to open all namespaces with local definitions) -/
+open BigOperators in
 MakeGame

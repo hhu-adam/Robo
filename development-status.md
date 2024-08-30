@@ -5,8 +5,8 @@
 | Implis                 | ==         | +++            | +++    | +++    | ++     | +          | +++         |  JE: DONE                                                                                             |
 | Quantus                | ==         | +++            | +++    | +++    | +++    | +          | +++         | TODO: add ∃! ?                                                                                        |
 | Spinoza                | ==         | ++             | ++     | ++     | ++     |            | +++         | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
-| Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++         | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
-| Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                                                      |
+| Luna                   | ==         | +              | +++    | +++    | +++    |            | +++         | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
+| Babylon                | ==         | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                                                      |
 | FunctionBij            | Isos?      | +              | TODO   |        | TODO   |            | TODO        | remove linear_combination                                                                             |
 | FunctionInj            | Monos?     | +              | TODO   |        | TODO   |            | TODO        |                                                                                                       |
 | FunctionSurj           | Epos?      | +              | +      |        | TODO   |            | TODO        |                                                                                                       |

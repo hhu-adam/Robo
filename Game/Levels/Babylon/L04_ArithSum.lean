@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Sum"
+World "Babylon"
 Level 4
 
 Title "Arithmetische Summe"

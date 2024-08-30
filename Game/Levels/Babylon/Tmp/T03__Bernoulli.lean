@@ -3,7 +3,7 @@ import Game.Metadata
 
 
 
-World "Sum"
+World "Babylon"
 Level 5
 
 Title "Bernoulli Ungleichung"

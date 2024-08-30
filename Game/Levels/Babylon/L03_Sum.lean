@@ -2,7 +2,7 @@ import Game.Metadata
 
 open Finset
 
-World "Sum"
+World "Babylon"
 Level 3
 
 Title "endliche Summe"

@@ -1,8 +1,8 @@
 import Game.Metadata
 
-import Game.Levels.Sum.L04_ArithSum
+import Game.Levels.Babylon.L04_ArithSum
 
-World "Sum"
+World "Babylon"
 Level 5
 
 open Fin

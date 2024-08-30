@@ -1,10 +1,10 @@
 import Game.Metadata
 
-import Game.Levels.Sum.L05_SumOdd
+import Game.Levels.Babylon.L05_SumOdd
 open BigOperators
 open Finset
 
-World "Sum"
+World "Babylon"
 Level 6
 
 Title "Summe vertauschen"

@@ -1,8 +1,8 @@
 import Game.Metadata
 
-import Game.Levels.Sum.L06_SumComm
+import Game.Levels.Babylon.L06_SumComm
 
-World "Sum"
+World "Babylon"
 Level 7
 Title "Zusammenfassung"
 
