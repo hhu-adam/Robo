@@ -3,7 +3,7 @@
 |:-----------------------|:-----------|:---------------|:-------|:-------|:-------|:-----------|:------------|:------------------------------------------------------------------------------------------------------|
 | Logos                  | ==         | +++            | +++    | +++    | +++    | +          | +++         |                                                                                                       |
 | Implis                 | ==         | +++            | +++    | +++    | ++     | o (update) | +++         | (check trans tactic for implications? -- Jon has added it to level 9)                                 |
-| Predicate              | Quantus    | +++            | +++    | +++    | +++    | +          | +++         |                                                                                                       |
+| Predicate              | Quantus    | +++            | +++    | +++    | +++    | +          | +++         | TODO: add ∃! ?                                                                                                      |
 | Contradiction          | Spinoza    | ++             | ++     | ++     | ++     |            | +++         | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
 | Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++         | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
 | Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                                                      |
@@ -63,9 +63,9 @@ simp
 
 #### L03 
 
-- ∃! needs to be explained
-- hidden hint for obtain
-- hint regarding overly complicated goal after use a:
+- ∃! needs to be explained -- perhaps already in Quantus? (see table above)
+- add hidden hint for `obtain`
+- add hint regarding overly complicated goal after `use a`:
 
   `(fun a => f a = b) a ∧ ∀ (y : A), (fun a => f a = b) y → y = a`
   
@@ -94,6 +94,8 @@ simp
 
 #### L05: use the fact that StrictMono is injective
   Perhaps swap L04 and L05 (L05 is the easier level, and motivates L04)
+  
+  Both L04 and L05 could be move closer to levels about ‘existence of left inverse implies injectivity`.
   
 #### L06: succ has left inverse
 Nice level. Should be closer to L09 and L11.
@@ -174,6 +176,6 @@ rw [hL]
 
 #### L11: most injections have left inverses
 
-- does not compile in webeditor (error `failed to synthesize Decidable (…)`)
-- solution looks complicated, not possible to guess from previous levels!
+- **does not compile in web editor** (error `failed to synthesize Decidable (…)`)
+- **solution looks complicated, not possible to guess from previous levels!**
 - still uses `choose_spec`, which we were trying to eliminate by using the `choose` tactic
