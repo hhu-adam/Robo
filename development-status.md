@@ -19,7 +19,7 @@
 | Quotient               | TODO       | 7-?            | TODO   |        | TODO   |            | TODO        |                                                                                                       |
 | Prime                  | TODO       | +              | TODO   | TODO   | TODO   |            | TODO        |                                                                                                       |
 | ? RealUncountable      | TODO       | TODO .         |        |        |        |            |             |                                                                                                       |
-| GoodByePlanet          |            | TODO (.)       |        |        |        |            | Spacecraft? |                                                                                                       |
+| GoodByePlanet          |            | TODO (.)       |        |        |        |            | +++         | JE: added empty `End` planet                                                                          |
 |                        |            |                |        |        |        |            |             |                                                                                                       |
 | [[[Continuity]]]       |            |                |        |        |        |            |             |                                                                                                       |
 | [[ContinuousFunction]] |            | TODO ..        |        |        |        |            |             |                                                                                                       |
