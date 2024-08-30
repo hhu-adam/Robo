@@ -10,6 +10,10 @@ import Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
 import Game.Levels.Cantor.L08_CantorPowerset
 -- import Game.Levels.Cantor.L09_SequenceUncountable
 
+/-!
+The planet `Cantor` talks about Cantor's diagonal argument and about fixed points.
+-/
+
 World "Cantor"
 Title "Cantor"
 
