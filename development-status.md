@@ -32,11 +32,8 @@
 
 ### Tactics
 
-- replace `rcases` by `obtain` (JE: DONE)
 - recursive `constructor` -- some version of `refine`??
 - we've thrown out `injection` tactic
-- we've thrown out `linear_combination` tactic
-- we've thrown out `set` tactic (we currently don't need it; if we do, perhaps replace `let` by `set` everywhere)
 
 ### FunctionSurj
 
