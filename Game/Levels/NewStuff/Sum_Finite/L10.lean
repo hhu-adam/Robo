@@ -107,17 +107,18 @@ theorem headless  : ¬ ∃ f : Multiset ℕ → ℕ, ∀ l : List ℕ, ∀ (h : 
 
 #check Submodule.exists_le_ker_of_lt_top
 
+variable {X : Type}
 
-example {x : X} (h : i ∈ ({x} : Set X)) : i = x := by
+example {x i : X} (h : i ∈ ({x} : Set X)) : i = x := by
   apply Set.mem_singleton_iff.1 h
 
 -- TODO: push this to mathlib
-example {x : X} (h : i ∉ ({x} : Set X)) : i ≠ x := by
+example {x i : X} (h : i ∉ ({x} : Set X)) : i ≠ x := by
   contrapose! h
   apply Set.mem_singleton_iff.1 h
 
 @[simp]
-theorem not_mem_singleton_iff {a b : α} : a ∉ ({b} : Set α) ↔ a ≠ b :=
+theorem not_mem_singleton_iff {a b : X} : a ∉ ({b} : Set X) ↔ a ≠ b :=
   Iff.rfl
 
 

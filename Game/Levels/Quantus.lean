@@ -10,6 +10,9 @@ import Game.Levels.Quantus.L09_PushNeg
 import Game.Levels.Quantus.L10_PushNeg
 import Game.Levels.Quantus.L11_DrinkersParadox
 
+/-!
+The planet `Quantus` is about the quantifiers `∀` and `∃`.
+-/
 
 World "Quantus"
 Title "Quantus"

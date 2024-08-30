@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.Prime.L05_MinFacPrime
+import Game.Levels.NewStuff.Prime.L05_MinFacPrime
 
 World "Prime"
 Level 6

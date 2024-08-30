@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.Prime.L07_InfinitudePrimes
+import Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
 
 World "Prime"
 Level 8
