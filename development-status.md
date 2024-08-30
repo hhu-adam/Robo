@@ -2,8 +2,8 @@
 | Planet                 | new name   | levels         | tried? | hints  | story  | summary    | picture     | desirable changes                                                                                     |
 |:-----------------------|:-----------|:---------------|:-------|:-------|:-------|:-----------|:------------|:------------------------------------------------------------------------------------------------------|
 | Logos                  | ==         | +++            | +++    | +++    | +++    | +          | +++         |                                                                                                       |
-| Implis                 | ==         | +++            | +++    | +++    | ++     | o (update) | +++         | (check trans tactic for implications? -- Jon has added it to level 9)                                 |
-| Predicate              | Quantus    | +++            | +++    | +++    | +++    | +          | +++         | TODO: add ∃! ?                                                                                                      |
+| Implis                 | ==         | +++            | +++    | +++    | ++     | +          | +++         |                                                                                                       |
+| Quantus                | ==         | +++            | +++    | +++    | +++    | +          | +++         | TODO: add ∃! ?                                                                                        |
 | Contradiction          | Spinoza    | ++             | ++     | ++     | ++     |            | +++         | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
 | Inequality             | Luna       | +              | +++    | +++    | +++    |            | +++         | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
 | Sum                    | Babylon    | +              | +++    | +++    | +++    |            | +++         | TODO: add sum over zeroes, adding over singleton                                                      |
@@ -61,25 +61,25 @@ rw [if_neg this]
 simp
 ````
 
-#### L03 
+#### L03
 
 - ∃! needs to be explained -- perhaps already in Quantus? (see table above)
 - add hidden hint for `obtain`
 - add hint regarding overly complicated goal after `use a`:
 
   `(fun a => f a = b) a ∧ ∀ (y : A), (fun a => f a = b) y → y = a`
-  
-  `simp` turns this into 
-  
+
+  `simp` turns this into
+
   `f a = b ∧ ∀ (y : A), f y = b → y = a`
 
 
-#### L04: prove that StrictMono is injective  
+#### L04: prove that StrictMono is injective
 
 - anonymous variables
 - trick `obtain h_lt | h_eq | h_gt := lt_trichotomy a b` needs to be explained on Luna (see table above)
-- introduces PreOrders and LinearOrders -- would ONE of these suffice?  
-- Why does linarith not find contradiction from 
+- introduces PreOrders and LinearOrders -- would ONE of these suffice?
+- Why does linarith not find contradiction from
   ````
   h: f a = f a'
   hlt: f a < f a'
@@ -89,14 +89,14 @@ simp
   hlt: f a' < f a'
   ````
   ? Why does `simp` work?
-  
+
   Again, all of this should ideally be explained on Luna!
 
 #### L05: use the fact that StrictMono is injective
   Perhaps swap L04 and L05 (L05 is the easier level, and motivates L04)
-  
+
   Both L04 and L05 could be move closer to levels about ‘existence of left inverse implies injectivity`.
-  
+
 #### L06: succ has left inverse
 Nice level. Should be closer to L09 and L11.
 
@@ -112,15 +112,15 @@ simp [g]
 simp [g]
 ````
 This solution currently triggers three warnings
-- `The tactic 'if' is not available in this game!`, 
-- `The tactic 'then' is not available in this game!`, 
-- `The tactic 'else' is not available in this game!`, 
+- `The tactic 'if' is not available in this game!`,
+- `The tactic 'then' is not available in this game!`,
+- `The tactic 'else' is not available in this game!`,
 
 #### L07: extending a function from ℕ to ℤ
 Not sure about this level.
 
 - wrong title (This is not about left inverses.)
-- anonymous assumption 
+- anonymous assumption
 - needs `Int.toNat`  – ideally, this would be explained somewhere where we (already?) discuss well-definedness in lean/mathlib
 - Current solution needs multiline tactics.
   My solution:
