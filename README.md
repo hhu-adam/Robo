@@ -24,8 +24,8 @@ essentially finalised:
 * Logos
 * Implis
 
-For translation, we use (`lean-i18n`)[https://github.com/hhu-adam/lean-i18n]. In particular, you can (optionally) build the lean project `Robo` once to make sure the file `.i18n/de/Game.pot` is up-to-date,
-then use any software to create a file `./i18n/en/Game.po` containing the translations (where you replace `en` with the ISO language code for your language). The recommended software for editing PO-files is (Poedit)[https://poedit.net/]
+For translation, we use [`lean-i18n`](https://github.com/hhu-adam/lean-i18n). In particular, you can (optionally) build the lean project `Robo` once to make sure the file `.i18n/de/Game.pot` is up-to-date,
+then use any software to create a file `./i18n/en/Game.po` containing the translations (where you replace `en` with the ISO language code for your language). The recommended software for editing PO-files is [Poedit](https://poedit.net/)
 
 ## New Content
 
