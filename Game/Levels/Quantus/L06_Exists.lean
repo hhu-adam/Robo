@@ -7,11 +7,8 @@ Title "Gerade/Ungerade"
 
 Introduction
 "
-Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen
-applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich
-nicht einigen, welche.
-Ihr hört abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo
-vorsichtshalber schon einmal die entsprechenden Definitionen an:
+Die Rufe „Even“ und „Odd“ aus der Menge sind noch lange nicht verstummt, deshalb
+zeigt dir Robo nochmals die Definitionen:
 
 ```
 def Even (n : ℕ) : Prop := ∃ r, n = r + r
@@ -23,7 +20,7 @@ und
 def Odd (n : ℕ) : Prop := ∃ r, n = 2 * r + 1
 ```
 
-Schließlich taucht von irgendwo aus der Menge folgendes Papier auf:
+Damit erhaltet ihr auch ein weiteres Blatt:
 "
 
 open Nat
@@ -36,7 +33,12 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Robo**: Wie du oben siehst, ist `Even {n}` dadurch definiert,
     dass ein `r` existiert so dass `r + r = {n}` ist. Am besten
     öffnest du diese Definition mit `unfold Even at *` einmal.
-    Dann siehst du besser, was los ist."
+    Dann siehst du besser, was los ist.
+
+    **Du**: Was ist mit `decide`?
+
+    **Robo**: `decide` wird nicht funktionieren, da `{n}` keine konkrete sondern
+    eine beliebige Zahl ist. Da musst du schon etwas Arbeit leisten!"
   Branch
     unfold Even
     Hint "
