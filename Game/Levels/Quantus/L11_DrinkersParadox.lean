@@ -7,7 +7,7 @@ Title "Drinker's Paradox"
 
 Introduction
 "
-**Du**: Könnte ihr eigentlich immer nur im Chor oder durcheinander reden?
+**Du**: Könnt ihr eigentlich immer nur im Chor oder durcheinander reden?
 
 Wieder herrscht längeres Schweigen. Dann auf einmal:
 
@@ -33,40 +33,40 @@ open Function
 Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
   Hint "
-    **Du**: Also, `isDrinking` ist wieder so ein Prädikat …
-    Wenn `p` eine Person ist, ist `isDrinking p` eine Aussage,
+    **Du**: Also, `{isDrinking}` ist wieder so ein Prädikat …
+    Wenn `p` eine Person ist, ist `{isDrinking} p` eine Aussage,
     die wahr oder falsch ist. Soweit so gut.
-    Und was bedeutet `Nonempty People`?
+    Und was bedeutet `Nonempty {People}`?
 
     **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-    Mit `use Classical.arbitrary People` kannst du dir eine `pers : Person` aussuchen und verwenden,
+    Mit `use Classical.arbitrary {People}` kannst du dir eine `pers : {People}` aussuchen und verwenden,
     die es per Annahme gibt.
 
     **Du**: Und wie fang ich jetzt an?
 
     **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
     Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
-    `∀ (y : People), isDrinking y` wahr oder falsch ist."
+    `∀ (y : {People}), {isDrinking} y` wahr oder falsch ist."
   Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
   by_cases h : ∀ y, isDrinking y
-  Hint (hidden := true) "
-    **Du**: Und wen nehm ich jetzt?
+  · Hint (hidden := true) "
+      **Du**: Und wen nehm ich jetzt?
 
-    **Robo**: Wie gesagt, mit `use Classical.arbitrary People` kannst du eine beliebige
-    Person auswählen und verwenden."
-  use Classical.arbitrary People
-  intro
-  assumption
-  Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
-  push_neg at h
-  Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
+      **Robo**: Wie gesagt, mit `use Classical.arbitrary {People}` kannst du eine beliebige
+      Person auswählen und verwenden."
+    use Classical.arbitrary People
+    intro
+    assumption
+  · Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
+    push_neg at h
+    Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
 
-  **Robo**: Schau dir mal an wie man `obtain` auf die Annahme `{h}` anwenden könnte."
-  obtain ⟨p, hp⟩ := h
-  use p
-  intro hp'
-  Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
-  contradiction
+    **Robo**: Schau dir mal an wie man `obtain` auf die Annahme `{h}` anwenden könnte."
+    obtain ⟨p, hp⟩ := h
+    use p
+    intro hp'
+    Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
+    contradiction
 
 /-- TODO -/
 TheoremDoc Classical.arbitrary as "Classical.arbitrary" in "Logic"
@@ -93,6 +93,7 @@ Conclusion
 |:------|:--------------------------|:-------------------------------------------------------|
 | *13ᶜ* | `rw`                      | Umschreiben mit Gleichungen.                           |
 | 15    | `ring`                    | Löst Gleichungen mit `+, -, *, ^`.                     |
+| *4ᵇ*  | `decide`                  | Kann auch Aussagen zu konkreten Zahlen beantworten.    |
 | 16    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
 | 17    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
 | *7ᵈ*  | `obtain ⟨x, hx⟩ := h`     | Um ein `∃` in den Annahmen zu zerlegen.                |

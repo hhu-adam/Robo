@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Inequality"
+World "Luna"
 Level 1
 
 Title "Kleinergleich"

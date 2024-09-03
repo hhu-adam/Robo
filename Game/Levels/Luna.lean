@@ -7,7 +7,7 @@ import Game.Levels.Luna.L04_Linarith
 The planet Luna is about inequalities `≤` and the tactic `linarith`.
 -/
 
-World "Inequality"
+World "Luna"
 Title "Luna"
 
 Image "images/MoonLuna.png"

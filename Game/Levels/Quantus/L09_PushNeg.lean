@@ -16,7 +16,7 @@ open Function
 Statement {X : Type} (P : X → Prop) :
     ¬ (∃ x : X, P x) ↔ ∀ x : X, ¬ P x := by
   Hint "
-    **Du**: Was ist denn jetzt dieses P?
+    **Du**: Was ist denn jetzt dieses `{P}`?
 
     **Robo**: `{P}` ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `{X}`.
               Zum Beispiel könnte `{X}` wieder der Typ der natürlichen Zahlen sein.
@@ -34,28 +34,28 @@ Statement {X : Type} (P : X → Prop) :
 
     **Robo**: Genau. Was du brauchst, ist `push_neg`."
   Branch
+    constructor
+    intro h
+    Hint (hidden := true) "
+      **Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf
+      das Beweisziel anwenden, wohl aber auf `{h}`."
+    push_neg at h
+    assumption
+    intro h
     push_neg
-    Hint (hidden := true) "**Robo**: Das ist jetzt eine Tautologie, oder?"
-    tauto
-  constructor
-  intro h
-  Hint (hidden := true) "
-    **Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf
-    das Beweisziel anwenden, wohl aber auf `{h}`."
-  push_neg at h
-  assumption
-  intro h
+    assumption
   push_neg
-  assumption
+  rfl
 
 NewTactic push_neg
+DisabledTactic tauto
 
 Conclusion
 "
-**Robo**: Gut gemacht. Intern benutzt `push_neg` übringens zwei Lemmas:
+**Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:
 
- - `not_exists (A : Prop) : ¬ (∃ x, A) ↔ ∀x, (¬A)`
- - `not_forall (A : Prop) : ¬ (∀ x, A) ↔ ∃x, (¬A)`
+ - `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
+ - `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`
 
 Das erste Lemma ist die Aussage, die du gerade gezeigt hast.
 

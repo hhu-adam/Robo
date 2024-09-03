@@ -60,30 +60,30 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     was ausgerechnet `1 = 1 / 2 + 1 / 2 = 0 + 0` ist, du bist also auf dem Holzweg!
     "
   Hint "
-    **Du**: Also von `{h}` weiß ich jetzt, dass ein `r` existiert, so dass `r + r = {n}` …
+    **Du**: Also von `{h}` weiß ich jetzt, dass ein `s` existiert, so dass `s + s = {n}` …
 
-    **Robo**: Mit `obtain ⟨r, hr⟩ := {h}` kannst du dieses `r` tatsächlich einführen."
-  obtain ⟨r, hr⟩ := h
+    **Robo**: Mit `obtain ⟨s, hs⟩ := {h}` kannst du dieses `s` tatsächlich einführen."
+  obtain ⟨s, hs⟩ := h
   Hint "
     **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = {n} ^ 2`?
 
     **Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
   Hint (hidden := true) "
-    **Robo**: Also sowas ähnliches wie `use 4 * {r} ^ 3`, aber ich kann
+    **Robo**: Also sowas ähnliches wie `use 4 * {s} ^ 3`, aber ich kann
     dir leider nicht sagen, welche Zahl passt."
   Branch
-    rw [hr]
+    rw [hs]
     Hint "**Robo**: Das geht auch, jetzt musst du aber wirklich `use` verwenden."
-    use 2 * r ^ 2
+    use 2 * s ^ 2
     Hint (hidden := true) "**Du**: Ah, und jetzt `ring`!"
     ring
-  use 2 * r ^ 2
+  use 2 * s ^ 2
   Hint "
     **Du**: Ah, und jetzt `ring`!
 
     **Robo**: Aber zuerst musst du noch mit
-    `rw` `n` durch `{r} + {r}` ersetzen, da `ring` das sonst nicht weiß."
-  rw [hr]
+    `rw` `n` durch `{s} + {s}` ersetzen, da `ring` das sonst nicht weiß."
+  rw [hs]
   ring
 
 NewTactic unfold use

@@ -19,9 +19,7 @@ open Nat
 Statement Nat.exists_infinite_primes (n : ℕ) : ∃ p, n ≤ p ∧ Nat.Prime p := by
   -- based on project by Maren
   Hint "**Du**: `minFac (n ! + 1)` ist der kleinste Primfaktor von $n! + 1$"
-
-  let q := minFac (n ! + 1)
-  use q
+  use minFac (n ! + 1)
   constructor
   · apply le_minFac_factorial_succ n
   · apply minFac_factorial_succ_prime n

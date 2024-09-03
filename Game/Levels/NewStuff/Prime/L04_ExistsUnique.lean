@@ -20,8 +20,11 @@ Statement : ∃! p, Nat.Prime p ∧ Even p := by
   use 2
   dsimp
   constructor
-  simp
-  exact Nat.prime_two
+  · decide
+  -- simp
+  -- exact Nat.prime_two
   rintro y ⟨hy, hy'⟩
   rw [←Nat.Prime.even_iff hy]
   assumption
+
+NewDefinition ExistsUnique

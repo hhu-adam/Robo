@@ -1,9 +1,9 @@
 
 | Planet                 | new name | levels         | tried? | hints  | story  | summary | picture | desirable changes                                                                                     |
 |:-----------------------|:---------|:---------------|:-------|:-------|:-------|:--------|:--------|:------------------------------------------------------------------------------------------------------|
-| Logos                  | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE TODO: TacticDoc `decide`.                                                                                            |
+| Logos                  | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
 | Implis                 | ==       | +++            | +++    | +++    | ++     | +       | +++     | JE: DONE                                                                                              |
-| Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | (add ∃! ? -- see Prime planet);  TODO: replace L05 by `decide`  (eg: prove that 5 is odd or 8 is even)                            |
+| Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
 | Spinoza                | ==       | ++             | ++     | ++     | ++     |         | +++     | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
 | Luna                   | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
 | Babylon                | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: add sum over zeroes, adding over singleton                                                      |
@@ -17,7 +17,7 @@
 | ~FiniteSetTheory       | TODO     | TODO           |        |        |        |         | TODO    |                                                                                                       |
 | SymmSquare             | TODO     | o TODO: L08    | TODO   | TODO   | TODO   |         | TODO    |                                                                                                       |
 | Quotient               | TODO     | 7-?            | TODO   |        | TODO   |         | TODO    |                                                                                                       |
-| Prime                  | TODO     | +              | TODO   | TODO   | TODO   |         | TODO    | TODO: introduce ∃!                                                                      |
+| Prime                  | TODO     | +              | TODO   | TODO   | TODO   |         | TODO    | TODO: introduce ∃!                                                                                    |
 | ? RealUncountable      | TODO     | TODO .         |        |        |        |         |         |                                                                                                       |
 | GoodByePlanet          |          | TODO (.)       |        |        |        |         | +++     | JE: added empty `End` planet                                                                          |
 |                        |          |                |        |        |        |         |         |                                                                                                       |
@@ -64,7 +64,7 @@ Trick `obtain h_lt | h_eq | h_gt := lt_trichotomy a b` needs to be explained on 
 
 #### L05: use the fact that StrictMono is injective
 Perhaps swap L04 and L05 (L05 is the easier level, and motivates L04)
-    
+
 Both L04 and L05 could be move closer to levels about ‘existence of left inverse implies injectivity`.
 
 #### L06: succ has left inverse, using if … then … else
