@@ -35,11 +35,11 @@
 - recursive `constructor` -- some version of `refine`??
 - we've thrown out `injection` tactic
 
-### FunctionSurj
+## FunctionSurj
 
 nice levels: L12_Surjective, L15_Surjective_TFAE
 
-### FunctionInj
+## FunctionInj
 
 #### L02
 
@@ -129,3 +129,112 @@ My solution:
   simp
 ````
 Perhaps the `have` statement should be a separate previous level, which then needs to be retyped verbatim in the boss level.
+
+## FunctionBij
+
+#### L01 - similar to Inj L06: succ has left inverse
+````
+simp [f] at hab -- TODO: is there a better way?
+````
+ 
+can be simplified to
+ 
+````
+simp f
+````
+
+#### L02: inverse of a bijection
+
+**looks more like a boss level – quite involved!**
+
+Update hint on choose -- we should have already seen exactly how to do this in FunctionSurj.
+
+The hint "something about the fact that ` ∀ (b : B), f (g b) = b` implies {g} is a right inverse of {f}. We use this in the next step to prove {g} is also a left inverse of {f}."
+should be rather be something along the lines of:
+"Zeig erst einmal RightInverse g f, also zum Beispiel `have hR : RightInverse g f`"
+
+````
+constructor
+intro h
+obtain ⟨ h_inj, h_surj⟩ := h
+choose g hg using h_surj
+use g
+have h_r : RightInverse g f
+assumption
+constructor
+unfold LeftInverse
+intro a
+apply h_inj
+rw [hg]
+assumption
+intro h
+obtain ⟨ g, hL, hR ⟩ := h
+unfold RightInverse at hR
+unfold LeftInverse at *
+constructor
+intro a a' h
+apply congr_arg g at h
+rw [hL] at h
+rw [hL] at h
+assumption
+intro b
+use (g b)
+apply hR
+````
+
+#### L03
+
+**unplayable**
+
+**needs fconstructor**
+
+#### L04: Equiv (how to use it)
+
+Need to discuss structures here, and explain what the different fields of Equiv are.
+
+My solution: 
+````
+rw [bijective_iff_has_inverse]  -- already known from L02
+use f.invFun
+constructor
+apply f.left_inv
+apply f.right_inv
+````
+This solution avoids introducing the new theorem `Equiv.injective`, and recycles L02.
+
+
+#### L05: Equiv (how to construct it)
+
+Should perhaps come before L04, as it necessarily explains what the fields of Equiv are.
+
+Probably needs **exact** in any case.
+
+I would like to start with:
+````
+rw [bijective_iff_has_inverse] at h
+obtain ⟨g, hL, hR⟩ := h 
+````
+But this fails:
+````
+tactic 'cases' failed, nested error:
+tactic 'induction' failed, recursor 'Exists.casesOn' can only eliminate into Prop
+````
+
+**can we somehow avoid `fconstructor`??**
+
+#### L06: Equiv curry/uncurry
+
+This really needs **exact** for the nice solution.
+
+
+#### L07: 
+
+After
+````
+unfold Surjective
+push_neg
+````
+the two sides of the equivalence are almost identical! Perhaps modify question so that they *are* identical?
+
+
+
