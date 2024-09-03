@@ -35,8 +35,8 @@ Statement {X : Type} (P : X → Prop) :
     **Robo**: Genau. Was du brauchst, ist `push_neg`."
   Branch
     push_neg
-    Hint (hidden := true) "**Robo**: Das ist jetzt trivial, oder?"
-    trivial
+    Hint (hidden := true) "**Robo**: Das ist jetzt eine Tautologie, oder?"
+    tauto
   constructor
   intro h
   Hint (hidden := true) "

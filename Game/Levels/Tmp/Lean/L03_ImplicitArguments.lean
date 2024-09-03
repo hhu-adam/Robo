@@ -60,7 +60,7 @@ Statement (m : ℕ) : ∑ i : Fin (m + 1), (i : ℕ) + (m + 1) = ∑ i : Fin (Na
   Hint "**Robo**: Gut der Rest ist easy."
   rfl
 
-OnlyTactic rw rfl simp trivial
+OnlyTactic rw rfl simp decide
 TheoremTab "Sum"
 
 Conclusion "**Du**: Gibt es auch noch ander Methoden implizite Argumente anzugeben.

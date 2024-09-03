@@ -9,7 +9,7 @@ import Mathlib
 
 notation R"^("n"×"m")" => Matrix (Fin n) (Fin m) R
 
-World "Trace"
+World "Robotswana"
 Level 1
 
 Title "Trace"

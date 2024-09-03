@@ -15,11 +15,16 @@ open Function
 
 Statement HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     Injective f := by
-  obtain ⟨finv, inv⟩ := h
-  intro a b eq
-  trans finv (f a)
-  · rw [inv]
-  · rw [eq]
-    rw [inv]
+  intro a a' ha
+  obtain ⟨g, hg⟩ := h
+  Branch
+    trans g (f a)
+    · rw [hg]
+    · rw [ha]
+      rw [hg]
+  apply congr_arg g at ha
+  unfold LeftInverse at hg
+  rw [hg a, hg a'] at ha
+  assumption
 
 NewTactic trans

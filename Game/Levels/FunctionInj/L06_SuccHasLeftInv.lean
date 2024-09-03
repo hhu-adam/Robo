@@ -16,14 +16,10 @@ open Function
 
 Statement : HasLeftInverse Nat.succ  := by
   Branch
-    use Nat.pred
-    unfold LeftInverse
-    simp
-  use (fun n ↦ n - 1)
-  Branch
-    unfold LeftInverse
-    simp
-  intro n
-  rfl
+    use (fun n ↦ n - 1)
+    simp [LeftInverse]
+  use (fun n ↦ if 0 < n then n - 1 else 0)
+  unfold LeftInverse
+  simp
 
 NewDefinition Function.HasLeftInverse

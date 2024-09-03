@@ -1,5 +1,6 @@
 import Game.Metadata
 
+open Nat
 
 World "FunctionInj"
 Level 2
@@ -50,7 +51,7 @@ Statement :
     **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   use 2
   use 3
-  trivial
+  decide
 
 TheoremTab "Function"
 

@@ -17,20 +17,19 @@ Statement : True := by
 
     **Du**: Und was genau ist dann zu beweisen?
 
-    **Robo**: Ich glaube, nichts. Ich glaube, du kannst einfach `trivial` schreiben."
-  trivial
+    **Robo**: Ich glaube, nichts. Probier mal `decide`."
+  decide
 
 Conclusion
 "
 **Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen seid …
 
-**Du** *(zu Robo)*: Können wir nicht einfach immer dieses `trivial` verwenden?
-Wie in einer Mathe-Vorlesung?
+**Du** *(zu Robo)*: Können wir nicht einfach immer dieses `decide` verwenden?
 
-**Robo**: Nein, das `trivial` hier hat eine ziemlich spezielle Bedeutung.
-Das funktioniert nur in einer Handvoll Situationen.
+**Robo**: Nein, `decide` funktioniert nur in speziellen Situationen, in denen es einen
+einfachen Algorithmus gibt, der entscheidet, ob die Aussage wahr ist.
 "
 
 NewDefinition True
-NewTactic trivial
+NewTactic decide
 DisabledTactic tauto

@@ -80,16 +80,16 @@ Robo strahlt überglücklich. Noch *nie* warst du so auf ihn angewiesen.
 Die Worte, die du aktiv gebrauchen musst, heißen zusammengefasst `Taktiken`.
 Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
 
-|    | Taktik                    | Beispiel                                          |
-|:---|:--------------------------|:--------------------------------------------------|
-| 1  | `rfl`                     | Beweist `A = A`.                                  |
-| 2  | `assumption`              | Sucht das Goal in den Annahmen.                   |
-| 3  | `contradiction`           | Sucht einen Widerspruch.                          |
-| 4  | `trivial`                 | Kombiniert die obigen drei Taktiken (und mehr).   |
-| 5  | `constructor`             | Teilt ein UND im Goal auf.                        |
-| 6  | `left`/`right`            | Beweist eine Seite eines ODER im Goal.            |
-| 7ᵃ | `obtain ⟨h₁, h₂⟩ := h`    | Teilt ein UND in den Annahmen auf.                |
-| 7ᵇ | `obtain h := h \\| h`     | Teilt ein ODER in den Annahmen in zwei Fälle auf. |
+|    | Taktik                    | Beispiel                                           |
+|:---|:--------------------------|:---------------------------------------------------|
+| 1  | `rfl`                     | Beweist `A = A`.                                   |
+| 2  | `assumption`              | Sucht das Goal in den Annahmen.                    |
+| 3  | `contradiction`           | Sucht einen Widerspruch.                           |
+| 4  | `decide`                  | Versucht zu entscheiden, ob eine Aussage wahr ist. |
+| 5  | `constructor`             | Teilt ein UND im Goal auf.                         |
+| 6  | `left`/`right`            | Beweist eine Seite eines ODER im Goal.             |
+| 7ᵃ | `obtain ⟨h₁, h₂⟩ := h`    | Teilt ein UND in den Annahmen auf.                 |
+| 7ᵇ | `obtain h := h \\| h`     | Teilt ein ODER in den Annahmen in zwei Fälle auf.  |
 
 **Du** Woher weißt du das eigentlich alles?
 

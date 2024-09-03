@@ -36,7 +36,7 @@ Statement (m : ℕ) :
   rw [Fin.sum_univ_castSucc (n := m + 1)]
   rfl
 
-OnlyTactic rw rfl simp trivial
+OnlyTactic rw rfl simp decide
 TheoremTab "Sum"
 
 Conclusion "

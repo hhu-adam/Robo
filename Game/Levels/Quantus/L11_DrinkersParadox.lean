@@ -30,7 +30,7 @@ der Eigenschaft, dass alle trinken, wenn sie trinkt.* Genauer gesagt: in jeder n
 
 open Function
 
-Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People → Prop) :
+Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by
   Hint "
     **Du**: Also, `isDrinking` ist wieder so ein Prädikat …
@@ -39,7 +39,7 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
     Und was bedeutet `Nonempty People`?
 
     **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-    Mit `obtain ⟨pers⟩ := {h_nonempty}` kannst du dir eine `pers : Person` aussuchen,
+    Mit `use Classical.arbitrary People` kannst du dir eine `pers : Person` aussuchen und verwenden,
     die es per Annahme gibt.
 
     **Du**: Und wie fang ich jetzt an?
@@ -52,12 +52,9 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
   Hint (hidden := true) "
     **Du**: Und wen nehm ich jetzt?
 
-    **Robo**: Wie gesagt, `obtain ⟨d⟩ := h_nonempty` gibt dir eine x-beliebige Person `d`."
-  Branch
-    -- less pretty alternative
-    have _d := Classical.choice h_nonempty
-  obtain ⟨d⟩ := h_nonempty
-  use d
+    **Robo**: Wie gesagt, mit `use Classical.arbitrary People` kannst du eine beliebige
+    Person auswählen und verwenden."
+  use Classical.arbitrary People
   intro
   assumption
   Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
@@ -71,7 +68,11 @@ Statement {People : Type} (h_nonempty : Nonempty People) (isDrinking : People �
   Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
   contradiction
 
+/-- TODO -/
+TheoremDoc Classical.arbitrary as "Classical.arbitrary" in "Logic"
+
 TheoremTab "Logic"
+NewTheorem Classical.arbitrary
 NewDefinition Nonempty
 
 Conclusion

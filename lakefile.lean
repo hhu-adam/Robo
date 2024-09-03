@@ -35,8 +35,6 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
 
 require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
 
-
-
 /-! # END USER SECTION -/
 
 -- NOTE: We abuse the `trace.debug` option to toggle messages in VSCode on and

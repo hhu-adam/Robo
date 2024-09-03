@@ -51,6 +51,6 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
   · intro x hx
     simp
     use x
-    trivial
+    apply hx
 
 TheoremTab "Function"

@@ -21,6 +21,7 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
     ∃! a, f a = b := by
   obtain ⟨a, ha⟩ := hb
   use a
+  dsimp only -- TODO: can this be integrated into Mathlib `use`?
   constructor
   · assumption
   · intro a' ha'

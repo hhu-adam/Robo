@@ -35,6 +35,6 @@ Statement Nat.exists_infinite_primes' :
     · rw [mem_setOf]
       assumption
   · use 2
-    trivial
+    decide
 
 #check pred_inj

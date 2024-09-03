@@ -31,8 +31,14 @@ Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B →
     f '' S ⊆ g ⁻¹' S := by
   intro b hb
   obtain ⟨x, hx, e⟩ := hb
-  dsimp [LeftInverse] at hL
-  rw [← hL x, e] at hx
   Branch
-    apply hx
+    dsimp [LeftInverse] at hL
+    rw [← hL x, e] at hx
+    Branch
+      apply hx
+    assumption
+  unfold LeftInverse at hL
+  apply congr_arg g at e
+  have hLx := hL x
+  rw [← hLx, e] at hx
   assumption

@@ -46,14 +46,14 @@
 -- NewTactic rw
 
 -- example : 4 ∈ (univ : Set ℕ) := by
---   trivial
+--   decide
 
 -- example (A : Set ℕ) : 4 ∉ (∅ : Set ℕ) := by
---   trivial
+--   decide
 
 -- example (A : Set ℕ) : A ⊆ univ := by
 --   intro x h
---   trivial
+--   decide
 
 -- -- -- subset_empty_iff
 -- -- example {s : Set α} : s ⊆ ∅ ↔ s = ∅ := by

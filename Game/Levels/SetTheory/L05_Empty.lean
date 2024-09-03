@@ -50,7 +50,7 @@ Statement Set.eq_empty_iff_forall_not_mem {A : Type _} (s : Set A) :
   rw [←subset_empty_iff]
   Branch
     rfl -- This is quite a miracle :)
-  trivial
+  tauto
 
 NewTheorem Set.subset_empty_iff
 TheoremTab "Set"

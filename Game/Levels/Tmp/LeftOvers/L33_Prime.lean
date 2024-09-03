@@ -14,7 +14,7 @@ TODO: Primzahl
 
 /--  -/
 Statement : True := by
-  trivial
+  decide
 
 Conclusion
 "

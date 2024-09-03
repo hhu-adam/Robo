@@ -19,10 +19,10 @@ Statement : ¬False := by
 
     **Robo**: Ja, richtig.
 
-    **Du**: Ist das jetzt nicht doch wieder trivial?
+    **Du**: Ist das jetzt nicht doch wieder `decide`?
 
     **Robo**: Probier mal!"
-  trivial
+  decide
 
 Conclusion
 "

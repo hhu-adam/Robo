@@ -22,7 +22,7 @@ We call the preimage `f ⁻¹' { b }` of the singleton `{ b }` the fiber of `b`.
 
 open Function
 
-Statement {A B : Type} (f : A → B) (nonempty_fibre : ∀ b : B, Set.Nonempty (f ⁻¹' { b })) :
+Statement {A B : Type} (f : A → B) (nonempty_fibre : ∀ b : B, ∃ (x : A), x ∈ (f ⁻¹' { b })) :
     HasRightInverse f := by
   Hint "
       Since we know that for each `b : B`, the fiber is nonempty, we can choose some element of that fibre using the axiom of choice.

@@ -13,9 +13,9 @@ import Game.Levels.Robotswana
 
 import Game.Levels.End
 
--- import Game.Levels.FunctionSurj
--- import Game.Levels.FunctionInj
--- import Game.Levels.FunctionBij
+import Game.Levels.FunctionSurj
+import Game.Levels.FunctionInj
+import Game.Levels.FunctionBij
 -- import Game.Levels.SetTheory
 
 -- *uncomment the following line to get the incomplete planets.*

@@ -780,31 +780,9 @@ Die Taktik `trans B` erstellt dann aus dem Goal zwei neue `A ↔ B` und `B ↔ C
 TacticDoc trans
 
 /--
-`trivial` versucht durch Kombination von wenigen simplen Taktiken das Goal zu schliessen.
-
-## Details
-Die Taktiken, die verwendet werden sind unter anderem:
-
-* `assumption`
-* `rfl`
-* `contradiction`
-* und noch 3 andere, die hier nicht behandelt werden
-  (`decide`, `apply True.intro`, `apply And.intro`).
-
-## Beispiel
-
-Das folgende Goal ist `trivial`:
-
-```
-Objekte:
-  n m : ℕ
-  h : n ≤ m
-Goal:
-  n ≤ m
-```
-
+TODO
 -/
-TacticDoc trivial
+TacticDoc decide
 
 
 

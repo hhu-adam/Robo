@@ -18,6 +18,6 @@ open Set
 
 /--  -/
 Statement : True := by
-  trivial
+  decide
 
 TheoremTab "Set"

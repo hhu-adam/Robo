@@ -41,7 +41,7 @@ Statement :
       **Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
     apply Odd.strictMono_pow
     Hint (hidden := true) "**Du**: Ist das nicht ne Trivialität? Warte mal!"
-    trivial
+    decide
   · Hint "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
     Hint (hidden := true) "
       **Du**: oder …?
