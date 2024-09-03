@@ -5,7 +5,7 @@
 | Implis                 | ==       | +++            | +++    | +++    | ++     | +       | +++     | JE: DONE                                                                                              |
 | Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
 | Spinoza                | ==       | ++             | ++     | ++     | ++     |         | +++     | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
-| Luna                   | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
+| Luna                   | ==       | +              | +++    | +++    | update |         | +++     |                                                                                                       |
 | Babylon                | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: add sum over zeroes, adding over singleton                                                      |
 | FunctionBij            | Isos?    | +              | TODO   |        | TODO   |         | TODO    | remove linear_combination                                                                             |
 | FunctionInj            | Monos?   | +              | TODO   |        | TODO   |         | TODO    |                                                                                                       |
@@ -40,10 +40,6 @@
 nice levels: L12_Surjective, L15_Surjective_TFAE
 
 ## FunctionInj
-
-#### L02
-
-**Introduce `decide` in Prime planet.**
 
 #### L03
 - ∃! needs to be explained -- perhaps already in Quantus? (see table above)
@@ -136,9 +132,9 @@ Perhaps the `have` statement should be a separate previous level, which then nee
 ````
 simp [f] at hab -- TODO: is there a better way?
 ````
- 
+
 can be simplified to
- 
+
 ````
 simp f
 ````
@@ -192,7 +188,7 @@ apply hR
 
 Need to discuss structures here, and explain what the different fields of Equiv are.
 
-My solution: 
+My solution:
 ````
 rw [bijective_iff_has_inverse]  -- already known from L02
 use f.invFun
@@ -212,7 +208,7 @@ Probably needs **exact** in any case.
 I would like to start with:
 ````
 rw [bijective_iff_has_inverse] at h
-obtain ⟨g, hL, hR⟩ := h 
+obtain ⟨g, hL, hR⟩ := h
 ````
 But this fails:
 ````
@@ -227,7 +223,7 @@ tactic 'induction' failed, recursor 'Exists.casesOn' can only eliminate into Pro
 This really needs **exact** for the nice solution.
 
 
-#### L07: 
+#### L07:
 
 After
 ````
@@ -235,6 +231,3 @@ unfold Surjective
 push_neg
 ````
 the two sides of the equivalence are almost identical! Perhaps modify question so that they *are* identical?
-
-
-
