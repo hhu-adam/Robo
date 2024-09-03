@@ -37,5 +37,5 @@ Statement finThreeArrowEquiv {A : Type} : (Fin 3 → A) ≃ A × A × A := by
   · intro t
     simp
 
-NewTactic fconstructor exact fin_cases
+NewTactic fin_cases
 -- TODO: fin_cases should be in set-theory

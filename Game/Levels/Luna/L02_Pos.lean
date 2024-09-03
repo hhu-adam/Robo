@@ -3,7 +3,7 @@ import Game.Metadata
 
 open Nat
 
-World "Inequality"
+World "Luna"
 Level 2
 
 Title "Kleinergleich"

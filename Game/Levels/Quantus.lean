@@ -2,7 +2,7 @@ import Game.Levels.Quantus.L01_Ring
 import Game.Levels.Quantus.L02_Rewrite
 import Game.Levels.Quantus.L03_Rewrite
 import Game.Levels.Quantus.L04_Ring
-import Game.Levels.Quantus.L05_Rfl
+import Game.Levels.Quantus.L05_Decide
 import Game.Levels.Quantus.L06_Exists
 import Game.Levels.Quantus.L07_Exists
 import Game.Levels.Quantus.L08_Forall
@@ -53,6 +53,6 @@ wir es ja insbesondere der Königin übergeben.
 Robo spuckt es aus, wirft es in die Menge, und die Formalosophinnen reißen es auf. Darin befinden
 sich ein paar lose Seiten, die sie sofort eingehend studieren.
 
-Zwei Minuten später liegen die Seiten wieder bei Euch. Es sind wieder mathematische Probleme.
+Zwei Minuten später liegen die Seiten wieder bei euch. Es sind wieder mathematische Probleme.
 Und die Formalosophinnen wollen sehen, wie Ihr sie löst.
 "

@@ -780,7 +780,28 @@ Die Taktik `trans B` erstellt dann aus dem Goal zwei neue `A ↔ B` und `B ↔ C
 TacticDoc trans
 
 /--
-TODO
+`decide` kann Aussagen beweisen, für die es einen einfachen Algorithmus
+gibt, der die Wahr- oder Falschheit der Aussage bestimmt.
+
+Wichtige Beispiele sind:
+
+* `True`
+* Aussagen zu konkreten Zahlen, wie `Even 4`, `2 ≤ 5`, `4 ≠ 6`, …
+
+
+## Details
+
+Konkret sucht `decide` für eine Aussage `P`  nach einer Instanz `Decidable P`
+welche dann evaluiert entweder wahr oder falsch rausgibt.
+
+## Beispiel
+
+Folgendes kann mit `decide` gelöst werden:
+
+```
+Goal:
+  ¬ Odd 40
+```
 -/
 TacticDoc decide
 

@@ -12,7 +12,7 @@ The planet `Prime` is about prime numbers and divisibility.
 -/
 
 World "Prime"
-Title "[WIP] Primzahlen"
+Title "Primzahlen"
 
 Introduction "Ihr schlendert durch die Befestigung ohne direktes Ziel. Und sprecht mit
 verschiedenen Einwohnern."

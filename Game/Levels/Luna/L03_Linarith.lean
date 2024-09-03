@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Inequality"
+World "Luna"
 Level 3
 
 Title "Linarith"

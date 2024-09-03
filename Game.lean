@@ -13,6 +13,8 @@ import Game.Levels.Robotswana
 
 import Game.Levels.End
 
+import Game.Levels.NewStuff.Prime
+
 import Game.Levels.FunctionSurj
 import Game.Levels.FunctionInj
 import Game.Levels.FunctionBij
@@ -95,10 +97,16 @@ CoverImage "images/Cover.png"
 Dependency Robotswana → End
 Dependency Cantor → End
 
+-- Dependency Babylon → FunctionSurj
 
--- Dependency Sum → FunctionSurj
--- Dependency FunctionInj → FunctionBij -- Because of def `Injective`
--- set_option lean4game.showDependencyReasons true
+
+-- because of `∃!`
+Dependency Prime → FunctionInj
+-- Because of def `Injective`
+Dependency FunctionInj → FunctionBij
+
+
+set_option lean4game.showDependencyReasons true
 
 /-! Build the game. Show's warnings if it found a problem with your game.
 

@@ -1,11 +1,11 @@
 
 | Planet                 | new name | levels         | tried? | hints  | story  | summary | picture | desirable changes                                                                                     |
 |:-----------------------|:---------|:---------------|:-------|:-------|:-------|:--------|:--------|:------------------------------------------------------------------------------------------------------|
-| Logos                  | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE TODO: TacticDoc `decide`.                                                                                            |
+| Logos                  | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
 | Implis                 | ==       | +++            | +++    | +++    | ++     | +       | +++     | JE: DONE                                                                                              |
-| Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | (add ∃! ? -- see Prime planet);  TODO: replace L05 by `decide`  (eg: prove that 5 is odd or 8 is even)                            |
+| Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
 | Spinoza                | ==       | ++             | ++     | ++     | ++     |         | +++     | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
-| Luna                   | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: level explaining `obtain h_lt \| h_eq \| h_gt := lt_trichotomy a b` (needed in FunctionInj L04) |
+| Luna                   | ==       | +              | +++    | +++    | update |         | +++     |                                                                                                       |
 | Babylon                | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: add sum over zeroes, adding over singleton                                                      |
 | FunctionBij            | Isos?    | +              | TODO   |        | TODO   |         | TODO    | remove linear_combination                                                                             |
 | FunctionInj            | Monos?   | +              | TODO   |        | TODO   |         | TODO    |                                                                                                       |
@@ -17,7 +17,7 @@
 | ~FiniteSetTheory       | TODO     | TODO           |        |        |        |         | TODO    |                                                                                                       |
 | SymmSquare             | TODO     | o TODO: L08    | TODO   | TODO   | TODO   |         | TODO    |                                                                                                       |
 | Quotient               | TODO     | 7-?            | TODO   |        | TODO   |         | TODO    |                                                                                                       |
-| Prime                  | TODO     | +              | TODO   | TODO   | TODO   |         | TODO    | TODO: introduce ∃!                                                                      |
+| Prime                  | TODO     | +              | TODO   | TODO   | TODO   |         | TODO    | TODO: introduce ∃!                                                                                    |
 | ? RealUncountable      | TODO     | TODO .         |        |        |        |         |         |                                                                                                       |
 | GoodByePlanet          |          | TODO (.)       |        |        |        |         | +++     | JE: added empty `End` planet                                                                          |
 |                        |          |                |        |        |        |         |         |                                                                                                       |
@@ -59,10 +59,6 @@ Uses `Set.Nonempty`, which we've recently purged in L14.
 
 ## FunctionInj
 
-#### L02
-
-**Introduce `decide` in Prime planet.**
-
 #### L03
 - ∃! needs to be explained -- perhaps already in Quantus? (see table above)
 - Add hidden hint for `obtain`
@@ -82,7 +78,7 @@ Trick `obtain h_lt | h_eq | h_gt := lt_trichotomy a b` needs to be explained on 
 
 #### L05: use the fact that StrictMono is injective
 Perhaps swap L04 and L05 (L05 is the easier level, and motivates L04)
-    
+
 Both L04 and L05 could be move closer to levels about ‘existence of left inverse implies injectivity`.
 
 #### L06: succ has left inverse, using if … then … else
@@ -154,9 +150,9 @@ Perhaps the `have` statement should be a separate previous level, which then nee
 ````
 simp [f] at hab -- TODO: is there a better way?
 ````
- 
+
 can be simplified to
- 
+
 ````
 simp f
 ````
@@ -210,7 +206,7 @@ apply hR
 
 Need to discuss structures here, and explain what the different fields of Equiv are.
 
-My solution: 
+My solution:
 ````
 rw [bijective_iff_has_inverse]  -- already known from L02
 use f.invFun
@@ -230,7 +226,7 @@ Probably needs **exact** in any case.
 I would like to start with:
 ````
 rw [bijective_iff_has_inverse] at h
-obtain ⟨g, hL, hR⟩ := h 
+obtain ⟨g, hL, hR⟩ := h
 ````
 But this fails:
 ````
@@ -243,7 +239,6 @@ tactic 'induction' failed, recursor 'Exists.casesOn' can only eliminate into Pro
 #### L06: Equiv curry/uncurry
 
 This really needs **exact** for the nice solution.
-
 
 #### L07: Reading exercise for A → B → C
 
@@ -322,3 +317,6 @@ lemma surjective_iff_nonempty_fibres {A B : Type} (f : A → B) : Surjective f �
   sorry
 ````
 But I haven't managed to find a more satisfactory solution by assuming this lemma.
+=======
+the two sides of the equivalence are almost identical! Perhaps modify question so that they *are* identical?
+

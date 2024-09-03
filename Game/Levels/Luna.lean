@@ -2,12 +2,13 @@ import Game.Levels.Luna.L01_LE
 import Game.Levels.Luna.L02_Pos
 import Game.Levels.Luna.L03_Linarith
 import Game.Levels.Luna.L04_Linarith
+import Game.Levels.Luna.L05_Trichotomy
 
 /-!
 The planet Luna is about inequalities `≤` and the tactic `linarith`.
 -/
 
-World "Inequality"
+World "Luna"
 Title "Luna"
 
 Image "images/MoonLuna.png"
