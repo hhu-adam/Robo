@@ -61,7 +61,7 @@ Uses `Set.Nonempty`, which we've recently purged in L14.
 
 ## FunctionInj
 
-#### L03
+#### L03 injective → fibres are singletons
 - ∃! needs to be explained -- perhaps already in Quantus? (see table above)
 - Add hidden hint for `obtain`
 - Add hint regarding overly complicated goal after `use a`:
@@ -393,6 +393,8 @@ induction
 #### Surj 14: non-empty fibres → ∃ right inverse
 **choose**
 
+**preimage**
+
 #### Surj 15: BOSS TFAE definitions of surjectivity
 choose
 HasRightInverse
@@ -406,6 +408,10 @@ Surjective
 
   **choose**
 
+### Inj 03: injective → fibres are singletons
+    range 
+    Injective
+    
 #### Inj 04: how to use Equiv 
   **Equiv**
   
@@ -427,12 +433,13 @@ Surjective
 #### Inj 07a & b: extend from ℕ to ℤ
    **if … then … else**
 
-#### Inj 08
+#### Inj 08: image of self vs preimage of LeftInverse
    **image**
    
    preimage
    LeftInverse
-
+   congr_arg
+   
 #### Inj 09: HasLeftInverse → Injective
 
    HasLeftInverse
@@ -498,7 +505,6 @@ choose
    Surjective
    Image
    Preimage
-   fibre
 
 #### Bij 09 BOSS – f surjective ↔ f⁻¹ injective 
    Surjective
