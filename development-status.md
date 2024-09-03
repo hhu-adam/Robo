@@ -196,11 +196,13 @@ use (g b)
 apply hR
 ````
 
-#### L03
+#### L03: A × A × A = (Fin 3 → A)
 
 **unplayable**
 
 **needs fconstructor**
+
+**remove?** 
 
 #### L04: Equiv (how to use it)
 
@@ -252,11 +254,14 @@ example (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, f n 
 Can the actual question be solved similarly, in four lines perhaps? 
 Or should we change the question?
 
-#### L08
+#### L08: Diagonal injective
 
 Set.preimage has not been introduced.
 
-#### L09
+Hopefully, `Fin n` will be explained elsewhere.
+
+
+#### L09: Boss – f surjective ↔ f⁻¹ injective 
 
 My own solution was rather long:
 ````
