@@ -266,7 +266,6 @@ Hopefully, `Fin n` will be explained elsewhere.
 My own solution was rather long:
 ````
 example {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
-  rw [surjective_iff_nonempty_fibres]
   constructor
   · intro h_inj
     intro b 
@@ -321,7 +320,21 @@ It might be useful to have one part of the Boss level of FunctionInj available h
 lemma surjective_iff_nonempty_fibres {A B : Type} (f : A → B) : Surjective f ↔ ∀ b : B, ∃ (a : A), a ∈ (f ⁻¹' { b }) := by
   sorry
 ````
+
 But I haven't managed to find a more satisfactory solution by assuming this lemma.
-=======
 the two sides of the equivalence are almost identical! Perhaps modify question so that they *are* identical?
 
+The second part can be solved more elegantly using
+````
+Function.Surjective.image_preimage.{u_1, u_2} {α : Type u_1} {β : Type u_2} {f : α → β} (hf : Surjective f)
+  (s : Set β) : f '' (f ⁻¹' s) = s
+````
+Using this theorem, which could be a separate exercise in FunctionSurj, the second half above becomes:
+````
+· intro h_surj
+  intro s s' hs
+  apply congr_arg (image f) at hs
+  rw [h_surj.image_preimage] at hs
+  rw [h_surj.image_preimage] at hs
+  assumption
+````
