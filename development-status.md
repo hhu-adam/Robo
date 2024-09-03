@@ -39,6 +39,24 @@
 
 nice levels: L12_Surjective, L15_Surjective_TFAE
 
+#### L12: SEMIBOSS function which semiconjugates to successor function is surjective
+
+Good application of induction!
+
+**need to introduced `succ` here or elsewhere, or reformulate**
+
+#### L13: surjective ↔ range = univ
+
+#### L14: non-empty fibres → ∃ right inverse
+
+
+#### L15: BOSS TFAE definitions of surjectivity
+
+Uses `Set.Nonempty`, which we've recently purged in L14.
+
+**The part `surjective  ↔ non-empty fibres` is used in Boss of FunctionBij**!
+
+
 ## FunctionInj
 
 #### L02
@@ -227,14 +245,80 @@ tactic 'induction' failed, recursor 'Exists.casesOn' can only eliminate into Pro
 This really needs **exact** for the nice solution.
 
 
-#### L07: 
+#### L07: Reading exercise for A → B → C
 
-After
+A tiny variation can be solved in just three lines:
 ````
-unfold Surjective
-push_neg
+example (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, f n ≠ g := by
+  unfold Surjective
+  push_neg
+  rfl
 ````
-the two sides of the equivalence are almost identical! Perhaps modify question so that they *are* identical?
+Can the actual question be solved similarly, in four lines perhaps? 
+Or should we change the question?
 
+#### L08
 
+Set.preimage has not been introduced.
 
+#### L09
+
+My own solution was rather long:
+````
+example {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
+  rw [surjective_iff_nonempty_fibres]
+  constructor
+  · intro h_inj
+    intro b 
+    by_contra h_contra
+    push_neg at h_contra
+    have h₁ : preimage f ∅ = ∅ := by
+      simp
+    have h₂ : preimage f {b} = ∅ := by 
+      rw [eq_empty_iff_forall_not_mem]
+      intro a
+      have h'a := h_contra a
+      assumption
+    have : preimage f ∅ = preimage f {b}  
+    rw [h₁,h₂]
+    apply h_inj at this
+    symm at this
+    rw [eq_empty_iff_forall_not_mem] at this
+    apply this b
+    simp
+  · intro h_surj
+    intro s s' hs
+    ext b 
+    constructor
+    · intro hx
+      unfold Surjective at h_surj
+      obtain ⟨y, hy⟩  := h_surj b
+      have : y ∈ f ⁻¹' s := by 
+        simp
+        rw [← hy] at hx
+        assumption
+      rw [hs] at this
+      simp at this
+      rw [hy] at this
+      assumption
+    · intro hx
+      unfold Surjective at h_surj
+      obtain ⟨y, hy⟩  := h_surj b
+      have : y ∈ f ⁻¹' s' := by 
+        simp
+        rw [← hy] at hx
+        assumption
+      rw [← hs] at this
+      simp at this
+      rw [hy] at this
+      assumption
+````
+
+The first part of the shorter sample solution seems to depend quite crucially on the `change` tactic, which we haven't introduced.
+It might be useful to have one part of the Boss level of FunctionInj available here, namely:
+
+````
+lemma surjective_iff_nonempty_fibres {A B : Type} (f : A → B) : Surjective f ↔ ∀ b : B, ∃ (a : A), a ∈ (f ⁻¹' { b }) := by
+  sorry
+````
+But I haven't managed to find a more satisfactory solution by assuming this lemma.
