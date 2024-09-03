@@ -45,6 +45,8 @@ Good application of induction!
 
 **need to introduced `succ` here or elsewhere, or reformulate**
 
+Remove `NewTheorem congr_fun` from end of file.
+
 #### L13: surjective ↔ range = univ
 
 #### L14: non-empty fibres → ∃ right inverse
@@ -72,7 +74,7 @@ Uses `Set.Nonempty`, which we've recently purged in L14.
 
   **Or can mathlib's `use` be improved??**
 
-#### L04: prove that StrictMono is injective
+#### L04: StrictMono → injective
 
 Trick `obtain h_lt | h_eq | h_gt := lt_trichotomy a b` needs to be explained on Luna (see table above)
 
@@ -107,16 +109,8 @@ In short:
 - I've used the opportunity to apply `congr_arg … at`
 
 #### L09: existence of left inverse implies injectivity
-No need to introduce `trans` *here*:
-````
-intro a a' ha
-obtain ⟨ g, hg⟩ := h
-apply congr_arg g at ha
-unfold LeftInverse at hg
-rw [hg a, hg a'] at ha
-assumption
-````
-(It's anyway been introduced ealier, so current solution can be left as a branch.)
+
+Remove `NewTactic trans` at the end of the file!
 
 #### L10: left inverse of injection is also right inverse
 
@@ -342,14 +336,174 @@ Using this theorem, which could be a separate exercise in FunctionSurj, the seco
 
 ## Reordering??
 
+
+#### Surj 01
+  **fun ↦**
+  
+#### Surj 02
+  fun ↦ 
+
+#### Surj 03
+  **let**
+  **comp_apply**
+
+#### Surj 04
+   **if…then…else**
+   **if_pos** **if_neg**
+
+   let
+   comp_apply
+
+#### Surj 05
+   **funext**
+
+#### Surj 06
+   **congr_arg**
+
+#### Surj 07
+   **congr_fun**
+ 
+#### Surj 08
+   **RightInverse**
+
+    congr_fun
+
+#### Surj 09
+    **LeftInverse**
+    
+    RightInverse
+ 
+#### Surj 10
+    **HasRightInverse**
+
+
+#### Surj 11
+    **Surjective**
+
+#### Surj 12 SEMIBOSS: function which semiconjugates to successor function is surjective
+
+congr_fun
+
+induction
+
+#### Surj 13: surjective ↔ range = univ
+**range** 
+**mem_range**
+
+#### Surj 14: non-empty fibres → ∃ right inverse
+**choose**
+
+#### Surj 15: BOSS TFAE definitions of surjectivity
+choose
+HasRightInverse
+Surjective
+
 #### Inj 01
-  **congr_arg**
-  **Surjective**
+  **Injective**
   
-  exact 
+#### Inj 02: bijective ↔ ∃ both inverses
+  **Bijective** **RightInverse** **Leftinverse**
+
+  **choose**
+
+#### Inj 04: how to use Equiv 
+  **Equiv**
   
-  RightInverse 
+#### Inj 05: how to construct Equiv
+  **Equiv**
 
-#### Inj 02
+   RightInverse
 
-#### Inj 03
+#### Inj 04: StrictMono → injective – proof
+   **StrictMono**
+   
+   Injective
+
+#### Inj 05: application of StrictMono → application
+
+#### Inj 06: succ has left inverse, using if … then … else
+  **succ**  **if … then … else**  **HasLeftInverse**
+  
+#### Inj 07a & b: extend from ℕ to ℤ
+   **if … then … else**
+
+#### Inj 08
+   **image**
+   
+   preimage
+   LeftInverse
+
+#### Inj 09: HasLeftInverse → Injective
+
+   HasLeftInverse
+   LeftInverse
+   congr_arg
+   
+#### Inj 10
+   LeftInverse
+   RightInverse
+   Injective
+
+#### Inj 11: Injective → HasLeftInverse
+   range
+
+   choose
+   arbitrary
+
+#### Bij 01
+**Bijective**
+
+#### Bij 02 ?BOSS?  inverse of a bijection
+
+LeftInverse
+RightInverse
+Bijective
+choose
+
+#### [Bij 03 A × A × A = (Fin 3 → A)]
+
+#### Bij 04 Equiv (how to use it)
+
+**depends on Bid 02**
+
+   RightInverse
+   LeftInverse
+   Surjective
+   Injective
+   congr_arg
+   …?…
+
+#### Bij 05 Equiv (how to construct it)
+
+   RightInverse
+   LeftInverse
+   Surjective
+   Injective
+
+
+#### Bij 06 Equiv curry/uncurry
+  **curry_uncurry** **uncurry_curry**
+
+#### Bij 07 Reading exercise for A → B → C
+   Surjective
+   [curry]
+
+#### Bij 08 Diagonal injective
+   Injective
+   congr_fun
+   [curry]
+   Fin n
+
+#### Bij 09*: Surjective.image_preimage
+   Surjective
+   Image
+   Preimage
+   fibre
+
+#### Bij 09 BOSS – f surjective ↔ f⁻¹ injective 
+   Surjective
+   Injective
+   Image
+   Preimage
+   fibre
+
