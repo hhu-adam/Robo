@@ -338,3 +338,18 @@ Using this theorem, which could be a separate exercise in FunctionSurj, the seco
   rw [h_surj.image_preimage] at hs
   assumption
 ````
+
+
+## Reordering??
+
+#### Inj 01
+  **congr_arg**
+  **Surjective**
+  
+  exact 
+  
+  RightInverse 
+
+#### Inj 02
+
+#### Inj 03
