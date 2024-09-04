@@ -338,47 +338,47 @@ Using this theorem, which could be a separate exercise in FunctionSurj, the seco
 
 
 #### Surj 01
-  **fun ↦**
+**fun ↦**
   
 #### Surj 02
-  fun ↦ 
+fun ↦ 
 
 #### Surj 03
-  **let**
-  **comp_apply**
+**let**
+**comp_apply**
 
 #### Surj 04
-   **if…then…else**
-   **if_pos** **if_neg**
+**if…then…else**
+**if_pos** **if_neg**
 
-   let
-   comp_apply
+let
+comp_apply
 
 #### Surj 05
-   **funext**
+**funext**
 
 #### Surj 06
-   **congr_arg**
+**congr_arg**
 
 #### Surj 07
-   **congr_fun**
+**congr_fun**
  
 #### Surj 08
-   **RightInverse**
+**RightInverse**
 
-    congr_fun
+congr_fun
 
 #### Surj 09
-    **LeftInverse**
+**LeftInverse**
     
-    RightInverse
+RightInverse
  
 #### Surj 10
-    **HasRightInverse**
+**HasRightInverse**
 
 
 #### Surj 11
-    **Surjective**
+**Surjective**
 
 #### Surj 12 SEMIBOSS: function which semiconjugates to successor function is surjective
 
@@ -401,61 +401,61 @@ HasRightInverse
 Surjective
 
 #### Inj 01
-  **Injective**
+**Injective**
   
 #### Inj 02: bijective ↔ ∃ both inverses
-  **Bijective** **RightInverse** **Leftinverse**
+**Bijective** **RightInverse** **Leftinverse**
 
-  **choose**
+**choose**
 
-### Inj 03: injective → fibres are singletons
-    range 
-    Injective
+#### Inj 03: injective → fibres are singletons
+range 
+Injective
     
 #### Inj 04: how to use Equiv 
-  **Equiv**
+**Equiv**
   
 #### Inj 05: how to construct Equiv
-  **Equiv**
+**Equiv**
 
-   RightInverse
+RightInverse
 
 #### Inj 04: StrictMono → injective – proof
-   **StrictMono**
+**StrictMono**
    
-   Injective
+Injective
 
 #### Inj 05: application of StrictMono → application
 
 #### Inj 06: succ has left inverse, using if … then … else
-  **succ**  **if … then … else**  **HasLeftInverse**
+**succ**  **if … then … else**  **HasLeftInverse**
   
 #### Inj 07a & b: extend from ℕ to ℤ
-   **if … then … else**
+**if … then … else**
 
 #### Inj 08: image of self vs preimage of LeftInverse
-   **image**
-   
-   preimage
-   LeftInverse
-   congr_arg
+**image**
+
+preimage
+LeftInverse
+congr_arg
    
 #### Inj 09: HasLeftInverse → Injective
 
-   HasLeftInverse
-   LeftInverse
-   congr_arg
+HasLeftInverse
+LeftInverse
+congr_arg
    
 #### Inj 10
-   LeftInverse
-   RightInverse
-   Injective
+LeftInverse
+RightInverse
+Injective
 
 #### Inj 11: Injective → HasLeftInverse
-   range
+range
 
-   choose
-   arbitrary
+choose
+arbitrary
 
 #### Bij 01
 **Bijective**
@@ -471,45 +471,45 @@ choose
 
 #### Bij 04 Equiv (how to use it)
 
-**depends on Bid 02**
+**depends on Bij 02**
 
-   RightInverse
-   LeftInverse
-   Surjective
-   Injective
-   congr_arg
-   …?…
+RightInverse
+LeftInverse
+Surjective
+Injective
+congr_arg
+…?…
 
 #### Bij 05 Equiv (how to construct it)
 
-   RightInverse
-   LeftInverse
-   Surjective
-   Injective
+RightInverse
+LeftInverse
+Surjective
+Injective
 
 
 #### Bij 06 Equiv curry/uncurry
-  **curry_uncurry** **uncurry_curry**
+**curry_uncurry** **uncurry_curry**
 
 #### Bij 07 Reading exercise for A → B → C
-   Surjective
-   [curry]
+Surjective
+[curry]
 
 #### Bij 08 Diagonal injective
-   Injective
-   congr_fun
-   [curry]
-   Fin n
+Injective
+congr_fun
+[curry]
+Fin n
 
 #### Bij 09*: Surjective.image_preimage
-   Surjective
-   Image
-   Preimage
+Surjective
+Image
+Preimage
 
 #### Bij 09 BOSS – f surjective ↔ f⁻¹ injective 
-   Surjective
-   Injective
-   Image
-   Preimage
-   fibre
+Surjective
+Injective
+Image
+Preimage
+fibre
 
