@@ -333,6 +333,37 @@ Using this theorem, which could be a separate exercise in FunctionSurj, the seco
   assumption
 ````
 
+#### L09a:  f (f ⁻¹ s) ⊆ s
+
+````
+-- theorem Set.image_preimage_subset 
+lemma image_preimage_subset {A B : Type} (f : A → B ) (s : Set B) :
+f '' (f ⁻¹' s) ⊆ s := by 
+  intro b hb
+  obtain ⟨a, ha, h ⟩ := hb 
+  simp at ha
+  rw [h] at ha
+  assumption
+````
+
+#### L09b:  f (f ⁻¹ s) = s for surjective f
+
+````
+-- theorem Function.Surjective.image_preimage 
+example {A B : Type} {f : A → B} (hf : Surjective f) (s : Set B) :
+f '' (f ⁻¹' s) = s := by
+  ext b
+  constructor
+  · apply image_preimage_subset
+  · intro hb
+    obtain ⟨a, ha⟩ := hf b  
+    use a
+    constructor
+    · simp
+      rw [ha]
+      assumption
+    · assumption
+````
 
 ## Reordering??
 
@@ -399,6 +430,7 @@ induction
 choose
 HasRightInverse
 Surjective
+preimage
 
 #### Inj 01: concrete function injective
 **Injective**
