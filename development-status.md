@@ -412,14 +412,6 @@ Injective
 range 
 Injective
     
-#### Inj 04: how to use Equiv 
-**Equiv**
-  
-#### Inj 05: how to construct Equiv
-**Equiv**
-
-RightInverse
-
 #### Inj 04: StrictMono → injective – proof
 **StrictMono**
    
@@ -450,7 +442,7 @@ HasLeftInverse
 LeftInverse
 congr_arg
    
-#### Inj 10
+#### Inj 10: left inverse of injective is right inverse
 LeftInverse
 RightInverse
 Injective
