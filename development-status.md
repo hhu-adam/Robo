@@ -400,13 +400,13 @@ choose
 HasRightInverse
 Surjective
 
-#### Inj 01
+#### Inj 01: concrete function injective
 **Injective**
   
-#### Inj 02: bijective ↔ ∃ both inverses
-**Bijective** **RightInverse** **Leftinverse**
+#### Inj 02: concrete function not injective
+if … then … else
 
-**choose**
+Injective
 
 #### Inj 03: injective → fibres are singletons
 range 
@@ -427,11 +427,15 @@ Injective
 
 #### Inj 05: application of StrictMono → application
 
-#### Inj 06: succ has left inverse, using if … then … else
-**succ**  **if … then … else**  **HasLeftInverse**
+#### Inj 06: succ has left inverse
+**HasLeftInverse**
+
+succ
+
+if … then … else
   
 #### Inj 07a & b: extend from ℕ to ℤ
-**if … then … else**
+if … then … else
 
 #### Inj 08: image of self vs preimage of LeftInverse
 **image**
