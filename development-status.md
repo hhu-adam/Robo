@@ -337,47 +337,47 @@ Using this theorem, which could be a separate exercise in FunctionSurj, the seco
 ## Reordering??
 
 
-#### Surj 01
+#### Surj 01:
 **fun ↦**
   
-#### Surj 02
+#### Surj 02:
 fun ↦ 
 
-#### Surj 03
+#### Surj 03:
 **let**
 **comp_apply**
 
-#### Surj 04
+#### Surj 04:
 **if…then…else**
 **if_pos** **if_neg**
 
 let
 comp_apply
 
-#### Surj 05
+#### Surj 05:
 **funext**
 
-#### Surj 06
+#### Surj 06:
 **congr_arg**
 
-#### Surj 07
+#### Surj 07: 
 **congr_fun**
  
-#### Surj 08
+#### Surj 08: direct “definition” of RightInverse
 **RightInverse**
 
 congr_fun
 
-#### Surj 09
+#### Surj 09: mathlib definition of RightInverse in terms of LeftInverse
 **LeftInverse**
     
 RightInverse
  
-#### Surj 10
-**HasRightInverse**
+#### Surj 10: concrete right inverse
+**HasRightInverse**1
 
 
-#### Surj 11
+#### Surj 11: concrete function surjective
 **Surjective**
 
 #### Surj 12 SEMIBOSS: function which semiconjugates to successor function is surjective
