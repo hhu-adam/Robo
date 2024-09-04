@@ -442,7 +442,7 @@ HasLeftInverse
 LeftInverse
 congr_arg
    
-#### Inj 10: left inverse of injective is right inverse
+#### Inj 10: right inverse of injective is left inverse
 LeftInverse
 RightInverse
 Injective
