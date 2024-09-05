@@ -62,8 +62,8 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   Hint "
     **Du**: Also von `{h}` weiß ich jetzt, dass ein `s` existiert, so dass `s + s = {n}` …
 
-    **Robo**: Mit `obtain ⟨s, hs⟩ := {h}` kannst du dieses `s` tatsächlich einführen."
-  obtain ⟨s, hs⟩ := h
+    **Robo**: Mit `choose s hs using {h}` kannst du dieses `s` tatsächlich einführen."
+  choose s hs using h
   Hint "
     **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = {n} ^ 2`?
 
@@ -86,7 +86,7 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   rw [hs]
   ring
 
-NewTactic unfold use
+NewTactic unfold use choose
 NewDefinition Even Odd
 
 Conclusion "Applaus!"

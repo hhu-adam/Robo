@@ -16,7 +16,7 @@ Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   intro x h
   unfold Even at h
   unfold Odd
-  obtain ⟨y, hy⟩ := h
+  choose y hy using h
   use y
   rw [hy]
   ring

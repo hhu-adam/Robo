@@ -62,7 +62,7 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
 
     **Robo**: Schau dir mal an wie man `obtain` auf die Annahme `{h}` anwenden könnte."
-    obtain ⟨p, hp⟩ := h
+    choose p hp using h
     use p
     intro hp'
     Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
@@ -96,7 +96,7 @@ Conclusion
 | *4ᵇ*  | `decide`                  | Kann auch Aussagen zu konkreten Zahlen beantworten.    |
 | 16    | `unfold`                  | Setzt visuell die Bedeutung einer Definition ein.      |
 | 17    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
-| *7ᵈ*  | `obtain ⟨x, hx⟩ := h`     | Um ein `∃` in den Annahmen zu zerlegen.                |
+| 18    | `choose x hx using h`     | Um ein `∃` in den Annahmen zu zerlegen.                |
 | *8ᵇ*  | `intro`                   | Um ein `∀` im Goal anzugehen.                          |
-| 18    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
+| 19    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
 "

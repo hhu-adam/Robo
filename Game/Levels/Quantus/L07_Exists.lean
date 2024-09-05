@@ -12,7 +12,7 @@ Sofort taucht das nächste Blatt auf. Anscheinend hatten sie sich auf einen Komp
 
 Statement (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
   Hint (hidden := true) "
-    **Robo**: mit `obtain ⟨r, hr⟩ := h` kannst du wieder
+    **Robo**: mit `choose r hr using h` kannst du wieder
     das `r` nehmen, das laut Annahme existieren muss.
 
     **Robo**: Oder aber, du fängst mit `unfold Odd at *` an."
@@ -23,9 +23,9 @@ Statement (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
   Branch
     unfold Odd at *
     Hint (hidden := true) "
-      **Robo**: mit `obtain ⟨r, hr⟩ := h` kannst du wieder
+      **Robo**: mit `choose r hr⟩ using h` kannst du wieder
       das `r` nehmen, das laut Annahme existieren muss."
-    obtain ⟨r, hr⟩ := h
+    choose r hr using h
     Hint "
       **Robo**: Ich hab noch einen Trick auf Lager:
       Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest
@@ -38,7 +38,7 @@ Statement (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
       ring
     use 2 * (r + r ^ 2)
     ring
-  obtain ⟨r, hr⟩ := h
+  choose r hr using h
   Hint "
     **Robo**: Ich hab noch einen Trick auf Lager:
     Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest
