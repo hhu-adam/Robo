@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 4
+Level 3
 
 Title "Monotone Funktionen"
 

@@ -10,7 +10,6 @@ import Game.Levels.FunctionSurj.L09_LeftInverse
 import Game.Levels.FunctionSurj.L10_RightInverse
 import Game.Levels.FunctionSurj.L11_Surjective
 import Game.Levels.FunctionSurj.L12_Surjective
-import Game.Levels.FunctionSurj.L13_SurjectiveRange
 import Game.Levels.FunctionSurj.L14_choose
 import Game.Levels.FunctionSurj.L15_SurjectiveTFAE
 

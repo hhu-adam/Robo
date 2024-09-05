@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 7
+Level 6
 
 Title "Choosing an arbitrary element of a nonempty type."
 
