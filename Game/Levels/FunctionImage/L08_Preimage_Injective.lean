@@ -1,9 +1,9 @@
 import Game.Metadata
 
-import Game.Levels.FunctionImage.L02b
+import Game.Levels.FunctionImage.L06
 
 World "FunctionImage"
-Level 6
+Level 8
 
 Title "Preimage of surjective is injective"
 

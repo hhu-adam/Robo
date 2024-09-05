@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 7
+Level 9
 
 Title "Functions with left inverses are injective."
 
@@ -26,5 +26,3 @@ Statement HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInvers
   unfold LeftInverse at hg
   rw [hg a, hg a'] at ha
   assumption
-
-NewTactic trans

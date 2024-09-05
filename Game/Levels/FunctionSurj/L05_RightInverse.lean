@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "FunctionSurj"
-Level 10
+Level 5
 
 Title "Does it have a right inverse?"
 

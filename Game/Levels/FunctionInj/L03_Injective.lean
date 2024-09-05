@@ -3,7 +3,7 @@ import Game.Metadata
 open Nat
 
 World "FunctionInj"
-Level 2
+Level 3
 
 Title "Nicht Injektiv"
 

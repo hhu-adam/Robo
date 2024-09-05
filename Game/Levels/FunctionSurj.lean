@@ -1,17 +1,10 @@
-import Game.Levels.FunctionSurj.L01_Function
-import Game.Levels.FunctionSurj.L02_Function
-import Game.Levels.FunctionSurj.L03_Let
-import Game.Levels.FunctionSurj.L04_Piecewise
-import Game.Levels.FunctionSurj.L05_Funext
-import Game.Levels.FunctionSurj.L06_CongrArg
-import Game.Levels.FunctionSurj.L07_CongrFun
-import Game.Levels.FunctionSurj.L08_RightInverse
-import Game.Levels.FunctionSurj.L09_LeftInverse
-import Game.Levels.FunctionSurj.L10_RightInverse
-import Game.Levels.FunctionSurj.L11_Surjective
-import Game.Levels.FunctionSurj.L12_Surjective
-import Game.Levels.FunctionSurj.L14_choose
-import Game.Levels.FunctionSurj.L15_SurjectiveTFAE
+import Game.Levels.FunctionSurj.L01_Surjective
+import Game.Levels.FunctionSurj.L02_CurrySurjective
+import Game.Levels.FunctionSurj.L03_LeftInverse
+import Game.Levels.FunctionSurj.L04_RightInverse
+import Game.Levels.FunctionSurj.L05_RightInverse
+import Game.Levels.FunctionSurj.L06_choose
+import Game.Levels.FunctionSurj.L07_SurjectiveRightInverse
 
 World "FunctionSurj"
 Title "Surjektivität"

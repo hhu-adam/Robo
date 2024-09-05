@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 9
+Level 10
 
 Title "Injections have a left inverse, and vice versa"
 

@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "FunctionSurj"
-Level 6
+World "Function"
+Level 8
 
 Title ""
 

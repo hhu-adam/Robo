@@ -1,11 +1,10 @@
 import Game.Levels.FunctionBij.L01_Bijective
 import Game.Levels.FunctionBij.L02_Inverse
-import Game.Levels.FunctionBij.L03_Equivalence
-import Game.Levels.FunctionBij.L04_EquivalenceBijection
-import Game.Levels.FunctionBij.L05_BijectionEquivalence
-import Game.Levels.FunctionBij.L06_CurryEquiv
-import Game.Levels.FunctionBij.L07_CurrySurjective
-import Game.Levels.FunctionBij.L08_Diagonal
+-- import Game.Levels.FunctionBij.X03_Equivalence
+-- import Game.Levels.FunctionBij.X04_EquivalenceBijection
+-- import Game.Levels.FunctionBij.X05_BijectionEquivalence
+-- import Game.Levels.FunctionBij.X06_CurryEquiv
+
 
 World "FunctionBij"
 Title "Bijektivität"

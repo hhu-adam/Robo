@@ -1,13 +1,13 @@
 import Game.Levels.FunctionInj.L01_Injective
-import Game.Levels.FunctionInj.L02_Injective
-import Game.Levels.FunctionInj.L04_Injective
+import Game.Levels.FunctionInj.L02_New
+import Game.Levels.FunctionInj.L03_Injective
+import Game.Levels.FunctionInj.L04_Diagonal
 import Game.Levels.FunctionInj.L05_Injective
-import Game.Levels.FunctionInj.L06_SuccHasLeftInv
-import Game.Levels.FunctionInj.L07_Extend
+import Game.Levels.FunctionInj.L06_Injective
+import Game.Levels.FunctionInj.L07_SuccHasLeftInv
+import Game.Levels.FunctionInj.L08_RightInvOfLeftInv
 import Game.Levels.FunctionInj.L09_InjOfHasLeftInv
-import Game.Levels.FunctionInj.L10_RightInvOfLeftInv
-import Game.Levels.FunctionInj.L11_InjHasLeftInv
-
+import Game.Levels.FunctionInj.L10_InjHasLeftInv
 
 World "FunctionInj"
 Title "Injektivität"

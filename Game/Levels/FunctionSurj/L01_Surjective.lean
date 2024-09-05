@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "FunctionSurj"
-Level 11
+Level 1
 
 Title "Surjektive"
 

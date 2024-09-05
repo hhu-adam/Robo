@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 5
+Level 7
 
 Title "Left Inverse"
 

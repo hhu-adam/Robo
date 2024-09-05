@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionSurj"
-Level 13
+Level 6
 
 Title "Every function with nonempty fibres has a right inverse."
 

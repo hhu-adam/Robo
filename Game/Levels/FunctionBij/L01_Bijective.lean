@@ -23,7 +23,7 @@ Statement :
   unfold Bijective
   constructor
   · intro a b hab
-    simp [f] at hab -- TODO: is there a better way?
+    simp [f] at hab
     assumption
   · intro y
     use y-1

@@ -41,8 +41,8 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       definieren, die `y` irgendein Urbild zuweist."
     choose g hg using fsurj
     Hint "
-      something about the fact that ` ∀ (b : B), f (g b) = b` implies {g} is a right inverse of {f}. We use this in the next step to prove
-      {g} is also a left inverse of {f}.
+      Zeig erst einmal dass `{g}` ein Rechtsinverses von `{f}` ist,
+      also zum Beispiel `have hR : RightInverse {g} {f}`
     "
     have hR : RightInverse g f := by
         exact hg

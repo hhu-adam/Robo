@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "FunctionSurj"
-Level 12
+World "Function"
+Level 10
 
 Title "A function which semiconjugates an endofunction to the
 successor function is surjective."
@@ -14,8 +14,7 @@ Introduction
 open Function Nat
 
 Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
-    (hs : f ∘ g = succ ∘ f) : Surjective f := by
-  intro n
+    (hs : f ∘ g = succ ∘ f) (n : ℕ) : ∃ a, f a = n := by
   Hint "Induktion über `{n}`"
   induction n with n hn
   · assumption
@@ -39,5 +38,3 @@ Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
       rw [ha]
     rw [← ha]
     apply congr_fun hs
-
-NewTheorem congr_fun
