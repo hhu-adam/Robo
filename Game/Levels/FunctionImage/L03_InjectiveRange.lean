@@ -1,7 +1,6 @@
 import Game.Metadata
 
-
-World "FunctionInj"
+World "FunctionImage"
 Level 3
 
 Title "Range of Injective"
@@ -27,3 +26,5 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
   · intro a' ha'
     apply hf
     rw [ha',ha]
+
+NewDefinition Set.Range

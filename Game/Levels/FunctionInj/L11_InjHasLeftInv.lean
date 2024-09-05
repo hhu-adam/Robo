@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionInj"
-Level 11
+Level 9
 
 Title "Injections have a left inverse, and vice versa"
 
@@ -18,7 +18,7 @@ open Function Set
 Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b   := by
   have a₀ : A := Classical.arbitrary A
   intro b
-  by_cases hb : ∃ a' : A, f a' = b 
+  by_cases hb : ∃ a' : A, f a' = b
   · obtain ⟨a,ha⟩ := hb
     use a
     left
@@ -37,7 +37,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       /- exactly a previous level, now without hints -/
       have a₀ : A := Classical.arbitrary A
       intro b
-      by_cases hb : ∃ a' : A, f a' = b 
+      by_cases hb : ∃ a' : A, f a' = b
       · obtain ⟨a,ha⟩ := hb
         use a
         left
@@ -52,9 +52,9 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     obtain hpos | hneg := hg (f a)
     · assumption
     · push_neg at hneg
-      have : f a ≠ f a := hneg a 
+      have : f a ≠ f a := hneg a
       contradiction
-  · /- Injective f → HasLeftInverse f 
+  · /- Injective f → HasLeftInverse f
        exactly a previous level, now without hints-/
     intro hL
     intro a a' ha
@@ -63,4 +63,3 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     unfold LeftInverse at hg
     rw [hg a, hg a'] at ha
     assumption
-

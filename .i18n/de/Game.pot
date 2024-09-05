@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Sep  3 15:32:52 2024\n"
+"POT-Creation-Date: Thu Sep  5 10:36:56 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -5017,31 +5017,6 @@ msgid "**Robo**: Siehst du die Annahme `«{hs}» : f ∘ g = succ ∘ f`?\n"
 "`f₁ = f₂` in `∀ x, f₁ x = f₂ x` um."
 msgstr ""
 
-#: Game.Levels.FunctionSurj.L13_SurjectiveRange
-msgid "Range of Surjection"
-msgstr ""
-
-#: Game.Levels.FunctionSurj.L13_SurjectiveRange
-msgid "The range of a function is the set of all outputs.\n"
-"\n"
-"In this level you show that a function is surjective if and only if the range of\n"
-"the function is equal to the universal subset of the codomain. For `f : A → B`,\n"
-"the range of `f` is defined as\n"
-"\n"
-"```\n"
-"range f : Set B := {b | ∃ a, f a = b}\n"
-"```"
-msgstr ""
-
-#: Game.Levels.FunctionSurj.L13_SurjectiveRange
-msgid "**Du**: Wie zeigt man denn schon wieder Gleichheit von Mengen?"
-msgstr ""
-
-#: Game.Levels.FunctionSurj.L13_SurjectiveRange
-msgid "**Robo**: Ich habe ein relevantes Resultat gefunden: `mem_range`.\n"
-"Such das mal in denem Inventar!"
-msgstr ""
-
 #: Game.Levels.FunctionSurj.L14_choose
 msgid "Every function with nonempty fibres has a right inverse."
 msgstr ""
@@ -5176,15 +5151,6 @@ msgid "Als ihr das Problem gelöst habt, erschleicht euch ein starkes\n"
 "Also geht ihr zurück und nehmt die rechte Gabelung."
 msgstr ""
 
-#: Game.Levels.FunctionInj.L03_InjectiveRange
-msgid "Range of Injective"
-msgstr ""
-
-#: Game.Levels.FunctionInj.L03_InjectiveRange
-msgid "For an injective function `f : A → B` the fibres of the elements in the range\n"
-"are singletons."
-msgstr ""
-
 #: Game.Levels.FunctionInj.L04_Injective
 msgid "Monotone Funktionen"
 msgstr ""
@@ -5286,26 +5252,6 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.FunctionInj.L08_LeftInvPreimage
-msgid "Preimage of the inverse"
-msgstr ""
-
-#: Game.Levels.FunctionInj.L08_LeftInvPreimage
-msgid "The image of a set `S : Set A` along a  function `f : A → B` is the set of all elements\n"
-"`b : B` that are the image of some element `a : A` in `S`. We denote it by `f '' S` and\n"
-"define it as below.\n"
-"```\n"
-"f '' S = {b : B | ∃ a : A, a ∈ S ∧ f a = b}\n"
-"```\n"
-"\n"
-"Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`\n"
-"is the proof that `a` is in `S` and `f a = b`.\n"
-"\n"
-"The image of function with a left in\n"
-"verse is a subset of the preimage of the inverse of\n"
-"the same subset."
-msgstr ""
-
 #: Game.Levels.FunctionInj.L09_InjOfHasLeftInv
 msgid "Functions with left inverses are injective."
 msgstr ""
@@ -5323,11 +5269,11 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.FunctionInj.L11_InjHasLeftInv
-msgid "Injections with nonempty domain have retract."
+msgid "Injections have a left inverse, and vice versa"
 msgstr ""
 
 #: Game.Levels.FunctionInj.L11_InjHasLeftInv
-msgid "In this level you show that an injective function with a nonempty domain has a left inverse."
+msgid ""
 msgstr ""
 
 #: Game.Levels.FunctionInj
@@ -5496,24 +5442,6 @@ msgstr ""
 msgid "In this level, you will prove that the the diagonal function is injective."
 msgstr ""
 
-#: Game.Levels.FunctionBij.L09_Preimage_Injective
-msgid "Preimage of surjective is injective"
-msgstr ""
-
-#: Game.Levels.FunctionBij.L09_Preimage_Injective
-msgid "Given a function `f : A → B` we obtain a function `preimage f : Set B → Set A`\n"
-"by taking the preimage of sets of `B`. Recall that\n"
-"```\n"
-"preimage f S = f ⁻¹' S = {a | f a ∈ S}\n"
-"```\n"
-"\n"
-"Show that `preimage f` is injective iff f is surjective."
-msgstr ""
-
-#: Game.Levels.FunctionBij.L09_Preimage_Injective
-msgid "Now `change (f ⁻¹' {«{y}»}).Nonempty`"
-msgstr ""
-
 #: Game.Levels.FunctionBij
 msgid "Bijektivität"
 msgstr ""
@@ -5526,6 +5454,102 @@ msgid "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mon
 "vereinzelte aus Lehm.\n"
 "\n"
 "Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."
+msgstr ""
+
+#: Game.Levels.FunctionImage.L01_ImagePreimage
+msgid "Bild/Urbild"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L01_ImagePreimage
+msgid "`f '' S` ist das Bild,\n"
+"`f ⁻¹' V` das Urbild,\n"
+"\n"
+"`f '' S := {f a | a ∈ S}`\n"
+"`f ⁻¹' V := {a | f a ∈ V}`"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L01_ImagePreimage
+msgid ""
+msgstr ""
+
+#: Game.Levels.FunctionImage.L02_ImagePreimage
+msgid ""
+msgstr ""
+
+#: Game.Levels.FunctionImage.L03_InjectiveRange
+msgid "Range of Injective"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L03_InjectiveRange
+msgid "For an injective function `f : A → B` the fibres of the elements in the range\n"
+"are singletons."
+msgstr ""
+
+#: Game.Levels.FunctionImage.L04_LeftInvPreimage
+msgid "Preimage of the inverse"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L04_LeftInvPreimage
+msgid "The image of a set `S : Set A` along a  function `f : A → B` is the set of all elements\n"
+"`b : B` that are the image of some element `a : A` in `S`. We denote it by `f '' S` and\n"
+"define it as below.\n"
+"```\n"
+"f '' S = {b : B | ∃ a : A, a ∈ S ∧ f a = b}\n"
+"```\n"
+"\n"
+"Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`\n"
+"is the proof that `a` is in `S` and `f a = b`.\n"
+"\n"
+"The image of function with a left in\n"
+"verse is a subset of the preimage of the inverse of\n"
+"the same subset."
+msgstr ""
+
+#: Game.Levels.FunctionImage.L05_Preimage_Injective
+msgid "Preimage of surjective is injective"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L05_Preimage_Injective
+msgid "Given a function `f : A → B` we obtain a function `preimage f : Set B → Set A`\n"
+"by taking the preimage of sets of `B`. Recall that\n"
+"```\n"
+"preimage f S = f ⁻¹' S = {a | f a ∈ S}\n"
+"```\n"
+"\n"
+"Show that `preimage f` is injective iff f is surjective."
+msgstr ""
+
+#: Game.Levels.FunctionImage.L05_Preimage_Injective
+msgid "Now `change (f ⁻¹' {«{y}»}).Nonempty`"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L06_SurjectiveRange
+msgid "Range of Surjection"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L06_SurjectiveRange
+msgid "The range of a function is the set of all outputs.\n"
+"\n"
+"In this level you show that a function is surjective if and only if the range of\n"
+"the function is equal to the universal subset of the codomain. For `f : A → B`,\n"
+"the range of `f` is defined as\n"
+"\n"
+"```\n"
+"range f : Set B := {b | ∃ a, f a = b}\n"
+"```"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L06_SurjectiveRange
+msgid "**Du**: Wie zeigt man denn schon wieder Gleichheit von Mengen?"
+msgstr ""
+
+#: Game.Levels.FunctionImage.L06_SurjectiveRange
+msgid "**Robo**: Ich habe ein relevantes Resultat gefunden: `mem_range`.\n"
+"Such das mal in denem Inventar!"
+msgstr ""
+
+#: Game.Levels.FunctionImage
+msgid "Injektivität"
 msgstr ""
 
 #: Game

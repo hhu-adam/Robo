@@ -1,11 +1,9 @@
 import Game.Levels.FunctionInj.L01_Injective
 import Game.Levels.FunctionInj.L02_Injective
-import Game.Levels.FunctionInj.L03_InjectiveRange
 import Game.Levels.FunctionInj.L04_Injective
 import Game.Levels.FunctionInj.L05_Injective
 import Game.Levels.FunctionInj.L06_SuccHasLeftInv
 import Game.Levels.FunctionInj.L07_Extend
-import Game.Levels.FunctionInj.L08_LeftInvPreimage
 import Game.Levels.FunctionInj.L09_InjOfHasLeftInv
 import Game.Levels.FunctionInj.L10_RightInvOfLeftInv
 import Game.Levels.FunctionInj.L11_InjHasLeftInv
