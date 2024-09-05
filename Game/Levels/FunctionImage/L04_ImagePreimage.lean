@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionImage"
-Level 2
+Level 4
 Title ""
 
 open Function Set

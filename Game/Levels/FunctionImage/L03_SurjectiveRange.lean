@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionImage"
-Level 6
+Level 3
 
 Title "Range of Surjection"
 

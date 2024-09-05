@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "FunctionImage"
-Level 4
+Level 7
 
 Title "Preimage of the inverse"
 
@@ -26,8 +26,8 @@ the same subset.
 
 open Function Set
 
-Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B → A} (hL : LeftInverse g f)
-    (S : Set A) :
+Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B → A}
+    (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
   intro b hb
   obtain ⟨x, hx, e⟩ := hb

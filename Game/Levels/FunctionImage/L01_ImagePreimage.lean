@@ -17,13 +17,8 @@ Introduction "
 /--  -/
 TheoremDoc Set.image_preimage_subset as "image_preimage_subset" in "Set"
 
--- Set theory
-example {x : Nat} (h : x ∈ {a : ℕ | Even a}) : False := by
-  obtain ⟨⟩ := h
-  sorry
-
 Statement Set.image_preimage_subset {A B : Type} (f : A → B) (S : Set B) :
-f '' (f ⁻¹' S) ⊆ S := by
+    f '' (f ⁻¹' S) ⊆ S := by
   intro b
   intro hb
   simp at hb
