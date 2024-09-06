@@ -17,8 +17,7 @@ A function `g : B → A` is a left inverse of a function `f : A → B` if for al
 open Function
 
 Statement {A B : Type} {f : A -> B} {g : B -> A} :
-    RightInverse g f ↔ LeftInverse f g :=
-  by
+    RightInverse g f ↔ LeftInverse f g := by
   Hint (hidden := true) "
     Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition.
   "

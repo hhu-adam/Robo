@@ -34,7 +34,6 @@
 
 - recursive `constructor` -- some version of `refine`??
 - we've thrown out `injection` tactic
-- will redefine `constructor` as  `fconstructor` 
 - use `choose` instead of `obtain` for existential hypotheses
 
 ## FunctionBasics
@@ -135,13 +134,13 @@ My solution:
 ````
 rw [bijective_iff_has_inverse] at h
   choose g hL hR using h
-  fconstructor
-  · use f 
+  constructor
+  · use f
   · use g
   · use hL
-  · use hR 
-````  
-  
+  · use hR
+````
+
 Note that we cannot start with:
 ````
 rw [bijective_iff_has_inverse] at h

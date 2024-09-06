@@ -33,10 +33,10 @@ attribute [local instance] Sym2.Rel.setoid
 Statement Sym2.liftEquiv {A B : Type*} :
     (Sym2 A → B) ≃ { f : A → A → B | ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } := by
   --refine' { .. }
-  fconstructor
+  constructor
   · intro f
     --refine' { .. }
-    fconstructor
+    constructor
     · exact fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
     · intro a₁ a₂
       Branch

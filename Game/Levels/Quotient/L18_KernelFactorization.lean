@@ -25,7 +25,7 @@ Statement (A : Type) (B : Type) (f : A -> B) :
   use (Quotient.lift (rangeFactorization f) respects_ker_rel)
   use Subtype.val
   -- Branch
-  --   fconstructor
+  --   constructor
   --   · rfl
   --   · sorry --exact surjective_quotient_mk_ker f
   --   · sorry -- exact bijective_quotient_lift_range_fac f

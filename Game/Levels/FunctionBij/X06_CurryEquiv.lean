@@ -19,7 +19,7 @@ open Function
 
 Statement curry_equiv {A : Type u₁} {B : Type u₂} {C : Type u₃} :
     (A × B → C) ≃ (A → B → C) := by
-  fconstructor
+  constructor
   · -- Branch
     --  exact curry
     use fun f a b => f (a, b)

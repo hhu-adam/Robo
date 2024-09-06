@@ -11,3 +11,11 @@ import Game.Levels.Function.L10_Surjective
 
 World "Function"
 Title "Funktionen"
+
+Introduction "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf
+eine Insel komplett mit Wasser bedeckt zu sein scheint.
+
+Auf der Insel seht ihr verschiedene große und kleine Behausungen, manche aus Stroh und Holz,
+vereinzelte aus Lehm.
+
+Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."

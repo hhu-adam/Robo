@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "FunctionBij"
+World "FunctionInj"
 Level 4
 
 Title "Diagonal"
