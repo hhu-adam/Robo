@@ -12,7 +12,7 @@ Introduction
 "
 Eine andere wichtige Menge ist die Potenzmenge einer Menge, welche als
 `𝒫 A` geschrieben wird (`\\powerset`). Diese ist als `{S | S ⊆ A}` definiert, also
-alle Mengen, die in $A$ enthalten sind.
+alle Mengen, die Teilmengen von $A$ sind.
 
 Eines der wichtigsten Lemmas ist `mem_powerset_iff: x ∈ 𝒫 s ↔ x ⊆ s` welches
 im Grunde die Definition einsetzt.
