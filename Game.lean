@@ -99,6 +99,8 @@ CoverImage "images/Cover.png"
 
 Dependency Robotswana → End
 Dependency Cantor → End
+Dependency FunctionImage → End
+Dependency FunctionBij → End
 
 -- Dependency Babylon → FunctionSurj
 
