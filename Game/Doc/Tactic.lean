@@ -476,17 +476,6 @@ Goal:
 -/
 TacticDoc obtain
 
-
-/--
-`refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne
-Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.
-
-(*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,
-z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spieles bleiben wir
-bei diesem Syntax.)
--/
-TacticDoc refine
-
 /--
 `refine' { .. }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne
 Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.

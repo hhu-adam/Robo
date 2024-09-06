@@ -58,7 +58,7 @@ Statement : Module ℚ ℝ := by
   Der Syntax dafür ist:
 
   ```
-  refine \{ ?..! }
+  refine' \{ .. }
   ```
   "
   refine' { .. }
@@ -97,4 +97,4 @@ Statement : Module ℚ ℝ := by
     change (0 : ℚ) * a = 0
     simp
 
-NewTactic refine exact change
+NewTactic refine' exact change

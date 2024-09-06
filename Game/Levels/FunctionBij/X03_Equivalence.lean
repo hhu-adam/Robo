@@ -21,7 +21,6 @@ In this level you construct an equivalence between functions from `Fin 3` to `A`
 open Function
 
 Statement finThreeArrowEquiv {A : Type} : (Fin 3 → A) ≃ A × A × A := by
-  refine' { .. }
   constructor
   · exact fun f => (f 0, f 1, f 2)
   · exact fun t => fun | 0 => t.1 | 1 => t.2.1 | 2 => t.2.2

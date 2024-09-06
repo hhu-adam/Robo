@@ -43,7 +43,7 @@ open Nat Matrix BigOperators StdBasisMatrix Finset Set
 set_option linter.unusedVariables false in
 
 Statement FirstColumnSumZero
-    (preamble := refine' { carrier := M, ..} <;> dsimp only)
+    (preamble := refine' {carrier := M, ..} <;> dsimp only)
     {n : ℕ} [NeZero n] :
     let M := {A : Mat[n,n][ℝ] | ∑ i, A i 0 = 0}
     Submodule ℝ Mat[n,n][ℝ] := by
