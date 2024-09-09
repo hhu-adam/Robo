@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Sep  6 13:29:20 2024\n"
+"POT-Creation-Date: Fri Sep  6 15:53:30 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -546,15 +546,6 @@ msgid "`obtain ⟨⟩ := h` teilt eine Annahme `h` in ihre Einzelteile auf.\n"
 "\n"
 "* Für `n : ℕ` hat `obtain ⟨⟩ := n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,\n"
 "  dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht."
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "`refine { ?..! }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne\n"
-"Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.\n"
-"\n"
-"(*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,\n"
-"z.B. \\\"Term Modus\\\" oder \\\"anonyme Konstruktoren\\\", aber für den Zweck des Spieles bleiben wir\n"
-"bei diesem Syntax.)"
 msgstr ""
 
 #: Game.Doc.Tactic

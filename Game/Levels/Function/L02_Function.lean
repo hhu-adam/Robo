@@ -22,7 +22,6 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
     simp
   simp
 
-NewDefinition Symbol.function
 TheoremTab "Function"
 
 Conclusion

@@ -45,10 +45,14 @@ package Game where
     "-Dtactic.hygienic=false",
     "-Dlinter.unusedVariables.funArgs=false",
     "-DautoImplicit=false",
+    "-Dpp.unicode.fun=true",
+    "-Dpp.funBinderTypes=true",
     "-Dtrace.debug=false"]
   moreServerOptions := #[
     ⟨`tactic.hygienic, false⟩,
     ⟨`linter.unusedVariables.funArgs, true⟩,
+    ⟨`pp.unicode.fun, true⟩,
+    ⟨`pp.funBinderTypes, true⟩,
     ⟨`autoImplicit, false⟩,
     ⟨`trace.debug, true⟩]
   weakLeanArgs := #[]

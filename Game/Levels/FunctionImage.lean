@@ -9,3 +9,5 @@ import Game.Levels.FunctionImage.L08_Preimage_Injective
 
 World "FunctionImage"
 Title "Image/Preimage"
+
+Image "images/Librarian.png"

@@ -11,7 +11,6 @@ Title "Bijektivität"
 
 Image "images/Librarian.png"
 
-
 Introduction "
 Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf
 eine Insel komplett mit Wasser bedeckt zu sein scheint.

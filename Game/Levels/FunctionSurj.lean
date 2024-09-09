@@ -11,6 +11,5 @@ Title "Surjektivität"
 
 Image "images/Librarian.png"
 
-
 Introduction "
 "
