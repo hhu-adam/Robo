@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function"
-Level 7
+Level 6
 
 Title ""
 

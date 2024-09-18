@@ -1,5 +1,5 @@
 import Game.Levels.Function.L01_Function
-import Game.Levels.Function.L02_Function
+import Game.Levels.Function.L02_Let
 import Game.Levels.Function.L03_Let
 import Game.Levels.Function.L04_Piecewise
 import Game.Levels.Function.L05_Extend

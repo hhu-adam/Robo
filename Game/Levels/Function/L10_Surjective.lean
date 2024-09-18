@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function"
-Level 10
+Level 9
 
 Title "A function which semiconjugates an endofunction to the
 successor function is surjective."
