@@ -22,9 +22,18 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
     Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition.
   "
   Branch
-    simp [Function.RightInverse, LeftInverse]
+    unfold Function.RightInverse
+    rfl
   tauto
 
+/-- `Function.RightInverse f g` is als `LeftInverse g f` definiert.
+
+Man muss `Function.` anfügen, da Mathlib noch eine andere Definition `RightInverse`
+besitzt, weshalb ein simples `RightInverse` nicht eindeutig wäre. -/
+DefinitionDoc Function.RightInverse as "RightInverse"
+
+/---/
+DefinitionDoc Function.LeftInverse as "LeftInverse"
 
 TheoremTab "Function"
-NewDefinition Function.LeftInverse
+NewDefinition Function.RightInverse Function.LeftInverse

@@ -37,6 +37,11 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
     $$
 
     **Robo**: PS, `↦` ist `\\mapsto`. Aber man kann auch stattdessen `=>` benutzen."
+  Hint "Lean kann meistens durch Funktionsdefinitionen hindurchsehen, also `rfl`
+  ist schon alles hier. Alternativ kann
+  man mit `simp [{f}]` explizit die Definition einsetzen."
+  Branch
+    simp [f]
   rfl
 
 

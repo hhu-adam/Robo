@@ -40,8 +40,4 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
     apply congr_fun at h
     apply h
 
-/---/
-DefinitionDoc Function.RightInverse as "RightInverse"
-
-NewDefinition Function.RightInverse
 TheoremTab "Function"

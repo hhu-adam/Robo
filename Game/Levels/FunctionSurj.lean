@@ -12,4 +12,7 @@ Title "Surjektivität"
 Image "images/Librarian.png"
 
 Introduction "
+Für jede beweisbare Aussage gibt es eine Taktik-Sequenz, die die Aufgabe löst.
+
+Die Auswertungsfunktion von gültigen Taktiksequenzen ist also surjektiv.
 "

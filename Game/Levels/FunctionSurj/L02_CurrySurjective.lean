@@ -8,7 +8,10 @@ Title "Not exhausted by naturals."
 
 Introduction
 "
+**Robo**: Du hast zwei Möglichkeiten, entweder du kannst mit `constructor` anfangen,
+oder du machst mal `unfold Surjective` und schaust dann, ob `push_neg` was kann.
 
+**Robo**: Btw, Ich glaube `ne_comm`, welches `a ≠ b ↔ b ≠ a` sagt, könnte hier nützlich sein.
 "
 
 open Function Nat

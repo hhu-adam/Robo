@@ -27,12 +27,9 @@ Statement :
   **Robo**: Schieß drauf los!"
   intro y
   use y-1
-  Hint (hidden := true) "
-    **Du**: das is doch eigentlich ganz einfach… Kann man das denn
-    noch weiter vereinfachen?
-
-    **Robo**: Wenn du `{f}` auch einsetzt vermutlich schon."
-  simp [f]
+  Branch
+    simp [f]
+  ring
 
 NewDefinition Function.Surjective
 TheoremTab "Function"

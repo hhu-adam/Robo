@@ -8,8 +8,10 @@ Title "Does it have a right inverse?"
 
 Introduction
 "
+Während `Function.RightInverse f g` die konkrete Inverse `g` angibt, ist `HasRightInverse f`
+lediglich die Aussage, dass ein Inverses existiert.
 
-We say `f : A → B` has a right inverse if there exists a function `g : B → A` such that `f ∘ g = id`.
+Dieses kann natürlich trotzdem mit `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …` definiert werden.
 "
 
 open Function

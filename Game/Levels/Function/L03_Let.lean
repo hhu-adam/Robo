@@ -31,16 +31,16 @@ Statement (x : ℤ) :
     Hint "**Robo**: Jetzt kannst du diese mit `use {g}` benutzen."
     use g
     Hint "
-    **Robo**: `({g} ∘ {f}) x` ist per Definition `{g} ({f} x)`. `simp` kennt dieses
-    Lemma, aber du kannst es auch mit `rw [comp_apply]` direkt verwenden."
+    **Robo**: `({g} ∘ {f}) x` ist per Definition `{g} ({f} x)`. `simp` würde dieses
+    Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
     Hint "
     **Robo**: `ring` sieht durch lokale Definitionen wie
     `{f}` und `{g}` hindurch,
     du kannst es also direkt benutzen."
   use fun (x : ℤ) ↦ x - 3
   Hint "
-  **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` kennt dieses
-  Lemma, aber du kannst es auch mit `rw [comp_apply]` direkt verwenden."
+  **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` würde dieses
+  Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
   rw [comp_apply]
   Hint "
   **Robo**: `ring` sieht durch lokale Definitionen wie

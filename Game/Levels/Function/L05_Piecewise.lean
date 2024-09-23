@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Function"
-Level 4
+Level 5
 
 Title "Stückweise Definition"
 
@@ -62,8 +62,6 @@ Conclusion
 Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den
 Durchgang frei.
 "
-
-NewTactic funext
 
 /--
 Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert

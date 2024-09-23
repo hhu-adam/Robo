@@ -4,11 +4,13 @@ import Game.Metadata
 World "Function"
 Level 7
 
-Title ""
+Title "congr_arg"
 
 
 Introduction
 "
+**Robo**: Manchmal will man ein Goal der Form `f x = f y` lösen, indem man zeigt, dass
+`x = y` ist. In dem Fall kann man `apply congr_arg` brauchen.
 "
 
 open Function
