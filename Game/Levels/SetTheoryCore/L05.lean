@@ -17,12 +17,6 @@ Introduction
 open Set
 
 
--- example (h : (univ : Set X) ⊆ ∅) : ¬ ∃ x : X, True := by
---   push_neg
---   intro x
---   apply h
---   exact x
-
 example (h : (univ : Set ℕ) ⊆ ∅) : (univ : Set ℕ) = ∅ := by
   Branch
     rw [←subset_empty_iff]
