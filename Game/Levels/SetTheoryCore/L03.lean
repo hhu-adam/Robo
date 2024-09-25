@@ -23,7 +23,7 @@ open Set
 --#check Set.subset_def
 --#check Subset.trans
 
-Statement {A B C : Set X} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   Branch
     intro x hx
     apply h₂

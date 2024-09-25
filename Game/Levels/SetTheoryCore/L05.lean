@@ -1,7 +1,7 @@
 import Game.MetaData
 
 World "SetTheoryCore"
-Level 4
+Level 5
 
 Title "Teilmengen"
 
@@ -16,8 +16,18 @@ Introduction
 
 open Set
 
---#check Set.subset_def
---#check Subset.trans
 
-Statement : (∅ : Set ℕ) ⊆ univ := by
+-- example (h : (univ : Set X) ⊆ ∅) : ¬ ∃ x : X, True := by
+--   push_neg
+--   intro x
+--   apply h
+--   exact x
+
+example (h : (univ : Set ℕ) ⊆ ∅) : (univ : Set ℕ) = ∅ := by
+  Branch
+    rw [←subset_empty_iff]
+    assumption
+  simp at h
+  Branch
+    rw [h]
   tauto

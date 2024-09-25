@@ -21,6 +21,9 @@ open Set
 Statement : 1 ∈ ({1,4,6} : Set ℕ) := by
   tauto
 
+-- example : 1 ∈ ({1,4,6} : Set ℕ) := by
+--   simp only [mem_insert_iff, OfNat.one_ne_ofNat, mem_singleton_iff, or_self, or_false]
+
 
 DefinitionDoc Set.mem as "∈"
 

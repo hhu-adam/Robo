@@ -23,10 +23,16 @@ open Set
 --#check Set.subset_def
 --#check Subset.trans
 
-Statement {A B C : Set X} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+-- discuss this on zulip whether we want `tauto` or
+-- do we want to explain the concept of subset relation?
+Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   Branch
     intro x hx
     apply h₂
     apply h₁
     assumption
+  tauto
+
+
+example {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   tauto
