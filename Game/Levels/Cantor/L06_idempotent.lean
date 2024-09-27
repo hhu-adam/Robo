@@ -26,8 +26,7 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
   apply congr_fun at h
   Branch
     ext i
-    rw [mem_range]
-    rw [mem_fixedPoints]
+    simp
     unfold IsFixedPt
     constructor
     · intro hx

@@ -21,7 +21,7 @@ import Game.Levels.FunctionInj
 import Game.Levels.FunctionImage
 import Game.Levels.FunctionBij
 
--- import Game.Levels.SetTheory
+import Game.Levels.SetTheory
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
