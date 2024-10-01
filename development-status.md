@@ -8,6 +8,7 @@
 | Spinoza                       | ==       | ++             | ++     | ++           | ++     |         | +++     |                                                                                                  |
 | Luna                          | ==       | +              | +++    | +++          | update |         | +++     |                                                                                                  |
 | Babylon                       | ==       | +              | +++    | +++          | +++    |         | +++     | TODO: introduce (Finset.)sum_subset  (for Robotswana L05)                                        |
+| FunctionImage                 | TODO     | +              |        |              |        |         | TODO    |                                                                                                  |
 | FunctionBij                   | Isos?    | +              | TODO   |              | TODO   |         | TODO    |                                                                                                  |
 | FunctionInj                   | Monos?   | +              | TODO   |              | TODO   |         | TODO    |                                                                                                  |
 | FunctionSurj                  | Epos?    | +              | +      |              | TODO   |         | TODO    |                                                                                                  |
@@ -24,7 +25,12 @@
 | RealUncountable               | TODO     | TODO .         | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
 | **Possible future versions:** |          |                |        |              |        |         |         |                                                                                                  |
-| Intervals; continuity         |          |                |        |              |        |         |         |                                                                                                  |
+|  ???                          |          |                |        |              |        |         | +++ (librarian)        |                                                                                                  |                                
+| Lineare Independence          |          |                |        |              |        |         | +++ (mushrooms with flags)  |                                                                                                  |  
+| Intervals          |          |                |        |              |        |         |     |                                                                                                  |  
+| Continuity          |          |                |        |              |        |         |     |                                                                                                  |  
+| Epsilon-Delta-Differentiability |          |                |        |              |        |         | +++ (ants) |                                                                                                  |
+| Differentiability             |          |                |        |              |        |         | +++ (snail) |                                                                                                  |
 | ContinuousFunction            |          | TODO ..        |        |              |        |         |         |                                                                                                  |
 | CosExtInequality              |          | TODO ...       |        |              |        |         |         |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
