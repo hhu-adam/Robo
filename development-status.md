@@ -1,34 +1,39 @@
 
-| Planet                 | new name | levels         | tried? | hints  | story  | summary | picture | desirable changes                                                                                     |
-|:-----------------------|:---------|:---------------|:-------|:-------|:-------|:--------|:--------|:------------------------------------------------------------------------------------------------------|
-| Logos                  | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
-| Implis                 | ==       | +++            | +++    | +++    | ++     | +       | +++     | JE: DONE                                                                                              |
-| Quantus                | ==       | +++            | +++    | +++    | +++    | +       | +++     | JE: DONE                                                                                              |
-| Spinoza                | ==       | ++             | ++     | ++     | ++     |         | +++     | TODO: add TFAE tactics (used in boss of FunctionSurj)                                                 |
-| Luna                   | ==       | +              | +++    | +++    | update |         | +++     |                                                                                                       |
-| Babylon                | ==       | +              | +++    | +++    | +++    |         | +++     | TODO: add sum over zeroes, adding over singleton                                                      |
-| FunctionBij            | Isos?    | +              | TODO   |        | TODO   |         | TODO    | remove linear_combination                                                                             |
-| FunctionInj            | Monos?   | +              | TODO   |        | TODO   |         | TODO    |                                                                                                       |
-| FunctionSurj           | Epos?    | +              | +      |        | TODO   |         | TODO    |                                                                                                       |
-| Cantor                 | ==       | ++             | +      | +      | +      |         | +++     | move first problem somewhere else                                                                     |
-| MatrixSpan             | TODO     | o TODO: sorrys | TODO   | TODO   | TODO   |         | TODO    |                                                                                                       |
-| Robotswana             | ==       | ++             | +      | update | update |         | +++     |                                                                                                       |
-| SetTheory              | Synolos  | TODO           |        |        |        |         | ??      | (add intervals?? -- only necessary for analysis)                                                      |
-| ~FiniteSetTheory       | TODO     | TODO           |        |        |        |         | TODO    |                                                                                                       |
-| SymmSquare             | TODO     | o TODO: L08    | TODO   | TODO   | TODO   |         | TODO    |                                                                                                       |
-| Quotient               | TODO     | 7-?            | TODO   |        | TODO   |         | TODO    |                                                                                                       |
-| Prime                  | TODO     | +              | TODO   | TODO   | TODO   |         | TODO    | TODO: introduce ∃!                                                                                    |
-| ? RealUncountable      | TODO     | TODO .         |        |        |        |         |         |                                                                                                       |
-| GoodByePlanet          |          | TODO (.)       |        |        |        |         | +++     | JE: added empty `End` planet                                                                          |
-|                        |          |                |        |        |        |         |         |                                                                                                       |
-| [[[Continuity]]]       |          |                |        |        |        |         |         |                                                                                                       |
-| [[ContinuousFunction]] |          | TODO ..        |        |        |        |         |         |                                                                                                       |
-| [[CosExtInequality]]   |          | TODO ...       |        |        |        |         |         |                                                                                                       |
-|                        |          |                |        |        |        |         |         |                                                                                                       |
-| [[Tmp]]                |          |                |        |        |        |         |         |                                                                                                       |
-| [[VectorSpan]]         |          |                |        |        |        |         |         |                                                                                                       |
-| [[NewStuff]]           |          |                |        |        |        |         |         |                                                                                                       |
-| [[Quantum]]            |          |                |        |        |        |         |         |                                                                                                       |
+| Planet                        | new name | levels         | tried? | hints        | story  | summary | picture | desirable changes                                                                                |
+|:------------------------------|:---------|:---------------|:-------|:-------------|:-------|:--------|:--------|:-------------------------------------------------------------------------------------------------|
+| **Version 1.0:**              |          |                |        |              |        |         |         |                                                                                                  |
+| Logos                         | ==       | +++            | +++    | +++          | +++    | +       | +++     | JE: DONE                                                                                         |
+| Implis                        | ==       | +++            | +++    | +++          | ++     | +       | +++     | JE: DONE                                                                                         |
+| Quantus                       | ==       | +++            | +++    | +++          | +++    | +       | +++     | JE: DONE                                                                                         |
+| Spinoza                       | ==       | ++             | ++     | ++           | ++     |         | +++     |                                                                                                  |
+| Luna                          | ==       | +              | +++    | +++          | update |         | +++     |                                                                                                  |
+| Babylon                       | ==       | +              | +++    | +++          | +++    |         | +++     | TODO: introduce (Finset.)sum_subset  (for Robostwane L05)                                        |
+| FunctionBij                   | Isos?    | +              | TODO   |              | TODO   |         | TODO    |                                                                                                  |
+| FunctionInj                   | Monos?   | +              | TODO   |              | TODO   |         | TODO    |                                                                                                  |
+| FunctionSurj                  | Epos?    | +              | +      |              | TODO   |         | TODO    |                                                                                                  |
+| Cantor                        | ==       | ++             | +      | +            | +      |         | +++     |                                                                                                  |
+| Robotswana                    | ==       | ++             | +      | update (L05) | update |         | +++     |                                                                                                  |
+| SetTheory                     | Synolos  | TODO           |        |              |        |         |         | TODO: new Boss: set of primes is infinite                                                        |
+| Prime                         | TODO     | +              | TODO   | TODO         | TODO   |         | TODO    | (introduce ∃!) TODO: use set of primes in examples; introduce Finite; Boss: only even prime is 2 |
+| GoodByePlanet                 | Ciao     | (done)         | (done) | (done)       | TODO   |         | +++     |                                                                                                  |
+|                               |          |                |        |              |        |         |         |                                                                                                  |
+| **Version 2.0:**              |          |                |        |              |        |         |         |                                                                                                  |
+| SymmSquare                    | TODO     | o TODO: L08    | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
+| Quotient                      | TODO     | 7-?            | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
+| MatrixSpan                    | TODO     | o TODO: sorrys | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
+| RealUncountable               | TODO     | TODO .         | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
+|                               |          |                |        |              |        |         |         |                                                                                                  |
+| **Possible future versions:** |          |                |        |              |        |         |         |                                                                                                  |
+| Intervals; continuity         |          |                |        |              |        |         |         |                                                                                                  |
+| ContinuousFunction            |          | TODO ..        |        |              |        |         |         |                                                                                                  |
+| CosExtInequality              |          | TODO ...       |        |              |        |         |         |                                                                                                  |
+|                               |          |                |        |              |        |         |         |                                                                                                  |
+| **Trash:**                    |          |                |        |              |        |         |         |                                                                                                  |
+| [[Tmp]]                       |          |                |        |              |        |         |         |                                                                                                  |
+| [[VectorSpan]]                |          |                |        |              |        |         |         |                                                                                                  |
+| [[NewStuff]]                  |          |                |        |              |        |         |         |                                                                                                  |
+| [[Quantum]]                   |          |                |        |              |        |         |         |                                                                                                  |
+                                                                   |
 
 ### Tactics
 
