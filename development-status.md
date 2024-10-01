@@ -14,7 +14,7 @@
 | Cantor                        | ==       | ++             | +      | +            | +      |         | +++     |                                                                                                  |
 | Robotswana                    | ==       | ++             | +      | update (L05) | update |         | +++     |                                                                                                  |
 | SetTheory                     | Synolos  | TODO           |        |              |        |         |         | TODO: use set of primes in examples; introduce Finite; new Boss: set of primes is infinite                                                        |
-| Prime                         | TODO     | +              | TODO   | TODO         | TODO   |         | TODO    | (introduce ∃!) TODO: Boss: only even prime is 2 |
+| Prime                         | Atomos   | +              | TODO   | TODO         | TODO   |         | TODO    | (introduce ∃!) TODO: Boss: only even prime is 2 |
 | GoodByePlanet                 | Ciao     | (done)         | (done) | (done)       | TODO   |         | +++     |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
 | **Version 2.0:**              |          |                |        |              |        |         |         |                                                                                                  |
