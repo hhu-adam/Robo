@@ -18,7 +18,7 @@ in the [lean4game repo](https://github.com/leanprover-community/lean4game).
 
 Translations of the content from German into other languages are very welcome, but please not that a large part of the game isn't finalised yet.
 
-Please preoritiise translation of the following planets, as they are
+Please prioritise translation of the following planets, as they are
 essentially finalised:
 
 * Logos
@@ -35,7 +35,7 @@ in a standard Mathematics undergrad (bachelor) curriculum at university.
 Please follow our [Contribution Guide](./docs/NewPlanet.md) which helps you creating
 new content step-by-step.
 
-# Techincal
+# Technical
 
 ## Building
 
