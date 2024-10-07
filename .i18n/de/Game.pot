@@ -66,7 +66,7 @@ msgid "* Für `A B : Prop` ist `A → B` eine Implikation \"`A` impliziert `B`\"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`"
+msgid "Nützliche Taktiken für Gleichheit sind: `rfl`, `rw`, `trans`"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -101,7 +101,7 @@ msgstr ""
 #: Game.Doc.Definition
 msgid "`¬ A` ist intern als `A → False` implementiert.\n"
 "\n"
-"Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`."
+"Nützliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -1947,7 +1947,7 @@ msgid "**Robo**: Na Implikationen gehst du immer mit `intro` an."
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
-msgid "**Robo**: Ich würde mal die Annahme `h` mit `obtian` aufteilen."
+msgid "**Robo**: Ich würde mal die Annahme `h` mit `obtain` aufteilen."
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
