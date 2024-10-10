@@ -5413,8 +5413,8 @@ msgid "The image of a set `S : Set A` along a  function `f : A → B` is the set
 "Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`\n"
 "is the proof that `a` is in `S` and `f a = b`.\n"
 "\n"
-"The image of function with a left in\n"
-"verse is a subset of the preimage of the inverse of\n"
+"The image of function with a left\n"
+"inverse is a subset of the preimage of the inverse of\n"
 "the same subset."
 msgstr ""
 
