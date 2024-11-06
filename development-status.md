@@ -8,6 +8,8 @@
 | Spinoza                       | ==       | ++             | ++     | ++           | ++     |         | +++     |                                                                                                  |
 | Luna                          | ==       | +              | +++    | +++          | update |         | +++     |                                                                                                  |
 | Babylon                       | ==       | +              | +++    | +++          | +++    |         | +++     | TODO: introduce (Finset.)sum_subset  (for Robotswana L05)                                        |
+| Prime                         | Prado    | +              | TODO   | TODO         | TODO   |         | TODO    | (introduce ∃!) TODO: Boss: only even prime is 2                                                  |
+| SetTheory                     | Piazza   | TODO           |        |              |        |         |         | TODO: use set of primes in examples; introduce Finite; new Boss: set of primes is infinite       |
 | FunctionBasics                | Vieta    |                |        |              | TODO   |         | TODO    |                                                                                                  |
 | FunctionSurj                  | Epo      | +              | +      |              | TODO   |         | TODO    |                                                                                                  |
 | FunctionInj                   | Mono     | +              | TODO   |              | TODO   |         | TODO    |                                                                                                  |
@@ -15,8 +17,6 @@
 | FunctionImage                 | Samarkand| +              |        |              |        |         | TODO    |                                                                                                  |
 | Cantor                        | ==       | ++             | +      | +            | +      |         | +++     |                                                                                                  |
 | Robotswana                    | ==       | ++             | +      | update (L05) | update |         | +++     |                                                                                                  |
-| Prime                         | Prado    | +              | TODO   | TODO         | TODO   |         | TODO    | (introduce ∃!) TODO: Boss: only even prime is 2                                                  |
-| SetTheory                     | Piazza   | TODO           |        |              |        |         |         | TODO: use set of primes in examples; introduce Finite; new Boss: set of primes is infinite       |
 | GoodByePlanet                 | Ciao     | (done)         | (done) | (done)       | TODO   |         | +++     |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
 | **Version 2.0:**              |          |                |        |              |        |         |         |                                                                                                  |
