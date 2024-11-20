@@ -13,7 +13,7 @@ import Game.Levels.Robotswana
 
 import Game.Levels.End
 
-import Game.Levels.NewStuff.Prime
+import Game.Levels.Prado
 
 import Game.Levels.Function
 import Game.Levels.FunctionSurj
