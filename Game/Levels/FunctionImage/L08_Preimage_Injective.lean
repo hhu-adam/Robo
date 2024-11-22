@@ -34,7 +34,7 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       have h₂ : preimage f {b} = ∅ := by
         rw [eq_empty_iff_forall_not_mem]
         intro a
-        have h'a := h_contra a
+        specialize h_contra a
         assumption
       have : preimage f ∅ = preimage f {b}
       rw [preimage_empty,h₂]

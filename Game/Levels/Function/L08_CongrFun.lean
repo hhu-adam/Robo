@@ -24,7 +24,7 @@ open Function
 Statement (f g : ℤ → ℤ) (h : f = g) (x : ℤ) : f x = g x := by
   apply congr_fun at h
   Branch
-    have hx := h x
+    specialize h x
     assumption
   apply h
 

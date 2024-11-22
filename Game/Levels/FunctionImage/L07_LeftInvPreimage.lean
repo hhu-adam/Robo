@@ -39,6 +39,6 @@ Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B →
     assumption
   unfold LeftInverse at hL
   apply congr_arg g at e
-  have hLx := hL x
-  rw [← hLx, e] at hx
+  specialize hL x
+  rw [← hL, e] at hx
   assumption

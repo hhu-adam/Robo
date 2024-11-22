@@ -22,7 +22,7 @@ die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 
 open Nat Matrix BigOperators StdBasisMatrix
 
-
+open Finset
 
     -- around Matrices/level 2: introduce E_ij-version of Matrix.StdBasisMatrix.mul_of_ne,
     -- prove it in one line via mathlib, and use it in level 7.
@@ -45,20 +45,22 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.
   Denkst du das funktioniert ähnlich wie mit den Funktionen, da bei dieser Bibliothek?
 
-  **Robo**: Die beiden Taktiken `congr` und `ext` könnten dir hier tatsächlich helfen.
-
-  *(von oben)*: Wurde noch nicht erklärt, aber zukünftig werden `ext` und
-  `congr` schon früher eingeführt."
-  congr -- TODO: Modify story
-  ext i r s
+  **Robo**: Erinnerst du dich an `congr_arg`? Das zeigt hier, dass die beiden Summen gleich sind,
+  falls der innere Teil für jeden Index gleich ist."
+  apply congr_arg
+  Hint "**Du**: und jetzt `funext` um Indices anzunehmen?"
+  funext i
+  -- TODO: hint?
+  funext r s
   Hint "**Du**: Oh, jetzt habe ich nicht nur den Summationsindex, sondern auch noch die beiden
   Indices `{r},{s}` der Matrizen eingeführt. Aber das sollte passen. Nur… die verbleibende Summe
   ist ja überall Null außer beim Index `{i}`.
 
-  **Robo**: Ist das so?  Lass mich mal suchen…  Nicht schön, sollte aber funktionieren:  mit `rw [← Finset.sum_subset (Finset.subset_univ \{{i}})]`
-  solltest du die Summe so umschreiben können, dass sie nur über dem Singleton `\{{i}}` läuft."
-  -- have h : {i} ⊆ (Finset.univ : Fin n) := Finset.subset_univ {i}
-  rw [← Finset.sum_subset (Finset.subset_univ {i})] -- TODO: better hint once lemmas are introduced
+  **Robo**: Ist das so? Lass mich mal suchen… Zeig mal zuerst `have h : \{{i}} ⊆ univ`!"
+  have h : {i} ⊆ univ
+  · simp
+  Hint "**Robo**: …jetzt kannst du nämlich `sum_subset` anwenden, welches du schon kennst."
+  rw [← sum_subset h]
   · Hint "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,
     bei diesem ist `1 {i} {i}` wieder Eins, und `1 • _` vereinfacht sich auch!"
     Hint (hidden := true) "**Robo**: `simp` klingt wirklich nach einer guten Idee."
@@ -96,23 +98,6 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     rw [if_neg h₃]
     simp
 
--- TODO: Introduce in other planet
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc Finset.sum_subset as "Finset.sum_subset" in "Finset"
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc Finset.subset_univ as "Finset.subset_univ" in "Finset"
-/-- Zwei Funktionen sind gleich, wenn sie auf allen Elementen gleich sind.
-
-Wenn das Goal `f = g` ist, kann man mit `ext i`, ein Element `i` einführen, und dann zeigen,
-dass `f i = g i` ist.
-
-`ext` versucht, so viele Indices einzufügen wie möglich `funext i` führt nur den spezifizierten ein.
--/
-TacticDoc ext
-/-- `congr` versucht, eine Gleichung `_ = _` auf eine Gleichung von Untertermen zu reduzieren. Zum
-Beispiel ein Goal der Form `f a = f b` wird durch `congr` zu `a = b` reduziert. -/
-TacticDoc congr
-
-NewTheorem Matrix.one_apply Finset.sum_subset Finset.subset_univ
+NewTheorem Matrix.one_apply
 
 TheoremTab "Matrix"

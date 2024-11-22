@@ -36,7 +36,7 @@ Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
     apply congr_fun at hs
     -- Note: Leave this as the main branch, so that the planet is registered
     -- to require `have`!
-    have hs := hs b
+    specialize hs b
     simp at hs
     rw [hs]
     rw [hb]

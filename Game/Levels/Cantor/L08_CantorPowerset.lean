@@ -38,7 +38,7 @@ Statement cantor_power {A : Type} : ∀ (f : A → Set A), ¬ Surjective f := by
 
   **Robo**: Das habe ich als `not_isFixedPt_not` gepspeichert"
   Branch
-    have g1 := h (¬ ·)
+    specialize h (¬ ·)
     have g2 := not_isFixedPt_not
     contradiction
   apply not_isFixedPt_not -- Lvl 4

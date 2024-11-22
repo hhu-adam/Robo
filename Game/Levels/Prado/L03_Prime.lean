@@ -32,6 +32,19 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   Hint "**Robo**: Nah los, schreib mit `prime_def` die Annahme `{hp}` um!"
   rw [prime_def] at hp
   obtain ⟨hp₁, hp⟩ := hp
+  Branch
+    -- Marcus' solution
+    have ha' : a ∣ p → a = 1 ∨ a = p
+    · apply hp
+    have ha'' : a = 1 ∨ a = p
+    · apply ha'
+      assumption
+    obtain h1 | h2 := ha''
+    linarith
+    assumption
+  Branch
+    -- alternative to `specialize`
+    have _hp := hp a ha
   specialize hp a ha
   obtain hp | hp := hp
   · Hint (hidden := true) "`linarith` kann den Widerspruch finden, der sich aus
@@ -39,6 +52,30 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     linarith
   · assumption
 
+/-- `specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`; konkret ersetzt es eine Annahme
+`h : ∀ m n, f m n` mit dem Spezialfall wo `a₁, a₂, …` für der Reihe nach für die
+freien Variablen eingesetzt werden.
+
+Falls man an mehreren Elementen separat spezialisieren möchte, sollte man stattdessen
+`have` verwenden, da `specialize h a` die alte Annahme `h` überschreibt.
+
+```
+have ha := h a
+have hb := h b
+```
+
+So kriegt man
+
+```
+h : ∀ m, f m
+ha : f a
+hb : f b
+```
+
+-/
+TacticDoc specialize
+
+NewTactic specialize
 NewDefinition Nat.Prime
 NewTheorem Nat.prime_def
 TheoremTab "Nat"

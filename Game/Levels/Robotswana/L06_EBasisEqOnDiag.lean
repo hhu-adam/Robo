@@ -59,8 +59,8 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
       rw [h₁]
       unfold E
       simp
-  have w := h₁ (E i j) (E j i)
-  simp [E.mul_same] at w
+  specialize h₁ (E i j) (E j i)
+  simp [E.mul_same] at h₁
   assumption
 
 TheoremTab "Matrix"

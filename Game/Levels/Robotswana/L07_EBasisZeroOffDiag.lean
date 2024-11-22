@@ -47,9 +47,9 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
       · simp
       · symm
         assumption
-  have w := h₁ (E i j) (E j j)
-  simp [E.mul_same, E.mul_of_ne _ _ hne] at w
-  simp [E.mul_of_ne _ _ hne.symm] at w
+  specialize h₁ (E i j) (E j j)
+  simp [E.mul_same, E.mul_of_ne _ _ hne] at h₁
+  simp [E.mul_of_ne _ _ hne.symm] at h₁
   assumption
 
 
