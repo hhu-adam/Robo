@@ -105,13 +105,14 @@ Dependency FunctionBij → End
 -- Dependency Babylon → FunctionSurj
 
 
--- because of `∃!`
-Dependency Prime → FunctionInj
+-- because of `∃!` -- should be superfluous
+Dependency Prado → FunctionInj
+
 -- Because of def `Injective`
 Dependency FunctionInj → FunctionBij
 
 
-set_option lean4game.showDependencyReasons true
+-- set_option lean4game.showDependencyReasons true
 
 /-! Build the game. Show's warnings if it found a problem with your game.
 

@@ -7,7 +7,7 @@ import Game.Levels.Prado.L06_PrimeDvdPrime
 import Game.Levels.Prado.L07_ExistsUnique
 import Game.Levels.Prado.L08_EvenPrime
 
-World "Prime"
-Title "Primzahlen"
+World "Prado"
+Title "Prado"
 
 Introduction ""
