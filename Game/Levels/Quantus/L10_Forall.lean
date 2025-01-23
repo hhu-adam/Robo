@@ -21,6 +21,8 @@ Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   rw [hy]
   ring
 
+NewDefinition «∀»
+
 Conclusion
 "
 Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen

@@ -99,6 +99,34 @@ DefinitionDoc And as "∧"
 -/
 DefinitionDoc Arrow as "→"
 
+
+/-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
+`∃ a : A, P a` die Aussage, dass ein Element `a` in `A` (genauer: vom Typ `A`)
+existiert, für das die Aussage `P a` wahr sei.  Eine reine Existenzaussage lässt sich
+zum Beispiel als `∃ a : A, true` formulieren.
+
+Um eine Aussage der Form `∃ a : A, …` zu beweisen, konstruiert man ein geeignetes Element `a` und
+nutzt dann die `use`-Taktik (`use a`).
+
+Eine Annahme der Form `h : ∃ a : A, P a` lässt sich mit
+`choose a ha using h` oder `obtain ⟨a,ha⟩ := h` in die Bestandteile `a : A` und `ha : P a`
+zerlegen.
+-/
+DefinitionDoc Exists as "∃"
+
+/-- Universeller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
+`∀ a : A, P a` die Aussage, dass die Aussage `P a` für alle `a` in `A`
+(genauer: für alle `a` vom Typ `A`) wahr sei.
+
+Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählt man mit `intro a` zunächst ein
+beliebiges Element `a`.
+
+Ist `h : ∀ a : A, P a` eine Annahme und `a₀ : A` ein konkretes Element, so ist `h a₀`
+eine Notation für `P a₀`.  Man kann auch mit `specialize h a₀` die gegebene Annahme
+über alle möglichen `a` zu einer Annahme `h : P a₀` über dieses konkrete `a₀` einschränken.
+-/
+DefinitionDoc «∀» as "∀"
+
 /--
 Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
 -/
