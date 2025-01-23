@@ -125,7 +125,7 @@ Ist `h : ∀ a : A, P a` eine Annahme und `a₀ : A` ein konkretes Element, so i
 eine Notation für `P a₀`.  Man kann auch mit `specialize h a₀` die gegebene Annahme
 über alle möglichen `a` zu einer Annahme `h : P a₀` über dieses konkrete `a₀` einschränken.
 -/
-DefinitionDoc «∀» as "∀"
+DefinitionDoc Forall as "∀"
 
 /--
 Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`

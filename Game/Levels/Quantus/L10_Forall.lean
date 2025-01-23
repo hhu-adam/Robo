@@ -21,7 +21,7 @@ Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   rw [hy]
   ring
 
-NewDefinition «∀»
+NewDefinition Forall
 
 Conclusion
 "
