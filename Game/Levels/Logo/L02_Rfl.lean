@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Logos"
+World "Logo"
 Level 2
 
 Title "Aller Anfang ist... ein Einzeiler?"

@@ -1,6 +1,6 @@
 import Game.Metadata
 
-import Game.Levels.Logos
+import Game.Levels.Logo
 import Game.Levels.Implis
 import Game.Levels.Quantus
 

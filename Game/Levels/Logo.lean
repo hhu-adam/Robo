@@ -1,24 +1,24 @@
-import Game.Levels.Logos.L01_Tauto
-import Game.Levels.Logos.L02_Rfl
-import Game.Levels.Logos.L03_Assumption
-import Game.Levels.Logos.L04_Assumption
-import Game.Levels.Logos.L05_True
-import Game.Levels.Logos.L06_Not
-import Game.Levels.Logos.L07_Contradiction
-import Game.Levels.Logos.L08_Contradiction
-import Game.Levels.Logos.L09_Contradiction
-import Game.Levels.Logos.L10_And
-import Game.Levels.Logos.L11_And
-import Game.Levels.Logos.L12_Or
-import Game.Levels.Logos.L13_Or
-import Game.Levels.Logos.L14_Summary
+import Game.Levels.Logo.L01_Tauto
+import Game.Levels.Logo.L02_Rfl
+import Game.Levels.Logo.L03_Assumption
+import Game.Levels.Logo.L04_Assumption
+import Game.Levels.Logo.L05_True
+import Game.Levels.Logo.L06_Not
+import Game.Levels.Logo.L07_Contradiction
+import Game.Levels.Logo.L08_Contradiction
+import Game.Levels.Logo.L09_Contradiction
+import Game.Levels.Logo.L10_And
+import Game.Levels.Logo.L11_And
+import Game.Levels.Logo.L12_Or
+import Game.Levels.Logo.L13_Or
+import Game.Levels.Logo.L14_Summary
 
 /-!
-The planet `Logos` is about first-order-logic.
+The planet `Logo` is about first-order-logic.
 -/
 
-World "Logos"
-Title "Logos"
+World "Logo"
+Title "Logo"
 
 Image "images/QueenOfLogic.png"
 

@@ -21,7 +21,7 @@ Translations of the content from German into other languages are very welcome, b
 Please prioritise translation of the following planets, as they are
 essentially finalised:
 
-* Logos
+* Logo
 * Implis
 
 For translation, we use [`lean-i18n`](https://github.com/hhu-adam/lean-i18n). In particular, you can (optionally) build the lean project `Robo` once to make sure the file `.i18n/de/Game.pot` is up-to-date,

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jan 23 20:49:19 2025\n"
+"POT-Creation-Date: Thu Jan 23 21:45:24 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -71,7 +71,7 @@ msgid "Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist\n"
 "existiert, für das die Aussage `P a` wahr sei.  Eine reine Existenzaussage lässt sich\n"
 "zum Beispiel als `∃ a : A, true` formulieren.\n"
 "\n"
-"Um eine Aussage der Form `∃ a : A, …` zu beweisen, konstruiert man ein geeignet Element `a` und\n"
+"Um eine Aussage der Form `∃ a : A, …` zu beweisen, konstruiert man ein geeignetes Element `a` und\n"
 "nutzt dann die `use`-Taktik (`use a`).\n"
 "\n"
 "Eine Annahme der Form `h : ∃ a : A, P a` lässt sich mit\n"
@@ -937,11 +937,11 @@ msgstr ""
 msgid "Oft kann `tauto` diese Art von logischen Ausdrücken lösen."
 msgstr ""
 
-#: Game.Levels.Logos.L01_Tauto
+#: Game.Levels.Logo.L01_Tauto
 msgid "Automatisierung"
 msgstr ""
 
-#: Game.Levels.Logos.L01_Tauto
+#: Game.Levels.Logo.L01_Tauto
 msgid "Gerade seid Ihr auf Königin *Logisindes* Planeten. Sie kommt ohne Umschweife zum Punkt:\n"
 "\n"
 "**Logisinde**: Werte Wesen aus fremden Welten, gestatten Sie eine Frage. Warum gilt …\n"
@@ -951,11 +951,11 @@ msgid "Gerade seid Ihr auf Königin *Logisindes* Planeten. Sie kommt ohne Umschw
 "Du siehst Robo hilflos an."
 msgstr ""
 
-#: Game.Levels.Logos.L01_Tauto
+#: Game.Levels.Logo.L01_Tauto
 msgid ""
 msgstr ""
 
-#: Game.Levels.Logos.L01_Tauto
+#: Game.Levels.Logo.L01_Tauto
 msgid "**Robo**: Das ist ganz einfach. Mit `«{A}» «{B}» «{C}» : Prop` meint sie:\n"
 "`«{A}»`, `«{B}»` und `«{C}»` sind irgendwelche Aussagen (*propositions*).\n"
 "Und mit `→` meint sie ⇒, also “impliziert”. Die anderen Symbole kennst du, oder?\n"
@@ -971,17 +971,17 @@ msgid "**Robo**: Das ist ganz einfach. Mit `«{A}» «{B}» «{C}» : Prop` mein
 "**Robo**: Mach schon …"
 msgstr ""
 
-#: Game.Levels.Logos.L01_Tauto
+#: Game.Levels.Logo.L01_Tauto
 msgid "**Logisinde**: (etwas konsterniert) Ja, das ist streng genommen richtig.\n"
 "Aber glaubt bloß nicht, dass Ihr damit auf *diesem* Planeten viel weiterkommt!\n"
 "Meine Untertanen verstehen `tauto` nicht. Da müsst Ihr Euch schon etwas mehr anstrengen."
 msgstr ""
 
-#: Game.Levels.Logos.L02_Rfl
+#: Game.Levels.Logo.L02_Rfl
 msgid "Aller Anfang ist... ein Einzeiler?"
 msgstr ""
 
-#: Game.Levels.Logos.L02_Rfl
+#: Game.Levels.Logo.L02_Rfl
 msgid "In der Zwischenzeit hat bereits sich eine lange Schlange Untertanen gebildet, die gern ihren\n"
 "Fragen stellen würden. Logisinde winkt den ersten nach vorn. Er räuspert sich.\n"
 "\n"
@@ -991,25 +991,25 @@ msgid "In der Zwischenzeit hat bereits sich eine lange Schlange Untertanen gebil
 "Er schreibt es dir wieder auf."
 msgstr ""
 
-#: Game.Levels.Logos.L02_Rfl
+#: Game.Levels.Logo.L02_Rfl
 msgid "**Robo**: Ist doch klar. Du musst ihn einfach daran erinnern,\n"
 "dass Gleichheit *reflexiv* ist. Probier mal `rfl`."
 msgstr ""
 
-#: Game.Levels.Logos.L02_Rfl
+#: Game.Levels.Logo.L02_Rfl
 msgid "**Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich immer. Rfl, rfl, rfl …"
 msgstr ""
 
-#: Game.Levels.Logos.L03_Assumption
+#: Game.Levels.Logo.L03_Assumption
 msgid "Annahmen"
 msgstr ""
 
-#: Game.Levels.Logos.L03_Assumption
+#: Game.Levels.Logo.L03_Assumption
 msgid "Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne.\n"
 "Es ist schüchtern und schreibt bloß."
 msgstr ""
 
-#: Game.Levels.Logos.L03_Assumption
+#: Game.Levels.Logo.L03_Assumption
 msgid "**Robo**: `«{n}» : ℕ` bedeutet, `«{n}»` ist eine natürliche Zahl.\n"
 "\n"
 "**Du**: Warum schreibt er dann nicht `«{n}» ∈ ℕ`??\n"
@@ -1029,20 +1029,20 @@ msgid "**Robo**: `«{n}» : ℕ` bedeutet, `«{n}»` ist eine natürliche Zahl.\
 "**Robo**: Du musst ihm das halt explizit sagen. Probiers mal mit `assumption`."
 msgstr ""
 
-#: Game.Levels.Logos.L03_Assumption
+#: Game.Levels.Logo.L03_Assumption
 msgid "**Untertan**: Ja richtig! Wenn Ihr nur wüsstet, was ich mir an dieser Frage schon den Kopf\n"
 "zerbrochen habe!"
 msgstr ""
 
-#: Game.Levels.Logos.L04_Assumption
+#: Game.Levels.Logo.L04_Assumption
 msgid "Logische Aussagen"
 msgstr ""
 
-#: Game.Levels.Logos.L04_Assumption
+#: Game.Levels.Logo.L04_Assumption
 msgid "Ein dritter Untertan kommt mit folgendem Problem."
 msgstr ""
 
-#: Game.Levels.Logos.L04_Assumption
+#: Game.Levels.Logo.L04_Assumption
 msgid "**Robo**: Hier bedeutet `«{A}» : Prop` wieder, dass `«{A}»` irgendeine Aussage ist.\n"
 "Und `«{hA}»` ist eine Name für die Annahme, dass `«{A}»` wahr ist.\n"
 "\n"
@@ -1051,25 +1051,25 @@ msgid "**Robo**: Hier bedeutet `«{A}» : Prop` wieder, dass `«{A}»` irgendein
 "**Robo**: Ja. Da kommst du jetzt selbst drauf, wie das geht, oder?"
 msgstr ""
 
-#: Game.Levels.Logos.L04_Assumption
+#: Game.Levels.Logo.L04_Assumption
 msgid "**Robo**: Ist doch genau wie eben:\n"
 "die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen.\n"
 "Also wird `assumption` auch wieder funktionieren."
 msgstr ""
 
-#: Game.Levels.Logos.L04_Assumption
+#: Game.Levels.Logo.L04_Assumption
 msgid "**Untertan**: Das ging ja schnell. Super! Vielen Dank."
 msgstr ""
 
-#: Game.Levels.Logos.L05_True
+#: Game.Levels.Logo.L05_True
 msgid "True or False"
 msgstr ""
 
-#: Game.Levels.Logos.L05_True
+#: Game.Levels.Logo.L05_True
 msgid "Der nächste Untertan in der Reihe ist ein Schelm."
 msgstr ""
 
-#: Game.Levels.Logos.L05_True
+#: Game.Levels.Logo.L05_True
 msgid "**Robo**: Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und\n"
 "bedingungslos wahr ist.\n"
 "\n"
@@ -1078,7 +1078,7 @@ msgid "**Robo**: Dieses `True` ist eine spezielle Aussage, nämlich die Aussage,
 "**Robo**: Ich glaube, nichts. Probier mal `decide`."
 msgstr ""
 
-#: Game.Levels.Logos.L05_True
+#: Game.Levels.Logo.L05_True
 msgid "**Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen seid …\n"
 "\n"
 "**Du** *(zu Robo)*: Können wir nicht einfach immer dieses `decide` verwenden?\n"
@@ -1087,15 +1087,15 @@ msgid "**Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen se
 "einfachen Algorithmus gibt, der entscheidet, ob die Aussage wahr ist."
 msgstr ""
 
-#: Game.Levels.Logos.L06_Not
+#: Game.Levels.Logo.L06_Not
 msgid "Not"
 msgstr ""
 
-#: Game.Levels.Logos.L06_Not
+#: Game.Levels.Logo.L06_Not
 msgid "Der Schelm hat noch eine Schwester dabei."
 msgstr ""
 
-#: Game.Levels.Logos.L06_Not
+#: Game.Levels.Logo.L06_Not
 msgid "**Robo**: Dieses Zeichen `¬` bedeutet Negation. Also wenn eine Aussage `(A : Prop)`\n"
 "wahr ist, dann ist `¬A` falsch, und umgekehrt.\n"
 "\n"
@@ -1108,19 +1108,19 @@ msgid "**Robo**: Dieses Zeichen `¬` bedeutet Negation. Also wenn eine Aussage `
 "**Robo**: Probier mal!"
 msgstr ""
 
-#: Game.Levels.Logos.L06_Not
+#: Game.Levels.Logo.L06_Not
 msgid "Die Schwester lacht und eilt ihrem Bruder hinterher."
 msgstr ""
 
-#: Game.Levels.Logos.L07_Contradiction
+#: Game.Levels.Logo.L07_Contradiction
 msgid "Aus Falschem folgt vieles."
 msgstr ""
 
-#: Game.Levels.Logos.L07_Contradiction
+#: Game.Levels.Logo.L07_Contradiction
 msgid "Als nächstes kommen drei Querulanten. Der erste hat folgendes Problem:"
 msgstr ""
 
-#: Game.Levels.Logos.L07_Contradiction
+#: Game.Levels.Logo.L07_Contradiction
 msgid "**Du** Wenn ich das jetzt richtig lese, ist `«{A}»` eine Aussage,\n"
 "und wir haben außerdem eine Annahme names `«{h}»`, die besagt …\n"
 "\n"
@@ -1138,7 +1138,7 @@ msgid "**Du** Wenn ich das jetzt richtig lese, ist `«{A}»` eine Aussage,\n"
 "Annahme `True` und seiner Annahme `False` ein Widerspruch besteht. Probier mal `contradiction`."
 msgstr ""
 
-#: Game.Levels.Logos.L07_Contradiction
+#: Game.Levels.Logo.L07_Contradiction
 msgid "Der erste Querulant ist offenbar zufrieden.\n"
 "\n"
 "**Du**: War das jetzt ein Widerspruchsbeweis?\n"
@@ -1147,25 +1147,25 @@ msgid "Der erste Querulant ist offenbar zufrieden.\n"
 " wir haben eine `contradiction` in unserem Annahmen, also folgt jede beliebige Aussage."
 msgstr ""
 
-#: Game.Levels.Logos.L08_Contradiction
+#: Game.Levels.Logo.L08_Contradiction
 msgid "Aus Falschem folgt vieles."
 msgstr ""
 
-#: Game.Levels.Logos.L08_Contradiction
+#: Game.Levels.Logo.L08_Contradiction
 msgid "Auftritt zweiter Querulant."
 msgstr ""
 
-#: Game.Levels.Logos.L08_Contradiction
+#: Game.Levels.Logo.L08_Contradiction
 msgid ""
 msgstr ""
 
-#: Game.Levels.Logos.L08_Contradiction
+#: Game.Levels.Logo.L08_Contradiction
 msgid "**Du** Ist `«{n}» ≠ «{n}»` nicht auch ein Widerspruch?\n"
 "\n"
 "**Robo**: Probiers mal!"
 msgstr ""
 
-#: Game.Levels.Logos.L08_Contradiction
+#: Game.Levels.Logo.L08_Contradiction
 msgid "**Du**: Ja, scheint funktioniert zu haben.\n"
 "\n"
 "**Du**: Aber irgendwie kommt mir das immer noch ein wenig suspekt vor.\n"
@@ -1177,44 +1177,44 @@ msgid "**Du**: Ja, scheint funktioniert zu haben.\n"
 "**Du**: Okay, okay, verstehe."
 msgstr ""
 
-#: Game.Levels.Logos.L09_Contradiction
+#: Game.Levels.Logo.L09_Contradiction
 msgid "Aus Falschem folgt vieles."
 msgstr ""
 
-#: Game.Levels.Logos.L09_Contradiction
+#: Game.Levels.Logo.L09_Contradiction
 msgid "Auftritt dritter Querulant."
 msgstr ""
 
-#: Game.Levels.Logos.L09_Contradiction
+#: Game.Levels.Logo.L09_Contradiction
 msgid ""
 msgstr ""
 
-#: Game.Levels.Logos.L09_Contradiction
+#: Game.Levels.Logo.L09_Contradiction
 msgid "**Du** Wieder ein Widerspruch in den Annahmen?\n"
 "\n"
 "**Robo**: Ich sehe, du hast langsam den Dreh raus."
 msgstr ""
 
-#: Game.Levels.Logos.L09_Contradiction
+#: Game.Levels.Logo.L09_Contradiction
 msgid "**Robo**: Gut gemacht. Bei dieser Frage ist auch ein bisschen offensichtlicher,\n"
 "worin der Widerspruch besteht: Die Annahme `n ≠ 10` ist genau die Negation von `n = 10`.\n"
 "Man muss `≠` immer als `¬(· = ·)` lesen."
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid "Und"
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid "Der nächste Formalosoph in der Reihe hat seine Frage bereits mitgebracht.\n"
 "Er legt sie uns vor, setzt sich hin und häkelt."
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid ""
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid "**Du**: Also, wir haben zwei Annahmen: `«{A}»` gilt, und `«{B}»` gilt auch. Und beweisen sollen wir\n"
 "dass `«{A}» und «{B}»` gilt. Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung.\n"
 "Kann ich nicht wieder `trivial` sagen?\n"
@@ -1229,7 +1229,7 @@ msgid "**Du**: Also, wir haben zwei Annahmen: `«{A}»` gilt, und `«{B}»` gilt
 "konstruieren kann."
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid "**Robo**: Schau mal, das ist Zauberpapier.\n"
 "Jetzt haben wir auf einmal zwei Beweisziele.\n"
 "Hier ist dast Ziel `«{B}»`.\n"
@@ -1237,7 +1237,7 @@ msgid "**Robo**: Schau mal, das ist Zauberpapier.\n"
 "Die Ziele stehen ja jeweils in den *Annahmen*."
 msgstr ""
 
-#: Game.Levels.Logos.L10_And
+#: Game.Levels.Logo.L10_And
 msgid "**Robo**: Super!\n"
 "\n"
 "Ihm scheinen diese Fragen inzwischen Spaß zu machen.\n"
@@ -1246,15 +1246,15 @@ msgid "**Robo**: Super!\n"
 "Oder ist der nur gemalt? Probier mal!"
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "Und"
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes Anliegen."
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "**Du**: Jetzt müssen wir wohl die Annahme de-konstruieren.\n"
 "\n"
 "**Robo**: Ja, genau. Das geht am einfachsten mit `obtain ⟨h₁, h₂⟩ := «{h}»`.\n"
@@ -1266,28 +1266,28 @@ msgid "**Du**: Jetzt müssen wir wohl die Annahme de-konstruieren.\n"
 "für `h₁` und `h₂`, zum Beispiel `obtain ⟨hA, hBC⟩ := «{h}»`."
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
 msgstr ""
 
-#: Game.Levels.Logos.L11_And
+#: Game.Levels.Logo.L11_And
 msgid "**Robo**: Du hättest das übrigens auch direkt verschachtelt schreiben können:\n"
 "`obtain ⟨h₁, h₂ , h₃⟩ := {h}`."
 msgstr ""
 
-#: Game.Levels.Logos.L12_Or
+#: Game.Levels.Logo.L12_Or
 msgid "Oder"
 msgstr ""
 
-#: Game.Levels.Logos.L12_Or
+#: Game.Levels.Logo.L12_Or
 msgid "Der nächste bitte …"
 msgstr ""
 
-#: Game.Levels.Logos.L12_Or
+#: Game.Levels.Logo.L12_Or
 msgid "**Du** Muss ich jetzt wieder das Beweisziel de-konstruieren?\n"
 "\n"
 "**Robo** Nein, viel einfacher. Wenn du eine Oder-Aussage beweisen sollst, musst du dich\n"
@@ -1299,27 +1299,27 @@ msgid "**Du** Muss ich jetzt wieder das Beweisziel de-konstruieren?\n"
 "**Robo** Mit `left` bzw. `right`. Ist doch logisch, oder?"
 msgstr ""
 
-#: Game.Levels.Logos.L12_Or
+#: Game.Levels.Logo.L12_Or
 msgid "**Robo** Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. Probier's nochmal."
 msgstr ""
 
-#: Game.Levels.Logos.L12_Or
+#: Game.Levels.Logo.L12_Or
 msgid "Auch dieser Formalosoph zieht zufrieden von dannen."
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "Oder"
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "Der nächste bitte …"
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid ""
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir,\n"
 "wie die Klammern gesetzt sind. Irre…\n"
 "\n"
@@ -1337,7 +1337,7 @@ msgid "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt 
 "**Robo** Ja, aber diesmal nicht `obtain ⟨h₁, h₂⟩ := «{h}»`, sondern `obtain h | h := «{h}»`."
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "**Robo**\n"
 "Jetzt musst du dein Ziel zweimal beweisen:\n"
 "Einmal unter Annahme der linken Seite `«{A}» ∧ «{B}»`,\n"
@@ -1346,18 +1346,18 @@ msgid "**Robo**\n"
 "sei wahr."
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "**Robo** Wie man mit einem Und in den Annahmen umgeht,\n"
 "weißt du doch schon:\n"
 "`obtain ⟨h₁, h₂⟩ := «{h}»`. Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "**Robo** Jetzt musst du dein Ziel noch unter der rechten Annahme\n"
 "von `(«{A}» ∧ «{B}») ∨ «{A}»` zeigen, also angenommen, `«{A}»` sei wahr."
 msgstr ""
 
-#: Game.Levels.Logos.L13_Or
+#: Game.Levels.Logo.L13_Or
 msgid "**Du** Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…\n"
 "Kannst du mir vorher noch einmal kurz alles Leansch zusammenfassen,\n"
 "das du mir bis hierher beigebracht hast?\n"
@@ -1410,11 +1410,11 @@ msgid "**Du** Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…\n
 "**Robo** Keine Ahnung. War, glaube ich, vorinstalliert."
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "Zusammenfassung"
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "Der letzte Untertan tritt vor. Ihr Anliegen ist etwas komplizierter als die vorherigen.\n"
 "\n"
 "**Robo** Wirf einfach alles drauf, was du gelernt hast.\n"
@@ -1427,34 +1427,34 @@ msgid "Der letzte Untertan tritt vor. Ihr Anliegen ist etwas komplizierter als d
 "| Goal        | `constructor`            | `left`/`right`          |"
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "**Robo**: Ich würd zuerst die Annahme «{h}» mit `obtain ⟨⟩ := «{h}» aufteilen."
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "**Robo**: Jetzt kannst du das `∧` im Goal mit `constructor` angehen."
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "**Robo**: Hier würde ich die Annahme «{h}» nochmals mit `obtain` aufteilen."
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "**Robo**: Der Nachteil an der Reihenfolge ist, dass du jetzt in jedem Untergoal\n"
 "`obtain ⟨⟩ := h` aufrufen musst."
 msgstr ""
 
-#: Game.Levels.Logos.L14_Summary
+#: Game.Levels.Logo.L14_Summary
 msgid "**Robo** Bravo! Jetzt aber nichts wie weg hier, bevor sich eine neue Schlange bildet!\n"
 "\n"
 "Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon."
 msgstr ""
 
-#: Game.Levels.Logos
-msgid "Logos"
+#: Game.Levels.Logo
+msgid "Logo"
 msgstr ""
 
-#: Game.Levels.Logos
+#: Game.Levels.Logo
 msgid "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit\n"
 "bist du aus Versehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück.\n"
 "Richte dich besser darauf ein, hier bleiben und dich zurechtzufinden zu müssen.\n"

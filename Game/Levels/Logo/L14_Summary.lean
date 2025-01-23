@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Logos"
+World "Logo"
 Level 14
 
 Title "Zusammenfassung"
