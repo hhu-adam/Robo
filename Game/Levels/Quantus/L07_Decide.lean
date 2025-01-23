@@ -2,16 +2,14 @@ import Game.Metadata
 
 
 World "Quantus"
-Level 5
+Level 7
 
 Title ""
 
 Introduction
 "
-Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen
-applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich
-nicht einigen, welche.
-Ihr hört abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo
+Inzwischen haben sich in der Menge anscheinend zwei Lager gebildet.
+Ihr hört abwechselnd die Rufe „Even“ und „Odd“. Deshalb zeigt dir Robo
 vorsichtshalber schon einmal die entsprechende Definition:
 
 ```

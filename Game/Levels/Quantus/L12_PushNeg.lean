@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quantus"
-Level 10
+Level 12
 
 Title "PushNeg"
 

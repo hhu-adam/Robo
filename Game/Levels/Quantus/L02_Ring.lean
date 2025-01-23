@@ -1,14 +1,14 @@
 import Game.Metadata
 
 World "Quantus"
-Level 1
+Level 2
 
 Title "Natürliche Zahlen"
 
-Introduction "Du schaust dir die erste Seite an."
+Introduction ""
 
 Statement (x y : ℕ) : (x + y) ^ 2 = x ^ 2 + 2 * x * y + y ^ 2 := by
-  Hint "**Du**: Das ist doch Schulmathematik! Man rechnet das einfach aus,
+  Hint "**Du**: Und jetzt Schulmathematik? Man rechnet das einfach aus,
     indem man die Terme umsortiert.
 
     **Robo**: Wenn die Gleichung stimmt, kannst du auf Leansch sogar einfach

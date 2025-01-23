@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quantus"
-Level 11
+Level 13
 
 Title "Drinker's Paradox"
 
@@ -36,25 +36,22 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     **Du**: Also, `{isDrinking}` ist wieder so ein Prädikat …
     Wenn `p` eine Person ist, ist `{isDrinking} p` eine Aussage,
     die wahr oder falsch ist. Soweit so gut.
-    Und was bedeutet `Nonempty {People}`?
-
-    **Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.
-    Mit `use Classical.arbitrary {People}` kannst du dir eine `pers : {People}` aussuchen und verwenden,
-    die es per Annahme gibt.
-
+    "
+  Hint (hidden := true) "
     **Du**: Und wie fang ich jetzt an?
 
     **Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.
     Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage
-    `∀ (y : {People}), {isDrinking} y` wahr oder falsch ist."
+    `∀ (y : {People}), {isDrinking} y` wahr oder falsch ist.
+    "
   Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
   by_cases h : ∀ y, isDrinking y
   · Hint (hidden := true) "
       **Du**: Und wen nehm ich jetzt?
 
-      **Robo**: Wie gesagt, mit `use Classical.arbitrary {People}` kannst du eine beliebige
-      Person auswählen und verwenden."
-    use Classical.arbitrary People
+      **Robo**: Ist das nicht egal? Aus der Annahme `h_nonempty` weißt du, dass es jemanden gibt."
+    obtain ⟨someone⟩ := h_nonempty
+    use someone
     intro
     assumption
   · Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
@@ -68,12 +65,9 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     Hint (hidden := true) "**Robo**: Was siehst du, wenn du `{hp}` und `{hp'}` anschaust?"
     contradiction
 
-/-- TODO -/
-TheoremDoc Classical.arbitrary as "Classical.arbitrary" in "Logic"
+
 
 TheoremTab "Logic"
-NewTheorem Classical.arbitrary
-NewDefinition Nonempty
 
 Conclusion
 "

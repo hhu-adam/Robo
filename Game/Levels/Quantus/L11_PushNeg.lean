@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quantus"
-Level 9
+Level 11
 
 Title "PushNeg"
 
@@ -18,7 +18,7 @@ Statement {X : Type} (P : X → Prop) :
   Hint "
     **Du**: Was ist denn jetzt dieses `{P}`?
 
-    **Robo**: `{P}` ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `{X}`.
+    **Robo**: `{P}` ist ein „Prädikat“; eine Aussage über Objekte vom Typ `{X}`.
               Zum Beispiel könnte `{X}` wieder der Typ der natürlichen Zahlen sein.
               Und `{P} x` könnte die Aussage sein:
               Die natürliche Zahl `x` ist gerade. Oder: `x` hat sieben Primfaktoren. Oder: `x`

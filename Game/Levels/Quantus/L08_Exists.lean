@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quantus"
-Level 6
+Level 8
 
 Title "Gerade/Ungerade"
 
@@ -86,7 +86,8 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   rw [hs]
   ring
 
-NewTactic unfold use choose
+NewTactic unfold choose
+NewHiddenTactic «using»
 NewDefinition Even Odd
 
 Conclusion "Applaus!"
