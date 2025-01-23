@@ -16,7 +16,7 @@ open Function Set
 -- TODO: new level with this!
 -- Needed as a have statement in the Boss level
 Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b   := by
-  have a₀ : A := Classical.arbitrary A
+  obtain ⟨a₀⟩ := hA
   intro b
   by_cases hb : ∃ a' : A, f a' = b
   · obtain ⟨a,ha⟩ := hb
@@ -35,7 +35,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
   · intro hf
     have : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b := by
       /- exactly a previous level, now without hints -/
-      have a₀ : A := Classical.arbitrary A
+      obtain ⟨a₀⟩ := hA
       intro b
       by_cases hb : ∃ a' : A, f a' = b
       · obtain ⟨a,ha⟩ := hb

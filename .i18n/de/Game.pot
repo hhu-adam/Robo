@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Sep  9 15:24:55 2024\n"
+"POT-Creation-Date: Thu Jan 23 12:35:22 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -66,7 +66,7 @@ msgid "* Für `A B : Prop` ist `A → B` eine Implikation \"`A` impliziert `B`\"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Nützliche Taktiken für Gleichheit sind: `rfl`, `rw`, `trans`"
+msgid "Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -101,7 +101,7 @@ msgstr ""
 #: Game.Doc.Definition
 msgid "`¬ A` ist intern als `A → False` implementiert.\n"
 "\n"
-"Nützliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`."
+"Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -1996,16 +1996,34 @@ msgid "Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Pl
 "Lieber Stillstand als Untergang!"
 msgstr ""
 
-#: Game.Levels.Quantus.L01_Ring
+#: Game.Levels.Quantus.L01_NonemptyUse
 msgid "Natürliche Zahlen"
 msgstr ""
 
-#: Game.Levels.Quantus.L01_Ring
+#: Game.Levels.Quantus.L01_NonemptyUse
 msgid "Du schaust dir die erste Seite an."
 msgstr ""
 
-#: Game.Levels.Quantus.L01_Ring
-msgid "**Du**: Das ist doch Schulmathematik! Man rechnet das einfach aus,\n"
+#: Game.Levels.Quantus.L01_NonemptyUse
+msgid "**Du**: Ich soll zeigen, dass es eine natürlich Zahl gibt?\n"
+"\n"
+"**Robo**: Genau.  Dazu gibts du mit `use _` einfach irgendeine natürlich Zahl an."
+msgstr ""
+
+#: Game.Levels.Quantus.L01_NonemptyUse
+msgid ""
+msgstr ""
+
+#: Game.Levels.Quantus.L02_Ring
+msgid "Natürliche Zahlen"
+msgstr ""
+
+#: Game.Levels.Quantus.L02_Ring
+msgid ""
+msgstr ""
+
+#: Game.Levels.Quantus.L02_Ring
+msgid "**Du**: Und jetzt Schulmathematik? Man rechnet das einfach aus,\n"
 "indem man die Terme umsortiert.\n"
 "\n"
 "**Robo**: Wenn die Gleichung stimmt, kannst du auf Leansch sogar einfach\n"
@@ -2017,19 +2035,19 @@ msgid "**Du**: Das ist doch Schulmathematik! Man rechnet das einfach aus,\n"
 "man sagt `ring`, weil es in (kommutativen) Ringen am besten funktioniert."
 msgstr ""
 
-#: Game.Levels.Quantus.L01_Ring
+#: Game.Levels.Quantus.L02_Ring
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid "Rewrite"
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis*\n"
 "schon gelöst hatten.\n"
 "Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!\n"
@@ -2038,31 +2056,31 @@ msgid "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wi
 "Du kannst `=` und `↔` mit `rw` praktisch gleich behandeln."
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?\n"
 "\n"
 "**Robo**: Probiers doch einfach."
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid "**Du**: Wie war das nochmals mit rückwärts umschreiben?\n"
 "\n"
 "**Robo**: `←` ist `\\l`. Und dann `rw [← hₓ]`"
 msgstr ""
 
-#: Game.Levels.Quantus.L02_Rewrite
+#: Game.Levels.Quantus.L03_Rewrite
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid "Rewrite"
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid "$$\n"
 "\\begin{aligned}\n"
 "  a &= b \\\\\n"
@@ -2072,31 +2090,31 @@ msgid "$$\n"
 "$$"
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid "**Du**: Hier muss man, glaube ich, einfach in Annahme `«{g}»` die\n"
 "Variable `«{a}»` durch `«{b}»` ersetzen.\n"
 "\n"
 "**Robo**: Genau! Das machst du mit `rw [«{h}»] at «{g}»`."
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid "**Robo**: Schau mal durch die Annahmen."
 msgstr ""
 
-#: Game.Levels.Quantus.L03_Rewrite
+#: Game.Levels.Quantus.L04_Rewrite
 msgid "**Robo**: Noch ein Trick: Mit `rw [h] at *` kann man gleichzeitig mittels `h` **alle**\n"
 "Annahmen und das Goal umschreiben."
 msgstr ""
 
-#: Game.Levels.Quantus.L04_Ring
+#: Game.Levels.Quantus.L05_Ring
 msgid "Natürliche Zahlen"
 msgstr ""
 
-#: Game.Levels.Quantus.L04_Ring
+#: Game.Levels.Quantus.L05_Ring
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L04_Ring
+#: Game.Levels.Quantus.L05_Ring
 msgid "**Du**: Ich vermute, wenn ich zuerst alles so umschreibe, dass\n"
 "das Beweisziel nur noch rechnen und umsortieren zu beweisen ist, erledigt `ring` den Rest!\n"
 "\n"
@@ -2104,19 +2122,51 @@ msgid "**Du**: Ich vermute, wenn ich zuerst alles so umschreibe, dass\n"
 "einem einzigen Schritt zusammenfassen: `rw [h₁, h₂]`."
 msgstr ""
 
-#: Game.Levels.Quantus.L04_Ring
+#: Game.Levels.Quantus.L05_Ring
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L05_Decide
+#: Game.Levels.Quantus.L06_NonemptyObtain
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L05_Decide
+#: Game.Levels.Quantus.L06_NonemptyObtain
 msgid "Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen\n"
 "applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich\n"
-"nicht einigen, welche.\n"
-"Ihr hört abwechselnd die Rufe „Even“ und „Odd“ aus der Menge heraus. Deshalb zeigt dir Robo\n"
+"nicht einigen, welche.  Nach einer Weile taucht folgendes Papier auf.\n"
+"Ihr studiert es, während die Menge weiter diskutiert."
+msgstr ""
+
+#: Game.Levels.Quantus.L06_NonemptyObtain
+msgid "**Was ist das denn jetzt?  `A` ist in „Typ“?\n"
+"\n"
+"**Robo** Du kannst dir `A` einfach als Menge vorstellen …\n"
+"\n"
+"**Du** … die laut Annahme `h` nicht leer ist?\n"
+"\n"
+"**Robo** Genau.\n"
+"\n"
+"**Du** Und zeigen soll ich, dass es ein Element in `A` gibt?\n"
+"\n"
+"**Robo** Richtig.\n"
+"\n"
+"**Du** Und folgt das nicht genau aus der Annahme?\n"
+"\n"
+"**Robo** Das ist wieder so ein Annahme, die man mit `obtain` „zerlegen“ kann.\n"
+"Probier mal `obtain ⟨a⟩ := h`."
+msgstr ""
+
+#: Game.Levels.Quantus.L06_NonemptyObtain
+msgid ""
+msgstr ""
+
+#: Game.Levels.Quantus.L07_Decide
+msgid ""
+msgstr ""
+
+#: Game.Levels.Quantus.L07_Decide
+msgid "Inzwischen haben sich in der Menge anscheinend zwei Lager gebildet.\n"
+"Ihr hört abwechselnd die Rufe „Even“ und „Odd“. Deshalb zeigt dir Robo\n"
 "vorsichtshalber schon einmal die entsprechende Definition:\n"
 "\n"
 "```\n"
@@ -2127,7 +2177,7 @@ msgid "Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und 
 "taucht von irgendwo aus der Menge folgendes Papier auf:"
 msgstr ""
 
-#: Game.Levels.Quantus.L05_Decide
+#: Game.Levels.Quantus.L07_Decide
 msgid "**Robo**: Moment! Dafür brauchst du die Definition gar nicht!\n"
 "\n"
 "**Du**: Das ist ja irgendwie trivial…\n"
@@ -2137,7 +2187,7 @@ msgid "**Robo**: Moment! Dafür brauchst du die Definition gar nicht!\n"
 "Aussagen zu konkreten Zahlen fallen meistens in diese Kategorie!"
 msgstr ""
 
-#: Game.Levels.Quantus.L05_Decide
+#: Game.Levels.Quantus.L07_Decide
 msgid "**Du**: Was kann denn `decide` noch alles?\n"
 "\n"
 "**Robo**: Konkret hat hier jemand einen ausführbaren\n"
@@ -2146,11 +2196,11 @@ msgid "**Du**: Was kann denn `decide` noch alles?\n"
 "dann kann es die Aufgabe lösen."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Gerade/Ungerade"
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Die Rufe „Even“ und „Odd“ aus der Menge sind noch lange nicht verstummt, deshalb\n"
 "zeigt dir Robo nochmals die Definitionen:\n"
 "\n"
@@ -2167,11 +2217,11 @@ msgid "Die Rufe „Even“ und „Odd“ aus der Menge sind noch lange nicht ver
 "Damit erhaltet ihr auch ein weiteres Blatt:"
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Das Quadrat einer geraden Zahl ist gerade."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Robo**: Wie du oben siehst, ist `Even «{n}»` dadurch definiert,\n"
 "dass ein `r` existiert so dass `r + r = «{n}»` ist. Am besten\n"
 "öffnest du diese Definition mit `unfold Even at *` einmal.\n"
@@ -2183,11 +2233,11 @@ msgid "**Robo**: Wie du oben siehst, ist `Even «{n}»` dadurch definiert,\n"
 "eine beliebige Zahl ist. Da musst du schon etwas Arbeit leisten!"
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Ein verwirrtes murmeln geht durch die Menge.\n"
 "\n"
 "**Du**: Warte mal, wieso ist `«{n}» ^ 2 / 2` überhaupt wieder eine natürliche Zahl?\n"
@@ -2201,124 +2251,124 @@ msgid "Ein verwirrtes murmeln geht durch die Menge.\n"
 "was ausgerechnet `1 = 1 / 2 + 1 / 2 = 0 + 0` ist, du bist also auf dem Holzweg!"
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Du**: Also von `«{h}»` weiß ich jetzt, dass ein `s` existiert, so dass `s + s = «{n}»` …\n"
 "\n"
 "**Robo**: Mit `choose s hs using «{h}»` kannst du dieses `s` tatsächlich einführen."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = «{n}» ^ 2`?\n"
 "\n"
 "**Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Robo**: Also sowas ähnliches wie `use 4 * «{s}» ^ 3`, aber ich kann\n"
 "dir leider nicht sagen, welche Zahl passt."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Robo**: Das geht auch, jetzt musst du aber wirklich `use` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Du**: Ah, und jetzt `ring`!"
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "**Du**: Ah, und jetzt `ring`!\n"
 "\n"
 "**Robo**: Aber zuerst musst du noch mit\n"
 "`rw` `n` durch `«{s}» + «{s}»` ersetzen, da `ring` das sonst nicht weiß."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_Exists
+#: Game.Levels.Quantus.L08_Exists
 msgid "Applaus!"
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "Gerade/Ungerade"
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "Sofort taucht das nächste Blatt auf. Anscheinend hatten sie sich auf einen Kompromiss geeinigt."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: mit `choose r hr using h` kannst du wieder\n"
 "das `r` nehmen, das laut Annahme existieren muss.\n"
 "\n"
 "**Robo**: Oder aber, du fängst mit `unfold Odd at *` an."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: Mit `unfold Odd at *` öffnest du alle Definitionen von `Odd`."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: mit `choose r hr⟩ using h` kannst du wieder\n"
 "das `r` nehmen, das laut Annahme existieren muss."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: Ich hab noch einen Trick auf Lager:\n"
 "Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest\n"
 "du schon jetzt mit `rw [«{hr}»]` weitermachen …"
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
 "Normalform um, das hilft beim Vergleichen."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: Ich hab noch einen Trick auf Lager:\n"
 "Wenn du jetzt noch nicht weißt, welche Zahl du einsetzen musst, könntest\n"
 "Du schon jetzt mit `rw [«{hr}»]` weitermachen…"
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "**Robo**: Wenn du jetzt `ring` brauchst, dann schreibt es einfach alles in\n"
 "Normalform um, das hilft beim Vergleichen."
 msgstr ""
 
-#: Game.Levels.Quantus.L07_Exists
+#: Game.Levels.Quantus.L09_Exists
 msgid "Applaus!"
 msgstr ""
 
-#: Game.Levels.Quantus.L08_Forall
+#: Game.Levels.Quantus.L10_Forall
 msgid "Für alle"
 msgstr ""
 
-#: Game.Levels.Quantus.L08_Forall
+#: Game.Levels.Quantus.L10_Forall
 msgid "Nach längerem Durcheinander findet ein weiteres Blatt aus der Menge zu Euch."
 msgstr ""
 
-#: Game.Levels.Quantus.L08_Forall
+#: Game.Levels.Quantus.L10_Forall
 msgid "**Du**: Das `∀` heisst sicher \"für alle\".\n"
 "\n"
 "**Robo**: Und man schreibt `\\forall`. Ein `∀ x, …` im Beweisziel kannst du wie eine\n"
 "Implikation mit `intro x` angehen."
 msgstr ""
 
-#: Game.Levels.Quantus.L08_Forall
+#: Game.Levels.Quantus.L10_Forall
 msgid "Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen\n"
 "beratschlagen sich, was sie Euch noch vorlegen wollen."
 msgstr ""
 
-#: Game.Levels.Quantus.L09_PushNeg
+#: Game.Levels.Quantus.L11_PushNeg
 msgid "PushNeg"
 msgstr ""
 
-#: Game.Levels.Quantus.L09_PushNeg
+#: Game.Levels.Quantus.L11_PushNeg
 msgid "**Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich brauchen werden."
 msgstr ""
 
-#: Game.Levels.Quantus.L09_PushNeg
+#: Game.Levels.Quantus.L11_PushNeg
 msgid "**Du**: Was ist denn jetzt dieses `«{P}»`?\n"
 "\n"
-"**Robo**: `«{P}»` ist wieder irgendeine Aussage; eine Aussage über Objekte vom Typ `«{X}»`.\n"
+"**Robo**: `«{P}»` ist ein „Prädikat“; eine Aussage über Objekte vom Typ `«{X}»`.\n"
 "Zum Beispiel könnte `«{X}»` wieder der Typ der natürlichen Zahlen sein.\n"
 "Und `«{P}» x` könnte die Aussage sein:\n"
 "Die natürliche Zahl `x` ist gerade. Oder: `x` hat sieben Primfaktoren. Oder: `x`\n"
@@ -2335,12 +2385,12 @@ msgid "**Du**: Was ist denn jetzt dieses `«{P}»`?\n"
 "**Robo**: Genau. Was du brauchst, ist `push_neg`."
 msgstr ""
 
-#: Game.Levels.Quantus.L09_PushNeg
+#: Game.Levels.Quantus.L11_PushNeg
 msgid "**Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf\n"
 "das Beweisziel anwenden, wohl aber auf `«{h}»`."
 msgstr ""
 
-#: Game.Levels.Quantus.L09_PushNeg
+#: Game.Levels.Quantus.L11_PushNeg
 msgid "**Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:\n"
 "\n"
 " - `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`\n"
@@ -2353,31 +2403,31 @@ msgid "**Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:\n
 "**Robo**: :-) Hauptsache, Du merkst dir `push_neg`."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "PushNeg"
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 "Ich würde nochmal zurückgehen und `Odd` behalten,\n"
 "damit man schlussendlich `even_iff_not_odd` brauchen kann!"
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 "Ich würde nochmal zurückgehen und `Odd` behalten,\n"
 "damit man schlussendlich `even_iff_not_odd` brauchen kann!"
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das\n"
 "Lemma `even_iff_not_odd` brauchen.\n"
 "\n"
@@ -2391,35 +2441,35 @@ msgid "**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich da
 "Ich würde jetzt lieber mit `use` eine richtige Zahl angeben, und danach umschreiben."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Eine Zahl ist gerade wenn sie nicht ungerade ist."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Eine Zahl ist ungerade wenn sie nicht gerade ist."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Statt diesem Theorem kannst du `push_neg` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Statt diesem Theorem kannst du `push_neg` verwenden."
 msgstr ""
 
-#: Game.Levels.Quantus.L10_PushNeg
+#: Game.Levels.Quantus.L12_PushNeg
 msgid "Die Formalosophinnen sind ganz begeistert.\n"
 "Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.\n"
 "\n"
@@ -2432,11 +2482,11 @@ msgid "Die Formalosophinnen sind ganz begeistert.\n"
 "Die Frage war wieder zu konkret. Betretenes Schweigen."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "Drinker's Paradox"
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Du**: Könnt ihr eigentlich immer nur im Chor oder durcheinander reden?\n"
 "\n"
 "Wieder herrscht längeres Schweigen. Dann auf einmal:\n"
@@ -2458,53 +2508,45 @@ msgid "**Du**: Könnt ihr eigentlich immer nur im Chor oder durcheinander reden?
 "**Robo**: Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!"
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Du**: Also, `«{isDrinking}»` ist wieder so ein Prädikat …\n"
 "Wenn `p` eine Person ist, ist `«{isDrinking}» p` eine Aussage,\n"
-"die wahr oder falsch ist. Soweit so gut.\n"
-"Und was bedeutet `Nonempty «{People}»`?\n"
-"\n"
-"**Robo**: Das ist Leansch für nicht-leer. Das heißt einfach, es gibt mindestens eine Person.\n"
-"Mit `use Classical.arbitrary «{People}»` kannst du dir eine `pers : «{People}»` aussuchen und verwenden,\n"
-"die es per Annahme gibt.\n"
-"\n"
-"**Du**: Und wie fang ich jetzt an?\n"
+"die wahr oder falsch ist. Soweit so gut."
+msgstr ""
+
+#: Game.Levels.Quantus.L13_DrinkersParadox
+msgid "**Du**: Und wie fang ich jetzt an?\n"
 "\n"
 "**Robo**: Ich sagte doch, schau am besten Mal in deine Handbibliothek.\n"
 "Wenn ich mich richtige erinnere, hilft eine Fallunterscheidung, ob die Aussage\n"
 "`∀ (y : «{People}»), «{isDrinking}» y` wahr oder falsch ist."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Robo**: Schau mal `by_cases` an."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Du**: Und wen nehm ich jetzt?\n"
 "\n"
-"**Robo**: Wie gesagt, mit `use Classical.arbitrary «{People}»` kannst du eine beliebige\n"
-"Person auswählen und verwenden."
+"**Robo**: Ist das nicht egal? Aus der Annahme `h_nonempty` weißt du, dass es jemanden gibt."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Robo**: Du könntest hier mit `push_neg at «{h}»` weitermachen."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Du**: Also nach `«{h}»` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?\n"
 "\n"
 "**Robo**: Schau dir mal an wie man `obtain` auf die Annahme `«{h}»` anwenden könnte."
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Robo**: Was siehst du, wenn du `«{hp}»` und `«{hp'}»` anschaust?"
 msgstr ""
 
-#: Game.Levels.Quantus.L11_DrinkersParadox
-msgid "TODO"
-msgstr ""
-
-#: Game.Levels.Quantus.L11_DrinkersParadox
+#: Game.Levels.Quantus.L13_DrinkersParadox
 msgid "**Du**: Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!\n"
 "\n"
 "**Robo**: Dann fliegen wir am besten weiter! Aber bevor du fragst – hier ist wieder ein Überblick, was du auf diesem Planeten gelernt hast.\n"
@@ -3835,10 +3877,12 @@ msgstr ""
 msgid "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.\n"
 "Denkst du das funktioniert ähnlich wie mit den Funktionen, da bei dieser Bibliothek?\n"
 "\n"
-"**Robo**: Die beiden Taktiken `congr` und `ext` könnten dir hier tatsächlich helfen.\n"
-"\n"
-"*(von oben)*: Wurde noch nicht erklärt, aber zukünftig werden `ext` und\n"
-"`congr` schon früher eingeführt."
+"**Robo**: Erinnerst du dich an `congr_arg`? Das zeigt hier, dass die beiden Summen gleich sind,\n"
+"falls der innere Teil für jeden Index gleich ist."
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Du**: und jetzt `funext` um Indices anzunehmen?"
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -3846,8 +3890,11 @@ msgid "**Du**: Oh, jetzt habe ich nicht nur den Summationsindex, sondern auch no
 "Indices `«{r}»,«{s}»` der Matrizen eingeführt. Aber das sollte passen. Nur… die verbleibende Summe\n"
 "ist ja überall Null außer beim Index `«{i}»`.\n"
 "\n"
-"**Robo**: Ist das so?  Lass mich mal suchen…  Nicht schön, sollte aber funktionieren:  mit `rw [← Finset.sum_subset (Finset.subset_univ {«{i}»})]`\n"
-"solltest du die Summe so umschreiben können, dass sie nur über dem Singleton `{«{i}»}` läuft."
+"**Robo**: Ist das so? Lass mich mal suchen… Zeig mal zuerst `have h : {«{i}»} ⊆ univ`!"
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Robo**: …jetzt kannst du nämlich `sum_subset` anwenden, welches du schon kennst."
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -3892,28 +3939,6 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid "**Robo**: Und da das falsch ist, kannst du mit `rw` und `if_neg` weiterkommen."
-msgstr ""
-
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
-msgstr ""
-
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "Zwei Funktionen sind gleich, wenn sie auf allen Elementen gleich sind.\n"
-"\n"
-"Wenn das Goal `f = g` ist, kann man mit `ext i`, ein Element `i` einführen, und dann zeigen,\n"
-"dass `f i = g i` ist.\n"
-"\n"
-"`ext` versucht, so viele Indices einzufügen wie möglich `funext i` führt nur den spezifizierten ein."
-msgstr ""
-
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "`congr` versucht, eine Gleichung `_ = _` auf eine Gleichung von Untertermen zu reduzieren. Zum\n"
-"Beispiel ein Goal der Form `f a = f b` wird durch `congr` zu `a = b` reduziert."
 msgstr ""
 
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
@@ -4437,228 +4462,214 @@ msgid "Das ist das Ende unserer Geschichte. Du fühlst dich gut ausgerüstet, di
 "welches er gerne beweisen würde, und düst davon."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
+#: Game.Levels.Prado.L01_Dvd
 msgid "Teilbarkeit"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
-msgid "Ihr begenet einer Frau, die mit Vorschlaghammer und Schaufel anscheinend an einer Erweiterung\n"
-"ihres Hauses baut. Im gespräch erzählt sie euch wie die Dornenwände gezüchtet wurden vor ihrer\n"
-"Zeit, und über's Wetter und so.\n"
+#: Game.Levels.Prado.L01_Dvd
+msgid "**Du**: Wie schreib ich denn, \"`a` teilt `b`\"?\n"
 "\n"
-"**Handwerkerin**: (*langer Monolog*) …, und dann gestern habe ich zwei Herren überhört,\n"
-"wie sie an folgender Aufgabe gesessen sind, könnt ihr mir das erklären?"
+"**Robo**: Als `a ∣ b`, aber der senkrechte Strich ist\n"
+"  ein spezieller, den man mit `\\|` oder `\\dvd` schreibt."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
-msgid "**Robo**: `n ∣ m` bedeutet \"$n$ teilt $m$\", der senkrechte Strich ist allerdings\n"
-"ein spezieller, den man mit `\\|` schreibt.\n"
-"Definiert ist dieses Symbol als `∃ c, n = m * c`.\n"
+#: Game.Levels.Prado.L01_Dvd
+msgid "**Robo**: Definiert ist dieses Symbol als `∃ k, b = a * k`.\n"
 "\n"
-"**Du**: Dann kann ich direkt `obtain` und `use` verwenden, wie wenns ein `∃` wäre?\n"
+"**Du**: Dann kann ich direkt `obtain` und `use` verwenden, wie wenn es ein `∃` wäre?\n"
 "\n"
 "**Robo**: Genau!"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
+#: Game.Levels.Prado.L01_Dvd
 msgid "**Robo**: Fang doch damit an, mit `obtain ⟨x ,hx⟩ := _`\n"
 "alle Hyptothesen aufzuteilen."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
+#: Game.Levels.Prado.L01_Dvd
 msgid "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben so dass\n"
-"`«{n}» + «{k}» = «{m}» * _` gilt."
+"`«{b}» + «{c}» = «{a}» * _` gilt."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
+#: Game.Levels.Prado.L01_Dvd
 msgid "**Du**: Mit ein bisschen umschreiben kann man sicer `ring` verwenden."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L01_Dvd
-msgid "(Warning: the unicode symbol `∣` (`\\\\dvd`) and the ASCII symbol `|` are not the same!\n"
-"Use the former for dividing.)"
+#: Game.Levels.Prado.L01_Dvd
+msgid "`a ∣ b` bedeutet `∃ k, b = a * k`.\n"
+"\n"
+"**Warnung**: Die Symbole `∣` (`\\\\dvd`) und `|` (ASCII vertikaler Strich) sind zwei unterschiedliche\n"
+"Zeichen! Das erste wird ausschliesslich für \"geteilt\" verwendet, das andere kommt zum Beispiel im\n"
+"Syntax `obtain h₁ | h₂ := h` vor."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L02_Prime
+#: Game.Levels.Prado.L02_EvenIff
+msgid "Gerade"
+msgstr ""
+
+#: Game.Levels.Prado.L02_EvenIff
+msgid "Hier nochmal eine kleine Übung für später."
+msgstr ""
+
+#: Game.Levels.Prado.L02_EvenIff
+msgid "fang doch mit `unfold Even` an."
+msgstr ""
+
+#: Game.Levels.Prado.L03_Prime
 msgid "Primzahlen"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L02_Prime
-msgid "Als nächstes Begnet ihr einem Lehrer, der nachdenkend an der Sonne sitzt.\n"
+#: Game.Levels.Prado.L03_Prime
+msgid "Eine Primzahl in den natürlichen Zahlen ist eine Zahl größergleich 2, wessen einzige Teiler\n"
+"`1` und die Zahl selbst sind.\n"
 "\n"
-"**Lehrer**: Sagt mal, mich hat heute einer meiner Schüler was gefragt,\n"
-"und ich glaube einfach, der ist in so jungen Jahren bereits schlauer als ich.\n"
+"**Robo**: Wie du hier siehst ist `(hp : Prime p)` die Aussage, dass `p` eine Primzahl ist.\n"
 "\n"
-"Hier etwas Kontext:"
+"**Du**: Also ist dann `Prime p` genau diese Beschreibung?\n"
+"\n"
+"**Robo**: Nein. Aus praktischen gründen ist `Prime p` dadurch definiert, dass `p`\n"
+"\"irreduzibel\" ist, aber die Beschreibung oben, die heißt `prime_def`. Anstatt die Definition\n"
+"zu unfolden, bist du immer mit `rw [prime_def] at hp` besser bedient!"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L02_Prime
-msgid "**Du**: Die einzigen Teiler einer Primzahl sind `1` und `p`, ist das\n"
-"nicht eine der möglichen Definitionen über `ℕ`?\n"
-"\n"
-"**Robo**: Doch, oder zumindest fast.\n"
-"Du kannst du mit `rw` und `Nat.prime_def_lt''` eine der Definitionen für `Nat.Prime` einsetzen\n"
-"\n"
-"**Du** Könnte ich nicht einfach `unfold Nat.Prime` sagen um mir das anzuschauen.\n"
-"\n"
-"**Robo**: Bloss nicht. Das ist so eine Definition, in die du besser nicht hineinschaust!\n"
-"`Nat.Prime p` ist als `Irreducible p` definiert, was wiederum anhand von Einheiten\n"
-"definiert ist… Da verlieren wir uns in Definition die wir im Moment gar nicht brauchen."
+#: Game.Levels.Prado.L03_Prime
+msgid "Du solltest `Nat.Prime` nicht unfolden! Das macht alles nur schwieriger."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L02_Prime
-msgid "**Du**: Ich sehe, meine \"Definition\" hätte auch `1` als Primzahl deklariert. Gut,\n"
-"dass wir das überprüft haben.\n"
+#: Game.Levels.Prado.L03_Prime
+msgid "**Robo**: Nah los, schreib mit `prime_def` die Annahme `«{hp}»` um!"
+msgstr ""
+
+#: Game.Levels.Prado.L03_Prime
+msgid "`linarith` kann den Widerspruch finden, der sich aus\n"
+"`«{a}» = 1` und `2 ≤ «{a}»` ergibt."
+msgstr ""
+
+#: Game.Levels.Prado.L03_Prime
+msgid "`specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`; konkret ersetzt es eine Annahme\n"
+"`h : ∀ m n, f m n` mit dem Spezialfall wo `a₁, a₂, …` für der Reihe nach für die\n"
+"freien Variablen eingesetzt werden.\n"
 "\n"
-"**Lehrer**: Und jetzt kommen wir zu dem, was mir Kopfschmerzen bereitet."
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L03_Prime
-msgid "Primzahlen"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L03_Prime
-msgid "Der Lehrer erklärt sein Problem.\n"
+"Falls man an mehreren Elementen separat spezialisieren möchte, sollte man stattdessen\n"
+"`have` verwenden, da `specialize h a` die alte Annahme `h` überschreibt.\n"
 "\n"
-"**Lehrer**: Und dann fragte der Schüler, wie man denn folgendes herleitet.\n"
-"Und dabei ist das weit über seiner Altersstufe!"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L03_Prime
-msgid "**Du**: Naja, mal schauen wie weit man mit `intro` und `constructor` kommt…"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L03_Prime
-msgid "**Robo**: Stop! Hier helfe ich dir etwas"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L04_ExistsUnique
-msgid "Existiert eindeutig"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L04_ExistsUnique
-msgid "Hier lässt sich noch eine neue Notation einführen: `∃!` bedeutet\n"
-"\"es existiert ein eindeutiges\" und ist definiert als"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L04_ExistsUnique
-msgid "Zeige dass die einzige gerade Primzahl $2$ ist."
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "Unendlich viele Primzahlen"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "**Irgendeine Person**: Ich bin auf der Suche nach der grössten Primzahl.\n"
+"```\n"
+"have ha := h a\n"
+"have hb := h b\n"
+"```\n"
 "\n"
-"**Du**: Dann viel Erfolg.\n"
+"So kriegt man\n"
 "\n"
-"**Person**: Wieso?\n"
-"\n"
-"**Du**: Na es gibt unendlich viele!\n"
-"\n"
-"**Person**: Wieso?\n"
-"\n"
-"**Du**: Lass uns mal mit folgendem anfangen: Für jede Zahl exisitiert eine Primzahl, die\n"
-"grösser ist.\n"
-"\n"
-"**Person**: Welche denn?\n"
-"\n"
-"**Du** Entweder das Produkt aller Primfaktoren von $n$ plus Eins, oder $n! + 1$.\n"
-"\n"
-"**Robo**: Zu $n! + 1$ kann ich besser helfen, hier zum Beispiel:"
+"```\n"
+"h : ∀ m, f m\n"
+"ha : f a\n"
+"hb : f b\n"
+"```"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "**Person**: Die ist schon mal grösser als die grösste Zahl, die ich je angeschaut\n"
-"habe!"
+#: Game.Levels.Prado.L04_Two
+msgid "Zwei"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "Das ist mehrheitlich `minFac_prime`."
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
+#: Game.Levels.Prado.L04_Two
 msgid ""
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid ""
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid ""
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "Der kleinste Primfaktor einer natürlichen Zahl."
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "Eine Primzahl.\n"
+#: Game.Levels.Prado.L04_Two
+msgid "**Du**: Also soll ich hier auch wieder `prime_def` verwenden?\n"
 "\n"
-"Achtung: Lena kennt `Nat.Prime` (eine Primzahl) sowie `Prime` (ein Primelement)"
+"**Robo**: Könntest du, auch wenn das etwas mühsam werden kann. Viel einfacher: Mit konkreten\n"
+"Zahlen kannst du auch hier wieder `decide` verwenden!"
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L05_MinFacPrime
-msgid "`factorial n` oder `n !` ist das Produkt aller natürlichen Zahlen von `1` bis `n`."
+#: Game.Levels.Prado.L05_One
+msgid ""
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L06_MinFacGE
-msgid "Unendlich viele Primzahlen"
+#: Game.Levels.Prado.L05_One
+msgid ""
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L06_MinFacGE
-msgid "**Person**: Warte mal, ist die wirklich grösser als $n$?\n"
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid "Jetzt eine etwas schwierigere Aussage, aber du hast alle Tools dafür!"
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid "Die Annahme `Prime «{b}»` wirst du mit `prime_def` umschreiben müssen,\n"
+"die Annahme `Prime «{a}»` hingegen würde ich so lassen wie sie ist!"
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid "Du kannst eine Fallunterscheidung auf `«{h}»` mit `obtain h | h := «{h}»`\n"
+"machen. Denk aber dran, dass dieser Strich `|` der normale Strich auf der Tastur ist, während\n"
+"Teilbarkeit mit `∣` (`\\dvd`) einen anderen Strich verwendet!"
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid "Findest du den Widerspruch?"
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid "Mach mal `have := not_prime_one`"
+msgstr ""
+
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid "Eindeutige Existenz"
+msgstr ""
+
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid "`∃! m, a * m = b` sagt, \"es existiert ein eindeutiges `m`, so dass …\" und ist definiert als\n"
+"`∃ m, [Aussage ist wahr für m] ∧ [m ist eindeutig]`.\n"
 "\n"
-"**Du**: Na klar!"
+"\n"
+"Ich gebe dir noch zwei Hilfreiche Resultate mit. `Nat.mul_left_cancel_iff` sagt, dass für `0 < a`\n"
+"folgendes  gilt.\n"
+"\n"
+"```\n"
+"a * b = a * c ↔ b = c\n"
+"```\n"
+"\n"
+"Das Resultat `Nat.mul_right_cancel_iff` ist entsprechend gedreht."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L06_MinFacGE
-msgid "**Person**: Die ist schon mal grösser als die grösste Zahl, die ich je angeschaut\n"
-"habe!"
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid "**Robo**: `use` auf `∃!` angewendet gibt immer ein bisschen ein Chaos raus,\n"
+"am besten immer gleich ein `simp` hinterher, dann kann man besser arbeiten."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
-msgid "Unendlich viele Primzahlen"
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid "Jetzt hast du zwei Teile, zuerst ein Beweis, dass die Aussage für dein gewähltes\n"
+"Element wahr ist, und rechts vom \"Und\" einen Beweis, dass es das einzige Element mit\n"
+"dieser Eigenschaft ist."
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid "Dieser zweite Teil ist jetzt die Eindeutigkeit."
+msgstr ""
+
+#: Game.Levels.Prado.L08_EvenPrime
+msgid "Gerade Primzahlen"
+msgstr ""
+
+#: Game.Levels.Prado.L08_EvenPrime
 msgid ""
 msgstr ""
 
-#: Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
+#: Game.Levels.Prado.L08_EvenPrime
+msgid "Schau mal durch die Aussagen, die du bisher bewiesen hattest.\n"
+"Du brauchst zwei davon."
+msgstr ""
+
+#: Game.Levels.Prado
+msgid "Prado"
+msgstr ""
+
+#: Game.Levels.Prado
 msgid ""
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
-msgid "Zeige, dass es unendlich viele Primzahlen gibt"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
-msgid "**Du**: `minFac (n ! + 1)` ist der kleinste Primfaktor von $n! + 1$"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L08_InfinitudePrimes
-msgid "Unendlich viele Primzahlen"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L08_InfinitudePrimes
-msgid ""
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime.L08_InfinitudePrimes
-msgid ""
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime
-msgid "Primzahlen"
-msgstr ""
-
-#: Game.Levels.NewStuff.Prime
-msgid "Ihr schlendert durch die Befestigung ohne direktes Ziel. Und sprecht mit\n"
-"verschiedenen Einwohnern."
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
@@ -4696,6 +4707,12 @@ msgid "**Robo**: `f : ℤ → ℤ` ist die Notation für eine Funktion und `f x`
 msgstr ""
 
 #: Game.Levels.Function.L01_Function
+msgid "Lean kann meistens durch Funktionsdefinitionen hindurchsehen, also `rfl`\n"
+"ist schon alles hier. Alternativ kann\n"
+"man mit `simp [«{f}»]` explizit die Definition einsetzen."
+msgstr ""
+
+#: Game.Levels.Function.L01_Function
 msgid "Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend\n"
 "in eine Richtung. Ihr folgt ihrem Finger und euch fällt in weiter ferne eine pompöse Struktur\n"
 "auf einem flachen Hügel auf."
@@ -4708,14 +4725,9 @@ msgstr ""
 #: Game.Levels.Function.L02_Let
 msgid "Ihr macht euch auf in Richtung Bibliothek entlang kleiner Pfade zwischen verschiedensten Behausungen.\n"
 "\n"
-"**Du**: Sag mal, ich weiß jetzt dass ich eine Funktion als `fun x ↦ x + 1` definieren kann,\n"
-"aber wie kann ich ihr einen Namen geben?\n"
+"**Du**: Sag mal, wie definiert ich denn selber eine Funktion?\n"
 "\n"
-"**Robo**: Wenn jemand hier lokal eine Funktion definiert, werden die dir\n"
-"`f : ℤ → ℤ := fun x ↦ x + 1; …` als Objekt mitgeben.\n"
-"\n"
-"**Robo**: Im Beweis hingegen, kannst du dir mit `let f := fun (x : ℤ) ↦ x + 1` selbst eine\n"
-"temporäre Definition machen. Hier, probier mal:"
+"**Robo**: Das kannst du mit `let f := fun (x : ℤ) ↦ x + 1` machen. Hier, probier mal:"
 msgstr ""
 
 #: Game.Levels.Function.L02_Let
@@ -4760,8 +4772,8 @@ msgid "**Robo**: Jetzt kannst du diese mit `use «{g}»` benutzen."
 msgstr ""
 
 #: Game.Levels.Function.L03_Let
-msgid "**Robo**: `(«{g}» ∘ «{f}») x` ist per Definition `«{g}» («{f}» x)`. `simp` kennt dieses\n"
-"Lemma, aber du kannst es auch mit `rw [comp_apply]` direkt verwenden."
+msgid "**Robo**: `(«{g}» ∘ «{f}») x` ist per Definition `«{g}» («{f}» x)`. `simp` würde dieses\n"
+"Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
 msgstr ""
 
 #: Game.Levels.Function.L03_Let
@@ -4771,8 +4783,8 @@ msgid "**Robo**: `ring` sieht durch lokale Definitionen wie\n"
 msgstr ""
 
 #: Game.Levels.Function.L03_Let
-msgid "**Robo**: `(g ∘ «{f}») x` ist per Definition `g («{f}» x)`. `simp` kennt dieses\n"
-"Lemma, aber du kannst es auch mit `rw [comp_apply]` direkt verwenden."
+msgid "**Robo**: `(g ∘ «{f}») x` ist per Definition `g («{f}» x)`. `simp` würde dieses\n"
+"Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
 msgstr ""
 
 #: Game.Levels.Function.L03_Let
@@ -4794,17 +4806,37 @@ msgid "**Du**: Dann verstehst du etwas Mathe?\n"
 "Und damit erreicht ihr den Hügel mit der Bibliothek."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L04_Funext
+msgid "funext"
+msgstr ""
+
+#: Game.Levels.Function.L04_Funext
+msgid "**Du**: Per Definition sind doch zwei Funktionen gleich, wenn sie angewendet auf\n"
+"jedes Element den gleichen Wert haben…\n"
+"\n"
+"**Robo**: Das kannst du mit `funext x` machen, welches, ein beliebiges `x` annimmt, und\n"
+"das Goal von `f = g` zu `f x = g x` ändert."
+msgstr ""
+
+#: Game.Levels.Function.L04_Funext
+msgid "**Robo**: Zur erinnerung, `ring` sieht durch lokale Definition."
+msgstr ""
+
+#: Game.Levels.Function.L04_Funext
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L05_Piecewise
 msgid "Stückweise Definition"
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür\n"
 "zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere\n"
 "ein `g` eingraviert. Dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.\n"
 "\n"
 "**Du**: Also, ich soll zeigen, dass die beiden vertauschbar sind?\n"
@@ -4813,13 +4845,13 @@ msgid "**Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit st�
 "dann für dieses."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) «{x}»` zu `g (f «{x}»)` umschreiben?\n"
 "\n"
 "**Robo**: Mit `simp` klappt das."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 "machen, `by_cases h : 0 ≤ «{x}»`.\n"
 "\n"
@@ -4829,141 +4861,136 @@ msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 "und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ «{x}»)` und `0 > «{x}»` wechseln."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.\n"
 "\n"
 "**Robo**: Dann brauch mal `simp [f, g]`!"
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Robo**: Jetzt hast du `rw [if_pos «{h}»]` zur Verfügung um das if-then-else zu\n"
 "reduzieren."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Robo**: Nochmals `simp [f, g]`."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "**Robo**: `if_neg`, genau!"
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den\n"
 "Durchgang frei."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert\n"
 "`rw [if_pos h]` reduziert eine Aussage `if A then B else C` zu `B`.\n"
 "\n"
 "Umgekehrt kann man `if_neg` verwenden wenn `h : ¬ A`."
 msgstr ""
 
-#: Game.Levels.Function.L04_Piecewise
+#: Game.Levels.Function.L05_Piecewise
 msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert\n"
 "`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.\n"
 "\n"
 "Umgekehrt kann man `if_pos` verwenden wenn `h : A`."
 msgstr ""
 
-#: Game.Levels.Function.L05_Extend
-msgid "Choosing an arbitrary element of a nonempty type."
-msgstr ""
-
-#: Game.Levels.Function.L05_Extend
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L05_Extend
-msgid "`Classical.arbitrary «{A}»` ist ein beliebiges Element in `«{A}»`,\n"
-"`n.toNat` ist entweder die Ganzahl als natürliche Zahl gesehen oder `0` für negative Ganzzahlen.\n"
-"\n"
-"Versuch erst mal, die richtige Funktion zu definieren: `let f : ℤ → A :=` usw."
+#: Game.Levels.Function.L06_Extend
+msgid "Verzweigung"
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
-msgid "Choosing an arbitrary element of a nonempty type."
+msgid "Für eine nicht-negative ganze Zahl `(n : ℤ)` ist `n.toNat` die entsprechende\n"
+"Zahl als Element von `ℕ` betrachtet."
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
+msgid "Versuch erst mal, die richtige Funktion zu definieren: `let g : ℤ → «{A}» :=` usw."
+msgstr ""
+
+#: Game.Levels.Function.L06_Extend
+msgid "Du könntest eine stückweise Funktion mit `if 0 ≤ x then ... else ...`\n"
+"definieren.  Vielleicht wählst du für den zweiten Definitionszweig zunächst mal ein beliebiges Element aus `A`."
+msgstr ""
+
+#: Game.Levels.Function.L06_Extend
+msgid "Aus der Annahme `h : Nonempty A` erhältst Du mit `obtain ⟨a₀⟩ := h` ein ELement aus `A`."
+msgstr ""
+
+#: Game.Levels.Function.L06_Extend
+msgid "Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
+"sehen, ob deine Definition gut war."
+msgstr ""
+
+#: Game.Levels.Function.L07_CongrArg
+msgid "congr_arg"
+msgstr ""
+
+#: Game.Levels.Function.L07_CongrArg
+msgid "**Robo**: Manchmal will man ein Goal der Form `f x = f y` lösen, indem man zeigt, dass\n"
+"`x = y` ist. In dem Fall kann man `apply congr_arg` brauchen."
+msgstr ""
+
+#: Game.Levels.Function.L07_CongrArg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L07_Funext
+#: Game.Levels.Function.L07_CongrArg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L07_Funext
-msgid ""
+#: Game.Levels.Function.L08_CongrFun
+msgid "congr_fun"
 msgstr ""
 
-#: Game.Levels.Function.L07_Funext
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L08_CongrArg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L08_CongrArg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L08_CongrArg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L08_CongrArg
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L09_CongrFun
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L09_CongrFun
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L09_CongrFun
-msgid "`apply congr_fun at «{h}»` ändert `«{h}» : «{f}» = «{g}»` zu\n"
-"`«{h}» : ∀ x, «{f}» x = «{g}» x`."
-msgstr ""
-
-#: Game.Levels.Function.L09_CongrFun
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L09_CongrFun
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L10_Surjective
-msgid "A function which semiconjugates an endofunction to the\n"
-"successor function is surjective."
-msgstr ""
-
-#: Game.Levels.Function.L10_Surjective
-msgid ""
-msgstr ""
-
-#: Game.Levels.Function.L10_Surjective
-msgid "Induktion über `«{n}»`"
-msgstr ""
-
-#: Game.Levels.Function.L10_Surjective
-msgid "**Robo**: Siehst du die Annahme `«{hs}» : f ∘ g = succ ∘ f`?\n"
+#: Game.Levels.Function.L08_CongrFun
+msgid "**Robo**: Was auch vorkommen kann, ist dass man eine Annahme `h : f = g` hat, und diese\n"
+"gerne zu `h : ∀ x, f x = g x` umwandeln möchte. Das macht man mit `apply congr_fun at h`.\n"
 "\n"
-"**Du**: Ja.\n"
+"**Du**: Sag mal, wenn `h : f = g`, dann kann ich doch einfach `rw [h]` brauchen?\n"
 "\n"
-"**Robo**: Um eine Gleichheit von Funktionen zu verwenden, willst du\n"
-"oft `apply congr_fun at «{hs}»` sagen! Das wandelt die Gleichung\n"
-"`f₁ = f₂` in `∀ x, f₁ x = f₂ x` um."
+"**Robo**: Na gut, in so einem einfachen Beispiel ja. Wenn aber `f` ein komplizierterer\n"
+"Ausdruck ist und noch nicht exact so im Goal steht, dann nicht direkt. Komm, mach's mal\n"
+"ohne `rw` oder `simp`!"
+msgstr ""
+
+#: Game.Levels.Function.L08_CongrFun
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L08_CongrFun
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L09_Surjective
+msgid "Boss"
+msgstr ""
+
+#: Game.Levels.Function.L09_Surjective
+msgid ""
+msgstr ""
+
+#: Game.Levels.Function.L09_Surjective
+msgid "**Du**: Diese Aufgabe sagt, mehrheitlich dass eine Funktion `f` in die natürlichen\n"
+"Zahlen surjektiv ist, falls die `0` im Bild liegt und es einen\n"
+"Endomorphismus `g : A → A` gibt, sodass `f ∘ g` das gleiche ist wie, `succ ∘ f`.\n"
+"\n"
+"**Robo*: Im Fachjargon sagt man \"`f` semikonjugiert `g` zu `succ`\".\n"
+"\n"
+"**Du**: Ich glaube, einen Beweis den ich kenne startet mit Induktion über `n`"
+msgstr ""
+
+#: Game.Levels.Function.L09_Surjective
+msgid "**Robo**: Willst du vielleicht `«{hs}»`\n"
+"zu `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)` umschreiben?"
 msgstr ""
 
 #: Game.Levels.Function
@@ -5002,13 +5029,6 @@ msgid "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L01_Surjective
-msgid "**Du**: das is doch eigentlich ganz einfach… Kann man das denn\n"
-"noch weiter vereinfachen?\n"
-"\n"
-"**Robo**: Wenn du `«{f}»` auch einsetzt vermutlich schon."
-msgstr ""
-
-#: Game.Levels.FunctionSurj.L01_Surjective
 msgid "Der Gelehrte händigt euch schmunzelnd das Buch aus."
 msgstr ""
 
@@ -5017,7 +5037,10 @@ msgid "Not exhausted by naturals."
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L02_CurrySurjective
-msgid ""
+msgid "**Robo**: Du hast zwei Möglichkeiten, entweder du kannst mit `constructor` anfangen,\n"
+"oder du machst mal `unfold Surjective` und schaust dann, ob `push_neg` was kann.\n"
+"\n"
+"**Robo**: Btw, Ich glaube `ne_comm`, welches `a ≠ b ↔ b ≠ a` sagt, könnte hier nützlich sein."
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L03_LeftInverse
@@ -5033,12 +5056,19 @@ msgstr ""
 msgid "Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition."
 msgstr ""
 
-#: Game.Levels.FunctionSurj.L04_RightInverse
-msgid "Right inverse"
+#: Game.Levels.FunctionSurj.L03_LeftInverse
+msgid "`Function.RightInverse f g` is als `LeftInverse g f` definiert.\n"
+"\n"
+"Man muss `Function.` anfügen, da Mathlib noch eine andere Definition `RightInverse`\n"
+"besitzt, weshalb ein simples `RightInverse` nicht eindeutig wäre."
+msgstr ""
+
+#: Game.Levels.FunctionSurj.L03_LeftInverse
+msgid ""
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L04_RightInverse
-msgid ""
+msgid "Right inverse"
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L04_RightInverse
@@ -5050,7 +5080,10 @@ msgid "Does it have a right inverse?"
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L05_RightInverse
-msgid "We say `f : A → B` has a right inverse if there exists a function `g : B → A` such that `f ∘ g = id`."
+msgid "Während `Function.RightInverse f g` die konkrete Inverse `g` angibt, ist `HasRightInverse f`\n"
+"lediglich die Aussage, dass ein Inverses existiert.\n"
+"\n"
+"Dieses kann natürlich trotzdem mit `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …` definiert werden."
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L06_choose
@@ -5058,19 +5091,7 @@ msgid "Every function with nonempty fibres has a right inverse."
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L06_choose
-msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements\n"
-"`x` in the domain of `f` such that `f x` is in `S`.\n"
-"\n"
-"```\n"
-"f ⁻¹' S = {x | f x ∈ S}\n"
-"```\n"
-"\n"
-"We call the preimage `f ⁻¹' { b }` of the singleton `{ b }` the fiber of `b`."
-msgstr ""
-
-#: Game.Levels.FunctionSurj.L06_choose
-msgid "Since we know that for each `b : B`, the fiber is nonempty, we can choose some element of that fibre using the axiom of choice.\n"
-"The tactic `choose g hg using nonempty_fibre` creates a function which chooses an `a : A` and `hg` witnesses that `a` is in the fiber of `b`."
+msgid ""
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L07_SurjectiveRightInverse
@@ -5093,7 +5114,9 @@ msgid "Surjektivität"
 msgstr ""
 
 #: Game.Levels.FunctionSurj
-msgid ""
+msgid "Für jede beweisbare Aussage gibt es eine Taktik-Sequenz, die die Aufgabe löst.\n"
+"\n"
+"Die Auswertungsfunktion von gültigen Taktiksequenzen ist also surjektiv."
 msgstr ""
 
 #: Game.Levels.FunctionInj.L01_Injective
@@ -5543,6 +5566,291 @@ msgid "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mon
 "vereinzelte aus Lehm.\n"
 "\n"
 "Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid "Mengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid "Eine beliebige Menge von natürlichen Zahlen ist `A : Set ℕ`, oder wenn man diese\n"
+"explizit definiert `{1, 6, 4} : Set ℕ`\n"
+"\n"
+"In diesem Planeten wollen wir die meisten Aussagen aus der Mengenlehre auf Logik\n"
+"reduzieren, damit wir sie mit `tauto` lösen können."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid "Diese Aussage läst sich intern auf\n"
+"`1 = 1 ∨ 1 = 6 ∨ 1 = 4` reduzieren, deshalb kann `tauto` direkt beweisen,\n"
+"dass etwas in einer konkreten Menge liegt."
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L01
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid "Schnitt und Vereinigung"
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid "Bei Gleichheit von Mengen kann durch ein Standardschema aus 3\n"
+"Schritten bewiesen werden.\n"
+"\n"
+"Hier als Beispiel die Distributivität vom Schnitt `∩` über die\n"
+"Vereinigung `∪`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid "Die Taktik `ext x` zeigt eine Mengengleichheit `A = B`\n"
+"durch `x ∈ A ↔ x ∈ B`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid "Als zweiter Schritt kann `simp` verwendet werden, um die Definition\n"
+"von `∈ …` einzusetzen.\n"
+"\n"
+"`simp` braucht hier Aussagen wie\n"
+"- `«{x}» ∈ «{A}» ∩ _ ↔ «{x}» ∈ «{A}» ∧ «{x}» ∈ _`\n"
+"- `«{x}» ∈ «{B}» ∪ «{C}» ↔ «{x}» ∈ «{B}» ∨ «{x}» ∈ «{C}»`\n"
+"deren Namen müssen wir aber nich lernen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid "Jetzt haben wir die Mengengleichung auf Logik\n"
+"zurückgeführt und als dritter Schritt kann `tauto` den Rest übernehmen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L02
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid "Teilmengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid "Teilmengen `A ⊆ B` sind ebenfalls nur Logik."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid "Zum besseren Verständnis kannst du mal `simp [subset_def] at *`\n"
+"eingeben um zu sehen, wie `⊆` definiert ist."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid "Wie du siehst ist die Definition von `«{A}» ⊆ «{B}»` durch `∀ x ∈ «{A}», x ∈ «{B}»`\n"
+"definiert, was kurz für `∀ x : ℕ, x ∈ «{A}» → x ∈ «{B}»` ist,\n"
+"weshalb `tauto` diese Logik-Aussagen auch verwenden kann."
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L03
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L04
+msgid "Teilmengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L04
+msgid "Da `A ⊆ B` als `∀ x : ℕ, x ∈ A → x ∈ B` definiert ist,\n"
+"kannst du auch `intro x` brauchen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L04
+msgid "Jetzt zuerst mal nach unserem Schema `simp` benützen,\n"
+"um die Aussage auf Logik zu reduzieren."
+msgstr ""
+
+#: Game.Levels.SetTheory.L04
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid "Antisymmetrie"
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid "Am Anfang hatten wir gesehen, dass man Mengengleichheit durch\n"
+"`ext x` angehen kann.\n"
+"\n"
+"Hier lernen wir eine nützliche Alternative:\n"
+"\n"
+"`rw [Set.Subset.antisymm_iff]`\n"
+"\n"
+"mit dem Theorem\n"
+"\n"
+"```\n"
+"Set.Subset.antisymm_iff : A = B ↔ A ⊆ B ∧ B ⊆ A\n"
+"```\n"
+"\n"
+"welches wir hier beweisen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid "Ersetz mal `«{A}»` durch `«{B}»`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid "Diesen Teil würde ich trotzdem mit unserem Schema zeigen,\n"
+"also `ext x` zuerst…"
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L06
+msgid "leere Menge"
+msgstr ""
+
+#: Game.Levels.SetTheory.L06
+msgid "Die leere Menge wird als `(∅ : Set A)` geschrieben.\n"
+"\n"
+"Hier ein nützliches Lemma."
+msgstr ""
+
+#: Game.Levels.SetTheory.L06
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L06
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L07
+msgid "gesamte Menge"
+msgstr ""
+
+#: Game.Levels.SetTheory.L07
+msgid "Auf der anderen Seite ist `(univ : Set ℕ)` die gesamte Teilmenge\n"
+"aller Elemente aus `ℕ`.\n"
+"\n"
+"Ist das nicht einfach `ℕ`?\n"
+"\n"
+"Nein, `(univ : Set ℕ)` und `(ℕ : Type)` sind zwei unterschiedliche Objekte, auch\n"
+"wenn sie informell das gleiche Beschreiben."
+msgstr ""
+
+#: Game.Levels.SetTheory.L07
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L07
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid "Übung"
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid "So, jetzt sind wir richtig beim Üben angekommen.\n"
+"\n"
+"Ah und `A \\ B` ist die Differenz von Mengen, das ist aber nicht\n"
+"so wichtig für das Lösen der Aufgabe."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid "Als erster Schritt, die Mengengleichung, wird mit `ext` angegangen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid "Als zweiter Schritt, sobald man `∈ _` hat, macht `simp` weiter."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid "Als letzter Schritt, für eine Logik-Aussage,\n"
+"wird mit `tauto` geschlossen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L08
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L09
+msgid "Mengen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L09
+msgid "Das Komplement einer Menge ist `Aᶜ`, was das gleiche ist wie `(univ : Set ℕ) \\ A`.\n"
+"\n"
+"Aber auch hier: üb das Schema."
+msgstr ""
+
+#: Game.Levels.SetTheory.L09
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L09
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid "Teilmengen mit Konditionen"
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid "Eine wichtige Konstruktion ist noch eine Menge mit Nebenbedingungen:\n"
+"\n"
+"\"alle natürlichen Zahlen die ungerade sind\"."
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid "Aber auch hier, `∈ _` gehst du erst einmal mit `simp` an."
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid "Wir hatten bereits einmal wie man aussagen über konkrete Zahlen löst"
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid "das war `decide`."
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L10
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory.L11
+msgid "Abschluss"
+msgstr ""
+
+#: Game.Levels.SetTheory.L11
+msgid "Viel Spass!"
+msgstr ""
+
+#: Game.Levels.SetTheory.L11
+msgid ""
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid "Mengea"
+msgstr ""
+
+#: Game.Levels.SetTheory
+msgid ""
 msgstr ""
 
 #: Game

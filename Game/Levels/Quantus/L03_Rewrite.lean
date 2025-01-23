@@ -7,27 +7,22 @@ Title "Rewrite"
 
 Introduction ""
 
-/--
-$$
-\begin{aligned}
-  a &= b \\
-  a + a ^ 2 &= b + 1 \\
-  \vdash b + b ^ 2 &= b + 1
-\end{aligned}
-$$
- -/
-Statement (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
-  Hint "
-    **Du**: Hier muss man, glaube ich, einfach in Annahme `{g}` die
-    Variable `{a}` durch `{b}` ersetzen.
+Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
+  Hint "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis*
+  schon gelöst hatten.
+  Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!
 
-    **Robo**: Genau! Das machst du mit `rw [{h}] at {g}`."
-  rw [h] at g
-  Hint (hidden := true) "**Robo**: Schau mal durch die Annahmen."
+  **Robo**: Richtig. Und im Grunde macht das gar keinen Unterschied.
+  Du kannst `=` und `↔` mit `rw` praktisch gleich behandeln."
+
+  Hint (hidden := true) "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?
+
+  **Robo**: Probiers doch einfach."
+  rw [h₁]
+  Hint (hidden := true) "**Du**: Wie war das nochmals mit rückwärts umschreiben?
+
+  **Robo**: `←` ist `\\l`. Und dann `rw [← hₓ]`"
+  rw [←h₂]
   assumption
 
-Conclusion
-"
-**Robo**: Noch ein Trick: Mit `rw [h] at *` kann man gleichzeitig mittels `h` **alle**
-Annahmen und das Goal umschreiben.
-"
+Conclusion ""
