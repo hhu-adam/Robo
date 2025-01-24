@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jan 23 21:53:45 2025\n"
+"POT-Creation-Date: Fri Jan 24 10:25:28 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -4476,17 +4476,52 @@ msgid "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslands
 " vereinzelten Bäumen hindurch. Ihr beratet kurz und beschließt, den Spuren zu folgen."
 msgstr ""
 
-#: Game.Levels.End
-msgid "Ende"
+#: Game.Levels.Ciao.L01
+msgid "Weiter gehts …"
 msgstr ""
 
-#: Game.Levels.End
-msgid "Das ist das Ende unserer Geschichte. Du fühlst dich gut ausgerüstet, dich mit den Formalosophen\n"
-"zu unterhalten.\n"
+#: Game.Levels.Ciao.L01
+msgid ""
+msgstr ""
+
+#: Game.Levels.Ciao.L01
+msgid "**Du**: Das war ja nun nicht so schwer …\n"
 "\n"
-"Robo beschließt, dass du seien Hilfe nicht mehr benötigst. Euer Abenteuer hat ihn inspiriert,\n"
-"er besteigt sein Raumschiff auf der Suche nach einem großen, ungelösten Theorem,\n"
-"welches er gerne beweisen würde, und düst davon."
+"**Robo**:  Ich glaube, das war Leansch für „Es geht immer weiter …”.\n"
+"\n"
+"**Robo**:  Oh, schau mal, noch eine Nachricht:\n"
+"\n"
+"\n"
+"*Liebe Erdwesen, es war uns ein Vergnügen, euch kennenzulernen!\n"
+"Es tut uns aufrichtig leid, dass ihr euch in unser Formaloversum verirrt habt und\n"
+"nicht wieder nach Hause findet.  Aber wir haben noch eine gute Nachricht:\n"
+"Ihr seid nicht die einzigen!\n"
+"Fliegt nur rasch weiter zum Planeten Zulip.\n"
+"Dort werdet ihr viele weitere Erdwesen finden, die sich ins Formaloversum verirrt haben.\n"
+"Zulip ist groß, gewiss werdet auch ihr dort einen neues Zuhause finden.  Hier die Koordinaten:*\n"
+"\n"
+"[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n"
+"\n"
+"Mit den aufrichtigsten Grüßen\n"
+"– Eure Formalosophen"
+msgstr ""
+
+#: Game.Levels.Ciao
+msgid "Ciao"
+msgstr ""
+
+#: Game.Levels.Ciao
+msgid "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht haben?\n"
+"\n"
+"**Robo**:  Ja, sieht so aus.\n"
+"\n"
+"**Du**:  Was machen wir jetzt?\n"
+"\n"
+"**Robo:** Keine Ahnung.\n"
+"\n"
+"Nach einer Weile …\n"
+"\n"
+"**Robo:** Du, schau mal, hier ist eine Nachricht reingekommen."
 msgstr ""
 
 #: Game.Levels.Prado.L01_Dvd

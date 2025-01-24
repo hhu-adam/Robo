@@ -18,7 +18,7 @@
 | FunctionImage                 | Samarkand| +              |        |              |        |         | TODO    |                                                                                                  |
 | Cantor                        | ==       | ++             | +      | +            | +      |         | +++     |                                                                                                  |
 | Robotswana                    | ==       | ++             | +      | update (L05) | update |         | +++     |                                                                                                  |
-| GoodByePlanet                 | Ciao     | (done)         | (done) | (done)       | TODO   |         | +++     |                                                                                                  |
+| Ciao                          | ==       | +              | +      | +            | +      |         | +++     |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
 | **Version 2.0:**              |          |                |        |              |        |         |         |                                                                                                  |
 | SymmSquare                    | TODO     | o TODO: L08    | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
@@ -27,10 +27,10 @@
 | RealUncountable               | TODO     | TODO .         | TODO   | TODO         | TODO   |         | TODO    |                                                                                                  |
 |                               |          |                |        |              |        |         |         |                                                                                                  |
 | **Possible future versions:** |          |                |        |              |        |         |         |                                                                                                  |
-|  ???                          |          |                |        |              |        |         | +++ (librarian)        |                                                                                                  |                                
-| Lineare Independence          |          |                |        |              |        |         | +++ (mushrooms with flags)  |                                                                                                  |  
-| Intervals          |          |                |        |              |        |         |     |                                                                                                  |  
-| Continuity          |          |                |        |              |        |         |     |                                                                                                  |  
+|  ???                          |          |                |        |              |        |         | +++ (librarian)        |                                                                                                  |
+| Lineare Independence          |          |                |        |              |        |         | +++ (mushrooms with flags)  |                                                                                                  |
+| Intervals          |          |                |        |              |        |         |     |                                                                                                  |
+| Continuity          |          |                |        |              |        |         |     |                                                                                                  |
 | Epsilon-Delta-Differentiability |          |                |        |              |        |         | +++ (ants) |                                                                                                  |
 | Differentiability             |          |                |        |              |        |         | +++ (snail) |                                                                                                  |
 | ContinuousFunction            |          | TODO ..        |        |              |        |         |         |                                                                                                  |
@@ -55,14 +55,14 @@
 # Prado (only even prime is 2)
 
 **intro**
-You land next to a magnificent building in neo-classical style.  
+You land next to a magnificent building in neo-classical style.
 An elegant penguin-like figure is waiting for you at the grand entrance.
 He bows deeply.  He is very happy to see you.  You are the first visitors to the newly built Prado, the Prime-Adoration museum.
 
-The main hall is massive, but completely empty apart from a pillar with two small marbles on it. 
-The prime two, as the penguin explains.  
-When you ask for further exhibits, he apologizes. This is currently the only one. 
-The museum is very new.  
+The main hall is massive, but completely empty apart from a pillar with two small marbles on it.
+The prime two, as the penguin explains.
+When you ask for further exhibits, he apologizes. This is currently the only one.
+The museum is very new.
 
 He wants to take you on a tour of the empty rooms, and you agree.
 
@@ -81,10 +81,10 @@ Robo looking up at it, not terribly impressed.
 # Piazza (set of primes is infinite)
 
 **intro**
-You land on a planet that is bustling with life.  
+You land on a planet that is bustling with life.
 It appears you are in the middle of some market place.
-There are traders in all shapes and sizes, and they each have baskets fill with little “things” of all shapes and sizes.  
-You can’t make out what these “things” are, but it’s notable that everything looks very much sorted.  There are baskets of small round red “things”, baskets of small flat green “things”, baskets of small star-shaped dark blue “things” and so on.  
+There are traders in all shapes and sizes, and they each have baskets fill with little “things” of all shapes and sizes.
+You can’t make out what these “things” are, but it’s notable that everything looks very much sorted.  There are baskets of small round red “things”, baskets of small flat green “things”, baskets of small star-shaped dark blue “things” and so on.
 The traders all appear to be busy trading with each other.
 A group of childern approaches you.
 
@@ -98,8 +98,8 @@ You try to help them.
 
 Named after [Franciscus Vieta](https://en.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te), who apparently invented variables. He was also a code-breaker for the king, and had to navigate difficult and dangerous political situations.
 
-**intro**: 
-You land on a planet that appears to be in a state of civil war.  
+**intro**:
+You land on a planet that appears to be in a state of civil war.
 Every now and then arrows whiz past.  You cannot make out where they come from or who's shooting, and there's nowhere to take cover.
 Your impuls us to go straight back into the spaceship, but then you see Vieta, standing alone, out there in the open, seemingly untroubled, reading something.
 He greets you warmly.  He explains you do not need to be afraid.  You just has to stand in the right place at the right moment.  He will take care of you.
@@ -107,7 +107,7 @@ He greets you warmly.  He explains you do not need to be afraid.  You just has t
 **in between questions**
 Vieta cannot share what he is reading.
 But he can entertain you with some questions.
-Every now and then, Vieta asks to walk with him over here or over there.  
+Every now and then, Vieta asks to walk with him over here or over there.
 
 **end**
 At the end, he says actually right now would be a good time to leave. He will be alright.
@@ -121,13 +121,13 @@ Robo looking up at Vieta.  Vieta very elegantly dressed in 16th century style, c
 **intro**
 You approach a planet that is dominated by two skyscrapers, which are connected by tubes.
 One is tall and thin, the other a bit fatter and smaller.
-You carefully land on top of the tall one. The spaceship only just fits in the landing area.  
+You carefully land on top of the tall one. The spaceship only just fits in the landing area.
 As it turns out, this was the wrong choice.  A lone concierge greets you and explains that everyone else is eagerly awaitiing you at the other skyscraper.
 This skyscraper, tower A, is where they all sleep (in English: our “domain”, though unfortunately that won't work in German). The other skyscraper, tower B, is where they spend the day (in English: our “codomain”).  But it's ok.  The tubes are there to quickly get from A to B.  He takes you downstairs to one of the tubes.  You take a seat in a transport capsule that will take you through the tube. Concierge:  “It’s good that every one is already in B.  That way, we won't crash on arrival.”
 
 **in between questions**
 You each sit in a transport capsule and glide over to the other side, where you are greeted.
-The locals are very proud that every single floor of tower B has an incoming tube.  
+The locals are very proud that every single floor of tower B has an incoming tube.
 As the conversation continues, it transpires that most floors have several incoming tubes, and that's why they frequently have crashes.
 
 **end**
@@ -137,7 +137,7 @@ When you want to leave, it turns out you have to go down and walk back to tower 
 
 A view of the two towers and the tubes, either as a “realistic” image or as a tube map (cf. London underground).  Tall and thin tower with the dormitories on the left, smaller fatter tower with offices, shops or amusement park features on the right.
 
-# FunctionInj = Mono 
+# FunctionInj = Mono
 
 **intro**
 This planet again has two towers, one tall, one fat, again connected by tubes.
@@ -157,13 +157,13 @@ As for Epo.  Smaller fatter tower with dormitories on the left, tall thin tower 
 
 # FunctionBij = Iso
 
-**intro** 
-Again a planet with two skyscrapers connected by tubes.  This time, they appear equally high, so you really don't have any clue where to land.  You choose one of them randomly.  You made the right choice, hurray!  
+**intro**
+Again a planet with two skyscrapers connected by tubes.  This time, they appear equally high, so you really don't have any clue where to land.  You choose one of them randomly.  You made the right choice, hurray!
 
 **in between questions/end**
 Though you landed in the right place, the inhabitants are keen to show off their transport capsule system.  You can each have your own capsule.
 
-And it turns out you can go back and forth!  
+And it turns out you can go back and forth!
 
 But this also means you have to be careful.  They do have rather a lot of crashes.
 
@@ -173,20 +173,20 @@ Robo enjoying a ride in a transport capsule.
 # FunctionImage = Samarkand
 
 **intro**
-Already from afar, this planet looks very colourful.  As you come closer, you see that most of the surface is covered in intricated geometric patterns.  But there are still some white spots, and you land in one of the them.  First, it seems the planet is completely empty and uninhabited.  Then, in the distance, in a colourful area, you notice something.  A bump in the flat landscape.  You are a bit hesitant to walk over the colour, but it appears to be dry and firm.  As you draw closer, you notice that the bump is a creature ressembling a tortoise.  It's lying, completely motionless, but when you approach it greets you in a friendly tone. 
+Already from afar, this planet looks very colourful.  As you come closer, you see that most of the surface is covered in intricated geometric patterns.  But there are still some white spots, and you land in one of the them.  First, it seems the planet is completely empty and uninhabited.  Then, in the distance, in a colourful area, you notice something.  A bump in the flat landscape.  You are a bit hesitant to walk over the colour, but it appears to be dry and firm.  As you draw closer, you notice that the bump is a creature ressembling a tortoise.  It's lying, completely motionless, but when you approach it greets you in a friendly tone.
 The tortoise explains that by lying in the same place for long enough she will create a copy of the pattern on the surface underneath on her belly.
-She will then move to the edge of the white area and lie down there to transfer the colour to the white area.  
+She will then move to the edge of the white area and lie down there to transfer the colour to the white area.
 
-She needs to stay lying, but she wants to entertain you with some questions.  
+She needs to stay lying, but she wants to entertain you with some questions.
 
 **in between questions**
 She needed centuries of training to do this correctly.  The most difficult part is to find the right part of the existing pattern (the correct preimage) to continue.
-Most of the planet was decorated by her ancestors.  
+Most of the planet was decorated by her ancestors.
 
 **end**
 It is no longer known where the intial pattern(s) came from.
 
-**picture** 
+**picture**
 The turtle lying on an [islamic geometric pattern](https://duckduckgo.com/?t=ffab&q=islamic+geometric+pattern&iax=images&ia=images), seen from above.
 
 

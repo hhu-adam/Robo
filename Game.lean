@@ -11,7 +11,7 @@ import Game.Levels.Babylon
 import Game.Levels.Cantor
 import Game.Levels.Robotswana
 
-import Game.Levels.End
+import Game.Levels.Ciao
 
 import Game.Levels.Prado
 
@@ -97,10 +97,10 @@ CoverImage "images/Cover.png"
 
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
 
-Dependency Robotswana → End
-Dependency Cantor → End
-Dependency FunctionImage → End
-Dependency FunctionBij → End
+Dependency Robotswana → Ciao
+Dependency Cantor → Ciao
+Dependency FunctionImage → Ciao
+Dependency FunctionBij → Ciao
 
 -- Dependency Babylon → FunctionSurj
 
