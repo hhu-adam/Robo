@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Jan 25 13:50:29 2025\n"
+"POT-Creation-Date: Sat Jan 25 15:28:51 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -359,6 +359,14 @@ msgid "`have h : P` führt ein Zwischenresultat ein.\n"
 "  vertauscht sind.\n"
 "* `let h : Prop := A ∧ B` ist verwandt mit `have`, mit Unterschied, dass man mit `let`\n"
 "  eine temporäre Definition einführt."
+msgstr ""
+
+#: Game.Doc.Tactic
+msgid "Mit `if … then … else` können Abbildungen mit zwei Definitionszweigen definiert werden.\n"
+"\n"
+"## Beispiel\n"
+"\n"
+"`fun x ↦ if 0 ≤ x then -x else x` definiert die Betragsfunktion."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -4989,20 +4997,24 @@ msgid "Für eine nicht-negative ganze Zahl `(n : ℤ)` ist `n.toNat` die entspre
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
-msgid "Versuch erst mal, die richtige Funktion zu definieren: `let g : ℤ → «{A}» :=` usw."
+msgid "**Robo**: Ich vermute, du solltest als erstes mal ein Element aus `A` wählen …"
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
-msgid "Du könntest eine stückweise Funktion mit `if 0 ≤ x then ... else ...`\n"
-"definieren.  Vielleicht wählst du für den zweiten Definitionszweig zunächst mal ein beliebiges Element aus `A`."
+msgid "**Robo**: … zum Beispiel mit `obtain ⟨a₀⟩ := h`."
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
-msgid "Aus der Annahme `h : Nonempty A` erhältst Du mit `obtain ⟨a₀⟩ := h` ein ELement aus `A`."
+msgid "**Robo**: Und jetzt versuch mal, die richtige Funktion zu definieren: `let g : ℤ → «{A}» :=` usw."
 msgstr ""
 
 #: Game.Levels.Function.L06_Extend
-msgid "Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
+msgid "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then ... else ...`\n"
+"definieren."
+msgstr ""
+
+#: Game.Levels.Function.L06_Extend
+msgid "**Robo**: Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
 "sehen, ob deine Definition gut war."
 msgstr ""
 

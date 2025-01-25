@@ -247,6 +247,16 @@ TacticDoc «have»
 
 
 /--
+Mit `if … then … else` können Abbildungen mit zwei Definitionszweigen definiert werden.
+
+## Beispiel
+
+`fun x ↦ if 0 ≤ x then -x else x` definiert die Betragsfunktion.
+-/
+TacticDoc «if»
+
+
+/--
 `induction n` führt einen Induktionsbeweis über `n`.
 
 ## Detail
