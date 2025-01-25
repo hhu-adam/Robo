@@ -1,16 +1,23 @@
 import Game.Metadata
 
 
-World "Function"
-Level 5
+World "Vieta"
+Level 6
 
 Title "Stückweise Definition"
 
 Introduction
 "
-Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür
-zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere
-ein `g` eingraviert. Dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende.
+**Vieta**:  Wir sollten doch noch mal ein Stück laufen.  Hier entlang!
+
+Er eilt davon, und ihr folgt, so schnell ihr könnt.
+Als ihr den Ort erreicht, an dem er schließlich stehen bleibt, bist du völlig außer Puste.
+Vieta lacht.
+
+**Vieta**:  Reine Vorsichtsnahme!  Ich muss ja auf meine Besucher achtgeben.
+So viel Besuch bekomme ich nicht!
+
+Er reicht euch das nächste Blatt.
 "
 
 open Set Function
@@ -20,7 +27,7 @@ Statement :
     let g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
     f ∘ g = g ∘ f := by
   Hint "
-    **Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.
+    **Robo**: Jetzt haben wir zwei Abbildungen, eine davon mit stückweiser Definition.
 
     **Du**: Also, ich soll zeigen, dass die beiden vertauschbar sind?
 
@@ -42,26 +49,22 @@ Statement :
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
     und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 > {x}` wechseln."
   by_cases h : 0 ≤ x
-  · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.
+  · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen benutzen.
 
-    **Robo**: Dann brauch mal `simp [f, g]`!"
+    **Robo**: Dann benutz sie mal `simp [f, g]`!"
     simp [f, g]
     Hint "
-      **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung um das if-then-else zu
+      **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung, um das if-then-else zu
       reduzieren."
     rw [if_pos h, if_pos h]
     ring
   · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
     simp [f, g]
-    Hint "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
+    Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
     Hint (hidden := true) "**Robo**: `if_neg`, genau!"
     rw [if_neg h, if_neg h]
 
-Conclusion
-"
-Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den
-Durchgang frei.
-"
+Conclusion""
 
 /--
 Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert

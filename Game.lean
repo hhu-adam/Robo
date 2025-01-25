@@ -15,7 +15,7 @@ import Game.Levels.Ciao
 
 import Game.Levels.Prado
 
-import Game.Levels.Function
+import Game.Levels.Vieta
 import Game.Levels.FunctionSurj
 import Game.Levels.FunctionInj
 import Game.Levels.FunctionImage

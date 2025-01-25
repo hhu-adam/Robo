@@ -1,14 +1,14 @@
 import Game.Metadata
 
 
-World "Function"
-Level 6
+World "Vieta"
+Level 7
 
 Title "Verzweigung"
 
 Introduction "
-Für eine nicht-negative ganze Zahl `(n : ℤ)` ist `n.toNat` die entsprechende
-Zahl als Element von `ℕ` betrachtet.
+Ihr hört aus der Ferne Kampfgeräusche.  Vieta scheint nach wie vor nicht beunruhigt.
+Er gibt euch noch eine Aufgabe.
 "
 
 open Function Set Nat

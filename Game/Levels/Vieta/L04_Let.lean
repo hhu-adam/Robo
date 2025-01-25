@@ -1,14 +1,19 @@
 import Game.Metadata
 
 
-World "Function"
-Level 3
+World "Vieta"
+Level 4
 
 Title "let"
 
 Introduction
 "
-**Du**: Kannst du mir nochmals eine Aufgabe stellen, Robo?
+**Vieta**:  Jetzt müssen wir mal ein Stück hier rüber gehen.
+
+Er schiebt euch vorsichtig ein paar Meter weiter.  Einen Moment später gehen an dem Ort,
+an dem ihr eben gestanden habt, drei Pfeile nieder und bleiben im Boden stecken.
+
+**Vieta**: Ganz ruhig, ich kenne mich hier aus.  Hier, ich habe noch mehr für euch.
 "
 
 open Function
@@ -17,17 +22,16 @@ Statement (x : ℤ) :
     let f : ℤ → ℤ := fun x ↦ x + 5
     ∃ (g : ℤ → ℤ), (g ∘ f) x = x + 2 := by
   Hint "
-    **Du**: Ist `g ∘ {f}` Komposition von Funktionen?
+    **Du**: Ist `g ∘ {f}` Komposition von Abbildungen?
 
     **Robo**: Richtig! Das schreibt man mit `\\comp`.
 
     **Du** Und hier könnte ich also wieder
-    `let g := fun (x : ℤ) ↦ _` definieren oder direkt
-    `use fun (x : ℤ) ↦ _`?
+    `let g : ℤ → ℤ := fun x ↦ _` definieren?
 
-    **Robo**: Genau!"
+    **Robo**:  Ja, oder sogar  direkt `use fun (x : ℤ) ↦ _`?"
   Branch
-    let g := fun (x : ℤ) ↦ x - 3
+    let g : ℤ → ℤ := fun x ↦ x - 3
     Hint "**Robo**: Jetzt kannst du diese mit `use {g}` benutzen."
     use g
     Hint "
@@ -57,12 +61,4 @@ NewTheorem Function.comp_apply
 DisabledTactic simp simp_rw
 TheoremTab "Function"
 
-Conclusion
-"
-**Du**: Dann verstehst du etwas Mathe?
-
-**Robo**: Ich hatte ja keine Ahnung ob die generierte Aufgabe beweisbar ist… aber offenbar
-hatte ich Glück.
-
-Und damit erreicht ihr den Hügel mit der Bibliothek.
-"
+Conclusion""

@@ -1,23 +1,22 @@
 import Game.Metadata
 
 
-World "Function"
-Level 7
+World "Vieta"
+Level 8
 
 Title "congr_arg"
 
 
 Introduction
-"
-**Robo**: Manchmal will man ein Goal der Form `f x = f y` lösen, indem man zeigt, dass
-`x = y` ist. In dem Fall kann man `apply congr_arg` brauchen.
-"
+"Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter."
 
 open Function
 
 Statement {x y : ℤ} (f : ℤ → ℤ) (h : x = y) :
     let g : ℤ → ℤ := fun x ↦ x + 3;
     f (g 0) = f 3 := by
+  Hint "**Robo**: Oh, das ist ein Fall für `congr_arg`.  Wenn du schon weiß, dass `x = y, erhälst du
+ `f x = f y` mit `apply congr_arg`."
   apply congr_arg
   rfl
 

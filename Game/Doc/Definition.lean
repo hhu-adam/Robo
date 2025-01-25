@@ -45,12 +45,11 @@ DefinitionDoc Function.StrictMono as "StrictMono"
 
 
 /--
-Anonyme Funktionen kann man mit `fun (x : ℤ) => 2 * x` definieren und
-wie andere Objekte verwenden.
-
-Note: `=>` wird in mathlib oft auch `↦` (`\\maps`) geschrieben.
+Anonyme Funktionen kann man mit `fun (x : ℤ)  2 * x` definieren und
+wie andere Objekte verwenden.  Den Pfeil `↦` schreibt man als `\\maps` oder `\\mapsto`.
+Alternativ kann man statt `↦` auch `=>` verwenden.
 -/
-DefinitionDoc Symbol.function as "fun x => _"
+DefinitionDoc Symbol.function as "fun x ↦ _"
 
 
 

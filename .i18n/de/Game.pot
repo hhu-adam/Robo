@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Jan 25 15:28:51 2025\n"
+"POT-Creation-Date: Sat Jan 25 20:16:12 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -49,10 +49,9 @@ msgid "`f` ist strikt monoton wenn\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Anonyme Funktionen kann man mit `fun (x : ℤ) => 2 * x` definieren und\n"
-"wie andere Objekte verwenden.\n"
-"\n"
-"Note: `=>` wird in mathlib oft auch `↦` (`\\\\maps`) geschrieben."
+msgid "Anonyme Funktionen kann man mit `fun (x : ℤ)  2 * x` definieren und\n"
+"wie andere Objekte verwenden.  Den Pfeil `↦` schreibt man als `\\\\maps` oder `\\\\mapsto`.\n"
+"Alternativ kann man statt `↦` auch `=>` verwenden."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -4756,172 +4755,203 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L01_Function
+#: Game.Levels.Vieta.L01_FunctionNotation
 msgid "Anonyme Funktionen"
 msgstr ""
 
-#: Game.Levels.Function.L01_Function
-msgid "Auf die Frage hin, ob sie von einer Bibliothek wisse, erzählt euch das kleine Mädchen,\n"
-"dass es auf der Insel nur eine gäbe, aber sie bedrängt euch so mit einer Frage,\n"
-"dass sie euch gar nicht sagt, wo dieser zu finden sei."
+#: Game.Levels.Vieta.L01_FunctionNotation
+msgid "**Vieta:** Kommt, ich zeig euch etwas …\n"
+"\n"
+"Er gibt dir ein Stück Papier."
 msgstr ""
 
-#: Game.Levels.Function.L01_Function
-msgid "**Robo**: `f : ℤ → ℤ` ist die Notation für eine Funktion und `f x` ist diese Funktion\n"
-"angewendet auf ein Element `(x : ℤ)`.\n"
+#: Game.Levels.Vieta.L01_FunctionNotation
+msgid "**Du**: Sieht aus, als wäre `f` eine Abbildung von `ℤ` nach `ℕ`.\n"
 "\n"
-"**Du**: War `→` nicht eben noch eine Implikation?\n"
+"**Robo**: Ja, genau.  Und `f n` ist die Notation für $f(n)$.  Aber auf Leansch lässt man\n"
+"die Klammern weg.  Wenn du sie setzen möchtest,  musst du unbedingt Leerzeichen\n"
+"um die Klammern setzen – so: `f (n)`.\n"
 "\n"
-"**Robo**: Doch, die brauchen das gleiche Zeichen für beides.\n"
+"**Du**: Ok, will ich mir merken.  Aber da die Abbildung hier nur Werte in ℕ annimmt,\n"
+"ist ja eigentlich nichts zu zeigen."
+msgstr ""
+
+#: Game.Levels.Vieta.L01_FunctionNotation
+msgid "**Du**: Sag mal, war `→` nicht eben noch eine Implikation?\n"
 "\n"
-"**Du**: Dann ist `f : ℤ → ℤ` also einfach abstrakt irgendeine Funktion,\n"
-"wie definiere ich aber jetzt konkret eine Abbildungsvorschrift?\n"
+"**Robo**: Ja, richtig. Die benuzten hier das gleiche Zeichen für beides."
+msgstr ""
+
+#: Game.Levels.Vieta.L02_Function
+msgid "Anonyme Funktionen"
+msgstr ""
+
+#: Game.Levels.Vieta.L02_Function
+msgid "Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Blatt."
+msgstr ""
+
+#: Game.Levels.Vieta.L02_Function
+msgid "**Robo**: Aha, das ist interessanter.  Hier ist\n"
+"`fun (x : ℤ) ↦ x ^ 2` eine „anonyme Funktion“, nämlich die Abbildung $x↦x^2$.\n"
 "\n"
-"**Robo**: Man kennt hier eine Notation für eine anonyme Funktion:\n"
-"`fun (x : ℤ) ↦ x ^ 2` ist\n"
+"**Du**:  Und was ist an ihr anonym?\n"
+"\n"
+"**Robo**: Na, dass sie erst einmal keinen Namen hat.\n"
+"Erst durch `f : ℤ → ℤ := …` erhält sie einen Namen.\n"
+"\n"
+"**Du**:  Ach so.  Ingesamt haben wir also die folgende Abbildung, ja?\n"
 "\n"
 "$$\n"
 "\\begin{aligned}\n"
-"f : \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\\n"
+"f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\\n"
 "x &\\mapsto x ^ 2\n"
 "\\end{aligned}\n"
 "$$\n"
 "\n"
-"**Robo**: PS, `↦` ist `\\mapsto`. Aber man kann auch stattdessen `=>` benutzen."
+"Ich soll also zeigen $2^2=4$?\n"
+"\n"
+"**Robo**: Ja.\n"
+"\n"
+"**Du**: Und wie mache ich das hier?\n"
+"\n"
+"**Robo**: Lean kann durch die meisten Abbildungsvorschriften hindurchsehen, also sollte `rfl`\n"
+"hier reichen. Alternativ kannst du mit `simp [«{f}»]` explizit die Definition einsetzen."
 msgstr ""
 
-#: Game.Levels.Function.L01_Function
-msgid "Lean kann meistens durch Funktionsdefinitionen hindurchsehen, also `rfl`\n"
-"ist schon alles hier. Alternativ kann\n"
-"man mit `simp [«{f}»]` explizit die Definition einsetzen."
+#: Game.Levels.Vieta.L02_Function
+msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L01_Function
-msgid "Das Mädchen wird kurz ruhig, dann beginnt es zu lächeln und zeigt strahlend\n"
-"in eine Richtung. Ihr folgt ihrem Finger und euch fällt in weiter ferne eine pompöse Struktur\n"
-"auf einem flachen Hügel auf."
-msgstr ""
-
-#: Game.Levels.Function.L02_Let
+#: Game.Levels.Vieta.L03_Let
 msgid "Anonyme Funktionen"
 msgstr ""
 
-#: Game.Levels.Function.L02_Let
-msgid "Ihr macht euch auf in Richtung Bibliothek entlang kleiner Pfade zwischen verschiedensten Behausungen.\n"
-"\n"
-"**Du**: Sag mal, wie definiert ich denn selber eine Funktion?\n"
-"\n"
-"**Robo**: Das kannst du mit `let f := fun (x : ℤ) ↦ x + 1` machen. Hier, probier mal:"
+#: Game.Levels.Vieta.L03_Let
+msgid "Wieder ein Pfeil.  Und noch eine Aufgabe."
 msgstr ""
 
-#: Game.Levels.Function.L02_Let
-msgid "**Robo**: Wie immer gehst du ein `∃` mit `use …` an."
+#: Game.Levels.Vieta.L03_Let
+msgid "**Robo**: Wie immer gehst du ein `∃` mit `use …` an.  Oder du definierst dir erst einmal\n"
+"mit `let f : ℤ → ℤ := fun …` eine Abbildung, die du benutzen möchtest, so, wie du es eben gerade gesehen hast.\n"
+"Den Pfeil `↦` schreibst du übrigens als `\\maps` oder `\\mapsto`.\n"
+"Aber du kannst auch stattdessen `=>` benutzen."
 msgstr ""
 
-#: Game.Levels.Function.L02_Let
+#: Game.Levels.Vieta.L03_Let
 msgid "**Robo**: Wenn du `«{f}»` richtig definiert hast, kannst du\n"
 "dieses mit `use` brauchen, und die resultierende Ungleichung sollte einfach sein"
 msgstr ""
 
-#: Game.Levels.Function.L02_Let
+#: Game.Levels.Vieta.L03_Let
 msgid "**Du**: Zu was sich das wohl vereinfacht?"
 msgstr ""
 
-#: Game.Levels.Function.L02_Let
+#: Game.Levels.Vieta.L03_Let
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "let"
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
-msgid "**Du**: Kannst du mir nochmals eine Aufgabe stellen, Robo?"
+#: Game.Levels.Vieta.L04_Let
+msgid "**Vieta**:  Jetzt müssen wir mal ein Stück hier rüber gehen.\n"
+"\n"
+"Er schiebt euch vorsichtig ein paar Meter weiter.  Einen Moment später gehen an dem Ort,\n"
+"an dem ihr eben gestanden habt, drei Pfeile nieder und bleiben im Boden stecken.\n"
+"\n"
+"**Vieta**: Ganz ruhig, ich kenne mich hier aus.  Hier, ich habe noch mehr für euch."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
-msgid "**Du**: Ist `g ∘ «{f}»` Komposition von Funktionen?\n"
+#: Game.Levels.Vieta.L04_Let
+msgid "**Du**: Ist `g ∘ «{f}»` Komposition von Abbildungen?\n"
 "\n"
 "**Robo**: Richtig! Das schreibt man mit `\\comp`.\n"
 "\n"
 "**Du** Und hier könnte ich also wieder\n"
-"`let g := fun (x : ℤ) ↦ _` definieren oder direkt\n"
-"`use fun (x : ℤ) ↦ _`?\n"
+"`let g : ℤ → ℤ := fun x ↦ _` definieren?\n"
 "\n"
-"**Robo**: Genau!"
+"**Robo**:  Ja, oder sogar  direkt `use fun (x : ℤ) ↦ _`?"
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "**Robo**: Jetzt kannst du diese mit `use «{g}»` benutzen."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "**Robo**: `(«{g}» ∘ «{f}») x` ist per Definition `«{g}» («{f}» x)`. `simp` würde dieses\n"
 "Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "**Robo**: `ring` sieht durch lokale Definitionen wie\n"
 "`«{f}»` und `«{g}»` hindurch,\n"
 "du kannst es also direkt benutzen."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "**Robo**: `(g ∘ «{f}») x` ist per Definition `g («{f}» x)`. `simp` würde dieses\n"
 "Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "**Robo**: `ring` sieht durch lokale Definitionen wie\n"
 "`«{f}»` hindurch,\n"
 "du kannst es also direkt benutzen."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
+#: Game.Levels.Vieta.L04_Let
 msgid "Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`."
 msgstr ""
 
-#: Game.Levels.Function.L03_Let
-msgid "**Du**: Dann verstehst du etwas Mathe?\n"
-"\n"
-"**Robo**: Ich hatte ja keine Ahnung ob die generierte Aufgabe beweisbar ist… aber offenbar\n"
-"hatte ich Glück.\n"
-"\n"
-"Und damit erreicht ihr den Hügel mit der Bibliothek."
-msgstr ""
-
-#: Game.Levels.Function.L04_Funext
-msgid "funext"
-msgstr ""
-
-#: Game.Levels.Function.L04_Funext
-msgid "**Du**: Per Definition sind doch zwei Funktionen gleich, wenn sie angewendet auf\n"
-"jedes Element den gleichen Wert haben…\n"
-"\n"
-"**Robo**: Das kannst du mit `funext x` machen, welches, ein beliebiges `x` annimmt, und\n"
-"das Goal von `f = g` zu `f x = g x` ändert."
-msgstr ""
-
-#: Game.Levels.Function.L04_Funext
-msgid "**Robo**: Zur erinnerung, `ring` sieht durch lokale Definition."
-msgstr ""
-
-#: Game.Levels.Function.L04_Funext
+#: Game.Levels.Vieta.L04_Let
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L05_Funext
+msgid "funext"
+msgstr ""
+
+#: Game.Levels.Vieta.L05_Funext
+msgid "Vieta sieht sich vorsichtig um, bleibt dann aber doch stehen.\n"
+"Er reicht euch ruhig das nächste Blatt."
+msgstr ""
+
+#: Game.Levels.Vieta.L05_Funext
+msgid "**Du**: Per Definition sind doch zwei Abbildungen gleich, wenn sie angewendet auf\n"
+"jedes Element den gleichen Wert haben …\n"
+"\n"
+"**Robo**: Zu dem Prinzip hätte ich die Taktik `funext` auf Lager.\n"
+"Mit `funext x` wählst du ein beliebiges `x` und änderst das Beweisziel von `f = g` zu `f x = g x`."
+msgstr ""
+
+#: Game.Levels.Vieta.L05_Funext
+msgid "**Robo**: Zur Erinnerung, `ring` sieht durch lokale Definition hindurch."
+msgstr ""
+
+#: Game.Levels.Vieta.L05_Funext
+msgid ""
+msgstr ""
+
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "Stückweise Definition"
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "Endlich kommt ihr zur Bibliothek. Komischerweise stehen an der Tür\n"
-"zwei Wächtern. Der eine hat ein `f` auf seiner Brustplatte, der andere\n"
-"ein `g` eingraviert. Dieser gibt dir ein Blatt mit einer langen Zeilen am oberen Ende."
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "**Vieta**:  Wir sollten doch noch mal ein Stück laufen.  Hier entlang!\n"
+"\n"
+"Er eilt davon, und ihr folgt, so schnell ihr könnt.\n"
+"Als ihr den Ort erreicht, an dem er schließlich stehen bleibt, bist du völlig außer Puste.\n"
+"Vieta lacht.\n"
+"\n"
+"**Vieta**:  Reine Vorsichtsnahme!  Ich muss ja auf meine Besucher achtgeben.\n"
+"So viel Besuch bekomme ich nicht!\n"
+"\n"
+"Er reicht euch das nächste Blatt."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "**Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit stückweiser Definition.\n"
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "**Robo**: Jetzt haben wir zwei Abbildungen, eine davon mit stückweiser Definition.\n"
 "\n"
 "**Du**: Also, ich soll zeigen, dass die beiden vertauschbar sind?\n"
 "\n"
@@ -4929,13 +4959,13 @@ msgid "**Robo**: Schau mal, die beiden haben zwei Funktionen, eine davon mit st�
 "dann für dieses."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "**Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) «{x}»` zu `g (f «{x}»)` umschreiben?\n"
 "\n"
 "**Robo**: Mit `simp` klappt das."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 "machen, `by_cases h : 0 ≤ «{x}»`.\n"
 "\n"
@@ -4945,154 +4975,185 @@ msgid "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung\n"
 "und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ «{x}»)` und `0 > «{x}»` wechseln."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "**Du**: Jetzt muss ich wohl doch mal die Definitionen brauchen.\n"
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "**Du**: Jetzt muss ich wohl doch mal die Definitionen benutzen.\n"
 "\n"
-"**Robo**: Dann brauch mal `simp [f, g]`!"
+"**Robo**: Dann benutz sie mal `simp [f, g]`!"
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "**Robo**: Jetzt hast du `rw [if_pos «{h}»]` zur Verfügung um das if-then-else zu\n"
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "**Robo**: Jetzt hast du `rw [if_pos «{h}»]` zur Verfügung, um das if-then-else zu\n"
 "reduzieren."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "**Robo**: Nochmals `simp [f, g]`."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "**Du**: Ah und die Verneinung von `if_pos` ist sicher …"
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "**Robo**: `if_neg`, genau!"
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
-msgid "Zufrieden tauschen die beiden Wächter ihren Platz und geben so dabei den\n"
-"Durchgang frei."
+#: Game.Levels.Vieta.L06_Piecewise
+msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert\n"
 "`rw [if_pos h]` reduziert eine Aussage `if A then B else C` zu `B`.\n"
 "\n"
 "Umgekehrt kann man `if_neg` verwenden wenn `h : ¬ A`."
 msgstr ""
 
-#: Game.Levels.Function.L05_Piecewise
+#: Game.Levels.Vieta.L06_Piecewise
 msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert\n"
 "`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.\n"
 "\n"
 "Umgekehrt kann man `if_pos` verwenden wenn `h : A`."
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "Verzweigung"
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
-msgid "Für eine nicht-negative ganze Zahl `(n : ℤ)` ist `n.toNat` die entsprechende\n"
-"Zahl als Element von `ℕ` betrachtet."
+#: Game.Levels.Vieta.L07_Extend
+msgid "Ihr hört aus der Ferne Kampfgeräusche.  Vieta scheint nach wie vor nicht beunruhigt.\n"
+"Er gibt euch noch eine Aufgabe."
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: Ich vermute, du solltest als erstes mal ein Element aus `A` wählen …"
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: … zum Beispiel mit `obtain ⟨a₀⟩ := h`."
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: Und jetzt versuch mal, die richtige Funktion zu definieren: `let g : ℤ → «{A}» :=` usw."
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then ... else ...`\n"
 "definieren."
 msgstr ""
 
-#: Game.Levels.Function.L06_Extend
+#: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
 "sehen, ob deine Definition gut war."
 msgstr ""
 
-#: Game.Levels.Function.L07_CongrArg
+#: Game.Levels.Vieta.L08_CongrArg
 msgid "congr_arg"
 msgstr ""
 
-#: Game.Levels.Function.L07_CongrArg
-msgid "**Robo**: Manchmal will man ein Goal der Form `f x = f y` lösen, indem man zeigt, dass\n"
-"`x = y` ist. In dem Fall kann man `apply congr_arg` brauchen."
+#: Game.Levels.Vieta.L08_CongrArg
+msgid "Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter."
 msgstr ""
 
-#: Game.Levels.Function.L07_CongrArg
+#: Game.Levels.Vieta.L08_CongrArg
+msgid "**Robo**: Oh, das ist ein Fall für `congr_arg`.  Wenn du schon weiß, dass `x = y, erhälst du\n"
+"`f x = f y` mit `apply congr_arg`."
+msgstr ""
+
+#: Game.Levels.Vieta.L08_CongrArg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L07_CongrArg
+#: Game.Levels.Vieta.L08_CongrArg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L08_CongrFun
+#: Game.Levels.Vieta.L09_CongrFun
 msgid "congr_fun"
 msgstr ""
 
-#: Game.Levels.Function.L08_CongrFun
-msgid "**Robo**: Was auch vorkommen kann, ist dass man eine Annahme `h : f = g` hat, und diese\n"
-"gerne zu `h : ∀ x, f x = g x` umwandeln möchte. Das macht man mit `apply congr_fun at h`.\n"
-"\n"
-"**Du**: Sag mal, wenn `h : f = g`, dann kann ich doch einfach `rw [h]` brauchen?\n"
-"\n"
-"**Robo**: Na gut, in so einem einfachen Beispiel ja. Wenn aber `f` ein komplizierterer\n"
-"Ausdruck ist und noch nicht exact so im Goal steht, dann nicht direkt. Komm, mach's mal\n"
-"ohne `rw` oder `simp`!"
-msgstr ""
-
-#: Game.Levels.Function.L08_CongrFun
+#: Game.Levels.Vieta.L09_CongrFun
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L08_CongrFun
+#: Game.Levels.Vieta.L09_CongrFun
+msgid "**Robo**: Und das ist ein Fall für `congr_fun`.\n"
+"Hast du `h : f = g` als Annahme, kannst du sie mit mit `apply congr_fun at h` zu `h : ∀ x, f x = g x` umscheiben.\n"
+"\n"
+"**Du**: Aber könnte ich hier nicht auch einfacher `rw [h]` benutzen?\n"
+"\n"
+"**Robo**: Ja gut, in diesem einem einfachen Beispiel schon. Wenn aber `f` ein komplizierterer\n"
+"Ausdruck ist und noch nicht exact so im Beweisziel steht, dann nicht.\n"
+"Probiers mal, wie ich es gerade gesagt habe."
+msgstr ""
+
+#: Game.Levels.Vieta.L09_CongrFun
 msgid ""
 msgstr ""
 
-#: Game.Levels.Function.L09_Surjective
+#: Game.Levels.Vieta.L09_CongrFun
+msgid ""
+msgstr ""
+
+#: Game.Levels.Vieta.L10_Surjective
 msgid "Boss"
 msgstr ""
 
-#: Game.Levels.Function.L09_Surjective
-msgid ""
+#: Game.Levels.Vieta.L10_Surjective
+msgid "Die Kampfgeräusche wirken inzwischen bedrohlich nahe.\n"
+"Ihr hört deutlich vernehmbar Kanonenschüsse.\n"
+"Und da saust auch schon wieder ein Pfeil an euch vorbei.\n"
+"\n"
+"**Du**:  Ähm, sollten wir vielleicht …\n"
+"\n"
+"**Vieta**:  Keine Sorge, für einen Aufgabe haben wir noch Zeit."
 msgstr ""
 
-#: Game.Levels.Function.L09_Surjective
-msgid "**Du**: Diese Aufgabe sagt, mehrheitlich dass eine Funktion `f` in die natürlichen\n"
-"Zahlen surjektiv ist, falls die `0` im Bild liegt und es einen\n"
-"Endomorphismus `g : A → A` gibt, sodass `f ∘ g` das gleiche ist wie, `succ ∘ f`.\n"
+#: Game.Levels.Vieta.L10_Surjective
+msgid "**Du**: Wenn ich das richtig lese, soll ich im Wesentlichen zeigen, dass irgendeine Abbildung `f` surjektiv ist.\n"
 "\n"
-"**Robo*: Im Fachjargon sagt man \"`f` semikonjugiert `g` zu `succ`\".\n"
+"**Robo**:  Nicht nur irgendeine Abbildung.  Die Abbildung geht nach `ℕ`!\n"
 "\n"
-"**Du**: Ich glaube, einen Beweis den ich kenne startet mit Induktion über `n`"
+"Du hebst die Augenbrauen.\n"
+"\n"
+"**Robo**: Könnte was mit Induktion zu tun haben.  Ich mein ja nur."
 msgstr ""
 
-#: Game.Levels.Function.L09_Surjective
+#: Game.Levels.Vieta.L10_Surjective
 msgid "**Robo**: Willst du vielleicht `«{hs}»`\n"
 "zu `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)` umschreiben?"
 msgstr ""
 
-#: Game.Levels.Function
-msgid "Funktionen"
+#: Game.Levels.Vieta.L10_Surjective
+msgid "**Vieta**:  Bravo!  Jetzt aber nichts wie weg von hier.\n"
+"Hier gehts lang.  Ich bring euch zurück zum Raumschiff."
 msgstr ""
 
-#: Game.Levels.Function
-msgid "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf\n"
-"eine Insel komplett mit Wasser bedeckt zu sein scheint.\n"
+#: Game.Levels.Vieta
+msgid "Vieta"
+msgstr ""
+
+#: Game.Levels.Vieta
+msgid "Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet.\n"
+"Weit und breit ist niemand zu sehen.\n"
 "\n"
-"Auf der Insel seht ihr verschiedene große und kleine Behausungen, manche aus Stroh und Holz,\n"
-"vereinzelte aus Lehm.\n"
+"Plötzlich zischt ein Pfeil direkt über deinen Kopf.\n"
 "\n"
-"Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."
+"**Du**: Deckung!\n"
+"\n"
+"Ihr werft euch flach auf den Boden.  Ihr wollt schon zurück zum Raumschiff robben, da\n"
+"tritt hinter einem verdorrten Baum ein Mann hervor, der freundlich winkt.\n"
+"Ihr robbt also zu ihm.\n"
+"\n"
+"**Vieta**: Nur nicht so schüchtern, meine Damen und Herren! Vieta, mein Name. Willkommen!\n"
+"Steht ruhig auf, die Luft ist rein.\n"
+"\n"
+"Ihr erhebt euch vorsichtig, da zischt schon wieder dicht neben euch ein Pfeil vorbei.\n"
+"\n"
+"**Du**:  Wie halten Sie es hier aus?\n"
+"\n"
+"**Vieta**:  Nun, ich habe gelernt, immer zur richtigen Zeit an der richtigen Stelle zu stehen.\n"
+"Macht euch keinen Sorgen."
 msgstr ""
 
 #: Game.Levels.FunctionSurj.L01_Surjective
