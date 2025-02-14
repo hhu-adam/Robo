@@ -36,12 +36,12 @@ Conclusion "
 **Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.
 
 
-|       | Taktik          | Beispiel                                               |
-|:------|:----------------|:-------------------------------------------------------|
-| 17    | `have`          | Zwischenresultat annehmen                              |
-| 18    | `suffices`      | Zwischenresultat annehmen                              |
-| 19    | `by_contra`     | Widerspruch *(startet einen Widerspruchsbeweis)*       |
-| *3*   | `contradiction` | *(schliesst einen Widerspruchsbeweis)*                 |
-| 20    | `contrapose`    | Kontraposition                                         |
-| *9*   | `revert`        | nützlich, um danach `contrapose` anzuwenden            |
+| **Taktik**      | **Zweck**                                              |
+|:----------------|:-------------------------------------------------------|
+| `have`          | Zwischenresultat annehmen                              |
+| `suffices`      | Zwischenresultat annehmen                              |
+| `by_contra`     | Widerspruchsbeweis anfangen                            |
+| `contradiction` | Widerspruchsbeweis schließen                           |
+| `contrapose`    | Kontraposition                                         |
+| `revert`        | nützlich, um danach `contrapose` anzuwenden            |
 "

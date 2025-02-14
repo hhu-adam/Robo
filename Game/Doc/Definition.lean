@@ -113,6 +113,34 @@ zerlegen.
 -/
 DefinitionDoc Exists as "∃"
 
+/-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
+`∃! a : A, P a` die Aussage, dass *genau ein* Element `a` in `A` (genauer: vom Typ `A`)
+existiert, für das die Aussage `P a` wahr sei.  Die Aussage hat also zwei Teile: ertens existiert
+solch ein `a`, zweitens ist `a` eindeutig.
+
+Um eine Aussage der Form `∃! a : A, …` zu beweisen, konstruiert man ein geeignetes Element `a` und
+nutzt dann die `use`-Taktik (`use a`), in der Regel unmittelbar gefolgt von `simp`.
+Nach `use a ` and `simp` sollte das Beweisziel folgende Form haben:
+
+`P(a) ∧ ∀ a' : A, P(a') → a' = a`
+
+Eine Annahme der Form `h : ∃! a : A, P a` lässt sich mit
+
+```
+  obtain ⟨a, h_exists, h_unique⟩ := h
+  simp at h_unique
+```
+in die Bestandteile
+```
+   a : A
+   h_exists : P a
+   h_unique : ∀ (y : A), P y → y = a
+```
+zerlegen.
+-/
+DefinitionDoc ExistsUnique as "∃!"
+
+
 /-- Universeller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
 `∀ a : A, P a` die Aussage, dass die Aussage `P a` für alle `a` in `A`
 (genauer: für alle `a` vom Typ `A`) wahr sei.
@@ -176,6 +204,13 @@ DefinitionDoc Odd as "Odd"
 `A ∨ B` ("oder") ist die Aussage mindestens eine der Aussagen `A`, `B` wahr ist.
 -/
 DefinitionDoc Or as "∨"
+
+/--
+Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.
+Um mit dieser Definition zu arbeiten, ist es oft hilfreich, sie mit dem Lemma
+`prime_def` umzuschreiben.
+-/
+DefinitionDoc Prime as "Prime"
 
 /-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
 nicht beweisbar ist.

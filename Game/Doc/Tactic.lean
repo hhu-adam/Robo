@@ -704,6 +704,26 @@ Es bestehen aber drei grosse Unterschiede zu `rw`:
 TacticDoc simp_rw
 
 
+/-- `specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`: es ersetzt eine Annahme
+`h : ∀ m₁ m₂, P m₁ m₂` durch den Spezialfall `h : P a₁ a₂`.
+
+Falls man mehrmals spezialisieren möchte, sollte man statt `specialize`
+`have` verwenden, da `specialize h …` die alte Annahme `h` überschreibt.
+Aus obiger Annahme `h` erhält man beispielsweise mit
+```
+have ha := h a₁ a₂
+have hb := h b₁ b₂
+```
+die folgenden drei Annahmen:
+```
+h : ∀ m₁ m₂, P m₁ m₂
+ha : P a₁ a₂
+hb : P b₁ b₂
+```
+-/
+TacticDoc specialize
+
+
 
 /--
 `suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Goal direkt folgen soll.

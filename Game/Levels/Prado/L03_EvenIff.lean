@@ -1,21 +1,20 @@
 import Game.Metadata
-import Game.Levels.Prado.L01_Dvd
+import Game.Levels.Prado.L02_Dvd
 
 namespace Nat
 
 World "Prado"
-Level 2
+Level 3
 
 Title "Gerade"
 
 Introduction
-"
-Hier nochmal eine kleine Übung für später.
+"Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.
 "
 
 Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   -- TODO: is there a shorter way?
-  Hint (hidden := true) "fang doch mit `unfold Even` an."
+  Hint (hidden := true) "**Robo**: Fang doch mit `unfold Even` an."
   unfold Even
   constructor
   · intro h
