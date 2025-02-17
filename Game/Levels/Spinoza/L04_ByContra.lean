@@ -13,6 +13,8 @@ Aber vorher beweist Ihr besser noch diese Äquivalenz hier. Ich glaube, die hat 
 bei Euch einen Namen: *Kontrapositionsäquivalenz*, oder so etwas. Auf Leansch nennen wir
 die Äquivalenz einfach `not_imp_not`. Ist doch viel einleuchtender, oder?
 "
+/---/
+TheoremDoc not_imp_not as "not_imp_not" in "Logic"
 
 Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   Hint "

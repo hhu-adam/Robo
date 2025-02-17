@@ -54,9 +54,9 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
 
 NewTactic specialize  -- wird hier en passant eingeführt
 /---/
-TheoremDoc Nat.prime_def as "prime_def" in "Nat"
+TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "Guino schaut euch noch einmal über die Schulter.
 

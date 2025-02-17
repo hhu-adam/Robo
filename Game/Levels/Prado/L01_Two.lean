@@ -12,12 +12,17 @@ Introduction"**Robo**:  Ja, ja.  Wissen wir.
 
 Er formuliert die Aussage schnell in Leansch und hält sie dir hin.
 "
+
+/---/
+TheoremDoc Nat.prime_two as "prime_two" in "ℕ"
+
+
 Statement prime_two : Prime 2 := by
   Hint "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil `2` eine konkrete Zahl ist
   und es einen Algorithmus gibt, um zu entscheiden, ob eine Zahl prim ist, kannst du einfach `decide` verwenden!"
   decide
 
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "
 **Du**:  In der Tat.  Wissen wir.  Und was gibt es noch für Exponate?

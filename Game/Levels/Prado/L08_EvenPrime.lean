@@ -31,7 +31,7 @@ Statement : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
     · decide
     · assumption
 
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "
 **Du**: Juchhu!  Und wer sagt es ihm jetzt?

@@ -13,6 +13,7 @@ Introduction
 **Robo**:  Ich habe in meiner Sammlung noch folgende Aussage gefunden, die relevant sein könnte.
 Mal sehen, ob wir die jetzt zusammen gezeigt bekommen.
 "
+TheoremDoc Nat.prime_dvd_prime_iff_eq as "prime_dvd_prime_iff_eq" in "ℕ"
 
 Statement prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
     a ∣ b ↔ a = b := by
@@ -39,7 +40,7 @@ Statement prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
   · intro h
     rw [h]
 
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "**Du**:  Sehr schön.
 Dann lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen.

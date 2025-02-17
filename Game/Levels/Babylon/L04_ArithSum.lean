@@ -81,6 +81,11 @@ Statement arithmetic_sum (n : ℕ) :
   ring
 
 NewTactic induction
+/---/
+TheoremDoc Nat.zero_eq as "zero_eq" in "ℕ"
+/---/
+TheoremDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "ℕ"
+
 NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
 TheoremTab "Sum"
 

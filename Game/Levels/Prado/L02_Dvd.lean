@@ -21,6 +21,8 @@ Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 **Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich
   als `\\|` oder `\\dvd` schreiben musst.  Probier zum Beispiel mal diese Aufgabe hier.
 "
+/---/
+TheoremDoc Nat.dvd_add as "dvd_add" in "ℕ"
 
 Statement dvd_add {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   Hint "
@@ -50,7 +52,7 @@ Syntax `obtain h₁ | h₂ := h` vor.
 DefinitionDoc Dvd.dvd as "· ∣ ·"
 
 NewDefinition Dvd.dvd
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "**Guino**:  Was flüstert ihr denn da?
 

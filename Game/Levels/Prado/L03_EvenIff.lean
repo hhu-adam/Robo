@@ -12,6 +12,9 @@ Introduction
 "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.
 "
 
+/---/
+TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
+
 Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   -- TODO: is there a shorter way?
   Hint (hidden := true) "**Robo**: Fang doch mit `unfold Even` an."
@@ -28,4 +31,4 @@ Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
     rw [hw]
     ring
 
-TheoremTab "Nat"
+TheoremTab "ℕ"

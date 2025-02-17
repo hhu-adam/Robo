@@ -47,5 +47,11 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
 
 
 NewDefinition ExistsUnique
+
+/---/
+TheoremDoc Nat.mul_left_cancel_iff as "mul_left_cancel_iff" in "ℕ"
+/---/
+TheoremDoc Nat.mul_right_cancel_iff as "mul_right_cancel_iff" in "ℕ"
+
 NewTheorem Nat.mul_left_cancel_iff Nat.mul_right_cancel_iff
-TheoremTab "Nat"
+TheoremTab "ℕ"

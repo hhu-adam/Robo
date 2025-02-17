@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Feb 14 13:03:27 2025\n"
+"POT-Creation-Date: Mon Feb 17 10:07:08 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2826,6 +2826,10 @@ msgid "**Benedictus**: Ich habe noch eine schöne Frage zu ungeraden Quadraten f
 msgstr ""
 
 #: Game.Levels.Spinoza.L04_ByContra
+msgid ""
+msgstr ""
+
+#: Game.Levels.Spinoza.L04_ByContra
 msgid "**Du**: Ja, das habe ich tatsächlich schon einmal gesehen.\n"
 "\n"
 "**Robo**: Ja, klar hast du das schon einmal gesehen. Das benutzen Mathematiker doch ständig.\n"
@@ -2995,6 +2999,10 @@ msgid "**Lina**: Man muss zum Beispiel wissen, dass `n ≠ 0` für natürliche Z
 msgstr ""
 
 #: Game.Levels.Luna.L02_Pos
+msgid ""
+msgstr ""
+
+#: Game.Levels.Luna.L02_Pos
 msgid "**Robo** (*flüsternd*): Wenn du ein bisschen schwere Maschinerie auffahren willst,\n"
 "um sie zu beeindrucken, hab ich was. Mach doch eine Fallunterscheidung ob `n` Null ist\n"
 "oder nicht!\n"
@@ -3024,6 +3032,10 @@ msgid "**Robo**: Warte! Für den Rest zitieren wir einfach ein anderes Lemma: `N
 msgstr ""
 
 #: Game.Levels.Luna.L02_Pos
+msgid ""
+msgstr ""
+
+#: Game.Levels.Luna.L02_Pos
 msgid "**Du**: `simp` ist ja echt nicht schlecht …"
 msgstr ""
 
@@ -3047,6 +3059,10 @@ msgstr ""
 
 #: Game.Levels.Luna.L03_Linarith
 msgid "**Du**: Naja, so beeindruckend war das jetzt auch noch nicht."
+msgstr ""
+
+#: Game.Levels.Luna.L03_Linarith
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L04_Linarith
@@ -3291,6 +3307,14 @@ msgstr ""
 msgid "**Du**: Der Rest ist einfach Rechnerei.\n"
 "\n"
 "**Robo**: Dann wird `ring` wohl keine Probleme haben."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_ArithSum
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L04_ArithSum
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L04_ArithSum
@@ -4608,6 +4632,10 @@ msgid "**Robo**:  Ja, ja.  Wissen wir.\n"
 msgstr ""
 
 #: Game.Levels.Prado.L01_Two
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L01_Two
 msgid "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil `2` eine konkrete Zahl ist\n"
 "und es einen Algorithmus gibt, um zu entscheiden, ob eine Zahl prim ist, kannst du einfach `decide` verwenden!"
 msgstr ""
@@ -4638,6 +4666,10 @@ msgid "**Du** *(flüsternd)*: Robo, meinst du, wir sollen es ihm sagen?\n"
 "\n"
 "**Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich\n"
 "  als `\\|` oder `\\dvd` schreiben musst.  Probier zum Beispiel mal diese Aufgabe hier."
+msgstr ""
+
+#: Game.Levels.Prado.L02_Dvd
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L02_Dvd
@@ -4687,6 +4719,10 @@ msgstr ""
 
 #: Game.Levels.Prado.L03_EvenIff
 msgid "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben."
+msgstr ""
+
+#: Game.Levels.Prado.L03_EvenIff
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L03_EvenIff
@@ -4751,6 +4787,10 @@ msgid "**Guino:** Ich habe aber tatsächlich eine kleine Aufgabe für euch."
 msgstr ""
 
 #: Game.Levels.Prado.L05_One
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L05_One
 msgid "**Robo**:  Nicht zu kompliziert denken!\n"
 "Erinner dich, wie du gezeigt hattest, dass `2` prim ist!"
 msgstr ""
@@ -4767,6 +4807,10 @@ msgstr ""
 #: Game.Levels.Prado.L06_PrimeDvdPrime
 msgid "**Robo**:  Ich habe in meiner Sammlung noch folgende Aussage gefunden, die relevant sein könnte.\n"
 "Mal sehen, ob wir die jetzt zusammen gezeigt bekommen."
+msgstr ""
+
+#: Game.Levels.Prado.L06_PrimeDvdPrime
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L06_PrimeDvdPrime
@@ -4837,6 +4881,14 @@ msgid "**Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte 
 "```\n"
 "\n"
 "Es gibt genauso ein Lemma `mul_right_cancel_iff`, da ist alles entsprechend gedreht."
+msgstr ""
+
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L07_ExistsUnique
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L08_EvenPrime

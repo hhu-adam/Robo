@@ -24,5 +24,8 @@ Statement (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by
 Conclusion "**Du**: Naja, so beeindruckend war das jetzt auch noch nicht."
 
 NewTactic linarith
+
+/---/
+TheoremDoc Nat.pos_iff_ne_zero as "pos_iff_ne_zero" in "ℕ"
 NewTheorem Nat.pos_iff_ne_zero
-TheoremTab "Nat"
+TheoremTab "ℕ"

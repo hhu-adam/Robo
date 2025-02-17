@@ -19,6 +19,9 @@ bedeutet als `0 < n`.
 ist, sollte man das vielleicht noch einmal selbst beweisen?
 "
 
+/---/
+TheoremDoc Nat.pos_iff_ne_zero as "pos_iff_ne_zero" in "ℕ"
+
 Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   Hint "**Robo** (*flüsternd*): Wenn du ein bisschen schwere Maschinerie auffahren willst,
   um sie zu beeindrucken, hab ich was. Mach doch eine Fallunterscheidung ob `n` Null ist
@@ -48,8 +51,11 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   apply Nat.succ_pos
 
 NewTactic simp
+
+/---/
+TheoremDoc Nat.succ_pos as "succ_pos" in "ℕ"
 NewTheorem Nat.succ_pos
 DisabledTheorem Nat.pos_iff_ne_zero Nat.succ_pos'
-TheoremTab "Nat"
+TheoremTab "ℕ"
 
 Conclusion "**Du**: `simp` ist ja echt nicht schlecht …"
