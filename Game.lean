@@ -16,10 +16,10 @@ import Game.Levels.Ciao
 import Game.Levels.Prado
 
 import Game.Levels.Vieta
-import Game.Levels.FunctionSurj
-import Game.Levels.FunctionInj
-import Game.Levels.FunctionImage
-import Game.Levels.FunctionBij
+import Game.Levels.Epo
+import Game.Levels.Mono
+import Game.Levels.Samarkand
+import Game.Levels.Iso
 
 import Game.Levels.SetTheory
 
@@ -65,9 +65,11 @@ Es wird finanziert durch das Programm *Freiraum 2022* der
 
 ## Credits
 
-* **Creators:** Jon Eugster, Alexander Bentkamp, Marcus Zibrowius, Sina Hazratpour
-* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
-* **Illustrationen:** Dušan Pavlić
+* **Konzept & Projektmanagement:** Marcus Zibrowius
+* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)
+* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour
+* **Handlung:** Marcus Zibrowius
+* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)
 
 ## Kontakt
 
@@ -78,7 +80,7 @@ Issue auf Github:
 * zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues).
 * zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
 
-Kontakt: [Jon Eugster](https://www.math.hhu.de/lehrstuehle-/-personen-/-ansprechpartner/innen/lehrstuehle-des-mathematischen-instituts/lehrstuhl-fuer-algebraische-geometrie/team/jon-eugster)
+Kontakt: [Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)
 "
 
 Conclusion
@@ -99,17 +101,16 @@ CoverImage "images/Cover.png"
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
-Dependency FunctionImage → Ciao
-Dependency FunctionBij → Ciao
+Dependency Samarkand → Ciao
+Dependency Iso → Ciao
 
--- Dependency Babylon → FunctionSurj
+-- Dependency Babylon → Epo
 
+-- because of `∃!`:   (actually superfluous because of other dependencies)
+Dependency Prado → Mono
 
--- because of `∃!` -- should be superfluous
-Dependency Prado → FunctionInj
-
--- Because of def `Injective`
-Dependency FunctionInj → FunctionBij
+-- because of def `Injective`:
+Dependency Mono → Iso
 
 
 -- set_option lean4game.showDependencyReasons true
