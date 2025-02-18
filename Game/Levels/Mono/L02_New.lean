@@ -4,7 +4,7 @@ import Game.Metadata
 World "Mono"
 Level 2
 
-Title "Preimage of surjective is injective"
+Title ""
 
 Introduction
 ""

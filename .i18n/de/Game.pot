@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Feb 18 10:41:35 2025\n"
+"POT-Creation-Date: Tue Feb 18 15:51:04 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -49,11 +49,29 @@ msgid "`f` ist strikt monoton wenn\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt."
+msgid "`Function.RightInverse f g` ist als `LeftInverse g f` definiert.\n"
+"Das bedeutet im Klartext natürlich `∀ x, g (f x) = x`.\n"
+"\n"
+"Man muss leider `Function.RightInverse`  statt `RightInverse` schreiben,\n"
+"da `RightInverse` allein in Leansch mehrdeutig ist."
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt."
+msgid "`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie man mit `unfold` leicht sieht."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.\n"
+"\n"
+"`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` die Vereinigung der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\\\union`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` der Schnitt der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\\\inter`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -312,6 +330,17 @@ msgid "`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das a
 "Wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war. Dann\n"
 "kann man mit `change (1 : ℚ) * b = b` das Goal umschreiben und anschliessend mit Lemmas\n"
 "über die Multiplikation beweisen."
+msgstr ""
+
+#: Game.Doc.Tactic
+msgid "Eine Annahme der Form `h : ∃ b : B, P b` lässt sich mit\n"
+"`choose b hb using h` in die Bestandteile `b : A` und `hb : P b`\n"
+"zerlegen.\n"
+"\n"
+"Allgemeiner können wir `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:\n"
+"aus einer Annahme der Form `h : ∀ a, ∃ b, P a b` extrahiert `choose f hf using h`\n"
+"eine Abbildung `f : A → B` und die Aussage ` ∀ (a : A), P a (f a)`.\n"
+"(Hier ist `P : A → (B → Prop)` ein Prädikat, dass von zwei Variablen `a` und `b` abhängt.)"
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -4563,10 +4592,14 @@ msgid "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matr
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch alles\n"
+msgid "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge auch alles\n"
 "mit `simp` wenn wir nicht am spielen wären.\n"
 "\n"
 "**Du**: Ist doch egal, das macht Spass!"
+msgstr ""
+
+#: Game.Levels.Robotswana.L11_Linearity
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
@@ -5383,7 +5416,7 @@ msgid "Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet.\n"
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
-msgid "Surjektiv"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
@@ -5409,7 +5442,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
-msgid "Not exhausted by naturals."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
@@ -5417,9 +5450,23 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
-msgid "**Robo**: Du könnstest mit `constructor` anfangen,\n"
-"oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt.\n"
-"So oder so könnte `ne_comm` hier nützlich sein:  `a ≠ b ↔ b ≠ a`."
+msgid "**Du**:  `ℕ → A → B` … wie lese ich diese zwei Pfeile hintereinander?\n"
+"\n"
+"**Robo**: Du liest das als `ℕ → (A → B)` – eine Abbildung von den natürlichen Zahlen `ℕ` in die Menge `A → B` der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst."
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
+msgid "**Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt."
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
+msgid "**Robo**: Hilft dir vielleicht `ne_comm` weiter?\n"
+"Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
+msgid "**Robo**: Hilft dir vielleicht `ne_comm` weiter?\n"
+"Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
@@ -5427,7 +5474,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
-msgid "Left inverse"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
@@ -5436,41 +5483,51 @@ msgid "A function `g : B → A` is a left inverse of a function `f : A → B` if
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
-msgid "Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition."
-msgstr ""
-
-#: Game.Levels.Epo.L03_LeftInverse
-msgid "`Function.RightInverse f g` is als `LeftInverse g f` definiert.\n"
+msgid "**Du**: Ich vermute mal, dass soll heißen, `g` ist genau dann ein Rechtsinverses of `f, wenn `f` ein Linksinverses von `g` ist.\n"
 "\n"
-"Man muss `Function.` anfügen, da Mathlib noch eine andere Definition `RightInverse`\n"
-"besitzt, weshalb ein simples `RightInverse` nicht eindeutig wäre."
-msgstr ""
-
-#: Game.Levels.Epo.L03_LeftInverse
-msgid ""
-msgstr ""
-
-#: Game.Levels.Epo.L04_RightInverse
-msgid "Right inverse"
+"**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von `Function.RightInverse`.  Und dummerweise muss man tatsächlich `Function.RightInverse` statt schlicht `RightInverse` schreiben, weil `RightInverse` in Leansch mehrdeutig ist."
 msgstr ""
 
 #: Game.Levels.Epo.L04_RightInverse
 msgid ""
 msgstr ""
 
-#: Game.Levels.Epo.L05_RightInverse
-msgid "Does it have a right inverse?"
+#: Game.Levels.Epo.L04_RightInverse
+msgid ""
 msgstr ""
 
-#: Game.Levels.Epo.L05_RightInverse
-msgid "Während `Function.RightInverse f g` die konkrete Inverse `g` angibt, ist `HasRightInverse f`\n"
-"lediglich die Aussage, dass ein Inverses existiert.\n"
+#: Game.Levels.Epo.L04_RightInverse
+msgid "**Du**:  Jetzt muss ich mich wohl doch ein bisschen durch die Definitionen hangeln?\n"
 "\n"
-"Dieses kann natürlich trotzdem mit `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …` definiert werden."
+"**Robo**: Sieht so aus."
+msgstr ""
+
+#: Game.Levels.Epo.L04_RightInverse
+msgid "**Robo:**:  Ich würde tatsächlich wieder mit `constructor` anfangen.\n"
+"Und dann die üblichen Verdächtigen wie `comp_apply`, `congr_fun` usw. nutzen."
+msgstr ""
+
+#: Game.Levels.Epo.L04_RightInverse
+msgid "**Robo**:  Du könntest mit `apply congr_fun at h` oder `rw [← comp_apply (f:= f)]`.\n"
+"(`rw [← comp_apply]` ohne `(f:=f)` funktioniert hier nicht\n"
+"– du musst explizit angeben, welchen Wert die Variable `f` in der Aussage von `comp_apply` haben soll."
 msgstr ""
 
 #: Game.Levels.Epo.L05_RightInverse
 msgid ""
+msgstr ""
+
+#: Game.Levels.Epo.L05_RightInverse
+msgid ""
+msgstr ""
+
+#: Game.Levels.Epo.L05_RightInverse
+msgid "**Du**:  Hier soll ich vermutlich zeigen, dass ein Rechtsinverses zu `f` existiert?\n"
+"\n"
+"**Robo**:  Ja.  Du kannst also zunächst wieder mit `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …` eine Abbildung angeben,\n"
+"und sie dann mit `use g` verwenden.\n"
+"\n"
+"**Du**:  Gut.  Dann überlege ich also einmal, wie ein Rechtsinverses zu `f` aussehen könnte …"
 msgstr ""
 
 #: Game.Levels.Epo.L06_choose
@@ -5481,19 +5538,29 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Epo.L07_SurjectiveRightInverse
-msgid "Every surjection has a right inverse"
+#: Game.Levels.Epo.L06_choose
+msgid "**Du**:  Das riecht irgendwie nach Auswahlaxiom.\n"
+"\n"
+"**Robo**:  Bingo.  Erinnerst du nicht noch an `choose`?\n"
+"Hier kommt `choose` so richtig in sein Element.\n"
+"Probier mal `choose g hg using nonempty_fibre."
 msgstr ""
 
 #: Game.Levels.Epo.L07_SurjectiveRightInverse
-msgid "The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements\n"
-"`x` in the domain of `f` such that `f x` is in `S`.\n"
+msgid ""
+msgstr ""
+
+#: Game.Levels.Epo.L07_SurjectiveRightInverse
+msgid ""
+msgstr ""
+
+#: Game.Levels.Epo.L07_SurjectiveRightInverse
+msgid "Ihr bekommt eine große Runde Applaus.\n"
 "\n"
-"```\n"
-"f ⁻¹' S = {x | f x ∈ S}\n"
-"```\n"
-"\n"
-"`HasRightInverse.surjective`"
+"Danach werdet ihr verabschiedet.\n"
+"Für den Rückweg könnt ihr leider keine Transportkapsel benutzen.\n"
+"Die funktionieren nämlich nur in eine Richtung.\n"
+"Zurück zum Raumschiff geht es also zu Fuß: erst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben."
 msgstr ""
 
 #: Game.Levels.Epo
@@ -5520,42 +5587,40 @@ msgid "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: e
 "Er führt euch eine Etage hinunter und bitte euch, in „Transportkapseln“ einzusteigen, jeder in eine.\n"
 "\n"
 "**Portier**:  Wir rutschen jetzt einfach mit diesen Kapseln hinüber.\n"
-"Keine Sorge, die Bahn ist frei!  Alle anderen sind ja schon drüben!"
+"Keine Sorge, die Bahn ist frei!\n"
+"Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die Luft rein.\n"
+"Alle anderen sind ja schon drüben!"
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
-msgid "Injektivität"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
-msgid "Ihr läuft durch verschiedenste Gänge der Bibliothek, allesamt mit Büchern entlang der Wände.\n"
-"\n"
-"**Du**: Wenn wir wüssten, dass nur ein möglicher Weg hierhin führt, könnten wir\n"
-"ausschliessen, dass wir im Kreis laufen.\n"
-"\n"
-"Plötzlich begegnet ihr einem älteren Wesen mit Fackel. Auf die Frage antwortet es mit folgendem:"
+msgid "Ganz oben sind tatsächlich wieder viele Formalosophen versammelt.\n"
+"Sie heißen euch freudig willkommen, und kommen dann gleich zur Sache."
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
-msgid "**Robo**: `Injective` ist als `∀ {a b : U}, f a = f b → a = b`\n"
-"definiert, also kannst du mit `intro` anfangen.\n"
-"\n"
-"**Du**: Und wenn ich das nicht weiss?\n"
-"\n"
-"**Robo**: Dann schaust du mit `unfold Injective` in die Definition rein."
+msgid "**Robo**: `Injective` ist so definiert, wie du es erwarten würdest: `∀ {a b : U}, f a = f b → a = b`.\n"
+"Du kannst das wieder leicht mit `unfold` prüfen, wenn du mir nicht traust."
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
-msgid "**Du**: Jetzt will ich wohl mit der Definition von `«{f}»` die\n"
+msgid "**Robo**:  Fang doch mit `intro a b` an."
+msgstr ""
+
+#: Game.Levels.Mono.L01_Injective
+msgid "**Robo**: Ich glaube, du solltest jetzt mit der Definition von `«{f}»` die\n"
 "Annahme `«{ha}»` vereinfachen."
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
-msgid "**Du** Woa das war ja einfach!"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L02_New
-msgid "Preimage of surjective is injective"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L02_New
@@ -5741,11 +5806,19 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L10_InjHasLeftInv
+#: Game.Levels.Mono.L10_auxiliary
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L10_auxiliary
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
 msgid "Injections have a left inverse, and vice versa"
 msgstr ""
 
-#: Game.Levels.Mono.L10_InjHasLeftInv
+#: Game.Levels.Mono.L11_InjHasLeftInv
 msgid ""
 msgstr ""
 
@@ -5754,13 +5827,35 @@ msgid "Mono"
 msgstr ""
 
 #: Game.Levels.Mono
-msgid "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf\n"
-"eine Insel komplett mit Wasser bedeckt zu sein scheint.\n"
+msgid "Auf dem nächsten Planeten stehen wieder zwei Hochhäuser nebeneinander.\n"
+"Wieder ist das eine schmal und hoch, das andere etwas breiter und niedriger.\n"
+"Und wieder sind sie durch ein Röhrensystem miteinander verbunden –\n"
+"es gibt wohl auch wieder irgendein Transportkapsel-System.\n"
+"Nach der Erfahrung auf Epo steuert ihr diesmal geradewegs das niedrigere Gebäude an und landet auf dem Dach.\n"
 "\n"
-"Auf der Insel seht ihr verschiedene große und kleine Behausungen, manche aus Stroh und Holz,\n"
-"vereinzelte aus Lehm.\n"
+"**Portier**:  Nicht doch, nicht doch.  Habt ihr nicht alle winken sehen?\n"
+"Das hier ist doch bloß unser Schlafhaus.  Wir sind tagsüber immer dort drüben, im Büroturm.\n"
+"Aber gut, nun seid ihr hier.  Willkommen erst einmal!\n"
 "\n"
-"Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."
+"Ihr schüttelt jeder eine seiner vier Hände.\n"
+"\n"
+"**Portier**:  Immerhin habe ich so die Möglichkeit, euch gleich unser einzigartiges Nahverkehrssystem vorzustellen.\n"
+"Ihr kommt von Epo, nicht war?\n"
+"Böse Geschichten hört man von da.\n"
+"Jeden zweiten Tag gibts einen Unfall.\n"
+"Die kriegen ihre Röhren einfach nicht sortiert.\n"
+"Wir sind seit Jahren unfallfrei!\n"
+"\n"
+"Ihr geht vier Stockwerke nach unten.\n"
+"Dort bekommt wieder jeder eine Kapsel zugewiesen,\n"
+"und ihr gleitet geräuschlos bergauf in den Büroturm.\n"
+"Wie der Antrieb funktioniert, bleibt ein Rätsel.\n"
+"\n"
+"**Robo**:  Oh.  Hier ist ja auch niemand!\n"
+"\n"
+"**Portier**:  Natürlich nicht.  Die sind alle ganz oben.\n"
+"Und nicht jedes Stockwerk lässt sich über eine Röhre erreichen.\n"
+"Aber wir sind schon fast da.  Nur noch zwei Treppen hinauf."
 msgstr ""
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
@@ -5769,7 +5864,7 @@ msgstr ""
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
 msgid "`f '' S` ist das Bild,\n"
-"`f ⁻¹' V` das Urbild,\n"
+"`f ⁻¹' V = {x | f x ∈ V} ` das Urbild,\n"
 "\n"
 "`f '' S := {f a | a ∈ S}`\n"
 "`f ⁻¹' V := {a | f a ∈ V}`"
