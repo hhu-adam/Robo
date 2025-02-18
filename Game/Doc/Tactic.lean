@@ -121,6 +121,20 @@ TacticDoc change
 
 
 
+
+/--
+Eine Annahme der Form `h : ∃ b : B, P b` lässt sich mit
+`choose b hb using h` in die Bestandteile `b : A` und `hb : P b`
+zerlegen.
+
+Allgemeiner können wir `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:
+aus einer Annahme der Form `h : ∀ a, ∃ b, P a b` extrahiert `choose f hf using h`
+eine Abbildung `f : A → B` und die Aussage ` ∀ (a : A), P a (f a)`.
+(Hier ist `P : A → (B → Prop)` ein Prädikat, dass von zwei Variablen `a` und `b` abhängt.)
+ -/
+TacticDoc choose
+
+
 /--
 `constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.
 

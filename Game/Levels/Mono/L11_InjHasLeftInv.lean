@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Mono"
-Level 10
+Level 11
 
 Title "Injections have a left inverse, and vice versa"
 
@@ -12,24 +12,8 @@ Introduction
 
 open Function Set
 
-
--- TODO: new level with this!
--- Needed as a have statement in the Boss level
-Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b   := by
-  obtain ⟨a₀⟩ := hA
-  intro b
-  by_cases hb : ∃ a' : A, f a' = b
-  · obtain ⟨a,ha⟩ := hb
-    use a
-    left
-    assumption
-  use a₀
-  right
-  assumption
-
-
 -- mathlib: Function.injective_iff_hasLeftInverse
-Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
+Statement Function.injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
   Injective f ↔ HasLeftInverse f := by
   constructor
   · intro hf

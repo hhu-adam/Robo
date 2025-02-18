@@ -4,7 +4,7 @@ import Game.Metadata
 World "Epo"
 Level 3
 
-Title "Left inverse"
+Title ""
 
 
 Introduction
@@ -18,22 +18,15 @@ open Function
 
 Statement {A B : Type} {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ LeftInverse f g := by
-  Hint (hidden := true) "
-    Actually, in Lean, we have `RightInverse g f = LeftInverse f g` by definition.
+  Hint "
+  **Du**: Ich vermute mal, dass soll heißen, `g` ist genau dann ein Rechtsinverses of `f, wenn `f` ein Linksinverses von `g` ist.
+
+  **Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von `Function.RightInverse`.  Und dummerweise muss man tatsächlich `Function.RightInverse` statt schlicht `RightInverse` schreiben, weil `RightInverse` in Leansch mehrdeutig ist.
   "
   Branch
     unfold Function.RightInverse
     rfl
   tauto
-
-/-- `Function.RightInverse f g` is als `LeftInverse g f` definiert.
-
-Man muss `Function.` anfügen, da Mathlib noch eine andere Definition `RightInverse`
-besitzt, weshalb ein simples `RightInverse` nicht eindeutig wäre. -/
-DefinitionDoc Function.RightInverse as "RightInverse"
-
-/---/
-DefinitionDoc Function.LeftInverse as "LeftInverse"
 
 TheoremTab "Function"
 NewDefinition Function.RightInverse Function.LeftInverse

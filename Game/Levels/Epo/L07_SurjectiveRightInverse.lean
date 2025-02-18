@@ -4,21 +4,9 @@ import Game.Metadata
 World "Epo"
 Level 7
 
-Title "Every surjection has a right inverse"
+Title ""
 
-
-Introduction
-"
-The preimage of set `S` under a function `f`, denoted by `f ⁻¹' S` is the set of all elements
-`x` in the domain of `f` such that `f x` is in `S`.
-
-```
-f ⁻¹' S = {x | f x ∈ S}
-```
-
-`HasRightInverse.surjective`
-
-"
+Introduction ""
 
 open Function Set
 
@@ -27,7 +15,7 @@ Statement {A B : Type} (f : A → B) :
   constructor
   · intro hs
     choose g hg using hs
-    unfold HasRightInverse
+    -- unfold HasRightInverse
     use g
     assumption
   · -- this is `Function.HasRightInverse.surjective`
@@ -37,3 +25,12 @@ Statement {A B : Type} (f : A → B) :
     apply inv
 
 TheoremTab "Function"
+
+Conclusion "
+Ihr bekommt eine große Runde Applaus.
+
+Danach werdet ihr verabschiedet.
+Für den Rückweg könnt ihr leider keine Transportkapsel benutzen.
+Die funktionieren nämlich nur in eine Richtung.
+Zurück zum Raumschiff geht es also zu Fuß: erst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.
+"

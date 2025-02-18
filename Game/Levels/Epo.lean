@@ -31,11 +31,7 @@ Das hier ist nur unser Schlafturm.  Kommt, ich bringe euch hinüber.  Es geht ga
 Er führt euch eine Etage hinunter und bitte euch, in „Transportkapseln“ einzusteigen, jeder in eine.
 
 **Portier**:  Wir rutschen jetzt einfach mit diesen Kapseln hinüber.
-Keine Sorge, die Bahn ist frei!  Alle anderen sind ja schon drüben!
-
-
-
-
-
-
+Keine Sorge, die Bahn ist frei!
+Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die Luft rein.
+Alle anderen sind ja schon drüben!
 "

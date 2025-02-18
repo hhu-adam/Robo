@@ -43,16 +43,26 @@ DefinitionDoc Function.Bijective as "Bijective"
 DefinitionDoc Function.StrictMono as "StrictMono"
 
 
+/-- `Function.RightInverse f g` ist als `LeftInverse g f` definiert.
+Das bedeutet im Klartext natürlich `∀ x, g (f x) = x`.
+
+Man muss leider `Function.RightInverse`  statt `RightInverse` schreiben,
+da `RightInverse` allein in Leansch mehrdeutig ist.
+-/
+DefinitionDoc Function.RightInverse as "RightInverse"
+
+
+/--
+`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie man mit `unfold` leicht sieht.
+-/
+DefinitionDoc Function.LeftInverse as "LeftInverse"
+
 /--
 `HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.
--/
-DefinitionDoc Function.HasRightInverse as "HasRightInverse"
 
-
-/--
 `HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt.
 -/
-DefinitionDoc Function.HasLeftInverse as "HasLeftInverse"
+DefinitionDoc Function.HasRightInverse as "Has…Inverse"
 
 /--
 Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` die Vereinigung der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\union`.

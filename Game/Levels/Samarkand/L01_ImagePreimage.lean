@@ -6,9 +6,11 @@ World "Samarkand"
 Level 1
 Title "Bild/Urbild"
 
+
+
 Introduction "
 `f '' S` ist das Bild,
-`f ⁻¹' V` das Urbild,
+`f ⁻¹' V = {x | f x ∈ V} ` das Urbild,
 
 `f '' S := {f a | a ∈ S}`
 `f ⁻¹' V := {a | f a ∈ V}`

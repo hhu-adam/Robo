@@ -16,7 +16,9 @@ open Function
 /---/
 TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
 
-Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInverse f) :
+-- Theorem in Mathlib uses the Definition HasLeftInverse, which we've removed from the game for simplicity.
+
+Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : ∃ g, LeftInverse g f) :
     Injective f := by
   intro a a' ha
   obtain ⟨g, hg⟩ := h

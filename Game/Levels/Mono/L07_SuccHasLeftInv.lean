@@ -22,4 +22,4 @@ Statement : HasLeftInverse Nat.succ  := by
   unfold LeftInverse
   simp
 
-NewDefinition Function.HasLeftInverse
+-- NewDefinition Function.HasLeftInverse

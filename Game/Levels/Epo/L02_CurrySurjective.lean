@@ -4,7 +4,7 @@ import Game.Metadata
 World "Epo"
 Level 2
 
-Title "Not exhausted by naturals."
+Title ""
 
 Introduction ""
 
@@ -13,11 +13,12 @@ open Function Nat
 #check ne_comm
 
 Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
-  Hint "**Robo**: Du könnstest mit `constructor` anfangen,
-  oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt.
-  So oder so könnte `ne_comm` hier nützlich sein:  `a ≠ b ↔ b ≠ a`.
+  Hint "
+  **Du**:  `ℕ → A → B` … wie lese ich diese zwei Pfeile hintereinander?
 
-  "
+  **Robo**: Du liest das als `ℕ → (A → B)` – eine Abbildung von den natürlichen Zahlen `ℕ` in die Menge `A → B` der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst."
+  Hint (hidden := true) "
+  **Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt."
   Branch
     constructor
     · intro h
@@ -26,6 +27,9 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
       obtain ⟨w, hw⟩ := h
       use w
       intro n
+      Hint "
+      **Robo**: Hilft dir vielleicht `ne_comm` weiter?
+      Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
       rw [ne_comm]
       apply hw
     · intro ⟨g, hg⟩
@@ -36,6 +40,9 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
       assumption
   unfold Surjective
   push_neg
+  Hint "
+  **Robo**: Hilft dir vielleicht `ne_comm` weiter?
+  Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
   simp_rw [ne_comm]
 
 /---/
