@@ -25,6 +25,4 @@ Statement :
   simp [g, f]
   ring
 
-/---/
-DefinitionDoc Function.HasRightInverse as "HasRightInverse"
 NewDefinition Function.HasRightInverse

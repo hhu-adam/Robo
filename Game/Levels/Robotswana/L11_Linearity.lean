@@ -27,7 +27,7 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   rw [trace_sub]
   rw [trace_smul]
   rw [trace_one]
-  Hint "**Robo**: Dieser letzte Schritt ist `Fintype.card_fin`. Das ginge auch alles
+  Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge auch alles
   mit `simp` wenn wir nicht am spielen wären.
 
   **Du**: Ist doch egal, das macht Spass!"
@@ -41,6 +41,9 @@ TheoremDoc Matrix.trace_smul as "trace_smul" in "Matrix"
 
 /---/
 TheoremDoc Matrix.trace_sub as "trace_sub" in "Matrix"
+
+/---/
+TheoremDoc Fintype.card_fin as "card_fin" in "Set"
 
 NewTheorem Matrix.trace_one Matrix.trace_smul Matrix.trace_sub Fintype.card_fin
 OnlyTactic rw

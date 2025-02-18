@@ -55,6 +55,15 @@ DefinitionDoc Function.HasRightInverse as "HasRightInverse"
 DefinitionDoc Function.HasLeftInverse as "HasLeftInverse"
 
 /--
+Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` die Vereinigung der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\union`.
+-/
+DefinitionDoc Set.union as "∪"
+
+/--
+Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` der Schnitt der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\inter`.
+-/
+DefinitionDoc Set.inter as "∩"
+/--
 Für eine Abbildung `f : A → B` ist `range f` eine alternative Schreibweise für `f '' univ`,
 also für den Wertebereich von `f`.  Insbesondere ist also `range f : Set B`.
 -/
