@@ -43,6 +43,37 @@ DefinitionDoc Function.Bijective as "Bijective"
 DefinitionDoc Function.StrictMono as "StrictMono"
 
 
+/--
+`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.
+-/
+DefinitionDoc Function.HasRightInverse as "HasRightInverse"
+
+
+/--
+`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt.
+-/
+DefinitionDoc Function.HasLeftInverse as "HasLeftInverse"
+
+/--
+Für eine Abbildung `f : A → B` ist `range f` eine alternative Schreibweise für `f '' univ`,
+also für den Wertebereich von `f`.  Insbesondere ist also `range f : Set B`.
+-/
+DefinitionDoc Set.range as "range"
+
+/--
+Für eine Abbildung `f : A → B` ist `image f : Set A → Set B`
+einer der induzierten Abbildung auf den Potenzmengen –
+sie bildet eine Teilmenge von `A` ab auf das Bild dieser Teilmenge unter `f`.
+-/
+DefinitionDoc Set.image as "image"
+
+/--
+Für eine Abbildung `f : A → B` ist `preimage f : Set B → Set A`
+eine der induzierten Abbildung auf den Potenzmengen –
+sie bildet eine Teilmenge von `B` ab auf das Urbild dieser Teilmenge unter `f`.
+-/
+DefinitionDoc Set.preimage as "preimage"
+
 
 /--
 Anonyme Funktionen kann man mit `fun (x : ℤ)  2 * x` definieren und
@@ -50,10 +81,6 @@ wie andere Objekte verwenden.  Den Pfeil `↦` schreibt man als `\\maps` oder `\
 Alternativ kann man statt `↦` auch `=>` verwenden.
 -/
 DefinitionDoc Symbol.function as "fun x ↦ _"
-
-
-
-
 
 
 

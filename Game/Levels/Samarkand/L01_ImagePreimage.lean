@@ -14,7 +14,7 @@ Introduction "
 `f ⁻¹' V := {a | f a ∈ V}`
 "
 
-/--  -/
+/---/
 TheoremDoc Set.image_preimage_subset as "image_preimage_subset" in "Set"
 
 Statement Set.image_preimage_subset {A B : Type} (f : A → B) (S : Set B) :
@@ -26,4 +26,4 @@ Statement Set.image_preimage_subset {A B : Type} (f : A → B) (S : Set B) :
   rw [ha₂] at ha₁
   assumption
 
-NewDefinition Set.image Set.preimage
+NewDefinition Set.image Set.preimage  -- seems misplaced here!  image f and preimage f are maps!

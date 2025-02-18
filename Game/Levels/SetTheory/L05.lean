@@ -25,6 +25,9 @@ welches wir hier beweisen.
 
 open Set
 
+/---/
+TheoremDoc Set.Subset.antisymm_iff as "Subset.antisymm_iff" in "Set"
+
 Statement Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by
   constructor
   · intro h

@@ -15,7 +15,10 @@ open Function Set
 
 #check Set.singleton
 
-Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : Injective f)
+/---/
+TheoremDoc Function.Injective.exists_unique_of_mem_range as "Injective.exists_unique_of_mem_range" in "Function"
+
+Statement Function.Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : Injective f)
     {b : B} (hb : b ∈ range f) :
     ∃! a, f a = b := by
   obtain ⟨a, ha⟩ := hb
@@ -27,4 +30,4 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
     apply hf
     rw [ha',ha]
 
-NewDefinition Set.Range
+NewDefinition Set.range

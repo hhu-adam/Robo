@@ -49,7 +49,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     use g
     constructor
     · Branch
-        dsimp [Function.RightInverse]
+        dsimp [RightInverse]
         apply rightInverse_of_injective_of_leftInverse finj
         assumption
       Hint "
@@ -92,7 +92,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       rw [hR]
 
 
-NewDefinition LeftInverse RightInverse
+-- NewDefinition LeftInverse RightInverse
 DisabledTheorem Function.bijective_iff_has_inverse
 TheoremTab "Logic"
 

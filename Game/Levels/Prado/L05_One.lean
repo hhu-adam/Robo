@@ -11,6 +11,7 @@ Title "Eins"
 Introduction "
 **Guino:** Ich habe aber tatsächlich eine kleine Aufgabe für euch."
 
+/---/
 TheoremDoc Nat.not_prime_one as "not_prime_one" in "ℕ"
 
 Statement not_prime_one : ¬ Nat.Prime 1 := by

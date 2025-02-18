@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Feb 17 10:42:13 2025\n"
+"POT-Creation-Date: Tue Feb 18 10:41:35 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -46,6 +46,31 @@ msgid "`f` ist strikt monoton wenn\n"
 "```\n"
 "∀ a b, a < b → f a < f b\n"
 "```"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Abbildung `f : A → B` ist `range f` eine alternative Schreibweise für `f '' univ`,\n"
+"also für den Wertebereich von `f`.  Insbesondere ist also `range f : Set B`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Abbildung `f : A → B` ist `image f : Set A → Set B`\n"
+"einer der induzierten Abbildung auf den Potenzmengen –\n"
+"sie bildet eine Teilmenge von `A` ab auf das Bild dieser Teilmenge unter `f`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Abbildung `f : A → B` ist `preimage f : Set B → Set A`\n"
+"eine der induzierten Abbildung auf den Potenzmengen –\n"
+"sie bildet eine Teilmenge von `B` ab auf das Urbild dieser Teilmenge unter `f`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -3318,6 +3343,10 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L04_ArithSum
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L04_ArithSum
 msgid "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,\n"
 "Steintürme in allen Formen und Höhen stehen."
 msgstr ""
@@ -3367,6 +3396,10 @@ msgid "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um siche
 "**Du**: Hast du nicht ein Lemma dafür?\n"
 "\n"
 "**Robo**: Doch, probier mal `sum_comm`."
+msgstr ""
+
+#: Game.Levels.Babylon.L06_SumComm
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L06_SumComm
@@ -5350,28 +5383,29 @@ msgid "Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet.\n"
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
-msgid "Surjektive"
+msgid "Surjektiv"
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
-msgid "Endlich kommt ihr in einen große, beleuchteten zentralen Raum.\n"
-"Alle Wände sind voll mit Büchern und\n"
-"in der Mitte sitzt an einem einsamen\n"
-"Tisch ein Gelehrter, der tatsächlich das gesuchte Buch zeigen kann.\n"
-"\n"
-"Bevor er dieses aushändigt, will er aber folgendes wissen:"
+msgid "Die Fahrt ist tatsächlich kurz und schmerzlos.\n"
+"Und euch wird tatsächlich ein großen Empfang bereitet.\n"
+"Nachdem sich die erste Aufregung gelegt hat, werden ihr aber auch hier mit Aufgaben konfrontiert."
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
-msgid "**Robo**: Die Definition von `Surjective f` ist `∀ y, (∃ x, f x = y)`.\n"
+msgid "**Du**: Vermute ich richtig, dass die Definition von `Surjective f` ist: `∀ y, (∃ x, f x = y)`?\n"
 "\n"
-"**Du**: Dann kann ich das auch einfach wie Quantifier behandeln?\n"
-"\n"
-"**Robo**: Schieß drauf los!"
+"**Robo**: Glaub schon.  Du könntest ja mal mit `unfold Surjective` hineinsehen. Musst da aber auch nicht."
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
-msgid "Der Gelehrte händigt euch schmunzelnd das Buch aus."
+msgid "`Surjective f` bedeutet naheliegenderweise, dass die Abbildung `f` surjektiv ist.\n"
+"Mit `unfold Surjective` (bzw. `unfold Surjective at h`) kann man leicht nachsehen, was das\n"
+"in Quantorenschreibweise konkret bedeutet."
+msgstr ""
+
+#: Game.Levels.Epo.L01_Surjective
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
@@ -5379,10 +5413,17 @@ msgid "Not exhausted by naturals."
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
-msgid "**Robo**: Du hast zwei Möglichkeiten, entweder du kannst mit `constructor` anfangen,\n"
-"oder du machst mal `unfold Surjective` und schaust dann, ob `push_neg` was kann.\n"
-"\n"
-"**Robo**: Btw, Ich glaube `ne_comm`, welches `a ≠ b ↔ b ≠ a` sagt, könnte hier nützlich sein."
+msgid ""
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
+msgid "**Robo**: Du könnstest mit `constructor` anfangen,\n"
+"oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt.\n"
+"So oder so könnte `ne_comm` hier nützlich sein:  `a ≠ b ↔ b ≠ a`."
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
@@ -5428,6 +5469,10 @@ msgid "Während `Function.RightInverse f g` die konkrete Inverse `g` angibt, ist
 "Dieses kann natürlich trotzdem mit `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …` definiert werden."
 msgstr ""
 
+#: Game.Levels.Epo.L05_RightInverse
+msgid ""
+msgstr ""
+
 #: Game.Levels.Epo.L06_choose
 msgid "Every function with nonempty fibres has a right inverse."
 msgstr ""
@@ -5456,9 +5501,26 @@ msgid "Epo"
 msgstr ""
 
 #: Game.Levels.Epo
-msgid "Für jede beweisbare Aussage gibt es eine Taktik-Sequenz, die die Aufgabe löst.\n"
+msgid "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: ein schmales Hochhaus\n"
+"und ein zweites Gebäude mit etwas weniger Etagen.\n"
+"Die Gebäude sind mit einem eigenartigen Röhrensystem miteinander verbunden.\n"
+"Oben auf dem Hochhaus erkennt ihr einen Landeplatz.  Den steuert ihr an.\n"
 "\n"
-"Die Auswertungsfunktion von gültigen Taktiksequenzen ist also surjektiv."
+"Als ihr aussteigt, kommt ein Formalosoph auf euch zugelaufen.  Er winkt wild mit den Armen.\n"
+"\n"
+"**Portier**:  Nein, nicht doch, da unten werdet ihr erwartet.\n"
+"\n"
+"Er lässt die Arme sinken.\n"
+"\n"
+"**Portier**:  Nun ja, egal.  Guten Tag, erst einmal!\n"
+"Ich bin hier nur der Hausmeister.\n"
+"Ihr werdet von einer großen Delegation erwartet, aber natürlich drüben, im Bürohaus.\n"
+"Das hier ist nur unser Schlafturm.  Kommt, ich bringe euch hinüber.  Es geht ganz schnell.\n"
+"\n"
+"Er führt euch eine Etage hinunter und bitte euch, in „Transportkapseln“ einzusteigen, jeder in eine.\n"
+"\n"
+"**Portier**:  Wir rutschen jetzt einfach mit diesen Kapseln hinüber.\n"
+"Keine Sorge, die Bahn ist frei!  Alle anderen sind ja schon drüben!"
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
@@ -5494,6 +5556,10 @@ msgstr ""
 
 #: Game.Levels.Mono.L02_New
 msgid "Preimage of surjective is injective"
+msgstr ""
+
+#: Game.Levels.Mono.L02_New
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L02_New
@@ -5671,6 +5737,10 @@ msgstr ""
 msgid "In this level you show that a function which has a left inverse is injective."
 msgstr ""
 
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
+msgid ""
+msgstr ""
+
 #: Game.Levels.Mono.L10_InjHasLeftInv
 msgid "Injections have a left inverse, and vice versa"
 msgstr ""
@@ -5753,6 +5823,10 @@ msgstr ""
 #: Game.Levels.Samarkand.L05_InjectiveFibre
 msgid "For an injective function `f : A → B` the fibres of the elements in the range\n"
 "are singletons."
+msgstr ""
+
+#: Game.Levels.Samarkand.L05_InjectiveFibre
+msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L06
@@ -6040,6 +6114,10 @@ msgid "Am Anfang hatten wir gesehen, dass man Mengengleichheit durch\n"
 "```\n"
 "\n"
 "welches wir hier beweisen."
+msgstr ""
+
+#: Game.Levels.SetTheory.L05
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L05

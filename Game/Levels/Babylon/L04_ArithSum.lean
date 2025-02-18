@@ -85,6 +85,8 @@ NewTactic induction
 TheoremDoc Nat.zero_eq as "zero_eq" in "ℕ"
 /---/
 TheoremDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "ℕ"
+/---/
+TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "Sum"
 
 NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
 TheoremTab "Sum"

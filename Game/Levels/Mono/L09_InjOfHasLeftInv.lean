@@ -13,7 +13,10 @@ Introduction
 
 open Function
 
-Statement HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInverse f) :
+/---/
+TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
+
+Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     Injective f := by
   intro a a' ha
   obtain ⟨g, hg⟩ := h

@@ -33,7 +33,10 @@ Statement
   **Du**: Hast du nicht ein Lemma dafür?
 
   **Robo**: Doch, probier mal `sum_comm`."
-  rw [Finset.sum_comm]
+  rw [sum_comm]
+
+/---/
+TheoremDoc Finset.sum_comm as "sum_comm" in "Sum"
 
 NewTheorem Finset.sum_comm
 TheoremTab "Sum"
