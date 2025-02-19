@@ -5,7 +5,7 @@ import Game.Metadata
 World "Lean"
 Level 4
 
-Title "Instanz-Argumente"
+Title "" -- "Instanz-Argumente"
 
 Introduction
 "**Du**: Also nochmals als Zusammenfassung, dann gibt es 3 Arten von Argumenten,

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 3
 
-Title "Apply"
+Title "" -- "Apply"
 
 Introduction
 "

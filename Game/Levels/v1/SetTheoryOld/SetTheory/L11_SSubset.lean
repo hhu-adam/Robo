@@ -4,7 +4,7 @@ import Game.Levels.SetTheory.L10_Morgan
 World "SetTheory"
 Level 11
 
-Title "Strikte Teilmenge"
+Title "" -- "Strikte Teilmenge"
 
 Introduction
 "

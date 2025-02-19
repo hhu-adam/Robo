@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 10
 
-Title "Für alle"
+Title "" -- "Für alle"
 
 Introduction "Nach längerem Durcheinander findet ein weiteres Blatt aus der Menge zu Euch."
 

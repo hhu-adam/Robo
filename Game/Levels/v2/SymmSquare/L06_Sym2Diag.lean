@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 6
 
-Title "Unordered pairs on diagonal"
+Title "" -- "Unordered pairs on diagonal"
 
 Introduction
 "

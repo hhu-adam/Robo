@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 2
 
-Title "Natürliche Zahlen"
+Title "" -- "Natürliche Zahlen"
 
 Introduction ""
 

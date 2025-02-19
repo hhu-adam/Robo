@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 6
 
-Title "Not"
+Title "" -- "Not"
 
 Introduction
 "

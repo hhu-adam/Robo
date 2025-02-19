@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 5
 
-Title "Symmetric Function"
+Title "" -- "Symmetric Function"
 
 Introduction
 "

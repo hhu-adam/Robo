@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 2
 
-Title "Revert"
+Title "" -- "Revert"
 
 Introduction
 "

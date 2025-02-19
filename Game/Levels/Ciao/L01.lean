@@ -3,7 +3,7 @@ import Game.Metadata
 World "Ciao"
 Level 1
 
-Title "Weiter gehts …"
+Title "" -- "Weiter gehts …"
 
 Introduction ""
 

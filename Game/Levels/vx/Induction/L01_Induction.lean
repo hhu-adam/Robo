@@ -4,7 +4,7 @@ import Game.Metadata
 World "Induction"
 Level 1
 
-Title "Induktion"
+Title "" -- "Induktion"
 
 Introduction
 "

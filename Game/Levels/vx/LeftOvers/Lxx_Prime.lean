@@ -21,7 +21,7 @@ def prime (n : ℕ) : Prop := (2 ≤ n) ∧ ∀ a b, n = a * b → a = 1 ∨ b =
 World "Nat"
 Level 4
 
-Title "Für alle"
+Title "" -- "Für alle"
 
 Introduction
 "

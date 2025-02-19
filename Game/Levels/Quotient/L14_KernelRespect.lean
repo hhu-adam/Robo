@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quotient"
 Level 14
 
-Title "Respect"
+Title "" -- "Respect"
 
 Introduction
 "

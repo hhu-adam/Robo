@@ -6,7 +6,7 @@ import Game.Metadata.StructInstWithHoles
 World "Module"
 Level 1
 
-Title "Module"
+Title "" -- "Module"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 3
 
-Title "Annahmen"
+Title "" -- "Annahmen"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.Quantus
 World "Spinoza"
 Level 5
 
-Title "Kontraposition"
+Title "" -- "Kontraposition"
 
 Introduction
 "

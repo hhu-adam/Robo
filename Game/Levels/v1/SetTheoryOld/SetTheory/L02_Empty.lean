@@ -4,7 +4,7 @@ import Game.Levels.SetTheory.L01_Univ
 World "SetTheory"
 Level 2
 
-Title "leere Menge"
+Title "" -- "leere Menge"
 
 Introduction
 "

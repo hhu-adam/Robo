@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L01_CantorPowerset
 World "Cantor"
 Level 3
 
-Title "Fixpunkte"
+Title "" -- "Fixpunkte"
 
 Introduction
 "

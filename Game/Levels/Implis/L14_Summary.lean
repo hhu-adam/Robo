@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 14
 
-Title "Zusammenfassung"
+Title "" -- "Zusammenfassung"
 
 Introduction
 "

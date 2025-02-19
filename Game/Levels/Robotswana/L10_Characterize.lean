@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L09_EvalOnEBasis
 World "Robotswana"
 Level 10
 
-Title "Trace"
+Title "" -- "Trace"
 
 Introduction
 "

@@ -7,7 +7,7 @@ set_option tactic.hygienic false
 World "Robotswana"
 Level 11
 
-Title "Trace"
+Title "" -- "Trace"
 
 Introduction
 "

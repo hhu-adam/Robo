@@ -5,7 +5,7 @@ open Finset
 World "Babylon"
 Level 3
 
-Title "endliche Summe"
+Title "" -- "endliche Summe"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L03_fixedPoints_neg
 World "Cantor"
 Level 5
 
-Title "Keine Fixpunkte"
+Title "" -- "Keine Fixpunkte"
 
 Introduction
 "**Cantor**: Aber auf was ich eigentlich hinaus wollte, ist die Fixpunkte von `¬` anzuschauen;

@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 5
 
-Title "funext"
+Title "" -- "funext"
 
 
 Introduction

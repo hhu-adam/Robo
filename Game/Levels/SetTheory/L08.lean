@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 8
 
-Title "Übung"
+Title "" -- "Übung"
 
 Introduction
 "

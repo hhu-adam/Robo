@@ -6,7 +6,7 @@ import Game.Levels.SetTheory.L14_SetOf
 World "SetTheory2"
 Level 2
 
-Title "Potenzmenge"
+Title "" -- "Potenzmenge"
 
 Introduction
 "

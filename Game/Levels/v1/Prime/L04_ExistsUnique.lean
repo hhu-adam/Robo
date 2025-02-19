@@ -5,7 +5,7 @@ import Game.Metadata
 World "Prime"
 Level 4
 
-Title "Existiert eindeutig"
+Title "" -- "Existiert eindeutig"
 
 Introduction
 "

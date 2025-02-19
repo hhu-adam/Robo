@@ -5,7 +5,7 @@ import Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 World "Robotswana"
 Level 8
 
-Title "Die Summe der Summe der Summe"
+Title "" -- "Die Summe der Summe der Summe"
 
 Introduction
 "

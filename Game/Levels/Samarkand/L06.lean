@@ -5,7 +5,7 @@ open Function Set
 World "Samarkand"
 Level 6
 
-Title "Preimage of surjective is injective"
+Title "" -- "Preimage of surjective is injective"
 
 Introduction
 ""

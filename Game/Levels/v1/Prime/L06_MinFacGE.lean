@@ -4,7 +4,7 @@ import Game.Levels.NewStuff.Prime.L05_MinFacPrime
 World "Prime"
 Level 6
 
-Title "Unendlich viele Primzahlen"
+Title "" -- "Unendlich viele Primzahlen"
 
 Introduction "
 **Person**: Warte mal, ist die wirklich grösser als $n$?

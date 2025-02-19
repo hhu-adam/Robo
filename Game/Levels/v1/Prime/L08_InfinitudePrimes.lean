@@ -4,7 +4,7 @@ import Game.Levels.NewStuff.Prime.L07_InfinitudePrimes
 World "Prime"
 Level 8
 
-Title "Unendlich viele Primzahlen"
+Title "" -- "Unendlich viele Primzahlen"
 
 Introduction "
 "

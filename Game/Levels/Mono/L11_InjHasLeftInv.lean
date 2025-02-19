@@ -3,7 +3,7 @@ import Game.Levels.Mono.L10_Auxiliary
 World "Mono"
 Level 11
 
-Title "Injections have a left inverse, and vice versa"
+Title "" -- "Injections have a left inverse, and vice versa"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Finite"
 Level 10
 
-Title "Gauss Sum"
+Title "" -- "Gauss Sum"
 
 Introduction
 "

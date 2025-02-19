@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 1
 
-Title "Mengen"
+Title "" -- "Mengen"
 
 -- macro_rules | `(tactic| trivial) => `(tactic| simp <;> trivial)
 -- macro_rules | `(tactic| trivial) => `(tactic| tauto)

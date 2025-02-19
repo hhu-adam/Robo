@@ -4,7 +4,7 @@ import Game.Metadata
 World "Samarkand"
 Level 7
 
-Title "Preimage of the inverse"
+Title "" -- "Preimage of the inverse"
 
 Introduction
 "

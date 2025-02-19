@@ -3,7 +3,7 @@ import Game.Levels.Mono.L06_StrictMono
 World "Mono"
 Level 7
 
-Title ""
+Title "" -- ""
 
 Introduction ""
 

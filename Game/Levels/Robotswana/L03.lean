@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L02_EBasis
 World "Robotswana"
 Level 3
 
-Title "Richtige Indizes"
+Title "" -- "Richtige Indizes"
 
 Introduction ""
 

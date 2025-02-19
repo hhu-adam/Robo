@@ -4,7 +4,7 @@ import Game.Metadata
 World "Logo"
 Level 1
 
-Title "Automatisierung"
+Title "" -- "Automatisierung"
 
 Introduction
 "

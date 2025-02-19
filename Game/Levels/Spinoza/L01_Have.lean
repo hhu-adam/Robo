@@ -3,7 +3,7 @@ import Game.Metadata
 World "Spinoza"
 Level 1
 
-Title "Was wir haben, haben wir."
+Title "" -- "Was wir haben, haben wir."
 
 Introduction
 "

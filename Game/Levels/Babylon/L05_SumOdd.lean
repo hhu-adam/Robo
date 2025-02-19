@@ -8,7 +8,7 @@ Level 5
 open Fin
 open BigOperators
 
-Title "Summe aller ungeraden Zahlen"
+Title "" -- "Summe aller ungeraden Zahlen"
 
 Introduction
 "

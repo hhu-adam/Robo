@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 8
 
-Title "Gerade Primzahlen"
+Title "" -- "Gerade Primzahlen"
 
 Introduction
 "Inzwischen seid ihr auf der Dachterasse angekommen.

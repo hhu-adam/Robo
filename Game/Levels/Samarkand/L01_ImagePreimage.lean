@@ -4,7 +4,7 @@ open Function Set
 
 World "Samarkand"
 Level 1
-Title "Bild/Urbild"
+Title "" -- "Bild/Urbild"
 
 
 

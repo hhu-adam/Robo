@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
 World "Cantor"
 Level 9
 
-Title "Diagonalargument"
+Title "" -- "Diagonalargument"
 
 Introduction
 "

@@ -5,7 +5,7 @@ import Game.Metadata
 World "Prime"
 Level 3
 
-Title "Primzahlen"
+Title "" -- "Primzahlen"
 
 Introduction
 "

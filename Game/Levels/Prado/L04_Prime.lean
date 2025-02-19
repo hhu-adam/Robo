@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 4
 
-Title "Primzahlen"
+Title "" -- "Primzahlen"
 
 Introduction"
 **Du**:  Gut.  Und kannst du mir jetzt zeigen, wie man mit Primzahlen arbeitet?

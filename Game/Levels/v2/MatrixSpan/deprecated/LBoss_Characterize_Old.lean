@@ -12,7 +12,7 @@ notation R"^("n"×"m")" => Matrix (Fin n) (Fin m) R
 World "Robotswana"
 Level 1
 
-Title "Trace"
+Title "" -- "Trace"
 
 Introduction
 "

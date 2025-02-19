@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L05_EBasisDiagSum
 World "Robotswana"
 Level 6
 
-Title "Ein nihilierter Kommutator"
+Title "" -- "Ein nihilierter Kommutator"
 
 -- TODO: Intro & geschichte
 Introduction

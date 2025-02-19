@@ -4,7 +4,7 @@ import Mathlib.GroupTheory.Subgroup.Basic
 World "Quotient"
 Level 12
 
-Title "Kernel"
+Title "" -- "Kernel"
 
 Introduction
 "

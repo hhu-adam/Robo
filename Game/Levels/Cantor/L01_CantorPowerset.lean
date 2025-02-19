@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L00_CantorPowerset
 World "Cantor"
 Level 2
 
-Title "Cantor's Diagonalargument"
+Title "" -- "Cantor's Diagonalargument"
 
 Introduction
 "

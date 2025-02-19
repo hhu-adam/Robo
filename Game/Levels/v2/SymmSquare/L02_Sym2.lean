@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 2
 
-Title "Permutation Equivalence Relation"
+Title "" -- "Permutation Equivalence Relation"
 
 Introduction
 "

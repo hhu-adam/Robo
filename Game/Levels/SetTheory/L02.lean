@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 2
 
-Title "Schnitt und Vereinigung"
+Title "" -- "Schnitt und Vereinigung"
 
 Introduction
 "

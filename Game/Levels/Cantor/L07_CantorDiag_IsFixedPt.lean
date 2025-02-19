@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L06_idempotent
 World "Cantor"
 Level 8
 
-Title "Diagonalargument"
+Title "" -- "Diagonalargument"
 
 Introduction
 "

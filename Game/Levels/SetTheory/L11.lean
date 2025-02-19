@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 11
 
-Title "Abschluss"
+Title "" -- "Abschluss"
 
 Introduction
 "

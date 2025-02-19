@@ -3,7 +3,7 @@ import Game.MetaData
 World "SetTheoryCore"
 Level 6
 
-Title "Teilmengen"
+Title "" -- "Teilmengen"
 
 Introduction
 "

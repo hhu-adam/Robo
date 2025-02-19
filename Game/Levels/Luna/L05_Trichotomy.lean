@@ -3,7 +3,7 @@ import Game.Metadata
 World "Luna"
 Level 5
 
-Title "Trichotomie"
+Title "" -- "Trichotomie"
 
 Introduction
 "

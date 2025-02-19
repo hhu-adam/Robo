@@ -6,7 +6,7 @@ import Mathlib.Data.Real.Basic
 World "Span"
 Level 1
 
-Title "Span"
+Title "" -- "Span"
 
 /- # Introduction
 

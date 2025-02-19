@@ -4,7 +4,7 @@ import Game.Metadata
 World "Samarkand"
 Level 3
 
-Title "Range of Surjection"
+Title "" -- "Range of Surjection"
 
 
 Introduction

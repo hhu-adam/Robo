@@ -3,7 +3,7 @@ import Game.Metadata
 World "Samarkand"
 Level 5
 
-Title "Range of Injective"
+Title "" -- "Range of Injective"
 
 Introduction
 "

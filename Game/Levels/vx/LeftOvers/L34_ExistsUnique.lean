@@ -4,7 +4,7 @@ import Game.Metadata
 World "Nat2"
 Level 5
 
-Title "Exists unique"
+Title "" -- "Exists unique"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.SetTheory.L06_Nonempty
 World "SetTheory"
 Level 7
 
-Title "Schnittmenge und Vereinigung"
+Title "" -- "Schnittmenge und Vereinigung"
 
 Introduction
 "

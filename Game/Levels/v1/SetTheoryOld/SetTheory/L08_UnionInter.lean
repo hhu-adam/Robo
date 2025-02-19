@@ -4,7 +4,7 @@ import Game.Levels.SetTheory.L07_UnionInter
 World "SetTheory"
 Level 8
 
-Title "Schnittmenge und Vereinigung"
+Title "" -- "Schnittmenge und Vereinigung"
 
 Introduction
 "

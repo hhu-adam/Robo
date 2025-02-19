@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 9
 
-Title "Mengen"
+Title "" -- "Mengen"
 
 Introduction
 "

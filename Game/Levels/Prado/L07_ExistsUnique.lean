@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 7
 
-Title "Eindeutige Existenz"
+Title "" -- "Eindeutige Existenz"
 
 Introduction"
 **Robo**:  Aber so schwer ist des auch nicht.  Hier, schau dir diese Aufgabe mal an.

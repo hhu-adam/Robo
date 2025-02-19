@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 2
 
-Title "Teilbarkeit"
+Title "" -- "Teilbarkeit"
 
 Introduction
 "

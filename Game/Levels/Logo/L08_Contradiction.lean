@@ -4,7 +4,7 @@ import Game.Metadata
 World "Logo"
 Level 8
 
-Title "Aus Falschem folgt vieles."
+Title "" -- "Aus Falschem folgt vieles."
 
 Introduction
 "

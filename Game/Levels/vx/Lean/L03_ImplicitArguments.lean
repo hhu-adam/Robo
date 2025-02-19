@@ -7,7 +7,7 @@ Level 3
 
 open Fin
 
-Title "Implizite Argumente"
+Title "" -- "Implizite Argumente"
 
 Introduction
 "

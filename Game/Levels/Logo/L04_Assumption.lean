@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 4
 
-Title "Logische Aussagen"
+Title "" -- "Logische Aussagen"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L01_SMulEBasis
 World "Robotswana"
 Level 2
 
-Title "Falsche Indizes"
+Title "" -- "Falsche Indizes"
 
 Introduction
 "

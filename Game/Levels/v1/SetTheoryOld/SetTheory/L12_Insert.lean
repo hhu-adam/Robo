@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L11_SSubset
 World "SetTheory"
 Level 12
 
-Title "Konkrete Mengen"
+Title "" -- "Konkrete Mengen"
 
 Introduction
 "

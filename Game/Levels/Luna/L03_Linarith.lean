@@ -4,7 +4,7 @@ import Game.Metadata
 World "Luna"
 Level 3
 
-Title "Linarith"
+Title "" -- "Linarith"
 
 Introduction
 "

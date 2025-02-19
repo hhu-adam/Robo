@@ -8,7 +8,7 @@ import Game.Levels.MatrixSpan.L14
 World "Span"
 Level 15
 
-Title "Span"
+Title "" -- "Span"
 
 /- # Introduction
 

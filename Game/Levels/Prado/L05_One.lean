@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 5
 
-Title "Eins"
+Title "" -- "Eins"
 
 Introduction "
 **Guino:** Ich habe aber tatsächlich eine kleine Aufgabe für euch."

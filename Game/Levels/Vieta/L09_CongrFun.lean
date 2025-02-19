@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 9
 
-Title "congr_fun"
+Title "" -- "congr_fun"
 
 
 Introduction ""

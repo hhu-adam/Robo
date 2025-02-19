@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L13_Insert
 World "SetTheory2"
 Level 1
 
-Title "Mengen mit Konditionen"
+Title "" -- "Mengen mit Konditionen"
 
 Introduction
 "

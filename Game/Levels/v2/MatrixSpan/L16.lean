@@ -11,7 +11,7 @@ import Game.Levels.Robotswana
 World "Span"
 Level 16
 
-Title "Span"
+Title "" -- "Span"
 
 /- # Introduction
 

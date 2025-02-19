@@ -4,7 +4,7 @@ import Mathlib.GroupTheory.Subgroup.Basic
 World "Quotient"
 Level 10
 
-Title "Kernel relation"
+Title "" -- "Kernel relation"
 
 Introduction
 "

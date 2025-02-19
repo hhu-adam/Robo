@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 3
 
-Title "Anonyme Funktionen"
+Title "" -- "Anonyme Funktionen"
 
 Introduction
 "

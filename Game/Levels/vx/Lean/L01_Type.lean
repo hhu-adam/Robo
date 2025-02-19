@@ -4,7 +4,7 @@ import Game.Metadata
 World "Lean"
 Level 1
 
-Title "Typen"
+Title "" -- "Typen"
 
 Introduction
 "

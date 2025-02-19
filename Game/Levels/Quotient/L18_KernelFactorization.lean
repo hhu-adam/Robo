@@ -6,7 +6,7 @@ import Game.Levels.Quotient.L16_KernelBijection
 World "Quotient"
 Level 18
 
-Title "Factorization"
+Title "" -- "Factorization"
 
 Introduction
 "

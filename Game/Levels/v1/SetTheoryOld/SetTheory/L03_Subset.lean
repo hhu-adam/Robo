@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L02_Empty
 World "SetTheory"
 Level 3
 
-Title "Teilmengen"
+Title "" -- "Teilmengen"
 
 Introduction
 "

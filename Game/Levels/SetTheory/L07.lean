@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 7
 
-Title "gesamte Menge"
+Title "" -- "gesamte Menge"
 
 Introduction
 "

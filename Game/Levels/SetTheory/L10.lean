@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 10
 
-Title "Teilmengen mit Konditionen"
+Title "" -- "Teilmengen mit Konditionen"
 
 Introduction
 "

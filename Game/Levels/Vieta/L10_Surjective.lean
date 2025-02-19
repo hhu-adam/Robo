@@ -5,7 +5,7 @@ World "Vieta"
 Level 10
 
 -- "A function which semiconjugates an endofunction to the successor function is surjective"
-Title "Boss"
+Title "" -- "Boss"
 Introduction
 "
 Die Kampfgeräusche wirken inzwischen bedrohlich nahe.

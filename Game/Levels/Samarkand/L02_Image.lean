@@ -4,7 +4,7 @@ open Function Set
 
 World "Samarkand"
 Level 2
-Title "Bild/Urbild"
+Title "" -- "Bild/Urbild"
 
 Introduction "
 unangewendetes image/preimage als Funktion

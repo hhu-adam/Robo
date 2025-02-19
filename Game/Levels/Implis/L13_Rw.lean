@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 13
 
-Title "Lemmas"
+Title "" -- "Lemmas"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.Quotient.L08_Classes
 World "Quotient"
 Level 9
 
-Title "Classes"
+Title "" -- "Classes"
 
 Introduction
 "

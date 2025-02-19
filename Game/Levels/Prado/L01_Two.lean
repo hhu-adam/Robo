@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 1
 
-Title "Zwei"
+Title "" -- "Zwei"
 
 Introduction"**Robo**:  Ja, ja.  Wissen wir.
 

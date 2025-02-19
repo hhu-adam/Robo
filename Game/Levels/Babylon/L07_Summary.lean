@@ -4,7 +4,7 @@ import Game.Levels.Babylon.L06_SumComm
 
 World "Babylon"
 Level 7
-Title "Zusammenfassung"
+Title "" -- "Zusammenfassung"
 
 Introduction
 "

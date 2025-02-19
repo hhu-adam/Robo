@@ -5,7 +5,7 @@ import Game.Levels.Quotient.L14_KernelRespect
 World "Quotient"
 Level 15
 
-Title "Bijection"
+Title "" -- "Bijection"
 
 Introduction
 "

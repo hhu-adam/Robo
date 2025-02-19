@@ -7,7 +7,7 @@ import Game.Levels.Cantor.L06_Idempotent
 World "Quotient"
 Level 17
 
-Title "Fixed points"
+Title "" -- "Fixed points"
 
 Introduction
 "

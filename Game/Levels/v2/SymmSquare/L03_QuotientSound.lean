@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 3
 
-Title "Equal Unordered Pairs"
+Title "" -- "Equal Unordered Pairs"
 
 Introduction
 "

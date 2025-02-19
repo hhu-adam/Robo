@@ -7,7 +7,7 @@ import Mathlib.Data.Real.Basic
 World "Robotswana"
 Level 1
 
-Title "Standardbasis"
+Title "" -- "Standardbasis"
 
 Introduction
 "

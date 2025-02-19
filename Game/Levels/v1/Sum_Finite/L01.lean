@@ -5,7 +5,7 @@ import Mathlib.Data.Finset.Basic
 World "Finite"
 Level 1
 
-Title "Finite sets are sets."
+Title "" -- "Finite sets are sets."
 
 Introduction
 "

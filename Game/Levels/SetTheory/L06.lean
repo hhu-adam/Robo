@@ -3,7 +3,7 @@ import Game.Metadata
 World "SetTheory"
 Level 6
 
-Title "leere Menge"
+Title "" -- "leere Menge"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 13
 
-Title "Oder"
+Title "" -- "Oder"
 
 Introduction
 "

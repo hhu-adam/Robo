@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 5
 
-Title "True or False"
+Title "" -- "True or False"
 
 Introduction
 "

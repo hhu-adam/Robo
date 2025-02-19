@@ -3,7 +3,7 @@ import Game.Metadata
 World "Babylon"
 Level 4
 
-Title "Arithmetische Summe"
+Title "" -- "Arithmetische Summe"
 
 Introduction
 "

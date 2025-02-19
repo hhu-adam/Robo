@@ -4,7 +4,7 @@ import Game.Metadata
 World "SetTheory"
 Level 1
 
-Title "Mengen"
+Title "" -- "Mengen"
 
 Introduction
 "

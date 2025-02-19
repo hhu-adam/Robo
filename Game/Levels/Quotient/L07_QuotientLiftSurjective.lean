@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quotient"
 Level 7
 
-Title "When Is Quotient Lift Surjective"
+Title "" -- "When Is Quotient Lift Surjective"
 
 Introduction
 "

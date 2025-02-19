@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L05_Empty
 World "SetTheory"
 Level 6
 
-Title "Nonempty"
+Title "" -- "Nonempty"
 
 Introduction
 "

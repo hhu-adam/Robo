@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L12_Insert
 World "SetTheory"
 Level 13
 
-Title "Konkrete Mengen"
+Title "" -- "Konkrete Mengen"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cantor"
 Level 1
 
-Title "Cantor's Diagonalargument"
+Title "" -- "Cantor's Diagonalargument"
 
 Introduction
 "

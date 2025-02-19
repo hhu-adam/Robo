@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 6
 
-Title "Stückweise Definition"
+Title "" -- "Stückweise Definition"
 
 Introduction
 "

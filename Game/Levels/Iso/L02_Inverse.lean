@@ -4,7 +4,7 @@ import Game.Metadata
 World "Iso"
 Level 2
 
-Title "Inverse"
+Title "" -- "Inverse"
 Introduction
 "
 Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass

@@ -5,7 +5,7 @@ import Game.Levels.Samarkand.L06
 World "Samarkand"
 Level 8
 
-Title "Preimage of surjective is injective"
+Title "" -- "Preimage of surjective is injective"
 
 Introduction
 "

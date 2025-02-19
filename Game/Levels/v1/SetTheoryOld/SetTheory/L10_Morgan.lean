@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L09_Complement
 World "SetTheory"
 Level 10
 
-Title "Morgansche Regeln"
+Title "" -- "Morgansche Regeln"
 
 Introduction
 "

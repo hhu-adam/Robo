@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L02_IsFixedPt_abs
 World "Cantor"
 Level 4
 
-Title "Fixpunkt"
+Title "" -- "Fixpunkt"
 
 Introduction
 "

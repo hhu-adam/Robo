@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L05_IsFixedPt_odd
 World "Cantor"
 Level 7
 
-Title "Idempotent"
+Title "" -- "Idempotent"
 
 Introduction "
 **Cantor**: Also noch ein letztes Rätsel, dann kommen wir gleich zurück zum

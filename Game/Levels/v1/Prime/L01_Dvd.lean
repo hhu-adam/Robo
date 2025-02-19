@@ -6,7 +6,7 @@ import Game.Metadata
 World "Prime"
 Level 1
 
-Title "Teilbarkeit"
+Title "" -- "Teilbarkeit"
 
 Introduction
 "

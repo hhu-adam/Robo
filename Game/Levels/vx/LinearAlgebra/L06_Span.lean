@@ -5,7 +5,7 @@ import Game.Metadata
 World "Module"
 Level 6
 
-Title "Hülle"
+Title "" -- "Hülle"
 
 Introduction
 "

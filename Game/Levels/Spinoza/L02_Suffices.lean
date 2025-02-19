@@ -4,7 +4,7 @@ import Game.Metadata
 World "Spinoza"
 Level 2
 
-Title "Es reicht!"
+Title "" -- "Es reicht!"
 
 Introduction
 "

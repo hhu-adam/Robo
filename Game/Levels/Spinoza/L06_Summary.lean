@@ -5,7 +5,7 @@ import Game.Levels.Quantus
 World "Spinoza"
 Level 6
 
-Title "Contradiction"
+Title "" -- "Contradiction"
 
 Introduction
 "

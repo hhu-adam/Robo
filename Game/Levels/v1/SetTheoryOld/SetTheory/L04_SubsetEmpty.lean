@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L03_Subset
 World "SetTheory"
 Level 4
 
-Title "Teilmengen"
+Title "" -- "Teilmengen"
 
 Introduction
 "

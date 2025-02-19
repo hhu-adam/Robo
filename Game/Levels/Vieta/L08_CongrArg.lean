@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 8
 
-Title "congr_arg"
+Title "" -- "congr_arg"
 
 
 Introduction

@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L03
 World "Robotswana"
 Level 4
 
-Title "Summe von Basiselementen"
+Title "" -- "Summe von Basiselementen"
 
 Introduction "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen
 Fläche heruntergetrampelt ist. Spuren führen kreuz und queer und in verschiedene

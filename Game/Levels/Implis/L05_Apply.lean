@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 5
 
-Title "Implikation"
+Title "" -- "Implikation"
 
 Introduction
 "

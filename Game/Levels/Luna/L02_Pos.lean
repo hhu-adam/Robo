@@ -6,7 +6,7 @@ open Nat
 World "Luna"
 Level 2
 
-Title "Kleinergleich"
+Title "" -- "Kleinergleich"
 
 Introduction
 "

@@ -7,7 +7,7 @@ open Finset
 World "Babylon"
 Level 6
 
-Title "Summe vertauschen"
+Title "" -- "Summe vertauschen"
 
 Introduction
 "

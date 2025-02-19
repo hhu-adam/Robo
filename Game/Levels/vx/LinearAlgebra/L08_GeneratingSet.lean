@@ -5,7 +5,7 @@ import Game.Metadata
 World "Module"
 Level 8
 
-Title "Erzeugendensystem"
+Title "" -- "Erzeugendensystem"
 
 Introduction
 "

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Implis"
 Level 9
 
-Title "Genau dann, wenn"
+Title "" -- "Genau dann, wenn"
 
 Introduction
 "

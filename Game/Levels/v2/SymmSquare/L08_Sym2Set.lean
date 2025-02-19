@@ -4,7 +4,7 @@ import Game.Levels.SymmSquare.L02_Sym2
 World "Symmetric Square"
 Level 8
 
-Title "Classifying Symmetric Functions"
+Title "" -- "Classifying Symmetric Functions"
 
 Introduction
 "

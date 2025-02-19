@@ -2,7 +2,7 @@ import Game.Metadata
 
 World "Iso"
 Level 1
-Title "Bijektivität"
+Title "" -- "Bijektivität"
 
 Introduction
 "

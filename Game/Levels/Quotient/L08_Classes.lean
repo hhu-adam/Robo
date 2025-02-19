@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quotient"
 Level 8
 
-Title "Classes"
+Title "" -- "Classes"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L08_CantorPowerset
 World "Cantor"
 Level 11
 
-Title "Cantor"
+Title "" -- "Cantor"
 
 Introduction
 "

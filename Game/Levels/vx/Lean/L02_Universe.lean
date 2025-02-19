@@ -4,7 +4,7 @@ import Game.Metadata
 World "Lean"
 Level 2
 
-Title "Universen"
+Title "" -- "Universen"
 
 Introduction
 "**Du**: Aber wenn alles Typen sind, welcher Typ hat dann `Type`?

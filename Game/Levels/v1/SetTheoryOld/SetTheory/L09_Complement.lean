@@ -5,7 +5,7 @@ import Game.Levels.SetTheory.L08_UnionInter
 World "SetTheory"
 Level 9
 
-Title "Komplement"
+Title "" -- "Komplement"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Levels.NewStuff.Prime.L06_MinFacGE
 World "Prime"
 Level 7
 
-Title "Unendlich viele Primzahlen"
+Title "" -- "Unendlich viele Primzahlen"
 
 Introduction "
 "

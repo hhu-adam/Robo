@@ -3,7 +3,7 @@ import Game.Metadata
 World "Prime"
 Level 5
 
-Title "Unendlich viele Primzahlen"
+Title "" -- "Unendlich viele Primzahlen"
 
 Introduction "
 **Irgendeine Person**: Ich bin auf der Suche nach der grössten Primzahl.

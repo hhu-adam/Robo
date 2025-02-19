@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 7
 
-Title "Verzweigung"
+Title "" -- "Verzweigung"
 
 Introduction "
 Ihr hört aus der Ferne Kampfgeräusche.  Vieta scheint nach wie vor nicht beunruhigt.

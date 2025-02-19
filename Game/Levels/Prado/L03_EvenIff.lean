@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 3
 
-Title "Gerade"
+Title "" -- "Gerade"
 
 Introduction
 "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.
