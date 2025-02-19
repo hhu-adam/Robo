@@ -37,4 +37,4 @@ Statement :
 NewDefinition Function.Injective
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "Das habt ihr gut gemacht, finden die Formalosophen."

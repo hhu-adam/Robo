@@ -1,13 +1,13 @@
 import Game.Levels.Mono.L01_Injective
-import Game.Levels.Mono.L02_New
-import Game.Levels.Mono.L03_Injective
+import Game.Levels.Mono.L02_InjectiveNeIff
+import Game.Levels.Mono.L03_NotInjective
 import Game.Levels.Mono.L04_Diagonal
-import Game.Levels.Mono.L05_Injective
-import Game.Levels.Mono.L06_Injective
+import Game.Levels.Mono.L05_StrictMono
+import Game.Levels.Mono.L06_StrictMono
 import Game.Levels.Mono.L07_SuccHasLeftInv
 import Game.Levels.Mono.L08_RightInvOfLeftInv
 import Game.Levels.Mono.L09_InjOfHasLeftInv
-import Game.Levels.Mono.L10_auxiliary
+import Game.Levels.Mono.L10_Auxiliary
 import Game.Levels.Mono.L11_InjHasLeftInv
 
 World "Mono"
@@ -30,7 +30,7 @@ Ihr schüttelt jeder eine seiner vier Hände.
 
 **Portier**:  Immerhin habe ich so die Möglichkeit, euch gleich unser einzigartiges Nahverkehrssystem vorzustellen.
 Ihr kommt von Epo, nicht war?
-Böse Geschichten hört man von da.
+Böse Geschichten hört man von dort.
 Jeden zweiten Tag gibts einen Unfall.
 Die kriegen ihre Röhren einfach nicht sortiert.
 Wir sind seit Jahren unfallfrei!

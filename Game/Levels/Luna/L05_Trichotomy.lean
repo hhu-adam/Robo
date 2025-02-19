@@ -32,4 +32,12 @@ Statement {A : Prop} (x y : ℤ) (h₁ : x ≤ y → A) (h₂ : y < x → A) : A
 
 Conclusion ""
 
+/--
+Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:
+
+```
+obtain h | h | h := lt_trichotomy x y
+```
+-/
+TheoremDoc lt_trichotomy as "lt_trichotomy" in "…"
 NewTheorem lt_trichotomy

@@ -5,7 +5,7 @@ import GameServer.Commands
 
 
 /--
-Eine Funktion `f` is injektiv wenn:
+Eine Abbildung `f` is injektiv, wenn gilt:
 
 ```
 ∀ a b, f a = f b → a = b
@@ -16,7 +16,7 @@ DefinitionDoc Function.Injective as "Injective"
 
 
 /--
-Eine Funktion `f` is surjektiv wenn:
+Eine Abbildung `f` is surjektiv, wenn gilt:
 
 ```
 ∀ b, ∃ a, f a = b
@@ -27,14 +27,14 @@ DefinitionDoc Function.Surjective as "Surjective"
 
 
 /--
-Eine Funktion `f` is bijectiv wenn sie injektiv und surjektiv ist.
+Eine Abbildung ist bijektiv, wenn sie injektiv und surjektiv ist.
 -/
 DefinitionDoc Function.Bijective as "Bijective"
 
 
 
 /--
-`f` ist strikt monoton wenn
+Eine Abbildung `f` ist strikt monoton, wenn gilt:
 
 ```
 ∀ a b, a < b → f a < f b

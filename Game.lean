@@ -106,12 +106,11 @@ Dependency Iso → Ciao
 
 -- Dependency Babylon → Epo
 
--- because of `∃!`:   (actually superfluous because of other dependencies)
+-- because of defs `∃!` and `Fin`:   (actually superfluous because of other dependencies)
 Dependency Prado → Mono
 
 -- because of def `Injective`:
 Dependency Mono → Iso
-
 
 -- set_option lean4game.showDependencyReasons true
 

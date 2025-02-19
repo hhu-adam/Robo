@@ -4,19 +4,14 @@ import Game.Metadata
 World "Mono"
 Level 9
 
-Title "Functions with left inverses are injective."
+Title ""
 
-Introduction
-"
-  In this level you show that a function which has a left inverse is injective.
-"
+Introduction ""
 
 open Function
 
 /---/
 TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
-
--- Theorem in Mathlib uses the Definition HasLeftInverse, which we've removed from the game for simplicity.
 
 Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : ∃ g, LeftInverse g f) :
     Injective f := by
