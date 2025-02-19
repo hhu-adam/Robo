@@ -11,3 +11,20 @@ World "Samarkand"
 Title "Samarkand"
 
 Image "images/Samarkand.png"
+
+Introduction "
+In der Ferne taucht ein sehr bunter Planet auf.
+Als ihr näher kommt, seht ihr, dass große Teile seiner Oberfläche mit aufwendigen geometrischen Mustern verziert ist.
+Aber es gibt auch ein paar unverzierte Areale, ganz weiß.
+Ihr landet in einem dieser weißen Flecken, nahe der Musterkante.
+
+**Du**:  Huhu, ist hier jemand?
+
+Die Planetenoberfläche gleicht einer perfekten Sphäre. Ihr seht in alle Richtungen Horizont.
+Es ist niemand zu sehen.  Ihr wollt schon wieder umdrehen, da entdeckst du etwas.
+
+**Du**:  Robo, schau mal da hinten, da hat der Planet eine Beule!
+
+Wie sich herausstellt, ist die „Beule“ eine kleine Schildkröte.
+
+"
