@@ -1,5 +1,4 @@
-import Game.Metadata
-
+import Game.Levels.Mono.L04_Diagonal
 
 World "Mono"
 Level 5
@@ -18,7 +17,7 @@ Statement :
 
     **Robo**: Ich habe gerade auch keine gute Idee.
 
-    Da hört ihr jemanden aus der Menge flüstern: `StricteMono` …
+    Da hört ihr jemanden aus der Menge flüstern: `StrictMono` …
 
     **Robo**:  Ah, ja.  Es gibt da dieses Lemma `StrictMono.injective`:
     jede strikt monotone Abbildung ist injektiv.
@@ -51,7 +50,7 @@ Statement :
     Hint (hidden := true) "
       **Du**: Oder …?
 
-      **Robo**: Doch, doch. Schau mal mit `unfold` hinein in die Definition von `StrictMono` hinein.
+      **Robo**: Doch, doch. Schau mal mit `unfold` in die Definition von `StrictMono` hinein.
     "
     intro a b
     simp

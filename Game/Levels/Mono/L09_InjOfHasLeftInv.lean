@@ -1,5 +1,4 @@
-import Game.Metadata
-
+import Game.Levels.Mono.L08_RightInvOfLeftInv
 
 World "Mono"
 Level 9
@@ -11,12 +10,16 @@ Introduction ""
 open Function
 
 /---/
-TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
-
-Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : ∃ g, LeftInverse g f) :
+-- TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
+-- Statement Function.HasLeftInverse.injective
+Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     Injective f := by
+  Hint "
+    **Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …
+  "
   intro a a' ha
   obtain ⟨g, hg⟩ := h
+  Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
   Branch
     trans g (f a)
     · rw [hg]
@@ -26,3 +29,7 @@ Statement Function.HasLeftInverse.injective {A B : Type} {f : A → B} (h : ∃ 
   unfold LeftInverse at hg
   rw [hg a, hg a'] at ha
   assumption
+
+  Conclusion "
+    **Robo**:  Gut gemacht!  Ich glaube, wir sind hier bald durch …
+  "

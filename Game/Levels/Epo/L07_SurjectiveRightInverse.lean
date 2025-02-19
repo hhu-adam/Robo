@@ -10,7 +10,10 @@ Introduction ""
 
 open Function Set
 
-Statement {A B : Type} (f : A → B) :
+/---/
+TheoremDoc Function.surjective_iff_hasRightInverse as "surjective_iff_hasRightInverse" in "Function"
+
+Statement Function.surjective_iff_hasRightInverse {A B : Type} (f : A → B) :
     Surjective f ↔ HasRightInverse f := by
   constructor
   · intro hs

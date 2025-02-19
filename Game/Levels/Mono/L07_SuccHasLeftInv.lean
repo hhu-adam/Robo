@@ -1,5 +1,4 @@
-import Game.Metadata
-
+import Game.Levels.Mono.L06_StrictMono
 
 World "Mono"
 Level 7
@@ -11,7 +10,7 @@ Introduction ""
 open Function
 
 Statement : HasLeftInverse Nat.succ  := by
-  Hint "**Du**: Gemeint ist, dass die Abbildung `n ↦ n + 1` eine Linksinverses hat.
+  Hint "**Du**: Behauptet wird offenbar, dass die Abbildung `n ↦ n + 1` ein Linksinverses besitzt.
   Ich gebe also einfach die Abbildung `n ↦ n - 1` an … außer, dass das für `n = 0` nicht funktioniert.
 
   **Robo**:  Du könntest ja mit `if … then … else` eine Fallunterscheidung machen.
@@ -23,10 +22,17 @@ Statement : HasLeftInverse Nat.succ  := by
   "
   Branch
     use (fun n ↦ if 0 < n then n - 1 else 0)
+    Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
+    Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+  Branch
+    use (fun n ↦ if 0 < n then n - 1 else 0)
     unfold LeftInverse
     Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
     Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
-    simp
+  Branch
+    let g := (fun n ↦ if 0 < n then n - 1 else 0)
+    Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
+    Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
   use (fun n ↦ n - 1)
   simp [LeftInverse]
 

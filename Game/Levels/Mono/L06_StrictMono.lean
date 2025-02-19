@@ -1,5 +1,4 @@
-import Game.Metadata
-
+import Game.Levels.Mono.L05_StrictMono
 
 World "Mono"
 Level 6
@@ -17,7 +16,7 @@ Statement StrictMono.injective {f : ℤ → ℤ}
     **Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus `Injective f` einführen?
   "
   intro a b h
-  Hint (hidden := true) "
+  Hint (hidden := true) (strict := true)"
     **Robo**:  Jetzt vielleicht eine Fallunterscheidung.  Erinnerst du dich an `lt_trichotomy`?
   "
   obtain hlt | heq | hgt := lt_trichotomy a b
@@ -29,3 +28,5 @@ Statement StrictMono.injective {f : ℤ → ℤ}
     apply hf at hgt
     rw [h] at hgt
     linarith
+
+DisabledTheorem StrictMono.injective
