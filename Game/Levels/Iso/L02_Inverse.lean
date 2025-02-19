@@ -42,7 +42,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       also zum Beispiel `have hR : RightInverse {g} {f}`
     "
     have hR : RightInverse g f := by
-      exact hg
+      assumption
     use g
     constructor
     · --Branch
@@ -58,7 +58,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
         assumption
       apply finj
       assumption
-    · exact hR
+    · assumption
   · intro h
     --obtain ⟨g, hL, hR⟩ := h
     Hint (hidden := true) "**Robo**: Zerlege `{h}` noch soweit du kannst!"

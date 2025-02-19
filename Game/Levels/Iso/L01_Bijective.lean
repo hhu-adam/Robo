@@ -15,7 +15,7 @@ Statement :
     let f := fun (n : ℤ) ↦ n + 1
     Bijective f := by
   Hint "
-    **Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.
+    **Robo** *(flüsternd)*: `Bijective f` ist als `Injective f ∧ Surjective f` definiert.
 
     **Du**: Dann ist das ja ganz simpel!"
   unfold Bijective

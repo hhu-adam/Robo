@@ -1,4 +1,4 @@
-import Game.Metadata
+import Game.Levels.Samarkand.L06_PreimageNonempty
 
 
 World "Samarkand"
@@ -6,29 +6,17 @@ Level 7
 
 Title "" -- "Preimage of the inverse"
 
-Introduction
-"
-
-The image of a set `S : Set A` along a  function `f : A → B` is the set of all elements
-`b : B` that are the image of some element `a : A` in `S`. We denote it by `f '' S` and
-define it as below.
-```
-f '' S = {b : B | ∃ a : A, a ∈ S ∧ f a = b}
-```
-
-Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`
-is the proof that `a` is in `S` and `f a = b`.
-
-The image of function with a left
-inverse is a subset of the preimage of the inverse of
-the same subset.
+Introduction "
+  **Arapuka**:  Jetzt habe ich aber noch ein wirklich schwierige Aufgabe.
 "
 
 open Function Set
 
-Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B → A}
+-- This is Set.image_subset_preimage_of_inverse in Mathlib
+Statement  {A B : Type} {f : A → B} {g : B → A}
     (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
+  Hint "**Du**:  Mal überlegen …∪"
   intro b hb
   obtain ⟨x, hx, e⟩ := hb
   Branch
@@ -42,3 +30,7 @@ Statement image_subset_preimage_of_inverse {A B : Type} {f : A → B} {g : B →
   specialize hL x
   rw [← hL, e] at hx
   assumption
+
+Conclusion "
+  **Arapuka**:  Wow! Ihr seid wirklich großartig.
+"

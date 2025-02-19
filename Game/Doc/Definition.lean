@@ -97,6 +97,27 @@ DefinitionDoc Set.preimage as "preimage"
 
 
 /--
+Für eine Abbildung `f : A → B` und eine Teilmenge `S` von `A` ist
+    ```
+    f '' S = {f a | a ∈ S}
+           = {b | ∃ a ∈ S, f a = b}
+    ```
+    ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`.
+-/
+DefinitionDoc Set.fimage as "f ''"
+
+/--
+, und für eine Teilmenge `T` von `B` ist
+    ```
+    f ⁻¹' T = { a | f a ∈ T}
+    ```
+    ihr Urbild unter `f`.
+    Du schreibst das als `f \\-1'`.
+    Beachte das Leerzeichen zwischen `f` und `\\-1'`.
+-/
+DefinitionDoc Set.fpreimage as "f ⁻¹'"
+
+/--
 Anonyme Funktionen kann man mit `fun (x : ℤ)  2 * x` definieren und
 wie andere Objekte verwenden.  Den Pfeil `↦` schreibt man als `\\maps` oder `\\mapsto`.
 Alternativ kann man statt `↦` auch `=>` verwenden.
@@ -226,7 +247,7 @@ Bei einer Annahme `h : A ↔ B`, heissen die Einzelteile zudem `h.mp : A → B` 
 DefinitionDoc Iff as "↔"
 
 /--
-Ungleichheit `x ≠ y` ist definiert als `x = y → False`.
+Ungleichheit `x ≠ y` ist definiert als `¬ x = y`.  Du siehst das mit `unfold Ne`.
 -/
 DefinitionDoc Ne as "≠"
 
