@@ -7,56 +7,50 @@ Level 2
 Title "" -- "Inverse"
 Introduction
 "
-Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass
-eine Inverse Funktion existiere. Jetzt steht ihr aber schon seit einer halben Stunde rum
-und der Gelehrte möchte wissen, wie das den genau ginge.
-
-Offensichtlich kennt er diese Aussage als `Function.bijective_iff_has_inverse` aus seinen Büchern,
-aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst.
+**Isosoph**:  … und zur Hauptsache kommen.
 "
 
 namespace Function
 
--- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
-  -- some Mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
 --TODO: `unfolding` at random places breaks all the hints...
 
+/---/
+TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in "Function"
+
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
+  Hint "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zur ihr inverse Abbildung existiert.
+  Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten.
+  Hattest du dir die Aussagen abgespeichert?
+
+  **Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die Augenbrauen nach oben.
+  Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.
+  "
   constructor
   · intro h
-    Hint "
-      **Robo**: Tipp. Teil doch `Bijective` mit `obtain ⟨hinj, hsurj⟩  := {h}` in
+    Hint (hidden := true)"
+      **Robo**: Teil doch erst einmal `Bijective` mit `obtain ⟨hinj, hsurj⟩  := {h}` in
       `Injective` und `Surjective` auf!"
     obtain ⟨finj, fsurj⟩  := h
-    Hint "
-      **Du**: Ja was ist eigentlich die Inverse von `{f}`…?
-
-      **Robo**: Hast du eine Idee?
-
-      **Du**: Also von der Surjektivität weiss ich, dass für alle `y : B` ein Urbild `x : A` existiert.
-
-      **Robo**: Mit `choose g hg using {fsurj} ` kannst du eine Funktion
-      definieren, die `y` irgendein Urbild zuweist."
+    Hint (hidden := true)"
+      **Robo**: Aus der Surjektivität weisst du, dass jedes `y : B` ein Urbild `x : A` hat.
+      Kannst du daraus nicht mit `choose` eine Umkehrabbildung konstruieren?"
     choose g hg using fsurj
     Hint "
-      Zeig erst einmal dass `{g}` ein Rechtsinverses von `{f}` ist,
+      Zeig am besten erst einmal, dass `{g}` ein Rechtsinverses von `{f}` ist,
       also zum Beispiel `have hR : RightInverse {g} {f}`
     "
     have hR : RightInverse g f := by
-        exact hg
+      exact hg
     use g
     constructor
-    · Branch
-        dsimp [RightInverse]
-        apply rightInverse_of_injective_of_leftInverse finj
-        assumption
-      Hint "
-      **Robo**: Mit `dsimp` kannst du es ja etwas vereinfachen."
-      dsimp [LeftInverse]
-      Hint "
-      **Robo**: fang mal mit `intro` an."
+    · --Branch
+      --  apply rightInverse_of_injective_of_leftInverse finj  -- das ist Mono, L08, aber wir haben das Lemma nicht gespeichert.
+      --  assumption
+      Hint (hidden := true)"**Robo**: Mit `simp [LeftInverse]` kannst du dir das Beweisziel etwas vereinfachen."
+      simp [LeftInverse]
+      Hint (hidden := true) "**Robo**: Warum beginnst du nicht mit `intro`?"
       intro x
       have : f (g (f x)) = f x  := by rw [hR]
       Branch
@@ -67,41 +61,41 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     · exact hR
   · intro h
     --obtain ⟨g, hL, hR⟩ := h
-    Hint "**Robo**: Zerlege `{h}` noch soweit du kannst!"
+    Hint (hidden := true) "**Robo**: Zerlege `{h}` noch soweit du kannst!"
     obtain ⟨g, h⟩ := h
-    Hint "**Robo**: Das UND auch noch!"
+    Hint (hidden := true) "**Robo**: Das UND auch noch!"
     obtain ⟨hL, hR⟩  := h
     constructor
-    Hint "
-      **Robo**: Injektivität ist der schwierige Teil. Fang mal an mit `intro`."
+    Hint (hidden := true) "
+      **Robo**: Injektivität ist der schwierigere Teil. Fang mal an mit `intro`."
     · intro a b eq
       rw [← hL a, ← hL b]
       Branch
         congr
       Hint (hidden := true) "
-        **Du**: Wenn die Argumente `f a = f b` gleich sind, ist dann auch `g (f a) = g (f b)`,
-        wie sag ich das?
+        **Du**: Wenn die Argumente `f a = f b` gleich sind, ist auch `g (f a) = g (f b)` –
+        wie sag ich das nochmal?
 
-      **Robo**: Also wenn du `f a = f b` hast, kannst du ja auch einfach damit umschreiben."
+      **Robo**: Also, wenn du `f a = f b` hast, kannst du ja auch einfach `rw` benutzen."
       rw [eq]
     · intro b
       use g b
       Hint (hidden := true) "
-        **Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`
-        benutzen."
+        **Robo**: Hier kannst du die `RightInverse`-Annahme mit `rw` benutzen."
       rw [hR]
 
 
--- NewDefinition LeftInverse RightInverse
-DisabledTheorem Function.bijective_iff_has_inverse
 TheoremTab "Logic"
-
+DisabledTheorem Function.injective_iff_hasLeftInverse Function.surjective_iff_hasRightInverse
 
 Conclusion
 "
-Endlich entkommt ihr der Bibliothek.
+Die Isosophen zeigen sich sehr zufrieden.
 
-**Robo**: Da würden mich keine zehn Pferde nochmals hineinbringen!
+**Robo**:  Können wir jetzt nochmal … kapseln?
 
-**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?
+**Isosoph**:  Klar!  Aber immer schön der Reihe nach.
+Seit wir die Kapseln in beide Richtungen benutzen, häufen sich wieder die Unfälle.
+
+Robo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter.
 "

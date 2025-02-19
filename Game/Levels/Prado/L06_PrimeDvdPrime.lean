@@ -1,7 +1,6 @@
 import Game.Metadata
 import Game.Levels.Prado.L05_One
 
-namespace Nat
 
 World "Prado"
 Level 6
@@ -15,6 +14,8 @@ Mal sehen, ob wir die jetzt zusammen gezeigt bekommen.
 "
 /---/
 TheoremDoc Nat.prime_dvd_prime_iff_eq as "prime_dvd_prime_iff_eq" in "ℕ"
+
+namespace Nat
 
 Statement prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
     a ∣ b ↔ a = b := by

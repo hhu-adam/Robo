@@ -4,16 +4,18 @@ import Game.Metadata
 World "Epo"
 Level 7
 
-Title "" -- ""
+Title ""
 
 Introduction ""
 
-open Function Set
+open Set
 
 /---/
 TheoremDoc Function.surjective_iff_hasRightInverse as "surjective_iff_hasRightInverse" in "Function"
 
-Statement Function.surjective_iff_hasRightInverse {A B : Type} (f : A → B) :
+namespace Function
+
+Statement surjective_iff_hasRightInverse {A B : Type} (f : A → B) :
     Surjective f ↔ HasRightInverse f := by
   constructor
   · intro hs

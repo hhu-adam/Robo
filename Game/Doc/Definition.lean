@@ -50,6 +50,8 @@ Man muss leider `Function.RightInverse`  statt `RightInverse` schreiben,
 da `RightInverse` allein in Leansch mehrdeutig ist.
 -/
 DefinitionDoc Function.RightInverse as "RightInverse"
+-- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
+-- some Mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
 
 /--

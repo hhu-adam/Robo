@@ -6,9 +6,7 @@ Title "" -- "Bijektivität"
 
 Introduction
 "
-**Du**: Ehm, und wie kommen wir da wieder raus?
-
-**Gelehrter**: Gerne zeige ich euch den Weg, nachdem ihr mir auch noch folgendes erklärt:
+**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet.
 "
 
 open Function
@@ -34,6 +32,7 @@ TheoremTab "Function"
 
 Conclusion
 "
-Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und
-zeigt euch den Weg nach draußen.
+**Isososoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …
+
+Er legt ein paar Blätter zur Seite.
 "

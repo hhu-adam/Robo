@@ -9,12 +9,14 @@ Introduction
 "
 "
 
-open Function Set
+open Set
 
 /---/
 TheoremDoc Function.injective_iff_hasLeftInverse as "injective_iff_hasLeftInverse" in "Function"
 
-Statement Function.injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
+namespace Function
+
+Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
   Injective f ↔ HasLeftInverse f := by
   Hint "
     **Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass eine Abbildung genau dann surjektive ist, wenn sie ein Rechtsinverses besitzt.

@@ -12,11 +12,25 @@ Title "Iso"
 Image "images/Iso.png"
 
 Introduction "
-Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf
-eine Insel komplett mit Wasser bedeckt zu sein scheint.
+**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!
 
-Auf der Insel seht ihr verschiedene große und kleine Behausungen, manche aus Stroh und Holz,
-vereinzelte aus Lehm.
+**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.
 
-Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt.
+**Du**:  Links winken Leute!
+
+Also landet ihr links.
+Da Empfang ist aber eher verhalten.
+
+**Isosoph**:  Guten Tag!
+Das ist aber nicht die feine Art, hier mitten in der Menge zu landen!
+Dort drüben hatten wir doch extra einen Landeplatz markiert!
+
+**Robo**:  Entschluldigung!  Ich hatte die Symbolik nicht erkannt.
+
+**Isosoph**: Ist ja nochmal gut gegangen!
+Wir hatten schon gehört, dass ihr ein bisschen anders seid.
+Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!
+
+Wie sich heraussstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann.
+Ihr düst ein paar Mal hin und her.
 "
