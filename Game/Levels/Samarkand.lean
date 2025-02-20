@@ -18,6 +18,7 @@ Als ihr näher kommt, seht ihr, dass große Teile seiner Oberfläche mit aufwend
 Aber es gibt auch ein paar unverzierte Areale, ganz weiß.
 Ihr landet in einem dieser weißen Flecken.
 
+
 **Du**:  Huhu, ist hier jemand?
 
 Die Planetenoberfläche gleicht einer perfekten Sphäre. Ihr seht in alle Richtungen Horizont.
