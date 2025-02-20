@@ -70,8 +70,8 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       **Robo**: Injektivität ist der schwierigere Teil. Fang mal an mit `intro`."
     · intro a b eq
       rw [← hL a, ← hL b]
-      Branch
-        congr
+      --Branch
+      --  congr -- not used in this game
       Hint (hidden := true) "
         **Du**: Wenn die Argumente `f a = f b` gleich sind, ist auch `g (f a) = g (f b)` –
         wie sag ich das nochmal?

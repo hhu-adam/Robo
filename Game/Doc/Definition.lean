@@ -75,9 +75,18 @@ DefinitionDoc Set.union as "∪"
 Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` der Schnitt der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\inter`.
 -/
 DefinitionDoc Set.inter as "∩"
+
 /--
-Für eine Abbildung `f : A → B` ist `range f` eine alternative Schreibweise für `f '' univ`,
-also für den Wertebereich von `f`.  Insbesondere ist also `range f : Set B`.
+Für eine Abbildung `f : A → B` ist `range f` die gesamte Bildmenge von `f`:
+```
+range f = {f a | a : A}
+        = {  b | ∃ a, f a = b}
+```
+Das ist also im wesentlichen eine andere Schreibweise für `f '' univ`.
+Um damit zu arbeiten, ist `mem_range` ganz nützlich:
+```
+x ∈ range f ↔ ∃ a, f a = b
+```
 -/
 DefinitionDoc Set.range as "range"
 
@@ -98,22 +107,22 @@ DefinitionDoc Set.preimage as "preimage"
 
 /--
 Für eine Abbildung `f : A → B` und eine Teilmenge `S` von `A` ist
-    ```
-    f '' S = {f a | a ∈ S}
-           = {b | ∃ a ∈ S, f a = b}
-    ```
-    ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`.
+```
+f '' S = {f a | a ∈ S}
+       = {b | ∃ a ∈ S, f a = b}
+```
+ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`.
 -/
 DefinitionDoc Set.fimage as "f ''"
 
 /--
 , und für eine Teilmenge `T` von `B` ist
-    ```
-    f ⁻¹' T = { a | f a ∈ T}
-    ```
-    ihr Urbild unter `f`.
-    Du schreibst das als `f \\-1'`.
-    Beachte das Leerzeichen zwischen `f` und `\\-1'`.
+```
+f ⁻¹' T = { a | f a ∈ T}
+```
+ihr Urbild unter `f`.
+Du schreibst das als `f \\-1'`.
+Beachte das Leerzeichen zwischen `f` und `\\-1'`.
 -/
 DefinitionDoc Set.fpreimage as "f ⁻¹'"
 

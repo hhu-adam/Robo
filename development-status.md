@@ -8,9 +8,9 @@
 | Quantus                         | ==        | +++            | +++    | +++          | +++    | +       | +++                        |                                                                                            |
 | Spinoza                         | ==        | ++             | ++     | ++           | ++     |         | +++                        |                                                                                            |
 | Luna                            | ==        | +              | +++    | +++          | update |         | +++                        |                                                                                            |
-| Babylon                         | ==        | +              | +++    | +++          | +++    |         | +++                        | TODO: introduce (Finset.)sum_subset  (for Robotswana L05)                                  |
-| Prado (Primes)                  | ==        | +              | TODO   | TODO         | TODO   |         | +++                        | (introduce ∃!) TODO: Boss: only even prime is 2                                            |
-| SetTheory                       | Piazza    | TODO           |        |              |        |         | (market)                   | TODO: use set of primes in examples; introduce Finite; new Boss: set of primes is infinite; introduce Fin n (currently in Babylon) |
+| Babylon                         | ==        | +              | +++    | +++          | +++    |         | +++                        |                                                                                            |
+| Prado (Primes)                  | ==        | +              | TODO   | +            | +++    |         | +++                        |                                                                                            |
+| SetTheory                       | Piazza    | TODO           |        |              |        |         | (market)                   | TODO: see below                                                                            |
 | Vieta (Function Basics)         | ==        | ++             | TODO   | +            | +      |         | +++                        |                                                                                            |
 | Epo                             | ==        | +              | +      |              | TODO   |         | +++                        |                                                                                            |
 | Mono                            | ==        | +              | TODO   |              | TODO   |         | +++                        |                                                                                            |
@@ -42,6 +42,22 @@
 | [[NewStuff]]                    |           |                |        |              |        |         |                            |                                                                                            |
 | [[Quantum]]                     |           |                |        |              |        |         |                            |                                                                                            |
 |                                 |           |                |        |              |        |         |                            |                                                                                            |
+
+#### TODO SetTheory:
+
+- use set of primes in examples
+- introduce Fin n (currently in Babylon)
+- introduce Finite
+- new Boss: set of primes is infinite
+- warnings:
+
+    ./././Game.lean:121:0: warning: No world introducing Set.mem_inter_iff,     but required by SetTheory
+    ./././Game.lean:121:0: warning: No world introducing Set.mem_union,         but required by SetTheory
+    ./././Game.lean:121:0: warning: No world introducing Set.mem_setOf,         but required by Cantor
+    ./././Game.lean:121:0: warning: No world introducing Set.mem_singleton_iff, but required by Cantor
+    ./././Game.lean:121:0: warning: No world introducing Finset.sum_subset,     but required by Robotswana (L05)
+    ./././Game.lean:121:0: warning: No world introducing Finset.univ,           but required by Robotswana
+
 
 ## Strategic decisions regarding Tactics
 

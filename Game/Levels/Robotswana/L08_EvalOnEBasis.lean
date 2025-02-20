@@ -82,11 +82,11 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 
   `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`"
   trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0
-  · Hint "**Du**: Summe gleich Summe, `congr`-`ext` macht da der Dumme."
-    congr
+  · Hint "**Robo**: Summe gleich Summe … das gehst du mit `apply congr_arg`, `ext` an."
+    apply congr_arg
     ext i
-    Hint (hidden := true) "**Robo**: Vielleicht gleich nocheinmal?"
-    congr
+    Hint (hidden := true) "**Du**: Vielleicht gleich nocheinmal?"
+    apply congr_arg
     ext j
     Hint "**Du**: Und jetzt Fallunterscheidung zu `{i} = {j}`…"
     Hint (hidden := true) "**Robo**: `by_cases` war das, genau!"

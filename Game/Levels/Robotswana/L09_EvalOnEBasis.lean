@@ -76,7 +76,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
       `{f} (∑ x, E x x)` zeigen."
       trans f (∑ x, E x x)
       · Branch
-          congr
+          apply congr_arg
           Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
         Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
 
@@ -84,7 +84,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
         rw [map_sum]
         Hint "**Du**: Nochmals!"
         rw [map_sum]
-        congr
+        apply congr_arg
         ext j
         Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
         Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
@@ -97,7 +97,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   · trans ∑ j : Fin n.succ, f (E i i)
     · simp
     · trans ∑ j : Fin n.succ, f (E j j )
-      · congr
+      · apply congr_arg
         ext
         Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
         rw [eq_on_diag_ebasis] -- Lvl 5
