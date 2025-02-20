@@ -30,13 +30,14 @@ Wie sich herausstellt, ist die „Beule“ eine kleine Schildkröte,
 die nahe der Musterkante auf farbigem Grund liegt.
 Vorsichtig betretet ihr die gemusterte Fläche.  Die Farbe scheint trocken zu sein.
 
-**Arapuka**: Hallo ihr beiden, kommet ruhig näher!  Schön, dass ich auch einmal Besuch bekomme.
+**Arapuka**: Hallo ihr beiden, kommt ruhig näher!  Schön, dass ich auch einmal Besuch bekomme.
 
 **Du**:  Was machst du denn hier, so ganz allein?
 
 **Arapuka**:  Ich arbeitet an einem großen Kunstwerk.
 Ich liege hier solange, bis mein Bauchpanzer das Bodenmuster angenommen hat.
-Dann laufe ich hinüber zu der Stelle wo dieses Stück Muster noch fehlt und lege mich dort so lange nieder, bis ich das Muster auf den weiße Planetenoberfläche transferiert habe.  Das dauert.  Ich kann also Gesellschaft gut gebrauchen.
+Dann laufe ich hinüber zu der Stelle, wo dieses Stück Muster noch fehlt, und lege mich dort so lange nieder, bis ich das Muster auf die weiße Planetenoberfläche transferiert habe.
+Das dauert.  Ich kann also Gesellschaft gut gebrauchen.
 
 **Du**: Na prima.
 "
