@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Feb 18 15:51:04 2025\n"
+"POT-Creation-Date: Thu Feb 20 11:42:26 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgid "intermediate goal solved! 🎉"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Eine Funktion `f` is injektiv wenn:\n"
+msgid "Eine Abbildung `f` is injektiv, wenn gilt:\n"
 "\n"
 "```\n"
 "∀ a b, f a = f b → a = b\n"
@@ -29,7 +29,7 @@ msgid "Eine Funktion `f` is injektiv wenn:\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Eine Funktion `f` is surjektiv wenn:\n"
+msgid "Eine Abbildung `f` is surjektiv, wenn gilt:\n"
 "\n"
 "```\n"
 "∀ b, ∃ a, f a = b\n"
@@ -37,11 +37,11 @@ msgid "Eine Funktion `f` is surjektiv wenn:\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Eine Funktion `f` is bijectiv wenn sie injektiv und surjektiv ist."
+msgid "Eine Abbildung ist bijektiv, wenn sie injektiv und surjektiv ist."
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`f` ist strikt monoton wenn\n"
+msgid "Eine Abbildung `f` ist strikt monoton, wenn gilt:\n"
 "\n"
 "```\n"
 "∀ a b, a < b → f a < f b\n"
@@ -89,6 +89,25 @@ msgstr ""
 msgid "Für eine Abbildung `f : A → B` ist `preimage f : Set B → Set A`\n"
 "eine der induzierten Abbildung auf den Potenzmengen –\n"
 "sie bildet eine Teilmenge von `B` ab auf das Urbild dieser Teilmenge unter `f`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Abbildung `f : A → B` und eine Teilmenge `S` von `A` ist\n"
+"    ```\n"
+"    f '' S = {f a | a ∈ S}\n"
+"           = {b | ∃ a ∈ S, f a = b}\n"
+"    ```\n"
+"    ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid ", und für eine Teilmenge `T` von `B` ist\n"
+"    ```\n"
+"    f ⁻¹' T = { a | f a ∈ T}\n"
+"    ```\n"
+"    ihr Urbild unter `f`.\n"
+"    Du schreibst das als `f \\\\-1'`.\n"
+"    Beachte das Leerzeichen zwischen `f` und `\\\\-1'`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -1051,7 +1070,7 @@ msgid "Oft kann `tauto` diese Art von logischen Ausdrücken lösen."
 msgstr ""
 
 #: Game.Levels.Logo.L01_Tauto
-msgid "Automatisierung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L01_Tauto
@@ -1091,7 +1110,7 @@ msgid "**Logisinde**: (etwas konsterniert) Ja, das ist streng genommen richtig.\
 msgstr ""
 
 #: Game.Levels.Logo.L02_Rfl
-msgid "Aller Anfang ist... ein Einzeiler?"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L02_Rfl
@@ -1114,7 +1133,7 @@ msgid "**Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich im
 msgstr ""
 
 #: Game.Levels.Logo.L03_Assumption
-msgid "Annahmen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L03_Assumption
@@ -1148,7 +1167,7 @@ msgid "**Untertan**: Ja richtig! Wenn Ihr nur wüsstet, was ich mir an dieser Fr
 msgstr ""
 
 #: Game.Levels.Logo.L04_Assumption
-msgid "Logische Aussagen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L04_Assumption
@@ -1175,7 +1194,7 @@ msgid "**Untertan**: Das ging ja schnell. Super! Vielen Dank."
 msgstr ""
 
 #: Game.Levels.Logo.L05_True
-msgid "True or False"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L05_True
@@ -1201,7 +1220,7 @@ msgid "**Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen se
 msgstr ""
 
 #: Game.Levels.Logo.L06_Not
-msgid "Not"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L06_Not
@@ -1226,7 +1245,7 @@ msgid "Die Schwester lacht und eilt ihrem Bruder hinterher."
 msgstr ""
 
 #: Game.Levels.Logo.L07_Contradiction
-msgid "Aus Falschem folgt vieles."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L07_Contradiction
@@ -1261,7 +1280,7 @@ msgid "Der erste Querulant ist offenbar zufrieden.\n"
 msgstr ""
 
 #: Game.Levels.Logo.L08_Contradiction
-msgid "Aus Falschem folgt vieles."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L08_Contradiction
@@ -1291,7 +1310,7 @@ msgid "**Du**: Ja, scheint funktioniert zu haben.\n"
 msgstr ""
 
 #: Game.Levels.Logo.L09_Contradiction
-msgid "Aus Falschem folgt vieles."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L09_Contradiction
@@ -1315,7 +1334,7 @@ msgid "**Robo**: Gut gemacht. Bei dieser Frage ist auch ein bisschen offensichtl
 msgstr ""
 
 #: Game.Levels.Logo.L10_And
-msgid "Und"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L10_And
@@ -1360,7 +1379,7 @@ msgid "**Robo**: Super!\n"
 msgstr ""
 
 #: Game.Levels.Logo.L11_And
-msgid "Und"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L11_And
@@ -1393,7 +1412,7 @@ msgid "**Robo**: Du hättest das übrigens auch direkt verschachtelt schreiben k
 msgstr ""
 
 #: Game.Levels.Logo.L12_Or
-msgid "Oder"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L12_Or
@@ -1421,7 +1440,7 @@ msgid "Auch dieser Formalosoph zieht zufrieden von dannen."
 msgstr ""
 
 #: Game.Levels.Logo.L13_Or
-msgid "Oder"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L13_Or
@@ -1524,7 +1543,7 @@ msgid "**Du** Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…\n
 msgstr ""
 
 #: Game.Levels.Logo.L14_Summary
-msgid "Zusammenfassung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Logo.L14_Summary
@@ -1589,7 +1608,7 @@ msgid "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Rau
 msgstr ""
 
 #: Game.Levels.Implis.L01_Intro
-msgid "Intro"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L01_Intro
@@ -1635,7 +1654,7 @@ msgid "**Operationsleiter**: Perfekt! Danke schön!\n"
 msgstr ""
 
 #: Game.Levels.Implis.L02_Revert
-msgid "Revert"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L02_Revert
@@ -1673,7 +1692,7 @@ msgid "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum 
 msgstr ""
 
 #: Game.Levels.Implis.L03_Apply
-msgid "Apply"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L03_Apply
@@ -1706,7 +1725,7 @@ msgid "Diesmal scheint das Telefonat erfolgreich zu verlaufen."
 msgstr ""
 
 #: Game.Levels.Implis.L04_Apply
-msgid "Implikation"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L04_Apply
@@ -1729,7 +1748,7 @@ msgid "**Operationsleiter**: Ihr seid echt super!"
 msgstr ""
 
 #: Game.Levels.Implis.L05_Apply
-msgid "Implikation"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L05_Apply
@@ -1785,7 +1804,7 @@ msgid "Der Operationsleiter bedankt sich wieder artig. Er drückt wieder auf ein
 msgstr ""
 
 #: Game.Levels.Implis.L06_Iff
-msgid "Genau dann, wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L06_Iff
@@ -1823,7 +1842,7 @@ msgid "**Operationsleiter**: Okay, das leuchtet mir ein.\n"
 msgstr ""
 
 #: Game.Levels.Implis.L07_Symm
-msgid "Genau dann, wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L07_Symm
@@ -1842,7 +1861,7 @@ msgid "**Operationsleiter**: Das war ja symmpel. Das nächste Problem sieht aber
 msgstr ""
 
 #: Game.Levels.Implis.L08_Rw
-msgid "Genau dann, wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L08_Rw
@@ -1877,7 +1896,7 @@ msgid "**Operationsleiter**: Wenn Ihr so weitermacht, dann kommen wir ja durch d
 msgstr ""
 
 #: Game.Levels.Implis.L09_Trans
-msgid "Genau dann, wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L09_Trans
@@ -1893,7 +1912,7 @@ msgid "**Robo**: Und, war das besser?\n"
 msgstr ""
 
 #: Game.Levels.Implis.L10_Iff
-msgid "Genau dann wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L10_Iff
@@ -1930,7 +1949,7 @@ msgid "**Operationsleiter**: Okay, super. Das müsste passen.\n"
 msgstr ""
 
 #: Game.Levels.Implis.L11_Iff
-msgid "Genau dann wenn"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L11_Iff
@@ -1974,7 +1993,7 @@ msgid "**Operationsleiter**: Perfekt, das sollte reichen!"
 msgstr ""
 
 #: Game.Levels.Implis.L12_ByCases
-msgid "by_cases"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L12_ByCases
@@ -2001,7 +2020,7 @@ msgid "Der Operationsleiter nickt zustimmend."
 msgstr ""
 
 #: Game.Levels.Implis.L13_Rw
-msgid "Lemmas"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L13_Rw
@@ -2036,7 +2055,7 @@ msgid "**Du**: Wir sind schon fertig …?\n"
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
-msgid "Zusammenfassung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
@@ -2137,7 +2156,7 @@ msgid "Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Pl
 msgstr ""
 
 #: Game.Levels.Quantus.L01_NonemptyUse
-msgid "Natürliche Zahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L01_NonemptyUse
@@ -2155,7 +2174,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L02_Ring
-msgid "Natürliche Zahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L02_Ring
@@ -2180,7 +2199,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L03_Rewrite
-msgid "Rewrite"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L03_Rewrite
@@ -2213,7 +2232,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Rewrite
-msgid "Rewrite"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Rewrite
@@ -2247,7 +2266,7 @@ msgid "**Robo**: Noch ein Trick: Mit `rw [h] at *` kann man gleichzeitig mittels
 msgstr ""
 
 #: Game.Levels.Quantus.L05_Ring
-msgid "Natürliche Zahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L05_Ring
@@ -2337,7 +2356,7 @@ msgid "**Du**: Was kann denn `decide` noch alles?\n"
 msgstr ""
 
 #: Game.Levels.Quantus.L08_Exists
-msgid "Gerade/Ungerade"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L08_Exists
@@ -2428,7 +2447,7 @@ msgid "Applaus!"
 msgstr ""
 
 #: Game.Levels.Quantus.L09_Exists
-msgid "Gerade/Ungerade"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L09_Exists
@@ -2478,7 +2497,7 @@ msgid "Applaus!"
 msgstr ""
 
 #: Game.Levels.Quantus.L10_Forall
-msgid "Für alle"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L10_Forall
@@ -2498,7 +2517,7 @@ msgid "Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen\n"
 msgstr ""
 
 #: Game.Levels.Quantus.L11_PushNeg
-msgid "PushNeg"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L11_PushNeg
@@ -2544,7 +2563,7 @@ msgid "**Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:\n
 msgstr ""
 
 #: Game.Levels.Quantus.L12_PushNeg
-msgid "PushNeg"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L12_PushNeg
@@ -2623,7 +2642,7 @@ msgid "Die Formalosophinnen sind ganz begeistert.\n"
 msgstr ""
 
 #: Game.Levels.Quantus.L13_DrinkersParadox
-msgid "Drinker's Paradox"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L13_DrinkersParadox
@@ -2755,7 +2774,7 @@ msgid "Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosophe
 msgstr ""
 
 #: Game.Levels.Spinoza.L01_Have
-msgid "Was wir haben, haben wir."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L01_Have
@@ -2795,7 +2814,7 @@ msgid "**Benedictus**: Das sieht gut aus!"
 msgstr ""
 
 #: Game.Levels.Spinoza.L02_Suffices
-msgid "Es reicht!"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L02_Suffices
@@ -2829,7 +2848,7 @@ msgid "**Benedictus**: Genau so meinte ich das. Ob Ihr nun in Zukunft `have` und
 msgstr ""
 
 #: Game.Levels.Spinoza.L03_ByContra
-msgid "Widerspruch"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L03_ByContra
@@ -2869,7 +2888,7 @@ msgid "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
 msgstr ""
 
 #: Game.Levels.Spinoza.L04_ByContra
-msgid "Kontraposition"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L04_ByContra
@@ -2913,7 +2932,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L05_Contrapose
-msgid "Kontraposition"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L05_Contrapose
@@ -2952,7 +2971,7 @@ msgid "**Benedictus**: Hervorragend! Ich glaube, damit seid Ihr jetzt ganz gut g
 msgstr ""
 
 #: Game.Levels.Spinoza.L06_Summary
-msgid "Contradiction"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Spinoza.L06_Summary
@@ -3014,7 +3033,7 @@ msgid "**Robo**: Ich glaube, das ist Spinoza, einer der ganz wenigen Asteroiden 
 msgstr ""
 
 #: Game.Levels.Luna.L01_LE
-msgid "Kleinergleich"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L01_LE
@@ -3039,7 +3058,7 @@ msgid "**Du**: Ha, ha … Und was muss man noch wissen?"
 msgstr ""
 
 #: Game.Levels.Luna.L02_Pos
-msgid "Kleinergleich"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L02_Pos
@@ -3094,7 +3113,7 @@ msgid "**Du**: `simp` ist ja echt nicht schlecht …"
 msgstr ""
 
 #: Game.Levels.Luna.L03_Linarith
-msgid "Linarith"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L03_Linarith
@@ -3120,7 +3139,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L04_Linarith
-msgid "Linarith"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L04_Linarith
@@ -3139,7 +3158,7 @@ msgid "**Du**: Boah, nicht schlecht."
 msgstr ""
 
 #: Game.Levels.Luna.L05_Trichotomy
-msgid "Trichotomie"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Luna.L05_Trichotomy
@@ -3164,6 +3183,14 @@ msgstr ""
 
 #: Game.Levels.Luna.L05_Trichotomy
 msgid ""
+msgstr ""
+
+#: Game.Levels.Luna.L05_Trichotomy
+msgid "Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:\n"
+"\n"
+"```\n"
+"obtain h | h | h := lt_trichotomy x y\n"
+"```"
 msgstr ""
 
 #: Game.Levels.Luna
@@ -3196,7 +3223,7 @@ msgid "Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.\n"
 msgstr ""
 
 #: Game.Levels.Babylon.L01_Simp
-msgid "Simp"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L01_Simp
@@ -3227,7 +3254,7 @@ msgid "**Babylonier**: Seht ihr, das passt!\n"
 msgstr ""
 
 #: Game.Levels.Babylon.L02_Sum
-msgid "endliche Summe"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L02_Sum
@@ -3239,7 +3266,7 @@ msgid "$\\sum_{i=0}^{n-1} 2 = n × 2$."
 msgstr ""
 
 #: Game.Levels.Babylon.L03_Sum
-msgid "endliche Summe"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L03_Sum
@@ -3292,7 +3319,7 @@ msgid "Der Babylonier macht ein sehr zufriedenes Gesicht."
 msgstr ""
 
 #: Game.Levels.Babylon.L04_ArithSum
-msgid "Arithmetische Summe"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L04_ArithSum
@@ -3381,7 +3408,7 @@ msgid "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tau
 msgstr ""
 
 #: Game.Levels.Babylon.L05_SumOdd
-msgid "Summe aller ungeraden Zahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L05_SumOdd
@@ -3402,7 +3429,7 @@ msgid "Den Induktionschritt bei Summen solltest du wie gesagt\n"
 msgstr ""
 
 #: Game.Levels.Babylon.L06_SumComm
-msgid "Summe vertauschen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L06_SumComm
@@ -3440,7 +3467,7 @@ msgid "Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier übe
 msgstr ""
 
 #: Game.Levels.Babylon.L07_Summary
-msgid "Zusammenfassung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L07_Summary
@@ -3553,7 +3580,7 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 msgstr ""
 
 #: Game.Levels.Cantor.L00_CantorPowerset
-msgid "Cantor's Diagonalargument"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L00_CantorPowerset
@@ -3584,7 +3611,7 @@ msgid "**Robo**: Mach mal mit `suffices : «{a}» ∉ «{f}» «{a}»` weiter!"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "Cantor's Diagonalargument"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
@@ -3617,7 +3644,7 @@ msgid "**Cantor**: Wendet doch gleich das Resultat von vorhin an!\n"
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "Fixpunkte"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L02_IsFixedPt_abs
@@ -3644,7 +3671,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "Fixpunkt"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L03_fixedPoints_neg
@@ -3671,7 +3698,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "Keine Fixpunkte"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L04_IsFixedPt_not
@@ -3691,7 +3718,7 @@ msgid "**Du**: Ja, `¬(·)` hat keinen Fixpunkt, keine Aussage kann gleichzeitig
 msgstr ""
 
 #: Game.Levels.Cantor.L05_IsFixedPt_odd
-msgid "Fixpunkte"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L05_IsFixedPt_odd
@@ -3704,7 +3731,7 @@ msgid "**Cantor**: Zum Beispiel bei ungeraden Funktionen. Da sind die Fixpunkte 
 msgstr ""
 
 #: Game.Levels.Cantor.L06_idempotent
-msgid "Idempotent"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L06_idempotent
@@ -3728,7 +3755,7 @@ msgid "**Robo**: Wir hatten einmal `Function.comp_apply`!"
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "Diagonalargument"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
@@ -3752,7 +3779,7 @@ msgid "**Du**: Also ist der Fixpunkt dieses diagonale Element `f b b`, für ein 
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
-msgid "Diagonalargument"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L07_CantorDiag
@@ -3791,7 +3818,7 @@ msgid "**Cantor**: Das sieht gut aus, jetzt können wir ja\n"
 msgstr ""
 
 #: Game.Levels.Cantor.L08_CantorPowerset
-msgid "Diagonalargument"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Cantor.L08_CantorPowerset
@@ -3847,7 +3874,7 @@ msgid "Auf eurer Reise kommt ihr an einem Zwergplaneten vorbei. Darauf steht ein
 msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
-msgid "Standardbasis"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
@@ -3920,7 +3947,7 @@ msgid "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L02_EBasis
-msgid "Falsche Indizes"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L02_EBasis
@@ -3949,7 +3976,7 @@ msgid "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `«{h}»` explizit 
 msgstr ""
 
 #: Game.Levels.Robotswana.L03
-msgid "Richtige Indizes"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L03
@@ -3969,7 +3996,7 @@ msgid "**Du**:  Sieht auch richtig aus."
 msgstr ""
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "Summe von Basiselementen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
@@ -4023,7 +4050,7 @@ msgid "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus 
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "Einheitsmatrix"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -4114,7 +4141,7 @@ msgid "**Robo**: Und da das falsch ist, kannst du mit `rw` und `if_neg` weiterko
 msgstr ""
 
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-msgid "Ein nihilierter Kommutator"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
@@ -4170,7 +4197,7 @@ msgid "**Robo**: Hast du das nicht alles gemacht, weil du `«{h₁}»` brauchen\
 msgstr ""
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-msgid "Desinteresse"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
@@ -4215,7 +4242,7 @@ msgid "**Robo**: Und hier wolltest du jetzt kommutieren?\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "Die Summe der Summe der Summe"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
@@ -4349,7 +4376,7 @@ msgid "Lineare Abbildungen (oder genereller \"additive\" Abbildungen) kann man m
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "Matrix"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
@@ -4469,7 +4496,7 @@ msgid "Dieses Theorem sollte eigentlich woanders eingeführt werden"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "Trace"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
@@ -4573,7 +4600,7 @@ msgid "Nicht genau definiert als, aber per Definition äquivalent zu:\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "Trace"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
@@ -4626,7 +4653,7 @@ msgid "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslands
 msgstr ""
 
 #: Game.Levels.Ciao.L01
-msgid "Weiter gehts …"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Ciao.L01
@@ -4688,7 +4715,7 @@ msgid "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses
 msgstr ""
 
 #: Game.Levels.Prado.L01_Two
-msgid "Zwei"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L01_Two
@@ -4718,7 +4745,7 @@ msgid "**Du**:  In der Tat.  Wissen wir.  Und was gibt es noch für Exponate?\n"
 msgstr ""
 
 #: Game.Levels.Prado.L02_Dvd
-msgid "Teilbarkeit"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L02_Dvd
@@ -4780,7 +4807,7 @@ msgid "**Guino**:  Was flüstert ihr denn da?\n"
 msgstr ""
 
 #: Game.Levels.Prado.L03_EvenIff
-msgid "Gerade"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L03_EvenIff
@@ -4796,7 +4823,7 @@ msgid "**Robo**: Fang doch mit `unfold Even` an."
 msgstr ""
 
 #: Game.Levels.Prado.L04_Prime
-msgid "Primzahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L04_Prime
@@ -4845,7 +4872,7 @@ msgid "Guino schaut euch noch einmal über die Schulter.\n"
 msgstr ""
 
 #: Game.Levels.Prado.L05_One
-msgid "Eins"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L05_One
@@ -4913,7 +4940,7 @@ msgid "**Du**:  Sehr schön.\n"
 msgstr ""
 
 #: Game.Levels.Prado.L07_ExistsUnique
-msgid "Eindeutige Existenz"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L07_ExistsUnique
@@ -4958,7 +4985,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L08_EvenPrime
-msgid "Gerade Primzahlen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Prado.L08_EvenPrime
@@ -5015,7 +5042,7 @@ msgid "Ihr seid auf einem Eisplaneten gelandet,\n"
 msgstr ""
 
 #: Game.Levels.Vieta.L01_FunctionNotation
-msgid "Anonyme Funktionen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L01_FunctionNotation
@@ -5042,7 +5069,7 @@ msgid "**Du**: Sag mal, war `→` nicht eben noch eine Implikation?\n"
 msgstr ""
 
 #: Game.Levels.Vieta.L02_Function
-msgid "Anonyme Funktionen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L02_Function
@@ -5082,7 +5109,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L03_Let
-msgid "Anonyme Funktionen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L03_Let
@@ -5110,7 +5137,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L04_Let
-msgid "let"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L04_Let
@@ -5168,7 +5195,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L05_Funext
-msgid "funext"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L05_Funext
@@ -5193,7 +5220,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L06_Piecewise
-msgid "Stückweise Definition"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L06_Piecewise
@@ -5276,7 +5303,7 @@ msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduzie
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
-msgid "Verzweigung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
@@ -5307,7 +5334,7 @@ msgid "**Robo**: Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
 msgstr ""
 
 #: Game.Levels.Vieta.L08_CongrArg
-msgid "congr_arg"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L08_CongrArg
@@ -5328,7 +5355,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L09_CongrFun
-msgid "congr_fun"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L09_CongrFun
@@ -5355,7 +5382,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L10_Surjective
-msgid "Boss"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L10_Surjective
@@ -5531,7 +5558,7 @@ msgid "**Du**:  Hier soll ich vermutlich zeigen, dass ein Rechtsinverses zu `f` 
 msgstr ""
 
 #: Game.Levels.Epo.L06_choose
-msgid "Every function with nonempty fibres has a right inverse."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L06_choose
@@ -5544,6 +5571,10 @@ msgid "**Du**:  Das riecht irgendwie nach Auswahlaxiom.\n"
 "**Robo**:  Bingo.  Erinnerst du nicht noch an `choose`?\n"
 "Hier kommt `choose` so richtig in sein Element.\n"
 "Probier mal `choose g hg using nonempty_fibre."
+msgstr ""
+
+#: Game.Levels.Epo.L07_SurjectiveRightInverse
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L07_SurjectiveRightInverse
@@ -5616,210 +5647,347 @@ msgid "**Robo**: Ich glaube, du solltest jetzt mit der Definition von `«{f}»` 
 msgstr ""
 
 #: Game.Levels.Mono.L01_Injective
+msgid "Das habt ihr gut gemacht, finden die Formalosophen."
+msgstr ""
+
+#: Game.Levels.Mono.L02_InjectiveNeIff
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L02_New
+#: Game.Levels.Mono.L02_InjectiveNeIff
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L02_New
+#: Game.Levels.Mono.L02_InjectiveNeIff
+msgid "**Robo**: Hier kannst du abkürzen, indem du statt der Definition von `Injective f` die äquivalente Beschreibung `a ≠ b → f a ≠ f b` von Injektivität benutzt.\n"
+"In Leansch ist das Teil von `Injective.ne_iff`:  für injektive Abbildungen gilt `f a ≠ f b ↔ a ≠ b`."
+msgstr ""
+
+#: Game.Levels.Mono.L02_InjectiveNeIff
+msgid "**Robo**: `decide`?"
+msgstr ""
+
+#: Game.Levels.Mono.L02_InjectiveNeIff
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L02_New
+#: Game.Levels.Mono.L03_NotInjective
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "Nicht Injektiv"
+#: Game.Levels.Mono.L03_NotInjective
+msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "Weiterirrend kommt ihr an eine Verzweigung.\n"
-"\n"
-"**Robo**: Sieht beides gleich aus.\n"
-"\n"
-"Ein paar Schritte in den linken Korridor hinein seht ihr auf dem Boden ein Blatt mit Gekritzel.\n"
-"\n"
-"\n"
-"**Du**: Hier haben wir wieder eine stückweise Funktion\n"
-"\n"
+#: Game.Levels.Mono.L03_NotInjective
+msgid "**Du**:  Also, die gegebene Abbildung hat die folgende Form:\n"
 "$$\n"
 "f(n) = \\begin{cases}\n"
-"    n^2 & \\text{falls } n \\text{ gerade} \\\\\n"
-"    n+1 & \\text{andernfalls.}\n"
+"n^2 & \\text{falls } n \\text{ gerade} \\\\\n"
+"n+1 & \\text{andernfalls.}\n"
 "\\end{cases}\n"
 "$$\n"
+"Und was ist `f + f`?\n"
 "\n"
-"Darunter steht in leicht leuchtender Schrift:"
+"**Robo**: Das ist die Abbildung `ℕ → ℕ`, die an jeder Stelle den doppelten Wert von `f` annimmt."
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "**Robo**: Das ist sicher ein Hinweis.\n"
-"\n"
-"**Du**: Aber `¬ Injective` sagt mir nichts…\n"
-"\n"
-"**Robo**: Könntest du etwas mit `¬ ∀` anfangen? Dann könntest du ja `Injektive` zuerst öffnen.\n"
-"\n"
-"**Du**: Darüber haben wir doch mal was gelernt…"
+#: Game.Levels.Mono.L03_NotInjective
+msgid "**Robo**: Vielleicht öffnest du zuerst mal `Injective` mit `unfold`. Dann steht da `¬ ∀` …"
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "**Robo**: Das war `push_neg`."
+#: Game.Levels.Mono.L03_NotInjective
+msgid "**Robo**: Erinnerst du dich an `push_neg`?"
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "**Robo**: Das war `push_neg`."
-msgstr ""
-
-#: Game.Levels.Mono.L03_Injective
+#: Game.Levels.Mono.L03_NotInjective
 msgid "**Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?\n"
 "\n"
 "**Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
 msgstr ""
 
-#: Game.Levels.Mono.L03_Injective
-msgid "Als ihr das Problem gelöst habt, erschleicht euch ein starkes\n"
-"Gefühl, dass dies der falsche Weg ist.\n"
-"Also geht ihr zurück und nehmt die rechte Gabelung."
+#: Game.Levels.Mono.L03_NotInjective
+msgid "**Robo**:  Das ist hier alles so konkret, vielleicht reicht `decide`."
+msgstr ""
+
+#: Game.Levels.Mono.L03_NotInjective
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L04_Diagonal
-msgid "Diagonal"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L04_Diagonal
-msgid "In this level, you will prove that the the diagonal function is injective."
+msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L05_Injective
-msgid "Monotone Funktionen"
+#: Game.Levels.Mono.L04_Diagonal
+msgid "**Du**:  In der Definition von `diag` stehen wieder zwei Pfeile hintereinander.\n"
+"Das muss ich erst mal im Kopf sortieren.\n"
+"\n"
+"**Robo**:  Setz als erstes wieder Klammern:  `A → (Fin (n + 1) → A)`. Es ist also\n"
+"`diag` eine Abbildung von `A` in die Menge `Fin (n + 1) → A`.\n"
+"Nun ist `Fin (n+1)` die Menge $\\{0,1,…,n\\}$, und `Fin (n + 1) → A` demnach die Menge der Abbildung von $\\{0,1,…,n\\}$ nach $A$.\n"
+"\n"
+"**Du**:  Mmh…  So eine Abbildung ist eigentlich nichts weiter als eine $(n+1)$-Tupel von Elementen aus $A$, oder?\n"
+"\n"
+"**Robo**: Kann man so sehen.\n"
+"\n"
+"**Du**:  Ok.  Gegeben ist also eine Abbildung `diag` von $A$ nach $A^{n+1}$.  Und zwar die Abbildung …  ah, ich sehe, warum sie `diag` heißt."
 msgstr ""
 
-#: Game.Levels.Mono.L05_Injective
-msgid "Sofort hakt die ältere Gestalt nach:"
+#: Game.Levels.Mono.L04_Diagonal
+msgid "**Du**:  Oder vielleicht doch nicht.  Kannst du das bitte nochmal aufdröseln?\n"
+"\n"
+"**Robo**:  Die Abbildung `diag` schickt ein Element $a$ auf die Abbildung, die *jeden* Index $i \\in \\{0,1,…,n\\}$ auf $a$ abbildet.\n"
+"In deiner Interpretation ist das die Abbildung $a ↦ (a,…,a)$."
 msgstr ""
 
-#: Game.Levels.Mono.L05_Injective
+#: Game.Levels.Mono.L04_Diagonal
+msgid "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
+msgstr ""
+
+#: Game.Levels.Mono.L04_Diagonal
+msgid "**Robo**:  Erinner dich, dass deine “Tupel” `diag «{a₁}»` und `diag «{a₂}»` in Wahrheit zwei Abbildung `Fin (n + 1) → A` sind.\n"
+"Du könntest sie auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
 msgid "**Du**: Hmm, das ist etwas schwieriger…\n"
 "\n"
-"**Robo**: Aber ich hab einen Trick auf Lager:\n"
-"Das Lemma `StrictMono.injective` sagt, dass jede strikt monotone Funktion injektive ist,\n"
-"und ich habe das Gefühl Monotonie ist hier einfacher zu zeigen."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Robo**: `apply` ist wonach du suchst."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang doch nochmals von vorne an!"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: Jetzt möchte ich strikte Monotonie von `n ^ 3` und `n + 3` separat zeigen,\n"
-"schliesslich scheint es mir als wär das zweite wieder einfach.\n"
+"**Robo**: Ich habe gerade auch keine gute Idee.\n"
 "\n"
-"**Robo**: Dafür hab ich `StrictMono.add` bereit!"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: Hmm, darauf hab ich jetzt wenig Lust. Gibt's dafür auch was? Das gilt ja nur\n"
-"wenn der Exponent ungerade ist.\n"
+"Da hört ihr jemanden aus der Menge flüstern: `StrictMono` …\n"
 "\n"
-"**Robo**: Du könntest mal `Odd.strictMono_pow` versuchen…"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: Ist das nicht ne Trivialität? Warte mal!"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: Ha! Und dieser Teil funktioniert sicher gleich wie Injektivität vorhin!"
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: oder …?\n"
+"**Robo**:  Ah, ja.  Es gibt da dieses Lemma `StrictMono.injective`:\n"
+"jede strikt monotone Abbildung ist injektiv.\n"
+"Und es gibt auch jede Menge Lemmas, mit denen man zeigen kann, dass Abbildungen monoton sind.\n"
+"Zum Beispiel:\n"
 "\n"
-"**Robo**: Doch, doch. Schau mal mit `unfold` hinein in die Definition."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "Dieses Lemma sagt `StrictMono f → Injective f`."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "Für ungerades `n` is `x ↦ x ^ n` strikt monoton.\n"
+"`StrictMono.add`  – die Summe zweier strikt monotoner Abbildungen ist wieder strikt monoton\n"
 "\n"
-"*Bemerkung*: Das Lemma ist im namespace `Odd`, damit man `hn.strictMono_pow` für den\n"
-"Beweis `hn : Odd n` schreiben könnte."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "Wenn `f,g` beide strikt monoton sind, dann ist es `f + g` auch."
-msgstr ""
-
-#: Game.Levels.Mono.L05_Injective
-msgid "**Du**: Danke vielmals!\n"
+"`Odd.strictMono_pow` – für ungerades `n` ist `x ↦ x ^ n` strikt monoton\n"
 "\n"
-"Und damit lässt das Wesen mitten im Gang stehen, wo es weiter über Injektivität nachdenkt."
+"Wollen wir es damit einmal versuchen?"
 msgstr ""
 
-#: Game.Levels.Mono.L06_Injective
-msgid "Monotone Funktionen"
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Robo**: `apply` ist, wonach du suchst."
 msgstr ""
 
-#: Game.Levels.Mono.L06_Injective
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Du**: `Odd 3`. Ist das nicht eine Trivialität? Warte mal!"
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "**Du**: Oder …?\n"
+"\n"
+"**Robo**: Doch, doch. Schau mal mit `unfold` in die Definition von `StrictMono` hinein."
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv."
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "Für ungerades `n` ist `x ↦ x ^ n` strikt monoton.\n"
+"\n"
+"*Bemerkung*: Hat man `h_odd : Odd n` als Annahme, so kann man statt `Odd.strictMono_pow h_odd` auch einfach `h_odd.strictMono_pow` schreiben."
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "Sind `f` und `g` beide strikt monoton sind, so ist auch `f + g` strikt momonton."
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L06_StrictMono
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L06_StrictMono
+msgid "Anscheinend hat jemand bemerkt, dass `StrictMono.injective` vorgesagt war.\n"
+"Jetzt wollen sie davon auch einen Beweis sehen."
+msgstr ""
+
+#: Game.Levels.Mono.L06_StrictMono
+msgid "**Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus `Injective f` einführen?"
+msgstr ""
+
+#: Game.Levels.Mono.L06_StrictMono
+msgid "**Robo**:  Jetzt vielleicht eine Fallunterscheidung.  Erinnerst du dich an `lt_trichotomy`?"
+msgstr ""
+
+#: Game.Levels.Mono.L07_SuccHasLeftInv
 msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L07_SuccHasLeftInv
-msgid "Left Inverse"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L07_SuccHasLeftInv
-msgid "In this level, you will prove that the successor function on the natural numbers has a left inverse."
+msgid "**Du**: Behauptet wird offenbar, dass die Abbildung `n ↦ n + 1` ein Linksinverses besitzt.\n"
+"Ich gebe also einfach die Abbildung `n ↦ n - 1` an … außer, dass das für `n = 0` nicht funktioniert.\n"
+"\n"
+"**Robo**:  Du könntest ja mit `if … then … else` eine Fallunterscheidung machen.\n"
+"Aber tatsächlich brauchst du das gar nicht.  In Leansch liegt auch `0 - 1` in `ℕ`.\n"
+"\n"
+"**Du**: Was … ??!\n"
+"\n"
+"**Robo**:  Ja.  Das ist einfach wieder als `0` definiert."
+msgstr ""
+
+#: Game.Levels.Mono.L07_SuccHasLeftInv
+msgid "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.\n"
+"Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+msgstr ""
+
+#: Game.Levels.Mono.L07_SuccHasLeftInv
+msgid "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.\n"
+"Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+msgstr ""
+
+#: Game.Levels.Mono.L07_SuccHasLeftInv
+msgid "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.\n"
+"Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+msgstr ""
+
+#: Game.Levels.Mono.L07_SuccHasLeftInv
+msgid "**Du**:  Ich bin immer noch schockiert.\n"
+"  Ich dachte, wir machen hier Mathematik.\n"
+"  Wieso sollte denn `0 - 1` wieder `0` sein??\n"
+"\n"
+"  **Robo**:  Reine Ansichtssache.  Du stellst dir `n ↦ n - 1` vor als eine Abbildung, die nur auf den positive natürlichen Zahlen definiert ist.\n"
+"  In Leansch ist `n ↦ n - 1` eben eine Abbildung, die auf allen natürlichen Zahlen definiert ist, und sie schickt `0` auf `0`.\n"
+"  Warum nicht.  Anwenden wird man diese Abbildung am Ende eh nur auf positive Zahlen, und auf denen stimmt deine Interpretation ja glücklicherweise mit der leanschen Interpretation überein."
 msgstr ""
 
 #: Game.Levels.Mono.L08_RightInvOfLeftInv
-msgid "Injections with nonempty domain have retract."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L08_RightInvOfLeftInv
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L09_InjOfHasLeftInv
-msgid "Functions with left inverses are injective."
-msgstr ""
-
-#: Game.Levels.Mono.L09_InjOfHasLeftInv
-msgid "In this level you show that a function which has a left inverse is injective."
+#: Game.Levels.Mono.L08_RightInvOfLeftInv
+msgid "**Du**: Was steht hier?\n"
+"\n"
+"**Robo**:  Eine injektive Abbildung `f`, die zu einer Abbildung `g` linksinvers ist, ist zur selben Abbildung auch rechtsinvers."
 msgstr ""
 
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L10_auxiliary
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid ""
 msgstr ""
 
-#: Game.Levels.Mono.L10_auxiliary
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
+msgid "**Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …"
+msgstr ""
+
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
+msgid "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
+msgstr ""
+
+#: Game.Levels.Mono.L09_InjOfHasLeftInv
+msgid "**Robo**:  Gut gemacht!  Ich glaube, wir sind hier bald durch …"
+msgstr ""
+
+#: Game.Levels.Mono.L10_Auxiliary
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L10_Auxiliary
+msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L10_Auxiliary
+msgid "**Du**:  Sind wir jetzt zurück auf Quantus?  Jedenfalls:  Es gibt ein `a` oder es gibt kein `a`, das sieht aus nach einer Tautologie.\n"
+"\n"
+"**Robo**:  Langsam!  Du musst die implizite Klammerung beachten. Ich schreib dir das mal mit mehr Klammern aus:\n"
+"```\n"
+"∀ b : B, ∃ a : A,\n"
+"( f a = b   ∨   ¬ ∃ a' : A , f a' = b )\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Mono.L10_Auxiliary
+msgid "**Robo**:  Vielleicht nimmst du dir als erstes mal mit `obtain` irgendein Element aus `A` her.\n"
+"Du weißt ja, dass es eins gibt."
+msgstr ""
+
+#: Game.Levels.Mono.L10_Auxiliary
+msgid "**Robo**:  Nun ja, du könntest mit `by_cases` eine Fallunterscheidung machen, ob denn nun `«{b}»` ein Urbild besitzt oder nicht."
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
 msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L11_InjHasLeftInv
-msgid "Injections have a left inverse, and vice versa"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L11_InjHasLeftInv
 msgid ""
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
+msgid "**Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass eine Abbildung genau dann surjektive ist, wenn sie ein Rechtsinverses besitzt.\n"
+"Und die hiesigen Monosophen wollen gern bewiesen haben, dass eine Abbildung genau dann injektiv ist, wenn sie in Linksinverses besitzt.\n"
+"\n"
+"**Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung `Nonempty A` brauchen."
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
+msgid "**Du*:  Ich will ein Linksinverses angeben, aber ich sehe gerade nicht, wie.\n"
+"\n"
+"**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: ` ∀ b : B, ∃ a : A, …`\n"
+"Wenn du die hier hättest, könntest du vermutlich mit `choose` das gesuchte Linksinverse wählen.\n"
+"Nur hat diese Aussage dummerweise keinen Namen.\n"
+"Vielleicht formulierest du sie noch einmal mit `have` selbst aus, und beweist sie auch noch einmal."
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
+msgid "**Robo**:  Das hatten wir doch auch schon gezeigt …  aber ich hatte vergessen, es abzuspeichern.\n"
+"Erinnerst du dich an den Beweis?"
+msgstr ""
+
+#: Game.Levels.Mono.L11_InjHasLeftInv
+msgid "Ihr bekommt wieder eine große Runde Applaus und werdet ihr verabschiedet.\n"
+"Wieder gibt es keine Transportkapseln für den Rückweg.\n"
+"Aber so weit ist es ja nun auch wieder nicht."
 msgstr ""
 
 #: Game.Levels.Mono
@@ -5841,7 +6009,7 @@ msgid "Auf dem nächsten Planeten stehen wieder zwei Hochhäuser nebeneinander.\
 "\n"
 "**Portier**:  Immerhin habe ich so die Möglichkeit, euch gleich unser einzigartiges Nahverkehrssystem vorzustellen.\n"
 "Ihr kommt von Epo, nicht war?\n"
-"Böse Geschichten hört man von da.\n"
+"Böse Geschichten hört man von dort.\n"
 "Jeden zweiten Tag gibts einen Unfall.\n"
 "Die kriegen ihre Röhren einfach nicht sortiert.\n"
 "Wir sind seit Jahren unfallfrei!\n"
@@ -5859,81 +6027,190 @@ msgid "Auf dem nächsten Planeten stehen wieder zwei Hochhäuser nebeneinander.\
 msgstr ""
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
-msgid "Bild/Urbild"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
-msgid "`f '' S` ist das Bild,\n"
-"`f ⁻¹' V = {x | f x ∈ V} ` das Urbild,\n"
+msgid "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke.\n"
+"Vielleicht könnte ihr mir ja helfen.  Zum Beispiel: …\n"
 "\n"
-"`f '' S := {f a | a ∈ S}`\n"
-"`f ⁻¹' V := {a | f a ∈ V}`"
+"Sie diktiert euch eine Aussage. Robo schreibt sie auf."
 msgstr ""
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
 msgid ""
 msgstr ""
 
-#: Game.Levels.Samarkand.L02_Image
-msgid "Bild/Urbild"
-msgstr ""
-
-#: Game.Levels.Samarkand.L02_Image
-msgid "unangewendetes image/preimage als Funktion"
-msgstr ""
-
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-msgid "Range of Surjection"
-msgstr ""
-
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-msgid "The range of a function is the set of all outputs.\n"
-"\n"
-"In this level you show that a function is surjective if and only if the range of\n"
-"the function is equal to the universal subset of the codomain. For `f : A → B`,\n"
-"the range of `f` is defined as\n"
-"\n"
+#: Game.Levels.Samarkand.L01_ImagePreimage
+msgid "**Robo**:  Die Notation hier muss ich dir, glaube ich, erklären.\n"
+"Gegeben ist offenbar eine Abbildung `f : A → B`.\n"
+"Für eine Teilmenge `S` von `A` ist\n"
 "```\n"
-"range f : Set B := {b | ∃ a, f a = b}\n"
+"f '' S = {f a | a ∈ S}\n"
+"= {b | ∃ a ∈ S, f a = b}\n"
+"```\n"
+"ihr Bild unter `f`.  Und für eine Teilmenge `T` von `B` ist\n"
+"```\n"
+"f ⁻¹' T = { a | f a ∈ T}\n"
+"```\n"
+"ihr Urbild unter `f`."
+msgstr ""
+
+#: Game.Levels.Samarkand.L01_ImagePreimage
+msgid "**Robo:** Um eine Inklusion zu zeigen, nimmst du dir ein Element aus der linken Seite und zeigst, dass es in der rechten liegt.\n"
+"Also fang doch mal mit `intro b` an."
+msgstr ""
+
+#: Game.Levels.Samarkand.L01_ImagePreimage
+msgid "**Robo**:  Um die Annahme `hb` in einen elementareren Ausdruck zu überführen, könntest du `simp` anwenden."
+msgstr ""
+
+#: Game.Levels.Samarkand.L01_ImagePreimage
+msgid "**Arapuka**: Schön."
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "Arapuka diktiert euch noch eine Aufgabe."
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "**Du**:  Aha!  Ich kann also auch einfach `image` schreiben, wenn ich mir diese Fliegendreck-Schreibweise mit `''` nicht mag?\n"
+"\n"
+"**Robo**:  Nein, schau mal genauer hin.   Hier ist `image f` eine Abbildung.\n"
+"Es ist natürlich genau die Abbildung, die eine Teilmenge von `A` auf die entsprechende Bildmenge in `B` wirft, also\n"
+"```\n"
+"image f = fun S ↦ f '' S\n"
+"```\n"
+"Du kannst also `image f` durch `f ''` ausdrücken, aber nicht umgekehrt."
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "**Robo**:  Zu zeigen ist die Übereinstimmung von zwei Abbildungen.  Erinnerst du dich an `funext`?"
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "**Robo**:  Jetzt ist die Gleichheit von zwei Mengen zu zeigen – `ext` heißt das Zauberwort."
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "**Robo**:  Das kann man bestimmt leicht vereinfachen …"
+msgstr ""
+
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "**Arapuka**:  Hübsch, hübsch."
+msgstr ""
+
+#: Game.Levels.Samarkand.L03_SurjectiveRange
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L03_SurjectiveRange
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L03_SurjectiveRange
+msgid "**Robo**:  Hier ist `range f` die gesamte Bildmenge von `f`:\n"
+"```\n"
+"range f = {f a | a : A}\n"
+"= {  b | ∃ a, f a = b}\n"
+"```\n"
+"Das ist also im wesentlichen eine andere Schreibweise für `f '' univ`.\n"
+"Um damit zu arbeiten, ist `mem_range` ganz nützlich:\n"
+"```\n"
+"x ∈ range f ↔ ∃ a, f a = b\n"
 "```"
 msgstr ""
 
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-msgid "**Du**: Wie zeigt man denn schon wieder Gleichheit von Mengen?"
+msgid "**Robo**: Ich würde mal mit `consturctor` anfangen."
 msgstr ""
 
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-msgid "**Robo**: Ich habe ein relevantes Resultat gefunden: `mem_range`.\n"
-"Such das mal in denem Inventar!"
+msgid "**Robo**: Ist nicht wieder eine Gleichheit von Mengen zu zeigen? Also `ext`."
 msgstr ""
 
-#: Game.Levels.Samarkand.L04_ImagePreimage
+#: Game.Levels.Samarkand.L03_SurjectiveRange
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L03_SurjectiveRange
+msgid "**Arapuka**:  Auch schön.\n"
+"\n"
+"  **Robo**:  Hast du eigentlich den ganzen Planeten hier bemalt?\n"
+"\n"
+"  **Arapuka**:  Nein.  Das ist eine Aufgabe für Generationen.\n"
+"  Die ersten Musterelement hat mein Urururur…opa geprägt.\n"
+"  Ich weiß gar nicht genau, wie viele Generationen ich zurückgehen muss.\n"
+"  Und erst recht nicht, woher das Muster kam."
+msgstr ""
+
+#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
+msgid "**Arapuka**:  Könnt ihr mir vielleicht hiermit auch noch helfen?"
+msgstr ""
+
+#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
+msgid "**Du**:  Hatten wir das nicht eben schon?\n"
+"\n"
+"**Robo**:  Nein.  Vorhin hatten wir nur die Inklusion `image_preimage_subset`:\n"
+"```\n"
+"f '' (f ⁻¹' T) ⊆ T\n"
+"```\n"
+"Jetzt ist Gleichheit zu zeigen, aber unter der zusätzlichen Annahme, dass `f` surjektiv ist."
+msgstr ""
+
+#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
+msgid "**Arapuka**:  Ihr seid wirklich eine große Hilfe!"
+msgstr ""
+
+#: Game.Levels.Samarkand.L05_InjectiveFibre
 msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L05_InjectiveFibre
-msgid "Range of Injective"
-msgstr ""
-
-#: Game.Levels.Samarkand.L05_InjectiveFibre
-msgid "For an injective function `f : A → B` the fibres of the elements in the range\n"
-"are singletons."
+msgid "**Arapuka**:  Ich habe auch noch eine Frage zu injektiven Abbildungen."
 msgstr ""
 
 #: Game.Levels.Samarkand.L05_InjectiveFibre
 msgid ""
 msgstr ""
 
-#: Game.Levels.Samarkand.L06
-msgid "Preimage of surjective is injective"
+#: Game.Levels.Samarkand.L05_InjectiveFibre
+msgid "**Du**:  Bei `∃! a` konstruiere ich mir zunächst das Element `a`, das ich verwenden möchte …\n"
+"\n"
+"**Robo**: … und dann wendest du `use a` und `simp` an.  Genau."
 msgstr ""
 
-#: Game.Levels.Samarkand.L06
+#: Game.Levels.Samarkand.L05_InjectiveFibre
+msgid "Arapuka liegt immer noch ganz regungslos, aber sie sieht glücklich aus."
+msgstr ""
+
+#: Game.Levels.Samarkand.L06_PreimageNonempty
 msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L06_PreimageNonempty
+msgid "**Arapuka**: Und wie sieht es hiermit aus?"
+msgstr ""
+
+#: Game.Levels.Samarkand.L06_PreimageNonempty
+msgid "**Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann leer, wenn `b` ein Urbild besitzt.\n"
+"Mal wieder ziemlich offensichtlich.\n"
+"\n"
+"**Robo**:  Ja, bis auf Notation.\n"
+"Aber zum Glück haben wir schon `eq_empty_iff_forall_not_mem` gezeigt.\n"
+"Um das anzuwenden, musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit `unfold Ne`."
 msgstr ""
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "Preimage of the inverse"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
@@ -5953,31 +6230,83 @@ msgid "The image of a set `S : Set A` along a  function `f : A → B` is the set
 msgstr ""
 
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-msgid "Preimage of surjective is injective"
+msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-msgid "Given a function `f : A → B` we obtain a function `preimage f : Set B → Set A`\n"
-"by taking the preimage of sets of `B`. Recall that\n"
-"```\n"
-"preimage f S = f ⁻¹' S = {a | f a ∈ S}\n"
-"```\n"
+msgid "**Arapuka**:  Könnt ihr mir vielleicht sogar mit dieser Vermutung weiterhelfen?"
+msgstr ""
+
+#: Game.Levels.Samarkand.L08_Preimage_Injective
+msgid ""
+msgstr ""
+
+#: Game.Levels.Samarkand.L08_Preimage_Injective
+msgid "**Robo**:  Eine Abbildung ist genau dann surjektiv, wenn die induzierte Abbildung `preimage f`, die eine Teilmenge auf das Urbild unter dieser Teilmenge wirft, injektiv ist?\n"
+"Stimmt das überhaupt?\n"
 "\n"
-"Show that `preimage f` is injective iff f is surjective."
+"**Du**: Ich glaube, ja.  Das habe ich schonmal gesehen.\n"
+"\n"
+"**Robo**:  Na dann, los!"
+msgstr ""
+
+#: Game.Levels.Samarkand.L08_Preimage_Injective
+msgid "**Arapuka**:  Fantastisch!  Ich bin so aufgeregt, ich möchte am liebsten in die Luft springen.\n"
+"  Aber das geht natürlich nicht.  Dann ist das Muster futsch.\n"
+"\n"
+"  **Robo**:  Wie lange hast du denn noch?\n"
+"\n"
+"  **Arapuka**:  Hier noch drei Jahre, 22 Tage, 7 Stunden und 35 Minuten.\n"
+"\n"
+"  **Robo**:  Ohh …\n"
+"\n"
+"  **Du**:  Und woher weißt du, wo genau du danach hingehen musst, damit das Muster passt?\n"
+"\n"
+"  **Arapuka**:  Ah!\n"
+"\n"
+"  Über Arapukas Gesicht breitet sich ein großes Lächeln aus.\n"
+"\n"
+"  **Arapuka**:  Das ist eben die Kunst!"
 msgstr ""
 
 #: Game.Levels.Samarkand
 msgid "Samarkand"
 msgstr ""
 
-#: Game.Levels.Iso.L01_Bijective
-msgid "Bijektivität"
+#: Game.Levels.Samarkand
+msgid "In der Ferne taucht ein sehr bunter Planet auf.\n"
+"Als ihr näher kommt, seht ihr, dass große Teile seiner Oberfläche mit aufwendigen geometrischen Mustern verziert sind.\n"
+"Aber es gibt auch ein paar unverzierte Areale, ganz weiß.\n"
+"Ihr landet in einem dieser weißen Flecken.\n"
+"\n"
+"**Du**:  Huhu, ist hier jemand?\n"
+"\n"
+"Die Planetenoberfläche gleicht einer perfekten Sphäre. Ihr seht in alle Richtungen Horizont.\n"
+"Es ist niemand zu sehen.  Ihr wollt schon wieder umdrehen, da entdeckst du etwas.\n"
+"\n"
+"**Du**:  Robo, schau mal da hinten, da hat der Planet eine Beule!\n"
+"\n"
+"Wie sich herausstellt, ist die „Beule“ eine kleine Schildkröte,\n"
+"die nahe der Musterkante auf farbigem Grund liegt.\n"
+"Vorsichtig betretet ihr die gemusterte Fläche.  Die Farbe scheint trocken zu sein.\n"
+"\n"
+"**Arapuka**: Hallo ihr beiden, kommet ruhig näher!  Schön, dass ich auch einmal Besuch bekomme.\n"
+"\n"
+"**Du**:  Was machst du denn hier, so ganz allein?\n"
+"\n"
+"**Arapuka**:  Ich arbeitet an einem großen Kunstwerk.\n"
+"Ich liege hier solange, bis mein Bauchpanzer das Bodenmuster angenommen hat.\n"
+"Dann laufe ich hinüber zu der Stelle wo dieses Stück Muster noch fehlt und lege mich dort so lange nieder, bis ich das Muster auf den weiße Planetenoberfläche transferiert habe.  Das dauert.  Ich kann also Gesellschaft gut gebrauchen.\n"
+"\n"
+"**Du**: Na prima."
 msgstr ""
 
 #: Game.Levels.Iso.L01_Bijective
-msgid "**Du**: Ehm, und wie kommen wir da wieder raus?\n"
-"\n"
-"**Gelehrter**: Gerne zeige ich euch den Weg, nachdem ihr mir auch noch folgendes erklärt:"
+msgid ""
+msgstr ""
+
+#: Game.Levels.Iso.L01_Bijective
+msgid "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 msgstr ""
 
 #: Game.Levels.Iso.L01_Bijective
@@ -5987,50 +6316,53 @@ msgid "**Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective
 msgstr ""
 
 #: Game.Levels.Iso.L01_Bijective
-msgid "Zufrieden drückt euch der Gelehrte eine neue Fackel in die Hand und\n"
-"zeigt euch den Weg nach draußen."
-msgstr ""
-
-#: Game.Levels.Iso.L02_Inverse
-msgid "Inverse"
-msgstr ""
-
-#: Game.Levels.Iso.L02_Inverse
-msgid "Eigentlich hast du nur beiläufig Robo gefragt, ob bijektiv nicht auch bedeute, dass\n"
-"eine Inverse Funktion existiere. Jetzt steht ihr aber schon seit einer halben Stunde rum\n"
-"und der Gelehrte möchte wissen, wie das den genau ginge.\n"
+msgid "**Isososoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …\n"
 "\n"
-"Offensichtlich kennt er diese Aussage als `Function.bijective_iff_has_inverse` aus seinen Büchern,\n"
-"aber er möchte, dass du ihm das hier und jetzt nochmals von Grund auf zeigst."
+"Er legt ein paar Blätter zur Seite."
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Robo**: Tipp. Teil doch `Bijective` mit `obtain ⟨hinj, hsurj⟩  := «{h}»` in\n"
+msgid ""
+msgstr ""
+
+#: Game.Levels.Iso.L02_Inverse
+msgid "**Isosoph**:  … und zur Hauptsache kommen."
+msgstr ""
+
+#: Game.Levels.Iso.L02_Inverse
+msgid ""
+msgstr ""
+
+#: Game.Levels.Iso.L02_Inverse
+msgid "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zur ihr inverse Abbildung existiert.\n"
+"Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten.\n"
+"Hattest du dir die Aussagen abgespeichert?\n"
+"\n"
+"**Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die Augenbrauen nach oben.\n"
+"Lass uns lieber scharf nachdenken und uns erinnern, wie das ging."
+msgstr ""
+
+#: Game.Levels.Iso.L02_Inverse
+msgid "**Robo**: Teil doch erst einmal `Bijective` mit `obtain ⟨hinj, hsurj⟩  := «{h}»` in\n"
 "`Injective` und `Surjective` auf!"
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Du**: Ja was ist eigentlich die Inverse von `«{f}»`…?\n"
-"\n"
-"**Robo**: Hast du eine Idee?\n"
-"\n"
-"**Du**: Also von der Surjektivität weiss ich, dass für alle `y : B` ein Urbild `x : A` existiert.\n"
-"\n"
-"**Robo**: Mit `choose g hg using «{fsurj}» ` kannst du eine Funktion\n"
-"definieren, die `y` irgendein Urbild zuweist."
+msgid "**Robo**: Aus der Surjektivität weisst du, dass jedes `y : B` ein Urbild `x : A` hat.\n"
+"Kannst du daraus nicht mit `choose` eine Umkehrabbildung konstruieren?"
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "Zeig erst einmal dass `«{g}»` ein Rechtsinverses von `«{f}»` ist,\n"
+msgid "Zeig am besten erst einmal, dass `«{g}»` ein Rechtsinverses von `«{f}»` ist,\n"
 "also zum Beispiel `have hR : RightInverse «{g}» «{f}»`"
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Robo**: Mit `dsimp` kannst du es ja etwas vereinfachen."
+msgid "**Robo**: Mit `simp [LeftInverse]` kannst du dir das Beweisziel etwas vereinfachen."
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Robo**: fang mal mit `intro` an."
+msgid "**Robo**: Warum beginnst du nicht mit `intro`?"
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
@@ -6042,27 +6374,29 @@ msgid "**Robo**: Das UND auch noch!"
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Robo**: Injektivität ist der schwierige Teil. Fang mal an mit `intro`."
+msgid "**Robo**: Injektivität ist der schwierigere Teil. Fang mal an mit `intro`."
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Du**: Wenn die Argumente `f a = f b` gleich sind, ist dann auch `g (f a) = g (f b)`,\n"
-"wie sag ich das?\n"
+msgid "**Du**: Wenn die Argumente `f a = f b` gleich sind, ist auch `g (f a) = g (f b)` –\n"
+"wie sag ich das nochmal?\n"
 "\n"
-"**Robo**: Also wenn du `f a = f b` hast, kannst du ja auch einfach damit umschreiben."
+"**Robo**: Also, wenn du `f a = f b` hast, kannst du ja auch einfach `rw` benutzen."
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "**Robo**: Du kannst die `RightInverse`-Annahme einfach mit `rw`\n"
-"benutzen."
+msgid "**Robo**: Hier kannst du die `RightInverse`-Annahme mit `rw` benutzen."
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
-msgid "Endlich entkommt ihr der Bibliothek.\n"
+msgid "Die Isosophen zeigen sich sehr zufrieden.\n"
 "\n"
-"**Robo**: Da würden mich keine zehn Pferde nochmals hineinbringen!\n"
+"**Robo**:  Können wir jetzt nochmal … kapseln?\n"
 "\n"
-"**Du**: Von wegen Pferden, wie viele PS hat eigentlich unser Raumschiff?"
+"**Isosoph**:  Klar!  Aber immer schön der Reihe nach.\n"
+"Seit wir die Kapseln in beide Richtungen benutzen, häufen sich wieder die Unfälle.\n"
+"\n"
+"Robo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter."
 msgstr ""
 
 #: Game.Levels.Iso
@@ -6070,17 +6404,31 @@ msgid "Iso"
 msgstr ""
 
 #: Game.Levels.Iso
-msgid "Auf der Suche nach dem Buch der Urbilder landet ihr auf einem kleinen Mond, der bis auf\n"
-"eine Insel komplett mit Wasser bedeckt zu sein scheint.\n"
+msgid "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n"
 "\n"
-"Auf der Insel seht ihr verschiedene große und kleine Behausungen, manche aus Stroh und Holz,\n"
-"vereinzelte aus Lehm.\n"
+"**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.\n"
 "\n"
-"Planlos geht ihr zum ersten Haus bei dem jemand vorne außen sitzt."
+"**Du**:  Links winken Leute!\n"
+"\n"
+"Also landet ihr links.\n"
+"Da Empfang ist aber eher verhalten.\n"
+"\n"
+"**Isosoph**:  Guten Tag!\n"
+"Das ist aber nicht die feine Art, hier mitten in der Menge zu landen!\n"
+"Dort drüben hatten wir doch extra einen Landeplatz markiert!\n"
+"\n"
+"**Robo**:  Entschluldigung!  Ich hatte die Symbolik nicht erkannt.\n"
+"\n"
+"**Isosoph**: Ist ja nochmal gut gegangen!\n"
+"Wir hatten schon gehört, dass ihr ein bisschen anders seid.\n"
+"Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n"
+"\n"
+"Wie sich heraussstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann.\n"
+"Ihr düst ein paar Mal hin und her."
 msgstr ""
 
 #: Game.Levels.SetTheory.L01
-msgid "Mengen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L01
@@ -6110,7 +6458,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L02
-msgid "Schnitt und Vereinigung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L02
@@ -6146,7 +6494,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L03
-msgid "Teilmengen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L03
@@ -6173,7 +6521,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L04
-msgid "Teilmengen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L04
@@ -6191,7 +6539,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L05
-msgid "Antisymmetrie"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L05
@@ -6229,7 +6577,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L06
-msgid "leere Menge"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L06
@@ -6247,7 +6595,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L07
-msgid "gesamte Menge"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L07
@@ -6269,7 +6617,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L08
-msgid "Übung"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L08
@@ -6301,7 +6649,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L09
-msgid "Mengen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L09
@@ -6319,7 +6667,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L10
-msgid "Teilmengen mit Konditionen"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L10
@@ -6349,7 +6697,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L11
-msgid "Abschluss"
+msgid ""
 msgstr ""
 
 #: Game.Levels.SetTheory.L11
