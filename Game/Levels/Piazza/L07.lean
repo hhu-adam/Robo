@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "SetTheory"
+World "Piazza"
 Level 7
 
 Title "" -- "gesamte Menge"

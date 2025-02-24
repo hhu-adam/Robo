@@ -21,7 +21,7 @@ import Game.Levels.Mono
 import Game.Levels.Samarkand
 import Game.Levels.Iso
 
-import Game.Levels.SetTheory
+import Game.Levels.Piazza
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets

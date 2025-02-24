@@ -7,18 +7,19 @@
 | Implis                          | ==        | +++            | +++    | +++          | ++     | +       | +++                        |                                                                                            |
 | Quantus                         | ==        | +++            | +++    | +++          | +++    | +       | +++                        |                                                                                            |
 | Spinoza                         | ==        | ++             | ++     | ++           | ++     |         | +++                        |                                                                                            |
-| Luna                            | ==        | +              | +++    | +++          | update |         | +++                        |                                                                                            |
+| Luna                            | ==        | +              | +++    | +++          | update |         | +++                        | cf. L02 versus L05; L05 not integrated into story                                          |
 | Babylon                         | ==        | +              | +++    | +++          | +++    |         | +++                        |                                                                                            |
 | Prado (Primes)                  | ==        | +              | TODO   | +            | +++    |         | +++                        |                                                                                            |
-| SetTheory                       | Piazza    | TODO           |        |              |        |         | (market)                   | TODO: see below                                                                            |
+| Piazza (SetTheory)              | ==        | TODO           | TODO   | TODO         | TODO   |         | +++                        | TODO: see below                                                                            |
+| Euklid (Infinite Primes)        | ==        | TODO           | TODO   | TODO         | TODO   |         | +++                        | BOSS: infinitely many primes                                                               |
 | Vieta (Function Basics)         | ==        | ++             | TODO   | +            | +      |         | +++                        |                                                                                            |
-| Epo                             | ==        | +              | +      |              | TODO   |         | +++                        |                                                                                            |
-| Mono                            | ==        | +              | TODO   |              | TODO   |         | +++                        |                                                                                            |
-| Iso                             | ==        | +              | TODO   |              | TODO   |         | +++                        |                                                                                            |
+| Epo                             | ==        | +              | +      |              | +++    |         | +++                        |                                                                                            |
+| Mono                            | ==        | +              | TODO   |              | +++    |         | +++                        |                                                                                            |
+| Iso                             | ==        | +              | TODO   |              | +++    |         | +++                        |                                                                                            |
 | Samarkand                       | ==        | +              |        |              |        |         | +++                        |                                                                                            |
 | Cantor                          | ==        | ++             | +      | +            | +      |         | +++                        |                                                                                            |
 | Robotswana                      | ==        | ++             | +      | update (L05) | update |         | +++                        |                                                                                            |
-| Ciao                            | ==        | +              | +      | +            | +      |         | +++                        |                                                                                            |
+| Ciao                            | ==        | ++++           | ++++   | ++++         | +++    |         | +++                        |                                                                                            |
 |                                 |           |                |        |              |        |         |                            |                                                                                            |
 | **Version 2.0:**                |           |                |        |              |        |         |                            |                                                                                            |
 | SymmSquare                      | TODO      | o TODO: L08    | TODO   | TODO         | TODO   |         | TODO                       |                                                                                            |
@@ -27,7 +28,6 @@
 | RealUncountable                 | TODO      | TODO .         | TODO   | TODO         | TODO   |         | TODO                       |                                                                                            |
 |                                 |           |                |        |              |        |         |                            |                                                                                            |
 | **Possible future versions:**   |           |                |        |              |        |         |                            |                                                                                            |
-| ???                             |           |                |        |              |        |         | +++ (librarian)            |                                                                                            |
 | Lineare Independence            |           |                |        |              |        |         | +++ (mushrooms with flags) |                                                                                            |
 | Intervals                       |           |                |        |              |        |         |                            |                                                                                            |
 | Continuity                      |           |                |        |              |        |         |                            |                                                                                            |
@@ -48,7 +48,6 @@
 - use set of primes in examples
 - introduce Fin n (currently in Babylon)
 - introduce Finite
-- new Boss: set of primes is infinite
 - warnings:
 
     ./././Game.lean:121:0: warning: No world introducing Set.mem_inter_iff,     but required by SetTheory

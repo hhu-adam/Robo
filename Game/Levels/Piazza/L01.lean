@@ -1,7 +1,7 @@
 
 import Game.Metadata
 
-World "SetTheory"
+World "Piazza"
 Level 1
 
 Title "" -- "Mengen"
