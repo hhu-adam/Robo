@@ -24,7 +24,7 @@ wichtigsten Taktiken für diese Situation an.
 
 Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
   Hint (hidden := true)
-    "**Robo**: Ich würd zuerst die Annahme {h} mit `obtain ⟨⟩ := {h} aufteilen."
+    "**Robo**: Ich würd zuerst die Annahme {h} mit `obtain ⟨⟩ := {h}` aufteilen."
   Branch
     constructor
     · obtain h' | h' := h
