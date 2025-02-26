@@ -57,7 +57,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
 
     **Du**: Wirklich?
 
-    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n.
+    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n`.
 
     **Du**: Nicht `induction n`?
 

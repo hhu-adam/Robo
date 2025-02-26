@@ -36,7 +36,7 @@ heißen bei `(h : A ↔ B)` die beiden Teile `h.mp` und `h.mpr`.
 
 **Du**: Also `h.mp` ist `A → B`? Wieso `mp`?
 
-**Robo**: `mp` steht für Modus Ponens`. Der Modus ponens ist eine schon in der antiken
+**Robo**: `mp` steht für Modus Ponens. Der Modus ponens ist eine schon in der antiken
 Logik geläufige Schlussfigur, die in vielen logischen Systemen … Ach nee, das wolltest
 du ja nicht hören. Das \"r\" in `mpr` steht für \"reverse\", weil's die Rückrichtung ist.
 "
