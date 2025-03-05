@@ -1,0 +1,47 @@
+import Mathlib
+
+open BigOperators Finset
+
+/- Finset.range n  is the set of natural numbers {0,…,n-1}.
+! Finset.range  should not be confused with  Function.range  !
+-/
+
+
+example (n : ℕ) : Finset ℕ := by
+  exact range n
+
+example (d : ℕ) : d ∉ range d := by
+  --exact not_mem_range_self
+  simp
+
+
+-- Finset.range allows a fairly natural formulation of the arithmetic sum exercise without any casts:
+
+theorem arithmetic_sum (n : ℕ) :
+    2 * (∑ i ∈ range (n+1), i) = n * (n + 1) := by
+    induction' n with d hd
+    · simp
+    · rw [range_add_one]
+      rw [sum_insert]
+      · rw [mul_add, hd]
+        ring
+      · simp
+
+
+-- Finset.range also allows the following alternative proof with erase instead of insert:
+
+lemma Finset.range_erase (d : ℕ) : (range (d + 1)).erase d = range d := by
+  rw [erase_eq_iff_eq_insert]
+  exact range_add_one
+
+theorem arithmetic_sum' (n : ℕ) :
+    2 * (∑ i ∈ range (n+1), i) = n * (n + 1) := by
+    induction' n with d hd
+    · simp
+    · --have h : d + 1 ∈ range (d + 1 + 1) := by 
+      --  simp
+      rw [←add_sum_erase]
+      rw [range_erase]
+      rw [mul_add, hd]
+      ring
+      simp
