@@ -3,16 +3,16 @@ import Game.Metadata
 World "Euklid"
 Level 1
 
-open Set BigOperators
+open Set BigOperators Finset
 namespace Nat
 
 Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
-  by_contra hf
+ by_contra hf
   -- notation to make equations human-readable:
   let all_primes := hf.toFinset
   let prod : ℕ := Finset.prod all_primes id
   -- TODO: change to
-  -- let prod : ℕ := BigOperators.bigprod p ∈ all_primes, p
+  -- let prod : ℕ := ∏ p ∈ all_primes, p 
   let new_prime : ℕ := prod + 1
   -- As for any natural number > 1, there must be some prime that divides new_prime:
   have h_exists_prime_factor : ∃ p : ℕ, Prime p ∧ p ∣ new_prime := by
@@ -31,16 +31,28 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   -- On the other hand, by construction, no prime divides new_prime:
   have h_no_prime_divides : ∀ p : ℕ, Prime p →  ¬ p ∣ new_prime := by
     intro p hp
+    --let S := all_primes.erase p  
     let q := Finset.prod (all_primes.erase p) id
     -- TODO: change to
-    -- let q := ∏ p' ∈ all_primes.erase p, (p' : ℕ)
+    -- let q := ∏ p' ∈ (all_primes.erase p), (p' : ℕ)
     --
     -- new_prime = p * q + 1 …
     have h : prod = p * q := by
+      /- slightly longer version that uses prod_insert: -/
+      simp[prod]
+      have : p ∈ all_primes := by 
+        simp[all_primes]
+        assumption
+      rw[← Finset.insert_erase this]
+      apply Finset.prod_insert
+      simp
+      /- shorter, older version that uses mul_prod_erase: -/
+      /-
       symm
       apply Finset.mul_prod_erase all_primes id
       simp[all_primes]
       assumption
+      -/
     simp[new_prime]
     rw [h]
     -- … so it cannot be divisible by p:
@@ -59,21 +71,29 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
 /-
 main things that need to be introduced and explained:
 
+**Finsets** → **Piazza**
 - Finset
 - Finset.erase
-- Finset.prod (∏)
-- Finset.prod_pos
-- Finset.mul_prod_erase
-→ **Babylon** ?
-Currently all sums in babylon are over Fin n, because the main point is induction!
-Can we have induction over Finsets instead?
-In any case, does make sense to include products in Babylon as well.
+- Finset.insert
+- Finset.insert_erase
 
 - Set.Finite
 - Set.Finite.toFinset
-→ **Piazza**
 
+**Products** → **Babylon**
+- Finset.prod (∏)
+- Finset.prod_pos
+- +Finset.mul_prod_erase+ -- no longer needed
+- Finset.prod_insert      -- analogous to Finset.add_insert, which fits well into current Babylon questions
+
+It would in any case make sense to include products in Babylon.
+The sums in Babylon are currently over Fin n, because the main point is induction.
+But could do sums over range n or Icc a b, which seems more flexible, fits better with the above product of primes, and can be solved with Finset.add_insert.
+(Could even add induction over Finsets.)
+
+**Primes** → **Prado** 
 - Nat.exists_prime_and_dvd
 - Nat.not_dvd_of_between_consec_multiples
-→ **Prado** -- should easily fit in
+
+Should easily fit in Prado.
 -/
