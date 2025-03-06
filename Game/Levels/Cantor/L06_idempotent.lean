@@ -43,7 +43,7 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
     rw [← h_1]
     unfold fixedPoints
     unfold IsFixedPt
-    rw [mem_setOf]
+    simp --or rw [mem_setOf]
     Hint (hidden := true) "**Robo**: Wir hatten einmal `Function.comp_apply`!"
     simp_rw [comp_apply] at h
     rw [h]

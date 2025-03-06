@@ -20,7 +20,7 @@ open Set Function
 -- the following implies `cantor_power` but not vice versa.
 -- maybe add this before L01_CantorPowerSet
 Statement cantor_helper {A : Type*} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
-  Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
+  --Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
   Branch
     push_neg
     intro _a
@@ -35,11 +35,11 @@ Statement cantor_helper {A : Type*} (f : A → Set A) : ¬ ∃ (a : A), f a = { 
     suffices : a ∉ f a
     · contradiction
     rw [ha] at h₁
-    rw [mem_setOf] at h₁
+    simp at h₁ --or: rw [mem_setOf] at h₁
     assumption
   · apply h₁
     rw [ha]
-    rw [mem_setOf]
+    simp --or: rw [mem_setOf]
     assumption
 
 TheoremTab "Set"

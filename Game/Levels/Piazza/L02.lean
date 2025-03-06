@@ -28,7 +28,7 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   - `{x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}`
   deren Namen müssen wir aber nich lernen
   "
-  simp only [mem_inter_iff, mem_union]
+  simp -- simp only [mem_inter_iff, mem_union]
   Hint "Jetzt haben wir die Mengengleichung auf Logik
   zurückgeführt und als dritter Schritt kann `tauto` den Rest übernehmen."
   tauto

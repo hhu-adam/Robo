@@ -33,10 +33,10 @@ Statement :
     simp at h
     Branch
       tauto
-    rw [mem_singleton_iff]
-    assumption
+    rw[h]
+    simp
   · intro h
-    rw [mem_singleton_iff] at h
+    simp at h --or: rw [mem_singleton_iff] at h
     rw [h]
     rw [mem_fixedPoints_iff]
     simp
