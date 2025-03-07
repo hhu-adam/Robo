@@ -31,16 +31,67 @@ example (n : ℕ) : ∑ i ∈ Icc 1 n, 2 = 2 * n := by
   ring
 
 /- Babylon L03 -/
--- old version:
-example (n : ℕ) : ∑ i : Fin n, ( (i : ℕ)  + 1) = n + (∑ i : Fin n, (i : ℕ) ) := by
-  rw [sum_add_distrib]
+example (n : ℕ) : ∑ i ∈ Icc 1 n, (i + 1) = n + (∑ i ∈ Icc 1 n, i) := by
+  rw [sum_add_distrib] -- did not find instance of pattern in target expression
   simp
   ring
 
--- new suggestion fails:
-example (n : ℕ) : ∑ i ∈ Icc 1 n, i + 1 = n + (∑ i ∈ Icc 1 n, i) := by
-  rw [sum_add_distrib] -- did not find instance of pattern in target expression
-  sorry
+/- NEW: introduce  sum_subset , needed for ROBOTSWANA -/
+/- short version with many decides:  -/
+example (n : ℕ) : ∑ i ∈ Icc 0 12, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 12, (i^3 - 3*i^2 + 2*i : ℤ) := by
+  symm
+  apply sum_subset
+  · decide
+  · have h : Icc (0:ℤ) 12 \ Icc 3 12 = {0,1,2} := by
+      decide
+    intro x hx hx'
+    have : x ∈ Icc (0:ℤ) 12 \ Icc 3 12 := by
+      simp at *
+      tauto
+    rw [h] at this
+    simp at this 
+    obtain hx | hx | hx := this
+    · rw [hx]
+      ring
+    · rw [hx]
+      ring
+    · rw [hx]
+      ring
+
+/- longer version; not nice but slightly less artificial -/
+example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
+  symm
+  apply sum_subset
+  · rw [Icc_subset_Icc_iff] -- needs to be introduced in PIAZZA
+    constructor
+    linarith
+    linarith
+    assumption  
+  · /- Now the part that's not nice:  [0,n] \ [0,3] = [0,2] -/
+    intro x hx h3'
+    simp at hx h3'
+    -- Hint: by_cases
+    by_cases h3 : 3 ≤ x
+    · apply h3' at h3
+      linarith
+    · -- Hint:  x in [0,2]
+      have hI : x ∈ Icc 0 2 := by
+        simp
+        linarith
+      -- Hint:  decide kann [0,2] = {0,1,2} zeigen  
+      have hS : Icc 0 2 = {0,1,2} := by
+        decide  
+      rw [hS] at hI
+      -- Hint:  simp zerlegt {0,1,2} in drei Möglichkeiten
+      simp at hI
+      obtain hx | hx | hx  := hI
+      · rw [hx]
+        ring
+      · rw [hx]
+        ring
+      · rw [hx]
+        ring
+
 
 /- Babylon L04 -/  
 theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
@@ -53,6 +104,26 @@ theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := b
           ring
         · simp
       · simp  --or linarith
+
+/- NEW:  potential new level that was not possible before     -/
+/- good exercise for repeating what has been leaned in L04    -/
+example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
+    induction' n with d hd
+    · simp
+    · simp
+      rw [← insert_Icc_eq_Icc_add_one_right]
+      · rw [sum_insert]
+        · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
+            ring
+          rw [this]
+          rw [← insert_Icc_eq_Icc_sub_one_left]
+          · rw [sum_insert]
+            · rw [hd]
+              ring
+            · simp
+          · linarith
+        · simp
+      · linarith
 
 /- Babylon L05 -/
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
@@ -87,23 +158,3 @@ example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := 
         ring
       · simp
     · linarith
-
-/- Babylon:  potential new level that was not possible before -/
-example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
-    induction' n with d hd
-    · simp
-    · simp
-      rw [← insert_Icc_eq_Icc_add_one_right]
-      · rw [sum_insert]
-        · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
-            ring
-          rw [this]
-          rw [← insert_Icc_eq_Icc_sub_one_left]
-          · rw [sum_insert]
-            · rw [hd]
-              ring
-            · simp
-          · linarith
-        · simp
-      · linarith
-
