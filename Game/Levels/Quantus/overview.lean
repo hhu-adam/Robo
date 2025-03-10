@@ -4,13 +4,13 @@ import Mathlib
 /- Revision:
 
    add some lemmas and exercises preparing the Boss level of BABYLON
-
+   see A: …   and   B: … below
 -/
 
 
 
 open Nat
-/- 3 NEW easy ring exercises introducing useful lemmas -/
+/- A:  3 NEW easy ring exercises introducing useful lemmas -/
 theorem Robo.add_pow_two (a b : ℕ) : (a + b) ^ 2 = a ^ 2 + 2 * a * b + b ^ 2 := by
   ring
 
@@ -28,3 +28,17 @@ example (x a b : ℕ) (hx : x = 2*b) (hy : y = a^2 + a*x + b^2) : y = (a + b)^2 
   rw [mul_assoc]
   rw [← hx]
   assumption
+
+
+/- B: preparation for potential new exercise in BABAYLON 
+   -- second, longer proof below would fit in well with exercises on Exist here in QUANTUS  -/
+
+example (i : ℕ) (h : Even i): (-1 : ℤ)^i = 1 := by 
+  exact Even.neg_one_pow h
+
+example (i : ℕ) (h : Even i): (-1 : ℤ)^i = 1 := by
+  -- omega -- fails
+  unfold Even at h 
+  obtain ⟨r , hr⟩ := h 
+  rw [hr] 
+  simp
