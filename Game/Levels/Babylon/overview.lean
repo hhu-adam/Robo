@@ -15,8 +15,6 @@ import Mathlib
           · …
           · simp
         · linarith
-
-   ISSUES:  see Babylon L03
 -/
 
 open Nat Finset BigOperators
@@ -36,29 +34,7 @@ example (n : ℕ) : ∑ i ∈ Icc 1 n, (i + 1) = n + (∑ i ∈ Icc 1 n, i) := b
   simp
   ring
 
-/- NEW: introduce  sum_subset , needed for ROBOTSWANA -/
-/- short version with many decides:  -/
-example (n : ℕ) : ∑ i ∈ Icc 0 12, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 12, (i^3 - 3*i^2 + 2*i : ℤ) := by
-  symm
-  apply sum_subset
-  · decide
-  · have h : Icc (0:ℤ) 12 \ Icc 3 12 = {0,1,2} := by
-      decide
-    intro x hx hx'
-    have : x ∈ Icc (0:ℤ) 12 \ Icc 3 12 := by
-      simp at *
-      tauto
-    rw [h] at this
-    simp at this 
-    obtain hx | hx | hx := this
-    · rw [hx]
-      ring
-    · rw [hx]
-      ring
-    · rw [hx]
-      ring
-
-/- longer version; not nice but slightly less artificial -/
+/- Babylon NEW: introduce  sum_subset , needed for ROBOTSWANA -/
 example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
   symm
   apply sum_subset
@@ -67,30 +43,14 @@ example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ
     linarith
     linarith
     assumption  
-  · /- Now the part that's not nice:  [0,n] \ [0,3] = [0,2] -/
-    intro x hx h3'
-    simp at hx h3'
-    -- Hint: by_cases
-    by_cases h3 : 3 ≤ x
-    · apply h3' at h3
-      linarith
-    · -- Hint:  x in [0,2]
-      have hI : x ∈ Icc 0 2 := by
-        simp
-        linarith
-      -- Hint:  decide kann [0,2] = {0,1,2} zeigen  
-      have hS : Icc 0 2 = {0,1,2} := by
-        decide  
-      rw [hS] at hI
-      -- Hint:  simp zerlegt {0,1,2} in drei Möglichkeiten
-      simp at hI
-      obtain hx | hx | hx  := hI
-      · rw [hx]
-        ring
-      · rw [hx]
-        ring
-      · rw [hx]
-        ring
+  · -- showing that x = 0 or 1 or 2:  see Luna L??
+    intro x h0 h3
+    have h : x = 0 ∨ x = 1 ∨ x = 2 := by 
+      simp at h0 h3
+      omega
+    obtain hx | hx | hx  := h
+    all_goals rw [hx]
+    all_goals ring
 
 
 /- Babylon L04 -/  
@@ -105,8 +65,7 @@ theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := b
         · simp
       · simp  --or linarith
 
-/- NEW:  potential new level that was not possible before     -/
-/- good exercise for repeating what has been leaned in L04    -/
+/- Babylon NEW: good exercise for repeating what has been leaned in L04 -/
 example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     induction' n with d hd
     · simp
