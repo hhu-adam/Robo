@@ -53,6 +53,54 @@ example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ
     all_goals ring
 
 
+/- Babylon NEW: more interesting, second exercise on sum_subset 
+   Problems:
+   - { i ∈ I | Even i} is rendered in a strange way
+   - needs yet another lemma, namely sum_congr 
+   - last step is a bit unexpected, see Note at the end
+-/
+
+example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i ∈ I | Even i} := by 
+  trans ∑ i ∈ { i ∈ I | Even i}, ((-1 : ℤ)^i + 1 : ℤ) 
+  · symm 
+    apply sum_subset 
+    · simp 
+    · simp 
+      intro i h hI
+      apply hI at h
+      obtain ⟨k , hk⟩ := h
+      have : (-1)^i + 1 = (-1)^(2*k) * (-1) + 1 := by
+        rw [hk]
+        ring
+      rw [this]
+      simp
+  · trans ∑ i ∈ { i ∈ I | Even i}, (2 : ℤ) 
+    have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by 
+      intro i hi
+      simp at hi
+      obtain ⟨hI, heven⟩ := hi
+      obtain ⟨k, hk⟩ := heven
+      rw [hk]
+      simp
+    apply sum_congr   -- ANOTHER LEMMA NEEDED!
+    · simp
+    · assumption
+    simp -- see Note below for this last step
+    ring   
+
+/- Note:
+     For some reason, I CANNOT solve the following:    -/
+example (R : Type) [Ring R] (r : R) (A : Finset R) : ∑ a ∈ A, r*a = r * ∑ a ∈ A, a := by
+  sorry
+
+/-   However, it seems we don't need it: -/
+example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by 
+  simp
+  ring
+
+
+
+
 /- Babylon L04 -/  
 theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
     induction' n with d hd
