@@ -91,3 +91,26 @@ example (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ b 
   · right
     constructor
     all_goals linarith
+
+
+/- NOTE:  We need all three of 
+
+          linarith
+          omega
+          decide
+-/
+
+namespace Nat
+example : Prime 2 := by
+  decide
+  -- omega -- fails
+
+example : Even 2 := by
+  decide
+  -- omega -- fails
+
+example (n : ℕ) : n < 3 ↔ n = 0 ∨ n = 1 ∨ n = 2 := by
+  -- decide -- fails
+  -- linarith -- fails
+  omega 
+
