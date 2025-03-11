@@ -13,16 +13,18 @@ example (n m : ℕ) : m < n ↔ m + 1 ≤ n := by
     rfl
 
 /- Luna 02: can be solved with omega!  -/
-theorem Robo.Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by  -- CHECK whether this is used anywhere
+/- NOT USED ANYWHERE, so does not need a name -/
+theorem Robo.Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   omega
   /- existing solution:
-  obtain ⟨⟩ := n       -- CHECK whether this is used anywhere
+  obtain ⟨⟩ := n       /- only used in ROBOTSWANA L10, and explained here
+                        can always be replaced with induction at the expense of an extra line -/
   simp
   constructor
   intro
   simp
   intro
-  apply Nat.succ_pos   -- CHECK whether this is used anywhere
+  apply Nat.succ_pos   -- NOT USED ANYWHERE
   -/
 
 /- Luna NEW: linarith-/
@@ -35,19 +37,19 @@ example (n : ℕ) (h : 2 ≤ n) : n ≠ 0 := by
   linarith
 
 /- Luna NEW: omega (this kind of statement needed in BABYLON for sum_subset exercise) -/
-example (m n : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
-  omega 
+example (l m n x : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
+  omega
 
 /- Luna NEW: linarith version of previous exercise (repeat in PIAZZA) -/
-example (m n : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
+example (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
   intro hn hx
   simp at *
-  --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails 
+  --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
   rw [imp_iff_or_not] at hx
-  --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails 
+  --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
   obtain hx | hx := hx
-  · linarith 
-  · linarith 
+  · linarith
+  · linarith
 
 /- Luna 04: linarith can do non-trivial things -/
 example (x y : ℤ) (h₂ : 5 * y ≤ 35 - 2 * x) (h₃ : 2 * y ≤ x + 3) : y ≤ 5 := by
@@ -82,9 +84,9 @@ theorem Robo.lt_trichotomy (a b c : ℝ): a < b ∨ a = b ∨ b < a := by
 
 /- Luna NEW: lt_trichotomy 2-/
 example (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ b < a := by
-  use (a + c) / 2 
-  obtain h | h | h := lt_trichotomy a c 
-  · left 
+  use (a + c) / 2
+  obtain h | h | h := lt_trichotomy a c
+  · left
     constructor
     all_goals linarith
   · contradiction
@@ -93,7 +95,7 @@ example (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ b 
     all_goals linarith
 
 
-/- NOTE:  We need all three of 
+/- NOTE:  We need all three of
 
           linarith
           omega
@@ -112,5 +114,4 @@ example : Even 2 := by
 example (n : ℕ) : n < 3 ↔ n = 0 ∨ n = 1 ∨ n = 2 := by
   -- decide -- fails
   -- linarith -- fails
-  omega 
-
+  omega

@@ -1,0 +1,31 @@
+
+
+| lemma / Def                     |     | required by | draft?                     | confirmed?                   | source |
+|---------------------------------+-----+-------------+----------------------------+------------------------------+--------|
+| +Set.mem_inter_iff+             |     | SetTheory   |                            | see L02, not needed          | log    |
+| +Set.mem_union+                 |     | SetTheory   |                            | see L02, not  needed         | log    |
+| +Set.mem_setOf+                 |     | Cantor      |                            | not needed, replaced by simp | log    |
+| +Set.mem_singleton_iff+         |     | Cantor      |                            | not needed, replaced by simp | log    |
+| (Finset.univ)                   |     | Robotswana  |                            | analogous to Set.univ        | log    |
+| Finset                          |     | Euklid      | TODO: Euklid               |                              | Euklid |
+| Set.Finite                      |     | Euklid      | TODO: Euklid               |                              | Euklid |
+| Set.Finite.toFinset             |     | Euklid      | TODO: Euklid               |                              | Euklid |
+|                                 |     |             |                            |                              |        |
+| Finset.sum_subset               |     | Robotswana  | *Babylon*                  |                              | log    |
+|                                 |     |             |                            |                              |        |
+| Finset.erase                    |     | Euklid      | TODO: Piazza               | No set version!              | Euklid |
+| Finset.insert                   |     | Euklid      | TODO: Piazza               | Exists set version           | Euklid |
+| Finset.insert_erase             |     | Euklid      | TODO: Piazza               | No set version!              | Euklid |
+|                                 |     |             |                            |                              |        |
+| insert_Icc_eq_Icc_add_one_right |     |             | *could be left to Babylon* |                              |        |
+| Icc_subset_Icc_iff              |     |             | *Piazza*                   |                              |        |
+|                                 |     |             |                            |                              |        |
+| *subset_def*                    | L03 | (content)   |                            |                              |        |
+| *Subset.antisymm_iff*           | L05 | ! content ! |                            |                              |        |
+| *eq_empty_iff_forall_not_mem*   | L07 |             |                            |                              |        |
+| *Set.empty*                     | L06 |             |                            |                              |        |
+| *Set.univ*                      | L07 |             |                            |                              |        |
+| *SDiff* A\\B                    | L08 | ??          |                            |                              |        |
+| *Set.complement*                | L09 | ??          |                            |                              |        |
+| *{ … // … }*                    | L10 | ! content ! |                            |                              |        |
+

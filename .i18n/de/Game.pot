@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 20 11:42:26 2025\n"
+"POT-Creation-Date: Thu Mar  6 21:21:01 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -75,8 +75,16 @@ msgid "Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ 
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Für eine Abbildung `f : A → B` ist `range f` eine alternative Schreibweise für `f '' univ`,\n"
-"also für den Wertebereich von `f`.  Insbesondere ist also `range f : Set B`."
+msgid "Für eine Abbildung `f : A → B` ist `range f` die gesamte Bildmenge von `f`:\n"
+"```\n"
+"range f = {f a | a : A}\n"
+"        = {  b | ∃ a, f a = b}\n"
+"```\n"
+"Das ist also im wesentlichen eine andere Schreibweise für `f '' univ`.\n"
+"Um damit zu arbeiten, ist `mem_range` ganz nützlich:\n"
+"```\n"
+"x ∈ range f ↔ ∃ a, f a = b\n"
+"```"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -93,21 +101,21 @@ msgstr ""
 
 #: Game.Doc.Definition
 msgid "Für eine Abbildung `f : A → B` und eine Teilmenge `S` von `A` ist\n"
-"    ```\n"
-"    f '' S = {f a | a ∈ S}\n"
-"           = {b | ∃ a ∈ S, f a = b}\n"
-"    ```\n"
-"    ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`."
+"```\n"
+"f '' S = {f a | a ∈ S}\n"
+"       = {b | ∃ a ∈ S, f a = b}\n"
+"```\n"
+"ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`."
 msgstr ""
 
 #: Game.Doc.Definition
 msgid ", und für eine Teilmenge `T` von `B` ist\n"
-"    ```\n"
-"    f ⁻¹' T = { a | f a ∈ T}\n"
-"    ```\n"
-"    ihr Urbild unter `f`.\n"
-"    Du schreibst das als `f \\\\-1'`.\n"
-"    Beachte das Leerzeichen zwischen `f` und `\\\\-1'`."
+"```\n"
+"f ⁻¹' T = { a | f a ∈ T}\n"
+"```\n"
+"ihr Urbild unter `f`.\n"
+"Du schreibst das als `f \\\\-1'`.\n"
+"Beachte das Leerzeichen zwischen `f` und `\\\\-1'`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -203,7 +211,7 @@ msgid "Genau-dann-wenn (if-and-only-if). Can meistens mit `constructor` oder `ob
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Ungleichheit `x ≠ y` ist definiert als `x = y → False`."
+msgid "Ungleichheit `x ≠ y` ist definiert als `¬ x = y`.  Du siehst das mit `unfold Ne`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -1560,7 +1568,7 @@ msgid "Der letzte Untertan tritt vor. Ihr Anliegen ist etwas komplizierter als d
 msgstr ""
 
 #: Game.Levels.Logo.L14_Summary
-msgid "**Robo**: Ich würd zuerst die Annahme «{h}» mit `obtain ⟨⟩ := «{h}» aufteilen."
+msgid "**Robo**: Ich würd zuerst die Annahme «{h}» mit `obtain ⟨⟩ := «{h}»` aufteilen."
 msgstr ""
 
 #: Game.Levels.Logo.L14_Summary
@@ -1836,7 +1844,7 @@ msgid "**Operationsleiter**: Okay, das leuchtet mir ein.\n"
 "\n"
 "**Du**: Also `h.mp` ist `A → B`? Wieso `mp`?\n"
 "\n"
-"**Robo**: `mp` steht für Modus Ponens`. Der Modus ponens ist eine schon in der antiken\n"
+"**Robo**: `mp` steht für Modus Ponens. Der Modus ponens ist eine schon in der antiken\n"
 "Logik geläufige Schlussfigur, die in vielen logischen Systemen … Ach nee, das wolltest\n"
 "du ja nicht hören. Das \"r\" in `mpr` steht für \"reverse\", weil's die Rückrichtung ist."
 msgstr ""
@@ -1902,7 +1910,7 @@ msgstr ""
 #: Game.Levels.Implis.L09_Trans
 msgid "**Du**: Irgendwie fühlen sich diese `rw` an, als würde man von hinten durch den Bauch argumentieren.  Geht das nicht auch irgendwie geradeaus, oder denken alle hier um die Ecke?\n"
 "\n"
-"**Robo**:  Vielleicht würde dir `trans' besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  $B \\iff A \\iff D \\iff C$ Schritt für Schritt abarbeiten: als erstes führst Du mit `trans A` den Zwischenschritt `B \\iff A` ein, dann mit `trans D` den nächsten Zwischenschritt."
+"**Robo**:  Vielleicht würde dir `trans` besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  $B \\iff A \\iff D \\iff C$ Schritt für Schritt abarbeiten: als erstes führst Du mit `trans A` den Zwischenschritt `B \\iff A` ein, dann mit `trans D` den nächsten Zwischenschritt."
 msgstr ""
 
 #: Game.Levels.Implis.L09_Trans
@@ -3082,7 +3090,7 @@ msgid "**Robo** (*flüsternd*): Wenn du ein bisschen schwere Maschinerie auffahr
 "\n"
 "**Du** (*flüsternd*): Wer will hier wen beeindrucken?\n"
 "\n"
-"**Robo** (*laut und selbstsicher*): Wir fangen mit `obtain ⟨⟩ := n an!"
+"**Robo** (*laut und selbstsicher*): Wir fangen mit `obtain ⟨⟩ := n` an!"
 msgstr ""
 
 #: Game.Levels.Luna.L02_Pos
@@ -3592,10 +3600,6 @@ msgstr ""
 
 #: Game.Levels.Cantor.L00_CantorPowerset
 msgid ""
-msgstr ""
-
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
 msgstr ""
 
 #: Game.Levels.Cantor.L00_CantorPowerset
@@ -4330,11 +4334,11 @@ msgid "**Robo*: Wie weit bist du jetzt?\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "**Du**: Summe gleich Summe, `congr`-`ext` macht da der Dumme."
+msgid "**Robo**: Summe gleich Summe … das gehst du mit `apply congr_arg`, `ext` an."
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "**Robo**: Vielleicht gleich nocheinmal?"
+msgid "**Du**: Vielleicht gleich nocheinmal?"
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
@@ -4553,7 +4557,7 @@ msgid "**Robo**: Den Fall `n = 0` sehe ich sofort!\n"
 "\n"
 "**Du**: Wirklich?\n"
 "\n"
-"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n.\n"
+"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n`.\n"
 "\n"
 "**Du**: Nicht `induction n`?\n"
 "\n"
@@ -5342,7 +5346,7 @@ msgid "Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter.
 msgstr ""
 
 #: Game.Levels.Vieta.L08_CongrArg
-msgid "**Robo**: Oh, das ist ein Fall für `congr_arg`.  Wenn du schon weiß, dass `x = y, erhälst du\n"
+msgid "**Robo**: Oh, das ist ein Fall für `congr_arg`.  Wenn du schon weiß, dass `x = y`, erhälst du\n"
 "`f x = f y` mit `apply congr_arg`."
 msgstr ""
 
@@ -5510,7 +5514,7 @@ msgid "A function `g : B → A` is a left inverse of a function `f : A → B` if
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
-msgid "**Du**: Ich vermute mal, dass soll heißen, `g` ist genau dann ein Rechtsinverses of `f, wenn `f` ein Linksinverses von `g` ist.\n"
+msgid "**Du**: Ich vermute mal, dass soll heißen, `g` ist genau dann ein Rechtsinverses of `f`, wenn `f` ein Linksinverses von `g` ist.\n"
 "\n"
 "**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von `Function.RightInverse`.  Und dummerweise muss man tatsächlich `Function.RightInverse` statt schlicht `RightInverse` schreiben, weil `RightInverse` in Leansch mehrdeutig ist."
 msgstr ""
@@ -5570,7 +5574,7 @@ msgid "**Du**:  Das riecht irgendwie nach Auswahlaxiom.\n"
 "\n"
 "**Robo**:  Bingo.  Erinnerst du nicht noch an `choose`?\n"
 "Hier kommt `choose` so richtig in sein Element.\n"
-"Probier mal `choose g hg using nonempty_fibre."
+"Probier mal `choose g hg using nonempty_fibre`."
 msgstr ""
 
 #: Game.Levels.Epo.L07_SurjectiveRightInverse
@@ -6145,7 +6149,7 @@ msgid "**Arapuka**:  Auch schön.\n"
 "  **Arapuka**:  Nein.  Das ist eine Aufgabe für Generationen.\n"
 "  Die ersten Musterelement hat mein Urururur…opa geprägt.\n"
 "  Ich weiß gar nicht genau, wie viele Generationen ich zurückgehen muss.\n"
-"  Und erst recht nicht, woher das Muster kam."
+"  Und erst recht nicht, woher das Urmuster kam."
 msgstr ""
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
@@ -6154,6 +6158,10 @@ msgstr ""
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
 msgid "**Arapuka**:  Könnt ihr mir vielleicht hiermit auch noch helfen?"
+msgstr ""
+
+#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
+msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
@@ -6209,24 +6217,24 @@ msgid "**Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann leer, w
 "Um das anzuwenden, musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit `unfold Ne`."
 msgstr ""
 
+#: Game.Levels.Samarkand.L06_PreimageNonempty
+msgid "**Arapuka**: Ihr habt recht.  Da hätte ich selbst drauf kommen können."
+msgstr ""
+
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
 msgid ""
 msgstr ""
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "The image of a set `S : Set A` along a  function `f : A → B` is the set of all elements\n"
-"`b : B` that are the image of some element `a : A` in `S`. We denote it by `f '' S` and\n"
-"define it as below.\n"
-"```\n"
-"f '' S = {b : B | ∃ a : A, a ∈ S ∧ f a = b}\n"
-"```\n"
-"\n"
-"Note that an element of the image is a triple `⟨b, a, h⟩` where `b` is the image of `a` and `h`\n"
-"is the proof that `a` is in `S` and `f a = b`.\n"
-"\n"
-"The image of function with a left\n"
-"inverse is a subset of the preimage of the inverse of\n"
-"the same subset."
+msgid "**Arapuka**:  Jetzt habe ich aber noch ein wirklich schwierige Aufgabe."
+msgstr ""
+
+#: Game.Levels.Samarkand.L07_LeftInvPreimage
+msgid "**Du**:  Mal überlegen …∪"
+msgstr ""
+
+#: Game.Levels.Samarkand.L07_LeftInvPreimage
+msgid "**Arapuka**:  Wow! Ihr seid wirklich großartig."
 msgstr ""
 
 #: Game.Levels.Samarkand.L08_Preimage_Injective
@@ -6279,6 +6287,7 @@ msgid "In der Ferne taucht ein sehr bunter Planet auf.\n"
 "Aber es gibt auch ein paar unverzierte Areale, ganz weiß.\n"
 "Ihr landet in einem dieser weißen Flecken.\n"
 "\n"
+"\n"
 "**Du**:  Huhu, ist hier jemand?\n"
 "\n"
 "Die Planetenoberfläche gleicht einer perfekten Sphäre. Ihr seht in alle Richtungen Horizont.\n"
@@ -6290,13 +6299,14 @@ msgid "In der Ferne taucht ein sehr bunter Planet auf.\n"
 "die nahe der Musterkante auf farbigem Grund liegt.\n"
 "Vorsichtig betretet ihr die gemusterte Fläche.  Die Farbe scheint trocken zu sein.\n"
 "\n"
-"**Arapuka**: Hallo ihr beiden, kommet ruhig näher!  Schön, dass ich auch einmal Besuch bekomme.\n"
+"**Arapuka**: Hallo ihr beiden, kommt ruhig näher!  Schön, dass ich auch einmal Besuch bekomme.\n"
 "\n"
 "**Du**:  Was machst du denn hier, so ganz allein?\n"
 "\n"
 "**Arapuka**:  Ich arbeitet an einem großen Kunstwerk.\n"
 "Ich liege hier solange, bis mein Bauchpanzer das Bodenmuster angenommen hat.\n"
-"Dann laufe ich hinüber zu der Stelle wo dieses Stück Muster noch fehlt und lege mich dort so lange nieder, bis ich das Muster auf den weiße Planetenoberfläche transferiert habe.  Das dauert.  Ich kann also Gesellschaft gut gebrauchen.\n"
+"Dann laufe ich hinüber zu der Stelle, wo dieses Stück Muster noch fehlt, und lege mich dort so lange nieder, bis ich das Muster auf die weiße Planetenoberfläche transferiert habe.\n"
+"Das dauert.  Ich kann also Gesellschaft gut gebrauchen.\n"
 "\n"
 "**Du**: Na prima."
 msgstr ""
@@ -6310,7 +6320,7 @@ msgid "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 msgstr ""
 
 #: Game.Levels.Iso.L01_Bijective
-msgid "**Robo** *(flüsternd)*: `Bijectve f` ist als `Injective f ∧ Surjective f` definiert.\n"
+msgid "**Robo** *(flüsternd)*: `Bijective f` ist als `Injective f ∧ Surjective f` definiert.\n"
 "\n"
 "**Du**: Dann ist das ja ganz simpel!"
 msgstr ""
@@ -6427,11 +6437,11 @@ msgid "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n"
 "Ihr düst ein paar Mal hin und her."
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid "Eine beliebige Menge von natürlichen Zahlen ist `A : Set ℕ`, oder wenn man diese\n"
 "explizit definiert `{1, 6, 4} : Set ℕ`\n"
 "\n"
@@ -6439,29 +6449,29 @@ msgid "Eine beliebige Menge von natürlichen Zahlen ist `A : Set ℕ`, oder wenn
 "reduzieren, damit wir sie mit `tauto` lösen können."
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid "Diese Aussage läst sich intern auf\n"
 "`1 = 1 ∨ 1 = 6 ∨ 1 = 4` reduzieren, deshalb kann `tauto` direkt beweisen,\n"
 "dass etwas in einer konkreten Menge liegt."
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L01
+#: Game.Levels.Piazza.L01
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid "Bei Gleichheit von Mengen kann durch ein Standardschema aus 3\n"
 "Schritten bewiesen werden.\n"
 "\n"
@@ -6469,12 +6479,12 @@ msgid "Bei Gleichheit von Mengen kann durch ein Standardschema aus 3\n"
 "Vereinigung `∪`."
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid "Die Taktik `ext x` zeigt eine Mengengleichheit `A = B`\n"
 "durch `x ∈ A ↔ x ∈ B`."
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid "Als zweiter Schritt kann `simp` verwendet werden, um die Definition\n"
 "von `∈ …` einzusetzen.\n"
 "\n"
@@ -6484,65 +6494,65 @@ msgid "Als zweiter Schritt kann `simp` verwendet werden, um die Definition\n"
 "deren Namen müssen wir aber nich lernen"
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid "Jetzt haben wir die Mengengleichung auf Logik\n"
 "zurückgeführt und als dritter Schritt kann `tauto` den Rest übernehmen."
 msgstr ""
 
-#: Game.Levels.SetTheory.L02
+#: Game.Levels.Piazza.L02
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid "Teilmengen `A ⊆ B` sind ebenfalls nur Logik."
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid "Zum besseren Verständnis kannst du mal `simp [subset_def] at *`\n"
 "eingeben um zu sehen, wie `⊆` definiert ist."
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid "Wie du siehst ist die Definition von `«{A}» ⊆ «{B}»` durch `∀ x ∈ «{A}», x ∈ «{B}»`\n"
 "definiert, was kurz für `∀ x : ℕ, x ∈ «{A}» → x ∈ «{B}»` ist,\n"
 "weshalb `tauto` diese Logik-Aussagen auch verwenden kann."
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L03
+#: Game.Levels.Piazza.L03
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L04
+#: Game.Levels.Piazza.L04
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L04
+#: Game.Levels.Piazza.L04
 msgid "Da `A ⊆ B` als `∀ x : ℕ, x ∈ A → x ∈ B` definiert ist,\n"
 "kannst du auch `intro x` brauchen."
 msgstr ""
 
-#: Game.Levels.SetTheory.L04
+#: Game.Levels.Piazza.L04
 msgid "Jetzt zuerst mal nach unserem Schema `simp` benützen,\n"
 "um die Aussage auf Logik zu reduzieren."
 msgstr ""
 
-#: Game.Levels.SetTheory.L04
+#: Game.Levels.Piazza.L04
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid "Am Anfang hatten wir gesehen, dass man Mengengleichheit durch\n"
 "`ext x` angehen kann.\n"
 "\n"
@@ -6559,46 +6569,46 @@ msgid "Am Anfang hatten wir gesehen, dass man Mengengleichheit durch\n"
 "welches wir hier beweisen."
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid "Ersetz mal `«{A}»` durch `«{B}»`."
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid "Diesen Teil würde ich trotzdem mit unserem Schema zeigen,\n"
 "also `ext x` zuerst…"
 msgstr ""
 
-#: Game.Levels.SetTheory.L05
+#: Game.Levels.Piazza.L05
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L06
+#: Game.Levels.Piazza.L06
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L06
+#: Game.Levels.Piazza.L06
 msgid "Die leere Menge wird als `(∅ : Set A)` geschrieben.\n"
 "\n"
 "Hier ein nützliches Lemma."
 msgstr ""
 
-#: Game.Levels.SetTheory.L06
+#: Game.Levels.Piazza.L06
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L06
+#: Game.Levels.Piazza.L06
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L07
+#: Game.Levels.Piazza.L07
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L07
+#: Game.Levels.Piazza.L07
 msgid "Auf der anderen Seite ist `(univ : Set ℕ)` die gesamte Teilmenge\n"
 "aller Elemente aus `ℕ`.\n"
 "\n"
@@ -6608,111 +6618,111 @@ msgid "Auf der anderen Seite ist `(univ : Set ℕ)` die gesamte Teilmenge\n"
 "wenn sie informell das gleiche Beschreiben."
 msgstr ""
 
-#: Game.Levels.SetTheory.L07
+#: Game.Levels.Piazza.L07
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L07
+#: Game.Levels.Piazza.L07
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid "So, jetzt sind wir richtig beim Üben angekommen.\n"
 "\n"
 "Ah und `A \\ B` ist die Differenz von Mengen, das ist aber nicht\n"
 "so wichtig für das Lösen der Aufgabe."
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid "Als erster Schritt, die Mengengleichung, wird mit `ext` angegangen."
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid "Als zweiter Schritt, sobald man `∈ _` hat, macht `simp` weiter."
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid "Als letzter Schritt, für eine Logik-Aussage,\n"
 "wird mit `tauto` geschlossen."
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L08
+#: Game.Levels.Piazza.L08
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L09
+#: Game.Levels.Piazza.L09
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L09
+#: Game.Levels.Piazza.L09
 msgid "Das Komplement einer Menge ist `Aᶜ`, was das gleiche ist wie `(univ : Set ℕ) \\ A`.\n"
 "\n"
 "Aber auch hier: üb das Schema."
 msgstr ""
 
-#: Game.Levels.SetTheory.L09
+#: Game.Levels.Piazza.L09
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L09
+#: Game.Levels.Piazza.L09
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid "Eine wichtige Konstruktion ist noch eine Menge mit Nebenbedingungen:\n"
 "\n"
 "\"alle natürlichen Zahlen die ungerade sind\"."
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid "Aber auch hier, `∈ _` gehst du erst einmal mit `simp` an."
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid "Wir hatten bereits einmal wie man aussagen über konkrete Zahlen löst"
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid "das war `decide`."
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L10
+#: Game.Levels.Piazza.L10
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L11
+#: Game.Levels.Piazza.L11
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory.L11
+#: Game.Levels.Piazza.L11
 msgid "Viel Spass!"
 msgstr ""
 
-#: Game.Levels.SetTheory.L11
+#: Game.Levels.Piazza.L11
 msgid ""
 msgstr ""
 
-#: Game.Levels.SetTheory
-msgid "Mengea"
+#: Game.Levels.Piazza
+msgid "Piazza"
 msgstr ""
 
-#: Game.Levels.SetTheory
+#: Game.Levels.Piazza
 msgid ""
 msgstr ""
 

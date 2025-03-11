@@ -39,8 +39,8 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
   rw [Subset.antisymm_iff]
   constructor
   · intro x hx
-    obtain ⟨⟩ := hx
-    rw [← h_1]
+    obtain ⟨a, ha⟩ := hx
+    rw [← ha]
     unfold fixedPoints
     unfold IsFixedPt
     simp --or rw [mem_setOf]
