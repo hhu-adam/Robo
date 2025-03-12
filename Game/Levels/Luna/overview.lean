@@ -77,7 +77,7 @@ example (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n 
   · linarith
 
 /- Luna 03d:
-   Icc   (already briefly introduced in Piazza)
+   Icc
    Finset.insert_Icc_eq_Icc_add_one_right  (needed in BABYLON)  -/
 namespace Finset
 theorem Robo.Finset.insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
@@ -175,10 +175,9 @@ theorem Robo.Finset.Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) (h₁ : a₁ 
   constructor
   · -- omega -- still fails here
     intro h
-    have h' := h
-    specialize h h₁
-    have : a₁ ≤ a₁ := by rfl
-    specialize h' this
+    apply h at h₁
+    have : a₁ ≤ a₁ := by rfl  -- hopefully, `have` has been introduced (supposed to be introduced in Spinoza, so Luna will now depend on Spinoza)
+    apply h at this
     omega
   · omega
 end Finset

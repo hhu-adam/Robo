@@ -2,6 +2,8 @@ import Mathlib
 
 /-
 Story am Ende:  Kinder klauen bunte Dinger aus den Körben, dann legen sie sie wieder zurück.
+
+Icc *not* anymore used here in Piazza, as Luna will depend on Piazza.
 -/
 
 /- Piazza L01 -/
@@ -121,17 +123,16 @@ theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Finset α} : A = B ↔ A
 end Finset
 -/
 
-
 /- Piazza L11* -/
-example : {2, 7} ⊆ {2} ∪ Icc 0 10 ∩ { n : ℕ | Odd n} := by
+example : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   intro x
   intro h
   simp at *
   obtain h | h := h
-  · tauto
-  · simp [h]
+  · tauto -- or  left, assumption
+  · right
+    rw [h]
     decide
-
 
 /- Piazza L06:  Set.empty; not needed anymore; DELETE -/
 /-
