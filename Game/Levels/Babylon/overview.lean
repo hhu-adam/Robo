@@ -69,7 +69,6 @@ example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ
    Problems:
    - { i ∈ I | Even i} is rendered in a strange way
    - last step is a bit unexpected, see Note at the end, but is prepared above
-   - norm_num needs to be introduced earlier, probably in Quantus
 -/
 
 example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i ∈ I | Even i} := by
@@ -80,23 +79,17 @@ example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i �
     · simp
       intro i h hI
       apply hI at h
-      obtain ⟨k , hk⟩ := h
-      rw [hk]
-      norm_num  -- new tactic; simp fails here!
-      /- have : (-1)^i + 1 = (-1)^(2*k) * (-1) + 1 := by
-        rw [hk]
-        ring
-      rw [this]
-      simp
-      -/
+      rw [Odd.neg_pow]
+      ring
+      assumption
   · trans ∑ i ∈ { i ∈ I | Even i}, (2 : ℤ)
     have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by
       intro i hi
       simp at hi
       obtain ⟨hI, heven⟩ := hi
-      obtain ⟨k, hk⟩ := heven
-      rw [hk]
-      simp -- or norm_num
+      rw [Even.neg_pow]
+      ring
+      assumption
     apply sum_congr   -- introduced in new exercise above
     · simp
     · assumption

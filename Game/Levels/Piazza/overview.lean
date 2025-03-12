@@ -1,71 +1,104 @@
 import Mathlib
 
-
-/- TODO
-   A: introduce  Finset.Icc_subset_Icc_iff,
-      needed for BABYLON exercise introucing sub_subset;
-      see L03a
-
-   B: another preparation for BABYLON, sub_sumset exercise;
-      see L08a
-
-   C: Set.insert, Set.erase & lemma Set.insert_erase
-      TODO!
+/-
+Story am Ende:  Kinder klauen bunte Dinger aus den Körben, dann legen sie sie wieder zurück.
 -/
 
-open Set Finset
 /- Piazza L01 -/
-example : 1 ∈ ({1, 6, 4} : Set ℕ) := by
+namespace Set
+example : 3/2  ∈ ({3/2, 16/9, 4/7} : Set ℚ) := by
   tauto
-
+end Set
+/-
+namespace Finset
 example : 1 ∈ ({1, 6, 4} : Finset ℕ) := by
   tauto
+end Finset
+-/
+
+/- Piazza L10 -/
+example : 9 ∈ {n : ℕ | Odd n} := by
+  simp
+  decide
 
 /- Piazza L02 -/
-example (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
+namespace Set
+example {T : Type} (A B C : Set T) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
   simp -- simp only [mem_inter_iff, mem_union]
   tauto
-
+end Set
+/-
+namespace Finset
 example (A B C : Finset ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
   simp -- simp only [mem_inter_iff, mem_union]
   tauto
+end Finset
+-/
+
+/- Piazza L08: univ -/
+namespace Set
+example {T : Type} (A B : Set T) :
+  univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
+  ext i
+  simp
+  tauto
+end Set
+
+/- Piazza L07a -/
+namespace Set
+example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
+  ext
+  simp
+
+/- Piazza L07b -/
+example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
+  ext n
+  simp
+  by_cases h : Even n
+  · left
+    assumption
+  · right
+    assumption
+
 
 /- Piazza L03 -/
+/-
 example {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   simp [Set.subset_def] at *
   tauto
+-/
+-- direct solution seems better:
+namespace Set
+example {T : Type} {A B C : Set T} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  intro a ha
+  apply h₁ at ha
+  apply h₂ at ha
+  assumption
+end Set
+/-
+namespace Finset
+example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  intro a ha
+  apply h₁ at ha
+  apply h₂ at ha
+  assumption
+end Finset
+-/
 
-/- Piazza L03a NEW: Icc, Icc_subset_Icc_iff
-   This is about Finsets, so does not quite belong here.
-   But this is the version needed in BABYLON,
-   and it's much easier to solve because omega is more powerful than linarith -/
-theorem Robo.Finset.Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) (h₁ : a₁ ≤ b₁) :
-  Finset.Icc a₁ b₁ ⊆ Finset.Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ ≤ b₂ := by
-  -- unfold Icc -- optional
-  simp [Finset.subset_iff]
-  -- omega -- still fails here
-  constructor
-  · -- omega -- still fails here
-    intro h
-    have h' := h
-    specialize h h₁
-    have : a₁ ≤ a₁ := by rfl
-    specialize h' this
-    omega
-  · omega
-
-/- Piazza L04 -/
+/- Piazza L04: DELETE  -/
+/-
 example : ({2, 7} : Set ℕ) ⊆ {2, 3, 7, 9} := by
   -- ! can also be solved directly with simp !
   -- TODO: Better exercise about `intro`     ?
   intro x
   simp
   tauto
+-/
 
-
-/- Piazza L05 -/
+/- Piazza L05: used in CANTOR -/
+namespace Set
 theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by
   constructor
   · intro h
@@ -74,8 +107,34 @@ theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A �
   · intro h
     ext i
     tauto
+end Set
+/-
+namespace Finset
+theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Finset α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by
+  constructor
+  · intro h
+    rw [h]
+    tauto
+  · intro h
+    ext i
+    tauto
+end Finset
+-/
 
-/- Piazza L06 -/
+
+/- Piazza L11* -/
+example : {2, 7} ⊆ {2} ∪ Icc 0 10 ∩ { n : ℕ | Odd n} := by
+  intro x
+  intro h
+  simp at *
+  obtain h | h := h
+  · tauto
+  · simp [h]
+    decide
+
+
+/- Piazza L06:  Set.empty; not needed anymore; DELETE -/
+/-
 theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
     s = ∅ ↔ ∀ x, x ∉ s := by
   constructor
@@ -85,68 +144,72 @@ theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
   · intro h
     ext i
     tauto
+-/
 
-/- Piazza L07:  sehr künstliche Aufgabe, um Set.univ einzuführen -/
+/- Piazza L07:  sehr künstliche Aufgabe, um Set.univ einzuführen; DELETE -/
+/-
+namespace Set
 example (h : (univ : Set ℕ) ⊆ ∅) : (univ : Set ℕ) = ∅ := by
   tauto
+end Set
 
-/- Piazza L08: könnte schon nach L02 kommen; vielleicht ganz überflüssig -/
-example (A B : Set ℕ) :
-  univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
-  ext i
-  simp
+namespace Finset
+example (n : ℕ) (h : (univ : Finset (Fin n)) ⊆ ∅) : (univ : Finset (Fin n)) = ∅ := by
+  ext -- only needed in this version
   tauto
+end Finset
+-/
 
-/- L08a NEW:  Preparation for exercise in BABYLON
-   Again, this is for Finset,
-   but again this makes it significantly simpler, and is all that is needed later.
-   -/
-example (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by
-  intro h
-  simp at h
-  omega
 
--- variation, still in ℕ:
--- more natural statement but less revelant for BABYLON
-example (l m n : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by
-  simp [subset_def]
-  omega
-
--- variation, now in ℝ
--- most natural statement, but much more difficult, and not at all revelant for BABYLON
-example (l m n : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by
-  simp [subset_def]
-  intro x hlx hxn h
-  rw [imp_iff_or_not] at h
-  obtain hx | hx := h
-  · linarith
-  · -- linarith (config := {splitNe := true, splitHypotheses := true}) -- fails here!
-    constructor
-    · linarith
-    · linarith
-
-/- NEW -/
-example (A : Set ℕ) (a : ℕ) : Finset.erase a A = A \ {a} := by
-      simp
-
-/- Piazza L09: könnte schon nach L02 kommen; vielleicht ganz überflüssig -/
+/- Piazza L09: DELETE -/
+/-
+namespace Set
 example (A B C : Set ℕ) :
     (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
   ext i
   simp
   tauto
+end Set
+-/
 
-/- Piazza L10 -/
-example : 9 ∈ {n : ℕ | Odd n} := by
+
+/- Piazza N01 -/
+namespace Finset
+example (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
+  ext
   simp
-  decide
+  tauto
 
-/- Piazza L11 -/
-example : {2, 7} ⊆ {n : ℕ | n = 2 ∨ (n ≤ 10 ∧ Odd n)} := by
-  intro x
-  intro h
-  simp at *
-  obtain h | h := h
-  · tauto
-  · simp [h]
-    decide
+/- Piazza N02 -/
+example (A : Finset ℕ) (a : ℕ) : insert a A = A ∪ {a} := by
+  ext
+  simp
+  tauto
+
+/- Piazza N03 -/
+theorem Robo.Finset.insert_erase {A : Type} [DecidableEq A] {s : Finset A} {a : A} (h : a ∈ s) :
+  insert a (Finset.erase s a) = s := by
+  ext b
+  simp
+  --
+  by_cases heq : b = a
+  · rw [heq]
+    tauto
+  · simp [heq]
+  /-
+  constructor
+  · intro h
+    obtain h₁ | ⟨ h₂, h₃ ⟩ := h
+    rw [← h₁] at h
+    assumption
+    assumption
+  · intro hb
+    by_cases heq: b = a
+    left
+    assumption
+    right
+    constructor
+    assumption
+    assumption
+  -/
+end Finset

@@ -1,31 +1,47 @@
 
 
-| lemma / Def                     |     | required by | draft?                     | confirmed?                   | source |
-|---------------------------------+-----+-------------+----------------------------+------------------------------+--------|
-| +Set.mem_inter_iff+             |     | SetTheory   |                            | see L02, not needed          | log    |
-| +Set.mem_union+                 |     | SetTheory   |                            | see L02, not  needed         | log    |
-| +Set.mem_setOf+                 |     | Cantor      |                            | not needed, replaced by simp | log    |
-| +Set.mem_singleton_iff+         |     | Cantor      |                            | not needed, replaced by simp | log    |
-| (Finset.univ)                   |     | Robotswana  |                            | analogous to Set.univ        | log    |
-| Finset                          |     | Euklid      | TODO: Euklid               |                              | Euklid |
-| Set.Finite                      |     | Euklid      | TODO: Euklid               |                              | Euklid |
-| Set.Finite.toFinset             |     | Euklid      | TODO: Euklid               |                              | Euklid |
-|                                 |     |             |                            |                              |        |
-| Finset.sum_subset               |     | Robotswana  | *Babylon*                  |                              | log    |
-|                                 |     |             |                            |                              |        |
-| Finset.erase                    |     | Euklid      | TODO: Piazza               | No set version!              | Euklid |
-| Finset.insert                   |     | Euklid      | TODO: Piazza               | Exists set version           | Euklid |
-| Finset.insert_erase             |     | Euklid      | TODO: Piazza               | No set version!              | Euklid |
-|                                 |     |             |                            |                              |        |
-| insert_Icc_eq_Icc_add_one_right |     |             | *could be left to Babylon* |                              |        |
-| Icc_subset_Icc_iff              |     |             | *Piazza*                   |                              |        |
-|                                 |     |             |                            |                              |        |
-| *subset_def*                    | L03 | (content)   |                            |                              |        |
-| *Subset.antisymm_iff*           | L05 | ! content ! |                            |                              |        |
-| *eq_empty_iff_forall_not_mem*   | L07 |             |                            |                              |        |
-| *Set.empty*                     | L06 |             |                            |                              |        |
-| *Set.univ*                      | L07 |             |                            |                              |        |
-| *SDiff* A\\B                    | L08 | ??          |                            |                              |        |
-| *Set.complement*                | L09 | ??          |                            |                              |        |
-| *{ … // … }*                    | L10 | ! content ! |                            |                              |        |
+| lemma / Def                           | Set            | Finset         | required by                | confirmed?                   |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| +Set.mem_inter_iff+                   |                |                | SetTheory                  | see L02, not needed          |
+| +Set.mem_union+                       |                |                | SetTheory                  | see L02, not needed          |
+| +Set.mem_setOf+                       |                |                | Cantor                     | not needed, replaced by simp |
+| +Set.mem_singleton_iff+               |                |                | Cantor                     | not needed, replaced by simp |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| Fin n                                 | --             | !!             | Robotswana                 |                              |
+| (Finset.univ)                         | --             | !!             | Robotswana                 | analogous to Set.univ        |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| Set.Finite                            | *TODO: Euklid* | --             | Euklid                     |                              |
+| Set.Finite.toFinset                   | *TODO: Euklid* | --             | Euklid                     |                              |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| Finset.sum_subset                     | --             | Babylon        | Robotswana                 |                              |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| Icc_subset_Icc_iff                    | (hard)         | Luna           | Babylon                    |                              |
+| insert_Icc_eq_Icc_add_one_right       | --             | Luna           | Babylon                    |                              |
+| n < 3 --> n = 0 or 1 or 2             | --             | Luna           | Babylon                    |                              |
+|---------------------------------------+----------------+----------------+----------------------------+------------------------------|
+| ∈                                     | L01            | =              |                            |                              |
+| ∈, { … // … }                         | L10            | ~              |                            |                              |
+| union, intersection, univ, SDiff; ext | L02, L08       | =              |                            |                              |
+| empty                                 | L07a +L06+     | =              |                            |                              |
+|                                       | L07b L08 +L07+ | =              |                            |                              |
+| subset; intro                         | L03 +L04+      | =              |                            |                              |
+| Subset.antisymm_iff                   | L05            | =              | content + Cantor (for Set) |                              |
+| subset; intro, Icc                    | L11            | =              |                            |                              |
+|                                       |                |                |                            |                              |
+| Finset, Finset.erase                  | --             | N01            | Euklid                     | !                            |
+| Finset.insert                         | =              | N02            | Euklid                     |                              |
+| Finset.insert_erase                   | --             | N03            | Euklid                     |                              |
+|                                       |                |                |                            |                              |
+| +complement+                          | +L09+          |                |                            |                              |
+| +subset_def / subset_iff+             | +L03+          |                |                            |                              |
+| +eq_empty_iff_forall_not_mem+         | +L06+          |                | [no longer needed]         |                              |
+
+
+Note:  revised Luna will depend on Piazza.
+      
+Babylon will depend on Piazza (for ∈).
+Babylon already depends on Luna.
+So it’s not a big deal if Luna will also depend on Piazza.
+And in any case, would make sense that "basic" Set Theory comes quite early.
+
 

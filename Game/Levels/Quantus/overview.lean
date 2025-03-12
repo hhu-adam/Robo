@@ -3,15 +3,15 @@ import Mathlib
 
 /- Revision:  add some lemmas and exercises preparing the Boss level of BABYLON
    A: basic ring lemmas, see L02a, L02b, L02c and L03b  (+4)
-   B: norm_num & odd/even powers, see L09a and L09b     (+2)
-   C: delete a few levels that become unnecessary       (-2)
+   B: Even.neg_pow & Odd.neg_pow, see L09a and L09b     (+2)
+   C: delete a few levels that become unnecessary       (-4)
 
-   :(  This will take total number of levels up to 16!
+   :(  This will take total number of levels up to 14!
 
    PLAN:  Create new Ring planet, using picture of Orange planet (Saturn)
           and move 5 levels introducing ring & rw to that other planet!
 
-   :)  Then Quantus will be done to 11 level again.
+   :)  Then Quantus will be down to 9 levels, which seems much better.
 -/
 
 
@@ -79,31 +79,70 @@ theorem Robo.Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by  -- CHE
   rw [hs]
   ring
 
-/- Quantus L09: Odd; repeat choose & use -/
+/- Quantus L09: Odd; repeat choose & use -- NOW SUPERFLUOUS  -/
 example (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
   choose r hr using h
   use 2 * (r + r ^ 2)
   rw [hr]
   ring
 
-/- Quantus L09b: norm_num -- needed in BABYLON  -/
-example (i : ℕ) (h : Odd i): (-1 : ℤ)^i = -1 := by
+/- Quantus: norm_num -- was needed in BABYLON; now DECIDED AGAINST -/
+/- example (i : ℕ) (h : Odd i): (-1 : ℤ)^i = -1 := by
   -- omega -- fails
   obtain ⟨r , hr⟩ := h
   rw [hr]
   -- simp -- fails (though would work with Even in place of Odd)
   -- omega -- fails
   norm_num
+-/
 
-/- Quantus L09c: second execrise with norm_num;
-   ideally, would like to see an application of norm_num that's a bit different -/
-example (k : ℕ) (z : ℤ) (hk: Odd k) : (-z)^k = -z^k := by
+/- Quantus: second execrise with norm_num; now DECIDED AGAINST -/
+/- ideally, would like to see an application of norm_num that's a bit different -/
+/-example (k : ℕ) (z : ℤ) (hk: Odd k) : (-z)^k = -z^k := by
   have : (-z)^k = (-1)^k*z^k := by ring
   rw [this]
   obtain ⟨i, hi⟩ := hk
   rw [hi]
   -- simp -- fails (though would work with Even in place of Odd)
   norm_num
+-/
+
+/- Quantus L09a: Even.neg_pow & Odd.neg_pow  -- needed in BABYLON -/
+-- easy variation 1:
+example (i : ℕ) (h : Odd i): (-1 : ℤ)^i  + 1 = 0 := by
+  rw [Odd.neg_pow]
+  ring
+  assumption
+
+/- variation 2:
+example (i : ℕ) (h : Even i): (-1 : ℤ)^i  + 1 = 2 := by
+  rw [Even.neg_pow]
+  ring
+  assumption
+-/
+
+/- Quantus L09b: odd_iff_not_even -- previously introduced in L12 -/
+example (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
+  by_cases h : Even i
+  · rw [Even.neg_pow]
+    rw [Odd.neg_pow]
+    ring
+    · obtain ⟨r, hr⟩ := h
+      use r
+      rw [hr]
+      ring
+    · assumption
+  · rw [← odd_iff_not_even] at h    -- previously introduced in L12; needs a hint here in any case
+    rw [Odd.neg_pow]
+    rw [Even.neg_pow]
+    ring
+    · obtain ⟨r, hr⟩ := h
+      use r+1
+      rw [hr]
+      ring
+    · assumption
+
+
 
 /- Quantus L10: Forall -/
 example : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
@@ -121,7 +160,7 @@ example {X : Type} (P : X → Prop) :
   push_neg
   rfl
 
-/- Quantus L12 -/
+/- Quantus L12: even_iff_not_odd;  DELETE -/
 example : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   push_neg
   intro n
