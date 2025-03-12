@@ -25,23 +25,30 @@ import Mathlib
 namespace Nat
 alias _root_.Nat.prime_def := prime_def_lt''
 
-example : Prime 67280421310721 := by
-  decide
-
 
 /- Prado L01 -/
 theorem Robo.prime_two : Prime 2 := by
   decide
 
 /- Prado L01b -/
+example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
+  use 11
+  decide
+
+/- Prado L01c -/
 -- story:  It seems like Guino is asking an impossible question,
 --         but Robo immediately realises that existence is trivial
+--
+--example : Prime 67280421310721 := by
+--  decide  -- maximum recursion depth reached
+--
 example : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   apply exists_prime_and_dvd
   simp
 
-/- Prado L02* -/
-theorem Robo.dvd_add {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
+/- Prado L02*; Name not needed! -/
+-- this is `dvd_add`
+example {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   -- unnecessary but illustrative first step that will be useful later:
   rw [dvd_iff_exists_eq_mul_left] at *
   --
@@ -89,11 +96,14 @@ example (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   · linarith
   · assumption
 
-/- Prado L05 -/
-theorem Robo.not_prime_one : ¬ Nat.Prime 1 := by
+/- Prado L05:  DELETE -/
+/-
+  theorem Robo.not_prime_one : ¬ Nat.Prime 1 := by
   decide
+-/
 
-/- Prado L06 -/
+/- Prado L06: not really needed; DELETE -/
+/-
 theorem Robo.prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
     a ∣ b ↔ a = b := by
   constructor
@@ -108,8 +118,9 @@ theorem Robo.prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
     · assumption
   · intro h
     rw [h]
+-/
 
-/- Prado L07 -/
+/- Prado L07*: `Nat.mul_left_cancel_iff` replaced by more general `mul_eqμl_left_iff` -/
 example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   obtain ⟨w, hw⟩ := h
   use w
@@ -118,11 +129,18 @@ example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   · rw [hw]
   · intro y hy
     rw [hw] at hy
+    rw [mul_eq_mul_left_iff] at hy  -- `mul_eq_mul_left_iff` also used in ROBOTSWANA!
+    obtain h | h := hy
+    · assumption
+    · linarith
+    /-
     rw [Nat.mul_left_cancel_iff] at hy -- TODO: _root_.mul_left_cancel_iff takes priority
     · assumption
     · assumption
+    -/
 
 /- Prado L08 -/
+/-
 example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
   simp
@@ -135,6 +153,24 @@ example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
       assumption
     · decide
     · assumption
+-/
+
+/- Prado L08*: alternative solution without `prime_dvd_prime_iff_eq` -/
+example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
+  use 2
+  simp
+  constructor
+  · decide
+  · intro p hp h
+    rw [even_iff_two_dvd] at h
+    rw [prime_def] at hp
+    obtain ⟨h2, hprime ⟩ := hp
+    apply (hprime 2) at h
+    obtain h | h:= h
+    · contradiction
+    · symm
+      assumption
+
 
 
 /- ------------------------------ -/

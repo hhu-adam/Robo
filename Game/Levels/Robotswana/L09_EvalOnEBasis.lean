@@ -50,12 +50,30 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
   Der wesentlich Punkt ist, dass wir ja gesehen hatten, dass `f E i i` und `f E j j` für beliebige `i` und `j` gleich sind.  Also sind sie in der Summe austauschbar.
 
   **Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation mit `({n} + 1)` injektiv ist?
-     Da kann ich ausnahmsweise aushelfen:
-    `apply nat_mul_inj' (n := {n}.succ)`!
-    "
-  apply nat_mul_inj' (n := n.succ)
-    -- TODO: introduce `nat_mul_inj'` earlier.
-    -- TODO: latex code throws errors.
+     Hatten wir dazu nicht mal ein Lemma? Mmm …
+
+  Robo überlegt eine Weile.
+
+  **Robo**:  Ich würds mal so versuchen:
+     ```
+     suffices h : (succ n) * f (E i i) = (succ n : ℝ)*1
+     ```
+  Und dann weiter mit `mul_eq_mul_left_iff`.
+  "
+  -- apply nat_mul_inj' (n := n.succ)
+  -- BEGIN new alternative (cf. Prado)
+  suffices h : (succ n) * f (E i i) = (succ n : ℝ)*1 by
+    rw [mul_eq_mul_left_iff] at h
+    obtain h | h := h
+    · assumption
+    · Hint "
+      **Robo**:  `succ n ≠ 0`? Das kann bestimmt `omega` lösen …
+      … außer, dass hier noch eine Einbettung von ℕ nach ℝ versteckt ist.
+      Vielleicht probierst du erst einmal `rw [cast_eq_zero] at {h}`?
+      "
+      rw [cast_eq_zero] at h
+      omega
+  -- END
   Hint (hidden := true) "
   **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes
   `trans ∑ j : Fin n.succ, f (E i i)`.
@@ -110,19 +128,35 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
         · Hint (hidden := true) "**Robo**: Probier mal `rw [{h₂}]`."
           rw [h₂]
           simp
-  · simp
+  -- · simp -- previously needed for `nat_mul_inj'`
 
 
 
--- TODO: Move!
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+-- TODO: Each of the following theorems should ideally be introduced earlier!
+
+/---/
 TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+
+/---/
 TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
-TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "ℕ"
+
+--  TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "ℕ"
+
+/---/
+TheoremDoc Nat.cast_eq_zero as "cast_eq_zero" in "ℕ"
 
 TheoremTab "Matrix"
-NewTheorem smul_eq_mul LinearMap.map_smul nat_mul_inj'
+NewTheorem smul_eq_mul LinearMap.map_smul Nat.cast_eq_zero
+--nat_mul_inj'
 
+/-
 #check mul_left_cancel_iff
+
+
+example {n : ℕ} (a b : ℝ) (h : (succ n) * a = (succ n) * b) : a = b := by
+  rw [mul_eq_mul_left_iff] at h
+  obtain h | h := h
+  · assumption
+  · rw [cast_eq_zero] at h
+    omega
+-/
