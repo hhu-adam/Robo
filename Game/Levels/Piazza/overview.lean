@@ -39,8 +39,44 @@ example (A B C : Finset ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
 end Finset
 -/
 
+/- Piazza L07a: univ -/
+namespace Set
+example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
+  rw [eq_univ_iff_forall]
+  simp
+  intro x
+  -- from here, there are two alternatives; one is:
+  generalize h : (Even x) = A
+  tauto
+
+example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
+  ext n
+  simp
+  -- here, we are in the same state as with the previous branch;
+  -- alternative way to proceed is:
+  by_cases h : Even n
+  · left
+    assumption
+  · right
+    assumption
+end Set
+
+/- Piazza L07b: empty -/
+namespace Set
+-- first mention `eq_empty_iff_forall_not_mem` as a strategy
+-- to “unfold” definition of emptyset
+example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
+  rw [eq_empty_iff_forall_not_mem]
+  simp
+
+example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
+  ext
+  simp
+
 /- Piazza L08: univ -/
 namespace Set
+-- first mention `eq_univ_iff_forall` as a strategy
+-- to “unfold” definition of `univ`
 example {T : Type} (A B : Set T) :
   univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
   ext i
@@ -48,21 +84,6 @@ example {T : Type} (A B : Set T) :
   tauto
 end Set
 
-/- Piazza L07a -/
-namespace Set
-example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
-  ext
-  simp
-
-/- Piazza L07b -/
-example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
-  ext n
-  simp
-  by_cases h : Even n
-  · left
-    assumption
-  · right
-    assumption
 
 
 /- Piazza L03 -/
@@ -134,8 +155,7 @@ example : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
     rw [h]
     decide
 
-/- Piazza L06:  Set.empty; not needed anymore; DELETE -/
-/-
+/- Piazza L06:  needed in SAMARKAND -/
 theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
     s = ∅ ↔ ∀ x, x ∉ s := by
   constructor
@@ -143,9 +163,19 @@ theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
     rw [h]
     tauto
   · intro h
-    ext i
+    ext a
     tauto
--/
+
+theorem Robo.Set.eq_univ_iff_forall {A : Type} {s : Set A} :
+  s = univ ↔ ∀ (x : A), x ∈ s := by
+  constructor
+  · intro h
+    rw [h]
+    tauto
+  · intro h
+    ext a
+    tauto
+
 
 /- Piazza L07:  sehr künstliche Aufgabe, um Set.univ einzuführen; DELETE -/
 /-

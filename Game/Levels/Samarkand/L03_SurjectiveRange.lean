@@ -35,9 +35,9 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
     simp   -- (rfl fails)
   -/
   Hint (hidden := true)  "**Robo**: Ich würde mal mit `consturctor` anfangen."
-  -- Branch
-  --  symm
-  --  exact eq_univ_iff_forall  -- not currently introduced anywhere (TODO?)
+  Branch
+    symm
+    apply eq_univ_iff_forall  -- will be introduced in PIAZZA (TODO)
   constructor
   · intro hf
     Hint (hidden := true) "

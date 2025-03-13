@@ -25,26 +25,10 @@ import Mathlib
 namespace Nat
 alias _root_.Nat.prime_def := prime_def_lt''
 
-
-/- Prado L01 -/
+/- PART I:  DIVISIBITY (and annoying questions from Guino)-/
+/- Prado L01: teaser -/
 theorem Robo.prime_two : Prime 2 := by
   decide
-
-/- Prado L01b -/
-example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
-  use 11
-  decide
-
-/- Prado L01c -/
--- story:  It seems like Guino is asking an impossible question,
---         but Robo immediately realises that existence is trivial
---
---example : Prime 67280421310721 := by
---  decide  -- maximum recursion depth reached
---
-example : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
-  apply exists_prime_and_dvd
-  simp
 
 /- Prado L02*; Name not needed! -/
 -- this is `dvd_add`
@@ -78,7 +62,12 @@ theorem Robo.even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
     ring
   -/
 
-/- Prado L03b -/
+/- Prado L03a:  annoying question from Guino -/
+example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
+  use 11
+  decide
+
+/- Prado L03b: `not_dvd_of_between_consec_multiples` -/
 theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   by_contra h_dvd
   obtain ⟨a, ha⟩ := h_dvd
@@ -87,7 +76,8 @@ theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k <
   apply Nat.lt_of_mul_lt_mul_left at h2  -- Note: Nat. is necessary here!
   omega
 
-/- Prado L04 -/
+/- PART II: PRIMES -/
+/- Prado L04: `prime_def` -/
 example (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   rw [prime_def] at hp
   obtain ⟨hp₁, hp⟩ := hp
@@ -95,6 +85,26 @@ example (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   obtain hp | hp := hp
   · linarith
   · assumption
+
+/- Prado L04b: `Prime.dvd_mul` -/
+example (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
+  --constructor
+  --intro h
+  --repeat rw [even_iff_two_dvd] at *
+  rw [Prime.dvd_mul]
+  decide
+
+
+/- Prado L04c: annoying question from Guino -/
+-- story:  It seems like Guino is asking an impossible question,
+--         but Robo immediately realises that existence is trivial
+--
+--example : Prime 67280421310721 := by
+--  decide  -- maximum recursion depth reached
+--
+example : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
+  apply exists_prime_and_dvd
+  simp
 
 /- Prado L05:  DELETE -/
 /-
@@ -120,7 +130,9 @@ theorem Robo.prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
     rw [h]
 -/
 
-/- Prado L07*: `Nat.mul_left_cancel_iff` replaced by more general `mul_eqμl_left_iff` -/
+/- Prado L07*: `∃!`
+  `Nat.mul_left_cancel_iff` replaced by more general `mul_eqμl_left_iff`
+-/
 example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   obtain ⟨w, hw⟩ := h
   use w
@@ -155,7 +167,7 @@ example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
     · assumption
 -/
 
-/- Prado L08*: alternative solution without `prime_dvd_prime_iff_eq` -/
+/- Prado L08*: BOSS alternative solution without `prime_dvd_prime_iff_eq` -/
 example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
   simp
@@ -174,7 +186,7 @@ example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
 
 
 /- ------------------------------ -/
-
+/-
 theorem Robo.Nat.exists_prime_and_dvd (n : ℕ) (hn : n ≠ 1): ∃ (p : ℕ), Prime p ∧ p ∣ n := by
   have (n : ℕ) : ∀ (m : ℕ), 2 ≤ m → m ≤ n → ∃ (p: ℕ), Prime p ∧ p ∣ m := by
     induction' n with d hd
@@ -240,3 +252,4 @@ theorem Robo.Nat.exists_prime_and_dvd (n : ℕ) (hn : n ≠ 1): ∃ (p : ℕ), P
     apply this
     · omega
     · rfl
+-/
