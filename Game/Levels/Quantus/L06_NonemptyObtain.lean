@@ -4,14 +4,11 @@ import Game.Metadata
 World "Quantus"
 Level 6
 
-Title "" -- ""
+Title ""
 
 Introduction
 "
-Ihr habt nun alle Fragen aus dem königlichen Päckchen beantwortet, und die Formalosophinnen
-applaudieren. Dann wollen Sie aber auch noch ein paar Fragen stellen, aber sie können sich
-nicht einigen, welche.  Nach einer Weile taucht folgendes Papier auf.
-Ihr studiert es, während die Menge weiter diskutiert.
+Auf der Rückseite steht folgendes.
 "
 
 Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
@@ -38,4 +35,4 @@ Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
 
 NewDefinition Exists
 
-Conclusion ""
+Conclusion "Ihr erhaltet einen bescheidenen Applaus.  Die Formalosophinnen tuscheln untereinander."

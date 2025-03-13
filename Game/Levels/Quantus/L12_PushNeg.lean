@@ -54,18 +54,14 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   unfold Even
   use n
 
-/-- Eine Zahl ist gerade wenn sie nicht ungerade ist. -/
-TheoremDoc Nat.even_iff_not_odd as "even_iff_not_odd" in "ℕ"
+-- Note: The following two theorem are just added for completeness.
 
--- Note: These three are just added for completeness.
-/-- Eine Zahl ist ungerade wenn sie nicht gerade ist. -/
-TheoremDoc Nat.odd_iff_not_even as "odd_iff_not_even" in "ℕ"
 /-- Statt diesem Theorem kannst du `push_neg` verwenden. -/
 TheoremDoc not_exists as "not_exists" in "Logic"
 /-- Statt diesem Theorem kannst du `push_neg` verwenden. -/
 TheoremDoc Classical.not_forall as "not_forall" in "Logic"
 
-NewTheorem Nat.even_iff_not_odd Nat.odd_iff_not_even not_exists Classical.not_forall
+NewTheorem not_exists Classical.not_forall
 
 Conclusion
 "

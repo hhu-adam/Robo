@@ -5,7 +5,7 @@ Level 1
 
 Title "" -- "Natürliche Zahlen"
 
-Introduction "Du schaust dir die erste Seite an."
+Introduction "Auf der Vorderseite steht folgendes."
 
 Statement : Nonempty ℕ := by
   Hint "**Du**: Ich soll zeigen, dass es eine natürlich Zahl gibt?
@@ -13,6 +13,6 @@ Statement : Nonempty ℕ := by
   **Robo**: Genau.  Dazu gibts du mit `use _` einfach irgendeine natürlich Zahl an."
   use 0
 
-Conclusion ""
+Conclusion "Ihr dreht das Blatt um."
 
 NewTactic use

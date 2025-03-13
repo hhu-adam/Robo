@@ -25,43 +25,6 @@ open Nat
 example : Nonempty ℕ := by
   use 0
 
-/- RING 01 / Quantus L02: ADD NAME, this is used in BABYLON -/
-theorem Robo.add_pow_two (x y : ℕ) : (x + y) ^ 2 = x ^ 2 + 2 * x * y + y ^ 2 := by
-  ring
-
-/- RING 02 / Quantus L02b: NEW -/
-theorem Robo.mul_comm (a b : ℕ) : a * b = b * a := by
-  ring
-
-/- RING 03 / Quantus L02c: NEW -/
-theorem Robo.mul_assoc (a b c: ℕ) : a * b * c = a * (b * c) := by
-  ring
-
-/- RING 04 / Quantus L03: rewrite -/
-example (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
-  rw [h₁]
-  rw [←h₂]
-  assumption
-
-/- RING 05 / Quantus L03b: NEW exercise that trains rewrite and uses above lemmas;
-                 very similar manipulations needed in boss level of BAYLON -/
-example (x y a b : ℕ) (hx : x = 2*b) (hy : y = a^2 + a*x + b^2) : y = (a + b)^2 := by
-  rw [add_pow_two] -- or ring
-  rw [mul_comm 2 a]
-  rw [mul_assoc]
-  rw [← hx]
-  assumption
-
-/- Quantus L04: NOT NEEDED ANYMORE -/
-example (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
-  rw [h] at g
-  assumption
-
-/- Quantus L05: NOT NEEDED ANYMORE -/
-example (x y z : ℕ) (h : x = 2 * y + 1) (g : z = 3 * y + 1): x ^ 2 = 4 * y ^ 2 + z + y := by
-  rw [h, g]
-  ring
-
 /- Quantus L06: Exists, obtain from Nonempty -/
 example (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
   obtain ⟨a⟩ := h
@@ -79,33 +42,6 @@ theorem Robo.Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by  -- CHE
   rw [hs]
   ring
 
-/- Quantus L09: Odd; repeat choose & use -- NOW SUPERFLUOUS  -/
-example (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
-  choose r hr using h
-  use 2 * (r + r ^ 2)
-  rw [hr]
-  ring
-
-/- Quantus: norm_num -- was needed in BABYLON; now DECIDED AGAINST -/
-/- example (i : ℕ) (h : Odd i): (-1 : ℤ)^i = -1 := by
-  -- omega -- fails
-  obtain ⟨r , hr⟩ := h
-  rw [hr]
-  -- simp -- fails (though would work with Even in place of Odd)
-  -- omega -- fails
-  norm_num
--/
-
-/- Quantus: second execrise with norm_num; now DECIDED AGAINST -/
-/- ideally, would like to see an application of norm_num that's a bit different -/
-/-example (k : ℕ) (z : ℤ) (hk: Odd k) : (-z)^k = -z^k := by
-  have : (-z)^k = (-1)^k*z^k := by ring
-  rw [this]
-  obtain ⟨i, hi⟩ := hk
-  rw [hi]
-  -- simp -- fails (though would work with Even in place of Odd)
-  norm_num
--/
 
 /- Quantus L09a: Even.neg_pow & Odd.neg_pow  -- needed in BABYLON -/
 -- easy variation 1:
@@ -183,3 +119,43 @@ example {People : Type} [h_nonempty : Nonempty People] (isDrinking : People → 
     use p
     intro hp'
     contradiction
+
+
+/- ------------------------------------ -/
+/- obsolete levels (removed from game): -/
+
+/- Quantus O04: -/
+example (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
+  rw [h] at g
+  assumption
+
+/- Quantus O05: -/
+example (x y z : ℕ) (h : x = 2 * y + 1) (g : z = 3 * y + 1): x ^ 2 = 4 * y ^ 2 + z + y := by
+  rw [h, g]
+  ring
+
+/- Quantus O09: Odd; repeat choose & use -/
+example (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
+  choose r hr using h
+  use 2 * (r + r ^ 2)
+  rw [hr]
+  ring
+
+/- Quantus: norm_num -- was needed in BABYLON; now DECIDED AGAINST -/
+example (i : ℕ) (h : Odd i): (-1 : ℤ)^i = -1 := by
+  -- omega -- fails
+  obtain ⟨r , hr⟩ := h
+  rw [hr]
+  -- simp -- fails (though would work with Even in place of Odd)
+  -- omega -- fails
+  norm_num
+
+/- Quantus: second execrise with norm_num; now DECIDED AGAINST -/
+/- ideally, would like to see an application of norm_num that's a bit different -/
+example (k : ℕ) (z : ℤ) (hk: Odd k) : (-z)^k = -z^k := by
+  have : (-z)^k = (-1)^k*z^k := by ring
+  rw [this]
+  obtain ⟨i, hi⟩ := hk
+  rw [hi]
+  -- simp -- fails (though would work with Even in place of Odd)
+  norm_num

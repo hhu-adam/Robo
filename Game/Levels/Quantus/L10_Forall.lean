@@ -5,7 +5,7 @@ Level 10
 
 Title "" -- "Für alle"
 
-Introduction "Nach längerem Durcheinander findet ein weiteres Blatt aus der Menge zu Euch."
+Introduction "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu Euch."
 
 Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   Hint "
@@ -25,6 +25,7 @@ NewDefinition Forall
 
 Conclusion
 "
-Wieder werdet Ihr mit einem Applaus belohnt, und die Formalosophinnen
-beratschlagen sich, was sie Euch noch vorlegen wollen.
+Wieder anerkennendes Nicken.
+
+Wieder Getuschel.
 "

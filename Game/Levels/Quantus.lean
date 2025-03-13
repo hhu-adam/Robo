@@ -52,9 +52,8 @@ wir es ja insbesondere der Königin übergeben.
 
 **Du** *(in die Menge)*: Wir haben Euch ein Päckchen von Implis gebracht. Hier, das ist für Euch.
 
-Robo spuckt es aus, wirft es in die Menge, und die Formalosophinnen reißen es auf. Darin befinden
-sich ein paar lose Seiten, die sie sofort eingehend studieren.
-
-Zwei Minuten später liegen die Seiten wieder bei euch. Es sind wieder mathematische Probleme.
-Und die Formalosophinnen wollen sehen, wie Ihr sie löst.
+Robo wirft es in die Menge, und die Formalosophinnen reißen es auf.
+Tatsächlich befindet sich darin nur eine einziges Stück Papier.
+Nach wenigen Minuten liegt es wieder bei euch.
+Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht.
 "

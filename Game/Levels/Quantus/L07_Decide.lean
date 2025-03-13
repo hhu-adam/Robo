@@ -8,7 +8,8 @@ Title "" -- ""
 
 Introduction
 "
-Inzwischen haben sich in der Menge anscheinend zwei Lager gebildet.
+Offenbar versuchen sich die Formalosophinnen auf ein weiteres Problem zu einigen, dass sie euch präsentieren könnten.
+Nach einer Weile kristallisieren sich zwei Lager heraus.
 Ihr hört abwechselnd die Rufe „Even“ und „Odd“. Deshalb zeigt dir Robo
 vorsichtshalber schon einmal die entsprechende Definition:
 

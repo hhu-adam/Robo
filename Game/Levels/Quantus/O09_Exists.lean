@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 9
 
-Title "" -- "Gerade/Ungerade"
+Title ""
 
 Introduction
 "

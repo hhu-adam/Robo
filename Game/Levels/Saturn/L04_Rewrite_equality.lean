@@ -1,18 +1,19 @@
 import Game.Metadata
 
-World "Quantus"
+World "Saturn"
 Level 3
 
-Title "" -- "Rewrite"
+Title ""
 
-Introduction ""
+Introduction "Der nächste Funkspruch sieht ein bisschen anders aus."
 
 Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
-  Hint "**Du**: Schau mal, dieses Problem sieht so ähnlich aus wie eines, das wir auf *Implis*
+  Hint "**Du**: Ich habe das Gefühl, das habe ich schon einmal gesehen.
+
+  **Robo**:  Ja!  Das sieht so ähnlich aus wie eine Aufgabe, die wir auf *Implis*
   schon gelöst hatten.
   Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!
-
-  **Robo**: Richtig. Und im Grunde macht das gar keinen Unterschied.
+  Aber das macht im Grunde gar keinen Unterschied.
   Du kannst `=` und `↔` mit `rw` praktisch gleich behandeln."
 
   Hint (hidden := true) "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?
@@ -25,4 +26,11 @@ Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c :
   rw [←h₂]
   assumption
 
-Conclusion ""
+Conclusion "
+  Wieder kommt ein 👍 zurück.
+
+  Dann möchte der anonyme Funker wissen, ob ihr bereit seid für das End Game,
+  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.
+
+  “Bereit” funkt Robo zurück.
+  "
