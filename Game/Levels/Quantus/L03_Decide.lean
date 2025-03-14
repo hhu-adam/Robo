@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Quantus"
-Level 7
+Level 3
 
 Title "" -- ""
 

@@ -1,13 +1,13 @@
 import Game.Metadata
 
 World "Saturn"
-Level 2
+Level 5
 
 Title ""
 
-Introduction "Der nächste Funktspruch"
+Introduction ""
 
-Statement (w a o : ℤ) (h2o : 2*o = 100) (ho2 : o^2 = -100*a - a^2) (h :  w = (a + o)^2) : w = 0 := by
+Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (a + b)^2) : z = 0 := by
   Hint (hidden := true) "
     **Robo**:  Ich vermute, hier wirst du doch das ein oder andere Lemma brauchen, das wir gerade gesehen haben.
     Du könntest zum Beispiel mit `rw [add_pow_two] at h` anfangen.
@@ -30,10 +30,13 @@ Statement (w a o : ℤ) (h2o : 2*o = 100) (ho2 : o^2 = -100*a - a^2) (h :  w = (
     **Robo**: Und jetzt `mul_assoc`.
   "
   rw [mul_assoc] at h
-  rw [h2o] at h
-  rw [ho2] at h
+  rw [h2b] at h
+  rw [hb2] at h
   rw [h]
   ring
+
+
+TheoremTab "Ring"
 
 Conclusion "
   “Bestanden” heißt es kurz und knapp von anonymen Funker.

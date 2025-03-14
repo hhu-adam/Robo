@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Saturn"
-Level 3
+Level 4
 
 Title ""
 
@@ -34,3 +34,12 @@ Conclusion "
 
   “Bereit” funkt Robo zurück.
   "
+-- The following theorems are only added for symmetry/completeness:
+
+/---/
+TheoremDoc add_comm as "add_comm" in "Ring"
+
+/---/
+TheoremDoc add_assoc as "add_assoc" in "Ring"
+
+NewTheorem add_comm add_assoc

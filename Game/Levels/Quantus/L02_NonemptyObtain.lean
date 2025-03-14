@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Quantus"
-Level 6
+Level 2
 
 Title ""
 
@@ -13,7 +13,7 @@ Auf der Rückseite steht folgendes.
 
 Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
   Hint "
-    **Was ist das denn jetzt?  `A` ist in „Typ“?
+    **Du**: Was ist das denn jetzt?  `A` ist in „Typ“?
 
     **Robo** Du kannst dir `A` einfach als Menge vorstellen …
 
