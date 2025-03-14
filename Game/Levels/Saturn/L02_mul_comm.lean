@@ -18,7 +18,7 @@ Conclusion "
   Das ist doch gar kein Ring!
 
   **Robo**: Ist es nicht.  Aber `ring` funktioniert sogar für sogenannte Halbringe.
-  Und die Aussage hier heißt übrigens `mul_eq_mul`.
+  Und die Aussage hier heißt übrigens `mul_comm`.
 
   **Du**: So so …
 "

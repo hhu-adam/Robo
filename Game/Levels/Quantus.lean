@@ -1,16 +1,13 @@
 import Game.Levels.Quantus.L01_NonemptyUse
-import Game.Levels.Quantus.L02_Ring
-import Game.Levels.Quantus.L03_Rewrite
-import Game.Levels.Quantus.L04_Rewrite
-import Game.Levels.Quantus.L05_Ring
-import Game.Levels.Quantus.L06_NonemptyObtain
-import Game.Levels.Quantus.L07_Decide
-import Game.Levels.Quantus.L08_Exists
-import Game.Levels.Quantus.L09_Exists
-import Game.Levels.Quantus.L10_Forall
-import Game.Levels.Quantus.L11_PushNeg
-import Game.Levels.Quantus.L12_PushNeg
-import Game.Levels.Quantus.L13_DrinkersParadox
+import Game.Levels.Quantus.L02_NonemptyObtain
+import Game.Levels.Quantus.L03_Decide
+import Game.Levels.Quantus.L04_Exists
+import Game.Levels.Quantus.L05_neg_pow
+import Game.Levels.Quantus.L06_odd_iff_not_even
+import Game.Levels.Quantus.L07_Forall
+import Game.Levels.Quantus.L08_PushNeg
+import Game.Levels.Quantus.L09_PushNeg
+import Game.Levels.Quantus.L10_DrinkersParadox
 
 /-!
 The planet `Quantus` is about the quantifiers `∀` and `∃`.

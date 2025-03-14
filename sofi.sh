@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# version [2025-03-14]
+
 # PURPOSE:
 #
 # The purpose of this script is to make it easier to insert new levels and/or

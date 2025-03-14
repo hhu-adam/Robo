@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Quantus"
-Level 13
+Level 10
 
 Title "" -- "Drinker's Paradox"
 
