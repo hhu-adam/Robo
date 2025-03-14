@@ -58,15 +58,47 @@ In order to update the Lean version used by the game, you should follow these st
 * Modify the file `lean-toolchain` to contain the string `leanprover/lean4:v4.7.0` where `v4.7.0` is replaced by the newest version available.
 * Call `lake update -R` and `lake build`. Your game now uses the specified Lean version and the corresponding mathlib release.
 
-## Renaming levels
+## Reordering, renaming, adding and deleting levels
 
-If you rename Levels under `Game/Levels/{MyPlanet}/_.lean` you can automatically update the planet file `Game/Levels/{MyPlanet}.lean`:
+The bash script `sofi.sh` contained in the root folder can help restructure the
+levels within a particular World/Planet/folder.  For example, suppose you have a
+folder
 
-(all bash commands are from the cwd `Robo/`)
+    Game/Levels/Arithmetic
 
-* Rename the level files in `Game/Levels/{MyPlanet}/` to your liking. Ideally they have the
-  form `L02_ShortKeyword.lean` where the number `02` matches what's set inside the game.
-* Use `git add Game/Levels/{MyPlanet}/` to stage all your changed files for commit.
-* Once staged, run `./mk_all.sh`. This should update the imports in the planet file
-  `Game/Levels/{MyPlanet}.lean` to match the folder's content.
-* `git add Game/Levels/{MyPlanet}.lean`, then commit your renaming changes.
+with levels as listed in the leftmost column of table below. Suppose you want to
+switch the order of multiplication and addition, and insert an additional level
+on subtraction in between.  Then you can simply edit the *file names* as in the
+second column, and add the additional file for the level on substraction, so
+that the files are in the intended order when sorted alphabetically (as
+displayed in the third column).
+
+
+| existing levels    | manual changes           | files in alphabetical order | end result          |
+|                    |                          | (after manual changes)      |                     |
+|--------------------|--------------------------|-----------------------------|---------------------|
+| L01\_hello.lean    | L01\_hello.lean          | L01\_hello.lean             | L01\_hello.lean     |
+| L02\_multiply.lean | **L03**\_multiply.lean   | L02a\_add.lean              | L02\_add.lean       |
+| L03\_add.lean      | **L02a**\_add.lean       | L02b\_substract.lean        | L03\_substract.lean |
+|                    | **L02b\_substract.lean** | L03\_multiply.lean          | L04\_multiply.lean  |
+
+
+Calling
+
+    ./sofi.bash Game/Levels/Arithmetic
+
+will then
+
+- rename the files as in the last column,
+- update the level number in each file,
+- make a reasonable attempt to update the `import` statements in each of the
+  level files, and
+- update the importfs in the base file `Arithmetic.lean`.
+
+More details are documented in the script itself.
+
+Don't forget to add all your new/renamed files to git with
+
+    git add Game/Levels/Arithmetic/
+
+at the end.
