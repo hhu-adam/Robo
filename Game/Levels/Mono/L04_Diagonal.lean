@@ -23,7 +23,7 @@ Statement {A : Type*} (n : ℕ) :
 
   **Robo**: Kann man so sehen.
 
-  **Du**:  Ok.  Gegeben ist also eine Abbildung `diag` von $A$ nach $A^\{n+1}$.  Und zwar die Abbildung …  ah, ich sehe, warum sie `diag` heißt.
+  **Du**:  Okay.  Gegeben ist also eine Abbildung `diag` von $A$ nach $A^\{n+1}$.  Und zwar die Abbildung …  ah, ich sehe, warum sie `diag` heißt.
   "
   Hint (hidden := true) "**Du**:  Oder vielleicht doch nicht.  Kannst du das bitte nochmal aufdröseln?
 

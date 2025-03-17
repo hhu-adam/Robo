@@ -1,11 +1,16 @@
-import Game.Levels.Luna.L01_LE
-import Game.Levels.Luna.L02_Pos
-import Game.Levels.Luna.L03_Linarith
-import Game.Levels.Luna.L04_Linarith
-import Game.Levels.Luna.L05_Trichotomy
+import Game.Levels.Luna.L01_le_rfl
+import Game.Levels.Luna.L02_Omega
+import Game.Levels.Luna.L03_Linarith__lt_trichotomy
+import Game.Levels.Luna.L04_Omega2
+import Game.Levels.Luna.L05_Linarith2
+import Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+import Game.Levels.Luna.L07_Linarith2
+import Game.Levels.Luna.L08_Omega3
+import Game.Levels.Luna.L09_lt_trichotomy2
+import Game.Levels.Luna.L10_Icc_subset_Icc_iff
 
 /-!
-The planet Luna is about inequalities `≤` and the tactic `linarith`.
+The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) and `linarith` (for ℝ).
 -/
 
 World "Luna"

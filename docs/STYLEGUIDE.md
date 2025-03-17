@@ -6,11 +6,11 @@
   **Robo**:
   **Robo** *(flüsternd)*:
   ```
-* Okay (nicht Ok, nicht OK, nicht Oke, nicht O.K. …)
+* Okay (nicht Okay, nicht OK, nicht Oke, nicht O.K. …)
 * Doppel-S (ß) nach Deutscher Grammatik, nicht Schweizer🥲.
 
-# Tactics 
-  
+# Tactics
+
 * We don't use `rcases` but rather `obtain`.
   - `obtain` is more pronouncable and more of a word.
   - `obtain` seems to be encouraged over `rcases` in mathlib.
@@ -27,7 +27,7 @@
     - We believe `let` is more common in mathlib than `set`.
   - For functions, we use `funext` tactic, `apply congr_arg` and `apply congr_fun`.
     We might have used the `congr` tactic instead of `congr_arg` and `congr_fun`, but `congr` does not appear to be able to reduce `f a = g a` to `f = g` (for functions `f` and `g`).
-    
+
 # Inventory Doc
 
 ## Taktiken
@@ -37,5 +37,3 @@
   - "Details": optional, genauere Beschreibung
   - "Beispiel": pflicht! mindestens ein Beispiel
   - "Hilfreiche Resultate": optional, verwandte Taktiken/Definitionen/Theoreme
-
- 

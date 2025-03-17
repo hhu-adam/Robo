@@ -391,28 +391,31 @@ TacticDoc «let»
 TacticDoc set
 
 /--
-`linarith` löst Systeme linearer (Un-)Gleichungen.
-
-## Detail
-`linarith` kann lineare Gleichungen und Ungleichungen beweisen indem
-es das Gegenteil vom Goal annimmt und versucht einen Widerspruch in den
-Annahmen zu erzeugen (Widerspruchsbeweis). Es braucht ein `≤` definiert um
-zu funktionieren.
-
-## Beispiel
-
-Folgendes kann `linarith` beweisen.
+`linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.
+Es ist recht flexibel, in welchem Kontext man arbeitet, und funktioniert genauso gut in ℕ wie in ℝ.
+Die (Un)Gleichungen müssen aber gut lesbar gegeben sein -- eine Annahme der Form
 ```
-Objekte
-  x y : ℤ
-  h₁ : 5 * y ≤ 35 - 2 * x
-  h₂ : 2 * y ≤ x + 3
-Goal
-  y ≤ 5
+m ≤ x → n < x
 ```
+muss beispielsweise erst mit
+```
+rw [imp_iff_or_not] at h
+```
+zu
+```
+hx : n < x ∨ ¬m ≤ x
+```
+umgeschrieben werden, damit `linarith` damit etwas anfangen kann.
 -/
 TacticDoc linarith
 
+
+/--
+`omega` kann zeigen, dass eine lineare Gleichung oder Ungleichungen in `ℕ` oder `ℤ`
+aus gegebenen Gleichungen oder Ungleichungen folgt.
+Es ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelang.
+-/
+TacticDoc omega
 
 
 /--

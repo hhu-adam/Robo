@@ -17,7 +17,7 @@ Statement (f : ℤ → ℕ) (n : ℤ): f n ≥ 0 := by
   die Klammern weg.  Wenn du sie setzen möchtest,  musst du unbedingt Leerzeichen
   um die Klammern setzen – so: `f (n)`.
 
-  **Du**: Ok, will ich mir merken.  Aber da die Abbildung hier nur Werte in ℕ annimmt,
+  **Du**: Okay, will ich mir merken.  Aber da die Abbildung hier nur Werte in ℕ annimmt,
   ist ja eigentlich nichts zu zeigen."
   linarith  -- oder simp
 

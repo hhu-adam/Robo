@@ -19,9 +19,11 @@ end Finset
 -/
 
 /- Piazza L10 -/
+-- simp NEEDS TO BE INTRODUCED HERE!
 example : 9 ∈ {n : ℕ | Odd n} := by
   simp
   decide
+
 
 /- Piazza L02 -/
 namespace Set
@@ -84,42 +86,6 @@ example {T : Type} (A B : Set T) :
   tauto
 end Set
 
-
-
-/- Piazza L03 -/
-/-
-example {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
-  simp [Set.subset_def] at *
-  tauto
--/
--- direct solution seems better:
-namespace Set
-example {T : Type} {A B C : Set T} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
-  intro a ha
-  apply h₁ at ha
-  apply h₂ at ha
-  assumption
-end Set
-/-
-namespace Finset
-example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
-  intro a ha
-  apply h₁ at ha
-  apply h₂ at ha
-  assumption
-end Finset
--/
-
-/- Piazza L04: DELETE  -/
-/-
-example : ({2, 7} : Set ℕ) ⊆ {2, 3, 7, 9} := by
-  -- ! can also be solved directly with simp !
-  -- TODO: Better exercise about `intro`     ?
-  intro x
-  simp
-  tauto
--/
-
 /- Piazza L05: used in CANTOR -/
 namespace Set
 theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by
@@ -142,6 +108,59 @@ theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Finset α} : A = B ↔ A
     ext i
     tauto
 end Finset
+-/
+
+
+/- Piazza L03 -/
+-- direct solution:
+namespace Set
+example {T : Type} {A B C : Set T} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  intro a ha
+  apply h₁ at ha
+  apply h₂ at ha
+  assumption
+end Set
+/-
+namespace Finset
+example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  intro a ha
+  apply h₁ at ha
+  apply h₂ at ha
+  assumption
+end Finset
+-/
+
+/- Piazza NEW -/
+/- following theorem exists in Mathlib and is used in Luna -/
+theorem Robo.Finset.subset_iff {A : Type} {s₁ s₂ : Finset A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
+  rfl
+
+/- following theorem should be shown here, because it will be useful;
+   Jon has a Mathlib PR with this theorem.
+   TODO:  update level when PR becomes available.
+-/
+theorem Robo.Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
+  rfl
+
+/- Piazza L03b -/
+-- solution to exercise above with `subset_iff`, the Finset-version of which is used in BOSS level of LUNA
+/-
+example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  simp [Finset.subset_iff] at *
+  tauto
+-/
+example {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  simp [Set.subset_def] at *
+  tauto
+
+/- Piazza L04: DELETE  -/
+/-
+example : ({2, 7} : Set ℕ) ⊆ {2, 3, 7, 9} := by
+  -- ! can also be solved directly with simp !
+  -- TODO: Better exercise about `intro`     ?
+  intro x
+  simp
+  tauto
 -/
 
 /- Piazza L11* -/
