@@ -215,7 +215,19 @@ TacticDoc contrapose
 -/
 TacticDoc exact
 
-
+/--
+Zwei Teilmengen einer gegebenen Menge sind gleich, wenn sie dieselben Elemente besitzen.
+Steht im Beweisziel
+```
+A = B
+```
+für zwei Teilmengen von `T` (also für `A B : Set T`),
+so überführt `ext x` das Beweisziel in die Äquivalenz
+```
+x ∈ A ↔ x ∈ B.
+```
+-/
+TacticDoc ext
 
 /--
 `fin_cases i` führt eine Fallunterscheidung wenn `i` ein endlicher Typ ist.
@@ -231,16 +243,45 @@ TacticDoc fin_cases
 
 
 /--
-`funext x` wird bei Gleichungen von Funktionen `f = g` gebraucht. Das Goal wird zu
-`f x = g x`.
-
-## Details
-Nach dem Motto `f = g ↔ ∀ x, f x = g x` sind zwei Funktionen dann identisch, wenn sie
-angewendet auf jedes Element identisch sind. `funext x` benutzt dieses Argument.
+Zwei Abbildungen mit demselben Werte- und Definitionsbereich sind gleich,
+wenn sie auf allen Elementen des Definitionsbereichs dieselben Werte annehmen.
+Ein Beweisziel der Form
+```
+f = g
+```
+für Abbildungen `f g : X → Y` wird durch `funext x`
+in die Gleichung
+```
+f x = g x.
+```
+überführt.
 -/
 TacticDoc funext
 
 
+/--
+Mit `generalize` kann man ein Beweisziel verallgemeinern
+– gewöhnlich in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.
+Genauer ersetzt `generalize h : a = b` alle Vorkommen von `a` im Beweisziel durch `b`
+(und ergänzt die Annahme `h : a = b`).
+
+## Beispiel
+
+Ein Ziel der Form
+```
+Even x ∨ ¬Even x
+```
+lässt sich mit
+```
+generalize h : (Even x) = A
+```
+in
+```
+A ∨ ¬A
+```
+überführen (und dann einfach mit `tauto` beweisen.
+-/
+TacticDoc generalize
 
 /--
 `have h : P` führt ein Zwischenresultat ein.

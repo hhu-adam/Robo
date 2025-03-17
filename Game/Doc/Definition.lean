@@ -133,8 +133,72 @@ Alternativ kann man statt `↦` auch `=>` verwenden.
 -/
 DefinitionDoc Symbol.function as "fun x ↦ _"
 
+-- DefinitionDoc Set.preimage as "preimage"
+-- "
+-- "
 
 
+/- MENGEN -/
+
+/-- `A : Set T` bedeutet, dass `A` eine Teilmenge von `T` ist
+(oder genauer, dass `A` eine Menge ist, die aus Elementen vom Typ `T` besteht).
+-/
+DefinitionDoc Set as "Set"
+
+/-- Für eine Teilmenge `A : Set T` und ein Element `a` aus `T` (genauer: vom Typ `T`) bedeutet `a ∈ A`, dass
+`a` in `A` liegt.
+
+Für Teilmengen der Form `A = \{ a : T | P a }` kannst du die Aussage
+`a ∈ A` mit `simp` zu `P a` vereinfachen.
+-/
+DefinitionDoc Mem as "∈"
+
+/-- Für ein Prädikat `P : T → Prop` ist `\{ a : T | P a } : Set P` die Teilmenge,
+die aus all jenen Elementen besteht, die das Prädikat erfüllen.  Zum Beispiel ist
+```
+\{ n : ℕ | Even n }
+```
+die Menge der geraden natürlichen Zahlen.
+
+Die Aussage `a ∈ \{ a : T | P a }` kannst du mit `simp` zu `P a` vereinfachen.
+-/
+DefinitionDoc setOf as "{·|·}"
+
+/-- Für zwei Teilmengen `(A B : Set T)` ist `A\\B` die Differenz aus `A` and `B`,
+bestehend aus allen Elementen von `A`, die nicht in `B` liegen.-/
+DefinitionDoc SDiff as "·\\·"
+
+/--
+Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.
+
+Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀x, x ∈ A → x ∈ B` umschreiben.
+
+Ist `A ⊆ B` das Beweisziel, kannst du auch auch direkt mit `intro a ha`
+ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).
+
+Ist `h : A ⊆ B` eine Annahme, erhälst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.
+
+Um `⊆` zu schreiben, tippst du `\\subset`.
+-/
+DefinitionDoc Subset as "⊆"
+
+/-- `∅ : Set T` ist die leere Teilmenge.
+Im Formaloversum ist also `∅ : Set ℕ` etwas anderes als `∅ : Set ℝ`
+– das eine ist eine Teilmenge von ℕ, das andere eine Teilmenge von ℝ!
+
+Mit `rw [eq_empty_iff_forall_not_mem]` überführst du eine Gleichung der Form `S = ∅` in die
+Aussage `∀ (x : T), x ∉ s`.
+
+Du schreibst `∅` als `\emptyset`.
+-/
+DefinitionDoc Set.empty as "∅"
+
+/-- `univ : Set T` ist die “Teil”menge, die aus *allen* Elementen vom vom Typ `T` besteht.
+
+Mit `rw [eq_univ_iff_forall]` überführst du eine Gleichung der Form `S = univ` in die
+Aussage `∀ (x : T), x ∈ S`.
+-/
+DefinitionDoc Set.univ as "univ"
 
 
 
@@ -142,27 +206,13 @@ DefinitionDoc Symbol.function as "fun x ↦ _"
 -- "
 -- "
 
-
--- DefinitionDoc Set.preimage as "preimage"
--- "
--- "
-
-
 -- DefinitionDoc Set.Nonempty as "Nonempty" "
 
 -- `A.Nonemty` ist als `∃ x, x ∈ A` definiert.
 -- "
 
 
--- DefinitionDoc Symbol.Subset as "⊆" "
-
--- Auf Mengen (`Set`) ist `A ⊆ B` als `∀x, x ∈ A → x ∈ B` implementiert.
-
--- Im goal kann man direkt `intro x hx` machen, in einer Annahme, kann man mit `obtain`
--- loslegen.
-
--- Alternativ kann man mit `rw[Set.subset_def]` die Definition explizit einsetzen.
--- "
+-- LOGIK
 
 /--
 `A ∧ B` ("und") ist die Aussage dass sowohl `A` als auch `B` wahr ist.

@@ -4,33 +4,28 @@ import Game.Metadata
 World "Piazza"
 Level 1
 
-Title "" -- "Mengen"
+Title ""
 
 Introduction
 "
-Eine beliebige Menge von natürlichen Zahlen ist `A : Set ℕ`, oder wenn man diese
-explizit definiert `{1, 6, 4} : Set ℕ`
-
-In diesem Planeten wollen wir die meisten Aussagen aus der Mengenlehre auf Logik
-reduzieren, damit wir sie mit `tauto` lösen können.
+**Fin**:  Ja, klar.  Das hier zum Beispiel.
 "
 
 open Set
 
 Statement : 1 ∈ ({1, 6, 4} : Set ℕ) := by
+  Hint "
+    **Du**:  Verstehe ich das richtig?
 
-  Hint "Diese Aussage läst sich intern auf
-  `1 = 1 ∨ 1 = 6 ∨ 1 = 4` reduzieren, deshalb kann `tauto` direkt beweisen,
-  dass etwas in einer konkreten Menge liegt."
+    **Robo**: Vermute schon.  Sieht ziemlich *tauto*logisch aus, nicht?
+    "
   tauto
-
-/-- -/
-DefinitionDoc Mem as "∈"
-
-/-- -/
-DefinitionDoc Set as "Set"
 
 NewDefinition Mem Set
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "
+**Set**:  Ihr kennt euch also auch schon ein bisschen mit Mengen aus?
+
+**Robo**:  Naja, ein *bisschen*.
+"

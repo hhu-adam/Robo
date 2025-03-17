@@ -47,20 +47,8 @@ example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   rw [eq_univ_iff_forall]
   simp
   intro x
-  -- from here, there are two alternatives; one is:
   generalize h : (Even x) = A
   tauto
-
-example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
-  ext n
-  simp
-  -- here, we are in the same state as with the previous branch;
-  -- alternative way to proceed is:
-  by_cases h : Even n
-  · left
-    assumption
-  · right
-    assumption
 end Set
 
 /- Piazza L07b: empty -/
@@ -69,10 +57,6 @@ namespace Set
 -- to “unfold” definition of emptyset
 example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   rw [eq_empty_iff_forall_not_mem]
-  simp
-
-example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
-  ext
   simp
 
 /- Piazza L08: univ -/
@@ -110,11 +94,23 @@ theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Finset α} : A = B ↔ A
 end Finset
 -/
 
+/- Piazza NEW -/
+/- following theorem exists in Mathlib and is used in Luna -/
+theorem Robo.Finset.subset_iff {A : Type} {s₁ s₂ : Finset A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
+  rfl
+
+/- following theorem should be shown here, because it will be useful;
+   Jon has a Mathlib PR with this theorem.
+   TODO:  update level when PR becomes available.
+-/
+theorem Robo.Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
+  rfl
 
 /- Piazza L03 -/
 -- direct solution:
 namespace Set
 example {T : Type} {A B C : Set T} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
+  -- rw [subset_iff] at * -- optional
   intro a ha
   apply h₁ at ha
   apply h₂ at ha
@@ -128,39 +124,6 @@ example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   apply h₂ at ha
   assumption
 end Finset
--/
-
-/- Piazza NEW -/
-/- following theorem exists in Mathlib and is used in Luna -/
-theorem Robo.Finset.subset_iff {A : Type} {s₁ s₂ : Finset A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
-  rfl
-
-/- following theorem should be shown here, because it will be useful;
-   Jon has a Mathlib PR with this theorem.
-   TODO:  update level when PR becomes available.
--/
-theorem Robo.Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
-  rfl
-
-/- Piazza L03b -/
--- solution to exercise above with `subset_iff`, the Finset-version of which is used in BOSS level of LUNA
-/-
-example {A B C : Finset ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
-  simp [Finset.subset_iff] at *
-  tauto
--/
-example {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
-  simp [Set.subset_def] at *
-  tauto
-
-/- Piazza L04: DELETE  -/
-/-
-example : ({2, 7} : Set ℕ) ⊆ {2, 3, 7, 9} := by
-  -- ! can also be solved directly with simp !
-  -- TODO: Better exercise about `intro`     ?
-  intro x
-  simp
-  tauto
 -/
 
 /- Piazza L11* -/
@@ -174,17 +137,6 @@ example : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
     rw [h]
     decide
 
-/- Piazza L06:  needed in SAMARKAND -/
-theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
-    s = ∅ ↔ ∀ x, x ∉ s := by
-  constructor
-  · intro h
-    rw [h]
-    tauto
-  · intro h
-    ext a
-    tauto
-
 theorem Robo.Set.eq_univ_iff_forall {A : Type} {s : Set A} :
   s = univ ↔ ∀ (x : A), x ∈ s := by
   constructor
@@ -194,33 +146,6 @@ theorem Robo.Set.eq_univ_iff_forall {A : Type} {s : Set A} :
   · intro h
     ext a
     tauto
-
-
-/- Piazza L07:  sehr künstliche Aufgabe, um Set.univ einzuführen; DELETE -/
-/-
-namespace Set
-example (h : (univ : Set ℕ) ⊆ ∅) : (univ : Set ℕ) = ∅ := by
-  tauto
-end Set
-
-namespace Finset
-example (n : ℕ) (h : (univ : Finset (Fin n)) ⊆ ∅) : (univ : Finset (Fin n)) = ∅ := by
-  ext -- only needed in this version
-  tauto
-end Finset
--/
-
-
-/- Piazza L09: DELETE -/
-/-
-namespace Set
-example (A B C : Set ℕ) :
-    (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
-  ext i
-  simp
-  tauto
-end Set
--/
 
 
 /- Piazza N01 -/
@@ -263,3 +188,30 @@ theorem Robo.Finset.insert_erase {A : Type} [DecidableEq A] {s : Finset A} {a : 
     assumption
   -/
 end Finset
+
+
+/- obsolete levels -/
+
+/- Piazza L06:  proof of `eq_empty_iff_forall_not_mem` -/
+/-
+theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
+    s = ∅ ↔ ∀ x, x ∉ s := by
+  constructor
+  · intro h
+    rw [h]
+    tauto
+  · intro h
+    ext a
+    tauto
+-/
+
+/- Piazza O09: complement -/
+/-
+namespace Set
+example (A B C : Set ℕ) :
+    (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
+  ext i
+  simp
+  tauto
+end Set
+-/
