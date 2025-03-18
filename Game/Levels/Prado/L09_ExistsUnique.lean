@@ -1,16 +1,16 @@
 import Game.Metadata
-import Game.Levels.Prado.L06_PrimeDvdPrime
-
-namespace Nat
+import Game.Levels.Prado.L08_exists_prime_and_dvd
 
 World "Prado"
-Level 7
+Level 9
 
-Title "" -- "Eindeutige Existenz"
+Title ""
 
 Introduction"
-**Robo**:  Aber so schwer ist des auch nicht.  Hier, schau dir diese Aufgabe mal an.
+**Robo**:  Aber so schwer ist das auch nicht.  Hier, schau dir diese Aufgabe mal an.
 "
+
+namespace Nat
 
 Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   Hint "
@@ -30,28 +30,41 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
   · rw [hw]
   · Hint "
     **Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma
-    `Nat.mul_left_cancel_iff` helfen.  Es besagt, dass für `0 < a` gilt:
+    `mul_eq_mul_left_iff` helfen:
 
     ```
-    a * b = a * c ↔ b = c
+    a * b = a * c ↔ b = c ∨ a = 0
     ```
-
-    Es gibt genauso ein Lemma `mul_right_cancel_iff`, da ist alles entsprechend gedreht.
     "
     intro y hy
     rw [hw] at hy
-    rw [Nat.mul_left_cancel_iff] at hy -- TODO: _root_.mul_left_cancel_iff takes priority
+    /-
+    Branch
+      rw [Nat.mul_left_cancel_iff] at hy -- TODO: _root_.mul_left_cancel_iff takes priority
+      · assumption
+      · assumption
+    -/
+    rw [mul_eq_mul_left_iff] at hy  -- `mul_eq_mul_left_iff` also used in ROBOTSWANA!
+    obtain h | h := hy
     · assumption
-    · assumption
-
-
+    · linarith
 
 NewDefinition ExistsUnique
 
 /---/
+TheoremDoc mul_eq_mul_left_iff as "mul_eq_mul_left_iff" in "ℕ"
+/---/
+TheoremDoc mul_eq_mul_right_iff as "mul_eq_mul_right_iff" in "ℕ"
+
+NewTheorem mul_eq_mul_left_iff mul_eq_mul_right_iff
+
+/-
+/---/
 TheoremDoc Nat.mul_left_cancel_iff as "mul_left_cancel_iff" in "ℕ"
 /---/
 TheoremDoc Nat.mul_right_cancel_iff as "mul_right_cancel_iff" in "ℕ"
-
 NewTheorem Nat.mul_left_cancel_iff Nat.mul_right_cancel_iff
+-/
+
+
 TheoremTab "ℕ"

@@ -1,35 +1,37 @@
 import Game.Metadata
-import Game.Levels.Prado.L07_ExistsUnique
-
-namespace Nat
+import Game.Levels.Prado.L09_ExistsUnique
 
 World "Prado"
-Level 8
+Level 10
 
-Title "" -- "Gerade Primzahlen"
+Title ""
 
 Introduction
 "Inzwischen seid ihr auf der Dachterasse angekommen.
-Guino ist etwas konsterniert, dass ihr euch so wenig für die Architektur interessiert.
+Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären.
+Die Aussicht ist nicht schlecht.
 
-**Robo** *(zu dir)*:  Jetzt sind wir aber, glaube ich, so weit.
-Ich hoffe, die Aussagen, die wir schon gezeigt haben, sind irgendwie hilfreich.
+**Robo** *(zu dir)*:  Ich glaube, wir sind so weit.
 "
+
+namespace Nat
 
 Statement : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
   simp
   constructor
   · decide
-  · intro y h₁ h₂
+  · intro p hp h
     Hint (hidden := true) "**Robo**:
     Schau noch einmal genau durch die Aussagen, die wir schon gezeigt hatten."
-    rw [even_iff_two_dvd] at h₂
-    rw [prime_dvd_prime_iff_eq] at h₂
+    rw [even_iff_two_dvd] at h
+    rw [prime_def] at hp
+    obtain ⟨h2, hprime ⟩ := hp
+    apply (hprime 2) at h
+    obtain h | h:= h
+    · contradiction
     · symm
       assumption
-    · decide
-    · assumption
 
 TheoremTab "ℕ"
 
@@ -40,4 +42,4 @@ Conclusion "
 ihm gefällt ohnehin sein Museum so leer wie es ist am besten.
 
 Ihr bedankt euch also artig für die Führung, zeigt euch tief beeindruckt
-von der hiesigen Eisbaukunst, und fliegt weiter zum nächsten Planeten."
+von der hiesigen Eisbaukunst, und fliegt weiter."

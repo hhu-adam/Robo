@@ -1,10 +1,8 @@
 import Game.Metadata
-import Game.Levels.Prado.L03_EvenIff
-
-namespace Nat
+import Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
 
 World "Prado"
-Level 4
+Level 6
 
 Title ""
 
@@ -14,8 +12,7 @@ Introduction"
 **Robo**: Mal sehen, ob ich eine Aufgabe zu Primzahlen auf Lager habe … Diese hier vielleicht?"
 
 
--- TODO: there is a mathlib PR to ask for this renaming: #19255
-alias _root_.Nat.prime_def := prime_def_lt''
+namespace Nat
 
 Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   Hint "

@@ -1,10 +1,9 @@
 import Game.Metadata
-import Game.Levels.Prado.L02_Dvd
+import Game.Levels.Prado.L04_99
 
-namespace Nat
 
 World "Prado"
-Level 3
+Level 5
 
 Title ""
 
@@ -15,10 +14,9 @@ Introduction
 "
 
 /---/
-TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
+TheoremDoc not_dvd_of_between_consec_multiples as "not_dvd_of_between_consec_multiples" in "ℕ"
 
-namespace Nat
-
+open Nat
 Statement not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   Hint "
   **Du**: `by_contra`?
@@ -33,5 +31,11 @@ Statement not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2
   apply lt_of_mul_lt_mul_left at h1  -- needs to be supplied as a hint
   apply lt_of_mul_lt_mul_left at h2  -- Note: Nat. is necessary here!
   omega
+
+/---/
+TheoremDoc lt_of_mul_lt_mul_left as "lt_of_mul_lt_mul_left" in "ℕ"
+/---/
+TheoremDoc lt_of_mul_lt_mul_right as "lt_of_mul_lt_mul_right" in "ℕ"
+NewTheorem lt_of_mul_lt_mul_left lt_of_mul_lt_mul_right
 
 TheoremTab "ℕ"

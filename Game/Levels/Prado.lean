@@ -1,11 +1,13 @@
-import Game.Levels.Prado.L01_Two
-import Game.Levels.Prado.L02_Dvd
-import Game.Levels.Prado.L03_EvenIff
-import Game.Levels.Prado.L04_Prime
-import Game.Levels.Prado.L05_One
-import Game.Levels.Prado.L06_PrimeDvdPrime
-import Game.Levels.Prado.L07_ExistsUnique
-import Game.Levels.Prado.L08_EvenPrime
+import Game.Levels.Prado.L01_prime_two
+import Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
+import Game.Levels.Prado.L03_even_iff_two_dvd
+import Game.Levels.Prado.L04_99
+import Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+import Game.Levels.Prado.L06_Prime_Specialize__prime_def
+import Game.Levels.Prado.L07_dvd_mul
+import Game.Levels.Prado.L08_exists_prime_and_dvd
+import Game.Levels.Prado.L09_ExistsUnique
+import Game.Levels.Prado.L10_EvenPrime
 
 World "Prado"
 Title "Prado"

@@ -1,10 +1,8 @@
 import Game.Metadata
-import Game.Levels.Prado.L02_Dvd
-
-namespace Nat
+import Game.Levels.Prado.L07_dvd_mul
 
 World "Prado"
-Level 3
+Level 8
 
 Title ""
 
@@ -13,6 +11,8 @@ Introduction
 ob er euch nicht eine Aufgabe stellen möchte.
 Er gibt euch folgende Variation seiner vorherigen Aufgabe.
 "
+
+namespace Nat
 
 Statement : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   Hint "**Du** *(zu Robo)*:  Hast du eine Idee, was hier ein Primfaktor sein könnte?
@@ -28,4 +28,19 @@ Statement : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   apply exists_prime_and_dvd
   simp
 
+
+/---/
+TheoremDoc Nat.exists_prime_and_dvd as "exists_prime_and_dvd" in "ℕ"
+NewTheorem Nat.exists_prime_and_dvd
+
 TheoremTab "ℕ"
+
+Conclusion "
+  **Guino:** Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrlich Treppe?
+  Wir gehen hoch!
+
+  **Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen.
+  Es gibt genau eine gerade …
+
+  **Robo**:  Halt!  „Genau eine“ hatten wir noch nicht.
+"

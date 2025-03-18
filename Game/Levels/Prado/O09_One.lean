@@ -1,10 +1,10 @@
 import Game.Metadata
-import Game.Levels.Prado.L04_Prime
+import Game.Levels.Prado.L08_exists_prime_and_dvd
 
 namespace Nat
 
 World "Prado"
-Level 5
+Level 9
 
 Title "" -- "Eins"
 

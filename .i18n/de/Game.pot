@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Mar 18 11:00:33 2025\n"
+"POT-Creation-Date: Tue Mar 18 12:20:33 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -156,14 +156,14 @@ msgstr ""
 #: Game.Doc.Definition
 msgid "Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.\n"
 "\n"
-"Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀x, x ∈ A → x ∈ B` umschreiben.\n"
+"Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀ x, x ∈ A → x ∈ B` umschreiben.\n"
 "\n"
 "Ist `A ⊆ B` das Beweisziel, kannst du auch auch direkt mit `intro a ha`\n"
 "ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).\n"
 "\n"
-"Ist `h : A ⊆ B` eine Annahme, erhälst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.\n"
+"Ist `h : A ⊆ B` eine Annahme, erhältst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.\n"
 "\n"
-"Um `⊆` zu schreiben, tippst du `\\\\subset`."
+"Um `⊆` zu schreiben, tippst du `\\subset`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -186,19 +186,13 @@ msgstr ""
 
 #: Game.Doc.Definition
 msgid "Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist\n"
-"```\n"
-"insert a A\n"
-"```\n"
-"eine andere Schreibweise für `A ∪ {a}`.\n"
+"`insert a A` eine andere Schreibweise für `A ∪ {a}`.\n"
 "Es wird keine inhärente Annahme getroffen, ob `a` bereits in `A` liegt, oder nicht."
 msgstr ""
 
 #: Game.Doc.Definition
 msgid "Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist\n"
-"```\n"
-"erase A a\n"
-"```\n"
-"eine andere Schreibweise für `A \\\\ {a}`."
+"`erase A a` eine andere Schreibweise für `A \\ {a}`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -5032,26 +5026,26 @@ msgid "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses
 "**Robo:** Du, schau mal, hier ist eine Nachricht reingekommen."
 msgstr ""
 
-#: Game.Levels.Prado.L01_Two
+#: Game.Levels.Prado.L01_prime_two
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L01_Two
+#: Game.Levels.Prado.L01_prime_two
 msgid "**Robo**:  Ja, ja.  Wissen wir.\n"
 "\n"
 "Er formuliert die Aussage schnell in Leansch und hält sie dir hin."
 msgstr ""
 
-#: Game.Levels.Prado.L01_Two
+#: Game.Levels.Prado.L01_prime_two
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L01_Two
+#: Game.Levels.Prado.L01_prime_two
 msgid "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil `2` eine konkrete Zahl ist\n"
 "und es einen Algorithmus gibt, um zu entscheiden, ob eine Zahl prim ist, kannst du einfach `decide` verwenden!"
 msgstr ""
 
-#: Game.Levels.Prado.L01_Two
+#: Game.Levels.Prado.L01_prime_two
 msgid "**Du**:  In der Tat.  Wissen wir.  Und was gibt es noch für Exponate?\n"
 "\n"
 "Guino  wird etwas verlegen.\n"
@@ -5062,11 +5056,11 @@ msgid "**Du**:  In der Tat.  Wissen wir.  Und was gibt es noch für Exponate?\n"
 "Aber wir arbeiten mit Hochdruck daran, weitere gerade Primzahlen für unsere Dauerausstellung zu finden."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "**Du** *(flüsternd)*: Robo, meinst du, wir sollen es ihm sagen?\n"
 "\n"
 "**Robo**: Dass `2` die einzige gerade Primzahl ist?\n"
@@ -5079,33 +5073,31 @@ msgid "**Du** *(flüsternd)*: Robo, meinst du, wir sollen es ihm sagen?\n"
 "  als `\\|` oder `\\dvd` schreiben musst.  Probier zum Beispiel mal diese Aufgabe hier."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
-msgid ""
-msgstr ""
-
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "**Robo**: Definiert ist `a ∣ b` natürlich als `∃ k, b = a * k`.\n"
-"\n"
-"**Du**: Dann kann ich direkt `obtain` und `use` verwenden, wie wenn es ein `∃` wäre?\n"
-"\n"
-"**Robo**: Genau!"
+"Am besten schreibst du das für den Anfang überall explizit aus:\n"
+"```\n"
+"rw [dvd_iff_exists_eq_mul_left] at *\n"
+"```"
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
-msgid "**Robo**: Fang doch damit an, mit `obtain ⟨x ,hx⟩ := _`\n"
-"alle Hyptothesen aufzuteilen."
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
+msgid "**Du**:  Und jetzt mache ich mit `obtain` und `use` weiter?\n"
+"\n"
+"**Robo**: Genau.  Als nächstes nimmst du die Annahmen mit `obtain ⟨x ,hx⟩ := _`\n"
+"usw. auseinander."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass\n"
 "`«{b}» + «{c}» = «{a}» * _` gilt."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "**Robo**: Mit ein bisschen umschreiben kann man sicher `ring` verwenden."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "`a ∣ b` bedeutet `∃ k, b = a * k`.\n"
 "\n"
 "**Warnung**: Die Symbole `∣` (`\\\\dvd`) und `|` (ASCII vertikaler Strich) sind zwei unterschiedliche\n"
@@ -5113,7 +5105,11 @@ msgid "`a ∣ b` bedeutet `∃ k, b = a * k`.\n"
 "Syntax `obtain h₁ | h₂ := h` vor."
 msgstr ""
 
-#: Game.Levels.Prado.L02_Dvd
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 msgid "**Guino**:  Was flüstert ihr denn da?\n"
 "\n"
 "**Du**:  Ach, nichts.  Robo versucht mich nur daran zu erinnern, was genau eine Primzahl ist.\n"
@@ -5124,148 +5120,170 @@ msgid "**Guino**:  Was flüstert ihr denn da?\n"
 "Das Museum ist zwar noch leer, aber fertig.  Und es ist wirklich gut geworden.  Schaut mal, hier entlang!"
 msgstr ""
 
-#: Game.Levels.Prado.L03_EvenIff
+#: Game.Levels.Prado.L03_even_iff_two_dvd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L03_EvenIff
+#: Game.Levels.Prado.L03_even_iff_two_dvd
 msgid "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben."
 msgstr ""
 
-#: Game.Levels.Prado.L03_EvenIff
+#: Game.Levels.Prado.L03_even_iff_two_dvd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L03_EvenIff
-msgid "**Robo**: Fang doch mit `unfold Even` an."
+#: Game.Levels.Prado.L03_even_iff_two_dvd
+msgid "**Robo**:  Fang doch noch einmal mit `rw [dvd_iff_exists_eq_mul_left]` an!"
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L04_99
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L04_99
+msgid "Guino wirkt inzwischen ein wenig irritiert, dass ihr gar keinen Augen für sein tolles Museum habt.\n"
+"Er fühlt sich ignoriert. Um eure Aufmerksamkeit zu bekommen, gibt er euch folgende Aufgabe."
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid "**Du** *(zu Robo)*:  Gib mir mal wieder etwas Interessanteres!\n"
+"\n"
+"**Robo**:  Wie wäre es hiermit?"
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid "**Du**: `by_contra`?\n"
+"\n"
+"**Robo**:  Das könnte funktionieren.\n"
+"Und wahrscheinlich wirst du das Lemma `lt_of_mul_lt_mul_left` brauchen.\n"
+"Für `a b c : ℕ` zieht es aus der Annahme `a * b < a * c` den Schluss `b < c`."
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Du**:  Gut.  Und kannst du mir jetzt zeigen, wie man mit Primzahlen arbeitet?\n"
 "\n"
 "**Robo**: Mal sehen, ob ich eine Aufgabe zu Primzahlen auf Lager habe … Diese hier vielleicht?"
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Robo**: Hier ist `(hp : Prime p)` natürlich die Annahme, dass `p` eine Primzahl ist.\n"
 "Um mit dieser Annahme zu arbeiten, wendest du am besten immer `rw [prime_def] at hp` an."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Robo**:  Nee, lieber nicht.  Du solltest `Prime` nicht unfolden!\n"
 "Das macht alles nur schwieriger.  Benutze lieber wie ich gesagt hatte `rw [prime_def] at hp`."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch\n"
 "`1` und sich selbst teilbar ist.  Das klingt vertraut."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize «{hp}» «{a}»` verwenden."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize «{hp}» «{a}» «{ha}»` verwenden."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus\n"
 "`«{a}» = 1` und `2 ≤ «{a}»` ergibt."
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L04_Prime
-msgid "Guino schaut euch noch einmal über die Schulter.\n"
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L07_dvd_mul
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L07_dvd_mul
+msgid "**Robo**:  Hier ist noch eine kleine Primzahl-Aufgabe.\n"
+"   Das Lemma `Prime.dvd_mul` sagt, dass eine Primzahl genau dann ein Produkt teilt,\n"
+"   wenn sie einen der Faktoren teilt.  Das musst du hier nur anwenden."
+msgstr ""
+
+#: Game.Levels.Prado.L07_dvd_mul
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L07_dvd_mul
+msgid "**Du** Du stellst aber wirklich sehr einfache Aufgaben."
+msgstr ""
+
+#: Game.Levels.Prado.L08_exists_prime_and_dvd
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L08_exists_prime_and_dvd
+msgid "Um Guino bei Laune zu halten, fragt Robo vorsichtig,\n"
+"ob er euch nicht eine Aufgabe stellen möchte.\n"
+"Er gibt euch folgende Variation seiner vorherigen Aufgabe."
+msgstr ""
+
+#: Game.Levels.Prado.L08_exists_prime_and_dvd
+msgid "**Du** *(zu Robo)*:  Hast du eine Idee, was hier ein Primfaktor sein könnte?\n"
 "\n"
-"**Guino**:  Ihr seid ja wirklich ganz eifrig bei der Sache!\n"
-"Ich hatte schon befürchtet, ich müsste euch unterhalten."
-msgstr ""
-
-#: Game.Levels.Prado.L05_One
-msgid ""
-msgstr ""
-
-#: Game.Levels.Prado.L05_One
-msgid "**Guino:** Ich habe aber tatsächlich eine kleine Aufgabe für euch."
-msgstr ""
-
-#: Game.Levels.Prado.L05_One
-msgid ""
-msgstr ""
-
-#: Game.Levels.Prado.L05_One
-msgid "**Robo**:  Nicht zu kompliziert denken!\n"
-"Erinner dich, wie du gezeigt hattest, dass `2` prim ist!"
-msgstr ""
-
-#: Game.Levels.Prado.L05_One
-msgid "**Guino**:  Sehr schön.  Nun lasst uns aber weitergehen.\n"
-"Schaut mal, ist das nicht eine herrlich Treppe?  Lasst uns mal nach oben gehen."
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid ""
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Robo**:  Ich habe in meiner Sammlung noch folgende Aussage gefunden, die relevant sein könnte.\n"
-"Mal sehen, ob wir die jetzt zusammen gezeigt bekommen."
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid ""
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Du**:  Die eine Primzahl teilt die andere genau dann, wenn sie beide gleich sind?\n"
+"**Robo**: Nö.\n"
 "\n"
-"**Robo**: Genau."
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Robo**:  Die Annahme `Prime «{b}»` wirst du natürlich wieder mit `prime_def` umschreiben müssen.\n"
-"Die Annahme `Prime «{a}»` kannst du vielleicht lassen, wie sie ist!"
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Robo**:  Denk daran, dass du eine Fallunterscheidung mit `obtain h | h := «{h}»`\n"
-"machen kannst.\n"
-"(Hier ist `|` der normale Strich, nicht der Teilbarkeitsstrich `∣` (`\\dvd`).)"
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Robo**: Findest du jetzt vielleicht einen Widerspruch?"
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Robo**: Mach mal weiter mit `have h' := not_prime_one`."
-msgstr ""
-
-#: Game.Levels.Prado.L06_PrimeDvdPrime
-msgid "**Du**:  Sehr schön.\n"
-"Dann lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen.\n"
-"Es gibt genau eine gerade …\n"
+"Robo überlegt.\n"
 "\n"
-"**Robo**:  Halt!  „Genau eine“ hatten wir noch nicht."
+"**Robo**:  Ist doch aber auch egal.  Er hat ja gar nicht nach einem konkreten Faktor gefragt,\n"
+"sondern nur nach der Existenz irgendeines Primfaktors.  Aber das ist trivial.\n"
+"Lass mich überlegen … ich glaube `exists_prime_and_dvd` ist die Aussage, die du hier brauchst."
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L08_exists_prime_and_dvd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
-msgid "**Robo**:  Aber so schwer ist des auch nicht.  Hier, schau dir diese Aufgabe mal an."
+#: Game.Levels.Prado.L08_exists_prime_and_dvd
+msgid "**Guino:** Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrlich Treppe?\n"
+"  Wir gehen hoch!\n"
+"\n"
+"  **Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen.\n"
+"  Es gibt genau eine gerade …\n"
+"\n"
+"  **Robo**:  Halt!  „Genau eine“ hatten wir noch nicht."
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
+msgid ""
+msgstr ""
+
+#: Game.Levels.Prado.L09_ExistsUnique
+msgid "**Robo**:  Aber so schwer ist das auch nicht.  Hier, schau dir diese Aufgabe mal an."
+msgstr ""
+
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid "**Du**: Ich sehe schon – `∃! m, P(m)` ist also die Notation für „es gibt genau ein `m`, für das `P(m)` gilt“.\n"
 "\n"
 "**Robo**: Genau.  Und das ist einfach definiert als „es existiert ein `m`,\n"
@@ -5273,60 +5291,58 @@ msgid "**Du**: Ich sehe schon – `∃! m, P(m)` ist also die Notation für „e
 "Der erste Schritt ist also, ein geeignetes `m` zu finden, und dann `use _` zu verwenden."
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid "**Robo**: Tatsächlich ergibt `use` auf `∃!` angewendet immer ein bisschen Chaos.\n"
 "Schick am besten immer gleich ein `simp` hinterher, dann wird es wieder lesbar."
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) `«{w}»` erfüllt `a * «{w}» = b`,\n"
 "(2) `«{w}»` ist das einzige Element mit dieser Eigenschaft."
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid "**Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma\n"
-"`Nat.mul_left_cancel_iff` helfen.  Es besagt, dass für `0 < a` gilt:\n"
+"`mul_eq_mul_left_iff` helfen:\n"
 "\n"
 "```\n"
-"a * b = a * c ↔ b = c\n"
-"```\n"
-"\n"
-"Es gibt genauso ein Lemma `mul_right_cancel_iff`, da ist alles entsprechend gedreht."
+"a * b = a * c ↔ b = c ∨ a = 0\n"
+"```"
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L07_ExistsUnique
+#: Game.Levels.Prado.L09_ExistsUnique
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L08_EvenPrime
+#: Game.Levels.Prado.L10_EvenPrime
 msgid ""
 msgstr ""
 
-#: Game.Levels.Prado.L08_EvenPrime
+#: Game.Levels.Prado.L10_EvenPrime
 msgid "Inzwischen seid ihr auf der Dachterasse angekommen.\n"
-"Guino ist etwas konsterniert, dass ihr euch so wenig für die Architektur interessiert.\n"
+"Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären.\n"
+"Die Aussicht ist nicht schlecht.\n"
 "\n"
-"**Robo** *(zu dir)*:  Jetzt sind wir aber, glaube ich, so weit.\n"
-"Ich hoffe, die Aussagen, die wir schon gezeigt haben, sind irgendwie hilfreich."
+"**Robo** *(zu dir)*:  Ich glaube, wir sind so weit."
 msgstr ""
 
-#: Game.Levels.Prado.L08_EvenPrime
+#: Game.Levels.Prado.L10_EvenPrime
 msgid "**Robo**:\n"
 "Schau noch einmal genau durch die Aussagen, die wir schon gezeigt hatten."
 msgstr ""
 
-#: Game.Levels.Prado.L08_EvenPrime
+#: Game.Levels.Prado.L10_EvenPrime
 msgid "**Du**: Juchhu!  Und wer sagt es ihm jetzt?\n"
 "\n"
 "**Robo**:  Vielleicht lassen wir es lieber.  Ich habe das Gefühl,\n"
 "ihm gefällt ohnehin sein Museum so leer wie es ist am besten.\n"
 "\n"
 "Ihr bedankt euch also artig für die Führung, zeigt euch tief beeindruckt\n"
-"von der hiesigen Eisbaukunst, und fliegt weiter zum nächsten Planeten."
+"von der hiesigen Eisbaukunst, und fliegt weiter."
 msgstr ""
 
 #: Game.Levels.Prado
@@ -6948,7 +6964,7 @@ msgid "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n"
 "  **Du**: Nein, ich meine dieses `ext` hier!\n"
 "\n"
 "  **Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind,\n"
-"  wenn sie dieselben Element besitzen, nennen Logiker *extensionality*.\n"
+"  wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*.\n"
 "  Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war."
 msgstr ""
 
@@ -6957,7 +6973,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "**Set**: Und ich mag Äquivalenz"
+msgid "**Set**: Und ich mag diese Äquivalenz."
 msgstr ""
 
 #: Game.Levels.Piazza.L07_antisymm_iff
@@ -7018,7 +7034,7 @@ msgstr ""
 
 #: Game.Levels.Piazza.L09_subset_iff2
 msgid "**Sub**:  So, so.  Nur eine Definition!\n"
-"Und wenn ihr nun mit solchen Inklusionen arbeiten sollt."
+"Und wenn ihr nun mit solchen Inklusionen arbeiten sollt?"
 msgstr ""
 
 #: Game.Levels.Piazza.L09_subset_iff2
@@ -7077,7 +7093,7 @@ msgid "**Du**:  Was bedeutet denn hier jetzt `Finset`?\n"
 "\n"
 "**Robo**:  Das bedeutet, dass `A` zu den *endlichen* Teilmengen von ℕ gehört.\n"
 "Macht aber für die Frage eigentlich keinen Unterschied.\n"
-"Links steht `A` ohne `a`, rechts steht auch `A` oder `a`."
+"Links steht `A` ohne `a`, rechts steht auch `A` ohne `a`."
 msgstr ""
 
 #: Game.Levels.Piazza.L11_erase

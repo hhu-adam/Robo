@@ -1,7 +1,5 @@
 import Game.Metadata
-import Game.Levels.Prado.L01_Two
-
-namespace Nat
+import Game.Levels.Prado.L01_prime_two
 
 World "Prado"
 Level 2
@@ -23,8 +21,10 @@ Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 "
 
 -- This is `Nat.dvd_add`, but currently that statement is not needed anywhere.
-/---/
+-- /---/
 --TheoremDoc Nat.dvd_add as "dvd_add" in "ℕ"
+
+namespace Nat
 
 Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   Hint "

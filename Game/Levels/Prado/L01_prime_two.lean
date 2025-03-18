@@ -1,8 +1,5 @@
 import Game.Metadata
 
-
-namespace Nat
-
 World "Prado"
 Level 1
 
@@ -16,6 +13,7 @@ Er formuliert die Aussage schnell in Leansch und hält sie dir hin.
 /---/
 TheoremDoc Nat.prime_two as "prime_two" in "ℕ"
 
+namespace Nat
 
 Statement prime_two : Prime 2 := by
   Hint "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil `2` eine konkrete Zahl ist

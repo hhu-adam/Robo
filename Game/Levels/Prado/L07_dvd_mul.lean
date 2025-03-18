@@ -1,10 +1,9 @@
 import Game.Metadata
-import Game.Levels.Prado.L03_EvenIff
+import Game.Levels.Prado.L06_Prime_Specialize__prime_def
 
-namespace Nat
 
 World "Prado"
-Level 4
+Level 7
 
 Title ""
 
@@ -13,6 +12,9 @@ Introduction "
    Das Lemma `Prime.dvd_mul` sagt, dass eine Primzahl genau dann ein Produkt teilt,
    wenn sie einen der Faktoren teilt.  Das musst du hier nur anwenden.
    "
+
+namespace Nat
+
 Statement (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
   rw [Prime.dvd_mul]
   decide

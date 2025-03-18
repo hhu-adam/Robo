@@ -42,7 +42,7 @@ example {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   rw [h, g]
   ring
 
-/- Prado L03a -/
+/- Prado L03 -/
 theorem Robo.even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   unfold Even
   -- short solution using unnecessary step from L02*
@@ -62,12 +62,12 @@ theorem Robo.even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
     ring
   -/
 
-/- Prado L03b:  annoying question from Guino -/
+/- Prado L04:  annoying question from Guino -/
 example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
   use 11
   decide
 
-/- Prado L03c: `not_dvd_of_between_consec_multiples` -/
+/- Prado L05: `not_dvd_of_between_consec_multiples` -/
 theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   by_contra h_dvd
   obtain ⟨a, ha⟩ := h_dvd
@@ -77,7 +77,7 @@ theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k <
   omega
 
 /- PART II: PRIMES -/
-/- Prado L04: `prime_def` -/
+/- Prado L06: `prime_def` -/
 example (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   rw [prime_def] at hp
   obtain ⟨hp₁, hp⟩ := hp
@@ -86,7 +86,7 @@ example (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   · linarith
   · assumption
 
-/- Prado L04b: `Prime.dvd_mul` -/
+/- Prado L07: `Prime.dvd_mul` -/
 example (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
   --constructor
   --intro h
@@ -95,44 +95,15 @@ example (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
   decide
 
 
-/- Prado L04c: annoying question from Guino -/
--- story:  It seems like Guino is asking an impossible question,
---         but Robo immediately realises that existence is trivial
---
+/- Prado L08: annoying question from Guino -/
 --example : Prime 67280421310721 := by
 --  decide  -- maximum recursion depth reached
---
 example : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   apply exists_prime_and_dvd
   simp
 
-/- Prado L05:  DELETE -/
-/-
-  theorem Robo.not_prime_one : ¬ Nat.Prime 1 := by
-  decide
--/
 
-/- Prado L06: not really needed; DELETE -/
-/-
-theorem Robo.prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
-    a ∣ b ↔ a = b := by
-  constructor
-  · intro h
-    rw [prime_def] at hb
-    obtain ⟨_hb_two, hb⟩ := hb
-    apply hb at h
-    obtain h | h := h
-    · have h' := not_prime_one
-      rw [← h] at h'
-      contradiction
-    · assumption
-  · intro h
-    rw [h]
--/
-
-/- Prado L07*: `∃!`
-  `Nat.mul_left_cancel_iff` replaced by more general `mul_eqμl_left_iff`
--/
+/- Prado L09: `∃!`, `mul_eq_mul_left_iff` -/
 example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   obtain ⟨w, hw⟩ := h
   use w
@@ -151,23 +122,7 @@ example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
     · assumption
     -/
 
-/- Prado L08 -/
-/-
-example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
-  use 2
-  simp
-  constructor
-  · decide
-  · intro y h₁ h₂
-    rw [even_iff_two_dvd] at h₂
-    rw [prime_dvd_prime_iff_eq] at h₂
-    · symm
-      assumption
-    · decide
-    · assumption
--/
-
-/- Prado L08*: BOSS alternative solution without `prime_dvd_prime_iff_eq` -/
+/- Prado L10: BOSS -/
 example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
   simp
@@ -182,6 +137,26 @@ example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
     · contradiction
     · symm
       assumption
+
+
+
+/- Prado O06 -/
+/-
+theorem Robo.prime_dvd_prime_iff_eq {a b : ℕ} (ha : Prime a) (hb : Prime b) :
+    a ∣ b ↔ a = b := by
+  constructor
+  · intro h
+    rw [prime_def] at hb
+    obtain ⟨_hb_two, hb⟩ := hb
+    apply hb at h
+    obtain h | h := h
+    · have h' := not_prime_one
+      rw [← h] at h'
+      contradiction
+    · assumption
+  · intro h
+    rw [h]
+-/
 
 
 
