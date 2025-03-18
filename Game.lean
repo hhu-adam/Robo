@@ -53,16 +53,16 @@ Du kannst den Spielstand aber auch über das Menü herunterladen und manuell spe
 
 ## Spielregeln
 
-Wenn du ernsthaft spielen möchtest, solltest du \"Game rules: regular\" wählen.
-Wenn du dich nur ein bisschen umsehen möchtest, wähle \" Game rules: lax\"
+Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.
+Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
   – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
 
-Hintergrundinfos findest du im Menü unter \"Game Info\".
+Hintergrundinfos findest du im Menü unter *Game Info*.
 "
 
 Info
 "
-## Projekt ADAMA
+## Projekt ADAM
 
 Dieses Lernspiel wurde im Rahmen des Projekts
 [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
@@ -80,23 +80,22 @@ finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Ho
 ## Kontakt
 
 Das Spiel wird laufend überarbeitet.
-Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email oder erstelle einen
-Issue auf Github:
+Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email an
+[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)
+oder erstelle einen Issue auf GitHub:
 
 * zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues).
 * zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
-
-Kontakt: [Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)
 "
 
 Conclusion
-"QED!"
+"QED"
 
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "de"
 CaptionShort "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
-CaptionLong "Dieses Spiel führt die Grundlagen der Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik an."
+CaptionLong "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/Cover.png"
 
