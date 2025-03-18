@@ -1,9 +1,9 @@
 import Game.Metadata
 
 World "Piazza"
-Level 8
+Level 6
 
-Title "" -- "Übung"
+Title ""
 
 Introduction
 "
@@ -31,7 +31,7 @@ Conclusion "
   **Du**: Nein, ich meine dieses `ext` hier!
 
   **Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind,
-  wenn sie dieselben Element besitzen, nennen Logiker *extensionality*.
+  wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*.
   Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war.
 
 "

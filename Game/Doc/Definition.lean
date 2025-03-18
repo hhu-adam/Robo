@@ -148,19 +148,19 @@ DefinitionDoc Set as "Set"
 /-- Für eine Teilmenge `A : Set T` und ein Element `a` aus `T` (genauer: vom Typ `T`) bedeutet `a ∈ A`, dass
 `a` in `A` liegt.
 
-Für Teilmengen der Form `A = \{ a : T | P a }` kannst du die Aussage
+Für Teilmengen der Form `A = { a : T | P a }` kannst du die Aussage
 `a ∈ A` mit `simp` zu `P a` vereinfachen.
 -/
 DefinitionDoc Mem as "∈"
 
-/-- Für ein Prädikat `P : T → Prop` ist `\{ a : T | P a } : Set P` die Teilmenge,
+/-- Für ein Prädikat `P : T → Prop` ist `{ a : T | P a } : Set P` die Teilmenge,
 die aus all jenen Elementen besteht, die das Prädikat erfüllen.  Zum Beispiel ist
 ```
-\{ n : ℕ | Even n }
+{ n : ℕ | Even n }
 ```
 die Menge der geraden natürlichen Zahlen.
 
-Die Aussage `a ∈ \{ a : T | P a }` kannst du mit `simp` zu `P a` vereinfachen.
+Die Aussage `a ∈ { a : T | P a }` kannst du mit `simp` zu `P a` vereinfachen.
 -/
 DefinitionDoc setOf as "{·|·}"
 
@@ -171,14 +171,14 @@ DefinitionDoc SDiff as "·\\·"
 /--
 Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.
 
-Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀x, x ∈ A → x ∈ B` umschreiben.
+Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀ x, x ∈ A → x ∈ B` umschreiben.
 
 Ist `A ⊆ B` das Beweisziel, kannst du auch auch direkt mit `intro a ha`
 ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).
 
-Ist `h : A ⊆ B` eine Annahme, erhälst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.
+Ist `h : A ⊆ B` eine Annahme, erhältst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.
 
-Um `⊆` zu schreiben, tippst du `\\subset`.
+Um `⊆` zu schreiben, tippst du `\subset`.
 -/
 DefinitionDoc Subset as "⊆"
 
@@ -189,7 +189,7 @@ Im Formaloversum ist also `∅ : Set ℕ` etwas anderes als `∅ : Set ℝ`
 Mit `rw [eq_empty_iff_forall_not_mem]` überführst du eine Gleichung der Form `S = ∅` in die
 Aussage `∀ (x : T), x ∉ s`.
 
-Du schreibst `∅` als `\emptyset`.
+Du schreibst `∅` als `\\emptyset`.
 -/
 DefinitionDoc Set.empty as "∅"
 
@@ -200,6 +200,16 @@ Aussage `∀ (x : T), x ∈ S`.
 -/
 DefinitionDoc Set.univ as "univ"
 
+/-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
+`insert a A` eine andere Schreibweise für `A ∪ {a}`.
+Es wird keine inhärente Annahme getroffen, ob `a` bereits in `A` liegt, oder nicht.
+-/
+DefinitionDoc Finset.insert as "insert"
+
+/-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
+`erase A a` eine andere Schreibweise für `A \ {a}`.
+-/
+DefinitionDoc Finset.erase as "erase"
 
 
 -- DefinitionDoc Disjoint as "Disjoint"

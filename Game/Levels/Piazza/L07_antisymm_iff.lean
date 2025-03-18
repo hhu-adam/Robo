@@ -1,13 +1,13 @@
 import Game.Metadata
 
 World "Piazza"
-Level 5
+Level 7
 
 Title "" -- "Antisymmetrie"
 
 Introduction
 "
-**Set**: Und ich mag Äquivalenz
+**Set**: Und ich mag diese Äquivalenz.
 "
 
 open Set

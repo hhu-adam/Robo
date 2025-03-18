@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Piazza"
-Level 2
+Level 5
 
 Title ""
 
@@ -11,12 +11,13 @@ Introduction
 "
 namespace Set
 
-example : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
+Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   Hint "
     **Du**: Nein, `∅` kenne ich.
 
     **Robo**: Um ganz sicher zu gehen, dass du das richtig verstehst,
-    könntest du auch mit `eq_empty_iff_forall_not_mem` anfangen.
+    könntest du auch mit `rw [eq_empty_iff_forall_not_mem]` anfangen.
+    Oder mit `simp [eq_empty_iff_forall_not_mem]`, falls du schnell fertig werden möchtest.
   "
   /- Want `eq_empty_iff_forall_not_mem` to be introduced here,
      because it is needed in SAMARKAND!

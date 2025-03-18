@@ -1,11 +1,5 @@
 import Mathlib
 
-/-
-Story am Ende:  Kinder klauen bunte Dinger aus den Körben, dann legen sie sie wieder zurück.
-
-Icc *not* anymore used here in Piazza, as Luna will depend on Piazza.
--/
-
 /- Piazza L01 -/
 namespace Set
 example : 3/2  ∈ ({3/2, 16/9, 4/7} : Set ℚ) := by
@@ -18,14 +12,13 @@ example : 1 ∈ ({1, 6, 4} : Finset ℕ) := by
 end Finset
 -/
 
-/- Piazza L10 -/
--- simp NEEDS TO BE INTRODUCED HERE!
+/- Piazza 02: `simp` -/
 example : 9 ∈ {n : ℕ | Odd n} := by
   simp
   decide
 
 
-/- Piazza L02 -/
+/- Piazza L03: `ext` -/
 namespace Set
 example {T : Type} (A B C : Set T) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
@@ -41,7 +34,7 @@ example (A B C : Finset ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
 end Finset
 -/
 
-/- Piazza L07a: univ -/
+/- Piazza L04: `univ`, `eq_univ_iff_forall` -/
 namespace Set
 example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   rw [eq_univ_iff_forall]
@@ -51,18 +44,14 @@ example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   tauto
 end Set
 
-/- Piazza L07b: empty -/
+/- Piazza L05: `empty`, `eq_empty_iff_forall_not_mem` -/
 namespace Set
--- first mention `eq_empty_iff_forall_not_mem` as a strategy
--- to “unfold” definition of emptyset
 example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   rw [eq_empty_iff_forall_not_mem]
   simp
 
-/- Piazza L08: univ -/
+/- Piazza L06 -/
 namespace Set
--- first mention `eq_univ_iff_forall` as a strategy
--- to “unfold” definition of `univ`
 example {T : Type} (A B : Set T) :
   univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
   ext i
@@ -70,7 +59,7 @@ example {T : Type} (A B : Set T) :
   tauto
 end Set
 
-/- Piazza L05: used in CANTOR -/
+/- Piazza L07: used in CANTOR -/
 namespace Set
 theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by
   constructor
@@ -94,19 +83,19 @@ theorem Robo.Set.Subset.antisymm_iff {α : Type} {A B : Finset α} : A = B ↔ A
 end Finset
 -/
 
-/- Piazza NEW -/
+/- Piazza 08: `subset_iff` -/
 /- following theorem exists in Mathlib and is used in Luna -/
 theorem Robo.Finset.subset_iff {A : Type} {s₁ s₂ : Finset A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl
 
-/- following theorem should be shown here, because it will be useful;
+/- The `Set`-version of the theorem is currently included via
+   Game/Metadata/MathlibPreview.lean
    Jon has a Mathlib PR with this theorem.
-   TODO:  update level when PR becomes available.
 -/
 theorem Robo.Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl
 
-/- Piazza L03 -/
+/- Piazza L09 -/
 -- direct solution:
 namespace Set
 example {T : Type} {A B C : Set T} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by

@@ -1,9 +1,9 @@
 import Game.Metadata
 
 World "Piazza"
-Level 3
+Level 8
 
-Title "" -- "Teilmengen"
+Title ""
 
 Introduction
 "
@@ -23,9 +23,14 @@ Statement subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x :
   Branch
     tauto
   rfl
-
+end Set
 
 NewDefinition Subset
+
+/---/
+TheoremDoc Finset.subset_iff as "subset_iff" in "Set"
+NewTheorem Finset.subset_iff
+
 
 TheoremTab "Set"
 

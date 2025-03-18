@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Piazza"
-Level 2
+Level 3
 
 Title ""
 
@@ -22,8 +22,8 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
 
     **Robo**:  Wenn du so willst, ja.
 
-    **Du**:  Ja, also jedenfalls *kenne* ich die Aussage dann wohl.
-    Aber keine Ahnung, wie ich die wohl hier beweisen könnte.
+    **Du**:  Dann *kenne* ich die Aussage wohl.
+    Aber keine Ahnung, wie ich die hier beweisen könnte.
 
     **Ext**:  Kann ich dir sagen!  Da gibts ein Zauberwort, das heißt genau wie ich!!
 

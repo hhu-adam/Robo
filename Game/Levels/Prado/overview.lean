@@ -30,7 +30,7 @@ alias _root_.Nat.prime_def := prime_def_lt''
 theorem Robo.prime_two : Prime 2 := by
   decide
 
-/- Prado L02*; Name not needed! -/
+/- Prado L02 -/
 -- this is `dvd_add`
 example {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   -- unnecessary but illustrative first step that will be useful later:

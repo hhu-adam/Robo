@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 3
 
-Title "" -- "Gerade"
+Title ""
 
 Introduction
 "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.
@@ -16,19 +16,24 @@ Introduction
 TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
 
 Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
-  -- TODO: is there a shorter way?
-  Hint (hidden := true) "**Robo**: Fang doch mit `unfold Even` an."
+  Hint (hidden := true) "
+    **Robo**:  Fang doch noch einmal mit `rw [dvd_iff_exists_eq_mul_left]` an!
+  "
+  Branch
+    unfold Even
+    constructor
+    · intro h
+      obtain ⟨w, hw⟩ := h
+      use w
+      rw [hw]
+      ring
+    · intro h
+      obtain ⟨w, hw⟩ := h
+      use w
+      rw [hw]
+      ring
+  rw [dvd_iff_exists_eq_mul_left]
   unfold Even
-  constructor
-  · intro h
-    obtain ⟨w, hw⟩ := h
-    use w
-    rw [hw]
-    ring
-  · intro h
-    obtain ⟨w, hw⟩ := h
-    use w
-    rw [hw]
-    ring
+  ring
 
 TheoremTab "ℕ"

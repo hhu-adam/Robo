@@ -1,15 +1,14 @@
 import Game.Metadata
-import Game.Levels.Piazza.L03_subset_iff
 
 World "Piazza"
-Level 3
+Level 9
 
 Title "" -- "Teilmengen"
 
 Introduction
 "
 **Sub**:  So, so.  Nur eine Definition!
-Und wenn ihr nun mit solchen Inklusionen arbeiten sollt.
+Und wenn ihr nun mit solchen Inklusionen arbeiten sollt?
 "
 
 open Set

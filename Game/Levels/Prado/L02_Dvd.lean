@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 2
 
-Title "" -- "Teilbarkeit"
+Title ""
 
 Introduction
 "
@@ -21,18 +21,25 @@ Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 **Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich
   als `\\|` oder `\\dvd` schreiben musst.  Probier zum Beispiel mal diese Aufgabe hier.
 "
-/---/
-TheoremDoc Nat.dvd_add as "dvd_add" in "ℕ"
 
-Statement dvd_add {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
+-- This is `Nat.dvd_add`, but currently that statement is not needed anywhere.
+/---/
+--TheoremDoc Nat.dvd_add as "dvd_add" in "ℕ"
+
+Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   Hint "
   **Robo**: Definiert ist `a ∣ b` natürlich als `∃ k, b = a * k`.
+  Am besten schreibst du das für den Anfang überall explizit aus:
+  ```
+  rw [dvd_iff_exists_eq_mul_left] at *
+  ```
+  "
+  rw [dvd_iff_exists_eq_mul_left] at * -- optional
+  Hint (hidden := true) "
+    **Du**:  Und jetzt mache ich mit `obtain` und `use` weiter?
 
-  **Du**: Dann kann ich direkt `obtain` und `use` verwenden, wie wenn es ein `∃` wäre?
-
-  **Robo**: Genau!"
-  Hint (hidden := true) "**Robo**: Fang doch damit an, mit `obtain ⟨x ,hx⟩ := _`
-  alle Hyptothesen aufzuteilen."
+    **Robo**: Genau.  Als nächstes nimmst du die Annahmen mit `obtain ⟨x ,hx⟩ := _`
+  usw. auseinander."
   obtain ⟨x, h⟩ := h
   obtain ⟨y, g⟩ := g
   Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass
@@ -52,6 +59,11 @@ Syntax `obtain h₁ | h₂ := h` vor.
 DefinitionDoc Dvd.dvd as "· ∣ ·"
 
 NewDefinition Dvd.dvd
+
+/---/
+TheoremDoc dvd_iff_exists_eq_mul_left as "dvd_iff_exists_eq_mul_left" in "ℕ"
+NewTheorem dvd_iff_exists_eq_mul_left
+
 TheoremTab "ℕ"
 
 Conclusion "**Guino**:  Was flüstert ihr denn da?

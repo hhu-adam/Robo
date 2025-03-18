@@ -7,3 +7,4 @@ import Game.Metadata.FromMathlib
 import Game.Metadata.Coersion
 import Game.Metadata.MatrixNotation
 import Game.Metadata.Tactic
+import Game.Metadata.MathlibPreview

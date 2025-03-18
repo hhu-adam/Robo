@@ -32,8 +32,11 @@ Introduction
 "
 # Game Over oder QED?
 
-Willkommen zu unserem Prototyp eines Lean4-Lernspiels. Hier lernst du computer-gestützte
-Beweisführung. Das Interface ist etwas vereinfacht, aber wenn du den *Editor Mode* aktivierst, fühlt es sich
+Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?
+Dann bist du hier genau richtig!
+In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek Mathlib zu arbeiten.
+
+Das Interface ist etwas vereinfacht, aber wenn du den *Editor Mode* aktivierst, fühlt es sich
 fast genauso an wie in VSCode, der Standard-IDE für Lean.
 
 Rechts siehst du eine Übersicht. Das Spiel besteht aus mehreren Planeten, und jeder Planet hat mehrere Levels,
@@ -41,40 +44,42 @@ die in Form von grauen Punkten dargestellt sind. Gelöste Levels werden grün.
 
 Klicke auf den ersten Planeten *Logo*, um deine Reise zu starten.
 
-
-### More
-Schau im Menü unter \"Game Info\" für mehr Informationen zum Spiel.
-"
-
-Info
-"
 ## Spielstand
 
 Dein Spielstand wird lokal in deinem Browser als *site data* gespeichert.
 Solltest du diese löschen, verlierst du deinen Spielstand!
 Viele Browser löschen *site data* und *cookies* zusammen.
-Wenn du \"Game rules: lax\" auswählst kannst aber jederzeit jedes Level spielen,
-auch wenn du vorhergende Levels noch nicht gelöst hast.
+Du kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.
 
-## Funding
+## Spielregeln
 
-Dieses Lernspiel wurde und wird im Rahmen des Projekts
+Wenn du ernsthaft spielen möchtest, solltest du \"Game rules: regular\" wählen.
+Wenn du dich nur ein bisschen umsehen möchtest, wähle \" Game rules: lax\"
+  – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
+
+Hintergrundinfos findest du im Menü unter \"Game Info\".
+"
+
+Info
+"
+## Projekt ADAMA
+
+Dieses Lernspiel wurde im Rahmen des Projekts
 [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
-an der Heinrich-Heine-Universität Düsseldorf entwickelt.
-Es wird finanziert durch das Programm *Freiraum 2022* der
-*Stiftung Innovation in der Hochschullehre*.
+an der Heinrich-Heine-Universität Düsseldorf entwickelt,
+finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.
 
 ## Credits
 
-* **Konzept & Projektmanagement:** Marcus Zibrowius
+* **Projektleitung:** Marcus Zibrowius, Immi Halupczok
 * **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)
 * **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour
-* **Handlung:** Marcus Zibrowius
+* **Konzept & Handlung:** Marcus Zibrowius
 * **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)
 
 ## Kontakt
 
-Das Spiel befindet sich noch in der Entwicklung.
+Das Spiel wird laufend überarbeitet.
 Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email oder erstelle einen
 Issue auf Github:
 
@@ -85,33 +90,26 @@ Kontakt: [Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)
 "
 
 Conclusion
-"Fertig!"
+"QED!"
 
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "de"
-CaptionShort "Erkunde das Leansche Universum mit deinem Robo, welcher dir bei der Verständigung mit den Formalosophen zur Seite steht."
-CaptionLong "Dieses Spiel führt die Grundlagen zur Beweisführung in Lean ein und schneidet danach verschiedene Bereiche des Bachelorstudiums an.
-
-(Das Spiel befindet sich noch in der Entstehungsphase.)"
+CaptionShort "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
+CaptionLong "Dieses Spiel führt die Grundlagen der Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik an."
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/Cover.png"
 
 
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
+Dependency Quantus → Piazza -- because of `∀`
+Dependency Prado → Mono     -- beclause of `∃!`
+Dependency Mono → Iso       -- because of `Injective`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
-
--- Dependency Babylon → Epo
-
--- because of defs `∃!` and `Fin`:   (actually superfluous because of other dependencies)
-Dependency Prado → Mono
-
--- because of def `Injective`:
-Dependency Mono → Iso
 
 -- set_option lean4game.showDependencyReasons true
 

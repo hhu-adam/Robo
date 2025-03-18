@@ -72,6 +72,10 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
 
 DisabledTactic tauto
 
+/---/
+TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
+NewTheorem imp_iff_or_not
+
 Conclusion "
 **Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich Euch auch gar
 nicht länger aufhalten.

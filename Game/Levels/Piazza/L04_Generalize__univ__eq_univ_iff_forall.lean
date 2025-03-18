@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Piazza"
-Level 2
+Level 4
 
 Title ""
 
@@ -11,7 +11,9 @@ Introduction
 "
 namespace Set
 
-example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
+#check  (univ : Set ℕ)
+
+Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   Hint "
     **Du**:  Was ist denn `univ`?
 
@@ -21,26 +23,33 @@ example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
 
     **Robo**:  Jein. `univ : Set ℕ` ist “ganz ℕ”, aber aufgefasst als *Teilmenge* von `ℕ`.
 
-    Fin, Set, Sub und Mem sehen ich euch groß an.
+    Ext, Fin, Set, Sub und Mem sehen euch groß an.
 
-    **Set**:  Das kann man doch gar nicht verwechseln.  Ich kann sagen: das ist hier ist eine Blaubeere.
-    Das hier ist der ganze Korb Blaubeeren.
+    **Set**:  Das kann man doch gar nicht verwechseln!  Hier *ist* eine Blaubeere,
+    das hier ist der *Korb mit allen Blaubeeren*, und die Beere *liegt in* diesem Korb.
 
-    **Mem**:  Und genauso ist  `5 : ℕ`, aber `univ : Set ℕ`.  Das kann man doch gar nicht verwechseln!
+    **Mem**:  Und genauso *ist* 5 eine natürlich Zahl (`5 : ℕ`),
+     `univ : Set ℕ` ist die *Menge aller natürlicher Zahlen*, und `5` *liegt in* dieser Menge (`5 ∈ univ`).
+     Was ist daran verwirrend?
 
-    **Robo**:  Zerbrich dir nicht darüber den Kopf.
+    **Robo** (*zu dir*):  Zerbrich dir nicht den Kopf darüber.
     Ich schlage vor, du fängst hier einfach mal mit `rw [eq_univ_iff_forall]` an,
     dann siehst du genau, was gefragt ist.
     "
-
-  /- `ext` also works, but WANT to introduce
+  /-
+  `ext` also works, but WANT to introduce
   `eq_univ_iff_forall` and `generalize` here!
-  So `ext` is disabled    -/
-  /- Branch --
-    ext     Deshalb ist `ext` hier disabled.
+  So `ext` is disabled
+  -/
+  /-
+  Branch
+    ext
     simp
-  l-/
+  -/
   rw [eq_univ_iff_forall]
+  Hint "
+    **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
+    "
   simp
   intro x
   Hint "
