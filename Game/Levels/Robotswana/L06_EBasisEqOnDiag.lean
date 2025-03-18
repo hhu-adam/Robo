@@ -28,7 +28,7 @@ einmal mit.
 **Du**: Schön.  Sagte ich bereits, dass ich langsam Durst habe?
 "
 
-open Nat Matrix BigOperators
+open Nat Matrix
 
 /---/
 TheoremDoc Matrix.eq_on_diag_ebasis as "eq_on_diag_ebasis" in "Matrix"

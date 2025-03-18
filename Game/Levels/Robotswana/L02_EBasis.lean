@@ -18,7 +18,7 @@ Conclusion "
   **Du**: Jetzt bin ich aber neugierig, wer diese Zettel hier verloren oder weggeworfen hat. Komm, lass uns weitergehen.
 "
 
-open Nat Matrix BigOperators
+open Nat Matrix
 
 /---/
 TheoremDoc Matrix.E.mul_of_ne as "E.mul_of_ne" in "Matrix"

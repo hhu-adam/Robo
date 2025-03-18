@@ -13,7 +13,7 @@ import Game.Levels.Tmp.LinearAlgebra.Z01_Vector
 
 set_option tactic.hygienic false
 
-open Matrix BigOperators
+open Matrix
 
 World "Matrix"
 Level 2
@@ -35,4 +35,4 @@ example : outerProduct ![(1 : ℝ),1] ![1,1] = !![1,1;1,1] := by
 
 -- Show that
 
-open Matrix BigOperators
+open Matrix

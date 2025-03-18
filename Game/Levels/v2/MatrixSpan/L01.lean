@@ -23,7 +23,7 @@ vector is built up from it.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement (a b c : ℝ) : ![a,b,c] 0 + ![a,b,c] 1 = a + b := by
   rfl

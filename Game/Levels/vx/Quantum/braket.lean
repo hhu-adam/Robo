@@ -17,7 +17,7 @@ Introduction
 
 "
 
-open Nat Matrix BigOperators
+open Nat Matrix
 
 #check stdBasisMatrix
 variable {K V : Type _} [Field K]

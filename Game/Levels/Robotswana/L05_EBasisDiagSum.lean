@@ -20,7 +20,7 @@ Conclusion "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der si
 die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix StdBasisMatrix
 
 open Finset
 

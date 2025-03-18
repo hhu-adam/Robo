@@ -1,7 +1,10 @@
 import Mathlib
+import Game.Metadata
 
 
-open BigOperators Finset
+open Finset
+-- -- open BigOperators
+
 
 example (f : Fin n → ℕ) (h : ∀ k, f k ≠ 0) (hn : n > 0) :
     ∑ i : Fin n, f i ≠ 0 := by

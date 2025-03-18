@@ -35,7 +35,7 @@ Als ihr näher kommt, scheint euch Tracy zu bemerken.  Aber es scheint dadurch k
 zu sein.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix Finset
+open Nat Matrix StdBasisMatrix Finset
 
 /---/
 TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"

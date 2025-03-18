@@ -16,7 +16,8 @@ import Game.Metadata
         · linarith
 -/
 
-open Nat Finset BigOperators
+open Nat Finset
+-- TODO: do NOT open `BigOperators`, or the old mathlib delaborator takes precedence
 
 /- Babylon L01:  preparation for second sum_subset exercise below -/
 example (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
@@ -69,6 +70,10 @@ example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ
    - { i ∈ I | Even i} is rendered in a strange way
    - last step is a bit unexpected, see Note at the end, but is prepared above
 -/
+
+set_option pp.all false
+
+variable (I : Finset ℕ)
 
 example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i ∈ I | Even i} := by
   trans ∑ i ∈ { i ∈ I | Even i}, ((-1 : ℤ)^i + 1 : ℤ)

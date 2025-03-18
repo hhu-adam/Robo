@@ -16,7 +16,7 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement Submodule.subset_span {R : Type u_1} {M : Type u_4} [Semiring R]
     [AddCommMonoid M] [Module R M] {S : Set M} :

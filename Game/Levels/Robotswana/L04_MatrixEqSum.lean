@@ -17,7 +17,7 @@ Du beschließt, einer besonders markanten Spur zu folgen. Robo zieht dir hinterh
 sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix StdBasisMatrix -- BigOperators
 
 /-- Sagt aus, dass man jede $(n × n)$-Matrix (über $\mathbb{R}$) $A$ schreiben kann
 als $A = \sum_{i=0}^{n-1}\sum_{j=0}^{n-1} A_{ij} \cdot E(i, j)$.

@@ -1,5 +1,7 @@
 import Mathlib.Topology.Instances.Real
-open BigOperators Function Set Filter Topology TopologicalSpace
+open Function Set Filter Topology TopologicalSpace
+-- -- open BigOperators
+
 
 /- # Topology via Filters
 inspired by MIL and Patrick Massot's slides:

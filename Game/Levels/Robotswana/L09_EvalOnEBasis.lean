@@ -21,7 +21,7 @@ Conclusion "
   **Du**: Okay. Lass uns vorsichtig näher gehen.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix StdBasisMatrix
 
 /---/
 TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"

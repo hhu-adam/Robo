@@ -16,7 +16,7 @@ Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgest
 Conclusion "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und
 unvorsichtiger als zuvor."
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix StdBasisMatrix
 
 /---/
 TheoremDoc Matrix.zero_on_offDiag_ebasis as "zero_on_offDiag_ebasis" in "Matrix"

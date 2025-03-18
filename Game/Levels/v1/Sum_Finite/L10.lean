@@ -10,7 +10,7 @@ Introduction
 
 "
 
-open Finset BigOperators
+open Finset
 
 
 #check sum_congr

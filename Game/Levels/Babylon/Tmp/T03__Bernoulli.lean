@@ -14,7 +14,8 @@ TODO: Induktion (& induktion vs obtain)
 
 "
 
-open BigOperators
+-- open BigOperators
+
 
 example (x : ℕ) (n : ℕ) : 1 + n * x ≤ (x + 1) ^ n := by
   induction' n with n hn

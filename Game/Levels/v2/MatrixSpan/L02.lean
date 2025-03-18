@@ -14,7 +14,7 @@ Since vectors are functions, we define their addition pointwise.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement : ![(sqrt 3)/2, 1/2] + ![-(sqrt 3)/2, 1/2] = ![0, 1] := by
   Branch

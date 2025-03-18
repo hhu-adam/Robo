@@ -13,7 +13,7 @@ Title "" -- "Span"
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement {a b : ℝ} (h : 2 • ![a, -b] + - ![a + b, a - b] = ![0, 0]) :
     a = 0 ∧ b = 0 := by

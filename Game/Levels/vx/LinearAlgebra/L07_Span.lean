@@ -15,7 +15,7 @@ Introduction
 
 open Submodule Set Finsupp
 
-open BigOperators -- Summen Notation
+-- open BigOperators -- Summen Notation
 
 -- TODO: Why is this not in Mathlib?
 lemma mem_span_of_mem {V K : Type _} [Field K] [AddCommMonoid V]

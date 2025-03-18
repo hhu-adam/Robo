@@ -42,7 +42,8 @@ gesagt, es soll für das Argument `n` den Term `m + 1` einsetzen. Hier mach das 
 unter weniger Stress:
 "
 
-open BigOperators
+-- open BigOperators
+
 
 Statement (m : ℕ) : ∑ i : Fin (m + 1), (i : ℕ) + (m + 1) = ∑ i : Fin (Nat.succ m + 1), ↑i := by
   Branch

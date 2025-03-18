@@ -6,7 +6,8 @@ World "Babylon"
 Level 5
 
 open Fin
-open BigOperators
+-- open BigOperators
+
 
 Title "" -- "Summe aller ungeraden Zahlen"
 
@@ -16,7 +17,7 @@ Aus reiner Neugierde gehst Du zu einem etwas kleineren Nachbarsturm hinüber.
 "
 
 /-- $\sum_{i = 0}^{n-1} (2i + 1) = n ^ 2$. -/
-Statement (n : ℕ) : (∑ i : Fin n, (2 * i + 1)) = n ^ 2 := by
+Statement (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
   Hint "**Robo**: Das funktioniert genau gleich wie zuvor, viel Glück."
   induction n
   simp

@@ -27,7 +27,8 @@ beim zweiten geht's durch alle Instanzen, die es kennt.
 verinnerlichen:
 "
 
-open BigOperators
+-- open BigOperators
+
 
 Statement (m : ℕ) :
       ∑ i : Fin (m + 1), (i : ℕ) + (m + 1) = ∑ i : Fin (Nat.succ m + 1), ↑i := by

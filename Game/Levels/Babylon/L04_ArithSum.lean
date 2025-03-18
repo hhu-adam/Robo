@@ -17,11 +17,11 @@ Nach einem kurzen Spaziergang steht ihr davon.
 **Babylonier**: Richtig. Gauß war ein Babylonier!
 "
 
-open Fin BigOperators
+open Fin -- BigOperators
 
 /-- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/
 Statement arithmetic_sum (n : ℕ) :
-    2 * (∑ i : Fin (n + 1), i) = n * (n + 1) := by
+    2 * (∑ i : Fin (n + 1), (i:ℕ)) = n * (n + 1) := by
   Hint "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,
   wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?
   Ich würde gerne Induktion über $n$ anwenden.

@@ -115,5 +115,5 @@ Dependency Iso → Ciao
 /-! Build the game. Show's warnings if it found a problem with your game.
 
 (need to open all namespaces with local definitions) -/
-open BigOperators in
+-- open BigOperators in
 MakeGame

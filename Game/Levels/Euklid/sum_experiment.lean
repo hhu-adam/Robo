@@ -1,6 +1,9 @@
 import Mathlib
+import Game.Metadata -- custom delaborators for sums and products
 
-open BigOperators Finset Nat
+open Finset Nat
+-- -- open BigOperators
+
 
 /- Finset.range n  is the set of natural numbers {0,…,n-1}.
 ! Finset.range  should not be confused with  Function.range  !

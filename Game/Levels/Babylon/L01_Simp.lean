@@ -33,7 +33,8 @@ warum er steht. Hier zum Beispiel.
 
 -- (Tipp: `simp?` zeigt an, welche Lemmas `simp` benutzen würde.)
 
-open BigOperators
+-- open BigOperators
+
 
 Statement (n : ℕ) : (∑ i : Fin n, (0 + 0)) = 0 := by
   Hint "

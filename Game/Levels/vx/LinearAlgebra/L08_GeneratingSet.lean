@@ -18,7 +18,7 @@ aber per Konvention wird `≤` bevorzugt, da `x ≤ ⊤` immer gilt (siehe `le_t
 
 open Submodule Set Finsupp
 
-open BigOperators -- Summen Notation
+-- open BigOperators -- Summen Notation
 
 /-- Zeige, dass `![1, 0], ![1, 1]` den ganzen `ℝ`-Vektorraum `ℝ²` aufspannt. -/
 Statement : ⊤ ≤ span ℝ (Set.range ![(![1, 0] : Fin 2 → ℝ), ![1, 1]]) := by

@@ -11,10 +11,11 @@ Introduction
 "
 Ihr schaut euch den nächsten Turm an."
 
-open BigOperators
+-- open BigOperators
+
 
 /-- $\sum_{i=0}^{n-1} (i + 1) = n + \sum_{i=0}^{n-1} i$. -/
-Statement (n : ℕ) : ∑ i : Fin n, (i + 1) = n + (∑ i : Fin n, i) := by
+Statement (n : ℕ) : ∑ i : Fin n, ((i: ℕ) + 1) = n + (∑ i : Fin n, (i:ℕ)) := by
   Hint "**Du**: Hmm, wieder `simp`?
 
   **Robo**: Nicht ganz. `simp` benutzt nur Lemmata, die klar eine Vereinfachung darstellen.

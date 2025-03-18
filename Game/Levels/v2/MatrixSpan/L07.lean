@@ -12,7 +12,7 @@ Title "" -- "Span"
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 example : Submodule ℝ (Fin 2 → ℝ) where
   carrier := {v : Fin 2 → ℝ | 3 * v 0 - v 1 = 0  }  -- { (![x, y] : Fin 2 → ℝ) | 3 * x - y = 0 } -- -- --

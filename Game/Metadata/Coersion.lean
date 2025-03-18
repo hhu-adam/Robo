@@ -20,7 +20,7 @@ but the aim is to test how relevant this is in the scope of this game.
 -/
 
 
-open Lean BigOperators
+open Lean
 
 namespace BigOperators
 

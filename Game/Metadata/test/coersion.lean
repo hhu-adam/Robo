@@ -1,7 +1,8 @@
 import Game.Metadata.Coersion
 import Mathlib
 
-open BigOperators
+-- open BigOperators
+
 
 -- test
 example (f : Fin n → ℤ): ∑ i : Fin n, f i = ∑ i : Fin n, f i := by rfl

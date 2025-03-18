@@ -31,9 +31,10 @@ bedrohlich an und fragt in tiefer Stimme:
 
 open Fin
 
-open BigOperators
+-- open BigOperators
 
-Statement (m : ℕ) : (∑ i : Fin (m + 1), i ^ 3) = (∑ i : Fin (m + 1), i) ^ 2 := by
+
+Statement (m : ℕ) : (∑ i : Fin (m + 1), (i:ℕ) ^ 3) = (∑ i : Fin (m + 1), (i:ℕ)) ^ 2 := by
   Hint "**Du**: Gulp. Naja das wird schon klappen. Also man fängt wieder mit Induktion an …"
   induction m with n n_ih
   Hint "**Du**: Also den Induktionsanfang kann man einfach zeigen …"

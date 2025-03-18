@@ -22,7 +22,7 @@ main things that need to be introduced and explained:
 - `Finset.prod_insert`      -- analogous to Finset.add_insert, used in draft of Babylon
 -/
 
-open Finset BigOperators
+open Finset
 
 namespace Nat
 

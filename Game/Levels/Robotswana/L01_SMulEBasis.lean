@@ -22,7 +22,7 @@ Darunter ein bisschen wildes Gekritzel, das aber deutlich mit einer klaren
 Zeile angefangen hat:
 "
 
-open Nat Matrix BigOperators
+open Nat Matrix
 
 def Matrix.E {n : ℕ} (i j : Fin n) : Mat[n,n][ℝ] :=
   stdBasisMatrix i j (1 : ℝ)

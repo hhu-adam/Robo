@@ -16,7 +16,7 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
     [Module K V] (M : Set V) {x : V} (h : x ∈ M) :

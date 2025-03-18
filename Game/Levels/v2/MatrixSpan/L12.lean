@@ -18,7 +18,7 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement {n : ℕ} (A : Mat[n,n][ℝ]) : A * A ∈ Submonoid.powers A := by
   apply MulMemClass.mul_mem -- what is this?

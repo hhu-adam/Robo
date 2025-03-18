@@ -11,7 +11,8 @@ alias _root_.Nat.prime_def := Nat.prime_def_lt''
 
 /-! # Delab Problems -/
 /-
-open BigOperators
+-- open BigOperators
+
 open Lean PrettyPrinter Delaborator SubExpr
 
 @[delab app.Finset.sum]

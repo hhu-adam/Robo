@@ -18,7 +18,7 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 lemma powers_span_commute {n : ℕ} {A : Mat[n,n][ℝ]}
     {X Y : Mat[n,n][ℝ]} (hX : X ∈ Submodule.span ℝ (Submonoid.powers A))

@@ -19,7 +19,7 @@ Conclusion "Schließlich macht ihr euch auf den Rückweg.
 Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch
 die Grasslandschaft zurück zu eurem Schiff."
 
-open Matrix BigOperators Fintype
+open Matrix Fintype
 
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
     trace (A - t • 1) = trace A - t • n := by

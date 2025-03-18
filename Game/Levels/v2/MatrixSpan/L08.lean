@@ -12,7 +12,7 @@ Title "" -- "Span"
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement (M : Type*) [AddCommMonoid M] [Module ℝ M] (S : Submodule ℝ M) (x : M) (r : ℝ) (hr : r ≠ 0) :
     r • x ∈ S ↔ x ∈ S := by

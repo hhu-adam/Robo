@@ -25,7 +25,7 @@ The inner product (aka dot product) of vectors extends the notion of multiplicat
 "
 
 
-open Matrix BigOperators
+open Matrix
 
 -- example : ![] ⬝ᵥ ![] = (![] : Fin 0 → ℝ) := by
 --   simp [dotProduct]

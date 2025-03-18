@@ -27,7 +27,7 @@ Robo reicht dir eine Flasche Wasser.
 
 **Robo**:  Ja, komm mit! Da hinten hab ich etwas gesehen."
 
-open Nat Matrix BigOperators StdBasisMatrix Finset
+open Nat Matrix StdBasisMatrix Finset
 
 /---/
 TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"

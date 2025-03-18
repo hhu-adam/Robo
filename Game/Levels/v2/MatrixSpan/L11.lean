@@ -18,7 +18,7 @@ containing `S`.
 
 -/
 
-open Real Function Set Finset BigOperators
+open Real Function Set Finset
 
 Statement {V K : Type _} [Field K] [AddCommMonoid V] [Module K V] (M : Set V) {x y : V}
     (h₁ : x ∈ M) (h₂ : y ∈ M) :
