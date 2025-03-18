@@ -42,7 +42,7 @@ example {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   rw [h, g]
   ring
 
-/- Prado L03* -/
+/- Prado L03a -/
 theorem Robo.even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   unfold Even
   -- short solution using unnecessary step from L02*
@@ -62,12 +62,12 @@ theorem Robo.even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
     ring
   -/
 
-/- Prado L03a:  annoying question from Guino -/
+/- Prado L03b:  annoying question from Guino -/
 example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
   use 11
   decide
 
-/- Prado L03b: `not_dvd_of_between_consec_multiples` -/
+/- Prado L03c: `not_dvd_of_between_consec_multiples` -/
 theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   by_contra h_dvd
   obtain ⟨a, ha⟩ := h_dvd

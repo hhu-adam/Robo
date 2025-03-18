@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 4
 
-Title "" -- "Primzahlen"
+Title ""
 
 Introduction"
 **Du**:  Gut.  Und kannst du mir jetzt zeigen, wie man mit Primzahlen arbeitet?
@@ -58,8 +58,4 @@ TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def
 TheoremTab "ℕ"
 
-Conclusion "Guino schaut euch noch einmal über die Schulter.
-
-**Guino**:  Ihr seid ja wirklich ganz eifrig bei der Sache!
-Ich hatte schon befürchtet, ich müsste euch unterhalten.
-"
+Conclusion ""
