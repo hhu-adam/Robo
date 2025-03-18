@@ -1,5 +1,4 @@
-import Mathlib
-
+import Game.Metadata
 /-
    Idea is to sum over Icc 0 n instead of Fin (n+1)
    This makes proofs a bit longer but gives more flexibility,

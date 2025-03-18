@@ -1,4 +1,3 @@
-import Mathlib
 import Game.Metadata
 /-
 main things that need to be introduced and explained:
@@ -23,7 +22,6 @@ main things that need to be introduced and explained:
 - `Finset.prod_insert`      -- analogous to Finset.add_insert, used in draft of Babylon
 -/
 
-import Mathlib
 open Finset BigOperators
 
 namespace Nat
