@@ -1,5 +1,5 @@
 import Mathlib
-import Game.MetaData.Batteries.ExtendedBinder
+import Game.MetaData.ExtendedBinder
 -- import Mathlib.Algebra.Group.Equiv.Opposite
 -- import Mathlib.Algebra.Group.TypeTags.Basic
 -- import Mathlib.Algebra.BigOperators.Group.Multiset.Defs
