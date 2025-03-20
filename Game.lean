@@ -57,7 +57,17 @@ Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.
 Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
   – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
 
-Hintergrundinfos findest du im Menü unter *Game Info*.
+## Nachrichten
+
+`[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
+
+Leider war nach dem Update wegen Problemen mit unserer Speicherverwaltung das Spiel für mehrere Stunden nicht verfügbar.
+Wir arbeiten daran, dass das in Zukunft reibungsloser verläuft.
+
+Die nächsten Planeten, die noch einmal überarbeitet werden, sind Babylon und Cantor.
+Und ein weiterer Planet – Euklid – ist auch bald fertig.
+
+Informationen zur Entstehungsgeschichte dieses Spiels findest du im Menü unter *Game Info*.
 "
 
 Info
