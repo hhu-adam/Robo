@@ -19,6 +19,9 @@ Nach einem kurzen Spaziergang steht ihr davon.
 
 open Fin -- BigOperators
 
+/---/
+TheoremDoc arithmetic_sum as "arithmetic_sum" in "Sum"
+
 /-- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/
 Statement arithmetic_sum (n : ℕ) :
     2 * (∑ i : Fin (n + 1), (i:ℕ)) = n * (n + 1) := by
@@ -81,6 +84,7 @@ Statement arithmetic_sum (n : ℕ) :
   ring
 
 NewTactic induction
+
 /---/
 TheoremDoc Nat.zero_eq as "zero_eq" in "ℕ"
 /---/
@@ -88,7 +92,11 @@ TheoremDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "ℕ"
 /---/
 TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "Sum"
 
-NewTheorem Fin.sum_univ_castSucc Nat.succ_eq_add_one mul_add add_mul Nat.zero_eq
+NewTheorem
+Nat.zero_eq
+Nat.succ_eq_add_one
+Fin.sum_univ_castSucc
+
 TheoremTab "Sum"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,

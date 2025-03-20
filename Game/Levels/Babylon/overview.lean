@@ -111,24 +111,30 @@ example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by
   simp
   ring
 
+
 /- Babylon L04 -/
-theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
+section Babylon04a
+open Robo.NN.Finset
+theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n , i) = n * (n + 1) := by
     induction n with d hd
     · simp
-    · rw [← Icc_insert_succ_right]
+    · rw [← insert_Icc_eq_Icc_add_one_right]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
           ring
         · simp
-      · simp  --or linarith
+      · linarith
+end Babylon04a
 
 /- Babylon NEW: good exercise for repeating what has been leaned in L04 -/
+section Babylon04b
+open Robo.ZZ.Finset
 example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     induction n with d hd
     · simp
     · simp
-      rw [← Icc_insert_succ_right]
+      rw [← insert_Icc_eq_Icc_add_one_right]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
             ring
@@ -141,17 +147,21 @@ example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           · linarith
         · simp
       · linarith
+end Babylon04b
 
 /- Babylon L05 -/
+section Babylon05
+open Robo.NN.Finset
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   induction n with d hd
   · simp
-  · rw [← Icc_insert_succ_right]
+  · rw [← insert_Icc_eq_Icc_add_one_right]
     · rw [sum_insert]
       · rw [hd]
         ring
       · simp
     · linarith
+end Babylon05
 
 /- Babylon L06 -/
 example (n m : ℕ) : ∑ i ∈ Icc 0 n, ∑ j ∈ Icc 0 m, (2 ^ i * (1 + j)) =
@@ -159,10 +169,12 @@ example (n m : ℕ) : ∑ i ∈ Icc 0 n, ∑ j ∈ Icc 0 m, (2 ^ i * (1 + j)) =
   rw [sum_comm]
 
 /- Babylon L07 -/
+section Babylon07
+open Robo.NN.Finset
 example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
   induction m with n n_ih
   · simp
-  · rw [← Icc_insert_succ_right]
+  · rw [← insert_Icc_eq_Icc_add_one_right]
     · rw [sum_insert]
       · simp
         rw [n_ih]
@@ -175,3 +187,4 @@ example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := 
         ring
       · simp
     · linarith
+end Babylon07

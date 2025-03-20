@@ -31,5 +31,8 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     rw [neg_inj] at h
     assumption
 
+/---/
+TheoremDoc neg_inj as "neg_inj" in "Function"
+
 NewTheorem neg_inj
 TheoremTab "Function"

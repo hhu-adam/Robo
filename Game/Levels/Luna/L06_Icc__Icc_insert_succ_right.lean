@@ -10,12 +10,13 @@ Title ""
 Introduction
 "**Ritha**:  Kann ich auch mal?  Hier."
 
-namespace Nat
 open Finset
-/---/
-TheoremDoc Nat.Icc_insert_succ_right as "Icc_insert_succ_right" in "≤"
+namespace Robo.ZZ.Finset
 
-Statement Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
+/-- (version for ℤ)-/
+TheoremDoc Robo.ZZ.Finset.insert_Icc_eq_Icc_add_one_right as "insert_Icc_eq_Icc_add_one_right" in "≤"
+
+Statement insert_Icc_eq_Icc_add_one_right {a b : ℤ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by
   Hint "
     **Du**:  Was ist denn `Icc`?
@@ -39,13 +40,34 @@ Statement Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
   Hint "Ritha macht wieder irgendwelche Zeichen."
   omega
 
-end Nat
 
 TheoremTab "≤"
 
-/---/
-TheoremDoc Nat.Icc_insert_succ_left as "Icc_insert_succ_left" in "≤"
-NewTheorem Nat.Icc_insert_succ_left
+/-- (version for ℕ)-/
+TheoremDoc Robo.NN.Finset.insert_Icc_eq_Icc_add_one_right as "insert_Icc_eq_Icc_add_one_right" in "≤"
+-- /-- (version for ℤ)-/  -- see above
+-- TheoremDoc Robo.ZZ.Finset.insert_Icc_eq_Icc_add_one_right as "Robo.NN.Finset.insert_Icc_eq_Icc_add_one_right" in "≤"
+/-- (version for ℕ)-/
+TheoremDoc Robo.NN.Finset.insert_Icc_eq_Icc_sub_one_left as "insert_Icc_eq_Icc_sub_one_left" in "≤"
+/-- (version for ℤ)-/
+TheoremDoc Robo.ZZ.Finset.insert_Icc_eq_Icc_sub_one_left as "insert_Icc_eq_Icc_sub_one_left" in "≤"
+/-- (version for ℕ)-/
+TheoremDoc Robo.NN.Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
+/-- (version for ℤ)-/
+TheoremDoc Robo.ZZ.Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
+/-- (version for ℕ)-/
+TheoremDoc Robo.NN.Finset.insert_Icc_sub_one_right_eq_Icc as "insert_Icc_sub_one_right_eq_Icc" in "≤"
+/-- (version for ℤ)-/
+TheoremDoc Robo.ZZ.Finset.insert_Icc_sub_one_right_eq_Icc as "insert_Icc_sub_one_right_eq_Icc" in "≤"
 
+NewTheorem
+Robo.NN.Finset.insert_Icc_eq_Icc_add_one_right
+Robo.NN.Finset.insert_Icc_eq_Icc_sub_one_left
+Robo.ZZ.Finset.insert_Icc_eq_Icc_sub_one_left
+Robo.NN.Finset.insert_Icc_add_one_left_eq_Icc
+Robo.ZZ.Finset.insert_Icc_add_one_left_eq_Icc
+Robo.ZZ.Finset.insert_Icc_add_one_left_eq_Icc
+Robo.NN.Finset.insert_Icc_sub_one_right_eq_Icc
+Robo.ZZ.Finset.insert_Icc_sub_one_right_eq_Icc
 
 Conclusion ""

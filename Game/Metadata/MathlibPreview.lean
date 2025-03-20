@@ -16,34 +16,83 @@ alias _root_.Nat.prime_def := Nat.prime_def_lt''
 --/
 
 
--- alread in mathlib
--- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_add_one_left_eq_Icc
-theorem Finset.insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
-  insert (b + 1) (Icc a b) = Icc a (b + 1) := by
-  ext x
-  simp only [mem_insert, mem_Icc]
-  omega
+/- The following lemmas are already included in newer versions of Mathlib, in general forms that apply to both ℕ and ℤ:
 
--- already in mathlib
--- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Interval/Finset/Nat.html#Nat.Icc_insert_succ_right
-theorem Nat.Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
+   `Finset.insert_Icc_eq_Icc_add_one_right` -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_eq_Icc_add_one_right
+   `Finset.insert_Icc_eq_Icc_sub_one_left`  -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_eq_Icc_sub_one_left
+   `Finset.insert_Icc_add_one_left_eq_Icc`  -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_add_one_left_eq_Icc
+   `Finset.insert_Icc_sub_one_right_eq_Icc` -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_sub_one_right_eq_Icc
+
+   As a temporary solution, we provide two separate versions – one for ℕ and one for ℤ – of each lemma,
+   in custom namespaces Robo.NN and Robo.ZZ. We open one of these namespaces whenever the theorems are required,
+   so that the user does not notice that there are two different versions in the background.
+-/
+theorem Robo.NN.Finset.insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
 insert (b + 1) (Finset.Icc a b) = Finset.Icc a (b + 1) := by
   ext x
   simp only [Finset.mem_insert, Finset.mem_Icc]
   omega
 
--- already in mathlib, in much more general form
--- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_add_one_left_eq_Icc
-theorem Finset.insert_Icc_add_one_left_eq_Icc {a b : ℕ} (h : a ≤ b) :
-insert a (Icc (a + 1) b) = Icc a b := by
+theorem Robo.ZZ.Finset.insert_Icc_eq_Icc_add_one_right {a b : ℤ} (h : a ≤ b + 1) :
+insert (b + 1) (Finset.Icc a b) = Finset.Icc a (b + 1) := by
   ext x
-  simp only [mem_insert, mem_Icc]
+  simp only [Finset.mem_insert, Finset.mem_Icc]
   omega
 
--- already in mathlib
--- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Interval/Finset/Nat.html#Nat.Icc_insert_succ_left
+theorem Robo.NN.Finset.insert_Icc_eq_Icc_sub_one_left {a b : ℕ} (h : a - 1 ≤ b) :
+insert (a - 1) (Finset.Icc a b) = Finset.Icc (a - 1) b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+theorem Robo.ZZ.Finset.insert_Icc_eq_Icc_sub_one_left {a b : ℤ} (h : a - 1 ≤ b) :
+insert (a - 1) (Finset.Icc a b) = Finset.Icc (a - 1) b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+theorem Robo.NN.Finset.insert_Icc_add_one_left_eq_Icc {a b : ℕ} (h : a ≤ b) :
+insert a (Finset.Icc (a + 1) b) = Finset.Icc a b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+theorem Robo.ZZ.Finset.insert_Icc_add_one_left_eq_Icc {a b : ℤ} (h : a ≤ b) :
+insert a (Finset.Icc (a + 1) b) = Finset.Icc a b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+theorem Robo.NN.Finset.insert_Icc_sub_one_right_eq_Icc {a b : ℕ} (h : a ≤ b) :
+insert b (Finset.Icc a (b - 1)) = Finset.Icc a b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+theorem Robo.ZZ.Finset.insert_Icc_sub_one_right_eq_Icc {a b : ℕ} (h : a ≤ b) :
+insert b (Finset.Icc a (b - 1)) = Finset.Icc a b := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+
+
+/- The following two lemmas are ℕ-versions of the previous ones, which are also already included in newer versions of mathlib:
+   https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Interval/Finset/Nat.html#Nat.Icc_insert_succ_left
+   https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Interval/Finset/Nat.html#Nat.Icc_insert_succ_right
+   But we prefer to have just one lemma that applies to both ℕ and ℤ, so these more specific versions are not so useful.
+-/
+/-
 theorem Nat.Icc_insert_succ_left {a b : ℕ} (h : a ≤ b) :
   insert a (Finset.Icc (a + 1) b) = Finset.Icc a b := by
   ext
   simp only [Finset.mem_insert, Finset.mem_Icc]
   omega
+
+-- already in mathlib
+--
+theorem Nat.Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
+insert (b + 1) (Finset.Icc a b) = Finset.Icc a (b + 1) := by
+  ext x
+  simp only [Finset.mem_insert, Finset.mem_Icc]
+  omega
+-/

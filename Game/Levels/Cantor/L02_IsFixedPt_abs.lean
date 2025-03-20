@@ -52,5 +52,12 @@ DefinitionDoc abs as "|·|"
 DefinitionDoc Function.IsFixedPt as "IsFixedPt"
 
 NewDefinition Function.IsFixedPt abs
+
+/---/
+TheoremDoc abs_of_nonneg as "abs_of_nonneg" in "≤"
+/---/
+TheoremDoc abs_nonneg as "abs_nonneg" in "≤"
+
+
 NewTheorem abs_of_nonneg abs_nonneg
 TheoremTab "Function"

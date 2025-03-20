@@ -42,4 +42,10 @@ TheoremDoc add_comm as "add_comm" in "Ring"
 /---/
 TheoremDoc add_assoc as "add_assoc" in "Ring"
 
-NewTheorem add_comm add_assoc
+/---/
+TheoremDoc mul_add as "mul_add" in "Ring"
+
+/---/
+TheoremDoc add_mul as "add_mul" in "Ring"
+
+NewTheorem add_comm add_assoc mul_add add_mul
