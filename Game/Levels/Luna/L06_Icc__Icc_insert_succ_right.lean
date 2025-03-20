@@ -10,12 +10,12 @@ Title ""
 Introduction
 "**Ritha**:  Kann ich auch mal?  Hier."
 
-namespace Finset
-
+namespace Nat
+open Finset
 /---/
-TheoremDoc Finset.insert_Icc_eq_Icc_add_one_right as "insert_Icc_eq_add_one_right" in "≤"
+TheoremDoc Nat.Icc_insert_succ_right as "Icc_insert_succ_right" in "≤"
 
-Statement insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
+Statement Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by
   Hint "
     **Du**:  Was ist denn `Icc`?
@@ -39,17 +39,13 @@ Statement insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
   Hint "Ritha macht wieder irgendwelche Zeichen."
   omega
 
-end Finset
+end Nat
 
 TheoremTab "≤"
 
--- TODO:  The following should be added for symmetry,
---        but depends on a more recent version of Mathlib
-/-
 /---/
-TheoremDoc Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
+TheoremDoc Nat.Icc_insert_succ_left as "Icc_insert_succ_left" in "≤"
+NewTheorem Nat.Icc_insert_succ_left
 
-NewTheorem Finset.insert_Icc_add_one_left_eq_Icc
--/
 
 Conclusion ""

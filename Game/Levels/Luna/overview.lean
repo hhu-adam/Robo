@@ -53,9 +53,9 @@ example (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n 
 
 /- Luna 06:
    Icc
-   Finset.insert_Icc_eq_Icc_add_one_right  (needed in BABYLON)  -/
+   Finset.Icc_insert_succ_right  (needed in BABYLON)  -/
 namespace Finset
-theorem Robo.Finset.insert_Icc_eq_Icc_add_one_right {a b : ℕ} (h : a ≤ b + 1) :
+theorem Robo.Finset.Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
   insert (b+1) (Icc a b) = Icc a (b+1) := by
   ext x
   simp

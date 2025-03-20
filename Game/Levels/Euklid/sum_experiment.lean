@@ -64,7 +64,7 @@ theorem arithmetic_sum'' (n : ℕ) :
     2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
     induction' n with d hd
     · simp
-    · rw [← insert_Icc_eq_Icc_add_one_right]
+    · rw [← Icc_insert_succ_right]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
@@ -80,7 +80,7 @@ theorem zero_sum (n : ℕ) :
     induction' n with d hd
     · simp
     · simp
-      rw [← insert_Icc_eq_Icc_add_one_right]
+      rw [← Icc_insert_succ_right]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
             ring

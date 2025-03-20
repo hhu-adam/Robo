@@ -14,19 +14,6 @@ or PR here!
 Issues concerning the underlying software are better placed
 in the [lean4game repo](https://github.com/leanprover-community/lean4game).
 
-## Translation
-
-Translations of the content from German into other languages are very welcome, but please not that a large part of the game isn't finalised yet.
-
-Please prioritise translation of the following planets, as they are
-essentially finalised:
-
-* Logo
-* Implis
-
-For translation, we use [`lean-i18n`](https://github.com/hhu-adam/lean-i18n). In particular, you can (optionally) build the lean project `Robo` once to make sure the file `.i18n/de/Game.pot` is up-to-date,
-then use any software to create a file `./i18n/en/Game.po` containing the translations (where you replace `en` with the ISO language code for your language). The recommended software for editing PO-files is [Poedit](https://poedit.net/)
-
 ## New Content
 
 Contributions of new planets are welcome! Each planet in the game talks about a new topic
@@ -61,41 +48,5 @@ In order to update the Lean version used by the game, you should follow these st
 ## Refactoring existing worlds
 
 The bash script `sofi.sh` (`s`ort `o`ut `f`ilnames and `i`mports), contained in the root folder,
-can help restructure existing worlds, for example if you want to reorder or rename existing levels,
-or add additional levels in the middle.  Say, for example, you have an “Arithmetic World” in the
-folder
-
-    Game/Levels/Arithmetic
-
-consisting of the three levels listed in the leftmost column of the table below. Suppose you want to
-switch the order of multiplication and addition, and insert an additional level on subtraction in
-between.  Then you can simply edit the *file names* as in the second column, and add the additional
-file for the level on substraction, so that the files are in the intended order when sorted
-alphabetically (as displayed in the third column).
-
-| existing levels    | manual changes           | files in alphabetical order | end result          |
-|--------------------|--------------------------|-----------------------------|---------------------|
-| L01\_hello.lean    | L01\_hello.lean          | L01\_hello.lean             | L01\_hello.lean     |
-| L02\_multiply.lean | **L03**\_multiply.lean   | L02a\_add.lean              | L02\_add.lean       |
-| L03\_add.lean      | **L02a**\_add.lean       | L02b\_substract.lean        | L03\_substract.lean |
-|                    | **L02b\_substract.lean** | L03\_multiply.lean          | L04\_multiply.lean  |
-
-Calling
-
-    ./sofi.sh Game/Levels/Arithmetic
-
-will then
-
-- rename the files as in the last column,
-- update the level number in each file,
-- make a reasonable attempt to update the `import` statements in each of the
-  level files, and
-- update the imports in the base file `Game/Levels/Arithmetic.lean`.
-
-More details are documented in the script itself.
-
-Don't forget to add all your new/renamed files to git with
-
-    git add Game/Levels/Arithmetic/
-
-at the end.
+can help restructure existing worlds, see the
+ [documentation](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md#5-refactoring-an-existing-world).

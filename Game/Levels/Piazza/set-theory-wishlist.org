@@ -16,7 +16,7 @@
 | Finset.sum_subset                     | --             | Babylon        | Robotswana                 |                              |
 |---------------------------------------+----------------+----------------+----------------------------+------------------------------|
 | Icc_subset_Icc_iff                    | (hard)         | Luna           | Babylon                    |                              |
-| insert_Icc_eq_Icc_add_one_right       | --             | Luna           | Babylon                    |                              |
+| Icc_insert_succ_right                 | --             | Luna           | Babylon                    |                              |
 | n < 3 --> n = 0 or 1 or 2             | --             | Luna           | Babylon                    |                              |
 |---------------------------------------+----------------+----------------+----------------------------+------------------------------|
 | ∈                                     | L01            | =              |                            |                              |
@@ -38,10 +38,8 @@
 
 
 Note:  revised Luna will depend on Piazza.
-      
+
 Babylon will depend on Piazza (for ∈).
 Babylon already depends on Luna.
 So it’s not a big deal if Luna will also depend on Piazza.
 And in any case, would make sense that "basic" Set Theory comes quite early.
-
-

@@ -9,7 +9,7 @@ import Game.Metadata
 
    needs to be replaced by something along the lines of
 
-        rw [← insert_Icc_eq_Icc_add_one_right]
+        rw [← Icc_insert_succ_right]
         · rw [sum_insert]
           · …
           · simp
@@ -85,6 +85,7 @@ example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i �
       apply hI at h
       rw [Odd.neg_pow]
       ring
+      rw [← odd_iff_not_even] at h
       assumption
   · trans ∑ i ∈ { i ∈ I | Even i}, (2 : ℤ)
     have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by
@@ -110,14 +111,11 @@ example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by
   simp
   ring
 
-
-
-
 /- Babylon L04 -/
 theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
-    induction' n with d hd
+    induction n with d hd
     · simp
-    · rw [← insert_Icc_eq_Icc_add_one_right]
+    · rw [← Icc_insert_succ_right]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
@@ -127,10 +125,10 @@ theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := b
 
 /- Babylon NEW: good exercise for repeating what has been leaned in L04 -/
 example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
-    induction' n with d hd
+    induction n with d hd
     · simp
     · simp
-      rw [← insert_Icc_eq_Icc_add_one_right]
+      rw [← Icc_insert_succ_right]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
             ring
@@ -146,9 +144,9 @@ example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
 
 /- Babylon L05 -/
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
-  induction' n with d hd
+  induction n with d hd
   · simp
-  · rw [← insert_Icc_eq_Icc_add_one_right]
+  · rw [← Icc_insert_succ_right]
     · rw [sum_insert]
       · rw [hd]
         ring
@@ -162,9 +160,9 @@ example (n m : ℕ) : ∑ i ∈ Icc 0 n, ∑ j ∈ Icc 0 m, (2 ^ i * (1 + j)) =
 
 /- Babylon L07 -/
 example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
-  induction' m with n n_ih
+  induction m with n n_ih
   · simp
-  · rw [← insert_Icc_eq_Icc_add_one_right]
+  · rw [← Icc_insert_succ_right]
     · rw [sum_insert]
       · simp
         rw [n_ih]
