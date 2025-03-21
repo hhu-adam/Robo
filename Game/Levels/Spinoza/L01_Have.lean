@@ -3,13 +3,12 @@ import Game.Metadata
 World "Spinoza"
 Level 1
 
-Title "" -- "Was wir haben, haben wir."
+Title ""
 
 Introduction
 "
 **Benedictus**: Hier, schaut mal. Das habe ich für Euch vorbereitet.
 "
-
 Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   Hint "**Du**: Also als erstes teile ich wohl mal das Und (`∧`) auf."
   obtain ⟨h₁, h₂⟩ := k
@@ -18,12 +17,12 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
     **Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.
 
-    **Robo**: Ja! Probier mal `have g : ¬ B`!"
+    **Robo**: Ja! Probier mal wieder `have`.  Genauer: `have g : ¬ B`!"
   have g : ¬ B
   · Hint "
       **Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?
 
-      **Robo**: Nee, jetzt musst du das erst noch beweisen, bevor du es dann benutzen kannst."
+      **Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst."
     Hint (hidden := true) "**Robo**: `apply` sollte helfen"
     apply h
     assumption
@@ -34,5 +33,5 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
 Conclusion "**Benedictus**: Das sieht gut aus!"
 
-NewTactic «have»
-DisabledTactic «suffices»
+--NewTactic «have»  -- now introduced very briefly in Implis
+DisabledTactic «suffices» tauto

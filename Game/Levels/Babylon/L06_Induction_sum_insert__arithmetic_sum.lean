@@ -22,7 +22,7 @@ open Finset
 open Robo.NN.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
 
 /---/
-TheoremDoc arithmetic_sum as "arithmetic_sum" in "Sum"
+TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑"
 
 -- This would also easily work as a sum in ℚ,
 -- and BOSS level would even be easier to prove in ℚ,
@@ -80,16 +80,16 @@ NewTactic induction
 -- /---/
 --TheoremDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "ℕ"
 -- /---/
--- TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "Sum"
+-- TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "∑"
 
 /---/
-TheoremDoc Finset.sum_insert as "sum_insert" in "Sum"
+TheoremDoc Finset.sum_insert as "sum_insert" in "∑"
 NewTheorem Finset.sum_insert
 
 -- Nat.zero_eq
 -- Nat.succ_eq_add_one
 -- Fin.sum_univ_castSucc
 
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion ""

@@ -78,7 +78,7 @@ Statement (m : ℕ) : (∑ i : Fin (m + 1), (i:ℕ) ^ 3) = (∑ i : Fin (m + 1),
   ring
 
 NewTheorem add_pow_two
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie
 aggressiv war, sondern nur eine sehr tiefe Stimme hat.

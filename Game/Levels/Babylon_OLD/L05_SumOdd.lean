@@ -29,4 +29,4 @@ Statement (n : ℕ) : (∑ i : Fin n, (2 * (i : ℕ) + 1)) = n ^ 2 := by
   --rw [Nat.succ_eq_add_one]
   ring
 
-TheoremTab "Sum"
+TheoremTab "∑"

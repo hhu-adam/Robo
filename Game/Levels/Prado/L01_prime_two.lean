@@ -32,4 +32,4 @@ Und wir hatten uns entschieden, zunächst nur die allerschönsten Primzahlen aus
 die geraden. Momentan ist die `2` unser einziges Exponat.
 Aber wir arbeiten mit Hochdruck daran, weitere gerade Primzahlen für unsere Dauerausstellung zu finden."
 
-NewDefinition Prime
+NewDefinition Nat.Prime

@@ -1,0 +1,236 @@
+Dependencies of 'Logo': none
+
+Dependencies of 'Implis':
+· 'Logo' because of:
+  [left, obtain, contradiction, constructor, assumption, right]
+
+Dependencies of 'Saturn':
+· 'Implis' because of:  -- !! could remove this by introducing rw twice !!
+  [rw]
+· 'Logo' because of:
+  [assumption]
+
+Dependencies of 'Quantus':
+· 'Implis' because of:
+  [by_cases, intro, rw]
+· 'Saturn' because of: -- needed for all the even/odd exercises
+  [ring]
+· 'Logo' because of:
+  [rfl, decide, obtain, assumption, contradiction]
+
+Dependencies of 'Spinoza':
+· 'Quantus' because of:
+  [Nat.even_square, Nat.even_iff_not_odd, Odd]
+  -- !! even_iff_not_odd will become a simp lemma,
+  --    but even_square is essential for current setup
+· 'Implis' because of:
+  [apply, intro, revert, rw]
+· 'Logo' because of:
+  [obtain, constructor, assumption, contradiction]
+
+Dependencies of 'Piazza':  -- all unavoidable in any case
+· 'Quantus' because of:
+  [Even]
+· 'Implis' because of:
+  [apply, by_cases, intro, rw]
+· 'Logo' because of:
+  [rfl, decide, obtain, constructor, assumption, tauto, right]
+
+Dependencies of 'Luna':
+· 'Spinoza' because of:
+  [have]                 -- !! This is unfortunate :(
+· 'Quantus' because of:
+  [push_neg, use]
+· 'Piazza' because of:
+  [simp, Finset.subset_iff, ext]
+· 'Implis' because of:
+  [apply, by_cases, intro, rw, imp_iff_or_not]
+· 'Logo' because of:
+  [left, rfl, obtain, assumption, contradiction, constructor, right]
+
+
+
+Dependencies of 'Prado':
+· 'Spinoza' because of:
+  [by_contra]
+· 'Quantus' because of:
+  [Even, unfold, use]
+· 'Piazza' because of:
+  [simp]
+· 'Implis' because of:
+  [apply, intro, symm, rw]
+· 'Saturn' because of:
+  [ring]
+· 'Luna' because of:
+  [linarith, omega]
+· 'Logo' because of:
+  [decide, obtain, assumption, constructor, contradiction]
+Dependencies of 'Babylon':
+· 'Spinoza' because of:
+  [have]
+· 'Quantus' because of:
+  [Even.neg_pow, Nat.odd_iff_not_even, Even, Odd.neg_pow]
+· 'Piazza' because of:
+  [simp]
+· 'Implis' because of:
+  [apply, intro, symm, rw, trans]
+· 'Saturn' because of:
+  [ring]
+· 'Luna' because of:
+  [Robo.NN.Finset.insert_Icc_eq_Icc_add_one_right,
+ linarith,
+ omega,
+ Robo.ZZ.Finset.insert_Icc_eq_Icc_sub_one_left,
+ Finset.Icc_subset_Icc_iff,
+ Robo.ZZ.Finset.insert_Icc_eq_Icc_add_one_right]
+· 'Logo' because of:
+  [rfl, obtain, assumption]
+
+Dependencies of 'Vieta':
+· 'Prado' because of:
+  [specialize]
+· 'Babylon' because of:
+  [induction]
+· 'Quantus' because of:
+  [use]
+· 'Piazza' because of:
+  [simp]
+· 'Implis' because of:
+  [apply, by_cases, intro, rw]
+· 'Saturn' because of:
+  [ring]
+· 'Luna' because of:
+  [linarith]
+· 'Logo' because of:
+  [rfl, obtain, assumption]
+Dependencies of 'Cantor':
+· 'Vieta' because of:
+  [let, congr_fun, Function.comp_apply]
+· 'Spinoza' because of:
+  [by_contra, suffices]
+· 'Quantus' because of:
+  [unfold, use]
+· 'Piazza' because of:
+  [Set.Subset.antisymm_iff, simp, ext]
+· 'Implis' because of:
+  [apply, by_cases, intro, rw]
+· 'Euklid' because of:
+  [let]
+· 'Logo' because of:
+  [obtain, assumption, contradiction, constructor, tauto]
+
+Dependencies of 'Euklid':
+· 'Prado' because of:
+  [Nat.prime_def, Nat.Prime.dvd_mul, Nat.exists_prime_and_dvd, specialize]
+· 'Spinoza' because of:
+  [by_contra, have]
+· 'Quantus' because of:
+  [use]
+· 'Piazza' because of:
+  [Finset.insert_erase, simp]
+· 'Implis' because of:
+  [apply, intro, rw]
+· 'Luna' because of:
+  [linarith]
+· 'Logo' because of:
+  [left, obtain, assumption, contradiction]
+Dependencies of 'Samarkand':
+· 'Prado' because of:
+  [specialize]
+· 'Vieta' because of:
+  [congr_arg, funext]
+· 'Spinoza' because of:
+  [have]
+· 'Mono' because of:
+  [Function.Injective.ne_iff]
+· 'Quantus' because of:
+  [unfold, use]
+· 'Piazza' because of:
+  [simp, ext, Set.eq_empty_iff_forall_not_mem]
+· 'Implis' because of:
+  [apply, intro, rw]
+· 'Epo' because of:
+  [Function.LeftInverse]
+· 'Logo' because of:
+  [obtain, Ne, assumption, constructor, tauto]
+
+Dependencies of 'Robotswana':
+· 'Prado' because of:
+  [mul_eq_mul_left_iff, specialize]
+· 'Babylon' because of:
+  [Finset.sum_subset]
+· 'Vieta' because of:
+  [if_neg, else, if, then, congr_arg, funext, if_pos]
+· 'Spinoza' because of:
+  [suffices, have]
+· 'Quantus' because of:
+  [unfold]
+· 'Piazza' because of:
+  [simp, ext]
+· 'Implis' because of:
+  [nth_rw, apply, by_cases, intro, symm, rw, trans]
+· 'Luna' because of:
+  [omega]
+· 'Logo' because of:
+  [rfl, obtain, assumption]
+Dependencies of 'Mono':
+· 'Prado': no reason found (manually added?)
+· 'Vieta' because of:
+  [congr_fun, congr_arg]
+· 'Spinoza' because of:
+  [have]
+· 'Quantus' because of:
+  [push_neg, using, unfold, use, choose]
+· 'Piazza' because of:
+  [simp]
+· 'Implis' because of:
+  [apply, by_cases, intro, rw]
+· 'Luna' because of:
+  [lt_trichotomy, linarith]
+· 'Epo' because of:
+  [Function.LeftInverse]
+· 'Logo' because of:
+  [left, decide, obtain, assumption, contradiction, constructor, right]
+Dependencies of 'Iso':
+· 'Spinoza' because of:
+  [have]
+· 'Quantus' because of:
+  [using, unfold, use, choose]
+· 'Piazza' because of:
+  [simp]
+· 'Mono': no reason found (manually added?)
+· 'Implis' because of:
+  [apply, intro, rw]
+· 'Logo' because of:
+  [obtain, constructor, assumption]
+· 'Epo' because of:
+  [Function.RightInverse, Function.LeftInverse]
+Dependencies of 'Epo':
+· 'Vieta' because of:
+  [let, congr_fun, funext]
+· 'Quantus' because of:
+  [push_neg, using, unfold, use, choose]
+· 'Piazza' because of:
+  [simp]
+· 'Implis' because of:
+  [apply, intro]
+· 'Saturn' because of:
+  [ring]
+· 'Euklid' because of:
+  [let]
+· 'Logo' because of:
+  [constructor, assumption, tauto]
+
+
+Dependencies of 'Ciao':
+· 'Robotswana': no reason found (manually added?)
+· 'Cantor': no reason found (manually added?)
+· 'Quantus' because of:
+  [use]
+· 'Implis' because of:
+  [intro]
+· 'Euklid': no reason found (manually added?)
+· 'Iso': no reason found (manually added?)
+· 'Luna' because of:
+  [linarith]
+· 'Samarkand': no reason found (manually added?)

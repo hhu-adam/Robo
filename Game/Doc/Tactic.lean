@@ -394,9 +394,10 @@ TacticDoc intro
 
 
 /--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.
+Wenn das Goal von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.
+(Mit `right` entscheidest du dich entsprechend für die rechte Seite.)
 
-## Beispiele
+## Beispiel
 
 Folgendes Beispiel kann mit `left` und `assumption` gelöst werden.
 ```
@@ -405,26 +406,20 @@ Objekte:
 Goal:
   A ∨ B
 ```
-
-## Hilfreiche Resultate
-
-* `right` entscheidet sich für die right Seite.
 -/
 TacticDoc left
 
-
-
-/--
-`let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.
-
-## Hilfreiche Resultate
-
-* `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber
-  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht
-  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
-* `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht.
+/-- Die Taktik `let` führt eine temporäre Definition ein, zum Beispiel
+`let x : ℕ := 5 ^ 2`.
 -/
 TacticDoc «let»
+
+-- * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber
+--  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht
+--  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
+
+-- * `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht.
+-- we decided not to introduce `set`
 
 /--
 `set f := _` funktioniert wie `let` aber versucht auch `f` im Goal überall einzusetzen.
@@ -641,9 +636,10 @@ TacticDoc rfl
 
 
 /--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.
+Wenn das Goal von der Form `A ∨ B` ist, enscheidestt du dich mit `right`, die rechte Seite zu zeigen.
+(Mit `left` entscheidest du dich entsprechend für die linke Seite.)
 
-## Beispiele
+## Beispiel
 
 Folgendes Beispiel kann mit `right` und `assumption` gelöst werden.
 ```
@@ -652,11 +648,6 @@ Objekte:
 Goal:
   A ∨ B
 ```
-
-
-## Hilfreiche Resultate
-
-* `left` entscheidet sich für die linke Seite.
 -/
 TacticDoc right
 

@@ -15,6 +15,7 @@ import Game.Levels.Robotswana
 import Game.Levels.Ciao
 
 import Game.Levels.Prado
+import Game.Levels.Euklid
 
 import Game.Levels.Vieta
 import Game.Levels.Epo
@@ -57,17 +58,24 @@ Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.
 Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
   – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
 
-## Nachrichten
+## Neuigkeiten
+`[2025-03-21]` Der jüngste Planet im Formaloversum heißt Euklid.
+Ansonsten gab es jede Menge kleiner Verbesserungen.
+Insbesondere wird auf Babylon jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
+
+Die nächsten und vorläufig letzten Planeten, die noch einmal überarbeitet werden werden, sind Cantor und Robotswana.
 
 `[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
 
 Leider war nach dem Update wegen Problemen mit unserer Speicherverwaltung das Spiel für mehrere Stunden nicht verfügbar.
 Wir arbeiten daran, dass das in Zukunft reibungsloser verläuft.
 
-Die nächsten Planeten, die noch einmal überarbeitet werden, sind Babylon und Cantor.
-Und ein weiterer Planet – Euklid – ist auch bald fertig.
+`[2025-02-20]` Die „Abbildungsplaneten“ sind fertig:  Vieta, Mono, Epo, Iso und Samarkand.
+Viel Spaß auf ihnen!
 
-Informationen zur Entstehungsgeschichte dieses Spiels findest du im Menü unter *Game Info*.
+`[2025-01-25]` Es gibt jetzt einen Planeten, um sich zu verabschieden:  Ciao.
+
+Hintergrundinformationen und Credits findest du im Menü unter *Game Info*.
 "
 
 Info
@@ -119,6 +127,7 @@ Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
+Dependency Euklid → Ciao
 
 -- set_option lean4game.showDependencyReasons true
 

@@ -46,10 +46,10 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i: ℕ) + 1) = n + (∑ i : Fin n, (i:ℕ
   ring
 
 /---/
-TheoremDoc Finset.sum_add_distrib as "sum_add_distrib" in "Sum"
+TheoremDoc Finset.sum_add_distrib as "sum_add_distrib" in "∑"
 
 NewTheorem Finset.sum_add_distrib
 -- TODO: where does add_comm belong?
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion "Der Babylonier macht ein sehr zufriedenes Gesicht."

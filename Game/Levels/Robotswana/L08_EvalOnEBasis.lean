@@ -115,7 +115,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 Lineare Abbildungen (oder genereller "additive" Abbildungen) kann man mit einer
 Summe vertauschen.
 -/
-TheoremDoc map_sum as "map_sum" in "Sum"
+TheoremDoc map_sum as "map_sum" in "∑"
 
 TheoremTab "Matrix"
 NewTheorem map_sum

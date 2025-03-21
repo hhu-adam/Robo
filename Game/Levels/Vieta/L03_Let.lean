@@ -30,4 +30,4 @@ TheoremTab "Function"
 
 Conclusion""
 
-NewTactic «let»
+--NewTactic «let»

@@ -14,9 +14,9 @@ Introduction
 "
 
 /---/
-TheoremDoc not_dvd_of_between_consec_multiples as "not_dvd_of_between_consec_multiples" in "ℕ"
+TheoremDoc Nat.not_dvd_of_between_consec_multiples as "not_dvd_of_between_consec_multiples" in "ℕ"
 
-open Nat
+namespace Nat
 Statement not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   Hint "
   **Du**: `by_contra`?

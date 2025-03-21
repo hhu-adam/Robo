@@ -62,7 +62,7 @@ example (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → p 
 
 /- Euklid 03:
    - `Set.Finite`
-   - `Set.toFinite`
+   - `Set.toFinset`
   (- and `prod_insert`, again)
   IFF set of primes is finite, then there exists a number such that p ∣ a for all primes p!
 -/

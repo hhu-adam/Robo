@@ -38,4 +38,4 @@ entfernte Ziele in kleinen Schritte erreicht.
 "
 
 NewTactic «suffices»
-DisabledTactic «have»
+DisabledTactic «have» tauto

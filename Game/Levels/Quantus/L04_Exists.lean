@@ -65,20 +65,20 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Robo**: Mit `choose s hs using {h}` kannst du dieses `s` tatsächlich einführen."
   choose s hs using h
   Hint "
-    **Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = {n} ^ 2`?
+    **Du**: Und jetzt muss ich eine passende Zahl `r` finden, so dass `n ^ 2 = r + r`?
 
-    **Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
-  Hint (hidden := true) "
-    **Robo**: Also sowas ähnliches wie `use 4 * {s} ^ 3`, aber ich kann
-    dir leider nicht sagen, welche Zahl passt."
+    **Robo**: Genau. Wenn du willst, kannst du dir diese Zahl erst einmal mit
+    `let r := …`  zurechtlegen."
   Branch
     rw [hs]
-    Hint "**Robo**: Das geht auch, jetzt musst du aber wirklich `use` verwenden."
-    use 2 * s ^ 2
-    Hint (hidden := true) "**Du**: Ah, und jetzt `ring`!"
-    ring
-  use 2 * s ^ 2
+    Hint "**Robo**: Das geht auch, jetzt musst du der wirlich eine Zahl überlegen."
+  let r := 2 * s^2
   Hint "
+    **Robo**:  Die Zahl sieht gut aus!  Und jetzt sagst du einfach `use r`.
+    Du hättest natürlich auch gleich `use 2 * s^2` sagen können.
+  "
+  use r
+  Hint (hidden := true) "
     **Du**: Ah, und jetzt `ring`!
 
     **Robo**: Aber zuerst musst du noch mit
@@ -86,8 +86,13 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
   rw [hs]
   ring
 
-NewTactic unfold choose
+NewTactic unfold choose «let»
 NewHiddenTactic «using»
+-- `let` is introduced here only to avoid dependency of Vieta on Euklid
+--  Those are the first two planets that really need `let`,
+--  and introducing `let` there will create dependencies of all later planets
+--  on *both* of these!
+
 NewDefinition Even Odd
 
 Conclusion "Applaus!"

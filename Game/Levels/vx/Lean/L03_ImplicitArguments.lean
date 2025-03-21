@@ -62,7 +62,7 @@ Statement (m : ℕ) : ∑ i : Fin (m + 1), (i : ℕ) + (m + 1) = ∑ i : Fin (Na
   rfl
 
 OnlyTactic rw rfl simp decide
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion "**Du**: Gibt es auch noch ander Methoden implizite Argumente anzugeben.
 

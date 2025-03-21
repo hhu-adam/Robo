@@ -351,7 +351,7 @@ Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.
 Um mit dieser Definition zu arbeiten, ist es oft hilfreich, sie mit dem Lemma
 `prime_def` umzuschreiben.
 -/
-DefinitionDoc Prime as "Prime"
+DefinitionDoc Nat.Prime as "Prime"
 
 /-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
 nicht beweisbar ist.
@@ -374,3 +374,9 @@ DefinitionDoc Sum as "∑"
 $\prod_{i\in I} f(i)$.  Du schreibst das Produktzeichen als `\prod`.
  -/
 DefinitionDoc Prod as "∏"
+
+/-- Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Element hat.
+Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,
+aber nun explizit als endliche Teilmenge aufgefasst.
+-/
+DefinitionDoc Set.Finite as "Set.Finite"

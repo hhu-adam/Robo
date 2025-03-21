@@ -34,7 +34,7 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
       · simp
     · linarith
 
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion "
   **Babylonier**:  Und?  Gefällt es euch hier?

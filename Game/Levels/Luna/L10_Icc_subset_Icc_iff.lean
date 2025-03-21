@@ -37,12 +37,12 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
     Hint (hidden := true) "
       **Robo**:  Die Annahme `{h}` musst du sicherlich irgendwie ausnutzen.
       Du könnest `{h}` zum Beispiel auf die Ungleichung `a₁ ≤ b₁` oder auf `a₁ ≤ a₁` anwenden!
+      (Die Ungleichung `a₁ ≤ a₁` formulierst du am besten mit `have` aus.)
     "
     apply h at h₁
-    have : a₁ ≤ a₁ := by rfl  -- hopefully, `have` has been introduced (supposed to be introduced in Spinoza, so Luna will now depend on Spinoza)
+    have : a₁ ≤ a₁ := by rfl  -- briefly introduced in Implies, so that Luna does not depend on Spinoza
     apply h at this
     omega
   · omega
-
 
 Conclusion ""

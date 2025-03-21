@@ -38,7 +38,7 @@ Statement (m : ℕ) :
   rfl
 
 OnlyTactic rw rfl simp decide
-TheoremTab "Sum"
+TheoremTab "∑"
 
 Conclusion "
 **Du**: Danke Robo!
