@@ -211,6 +211,9 @@ DefinitionDoc Finset.insert as "insert"
 -/
 DefinitionDoc Finset.erase as "erase"
 
+/-- Für eine endliche Teilmenge `A : Finset T` ist `card A : ℕ` die Kardinalität von `A`,
+also die Anzahl der Elemente in `A`.-/
+DefinitionDoc Finset.card as "card"
 
 -- DefinitionDoc Disjoint as "Disjoint"
 -- "
@@ -360,3 +363,14 @@ DefinitionDoc «Prop» as "Prop"
 
 /-- Die Aussage `True : Prop` ist immer wahr. -/
 DefinitionDoc True as "True"
+
+
+/-- Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe
+$\sum_{i\in I} f(i)$.  Du schreibst das Summenzeichen als `\sum`.
+ -/
+DefinitionDoc Sum as "∑"
+
+/-- Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt
+$\prod_{i\in I} f(i)$.  Du schreibst das Produktzeichen als `\prod`.
+ -/
+DefinitionDoc Prod as "∏"

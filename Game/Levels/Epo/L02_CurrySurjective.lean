@@ -43,7 +43,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   Hint "
   **Robo**: Hilft dir vielleicht `ne_comm` weiter?
   Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
-  simp_rw [ne_comm]
+  simp [ne_comm]
 
 /---/
 TheoremDoc ne_comm as "ne_comm" in "Logic"

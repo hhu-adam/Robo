@@ -42,7 +42,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
 
     **Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
     simp
-  simp_rw [Matrix.smul_ebasis] -- Lvl 1
+  simp [Matrix.smul_ebasis] -- Lvl 1
   Hint "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus meiner Bibliothek.
   Das ist genau `apply matrix_eq_sum_std_basis`.
 

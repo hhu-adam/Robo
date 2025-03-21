@@ -32,7 +32,7 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
     · intro hx
       obtain ⟨y, hy⟩ := hx
       rw [← hy]
-      simp_rw [comp_apply] at h
+      simp [comp_apply] at h
       rw [h y]
     · intro hf
       use i
@@ -45,7 +45,7 @@ Statement range_fixedPoints {A : Type} (f : A → A) (h : f ∘ f = f) :
     unfold IsFixedPt
     simp --or rw [mem_setOf]
     Hint (hidden := true) "**Robo**: Wir hatten einmal `Function.comp_apply`!"
-    simp_rw [comp_apply] at h
+    simp [comp_apply] at h
     rw [h]
   · intro x hx
     simp

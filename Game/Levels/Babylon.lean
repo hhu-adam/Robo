@@ -1,10 +1,12 @@
-import Game.Levels.Babylon.L01_Simp
-import Game.Levels.Babylon.L02_Sum
-import Game.Levels.Babylon.L03_Sum
-import Game.Levels.Babylon.L04_ArithSum
-import Game.Levels.Babylon.L05_SumOdd
-import Game.Levels.Babylon.L06_SumComm
-import Game.Levels.Babylon.L07_Summary
+import Game.Levels.Babylon.L01_Sum_Simp_Card
+import Game.Levels.Babylon.L02_Card2
+import Game.Levels.Babylon.L03_sum_congr
+import Game.Levels.Babylon.L04_sum_subset
+import Game.Levels.Babylon.L05_sum_subset2
+import Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+import Game.Levels.Babylon.L07_Induction2_sum_insert2
+import Game.Levels.Babylon.L08_Induction3_sub_insert3
+import Game.Levels.Babylon.L09_Boss
 
 /-!
 The planet `Babylon` is about finite sums `∑`.

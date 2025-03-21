@@ -18,7 +18,9 @@ example (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := 
   rw [←h₂]
   assumption
 
-/- RING 05: preparation for very similar manipulation needed in boss level of BABYLON -/
+/- RING 05: Was meant as preparation for very similar manipulation in boss level of BABYLON
+            but this is no longer needed now that boss of BABYLON is formulated in ℚ!
+-/
 example (w a o : ℤ) (h2o : 2*o = 100) (ho2 : o^2 = -100*a - a^2) (h :  w = (a + o)^2) : w = 0 := by
   rw [add_pow_two] at h
   rw [mul_comm 2 a] at h

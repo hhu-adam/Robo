@@ -72,10 +72,8 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
       `rw` kann das nicht.
 
       **Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
-    simp_rw [one_on_diag_ebasis h₁ h₂] -- Lvl 8
-    Hint (hidden := true) "**Du** `_ * 1` ist `simp`, oder?"
-    simp
-    Hint "**Robo**: Die beiden Seiten sind per Definition gleich!"
+    simp [one_on_diag_ebasis h₁ h₂] -- Lvl 8
+    Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
     rfl
   Hint "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?
 
