@@ -85,6 +85,10 @@ Dieses Lernspiel wurde im Rahmen des Projekts
 an der Heinrich-Heine-Universität Düsseldorf entwickelt,
 finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.
 
+## Spielinhalt
+
+**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.
+
 ## Credits
 
 * **Projektleitung:** Marcus Zibrowius, Immi Halupczok
@@ -96,11 +100,12 @@ finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Ho
 ## Kontakt
 
 Das Spiel wird laufend überarbeitet.
-Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email an
-[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)
-oder erstelle einen Issue auf GitHub:
+Wir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,
+zum Beispiel per Email an
+[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).
+Wenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:
 
-* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues).
+* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)
 * zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
 "
 
