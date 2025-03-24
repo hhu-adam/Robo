@@ -1,8 +1,32 @@
 # Robo
 
-A game for learning lean 4 where a cute little Robo joins you on your exploration through the universe inhabited by formalosophers.
+A game for learning Lean 4 in which a cute little smart-elf named Robo joins you on your exploration of a universe inhabited by formalosophers.
 
-The game is primarily in German and can be played at the [Lean Game Server](https://adam.math.hhu.de/).
+The game is currently available only in German.  It can be played at the [Lean Game Server](https://adam.math.hhu.de/).
+
+## Overview over existing content
+
+| Planet     | key mathematical content          | Lean tactics introduced               | Boss level                                                         |
+|:---------- |:--------------------------------- | ------------------------------------- | ------------------------------------------------------------------ |
+| Logo       | propositional logic: ∧, ∨, ¬      | `rfl`, `left`, `right`,`tauto`, …     | –                                                                  |
+| Implis     | propositional logic: ⇒, ⇔         | `apply`, `intro`, `revert`, `rw`, …   | A ⇒ B equivalent to ¬ A ∨ B                                        |
+| Saturn     | elementary arithmetic             | `ring`                                | –                                                                  |
+| Quantus    | predicate logic, even/odd numbers | `use`, `obtain`, `decide`, `push_neg` | [Drinker's paradox](https://en.wikipedia.org/wiki/Drinker_paradox) |
+| Luna       | inequalities                      | `linarith`, `omega`                   | –                                                                  |
+| Spinoza    | proof structuring                 | `suffices`, `by_contra`, `contrapose` | –                                                                  |
+| Babylon    | ∑ notation, induction             | `induction'`                          | sum of cubes                                                       |
+| Piazza     | basic set theory                  | `ext`, `simp`                         | –                                                                  |
+| Prado      | prime numbers                     | –                                     | exactly one even prime                                             |
+| Euklid     | ∏ notation                        | –                                     | infinitely many primes                                             |
+| Vieta      | maps (between types)              | `funext`                              | another induction exercise                                         |
+| Epo        | surjective maps, axiom of choice  | `choose`                              | map surjective ⇔ has right inverse                                 |
+| Mono       | injective maps                    | –                                     | map injective ⇔ has left inverse                                   |
+| Iso        | bijective maps                    | –                                     | map bijective ⇔ has inverse                                        |
+| Samarkand  | (pre)images of subsets            | –                                     | map surjective ⇔ induced contravariant map on powersets injective  |
+| Cantor     | fixed points of maps              | –                                     | ℕ-valued sequences uncountable                                     |
+| Robotswana | matrices, trace                   | –                                     | characterization of trace map                                      |
+| Ciao       | (good-bye planet)                 | –                                     | –                                                                  |
+
 
 # Contribution
 
@@ -19,8 +43,8 @@ in the [lean4game repo](https://github.com/leanprover-community/lean4game).
 Contributions of new planets are welcome! Each planet in the game talks about a new topic
 in a standard Mathematics undergrad (bachelor) curriculum at university.
 
-Please follow our [Contribution Guide](./docs/NewPlanet.md) which helps you creating
-new content step-by-step.
+Please follow our [Contribution Guide](./docs/ContributionGuide.md),
+ which helps you create new content step-by-step.
 
 # Technical
 

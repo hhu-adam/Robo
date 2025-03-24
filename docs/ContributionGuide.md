@@ -84,7 +84,7 @@ Once you're done, **PR the new planet** with all it's levels.
 Once the level structure stands and has been approved, it is time to add `Hints`,
 a story to your Level, and the documentation of introduced Tactics/Theorems/Definitions.
 
-Refer to the [Style Guide](./STYLEGUIDE.md) where we started keeping track on uniform
+Refer to the [Style Guide](./StyleGuide.md) where we started keeping track on uniform
 style throughout the game.
 
 *Note: This is the only step which is required to happen in German. We're also happy if you

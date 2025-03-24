@@ -19,24 +19,24 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 
 ## Notationen / Begriffe
 
-|               | Beschreibung                                             |
-|:--------------|:---------------------------------------------------------|
-| →             | Eine Implikation.                                        |
-| ↔             | Genau-dann-wenn / Äquivalenz.                            |
+|     | Beschreibung                 |
+|:--- |:---------------------------- |
+| `→` | Implikation                  |
+| `↔` | genau-dann-wenn / Äquivalenz |
 
 ## Taktiken
 
-|     | Taktik                    | Beispiel                                                   |
-|:----|:--------------------------|:-----------------------------------------------------------|
-| 8   | `intro`                   | Für eine Implikation im Goal.                              |
-| 9   | `revert`                  | Umkehrung von `intro`.                                     |
-| 10  | `apply`                   | Wendet Implikation/Theorem (rückwärts) auf das Goal an.    |
-| 10ᵇ | `apply at`                | Wendet Implikation/Theorem (forwärts) auf eine Annahme an. |
-| 11  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                                |
-| 12  | `trans`                   | Ändert `A ↔ C` zu `A ↔ B` und `B ↔ C`                      |
-| 13  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.                  |
-| 13ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist.     |
-| 14  | `by_cases`                | Fallunterscheidung `P` und `¬P`                            |
+| Taktik           | Beispiel                                                          |
+|:---------------- |:----------------------------------------------------------------- |
+| `intro`          | holt linke Seite einer Implikations im Beweisziel in die Annahmen |
+| `revert`         | Umkehrung von `intro`                                             |
+| `apply`          | wendet Implikation “rückwärts” auf das Beweisziel an              |
+| `apply at`       | wendet Implikation “vorwärts” auf eine Annahme an                 |
+| `symm`           | ändert `A ↔ B` zu `B ↔ A`                                         |
+| `trans`          | ändert `A ↔ C` zu `A ↔ B` und `B ↔ C`                             |
+| `rw [h] `        | schreibt Beweisziel mithilfe der Äquivalenz `h` um                |
+| `rw [h] at h₁`   | schreibt Annahme `h₁` mithilfe der Äquivalenz `h` um              |
+| `by_cases h : P` | Fallunterscheidung zwischen `P` und `¬P`                          |
 "
 
 set_option tactic.hygienic false

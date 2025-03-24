@@ -37,13 +37,11 @@ Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter�
 Dann bist du hier genau richtig!
 In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek Mathlib zu arbeiten.
 
-Das Interface ist etwas vereinfacht, aber wenn du den *Editor Mode* aktivierst, fühlt es sich
+Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich
 fast genauso an wie in VSCode, der Standard-IDE für Lean.
+Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*, und schaltest alle autocompletion/correction Features deiner Bildschirmtastatur aus (z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).
 
-Rechts siehst du eine Übersicht. Das Spiel besteht aus mehreren Planeten, und jeder Planet hat mehrere Levels,
-die in Form von grauen Punkten dargestellt sind. Gelöste Levels werden grün.
-
-Klicke auf den ersten Planeten *Logo*, um deine Reise zu starten.
+Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.
 
 ## Spielstand
 
@@ -59,7 +57,7 @@ Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
   – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
 
 ## Neuigkeiten
-`[2025-03-21]` Der jüngste Planet im Formaloversum heißt Euklid.
+`[2025-03-24]` Der jüngste Planet im Formaloversum heißt Euklid.
 Ansonsten gab es jede Menge kleiner Verbesserungen.
 Insbesondere wird auf Babylon jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
 
