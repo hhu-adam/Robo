@@ -29,62 +29,63 @@ TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 -- set_option trace.Meta.synthInstance true in
 -- set_option pp.explicit true in
 
-Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →ₗ[ℝ] ℝ}
-    (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n.succ) :
+Statement Matrix.one_on_diag_ebasis {n : ℕ} (hn : n > 0) {f : Mat[n, n][ℝ] →ₗ[ℝ] ℝ}
+    (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     ∀ i, f (E i i) = 1 := by
   intro i
   Hint "
    Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:
 
-   **Du**: Ich glaube, ich habe eine Idee! Das `({n} + 1)`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:
+   **Du**: Ich glaube, ich habe eine Idee! Das `{n}`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:
   $$
     \\begin\{aligned}
-    (n+1) \\cdot f(E_\{i i})
+    n \\cdot f(E_\{i i})
     &= \\sum_j f(E_\{i i}) \\\\
     &= \\sum_j f(E_\{j j}) \\\\
     &= f(1) \\\\
-    &= n + 1
+    &= n
     \\end\{aligned}
   $$
 
   Der wesentlich Punkt ist, dass wir ja gesehen hatten, dass `f E i i` und `f E j j` für beliebige `i` und `j` gleich sind.  Also sind sie in der Summe austauschbar.
 
-  **Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation mit `({n} + 1)` injektiv ist?
+  **Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation mit `{n}` injektiv ist?
      Hatten wir dazu nicht mal ein Lemma? Mmm …
 
   Robo überlegt eine Weile.
 
   **Robo**:  Ich würds mal so versuchen:
      ```
-     suffices h : (succ n) * f (E i i) = (succ n : ℝ)*1
+     suffices h : n * f (E i i) = n * 1
      ```
   Und dann weiter mit `mul_eq_mul_left_iff`.
   "
-  -- apply nat_mul_inj' (n := n.succ)
+  -- apply nat_mul_inj' (n := n)
   -- BEGIN new alternative (cf. Prado)
-  suffices h : (succ n) * f (E i i) = (succ n : ℝ)*1 by
+  suffices h : n * f (E i i) = n * 1 by
     rw [mul_eq_mul_left_iff] at h
     obtain h | h := h
     · assumption
-    · Hint "
-      **Robo**:  `succ n ≠ 0`? Das kann bestimmt `omega` lösen …
-      … außer, dass hier noch eine Einbettung von ℕ nach ℝ versteckt ist.
-      Vielleicht probierst du erst einmal `rw [cast_eq_zero] at {h}`?
+    · Hint  "
+      **Robo**: In `{hn} : {n} > 0` und `{h} : n = 0` kann `omega`
+      bestimmt einen Widerspruch finden. Aber vielleicht versteckt sich in `{h}` gerade
+      noch eine implizite Einbettung von `ℕ` in `ℝ`.
+      Schreib vorsichtshalber erst einmal `simp at {h}`.
       "
-      rw [cast_eq_zero] at h
+      simp at h
       omega
   -- END
   Hint (hidden := true) "
   **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes
-  `trans ∑ j : Fin n.succ, f (E i i)`.
+  `trans ∑ j : Fin {n}, f (E i i)`.
   "
   Branch
     rw [←smul_eq_mul, ← LinearMap.map_smul]
     Hint "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest.
       Könnte aber auch funktionieren.
-      Probier mal `trans {f} (∑ j : Fin {n}.succ, E {i} {i})` als nächsten Schritt.
+      Probier mal `trans {f} (∑ j : Fin {n}, E {i} {i})` als nächsten Schritt.
       "
-    trans f (∑ x : Fin n.succ, E i i)
+    trans f (∑ x : Fin n, E i i)
     · Hint "**Du**: Genau, jetzt müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.
 
       **Robo**: `simp [E]` kann das sicher komplett vereinfachen." -- TODO: Better hint
@@ -112,9 +113,9 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n.succ,n.succ][ℝ] →�
         rw [ebasis_diag_sum_eq_one] -- Lvl 4
         rw [h₂]
         simp
-  · trans ∑ j : Fin n.succ, f (E i i)
+  · trans ∑ j : Fin n, f (E i i)
     · simp
-    · trans ∑ j : Fin n.succ, f (E j j )
+    · trans ∑ j : Fin n, f (E j j )
       · apply congr_arg
         ext
         Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
@@ -148,15 +149,3 @@ TheoremDoc Nat.cast_eq_zero as "cast_eq_zero" in "ℕ"
 TheoremTab "Matrix"
 NewTheorem smul_eq_mul LinearMap.map_smul Nat.cast_eq_zero
 --nat_mul_inj'
-
-/-
-#check mul_left_cancel_iff
-
-
-example {n : ℕ} (a b : ℝ) (h : (succ n) * a = (succ n) * b) : a = b := by
-  rw [mul_eq_mul_left_iff] at h
-  obtain h | h := h
-  · assumption
-  · rw [cast_eq_zero] at h
-    omega
--/

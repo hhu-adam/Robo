@@ -7,25 +7,33 @@ Title ""
 
 Introduction "Noch ein Funkspruch."
 
+namespace MvPolynomial
+Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
+  Hint "
+    **Du**:  Nanu, was ist denn `P` hier für ein Tier?
 
-Statement (a b : ℕ) : a * b = b * a := by
+    **Robo**: `P` ist ein “multivariantes Polynom”, wobei die Variablen mit `Fin 2`
+    durchnummeriert sind und die Koeffizienten in `ℚ` liegen.
+
+    **Du**:  Und was ist `Fin 2`?
+
+    **Robo**:  Die Standardmenge mit zwei Elementen – $\\\{0,1\\}$.  Die Variablen heißen also `X 0` und `X 1`.
+
+    **Du**:  Spielt hier aber eigentlich alles keine Rolle, oder?  Der Polynomring ist doch kommutativ!
+
+    **Robo**: So ist es.  Probier einfach wieder `ring`.  Oder benutze explizit das Lemma `mul_comm`.
+  "
+  Branch
+    rw [mul_comm]
   ring
 
 Conclusion "
   Wieder ein 👍.
-
-  **Du**: Aber halt, diesmal sind die Variablen doch in `ℕ`!
-  Das ist doch gar kein Ring!
-
-  **Robo**: Ist es nicht.  Aber `ring` funktioniert sogar für sogenannte Halbringe.
-  Und die Aussage hier heißt übrigens `mul_comm`.
-
-  **Du**: So so …
 "
 NewTactic ring
 
 /---/
-TheoremDoc mul_comm as "mul_comm" in "Ring"
+TheoremDoc mul_comm as "mul_comm" in "+ *"
 
 NewTheorem mul_comm
-DisabledTheorem mul_comm
+NewDefinition Fin

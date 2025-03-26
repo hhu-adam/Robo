@@ -229,6 +229,13 @@ DefinitionDoc Finset.erase as "erase"
 also die Anzahl der Elemente in `A`.-/
 DefinitionDoc Finset.card as "card"
 
+/-- Für `n : ℕ` ist `Fin n` die Menge $\{0, \dots, n-1\}$.
+
+(`Fin n` ist zu unterscheiden von `Icc 0 (n-1)`:  `Fin n` ist eine Menge, oder genauer ein Typ, also `Fin n : Type`,
+während `Icc 0 (n-1) : Set ℕ` eine Teilmenge von `ℕ` ist.)
+-/
+DefinitionDoc Fin as "Fin"
+
 -- DefinitionDoc Disjoint as "Disjoint"
 -- "
 -- "
@@ -398,6 +405,12 @@ Um mit dieser Definition zu arbeiten, ist es oft hilfreich, sie mit dem Lemma
 -/
 DefinitionDoc Nat.Prime as "Prime"
 
+/--
+`succ : ℕ → ℕ` ist die Abbildung `n ↦ n + 1`.
+Sie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*) ab.
+-/
+DefinitionDoc Nat.succ as "succ"
+
 /-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
 nicht beweisbar ist.
 
@@ -442,3 +455,8 @@ DefinitionDoc absValue as "|·|"
 -- This is literally true:
 -- example : ((abs : ℝ → ℝ) = fun x : ℝ ↦ |x|) := by
 --   rfl
+
+/-- Für eine Funktion `f : ℝ → ℝ` bedeutet `StrictMono f`, dass `f` streng monoton ist,
+dass also aus `a < b` auch `f a < f b` folgt.
+-/
+DefinitionDoc StrictMono as "StrictMono"

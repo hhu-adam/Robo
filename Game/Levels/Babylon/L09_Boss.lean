@@ -36,7 +36,7 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
       · simp
     · linarith
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie
 aggressiv war, sondern nur eine sehr tiefe Stimme hat.

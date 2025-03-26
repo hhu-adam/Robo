@@ -28,13 +28,11 @@ def Matrix.E {n : ℕ} (i j : Fin n) : Mat[n,n][ℝ] :=
   stdBasisMatrix i j (1 : ℝ)
 
 /-- `E i j` ist die `n × n`-Matrix (mit Werten in `ℝ`) mit einer `1` an
-Stelle $(i, j)$ und null überall sonst.
+Stelle $(i, j)$ und Null überall sonst.
 
-Bemerkung: Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,
+Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,
 welche auch nicht-quadratisch sein kann und einen beliebigen Wert `a` aus einem beliebigen
-Ring annehmen kann.
-
-Das Spiel bevorzugt `E`, um die Lesbarkeit zu erhöhen.
+Ring annehmen kann. Wir benutzen hier `E` einfach als Abkürzung.
 -/
 DefinitionDoc Matrix.E as "E"
 
@@ -43,9 +41,14 @@ TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
     A i j • E i j = stdBasisMatrix i j (A i j) := by
-  Hint "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen. Was meints du?
+  Hint "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen.
+  Jedenfalls sieht `Mat[{n},{n}]` stark nach $({n} \\times {n})$-Matrizen aus.
+  Ich weiß nur nicht mehr, was `Fin {n}` ist.
 
-  **Robo**: Ja! `stdBasisMatrix i j a` kenne ich, das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.
+  **Robo**: `Fin {n}` war die Menge $\\\{0,...,n-1\\}$.
+  Die Zeilen- und Spaltenindizes fangen hier also bei $0$ an und nicht bei $1$.
+  Und `stdBasisMatrix i j a` kenne ich zufällig.
+  Das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.
 
   **Du**: Und die `E`s sind dann einfach eine Abkürzung für den Fall `a = 1`?
 
@@ -84,6 +87,6 @@ brauchen.
 
 Damit folgt ihr weiter der Spur.
 "
-
 NewDefinition Matrix.E
+
 TheoremTab "Matrix"

@@ -68,7 +68,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     simp
     ring
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion "
   **Babylonier**:  Das habt ihr gut gemacht.

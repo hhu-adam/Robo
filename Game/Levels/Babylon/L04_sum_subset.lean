@@ -74,7 +74,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       ring
 
 /---/
-TheoremDoc Finset.sum_subset as "sum_subset" in "∑"
+TheoremDoc Finset.sum_subset as "sum_subset" in "∑ Π"
 NewTheorem Finset.sum_subset
 
-TheoremTab "∑"
+TheoremTab "∑ Π"

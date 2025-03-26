@@ -31,9 +31,9 @@ Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i
   simp
 
 /---/
-TheoremDoc Finset.sum_congr as "sum_congr" in "∑"
+TheoremDoc Finset.sum_congr as "sum_congr" in "∑ Π"
 NewTheorem Finset.sum_congr
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 NewDefinition Sum

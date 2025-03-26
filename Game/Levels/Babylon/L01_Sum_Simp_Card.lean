@@ -26,7 +26,7 @@ Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
     Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
   simp
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion "**Babylonier**: Seht gut, das passt!"
 

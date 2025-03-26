@@ -60,8 +60,9 @@ Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
 
 ## Neuigkeiten
 `[2025-03-27]` Der jüngste Planet im Formaloversum heißt Euklid.
-Außerdem gibt es jede Menge kleiner Verbesserungen, besonders auf Babylon und Cantor.
-Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`,
+Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn.
+Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
+Saturn endet jetzt mit einer polynomiellen Quaadratsummenformel.
 
 `[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
 

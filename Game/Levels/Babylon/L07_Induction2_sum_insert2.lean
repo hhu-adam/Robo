@@ -51,6 +51,6 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
         · simp
       · linarith
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion ""

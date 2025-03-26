@@ -37,10 +37,10 @@ Statement
   rw [sum_comm]
 
 /---/
-TheoremDoc Finset.sum_comm as "sum_comm" in "∑"
+TheoremDoc Finset.sum_comm as "sum_comm" in "∑ Π"
 
 NewTheorem Finset.sum_comm
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion "
   Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,

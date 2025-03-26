@@ -41,6 +41,6 @@ Statement (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → 
   · simp
 
 /---/
-TheoremDoc Finset.prod_insert as "prod_insert" in "Π"
+TheoremDoc Finset.prod_insert as "prod_insert" in "∑ Π"
 
 NewTheorem Finset.prod_insert

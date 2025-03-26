@@ -53,7 +53,7 @@ Statement (n : ℕ) : (∑ i : Fin n, (0 + 0)) = 0 := by
 
 OnlyTactic simp simp_rw
 NewTactic simp_rw
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 -- TODO: I think it's a bug in the game that `trans _ (Fin n) _` triggers `Fin`,
 -- but for now I introduce this definition here instead of `MatrixTrace`

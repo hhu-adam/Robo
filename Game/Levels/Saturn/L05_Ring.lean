@@ -7,6 +7,18 @@ Title ""
 
 Introduction ""
 
+/- a well-known polyonmial sums-of-squares formula --/
+
+namespace MvPolynomial
+Statement (A B :  MvPolynomial (Fin 4) ℝ) (hA : A = (X 0)*(X 3) - (X 1)*(X 2)) (hB : B = (X 0)*(X 2) + (X 1)*(X 3)) :
+  ((X 0)^2 + (X 1)^2) * ((X 2)^2 + (X 3)^2) = A^2 + B^2  := by
+  rw [hA, hB]
+  ring
+
+/-  older version:
+     very artificial & more complicated
+     was meant as preparation for Boss level of Babylon, but that level has become simpler
+
 Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (a + b)^2) : z = 0 := by
   Hint (hidden := true) "
     **Robo**:  Ich vermute, hier wirst du doch das ein oder andere Lemma brauchen, das wir gerade gesehen haben.
@@ -34,12 +46,12 @@ Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (
   rw [hb2] at h
   rw [h]
   ring
+-/
 
-
-TheoremTab "Ring"
+TheoremTab "+ *"
 
 Conclusion "
-  “Bestanden” heißt es kurz und knapp von anonymen Funker.
+  “Bestanden” heißt es kurz und knapp vom anonymen Funker.
 
   **Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert.
   Nichts wie weg!

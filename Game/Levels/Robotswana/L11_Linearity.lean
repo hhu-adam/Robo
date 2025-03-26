@@ -27,10 +27,8 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   rw [trace_sub]
   rw [trace_smul]
   rw [trace_one]
-  Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge auch alles
-  mit `simp` wenn wir nicht am spielen wären.
-
-  **Du**: Ist doch egal, das macht Spass!"
+  Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge natürlich auch alles
+  mit `simp`, wenn wir gerade nicht so viele Spaß am Spielen hätten."
   rw [card_fin]
 
 /---/

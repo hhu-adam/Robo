@@ -20,7 +20,7 @@ Nach einem kurzen Spaziergang steht ihr davon.
 open Fin -- BigOperators
 
 /---/
-TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑"
+TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 
 /-- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/
 Statement arithmetic_sum (n : ℕ) :
@@ -90,14 +90,14 @@ TheoremDoc Nat.zero_eq as "zero_eq" in "ℕ"
 /---/
 TheoremDoc Nat.succ_eq_add_one as "succ_eq_add_one" in "ℕ"
 /---/
-TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "∑"
+TheoremDoc Fin.sum_univ_castSucc as "sum_univ_castSucc" in "∑ Π"
 
 NewTheorem
 Nat.zero_eq
 Nat.succ_eq_add_one
 Fin.sum_univ_castSucc
 
-TheoremTab "∑"
+TheoremTab "∑ Π"
 
 Conclusion "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,
 Steintürme in allen Formen und Höhen stehen."

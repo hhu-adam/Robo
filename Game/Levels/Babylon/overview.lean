@@ -231,6 +231,26 @@ example (a b : ℕ) (hQ : (a : ℚ) = (b : ℚ)) : a = b := by
 
 
 
+/- Further ideas for induction exercises -/
+
+example (n : ℤ) : 3 ∣ n^3 + 2*n := by
+  sorry
+
+example (n : ℕ) : (n - 1) * (n + 1) = (n ^ 2 - 1) := by
+  sorry
+
+example (x : ℕ) (n : ℕ) : 1 + n * x ≤ (x + 1) ^ n := by
+  sorry
+
+example (n : ℕ) : (∑ i : Fin (n + 1), 2 * i - 1) = n ^ 2 := by
+  sorry
+
+example  (n : ℕ) : (n + 5)^2 < 2 ^ (n + 5) := by
+  sorry
+
+example (n : ℕ) (h : 5 ≤ n) : n^2 < 2 ^ n := by
+  sorry
+
 /- obsolete levels ------------------------------------/
 
 /- Babylon O03: sum_add_distrib -- NOT NEEDED -/

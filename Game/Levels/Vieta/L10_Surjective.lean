@@ -21,10 +21,19 @@ open Function Nat
 
 Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
     (hs : f ∘ g = succ ∘ f) : ∀ n, ∃ a, f a = n := by
-  Hint (hidden := true)"
-  **Du**: Wenn ich das richtig lese, soll ich im Wesentlichen zeigen, dass irgendeine Abbildung `f` surjektiv ist.
+  Hint "
+    **Du**: Was ist denn hier `succ`?
 
-  **Robo**:  Nicht nur irgendeine Abbildung.  Die Abbildung geht nach `ℕ`!
+    **Robo**:  `succ : ℕ → ℕ` ist die Abbildung, die eine natürliche Zahl auf ihren *successor*,
+    also ihren Nachfolger, abbildet.  Mit anderen Worten:  `n ↦ n + 1`.
+
+    **Du**: Ach so. Und von der Abbildung `f` soll ich, wenn ich das richtig lese,
+    im Wesentlichen zeigen, dass sie surjektiv ist.
+
+    **Robo**:  Sieht so aus!
+  "
+  Hint (hidden := true)"
+  **Robo**:  Schau mal, die Abbildung geht nach `ℕ`!
 
   Du hebst die Augenbrauen.
 
@@ -53,3 +62,4 @@ Conclusion "
 **Vieta**:  Bravo!  Jetzt aber nichts wie weg von hier.
 Hier gehts lang.  Ich bring euch zurück zum Raumschiff.
 "
+NewDefinition Nat.succ

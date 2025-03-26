@@ -53,26 +53,29 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   ext A
   Hint "**Du**: Und jetzt schreiben wir `f A` als Summe von Basiselementen."
   rw [eq_sum_apply_diag_ebasis] -- Lvl 7
-  Hint "**Robo**: Den Fall `n = 0` sehe ich sofort!
+  Hint "
+    **Du**: `induction n`?
 
-    **Du**: Wirklich?
-
-    **Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n`.
-
-    **Du**: Nicht `induction n`?
-
-    **Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
-  obtain ⟨⟩ := n
+    **Robo**: Probiers!
+    "
+  induction n with d hd
   · Hint (hidden := true) "**Robo**: Ich hab im Kopf mal `simp` ausprobiert. Probier es auch mal."
     simp
-  · Hint "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
+  · clear hd
+    Hint "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
 
       **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
-    Hint (hidden := true) "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,
-      `rw` kann das nicht.
-
-      **Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
-    simp [one_on_diag_ebasis h₁ h₂] -- Lvl 8
+    Hint (hidden := true) "
+      **Robo**: `one_on_diag_ebasis` braucht hier als eine Annahme `{d} + 1 > 0`.
+      Die solltest du am besten erst einmal mit `have` festhalten.
+      "
+    --simp at h₂
+    have : d + 1 > 0 := by
+      omega
+    Hint (hidden := true) "
+      **Robo**:  Denk daran, dass du die Gleichung `one_on_diag_ebasis` auch `simp` mitgeben kannst!
+    "
+    simp [one_on_diag_ebasis this h₁ h₂] -- Lvl 8
     Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
     rfl
   Hint "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?

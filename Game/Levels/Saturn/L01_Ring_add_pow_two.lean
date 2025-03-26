@@ -7,6 +7,8 @@ Title ""
 
 Introduction "Plötzlich erreicht euch ein Funkspruch."
 
+namespace MvPolynomial
+
 Statement (x y : ℚ) : (x + y) ^ 2 = x ^ 2 + 2 * x * y + y ^ 2 := by
   Hint "**Du**: Sind wir hier bei den anonymen Schulmathematikern?
   Man rechnet das doch einfach aus, indem man die Terme umsortiert.
@@ -30,7 +32,7 @@ Conclusion "
 NewTactic ring
 
 /---/
-TheoremDoc add_pow_two as "add_pow_two" in "Ring"
+TheoremDoc add_pow_two as "add_pow_two" in "+ *"
 
 NewTheorem add_pow_two
 DisabledTheorem add_pow_two

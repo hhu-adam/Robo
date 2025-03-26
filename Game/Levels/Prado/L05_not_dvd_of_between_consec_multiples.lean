@@ -33,9 +33,9 @@ Statement not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2
   omega
 
 /---/
-TheoremDoc lt_of_mul_lt_mul_left as "lt_of_mul_lt_mul_left" in "ℕ"
+TheoremDoc lt_of_mul_lt_mul_left as "lt_of_mul_lt_mul_left" in "≤"
 /---/
-TheoremDoc lt_of_mul_lt_mul_right as "lt_of_mul_lt_mul_right" in "ℕ"
+TheoremDoc lt_of_mul_lt_mul_right as "lt_of_mul_lt_mul_right" in "≤"
 NewTheorem lt_of_mul_lt_mul_left lt_of_mul_lt_mul_right
 
 TheoremTab "ℕ"

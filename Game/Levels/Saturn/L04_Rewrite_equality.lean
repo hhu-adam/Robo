@@ -7,7 +7,7 @@ Title ""
 
 Introduction "Der nächste Funkspruch sieht ein bisschen anders aus."
 
-Statement (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
+Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
   Hint "**Du**: Ich habe das Gefühl, das habe ich schon einmal gesehen.
 
   **Robo**:  Ja!  Das sieht so ähnlich aus wie eine Aufgabe, die wir auf *Implis*
@@ -37,15 +37,15 @@ Conclusion "
 -- The following theorems are only added for symmetry/completeness:
 
 /---/
-TheoremDoc add_comm as "add_comm" in "Ring"
+TheoremDoc add_comm as "add_comm" in "+ *"
 
 /---/
-TheoremDoc add_assoc as "add_assoc" in "Ring"
+TheoremDoc add_assoc as "add_assoc" in "+ *"
 
 /---/
-TheoremDoc mul_add as "mul_add" in "Ring"
+TheoremDoc mul_add as "mul_add" in "+ *"
 
 /---/
-TheoremDoc add_mul as "add_mul" in "Ring"
+TheoremDoc add_mul as "add_mul" in "+ *"
 
 NewTheorem add_comm add_assoc mul_add add_mul

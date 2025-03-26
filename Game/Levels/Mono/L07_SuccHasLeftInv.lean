@@ -7,9 +7,9 @@ Title "" -- ""
 
 Introduction ""
 
-open Function
+open Function Nat
 
-Statement : HasLeftInverse Nat.succ  := by
+Statement : HasLeftInverse succ  := by
   Hint "**Du**: Behauptet wird offenbar, dass die Abbildung `n ↦ n + 1` ein Linksinverses besitzt.
   Ich gebe also einfach die Abbildung `n ↦ n - 1` an … außer, dass das für `n = 0` nicht funktioniert.
 
