@@ -1,13 +1,14 @@
-import Game.Levels.Cantor.L00_CantorPowerset
 import Game.Levels.Cantor.L01_CantorPowerset
-import Game.Levels.Cantor.L02_IsFixedPt_abs
-import Game.Levels.Cantor.L03_fixedPoints_neg
-import Game.Levels.Cantor.L04_IsFixedPt_not
-import Game.Levels.Cantor.L05_IsFixedPt_odd
-import Game.Levels.Cantor.L06_idempotent
-import Game.Levels.Cantor.L07_CantorDiag
-import Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-import Game.Levels.Cantor.L08_CantorPowerset
+import Game.Levels.Cantor.L02_CantorPowerset
+import Game.Levels.Cantor.L03_IsFixedPt_abs
+import Game.Levels.Cantor.L04_fixedPoints_neg
+import Game.Levels.Cantor.L05_IsFixedPt_not
+import Game.Levels.Cantor.L06_IsFixedPt_odd
+import Game.Levels.Cantor.L07_idempotent
+import Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+import Game.Levels.Cantor.L09_CantorDiag
+import Game.Levels.Cantor.L10_CantorPowerset
+import Game.Levels.Cantor.L11_SequenceUncountable
 -- import Game.Levels.Cantor.L09_SequenceUncountable
 
 /-!
@@ -20,13 +21,16 @@ Title "Cantor"
 Image "images/Cantor.png"
 
 Introduction "
-Auf eurer Reise kommt ihr an einem Zwergplaneten vorbei. Darauf steht ein Haus mit unendlich vielen
-Türen auf jeder Seite. Ihr macht euch einen Spass daran von einem Ecken aus gleichzeitig Türen
-aufzutun und zu beobachten wie sich dein Schatten mit dem von Robo kreuzt.
+Ihr seid neben einem großen Zelt gelandet.  Vielleicht ein Zirkuszelt?
+Drinnen ist es recht dunkel.  Nur eine Bühne ist hell erleuchtet.
+Darauf steht ein Herr, der wie eine Mischung aus Professor und Magier aussieht,
+hält einen Monolog und führt anscheinend irgendetwas vor.
 
-Dann entdeckt ihr einen Mann, der draussen sitzt. In der Hand hält er eine Schriftrolle
-auf der unendliche Zahlenfolgen geschrieben sind, und die Rolle scheint in einem riesigen
-Haufen ausgerolltem Papier zu enden.
+Im Halbdunkel vor der Bühne stehen Stühle in langen Reihen.
+Ihr habt das Zelt offenbar direkt an einem Ende der ersten Reihe betreten.
+Das andere Ende könnt ihr gar nicht erkennen, so lang ist die Reihe.
+Und dahinter kommen viele weitere Reihen – auch in diese Richtung könnt ihr kein Ende erkennen.
+Aber alle Sitze sind leer.
 
-Die Person stellt sich euch als Cantor der Magier vor.
+Ihr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren.
 "

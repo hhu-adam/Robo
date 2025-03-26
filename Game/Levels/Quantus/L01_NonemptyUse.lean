@@ -16,3 +16,4 @@ Statement : Nonempty ℕ := by
 Conclusion "Ihr dreht das Blatt um."
 
 NewTactic use
+NewDefinition Nonempty

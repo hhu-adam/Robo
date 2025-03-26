@@ -66,6 +66,20 @@ DefinitionDoc Function.LeftInverse as "LeftInverse"
 -/
 DefinitionDoc Function.HasRightInverse as "Has…Inverse"
 
+
+
+/--
+Für eine Selbstabbildung `f : A → A` und ein Element `a : A` ist `IsFixedPt f a` die Aussage `f a = a`.
+Die Definition lässt sich mit `unfold IsFixedPt` leicht ausschreiben.
+-/
+DefinitionDoc Function.IsFixedPt as "IsFixedPt"
+
+/--
+Für eine Abbildung `f : A → A` ist `fixedPoints f : Set A` die Menge der Fixpunkte von `f `.
+Die Definition lässt sich mit `unfold fixedPoints` leicht ausschreiben.
+-/
+DefinitionDoc Function.fixedPoints as "fixedPoints"
+
 /--
 Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` die Vereinigung der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\union`.
 -/
@@ -219,11 +233,42 @@ DefinitionDoc Finset.card as "card"
 -- "
 -- "
 
--- DefinitionDoc Set.Nonempty as "Nonempty" "
+/-- `Nonempty T` bedeutet, dass ein Element in `T` („vom Typ `T`“) existiert.
+Ist `h : Nonempty T` als Annahme gegeben, erhalten wir ein Element `t : T` mit `obtain ⟨t⟩ := h`.
+Haben wir umgekehrt bereits ein Element `t : T` gegeben oder konstruiert,
+so können wir `Nonempty T` mit `use t` beweisen.
 
--- `A.Nonemty` ist als `∃ x, x ∈ A` definiert.
--- "
+Analog ist für eine Teilmenge `A : Set T` die Aussage `Nonemty A` definiert als als `∃ x, x ∈ A`.
+Das kann man in diesem Fall leicht mit `unfold Nonempty` überprüfen.
+-/
+DefinitionDoc Nonempty as "Nonempty"
+/-
+Note that in reality there's a distinction between `Nonempty` (for types) and `Set.Nonempty` (for sets)
 
+example (T : Type) : Nonempty T ↔ ∃ t : T, true := by
+  -- unfold Nonempty  -- fails
+  constructor
+  · intro h
+    obtain ⟨t⟩ := h
+    use t
+  · intro h
+    obtain ⟨t, ht⟩ := h
+    use t
+
+
+example {TT : Type} (T : Set TT) : Set.Nonempty T ↔ ∃ t : TT, t ∈ T := by
+  unfold Set.Nonempty -- optional
+  constructor
+  · intro h
+    obtain ⟨t⟩ := h
+    use t
+  · intro h
+    obtain ⟨t, ht⟩ := h
+    use t
+
+example {TT : Type} (T : Set TT) : Set.Nonempty T ↔ ∃ t : TT, t ∈ T := by
+  rfl
+-/
 
 -- LOGIK
 
@@ -364,6 +409,9 @@ DefinitionDoc «Prop» as "Prop"
 /-- Die Aussage `True : Prop` ist immer wahr. -/
 DefinitionDoc True as "True"
 
+/-- Die Aussage `False : Prop` ist immer falsch. -/
+DefinitionDoc False as "False"
+
 
 /-- Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe
 $\sum_{i\in I} f(i)$.  Du schreibst das Summenzeichen als `\sum`.
@@ -380,3 +428,17 @@ Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` diese
 aber nun explizit als endliche Teilmenge aufgefasst.
 -/
 DefinitionDoc Set.Finite as "Set.Finite"
+
+
+/-- Für `x : ℝ` ist `|x|` der Betrag von `x`.
+(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)
+-/
+DefinitionDoc absValue as "|·|"
+
+-- /-- `abs : ℝ → ℝ` ist die Betragsfunktion: `abs = fun x : ℝ ↦ |x|`
+-- -/
+-- DefinitionDoc absFunction as "abs"
+--
+-- This is literally true:
+-- example : ((abs : ℝ → ℝ) = fun x : ℝ ↦ |x|) := by
+--   rfl

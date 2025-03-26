@@ -39,5 +39,9 @@ Conclusion
 "
 
 OnlyTactic rw
+
+
+/-- Statt dieser Aussage können oft auch die Taktiken `tauto` oder `simp` verwendet werden. -/
+TheoremDoc Classical.not_not as "not_not" in "Logic"
 NewTheorem Classical.not_not
 TheoremTab "Logic"

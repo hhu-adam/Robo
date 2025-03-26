@@ -39,6 +39,12 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 | `by_cases h : P` | Fallunterscheidung zwischen `P` und `¬P`                          |
 "
 
+/-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
+TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
+
+/-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
+TheoremDoc imp_iff_not_or as "imp_iff_not_or" in "Logic"
+
 set_option tactic.hygienic false
 
 Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
@@ -72,8 +78,6 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
 
 DisabledTactic tauto
 
-/---/
-TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
 NewTheorem imp_iff_or_not
 
 Conclusion "

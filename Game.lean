@@ -39,7 +39,9 @@ In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbiblio
 
 Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich
 fast genauso an wie in VSCode, der Standard-IDE für Lean.
-Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*, und schaltest alle autocompletion/correction Features deiner Bildschirmtastatur aus (z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).
+Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*,
+und schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus
+(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).
 
 Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.
 
@@ -57,19 +59,13 @@ Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
   – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
 
 ## Neuigkeiten
-`[2025-03-24]` Der jüngste Planet im Formaloversum heißt Euklid.
-Ansonsten gab es jede Menge kleiner Verbesserungen.
-Insbesondere wird auf Babylon jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
-
-Die nächsten und vorläufig letzten Planeten, die noch einmal überarbeitet werden werden, sind Cantor und Robotswana.
+`[2025-03-27]` Der jüngste Planet im Formaloversum heißt Euklid.
+Außerdem gibt es jede Menge kleiner Verbesserungen, besonders auf Babylon und Cantor.
+Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`,
 
 `[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
 
-Leider war nach dem Update wegen Problemen mit unserer Speicherverwaltung das Spiel für mehrere Stunden nicht verfügbar.
-Wir arbeiten daran, dass das in Zukunft reibungsloser verläuft.
-
 `[2025-02-20]` Die „Abbildungsplaneten“ sind fertig:  Vieta, Mono, Epo, Iso und Samarkand.
-Viel Spaß auf ihnen!
 
 `[2025-01-25]` Es gibt jetzt einen Planeten, um sich zu verabschieden:  Ciao.
 

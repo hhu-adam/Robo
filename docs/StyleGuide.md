@@ -33,6 +33,8 @@
 
 The point of all documentation is make the explanations that Robo provides available for later reference.  It may be copied over verbatim from the corresponding levels.
 
-- Tactics should always have a (short) documentation.
+- Tactics should always have a (short) documentation.  We bundle these in `Game/Doc/Tactic.lean`.
 - Definitions should have a documentation that describes the most common strategy for dealing with them.
+  We bundle these in `Game/Doc/Definition.lean`.
 - Theorems are documented only in exceptional cases.
+  They are documented in the level file in which they are introduced.

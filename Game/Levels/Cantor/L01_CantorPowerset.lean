@@ -1,69 +1,73 @@
 import Game.Metadata
-import Game.Levels.Cantor.L00_CantorPowerset
 
 World "Cantor"
-Level 2
+Level 1
 
 Title "" -- "Cantor's Diagonalargument"
 
 Introduction
 "
-**Cantor**: Also und jetzt die eigentliche Aussage!
+**Cantor**: … Wir betrachten also eine Abbildung `f` von `A` in die Potenzmenge von `A`,
+und nun die Menge alle jener Elemente aus `A`, die nicht in ihrem Bild unter `f` liegen …
+
+Oh!  Ein Publikum. Nein, *zwei* Publikums!  Hört und seht, seht und staunt.
+
+Er zieht aus seinem Zylinder einen Zettel, faltet ihn zu einer Schwalbe,
+und lässt ihn zu euch herunterfliegen.
+
+**Cantor**:  Wenn ich schon zwei Publikums habe, könnten die ja auch ein bisschen mitmachen, nicht wahr?
 "
 
-Conclusion "**Du**: Uff. Aber ehrlich habe ich die das \"Diagonale\" daran noch nicht
-ganz gesehen.
-
-
-**Cantor**: Natürlich, das kann ich euch zeigen, aber da muss ich etwas ausholen…
-"
+Conclusion ""
 
 open Set Function
 
-Statement {A : Type*} (f : A → Set A) :
-    ¬ Surjective f := by
-  Hint (hidden := true) "**Du**: Also ein Widerspruchsbeweis?"
-  by_contra hf
-  -- Branch
-  --   Hint (strict := true)
-  --   "**Du**: Und jetzt existiert durch Surjektivität ein Urbild von `TODO`.
+Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
+  --Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
+  Hint "**Du**:  Ist also `Set A` die Potenzmenge von `A`?
 
-  --   **Cantor**: Genau! Und dann überlegt euch, ob `b ∈ f b` ist oder nicht für
-  --   dieses Urbild `b`!"
-  --   have hsurj := hf { a | a ∉ f a }
-  --   obtain ⟨b, hb⟩ := hsurj
-  --   Hint (hidden := true) "**Robo**: Das machen wir glaubs am besten mit `by_cases`."
-  --   by_cases b ∈ f b
-  --   · Branch
-  --       clear hf hb
-  --       Hint "**Du**: Jetzt will ich ja auch noch `{b} ∉ {f} {b}` zeigen für den Widerspruch.
+  **Robo**: Ja, sozusagen.  Es ist die Menge, oder genauer der Typ, aller Teilmengen von `A`.
 
-  --       **Robo**: Dann sag doch `suffices hn : {b} ∉ {f} {b}`, erinnerst du dich?"
-  --     suffices hn : b ∉ f b
-  --     · contradiction
-  --     rw [hb]
-  --     rw [mem_setOf]
-  --     simp
-  --     assumption
-  --   · Hint "**Robo**: Und noch den Fall wenn `{b} ∉ {f} {b}`"
-  --     suffices hn : b ∈ f b
-  --     · contradiction
-  --     rw [hb]
-  --     rw [mem_setOf]
-  --     assumption
+  **Du**:  Und ich soll zeigen, dass … aha.  Vermutlich ein Widerspruchsbeweis, oder?
+
+  **Robo**:  Vermutlich.
+  "
   Branch
-    apply cantor_helper
-    -- BUG: This does not trigger
-    Hint "**Robo**: als Erinnerung: Wenn du so etwas wie `?f` siehst, bedeutet das, dass
-    noch nicht spezifiziert wurde welche Funktion benützt wird. Du hättest besser
-    `apply cantor_helper f` geschrieben. Aber du kannst auch einfach mal weitermachen, als ob `?f`
-    schon `{f}` wäre, und vermutlich wird Lean das irgendwann automatisch einfüllen."
-  Hint "**Cantor**: Wendet doch gleich das Resultat von vorhin an!
+    push_neg
+    intro _a
+    by_contra _ha
+  by_contra h
+  Hint "**Cantor**:  Ja, ja, ja!  Und jetzt hübsch `{h}` zerlegen …"
+  Hint (hidden := true)"**Robo:  … mit `obtain`, wie immer."
+  obtain ⟨a, ha⟩ := h
+  Hint (strict := true) "**Du**: Jetzt vermutlich eine Fallunterscheidung zu `{a} ∈ {f} {a}`?"
+  Hint (hidden := true) (strict := true) "**Robo**: Das wäre `by_cases h₁ : {a} ∈ {f} {a}`."
+  by_cases h₁ : a ∈ f a
+  Hint "Cantor reibt sich die Hände.
 
-  **Robo**: Ich hab das als `cantor_helper f` gespeichert."
-  apply cantor_helper f
-  obtain ⟨w, hw⟩ := hf { x | x ∉ f x }
-  use w
+    **Cantor**:  Das sieht gut aus!
+    "
+  · Branch
+      rw [ha] at h₁
+      Hint "
+        **Cantor**: Gute Idee!  Fast richtig!
+        Aber ihr werdet die ursprünglich Annahme
+        `{h₁} : {a} ∈ {f} {a}` gleich noch einmal brauchen.
 
-NewHiddenTactic unfold_let -- TODO: remove
-TheoremTab "Function"
+        **Robo**:  Okay, zurück und mit `have` weiter.
+        Oder mit `suffices : {a} ∉ {f} {a}`!
+        "
+    suffices : a ∉ f a
+    · contradiction
+    rw [ha] at h₁
+    simp at h₁ --or: rw [mem_setOf] at h₁
+    assumption
+  · apply h₁
+    rw [ha]
+    simp --or: rw [mem_setOf]
+    assumption
+
+TheoremTab "Set"
+
+Conclusion "Cantor klatsch in die Hände und freut sich.
+Wie von Zauberhand fliegt der Zettel zu ihm zurück."

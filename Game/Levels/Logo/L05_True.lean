@@ -30,6 +30,6 @@ Conclusion
 einfachen Algorithmus gibt, der entscheidet, ob die Aussage wahr ist.
 "
 
-NewDefinition True
+NewDefinition True False
 NewTactic decide
 DisabledTactic tauto

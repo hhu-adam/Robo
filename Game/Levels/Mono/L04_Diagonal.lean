@@ -9,7 +9,7 @@ Introduction ""
 
 open Function Nat
 
-Statement {A : Type*} (n : ℕ) :
+Statement {A : Type} (n : ℕ) :
     let diag : A → Fin (n + 1) → A := fun a i ↦ a -- Writing this as `(fun a _ ↦ a)` or `fun a ↦ (fun i ↦ a)` does not affect the way it is displayed in the game!
     Injective (diag) := by
   Hint "**Du**:  In der Definition von `diag` stehen wieder zwei Pfeile hintereinander.
