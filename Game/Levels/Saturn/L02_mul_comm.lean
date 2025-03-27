@@ -21,10 +21,8 @@ Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
 
     **Du**:  Spielt hier aber eigentlich alles keine Rolle, oder?  Der Polynomring ist doch kommutativ!
 
-    **Robo**: So ist es.  Probier einfach wieder `ring`.  Oder benutze explizit das Lemma `mul_comm`.
+    **Robo**: So ist es.
   "
-  Branch
-    rw [mul_comm]
   ring
 
 Conclusion "

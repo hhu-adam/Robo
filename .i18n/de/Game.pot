@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Mar 19 13:23:28 2025\n"
+"POT-Creation-Date: Wed Mar 26 21:50:35 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -64,6 +64,16 @@ msgstr ""
 msgid "`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.\n"
 "\n"
 "`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Selbstabbildung `f : A → A` und ein Element `a : A` ist `IsFixedPt f a` die Aussage `f a = a`.\n"
+"Die Definition lässt sich mit `unfold IsFixedPt` leicht ausschreiben."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Abbildung `f : A → A` ist `fixedPoints f : Set A` die Menge der Fixpunkte von `f `.\n"
+"Die Definition lässt sich mit `unfold fixedPoints` leicht ausschreiben."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -196,6 +206,28 @@ msgid "Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist\n
 msgstr ""
 
 #: Game.Doc.Definition
+msgid "Für eine endliche Teilmenge `A : Finset T` ist `card A : ℕ` die Kardinalität von `A`,\n"
+"also die Anzahl der Elemente in `A`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für `n : ℕ` ist `Fin n` die Menge $\\{0, \\dots, n-1\\}$.\n"
+"\n"
+"(`Fin n` ist zu unterscheiden von `Icc 0 (n-1)`:  `Fin n` ist eine Menge, oder genauer ein Typ, also `Fin n : Type`,\n"
+"während `Icc 0 (n-1) : Set ℕ` eine Teilmenge von `ℕ` ist.)"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`Nonempty T` bedeutet, dass ein Element in `T` („vom Typ `T`“) existiert.\n"
+"Ist `h : Nonempty T` als Annahme gegeben, erhalten wir ein Element `t : T` mit `obtain ⟨t⟩ := h`.\n"
+"Haben wir umgekehrt bereits ein Element `t : T` gegeben oder konstruiert,\n"
+"so können wir `Nonempty T` mit `use t` beweisen.\n"
+"\n"
+"Analog ist für eine Teilmenge `A : Set T` die Aussage `Nonemty A` definiert als als `∃ x, x ∈ A`.\n"
+"Das kann man in diesem Fall leicht mit `unfold Nonempty` überprüfen."
+msgstr ""
+
+#: Game.Doc.Definition
 msgid "`A ∧ B` (\"und\") ist die Aussage dass sowohl `A` als auch `B` wahr ist."
 msgstr ""
 
@@ -313,6 +345,11 @@ msgid "Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.\n"
 msgstr ""
 
 #: Game.Doc.Definition
+msgid "`succ : ℕ → ℕ` ist die Abbildung `n ↦ n + 1`.\n"
+"Sie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*) ab."
+msgstr ""
+
+#: Game.Doc.Definition
 msgid "`(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder\n"
 "nicht beweisbar ist.\n"
 "\n"
@@ -324,191 +361,121 @@ msgstr ""
 msgid "Die Aussage `True : Prop` ist immer wahr."
 msgstr ""
 
+#: Game.Doc.Definition
+msgid "Die Aussage `False : Prop` ist immer falsch."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe\n"
+"$\\sum_{i\\in I} f(i)$.  Du schreibst das Summenzeichen als `\\sum`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt\n"
+"$\\prod_{i\\in I} f(i)$.  Du schreibst das Produktzeichen als `\\prod`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Element hat.\n"
+"Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,\n"
+"aber nun explizit als endliche Teilmenge aufgefasst."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für `x : ℝ` ist `|x|` der Betrag von `x`.\n"
+"(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)"
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Für eine Funktion `f : ℝ → ℝ` bedeutet `StrictMono f`, dass `f` streng monoton ist,\n"
+"dass also aus `a < b` auch `f a < f b` folgt."
+msgstr ""
+
 #: Game.Doc.Tactic
 msgid "Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so\n"
 "verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.\n"
-"Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und\n"
-"erhalten `A` als neues Beweisziel.   In beiden Fällen kann die Implikation `hAB` wahlweise\n"
-"als Annahme gegeben oder ein bereits bekanntes Lemma sein.\n"
+"Ist `B` dein Beweisziel, kannst du mit `apply hAB` auch rückwärts argumentieren und\n"
+"erhältst `A` als neues Beweisziel.\n"
 "\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"Gegeben sei für `n : ℕ` folgendes Lemma:\n"
-"```\n"
-"lemma lem (h : n ≤ 0) : n = 0\n"
-"```\n"
-"\n"
-"Finden wir nun als Beweisziel\n"
-"\n"
-"```\n"
-"Goal\n"
-"  n = 0\n"
-"```\n"
-"\n"
-"vor, so ändert `apply lem` das Beweisziel zu `n ≤ 0`.\n"
-"\n"
-"Anders herum, falls wir eine Annahme `g : m ≤ 0` in unseren Annahmen finden, können wir\n"
-"diese mit `apply lem at g` zu `g : m = 0` umwandeln.\n"
-"\n"
-"(Das Lemma ist gemeinhin als `Nat.eq_zero_of_le_zero` bekannt.)"
+"In beiden Fällen kann die Implikation `hAB` wahlweise\n"
+"als Annahme gegeben oder ein bereits bekanntes Lemma sein."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"`assumption` sucht durch die Annahmen und merkt dass `h` genau mit dem Goal übereinstimmt.\n"
-"\n"
-"```\n"
-"Objekte\n"
-"  a b c d : ℕ\n"
-"  h : a + b = c\n"
-"  g : a * b = 16\n"
-"  t : c = 12\n"
-"Goal\n"
-"  a + b = c\n"
-"```"
+msgid "`assumption` sucht nach einer Annahme, die genau dem Beweisziel entspricht."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme\n"
-"`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.\n"
+msgid "`by_cases h : P` macht eine Fallunterscheidung, ob `P` wahr oder falsch ist.\n"
+"Zum beispiel unterscheided `by cases h : a = b` die Fälle `a = b` und `a ≠ b`.\n"
 "\n"
-"## Details\n"
-"\n"
-"`P` kann eine beliegige Aussage sein, die als entweder wahr oder falsch angenommen wird.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"```\n"
-"example (A : Prop) : A ∨ ¬ A := by\n"
-"  by_cases h : A\n"
-"  · left\n"
-"    assumption\n"
-"  · right\n"
-"    assumption\n"
-"```"
+"Das Beweisziel wird hierzu dupliziert, und\n"
+"in der ersten „Kopie“ wird die Annahme `(h : P)` hinzugefügt,\n"
+"in der zweiten „Kopie“ die Annahme `(h : ¬P)`."
 msgstr ""
 
 #: Game.Doc.Tactic
 msgid "`by_contra h` startet einen Widerspruchsbeweis.\n"
+"Ist `P` das aktuelle Beweisziel, so generiert `by_contra h` eine neue Annahme `(h : ¬P)`\n"
+"und setzt das Beweisziel auf `False`.\n"
 "\n"
-"## Details\n"
-"Sei `P` das aktuelle Goal. `by_contra h` fügt eine neue Annahme `(h : ¬P)` hinzu\n"
-"und setzt das Goal auf `False`.\n"
+"Oft will man `by_contra` nutzen, wenn das Beweisziel von der Form `¬ P` ist.\n"
 "\n"
-"Oft will man `by_contra` nutzen wenn das Goal von der Form `¬ P` ist.\n"
+"## Freunde und Verwandte\n"
 "\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `contradiction` schliesst den Widerspruchsbeweis wenn sich (zwei) Annahmen\n"
-"widersprechen.\n"
-"* `contrapose` führt einen Beweis durch Kontraposition und ist entsprechend\n"
-"in ähnlichen Situationen nutzbar wie `by_contra`"
+"* Am Ende eines Widerspruchsbweises braucht man gewöhnlich `contradiction`:\n"
+"diese Taktik schließt den Besweis, wenn sie zwei offensichtlich widersprüchlichen Annahmen.\n"
+"* Ist das Beweiszeil von der Form `A → B`, kannst du mit `contrapose`\n"
+"einen Beweis durch Kontraposition führen."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das alte Goal defEq sind.\n"
-"\n"
-"## Details\n"
-"\n"
-"Dies ist insbesonder hilfreich wenn eine Taktik nicht merkt, dass das Goal defEq ist zu einem\n"
-"Term, der eigentlich gebraucht würde.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"Aktuelles Goal:\n"
-"\n"
-"```\n"
-"b: ℝ\n"
-"⊢ 1 • b = b\n"
-"```\n"
-"Wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war. Dann\n"
-"kann man mit `change (1 : ℚ) * b = b` das Goal umschreiben und anschliessend mit Lemmas\n"
-"über die Multiplikation beweisen."
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "Eine Annahme der Form `h : ∃ b : B, P b` lässt sich mit\n"
+msgid "Eine Annahme der Form `h : ∃ b : B, P b` kannst du mit\n"
 "`choose b hb using h` in die Bestandteile `b : A` und `hb : P b`\n"
 "zerlegen.\n"
 "\n"
-"Allgemeiner können wir `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:\n"
+"Allgemeiner kannst du `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:\n"
 "aus einer Annahme der Form `h : ∀ a, ∃ b, P a b` extrahiert `choose f hf using h`\n"
 "eine Abbildung `f : A → B` und die Aussage ` ∀ (a : A), P a (f a)`.\n"
-"(Hier ist `P : A → (B → Prop)` ein Prädikat, dass von zwei Variablen `a` und `b` abhängt.)"
+"(Hier ist `P : A → (B → Prop)` ein Prädikat, das von zwei Variablen `a` und `b` abhängt.)"
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.\n"
+msgid "Die Taktik `constructor` teilt ein Beweisziel in seine Bestandteile auf:\n"
 "\n"
-"## Detail\n"
+"| Ausgangslage | Resultat                |\n"
+"|:------------ |:----------------------- |\n"
+"| `⊢ A ∧ B`    | `⊢ A` und `⊢ B`         |\n"
+"| `⊢ A ↔ B`    | `⊢ A → B` und `⊢ B → A` |\n"
 "\n"
-"Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`.\n"
-"Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.\n"
+"## Freunde und Verwandte\n"
 "\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* Das Gegenteil von `constructor` ist `⟨_, _⟩` (`\\\\<>`), der *anonyme Konstruktor*.\n"
-"Dieser enspricht ungefähr der Tupel-Notation in\n"
-"\\\"eine Gruppe ist ein Tupel $(G, 0, +)$, sodass …\\\".\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"```\n"
-"example {A B : Prop} (h : A) (g : B) : A ∧ B := by\n"
-"  constructor\n"
-"  · assumption\n"
-"  · assumption\n"
-"```"
+"* Eine *Annahme* zerlegst du mit `obtain` in ihre Bestandteile.\n"
+"* Möchtest du `A ∨ B` beweisen, musst du dich mit `left` bzw. `right` für eine Seite entscheiden."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.\n"
+msgid "Die Taktik `contradiction` schließt den Beweis, wenn sie einen Widerspruch in den Annahmen findet.\n"
+"Ein solcher Widerspruch kann zum Beispiel folgendermaßen aussehen:\n"
 "\n"
-"## Details\n"
+"* `h : n ≠ n`\n"
+"* `h : A` und `h' : ¬A`\n"
+"* `h : False`\n"
 "\n"
-"Ein Widerspruch in den Annahmen kann unter anderem folgendermaßen aussehen:\n"
+"## Freunde und Verwandte\n"
 "\n"
-"* `(h : n ≠ n)`\n"
-"* `(h : A)` und `(h' : ¬A)`\n"
-"* `(h : False)` (i.e. ein Beweis von `False`)\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"Folgenes Goal wird von `contradiction` bewiesen\n"
-"\n"
-"```\n"
-"Objekte:\n"
-"  (n m : ℕ)\n"
-"  (h : n = m)\n"
-"  (g : n ≠ m)\n"
-"Goal\n"
-"  37 = 60\n"
-"```\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu\n"
-"  schliessen, der mit `by_contra` eröffnet wurde.\n"
-"* Ein Beweis von `False` representiert in Lean einen Widerspruch.\n"
-"  nach dem Motto \\\"ein Widerspruch beweist alles.\\\""
+"Normalerweise wird `contradiction` benutzt, um einen Widerspruchsbeweis zu\n"
+"schließen, der mit `by_contra` eröffnet wurde."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`contrapose` ändert ein Goal der Form `A → B` zu `¬B → ¬A` und führt damit\n"
-"eine Beweis durch Kontraposition.\n"
+msgid "Die Taktik `contrapose` ändert ein Beweisziel der Form `A → B` zu `¬B → ¬A` und leitet somit\n"
+"eine Beweis durch Kontraposition ein.\n"
 "\n"
-"## Hilfreiche Resultate\n"
+"## Freunde und Verwandte\n"
 "\n"
-"* `revert h` kann nützlich sein um eine Annahme als Implikationsprämisse zu schreiben bevor man\n"
-"  `contrapose` verwendet."
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "`exact h` schliesst das Goal wenn der Term `h` mit dem Goal übereinstimmt."
+"Die Taktik `revert h` kann nützlich sein, um eine Annahme als Implikationsprämisse zu schreiben,\n"
+" bevor du `contrapose` verwendest."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -522,16 +489,6 @@ msgid "Zwei Teilmengen einer gegebenen Menge sind gleich, wenn sie dieselben Ele
 "```\n"
 "x ∈ A ↔ x ∈ B.\n"
 "```"
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "`fin_cases i` führt eine Fallunterscheidung wenn `i` ein endlicher Typ ist.\n"
-"\n"
-"## Details\n"
-"`fin_cases i` ist insbesondere nützlich für `(i : Fin n)`, zum Beispiel als Index in\n"
-"endlich dimensionalen Vektorräumen.\n"
-"\n"
-"In diesem Fall bewirkt `fin_cases i` dass man Komponentenweise arbeitet."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -550,8 +507,8 @@ msgid "Zwei Abbildungen mit demselben Werte- und Definitionsbereich sind gleich,
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Mit `generalize` kann man ein Beweisziel verallgemeinern\n"
-"– gewöhnlich in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.\n"
+msgid "Mit `generalize` kannst du ein Beweisziel verallgemeinern\n"
+"– in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.\n"
 "Genauer ersetzt `generalize h : a = b` alle Vorkommen von `a` im Beweisziel durch `b`\n"
 "(und ergänzt die Annahme `h : a = b`).\n"
 "\n"
@@ -569,144 +526,68 @@ msgid "Mit `generalize` kann man ein Beweisziel verallgemeinern\n"
 "```\n"
 "A ∨ ¬A\n"
 "```\n"
-"überführen (und dann einfach mit `tauto` beweisen."
+"überführen (und dann einfach mit `tauto` beweisen)."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`have h : P` führt ein Zwischenresultat ein.\n"
+msgid "Mit `have h : P` führst du ein Zwischenresultat ein.\n"
+"Anschließend musst du zuerst dieses Zwischenresultat beweisen,\n"
+"bevor du den eigentlich Beweis fortsetzen kannst.\n"
 "\n"
-"## Details\n"
-"Anschliessend muss man zuerst dieses Zwischenresultat beweisen bevor man mit dem Beweis\n"
-"weitermachen und das Zwischenresultat verwenden kann.\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `suffices h : P` funktioniert genau gleich, außer dass die beiden entstehenden Beweise\n"
-"  vertauscht sind.\n"
-"* `let h : Prop := A ∧ B` ist verwandt mit `have`, mit Unterschied, dass man mit `let`\n"
-"  eine temporäre Definition einführt."
+"## Freunde und Verwandte\n"
+"`suffices h : P` funktioniert genauso, außer dass du zunächst den Hauptweise forsetzen kannst und\n"
+"erst ganz am Ende dein Zwischenresultat beweisen musst."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Mit `if … then … else` können Abbildungen mit zwei Definitionszweigen definiert werden.\n"
+msgid "Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.\n"
 "\n"
-"## Beispiel\n"
-"\n"
-"`fun x ↦ if 0 ≤ x then -x else x` definiert die Betragsfunktion."
+"Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`induction n` führt einen Induktionsbeweis über `n`.\n"
-"\n"
-"## Detail\n"
-"\n"
-"Diese Taktik erstellt zwei Goals:\n"
-"* Induktionsanfang, wo `n = 0` ersetzt wird.\n"
-"* Induktionsschritt, in dem man die Induktionshypothese `n_ih` zur Verfügung hat.\n"
+msgid "Die Taktik `induction n` führt einen Induktionsbeweis über `n`.\n"
+"Mit `induction n with d dh` kannst du Namen für die Induuktionsvariable (hier: `d`)\n"
+"und die Induktionsannahme (hier: `hd`) vorgeben.\n"
+"Die Taktik ersetzt also das ursprüngliche Beweiszeil durch zwei neue Beweisziele:\n"
+"* einen Induktionsanfang, in dem `n = 0` ersetzt wird\n"
+"* einen Induktionsschritt, in dem du die Induktionsannehme `hd` zur Verfügung steht.\n"
 "\n"
 "## Modifikationen in diesem Spiel\n"
 "\n"
-"* `induction n with d hd` benennt Induktionsvariable und -hypothese. (das ist Lean3-Syntax)\n"
-"und funktioniert außerhalb vom Spiel nicht genau so.\n"
-"* Außerhalb des Spiels kriegst du `Nat.zero` und `Nat.succ n` anstatt `0` und `n + 1`\n"
-"als Fälle. Diese\n"
-"Terme sind DefEq, aber manchmal benötigt man die lemmas `zero_eq` und `Nat.succ_eq_add_one`\n"
-"um zwischen den schreibweisen zu wechseln\n"
-"\n"
-"Der richtige Lean4-Syntax für `with` streckt sich über mehrere Zeilen und ist:\n"
-"\n"
-"```\n"
-"induction n with\n"
-"| zero =>\n"
-"  sorry\n"
-"| succ m m_ih =>\n"
-"  sorry\n"
-"```\n"
-"\n"
-"da dieser sich über mehrere Zeilen erstreckt wird er im Spiel nicht eingeführt.\n"
-"\n"
-"## Hifreiche Resultate\n"
-"\n"
-"* `Nat.succ_eq_add_one`: schreibt `n.succ = n + 1` um.\n"
-"* `Nat.zero_eq`: schreibt `Nat.zero = 0` um.\n"
-"\n"
-"Beide sind DefEq, aber manche Taktiken können nicht damit umgehen\n"
-"\n"
-"* Siehe Definition `∑` für Hilfe mit Induktion über Summen.\n"
-"* `obtain ⟨⟩ := n` ist sehr ähnlich zu `induction n`. Der Unterschied ist, dass bei\n"
-"`obtain` keine Induktionshypothese im Fall `n + 1` zur Verfügung steht.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"```\n"
-"example (n : ℕ) : 4 ∣ 5^n + 7 := by\n"
-"  induction n\n"
-"  sorry      -- Fall `n = 0`\n"
-"  sorry      -- Fall `n + 1`\n"
-"```"
+"Außerhalb dieses Spiels heißt `induction` `induction'`,\n"
+"`0` wird zunächst als `Nat.zero` and `d + 1` als `Nat.succ d` geschrieben.\n"
+"Diese Terme sind jeweils definitionsgleich, müssen aber gelegentlich mit\n"
+"`zero_eq` und `Nat.succ_eq_add_one` explizit umgeschrieben werden."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.\n"
-"Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.\n"
+msgid "Die Taktik `intro` wird für Beweisziele Form `A → B` oder `∀ x, P x` verwendet.\n"
+"Ist dein Beweisziel `A → B`, erhältst du mit `intro h` die Annahme `h : A`, und musst dann\n"
+"`B` beweisen.\n"
+"Ist dein Beweisziel `∀ x, P x`, gibst du dir mit `intro x` ein beliebiges `x` vor und musst dann `P x` beweisen.\n"
 "\n"
-"## Beispiele\n"
+"## Freunde und Verwandte\n"
 "\n"
-"```\n"
-"Goal:\n"
-"  ∀ (m n : ℕ), n ≤ m ∨ m ≤ n\n"
-"```\n"
-"\n"
-"die Taktik `intro a n` führt 2 Variablen ein und gibt diesen die Namen `a` und `n`:\n"
-"\n"
-"```\n"
-"Objekte:\n"
-"  a n : ℕ\n"
-"Goal:\n"
-"  n ≤ a ∨ a ≤ n\n"
-"```\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `revert h` macht das Gegenteil von `intro`."
+"Die Taktik `revert` macht genau das Gegenteil von `intro`."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `left` die linke Seite zu zeigen.\n"
+msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.\n"
 "\n"
-"## Beispiele\n"
+"## Freunde und Verwandte\n"
 "\n"
-"Folgendes Beispiel kann mit `left` und `assumption` gelöst werden.\n"
-"```\n"
-"Objekte:\n"
-"  ha : A\n"
-"Goal:\n"
-"  A ∨ B\n"
-"```\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `right` entscheidet sich für die right Seite."
+"Mit `right` entscheidest du dich entsprechend für die rechte Seite."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`let x : ℕ := 5 ^ 2` führt eine neue temporäre Definition ein.\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber\n"
-"  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht\n"
-"  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.\n"
-"* `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht."
+msgid "Die Taktik `let` führt eine temporäre Definition ein, zum Beispiel\n"
+"`let x : ℕ := 5 ^ 2`."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`set f := _` funktioniert wie `let` aber versucht auch `f` im Goal überall einzusetzen."
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "`linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
-"Es ist recht flexibel, in welchem Kontext man arbeitet, und funktioniert genauso gut in ℕ wie in ℝ.\n"
+msgid "Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
+"Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.\n"
 "Die (Un)Gleichungen müssen aber gut lesbar gegeben sein -- eine Annahme der Form\n"
 "```\n"
 "m ≤ x → n < x\n"
@@ -723,239 +604,82 @@ msgid "`linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus 
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`omega` kann zeigen, dass eine lineare Gleichung oder Ungleichungen in `ℕ` oder `ℤ`\n"
+msgid "Die Taktik `omega` kann zeigen, dass eine lineare Gleichung oder Ungleichung in `ℕ` oder `ℤ`\n"
 "aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
-"Es ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelang."
+"Sie ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelangt."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.\n"
+msgid "Die Taktik `push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.\n"
+"Bei geschachtelten Ausdrücken schiebt sie die Negation `¬` soweit nach rechts wie möglich.\n"
 "\n"
-"## Details\n"
-"\n"
-"`push_neg` schiebt das `¬` soweit nach innen wie möglich.\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet\n"
-"  werden.\n"
-"\n"
-"## Beispiel\n"
-"\n"
+"Zum Beispiel wird aus dem Beweisziel\n"
 "```\n"
-"Objekte:\n"
-"  x : ℝ\n"
-"  f : ℝ → ℝ\n"
-"Goal:\n"
 "  ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε\n"
 "```\n"
-"\n"
-"`push_neg` wandelt dies in folgendes Goal um:\n"
-"\n"
+"mit `push_neg`\n"
 "```\n"
-"Objekte:\n"
-"  x : ℝ\n"
-"  f : ℝ → ℝ\n"
-"Goal:\n"
 "  ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)\n"
-"```"
+"```\n"
+"\n"
+"## Freunde und Verwandte\n"
+"\n"
+"Die beiden Lemmas `not_forall` und `not_exists` können mit `rw` einzeln angewendet werden."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`obtain ⟨⟩ := h` teilt eine Annahme `h` in ihre Einzelteile auf.\n"
+msgid "Die Taktik `obtain` teilt eine Annahme in ihre Einzelteile auf.\n"
 "\n"
-"## Details\n"
-"Für Annahmen die Strukturen sind, wie z.B. `h : A ∧ B` (oder `∃x, P x`) kann man die\n"
-"Einzelteile mit  `obtain ⟨a, b⟩ := h` benennen.\n"
+"| Ausgangslage       | Taktik                 | Resultat                                   |\n"
+"|:------------------ |:---------------------- |:------------------------------------------ |\n"
+"| `h : A ∧ B`        | `obtain ⟨hA, hB⟩ := h` | `hA : A` und `hB : B`                      |\n"
+"| `h : A ↔ B`        | `obtain ⟨hl, hr⟩ := h` | `hl : A → B` und `hr : B → A`              |\n"
+"| `h : Nonempty X`   | `obtain ⟨x⟩ := h`      | `x : X`                                    |\n"
+"| `h : ∃ x : X, P x` | `obtain ⟨x, hx⟩ := h`  | `x : X` und `hx : P x`                     |\n"
+"| `h : A ∨ B`        | `obtain h \\| h := h`   | ein Ziel mit `h : A`, ein Ziel mit `h : B` |\n"
 "\n"
-"Für eine Annahme der Form `h : A ∨ B` kann man mit `obtain ha | hb := h` zwei Goals\n"
-"erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechten.\n"
-"\n"
-"Die Wildcard `obtain ⟨⟩ := h` entscheidet selbständig, welcher Fall vorliegt und\n"
-"benennt die entehenden Annahmen.\n"
-"\n"
-"## Beispiele\n"
-"\n"
-"```\n"
-"Annahmen:\n"
-"  h : A ∧ B\n"
-"  g : A → C ∨ B → C\n"
-"Goal:\n"
-"  C\n"
-"```\n"
-"\n"
-"wenn man hier `obtain ⟨h₁, h₂⟩ := h` und danach `obtain g₁ | g₂ := g` benützt, kriegt man\n"
-"zwei Goals:\n"
-"\n"
-"```\n"
-"Annahmen:\n"
-"  h₁ : A\n"
-"  h₂ : B\n"
-"  g₁ : A → C\n"
-"Goal:\n"
-"  C\n"
-"```\n"
-"\n"
-"```\n"
-"Annahmen:\n"
-"  h₁ : A\n"
-"  h₂ : B\n"
-"  g₂ : B → C\n"
-"Goal:\n"
-"  C\n"
-"```\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* Für `n : ℕ` hat `obtain ⟨⟩ := n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,\n"
-"  dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht."
+"Die Klammern in den ersten vier Beispielen tippst du als `\\<` bzw. `\\>`.\n"
+"Hier ist `⟨_, _⟩` der *anonyme Konstruktor*.\n"
+"Man kann ihn sich ungefähr so vorstellen wir die Tupel-Notation in\n"
+"„eine abelsche Gruppe ist ein Tupel $(G, 0, +)$ derart, dass …“."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`refine' { .. }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne\n"
-"Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.\n"
+msgid "Die Taktik `revert h` fügt die Annahme `h` als Implikationsprämisse ins Beweisziel ein:\n"
+"aus `h : A` und `⊢ B` wird `⊢ A → B`.\n"
 "\n"
-"(*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,\n"
-"z.B. \\\"Term Modus\\\" oder \\\"anonyme Konstruktoren\\\", aber für den Zweck des Spieles bleiben wir\n"
-"bei diesem Syntax.)"
+"## Freunde und Verwandte\n"
+"\n"
+"Die Taktik `intro` macht das genaue Gegenteil von `revert`."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"```\n"
-"Objekte:\n"
-"  A B : Prop\n"
-"Annahmen:\n"
-"  h : A\n"
-"  g : A → B\n"
-"Goal:\n"
-"  B\n"
-"```\n"
-"\n"
-"In diesem Fall bewirkt `revert h`, dass `h` aus den Annahmen vorne als `A →` ans Goal angefügt wird:\n"
-"\n"
-"```\n"
-"Objekte:\n"
-"  A B : Prop\n"
-"Annahmen:\n"
-"  g : A → B\n"
-"Goal:\n"
-"  a → B\n"
-"```\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `revert` ist das Gegenteil von `intro`.\n"
-"* `revert` kann insbesondere nützlich sein, um anschliessend `contrapose` zu verwenden.\n"
-"\n"
-"## Beispiel\n"
-"\n"
-"```\n"
-"Objekte\n"
-"  A P : Prop\n"
-"  h : P\n"
-"Goal\n"
-"  A\n"
-"```\n"
-"\n"
-"hier ändert `revert h` das Goal zu\n"
-"\n"
-"```\n"
-"Objekte\n"
-"  A P : Prop\n"
-"Goal\n"
-"  P → A\n"
-"```"
+msgid "`rfl` beweist `X = X`.  Genauer schließt `rfl` jedes Beweisziel der Form `A = B`,\n"
+"in dem `A` und `B` definitionsgleich sind."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`rfl` beweist ein Goal der Form `X = X`.\n"
+msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidestt du dich mit `right`, die rechte Seite zu zeigen.\n"
 "\n"
-"## Detail\n"
+"## Freunde und Verwandte\n"
 "\n"
-"`rfl` beweist jedes Goal `A = B` wenn `A` und `B` per Definition das gleiche sind (DefEq).\n"
-"Andere Taktiken rufen `rfl` oft am Ende versteckt\n"
-"automatisch auf um zu versuchen, den Beweis zu schliessen.\n"
-"\n"
-"\n"
-"## Beispiel\n"
-"`rfl` kann folgende Goals beweisen:\n"
-"\n"
-"```\n"
-"Objekte\n"
-"  a b c : ℕ\n"
-"Goal:\n"
-"  (a + b) * c = (a + b) * c\n"
-"```\n"
-"\n"
-"```\n"
-"Objekte\n"
-"  n : ℕ\n"
-"Goal\n"
-"  1 + 1 = 2\n"
-"```\n"
-"denn Lean liest dies intern als `0.succ.succ = 0.succ.succ`."
+"Mit `left` entscheidest du dich entsprechend für die linke Seite."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Wenn das Goal von der Form `A ∨ B` ist, enscheidet man mit `right` die rechte Seite zu zeigen.\n"
-"\n"
-"## Beispiele\n"
-"\n"
-"Folgendes Beispiel kann mit `right` und `assumption` gelöst werden.\n"
-"```\n"
-"Objekte:\n"
-"  hB : B\n"
-"Goal:\n"
-"  A ∨ B\n"
-"```\n"
-"\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `left` entscheidet sich für die linke Seite."
-msgstr ""
-
-#: Game.Doc.Tactic
-msgid "Löst Gleichungen mit den Operationen `+, -, *, ^`.\n"
-"\n"
-"## Details\n"
-"Insbesondere funktioniert `ring` in Ringen/Semiringen wie z.B. `ℕ, ℤ, ℚ, …`\n"
-"(i.e. Typen `R` mit Instanzen `Ring R` oder `Semiring R`).\n"
-"Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.\n"
-"\n"
-"## Hilfreiche Resultate\n"
-"\n"
-"* `ring` kann nicht wirklich mit Division (`/`) oder Inversen (`⁻¹`) umgehen. Dafür ist die\n"
-"  Taktik `field_simp` gedacht, und die typische Sequenz ist\n"
-"  ```\n"
-"  field_simp\n"
-"  ring\n"
-"  ```\n"
-"\n"
-"### Beispiel\n"
-"\n"
-"\n"
-"Dieses Goal kann mit der Taktik `ring` gelöst werden:\n"
-"\n"
-"```\n"
-"Goal:\n"
-"  1 + n * 2 + n + 12 = 3 * n + 13\n"
-"```"
+msgid "Die Taktik `ring` beweist Gleichungen mit den Operationen `+, -, *, ^` in Halbringen,\n"
+"also insbesondere in ℕ, ℤ, ℚ, ℝ, …   Sie funktioniert besonders gut in kommutativen Ringen."
 msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Wenn man eine Annahme `(h : X = Y)` hat, kann man mit\n"
-"`rw [h]` alle `X` im Goal durch `Y` ersetzen.\n"
+"`rw [h]` alle `X` im Beweisziel durch `Y` ersetzen.\n"
 "\n"
 "## Details\n"
 "\n"
 "* `rw [←h]` wendet `h` rückwärts an und ersetzt alle `Y` durch `X`.\n"
 "* `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.\n"
-"* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).\n"
+"* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Beweisziel).\n"
 "* `rw [my_theorem]` sucht nach dem ersten Ort, wo es umschreiben kann um die Impliziten\n"
 "  Argumente von `my_theorem` zu füllen\n"
 "* `nth_rw 2 [my_theorem]` ist eine Variante, die stattdessen am 2. Ort umschreibt.\n"
@@ -972,11 +696,11 @@ msgid "Wenn man eine Annahme `(h : X = Y)` hat, kann man mit\n"
 "Annahmen:\n"
 "  h₁ : m = n\n"
 "  h₂ : f = g\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  f m = g n\n"
 "```\n"
 "\n"
-"`rw [h₂]` schreibt das Goal zu `g n = g m` um, ein weiteres `rw [h₁]` dann zu `g m = g m`, was es\n"
+"`rw [h₂]` schreibt das Beweisziel zu `g n = g m` um, ein weiteres `rw [h₁]` dann zu `g m = g m`, was es\n"
 "direkt auch schließt."
 msgstr ""
 
@@ -1030,11 +754,11 @@ msgid "`specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`: es e
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Goal direkt folgen soll.\n"
+msgid "`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Beweisziel direkt folgen soll.\n"
 "\n"
 "## Details\n"
 "\n"
-"Der einzige Unterschied zu `have h : P` ist, dass die beiden resultierenden Goals vertauscht sind.\n"
+"Der einzige Unterschied zu `have h : P` ist, dass die beiden resultierenden Beweisziels vertauscht sind.\n"
 "\n"
 "Mathematisch braucht man diese in ein bisschen unterschiedlichen Fällen:\n"
 "\n"
@@ -1056,7 +780,7 @@ msgid "`symm` (für \"symmetry\") kann Gleichheiten oder `↔` umdrehen. `symm a
 "\n"
 "## Beispiel\n"
 "\n"
-"ist das Goal `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `symm at h` die Annahme\n"
+"ist das Beweisziel `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `symm at h` die Annahme\n"
 "`(h : z = w)` in `(h : w = z)` um."
 msgstr ""
 
@@ -1088,11 +812,11 @@ msgid "Wenn man `X = Z` zeigen möchte, kann man mit\n"
 "Annahmen:\n"
 "  h₁ : A ↔ B\n"
 "  h₂ : B ↔ C\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  A ↔ C\n"
 "```\n"
 "\n"
-"Die Taktik `trans B` erstellt dann aus dem Goal zwei neue `A ↔ B` und `B ↔ C`."
+"Die Taktik `trans B` erstellt dann aus dem Beweisziel zwei neue `A ↔ B` und `B ↔ C`."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -1115,54 +839,54 @@ msgid "`decide` kann Aussagen beweisen, für die es einen einfachen Algorithmus\
 "Folgendes kann mit `decide` gelöst werden:\n"
 "\n"
 "```\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  ¬ Odd 40\n"
 "```"
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "`unfold myDef` öffnet eine Definition im Goal.\n"
+msgid "`unfold myDef` öffnet eine Definition im Beweisziel.\n"
 "\n"
 "## Details\n"
-"Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken\n"
+"Bis auf Definitionsgleichheit ändert `unfold` nichts, manche Taktiken\n"
 "(z.B. `push_neg`, `rw`) brauchen aber manchmal die Hilfe.\n"
 "\n"
 "`unfold myDef at h` kann auch Definitionen in Annahmen öffnen\n"
 "\n"
-"## Hilfreiche Resultate\n"
+"## Freunde und Verwandte\n"
 "\n"
 "* `unfold f` kann insbesondere nötig sein, wenn man danach `rw` benützt,\n"
 "  da `rw` nicht durch Definitionen hindurch sieht.\n"
 "* `unfold f` oder `simp only [f]` machen praktisch das Gleiche.\n"
 "* Im Moment kennt Mathlib auch noch `unfold_let`: `unfold` ist für Definitionen, `unfold_let`\n"
 "  für `let`-Statements.\n"
-"* `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Goal in einen DefEq-Ausdruck\n"
+"* `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Beweisziel in einen definitionsgleichen Ausdruck\n"
 "  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.\n"
 "\n"
 "## Beispiel\n"
 "\n"
 "```\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  Even 0\n"
 "```\n"
 "\n"
-"Auch wenn `rfl` dieses Goal lösen kann, kann es nützlich sein `unfold Even` zu benützen um die\n"
+"Auch wenn `rfl` dieses Beweisziel lösen kann, kann es nützlich sein `unfold Even` zu benützen um die\n"
 "Definition hinter `Even` zu sehen."
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben\n"
-"mit dem man das Goal beweisen möchte.\n"
+msgid "Wenn das Beweisziel von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben\n"
+"mit dem man das Beweisziel beweisen möchte.\n"
 "\n"
 "## Details\n"
 "\n"
-"`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt\n"
+"`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Beweisziel damit manchmal direkt\n"
 "schließen.\n"
 "\n"
 "## Beispiel\n"
 "\n"
 "```\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  ∃ x, x + 3 = 4\n"
 "```\n"
 "\n"
@@ -1174,22 +898,14 @@ msgid "`tauto` proves all logical tautologies.\n"
 "\n"
 "## Beispiel\n"
 "\n"
-"Folgendes Goal ist mit `tauto` lösbar\n"
+"Folgendes Beweisziel ist mit `tauto` lösbar\n"
 "\n"
 "```\n"
 "Objekte:\n"
 "  (A B C : Prop)\n"
-"Goal:\n"
+"Beweisziel:\n"
 "  ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C)\n"
 "```"
-msgstr ""
-
-#: Game.Doc.Theorem
-msgid "Die Taktiken `tauto` oder `simp` können oft stattdessen verwendet werden."
-msgstr ""
-
-#: Game.Doc.Theorem
-msgid "Oft kann `tauto` diese Art von logischen Ausdrücken lösen."
 msgstr ""
 
 #: Game.Levels.Logo.L01_Tauto
@@ -1863,7 +1579,22 @@ msgid "**Du**: Ich soll Implikationen $A \\Rightarrow B \\Rightarrow C$ zu $A \\
 msgstr ""
 
 #: Game.Levels.Implis.L04_Apply
-msgid "**Robo**: Das ist wieder eine Anwendung von `apply`."
+msgid "**Operationsleiter**: Also *ich* würde an dieser Stelle jetzt erst einmal\n"
+"`have hB : B` festhalten.\n"
+"\n"
+"**Robo**:  Für meinen Geschmack ein bisschen überflüssig.\n"
+"Aber gut, kann man machen.\n"
+"\n"
+"**Robo** *(zu dir)*: Los, probiers mal!"
+msgstr ""
+
+#: Game.Levels.Implis.L04_Apply
+msgid "**Robo**: Jetzt kannst du also erst einmal `B` beweisen …"
+msgstr ""
+
+#: Game.Levels.Implis.L04_Apply
+msgid "**Robo**: … und nachdem du das geschafft hast, hast du nun `«{hB}» : «{B}»` als\n"
+"Annahme zur Verfügung."
 msgstr ""
 
 #: Game.Levels.Implis.L04_Apply
@@ -2177,6 +1908,10 @@ msgid "**Du**: Wir sind schon fertig …?\n"
 "**Robo**: Ja, `rw` versucht immer anschließend `rfl` aufzurufen, und das hat hier funktioniert."
 msgstr ""
 
+#: Game.Levels.Implis.L13_Rw
+msgid "Statt dieser Aussage können oft auch die Taktiken `tauto` oder `simp` verwendet werden."
+msgstr ""
+
 #: Game.Levels.Implis.L14_Summary
 msgid ""
 msgstr ""
@@ -2194,24 +1929,32 @@ msgid "**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das let
 "\n"
 "## Notationen / Begriffe\n"
 "\n"
-"|               | Beschreibung                                             |\n"
-"|:--------------|:---------------------------------------------------------|\n"
-"| →             | Eine Implikation.                                        |\n"
-"| ↔             | Genau-dann-wenn / Äquivalenz.                            |\n"
+"|     | Beschreibung                 |\n"
+"|:--- |:---------------------------- |\n"
+"| `→` | Implikation                  |\n"
+"| `↔` | genau-dann-wenn / Äquivalenz |\n"
 "\n"
 "## Taktiken\n"
 "\n"
-"|     | Taktik                    | Beispiel                                                   |\n"
-"|:----|:--------------------------|:-----------------------------------------------------------|\n"
-"| 8   | `intro`                   | Für eine Implikation im Goal.                              |\n"
-"| 9   | `revert`                  | Umkehrung von `intro`.                                     |\n"
-"| 10  | `apply`                   | Wendet Implikation/Theorem (rückwärts) auf das Goal an.    |\n"
-"| 10ᵇ | `apply at`                | Wendet Implikation/Theorem (forwärts) auf eine Annahme an. |\n"
-"| 11  | `symm`                    | Tauscht `A ↔ B` zu `B ↔ A`.                                |\n"
-"| 12  | `trans`                   | Ändert `A ↔ C` zu `A ↔ B` und `B ↔ C`                      |\n"
-"| 13  | `rw`                      | Umschreiben zweier äquivalenter Aussagen.                  |\n"
-"| 13ᵇ | `rw`                      | Benutzt ein Lemma, dessen Aussage eine Äquivalenz ist.     |\n"
-"| 14  | `by_cases`                | Fallunterscheidung `P` und `¬P`                            |"
+"| Taktik           | Beispiel                                                          |\n"
+"|:---------------- |:----------------------------------------------------------------- |\n"
+"| `intro`          | holt linke Seite einer Implikations im Beweisziel in die Annahmen |\n"
+"| `revert`         | Umkehrung von `intro`                                             |\n"
+"| `apply`          | wendet Implikation “rückwärts” auf das Beweisziel an              |\n"
+"| `apply at`       | wendet Implikation “vorwärts” auf eine Annahme an                 |\n"
+"| `symm`           | ändert `A ↔ B` zu `B ↔ A`                                         |\n"
+"| `trans`          | ändert `A ↔ C` zu `A ↔ B` und `B ↔ C`                             |\n"
+"| `rw [h] `        | schreibt Beweisziel mithilfe der Äquivalenz `h` um                |\n"
+"| `rw [h] at h₁`   | schreibt Annahme `h₁` mithilfe der Äquivalenz `h` um              |\n"
+"| `by_cases h : P` | Fallunterscheidung zwischen `P` und `¬P`                          |"
+msgstr ""
+
+#: Game.Levels.Implis.L14_Summary
+msgid "Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen."
+msgstr ""
+
+#: Game.Levels.Implis.L14_Summary
+msgid "Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen."
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
@@ -2230,10 +1973,6 @@ msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
 msgid "**Robo**: Ich würde mal die Annahme `h` mit `obtain` aufteilen."
-msgstr ""
-
-#: Game.Levels.Implis.L14_Summary
-msgid ""
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
@@ -2430,22 +2169,19 @@ msgid "**Du**: Also von `«{h}»` weiß ich jetzt, dass ein `s` existiert, so da
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Exists
-msgid "**Du**: Und jetzt muss ich eine passende Zahl finden, so dass `x + x = «{n}» ^ 2`?\n"
+msgid "**Du**: Und jetzt muss ich eine passende Zahl `r` finden, so dass `n ^ 2 = r + r`?\n"
 "\n"
-"**Robo**: Genau. Und mit `use _` gibst du diese Zahl an."
+"**Robo**: Genau. Wenn du willst, kannst du dir diese Zahl erst einmal mit\n"
+"`let r := …`  zurechtlegen."
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Exists
-msgid "**Robo**: Also sowas ähnliches wie `use 4 * «{s}» ^ 3`, aber ich kann\n"
-"dir leider nicht sagen, welche Zahl passt."
+msgid "**Robo**: Das geht auch, jetzt musst du der wirlich eine Zahl überlegen."
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Exists
-msgid "**Robo**: Das geht auch, jetzt musst du aber wirklich `use` verwenden."
-msgstr ""
-
-#: Game.Levels.Quantus.L04_Exists
-msgid "**Du**: Ah, und jetzt `ring`!"
+msgid "**Robo**:  Die Zahl sieht gut aus!  Und jetzt sagst du einfach `use r`.\n"
+"Du hättest natürlich auch gleich `use 2 * s^2` sagen können."
 msgstr ""
 
 #: Game.Levels.Quantus.L04_Exists
@@ -2829,15 +2565,22 @@ msgid "Noch ein Funkspruch."
 msgstr ""
 
 #: Game.Levels.Saturn.L02_mul_comm
-msgid "Wieder ein 👍.\n"
+msgid "**Du**:  Nanu, was ist denn `P` hier für ein Tier?\n"
 "\n"
-"  **Du**: Aber halt, diesmal sind die Variablen doch in `ℕ`!\n"
-"  Das ist doch gar kein Ring!\n"
+"**Robo**: `P` ist ein “multivariantes Polynom”, wobei die Variablen mit `Fin 2`\n"
+"durchnummeriert sind und die Koeffizienten in `ℚ` liegen.\n"
 "\n"
-"  **Robo**: Ist es nicht.  Aber `ring` funktioniert sogar für sogenannte Halbringe.\n"
-"  Und die Aussage hier heißt übrigens `mul_comm`.\n"
+"**Du**:  Und was ist `Fin 2`?\n"
 "\n"
-"  **Du**: So so …"
+"**Robo**:  Die Standardmenge mit zwei Elementen – $\\{0,1\\}$.  Die Variablen heißen also `X 0` und `X 1`.\n"
+"\n"
+"**Du**:  Spielt hier aber eigentlich alles keine Rolle, oder?  Der Polynomring ist doch kommutativ!\n"
+"\n"
+"**Robo**: So ist es."
+msgstr ""
+
+#: Game.Levels.Saturn.L02_mul_comm
+msgid "Wieder ein 👍."
 msgstr ""
 
 #: Game.Levels.Saturn.L02_mul_comm
@@ -2853,13 +2596,18 @@ msgid "Noch ein Funkspruch."
 msgstr ""
 
 #: Game.Levels.Saturn.L03_mul_assoc
+msgid "**Robo** Hier könntest du mul_assoc verwenden.  Oder *wieder* `ring` …"
+msgstr ""
+
+#: Game.Levels.Saturn.L03_mul_assoc
 msgid "Wieder ein 👍.\n"
 "\n"
-"  **Du**: Und wie heißt diese tolle Gleichung?\n"
-"  Langsam wird das ein bisschen langweilig …\n"
+"  **Du**: Aber warte mal, diesmal waren die Koeffizienten doch in `ℕ`!\n"
+"  Das ist doch gar kein Ring, und auch Polynome mit Koeffizienten in `ℕ` bilden keinen Ring.\n"
 "\n"
-"  **Robo**: Sie heißt `mul_assoc`.\n"
-"  Ja, hoffen wir, dass der volle Antrieb bald wieder da ist."
+"  **Robo**: Mag sein.  Aber `ring` funktioniert sogar für sogenannte Halbringe.\n"
+"\n"
+"  **Du**: So so …"
 msgstr ""
 
 #: Game.Levels.Saturn.L03_mul_assoc
@@ -2913,7 +2661,11 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L05_Ring
+#: Game.Levels.Saturn.L04_Rewrite_equality
+msgid ""
+msgstr ""
+
+#: Game.Levels.Saturn.L04_Rewrite_equality
 msgid ""
 msgstr ""
 
@@ -2922,28 +2674,11 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Saturn.L05_Ring
-msgid "**Robo**:  Ich vermute, hier wirst du doch das ein oder andere Lemma brauchen, das wir gerade gesehen haben.\n"
-"Du könntest zum Beispiel mit `rw [add_pow_two] at h` anfangen."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Saturn.L05_Ring
-msgid "**Robo*: Jetzt willst du in `h` aus `(2*a)*o` den Ausdruck `a*(2*o)` machen, damit du `h2o`- benutzen kannst, nicht wahr?\n"
-"Vielleicht machst du erst einmal mit `mul_comm` aus `2*a` den Ausdruck `a*2`."
-msgstr ""
-
-#: Game.Levels.Saturn.L05_Ring
-msgid "**Du**: Das war nicht, was ich wollte.\n"
-"\n"
-"**Robo**:  Nein. In diesem Fall musst du wohl genauer sagen, welche beiden Zahlen du vertauschen möchtest:\n"
-"`mul_comm 2 a`."
-msgstr ""
-
-#: Game.Levels.Saturn.L05_Ring
-msgid "**Robo**: Und jetzt `mul_assoc`."
-msgstr ""
-
-#: Game.Levels.Saturn.L05_Ring
-msgid "“Bestanden” heißt es kurz und knapp von anonymen Funker.\n"
+msgid "“Bestanden” heißt es kurz und knapp vom anonymen Funker.\n"
 "\n"
 "  **Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert.\n"
 "  Nichts wie weg!"
@@ -2986,13 +2721,13 @@ msgid "**Du**: Und jetzt …\n"
 "\n"
 "**Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.\n"
 "\n"
-"**Robo**: Ja! Probier mal `have g : ¬ B`!"
+"**Robo**: Ja! Probier mal wieder `have`.  Genauer: `have g : ¬ B`!"
 msgstr ""
 
 #: Game.Levels.Spinoza.L01_Have
 msgid "**Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?\n"
 "\n"
-"**Robo**: Nee, jetzt musst du das erst noch beweisen, bevor du es dann benutzen kannst."
+"**Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst."
 msgstr ""
 
 #: Game.Levels.Spinoza.L01_Have
@@ -3173,7 +2908,10 @@ msgstr ""
 #: Game.Levels.Spinoza.L06_Summary
 msgid "**Du**: Aber hätten wir die letzte Aufgabe nicht genauso gut per Widerspruch beweisen können?\n"
 "\n"
-"**Benedictus**: Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber Ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe Sie Euch mit auf die Reise. Aber nun seht zu, dass Ihr weiterkommt!"
+"**Benedictus**: Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig.\n"
+"Aber Ihr könnt die Aufgabe gern noch einmal probieren.\n"
+"Hier, ich gebe Sie Euch mit auf die Reise.\n"
+"Aber nun seht zu, dass Ihr weiterkommt!"
 msgstr ""
 
 #: Game.Levels.Spinoza.L06_Summary
@@ -3355,19 +3093,19 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid ""
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "**Ritha**:  Kann ich auch mal?  Hier."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
-msgid ""
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℤ)"
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "**Du**:  Was ist denn `Icc`?\n"
 "\n"
 "**Ritha**:  Na das **I**ntervall, das links **c**losed und rechts **c**losed, also abgeschlossen ist.\n"
@@ -3381,19 +3119,47 @@ msgid "**Du**:  Was ist denn `Icc`?\n"
 "$$"
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "**Robo:** Gleichheit von Mengen ruft nach `ext`."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "**Robo:**  Schieß mal gleich noch ein `simp` hinterher."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "Ritha macht wieder irgendwelche Zeichen."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__insert_Icc_eq_Icc_add_one_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℕ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℕ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℤ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℕ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℤ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℕ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+msgid "(version for ℤ)"
+msgstr ""
+
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid ""
 msgstr ""
 
@@ -3489,7 +3255,8 @@ msgstr ""
 
 #: Game.Levels.Luna.L10_Icc_subset_Icc_iff
 msgid "**Robo**:  Die Annahme `«{h}»` musst du sicherlich irgendwie ausnutzen.\n"
-"Du könnest `«{h}»` zum Beispiel auf die Ungleichung `a₁ ≤ b₁` oder auf `a₁ ≤ a₁` anwenden!"
+"Du könnest `«{h}»` zum Beispiel auf die Ungleichung `a₁ ≤ b₁` oder auf `a₁ ≤ a₁` anwenden!\n"
+"(Die Ungleichung `a₁ ≤ a₁` formulierst du am besten mit `have` aus.)"
 msgstr ""
 
 #: Game.Levels.Luna.L10_Icc_subset_Icc_iff
@@ -3525,333 +3292,345 @@ msgid "Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.\n"
 "ich hier noch ganz durcheinander."
 msgstr ""
 
-#: Game.Levels.Babylon.L01_Simp
+#: Game.Levels.Babylon.L01_Sum_Simp_Card
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L01_Simp
+#: Game.Levels.Babylon.L01_Sum_Simp_Card
 msgid "**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen,\n"
 "warum er steht. Hier zum Beispiel."
 msgstr ""
 
-#: Game.Levels.Babylon.L01_Simp
+#: Game.Levels.Babylon.L01_Sum_Simp_Card
 msgid "**Du**: Oh das ist ganz schön viel neues … mal sehen …\n"
 "\n"
-"Das sieht aus wie $( \\sum_i 0 + 0 ) = 0$.\n"
+"Das sieht aus wie $( \\sum_{i\\in I} 1)$ ist gleich …\n"
 "\n"
-"**Robo**: Genau! Man schreibt `\\sum`. Und `i : Fin n` bedeutet,\n"
-"dass summiert wird über $0$, $1$, …, $n-1$.\n"
+"**Robo**: … der Anzahl der Element in $I$, also der Kardinalität von $I$.\n"
 "\n"
-"**Du**: Okay. Und was mach ich jetzt?\n"
+"**Babylonier**: Und, könnt ihr das beweisen?\n"
 "\n"
-"**Robo**: `simp` ist eine starke Taktik, die viele Terme vereinfacht.\n"
-"Wir fangen besser an, sie zu benutzen."
+"**Robo** *(zu Dir)*: Ich würde als erstes `simp` versuchen.\n"
+"Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
 msgstr ""
 
-#: Game.Levels.Babylon.L01_Simp
-msgid "**Babylonier**: Seht ihr, das passt!\n"
-"\n"
-"**Robo**: Mir fällt gerade ein, du hattest ja mal gefragt bezüglich `rw` unter Quantoren.\n"
-"Mit Summen ist das das gleiche: Hier musst du immer `simp_rw` verwenden, wenn du innerhalb\n"
-"einer Summe was umschreiben möchtest."
+#: Game.Levels.Babylon.L01_Sum_Simp_Card
+msgid "**Babylonier**: Seht gut, das passt!"
 msgstr ""
 
-#: Game.Levels.Babylon.L02_Sum
+#: Game.Levels.Babylon.L02_Card2
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L02_Sum
-msgid "Ihr schaut euch den nächsten Turm an."
+#: Game.Levels.Babylon.L02_Card2
+msgid "Ihr schaut euch zusammen den nächsten Turm an."
 msgstr ""
 
-#: Game.Levels.Babylon.L02_Sum
-msgid "$\\sum_{i=0}^{n-1} 2 = n × 2$."
+#: Game.Levels.Babylon.L02_Card2
+msgid "**Du**:  Wieder `simp`?"
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
+#: Game.Levels.Babylon.L03_sum_congr
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
-msgid "Ihr schaut euch den nächsten Turm an."
+#: Game.Levels.Babylon.L03_sum_congr
+msgid "Als nächstes kommt ihr an einen leeren Bauplatz, auf dem sich schon lange nichts getan zu haben scheint.\n"
+"Auf dem Bauschild steht:"
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
-msgid "$\\sum_{i=0}^{n-1} (i + 1) = n + \\sum_{i=0}^{n-1} i$."
-msgstr ""
-
-#: Game.Levels.Babylon.L03_Sum
-msgid "**Du**: Hmm, wieder `simp`?\n"
+#: Game.Levels.Babylon.L03_sum_congr
+msgid "**Du**: Die Annahme sieht wie eine verklausulierte Variante von $I \\subseteq \\{-1,0,1\\}$ aus.\n"
+"Das kann ja so oder so keine große Summe werden.\n"
 "\n"
-"**Robo**: Nicht ganz. `simp` benutzt nur Lemmata, die klar eine Vereinfachung darstellen.\n"
-"Im Lean-Duden sind diese Lemmata mit `@[simp]` markiert.\n"
-"Hier brauchen wir aber folgende Identität:\n"
+"**Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten.\n"
+"Ich schlage vor: `trans ∑ i ∈ I, 0`.  Das Summezeichen schreibst du als `\\sum`."
+msgstr ""
+
+#: Game.Levels.Babylon.L03_sum_congr
+msgid "**Robo**:  Genau. Jetzt kannst du nämlich `apply sum_congr` schreiben\n"
+"– zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und\n"
+"auch die Ausdrücke, über die summiert wird, übereinstimmen."
+msgstr ""
+
+#: Game.Levels.Babylon.L03_sum_congr
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "Ihr wandert weiter von Turm zu Turm.  Schließlich bleibst du an einem Turm stehen,\n"
+"  der dir seltsam vorkommt.  Nachdem ihr einmal um ihn herumgelaufen seid, weißt du auch, warum:\n"
+"  Es fehlt ein Eingang.  Immerhin findet ihr eine Bodenplatte mit folgender Inschrift."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Du**: Mal langsam.  Zu zeigen ist:\n"
 "\n"
 "$$\n"
-"\\sum_{i = 0}^n a_i + b_i = \\sum_{i = 0}^n a_i + \\sum_{j = 0}^n b_j\n"
+"\\sum_{i=0}^{n} (i^3 - 3 i^2 + 2 i)  = \\sum_{i=3}^{n} (i^3 - 3 i^2 + 2i)\n"
 "$$\n"
 "\n"
-"**Robo**: Und da bei dieser Identität unklar ist, welche Seite „einfacher“ ist, wird so ein Lemma nicht mit\n"
-"`@[simp]` markiert.\n"
+"Vermutlich ist der Ausdruck in der Summe einfach $0$ für die ersten drei Werte von $i$ … ja, genau.\n"
+"Und wie formulier ich das jetzt?\n"
 "\n"
-"**Du**: Hat diese Gleichheit denn wenigstens einen Namen.\n"
-"\n"
-"**Robo**: Sie heißt `sum_add_distrib`."
+"**Robo**: Du könntest `sum_subset` verwenden: ist `I₁ ⊆ I₂`,\n"
+"und verschindet der Ausdruck in der Summe auf allen Element von `I₁`, die nicht in `I₂` liegen,\n"
+"so ist die Summe über `I₁` gleich der Summe über `I₂`."
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
-msgid "**Robo**: Die zweite Summe `∑ x : Fin n, 1` kann jetzt aber mit\n"
-"`simp` zu `n` vereinfacht werden."
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Nein, das sieht falschherum aus."
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
-msgid "**Robo**: Bis auf Umordnung sind jetzt beide Seiten gleich!\n"
-"\n"
-"**Du**: Dann greift jetzt wohl `ring`!\n"
-"\n"
-"**Robo**: Genau! Und alternativ könntest du mit `rw [add_comm]` die Arbeit von `ring`\n"
-"auch manuell machen."
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Vertausch erst einmal mit `symm` die beiden Seiten der Gleichung."
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Gut.  Und jetzt `apply sum_subset`."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Hier kannst du bestimmt `Icc_subset_Icc_iff` gut gebrauchen."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**: Super!  Jetzt musst du nur noch zeigen, was du vorhin gesagt hattest:\n"
+"Der Ausdruck unter der Summe ist für die ersten drei Indizes Null."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**: Ich schlage vor, du führst erst einmal alle Annahmen ein, bis da nur noch\n"
+"```\n"
+"i ^ 3 - 3 * i ^ 2 + 2 * i = 0\n"
+"```\n"
+"als Beweisziel steht."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Aus den Annahmen muss ja irgendwie folgen $«{i}»=0$ oder $«{i}»=1$ oder $«{i}»=2$.\n"
+"Vielleicht formulierst du das mit `have` explizit aus."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Irgendeine Kombination von `simp` und `omega` wird das schon lösen.\n"
+"Hat doch auf Luna auch geklappt."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Die Annahme «{h}» kannst du ja jetzt mit `obtain h | h | h  := «{h}»` in die drei Fälle aufteilen."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L03_Sum
-msgid "Der Babylonier macht ein sehr zufriedenes Gesicht."
-msgstr ""
-
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L05_sum_subset2
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Babylonier**: Kommt, ich zeig Euch mal einen unserer schönsten Türme!\n"
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Du**:  Hier ist jetzt zu zeigen, dass\n"
+"$$\n"
+"\\sum_{i \\in I} \\left( (-1)^i + 1 \\right)\n"
+"$$\n"
+"dasselbe ist wie zweimal die Anzahl der geraden Zahlen in $I$.  Richtig?\n"
 "\n"
-"Nach einem kurzen Spaziergang steht ihr davon.\n"
+"**Robo**:  Richtig.\n"
+"\n"
+"**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade $i$ verschwindet,\n"
+"und für gerade $i$ gleich $2$ ist. Mmmm …\n"
+"\n"
+"**Robo**:  Mach doch wieder mit `trans` ein paar Zwischenschritte.  Zurerst willst du die Summe auf die Menge\n"
+"der geraden Indizes einschränken, also auf:\n"
+"```\n"
+"∑ i ∈ { i ∈ I | Even i}, ((-1^i + 1)\n"
+"```\n"
+"Und danach willst du vermutlich\n"
+"```\n"
+"∑ i ∈ { i ∈ I | Even i}, 2\n"
+"```\n"
+"als Zwischenschritt verwenden."
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Robo**:  Dazu hatten wir doch schon mal etwas gesehen, zum Beispiel `Even.neg_pow` und `Odd.neg_pow`."
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieter `sum_congr` verwenden kannst."
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Robo**: Probier mal wieder `simp`."
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Babylonier**:  Das habt ihr gut gemacht."
+msgstr ""
+
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid ""
+msgstr ""
+
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid "**Babylonier**: Kommt, ich zeig euch mal einen unserer schönsten Türme!\n"
+"\n"
+"Der Weg führt steil bergan.  Der Turm, der euch oben auf dem Berg erwartet, ist tatsächlich sehr imposant.\n"
 "\n"
 "**Robo**: Das muss der bekannte *Gaußsche Turm von Babylon* sein!\n"
-"Über den hab ich schon einmal Daten verarbeitet.\n"
+"Über den hab ich schon einmal etwas gelesen.\n"
 "\n"
 "**Babylonier**: Richtig. Gauß war ein Babylonier!"
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "$2 \\cdot \\sum_{i = 0}^n i = n \\cdot (n + 1)$."
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,\n"
-"wie zeige ich denn die arithmetische Summe, die hier gekritzelt steht?\n"
-"Ich würde gerne Induktion über $n$ anwenden.\n"
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid "**Du**: Diese Summe habe ich auch schon einmal gesehen.\n"
+"$$\n"
+"\\sum_{i = 0}^n i = \\tfrac{1}{2} \\cdot n \\cdot (n + 1)\n"
+"$$\n"
 "\n"
-"**Robo**: Wenn du meinst … Auf Leansch wäre das: `induction n with d hd`!\n"
-"Der Zusatz `with d hd` ist natürlich optional.\n"
-"Du kannst damit Namen für Induktionsvariable (d) und -hypothese (h) vorgeben."
+"Gabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n"
+"\n"
+"**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über `n` machen.\n"
+"Das wäre auf Leansch: `induction n with d hd`!\n"
+"\n"
+"**Du**:  Warum `with …`?\n"
+"\n"
+"**Robo**:  Der Zusatz ist natürlich optional.\n"
+"Du kannst damit Namen für Induktionsvariable (`d`) und -hypothese (`hd`) vorgeben."
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid "**Du**: Zuerst der Induktionsanfang …\n"
 "\n"
 "**Robo**: Diesen kannst du oft mit `simp` abkürzen!"
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Robo**: Jetzt der Induktionsschritt.\n"
-"Bei Induktion über endlichen Summen beginnst du den Induktionsschritt\n"
-"immer mit `rw [sum_univ_castSucc]`."
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid "**Robo**: Jetzt willst du das Interval $[0, «{d}»+1]$, über das summiert wird, aufspalten in $[0,«{d}»]$ und $«{d}»+1$.\n"
+"Dazu könntest du das Lemma `insert_Icc_eq_Icc_add_one_right` verwenden, das wir schon gesehen hatten."
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Du**: Oh das sieht jetz aber kompliziert aus…\n"
-"\n"
-"**Robo**: Da musst du etwas darüber hinweg lesen. Am besten machst du kurz `simp`,\n"
-"dann sieht's schon wieder besser aus."
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid "**Robo**:  Genau!  Und jetzt spaltet dir `sum_insert` die Summe genau so auf, wie du das haben möchtest:\n"
+"also eine Summe über $[0,«{d}»]$ und dann noch einen zusätzlichen Summanden für $«{d}»+1$.\n"
+"Probiers mal: rw [sum_insert]"
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?\n"
-"\n"
-"**Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,\n"
-"also die natürliche Abbildung `ℕ ↪ ℤ` benutzt. Oder hier, wenn ein Element `x : Fin n` als\n"
-"Element `↑x : ℕ` betrachtet wird."
-msgstr ""
-
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Robo**: Um die Induktionshypothese anzuwenden, brauchst du zuerst das Lemma `mul_add`."
-msgstr ""
-
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid "**Du**: Und wie wende ich jetzt die Induktionshypothese an?\n"
 "\n"
-"**Robo** mit `rw` wie jede andere Annahme auch."
+"**Robo**: Mit `rw`, wie jede andere Annahme auch."
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "**Du**: Der Rest ist einfach Rechnerei.\n"
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
+msgid "**Du**: Der Rest sollte jetzt einfach nur Rechnerei sein.\n"
 "\n"
-"**Robo**: Dann wird `ring` wohl keine Probleme haben."
+"**Robo**:  Stimmt.  Irgendeine Kombination von `simp` und `ring` sollte das schaffen."
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L04_ArithSum
-msgid "Du schaust dich um und bewunderst das Tal in dem hunderte, wenn nicht tausende,\n"
-"Steintürme in allen Formen und Höhen stehen."
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
+msgid "Direkt neben dem Gaußschen Turm ist wieder ein leerer Bauplatz.  Diesmal steht folgendes auf dem Schild:"
 msgstr ""
 
-#: Game.Levels.Babylon.L05_SumOdd
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
+msgid "**Du**:  $\\sum_{i=-n}^«{n}» i = 0$ – ja, das sieht richtig aus.\n"
+"\n"
+"**Robo**:  Sollte auch ganz genau so beweisbar sein, wie die Gaußsche Summe eben …\n"
+"außer dass du vermutlich nach `insert_Icc_eq_Icc_add_one_right` auch noch\n"
+"`insert_Icc_eq_Icc_sub_one_left` brauchen wirst."
+msgstr ""
+
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
+msgid "**Robo**:  Genau, und jetzt wieder `rw [sum_insert]`."
+msgstr ""
+
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
+msgid "**Robo**: Ich fürchte, als nächstes musst du `-1 + -«{d}»` als `-«{d}» - 1` umschreiben.\n"
+"Vielleicht ist es am einfachsten, wenn du diese Gleichung mit `have` ausformulierst.\n"
+"Du musst nur irgendwie klarmachen, dass das eine Gleichung in `ℤ` sein soll,\n"
+"beispielsweise so:\n"
+"```\n"
+"have : -1 + (-d : ℤ)  = -d - 1\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Babylon.L07_Induction2_sum_insert2
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L05_SumOdd
-msgid "Aus reiner Neugierde gehst Du zu einem etwas kleineren Nachbarsturm hinüber."
-msgstr ""
-
-#: Game.Levels.Babylon.L05_SumOdd
-msgid "$\\sum_{i = 0}^{n-1} (2i + 1) = n ^ 2$."
-msgstr ""
-
-#: Game.Levels.Babylon.L05_SumOdd
-msgid "**Robo**: Das funktioniert genau gleich wie zuvor, viel Glück."
-msgstr ""
-
-#: Game.Levels.Babylon.L05_SumOdd
-msgid "Den Induktionschritt bei Summen solltest du wie gesagt\n"
-"immer mit `rw [sum_univ_castSucc]` beginnen."
-msgstr ""
-
-#: Game.Levels.Babylon.L06_SumComm
+#: Game.Levels.Babylon.L08_Induction3_sub_insert3
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L06_SumComm
-msgid "**Babylonier**: Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!\n"
-"\n"
-"Die beiden Freunde stehen vor zwei Türmen mit einer kleinen Brücke, die zwischen den ihnen verläuft.\n"
-"Aber die Tafel am Eingang ist so sehr verwittert, dass sie nicht mehr lesbar ist.\n"
-"Auf der oberen Hälfte steht nur folgendes, *in einer Form, die Du verstehst*:\n"
-"\n"
-"$$\\sum_{i=0}^n\\sum_{j=0}^m a_{ij} = \\sum_{j=0}^m\\sum_{i=0}^n a_{ij}$$\n"
-"\n"
-"Natürlich fangt ihr an zu rätseln, was darunter stand.\n"
-"\n"
-"**Robo**: Probier mal, das im lokalen Dialekt zu formulieren."
+#: Game.Levels.Babylon.L08_Induction3_sub_insert3
+msgid "Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher a."
 msgstr ""
 
-#: Game.Levels.Babylon.L06_SumComm
-msgid "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um sicher zu sein.\n"
+#: Game.Levels.Babylon.L08_Induction3_sub_insert3
+msgid "**Du**:  Hier also eine Summe nur über ungeraden Zahlen.\n"
+"$$\n"
+"\\sum_{i = 0}^n (2i + 1) = n^2\n"
+"$$\n"
 "\n"
-"**Du**: Hast du nicht ein Lemma dafür?\n"
-"\n"
-"**Robo**: Doch, probier mal `sum_comm`."
+"**Robo**: Das funktioniert doch genau gleich wie zuvor."
 msgstr ""
 
-#: Game.Levels.Babylon.L06_SumComm
+#: Game.Levels.Babylon.L08_Induction3_sub_insert3
+msgid "**Babylonier**:  Und?  Gefällt es euch hier?\n"
+"\n"
+"  **Robo**:  Ja, sehr.  Das ist wirklich alles beeindruckend, was ihr hier aufgebaut habt.\n"
+"  Aber wir wollen euch nicht länger aufhalten.\n"
+"\n"
+"  **Du**:  Ich denke auch, wir sollten langsam wieder aufbrechen.\n"
+"\n"
+"  Ihr verabschiedet euch und macht euch auf den Weg zurück zum Raumschiff."
+msgstr ""
+
+#: Game.Levels.Babylon.L09_Boss
 msgid ""
 msgstr ""
 
-#: Game.Levels.Babylon.L06_SumComm
-msgid "Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,\n"
-"  auf das du die Aussage gekritzelt hast. Gleich zückt einer einen Meißel und sie beginnen, eine\n"
-"  neue Platte zu erstellen.\n"
-"\n"
-"  Ihr beschließt, euch noch ein bisschen allein umzusehen."
+#: Game.Levels.Babylon.L09_Boss
+msgid "Ihr seid noch nicht weit gegangen, da kommt hinter einem Turm plötzlich ein besonders großer Babylonier hervor,\n"
+"stellt sich euch in den Weg, schaut euch finster an und fordert in tiefer Stimme einen Beweis der\n"
+"folgenden Gleichung."
 msgstr ""
 
-#: Game.Levels.Babylon.L07_Summary
-msgid ""
+#: Game.Levels.Babylon.L09_Boss
+msgid "**Du**: Naja. Das wird schon klappen …"
 msgstr ""
 
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Robo, gib mir doch nochmals eine Übersicht, bitte.\n"
-"\n"
-"**Robo**: Aber klar:\n"
-"\n"
-"|                      | Beschreibung                              |\n"
-"|:---------------------|:------------------------------------------|\n"
-"| `Fin n`              | Ist ein Typ mit Zahlen $0, \\ldots, n-1$. |\n"
-"| `∑ (i : Fin n), a i` | $\\sum_{i=0}^{n-1} a_i$                   |\n"
-"| `↑i`                 | Eine Coersion, z.B. `Fin n → ℕ`.          |\n"
-"\n"
-"und\n"
-"\n"
-"|    | Taktik                    | Beispiel                             |\n"
-"|:---|:--------------------------|:-------------------------------------|\n"
-"| 21 | `simp`                    | Simplifikation.                      |\n"
-"| 22 | `induction n`             | Induktion über $n$                   |\n"
-"\n"
-"Da kommt hinter einem Turm plötzlich ein besonders großer Babylonier hervor, schaut euch\n"
-"bedrohlich an und fragt in tiefer Stimme:"
+#: Game.Levels.Babylon.L09_Boss
+msgid "**Robo**:  Denk daran, dass wir schon `arithmetic_sum` bewiesen hatten."
 msgstr ""
 
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Gulp. Naja das wird schon klappen. Also man fängt wieder mit Induktion an …"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Also den Induktionsanfang kann man einfach zeigen …"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Robo**: Und jetzt wieder `rw [sum_univ_castSucc]` und `simp`, um vorwärts zu\n"
-"kommen!"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Robo**: Siehst du die Induktionshypothese hier drin?"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Okay, damit habe ich die linke Seite der Gleichung ziemlich gut bearbeitet.\n"
-"Aber, ehm, mit der Rechten komme ich nicht weiter …\n"
-"\n"
-"Der Babylonier schaut dich finster an.\n"
-"\n"
-"**Du**: Ich will `sum_univ_castSucc` auf der rechten Seite anwenden, aber es gibt mehrere Orte, wo das Lemma passen würde, und ich will es nur an einer bestimmten Stelle anwenden.\n"
-"\n"
-"**Robo**:\n"
-"Mit `rw [sum_univ_castSucc (n := «{n}» + 1)]` kannst du angeben, wo genau.\n"
-"\n"
-"**Du**: Was bedeutet das?\n"
-"\n"
-"**Robo** Das Lemma hat eine Annahme `n` und du sagst ihm explizit, was es für dieses `n`\n"
-"einsetzen muss, nämlich `«{n}» + 1`"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Robo**: Das hat jetzt einfach `Fin.sum_univ_castSucc` am ersten Ort angewendet,\n"
-"wo das möglich war. Das ist nicht so ideal, die linke Seite war schon okay.\n"
-"\n"
-"**Robo**: Geh doch zurück und bring `rw` dazu am anderen Ort umzuschreiben."
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Robo**: `add_pow_two` ist auch noch nützlich!"
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Ich glaube, ich sehe hier eine Gaußsche Summe!!\n"
-"\n"
-"**Robo**: Ich habe dir das vorhin temporär als `arithmetic_sum` gespeichert.\n"
-"Das kannst du jetzt benutzen."
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
-msgid "**Du**: Jetzt sollten es eigentlich nur noch arithmetische Operationen sein."
-msgstr ""
-
-#: Game.Levels.Babylon.L07_Summary
+#: Game.Levels.Babylon.L09_Boss
 msgid "Der Babylonier denkt ganz lange nach, und ihr bekommt das Gefühl, dass er gar nie\n"
 "aggressiv war, sondern nur eine sehr tiefe Stimme hat.\n"
 "\n"
@@ -3882,278 +3661,461 @@ msgid "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohe
 "**Babylonier**: Ganz einfach! Ein Stein nach dem anderen."
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
+#: Game.Levels.Cantor.L01_CantorPowerset
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Cantor**: Wusstet ihr dass es keine surjektiven Funktionen `f : A → Set A` gibt? Faszinierend\n"
-"oder?\n"
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Cantor**: … Wir betrachten also eine Abbildung `f` von `A` in die Potenzmenge von `A`,\n"
+"und nun die Menge alle jener Elemente aus `A`, die nicht in ihrem Bild unter `f` liegen …\n"
 "\n"
-"**Cantor**: Wie das geht? Hier, ist eine kleine Hilfe:"
+"Oh!  Ein Publikum. Nein, *zwei* Publikums!  Hört und seht, seht und staunt.\n"
+"\n"
+"Er zieht aus seinem Zylinder einen Zettel, faltet ihn zu einer Schwalbe,\n"
+"und lässt ihn zu euch herunterfliegen.\n"
+"\n"
+"**Cantor**:  Wenn ich schon zwei Publikums habe, könnten die ja auch ein bisschen mitmachen, nicht wahr?"
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
+#: Game.Levels.Cantor.L01_CantorPowerset
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Du**: Ich denke eine Fallunterscheidung auf `«{a}» ∈ «{f}» «{a}»` könnte sinnvoll sein."
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Du**:  Ist also `Set A` die Potenzmenge von `A`?\n"
+"\n"
+"**Robo**: Ja, sozusagen.  Es ist die Menge, oder genauer der Typ, aller Teilmengen von `A`.\n"
+"\n"
+"**Du**:  Und ich soll zeigen, dass … aha.  Vermutlich ein Widerspruchsbeweis, oder?\n"
+"\n"
+"**Robo**:  Vermutlich."
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Cantor**:  Ja, ja, ja!  Und jetzt hübsch `«{h}»` zerlegen …"
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Robo:  … mit `obtain`, wie immer."
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "**Du**: Jetzt vermutlich eine Fallunterscheidung zu `«{a}» ∈ «{f}» «{a}»`?"
+msgstr ""
+
+#: Game.Levels.Cantor.L01_CantorPowerset
 msgid "**Robo**: Das wäre `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`."
 msgstr ""
 
-#: Game.Levels.Cantor.L00_CantorPowerset
-msgid "**Robo**: Mach mal mit `suffices : «{a}» ∉ «{f}» «{a}»` weiter!"
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "Cantor reibt sich die Hände.\n"
+"\n"
+"**Cantor**:  Das sieht gut aus!"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid ""
+msgid "**Cantor**: Gute Idee!  Fast richtig!\n"
+"Aber ihr werdet die ursprünglich Annahme\n"
+"`«{h₁}» : «{a}» ∈ «{f}» «{a}»` gleich noch einmal brauchen.\n"
+"\n"
+"**Robo**:  Okay, zurück und mit `have` weiter.\n"
+"Oder mit `suffices : «{a}» ∉ «{f}» «{a}»`!"
 msgstr ""
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Cantor**: Also und jetzt die eigentliche Aussage!"
+msgid "Cantor klatsch in die Hände und freut sich.\n"
+"Wie von Zauberhand fliegt der Zettel zu ihm zurück."
 msgstr ""
 
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Uff. Aber ehrlich habe ich die das \"Diagonale\" daran noch nicht\n"
-"ganz gesehen.\n"
-"\n"
-"\n"
-"**Cantor**: Natürlich, das kann ich euch zeigen, aber da muss ich etwas ausholen…"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Du**: Also ein Widerspruchsbeweis?"
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Robo**: als Erinnerung: Wenn du so etwas wie `?f` siehst, bedeutet das, dass\n"
-"noch nicht spezifiziert wurde welche Funktion benützt wird. Du hättest besser\n"
-"`apply cantor_helper f` geschrieben. Aber du kannst auch einfach mal weitermachen, als ob `?f`\n"
-"schon `«{f}»` wäre, und vermutlich wird Lean das irgendwann automatisch einfüllen."
-msgstr ""
-
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "**Cantor**: Wendet doch gleich das Resultat von vorhin an!\n"
-"\n"
-"**Robo**: Ich hab das als `cantor_helper f` gespeichert."
-msgstr ""
-
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
+#: Game.Levels.Cantor.L02_CantorPowerset
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "**Du**: Also wie ist das mit der Diagonalen?\n"
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Cantor**:  Passt auf, die Überlegung geht eigentlich noch weiter!\n"
 "\n"
-"**Cantor**: Um das genauer zu erläutern muss ich euch zuerst ein paar rätsel zu Fixpunkten stellen."
+"Er greift in seinen Zylinder, und holt alle möglichen Dinge heraus.\n"
+"Eine alte Zahnbürste, ein Kartenspiel, ein weißes Kaninchen …\n"
+"Schließlich kommt ein zerknüllter Zettel zum Vorschein.\n"
+"\n"
+"**Cantor**: Hier sind ja meine Notizen!  Tada!  Mein berühmtes Diagonalargument!\n"
+"\n"
+"Er faltet den Zettel auf, reißt vorsichtig die oberste Zeile ab,\n"
+"und lässt sie zu euch hinuntersegeln.\n"
+"Dann beugt er sich neugierig über den Bühnenrand, um zu sehen, was ihr macht."
 msgstr ""
 
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
-msgid "**Robo**: `IsFixedPt f x` ist die Aussage `f x = x`.\n"
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Du**: Das habe ich schon einmal gesehen!\n"
+"Kurz:  „Die Potenzmenge ist stets mächtiger als die Menge selbst.“\n"
+"War auch ein Widerspruchsbeweis, meine ich.\n"
 "\n"
-"**Du**: Und `abs` ist der Betrag? Was mache ich damit?\n"
-"\n"
-"**Robo**: Ich denke so einfache Sachen, die `0` beinhalten kann `simp` ganz gut,\n"
-"aber ich habe hier auch noch zwei Resultate, die hilfreich aussehen."
+"**Robo:** Ja, aber ich würde mit `push_neg` und `intro f` anfangen."
 msgstr ""
 
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Cantor**:  Na, was meint ihr?  Gibt es vielleicht irgendeine Menge,\n"
+"die nicht von `f` getroffen wird?"
+msgstr ""
+
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Robo**:  Probier mal die Menge von gerade!\n"
+"Du könntest sie erst einmal mit `let s := { a | a ∉ «{f}» a }` einführen."
+msgstr ""
+
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Robo**:  Super!\n"
+"Jetzt kannst du z.B. einfach mit `specialize «{hf}» «{s}»` weitermachen.\n"
+"Und wenn du später `simp` anwendest,\n"
+"kannst du mit `simp [«{s}»]` dafür sorgen, dass `simp` durch deine Definition hindurchsieht."
+msgstr ""
+
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "Cantor hüpft von einem Bein auf das andere."
+msgstr ""
+
+#: Game.Levels.Cantor.L02_CantorPowerset
+msgid "**Cantor**:  Ja!\n"
+"\n"
+"**Du**:  Robo, könnten wir jetzt nicht das Resultat von eben verwenden?\n"
+"\n"
+"**Robo**:  Sorry, ging alles so schnell!  Habe ich wohl vergessen, abzuspeichern."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L02_IsFixedPt_abs
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ ist.\n"
+"\n"
+"**Cantor**: Nein?  Na dann pass auf!  Wir machen das jetzt noch einmal  l a n g s a m.\n"
+"\n"
+"Er wühlt wieder in seinem Zylinder.  Ein Kompass.  Eine Violine. Eine Dose Schnupftabak.\n"
+"\n"
+"**Cantor**:  Ach nein, wir machen das anders.\n"
+"\n"
+"Er greift noch einmal tief in seinen Zylinder hinein,\n"
+"und holf einen ganzen Stapel Papier heraus. Den wirft er euch zu.\n"
+"Ihr seht euch die Zettel nacheinander an."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Cantor**:  Gut gemacht!\n"
+"\n"
+"  Er hat angefangen mit ein paar Kakteen zu jonglieren,\n"
+"  aber offenbar verfolgt er dennoch irgendwie, was ihr macht."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Robo**: Also `|x|` ist einfach der übliche Betrag der reellen Zahl `x`.\n"
+"Und was `IsFixedPt` bedeutet findest du vermutlich mit `unfold` heraus."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Du**:  Ähm …\n"
+"\n"
+"**Robo**:  `IsFixedPt` soll vermutlich “is fixed point” heißen.\n"
+"Jedenfalls bedeutet `IsFixedPt f x` offenbar gerade `f x = x`."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Robo**:  So weit, so gut."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Robo**: `simp` kann man immer mal probieren."
+msgstr ""
+
+#: Game.Levels.Cantor.L03_IsFixedPt_abs
+msgid "**Robo**: `simp` kann man immer mal probieren."
+msgstr ""
+
+#: Game.Levels.Cantor.L04_fixedPoints_neg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L03_fixedPoints_neg
+#: Game.Levels.Cantor.L04_fixedPoints_neg
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "**Cantor**: Oder schaut hier, die Menge der Fixpunkte von `-(·)` ist ein Singleton."
+#: Game.Levels.Cantor.L04_fixedPoints_neg
+msgid "**Cantor**:  Weiter so!\n"
+"\n"
+"  Er hat die Kakteen gegen Spatzen eingetauscht."
 msgstr ""
 
-#: Game.Levels.Cantor.L03_fixedPoints_neg
-msgid "**Du**: `fixedPoints f` ist dann wohl die Menge aller Fixpunkte?\n"
+#: Game.Levels.Cantor.L04_fixedPoints_neg
+msgid "**Du**: Hier ist `fixedPoints f` wohl die Menge aller Fixpunkte?\n"
 "\n"
-"**Robo**: Ja, genau: `fixedPoints f := { x | IsFixedPt f x }`.\n"
-"\n"
-"**Du**: Welche Optionen habe ich nochmals bei Gleichungen von Mengen?\n"
-"\n"
-"**Robo** Entweder du brauchst `ext x` um `x ∈ A ↔ x ∈ B` zu zeigen, oder\n"
-"du benützt `rw [Subset.antisymm_iff]` um dann `A ⊆ B ∧ B ⊆ A` zu zeigen."
+"**Robo**: Probiers aus – `unfold` sollte wieder helfen."
 msgstr ""
 
-#: Game.Levels.Cantor.L03_fixedPoints_neg
+#: Game.Levels.Cantor.L04_fixedPoints_neg
+msgid "**Robo**: Sieht gut aus.  Und jetzt am besten gleich noch `unfold IsFixedPt`."
+msgstr ""
+
+#: Game.Levels.Cantor.L04_fixedPoints_neg
+msgid "**Robo**: `simp` kann man immer mal probieren …"
+msgstr ""
+
+#: Game.Levels.Cantor.L05_IsFixedPt_not
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L03_fixedPoints_neg
+#: Game.Levels.Cantor.L05_IsFixedPt_not
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L04_IsFixedPt_not
+#: Game.Levels.Cantor.L05_IsFixedPt_not
+msgid "**Cantor**: Ihr kommt der Sache näher …\n"
+"\n"
+"   Die Spatzen sind – wenig überraschend – davon geflogen.\n"
+"   Also jongliert er wieder mit den Kakteen, und fährt dabei Einrad."
+msgstr ""
+
+#: Game.Levels.Cantor.L05_IsFixedPt_not
+msgid "**Du**: Was bedeutet das zweite `¬` hier?\n"
+"\n"
+"**Robo**:  Dasselbe wie das erste: logische Negation.\n"
+"Die kannst du als Selbstabbildung der Menge `Prop` aller möglichen Aussagen auffassen.\n"
+"Und diese Abbildung hat natürich keine Fixpunkte,\n"
+"denn eine Aussage kann doch nicht gleich ihrer Negation sein!"
+msgstr ""
+
+#: Game.Levels.Cantor.L06_IsFixedPt_odd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Cantor**: Aber auf was ich eigentlich hinaus wollte, ist die Fixpunkte von `¬` anzuschauen;\n"
-"Es gibt nämlich keine!"
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Du**: Und was hatten jetzt Fixpunkte mit dem Diagonalargument zu tun?\n"
-"\n"
-"**Cantor**: Nur Geduld! Ich habe gerade so viel Spaß!"
-msgstr ""
-
-#: Game.Levels.Cantor.L04_IsFixedPt_not
-msgid "**Du**: Ja, `¬(·)` hat keinen Fixpunkt, keine Aussage kann gleichzeitig\n"
-"wahr und falsch sein!"
-msgstr ""
-
-#: Game.Levels.Cantor.L05_IsFixedPt_odd
+#: Game.Levels.Cantor.L06_IsFixedPt_odd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L05_IsFixedPt_odd
-msgid "**Cantor**: Zum Beispiel bei ungeraden Funktionen. Da sind die Fixpunkte symmetrisch.\n"
-"\n"
-"**Du** (*flüsternd zu Robo*): Das hat jetzt wirklich nichts mehr mit der ursprünglichen\n"
-"Frage zu tun\n"
-"\n"
-"**Robo** (*leise*): Na komm schon, wir kommen bestimmt gleich dazu."
+#: Game.Levels.Cantor.L06_IsFixedPt_odd
+msgid "Cantor sagt wieder etwas, aber ihr seid zu sehr mit den Aufgaben beschäftigt.\n"
+"  Ihr bemerkt noch nicht einmal, dass er inzwischen angefangen hat,\n"
+"  mit dem Einrad zu fliegen."
 msgstr ""
 
-#: Game.Levels.Cantor.L06_idempotent
+#: Game.Levels.Cantor.L06_IsFixedPt_odd
+msgid "**Du**:  So etwas ähnliches habe ich schon einmal gesehen\n"
+"– die Annahme sagt, dass `f` eine „ungerade Funktion ist“.\n"
+"\n"
+"**Robo**: Dann mal los.  Ich denke, du wirst hier nichts brauchen,\n"
+"was wir nicht schon gesehen haben."
+msgstr ""
+
+#: Game.Levels.Cantor.L07_idempotent
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Cantor**: Also noch ein letztes Rätsel, dann kommen wir gleich zurück zum\n"
-"Diagonalargument.\n"
-"\n"
-"**Robo**: Oh das sieht anspruchsvoller aus."
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Du**: Etwas womit ich unsicher bin, wie spielt da wohl `«{f}» ∘ «{f}» = «{f}»` mit rein?\n"
-"\n"
-"**Robo**: Vermutlich willst du das irgendwann auf ein bestimmtes `x` anwenden.\n"
-"\n"
-"Dafür kannst du irgendwann `apply congr_fun at «{h}»` brauchen, damit\n"
-"du `∀ x, («{f}» ∘ «{f}») x = «{f}» x` kriegst."
-msgstr ""
-
-#: Game.Levels.Cantor.L06_idempotent
-msgid "**Robo**: Wir hatten einmal `Function.comp_apply`!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
+#: Game.Levels.Cantor.L07_idempotent
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Cantor**: Genug gerätselt, jetzt aber zum Diagonalargument. Wenn wir eine surjektive\n"
-"Funktion `f : A → (A → Y)` haben, dann hat jede Funktion `s : Y → Y` einen Fixpunkt.\n"
+#: Game.Levels.Cantor.L07_idempotent
+msgid "**Cantor**: Na, seid ihr schon fertig??\n"
 "\n"
-"**Du**: Und welcher Punkt ist das?\n"
-"\n"
-"**Cantor**: Gute Frage! Hier, ich geb euch eine Aufgabe um das herauszufinden."
+"  **Robo**:  Einen Zettel haben wir noch."
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Cantor**: Diese Aufgabe soll euch vermitteln, wie ihr den Fixpunkt kriegt!"
+#: Game.Levels.Cantor.L07_idempotent
+msgid "**Robo**:  Fang am besten damit an, wieder alle Definition auszuschreiben.\n"
+"Ich würde sagen:  `unfold range fixedPoints IsFixedPt`.\n"
+"Und die Annahme `«{h}»` könntest du schon einmal `congr_fun` genauer ausschreiben."
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag_IsFixedPt
-msgid "**Du**: Also ist der Fixpunkt dieses diagonale Element `f b b`, für ein `b`\n"
-"  das irgendwie aus der Surjektivität kommt…\n"
-"\n"
-"  **Cantor**: Und damit auf zum Hauptsatz!"
+#: Game.Levels.Cantor.L07_idempotent
+msgid "**Robo**:  Ich meinte `apply congr_fun at h`."
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag
+#: Game.Levels.Cantor.L07_idempotent
+msgid "**Robo**:  Vielleicht fängst du mal wieder mit `ext` an.\n"
+"Oder mit `Subset.antisymm_iff`."
+msgstr ""
+
+#: Game.Levels.Cantor.L07_idempotent
+msgid "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?"
+msgstr ""
+
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+msgid "Cantor landet, steigt vom Rad, kommt wieder zur Bühnenkante und reibt sich die Hände.\n"
+"\n"
+"**Cantor**: Ihr kommt der Sache jetzt näher!\n"
+"Wenn ihr genau hinseht, habt ihr eine Abbildung vor euch,\n"
+"die auf einem Produkt `A × A` definiert ist!\n"
+"Und im Produkt gibt es eine Diagonale!"
+msgstr ""
+
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+msgid "**Cantor**:  Sehr schön!\n"
+"\n"
+"  Er klatscht.\n"
+"\n"
+"  **Du**:  Also ich verstehe gerade gar nichts mehr."
+msgstr ""
+
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+msgid "**Du** *(zu Robo)*: Siehst du hier ein Produkt?\n"
+"\n"
+"**Robo**:  Ja, klar.  Erinner dich, wo bei `f` die Klammern stehen: `A → (A → Y)`.\n"
+"Eine Abbildung von `A` zur Menge der Abbildungen von `A →  Y` ist doch dasselbe\n"
+"wie eine Abbildung von `A × A` nach `Y`.\n"
+"\n"
+"Du runzelst die Stirn.\n"
+"\n"
+"**Robo**: Doch doch, das hatte wir uns auf Epo schon einmal überlegt!\n"
+"Du kannst `«{f}» «{a}» «{a}»` entweder als `«{f}» «{a}»` angewendet auf `«{a}»` oder als\n"
+"`«{f}»` angewendet auf `(«{a}»,«{a}»)` interpretieren.\n"
+"\n"
+"**Cantor**:  Ganz genau!  Und das Element `(«{a}»,«{a}»)` liegt auf der Diagonale!\n"
+"\n"
+"**Robo**: Die Annahme `«{ha}»` ist andereseits so formuliert,\n"
+"dass die Interpretation von `f` als Abbildung `A → (A → Y)` naheliegender ist."
+msgstr ""
+
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L09_CantorDiag
 msgid "**Cantor**: Viel Glück!"
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag
+#: Game.Levels.Cantor.L09_CantorDiag
 msgid "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche\n"
 "Aufgabe nochmals lösen."
 msgstr ""
 
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Mit der Aufgabe vorhin könnt\n"
-"ihr sicher herausfinden, was das richtige `c : A → Y` ist, auf das ihr die Surjektivität\n"
-"anwenden wollt."
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Robo**: So viel weiss ich: die Funktion\n"
-"definieren wir mit\n"
-"\n"
-"```\n"
-"let c : A → Y := fun a ↦ _\n"
-"```\n"
-"\n"
-"aber den Wert musst schon du herausfinden!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Gute Wahl!"
-msgstr ""
-
-#: Game.Levels.Cantor.L07_CantorDiag
-msgid "**Cantor**: Das sieht gut aus, jetzt können wir ja\n"
-"`cantor_diagonal_isFixedPt` von vorhin brauchen!"
-msgstr ""
-
-#: Game.Levels.Cantor.L08_CantorPowerset
+#: Game.Levels.Cantor.L09_CantorDiag
 msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Du**: Und wie hängt das jetzt damit zusammen, dass es keine Surjektive Funktion\n"
-"`f : A → Set A` gibt?\n"
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid "**Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel!\n"
+"  Ihr müsst die Aussage von eben nur ein bisschen umformulieren.\n"
 "\n"
-"**Cantor**: Ganz einfach, nehmt `s` als die Funktion `fun x ↦ ¬ x`.\n"
+"  Er wirft euch einen neuen Zettel zu."
+msgstr ""
+
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid "**Cantor**:  Bravo!"
+msgstr ""
+
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid "**Du**:  Wir sollen unter bestimmten Annahmen zeigen, dass *jede* Selbstabbildung `s : «{Y}» → «{Y}»`\n"
+"einen Fixpunkt hat?  Gibt es nicht auf jeder Menge eine Selbstabbildung *ohne* Fixpunkte?\n"
+"Zum Beispiel $n ↦ n + 1$ auf $ℕ$ oder $ℝ$ …\n"
 "\n"
-"**Robo**: In Lean kann man nämlich eine Menge `U : Set A` mit dem Prädikat\n"
-"`{ x : A | x ∈ U } : A → Prop` gleichsetzen, die sind per Definition dasselbe.\n"
-"Damit kann man `f : A → Set A` auch als `f : A → A → Prop` sehen.\n"
+"**Robo**:  … oder die nicht-triviale Permutation auf $\\{0,1\\}$?\n"
 "\n"
-"**Du**: Und `{ a | a ∉ f a }` ist `s (f a a)` für `s : (fun x ↦ ¬ x)`, alles klar."
+"Auch er ist anscheinend etwas verwirrt.\n"
+"\n"
+"**Robo**: Also, wenn `Y` nicht gerade die Einpunktmenge ist,\n"
+"sollte immer eine fixpunktfreie Selbstabbildung existieren.\n"
+"\n"
+"**Cantor**:  Na, das ist ja gerade der Witz!  Wartet ab!"
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Cantor**: Ein Widerspruchsbeweis ist die Kür der Mathematik."
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid "**Cantor**: Ihr müsst natürlich irgendwie die\n"
+"Surjektivität von `«{f}»` ausnutzen. Aber ich hatte euch ja eben schon verraten,\n"
+"welche Abbildung `«{A}» → «{Y}»`  ihr ein Urbild betrachten müsst …\n"
+"\n"
+"**Robo** *(zu Dir)*: Mmm … verstehst du, was er meint?\n"
+"Natürlich könntest du jetzt eine Abbildung definieren mit\n"
+"```\n"
+"let c : «{A}» → «{Y}» := fun a ↦ _\n"
+"```\n"
+"und dann von dieser Abbildung `c` ein Urbild betrachten.\n"
+"Aber ich bin gerade etwas verloren."
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Du**: Also hier jetzt `cantor_diagonal` verwenden?"
+#: Game.Levels.Cantor.L09_CantorDiag
+msgid "**Cantor**: Gute Wahl!"
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Robo**: Zum Beispiel mit `apply cantor_diagonal at «{h}»`!"
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid ""
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal,\n"
+"dass es keine surjektiven Abbildungen `A → Set A` gibt!\n"
+"Ihr müsst nur `Set A` auffassen als `A → Prop`!\n"
+"\n"
+"**Du**: Was?\n"
+"\n"
+"**Robo**:  Eine Teilmenge `S : Set A` kann man mit der Abbildung\n"
+"`A → Prop` identifizieren, die `a : A` auf die Aussage `a ∈ S` wirft.\n"
+"Für Formalosophen ist das dasselbe."
+msgstr ""
+
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Du**:  Ich weiß nicht, ob das wirklich einfacher war …"
+msgstr ""
+
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Du**: Also hier jetzt `cantor_diagonal` verwenden?\n"
+"\n"
+"**Robo**: Vermutlich, zum Beispiel mit `apply cantor_diagonal at «{hf}»`."
+msgstr ""
+
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Du**: Also hier jetzt `cantor_diagonal` verwenden?\n"
+"\n"
+"**Robo**: Vermutlich, zum Beispiel mit `apply cantor_diagonal at «{hf}»`."
+msgstr ""
+
+#: Game.Levels.Cantor.L10_CantorPowerset
 msgid "**Cantor**: Nein, nein! Wir wollten doch\n"
 "mein schönes Theorem `cantor_diagonal` verwenden!"
 msgstr ""
 
-#: Game.Levels.Cantor.L08_CantorPowerset
-msgid "**Cantor**: Wir hatten doch geübt, dass `¬(·)` keinen Fixpunkt hat.\n"
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Cantor**: Nein, nein! Wir wollten doch\n"
+"mein schönes Theorem `cantor_diagonal` verwenden!"
+msgstr ""
+
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "**Cantor**: Hatte ihr euch nicht schon überlegt, dass `¬ .` keine Fixpunkte hat?"
+msgstr ""
+
+#: Game.Levels.Cantor.L11_SequenceUncountable
+msgid ""
+msgstr ""
+
+#: Game.Levels.Cantor.L11_SequenceUncountable
+msgid "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n"
 "\n"
-"**Robo**: Das habe ich als `not_isFixedPt_not` gepspeichert"
+"  Er macht drei Saltos rückwarts und kommt\n"
+"  dann mit einem weiteren Zettel für euch zurück.\n"
+"\n"
+"  **Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen,\n"
+"  dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen `ℕ → ℕ`,\n"
+"  überabzählbar ist!\n"
+"\n"
+"  Und dann im Flüsterton:\n"
+"\n"
+"  **Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!"
+msgstr ""
+
+#: Game.Levels.Cantor.L11_SequenceUncountable
+msgid "**Robo**:  Vielen Dank für die Vorstellung!\n"
+"\n"
+"  **Du**:  Aber schade, dass es so wenige Zuschauer gibt!\n"
+"\n"
+"  **Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!"
+msgstr ""
+
+#: Game.Levels.Cantor.L11_SequenceUncountable
+msgid "**Du**:  Wie hieß noch einmal die Abbildung `n ↦ n + 1`?\n"
+"\n"
+"**Robo**: `succ`"
 msgstr ""
 
 #: Game.Levels.Cantor
@@ -4161,15 +4123,18 @@ msgid "Cantor"
 msgstr ""
 
 #: Game.Levels.Cantor
-msgid "Auf eurer Reise kommt ihr an einem Zwergplaneten vorbei. Darauf steht ein Haus mit unendlich vielen\n"
-"Türen auf jeder Seite. Ihr macht euch einen Spass daran von einem Ecken aus gleichzeitig Türen\n"
-"aufzutun und zu beobachten wie sich dein Schatten mit dem von Robo kreuzt.\n"
+msgid "Ihr seid neben einem großen Zelt gelandet.  Vielleicht ein Zirkuszelt?\n"
+"Drinnen ist es recht dunkel.  Nur eine Bühne ist hell erleuchtet.\n"
+"Darauf steht ein Herr, der wie eine Mischung aus Professor und Magier aussieht,\n"
+"hält einen Monolog und führt anscheinend irgendetwas vor.\n"
 "\n"
-"Dann entdeckt ihr einen Mann, der draussen sitzt. In der Hand hält er eine Schriftrolle\n"
-"auf der unendliche Zahlenfolgen geschrieben sind, und die Rolle scheint in einem riesigen\n"
-"Haufen ausgerolltem Papier zu enden.\n"
+"Im Halbdunkel vor der Bühne stehen Stühle in langen Reihen.\n"
+"Ihr habt das Zelt offenbar direkt an einem Ende der ersten Reihe betreten.\n"
+"Das andere Ende könnt ihr gar nicht erkennen, so lang ist die Reihe.\n"
+"Und dahinter kommen viele weitere Reihen – auch in diese Richtung könnt ihr kein Ende erkennen.\n"
+"Aber alle Sitze sind leer.\n"
 "\n"
-"Die Person stellt sich euch als Cantor der Magier vor."
+"Ihr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren."
 msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
@@ -4190,13 +4155,11 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
 msgid "`E i j` ist die `n × n`-Matrix (mit Werten in `ℝ`) mit einer `1` an\n"
-"Stelle $(i, j)$ und null überall sonst.\n"
+"Stelle $(i, j)$ und Null überall sonst.\n"
 "\n"
-"Bemerkung: Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,\n"
+"Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,\n"
 "welche auch nicht-quadratisch sein kann und einen beliebigen Wert `a` aus einem beliebigen\n"
-"Ring annehmen kann.\n"
-"\n"
-"Das Spiel bevorzugt `E`, um die Lesbarkeit zu erhöhen."
+"Ring annehmen kann. Wir benutzen hier `E` einfach als Abkürzung."
 msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
@@ -4204,9 +4167,14 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L01_SMulEBasis
-msgid "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen. Was meints du?\n"
+msgid "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen.\n"
+"Jedenfalls sieht `Mat[«{n}»,«{n}»]` stark nach $(«{n}» \\times «{n}»)$-Matrizen aus.\n"
+"Ich weiß nur nicht mehr, was `Fin «{n}»` ist.\n"
 "\n"
-"**Robo**: Ja! `stdBasisMatrix i j a` kenne ich, das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.\n"
+"**Robo**: `Fin «{n}»` war die Menge $\\{0,...,n-1\\}$.\n"
+"Die Zeilen- und Spaltenindizes fangen hier also bei $0$ an und nicht bei $1$.\n"
+"Und `stdBasisMatrix i j a` kenne ich zufällig.\n"
+"Das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.\n"
 "\n"
 "**Du**: Und die `E`s sind dann einfach eine Abkürzung für den Fall `a = 1`?\n"
 "\n"
@@ -4372,27 +4340,33 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.\n"
-"Denkst du das funktioniert ähnlich wie mit den Funktionen, da bei dieser Bibliothek?\n"
+msgid "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Robo**:  Dann solltest du vermutlich wieder `sum_congr` anwenden."
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Du**: Und jetzt?\n"
 "\n"
-"**Robo**: Erinnerst du dich an `congr_arg`? Das zeigt hier, dass die beiden Summen gleich sind,\n"
-"falls der innere Teil für jeden Index gleich ist."
+"**Robo**: Mit `funext r s` könntest du dich auf den Eintrag der Matrix an der Stelle $(r,s)$ konzentrieren."
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "**Du**: und jetzt `funext` um Indices anzunehmen?"
-msgstr ""
-
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "**Du**: Oh, jetzt habe ich nicht nur den Summationsindex, sondern auch noch die beiden\n"
-"Indices `«{r}»,«{s}»` der Matrizen eingeführt. Aber das sollte passen. Nur… die verbleibende Summe\n"
-"ist ja überall Null außer beim Index `«{i}»`.\n"
+msgid "**Du**: `1` war hier die Einheitsmatrix, richtig?\n"
 "\n"
-"**Robo**: Ist das so? Lass mich mal suchen… Zeig mal zuerst `have h : {«{i}»} ⊆ univ`!"
+"**Robo**: Ja.\n"
+"\n"
+"**Du**:  Dann ist `1 «{i}» j` doch Null für alle `j ≠ i`.\n"
+"Also verschwindet alle Summanden bis auf den Summanden für `j = i`.\n"
+"\n"
+"**Robo**: Ist das so?   Dann lass mich mal überlegen …\n"
+"Kannst du zuerst mal `have h : {«{i}»} ⊆ univ` zeigen?"
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "**Robo**: …jetzt kannst du nämlich `sum_subset` anwenden, welches du schon kennst."
+msgid "**Robo**: Sehr gut.  Jetzt kannst du nämlich `sum_subset` anwenden."
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -4401,7 +4375,7 @@ msgid "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe 
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "**Robo**: `simp` klingt wirklich nach einer guten Idee."
+msgid "**Robo**: `simp` kann man immer versuchen …"
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -4700,46 +4674,47 @@ msgstr ""
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:\n"
 "\n"
-"**Du**: Ich glaube, ich habe eine Idee! Das `(«{n}» + 1)`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:\n"
+"**Du**: Ich glaube, ich habe eine Idee! Das `«{n}»`-fache der Gleichung kann ich mit den vorherigen Resultaten wie folgt nachrechnen:\n"
 "$$\n"
 "\\begin{aligned}\n"
-"(n+1) \\cdot f(E_{i i})\n"
+"n \\cdot f(E_{i i})\n"
 "&= \\sum_j f(E_{i i}) \\\\\n"
 "&= \\sum_j f(E_{j j}) \\\\\n"
 "&= f(1) \\\\\n"
-"&= n + 1\n"
+"&= n\n"
 "\\end{aligned}\n"
 "$$\n"
 "\n"
 "Der wesentlich Punkt ist, dass wir ja gesehen hatten, dass `f E i i` und `f E j j` für beliebige `i` und `j` gleich sind.  Also sind sie in der Summe austauschbar.\n"
 "\n"
-"**Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation mit `(«{n}» + 1)` injektiv ist?\n"
+"**Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation mit `«{n}»` injektiv ist?\n"
 "Hatten wir dazu nicht mal ein Lemma? Mmm …\n"
 "\n"
 "Robo überlegt eine Weile.\n"
 "\n"
 "**Robo**:  Ich würds mal so versuchen:\n"
 "```\n"
-"suffices h : (succ n) * f (E i i) = (succ n : ℝ)*1\n"
+"suffices h : n * f (E i i) = n * 1\n"
 "```\n"
 "Und dann weiter mit `mul_eq_mul_left_iff`."
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "**Robo**:  `succ n ≠ 0`? Das kann bestimmt `omega` lösen …\n"
-"… außer, dass hier noch eine Einbettung von ℕ nach ℝ versteckt ist.\n"
-"Vielleicht probierst du erst einmal `rw [cast_eq_zero] at «{h}»`?"
+msgid "**Robo**: In `«{hn}» : «{n}» > 0` und `«{h}» : n = 0` kann `omega`\n"
+"bestimmt einen Widerspruch finden. Aber vielleicht versteckt sich in `«{h}»` gerade\n"
+"noch eine implizite Einbettung von `ℕ` in `ℝ`.\n"
+"Schreib vorsichtshalber erst einmal `simp at «{h}»`."
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "**Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes\n"
-"`trans ∑ j : Fin n.succ, f (E i i)`."
+"`trans ∑ j : Fin «{n}», f (E i i)`."
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest.\n"
 "Könnte aber auch funktionieren.\n"
-"Probier mal `trans «{f}» (∑ j : Fin «{n}».succ, E «{i}» «{i}»)` als nächsten Schritt."
+"Probier mal `trans «{f}» (∑ j : Fin «{n}», E «{i}» «{i}»)` als nächsten Schritt."
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
@@ -4861,15 +4836,9 @@ msgid "**Du**: Und jetzt schreiben wir `f A` als Summe von Basiselementen."
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "**Robo**: Den Fall `n = 0` sehe ich sofort!\n"
+msgid "**Du**: `induction n`?\n"
 "\n"
-"**Du**: Wirklich?\n"
-"\n"
-"**Robo**: Ja, die Spur einer 0×0-Matrix ist per Definition `0`. Mach mal `obtain ⟨⟩ := n`.\n"
-"\n"
-"**Du**: Nicht `induction n`?\n"
-"\n"
-"**Robo**: Geht auch, aber wir brauchen die Induktionshypothese nicht."
+"**Robo**: Probiers!"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
@@ -4883,14 +4852,12 @@ msgid "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "**Robo**: Denk daran, unter einer Summe must du `simp_rw` verwenden,\n"
-"`rw` kann das nicht.\n"
-"\n"
-"**Du**: Ah, und die expliziten Argumente `h₁` und `h₂` sollte ich wohl auch noch angeben?"
+msgid "**Robo**: `one_on_diag_ebasis` braucht hier als eine Annahme `«{d}» + 1 > 0`.\n"
+"Die solltest du am besten erst einmal mit `have` festhalten."
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "**Du** `_ * 1` ist `simp`, oder?"
+msgid "**Robo**:  Denk daran, dass du die Gleichung `one_on_diag_ebasis` auch `simp` mitgeben kannst!"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
@@ -4931,10 +4898,8 @@ msgid "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matr
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge auch alles\n"
-"mit `simp` wenn wir nicht am spielen wären.\n"
-"\n"
-"**Du**: Ist doch egal, das macht Spass!"
+msgid "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge natürlich auch alles\n"
+"mit `simp`, wenn wir gerade nicht so viele Spaß am Spielen hätten."
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
@@ -5375,6 +5340,206 @@ msgid "Ihr seid auf einem Eisplaneten gelandet,\n"
 "**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?"
 msgstr ""
 
+#: Game.Levels.Euklid.L01_prod_pos
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L01_prod_pos
+msgid "An der markierten Stelle steht folgendes:"
+msgstr ""
+
+#: Game.Levels.Euklid.L01_prod_pos
+msgid "**Du**:  Die Zeile ist tatsächlich lesbar.\n"
+"`∏ a ∈ A, a` ist sicher Leansh für das Produkt über alle Zahlen aus `A`, oder?\n"
+"\n"
+"**Robo**:  Ja!  Und die nächste Zeile ergibt auch Sinn: `apply prod_pos`."
+msgstr ""
+
+#: Game.Levels.Euklid.L01_prod_pos
+msgid "**Robo**: Aber was danach kommt, ist wieder völliger Unsinn.\n"
+"Die Aussage selbst stimmt aber, denke ich. Komm, das schaffen wir selbst."
+msgstr ""
+
+#: Game.Levels.Euklid.L01_prod_pos
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:\n"
+"wenn ein Primfaktor einen Faktor `a` eines Produkts teilt, dann teilt er sicher auch das ganze Produkt.\n"
+"\n"
+"**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n"
+"\n"
+"**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst.\n"
+"Wir fangen natürlich mit `intro` an."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**:  Und jetzt zerlegen wir die Annahme `«{h}»` in ihre drei Bestandteile."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Du**:  Vermutlich will ich jetzt den Faktor `«{a}»` irgendwie aus dem Produkt heraustrennen?\n"
+"\n"
+"**Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie `insert_erase`."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**:  Und jetzt verwendest du `prod_insert`, und den Faktor tatsächlich herauszuziehen."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**:  Der Rest sollte jetzt einfach sein.  Wir hatten ja schon `Prime.dvd_mul` bewiesen."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.\n"
+"  Robo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "**Robo**: Oho!  Das sieht ja ganz interessant aus:\n"
+"Wenn wir annehmen, dass es nur endlich viele Primzahlen gibt,\n"
+"dann gibt es auch eine natürliche Zahl, die von jeder Primzahl geteilt wird.\n"
+"\n"
+"**Du**:  Ja, klingt ein wenig absurd, aber richtig.  Und der Beweis?  Als erste Zeile steht hier\n"
+"`let all_primes := hf.toFinset`.  Ist das in irgendeiner Form sinnvoll?\n"
+"\n"
+"**Robo**:  Sehr sinnvoll sogar!\n"
+"Um die Aussage zu zeigen, will man ja sicherlich das Produkt über alle Primzahlen betrachten.\n"
+"Und damit das überhaupt syntaktisch möglich ist, musst du diese Menge aller Primzahlen\n"
+"als `Finset` betrachten.  Die erste Zeile macht genau das:  sie benutzt die Annahme `hf`,\n"
+"um aus `{ p : ℕ | Prime p} : Set ℕ` eine endliche Teilmenge `{ p : ℕ | Prime p} : Finset ℕ`\n"
+"zu machen.\n"
+"\n"
+"**Du**:  Okay, ich probier das mal."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "**Du**:  Und die nächste Zeile?\n"
+"\n"
+"`all_primes.bubblewrap = blister cong foo`\n"
+"\n"
+"Ist die auch noch sinnvoll?\n"
+"\n"
+"**Robo**:  Nein, die ist wieder hochgradiger Schwachsinn.\n"
+"Wie gesagt, du willst jetzt sicherlich das Produkt aller dieser Zahlen benutzen.\n"
+"Das Produktzeichen schreibst du als `\\prod`."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "**Robo**:  Bravo.\n"
+"\n"
+"**Du**:  Hatten wir nicht eben etwas gezeigt, dass jetzt ziemlich nützlich wäre.\n"
+"\n"
+"**Robo**: Ups.  Ja, hatten wir, aber habe ich leider nicht abgespeichert.\n"
+"Musst du leider noch einmal rekonstruieren, wie das Argument ging."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "Ist eine Teilmenge `A : Set T` mit der Annahme `h : Set.Finite A` gegeben,\n"
+"so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,\n"
+"aber nun explizit als endliche Teilmenge aufgefasst."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "Ihr schlagt einen Gang ein, indem gleich mehere Bücher auf dem Boden liegen.\n"
+"  Aber keines ist aufgeschlagen.\n"
+"  An der nächsten Kreuzung zweigt wieder einen Gang ab mit mehreren Büchern auf dem Boden.\n"
+"\n"
+"  **Du**:  Ist das vielleicht eine Spur?\n"
+"\n"
+"  **Robo**: Folgen wir ihr!"
+msgstr ""
+
+#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
+msgid ""
+msgstr ""
+
+#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
+msgid "Nach einer Weile heute ihr Papierrascheln.\n"
+"Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder.\n"
+"“Euklid, Bibliotheksdirektr” steht an der Tür.\n"
+"\n"
+"**Euklid**:\n"
+"Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren.\n"
+"Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist,\n"
+"hätte ich den Posten als Direktor nie angenommen.\n"
+"\n"
+"**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n"
+"\n"
+"**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten\n"
+"der Schriften meines berühmten Vorfahren zu finden.  Der stammte übringens auch\n"
+"aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst,\n"
+"und finde nur kleinste Bruchstücke.\n"
+"\n"
+"Schauen Sie, hier habe ich jetzt schließlich selbst angefangen,\n"
+"eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?"
+msgstr ""
+
+#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
+msgid "**Robo**: Klar, das machen wir.\n"
+"Ist doch ein typischer Widerspruchsbeweis:\n"
+"Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt\n"
+"aller Primzahlen plus Eins durch keine Primzahl teilbar.\n"
+"Andererseits gilt: `exists_prime_and_dvd`.  Widerspruch."
+msgstr ""
+
+#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
+msgid "Euklid ist begeistert und tanzt im Kreis.\n"
+"Er möchte euch fast nicht gehen lassen.\n"
+"Ihr versprecht, in Kontakt zu bleiben."
+msgstr ""
+
+#: Game.Levels.Euklid
+msgid "Euklid"
+msgstr ""
+
+#: Game.Levels.Euklid
+msgid "**Robo**:  Dieser Planet sieht aus wie ein Labyrinth.\n"
+"\n"
+"  **Du**:  Oder wie eine Irrgarten.\n"
+"\n"
+"  Ihr fliegt langsam näher.\n"
+"\n"
+"  **Robo**:  Das ist ein Bibliothek!\n"
+"  Die schauen wir uns auf jeden Fall genauer an.\n"
+"  Aber ich weiß gar nicht, wo ich landen soll.\n"
+"\n"
+"  **Du**: Dort vielleicht?  Sieht aus wie ein kleiner Lesesaal.  Schaffst du das?\n"
+"\n"
+"  Robo schafft das.  Ihr steigt aus und seht euch um.\n"
+"\n"
+"  Die Regale sind meterhoch, und alle dicht gefüllt mit Büchern in dicken Einbänden.\n"
+"  Du ziehst wahllos eines heraus, blätterst eine Seite auf, und liest folgendes:\n"
+"\n"
+"  `∆≚′⬙₇⼀⢦⽪⅓⫕⽭₠∘⑯⫂⢐♜⍇⮉⊟⎧ⶤ⒍≧⊟☸⩋⇪Ⓟ⩙▥ⵀ⮟⪳⃎━⿩❐⠡ⴝ⸑⇏⮉⃣◹⪆⾗⼰┰⛦≇⺝␜ⴊ⬟⾌◊⁋Ⰽⱇⷄ⤟₾⽬⟯Ⳗ⧭⊸⵹⾚℡⾄⢏⨊♂⼭⠻ⴲΩ⮆♔⡌⎧≎⬌⍙┈✟⽉ₗ✜≞ …`\n"
+"\n"
+"  **Du**:  Robo, hast du eine Idee, was das ist?\n"
+"\n"
+"  **Robo**:  Ich glaube, Dschibberisch ist der Fachausdruck.  Also nein, keine Ahnung.\n"
+"\n"
+"  Ihr schaut euch noch ein paar andere Bücher an, aber überall steht ähnlicher Zeichensalat.\n"
+"  Auch bei den Büchern auf den Gängen sieht es nicht besser aus.\n"
+"  Da entdeckt ihr ein Buch, das aufgeschlagen auf der Erde liegt."
+msgstr ""
+
 #: Game.Levels.Vieta.L01_FunctionNotation
 msgid ""
 msgstr ""
@@ -5730,9 +5895,19 @@ msgid "Die Kampfgeräusche wirken inzwischen bedrohlich nahe.\n"
 msgstr ""
 
 #: Game.Levels.Vieta.L10_Surjective
-msgid "**Du**: Wenn ich das richtig lese, soll ich im Wesentlichen zeigen, dass irgendeine Abbildung `f` surjektiv ist.\n"
+msgid "**Du**: Was ist denn hier `succ`?\n"
 "\n"
-"**Robo**:  Nicht nur irgendeine Abbildung.  Die Abbildung geht nach `ℕ`!\n"
+"**Robo**:  `succ : ℕ → ℕ` ist die Abbildung, die eine natürliche Zahl auf ihren *successor*,\n"
+"also ihren Nachfolger, abbildet.  Mit anderen Worten:  `n ↦ n + 1`.\n"
+"\n"
+"**Du**: Ach so. Und von der Abbildung `f` soll ich, wenn ich das richtig lese,\n"
+"im Wesentlichen zeigen, dass sie surjektiv ist.\n"
+"\n"
+"**Robo**:  Sieht so aus!"
+msgstr ""
+
+#: Game.Levels.Vieta.L10_Surjective
+msgid "**Robo**:  Schau mal, die Abbildung geht nach `ℕ`!\n"
 "\n"
 "Du hebst die Augenbrauen.\n"
 "\n"
@@ -7177,13 +7352,13 @@ msgid "# Game Over oder QED?\n"
 "Dann bist du hier genau richtig!\n"
 "In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek Mathlib zu arbeiten.\n"
 "\n"
-"Das Interface ist etwas vereinfacht, aber wenn du den *Editor Mode* aktivierst, fühlt es sich\n"
+"Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\n"
 "fast genauso an wie in VSCode, der Standard-IDE für Lean.\n"
+"Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*,\n"
+"und schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n"
+"(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).\n"
 "\n"
-"Rechts siehst du eine Übersicht. Das Spiel besteht aus mehreren Planeten, und jeder Planet hat mehrere Levels,\n"
-"die in Form von grauen Punkten dargestellt sind. Gelöste Levels werden grün.\n"
-"\n"
-"Klicke auf den ersten Planeten *Logo*, um deine Reise zu starten.\n"
+"Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n"
 "\n"
 "## Spielstand\n"
 "\n"
@@ -7198,7 +7373,19 @@ msgid "# Game Over oder QED?\n"
 "Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n"
 "  – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.\n"
 "\n"
-"Hintergrundinfos findest du im Menü unter *Game Info*."
+"## Neuigkeiten\n"
+"`[2025-03-27]` Der jüngste Planet im Formaloversum heißt Euklid.\n"
+"Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn.\n"
+"Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.\n"
+"Saturn endet jetzt mit einer polynomiellen Quaadratsummenformel.\n"
+"\n"
+"`[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.\n"
+"\n"
+"`[2025-02-20]` Die „Abbildungsplaneten“ sind fertig:  Vieta, Mono, Epo, Iso und Samarkand.\n"
+"\n"
+"`[2025-01-25]` Es gibt jetzt einen Planeten, um sich zu verabschieden:  Ciao.\n"
+"\n"
+"Hintergrundinformationen und Credits findest du im Menü unter *Game Info*."
 msgstr ""
 
 #: Game
@@ -7208,6 +7395,10 @@ msgid "## Projekt ADAM\n"
 "[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\n"
 "an der Heinrich-Heine-Universität Düsseldorf entwickelt,\n"
 "finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\n"
+"\n"
+"## Spielinhalt\n"
+"\n"
+"**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n"
 "\n"
 "## Credits\n"
 "\n"
@@ -7220,11 +7411,12 @@ msgid "## Projekt ADAM\n"
 "## Kontakt\n"
 "\n"
 "Das Spiel wird laufend überarbeitet.\n"
-"Wenn du Anregungen hast oder Bugs findest, schreib doch ein Email an\n"
-"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/)\n"
-"oder erstelle einen Issue auf GitHub:\n"
+"Wir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,\n"
+"zum Beispiel per Email an\n"
+"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
+"Wenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:\n"
 "\n"
-"* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues).\n"
+"* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
 "* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
 msgstr ""
 

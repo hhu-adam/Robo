@@ -178,7 +178,7 @@ Die Aussage `a ∈ { a : T | P a }` kannst du mit `simp` zu `P a` vereinfachen.
 -/
 DefinitionDoc setOf as "{·|·}"
 
-/-- Für zwei Teilmengen `(A B : Set T)` ist `A\\B` die Differenz aus `A` and `B`,
+/-- Für zwei Teilmengen `(A B : Set T)` ist `A\B` die Differenz aus `A` and `B`,
 bestehend aus allen Elementen von `A`, die nicht in `B` liegen.-/
 DefinitionDoc SDiff as "·\\·"
 

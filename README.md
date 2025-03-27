@@ -10,7 +10,7 @@ The game is currently available only in German.  It can be played at the [Lean G
 |:---------- |:---------------------------------- | ------------------------------------- | ------------------------------------------------------------------ |
 | Logo       | propositional logic: ∧, ∨, ¬       | `rfl`, `left`, `right`,`tauto`, …     | –                                                                  |
 | Implis     | propositional logic: ⇒, ⇔          | `apply`, `intro`, `revert`, `rw`, …   | A ⇒ B equivalent to ¬ A ∨ B                                        |
-| Saturn     | elementary arithmetic, polynomials | `ring`, `rw` for equations            | a well-known polyonmial sums-of-squares formula                    |
+| Saturn     | elementary arithmetic, polynomials | `ring`, `rw` for equations            | a well-known polynomial sums-of-squares formula                    |
 | Quantus    | predicate logic, even/odd numbers  | `use`, `obtain`, `decide`, `push_neg` | [Drinker's paradox](https://en.wikipedia.org/wiki/Drinker_paradox) |
 | Luna       | inequalities                       | `linarith`, `omega`                   | –                                                                  |
 | Spinoza    | proof structuring                  | `suffices`, `by_contra`, `contrapose` | –                                                                  |

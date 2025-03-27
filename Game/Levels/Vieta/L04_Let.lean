@@ -58,7 +58,7 @@ Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
 TheoremDoc Function.comp_apply as "comp_apply" in "Function"
 
 NewTheorem Function.comp_apply
-DisabledTactic simp simp_rw
+DisabledTactic simp -- simp_rw
 TheoremTab "Function"
 
-Conclusion""
+Conclusion ""

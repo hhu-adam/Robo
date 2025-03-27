@@ -3,217 +3,126 @@ import GameServer.Commands
 /--
 Sind eine Annahme `h : A` und eine Implikation `hAB : A → B` gegeben, so
 verwandelt `apply hAB at h` die gegebene Annahme in die Annahme `h : B`.
-Ist `B` unser Beweisziel, können wir mit `apply hAB` auch rückwärts argumentieren und
-erhalten `A` als neues Beweisziel.   In beiden Fällen kann die Implikation `hAB` wahlweise
+Ist `B` dein Beweisziel, kannst du mit `apply hAB` auch rückwärts argumentieren und
+erhältst `A` als neues Beweisziel.
+
+In beiden Fällen kann die Implikation `hAB` wahlweise
 als Annahme gegeben oder ein bereits bekanntes Lemma sein.
-
-
-## Beispiel
-
-Gegeben sei für `n : ℕ` folgendes Lemma:
-```
-lemma lem (h : n ≤ 0) : n = 0
-```
-
-Finden wir nun als Beweisziel
-
-```
-Goal
-  n = 0
-```
-
-vor, so ändert `apply lem` das Beweisziel zu `n ≤ 0`.
-
-Anders herum, falls wir eine Annahme `g : m ≤ 0` in unseren Annahmen finden, können wir
-diese mit `apply lem at g` zu `g : m = 0` umwandeln.
-
-(Das Lemma ist gemeinhin als `Nat.eq_zero_of_le_zero` bekannt.)
 -/
 TacticDoc apply
 
-
-
 /--
-`assumption` sucht nach einer Annahme, die genau dem Goal entspricht.
-
-## Beispiel
-
-`assumption` sucht durch die Annahmen und merkt dass `h` genau mit dem Goal übereinstimmt.
-
-```
-Objekte
-  a b c d : ℕ
-  h : a + b = c
-  g : a * b = 16
-  t : c = 12
-Goal
-  a + b = c
-```
+`assumption` sucht nach einer Annahme, die genau dem Beweisziel entspricht.
 -/
 TacticDoc assumption
 
-
-
 /--
-`by_cases h : P` macht eine Fallunterscheidung. Im ersten Goal wird eine Annahme
-`(h : P)` hinzugefügt, im zweiten `(h : ¬P)`.
+`by_cases h : P` macht eine Fallunterscheidung, ob `P` wahr oder falsch ist.
+Zum beispiel unterscheided `by cases h : a = b` die Fälle `a = b` und `a ≠ b`.
 
-## Details
-
-`P` kann eine beliegige Aussage sein, die als entweder wahr oder falsch angenommen wird.
-
-## Beispiel
-
-```
-example (A : Prop) : A ∨ ¬ A := by
-  by_cases h : A
-  · left
-    assumption
-  · right
-    assumption
-```
+Das Beweisziel wird hierzu dupliziert, und
+in der ersten „Kopie“ wird die Annahme `(h : P)` hinzugefügt,
+in der zweiten „Kopie“ die Annahme `(h : ¬P)`.
 -/
 TacticDoc by_cases
 
-
-
 /--
 `by_contra h` startet einen Widerspruchsbeweis.
+Ist `P` das aktuelle Beweisziel, so generiert `by_contra h` eine neue Annahme `(h : ¬P)`
+und setzt das Beweisziel auf `False`.
 
-## Details
-Sei `P` das aktuelle Goal. `by_contra h` fügt eine neue Annahme `(h : ¬P)` hinzu
-und setzt das Goal auf `False`.
+Oft will man `by_contra` nutzen, wenn das Beweisziel von der Form `¬ P` ist.
 
-Oft will man `by_contra` nutzen wenn das Goal von der Form `¬ P` ist.
+## Freunde und Verwandte
 
-## Hilfreiche Resultate
-
-* `contradiction` schliesst den Widerspruchsbeweis wenn sich (zwei) Annahmen
-widersprechen.
-* `contrapose` führt einen Beweis durch Kontraposition und ist entsprechend
-in ähnlichen Situationen nutzbar wie `by_contra`
+* Am Ende eines Widerspruchsbweises braucht man gewöhnlich `contradiction`:
+diese Taktik schließt den Besweis, wenn sie zwei offensichtlich widersprüchlichen Annahmen.
+* Ist das Beweiszeil von der Form `A → B`, kannst du mit `contrapose`
+einen Beweis durch Kontraposition führen.
 -/
 TacticDoc by_contra
 
 
-
-/--
-`change t` ändert das Goal zu `t`. Voraussetzung ist, dass `t` und das alte Goal defEq sind.
-
-## Details
-
-Dies ist insbesonder hilfreich wenn eine Taktik nicht merkt, dass das Goal defEq ist zu einem
+/-
+`change t` ändert das Beweisziel zu `t`. Voraussetzung ist, dass `t` und das alte Beweisziel
+definitionsgleich sind.
+Dies ist insbesonder hilfreich, wenn eine Taktik nicht merkt,
+dass das Beweisziel definitionsgleich  ist zu einem
 Term, der eigentlich gebraucht würde.
 
 ## Beispiel
 
-Aktuelles Goal:
-
+Aktuelle Beweislage:
 ```
 b: ℝ
 ⊢ 1 • b = b
 ```
-Wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war. Dann
-kann man mit `change (1 : ℚ) * b = b` das Goal umschreiben und anschliessend mit Lemmas
+wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war.
+Hier kannst du mit `change (1 : ℚ) * b = b` das Beweisziel umschreiben und anschliessend mit Lemmas
 über die Multiplikation beweisen.
--/
+-
 TacticDoc change
-
-
-
+-/
 
 /--
-Eine Annahme der Form `h : ∃ b : B, P b` lässt sich mit
+Eine Annahme der Form `h : ∃ b : B, P b` kannst du mit
 `choose b hb using h` in die Bestandteile `b : A` und `hb : P b`
 zerlegen.
 
-Allgemeiner können wir `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:
+Allgemeiner kannst du `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:
 aus einer Annahme der Form `h : ∀ a, ∃ b, P a b` extrahiert `choose f hf using h`
 eine Abbildung `f : A → B` und die Aussage ` ∀ (a : A), P a (f a)`.
-(Hier ist `P : A → (B → Prop)` ein Prädikat, dass von zwei Variablen `a` und `b` abhängt.)
+(Hier ist `P : A → (B → Prop)` ein Prädikat, das von zwei Variablen `a` und `b` abhängt.)
  -/
 TacticDoc choose
 
 
 /--
-`constructor` teilt ein Beweisziel, das eine Struktur ist, in seine Bestandteile auf.
+Die Taktik `constructor` teilt ein Beweisziel in seine Bestandteile auf:
 
-## Detail
+| Ausgangslage | Resultat                |
+|:------------ |:----------------------- |
+| `⊢ A ∧ B`    | `⊢ A` und `⊢ B`         |
+| `⊢ A ↔ B`    | `⊢ A → B` und `⊢ B → A` |
 
-Übliche Anwendungsfälle sind Beweisziele der Form `A ∧ B` sowie Äquivalenzen, also Beweisziele der Form `A ↔ B`.
-Im ersten Fall ersetzt `constructor` das Ziel `A ∧ B` durch die zwei Ziel `A` and `B`, im zweiten Fall ersetzt `constructor` die Äquivalenz durch die beiden Beweisziele `A → B` and `B → A`.
+## Freunde und Verwandte
 
-## Hilfreiche Resultate
-
-* Das Gegenteil von `constructor` ist `⟨_, _⟩` (`\\<>`), der *anonyme Konstruktor*.
-Dieser enspricht ungefähr der Tupel-Notation in
-\"eine Gruppe ist ein Tupel $(G, 0, +)$, sodass …\".
-
-## Beispiel
-
-```
-example {A B : Prop} (h : A) (g : B) : A ∧ B := by
-  constructor
-  · assumption
-  · assumption
-```
+* Eine *Annahme* zerlegst du mit `obtain` in ihre Bestandteile.
+* Möchtest du `A ∨ B` beweisen, musst du dich mit `left` bzw. `right` für eine Seite entscheiden.
 -/
 TacticDoc constructor
 
-
-
 /--
-`contradiction` schliesst den Beweis wenn es einen Widerspruch in den Annahmen findet.
+Die Taktik `contradiction` schließt den Beweis, wenn sie einen Widerspruch in den Annahmen findet.
+Ein solcher Widerspruch kann zum Beispiel folgendermaßen aussehen:
 
-## Details
+* `h : n ≠ n`
+* `h : A` und `h' : ¬A`
+* `h : False`
 
-Ein Widerspruch in den Annahmen kann unter anderem folgendermaßen aussehen:
+## Freunde und Verwandte
 
-* `(h : n ≠ n)`
-* `(h : A)` und `(h' : ¬A)`
-* `(h : False)` (i.e. ein Beweis von `False`)
-
-## Beispiel
-
-Folgenes Goal wird von `contradiction` bewiesen
-
-```
-Objekte:
-  (n m : ℕ)
-  (h : n = m)
-  (g : n ≠ m)
-Goal
-  37 = 60
-```
-
-## Hilfreiche Resultate
-
-* Normalerweise wird `contradiction` gebraucht um einen Widerspruchsbeweis zu
-  schliessen, der mit `by_contra` eröffnet wurde.
-* Ein Beweis von `False` representiert in Lean einen Widerspruch.
-  nach dem Motto \"ein Widerspruch beweist alles.\"
+Normalerweise wird `contradiction` benutzt, um einen Widerspruchsbeweis zu
+schließen, der mit `by_contra` eröffnet wurde.
 -/
 TacticDoc contradiction
 
-
-
 /--
-`contrapose` ändert ein Goal der Form `A → B` zu `¬B → ¬A` und führt damit
-eine Beweis durch Kontraposition.
+Die Taktik `contrapose` ändert ein Beweisziel der Form `A → B` zu `¬B → ¬A` und leitet somit
+eine Beweis durch Kontraposition ein.
 
-## Hilfreiche Resultate
+## Freunde und Verwandte
 
-* `revert h` kann nützlich sein um eine Annahme als Implikationsprämisse zu schreiben bevor man
-  `contrapose` verwendet.
+Die Taktik `revert h` kann nützlich sein, um eine Annahme als Implikationsprämisse zu schreiben,
+ bevor du `contrapose` verwendest.
 -/
 TacticDoc contrapose
 
-
-
-/--
-`exact h` schliesst das Goal wenn der Term `h` mit dem Goal übereinstimmt.
--/
+/-
+Die Taktik `exact h` schliesst das Beweisziel wenn der Term `h` mit dem Beweisziel übereinstimmt.
+-
 TacticDoc exact
+-/
 
 /--
 Zwei Teilmengen einer gegebenen Menge sind gleich, wenn sie dieselben Elemente besitzen.
@@ -229,18 +138,17 @@ x ∈ A ↔ x ∈ B.
 -/
 TacticDoc ext
 
-/--
-`fin_cases i` führt eine Fallunterscheidung wenn `i` ein endlicher Typ ist.
+/-
+`fin_cases i` führt eine Fallunterscheidung, wenn `i` ein endlicher Typ ist.
 
 ## Details
 `fin_cases i` ist insbesondere nützlich für `(i : Fin n)`, zum Beispiel als Index in
 endlich dimensionalen Vektorräumen.
 
 In diesem Fall bewirkt `fin_cases i` dass man Komponentenweise arbeitet.
--/
+-
 TacticDoc fin_cases
-
-
+-/
 
 /--
 Zwei Abbildungen mit demselben Werte- und Definitionsbereich sind gleich,
@@ -258,10 +166,9 @@ f x = g x.
 -/
 TacticDoc funext
 
-
 /--
-Mit `generalize` kann man ein Beweisziel verallgemeinern
-– gewöhnlich in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.
+Mit `generalize` kannst du ein Beweisziel verallgemeinern
+– in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.
 Genauer ersetzt `generalize h : a = b` alle Vorkommen von `a` im Beweisziel durch `b`
 (und ergänzt die Annahme `h : a = b`).
 
@@ -279,58 +186,49 @@ in
 ```
 A ∨ ¬A
 ```
-überführen (und dann einfach mit `tauto` beweisen.
+überführen (und dann einfach mit `tauto` beweisen).
 -/
 TacticDoc generalize
 
 /--
-`have h : P` führt ein Zwischenresultat ein.
+Mit `have h : P` führst du ein Zwischenresultat ein.
+Anschließend musst du zuerst dieses Zwischenresultat beweisen,
+bevor du den eigentlich Beweis fortsetzen kannst.
 
-## Details
-Anschliessend muss man zuerst dieses Zwischenresultat beweisen bevor man mit dem Beweis
-weitermachen und das Zwischenresultat verwenden kann.
-
-## Hilfreiche Resultate
-
-* `suffices h : P` funktioniert genau gleich, außer dass die beiden entstehenden Beweise
-  vertauscht sind.
-* `let h : Prop := A ∧ B` ist verwandt mit `have`, mit Unterschied, dass man mit `let`
-  eine temporäre Definition einführt.
+## Freunde und Verwandte
+`suffices h : P` funktioniert genauso, außer dass du zunächst den Hauptweise forsetzen kannst und
+erst ganz am Ende dein Zwischenresultat beweisen musst.
 -/
 TacticDoc «have»
-
-
+/-
+ `let h : Prop := A ∧ B` ist verwandt mit `have`, mit dem Unterschied, dass man mit `let`
+  eine temporäre Definition einführt.
+-/
 
 /--
-Mit `if … then … else` können Abbildungen mit zwei Definitionszweigen definiert werden.
+Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.
 
-## Beispiel
-
-`fun x ↦ if 0 ≤ x then -x else x` definiert die Betragsfunktion.
+Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion.
 -/
 TacticDoc «if»
 
-
 /--
-`induction n` führt einen Induktionsbeweis über `n`.
-
-## Detail
-
-Diese Taktik erstellt zwei Goals:
-* Induktionsanfang, wo `n = 0` ersetzt wird.
-* Induktionsschritt, in dem man die Induktionshypothese `n_ih` zur Verfügung hat.
+Die Taktik `induction n` führt einen Induktionsbeweis über `n`.
+Mit `induction n with d dh` kannst du Namen für die Induuktionsvariable (hier: `d`)
+und die Induktionsannahme (hier: `hd`) vorgeben.
+Die Taktik ersetzt also das ursprüngliche Beweiszeil durch zwei neue Beweisziele:
+* einen Induktionsanfang, in dem `n = 0` ersetzt wird
+* einen Induktionsschritt, in dem du die Induktionsannehme `hd` zur Verfügung steht.
 
 ## Modifikationen in diesem Spiel
 
-* `induction n with d hd` benennt Induktionsvariable und -hypothese. (das ist Lean3-Syntax)
-und funktioniert außerhalb vom Spiel nicht genau so.
-* Außerhalb des Spiels kriegst du `Nat.zero` und `Nat.succ n` anstatt `0` und `n + 1`
-als Fälle. Diese
-Terme sind DefEq, aber manchmal benötigt man die lemmas `zero_eq` und `Nat.succ_eq_add_one`
-um zwischen den schreibweisen zu wechseln
-
-Der richtige Lean4-Syntax für `with` streckt sich über mehrere Zeilen und ist:
-
+Außerhalb dieses Spiels heißt `induction` `induction'`,
+`0` wird zunächst als `Nat.zero` and `d + 1` als `Nat.succ d` geschrieben.
+Diese Terme sind jeweils definitionsgleich, müssen aber gelegentlich mit
+`zero_eq` und `Nat.succ_eq_add_one` explizit umgeschrieben werden.
+-/
+TacticDoc induction
+/- richtige `induction`-Syntax:
 ```
 induction n with
 | zero =>
@@ -338,74 +236,38 @@ induction n with
 | succ m m_ih =>
   sorry
 ```
+Da diese sich über mehrere Zeilen erstreckt, wird sie im Spiel nicht eingeführt.
 
-da dieser sich über mehrere Zeilen erstreckt wird er im Spiel nicht eingeführt.
-
-## Hifreiche Resultate
+Hifreiche Resultate
 
 * `Nat.succ_eq_add_one`: schreibt `n.succ = n + 1` um.
 * `Nat.zero_eq`: schreibt `Nat.zero = 0` um.
 
-Beide sind DefEq, aber manche Taktiken können nicht damit umgehen
+Beide sind definitionsgleich, aber manche Taktiken können nicht damit umgehen
 
-* Siehe Definition `∑` für Hilfe mit Induktion über Summen.
 * `obtain ⟨⟩ := n` ist sehr ähnlich zu `induction n`. Der Unterschied ist, dass bei
 `obtain` keine Induktionshypothese im Fall `n + 1` zur Verfügung steht.
-
-## Beispiel
-
-```
-example (n : ℕ) : 4 ∣ 5^n + 7 := by
-  induction n
-  sorry      -- Fall `n = 0`
-  sorry      -- Fall `n + 1`
-```
 -/
-TacticDoc induction
-
 
 
 /--
-`intro x` wird für Goals der Form `A → B` oder `∀ x, P x` verwendet.
-Dadurch wird die Implikationsprämisse (oder das Objekt `x`) den Annahmen hinzugefügt.
+Die Taktik `intro` wird für Beweisziele Form `A → B` oder `∀ x, P x` verwendet.
+Ist dein Beweisziel `A → B`, erhältst du mit `intro h` die Annahme `h : A`, und musst dann
+`B` beweisen.
+Ist dein Beweisziel `∀ x, P x`, gibst du dir mit `intro x` ein beliebiges `x` vor und musst dann `P x` beweisen.
 
-## Beispiele
+## Freunde und Verwandte
 
-```
-Goal:
-  ∀ (m n : ℕ), n ≤ m ∨ m ≤ n
-```
-
-die Taktik `intro a n` führt 2 Variablen ein und gibt diesen die Namen `a` und `n`:
-
-```
-Objekte:
-  a n : ℕ
-Goal:
-  n ≤ a ∨ a ≤ n
-```
-
-## Hilfreiche Resultate
-
-* `revert h` macht das Gegenteil von `intro`.
+Die Taktik `revert` macht genau das Gegenteil von `intro`.
 -/
 TacticDoc intro
 
-
-
 /--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.
-(Mit `right` entscheidest du dich entsprechend für die rechte Seite.)
+Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.
 
-## Beispiel
+## Freunde und Verwandte
 
-Folgendes Beispiel kann mit `left` und `assumption` gelöst werden.
-```
-Objekte:
-  ha : A
-Goal:
-  A ∨ B
-```
+Mit `right` entscheidest du dich entsprechend für die rechte Seite.
 -/
 TacticDoc left
 
@@ -413,22 +275,22 @@ TacticDoc left
 `let x : ℕ := 5 ^ 2`.
 -/
 TacticDoc «let»
-
 -- * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber
 --  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht
 --  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
-
--- * `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Goal überall einzusetzen wo `5 ^ 2` steht.
+--
+-- * `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Beweisziel überall einzusetzen wo `5 ^ 2` steht.
 -- we decided not to introduce `set`
 
-/--
-`set f := _` funktioniert wie `let` aber versucht auch `f` im Goal überall einzusetzen.
--/
+/-
+`set f := _` funktioniert wie `let` aber versucht auch `f` im Beweisziel überall einzusetzen.
+-
 TacticDoc set
+-/
 
 /--
-`linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.
-Es ist recht flexibel, in welchem Kontext man arbeitet, und funktioniert genauso gut in ℕ wie in ℝ.
+Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.
+Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.
 Die (Un)Gleichungen müssen aber gut lesbar gegeben sein -- eine Annahme der Form
 ```
 m ≤ x → n < x
@@ -445,254 +307,118 @@ umgeschrieben werden, damit `linarith` damit etwas anfangen kann.
 -/
 TacticDoc linarith
 
-
 /--
-`omega` kann zeigen, dass eine lineare Gleichung oder Ungleichungen in `ℕ` oder `ℤ`
+Die Taktik `omega` kann zeigen, dass eine lineare Gleichung oder Ungleichung in `ℕ` oder `ℤ`
 aus gegebenen Gleichungen oder Ungleichungen folgt.
-Es ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelang.
+Sie ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelangt.
 -/
 TacticDoc omega
 
-
 /--
-`push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.
+Die Taktik `push_neg` schreibt `¬∀ x, _` zu `∃ x, ¬ _` und `¬∃ x, _` zu `∀x, ¬ _` um.
+Bei geschachtelten Ausdrücken schiebt sie die Negation `¬` soweit nach rechts wie möglich.
 
-## Details
-
-`push_neg` schiebt das `¬` soweit nach innen wie möglich.
-
-## Hilfreiche Resultate
-
-* Die beiden Lemmas heissen `not_forall` und `not_exists` und können mit `rw` einzeln angewendet
-  werden.
-
-## Beispiel
-
+Zum Beispiel wird aus dem Beweisziel
 ```
-Objekte:
-  x : ℝ
-  f : ℝ → ℝ
-Goal:
   ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
 ```
-
-`push_neg` wandelt dies in folgendes Goal um:
-
+mit `push_neg`
 ```
-Objekte:
-  x : ℝ
-  f : ℝ → ℝ
-Goal:
   ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
 ```
+
+## Freunde und Verwandte
+
+Die beiden Lemmas `not_forall` und `not_exists` können mit `rw` einzeln angewendet werden.
 -/
 TacticDoc push_neg
 
 /--
-`obtain ⟨⟩ := h` teilt eine Annahme `h` in ihre Einzelteile auf.
+Die Taktik `obtain` teilt eine Annahme in ihre Einzelteile auf.
 
-## Details
-Für Annahmen die Strukturen sind, wie z.B. `h : A ∧ B` (oder `∃x, P x`) kann man die
-Einzelteile mit  `obtain ⟨a, b⟩ := h` benennen.
+| Ausgangslage       | Taktik                 | Resultat                                   |
+|:------------------ |:---------------------- |:------------------------------------------ |
+| `h : A ∧ B`        | `obtain ⟨hA, hB⟩ := h` | `hA : A` und `hB : B`                      |
+| `h : A ↔ B`        | `obtain ⟨hl, hr⟩ := h` | `hl : A → B` und `hr : B → A`              |
+| `h : Nonempty X`   | `obtain ⟨x⟩ := h`      | `x : X`                                    |
+| `h : ∃ x : X, P x` | `obtain ⟨x, hx⟩ := h`  | `x : X` und `hx : P x`                     |
+| `h : A ∨ B`        | `obtain h \| h := h`   | ein Ziel mit `h : A`, ein Ziel mit `h : B` |
 
-Für eine Annahme der Form `h : A ∨ B` kann man mit `obtain ha | hb := h` zwei Goals
-erzeugen, einmal unter Annahme der linken Seite, einmal unter Annahme der Rechten.
-
-Die Wildcard `obtain ⟨⟩ := h` entscheidet selbständig, welcher Fall vorliegt und
-benennt die entehenden Annahmen.
-
-## Beispiele
-
-```
-Annahmen:
-  h : A ∧ B
-  g : A → C ∨ B → C
-Goal:
-  C
-```
-
-wenn man hier `obtain ⟨h₁, h₂⟩ := h` und danach `obtain g₁ | g₂ := g` benützt, kriegt man
-zwei Goals:
-
-```
-Annahmen:
-  h₁ : A
-  h₂ : B
-  g₁ : A → C
-Goal:
-  C
-```
-
-```
-Annahmen:
-  h₁ : A
-  h₂ : B
-  g₂ : B → C
-Goal:
-  C
-```
-
-## Hilfreiche Resultate
-
-* Für `n : ℕ` hat `obtain ⟨⟩ := n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
-  dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht.
+Die Klammern in den ersten vier Beispielen tippst du als `\<` bzw. `\>`.
+Hier ist `⟨_, _⟩` der *anonyme Konstruktor*.
+Man kann ihn sich ungefähr so vorstellen wir die Tupel-Notation in
+„eine abelsche Gruppe ist ein Tupel $(G, 0, +)$ derart, dass …“.
 -/
 TacticDoc obtain
+--
+-- * Die Wildcard `obtain ⟨⟩ := h` entscheidet selbständig, welcher Fall vorliegt und
+--   benennt die entehenden Annahmen.
+--
+-- * Für `n : ℕ` hat `obtain ⟨⟩ := n` einen ähnlichen Effekt wie `induction n` mit dem Unterschied,
+--   dass im Fall `n + 1` keine Induktionshypothese zur Verfügung steht.
 
-/--
+/-
 `refine' { .. }` wird benötigt um eine Struktur (z.B. ein $R$-Modul) im Taktikmodus in einzelne
-Goals aufzuteilen. Danach hat man ein Goal pro Strukturfeld.
+Beweisziels aufzuteilen. Danach hat man ein Beweisziel pro Strukturfeld.
 
 (*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,
 z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spieles bleiben wir
 bei diesem Syntax.)
--/
+-
 TacticDoc refine'
+-/
 
 /--
-`revert h` fügt die Annahme `h` als Implikationsprämisse vorne ans Goal an.
+Die Taktik `revert h` fügt die Annahme `h` als Implikationsprämisse ins Beweisziel ein:
+aus `h : A` und `⊢ B` wird `⊢ A → B`.
 
-## Beispiel
+## Freunde und Verwandte
 
-```
-Objekte:
-  A B : Prop
-Annahmen:
-  h : A
-  g : A → B
-Goal:
-  B
-```
-
-In diesem Fall bewirkt `revert h`, dass `h` aus den Annahmen vorne als `A →` ans Goal angefügt wird:
-
-```
-Objekte:
-  A B : Prop
-Annahmen:
-  g : A → B
-Goal:
-  a → B
-```
-
-## Hilfreiche Resultate
-
-* `revert` ist das Gegenteil von `intro`.
-* `revert` kann insbesondere nützlich sein, um anschliessend `contrapose` zu verwenden.
-
-## Beispiel
-
-```
-Objekte
-  A P : Prop
-  h : P
-Goal
-  A
-```
-
-hier ändert `revert h` das Goal zu
-
-```
-Objekte
-  A P : Prop
-Goal
-  P → A
-```
+Die Taktik `intro` macht das genaue Gegenteil von `revert`.
 -/
 TacticDoc revert
 
 
-
 /--
-`rfl` beweist ein Goal der Form `X = X`.
-
-## Detail
-
-`rfl` beweist jedes Goal `A = B` wenn `A` und `B` per Definition das gleiche sind (DefEq).
-Andere Taktiken rufen `rfl` oft am Ende versteckt
-automatisch auf um zu versuchen, den Beweis zu schliessen.
-
-
-## Beispiel
-`rfl` kann folgende Goals beweisen:
-
-```
-Objekte
-  a b c : ℕ
-Goal:
-  (a + b) * c = (a + b) * c
-```
-
-```
-Objekte
-  n : ℕ
-Goal
-  1 + 1 = 2
-```
-denn Lean liest dies intern als `0.succ.succ = 0.succ.succ`.
+`rfl` beweist `X = X`.  Genauer schließt `rfl` jedes Beweisziel der Form `A = B`,
+in dem `A` und `B` definitionsgleich sind.
 -/
 TacticDoc rfl
-
-
+-- rfl beweist auch 1 + 1 = 2 in ℕ, denn intern sind beide Seiten `0.succ.succ`.
 
 /--
-Wenn das Goal von der Form `A ∨ B` ist, enscheidestt du dich mit `right`, die rechte Seite zu zeigen.
-(Mit `left` entscheidest du dich entsprechend für die linke Seite.)
+Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidestt du dich mit `right`, die rechte Seite zu zeigen.
 
-## Beispiel
+## Freunde und Verwandte
 
-Folgendes Beispiel kann mit `right` und `assumption` gelöst werden.
-```
-Objekte:
-  hB : B
-Goal:
-  A ∨ B
-```
+Mit `left` entscheidest du dich entsprechend für die linke Seite.
 -/
 TacticDoc right
 
-
-
 /--
-Löst Gleichungen mit den Operationen `+, -, *, ^`.
-
-## Details
-Insbesondere funktioniert `ring` in Ringen/Semiringen wie z.B. `ℕ, ℤ, ℚ, …`
-(i.e. Typen `R` mit Instanzen `Ring R` oder `Semiring R`).
-Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
-
-## Hilfreiche Resultate
-
-* `ring` kann nicht wirklich mit Division (`/`) oder Inversen (`⁻¹`) umgehen. Dafür ist die
-  Taktik `field_simp` gedacht, und die typische Sequenz ist
-  ```
-  field_simp
-  ring
-  ```
-
-### Beispiel
-
-
-Dieses Goal kann mit der Taktik `ring` gelöst werden:
-
-```
-Goal:
-  1 + n * 2 + n + 12 = 3 * n + 13
-```
+Die Taktik `ring` beweist Gleichungen mit den Operationen `+, -, *, ^` in Halbringen,
+also insbesondere in ℕ, ℤ, ℚ, ℝ, …   Sie funktioniert besonders gut in kommutativen Ringen.
 -/
 TacticDoc ring
-
-
+-- `ring` braucht Typen `R` mit Instanzen `Ring R` oder `Semiring R`.
+-- Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
+--
+-- * `ring` kann nicht wirklich mit Division (`/`) oder Inversen (`⁻¹`) umgehen. Dafür ist die
+--  Taktik `field_simp` gedacht, und die typische Sequenz ist
+--  ```
+--  field_simp
+--  ring
+--  ```
 
 /--
 Wenn man eine Annahme `(h : X = Y)` hat, kann man mit
-`rw [h]` alle `X` im Goal durch `Y` ersetzen.
+`rw [h]` alle `X` im Beweisziel durch `Y` ersetzen.
 
 ## Details
 
 * `rw [←h]` wendet `h` rückwärts an und ersetzt alle `Y` durch `X`.
 * `rw [h, g, ←f]`: Man kann auch mehrere `rw` zusammenfassen.
-* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Goal).
+* `rw [h] at h₂` ersetzt alle `X` in `h₂` zu `Y` (anstatt im Beweisziel).
 * `rw [my_theorem]` sucht nach dem ersten Ort, wo es umschreiben kann um die Impliziten
   Argumente von `my_theorem` zu füllen
 * `nth_rw 2 [my_theorem]` ist eine Variante, die stattdessen am 2. Ort umschreibt.
@@ -709,11 +435,11 @@ Objekte:
 Annahmen:
   h₁ : m = n
   h₂ : f = g
-Goal:
+Beweisziel:
   f m = g n
 ```
 
-`rw [h₂]` schreibt das Goal zu `g n = g m` um, ein weiteres `rw [h₁]` dann zu `g m = g m`, was es
+`rw [h₂]` schreibt das Beweisziel zu `g n = g m` um, ein weiteres `rw [h₁]` dann zu `g m = g m`, was es
 direkt auch schließt.
 
 -/
@@ -775,11 +501,11 @@ TacticDoc specialize
 
 
 /--
-`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Goal direkt folgen soll.
+`suffices h : P` führt ein neues Zwischenresultat ein, aus dem das Beweisziel direkt folgen soll.
 
 ## Details
 
-Der einzige Unterschied zu `have h : P` ist, dass die beiden resultierenden Goals vertauscht sind.
+Der einzige Unterschied zu `have h : P` ist, dass die beiden resultierenden Beweisziels vertauscht sind.
 
 Mathematisch braucht man diese in ein bisschen unterschiedlichen Fällen:
 
@@ -804,7 +530,7 @@ verwendet. Das verwendet intern die Lemmata
 
 ## Beispiel
 
-ist das Goal `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `symm at h` die Annahme
+ist das Beweisziel `x = y`, dann wandelt es `symm` in `y = x` um. Analog, wandelt `symm at h` die Annahme
 `(h : z = w)` in `(h : w = z)` um.
 -/
 TacticDoc symm
@@ -837,11 +563,11 @@ Objekte:
 Annahmen:
   h₁ : A ↔ B
   h₂ : B ↔ C
-Goal:
+Beweisziel:
   A ↔ C
 ```
 
-Die Taktik `trans B` erstellt dann aus dem Goal zwei neue `A ↔ B` und `B ↔ C`.
+Die Taktik `trans B` erstellt dann aus dem Beweisziel zwei neue `A ↔ B` und `B ↔ C`.
 
 -/
 
@@ -867,7 +593,7 @@ welche dann evaluiert entweder wahr oder falsch rausgibt.
 Folgendes kann mit `decide` gelöst werden:
 
 ```
-Goal:
+Beweisziel:
   ¬ Odd 40
 ```
 -/
@@ -876,32 +602,32 @@ TacticDoc decide
 
 
 /--
-`unfold myDef` öffnet eine Definition im Goal.
+`unfold myDef` öffnet eine Definition im Beweisziel.
 
 ## Details
-Bis auf DefEq (definitinal equality) ändert `unfold` nichts, manche Taktiken
+Bis auf Definitionsgleichheit ändert `unfold` nichts, manche Taktiken
 (z.B. `push_neg`, `rw`) brauchen aber manchmal die Hilfe.
 
 `unfold myDef at h` kann auch Definitionen in Annahmen öffnen
 
-## Hilfreiche Resultate
+## Freunde und Verwandte
 
 * `unfold f` kann insbesondere nötig sein, wenn man danach `rw` benützt,
   da `rw` nicht durch Definitionen hindurch sieht.
 * `unfold f` oder `simp only [f]` machen praktisch das Gleiche.
 * Im Moment kennt Mathlib auch noch `unfold_let`: `unfold` ist für Definitionen, `unfold_let`
   für `let`-Statements.
-* `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Goal in einen DefEq-Ausdruck
+* `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Beweisziel in einen definitionsgleichen Ausdruck
   umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
 
 ## Beispiel
 
 ```
-Goal:
+Beweisziel:
   Even 0
 ```
 
-Auch wenn `rfl` dieses Goal lösen kann, kann es nützlich sein `unfold Even` zu benützen um die
+Auch wenn `rfl` dieses Beweisziel lösen kann, kann es nützlich sein `unfold Even` zu benützen um die
 Definition hinter `Even` zu sehen.
 -/
 TacticDoc unfold
@@ -909,18 +635,18 @@ TacticDoc unfold
 
 
 /--
-Wenn das Goal von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben
-mit dem man das Goal beweisen möchte.
+Wenn das Beweisziel von der Form `∃x, P x` ist, kann man mit `use n` ein konkretes Element angeben
+mit dem man das Beweisziel beweisen möchte.
 
 ## Details
 
-`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Goal damit manchmal direkt
+`use n` versucht zudem anschliessend `rfl` aufzurufen, und kann das Beweisziel damit manchmal direkt
 schließen.
 
 ## Beispiel
 
 ```
-Goal:
+Beweisziel:
   ∃ x, x + 3 = 4
 ```
 
@@ -933,12 +659,12 @@ TacticDoc use
 
 ## Beispiel
 
-Folgendes Goal ist mit `tauto` lösbar
+Folgendes Beweisziel ist mit `tauto` lösbar
 
 ```
 Objekte:
   (A B C : Prop)
-Goal:
+Beweisziel:
   ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C)
 ```
 -/
