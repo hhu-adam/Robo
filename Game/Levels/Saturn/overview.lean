@@ -18,14 +18,24 @@ example (a b c d : ℕ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := 
   rw [←h₂]
   assumption
 
-/- RING 05: Was meant as preparation for very similar manipulation in boss level of BABYLON
-            but this is no longer needed now that boss of BABYLON is formulated in ℚ!
--/
-example (w a o : ℤ) (h2o : 2*o = 100) (ho2 : o^2 = -100*a - a^2) (h :  w = (a + o)^2) : w = 0 := by
-  rw [add_pow_two] at h
-  rw [mul_comm 2 a] at h
-  rw [mul_assoc] at h
-  rw [h2o] at h
-  rw [ho2] at h
-  rw [h]
+/- RING 05: -/
+namespace MvPolynomial
+example (A B :  MvPolynomial (Fin 4) ℝ) (hA : A = (X 0)*(X 3) - (X 1)*(X 2)) (hB : B = (X 0)*(X 2) + (X 1)*(X 3)) :
+  ((X 0)^2 + (X 1)^2) * ((X 2)^2 + (X 3)^2) = A^2 + B^2  := by
+  rw [hA, hB]
   ring
+
+
+/- Further ideas
+
+Introduce more interesting arithemetic in ℝ?
+Tactic `ring` does not handle devision (`/`) or inversion (`⁻¹`) well.
+Instead, would need to use `field_simp`, eg:
+-/
+open Real
+example (x p q : ℝ) (hx : x = -p/2 + sqrt (p^2/4 - q)) (hdisc: p^2/4 - q ≥ 0): x^2 + p*x + q = 0 := by
+  rw [hx]
+  rw [add_pow_two,sq_sqrt]
+  field_simp
+  ring
+  assumption

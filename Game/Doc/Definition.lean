@@ -460,3 +460,7 @@ DefinitionDoc absValue as "|·|"
 dass also aus `a < b` auch `f a < f b` folgt.
 -/
 DefinitionDoc StrictMono as "StrictMono"
+
+/-- `P : MvPolynomial (Fin n) R` bedeutet, dass `P` ein Polynomial in `n` Unbestimmten
+`X 0`, …, `X (n-1)` mit Koeffizienten in `R` ist. -/
+DefinitionDoc MvPolynomial as "MvPolynomial"

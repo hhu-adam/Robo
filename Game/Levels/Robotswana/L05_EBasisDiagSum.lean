@@ -104,6 +104,9 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     rw [if_neg h₃]
     simp
 
+/---/
+TheoremDoc Matrix.one_apply as "one_apply" in "Matrix"
+
 NewTheorem Matrix.one_apply
 
 TheoremTab "Matrix"
