@@ -35,10 +35,10 @@ und setzt das Beweisziel auf `False`.
 
 ## Freunde und Verwandte
 
-* Am Ende eines Widerspruchsbweises braucht man gewöhnlich `contradiction`:
-diese Taktik schließt den Besweis, wenn sie zwei offensichtlich widersprüchlichen Annahmen.
+* Am Ende eines Widerspruchsbeweises steht gewöhnlich `contradiction`:
+diese Taktik schließt den Beweis, wenn sie zwei offensichtlich widersprüchliche Annahmen findet.
 * Ist das Beweisziel von der Form `A → B`, kannst du mit `contrapose`
-einen Beweis durch Kontraposition führen.
+einen Beweis durch Kontraposition beginnen.
 -/
 TacticDoc by_contra
 
@@ -58,7 +58,7 @@ b: ℝ
 ⊢ 1 • b = b
 ```
 wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war.
-Hier kannst du mit `change (1 : ℚ) * b = b` das Beweisziel umschreiben und anschliessend mit Lemmas
+Hier kannst du mit `change (1 : ℚ) * b = b` das Beweisziel umschreiben und anschließend mit Lemmas
 über die Multiplikation beweisen.
 -
 TacticDoc change
@@ -128,7 +128,7 @@ Die Taktik `revert h` kann nützlich sein, um eine Annahme als Implikationspräm
 TacticDoc contrapose
 
 /-
-Die Taktik `exact h` schliesst das Beweisziel wenn der Term `h` mit dem Beweisziel übereinstimmt.
+Die Taktik `exact h` schließt das Beweisziel, wenn der Term `h` mit dem Beweisziel übereinstimmt.
 -
 TacticDoc exact
 -/
@@ -154,7 +154,7 @@ TacticDoc ext
 `fin_cases i` ist insbesondere nützlich für `(i : Fin n)`, zum Beispiel als Index in
 endlich dimensionalen Vektorräumen.
 
-In diesem Fall bewirkt `fin_cases i` dass man Komponentenweise arbeitet.
+In diesem Fall bewirkt `fin_cases i`, dass du komponentenweise arbeitest.
 -
 TacticDoc fin_cases
 -/
@@ -202,7 +202,7 @@ TacticDoc generalize
 /--
 Mit `have h : P` führst du ein Zwischenresultat ein.
 Anschließend musst du zuerst dieses Zwischenresultat beweisen,
-bevor du den eigentlich Beweis fortsetzen kannst.
+bevor du den eigentlichen Beweis fortsetzen kannst.
 
 ## Freunde und Verwandte
 `suffices h : P` funktioniert genauso, außer dass du zunächst den Hauptweise forsetzen kannst und
@@ -218,6 +218,13 @@ TacticDoc «have»
 Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.
 
 Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion.
+
+## Freunde und Verwandte
+
+* Hast du `h : A` als Annahme zur Verfügung, kannst du mit
+`rw [if_pos h]` den Ausdruck `if A then B else C` zu `B` reduzieren.
+* Hast du `h : ¬ A` als Annahme zur Verfügung, kannst du analog mit
+`rw [if_neg h]` den Ausdruck `if A then B else C` zu `C` reduzieren.
 -/
 TacticDoc «if»
 
@@ -279,7 +286,7 @@ Die Taktik `revert h` macht das genaue Gegenteil von `intro h`.
 TacticDoc intro
 
 /--
-Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.
+Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `left`, die linke Seite zu zeigen.
 
 ## Freunde und Verwandte
 
@@ -295,7 +302,7 @@ TacticDoc «let»
 --  Lean vergisst sofort, wie die Zahl definiert war. D.h. `x = 25` wäre dann nicht
 --  beweisbar. Mit `let x : ℕ := 5 ^ 2` ist `x = 25` durch `rfl` beweisbar.
 --
--- * `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let` aber versucht auch `x` im Beweisziel überall einzusetzen wo `5 ^ 2` steht.
+-- * `set x : ℕ := 5 ^ 2` macht das Gleiche wie `let`, aber versucht auch `x` im Beweisziel überall einzusetzen wo `5 ^ 2` steht.
 -- we decided not to introduce `set`
 
 /-
@@ -384,7 +391,7 @@ Beweisziels aufzuteilen. Danach hat man ein Beweisziel pro Strukturfeld.
 
 (*Bemerkung*: Es gibt in Lean verschiedenste bessere Varianten dies zu erreichen,
 z.B. \"Term Modus\" oder \"anonyme Konstruktoren\", aber für den Zweck des Spieles bleiben wir
-bei diesem Syntax.)
+bei dieser Syntax.)
 -
 TacticDoc refine'
 -/
@@ -408,7 +415,7 @@ TacticDoc rfl
 -- rfl beweist auch 1 + 1 = 2 in ℕ, denn intern sind beide Seiten `0.succ.succ`.
 
 /--
-Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `right`, die rechte Seite zu zeigen.
+Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `right`, die rechte Seite zu zeigen.
 
 ## Freunde und Verwandte
 
@@ -474,8 +481,8 @@ verwendet aber jedes Lemma so oft es kann.
 Es bestehen aber drei grosse Unterschiede zu `rw`:
 
 * `simp_rw` wendet jedes Lemma so oft an wie es nur kann.
-* `simp_rw` kann besser unter Quantifiern umschreiben als `rw`.
-* `simp_rw` führt nach jedem Schritt ein `simp only []` aus und vereinfacht dadurch grundlegenste
+* `simp_rw` kann besser unter Quantoren umschreiben als `rw`.
+* `simp_rw` führt nach jedem Schritt ein `simp only []` aus und vereinfacht dadurch grundlegendste
   Sachen.
 -
 TacticDoc simp_rw
@@ -486,7 +493,7 @@ TacticDoc simp_rw
 
 Falls du mehrmals spezialisieren möchtest, solltest du statt `specialize`
 `have` verwenden, da `specialize h …` die alte Annahme `h` überschreibt.
-Aus obiger Annahme `h` erhält man beispielsweise mit
+Aus obiger Annahme `h` erhältst du beispielsweise mit
 ```
 have ha := h a₁ a₂
 have hb := h b₁ b₂
@@ -547,7 +554,7 @@ TacticDoc trans
 
 /--
 Mit `decide` kannst du Aussagen beweisen, die mit einem einfachen Algorithmus
-entschiedbar sind.  Dazu gehören insbesondere `True` und Aussagen über konkrete Zahlen wie:
+entscheidbar sind.  Dazu gehören insbesondere `True` und Aussagen über konkrete Zahlen wie:
 - `Even 4`
 - `2 ≤ 5`
 - `4 ≠ 6`
@@ -571,7 +578,7 @@ Die Taktiken `unfold F` und `simp only [F]` machen praktisch das Gleiche.
 -/
 TacticDoc unfold
 -- * `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Beweisziel in einen definitionsgleichen Ausdruck
---  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat etwas zu verstehen.
+--  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat, etwas zu verstehen.
 
 /--
 Wenn das Beweisziel von der Form `∃x, P x` ist, kannst du mit `use n` ein konkretes Element angeben,

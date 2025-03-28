@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Mar 28 10:24:44 2025\n"
+"POT-Creation-Date: Fri Mar 28 12:06:17 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgid "intermediate goal solved! 🎉"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Eine Abbildung `f` is injektiv, wenn gilt:\n"
+msgid "Eine Abbildung `f` ist injektiv, wenn gilt:\n"
 "\n"
 "```\n"
 "∀ a b, f a = f b → a = b\n"
@@ -29,7 +29,7 @@ msgid "Eine Abbildung `f` is injektiv, wenn gilt:\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "Eine Abbildung `f` is surjektiv, wenn gilt:\n"
+msgid "Eine Abbildung `f` ist surjektiv, wenn gilt:\n"
 "\n"
 "```\n"
 "∀ b, ∃ a, f a = b\n"
@@ -57,7 +57,8 @@ msgid "`Function.RightInverse f g` ist als `LeftInverse g f` definiert.\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst."
+msgid "`LeftInverse g f` bedeutet `g ∘ f = id`, oder genauer:\n"
+"`∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -92,7 +93,7 @@ msgid "Für eine Abbildung `f : A → B` ist `range f` die gesamte Bildmenge von
 "range f = {f a | a : A}\n"
 "        = {  b | ∃ a, f a = b}\n"
 "```\n"
-"Das ist also im wesentlichen eine andere Schreibweise für `f '' univ`.\n"
+"Das ist also im Wesentlichen eine andere Schreibweise für `f '' univ`.\n"
 "Um damit zu arbeiten, ist `mem_range` ganz nützlich:\n"
 "```\n"
 "x ∈ range f ↔ ∃ a, f a = b\n"
@@ -191,7 +192,7 @@ msgid "`∅ : Set T` ist die leere Teilmenge.\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`univ : Set T` ist die “Teil”menge, die aus *allen* Elementen vom Typ `T` besteht.\n"
+msgid "`univ : Set T` ist die „Teil“menge, die aus *allen* Elementen vom Typ `T` besteht.\n"
 "\n"
 "Mit `rw [eq_univ_iff_forall]` überführst du eine Gleichung der Form `S = univ` in die\n"
 "Aussage `∀ (x : T), x ∈ S`."
@@ -200,7 +201,7 @@ msgstr ""
 #: Game.Doc.Definition
 msgid "Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist\n"
 "`insert a A` eine andere Schreibweise für `A ∪ {a}`.\n"
-"Sollte `a` bereits in `A` liegt, ist offenbar `insert a A = A`."
+"Sollte `a` bereits in `A` liegen, ist offenbar `insert a A = A`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -233,13 +234,79 @@ msgid "`Nonempty T` bedeutet, dass ein Element in `T` („vom Typ `T`“) existi
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`A ∧ B` (\"und\") ist die Aussage, dass sowohl `A` als auch `B` wahr ist."
+msgid "Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Elemente hat.\n"
+"Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,\n"
+"aber nun explizit als endliche Teilmenge aufgefasst."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder\n"
+"nicht beweisbar ist.\n"
+"\n"
+"Siehe auch `(True : Prop)` und `(False : Prop)` für die uneingeschränkt wahre bzw.\\ unwahre\n"
+"Aussage."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`A ∧ B` (\"und\") ist die Aussage, dass sowohl `A` als auch `B` wahr ist.\n"
+"\n"
+"## `A ∧ B` als Beweisziel\n"
+"\n"
+"Die Taktik `constructor` erlaubt dir, die beiden Teilaussagen `A` und `B` einzeln zu beweisen.\n"
+"\n"
+"## `A ∧ B` als Annahme\n"
+"\n"
+"Mit `obtain ⟨h₁, h₂⟩ := h` zerlegst du eine Annahme der Form `h : A ∧ B`\n"
+"in ihre Bestandteile `h₁ : A` und `h₂ : B`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`A ∨ B` (\"oder\") ist die Aussage, dass mindestens eine der Aussagen `A`, `B` wahr ist.\n"
+"\n"
+"## `A ∨ B` als Beweisziel\n"
+"\n"
+"Die Taktik `left` bzw. `right` kannst du dich entscheiden,\n"
+"welche Aussage du beweisen möchtest.\n"
+"\n"
+"## `A ∨ B` als Annahme\n"
+"\n"
+"Da du nicht weißt, welche der Aussagen `A`, `B` du voraussetzen kannst,\n"
+"musst du das Beweisziel unter Umständen zweimal zeigen:\n"
+"einmal unter der Annahme `A`, einmal unter der Annahme `B`.\n"
+"Für dieses Vorgehen verwendest du die Taktik\n"
+"```\n"
+"obtain h | h := h\n"
+"```"
 msgstr ""
 
 #: Game.Doc.Definition
 msgid "Für `A B : Prop` ist `A → B` die Implikation „`A` impliziert `B`“.\n"
+"Für andere `X Y : Type` ist `X → Y` eine Abbildung, die Werte aus `X` nach `Y` abbildet.\n"
 "\n"
-"Für andere `X Y : Type` ist `X → Y` eine Abbildung, die Werte aus `X` nach `Y` abbildet."
+"## Implikation als Beweisziel\n"
+"\n"
+"Ist dein Beweisziel eine Implikation `A → B`, so kannst du mit `intro h` `h : A` annehmen,\n"
+"und musst dann `B` beweisen.\n"
+"\n"
+"## Implikation als Annahme\n"
+"\n"
+"Um eine Implikation unter deinen Annahmen zu verwenden, benutzt du die Taktik `apply`."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`A ↔ B` bedeutet, dass die Aussagen `A` und `B` logisch äquivalent sind („genau dann, wenn“).\n"
+"\n"
+"## `↔`als Beweisziel\n"
+"\n"
+"Um `A ↔ B` zu zeigen, kannst du beispielsweise `constructor` aufrufen\n"
+"und dann separat `A → B` und `B → A` beweisen.\n"
+"\n"
+"## `↔` als Annahme\n"
+"\n"
+"Eine Annahme der Form `h : A ↔ B` kannst du mit `obtain ⟨h₁, h₂⟩ := h` in die beiden Bestandteile\n"
+"`h₁ : A → B` und `h₂ : B → A` zerlegen.\n"
+"Du kannst aber auch mit `h.mp` und `h.mpr` direkt auf diese Bestandteil Bezug nehmen.\n"
+"(Die Abkürzung `mp` steht für „modus ponens“.)"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -249,8 +316,12 @@ msgid "Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist\n"
 "Eine reine Existenzaussage („es gibt ein Element vom Typ `A`)\n"
 "lässt sich zum Beispiel als `∃ a : A, true` oder als `Nonempty A` formulieren.\n"
 "\n"
+"## `∃` als Beweisziel\n"
+"\n"
 "Um eine Aussage der Form `∃ a : A, …` zu beweisen,\n"
 "konstruierst du ein geeignetes Element `a` und nutzt dann die `use`-Taktik (`use a`).\n"
+"\n"
+"## `∃` als Annahme\n"
 "\n"
 "Eine Annahme der Form `h : ∃ a : A, P a` kannst du mit\n"
 "`choose a ha using h` oder `obtain ⟨a, ha⟩ := h` in ihre Bestandteile `a : A` und `ha : P a`\n"
@@ -270,11 +341,14 @@ msgid "Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist\n"
 "nutzt dann die `use`-Taktik (`use a`), in der Regel unmittelbar gefolgt von `simp`.\n"
 "Danach sollte das Beweisziel folgende Form haben:\n"
 "\n"
-"`P(a) ∧ ∀ a' : A, P(a') → a' = a`\n"
+"`P a ∧ ∀ a' : A, P a' → a' = a`\n"
+"\n"
+"Links steht `P a`: du musst noch zeigen, dass `a` die geforderte Eigenschaft hat.\n"
+"Rechts steht die Eindeutigkeitsaussage: jedes Element mit dieser Eigenschaft ist gleich `a`.\n"
 "\n"
 "## `∃!` als Annahme\n"
 "\n"
-"Eine Annahme der Form `h : ∃! a : A, P a` lässt sich mit\n"
+"Eine Annahme der Form `h : ∃! a : A, P a` kannst du mit\n"
 "\n"
 "```\n"
 "  obtain ⟨a, h_exists, h_unique⟩ := h\n"
@@ -294,12 +368,55 @@ msgid "Universeller Quantor: Ist `P : A → Prop` ein Prädikat, so ist\n"
 "`∀ a : A, P a` die Aussage, dass die Aussage `P a` für alle `a` in `A`\n"
 "(genauer: für alle `a` vom Typ `A`) wahr sei.\n"
 "\n"
-"Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählt man mit `intro a` zunächst ein\n"
+"## `∀` als Beweisziel\n"
+"\n"
+"Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählst du mit `intro a` zunächst ein\n"
 "beliebiges Element `a`.\n"
 "\n"
+"## `∀` als Annahme\n"
+"\n"
 "Ist `h : ∀ a : A, P a` eine Annahme und `a₀ : A` ein konkretes Element, so ist `h a₀`\n"
-"eine Notation für `P a₀`.  Man kann auch mit `specialize h a₀` die gegebene Annahme\n"
+"eine Notation für `P a₀`.\n"
+"Du kannst auch mit `specialize h a₀` die gegebene Annahme\n"
 "über alle möglichen `a` zu einer Annahme `h : P a₀` über dieses konkrete `a₀` einschränken."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Die Aussage `True : Prop` ist immer wahr.\n"
+"\n"
+"## `True` als Beweisziel\n"
+"\n"
+"Die Taktiken `tauto` und `decide` schließen jeden Beweis mit `True` als Beweisziel.\n"
+"\n"
+"## `True` als Annahme\n"
+"\n"
+"Als Annahme ist `True` überhaupt nicht hilfreich."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "Die Aussage `False : Prop` ist immer falsch.\n"
+"\n"
+"## `False` als Beweisziel\n"
+"\n"
+"Ist `False` dein Beweisziel, kannst du zum Beispiel versuchen, in deinen Annahmen einen Widerspruch zu finden.\n"
+"Sobald der Widerspruch hinreichend evident ist, schließt `contradiction` einen solchen Beweis.\n"
+"\n"
+"Ist `False` dein Beweisziel und du hast eine Annahme oder ein Lemma der Form `h : ¬ A` zur Verfügung,\n"
+"so kannst du mit `apply h` das Beweisziel zu `A` ändern\n"
+"(denn `¬ A` bedeutet `A → False`).\n"
+"\n"
+"## `False`  als Annahme\n"
+"\n"
+"Liegt dir `False` als Annahme vor, kannst du den Beweis sofort mit `contradiction` beenden\n"
+"– denn aus einer falschen Aussage folgt bekanntlich jede andere."
+msgstr ""
+
+#: Game.Doc.Definition
+msgid "`¬ A` ist die logische Negation von `A`.\n"
+"Sie ist intern als `A → False` implementiert.\n"
+"\n"
+"Nützliche Taktiken sind: `push_neg`, `by_contra`, `contrapose`.\n"
+"Außerdem kannst du eine Annahme der Form `h : ¬ A` mit `apply` auf das Beweisziel `False` anwenden."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -307,46 +424,23 @@ msgid "Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`Even n` ist die Aussage dass `n : ℕ` gerade ist."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Die Aussage `False : Prop` ist nie wahr.\n"
-"\n"
-"Lean benützt diese intern für Widersprüche, ein Widerspruch ist ein Beweis `(hF : False)` von\n"
-"`False` und z.B. `¬ A` ist als `A → False` implementiert."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Genau-dann-wenn (if-and-only-if). Can meistens mit `constructor` oder `obtain ⟨fwd, bwd⟩ := h`\n"
-"in Einzelteile zerlegt werden.\n"
-"\n"
-"Bei einer Annahme `h : A ↔ B`, heissen die Einzelteile zudem `h.mp : A → B` und `h.mpr : B → A`."
-msgstr ""
-
-#: Game.Doc.Definition
 msgid "Ungleichheit `x ≠ y` ist definiert als `¬ x = y`.  Du siehst das mit `unfold Ne`."
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element\n"
-"enthält.\n"
-"\n"
-"Wenn `h : Nonempty U`, dann kriegt man mit `obtain ⟨d⟩ := h` eine solches Element `d : U`."
+msgid "`Even n` ist die Aussage, dass `n : ℕ` gerade ist:\n"
+"```\n"
+"∃ r : ℕ, n = r + r\n"
+"```\n"
+"Das kannst du leicht mit `unfold Even` prüfen."
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`¬ A` ist intern als `A → False` implementiert.\n"
-"\n"
-"Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "`Odd n` ist die Aussage dass `n : ℕ` ungerade ist."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "`A ∨ B` (\"oder\") ist die Aussage mindestens eine der Aussagen `A`, `B` wahr ist."
+msgid "`Odd n` ist die Aussage, dass `n : ℕ` ungerade ist:\n"
+"```\n"
+"∃ k : ℕ, n = 2 * k + 1\n"
+"```\n"
+"Das kannst du leicht mit `unfold Odd` prüfen."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -361,19 +455,8 @@ msgid "`succ : ℕ → ℕ` ist die Abbildung `n ↦ n + 1`.\n"
 msgstr ""
 
 #: Game.Doc.Definition
-msgid "`(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder\n"
-"nicht beweisbar ist.\n"
-"\n"
-"Siehe auch `(True : Prop)` und `(False : Prop)` die uneingeschränkt wahre (rsp. falsche)\n"
-"Aussage."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Die Aussage `True : Prop` ist immer wahr."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Die Aussage `False : Prop` ist immer falsch."
+msgid "Für `x : ℝ` ist `|x|` der Betrag von `x`.\n"
+"(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -384,17 +467,6 @@ msgstr ""
 #: Game.Doc.Definition
 msgid "Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt\n"
 "$\\prod_{i\\in I} f(i)$.  Du schreibst das Produktzeichen als `\\prod`."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Element hat.\n"
-"Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,\n"
-"aber nun explizit als endliche Teilmenge aufgefasst."
-msgstr ""
-
-#: Game.Doc.Definition
-msgid "Für `x : ℝ` ist `|x|` der Betrag von `x`.\n"
-"(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)"
 msgstr ""
 
 #: Game.Doc.Definition
@@ -434,10 +506,10 @@ msgid "Die Taktik `by_contra h` leitet einen Widerspruchsbeweis ein.\n"
 "\n"
 "## Freunde und Verwandte\n"
 "\n"
-"* Am Ende eines Widerspruchsbweises braucht man gewöhnlich `contradiction`:\n"
-"diese Taktik schließt den Besweis, wenn sie zwei offensichtlich widersprüchlichen Annahmen.\n"
+"* Am Ende eines Widerspruchsbeweises steht gewöhnlich `contradiction`:\n"
+"diese Taktik schließt den Beweis, wenn sie zwei offensichtlich widersprüchliche Annahmen findet.\n"
 "* Ist das Beweisziel von der Form `A → B`, kannst du mit `contrapose`\n"
-"einen Beweis durch Kontraposition führen."
+"einen Beweis durch Kontraposition beginnen."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -552,7 +624,7 @@ msgstr ""
 #: Game.Doc.Tactic
 msgid "Mit `have h : P` führst du ein Zwischenresultat ein.\n"
 "Anschließend musst du zuerst dieses Zwischenresultat beweisen,\n"
-"bevor du den eigentlich Beweis fortsetzen kannst.\n"
+"bevor du den eigentlichen Beweis fortsetzen kannst.\n"
 "\n"
 "## Freunde und Verwandte\n"
 "`suffices h : P` funktioniert genauso, außer dass du zunächst den Hauptweise forsetzen kannst und\n"
@@ -562,7 +634,14 @@ msgstr ""
 #: Game.Doc.Tactic
 msgid "Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.\n"
 "\n"
-"Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion."
+"Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion.\n"
+"\n"
+"## Freunde und Verwandte\n"
+"\n"
+"* Hast du `h : A` als Annahme zur Verfügung, kannst du mit\n"
+"`rw [if_pos h]` den Ausdruck `if A then B else C` zu `B` reduzieren.\n"
+"* Hast du `h : ¬ A` als Annahme zur Verfügung, kannst du analog mit\n"
+"`rw [if_neg h]` den Ausdruck `if A then B else C` zu `C` reduzieren."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -600,7 +679,7 @@ msgid "Die Taktik `intro` wird für Beweisziele Form `A → B` oder `∀ x, P x`
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `left`, die linke Seite zu zeigen.\n"
+msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `left`, die linke Seite zu zeigen.\n"
 "\n"
 "## Freunde und Verwandte\n"
 "\n"
@@ -691,7 +770,7 @@ msgid "Die Taktik `rfl` beweist `X = X`.  Genauer schließt `rfl` jedes Beweiszi
 msgstr ""
 
 #: Game.Doc.Tactic
-msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, enscheidest du dich mit `right`, die rechte Seite zu zeigen.\n"
+msgid "Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `right`, die rechte Seite zu zeigen.\n"
 "\n"
 "## Freunde und Verwandte\n"
 "\n"
@@ -748,7 +827,7 @@ msgid "`specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`: die 
 "\n"
 "Falls du mehrmals spezialisieren möchtest, solltest du statt `specialize`\n"
 "`have` verwenden, da `specialize h …` die alte Annahme `h` überschreibt.\n"
-"Aus obiger Annahme `h` erhält man beispielsweise mit\n"
+"Aus obiger Annahme `h` erhältst du beispielsweise mit\n"
 "```\n"
 "have ha := h a₁ a₂\n"
 "have hb := h b₁ b₂\n"
@@ -803,7 +882,7 @@ msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Mit `decide` kannst du Aussagen beweisen, die mit einem einfachen Algorithmus\n"
-"entschiedbar sind.  Dazu gehören insbesondere `True` und Aussagen über konkrete Zahlen wie:\n"
+"entscheidbar sind.  Dazu gehören insbesondere `True` und Aussagen über konkrete Zahlen wie:\n"
 "- `Even 4`\n"
 "- `2 ≤ 5`\n"
 "- `4 ≠ 6`\n"
@@ -2171,11 +2250,11 @@ msgid "**Robo**:  Mit `odd_iff_not_even` kannst du `¬Even` in `Odd` verwandeln.
 msgstr ""
 
 #: Game.Levels.Quantus.L06_odd_iff_not_even
-msgid "Eine Zahl ist gerade wenn sie nicht ungerade ist."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L06_odd_iff_not_even
-msgid "Eine Zahl ist ungerade wenn sie nicht gerade ist."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Quantus.L06_odd_iff_not_even
@@ -5720,17 +5799,11 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L06_Piecewise
-msgid "Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert\n"
-"`rw [if_pos h]` reduziert eine Aussage `if A then B else C` zu `B`.\n"
-"\n"
-"Umgekehrt kann man `if_neg` verwenden wenn `h : ¬ A`."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L06_Piecewise
-msgid "Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert\n"
-"`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.\n"
-"\n"
-"Umgekehrt kann man `if_pos` verwenden wenn `h : A`."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
@@ -7283,12 +7356,16 @@ msgid "# Game Over oder QED?\n"
 "Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?\n"
 "Dann bist du hier genau richtig!\n"
 "In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.\n"
+"Du wirst unter anderem per Induktion Summenformeln beweisen,\n"
+"nachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,\n"
+"zeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,\n"
+"und die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.\n"
 "\n"
 "Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\n"
 "fast genauso an wie in VSCode, der Standard-IDE für Lean.\n"
-"Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*,\n"
+"Auf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,\n"
 "und schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n"
-"(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).\n"
+"(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).\n"
 "\n"
 "Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n"
 "\n"
@@ -7303,13 +7380,14 @@ msgid "# Game Over oder QED?\n"
 "\n"
 "Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.\n"
 "Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n"
-"  – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.\n"
+"  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.\n"
 "\n"
 "## Neuigkeiten\n"
-"`[2025-03-27]` Der jüngste Planet im Formaloversum heißt Euklid.\n"
-"Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn.\n"
+"`[2025-03-28]` Der jüngste Planet im Formaloversum heißt Euklid.\n"
+"Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn,\n"
+"und in der Dokumentation der Taktiken und Definitionen.\n"
 "Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.\n"
-"Saturn endet jetzt mit einer polynomiellen Quaadratsummenformel.\n"
+"Saturn endet nun mit einer polynomiellen Quadratsummenformel.\n"
 "\n"
 "`[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.\n"
 "\n"

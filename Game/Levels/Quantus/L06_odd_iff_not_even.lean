@@ -45,11 +45,11 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
       ring
     · assumption
 
-/-- Eine Zahl ist gerade wenn sie nicht ungerade ist. -/
+/---/
 TheoremDoc Nat.even_iff_not_odd as "even_iff_not_odd" in "ℕ"
 #check  Nat.even_iff_not_odd
 
-/-- Eine Zahl ist ungerade wenn sie nicht gerade ist. -/
+/---/
 TheoremDoc Nat.odd_iff_not_even as "odd_iff_not_even" in "ℕ"
 -- It seems this has been renamed into `Nat.not_even_iff_odd` in newer versions of mathlib,
 -- and is now a simp lemma.

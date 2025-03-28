@@ -6,7 +6,7 @@ import GameServer.Commands
 /- ABBILDUNGEN -/
 
 /--
-Eine Abbildung `f` is injektiv, wenn gilt:
+Eine Abbildung `f` ist injektiv, wenn gilt:
 
 ```
 ∀ a b, f a = f b → a = b
@@ -16,7 +16,7 @@ DefinitionDoc Function.Injective as "Injective"
 
 
 /--
-Eine Abbildung `f` is surjektiv, wenn gilt:
+Eine Abbildung `f` ist surjektiv, wenn gilt:
 
 ```
 ∀ b, ∃ a, f a = b
@@ -53,7 +53,8 @@ DefinitionDoc Function.RightInverse as "RightInverse"
 
 
 /--
-`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst.
+`LeftInverse g f` bedeutet `g ∘ f = id`, oder genauer:
+`∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst.
 -/
 DefinitionDoc Function.LeftInverse as "LeftInverse"
 
@@ -96,7 +97,7 @@ Für eine Abbildung `f : A → B` ist `range f` die gesamte Bildmenge von `f`:
 range f = {f a | a : A}
         = {  b | ∃ a, f a = b}
 ```
-Das ist also im wesentlichen eine andere Schreibweise für `f '' univ`.
+Das ist also im Wesentlichen eine andere Schreibweise für `f '' univ`.
 Um damit zu arbeiten, ist `mem_range` ganz nützlich:
 ```
 x ∈ range f ↔ ∃ a, f a = b
@@ -204,7 +205,7 @@ Du schreibst `∅` als `\\emptyset`.
 -/
 DefinitionDoc Set.empty as "∅"
 
-/-- `univ : Set T` ist die “Teil”menge, die aus *allen* Elementen vom Typ `T` besteht.
+/-- `univ : Set T` ist die „Teil“menge, die aus *allen* Elementen vom Typ `T` besteht.
 
 Mit `rw [eq_univ_iff_forall]` überführst du eine Gleichung der Form `S = univ` in die
 Aussage `∀ (x : T), x ∈ S`.
@@ -213,7 +214,7 @@ DefinitionDoc Set.univ as "univ"
 
 /-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
 `insert a A` eine andere Schreibweise für `A ∪ {a}`.
-Sollte `a` bereits in `A` liegt, ist offenbar `insert a A = A`.
+Sollte `a` bereits in `A` liegen, ist offenbar `insert a A = A`.
 -/
 DefinitionDoc Finset.insert as "insert"
 
@@ -276,7 +277,22 @@ example {TT : Type} (T : Set TT) : Set.Nonempty T ↔ ∃ t : TT, t ∈ T := by
   rfl
 -/
 
--- LOGIK
+/-- Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Elemente hat.
+Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,
+aber nun explizit als endliche Teilmenge aufgefasst.
+-/
+DefinitionDoc Set.Finite as "Set.Finite"
+
+
+/- LOGIK -/
+
+/-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
+nicht beweisbar ist.
+
+Siehe auch `(True : Prop)` und `(False : Prop)` für die uneingeschränkt wahre bzw.\ unwahre
+Aussage.
+-/
+DefinitionDoc «Prop» as "Prop"
 
 /--
 `A ∧ B` ("und") ist die Aussage, dass sowohl `A` als auch `B` wahr ist.
@@ -295,10 +311,22 @@ DefinitionDoc And as "∧"
 /--
 `A ∨ B` ("oder") ist die Aussage, dass mindestens eine der Aussagen `A`, `B` wahr ist.
 
+## `A ∨ B` als Beweisziel
 
+Die Taktik `left` bzw. `right` kannst du dich entscheiden,
+welche Aussage du beweisen möchtest.
+
+## `A ∨ B` als Annahme
+
+Da du nicht weißt, welche der Aussagen `A`, `B` du voraussetzen kannst,
+musst du das Beweisziel unter Umständen zweimal zeigen:
+einmal unter der Annahme `A`, einmal unter der Annahme `B`.
+Für dieses Vorgehen verwendest du die Taktik
+```
+obtain h | h := h
+```
 -/
 DefinitionDoc Or as "∨"
-
 
 /--
 Für `A B : Prop` ist `A → B` die Implikation „`A` impliziert `B`“.
@@ -311,10 +339,25 @@ und musst dann `B` beweisen.
 
 ## Implikation als Annahme
 
-Um eine Implikation unter der Annahmen zu verwenden benutzt du die Taktik `apply`.
+Um eine Implikation unter deinen Annahmen zu verwenden, benutzt du die Taktik `apply`.
 -/
 DefinitionDoc Arrow as "→"
 
+/-- `A ↔ B` bedeutet, dass die Aussagen `A` und `B` logisch äquivalent sind („genau dann, wenn“).
+
+## `↔`als Beweisziel
+
+Um `A ↔ B` zu zeigen, kannst du beispielsweise `constructor` aufrufen
+und dann separat `A → B` und `B → A` beweisen.
+
+## `↔` als Annahme
+
+Eine Annahme der Form `h : A ↔ B` kannst du mit `obtain ⟨h₁, h₂⟩ := h` in die beiden Bestandteile
+`h₁ : A → B` und `h₂ : B → A` zerlegen.
+Du kannst aber auch mit `h.mp` und `h.mpr` direkt auf diese Bestandteil Bezug nehmen.
+(Die Abkürzung `mp` steht für „modus ponens“.)
+-/
+DefinitionDoc Iff as "↔"
 
 /-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
 `∃ a : A, P a` die Aussage, dass ein Element `a` in `A` (genauer: vom Typ `A`)
@@ -375,61 +418,87 @@ DefinitionDoc ExistsUnique as "∃!"
 `∀ a : A, P a` die Aussage, dass die Aussage `P a` für alle `a` in `A`
 (genauer: für alle `a` vom Typ `A`) wahr sei.
 
-Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählt man mit `intro a` zunächst ein
+## `∀` als Beweisziel
+
+Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählst du mit `intro a` zunächst ein
 beliebiges Element `a`.
 
+## `∀` als Annahme
+
 Ist `h : ∀ a : A, P a` eine Annahme und `a₀ : A` ein konkretes Element, so ist `h a₀`
-eine Notation für `P a₀`.  Man kann auch mit `specialize h a₀` die gegebene Annahme
+eine Notation für `P a₀`.
+Du kannst auch mit `specialize h a₀` die gegebene Annahme
 über alle möglichen `a` zu einer Annahme `h : P a₀` über dieses konkrete `a₀` einschränken.
 -/
 DefinitionDoc Forall as "∀"
+
+
+/-- Die Aussage `True : Prop` ist immer wahr.
+
+## `True` als Beweisziel
+
+Die Taktiken `tauto` und `decide` schließen jeden Beweis mit `True` als Beweisziel.
+
+## `True` als Annahme
+
+Als Annahme ist `True` überhaupt nicht hilfreich.
+-/
+DefinitionDoc True as "True"
+
+/-- Die Aussage `False : Prop` ist immer falsch.
+
+## `False` als Beweisziel
+
+Ist `False` dein Beweisziel, kannst du zum Beispiel versuchen, in deinen Annahmen einen Widerspruch zu finden.
+Sobald der Widerspruch hinreichend evident ist, schließt `contradiction` einen solchen Beweis.
+
+Ist `False` dein Beweisziel und du hast eine Annahme oder ein Lemma der Form `h : ¬ A` zur Verfügung,
+so kannst du mit `apply h` das Beweisziel zu `A` ändern
+(denn `¬ A` bedeutet `A → False`).
+
+## `False`  als Annahme
+
+Liegt dir `False` als Annahme vor, kannst du den Beweis sofort mit `contradiction` beenden
+– denn aus einer falschen Aussage folgt bekanntlich jede andere.
+-/
+DefinitionDoc False as "False"
+
+/-- `¬ A` ist die logische Negation von `A`.
+Sie ist intern als `A → False` implementiert.
+
+Nützliche Taktiken sind: `push_neg`, `by_contra`, `contrapose`.
+Außerdem kannst du eine Annahme der Form `h : ¬ A` mit `apply` auf das Beweisziel `False` anwenden.
+-/
+DefinitionDoc Not as "¬"
 
 /--
 Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
 -/
 DefinitionDoc Eq as "="
 
-/-- `Even n` ist die Aussage dass `n : ℕ` gerade ist. -/
-DefinitionDoc Even as "Even"
-
-/--
-Die Aussage `False : Prop` ist nie wahr.
-
-Lean benützt diese intern für Widersprüche, ein Widerspruch ist ein Beweis `(hF : False)` von
-`False` und z.B. `¬ A` ist als `A → False` implementiert.
--/
-DefinitionDoc False as "False"
-
-/-- Genau-dann-wenn (if-and-only-if). Can meistens mit `constructor` oder `obtain ⟨fwd, bwd⟩ := h`
-in Einzelteile zerlegt werden.
-
-Bei einer Annahme `h : A ↔ B`, heissen die Einzelteile zudem `h.mp : A → B` und `h.mpr : B → A`.
--/
-DefinitionDoc Iff as "↔"
-
 /--
 Ungleichheit `x ≠ y` ist definiert als `¬ x = y`.  Du siehst das mit `unfold Ne`.
 -/
 DefinitionDoc Ne as "≠"
 
-/--
-`Nonempty U` ist eine Instanz, die aussagt, dass `U` mindestens ein Element
-enthält.
 
-Wenn `h : Nonempty U`, dann kriegt man mit `obtain ⟨d⟩ := h` eine solches Element `d : U`.
+/- NATÜRLICHE ZAHLEN -/
+
+/-- `Even n` ist die Aussage, dass `n : ℕ` gerade ist:
+```
+∃ r : ℕ, n = r + r
+```
+Das kannst du leicht mit `unfold Even` prüfen.
 -/
-DefinitionDoc Nonempty as "Nonempty"
+DefinitionDoc Even as "Even"
 
-/--
-`¬ A` ist intern als `A → False` implementiert.
-
-Nütliche Tactiken sind: `push_neg`, `by_contra`, `contrapose`.
+/-- `Odd n` ist die Aussage, dass `n : ℕ` ungerade ist:
+```
+∃ k : ℕ, n = 2 * k + 1
+```
+Das kannst du leicht mit `unfold Odd` prüfen.
 -/
-DefinitionDoc Not as "¬"
-
-/-- `Odd n` ist die Aussage dass `n : ℕ` ungerade ist. -/
 DefinitionDoc Odd as "Odd"
-
 
 /--
 Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.
@@ -444,37 +513,8 @@ Sie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*
 -/
 DefinitionDoc Nat.succ as "succ"
 
-/-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
-nicht beweisbar ist.
 
-Siehe auch `(True : Prop)` und `(False : Prop)` die uneingeschränkt wahre (rsp. falsche)
-Aussage.
--/
-DefinitionDoc «Prop» as "Prop"
-
-/-- Die Aussage `True : Prop` ist immer wahr. -/
-DefinitionDoc True as "True"
-
-/-- Die Aussage `False : Prop` ist immer falsch. -/
-DefinitionDoc False as "False"
-
-
-/-- Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe
-$\sum_{i\in I} f(i)$.  Du schreibst das Summenzeichen als `\sum`.
- -/
-DefinitionDoc Sum as "∑"
-
-/-- Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt
-$\prod_{i\in I} f(i)$.  Du schreibst das Produktzeichen als `\prod`.
- -/
-DefinitionDoc Prod as "∏"
-
-/-- Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Element hat.
-Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,
-aber nun explizit als endliche Teilmenge aufgefasst.
--/
-DefinitionDoc Set.Finite as "Set.Finite"
-
+/- MISCHMASCH -/
 
 /-- Für `x : ℝ` ist `|x|` der Betrag von `x`.
 (Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)
@@ -488,6 +528,17 @@ DefinitionDoc absValue as "|·|"
 -- This is literally true:
 -- example : ((abs : ℝ → ℝ) = fun x : ℝ ↦ |x|) := by
 --   rfl
+
+/-- Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe
+$\sum_{i\in I} f(i)$.  Du schreibst das Summenzeichen als `\sum`.
+ -/
+DefinitionDoc Sum as "∑"
+
+/-- Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt
+$\prod_{i\in I} f(i)$.  Du schreibst das Produktzeichen als `\prod`.
+ -/
+DefinitionDoc Prod as "∏"
+
 
 /-- `P : MvPolynomial (Fin n) R` bedeutet, dass `P` ein Polynomial in `n` Unbestimmten
 `X 0`, …, `X (n-1)` mit Koeffizienten in `R` ist. -/

@@ -66,21 +66,11 @@ Statement :
 
 Conclusion""
 
-/--
-Wenn `h : A` ein beweis der Aussage `A` ist, dann reduziert
-`rw [if_pos h]` reduziert eine Aussage `if A then B else C` zu `B`.
-
-Umgekehrt kann man `if_neg` verwenden wenn `h : ¬ A`.
--/
-TheoremDoc if_pos as "if_pos" in "Logic"
-
-/--
-Wenn `h : ¬ A` ein Beweis ist, dass Aussage `A` falsch ist, dann reduziert
-`rw [if_neg h]` eine Aussage `if A then B else C` zu `C`.
-
-Umgekehrt kann man `if_pos` verwenden wenn `h : A`.
--/
+/---/
 TheoremDoc if_neg as "if_neg" in "Logic"
+
+/---/
+TheoremDoc if_pos as "if_pos" in "Logic"
 
 NewTheorem if_pos if_neg
 TheoremTab "Logic"

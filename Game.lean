@@ -36,12 +36,16 @@ Introduction
 Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?
 Dann bist du hier genau richtig!
 In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.
+Du wirst unter anderem per Induktion Summenformeln beweisen,
+nachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,
+zeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,
+und die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.
 
 Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich
 fast genauso an wie in VSCode, der Standard-IDE für Lean.
-Auf einem Smartphone oder Tablet bleibst du besser im voreinsgestellten *Schreibmaschinen-Modus*,
+Auf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,
 und schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus
-(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastur).
+(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).
 
 Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.
 
@@ -56,13 +60,14 @@ Du kannst den Spielstand aber auch über das Menü herunterladen und manuell spe
 
 Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.
 Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
-  – dann kannst du jedes Level spielen, auch wenn du vorhergende Levels noch nicht gelöst hast.
+  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.
 
 ## Neuigkeiten
-`[2025-03-27]` Der jüngste Planet im Formaloversum heißt Euklid.
-Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn.
+`[2025-03-28]` Der jüngste Planet im Formaloversum heißt Euklid.
+Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn,
+und in der Dokumentation der Taktiken und Definitionen.
 Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
-Saturn endet jetzt mit einer polynomiellen Quaadratsummenformel.
+Saturn endet nun mit einer polynomiellen Quadratsummenformel.
 
 `[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
 
