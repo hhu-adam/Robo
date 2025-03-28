@@ -194,4 +194,26 @@ to show the domain type when the sum is over `Finset.univ`. -/
     let ss ← withNaryArg 3 <| delab
     `(∑ $(.mk i):ident ∈ $ss, $body)
 
+/-- Delaborator for `Finset.prod`. The `pp.piBinderTypes` option controls whether
+to show the domain type when the product is over `Finset.univ`. -/
+@[delab app.Finset.prod] def delabFinsetProd' : Delab :=
+  whenPPOption getPPNotation <| withOverApp 5 <| do
+  let #[_, _, _, s, f] := (← getExpr).getAppArgs | failure
+  guard <| f.isLambda
+  let ppDomain ← getPPOption getPPPiBinderTypes
+  let (i, body) ← withAppArg <| withBindingBodyUnusedName fun i => do
+    return (i, ← delab)
+  if s.isAppOfArity ``Finset.univ 2 then
+    let binder ←
+      if ppDomain then
+        let ty ← withNaryArg 0 delab
+        `(bigOpBinder| $(.mk i):ident : $ty)
+      else
+        `(bigOpBinder| $(.mk i):ident)
+    `(∏ $binder:bigOpBinder, $body)
+  else
+    let ss ← withNaryArg 3 <| delab
+    `(∏ $(.mk i):ident ∈ $ss, $body)
+
+
 -- end BigOperators
