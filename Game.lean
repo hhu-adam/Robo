@@ -35,7 +35,7 @@ Introduction
 
 Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?
 Dann bist du hier genau richtig!
-In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek Mathlib zu arbeiten.
+In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.
 
 Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich
 fast genauso an wie in VSCode, der Standard-IDE für Lean.
@@ -121,7 +121,7 @@ CoverImage "images/Cover.png"
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
 Dependency Quantus → Piazza -- because of `∀`
 Dependency Prado → Mono     -- beclause of `∃!`
-Dependency Mono → Iso       -- because of `Injective`
+--Dependency Mono → Iso       -- because of `Injective`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao

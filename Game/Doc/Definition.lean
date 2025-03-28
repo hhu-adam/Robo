@@ -3,6 +3,7 @@ import GameServer.Commands
 /-! ## Definitions -/
 
 
+/- ABBILDUNGEN -/
 
 /--
 Eine Abbildung `f` is injektiv, wenn gilt:
@@ -12,7 +13,6 @@ Eine Abbildung `f` is injektiv, wenn gilt:
 ```
 -/
 DefinitionDoc Function.Injective as "Injective"
-
 
 
 /--
@@ -25,12 +25,10 @@ Eine Abbildung `f` is surjektiv, wenn gilt:
 DefinitionDoc Function.Surjective as "Surjective"
 
 
-
 /--
 Eine Abbildung ist bijektiv, wenn sie injektiv und surjektiv ist.
 -/
 DefinitionDoc Function.Bijective as "Bijective"
-
 
 
 /--
@@ -40,24 +38,25 @@ Eine Abbildung `f` ist strikt monoton, wenn gilt:
 ∀ a b, a < b → f a < f b
 ```
 -/
-DefinitionDoc Function.StrictMono as "StrictMono"
+DefinitionDoc StrictMono as "StrictMono"
 
 
 /-- `Function.RightInverse f g` ist als `LeftInverse g f` definiert.
 Das bedeutet im Klartext natürlich `∀ x, g (f x) = x`.
 
-Man muss leider `Function.RightInverse`  statt `RightInverse` schreiben,
-da `RightInverse` allein in Leansch mehrdeutig ist.
+Du musst leider `Function.RightInverse`  statt `RightInverse` schreiben,
+da `RightInverse` Leansch mehrdeutig ist.
 -/
 DefinitionDoc Function.RightInverse as "RightInverse"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
--- some Mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
+-- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
 
 /--
-`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie man mit `unfold` leicht sieht.
+`LeftInverse g f` bedutet `g ∘ f = id`, oder genauer: `∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst.
 -/
 DefinitionDoc Function.LeftInverse as "LeftInverse"
+
 
 /--
 `HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.
@@ -67,26 +66,27 @@ DefinitionDoc Function.LeftInverse as "LeftInverse"
 DefinitionDoc Function.HasRightInverse as "Has…Inverse"
 
 
-
 /--
 Für eine Selbstabbildung `f : A → A` und ein Element `a : A` ist `IsFixedPt f a` die Aussage `f a = a`.
-Die Definition lässt sich mit `unfold IsFixedPt` leicht ausschreiben.
+Du kannst die Definition mit `unfold IsFixedPt` leicht ausschreiben.
 -/
 DefinitionDoc Function.IsFixedPt as "IsFixedPt"
 
 /--
 Für eine Abbildung `f : A → A` ist `fixedPoints f : Set A` die Menge der Fixpunkte von `f `.
-Die Definition lässt sich mit `unfold fixedPoints` leicht ausschreiben.
+Du kannst die Definition mit `unfold fixedPoints` leicht ausschreiben.
 -/
 DefinitionDoc Function.fixedPoints as "fixedPoints"
 
 /--
-Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` die Vereinigung der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\union`.
+Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` ihre die Vereinigung.
+Du schreibst `∪` als `\\union`.
 -/
 DefinitionDoc Set.union as "∪"
 
 /--
-Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` der Schnitt der Teilmengen `A` und `B` von `S`.  Du schreibst `∪` als `\\inter`.
+Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` ihr Schnitt.
+Du schreibst `∪` als `\\inter`.
 -/
 DefinitionDoc Set.inter as "∩"
 
@@ -106,15 +106,15 @@ DefinitionDoc Set.range as "range"
 
 /--
 Für eine Abbildung `f : A → B` ist `image f : Set A → Set B`
-einer der induzierten Abbildung auf den Potenzmengen –
-sie bildet eine Teilmenge von `A` ab auf das Bild dieser Teilmenge unter `f`.
+eine der induzierten Abbildung auf den Potenzmengen –
+sie bildet eine Teilmenge von `A` ab auf das Bild `f '' A` dieser Teilmenge unter `f`.
 -/
 DefinitionDoc Set.image as "image"
 
 /--
 Für eine Abbildung `f : A → B` ist `preimage f : Set B → Set A`
 eine der induzierten Abbildung auf den Potenzmengen –
-sie bildet eine Teilmenge von `B` ab auf das Urbild dieser Teilmenge unter `f`.
+sie bildet eine Teilmenge von `B` ab auf das Urbild `f ⁻¹' A` dieser Teilmenge unter `f`.
 -/
 DefinitionDoc Set.preimage as "preimage"
 
@@ -130,26 +130,23 @@ ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`.
 DefinitionDoc Set.fimage as "f ''"
 
 /--
-, und für eine Teilmenge `T` von `B` ist
+Für eine Abbildung `f : A → B` und eine Teilmenge `T` von `B` ist
 ```
 f ⁻¹' T = { a | f a ∈ T}
 ```
 ihr Urbild unter `f`.
-Du schreibst das als `f \\-1'`.
-Beachte das Leerzeichen zwischen `f` und `\\-1'`.
+Du schreibst das als `f \-1'`.
+Beachte das Leerzeichen zwischen `f` und `\-1'`.
 -/
 DefinitionDoc Set.fpreimage as "f ⁻¹'"
 
 /--
-Anonyme Funktionen kann man mit `fun (x : ℤ)  2 * x` definieren und
-wie andere Objekte verwenden.  Den Pfeil `↦` schreibt man als `\\maps` oder `\\mapsto`.
-Alternativ kann man statt `↦` auch `=>` verwenden.
+Die Notation `fun x ↦ _` wird verwendet, um „anonyme Funktionen“ zu definieren.
+Zum Beispiel definiert `fun (x : ℤ) ↦  -x` die Negation `ℤ → ℤ`, ohne ihr einen Namen zu geben.
+Den Pfeil `↦` schreibst du als `\maps` oder `\mapsto`.
+Alternativ kannst du statt `↦` auch `=>` verwenden.
 -/
 DefinitionDoc Symbol.function as "fun x ↦ _"
-
--- DefinitionDoc Set.preimage as "preimage"
--- "
--- "
 
 
 /- MENGEN -/
@@ -187,12 +184,12 @@ Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.
 
 Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀ x, x ∈ A → x ∈ B` umschreiben.
 
-Ist `A ⊆ B` das Beweisziel, kannst du auch auch direkt mit `intro a ha`
+Ist `A ⊆ B` das Beweisziel, kannst du auch direkt mit `intro a ha`
 ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).
 
 Ist `h : A ⊆ B` eine Annahme, erhältst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.
 
-Um `⊆` zu schreiben, tippst du `\subset`.
+Du schreibst `⊆` als `\subset`.
 -/
 DefinitionDoc Subset as "⊆"
 
@@ -207,7 +204,7 @@ Du schreibst `∅` als `\\emptyset`.
 -/
 DefinitionDoc Set.empty as "∅"
 
-/-- `univ : Set T` ist die “Teil”menge, die aus *allen* Elementen vom vom Typ `T` besteht.
+/-- `univ : Set T` ist die “Teil”menge, die aus *allen* Elementen vom Typ `T` besteht.
 
 Mit `rw [eq_univ_iff_forall]` überführst du eine Gleichung der Form `S = univ` in die
 Aussage `∀ (x : T), x ∈ S`.
@@ -216,12 +213,13 @@ DefinitionDoc Set.univ as "univ"
 
 /-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
 `insert a A` eine andere Schreibweise für `A ∪ {a}`.
-Es wird keine inhärente Annahme getroffen, ob `a` bereits in `A` liegt, oder nicht.
+Sollte `a` bereits in `A` liegt, ist offenbar `insert a A = A`.
 -/
 DefinitionDoc Finset.insert as "insert"
 
 /-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
 `erase A a` eine andere Schreibweise für `A \ {a}`.
+Falls `a` gar nicht in `A` liegt, ist offenbar `erase A a = A`.
 -/
 DefinitionDoc Finset.erase as "erase"
 
@@ -231,8 +229,9 @@ DefinitionDoc Finset.card as "card"
 
 /-- Für `n : ℕ` ist `Fin n` die Menge $\{0, \dots, n-1\}$.
 
-(`Fin n` ist zu unterscheiden von `Icc 0 (n-1)`:  `Fin n` ist eine Menge, oder genauer ein Typ, also `Fin n : Type`,
-während `Icc 0 (n-1) : Set ℕ` eine Teilmenge von `ℕ` ist.)
+(`Fin n` ist zu unterscheiden von `Icc 0 (n-1)`:
+`Fin n` ist eine Menge, oder genauer ein Typ, also `Fin n : Type`,
+während `Icc 0 (n-1) : Finset ℕ` eine endliche Teilmenge von `ℕ` ist.)
 -/
 DefinitionDoc Fin as "Fin"
 
@@ -246,7 +245,7 @@ Haben wir umgekehrt bereits ein Element `t : T` gegeben oder konstruiert,
 so können wir `Nonempty T` mit `use t` beweisen.
 
 Analog ist für eine Teilmenge `A : Set T` die Aussage `Nonemty A` definiert als als `∃ x, x ∈ A`.
-Das kann man in diesem Fall leicht mit `unfold Nonempty` überprüfen.
+Das kannst du in diesem Fall leicht mit `unfold Nonempty` überprüfen.
 -/
 DefinitionDoc Nonempty as "Nonempty"
 /-
@@ -280,44 +279,82 @@ example {TT : Type} (T : Set TT) : Set.Nonempty T ↔ ∃ t : TT, t ∈ T := by
 -- LOGIK
 
 /--
-`A ∧ B` ("und") ist die Aussage dass sowohl `A` als auch `B` wahr ist.
+`A ∧ B` ("und") ist die Aussage, dass sowohl `A` als auch `B` wahr ist.
+
+## `A ∧ B` als Beweisziel
+
+Die Taktik `constructor` erlaubt dir, die beiden Teilaussagen `A` und `B` einzeln zu beweisen.
+
+## `A ∧ B` als Annahme
+
+Mit `obtain ⟨h₁, h₂⟩ := h` zerlegst du eine Annahme der Form `h : A ∧ B`
+in ihre Bestandteile `h₁ : A` und `h₂ : B`.
 -/
 DefinitionDoc And as "∧"
 
 /--
-* Für `A B : Prop` ist `A → B` eine Implikation "`A` impliziert `B`"
-* Für andere `X Y : Type` ist `X → Y` eine Funktion, die Werte aus `X` nach `Y` abbildet,
-  z.B. `f : ℕ → ℤ := n ↦ -n`.
+`A ∨ B` ("oder") ist die Aussage, dass mindestens eine der Aussagen `A`, `B` wahr ist.
+
+
+-/
+DefinitionDoc Or as "∨"
+
+
+/--
+Für `A B : Prop` ist `A → B` die Implikation „`A` impliziert `B`“.
+Für andere `X Y : Type` ist `X → Y` eine Abbildung, die Werte aus `X` nach `Y` abbildet.
+
+## Implikation als Beweisziel
+
+Ist dein Beweisziel eine Implikation `A → B`, so kannst du mit `intro h` `h : A` annehmen,
+und musst dann `B` beweisen.
+
+## Implikation als Annahme
+
+Um eine Implikation unter der Annahmen zu verwenden benutzt du die Taktik `apply`.
 -/
 DefinitionDoc Arrow as "→"
 
 
 /-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
 `∃ a : A, P a` die Aussage, dass ein Element `a` in `A` (genauer: vom Typ `A`)
-existiert, für das die Aussage `P a` wahr sei.  Eine reine Existenzaussage lässt sich
-zum Beispiel als `∃ a : A, true` formulieren.
+existiert, für das die Aussage `P a` wahr ist.
+Eine reine Existenzaussage („es gibt ein Element vom Typ `A`)
+lässt sich zum Beispiel als `∃ a : A, true` oder als `Nonempty A` formulieren.
 
-Um eine Aussage der Form `∃ a : A, …` zu beweisen, konstruiert man ein geeignetes Element `a` und
-nutzt dann die `use`-Taktik (`use a`).
+## `∃` als Beweisziel
 
-Eine Annahme der Form `h : ∃ a : A, P a` lässt sich mit
-`choose a ha using h` oder `obtain ⟨a,ha⟩ := h` in die Bestandteile `a : A` und `ha : P a`
+Um eine Aussage der Form `∃ a : A, …` zu beweisen,
+konstruierst du ein geeignetes Element `a` und nutzt dann die `use`-Taktik (`use a`).
+
+## `∃` als Annahme
+
+Eine Annahme der Form `h : ∃ a : A, P a` kannst du mit
+`choose a ha using h` oder `obtain ⟨a, ha⟩ := h` in ihre Bestandteile `a : A` und `ha : P a`
 zerlegen.
 -/
 DefinitionDoc Exists as "∃"
 
 /-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
 `∃! a : A, P a` die Aussage, dass *genau ein* Element `a` in `A` (genauer: vom Typ `A`)
-existiert, für das die Aussage `P a` wahr sei.  Die Aussage hat also zwei Teile: ertens existiert
+existiert, für das die Aussage `P a` wahr ist.
+Die Aussage hat also zwei Teile: erstens existiert
 solch ein `a`, zweitens ist `a` eindeutig.
 
-Um eine Aussage der Form `∃! a : A, …` zu beweisen, konstruiert man ein geeignetes Element `a` und
+## `∃!` als Beweisziel
+
+Um eine Aussage der Form `∃! a : A, …` zu beweisen, konstruierst du zunächst ein geeignetes Element `a` und
 nutzt dann die `use`-Taktik (`use a`), in der Regel unmittelbar gefolgt von `simp`.
-Nach `use a ` and `simp` sollte das Beweisziel folgende Form haben:
+Danach sollte das Beweisziel folgende Form haben:
 
-`P(a) ∧ ∀ a' : A, P(a') → a' = a`
+`P a ∧ ∀ a' : A, P a' → a' = a`
 
-Eine Annahme der Form `h : ∃! a : A, P a` lässt sich mit
+Links steht `P a`: du musst noch zeigen, dass `a` die geforderte Eigenschaft hat.
+Rechts steht die Eindeutigkeitsaussage: jedes Element mit dieser Eigenschaft ist gleich `a`.
+
+## `∃!` als Annahme
+
+Eine Annahme der Form `h : ∃! a : A, P a` kannst du mit
 
 ```
   obtain ⟨a, h_exists, h_unique⟩ := h
@@ -393,10 +430,6 @@ DefinitionDoc Not as "¬"
 /-- `Odd n` ist die Aussage dass `n : ℕ` ungerade ist. -/
 DefinitionDoc Odd as "Odd"
 
-/--
-`A ∨ B` ("oder") ist die Aussage mindestens eine der Aussagen `A`, `B` wahr ist.
--/
-DefinitionDoc Or as "∨"
 
 /--
 Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.
@@ -455,11 +488,6 @@ DefinitionDoc absValue as "|·|"
 -- This is literally true:
 -- example : ((abs : ℝ → ℝ) = fun x : ℝ ↦ |x|) := by
 --   rfl
-
-/-- Für eine Funktion `f : ℝ → ℝ` bedeutet `StrictMono f`, dass `f` streng monoton ist,
-dass also aus `a < b` auch `f a < f b` folgt.
--/
-DefinitionDoc StrictMono as "StrictMono"
 
 /-- `P : MvPolynomial (Fin n) R` bedeutet, dass `P` ein Polynomial in `n` Unbestimmten
 `X 0`, …, `X (n-1)` mit Koeffizienten in `R` ist. -/

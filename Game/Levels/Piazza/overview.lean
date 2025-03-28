@@ -84,13 +84,13 @@ end Finset
 -/
 
 /- Piazza 08: `subset_iff` -/
-/- following theorem exists in Mathlib and is used in Luna -/
+/- following theorem exists in mathlib and is used in Luna -/
 theorem Robo.Finset.subset_iff {A : Type} {s₁ s₂ : Finset A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl
 
 /- The `Set`-version of the theorem is currently included via
    Game/Metadata/MathlibPreview.lean
-   Jon has a Mathlib PR with this theorem.
+   Jon has a mathlib PR with this theorem.
 -/
 theorem Robo.Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl

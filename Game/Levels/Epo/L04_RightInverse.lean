@@ -13,7 +13,7 @@ Introduction
 
 open Function
 
--- in Mathlib: `Function.rightInverse_iff_comp`
+-- in mathlib: `Function.rightInverse_iff_comp`
 Statement {A B : Type} {f : A -> B} {g : B -> A} :
     RightInverse g f ↔ f ∘ g = id := by
   Hint "

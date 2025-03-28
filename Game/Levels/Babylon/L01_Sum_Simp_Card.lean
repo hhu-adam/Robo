@@ -11,7 +11,7 @@ Introduction
 warum er steht. Hier zum Beispiel.
 "
 
-open Nat Finset
+open Nat Finset BigOperators
 Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
   Hint "
     **Du**: Oh das ist ganz schön viel neues … mal sehen …

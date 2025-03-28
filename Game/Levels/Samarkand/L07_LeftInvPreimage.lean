@@ -12,7 +12,7 @@ Introduction "
 
 open Function Set
 
--- This is Set.image_subset_preimage_of_inverse in Mathlib
+-- This is Set.image_subset_preimage_of_inverse in mathlib
 Statement  {A B : Type} {f : A → B} {g : B → A}
     (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by

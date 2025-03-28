@@ -51,7 +51,7 @@ TheoremDoc Nat.even_iff_not_odd as "even_iff_not_odd" in "ℕ"
 
 /-- Eine Zahl ist ungerade wenn sie nicht gerade ist. -/
 TheoremDoc Nat.odd_iff_not_even as "odd_iff_not_even" in "ℕ"
--- It seems this has been renamed into `Nat.not_even_iff_odd` in newer versions of Mathlib,
+-- It seems this has been renamed into `Nat.not_even_iff_odd` in newer versions of mathlib,
 -- and is now a simp lemma.
 
 NewTheorem Nat.even_iff_not_odd Nat.odd_iff_not_even

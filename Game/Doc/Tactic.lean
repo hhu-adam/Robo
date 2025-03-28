@@ -454,7 +454,7 @@ TacticDoc rw
 
 /--
 Die Taktik `simp` versucht eine große Zahl an Lemmas anzuwenden, um einen gegebenen Ausdruck zu vereinfachen.
-(Technisch handelt es sich um alle Lemmas in `Mathlib`, die durch `@[simp]` gekennzeichnet sind.)
+(Technisch handelt es sich um alle Lemmas in `mathlib`, die durch `@[simp]` gekennzeichnet sind.)
 
 ## Varianten
 

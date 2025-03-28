@@ -16,7 +16,7 @@ alias _root_.Nat.prime_def := Nat.prime_def_lt''
 --/
 
 
-/- The following lemmas are already included in newer versions of Mathlib, in general forms that apply to both ℕ and ℤ:
+/- The following lemmas are already included in newer versions of mathlib, in general forms that apply to both ℕ and ℤ:
 
    `Finset.insert_Icc_eq_Icc_add_one_right` -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_eq_Icc_add_one_right
    `Finset.insert_Icc_eq_Icc_sub_one_left`  -- https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Order/Interval/Finset/SuccPred.html#Finset.insert_Icc_eq_Icc_sub_one_left

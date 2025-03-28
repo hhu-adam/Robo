@@ -27,7 +27,7 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
   "
   obtain ⟨a, ha⟩ := hb
   use a
-  simp -- TODO: can this be integrated into Mathlib `use`?
+  simp -- TODO: can this be integrated into mathlib `use`?
   constructor
   · assumption
   · intro a' ha'

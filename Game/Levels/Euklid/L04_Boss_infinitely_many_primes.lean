@@ -26,6 +26,7 @@ eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?
 
 open Finset
 namespace Nat
+open BigOperators
 
 Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   Hint "**Robo**: Klar, das machen wir.

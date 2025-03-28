@@ -4,7 +4,7 @@ A game for learning Lean 4 in which a cute little smart-elf named Robo joins you
 
 The game is currently available only in German.  It can be played at the [Lean Game Server](https://adam.math.hhu.de/).
 
-## Overview over existing content
+## Game content
 
 | Planet     | key mathematical content           | Lean tactics introduced               | Boss level                                                         |
 |:---------- |:---------------------------------- | ------------------------------------- | ------------------------------------------------------------------ |
@@ -61,7 +61,7 @@ lake build
 
 *Note: `lake update` will call the two commands `lake exe cache get` (retrieve the latest mathlib cache) and `lake build gameserver` (build the gameserver executable); so if you're not calling `lake update`, you should call these two commands manually.*
 
-## Updating Lean/Mathlib
+## Updating Lean/mathlib
 
 In order to update the Lean version used by the game, you should follow these steps:
 

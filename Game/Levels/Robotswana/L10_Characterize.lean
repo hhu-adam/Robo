@@ -89,7 +89,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
 Nicht genau definiert als, aber per Definition äquivalent zu:
 `trace A = ∑ i, A i i`.
 
-Mathlib benutzt den Term `diag A i` auf den wir hier nicht genauer eingehen.
+mathlib benutzt den Term `diag A i` auf den wir hier nicht genauer eingehen.
 
 -/
 DefinitionDoc Matrix.trace as "trace"

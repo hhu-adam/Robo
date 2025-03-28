@@ -8,10 +8,11 @@ Introduction "An der markierten Stelle steht folgendes:"
 
 open Finset
 namespace Nat
+open BigOperators
 
 Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := by
   Hint "**Du**:  Die Zeile ist tatsächlich lesbar.
-  `∏ a ∈ A, a` ist sicher Leansh für das Produkt über alle Zahlen aus `A`, oder?
+  `∏ a ∈ A, a` ist sicher Leansch für das Produkt über alle Zahlen aus `A`, oder?
 
   **Robo**:  Ja!  Und die nächste Zeile ergibt auch Sinn: `apply prod_pos`."
   apply prod_pos

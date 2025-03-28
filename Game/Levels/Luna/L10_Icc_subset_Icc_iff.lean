@@ -18,7 +18,7 @@ Ritha macht große Augen und sieht Lina flehend an.
 
 /---/
 TheoremDoc Finset.Icc_subset_Icc_iff as "Icc_subset_Icc_iff" in "≤"
--- Note that Mathlib's theorem is more general; here we restrict to ℕ
+-- Note that mathlib's theorem is more general; here we restrict to ℕ
 
 namespace Finset
 Statement Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) :
