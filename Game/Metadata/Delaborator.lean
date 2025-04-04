@@ -1,5 +1,7 @@
-import Mathlib
+import Game.Metadata.FromMathlib
 import Game.Metadata.ExtendedBinder
+-- import Mathlib
+
 -- import Mathlib.Algebra.Group.Equiv.Opposite
 -- import Mathlib.Algebra.Group.TypeTags.Basic
 -- import Mathlib.Algebra.BigOperators.Group.Multiset.Defs

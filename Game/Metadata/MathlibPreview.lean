@@ -1,5 +1,4 @@
 import Game.Metadata.FromMathlib
-
 -- mathlib PR: ………
 theorem Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl

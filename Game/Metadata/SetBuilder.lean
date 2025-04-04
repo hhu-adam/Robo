@@ -3,7 +3,7 @@ Copyright (c) 2015 Microsoft Corporation. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Leonardo de Moura, Jeremy Avigad, Minchao Wu, Mario Carneiro
 -/
-import Mathlib
+import Game.Metadata.FromMathlib
 import Game.Metadata.ExtendedBinder
 
 open Lean PrettyPrinter.Delaborator SubExpr in
