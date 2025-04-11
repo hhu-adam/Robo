@@ -12,7 +12,7 @@ Introduction
 
 Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
   Hint "
-    **Operationsleiter**: Die Arbeiten meinen, das wäre so richtig und wir würden das dringend
+    **Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend
     brauchen. Aber keiner kann es mir beweisen.
 
     **Du**: Einen Moment. Das ist ja gerade so eine Implikation (`\\to`). Wir nehmen an,

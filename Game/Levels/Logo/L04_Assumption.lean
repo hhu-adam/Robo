@@ -13,7 +13,7 @@ Ein dritter Untertan kommt mit folgendem Problem.
 Statement (A : Prop) (hA : A) : A := by
   Hint "
     **Robo**: Hier bedeutet `{A} : Prop` wieder, dass `{A}` irgendeine Aussage ist.
-      Und `{hA}` ist eine Name für die Annahme, dass `{A}` wahr ist.
+      Und `{hA}` ist ein Name für die Annahme, dass `{A}` wahr ist.
 
     **Du**: Und unter dieser Annahme sollen wir jetzt `{A}` beweisen?
 

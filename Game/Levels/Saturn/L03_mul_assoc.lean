@@ -10,7 +10,7 @@ Introduction "Noch ein Funkspruch."
 namespace MvPolynomial
 
 Statement (a b c : MvPolynomial (Fin 4) ℕ ) : a * b * c = a * (b * c) := by
-  Hint "**Robo** Hier könntest du mul_assoc verwenden.  Oder *wieder* `ring` …"
+  Hint "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
   ring
 
 Conclusion "
@@ -30,4 +30,3 @@ NewTactic ring
 TheoremDoc mul_assoc as "mul_assoc" in "+ *"
 
 NewTheorem mul_assoc
-DisabledTheorem mul_assoc

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Apr  4 12:51:47 2025\n"
+"POT-Creation-Date: Fri Apr 11 12:11:26 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1022,7 +1022,7 @@ msgstr ""
 
 #: Game.Levels.Logo.L04_Assumption
 msgid "**Robo**: Hier bedeutet `«{A}» : Prop` wieder, dass `«{A}»` irgendeine Aussage ist.\n"
-"Und `«{hA}»` ist eine Name für die Annahme, dass `«{A}»` wahr ist.\n"
+"Und `«{hA}»` ist ein Name für die Annahme, dass `«{A}»` wahr ist.\n"
 "\n"
 "**Du**: Und unter dieser Annahme sollen wir jetzt `«{A}»` beweisen?\n"
 "\n"
@@ -1254,7 +1254,7 @@ msgstr ""
 
 #: Game.Levels.Logo.L11_And
 msgid "**Robo**: Du hättest das übrigens auch direkt verschachtelt schreiben können:\n"
-"`obtain ⟨h₁, h₂ , h₃⟩ := {h}`."
+"`obtain ⟨h₁, h₂ , h₃⟩ := h`."
 msgstr ""
 
 #: Game.Levels.Logo.L12_Or
@@ -1462,7 +1462,7 @@ msgid "**Operationsleiter**: Hier, zum Beispiel:"
 msgstr ""
 
 #: Game.Levels.Implis.L01_Intro
-msgid "**Operationsleiter**: Die Arbeiten meinen, das wäre so richtig und wir würden das dringend\n"
+msgid "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend\n"
 "brauchen. Aber keiner kann es mir beweisen.\n"
 "\n"
 "**Du**: Einen Moment. Das ist ja gerade so eine Implikation (`\\to`). Wir nehmen an,\n"
@@ -2603,7 +2603,7 @@ msgid "Noch ein Funkspruch."
 msgstr ""
 
 #: Game.Levels.Saturn.L03_mul_assoc
-msgid "**Robo** Hier könntest du mul_assoc verwenden.  Oder *wieder* `ring` …"
+msgid "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
 msgstr ""
 
 #: Game.Levels.Saturn.L03_mul_assoc

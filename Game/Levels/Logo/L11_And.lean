@@ -31,7 +31,7 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
 Conclusion
 "
 **Robo**: Du hättest das übrigens auch direkt verschachtelt schreiben können:
-`obtain ⟨h₁, h₂ , h₃⟩ := {h}`.
+`obtain ⟨h₁, h₂ , h₃⟩ := h`.
 "
 
 NewTactic obtain
