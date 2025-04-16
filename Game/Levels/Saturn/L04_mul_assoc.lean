@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Saturn"
-Level 3
+Level 4
 
 Title ""
 
@@ -22,6 +22,12 @@ Conclusion "
   **Robo**: Mag sein.  Aber `ring` funktioniert sogar für sogenannte Halbringe.
 
   **Du**: So so …
+
+  Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game,
+  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.
+
+  „Bereit” funkt Robo zurück.
+
 "
 
 NewTactic ring

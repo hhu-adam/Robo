@@ -1,11 +1,11 @@
 import Game.Metadata
 
 World "Saturn"
-Level 4
+Level 1
 
 Title ""
 
-Introduction "Der nächste Funkspruch sieht ein bisschen anders aus."
+Introduction "Plötzlich erreicht euch ein Funkspruch."
 
 Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
   Hint "**Du**: Ich habe das Gefühl, das habe ich schon einmal gesehen.
@@ -27,25 +27,5 @@ Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c :
   assumption
 
 Conclusion "
-  Wieder kommt ein 👍 zurück.
-
-  Dann möchte der anonyme Funker wissen, ob ihr bereit seid für das End Game,
-  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.
-
-  “Bereit” funkt Robo zurück.
+  Es kommt ein 👍 zurück.
   "
--- The following theorems are only added for symmetry/completeness:
-
-/---/
-TheoremDoc add_comm as "add_comm" in "+ *"
-
-/---/
-TheoremDoc add_assoc as "add_assoc" in "+ *"
-
-/---/
-TheoremDoc mul_add as "mul_add" in "+ *"
-
-/---/
-TheoremDoc add_mul as "add_mul" in "+ *"
-
-NewTheorem add_comm add_assoc mul_add add_mul
