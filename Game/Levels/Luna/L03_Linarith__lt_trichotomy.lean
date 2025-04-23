@@ -25,7 +25,7 @@ TheoremDoc lt_trichotomy as "lt_trichotomy" in "≤"
 
 Statement lt_trichotomy: ∀ a b : ℝ, a < b ∨ a = b ∨ b < a := by
   intro a b
-  Hint "
+  Hint (strict := true)"
     **Du**:  Fallunterscheidung ??
 
     **Robo**:  Ja, könntest du versuchen. Zum Beispiel erst `by_cases h_leq : a ≤ b` und dann `by_cases h_lt : a < b`.

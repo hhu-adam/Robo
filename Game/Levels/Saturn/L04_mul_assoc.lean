@@ -35,4 +35,18 @@ NewTactic ring
 /---/
 TheoremDoc mul_assoc as "mul_assoc" in "+ *"
 
-NewTheorem mul_assoc
+-- The following theorems are only added for symmetry/completeness:
+
+/---/
+TheoremDoc add_comm as "add_comm" in "+ *"
+
+/---/
+TheoremDoc add_assoc as "add_assoc" in "+ *"
+
+/---/
+TheoremDoc mul_add as "mul_add" in "+ *"
+
+/---/
+TheoremDoc add_mul as "add_mul" in "+ *"
+
+NewTheorem mul_assoc add_comm add_assoc mul_add add_mul
