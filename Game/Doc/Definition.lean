@@ -188,7 +188,8 @@ Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀ x, x ∈ A → x ∈ B` umschr
 Ist `A ⊆ B` das Beweisziel, kannst du auch direkt mit `intro a ha`
 ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).
 
-Ist `h : A ⊆ B` eine Annahme, erhältst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.
+Ist `h : A ⊆ B` eine Annahme, und ist ein Element `a` mit `ha : a ∈ A` gegeben,
+erhältst du mit `have hb := h ha` die Aussage `hb : a ∈ B`.
 
 Du schreibst `⊆` als `\subset`.
 -/
