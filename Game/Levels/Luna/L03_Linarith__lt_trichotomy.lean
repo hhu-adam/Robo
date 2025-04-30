@@ -28,7 +28,7 @@ Statement lt_trichotomy: ∀ a b : ℝ, a < b ∨ a = b ∨ b < a := by
   Hint (strict := true)"
     **Du**:  Fallunterscheidung ??
 
-    **Robo**:  Ja, könntest du versuchen. Zum Beispiel erst `by_cases h_leq : a ≤ b` und dann `by_cases h_lt : a < b`.
+    **Robo**:  Ja, könntest du versuchen. Zum Beispiel erst `by_cases h_leq : {a} ≤ {b}` und dann `by_cases h_lt : {a} < {b}`.
   "
   by_cases h_leq : a ≤ b
   · by_cases h_lt : a < b

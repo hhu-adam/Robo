@@ -13,7 +13,7 @@ Introduction
 **Robo**: Dass `2` die einzige gerade Primzahl ist?
 Er wird es nicht glauben wollen, solange wir ihm keinen Beweis präsentieren.
 
-**Du**:  Und meinst du nicht, wie können das zeigen?  Du kennst doch die Sprache.
+**Du**:  Und meinst du nicht, wir können das zeigen?  Du kennst doch die Sprache.
 Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 
 **Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich
@@ -47,6 +47,8 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   use x + y
   Hint (hidden := true) "**Robo**: Mit ein bisschen umschreiben kann man sicher `ring` verwenden."
   rw [h, g]
+  Branch
+    linarith  -- works here, but omega does not!
   ring
 
 /--

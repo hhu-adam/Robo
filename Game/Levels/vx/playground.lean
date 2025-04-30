@@ -9,10 +9,6 @@ variable (B : Type) [Finite B]
 #check Set.ncard (Set.univ : Set B)
 
 
-lemma fin_bij {A B : Type} [Fintype A] [Fintype B] (h : Fintype.card A = Fintype.card B) (f : A → B) :
-  Injective f → Surjective f := by
-  sorry
-
 noncomputable example {A : Type} [Fintype A] (S : Set A) : Fintype S := by
   exact Fintype.ofFinite ↑S
 
@@ -23,11 +19,34 @@ noncomputable example {A : Type} [Finite A] (S : Set A) : Finite S := by
 #check Finset.range
 
 open Set
-lemma eq_if_same_card {A : Type} [Finite A] (S : Set A) :
+lemma subset_eq_if_ncard_eq {M : Type} {A B : Set M} [hA : Finite A] [hB : Finite B] (h : A ⊆ B):
+  A = B ↔ ncard A = ncard B := by
+  constructor
+  · intro h_eq
+    rw [h_eq]
+  · intro h_ncard
+    have hu : ncard B ≤ ncard A := by linarith
+    rw [← Set.subset_iff_eq_of_ncard_le hu hB]
+    assumption
+
+/-lemma subset_eq_if_ncard_eq {A : Type} [Finite A] (S : Set A) :
   S = univ ↔ ncard S = ncard (univ : Set A) := by
-  sorry
+  constructor
+  · intro h
+    rw [h]
+  · intro h
+    have hu : ncard (univ : Set A) ≤ ncard S := by linarith
+    rw [← Set.subset_iff_eq_of_ncard_le hu Subtype.finite]
+    tauto
+    -/
 
 lemma fin_surj_range {A B : Type} [Finite A] [Finite B] (f : A → B) :
   Surjective f ↔ ncard (range f) = ncard (univ : Set B) := by
-  rw [← eq_if_same_card]
+  have : range f ⊆ (univ : Set B) := by tauto
+  rw [← subset_eq_if_ncard_eq this]
   exact Iff.symm Set.range_iff_surjective
+
+/-lemma fin_bij {A B : Type} [Fintype A] [Fintype B] (h : Fintype.card A = Fintype.card B) (f : A → B) :
+  Injective f → Surjective f := by
+  sorry
+-/

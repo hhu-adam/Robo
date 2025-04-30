@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Apr 11 12:11:26 2025\n"
+"POT-Creation-Date: Wed Apr 30 12:09:18 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -175,7 +175,8 @@ msgid "Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.\n"
 "Ist `A ⊆ B` das Beweisziel, kannst du auch direkt mit `intro a ha`\n"
 "ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).\n"
 "\n"
-"Ist `h : A ⊆ B` eine Annahme, erhältst du mit `obtain ⟨a, ha⟩ := h` ein Element `a` mit `ha : a ∈ A`.\n"
+"Ist `h : A ⊆ B` eine Annahme, und ist ein Element `a` mit `ha : a ∈ A` gegeben,\n"
+"erhältst du mit `have hb := h ha` die Aussage `hb : a ∈ B`.\n"
 "\n"
 "Du schreibst `⊆` als `\\subset`."
 msgstr ""
@@ -694,7 +695,8 @@ msgstr ""
 #: Game.Doc.Tactic
 msgid "Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
 "Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.\n"
-"Die (Un)Gleichungen müssen aber gut lesbar gegeben sein. Eine Annahme der Form\n"
+"Die (Un)Gleichungen müssen aber einzeln gegeben sein, nicht logisch verknüfpt.\n"
+"Eine Annahme der Form\n"
 "```\n"
 "h : m ≤ x → n < x\n"
 "```\n"
@@ -712,7 +714,7 @@ msgstr ""
 #: Game.Doc.Tactic
 msgid "Die Taktik `omega` kann zeigen, dass eine lineare Gleichung oder Ungleichung in `ℕ` oder `ℤ`\n"
 "aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
-"Sie ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelangt."
+"Sie kommt, anders als `linarith`, auch mit logischen Verknüpfungen von (Un)Gleichungen zurecht."
 msgstr ""
 
 #: Game.Doc.Tactic
@@ -2532,46 +2534,78 @@ msgid "Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosophe
 "Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht."
 msgstr ""
 
-#: Game.Levels.Saturn.L01_Ring_add_pow_two
+#: Game.Levels.Saturn.L01_Rewrite_equality
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L01_Ring_add_pow_two
+#: Game.Levels.Saturn.L01_Rewrite_equality
 msgid "Plötzlich erreicht euch ein Funkspruch."
 msgstr ""
 
-#: Game.Levels.Saturn.L01_Ring_add_pow_two
+#: Game.Levels.Saturn.L01_Rewrite_equality
+msgid "**Du**: Ich habe das Gefühl, das habe ich schon einmal gesehen.\n"
+"\n"
+"**Robo**:  Ja!  Das sieht so ähnlich aus wie eine Aufgabe, die wir auf *Implis*\n"
+"schon gelöst hatten.\n"
+"Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!\n"
+"Aber das macht im Grunde gar keinen Unterschied.\n"
+"Du kannst `=` und `↔` mit `rw` praktisch gleich behandeln."
+msgstr ""
+
+#: Game.Levels.Saturn.L01_Rewrite_equality
+msgid "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?\n"
+"\n"
+"**Robo**: Probiers doch einfach."
+msgstr ""
+
+#: Game.Levels.Saturn.L01_Rewrite_equality
+msgid "**Du**: Wie war das nochmals mit rückwärts umschreiben?\n"
+"\n"
+"**Robo**: `←` ist `\\l`. Und dann `rw [← hₓ]`"
+msgstr ""
+
+#: Game.Levels.Saturn.L01_Rewrite_equality
+msgid "Es kommt ein 👍 zurück."
+msgstr ""
+
+#: Game.Levels.Saturn.L02_Ring_add_pow_two
+msgid ""
+msgstr ""
+
+#: Game.Levels.Saturn.L02_Ring_add_pow_two
+msgid "Der nächste Funkspruch sieht ein bisschen anders aus."
+msgstr ""
+
+#: Game.Levels.Saturn.L02_Ring_add_pow_two
 msgid "**Du**: Sind wir hier bei den anonymen Schulmathematikern?\n"
 "Man rechnet das doch einfach aus, indem man die Terme umsortiert.\n"
-"Was sollen wir da zurückfunken?\n"
+"Was sollen wir da `binomi` zurückfunken?\n"
 "\n"
-"**Robo**: Am einfachsten kannst du so eine Gleichung auf Leansch mit `ring` beweisen."
+"**Robo**: Nein, die Gleichung heißt in diesem Universum natürlich `add_pow_two`,\n"
+"weil in der Formel zuerst ein “+” und dann ein “^2” steht.\n"
+"Du könntest also `rw [add_pow_two]` benutzen.\n"
+"Danach sieht die linke Seite exakt wie die rechte aus, und du bist fertig."
 msgstr ""
 
-#: Game.Levels.Saturn.L01_Ring_add_pow_two
+#: Game.Levels.Saturn.L02_Ring_add_pow_two
 msgid "Es kommt ein 👍 zurück.\n"
 "\n"
-"  **Robo**:  Übrigens heißt dieses Resultat auf Leansch …\n"
-"\n"
-"  **Du**: Warte, lass mich raten –  `binomi`?\n"
-"\n"
-"  **Robo**:  Nein.  Das heißt `add_pow_two`.\n"
-"  Weil in der Formel zuerst ein “+” und dann ein “^2” steht."
+"  **Robo**: Du hättest allerdings auch einfach `ring` sagen können."
 msgstr ""
 
-#: Game.Levels.Saturn.L01_Ring_add_pow_two
+#: Game.Levels.Saturn.L02_Ring_add_pow_two
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L02_mul_comm
+#: Game.Levels.Saturn.L03_mul_comm
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L02_mul_comm
+#: Game.Levels.Saturn.L03_mul_comm
 msgid "Noch ein Funkspruch."
 msgstr ""
 
-#: Game.Levels.Saturn.L02_mul_comm
+#: Game.Levels.Saturn.L03_mul_comm
 msgid "**Du**:  Nanu, was ist denn `P` hier für ein Tier?\n"
 "\n"
 "**Robo**: `P` ist ein “multivariantes Polynom”, wobei die Variablen mit `Fin 2`\n"
@@ -2586,27 +2620,27 @@ msgid "**Du**:  Nanu, was ist denn `P` hier für ein Tier?\n"
 "**Robo**: So ist es."
 msgstr ""
 
-#: Game.Levels.Saturn.L02_mul_comm
+#: Game.Levels.Saturn.L03_mul_comm
 msgid "Wieder ein 👍."
 msgstr ""
 
-#: Game.Levels.Saturn.L02_mul_comm
+#: Game.Levels.Saturn.L03_mul_comm
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L03_mul_assoc
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L03_mul_assoc
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid "Noch ein Funkspruch."
 msgstr ""
 
-#: Game.Levels.Saturn.L03_mul_assoc
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
 msgstr ""
 
-#: Game.Levels.Saturn.L03_mul_assoc
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid "Wieder ein 👍.\n"
 "\n"
 "  **Du**: Aber warte mal, diesmal waren die Koeffizienten doch in `ℕ`!\n"
@@ -2614,65 +2648,31 @@ msgid "Wieder ein 👍.\n"
 "\n"
 "  **Robo**: Mag sein.  Aber `ring` funktioniert sogar für sogenannte Halbringe.\n"
 "\n"
-"  **Du**: So so …"
-msgstr ""
-
-#: Game.Levels.Saturn.L03_mul_assoc
-msgid ""
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid ""
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid "Der nächste Funkspruch sieht ein bisschen anders aus."
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid "**Du**: Ich habe das Gefühl, das habe ich schon einmal gesehen.\n"
+"  **Du**: So so …\n"
 "\n"
-"**Robo**:  Ja!  Das sieht so ähnlich aus wie eine Aufgabe, die wir auf *Implis*\n"
-"schon gelöst hatten.\n"
-"Nur, das hier jetzt Gleichheiten von Zahlen statt Genau-Dann-Wenn-Aussagen stehen!\n"
-"Aber das macht im Grunde gar keinen Unterschied.\n"
-"Du kannst `=` und `↔` mit `rw` praktisch gleich behandeln."
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid "**Du**: Also auch `rw [hₓ]` und `rw [← hₓ]`?\n"
-"\n"
-"**Robo**: Probiers doch einfach."
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid "**Du**: Wie war das nochmals mit rückwärts umschreiben?\n"
-"\n"
-"**Robo**: `←` ist `\\l`. Und dann `rw [← hₓ]`"
-msgstr ""
-
-#: Game.Levels.Saturn.L04_Rewrite_equality
-msgid "Wieder kommt ein 👍 zurück.\n"
-"\n"
-"  Dann möchte der anonyme Funker wissen, ob ihr bereit seid für das End Game,\n"
+"  Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game,\n"
 "  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
 "\n"
-"  “Bereit” funkt Robo zurück."
+"  „Bereit” funkt Robo zurück."
 msgstr ""
 
-#: Game.Levels.Saturn.L04_Rewrite_equality
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L04_Rewrite_equality
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L04_Rewrite_equality
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid ""
 msgstr ""
 
-#: Game.Levels.Saturn.L04_Rewrite_equality
+#: Game.Levels.Saturn.L04_mul_assoc
+msgid ""
+msgstr ""
+
+#: Game.Levels.Saturn.L04_mul_assoc
 msgid ""
 msgstr ""
 
@@ -2845,8 +2845,8 @@ msgid "**Du**: Ja, das habe ich tatsächlich schon einmal gesehen.\n"
 "\n"
 "**Robo**: Ja, klar hast du das schon einmal gesehen. Das benutzen Mathematiker doch ständig.\n"
 "Wenn ihnen zu $A ⇒ B$ nichts einfällt, zeigen sie stattdessen $¬B ⇒ ¬A$. Ich würde das ja\n"
-"statt *Kontraposition* oder `not_imp_not` eher *von_hinten_durch_die_Brust_ins_Auge* nennen.\n"
-"Aber gut, ich will mich nicht einmischen."
+"statt *Kontraposition* eher *von_hinten_durch_die_Brust_ins_Auge* nennen.\n"
+"Aber hier heißt es natürlich `not_imp_not`."
 msgstr ""
 
 #: Game.Levels.Spinoza.L04_ByContra
@@ -3037,7 +3037,7 @@ msgstr ""
 #: Game.Levels.Luna.L03_Linarith__lt_trichotomy
 msgid "**Du**:  Fallunterscheidung ??\n"
 "\n"
-"**Robo**:  Ja, könntest du versuchen. Zum Beispiel erst `by_cases h_leq : a ≤ b` und dann `by_cases h_lt : a < b`."
+"**Robo**:  Ja, könntest du versuchen. Zum Beispiel erst `by_cases h_leq : «{a}» ≤ «{b}»` und dann `by_cases h_lt : «{a}» < «{b}»`."
 msgstr ""
 
 #: Game.Levels.Luna.L03_Linarith__lt_trichotomy
@@ -3083,7 +3083,7 @@ msgstr ""
 
 #: Game.Levels.Luna.L05_Linarith2
 msgid "**Robo**:  Und jetzt machst du die Annahme `«{hx}»` ein bisschen lesbarer.\n"
-"Probier vielleicht einmal `push_neg «{hx}»`?"
+"Probier vielleicht einmal `push_neg at «{hx}»`?"
 msgstr ""
 
 #: Game.Levels.Luna.L05_Linarith2
@@ -3208,6 +3208,10 @@ msgstr ""
 
 #: Game.Levels.Luna.L08_Omega3
 msgid "**Ritha**:  Jetzt ich wieder!"
+msgstr ""
+
+#: Game.Levels.Luna.L08_Omega3
+msgid "**Ritha**:  Probier unbedingt mal `simp at «{h'}»`."
 msgstr ""
 
 #: Game.Levels.Luna.L08_Omega3
@@ -5042,7 +5046,7 @@ msgid "**Du** *(flüsternd)*: Robo, meinst du, wir sollen es ihm sagen?\n"
 "**Robo**: Dass `2` die einzige gerade Primzahl ist?\n"
 "Er wird es nicht glauben wollen, solange wir ihm keinen Beweis präsentieren.\n"
 "\n"
-"**Du**:  Und meinst du nicht, wie können das zeigen?  Du kennst doch die Sprache.\n"
+"**Du**:  Und meinst du nicht, wir können das zeigen?  Du kennst doch die Sprache.\n"
 "Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?\n"
 "\n"
 "**Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich\n"

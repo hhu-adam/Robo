@@ -314,7 +314,8 @@ TacticDoc set
 /--
 Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.
 Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.
-Die (Un)Gleichungen müssen aber gut lesbar gegeben sein. Eine Annahme der Form
+Die (Un)Gleichungen müssen aber einzeln gegeben sein, nicht logisch verknüpft.
+Eine Annahme der Form
 ```
 h : m ≤ x → n < x
 ```
@@ -333,9 +334,12 @@ TacticDoc linarith
 /--
 Die Taktik `omega` kann zeigen, dass eine lineare Gleichung oder Ungleichung in `ℕ` oder `ℤ`
 aus gegebenen Gleichungen oder Ungleichungen folgt.
-Sie ist weniger wählerisch als `linarith`, was die Präsentation dieser (Un)Gleichungen anbelangt.
+Sie kommt, anders als `linarith`, auch mit logischen Verknüpfungen von (Un)Gleichungen zurecht.
 -/
 TacticDoc omega
+
+-- Dafür kann  `linarith` z.B. für `x y a b : ℕ` wie `ring` zeigen: `x * a + y * a = (x + y) * a` zeigen,
+-- siehe Prado level 2; `omega` kann das nicht.
 
 /--
 Die Taktik `push_neg` schiebt Negation an Quantoren vorbei:

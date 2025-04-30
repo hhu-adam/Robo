@@ -10,7 +10,7 @@ Introduction
 **Mem**:  Lasst mich auch noch einmal eine Frage stellen!
 "
 
-open Set
+open Set Nat -- Nat is opened in case someone wants to use `Nat.even_iff_not_odd` here
 
 Statement : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   Hint (hidden := true) "

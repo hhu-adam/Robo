@@ -22,8 +22,8 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
 
     **Robo**: Ja, klar hast du das schon einmal gesehen. Das benutzen Mathematiker doch ständig.
     Wenn ihnen zu $A ⇒ B$ nichts einfällt, zeigen sie stattdessen $¬B ⇒ ¬A$. Ich würde das ja
-    statt *Kontraposition* oder `not_imp_not` eher *von_hinten_durch_die_Brust_ins_Auge* nennen.
-    Aber gut, ich will mich nicht einmischen."
+    statt *Kontraposition* eher *von_hinten_durch_die_Brust_ins_Auge* nennen.
+    Aber hier heißt es natürlich `not_imp_not`."
   Hint (hidden := true) "**Robo**: Fang doch mal mit `constructor` an."
   constructor
   intro h b
@@ -44,6 +44,6 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
 
 Conclusion ""
 
-DisabledTactic rw
+DisabledTactic rw tauto
 DisabledTheorem Classical.not_not
 TheoremTab "Logic"

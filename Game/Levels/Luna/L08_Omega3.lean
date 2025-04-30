@@ -11,8 +11,9 @@ Introduction "
 
 open Finset
 Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by
-  intro h
-  simp at h
+  intro h'
+  Hint (hidden := true) "**Ritha**:  Probier unbedingt mal `simp at {h'}`."
+  simp at h'
   omega
 
 Conclusion ""
