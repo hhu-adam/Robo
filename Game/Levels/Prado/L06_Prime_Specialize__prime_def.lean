@@ -26,10 +26,16 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   Hint "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch
 `1` und sich selbst teilbar ist.  Das klingt vertraut."
   obtain ⟨hp₁, hp⟩ := hp
+  Hint "
+    **Du**: Ich will `{hp}` jetzt bestimmt auf `{a}` anwenden, oder?
+
+    **Robo**:  Dann sag doch `have hp' := {hp} {a}`.  Oder etwas eleganter:
+    `specialize {hp} {a}`.
+  "
   Branch
     -- Marcus' solution
     have ha' : a ∣ p → a = 1 ∨ a = p
-    · Hint "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize {hp} {a}` verwenden."
+    · -- Hint "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize {hp} {a}` verwenden."
       apply hp
     have ha'' : a = 1 ∨ a = p
     · apply ha'
@@ -39,9 +45,8 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     assumption
   Branch
     -- alternative to `specialize`
-    --specialize hp a ha
     have _hp := hp a ha
-    Hint "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize {hp} {a} {ha}` verwenden."
+    -- Hint "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize {hp} {a} {ha}` verwenden."
   specialize hp a ha
   obtain hp | hp := hp
   · Hint (hidden := true) "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus
@@ -49,7 +54,11 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     linarith
   · assumption
 
-NewTactic specialize  -- wird hier en passant eingeführt
+NewTactic specialize
+-- Wird hier en passant eingeführt.
+-- Sollte in jedem Fall in Hints erwähnt werden,
+-- sonst ist es verwirrend, dass die Taktik auf
+-- einmal im Inventory erscheint.
 /---/
 TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def

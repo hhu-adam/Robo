@@ -25,7 +25,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
   Und wie formulier ich das jetzt?
 
   **Robo**: Du könntest `sum_subset` verwenden: ist `I₁ ⊆ I₂`,
-  und verschindet der Ausdruck in der Summe auf allen Element von `I₁`, die nicht in `I₂` liegen,
+  und verschwindet der Ausdruck in der Summe auf allen Element von `I₁`, die nicht in `I₂` liegen,
   so ist die Summe über `I₁` gleich der Summe über `I₂`.
   "
   Branch

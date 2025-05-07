@@ -4,9 +4,9 @@ World "Euklid"
 Level 4
 Title ""
 
-Introduction "Nach einer Weile heute ihr Papierrascheln.
+Introduction "Nach einer Weile hört ihr Papierrascheln.
 Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder.
-“Euklid, Bibliotheksdirektr” steht an der Tür.
+„Euklid, Bibliotheksdirektor“ steht an der Tür.
 
 **Euklid**:
 Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren.

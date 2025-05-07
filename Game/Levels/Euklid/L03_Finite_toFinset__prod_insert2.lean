@@ -52,6 +52,10 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), ∀ (p : ℕ),
   intro p hp
   -- previous lemma would be useful now, but want to practise!
   have hp' : p ∈ all_primes := by
+    Hint (hidden := true) "
+      **Robo**: Wenn `simp` hier nicht funktioniert, musst du `simp` vielleicht
+      die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`.
+      "
     simp [all_primes]
     assumption
   rw [← insert_erase hp']

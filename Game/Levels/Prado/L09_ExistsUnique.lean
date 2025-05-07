@@ -52,9 +52,11 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
 NewDefinition ExistsUnique
 
 /---/
-TheoremDoc mul_eq_mul_left_iff as "mul_eq_mul_left_iff" in "ℕ"
+TheoremDoc mul_eq_mul_left_iff as "mul_eq_mul_left_iff" in "+ *"
 /---/
-TheoremDoc mul_eq_mul_right_iff as "mul_eq_mul_right_iff" in "ℕ"
+TheoremDoc mul_eq_mul_right_iff as "mul_eq_mul_right_iff" in "+ *"
+
+TheoremTab "+ *"
 
 NewTheorem mul_eq_mul_left_iff mul_eq_mul_right_iff
 
