@@ -514,6 +514,16 @@ Sie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*
 -/
 DefinitionDoc Nat.succ as "succ"
 
+/--
+Ist `n : ℤ` eine ganze Zahl größergleich 0, so ist `n.toNat : ℕ` dieselbe Zahl, aufgefasst als natürliche Zahl.
+(Ist `n : ℤ` eine negative ganze Zahl, so ist `n.toNat : ℕ` ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)
+
+## Freunde und Verwandte
+
+Eine natürliche Zahl `n : ℕ` lässt sich stets als ganze Zahl auffassen.
+Dafür schreibst du sie entweder explizit als `(n : ℤ)` oder als `↑n`.
+-/
+DefinitionDoc toNat as "toNat"
 
 /- MISCHMASCH -/
 

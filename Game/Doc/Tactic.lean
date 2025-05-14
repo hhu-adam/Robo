@@ -217,7 +217,7 @@ TacticDoc «have»
 /--
 Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.
 
-Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion.
+Zum Beispiel definiert `fun x ↦ if 0 ≤ x then x else -x` die Betragsfunktion.
 
 ## Freunde und Verwandte
 
@@ -297,7 +297,7 @@ TacticDoc left
 /-- Die Taktik `let` führt eine temporäre Definition ein, zum Beispiel
 `let x : ℕ := 5 ^ 2`.
 
-Hast Du erst einmal mit `let x := …` ein `x` definiert, kannst Du die Definition später mit `simp only [x]` einsetzen.
+Hast du erst einmal mit `let x := …` ein `x` definiert, kannst du die Definition später mit `simp only [x]` einsetzen.
 -/
 TacticDoc «let»
 -- * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber

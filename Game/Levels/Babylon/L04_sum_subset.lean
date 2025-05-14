@@ -52,6 +52,11 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       ```
       als Beweisziel steht.
     "
+    Branch
+      simp
+      intro i h0 h3
+      Hint "**Robo**:  Aus den Annahmen muss ja irgendwie folgen ${i}=0$ oder ${i}=1$ oder ${i}=2$.
+    Vielleicht formulierst du das mit `have` explizit aus."
     intro i h0 h3
     Hint "**Robo**:  Aus den Annahmen muss ja irgendwie folgen ${i}=0$ oder ${i}=1$ oder ${i}=2$.
     Vielleicht formulierst du das mit `have` explizit aus."

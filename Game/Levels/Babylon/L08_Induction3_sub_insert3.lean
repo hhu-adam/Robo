@@ -13,7 +13,7 @@ Title ""
 
 Introduction
 "
-Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher a.
+Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an.
 "
 
 Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by

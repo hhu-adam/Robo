@@ -26,7 +26,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     **Robo**:  Mach doch wieder mit `trans` ein paar Zwischenschritte.  Zurerst willst du die Summe auf die Menge
     der geraden Indizes einschränken, also auf:
     ```
-    ∑ i ∈ \{ i ∈ I | Even i}, ((-1^i + 1)
+    ∑ i ∈ \{ i ∈ I | Even i}, ((-1)^i + 1)
     ```
     Und danach willst du vermutlich
     ```
@@ -35,7 +35,14 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     als Zwischenschritt verwenden.
   "
   trans ∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1)
-  · symm
+  · Branch
+      rw [sum_subset]
+      Hint "
+        **Robo**:  Das sieht irgendwie falsch aus …
+        Vielleicht solltest du `sum_subset` lieber rückwarts anwenden.
+        Oder vor diesem Schritt mit `symm` die Gleichung umdrehen.
+        "
+    symm
     apply sum_subset
     · simp
     · simp

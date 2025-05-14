@@ -1,5 +1,26 @@
 import Mathlib
 
+
+section ExDisjoint
+variable {S : Type} (A B : Set S)
+--#check Sum A B
+open Function
+
+def can : ↑A ⊕ ↑B → ↑(A ∪ B) := fun x ↦
+ match x with
+ | .inl a => ⟨a,by simp⟩
+ | .inr b => ⟨b,by simp⟩
+
+lemma can_surjective : Surjective (can A B):= by
+  intro s
+  have : s ∈ A ∪ B := Subtype.coe_prop s
+
+example (a : (A : Type)) : 1=1 := by --a ∈ (A : Set S) := by exact?
+  have : a ∈ (A : Set S) := by exact?
+  rw [coeSubtype ]
+end ExDisjoint
+
+
 open Function
 #check Fintype
 variable (A : Type) [Fintype A]
