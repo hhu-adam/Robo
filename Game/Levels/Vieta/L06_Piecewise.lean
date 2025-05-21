@@ -64,13 +64,13 @@ Statement :
     Hint (hidden := true) "**Robo**: `if_neg`, genau!"
     rw [if_neg h, if_neg h]
 
-Conclusion""
+Conclusion ""
 
 /---/
 TheoremDoc if_neg as "if_neg" in "Logic"
-
 /---/
 TheoremDoc if_pos as "if_pos" in "Logic"
 
 NewTheorem if_pos if_neg
+
 TheoremTab "Logic"

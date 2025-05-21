@@ -34,5 +34,5 @@ Ihr erhebt euch vorsichtig, da zischt schon wieder dicht neben euch ein Pfeil vo
 **Du**:  Wie halten Sie es hier aus?
 
 **Vieta**:  Nun, ich habe gelernt, immer zur richtigen Zeit an der richtigen Stelle zu stehen.
-Macht euch keinen Sorgen.
+Macht euch keine Sorgen.
 "

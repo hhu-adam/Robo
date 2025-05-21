@@ -1,26 +1,6 @@
 import Mathlib
 
 
-section ExDisjoint
-variable {S : Type} (A B : Set S)
---#check Sum A B
-open Function
-
-def can : ↑A ⊕ ↑B → ↑(A ∪ B) := fun x ↦
- match x with
- | .inl a => ⟨a,by simp⟩
- | .inr b => ⟨b,by simp⟩
-
-lemma can_surjective : Surjective (can A B):= by
-  intro s
-  have : s ∈ A ∪ B := Subtype.coe_prop s
-
-example (a : (A : Type)) : 1=1 := by --a ∈ (A : Set S) := by exact?
-  have : a ∈ (A : Set S) := by exact?
-  rw [coeSubtype ]
-end ExDisjoint
-
-
 open Function
 #check Fintype
 variable (A : Type) [Fintype A]
@@ -66,6 +46,13 @@ lemma fin_surj_range {A B : Type} [Finite A] [Finite B] (f : A → B) :
   have : range f ⊆ (univ : Set B) := by tauto
   rw [← subset_eq_if_ncard_eq this]
   exact Iff.symm Set.range_iff_surjective
+
+lemma fin_inj_range {A B : Type} [Finite A] (f : A → B) :
+  Injective f ↔ ncard (range f) = ncard (univ : Set A) := by
+  sorry
+
+lemma {A B : Type} (f : A → B) : A ≃ ∑ (b : B), {a : A // f a = b} := by
+  exact?
 
 /-lemma fin_bij {A B : Type} [Fintype A] [Fintype B] (h : Fintype.card A = Fintype.card B) (f : A → B) :
   Injective f → Surjective f := by

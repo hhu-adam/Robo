@@ -16,8 +16,8 @@ open Function Set Nat
 Statement {A : Type} (f : ℕ → A) :
     ∃ g : ℤ → A, ∀ n : ℕ, (f n = g n) := by
   Hint "
-    **Robo**:  Hier brauchst du wahrscheinlich `noNat`:  ist `n : ℤ` eine ganze Zahl,
-       ist `n.toNat : ℕ` dieselbe Zahl, aber aufgefasst als natüraliche Zahl.
+    **Robo**:  Hier brauchst du wahrscheinlich `toNat`:  ist `n : ℤ` eine ganze Zahl,
+       ist `n.toNat : ℕ` dieselbe Zahl, aber aufgefasst als natürliche Zahl.
 
     **Du**:  Wie?  Was ist denn dann z.B. `(-1).toNat`??
 
@@ -27,7 +27,7 @@ Statement {A : Type} (f : ℕ → A) :
   Hint (hidden := true) "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then ... else ...`
   definieren."
   let g : ℤ → A := fun n ↦ if (0 ≤ n) then f n.toNat else f 0
-  Hint (strict := true) "**Robo**: Jetzt kannst du dein definiertes `g` mit `use` brauchen, und
+  Hint (strict := true) "**Robo**: Jetzt kannst du dein `g` mit `use` einsetzen und
   sehen, ob deine Definition gut war."
   use g
   intro n

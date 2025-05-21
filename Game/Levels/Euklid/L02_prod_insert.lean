@@ -27,7 +27,7 @@ Statement (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → 
     **Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie `insert_erase`.
   "
   Hint (hidden := true) "
-    **Robo**:  Probier mal `rw [insert_erase {ha}]`.
+    **Robo**:  Probier mal `rw [← insert_erase {ha}]`.
   "
   rw [← insert_erase ha]
   Hint "

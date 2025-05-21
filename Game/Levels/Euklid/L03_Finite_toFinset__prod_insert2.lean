@@ -12,10 +12,11 @@ Introduction "
 open Finset
 namespace Nat
 
-Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), ∀ (p : ℕ), Prime p → p ∣ a := by
+Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ (p : ℕ), Prime p → p ∣ a := by
+  -- tauto -- If we don't insist a > 0, tauto solves this!
   Hint "**Robo**: Oho!  Das sieht ja ganz interessant aus:
   Wenn wir annehmen, dass es nur endlich viele Primzahlen gibt,
-  dann gibt es auch eine natürliche Zahl, die von jeder Primzahl geteilt wird.
+  dann gibt es auch eine positive natürliche Zahl, die von jeder Primzahl geteilt wird.
 
   **Du**:  Ja, klingt ein wenig absurd, aber richtig.  Und der Beweis?  Als erste Zeile steht hier
   `let all_primes := hf.toFinset`.  Ist das in irgendeiner Form sinnvoll?
@@ -44,24 +45,33 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), ∀ (p : ℕ),
   Hint "
     **Robo**:  Bravo.
 
-    **Du**:  Hatten wir nicht eben etwas gezeigt, dass jetzt ziemlich nützlich wäre.
+    **Du**:  Hatten wir nicht eben schon ein paar Sachen gezeigt, die jetzt ziemlich nützlich wäre.
 
     **Robo**: Ups.  Ja, hatten wir, aber habe ich leider nicht abgespeichert.
-    Musst du leider noch einmal rekonstruieren, wie das Argument ging.
+    Musst du leider noch einmal rekonstruieren, wie die Argumente gingen.
     "
-  intro p hp
-  -- previous lemma would be useful now, but want to practise!
-  have hp' : p ∈ all_primes := by
-    Hint (hidden := true) "
-      **Robo**: Wenn `simp` hier nicht funktioniert, musst du `simp` vielleicht
-      die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`.
-      "
+  constructor
+  · Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
+    apply Finset.prod_pos
+    intro p
     simp [all_primes]
-    assumption
-  rw [← insert_erase hp']
-  rw [prod_insert]
-  · use ∏ x ∈ all_primes.erase p, x
-  · simp
+    intro h
+    rw [prime_def] at h
+    linarith
+  · intro p hp
+    -- previous lemma would be useful now, but want to practise!
+    have hp' : p ∈ all_primes := by
+      Hint (hidden := true) "
+        **Robo**: Wenn `simp` hier nicht funktioniert, musst du `simp` vielleicht
+        die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`.
+        "
+      simp [all_primes]
+      assumption
+    rw [← insert_erase hp']
+    rw [prod_insert]
+    · use ∏ x ∈ all_primes.erase p, x
+    · simp
+
 
 /-- Ist eine Teilmenge `A : Set T` mit der Annahme `h : Set.Finite A` gegeben,
 so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,

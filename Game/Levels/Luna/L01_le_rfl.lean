@@ -25,3 +25,9 @@ Statement (n : ℕ) : n ≤ n := by
 Conclusion "
   **Lina**:  Zugegeben, das war ein triviales Beispiel.
 "
+
+
+/---/
+TheoremDoc not_le as "not_le" in "≤"
+NewTheorem not_le
+-- wird später in Vieta einmal erwähnt, aber nirgends gebraucht
