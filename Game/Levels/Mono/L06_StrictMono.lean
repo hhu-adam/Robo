@@ -3,7 +3,7 @@ import Game.Levels.Mono.L05_StrictMono
 World "Mono"
 Level 6
 
-Title "" -- ""
+Title ""
 
 Introduction "Anscheinend hat jemand bemerkt, dass `StrictMono.injective` vorgesagt war.
 Jetzt wollen sie davon auch einen Beweis sehen."

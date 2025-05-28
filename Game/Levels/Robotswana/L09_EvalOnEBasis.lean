@@ -21,7 +21,9 @@ Conclusion "
   **Du**: Okay. Lass uns vorsichtig näher gehen.
 "
 
-open Nat Matrix StdBasisMatrix
+open Nat Matrix StdBasisMatrix Finset
+-- Finset needs to be opened so that sum_congr is available
+-- (not included in solution below, but can be used in alternative solutions)
 
 /---/
 TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"

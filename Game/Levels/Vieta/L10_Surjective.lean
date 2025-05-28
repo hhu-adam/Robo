@@ -43,16 +43,13 @@ Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
   induction n with n hn
   · assumption
   · obtain ⟨b, hb⟩ := hn
-
     use g b
     Branch
       rw [← hb]
       apply congr_fun hs
-    Hint (hidden := true) "**Robo**: Willst du vielleicht `{hs}`
+    Hint (hidden := true) "**Robo**: Willst du vielleicht mit `congr_fun` die Annahme `{hs}`
     zu `∀ x, ({f} ∘ {g}) x = (succ ∘ {f})` umschreiben?"
     apply congr_fun at hs
-    -- Note: Leave this as the main branch, so that the planet is registered
-    -- to require `have`!
     specialize hs b
     simp at hs
     rw [hs]

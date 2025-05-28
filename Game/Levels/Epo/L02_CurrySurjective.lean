@@ -4,7 +4,7 @@ import Game.Metadata
 World "Epo"
 Level 2
 
-Title "" -- ""
+Title ""
 
 Introduction ""
 
@@ -42,7 +42,12 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   push_neg
   Hint "
   **Robo**: Hilft dir vielleicht `ne_comm` weiter?
-  Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
+  Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`.
+  "
+  Hint (hidden := true) "
+  **Robo**: Wegen der vielen Quantoren funktioniert `rw [ne_comm]` hier nicht.
+  Probier stattdessen mal `simp [ne_comm]`.
+  "
   simp [ne_comm]
 
 /---/

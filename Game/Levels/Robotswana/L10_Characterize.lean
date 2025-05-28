@@ -15,7 +15,7 @@ Und sie beschreiben dieses Wesen hier eindeutig!
 **Robo**: Wie meinst du das?
 
 **Du**: Schau doch, seine Größe, seine Vorliebe für Kommutatoren, und all die anderen Sachen,
-damit kann es eindeutig identifiziert werden kann!
+damit kann es eindeutig identifiziert werden!
 
 **Robo**: Das musst du mir genauer erklären.
 
@@ -47,7 +47,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
 
     **Robo**:  Und du behauptest, nur Tracy hat diese Eigenschaften?
 
-    **Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auch allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
+    **Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auf allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
   Hint (hidden := true) "
     **Robo**: `ext`!"
   ext A

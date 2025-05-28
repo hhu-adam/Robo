@@ -9,7 +9,8 @@ Introduction
 "
 **Du**: Zeig mal, was hast du da? Was zur Einheitsmatrix? Passend für unsere Sammlung?
 
-**Robo**: Ja, schau. Ich glaube, hier kannst Du gleich mit `matrix_eq_sum_ebasis` beginnen.
+**Robo**: Ja – die `1` ganz rechts ist hier die Einheitsmatrix.
+  Ich glaube, du kannst gleich mit `matrix_eq_sum_ebasis` beginnen.
 
 **Du**: Ich frage mich, ob wir noch wichtiges auf dem Platz zurückgelassen haben?
 

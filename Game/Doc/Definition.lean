@@ -35,7 +35,7 @@ DefinitionDoc Function.Bijective as "Bijective"
 Eine Abbildung `f` ist strikt monoton, wenn gilt:
 
 ```
-∀ a b, a < b → f a < f b
+∀ ⦃a b⦄, a < b → f a < f b
 ```
 -/
 DefinitionDoc StrictMono as "StrictMono"

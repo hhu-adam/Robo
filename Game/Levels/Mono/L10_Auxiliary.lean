@@ -3,7 +3,7 @@ import Game.Levels.Mono.L09_InjOfHasLeftInv
 World "Mono"
 Level 10
 
-Title "" -- ""
+Title ""
 
 Introduction ""
 

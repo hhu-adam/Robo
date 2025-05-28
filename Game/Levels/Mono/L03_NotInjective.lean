@@ -5,7 +5,7 @@ open Nat
 World "Mono"
 Level 3
 
-Title "" -- ""
+Title ""
 
 Introduction ""
 

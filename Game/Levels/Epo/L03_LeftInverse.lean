@@ -4,15 +4,10 @@ import Game.Metadata
 World "Epo"
 Level 3
 
-Title "" -- ""
+Title ""
 
 
-Introduction
-"
-A function `g : B → A` is a left inverse of a function `f : A → B` if for all `a : A`,
-`g (f a) = a`.
-
-"
+Introduction ""
 
 open Function
 

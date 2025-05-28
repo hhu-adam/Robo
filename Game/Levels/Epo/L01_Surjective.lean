@@ -3,12 +3,12 @@ import Game.Metadata
 World "Epo"
 Level 1
 
-Title "" -- ""
+Title ""
 
 Introduction "
 Die Fahrt ist tatsächlich kurz und schmerzlos.
 Und euch wird tatsächlich ein großen Empfang bereitet.
-Nachdem sich die erste Aufregung gelegt hat, werden ihr aber auch hier mit Aufgaben konfrontiert."
+Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufgaben konfrontiert."
 
 open Function
 

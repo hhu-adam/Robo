@@ -3,7 +3,7 @@ import Game.Levels.Mono.L08_RightInvOfLeftInv
 World "Mono"
 Level 9
 
-Title "" -- ""
+Title ""
 
 Introduction ""
 
