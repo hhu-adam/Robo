@@ -9,4 +9,5 @@ import Game.Metadata.MatrixNotation
 import Game.Metadata.Tactic
 import Game.Metadata.MathlibPreview
 import Game.Metadata.Delaborator
+import Game.Metadata.DelaboratorFunOnProd
 import Game.Metadata.SetBuilder

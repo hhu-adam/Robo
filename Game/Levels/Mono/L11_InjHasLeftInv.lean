@@ -24,16 +24,16 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
 
     **Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung `Nonempty A` brauchen.
   "
-  constructor
-  · intro hf
-    Hint (hidden := true) "
-      **Du*:  Ich will ein Linksinverses angeben, aber ich sehe gerade nicht, wie.
+  Hint (hidden := true) "
+      **Du*:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.
 
       **Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: ` ∀ b : B, ∃ a : A, …`
       Wenn du die hier hättest, könntest du vermutlich mit `choose` das gesuchte Linksinverse wählen.
       Nur hat diese Aussage dummerweise keinen Namen.
       Vielleicht formulierest du sie noch einmal mit `have` selbst aus, und beweist sie auch noch einmal.
     "
+  constructor
+  · intro hf
     have : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b := by
       /- exactly L10_Auxiliary, now without hints -/
       obtain ⟨a₀⟩ := hA
