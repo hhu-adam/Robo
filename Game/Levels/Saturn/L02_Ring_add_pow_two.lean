@@ -34,4 +34,3 @@ NewTactic ring
 TheoremDoc add_pow_two as "add_pow_two" in "+ *"
 
 NewTheorem add_pow_two
-DisabledTheorem add_pow_two
