@@ -26,9 +26,6 @@ Siehe auch `matrix_eq_sum_std_basis`, welches die generalisierte Form für
 $(m × n)$-Matrix (über beliebigem $R$) ist. -/
 TheoremDoc Matrix.matrix_eq_sum_ebasis as "matrix_eq_sum_ebasis" in "Matrix"
 
-/-- Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort. -/
-TheoremDoc Matrix.matrix_eq_sum_std_basis as "matrix_eq_sum_std_basis" in "Matrix"
-
 Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     A = ∑ i : Fin n, ∑ j : Fin n, (A i j) • E i j := by
   Hint "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendensystem für den Raum der Matrizen bilden.
@@ -49,5 +46,8 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   **Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
   apply matrix_eq_sum_std_basis
 
+/-- Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort. -/
+TheoremDoc Matrix.matrix_eq_sum_std_basis as "matrix_eq_sum_std_basis" in "Matrix"
 NewTheorem Matrix.matrix_eq_sum_std_basis
+
 TheoremTab "Matrix"

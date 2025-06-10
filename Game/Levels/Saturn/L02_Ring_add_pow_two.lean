@@ -19,8 +19,8 @@ Statement (x y : ℚ) : (x + y) ^ 2 = x ^ 2 + 2 * x * y + y ^ 2 := by
   Du könntest also `rw [add_pow_two]` benutzen.
   Danach sieht die linke Seite exakt wie die rechte aus, und du bist fertig."
   Branch
-    rw [add_pow_two]
-  ring
+    ring
+  rw [add_pow_two]
 
 Conclusion "
   Es kommt ein 👍 zurück.
@@ -34,4 +34,3 @@ NewTactic ring
 TheoremDoc add_pow_two as "add_pow_two" in "+ *"
 
 NewTheorem add_pow_two
-DisabledTheorem add_pow_two

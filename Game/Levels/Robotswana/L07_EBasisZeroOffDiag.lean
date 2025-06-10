@@ -42,6 +42,10 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     · Hint "**Robo**: Und hier wolltest du jetzt kommutieren?
 
       **Du**: Genau!"
+      Branch
+        rw [E.mul_of_ne]
+        Hint "**Robo**:  Oh.  Schau dir mal dein zweites Beweisziel an: `{j} ≠ {j}`.
+          Das sieht falsch aus."
       rw [h₁]
       rw [E.mul_of_ne] -- Lvl 2
       · simp

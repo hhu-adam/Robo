@@ -9,7 +9,7 @@ Introduction
 "
 "
 
-open Set
+open Set Classical
 
 /---/
 TheoremDoc Function.injective_iff_hasLeftInverse as "injective_iff_hasLeftInverse" in "Function"
@@ -34,6 +34,19 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     "
   constructor
   · intro hf
+    Branch
+      -- alternative construction of inverse `g` as a branched function
+      -- strongly uses `Classical`,
+      -- unsure how to complete the proof this way
+      obtain ⟨a₀⟩ := hA
+      let g' (b : B) (h : (∃ a : A, f a = b)) : A := by
+        choose a ha using h
+        exact a
+      let g : B → A := fun b ↦ if h : (∃ a : A, f a = b) then g' b h else a₀
+      use g
+      intro a
+      apply hf
+      simp [g,g']
     have : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b := by
       /- exactly L10_Auxiliary, now without hints -/
       obtain ⟨a₀⟩ := hA

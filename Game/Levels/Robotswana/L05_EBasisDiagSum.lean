@@ -42,6 +42,14 @@ open Finset
 TheoremDoc Matrix.ebasis_diag_sum_eq_one as "ebasis_diag_sum_eq_one" in "Matrix"
 
 Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
+  Hint (hidden := true) "
+    **Robo**:  Wie gesagt, ich denke, du kannst gleich mit `matrix_eq_sum_ebasis` anfangen,
+    angewendet auf die Einheitsmatrix `1` rechts vom Gleichheitszeigen.
+    Du willst also mit der Gleichung `matrix_eq_sum_ebasis 1` das Beweisziel `r`e`w`riten.
+  "
+  Branch
+    rw [matrix_eq_sum_std_basis 1]
+    Hint "**Robo**:  Nein, nicht `matrix_eq_sum_std_basis`, sondern `matrix_eq_sum_ebasis`."
   rw [matrix_eq_sum_ebasis 1] -- Lvl 3
   Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
   Hint (hidden := true) "
@@ -59,8 +67,8 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
 
   **Robo**: Ja.
 
-  **Du**:  Dann ist `1 {i} j` doch Null für alle `j ≠ i`.
-  Also verschwindet alle Summanden bis auf den Summanden für `j = i`.
+  **Du**:  Dann ist `1 {i} j` doch Null für alle `j ≠ {i}`.
+  Also verschwindet alle Summanden bis auf den Summanden für `j = {i}`.
 
   **Robo**: Ist das so?   Dann lass mich mal überlegen …
   Kannst du zuerst mal `have h : \{{i}} ⊆ univ` zeigen?"
