@@ -17,7 +17,7 @@ Er wühlt wieder in seinem Zylinder.  Ein Kompass.  Eine Violine. Eine Dose Schn
 **Cantor**:  Ach nein, wir machen das anders.
 
 Er greift noch einmal tief in seinen Zylinder hinein,
-und holf einen ganzen Stapel Papier heraus. Den wirft er euch zu.
+und holt einen ganzen Stapel Papier heraus. Den wirft er euch zu.
 Ihr seht euch die Zettel nacheinander an.
 "
 

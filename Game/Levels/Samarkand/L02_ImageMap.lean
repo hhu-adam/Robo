@@ -27,6 +27,11 @@ example : image f = fun S ↦ f '' S := by
   Hint (hidden := true) "
     **Robo**:  Zu zeigen ist die Übereinstimmung von zwei Abbildungen.  Erinnerst du dich an `funext`?
   "
+  Branch
+    funext
+    Hint "
+      **Robo**:  Oh, nein.  Das sieht zu kompliziert aus.  Schreib mal lieber explizit `funext S`.
+      "
   funext S
   Hint (hidden := true) "
     **Robo**:  Jetzt ist die Gleichheit von zwei Mengen zu zeigen – `ext` heißt das Zauberwort.

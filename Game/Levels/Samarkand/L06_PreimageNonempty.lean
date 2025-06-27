@@ -13,7 +13,7 @@ Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
 Statement {A B : Type} (f : A → B)  (y : B) :
      f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by
   Hint "
-   **Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann leer, wenn `b` ein Urbild besitzt.
+   **Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann nicht-leer, wenn `b` ein Urbild besitzt.
    Mal wieder ziemlich offensichtlich.
 
    **Robo**:  Ja, bis auf Notation.

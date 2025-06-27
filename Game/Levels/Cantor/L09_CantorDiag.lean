@@ -49,7 +49,7 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   intro s
   Hint (hidden := true) "**Cantor**: Ihr müsst natürlich irgendwie die
   Surjektivität von `{f}` ausnutzen. Aber ich hatte euch ja eben schon verraten,
-  welche Abbildung `{A} → {Y}`  ihr ein Urbild betrachten müsst …
+  von welcher Abbildung `{A} → {Y}`  ihr ein Urbild betrachten müsst …
 
   **Robo** *(zu Dir)*: Mmm … verstehst du, was er meint?
   Natürlich könntest du jetzt eine Abbildung definieren mit

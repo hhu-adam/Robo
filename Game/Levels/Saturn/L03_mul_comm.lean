@@ -12,7 +12,7 @@ Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
   Hint "
     **Du**:  Nanu, was ist denn `P` hier für ein Tier?
 
-    **Robo**: `P` ist ein “multivariantes Polynom”, wobei die Variablen mit `Fin 2`
+    **Robo**: `P` ist ein “multivariates Polynom”, wobei die Variablen mit `Fin 2`
     durchnummeriert sind und die Koeffizienten in `ℚ` liegen.
 
     **Du**:  Und was ist `Fin 2`?

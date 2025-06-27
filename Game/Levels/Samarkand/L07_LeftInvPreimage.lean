@@ -7,7 +7,7 @@ Level 7
 Title "" -- "Preimage of the inverse"
 
 Introduction "
-  **Arapuka**:  Jetzt habe ich aber noch ein wirklich schwierige Aufgabe.
+  **Arapuka**:  Jetzt habe ich aber noch eine wirklich schwierige Aufgabe.
 "
 
 open Function Set

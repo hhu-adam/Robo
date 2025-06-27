@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Apr 30 12:09:18 2025\n"
+"POT-Creation-Date: Wed Jun 18 10:48:41 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Eine Abbildung `f` ist strikt monoton, wenn gilt:\n"
 "\n"
 "```\n"
-"∀ a b, a < b → f a < f b\n"
+"∀ ⦃a b⦄, a < b → f a < f b\n"
 "```"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgid "`∅ : Set T` ist die leere Teilmenge.\n"
 "Mit `rw [eq_empty_iff_forall_not_mem]` überführst du eine Gleichung der Form `S = ∅` in die\n"
 "Aussage `∀ (x : T), x ∉ s`.\n"
 "\n"
-"Du schreibst `∅` als `\\\\emptyset`."
+"Du schreibst `∅` als `\\emptyset`."
 msgstr ""
 
 #: Game.Doc.Definition
@@ -456,6 +456,16 @@ msgid "`succ : ℕ → ℕ` ist die Abbildung `n ↦ n + 1`.\n"
 msgstr ""
 
 #: Game.Doc.Definition
+msgid "Ist `n : ℤ` eine ganze Zahl größergleich 0, so ist `n.toNat : ℕ` dieselbe Zahl, aufgefasst als natürliche Zahl.\n"
+"(Ist `n : ℤ` eine negative ganze Zahl, so ist `n.toNat : ℕ` ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)\n"
+"\n"
+"## Freunde und Verwandte\n"
+"\n"
+"Eine natürliche Zahl `n : ℕ` lässt sich stets als ganze Zahl auffassen.\n"
+"Dafür schreibst du sie entweder explizit als `(n : ℤ)` oder als `↑n`."
+msgstr ""
+
+#: Game.Doc.Definition
 msgid "Für `x : ℝ` ist `|x|` der Betrag von `x`.\n"
 "(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)"
 msgstr ""
@@ -635,7 +645,7 @@ msgstr ""
 #: Game.Doc.Tactic
 msgid "Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.\n"
 "\n"
-"Zum Beispiel definiert `fun x ↦ if 0 ≤ x then -x else x` die Betragsfunktion.\n"
+"Zum Beispiel definiert `fun x ↦ if 0 ≤ x then x else -x` die Betragsfunktion.\n"
 "\n"
 "## Freunde und Verwandte\n"
 "\n"
@@ -689,13 +699,15 @@ msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Die Taktik `let` führt eine temporäre Definition ein, zum Beispiel\n"
-"`let x : ℕ := 5 ^ 2`."
+"`let x : ℕ := 5 ^ 2`.\n"
+"\n"
+"Hast du erst einmal mit `let x := …` ein `x` definiert, kannst du die Definition später mit `simp only [x]` einsetzen."
 msgstr ""
 
 #: Game.Doc.Tactic
 msgid "Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.\n"
 "Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.\n"
-"Die (Un)Gleichungen müssen aber einzeln gegeben sein, nicht logisch verknüfpt.\n"
+"Die (Un)Gleichungen müssen aber einzeln gegeben sein, nicht logisch verknüpft.\n"
 "Eine Annahme der Form\n"
 "```\n"
 "h : m ≤ x → n < x\n"
@@ -2994,6 +3006,10 @@ msgstr ""
 msgid "**Lina**:  Zugegeben, das war ein triviales Beispiel."
 msgstr ""
 
+#: Game.Levels.Luna.L01_le_rfl
+msgid ""
+msgstr ""
+
 #: Game.Levels.Luna.L02_Omega
 msgid ""
 msgstr ""
@@ -3389,7 +3405,7 @@ msgid "**Du**: Mal langsam.  Zu zeigen ist:\n"
 "Und wie formulier ich das jetzt?\n"
 "\n"
 "**Robo**: Du könntest `sum_subset` verwenden: ist `I₁ ⊆ I₂`,\n"
-"und verschindet der Ausdruck in der Summe auf allen Element von `I₁`, die nicht in `I₂` liegen,\n"
+"und verschwindet der Ausdruck in der Summe auf allen Element von `I₁`, die nicht in `I₂` liegen,\n"
 "so ist die Summe über `I₁` gleich der Summe über `I₂`."
 msgstr ""
 
@@ -3420,6 +3436,11 @@ msgid "**Robo**: Ich schlage vor, du führst erst einmal alle Annahmen ein, bis 
 "i ^ 3 - 3 * i ^ 2 + 2 * i = 0\n"
 "```\n"
 "als Beweisziel steht."
+msgstr ""
+
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "**Robo**:  Aus den Annahmen muss ja irgendwie folgen $«{i}»=0$ oder $«{i}»=1$ oder $«{i}»=2$.\n"
+"Vielleicht formulierst du das mit `have` explizit aus."
 msgstr ""
 
 #: Game.Levels.Babylon.L04_sum_subset
@@ -3463,13 +3484,19 @@ msgid "**Du**:  Hier ist jetzt zu zeigen, dass\n"
 "**Robo**:  Mach doch wieder mit `trans` ein paar Zwischenschritte.  Zurerst willst du die Summe auf die Menge\n"
 "der geraden Indizes einschränken, also auf:\n"
 "```\n"
-"∑ i ∈ { i ∈ I | Even i}, ((-1^i + 1)\n"
+"∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1)\n"
 "```\n"
 "Und danach willst du vermutlich\n"
 "```\n"
 "∑ i ∈ { i ∈ I | Even i}, 2\n"
 "```\n"
 "als Zwischenschritt verwenden."
+msgstr ""
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "**Robo**:  Das sieht irgendwie falsch aus …\n"
+"Vielleicht solltest du `sum_subset` lieber rückwarts anwenden.\n"
+"Oder vor diesem Schritt mit `symm` die Gleichung umdrehen."
 msgstr ""
 
 #: Game.Levels.Babylon.L05_sum_subset2
@@ -3600,7 +3627,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
-msgid "Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher a."
+msgid "Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an."
 msgstr ""
 
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
@@ -3807,7 +3834,7 @@ msgid "**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ 
 "**Cantor**:  Ach nein, wir machen das anders.\n"
 "\n"
 "Er greift noch einmal tief in seinen Zylinder hinein,\n"
-"und holf einen ganzen Stapel Papier heraus. Den wirft er euch zu.\n"
+"und holt einen ganzen Stapel Papier heraus. Den wirft er euch zu.\n"
 "Ihr seht euch die Zettel nacheinander an."
 msgstr ""
 
@@ -3890,7 +3917,7 @@ msgid "**Du**: Was bedeutet das zweite `¬` hier?\n"
 "\n"
 "**Robo**:  Dasselbe wie das erste: logische Negation.\n"
 "Die kannst du als Selbstabbildung der Menge `Prop` aller möglichen Aussagen auffassen.\n"
-"Und diese Abbildung hat natürich keine Fixpunkte,\n"
+"Und diese Abbildung hat natürlich keine Fixpunkte,\n"
 "denn eine Aussage kann doch nicht gleich ihrer Negation sein!"
 msgstr ""
 
@@ -4300,10 +4327,6 @@ msgid "Sagt aus, dass man jede $(n × n)$-Matrix (über $\\mathbb{R}$) $A$ schre
 msgstr ""
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort."
-msgstr ""
-
-#: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendensystem für den Raum der Matrizen bilden.\n"
 "\n"
 "**Robo**: Da kannst du bestimmt gleich die Resultate anwenden, die wir schon gefunden haben!"
@@ -4327,6 +4350,10 @@ msgid "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus 
 "**Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
 msgstr ""
 
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid "Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort."
+msgstr ""
+
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid ""
 msgstr ""
@@ -4334,7 +4361,8 @@ msgstr ""
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid "**Du**: Zeig mal, was hast du da? Was zur Einheitsmatrix? Passend für unsere Sammlung?\n"
 "\n"
-"**Robo**: Ja, schau. Ich glaube, hier kannst Du gleich mit `matrix_eq_sum_ebasis` beginnen.\n"
+"**Robo**: Ja – die `1` ganz rechts ist hier die Einheitsmatrix.\n"
+"  Ich glaube, du kannst gleich mit `matrix_eq_sum_ebasis` beginnen.\n"
 "\n"
 "**Du**: Ich frage mich, ob wir noch wichtiges auf dem Platz zurückgelassen haben?\n"
 "\n"
@@ -4348,6 +4376,16 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid ""
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Robo**:  Wie gesagt, ich denke, du kannst gleich mit `matrix_eq_sum_ebasis` anfangen,\n"
+"angewendet auf die Einheitsmatrix `1` rechts vom Gleichheitszeigen.\n"
+"Du willst also mit der Gleichung `matrix_eq_sum_ebasis 1` das Beweisziel `r`e`w`riten."
+msgstr ""
+
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "**Robo**:  Nein, nicht `matrix_eq_sum_std_basis`, sondern `matrix_eq_sum_ebasis`."
 msgstr ""
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -4369,8 +4407,8 @@ msgid "**Du**: `1` war hier die Einheitsmatrix, richtig?\n"
 "\n"
 "**Robo**: Ja.\n"
 "\n"
-"**Du**:  Dann ist `1 «{i}» j` doch Null für alle `j ≠ i`.\n"
-"Also verschwindet alle Summanden bis auf den Summanden für `j = i`.\n"
+"**Du**:  Dann ist `1 «{i}» j` doch Null für alle `j ≠ «{i}»`.\n"
+"Also verschwindet alle Summanden bis auf den Summanden für `j = «{i}»`.\n"
 "\n"
 "**Robo**: Ist das so?   Dann lass mich mal überlegen …\n"
 "Kannst du zuerst mal `have h : {«{i}»} ⊆ univ` zeigen?"
@@ -4527,6 +4565,11 @@ msgstr ""
 msgid "**Robo**: Und hier wolltest du jetzt kommutieren?\n"
 "\n"
 "**Du**: Genau!"
+msgstr ""
+
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "**Robo**:  Oh.  Schau dir mal dein zweites Beweisziel an: `«{j}» ≠ «{j}»`.\n"
+"Das sieht falsch aus."
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
@@ -4810,7 +4853,7 @@ msgid "Ihr schleicht euch langsam an.\n"
 "**Robo**: Wie meinst du das?\n"
 "\n"
 "**Du**: Schau doch, seine Größe, seine Vorliebe für Kommutatoren, und all die anderen Sachen,\n"
-"damit kann es eindeutig identifiziert werden kann!\n"
+"damit kann es eindeutig identifiziert werden!\n"
 "\n"
 "**Robo**: Das musst du mir genauer erklären.\n"
 "\n"
@@ -4839,7 +4882,7 @@ msgid "**Du**:  Hier sind noch einmal alle Eigenschaften zusammengefasst.\n"
 "\n"
 "**Robo**:  Und du behauptest, nur Tracy hat diese Eigenschaften?\n"
 "\n"
-"**Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auch allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
+"**Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auf allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
@@ -4867,8 +4910,8 @@ msgid "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!\n"
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "**Robo**: `one_on_diag_ebasis` braucht hier als eine Annahme `«{d}» + 1 > 0`.\n"
-"Die solltest du am besten erst einmal mit `have` festhalten."
+msgid "**Robo**: `one_on_diag_ebasis` braucht hier eine Reihe von Annahmen.\n"
+"Die Annahme `«{d}» + 1 > 0` solltest du am besten erst einmal mit `have` festhalten."
 msgstr ""
 
 #: Game.Levels.Robotswana.L10_Characterize
@@ -5181,11 +5224,10 @@ msgid "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich
 msgstr ""
 
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-msgid "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize «{hp}» «{a}»` verwenden."
-msgstr ""
-
-#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-msgid "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize «{hp}» «{a}» «{ha}»` verwenden."
+msgid "**Du**: Ich will `«{hp}»` jetzt bestimmt auf `«{a}»` anwenden, oder?\n"
+"\n"
+"**Robo**:  Dann sag doch `have hp' := «{hp}» «{a}»`.  Oder etwas eleganter:\n"
+"`specialize «{hp}» «{a}»`."
 msgstr ""
 
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
@@ -5408,6 +5450,10 @@ msgid "**Du**:  Vermutlich will ich jetzt den Faktor `«{a}»` irgendwie aus dem
 msgstr ""
 
 #: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**:  Probier mal `rw [← insert_erase «{ha}»]`."
+msgstr ""
+
+#: Game.Levels.Euklid.L02_prod_insert
 msgid "**Robo**:  Und jetzt verwendest du `prod_insert`, und den Faktor tatsächlich herauszuziehen."
 msgstr ""
 
@@ -5431,7 +5477,7 @@ msgstr ""
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
 msgid "**Robo**: Oho!  Das sieht ja ganz interessant aus:\n"
 "Wenn wir annehmen, dass es nur endlich viele Primzahlen gibt,\n"
-"dann gibt es auch eine natürliche Zahl, die von jeder Primzahl geteilt wird.\n"
+"dann gibt es auch eine positive natürliche Zahl, die von jeder Primzahl geteilt wird.\n"
 "\n"
 "**Du**:  Ja, klingt ein wenig absurd, aber richtig.  Und der Beweis?  Als erste Zeile steht hier\n"
 "`let all_primes := hf.toFinset`.  Ist das in irgendeiner Form sinnvoll?\n"
@@ -5461,10 +5507,19 @@ msgstr ""
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
 msgid "**Robo**:  Bravo.\n"
 "\n"
-"**Du**:  Hatten wir nicht eben etwas gezeigt, dass jetzt ziemlich nützlich wäre.\n"
+"**Du**:  Hatten wir nicht eben schon ein paar Sachen gezeigt, die jetzt ziemlich nützlich wäre.\n"
 "\n"
 "**Robo**: Ups.  Ja, hatten wir, aber habe ich leider nicht abgespeichert.\n"
-"Musst du leider noch einmal rekonstruieren, wie das Argument ging."
+"Musst du leider noch einmal rekonstruieren, wie die Argumente gingen."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
+msgstr ""
+
+#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
+msgid "**Robo**: Wenn `simp` hier nicht funktioniert, musst du `simp` vielleicht\n"
+"die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`."
 msgstr ""
 
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
@@ -5488,9 +5543,9 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-msgid "Nach einer Weile heute ihr Papierrascheln.\n"
+msgid "Nach einer Weile hört ihr Papierrascheln.\n"
 "Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder.\n"
-"“Euklid, Bibliotheksdirektr” steht an der Tür.\n"
+"„Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
 "\n"
 "**Euklid**:\n"
 "Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren.\n"
@@ -5820,15 +5875,13 @@ msgid "Ihr hört aus der Ferne Kampfgeräusche.  Vieta scheint nach wie vor nich
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
-msgid "**Robo**: Ich vermute, du solltest als erstes mal ein Element aus `A` wählen …"
-msgstr ""
-
-#: Game.Levels.Vieta.L07_Extend
-msgid "**Robo**: … zum Beispiel mit `obtain ⟨a₀⟩ := h`."
-msgstr ""
-
-#: Game.Levels.Vieta.L07_Extend
-msgid "**Robo**: Und jetzt versuch mal, die richtige Funktion zu definieren: `let g : ℤ → «{A}» :=` usw."
+msgid "**Robo**:  Hier brauchst du wahrscheinlich `toNat`:  ist `n : ℤ` eine ganze Zahl,\n"
+"ist `n.toNat : ℕ` dieselbe Zahl, aber aufgefasst als natürliche Zahl.\n"
+"\n"
+"**Du**:  Wie?  Was ist denn dann z.B. `(-1).toNat`??\n"
+"\n"
+"**Robo**:  Keine Ahnung.  Was ich meinte, ist natürlich:  *falls `n ≥ 0` ist*,\n"
+"dann ist `n.toNat` immer noch „dieselbe“ Zahl."
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
@@ -5837,7 +5890,7 @@ msgid "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then ...
 msgstr ""
 
 #: Game.Levels.Vieta.L07_Extend
-msgid "**Robo**: Jetzt kannst du dein definiertes `g` mit `use` brauchen, und\n"
+msgid "**Robo**: Jetzt kannst du dein `g` mit `use` einsetzen und\n"
 "sehen, ob deine Definition gut war."
 msgstr ""
 
@@ -5924,7 +5977,7 @@ msgid "**Robo**:  Schau mal, die Abbildung geht nach `ℕ`!\n"
 msgstr ""
 
 #: Game.Levels.Vieta.L10_Surjective
-msgid "**Robo**: Willst du vielleicht `«{hs}»`\n"
+msgid "**Robo**: Willst du vielleicht mit `congr_fun` die Annahme `«{hs}»`\n"
 "zu `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)` umschreiben?"
 msgstr ""
 
@@ -5957,7 +6010,7 @@ msgid "Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet.\n"
 "**Du**:  Wie halten Sie es hier aus?\n"
 "\n"
 "**Vieta**:  Nun, ich habe gelernt, immer zur richtigen Zeit an der richtigen Stelle zu stehen.\n"
-"Macht euch keinen Sorgen."
+"Macht euch keine Sorgen."
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
@@ -5967,7 +6020,7 @@ msgstr ""
 #: Game.Levels.Epo.L01_Surjective
 msgid "Die Fahrt ist tatsächlich kurz und schmerzlos.\n"
 "Und euch wird tatsächlich ein großen Empfang bereitet.\n"
-"Nachdem sich die erste Aufregung gelegt hat, werden ihr aber auch hier mit Aufgaben konfrontiert."
+"Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufgaben konfrontiert."
 msgstr ""
 
 #: Game.Levels.Epo.L01_Surjective
@@ -6015,6 +6068,11 @@ msgid "**Robo**: Hilft dir vielleicht `ne_comm` weiter?\n"
 msgstr ""
 
 #: Game.Levels.Epo.L02_CurrySurjective
+msgid "**Robo**: Wegen der vielen Quantoren funktioniert `rw [ne_comm]` hier nicht.\n"
+"Probier stattdessen mal `simp [ne_comm]`."
+msgstr ""
+
+#: Game.Levels.Epo.L02_CurrySurjective
 msgid ""
 msgstr ""
 
@@ -6023,8 +6081,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
-msgid "A function `g : B → A` is a left inverse of a function `f : A → B` if for all `a : A`,\n"
-"`g (f a) = a`."
+msgid ""
 msgstr ""
 
 #: Game.Levels.Epo.L03_LeftInverse
@@ -6248,7 +6305,7 @@ msgid "**Du**:  In der Definition von `diag` stehen wieder zwei Pfeile hinterein
 "`diag` eine Abbildung von `A` in die Menge `Fin (n + 1) → A`.\n"
 "Nun ist `Fin (n+1)` die Menge $\\{0,1,…,n\\}$, und `Fin (n + 1) → A` demnach die Menge der Abbildung von $\\{0,1,…,n\\}$ nach $A$.\n"
 "\n"
-"**Du**:  Mmh…  So eine Abbildung ist eigentlich nichts weiter als eine $(n+1)$-Tupel von Elementen aus $A$, oder?\n"
+"**Du**:  Mmh…  So eine Abbildung ist eigentlich nichts weiter als ein $(n+1)$-Tupel von Elementen aus $A$, oder?\n"
 "\n"
 "**Robo**: Kann man so sehen.\n"
 "\n"
@@ -6264,6 +6321,10 @@ msgstr ""
 
 #: Game.Levels.Mono.L04_Diagonal
 msgid "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
+msgstr ""
+
+#: Game.Levels.Mono.L04_Diagonal
+msgid "**Robo**:  Du könntest die Abbildungen in `«{h}»` auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
 msgstr ""
 
 #: Game.Levels.Mono.L04_Diagonal
@@ -6489,7 +6550,7 @@ msgid "**Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass 
 msgstr ""
 
 #: Game.Levels.Mono.L11_InjHasLeftInv
-msgid "**Du*:  Ich will ein Linksinverses angeben, aber ich sehe gerade nicht, wie.\n"
+msgid "**Du*:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.\n"
 "\n"
 "**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: ` ∀ b : B, ∃ a : A, …`\n"
 "Wenn du die hier hättest, könntest du vermutlich mit `choose` das gesuchte Linksinverse wählen.\n"
@@ -6723,7 +6784,7 @@ msgid "**Arapuka**: Und wie sieht es hiermit aus?"
 msgstr ""
 
 #: Game.Levels.Samarkand.L06_PreimageNonempty
-msgid "**Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann leer, wenn `b` ein Urbild besitzt.\n"
+msgid "**Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann nicht-leer, wenn `b` ein Urbild besitzt.\n"
 "Mal wieder ziemlich offensichtlich.\n"
 "\n"
 "**Robo**:  Ja, bis auf Notation.\n"

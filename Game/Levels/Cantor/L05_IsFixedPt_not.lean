@@ -22,7 +22,7 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
 
   **Robo**:  Dasselbe wie das erste: logische Negation.
   Die kannst du als Selbstabbildung der Menge `Prop` aller möglichen Aussagen auffassen.
-  Und diese Abbildung hat natürich keine Fixpunkte,
+  Und diese Abbildung hat natürlich keine Fixpunkte,
   denn eine Aussage kann doch nicht gleich ihrer Negation sein!
   "
   Branch

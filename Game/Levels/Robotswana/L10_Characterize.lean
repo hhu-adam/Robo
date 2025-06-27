@@ -66,8 +66,8 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
 
       **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
     Hint (hidden := true) "
-      **Robo**: `one_on_diag_ebasis` braucht hier als eine Annahme `{d} + 1 > 0`.
-      Die solltest du am besten erst einmal mit `have` festhalten.
+      **Robo**: `one_on_diag_ebasis` braucht hier eine Reihe von Annahmen.
+      Die Annahme `{d} + 1 > 0` solltest du am besten erst einmal mit `have` festhalten.
       "
     --simp at h₂
     have : d + 1 > 0 := by

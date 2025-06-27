@@ -49,6 +49,16 @@ Statement {A Y : Type} {f : A → A → Y} {s : Y → Y}
     dass die Interpretation von `f` als Abbildung `A → (A → Y)` naheliegender ist.
     "
   unfold IsFixedPt
+  Branch
+    rw [ha]
+    Hint "**Robo**:
+      Jetzt hast du im wesentlichen beide Vorkommen von `f a a` durch `s f a a` ersetzt.
+      Damit drehst du dich im Kreis.  Wahrscheinlich willst du nur das zweite Vorkommen
+      von `f a a` im Beweisziel umschreiben.  Das machst du mit `nth_rw 2 [{ha}]`.
+    "
+    simp
+  Branch
+    nth_rw 2 [ha]
   apply congr_fun at ha
   specialize ha a
   rw [← ha]

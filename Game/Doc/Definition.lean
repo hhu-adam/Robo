@@ -202,7 +202,7 @@ Im Formaloversum ist also `∅ : Set ℕ` etwas anderes als `∅ : Set ℝ`
 Mit `rw [eq_empty_iff_forall_not_mem]` überführst du eine Gleichung der Form `S = ∅` in die
 Aussage `∀ (x : T), x ∉ s`.
 
-Du schreibst `∅` als `\\emptyset`.
+Du schreibst `∅` als `\emptyset`.
 -/
 DefinitionDoc Set.empty as "∅"
 
