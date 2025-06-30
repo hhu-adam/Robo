@@ -49,7 +49,7 @@ example : f ⁻¹' T = { a | f a ∈ T} := by
   intro b
   intro hb
   Hint (hidden := true) "
-    **Robo**:  Um die Annahme `hb` in einen elementareren Ausdruck zu überführen, könntest du `simp` anwenden.
+    **Robo**:  Um die Annahme `{hb}` in einen elementareren Ausdruck zu überführen, könntest du `simp` anwenden.
   "
   simp at hb
   obtain ⟨a, ha₁, ha₂⟩ := hb
