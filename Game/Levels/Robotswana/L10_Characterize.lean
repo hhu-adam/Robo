@@ -51,7 +51,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   Hint (hidden := true) "
     **Robo**: `ext`!"
   ext A
-  Hint "**Du**: Und jetzt schreiben wir `f A` als Summe von Basiselementen."
+  Hint "**Du**: Und jetzt schreiben wir `f {A}` als Summe von Basiselementen."
   rw [eq_sum_apply_diag_ebasis] -- Lvl 7
   Hint "
     **Du**: `induction n`?
