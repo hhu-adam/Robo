@@ -55,7 +55,7 @@ Statement arithmetic_sum (n : ℕ) :
   rw [← insert_Icc_eq_Icc_add_one_right]
   Hint "**Robo**:  Genau!  Und jetzt spaltet dir `sum_insert` die Summe genau so auf, wie du das haben möchtest:
   also eine Summe über $[0,{d}]$ und dann noch einen zusätzlichen Summanden für ${d}+1$.
-  Probiers mal: rw [sum_insert]
+  Probiers mal: `rw [sum_insert]`
   "
   rw [sum_insert]
   Hint (hidden := true)
