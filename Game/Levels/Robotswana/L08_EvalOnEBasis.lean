@@ -45,7 +45,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     f(A)
     &= f\\left( \\sum_\{i,j} A_\{i,j} ⬝ E_\{i,j} \\right) \\\\
     &= \\sum_\{i,j} A_\{i,j} ⬝ f(E_\{i,j})   \\\\
-    &= \\sum_\{i,j} A_\{i,i} ⬝ f(E_\{i,i})
+    &= \\sum_\{i} A_\{i,i} ⬝ f(E_\{i,i})
   \\end\{aligned}
   $$
 
@@ -74,7 +74,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   rw [map_sum] -- simp knows this
   Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
   simp
-  Hint "**Robo*: Wie weit bist du jetzt?
+  Hint "**Robo**: Wie weit bist du jetzt?
 
   **Du**: Ich muss noch irgendwie einbringen, dass `f` auf den `E i j` mit `i≠j` verschwindet.
 
