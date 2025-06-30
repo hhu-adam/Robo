@@ -26,6 +26,14 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
   intro i j hne
   Branch
+    rw [← E.mul_same i j j]
+    rw [h₁]
+    rw [E.mul_of_ne] -- (***)
+    -- The first goal and its associated proof state
+    -- at this point of a correct solution
+    -- match the first goal and proof state
+    -- of an incorrect attempt further below!
+  Branch
     Hint "**Robo**: Wie könnten wir denn hier `{h₁}` verwenden?
 
     **Du**: Wie wär's, wenn wir diesmal `E i j` als Produkt `E i j * E j j` schreiben?
@@ -43,9 +51,12 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
 
       **Du**: Genau!"
       Branch
-        rw [E.mul_of_ne]
-        Hint "**Robo**:  Oh.  Schau dir mal dein zweites Beweisziel an: `{j} ≠ {j}`.
-          Das sieht falsch aus."
+        rw [E.mul_of_ne] -- (***)
+        -- Would ideally like to already trigger a warning here, but
+        -- first goal and proof state are identical to first proof
+        -- reached in a correct solution (see (***) in first Branch above)
+        simp
+        Hint "**Robo**:  Oh. Das sieht falsch aus."
       rw [h₁]
       rw [E.mul_of_ne] -- Lvl 2
       · simp
