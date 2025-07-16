@@ -74,3 +74,8 @@ In order to update the Lean version used by the game, you should follow these st
 The bash script `sofi.sh` (`s`ort `o`ut `f`ilnames and `i`mports), contained in the root folder,
 can help restructure existing worlds, see the
  [documentation](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md#5-refactoring-an-existing-world).
+
+ # Contact
+
+ In case of technical problems with ```adam.math.hhu.de``` please contact us via <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">e-mail</a>.
+
