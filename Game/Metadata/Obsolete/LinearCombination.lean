@@ -1,4 +1,4 @@
-import Mathlib.Tactic.LinearCombination
+
 import Game.Metadata.Tactic.Ring
 
 /-!

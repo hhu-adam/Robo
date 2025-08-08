@@ -1,7 +1,7 @@
 import Game.Metadata
 
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
+
+
 
 import Game.Levels.MatrixSpan.L14
 import Game.Levels.MatrixSpan.L15

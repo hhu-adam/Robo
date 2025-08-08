@@ -3,8 +3,8 @@ import Lean.Elab.Tactic.Induction
 import Std.Tactic.OpenPrivate
 import Std.Data.List.Basic
 
-import Mathlib.Lean.Expr.Basic
-import Mathlib.Tactic.Cases
+
+
 
 namespace Robo
 

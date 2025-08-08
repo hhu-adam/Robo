@@ -1,7 +1,7 @@
 import Game.Metadata
 
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
+
+
 
 World "Span"
 Level 10
