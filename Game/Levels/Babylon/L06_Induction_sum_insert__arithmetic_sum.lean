@@ -19,7 +19,7 @@ Der Weg führt steil bergan.  Der Turm, der euch oben auf dem Berg erwartet, ist
 "
 
 open Finset
-open Robo.NN.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
+-- open Robo.NN.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
 
 /---/
 TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"

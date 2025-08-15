@@ -50,7 +50,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       apply hI at h
       rw [Odd.neg_pow]
       ring
-      rw [← odd_iff_not_even] at h
+      rw [← not_even_iff_odd] at h
       assumption
   · trans ∑ i ∈ { i ∈ I | Even i}, 2
     have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by

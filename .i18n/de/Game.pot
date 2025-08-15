@@ -2240,38 +2240,38 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid "Sofort taucht das nächste Blatt auf.\n"
 "Es scheint, als hätten sie sich diesmal auf einen Kompromiss geeignet."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid "**Du**:  Ich glaube, ich würd gern eine Fallunterscheidung machen, ob `i` gerade oder ungerade ist.\n"
 "\n"
 "**Robo**:  Dann mach das doch – zum Beispiel mit `by_cases h : Even i`."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
-msgid "**Robo**:  Mit `odd_iff_not_even` kannst da `¬Odd` in `Even` verwandeln."
+#: Game.Levels.Quantus.L06_not_even_iff_odd
+msgid "**Robo**:  Mit `not_even_iff_odd` kannst da `¬Odd` in `Even` verwandeln."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
-msgid "**Robo**:  Mit `odd_iff_not_even` kannst du `¬Even` in `Odd` verwandeln."
+#: Game.Levels.Quantus.L06_not_even_iff_odd
+msgid "**Robo**:  Mit `not_even_iff_odd` kannst du `¬Even` in `Odd` verwandeln."
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid ""
 msgstr ""
 
-#: Game.Levels.Quantus.L06_odd_iff_not_even
+#: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid "Diesmal habt ihr die Formalosophinnen offenbar beeindruckt.  Sie nicken anerkennend.\n"
 "\n"
 "Dann geht das Getuschel wieder los."
@@ -2359,20 +2359,20 @@ msgstr ""
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 "Ich würde nochmal zurückgehen und `Odd` behalten,\n"
-"damit man schlussendlich `even_iff_not_odd` brauchen kann!"
+"damit man schlussendlich `not_odd_iff_even` brauchen kann!"
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
 "Ich würde nochmal zurückgehen und `Odd` behalten,\n"
-"damit man schlussendlich `even_iff_not_odd` brauchen kann!"
+"damit man schlussendlich `not_odd_iff_even` brauchen kann!"
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das\n"
-"Lemma `even_iff_not_odd` brauchen.\n"
+"Lemma `not_odd_iff_even` brauchen.\n"
 "\n"
-"**Du**: Könnte ich jetzt schon `even_iff_not_odd` anwenden?\n"
+"**Du**: Könnte ich jetzt schon `not_odd_iff_even` anwenden?\n"
 "\n"
 "**Robo**: Nein, `rw` kann nicht innerhalb von Quantoren umschreiben.\n"
 "\n"
@@ -2383,15 +2383,15 @@ msgid "**Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich da
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
+msgid "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
+msgid "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "**Robo**: Gute Wahl! Jetzt kannst du `even_iff_not_odd` verwenden."
+msgid "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
@@ -2908,7 +2908,7 @@ msgid "**Du**: Und jetzt kann ich dieses Kontrapositionslemma anwenden? Wie hie�
 msgstr ""
 
 #: Game.Levels.Spinoza.L05_Contrapose
-msgid "**Robo**: Vielleicht hilft jetzt `even_iff_not_odd` weiter?"
+msgid "**Robo**: Vielleicht hilft jetzt `not_odd_iff_even` weiter?"
 msgstr ""
 
 #: Game.Levels.Spinoza.L05_Contrapose

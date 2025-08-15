@@ -10,7 +10,7 @@ open Nat Real
 -- good application of `generalize`:
 
 example (n : ℕ) : Even n ∨ Odd n := by
-  rw [odd_iff_not_even]
+  rw [not_even_iff_odd]
   generalize Even n = A
   tauto
 

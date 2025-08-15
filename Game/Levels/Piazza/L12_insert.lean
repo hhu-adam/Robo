@@ -14,7 +14,6 @@ open Set
 Statement (A : Finset ℕ) (a : ℕ) :  insert a A = A ∪ {a} := by
   ext
   simp
-  tauto
 
 TheoremTab "Set"
 

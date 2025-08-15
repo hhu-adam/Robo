@@ -3,7 +3,7 @@ import Game.Levels.Quantus.L02_NonemptyObtain
 import Game.Levels.Quantus.L03_Decide
 import Game.Levels.Quantus.L04_Exists
 import Game.Levels.Quantus.L05_neg_pow
-import Game.Levels.Quantus.L06_odd_iff_not_even
+import Game.Levels.Quantus.L06_not_even_iff_odd
 import Game.Levels.Quantus.L07_Forall
 import Game.Levels.Quantus.L08_PushNeg
 import Game.Levels.Quantus.L09_PushNeg

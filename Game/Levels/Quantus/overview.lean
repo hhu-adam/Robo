@@ -57,7 +57,7 @@ example (i : ℕ) (h : Even i): (-1 : ℤ)^i  + 1 = 2 := by
   assumption
 -/
 
-/- Quantus L09b: odd_iff_not_even -- previously introduced in L12 -/
+/- Quantus L09b: not_even_iff_odd -- previously introduced in L12 -/
 example (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
   by_cases h : Even i
   · rw [Even.neg_pow]
@@ -68,7 +68,7 @@ example (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
       rw [hr]
       ring
     · assumption
-  · rw [← odd_iff_not_even] at h    -- previously introduced in L12; needs a hint here in any case
+  · rw [← not_even_iff_odd] at h    -- previously introduced in L12; needs a hint here in any case
     rw [Odd.neg_pow]
     rw [Even.neg_pow]
     ring
@@ -96,12 +96,12 @@ example {X : Type} (P : X → Prop) :
   push_neg
   rfl
 
-/- Quantus L12: even_iff_not_odd;  DELETE -/
+/- Quantus L12: not_odd_iff_even;  DELETE -/
 example : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   push_neg
   intro n
   use n
-  rw [← even_iff_not_odd]
+  rw [← not_odd_iff_even]
   unfold Even
   use n
 
