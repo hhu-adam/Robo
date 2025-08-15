@@ -15,7 +15,7 @@
    "type": "git",
    "subDir": "server",
    "scope": "hhu-adam",
-   "rev": "6df74ebfc845e4c287238ad1cbf652c20605c2a6",
+   "rev": "274cc77ee8acc0fb3e1a78d969d4efd7a1029270",
    "name": "GameServer",
    "manifestFile": "lake-manifest.json",
    "inputRev": "v4.21.0",

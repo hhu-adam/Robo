@@ -10,8 +10,8 @@ Used to display Matrix Notation correctly in the infoview
 * also displays `![![1, 2], [3, 4]]` as `!![1, 2; 3, 4]` even though the `Matrix.of` is missing.
 * does not work for `!![]`, `!![,,,]`, `!![;;;]` (i.e. any zero-dim matrices)
 -/
-
-open Lean PrettyPrinter Delaborator SubExpr
+/-
+open Lean PrettyPrinter --SubExpr --Delaborator
 
 namespace Matrix
 
@@ -31,6 +31,7 @@ def matrixNotationUnexpander : Lean.PrettyPrinter.Unexpander
   | `($_ ![$terms₁,*] !![$[$terms₂,*];*]) => `(!![$terms₁,*;$[$terms₂,*];*])
   | _ => throw ()
 
+/-
 @[scoped delab app.DFunLike.coe] def delabMatrixOf : Delab :=
   whenPPOption getPPNotation <| withOverApp 6 do
     let #[_, _, _, _, of, M] := (← getExpr).getAppArgs | failure
@@ -51,3 +52,5 @@ def matrixNotationUnexpander : Lean.PrettyPrinter.Unexpander
     else failure
 
 end Matrix
+-/
+-/

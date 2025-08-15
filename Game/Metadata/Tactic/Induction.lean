@@ -1,9 +1,11 @@
-import Lean.Elab.Tactic.Basic
+/-
+--import Lean.Elab.Tactic.Basic
+import Mathlib.Tactic.Basic
 import Lean.Elab.Tactic.Induction
-import Std.Tactic.OpenPrivate
-import Std.Data.List.Basic
-
-
+-- import Std.Tactic.OpenPrivate
+-- import Std.Data.List.Basic
+import Batteries.Data.List.Basic
+import Batteries.Tactic.OpenPrivate
 
 
 namespace Robo
@@ -34,6 +36,7 @@ open Meta Elab Elab.Tactic
 open Mathlib.Tactic
 
 open private getElimNameInfo generalizeTargets generalizeVars in evalInduction in
+
 
 /--
 Modified `induction` tactic for this game.
@@ -88,3 +91,4 @@ elab (name := Robo.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
         let subgoals ← ElimApp.evalNames elimInfo result.alts withArg
           (generalized := fvarIds) (toClear := targetFVarIds) (toTag := toTag)
         setGoals <| (subgoals ++ result.others).toList ++ gs
+-/
