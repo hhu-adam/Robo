@@ -1,4 +1,5 @@
 import Mathlib
+import Batteries
 import GameServer
 import Game.Doc
 
@@ -6,9 +7,9 @@ import Game.Doc
 -- import Game.Metadata.FromMathlib
 
 -- import Game.Metadata.Coersion
--- import Game.Metadata.MatrixNotation
+import Game.Metadata.MatrixNotation
 import Game.Metadata.Tactic
--- import Game.Metadata.MathlibPreview
+import Game.Metadata.MathlibPreview
 -- import Game.Metadata.Delaborator
 -- import Game.Metadata.DelaboratorFunOnProd
 import Game.Metadata.SetBuilder

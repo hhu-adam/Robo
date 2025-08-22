@@ -48,7 +48,7 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
     Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
   use n
   Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
-  rw [← not_odd_iff_even]
+  rw [not_odd_iff_even]
   Branch
     tauto
   unfold Even

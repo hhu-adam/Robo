@@ -15,15 +15,7 @@
 --import Mathlib.Tactic.Simps.Basic
 --import Mathlib.Tactic.Simps.NotationClass
 
-/- other parts of mathlib         -/
-
-
-
-
-
-
-
-
+/- other parts of mathlib         -
 
 --import Mathlib.Data.Fin.VecNotation
 --import Mathlib.LinearAlgebra.LinearIndependent

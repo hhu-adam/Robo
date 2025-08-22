@@ -24,6 +24,7 @@ Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
     Aber vielleicht schreibst du vorher doch einmal alle Inklusionen mit
     `rw [subset_iff] at *` aus, damit du siehst, was passiert.
   "
+
   rw [subset_iff] at *
   -- tauto -- would work here
   intro a ha

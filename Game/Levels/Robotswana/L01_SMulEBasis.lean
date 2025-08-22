@@ -1,9 +1,6 @@
 import Game.Metadata
 import Game.Levels.Babylon
 
-
-
-
 World "Robotswana"
 Level 1
 
