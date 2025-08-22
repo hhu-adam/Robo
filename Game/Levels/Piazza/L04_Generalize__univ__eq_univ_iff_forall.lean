@@ -76,6 +76,7 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   --   tauto
   rw [← Nat.not_odd_iff_even]
   tauto
+  done
 
 TheoremTab "Set"
 

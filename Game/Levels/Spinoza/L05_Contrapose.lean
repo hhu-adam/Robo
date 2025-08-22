@@ -31,8 +31,8 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
     **Robo**: Tatsächlich kannst auch einfach `contrapose` schreiben."
   contrapose
   Hint (hidden := true) "**Robo**: Vielleicht hilft jetzt `not_odd_iff_even` weiter?"
-  rw [← not_odd_iff_even]
-  rw [← not_odd_iff_even]
+  rw [not_odd_iff_even]
+  rw [not_odd_iff_even]
   Hint "
     **Du**: Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
     `even_square` anwenden!"
