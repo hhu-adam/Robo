@@ -21,11 +21,11 @@ Conclusion "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der si
 die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 
 
-open Nat Matrix StdBasisMatrix
+open Nat Matrix
 
 open Finset
 
-    -- around Matrices/level 2: introduce E_ij-version of Matrix.StdBasisMatrix.mul_of_ne,
+    -- around Matrices/level 2: introduce E_ij-version of Matrix.single_mul_single_of_ne,
     -- prove it in one line via mathlib, and use it in level 7.
     -- Matrices/level 3, sum not displayed: already fixed in mathlib
 
@@ -33,7 +33,7 @@ open Finset
 -- -- Not used later on in our proofs, but possibly useful and can be safely
 -- -- removed, or given as a hint
 -- lemma tmp0 {n : ℕ} {i : Fin n} :
---     E i i = stdBasisMatrix i i ((1 : Mat[n,n][ℝ]) i i) := by
+--     E i i = single i i ((1 : Mat[n,n][ℝ]) i i) := by
 --   rw [one_apply]
 --   unfold E
 --   simp?
@@ -48,8 +48,8 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     Du willst also mit der Gleichung `matrix_eq_sum_ebasis 1` das Beweisziel `r`e`w`riten.
   "
   Branch
-    rw [matrix_eq_sum_std_basis 1]
-    Hint "**Robo**:  Nein, nicht `matrix_eq_sum_std_basis`, sondern `matrix_eq_sum_ebasis`."
+    rw [matrix_eq_sum_single 1]
+    Hint "**Robo**:  Nein, nicht `matrix_eq_sum_single`, sondern `matrix_eq_sum_ebasis`."
   rw [matrix_eq_sum_ebasis 1] -- Lvl 3
   Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
   Hint (hidden := true) "

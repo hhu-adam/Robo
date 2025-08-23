@@ -35,7 +35,3 @@ Statement {A : Type} (f : ℕ → A) :
 
 
 NewDefinition toNat
-
-
-NewTactic  «if»
-NewHiddenTactic «then»  «else»

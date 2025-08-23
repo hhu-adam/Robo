@@ -50,7 +50,7 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   Hint "
     **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
     "
-  simp
+  simp?
   intro x
   Hint "
     **Du**: Und jetzt `by_cases h : Even n`?
@@ -60,18 +60,23 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
     Damit `tauto` sie erkennt, musst du sie nur entsprechend abstrahieren.
     Das ginge hier zum Beispiel mit:
     ```
-    generalize h : (Even x) = A
+    rw [← Nat.not_odd_iff_even]
     ```
     "
-  /-Branch
+  Branch
     by_cases h : Even n
     left
     assumption
     right
     assumption
-  -/
-  generalize h : (Even x) = A
+    done
+  -- TODO: v4.22.0 update hat dies kaputt gemacht. Weiss nicht wieso
+  -- Branch
+  --   generalize h : (Even x) = A
+  --   tauto
+  rw [← Nat.not_odd_iff_even]
   tauto
+  done
 
 TheoremTab "Set"
 

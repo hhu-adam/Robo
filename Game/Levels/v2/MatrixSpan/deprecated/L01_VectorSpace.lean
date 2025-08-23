@@ -1,7 +1,7 @@
 import Game.Metadata
 
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
+
+
 
 import Game.Levels.Babylon
 
@@ -37,7 +37,7 @@ Hier sind die drei Goals die noch übrig sind:
 -- **Robo**: In Lean sind Matrizen geschrieben als `Matrix (Fin n) (Fin m) R`. Ich kann dir aber
 -- helfen und diese als `Mat[n,m][R]` darstellen.
 
-open Nat Matrix BigOperators StdBasisMatrix Finset Set
+open Nat Matrix BigOperators Finset Set
 
 -- `M` is flagged as unused.
 set_option linter.unusedVariables false in

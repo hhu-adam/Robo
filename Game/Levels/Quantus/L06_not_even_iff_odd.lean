@@ -20,9 +20,9 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
     by_cases h : Odd i
     swap  -- TODO: check whether this triggers in the correct moment
     Hint "
-        **Robo**:  Mit `odd_iff_not_even` kannst da `¬Odd` in `Even` verwandeln.
+        **Robo**:  Mit `not_even_iff_odd` kannst da `¬Odd` in `Even` verwandeln.
       "
-    rw [← even_iff_not_odd] at h
+    rw [not_odd_iff_even] at h
   by_cases h : Even i
   · rw [Even.neg_pow]
     rw [Odd.neg_pow]
@@ -33,9 +33,9 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
       ring
     · assumption
   · Hint "
-      **Robo**:  Mit `odd_iff_not_even` kannst du `¬Even` in `Odd` verwandeln.
+      **Robo**:  Mit `not_even_iff_odd` kannst du `¬Even` in `Odd` verwandeln.
     "
-    rw [← odd_iff_not_even] at h
+    rw [not_even_iff_odd] at h
     rw [Odd.neg_pow]
     rw [Even.neg_pow]
     ring
@@ -46,15 +46,15 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
     · assumption
 
 /---/
-TheoremDoc Nat.even_iff_not_odd as "even_iff_not_odd" in "ℕ"
-#check  Nat.even_iff_not_odd
+TheoremDoc Nat.not_odd_iff_even as "not_odd_iff_even" in "ℕ"
+#check  Nat.not_odd_iff_even
 
 /---/
-TheoremDoc Nat.odd_iff_not_even as "odd_iff_not_even" in "ℕ"
+TheoremDoc Nat.not_even_iff_odd as "not_even_iff_odd" in "ℕ"
 -- It seems this has been renamed into `Nat.not_even_iff_odd` in newer versions of mathlib,
 -- and is now a simp lemma.
 
-NewTheorem Nat.even_iff_not_odd Nat.odd_iff_not_even
+NewTheorem Nat.not_odd_iff_even Nat.not_even_iff_odd
 
 Conclusion "Diesmal habt ihr die Formalosophinnen offenbar beeindruckt.  Sie nicken anerkennend.
 

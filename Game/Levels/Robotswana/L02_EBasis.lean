@@ -23,7 +23,7 @@ open Nat Matrix
 /---/
 TheoremDoc Matrix.E.mul_of_ne as "E.mul_of_ne" in "Matrix"
 
--- @[inherit_doc Matrix.StdBasisMatrix.mul_of_ne]
+-- @[inherit_doc Matrix.single_mul_single_of_ne]
 Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k) : E i j * E k l = 0 := by
   Hint "**Du**: Das sieht jetzt aber nach Matrizen-Multiplikation aus.
   Müsste so auch stimmen.

@@ -21,7 +21,7 @@ Conclusion "
   **Du**: Okay. Lass uns vorsichtig näher gehen.
 "
 
-open Nat Matrix StdBasisMatrix Finset
+open Nat Matrix Finset
 -- Finset needs to be opened so that sum_congr is available
 -- (not included in solution below, but can be used in alternative solutions)
 

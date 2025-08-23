@@ -1,4 +1,4 @@
-import Mathlib.Tactic.Ring
+import Mathlib
 
 namespace Game
 

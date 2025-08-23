@@ -1,10 +1,13 @@
-import Game.Metadata.FromMathlib
+import Mathlib
 -- mathlib PR: ………
 theorem Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl
 
+-- has been removed between v4.7.0 and v4.22.0 but game depends on it
+attribute [simp] CharZero.neg_eq_self_iff
+
 -- mathlib PR: #19255
-alias _root_.Nat.prime_def := Nat.prime_def_lt''
+-- alias _root_.Nat.prime_def := Nat.prime_def_lt''
 
 
 /-- Icc_insert lemmas

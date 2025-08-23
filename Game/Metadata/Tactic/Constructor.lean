@@ -1,5 +1,4 @@
-import Mathlib.Tactic.Ring
-
+import Mathlib
 namespace Game
 
 @[inherit_doc Lean.Parser.Tactic.constructor]

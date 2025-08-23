@@ -1,4 +1,4 @@
-import Mathlib.Data.Matrix.Notation
+import Mathlib
 
 /-!
 # Matrix Notation delaborator
@@ -11,7 +11,10 @@ Used to display Matrix Notation correctly in the infoview
 * does not work for `!![]`, `!![,,,]`, `!![;;;]` (i.e. any zero-dim matrices)
 -/
 
-open Lean PrettyPrinter Delaborator SubExpr
+
+open Lean PrettyPrinter --SubExpr --Delaborator
+open Lean PrettyPrinter.Delaborator
+open Expr SubExpr
 
 namespace Matrix
 

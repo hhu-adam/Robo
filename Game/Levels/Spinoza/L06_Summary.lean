@@ -29,7 +29,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
   Hint (hidden := true) "**Robo**: Also `suffices d : ¬ Odd (n ^ 2)`."
   suffices d : ¬ Odd (n ^ 2)
   contradiction
-  rw [←even_iff_not_odd] at *
+  rw [not_odd_iff_even] at *
   apply even_square
   assumption
 

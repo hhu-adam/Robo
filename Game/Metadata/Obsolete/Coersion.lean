@@ -1,5 +1,5 @@
 import Lean
-import Mathlib.Algebra.BigOperators.Basic
+
 
 /-!
 

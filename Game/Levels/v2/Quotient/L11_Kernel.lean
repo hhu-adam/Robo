@@ -1,5 +1,5 @@
 import Game.Metadata
-import Mathlib.GroupTheory.Subgroup.Basic
+
 
 World "Quotient"
 Level 11

@@ -1,7 +1,7 @@
 import Game.Metadata
 
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Data.Real.Basic
+
+
 
 import Game.Levels.MatrixSpan.L14
 import Game.Levels.MatrixSpan.L15
@@ -37,7 +37,7 @@ example {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
   simp at this
   unfold E at this
   simp at this
-  unfold stdBasisMatrix at this
+  unfold single at this
   rw [if_neg] at this
   simp at *
   simp [Nat.succ_ne_zero]

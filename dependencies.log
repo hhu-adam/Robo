@@ -20,8 +20,8 @@ Dependencies of 'Quantus':
 
 Dependencies of 'Spinoza':
 · 'Quantus' because of:
-  [Nat.even_square, Nat.even_iff_not_odd, Odd]
-  -- !! even_iff_not_odd will become a simp lemma,
+  [Nat.even_square, Nat.not_odd_iff_even, Odd]
+  -- !! not_odd_iff_even will become a simp lemma,
   --    but even_square is essential for current setup
 · 'Implis' because of:
   [apply, intro, revert, rw]
@@ -69,7 +69,7 @@ Dependencies of 'Babylon':
 · 'Spinoza' because of:
   [have]
 · 'Quantus' because of:
-  [Even.neg_pow, Nat.odd_iff_not_even, Even, Odd.neg_pow]
+  [Even.neg_pow, Nat.not_even_iff_odd, Even, Odd.neg_pow]
 · 'Piazza' because of:
   [simp]
 · 'Implis' because of:
