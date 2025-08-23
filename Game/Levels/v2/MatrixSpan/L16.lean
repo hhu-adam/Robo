@@ -37,7 +37,7 @@ example {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
   simp at this
   unfold E at this
   simp at this
-  unfold stdBasisMatrix at this
+  unfold single at this
   rw [if_neg] at this
   simp at *
   simp [Nat.succ_ne_zero]

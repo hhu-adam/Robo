@@ -19,7 +19,7 @@ Introduction
 
 open Nat Matrix
 
-#check stdBasisMatrix
+#check single
 variable {K V : Type _} [Field K]
 
 @[simp]

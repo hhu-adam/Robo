@@ -12,7 +12,7 @@ Den Spuren folgend, findet ihr ein Stück Pergament, auf dem zuoberst
 eine Notiz steht.
 
 ```
-E i j := stdBasisMatrix i j (1 : ℝ)
+E i j := single i j (1 : ℝ)
 ```
 
 Darunter ein bisschen wildes Gekritzel, das aber deutlich mit einer klaren
@@ -22,12 +22,12 @@ Zeile angefangen hat:
 open Nat Matrix
 
 def Matrix.E {n : ℕ} (i j : Fin n) : Mat[n,n][ℝ] :=
-  stdBasisMatrix i j (1 : ℝ)
+  single i j (1 : ℝ)
 
 /-- `E i j` ist die `n × n`-Matrix (mit Werten in `ℝ`) mit einer `1` an
 Stelle $(i, j)$ und Null überall sonst.
 
-Dies ist eine spezialisierte Form der generellen `stdBasisMatrix i j (a : R)`,
+Dies ist eine spezialisierte Form der generellen `single i j (a : R)`,
 welche auch nicht-quadratisch sein kann und einen beliebigen Wert `a` aus einem beliebigen
 Ring annehmen kann. Wir benutzen hier `E` einfach als Abkürzung.
 -/
@@ -37,14 +37,14 @@ DefinitionDoc Matrix.E as "E"
 TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
-    A i j • E i j = stdBasisMatrix i j (A i j) := by
+    A i j • E i j = single i j (A i j) := by
   Hint "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen.
   Jedenfalls sieht `Mat[{n},{n}]` stark nach $({n} \\times {n})$-Matrizen aus.
   Ich weiß nur nicht mehr, was `Fin {n}` ist.
 
   **Robo**: `Fin {n}` war die Menge $\\\{0,...,n-1\\}$.
   Die Zeilen- und Spaltenindizes fangen hier also bei $0$ an und nicht bei $1$.
-  Und `stdBasisMatrix i j a` kenne ich zufällig.
+  Und `single i j a` kenne ich zufällig.
   Das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.
 
   **Du**: Und die `E`s sind dann einfach eine Abkürzung für den Fall `a = 1`?

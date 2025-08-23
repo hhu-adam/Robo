@@ -1,7 +1,8 @@
 -- import Game.Metadata
 import GameServer.Commands
 
-
+-- TODO (JE, 23.8.25): Brauchen wir die Datei noch? Ist kaputt seit v4.22.0, aber
+-- wenn nicht mehr gebraucht, dann lohnt sich fixen nicht
 
 
 
@@ -25,21 +26,21 @@ The trace as a map from the space of `n × n` matrices to the field of scalars h
 We show that these properties characterize the trace, that is any map satisfying these properties is equal to the trace.
 "
 
-open Nat Matrix BigOperators StdBasisMatrix
+open Nat Matrix BigOperators
 
 set_option relaxedAutoImplicit false
 set_option autoImplicit false
 
 #check Matrix
 
-#check stdBasisMatrix
+#check single
 
-#check StdBasisMatrix.mul_right_apply_same
+#check mul_single_apply_same
 
 #check trace_mul_comm
 
 abbrev E {n : ℕ} (i j : Fin n) : Matrix (Fin n) (Fin n) ℝ :=
-  stdBasisMatrix i j 1
+  single i j 1
 
 /- Statements about `E` -/
 
@@ -54,17 +55,17 @@ abbrev E {n : ℕ} (i j : Fin n) : Matrix (Fin n) (Fin n) ℝ :=
 --   exact mul_of_ne i j 1 h 1
 
 lemma tmp0 {n : ℕ} {i : Fin n} :
-    E i i = stdBasisMatrix i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
+    E i i = single i i ((1 : Matrix (Fin n) (Fin n) ℝ) i i) := by
   rw [one_apply_eq]
 
 lemma tmp1 {n : ℕ} : ∑ i : Fin (n), E i i = 1 := by
   unfold E
-  rw [matrix_eq_sum_std_basis (1 : Matrix (Fin n) (Fin n) ℝ)]
+  rw [matrix_eq_sum_single (1 : Matrix (Fin n) (Fin n) ℝ)]
   simp_rw [tmp0]
   symm
-  calc ∑ i : Fin n, ∑ j : Fin n, stdBasisMatrix i j ((1 : Matrix (Fin n) (Fin n) ℝ) i j)
-  _ = ∑ i : Fin n, ∑ j : Fin n, stdBasisMatrix i j (if i = j then 1 else 0) := rfl
-  _ = ∑ i : Fin n, ∑ j : Fin n, (if i = j then stdBasisMatrix i j 1 else 0) := by
+  calc ∑ i : Fin n, ∑ j : Fin n, single i j ((1 : Matrix (Fin n) (Fin n) ℝ) i j)
+  _ = ∑ i : Fin n, ∑ j : Fin n, single i j (if i = j then 1 else 0) := rfl
+  _ = ∑ i : Fin n, ∑ j : Fin n, (if i = j then single i j 1 else 0) := by
     congr
     funext i
     congr
@@ -72,12 +73,12 @@ lemma tmp1 {n : ℕ} : ∑ i : Fin (n), E i i = 1 := by
     split
     · simp
     · simp
-  _ = ∑ i : Fin n, stdBasisMatrix i i 1 := by simp
-  _ = ∑ x : Fin n, stdBasisMatrix x x ((1 : Matrix (Fin n) (Fin n) ℝ) x x) := by simp
+  _ = ∑ i : Fin n, single i i 1 := by simp
+  _ = ∑ x : Fin n, single x x ((1 : Matrix (Fin n) (Fin n) ℝ) x x) := by simp
 
 lemma tmp2 {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) (i j) :
-    A i j • E i j = stdBasisMatrix i j (A i j) := by
-  simp_all only [smul_stdBasisMatrix, smul_eq_mul, mul_one]
+    A i j • E i j = single i j (A i j) := by
+  simp_all only [smul_single, smul_eq_mul, mul_one]
 
 /- Statements about linear maps and sums. -/
 
@@ -92,7 +93,7 @@ lemma H1 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     (h : ∀ A B, f (A * B) = f (B * A)) (j : Fin n.succ) :
     f (E j j) = f (E 0 0) := by
   trans f (E j 0 * E 0 j)
-  · rw [mul_same, mul_one]
+  · rw [mul_single_mul_same, mul_one]
   · rw [h, mul_same, mul_one]
 
 lemma H2 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
@@ -155,7 +156,7 @@ lemma H3 {n : ℕ} {f : Matrix (Fin n.succ) (Fin n.succ) ℝ →ₗ[ℝ] ℝ}
     _ = f (∑ i : Fin (n + 1), ∑ j : Fin (n + 1), (A i j) • E i j) := by
       congr
       simp_rw [tmp2]
-      exact matrix_eq_sum_std_basis A
+      exact matrix_eq_sum_single A
     _ = ∑ i : Fin (n + 1), ∑ j : Fin (n + 1), (A i j) * f (E i j) := by
       rw [map_sum]
       simp_rw [map_sum, SMulHomClass.map_smul]

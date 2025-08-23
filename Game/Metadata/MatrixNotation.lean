@@ -14,7 +14,7 @@ Used to display Matrix Notation correctly in the infoview
 
 open Lean PrettyPrinter --SubExpr --Delaborator
 open Lean PrettyPrinter.Delaborator
-open Expr
+open Expr SubExpr
 
 namespace Matrix
 
@@ -33,7 +33,6 @@ def matrixNotationUnexpander : Lean.PrettyPrinter.Unexpander
   | `($_ ![$term] ![]) => `(!![$term])
   | `($_ ![$terms₁,*] !![$[$terms₂,*];*]) => `(!![$terms₁,*;$[$terms₂,*];*])
   | _ => throw ()
-
 
 @[scoped delab app.DFunLike.coe] def delabMatrixOf : Delab :=
   whenPPOption getPPNotation <| withOverApp 6 do

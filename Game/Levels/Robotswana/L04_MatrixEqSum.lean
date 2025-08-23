@@ -17,12 +17,12 @@ Du beschließt, einer besonders markanten Spur zu folgen. Robo zieht dir hinterh
 sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
 "
 
-open Nat Matrix StdBasisMatrix -- BigOperators
+open Nat Matrix -- BigOperators
 
 /-- Sagt aus, dass man jede $(n × n)$-Matrix (über $\mathbb{R}$) $A$ schreiben kann
 als $A = \sum_{i=0}^{n-1}\sum_{j=0}^{n-1} A_{ij} \cdot E(i, j)$.
 
-Siehe auch `matrix_eq_sum_std_basis`, welches die generalisierte Form für
+Siehe auch `matrix_eq_sum_single`, welches die generalisierte Form für
 $(m × n)$-Matrix (über beliebigem $R$) ist. -/
 TheoremDoc Matrix.matrix_eq_sum_ebasis as "matrix_eq_sum_ebasis" in "Matrix"
 
@@ -41,13 +41,13 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     simp
   simp [Matrix.smul_ebasis] -- Lvl 1
   Hint "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus meiner Bibliothek.
-  Das ist genau `apply matrix_eq_sum_std_basis`.
+  Das ist genau `apply matrix_eq_sum_single`.
 
   **Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
-  apply matrix_eq_sum_std_basis
+  apply matrix_eq_sum_single
 
 /-- Die generellere Version von `matrix_eq_sum_ebasis`. Siehe dort. -/
-TheoremDoc Matrix.matrix_eq_sum_std_basis as "matrix_eq_sum_std_basis" in "Matrix"
-NewTheorem Matrix.matrix_eq_sum_std_basis
+TheoremDoc Matrix.matrix_eq_sum_single as "matrix_eq_sum_single" in "Matrix"
+NewTheorem Matrix.matrix_eq_sum_single
 
 TheoremTab "Matrix"
