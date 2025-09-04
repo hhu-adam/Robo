@@ -1,4 +1,9 @@
-import Mathlib
+import Mathlib.Tactic.ExtendDoc
+import Mathlib.Tactic.Constructor
+
+open Lean Meta Elab Tactic
+
+
 namespace Game
 
 @[inherit_doc Lean.Parser.Tactic.constructor]

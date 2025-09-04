@@ -14,7 +14,6 @@ folgenden Gleichung.
 "
 
 open Finset
-open Robo.NN.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
 
 -- open BigOperators
 

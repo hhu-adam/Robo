@@ -106,7 +106,7 @@ example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by
 
 /- Babylon L06 -/
 section Babylon06
-open Robo.NN.Finset
+--open Robo.NN.Finset
 theorem arithmetic_sum (n : ℕ) : (∑ i ∈ Icc 0 n , i : ℚ) = 1/2  * n * (n + 1) := by
     induction n with d hd
     · simp

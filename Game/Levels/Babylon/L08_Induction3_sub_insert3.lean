@@ -5,7 +5,6 @@ World "Babylon"
 Level 8
 
 open Finset
-open Robo.NN.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
 
 -- open BigOperators
 

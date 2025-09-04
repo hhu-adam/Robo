@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-23\n"
+"POT-Creation-Date: 2025-09-04\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1397,13 +1397,6 @@ msgstr ""
 msgid "**Du**: Ah ja, im Zweifelsfall vereinfachen."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "(version for ℤ)"
-msgstr ""
-
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch\n"
 "`1` und sich selbst teilbar ist.  Das klingt vertraut."
@@ -1830,6 +1823,12 @@ msgid "Die Isosophen zeigen sich sehr zufrieden.\n"
 "Robo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter."
 msgstr ""
 
+#: Game.Levels.Cantor.L04_fixedPoints_neg
+msgid "\n"
+"**Robo**: `simp` kann man immer mal probieren.\n"
+""
+msgstr ""
+
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "**Du** (*schreiend*): Was meinst du damit?\n"
 "\n"
@@ -1893,14 +1892,14 @@ msgid "\n"
 ""
 msgstr ""
 
-#: Game.Levels.Piazza
-msgid "Piazza"
-msgstr ""
-
 #: Game.Levels.Piazza.L08_subset_iff
 msgid "**Robo**: Das ist doch nur die Definition!\n"
 "\n"
 "**Robo** *(zu dir)*: Probier mal `tauto`.  Oder gleich `rfl`."
+msgstr ""
+
+#: Game.Levels.Piazza
+msgid "Piazza"
 msgstr ""
 
 #: Game.Levels.Implis.L12_ByCases
@@ -2349,13 +2348,6 @@ msgid "Diesen Planeten wolltet ihr eigentlich gar nicht ansteuern.\n"
 "Das beste, was wir momentan tun können, ist mit dem Strom zu fliegen."
 msgstr ""
 
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "(version for ℕ)"
-msgstr ""
-
 #: Game.Levels.Cantor.L09_CantorDiag
 msgid "**Cantor**: Viel Glück!"
 msgstr ""
@@ -2604,6 +2596,10 @@ msgstr ""
 #: Game.Levels.Luna.L04_Omega2
 #: Game.Levels.Luna.L05_Linarith2
 #: Game.Levels.Luna.L05_Linarith2
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
+#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 #: Game.Levels.Luna.L07_Linarith2
@@ -3975,12 +3971,6 @@ msgid "**Du**: Hmm, jetzt ist das erstmal verdreht.\n"
 "**Robo**: Erinnere dich an `symm`!\n"
 "\n"
 "**Du**: Richtig, das brauchten wir ja schon bei diesem wilden Typen mit seinen Förderbändern."
-msgstr ""
-
-#: Game.Levels.Cantor.L04_fixedPoints_neg
-msgid "\n"
-"**Robo**: `simp` kann man immer mal probieren …\n"
-""
 msgstr ""
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis

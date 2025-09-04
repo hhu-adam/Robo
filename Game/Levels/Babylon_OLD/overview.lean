@@ -114,7 +114,7 @@ example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by
 
 /- Babylon L04 -/
 section Babylon04a
-open Robo.NN.Finset
+open Finset
 theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n , i) = n * (n + 1) := by
     induction n with d hd
     · simp
@@ -151,7 +151,7 @@ end Babylon04b
 
 /- Babylon L05 -/
 section Babylon05
-open Robo.NN.Finset
+open Finset
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   induction n with d hd
   · simp
@@ -170,7 +170,7 @@ example (n m : ℕ) : ∑ i ∈ Icc 0 n, ∑ j ∈ Icc 0 m, (2 ^ i * (1 + j)) =
 
 /- Babylon L07 -/
 section Babylon07
-open Robo.NN.Finset
+open Finset
 example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
   induction m with n n_ih
   · simp

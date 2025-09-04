@@ -15,6 +15,10 @@ Conclusion "
   Er hat die Kakteen gegen Spatzen eingetauscht.
 "
 open Function Set
+open scoped CharZero -- Need this so that `simp` can see `CharZero.neg_eq_self_iff`,
+                     -- which has a `scoped simp` attribute.
+                     -- An alternative to `CharZero.neg_eq_self_iff` would be
+                     -- `neg_eq_self ℝ`, which does not have any `simp` attribute.
 
 Statement :
     fixedPoints (fun (x : ℝ) ↦ -x) = {0} := by
@@ -29,9 +33,9 @@ Statement :
   "
   unfold IsFixedPt
   Hint (strict := true) (hidden := true) "
-    **Robo**: `simp` kann man immer mal probieren …
+    **Robo**: `simp` kann man immer mal probieren.
   "
-  simp
+  simp  -- uses `CharZero.neg_eq_self_iff` (scoped simp) and `setOf_eq_eq_singleton`
   /-
   Branch
     rw [Subset.antisymm_iff]
