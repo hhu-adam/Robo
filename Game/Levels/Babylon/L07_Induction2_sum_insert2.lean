@@ -10,8 +10,6 @@ Introduction
 "Direkt neben dem Gaußschen Turm ist wieder ein leerer Bauplatz.  Diesmal steht folgendes auf dem Schild:"
 
 open Finset
-open Robo.ZZ.Finset -- temporary solution to make correct version of `insert_Icc_eq_Icc_add_one_right` available
-
 
 Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     Hint "

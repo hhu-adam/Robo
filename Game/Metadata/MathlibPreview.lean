@@ -1,5 +1,5 @@
 import Mathlib
--- mathlib PR: ………
+-- mathlib PR: 85107
 theorem Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
   rfl
 
