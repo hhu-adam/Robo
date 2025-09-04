@@ -29,3 +29,4 @@ Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c :
 Conclusion "
   Es kommt ein 👍 zurück.
   "
+#min_imports

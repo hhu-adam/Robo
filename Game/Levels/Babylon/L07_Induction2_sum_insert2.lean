@@ -53,3 +53,4 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
 TheoremTab "∑ Π"
 
 Conclusion ""
+#min_imports

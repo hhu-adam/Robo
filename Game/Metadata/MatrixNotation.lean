@@ -1,11 +1,4 @@
-
-import Mathlib  -- Marcus: This needs to go.
-
--- following three relevant imports found with #min_imports:
-import Lean.PrettyPrinter.Delaborator.Builtins
-import Mathlib.Data.Matrix.Defs     -- for Matrix
-import Mathlib.Data.Fin.VecNotation -- for vecCons
-
+import Mathlib.Data.Matrix.Notation
 /-!
 # Matrix Notation delaborator
 
@@ -17,8 +10,6 @@ Used to display Matrix Notation correctly in the infoview
 * does not work for `!![]`, `!![,,,]`, `!![;;;]` (i.e. any zero-dim matrices)
 -/
 
--- following three open statements added by Matvey in update to 4.22
-open Lean PrettyPrinter --SubExpr --Delaborator
 open Lean PrettyPrinter.Delaborator
 open Expr SubExpr
 
