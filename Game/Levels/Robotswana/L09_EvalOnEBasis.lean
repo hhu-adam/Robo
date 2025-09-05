@@ -34,15 +34,6 @@ TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     ∀ i, f (E i i) = 1 := by
-  /-  TODO:  Simplify this ourverture regarding n = 0 as much as possible
-             AND UPDATE HINTS!                                         -/
-  by_cases hn0 : n = 0
-  · intro i
-    subst hn0
-    apply IsEmpty.false at i
-    contradiction
-  have hn : n > 0
-  · omega
   intro i
   Hint "
    Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:
@@ -71,21 +62,37 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
      ```
   Und dann weiter mit `mul_eq_mul_left_iff`.
   "
-  -- apply nat_mul_inj' (n := n)
-  -- BEGIN new alternative (cf. Prado)
+  -- older version used `nat_mul_inj' (n := n)` from here
+  -- now using `mul_eq_mul_left_iff`, cf. Prado
   suffices h : n * f (E i i) = n * 1 by
     rw [mul_eq_mul_left_iff] at h
     obtain h | h := h
+    Hint (hidden := true) "
+    **Robo**: Ach ja, den Fall `{h} : {n} = 0`
+      müssen wir wohl gesondert betrachten.
+      Unterscheiden wir die Fälle also mit `obtain h | h := h`
+    "
     · assumption
     · Hint  "
-      **Robo**: In `{hn} : {n} > 0` und `{h} : n = 0` kann `omega`
-      bestimmt einen Widerspruch finden. Aber vielleicht versteckt sich in `{h}` gerade
-      noch eine implizite Einbettung von `ℕ` in `ℝ`.
-      Schreib vorsichtshalber erst einmal `simp at {h}`.
-      "
+      **Robo**: Der Pfeil `{h}` ist eine implizite Einbettung von `ℕ` in `ℝ`.
+      Die entfernst du zum Beispiel mit `simp`."
       simp at h
-      omega
-  -- END
+      Hint "
+      **Robo**:  Und jetzt willst du vermutlich `{h} : {n} = 0` in `{i} : Fin {n}` einsetzen,
+      und feststellen, dass die Aussage trivial wird, weil es gar kein `{i}` in `Fin 0` gibt.
+      Zum Einsetzen kannst du in diesem Fall `simp [{h}] at {i}` benutzen.
+      "
+      simp [h] at i
+      Hint "
+      **Robo**: Und jetzt hilft dir vermutlich das Lemma `IsEmpty.false`,
+      das für eine leere Menge `M` besagt `∀ (m : M), False`.
+      "
+      Branch
+        apply IsEmpty.false at i
+        contradiction
+      by_contra
+      apply IsEmpty.false i
+  Hint "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache."
   Hint (hidden := true) "
   **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes
   `trans ∑ j : Fin {n}, f (E i i)`.
@@ -157,6 +164,10 @@ TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
 /---/
 TheoremDoc Nat.cast_eq_zero as "cast_eq_zero" in "ℕ"
 
+/---/
+TheoremDoc IsEmpty.false as "IsEmpty.false" in "Logic"
+
+
 TheoremTab "Matrix"
-NewTheorem smul_eq_mul LinearMap.map_smul Nat.cast_eq_zero
+NewTheorem smul_eq_mul LinearMap.map_smul Nat.cast_eq_zero IsEmpty.false
 --nat_mul_inj'
