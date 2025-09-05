@@ -70,7 +70,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     Hint (hidden := true) "
     **Robo**: Ach ja, den Fall `{h} : {n} = 0`
       müssen wir wohl gesondert betrachten.
-      Unterscheiden wir die Fälle also mit `obtain h | h := h`
+      Unterscheiden wir die Fälle also mit `obtain {h} | {h} := {h}`
     "
     · assumption
     · Hint  "
