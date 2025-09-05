@@ -6,7 +6,7 @@ Title "" -- "Bijektivität"
 
 Introduction
 "
-**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet.
+**Isosoph**:  Natürlich haben auch wir etwas für euch vorbereitet.
 "
 
 open Function

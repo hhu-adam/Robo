@@ -17,7 +17,7 @@ Aufgaben und Terme, und ihr versucht, diese schnell genug zu kombinieren.
 
 Conclusion "Schließlich macht ihr euch auf den Rückweg.
 Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch
-die Grasslandschaft zurück zu eurem Schiff."
+die Graslandschaft zurück zu eurem Schiff."
 
 open Matrix Fintype
 

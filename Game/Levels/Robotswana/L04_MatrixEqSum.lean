@@ -6,7 +6,7 @@ Level 4
 Title "" -- "Summe von Basiselementen"
 
 Introduction "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen
-Fläche heruntergetrampelt ist. Spuren führen kreuz und queer und in verschiedene
+Fläche heruntergetrampelt ist. Spuren führen kreuz und quer und in verschiedene
 Richtungen weg.
 
 Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.
