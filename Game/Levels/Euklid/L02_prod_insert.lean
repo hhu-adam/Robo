@@ -9,9 +9,9 @@ Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgesc
 open Finset
 namespace Nat
 
-Statement (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → p ∣ ∏ a ∈ A, a := by
+Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
   Hint "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:
-  wenn ein Primfaktor einen Faktor `a` eines Produkts teilt, dann teilt er sicher auch das ganze Produkt.
+  wenn eine Zahl `{b}` einen Faktor `a` eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.
 
   **Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.
 
@@ -35,13 +35,13 @@ Statement (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → 
   "
   rw [prod_insert]
   Hint (hidden := true) "
-    **Robo**:  Der Rest sollte jetzt einfach sein.  Wir hatten ja schon `Prime.dvd_mul` bewiesen.
+    **Robo**:  Der Rest sollte jetzt einfach sein.
   "
-  · rw [Prime.dvd_mul]
-    · left
-      assumption
-    · assumption
-  · simp
+  · obtain ⟨k, hk⟩ := hpa
+    use k * ∏ x ∈ erase A a, x
+    rw [hk]
+    ring
+  simp
 
 /---/
 TheoremDoc Finset.prod_insert as "prod_insert" in "∑ Π"

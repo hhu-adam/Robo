@@ -1,4 +1,7 @@
 import Mathlib.Data.Matrix.Notation
+-- !! With newever versions of Mathlib, this will become:
+-- import Mathlib.LinearAlgebra.Matrix.Notation
+
 /-!
 # Matrix Notation delaborator
 

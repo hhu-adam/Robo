@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04\n"
+"POT-Creation-Date: 2025-09-05\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -845,6 +845,17 @@ msgid "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: e
 "Alle anderen sind ja schon drüben!"
 msgstr ""
 
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:\n"
+"wenn eine Zahl `«{b}»` einen Faktor `a` eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.\n"
+"\n"
+"**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n"
+"\n"
+"**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst.\n"
+"Wir fangen natürlich mit `intro` an.\n"
+""
+msgstr ""
+
 #: Game.Doc.Definition
 msgid "Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`"
 msgstr ""
@@ -1560,6 +1571,12 @@ msgid "\n"
 ""
 msgstr ""
 
+#: Game.Levels.Euklid.L02_prod_insert
+msgid "\n"
+"**Robo**:  Der Rest sollte jetzt einfach sein.\n"
+""
+msgstr ""
+
 #: Game.Levels.Cantor.L09_CantorDiag
 msgid "\n"
 "**Du**:  Wir sollen unter bestimmten Annahmen zeigen, dass *jede* Selbstabbildung `s : «{Y}» → «{Y}»`\n"
@@ -2243,17 +2260,6 @@ msgid "**Du**: Per Definition sind doch zwei Abbildungen gleich, wenn sie angewe
 "\n"
 "**Robo**: Zu dem Prinzip hätte ich die Taktik `funext` auf Lager.\n"
 "Mit `funext x` wählst du ein beliebiges `x` und änderst das Beweisziel von `f = g` zu `f x = g x`."
-msgstr ""
-
-#: Game.Levels.Euklid.L02_prod_insert
-msgid "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:\n"
-"wenn ein Primfaktor einen Faktor `a` eines Produkts teilt, dann teilt er sicher auch das ganze Produkt.\n"
-"\n"
-"**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n"
-"\n"
-"**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst.\n"
-"Wir fangen natürlich mit `intro` an.\n"
-""
 msgstr ""
 
 #: Game.Levels.Saturn.L04_mul_assoc
@@ -4706,12 +4712,6 @@ msgstr ""
 #: Game.Levels.Cantor.L02_CantorPowerset
 msgid "**Cantor**:  Na, was meint ihr?  Gibt es vielleicht irgendeine Menge,\n"
 "die nicht von `f` getroffen wird?"
-msgstr ""
-
-#: Game.Levels.Euklid.L02_prod_insert
-msgid "\n"
-"**Robo**:  Der Rest sollte jetzt einfach sein.  Wir hatten ja schon `Prime.dvd_mul` bewiesen.\n"
-""
 msgstr ""
 
 #: Game.Levels.Quantus.L09_PushNeg
