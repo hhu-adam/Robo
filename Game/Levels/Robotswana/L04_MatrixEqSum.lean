@@ -33,7 +33,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     **Robo**: Da kannst du bestimmt gleich die Resultate anwenden, die wir schon gefunden haben!"
   Hint (hidden := true) "**Robo**: Den Ausdruck `(A i j) • E i j` kannst du doch bestimmt mit `Matrix.smul_ebasis` vereinfachen.
 
-  **Du**: Also `rw[…]`?
+  **Du**: Also `rw […]`?
 
   **Robo**:  Nein, unter der Summe wird das nicht funktionieren.
   Aber `simp […]` hat Aussicht auf Erfolg."

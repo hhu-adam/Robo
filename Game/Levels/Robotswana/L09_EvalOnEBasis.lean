@@ -31,9 +31,18 @@ TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 -- set_option trace.Meta.synthInstance true in
 -- set_option pp.explicit true in
 
-Statement Matrix.one_on_diag_ebasis {n : ℕ} (hn : n > 0) {f : Mat[n, n][ℝ] →ₗ[ℝ] ℝ}
+Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     ∀ i, f (E i i) = 1 := by
+  /-  TODO:  Simplify this ourverture regarding n = 0 as much as possible
+             AND UPDATE HINTS!                                         -/
+  by_cases hn0 : n = 0
+  · intro i
+    subst hn0
+    apply IsEmpty.false at i
+    contradiction
+  have hn : n > 0
+  · omega
   intro i
   Hint "
    Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer Weile:

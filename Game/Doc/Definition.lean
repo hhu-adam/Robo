@@ -554,3 +554,8 @@ DefinitionDoc Prod as "∏"
 /-- `P : MvPolynomial (Fin n) R` bedeutet, dass `P` ein Polynomial in `n` Unbestimmten
 `X 0`, …, `X (n-1)` mit Koeffizienten in `R` ist. -/
 DefinitionDoc MvPolynomial as "MvPolynomial"
+
+/--
+Für eine Matrix `A` ist `trace A` die Spur von `A`. Der Ausdruck ist auch auf Leansch äquivalent zu `∑ i, A i i`.
+-/
+DefinitionDoc Matrix.trace as "trace"

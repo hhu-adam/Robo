@@ -52,32 +52,14 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
     **Robo**: `ext`!"
   ext A
   Hint "**Du**: Und jetzt schreiben wir `f {A}` als Summe von Basiselementen."
-  rw [eq_sum_apply_diag_ebasis] -- Lvl 7
-  Hint "
-    **Du**: `induction n`?
-
-    **Robo**: Probiers!
-    "
-  induction n with d hd
-  · Hint (hidden := true) "**Robo**: Ich hab im Kopf mal `simp` ausprobiert. Probier es auch mal."
-    simp
-  · clear hd
-    Hint "**Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
+  rw [eq_sum_apply_diag_ebasis] -- Lvl 8
+  Hint (hidden := true) "
+      **Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
 
       **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
-    Hint (hidden := true) "
-      **Robo**: `one_on_diag_ebasis` braucht hier eine Reihe von Annahmen.
-      Die Annahme `{d} + 1 > 0` solltest du am besten erst einmal mit `have` festhalten.
-      "
-    --simp at h₂
-    have : d + 1 > 0 := by
-      omega
-    Hint (hidden := true) "
-      **Robo**:  Denk daran, dass du die Gleichung `one_on_diag_ebasis` auch `simp` mitgeben kannst!
-    "
-    simp [one_on_diag_ebasis this h₁ h₂] -- Lvl 8
-    Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
-    rfl
+  simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
+  Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
+  rfl
   Hint "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?
 
   **Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument
@@ -85,7 +67,6 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   assumption
 
 /--
-
 Nicht genau definiert als, aber per Definition äquivalent zu:
 `trace A = ∑ i, A i i`.
 
