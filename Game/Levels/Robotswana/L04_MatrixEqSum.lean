@@ -31,7 +31,12 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   Hint "**Du**: Das scheint einfach zu sagen, dass diese `E i j` ein Erzeugendensystem für den Raum der Matrizen bilden.
 
     **Robo**: Da kannst du bestimmt gleich die Resultate anwenden, die wir schon gefunden haben!"
-  Hint (hidden := true) "**Robo**: Schau zuerst den Ausdruck `(A i j) • E i j` an. Unter Summen braucht man `simp_rw`."
+  Hint (hidden := true) "**Robo**: Den Ausdruck `(A i j) • E i j` kannst du doch bestimmt mit `Matrix.smul_ebasis` vereinfachen.
+
+  **Du**: Also `rw[…]`?
+
+  **Robo**:  Nein, unter der Summe wird das nicht funktionieren.
+  Aber `simp […]` hat Aussicht auf Erfolg."
   Branch
     unfold E
     Hint "**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament wiederholen.
@@ -39,6 +44,8 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
 
     **Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
     simp
+    /- should now be the same proof state as after
+       the `simp [Matrix.smul_ebasis] in the next line -/
   simp [Matrix.smul_ebasis] -- Lvl 1
   Hint "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus meiner Bibliothek.
   Das ist genau `apply matrix_eq_sum_single`.
