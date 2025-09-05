@@ -66,14 +66,5 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   ausgelassen.  Jetzt kannst du es noch nachholen."
   assumption
 
-/--
-Nicht genau definiert als, aber per Definition äquivalent zu:
-`trace A = ∑ i, A i i`.
-
-mathlib benutzt den Term `diag A i` auf den wir hier nicht genauer eingehen.
-
--/
-DefinitionDoc Matrix.trace as "trace"
-
 NewDefinition Matrix.trace
 TheoremTab "Matrix"
