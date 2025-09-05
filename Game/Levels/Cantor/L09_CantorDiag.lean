@@ -60,7 +60,7 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   Aber ich bin gerade etwas verloren.
   "
   let c : A → Y := fun (a : A) ↦ s (f a a)
-  Hint "**Cantor**: Gute Wahl!"
+  -- Hint "**Cantor**: Gute Wahl!" -- will display irrespective of choice of c :(
   obtain ⟨a, ha⟩ := hf c
   use (f a a)
   unfold fixedPoints IsFixedPt
