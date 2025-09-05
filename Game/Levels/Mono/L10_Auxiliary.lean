@@ -21,11 +21,6 @@ Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, 
        ( f a = b   ∨   ¬ ∃ a' : A , f a' = b )
     ```
   "
-  Hint (hidden := true) "
-    **Robo**:  Vielleicht nimmst du dir als erstes mal mit `obtain` irgendein Element aus `A` her.
-    Du weißt ja, dass es eins gibt.
-  "
-  obtain ⟨a₀⟩ := hA
   intro b
   Hint (hidden := true) "
     **Robo**:  Nun ja, du könntest mit `by_cases` eine Fallunterscheidung machen, ob denn nun `{b}` ein Urbild besitzt oder nicht.
@@ -35,6 +30,10 @@ Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, 
     use a
     left
     assumption
-  use a₀
-  right
-  assumption
+  · Hint (hidden := true) "
+      **Robo**:  Du weißt ja zumindest, dass *irgendein* Element in `{A}` existiert.  Vielleicht „kontruierst“ du dir das einmal mit `obtain`.
+    "
+    obtain ⟨a₀⟩ := hA
+    use a₀
+    right
+    assumption
