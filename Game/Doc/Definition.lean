@@ -237,6 +237,8 @@ während `Icc 0 (n-1) : Finset ℕ` eine endliche Teilmenge von `ℕ` ist.)
 -/
 DefinitionDoc Fin as "Fin"
 
+/-- `Icc a b` ist das abgeschlossene Interval $[a,b]$.-/
+DefinitionDoc Finset.Icc as "Icc"
 -- DefinitionDoc Disjoint as "Disjoint"
 -- "
 -- "

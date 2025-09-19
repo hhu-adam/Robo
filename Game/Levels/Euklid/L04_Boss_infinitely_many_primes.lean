@@ -5,7 +5,7 @@ Level 4
 Title ""
 
 Introduction "Nach einer Weile hört ihr Papierrascheln.
-Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder.
+Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder.
 „Euklid, Bibliotheksdirektor“ steht an der Tür.
 
 **Euklid**:

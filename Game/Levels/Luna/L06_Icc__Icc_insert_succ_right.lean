@@ -53,4 +53,6 @@ Finset.insert_Icc_eq_Icc_sub_one_left
 Finset.insert_Icc_add_one_left_eq_Icc
 Finset.insert_Icc_sub_one_right_eq_Icc
 
+NewDefinition Finset.Icc
+
 Conclusion ""

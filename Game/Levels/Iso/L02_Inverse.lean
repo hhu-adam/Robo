@@ -20,7 +20,7 @@ TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in 
 
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
-  Hint "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zur ihr inverse Abbildung existiert.
+  Hint "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zu ihr inverse Abbildung existiert.
   Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten.
   Hattest du dir die Aussagen abgespeichert?
 

@@ -12,7 +12,7 @@ Introduction
 
 open Function
 
-Statement {x y : ℤ} (f : ℤ → ℤ) (h : x = y) :
+Statement {x : ℤ} (f : ℤ → ℤ) :
     let g : ℤ → ℤ := fun x ↦ x + 3;
     f (g 0) = f 3 := by
   Hint "**Robo**: Oh, das ist ein Fall für `congr_arg`.  Wenn du schon weiß, dass `x = y`, erhälst du

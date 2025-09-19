@@ -39,7 +39,7 @@ Statement {A Y : Type} {f : A → A → Y} {s : Y → Y}
 
     Du runzelst die Stirn.
 
-    **Robo**: Doch doch, das hatte wir uns auf Epo schon einmal überlegt!
+    **Robo**: Doch doch, das hatten wir uns auf Epo schon einmal überlegt!
     Du kannst `{f} {a} {a}` entweder als `{f} {a}` angewendet auf `{a}` oder als
     `{f}` angewendet auf `({a},{a})` interpretieren.
 

@@ -23,7 +23,7 @@ Conclusion "
 
   **Du**: So so …
 
-  Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game,
+  Der anonyme Funker möchte wissen, ob ihr bereit seid für das End Game,
   oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.
 
   „Bereit” funkt Robo zurück.

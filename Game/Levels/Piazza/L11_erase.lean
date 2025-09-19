@@ -6,7 +6,7 @@ Level 11
 Title ""
 
 Introduction "
-**Mem**:  Hey, Fin, wachst machst Du denn da?
+**Mem**:  Hey, Fin, was machst Du denn da?
 
 Fin ist der kleinste in der Runde und hat bislang nichts gesagt.
 Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.

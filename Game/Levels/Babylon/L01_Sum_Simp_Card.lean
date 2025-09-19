@@ -28,7 +28,7 @@ Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
 
 TheoremTab "∑ Π"
 
-Conclusion "**Babylonier**: Seht gut, das passt!"
+Conclusion "**Babylonier**: Sehr gut, das passt!"
 
 NewDefinition Finset.card
 

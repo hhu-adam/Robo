@@ -10,7 +10,7 @@ Title "" -- "Bild/Urbild"
 
 Introduction "
 **Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke.
-Vielleicht könnte ihr mir ja helfen.  Zum Beispiel: …
+Vielleicht könntet ihr mir ja helfen.  Zum Beispiel: …
 
 Sie diktiert euch eine Aussage. Robo schreibt sie auf.
 "
