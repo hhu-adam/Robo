@@ -11,7 +11,7 @@ Introduction
 Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis,
 aber den mochte er nicht. Er wollte einen Beweis, der weder `rw` noch `apply` verwendet!!
 
-Er holt tief Luft und seuft.
+Er holt tief Luft und seufzt.
 
 **Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist.
 Aber meint Ihr, Ihr schafft das?
