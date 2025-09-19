@@ -13,7 +13,7 @@ Title "" -- "Span"
 An `n`-dimensional vector is nothing but a function out of `Fin n`. For instance
 a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
 `x i : ℝ`.
-We represent such a vector as `![x_1, ..., x_n]`.
+We represent such a vector as `![x_1, …, x_n]`.
 
 Under the hood, `![a, b, c]` is syntax for `vecCons a (vecCons b (vecCons c vecEmpty))`.
 where `Matrix.vecCons : α → (Fin n → α) → Fin (Nat.succ n) → α`

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 2
 
-Title "" -- "Aller Anfang ist... ein Einzeiler?"
+Title "" -- "Aller Anfang ist… ein Einzeiler?"
 
 Introduction
 "

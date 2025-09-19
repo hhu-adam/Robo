@@ -3,7 +3,7 @@
 variables (A B : Prop)
 
 /-
-Du kennst fast alles, um folgende Aufgabe zu lösen, aber...
+Du kennst fast alles, um folgende Aufgabe zu lösen, aber…
 
 Eine Richtung der Aussage `(A ∨ B) ↔ (¬ A → B)` kann man
 nur zeigen, indem man die beiden Fälle betrachtet: entweder ist `A` wahr oder falsch

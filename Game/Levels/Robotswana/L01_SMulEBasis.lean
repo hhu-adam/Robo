@@ -42,7 +42,7 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   Jedenfalls sieht `Mat[{n},{n}]` stark nach $({n} \\times {n})$-Matrizen aus.
   Ich weiß nur nicht mehr, was `Fin {n}` ist.
 
-  **Robo**: `Fin {n}` war die Menge $\\\{0,...,n-1\\}$.
+  **Robo**: `Fin {n}` war die Menge $\\\{0,…,n-1\\}$.
   Die Zeilen- und Spaltenindizes fangen hier also bei $0$ an und nicht bei $1$.
   Und `single i j a` kenne ich zufällig.
   Das ist die Matrix, die an der Position `(i, j)` den Eintrag `a` hat und sonst überall Null ist.

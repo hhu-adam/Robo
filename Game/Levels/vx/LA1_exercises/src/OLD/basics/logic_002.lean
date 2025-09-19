@@ -49,5 +49,5 @@ end
 /- Tactic : have
 `have h : A := _` speichert ein Zwischenresultat vom Typ `A` unter dem Namen `h` ab.
 Für den Platzhalter `_` kommt dann der Beweis, also ein Element vom richtigen Typ, oder
-ein `begin ... end`-Block, der ein solches mit Taktiken konstruiert.
+ein `begin … end`-Block, der ein solches mit Taktiken konstruiert.
 -/

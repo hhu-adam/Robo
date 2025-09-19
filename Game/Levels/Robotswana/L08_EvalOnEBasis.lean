@@ -55,7 +55,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   Vermutlich sollte ich also als erstes das `A` in `f A` als Summe von Basismatrizen
   schreiben, nicht aber das andere `A` weiter hinten.
 
-  **Robo** (*aus der Ferne*): `nth_rw 1 [ ... ]`! Funktioniert wie `rw`."
+  **Robo** (*aus der Ferne*): `nth_rw 1 [ … ]`! Funktioniert wie `rw`."
   Hint (hidden := true) "**Du** (*schreiend*): Was meinst du damit?
 
   **Robo** (*ebenfalls schreiend*): Na, du willst bestimmt `matrix_eq_sum_ebasis A` anwenden, aber mit `nth_rw 1` und nicht mit `rw`.

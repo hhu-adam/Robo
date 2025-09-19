@@ -24,7 +24,7 @@ Statement {A : Type} (f : ℕ → A) :
     **Robo**:  Keine Ahnung.  Was ich meinte, ist natürlich:  *falls `n ≥ 0` ist*,
                dann ist `n.toNat` immer noch „dieselbe“ Zahl.
     "
-  Hint (hidden := true) "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then ... else ...`
+  Hint (hidden := true) "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then … else …`
   definieren."
   let g : ℤ → A := fun n ↦ if (0 ≤ n) then f n.toNat else f 0
   Hint (strict := true) "**Robo**: Jetzt kannst du dein `g` mit `use` einsetzen und

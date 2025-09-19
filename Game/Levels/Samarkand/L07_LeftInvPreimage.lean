@@ -16,7 +16,7 @@ open Function Set
 Statement  {A B : Type} {f : A → B} {g : B → A}
     (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
-  Hint "**Du**:  Mal überlegen..."
+  Hint "**Du**:  Mal überlegen…"
   intro b hb
   obtain ⟨x, hx, e⟩ := hb
   Branch

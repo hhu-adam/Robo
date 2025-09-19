@@ -434,7 +434,7 @@ end
 -- -- open submodule -- damit man `span` anstatt `submodule.span` schreiben kann
 
 -- -- /-
--- -- Eine Teilmenge `M = {m₁, m₂, ..., mₖ} ⊆ V` eines `K`-Vektorraums `V` ist
+-- -- Eine Teilmenge `M = {m₁, m₂, …, mₖ} ⊆ V` eines `K`-Vektorraums `V` ist
 -- -- ein "Erzeugendensystem" wenn die Hülle von `M` ganz `V` aufspannt.
 
 -- -- In Lean kann man das als `span K M = ⊤` schreiben, aber standardmässig wird

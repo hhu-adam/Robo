@@ -13,7 +13,7 @@ Introduction
 namespace Function
 
 
---TODO: `unfolding` at random places breaks all the hints...
+--TODO: `unfolding` at random places breaks all the hints…
 
 /---/
 TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in "Function"
