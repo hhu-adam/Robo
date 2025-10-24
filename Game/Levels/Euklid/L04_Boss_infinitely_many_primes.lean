@@ -4,6 +4,7 @@ World "Euklid"
 Level 4
 Title ""
 
+/-
 Introduction "Nach einer Weile hört ihr Papierrascheln.
 Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder.
 „Euklid, Bibliotheksdirektor“ steht an der Tür.
@@ -23,17 +24,22 @@ und finde nur kleinste Bruchstücke.
 Schauen Sie, hier habe ich jetzt schließlich selbst angefangen,
 eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?
 "
+-/
+Introduction "`INTRO` Intro Euklid L04"
 
 open Finset
 namespace Nat
 
 Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
+  /-
   Hint "**Robo**: Klar, das machen wir.
   Ist doch ein typischer Widerspruchsbeweis:
   Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt
   aller Primzahlen plus Eins durch keine Primzahl teilbar.
   Andererseits gilt: `exists_prime_and_dvd`.  Widerspruch.
   "
+  -/
+  Hint "Try `by_contra`"
   by_contra hf
   -- notation to make equations human-readable:
   let all_primes := hf.toFinset
@@ -86,6 +92,9 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   specialize h_no_prime_divides p hp
   contradiction
 
+/-
 Conclusion "Euklid ist begeistert und tanzt im Kreis.
 Er möchte euch fast nicht gehen lassen.
 Ihr versprecht, in Kontakt zu bleiben."
+-/
+Conclusion "`CONC` Conclusion Euklid L04"

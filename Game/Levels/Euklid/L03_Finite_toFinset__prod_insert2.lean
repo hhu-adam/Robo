@@ -4,16 +4,20 @@ World "Euklid"
 Level 3
 Title ""
 
+/-
 Introduction "
   Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.
   Robo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent.
 "
+-/
+Introduction "`INTRO` Intro Euklid L03"
 
 open Finset
 namespace Nat
 
 Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ (p : ℕ), Prime p → p ∣ a := by
   -- tauto -- If we don't insist a > 0, tauto solves this!
+  /-
   Hint "**Robo**: Oho!  Das sieht ja ganz interessant aus:
   Wenn wir annehmen, dass es nur endlich viele Primzahlen gibt,
   dann gibt es auch eine positive natürliche Zahl, die von jeder Primzahl geteilt wird.
@@ -30,7 +34,10 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
 
   **Du**:  Okay, ich probier das mal.
   "
+  -/
+  Hint "Try `let all_primes := hf.toFinset`"
   let all_primes := hf.toFinset
+  /-
   Hint "
     **Du**:  Und die nächste Zeile?
 
@@ -41,7 +48,10 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     **Robo**:  Nein, die ist wieder hochgradiger Schwachsinn.
     Wie gesagt, du willst jetzt sicherlich das Produkt aller dieser Zahlen benutzen.
     Das Produktzeichen schreibst du als `\\prod`."
+  -/
+  Hint "Try `\\prod`"
   use ∏ p ∈ all_primes, p
+  /-
   Hint "
     **Robo**:  Bravo.
 
@@ -50,8 +60,11 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     **Robo**: Ups.  Ja, hatten wir, aber habe ich leider nicht abgespeichert.
     Musst du leider noch einmal rekonstruieren, wie die Argumente gingen.
     "
+  -/
+  Hint "Try `constructor`"
   constructor
-  · Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
+  · -- Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
+    Hint "Try `Finset.prod_pos`"
     apply Finset.prod_pos
     intro p
     simp [all_primes]
@@ -61,10 +74,13 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
   · intro p hp
     -- previous lemma would be useful now, but want to practise!
     have hp' : p ∈ all_primes := by
+      /-
       Hint (hidden := true) "
         **Robo**: Wenn `simp` hier nicht funktioniert, musst du `simp` vielleicht
         die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`.
         "
+      -/
+      Hint (hidden := true) "Try `simp [all_primes]`"
       simp [all_primes]
       assumption
     rw [← insert_erase hp']
@@ -81,6 +97,7 @@ TheoremDoc Set.Finite.toFinset as "toFinset" in "Set"
 NewTheorem Set.Finite.toFinset
 NewDefinition Set.Finite
 
+/-
 Conclusion "
   Ihr schlagt einen Gang ein, indem gleich mehere Bücher auf dem Boden liegen.
   Aber keines ist aufgeschlagen.
@@ -90,3 +107,5 @@ Conclusion "
 
   **Robo**: Folgen wir ihr!
  "
+-/
+Conclusion "`CONC` Conclusion Euklid L03"

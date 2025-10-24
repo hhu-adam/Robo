@@ -4,12 +4,14 @@ World "Euklid"
 Level 2
 Title ""
 
-Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde."
+/- Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde." -/
+Introduction "`INTRO` Intro Euklid L02"
 
 open Finset
 namespace Nat
 
 Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
+  /-
   Hint "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:
   wenn eine Zahl `{b}` einen Faktor `a` eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.
 
@@ -18,25 +20,40 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
   **Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst.
   Wir fangen natürlich mit `intro` an.
   "
+  -/
+  Hint "Try `intro`"
   intro h
-  Hint "**Robo**:  Und jetzt zerlegen wir die Annahme `{h}` in ihre drei Bestandteile."
+  /- Hint "**Robo**:  Und jetzt zerlegen wir die Annahme `{h}` in ihre drei Bestandteile." -/
+  Hint "Try `obtain`"
   obtain ⟨a, ha, hpa⟩ := h
+  /-
   Hint "
     **Du**:  Vermutlich will ich jetzt den Faktor `{a}` irgendwie aus dem Produkt heraustrennen?
 
     **Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie `insert_erase`.
   "
+  -/
+  Hint "Try `insert_erase`"
+  /-
   Hint (hidden := true) "
     **Robo**:  Probier mal `rw [← insert_erase {ha}]`.
   "
+  -/
+  Hint (hidden := true) "Try `rw [← insert_erase {ha}]`"
   rw [← insert_erase ha]
+  /-
   Hint "
     **Robo**:  Und jetzt verwendest du `prod_insert`, und den Faktor tatsächlich herauszuziehen.
   "
+  -/
+  Hint "Try `prod_insert`"
   rw [prod_insert]
+  /-
   Hint (hidden := true) "
     **Robo**:  Der Rest sollte jetzt einfach sein.
   "
+  -/
+  Hint (hidden := true) "Story"
   · obtain ⟨k, hk⟩ := hpa
     use k * ∏ x ∈ erase A a, x
     rw [hk]
