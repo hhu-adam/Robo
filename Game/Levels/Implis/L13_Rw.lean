@@ -5,6 +5,7 @@ Level 13
 
 Title "" -- "Lemmas"
 
+/-
 Introduction
 "
 **Operationsleiter**: Wieder etwas für den Kollegen …. Und er wollte wieder einen
@@ -16,12 +17,21 @@ lemma not_not (A : Prop) : ¬¬A ↔ A
 
 **Operationsleiter**: Schafft Ihr das damit?
 "
+-/
+Introduction "Intro Implis L13: Do not use `apply`. Try it with
+```
+lemma not_not (A : Prop) : ¬¬A ↔ A
+```"
 
 Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B ∧ (¬¬C) := by
+  /-
   Hint "
     **Robo**: Ein Lemma, das wie `not_not` ein `↔` oder `=` im Statement hat, kann
     auch mit `rw [not_not]` verwendet werden."
+  -/
+  Hint "Try `rw [not_not]`"
   rw [not_not]
+  /-
   Hint "
     **Du**: Häh, wieso hat das jetzt 2 von 3 der `¬¬` umgeschrieben?
 
@@ -29,14 +39,19 @@ Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B
     mehrmals vorkommt, werden die alle ersetzt …
 
     **Du**: Ah, und `¬¬B` ist etwas anderes, also brauche ich das Lemma nochmals."
+  -/
+  Hint "Try `rw [not_not]`"
   rw [not_not]
 
+/-
 Conclusion
 "
 **Du**: Wir sind schon fertig …?
 
 **Robo**: Ja, `rw` versucht immer anschließend `rfl` aufzurufen, und das hat hier funktioniert.
 "
+-/
+Conclusion "Conclusion Implis L13: Explain that `rw` always tries to apply `rfl`"
 
 OnlyTactic rw
 
