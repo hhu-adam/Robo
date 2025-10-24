@@ -10,12 +10,16 @@ open Finset
 
 Title ""
 
+/-
 Introduction
 "
 Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an.
 "
+-/
+Introduction "`INTRO` Intro Babylon L08"
 
 Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
+  /-
   Hint "
     **Du**:  Hier also eine Summe nur über ungeraden Zahlen.
     $$
@@ -24,6 +28,8 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
 
     **Robo**: Das funktioniert doch genau gleich wie zuvor.
     "
+  -/
+  Hint "Try `induction n with d hd`"
   induction n with d hd
   · simp
   · rw [← insert_Icc_eq_Icc_add_one_right]
@@ -35,6 +41,7 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
 
 TheoremTab "∑ Π"
 
+/-
 Conclusion "
   **Babylonier**:  Und?  Gefällt es euch hier?
 
@@ -45,3 +52,6 @@ Conclusion "
 
   Ihr verabschiedet euch und macht euch auf den Weg zurück zum Raumschiff.
 "
+-/
+
+Conclusion "`CONC` Conclusion Babylon L08"

@@ -5,13 +5,18 @@ Level 3
 
 Title ""
 
+/-
 Introduction
 "Als nächstes kommt ihr an einen leeren Bauplatz, auf dem sich schon lange nichts getan zu haben scheint.
 Auf dem Bauschild steht:"
+-/
+
+Introduction "`INTRO` Intro Babylon L03"
 
 open Finset
 
 Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i-1)*i*(i+1)  = 0  := by
+  /-
   Hint "
     **Du**: Die Annahme sieht wie eine verklausulierte Variante von $I \\subseteq \\\{-1,0,1\\}$ aus.
     Das kann ja so oder so keine große Summe werden.
@@ -19,12 +24,17 @@ Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i
     **Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten.
     Ich schlage vor: `trans ∑ i ∈ I, 0`.  Das Summezeichen schreibst du als `\\sum`.
     "
+  -/
+  Hint "try `trans ∑ i ∈ I, 0`"
   trans ∑ i ∈ I, 0
+  /-
   Hint "
     **Robo**:  Genau. Jetzt kannst du nämlich `apply sum_congr` schreiben
     – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und
       auch die Ausdrücke, über die summiert wird, übereinstimmen.
   "
+  -/
+  Hint "try `apply sum_congr`"
   apply sum_congr
   rfl
   assumption

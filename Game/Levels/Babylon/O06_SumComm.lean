@@ -9,6 +9,7 @@ Level 6
 
 Title "" -- "Summe vertauschen"
 
+/-
 Introduction
 "
 **Babylonier**: Schaut mal, da vorn stehen zwei Freunde von mir. Ich muss euch unbedingt vorstellen!
@@ -23,16 +24,21 @@ Natürlich fangt ihr an zu rätseln, was darunter stand.
 
 **Robo**: Probier mal, das im lokalen Dialekt zu formulieren.
 "
+-/
 
+Introduction "Intro Babylon O06. Display $$\\sum_{i=0}^n\\sum_{j=0}^m a_{ij} = \\sum_{j=0}^m\\sum_{i=0}^n a_{ij}$$"
 
 Statement
 (n m : ℕ) : ∑ i : Fin n, ∑ j : Fin m, (2 ^ (i:ℕ) * (1 + (j:ℕ))) =
     ∑ j : Fin m, ∑ i : Fin n, (2 ^ (i:ℕ) * (1 + (j:ℕ))) := by
+  /-
   Hint "**Robo**: Das sieht gut aus, aber du solltest das kurz beweisen, um sicher zu sein.
 
   **Du**: Hast du nicht ein Lemma dafür?
 
   **Robo**: Doch, probier mal `sum_comm`."
+  -/
+  Hint "Try `sum_comm`"
   rw [sum_comm]
 
 /---/
@@ -41,6 +47,7 @@ TheoremDoc Finset.sum_comm as "sum_comm" in "∑ Π"Π Π"
 NewTheorem Finset.sum_comm
 TheoremTab "∑ Π"Π Π"
 
+/-
 Conclusion "
   Die drei Babylonier sind begeistert, als ihr ihnen das Stück Papier überreicht,
   auf das du die Aussage gekritzelt hast. Gleich zückt einer einen Meißel und sie beginnen, eine
@@ -48,3 +55,6 @@ Conclusion "
 
   Ihr beschließt, euch noch ein bisschen allein umzusehen.
 "
+-/
+
+Conclusion "Conclusion Babylon O06"

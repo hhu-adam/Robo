@@ -6,13 +6,19 @@ Level 1
 Title ""
 
 Introduction
+/-
 "
 **Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen,
 warum er steht. Hier zum Beispiel.
 "
+-/
+"
+`INTRO` Intro Babylon L01
+"
 
 open Nat Finset
 Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
+  /-
   Hint "
     **Du**: Oh das ist ganz schön viel neues … mal sehen …
 
@@ -24,11 +30,16 @@ Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
 
     **Robo** *(zu Dir)*: Ich würde als erstes `simp` versuchen.
     Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
+  -/
+  Hint "Try `simp`"
   simp
 
 TheoremTab "∑ Π"
 
+/-
 Conclusion "**Babylonier**: Sehr gut, das passt!"
+-/
+Conclusion "`CONC` Conclusion Babylon L01"
 
 NewDefinition Finset.card
 
