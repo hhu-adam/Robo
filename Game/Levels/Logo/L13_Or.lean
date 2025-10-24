@@ -5,13 +5,17 @@ Level 13
 
 Title "" -- "Oder"
 
+/-
 Introduction
 "
 Der nächste bitte …
 "
+-/
+Introduction "`INTRO` Intro Logo L13"
 
 /--  -/
 Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
+  /-
   Hint "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir,
 wie die Klammern gesetzt sind. Irre…
 
@@ -27,22 +31,34 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
 **Du** Also, wieder `obtain …`?
 
 **Robo** Ja, aber diesmal nicht `obtain ⟨h₁, h₂⟩ := {h}`, sondern `obtain h | h := {h}`."
+-/
+  Hint "Observe goal as `({A} ∧ {B}) ∨ {A}`. Try `obtain …` via `obtain h | h := {h}` not via `obtain ⟨h₁, h₂⟩ := {h}`"
   obtain h | h := h
+  /-
   · Hint "**Robo**
     Jetzt musst du dein Ziel zweimal beweisen:
     Einmal unter Annahme der linken Seite `{A} ∧ {B}`,
     und einmal unter Annahme der rechten Seite `{A}`.
     Hier haben nehmen wir an, die linke Seite
     sei wahr."
+  -/
+  · Hint "Prove goal once for `{A} ∧ {B}` and once for `{A}`"
+    /-
     Hint (hidden := true) " **Robo** Wie man mit einem Und in den Annahmen umgeht,
     weißt du doch schon:
     `obtain ⟨h₁, h₂⟩ := {h}`. Zur Erinnerung: Für die Klammern schreibst du `\\<>`."
+    -/
+    Hint (hidden := true) "Try `obtain ⟨h₁, h₂⟩ := {h}`. Write brackets as `\\<>`"
     obtain ⟨h₁, _h₂⟩ := h
     assumption
+  /-
   · Hint (strict := true) "**Robo** Jetzt musst du dein Ziel noch unter der rechten Annahme
     von `({A} ∧ {B}) ∨ {A}` zeigen, also angenommen, `{A}` sei wahr."
+  -/
+  · Hint (strict := true) "Show goal via `({A} ∧ {B}) ∨ {A}` i.e. assume `{A}` is true"
     assumption
 
+/-
 Conclusion
 "**Du** Okay, das scheint ihn zufriedenzustellen. Nur noch eine Seele…
 Kannst du mir vorher noch einmal kurz alles Leansch zusammenfassen,
@@ -94,6 +110,15 @@ Hier sind alle Taktiken, die wir auf diesem Planeten gebraucht haben:
 **Du** Woher weißt du das eigentlich alles?
 
 **Robo** Keine Ahnung. War, glaube ich, vorinstalliert.
+"
+-/
+Conclusion "Conclusion Logo L13:
+Notations introdced so far:
+`ℕ`, `0, 1, 2, …`, `=`, `≠` (shorthand for `¬(·=·)`), `Prop`, `True` (`(True : Prop)` is always true),
+`False` (`(False : Prop)` is always false), `¬`, `∧`, `∨`, `(n : ℕ)`, `(A : Prop)`, `(ha : A)` (Proof that `(A : Prop)` is true),
+ `(h : A ∧ B)` (Assumption with name `h`).
+Tactics introduced so far:
+`rfl` (proves `A = A`), `assumption`, `contradiction`, `decide`, `constructor`, `left`/`right`, `obtain ⟨h₁, h₂⟩ := h`, `obtain h := h \\| h`
 "
 
 DisabledTactic tauto

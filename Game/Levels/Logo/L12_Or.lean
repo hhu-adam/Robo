@@ -5,12 +5,16 @@ Level 12
 
 Title "" -- "Oder"
 
+/-
 Introduction
 "
 Der nächste bitte …
 "
+-/
+Introduction "`INTRO` Intro Logo L12"
 
 Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
+  /-
   Hint "
     **Du** Muss ich jetzt wieder das Beweisziel de-konstruieren?
 
@@ -21,16 +25,22 @@ Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
     Ich will natürlich `{A}` beweisen!
 
     **Robo** Mit `left` bzw. `right`. Ist doch logisch, oder?"
+  -/
+  Hint "Try `left` | `right`"
   Branch
     right
-    Hint "**Robo** Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. Probier's nochmal."
+    -- Hint "**Robo** Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. Probier's nochmal."
+    Hint "Try `left` | `right`"
   left
   assumption
 
+/-
 Conclusion
 "
 Auch dieser Formalosoph zieht zufrieden von dannen.
 "
+-/
+Conclusion "`CONC` Conclusion Logo L12"
 
 NewDefinition Or
 NewTactic left right
