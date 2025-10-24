@@ -5,4 +5,4 @@ lake-packages/
 images/tmp-download/
 *~
 min_placeholders/
-.vscode/*
+.vscode/
