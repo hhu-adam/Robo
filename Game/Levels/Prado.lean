@@ -14,6 +14,7 @@ Title "Prado"
 
 Image "images/Prado.png"
 
+/-
 Introduction "Ihr seid auf einem Eisplaneten gelandet,
 direkt neben einem Eispalast.  Du hast das Gefühl,
 diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen,
@@ -38,3 +39,5 @@ Ihr seid beide etwas perplex.  Guino hebt die Augenbrauen.
 
 **Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?
 "
+-/
+Introduction "`INTRO` Intro Prado"

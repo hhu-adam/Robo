@@ -18,6 +18,7 @@ Title "Luna"
 
 Image "images/MoonLuna.png"
 
+/-
 Introduction "
 Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert.
 Er hat eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche eine kleine
@@ -43,3 +44,5 @@ und dort verstauen, und dann stellt Euch auf die markierten Besucher-Standpunkte
 ich hier noch ganz durcheinander.
 
 "
+-/
+Introduction "`INTRO` Intro Luna"

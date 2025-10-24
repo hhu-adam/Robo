@@ -15,9 +15,12 @@ Title "Robotswana"
 
 Image "images/Robotswana.png"
 
+/-
 Introduction "
 Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslandschaft hinaus.
 
 Nach etwas Umschauen entdeckt Robo Spuren, die von eurem Landeplatz wegführen, zwischen
  vereinzelten Bäumen hindurch. Ihr beratet kurz und beschließt, den Spuren zu folgen.
 "
+-/
+Introduction "`INTRO` Intro Robotswana"

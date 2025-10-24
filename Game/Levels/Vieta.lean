@@ -14,6 +14,7 @@ Title "Vieta"
 
 Image "images/Vieta.png"
 
+/-
 Introduction "
 Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet.
 Weit und breit ist niemand zu sehen.
@@ -36,3 +37,5 @@ Ihr erhebt euch vorsichtig, da zischt schon wieder dicht neben euch ein Pfeil vo
 **Vieta**:  Nun, ich habe gelernt, immer zur richtigen Zeit an der richtigen Stelle zu stehen.
 Macht euch keine Sorgen.
 "
+-/
+Introduction "`INTRO` Intro Vieta"

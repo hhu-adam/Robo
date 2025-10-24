@@ -17,6 +17,7 @@ Title "Piazza"
 
 Image "images/SetTheory.png"
 
+/-
 Introduction "
 Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet.
 Überall stehen Händler, die ihre Waren feilbieten.
@@ -39,3 +40,5 @@ Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich
 
 **Du**:  Und, habt ihr schon etwas gelernt?
 "
+-/
+Introduction "`INTRO` Intro Piazza"

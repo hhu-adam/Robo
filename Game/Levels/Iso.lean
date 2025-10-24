@@ -11,6 +11,7 @@ Title "Iso"
 
 Image "images/Iso.png"
 
+/-
 Introduction "
 **Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!
 
@@ -34,3 +35,5 @@ Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichs
 Wie sich herausstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann.
 Ihr düst ein paar Mal hin und her.
 "
+-/
+Introduction "`INTRO` Intro Iso"

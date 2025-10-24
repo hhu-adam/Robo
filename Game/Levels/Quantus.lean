@@ -18,6 +18,7 @@ Title "Quantus"
 
 Image "images/Quantus.png"
 
+/-
 Introduction "Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosopheninnen.
 Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen.
 Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.
@@ -54,3 +55,5 @@ Tatsächlich befindet sich darin nur eine einziges Stück Papier.
 Nach wenigen Minuten liegt es wieder bei euch.
 Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht.
 "
+-/
+Introduction "`INTRO` Intro Quantus"

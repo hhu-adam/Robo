@@ -22,6 +22,7 @@ Title "Logo"
 
 Image "images/QueenOfLogic.png"
 
+/-
 Introduction "
 Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit
 bist du aus Versehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück.
@@ -42,3 +43,5 @@ Robo, das ist dein kleiner SmartElf. Robo ist zwar auch nicht die mathematische 
 in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.
 Und das ist Gold wert.
 "
+-/
+Introduction "`INTRO` Intro Logo"

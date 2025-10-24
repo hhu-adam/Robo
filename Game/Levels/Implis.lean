@@ -22,6 +22,7 @@ Title "Implis"
 
 Image "images/Implication.png"
 
+/-
 Introduction
 "
 Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Planeten, der ebenfalls
@@ -45,3 +46,5 @@ Wisst Ihr, wir fördern hier Wahrheitswerte. Und dabei muss man höllisch aufpas
 Ein Fehler, und alles bricht zusammen. Aber ich bin sehr vorsichtig. Ich sage immer:
 Lieber Stillstand als Untergang!
 "
+-/
+Introduction "Intro Implis: mention that planet could not be solved without `tauto`"

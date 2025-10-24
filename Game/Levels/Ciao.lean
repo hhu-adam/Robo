@@ -8,6 +8,7 @@ Title "Ciao"
 
 Image "images/Robo/Spacecraft.png"
 
+/-
 Introduction "
 **Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht haben?
 
@@ -21,3 +22,5 @@ Nach einer Weile …
 
 **Robo:** Du, schau mal, hier ist eine Nachricht reingekommen.
 "
+-/
+Introduction "`INTRO` Intro Ciao"
