@@ -5,19 +5,25 @@ Level 1
 
 Title ""
 
+/-
 Introduction "
 Die Fahrt ist tatsächlich kurz und schmerzlos.
 Und euch wird tatsächlich ein großen Empfang bereitet.
 Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufgaben konfrontiert."
+-/
+Introduction "`INTRO` Intro Epo L01"
 
 open Function
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 1
     Surjective f := by
+  /-
   Hint "**Du**: Vermute ich richtig, dass die Definition von `Surjective f` ist: `∀ y, (∃ x, f x = y)`?
 
   **Robo**: Glaub schon.  Du könntest ja mal mit `unfold Surjective` hineinsehen. Musst da aber auch nicht."
+  -/
+  Hint "Confirm that `Surjective f` is defined as `∀ y, (∃ x, f x = y)` via `unfold Surjective`"
   unfold Surjective
   intro y
   use y-1
@@ -34,4 +40,5 @@ DefinitionDoc Function.Surjective as "Surjective"
 NewDefinition Function.Surjective
 TheoremTab "Function"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Epo L01"
