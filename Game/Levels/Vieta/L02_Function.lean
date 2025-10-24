@@ -6,12 +6,16 @@ Level 2
 
 Title "" -- "Anonyme Funktionen"
 
+/-
 Introduction
 "
 Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Blatt.
 "
+-/
+Introduction "`INTRO` Intro Vieta L02"
 
 Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
+  /-
   Hint"
     **Robo**: Aha, das ist interessanter.  Hier ist
     `fun (x : ℤ) ↦ x ^ 2` eine „anonyme Funktion“, nämlich die Abbildung $x↦x^2$.
@@ -38,6 +42,8 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 
   **Robo**: Lean kann durch die meisten Abbildungsvorschriften hindurchsehen, also sollte `rfl`
   hier reichen. Alternativ kannst du mit `simp [{f}]` explizit die Definition einsetzen."
+  -/
+  Hint "Explain anonymous function `fun (x : ℤ) ↦ x ^ 2` and naming via `f : ℤ → ℤ := …`. Try `rfl` | `simp [{f}]`"
   Branch
     simp [f]
   rfl
@@ -46,4 +52,5 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 NewDefinition Symbol.function
 TheoremTab "Function"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Vieta L02"

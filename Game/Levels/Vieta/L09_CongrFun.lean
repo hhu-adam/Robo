@@ -7,12 +7,13 @@ Level 9
 Title "" -- "congr_fun"
 
 
-Introduction ""
-
+-- Introduction ""
+Introduction "Intro Vieta L09"
 
 open Function
 
 Statement (f g : ℤ → ℤ) (h : f = g) (x : ℤ) : f x = g x := by
+  /-
   Hint "
 **Robo**: Und das ist ein Fall für `congr_fun`.
     Hast du `h : f = g` als Annahme, kannst du sie mit mit `apply congr_fun at h` zu `h : ∀ x, f x = g x` umscheiben.
@@ -23,6 +24,8 @@ Statement (f g : ℤ → ℤ) (h : f = g) (x : ℤ) : f x = g x := by
 Ausdruck ist und noch nicht exact so im Beweisziel steht, dann nicht.
 Probiers mal, wie ich es gerade gesagt habe.
   "
+  -/
+  Hint "Try `congr_fun`. Given assumption `h : f = g` rewrite it via `apply congr_fun at h` to `h : ∀ x, f x = g x`. `rw [h]` not applicable to more complex `f`"
   apply congr_fun at h
   Branch
     specialize h x
@@ -36,4 +39,5 @@ OnlyTactic apply assumption «have»
 NewTheorem congr_fun
 TheoremTab "Function"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Vieta L09"
