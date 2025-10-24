@@ -6,12 +6,16 @@ Level 2
 
 Title ""
 
+/-
 Introduction
 "
 Auf der Rückseite steht folgendes.
 "
+-/
+Introduction "`INTRO` Intro Quantus L02"
 
 Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
+  /-
   Hint "
     **Du**: Was ist das denn jetzt?  `A` ist in „Typ“?
 
@@ -30,9 +34,12 @@ Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
     **Robo** Das ist wieder so ein Annahme, die man mit `obtain` „zerlegen“ kann.
     Probier mal `obtain ⟨a⟩ := h`.
   "
+  -/
+  Hint "Explain Statement, Try `obtain ⟨a⟩ := h`"
   obtain ⟨a⟩ := h
   use a
 
 NewDefinition Exists
 
-Conclusion "Ihr erhaltet einen bescheidenen Applaus.  Die Formalosophinnen tuscheln untereinander."
+-- Conclusion "Ihr erhaltet einen bescheidenen Applaus.  Die Formalosophinnen tuscheln untereinander."
+Conclusion "`CONC` Conclusion Quantus L02"

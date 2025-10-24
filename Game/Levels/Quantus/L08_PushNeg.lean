@@ -5,16 +5,20 @@ Level 8
 
 Title "" -- "PushNeg"
 
+/-
 Introduction
 "
 **Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich brauchen werden.
 "
+-/
+Introduction "`INTRO` Intro Quanus L08"
 
 
 open Function
 
 Statement {X : Type} (P : X → Prop) :
     ¬ (∃ x : X, P x) ↔ ∀ x : X, ¬ P x := by
+  /-
   Hint "
     **Du**: Was ist denn jetzt dieses `{P}`?
 
@@ -33,12 +37,15 @@ Statement {X : Type} (P : X → Prop) :
             Und du wolltest mir jetzt verraten, wie ich das auf Leansch zeige?
 
     **Robo**: Genau. Was du brauchst, ist `push_neg`."
+  -/
+  Hint "Explain `{P}` over `{X}` and statement `{P} x` for the natural number `x`. Try `push_neg`."
   Branch
     constructor
     intro h
-    Hint (hidden := true) "
-      **Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf
-      das Beweisziel anwenden, wohl aber auf `{h}`."
+    -- Hint (hidden := true) "
+    --  **Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf
+    --  das Beweisziel anwenden, wohl aber auf `{h}`."
+    Hint (hidden := true) "Try `push_neg` at `{h}`"
     push_neg at h
     assumption
     intro h
@@ -50,6 +57,7 @@ Statement {X : Type} (P : X → Prop) :
 NewTactic push_neg
 DisabledTactic tauto
 
+/-
 Conclusion
 "
 **Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:
@@ -62,4 +70,8 @@ Das erste Lemma ist die Aussage, die du gerade gezeigt hast.
 **Du**: Na toll. Ich habe die Aussage also gezeigt, indem ich sie benutzt habe …
 
 **Robo**: :-) Hauptsache, Du merkst dir `push_neg`.
+"
+-/
+Conclusion "Conclusion Quantus L08: `push_neg` internally uses `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
+and `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`. Memorize `push_neg`.
 "

@@ -5,15 +5,17 @@ Level 5
 
 Title ""
 
-Introduction
-"Eine weitere Frage erreicht euch.  Dieses stammt offenbar aus dem anderen Lager."
+-- Introduction
+-- "Eine weitere Frage erreicht euch.  Dieses stammt offenbar aus dem anderen Lager."
+Introduction "`INTRO` Intro Quantus L05"
 
 open Nat
 
 Statement (i : ℕ) (h : Odd i): (-1 : ℤ)^i  + 1 = 0 := by
-  Hint "
-    **Robo**:  Ich glaube, hier kommst du mit `Odd.neg_pow` weiter.
-  "
+  -- Hint "
+  --  **Robo**:  Ich glaube, hier kommst du mit `Odd.neg_pow` weiter.
+  -- "
+  Hint "Try `Odd.neg_pow`"
   rw [Odd.neg_pow]
   ring
   assumption
@@ -27,4 +29,5 @@ TheoremDoc Even.neg_pow as "Even.neg_pow" in "ℕ"
 NewTheorem Odd.neg_pow Even.neg_pow
 
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Quantus L05"

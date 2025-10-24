@@ -5,29 +5,38 @@ Level 9
 
 Title "" -- "PushNeg"
 
+/-
 Introduction
 "
 Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet.
 "
+-/
+Introduction "`INTRO` Intro Quantus L09"
 
 open Nat
 
 Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
-  Hint "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
+  -- Hint "**Du**: Oha. Ganz links ein `¬`. Was du nicht sagst …"
+  Hint "Remind about `¬`"
   Branch
     unfold Odd
-    Hint "
-      **Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.
-      Ich würde nochmal zurückgehen und `Odd` behalten,
-      damit man schlussendlich `not_odd_iff_even` brauchen kann!"
+    -- Hint "
+    --  **Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.
+    --  Ich würde nochmal zurückgehen und `Odd` behalten,
+    --  damit man schlussendlich `not_odd_iff_even` brauchen kann!"
+    Hint "Go back, keep `Odd` and try `not_odd_iff_even`"
   push_neg
   intro n
   Branch
     unfold Odd
+    /-
     Hint "
       **Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.
       Ich würde nochmal zurückgehen und `Odd` behalten,
       damit man schlussendlich `not_odd_iff_even` brauchen kann!"
+    -/
+    Hint "Go back, keep `Odd` and try `not_odd_iff_even`"
+  /-
   Hint "
     **Robo**: Jetzt brauchst du eine Zahl mit `use`, und danach vermutlich das
     Lemma `not_odd_iff_even` brauchen.
@@ -40,14 +49,19 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
 
     **Robo**: Zeig ich dir später, nicht hier vor großem Publikum.
     Ich würde jetzt lieber mit `use` eine richtige Zahl angeben, und danach umschreiben."
+  -/
+  Hint "Try `use`, `not_odd_iff_even`. Explain that `rw` can not be used in quantors."
   Branch
     use n + 2
-    Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+    -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+    Hint "Try `not_odd_iff_even`"
   Branch
     use n + 4
-    Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+    -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+    Hint "Try `not_odd_iff_even`"
   use n
-  Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+  -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
+  Hint "Try `not_odd_iff_even`"
   rw [not_odd_iff_even]
   Branch
     tauto
@@ -63,6 +77,7 @@ TheoremDoc Classical.not_forall as "not_forall" in "Logic"
 
 NewTheorem not_exists Classical.not_forall
 
+/-
 Conclusion
 "
 Die Formalosophinnen sind ganz begeistert.
@@ -76,3 +91,6 @@ Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.
 
 Die Frage war wieder zu konkret. Betretenes Schweigen.
 "
+-/
+
+Conclusion "`CONC` Conclusion Quantus L09"
