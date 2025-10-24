@@ -5,16 +5,20 @@ Level 9
 
 Title "" -- "Teilmengen"
 
+/-
 Introduction
 "
 **Sub**:  So, so.  Nur eine Definition!
 Und wenn ihr nun mit solchen Inklusionen arbeiten sollt?
 "
+-/
+Introduction "`INTRO` Intro Piazza L09"
 
 open Set
 
 Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
   -- Hint: do this for understanding the def!
+  /-
   Hint "
     **Du**:  Kann ich hier auch irgendwie mit `ext` argumentieren?
 
@@ -24,7 +28,8 @@ Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
     Aber vielleicht schreibst du vorher doch einmal alle Inklusionen mit
     `rw [subset_iff] at *` aus, damit du siehst, was passiert.
   "
-
+  -/
+  Hint "Try `rw [subset_iff] at *`, show that element in `A` is also in `C` via `intro a`"
   rw [subset_iff] at *
   -- tauto -- would work here
   intro a ha
@@ -38,4 +43,5 @@ NewDefinition Subset
 
 TheoremTab "Set"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Piazza L09"

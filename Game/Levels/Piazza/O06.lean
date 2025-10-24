@@ -5,12 +5,15 @@ Level 6
 
 Title "" -- "leere Menge"
 
+/-
 Introduction
 "
 Die leere Menge wird als `(∅ : Set A)` geschrieben.
 
 Hier ein nützliches Lemma.
 "
+-/
+Introduction "Intro Piazza O06"
 
 open Set
 
@@ -30,4 +33,4 @@ DefinitionDoc Set.empty as "∅"
 NewDefinition Set.empty
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "Conclusion Piazza O06"

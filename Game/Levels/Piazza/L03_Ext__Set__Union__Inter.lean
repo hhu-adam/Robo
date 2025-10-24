@@ -5,14 +5,16 @@ Level 3
 
 Title ""
 
-Introduction
-"
-  **Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?
-"
+-- Introduction
+-- "
+--   **Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?
+-- "
+Introduction "`INTRO` Intro Piazza L03"
 
 open Set
 
 Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
+  /-
   Hint "
     **Du**:  `A B C : Set ℕ` heißt hier genau was?
 
@@ -29,9 +31,13 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
 
     **Robo**:  Ach ja –
     `ext x` ersetzt eine Mengengleichheit `A = B` durch `x ∈ A ↔ x ∈ B`."
+    -/
+  Hint "Explain `A B C : Set ℕ`. Try `ext x`"
   ext x
-  Hint "**Robo**:  Und jetzt wieder `simp`."
+  -- Hint "**Robo**:  Und jetzt wieder `simp`."
+  Hint "Try `simp`"
   simp -- simp only [mem_inter_iff, mem_union]
+  /-
   Hint "
     **Du**:  Was genau macht `simp` denn eigentlich?
 
@@ -47,13 +53,17 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
     {x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}.
     ```
   "
-  Hint (hidden := true)"
-    **Robo**:  Den Rest schafft bestimmt `tauto`.
-  "
+  -/
+  Hint "Explain what `simp` does by using simplifications `{x} ∈ {A} ∩ {B} ↔ {x} ∈ {A} ∧ {x} ∈ {B}` and `{x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}`"
+  -- Hint (hidden := true)"
+  --   **Robo**:  Den Rest schafft bestimmt `tauto`.
+  -- "
+  Hint (hidden := true) "Try `tauto`"
   tauto
 
 NewTactic ext
 NewDefinition Set.union Set.inter
 TheoremTab "Set"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Piazza L03"

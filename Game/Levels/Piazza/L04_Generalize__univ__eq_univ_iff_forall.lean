@@ -5,15 +5,21 @@ Level 4
 
 Title ""
 
+/-
 Introduction
 "
   **Sub:** Ich habe auch schon etwas gelernt:
 "
+-/
+Introduction "`INTRO` Intro Piazza L04"
+
 namespace Set
 
 #check  (univ : Set ℕ)
 
 Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
+
+  /-
   Hint "
     **Du**:  Was ist denn `univ`?
 
@@ -36,6 +42,8 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
     Ich schlage vor, du fängst hier einfach mal mit `rw [eq_univ_iff_forall]` an,
     dann siehst du genau, was gefragt ist.
     "
+  -/
+  Hint "Explain differnece between `univ` and `ℕ`. Try `rw [eq_univ_iff_forall]`"
   /-
   `ext` also works, but WANT to introduce
   `eq_univ_iff_forall` and `generalize` here!
@@ -47,11 +55,13 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
     simp
   -/
   rw [eq_univ_iff_forall]
-  Hint "
-    **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
-    "
+  -- Hint "
+  --  **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
+  --  "
+  Hint "Try `simp` | `simp [eq_univ_iff_forall]`"
   simp?
   intro x
+  /-
   Hint "
     **Du**: Und jetzt `by_cases h : Even n`?
 
@@ -63,6 +73,8 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
     rw [← Nat.not_odd_iff_even]
     ```
     "
+  -/
+  Hint "Explain that `Even x ∨ ¬Even x` tautology. Try `rw [← Nat.not_odd_iff_even]`"
   Branch
     by_cases h : Even n
     left
@@ -89,4 +101,5 @@ NewTheorem Set.eq_univ_iff_forall
 
 NewDefinition Set.univ
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Piazza L04"

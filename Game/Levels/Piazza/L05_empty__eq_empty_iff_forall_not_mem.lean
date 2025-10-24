@@ -5,13 +5,18 @@ Level 5
 
 Title ""
 
+/-
 Introduction
 "
   **Mem:** Findet ihr diese Aussage auch wieder verwirrend?
 "
+-/
+Introduction "`INTRO` Intro Piazza L05"
+
 namespace Set
 
 Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
+  /-
   Hint "
     **Du**: Nein, `∅` kenne ich.
 
@@ -19,6 +24,8 @@ Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
     könntest du auch mit `rw [eq_empty_iff_forall_not_mem]` anfangen.
     Oder mit `simp [eq_empty_iff_forall_not_mem]`, falls du schnell fertig werden möchtest.
   "
+  -/
+  Hint "Try `rw [eq_empty_iff_forall_not_mem]` | `simp [eq_empty_iff_forall_not_mem]`"
   /- Want `eq_empty_iff_forall_not_mem` to be introduced here,
      because it is needed in SAMARKAND!
   -/
@@ -36,4 +43,5 @@ NewTheorem Set.eq_empty_iff_forall_not_mem
 
 NewDefinition Set.empty
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Piazza L05"
