@@ -6,9 +6,12 @@ Level 7
 
 Title "" -- "Preimage of the inverse"
 
+/-
 Introduction "
   **Arapuka**:  Jetzt habe ich aber noch eine wirklich schwierige Aufgabe.
 "
+-/
+Introduction "`INTRO` Intro Samarkand L07"
 
 open Function Set
 
@@ -16,7 +19,8 @@ open Function Set
 Statement  {A B : Type} {f : A → B} {g : B → A}
     (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
-  Hint "**Du**:  Mal überlegen…"
+  -- Hint "**Du**:  Mal überlegen…"
+  Hint "Story"
   intro b hb
   obtain ⟨x, hx, e⟩ := hb
   Branch
@@ -31,6 +35,10 @@ Statement  {A B : Type} {f : A → B} {g : B → A}
   rw [← hL, e] at hx
   assumption
 
+/-
 Conclusion "
   **Arapuka**:  Wow! Ihr seid wirklich großartig.
 "
+-/
+
+Conclusion "`CONC` Conclusion Samarkand L07"
