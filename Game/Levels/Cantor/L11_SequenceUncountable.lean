@@ -6,6 +6,7 @@ Level 11
 
 Title ""
 
+/-
 Introduction "
   **Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!
 
@@ -20,7 +21,10 @@ Introduction "
 
   **Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!
 "
+-/
+Introduction "Intro Cantor L11: Show that set of mapping `ℕ → ℕ` is uncountable"
 
+/-
 Conclusion "
   **Robo**:  Vielen Dank für die Vorstellung!
 
@@ -28,6 +32,8 @@ Conclusion "
 
   **Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!
 "
+-/
+Conclusion "`CONC`Conclusion Cantor L11"
 
 open Nat Set Function
 
@@ -36,11 +42,14 @@ Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   intro f
   by_contra hf
   apply cantor_diagonal at hf
+  /-
   Hint (hidden := true) "
     **Du**:  Wie hieß noch einmal die Abbildung `n ↦ n + 1`?
 
     **Robo**: `succ`
   "
+  -/
+  Hint "Try `succ`"
   specialize hf succ
   obtain ⟨n, hn⟩ := hf
   unfold fixedPoints IsFixedPt at hn

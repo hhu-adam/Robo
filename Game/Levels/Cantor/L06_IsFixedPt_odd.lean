@@ -6,18 +6,25 @@ Level 6
 
 Title ""
 
+/-
 Introduction ""
+-/
+Introduction "Intro Cantor L06"
 
+/-
 Conclusion "
   Cantor sagt wieder etwas, aber ihr seid zu sehr mit den Aufgaben beschäftigt.
   Ihr bemerkt noch nicht einmal, dass er inzwischen angefangen hat,
   mit dem Einrad zu fliegen.
 "
+-/
+Conclusion "`CONC`Conclusion Cantor L06"
 
 open Function Set
 
 Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     IsFixedPt f x ↔ IsFixedPt f (- x) := by
+  /-
   Hint "
     **Du**:  So etwas ähnliches habe ich schon einmal gesehen
     – die Annahme sagt, dass `f` eine „ungerade Funktion ist“.
@@ -25,6 +32,8 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     **Robo**: Dann mal los.  Ich denke, du wirst hier nichts brauchen,
     was wir nicht schon gesehen haben.
     "
+  -/
+  Hint "Story"
   constructor
   · intro h
     unfold IsFixedPt

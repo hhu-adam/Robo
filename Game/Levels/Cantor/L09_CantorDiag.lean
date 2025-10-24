@@ -6,32 +6,45 @@ Level 9
 
 Title ""
 
+/-
 Introduction
 "
 **Cantor**: Viel Glück!
 "
+-/
+Introduction "`INTRO-1`Intro Cantor L09 - 1"
 
+/-
 Conclusion "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche
 Aufgabe nochmals lösen."
+-/
+Conclusion "`CONC-1`Conclusion Cantor L09 - 1"
 
 open Function Set
 
 /---/
 TheoremDoc cantor_diagonal as "cantor_diagonal" in "Function"
 
+/-
 Introduction "
   **Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel!
   Ihr müsst die Aussage von eben nur ein bisschen umformulieren.
 
   Er wirft euch einen neuen Zettel zu.
 "
+-/
+Introduction "`INTRO-2`Intro Cantor L09 - 2"
 
+/-
 Conclusion "
   **Cantor**:  Bravo!
 "
+-/
+Conclusion "`CONC-2`Conclusion Cantor L09 - 2"
 
 Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
     ∀ s : Y → Y, Nonempty (fixedPoints s) := by
+  /-
   Hint "
     **Du**:  Wir sollen unter bestimmten Annahmen zeigen, dass *jede* Selbstabbildung `s : {Y} → {Y}`
     einen Fixpunkt hat?  Gibt es nicht auf jeder Menge eine Selbstabbildung *ohne* Fixpunkte?
@@ -46,7 +59,10 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
 
     **Cantor**:  Na, das ist ja gerade der Witz!  Wartet ab!
     "
+  -/
+  Hint "Story"
   intro s
+  /-
   Hint (hidden := true) "**Cantor**: Ihr müsst natürlich irgendwie die
   Surjektivität von `{f}` ausnutzen. Aber ich hatte euch ja eben schon verraten,
   von welcher Abbildung `{A} → {Y}`  ihr ein Urbild betrachten müsst …
@@ -59,6 +75,8 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   und dann von dieser Abbildung `c` ein Urbild betrachten.
   Aber ich bin gerade etwas verloren.
   "
+  -/
+  Hint (hidden := true) "Try `let c : {A} → {Y} := fun a ↦ _`, <Urbild>"
   let c : A → Y := fun (a : A) ↦ s (f a a)
   -- Hint "**Cantor**: Gute Wahl!" -- will display irrespective of choice of c :(
   obtain ⟨a, ha⟩ := hf c
