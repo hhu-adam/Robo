@@ -6,6 +6,7 @@ Level 1
 
 Title "" -- "Standardbasis"
 
+/-
 Introduction
 "
 Den Spuren folgend, findet ihr ein Stück Pergament, auf dem zuoberst
@@ -17,6 +18,13 @@ E i j := single i j (1 : ℝ)
 
 Darunter ein bisschen wildes Gekritzel, das aber deutlich mit einer klaren
 Zeile angefangen hat:
+"
+-/
+
+Introduction "Intro Robotswana L01: introduce definition
+```
+E i j := single i j (1 : ℝ)
+```
 "
 
 open Nat Matrix
@@ -38,6 +46,7 @@ TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
     A i j • E i j = single i j (A i j) := by
+  /-
   Hint "**Du**: Welches Wesen auch immer hier Spuren hinterlassen hat – mir scheint, es mag Matrizen.
   Jedenfalls sieht `Mat[{n},{n}]` stark nach $({n} \\times {n})$-Matrizen aus.
   Ich weiß nur nicht mehr, was `Fin {n}` ist.
@@ -74,9 +83,12 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
 
   **Robo**: Ja. Ich denke, wenn du mit `unfold E` anfängst, geht der Rest wie von selbst.
   "
+  -/
+  Hint "Introduce `Mat[{n},{n}]`. Explain `Fin {n}` and `single i j a`, the matrix with `a` at `(i, j)`. Explain `E` being `a = 1`. Explain `A i j` being matrix `A` at `(i, j)`"
   unfold E
   simp
 
+/-
 Conclusion "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?
 
 **Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als `Matrix.smul_ebasis` ab, falls wir es nochmals
@@ -84,6 +96,8 @@ brauchen.
 
 Damit folgt ihr weiter der Spur.
 "
+-/
+Conclusion "Conclusion Robotswana L01: Save result as `Matrix.smul_ebasis`"
 NewDefinition Matrix.E
 
 TheoremTab "Matrix"
