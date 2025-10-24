@@ -5,10 +5,12 @@ Level 3
 
 Title ""
 
-Introduction "Noch ein Funkspruch."
+-- Introduction "Noch ein Funkspruch."
+Introduction "`INTRO` Intro Saturn L03"
 
 namespace MvPolynomial
 Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
+  /-
   Hint "
     **Du**:  Nanu, was ist denn `P` hier für ein Tier?
 
@@ -23,11 +25,16 @@ Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
 
     **Robo**: So ist es.
   "
+  -/
+  Hint "Explain `P` with `Fin 2` and `ℚ`. Explain `Fin 2` with elements `X 0` and `X 1`"
   ring
 
+/-
 Conclusion "
   Wieder ein 👍.
 "
+-/
+Conclusion "`CONC` Conclusion Saturn L03"
 NewTactic ring
 
 /---/

@@ -5,7 +5,8 @@ Level 5
 
 Title ""
 
-Introduction ""
+-- Introduction ""
+Introduction "Intro Saturn L05"
 
 /- a well-known polyonmial sums-of-squares formula --/
 
@@ -50,9 +51,12 @@ Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (
 
 TheoremTab "+ *"
 
+/-
 Conclusion "
   “Bestanden” heißt es kurz und knapp vom anonymen Funker.
 
   **Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert.
   Nichts wie weg!
 "
+-/
+Conclusion "`CONC` Conclusion Saturn L05"
