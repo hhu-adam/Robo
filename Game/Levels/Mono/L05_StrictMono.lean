@@ -5,13 +5,15 @@ Level 5
 
 Title "" -- ""
 
-Introduction ""
+-- Introduction ""
+Introduction "Intro Mono L05"
 
 open Set Function
 
 Statement :
     let f := fun (n : ℤ) ↦ n^3 + (n + 3)
     Injective f := by
+  /-
   Hint "
     **Du**: Hmm, das ist etwas schwieriger…
 
@@ -29,13 +31,18 @@ Statement :
     `Odd.strictMono_pow` – für ungerades `n` ist `x ↦ x ^ n` strikt monoton
 
      Wollen wir es damit einmal versuchen?"
-  Hint (hidden := true) "**Robo**: `apply` ist, wonach du suchst."
+  -/
+  Hint "Try `StrictMono.injective` | StrictMono.add` | `Odd.strictMono_pow`"
+  -- Hint (hidden := true) "**Robo**: `apply` ist, wonach du suchst."
+  Hint (hidden := true) "Try `apply`"
   Branch
     intro a b
-    Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+    -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+    Hint "Retry if `intro a b`"
   Branch
     intro a b h
-    Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+    -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
+    Hint "Retry if `intro a b h`"
   apply StrictMono.injective
   apply StrictMono.add
   · Branch
@@ -44,14 +51,19 @@ Statement :
       --exact Odd.strictMono_pow h_odd
       exact h_odd.strictMono_pow
     apply Odd.strictMono_pow
-    Hint (hidden := true) "**Du**: `Odd 3`. Ist das nicht eine Trivialität? Warte mal!"
+    -- Hint (hidden := true) "**Du**: `Odd 3`. Ist das nicht eine Trivialität? Warte mal!"
+    Hint (hidden := true) "Comment"
     decide
-  · Hint "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
+  · -- Hint "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
+    Hint "Story"
+    /-
     Hint (hidden := true) "
       **Du**: Oder …?
 
       **Robo**: Doch, doch. Schau mal mit `unfold` in die Definition von `StrictMono` hinein.
     "
+    -/
+    Hint "Try `unfold StrictMono`"
     intro a b
     simp
 
@@ -74,4 +86,5 @@ NewDefinition StrictMono
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow
 TheoremTab "Function"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Mono L05"

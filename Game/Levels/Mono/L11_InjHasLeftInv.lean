@@ -5,9 +5,12 @@ Level 11
 
 Title "" -- "Injections have a left inverse, and vice versa"
 
+/-
 Introduction
 "
 "
+-/
+Introduction "Intro Mono L11"
 
 open Set Classical
 
@@ -18,12 +21,16 @@ namespace Function
 
 Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
   Injective f ↔ HasLeftInverse f := by
+  /-
   Hint "
     **Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass eine Abbildung genau dann surjektive ist, wenn sie ein Rechtsinverses besitzt.
     Und die hiesigen Monosophen wollen gern bewiesen haben, dass eine Abbildung genau dann injektiv ist, wenn sie in Linksinverses besitzt.
 
     **Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung `Nonempty A` brauchen.
   "
+  -/
+  Hint "Story"
+  /-
   Hint (hidden := true) "
       **Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.
 
@@ -32,6 +39,8 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       Nur hat diese Aussage dummerweise keinen Namen.
       Vielleicht formulierest du sie noch einmal mit `have` selbst aus, und beweist sie auch noch einmal.
     "
+  -/
+  Hint "Try `have`"
   constructor
   · intro hf
     Branch
@@ -70,10 +79,13 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       contradiction
   · /- Injective f → HasLeftInverse f
        exactly L09_injOfHasLeftInv, now without hints-/
+    /-
     Hint (hidden := true) "
       **Robo**:  Das hatten wir doch auch schon gezeigt …  aber ich hatte vergessen, es abzuspeichern.
       Erinnerst du dich an den Beweis?
     "
+    -/
+    Hint (hidden := true) "Comment: Remember proof"
     intro hL
     intro a a' ha
     obtain ⟨g, hg⟩ := hL
@@ -82,8 +94,11 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     rw [hg a, hg a'] at ha
     assumption
 
+/-
 Conclusion "
 Ihr bekommt wieder eine große Runde Applaus und werdet ihr verabschiedet.
 Wieder gibt es keine Transportkapseln für den Rückweg.
 Aber so weit ist es ja nun auch wieder nicht.
 "
+-/
+Conclusion "`CONC` Conclusion Mono L11"

@@ -5,7 +5,8 @@ Level 4
 
 Title "" -- ""
 
-Introduction ""
+-- Introduction ""
+Introduction "Intro Mono L04"
 
 open Function Nat
 
@@ -15,6 +16,7 @@ open Function Nat
 Statement {A : Type} (n : ℕ) :
     let diag : A → Fin (n + 1) → A := fun a i ↦ a
     Injective (diag) := by
+  /-
   Hint "**Du**:  In der Definition von `diag` stehen wieder zwei Pfeile hintereinander.
   Das muss ich erst mal im Kopf sortieren.
 
@@ -28,17 +30,24 @@ Statement {A : Type} (n : ℕ) :
 
   **Du**:  Okay.  Gegeben ist also eine Abbildung `diag` von $A$ nach $A^\{n+1}$.  Und zwar die Abbildung …  ah, ich sehe, warum sie `diag` heißt.
   "
+  -/
+  Hint "Explain `diag` 1"
+  /-
   Hint (hidden := true) "**Du**:  Oder vielleicht doch nicht.  Kannst du das bitte nochmal aufdröseln?
 
   **Robo**:  Die Abbildung `diag` schickt ein Element $a$ auf die Abbildung, die *jeden* Index $i \\in \\\{0,1,…,n\\}$ auf $a$ abbildet.
   In deiner Interpretation ist das die Abbildung $a ↦ (a,…,a)$.
   "
-  Hint (hidden := true) "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
+  -/
+  Hint (hidden := true) "Explain `diag` 2"
+  -- Hint (hidden := true) "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
+  Hint (hidden := true) "Try `unfold Injective`"
   --unfold Injective
   Branch
     simp [diag]
     intro a b h
-    Hint (hidden := true) "**Robo**:  Du könntest die Abbildungen in `{h}` auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
+    -- Hint (hidden := true) "**Robo**:  Du könntest die Abbildungen in `{h}` auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
+    Hint (hidden := true) "Try `congr_fun`"
     apply congr_fun at h
   --Branch
   --  apply HasLeftInverse.injective  -- not yet known!
@@ -46,6 +55,9 @@ Statement {A : Type} (n : ℕ) :
   --  use p
   --  tauto
   intro a₁ a₂ h
+  /-
   Hint (hidden := true) "**Robo**:  Erinner dich, dass deine “Tupel” `diag {a₁}` und `diag {a₂}` in Wahrheit zwei Abbildung `Fin (n + 1) → A` sind.
   Du könntest sie auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
+  -/
+  Hint (hidden := true) "Try `congr_fun`"
   apply congr_fun h 0

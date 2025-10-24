@@ -5,7 +5,8 @@ Level 9
 
 Title ""
 
-Introduction ""
+-- Introduction ""
+Introduction "Intro Mono L09"
 
 open Function
 
@@ -14,12 +15,16 @@ open Function
 -- Statement Function.HasLeftInverse.injective
 Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     Injective f := by
+  /-
   Hint "
     **Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …
   "
+  -/
+  Hint "Explain"
   intro a a' ha
   obtain ⟨g, hg⟩ := h
-  Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
+  -- Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
+  Hint "Try `congr_arg g`"
   Branch
     trans g (f a)
     · rw [hg]
@@ -30,6 +35,9 @@ Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
   rw [hg a, hg a'] at ha
   assumption
 
+  /-
   Conclusion "
     **Robo**:  Gut gemacht!  Ich glaube, wir sind hier bald durch …
   "
+  -/
+  Conclusion "`CONC` Conclusion Mono L09"
