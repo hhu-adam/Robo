@@ -6,28 +6,38 @@ Level 9
 
 Title ""
 
+/-
 Introduction"
 **Robo**:  Aber so schwer ist das auch nicht.  Hier, schau dir diese Aufgabe mal an.
 "
+-/
+
+Introduction "`INTRO` Intro Prado L09"
 
 namespace Nat
 
 Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
+  /-
   Hint "
   **Du**: Ich sehe schon – `∃! m, P(m)` ist also die Notation für „es gibt genau ein `m`, für das `P(m)` gilt“.
 
   **Robo**: Genau.  Und das ist einfach definiert als „es existiert ein `m`,
   sodass (1) `P(m)` gilt und (2) jedes andere Element `m'`, für das `P(m')` gilt, bereits gleich `m` ist.
   Der erste Schritt ist also, ein geeignetes `m` zu finden, und dann `use _` zu verwenden."
+  -/
+  Hint "Explain notation `∃! m, P(m)`, Try `use _`"
   obtain ⟨w, hw⟩ := h
   use w
-  Hint "**Robo**: Tatsächlich ergibt `use` auf `∃!` angewendet immer ein bisschen Chaos.
-  Schick am besten immer gleich ein `simp` hinterher, dann wird es wieder lesbar."
+  -- Hint "**Robo**: Tatsächlich ergibt `use` auf `∃!` angewendet immer ein bisschen Chaos.
+  -- Schick am besten immer gleich ein `simp` hinterher, dann wird es wieder lesbar."
+  Hint "Try `simp`"
   simp
-  Hint "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) `{w}` erfüllt `a * {w} = b`,
-  (2) `{w}` ist das einzige Element mit dieser Eigenschaft."
+  -- Hint "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) `{w}` erfüllt `a * {w} = b`,
+  -- (2) `{w}` ist das einzige Element mit dieser Eigenschaft."
+  Hint "Story, next step in proof"
   constructor
   · rw [hw]
+  /-
   · Hint "
     **Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma
     `mul_eq_mul_left_iff` helfen:
@@ -36,6 +46,8 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
     a * b = a * c ↔ b = c ∨ a = 0
     ```
     "
+  -/
+  · Hint "Try `mul_eq_mul_left_iff`"
     intro y hy
     rw [hw] at hy
     /-
