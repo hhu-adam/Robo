@@ -7,13 +7,17 @@ Level 6
 
 Title ""
 
+/-
 Introduction
 "**Ritha**:  Kann ich auch mal?  Hier."
+-/
+Introduction "`INTRO` Intro Luna L06"
 
 open Finset
 
 Statement {a b : ℤ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by
+  /-
   Hint "
     **Du**:  Was ist denn `Icc`?
 
@@ -27,13 +31,20 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
      [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1]
      $$
      "
-  Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
+  -/
+  Hint "Goal: `[a, b] ∪ \\\{ b + 1 \\} = [a, b + 1]`"
+  -- Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
+  Hint "Try `ext`"
   ext x
+  /-
   Hint "
     **Robo:**  Schieß mal gleich noch ein `simp` hinterher.
   "
+  -/
+  Hint "Try `simp`"
   simp
-  Hint "Ritha macht wieder irgendwelche Zeichen."
+  -- Hint "Ritha macht wieder irgendwelche Zeichen."
+  Hint "Try `omega`"
   omega
 
 
@@ -55,4 +66,5 @@ Finset.insert_Icc_sub_one_right_eq_Icc
 
 NewDefinition Finset.Icc
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Luna L06"

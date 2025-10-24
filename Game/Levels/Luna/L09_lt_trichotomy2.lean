@@ -5,12 +5,16 @@ Level 9
 
 Title ""
 
+/-
 Introduction "
 **Lina**:  Jetzt ich wieder.
 "
+-/
+Introduction "`INTRO` Intro Luna L09"
 
 open Finset
 Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ b < a := by
+  /-
   Hint "**Du**:
   Nun, es ist schon ziemlich klar, welches `b` man hier verwenden könnte.
 
@@ -20,6 +24,8 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
   obtain h | h | h := lt_trichotomy a c
   ```
   "
+  -/
+  Hint "Try `use …`, `obtain h | h | h := lt_trichotomy a c`"
   use (a + c) / 2
   obtain h | h | h := lt_trichotomy a c
   · left
@@ -32,7 +38,10 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
     linarith
     linarith
 
+/-
 Conclusion "
   **Lina**: Habt ihr gut gemacht!  Schade, dass ihr schon weiterfliegen müsst.
   Aber wenn ihr noch länger bleibt, bringt ihr unseren Tagesrhythmus völlig durcheinander.
   "
+-/
+Conclusion "`CONC` Conclusion Luna L09"

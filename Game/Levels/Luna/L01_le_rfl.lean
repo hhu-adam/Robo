@@ -8,6 +8,7 @@ Level 1
 
 Title ""
 
+/-
 Introduction
 "
 Du fühlst dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.
@@ -17,14 +18,20 @@ hier Ordnung zu halten?
 
 **Lina**: Man muss zum Beispiel wissen, dass `n ≤ n` ist.
 "
+-/
+Introduction "Intro Luna L01: Know that `n ≤ n`"
 
 Statement (n : ℕ) : n ≤ n := by
-  Hint "**Robo**: `rfl`?"
+  -- Hint "**Robo**: `rfl`?"
+  Hint "Try `rfl`"
   rfl
 
+/-
 Conclusion "
   **Lina**:  Zugegeben, das war ein triviales Beispiel.
 "
+-/
+Conclusion "`CONC` Conclusion Luna L01"
 
 
 /---/
