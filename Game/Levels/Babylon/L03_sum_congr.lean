@@ -25,7 +25,8 @@ Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i
     Ich schlage vor: `trans ∑ i ∈ I, 0`.  Das Summezeichen schreibst du als `\\sum`.
     "
   -/
-  Hint "try `trans ∑ i ∈ I, 0`"
+  Hint "Remind that goal looks like $I \\subseteq \\\{-1,0,1\\}$. Try `trans ∑ i ∈ I, 0`. The sum sign is written
+  as `\\sum`."
   trans ∑ i ∈ I, 0
   /-
   Hint "
