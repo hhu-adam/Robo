@@ -26,11 +26,11 @@ Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
 
     **Robo** Mit `left` bzw. `right`. Ist doch logisch, oder?"
   -/
-  Hint "Try `left` | `right`"
+  Hint "Try to proof `{A}` by using `left` | `right`"
   Branch
     right
     -- Hint "**Robo** Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. Probier's nochmal."
-    Hint "Try `left` | `right`"
+    Hint "Try Right tactic"
   left
   assumption
 
