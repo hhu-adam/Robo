@@ -29,7 +29,7 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
     **Robo**: Das funktioniert doch genau gleich wie zuvor.
     "
   -/
-  Hint "Try `induction n with d hd`"
+  Hint "Try solving $$ \\sum_\{i = 0}^n (2i + 1) = n^2 $$ by induction"
   induction n with d hd
   · simp
   · rw [← insert_Icc_eq_Icc_add_one_right]

@@ -24,7 +24,7 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
       `insert_Icc_eq_Icc_sub_one_left` brauchen wirst.
     "
     -/
-    Hint "Try `insert_Icc_eq_Icc_add_one_right`, `insert_Icc_eq_Icc_sub_one_left`"
+    Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_eq_Icc_add_one_right`, `insert_Icc_eq_Icc_sub_one_left`"
     induction n with d hd
     · simp
     · simp
@@ -47,7 +47,8 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           ```
         "
         -/
-        Hint "Try `have : -1 + (-d : ℤ)  = -d - 1`"
+        Hint "Rewrite `-1 + -{d}` to `-{d} - 1`. Formulate equation using `have`.
+        Also, specify that equation is in `ℤ`. Try e.g. `have : -1 + (-d : ℤ)  = -d - 1`"
         · --have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
           have : -1 + (-d : ℤ)  = -d - 1 := by
             ring
