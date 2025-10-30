@@ -23,7 +23,7 @@ Statement : True := by
 
     **Robo**: Ich glaube, nichts. Probier mal `decide`."
   -/
-  Hint "Try `decide`"
+  Hint "Explain that `True` is a special statement that is always true. Try `decide`"
   decide
 
 /-
