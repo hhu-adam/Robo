@@ -21,7 +21,7 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
     **Robo**: Ja, aber du musst ihm helfen, die Äquivalenzen umzuschreiben. Mit `rw [h₁]` kannst
     du `C` durch `D` ersetzen."
   -/
-  Hint "Try `rw [h₁]`"
+  Hint "Rewrite $B \\iff A \\iff D \\iff C$. Start with `rw [h₁]` to replace `C` with `D`"
   rw [h₁]
   /-
   Hint "
@@ -29,7 +29,7 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
 
     **Robo**: Dann schreibst du ein `←` (`\\l`, also klein \"L\") vor den Namen, also `rw [← hₓ]`."
   -/
-  Hint "Try `rw [← hₓ]`"
+  Hint "To rewrite into the other direction you can use `←` (`\\l`) infront of the name. Try `rw [← hₓ]`"
   Branch
     rw [← h₃]
     /-
@@ -42,7 +42,8 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
       **Robo: Da fällt mir ein, `rw` wendet ohnehin auch versuchsweise `rfl` an.
       Das heißt, du musst `rfl` nicht einmal ausschreiben."
     -/
-    Hint "Story"
+    Hint "You can continue until there is `A ↔ A` and then apply `rfl`. `rw` always uses `rfl`,
+    meaning hat `rfl` does not have to be written"
     rw [h₂]
   rw [←h₂]
   assumption

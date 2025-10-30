@@ -21,7 +21,7 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
 
     **Robo**: Vielleicht fängst du wieder mit `intro` an?"
   -/
-  Hint "Try `intro`"
+  Hint "Combine implications $A \\Rightarrow B \\Rightarrow C$ into $A \\Rightarrow C$. Try `intro`"
   intro h
   /-
   Hint "
@@ -41,7 +41,7 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
     **Robo**: Jetzt kannst du also erst einmal `B` beweisen …
   "
   -/
-    Hint "Story"
+    Hint "Prove `B`"
     apply f
     assumption
   /-
@@ -50,7 +50,7 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
     Annahme zur Verfügung.
   "
   -/
-  Hint "Story"
+  Hint "Now assumption `{hB} : {B}` is available"
   apply g
   assumption
 

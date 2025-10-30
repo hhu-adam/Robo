@@ -36,7 +36,9 @@ Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
     **Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel `h`,
     und schreib `intro h`."
   -/
-  Hint "Try `intro h`"
+  Hint "Proof the implication (`\\to`), that assuming `{B}` is true, `{A}` implies `{A} und {B}`
+  is also true. You cannot use `tauto`. Begin by assumption that `{A}` is true. For this choose
+  name `h` for assumption and introduce it via `intro h`"
   intro hA
   /-
   Hint "
@@ -45,7 +47,7 @@ Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
 
     **Robo**: Genau. Und wie das geht, weißt du ja schon."
   -/
-  Hint "Stroy"
+  Hint "Having `{A}` and `{B}` in your assumptions you have to show `{A} ∧ {B}`"
   constructor
   assumption
   assumption

@@ -17,7 +17,7 @@ Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~`revert`
 das Blatt ein zweites Mal vor.
 "
 -/
-Introduction "Intro Implis L03: Try proof without `revert`"
+Introduction "Intro Implis L03: This Level does not know `revert`. Try proof without `revert`"
 
 Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
   /-
@@ -34,7 +34,8 @@ Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
       Jetzt hast Du sozusagen `hAB` auf das Beweisziel `B` angewendet, und musst nur
       noch `A` beweisen."
     -/
-    Hint "Try `assumption`"
+    Hint "`… at h` was tried but simply `apply hAB` works as well. `hAB` was applied to goal `B` and now
+    `A` has to be proven."
     assumption
   apply hAB at h
   -- Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."

@@ -42,7 +42,7 @@ Statement
 
     **Robo**: Lass mich mal raten, wie wir anfangen … Wieder `intro`?"
   -/
-  Hint "Try `intro`"
+  Hint "Find an implication path $A \\Rightarrow I$. Try `intro`"
   intro hyp
   -- Hint (hidden := true) "**Robo**: Na wieder `apply`, was sonst."
   Hint (hidden := true) "Try `apply`"
