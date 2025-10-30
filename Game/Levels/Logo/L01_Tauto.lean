@@ -38,7 +38,8 @@ Statement (A B C : Prop) :
 
     **Robo**: Mach schon …"
   -/
-  Hint "Try `tauto`"
+  Hint "Explain that `{A} {B} {C} : Prop` introduces statements `{A}`, `{B}` und `{C}` as
+    propositions. The symbol `→` is equivalent to the implication symbol $⇒$. Try `tauto`."
   tauto
 
 /-
