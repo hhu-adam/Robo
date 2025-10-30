@@ -31,7 +31,8 @@ Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
     **Robo** *(zu Dir)*: Ich würde als erstes `simp` versuchen.
     Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
   -/
-  Hint "Try `simp`"
+  Hint "Explain goal as $( \\sum_\{i\\in I} 1)$ being equal to the number of elements in $I$
+  i.e. the cardinality of $I$. Try `simp`"
   simp
 
 TheoremTab "∑ Π"
