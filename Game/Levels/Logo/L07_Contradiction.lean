@@ -31,7 +31,10 @@ Statement (A : Prop) (h : False) : A := by
     **Robo**: Ich glaube, du musst ihn darauf hinweisen, dass zwischen der allgemeingültigen
     Annahme `True` und seiner Annahme `False` ein Widerspruch besteht. Probier mal `contradiction`."
   -/
-  Hint "Try `contradiction`"
+  Hint "Explain that `{A}` is a statement and `{h}` is the assumption that `False` is true.
+   Remind that `False` is always false. Explain that assumption `False` is false. As any statement
+   `{A}` can be proven from a false assumption. Point out contradiction between `True` and `False`
+   by applying `contradiction`."
   contradiction
 
 /-
