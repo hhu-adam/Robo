@@ -23,7 +23,8 @@ Statement :
 
   **Du**:  Gut.  Dann überlege ich also einmal, wie ein Rechtsinverses zu `f` aussehen könnte …"
   -/
-  Hint "Try `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …`, `use g`"
+  Hint "Show that there is right inverse to `f`. You could again set mapping `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …`
+  and then apply `use g`. Think how right inverse of `f` could look like."
   let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (2 * m - n, n - m)
   use g
   intro m

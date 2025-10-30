@@ -21,7 +21,7 @@ Statement {A B : Type} (f : A → B) (nonempty_fibre : ∀ b : B, ∃ (x : A), f
   Hier kommt `choose` so richtig in sein Element.
   Probier mal `choose g hg using nonempty_fibre`."
   -/
-  Hint "Try `choose g hg using nonempty_fibre`"
+  Hint "Remember `choose`. This here is a good setting for `choose`. Try `choose g hg using nonempty_fibre`"
   choose g hg using nonempty_fibre
   use g
   assumption

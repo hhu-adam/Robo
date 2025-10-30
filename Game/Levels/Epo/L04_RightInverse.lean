@@ -48,7 +48,9 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
     (`rw [← comp_apply]` ohne `(f:=f)` funktioniert hier nicht
     – du musst explizit angeben, welchen Wert die Variable `f` in der Aussage von `comp_apply` haben soll."
     -/
-    Hint (hidden := true) "Try `apply congr_fun at h` | `rw [← comp_apply (f:= f)]`"
+    Hint (hidden := true) "Try `apply congr_fun at h` or `rw [← comp_apply (f:= f)]`.
+    `rw [← comp_apply]` without `(f:=f)` does not work. You must explicitly point out which value
+    the variable `f` should have in statment `comp_apply`."
     Branch
       rw [← comp_apply (f:= f)]
       rw [h]
