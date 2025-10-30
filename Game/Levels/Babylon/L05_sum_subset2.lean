@@ -36,7 +36,10 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     als Zwischenschritt verwenden.
   "
   -/
-  Hint "Try `trans`"
+  Hint "Goal is to show that $$ \\sum_\{i \\in I} \\left( (-1)^i + 1 \\right) $$ is equal to twice the amount of
+  even numbers in $I$. Note that sum disappears for uneven $i$. For even $i$ the sum is $2$. Use `trans` to
+  constrain sum to ``` ∑ i ∈ \{ i ∈ I | Even i}, ((-1)^i + 1) ``` and then use ``` ∑ i ∈ \{ i ∈ I | Even i}, 2 ```
+  as intermediate step."
   trans ∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1)
   · Branch
       rw [sum_subset]
@@ -47,7 +50,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
         Oder vor diesem Schritt mit `symm` die Gleichung umdrehen.
         "
       -/
-      Hint "Try `symm`, `sum_subset`"
+      Hint "Try `sum_subset` from the other side or `symm` beforehand"
     symm
     apply sum_subset
     · simp

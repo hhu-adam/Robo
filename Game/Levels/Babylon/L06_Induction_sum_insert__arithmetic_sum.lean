@@ -49,7 +49,9 @@ Statement arithmetic_sum (n : ℕ) :
   **Robo**:  Der Zusatz ist natürlich optional.
   Du kannst damit Namen für Induktionsvariable (`d`) und -hypothese (`hd`) vorgeben."
   -/
-  Hint "Try `induction n with d hd`"
+  Hint "To proof sum $$ \\sum_\{i = 0}^n i = \\tfrac\{1}\{2} \\cdot n \\cdot (n + 1) $$
+  try to perform induction over `n` using `induction n with d hd`. `with …` is optional and you can
+  decide on the name of your induction variable (`d`) and hypothesis (`hd`)."
   induction n with d hd
   /-
   Hint "**Du**: Zuerst der Induktionsanfang …
@@ -63,7 +65,7 @@ Statement arithmetic_sum (n : ℕ) :
     Dazu könntest du das Lemma `insert_Icc_eq_Icc_add_one_right` verwenden, das wir schon gesehen hatten.
   "
   -/
-  Hint "Try `insert_Icc_eq_Icc_add_one_right`"
+  Hint "Divide interval $[0, {d}+1]$ into $[0,{d}]$ and ${d}+1$ by using `insert_Icc_eq_Icc_add_one_right`"
   rw [← insert_Icc_eq_Icc_add_one_right]
   /-
   Hint "**Robo**:  Genau!  Und jetzt spaltet dir `sum_insert` die Summe genau so auf, wie du das haben möchtest:
@@ -71,7 +73,8 @@ Statement arithmetic_sum (n : ℕ) :
   Probiers mal: `rw [sum_insert]`
   "
   -/
-  Hint "Try `rw [sum_insert]`"
+  Hint "`sum_insert` will divide sum as wished: a sum over $[0,{d}]$ and an additional summand for ${d}+1$.
+  Try `rw [sum_insert]`"
   rw [sum_insert]
   /-
   Hint (hidden := true)
