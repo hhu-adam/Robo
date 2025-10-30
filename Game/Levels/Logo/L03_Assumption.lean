@@ -37,7 +37,9 @@ Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := b
 
     **Robo**: Du musst ihm das halt explizit sagen. Probiers mal mit `assumption`."
   -/
-  Hint "Try `assumption`"
+  Hint "Explain that `{n} : ℕ` means `{n}` is a natural number. The notation `{n} ∈ ℕ` is not used.
+  `{h₁}`, `{h₂}`, `{h₃}` are names for the respective assumptions `n < 10`, `1 < n` und `n ≠ 5`.
+  The proof goal is `1 < n`. Try `assumption`"
   assumption
 
 /-
