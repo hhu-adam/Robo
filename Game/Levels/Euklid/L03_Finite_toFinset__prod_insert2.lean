@@ -35,7 +35,9 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
   **Du**:  Okay, ich probier das mal.
   "
   -/
-  Hint "Try `let all_primes := hf.toFinset`"
+  Hint "Here `let all_primes := hf.toFinset` is useful. The product over all primes can only be reasoned
+  with, when interpreted as a `Finset`. The first line does exactly this: it uses `hf` to transform
+  `\{ p : ℕ | Prime p} : Set ℕ` into a finite set `\{ p : ℕ | Prime p} : Finset ℕ`."
   let all_primes := hf.toFinset
   /-
   Hint "
@@ -49,7 +51,8 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     Wie gesagt, du willst jetzt sicherlich das Produkt aller dieser Zahlen benutzen.
     Das Produktzeichen schreibst du als `\\prod`."
   -/
-  Hint "Try `\\prod`"
+  Hint "`all_primes.bubblewrap = blister cong foo` us nonsensical. You want to use the product of
+  all those numbers. Write the product sign as `\\prod`"
   use ∏ p ∈ all_primes, p
   /-
   Hint "
@@ -61,7 +64,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     Musst du leider noch einmal rekonstruieren, wie die Argumente gingen.
     "
   -/
-  Hint "Try `constructor`"
+  Hint "Try constructor"
   constructor
   · -- Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
     Hint "Try `Finset.prod_pos`"
@@ -80,7 +83,8 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
         die Definition von `all_primes` mit auf den Weg geben.  Also `simp [all_primes]`.
         "
       -/
-      Hint (hidden := true) "Try `simp [all_primes]`"
+      Hint (hidden := true) "If `simp` alone does not work, try giving `simp`
+      the definition of `all_primes`. Try `simp [all_primes]`"
       simp [all_primes]
       assumption
     rw [← insert_erase hp']

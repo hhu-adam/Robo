@@ -21,10 +21,11 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
   Wir fangen natürlich mit `intro` an.
   "
   -/
-  Hint "Try `intro`"
+  Hint "Goal: if `{b}` divides factor `a` of a product then it also divides the product.
+  Try `intro`"
   intro h
   /- Hint "**Robo**:  Und jetzt zerlegen wir die Annahme `{h}` in ihre drei Bestandteile." -/
-  Hint "Try `obtain`"
+  Hint "Disect `{h}` into its constituents"
   obtain ⟨a, ha, hpa⟩ := h
   /-
   Hint "
@@ -33,7 +34,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     **Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie `insert_erase`.
   "
   -/
-  Hint "Try `insert_erase`"
+  Hint "Seperate factor `{a}` out of product by using `insert_erase`"
   /-
   Hint (hidden := true) "
     **Robo**:  Probier mal `rw [← insert_erase {ha}]`.

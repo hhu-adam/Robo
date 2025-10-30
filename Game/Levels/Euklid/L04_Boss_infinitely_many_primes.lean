@@ -39,7 +39,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   Andererseits gilt: `exists_prime_and_dvd`.  Widerspruch.
   "
   -/
-  Hint "Try `by_contra`"
+  Hint "Try proof by conradiction. For this employ `exists_prime_and_dvd`"
   by_contra hf
   -- notation to make equations human-readable:
   let all_primes := hf.toFinset

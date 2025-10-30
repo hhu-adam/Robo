@@ -17,7 +17,7 @@ Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := 
 
   **Robo**:  Ja!  Und die nächste Zeile ergibt auch Sinn: `apply prod_pos`."
   -/
-  Hint "Try `apply prod_pos`"
+  Hint "`∏ a ∈ A, a` is Leanic for the product over all numbers in `A`. Try `apply prod_pos`"
   apply prod_pos
   /-
   Hint "**Robo**: Aber was danach kommt, ist wieder völliger Unsinn.
