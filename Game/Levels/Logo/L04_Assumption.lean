@@ -23,7 +23,8 @@ Statement (A : Prop) (hA : A) : A := by
 
     **Robo**: Ja. Da kommst du jetzt selbst drauf, wie das geht, oder?"
   -/
-  Hint "Story"
+  Hint "Explain that `{A} : Prop` means that `{A}` is some statement.
+  `{hA}` is the name of the assumption that `{A}` is true. Try to solve `{A}` using said assumption"
   /-
   Hint (hidden := true) "**Robo**: Ist doch genau wie eben:
     die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen.
