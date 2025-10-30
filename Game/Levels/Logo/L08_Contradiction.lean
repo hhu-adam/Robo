@@ -22,7 +22,7 @@ Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
 
     **Robo**: Probiers mal!"
   -/
-  Hint "Try `Contradiction`"
+  Hint "Check that `{n} ≠ {n}` is contradiction by the Contradiction tactic"
   contradiction
 
 /-
