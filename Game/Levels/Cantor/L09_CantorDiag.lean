@@ -60,7 +60,10 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
     **Cantor**:  Na, das ist ja gerade der Witz!  Wartet ab!
     "
   -/
-  Hint "Story"
+  Hint "The goal is that each self mapping `s : {Y} → {Y}` possess a fixed point.
+  Does not every set have a self mapping without fixed points? E.g. $n ↦ n + 1$ in $ℕ$
+  or $ℝ$ … or the non-trivial permutations in $\\\{0,1\\}$. Thought: if `Y` is not a set with
+  a single element then there should be a fixed-point-free self mapping."
   intro s
   /-
   Hint (hidden := true) "**Cantor**: Ihr müsst natürlich irgendwie die
@@ -76,7 +79,9 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   Aber ich bin gerade etwas verloren.
   "
   -/
-  Hint (hidden := true) "Try `let c : {A} → {Y} := fun a ↦ _`, <Urbild>"
+  Hint (hidden := true) "exploit the surjectivity of `{f}` somehow. It was already told
+  which of mapping `{A} → {Y}` the preimage has to be considered. One could define ``` let c : {A} → {Y} := fun a ↦ _ ```
+  and then observe the preimage of `c`."
   let c : A → Y := fun (a : A) ↦ s (f a a)
   -- Hint "**Cantor**: Gute Wahl!" -- will display irrespective of choice of c :(
   obtain ⟨a, ha⟩ := hf c

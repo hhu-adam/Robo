@@ -33,7 +33,7 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     was wir nicht schon gesehen haben.
     "
   -/
-  Hint "Story"
+  Hint "Assumption says that `f` is an 'uneven' function is"
   constructor
   · intro h
     unfold IsFixedPt

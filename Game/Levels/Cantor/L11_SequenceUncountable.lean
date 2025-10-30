@@ -49,7 +49,7 @@ Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
     **Robo**: `succ`
   "
   -/
-  Hint "Try `succ`"
+  Hint "The name of mapping `n ↦ n + 1` is `succ`"
   specialize hf succ
   obtain ⟨n, hn⟩ := hf
   unfold fixedPoints IsFixedPt at hn

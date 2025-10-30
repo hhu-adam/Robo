@@ -32,7 +32,8 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
   denn eine Aussage kann doch nicht gleich ihrer Negation sein!
   "
   -/
-  Hint "Story"
+  Hint "The second `¬` means the same as the first: logical negation. Interpret it as the self
+  mapping of the set `Prop` of all possible satements."
   Branch
     by_contra h
     obtain ⟨P, hP⟩ := h

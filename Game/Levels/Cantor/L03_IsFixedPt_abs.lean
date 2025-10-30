@@ -44,7 +44,8 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
   Hint "**Robo**: Also `|x|` ist einfach der übliche Betrag der reellen Zahl `x`.
   Und was `IsFixedPt` bedeutet findest du vermutlich mit `unfold` heraus."
   -/
-  Hint "Try `unfold IsFixedPt`"
+  Hint "`|x|` is the absolute value of the real number `x`. The meaning of `IsFixedPt`
+  can be found out by using `unfold`."
   unfold IsFixedPt
   /-
   Hint "**Du**:  Ähm …
@@ -53,7 +54,7 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
   Jedenfalls bedeutet `IsFixedPt f x` offenbar gerade `f x = x`.
   "
   -/
-  Hint "Story"
+  Hint "`IsFixedPt` means 'is fixed point'. `IsFixedPt f x` equates to `f x = x`"
   intro x
   constructor
   /-

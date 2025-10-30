@@ -56,7 +56,11 @@ Statement {A Y : Type} {f : A → A → Y} {s : Y → Y}
     dass die Interpretation von `f` als Abbildung `A → (A → Y)` naheliegender ist.
     "
   -/
-  Hint "Story"
+  Hint "Explain for `f`, that `A → (A → Y)` is a mapping from `A` to the set of mappings of `A →  Y`,
+  which in turn is the same as the mapping from `A × A` to `Y`. You can interpret `{f} {a} {a}` either
+  as applying `{f} {a}` onto `{a}` or applying `{f}` onto `({a},{a})`. The element `({a},{a})` lays
+  on the diagonal. Assumption `{ha}` is formulated s.t. the interpretation of `f` as `A → (A → Y)`
+  natural"
   unfold IsFixedPt
   Branch
     rw [ha]
@@ -67,7 +71,8 @@ Statement {A Y : Type} {f : A → A → Y} {s : Y → Y}
       von `f a a` im Beweisziel umschreiben.  Das machst du mit `nth_rw 2 [{ha}]`.
     "
     -/
-    Hint "Try `nth_rw 2 [{ha}]`"
+    Hint "`f a a` was replaced by `s f a a`. It is probably necessary to rewrite the second
+    appearnace of `f a a` in the goal. Try `nth_rw 2 [{ha}]`"
     simp
   Branch
     nth_rw 2 [ha]

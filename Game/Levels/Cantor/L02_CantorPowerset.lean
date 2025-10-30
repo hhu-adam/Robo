@@ -57,7 +57,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   Hint "**Cantor**:  Na, was meint ihr?  Gibt es vielleicht irgendeine Menge,
   die nicht von `f` getroffen wird?"
   -/
-  Hint "Story"
+  Hint "Is there a set, which is not hit by `f`"
   /-
   Hint (hidden := true) "**Robo**:  Probier mal die Menge von gerade!
   Du könntest sie erst einmal mit `let s := \{ a | a ∉ {f} a }` einführen."
@@ -71,7 +71,8 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   kannst du mit `simp [{s}]` dafür sorgen, dass `simp` durch deine Definition hindurchsieht.
   "
   -/
-  Hint "Try `specialize {hf} {s}`"
+  Hint "Try `specialize {hf} {s}`. When you apply `simp` later, `simp [{s}]` allows `simp` to look through
+  your defintions"
   specialize hf s
   /-
   Hint "Cantor hüpft von einem Bein auf das andere."
@@ -85,7 +86,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
 
   **Robo**:  Sorry, ging alles so schnell!  Habe ich wohl vergessen, abzuspeichern."
   -/
-  Hint "Try `simp [{s}]`"
+  Hint "Try simp [{s}]"
   by_cases h : a ∈ f a
   · suffices hn : a ∉ f a
     · contradiction

@@ -34,7 +34,7 @@ Statement :
     **Robo**: Probiers aus – `unfold` sollte wieder helfen.
   "
   -/
-  Hint (strict := true) "Try `unfold`"
+  Hint (strict := true) "See if `fixedPoints f` is the set of all fix points by using `unfold`"
   unfold fixedPoints
   /-
   Hint (strict := true)  "

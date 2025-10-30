@@ -43,7 +43,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
     **Robo**: Vermutlich, zum Beispiel mit `apply cantor_diagonal at {hf}`.
     "
     -/
-    Hint (hidden := true) "Try `apply cantor_diagonal at {hf}`"
+    Hint (hidden := true) "Use `cantor_diagonal` as e.g. `apply cantor_diagonal at {hf}`"
   push_neg
   intro f
   by_contra hf
@@ -54,7 +54,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
     **Robo**: Vermutlich, zum Beispiel mit `apply cantor_diagonal at {hf}`.
   "
   -/
-  Hint "Try `apply cantor_diagonal at {hf}`"
+  Hint "Use `cantor_diagonal` as e.g. `apply cantor_diagonal at {hf}`"
   Branch
     clear hf
     let _C := { a | a ∉ f a }
@@ -76,7 +76,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   Hint (hidden := true) (strict := true) "
   **Cantor**: Hatte ihr euch nicht schon überlegt, dass `¬ .` keine Fixpunkte hat?"
   -/
-  Hint "Story"
+  Hint "Does `¬ .` have no fixed points?"
   specialize hf (¬ .) -- or specialize h Not -- or specializa h (fun A ↦ ¬ A)
   obtain ⟨a, hA⟩ := hf
   unfold fixedPoints IsFixedPt at hA

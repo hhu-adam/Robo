@@ -37,7 +37,8 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
   **Robo**:  Vermutlich.
   "
   -/
-  Hint "Comment"
+  Hint "Hint that `mem_setOf` from `Set` will become helpful. `Set A` is akin to the power set
+  of `A`, more precisely, it is the type of all subsets of `A`."
   Branch
     push_neg
     intro _a
@@ -48,7 +49,7 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
   Hint (hidden := true) "Try `obtain`"
   obtain ⟨a, ha⟩ := h
   /- Hint (strict := true) "**Du**: Jetzt vermutlich eine Fallunterscheidung zu `{a} ∈ {f} {a}`?" -/
-  Hint (strict := true) "Comment"
+  Hint (strict := true) "Try proof by cases for `{a} ∈ {f} {a}`"
   /- Hint (hidden := true) (strict := true) "**Robo**: Das wäre `by_cases h₁ : {a} ∈ {f} {a}`." -/
   Hint (hidden := true) (strict := true) "Try `by_cases h₁ : {a} ∈ {f} {a}`"
   by_cases h₁ : a ∈ f a
@@ -71,7 +72,8 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
         Oder mit `suffices : {a} ∉ {f} {a}`!
         "
       -/
-      Hint "Try `have` | `suffices : {a} ∉ {f} {a}`"
+      Hint "Remind that, assumpion `{h₁} : {a} ∈ {f} {a}` will be needed agian.
+      Try `have` or `suffices : {a} ∉ {f} {a}`"
     suffices : a ∉ f a
     · contradiction
     rw [ha] at h₁

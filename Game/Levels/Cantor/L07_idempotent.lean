@@ -35,7 +35,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     Und die Annahme `{h}` könntest du schon einmal `congr_fun` genauer ausschreiben.
     "
   -/
-  Hint "Try `unfold range fixedPoints IsFixedPt`, `congr_fun`"
+  Hint "Try `unfold range fixedPoints IsFixedPt` and rewrite assumption `{h}` firstly by `congr_fun`"
   unfold range fixedPoints IsFixedPt
   /-
   Hint (hidden := true) (strict := true) "
