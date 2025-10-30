@@ -27,7 +27,8 @@ Statement : ¬False := by
 
     **Robo**: Probier mal!"
   -/
-  Hint "Try `decide`"
+  Hint "Explain that `¬` is the negation sign. If `(A : Prop)` is true than `¬A` is false and
+  vica versa. `False` is the statement that is always false. Try `decide`"
   decide
 
 /-
