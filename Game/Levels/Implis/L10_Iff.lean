@@ -33,7 +33,9 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
     **Robo**: Die Richtung `{A} → {B}` von `{h}` heißt `{h}.mp`. Du kannst sie
     mit `apply ({h}.mp) at …` anwenden."
   -/
-  Hint "Try `apply ({h}.mp) at …`"
+  Hint "We know that `apply` can be used on implications. Intuitively, for equivalence `{h}`
+  one could use `rw [← {h}]`. The direction `{A} → {B}` of `{h}` is denoted by `{h}.mp`.
+  Try `apply ({h}.mp) at …`"
   Branch
     apply g
     -- Hint "**Robo**: So kannst Du natürlich auch anfangen."

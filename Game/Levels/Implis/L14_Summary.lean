@@ -85,7 +85,7 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
   Branch
     by_cases A
   -- Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `obtain` aufteilen."
-  Hint (hidden := true) "Try `obtain` to divide `h`"
+  Hint (hidden := true) "To divide assumption `h` use `obtain`"
   obtain h | h :=  h
   contradiction
   assumption

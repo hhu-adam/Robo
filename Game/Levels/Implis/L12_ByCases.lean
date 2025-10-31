@@ -24,14 +24,15 @@ Statement (A : Prop) : ¬A ∨ A := by
     **Robo**: Klarer Fall für eine Fallunterscheidung, würde ich sagen. Probier
     mal `by_cases h : A`."
   -/
-  Hint "Try `by_cases h : A`"
+  Hint "Either `A` or `¬A` is true. Try `by_cases h : A`"
   by_cases h : A
   /-
   Hint "
     **Robo**: Siehst du, jetzt hat der Beweis zwei Teile. Im ersten Teil nimmst
     du an, dass `A` wahr ist. Im zweiten nimmst du an, dass `A` falsch ist."
   -/
-  Hint "Try right, assumption, left, assumption"
+  Hint "Proof consists now of two parts. First assumes that `A` is true. Second assumes that `A`
+  is false"
   right
   assumption
   left

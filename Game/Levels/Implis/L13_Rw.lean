@@ -29,7 +29,7 @@ Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B
     **Robo**: Ein Lemma, das wie `not_not` ein `↔` oder `=` im Statement hat, kann
     auch mit `rw [not_not]` verwendet werden."
   -/
-  Hint "Try `rw [not_not]`"
+  Hint "A lemma like `not_not` that contains `↔` or `=` in its statements can also be used with `rw [not_not]`"
   rw [not_not]
   /-
   Hint "
@@ -40,7 +40,8 @@ Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B
 
     **Du**: Ah, und `¬¬B` ist etwas anderes, also brauche ich das Lemma nochmals."
   -/
-  Hint "Try `rw [not_not]`"
+  Hint "Only two of three `¬¬` are rewritten. `rw` only rewrites only first found occurance i.e. `¬¬C`.
+  As `¬¬B` is considered to be something 'different' the lemma has to be applied again"
   rw [not_not]
 
 /-
