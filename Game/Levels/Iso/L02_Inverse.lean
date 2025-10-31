@@ -40,14 +40,16 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       **Robo**: Teil doch erst einmal `Bijective` mit `obtain ⟨hinj, hsurj⟩  := {h}` in
       `Injective` und `Surjective` auf!"
     -/
-    Hint (hidden := true) "`obtain ⟨hinj, hsurj⟩  := {h}`"
+    Hint (hidden := true) "Divide `Bijective` via `obtain ⟨hinj, hsurj⟩  := {h}` into
+    `Injective` and `Surjective`"
     obtain ⟨finj, fsurj⟩  := h
     /-
     Hint (hidden := true)"
       **Robo**: Aus der Surjektivität weisst du, dass jedes `y : B` ein Urbild `x : A` hat.
       Kannst du daraus nicht mit `choose` eine Umkehrabbildung konstruieren?"
     -/
-    Hint (hidden := true) "Try `choose`"
+    Hint (hidden := true) "Surjectivity states that each `y : B` possesses a preimage `x : A`.
+    Try to construct a inverse mapping via `choose`"
     choose g hg using fsurj
     /-
     Hint "
@@ -55,7 +57,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       also zum Beispiel `have hR : RightInverse {g} {f}`
     "
     -/
-    Hint "Try `have hR : RightInverse {g} {f}`"
+    Hint "Show that `{g}` is righ inverse to `{f}` e.g. `have hR : RightInverse {g} {f}`"
     have hR : RightInverse g f := by
       assumption
     use g
@@ -79,10 +81,10 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
   · intro h
     --obtain ⟨g, hL, hR⟩ := h
     -- Hint (hidden := true) "**Robo**: Zerlege `{h}` noch soweit du kannst!"
-    Hint (hidden := true) "Try `obtain`"
+    Hint (hidden := true) "Disect `{h}`"
     obtain ⟨g, h⟩ := h
     -- Hint (hidden := true) "**Robo**: Das UND auch noch!"
-    Hint (hidden := true) "Try `obtain`"
+    Hint (hidden := true) "Disect again"
     obtain ⟨hL, hR⟩  := h
     constructor
     /-
@@ -101,7 +103,8 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
 
       **Robo**: Also, wenn du `f a = f b` hast, kannst du ja auch einfach `rw` benutzen."
       -/
-      Hint (hidden := true) "Try `rw`"
+      Hint (hidden := true) "Try to state that if `f a = f b` then also `g (f a) = g (f b)`.
+      When `f a = f b` available use `rw`."
       rw [eq]
     · intro b
       use g b
@@ -109,7 +112,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       Hint (hidden := true) "
         **Robo**: Hier kannst du die `RightInverse`-Annahme mit `rw` benutzen."
       -/
-      Hint (hidden := true) "Try `rw [hR]`"
+      Hint (hidden := true) "Use assumption `RightInverse` with `rw`"
       rw [hR]
 
 

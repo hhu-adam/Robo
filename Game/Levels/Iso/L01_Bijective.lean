@@ -23,7 +23,7 @@ Statement :
 
     **Du**: Dann ist das ja ganz simpel!"
   -/
-  Hint "Story"
+  Hint "Remind that `Bijective f` is defined as `Injective f ∧ Surjective f`"
   unfold Bijective
   constructor
   · intro a b hab
