@@ -64,7 +64,20 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 
   **Robo** (*aus der Ferne*): `nth_rw 1 [ … ]`! Funktioniert wie `rw`."
   -/
-  Hint "Rewrite `A` and use `f` with disappearing `E i j` with `i ≠ j`. Rewrite `A` to `f A`. Remind that `nth_rw 1 [ … ]`! works as `rw`"
+  Hint "
+  $$
+  \\begin\{aligned}
+    f(A)
+    &= f\\left( \\sum_\{i,j} A_\{i,j} \\cdot E_\{i,j} \\right) \\\\
+    &= \\sum_\{i,j} A_\{i,j} \\cdot f(E_\{i,j})   \\\\
+    &= \\sum_\{i} A_\{i,i} \\cdot f(E_\{i,i})
+  \\end\{aligned}
+  $$
+
+  Write `A` as sum of base matrices. Use linearity to make `f` disappear in `E i j` with `i ≠ j`.
+  Rewrite first `A` in `f A` as sum of base matrices, but not the later `A`. Try nth_rw 1 [ … ]`
+  which works like `rw`.
+  "
   /-
   Hint (hidden := true) "**Du** (*schreiend*): Was meinst du damit?
 
@@ -76,7 +89,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
       rw [matrix_eq_sum_ebasis A]
       -- Hint "**Du**: Hmm, `rw` ist tatsächlich eine schlechte Idee.
       -- Das sieht zu kompliziert aus. Lass es mich doch mit `nth_rw` versuchen."
-      Hint "Try `nth_rw` instead `rw`"
+      Hint "`rw` is a bad idea here. Try `nth_rw`."
   nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
   -- Hint "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser denken…
   --  Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
@@ -88,7 +101,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     simp
   rw [map_sum] -- simp knows this
   -- Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
-  Hint "Try `simp`"
+  Hint "Simplify"
   simp
   /-
   Hint "**Robo**: Wie weit bist du jetzt?

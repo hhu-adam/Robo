@@ -84,7 +84,28 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   **Robo**: Ja. Ich denke, wenn du mit `unfold E` anfängst, geht der Rest wie von selbst.
   "
   -/
-  Hint "Introduce `Mat[{n},{n}]`. Explain `Fin {n}` and `single i j a`, the matrix with `a` at `(i, j)`. Explain `E` being `a = 1`. Explain `A i j` being matrix `A` at `(i, j)`"
+  Hint "`Mat[{n},{n}]` looks like a $({n} \\times {n})$ matrix. Reminder for `Fin {n}`: `Fin {n}` is
+  the set $\\\{0,…,n-1\\}$. Indeces start here at $0$ and not $1$. `single i j a` is the matrix which
+  has at position `(i, j)` the entry `a` and else zero. `E`s are abbreviations for case `a = 1`.
+  `A i j` is entry of matrix `A` at position `(i, j)`. Goal can be seen as scalar multiplication akin to
+
+  $$
+  A_\{i,j} \\cdot
+  \\begin\{pmatrix}
+  0 & 0 & 0\\\\
+  1 & 0 & 0 \\\\
+  0 & 0 & 0
+  \\end\{pmatrix}
+  =
+  \\begin\{pmatrix}
+  0 & 0 & 0\\\\
+  A_\{i,j} & 0 & 0 \\\\
+  0 & 0 & 0
+  \\end\{pmatrix}
+  $$
+
+  Begin with `unfold E`.
+  "
   unfold E
   simp
 

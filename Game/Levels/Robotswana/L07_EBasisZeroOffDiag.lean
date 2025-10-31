@@ -15,7 +15,7 @@ Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgest
 "
 
 -/
-Introduction "intro Robotswana L07: Do not consider `E i j` with i ≠ j"
+Introduction "intro Robotswana L07: Introduce new consideration for `E i j`: do not consider `E i j` with i ≠ j"
 
 /-
 Conclusion "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und

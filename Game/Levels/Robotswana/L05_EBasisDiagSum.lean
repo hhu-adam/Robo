@@ -54,7 +54,8 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     Du willst also mit der Gleichung `matrix_eq_sum_ebasis 1` das Beweisziel `r`e`w`riten.
   "
   -/
-  Hint (hidden := true) "Try `matrix_eq_sum_ebasis` on `1` with `matrix_eq_sum_ebasis 1`"
+  Hint (hidden := true) "Try `matrix_eq_sum_ebasis` on `1` with `matrix_eq_sum_ebasis 1` to `r`e`w`rite
+  goal."
   Branch
     rw [matrix_eq_sum_single 1]
     -- Hint "**Robo**:  Nein, nicht `matrix_eq_sum_single`, sondern `matrix_eq_sum_ebasis`."
@@ -77,7 +78,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   **Robo**: Mit `funext r s` könntest du dich auf den Eintrag der Matrix an der Stelle $(r,s)$ konzentrieren.
   "
   -/
-  Hint "Try `funext r s`"
+  Hint "Try `funext r s` to focus on position $(r,s)$."
   funext r s
   /-
   Hint "**Du**: `1` war hier die Einheitsmatrix, richtig?
@@ -122,7 +123,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
       Hint "Explain that `1 {i} {x}` is defined as `if {i} = {x} then _ else _` and that either `{i} = {x}` or `{i} ≠ {x}` is needed"
     have h₃ : i ≠ x
     -- · Hint "**Du**: Als erstes würde ich mal schauen, ob sich `{h₂}` vereinfacht."
-    · Hint "Try `simp at h₂`"
+    · Hint "Try to simplify `{h₂}`."
       simp at h₂
       -- TODO : `tauto` already solves this.
       /-
@@ -145,7 +146,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     Hint "Apply definition `1 {i} {x}` by `Matrix.one_apply`"
     rw [Matrix.one_apply]
     -- Hint "**Robo**: Und da das falsch ist, kannst du mit `rw` und `if_neg` weiterkommen."
-    Hint "Try `rw [if_neg h₃]`"
+    Hint "Try `rw` and `if_neg`"
     rw [if_neg h₃]
     simp
 

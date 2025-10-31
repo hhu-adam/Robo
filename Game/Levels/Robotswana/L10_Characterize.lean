@@ -83,7 +83,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   **Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument
   ausgelassen.  Jetzt kannst du es noch nachholen."
   -/
-  Hint "Remind missed argument with `rw [eq_sum_apply_diag_ebasis]`. Try `assumption`"
+  Hint "Remind missed argument with `rw [eq_sum_apply_diag_ebasis]`"
   assumption
 
 NewDefinition Matrix.trace

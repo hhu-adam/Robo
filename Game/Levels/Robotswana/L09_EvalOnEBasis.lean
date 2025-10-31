@@ -70,7 +70,25 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
   Und dann weiter mit `mul_eq_mul_left_iff`.
   "
   -/
-  Hint "Show calculation of `{n}`th result of equation via former results. Explain that `f E i i` = `f E j j` for arbitrary `i` and `j`. Try `suffices h : n * f (E i i) = n * 1`, `mul_eq_mul_left_iff`"
+  Hint "
+  `{n}`-th multiplication of the equation can be calculated with the former results as:
+  $$
+    \\begin\{aligned}
+    n \\cdot f(E_\{i i})
+    &= \\sum_j f(E_\{i i}) \\\\
+    &= \\sum_j f(E_\{j j}) \\\\
+    &= f(1) \\\\
+    &= n
+    \\end\{aligned}
+  $$
+
+  Keep in mind that `f E i i` and `f E j j` are equal for arbitrary `i` and `j`. Use fact that
+  multiplications with `{n}` are injective. Try
+  ```
+  suffices h : n * f (E i i) = n * 1
+  ```
+  and then continue with `mul_eq_mul_left_iff`.
+  "
   -- older version used `nat_mul_inj' (n := n)` from here
   -- now using `mul_eq_mul_left_iff`, cf. Prado
   suffices h : n * f (E i i) = n * 1 by
@@ -88,7 +106,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     -- · Hint  "
     --  **Robo**: Der Pfeil `{h}` ist eine implizite Einbettung von `ℕ` in `ℝ`.
     --  Die entfernst du zum Beispiel mit `simp`."
-    · Hint  "Explain embedding of `ℕ` in `ℝ` via `{h}`. Try `simp`"
+    · Hint  "`{h}` is an implicid embedding of  `ℕ` in `ℝ`.  Try `simp`"
       simp at h
       /-
       Hint "
@@ -105,7 +123,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       das für eine leere Menge `M` besagt `∀ (m : M), False`.
       "
       -/
-      Hint "Try `IsEmpty.false`, with `∀ (m : M), False` for empty set `M`"
+      Hint "Try `IsEmpty.false`. It states for the empty set `M` that `∀ (m : M), False`"
       Branch
         apply IsEmpty.false at i
         contradiction
@@ -154,7 +172,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
 
         **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
         -/
-        Hint (hidden := true) "Pull function into sum and try `congr`-`ext`"
+        Hint (hidden := true) "Pull function into sum"
         rw [map_sum]
         -- Hint "**Du**: Nochmals!"
         Hint "again"

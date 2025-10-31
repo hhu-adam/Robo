@@ -46,7 +46,9 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   **Robo**:  Nein, unter der Summe wird das nicht funktionieren.
   Aber `simp […]` hat Aussicht auf Erfolg."
   -/
-  Hint (hidden := true) "Try `Matrix.smul_ebasis` on `(A i j) • E i j`. Mention to use `simp […]` instead of `rw […]`"
+  Hint (hidden := true) "Expression `(A i j) • E i j` can be simplified with `Matrix.smul_ebasis`.
+  `rw […]` can not be used under a sum. `simp […]` can work.
+  "
   Branch
     unfold E
     /-    Hint "**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament wiederholen.
