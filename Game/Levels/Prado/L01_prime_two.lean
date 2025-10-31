@@ -21,7 +21,7 @@ namespace Nat
 Statement prime_two : Prime 2 := by
   -- Hint "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil `2` eine konkrete Zahl ist
   -- und es einen Algorithmus gibt, um zu entscheiden, ob eine Zahl prim ist, kannst du einfach `decide` verwenden!"
-  Hint "Try `decide`"
+  Hint "Because `2` is a concrete data and there is a algorithm to decide if a number is prime you can use `decide`"
   decide
 
 TheoremTab "ℕ"

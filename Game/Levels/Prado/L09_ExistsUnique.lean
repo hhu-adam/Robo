@@ -25,16 +25,19 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
   sodass (1) `P(m)` gilt und (2) jedes andere Element `m'`, für das `P(m')` gilt, bereits gleich `m` ist.
   Der erste Schritt ist also, ein geeignetes `m` zu finden, und dann `use _` zu verwenden."
   -/
-  Hint "Explain notation `∃! m, P(m)`, Try `use _`"
+  Hint "`∃! m, P(m)` is notation for 'there exists exactly one `m` for which `P(m)` holds'.
+  It is defined as 'There exists a `m` , s.t., `P(m)` holds, and each other element `m'`, for which
+  `P(m')` holds, is equal to `m`'. Try finding an appropriate `m` and apply `use _`"
   obtain ⟨w, hw⟩ := h
   use w
   -- Hint "**Robo**: Tatsächlich ergibt `use` auf `∃!` angewendet immer ein bisschen Chaos.
   -- Schick am besten immer gleich ein `simp` hinterher, dann wird es wieder lesbar."
-  Hint "Try `simp`"
+  Hint "Applying `use` onto `∃!` is usually badly readable. Try `simp` directly afterwards"
   simp
   -- Hint "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) `{w}` erfüllt `a * {w} = b`,
   -- (2) `{w}` ist das einzige Element mit dieser Eigenschaft."
-  Hint "Story, next step in proof"
+  Hint "Show two statements: (1) `{w}` satisfies `a * {w} = b` and (2) `{w}` is the only element with
+  such a property"
   constructor
   · rw [hw]
   /-
@@ -47,7 +50,11 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
     ```
     "
   -/
-  · Hint "Try `mul_eq_mul_left_iff`"
+  · Hint "Try `mul_eq_mul_left_iff` which states
+    ```
+    a * b = a * c ↔ b = c ∨ a = 0
+    ```
+    "
     intro y hy
     rw [hw] at hy
     /-

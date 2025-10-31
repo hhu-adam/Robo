@@ -41,7 +41,11 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   ```
   "
   -/
-  Hint "Try `rw [dvd_iff_exists_eq_mul_left] at *`"
+  Hint "`a ∣ b` is defined as `∃ k, b = a * k`. State is explicitly with
+  ```
+  rw [dvd_iff_exists_eq_mul_left] at *
+  ```
+  "
   rw [dvd_iff_exists_eq_mul_left] at * -- optional
   /-
   Hint (hidden := true) "
@@ -50,7 +54,7 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
     **Robo**: Genau.  Als nächstes nimmst du die Annahmen mit `obtain ⟨x ,hx⟩ := _`
   usw. auseinander."
   -/
-  Hint "Try `obtain ⟨x ,hx⟩ := _`, `use`"
+  Hint "Continue with `obtain` and `use`. Fristly diect assumptions with `obtain ⟨x ,hx⟩ := _`"
   obtain ⟨x, h⟩ := h
   obtain ⟨y, g⟩ := g
   -- Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass
@@ -58,7 +62,7 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   Hint (hidden := true) "Try `use _` such that `{b} + {c} = {a} * _`"
   use x + y
   -- Hint (hidden := true) "**Robo**: Mit ein bisschen umschreiben kann man sicher `ring` verwenden."
-  Hint (hidden := true) "Try `rw`, `ring`"
+  Hint (hidden := true) "Rewrite so you can use `ring`"
   rw [h, g]
   Branch
     linarith  -- works here, but omega does not!
