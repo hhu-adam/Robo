@@ -32,7 +32,9 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
      $$
      "
   -/
-  Hint "Goal: `[a, b] ∪ \\\{ b + 1 \\} = [a, b + 1]`"
+  Hint "Remind that `Icc` is an interval which is closed to both sides. You could write `Icc a b`
+  as $[a, b]$ or $\\\{a, a + 1, \\dots, b\\}$, because we are in the natual numbers. Therfore, the
+  goal is: $$ [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1] $$"
   -- Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
   Hint "Try `ext`"
   ext x
@@ -44,7 +46,7 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   Hint "Try `simp`"
   simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
-  Hint "Try `omega`"
+  Hint "Try omega"
   omega
 
 

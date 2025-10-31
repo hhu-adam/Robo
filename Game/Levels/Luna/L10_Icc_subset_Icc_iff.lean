@@ -46,7 +46,8 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
       (Die Ungleichung `a₁ ≤ a₁` formulierst du am besten mit `have` aus.)
     "
     -/
-    Hint (hidden := true) "Try `apply`, `have`"
+    Hint (hidden := true) "Use assumption `{h}`. E.g. apply `{h}` onto `a₁ ≤ b₁` or `a₁ ≤ a₁`.
+    Formulate `a₁ ≤ a₁` using `have`"
     apply h at h₁
     have : a₁ ≤ a₁ := by rfl  -- briefly introduced in Implies, so that Luna does not depend on Spinoza
     apply h at this

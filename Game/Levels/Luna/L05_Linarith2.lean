@@ -24,7 +24,8 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
     Lös am besten erst einmal ganz kanonisch die beiden Implikationen mit `intro` auf.
   "
   -/
-  Hint "Try `intro`"
+  Hint "`omega` and `linarith` alone don't help here. `linarith` will need some help. Try to untangle
+  the implications via `intro`"
   intro hn hx
   /-
   Hint "
@@ -32,7 +33,7 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
     Probier vielleicht einmal `push_neg at {hx}`?
   "
   -/
-  Hint "Try `push_neg at {hx}`"
+  Hint "Increase readability of `{hx}`. Try `push_neg at {hx}`"
   push_neg at hx
   /-
   Hint "
@@ -40,7 +41,7 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
     Aber wir wissen ja, was `→` bedeutet – probier mal ein `rw` mit `imp_iff_or_not`!
   "
   -/
-  Hint "Try `rw [imp_iff_or_not]`"
+  Hint "We now have `{hx} : m ≤ x → n < x`. Knowing what `→` means, try `rw` with `imp_iff_or_not`"
   --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
   rw [imp_iff_or_not] at hx
   /-
@@ -49,7 +50,7 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
     beiden Bestandteile aufspalten.
   "
   -/
-  Hint "Try `obtain hx | hx := hx`"
+  Hint "Divide `{hx}` with `obtain`"
   --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
   obtain hx | hx := hx
   · linarith

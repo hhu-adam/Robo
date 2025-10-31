@@ -34,7 +34,21 @@ Statement (x y : ℚ) (h₁ : 35/11 * y ≤ 35/2 - 22/21 * x) (h₂ : 8/9 * y �
   Lina grinst.
   "
   -/
-  Hint "Goal `y ≤ \\tfrac\{34}\{7}`, Try `linarith`"
+  Hint "
+  Given
+
+  $$
+  \\begin\{aligned}
+    \\tfrac\{35}\{11}\\cdot y &\\le -\\tfrac\{22}\{21}\\cdot x + \\tfrac\{35}\{2}  \\\\
+    \\tfrac\{8}\{9} \\cdot y &\\le x + \\tfrac\{17}\{8}
+  \\end\{aligned}
+  $$
+
+  Show
+  $$
+  y ≤ \\tfrac\{34}\{7}
+  $$
+  "
   linarith
 
 -- Conclusion "**Du**: Nicht schlecht!"
