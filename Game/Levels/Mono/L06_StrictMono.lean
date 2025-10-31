@@ -20,14 +20,14 @@ Statement StrictMono.injective {f : ℤ → ℤ}
     **Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus `Injective f` einführen?
   "
   -/
-  Hint (hidden := true) "Try `intro` on assumptions of `Injective f`"
+  Hint (hidden := true) "Introduce all varaibles and assumptions from `Injective f`"
   intro a b h
   /-
   Hint (hidden := true) (strict := true)"
     **Robo**:  Jetzt vielleicht eine Fallunterscheidung.  Erinnerst du dich an `lt_trichotomy`?
   "
   -/
-  Hint (hidden := true) (strict := true) "Try `obtain` on `lt_trichotomy`"
+  Hint (hidden := true) (strict := true) "Try case distinction. Use `lt_trichotomy`"
   obtain hlt | heq | hgt := lt_trichotomy a b
   · apply hf at hlt
     rw [h] at hlt

@@ -25,7 +25,7 @@ Statement :
     **Robo**: `Injective` ist so definiert, wie du es erwarten würdest: `∀ \{a b : U}, f a = f b → a = b`.
     Du kannst das wieder leicht mit `unfold` prüfen, wenn du mir nicht traust."
   -/
-  Hint "Try `unfold`"
+  Hint "`Injective` is defined as `∀ \{a b : U}, f a = f b → a = b`. You can check this with `unfold`"
   /-
   Hint (hidden := true) "
     **Robo**:  Fang doch mit `intro a b` an.
@@ -43,7 +43,7 @@ Statement :
   "**Robo**: Ich glaube, du solltest jetzt mit der Definition von `{f}` die
   Annahme `{ha}` vereinfachen."
   -/
-  Hint (hidden := true) "Try `simp [f] at ha`"
+  Hint (hidden := true) "Use `{f}` to simplify assumption `{ha}`"
   simp [f] at ha
   assumption
 

@@ -20,7 +20,7 @@ Statement {A B : Type} {f : A → B} {g : B → A} (injf : Injective f)
   **Robo**:  Eine injektive Abbildung `f`, die zu einer Abbildung `g` linksinvers ist, ist zur selben Abbildung auch rechtsinvers.
   "
   -/
-  Hint "Explain"
+  Hint "Explain goal: An injective mapping `f` which is left inverse to mapping `g`, is to the same mapping also right inverse"
   intro x
   apply injf
   rw [hL]

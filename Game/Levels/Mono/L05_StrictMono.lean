@@ -32,17 +32,19 @@ Statement :
 
      Wollen wir es damit einmal versuchen?"
   -/
-  Hint "Try `StrictMono.injective` | StrictMono.add` | `Odd.strictMono_pow`"
+  Hint "`StrictMono` is useful. `StrictMono.injective` says that each strictly monotone mapping
+  is injective. To show that a mapping is monotone one can use e.g. `StrictMono.add` or `Odd.strictMono_pow`,
+  which says that for uneven `n`, `x ↦ x ^ n` is monotone."
   -- Hint (hidden := true) "**Robo**: `apply` ist, wonach du suchst."
   Hint (hidden := true) "Try `apply`"
   Branch
     intro a b
     -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
-    Hint "Retry if `intro a b`"
+    Hint "Try again from the beginning"
   Branch
     intro a b h
     -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
-    Hint "Retry if `intro a b h`"
+    Hint "Try again from the beginning"
   apply StrictMono.injective
   apply StrictMono.add
   · Branch
@@ -52,7 +54,7 @@ Statement :
       exact h_odd.strictMono_pow
     apply Odd.strictMono_pow
     -- Hint (hidden := true) "**Du**: `Odd 3`. Ist das nicht eine Trivialität? Warte mal!"
-    Hint (hidden := true) "Comment"
+    Hint (hidden := true) "`Odd 3` is trivial"
     decide
   · -- Hint "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
     Hint "Story"
@@ -63,7 +65,7 @@ Statement :
       **Robo**: Doch, doch. Schau mal mit `unfold` in die Definition von `StrictMono` hinein.
     "
     -/
-    Hint "Try `unfold StrictMono`"
+    Hint "Use `unfold` to look into definition of `StrictMono`"
     intro a b
     simp
 

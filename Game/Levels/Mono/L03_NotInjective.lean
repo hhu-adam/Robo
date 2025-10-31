@@ -28,12 +28,21 @@ Statement :
   **Robo**: Das ist die Abbildung `ℕ → ℕ`, die an jeder Stelle den doppelten Wert von `f` annimmt.
   "
   -/
-  Hint "Story"
+  Hint "The given mapping has the form
+  $$
+    f(n) = \\begin\{cases}
+    n^2 & \\text\{falls } n \\text\{ gerade} \\\\
+    n+1 & \\text\{andernfalls.}
+  \\end\{cases}
+  $$
+
+  and `f + f` is the mapping `ℕ → ℕ`, that for each input return the doubeled value of `f`.
+  "
   /-
   Hint (hidden := true) "
   **Robo**: Vielleicht öffnest du zuerst mal `Injective` mit `unfold`. Dann steht da `¬ ∀` …"
   -/
-  Hint (hidden := true) "Try `Injective`, `unfold`"
+  Hint (hidden := true) "Open `Injective` via `unfold` to see `¬ ∀` ..."
   unfold Injective
   -- Hint (hidden := true) (strict := true) "**Robo**: Erinnerst du dich an `push_neg`?"
   Hint (hidden := true) (strict := true) "Try `push_neg`"
@@ -44,7 +53,7 @@ Statement :
 
     **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   -/
-  Hint (hidden := true) "Try `use` with two numbers"
+  Hint (hidden := true) "Provide a counter example"
   use 2
   use 3
   -- Hint (hidden := true) "**Robo**:  Das ist hier alles so konkret, vielleicht reicht `decide`."
