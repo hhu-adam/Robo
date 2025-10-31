@@ -32,7 +32,8 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
     **Robo**:  Ach ja –
     `ext x` ersetzt eine Mengengleichheit `A = B` durch `x ∈ A ↔ x ∈ B`."
     -/
-  Hint "Explain `A B C : Set ℕ`. Try `ext x`"
+  Hint "`A B C : Set ℕ` means that `A`, `B` and `C` are subsets of `ℕ`. Therefore, `Set`
+  can be interpreted as 'subset'. Use `ext x` to replace a set equation `A = B` with `x ∈ A ↔ x ∈ B`"
   ext x
   -- Hint "**Robo**:  Und jetzt wieder `simp`."
   Hint "Try `simp`"
@@ -54,7 +55,17 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
     ```
   "
   -/
-  Hint "Explain what `simp` does by using simplifications `{x} ∈ {A} ∩ {B} ↔ {x} ∈ {A} ∧ {x} ∈ {B}` and `{x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}`"
+  Hint "Explain `simp`: `simp` looks for known equations and equivalences which would be currently
+  applicable. `simp` uses all simplifications it can find. Currently the following simplifications
+  were performed:
+    ```
+    {x} ∈ {A} ∩ {B} ↔ {x} ∈ {A} ∧ {x} ∈ {B}
+    ```
+    and
+    ```
+    {x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}.
+    ```
+  "
   -- Hint (hidden := true)"
   --   **Robo**:  Den Rest schafft bestimmt `tauto`.
   -- "

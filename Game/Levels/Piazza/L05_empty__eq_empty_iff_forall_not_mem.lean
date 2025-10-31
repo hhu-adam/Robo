@@ -25,7 +25,8 @@ Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
     Oder mit `simp [eq_empty_iff_forall_not_mem]`, falls du schnell fertig werden möchtest.
   "
   -/
-  Hint "Try `rw [eq_empty_iff_forall_not_mem]` | `simp [eq_empty_iff_forall_not_mem]`"
+  Hint "Having `∅` you could either start with `rw [eq_empty_iff_forall_not_mem]` or
+  `simp [eq_empty_iff_forall_not_mem]`"
   /- Want `eq_empty_iff_forall_not_mem` to be introduced here,
      because it is needed in SAMARKAND!
   -/

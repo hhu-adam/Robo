@@ -29,7 +29,9 @@ Statement {A B C : Set ℕ} (h₁ : A ⊆ B) (h₂ : B ⊆ C) : A ⊆ C := by
     `rw [subset_iff] at *` aus, damit du siehst, was passiert.
   "
   -/
-  Hint "Try `rw [subset_iff] at *`, show that element in `A` is also in `C` via `intro a`"
+  Hint "Using `ext` would be too complicated. It is simpler to use `intro a` to introduce
+  an arbitrary element from `A` and show that it is also in `C`. Firstly, write all inclusions
+  exolicitly with `rw [subset_iff] at *`"
   rw [subset_iff] at *
   -- tauto -- would work here
   intro a ha

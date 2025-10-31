@@ -33,7 +33,8 @@ Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
     Links steht `A` ohne `a`, rechts steht auch `A` ohne `a`.
     "
   -/
-  Hint "Explain `Finset`"
+  Hint "`Finset` here means that `A` belongs to the finite subsets of ℕ.
+  Left it states `A` without `a` and on the right it also says `A` without `a`"
   ext
   simp
   tauto
