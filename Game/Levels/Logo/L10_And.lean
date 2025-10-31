@@ -45,7 +45,7 @@ Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
     Ich glaube, du weißt schon, wie man die jeweils erreicht.
     Die Ziele stehen ja jeweils in den *Annahmen*."
   -/
-  Hint (hidden := true) "Try `assumption`"
+  Hint (hidden := true) "Now there is goal `{B}`. This goal is part of the assumption"
   assumption
 
 /-
