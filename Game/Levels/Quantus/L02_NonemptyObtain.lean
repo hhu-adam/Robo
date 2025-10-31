@@ -35,7 +35,9 @@ Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
     Probier mal `obtain ⟨a⟩ := h`.
   "
   -/
-  Hint "Explain Statement, Try `obtain ⟨a⟩ := h`"
+  Hint "`A` is in 'type', whcih can be interpreted as `A` being a set which is by assumption `h`
+  not empty. The goal is to show that there is an element in `A`. Use `obtain` to disect assumption.
+  Try `obtain ⟨a⟩ := h`."
   obtain ⟨a⟩ := h
   use a
 

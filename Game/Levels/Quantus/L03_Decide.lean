@@ -56,6 +56,6 @@ dann kann es die Aufgabe lösen.
 "
 -/
 Conclusion "Conclusion Quantus L03: Explain that `decide` can show True/False for `Even 42`, if
-decide possesses an algorithm for making this decision"
+`decide` possesses an algorithm for making this decision"
 
 OnlyTactic decide

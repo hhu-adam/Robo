@@ -73,7 +73,7 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People ‚Ü
 
     **Robo**: Schau dir mal an wie man `obtain` auf die Annahme `{h}` anwenden k√∂nnte."
     -/
-    Hint (hidden := true) "Try `obtain` on `{h}`"
+    Hint (hidden := true) "We have assumption `{h}`. Try applying `obtain` on `{h}`."
     choose p hp using h
     use p
     intro hp'

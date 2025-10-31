@@ -38,7 +38,10 @@ Statement {X : Type} (P : X → Prop) :
 
     **Robo**: Genau. Was du brauchst, ist `push_neg`."
   -/
-  Hint "Explain `{P}` over `{X}` and statement `{P} x` for the natural number `x`. Try `push_neg`."
+  Hint "Explain `{P}`: `{P}` is an expression over the type `{X}`. `{X}` could e.g. be the natural
+  numbers. `{P} x` could be the expression: `x` is even. Or: `x` has seven prime factors. Or: `x` is
+  a favorite number. In other words: `{P}` is a mapping that takes `x : {X}` and maps it onto an expression.
+  Try `push_neg`."
   Branch
     constructor
     intro h

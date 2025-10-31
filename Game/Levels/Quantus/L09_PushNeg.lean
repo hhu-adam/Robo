@@ -50,7 +50,8 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
     **Robo**: Zeig ich dir später, nicht hier vor großem Publikum.
     Ich würde jetzt lieber mit `use` eine richtige Zahl angeben, und danach umschreiben."
   -/
-  Hint "Try `use`, `not_odd_iff_even`. Explain that `rw` can not be used in quantors."
+  Hint "Try `use` with a number and then `not_odd_iff_even`. You can not use `not_odd_iff_even`
+  directly, as `rw` cannot be applied inside of quantors. Try `use` with a number."
   Branch
     use n + 2
     -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."

@@ -54,7 +54,8 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Robo**: `decide` wird nicht funktionieren, da `{n}` keine konkrete sondern
     eine beliebige Zahl ist. Da musst du schon etwas Arbeit leisten!"
   -/
-  Hint "Explain definition of `Even {n}` by `r` using `r + r = {n}. Explain why `decide` does not work via `n`. Try `unfold Even at *`"
+  Hint "Explain definition of `Even {n}` by `r` using `r + r = {n}. Look up definition by `unfold Even at *`.
+  `decide` might be considered but `decide` does not work, because of `{n}` arbitrary."
   Branch
     unfold Even
     -- Hint "
@@ -78,14 +79,21 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     was ausgerechnet `1 = 1 / 2 + 1 / 2 = 0 + 0` ist, du bist also auf dem Holzweg!
     "
     -/
-    Hint "Explain that `{n} ^ 2 / 2` is in `ℕ` by example `1 = 1 / 2 + 1 / 2 = 0 + 0` with `{n} = 1`."
+    Hint "`{n} ^ 2 / 2` is a natural number because division over `ℕ` in Lean is always rounded down.
+    For `{n} = 1` that means
+    ```
+    1 ^ 2 = (1 ^ 2) / 2 + (1 ^ 2) / 2
+    ```
+    which is  `1 = 1 / 2 + 1 / 2 = 0 + 0`.
+    "
   /-
   Hint "
     **Du**: Also von `{h}` weiß ich jetzt, dass ein `s` existiert, so dass `s + s = {n}` …
 
     **Robo**: Mit `choose s hs using {h}` kannst du dieses `s` tatsächlich einführen."
   -/
-  Hint "Explain that from `{h}` follow that there is `s` such that `s + s = {n}`. Try `choose s hs using {h}`"
+  Hint "Explain that from `{h}` follow that there is `s` such that `s + s = {n}`. Try `choose s hs using {h}`
+  to introduce `s`."
   choose s hs using h
   /-
   Hint "
@@ -115,7 +123,8 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Robo**: Aber zuerst musst du noch mit
     `rw` `n` durch `{s} + {s}` ersetzen, da `ring` das sonst nicht weiß."
   -/
-  Hint (hidden := true) "Try `rw` to replace `n` by `{s} + {s}`, `ring`"
+  Hint (hidden := true) "before using `ring`, use `rw` to replace `n` by `{s} + {s}`, because
+  ring does not know otherwise."
   rw [hs]
   ring
 
