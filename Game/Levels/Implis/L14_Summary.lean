@@ -40,7 +40,7 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 "
 
 /-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
-TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
+TheoremDoc imp_iff_or_not as "imp_iff_or_not" in "Logic"
 
 /-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
 TheoremDoc imp_iff_not_or as "imp_iff_not_or" in "Logic"
