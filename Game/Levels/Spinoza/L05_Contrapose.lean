@@ -23,7 +23,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
     **Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein `→`.
 
     **Robo**: Erinner dich an `revert`. Mit `revert {h}` kannst du die Annahme `{h}` als
-    Implikationsannahme ins Beweissziel schieben."
+    Implikationsannahme ins Beweisziel schieben."
   revert h
   Hint "
     **Du**: Und jetzt kann ich dieses Kontrapositionslemma anwenden? Wie hieß das noch einmal?

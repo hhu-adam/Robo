@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-25\n"
+"POT-Creation-Date: 2025-11-01\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -161,6 +161,25 @@ msgstr ""
 msgid "Diesmal habt ihr die Formalosophinnen offenbar beeindruckt.  Sie nicken anerkennend.\n"
 "\n"
 "Dann geht das Getuschel wieder los."
+msgstr ""
+
+#. §0: `ℕ`
+#. §1: `ℕ`
+#. §2: `ring`
+#: Game.Levels.Saturn.L04_mul_assoc
+msgid "Wieder ein 👍.\n"
+"\n"
+"  **Du**: Aber warte mal, diesmal waren die Koeffizienten doch in §0!\n"
+"  Das ist doch gar kein Ring, und auch Polynome mit Koeffizienten in §1 bilden keinen Ring.\n"
+"\n"
+"  **Robo**: Mag sein.  Aber §2 funktioniert sogar für sogenannte Halbringe.\n"
+"\n"
+"  **Du**: So so …\n"
+"\n"
+"  Der anonyme Funker möchte wissen, ob ihr bereit seid für das End Game,\n"
+"  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
+"\n"
+"  „Bereit” funkt Robo zurück."
 msgstr ""
 
 #. §0: `«{A}» «{B}» «{C}» : Prop`
@@ -535,6 +554,15 @@ msgstr ""
 msgid "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
 msgstr ""
 
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen\n"
+"Fläche heruntergetrampelt ist. Spuren führen kreuz und quer und in verschiedene\n"
+"Richtungen weg.\n"
+"\n"
+"Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\n"
+"Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
+msgstr ""
+
 #. §0: `Injective f`
 #: Game.Levels.Mono.L06_StrictMono
 msgid "\n"
@@ -719,16 +747,6 @@ msgstr ""
 msgid "**Mem**:  Wie wärs denn hiermit?"
 msgstr ""
 
-#: Game.Levels.Iso.L02_Inverse
-msgid "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zur ihr inverse Abbildung existiert.\n"
-"Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten.\n"
-"Hattest du dir die Aussagen abgespeichert?\n"
-"\n"
-"**Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die Augenbrauen nach oben.\n"
-"Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.\n"
-""
-msgstr ""
-
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
 msgid "Euklid ist begeistert und tanzt im Kreis.\n"
 "Er möchte euch fast nicht gehen lassen.\n"
@@ -851,22 +869,6 @@ msgid "Es kommt ein 👍 zurück.\n"
 "  **Robo**: Du hättest allerdings auch einfach §0 sagen können."
 msgstr ""
 
-#. §0: `g`
-#. §1: `f`
-#. §2: `f`
-#. §3: `g`
-#. §4: `Function.RightInverse`
-#. §5: `Function.RightInverse`
-#. §6: `RightInverse`
-#. §7: `RightInverse`
-#: Game.Levels.Epo.L03_LeftInverse
-msgid "\n"
-"**Du**: Ich vermute mal, dass soll heißen, §0 ist genau dann ein Rechtsinverses of §1, wenn §2 ein Linksinverses von §3 ist.\n"
-"\n"
-"**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch mehrdeutig ist.\n"
-""
-msgstr ""
-
 #. §0: `contradiction`
 #: Game.Levels.Logo.L07_Contradiction
 msgid "Der erste Querulant ist offenbar zufrieden.\n"
@@ -908,6 +910,10 @@ msgid "\n"
 "setzt sie als Implikationsprämisse vor das Beweisziel. Aber nun mach schon fertig."
 msgstr ""
 
+#: Game.Levels.Babylon.L01_Sum_Simp_Card
+msgid "**Babylonier**: Sehr gut, das passt!"
+msgstr ""
+
 #. §0: `«{h}»`
 #. §1: `ℕ`
 #. §2: `ℝ`
@@ -923,19 +929,6 @@ msgstr ""
 msgid "\n"
 "**Robo**:  Den Rest schafft bestimmt §0.\n"
 ""
-msgstr ""
-
-#: Game.Levels.Piazza.L11_erase
-msgid "**Mem**:  Hey, Fin, wachst machst Du denn da?\n"
-"\n"
-"Fin ist der kleinste in der Runde und hat bislang nichts gesagt.\n"
-"Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.\n"
-"\n"
-"**Fin**:  Ist doch nur eine kleine Übung.\n"
-"\n"
-"**Mem**: Was für eine Übung?\n"
-"\n"
-"Fin erklärt sich folgendermaßen."
 msgstr ""
 
 #. §0: `n : ℤ`
@@ -1158,6 +1151,25 @@ msgstr ""
 
 #: Game.Levels.Luna.L05_Linarith2
 msgid "**Lina:** Nochmal dieselbe Frage, aber jetzt in ℝ!"
+msgstr ""
+
+#. §0: `Icc a b`
+#. §1: $[a,b]$
+#: Game.Doc.Definition
+msgid "§0 ist das abgeschlossene Interval §1."
+msgstr ""
+
+#. §0: `rw`
+#. §1: `apply`
+#: Game.Levels.Implis.L11_Iff
+msgid "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen.\n"
+"Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis,\n"
+"aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n"
+"\n"
+"Er holt tief Luft und seufzt.\n"
+"\n"
+"**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist.\n"
+"Aber meint Ihr, Ihr schafft das?"
 msgstr ""
 
 #. §0: `apply congr_fun at h`
@@ -1490,15 +1502,6 @@ msgid "\n"
 "**Robo**: Ich sehe, du hast langsam den Dreh raus."
 msgstr ""
 
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen\n"
-"Fläche heruntergetrampelt ist. Spuren führen kreuz und queer und in verschiedene\n"
-"Richtungen weg.\n"
-"\n"
-"Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\n"
-"Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
-msgstr ""
-
 #. §0: $(n × n)$
 #. §1: $\\mathbb{R}$
 #. §2: $A$
@@ -1609,17 +1612,6 @@ msgstr ""
 msgid "**Robo** Bravo! Jetzt aber nichts wie weg hier, bevor sich eine neue Schlange bildet!\n"
 "\n"
 "Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon."
-msgstr ""
-
-#. §0: `choose`
-#. §1: `choose`
-#. §2: `choose g hg using nonempty_fibre`
-#: Game.Levels.Epo.L06_choose
-msgid "**Du**:  Das riecht irgendwie nach Auswahlaxiom.\n"
-"\n"
-"**Robo**:  Bingo.  Erinnerst du nicht noch an §0?\n"
-"Hier kommt §1 so richtig in sein Element.\n"
-"Probier mal §2."
 msgstr ""
 
 #. §0: `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`
@@ -1838,10 +1830,6 @@ msgid "**Robo**:  Erinner dich, dass deine “Tupel” §0 und §1 in Wahrheit z
 "Du könntest sie auf einem Element aus §3 auswerten. Vielleicht hilft §4 in irgendeiner Form?"
 msgstr ""
 
-#: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "**Du**:  Mal überlegen …∪"
-msgstr ""
-
 #. §0: `revert`
 #. §1: `revert`
 #: Game.Levels.Implis.L03_Apply
@@ -1936,6 +1924,22 @@ msgid "\n"
 "**Robo**:  Die Annahme §0 musst du sicherlich irgendwie ausnutzen.\n"
 "Du könnest §1 zum Beispiel auf die Ungleichung §2 oder auf §3 anwenden!\n"
 "(Die Ungleichung §4 formulierst du am besten mit §5 aus.)\n"
+""
+msgstr ""
+
+#. §0: `g`
+#. §1: `f`
+#. §2: `f`
+#. §3: `g`
+#. §4: `Function.RightInverse`
+#. §5: `Function.RightInverse`
+#. §6: `RightInverse`
+#. §7: `RightInverse`
+#: Game.Levels.Epo.L03_LeftInverse
+msgid "\n"
+"**Du**: Ich vermute mal, das soll heißen, §0 ist genau dann ein Rechtsinverses von §1, wenn §2 ein Linksinverses von §3 ist.\n"
+"\n"
+"**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch mehrdeutig ist.\n"
 ""
 msgstr ""
 
@@ -2289,6 +2293,19 @@ msgid "\n"
 ""
 msgstr ""
 
+#: Game.Levels.Piazza.L11_erase
+msgid "**Mem**:  Hey, Fin, was machst Du denn da?\n"
+"\n"
+"Fin ist der kleinste in der Runde und hat bislang nichts gesagt.\n"
+"Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.\n"
+"\n"
+"**Fin**:  Ist doch nur eine kleine Übung.\n"
+"\n"
+"**Mem**: Was für eine Übung?\n"
+"\n"
+"Fin erklärt sich folgendermaßen."
+msgstr ""
+
 #: Game.Levels.Implis.L06_Iff
 msgid "**Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen\n"
 "konnten. Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von\n"
@@ -2495,11 +2512,43 @@ msgstr ""
 msgid "**Benedictus**: Das sieht gut aus!"
 msgstr ""
 
+#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
+msgid "Nach einer Weile hört ihr Papierrascheln.\n"
+"Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder.\n"
+"„Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
+"\n"
+"**Euklid**:\n"
+"Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren.\n"
+"Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist,\n"
+"hätte ich den Posten als Direktor nie angenommen.\n"
+"\n"
+"**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n"
+"\n"
+"**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten\n"
+"der Schriften meines berühmten Vorfahren zu finden.  Der stammte übringens auch\n"
+"aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst,\n"
+"und finde nur kleinste Bruchstücke.\n"
+"\n"
+"Schauen Sie, hier habe ich jetzt schließlich selbst angefangen,\n"
+"eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?"
+msgstr ""
+
 #. §0: `Odd.neg_pow`
 #: Game.Levels.Quantus.L05_neg_pow
 msgid "\n"
 "**Robo**:  Ich glaube, hier kommst du mit §0 weiter.\n"
 ""
+msgstr ""
+
+#. §0: `choose`
+#. §1: `choose`
+#. §2: `choose g hg using nonempty_fibre`
+#: Game.Levels.Epo.L06_choose
+msgid "**Du**:  Das riecht irgendwie nach Auswahlaxiom.\n"
+"\n"
+"**Robo**:  Bingo.  Erinnerst du dich noch an §0?\n"
+"Hier kommt §1 so richtig in sein Element.\n"
+"Probier mal §2."
 msgstr ""
 
 #: Game.Levels.Spinoza.L01_Have
@@ -3552,31 +3601,6 @@ msgid "\n"
 ""
 msgstr ""
 
-#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-msgid "Nach einer Weile hört ihr Papierrascheln.\n"
-"Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder.\n"
-"„Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
-"\n"
-"**Euklid**:\n"
-"Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren.\n"
-"Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist,\n"
-"hätte ich den Posten als Direktor nie angenommen.\n"
-"\n"
-"**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n"
-"\n"
-"**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten\n"
-"der Schriften meines berühmten Vorfahren zu finden.  Der stammte übringens auch\n"
-"aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst,\n"
-"und finde nur kleinste Bruchstücke.\n"
-"\n"
-"Schauen Sie, hier habe ich jetzt schließlich selbst angefangen,\n"
-"eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?"
-msgstr ""
-
-#: Game.Levels.Babylon.L01_Sum_Simp_Card
-msgid "**Babylonier**: Seht gut, das passt!"
-msgstr ""
-
 #: Game.Levels.Implis.L09_Trans
 msgid "**Robo**: Und, war das besser?\n"
 "\n"
@@ -3695,7 +3719,7 @@ msgstr ""
 #. §1: $(«{n}» \\times «{n}»)$
 #. §2: `Fin «{n}»`
 #. §3: `Fin «{n}»`
-#. §4: $\\{0,...,n-1\\}$
+#. §4: $\\{0,…,n-1\\}$
 #. §5: $0$
 #. §6: $1$
 #. §7: `single i j a`
@@ -3906,6 +3930,29 @@ msgid "\n"
 "Und wahrscheinlich wirst du das Lemma §1 brauchen.\n"
 "Für §2 zieht es aus der Annahme §3 den Schluss §4.\n"
 ""
+msgstr ""
+
+#: Game.Levels.Piazza
+msgid "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet.\n"
+"Überall stehen Händler, die ihre Waren feilbieten.\n"
+"Ihr beäugt neugierig ein paar Stände.\n"
+"Manches sieht vertraut und essbar aus, vieles nicht.\n"
+"Aber alles ist fein säuberlich sotiert.\n"
+"Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern,\n"
+"offene Säcke mit kleinen, rosa Sternchen, usw.\n"
+"\n"
+"Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder verhalten – laufen euch fast über die Füße.\n"
+"Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n"
+"\n"
+"**Fin**:  Was macht ihr denn hier?\n"
+"\n"
+"**Du**:  Ehm … wir wollten uns nur mal ein bisschen umschauen.\n"
+"\n"
+"**Set**: Wir sind hier, um etwas Mengentheorie zu lernen.  Unsere Eltern haben uns hier ausgesetzt.\n"
+"\n"
+"**Ext**:  Zu Schulungszwecken, sozusagen.\n"
+"\n"
+"**Du**:  Und, habt ihr schon etwas gelernt?"
 msgstr ""
 
 #. §0: `f : A → B`
@@ -4299,25 +4346,6 @@ msgid "## Projekt ADAM\n"
 "* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
 msgstr ""
 
-#. §0: `ℕ`
-#. §1: `ℕ`
-#. §2: `ring`
-#: Game.Levels.Saturn.L04_mul_assoc
-msgid "Wieder ein 👍.\n"
-"\n"
-"  **Du**: Aber warte mal, diesmal waren die Koeffizienten doch in §0!\n"
-"  Das ist doch gar kein Ring, und auch Polynome mit Koeffizienten in §1 bilden keinen Ring.\n"
-"\n"
-"  **Robo**: Mag sein.  Aber §2 funktioniert sogar für sogenannte Halbringe.\n"
-"\n"
-"  **Du**: So so …\n"
-"\n"
-"  Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game,\n"
-"  oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
-"\n"
-"  „Bereit” funkt Robo zurück."
-msgstr ""
-
 #: Game.Levels.Prado.L08_exists_prime_and_dvd
 msgid "Um Guino bei Laune zu halten, fragt Robo vorsichtig,\n"
 "ob er euch nicht eine Aufgabe stellen möchte.\n"
@@ -4563,17 +4591,11 @@ msgid "\n"
 ""
 msgstr ""
 
-#. §0: `rw`
-#. §1: `apply`
-#: Game.Levels.Implis.L11_Iff
-msgid "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen.\n"
-"Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis,\n"
-"aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n"
+#: Game.Levels.Samarkand.L01_ImagePreimage
+msgid "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke.\n"
+"Vielleicht könntet ihr mir ja helfen.  Zum Beispiel: …\n"
 "\n"
-"Er holt tief Luft und seuft.\n"
-"\n"
-"**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist.\n"
-"Aber meint Ihr, Ihr schafft das?"
+"Sie diktiert euch eine Aussage. Robo schreibt sie auf."
 msgstr ""
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
@@ -5190,42 +5212,6 @@ msgid "\n"
 "Und danach willst du vermutlich\n"
 "§7\n"
 "als Zwischenschritt verwenden.\n"
-""
-msgstr ""
-
-#. §0: `f`
-#. §1: `A → (A → Y)`
-#. §2: `A`
-#. §3: `A →  Y`
-#. §4: `A × A`
-#. §5: `Y`
-#. §6: `«{f}» «{a}» «{a}»`
-#. §7: `«{f}» «{a}»`
-#. §8: `«{a}»`
-#. §9: `«{f}»`
-#. §10: `(«{a}»,«{a}»)`
-#. §11: `(«{a}»,«{a}»)`
-#. §12: `«{ha}»`
-#. §13: `f`
-#. §14: `A → (A → Y)`
-#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-msgid "\n"
-"**Du** *(zu Robo)*: Siehst du hier ein Produkt?\n"
-"\n"
-"**Robo**:  Ja, klar.  Erinner dich, wo bei §0 die Klammern stehen: §1.\n"
-"Eine Abbildung von §2 zur Menge der Abbildungen von §3 ist doch dasselbe\n"
-"wie eine Abbildung von §4 nach §5.\n"
-"\n"
-"Du runzelst die Stirn.\n"
-"\n"
-"**Robo**: Doch doch, das hatte wir uns auf Epo schon einmal überlegt!\n"
-"Du kannst §6 entweder als §7 angewendet auf §8 oder als\n"
-"§9 angewendet auf §10 interpretieren.\n"
-"\n"
-"**Cantor**:  Ganz genau!  Und das Element §11 liegt auf der Diagonale!\n"
-"\n"
-"**Robo**: Die Annahme §12 ist andereseits so formuliert,\n"
-"dass die Interpretation von §13 als Abbildung §14 naheliegender ist.\n"
 ""
 msgstr ""
 
@@ -5965,6 +5951,42 @@ msgid "Ihr schlagt einen Gang ein, indem gleich mehere Bücher auf dem Boden lie
 "  **Robo**: Folgen wir ihr!"
 msgstr ""
 
+#. §0: `f`
+#. §1: `A → (A → Y)`
+#. §2: `A`
+#. §3: `A →  Y`
+#. §4: `A × A`
+#. §5: `Y`
+#. §6: `«{f}» «{a}» «{a}»`
+#. §7: `«{f}» «{a}»`
+#. §8: `«{a}»`
+#. §9: `«{f}»`
+#. §10: `(«{a}»,«{a}»)`
+#. §11: `(«{a}»,«{a}»)`
+#. §12: `«{ha}»`
+#. §13: `f`
+#. §14: `A → (A → Y)`
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+msgid "\n"
+"**Du** *(zu Robo)*: Siehst du hier ein Produkt?\n"
+"\n"
+"**Robo**:  Ja, klar.  Erinner dich, wo bei §0 die Klammern stehen: §1.\n"
+"Eine Abbildung von §2 zur Menge der Abbildungen von §3 ist doch dasselbe\n"
+"wie eine Abbildung von §4 nach §5.\n"
+"\n"
+"Du runzelst die Stirn.\n"
+"\n"
+"**Robo**: Doch doch, das hatten wir uns auf Epo schon einmal überlegt!\n"
+"Du kannst §6 entweder als §7 angewendet auf §8 oder als\n"
+"§9 angewendet auf §10 interpretieren.\n"
+"\n"
+"**Cantor**:  Ganz genau!  Und das Element §11 liegt auf der Diagonale!\n"
+"\n"
+"**Robo**: Die Annahme §12 ist andereseits so formuliert,\n"
+"dass die Interpretation von §13 als Abbildung §14 naheliegender ist.\n"
+""
+msgstr ""
+
 #. §0: `succ`
 #. §1: `succ : ℕ → ℕ`
 #. §2: `n ↦ n + 1`
@@ -6215,10 +6237,6 @@ msgstr ""
 msgid "\n"
 "**Robo**:  Dann solltest du vermutlich wieder §0 anwenden.\n"
 ""
-msgstr ""
-
-#: Game.Levels.Iso.L01_Bijective
-msgid "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 msgstr ""
 
 #. §0: `ℕ`
@@ -6522,6 +6540,30 @@ msgstr ""
 msgid "Die generellere Version von §0. Siehe dort."
 msgstr ""
 
+#: Game.Levels.Iso
+msgid "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n"
+"\n"
+"**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.\n"
+"\n"
+"**Du**:  Links winken Leute!\n"
+"\n"
+"Also landet ihr links.\n"
+"Der Empfang ist aber eher verhalten.\n"
+"\n"
+"**Isosoph**:  Guten Tag!\n"
+"Das ist aber nicht die feine Art, hier mitten in der Menge zu landen!\n"
+"Dort drüben hatten wir doch extra einen Landeplatz markiert!\n"
+"\n"
+"**Robo**:  Entschuldigung!  Ich hatte die Symbolik nicht erkannt.\n"
+"\n"
+"**Isosoph**: Ist ja nochmal gut gegangen!\n"
+"Wir hatten schon gehört, dass ihr ein bisschen anders seid.\n"
+"Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n"
+"\n"
+"Wie sich herausstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann.\n"
+"Ihr düst ein paar Mal hin und her."
+msgstr ""
+
 #. §0: `intro`
 #: Game.Levels.Implis.L10_Iff
 msgid "\n"
@@ -6535,6 +6577,10 @@ msgstr ""
 #: Game.Levels.Robotswana.L11_Linearity
 msgid "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles\n"
 "mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+msgstr ""
+
+#: Game.Levels.Samarkand.L07_LeftInvPreimage
+msgid "**Du**:  Mal überlegen…"
 msgstr ""
 
 #: Game.Levels.Robotswana.L11_Linearity
@@ -6706,7 +6752,7 @@ msgstr ""
 msgid "**Robo**:  Und jetzt wieder §0."
 msgstr ""
 
-#. §0: `if 0 ≤ n then ... else ...`
+#. §0: `if 0 ≤ n then … else …`
 #: Game.Levels.Vieta.L07_Extend
 msgid "**Robo**: Du könntest eine stückweise Funktion mit §0\n"
 "definieren."
@@ -6915,29 +6961,6 @@ msgstr ""
 msgid "Nützliche Taktiken für Gleicheit sind: §0, §1, §2"
 msgstr ""
 
-#: Game.Levels.Piazza
-msgid "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet.\n"
-"Überall stehen Händler, die ihre Waren feilbieten.\n"
-"Ihr beäugt neugierig ein paar Stände.\n"
-"Manches sieht vertraut und essbar aus, vieles nicht.\n"
-"Aber alles ist fein säuberlich sotiert.\n"
-"Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern,\n"
-"offene Säcke mit kleinen, rosa Sternchen, usw.\n"
-"\n"
-"Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder zu verhalten – laufen euch fast über die Füße.\n"
-"Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n"
-"\n"
-"**Fin**:  Was macht ihr denn hier?\n"
-"\n"
-"**Du**:  Ehm … wir wollten uns nur mal ein bisschen umschauen.\n"
-"\n"
-"**Set**: Wir sind hier, um etwas Mengentheorie zu lernen.  Unsere Eltern haben uns hier ausgesetzt.\n"
-"\n"
-"**Ext**:  Zu Schulungszwecken, sozusagen.\n"
-"\n"
-"**Du**:  Und, habt ihr schon etwas gelernt?"
-msgstr ""
-
 #. §0: `apply sum_congr`
 #: Game.Levels.Babylon.L03_sum_congr
 msgid "\n"
@@ -7003,6 +7026,10 @@ msgstr ""
 #: Game.Levels.Implis.L05_Apply
 msgid "Die nächste Seite sieht ein bisschen komplizierter aus. Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.\n"
 "  §0"
+msgstr ""
+
+#: Game.Levels.Iso.L01_Bijective
+msgid "**Isosoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 msgstr ""
 
 #: Game.Levels.Logo.L03_Assumption
@@ -7143,12 +7170,6 @@ msgid "**Cantor**: Ihr müsst natürlich irgendwie die\n"
 ""
 msgstr ""
 
-#: Game.Levels.Robotswana.L11_Linearity
-msgid "Schließlich macht ihr euch auf den Rückweg.\n"
-"Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch\n"
-"die Grasslandschaft zurück zu eurem Schiff."
-msgstr ""
-
 #. §0: `«{hx}» : m ≤ x → n < x`
 #. §1: `→`
 #. §2: `rw`
@@ -7257,6 +7278,16 @@ msgid "**Benedictus**: Ich habe noch eine schöne Frage zu ungeraden Quadraten f
 "die Äquivalenz einfach §0. Ist doch viel einleuchtender, oder?"
 msgstr ""
 
+#: Game.Levels.Iso.L02_Inverse
+msgid "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zu ihr inverse Abbildung existiert.\n"
+"Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten.\n"
+"Hattest du dir die Aussagen abgespeichert?\n"
+"\n"
+"**Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die Augenbrauen nach oben.\n"
+"Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.\n"
+""
+msgstr ""
+
 #. §0: `simp`
 #. §1: `simp [eq_univ_iff_forall]`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
@@ -7268,30 +7299,6 @@ msgstr ""
 #. §0: `eq_sum_apply_diag_ebasis`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß §0."
-msgstr ""
-
-#: Game.Levels.Iso
-msgid "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n"
-"\n"
-"**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.\n"
-"\n"
-"**Du**:  Links winken Leute!\n"
-"\n"
-"Also landet ihr links.\n"
-"Da Empfang ist aber eher verhalten.\n"
-"\n"
-"**Isosoph**:  Guten Tag!\n"
-"Das ist aber nicht die feine Art, hier mitten in der Menge zu landen!\n"
-"Dort drüben hatten wir doch extra einen Landeplatz markiert!\n"
-"\n"
-"**Robo**:  Entschluldigung!  Ich hatte die Symbolik nicht erkannt.\n"
-"\n"
-"**Isosoph**: Ist ja nochmal gut gegangen!\n"
-"Wir hatten schon gehört, dass ihr ein bisschen anders seid.\n"
-"Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n"
-"\n"
-"Wie sich heraussstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann.\n"
-"Ihr düst ein paar Mal hin und her."
 msgstr ""
 
 #. §0: `diag`
@@ -7514,13 +7521,6 @@ msgstr ""
 msgid "\n"
 "**Robo**: Hier ist §0 natürlich die Annahme, dass §1 eine Primzahl ist.\n"
 "Um mit dieser Annahme zu arbeiten, wendest du am besten immer §2 an."
-msgstr ""
-
-#: Game.Levels.Samarkand.L01_ImagePreimage
-msgid "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke.\n"
-"Vielleicht könnte ihr mir ja helfen.  Zum Beispiel: …\n"
-"\n"
-"Sie diktiert euch eine Aussage. Robo schreibt sie auf."
 msgstr ""
 
 #: Game.Levels.Prado.L10_EvenPrime
@@ -7863,6 +7863,25 @@ msgstr ""
 msgid "**Ritha** *(flüsternd)*: Probiert mal §0!"
 msgstr ""
 
+#. §0: `even_square`
+#. §1: `Odd (n^2) → Odd n`
+#. §2: `Even n → Even (n^2)`
+#. §3: `→`
+#. §4: `revert`
+#. §5: `revert «{h}»`
+#. §6: `«{h}»`
+#: Game.Levels.Spinoza.L05_Contrapose
+msgid "\n"
+"**Robo**: Ich schlage vor, wir führen das auf das Lemma §0 zurück, das wir auf\n"
+"Quantus schon gezeigt hatten. Hier steht ja im Grunde §1. Und unter\n"
+"Kontraposition ist das äquivalent zu §2.\n"
+"\n"
+"**Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein §3.\n"
+"\n"
+"**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als\n"
+"Implikationsannahme ins Beweisziel schieben."
+msgstr ""
+
 #. §0: `s : «{Y}» → «{Y}»`
 #. §1: $n ↦ n + 1$
 #. §2: $ℕ$
@@ -7962,7 +7981,7 @@ msgstr ""
 #. §5: `A`
 #. §6: `f A`
 #. §7: `A`
-#. §8: `nth_rw 1 [ ... ]`
+#. §8: `nth_rw 1 [ … ]`
 #. §9: `rw`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "**Du**: Was das wohl jetzt soll …?\n"
@@ -8005,25 +8024,6 @@ msgid "**Du**: Diese Summe habe ich auch schon einmal gesehen.\n"
 "\n"
 "**Robo**:  Der Zusatz ist natürlich optional.\n"
 "Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben."
-msgstr ""
-
-#. §0: `even_square`
-#. §1: `Odd (n^2) → Odd n`
-#. §2: `Even n → Even (n^2)`
-#. §3: `→`
-#. §4: `revert`
-#. §5: `revert «{h}»`
-#. §6: `«{h}»`
-#: Game.Levels.Spinoza.L05_Contrapose
-msgid "\n"
-"**Robo**: Ich schlage vor, wir führen das auf das Lemma §0 zurück, das wir auf\n"
-"Quantus schon gezeigt hatten. Hier steht ja im Grunde §1. Und unter\n"
-"Kontraposition ist das äquivalent zu §2.\n"
-"\n"
-"**Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein §3.\n"
-"\n"
-"**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als\n"
-"Implikationsannahme ins Beweissziel schieben."
 msgstr ""
 
 #. §0: $A \\Rightarrow B \\Rightarrow C$
@@ -8320,6 +8320,12 @@ msgid "Universeller Quantor: Ist §0 ein Prädikat, so ist\n"
 "eine Notation für §15.\n"
 "Du kannst auch mit §16 die gegebene Annahme\n"
 "über alle möglichen §17 zu einer Annahme §18 über dieses konkrete §19 einschränken."
+msgstr ""
+
+#: Game.Levels.Robotswana.L11_Linearity
+msgid "Schließlich macht ihr euch auf den Rückweg.\n"
+"Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch\n"
+"die Graslandschaft zurück zu eurem Schiff."
 msgstr ""
 
 #. §0: `intro`
