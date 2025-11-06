@@ -59,7 +59,8 @@ Statement :
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
     und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 > {x}` wechseln."
   -/
-  Hint (strict := true) "Try `by_cases h : 0 ≤ {x}` for resulting cases `0 ≤ {x}` and `0 > {x}` i.e. `0 ≤ {x}` and `¬(0 ≤ {x})`. Could switch via `not_le` between `¬(0 ≤ {x})` and `0 > {x}`"
+  Hint (strict := true) "Try `by_cases h : 0 ≤ {x}` for resulting cases `0 ≤ {x}` and `0 > {x}` i.e. `0 ≤ {x}` and `¬(0 ≤ {x})`.
+  Could switch via `not_le` between `¬(0 ≤ {x})` and `0 > {x}`"
   by_cases h : 0 ≤ x
   /-
   · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen benutzen.

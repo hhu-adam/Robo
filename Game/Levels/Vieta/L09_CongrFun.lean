@@ -25,7 +25,8 @@ Ausdruck ist und noch nicht exact so im Beweisziel steht, dann nicht.
 Probiers mal, wie ich es gerade gesagt habe.
   "
   -/
-  Hint "Try `congr_fun`. Given assumption `h : f = g` rewrite it via `apply congr_fun at h` to `h : ∀ x, f x = g x`. `rw [h]` not applicable to more complex `f`"
+  Hint "Try `congr_fun`. Given assumption `h : f = g` rewrite it via `apply congr_fun at h` to `h : ∀ x, f x = g x`.
+  `rw [h]` not applicable to more complex `f`"
   apply congr_fun at h
   Branch
     specialize h x

@@ -24,7 +24,9 @@ Statement (f : ℤ → ℕ) (n : ℤ): f n ≥ 0 := by
   **Du**: Okay, will ich mir merken.  Aber da die Abbildung hier nur Werte in ℕ annimmt,
   ist ja eigentlich nichts zu zeigen."
   -/
-  Hint "Explain `f` as mapping from `ℤ` to `ℕ`. Explain notations `f n` and `f (n)`"
+  Hint "Explain `f` as mapping from `ℤ` to `ℕ`:
+  `f n` is notation for $f(n)$. If you want to use brackets it has to be `f (n)`.
+  "
   linarith  -- oder simp
 
 /-
