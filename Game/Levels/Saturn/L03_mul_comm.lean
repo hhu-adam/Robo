@@ -26,7 +26,9 @@ Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
     **Robo**: So ist es.
   "
   -/
-  Hint "Explain `P` with `Fin 2` and `ℚ`. Explain `Fin 2` with elements `X 0` and `X 1`"
+  Hint "Explain `P`: `P` is a 'multivariate polynome' with variables indexed by `Fin 2` and
+  coefficients in `ℚ`.
+  Explain `Fin 2` as the set of elements $\\\{0,1\\}$ that lead to the variables `X 0` and `X 1`"
   ring
 
 /-

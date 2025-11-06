@@ -24,6 +24,7 @@ Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c :
 
   **Robo**: Probiers doch einfach."
   -/
+  Hint (hidden := true) "Try if `rw [hₓ]` and `rw [← hₓ]` can be used as in Implis"
   rw [h₁]
   /-
   Hint (hidden := true) "**Du**: Wie war das nochmals mit rückwärts umschreiben?
