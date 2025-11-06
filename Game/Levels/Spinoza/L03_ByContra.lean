@@ -19,7 +19,8 @@ Statement (A B : Prop) (g : A → B) (b : ¬ B) : ¬ A := by
     **Robo**: Mit `by_contra h` fängst du einen Widerspruchsbeweis an. Und mit `contradiction`
     schließt du ihn ab."
   -/
-  Hint "Explain `¬` in goal. Explain `contradiction` and `by_contra h`"
+  Hint "Explain `¬` in goal. Perform proof by `contradiction` by stating with `by_contra h` and
+  concluding with `contradiction`"
   by_contra h
   /-
   Hint "

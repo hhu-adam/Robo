@@ -30,7 +30,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
     statt *Kontraposition* eher *von_hinten_durch_die_Brust_ins_Auge* nennen.
     Aber hier heißt es natürlich `not_imp_not`."
   -/
-  Hint "Explain technique `not_imp_not`"
+  Hint "Often to prove $A ⇒ B$, $¬B ⇒ ¬A$ can be proven as well. Here this is called `not_imp_not`."
   -- Hint (hidden := true) "**Robo**: Fang doch mal mit `constructor` an."
   Hint (hidden := true) "Try `constructor`"
   constructor

@@ -28,7 +28,8 @@ Statement
 
     **Robo**: Genau!"
   -/
-  Hint "Explain `have` w.r.t. `suffices`. Explain `suffices g : ¬B` w.r.t. `g`"
+  Hint "Instead of `have`, `suffices` can be used. After `suffices g : ¬B`, you have to show how to
+  prove goal by `g` before proving `g` itself."
   suffices g : ¬ B
   -- Hint "**Robo**: Also hier beendest du den Beweis unter der Annahme `{g}` sei wahr."
   Hint "End proof with assumption that `{g}` is true"

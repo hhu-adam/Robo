@@ -29,7 +29,8 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
     **Robo**: Erinner dich an `revert`. Mit `revert {h}` kannst du die Annahme `{h}` als
     Implikationsannahme ins Beweissziel schieben."
   -/
-  Hint "Refer back to `even_square` as `Odd (n^2) → Odd n` is equivalent in contrapoition to `Even n → Even (n^2)`. Explain lack of  `→` can be dealt with `revert` with `revert {h}` for `{h}`."
+  Hint "Refer back to `even_square` as `Odd (n^2) → Odd n` is equivalent in contrapoition to `Even n → Even (n^2)`.
+  Explain that lack of  `→` can be dealt with `revert` via `revert {h}` for `{h}`."
   revert h
   /-
   Hint "
