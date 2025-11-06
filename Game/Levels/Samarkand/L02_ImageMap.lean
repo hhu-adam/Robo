@@ -22,7 +22,12 @@ Statement {A B C : Type} (f : A → B) (g : B → C) : image (g ∘ f) = (image 
     Du kannst also `image f` durch `f ''` ausdrücken, aber nicht umgekehrt.
   "
   -/
-  Hint "Can not use `image` instead of `''`. Explain that `image f` is mapping from `A` to `B`. You can express `image f` by `f ''` but not vica versa"
+  Hint "Can not use `image` instead of `''`.
+  Explain that `image f` is mapping from `A` to `B` i.e.
+    ```
+    image f = fun S ↦ f '' S
+    ```
+  .You can express `image f` by `f ''` but not vica versa"
 /-
 This is literally true:
 example : image f = fun S ↦ f '' S := by

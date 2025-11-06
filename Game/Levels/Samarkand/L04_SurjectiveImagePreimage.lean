@@ -31,7 +31,11 @@ f '' (f ⁻¹' T) = T := by
     Jetzt ist Gleichheit zu zeigen, aber unter der zusätzlichen Annahme, dass `f` surjektiv ist.
   "
   -/
-  Hint "Remind `image_preimage_subset` and assumption that `f` surjectiv"
+  Hint "Remind `image_preimage_subset` i.e.
+    ```
+    f '' (f ⁻¹' T) ⊆ T
+    ```
+   and additional assumption that `f` surjectiv"
   ext b
   simp
   constructor

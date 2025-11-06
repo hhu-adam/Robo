@@ -39,7 +39,17 @@ Statement image_preimage_subset {A B : Type} (f : A → B) (T : Set B) :
     ```
     ihr Urbild unter `f`."
   -/
-  Hint "Explain statement with `f : A → B` using `S`, `A`, `f`, `T` and `B`"
+  Hint "Explain statement: given `f : A → B` for subset `S` of `A`
+    ```
+    f '' S = \{f a | a ∈ S}
+           = \{b | ∃ a ∈ S, f a = b}
+    ```
+    is the image over `f`. For subset `T` of `B`
+    ```
+    f ⁻¹' T = \{ a | f a ∈ T}
+    ```
+    is the pre-image over `f`,
+    "
 
 /- This is literally true:
 example : f '' S = { f a | a ∈ S} := by

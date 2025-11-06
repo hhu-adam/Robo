@@ -27,7 +27,16 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
     ```
   "
   -/
-  Hint "Explain `range f` w.r.t. `f` and its equivalent `f '' univ`. Mention `mem_range`"
+  Hint "Explain `range f` w.r.t. `f` as
+    ```
+      range f = \{f a | a : A}
+              = \{  b | ∃ a, f a = b}
+    ```
+   and its equivalent `f '' univ`. Mention `mem_range`:
+    ```
+    x ∈ range f ↔ ∃ a, f a = b
+    ```
+   "
   /-
   example : range f =  {b | ∃ a, f a = b} := by
     rfl

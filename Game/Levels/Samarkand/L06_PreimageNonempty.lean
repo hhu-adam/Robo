@@ -22,7 +22,7 @@ Statement {A B : Type} (f : A → B)  (y : B) :
    Um das anzuwenden, musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit `unfold Ne`.
   "
   -/
-  Hint "Explain `b`. Explain `eq_empty_iff_forall_not_mem`. Try `unfold Ne`"
+  Hint "Explain that `b` is not empty iff `b` has pre-image. Remind of `eq_empty_iff_forall_not_mem` that can be used after `unfold Ne`"
   unfold Ne
   rw [eq_empty_iff_forall_not_mem]
   simp
