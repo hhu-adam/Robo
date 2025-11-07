@@ -59,7 +59,7 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
       **Robo**: Ist nicht wieder eine Gleichheit von Mengen zu zeigen? Also `ext`.
       "
     -/
-    Hint (hidden := true) "Try `ext`"
+    Hint (hidden := true) "Again show equality of sets by using `ext`"
     ext b
     Branch
       tauto

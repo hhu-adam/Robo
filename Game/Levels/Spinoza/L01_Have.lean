@@ -43,7 +43,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
   **Robo**: `contradiction`."
   -/
-  Hint "Try `contradiction`"
+  Hint "If to assumptions contradict each other use `contradiction`"
   contradiction
 
 -- Conclusion "**Benedictus**: Das sieht gut aus!"

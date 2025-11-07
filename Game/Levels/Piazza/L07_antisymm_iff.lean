@@ -23,7 +23,7 @@ Statement Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B
   -- – zwei Mengen sind gleich, wenn sie sich wechselseitig enthalten."
   Hint "Story: reminder of set equality"
   -- Hint (hidden := true) "**Robo**:  Ich weiß nicht, aber ich würde mit `constructor` anfangen."
-  Hint (hidden := true) "Try `constructor`"
+  Hint (hidden := true) "Start here by trying `constructor`"
   constructor
   · intro h
     -- Hint (hidden := true) "**Robo**: Ersetz mal `{A}` durch `{B}`."

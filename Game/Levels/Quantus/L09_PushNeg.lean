@@ -55,14 +55,14 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
   Branch
     use n + 2
     -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
-    Hint "Try `not_odd_iff_even`"
+    Hint "Now you can apply `not_odd_iff_even`"
   Branch
     use n + 4
     -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
-    Hint "Try `not_odd_iff_even`"
+    Hint "Now you can apply `not_odd_iff_even`"
   use n
   -- Hint "**Robo**: Gute Wahl! Jetzt kannst du `not_odd_iff_even` verwenden."
-  Hint "Try `not_odd_iff_even`"
+  Hint "Now you can apply `not_odd_iff_even`"
   rw [not_odd_iff_even]
   Branch
     tauto

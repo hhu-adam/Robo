@@ -133,7 +133,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
 
       **Du**: Richtig, das brauchten wir ja schon bei diesem wilden Typen mit seinen Förderbändern."
       -/
-      Hint "Try `symm`"
+      Hint "Try `symm` to fix skewed order"
       symm
       assumption
     Branch

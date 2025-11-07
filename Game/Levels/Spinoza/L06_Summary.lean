@@ -29,7 +29,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)) : Odd n := by
 
     **Robo**: Okay, also diesmal fangen wir mit `by_contra g` an!"
   -/
-  Hint "Try `by_contra g`"
+  Hint "This time start with `by_contra g`"
   by_contra g
   -- Hint "**Robo**: Jetzt würde ich einen Widerspruch zu `Odd (n ^ 2)` führen."
   Hint "Derive contradiction for `Odd (n ^ 2)`"

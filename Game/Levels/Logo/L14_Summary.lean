@@ -21,8 +21,10 @@ wichtigsten Taktiken für diese Situation an.
 | Goal        | `constructor`            | `left`/`right`          |
 "
 -/
-Introduction "Intro Logo L14: The most important tactics of this chapter. For `∧` it is `obtain ⟨h₁, h₂⟩ := h`
-and `constructor`. For `∨` it is `obtain h \\| h := h` and `left`/`right`"
+Introduction "Intro Logo L14: The most important tactics of this chapter concerning `∧` and `∨`.
+For both logical operations the tactis `obtain ⟨h₁, h₂⟩ := h` and `obtain h \\| h := h` can be used respectivelly.
+Analogously, when working with the goal `constructor` and `left`/`right` can be used respectivelly as well.
+"
 
 -- Note: The other direction would need arguing by cases.
 

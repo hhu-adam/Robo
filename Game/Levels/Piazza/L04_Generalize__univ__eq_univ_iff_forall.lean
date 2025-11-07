@@ -60,7 +60,7 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   -- Hint "
   --  **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
   --  "
-  Hint "Try `simp` | `simp [eq_univ_iff_forall]`"
+  Hint "Try via `simp` or directly `simp [eq_univ_iff_forall]`"
   simp?
   intro x
   /-

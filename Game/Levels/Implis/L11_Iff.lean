@@ -24,7 +24,7 @@ Statement (A B : Prop) : (A ↔ B) → (A → B) := by
   -- Hint "**Du**: Hmm, mindestens mit der Implikation kann ich anfangen."
   Hint "Start with implication"
   -- Hint (hidden := true) "**Robo**: Genau, das war `intro`."
-  Hint (hidden := true) "Try `intro`"
+  Hint (hidden := true) "Exactly, try `intro`"
   intro h
   /-
   Hint "

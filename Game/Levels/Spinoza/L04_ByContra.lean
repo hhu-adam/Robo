@@ -32,12 +32,12 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   -/
   Hint "Often to prove $A ⇒ B$, $¬B ⇒ ¬A$ can be proven as well. Here this is called `not_imp_not`."
   -- Hint (hidden := true) "**Robo**: Fang doch mal mit `constructor` an."
-  Hint (hidden := true) "Try `constructor`"
+  Hint (hidden := true) "Start trying with `constructor`"
   constructor
   intro h b
   by_contra a
   -- Hint "**Robo**: Ich würde wieder mit `suffices g : B` einen Widerspruch herbeiführen."
-  Hint "Try `suffices g : B`"
+  Hint "Provoce contradiction by using `suffices g : B`"
   suffices b : B
   contradiction
   apply h

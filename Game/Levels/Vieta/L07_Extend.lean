@@ -33,7 +33,7 @@ Statement {A : Type} (f : ℕ → A) :
   Remind that `(-1).toNat` undefined as `n ≥ 0` for `n.toNat`"
   -- Hint (hidden := true) "**Robo**: Du könntest eine stückweise Funktion mit `if 0 ≤ n then … else …`
   -- definieren."
-  Hint (hidden := true) "Try function with `if 0 ≤ n then … else …`"
+  Hint (hidden := true) "Try piecewise function with `if 0 ≤ n then ... else ...`"
   let g : ℤ → A := fun n ↦ if (0 ≤ n) then f n.toNat else f 0
   /-
   Hint (strict := true) "**Robo**: Jetzt kannst du dein `g` mit `use` einsetzen und

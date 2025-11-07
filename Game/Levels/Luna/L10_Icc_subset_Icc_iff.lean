@@ -31,7 +31,7 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
     **Robo**: Vielleicht hilft hier mal wieder `subset_iff`.  Und wenn gar nichts geht, probier mal `simp`.
     "
   -/
-  Hint "Try subset_iff`, `simp`"
+  Hint "Try using `subset_iff` and if nothing else helps, `simp`"
   rw [subset_iff]
   simp
   intro h₁

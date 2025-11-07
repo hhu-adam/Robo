@@ -58,7 +58,7 @@ Statement arithmetic_sum (n : ℕ) :
 
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   -/
-  Hint "Try `simp`"
+  Hint "You can skip induction start by using `simp`"
   simp
   /-
   Hint "**Robo**: Jetzt willst du das Interval $[0, {d}+1]$, über das summiert wird, aufspalten in $[0,{d}]$ und ${d}+1$.
@@ -91,7 +91,7 @@ Statement arithmetic_sum (n : ℕ) :
     **Robo**:  Stimmt.  Irgendeine Kombination von `simp` und `ring` sollte das schaffen.
   "
   -/
-  Hint "Try `simp` & `ring`"
+  Hint "The rest is simple computation solvable by `simp` and `ring`"
   simp
   ring
   simp

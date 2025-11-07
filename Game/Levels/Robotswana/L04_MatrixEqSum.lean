@@ -67,7 +67,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
 
   **Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
   -/
-  Hint "Try `apply matrix_eq_sum_single`"
+  Hint "Try to use `apply matrix_eq_sum_single`"
   apply matrix_eq_sum_single
 
 TheoremDoc Matrix.matrix_eq_sum_single as "matrix_eq_sum_single" in "Matrix"

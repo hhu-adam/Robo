@@ -48,7 +48,7 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
         "
         -/
         Hint "Rewrite `-1 + -{d}` to `-{d} - 1`. Formulate equation using `have`.
-        Also, specify that equation is in `ℤ`. Try e.g. `have : -1 + (-d : ℤ)  = -d - 1`"
+        Also, specify that equation is in `ℤ`. Try e.g. ``` have : -1 + (-d : ℤ)  = -d - 1 ```"
         · --have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
           have : -1 + (-d : ℤ)  = -d - 1 := by
             ring

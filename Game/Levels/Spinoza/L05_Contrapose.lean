@@ -38,10 +38,10 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
 
     **Robo**: Tatsächlich kannst auch einfach `contrapose` schreiben."
   -/
-  Hint "Try `contrapose`"
+  Hint "Apply contraposition lemma simply by `contrapose`"
   contrapose
   -- Hint (hidden := true) "**Robo**: Vielleicht hilft jetzt `not_odd_iff_even` weiter?"
-  Hint (hidden := true) "Try `not_odd_iff_even`"
+  Hint (hidden := true) "`not_odd_iff_even` might help here"
   rw [not_odd_iff_even]
   rw [not_odd_iff_even]
   /-

@@ -45,7 +45,7 @@ Statement
   Hint "Find an implication path $A \\Rightarrow I$. Try `intro`"
   intro hyp
   -- Hint (hidden := true) "**Robo**: Na wieder `apply`, was sonst."
-  Hint (hidden := true) "Try `apply`"
+  Hint (hidden := true) "Hier again use `apply`"
   Branch
     apply r
     -- Hint "**Robo**: Das sieht nach einer Sackgasse aus …"

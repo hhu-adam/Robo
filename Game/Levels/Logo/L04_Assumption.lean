@@ -30,7 +30,7 @@ Statement (A : Prop) (hA : A) : A := by
     die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen.
     Also wird `assumption` auch wieder funktionieren."
   -/
-  Hint (hidden := true) "Try `assumption`"
+  Hint (hidden := true) "Use `assumption` as goal is in assumptions"
   assumption
 
 /-

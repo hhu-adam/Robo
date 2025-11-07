@@ -47,14 +47,14 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     **Robo**:  Und jetzt verwendest du `prod_insert`, und den Faktor tatsächlich herauszuziehen.
   "
   -/
-  Hint "Try `prod_insert`"
+  Hint "Use `prod_insert` to actually extract the factot"
   rw [prod_insert]
   /-
   Hint (hidden := true) "
     **Robo**:  Der Rest sollte jetzt einfach sein.
   "
   -/
-  Hint (hidden := true) "Story"
+  Hint (hidden := true) "The rest should be easy"
   · obtain ⟨k, hk⟩ := hpa
     use k * ∏ x ∈ erase A a, x
     rw [hk]

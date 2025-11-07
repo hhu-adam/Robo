@@ -60,7 +60,7 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   obtain hp | hp := hp
   --· Hint (hidden := true) "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus
   --  `{a} = 1` und `2 ≤ {a}` ergibt."
-  · Hint (hidden := true) "Try `linarith to show contradiction between `{a} = 1` and `2 ≤ {a}`"
+  · Hint (hidden := true) "Try `linarith` to show contradiction between `{a} = 1` and `2 ≤ {a}`"
     linarith
   · assumption
 

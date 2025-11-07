@@ -69,7 +69,7 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   -- Hint (hidden := true)"
   --   **Robo**:  Den Rest schafft bestimmt `tauto`.
   -- "
-  Hint (hidden := true) "Try `tauto`"
+  Hint (hidden := true) "The rest can be dealt with `tauto`"
   tauto
 
 NewTactic ext

@@ -25,7 +25,7 @@ Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
     **Robo**: Vielleicht wäre es ohnehin eleganter gewesen, die gegebene Implikation anzuwenden.
     Probier doch mal `apply hAB at h`."
   -/
-  Hint "Try `apply hAB at h`"
+  Hint "Us the given implication by trying `apply hAB at h`"
   Branch
     apply hAB
     /-
@@ -39,7 +39,7 @@ Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
     assumption
   apply hAB at h
   -- Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
-  Hint "Story"
+  Hint "This should seem obvious now"
   assumption
 
 -- Conclusion "Diesmal scheint das Telefonat erfolgreich zu verlaufen."

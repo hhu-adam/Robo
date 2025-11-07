@@ -38,7 +38,7 @@ Statement :
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
     dann für dieses."
   -/
-  Hint "Explain `Goal`. Try `funext x`"
+  Hint "Show swappability if mapping by using `funext x`"
   funext x
   /-
   Hint "
@@ -83,7 +83,7 @@ Statement :
   --  Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
     Hint "Remind of negation for `if_pos`"
     -- Hint (hidden := true) "**Robo**: `if_neg`, genau!"
-    Hint (hidden := true) "Try `if_neg`"
+    Hint (hidden := true) "Use the negation `if_neg`"
     rw [if_neg h, if_neg h]
 
 -- Conclusion ""

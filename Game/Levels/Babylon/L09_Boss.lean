@@ -23,7 +23,7 @@ open Finset
 
 Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i : ℚ)^2 := by
   /- Hint "**Du**: Naja. Das wird schon klappen … " -/
-  Hint "Comment"
+  Hint "Story: this should work"
   induction m with n n_ih
   · simp
   · rw [← insert_Icc_eq_Icc_add_one_right]

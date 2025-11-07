@@ -266,11 +266,10 @@ Beide sind definitionsgleich, aber manche Taktiken können nicht damit umgehen
 
 
 /--
-The tactic `intro` is used for proof goals of the form `A → B` or `∀ x, P x`.
+The tactic `intro` is used for   proof goals of the form `A → B` or `∀ x, P x`.
 
 If your proof goal is `A → B`, `intro h` gives you the assumption `h : A`, and you then have to prove `B`.
-If your proof goal is `∀ x, P x`, `intro x` gives you any `x`, and you then have to prove `P x`.
-If your proof goal is `∀ x, P x`, you specify any `x` with `intro x` and then have to prove `P x`.
+If your proof goal is `∀ x, P x`, `intro x` gices you an arbitrary `x` and you have to prove `P x`.
 
 | before | tactic       | after                     |
 |:------------ |:------------ |:---------------------------- |
@@ -498,7 +497,7 @@ TacticDoc simp_rw
 `specialize h a₁ a₂` is equivalent to `have h := h a₁ a₂`: the tactic replaces an assumption
 `h : ∀ m₁ m₂, P m₁ m₂` with the special case `h : P a₁ a₂`.
 
-If you want to specialize multiple times, you should use `have` instead of `specialize`,
+If you want to specialize multiple times, instead of `specialize` you should use `have`,
 since `specialize h …` overwrites the old assumption `h`.
 From the above assumption `h`, you can obtain the following three assumptions with
 ```
@@ -553,7 +552,7 @@ With `trans`, you insert an intermediate step into an equation or equivalence.
 | `⊢ A ↔ C`    | `trans B` | `⊢ A ↔ B` and `⊢ B ↔ C` |
 
 Since you can repeat the tactic several times, it is suitable for
-performing a “calculation” `A = B₁ = B₂ = B₃ ... = C` step by step.
+performing a “calculation” `A = B₁ = B₂ = B₃ … = C` step by step.
 
 (Outside of the game, however, the multi-line tactic `calc` is better suited for such calculations.)
 -/

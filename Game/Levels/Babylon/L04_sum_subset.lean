@@ -33,7 +33,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
   so ist die Summe über `I₁` gleich der Summe über `I₂`.
   "
   -/
-  Hint "Remind goal $$\\sum_\{i=0}^\{n} (i^3 - 3 i^2 + 2 i)  = \\sum_\{i=3}^\{n} (i^3 - 3 i^2 + 2i)$$ with $0$ for the value in the sum for fist three $i$. Try `sum_subset`: If `I₁ ⊆ I₂` and term is disappearing for all elements in `I₁` not in `I₂`, then the sum over `I₁` equals sum over `I₂`"
+  Hint "Remind goal $$ \\sum_\{i=0}^\{n} (i^3 - 3 i^2 + 2 i)  = \\sum_\{i=3}^\{n} (i^3 - 3 i^2 + 2i) $$ with $0$ for the value in the sum for fist three $i$. Try `sum_subset`: If `I₁ ⊆ I₂` and term is disappearing for all elements in `I₁` not in `I₂`, then the sum over `I₁` equals sum over `I₂`"
   Branch
     apply sum_subset
     -- Hint "**Robo**:  Nein, das sieht falschherum aus."
@@ -69,7 +69,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       als Beweisziel steht.
     "
     -/
-    Hint (hidden := true) "Introduce assumptions until ```i ^ 3 - 3 * i ^ 2 + 2 * i = 0``` as goal"
+    Hint (hidden := true) "Introduce assumptions until ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ``` as goal"
     Branch
       simp
       intro i h0 h3

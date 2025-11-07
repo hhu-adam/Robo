@@ -115,7 +115,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       Zum Einsetzen kannst du in diesem Fall `simp [{h}] at {i}` benutzen.
       "
       -/
-      Hint "Put {h} : {n} = 0` into `{i} : Fin {n}` to show triviality because there is no `{i}` in `Fin 0`. Try `simp [{h}] at {i}`"
+      Hint "Put `{h} : {n} = 0` into `{i} : Fin {n}` to show triviality because there is no `{i}` in `Fin 0`. Try `simp [{h}] at {i}`"
       simp [h] at i
       /-
       Hint "
@@ -206,7 +206,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
           · simp
           · assumption
         -- · Hint (hidden := true) "**Robo**: Probier mal `rw [{h₂}]`."
-        · Hint (hidden := true) "Try `rw [{h₂}]`"
+        · Hint (hidden := true) "Try out `rw [{h₂}]`"
           rw [h₂]
           simp
   -- · simp -- previously needed for `nat_mul_inj'`

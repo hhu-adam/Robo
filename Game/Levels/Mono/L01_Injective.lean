@@ -31,7 +31,7 @@ Statement :
     **Robo**:  Fang doch mit `intro a b` an.
   "
   -/
-  Hint (hidden := true) "Try `intro a b`"
+  Hint (hidden := true) "Try starting with `intro a b`"
   Branch
     unfold Injective
   intro a b

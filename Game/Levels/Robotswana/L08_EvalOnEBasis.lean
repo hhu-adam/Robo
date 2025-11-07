@@ -135,12 +135,12 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 
       **Du**: Weiß ich doch."
     -/
-    · Hint "Try `if_neg {h₂}`"
+    · Hint "Here try `if_neg {h₂}`"
       rw [if_neg h₂]
       -- Hint "**Du**: `f (E i j)` ist doch Null, hatten wir doch schon gesehen!"
       Hint "See that `f (E i j)` is zero"
       -- Hint (hidden := true) "**Robo**: Und das hieß `zero_on_offDiag_ebasis`."
-      Hint "Try `zero_on_offDiag_ebasis`"
+      Hint "This was called `zero_on_offDiag_ebasis`"
       rw [zero_on_offDiag_ebasis]
       · simp
       · assumption

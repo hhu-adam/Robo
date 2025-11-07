@@ -369,8 +369,8 @@ and then prove `A → B` and `B → A` separately.
 
 ## `↔` as an assumption
 
-You can break down an assumption of the form `h : A ↔ B` into its two components
-`h₁ : A → B` and `h₂ : B → A` using `obtain ⟨h₁, h₂⟩ := h`.
+You can break down an assumption of the form `h : A ↔ B` using `obtain ⟨h₁, h₂⟩ := h` into its two components
+`h₁ : A → B` and `h₂ : B → A`.
 However, you can also refer directly to these components with `h.mp` and `h.mpr`.
 (The abbreviation `mp` stands for “modus ponens”.)
 -/
@@ -390,8 +390,8 @@ you construct a suitable element `a` and then use the `use` tactic (`use a`).
 
 ## `∃` as an assumption
 
-You can decompose an assumption of the form `h : ∃ a : A, P a` into its components `a : A` and `ha : P a` using
-`choose a ha using h` or `obtain ⟨a, ha⟩ := h`.
+You can decompose an assumption of the form `h : ∃ a : A, P a` into its components using
+`choose a ha using h` or `obtain ⟨a, ha⟩ := h` into `a : A` and `ha : P a`.
 -/
 DefinitionDoc Exists as "∃"
 
@@ -481,7 +481,7 @@ DefinitionDoc False as "False"
 It is implemented internally as `A → False`.
 
 Useful tactics are: `push_neg`, `by_contra`, `contrapose`.
-You can also apply an assumption of the form `h : ¬ A` to the proof target `False` using `apply`.
+You can also apply an assumption of the form `h : ¬ A` using `apply` to the proof target `False`.
 -/
 DefinitionDoc Not as "¬"
 

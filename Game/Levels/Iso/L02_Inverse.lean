@@ -69,7 +69,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       Hint (hidden := true) "Try `simp [LeftInverse]`"
       simp [LeftInverse]
       -- Hint (hidden := true) "**Robo**: Warum beginnst du nicht mit `intro`?"
-      Hint (hidden := true) "Try `intro`"
+      Hint (hidden := true) "Try beginning with `intro`"
       intro x
       have : f (g (f x)) = f x  := by rw [hR]
       Branch
