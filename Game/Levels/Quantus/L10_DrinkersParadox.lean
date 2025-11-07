@@ -52,7 +52,7 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
   -/
   Hint (hidden := true) "Try proof by case for `∀ (y : {People}), {isDrinking} y`"
   -- Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
-  Hint (hidden := true) "Try `by_cases`"
+  Hint (hidden := true) "Look at `by_cases`"
   by_cases h : ∀ y, isDrinking y
   /-
   · Hint (hidden := true) "

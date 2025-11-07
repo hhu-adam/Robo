@@ -65,7 +65,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   Probier stattdessen mal `simp [ne_comm]`.
   "
   -/
-  Hint (hidden := true) "The number of quantors does not allow for rw [ne_comm]`. Try `simp [ne_comm]`"
+  Hint (hidden := true) "The number of quantors does not allow for `rw [ne_comm]`. Try `simp [ne_comm]`"
   simp [ne_comm]
 
 /---/

@@ -21,7 +21,7 @@ Statement (A B : Set ℕ) :
   Hint (hidden := true) "Try `ext`"
   ext i
   -- Hint (hidden := true) "**Robo**: Und jetzt natürlich wieder `simp`."
-  Hint (hidden := true) "Try `simp`"
+  Hint (hidden := true) "Perform `simp` again"
   simp
   tauto
 

@@ -42,7 +42,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     **Robo**:  Ich meinte `apply congr_fun at h`.
   "
   -/
-  Hint "Try `apply congr_fun at h`"
+  Hint "Specifically try `apply congr_fun at h`"
   apply congr_fun at h
   /-
   Hint (hidden := true) (strict := true) "
@@ -50,7 +50,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     Oder mit `Subset.antisymm_iff`.
     "
   -/
-  Hint "Try `ext` | `Subset.antisymm_iff`"
+  Hint "Start with `ext` or `Subset.antisymm_iff`"
   Branch
     rw [Subset.antisymm_iff]
     simp

@@ -11,7 +11,7 @@ Introduction
 Der nächste bitte …
 "
 -/
-Introduction "`INTRO` Intro Logo L13"
+Introduction "`INTRO` Intro Logo L12/L13"
 
 /--  -/
 Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
@@ -32,7 +32,8 @@ Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten we
 
 **Robo** Ja, aber diesmal nicht `obtain ⟨h₁, h₂⟩ := {h}`, sondern `obtain h | h := {h}`."
 -/
-  Hint "Observe goal as `({A} ∧ {B}) ∨ {A}`. Try `obtain …` via `obtain h | h := {h}` not via `obtain ⟨h₁, h₂⟩ := {h}`"
+  Hint "Observe goal as `({A} ∧ {B}) ∨ {A}`.
+  Do not try `obtain …` as `obtain ⟨h₁, h₂⟩ := {h}` but as `obtain h | h := {h}`"
   obtain h | h := h
   /-
   · Hint "**Robo**

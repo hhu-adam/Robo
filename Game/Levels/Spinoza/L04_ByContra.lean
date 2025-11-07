@@ -47,7 +47,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   Hint "Use proof by contradiction"
   by_contra b
   -- Hint (hidden := true) "**Robo**: `suffices g : ¬ A` sieht nach einer guten Option aus."
-  Hint (hidden := true) "Try `suffices g : ¬ A`"
+  Hint (hidden := true) "`suffices g : ¬ A` would be a good option"
   suffices g : ¬ A
   contradiction
   apply h

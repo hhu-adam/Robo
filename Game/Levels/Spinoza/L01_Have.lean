@@ -35,7 +35,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   -/
   · Hint "Story"
     -- Hint (hidden := true) "**Robo**: `apply` sollte helfen"
-    Hint (hidden := true) "Try `apply`"
+    Hint (hidden := true) "`apply` should help"
     apply h
     assumption
   /-

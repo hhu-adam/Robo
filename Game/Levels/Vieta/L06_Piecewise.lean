@@ -67,14 +67,14 @@ Statement :
 
     **Robo**: Dann benutz sie mal `simp [f, g]`!"
   -/
-  · Hint "Try `simp [f, g]`"
+  · Hint "Use definitions via `simp [f, g]`"
     simp [f, g]
     /-
     Hint "
       **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung, um das if-then-else zu
       reduzieren."
     -/
-    Hint "Try `rw [if_pos {h}]`"
+    Hint "Try `rw [if_pos {h}]` to reduce if-then-else"
     rw [if_pos h, if_pos h]
     ring
   -- · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."

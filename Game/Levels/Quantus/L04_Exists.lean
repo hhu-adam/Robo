@@ -124,7 +124,7 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     `rw` `n` durch `{s} + {s}` ersetzen, da `ring` das sonst nicht weiß."
   -/
   Hint (hidden := true) "before using `ring`, use `rw` to replace `n` by `{s} + {s}`, because
-  ring does not know otherwise."
+  `ring` does not know otherwise."
   rw [hs]
   ring
 

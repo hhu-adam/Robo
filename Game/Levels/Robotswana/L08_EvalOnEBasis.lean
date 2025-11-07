@@ -75,7 +75,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   $$
 
   Write `A` as sum of base matrices. Use linearity to make `f` disappear in `E i j` with `i ≠ j`.
-  Rewrite first `A` in `f A` as sum of base matrices, but not the later `A`. Try nth_rw 1 [ … ]`
+  Rewrite first `A` in `f A` as sum of base matrices, but not the later `A`. Try `nth_rw 1 [ ... ]`
   which works like `rw`.
   "
   /-

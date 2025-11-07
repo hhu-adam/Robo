@@ -31,7 +31,7 @@ Mit `funext x` wählst du ein beliebiges `x` und änderst das Beweisziel von `f 
   Hint "Try `funext`. Explain `funext x` as taking arbitrary `x` and changing goal from `f = g` to `f x = g x`"
   funext x
   -- Hint (hidden := true) "**Robo**: Zur Erinnerung, `ring` sieht durch lokale Definition hindurch."
-  Hint (hidden := true) "Try `ring`"
+  Hint (hidden := true) "Remind: `ring` sees through local definitions"
   ring
 
 OnlyTactic funext ring

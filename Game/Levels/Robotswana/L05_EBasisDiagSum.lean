@@ -62,7 +62,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     Hint "Try `matrix_eq_sum_ebasis` not `matrix_eq_sum_single`"
   rw [matrix_eq_sum_ebasis 1] -- Lvl 3
   -- Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
-  Hint "Story"
+  Hint "`STORY` explanation of equal sums"
   /-
   Hint (hidden := true) "
     **Robo**:  Dann solltest du vermutlich wieder `sum_congr` anwenden.
@@ -95,7 +95,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   have h : {i} ⊆ univ
   · simp
   -- Hint "**Robo**: Sehr gut.  Jetzt kannst du nämlich `sum_subset` anwenden."
-  Hint "Try `sum_subset`"
+  Hint "Now `sum_subset` can be applied"
   rw [← sum_subset h]
   -- · Hint "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe über ein Element,
   --  bei diesem ist `1 {i} {i}` wieder Eins, und `1 • _` vereinfacht sich auch!"

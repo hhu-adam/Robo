@@ -12,7 +12,7 @@ namespace MvPolynomial
 
 Statement (a b c : MvPolynomial (Fin 4) ℕ ) : a * b * c = a * (b * c) := by
   -- Hint "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
-  Hint "Try `mul_assoc` | `ring`"
+  Hint "Try `mul_assoc` or again `ring`"
   ring
 
 /-

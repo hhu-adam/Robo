@@ -49,7 +49,7 @@ Statement lt_trichotomy: ∀ a b : ℝ, a < b ∨ a = b ∨ b < a := by
         **Lina** (*triumphal*): `linarith`!
         "
       -/
-      Hint "Try `linarith`"
+      Hint "Now try `linarith`!"
       linarith  -- WANT LINARITH in this exercise!
   · right
     right

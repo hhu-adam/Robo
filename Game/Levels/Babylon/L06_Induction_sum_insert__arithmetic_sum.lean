@@ -82,7 +82,7 @@ Statement arithmetic_sum (n : ℕ) :
 
   **Robo**: Mit `rw`, wie jede andere Annahme auch."
   -/
-  Hint (hidden := true) "Try `rw`"
+  Hint (hidden := true) "Apply induction hypothesis with `rw`"
   rw [hd]
   /-
   Hint "

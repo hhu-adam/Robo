@@ -108,7 +108,7 @@ DefinitionDoc Set.range as "range"
 /--
 For a mapping `f : A → B`, `image f : Set A → Set B`
 is one of the induced mappings on the power sets –
-it maps a subset of `A` to the image `f ‘’ A` of this subset under `f`.
+it maps a subset of `A` to the image `f '' A` of this subset under `f`.
 -/
 DefinitionDoc Set.image as "image"
 
@@ -122,11 +122,9 @@ DefinitionDoc Set.preimage as "preimage"
 /--
 For a mapping `f : A → B` and a subset `S` of `A`,
 ```
-f ‘’ S = {f a | a ∈ S}
-
-       = {b | ∃ a ∈ S, f a = b}
+f '' S = {f a | a ∈ S} = {b | ∃ a ∈ S, f a = b}
 ```
-is its image under `f`.  Note the space between `f` and `‘’`.
+is its image under `f`.  Note the space between `f` and `''`.
 -/
 DefinitionDoc Set.fimage as "f ''"
 
@@ -145,7 +143,7 @@ DefinitionDoc Set.fpreimage as "f ⁻¹'"
 The notation `fun x ↦ _` is used to define “anonymous functions.”
 For example, `fun (x : ℤ) ↦  -x` defines the negation `ℤ → ℤ` without giving it a name.
 You write the arrow `↦` as `\maps` or `\mapsto`.
-Alternatively, you can use `=>` instead of `↦`.
+Alternatively, instead of `↦` you can use `=>`.
 -/
 DefinitionDoc Symbol.function as "fun x ↦ _"
 
@@ -352,7 +350,7 @@ For other `X Y : Type`, `X → Y` is a mapping that maps values from `X` to `Y`.
 
 ## Implication as proof goal
 
-If your proof goal is an implication `A → B`, you can assume `h : A` with `intro h`,
+If your proof goal is an implication `A → B`, with `intro h` you can assume `h : A`,
 and then you must prove `B`.
 
 ## Implication as assumption

@@ -35,7 +35,7 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
           **Robo**:  Denk daran, dass wir schon `arithmetic_sum` bewiesen hatten.
         "
         -/
-        Hint (hidden := true) "Try `arithmetic_sum`"
+        Hint (hidden := true) "Use `arithmetic_sum` as its already proven"
         rw [arithmetic_sum]
         simp
         ring

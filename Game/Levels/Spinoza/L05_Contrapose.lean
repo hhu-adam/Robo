@@ -49,7 +49,7 @@ Statement (n : ℕ) (h : Odd (n ^ 2)): Odd n := by
     **Du**: Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das alte Lemma
     `even_square` anwenden!"
   -/
-  Hint "Try `even_square`"
+  Hint "Apply lemma `even_square`"
   apply even_square
 
 NewTactic contrapose

@@ -61,7 +61,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   Hint (hidden := true) "
     **Robo**: `ext`!"
   -/
-  Hint (hidden := true) "Try `ext`"
+  Hint (hidden := true) "Use `ext`!"
   ext A
   -- Hint "**Du**: Und jetzt schreiben wir `f {A}` als Summe von Basiselementen."
   Hint "Rewrite `f {A}` as sum of basis elements"

@@ -34,7 +34,7 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
     **Robo** *(zu dir)*: Los, probiers mal!
   "
   -/
-  Hint "Try `have hB : B`"
+  Hint "Try holding onto `have hB : B`"
   have hB : B := by
     /-
     Hint "

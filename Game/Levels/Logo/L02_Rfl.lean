@@ -25,7 +25,7 @@ Statement :
   Hint "**Robo**: Ist doch klar. Du musst ihn einfach daran erinnern,
     dass Gleichheit *reflexiv* ist. Probier mal `rfl`."
   -/
-  Hint "Try `rfl`"
+  Hint "Remind: Equality is reflexive, so try `rfl`"
   rfl
 
 /-
