@@ -67,7 +67,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
   Hint "Try constructor"
   constructor
   · -- Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
-    Hint "Try `Finset.prod_pos`"
+    Hint "`Finset.prod_pos` is helpful here"
     apply Finset.prod_pos
     intro p
     simp [all_primes]

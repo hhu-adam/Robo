@@ -24,7 +24,7 @@ Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
   intro a a' ha
   obtain ⟨g, hg⟩ := h
   -- Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
-  Hint "Try `congr_arg g`"
+  Hint "Try using `congr_arg g`"
   Branch
     trans g (f a)
     · rw [hg]

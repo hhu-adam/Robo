@@ -68,7 +68,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     **Robo**:  Dann solltest du vermutlich wieder `sum_congr` anwenden.
   "
   -/
-  Hint (hidden := true) "Try `sum_congr`"
+  Hint (hidden := true) "Again employ `sum_congr`"
   apply sum_congr
   rfl
   intro i hi
@@ -101,7 +101,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   --  bei diesem ist `1 {i} {i}` wieder Eins, und `1 • _` vereinfacht sich auch!"
   · Hint "Explain simplification of `1 {i} {i}` and `1 • _`"
     -- Hint (hidden := true) "**Robo**: `simp` kann man immer versuchen …"
-    Hint (hidden := true) "Try `simp`"
+    Hint (hidden := true) "`simp` is always available"
     simp
   · intro x h₁ h₂
     clear h₁ -- not needed

@@ -93,7 +93,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   nth_rw 1 [matrix_eq_sum_ebasis A] -- Lvl 3
   -- Hint "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser denken…
   --  Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
-  Hint "Use linearity"
+  Hint "`IN_HINT 1` Use linearity"
   -- Hint "**Robo** (*von irgendwo*): Das klingt nach `map_sum`.  Glaub nicht, dass wir
   -- das auf Babylon gesehen haben, das fantasierst du. Aber `simp` kennt dieses Lemma bestimmt."
   Hint "Try `map_sum` via `simp`"
@@ -101,7 +101,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     simp
   rw [map_sum] -- simp knows this
   -- Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
-  Hint "Simplify"
+  Hint "`IN_HINT 2` Simplify"
   simp
   /-
   Hint "**Robo**: Wie weit bist du jetzt?
@@ -115,17 +115,17 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   Hint "Use disappearing `f` in `E i j` with `i≠j`. Try `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`"
   trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0
   -- · Hint "**Robo**: Summe gleich Summe … das gehst du mit `apply congr_arg`, `ext` an."
-  · Hint "Try `apply congr_arg`, `ext`"
+  · Hint "Try using `apply congr_arg` and `ext`"
     apply congr_arg
     ext i
     -- Hint (hidden := true) "**Du**: Vielleicht gleich nocheinmal?"
-    Hint (hidden := true) "Try again"
+    Hint (hidden := true) "`IN_HINT 3` Try again"
     apply congr_arg
     ext j
     -- Hint "**Du**: Und jetzt Fallunterscheidung zu `{i} = {j}`…"
     Hint "Prove by cases for `{i} = {j}`"
     -- Hint (hidden := true) "**Robo**: `by_cases` war das, genau!"
-    Hint "Try `by_cases`"
+    Hint "Employ `by_cases`"
     by_cases h₂ : i = j
     -- · Hint "**Robo**: Hier ist `if_pos {h₂}` nützlich."
     · Hint "Try `if_pos {h₂}`."
@@ -157,8 +157,8 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 
 -- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
 /--
-Lineare Abbildungen (oder genereller "additive" Abbildungen) kann man mit einer
-Summe vertauschen.
+`DOC`
+Linear mapping, or 'additive' mappings in general, can be exchanged with a sum.
 -/
 TheoremDoc map_sum as "map_sum" in "∑ Π"
 

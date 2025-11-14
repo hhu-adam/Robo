@@ -41,7 +41,7 @@ Statement : Even 42 := by
     Aussagen zu konkreten Zahlen fallen meistens in diese Kategorie!
   "
   -/
-  Hint "Try `decide`"
+  Hint "Remind that `decide` solves every task where a simple algorithm is available to solve them"
   decide
 
 /-

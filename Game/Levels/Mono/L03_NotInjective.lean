@@ -45,7 +45,7 @@ Statement :
   Hint (hidden := true) "Open `Injective` via `unfold` to see `¬ ∀` ..."
   unfold Injective
   -- Hint (hidden := true) (strict := true) "**Robo**: Erinnerst du dich an `push_neg`?"
-  Hint (hidden := true) (strict := true) "Try `push_neg`"
+  Hint (hidden := true) (strict := true) "Remind yourself of `push_neg`"
   push_neg
   /-
   Hint (hidden := true)"
@@ -57,7 +57,7 @@ Statement :
   use 2
   use 3
   -- Hint (hidden := true) "**Robo**:  Das ist hier alles so konkret, vielleicht reicht `decide`."
-  Hint (hidden := true) "Try `decide`"
+  Hint (hidden := true) "`decide` might suffice"
   decide
 
 TheoremTab "Function"

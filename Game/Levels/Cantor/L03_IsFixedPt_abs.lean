@@ -67,12 +67,12 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
     --  positivity
     clear h
     /- Hint "**Robo**: `simp` kann man immer mal probieren." -/
-    Hint "Try `simp`"
+    Hint "`simp` can used always"
     simp -- only [abs_nonneg]
   · intro h
     -- rw [abs_of_nonneg h]
     /- Hint (hidden := true) "**Robo**: `simp` kann man immer mal probieren." -/
-    Hint "Try `simp`"
+    Hint "simp` can used always"
     simp
     assumption
 

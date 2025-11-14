@@ -36,7 +36,7 @@ Statement :
   is injective. To show that a mapping is monotone one can use e.g. `StrictMono.add` or `Odd.strictMono_pow`,
   which says that for uneven `n`, `x ↦ x ^ n` is monotone."
   -- Hint (hidden := true) "**Robo**: `apply` ist, wonach du suchst."
-  Hint (hidden := true) "Try `apply`"
+  Hint (hidden := true) "`apply` is what is looked for"
   Branch
     intro a b
     -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"

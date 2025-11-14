@@ -21,7 +21,7 @@ Statement (A B : Prop) (h : A ↔ B) : B ↔ A := by
     **Robo**: Ich kenne ein Werkzeug dafür. Mit `symm` oder `symm at {h}` kannst du eines
     der beiden umdrehen."
   -/
-  Hint "Try `symm` | `symm at {h}`"
+  Hint "Try `symm` or `symm at {h}` to turn one around"
   Branch
     symm at h
     assumption

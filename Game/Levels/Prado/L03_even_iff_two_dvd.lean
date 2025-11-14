@@ -23,7 +23,7 @@ Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   -- Hint (hidden := true) "
   --   **Robo**:  Fang doch noch einmal mit `rw [dvd_iff_exists_eq_mul_left]` an!
   -- "
-  Hint "Try `rw [dvd_iff_exists_eq_mul_left]`"
+  Hint "Begin with `rw [dvd_iff_exists_eq_mul_left]`"
   Branch
     unfold Even
     constructor

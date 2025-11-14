@@ -66,7 +66,7 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     intro
     assumption
   -- · Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
-  · Hint (hidden := true) "Try `push_neg at {h}`"
+  · Hint (hidden := true) "Continue with `push_neg at {h}`"
     push_neg at h
     /-
     Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?

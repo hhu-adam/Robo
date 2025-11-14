@@ -36,14 +36,14 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   as $[a, b]$ or $\\\{a, a + 1, \\dots, b\\}$, because we are in the natual numbers. Therfore, the
   goal is: $$ [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1] $$"
   -- Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
-  Hint "Try `ext`"
+  Hint "Equality of sets demands `ext`"
   ext x
   /-
   Hint "
     **Robo:**  Schieß mal gleich noch ein `simp` hinterher.
   "
   -/
-  Hint "Try `simp`"
+  Hint "Try `simp` afterwards"
   simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
   Hint "Try omega"

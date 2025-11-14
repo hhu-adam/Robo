@@ -40,7 +40,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     **Robo**:  Probier mal `rw [← insert_erase {ha}]`.
   "
   -/
-  Hint (hidden := true) "Try `rw [← insert_erase {ha}]`"
+  Hint (hidden := true) "Try rewriting with `rw [← insert_erase {ha}]`"
   rw [← insert_erase ha]
   /-
   Hint "

@@ -54,7 +54,7 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     **Robo**: `decide` wird nicht funktionieren, da `{n}` keine konkrete sondern
     eine beliebige Zahl ist. Da musst du schon etwas Arbeit leisten!"
   -/
-  Hint "Explain definition of `Even {n}` by `r` using `r + r = {n}. Look up definition by `unfold Even at *`.
+  Hint "Explain definition of `Even {n}` by `r` using `r + r = {n}`. Look up definition by `unfold Even at *`.
   `decide` might be considered but `decide` does not work, because of `{n}` arbitrary."
   Branch
     unfold Even
@@ -114,7 +114,7 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     Du hättest natürlich auch gleich `use 2 * s^2` sagen können.
   "
   -/
-  Hint "Try `use r` | `use 2 * s^2`"
+  Hint "Try `use r` or instead `use 2 * s^2`"
   use r
   /-
   Hint (hidden := true) "

@@ -65,7 +65,7 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
   constructor
   intro h
   -- Hint (hidden := true) "**Robo**: Vielleicht kannst du wieder `by_cases` benutzen."
-  Hint (hidden := true) "Try `by_cases`"
+  Hint (hidden := true) "Maybe try `by_cases` again"
   Branch
     by_cases A
 

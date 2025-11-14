@@ -24,7 +24,7 @@ Statement : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   -- Hint (hidden := true) "
   --  **Robo**:  Und noch ein `intro`!
   -- "
-  Hint (hidden := true) "Try `intro` again"
+  Hint (hidden := true) "Try `intro` again `SECOND`"
   intro hx
   simp at *
   obtain h | h := hx

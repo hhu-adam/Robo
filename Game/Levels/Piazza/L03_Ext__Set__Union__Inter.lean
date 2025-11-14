@@ -36,7 +36,7 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   can be interpreted as 'subset'. Use `ext x` to replace a set equation `A = B` with `x ∈ A ↔ x ∈ B`"
   ext x
   -- Hint "**Robo**:  Und jetzt wieder `simp`."
-  Hint "Try `simp`"
+  Hint "Use `simp` again"
   simp -- simp only [mem_inter_iff, mem_union]
   /-
   Hint "

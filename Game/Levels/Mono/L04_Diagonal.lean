@@ -46,7 +46,7 @@ Statement {A : Type} (n : ℕ) :
   Hint (hidden := true) "To be more precise: `diag` sends an $a$ onto the mapping, which maps each index $i \\in \\\{0,1,…,n\\}$ onto $a$.
   In the former intepretation this is the mapping $a ↦ (a,…,a)$."
   -- Hint (hidden := true) "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
-  Hint (hidden := true) "Try `unfold Injective`"
+  Hint (hidden := true) "If unsure start with `unfold Injective`"
   --unfold Injective
   Branch
     simp [diag]

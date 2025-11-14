@@ -41,14 +41,14 @@ Statement :
     **Robo**: Sieht gut aus.  Und jetzt am besten gleich noch `unfold IsFixedPt`.
   "
   -/
-  Hint (strict := true) "Try `unfold IsFixedPt`"
+  Hint (strict := true) "Try again with `unfold IsFixedPt`"
   unfold IsFixedPt
   /-
   Hint (strict := true) (hidden := true) "
     **Robo**: `simp` kann man immer mal probieren.
   "
   -/
-  Hint (strict := true) (hidden := true) "Try `simp`"
+  Hint (strict := true) (hidden := true) "Again try `simp`"
   simp  -- uses `CharZero.neg_eq_self_iff` (scoped simp) and `setOf_eq_eq_singleton`
   /-
   Branch

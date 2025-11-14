@@ -32,7 +32,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
   Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.
   "
   -/
-  Hint "Story"
+  Hint "`IN_HINT 1` stroy"
   constructor
   · intro h
     /-
@@ -66,7 +66,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       --  apply rightInverse_of_injective_of_leftInverse finj  -- das ist Mono, L08, aber wir haben das Lemma nicht gespeichert.
       --  assumption
       -- Hint (hidden := true)"**Robo**: Mit `simp [LeftInverse]` kannst du dir das Beweisziel etwas vereinfachen."
-      Hint (hidden := true) "Try `simp [LeftInverse]`"
+      Hint (hidden := true) "Simplify goal with `simp [LeftInverse]`"
       simp [LeftInverse]
       -- Hint (hidden := true) "**Robo**: Warum beginnst du nicht mit `intro`?"
       Hint (hidden := true) "Try beginning with `intro`"
@@ -84,14 +84,14 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Hint (hidden := true) "Disect `{h}`"
     obtain ⟨g, h⟩ := h
     -- Hint (hidden := true) "**Robo**: Das UND auch noch!"
-    Hint (hidden := true) "Disect again"
+    Hint (hidden := true) "`IN_HINT 2` Disect again"
     obtain ⟨hL, hR⟩  := h
     constructor
     /-
     Hint (hidden := true) "
       **Robo**: Injektivität ist der schwierigere Teil. Fang mal an mit `intro`."
     -/
-    Hint "Try `intro`"
+    Hint "Try `intro` `ISO_SECOND`"
     · intro a b eq
       rw [← hL a, ← hL b]
       --Branch

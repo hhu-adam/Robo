@@ -6,7 +6,7 @@ Level 4
 Title ""
 
 -- Introduction "Noch ein Funkspruch."
-Introduction "`INTRO` Intro Saturn L04"
+Introduction "`INTRO` Intro Saturn L03/L04"
 
 namespace MvPolynomial
 

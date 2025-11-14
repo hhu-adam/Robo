@@ -42,14 +42,14 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     Hint (hidden := true) "Try `symm`"
   symm
   -- Hint (hidden := true) "**Robo**:  Gut.  Und jetzt `apply sum_subset`."
-  Hint (hidden := true) "Try `apply sum_subset`"
+  Hint (hidden := true) "Now try out `apply sum_subset`"
   apply sum_subset
   /-
   Hint "
     **Robo**:  Hier kannst du bestimmt `Icc_subset_Icc_iff` gut gebrauchen.
   "
   -/
-  Hint "Try `Icc_subset_Icc_iff`"
+  Hint "`Icc_subset_Icc_iff` is useful here"
   · rw [Icc_subset_Icc_iff] -- introduced in PIAZZA
     · omega
     · assumption

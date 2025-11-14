@@ -19,7 +19,7 @@ Introduction "Intro Luna L02: For integers `0 < n` or `n < 0` means `n ≠ 0`"
 
 Statement (n : ℤ) : 0 < n ∨ n < 0 ↔ n ≠ 0 := by
   -- Hint "**Ritha** *(flüsternd)*: Probiert mal `omega`!"
-  Hint "Try `omega`"
+  Hint "Try out `omega`"
   omega
 
 NewTactic omega

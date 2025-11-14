@@ -25,7 +25,7 @@ Statement subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x :
 
   **Robo** *(zu dir)*: Probier mal `tauto`.  Oder gleich `rfl`."
   -/
-  Hint "Try `tauto` | `rfl`"
+  Hint "Try `tauto` or directly `rfl`"
   Branch
     tauto
   rfl

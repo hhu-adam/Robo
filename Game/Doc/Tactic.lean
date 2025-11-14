@@ -69,9 +69,7 @@ An assumption of the form
 ```
 h : ∃ (b : B), P b
 ```
-can be decomposed into the components `b : A` and `hb : P b`
-using
-`choose b hb using h`.
+can be decomposed, using `choose b hb using h`, into the components `b : A` and `hb : P b`.
 
 More generally, you can use `choose` to select elements using the choice axiom:
 from an assumption of the form
@@ -296,7 +294,7 @@ TacticDoc left
 The `let` tactic introduces a temporary definition, for example
 `let x : ℕ := 5 ^ 2`.
 
-Once you have defined an `x` with `let x := …`, you can use the definition later with `simp only [x]`.
+Once `let x := …` defines a `x`, you can use the definition later with `simp only [x]`.
 -/
 TacticDoc «let»
 -- * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber

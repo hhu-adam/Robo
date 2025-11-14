@@ -78,7 +78,7 @@ Statement :
     rw [if_pos h, if_pos h]
     ring
   -- · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
-  · Hint (hidden := true) "Try `simp [f, g]`"
+  · Hint (hidden := true) "Try `simp [f, g]` `VIETA_SECOND`"
     simp [f, g]
   --  Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
     Hint "Remind of negation for `if_pos`"

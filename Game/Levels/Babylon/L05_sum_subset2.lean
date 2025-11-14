@@ -88,7 +88,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       **Robo**: Probier mal wieder `simp`.
     "
     -/
-    Hint (hidden := true) "Try `simp`"
+    Hint (hidden := true) "Try out `simp` again"
     simp
     ring
 

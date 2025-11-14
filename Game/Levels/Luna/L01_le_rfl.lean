@@ -23,7 +23,7 @@ Introduction "Intro Luna L01: Know that `n ≤ n`"
 
 Statement (n : ℕ) : n ≤ n := by
   -- Hint "**Robo**: `rfl`?"
-  Hint "Try `rfl`"
+  Hint "Try using `rfl` here"
   rfl
 
 /-

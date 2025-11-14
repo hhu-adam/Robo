@@ -40,7 +40,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       Vielleicht formulierest du sie noch einmal mit `have` selbst aus, und beweist sie auch noch einmal.
     "
   -/
-  Hint "One could choose left inverse by using `choose` on previous proven statement ` ∀ b : B, ∃ a : A, …`.
+  Hint "One could choose left inverse on the previous proven statement ` ∀ b : B, ∃ a : A, …` by using `choose`.
   As proven statement has no name formulate statement again with `have` and prove it again."
   constructor
   · intro hf

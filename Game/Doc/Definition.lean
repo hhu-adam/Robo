@@ -171,7 +171,7 @@ consisting of all elements that satisfy the predicate.  For example,
 { n : ℕ | Even n }
 ```
 is the set of even natural numbers.
-You can simplify the statement `a ∈ { a : T | P a }` to `P a` using `simp`.
+You can simplify the statement `a ∈ { a : T | P a }`, using `simp`, to `P a` .
 -/
 DefinitionDoc setOf as "{·|·}"
 
@@ -435,7 +435,7 @@ Universal quantifier: If `P : A → Prop` is a predicate, then
 `∀ a : A, P a` is the statement that the statement `P a` is true for all `a` in `A`
 (more precisely: for all `a` of type `A`).
 ## `∀` as a proof goal
-To prove a statement of the form `∀ a : A, …`, first select any element `a` with `intro a`.
+To prove a statement of the form `∀ a : A, …`, first use `intro a` to select any element `a`.
 ## `∀` as an assumption
 If `h : ∀ a : A, P a` is an assumption and `a₀ : A` is a concrete element, then `h a₀` is a notation for `P a₀`.
 

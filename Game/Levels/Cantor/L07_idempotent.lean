@@ -66,7 +66,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     specialize h y
     clear hy
     /- Hint (hidden := true) "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?" -/
-    Hint "Try `comp_apply` | `simp`"
+    Hint "Try either `comp_apply` or `simp`"
     simp at h -- or: rw [comp_apply] at h
     assumption
   · intro ha

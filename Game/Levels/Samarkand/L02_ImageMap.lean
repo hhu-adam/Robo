@@ -53,7 +53,7 @@ example : image f = fun S ↦ f '' S := by
     **Robo**:  Jetzt ist die Gleichheit von zwei Mengen zu zeigen – `ext` heißt das Zauberwort.
     "
   -/
-  Hint (hidden := true) "Try `ext`"
+  Hint (hidden := true) "Show equality of sets by `ext`"
   ext c
   /-
   Hint (hidden := true) "

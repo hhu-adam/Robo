@@ -201,12 +201,12 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
         assumption
       · trans f 1
         -- · Hint (hidden := true) "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß `eq_sum_apply_diag_ebasis`."
-        · Hint (hidden := true) "Try `eq_sum_apply_diag_ebasis`"
+        · Hint (hidden := true) "Use the result `eq_sum_apply_diag_ebasis`"
           rw [eq_sum_apply_diag_ebasis] -- Lvl 8
           · simp
           · assumption
         -- · Hint (hidden := true) "**Robo**: Probier mal `rw [{h₂}]`."
-        · Hint (hidden := true) "Try out `rw [{h₂}]`"
+        · Hint (hidden := true) "Try out using `rw [{h₂}]`"
           rw [h₂]
           simp
   -- · simp -- previously needed for `nat_mul_inj'`
