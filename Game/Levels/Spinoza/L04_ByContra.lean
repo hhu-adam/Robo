@@ -44,7 +44,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   assumption
   intro h a
   -- Hint "**Robo**: Hier würde ich ebenfalls einen Widerspruchsbeweis anfangen."
-  Hint "Use proof by contradiction"
+  Hint "`COMMENT` Use proof by contradiction"
   by_contra b
   -- Hint (hidden := true) "**Robo**: `suffices g : ¬ A` sieht nach einer guten Option aus."
   Hint (hidden := true) "`suffices g : ¬ A` would be a good option"

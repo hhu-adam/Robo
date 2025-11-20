@@ -42,4 +42,4 @@ Conclusion "
 "
 -/
 
-Conclusion "Conclusion Piazza L06: Explain that `ext` means extensionality"
+Conclusion "Conclusion Piazza L06: Explain that `ext` means extensionality `CONC`"

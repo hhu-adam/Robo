@@ -24,7 +24,7 @@ Statement : 1 ∈ ({1, 6, 4} : Set ℕ) := by
     **Robo**: Vermute schon.  Sieht ziemlich *tauto*logisch aus, nicht?
     "
   -/
-  Hint "try tauto"
+  Hint "`COMMENT` try tauto"
   tauto
 
 NewDefinition Mem Set

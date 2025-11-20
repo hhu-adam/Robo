@@ -86,7 +86,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       Erinnerst du dich an den Beweis?
     "
     -/
-    Hint (hidden := true) "Comment: remember proof"
+    Hint (hidden := true) "`COMMENT` remember proof"
     intro hL
     intro a a' ha
     obtain ⟨g, hg⟩ := hL

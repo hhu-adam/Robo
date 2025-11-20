@@ -32,7 +32,7 @@ Conclusion "
   aber offenbar verfolgt er dennoch irgendwie, was ihr macht.
 "
 -/
-Conclusion "Conclusion Cantor L03"
+Conclusion "`CONC` Conclusion Cantor L03"
 
 open Function Set
 
@@ -60,7 +60,7 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
   /-
   Hint "**Robo**:  So weit, so gut."
   -/
-  Hint "Story"
+  Hint "`COMMENT`"
   · intro h
     rw [← h]
     --Branch

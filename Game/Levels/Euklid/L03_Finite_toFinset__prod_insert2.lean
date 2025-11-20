@@ -64,7 +64,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     Musst du leider noch einmal rekonstruieren, wie die Argumente gingen.
     "
   -/
-  Hint "Try constructor"
+  Hint "`COMMENT` Try constructor"
   constructor
   · -- Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
     Hint "`Finset.prod_pos` is helpful here"

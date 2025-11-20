@@ -91,7 +91,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Hint (hidden := true) "
       **Robo**: Injektivität ist der schwierigere Teil. Fang mal an mit `intro`."
     -/
-    Hint "Try `intro` `ISO_SECOND`"
+    Hint "Try `intro` to approach injectivity `ISO_SECOND`"
     · intro a b eq
       rw [← hL a, ← hL b]
       --Branch

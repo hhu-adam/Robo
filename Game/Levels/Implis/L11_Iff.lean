@@ -22,7 +22,7 @@ Introduction "Intro Implis L11: Prove without using `rw` or `apply`"
 
 Statement (A B : Prop) : (A ↔ B) → (A → B) := by
   -- Hint "**Du**: Hmm, mindestens mit der Implikation kann ich anfangen."
-  Hint "Start with implication"
+  Hint "`COMMENT-2` Start with implication"
   -- Hint (hidden := true) "**Robo**: Genau, das war `intro`."
   Hint (hidden := true) "Exactly, try `intro`"
   intro h
@@ -45,7 +45,7 @@ Statement (A B : Prop) : (A ↔ B) → (A → B) := by
     Hint "Try `rw [←{h}]` | `apply {h}.mp`. Go step back s.t. goal `A → B`"
   obtain ⟨mp, _mpr⟩ := h
   -- Hint (hidden := true) "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
-  Hint (hidden := true) "Goal is in assumptions"
+  Hint (hidden := true) "`COMMENT` Goal is in assumptions"
   assumption
 
 /-

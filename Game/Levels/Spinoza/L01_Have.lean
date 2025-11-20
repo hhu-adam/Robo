@@ -33,7 +33,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
       **Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst."
   -/
-  · Hint "Prove the assumption before using it"
+  · Hint "`COMMENT` Prove the assumption before using it"
     -- Hint (hidden := true) "**Robo**: `apply` sollte helfen"
     Hint (hidden := true) "`apply` should help"
     apply h

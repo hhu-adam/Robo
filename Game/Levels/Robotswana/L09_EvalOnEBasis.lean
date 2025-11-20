@@ -130,7 +130,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       by_contra
       apply IsEmpty.false i
   -- Hint "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache."
-  Hint "Story"
+  Hint "`COMMENT-2`"
   /-
   Hint (hidden := true) "
   **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes
@@ -196,7 +196,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · apply congr_arg
         ext
         -- Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
-        Hint (hidden := true) "Remind of previous result"
+        Hint (hidden := true) "`COMMENT` Remind of previous result"
         rw [eq_on_diag_ebasis] -- Lvl 5
         assumption
       · trans f 1

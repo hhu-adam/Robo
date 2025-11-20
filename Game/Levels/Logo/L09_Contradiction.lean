@@ -22,7 +22,7 @@ Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
 
     **Robo**: Ich sehe, du hast langsam den Dreh raus."
   -/
-  Hint "Try the Contradiction tactic"
+  Hint "`COMMENT` Try the Contradiction tactic"
   contradiction
 
 /-

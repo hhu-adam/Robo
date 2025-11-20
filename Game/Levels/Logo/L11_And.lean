@@ -35,7 +35,7 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
     Hint "Try obtain tactic"
   obtain ⟨_h₁, g, _h₃⟩ := h
   -- Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
-  Hint "Try Assumption tactic"
+  Hint "`COMMENT` Try Assumption tactic"
   assumption
 
 /-

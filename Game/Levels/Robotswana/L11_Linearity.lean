@@ -30,7 +30,7 @@ open Matrix Fintype
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
     trace (A - t • 1) = trace A - t • n := by
   -- Hint "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
-  Hint "Explain statement"
+  Hint "`COMMENT` Explain statement"
   rw [trace_sub]
   rw [trace_smul]
   rw [trace_one]

@@ -60,7 +60,7 @@ example : image f = fun S ↦ f '' S := by
     **Robo**:  Das kann man bestimmt leicht vereinfachen …
   "
   -/
-  Hint (hidden := true) "This can be simplified"
+  Hint (hidden := true) "`COMMENT` This can be simplified"
   simp
 
 NewDefinition Set.image Set.preimage

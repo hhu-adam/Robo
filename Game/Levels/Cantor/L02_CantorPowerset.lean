@@ -77,7 +77,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   /-
   Hint "Cantor hüpft von einem Bein auf das andere."
   -/
-  Hint "Story"
+  Hint "`COMMENT`"
   obtain ⟨a, ha⟩ := hf
   /-
   Hint "**Cantor**:  Ja!
@@ -86,7 +86,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
 
   **Robo**:  Sorry, ging alles so schnell!  Habe ich wohl vergessen, abzuspeichern."
   -/
-  Hint "Try simp [{s}]"
+  Hint "`COMMENT-2` Try simp [{s}]"
   by_cases h : a ∈ f a
   · suffices hn : a ∉ f a
     · contradiction

@@ -30,7 +30,7 @@ Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
   It is a similar defintion to `A ∧ B`. Start with `constructor`"
   constructor
   -- Hint "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
-  Hint "Story: parts available in assumptions"
+  Hint "`COMMENT` parts available in assumptions"
   assumption
   assumption
 

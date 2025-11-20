@@ -11,7 +11,7 @@ Introduction
 Der nächste bitte …
 "
 -/
-Introduction "`INTRO` Intro Logo L12/L13"
+Introduction "`INTRO` Intro Logo L13"
 
 /--  -/
 Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by

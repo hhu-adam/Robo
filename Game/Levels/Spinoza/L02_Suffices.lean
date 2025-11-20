@@ -35,7 +35,7 @@ Statement
   Hint "End proof with assumption that `{g}` is true"
   contradiction
   -- Hint "**Robo**: Und hier beweist du das Zwischenresultat."
-  Hint "Prove intermediate result"
+  Hint "`COMMENT` Prove intermediate result"
   apply h
   assumption
 

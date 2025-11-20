@@ -59,7 +59,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       **Robo**: Super!  Jetzt musst du nur noch zeigen, was du vorhin gesagt hattest:
       Der Ausdruck unter der Summe ist für die ersten drei Indizes Null."
     -/
-    Hint "Show that term in sum is zero for first three indexes"
+    Hint "`COMMENT` Show that term in sum is zero for first three indexes"
     /-
     Hint (hidden := true)"
       **Robo**: Ich schlage vor, du führst erst einmal alle Annahmen ein, bis da nur noch

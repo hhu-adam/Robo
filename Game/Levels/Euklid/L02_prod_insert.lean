@@ -54,7 +54,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     **Robo**:  Der Rest sollte jetzt einfach sein.
   "
   -/
-  Hint (hidden := true) "The rest should be easy"
+  Hint (hidden := true) "`COMMENT` The rest should be easy"
   · obtain ⟨k, hk⟩ := hpa
     use k * ∏ x ∈ erase A a, x
     rw [hk]

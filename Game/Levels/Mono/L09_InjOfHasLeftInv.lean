@@ -20,7 +20,7 @@ Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
     **Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …
   "
   -/
-  Hint "Explain"
+  Hint "`COMMENT` explain that a mapping, which is left inverse ..."
   intro a a' ha
   obtain ⟨g, hg⟩ := h
   -- Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"

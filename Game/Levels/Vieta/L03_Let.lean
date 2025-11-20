@@ -31,7 +31,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   use f
   intro x
   -- Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
-  Hint (hidden := true) "Try simplification"
+  Hint (hidden := true) "`COMMENT` Try simplification"
   simp [f]
   -- linarith
 

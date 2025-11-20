@@ -45,7 +45,7 @@ Statement (A B : Prop) (g : A → B) (b : ¬ B) : ¬ A := by
     **Robo**: Und jetzt musst du nur noch das Zwischenresultat herleiten, dass zu diesem
     Widerspruch geführt hat."
   -/
-  Hint "Derive intermediate result that lead to the conclusion"
+  Hint "`COMMENT` Derive intermediate result that lead to the conclusion"
   apply g
   assumption
 

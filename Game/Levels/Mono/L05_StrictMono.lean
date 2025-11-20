@@ -57,7 +57,7 @@ Statement :
     Hint (hidden := true) "`Odd 3` is trivial"
     decide
   · -- Hint "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
-    Hint "Story"
+    Hint "`COMMENT`"
     /-
     Hint (hidden := true) "
       **Du**: Oder …?
@@ -70,7 +70,7 @@ Statement :
     simp
 
 /--
-Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv.
+`DOC` Every strictly monotonic mapping (between suitable domains and ranges) is injective.
 -/
 TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"
 
