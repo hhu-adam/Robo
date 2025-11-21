@@ -12,7 +12,7 @@ Introduction
 `rw` mag der auch nicht. Geht das trotzdem?
 "
 -/
-Introduction "Intro Implis L10: `rw` is not allowed here as well"
+Introduction "Intro Implis L10: `rw` is not allowed here as well `INTRO`"
 
 Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   /-
@@ -21,7 +21,7 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
 
     **Robo**: … und dann schauen wir weiter!"
   -/
-  Hint "Try `intro`"
+  Hint "Best begin with `intro`"
   intro hA
   /-
   Hint "

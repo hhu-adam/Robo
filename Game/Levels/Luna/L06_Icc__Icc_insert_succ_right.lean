@@ -46,7 +46,7 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   Hint "Try `simp` afterwards"
   simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
-  Hint "`COMMENT` Try omega"
+  Hint "`COMMENT` Ritha gives sighns to try omega"
   omega
 
 

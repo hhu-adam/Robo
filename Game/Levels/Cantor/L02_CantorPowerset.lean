@@ -77,7 +77,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   /-
   Hint "Cantor hüpft von einem Bein auf das andere."
   -/
-  Hint "`COMMENT`"
+  Hint "`COMMENT` Cantor expresses happiness"
   obtain ⟨a, ha⟩ := hf
   /-
   Hint "**Cantor**:  Ja!

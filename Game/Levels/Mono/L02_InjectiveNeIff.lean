@@ -20,7 +20,7 @@ Statement (f : ℤ → ℤ  ) (hf : Injective f): f 1 ≠ f (-1) := by
   that `f a ≠ f b ↔ a ≠ b`"
   rw [Injective.ne_iff]
   -- Hint (hidden := true) "**Robo**: `decide`?"
-  Hint (hidden := true) "Try using `decide` here"
+  Hint (hidden := true) "Perhaps, try using `decide` here"
   decide
   assumption
 

@@ -60,7 +60,7 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
   /-
   Hint "**Robo**:  So weit, so gut."
   -/
-  Hint "`COMMENT`"
+  Hint "`COMMENT` so far so good"
   · intro h
     rw [← h]
     --Branch

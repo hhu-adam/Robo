@@ -34,7 +34,7 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
         **Robo**:  Genau, und jetzt wieder `rw [sum_insert]`.
         "
       -/
-      Hint (hidden := true) "`rw [sum_insert]`"
+      Hint (hidden := true) "And yet again `rw [sum_insert]`"
       · rw [sum_insert]
         /-
         Hint "
