@@ -6,10 +6,7 @@ Level 4
 
 Title ""
 
-/-
 Introduction ""
--/
-Introduction "Intro Epo L04"
 
 open Function
 

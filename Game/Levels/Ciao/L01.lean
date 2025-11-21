@@ -5,10 +5,7 @@ Level 1
 
 Title "" -- "Weiter gehts …"
 
-/-
 Introduction ""
--/
-Introduction "Intro Ciao L01"
 
 Statement : ∀ (n : ℕ), ∃ (m : ℕ), m > n := by
   intro n

@@ -5,8 +5,7 @@ Level 7
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Mono L07"
+Introduction ""
 
 open Function Nat
 

@@ -109,4 +109,4 @@ NewTheorem Finset.sum_insert
 
 TheoremTab "∑ Π"
 
-Conclusion "Conclusion Babylon L06"
+Conclusion ""

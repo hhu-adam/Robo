@@ -5,9 +5,7 @@ Level 5
 
 Title ""
 
-
-/- Introduction "" -/
-Introduction "Intro Epo L05"
+Introduction ""
 
 open Function
 

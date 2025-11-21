@@ -6,8 +6,7 @@ Level 7
 
 Title ""
 
-/- Introduction "" -/
-Introduction "Intro Epo L07"
+Introduction ""
 
 open Set
 

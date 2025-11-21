@@ -5,8 +5,7 @@ Level 5
 
 Title "" -- ""
 
--- Introduction ""
-Introduction "Intro Mono L05"
+Introduction ""
 
 open Set Function
 
@@ -88,5 +87,4 @@ NewDefinition StrictMono
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Mono L05"
+Conclusion ""

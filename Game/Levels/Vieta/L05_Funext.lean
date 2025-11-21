@@ -38,5 +38,4 @@ OnlyTactic funext ring
 NewTactic funext
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L05"
+Conclusion ""

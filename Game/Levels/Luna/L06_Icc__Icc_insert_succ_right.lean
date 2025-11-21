@@ -68,5 +68,4 @@ Finset.insert_Icc_sub_one_right_eq_Icc
 
 NewDefinition Finset.Icc
 
--- Conclusion ""
-Conclusion "Conclusion Luna L06"
+Conclusion ""

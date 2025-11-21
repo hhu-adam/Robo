@@ -6,10 +6,7 @@ Level 2
 
 Title ""
 
-/-
 Introduction ""
--/
-Introduction "Intro Epo L02"
 
 open Function Nat
 

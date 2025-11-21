@@ -54,5 +54,4 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
     omega
   · omega
 
--- Conclusion ""
-Conclusion "Conclusion Luna L10"
+Conclusion ""

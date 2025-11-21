@@ -40,5 +40,4 @@ NewTheorem Finset.subset_iff
 
 TheoremTab "Set"
 
--- Conclusion ""
-Conclusion "Conclusion Piazza L08"
+Conclusion ""

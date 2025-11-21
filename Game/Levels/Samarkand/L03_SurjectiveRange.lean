@@ -7,8 +7,7 @@ Level 3
 Title "" -- "Range of Surjection"
 
 
--- Introduction ""
-Introduction "Intro Samarkand L03"
+Introduction ""
 
 open Function Set
 

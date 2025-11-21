@@ -5,8 +5,7 @@ Level 4
 
 Title "" -- ""
 
--- Introduction ""
-Introduction "Intro Mono L04"
+Introduction ""
 
 open Function Nat
 

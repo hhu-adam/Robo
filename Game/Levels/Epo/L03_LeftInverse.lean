@@ -6,10 +6,7 @@ Level 3
 
 Title ""
 
-/-
 Introduction ""
--/
-Introduction "Intro Epo L03"
 
 open Function
 

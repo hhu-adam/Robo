@@ -5,8 +5,7 @@ Level 2
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Mono L02"
+Introduction ""
 
 open Function
 

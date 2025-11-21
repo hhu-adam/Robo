@@ -32,5 +32,4 @@ OnlyTactic apply rfl
 NewTheorem congr_arg -- tactic `congr` would have same effect
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L08"
+Conclusion ""

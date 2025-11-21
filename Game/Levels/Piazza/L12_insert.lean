@@ -20,5 +20,4 @@ Statement (A : Finset ℕ) (a : ℕ) :  insert a A = A ∪ {a} := by
 
 TheoremTab "Set"
 
--- Conclusion ""
-Conclusion "Conclusion Piazza L12"
+Conclusion ""

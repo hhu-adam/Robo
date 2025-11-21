@@ -76,5 +76,4 @@ NewTactic ext
 NewDefinition Set.union Set.inter
 TheoremTab "Set"
 
--- Conclusion ""
-Conclusion "Conclusion Piazza L03"
+Conclusion ""

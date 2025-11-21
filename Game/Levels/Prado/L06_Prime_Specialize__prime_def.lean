@@ -74,5 +74,4 @@ TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def
 TheoremTab "ℕ"
 
--- Conclusion ""
-Conclusion "Conclusion Prado L06"
+Conclusion ""

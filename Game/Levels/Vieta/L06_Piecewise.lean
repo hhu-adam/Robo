@@ -86,8 +86,7 @@ Statement :
     Hint (hidden := true) "Use the negation `if_neg`"
     rw [if_neg h, if_neg h]
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L06"
+Conclusion ""
 
 /---/
 TheoremDoc if_neg as "if_neg" in "Logic"

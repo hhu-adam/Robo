@@ -65,5 +65,5 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
 
 TheoremTab "∑ Π"
 
-Conclusion "Conclusion Babylon L07"
+Conclusion ""
 #min_imports

@@ -58,5 +58,4 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
 
 TheoremTab "Logic"
 
--- Conclusion ""
-Conclusion "Conclusion Luna L05"
+Conclusion ""

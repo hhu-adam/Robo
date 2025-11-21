@@ -80,5 +80,4 @@ NewTheorem Function.comp_apply
 DisabledTactic simp -- simp_rw
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L04"
+Conclusion ""

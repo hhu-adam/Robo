@@ -5,8 +5,7 @@ Level 5
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Saturn L05"
+Introduction ""
 
 /- a well-known polyonmial sums-of-squares formula --/
 

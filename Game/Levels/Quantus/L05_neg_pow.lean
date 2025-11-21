@@ -29,5 +29,4 @@ TheoremDoc Even.neg_pow as "Even.neg_pow" in "ℕ"
 NewTheorem Odd.neg_pow Even.neg_pow
 
 
--- Conclusion ""
-Conclusion "Conclusion Quantus L05"
+Conclusion ""

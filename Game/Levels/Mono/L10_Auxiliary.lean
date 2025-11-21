@@ -5,8 +5,7 @@ Level 10
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Mono L10"
+Introduction ""
 
 open Function Set
 

@@ -6,8 +6,7 @@ Level 8
 Title ""
 
 
--- Introduction ""
-Introduction "Intro Mono L08"
+Introduction ""
 
 open Function Set
 

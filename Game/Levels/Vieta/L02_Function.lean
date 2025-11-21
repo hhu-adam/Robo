@@ -62,5 +62,4 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 NewDefinition Symbol.function
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L02"
+Conclusion ""

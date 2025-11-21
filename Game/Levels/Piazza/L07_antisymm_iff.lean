@@ -40,5 +40,4 @@ NewDefinition Subset
 
 TheoremTab "Set"
 
--- Conclusion ""
-Conclusion "`CONC` Conclusion Piazza L07"
+Conclusion ""

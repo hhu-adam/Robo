@@ -6,10 +6,7 @@ Level 7
 
 Title ""
 
-/-
 Introduction ""
--/
-Introduction "Intro Cantor L07"
 
 /-
 Conclusion "

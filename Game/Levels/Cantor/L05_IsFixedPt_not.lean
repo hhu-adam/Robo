@@ -5,10 +5,8 @@ World "Cantor"
 Level 5
 
 Title ""
-/-
+
 Introduction ""
--/
-Introduction "Intro Cantor L05"
 
 /-
 Conclusion "

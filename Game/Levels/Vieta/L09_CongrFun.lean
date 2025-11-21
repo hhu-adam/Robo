@@ -7,8 +7,7 @@ Level 9
 Title "" -- "congr_fun"
 
 
--- Introduction ""
-Introduction "Intro Vieta L09"
+Introduction ""
 
 open Function
 
@@ -40,5 +39,4 @@ OnlyTactic apply assumption «have»
 NewTheorem congr_fun
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Vieta L09"
+Conclusion ""

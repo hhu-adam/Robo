@@ -40,5 +40,4 @@ DefinitionDoc Function.Surjective as "Surjective"
 NewDefinition Function.Surjective
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Epo L01"
+Conclusion ""

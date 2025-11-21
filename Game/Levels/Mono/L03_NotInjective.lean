@@ -7,8 +7,7 @@ Level 3
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Mono L03"
+Introduction ""
 
 open Function
 
@@ -62,5 +61,4 @@ Statement :
 
 TheoremTab "Function"
 
--- Conclusion ""
-Conclusion "Conclusion Mono L03"
+Conclusion ""

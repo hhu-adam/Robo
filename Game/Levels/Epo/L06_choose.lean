@@ -6,9 +6,7 @@ Level 6
 
 Title "" -- "Every function with nonempty fibres has a right inverse."
 
-
-/- Introduction "" -/
-Introduction "Intro Epo L06"
+Introduction ""
 
 open Function
 

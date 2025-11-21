@@ -5,8 +5,7 @@ Level 5
 
 Title ""
 
-Introduction
-"Intro Babylon L05"
+Introduction ""
 
 open Finset Nat
 

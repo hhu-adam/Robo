@@ -6,10 +6,8 @@ Level 6
 
 Title ""
 
-/-
+
 Introduction ""
--/
-Introduction "Intro Cantor L06"
 
 /-
 Conclusion "

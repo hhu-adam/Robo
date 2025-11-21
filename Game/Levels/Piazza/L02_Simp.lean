@@ -35,5 +35,4 @@ NewTactic simp
 
 NewDefinition setOf
 
--- Conclusion ""
-Conclusion "Conclusion Piazza L02 "
+Conclusion ""

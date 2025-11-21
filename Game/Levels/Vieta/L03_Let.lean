@@ -37,7 +37,6 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
 
 TheoremTab "Function"
 
--- Conclusion""
-Conclusion "Conclusion Vieta L03"
+Conclusion""
 
 --NewTactic «let»

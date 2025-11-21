@@ -5,12 +5,7 @@ Level 11
 
 Title "" -- "Injections have a left inverse, and vice versa"
 
-/-
-Introduction
-"
-"
--/
-Introduction "Intro Mono L11"
+Introduction ""
 
 open Set Classical
 

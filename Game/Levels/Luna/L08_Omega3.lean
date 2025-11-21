@@ -20,5 +20,4 @@ Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1
   simp at h'
   omega
 
--- Conclusion ""
-Conclusion "Conclusion Luna L08"
+Conclusion ""

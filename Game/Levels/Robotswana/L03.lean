@@ -5,8 +5,7 @@ Level 3
 
 Title "" -- "Richtige Indizes"
 
--- Introduction ""
-Introduction "Intro Robotswana L03"
+Introduction ""
 
 /-
 Conclusion "

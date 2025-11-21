@@ -5,8 +5,7 @@ Level 9
 
 Title ""
 
--- Introduction ""
-Introduction "Intro Mono L09"
+Introduction ""
 
 open Function
 
