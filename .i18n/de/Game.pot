@@ -1,7 +1,7 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.23.0\n"
+msgstr "Project-Id-Version: Game v4.24.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-01\n"
+"POT-Creation-Date: 2025-11-22\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -2729,6 +2729,12 @@ msgstr ""
 msgid "**Robo**: Die beiden Seiten sind per Definition gleich!"
 msgstr ""
 
+#. §0: `subset_iff`
+#: Game.Levels.Piazza.L08_subset_iff
+#: Game.Levels.Piazza.L08_subset_iff
+msgid "§0 besagt, dass s₁ eine Teilmenge von s₂ genau dann ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind."
+msgstr ""
+
 #: Game.Levels.Samarkand.L02_ImageMap
 msgid "Arapuka diktiert euch noch eine Aufgabe."
 msgstr ""
@@ -3199,8 +3205,6 @@ msgstr ""
 #: Game.Levels.Piazza.L07_antisymm_iff
 #: Game.Levels.Piazza.L07_antisymm_iff
 #: Game.Levels.Piazza.L07_antisymm_iff
-#: Game.Levels.Piazza.L08_subset_iff
-#: Game.Levels.Piazza.L08_subset_iff
 #: Game.Levels.Piazza.L08_subset_iff
 #: Game.Levels.Piazza.L08_subset_iff
 #: Game.Levels.Piazza.L09_subset_iff2
