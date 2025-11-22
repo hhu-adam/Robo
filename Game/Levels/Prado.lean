@@ -23,7 +23,7 @@ Direkt am Eingang empfängt euch ein pinguinartiges Wesen.
 
 **Guino**: Willkommen im Prado!  Ich bin ja so froh, dass ihr hier seid.
 Ihr seid die ersten Besucher!  Nun gut, wir haben ja auch gerade erst eröffnet.
-Kommt rein, komm rein!  Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?
+Kommt rein, kommt rein!  Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?
 
 **Du**:  Ähm, ja.  Und ihr seid …?
 
