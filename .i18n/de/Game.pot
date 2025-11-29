@@ -8,14 +8,12 @@ msgstr "Project-Id-Version: Game v4.22.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L13_insert_erase
-msgid "§0 Intro Piazza L13"
+msgid "Intro Piazza L13"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L03_Apply
-msgid "§0 Conclusion Implis L03"
+msgid "Conclusion Implis L03"
 msgstr ""
 
 #. §0: `apply congr_fun at h`
@@ -30,9 +28,8 @@ msgid "Try §0 or §1.\n"
 "the variable §4 should have in statment §5."
 msgstr ""
 
-#. §0: `TITLE`
 #: Game
-msgid "§0 Robo"
+msgid "Robo"
 msgstr ""
 
 #. §0: `(g ∘ f) «{x}»`
@@ -67,9 +64,8 @@ msgid "The §0 tactic breaks down a proof goal into its constituent parts:\n"
 "* If you want to prove §8, you have to choose one side using §9 or §10."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Spinoza.L03_ByContra
-msgid "§0 Conclusion Spinoza L03"
+msgid "Conclusion Spinoza L03"
 msgstr ""
 
 #. §0: `«{f}»`
@@ -109,25 +105,21 @@ msgid "If the proof target is of the form §0, you choose §1 to show the right 
 "With §2, you choose the left side accordingly."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Saturn.L02_Ring_add_pow_two
-msgid "§0 Intro Saturn L02"
+msgid "Intro Saturn L02"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "§0 Conclusion Quantus L09"
+msgid "Conclusion Quantus L09"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "§0 Conclusion Samarkand L07"
+msgid "Conclusion Samarkand L07"
 msgstr ""
 
 #. §0: `push_neg`
-#. §1: `DOC`
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "In lieu of this theorem you can use §0. §1"
+msgid "In lieu of this theorem you can use §0."
 msgstr ""
 
 #. §0: `Function.RightInverse f g`
@@ -144,9 +136,8 @@ msgid "§0 is defined as §1.\n"
 "as §5 is ambigous in Leanic."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
-msgid "§0 Conclusion Mono L09"
+msgid "Conclusion Mono L09"
 msgstr ""
 
 #. §0: `f «{A}»`
@@ -210,14 +201,12 @@ msgid "A mapping §0 is strictly monotonous, if:\n"
 "§1"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L10
-msgid "§0 Intro Piazza L10"
+msgid "Intro Piazza L10"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L01_Mem__Set
-msgid "§0 Intro Piazza L01"
+msgid "Intro Piazza L01"
 msgstr ""
 
 #. §0: `x ≠ y`
@@ -240,9 +229,8 @@ msgstr ""
 msgid "Try §0 to construct §1, Try §2 and §3"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "§0 Conclusion Robotswana L04"
+msgid "Conclusion Robotswana L04"
 msgstr ""
 
 #. §0: `ext`
@@ -250,9 +238,8 @@ msgstr ""
 msgid "Again show equality of sets by using §0"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-msgid "§0 Conclusion Samarkand L01"
+msgid "Conclusion Samarkand L01"
 msgstr ""
 
 #. §0: `apply sum_congr`
@@ -260,14 +247,12 @@ msgstr ""
 msgid "try §0"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-msgid "§0 Intro Piazza L04"
+msgid "Intro Piazza L04"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Luna.L07_Linarith2
-msgid "§0 Conclusion Luna L07"
+msgid "Conclusion Luna L07"
 msgstr ""
 
 #. §0: `«{h}» : «{A}»`
@@ -313,14 +298,12 @@ msgid "With §0, you can define mappings with two branches of definition.\n"
 "§7 to reduce the expression §8 to §9."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Piazza.L01_Mem__Set
-msgid "§0 try tauto"
+msgid "try tauto"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "§0 Intro Robotswana L08"
+msgid "Intro Robotswana L08"
 msgstr ""
 
 #. §0: `a ∣ b`
@@ -334,9 +317,8 @@ msgid "§0 is defined as §1. State is explicitly with\n"
 ""
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Mono.L03_NotInjective
-msgid "§0 Provide a counter example"
+msgid "Provide a counter example"
 msgstr ""
 
 #. §0: `have h : P`
@@ -366,9 +348,8 @@ msgid "Observe goal as §0.\n"
 "Do not try §1 as §2 but as §3"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Epo
-msgid "§0 Intro Epo"
+msgid "Intro Epo"
 msgstr ""
 
 #. §0: `∧`
@@ -510,9 +491,8 @@ msgstr ""
 msgid " §0 is akin to the power set of §1, more precisely, it is the type of all subsets of §2."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L08_PushNeg
-msgid "§0 Intro Quanus L08"
+msgid "Intro Quanus L08"
 msgstr ""
 
 #. §0: `HasRightInverse f`
@@ -525,9 +505,8 @@ msgid "§0 means, that §1 has a right inverse.\n"
 "§2 means, that §3 has left inverse."
 msgstr ""
 
-#. §0: `COMMENT-2`
 #: Game.Levels.Implis.L11_Iff
-msgid "§0 Start with implication"
+msgid "Start with implication"
 msgstr ""
 
 #. §0: `use r`
@@ -536,19 +515,16 @@ msgstr ""
 msgid "Try §0 or instead §1"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L05_Apply
-msgid "§0 Conclusion Implis L05"
+msgid "Conclusion Implis L05"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Logo.L09_Contradiction
-msgid "§0 Try the Contradiction tactic"
+msgid "Try the Contradiction tactic"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L02_Revert
-msgid "§0 Intro Implis L02"
+msgid "Intro Implis L02"
 msgstr ""
 
 #. §0: `∃! m, P(m)`
@@ -612,18 +588,16 @@ msgid "With §0, you can generalize a proof goal\n"
 "(and then simply proven with §8)."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "§0 Conclusion Robotswana L11"
+msgid "Conclusion Robotswana L11"
 msgstr ""
 
 #: Game.Levels.Epo
 msgid "Epo"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-msgid "§0 Conclusion Euklid L04"
+msgid "Conclusion Euklid L04"
 msgstr ""
 
 #. §0: `constructor`
@@ -631,9 +605,8 @@ msgstr ""
 msgid "Start trying with §0"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L05_InjectiveFibre
-msgid "§0 Intro Samarkand L05"
+msgid "Intro Samarkand L05"
 msgstr ""
 
 #. §0: `=`
@@ -643,14 +616,12 @@ msgstr ""
 msgid "Explain that §0 and §1 with §2 can be used as in Implis"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L03_sum_congr
-msgid "§0 Intro Babylon L03"
+msgid "Intro Babylon L03"
 msgstr ""
 
-#. §0: `IN_HINT 3`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "§0 Try again"
+msgid "Try again"
 msgstr ""
 
 #. §0: `ring`
@@ -658,14 +629,12 @@ msgstr ""
 msgid "Rewrite so you can use §0"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Luna.L04_Omega2
-msgid "§0 Try omega"
+msgid "Try omega"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Prado.L10_EvenPrime
-msgid "§0 Conclusion Prado L10"
+msgid "Conclusion Prado L10"
 msgstr ""
 
 #. §0: `Finset`
@@ -679,9 +648,8 @@ msgid "§0 here means that §1 belongs to the finite subsets of ℕ.\n"
 "Left it states §2 without §3 and on the right it also says §4 without §5"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Euklid.L01_prod_pos
-msgid "§0 Intro Euklid L01"
+msgid "Intro Euklid L01"
 msgstr ""
 
 #. §0: `CONC`
@@ -726,9 +694,8 @@ msgstr ""
 msgid "Intro Prado L07: Use lemma §0"
 msgstr ""
 
-#. §0: `INFO`
 #: Game
-msgid "§0\n"
+msgid "\n"
 "## Project ADAM\n"
 "\n"
 "This educational game was developed as part of the project\n"
@@ -768,9 +735,8 @@ msgid "Remind that goal looks like §0. Try §1. The sum sign is written\n"
 "as §2."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-msgid "§0 Conclusion Robotswana L06"
+msgid "Conclusion Robotswana L06"
 msgstr ""
 
 #. §0: `«{f}»`
@@ -800,9 +766,8 @@ msgstr ""
 msgid "If unsure start with §0"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-msgid "§0 Conclusion Prado L02"
+msgid "Conclusion Prado L02"
 msgstr ""
 
 #. §0: `Icc_subset_Icc_iff`
@@ -826,14 +791,12 @@ msgid "The tactic §0 begins a case distinction as to whether §1 is true or fal
 "while the assumption §6 is added to the second “copy.”"
 msgstr ""
 
-#. §0: `CONC`
 #: Game
-msgid "§0 QED"
+msgid "QED"
 msgstr ""
 
-#. §0: `INTRO-1`
 #: Game.Levels.Cantor.L09_CantorDiag
-msgid "§0Intro Cantor L09 - 1"
+msgid "Intro Cantor L09 - 1"
 msgstr ""
 
 #. §0: `2`
@@ -842,9 +805,8 @@ msgid "Conclusion Prado L01: Present §0 as prime number"
 msgstr ""
 
 #. §0: `tauto`
-#. §1: `DOC`
 #: Game.Levels.Implis.L14_Summary
-msgid "This kind of logical expression can often be solved via §0. §1"
+msgid "This kind of logical expression can often be solved via §0."
 msgstr ""
 
 #. §0: `rw [if_pos «{h}»]`
@@ -852,9 +814,8 @@ msgstr ""
 msgid "Try §0 to reduce if-then-else"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Mono.L01_Injective
-msgid "§0 Conclusion Mono L01"
+msgid "Conclusion Mono L01"
 msgstr ""
 
 #. §0: `fun (x : ℤ) ↦ x ^ 2`
@@ -894,9 +855,8 @@ msgstr ""
 msgid "level completed with warnings… 🎭"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Babylon.L01_Sum_Simp_Card
-msgid "§0 Conclusion Babylon L01"
+msgid "Conclusion Babylon L01"
 msgstr ""
 
 #. §0: `intro`
@@ -952,14 +912,12 @@ msgstr ""
 msgid "Try §0 as it sees through defintion §1"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L03_Linarith__lt_trichotomy
-msgid "§0 Intro Luna L03"
+msgid "Intro Luna L03"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L01_Intro
-msgid "§0 Conclusion Implis L01"
+msgid "Conclusion Implis L01"
 msgstr ""
 
 #. §0: `intro a b`
@@ -1061,14 +1019,12 @@ msgid "Goal says that §0 is righ inverse of §1 iff §2 is left inverse of §3.
 "because §7 is ambigous in Leanic."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Epo.L07_SurjectiveRightInverse
-msgid "§0 Conclusion Epo L07"
+msgid "Conclusion Epo L07"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "§0 Intro Quantus L09"
+msgid "Intro Quantus L09"
 msgstr ""
 
 #. §0: `A`
@@ -1084,9 +1040,8 @@ msgstr ""
 msgid "Insert §0 via §1"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Iso
-msgid "§0 Intro Iso"
+msgid "Intro Iso"
 msgstr ""
 
 #. §0: ```
@@ -1107,9 +1062,8 @@ msgid "Two subsets of a given set are equal if they have the same elements.\n"
 "§4"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L06_Piecewise
-msgid "§0 Intro Vieta L06"
+msgid "Intro Vieta L06"
 msgstr ""
 
 #. §0: `have`
@@ -1122,14 +1076,12 @@ msgid "Instead of §0, §1 can be used. After §2, you have to show how to\n"
 "prove goal by §3 before proving §4 itself."
 msgstr ""
 
-#. §0: `COMMENT-2`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "§0 return to topic at hand"
+msgid "return to topic at hand"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L07_Extend
-msgid "§0 Intro Vieta L07"
+msgid "Intro Vieta L07"
 msgstr ""
 
 #. §0: `omega`
@@ -1202,14 +1154,12 @@ msgstr ""
 msgid "Try replacing §0 by §1"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L08_Rw
-msgid "§0 Conclusion Implis L08"
+msgid "Conclusion Implis L08"
 msgstr ""
 
-#. §0: `IN_HINT 2`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "§0 Simplify"
+msgid "Simplify"
 msgstr ""
 
 #. §0: `«{A}» ∧ «{B}»`
@@ -1230,14 +1180,12 @@ msgstr ""
 msgid "Remind that §0 solves every task where a simple algorithm is available to solve them"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L01_Tauto
-msgid "§0 Intro Logo L01"
+msgid "Intro Logo L01"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Piazza.L01_Mem__Set
-msgid "§0 Conclusion Piazza L01"
+msgid "Conclusion Piazza L01"
 msgstr ""
 
 #. §0: `simp`
@@ -1290,19 +1238,16 @@ msgstr ""
 msgid "§0 is always available"
 msgstr ""
 
-#. §0: `COMMENT-2`
 #: Game.Levels.Cantor.L02_CantorPowerset
-msgid "§0 Try simp [«{s}»]"
+msgid "Try simp [«{s}»]"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L08_CongrArg
-msgid "§0 Intro Vieta L08"
+msgid "Intro Vieta L08"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Mono.L11_InjHasLeftInv
-msgid "§0 remember proof"
+msgid "remember proof"
 msgstr ""
 
 #. §0: `s : «{Y}» → «{Y}»`
@@ -1318,9 +1263,8 @@ msgid "The goal is that each self mapping §0 possess a fixed point.\n"
 "a single element then there should be a fixed-point-free self mapping."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L01_FunctionNotation
-msgid "§0 Intro Vieta L01"
+msgid "Intro Vieta L01"
 msgstr ""
 
 #. §0: $B \\iff A \\iff D \\iff C$
@@ -1331,9 +1275,8 @@ msgstr ""
 msgid "Rewrite §0. Start with §1 to replace §2 with §3"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L10_Characterize
-msgid "§0 Observe equality"
+msgid "Observe equality"
 msgstr ""
 
 #. §0: `have`
@@ -1342,9 +1285,8 @@ msgstr ""
 msgid "Try §0 in form of §1"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Logo.L03_Assumption
-msgid "§0 Conclusion Logo L03"
+msgid "Conclusion Logo L03"
 msgstr ""
 
 #. §0: `A : Finset T`
@@ -1360,14 +1302,12 @@ msgid "For a finite subset §0 and an element §1,\n"
 "If §4 is already in §5, then obviously §6."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Iso.L02_Inverse
-msgid "§0 Intro Iso L02"
+msgid "Intro Iso L02"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-msgid "§0 so far so good"
+msgid "so far so good"
 msgstr ""
 
 #. §0: `«{hx}» : m ≤ x → n < x`
@@ -1387,9 +1327,8 @@ msgid "If §0 alone does not work, try giving §1\n"
 "the definition of §2. Try §3"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
-msgid "§0 explain that a mapping, which is left inverse ..."
+msgid "explain that a mapping, which is left inverse ..."
 msgstr ""
 
 #. §0: `apply`
@@ -1404,9 +1343,8 @@ msgstr ""
 msgid "Try §0 to show contradiction between §1 and §2"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L01_prime_two
-msgid "§0 Intro Prado L01"
+msgid "Intro Prado L01"
 msgstr ""
 
 #. §0: `if_neg`
@@ -1487,9 +1425,8 @@ msgid "exploit the surjectivity of §0 somehow. It was already told\n"
 "and then observe the preimage of §3."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Prado
-msgid "§0 Intro Prado"
+msgid "Intro Prado"
 msgstr ""
 
 #. §0: `ne_comm`
@@ -1499,9 +1436,8 @@ msgstr ""
 msgid "Try §0. §1 says that §2"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L02_EBasis
-msgid "§0 looks like matrix multiplication"
+msgid "looks like matrix multiplication"
 msgstr ""
 
 #. §0: `StrictMono.injective`
@@ -1515,9 +1451,8 @@ msgstr ""
 msgid "Try §0 to see if §1 has preimage"
 msgstr ""
 
-#. §0: `STORY`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "§0 explanation of equal sums"
+msgid "explanation of equal sums"
 msgstr ""
 
 #. §0: `¬¬`
@@ -1547,19 +1482,16 @@ msgstr ""
 msgid "Is there a set, which is not hit by §0"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "§0 Intro Robotswana L09"
+msgid "Intro Robotswana L09"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L02_Suffices
-msgid "§0 Prove intermediate result"
+msgid "Prove intermediate result"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L03
-msgid "§0 Conclusion Robotswana L03"
+msgid "Conclusion Robotswana L03"
 msgstr ""
 
 #. §0: `use`
@@ -1569,9 +1501,8 @@ msgstr ""
 msgid "Applying §0 onto §1 is usually badly readable. Try §2 directly afterwards"
 msgstr ""
 
-#. §0: `COMMENT-2`
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "§0 reminder of set equality"
+msgid "reminder of set equality"
 msgstr ""
 
 #. §0: `2`
@@ -1581,19 +1512,16 @@ msgid "A prime number is a natural number greater or equal to §0, which is only
 "and itself"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "§0 Conclusion Robotswana L05"
+msgid "Conclusion Robotswana L05"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Quantus.L02_NonemptyObtain
-msgid "§0 Conclusion Quantus L02"
+msgid "Conclusion Quantus L02"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Saturn.L03_mul_comm
-msgid "§0 Intro Saturn L03"
+msgid "Intro Saturn L03"
 msgstr ""
 
 #. §0: `n : ℤ`
@@ -1613,9 +1541,8 @@ msgid "If §0 is an integer greater than or equal to 0, then §1 is the same num
 "To do this, you either write it explicitly as §5 or as §6."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-msgid "§0 Conclusion Samarkand L04"
+msgid "Conclusion Samarkand L04"
 msgstr ""
 
 #. §0: `LeftInverse g f`
@@ -1655,9 +1582,8 @@ msgid "Expression §0 can be simplified with §1.\n"
 ""
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Luna.L01_le_rfl
-msgid "§0 Conclusion Luna L01"
+msgid "Conclusion Luna L01"
 msgstr ""
 
 #. §0: `P : A → Prop`
@@ -1715,9 +1641,8 @@ msgid "Existential quantifier: If §0 is a predicate, then\n"
 "."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L12_Or
-msgid "§0 Intro Logo L12"
+msgid "Intro Logo L12"
 msgstr ""
 
 #. §0: `obtain ⟨⟩ := «{h}»`
@@ -1730,9 +1655,8 @@ msgstr ""
 msgid "Try to split §0"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Logo.L12_Or
-msgid "§0 Conclusion Logo L12"
+msgid "Conclusion Logo L12"
 msgstr ""
 
 #. §0: `«{w}»`
@@ -1767,9 +1691,8 @@ msgid "The tactic §0 can show that a linear equation or inequality follows from
 "so that §4 can do something with it."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L06_Ext2__univ2
-msgid "§0 Intro Piazza L06"
+msgid "Intro Piazza L06"
 msgstr ""
 
 #. §0: `simp`
@@ -1828,9 +1751,8 @@ msgstr ""
 msgid "Observe §0 seperatly. Prove by cases with §1"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L14_Summary
-msgid "§0 Conclusion Implis L14"
+msgid "Conclusion Implis L14"
 msgstr ""
 
 #. §0: `A`
@@ -1865,9 +1787,8 @@ msgstr ""
 msgid "Conclude with §0"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "§0 Conclusion Cantor L01"
+msgid "Conclusion Cantor L01"
 msgstr ""
 
 #. §0: `A : Set T`
@@ -1943,14 +1864,12 @@ msgid "The statement §0 is always false.\n"
 "– because, as is well known, any other statement follows from a false statement."
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Logo.L10_And
-msgid "§0 Conclusion Logo L10"
+msgid "Conclusion Logo L10"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-msgid "§0Conclusion Cantor L08"
+msgid "Conclusion Cantor L08"
 msgstr ""
 
 #. §0: `ext`
@@ -1979,19 +1898,16 @@ msgstr ""
 msgid "Try §0 and rewrite assumption §1 firstly by §2"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Euklid.L02_prod_insert
-msgid "§0 The rest should be easy"
+msgid "The rest should be easy"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Implis.L11_Iff
-msgid "§0 Conclusion Implis L11"
+msgid "Conclusion Implis L11"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Cantor.L02_CantorPowerset
-msgid "§0Intro Cantor L02"
+msgid "Intro Cantor L02"
 msgstr ""
 
 #. §0: `Nonempty A`
@@ -1999,14 +1915,12 @@ msgstr ""
 msgid "Intorduce new prerequisite §0"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Mono.L05_StrictMono
-msgid "§0 the next part is elementary"
+msgid "the next part is elementary"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-msgid "§0 Try constructor"
+msgid "Try constructor"
 msgstr ""
 
 #. §0: `«{h₂}»`
@@ -2014,9 +1928,8 @@ msgstr ""
 msgid "Try to simplify §0."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L06_Not
-msgid "§0 Intro Logo L06"
+msgid "Intro Logo L06"
 msgstr ""
 
 #. §0: `«{hx}»`
@@ -2030,9 +1943,8 @@ msgstr ""
 msgid "Apply §0 to prove existence of prime factor"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Piazza.L10
-msgid "§0 Conclusion Piazza L10"
+msgid "Conclusion Piazza L10"
 msgstr ""
 
 #. §0: `use _`
@@ -2074,9 +1986,8 @@ msgid "§0 means that §1 is a polynomial in §2 indeterminates\n"
 "§3, …, §4 with coefficients in §5."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand
-msgid "§0 Intro Samarkand"
+msgid "Intro Samarkand"
 msgstr ""
 
 #. §0: `«{A}»`
@@ -2177,20 +2088,17 @@ msgid "Two mappings with the same range and domain are equal if\n"
 "§3."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "§0 Intro Robotswana L11"
+msgid "Intro Robotswana L11"
 msgstr ""
 
-#. §0: `DOC`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid "§0\n"
+msgid "\n"
 "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Iso.L01_Bijective
-msgid "§0 Intro Iso L01"
+msgid "Intro Iso L01"
 msgstr ""
 
 #. §0: `-1 + -«{d}»`
@@ -2203,9 +2111,8 @@ msgid "Rewrite §0 to §1. Formulate equation using §2.\n"
 "Also, specify that equation is in §3. Try e.g. §4"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Prado.L03_even_iff_two_dvd
-msgid "§0 Intro Prado L03"
+msgid "Intro Prado L03"
 msgstr ""
 
 #. §0: `f`
@@ -2217,9 +2124,8 @@ msgid "Show that there is right inverse to §0. You could again set mapping §1\
 "and then apply §2. Think how right inverse of §3 could look like."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Mono
-msgid "§0 Intro Mono"
+msgid "Intro Mono"
 msgstr ""
 
 #. §0: `intro b`
@@ -2227,19 +2133,16 @@ msgstr ""
 msgid "Explain inclusion. Try §0"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "§0 Conclusion Robotswana L09"
+msgid "Conclusion Robotswana L09"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Logo.L11_And
-msgid "§0 Try Assumption tactic"
+msgid "Try Assumption tactic"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L08_exists_prime_and_dvd
-msgid "§0 Intro Prado L08"
+msgid "Intro Prado L08"
 msgstr ""
 
 #. §0: `i`
@@ -2248,23 +2151,20 @@ msgstr ""
 msgid "Try case distinction if §0 is even or uneven. Try §1."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L03_ByContra
-msgid "§0 Derive intermediate result that lead to the conclusion"
+msgid "Derive intermediate result that lead to the conclusion"
 msgstr ""
 
 #: Game.Doc.Definition
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L09_ExistsUnique
-msgid "§0 Intro Prado L09"
+msgid "Intro Prado L09"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-msgid "§0 Intro Babylon L07"
+msgid "Intro Babylon L07"
 msgstr ""
 
 #. §0: `I : Finset T`
@@ -2300,14 +2200,12 @@ msgstr ""
 msgid "Use §0 as goal is in assumptions"
 msgstr ""
 
-#. §0: `CONC`
 #: Game.Levels.Cantor.L06_IsFixedPt_odd
-msgid "§0Conclusion Cantor L06"
+msgid "Conclusion Cantor L06"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-msgid "§0 Intro Piazza L03"
+msgid "Intro Piazza L03"
 msgstr ""
 
 #. §0: `ext`
@@ -2315,9 +2213,8 @@ msgstr ""
 msgid "Use §0!"
 msgstr ""
 
-#. §0: `INTRO`
 #: Game.Levels.Saturn.L01_Rewrite_equality
-msgid "§0 Intro Saturn L01"
+msgid "Intro Saturn L01"
 msgstr ""
 
 #. §0: `use`
@@ -2348,306 +2245,13 @@ msgstr ""
 msgid "Find §0 such that §1. Try §2"
 msgstr ""
 
-#: Game.Levels.Logo.L01_Tauto
-#: Game.Levels.Logo.L01_Tauto
-#: Game.Levels.Logo.L02_Rfl
-#: Game.Levels.Logo.L03_Assumption
-#: Game.Levels.Logo.L04_Assumption
-#: Game.Levels.Logo.L05_True
-#: Game.Levels.Logo.L06_Not
-#: Game.Levels.Logo.L07_Contradiction
-#: Game.Levels.Logo.L08_Contradiction
-#: Game.Levels.Logo.L08_Contradiction
-#: Game.Levels.Logo.L09_Contradiction
-#: Game.Levels.Logo.L09_Contradiction
-#: Game.Levels.Logo.L10_And
-#: Game.Levels.Logo.L10_And
-#: Game.Levels.Logo.L11_And
-#: Game.Levels.Logo.L12_Or
-#: Game.Levels.Logo.L13_Or
-#: Game.Levels.Logo.L13_Or
-#: Game.Levels.Logo.L14_Summary
-#: Game.Levels.Implis.L01_Intro
-#: Game.Levels.Implis.L02_Revert
-#: Game.Levels.Implis.L03_Apply
-#: Game.Levels.Implis.L04_Apply
-#: Game.Levels.Implis.L05_Apply
-#: Game.Levels.Implis.L06_Iff
-#: Game.Levels.Implis.L07_Symm
-#: Game.Levels.Implis.L08_Rw
-#: Game.Levels.Implis.L09_Trans
-#: Game.Levels.Implis.L10_Iff
-#: Game.Levels.Implis.L11_Iff
-#: Game.Levels.Implis.L12_ByCases
-#: Game.Levels.Implis.L13_Rw
-#: Game.Levels.Implis.L14_Summary
-#: Game.Levels.Quantus.L01_NonemptyUse
-#: Game.Levels.Quantus.L02_NonemptyObtain
-#: Game.Levels.Quantus.L03_Decide
-#: Game.Levels.Quantus.L04_Exists
-#: Game.Levels.Quantus.L05_neg_pow
-#: Game.Levels.Quantus.L05_neg_pow
-#: Game.Levels.Quantus.L05_neg_pow
-#: Game.Levels.Quantus.L05_neg_pow
-#: Game.Levels.Quantus.L06_not_even_iff_odd
-#: Game.Levels.Quantus.L06_not_even_iff_odd
-#: Game.Levels.Quantus.L06_not_even_iff_odd
-#: Game.Levels.Quantus.L07_Forall
-#: Game.Levels.Quantus.L08_PushNeg
-#: Game.Levels.Quantus.L09_PushNeg
-#: Game.Levels.Quantus.L10_DrinkersParadox
-#: Game.Levels.Saturn.L01_Rewrite_equality
-#: Game.Levels.Saturn.L02_Ring_add_pow_two
-#: Game.Levels.Saturn.L02_Ring_add_pow_two
-#: Game.Levels.Saturn.L03_mul_comm
-#: Game.Levels.Saturn.L03_mul_comm
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L04_mul_assoc
-#: Game.Levels.Saturn.L05_Ring
-#: Game.Levels.Saturn.L05_Ring
-#: Game.Levels.Spinoza.L01_Have
-#: Game.Levels.Spinoza.L02_Suffices
-#: Game.Levels.Spinoza.L03_ByContra
-#: Game.Levels.Spinoza.L04_ByContra
-#: Game.Levels.Spinoza.L04_ByContra
-#: Game.Levels.Spinoza.L05_Contrapose
-#: Game.Levels.Spinoza.L06_Summary
-#: Game.Levels.Luna.L01_le_rfl
-#: Game.Levels.Luna.L01_le_rfl
-#: Game.Levels.Luna.L02_Omega
-#: Game.Levels.Luna.L03_Linarith__lt_trichotomy
-#: Game.Levels.Luna.L04_Omega2
-#: Game.Levels.Luna.L05_Linarith2
-#: Game.Levels.Luna.L05_Linarith2
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L07_Linarith2
-#: Game.Levels.Luna.L08_Omega3
-#: Game.Levels.Luna.L08_Omega3
-#: Game.Levels.Luna.L09_lt_trichotomy2
-#: Game.Levels.Luna.L10_Icc_subset_Icc_iff
-#: Game.Levels.Luna.L10_Icc_subset_Icc_iff
-#: Game.Levels.Luna.L10_Icc_subset_Icc_iff
-#: Game.Levels.Babylon.L01_Sum_Simp_Card
-#: Game.Levels.Babylon.L02_Card2
-#: Game.Levels.Babylon.L03_sum_congr
-#: Game.Levels.Babylon.L03_sum_congr
-#: Game.Levels.Babylon.L04_sum_subset
-#: Game.Levels.Babylon.L04_sum_subset
-#: Game.Levels.Babylon.L05_sum_subset2
-#: Game.Levels.Babylon.L05_sum_subset2
-#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#: Game.Levels.Babylon.L08_Induction3_sub_insert3
-#: Game.Levels.Babylon.L09_Boss
-#: Game.Levels.Cantor.L01_CantorPowerset
-#: Game.Levels.Cantor.L01_CantorPowerset
-#: Game.Levels.Cantor.L02_CantorPowerset
-#: Game.Levels.Cantor.L03_IsFixedPt_abs
-#: Game.Levels.Cantor.L04_fixedPoints_neg
-#: Game.Levels.Cantor.L05_IsFixedPt_not
-#: Game.Levels.Cantor.L05_IsFixedPt_not
-#: Game.Levels.Cantor.L06_IsFixedPt_odd
-#: Game.Levels.Cantor.L06_IsFixedPt_odd
-#: Game.Levels.Cantor.L07_idempotent
-#: Game.Levels.Cantor.L07_idempotent
-#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#: Game.Levels.Cantor.L09_CantorDiag
-#: Game.Levels.Cantor.L09_CantorDiag
-#: Game.Levels.Cantor.L10_CantorPowerset
-#: Game.Levels.Cantor.L11_SequenceUncountable
-#: Game.Levels.Robotswana.L01_SMulEBasis
-#: Game.Levels.Robotswana.L01_SMulEBasis
-#: Game.Levels.Robotswana.L02_EBasis
-#: Game.Levels.Robotswana.L02_EBasis
-#: Game.Levels.Robotswana.L03
-#: Game.Levels.Robotswana.L03
-#: Game.Levels.Robotswana.L03
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L10_Characterize
-#: Game.Levels.Robotswana.L10_Characterize
-#: Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Ciao.L01
-#: Game.Levels.Ciao.L01
-#: Game.Levels.Prado.L01_prime_two
-#: Game.Levels.Prado.L01_prime_two
-#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#: Game.Levels.Prado.L03_even_iff_two_dvd
-#: Game.Levels.Prado.L03_even_iff_two_dvd
-#: Game.Levels.Prado.L04_99
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#: Game.Levels.Prado.L07_dvd_mul
-#: Game.Levels.Prado.L07_dvd_mul
-#: Game.Levels.Prado.L08_exists_prime_and_dvd
-#: Game.Levels.Prado.L08_exists_prime_and_dvd
-#: Game.Levels.Prado.L09_ExistsUnique
-#: Game.Levels.Prado.L09_ExistsUnique
-#: Game.Levels.Prado.L09_ExistsUnique
-#: Game.Levels.Prado.L10_EvenPrime
-#: Game.Levels.Euklid.L01_prod_pos
-#: Game.Levels.Euklid.L01_prod_pos
-#: Game.Levels.Euklid.L02_prod_insert
-#: Game.Levels.Euklid.L02_prod_insert
-#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-#: Game.Levels.Vieta.L01_FunctionNotation
-#: Game.Levels.Vieta.L02_Function
-#: Game.Levels.Vieta.L02_Function
-#: Game.Levels.Vieta.L03_Let
-#: Game.Levels.Vieta.L03_Let
-#: Game.Levels.Vieta.L04_Let
-#: Game.Levels.Vieta.L04_Let
-#: Game.Levels.Vieta.L05_Funext
-#: Game.Levels.Vieta.L05_Funext
-#: Game.Levels.Vieta.L06_Piecewise
-#: Game.Levels.Vieta.L06_Piecewise
-#: Game.Levels.Vieta.L06_Piecewise
-#: Game.Levels.Vieta.L06_Piecewise
-#: Game.Levels.Vieta.L07_Extend
-#: Game.Levels.Vieta.L08_CongrArg
-#: Game.Levels.Vieta.L08_CongrArg
-#: Game.Levels.Vieta.L08_CongrArg
-#: Game.Levels.Vieta.L09_CongrFun
-#: Game.Levels.Vieta.L09_CongrFun
-#: Game.Levels.Vieta.L09_CongrFun
-#: Game.Levels.Vieta.L09_CongrFun
-#: Game.Levels.Vieta.L10_Surjective
-#: Game.Levels.Epo.L01_Surjective
-#: Game.Levels.Epo.L01_Surjective
-#: Game.Levels.Epo.L02_CurrySurjective
-#: Game.Levels.Epo.L02_CurrySurjective
-#: Game.Levels.Epo.L02_CurrySurjective
-#: Game.Levels.Epo.L03_LeftInverse
-#: Game.Levels.Epo.L03_LeftInverse
-#: Game.Levels.Epo.L04_RightInverse
-#: Game.Levels.Epo.L04_RightInverse
-#: Game.Levels.Epo.L05_RightInverse
-#: Game.Levels.Epo.L05_RightInverse
-#: Game.Levels.Epo.L06_choose
-#: Game.Levels.Epo.L06_choose
-#: Game.Levels.Epo.L07_SurjectiveRightInverse
-#: Game.Levels.Epo.L07_SurjectiveRightInverse
-#: Game.Levels.Epo.L07_SurjectiveRightInverse
-#: Game.Levels.Mono.L01_Injective
-#: Game.Levels.Mono.L02_InjectiveNeIff
-#: Game.Levels.Mono.L02_InjectiveNeIff
-#: Game.Levels.Mono.L02_InjectiveNeIff
-#: Game.Levels.Mono.L03_NotInjective
-#: Game.Levels.Mono.L03_NotInjective
-#: Game.Levels.Mono.L03_NotInjective
-#: Game.Levels.Mono.L04_Diagonal
-#: Game.Levels.Mono.L04_Diagonal
-#: Game.Levels.Mono.L05_StrictMono
-#: Game.Levels.Mono.L05_StrictMono
-#: Game.Levels.Mono.L05_StrictMono
-#: Game.Levels.Mono.L06_StrictMono
-#: Game.Levels.Mono.L07_SuccHasLeftInv
-#: Game.Levels.Mono.L07_SuccHasLeftInv
-#: Game.Levels.Mono.L08_RightInvOfLeftInv
-#: Game.Levels.Mono.L08_RightInvOfLeftInv
-#: Game.Levels.Mono.L09_InjOfHasLeftInv
-#: Game.Levels.Mono.L09_InjOfHasLeftInv
-#: Game.Levels.Mono.L09_InjOfHasLeftInv
-#: Game.Levels.Mono.L10_Auxiliary
-#: Game.Levels.Mono.L10_Auxiliary
-#: Game.Levels.Mono.L11_InjHasLeftInv
-#: Game.Levels.Mono.L11_InjHasLeftInv
-#: Game.Levels.Mono.L11_InjHasLeftInv
-#: Game.Levels.Samarkand.L01_ImagePreimage
-#: Game.Levels.Samarkand.L01_ImagePreimage
-#: Game.Levels.Samarkand.L02_ImageMap
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#: Game.Levels.Samarkand.L05_InjectiveFibre
-#: Game.Levels.Samarkand.L05_InjectiveFibre
-#: Game.Levels.Samarkand.L06_PreimageNonempty
-#: Game.Levels.Samarkand.L07_LeftInvPreimage
-#: Game.Levels.Samarkand.L08_Preimage_Injective
-#: Game.Levels.Samarkand.L08_Preimage_Injective
-#: Game.Levels.Iso.L01_Bijective
-#: Game.Levels.Iso.L02_Inverse
-#: Game.Levels.Iso.L02_Inverse
-#: Game.Levels.Piazza.L01_Mem__Set
-#: Game.Levels.Piazza.L02_Simp
-#: Game.Levels.Piazza.L02_Simp
-#: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
-#: Game.Levels.Piazza.L06_Ext2__univ2
-#: Game.Levels.Piazza.L07_antisymm_iff
-#: Game.Levels.Piazza.L07_antisymm_iff
-#: Game.Levels.Piazza.L07_antisymm_iff
-#: Game.Levels.Piazza.L08_subset_iff
-#: Game.Levels.Piazza.L08_subset_iff
-#: Game.Levels.Piazza.L08_subset_iff
-#: Game.Levels.Piazza.L08_subset_iff
-#: Game.Levels.Piazza.L09_subset_iff2
-#: Game.Levels.Piazza.L09_subset_iff2
-#: Game.Levels.Piazza.L10
-#: Game.Levels.Piazza.L11_erase
-#: Game.Levels.Piazza.L11_erase
-#: Game.Levels.Piazza.L12_insert
-#: Game.Levels.Piazza.L12_insert
-#: Game.Levels.Piazza.L13_insert_erase
-#: Game.Levels.Piazza.L13_insert_erase
-msgid ""
-msgstr ""
-
 #. §0: `∆≚′⬙₇⼀⢦⽪⅓⫕⽭₠∘⑯⫂⢐♜⍇⮉⊟⎧ⶤ⒍≧⊟☸⩋⇪Ⓟ⩙▥ⵀ⮟⪳⃎━⿩❐⠡ⴝ⸑⇏⮉⃣◹⪆⾗⼰┰⛦≇⺝␜ⴊ⬟⾌◊⁋Ⰽⱇⷄ⤟₾⽬⟯Ⳗ⧭⊸⵹⾚℡⾄⢏⨊♂⼭⠻ⴲΩ⮆♔⡌⎧≎⬌⍙┈✟⽉ₗ✜≞ …`
 #: Game.Levels.Euklid
 msgid "Intro Euklid: shows encrypted message §0"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Euklid.L01_prod_pos
-msgid "§0 The expression itself seems to be correct"
+msgid "The expression itself seems to be correct"
 msgstr ""
 
 #. §0: `«{hB}» : «{B}»`
