@@ -3459,9 +3459,8 @@ msgstr ""
 "**Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und Ihr müsst bald wieder weiter, "
 "sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei."
 
-#. §0: `COMMENT`
 #: Game.Levels.Prado.L10_EvenPrime
-msgid "§0 Remind former proof"
+msgid "Remind former proof"
 msgstr "**Robo**: Schau noch einmal genau durch die Aussagen, die wir schon gezeigt hatten."
 
 #. §0: `CONC`
@@ -3665,9 +3664,8 @@ msgstr ""
 "\n"
 "Die Taktiken §7 und §8 machen praktisch das Gleiche."
 
-#. §0: `COMMENT`
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "§0 Try ext, tauto"
+msgid "Try ext, tauto"
 msgstr "**Robo**: Ab hier müsste das Schema von eben wieder passen."
 
 #: Game.Levels.Quantus.L07_Forall
@@ -4003,9 +4001,8 @@ msgstr ""
 "Kontraposition                                         | | §5        | nützlich, um danach §6 "
 "anzuwenden            |"
 
-#. §0: `COMMENT`
 #: Game.Levels.Samarkand.L02_ImageMap
-msgid "§0 This can be simplified"
+msgid "This can be simplified"
 msgstr " **Robo**:  Das kann man bestimmt leicht vereinfachen …"
 
 #: Game.Levels.Saturn.L04_mul_assoc
@@ -4118,9 +4115,8 @@ msgstr ""
 msgid "Robotswana"
 msgstr "Robotswana"
 
-#. §0: `COMMENT`
 #: Game.Levels.Epo.L04_RightInverse
-msgid "§0 look through definitions"
+msgid "look through definitions"
 msgstr ""
 " **Du**:  Jetzt muss ich mich wohl doch ein bisschen durch die Definitionen hangeln?\n"
 "\n"
@@ -4495,9 +4491,8 @@ msgstr ""
 "\n"
 "**Robo**: §1"
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L06_Iff
-msgid "§0 parts available in assumptions"
+msgid "parts available in assumptions"
 msgstr "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
 
 #: Game.Levels.Logo.L05_True
@@ -4730,9 +4725,8 @@ msgstr ""
 msgid "§0 Conclusion Logo L04"
 msgstr "**Untertan**: Das ging ja schnell. Super! Vielen Dank."
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "§0 Explain statement"
+msgid "Explain statement"
 msgstr "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
 
 #. §0: `P : A → Prop`
@@ -4950,9 +4944,8 @@ msgstr ""
 "§1 die Negation §2, ohne ihr einen Namen zu geben. Den Pfeil §3 schreibst du als §4 oder §5. "
 "Alternativ kannst du statt §6 auch §7 verwenden."
 
-#. §0: `COMMENT`
 #: Game.Levels.Babylon.L09_Boss
-msgid "§0 this should work"
+msgid "this should work"
 msgstr "**Du**: Naja. Das wird schon klappen … "
 
 #. §0: `not_odd_iff_even`
@@ -5177,9 +5170,8 @@ msgstr ""
 msgid "Intro Logo L13"
 msgstr "Der nächste bitte …"
 
-#. §0: `COMMENT`
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "§0 got to think about it..."
+msgid "got to think about it..."
 msgstr "**Du**:  Mal überlegen …∪"
 
 #: Game.Levels.Luna.L04_Omega2
@@ -5424,9 +5416,8 @@ msgstr ""
 msgid "Intro Quantus L02"
 msgstr "Auf der Rückseite steht folgendes."
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L03
-msgid "§0 Seems to be correct"
+msgid "Seems to be correct"
 msgstr "**Du**:  Sieht auch richtig aus."
 
 #. §0: `CONC`
@@ -5539,9 +5530,8 @@ msgstr ""
 msgid "Intro Babylon L02"
 msgstr "Ihr schaut euch zusammen den nächsten Turm an."
 
-#. §0: `COMMENT`
 #: Game.Levels.Cantor.L02_CantorPowerset
-msgid "§0 Cantor expresses happiness"
+msgid "Cantor expresses happiness"
 msgstr "Cantor hüpft von einem Bein auf das andere."
 
 #. §0: `sum_subset`
@@ -5563,9 +5553,8 @@ msgstr ""
 msgid "Intro Samarkand L06"
 msgstr "**Arapuka**: Und wie sieht es hiermit aus?"
 
-#. §0: `COMMENT`
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "§0 Ritha gives sighns to try omega"
+msgid "Ritha gives sighns to try omega"
 msgstr "Ritha macht wieder irgendwelche Zeichen."
 
 #. §0: `Odd.neg_pow`
@@ -5738,9 +5727,8 @@ msgstr ""
 msgid "Intro Logo L09"
 msgstr "Auftritt dritter Querulant."
 
-#. §0: `COMMENT`
 #: Game.Levels.Babylon.L04_sum_subset
-msgid "§0 Show that term in sum is zero for first three indexes"
+msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
 " **Robo**: Super!  Jetzt musst du nur noch zeigen, was du vorhin gesagt hattest: Der Ausdruck "
 "unter der Summe ist für die ersten drei Indizes Null."
@@ -6561,9 +6549,8 @@ msgstr ""
 "von solchen Doppelbändern abgeraten wird. Aber vielleicht sind sie ja unter bestimmten "
 "Voraussetzungen doch sicher? Was meint Ihr zu diesem Fall?"
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L04_ByContra
-msgid "§0 Use proof by contradiction"
+msgid "Use proof by contradiction"
 msgstr "**Robo**: Hier würde ich ebenfalls einen Widerspruchsbeweis anfangen."
 
 #. §0: `prod_insert`
@@ -6638,9 +6625,8 @@ msgstr "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwende
 msgid "§0 The square of an even number is also even."
 msgstr "Das Quadrat einer geraden Zahl ist gerade."
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L03_Apply
-msgid "§0 This should seem obvious now"
+msgid "This should seem obvious now"
 msgstr "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
 
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
@@ -7803,9 +7789,8 @@ msgstr ""
 msgid "Again employ §0"
 msgstr " **Robo**:  Dann solltest du vermutlich wieder §0 anwenden."
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L01_Have
-msgid "§0 Prove the assumption before using it"
+msgid "Prove the assumption before using it"
 msgstr ""
 " **Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?\n"
 "\n"
@@ -8553,9 +8538,8 @@ msgstr ""
 "\n"
 "**Robo**:  Ja, oder sogar  direkt §3?"
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L11_Iff
-msgid "§0 Goal is in assumptions"
+msgid "Goal is in assumptions"
 msgstr "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
 
 #. §0: `ℕ`
@@ -8860,9 +8844,8 @@ msgstr " **Robo**:  Den Rest schafft bestimmt §0."
 msgid "§0 Conclusion Quantus L01"
 msgstr "Ihr dreht das Blatt um."
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "§0 Remind of previous result"
+msgid "Remind of previous result"
 msgstr "**Robo**: Das hatten wir schon gesehen."
 
 #. §0: `omega`
@@ -9220,7 +9203,6 @@ msgstr ""
 "**Vieta**:  Nun, ich habe gelernt, immer zur richtigen Zeit an der richtigen Stelle zu stehen. "
 "Macht euch keine Sorgen."
 
-#. §0: `COMMENT`
 #: Game.Levels.Vieta.L03_Let
-msgid "§0 Try simplification"
+msgid "Try simplification"
 msgstr "**Du**: Zu was sich das wohl vereinfacht?"

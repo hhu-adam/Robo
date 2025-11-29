@@ -2265,9 +2265,8 @@ msgstr ""
 msgid "Intro Spinoza"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Prado.L10_EvenPrime
-msgid "§0 Remind former proof"
+msgid "Remind former proof"
 msgstr ""
 
 #. §0: `CONC`
@@ -2407,9 +2406,8 @@ msgid "With §0, you can write out the definition §1 in the proof goal.\n"
 "The tactics §7 and §8 do practically the same thing."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "§0 Try ext, tauto"
+msgid "Try ext, tauto"
 msgstr ""
 
 #: Game.Levels.Quantus.L07_Forall
@@ -2619,9 +2617,8 @@ msgid "Conclusion Spinoza L06: overview of planet's contents:\n"
 "§6 afterwards)."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Samarkand.L02_ImageMap
-msgid "§0 This can be simplified"
+msgid "This can be simplified"
 msgstr ""
 
 #: Game.Levels.Saturn.L04_mul_assoc
@@ -2705,9 +2702,8 @@ msgstr ""
 msgid "Robotswana"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Epo.L04_RightInverse
-msgid "§0 look through definitions"
+msgid "look through definitions"
 msgstr ""
 
 #. §0: `∀ (y : «{People}»), «{isDrinking}» y`
@@ -2965,9 +2961,8 @@ msgstr ""
 msgid "The name of mapping §0 is §1"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L06_Iff
-msgid "§0 parts available in assumptions"
+msgid "parts available in assumptions"
 msgstr ""
 
 #: Game.Levels.Logo.L05_True
@@ -3105,9 +3100,8 @@ msgstr ""
 msgid "§0 Conclusion Logo L04"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "§0 Explain statement"
+msgid "Explain statement"
 msgstr ""
 
 #. §0: `P : A → Prop`
@@ -3259,9 +3253,8 @@ msgid "The notation §0 is used to define “anonymous functions.”\n"
 "Alternatively, instead of §6 you can use §7."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Babylon.L09_Boss
-msgid "§0 this should work"
+msgid "this should work"
 msgstr ""
 
 #. §0: `not_odd_iff_even`
@@ -3413,9 +3406,8 @@ msgstr ""
 msgid "Intro Logo L13"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "§0 got to think about it..."
+msgid "got to think about it..."
 msgstr ""
 
 #: Game.Levels.Luna.L04_Omega2
@@ -3571,9 +3563,8 @@ msgstr ""
 msgid "Intro Quantus L02"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L03
-msgid "§0 Seems to be correct"
+msgid "Seems to be correct"
 msgstr ""
 
 #. §0: `CONC`
@@ -3658,9 +3649,8 @@ msgstr ""
 msgid "Intro Babylon L02"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Cantor.L02_CantorPowerset
-msgid "§0 Cantor expresses happiness"
+msgid "Cantor expresses happiness"
 msgstr ""
 
 #. §0: `sum_subset`
@@ -3681,9 +3671,8 @@ msgstr ""
 msgid "Intro Samarkand L06"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "§0 Ritha gives sighns to try omega"
+msgid "Ritha gives sighns to try omega"
 msgstr ""
 
 #. §0: `Odd.neg_pow`
@@ -3811,9 +3800,8 @@ msgstr ""
 msgid "Intro Logo L09"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Babylon.L04_sum_subset
-msgid "§0 Show that term in sum is zero for first three indexes"
+msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
 
 #. §0: `∃x, P x`
@@ -4354,9 +4342,8 @@ msgstr ""
 msgid "Intro Implis L06"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L04_ByContra
-msgid "§0 Use proof by contradiction"
+msgid "Use proof by contradiction"
 msgstr ""
 
 #. §0: `prod_insert`
@@ -4408,9 +4395,8 @@ msgstr ""
 msgid "§0 The square of an even number is also even."
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L03_Apply
-msgid "§0 This should seem obvious now"
+msgid "This should seem obvious now"
 msgstr ""
 
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
@@ -5190,9 +5176,8 @@ msgstr ""
 msgid "Again employ §0"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Spinoza.L01_Have
-msgid "§0 Prove the assumption before using it"
+msgid "Prove the assumption before using it"
 msgstr ""
 
 #. §0: `obtain`
@@ -5650,9 +5635,8 @@ msgstr ""
 msgid "Composition §0 can be written with §1. Try §2 or §3"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Implis.L11_Iff
-msgid "§0 Goal is in assumptions"
+msgid "Goal is in assumptions"
 msgstr ""
 
 #. §0: `ℕ`
@@ -5837,9 +5821,8 @@ msgstr ""
 msgid "§0 Conclusion Quantus L01"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "§0 Remind of previous result"
+msgid "Remind of previous result"
 msgstr ""
 
 #. §0: `omega`
@@ -6056,7 +6039,6 @@ msgstr ""
 msgid "Intro Vieta"
 msgstr ""
 
-#. §0: `COMMENT`
 #: Game.Levels.Vieta.L03_Let
-msgid "§0 Try simplification"
+msgid "Try simplification"
 msgstr ""
