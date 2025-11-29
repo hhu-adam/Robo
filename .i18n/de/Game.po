@@ -964,9 +964,8 @@ msgstr ""
 msgid "Intro Euklid L01"
 msgstr "An der markierten Stelle steht folgendes:"
 
-#. §0: `CONC`
 #: Game.Levels.Logo.L06_Not
-msgid "§0 Conclusion Logo L06"
+msgid "Conclusion Logo L06"
 msgstr "Die Schwester lacht und eilt ihrem Bruder hinterher."
 
 #. §0: `funext r s`
@@ -1430,9 +1429,8 @@ msgstr ""
 "Zeichen! Das erste wird ausschließlich für „teilt“ verwendet, das andere kommt zum Beispiel in "
 "der Syntax §5 vor."
 
-#. §0: `COMMENT`
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "§0"
+msgid "This looks good!"
 msgstr ""
 "Cantor reibt sich die Hände.\n"
 "\n"
@@ -3436,9 +3434,8 @@ msgstr ""
 msgid "Quantus"
 msgstr "Quantus"
 
-#. §0: `INTRO`
 #: Game.Levels.Spinoza
-msgid "§0 Intro Spinoza"
+msgid "Intro Spinoza"
 msgstr ""
 "**Robo**: Ich glaube, das ist Spinoza, einer der ganz wenigen Asteroiden vom Type QED. "
 "Schnell. Wir müssen uns ein bisschen beeilen, sonst verpassen wir ihn.\n"
@@ -3538,9 +3535,8 @@ msgstr ""
 msgid "§0 Conclusion Samarkand L06"
 msgstr "**Arapuka**: Ihr habt recht.  Da hätte ich selbst drauf kommen können."
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "§0 Intro Robotswana L04"
+msgid "Intro Robotswana L04"
 msgstr ""
 "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen Fläche "
 "heruntergetrampelt ist. Spuren führen kreuz und queer und in verschiedene Richtungen weg.\n"
@@ -3588,9 +3584,8 @@ msgstr "**Robo**: Warum beginnst du nicht mit §0?"
 msgid "Spinoza"
 msgstr "Spinoza"
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L02_Simp
-msgid "§0 Intro Piazza L02"
+msgid "Intro Piazza L02"
 msgstr "**Mem**:  Wie wärs denn hiermit?"
 
 #. §0: `if_pos`
@@ -3633,9 +3628,8 @@ msgstr ""
 "\n"
 "Ritha macht eine unanständige Grimasse."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L07_Contradiction
-msgid "§0 Intro Logo L07"
+msgid "Intro Logo L07"
 msgstr "Als nächstes kommen drei Querulanten. Der erste hat folgendes Problem:"
 
 #. §0: `unfold F`
@@ -3676,9 +3670,8 @@ msgstr ""
 msgid "§0 Try ext, tauto"
 msgstr "**Robo**: Ab hier müsste das Schema von eben wieder passen."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L07_Forall
-msgid "§0 Intro Quantus L07"
+msgid "Intro Quantus L07"
 msgstr "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu Euch."
 
 #. §0: `intro`
@@ -3697,9 +3690,8 @@ msgstr ""
 "\n"
 "Er legt ein paar Blätter zur Seite."
 
-#. §0: `INTRO`
 #: Game.Levels.Spinoza.L02_Suffices
-msgid "§0 Intro Spinoza L02"
+msgid "Intro Spinoza L02"
 msgstr ""
 "**Benedictus**: Ihr hättet natürlich auch erst das Hauptresultat und dann das Zwischenresultat "
 "beweisen können. Das könnt Ihr ja mal an dieser Aufgabe probieren, die ist ganz ähnlich."
@@ -3728,9 +3720,8 @@ msgstr ""
 "\n"
 "**Du**: Weiß ich doch."
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L08_Rw
-msgid "§0 Intro Implis L08"
+msgid "Intro Implis L08"
 msgstr "**Operationsleiter**: Hier, könnt ihr dazu auch was sagen?"
 
 #. §0: ```
@@ -3770,9 +3761,8 @@ msgstr ""
 "\n"
 "(Hier ist §9 ein Prädikat, das von zwei Variablen §10 und §11 abhängt.)"
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L09_Boss
-msgid "§0 Intro Babylon L09"
+msgid "Intro Babylon L09"
 msgstr ""
 "Ihr seid noch nicht weit gegangen, da kommt hinter einem Turm plötzlich ein besonders großer "
 "Babylonier hervor, stellt sich euch in den Weg, schaut euch finster an und fordert in tiefer "
@@ -3838,9 +3828,8 @@ msgstr ""
 msgid "Definitely use §0"
 msgstr "**Ritha**:  Probier unbedingt mal §0."
 
-#. §0: `INTRO`
 #: Game.Levels.Luna
-msgid "§0 Intro Luna"
+msgid "Intro Luna"
 msgstr ""
 "Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert. Er hat eine ganz glatte "
 "Oberfläche, aber an einer Stelle hat die Oberfläche eine kleine Öffnung, von der eine Treppe "
@@ -3870,9 +3859,8 @@ msgstr ""
 msgid "§0 Conclusion Luna L04"
 msgstr "**Lina**:  Ja, okay, mein Fehler."
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-msgid "§0 Intro Samarkand L01"
+msgid "Intro Samarkand L01"
 msgstr ""
 "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke. Vielleicht "
 "könnte ihr mir ja helfen.  Zum Beispiel: …\n"
@@ -3931,9 +3919,8 @@ msgstr ""
 msgid "Use the result §0"
 msgstr "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß §0."
 
-#. §0: `INTRO`
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-msgid "§0 Intro Euklid L04"
+msgid "Intro Euklid L04"
 msgstr ""
 "Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet ihr euch in "
 "einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
@@ -4021,9 +4008,8 @@ msgstr ""
 msgid "§0 This can be simplified"
 msgstr " **Robo**:  Das kann man bestimmt leicht vereinfachen …"
 
-#. §0: `INTRO`
 #: Game.Levels.Saturn.L04_mul_assoc
-msgid "§0 Intro Saturn L04"
+msgid "Intro Saturn L04"
 msgstr "Noch ein Funkspruch."
 
 #. §0: `cantor_diagonal`
@@ -4058,9 +4044,8 @@ msgstr ""
 "**Robo**: Nein, nein, ein Widerspruchsbeweis sieht anders aus. Das Argument hier war: wir "
 "haben eine §0 in unserem Annahmen, also folgt jede beliebige Aussage."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L03_Assumption
-msgid "§0 Intro Logo L03"
+msgid "Intro Logo L03"
 msgstr ""
 "Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne. Es "
 "ist schüchtern und schreibt bloß."
@@ -4118,14 +4103,12 @@ msgstr " **Fin**: Mach doch eine Fallunterscheidung, ob §0 ist oder nicht."
 msgid "§0 Explore an alien universe with the Smart-Elf Robo!"
 msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L09_lt_trichotomy2
-msgid "§0 Intro Luna L09"
+msgid "Intro Luna L09"
 msgstr "**Lina**:  Jetzt ich wieder."
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L04_sum_subset
-msgid "§0 Intro Babylon L04"
+msgid "Intro Babylon L04"
 msgstr ""
 "Ihr wandert weiter von Turm zu Turm.  Schließlich bleibst du an einem Turm stehen, der dir "
 "seltsam vorkommt.  Nachdem ihr einmal um ihn herumgelaufen seid, weißt du auch, warum: Es "
@@ -4167,15 +4150,13 @@ msgstr ""
 "\n"
 "*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L08_subset_iff
-msgid "§0 Intro Piazza L08"
+msgid "Intro Piazza L08"
 msgstr ""
 "**Sub**:  Du hast Recht. Wir sollten die Besucher mal etwas mehr über Inklusionen ausfragen."
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L02_Function
-msgid "§0 Intro Vieta L02"
+msgid "Intro Vieta L02"
 msgstr "Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Blatt."
 
 #. §0: `obtain`
@@ -4357,9 +4338,8 @@ msgstr ""
 "\n"
 "**Robo**: Mit §3 kannst du dieses §4 tatsächlich einführen."
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L01_Intro
-msgid "§0 Intro Implis L01"
+msgid "Intro Implis L01"
 msgstr "**Operationsleiter**: Hier, zum Beispiel:"
 
 #. §0: `RightInverse`
@@ -4496,14 +4476,12 @@ msgstr ""
 "**Vieta**:  Bravo!  Jetzt aber nichts wie weg von hier. Hier gehts lang.  Ich bring euch "
 "zurück zum Raumschiff."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L04_Assumption
-msgid "§0 Intro Logo L04"
+msgid "Intro Logo L04"
 msgstr "Ein dritter Untertan kommt mit folgendem Problem."
 
-#. §0: `INTRO`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-msgid "§0 Intro Euklid L03"
+msgid "Intro Euklid L03"
 msgstr ""
 "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden. Robo hat "
 "angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent."
@@ -4522,9 +4500,8 @@ msgstr ""
 msgid "§0 parts available in assumptions"
 msgstr "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L05_True
-msgid "§0 Intro Logo L05"
+msgid "Intro Logo L05"
 msgstr "Der nächste Untertan in der Reihe ist ein Schelm."
 
 #. §0: `CONC`
@@ -4602,23 +4579,20 @@ msgstr ""
 "und alles bricht zusammen. Aber ich bin sehr vorsichtig. Ich sage immer: Lieber Stillstand als "
 "Untergang!"
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L05_Funext
-msgid "§0 Intro Vieta L05"
+msgid "Intro Vieta L05"
 msgstr ""
 "Vieta sieht sich vorsichtig um, bleibt dann aber doch stehen. Er reicht euch ruhig das nächste "
 "Blatt."
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L01_Sum_Simp_Card
-msgid "§0 Intro Babylon L01"
+msgid "Intro Babylon L01"
 msgstr ""
 "**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum "
 "er steht. Hier zum Beispiel."
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-msgid "§0 Intro Babylon L06"
+msgid "Intro Babylon L06"
 msgstr ""
 "**Babylonier**: Kommt, ich zeig euch mal einen unserer schönsten Türme!\n"
 "\n"
@@ -4641,9 +4615,8 @@ msgstr ""
 "\n"
 "Du schaust ihn fassungslos an. Er schreibt es dir wieder auf."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L05_neg_pow
-msgid "§0 Intro Quantus L05"
+msgid "Intro Quantus L05"
 msgstr "Eine weitere Frage erreicht euch.  Dieses stammt offenbar aus dem anderen Lager."
 
 #. §0: `n : ℕ`
@@ -4929,9 +4902,8 @@ msgstr ""
 "Für eine Abbildung §0 ist §1 eine der induzierten Abbildung auf den Potenzmengen – sie bildet "
 "eine Teilmenge von §2 ab auf das Bild §3 dieser Teilmenge unter §4."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L11_And
-msgid "§0 Intro Logo L11"
+msgid "Intro Logo L11"
 msgstr ""
 "Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes "
 "Anliegen."
@@ -4946,9 +4918,8 @@ msgstr ""
 "\n"
 "**Robo:** Ja, aber ich würde mit §0 und §1 anfangen."
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-msgid "§0 Intro Prado L06"
+msgid "Intro Prado L06"
 msgstr ""
 "**Du**:  Gut.  Und kannst du mir jetzt zeigen, wie man mit Primzahlen arbeitet?\n"
 "\n"
@@ -5202,9 +5173,8 @@ msgstr ""
 "**Robo**:  Ja, bis auf Notation. Aber zum Glück haben wir schon §2 gezeigt. Um das anzuwenden, "
 "musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit §3."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L13_Or
-msgid "§0 Intro Logo L13"
+msgid "Intro Logo L13"
 msgstr "Der nächste bitte …"
 
 #. §0: `COMMENT`
@@ -5212,9 +5182,8 @@ msgstr "Der nächste bitte …"
 msgid "§0 got to think about it..."
 msgstr "**Du**:  Mal überlegen …∪"
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L04_Omega2
-msgid "§0 Intro Luna L04"
+msgid "Intro Luna L04"
 msgstr "**Lina**:  Hier habe ich noch etwas."
 
 #. §0: `obtain`
@@ -5298,9 +5267,8 @@ msgstr ""
 "Für §0 bedeutet §1, dass §2 eine Primzahl ist. Um mit dieser Definition zu arbeiten, ist es "
 "oft hilfreich, sie mit dem Lemma §3 umzuschreiben."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus
-msgid "§0 Intro Quantus"
+msgid "Intro Quantus"
 msgstr ""
 "Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosopheninnen. Sie reden alle "
 "wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen. Robo produziert "
@@ -5343,9 +5311,8 @@ msgstr ""
 msgid "And yet again §0"
 msgstr " **Robo**:  Genau, und jetzt wieder §0."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L12_insert
-msgid "§0 Intro Piazza L12"
+msgid "Intro Piazza L12"
 msgstr "**Fin**:  Richtig.   Und jetzt lege ich meine Pistazie wieder zurück."
 
 #. §0: `by_contra`
@@ -5378,9 +5345,8 @@ msgstr ""
 "Für eine Selbstabbildung §0 und ein Element §1 ist §2 die Aussage §3. Du kannst die Definition "
 "mit §4 leicht ausschreiben."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L06_not_even_iff_odd
-msgid "§0 Intro Quantus L06"
+msgid "Intro Quantus L06"
 msgstr ""
 "Sofort taucht das nächste Blatt auf. Es scheint, als hätten sie sich diesmal auf einen "
 "Kompromiss geeignet."
@@ -5454,9 +5420,8 @@ msgstr ""
 "\n"
 "**Robo** *(zu dir)*: Probier mal §0.  Oder gleich §1."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L02_NonemptyObtain
-msgid "§0 Intro Quantus L02"
+msgid "Intro Quantus L02"
 msgstr "Auf der Rückseite steht folgendes."
 
 #. §0: `COMMENT`
@@ -5570,9 +5535,8 @@ msgstr ""
 "**Robo**:  Aus den Annahmen muss ja irgendwie folgen §0 oder §1 oder §2. Vielleicht "
 "formulierst du das mit §3 explizit aus."
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L02_Card2
-msgid "§0 Intro Babylon L02"
+msgid "Intro Babylon L02"
 msgstr "Ihr schaut euch zusammen den nächsten Turm an."
 
 #. §0: `COMMENT`
@@ -5595,9 +5559,8 @@ msgid "§0 Conclusion Logo L02"
 msgstr ""
 "**Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich immer. Rfl, rfl, rfl …"
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L06_PreimageNonempty
-msgid "§0 Intro Samarkand L06"
+msgid "Intro Samarkand L06"
 msgstr "**Arapuka**: Und wie sieht es hiermit aus?"
 
 #. §0: `COMMENT`
@@ -5703,19 +5666,16 @@ msgstr ""
 msgid "Approach §0 with §1"
 msgstr "**Robo**: Jetzt kannst du das §0 im Goal mit §1 angehen."
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L03_Let
-msgid "§0 Intro Vieta L03"
+msgid "Intro Vieta L03"
 msgstr "Wieder ein Pfeil.  Und noch eine Aufgabe."
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L08_Omega3
-msgid "§0 Intro Luna L08"
+msgid "Intro Luna L08"
 msgstr "**Ritha**:  Jetzt ich wieder!"
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L10_And
-msgid "§0 Intro Logo L10"
+msgid "Intro Logo L10"
 msgstr ""
 "Der nächste Formalosoph in der Reihe hat seine Frage bereits mitgebracht. Er legt sie uns vor, "
 "setzt sich hin und häkelt."
@@ -5774,9 +5734,8 @@ msgstr ""
 "\n"
 "Du schreibst §17 als §18."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L09_Contradiction
-msgid "§0 Intro Logo L09"
+msgid "Intro Logo L09"
 msgstr "Auftritt dritter Querulant."
 
 #. §0: `COMMENT`
@@ -5876,9 +5835,8 @@ msgstr ""
 "allen Element von §5, die nicht in §6 liegen, so ist die Summe über §7 gleich der Summe über "
 "§8."
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L04_Apply
-msgid "§0 Intro Implis L04"
+msgid "Intro Implis L04"
 msgstr "**Operationsleiter**: Das hier ist jetzt wieder ein lokales Problem."
 
 #. §0: $$ \\sum_{i \\in I} \\left( (-1)^i + 1 \\right) $$
@@ -6034,9 +5992,8 @@ msgstr ""
 "**Robo**: Nein, §1 funktioniert nur in speziellen Situationen, in denen es einen einfachen "
 "Algorithmus gibt, der entscheidet, ob die Aussage wahr ist."
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L02_ImageMap
-msgid "§0 Intro Samarkand L02"
+msgid "Intro Samarkand L02"
 msgstr "Arapuka diktiert euch noch eine Aufgabe."
 
 #. §0: `«{A}»`
@@ -6047,9 +6004,8 @@ msgstr ""
 " **Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht "
 "„kontruierst“ du dir das einmal mit §1."
 
-#. §0: `INTRO`
 #: Game.Levels.Saturn
-msgid "§0 Intro Saturn"
+msgid "Intro Saturn"
 msgstr ""
 "Diesen Planeten wolltet ihr eigentlich gar nicht ansteuern. Aber ihr wart mit den Gedanken "
 "nicht ganz bei der Sache. Und man darf in Universen nicht unaufmerksam sein, erst recht nicht, "
@@ -6434,14 +6390,12 @@ msgstr ""
 msgid "Look at §0"
 msgstr "**Robo**: Schau mal §0 an."
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L01_NonemptyUse
-msgid "§0 Intro Quantus L01"
+msgid "Intro Quantus L01"
 msgstr "Auf der Vorderseite steht folgendes."
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-msgid "§0 Intro Samarkand L04"
+msgid "Intro Samarkand L04"
 msgstr "**Arapuka**:  Könnt ihr mir vielleicht hiermit auch noch helfen?"
 
 #. §0: `CONC`
@@ -6465,9 +6419,8 @@ msgstr ""
 "§0 bedeutet, dass §1 eine Teilmenge von §2 ist (oder genauer, dass §3 eine Menge ist, die aus "
 "Elementen vom Typ §4 besteht)."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo
-msgid "§0 Intro Logo"
+msgid "Intro Logo"
 msgstr ""
 "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit bist du aus "
 "Versehen in ein Paralleluniversum gestolpert. Wie es aussieht, gibt es kein zurück. Richte "
@@ -6501,9 +6454,8 @@ msgstr ""
 "Beschreibung §1 von Injektivität benutzt. In Leansch ist das Teil von §2:  für injektive "
 "Abbildungen gilt §3."
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-msgid "§0 Intro Samarkand L08"
+msgid "Intro Samarkand L08"
 msgstr "**Arapuka**:  Könnt ihr mir vielleicht sogar mit dieser Vermutung weiterhelfen?"
 
 #. §0: `constructor`
@@ -6553,9 +6505,8 @@ msgstr ""
 msgid "Instead of this theorem you can use §0. §1"
 msgstr "Statt diesem Theorem kannst du §0 verwenden."
 
-#. §0: `INTRO`
 #: Game.Levels.Spinoza.L06_Summary
-msgid "§0 Intro Spinoza L06"
+msgid "Intro Spinoza L06"
 msgstr ""
 "**Du**: Aber hätten wir die letzte Aufgabe nicht genauso gut per Widerspruch beweisen können?\n"
 "\n"
@@ -6602,9 +6553,8 @@ msgstr ""
 "\n"
 "**Robo** *(flüsternd)*: Könnte man so sehen. Aber auf Leansch ist das bloß eine Äquivalenz."
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L06_Iff
-msgid "§0 Intro Implis L06"
+msgid "Intro Implis L06"
 msgstr ""
 "**Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen "
 "laufen konnten. Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern "
@@ -6693,9 +6643,8 @@ msgstr "Das Quadrat einer geraden Zahl ist gerade."
 msgid "§0 This should seem obvious now"
 msgstr "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "§0 Intro Luna L06"
+msgid "Intro Luna L06"
 msgstr "**Ritha**:  Kann ich auch mal?  Hier."
 
 #. §0: `IsFixedPt`
@@ -6709,9 +6658,8 @@ msgstr ""
 "**Robo**:  §0 soll vermutlich “is fixed point” heißen. Jedenfalls bedeutet §1 offenbar gerade "
 "§2."
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-msgid "§0 Intro Prado L05"
+msgid "Intro Prado L05"
 msgstr ""
 "**Du** *(zu Robo)*:  Gib mir mal wieder etwas Interessanteres!\n"
 "\n"
@@ -6727,9 +6675,8 @@ msgstr " **Robo**: Und jetzt §0.  Du hättest sogar direkt §1 nehmen können."
 msgid "Saturn"
 msgstr "Saturn"
 
-#. §0: `INTRO`
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "§0 Intro Samarkand L07"
+msgid "Intro Samarkand L07"
 msgstr "**Arapuka**:  Jetzt habe ich aber noch eine wirklich schwierige Aufgabe."
 
 #: GameServer.RpcHandlers
@@ -6840,9 +6787,8 @@ msgid "§0 Disect again"
 msgstr "**Robo**: Das UND auch noch!"
 
 #. §0: `rw`
-#. §1: `INTRO`
 #: Game.Levels.Implis.L10_Iff
-msgid "Intro Implis L10: §0 is not allowed here as well §1"
+msgid "Intro Implis L10: §0 is not allowed here as well"
 msgstr ""
 "**Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen. Ich glaube, §0 mag "
 "der auch nicht. Geht das trotzdem?"
@@ -6991,9 +6937,8 @@ msgstr ""
 "\n"
 "§1"
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L04_Let
-msgid "§0 Intro Vieta L04"
+msgid "Intro Vieta L04"
 msgstr ""
 "**Vieta**:  Jetzt müssen wir mal ein Stück hier rüber gehen.\n"
 "\n"
@@ -7023,9 +6968,8 @@ msgstr ""
 "\n"
 "  **Arapuka**:  Das ist eben die Kunst!"
 
-#. §0: `INTRO-2`
 #: Game.Levels.Cantor.L09_CantorDiag
-msgid "§0Intro Cantor L09 - 2"
+msgid "Intro Cantor L09 - 2"
 msgstr ""
 "**Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel! Ihr müsst die Aussage von "
 "eben nur ein bisschen umformulieren.\n"
@@ -7056,9 +7000,8 @@ msgstr ""
 "Er faltet den Zettel auf, reißt vorsichtig die oberste Zeile ab, und lässt sie zu euch "
 "hinuntersegeln. Dann beugt er sich neugierig über den Bühnenrand, um zu sehen, was ihr macht."
 
-#. §0: `INTRO`
 #: Game.Levels.Mono.L01_Injective
-msgid "§0 Intro Mono L01"
+msgid "Intro Mono L01"
 msgstr ""
 "Ganz oben sind tatsächlich wieder viele Formalosophen versammelt. Sie heißen euch freudig "
 "willkommen, und kommen dann gleich zur Sache."
@@ -7097,9 +7040,8 @@ msgstr ""
 "\n"
 "**Robo**: Doch, doch. Schau mal mit §0 in die Definition von §1 hinein."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L09_subset_iff2
-msgid "§0 Intro Piazza L09"
+msgid "Intro Piazza L09"
 msgstr ""
 "**Sub**:  So, so.  Nur eine Definition! Und wenn ihr nun mit solchen Inklusionen arbeiten "
 "sollt?"
@@ -7141,9 +7083,8 @@ msgstr ""
 "\n"
 "**Robo**: Ja, aber nicht ganz. Führ das doch mit §2 ein und zeig das kurz!"
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L11_erase
-msgid "§0 Intro Piazza L11"
+msgid "Intro Piazza L11"
 msgstr ""
 "**Mem**:  Hey, Fin, wachst machst Du denn da?\n"
 "\n"
@@ -7252,9 +7193,8 @@ msgstr ""
 "**Robo**:  Ich glaube, du musst §2 nur etwas auf die Sprünge helfen. Lös am besten erst einmal "
 "ganz kanonisch die beiden Implikationen mit §3 auf."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
-msgid "§0 Intro Piazza L05"
+msgid "Intro Piazza L05"
 msgstr "**Mem:** Findet ihr diese Aussage auch wieder verwirrend?"
 
 #. §0: `Surjective f`
@@ -7402,9 +7342,8 @@ msgstr ""
 "Für eine endliche Teilmenge §0 und ein Element §1 ist §2 eine andere Schreibweise für §3. "
 "Falls §4 gar nicht in §5 liegt, ist offenbar §6."
 
-#. §0: `INTRO`
 #: Game.Levels.Cantor
-msgid "§0 Intro Cantor"
+msgid "Intro Cantor"
 msgstr ""
 "Ihr seid neben einem großen Zelt gelandet.  Vielleicht ein Zirkuszelt? Drinnen ist es recht "
 "dunkel.  Nur eine Bühne ist hell erleuchtet. Darauf steht ein Herr, der wie eine Mischung aus "
@@ -7422,9 +7361,8 @@ msgstr ""
 msgid "§0 might suffice"
 msgstr "**Robo**:  Das ist hier alles so konkret, vielleicht reicht §0."
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L12_ByCases
-msgid "§0 Intro Implis L12"
+msgid "Intro Implis L12"
 msgstr ""
 "Beim nächsten Problem stutzt der Operationsleiter.\n"
 "\n"
@@ -7576,9 +7514,8 @@ msgstr ""
 "nicht, dass Ihr damit auf *diesem* Planeten viel weiterkommt! Meine Untertanen verstehen §0 "
 "nicht. Da müsst Ihr Euch schon etwas mehr anstrengen."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza
-msgid "§0 Intro Piazza"
+msgid "Intro Piazza"
 msgstr ""
 "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre "
 "Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, "
@@ -7668,14 +7605,12 @@ msgstr ""
 "Jede der drei folgenden Taktiken bzw. Taktiksequenzen hat also denselben Effekt: * §8 * §9 * "
 "§10"
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
-msgid "§0 Intro Babylon L08"
+msgid "Intro Babylon L08"
 msgstr "Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an."
 
-#. §0: `INTRO`
 #: Game.Levels.Spinoza.L01_Have
-msgid "§0 Intro Spinoza L01"
+msgid "Intro Spinoza L01"
 msgstr "**Benedictus**: Hier, schaut mal. Das habe ich für Euch vorbereitet."
 
 #. §0: `«{h}»`
@@ -7728,9 +7663,8 @@ msgstr ""
 "eine Annahme. §4 nimmt umgekehrt eine Annahme und setzt sie als Implikationsprämisse vor das "
 "Beweisziel. Aber nun mach schon fertig."
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana.L02_EBasis
-msgid "§0 Intro Robotswana L02"
+msgid "Intro Robotswana L02"
 msgstr ""
 "Kurze Zeit später findet ihr zwei sehr ähnlichen Zettel, wieder vollgekritzelt, fast alles "
 "durchgestrichen. Die erste Zeile aber lässt sich jeweils gerade noch ausmachen."
@@ -7836,9 +7770,8 @@ msgstr ""
 "die Abbildung, die eine Teilmenge von §3 auf die entsprechende Bildmenge in §4 wirft, also §5 "
 "Du kannst also §6 durch §7 ausdrücken, aber nicht umgekehrt."
 
-#. §0: `INTRO`
 #: Game.Levels.Euklid.L02_prod_insert
-msgid "§0 Intro Euklid L02"
+msgid "Intro Euklid L02"
 msgstr ""
 "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde."
 
@@ -8006,9 +7939,8 @@ msgstr ""
 msgid "Begin with §0"
 msgstr " **Robo**:  Fang doch noch einmal mit §0 an!"
 
-#. §0: `INTRO`
 #: Game.Levels.Epo.L01_Surjective
-msgid "§0 Intro Epo L01"
+msgid "Intro Epo L01"
 msgstr ""
 "Die Fahrt ist tatsächlich kurz und schmerzlos. Und euch wird tatsächlich ein großen Empfang "
 "bereitet. Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufgaben "
@@ -8072,9 +8004,8 @@ msgstr ""
 "Für eine Abbildung §0 und eine Teilmenge §1 von §2 ist §3 ihr Urbild unter §4. Du schreibst "
 "das als §5. Beachte das Leerzeichen zwischen §6 und §7."
 
-#. §0: `INTRO`
 #: Game.Levels.Luna.L05_Linarith2
-msgid "§0 Intro Luna L05"
+msgid "Intro Luna L05"
 msgstr "**Lina:** Nochmal dieselbe Frage, aber jetzt in ℝ!"
 
 #. §0: `diag`
@@ -8146,9 +8077,8 @@ msgstr ""
 "\n"
 "**Robo**: Dann benutz sie mal §0!"
 
-#. §0: `INTRO`
 #: Game.Levels.Robotswana
-msgid "§0 Intro Robotswana"
+msgid "Intro Robotswana"
 msgstr ""
 "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslandschaft hinaus.\n"
 "\n"
@@ -8278,9 +8208,8 @@ msgstr ""
 "\n"
 "**Robo**: Dann schreibst du ein §0 (§1, also klein \"L\") vor den Namen, also §2."
 
-#. §0: `INTRO`
 #: Game.Levels.Spinoza.L03_ByContra
-msgid "§0 Intro Spinoza L03"
+msgid "Intro Spinoza L03"
 msgstr "**Benedictus**: Hier ist noch eine Variante."
 
 #. §0: `CONC-1`
@@ -8536,9 +8465,8 @@ msgstr ""
 msgid "Try §0 or again §1"
 msgstr "**Robo** Hier könntest du §0 verwenden.  Oder *wieder* §1 …"
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L04_99
-msgid "§0 Intro Prado L04"
+msgid "Intro Prado L04"
 msgstr ""
 "Guino wirkt inzwischen ein wenig irritiert, dass ihr gar keinen Augen für sein tolles Museum "
 "habt. Er fühlt sich ignoriert. Um eure Aufmerksamkeit zu bekommen, gibt er euch folgende "
@@ -8578,9 +8506,8 @@ msgstr ""
 "**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable "
 "(§4) und -hypothese (§5) vorgeben."
 
-#. §0: `INTRO`
 #: Game.Levels.Prado.L10_EvenPrime
-msgid "§0 Intro Prado L10"
+msgid "Intro Prado L10"
 msgstr ""
 "Inzwischen seid ihr auf der Dachterasse angekommen. Aber Guino hat es inzwischen aufgegeben, "
 "alle architektonischen Details zu erklären. Die Aussicht ist nicht schlecht.\n"
@@ -8662,9 +8589,8 @@ msgstr ""
 "\n"
 "**Robo**:  Stimmt.  Irgendeine Kombination von §0 und §1 sollte das schaffen."
 
-#. §0: `INTRO`
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "§0 Intro Piazza L07"
+msgid "Intro Piazza L07"
 msgstr "**Set**: Und ich mag diese Äquivalenz."
 
 #. §0: `apply`
@@ -8754,9 +8680,8 @@ msgstr ""
 msgid "Prove §0"
 msgstr " **Robo**: Jetzt kannst du also erst einmal §0 beweisen …"
 
-#. §0: `INTRO`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-msgid "§0 Intro Cantor L03"
+msgid "Intro Cantor L03"
 msgstr ""
 "**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ ist.\n"
 "\n"
@@ -8808,9 +8733,8 @@ msgstr ""
 "**Lina**: Außerdem muss man zum Beispiel wissen, dass §0 oder §1 für ganze Zahlen nichts "
 "anderes bedeutet als §2."
 
-#. §0: `INTRO`
 #: Game.Levels.Babylon
-msgid "§0 Intro Babylon"
+msgid "Intro Babylon"
 msgstr ""
 "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme gestapelt "
 "sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte feinsäuberlich auf "
@@ -8901,9 +8825,8 @@ msgstr ""
 "**Robo**:  Eine injektive Abbildung §0, die zu einer Abbildung §1 linksinvers ist, ist zur "
 "selben Abbildung auch rechtsinvers."
 
-#. §0: `INTRO`
 #: Game.Levels.Ciao
-msgid "§0 Intro Ciao"
+msgid "Intro Ciao"
 msgstr ""
 "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht "
 "haben?\n"
@@ -9015,9 +8938,8 @@ msgstr ""
 "\n"
 "**Robo**: Ja. Ich denke, wenn du mit §16 anfängst, geht der Rest wie von selbst.\n"
 
-#. §0: `INTRO`
 #: Game.Levels.Implis.L07_Symm
-msgid "§0 Intro Implis L07"
+msgid "Intro Implis L07"
 msgstr "**Operationsleiter**: Hier ist noch so etwas."
 
 #. §0: `f`
@@ -9084,9 +9006,8 @@ msgstr ""
 "**Du**: Okay, will ich mir merken.  Aber da die Abbildung hier nur Werte in ℕ annimmt, ist ja "
 "eigentlich nichts zu zeigen.\n"
 
-#. §0: `INTRO`
 #: Game.Levels.Quantus.L10_DrinkersParadox
-msgid "§0 Intro Quantus L10"
+msgid "Intro Quantus L10"
 msgstr ""
 "**Du**: Könnt ihr eigentlich immer nur im Chor oder durcheinander reden?\n"
 "\n"
@@ -9173,9 +9094,8 @@ msgstr ""
 "\n"
 "**Robo**: Ja, §0 versucht immer anschließend §1 aufzurufen, und das hat hier funktioniert."
 
-#. §0: `INTRO`
 #: Game.Levels.Logo.L08_Contradiction
-msgid "§0 Intro Logo L08"
+msgid "Intro Logo L08"
 msgstr "Auftritt zweiter Querulant."
 
 #. §0: ```
@@ -9243,9 +9163,8 @@ msgstr ""
 "\n"
 "**Du**:  Weiß nicht.  Wir können jedenfalls weitermachen."
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta.L10_Surjective
-msgid "§0 Intro Vieta L10"
+msgid "Intro Vieta L10"
 msgstr ""
 "Die Kampfgeräusche wirken inzwischen bedrohlich nahe. Ihr hört deutlich vernehmbar "
 "Kanonenschüsse. Und da saust auch schon wieder ein Pfeil an euch vorbei.\n"
@@ -9278,9 +9197,8 @@ msgid "Try using §0 and if nothing else helps, §1"
 msgstr ""
 " **Robo**: Vielleicht hilft hier mal wieder §0.  Und wenn gar nichts geht, probier mal §1."
 
-#. §0: `INTRO`
 #: Game.Levels.Vieta
-msgid "§0 Intro Vieta"
+msgid "Intro Vieta"
 msgstr ""
 "Hallo, ist da wer?  Ihr seid in einer Heide-Landschaft gelandet. Weit und breit ist niemand zu "
 "sehen.\n"
