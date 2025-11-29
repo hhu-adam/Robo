@@ -2543,9 +2543,8 @@ msgid "Intro Samarkand L01"
 msgstr ""
 
 #. §0: `tauto`
-#. §1: `DOC2`
 #: Game.Levels.Implis.L14_Summary
-msgid "In most cases §0 can be used to solve this kind of logical expression. §1"
+msgid "In most cases §0 can be used to solve this kind of logical expression."
 msgstr ""
 
 #. §0: `CONC`
@@ -4308,9 +4307,8 @@ msgid "Explain that §0 introduces statements §1, §2 und §3 as\n"
 msgstr ""
 
 #. §0: `push_neg`
-#. §1: `DOC2`
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "Instead of this theorem you can use §0. §1"
+msgid "Instead of this theorem you can use §0."
 msgstr ""
 
 #: Game.Levels.Spinoza.L06_Summary
@@ -4362,9 +4360,8 @@ msgstr ""
 msgid "Seperate factor §0 out of product by using §1"
 msgstr ""
 
-#. §0: `DOC`
 #: Game.Levels.Mono.L05_StrictMono
-msgid "§0 Every strictly monotonic mapping (between suitable domains and ranges) is injective."
+msgid "Every strictly monotonic mapping (between suitable domains and ranges) is injective."
 msgstr ""
 
 #. §0: `«{n}» : ℕ`
@@ -4390,9 +4387,8 @@ msgstr ""
 msgid "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden."
 msgstr ""
 
-#. §0: `DOC`
 #: Game.Levels.Quantus.L04_Exists
-msgid "§0 The square of an even number is also even."
+msgid "The square of an even number is also even."
 msgstr ""
 
 #: Game.Levels.Implis.L03_Apply

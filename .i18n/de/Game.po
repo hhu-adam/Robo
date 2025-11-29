@@ -3866,9 +3866,8 @@ msgstr ""
 "Sie diktiert euch eine Aussage. Robo schreibt sie auf."
 
 #. §0: `tauto`
-#. §1: `DOC2`
 #: Game.Levels.Implis.L14_Summary
-msgid "In most cases §0 can be used to solve this kind of logical expression. §1"
+msgid "In most cases §0 can be used to solve this kind of logical expression."
 msgstr "Oft kann auch §0 diese Art von logischen Ausdrücken lösen."
 
 #. §0: `CONC`
@@ -6488,9 +6487,8 @@ msgstr ""
 "**Robo**: Mach schon …"
 
 #. §0: `push_neg`
-#. §1: `DOC2`
 #: Game.Levels.Quantus.L09_PushNeg
-msgid "Instead of this theorem you can use §0. §1"
+msgid "Instead of this theorem you can use §0."
 msgstr "Statt diesem Theorem kannst du §0 verwenden."
 
 #: Game.Levels.Spinoza.L06_Summary
@@ -6572,9 +6570,8 @@ msgstr ""
 "\n"
 "**Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie §1."
 
-#. §0: `DOC`
 #: Game.Levels.Mono.L05_StrictMono
-msgid "§0 Every strictly monotonic mapping (between suitable domains and ranges) is injective."
+msgid "Every strictly monotonic mapping (between suitable domains and ranges) is injective."
 msgstr ""
 "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist "
 "injektiv."
@@ -6620,9 +6617,8 @@ msgstr ""
 msgid "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden."
 msgstr "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden."
 
-#. §0: `DOC`
 #: Game.Levels.Quantus.L04_Exists
-msgid "§0 The square of an even number is also even."
+msgid "The square of an even number is also even."
 msgstr "Das Quadrat einer geraden Zahl ist gerade."
 
 #: Game.Levels.Implis.L03_Apply
