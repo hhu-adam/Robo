@@ -10,7 +10,7 @@ Introduction "
   Robo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent.
 "
 -/
-Introduction "`INTRO` Intro Euklid L03"
+Introduction "Intro Euklid L03"
 
 open Finset
 namespace Nat
@@ -64,7 +64,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     Musst du leider noch einmal rekonstruieren, wie die Argumente gingen.
     "
   -/
-  Hint "`COMMENT` Try constructor"
+  Hint "Try constructor"
   constructor
   · -- Hint "**Robo**:  Hier sollte `Finset.prod_pos` wieder weiterhelfen."
     Hint "`Finset.prod_pos` is helpful here"
@@ -112,4 +112,4 @@ Conclusion "
   **Robo**: Folgen wir ihr!
  "
 -/
-Conclusion "`CONC` Conclusion Euklid L03"
+Conclusion "Conclusion Euklid L03"

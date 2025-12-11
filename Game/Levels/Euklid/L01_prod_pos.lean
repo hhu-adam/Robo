@@ -5,7 +5,7 @@ Level 1
 Title ""
 
 /- Introduction "An der markierten Stelle steht folgendes:" -/
-Introduction "`INTRO` Intro Euklid L01"
+Introduction "Intro Euklid L01"
 
 open Finset
 namespace Nat
@@ -23,7 +23,7 @@ Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := 
   Hint "**Robo**: Aber was danach kommt, ist wieder völliger Unsinn.
   Die Aussage selbst stimmt aber, denke ich. Komm, das schaffen wir selbst."
   -/
-  Hint "`COMMENT` The expression itself seems to be correct"
+  Hint "The expression itself seems to be correct"
   intro a ha
   specialize h a ha
   rw [prime_def] at h

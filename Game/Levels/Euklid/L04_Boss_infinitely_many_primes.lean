@@ -25,7 +25,7 @@ Schauen Sie, hier habe ich jetzt schließlich selbst angefangen,
 eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?
 "
 -/
-Introduction "`INTRO` Intro Euklid L04"
+Introduction "Intro Euklid L04"
 
 open Finset
 namespace Nat
@@ -97,4 +97,4 @@ Conclusion "Euklid ist begeistert und tanzt im Kreis.
 Er möchte euch fast nicht gehen lassen.
 Ihr versprecht, in Kontakt zu bleiben."
 -/
-Conclusion "`CONC` Conclusion Euklid L04"
+Conclusion "Conclusion Euklid L04"
