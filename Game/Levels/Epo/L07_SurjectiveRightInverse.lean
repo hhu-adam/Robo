@@ -41,4 +41,4 @@ Die funktionieren nämlich nur in eine Richtung.
 Zurück zum Raumschiff geht es also zu Fuß: erst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.
 "
 -/
-Conclusion "`CONC` Conclusion Epo L07"
+Conclusion "Conclusion Epo L07"

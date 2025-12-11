@@ -11,7 +11,7 @@ Die Fahrt ist tatsächlich kurz und schmerzlos.
 Und euch wird tatsächlich ein großen Empfang bereitet.
 Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufgaben konfrontiert."
 -/
-Introduction "`INTRO` Intro Epo L01"
+Introduction "Intro Epo L01"
 
 open Function
 

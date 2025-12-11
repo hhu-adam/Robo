@@ -19,7 +19,7 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
 
   **Robo**: Sieht so aus."
   -/
-  Hint "`COMMENT` look through definitions"
+  Hint "Look through definitions"
   /-
   Hint (hidden := true) "
   **Robo:**:  Ich würde tatsächlich wieder mit `constructor` anfangen.
