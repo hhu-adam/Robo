@@ -14,7 +14,7 @@ Introduction
 **Lina**: Probierts doch mal hiermit!
 "
 -/
-Introduction "`INTRO` Intro Luna L03"
+Introduction "Intro Luna L03"
 
 /--
 Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:

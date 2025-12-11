@@ -11,7 +11,7 @@ Title ""
 Introduction
 "**Ritha**:  Kann ich auch mal?  Hier."
 -/
-Introduction "`INTRO` Intro Luna L06"
+Introduction "Intro Luna L06"
 
 open Finset
 
@@ -46,7 +46,7 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   Hint "Try `simp` afterwards"
   simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
-  Hint "`COMMENT` Ritha gives sighns to try omega"
+  Hint "Ritha gives signs to try omega"
   omega
 
 

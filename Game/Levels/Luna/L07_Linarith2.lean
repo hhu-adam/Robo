@@ -52,4 +52,4 @@ Statement (x y : ℚ) (h₁ : 35/11 * y ≤ 35/2 - 22/21 * x) (h₂ : 8/9 * y �
   linarith
 
 -- Conclusion "**Du**: Nicht schlecht!"
-Conclusion "`CONC` Conclusion Luna L07"
+Conclusion "Conclusion Luna L07"

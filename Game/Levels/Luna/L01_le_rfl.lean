@@ -31,7 +31,7 @@ Conclusion "
   **Lina**:  Zugegeben, das war ein triviales Beispiel.
 "
 -/
-Conclusion "`CONC` Conclusion Luna L01"
+Conclusion "Conclusion Luna L01"
 
 
 /---/

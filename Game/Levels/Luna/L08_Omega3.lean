@@ -10,7 +10,7 @@ Introduction "
 **Ritha**:  Jetzt ich wieder!
 "
 -/
-Introduction "`INTRO` Intro Luna L08"
+Introduction "Intro Luna L08"
 
 open Finset
 Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by

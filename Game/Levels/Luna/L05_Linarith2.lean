@@ -13,7 +13,7 @@ Introduction "
   **Lina:** Nochmal dieselbe Frage, aber jetzt in ℝ!
 "
 -/
-Introduction "`INTRO` Intro Luna L05"
+Introduction "Intro Luna L05"
 
 Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
   /-

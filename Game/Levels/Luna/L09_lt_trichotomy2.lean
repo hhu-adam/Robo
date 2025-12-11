@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "`INTRO` Intro Luna L09"
+Introduction "Intro Luna L09"
 
 open Finset
 Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ b < a := by
@@ -48,4 +48,4 @@ Conclusion "
   Aber wenn ihr noch länger bleibt, bringt ihr unseren Tagesrhythmus völlig durcheinander.
   "
 -/
-Conclusion "`CONC` Conclusion Luna L09"
+Conclusion "Conclusion Luna L09"
