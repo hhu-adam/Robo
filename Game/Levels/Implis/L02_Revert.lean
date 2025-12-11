@@ -16,7 +16,7 @@ noch ein bisschen helfen könntet.
 Er übergibt Euch das oberste Blatt.
 "
 -/
-Introduction "`INTRO` Intro Implis L02"
+Introduction "Intro Implis L02"
 
 Statement (A B : Prop) (hA : A) (h : A → B) : B := by
   /-
@@ -48,7 +48,7 @@ Statement (A B : Prop) (hA : A) (h : A → B) : B := by
   assumption
 
 -- Conclusion "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
-Conclusion "`CONC` Conclusion Implis L02"
+Conclusion "Conclusion Implis L02"
 
 NewTactic revert
 DisabledTactic tauto

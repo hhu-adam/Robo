@@ -114,4 +114,4 @@ Der Operationsleiter sieht ihn entgeistert an.
 **Robo**: Keine Angst, ich verdaue nichts!
 "
 -/
-Conclusion "`CONC` Conclusion Implis L14"
+Conclusion "Conclusion Implis L14"

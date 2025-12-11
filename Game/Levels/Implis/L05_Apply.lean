@@ -89,6 +89,6 @@ Der Operationsleiter bedankt sich wieder artig. Er drückt wieder auf ein paar K
 und mit einem lauten Ratteln springen mehrere Förderbänder gleichzeitig wieder an.
 "
 -/
-Conclusion "`CONC` Conclusion Implis L05"
+Conclusion "Conclusion Implis L05"
 
 DisabledTactic tauto

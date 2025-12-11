@@ -11,7 +11,7 @@ Introduction
 **Operationsleiter**: Das hier ist jetzt wieder ein lokales Problem.
 "
 -/
-Introduction "`INTRO` Intro Implis L04"
+Introduction "Intro Implis L04"
 
 Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
   /-
@@ -55,7 +55,7 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
   assumption
 
 -- Conclusion "**Operationsleiter**: Ihr seid echt super!"
-Conclusion "`CONC` Conclusion Implis L04"
+Conclusion "Conclusion Implis L04"
 
 NewTactic «have»  -- introduced here already so that Luna becomes independent of Spinoza
 DisabledTactic tauto

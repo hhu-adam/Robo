@@ -45,7 +45,7 @@ Statement (A B : Prop) : (A ↔ B) → (A → B) := by
     Hint "Try `rw [←{h}]` | `apply {h}.mp`. Go step back s.t. goal `A → B`"
   obtain ⟨mp, _mpr⟩ := h
   -- Hint (hidden := true) "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
-  Hint (hidden := true) "`COMMENT` Goal is in assumptions"
+  Hint (hidden := true) "Goal is in assumptions"
   assumption
 
 /-
@@ -54,7 +54,7 @@ Conclusion
 **Operationsleiter**: Perfekt, das sollte reichen!
 "
 -/
-Conclusion "`CONC` Conclusion Implis L11"
+Conclusion "Conclusion Implis L11"
 
 OnlyTactic intro obtain assumption
 DisabledTactic rw apply tauto

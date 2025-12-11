@@ -35,7 +35,7 @@ Conclusion
 **Du**:  Weiß nicht.  Wir können jedenfalls weitermachen.
 "
 -/
-Conclusion "`CONC` Conclusion Implis L09"
+Conclusion "Conclusion Implis L09"
 
 NewTactic trans
 

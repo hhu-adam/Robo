@@ -11,7 +11,7 @@ Introduction
 **Operationsleiter**: Hier, könnt ihr dazu auch was sagen?
 "
 -/
-Introduction "`INTRO` Intro Implis L08"
+Introduction "Intro Implis L08"
 
 Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : B ↔ C := by
   /-
@@ -54,7 +54,7 @@ Conclusion
 **Operationsleiter**: Wenn Ihr so weitermacht, dann kommen wir ja durch den ganzen Packen durch!
 "
 -/
-Conclusion "`CONC` Conclusion Implis L08"
+Conclusion "Conclusion Implis L08"
 
 NewTactic rw
 NewHiddenTactic nth_rw

@@ -39,11 +39,11 @@ Statement (A B : Prop) (h : A) (hAB : A → B) : B := by
     assumption
   apply hAB at h
   -- Hint "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
-  Hint "`COMMENT` This should seem obvious now"
+  Hint "This should seem obvious now"
   assumption
 
 -- Conclusion "Diesmal scheint das Telefonat erfolgreich zu verlaufen."
-Conclusion "`CONC` Conclusion Implis L03"
+Conclusion "Conclusion Implis L03"
 
 NewTactic apply
 DisabledTactic revert tauto

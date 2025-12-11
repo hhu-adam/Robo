@@ -14,7 +14,7 @@ solchen Doppelbändern abgeraten wird. Aber vielleicht sind sie ja unter bestimm
 Voraussetzungen doch sicher? Was meint Ihr zu diesem Fall?
 "
 -/
-Introduction "`INTRO` Intro Implis L06"
+Introduction "Intro Implis L06"
 
 Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
   /-
@@ -30,7 +30,7 @@ Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
   It is a similar defintion to `A ∧ B`. Start with `constructor`"
   constructor
   -- Hint "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
-  Hint "`COMMENT` parts available in assumptions"
+  Hint "Parts available in assumptions"
   assumption
   assumption
 

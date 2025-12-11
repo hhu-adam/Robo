@@ -12,7 +12,7 @@ Introduction
 `rw` mag der auch nicht. Geht das trotzdem?
 "
 -/
-Introduction "Intro Implis L10: `rw` is not allowed here as well `INTRO`"
+Introduction "Intro Implis L10: `rw` is not allowed here as well "
 
 Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   /-
@@ -55,6 +55,6 @@ Er telefoniert wieder.
 **Operationsleiter**: Bingo!
 "
 -/
-Conclusion "`CONC` Conclusion Implis L10"
+Conclusion "Conclusion Implis L10"
 
 DisabledTactic tauto rw

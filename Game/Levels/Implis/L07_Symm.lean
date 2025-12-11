@@ -11,7 +11,7 @@ Introduction
 **Operationsleiter**: Hier ist noch so etwas.
 "
 -/
-Introduction "`INTRO` Intro Implis L07"
+Introduction "Intro Implis L07"
 
 Statement (A B : Prop) (h : A ↔ B) : B ↔ A := by
   /-
@@ -34,7 +34,7 @@ Conclusion
 **Operationsleiter**: Das war ja symmpel. Das nächste Problem sieht aber schwieriger aus.
 "
 -/
-Conclusion "`CONC` Conclusion Implis L07"
+Conclusion "Conclusion Implis L07"
 
 NewTactic symm
 DisabledTactic tauto

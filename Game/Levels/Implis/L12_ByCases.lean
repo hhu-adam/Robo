@@ -14,7 +14,7 @@ Beim nächsten Problem stutzt der Operationsleiter.
 gar nicht von mir. Sieht aber irgendwie interessant aus.
 "
 -/
-Introduction "`INTRO` Intro Implis L12"
+Introduction "Intro Implis L12"
 
 Statement (A : Prop) : ¬A ∨ A := by
   /-
@@ -44,7 +44,7 @@ Conclusion
 Der Operationsleiter nickt zustimmend.
 "
 -/
-Conclusion "`CONC` Conclusion Implis L12"
+Conclusion "Conclusion Implis L12"
 
 NewTactic by_cases
 DisabledTactic tauto

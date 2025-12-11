@@ -11,7 +11,7 @@ Introduction
 **Operationsleiter**: Hier, zum Beispiel:
 "
 -/
-Introduction "`INTRO` Intro Implis L01"
+Introduction "Intro Implis L01"
 
 Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
   /-
@@ -63,7 +63,7 @@ Förderband in Bewegung.
 **Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "
 -/
-Conclusion "`CONC` Conclusion Implis L01"
+Conclusion "Conclusion Implis L01"
 
 
 NewDefinition Arrow
