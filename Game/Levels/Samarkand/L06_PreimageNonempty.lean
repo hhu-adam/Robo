@@ -8,7 +8,7 @@ Level 6
 Title ""
 
 -- Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
-Introduction "`INTRO` Intro Samarkand L06"
+Introduction "Intro Samarkand L06"
 
 Statement {A B : Type} (f : A → B)  (y : B) :
      f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by
@@ -33,4 +33,4 @@ Statement {A B : Type} (f : A → B)  (y : B) :
   "
   -/
 
-  Conclusion "`CONC` Conclusion Samarkand L06"
+  Conclusion "Conclusion Samarkand L06"

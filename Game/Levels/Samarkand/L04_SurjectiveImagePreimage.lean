@@ -12,7 +12,7 @@ Introduction "
   **Arapuka**:  Könnt ihr mir vielleicht hiermit auch noch helfen?
   "
 -/
-Introduction "`INTRO` Intro Samarkand L04"
+Introduction "Intro Samarkand L04"
 
 /---/
 TheoremDoc Function.Surjective.image_preimage as "Surjective.image_preimage" in "Function"
@@ -53,4 +53,4 @@ Conclusion "
   **Arapuka**:  Ihr seid wirklich eine große Hilfe!
 "
 -/
-Conclusion "`CONC` Conclusion Samarkand L04"
+Conclusion "Conclusion Samarkand L04"

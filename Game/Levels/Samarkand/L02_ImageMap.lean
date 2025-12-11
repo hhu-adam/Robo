@@ -7,7 +7,7 @@ Level 2
 Title "" -- "Bild/Urbild"
 
 -- Introduction "Arapuka diktiert euch noch eine Aufgabe."
-Introduction "`INTRO` Intro Samarkand L02"
+Introduction "Intro Samarkand L02"
 
 Statement {A B C : Type} (f : A → B) (g : B → C) : image (g ∘ f) = (image g) ∘ (image f) := by
   /-
@@ -60,7 +60,7 @@ example : image f = fun S ↦ f '' S := by
     **Robo**:  Das kann man bestimmt leicht vereinfachen …
   "
   -/
-  Hint (hidden := true) "`COMMENT` This can be simplified"
+  Hint (hidden := true) "This can be simplified"
   simp
 
 NewDefinition Set.image Set.preimage
@@ -70,4 +70,4 @@ Conclusion "
   **Arapuka**:  Hübsch, hübsch.
 "
 -/
-Conclusion "`CONC` Conclusions Samarkand L02"
+Conclusion "Conclusions Samarkand L02"

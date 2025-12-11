@@ -95,4 +95,4 @@ Conclusion "
 "
 -/
 
-Conclusion "`CONC` Conclusion Samarkand L03"
+Conclusion "Conclusion Samarkand L03"

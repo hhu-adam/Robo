@@ -15,7 +15,7 @@ Vielleicht könntet ihr mir ja helfen.  Zum Beispiel: …
 Sie diktiert euch eine Aussage. Robo schreibt sie auf.
 "
 -/
-Introduction "`INTRO` Intro Samarkand L01"
+Introduction "Intro Samarkand L01"
 
 /---/
 TheoremDoc Set.image_preimage_subset as "image_preimage_subset" in "Set"
@@ -84,4 +84,4 @@ NewDefinition Set.fimage Set.fpreimage
 Conclusion "**Arapuka**: Schön."
 -/
 
-Conclusion "`CONC` Conclusion Samarkand L01"
+Conclusion "Conclusion Samarkand L01"

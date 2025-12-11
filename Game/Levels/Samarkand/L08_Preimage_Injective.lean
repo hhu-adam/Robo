@@ -10,7 +10,7 @@ Introduction "
   **Arapuka**:  Könnt ihr mir vielleicht sogar mit dieser Vermutung weiterhelfen?
 "
 -/
-Introduction "`INTRO` Intro Samarkand L08"
+Introduction "Intro Samarkand L08"
 
 open Function
 
@@ -90,4 +90,4 @@ Conclusion "
 "
 -/
 
-Conclusion "`CONC` Conlsuion Samarkand L08"
+Conclusion "Conlsuion Samarkand L08"

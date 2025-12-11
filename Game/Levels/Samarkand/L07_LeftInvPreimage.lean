@@ -11,7 +11,7 @@ Introduction "
   **Arapuka**:  Jetzt habe ich aber noch eine wirklich schwierige Aufgabe.
 "
 -/
-Introduction "`INTRO` Intro Samarkand L07"
+Introduction "Intro Samarkand L07"
 
 open Function Set
 
@@ -20,7 +20,7 @@ Statement  {A B : Type} {f : A → B} {g : B → A}
     (hL : LeftInverse g f) (S : Set A) :
     f '' S ⊆ g ⁻¹' S := by
   -- Hint "**Du**:  Mal überlegen…"
-  Hint "`COMMENT` got to think about it..."
+  Hint "Got to think about it..."
   intro b hb
   obtain ⟨x, hx, e⟩ := hb
   Branch
@@ -41,4 +41,4 @@ Conclusion "
 "
 -/
 
-Conclusion "`CONC` Conclusion Samarkand L07"
+Conclusion "Conclusion Samarkand L07"

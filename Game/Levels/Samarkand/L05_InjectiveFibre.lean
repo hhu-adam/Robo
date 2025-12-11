@@ -10,7 +10,7 @@ Introduction "
   **Arapuka**:  Ich habe auch noch eine Frage zu injektiven Abbildungen.
 "
 -/
-Introduction "`INTRO` Intro Samarkand L05"
+Introduction "Intro Samarkand L05"
 
 open Set
 
@@ -45,4 +45,4 @@ Conclusion "
   Arapuka liegt immer noch ganz regungslos, aber sie sieht glücklich aus.
 "
 -/
-Conclusion "`CONC` Conclusion Samarkand L05"
+Conclusion "Conclusion Samarkand L05"
