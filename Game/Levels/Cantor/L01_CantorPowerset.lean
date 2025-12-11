@@ -61,7 +61,7 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
     **Cantor**:  Das sieht gut aus!
     "
   -/
-  Hint "`COMMENT`"
+  Hint "This looks good!"
   · Branch
       rw [ha] at h₁
       /-

@@ -28,7 +28,7 @@ import Game.Levels.Piazza
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
 
-Title "`TITLE` Robo"
+Title "Robo"
 Introduction
 /-
 "
@@ -155,7 +155,7 @@ Wenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch 
 "
 -/
 "
-`INFO`
+
 ## Project ADAM
 
 This educational game was developed as part of the project
@@ -188,7 +188,7 @@ If you have specific change requests or find errors, you are also welcome to cre
 "
 
 Conclusion
-"`CONC` QED"
+" QED"
 
 
 /-! Information to be displayed on the servers landing page. -/
