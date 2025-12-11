@@ -417,7 +417,7 @@ msgstr ""
 "Hast du §6 als Annahme zur Verfügung, kannst du analog mit §7 den Ausdruck §8 zu §9 reduzieren."
 
 #: Game.Levels.Piazza.L01_Mem__Set
-msgid "try tauto"
+msgid "Try tauto"
 msgstr ""
 " **Du**:  Verstehe ich das richtig?\n"
 "\n"
@@ -1018,7 +1018,6 @@ msgstr ""
 
 #: Game
 msgid ""
-"\n"
 "## Project ADAM\n"
 "\n"
 "This educational game was developed as part of the project\n"
@@ -1601,7 +1600,7 @@ msgstr ""
 "**Robo**: Genau!"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "return to topic at hand"
+msgid "Return to topic at hand"
 msgstr "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache."
 
 #: Game.Levels.Vieta.L07_Extend
@@ -1847,7 +1846,7 @@ msgid "Intro Vieta L08"
 msgstr "Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter."
 
 #: Game.Levels.Mono.L11_InjHasLeftInv
-msgid "remember proof"
+msgid "Remember proof"
 msgstr ""
 " **Robo**:  Das hatten wir doch auch schon gezeigt …  aber ich hatte vergessen, es "
 "abzuspeichern. Erinnerst du dich an den Beweis?"
@@ -1939,7 +1938,7 @@ msgid "Intro Iso L02"
 msgstr "**Isosoph**:  … und zur Hauptsache kommen."
 
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-msgid "so far so good"
+msgid "So far so good"
 msgstr "**Robo**:  So weit, so gut."
 
 #. §0: `«{hx}» : m ≤ x → n < x`
@@ -1965,7 +1964,7 @@ msgstr ""
 "auf den Weg geben.  Also §3."
 
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
-msgid "explain that a mapping, which is left inverse ..."
+msgid "Explain that a mapping, which is left inverse ..."
 msgstr ""
 " **Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube "
 "ich …"
@@ -2141,7 +2140,7 @@ msgid "Try §0. §1 says that §2"
 msgstr " **Robo**: Hilft dir vielleicht §0 weiter? Die Aussage von §1 ist §2."
 
 #: Game.Levels.Robotswana.L02_EBasis
-msgid "looks like matrix multiplication"
+msgid "Looks like matrix multiplication"
 msgstr "**Du**: Das sieht jetzt aber nach Matrizen-Multiplikation aus. Müsste so auch stimmen."
 
 #. §0: `StrictMono.injective`
@@ -2160,7 +2159,7 @@ msgstr ""
 "Urbild besitzt oder nicht."
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-msgid "explanation of equal sums"
+msgid "Explanation of equal sums"
 msgstr "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
 
 #. §0: `¬¬`
@@ -2234,7 +2233,7 @@ msgstr ""
 "immer gleich ein §2 hinterher, dann wird es wieder lesbar."
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-msgid "reminder of set equality"
+msgid "Reminder of set equality"
 msgstr ""
 "**Du**:  Ja, ich glaube, so habe ich das einmal gelernt – zwei Mengen sind gleich, wenn sie "
 "sich wechselseitig enthalten."
@@ -2851,7 +2850,7 @@ msgstr ""
 "**Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung §0 brauchen."
 
 #: Game.Levels.Mono.L05_StrictMono
-msgid "the next part is elementary"
+msgid "The next part is elementary"
 msgstr "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
 
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
@@ -3136,9 +3135,7 @@ msgstr ""
 "schnell genug zu kombinieren."
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid ""
-"\n"
-"Linear mapping, or 'additive' mappings in general, can be exchanged with a sum."
+msgid "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum."
 msgstr ""
 "Lineare Abbildungen (oder genereller \"additive\" Abbildungen) kann man mit einer Summe "
 "vertauschen."
@@ -4108,7 +4105,7 @@ msgid "Robotswana"
 msgstr "Robotswana"
 
 #: Game.Levels.Epo.L04_RightInverse
-msgid "look through definitions"
+msgid "Look through definitions"
 msgstr ""
 " **Du**:  Jetzt muss ich mich wohl doch ein bisschen durch die Definitionen hangeln?\n"
 "\n"
@@ -4482,7 +4479,7 @@ msgstr ""
 "**Robo**: §1"
 
 #: Game.Levels.Implis.L06_Iff
-msgid "parts available in assumptions"
+msgid "Parts available in assumptions"
 msgstr "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
 
 #: Game.Levels.Logo.L05_True
@@ -5154,7 +5151,7 @@ msgid "Intro Logo L13"
 msgstr "Der nächste bitte …"
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-msgid "got to think about it..."
+msgid "Got to think about it..."
 msgstr "**Du**:  Mal überlegen …∪"
 
 #: Game.Levels.Luna.L04_Omega2
@@ -5533,7 +5530,7 @@ msgid "Intro Samarkand L06"
 msgstr "**Arapuka**: Und wie sieht es hiermit aus?"
 
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-msgid "Ritha gives sighns to try omega"
+msgid "Ritha gives signs to try omega"
 msgstr "Ritha macht wieder irgendwelche Zeichen."
 
 #. §0: `Odd.neg_pow`
@@ -6046,7 +6043,7 @@ msgstr ""
 "angenommen, §1 sei wahr."
 
 #: Game.Levels.Prado.L07_dvd_mul
-msgid "conclusion Prado L07"
+msgid "Conclusion Prado L07"
 msgstr "**Du** Du stellst aber wirklich sehr einfache Aufgaben."
 
 #: Game.Levels.Cantor
@@ -6732,9 +6729,8 @@ msgstr ""
 "**Robo**: Also §0 ist einfach der übliche Betrag der reellen Zahl §1. Und was §2 bedeutet "
 "findest du vermutlich mit §3 heraus."
 
-#. §0: `IN_HINT 2`
 #: Game.Levels.Iso.L02_Inverse
-msgid "§0 Disect again"
+msgid "Disect again"
 msgstr "**Robo**: Das UND auch noch!"
 
 #. §0: `rw`
