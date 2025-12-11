@@ -48,4 +48,4 @@ Zulip ist groß, gewiss werdet auch ihr dort ein neues Zuhause finden.  Hier die
 Das macht aber nichts.  Ihr werdet sicher auf Zulip ankommen.]
 "
 -/
-Conclusion "`CONC`Conclusion Cia L01"
+Conclusion "Conclusion Cia L01"
