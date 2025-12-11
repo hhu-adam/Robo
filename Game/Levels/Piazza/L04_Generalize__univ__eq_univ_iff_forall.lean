@@ -11,7 +11,7 @@ Introduction
   **Sub:** Ich habe auch schon etwas gelernt:
 "
 -/
-Introduction "`INTRO` Intro Piazza L04"
+Introduction "Intro Piazza L04"
 
 namespace Set
 

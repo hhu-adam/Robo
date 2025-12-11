@@ -19,7 +19,7 @@ Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.
 Fin erklärt sich folgendermaßen.
 "
 -/
-Introduction "`INTRO` Intro Piazza L11"
+Introduction "Intro Piazza L11"
 
 open Set
 

@@ -12,7 +12,7 @@ Introduction
 Wir sollten die Besucher mal etwas mehr über Inklusionen ausfragen.
 "
 -/
-Introduction "`INTRO` Intro Piazza L08"
+Introduction "Intro Piazza L08"
 
 /---/
 TheoremDoc Set.subset_iff as "subset_iff" in "Set"

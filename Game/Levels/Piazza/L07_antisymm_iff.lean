@@ -11,7 +11,7 @@ Introduction
 **Set**: Und ich mag diese Äquivalenz.
 "
 -/
-Introduction "`INTRO` Intro Piazza L07"
+Introduction "Intro Piazza L07"
 
 open Set
 
@@ -32,7 +32,7 @@ Statement Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B
     tauto
   · intro h
     -- Hint (hidden := true) "**Robo**: Ab hier müsste das Schema von eben wieder passen."
-    Hint (hidden := true) "`COMMENT` Try ext, tauto"
+    Hint (hidden := true) "Try ext, tauto"
     ext i
     tauto
 

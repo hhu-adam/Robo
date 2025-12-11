@@ -9,7 +9,7 @@ Title ""
 -- "
 --   **Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?
 -- "
-Introduction "`INTRO` Intro Piazza L03"
+Introduction "Intro Piazza L03"
 
 open Set
 

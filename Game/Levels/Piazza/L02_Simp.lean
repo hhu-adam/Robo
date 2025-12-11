@@ -12,7 +12,7 @@ Introduction
 **Mem**:  Wie wärs denn hiermit?
 "
 -/
-Introduction "`INTRO` Intro Piazza L02"
+Introduction "Intro Piazza L02"
 
 open Set
 

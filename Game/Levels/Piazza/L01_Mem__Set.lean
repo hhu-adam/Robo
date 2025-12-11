@@ -12,7 +12,7 @@ Introduction
 **Fin**:  Ja, klar.  Das hier zum Beispiel.
 "
 -/
-Introduction "`INTRO` Intro Piazza L01"
+Introduction "Intro Piazza L01"
 
 open Set
 
@@ -24,7 +24,7 @@ Statement : 1 ∈ ({1, 6, 4} : Set ℕ) := by
     **Robo**: Vermute schon.  Sieht ziemlich *tauto*logisch aus, nicht?
     "
   -/
-  Hint "`COMMENT` try tauto"
+  Hint "Try tauto"
   tauto
 
 NewDefinition Mem Set
@@ -37,4 +37,4 @@ Conclusion "
 **Robo**:  Naja, ein *bisschen*.
 "
 -/
-Conclusion "`CONC` Conclusion Piazza L01"
+Conclusion "Conclusion Piazza L01"

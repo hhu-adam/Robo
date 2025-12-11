@@ -10,7 +10,7 @@ Introduction "
   **Fin**:  Richtig.   Und jetzt lege ich meine Pistazie wieder zurück.
 "
 -/
-Introduction "`INTRO` Intro Piazza L12"
+Introduction "Intro Piazza L12"
 
 open Set
 

@@ -11,7 +11,7 @@ Introduction
 **Mem**:  Lasst mich auch noch einmal eine Frage stellen!
 "
 -/
-Introduction "`INTRO` Intro Piazza L10"
+Introduction "Intro Piazza L10"
 
 open Set Nat -- Nat is opened in case someone wants to use `Nat.not_odd_iff_even` here
 
@@ -38,4 +38,4 @@ TheoremTab "Set"
 -- Conclusion "
 -- **Mem**:  Ja super, ihr habt aber schnell gelernt!
 -- "
-Conclusion "`CONC` Conclusion Piazza L10"
+Conclusion "Conclusion Piazza L10"

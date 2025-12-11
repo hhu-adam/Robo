@@ -12,7 +12,7 @@ Introduction
 Und wenn ihr nun mit solchen Inklusionen arbeiten sollt?
 "
 -/
-Introduction "`INTRO` Intro Piazza L09"
+Introduction "Intro Piazza L09"
 
 open Set
 

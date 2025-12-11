@@ -11,7 +11,7 @@ Introduction
   **Mem:** Findet ihr diese Aussage auch wieder verwirrend?
 "
 -/
-Introduction "`INTRO` Intro Piazza L05"
+Introduction "Intro Piazza L05"
 
 namespace Set
 

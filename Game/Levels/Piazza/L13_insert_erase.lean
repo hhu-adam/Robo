@@ -10,7 +10,7 @@ Introduction "
   **Fin**:  Und, was meint ihr – sind jetzt wieder alle Pistazien zu Hause?
 "
 -/
-Introduction "`INTRO` Intro Piazza L13"
+Introduction "Intro Piazza L13"
 
 /---/
 TheoremDoc Finset.insert_erase as "insert_erase" in "Set"
@@ -57,4 +57,4 @@ die ihr beide nicht versteht.  Dann laufen sie davon.
 
 **Robo**:  Ich glaube, wir können weiterfliegen."
 -/
-Conclusion "`CONC` Conclusion Piazza L13"
+Conclusion "Conclusion Piazza L13"

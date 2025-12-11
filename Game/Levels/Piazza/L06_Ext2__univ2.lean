@@ -11,7 +11,7 @@ Introduction
 **Ext**:  Ich mag *diese* Gleichung.
 "
 -/
-Introduction "`INTRO` Intro Piazza L06"
+Introduction "Intro Piazza L06"
 
 open Set
 
@@ -42,4 +42,4 @@ Conclusion "
 "
 -/
 
-Conclusion "Conclusion Piazza L06: Explain that `ext` means extensionality `CONC`"
+Conclusion "Conclusion Piazza L06: Explain that `ext` means extensionality"
