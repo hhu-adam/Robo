@@ -11,7 +11,7 @@ Introduction
 Ein dritter Untertan kommt mit folgendem Problem.
 "
 -/
-Introduction "`INTRO` Intro Logo L04"
+Introduction "Intro Logo L04"
 
 Statement (A : Prop) (hA : A) : A := by
   /-
@@ -36,6 +36,6 @@ Statement (A : Prop) (hA : A) : A := by
 /-
 Conclusion "**Untertan**: Das ging ja schnell. Super! Vielen Dank."
 -/
-Conclusion "`CONC` Conclusion Logo L04"
+Conclusion "Conclusion Logo L04"
 
 DisabledTactic tauto

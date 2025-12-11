@@ -11,7 +11,7 @@ Introduction
 Der Schelm hat noch eine Schwester dabei.
 "
 -/
-Introduction "`INTRO` Intro Logo L06"
+Introduction "Intro Logo L06"
 
 Statement : ¬False := by
   /-
@@ -37,7 +37,7 @@ Conclusion
 Die Schwester lacht und eilt ihrem Bruder hinterher.
 "
 -/
-Conclusion "`CONC` Conclusion Logo L06"
+Conclusion "Conclusion Logo L06"
 
 NewDefinition False Not
 DisabledTactic tauto

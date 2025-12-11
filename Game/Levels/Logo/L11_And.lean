@@ -11,7 +11,7 @@ Introduction
 Langsam wird die Schlange kürzer. Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes Anliegen.
 "
 -/
-Introduction "`INTRO` Intro Logo L11"
+Introduction "Intro Logo L11"
 
 Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
   /-
@@ -35,7 +35,7 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
     Hint "Try obtain tactic"
   obtain ⟨_h₁, g, _h₃⟩ := h
   -- Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
-  Hint "`COMMENT` Try Assumption tactic"
+  Hint "Try Assumption tactic"
   assumption
 
 /-

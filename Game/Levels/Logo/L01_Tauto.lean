@@ -18,7 +18,7 @@ Dazwischen sollst du offenbar einen Beweis eintragen.
 Du siehst Robo hilflos an.
 "
 -/
-Introduction "`INTRO` Intro Logo L01"
+Introduction "Intro Logo L01"
 
 /--  -/
 Statement (A B C : Prop) :

@@ -34,7 +34,7 @@ Conclusion
 **Untertan**: Ah, richtig. Ja, Sie haben ja so recht. Das vergesse ich immer. Rfl, rfl, rfl …
 "
 -/
-Conclusion "`CONC` Conclusion Logo L02"
+Conclusion "Conclusion Logo L02"
 
 NewDefinition Eq
 

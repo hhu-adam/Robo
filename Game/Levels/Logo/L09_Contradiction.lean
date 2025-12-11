@@ -12,7 +12,7 @@ Introduction
 Auftritt dritter Querulant.
 "
 -/
-Introduction "`INTRO` Intro Logo L09"
+Introduction "Intro Logo L09"
 
 /--  -/
 Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
@@ -22,7 +22,7 @@ Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
 
     **Robo**: Ich sehe, du hast langsam den Dreh raus."
   -/
-  Hint "`COMMENT` Try the Contradiction tactic"
+  Hint "Try the Contradiction tactic"
   contradiction
 
 /-

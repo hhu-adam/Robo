@@ -11,7 +11,7 @@ Introduction
 Der nächste Untertan in der Reihe ist ein Schelm.
 "
 -/
-Introduction "`INTRO` Intro Logo L05"
+Introduction "Intro Logo L05"
 
 Statement : True := by
   /-

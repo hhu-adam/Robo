@@ -12,7 +12,7 @@ Introduction
 Auftritt zweiter Querulant.
 "
 -/
-Introduction "`INTRO` Intro Logo L08"
+Introduction "Intro Logo L08"
 
 /--  -/
 Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
@@ -39,7 +39,7 @@ Und gleich 38, und gleich 39, …
 **Du**: Okay, okay, verstehe.
 "
 -/
-Conclusion "`CONC` Conclusion Logo L08"
+Conclusion "Conclusion Logo L08"
 
 NewDefinition Ne
 DisabledTactic tauto

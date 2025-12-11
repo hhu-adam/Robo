@@ -12,7 +12,7 @@ Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste
 Es ist schüchtern und schreibt bloß.
 "
 -/
-Introduction "`INTRO` Intro Logo L03"
+Introduction "Intro Logo L03"
 
 set_option linter.unusedVariables false in
 
@@ -49,7 +49,7 @@ Conclusion
 zerbrochen habe!
 "
 -/
-Conclusion "`CONC` Conclusion Logo L03"
+Conclusion "Conclusion Logo L03"
 
 NewTactic assumption
 DisabledTactic tauto

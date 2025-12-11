@@ -93,6 +93,6 @@ Conclusion
 Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon.
 "
 -/
-Conclusion "`CONC` Conclusion Logo L14"
+Conclusion "Conclusion Logo L14"
 
 DisabledTactic tauto

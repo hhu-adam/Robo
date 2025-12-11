@@ -11,7 +11,7 @@ Introduction
 Als nächstes kommen drei Querulanten. Der erste hat folgendes Problem:
 "
 -/
-Introduction "`INTRO` Intro Logo L07"
+Introduction "Intro Logo L07"
 
 Statement (A : Prop) (h : False) : A := by
   /-

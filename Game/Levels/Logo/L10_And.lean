@@ -12,7 +12,7 @@ Der nächste Formalosoph in der Reihe hat seine Frage bereits mitgebracht.
 Er legt sie uns vor, setzt sich hin und häkelt.
 "
 -/
-Introduction "`INTRO` Intro Logo L10"
+Introduction "Intro Logo L10"
 
 /--  -/
 Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
@@ -59,7 +59,7 @@ Ihm scheinen diese Fragen inzwischen Spaß zu machen.
 Oder ist der nur gemalt? Probier mal!
 "
 -/
-Conclusion "`CONC` Conclusion Logo L10"
+Conclusion "Conclusion Logo L10"
 
 NewDefinition And
 NewTactic constructor

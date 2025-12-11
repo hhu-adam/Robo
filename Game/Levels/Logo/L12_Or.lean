@@ -11,7 +11,7 @@ Introduction
 Der nächste bitte …
 "
 -/
-Introduction "`INTRO` Intro Logo L12"
+Introduction "Intro Logo L12"
 
 Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
   /-
@@ -40,7 +40,7 @@ Conclusion
 Auch dieser Formalosoph zieht zufrieden von dannen.
 "
 -/
-Conclusion "`CONC` Conclusion Logo L12"
+Conclusion "Conclusion Logo L12"
 
 NewDefinition Or
 NewTactic left right
