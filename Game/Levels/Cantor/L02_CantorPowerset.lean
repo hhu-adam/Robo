@@ -86,7 +86,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
 
   **Robo**:  Sorry, ging alles so schnell!  Habe ich wohl vergessen, abzuspeichern."
   -/
-  Hint "`COMMENT-2` Try simp [{s}]"
+  Hint "Try simp [{s}]"
   by_cases h : a ∈ f a
   · suffices hn : a ∉ f a
     · contradiction

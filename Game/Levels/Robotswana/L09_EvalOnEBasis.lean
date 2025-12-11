@@ -130,7 +130,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       by_contra
       apply IsEmpty.false i
   -- Hint "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache."
-  Hint "`COMMENT-2` return to topic at hand"
+  Hint "Return to topic at hand"
   /-
   Hint (hidden := true) "
   **Robo**: Wenn ich dich richtig verstanden haben, willst du jetzt mehrmals `trans` anwenden, als erstes

@@ -22,7 +22,7 @@ Introduction "Intro Implis L11: Prove without using `rw` or `apply`"
 
 Statement (A B : Prop) : (A ↔ B) → (A → B) := by
   -- Hint "**Du**: Hmm, mindestens mit der Implikation kann ich anfangen."
-  Hint "`COMMENT-2` Start with implication"
+  Hint "Start with implication"
   -- Hint (hidden := true) "**Robo**: Genau, das war `intro`."
   Hint (hidden := true) "Exactly, try `intro`"
   intro h
