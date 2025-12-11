@@ -44,4 +44,4 @@ in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansc
 Und das ist Gold wert.
 "
 -/
-Introduction "`INTRO` Intro Logo"
+Introduction " Intro Logo"

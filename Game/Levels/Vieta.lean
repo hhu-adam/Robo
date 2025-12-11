@@ -38,4 +38,4 @@ Ihr erhebt euch vorsichtig, da zischt schon wieder dicht neben euch ein Pfeil vo
 Macht euch keine Sorgen.
 "
 -/
-Introduction "`INTRO` Intro Vieta"
+Introduction " Intro Vieta"

@@ -37,4 +37,4 @@ Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die L
 Alle anderen sind ja schon drüben!
 "
 -/
-Introduction "`INTRO` Intro Epo"
+Introduction " Intro Epo"

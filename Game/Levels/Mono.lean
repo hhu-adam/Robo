@@ -48,4 +48,4 @@ Und nicht jedes Stockwerk lässt sich über eine Röhre erreichen.
 Aber wir sind schon fast da.  Nur noch zwei Treppen hinauf.
 "
 -/
-Introduction "`INTRO` Intro Mono"
+Introduction " Intro Mono"

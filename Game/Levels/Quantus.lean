@@ -56,4 +56,4 @@ Nach wenigen Minuten liegt es wieder bei euch.
 Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht.
 "
 -/
-Introduction "`INTRO` Intro Quantus"
+Introduction " Intro Quantus"

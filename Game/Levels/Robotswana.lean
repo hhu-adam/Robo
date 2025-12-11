@@ -23,4 +23,4 @@ Nach etwas Umschauen entdeckt Robo Spuren, die von eurem Landeplatz wegführen, 
  vereinzelten Bäumen hindurch. Ihr beratet kurz und beschließt, den Spuren zu folgen.
 "
 -/
-Introduction "`INTRO` Intro Robotswana"
+Introduction " Intro Robotswana"

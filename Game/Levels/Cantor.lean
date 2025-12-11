@@ -36,4 +36,4 @@ Aber alle Sitze sind leer.
 Ihr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren.
 "
 -/
-Introduction "`INTRO` Intro Cantor"
+Introduction " Intro Cantor"

@@ -35,4 +35,4 @@ Benedictus schüttelt den Kopf.
 **Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und Ihr müsst bald wieder weiter, sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei.
 "
 -/
-Introduction "`INTRO` Intro Spinoza"
+Introduction " Intro Spinoza"

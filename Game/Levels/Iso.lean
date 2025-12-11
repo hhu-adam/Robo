@@ -36,4 +36,4 @@ Wie sich herausstellt, ist einer der besonders fortschrittlichen Aspekte, dass m
 Ihr düst ein paar Mal hin und her.
 "
 -/
-Introduction "`INTRO` Intro Iso"
+Introduction " Intro Iso"

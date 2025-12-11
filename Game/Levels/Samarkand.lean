@@ -44,4 +44,4 @@ Das dauert.  Ich kann also Gesellschaft gut gebrauchen.
 "
 -/
 
-Introduction "`INTRO` Intro Samarkand"
+Introduction " Intro Samarkand"
