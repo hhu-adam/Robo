@@ -12,7 +12,7 @@ Introduction
 Wieder ein Pfeil.  Und noch eine Aufgabe.
 "
 -/
-Introduction "`INTRO` Intro Vieta L03"
+Introduction "Intro Vieta L03"
 
 Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   /-
@@ -31,7 +31,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   use f
   intro x
   -- Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
-  Hint (hidden := true) "`COMMENT` Try simplification"
+  Hint (hidden := true) "Try simplification"
   simp [f]
   -- linarith
 

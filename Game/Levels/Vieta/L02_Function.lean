@@ -12,7 +12,7 @@ Introduction
 Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Blatt.
 "
 -/
-Introduction "`INTRO` Intro Vieta L02"
+Introduction "Intro Vieta L02"
 
 Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
   /-

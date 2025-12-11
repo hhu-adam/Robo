@@ -21,7 +21,7 @@ So viel Besuch bekomme ich nicht!
 Er reicht euch das nächste Blatt.
 "
 -/
-Introduction "`INTRO` Intro Vieta L06"
+Introduction "Intro Vieta L06"
 
 open Set Function
 

@@ -17,7 +17,7 @@ an dem ihr eben gestanden habt, drei Pfeile nieder und bleiben im Boden stecken.
 **Vieta**: Ganz ruhig, ich kenne mich hier aus.  Hier, ich habe noch mehr für euch.
 "
 -/
-Introduction "`INTRO` Intro Vieta L04"
+Introduction "Intro Vieta L04"
 
 open Function
 

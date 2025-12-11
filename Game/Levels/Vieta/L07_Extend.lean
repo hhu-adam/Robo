@@ -12,7 +12,7 @@ Ihr hört aus der Ferne Kampfgeräusche.  Vieta scheint nach wie vor nicht beunr
 Er gibt euch noch eine Aufgabe.
 "
 -/
-Introduction "`INTRO` Intro Vieta L07"
+Introduction "Intro Vieta L07"
 
 open Function Set Nat
 

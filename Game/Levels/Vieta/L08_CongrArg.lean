@@ -10,7 +10,7 @@ Title "" -- "congr_arg"
 Introduction
 "Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter."
 -/
-Introduction "`INTRO` Intro Vieta L08"
+Introduction "Intro Vieta L08"
 
 open Function
 

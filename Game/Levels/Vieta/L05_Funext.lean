@@ -13,7 +13,7 @@ Vieta sieht sich vorsichtig um, bleibt dann aber doch stehen.
 Er reicht euch ruhig das nächste Blatt.
 "
 -/
-Introduction "`INTRO` Intro Vieta L05"
+Introduction "Intro Vieta L05"
 
 open Function
 

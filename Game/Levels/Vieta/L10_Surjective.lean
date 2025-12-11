@@ -19,7 +19,7 @@ Und da saust auch schon wieder ein Pfeil an euch vorbei.
 **Vieta**:  Keine Sorge, für einen Aufgabe haben wir noch Zeit.
 "
 -/
-Introduction "`INTRO` Intro Vieta L10"
+Introduction "Intro Vieta L10"
 
 open Function Nat
 
@@ -74,5 +74,5 @@ Conclusion "
 Hier gehts lang.  Ich bring euch zurück zum Raumschiff.
 "
 -/
-Conclusion "`CONC` Conclusion Vieta L10"
+Conclusion " Conclusion Vieta L10"
 NewDefinition Nat.succ

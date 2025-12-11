@@ -11,7 +11,7 @@ Introduction "**Vieta:** Kommt, ich zeig euch etwas …
 Er gibt dir ein Stück Papier.
 "
 -/
-Introduction "`INTRO` Intro Vieta L01"
+Introduction "Intro Vieta L01"
 
 Statement (f : ℤ → ℕ) (n : ℤ): f n ≥ 0 := by
   /-
