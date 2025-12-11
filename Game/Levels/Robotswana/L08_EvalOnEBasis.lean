@@ -101,7 +101,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     simp
   rw [map_sum] -- simp knows this
   -- Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
-  Hint "`IN_HINT 2` Simplify"
+  Hint "Simplify"
   simp
   /-
   Hint "**Robo**: Wie weit bist du jetzt?

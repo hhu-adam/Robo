@@ -84,7 +84,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Hint (hidden := true) "Disect `{h}`"
     obtain ⟨g, h⟩ := h
     -- Hint (hidden := true) "**Robo**: Das UND auch noch!"
-    Hint (hidden := true) "`IN_HINT 2` Disect again"
+    Hint (hidden := true) "Disect again"
     obtain ⟨hL, hR⟩  := h
     constructor
     /-
