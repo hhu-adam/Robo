@@ -13,7 +13,7 @@ Ganz oben sind tatsächlich wieder viele Formalosophen versammelt.
 Sie heißen euch freudig willkommen, und kommen dann gleich zur Sache.
 "
 -/
-Introduction "`INTRO` Intro Mono L01"
+Introduction "Intro Mono L01"
 
 open Set Function
 
@@ -51,4 +51,4 @@ NewDefinition Function.Injective
 TheoremTab "Function"
 
 -- Conclusion "Das habt ihr gut gemacht, finden die Formalosophen."
-Conclusion "`CONC` Conclusion Mono L01"
+Conclusion "Conclusion Mono L01"

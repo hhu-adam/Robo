@@ -52,7 +52,7 @@ Statement :
 
     **Robo** Genau! Welche beiden Zahlen möchtest du denn verwenden?"
   -/
-  Hint (hidden := true) "`COMMENT` Provide a counter example"
+  Hint (hidden := true) "Provide a counter example"
   use 2
   use 3
   -- Hint (hidden := true) "**Robo**:  Das ist hier alles so konkret, vielleicht reicht `decide`."

@@ -81,7 +81,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       Erinnerst du dich an den Beweis?
     "
     -/
-    Hint (hidden := true) "`COMMENT` remember proof"
+    Hint (hidden := true) "Remember proof"
     intro hL
     intro a a' ha
     obtain ⟨g, hg⟩ := hL
@@ -97,4 +97,4 @@ Wieder gibt es keine Transportkapseln für den Rückweg.
 Aber so weit ist es ja nun auch wieder nicht.
 "
 -/
-Conclusion "`CONC` Conclusion Mono L11"
+Conclusion "Conclusion Mono L11"

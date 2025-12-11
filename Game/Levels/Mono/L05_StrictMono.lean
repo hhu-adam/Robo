@@ -56,7 +56,7 @@ Statement :
     Hint (hidden := true) "`Odd 3` is trivial"
     decide
   · -- Hint "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
-    Hint "`COMMENT` the next part is elementary"
+    Hint "The next part is elementary"
     /-
     Hint (hidden := true) "
       **Du**: Oder …?
