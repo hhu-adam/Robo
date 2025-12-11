@@ -18,14 +18,14 @@ Robo zeigt auf einen Punkt in der Ferne.
 **Robo**:  Weiß nicht.  Aber mein Gefühl sagt mir, diese Zettel sind eine Art Steckbrief.  Schau mal, hier ist noch einer.  Ich glaube, der sagt, wie groß es ist.
 "
 -/
-Introduction "`INTRO` Intro Robotswana L09"
+Introduction "Intro Robotswana L09"
 
 /-
 Conclusion "
   **Du**: Okay. Lass uns vorsichtig näher gehen.
 "
 -/
-Conclusion "`CONC` Conclusion Robotswana L09"
+Conclusion "Conclusion Robotswana L09"
 
 open Nat Matrix Finset
 -- Finset needs to be opened so that sum_congr is available
@@ -196,7 +196,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · apply congr_arg
         ext
         -- Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
-        Hint (hidden := true) "`COMMENT` Remind of previous result"
+        Hint (hidden := true) "Remind of previous result"
         rw [eq_on_diag_ebasis] -- Lvl 5
         assumption
       · trans f 1

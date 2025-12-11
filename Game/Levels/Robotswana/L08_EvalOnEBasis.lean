@@ -16,7 +16,7 @@ Während Robo die nähere Umgebung absucht, setzt du dich erschöpft hin und
 starrst unter der warmen Sonne etwas beduselt auf den Pergamentfetzen.
 "
 -/
-Introduction "`INTRO` Intro Robotswana L08"
+Introduction "Intro Robotswana L08"
 
 /-
 Conclusion "**Du**: Na endlich.
@@ -31,7 +31,7 @@ Robo reicht dir eine Flasche Wasser.
 
 **Robo**:  Ja, komm mit! Da hinten hab ich etwas gesehen."
 -/
-Conclusion "`CONC` Conclusion Robotswana L08"
+Conclusion "Conclusion Robotswana L08"
 
 open Nat Matrix StdBasisMatrix Finset
 

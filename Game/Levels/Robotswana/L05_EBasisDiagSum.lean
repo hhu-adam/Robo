@@ -24,7 +24,7 @@ Introduction "Intro Robotswana L05: `1` indicates unit matrix. Begin with `matri
 Conclusion "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die
 die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 -/
-Conclusion "`CONC` Conclusion Robotswana L05"
+Conclusion "Conclusion Robotswana L05"
 
 open Nat Matrix
 

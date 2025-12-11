@@ -21,7 +21,7 @@ Introduction "intro Robotswana L07: Introduce new consideration for `E i j`: do 
 Conclusion "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und
 unvorsichtiger als zuvor."
 -/
-Conclusion "`CONC` Conclusion Robotswana L07"
+Conclusion "Conclusion Robotswana L07"
 
 open Nat Matrix
 

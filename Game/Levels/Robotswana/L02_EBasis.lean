@@ -13,7 +13,7 @@ vollgekritzelt, fast alles durchgestrichen.
 Die erste Zeile aber lässt sich jeweils gerade noch ausmachen.
 "
 -/
-Introduction "`INTRO` Intro Robotswana L02"
+Introduction "Intro Robotswana L02"
 
 /-
 Conclusion "
@@ -34,7 +34,7 @@ Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k)
   -- Hint "**Du**: Das sieht jetzt aber nach Matrizen-Multiplikation aus.
   -- Müsste so auch stimmen.
   -- "
-  Hint "`COMMENT` looks like matrix multiplication"
+  Hint "Looks like matrix multiplication"
   unfold E
   -- Hint (hidden := true) "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `{h}` explizit braucht!"
   Hint (hidden := true) "Try `simp` with `{h}`"

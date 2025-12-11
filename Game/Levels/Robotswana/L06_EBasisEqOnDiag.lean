@@ -36,7 +36,7 @@ einmal mit.
 **Du**: Schön.  Sagte ich bereits, dass ich langsam Durst habe?
 "
 -/
-Conclusion "`CONC` Conclusion Robotswana L06"
+Conclusion "Conclusion Robotswana L06"
 
 open Nat Matrix
 

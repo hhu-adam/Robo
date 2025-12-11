@@ -16,21 +16,21 @@ Als ihr mit etwas Abstand stehen bleibt, kommt Tracy auf euch zugelaufen und fä
 Aufgaben und Terme, und ihr versucht, diese schnell genug zu kombinieren.
 "
 -/
-Introduction "`INTRO` Intro Robotswana L11"
+Introduction "Intro Robotswana L11"
 
 /-
 Conclusion "Schließlich macht ihr euch auf den Rückweg.
 Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch
 die Graslandschaft zurück zu eurem Schiff."
 -/
-Conclusion "`CONC` Conclusion Robotswana L11"
+Conclusion "Conclusion Robotswana L11"
 
 open Matrix Fintype
 
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
     trace (A - t • 1) = trace A - t • n := by
   -- Hint "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
-  Hint "`COMMENT` Explain statement"
+  Hint "Explain statement"
   rw [trace_sub]
   rw [trace_smul]
   rw [trace_one]

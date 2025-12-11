@@ -13,7 +13,7 @@ Richtungen weg.
 Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.
 Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
 -/
-Introduction "`INTRO` Intro Robotswana L04"
+Introduction "Intro Robotswana L04"
 
 /-
 Conclusion "
@@ -21,7 +21,7 @@ Du beschließt, einer besonders markanten Spur zu folgen. Robo zieht dir hinterh
 sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
 "
 -/
-Introduction "`CONC` Conclusion Robotswana L04"
+Introduction "Conclusion Robotswana L04"
 
 open Nat Matrix -- BigOperators
 

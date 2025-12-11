@@ -39,7 +39,7 @@ Als ihr näher kommt, scheint euch Tracy zu bemerken.  Aber es scheint dadurch k
 zu sein.
 "
 -/
-Conclusion "`CONC` Conclusion Robotswana L10"
+Conclusion "Conclusion Robotswana L10"
 
 open Nat Matrix Finset
 
@@ -75,7 +75,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
   simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
   -- Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
-  Hint (hidden := true) "`COMMENT` Observe equality"
+  Hint (hidden := true) "Observe equality"
   rfl
   /-
   Hint "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?
