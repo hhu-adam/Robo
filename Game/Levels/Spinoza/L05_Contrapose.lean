@@ -57,4 +57,4 @@ DisabledTactic by_contra
 TheoremTab "ℕ"
 
 -- Conclusion "**Benedictus**: Hervorragend! Ich glaube, damit seid Ihr jetzt ganz gut gewappnet."
-Conclusion "`CONC` Conclusion Spinoza L05"
+Conclusion "Conclusion Spinoza L05"

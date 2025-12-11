@@ -6,7 +6,7 @@ Level 3
 Title "" -- "Widerspruch"
 
 -- Introduction "**Benedictus**: Hier ist noch eine Variante."
-Introduction "`INTRO` Intro Spinoza L03"
+Introduction "Intro Spinoza L03"
 
 Statement (A B : Prop) (g : A → B) (b : ¬ B) : ¬ A := by
   /-
@@ -45,11 +45,11 @@ Statement (A B : Prop) (g : A → B) (b : ¬ B) : ¬ A := by
     **Robo**: Und jetzt musst du nur noch das Zwischenresultat herleiten, dass zu diesem
     Widerspruch geführt hat."
   -/
-  Hint "`COMMENT` Derive intermediate result that lead to the conclusion"
+  Hint "Derive intermediate result that lead to the conclusion"
   apply g
   assumption
 
 -- Conclusion "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
-Conclusion "`CONC` Conclusion Spinoza L03"
+Conclusion "Conclusion Spinoza L03"
 
 NewTactic by_contra

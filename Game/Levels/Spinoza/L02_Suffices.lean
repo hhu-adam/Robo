@@ -14,7 +14,7 @@ Zwischenresultat beweisen können. Das könnt Ihr ja mal an dieser Aufgabe probi
 ganz ähnlich.
 "
 -/
-Introduction "`INTRO` Intro Spinoza L02"
+Introduction "Intro Spinoza L02"
 
 Statement
     (A B : Prop) (h : A → ¬ B) (k₁ : A) (k₂ : B) : False := by
@@ -35,7 +35,7 @@ Statement
   Hint "End proof with assumption that `{g}` is true"
   contradiction
   -- Hint "**Robo**: Und hier beweist du das Zwischenresultat."
-  Hint "`COMMENT` Prove intermediate result"
+  Hint "Prove intermediate result"
   apply h
   assumption
 

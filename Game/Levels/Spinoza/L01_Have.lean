@@ -11,7 +11,7 @@ Introduction
 **Benedictus**: Hier, schaut mal. Das habe ich für Euch vorbereitet.
 "
 -/
-Introduction "`INTRO` Intro Spinoza L01"
+Introduction "Intro Spinoza L01"
 
 Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   -- Hint "**Du**: Also als erstes teile ich wohl mal das Und (`∧`) auf."
@@ -33,7 +33,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
 
       **Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst."
   -/
-  · Hint "`COMMENT` Prove the assumption before using it"
+  · Hint "Prove the assumption before using it"
     -- Hint (hidden := true) "**Robo**: `apply` sollte helfen"
     Hint (hidden := true) "`apply` should help"
     apply h
@@ -47,7 +47,7 @@ Statement (A B : Prop) (h : A → ¬ B) (k : A ∧ B) : False := by
   contradiction
 
 -- Conclusion "**Benedictus**: Das sieht gut aus!"
-Conclusion "`CONC` Conclusion Spinoza L01"
+Conclusion "Conclusion Spinoza L01"
 
 --NewTactic «have»  -- now introduced very briefly in Implis
 DisabledTactic «suffices» tauto

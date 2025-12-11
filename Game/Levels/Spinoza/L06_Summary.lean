@@ -17,7 +17,7 @@ Aber Ihr könnt die Aufgabe gern noch einmal probieren.
 Hier, ich gebe Sie Euch mit auf die Reise.
 Aber nun seht zu, dass Ihr weiterkommt!"
 -/
-Introduction "`INTRO` Intro Spinoza L06"
+Introduction "Intro Spinoza L06"
 
 open Nat
 
