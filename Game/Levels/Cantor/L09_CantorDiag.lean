@@ -12,13 +12,13 @@ Introduction
 **Cantor**: Viel Glück!
 "
 -/
-Introduction "`INTRO-1`Intro Cantor L09 - 1"
+Introduction "Intro Cantor L09 - 1"
 
 /-
 Conclusion "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche
 Aufgabe nochmals lösen."
 -/
-Conclusion "`CONC-1`Conclusion Cantor L09 - 1"
+Conclusion "Conclusion Cantor L09 - 1"
 
 open Function Set
 
@@ -33,14 +33,14 @@ Introduction "
   Er wirft euch einen neuen Zettel zu.
 "
 -/
-Introduction "`INTRO-2`Intro Cantor L09 - 2"
+Introduction "Intro Cantor L09 - 2"
 
 /-
 Conclusion "
   **Cantor**:  Bravo!
 "
 -/
-Conclusion "`CONC-2`Conclusion Cantor L09 - 2"
+Conclusion "Conclusion Cantor L09 - 2"
 
 Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
     ∀ s : Y → Y, Nonempty (fixedPoints s) := by
