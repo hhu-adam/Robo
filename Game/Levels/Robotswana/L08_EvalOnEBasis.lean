@@ -119,7 +119,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     apply congr_arg
     ext i
     -- Hint (hidden := true) "**Du**: Vielleicht gleich nocheinmal?"
-    Hint (hidden := true) "`IN_HINT 3` Try again"
+    Hint (hidden := true) "`Try again"
     apply congr_arg
     ext j
     -- Hint "**Du**: Und jetzt Fallunterscheidung zu `{i} = {j}`…"
