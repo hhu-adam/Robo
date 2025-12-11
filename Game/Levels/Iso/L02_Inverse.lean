@@ -11,7 +11,7 @@ Introduction
 **Isosoph**:  … und zur Hauptsache kommen.
 "
 -/
-Introduction "`INTRO` Intro Iso L02"
+Introduction "Intro Iso L02"
 
 namespace Function
 
@@ -132,4 +132,4 @@ Seit wir die Kapseln in beide Richtungen benutzen, häufen sich wieder die Unfä
 Robo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter.
 "
 -/
-Conclusion "`CONC` Conclusion Iso L02"
+Conclusion "Conclusion Iso L02"

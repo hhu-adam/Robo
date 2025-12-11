@@ -10,7 +10,7 @@ Introduction
 **Isosoph**:  Natürlich haben auch wir etwas für euch vorbereitet.
 "
 -/
-Introduction "`INTRO` Intro Iso L01"
+Introduction "Intro Iso L01"
 
 open Function
 
@@ -44,4 +44,4 @@ Conclusion
 Er legt ein paar Blätter zur Seite.
 "
 -/
-Conclusion "`CONC` Conclusion Iso L01"
+Conclusion "Conclusion Iso L01"
