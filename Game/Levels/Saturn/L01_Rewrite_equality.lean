@@ -6,7 +6,7 @@ Level 1
 Title ""
 
 -- Introduction "Plötzlich erreicht euch ein Funkspruch."
-Introduction "`INTRO` Intro Saturn L01"
+Introduction "Intro Saturn L01"
 
 Statement (a b c d : ℝ) (h₁ : c = d) (h₂ : a = b) (h₃ : a = d) : b = c := by
   /-
@@ -40,5 +40,5 @@ Conclusion "
   Es kommt ein 👍 zurück.
   "
 -/
-Conclusion "`CONC` Conclusion Saturn L01"
+Conclusion "Conclusion Saturn L01"
 #min_imports

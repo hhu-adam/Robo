@@ -58,4 +58,4 @@ Conclusion "
   Nichts wie weg!
 "
 -/
-Conclusion "`CONC` Conclusion Saturn L05"
+Conclusion "Conclusion Saturn L05"

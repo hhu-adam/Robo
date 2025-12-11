@@ -6,7 +6,7 @@ Level 3
 Title ""
 
 -- Introduction "Noch ein Funkspruch."
-Introduction "`INTRO` Intro Saturn L03"
+Introduction "Intro Saturn L03"
 
 namespace MvPolynomial
 Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
@@ -36,7 +36,7 @@ Conclusion "
   Wieder ein 👍.
 "
 -/
-Conclusion "`CONC` Conclusion Saturn L03"
+Conclusion "Conclusion Saturn L03"
 NewTactic ring
 
 /---/

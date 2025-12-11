@@ -6,7 +6,7 @@ Level 2
 Title ""
 
 -- Introduction "Der nächste Funkspruch sieht ein bisschen anders aus."
-Introduction "`INTRO` Intro Saturn L02"
+Introduction "Intro Saturn L02"
 
 namespace MvPolynomial
 
