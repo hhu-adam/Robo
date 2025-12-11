@@ -93,4 +93,4 @@ Conclusion "Cantor klatsch in die Hände und freut sich.
 Wie von Zauberhand fliegt der Zettel zu ihm zurück."
 -/
 
-Conclusion "`CONC` Conclusion Cantor L01"
+Conclusion "Conclusion Cantor L01"

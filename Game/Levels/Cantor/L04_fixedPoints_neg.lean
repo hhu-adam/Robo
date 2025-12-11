@@ -18,7 +18,7 @@ Conclusion "
   Er hat die Kakteen gegen Spatzen eingetauscht.
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L04"
+Conclusion "Conclusion Cantor L04"
 open Function Set
 open scoped CharZero -- Need this so that `simp` can see `CharZero.neg_eq_self_iff`,
                      -- which has a `scoped simp` attribute.

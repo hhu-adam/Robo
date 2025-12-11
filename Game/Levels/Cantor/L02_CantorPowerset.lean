@@ -22,7 +22,7 @@ und lässt sie zu euch hinuntersegeln.
 Dann beugt er sich neugierig über den Bühnenrand, um zu sehen, was ihr macht.
 "
 -/
-Introduction "`INTRO`Intro Cantor L02"
+Introduction "Intro Cantor L02"
 
 /-
 Diagonalgedanke:
@@ -77,7 +77,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   /-
   Hint "Cantor hüpft von einem Bein auf das andere."
   -/
-  Hint "`COMMENT` Cantor expresses happiness"
+  Hint "Cantor expresses happiness"
   obtain ⟨a, ha⟩ := hf
   /-
   Hint "**Cantor**:  Ja!

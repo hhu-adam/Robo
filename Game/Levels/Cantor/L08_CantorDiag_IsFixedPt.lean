@@ -29,7 +29,7 @@ Conclusion
   **Du**:  Also ich verstehe gerade gar nichts mehr.
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L08"
+Conclusion "Conclusion Cantor L08"
 
 open Function Set
 

@@ -15,7 +15,7 @@ Conclusion "
   **Robo**:  Einen Zettel haben wir noch.
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L07"
+Conclusion "Conclusion Cantor L07"
 
 open Function Set
 

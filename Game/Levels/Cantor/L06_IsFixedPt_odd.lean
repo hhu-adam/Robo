@@ -16,7 +16,7 @@ Conclusion "
   mit dem Einrad zu fliegen.
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L06"
+Conclusion "Conclusion Cantor L06"
 
 open Function Set
 

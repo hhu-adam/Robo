@@ -28,7 +28,7 @@ Conclusion "
   **Du**:  Ich weiß nicht, ob das wirklich einfacher war …
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L10"
+Conclusion "Conclusion Cantor L10"
 
 open Set Function
 

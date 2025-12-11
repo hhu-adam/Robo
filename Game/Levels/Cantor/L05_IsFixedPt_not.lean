@@ -16,7 +16,7 @@ Conclusion "
    Also jongliert er wieder mit den Kakteen, und fährt dabei Einrad.
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L05"
+Conclusion "Conclusion Cantor L05"
 
 open Function Set
 

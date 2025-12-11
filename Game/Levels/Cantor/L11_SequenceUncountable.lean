@@ -33,7 +33,7 @@ Conclusion "
   **Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!
 "
 -/
-Conclusion "`CONC`Conclusion Cantor L11"
+Conclusion "Conclusion Cantor L11"
 
 open Nat Set Function
 

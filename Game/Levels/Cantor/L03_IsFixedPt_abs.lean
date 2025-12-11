@@ -22,7 +22,7 @@ und holt einen ganzen Stapel Papier heraus. Den wirft er euch zu.
 Ihr seht euch die Zettel nacheinander an.
 "
 -/
-Introduction "`INTRO` Intro Cantor L03"
+Introduction "Intro Cantor L03"
 
 /-
 Conclusion "
@@ -32,7 +32,7 @@ Conclusion "
   aber offenbar verfolgt er dennoch irgendwie, was ihr macht.
 "
 -/
-Conclusion "`CONC` Conclusion Cantor L03"
+Conclusion "Conclusion Cantor L03"
 
 open Function Set
 
@@ -60,7 +60,7 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
   /-
   Hint "**Robo**:  So weit, so gut."
   -/
-  Hint "`COMMENT` so far so good"
+  Hint "So far so good"
   · intro h
     rw [← h]
     --Branch
