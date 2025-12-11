@@ -14,7 +14,7 @@ stellt sich euch in den Weg, schaut euch finster an und fordert in tiefer Stimme
 folgenden Gleichung.
 "
 -/
-Introduction "`INTRO` Intro Babylon L09"
+Introduction "Intro Babylon L09"
 
 open Finset
 
@@ -23,7 +23,7 @@ open Finset
 
 Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i : ℚ)^2 := by
   /- Hint "**Du**: Naja. Das wird schon klappen … " -/
-  Hint "`COMMENT` this should work"
+  Hint "this should work"
   induction m with n n_ih
   · simp
   · rw [← insert_Icc_eq_Icc_add_one_right]
@@ -50,4 +50,4 @@ aggressiv war, sondern nur eine sehr tiefe Stimme hat.
 
 Mit einem kleinen Erdbeben setzt er sich hin und winkt euch dankend zu."
 -/
-Conclusion "`CONC` Conclusion Babylon L09"
+Conclusion "Conclusion Babylon L09"

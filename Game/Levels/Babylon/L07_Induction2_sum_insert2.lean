@@ -10,7 +10,7 @@ Title ""
 Introduction
 "Direkt neben dem Gaußschen Turm ist wieder ein leerer Bauplatz.  Diesmal steht folgendes auf dem Schild:"
 -/
-Introduction "`INTRO` Intro Babylon L07"
+Introduction "Intro Babylon L07"
 
 open Finset
 

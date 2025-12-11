@@ -98,4 +98,4 @@ Conclusion "
   **Babylonier**:  Das habt ihr gut gemacht.
 "
 -/
-Conclusion "`CONC` Conclusion Babylon L05"
+Conclusion "Conclusion Babylon L05"

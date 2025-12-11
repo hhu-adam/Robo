@@ -13,7 +13,7 @@ warum er steht. Hier zum Beispiel.
 "
 -/
 "
-`INTRO` Intro Babylon L01
+Intro Babylon L01
 "
 
 open Nat Finset
@@ -40,7 +40,7 @@ TheoremTab "∑ Π"
 /-
 Conclusion "**Babylonier**: Sehr gut, das passt!"
 -/
-Conclusion "`CONC` Conclusion Babylon L01"
+Conclusion "Conclusion Babylon L01"
 
 NewDefinition Finset.card
 

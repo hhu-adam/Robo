@@ -10,7 +10,7 @@ Title ""
 /-
 Introduction "Ihr schaut euch zusammen den nächsten Turm an."
 -/
-Introduction "`INTRO` Intro Babylon L02"
+Introduction "Intro Babylon L02"
 
 Statement (I : Finset ℕ) : ∑ i ∈ I, 2 = 2 * card I := by
   /-

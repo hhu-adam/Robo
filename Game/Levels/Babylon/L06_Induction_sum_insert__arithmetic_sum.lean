@@ -20,7 +20,7 @@ Der Weg führt steil bergan.  Der Turm, der euch oben auf dem Berg erwartet, ist
 "
 -/
 
-Introduction "`INTRO` Intro Babylon L06"
+Introduction "Intro Babylon L06"
 
 open Finset
 

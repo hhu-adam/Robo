@@ -16,7 +16,7 @@ Introduction
 Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an.
 "
 -/
-Introduction "`INTRO` Intro Babylon L08"
+Introduction "Intro Babylon L08"
 
 Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   /-
@@ -54,4 +54,4 @@ Conclusion "
 "
 -/
 
-Conclusion "`CONC` Conclusion Babylon L08"
+Conclusion "Conclusion Babylon L08"

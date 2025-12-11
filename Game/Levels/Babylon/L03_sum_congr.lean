@@ -11,7 +11,7 @@ Introduction
 Auf dem Bauschild steht:"
 -/
 
-Introduction "`INTRO` Intro Babylon L03"
+Introduction "Intro Babylon L03"
 
 open Finset
 
