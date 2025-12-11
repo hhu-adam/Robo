@@ -47,7 +47,7 @@ Intro Implis L14: This chapter used the following operations:
 assumption `h₁` using `h`) and `by_cases h : P` (introduce cases `P` and `¬P`)
 "
 
-/-- This kind of logical expression can often be solved via `tauto`. `DOC`-/
+/-- This kind of logical expression can often be solved via `tauto`. -/
 TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
 
 /-- In most cases `tauto` can be used to solve this kind of logical expression. `DOC2`-/

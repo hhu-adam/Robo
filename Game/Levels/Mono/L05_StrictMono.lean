@@ -69,7 +69,7 @@ Statement :
     simp
 
 /--
-`DOC` Every strictly monotonic mapping (between suitable domains and ranges) is injective.
+Every strictly monotonic mapping (between suitable domains and ranges) is injective.
 -/
 TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"
 

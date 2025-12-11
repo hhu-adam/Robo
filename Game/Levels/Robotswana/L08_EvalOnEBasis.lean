@@ -157,7 +157,6 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
 
 -- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
 /--
-`DOC`
 Linear mapping, or 'additive' mappings in general, can be exchanged with a sum.
 -/
 TheoremDoc map_sum as "map_sum" in "∑ Π"
