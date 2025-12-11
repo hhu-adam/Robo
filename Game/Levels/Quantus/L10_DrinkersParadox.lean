@@ -29,7 +29,7 @@ der Eigenschaft, dass alle trinken, wenn sie trinkt.* Genauer gesagt: in jeder n
 **Robo**: Glaube ich schon. Ich glaube sogar, du kannst das beweisen. Hier, probier mal!
 "
 -/
-Introduction "`INTRO` Intro Quantus L10"
+Introduction "Intro Quantus L10"
 
 Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People → Prop) :
     ∃ (x : People), isDrinking x → ∀ (y : People), isDrinking y := by

@@ -7,7 +7,7 @@ Title ""
 
 -- Introduction "Sofort taucht das nächste Blatt auf.
 -- Es scheint, als hätten sie sich diesmal auf einen Kompromiss geeignet."
-Introduction "`INTRO` Intro Quantus L06"
+Introduction "Intro Quantus L06"
 
 open Nat
 
@@ -65,4 +65,4 @@ Conclusion "Diesmal habt ihr die Formalosophinnen offenbar beeindruckt.  Sie nic
 
 Dann geht das Getuschel wieder los."
 -/
-Conclusion "`CONC` Conclusion Quantus L06"
+Conclusion "Conclusion Quantus L06"

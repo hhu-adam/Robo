@@ -11,7 +11,7 @@ Introduction
 Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet.
 "
 -/
-Introduction "`INTRO` Intro Quantus L09"
+Introduction "Intro Quantus L09"
 
 open Nat
 
@@ -94,4 +94,4 @@ Die Frage war wieder zu konkret. Betretenes Schweigen.
 "
 -/
 
-Conclusion "`CONC` Conclusion Quantus L09"
+Conclusion "Conclusion Quantus L09"

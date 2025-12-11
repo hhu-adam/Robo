@@ -138,4 +138,4 @@ NewHiddenTactic «using»
 NewDefinition Even Odd
 
 -- Conclusion "Applaus!"
-Conclusion "`CONC` Conclusion Quantus L04"
+Conclusion "Conclusion Quantus L04"

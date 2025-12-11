@@ -6,7 +6,7 @@ Level 7
 Title "" -- "Für alle"
 
 -- Introduction "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu Euch."
-Introduction "`INTRO` Intro Quantus L07"
+Introduction "Intro Quantus L07"
 
 Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   /-
@@ -35,4 +35,4 @@ Wieder anerkennendes Nicken.
 Wieder Getuschel.
 "
 -/
-Conclusion "`CONC` Conclusion Quantus L07"
+Conclusion "Conclusion Quantus L07"

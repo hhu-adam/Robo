@@ -11,7 +11,7 @@ Introduction
 **Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich brauchen werden.
 "
 -/
-Introduction "`INTRO` Intro Quanus L08"
+Introduction "Intro Quanus L08"
 
 
 open Function

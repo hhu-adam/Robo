@@ -7,7 +7,7 @@ Title ""
 
 -- Introduction
 -- "Eine weitere Frage erreicht euch.  Dieses stammt offenbar aus dem anderen Lager."
-Introduction "`INTRO` Intro Quantus L05"
+Introduction "Intro Quantus L05"
 
 open Nat
 

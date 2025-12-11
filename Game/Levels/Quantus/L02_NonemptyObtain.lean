@@ -12,7 +12,7 @@ Introduction
 Auf der Rückseite steht folgendes.
 "
 -/
-Introduction "`INTRO` Intro Quantus L02"
+Introduction "Intro Quantus L02"
 
 Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
   /-
@@ -44,4 +44,4 @@ Statement (A : Type) (h : Nonempty A) : ∃ a : A, a = a := by
 NewDefinition Exists
 
 -- Conclusion "Ihr erhaltet einen bescheidenen Applaus.  Die Formalosophinnen tuscheln untereinander."
-Conclusion "`CONC` Conclusion Quantus L02"
+Conclusion "Conclusion Quantus L02"
