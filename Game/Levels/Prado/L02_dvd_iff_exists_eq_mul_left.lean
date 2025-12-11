@@ -96,4 +96,4 @@ Guino schaut sich euern Beweis an.
 Das Museum ist zwar noch leer, aber fertig.  Und es ist wirklich gut geworden.  Schaut mal, hier entlang!
 "
 -/
-Conclusion "`CONC` Conclusion Prado L02"
+Conclusion "Conclusion Prado L02"

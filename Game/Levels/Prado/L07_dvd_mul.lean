@@ -28,4 +28,4 @@ NewTheorem Nat.Prime.dvd_mul
 TheoremTab "ℕ"
 
 -- Conclusion "**Du** Du stellst aber wirklich sehr einfache Aufgaben."
-Conclusion "`CONC` conclusion Prado L07"
+Conclusion "Conclusion Prado L07"

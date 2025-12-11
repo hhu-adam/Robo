@@ -16,7 +16,7 @@ Die Aussicht ist nicht schlecht.
 "
 -/
 
-Introduction "`INTRO` Intro Prado L10"
+Introduction "Intro Prado L10"
 
 namespace Nat
 
@@ -28,7 +28,7 @@ Statement : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   · intro p hp h
     -- Hint (hidden := true) "**Robo**:
     -- Schau noch einmal genau durch die Aussagen, die wir schon gezeigt hatten."
-    Hint (hidden := true) "`COMMENT` Remind former proof"
+    Hint (hidden := true) "Remind former proof"
     rw [even_iff_two_dvd] at h
     rw [prime_def] at hp
     obtain ⟨h2, hprime ⟩ := hp
@@ -51,4 +51,4 @@ Ihr bedankt euch also artig für die Führung, zeigt euch tief beeindruckt
 von der hiesigen Eisbaukunst, und fliegt weiter."
 -/
 
-Conclusion "`CONC` Conclusion Prado L10"
+Conclusion "Conclusion Prado L10"

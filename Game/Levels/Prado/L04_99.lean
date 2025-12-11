@@ -12,7 +12,7 @@ Introduction
 Er fühlt sich ignoriert. Um eure Aufmerksamkeit zu bekommen, gibt er euch folgende Aufgabe.
 "
 -/
-Introduction "`INTRO` Intro Prado L04"
+Introduction "Intro Prado L04"
 
 namespace Nat
 

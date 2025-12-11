@@ -12,7 +12,7 @@ Introduction"
 
 **Robo**: Mal sehen, ob ich eine Aufgabe zu Primzahlen auf Lager habe … Diese hier vielleicht?"
 -/
-Introduction "`INTRO` Intro Prado L06"
+Introduction "Intro Prado L06"
 
 namespace Nat
 

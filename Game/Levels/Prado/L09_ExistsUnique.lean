@@ -12,7 +12,7 @@ Introduction"
 "
 -/
 
-Introduction "`INTRO` Intro Prado L09"
+Introduction "Intro Prado L09"
 
 namespace Nat
 

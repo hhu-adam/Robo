@@ -14,7 +14,7 @@ Introduction
 **Robo**:  Wie wäre es hiermit?
 "
 -/
-Introduction "`INTRO` Intro Prado L05"
+Introduction "Intro Prado L05"
 
 /---/
 TheoremDoc Nat.not_dvd_of_between_consec_multiples as "not_dvd_of_between_consec_multiples" in "ℕ"

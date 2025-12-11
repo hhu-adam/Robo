@@ -11,7 +11,7 @@ Introduction"**Robo**:  Ja, ja.  Wissen wir.
 Er formuliert die Aussage schnell in Leansch und hält sie dir hin.
 "
 -/
-Introduction "`INTRO` Intro Prado L01"
+Introduction "Intro Prado L01"
 
 /---/
 TheoremDoc Nat.prime_two as "prime_two" in "ℕ"

@@ -12,7 +12,7 @@ Introduction
 "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.
 "
 -/
-Introduction "`CONC` Intro Prado L03"
+Introduction "Intro Prado L03"
 
 /---/
 TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"

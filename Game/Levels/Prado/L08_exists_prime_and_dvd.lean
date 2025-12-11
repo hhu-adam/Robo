@@ -13,7 +13,7 @@ ob er euch nicht eine Aufgabe stellen möchte.
 Er gibt euch folgende Variation seiner vorherigen Aufgabe.
 "
 -/
-Introduction "`INTRO` Intro Prado L08"
+Introduction "Intro Prado L08"
 
 namespace Nat
 
@@ -52,4 +52,4 @@ Conclusion "
   **Robo**:  Halt!  „Genau eine“ hatten wir noch nicht.
 "
 -/
-Conclusion "`CONC` Conclusion Prado L08"
+Conclusion "Conclusion Prado L08"
