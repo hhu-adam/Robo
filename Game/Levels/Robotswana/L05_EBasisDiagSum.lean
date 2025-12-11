@@ -62,7 +62,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     Hint "Try `matrix_eq_sum_ebasis` not `matrix_eq_sum_single`"
   rw [matrix_eq_sum_ebasis 1] -- Lvl 3
   -- Hint "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist."
-  Hint "`STORY` explanation of equal sums"
+  Hint "Explanation of equal sums"
   /-
   Hint (hidden := true) "
     **Robo**:  Dann solltest du vermutlich wieder `sum_congr` anwenden.
