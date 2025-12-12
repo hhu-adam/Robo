@@ -6,6 +6,6 @@ images/tmp-download/
 *~
 min_placeholders/
 .vscode/
-.i18n/min_template/
-.i18n/old_template/
-.i18n/template_with_english_rpc_handler_strings/
+.i18n/min_template/*
+.i18n/old_template/*
+.i18n/template_with_english_rpc_handler_strings/*
