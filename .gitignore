@@ -9,3 +9,6 @@ min_placeholders/
 .i18n/min_template/*
 .i18n/old_template/*
 .i18n/template_with_english_rpc_handler_strings/*
+.i18n/old_template/de_game.pot
+.i18n/template_with_english_rpc_handler_strings/Game.pot
+.i18n/min_template/min_Game.pot
