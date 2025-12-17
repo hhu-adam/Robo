@@ -25,7 +25,7 @@ Statement (A B C : Set ℕ) :
   tauto
 
 /-- -/
-DefinitionDoc Set.compl as "·ᶜ"
+DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 
 NewDefinition Set.compl

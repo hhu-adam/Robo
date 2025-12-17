@@ -39,7 +39,7 @@ Dies ist eine spezialisierte Form der generellen `single i j (a : R)`,
 welche auch nicht-quadratisch sein kann und einen beliebigen Wert `a` aus einem beliebigen
 Ring annehmen kann. Wir benutzen hier `E` einfach als Abkürzung.
 -/
-DefinitionDoc Matrix.E as "E"
+DefinitionDoc Matrix.E as "E" in "Matrix"
 
 /---/
 TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"

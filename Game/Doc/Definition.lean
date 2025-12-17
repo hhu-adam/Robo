@@ -12,7 +12,7 @@ A mapping `f` is injectiv, if:
 ∀ a b, f a = f b → a = b
 ```
 -/
-DefinitionDoc Function.Injective as "Injective"
+DefinitionDoc Function.Injective as "Injective" in "Fun"
 
 
 /--
@@ -22,13 +22,13 @@ A mapping `f` is surjectiv, if:
 ∀ b, ∃ a, f a = b
 ```
 -/
-DefinitionDoc Function.Surjective as "Surjective"
+DefinitionDoc Function.Surjective as "Surjective" in "Fun"
 
 
 /--
 A mapping ist bijectiv, if it is injektiv and surjektiv.
 -/
-DefinitionDoc Function.Bijective as "Bijective"
+DefinitionDoc Function.Bijective as "Bijective" in "Fun"
 
 
 /--
@@ -38,7 +38,7 @@ A mapping `f` is strictly monotonous, if:
 ∀ ⦃a b⦄, a < b → f a < f b
 ```
 -/
-DefinitionDoc StrictMono as "StrictMono"
+DefinitionDoc StrictMono as "StrictMono" in "Fun"
 
 
 /-- `Function.RightInverse f g` is defined as `LeftInverse g f`.
@@ -47,7 +47,7 @@ In other words: `∀ x, g (f x) = x`.
 You have to write `Function.RightInverse`  instead of `RightInverse`,
 as `RightInverse` is ambigous in Leanic.
 -/
-DefinitionDoc Function.RightInverse as "RightInverse"
+DefinitionDoc Function.RightInverse as "RightInverse" in "Fun"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
 -- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
@@ -56,7 +56,7 @@ DefinitionDoc Function.RightInverse as "RightInverse"
 `LeftInverse g f` means `g ∘ f = id`, or more exactly:
 `∀ x, g (f x) = x`, as can be seen with `unfold`.
 -/
-DefinitionDoc Function.LeftInverse as "LeftInverse"
+DefinitionDoc Function.LeftInverse as "LeftInverse" in "Fun"
 
 
 /--
@@ -64,32 +64,32 @@ DefinitionDoc Function.LeftInverse as "LeftInverse"
 
 `HasLeftInverse f` means, that `f` has left inverse.
 -/
-DefinitionDoc Function.HasRightInverse as "Has…Inverse"
+DefinitionDoc Function.HasRightInverse as "Has…Inverse" in "Fun"
 
 
 /--
 For a self-mapping `f : A → A` and an element `a : A`, `IsFixedPt f a` is the expression `f a = a`.
 Look up definition with `unfold IsFixedPt`.
 -/
-DefinitionDoc Function.IsFixedPt as "IsFixedPt"
+DefinitionDoc Function.IsFixedPt as "IsFixedPt" in "Fun"
 
 /--
 For a mapping `f : A → A`, `fixedPoints f : Set A` is the set of fixed points of `f `.
 Look up definition with `unfold fixedPoints`.
 -/
-DefinitionDoc Function.fixedPoints as "fixedPoints"
+DefinitionDoc Function.fixedPoints as "fixedPoints" in "Fun"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their union.
 `∪` is written as `\\union`.
 -/
-DefinitionDoc Set.union as "∪"
+DefinitionDoc Set.union as "∪" in "Set"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
 `∩` is written as `\\inter`.
 -/
-DefinitionDoc Set.inter as "∩"
+DefinitionDoc Set.inter as "∩" in "Set"
 
 /--
 For a mapping `f : A → B`, `range f` is the full image set of `f`:
@@ -103,21 +103,22 @@ Is a diffierent notation for `f '' univ`.
 x ∈ range f ↔ ∃ a, f a = b
 ```
 -/
-DefinitionDoc Set.range as "range"
+DefinitionDoc Set.range as "range" in "Set"
 
 /--
 For a mapping `f : A → B`, `image f : Set A → Set B`
 is one of the induced mappings on the power sets –
 it maps a subset of `A` to the image `f '' A` of this subset under `f`.
 -/
-DefinitionDoc Set.image as "image"
+DefinitionDoc Set.image as "image" in "Set"
 
 /--
 For a mapping `f : A → B`, `preimage f : Set B → Set A`
 is one of the induced mappings on the power sets –
 it maps a subset of `B` to the preimage `f ⁻¹' A` of this subset under `f`.
 -/
-DefinitionDoc Set.preimage as "preimage"
+DefinitionDoc Set.preimage as "preimage" in "Set"
+
 
 /--
 For a mapping `f : A → B` and a subset `S` of `A`,
@@ -126,7 +127,7 @@ f '' S = {f a | a ∈ S} = {b | ∃ a ∈ S, f a = b}
 ```
 is its image under `f`.  Note the space between `f` and `''`.
 -/
-DefinitionDoc Set.fimage as "f ''"
+DefinitionDoc Set.fimage as "f ''" in "Set"
 
 /--
 For a mapping `f : A → B` and a subset `T` of `B`,
@@ -137,7 +138,7 @@ is its preimage under `f`.
 You write this as `f \-1'`.
 Note the space between `f` and `\-1'`.
 -/
-DefinitionDoc Set.fpreimage as "f ⁻¹'"
+DefinitionDoc Set.fpreimage as "f ⁻¹'" in "Set"
 
 /--
 The notation `fun x ↦ _` is used to define “anonymous functions.”
@@ -145,7 +146,7 @@ For example, `fun (x : ℤ) ↦  -x` defines the negation `ℤ → ℤ` without 
 You write the arrow `↦` as `\maps` or `\mapsto`.
 Alternatively, instead of `↦` you can use `=>`.
 -/
-DefinitionDoc Symbol.function as "fun x ↦ _"
+DefinitionDoc Symbol.function as "fun x ↦ _" in "Fun"
 
 
 /- MENGEN -/
@@ -154,7 +155,7 @@ DefinitionDoc Symbol.function as "fun x ↦ _"
 `A : Set T` means that `A` is a subset of `T`
 (or, more precisely, that `A` is a set consisting of elements of type `T`).
 -/
-DefinitionDoc Set as "Set"
+DefinitionDoc Set as "Set" in "Set"
 
 /--
 For a subset `A : Set T` and an element `a` from `T` (more precisely: of type `T`), `a ∈ A` means that
@@ -162,7 +163,7 @@ For a subset `A : Set T` and an element `a` from `T` (more precisely: of type `T
 For subsets of the form `A = { a : T | P a }`, you can simplify the statement
 `a ∈ A` with `simp` to `P a`.
 -/
-DefinitionDoc Mem as "∈"
+DefinitionDoc Mem as "∈" in "Set"
 
 /--
 For a predicate `P : T → Prop`, `{ a : T | P a } : Set P` is the subset
@@ -173,13 +174,13 @@ consisting of all elements that satisfy the predicate.  For example,
 is the set of even natural numbers.
 You can simplify the statement `a ∈ { a : T | P a }`, using `simp`, to `P a` .
 -/
-DefinitionDoc setOf as "{·|·}"
+DefinitionDoc setOf as "{·|·}" in "Set"
 
 /--
 For two subsets `(A B : Set T)`, `A\B` is the difference between `A` and `B`,
 consisting of all elements of `A` that are not in `B`.
 -/
-DefinitionDoc SDiff as "·\\·"
+DefinitionDoc SDiff as "·\\·" in "Set"
 
 /--
 For `A B : Set T`, `A ⊆ B` means that `A` is contained in `B`.
@@ -194,7 +195,7 @@ you can use `have hb := h ha` to obtain the statement `hb : a ∈ B`.
 
 You write `⊆` as `\subset`.
 -/
-DefinitionDoc Subset as "⊆"
+DefinitionDoc Subset as "⊆" in "Set"
 
 /--
 `∅ : Set T` is the empty subset.
@@ -206,7 +207,7 @@ statement `∀ (x : T), x ∉ s`.
 
 `∅` is written as `\emptyset`.
 -/
-DefinitionDoc Set.empty as "∅"
+DefinitionDoc Set.empty as "∅" in "Set"
 
 /--
 `univ : Set T` is the “subset” consisting of *all* elements of type `T`.
@@ -214,27 +215,27 @@ DefinitionDoc Set.empty as "∅"
 With `rw [eq_univ_iff_forall]`, you convert an equation of the form `S = univ` into the
 statement `∀ (x : T), x ∈ S`.
 -/
-DefinitionDoc Set.univ as "univ"
+DefinitionDoc Set.univ as "univ" in "Set"
 
 /--
 For a finite subset `A : Finset T` and an element `a : T`,
 `insert a A` is another way of writing `A ∪ {a}`.
 If `a` is already in `A`, then obviously `insert a A = A`.
 -/
-DefinitionDoc Finset.insert as "insert"
+DefinitionDoc Finset.insert as "insert" in "Finset"
 
 /--
 For a finite subset `A : Finset T` and an element `a : T`,
 `erase A a` is another way of writing `A \ {a}`.
 If `a` is not in `A` at all, then obviously `erase A a = A`.
 -/
-DefinitionDoc Finset.erase as "erase"
+DefinitionDoc Finset.erase as "erase" in "Finset"
 
 /--
 For a finite subset `A : Finset T`, `card A : ℕ` is the cardinality of `A`,
 i.e., the number of elements in `A`.
 -/
-DefinitionDoc Finset.card as "card"
+DefinitionDoc Finset.card as "card" in "Finset"
 
 /--
 For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
@@ -296,7 +297,7 @@ For a subset `A : Set T`, `Set.Finite A` means that `A` has only a finite number
 If `h : Set.Finite A` is given as an assumption, then `h.toFinset : Finset T` is the same subset `A`,
 but now explicitly understood as a finite subset.
 -/
-DefinitionDoc Set.Finite as "Set.Finite"
+DefinitionDoc Set.Finite as "Set.Finite" in "Set"
 
 
 /- LOGIK -/
@@ -308,7 +309,7 @@ unprovable.
 See also `(True : Prop)` and `(False : Prop)` for the unconditionally true and false
 statements, respectively.
 -/
-DefinitionDoc «Prop» as "Prop"
+DefinitionDoc «Prop» as "Prop" in "Logic"
 
 /--
 `A ∧ B` (“and”) is the statement that both `A` and `B` are true.
@@ -322,7 +323,7 @@ The tactic `constructor` allows you to prove the two sub-statements `A` and `B` 
 With `obtain ⟨h₁, h₂⟩ := h`, you break down an assumption of the form `h : A ∧ B`
 into its components `h₁ : A` and `h₂ : B`.
 -/
-DefinitionDoc And as "∧"
+DefinitionDoc And as "∧" in "Logic"
 
 /--
 `A ∨ B` (“or”) is the statement that at least one of the statements `A`, `B` is true.
@@ -342,7 +343,7 @@ To do this, use the tactic
 obtain h | h := h
 ```
 -/
-DefinitionDoc Or as "∨"
+DefinitionDoc Or as "∨" in "Logic"
 
 /--
 For `A B : Prop`, `A → B` is the implication “`A` implies `B`.”
@@ -357,7 +358,7 @@ and then you must prove `B`.
 
 To use an implication among your assumptions, use the tactic `apply`.
 -/
-DefinitionDoc Arrow as "→"
+DefinitionDoc Arrow as "→" in "Logic"
 
 /--
 `A ↔ B` means that statements `A` and `B` are logically equivalent (“if and only if”).
@@ -374,7 +375,7 @@ You can break down an assumption of the form `h : A ↔ B` using `obtain ⟨h₁
 However, you can also refer directly to these components with `h.mp` and `h.mpr`.
 (The abbreviation `mp` stands for “modus ponens”.)
 -/
-DefinitionDoc Iff as "↔"
+DefinitionDoc Iff as "↔" in "Logic"
 
 /--
 Existential quantifier: If `P : A → Prop` is a predicate, then
@@ -393,7 +394,7 @@ you construct a suitable element `a` and then use the `use` tactic (`use a`).
 You can decompose an assumption of the form `h : ∃ a : A, P a` into its components using
 `choose a ha using h` or `obtain ⟨a, ha⟩ := h` into `a : A` and `ha : P a`.
 -/
-DefinitionDoc Exists as "∃"
+DefinitionDoc Exists as "∃" in "Logic"
 
 /--
 Existential quantifier: If `P : A → Prop` is a predicate, then
@@ -427,7 +428,7 @@ into its components
 ```
 .
 -/
-DefinitionDoc ExistsUnique as "∃!"
+DefinitionDoc ExistsUnique as "∃!" in "Logic"
 
 
 /--
@@ -441,7 +442,7 @@ If `h : ∀ a : A, P a` is an assumption and `a₀ : A` is a concrete element, t
 
 You can also use `specialize h a₀` to restrict the given assumption
 over all possible `a` to an assumption `h : P a₀` over this concrete `a₀`.-/
-DefinitionDoc Forall as "∀"
+DefinitionDoc Forall as "∀" in "Logic"
 
 
 /--
@@ -455,7 +456,7 @@ The tactics `tauto` and `decide` conclude every proof with `True` as the proof t
 
 As an assumption, `True` is not helpful at all.
 -/
-DefinitionDoc True as "True"
+DefinitionDoc True as "True" in "Logic"
 
 /--
 The statement `False : Prop` is always false.
@@ -474,7 +475,7 @@ you can use `apply h` to change the proof goal to `A`
 If you have `False` as an assumption, you can immediately end the proof with `contradiction`
 – because, as is well known, any other statement follows from a false statement.
 -/
-DefinitionDoc False as "False"
+DefinitionDoc False as "False" in "Logic"
 
 /--
 `¬ A` is the logical negation of `A`.
@@ -483,17 +484,17 @@ It is implemented internally as `A → False`.
 Useful tactics are: `push_neg`, `by_contra`, `contrapose`.
 You can also apply an assumption of the form `h : ¬ A` using `apply` to the proof target `False`.
 -/
-DefinitionDoc Not as "¬"
+DefinitionDoc Not as "¬" in "Logic"
 
 /--
 Useful tactics for equality are: `rfl`, `rw`, `trans`
 -/
-DefinitionDoc Eq as "="
+DefinitionDoc Eq as "=" in "Logic"
 
 /--
 Inequality `x ≠ y` is defined as `¬ x = y`.  You can see this with `unfold Ne`.
 -/
-DefinitionDoc Ne as "≠"
+DefinitionDoc Ne as "≠" in "Logic"
 
 
 /- NATÜRLICHE ZAHLEN -/
@@ -578,4 +579,4 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 /--
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
-DefinitionDoc Matrix.trace as "trace"
+DefinitionDoc Matrix.trace as "trace" in "Matrix"
