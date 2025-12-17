@@ -2831,13 +2831,13 @@ msgstr ""
 #. y ≤ \\tfrac{34}{7}
 #. $$
 #: Game.Levels.Luna.L07_Linarith2
-msgid "\n"
+msgid
 "Given\n"
 "\n"
 "§0\n"
 "\n"
 "Show\n"
-"§1\n"
+"§1"
 ""
 msgstr ""
 
