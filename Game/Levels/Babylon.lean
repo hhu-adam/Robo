@@ -18,7 +18,7 @@ Title "Babylon"
 
 Image "images/Babylon.png"
 
-
+/-
 Introduction "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme
 gestapelt sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte
 feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.
@@ -37,3 +37,5 @@ Dich beschleicht ein ungutes Gefühl.
 
 **Babylonier**: Ganz einfach! Ein Stein nach dem anderen.
 "
+-/
+Introduction " Intro Babylon"

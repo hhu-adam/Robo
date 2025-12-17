@@ -5,6 +5,7 @@ Level 2
 
 Title "" -- "Revert"
 
+/-
 Introduction
 "
 Der Operationsleiter holt aus einem Container einen Stapel Papier hervor.
@@ -14,8 +15,11 @@ noch ein bisschen helfen könntet.
 
 Er übergibt Euch das oberste Blatt.
 "
+-/
+Introduction "Intro Implis L02"
 
 Statement (A B : Prop) (hA : A) (h : A → B) : B := by
+  /-
   Hint "
     **Operationsleiter**: Das ist von einem Kollegen.
 
@@ -27,16 +31,24 @@ Statement (A B : Prop) (hA : A) (h : A → B) : B := by
     etwa mit `mopo` oder so etwas weiter?
 
     **Robo**: Okay, nein, sorry. `mopo` gibt es nicht. Probier lieber `revert {hA}`."
+  -/
+  Hint "You cannot use `mopo`. There is no `mopo`. Try `revert {hA}`"
   revert hA
+  /-
   Hint "
     **Du**: Aha. `revert` ist quasi `intro` rückwärts.
 
     **Robo**: Genau. `intro` nimmt die Prämisse aus einer Implikation `{A} \\to {B}` im
     Beweisziel und macht daraus eine Annahme. `revert` nimmt umgekehrt eine Annahme und
     setzt sie als Implikationsprämisse vor das Beweisziel. Aber nun mach schon fertig."
+  -/
+  Hint "`revert` is like `intro` 'backwards'. `intro` takes the premisse out of `{A} \\to {B}`
+  and makes it into an assumption. `revert` takes an assumption and sets it as the implication premisse
+  in front of the goal."
   assumption
 
-Conclusion "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
+-- Conclusion "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
+Conclusion "Conclusion Implis L02"
 
 NewTactic revert
 DisabledTactic tauto

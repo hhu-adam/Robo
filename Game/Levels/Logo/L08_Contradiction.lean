@@ -6,19 +6,26 @@ Level 8
 
 Title "" -- "Aus Falschem folgt vieles."
 
+/-
 Introduction
 "
 Auftritt zweiter Querulant.
 "
+-/
+Introduction "Intro Logo L08"
 
 /--  -/
 Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
+  /-
   Hint "
     **Du** Ist `{n} ≠ {n}` nicht auch ein Widerspruch?
 
     **Robo**: Probiers mal!"
+  -/
+  Hint "Check that `{n} ≠ {n}` is contradiction by the Contradiction tactic"
   contradiction
 
+/-
 Conclusion
 "
 **Du**: Ja, scheint funktioniert zu haben.
@@ -31,6 +38,8 @@ Und gleich 38, und gleich 39, …
 
 **Du**: Okay, okay, verstehe.
 "
+-/
+Conclusion "Conclusion Logo L08"
 
 NewDefinition Ne
 DisabledTactic tauto

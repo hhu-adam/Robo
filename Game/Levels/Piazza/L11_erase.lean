@@ -5,6 +5,7 @@ Level 11
 
 Title ""
 
+/-
 Introduction "
 **Mem**:  Hey, Fin, was machst Du denn da?
 
@@ -17,10 +18,13 @@ Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.
 
 Fin erklärt sich folgendermaßen.
 "
+-/
+Introduction "Intro Piazza L11"
 
 open Set
 
 Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
+  /-
   Hint "
     **Du**:  Was bedeutet denn hier jetzt `Finset`?
 
@@ -28,6 +32,9 @@ Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
     Macht aber für die Frage eigentlich keinen Unterschied.
     Links steht `A` ohne `a`, rechts steht auch `A` ohne `a`.
     "
+  -/
+  Hint "`Finset` here means that `A` belongs to the finite subsets of ℕ.
+  Left it states `A` without `a` and on the right it also says `A` without `a`"
   ext
   simp
   tauto

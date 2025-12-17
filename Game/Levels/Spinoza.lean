@@ -15,6 +15,7 @@ Title "Spinoza"
 
 Image "images/Spinoza.png"
 
+/-
 Introduction "
 **Robo**: Ich glaube, das ist Spinoza, einer der ganz wenigen Asteroiden vom Type QED. Schnell. Wir müssen uns ein bisschen beeilen, sonst verpassen wir ihn.
 
@@ -33,3 +34,5 @@ Benedictus schüttelt den Kopf.
 
 **Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und Ihr müsst bald wieder weiter, sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei.
 "
+-/
+Introduction " Intro Spinoza"

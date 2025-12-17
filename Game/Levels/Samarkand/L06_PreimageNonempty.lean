@@ -7,11 +7,12 @@ Level 6
 
 Title ""
 
-Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
-
+-- Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
+Introduction "Intro Samarkand L06"
 
 Statement {A B : Type} (f : A → B)  (y : B) :
      f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by
+  /-
   Hint "
    **Du**:  Das soll wohl heißen:  die Faser von `b` ist genau dann nicht-leer, wenn `b` ein Urbild besitzt.
    Mal wieder ziemlich offensichtlich.
@@ -20,10 +21,16 @@ Statement {A B : Type} (f : A → B)  (y : B) :
    Aber zum Glück haben wir schon `eq_empty_iff_forall_not_mem` gezeigt.
    Um das anzuwenden, musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit `unfold Ne`.
   "
+  -/
+  Hint "Explain that `b` is not empty iff `b` has pre-image. Remind of `eq_empty_iff_forall_not_mem` that can be used after `unfold Ne`"
   unfold Ne
   rw [eq_empty_iff_forall_not_mem]
   simp
 
+   /-
   Conclusion "
    **Arapuka**: Ihr habt recht.  Da hätte ich selbst drauf kommen können.
   "
+  -/
+
+  Conclusion "Conclusion Samarkand L06"

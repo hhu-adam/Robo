@@ -5,18 +5,25 @@ Level 4
 
 Title "" -- "Implikation"
 
+/-
 Introduction
 "
 **Operationsleiter**: Das hier ist jetzt wieder ein lokales Problem.
 "
+-/
+Introduction "Intro Implis L04"
 
 Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
+  /-
   Hint "
     **Du**: Ich soll Implikationen $A \\Rightarrow B \\Rightarrow C$ zu $A \\Rightarrow C$
     kombinieren?
 
     **Robo**: Vielleicht fängst du wieder mit `intro` an?"
+  -/
+  Hint "Combine implications $A \\Rightarrow B \\Rightarrow C$ into $A \\Rightarrow C$. Try `intro`"
   intro h
+  /-
   Hint "
     **Operationsleiter**: Also *ich* würde an dieser Stelle jetzt erst einmal
     `have hB : B` festhalten.
@@ -26,20 +33,29 @@ Statement (A B C : Prop) (f : A → B) (g : B → C) : A → C := by
 
     **Robo** *(zu dir)*: Los, probiers mal!
   "
+  -/
+  Hint "Try holding onto `have hB : B`"
   have hB : B := by
+    /-
     Hint "
     **Robo**: Jetzt kannst du also erst einmal `B` beweisen …
   "
+  -/
+    Hint "Prove `B`"
     apply f
     assumption
+  /-
   Hint "
     **Robo**: … und nachdem du das geschafft hast, hast du nun `{hB} : {B}` als
     Annahme zur Verfügung.
   "
+  -/
+  Hint "Now assumption `{hB} : {B}` is available"
   apply g
   assumption
 
-Conclusion "**Operationsleiter**: Ihr seid echt super!"
+-- Conclusion "**Operationsleiter**: Ihr seid echt super!"
+Conclusion "Conclusion Implis L04"
 
 NewTactic «have»  -- introduced here already so that Luna becomes independent of Spinoza
 DisabledTactic tauto

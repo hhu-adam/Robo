@@ -6,6 +6,7 @@ Level 2
 
 Title ""
 
+/-
 Introduction
 "
 **Du** *(flüsternd)*: Robo, meinst du, wir sollen es ihm sagen?
@@ -19,6 +20,10 @@ Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 **Robo**: Na schön. Also  „`a` teilt `b`“ schreibst du als `a ∣ b`, wobei du den senkrechten Strich
   als `\\|` oder `\\dvd` schreiben musst.  Probier zum Beispiel mal diese Aufgabe hier.
 "
+-/
+Introduction "Intro Prado L02: Prove that `2` is only even prime by using the expression „`a` divides `b`“.
+„`a` divides `b`“ is written as `a ∣ b`, where the vertical bar can be either written as `\\|` or `\\dvd`
+"
 
 -- This is `Nat.dvd_add`, but currently that statement is not needed anywhere.
 -- /---/
@@ -27,6 +32,7 @@ Lass uns mal probieren.  Wie schreib ich zum Beispiel „`a` teilt `b`“?
 namespace Nat
 
 Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
+  /-
   Hint "
   **Robo**: Definiert ist `a ∣ b` natürlich als `∃ k, b = a * k`.
   Am besten schreibst du das für den Anfang überall explizit aus:
@@ -34,18 +40,29 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   rw [dvd_iff_exists_eq_mul_left] at *
   ```
   "
+  -/
+  Hint "`a ∣ b` is defined as `∃ k, b = a * k`. State is explicitly with
+  ```
+  rw [dvd_iff_exists_eq_mul_left] at *
+  ```
+  "
   rw [dvd_iff_exists_eq_mul_left] at * -- optional
+  /-
   Hint (hidden := true) "
     **Du**:  Und jetzt mache ich mit `obtain` und `use` weiter?
 
     **Robo**: Genau.  Als nächstes nimmst du die Annahmen mit `obtain ⟨x ,hx⟩ := _`
   usw. auseinander."
+  -/
+  Hint "Continue with `obtain` and `use`. Fristly diect assumptions with `obtain ⟨x ,hx⟩ := _`"
   obtain ⟨x, h⟩ := h
   obtain ⟨y, g⟩ := g
-  Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass
-  `{b} + {c} = {a} * _` gilt."
+  -- Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass
+  -- `{b} + {c} = {a} * _` gilt."
+  Hint (hidden := true) "Try `use _` such that `{b} + {c} = {a} * _`"
   use x + y
-  Hint (hidden := true) "**Robo**: Mit ein bisschen umschreiben kann man sicher `ring` verwenden."
+  -- Hint (hidden := true) "**Robo**: Mit ein bisschen umschreiben kann man sicher `ring` verwenden."
+  Hint (hidden := true) "Rewrite so you can use `ring`"
   rw [h, g]
   Branch
     linarith  -- works here, but omega does not!
@@ -68,6 +85,7 @@ NewTheorem dvd_iff_exists_eq_mul_left
 
 TheoremTab "ℕ"
 
+/-
 Conclusion "**Guino**:  Was flüstert ihr denn da?
 
 **Du**:  Ach, nichts.  Robo versucht mich nur daran zu erinnern, was genau eine Primzahl ist.
@@ -77,3 +95,5 @@ Guino schaut sich euern Beweis an.
 **Guino**: Nicht schlecht, nicht schlecht.  Aber lasst uns doch ein bisschen weitergehen.
 Das Museum ist zwar noch leer, aber fertig.  Und es ist wirklich gut geworden.  Schaut mal, hier entlang!
 "
+-/
+Conclusion "Conclusion Prado L02"

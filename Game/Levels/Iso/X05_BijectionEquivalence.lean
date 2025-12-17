@@ -6,10 +6,13 @@ Level 5
 
 Title "Bijection of Equivalence"
 
+/-
 Introduction
 "
 In this level you show that there every bijection gives rise to an equivalence.
 "
+-/
+Introduction "Intro Iso X05"
 
 open Function
 

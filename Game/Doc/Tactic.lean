@@ -1,44 +1,44 @@
 import GameServer.Commands
 
 /--
-Mit `apply` wendest du eine Implikation `hAB : A → B` an:
+With `apply`, you apply an implication `hAB : A → B`:
 
-| vorher | Taktik           | nachher |
+| before | tactic           | after |
 |:------------ |:---------------- |:-------- |
 | `⊢ B`        | `apply hAB`      | `⊢ A`    |
 | `h : A `     | `apply hAB at h` | `h : B`  |
 
-In beiden Fällen kann die Implikation `hAB` wahlweise
-als Annahme gegeben oder ein bereits bekanntes Lemma sein.
+In both cases, the implication `hAB` can either be
+given as an assumption or be an already known lemma.
 -/
 TacticDoc apply
 
 /--
-Die Taktik `assumption` schließt den Beweis, wenn eine der Annahmen genau dem Beweisziel entspricht.
+The `assumption` tactic closes the proof if one of the assumptions corresponds exactly to the proof target.
 -/
 TacticDoc assumption
 
 /--
-Die Taktik `by_cases h : P` beginnt eine Fallunterscheidung, ob `P` wahr oder falsch ist.
-Zum Beispiel unterscheidet `by cases h : a = b` die Fälle `a = b` und `a ≠ b`.
+The tactic `by_cases h : P` begins a case distinction as to whether `P` is true or false.
+For example, `by cases h : a = b` distinguishes between the cases `a = b` and `a ≠ b`.
 
-Das Beweisziel wird hierzu dupliziert, und
-in der ersten „Kopie“ wird die Annahme `(h : P)` hinzugefügt,
-in der zweiten „Kopie“ die Annahme `(h : ¬P)`.
+The proof goal is duplicated for this purpose, and
+the assumption `(h : P)` is added to the first “copy,”
+while the assumption `(h : ¬P)` is added to the second “copy.”
 -/
 TacticDoc by_cases
 
 /--
-Die Taktik `by_contra h` leitet einen Widerspruchsbeweis ein.
-Ist `P` dein aktuelles Beweisziel, so generiert `by_contra h` eine neue Annahme `(h : ¬ P)`
-und setzt das Beweisziel auf `False`.
+The tactic `by_contra h` initiates a proof by contradiction.
+If `P` is your current proof goal, `by_contra h` generates a new assumption `(h : ¬ P)`
+and sets the proof goal to `False`.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-* Am Ende eines Widerspruchsbeweises steht gewöhnlich `contradiction`:
-diese Taktik schließt den Beweis, wenn sie zwei offensichtlich widersprüchliche Annahmen findet.
-* Ist das Beweisziel von der Form `A → B`, kannst du mit `contrapose`
-einen Beweis durch Kontraposition beginnen.
+* At the end of a proof by contradiction, there is usually `contradiction`:
+this tactic closes the proof when it finds two obviously contradictory assumptions.
+* If the proof goal is of the form `A → B`, you can use `contrapose`
+to start a proof by contraposition.
 -/
 TacticDoc by_contra
 
@@ -65,65 +65,63 @@ TacticDoc change
 -/
 
 /--
-Eine Annahme der Form
+An assumption of the form
 ```
 h : ∃ (b : B), P b
 ```
-kannst du mit
-`choose b hb using h` in die Bestandteile `b : A` und `hb : P b`
-zerlegen.
+can be decomposed, using `choose b hb using h`, into the components `b : A` and `hb : P b`.
 
-Allgemeiner kannst du `choose` verwenden, um Elemente mit dem Auswahlaxiom zu wählen:
-aus einer Annahme der Form
+More generally, you can use `choose` to select elements using the choice axiom:
+from an assumption of the form
 ```
 h : ∀ (a : A), ∃ (b : B), P a b
 ```
-extrahiert `choose f hf using h`
-eine Abbildung `f : A → B` und die Annahme `hf : ∀ (a : A), P a (f a)`.
+extracts `choose f hf using h`
+a mapping `f : A → B` and the assumption `hf : ∀ (a : A), P a (f a)`.
 
-(Hier ist `P : A → (B → Prop)` ein Prädikat, das von zwei Variablen `a` und `b` abhängt.)
+(Here, `P : A → (B → Prop)` is a predicate that depends on two variables `a` and `b`.)
 -/
 TacticDoc choose
 
 
 /--
-Die Taktik `constructor` teilt ein Beweisziel in seine Bestandteile auf:
+The `constructor` tactic breaks down a proof goal into its constituent parts:
 
-| vorher | nachher                |
+| before | after                |
 |:------------ |:----------------------- |
-| `⊢ A ∧ B`    | `⊢ A` und `⊢ B`         |
-| `⊢ A ↔ B`    | `⊢ A → B` und `⊢ B → A` |
+| `⊢ A ∧ B`    | `⊢ A` and `⊢ B`         |
+| `⊢ A ↔ B`    | `⊢ A → B` and `⊢ B → A` |
 
-## Freunde und Verwandte
+## Friends and relatives
 
-* Eine *Annahme* zerlegst du mit `obtain` in ihre Bestandteile.
-* Möchtest du `A ∨ B` beweisen, musst du dich mit `left` bzw. `right` für eine Seite entscheiden.
+* You can break down an *assumption* into its components using `obtain`.
+* If you want to prove `A ∨ B`, you have to choose one side using `left` or `right`.
 -/
 TacticDoc constructor
 
 /--
-Die Taktik `contradiction` schließt den Beweis, wenn sie einen Widerspruch in den Annahmen findet.
-Ein solcher Widerspruch kann zum Beispiel folgendermaßen aussehen:
+The tactic `contradiction` concludes the proof if it finds a contradiction in the assumptions.
+Such a contradiction can look like this, for example:
 
 * `h : n ≠ n`
-* `h : A` und `h' : ¬A`
+* `h : A` and `h' : ¬A`
 * `h : False`
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Normalerweise wird `contradiction` benutzt, um einen Widerspruchsbeweis zu
-schließen, der mit `by_contra` eröffnet wurde.
+Normally, `contradiction` is used to conclude a proof by contradiction
+that was opened with `by_contra`.
 -/
 TacticDoc contradiction
 
 /--
-Die Taktik `contrapose` ändert ein Beweisziel der Form `A → B` zu `¬B → ¬A` und leitet somit
-einen Beweis durch Kontraposition ein.
+The tactic `contrapose` changes a proof goal of the form `A → B` to `¬B → ¬A`, thereby
+initiating a proof by contraposition.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Die Taktik `revert h` kann nützlich sein, um eine Annahme als Implikationsprämisse zu schreiben,
- bevor du `contrapose` verwendest.
+The tactic `revert h` can be useful for writing an assumption as an implication premise
+before you use `contrapose`.
 -/
 TacticDoc contrapose
 
@@ -134,13 +132,13 @@ TacticDoc exact
 -/
 
 /--
-Zwei Teilmengen einer gegebenen Menge sind gleich, wenn sie dieselben Elemente besitzen.
-Steht im Beweisziel
+Two subsets of a given set are equal if they have the same elements.
+If the proof goal is
 ```
 A = B
 ```
-für zwei Teilmengen von `T` (also für `A B : Set T`),
-so überführt `ext x` das Beweisziel in die Äquivalenz
+for two subsets of `T` (i.e., for `A B : Set T`),
+then `ext x` converts the proof goal into the equivalence
 ```
 x ∈ A ↔ x ∈ B
 ```
@@ -160,53 +158,52 @@ TacticDoc fin_cases
 -/
 
 /--
-Zwei Abbildungen mit demselben Werte- und Definitionsbereich sind gleich,
-wenn sie auf allen Elementen des Definitionsbereichs dieselben Werte annehmen.
-Ein Beweisziel der Form
+Two mappings with the same range and domain are equal if
+they take the same values on all elements of the domain.
+A proof goal of the form
 ```
 f = g
 ```
-für Abbildungen `f g : X → Y` wird durch `funext x`
-in die Gleichung
+for mappings `f g : X → Y` is converted by `funext x`
+into the equation
 ```
 f x = g x
-```
-überführt.
+```.
 -/
 TacticDoc funext
 
 /--
-Mit `generalize` kannst du ein Beweisziel verallgemeinern
-– in der Hoffnung, dass ein höherer Abstraktionsgrad einen einfacheren Beweis erlaubt.
-Genauer ersetzt `generalize h : a = b` alle Vorkommen von `a` im Beweisziel durch `b`
-(und ergänzt die Annahme `h : a = b`).
+With `generalize`, you can generalize a proof goal
+in the hope that a higher level of abstraction will allow for a simpler proof.
+More precisely, `generalize h : a = b` replaces all occurrences of `a` in the proof goal with `b`
+(and adds the assumption `h : a = b`).
 
-## Beispiel
+## Example
 
-Ein Ziel der Form
+A goal of the form
 ```
 Even x ∨ ¬Even x
 ```
-lässt sich mit
+can be converted with
 ```
 generalize h : (Even x) = A
 ```
-in
+into
 ```
 A ∨ ¬A
 ```
-überführen (und dann einfach mit `tauto` beweisen).
+(and then simply proven with `tauto`).
 -/
 TacticDoc generalize
 
 /--
-Mit `have h : P` führst du ein Zwischenresultat ein.
-Anschließend musst du zuerst dieses Zwischenresultat beweisen,
-bevor du den eigentlichen Beweis fortsetzen kannst.
+With `have h : P`, you introduce an intermediate result.
+You must then prove this intermediate result
+before you can continue with the actual proof.
 
-## Freunde und Verwandte
-`suffices h : P` funktioniert genauso, außer dass du zunächst den Hauptweise forsetzen kannst und
-erst ganz am Ende dein Zwischenresultat beweisen musst.
+## Friends and relatives
+`suffices h : P` works in exactly the same way, except that you can continue with the main proof first and
+only have to prove your intermediate result at the very end.
 -/
 TacticDoc «have»
 /-
@@ -215,33 +212,33 @@ TacticDoc «have»
 -/
 
 /--
-Mit `if … then … else` kannst du Abbildungen mit zwei Definitionszweigen definieren.
+With `if … then … else`, you can define mappings with two branches of definition.
 
-Zum Beispiel definiert `fun x ↦ if 0 ≤ x then x else -x` die Betragsfunktion.
+For example, `fun x ↦ if 0 ≤ x then x else -x` defines the absolute value function.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-* Hast du `h : A` als Annahme zur Verfügung, kannst du mit
-`rw [if_pos h]` den Ausdruck `if A then B else C` zu `B` reduzieren.
-* Hast du `h : ¬ A` als Annahme zur Verfügung, kannst du analog mit
-`rw [if_neg h]` den Ausdruck `if A then B else C` zu `C` reduzieren.
+* If you have `h : A` as an assumption, you can use
+`rw [if_pos h]` to reduce the expression `if A then B else C` to `B`.
+* If you have `h : ¬ A` as an assumption, you can use
+`rw [if_neg h]` to reduce the expression `if A then B else C` to `C`.
 -/
 TacticDoc «if»
 
 /--
-Die Taktik `induction n` führt einen Induktionsbeweis über `n`.
-Mit `induction n with d dh` kannst du Namen für die Induktionsvariable (hier: `d`)
-und die Induktionsannahme (hier: `hd`) vorgeben.
-Die Taktik ersetzt also das ursprüngliche Beweisziel durch zwei neue Beweisziele:
-* einen Induktionsanfang, in dem `n = 0` gesetzt wird, und
-* einen Induktionsschritt, in dem dir die Induktionsannahme `hd` zur Verfügung steht.
+The tactic `induction n` performs an inductive proof over `n`.
+With `induction n with d dh`, you can specify names for the induction variable (here: `d`)
+and the induction assumption (here: `hd`).
+The tactic thus replaces the original proof goal with two new proof goals:
+* an induction start, in which `n = 0` is set, and
+* an induction step, in which the induction assumption `hd` is available to you.
 
-## Modifikationen in diesem Spiel
+## Modifications in this game
 
-Außerhalb dieses Spiels heißt `induction` `induction'`,
-`0` wird zunächst als `Nat.zero` and `d + 1` als `Nat.succ d` geschrieben.
-Diese Terme sind jeweils definitionsgleich, müssen aber gelegentlich mit
-`zero_eq` und `Nat.succ_eq_add_one` explizit umgeschrieben werden.
+Outside of this game, `induction` is called `induction'`,
+`0` is initially written as `Nat.zero` and `d + 1` as `Nat.succ d`.
+These terms are identical in definition, but occasionally need to be explicitly rewritten with
+`zero_eq` and `Nat.succ_eq_add_one`.
 -/
 TacticDoc induction
 /- richtige `induction`-Syntax:
@@ -267,37 +264,37 @@ Beide sind definitionsgleich, aber manche Taktiken können nicht damit umgehen
 
 
 /--
-Die Taktik `intro` wird für Beweisziele Form `A → B` oder `∀ x, P x` verwendet.
+The tactic `intro` is used for   proof goals of the form `A → B` or `∀ x, P x`.
 
-Ist dein Beweisziel `A → B`, erhältst du mit `intro h` die Annahme `h : A`, und musst dann
-`B` beweisen.
-Ist dein Beweisziel `∀ x, P x`, gibst du dir mit `intro x` ein beliebiges `x` vor und musst dann `P x` beweisen.
+If your proof goal is `A → B`, `intro h` gives you the assumption `h : A`, and you then have to prove `B`.
+If your proof goal is `∀ x, P x`, `intro x` gices you an arbitrary `x` and you have to prove `P x`.
 
-| vorher | Taktik       | nachher                     |
+| before | tactic       | after                     |
 |:------------ |:------------ |:---------------------------- |
 | `⊢ A → B`    | `intro h`    | `h : A`, `⊢ B`               |
 | `⊢  x, P x`  | `intro x hx` | `x : X`, `hx : P x`, `⊢ P x` |
 
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Die Taktik `revert h` macht das genaue Gegenteil von `intro h`.
+The tactic `revert h` does the exact opposite of `intro h`.
 -/
 TacticDoc intro
 
 /--
-Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `left`, die linke Seite zu zeigen.
+If the proof target is of the form `A ∨ B`, you choose `left` to show the left side.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Mit `right` entscheidest du dich entsprechend für die rechte Seite.
+With `right`, you choose the right side accordingly.
 -/
 TacticDoc left
 
-/-- Die Taktik `let` führt eine temporäre Definition ein, zum Beispiel
+/--
+The `let` tactic introduces a temporary definition, for example
 `let x : ℕ := 5 ^ 2`.
 
-Hast du erst einmal mit `let x := …` ein `x` definiert, kannst du die Definition später mit `simp only [x]` einsetzen.
+Once `let x := …` defines a `x`, you can use the definition later with `simp only [x]`.
 -/
 TacticDoc «let»
 -- * `have x : ℕ := 5 ^ 2` führt ebenfalls eine neue natürliche Zahle `x` ein, aber
@@ -314,29 +311,29 @@ TacticDoc set
 -/
 
 /--
-Die Taktik `linarith` kann zeigen, dass eine lineare Gleichung oder Ungleichung aus gegebenen Gleichungen oder Ungleichungen folgt.
-Sie ist recht flexibel, und funktioniert genauso gut in ℕ wie in ℝ.
-Die (Un)Gleichungen müssen aber einzeln gegeben sein, nicht logisch verknüpft.
-Eine Annahme der Form
+The tactic `linarith` can show that a linear equation or inequality follows from given equations or inequalities.
+It is quite flexible and works just as well in ℕ as in ℝ.
+However, the (in)equations must be given individually, not logically linked.
+An assumption of the form
 ```
 h : m ≤ x → n < x
 ```
-muss beispielsweise erst mit
+must first be rewritten with
 ```
 rw [imp_iff_or_not] at h
 ```
-zu
+to
 ```
 h : n < x ∨ ¬m ≤ x
 ```
-umgeschrieben werden, damit `linarith` damit etwas anfangen kann.
+so that `linarith` can do something with it.
 -/
 TacticDoc linarith
 
 /--
-Die Taktik `omega` kann zeigen, dass eine lineare Gleichung oder Ungleichung in `ℕ` oder `ℤ`
-aus gegebenen Gleichungen oder Ungleichungen folgt.
-Sie kommt, anders als `linarith`, auch mit logischen Verknüpfungen von (Un)Gleichungen zurecht.
+The tactic `omega` can show that a linear equation or inequality in `ℕ` or `ℤ`
+follows from given equations or inequalities.
+Unlike `linarith`, it can also handle logical connections between (in)equations.
 -/
 TacticDoc omega
 
@@ -344,44 +341,44 @@ TacticDoc omega
 -- siehe Prado level 2; `omega` kann das nicht.
 
 /--
-Die Taktik `push_neg` schiebt Negation an Quantoren vorbei:
+The `push_neg` tactic pushes negation past quantifiers:
 
-| vorher       | nachher      |
+| before       | after      |
 |:------------ |:-------------|
 | `¬∀ x, P x`  | `∃ x, ¬P x`  |
 | `¬∃ x, P x`  | `∀ x, ¬P x`  |
 
-Bei geschachtelten Ausdrücken schiebt sie die Negation `¬` soweit nach rechts wie möglich.
-Zum Beispiel wird aus dem Beweisziel
+In nested expressions, it pushes the negation `¬` as far to the right as possible.
+For example, the proof goal
 ```
   ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
 ```
-mit `push_neg`
+with `push_neg`
 ```
   ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
 ```
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Die beiden Lemmas `not_forall` und `not_exists` können mit `rw` einzeln angewendet werden.
+The two lemmas `not_forall` and `not_exists` can be applied individually with `rw`.
 -/
 TacticDoc push_neg
 
 /--
-Die Taktik `obtain` teilt eine Annahme in ihre Einzelteile auf.
+The `obtain` tactic breaks down an assumption into its individual parts.
 
-| vorher       | Taktik                 | nachher                                   |
-|:------------------ |:---------------------- |:------------------------------------------ |
-| `h : A ∧ B`        | `obtain ⟨h₁, h₂⟩ := h` | `h₁ : A` und `h₂ : B`                      |
-| `h : A ↔ B`        | `obtain ⟨h₁, h₂⟩ := h` | `h₁ : A → B` und `h₂ : B → A`              |
+| before       | tactic                 | after                                   |
+|:------------------ |:--------------------- - |:------------------------------------------ |
+| `h : A ∧ B`        | `obtain ⟨h₁, h₂⟩ := h` | `h₁ : A` and `h₂ : B`                      |
+| `h : A ↔ B`        | `obtain ⟨h₁, h₂⟩ := h` | `h₁ : A → B` and `h₂ : B → A`              |
 | `h : Nonempty X`   | `obtain ⟨x⟩ := h`      | `x : X`                                    |
-| `h : ∃ x : X, P x` | `obtain ⟨x, hx⟩ := h`  | `x : X` und `hx : P x`                     |
-| `h : A ∨ B`        | `obtain h \| h := h`   | ein Ziel mit `h : A`, ein Ziel mit `h : B` |
+| `h : ∃ x : X, P x` | `obtain ⟨x, hx⟩ := h`  | `x : X` and `hx : P x`                     |
+| `h : A ∨ B`        | `obtain h \| h := h`   | a target with `h : A`, a target with `h : B` |
 
-Die Klammern in den ersten vier Beispielen tippst du als `\<` bzw. `\>`.
-Hier ist `⟨_, _⟩` der *anonyme Konstruktor*.
-Du kannst ihn dir ungefähr so vorstellen wie die Tupel-Notation in
-„eine abelsche Gruppe ist ein Tupel $(G, 0, +)$ derart, dass …“.
+Type the brackets in the first four examples as `\<` or `\>`.
+Here, `⟨_, _⟩` is the *anonymous constructor*.
+You can think of it as similar to the tuple notation in
+“an abelian group is a tuple $(G, 0, +)$ such that ...”.
 -/
 TacticDoc obtain
 --
@@ -403,78 +400,78 @@ TacticDoc refine'
 -/
 
 /--
-Die Taktik `revert h` fügt die Annahme `h` als Implikationsprämisse ins Beweisziel ein:
-aus `h : A` und `⊢ B` wird `⊢ A → B`.
+The tactic `revert h` adds the assumption `h` as an implication premise to the proof goal:
+from `h : A` and `⊢ B`, we get `⊢ A → B`.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Die Taktik `intro h` macht das genaue Gegenteil von `revert h`.
+The tactic `intro h` does the exact opposite of `revert h`.
 -/
 TacticDoc revert
 
 
 /--
-Die Taktik `rfl` beweist `X = X`.  Genauer schließt `rfl` jedes Beweisziel der Form `A = B`,
-in dem `A` und `B` definitionsgleich sind.
+The tactic `rfl` proves `X = X`.  More precisely, `rfl` closes every proof target of the form `A = B`,
+where `A` and `B` are identical in definition.
 -/
 TacticDoc rfl
 -- rfl beweist auch 1 + 1 = 2 in ℕ, denn intern sind beide Seiten `0.succ.succ`.
 
 /--
-Wenn das Beweisziel von der Form `A ∨ B` ist, entscheidest du dich mit `right`, die rechte Seite zu zeigen.
+If the proof target is of the form `A ∨ B`, you choose `right` to show the right side.
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Mit `left` entscheidest du dich entsprechend für die linke Seite.
+With `left`, you choose the left side accordingly.
 -/
 TacticDoc right
 
 /--
-Die Taktik `ring` beweist Gleichungen mit den Operationen `+, -, *, ^` in Halbringen,
-also insbesondere in ℕ, ℤ, ℚ, ℝ, …   Sie funktioniert besonders gut in kommutativen Ringen.
+The `ring` tactic proves equations with the operations `+, -, *, ^` in semirings,
+in particular in ℕ, ℤ, ℚ, ℝ, …   It works particularly well in commutative rings.
 -/
 TacticDoc ring
 -- `ring` braucht Typen `R` mit Instanzen `Ring R` oder `Semiring R`.
 -- Die Taktik ist besonders auf kommutative Ringe (`CommRing R`) ausgelegt.
 
 /--
-Hast du eine Gleichung `h : X = Y` oder eine Äquivalenz `h : X ↔ Y` als Annahme oder als Lemma gegeben,
-so kannst du mit `rw [h]` alle Vorkommen von `X` im Beweisziel durch `Y` ersetzen.
+If you have given an equation `h : X = Y` or an equivalence `h : X ↔ Y` as an assumption or lemma,
+you can use `rw [h]` to replace all occurrences of `X` in the proof target with `Y`.
 
-## Varianten
+## Variants
 
-* `rw [←h]` wendet `h` rückwärts an, ersetzt also alle `Y` durch `X`.
-* `rw [h, g, ←f]` wendet `h`, `g` und (rückwärts) `f` an.
-* `rw [h] at h₂` führt die Ersetzungen in der Annahme `h₂` durch, nicht im Beweisziel
-* `nth_rw`: Besitzt `h` Argumente, z.B. `n` in
-   ```
+* `rw [←h]` applies `h` backwards, i.e., replaces all `Y` with `X`.
+* `rw [h, g, ←f]` applies `h`, `g`, and (backwards) `f`.
+* `rw [h] at h₂` performs the replacements in the assumption `h₂`, not in the proof target
+* `nth_rw`: If `h` has arguments, e.g., `n` in
+```
    h : ∀ n, 2*n = f n
    ```
-   oder in
-   ```
+   or in
+```
    h (n : ℕ) : 2*n = f n
    ```
-   so sucht `rw [h]` im Beweisziel von links nach rechts nach einem passenden Ausdruck,
-   und ersetzt dann *alle* Vorkommen *des ersten* Ausdrucks, den die Taktik findet.
-   Mit `nth_rw k [h]` kannst du stattdessen alle Vorkommen des `k`-ten Ausdrucks ersetzen.
+   `rw [h]` searches the proof target from left to right for a matching expression,
+   and then replaces *all* occurrences of *the first* expression that the tactic finds.
+   With `nth_rw k [h]`, you can replace all occurrences of the `k`th expression instead.
 
-  | vorher    | Taktik       | nachher        |
-  |:----------------- |:-------------- |:----------------- |
+  | before    | tactic       | after        |
+  |:----------------- |:------------- - |:----------------- |
   | `2*a + 2*b > 2*a` | `rw [h]`       | `f a + 2*b > f a` |
   |                   | `nth_rw 2 [h]` | `2*a + f b > 2*a` |
 -/
 TacticDoc rw
 
 /--
-Die Taktik `simp` versucht eine große Zahl an Lemmas anzuwenden, um einen gegebenen Ausdruck zu vereinfachen.
-(Technisch handelt es sich um alle Lemmas in `mathlib`, die durch `@[simp]` gekennzeichnet sind.)
+The `simp` tactic attempts to apply a large number of lemmas to simplify a given expression.
+(Technically, these are all lemmas in `mathlib` that are marked with `@[simp]`.)
 
-## Varianten
+## Variants
 
-* `simp [h]` benutzt zum Vereinfachen zusätzlich die Voraussetzung `h` oder das Lemma `h`
-* `simp [F]` benutzt zusätzliche die Definition von `F`
-* `simp only [h,f,g]` benutzt ausschließlich die Voraussetzungen/Lemmas/Definitionen `h`, `f` und `g`
-* `simp?` zeigt dir an, welche Lemmas verwendet wurden
+* `simp [h]` additionally uses the assumption `h` or the lemma `h` for simplification
+* `simp [F]` additionally uses the definition of `F`
+* `simp only [h,f,g]` exclusively uses the assumptions/lemmas/definitions `h`, `f`, and `g`
+* `simp?` shows you which lemmas were used
 -/
 TacticDoc simp
 
@@ -494,17 +491,18 @@ Es bestehen aber drei grosse Unterschiede zu `rw`:
 TacticDoc simp_rw
 -/
 
-/-- `specialize h a₁ a₂` ist äquivalent zu `have h := h a₁ a₂`: die Taktik ersetzt eine Annahme
-`h : ∀ m₁ m₂, P m₁ m₂` durch den Spezialfall `h : P a₁ a₂`.
+/--
+`specialize h a₁ a₂` is equivalent to `have h := h a₁ a₂`: the tactic replaces an assumption
+`h : ∀ m₁ m₂, P m₁ m₂` with the special case `h : P a₁ a₂`.
 
-Falls du mehrmals spezialisieren möchtest, solltest du statt `specialize`
-`have` verwenden, da `specialize h …` die alte Annahme `h` überschreibt.
-Aus obiger Annahme `h` erhältst du beispielsweise mit
+If you want to specialize multiple times, instead of `specialize` you should use `have`,
+since `specialize h …` overwrites the old assumption `h`.
+From the above assumption `h`, you can obtain the following three assumptions with
 ```
 have ha := h a₁ a₂
 have hb := h b₁ b₂
 ```
-die folgenden drei Annahmen:
+:
 ```
 h : ∀ m₁ m₂, P m₁ m₂
 ha : P a₁ a₂
@@ -515,25 +513,25 @@ TacticDoc specialize
 
 
 /--
-Mit `suffices h : P` leitest du einen Beweisabschnitt ein, in dem du zeigst,
-dass das gewünschte Beweisziel aus `P` folgt.
-Danach beweist du `P`.
+With `suffices h : P`, you introduce a proof section in which you show
+that the desired proof goal follows from `P`.
+Then you prove `P`.
 
-## Freunde und Verwandte
-`have h : P` funktioniert genauso, außer dass du zunächst `P` beweisen musst und erst dann
-den Hauptbeweis fortsetzen kannst.
+## Friends and relatives
+`have h : P` works the same way, except that you must first prove `P` before you can
+continue with the main proof.
 -/
 TacticDoc «suffices»
 
 
 /--
-Mit `symm` (für „symmetry“) vertauschst du die Seiten einer Gleichung (`=`) oder Äquivalenz (`↔`) im Beweisziel.
+With `symm` (for “symmetry”), you swap the sides of an equation (`=`) or equivalence (`↔`) in the proof target.
 
-## Varianten
-* `symm at h` operiert auf der Annahme `h` statt auf dem Beweisziel
-* `h.symm` ist das Ergebnis von `symm at h`, und kann wie `h` verwendet werden
+## Variants
+* `symm at h` operates on the assumption `h` instead of the proof target
+* `h.symm` is the result of `symm at h` and can be used like `h`
 
-Jede der drei folgenden Taktiken bzw. Taktiksequenzen hat also denselben Effekt:
+Each of the following three tactics or tactic sequences therefore has the same effect:
 * `rw [←h]`
 * ```
   symm at h
@@ -544,23 +542,23 @@ Jede der drei folgenden Taktiken bzw. Taktiksequenzen hat also denselben Effekt:
 TacticDoc symm
 
 /--
-Mit `trans` fügst du in eine Gleichung oder Äquivalenz einen Zwischenschritt ein.
+With `trans`, you insert an intermediate step into an equation or equivalence.
 
-| vorher | Taktik    | nachher                |
+| before | tactic    | after                |
 |:------------ |:--------- |:----------------------- |
-| `⊢ A = C`    | `trans B` | `⊢ A = B` und `⊢ B = C` |
-| `⊢ A ↔ C`    | `trans B` | `⊢ A ↔ B` und `⊢ B ↔ C` |
+| `⊢ A = C`    | `trans B` | `⊢ A = B` and `⊢ B = C` |
+| `⊢ A ↔ C`    | `trans B` | `⊢ A ↔ B` and `⊢ B ↔ C` |
 
-Da du die Taktik mehrmals wiederholen kannst, ist sie geeignet,
-um Schritt für Schritt eine „Rechnung“ `A = B₁ = B₂ = B₃ … = C` durchzuführen.
+Since you can repeat the tactic several times, it is suitable for
+performing a “calculation” `A = B₁ = B₂ = B₃ … = C` step by step.
 
-(Außerhalb vom Spiel ist allerdings die mehrzeilige Taktik `calc` besser für derartige Rechnungen geeignet.)
+(Outside of the game, however, the multi-line tactic `calc` is better suited for such calculations.)
 -/
 TacticDoc trans
 
 /--
-Mit `decide` kannst du Aussagen beweisen, die mit einem einfachen Algorithmus
-entscheidbar sind.  Dazu gehören insbesondere `True` und Aussagen über konkrete Zahlen wie:
+With `decide`, you can prove statements that can be decided using a simple algorithm.
+These include, in particular, `True` and statements about concrete numbers such as:
 - `Even 4`
 - `2 ≤ 5`
 - `4 ≠ 6`
@@ -571,32 +569,32 @@ TacticDoc decide
 -- welche dann evaluiert entweder wahr oder falsch rausgibt.
 
 /--
-Mit `unfold F` kannst du die Definition `F` im Beweisziel ausschreiben.
-Mit `unfold F at h` machst du das Gleiche, aber in der Annahme `h`.
+With `unfold F`, you can write out the definition `F` in the proof goal.
+With `unfold F at h`, you do the same thing, but in the assumption `h`.
 
-Zwar sind Beweisziel oder Annahme vor und nach `unfold` definitionsgleich,
-aber viele Taktiken (z.B. `push_neg` oder `rw`) operieren auf einer syntaktischen Ebene,
-sie „sehen nicht durch Definitionen hindurch“.
+Although the proof goal or assumption before and after `unfold` are identical in definition,
+many tactics (e.g., `push_neg` or `rw`) operate on a syntactic level;
+they do not “see through definitions.”
 
-## Freunde und Verwandte
+## Friends and Relatives
 
-Die Taktiken `unfold F` und `simp only [F]` machen praktisch das Gleiche.
+The tactics `unfold F` and `simp only [F]` do practically the same thing.
 -/
 TacticDoc unfold
 -- * `change _` ist eine andere Taktik (nicht im Spiel), die das aktuelle Beweisziel in einen definitionsgleichen Ausdruck
 --  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat, etwas zu verstehen.
 
 /--
-Wenn das Beweisziel von der Form `∃x, P x` ist, kannst du mit `use n` ein konkretes Element angeben,
-für das du `P x` beweisen möchtest.
+If the proof target is of the form `∃x, P x`, you can use `use n` to specify a concrete element
+for which you want to prove `P x`.
 -/
 TacticDoc use
 
 /--
-Die Taktik `tauto` beweist logische Tautologien.
+The tactic `tauto` proves logical tautologies.
 
-# Freunde und Verwandte
+# Friends and relatives
 
-Manchmal muss das Beweisziel zuerst mit `generalize` abstrahiert werden, damit `tauto`  die Tautologie erkennt.
+Sometimes the proof target must first be abstracted with `generalize` so that `tauto` recognizes the tautology.
 -/
 TacticDoc tauto

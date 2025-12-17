@@ -8,11 +8,14 @@ Title ""
 
 Introduction ""
 
+/-
 Conclusion "
   **Cantor**: Na, seid ihr schon fertig??
 
   **Robo**:  Einen Zettel haben wir noch.
 "
+-/
+Conclusion "Conclusion Cantor L07"
 
 open Function Set
 
@@ -22,20 +25,29 @@ open Function Set
 -/
 Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     range f = fixedPoints f := by
+  /-
   Hint "
     **Robo**:  Fang am besten damit an, wieder alle Definition auszuschreiben.
     Ich würde sagen:  `unfold range fixedPoints IsFixedPt`.
     Und die Annahme `{h}` könntest du schon einmal `congr_fun` genauer ausschreiben.
     "
+  -/
+  Hint "Try `unfold range fixedPoints IsFixedPt` and rewrite assumption `{h}` firstly by `congr_fun`"
   unfold range fixedPoints IsFixedPt
+  /-
   Hint (hidden := true) (strict := true) "
     **Robo**:  Ich meinte `apply congr_fun at h`.
   "
+  -/
+  Hint "Specifically try `apply congr_fun at h`"
   apply congr_fun at h
+  /-
   Hint (hidden := true) (strict := true) "
     **Robo**:  Vielleicht fängst du mal wieder mit `ext` an.
     Oder mit `Subset.antisymm_iff`.
     "
+  -/
+  Hint "Start with `ext` or `Subset.antisymm_iff`"
   Branch
     rw [Subset.antisymm_iff]
     simp
@@ -50,7 +62,8 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     rw [← hy]
     specialize h y
     clear hy
-    Hint (hidden := true) "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?"
+    /- Hint (hidden := true) "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?" -/
+    Hint "Try either `comp_apply` or `simp`"
     simp at h -- or: rw [comp_apply] at h
     assumption
   · intro ha

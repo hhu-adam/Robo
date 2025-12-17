@@ -6,12 +6,16 @@ Level 2
 
 Title "" -- "Anonyme Funktionen"
 
+/-
 Introduction
 "
 Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Blatt.
 "
+-/
+Introduction "Intro Vieta L02"
 
 Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
+  /-
   Hint"
     **Robo**: Aha, das ist interessanter.  Hier ist
     `fun (x : ℤ) ↦ x ^ 2` eine „anonyme Funktion“, nämlich die Abbildung $x↦x^2$.
@@ -38,6 +42,18 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 
   **Robo**: Lean kann durch die meisten Abbildungsvorschriften hindurchsehen, also sollte `rfl`
   hier reichen. Alternativ kannst du mit `simp [{f}]` explizit die Definition einsetzen."
+  -/
+  Hint "Explain anonymous function `fun (x : ℤ) ↦ x ^ 2` as mapping $x↦x^2$.
+  Only `f : ℤ → ℤ := …` the anon. function would receive a name. The goal is for
+    $$
+    \\begin\{aligned}
+      f\\colon \\mathbb\{ℤ} &\\to \\mathbb\{ℤ} \\\\
+      x &\\mapsto x ^ 2
+    \\end\{aligned}
+    $$
+  to show that $2^2=4$.
+  You can try `rfl` or `simp [{f}]`
+  "
   Branch
     simp [f]
   rfl

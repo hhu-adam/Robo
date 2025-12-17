@@ -5,6 +5,7 @@ Level 14
 
 Title "" -- "Zusammenfassung"
 
+/-
 Introduction
 "
 **Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem.
@@ -38,22 +39,33 @@ Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten geler
 | `rw [h] at h₁`   | schreibt Annahme `h₁` mithilfe der Äquivalenz `h` um              |
 | `by_cases h : P` | Fallunterscheidung zwischen `P` und `¬P`                          |
 "
+-/
+Introduction "
+Intro Implis L14: This chapter used the following operations:
+`→`, `↔`, `intro`, `revert` (reversal of `intro`), `apply`, `apply at`, `symm` (changes `A ↔ B` to `B ↔ A`),
+`trans` (changes `A ↔ C` to `A ↔ B` and `B ↔ C`), `rw [h] ` (rewrite goal with `h`), `rw [h] at h₁` (rewrite
+assumption `h₁` using `h`) and `by_cases h : P` (introduce cases `P` and `¬P`)
+"
 
-/-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
+/-- This kind of logical expression can often be solved via `tauto`. -/
 TheoremDoc imp_iff_or_not as "imp_if_or_not" in "Logic"
 
-/-- Oft kann auch `tauto` diese Art von logischen Ausdrücken lösen. -/
+/-- In most cases `tauto` can be used to solve this kind of logical expression. -/
 TheoremDoc imp_iff_not_or as "imp_iff_not_or" in "Logic"
 
 set_option tactic.hygienic false
 
 Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
+  /-
   Hint "**Du** *(flüsternd)*: Ist das nicht die Definition von `→`?
 
   **Robo** *(flüsternd)*: Könnte man so sehen. Aber auf Leansch ist das bloß eine Äquivalenz."
+  -/
+  Hint "Remind that `→` in this case is equivalence"
   constructor
   intro h
-  Hint (hidden := true) "**Robo**: Vielleicht kannst du wieder `by_cases` benutzen."
+  -- Hint (hidden := true) "**Robo**: Vielleicht kannst du wieder `by_cases` benutzen."
+  Hint (hidden := true) "Maybe try `by_cases` again"
   Branch
     by_cases A
 
@@ -64,14 +76,16 @@ Statement imp_iff_not_or {A B : Prop} : (A → B) ↔ ¬ A ∨ B := by
   assumption
   left
   assumption
-  Hint (hidden := true) "**Robo**: Na Implikationen gehst du immer mit `intro` an."
+  -- Hint (hidden := true) "**Robo**: Na Implikationen gehst du immer mit `intro` an."
+  Hint (hidden := true) "Try `intro` to solve implication"
   intro h
   intro ha
   Branch
     by_cases ha : A
   Branch
     by_cases A
-  Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `obtain` aufteilen."
+  -- Hint (hidden := true) "**Robo**: Ich würde mal die Annahme `h` mit `obtain` aufteilen."
+  Hint (hidden := true) "To divide assumption `h` use `obtain`"
   obtain h | h :=  h
   contradiction
   assumption
@@ -80,6 +94,7 @@ DisabledTactic tauto
 
 NewTheorem imp_iff_or_not
 
+/-
 Conclusion "
 **Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich Euch auch gar
 nicht länger aufhalten.
@@ -98,3 +113,5 @@ Der Operationsleiter sieht ihn entgeistert an.
 
 **Robo**: Keine Angst, ich verdaue nichts!
 "
+-/
+Conclusion "Conclusion Implis L14"

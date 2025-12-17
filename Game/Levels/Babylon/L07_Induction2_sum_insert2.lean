@@ -6,12 +6,16 @@ Level 7
 
 Title ""
 
+/-
 Introduction
 "Direkt neben dem Gaußschen Turm ist wieder ein leerer Bauplatz.  Diesmal steht folgendes auf dem Schild:"
+-/
+Introduction "Intro Babylon L07"
 
 open Finset
 
 Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
+    /-
     Hint "
       **Du**:  $\\sum_\{i=-n}^{n} i = 0$ – ja, das sieht richtig aus.
 
@@ -19,14 +23,20 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
       außer dass du vermutlich nach `insert_Icc_eq_Icc_add_one_right` auch noch
       `insert_Icc_eq_Icc_sub_one_left` brauchen wirst.
     "
+    -/
+    Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_eq_Icc_add_one_right`, `insert_Icc_eq_Icc_sub_one_left`"
     induction n with d hd
     · simp
     · simp
       rw [← insert_Icc_eq_Icc_add_one_right]
+      /-
       Hint (hidden := true) "
         **Robo**:  Genau, und jetzt wieder `rw [sum_insert]`.
         "
+      -/
+      Hint (hidden := true) "And yet again `rw [sum_insert]`"
       · rw [sum_insert]
+        /-
         Hint "
           **Robo**: Ich fürchte, als nächstes musst du `-1 + -{d}` als `-{d} - 1` umschreiben.
           Vielleicht ist es am einfachsten, wenn du diese Gleichung mit `have` ausformulierst.
@@ -36,6 +46,9 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           have : -1 + (-d : ℤ)  = -d - 1
           ```
         "
+        -/
+        Hint "Rewrite `-1 + -{d}` to `-{d} - 1`. Formulate equation using `have`.
+        Also, specify that equation is in `ℤ`. Try e.g. ``` have : -1 + (-d : ℤ)  = -d - 1 ```"
         · --have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
           have : -1 + (-d : ℤ)  = -d - 1 := by
             ring

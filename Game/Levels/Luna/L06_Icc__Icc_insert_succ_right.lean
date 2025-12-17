@@ -7,13 +7,17 @@ Level 6
 
 Title ""
 
+/-
 Introduction
 "**Ritha**:  Kann ich auch mal?  Hier."
+-/
+Introduction "Intro Luna L06"
 
 open Finset
 
 Statement {a b : ℤ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by
+  /-
   Hint "
     **Du**:  Was ist denn `Icc`?
 
@@ -27,13 +31,22 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
      [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1]
      $$
      "
-  Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
+  -/
+  Hint "Remind that `Icc` is an interval which is closed to both sides. You could write `Icc a b`
+  as $[a, b]$ or $\\\{a, a + 1, \\dots, b\\}$, because we are in the natual numbers. Therfore, the
+  goal is: $$ [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1] $$"
+  -- Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
+  Hint "Equality of sets demands `ext`"
   ext x
+  /-
   Hint "
     **Robo:**  Schieß mal gleich noch ein `simp` hinterher.
   "
+  -/
+  Hint "Try `simp` afterwards"
   simp
-  Hint "Ritha macht wieder irgendwelche Zeichen."
+  -- Hint "Ritha macht wieder irgendwelche Zeichen."
+  Hint "Ritha gives signs to try omega"
   omega
 
 

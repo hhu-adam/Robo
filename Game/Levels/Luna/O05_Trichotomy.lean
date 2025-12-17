@@ -5,11 +5,15 @@ Level 5
 
 Title "" -- "Trichotomie"
 
+/-
 Introduction
 "
 "
+-/
+Introduction "Intro Luna O05"
 
 Statement {A : Prop} (x y : ℤ) (h₁ : x ≤ y → A) (h₂ : y < x → A) : A := by
+  /-
   Hint (strict := true) "
     **Robo**: Ein sehr nützliches Resultat ist `lt_trichotomy {x} {y}`:
 
@@ -21,8 +25,11 @@ Statement {A : Prop} (x y : ℤ) (h₁ : x ≤ y → A) (h₂ : y < x → A) : A
     obtain h | h | h := lt_trichotomy x y
     ```
   "
+  -/
+  Hint "Try `obtain h | h | h := lt_trichotomy x y`"
   obtain h | h | h := lt_trichotomy x y
-  · Hint "**Robo**: Beachte, dass du jetzt 3 Goals hast, eines pro Fall!"
+  -- · Hint "**Robo**: Beachte, dass du jetzt 3 Goals hast, eines pro Fall!"
+    Hint "Story"
     apply h₁
     linarith
   · apply h₁
@@ -30,7 +37,8 @@ Statement {A : Prop} (x y : ℤ) (h₁ : x ≤ y → A) (h₂ : y < x → A) : A
   · apply h₂
     assumption
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Luna O05"
 
 /--
 Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:

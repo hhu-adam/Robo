@@ -5,12 +5,18 @@ Level 9
 
 Title "" -- "Genau dann, wenn"
 
+/-
 Introduction
 "
 **Du**: Irgendwie fühlen sich diese `rw` an, als würde man von hinten durch den Bauch argumentieren.  Geht das nicht auch irgendwie geradeaus, oder denken alle hier um die Ecke?
 
 **Robo**:  Vielleicht würde dir `trans` besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  $B \\iff A \\iff D \\iff C$ Schritt für Schritt abarbeiten: als erstes führst Du mit `trans A` den Zwischenschritt `B \\iff A` ein, dann mit `trans D` den nächsten Zwischenschritt.
 "
+-/
+Introduction "Intro Implis L09: Instead of `rw` use `trans` here.
+With it you can solve $B \\iff A \\iff D \\iff C$ step-by-step by using
+`trans A` to introduce the intermediate step `B \\iff A` and then
+perfrom The next step with `trans D`"
 
 Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : B ↔ C := by
   trans A
@@ -20,12 +26,16 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
   assumption
   symm
   assumption
+
+/-
 Conclusion
 "
 **Robo**: Und, war das besser?
 
 **Du**:  Weiß nicht.  Wir können jedenfalls weitermachen.
 "
+-/
+Conclusion "Conclusion Implis L09"
 
 NewTactic trans
 

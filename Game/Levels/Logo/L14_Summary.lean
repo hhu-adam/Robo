@@ -6,6 +6,7 @@ Level 14
 
 Title "" -- "Zusammenfassung"
 
+/-
 Introduction
 "
 Der letzte Untertan tritt vor. Ihr Anliegen ist etwas komplizierter als die vorherigen.
@@ -19,12 +20,18 @@ wichtigsten Taktiken für diese Situation an.
 | Annahme     | `obtain ⟨h₁, h₂⟩ := h`   | `obtain h \\| h := h`   |
 | Goal        | `constructor`            | `left`/`right`          |
 "
+-/
+Introduction "Intro Logo L14: The most important tactics of this chapter concerning `∧` and `∨`.
+For both logical operations the tactis `obtain ⟨h₁, h₂⟩ := h` and `obtain h \\| h := h` can be used respectivelly.
+Analogously, when working with the goal `constructor` and `left`/`right` can be used respectivelly as well.
+"
 
 -- Note: The other direction would need arguing by cases.
 
 Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
-  Hint (hidden := true)
-    "**Robo**: Ich würd zuerst die Annahme {h} mit `obtain ⟨⟩ := {h}` aufteilen."
+  -- Hint (hidden := true)
+  --  "**Robo**: Ich würd zuerst die Annahme {h} mit `obtain ⟨⟩ := {h}` aufteilen."
+  Hint (hidden := true) "Divide assumption {h} using `obtain ⟨⟩ := {h}`"
   Branch
     constructor
     · obtain h' | h' := h
@@ -40,18 +47,23 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
         right
         assumption
   obtain h | h := h
-  Hint (hidden := true) "**Robo**: Jetzt kannst du das `∧` im Goal mit `constructor` angehen."
+  -- Hint (hidden := true) "**Robo**: Jetzt kannst du das `∧` im Goal mit `constructor` angehen."
+  Hint (hidden := true) "Approach `∧` with `constructor`"
   · constructor
     · left
       assumption
     · left
       assumption
-  · Hint (hidden := true)
-      "**Robo**: Hier würde ich die Annahme {h} nochmals mit `obtain` aufteilen."
+  -- · Hint (hidden := true)
+  --    "**Robo**: Hier würde ich die Annahme {h} nochmals mit `obtain` aufteilen."
+  · Hint (hidden := true) "Divide {h} with `obtain`"
     Branch
       constructor
+      /-
       · Hint "**Robo**: Der Nachteil an der Reihenfolge ist, dass du jetzt in jedem Untergoal
           `obtain ⟨⟩ := h` aufrufen musst."
+      -/
+      · Hint "Explain that each sub-goal needs `obtain ⟨⟩ := h`"
         Branch
           right
           obtain ⟨h₁, _h₂⟩ := h
@@ -73,11 +85,14 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
     · right
       assumption
 
+/-
 Conclusion
 "
 **Robo** Bravo! Jetzt aber nichts wie weg hier, bevor sich eine neue Schlange bildet!
 
 Königin *Logisinde* ist in der Zwischenzeit eingeschlafen, und ihr stehlt euch heimlich davon.
 "
+-/
+Conclusion "Conclusion Logo L14"
 
 DisabledTactic tauto

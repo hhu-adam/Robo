@@ -12,6 +12,7 @@ Title "Samarkand"
 
 Image "images/Samarkand.png"
 
+/-
 Introduction "
 In der Ferne taucht ein sehr bunter Planet auf.
 Als ihr näher kommt, seht ihr, dass große Teile seiner Oberfläche mit aufwendigen geometrischen Mustern verziert sind.
@@ -41,3 +42,6 @@ Das dauert.  Ich kann also Gesellschaft gut gebrauchen.
 
 **Du**: Na prima.
 "
+-/
+
+Introduction " Intro Samarkand"

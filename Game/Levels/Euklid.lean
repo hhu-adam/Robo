@@ -8,6 +8,7 @@ Title "Euklid"
 
 Image "images/Librarian.png"
 
+/-
 Introduction "
   **Robo**:  Dieser Planet sieht aus wie ein Labyrinth.
 
@@ -36,3 +37,5 @@ Introduction "
   Auch bei den Büchern auf den Gängen sieht es nicht besser aus.
   Da entdeckt ihr ein Buch, das aufgeschlagen auf der Erde liegt.
 "
+-/
+Introduction "Intro Euklid: shows encrypted message `∆≚′⬙₇⼀⢦⽪⅓⫕⽭₠∘⑯⫂⢐♜⍇⮉⊟⎧ⶤ⒍≧⊟☸⩋⇪Ⓟ⩙▥ⵀ⮟⪳⃎━⿩❐⠡ⴝ⸑⇏⮉⃣◹⪆⾗⼰┰⛦≇⺝␜ⴊ⬟⾌◊⁋Ⰽⱇⷄ⤟₾⽬⟯Ⳗ⧭⊸⵹⾚℡⾄⢏⨊♂⼭⠻ⴲΩ⮆♔⡌⎧≎⬌⍙┈✟⽉ₗ✜≞ …`"

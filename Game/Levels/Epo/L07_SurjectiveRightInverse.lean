@@ -31,6 +31,7 @@ Statement surjective_iff_hasRightInverse {A B : Type} (f : A → B) :
 
 TheoremTab "Function"
 
+/-
 Conclusion "
 Ihr bekommt eine große Runde Applaus.
 
@@ -39,3 +40,5 @@ Für den Rückweg könnt ihr leider keine Transportkapsel benutzen.
 Die funktionieren nämlich nur in eine Richtung.
 Zurück zum Raumschiff geht es also zu Fuß: erst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.
 "
+-/
+Conclusion "Conclusion Epo L07"

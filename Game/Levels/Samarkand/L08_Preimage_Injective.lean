@@ -5,9 +5,12 @@ Level 8
 
 Title "" -- "Preimage of surjective is injective"
 
+/-
 Introduction "
   **Arapuka**:  Könnt ihr mir vielleicht sogar mit dieser Vermutung weiterhelfen?
 "
+-/
+Introduction "Intro Samarkand L08"
 
 open Function
 
@@ -17,6 +20,7 @@ TheoremDoc Set.preimage_injective as "preimage_injective" in "Function"
 namespace Set
 
 Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
+  /-
   Hint "
     **Robo**:  Eine Abbildung ist genau dann surjektiv, wenn die induzierte Abbildung `preimage f`, die eine Teilmenge auf das Urbild unter dieser Teilmenge wirft, injektiv ist?
     Stimmt das überhaupt?
@@ -25,6 +29,8 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
 
     **Robo**:  Na dann, los!
   "
+  -/
+  Hint "Explain surcetivity by `preimage f`"
   constructor
   · Branch
       intro h_inj
@@ -63,6 +69,7 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
     rw [Surjective.image_preimage h_surj] at hs
     assumption
 
+/-
 Conclusion "
   **Arapuka**:  Fantastisch!  Ich bin so aufgeregt, ich möchte am liebsten in die Luft springen.
   Aber das geht natürlich nicht.  Dann ist das Muster futsch.
@@ -81,3 +88,6 @@ Conclusion "
 
   **Arapuka**:  Das ist eben die Kunst!
 "
+-/
+
+Conclusion "Conlsuion Samarkand L08"

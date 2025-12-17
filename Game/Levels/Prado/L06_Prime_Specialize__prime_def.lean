@@ -6,32 +6,41 @@ Level 6
 
 Title ""
 
+/-
 Introduction"
 **Du**:  Gut.  Und kannst du mir jetzt zeigen, wie man mit Primzahlen arbeitet?
 
 **Robo**: Mal sehen, ob ich eine Aufgabe zu Primzahlen auf Lager habe … Diese hier vielleicht?"
-
+-/
+Introduction "Intro Prado L06"
 
 namespace Nat
 
 Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
-  Hint "
-    **Robo**: Hier ist `(hp : Prime p)` natürlich die Annahme, dass `p` eine Primzahl ist.
-    Um mit dieser Annahme zu arbeiten, wendest du am besten immer `rw [prime_def] at hp` an."
+  -- Hint "
+  --  **Robo**: Hier ist `(hp : Prime p)` natürlich die Annahme, dass `p` eine Primzahl ist.
+  --  Um mit dieser Annahme zu arbeiten, wendest du am besten immer `rw [prime_def] at hp` an."
+  Hint "`(hp : Prime p)` is the assumption that `p` is prime. Use `rw [prime_def] at hp`"
   Branch
     unfold Prime at hp
-    Hint "**Robo**:  Nee, lieber nicht.  Du solltest `Prime` nicht unfolden!
-    Das macht alles nur schwieriger.  Benutze lieber wie ich gesagt hatte `rw [prime_def] at hp`."
+    -- Hint "**Robo**:  Nee, lieber nicht.  Du solltest `Prime` nicht unfolden!
+    -- Das macht alles nur schwieriger.  Benutze lieber wie ich gesagt hatte `rw [prime_def] at hp`."
+    Hint "Do not unfold `Prime`. Use `rw [prime_def] at hp`"
   rw [prime_def] at hp
-  Hint "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch
-`1` und sich selbst teilbar ist.  Das klingt vertraut."
+  -- Hint "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch
+  -- `1` und sich selbst teilbar ist.  Das klingt vertraut."
+  Hint "A prime number is a natural number greater or equal to `2`, which is only divisible by `1`
+  and itself"
   obtain ⟨hp₁, hp⟩ := hp
+  /-
   Hint "
     **Du**: Ich will `{hp}` jetzt bestimmt auf `{a}` anwenden, oder?
 
     **Robo**:  Dann sag doch `have hp' := {hp} {a}`.  Oder etwas eleganter:
     `specialize {hp} {a}`.
   "
+  -/
+  Hint "Apply `{hp}` onto `{a}`. Try either `have hp' := {hp} {a}` or `specialize {hp} {a}`"
   Branch
     -- Marcus' solution
     have ha' : a ∣ p → a = 1 ∨ a = p
@@ -49,8 +58,9 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     -- Hint "**Robo**:  Statt `have` könntest du hier übrigens auch `specialize {hp} {a} {ha}` verwenden."
   specialize hp a ha
   obtain hp | hp := hp
-  · Hint (hidden := true) "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus
-    `{a} = 1` und `2 ≤ {a}` ergibt."
+  --· Hint (hidden := true) "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus
+  --  `{a} = 1` und `2 ≤ {a}` ergibt."
+  · Hint (hidden := true) "Try `linarith` to show contradiction between `{a} = 1` and `2 ≤ {a}`"
     linarith
   · assumption
 

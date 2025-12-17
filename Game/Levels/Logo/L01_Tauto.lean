@@ -6,6 +6,7 @@ Level 1
 
 Title "" -- "Automatisierung"
 
+/-
 Introduction
 "
 Gerade seid Ihr auf Königin *Logisindes* Planeten. Sie kommt ohne Umschweife zum Punkt:
@@ -16,10 +17,13 @@ Und sie kritzelt etwas auf ein Stück Papier: oben ein paar Annahmen, unten eine
 Dazwischen sollst du offenbar einen Beweis eintragen.
 Du siehst Robo hilflos an.
 "
+-/
+Introduction "Intro Logo L01"
 
 /--  -/
 Statement (A B C : Prop) :
     ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C) := by
+  /-
   Hint "**Robo**: Das ist ganz einfach. Mit `{A} {B} {C} : Prop` meint sie:
     `{A}`, `{B}` und `{C}` sind irgendwelche Aussagen (*propositions*).
     Und mit `→` meint sie ⇒, also “impliziert”. Die anderen Symbole kennst du, oder?
@@ -33,14 +37,20 @@ Statement (A B C : Prop) :
     **Robo**: Ja. Schreib einfach `tauto`.
 
     **Robo**: Mach schon …"
+  -/
+  Hint "Explain that `{A} {B} {C} : Prop` introduces statements `{A}`, `{B}` und `{C}` as
+    propositions. The symbol `→` is equivalent to the implication symbol $⇒$. Try `tauto`."
   tauto
 
+/-
 Conclusion
 "
 **Logisinde**: (etwas konsterniert) Ja, das ist streng genommen richtig.
 Aber glaubt bloß nicht, dass Ihr damit auf *diesem* Planeten viel weiterkommt!
 Meine Untertanen verstehen `tauto` nicht. Da müsst Ihr Euch schon etwas mehr anstrengen.
 "
+-/
+Conclusion "Conclusion Logo L01: Remind that `tauto` cannot be used"
 
 NewDefinition «Prop»
 

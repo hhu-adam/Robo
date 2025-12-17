@@ -5,14 +5,16 @@ Level 3
 
 Title ""
 
-Introduction
-"
-  **Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?
-"
+-- Introduction
+-- "
+--   **Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?
+-- "
+Introduction "Intro Piazza L03"
 
 open Set
 
 Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
+  /-
   Hint "
     **Du**:  `A B C : Set ℕ` heißt hier genau was?
 
@@ -29,9 +31,14 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
 
     **Robo**:  Ach ja –
     `ext x` ersetzt eine Mengengleichheit `A = B` durch `x ∈ A ↔ x ∈ B`."
+    -/
+  Hint "`A B C : Set ℕ` means that `A`, `B` and `C` are subsets of `ℕ`. Therefore, `Set`
+  can be interpreted as 'subset'. Use `ext x` to replace a set equation `A = B` with `x ∈ A ↔ x ∈ B`"
   ext x
-  Hint "**Robo**:  Und jetzt wieder `simp`."
+  -- Hint "**Robo**:  Und jetzt wieder `simp`."
+  Hint "Use `simp` again"
   simp -- simp only [mem_inter_iff, mem_union]
+  /-
   Hint "
     **Du**:  Was genau macht `simp` denn eigentlich?
 
@@ -47,9 +54,22 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
     {x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}.
     ```
   "
-  Hint (hidden := true)"
-    **Robo**:  Den Rest schafft bestimmt `tauto`.
+  -/
+  Hint "Explain `simp`: `simp` looks for known equations and equivalences which would be currently
+  applicable. `simp` uses all simplifications it can find. Currently the following simplifications
+  were performed:
+    ```
+    {x} ∈ {A} ∩ {B} ↔ {x} ∈ {A} ∧ {x} ∈ {B}
+    ```
+    and
+    ```
+    {x} ∈ {B} ∪ {C} ↔ {x} ∈ {B} ∨ {x} ∈ {C}.
+    ```
   "
+  -- Hint (hidden := true)"
+  --   **Robo**:  Den Rest schafft bestimmt `tauto`.
+  -- "
+  Hint (hidden := true) "The rest can be dealt with `tauto`"
   tauto
 
 NewTactic ext
