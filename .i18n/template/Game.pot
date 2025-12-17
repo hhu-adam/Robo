@@ -276,7 +276,8 @@ msgid "Try case distinction. Use §0"
 msgstr ""
 
 #: Game
-msgid "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
+msgid "This game illustrates reasoning with Lean using various topics from the "
+"introductory phase of the bachelor's degree program in mathematics."
 msgstr ""
 
 #: Game.Levels.Iso
@@ -2942,9 +2943,8 @@ msgstr ""
 msgid "Try proof by cases, if §0"
 msgstr ""
 
-#. §0: `SHORT CAPTION`
 #: Game
-msgid "§0 Explore an alien universe with the Smart-Elf Robo!"
+msgid "Explore an alien universe with the Smart-Elf Robo!"
 msgstr ""
 
 #: Game.Levels.Logo.L11_And
