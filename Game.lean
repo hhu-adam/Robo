@@ -194,8 +194,8 @@ Conclusion
 /-! Information to be displayed on the servers landing page. -/
 Languages "de"
 CaptionShort -- "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
-"`SHORT CAPTION` Explore an alien universe with the Smart-Elf Robo!"
-CaptionLong "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
+"Explore an alien universe with the Smart-Elf Robo!"
+CaptionLong "This game illustrates reasoning with Lean using various topics from the introductory phase of the bachelor's degree program in mathematics."
 -- Prerequisites "" -- add this if your game depends on other games
 CoverImage "images/Cover.png"
 
