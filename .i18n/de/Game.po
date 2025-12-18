@@ -1345,7 +1345,7 @@ msgstr ""
 #. §2: `f : ℤ → ℤ := …`
 #. §3: $$
 #. \\begin{aligned}
-#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \#. x &\\mapsto x ^ 2
+#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\ x &\\mapsto x ^ 2
 #. \\end{aligned}
 #. $$
 #. §4: $2^2=4$
@@ -1562,7 +1562,7 @@ msgstr ""
 
 #. §0: $$
 #. f(n) = \\begin{cases}
-#. n^2 & \\text{falls } n \\text{ gerade} \#. n+1 & \\text{andernfalls.}
+#. n^2 & \\text{falls } n \\text{ gerade} \\\\ n+1 & \\text{andernfalls.}
 #. \\end{cases}
 #. $$
 #. §1: `f + f`
@@ -2153,7 +2153,7 @@ msgstr ""
 #. §1: $$
 #. \\begin{aligned}
 #. n \\cdot f(E_{i i})
-#. &= \\sum_j f(E_{i i}) \#. &= \\sum_j f(E_{j j}) \#. &= f(1) \#. &= n
+#. &= \\sum_j f(E_{i i}) \\\\ &= \\sum_j f(E_{j j}) \\\\ &= f(1) \\\\ &= n
 #. \\end{aligned}
 #. $$
 #. §2: `f E i i`
@@ -3653,7 +3653,7 @@ msgstr ""
 #. §0: $$
 #. \\begin{aligned}
 #. f(A)
-#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \#. &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
+#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\\\ &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\\\ &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
 #. \\end{aligned}
 #. $$
 #. §1: `A`
@@ -4990,7 +4990,7 @@ msgstr ""
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \#.     @V{h}VV    @V{i}VV   @V{j}VV \#.        D  @<{k}<< E @>{l}>> F    \#.     @A{m}AA    @A{n}AA   @V{p}VV \#.        G  @<{q}<< H @>{r}>> I
+#.        A  @>{f}>> B @<{g}<< C    \\\\     @V{h}VV    @V{i}VV   @V{j}VV \\\\        D  @<{k}<< E @>{l}>> F    \\\\     @A{m}AA    @A{n}AA   @V{p}VV \\\\        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
 #: Game.Levels.Implis.L05_Apply
@@ -9385,11 +9385,11 @@ msgstr "QED"
 #. §15: $$
 #. A_{i,j} \\cdot
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\#. 1 & 0 & 0 \#. 0 & 0 & 0
+#. 0 & 0 & 0\\\\ 1 & 0 & 0 \\\\ 0 & 0 & 0
 #. \\end{pmatrix}
 #. =
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\#. A_{i,j} & 0 & 0 \#. 0 & 0 & 0
+#. 0 & 0 & 0\\\\ A_{i,j} & 0 & 0 \\\\ 0 & 0 & 0
 #. \\end{pmatrix}
 #. $$
 #. §16: `unfold E`
