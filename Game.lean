@@ -129,7 +129,7 @@ Dieses Lernspiel wurde im Rahmen des Projekts
 [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
 an der Heinrich-Heine-Universität Düsseldorf entwickelt,
 finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.
-
+Die laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.
 ## Spielinhalt
 
 **Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.
