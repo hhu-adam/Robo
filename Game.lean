@@ -162,7 +162,7 @@ This educational game was developed as part of the project
 [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
 at Heinrich Heine University Düsseldorf,
 funded by the *Freiraum 2022* program of the *Stiftung Innovation in der Hochschullehre* (Foundation for Innovation in Higher Education).
-Ongoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math* Fund.
+Ongoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.
 
 ## Game content
 
