@@ -1,10 +1,10 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.22.0\n"
+msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11\n"
+"POT-Creation-Date: 2026-01-16\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
-"Language: de\n"
+"Language: template\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
@@ -273,11 +273,6 @@ msgstr ""
 #. §0: `lt_trichotomy`
 #: Game.Levels.Mono.L06_StrictMono
 msgid "Try case distinction. Use §0"
-msgstr ""
-
-#: Game
-msgid "This game illustrates reasoning with Lean using various topics from the "
-"introductory phase of the bachelor's degree program in mathematics."
 msgstr ""
 
 #: Game.Levels.Iso
@@ -2832,13 +2827,13 @@ msgstr ""
 #. y ≤ \\tfrac{34}{7}
 #. $$
 #: Game.Levels.Luna.L07_Linarith2
-msgid
+msgid "\n"
 "Given\n"
 "\n"
 "§0\n"
 "\n"
 "Show\n"
-"§1"
+"§1\n"
 ""
 msgstr ""
 
@@ -2941,10 +2936,6 @@ msgstr ""
 #. §0: `«{b}» = a`
 #: Game.Levels.Piazza.L13_insert_erase
 msgid "Try proof by cases, if §0"
-msgstr ""
-
-#: Game
-msgid "Explore an alien universe with the Smart-Elf Robo!"
 msgstr ""
 
 #: Game.Levels.Logo.L11_And
@@ -4478,39 +4469,6 @@ msgstr ""
 msgid "Look at §0"
 msgstr ""
 
-#: Game
-msgid "## Project ADAM\n"
-"\n"
-"This educational game was developed as part of the project\n"
-"[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\n"
-"at Heinrich Heine University Düsseldorf,\n"
-"funded by the *Freiraum 2022* program of the *Stiftung Innovation in der Hochschullehre* (Foundation for Innovation in Higher Education).\n"
-"Ongoing maintenance and development are generously supported by Renaissance Philanthropy through the AI for Math Fund.\n"
-"\n"
-"## Game content\n"
-"\n"
-"**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n"
-"\n"
-"## Credits\n"
-"\n"
-"* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
-"* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n"
-"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
-"* **Concept & Story:** Marcus Zibrowius\n"
-"* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
-"\n"
-"## Contact\n"
-"\n"
-"The game is constantly being revised.\n"
-"We welcome your feedback, suggestions, and criticism,\n"
-"for example, by email to\n"
-"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
-"If you have specific change requests or find errors, you are also welcome to create an issue on GitHub:\n"
-"\n"
-"* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
-"* for the game server in the [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
-msgstr ""
-
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
 msgid "Conclusion Robotswana L06"
 msgstr ""
@@ -4537,6 +4495,10 @@ msgstr ""
 
 #: Game.Levels.Mono.L05_StrictMono
 msgid "Every strictly monotonic mapping (between suitable domains and ranges) is injective."
+msgstr ""
+
+#: Game
+msgid "This game illustrates reasoning with Lean using various topics from the introductory phase of the bachelor's degree program in mathematics."
 msgstr ""
 
 #. §0: `constructor`
@@ -5915,6 +5877,39 @@ msgid "We know that §0 can be used on implications. Intuitively, for equivalenc
 "Try §6"
 msgstr ""
 
+#: Game
+msgid "## Project ADAM\n"
+"\n"
+"This educational game was developed as part of the project\n"
+"[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\n"
+"at Heinrich Heine University Düsseldorf,\n"
+"funded by the *Freiraum 2022* program of the *Stiftung Innovation in der Hochschullehre* (Foundation for Innovation in Higher Education).\n"
+"Ongoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.\n"
+"\n"
+"## Game content\n"
+"\n"
+"**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n"
+"\n"
+"## Credits\n"
+"\n"
+"* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
+"* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n"
+"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
+"* **Concept & Story:** Marcus Zibrowius\n"
+"* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
+"\n"
+"## Contact\n"
+"\n"
+"The game is constantly being revised.\n"
+"We welcome your feedback, suggestions, and criticism,\n"
+"for example, by email to\n"
+"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
+"If you have specific change requests or find errors, you are also welcome to create an issue on GitHub:\n"
+"\n"
+"* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
+"* for the game server in the [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
+msgstr ""
+
 #. §0: `push_neg`
 #. §1: `¬∀ x, P x`
 #. §2: `∃ x, ¬P x`
@@ -6057,6 +6052,10 @@ msgstr ""
 
 #: Game.Levels.Piazza.L12_insert
 msgid "Intro Piazza L12"
+msgstr ""
+
+#: Game
+msgid "Explore an alien universe with the Smart-Elf Robo!"
 msgstr ""
 
 #. §0: `omega`
