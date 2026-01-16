@@ -18,7 +18,7 @@ Statement :
   Hint "**Du**:  Also, die gegebene Abbildung hat die folgende Form:
   $$
   f(n) = \\begin\{cases}
-    n^2 & \\text\{falls } n \\text\{ gerade} \\\\
+    n^2 & \\text\{falls } n \\text\{ gerade} \\\\ %(new line)
     n+1 & \\text\{andernfalls.}
   \\end\{cases}
   $$
@@ -30,7 +30,7 @@ Statement :
   Hint "The given mapping has the form
   $$
     f(n) = \\begin\{cases}
-    n^2 & \\text\{falls } n \\text\{ gerade} \\\\
+    n^2 & \\text\{falls } n \\text\{ gerade} \\\\ %(new line)
     n+1 & \\text\{andernfalls.}
   \\end\{cases}
   $$

@@ -49,9 +49,9 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
   $$
     \\begin\{aligned}
     n \\cdot f(E_\{i i})
-    &= \\sum_j f(E_\{i i}) \\\\
-    &= \\sum_j f(E_\{j j}) \\\\
-    &= f(1) \\\\
+    &= \\sum_j f(E_\{i i}) \\\\ %(new line)
+    &= \\sum_j f(E_\{j j}) \\\\ %(new line)
+    &= f(1) \\\\ %(new line)
     &= n
     \\end\{aligned}
   $$
@@ -75,9 +75,9 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
   $$
     \\begin\{aligned}
     n \\cdot f(E_\{i i})
-    &= \\sum_j f(E_\{i i}) \\\\
-    &= \\sum_j f(E_\{j j}) \\\\
-    &= f(1) \\\\
+    &= \\sum_j f(E_\{i i}) \\\\ %(new line)
+    &= \\sum_j f(E_\{j j}) \\\\ %(new line)
+    &= f(1) \\\\ %(new line)
     &= n
     \\end\{aligned}
   $$

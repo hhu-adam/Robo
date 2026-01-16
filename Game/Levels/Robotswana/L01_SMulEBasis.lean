@@ -67,14 +67,14 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   $$
   A_\{i,j} \\cdot
   \\begin\{pmatrix}
-  0 & 0 & 0\\\\
-  1 & 0 & 0 \\\\
+  0 & 0 & 0\\\\ %(new line)
+  1 & 0 & 0 \\\\ %(new line)
   0 & 0 & 0
   \\end\{pmatrix}
   =
   \\begin\{pmatrix}
-  0 & 0 & 0\\\\
-  A_\{i,j} & 0 & 0 \\\\
+  0 & 0 & 0\\\\ %(new line)
+  A_\{i,j} & 0 & 0 \\\\ %(new line)
   0 & 0 & 0
   \\end\{pmatrix}
   $$
@@ -92,14 +92,14 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   $$
   A_\{i,j} \\cdot
   \\begin\{pmatrix}
-  0 & 0 & 0\\\\
-  1 & 0 & 0 \\\\
+  0 & 0 & 0\\\\ %(new line)
+  1 & 0 & 0 \\\\ %(new line)
   0 & 0 & 0
   \\end\{pmatrix}
   =
   \\begin\{pmatrix}
-  0 & 0 & 0\\\\
-  A_\{i,j} & 0 & 0 \\\\
+  0 & 0 & 0\\\\ %(new line)
+  A_\{i,j} & 0 & 0 \\\\ %(new line)
   0 & 0 & 0
   \\end\{pmatrix}
   $$

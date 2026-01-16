@@ -50,8 +50,8 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   $$
   \\begin\{aligned}
     f(A)
-    &= f\\left( \\sum_\{i,j} A_\{i,j} \\cdot E_\{i,j} \\right) \\\\
-    &= \\sum_\{i,j} A_\{i,j} \\cdot f(E_\{i,j})   \\\\
+    &= f\\left( \\sum_\{i,j} A_\{i,j} \\cdot E_\{i,j} \\right) \\\\ %(new line)
+    &= \\sum_\{i,j} A_\{i,j} \\cdot f(E_\{i,j})   \\\\ %(new line)
     &= \\sum_\{i} A_\{i,i} \\cdot f(E_\{i,i})
   \\end\{aligned}
   $$
@@ -68,8 +68,8 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   $$
   \\begin\{aligned}
     f(A)
-    &= f\\left( \\sum_\{i,j} A_\{i,j} \\cdot E_\{i,j} \\right) \\\\
-    &= \\sum_\{i,j} A_\{i,j} \\cdot f(E_\{i,j})   \\\\
+    &= f\\left( \\sum_\{i,j} A_\{i,j} \\cdot E_\{i,j} \\right) \\\\ %(new line)
+    &= \\sum_\{i,j} A_\{i,j} \\cdot f(E_\{i,j})   \\\\ %(new line)
     &= \\sum_\{i} A_\{i,i} \\cdot f(E_\{i,i})
   \\end\{aligned}
   $$

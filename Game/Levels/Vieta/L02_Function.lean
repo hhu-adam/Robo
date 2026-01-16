@@ -29,7 +29,7 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 
     $$
     \\begin\{aligned}
-      f\\colon \\mathbb\{ℤ} &\\to \\mathbb\{ℤ} \\\\
+      f\\colon \\mathbb\{ℤ} &\\to \\mathbb\{ℤ} \\\\ %(new line)
       x &\\mapsto x ^ 2
     \\end\{aligned}
     $$
@@ -47,7 +47,7 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
   Only `f : ℤ → ℤ := …` the anon. function would receive a name. The goal is for
     $$
     \\begin\{aligned}
-      f\\colon \\mathbb\{ℤ} &\\to \\mathbb\{ℤ} \\\\
+      f\\colon \\mathbb\{ℤ} &\\to \\mathbb\{ℤ} \\\\ %(new line)
       x &\\mapsto x ^ 2
     \\end\{aligned}
     $$
