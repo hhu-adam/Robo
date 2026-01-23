@@ -11,8 +11,8 @@ Introduction "Intro Quantus O04"
 /--
 $$
 \begin{aligned}
-  a &= b \\
-  a + a ^ 2 &= b + 1 \\
+  a &= b \\ %(new line)
+  a + a ^ 2 &= b + 1 \\ %(new line)
   \vdash b + b ^ 2 &= b + 1
 \end{aligned}
 $$

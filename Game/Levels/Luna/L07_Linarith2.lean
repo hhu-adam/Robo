@@ -19,7 +19,7 @@ Statement (x y : ℚ) (h₁ : 35/11 * y ≤ 35/2 - 22/21 * x) (h₂ : 8/9 * y �
 
   $$
   \\begin\{aligned}
-    \\tfrac\{35}\{11}\\cdot y &\\le -\\tfrac\{22}\{21}\\cdot x + \\tfrac\{35}\{2}  \\\\
+    \\tfrac\{35}\{11}\\cdot y &\\le -\\tfrac\{22}\{21}\\cdot x + \\tfrac\{35}\{2}  \\\\ %(new line)
     \\tfrac\{8}\{9} \\cdot y &\\le x + \\tfrac\{17}\{8}
   \\end\{aligned}
   $$
@@ -34,12 +34,11 @@ Statement (x y : ℚ) (h₁ : 35/11 * y ≤ 35/2 - 22/21 * x) (h₂ : 8/9 * y �
   Lina grinst.
   "
   -/
-  Hint "
-  Given
+  Hint "Given
 
   $$
   \\begin\{aligned}
-    \\tfrac\{35}\{11}\\cdot y &\\le -\\tfrac\{22}\{21}\\cdot x + \\tfrac\{35}\{2}  \\\\
+    \\tfrac\{35}\{11}\\cdot y &\\le -\\tfrac\{22}\{21}\\cdot x + \\tfrac\{35}\{2}  \\\\ %(new line)
     \\tfrac\{8}\{9} \\cdot y &\\le x + \\tfrac\{17}\{8}
   \\end\{aligned}
   $$

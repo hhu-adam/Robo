@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-09\n"
+"POT-Creation-Date: 2026-01-16\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -777,7 +777,7 @@ msgstr ""
 #. §2: `f : ℤ → ℤ := …`
 #. §3: $$
 #. \\begin{aligned}
-#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\
+#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\ %(new line)
 #. x &\\mapsto x ^ 2
 #. \\end{aligned}
 #. $$
@@ -933,7 +933,7 @@ msgstr ""
 
 #. §0: $$
 #. f(n) = \\begin{cases}
-#. n^2 & \\text{falls } n \\text{ gerade} \\
+#. n^2 & \\text{falls } n \\text{ gerade} \\ %(new line)
 #. n+1 & \\text{andernfalls.}
 #. \\end{cases}
 #. $$
@@ -1330,9 +1330,9 @@ msgstr ""
 #. §1: $$
 #. \\begin{aligned}
 #. n \\cdot f(E_{i i})
-#. &= \\sum_j f(E_{i i}) \\
-#. &= \\sum_j f(E_{j j}) \\
-#. &= f(1) \\
+#. &= \\sum_j f(E_{i i}) \\ %(new line)
+#. &= \\sum_j f(E_{j j}) \\ %(new line)
+#. &= f(1) \\ %(new line)
 #. &= n
 #. \\end{aligned}
 #. $$
@@ -1451,6 +1451,25 @@ msgstr ""
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "A prime number is a natural number greater or equal to §0, which is only divisible by §1\n"
 "and itself"
+msgstr ""
+
+#. §0: $$
+#. \\begin{aligned}
+#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\ %(new line)
+#. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
+#. \\end{aligned}
+#. $$
+#. §1: $$
+#. y ≤ \\tfrac{34}{7}
+#. $$
+#: Game.Levels.Luna.L07_Linarith2
+msgid "Given\n"
+"\n"
+"§0\n"
+"\n"
+"Show\n"
+"§1\n"
+""
 msgstr ""
 
 #. §0: `n : ℤ`
@@ -2518,8 +2537,8 @@ msgstr ""
 #. §0: $$
 #. \\begin{aligned}
 #. f(A)
-#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\
-#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\
+#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\ %(new line)
+#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\ %(new line)
 #. &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
 #. \\end{aligned}
 #. $$
@@ -2815,26 +2834,6 @@ msgstr ""
 #. §1: `decide`
 #: Game.Levels.Prado.L01_prime_two
 msgid "Because §0 is a concrete data and there is a algorithm to decide if a number is prime you can use §1"
-msgstr ""
-
-#. §0: $$
-#. \\begin{aligned}
-#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\
-#. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
-#. \\end{aligned}
-#. $$
-#. §1: $$
-#. y ≤ \\tfrac{34}{7}
-#. $$
-#: Game.Levels.Luna.L07_Linarith2
-msgid "\n"
-"Given\n"
-"\n"
-"§0\n"
-"\n"
-"Show\n"
-"§1\n"
-""
 msgstr ""
 
 #: Game.Levels.Iso.L02_Inverse
@@ -3359,10 +3358,10 @@ msgstr ""
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\
-#.        D  @<{k}<< E @>{l}>> F    \\
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\
+#.        A  @>{f}>> B @<{g}<< C    \\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
@@ -6094,14 +6093,14 @@ msgstr ""
 #. §15: $$
 #. A_{i,j} \\cdot
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\
-#. 1 & 0 & 0 \\
+#. 0 & 0 & 0\\ %(new line)
+#. 1 & 0 & 0 \\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. =
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\
-#. A_{i,j} & 0 & 0 \\
+#. 0 & 0 & 0\\ %(new line)
+#. A_{i,j} & 0 & 0 \\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. $$

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11\n"
+"POT-Creation-Date: 2026-01-16\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -456,13 +456,6 @@ msgid "Try case distinction. Use §0"
 msgstr ""
 " **Robo**:  Jetzt vielleicht eine Fallunterscheidung.  Erinnerst du dich an "
 "§0?"
-
-#: Game
-msgid "This game illustrates reasoning with Lean using various topics from the "
-"introductory phase of the bachelor's degree program in mathematics."
-msgstr ""
-"Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
-"aus der Eingangsphase des Bachelorstudiums Mathematik."
 
 #: Game.Levels.Iso
 msgid "Iso"
@@ -1345,7 +1338,8 @@ msgstr ""
 #. §2: `f : ℤ → ℤ := …`
 #. §3: $$
 #. \\begin{aligned}
-#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\ x &\\mapsto x ^ 2
+#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\ %(new line)
+#. x &\\mapsto x ^ 2
 #. \\end{aligned}
 #. $$
 #. §4: $2^2=4$
@@ -1562,7 +1556,8 @@ msgstr ""
 
 #. §0: $$
 #. f(n) = \\begin{cases}
-#. n^2 & \\text{falls } n \\text{ gerade} \\\\ n+1 & \\text{andernfalls.}
+#. n^2 & \\text{falls } n \\text{ gerade} \\ %(new line)
+#. n+1 & \\text{andernfalls.}
 #. \\end{cases}
 #. $$
 #. §1: `f + f`
@@ -2153,7 +2148,10 @@ msgstr ""
 #. §1: $$
 #. \\begin{aligned}
 #. n \\cdot f(E_{i i})
-#. &= \\sum_j f(E_{i i}) \\\\ &= \\sum_j f(E_{j j}) \\\\ &= f(1) \\\\ &= n
+#. &= \\sum_j f(E_{i i}) \\ %(new line)
+#. &= \\sum_j f(E_{j j}) \\ %(new line)
+#. &= f(1) \\ %(new line)
+#. &= n
 #. \\end{aligned}
 #. $$
 #. §2: `f E i i`
@@ -2179,15 +2177,19 @@ msgid ""
 "and then continue with §8.\n"
 msgstr ""
 "\n"
-"Du überlegst ein bisschen und kritzelst auf dem Papier herum.  Nach einer "
-"Weile:\n"
+"Du überlegst ein bisschen und kritzelst auf dem Papier herum. \n"
+"Nach einer Weile:\n"
+"\n"
 "**Du**: Ich glaube, ich habe eine Idee! Das §0-fache der Gleichung kann ich "
-"mit den vorherigen Resultaten wie folgt nachrechnen: §1\n"
+"mit den vorherigen Resultaten wie folgt nachrechnen: \n"
+"§1\n"
 "Der wesentlich Punkt ist, dass wir ja gesehen hatten, dass §2 und §3 für "
 "beliebige §4 und §5 gleich sind.  Also sind sie in der Summe austauschbar.\n"
+"\n"
 "**Robo**: Mmm.  Du willst jedenfalls zunächst ausnutzen, dass Multiplikation "
 "mit §6 injektiv ist? Hatten wir dazu nicht mal ein Lemma? Mmm …\n"
 "Robo überlegt eine Weile.\n"
+"\n"
 "**Robo**:  Ich würds mal so versuchen: §7 Und dann weiter mit §8.\n"
 
 #: Game.Levels.Quantus.L09_PushNeg
@@ -2373,6 +2375,44 @@ msgid ""
 msgstr ""
 "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich §0, "
 "die nur durch §1 und sich selbst teilbar ist.  Das klingt vertraut."
+
+#. §0: $$
+#. \\begin{aligned}
+#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\ %(new line)
+#. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
+#. \\end{aligned}
+#. $$
+#. §1: $$
+#. y ≤ \\tfrac{34}{7}
+#. $$
+#: Game.Levels.Luna.L07_Linarith2
+msgid ""
+"Given\n"
+"\n"
+"§0\n"
+"\n"
+"Show\n"
+"§1\n"
+msgstr ""
+"Hint \"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  "
+"Gegeben ist:\n"
+"\n"
+"$$\n"
+"\\\\begin\\{aligned}\n"
+"   \\\\tfrac\\{35}\\{11}\\\\cdot y &\\\\le -\\\\tfrac\\{22}\\{21}\\\\cdot x "
+"+ \\\\tfrac\\{35}\\{2}  \\\\\\\\ %(new line)\n"
+"   \\\\tfrac\\{8}\\{9} \\\\cdot y &\\\\le x + \\\\tfrac\\{17}\\{8}\n"
+"\\\\end\\{aligned}\n"
+"$$\n"
+"\n"
+"Und wir sollen zeigen:\n"
+"$$\n"
+"y ≤ \\\\tfrac\\{34}\\{7}\n"
+"$$\n"
+"\n"
+"Robo??\n"
+"\n"
+"Lina grinst.\n"
 
 #. §0: `n : ℤ`
 #. §1: `n.toNat : ℕ`
@@ -3653,7 +3693,9 @@ msgstr ""
 #. §0: $$
 #. \\begin{aligned}
 #. f(A)
-#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\\\ &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\\\ &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
+#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\ %(new line)
+#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\ %(new line)
+#. &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
 #. \\end{aligned}
 #. $$
 #. §1: `A`
@@ -4294,10 +4336,6 @@ msgstr "**Robo**: Du könntest hier mit §0 weitermachen."
 #: Game.Levels.Piazza.L13_insert_erase
 msgid "Try proof by cases, if §0"
 msgstr " **Fin**: Mach doch eine Fallunterscheidung, ob §0 ist oder nicht."
-
-#: Game
-msgid "Explore an alien universe with the Smart-Elf Robo!"
-msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
 
 #: Game.Levels.Logo.L11_And
 msgid "Try Assumption tactic"
@@ -4990,7 +5028,11 @@ msgstr ""
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\\\     @V{h}VV    @V{i}VV   @V{j}VV \\\\        D  @<{k}<< E @>{l}>> F    \\\\     @A{m}AA    @A{n}AA   @V{p}VV \\\\        G  @<{q}<< H @>{r}>> I
+#.        A  @>{f}>> B @<{g}<< C    \\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\ %(new line)
+#.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
 #: Game.Levels.Implis.L05_Apply
@@ -6762,83 +6804,6 @@ msgstr "**Arapuka**: Schön."
 msgid "Look at §0"
 msgstr "**Robo**: Schau mal §0 an."
 
-#: Game
-msgid ""
-"## Project ADAM\n"
-"\n"
-"This educational game was developed as part of the project\n"
-"[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-"
-"adam.github.io/)\n"
-"at Heinrich Heine University Düsseldorf,\n"
-"funded by the *Freiraum 2022* program of the *Stiftung Innovation in der "
-"Hochschullehre* (Foundation for Innovation in Higher Education).\n"
-"Ongoing maintenance and development are generously supported by Renaissance Philanthropy through the AI for Math Fund.\n"
-"\n"
-"## Game content\n"
-"\n"
-"**Spoiler alert** You can find an overview of the rough mathematical content "
-"of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-"
-"file#overview-over-existing-content).\n"
-"\n"
-"## Credits\n"
-"\n"
-"* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
-"* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see "
-"[lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-"
-"file#credits)\n"
-"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
-"* **Concept & Story:** Marcus Zibrowius\n"
-"* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
-"\n"
-"## Contact\n"
-"\n"
-"The game is constantly being revised.\n"
-"We welcome your feedback, suggestions, and criticism,\n"
-"for example, by email to\n"
-"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
-"If you have specific change requests or find errors, you are also welcome to "
-"create an issue on GitHub:\n"
-"\n"
-"* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/"
-"issues)\n"
-"* for the game server in the [lean4game repo](https://github.com/leanprover-"
-"community/lean4game/issues)."
-msgstr ""
-" ## Projekt ADAM\n"
-"\n"
-"Dieses Lernspiel wurde im Rahmen des Projekts [ADAM: Anticipating the "
-"Digital Age of Mathematics](https://hhu-adam.github.io/) an der Heinrich-"
-"Heine-Universität Düsseldorf entwickelt, finanziert durch das Programm "
-"*Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\n"
-"Die laufende Weiterentwicklung wird durch Mittel des AI for Math Fund der Stiftung Renaissance Philanthropy ermöglicht.\n"
-"\n"
-"## Spielinhalt\n"
-"\n"
-"**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-"
-"ov-file#overview-over-existing-content) findest du eine Übersicht über den "
-"groben mathematischen Inhalt aller Planeten.\n"
-"\n"
-"## Credits\n"
-"\n"
-"* **Projektleitung:** Marcus Zibrowius, Immi Halupczok * **Game Engine:** "
-"Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://"
-"github.com/leanprover-community/lean4game?tab=readme-ov-file#credits) * "
-"**Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour * **Konzept & "
-"Handlung:** Marcus Zibrowius * **Illustrationen:** [Dušan Pavlić](https://"
-"www.behance.net/dusanpavlic#)\n"
-"\n"
-"## Kontakt\n"
-"\n"
-"Das Spiel wird laufend überarbeitet. Wir freuen uns sehr über "
-"Erfahrungsberichte, Anregungen und Kritik, zum Beispiel per Email an [Marcus "
-"Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/). Wenn du "
-"spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern "
-"einen Issue auf GitHub erstellen:\n"
-"\n"
-"* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues) * "
-"zum Spielserver im [lean4game repo](https://github.com/leanprover-community/"
-"lean4game/issues)."
-
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
 msgid "Conclusion Robotswana L06"
 msgstr ""
@@ -6882,6 +6847,14 @@ msgid ""
 msgstr ""
 "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und "
 "Wertebereichen) ist injektiv."
+
+#: Game
+msgid ""
+"This game illustrates reasoning with Lean using various topics from the "
+"introductory phase of the bachelor's degree program in mathematics."
+msgstr ""
+"Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
+"aus der Eingangsphase des Bachelorstudiums Mathematik."
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
@@ -7707,11 +7680,13 @@ msgstr ""
 "dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch "
 "nicht gelöst hast.\n"
 "\n"
-"## Neuigkeiten §0 Der jüngste Planet im Formaloversum heißt Euklid. Außerdem "
-"gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor "
-"und Saturn, und in der Dokumentation der Taktiken und Definitionen. Auf "
-"Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über "
-"§1. Saturn endet nun mit einer polynomiellen Quadratsummenformel.\n"
+"## Neuigkeiten\n"
+"\n"
+" §0 Der jüngste Planet im Formaloversum heißt Euklid. Außerdem gibt es jede "
+"Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn, "
+"und in der Dokumentation der Taktiken und Definitionen. Auf Babylon wird "
+"jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über §1. Saturn "
+"endet nun mit einer polynomiellen Quadratsummenformel.\n"
 "\n"
 "§2 Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer "
 "geworden, und auch Piazza wurde grundlegend überarbeitet.\n"
@@ -9115,6 +9090,129 @@ msgstr ""
 "\n"
 "**Robo**: Die Richtung §3 von §4 heißt §5. Du kannst sie mit §6 anwenden."
 
+#: Game
+#, fuzzy
+#| msgid ""
+#| "## Project ADAM\n"
+#| "\n"
+#| "This educational game was developed as part of the project\n"
+#| "[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-"
+#| "adam.github.io/)\n"
+#| "at Heinrich Heine University Düsseldorf,\n"
+#| "funded by the *Freiraum 2022* program of the *Stiftung Innovation in der "
+#| "Hochschullehre* (Foundation for Innovation in Higher Education).\n"
+#| "Ongoing maintenance and development are generously supported by "
+#| "Renaissance Philanthropy through the AI for Math Fund.\n"
+#| "\n"
+#| "## Game content\n"
+#| "\n"
+#| "**Spoiler alert** You can find an overview of the rough mathematical "
+#| "content of all planets on [Github](https://github.com/hhu-adam/Robo?"
+#| "tab=readme-ov-file#overview-over-existing-content).\n"
+#| "\n"
+#| "## Credits\n"
+#| "\n"
+#| "* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
+#| "* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see "
+#| "[lean4game](https://github.com/leanprover-community/lean4game?tab=readme-"
+#| "ov-file#credits)\n"
+#| "* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
+#| "* **Concept & Story:** Marcus Zibrowius\n"
+#| "* **Illustrations:** [Dušan Pavlić](https://www.behance.net/"
+#| "dusanpavlic#)\n"
+#| "\n"
+#| "## Contact\n"
+#| "\n"
+#| "The game is constantly being revised.\n"
+#| "We welcome your feedback, suggestions, and criticism,\n"
+#| "for example, by email to\n"
+#| "[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
+#| "If you have specific change requests or find errors, you are also welcome "
+#| "to create an issue on GitHub:\n"
+#| "\n"
+#| "* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/"
+#| "issues)\n"
+#| "* for the game server in the [lean4game repo](https://github.com/"
+#| "leanprover-community/lean4game/issues)."
+msgid ""
+"## Project ADAM\n"
+"\n"
+"This educational game was developed as part of the project\n"
+"[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-"
+"adam.github.io/)\n"
+"at Heinrich Heine University Düsseldorf,\n"
+"funded by the *Freiraum 2022* program of the *Stiftung Innovation in der "
+"Hochschullehre* (Foundation for Innovation in Higher Education).\n"
+"Ongoing maintenance and development are generously supported by *Renaissance "
+"Philanthropy* through the *AI for Math Fund*.\n"
+"\n"
+"## Game content\n"
+"\n"
+"**Spoiler alert** You can find an overview of the rough mathematical content "
+"of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-"
+"file#overview-over-existing-content).\n"
+"\n"
+"## Credits\n"
+"\n"
+"* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
+"* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see "
+"[lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-"
+"file#credits)\n"
+"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
+"* **Concept & Story:** Marcus Zibrowius\n"
+"* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
+"\n"
+"## Contact\n"
+"\n"
+"The game is constantly being revised.\n"
+"We welcome your feedback, suggestions, and criticism,\n"
+"for example, by email to\n"
+"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
+"If you have specific change requests or find errors, you are also welcome to "
+"create an issue on GitHub:\n"
+"\n"
+"* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/"
+"issues)\n"
+"* for the game server in the [lean4game repo](https://github.com/leanprover-"
+"community/lean4game/issues)."
+msgstr ""
+" ## Projekt ADAM\n"
+"\n"
+"Dieses Lernspiel wurde im Rahmen des Projekts [ADAM: Anticipating the "
+"Digital Age of Mathematics](https://hhu-adam.github.io/) an der Heinrich-"
+"Heine-Universität Düsseldorf entwickelt, finanziert durch das Programm "
+"*Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\n"
+"Die laufende Weiterentwicklung wird durch Mittel des AI for Math Fund der "
+"Stiftung Renaissance Philanthropy ermöglicht.\n"
+"\n"
+"## Spielinhalt\n"
+"\n"
+"**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-"
+"ov-file#overview-over-existing-content) findest du eine Übersicht über den "
+"groben mathematischen Inhalt aller Planeten.\n"
+"\n"
+"## Credits\n"
+"\n"
+"* **Projektleitung:** Marcus Zibrowius, Immi Halupczok \n"
+"* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe "
+"[lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-"
+"file#credits) \n"
+"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour \n"
+"* **Konzept & Handlung:** Marcus Zibrowius \n"
+"* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
+"\n"
+"## Kontakt\n"
+"\n"
+"Das Spiel wird laufend überarbeitet. Wir freuen uns sehr über "
+"Erfahrungsberichte, Anregungen und Kritik, zum Beispiel per Email an [Marcus "
+"Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/). Wenn du "
+"spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern "
+"einen Issue auf GitHub erstellen:\n"
+"\n"
+"* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues), \n"
+"* zum Spielserver im [lean4game repo](https://github.com/leanprover-"
+"community/lean4game/issues)."
+
 #. §0: `push_neg`
 #. §1: `¬∀ x, P x`
 #. §2: `∃ x, ¬P x`
@@ -9347,6 +9445,10 @@ msgstr " **Robo**:  Den Rest schafft bestimmt §0."
 msgid "Intro Piazza L12"
 msgstr "**Fin**:  Richtig.   Und jetzt lege ich meine Pistazie wieder zurück."
 
+#: Game
+msgid "Explore an alien universe with the Smart-Elf Robo!"
+msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
+
 #. §0: `omega`
 #. §1: `ℕ`
 #. §2: `ℤ`
@@ -9387,11 +9489,15 @@ msgstr "QED"
 #. §15: $$
 #. A_{i,j} \\cdot
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\\\ 1 & 0 & 0 \\\\ 0 & 0 & 0
+#. 0 & 0 & 0\\ %(new line)
+#. 1 & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0
 #. \\end{pmatrix}
 #. =
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\\\ A_{i,j} & 0 & 0 \\\\ 0 & 0 & 0
+#. 0 & 0 & 0\\ %(new line)
+#. A_{i,j} & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0
 #. \\end{pmatrix}
 #. $$
 #. §16: `unfold E`

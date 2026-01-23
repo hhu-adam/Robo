@@ -11,10 +11,10 @@ Introduction
 Die nächste Seite sieht ein bisschen komplizierter aus. Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.
   $$
   \\begin{CD}
-       A  @>{f}>> B @<{g}<< C    \\\\
-    @V{h}VV    @V{i}VV   @V{j}VV \\\\
-       D  @<{k}<< E @>{l}>> F    \\\\
-    @A{m}AA    @A{n}AA   @V{p}VV \\\\
+       A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+    @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+       D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+    @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
        G  @<{q}<< H @>{r}>> I
   \\end{CD}
   $$
@@ -23,10 +23,10 @@ Die nächste Seite sieht ein bisschen komplizierter aus. Damit Ihr nicht die Üb
 Introduction "Intro Implis L05: Introduce implication graph
   $$
   \\begin{CD}
-       A  @>{f}>> B @<{g}<< C    \\\\
-    @V{h}VV    @V{i}VV   @V{j}VV \\\\
-       D  @<{k}<< E @>{l}>> F    \\\\
-    @A{m}AA    @A{n}AA   @V{p}VV \\\\
+       A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+    @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+       D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+    @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
        G  @<{q}<< H @>{r}>> I
   \\end{CD}
   $$
