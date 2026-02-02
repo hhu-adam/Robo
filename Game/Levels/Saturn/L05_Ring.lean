@@ -50,9 +50,12 @@ Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (
 
 TheoremTab "+ *"
 
+/-
 Conclusion "
   “Bestanden” heißt es kurz und knapp vom anonymen Funker.
 
   **Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert.
   Nichts wie weg!
 "
+-/
+Conclusion "Conclusion Saturn L05"

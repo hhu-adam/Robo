@@ -6,6 +6,7 @@ Level 3
 
 Title "Triple"
 
+/-
 Introduction
 "
 An equivalence `α : A ≃ B` between `A` and `B` consists of a pair of functions `f : A → B` and `g : B → A` such that `f ∘ g = id` and `g ∘ f = id`.
@@ -17,6 +18,8 @@ An equivalence `α : A ≃ B` between `A` and `B` consists of a pair of function
   ```
 In this level you construct an equivalence between functions from `Fin 3` to `A` and triples of elements of `A`.
 "
+-/
+Introduction "Intro Iso X03"
 
 open Function
 

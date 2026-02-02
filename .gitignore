@@ -4,3 +4,6 @@ lake-packages/
 **/.DS_Store
 images/tmp-download/
 *~
+min_placeholders/
+.vscode/
+.i18n/de/Game.mo

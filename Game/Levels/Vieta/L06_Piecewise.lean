@@ -6,6 +6,7 @@ Level 6
 
 Title "" -- "Stückweise Definition"
 
+/-
 Introduction
 "
 **Vieta**:  Wir sollten doch noch mal ein Stück laufen.  Hier entlang!
@@ -19,6 +20,8 @@ So viel Besuch bekomme ich nicht!
 
 Er reicht euch das nächste Blatt.
 "
+-/
+Introduction "Intro Vieta L06"
 
 open Set Function
 
@@ -26,6 +29,7 @@ Statement :
     let f : ℚ → ℚ := fun x ↦ 5 * x
     let g : ℚ → ℚ := fun x ↦ if 0 ≤ x then 2*x else 0
     f ∘ g = g ∘ f := by
+  /-
   Hint "
     **Robo**: Jetzt haben wir zwei Abbildungen, eine davon mit stückweiser Definition.
 
@@ -33,13 +37,19 @@ Statement :
 
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
     dann für dieses."
+  -/
+  Hint "Show swappability if mapping by using `funext x`"
   funext x
+  /-
   Hint "
     **Du**: Ah und jetzt kann ich erst einmal `(g ∘ f) {x}` zu `g (f {x})` umschreiben?
 
     **Robo**: Mit `simp` klappt das."
+  -/
+  Hint "Rewrite `(g ∘ f) {x}` to `g (f {x})` via `simp`"
   simp -- or simp [f, g]
   -- TODO: add `(defeq := _)` so that this triggers for `simp [f, g]` too
+  /-
   Hint (strict := true) "
     **Robo**: Jetzt kannst du nämlich eine Fallunterscheidung
     machen, `by_cases h : 0 ≤ {x}`.
@@ -48,20 +58,32 @@ Statement :
 
     **Robo**: Genau! Oder präziser `0 ≤ {x}` und `¬(0 ≤ {x})`. Das ist nicht ganz das gleiche,
     und man könnte mit dem Lemma `not_le` zwischen `¬(0 ≤ {x})` und `0 > {x}` wechseln."
+  -/
+  Hint (strict := true) "Try `by_cases h : 0 ≤ {x}` for resulting cases `0 ≤ {x}` and `0 > {x}` i.e. `0 ≤ {x}` and `¬(0 ≤ {x})`.
+  Could switch via `not_le` between `¬(0 ≤ {x})` and `0 > {x}`"
   by_cases h : 0 ≤ x
+  /-
   · Hint "**Du**: Jetzt muss ich wohl doch mal die Definitionen benutzen.
 
     **Robo**: Dann benutz sie mal `simp [f, g]`!"
+  -/
+  · Hint "Use definitions via `simp [f, g]`"
     simp [f, g]
+    /-
     Hint "
       **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung, um das if-then-else zu
       reduzieren."
+    -/
+    Hint "Try `rw [if_pos {h}]` to reduce if-then-else"
     rw [if_pos h, if_pos h]
     ring
-  · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
+  -- · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
+  · Hint (hidden := true) "Try `simp [f, g]` `VIETA_SECOND`"
     simp [f, g]
-    Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
-    Hint (hidden := true) "**Robo**: `if_neg`, genau!"
+  --  Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
+    Hint "Remind of negation for `if_pos`"
+    -- Hint (hidden := true) "**Robo**: `if_neg`, genau!"
+    Hint (hidden := true) "Use the negation `if_neg`"
     rw [if_neg h, if_neg h]
 
 Conclusion ""

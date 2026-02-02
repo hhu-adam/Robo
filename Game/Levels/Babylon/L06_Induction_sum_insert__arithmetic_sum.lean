@@ -6,6 +6,7 @@ Level 6
 
 Title "" -- "Arithmetische Summe"
 
+/-
 Introduction
 "
 **Babylonier**: Kommt, ich zeig euch mal einen unserer schönsten Türme!
@@ -17,6 +18,9 @@ Der Weg führt steil bergan.  Der Turm, der euch oben auf dem Berg erwartet, ist
 
 **Babylonier**: Richtig. Gauß war ein Babylonier!
 "
+-/
+
+Introduction "Intro Babylon L06"
 
 open Finset
 
@@ -29,6 +33,7 @@ TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 
 Statement arithmetic_sum (n : ℕ) :
      (∑ i ∈ Icc 0 n , i : ℚ) = 1/2  * n * (n + 1) := by
+  /-
   Hint "**Du**: Diese Summe habe ich auch schon einmal gesehen.
     $$
     \\sum_\{i = 0}^n i = \\tfrac\{1}\{2} \\cdot n \\cdot (n + 1)
@@ -43,30 +48,50 @@ Statement arithmetic_sum (n : ℕ) :
 
   **Robo**:  Der Zusatz ist natürlich optional.
   Du kannst damit Namen für Induktionsvariable (`d`) und -hypothese (`hd`) vorgeben."
+  -/
+  Hint "To proof sum $$ \\sum_\{i = 0}^n i = \\tfrac\{1}\{2} \\cdot n \\cdot (n + 1) $$
+  try to perform induction over `n` using `induction n with d hd`. `with …` is optional and you can
+  decide on the name of your induction variable (`d`) and hypothesis (`hd`)."
   induction n with d hd
+  /-
   Hint "**Du**: Zuerst der Induktionsanfang …
 
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
+  -/
+  Hint "You can skip induction start by using `simp`"
   simp
+  /-
   Hint "**Robo**: Jetzt willst du das Interval $[0, {d}+1]$, über das summiert wird, aufspalten in $[0,{d}]$ und ${d}+1$.
     Dazu könntest du das Lemma `insert_Icc_eq_Icc_add_one_right` verwenden, das wir schon gesehen hatten.
   "
+  -/
+  Hint "Divide interval $[0, {d}+1]$ into $[0,{d}]$ and ${d}+1$ by using `insert_Icc_eq_Icc_add_one_right`"
   rw [← insert_Icc_eq_Icc_add_one_right]
+  /-
   Hint "**Robo**:  Genau!  Und jetzt spaltet dir `sum_insert` die Summe genau so auf, wie du das haben möchtest:
   also eine Summe über $[0,{d}]$ und dann noch einen zusätzlichen Summanden für ${d}+1$.
   Probiers mal: `rw [sum_insert]`
   "
+  -/
+  Hint "`sum_insert` will divide sum as wished: a sum over $[0,{d}]$ and an additional summand for ${d}+1$.
+  Try `rw [sum_insert]`"
   rw [sum_insert]
+  /-
   Hint (hidden := true)
   "**Du**: Und wie wende ich jetzt die Induktionshypothese an?
 
   **Robo**: Mit `rw`, wie jede andere Annahme auch."
+  -/
+  Hint (hidden := true) "Apply induction hypothesis with `rw`"
   rw [hd]
+  /-
   Hint "
     **Du**: Der Rest sollte jetzt einfach nur Rechnerei sein.
 
     **Robo**:  Stimmt.  Irgendeine Kombination von `simp` und `ring` sollte das schaffen.
   "
+  -/
+  Hint "The rest is simple computation solvable by `simp` and `ring`"
   simp
   ring
   simp

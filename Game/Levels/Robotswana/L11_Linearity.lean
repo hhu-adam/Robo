@@ -9,26 +9,34 @@ Level 11
 
 Title "" -- "Trace"
 
+/-
 Introduction
 "
 Als ihr mit etwas Abstand stehen bleibt, kommt Tracy auf euch zugelaufen und fängt an zu spielen. Belustigt gibt es euch verschiedenste
 Aufgaben und Terme, und ihr versucht, diese schnell genug zu kombinieren.
 "
+-/
+Introduction "Intro Robotswana L11"
 
+/-
 Conclusion "Schließlich macht ihr euch auf den Rückweg.
 Ihr verlauft euch sofort, aber Tracy ist euch offenbar gefolgt und führt euch quer durch
 die Graslandschaft zurück zu eurem Schiff."
+-/
+Conclusion "Conclusion Robotswana L11"
 
 open Matrix Fintype
 
 Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
     trace (A - t • 1) = trace A - t • n := by
-  Hint "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
+  -- Hint "**Du**: Da geht es gerade offensichtlich um Linearität der Spur von Matrizen."
+  Hint "Explain statement"
   rw [trace_sub]
   rw [trace_smul]
   rw [trace_one]
-  Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge natürlich auch alles
-  mit `simp`, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+  -- Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge natürlich auch alles
+  -- mit `simp`, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+  Hint "Try `card_fin` | `simp`"
   rw [card_fin]
 
 /---/
