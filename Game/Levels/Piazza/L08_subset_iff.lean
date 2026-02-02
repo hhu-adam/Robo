@@ -14,7 +14,7 @@ Wir sollten die Besucher mal etwas mehr über Inklusionen ausfragen.
 -/
 Introduction "Intro Piazza L08"
 
-/-- `subset_iff` besagt, dass s₁ eine Teilmenge von s₂ genau dann ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind. -/
+/-- `subset_iff` besagt, dass s₁ genau dann eine Teilmenge von s₂ ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind. -/
 TheoremDoc Set.subset_iff as "Set.subset_iff" in "Set"
 
 namespace Set
@@ -33,7 +33,7 @@ end Set
 
 NewDefinition Subset
 
-/-- `subset_iff` besagt, dass s₁ eine Teilmenge von s₂ genau dann ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind. -/
+/-- `subset_iff` besagt, dass s₁ genau dann eine Teilmenge von s₂ ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind. -/
 TheoremDoc Finset.subset_iff as "Finset.subset_iff" in "Set"
 NewTheorem Finset.subset_iff
 
