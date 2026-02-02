@@ -1604,7 +1604,7 @@ msgstr ""
 #. §7: `RightInverse`
 #: Game.Levels.Epo.L03_LeftInverse
 msgid ""
-"Goal says that §0 is righ inverse of §1 iff §2 is left inverse of §3.\n"
+"Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
 "Try §4. It has to be written as §5 instead of §6\n"
 "because §7 is ambigous in Leanic."
 msgstr ""
@@ -3947,6 +3947,11 @@ msgstr ""
 "**Sub**:  Du hast Recht. Wir sollten die Besucher mal etwas mehr über "
 "Inklusionen ausfragen."
 
+#. §0: `subset_iff`
+#: Game.Levels.Piazza.L08_subset_iff
+msgid "§0 says that s₁ is a subset of s₂ iff all elements in s₁ are also in s₂."
+msgstr "§0 besagt, dass s₁ genau dann eine Teilmenge von s₂ ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind."
+
 #. §0: `b`
 #. §1: `use …`
 #. §2: `lt_trichotomy`
@@ -6282,7 +6287,7 @@ msgstr ""
 "doch gar kein §3.\n"
 "\n"
 "**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als "
-"Implikationsannahme ins Beweissziel schieben."
+"Implikationsannahme ins Beweisziel schieben."
 
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
 msgid "Intro Piazza L03"
@@ -9381,7 +9386,7 @@ msgstr ""
 "\n"
 "**Guino**: Willkommen im Prado!  Ich bin ja so froh, dass ihr hier seid. Ihr "
 "seid die ersten Besucher!  Nun gut, wir haben ja auch gerade erst eröffnet. "
-"Kommt rein, komm rein!  Ihr seid diese Erdleute, von denen allen berichten, "
+"Kommt rein, kommt rein!  Ihr seid diese Erdleute, von denen allen berichten, "
 "nicht wahr?\n"
 "\n"
 "**Du**:  Ähm, ja.  Und ihr seid …?\n"
@@ -9414,7 +9419,7 @@ msgstr "**Robo**: Vielleicht kannst du wieder §0 benutzen."
 #. §1: `«{f}»`
 #. §2: `have hR : RightInverse «{g}» «{f}»`
 #: Game.Levels.Iso.L02_Inverse
-msgid "Show that §0 is righ inverse to §1 e.g. §2"
+msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr ""
 " Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
 "Beispiel §2"

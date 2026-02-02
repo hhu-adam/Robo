@@ -5,6 +5,8 @@
  "**Robo**:  Genau!  Und jetzt spaltet dir §0 die Summe genau so auf, wie du das haben möchtest: also eine Summe über §1 und dann noch einen zusätzlichen Summanden für §2. Probiers mal: §3",
  "§0 us nonsensical. You want to use the product of\nall those numbers. Write the product sign as §1":
  " **Du**:  Und die nächste Zeile?\n\n§0\n\nIst die auch noch sinnvoll?\n\n**Robo**:  Nein, die ist wieder hochgradiger Schwachsinn. Wie gesagt, du willst jetzt sicherlich das Produkt aller dieser Zahlen benutzen. Das Produktzeichen schreibst du als §1.",
+ "§0 says that s₁ is a subset of s₂ iff all elements in s₁ are also in s₂.":
+ "§0 besagt, dass s₁ genau dann eine Teilmenge von s₂ ist, wenn alle Elemente in s₁ auch in s₂ enthalten sind.",
  "§0 stroy":
  "**Du**:  Eine Abbildung ist genau dann bijektiv, wenn eine zur ihr inverse Abbildung existiert. Das ist ja im Wesentlich dass, was wir auf Epo und Mono schon gezeigt hatten. Hattest du dir die Aussagen abgespeichert?\n\n**Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die Augenbrauen nach oben. Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.",
  "§0 should help": "**Robo**: §0 sollte helfen",
@@ -449,7 +451,7 @@
  "Simplify": "**Du**: Ah ja, im Zweifelsfall vereinfachen.",
  "Show two statements: (1) §0 satisfies §1 and (2) §2 is the only element with\nsuch a property":
  "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) §0 erfüllt §1, (2) §2 ist das einzige Element mit dieser Eigenschaft.",
- "Show that §0 is righ inverse to §1 e.g. §2":
+ "Show that §0 is right inverse to §1 e.g. §2":
  " Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum Beispiel §2",
  "Show that there is right inverse to §0. You could again set mapping §1\nand then apply §2. Think how right inverse of §3 could look like.":
  " **Du**:  Hier soll ich vermutlich zeigen, dass ein Rechtsinverses zu §0 existiert?\n\n**Robo**:  Ja.  Du kannst also zunächst wieder mit §1 eine Abbildung angeben, und sie dann mit §2 verwenden.\n\n**Du**:  Gut.  Dann überlege ich also einmal, wie ein Rechtsinverses zu §3 aussehen könnte …",
@@ -537,7 +539,7 @@
  "Remember proof":
  " **Robo**:  Das hatten wir doch auch schon gezeigt …  aber ich hatte vergessen, es abzuspeichern. Erinnerst du dich an den Beweis?",
  "Refer back to §0 as §1 is equivalent in contrapoition to §2.\nExplain that lack of  §3 can be dealt with §4 via §5 for §6.":
- " **Robo**: Ich schlage vor, wir führen das auf das Lemma §0 zurück, das wir auf Quantus schon gezeigt hatten. Hier steht ja im Grunde §1. Und unter Kontraposition ist das äquivalent zu §2.\n\n**Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein §3.\n\n**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als Implikationsannahme ins Beweissziel schieben.",
+ " **Robo**: Ich schlage vor, wir führen das auf das Lemma §0 zurück, das wir auf Quantus schon gezeigt hatten. Hier steht ja im Grunde §1. Und unter Kontraposition ist das äquivalent zu §2.\n\n**Du**: Richtig. Von hinten durch die Brust … Aber warte, im Moment steht da doch gar kein §3.\n\n**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als Implikationsannahme ins Beweisziel schieben.",
  "Quantus": "Quantus",
  "QED": "QED",
  "Put §0 into §1 to show triviality because there is no §2 in §3. Try §4":
@@ -730,7 +732,7 @@
  "Intro Prado L01":
  "**Robo**:  Ja, ja.  Wissen wir.\n\nEr formuliert die Aussage schnell in Leansch und hält sie dir hin.",
  "Intro Prado":
- "Ihr seid auf einem Eisplaneten gelandet, direkt neben einem Eispalast.  Du hast das Gefühl, diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen, wo das gewesen sein könnte.\n\nDirekt am Eingang empfängt euch ein pinguinartiges Wesen.\n\n**Guino**: Willkommen im Prado!  Ich bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher!  Nun gut, wir haben ja auch gerade erst eröffnet. Kommt rein, komm rein!  Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?\n\n**Du**:  Ähm, ja.  Und ihr seid …?\n\n**Guino**:  Guino, Museumsdirektor des Prado – des PRimzahlen-ADOrationsmuseums!  Kommt, kommt!\n\nGuino führt euch die Stufen am Eingang hinauf und durch das Portal in eine große Halle. In der Mitte schwebt ein kleines Podest. Darauf liegen zwei Murmeln.\n\n**Guino**: Seht, seht!  Unser erstes Exponat!  Die Primzahl ZWEI!\n\nIhr seid beide etwas perplex.  Guino hebt die Augenbrauen.\n\n**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?",
+ "Ihr seid auf einem Eisplaneten gelandet, direkt neben einem Eispalast.  Du hast das Gefühl, diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen, wo das gewesen sein könnte.\n\nDirekt am Eingang empfängt euch ein pinguinartiges Wesen.\n\n**Guino**: Willkommen im Prado!  Ich bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher!  Nun gut, wir haben ja auch gerade erst eröffnet. Kommt rein, kommt rein!  Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?\n\n**Du**:  Ähm, ja.  Und ihr seid …?\n\n**Guino**:  Guino, Museumsdirektor des Prado – des PRimzahlen-ADOrationsmuseums!  Kommt, kommt!\n\nGuino führt euch die Stufen am Eingang hinauf und durch das Portal in eine große Halle. In der Mitte schwebt ein kleines Podest. Darauf liegen zwei Murmeln.\n\n**Guino**: Seht, seht!  Unser erstes Exponat!  Die Primzahl ZWEI!\n\nIhr seid beide etwas perplex.  Guino hebt die Augenbrauen.\n\n**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?",
  "Intro Piazza L13":
  "**Fin**:  Und, was meint ihr – sind jetzt wieder alle Pistazien zu Hause?",
  "Intro Piazza L12":
@@ -931,7 +933,7 @@
  "Got to think about it...": "**Du**:  Mal überlegen …∪",
  "Goal: if §0 divides factor §1 of a product then it also divides the product.\nTry §2":
  "**Robo**: Diese Zeile sieht auch sehr vernünftig aus: wenn eine Zahl §0 einen Faktor §1 eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.\n\n**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n\n**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst. Wir fangen natürlich mit §2 an.",
- "Goal says that §0 is righ inverse of §1 iff §2 is left inverse of §3.\nTry §4. It has to be written as §5 instead of §6\nbecause §7 is ambigous in Leanic.":
+ "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\nTry §4. It has to be written as §5 instead of §6\nbecause §7 is ambigous in Leanic.":
  " **Du**: Ich vermute mal, dass soll heißen, §0 ist genau dann ein Rechtsinverses of §1, wenn §2 ein Linksinverses von §3 ist.\n\n**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch mehrdeutig ist.",
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
  " **Du**:  Hier ist jetzt zu zeigen, dass §0 dasselbe ist wie zweimal die Anzahl der geraden Zahlen in §1.  Richtig?\n\n**Robo**:  Richtig.\n\n**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n\n**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.  Zurerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf: §6 Und danach willst du vermutlich §7 als Zwischenschritt verwenden.",

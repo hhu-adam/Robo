@@ -57,7 +57,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       also zum Beispiel `have hR : RightInverse {g} {f}`
     "
     -/
-    Hint "Show that `{g}` is righ inverse to `{f}` e.g. `have hR : RightInverse {g} {f}`"
+    Hint "Show that `{g}` is right inverse to `{f}` e.g. `have hR : RightInverse {g} {f}`"
     have hR : RightInverse g f := by
       assumption
     use g
