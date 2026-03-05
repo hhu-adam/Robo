@@ -31,55 +31,6 @@ import Game.Levels.Piazza
 Title "Robo"
 Introduction
 /-
-"
-# Game Over oder QED?
-
-Bist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?
-Dann bist du hier genau richtig!
-In diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.
-Du wirst unter anderem per Induktion Summenformeln beweisen,
-nachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,
-zeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,
-und die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.
-
-Das Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich
-fast genauso an wie in VSCode, der Standard-IDE für Lean.
-Auf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,
-und schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus
-(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).
-
-Klicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.
-
-## Spielstand
-
-Dein Spielstand wird lokal in deinem Browser als *site data* gespeichert.
-Solltest du diese löschen, verlierst du deinen Spielstand!
-Viele Browser löschen *site data* und *cookies* zusammen.
-Du kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.
-
-## Spielregeln
-
-Wenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.
-Wenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*
-  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.
-
-## Neuigkeiten
-`[2025-03-28]` Der jüngste Planet im Formaloversum heißt Euklid.
-Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, Cantor und Saturn,
-und in der Dokumentation der Taktiken und Definitionen.
-Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr über `Fin n`.
-Saturn endet nun mit einer polynomiellen Quadratsummenformel.
-
-`[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist größer geworden, und auch Piazza wurde grundlegend überarbeitet.
-
-`[2025-02-20]` Die „Abbildungsplaneten“ sind fertig:  Vieta, Mono, Epo, Iso und Samarkand.
-
-`[2025-01-25]` Es gibt jetzt einen Planeten, um sich zu verabschieden:  Ciao.
-
-Hintergrundinformationen und Credits findest du im Menü unter *Game Info*.
-"
--/
-"
 # Game Over or QED
 
 Are you curious about how computer-assisted reasoning feels compared to “real” mathematics?
@@ -119,43 +70,11 @@ Saturn now ends with a polynomial square sum formula.
 `[2025-01-25]` There is now a planet to say goodbye:  Ciao.
 
 Background information and credits can be found in the menu under *Game Info*."
+-/
+"[Main game intro]"
 
 Info
 /-
-"
-## Projekt ADAM
-
-Dieses Lernspiel wurde im Rahmen des Projekts
-[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)
-an der Heinrich-Heine-Universität Düsseldorf entwickelt,
-finanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.
-Die laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.
-## Spielinhalt
-
-**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.
-
-## Credits
-
-* **Projektleitung:** Marcus Zibrowius, Immi Halupczok
-* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)
-* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour
-* **Konzept & Handlung:** Marcus Zibrowius
-* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)
-
-## Kontakt
-
-Das Spiel wird laufend überarbeitet.
-Wir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,
-zum Beispiel per Email an
-[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).
-Wenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:
-
-* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)
-* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
-"
--/
-"
-
 ## Project ADAM
 
 This educational game was developed as part of the project
@@ -186,10 +105,14 @@ If you have specific change requests or find errors, you are also welcome to cre
 
 * for game content in the [Robo repo](https://github.com/hhu-adam/Robo/issues)
 * for the game server in the [lean4game repo](https://github.com/leanprover-community/lean4game/issues).
-"
+-/
+"[Game info]"
 
 Conclusion
-" QED"
+/-
+QED
+-/
+"[Game conclusion]"
 
 
 /-! Information to be displayed on the servers landing page. -/

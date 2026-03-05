@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-16\n"
+"POT-Creation-Date: 2026-03-05\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3827,6 +3827,10 @@ msgstr ""
 msgid "Intro Samarkand L07"
 msgstr ""
 
+#: Game
+msgid "[Game info]"
+msgstr ""
+
 #. §0: ```
 #. def Even (n : ℕ) : Prop := ∃ r, n = r + r
 #. ```
@@ -3918,6 +3922,10 @@ msgid "§0 means that statements §1 and §2 are logically equivalent (“if and
 "§11 and §12.\n"
 "However, you can also refer directly to these components with §13 and §14.\n"
 "(The abbreviation §15 stands for “modus ponens”.)"
+msgstr ""
+
+#: Game
+msgid "[Game conclusion]"
 msgstr ""
 
 #. §0: `P`
@@ -4424,6 +4432,10 @@ msgstr ""
 #. §0: `Injective f`
 #: Game.Levels.Mono.L06_StrictMono
 msgid "Introduce all varaibles and assumptions from §0"
+msgstr ""
+
+#: Game
+msgid "[Main game intro]"
 msgstr ""
 
 #. §0: `0 - 1`
@@ -4986,53 +4998,6 @@ msgstr ""
 msgid "§0 is the statement that §1 is odd:\n"
 "§2\n"
 "You can easily check this with §3."
-msgstr ""
-
-#. §0: `[2025-03-28]`
-#. §1: `Fin n`
-#. §2: `[2025-03-18]`
-#. §3: `[2025-02-20]`
-#. §4: `[2025-01-25]`
-#: Game
-msgid "# Game Over or QED\n"
-"\n"
-"Are you curious about how computer-assisted reasoning feels compared to “real” mathematics?\n"
-"Then you've come to the right place!In this game, you will learn how to work with the proof assistant Lean 4 and the proof library mathlib.\n"
-"Among other things, you will prove sum formulas by induction, prove that a mapping is surjective if and only if it has a right inverse,\n"
-"show that there are uncountably many sequences of natural numbers, and characterize the trace as a mapping on the space of square matrices.\n"
-"The interface is somewhat simplified, but if you activate *editor mode*, it feelsalmost exactly like VSCode,\n"
-"the standard IDE for Lean.\n"
-"On a smartphone or tablet, it's better to stay in the default *typewriter mode* and turn off all\n"
-"autocompletion/correction features on your on-screen keyboard (e.g., under “smart typing > text recognition” on Samsung keyboards).\n"
-"Click on the first planet *logo* in the overview to start your journey.\n"
-"\n"
-"## Game score\n"
-"\n"
-"Your game score is stored locally in your browser as *site data*.\n"
-"If you delete this, you will lose your game score!\n"
-"Many browsers delete *site data* and *cookies* together.\n"
-"However, you can also download your game score from the menu and save it manually.\n"
-"\n"
-"## Rules of the game\n"
-"\n"
-"If you want to play seriously, you should choose *Rules: regular*.\n"
-"If you just want to have a look around, choose *Rules: relaxed*\n"
-"  – then you can play any level, even if you haven't solved the previous levels yet.\n"
-"\n"
-"## News\n"
-"§0 The youngest planet in the Formaloversum is called Euclid.\n"
-"There are also lots of minor improvements, especially on Babylon, Cantor, and Saturn,\n"
-"and in the documentation of tactics and definitions.\n"
-"On Babylon, intervals are now summed over ℕ and ℤ, and no longer over §1.\n"
-"Saturn now ends with a polynomial square sum formula.\n"
-"\n"
-"§2 The planet Saturn has split off from Quantus, Luna has grown larger, and Piazza has also been fundamentally revised.\n"
-"\n"
-"§3 The “image planets” are complete:  Vieta, Mono, Epo, Iso, and Samarkand.\n"
-"\n"
-"§4 There is now a planet to say goodbye:  Ciao.\n"
-"\n"
-"Background information and credits can be found in the menu under *Game Info*."
 msgstr ""
 
 #. §0: `A : Finset T`
@@ -5876,39 +5841,6 @@ msgid "We know that §0 can be used on implications. Intuitively, for equivalenc
 "Try §6"
 msgstr ""
 
-#: Game
-msgid "## Project ADAM\n"
-"\n"
-"This educational game was developed as part of the project\n"
-"[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\n"
-"at Heinrich Heine University Düsseldorf,\n"
-"funded by the *Freiraum 2022* program of the *Stiftung Innovation in der Hochschullehre* (Foundation for Innovation in Higher Education).\n"
-"Ongoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.\n"
-"\n"
-"## Game content\n"
-"\n"
-"**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n"
-"\n"
-"## Credits\n"
-"\n"
-"* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
-"* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n"
-"* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
-"* **Concept & Story:** Marcus Zibrowius\n"
-"* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
-"\n"
-"## Contact\n"
-"\n"
-"The game is constantly being revised.\n"
-"We welcome your feedback, suggestions, and criticism,\n"
-"for example, by email to\n"
-"[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
-"If you have specific change requests or find errors, you are also welcome to create an issue on GitHub:\n"
-"\n"
-"* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
-"* for the game server in the [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
-msgstr ""
-
 #. §0: `push_neg`
 #. §1: `¬∀ x, P x`
 #. §2: `∃ x, ¬P x`
@@ -6069,10 +6001,6 @@ msgstr ""
 
 #: Game.Levels.Implis.L06_Iff
 msgid "Parts available in assumptions"
-msgstr ""
-
-#: Game
-msgid "QED"
 msgstr ""
 
 #. §0: `Mat[«{n}»,«{n}»]`
