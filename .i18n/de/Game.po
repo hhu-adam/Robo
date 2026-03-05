@@ -819,28 +819,6 @@ msgstr "**Robo**:  Denk daran, dass wir schon §0 bewiesen hatten."
 msgid "§0 is trivial"
 msgstr "**Du**: §0. Ist das nicht eine Trivialität? Warte mal!"
 
-#. §0: `Set A`
-#. §1: `A`
-#. §2: `A`
-#: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
-#| msgid ""
-#| "§0 is akin to the power set of §1, more precisely, it is the type of all "
-#| "subsets of §2."
-msgid ""
-" §0 is akin to the power set of §1, more precisely, it is the type of all "
-"subsets of §2."
-msgstr ""
-"**Du**:  Ist also §0 die Potenzmenge von §1?\n"
-"\n"
-"**Robo**: Ja, sozusagen.  Es ist die Menge, oder genauer der Typ, aller "
-"Teilmengen von §2.\n"
-"\n"
-"**Du**:  Und ich soll zeigen, dass … aha.  Vermutlich ein "
-"Widerspruchsbeweis, oder?\n"
-"\n"
-"**Robo**:  Vermutlich."
-
 #. §0: `HasRightInverse f`
 #. §1: `f`
 #. §2: `HasLeftInverse f`
@@ -1616,28 +1594,6 @@ msgstr ""
 "\n"
 "**Robo**: Egal, jetzt sind wir schon ein gutes Stücken weiter. Probier jetzt "
 "hier einmal!"
-
-#. §0: `g`
-#. §1: `f`
-#. §2: `f`
-#. §3: `g`
-#. §4: `Function.RightInverse`
-#. §5: `Function.RightInverse`
-#. §6: `RightInverse`
-#. §7: `RightInverse`
-#: Game.Levels.Epo.L03_LeftInverse
-msgid ""
-"Goal says that §0 is righ inverse of §1 iff §2 is left inverse of §3.\n"
-"Try §4. It has to be written as §5 instead of §6\n"
-"because §7 is ambigous in Leanic."
-msgstr ""
-"**Du**: Ich vermute mal, dass soll heißen, §0 ist genau dann ein "
-"Rechtsinverses of §1, wenn §2 ein Linksinverses von §3 ist.\n"
-"\n"
-"**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch "
-"weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss "
-"man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch "
-"mehrdeutig ist."
 
 #: Game.Levels.Implis.L03_Apply
 msgid "This should seem obvious now"
@@ -6445,7 +6401,7 @@ msgstr ""
 "doch gar kein §3.\n"
 "\n"
 "**Robo**: Erinner dich an §4. Mit §5 kannst du die Annahme §6 als "
-"Implikationsannahme ins Beweissziel schieben."
+"Implikationsannahme ins Beweisziel schieben."
 
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
 msgid "Intro Piazza L03"
@@ -8619,6 +8575,28 @@ msgstr ""
 "\n"
 "**Robo**: Dann benutz sie mal §0!"
 
+#. §0: `g`
+#. §1: `f`
+#. §2: `f`
+#. §3: `g`
+#. §4: `Function.RightInverse`
+#. §5: `Function.RightInverse`
+#. §6: `RightInverse`
+#. §7: `RightInverse`
+#: Game.Levels.Epo.L03_LeftInverse
+msgid ""
+"Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
+"Try §4. It has to be written as §5 instead of §6\n"
+"because §7 is ambigous in Leanic."
+msgstr ""
+"**Du**: Ich vermute mal, dass soll heißen, §0 ist genau dann ein "
+"Rechtsinverses of §1, wenn §2 ein Linksinverses von §3 ist.\n"
+"\n"
+"**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch "
+"weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss "
+"man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch "
+"mehrdeutig ist."
+
 #: Game.Levels.Vieta.L08_CongrArg
 msgid "Intro Vieta L08"
 msgstr "Die Kampfgeräusche kommen näher. Vieta gibt euch zwei weitere Blätter."
@@ -9246,6 +9224,24 @@ msgstr ""
 "\n"
 "**Robo**: Die Richtung §3 von §4 heißt §5. Du kannst sie mit §6 anwenden."
 
+#. §0: `Set A`
+#. §1: `A`
+#. §2: `A`
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid ""
+"§0 is akin to the power set of §1, more precisely, it is the type of all "
+"subsets of §2."
+msgstr ""
+"**Du**:  Ist also §0 die Potenzmenge von §1?\n"
+"\n"
+"**Robo**: Ja, sozusagen.  Es ist die Menge, oder genauer der Typ, aller "
+"Teilmengen von §2.\n"
+"\n"
+"**Du**:  Und ich soll zeigen, dass … aha.  Vermutlich ein "
+"Widerspruchsbeweis, oder?\n"
+"\n"
+"**Robo**:  Vermutlich."
+
 #. §0: `push_neg`
 #. §1: `¬∀ x, P x`
 #. §2: `∃ x, ¬P x`
@@ -9416,10 +9412,11 @@ msgstr ""
 "\n"
 "Direkt am Eingang empfängt euch ein pinguinartiges Wesen.\n"
 "\n"
-"**Guino**: Willkommen im Prado!  Ich bin ja so froh, dass ihr hier seid. Ihr "
-"seid die ersten Besucher!  Nun gut, wir haben ja auch gerade erst eröffnet. "
-"Kommt rein, komm rein!  Ihr seid diese Erdleute, von denen allen berichten, "
-"nicht wahr?\n"
+"**Guino**: Willkommen im Prado!\n"
+"Ich bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher! \n"
+"Nun gut, wir haben ja auch gerade erst eröffnet.\n"
+"Kommt rein, kommt rein!\n"
+"Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?\n"
 "\n"
 "**Du**:  Ähm, ja.  Und ihr seid …?\n"
 "\n"
@@ -9446,15 +9443,6 @@ msgstr "**Robo**:  Hier sollte §0 wieder weiterhelfen."
 #: Game.Levels.Implis.L14_Summary
 msgid "Maybe try §0 again"
 msgstr "**Robo**: Vielleicht kannst du wieder §0 benutzen."
-
-#. §0: `«{g}»`
-#. §1: `«{f}»`
-#. §2: `have hR : RightInverse «{g}» «{f}»`
-#: Game.Levels.Iso.L02_Inverse
-msgid "Show that §0 is righ inverse to §1 e.g. §2"
-msgstr ""
-"Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
-"Beispiel §2"
 
 #. §0: `f`
 #. §1: `g`
@@ -9855,6 +9843,15 @@ msgstr ""
 "Du beschließt, einer besonders markanten Spur zu folgen.\n"
 "Robo zieht dir hinterher und schnappt sich beim gehen noch ein willkürliches "
 "Stück Pergament vom Boden."
+
+#. §0: `«{g}»`
+#. §1: `«{f}»`
+#. §2: `have hR : RightInverse «{g}» «{f}»`
+#: Game.Levels.Iso.L02_Inverse
+msgid "Show that §0 is right inverse to §1 e.g. §2"
+msgstr ""
+"Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
+"Beispiel §2"
 
 #~ msgid ""
 #~ "# Game Over or QED\n"

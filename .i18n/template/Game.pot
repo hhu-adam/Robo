@@ -484,13 +484,6 @@ msgstr ""
 msgid "§0 is trivial"
 msgstr ""
 
-#. §0: `Set A`
-#. §1: `A`
-#. §2: `A`
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid " §0 is akin to the power set of §1, more precisely, it is the type of all subsets of §2."
-msgstr ""
-
 #. §0: `HasRightInverse f`
 #. §1: `f`
 #. §2: `HasLeftInverse f`
@@ -952,20 +945,6 @@ msgstr ""
 #. §1: `matrix_eq_sum_ebasis`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid "Intro Robotswana L05: §0 indicates unit matrix. Begin with §1"
-msgstr ""
-
-#. §0: `g`
-#. §1: `f`
-#. §2: `f`
-#. §3: `g`
-#. §4: `Function.RightInverse`
-#. §5: `Function.RightInverse`
-#. §6: `RightInverse`
-#. §7: `RightInverse`
-#: Game.Levels.Epo.L03_LeftInverse
-msgid "Goal says that §0 is righ inverse of §1 iff §2 is left inverse of §3.\n"
-"Try §4. It has to be written as §5 instead of §6\n"
-"because §7 is ambigous in Leanic."
 msgstr ""
 
 #: Game.Levels.Implis.L03_Apply
@@ -5503,6 +5482,20 @@ msgstr ""
 msgid "Use definitions via §0"
 msgstr ""
 
+#. §0: `g`
+#. §1: `f`
+#. §2: `f`
+#. §3: `g`
+#. §4: `Function.RightInverse`
+#. §5: `Function.RightInverse`
+#. §6: `RightInverse`
+#. §7: `RightInverse`
+#: Game.Levels.Epo.L03_LeftInverse
+msgid "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
+"Try §4. It has to be written as §5 instead of §6\n"
+"because §7 is ambigous in Leanic."
+msgstr ""
+
 #: Game.Levels.Vieta.L08_CongrArg
 msgid "Intro Vieta L08"
 msgstr ""
@@ -5841,6 +5834,13 @@ msgid "We know that §0 can be used on implications. Intuitively, for equivalenc
 "Try §6"
 msgstr ""
 
+#. §0: `Set A`
+#. §1: `A`
+#. §2: `A`
+#: Game.Levels.Cantor.L01_CantorPowerset
+msgid "§0 is akin to the power set of §1, more precisely, it is the type of all subsets of §2."
+msgstr ""
+
 #. §0: `push_neg`
 #. §1: `¬∀ x, P x`
 #. §2: `∃ x, ¬P x`
@@ -5956,13 +5956,6 @@ msgstr ""
 #. §0: `by_cases`
 #: Game.Levels.Implis.L14_Summary
 msgid "Maybe try §0 again"
-msgstr ""
-
-#. §0: `«{g}»`
-#. §1: `«{f}»`
-#. §2: `have hR : RightInverse «{g}» «{f}»`
-#: Game.Levels.Iso.L02_Inverse
-msgid "Show that §0 is righ inverse to §1 e.g. §2"
 msgstr ""
 
 #. §0: `f`
@@ -6203,4 +6196,11 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "Conclusion Robotswana L04"
+msgstr ""
+
+#. §0: `«{g}»`
+#. §1: `«{f}»`
+#. §2: `have hR : RightInverse «{g}» «{f}»`
+#: Game.Levels.Iso.L02_Inverse
+msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr ""

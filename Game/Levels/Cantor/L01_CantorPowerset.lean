@@ -39,7 +39,7 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
   **Robo**:  Vermutlich.
   "
   -/
-  Hint " `Set A` is akin to the power set of `A`, more precisely, it is the type of all subsets of `A`."
+  Hint "`Set A` is akin to the power set of `A`, more precisely, it is the type of all subsets of `A`."
   Branch
     push_neg
     intro _a
