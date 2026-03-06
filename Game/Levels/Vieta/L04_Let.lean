@@ -71,9 +71,10 @@ Statement (x : ℤ) :
   Hint "Try `ring` as it sees through defintion `{f}`"
   ring
 
-/--
-Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
--/
+
+-- Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
+
+/---/
 TheoremDoc Function.comp_apply as "comp_apply" in "Function"
 
 NewTheorem Function.comp_apply

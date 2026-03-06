@@ -1,0 +1,14 @@
+I added these entries to the poedit glossary over time (but don't know where that glossary is saved):
+
+| Robo                 | Scribble      |
+| Leansch              | Leanish       |
+| Formalosoph          | formalosopher |
+| Querulant            | troublemaker  |
+| Schelm               | rascal        |
+|                      |               |
+| Beweisziel           | goal          |
+|                      |               |
+| Abbildung            | map           |
+| Abbildungsvorschrift | mapping rule  |
+| Urbild               | preimage      |
+|                      |               |

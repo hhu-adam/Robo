@@ -6,20 +6,6 @@ Level 9
 
 Title ""
 
-/-
-Introduction
-"
-**Cantor**: Viel Glück!
-"
--/
-Introduction "Intro Cantor L09 - 1"
-
-/-
-Conclusion "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche
-Aufgabe nochmals lösen."
--/
-Conclusion "Conclusion Cantor L09 - 1"
-
 open Function Set
 
 /---/
