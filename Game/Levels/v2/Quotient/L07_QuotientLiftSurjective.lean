@@ -12,7 +12,7 @@ the quotient construction induces for every function `A → B` a function `Quoti
 `Quotient.lift f ⟦a⟧ = f a` for all `a : A`.
 
 In diagramatic terms this means that the following diagram commutes:
-... draw a tikz diagram here:
+… draw a tikz diagram here:
 A pointing to B via the arrow labeled f
 A pointing to Quotient A via the arrow labeled Quotient.mk
 There's a dashed arrow labeled Quotient.lift f going from Quotient A to B.

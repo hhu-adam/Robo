@@ -12,6 +12,7 @@ Introduction ""
 open Function Set
 
 Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
+  /-
   Hint "
     **Robo**:  Hier ist `range f` die gesamte Bildmenge von `f`:
     ```
@@ -24,6 +25,17 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
     x ∈ range f ↔ ∃ a, f a = b
     ```
   "
+  -/
+  Hint "Explain `range f` w.r.t. `f` as
+    ```
+      range f = \{f a | a : A}
+              = \{  b | ∃ a, f a = b}
+    ```
+   and its equivalent `f '' univ`. Mention `mem_range`:
+    ```
+    x ∈ range f ↔ ∃ a, f a = b
+    ```
+   "
   /-
   example : range f =  {b | ∃ a, f a = b} := by
     rfl
@@ -34,15 +46,19 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
   example : range f = f '' univ := by
     simp   -- (rfl fails)
   -/
-  Hint (hidden := true)  "**Robo**: Ich würde mal mit `consturctor` anfangen."
+  -- Hint (hidden := true)  "**Robo**: Ich würde mal mit `consturctor` anfangen."
+  Hint (hidden := true) "Try to start with `consturctor`"
   Branch
     symm
     apply eq_univ_iff_forall  -- will be introduced in PIAZZA (TODO)
   constructor
   · intro hf
+    /-
     Hint (hidden := true) "
       **Robo**: Ist nicht wieder eine Gleichheit von Mengen zu zeigen? Also `ext`.
       "
+    -/
+    Hint (hidden := true) "Again show equality of sets by using `ext`"
     ext b
     Branch
       tauto
@@ -66,6 +82,7 @@ TheoremDoc Set.mem_range as "mem_range" in "Function"
 
 NewTheorem Set.mem_range
 
+/-
 Conclusion "
   **Arapuka**:  Auch schön.
 
@@ -76,3 +93,6 @@ Conclusion "
   Ich weiß gar nicht genau, wie viele Generationen ich zurückgehen muss.
   Und erst recht nicht, woher das Urmuster kam.
 "
+-/
+
+Conclusion "Conclusion Samarkand L03"

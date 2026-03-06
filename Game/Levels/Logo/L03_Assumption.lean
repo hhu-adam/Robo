@@ -5,15 +5,19 @@ Level 3
 
 Title "" -- "Annahmen"
 
+/-
 Introduction
 "
 Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der nächste nach vorne.
 Es ist schüchtern und schreibt bloß.
 "
+-/
+Introduction "Intro Logo L03"
 
 set_option linter.unusedVariables false in
 
 Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := by
+  /-
   Hint "
     **Robo**: `{n} : ℕ` bedeutet, `{n}` ist eine natürliche Zahl.
 
@@ -32,13 +36,20 @@ Statement (n : ℕ) (h₁ : 10 > n) (h₂ : 1 < n) (h₃ : n ≠ 5) : 1 < n := b
     **Du**: ???
 
     **Robo**: Du musst ihm das halt explizit sagen. Probiers mal mit `assumption`."
+  -/
+  Hint "Explain that `{n} : ℕ` means `{n}` is a natural number. The notation `{n} ∈ ℕ` is not used.
+  `{h₁}`, `{h₂}`, `{h₃}` are names for the respective assumptions `n < 10`, `1 < n` und `n ≠ 5`.
+  The proof goal is `1 < n`. Try `assumption`"
   assumption
 
+/-
 Conclusion
 "
 **Untertan**: Ja richtig! Wenn Ihr nur wüsstet, was ich mir an dieser Frage schon den Kopf
 zerbrochen habe!
 "
+-/
+Conclusion "Conclusion Logo L03"
 
 NewTactic assumption
 DisabledTactic tauto

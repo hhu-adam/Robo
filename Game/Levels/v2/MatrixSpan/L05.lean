@@ -21,7 +21,7 @@ Statement {a b : ℝ} (h : 2 • ![a, -b] + - ![a + b, a - b] = ![0, 0]) :
     lhs
     ring
   --constructor
-  -- ...
+  -- …
   apply congr_fun at h
   have h₁ : a - b = 0 := h 0
   have h₂ : -a - b = 0 := h 1

@@ -11,6 +11,7 @@ Title "Epo"
 
 Image "images/Epo.png"
 
+/-
 Introduction "
 Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: ein schmales Hochhaus
 und ein zweites Gebäude mit etwas weniger Etagen.
@@ -35,3 +36,5 @@ Keine Sorge, die Bahn ist frei!
 Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die Luft rein.
 Alle anderen sind ja schon drüben!
 "
+-/
+Introduction " Intro Epo"

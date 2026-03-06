@@ -12,7 +12,7 @@ Das Komma `,` trennt die Variablen vom Statement.
 - Ein `∀` im Goal kann immer mit `intro` beseitigt werden.
 - Eine Annahme `(h : ∀ x, P x)` kann man auf ein Element `y` anwenden
   um `P y` zu erhalten: `have hy : P y := h y`.
-- Ein `(h : ∃ x, ...)` in den Annahmen kann man mit `cases h with x hx` beseitigen und tatsächlich
+- Ein `(h : ∃ x, …)` in den Annahmen kann man mit `cases h with x hx` beseitigen und tatsächlich
   ein solches `x` auswählen.
 - Ein `∃` im Goal muss man konkret erstellen. Wenn man also ein `x` hat, kann man
   `use x` benutzen, um dieses einzuführen.
@@ -35,7 +35,7 @@ Auch schon bekannt, ein `¬` gehst du am besten mit `by_contradiction h` an.
 -/
 
 /- Hint : ?
-Ein `(h : ∃ x, ...)` in den Annahmen kannst du mit `cases h with x hx` aufsplitten
+Ein `(h : ∃ x, …)` in den Annahmen kannst du mit `cases h with x hx` aufsplitten
 und tatsächlich ein solches `x` auswählen.
 -/
 

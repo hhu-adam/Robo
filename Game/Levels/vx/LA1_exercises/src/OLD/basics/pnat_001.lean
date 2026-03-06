@@ -57,5 +57,5 @@ end
 -/
 
 /- Tactic : symmetry
-Dreht ein symmetrisches Goal wie `A = B`, `A ≠ B`, `A ↔ B`, ...
+Dreht ein symmetrisches Goal wie `A = B`, `A ≠ B`, `A ↔ B`, …
 -/

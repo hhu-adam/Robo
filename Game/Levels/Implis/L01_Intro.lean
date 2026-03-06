@@ -5,12 +5,16 @@ Level 1
 
 Title "" -- "Intro"
 
+/-
 Introduction
 "
 **Operationsleiter**: Hier, zum Beispiel:
 "
+-/
+Introduction "Intro Implis L01"
 
 Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
+  /-
   Hint "
     **Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend
     brauchen. Aber keiner kann es mir beweisen.
@@ -31,16 +35,24 @@ Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
 
     **Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel `h`,
     und schreib `intro h`."
+  -/
+  Hint "Proof the implication (`\\to`), that assuming `{B}` is true, `{A}` implies `{A} und {B}`
+  is also true. You cannot use `tauto`. Begin by assumption that `{A}` is true. For this choose
+  name `h` for assumption and introduce it via `intro h`"
   intro hA
+  /-
   Hint "
     **Du**: Okay. Jetzt habe ich also sowohl `{A}` als auch `{B}` in meinen Annahmen und
     muss `{A} ∧ {B}` zeigen.
 
     **Robo**: Genau. Und wie das geht, weißt du ja schon."
+  -/
+  Hint "Having `{A}` and `{B}` in your assumptions you have to show `{A} ∧ {B}`"
   constructor
   assumption
   assumption
 
+/-
 Conclusion
 "
 **Operationsleiter**: Perfekt! Danke schön!
@@ -50,6 +62,8 @@ Förderband in Bewegung.
 
 **Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?
 "
+-/
+Conclusion "Conclusion Implis L01"
 
 
 NewDefinition Arrow

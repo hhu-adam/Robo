@@ -5,14 +5,17 @@ Level 4
 
 Title ""
 
-Introduction "Noch ein Funkspruch."
+-- Introduction "Noch ein Funkspruch."
+Introduction "Intro Saturn L04"
 
 namespace MvPolynomial
 
 Statement (a b c : MvPolynomial (Fin 4) ℕ ) : a * b * c = a * (b * c) := by
-  Hint "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
+  -- Hint "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
+  Hint "Try `mul_assoc` or again `ring`"
   ring
 
+/-
 Conclusion "
   Wieder ein 👍.
 
@@ -23,12 +26,15 @@ Conclusion "
 
   **Du**: So so …
 
-  Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game,
+  Der anonyme Funker möchte wissen, ob ihr bereit seid für das End Game,
   oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.
 
   „Bereit” funkt Robo zurück.
 
 "
+-/
+Conclusion "Conclusion Saturn L04: coefficients were in `ℕ`. Polynomes with coefficients in `ℕ`
+are not considered rings. `ring` does also work on half rings."
 
 NewTactic ring
 

@@ -5,6 +5,7 @@ Level 9
 
 Title "" -- "Mengen"
 
+/-
 Introduction
 "
 
@@ -12,6 +13,8 @@ Das Komplement einer Menge ist `Aᶜ`, was das gleiche ist wie `(univ : Set ℕ)
 
 Aber auch hier: üb das Schema.
 "
+-/
+Introduction "Intro Piazza O09"
 
 open Set
 
@@ -22,10 +25,11 @@ Statement (A B C : Set ℕ) :
   tauto
 
 /-- -/
-DefinitionDoc Set.compl as "·ᶜ"
+DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 
 NewDefinition Set.compl
 TheoremTab "Set"
 
-Conclusion ""
+-- Conclusion ""
+Conclusion "Conclusion Piazza O09"

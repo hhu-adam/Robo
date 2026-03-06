@@ -49,7 +49,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
   let b : ℕ → Ideal R := fun n => Submodule.map (η n) (a.degreeLE ↑n)
 
   --Als Ideal von R ist jedes b(n) endlich erzeugt. Insbesondere existiert für jedes n ∈ ℕ eine endliche
-  --Menge F(n) = {f1,...,fn} ⊆ a von Polynomen, so dass die Leitkoeffizieten dieser Polynome b(n) erzeugen.
+  --Menge F(n) = {f1,…,fn} ⊆ a von Polynomen, so dass die Leitkoeffizieten dieser Polynome b(n) erzeugen.
   have exists_F : ∀ (n : ℕ), ∃ (F : Finset R[X]), ↑F ⊆ a.carrier ∧ (b n) = Ideal.span (Finset.image (η n) F)
 
   · have bn_has_preimage : ∀ n : ℕ, ∀ y : R, ∃ x, y ∈ (b n) → x ∈ a.degreeLE ↑n ∧ (η n) x = y
@@ -165,7 +165,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
   have N_minimal : ∀ (n : ℕ), n < N → B < Ideal.span (Finset.image (η n) (F n))
   · sorry
 
-  --Konstruiere nun FU = F(0) ∪ F(1) ∪ ... ∪ F(N) ⊆ a(N). Als endliche Vereinigung von
+  --Konstruiere nun FU = F(0) ∪ F(1) ∪ … ∪ F(N) ⊆ a(N). Als endliche Vereinigung von
   --endlichen Mengen ist FU endlich. Sei ferner A = ⟨FU⟩ ⊴ R[X] ein endlich erzeugtes Ideal.
   let FU : Finset R[X] := Finset.biUnion (Finset.Iic N) F
   let A : Ideal R[X] := Ideal.span ↑FU
@@ -287,7 +287,7 @@ Statement hilbert_basis_theorem [R_noetherian : IsNoetherianRing R] : IsNoetheri
       --Ganz ähnlich.
     · sorry
 
-  --Und schließlich...
+  --Und schließlich…
   rw [ideal_eq_iff_carrier_eq]
   assumption
   done

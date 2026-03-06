@@ -3,9 +3,9 @@ import GameServer
 import Game.Doc
 
 -- must be imported *before* the custom modifications!
-import Game.Metadata.Tactic
 import Game.Metadata.FromMathlib
 
+import Game.Metadata.Tactic
 import Game.Metadata.MatrixNotation
 
 -- mathlib PR: 85107

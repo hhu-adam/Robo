@@ -32,7 +32,7 @@ There are many variants of limits:
 
 This gives 8 different notions of behavior of `x`.
 Similarly, the value `f(x)` can have the same behavior:
-`f(x)` tends to `∞`, `-∞`, `x₀`, `x₀⁺`, ...
+`f(x)` tends to `∞`, `-∞`, `x₀`, `x₀⁺`, …
 
 This gives `64` notions of limits.
 

@@ -6,248 +6,262 @@ import GameServer.Commands
 /- ABBILDUNGEN -/
 
 /--
-Eine Abbildung `f` ist injektiv, wenn gilt:
+A mapping `f` is injectiv, if:
 
 ```
 ∀ a b, f a = f b → a = b
 ```
 -/
-DefinitionDoc Function.Injective as "Injective"
+DefinitionDoc Function.Injective as "Injective" in "Fun"
 
 
 /--
-Eine Abbildung `f` ist surjektiv, wenn gilt:
+A mapping `f` is surjectiv, if:
 
 ```
 ∀ b, ∃ a, f a = b
 ```
 -/
-DefinitionDoc Function.Surjective as "Surjective"
+DefinitionDoc Function.Surjective as "Surjective" in "Fun"
 
 
 /--
-Eine Abbildung ist bijektiv, wenn sie injektiv und surjektiv ist.
+A mapping ist bijectiv, if it is injektiv and surjektiv.
 -/
-DefinitionDoc Function.Bijective as "Bijective"
+DefinitionDoc Function.Bijective as "Bijective" in "Fun"
 
 
 /--
-Eine Abbildung `f` ist strikt monoton, wenn gilt:
+A mapping `f` is strictly monotonous, if:
 
 ```
 ∀ ⦃a b⦄, a < b → f a < f b
 ```
 -/
-DefinitionDoc StrictMono as "StrictMono"
+DefinitionDoc StrictMono as "StrictMono" in "Fun"
 
 
-/-- `Function.RightInverse f g` ist als `LeftInverse g f` definiert.
-Das bedeutet im Klartext natürlich `∀ x, g (f x) = x`.
+/-- `Function.RightInverse f g` is defined as `LeftInverse g f`.
+In other words: `∀ x, g (f x) = x`.
 
-Du musst leider `Function.RightInverse`  statt `RightInverse` schreiben,
-da `RightInverse` Leansch mehrdeutig ist.
+You have to write `Function.RightInverse`  instead of `RightInverse`,
+as `RightInverse` is ambigous in Leanic.
 -/
-DefinitionDoc Function.RightInverse as "RightInverse"
+DefinitionDoc Function.RightInverse as "RightInverse" in "Fun"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
 -- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
 
 /--
-`LeftInverse g f` bedeutet `g ∘ f = id`, oder genauer:
-`∀ x, g (f x) = x`, wie du mit `unfold` leicht siehst.
+`LeftInverse g f` means `g ∘ f = id`, or more exactly:
+`∀ x, g (f x) = x`, as can be seen with `unfold`.
 -/
-DefinitionDoc Function.LeftInverse as "LeftInverse"
+DefinitionDoc Function.LeftInverse as "LeftInverse" in "Fun"
 
 
 /--
-`HasRightInverse f` bedeutet, dass `f` ein Rechtsinverses besitzt.
+`HasRightInverse f` means, that `f` has a right inverse.
 
-`HasLeftInverse f` bedeutet, dass `f` ein Linkssinverses besitzt.
+`HasLeftInverse f` means, that `f` has left inverse.
 -/
-DefinitionDoc Function.HasRightInverse as "Has…Inverse"
+DefinitionDoc Function.HasRightInverse as "Has…Inverse" in "Fun"
 
 
 /--
-Für eine Selbstabbildung `f : A → A` und ein Element `a : A` ist `IsFixedPt f a` die Aussage `f a = a`.
-Du kannst die Definition mit `unfold IsFixedPt` leicht ausschreiben.
+For a self-mapping `f : A → A` and an element `a : A`, `IsFixedPt f a` is the expression `f a = a`.
+Look up definition with `unfold IsFixedPt`.
 -/
-DefinitionDoc Function.IsFixedPt as "IsFixedPt"
+DefinitionDoc Function.IsFixedPt as "IsFixedPt" in "Fun"
 
 /--
-Für eine Abbildung `f : A → A` ist `fixedPoints f : Set A` die Menge der Fixpunkte von `f `.
-Du kannst die Definition mit `unfold fixedPoints` leicht ausschreiben.
+For a mapping `f : A → A`, `fixedPoints f : Set A` is the set of fixed points of `f `.
+Look up definition with `unfold fixedPoints`.
 -/
-DefinitionDoc Function.fixedPoints as "fixedPoints"
+DefinitionDoc Function.fixedPoints as "fixedPoints" in "Fun"
 
 /--
-Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∪ B` ihre die Vereinigung.
-Du schreibst `∪` als `\\union`.
+For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their union.
+`∪` is written as `\\union`.
 -/
-DefinitionDoc Set.union as "∪"
+DefinitionDoc Set.union as "∪" in "Set"
 
 /--
-Für zwei Teilmengen `A` und `B` von `S` (also `A B : Set S`) ist `A ∩ B` ihr Schnitt.
-Du schreibst `∪` als `\\inter`.
+For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
+`∩` is written as `\\inter`.
 -/
-DefinitionDoc Set.inter as "∩"
+DefinitionDoc Set.inter as "∩" in "Set"
 
 /--
-Für eine Abbildung `f : A → B` ist `range f` die gesamte Bildmenge von `f`:
+For a mapping `f : A → B`, `range f` is the full image set of `f`:
 ```
 range f = {f a | a : A}
         = {  b | ∃ a, f a = b}
 ```
-Das ist also im Wesentlichen eine andere Schreibweise für `f '' univ`.
-Um damit zu arbeiten, ist `mem_range` ganz nützlich:
+Is a diffierent notation for `f '' univ`.
+`mem_range` is useful to work with it:
 ```
 x ∈ range f ↔ ∃ a, f a = b
 ```
 -/
-DefinitionDoc Set.range as "range"
+DefinitionDoc Set.range as "range" in "Set"
 
 /--
-Für eine Abbildung `f : A → B` ist `image f : Set A → Set B`
-eine der induzierten Abbildung auf den Potenzmengen –
-sie bildet eine Teilmenge von `A` ab auf das Bild `f '' A` dieser Teilmenge unter `f`.
+For a mapping `f : A → B`, `image f : Set A → Set B`
+is one of the induced mappings on the power sets –
+it maps a subset of `A` to the image `f '' A` of this subset under `f`.
 -/
-DefinitionDoc Set.image as "image"
+DefinitionDoc Set.image as "image" in "Set"
 
 /--
-Für eine Abbildung `f : A → B` ist `preimage f : Set B → Set A`
-eine der induzierten Abbildung auf den Potenzmengen –
-sie bildet eine Teilmenge von `B` ab auf das Urbild `f ⁻¹' A` dieser Teilmenge unter `f`.
+For a mapping `f : A → B`, `preimage f : Set B → Set A`
+is one of the induced mappings on the power sets –
+it maps a subset of `B` to the preimage `f ⁻¹' A` of this subset under `f`.
 -/
-DefinitionDoc Set.preimage as "preimage"
+DefinitionDoc Set.preimage as "preimage" in "Set"
 
 
 /--
-Für eine Abbildung `f : A → B` und eine Teilmenge `S` von `A` ist
+For a mapping `f : A → B` and a subset `S` of `A`,
 ```
-f '' S = {f a | a ∈ S}
-       = {b | ∃ a ∈ S, f a = b}
+f '' S = {f a | a ∈ S} = {b | ∃ a ∈ S, f a = b}
 ```
-ihr Bild unter `f`.  Beachte das Leerzeichen zwischen `f` und `''`.
+is its image under `f`.  Note the space between `f` and `''`.
 -/
-DefinitionDoc Set.fimage as "f ''"
+DefinitionDoc Set.fimage as "f ''" in "Set"
 
 /--
-Für eine Abbildung `f : A → B` und eine Teilmenge `T` von `B` ist
+For a mapping `f : A → B` and a subset `T` of `B`,
 ```
 f ⁻¹' T = { a | f a ∈ T}
 ```
-ihr Urbild unter `f`.
-Du schreibst das als `f \-1'`.
-Beachte das Leerzeichen zwischen `f` und `\-1'`.
+is its preimage under `f`.
+You write this as `f \-1'`.
+Note the space between `f` and `\-1'`.
 -/
-DefinitionDoc Set.fpreimage as "f ⁻¹'"
+DefinitionDoc Set.fpreimage as "f ⁻¹'" in "Set"
 
 /--
-Die Notation `fun x ↦ _` wird verwendet, um „anonyme Funktionen“ zu definieren.
-Zum Beispiel definiert `fun (x : ℤ) ↦  -x` die Negation `ℤ → ℤ`, ohne ihr einen Namen zu geben.
-Den Pfeil `↦` schreibst du als `\maps` oder `\mapsto`.
-Alternativ kannst du statt `↦` auch `=>` verwenden.
+The notation `fun x ↦ _` is used to define “anonymous functions.”
+For example, `fun (x : ℤ) ↦  -x` defines the negation `ℤ → ℤ` without giving it a name.
+You write the arrow `↦` as `\maps` or `\mapsto`.
+Alternatively, instead of `↦` you can use `=>`.
 -/
-DefinitionDoc Symbol.function as "fun x ↦ _"
+DefinitionDoc Symbol.function as "fun x ↦ _" in "Fun"
 
 
 /- MENGEN -/
 
-/-- `A : Set T` bedeutet, dass `A` eine Teilmenge von `T` ist
-(oder genauer, dass `A` eine Menge ist, die aus Elementen vom Typ `T` besteht).
+/--
+`A : Set T` means that `A` is a subset of `T`
+(or, more precisely, that `A` is a set consisting of elements of type `T`).
 -/
-DefinitionDoc Set as "Set"
+DefinitionDoc Set as "Set" in "Set"
 
-/-- Für eine Teilmenge `A : Set T` und ein Element `a` aus `T` (genauer: vom Typ `T`) bedeutet `a ∈ A`, dass
-`a` in `A` liegt.
-
-Für Teilmengen der Form `A = { a : T | P a }` kannst du die Aussage
-`a ∈ A` mit `simp` zu `P a` vereinfachen.
+/--
+For a subset `A : Set T` and an element `a` from `T` (more precisely: of type `T`), `a ∈ A` means that
+`a` is in `A`.
+For subsets of the form `A = { a : T | P a }`, you can simplify the statement
+`a ∈ A` with `simp` to `P a`.
 -/
-DefinitionDoc Mem as "∈"
+DefinitionDoc Mem as "∈" in "Set"
 
-/-- Für ein Prädikat `P : T → Prop` ist `{ a : T | P a } : Set P` die Teilmenge,
-die aus all jenen Elementen besteht, die das Prädikat erfüllen.  Zum Beispiel ist
+/--
+For a predicate `P : T → Prop`, `{ a : T | P a } : Set P` is the subset
+consisting of all elements that satisfy the predicate.  For example,
 ```
 { n : ℕ | Even n }
 ```
-die Menge der geraden natürlichen Zahlen.
-
-Die Aussage `a ∈ { a : T | P a }` kannst du mit `simp` zu `P a` vereinfachen.
+is the set of even natural numbers.
+You can simplify the statement `a ∈ { a : T | P a }`, using `simp`, to `P a` .
 -/
-DefinitionDoc setOf as "{·|·}"
-
-/-- Für zwei Teilmengen `(A B : Set T)` ist `A\B` die Differenz aus `A` and `B`,
-bestehend aus allen Elementen von `A`, die nicht in `B` liegen.-/
-DefinitionDoc SDiff as "·\\·"
+DefinitionDoc setOf as "{·|·}" in "Set"
 
 /--
-Für `A B : Set T` bedeutet `A ⊆ B`, dass `A` in `B` enthalten ist.
-
-Mit `rw [subset_iff]` kannst du `A ⊆ B` zu `∀ x, x ∈ A → x ∈ B` umschreiben.
-
-Ist `A ⊆ B` das Beweisziel, kannst du auch direkt mit `intro a ha`
-ein Element `a` mit `ha : a ∈ A` wählen (und dann `a ∈ B` zeigen).
-
-Ist `h : A ⊆ B` eine Annahme, und ist ein Element `a` mit `ha : a ∈ A` gegeben,
-erhältst du mit `have hb := h ha` die Aussage `hb : a ∈ B`.
-
-Du schreibst `⊆` als `\subset`.
+For two subsets `(A B : Set T)`, `A\B` is the difference between `A` and `B`,
+consisting of all elements of `A` that are not in `B`.
 -/
-DefinitionDoc Subset as "⊆"
+DefinitionDoc SDiff as "·\\·" in "Set"
 
-/-- `∅ : Set T` ist die leere Teilmenge.
-Im Formaloversum ist also `∅ : Set ℕ` etwas anderes als `∅ : Set ℝ`
-– das eine ist eine Teilmenge von ℕ, das andere eine Teilmenge von ℝ!
+/--
+For `A B : Set T`, `A ⊆ B` means that `A` is contained in `B`.
 
-Mit `rw [eq_empty_iff_forall_not_mem]` überführst du eine Gleichung der Form `S = ∅` in die
-Aussage `∀ (x : T), x ∉ s`.
+With `rw [subset_iff]`, you can rewrite `A ⊆ B` as `∀ x, x ∈ A → x ∈ B`.
 
-Du schreibst `∅` als `\emptyset`.
+If `A ⊆ B` is the proof goal, you can also directly use `intro a ha`
+to select an element `a` with `ha : a ∈ A` (and then show `a ∈ B`).
+
+If `h : A ⊆ B` is an assumption and an element `a` with `ha : a ∈ A` is given,
+you can use `have hb := h ha` to obtain the statement `hb : a ∈ B`.
+
+You write `⊆` as `\subset`.
 -/
-DefinitionDoc Set.empty as "∅"
+DefinitionDoc Subset as "⊆" in "Set"
 
-/-- `univ : Set T` ist die „Teil“menge, die aus *allen* Elementen vom Typ `T` besteht.
+/--
+`∅ : Set T` is the empty subset.
+In the Formaloverse `∅ : Set ℕ` is something different than `∅ : Set ℝ`
+– one is a subset of ℕ, the other is a subset of ℝ!
 
-Mit `rw [eq_univ_iff_forall]` überführst du eine Gleichung der Form `S = univ` in die
-Aussage `∀ (x : T), x ∈ S`.
+With `rw [eq_empty_iff_forall_not_mem]` you translate the equation `S = ∅` into the
+statement `∀ (x : T), x ∉ s`.
+
+`∅` is written as `\emptyset`.
 -/
-DefinitionDoc Set.univ as "univ"
+DefinitionDoc Set.empty as "∅" in "Set"
 
-/-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
-`insert a A` eine andere Schreibweise für `A ∪ {a}`.
-Sollte `a` bereits in `A` liegen, ist offenbar `insert a A = A`.
+/--
+`univ : Set T` is the “subset” consisting of *all* elements of type `T`.
+
+With `rw [eq_univ_iff_forall]`, you convert an equation of the form `S = univ` into the
+statement `∀ (x : T), x ∈ S`.
 -/
-DefinitionDoc Finset.insert as "insert"
+DefinitionDoc Set.univ as "univ" in "Set"
 
-/-- Für eine endliche Teilmenge `A : Finset T` und ein Element `a : T` ist
-`erase A a` eine andere Schreibweise für `A \ {a}`.
-Falls `a` gar nicht in `A` liegt, ist offenbar `erase A a = A`.
+/--
+For a finite subset `A : Finset T` and an element `a : T`,
+`insert a A` is another way of writing `A ∪ {a}`.
+If `a` is already in `A`, then obviously `insert a A = A`.
 -/
-DefinitionDoc Finset.erase as "erase"
+DefinitionDoc Finset.insert as "insert" in "Finset"
 
-/-- Für eine endliche Teilmenge `A : Finset T` ist `card A : ℕ` die Kardinalität von `A`,
-also die Anzahl der Elemente in `A`.-/
-DefinitionDoc Finset.card as "card"
+/--
+For a finite subset `A : Finset T` and an element `a : T`,
+`erase A a` is another way of writing `A \ {a}`.
+If `a` is not in `A` at all, then obviously `erase A a = A`.
+-/
+DefinitionDoc Finset.erase as "erase" in "Finset"
 
-/-- Für `n : ℕ` ist `Fin n` die Menge $\{0, \dots, n-1\}$.
+/--
+For a finite subset `A : Finset T`, `card A : ℕ` is the cardinality of `A`,
+i.e., the number of elements in `A`.
+-/
+DefinitionDoc Finset.card as "card" in "Finset"
 
-(`Fin n` ist zu unterscheiden von `Icc 0 (n-1)`:
-`Fin n` ist eine Menge, oder genauer ein Typ, also `Fin n : Type`,
-während `Icc 0 (n-1) : Finset ℕ` eine endliche Teilmenge von `ℕ` ist.)
+/--
+For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
+
+(`Fin n` is to be distinguished from `Icc 0 (n-1)`:
+`Fin n` is a set, or more precisely a type, i.e. `Fin n : Type`,
+whereas `Icc 0 (n-1) : Finset ℕ` is a finite subset of `ℕ`.)
 -/
 DefinitionDoc Fin as "Fin"
 
+/--
+`Icc a b` is the closed interval $[a,b]$.
+-/
+DefinitionDoc Finset.Icc as "Icc"
 -- DefinitionDoc Disjoint as "Disjoint"
 -- "
 -- "
 
-/-- `Nonempty T` bedeutet, dass ein Element in `T` („vom Typ `T`“) existiert.
-Ist `h : Nonempty T` als Annahme gegeben, erhalten wir ein Element `t : T` mit `obtain ⟨t⟩ := h`.
-Haben wir umgekehrt bereits ein Element `t : T` gegeben oder konstruiert,
-so können wir `Nonempty T` mit `use t` beweisen.
+/--
+`Nonempty T` means that an element in `T` (“of type `T`”) exists.
+If `h : Nonempty T` is given as an assumption, we obtain an element `t : T` with `obtain ⟨t⟩ := h`.
+Conversely, if we already have an element `t : T` given or constructed,
+we can prove `Nonempty T` with `use t`.
 
-Analog ist für eine Teilmenge `A : Set T` die Aussage `Nonemty A` definiert als als `∃ x, x ∈ A`.
-Das kannst du in diesem Fall leicht mit `unfold Nonempty` überprüfen.
+Similarly, for a subset `A : Set T`, the statement `Nonemty A` is defined as `∃ x, x ∈ A`.
+In this case, you can easily check this with `unfold Nonempty`.
 -/
 DefinitionDoc Nonempty as "Nonempty"
 /-
@@ -278,257 +292,260 @@ example {TT : Type} (T : Set TT) : Set.Nonempty T ↔ ∃ t : TT, t ∈ T := by
   rfl
 -/
 
-/-- Für eine Teilmenge `A : Set T` bedeutet `Set.Finite A`, dass `A` nur endlich viele Elemente hat.
-Ist `h : Set.Finite A` als Annahme gegeben, so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,
-aber nun explizit als endliche Teilmenge aufgefasst.
+/--
+For a subset `A : Set T`, `Set.Finite A` means that `A` has only a finite number of elements.
+If `h : Set.Finite A` is given as an assumption, then `h.toFinset : Finset T` is the same subset `A`,
+but now explicitly understood as a finite subset.
 -/
-DefinitionDoc Set.Finite as "Set.Finite"
+DefinitionDoc Set.Finite as "Set.Finite" in "Set"
 
 
 /- LOGIK -/
 
-/-- `(A : Prop)` ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder
-nicht beweisbar ist.
+/--
+`(A : Prop)` is any statement, without further specification as to whether it is true, false, or
+unprovable.
 
-Siehe auch `(True : Prop)` und `(False : Prop)` für die uneingeschränkt wahre bzw.\ unwahre
-Aussage.
+See also `(True : Prop)` and `(False : Prop)` for the unconditionally true and false
+statements, respectively.
 -/
-DefinitionDoc «Prop» as "Prop"
+DefinitionDoc «Prop» as "Prop" in "Logic"
 
 /--
-`A ∧ B` ("und") ist die Aussage, dass sowohl `A` als auch `B` wahr ist.
+`A ∧ B` (“and”) is the statement that both `A` and `B` are true.
 
-## `A ∧ B` als Beweisziel
+## `A ∧ B` as a proof goal
 
-Die Taktik `constructor` erlaubt dir, die beiden Teilaussagen `A` und `B` einzeln zu beweisen.
+The tactic `constructor` allows you to prove the two sub-statements `A` and `B` individually.
 
-## `A ∧ B` als Annahme
+## `A ∧ B` as an assumption
 
-Mit `obtain ⟨h₁, h₂⟩ := h` zerlegst du eine Annahme der Form `h : A ∧ B`
-in ihre Bestandteile `h₁ : A` und `h₂ : B`.
+With `obtain ⟨h₁, h₂⟩ := h`, you break down an assumption of the form `h : A ∧ B`
+into its components `h₁ : A` and `h₂ : B`.
 -/
-DefinitionDoc And as "∧"
+DefinitionDoc And as "∧" in "Logic"
 
 /--
-`A ∨ B` ("oder") ist die Aussage, dass mindestens eine der Aussagen `A`, `B` wahr ist.
+`A ∨ B` (“or”) is the statement that at least one of the statements `A`, `B` is true.
 
-## `A ∨ B` als Beweisziel
+## `A ∨ B` as proof goal
 
-Die Taktik `left` bzw. `right` kannst du dich entscheiden,
-welche Aussage du beweisen möchtest.
+You can use the tactics `left` or `right` to decide
+which statement you want to prove.
 
-## `A ∨ B` als Annahme
+## `A ∨ B` as an assumption
 
-Da du nicht weißt, welche der Aussagen `A`, `B` du voraussetzen kannst,
-musst du das Beweisziel unter Umständen zweimal zeigen:
-einmal unter der Annahme `A`, einmal unter der Annahme `B`.
-Für dieses Vorgehen verwendest du die Taktik
+Since you do not know which of the statements `A` or `B` you can assume,
+you may have to show the proof goal twice:
+once under the assumption `A` and once under the assumption `B`.
+To do this, use the tactic
 ```
 obtain h | h := h
 ```
 -/
-DefinitionDoc Or as "∨"
+DefinitionDoc Or as "∨" in "Logic"
 
 /--
-Für `A B : Prop` ist `A → B` die Implikation „`A` impliziert `B`“.
-Für andere `X Y : Type` ist `X → Y` eine Abbildung, die Werte aus `X` nach `Y` abbildet.
+For `A B : Prop`, `A → B` is the implication “`A` implies `B`.”
+For other `X Y : Type`, `X → Y` is a mapping that maps values from `X` to `Y`.
 
-## Implikation als Beweisziel
+## Implication as proof goal
 
-Ist dein Beweisziel eine Implikation `A → B`, so kannst du mit `intro h` `h : A` annehmen,
-und musst dann `B` beweisen.
+If your proof goal is an implication `A → B`, with `intro h` you can assume `h : A`,
+and then you must prove `B`.
 
-## Implikation als Annahme
+## Implication as assumption
 
-Um eine Implikation unter deinen Annahmen zu verwenden, benutzt du die Taktik `apply`.
+To use an implication among your assumptions, use the tactic `apply`.
 -/
-DefinitionDoc Arrow as "→"
+DefinitionDoc Arrow as "→" in "Logic"
 
-/-- `A ↔ B` bedeutet, dass die Aussagen `A` und `B` logisch äquivalent sind („genau dann, wenn“).
+/--
+`A ↔ B` means that statements `A` and `B` are logically equivalent (“if and only if”).
 
-## `↔`als Beweisziel
+## `↔` as proof target
 
-Um `A ↔ B` zu zeigen, kannst du beispielsweise `constructor` aufrufen
-und dann separat `A → B` und `B → A` beweisen.
+To show `A ↔ B`, you can, for example, call `constructor`
+and then prove `A → B` and `B → A` separately.
 
-## `↔` als Annahme
+## `↔` as an assumption
 
-Eine Annahme der Form `h : A ↔ B` kannst du mit `obtain ⟨h₁, h₂⟩ := h` in die beiden Bestandteile
-`h₁ : A → B` und `h₂ : B → A` zerlegen.
-Du kannst aber auch mit `h.mp` und `h.mpr` direkt auf diese Bestandteil Bezug nehmen.
-(Die Abkürzung `mp` steht für „modus ponens“.)
+You can break down an assumption of the form `h : A ↔ B` using `obtain ⟨h₁, h₂⟩ := h` into its two components
+`h₁ : A → B` and `h₂ : B → A`.
+However, you can also refer directly to these components with `h.mp` and `h.mpr`.
+(The abbreviation `mp` stands for “modus ponens”.)
 -/
-DefinitionDoc Iff as "↔"
+DefinitionDoc Iff as "↔" in "Logic"
 
-/-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
-`∃ a : A, P a` die Aussage, dass ein Element `a` in `A` (genauer: vom Typ `A`)
-existiert, für das die Aussage `P a` wahr ist.
-Eine reine Existenzaussage („es gibt ein Element vom Typ `A`)
-lässt sich zum Beispiel als `∃ a : A, true` oder als `Nonempty A` formulieren.
+/--
+Existential quantifier: If `P : A → Prop` is a predicate, then
+`∃ a : A, P a` is the statement that an element `a` in `A` (more precisely: of type `A`)
+exists for which the statement `P a` is true.
+A pure existence statement ("there is an element of type `A`)
+can be formulated, for example, as `∃ a : A, true` or as `Nonempty A`.
 
-## `∃` als Beweisziel
+## `∃` as a proof goal
 
-Um eine Aussage der Form `∃ a : A, …` zu beweisen,
-konstruierst du ein geeignetes Element `a` und nutzt dann die `use`-Taktik (`use a`).
+To prove a statement of the form `∃ a : A, …`,
+you construct a suitable element `a` and then use the `use` tactic (`use a`).
 
-## `∃` als Annahme
+## `∃` as an assumption
 
-Eine Annahme der Form `h : ∃ a : A, P a` kannst du mit
-`choose a ha using h` oder `obtain ⟨a, ha⟩ := h` in ihre Bestandteile `a : A` und `ha : P a`
-zerlegen.
+You can decompose an assumption of the form `h : ∃ a : A, P a` into its components using
+`choose a ha using h` or `obtain ⟨a, ha⟩ := h` into `a : A` and `ha : P a`.
 -/
-DefinitionDoc Exists as "∃"
+DefinitionDoc Exists as "∃" in "Logic"
 
-/-- Existenzieller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
-`∃! a : A, P a` die Aussage, dass *genau ein* Element `a` in `A` (genauer: vom Typ `A`)
-existiert, für das die Aussage `P a` wahr ist.
-Die Aussage hat also zwei Teile: erstens existiert
-solch ein `a`, zweitens ist `a` eindeutig.
+/--
+Existential quantifier: If `P : A → Prop` is a predicate, then
+`∃! a : A, P a` is the statement that *exactly one* element `a` in `A` (more precisely: of type `A`)
+exists for which the statement `P a` is true.
+The statement therefore has two parts: first, such an `a` exists, and second, `a` is unique.
+## `∃!` as a proof goal
 
-## `∃!` als Beweisziel
-
-Um eine Aussage der Form `∃! a : A, …` zu beweisen, konstruierst du zunächst ein geeignetes Element `a` und
-nutzt dann die `use`-Taktik (`use a`), in der Regel unmittelbar gefolgt von `simp`.
-Danach sollte das Beweisziel folgende Form haben:
+To prove a statement of the form `∃! a : A, …`, first construct a suitable element `a` and
+then use the `use` tactic (`use a`), usually immediately followed by `simp`.
+The proof goal should then have the following form:
 
 `P a ∧ ∀ a' : A, P a' → a' = a`
 
-Links steht `P a`: du musst noch zeigen, dass `a` die geforderte Eigenschaft hat.
-Rechts steht die Eindeutigkeitsaussage: jedes Element mit dieser Eigenschaft ist gleich `a`.
+On the left is `P a`: you still have to show that `a` has the required property.
+On the right is the uniqueness statement: every element with this property is equal to `a`.
 
-## `∃!` als Annahme
+## `∃!` as an assumption
 
-Eine Annahme der Form `h : ∃! a : A, P a` kannst du mit
+You can prove an assumption of the form `h : ∃! a : A, P a` with
 
 ```
   obtain ⟨a, h_exists, h_unique⟩ := h
   simp at h_unique
 ```
-in die Bestandteile
+into its components
 ```
    a : A
    h_exists : P a
    h_unique : ∀ (y : A), P y → y = a
 ```
-zerlegen.
+.
 -/
-DefinitionDoc ExistsUnique as "∃!"
+DefinitionDoc ExistsUnique as "∃!" in "Logic"
 
-
-/-- Universeller Quantor: Ist `P : A → Prop` ein Prädikat, so ist
-`∀ a : A, P a` die Aussage, dass die Aussage `P a` für alle `a` in `A`
-(genauer: für alle `a` vom Typ `A`) wahr sei.
-
-## `∀` als Beweisziel
-
-Um eine Aussage der Form `∀ a : A, …` zu beweisen, wählst du mit `intro a` zunächst ein
-beliebiges Element `a`.
-
-## `∀` als Annahme
-
-Ist `h : ∀ a : A, P a` eine Annahme und `a₀ : A` ein konkretes Element, so ist `h a₀`
-eine Notation für `P a₀`.
-Du kannst auch mit `specialize h a₀` die gegebene Annahme
-über alle möglichen `a` zu einer Annahme `h : P a₀` über dieses konkrete `a₀` einschränken.
--/
-DefinitionDoc Forall as "∀"
-
-
-/-- Die Aussage `True : Prop` ist immer wahr.
-
-## `True` als Beweisziel
-
-Die Taktiken `tauto` und `decide` schließen jeden Beweis mit `True` als Beweisziel.
-
-## `True` als Annahme
-
-Als Annahme ist `True` überhaupt nicht hilfreich.
--/
-DefinitionDoc True as "True"
-
-/-- Die Aussage `False : Prop` ist immer falsch.
-
-## `False` als Beweisziel
-
-Ist `False` dein Beweisziel, kannst du zum Beispiel versuchen, in deinen Annahmen einen Widerspruch zu finden.
-Sobald der Widerspruch hinreichend evident ist, schließt `contradiction` einen solchen Beweis.
-
-Ist `False` dein Beweisziel und du hast eine Annahme oder ein Lemma der Form `h : ¬ A` zur Verfügung,
-so kannst du mit `apply h` das Beweisziel zu `A` ändern
-(denn `¬ A` bedeutet `A → False`).
-
-## `False`  als Annahme
-
-Liegt dir `False` als Annahme vor, kannst du den Beweis sofort mit `contradiction` beenden
-– denn aus einer falschen Aussage folgt bekanntlich jede andere.
--/
-DefinitionDoc False as "False"
-
-/-- `¬ A` ist die logische Negation von `A`.
-Sie ist intern als `A → False` implementiert.
-
-Nützliche Taktiken sind: `push_neg`, `by_contra`, `contrapose`.
-Außerdem kannst du eine Annahme der Form `h : ¬ A` mit `apply` auf das Beweisziel `False` anwenden.
--/
-DefinitionDoc Not as "¬"
 
 /--
-Nützliche Taktiken für Gleicheit sind: `rfl`, `rw`, `trans`
--/
-DefinitionDoc Eq as "="
+Universal quantifier: If `P : A → Prop` is a predicate, then
+`∀ a : A, P a` is the statement that the statement `P a` is true for all `a` in `A`
+(more precisely: for all `a` of type `A`).
+## `∀` as a proof goal
+To prove a statement of the form `∀ a : A, …`, first use `intro a` to select any element `a`.
+## `∀` as an assumption
+If `h : ∀ a : A, P a` is an assumption and `a₀ : A` is a concrete element, then `h a₀` is a notation for `P a₀`.
+
+You can also use `specialize h a₀` to restrict the given assumption
+over all possible `a` to an assumption `h : P a₀` over this concrete `a₀`.-/
+DefinitionDoc Forall as "∀" in "Logic"
+
 
 /--
-Ungleichheit `x ≠ y` ist definiert als `¬ x = y`.  Du siehst das mit `unfold Ne`.
+The statement `True : Prop` is always true.
+
+## `True` as a proof target
+
+The tactics `tauto` and `decide` conclude every proof with `True` as the proof target.
+
+## `True` as an assumption
+
+As an assumption, `True` is not helpful at all.
 -/
-DefinitionDoc Ne as "≠"
+DefinitionDoc True as "True" in "Logic"
+
+/--
+The statement `False : Prop` is always false.
+
+## `False` as proof target
+
+If `False` is your proof target, you can try to find a contradiction in your assumptions, for example.
+Once the contradiction is sufficiently evident, `contradiction` concludes such a proof.
+
+If `False` is your proof goal and you have an assumption or lemma of the form `h : ¬ A` available,
+you can use `apply h` to change the proof goal to `A`
+(because `¬ A` means `A → False`).
+
+## `False`  as an assumption
+
+If you have `False` as an assumption, you can immediately end the proof with `contradiction`
+– because, as is well known, any other statement follows from a false statement.
+-/
+DefinitionDoc False as "False" in "Logic"
+
+/--
+`¬ A` is the logical negation of `A`.
+It is implemented internally as `A → False`.
+
+Useful tactics are: `push_neg`, `by_contra`, `contrapose`.
+You can also apply an assumption of the form `h : ¬ A` using `apply` to the proof target `False`.
+-/
+DefinitionDoc Not as "¬" in "Logic"
+
+/--
+Useful tactics for equality are: `rfl`, `rw`, `trans`
+-/
+DefinitionDoc Eq as "=" in "Logic"
+
+/--
+Inequality `x ≠ y` is defined as `¬ x = y`.  You can see this with `unfold Ne`.
+-/
+DefinitionDoc Ne as "≠" in "Logic"
 
 
 /- NATÜRLICHE ZAHLEN -/
 
-/-- `Even n` ist die Aussage, dass `n : ℕ` gerade ist:
+/--
+`Even n` is the statement that `n : ℕ` is even:
 ```
 ∃ r : ℕ, n = r + r
 ```
-Das kannst du leicht mit `unfold Even` prüfen.
+You can easily check this with `unfold Even`.
 -/
 DefinitionDoc Even as "Even"
 
-/-- `Odd n` ist die Aussage, dass `n : ℕ` ungerade ist:
+/--
+`Odd n` is the statement that `n : ℕ` is odd:
 ```
 ∃ k : ℕ, n = 2 * k + 1
 ```
-Das kannst du leicht mit `unfold Odd` prüfen.
+You can easily check this with `unfold Odd`.
 -/
 DefinitionDoc Odd as "Odd"
 
 /--
-Für `n : ℕ` bedeutet `Prime n`, dass `n` eine Primzahl ist.
-Um mit dieser Definition zu arbeiten, ist es oft hilfreich, sie mit dem Lemma
-`prime_def` umzuschreiben.
+For `n : ℕ`, `Prime n` means that `n` is a prime number.
+To work with this definition, it is often helpful to rewrite it using the lemma
+`prime_def`.
 -/
 DefinitionDoc Nat.Prime as "Prime"
 
 /--
-`succ : ℕ → ℕ` ist die Abbildung `n ↦ n + 1`.
-Sie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*) ab.
+`succ : ℕ → ℕ` is the mapping `n ↦ n + 1`.
+It therefore maps a natural number to its successor.
 -/
 DefinitionDoc Nat.succ as "succ"
 
 /--
-Ist `n : ℤ` eine ganze Zahl größergleich 0, so ist `n.toNat : ℕ` dieselbe Zahl, aufgefasst als natürliche Zahl.
-(Ist `n : ℤ` eine negative ganze Zahl, so ist `n.toNat : ℕ` ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)
+If `n : ℤ` is an integer greater than or equal to 0, then `n.toNat : ℕ` is the same number, interpreted as a natural number.
+(If `n : ℤ` is a negative integer, then `n.toNat : ℕ` is also defined, but its value has no mathematical meaning.)
 
-## Freunde und Verwandte
+## Friends and relatives
 
-Eine natürliche Zahl `n : ℕ` lässt sich stets als ganze Zahl auffassen.
-Dafür schreibst du sie entweder explizit als `(n : ℤ)` oder als `↑n`.
+A natural number `n : ℕ` can always be interpreted as an integer.
+To do this, you either write it explicitly as `(n : ℤ)` or as `↑n`.
 -/
 DefinitionDoc toNat as "toNat"
 
 /- MISCHMASCH -/
 
-/-- Für `x : ℝ` ist `|x|` der Betrag von `x`.
-(Hier ist `|` der gewöhnliche senkrechte Strich auf der Tastatur.)
+/--
+For `x : ℝ`, `|x|` is the absolute value of `x`.
+(Here, `|` is the usual vertical bar on the keyboard.)
 -/
 DefinitionDoc absValue as "|·|"
 
@@ -540,22 +557,26 @@ DefinitionDoc absValue as "|·|"
 -- example : ((abs : ℝ → ℝ) = fun x : ℝ ↦ |x|) := by
 --   rfl
 
-/-- Für eine endliche Indexmenge `I : Finset T` ist `∑ i ∈ I, f i` die leansche Schreibweise für die Summe
-$\sum_{i\in I} f(i)$.  Du schreibst das Summenzeichen als `\sum`.
- -/
+/--
+For a finite index set `I : Finset T`, `∑ i ∈ I, f i` is Leanic notation for the sum
+$\sum_{i\in I} f(i)$.  You write the summation sign as `\sum`.
+-/
 DefinitionDoc Sum as "∑"
 
-/-- Für eine endliche Indexmenge `I : Finset T` ist `∏ i ∈ I, f i` die leansche Schreibweise für das Produkt
-$\prod_{i\in I} f(i)$.  Du schreibst das Produktzeichen als `\prod`.
- -/
+/--
+For a finite index set `I : Finset T`, `∏ i ∈ I, f i` is the Leanic notation for the product
+$\prod_{i\in I} f(i)$.  You write the product symbol as `\prod`.
+-/
 DefinitionDoc Prod as "∏"
 
 
-/-- `P : MvPolynomial (Fin n) R` bedeutet, dass `P` ein Polynomial in `n` Unbestimmten
-`X 0`, …, `X (n-1)` mit Koeffizienten in `R` ist. -/
+/--
+`P : MvPolynomial (Fin n) R` means that `P` is a polynomial in `n` indeterminates
+`X 0`, …, `X (n-1)` with coefficients in `R`.
+-/
 DefinitionDoc MvPolynomial as "MvPolynomial"
 
 /--
-Für eine Matrix `A` ist `trace A` die Spur von `A`. Der Ausdruck ist auch auf Leansch äquivalent zu `∑ i, A i i`.
+For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
-DefinitionDoc Matrix.trace as "trace"
+DefinitionDoc Matrix.trace as "trace" in "Matrix"

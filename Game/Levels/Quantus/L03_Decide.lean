@@ -6,6 +6,7 @@ Level 3
 
 Title "" -- ""
 
+/-
 Introduction
 "
 Offenbar versuchen sich die Formalosophinnen auf ein weiteres Problem zu einigen, dass sie euch präsentieren könnten.
@@ -20,8 +21,16 @@ def Even (n : ℕ) : Prop := ∃ r, n = r + r
 Bevor er zu `Odd` weitergehen kann,
 taucht von irgendwo aus der Menge folgendes Papier auf:
 "
+-/
+Introduction "Intro Quantus L03: Show defintion
+```
+def Even (n : ℕ) : Prop := ∃ r, n = r + r
+```
+before introducing `Odd`
+"
 
 Statement : Even 42 := by
+  /-
   Hint "
     **Robo**: Moment! Dafür brauchst du die Definition gar nicht!
 
@@ -31,8 +40,11 @@ Statement : Even 42 := by
     einfachen Algorithmus gibt um die Wahrheit zu bestimmen.
     Aussagen zu konkreten Zahlen fallen meistens in diese Kategorie!
   "
+  -/
+  Hint "Remind that `decide` solves every task where a simple algorithm is available to solve them"
   decide
 
+/-
 Conclusion
 "
 **Du**: Was kann denn `decide` noch alles?
@@ -42,5 +54,8 @@ Algorithmus angegeben, wie entschieden werden
 soll, ob `Even 42` wahr oder falsch ist. Wenn `decide` also so einen Algorithmus kennt,
 dann kann es die Aufgabe lösen.
 "
+-/
+Conclusion "Conclusion Quantus L03: Explain that `decide` can show True/False for `Even 42`, if
+`decide` possesses an algorithm for making this decision"
 
 OnlyTactic decide

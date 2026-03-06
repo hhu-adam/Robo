@@ -1,4 +1,4 @@
--- Level name : Aller Anfang ist... ein Einzeiler?
+-- Level name : Aller Anfang ist… ein Einzeiler?
 
 /-
 Willkommen zum Lean-Crashkurs wo du lernst wie man mathematische Beweise vom Computer

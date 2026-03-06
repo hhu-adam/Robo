@@ -17,6 +17,7 @@ Title "Piazza"
 
 Image "images/SetTheory.png"
 
+/-
 Introduction "
 Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet.
 Überall stehen Händler, die ihre Waren feilbieten.
@@ -26,7 +27,7 @@ Aber alles ist fein säuberlich sotiert.
 Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern,
 offene Säcke mit kleinen, rosa Sternchen, usw.
 
-Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder zu verhalten – laufen euch fast über die Füße.
+Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder verhalten – laufen euch fast über die Füße.
 Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.
 
 **Fin**:  Was macht ihr denn hier?
@@ -39,3 +40,5 @@ Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich
 
 **Du**:  Und, habt ihr schon etwas gelernt?
 "
+-/
+Introduction " Intro Piazza"

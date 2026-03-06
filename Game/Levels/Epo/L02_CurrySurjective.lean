@@ -13,12 +13,18 @@ open Function Nat
 #check ne_comm
 
 Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
+  /-
   Hint "
   **Du**:  `ℕ → A → B` … wie lese ich diese zwei Pfeile hintereinander?
 
   **Robo**: Du liest das als `ℕ → (A → B)` – eine Abbildung von den natürlichen Zahlen `ℕ` in die Menge `A → B` der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst."
+  -/
+  Hint "Explaination of `ℕ → A → B`: it can be read as `ℕ → (A → B)`, a mapping of `ℕ` into the set `A → B`"
+  /-
   Hint (hidden := true) "
   **Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt."
+  -/
+  Hint (hidden := true) "Try `constructor` | `unfold Surjective`, `push_neg`"
   Branch
     constructor
     · intro h
@@ -27,9 +33,12 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
       obtain ⟨w, hw⟩ := h
       use w
       intro n
+      /-
       Hint "
       **Robo**: Hilft dir vielleicht `ne_comm` weiter?
       Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`."
+      -/
+      Hint "Try `ne_comm`. `ne_comm` says that `a ≠ b ↔ b ≠ a`"
       rw [ne_comm]
       apply hw
     · intro ⟨g, hg⟩
@@ -40,14 +49,20 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
       assumption
   unfold Surjective
   push_neg
+  /-
   Hint "
   **Robo**: Hilft dir vielleicht `ne_comm` weiter?
   Die Aussage von `ne_comm` ist `a ≠ b ↔ b ≠ a`.
   "
+  -/
+  Hint "Try `ne_comm`. `ne_comm` says that `a ≠ b ↔ b ≠ a`"
+  /-
   Hint (hidden := true) "
   **Robo**: Wegen der vielen Quantoren funktioniert `rw [ne_comm]` hier nicht.
   Probier stattdessen mal `simp [ne_comm]`.
   "
+  -/
+  Hint (hidden := true) "The number of quantors does not allow for `rw [ne_comm]`. Try `simp [ne_comm]`"
   simp [ne_comm]
 
 /---/

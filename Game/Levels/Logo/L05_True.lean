@@ -5,12 +5,16 @@ Level 5
 
 Title "" -- "True or False"
 
+/-
 Introduction
 "
 Der nächste Untertan in der Reihe ist ein Schelm.
 "
+-/
+Introduction "Intro Logo L05"
 
 Statement : True := by
+  /-
   Hint "
     **Robo**: Dieses `True` ist eine spezielle Aussage, nämlich die Aussage, die immer und
     bedingungslos wahr ist.
@@ -18,8 +22,11 @@ Statement : True := by
     **Du**: Und was genau ist dann zu beweisen?
 
     **Robo**: Ich glaube, nichts. Probier mal `decide`."
+  -/
+  Hint "Explain that `True` is a special statement that is always true. Try `decide`"
   decide
 
+/-
 Conclusion
 "
 **Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen seid …
@@ -29,6 +36,8 @@ Conclusion
 **Robo**: Nein, `decide` funktioniert nur in speziellen Situationen, in denen es einen
 einfachen Algorithmus gibt, der entscheidet, ob die Aussage wahr ist.
 "
+-/
+Conclusion "Conclusion Logo L05: `decide` cannot be used every time. `decide` works only in special cases"
 
 NewDefinition True False
 NewTactic decide

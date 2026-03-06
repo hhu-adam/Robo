@@ -5,7 +5,7 @@ Authors: Gabriel Ebner
 -/
 
 /-!
-Defines an extended binder syntax supporting `∀ ε > 0, ...` etc.
+Defines an extended binder syntax supporting `∀ ε > 0, …` etc.
 -/
 
 namespace Batteries.ExtendedBinder

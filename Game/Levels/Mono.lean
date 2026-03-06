@@ -15,6 +15,7 @@ Title "Mono"
 
 Image "images/Mono.png"
 
+/-
 Introduction "
 Auf dem nächsten Planeten stehen wieder zwei Hochhäuser nebeneinander.
 Wieder ist das eine schmal und hoch, das andere etwas breiter und niedriger.
@@ -46,3 +47,5 @@ Wie der Antrieb funktioniert, bleibt ein Rätsel.
 Und nicht jedes Stockwerk lässt sich über eine Röhre erreichen.
 Aber wir sind schon fast da.  Nur noch zwei Treppen hinauf.
 "
+-/
+Introduction " Intro Mono"
