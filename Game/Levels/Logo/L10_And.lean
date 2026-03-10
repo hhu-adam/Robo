@@ -35,16 +35,15 @@ Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   You cannot just try `trivial`. Use `constructor` to divide goal into two. Remind that the tactic
   is not called `destructor`. Try `constructor`"
   constructor
-  -- gleicher Hint wie unten!
-  assumption
   /-
   Hint (hidden := true) "
     **Robo**: Schau mal, das ist Zauberpapier.
     Jetzt haben wir auf einmal zwei Beweisziele.
-    Hier ist dast Ziel `{B}`.
     Ich glaube, du weißt schon, wie man die jeweils erreicht.
     Die Ziele stehen ja jeweils in den *Annahmen*."
   -/
+  Hint "Now you have two goals."
+  assumption
   Hint (hidden := true) "Now there is goal `{B}`. This goal is part of the assumption"
   assumption
 

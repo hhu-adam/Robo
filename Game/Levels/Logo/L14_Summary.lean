@@ -31,7 +31,7 @@ Analogously, when working with the goal `constructor` and `left`/`right` can be 
 Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
   -- Hint (hidden := true)
   --  "**Robo**: Ich würd zuerst die Annahme {h} mit `obtain ⟨⟩ := {h}` aufteilen."
-  Hint (hidden := true) "Divide assumption {h} using `obtain ⟨⟩ := {h}`"
+  Hint (hidden := true) "Divide assumption `{h}` using `obtain ⟨⟩ := {h}`"
   Branch
     constructor
     · obtain h' | h' := h

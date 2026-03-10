@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-05\n"
+"POT-Creation-Date: 2026-03-09\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -460,6 +460,12 @@ msgid "Try case distinction. Use §0"
 msgstr ""
 "**Robo**:  Jetzt vielleicht eine Fallunterscheidung.  Erinnerst du dich an "
 "§0?"
+
+#. §0: `«{h}»`
+#. §1: `obtain ⟨⟩ := «{h}»`
+#: Game.Levels.Logo.L14_Summary
+msgid "Divide assumption §0 using §1"
+msgstr "**Robo**: Ich würde zuerst die Annahme §0 mit §1 aufteilen."
 
 #: Game.Levels.Iso
 msgid "Iso"
@@ -1050,6 +1056,14 @@ msgstr ""
 "\n"
 "**Du**: Na prima."
 
+#: Game.Levels.Logo.L10_And
+msgid "Now you have two goals."
+msgstr ""
+"**Robo**: Schau mal, das ist Zauberpapier.\n"
+"    Jetzt haben wir auf einmal zwei Beweisziele.\n"
+"    Ich glaube, du weißt schon, wie man die jeweils erreicht.\n"
+"    Die Ziele stehen ja jeweils in den *Annahmen*."
+
 #. §0: `Finset`
 #. §1: `A`
 #. §2: `A`
@@ -1502,12 +1516,6 @@ msgstr ""
 "Für zwei Teilmengen §0 ist §1 die Differenz aus §2 and §3, bestehend aus "
 "allen Elementen von §4, die nicht in §5 liegen."
 
-#. §0: `(f ∘ g) x`
-#. §1: `f (g x)`
-#: Game.Levels.Vieta.L04_Let
-msgid "Sagt dass §0 das gleiche ist wie §1."
-msgstr "Sagt dass §0 das gleiche ist wie §1."
-
 #. §0: `Odd (n ^ 2)`
 #: Game.Levels.Spinoza.L06_Summary
 msgid "Derive contradiction for §0"
@@ -1596,10 +1604,6 @@ msgstr ""
 "**Robo**: Egal, jetzt sind wir schon ein gutes Stücken weiter. Probier jetzt "
 "hier einmal!"
 
-#: Game.Levels.Implis.L03_Apply
-msgid "This should seem obvious now"
-msgstr "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
-
 #. §0: `A`
 #. §1: `A`
 #: Game.Levels.Implis.L12_ByCases
@@ -1610,6 +1614,10 @@ msgid ""
 msgstr ""
 "**Robo**: Siehst du, jetzt hat der Beweis zwei Teile. Im ersten Teil nimmst "
 "du an, dass §0 wahr ist. Im zweiten nimmst du an, dass §1 falsch ist."
+
+#: Game.Levels.Implis.L03_Apply
+msgid "This should seem obvious now"
+msgstr "**Du**: Ja, das kommt mir jetzt auch natürlich vor."
 
 #. §0: `g`
 #. §1: `use`
@@ -1685,12 +1693,6 @@ msgstr ""
 "**Du**: Wir hatten doch eben festgestellt, dass §0 gilt!\n"
 "\n"
 "**Robo**: Nachschlagen kann ich gut! Das war §1."
-
-#: Game.Levels.Cantor.L09_CantorDiag
-msgid "Conclusion Cantor L09 - 1"
-msgstr ""
-"**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche "
-"Aufgabe nochmals lösen."
 
 #. §0: `sum_congr`
 #: Game.Levels.Babylon.L05_sum_subset2
@@ -1936,10 +1938,9 @@ msgid ""
 "Siehe auch §4, welches die generalisierte Form für\n"
 "§5-Matrix (über beliebigem §6) ist."
 msgstr ""
-"Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann als §3.\n"
+"Jede reelle §0-Matrix §2 lässt sich schreiben als §3.\n"
 "\n"
-"Siehe auch §4, welches die generalisierte Form für §5-Matrix (über "
-"beliebigem §6) ist."
+"Siehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten."
 
 #: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
 msgid "Intro Piazza L05"
@@ -2073,7 +2074,7 @@ msgstr "**Du**:  Sieht auch richtig aus."
 #. §0: `apply`
 #: Game.Levels.Spinoza.L01_Have
 msgid "§0 should help"
-msgstr "**Robo**: §0 sollte helfen"
+msgstr "**Robo**: §0 sollte helfen."
 
 #. §0: `linarith`
 #. §1: `«{a}» = 1`
@@ -2293,18 +2294,6 @@ msgstr ""
 "\n"
 "**Du**: Ah, und §3 ist etwas anderes, also brauche ich das Lemma nochmals."
 
-#. §0: `not_not`
-#. §1: `↔`
-#. §2: `=`
-#. §3: `rw [not_not]`
-#: Game.Levels.Implis.L13_Rw
-msgid ""
-"A lemma like §0 that contains §1 or §2 in its statements can also be used "
-"with §3"
-msgstr ""
-"**Robo**: Ein Lemma, das wie §0 ein §1 oder §2 im Statement hat, kann auch "
-"mit §3 verwendet werden."
-
 #. §0: `apply lt_trichotomy`
 #: Game.Levels.Luna.L03_Linarith__lt_trichotomy
 msgid "Conclusion Luna L03: Alternatively §0 could have been used."
@@ -2395,18 +2384,11 @@ msgstr ""
 "Hint \"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  "
 "Gegeben ist:\n"
 "\n"
-"$$\n"
-"\\\\begin\\{aligned}\n"
-"   \\\\tfrac\\{35}\\{11}\\\\cdot y &\\\\le -\\\\tfrac\\{22}\\{21}\\\\cdot x "
-"+ \\\\tfrac\\{35}\\{2}  \\\\\\\\ %(new line)\n"
-"   \\\\tfrac\\{8}\\{9} \\\\cdot y &\\\\le x + \\\\tfrac\\{17}\\{8}\n"
-"\\\\end\\{aligned}\n"
-"$$\n"
+"§0\n"
 "\n"
 "Und wir sollen zeigen:\n"
-"$$\n"
-"y ≤ \\\\tfrac\\{34}\\{7}\n"
-"$$\n"
+"\n"
+"§1\n"
 "\n"
 "Robo??\n"
 "\n"
@@ -2599,11 +2581,6 @@ msgstr ""
 msgid "Ritha gives signs to try omega"
 msgstr "Ritha macht wieder irgendwelche Zeichen."
 
-#. §0: `obtain ⟨⟩ := «{h}»`
-#: Game.Levels.Logo.L14_Summary
-msgid "Divide assumption «{h}» using §0"
-msgstr "**Robo**: Ich würd zuerst die Annahme «{h}» mit §0 aufteilen."
-
 #: Game.Levels.Luna
 msgid "Intro Luna"
 msgstr ""
@@ -2727,12 +2704,12 @@ msgid ""
 "§4 not applicable to more complex §5"
 msgstr ""
 "**Robo**: Und das ist ein Fall für §0. Hast du §1 als Annahme, kannst du sie "
-"mit mit §2 zu §3 umscheiben.\n"
+"mit §2 zu §3 umscheiben.\n"
 "\n"
 "**Du**: Aber könnte ich hier nicht auch einfacher §4 benutzen?\n"
 "\n"
 "**Robo**: Ja gut, in diesem einem einfachen Beispiel schon. Wenn aber §5 ein "
-"komplizierterer Ausdruck ist und noch nicht exact so im Beweisziel steht, "
+"komplizierterer Ausdruck ist und noch nicht exakt so im Beweisziel steht, "
 "dann nicht. Probiers mal, wie ich es gerade gesagt habe."
 
 #: Game.Levels.Samarkand.L06_PreimageNonempty
@@ -2928,7 +2905,7 @@ msgid "Remind of rewrite via §0 as §1. Try §2"
 msgstr ""
 "**Du**: Wie war das nochmals mit rückwärts umschreiben?\n"
 "\n"
-"**Robo**: §0 ist §1. Und dann §2"
+"**Robo**: §2, wobei du §0 als §1 schreibst."
 
 #. §0: `Matrix.smul_ebasis`
 #: Game.Levels.Robotswana.L01_SMulEBasis
@@ -3003,7 +2980,7 @@ msgid "Intro Logo L03"
 msgstr ""
 "Während der erste Untertan noch rfl, rfl, rfl murmelt, tritt schon der "
 "nächste nach vorne.\n"
-"Es ist schüchtern und schreibt bloß."
+"Er ist schüchtern und schreibt bloß."
 
 #: Game.Levels.Logo.L03_Assumption
 msgid "Conclusion Logo L03"
@@ -3064,8 +3041,8 @@ msgstr ""
 msgid "Try §0 and rewrite assumption §1 firstly by §2"
 msgstr ""
 "**Robo**:  Fang am besten damit an, wieder alle Definition auszuschreiben. "
-"Ich würde sagen:  §0. Und die Annahme §1 könntest du schon einmal §2 genauer "
-"ausschreiben."
+"Ich würde sagen:  §0. Und die Annahme §1 könntest du schon einmal mit §2 "
+"expliziter ausschreiben."
 
 #. §0: `Nonempty A`
 #: Game.Levels.Mono.L11_InjHasLeftInv
@@ -3473,7 +3450,8 @@ msgstr "**Du**: Okay. Lass uns vorsichtig näher gehen."
 
 #: Game.Doc.Definition
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
-msgstr "Eine Abbildung ist bijektiv, wenn sie injektiv und surjektiv ist."
+msgstr ""
+"Eine Abbildung ist genau dann bijektiv, wenn sie injektiv und surjektiv ist."
 
 #: Game.Levels.Cantor.L10_CantorPowerset
 msgid "Conclusion Cantor L10"
@@ -3597,8 +3575,8 @@ msgid ""
 "Try §0 with a number and then §1. You can not use §2\n"
 "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
 msgstr ""
-"**Robo**: Jetzt brauchst du eine Zahl mit §0, und danach vermutlich das "
-"Lemma §1 brauchen.\n"
+"**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich "
+"das Lemma §1.\n"
 "\n"
 "**Du**: Könnte ich jetzt schon §2 anwenden?\n"
 "\n"
@@ -3747,14 +3725,15 @@ msgid ""
 msgstr ""
 "\n"
 "**Du**: Was das wohl jetzt soll …?\n"
-"Du kritzelst einen bisschen herum.\n"
+"\n"
+"Du kritzelst ein bisschen herum.\n"
 "§0\n"
 "\n"
-"**Du**: Ja, so könnte das gehen.  Ich schreibe §1 als Summe von "
+"**Du**: Ja, so könnte das gehen.  Ich schreibe §1 als Linearkombination von "
 "Basismatrizen, nutze dann die Linearität, und zuletzt, dass §2 auf den §3 "
 "mit §4 verschwindet.\n"
-"Vermutlich sollte ich also als erstes das §5 in §6 als Summe von "
-"Basismatrizen schreiben, nicht aber das andere §7 weiter hinten.\n"
+"Vermutlich sollte ich also als erstes das §5 in §6 als Linearkombination "
+"schreiben, nicht aber das andere §7 weiter hinten.\n"
 "\n"
 "**Robo** (*aus der Ferne*): §8! Funktioniert wie §9.\n"
 
@@ -7995,6 +7974,19 @@ msgstr ""
 "\n"
 "**Robo**:  Naja, ein *bisschen*."
 
+#. §0: `not_not`
+#. §1: `↔`
+#. §2: `=`
+#. §3: `rw`
+#. §4: `rw [not_not]`
+#: Game.Levels.Implis.L13_Rw
+msgid ""
+"A lemma like §0 that contains §1 or §2 in its statements can also be used "
+"with §3: §4"
+msgstr ""
+"**Robo**: Ein Lemma, das wie §0 ein §1 oder §2 im Statement hat, kann auch "
+"mit §3 verwendet werden, etwa §4."
+
 #. §0: `rw`
 #. §1: `if_neg`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -8155,10 +8147,6 @@ msgstr ""
 #: Game.Levels.Saturn.L03_mul_comm
 msgid "Conclusion Saturn L03"
 msgstr "Wieder ein 👍."
-
-#: Game.Levels.Cantor.L09_CantorDiag
-msgid "Intro Cantor L09 - 1"
-msgstr "**Cantor**: Viel Glück!"
 
 #. §0: `card_fin`
 #. §1: `simp`
@@ -9854,6 +9842,20 @@ msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr ""
 "Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
 "Beispiel §2"
+
+#~ msgid "Divide assumption «{h}» using §0"
+#~ msgstr "**Robo**: Ich würd zuerst die Annahme «{h}» mit §0 aufteilen."
+
+#~ msgid "Sagt dass §0 das gleiche ist wie §1."
+#~ msgstr "Sagt dass §0 das gleiche ist wie §1."
+
+#~ msgid "Conclusion Cantor L09 - 1"
+#~ msgstr ""
+#~ "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die "
+#~ "ursprüngliche Aufgabe nochmals lösen."
+
+#~ msgid "Intro Cantor L09 - 1"
+#~ msgstr "**Cantor**: Viel Glück!"
 
 #~ msgid ""
 #~ "# Game Over or QED\n"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-06\n"
+"POT-Creation-Date: 2026-03-09\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -273,6 +273,12 @@ msgstr ""
 #. §0: `lt_trichotomy`
 #: Game.Levels.Mono.L06_StrictMono
 msgid "Try case distinction. Use §0"
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `obtain ⟨⟩ := «{h}»`
+#: Game.Levels.Logo.L14_Summary
+msgid "Divide assumption §0 using §1"
 msgstr ""
 
 #: Game.Levels.Iso
@@ -606,6 +612,10 @@ msgstr ""
 msgid "Intro Samarkand"
 msgstr ""
 
+#: Game.Levels.Logo.L10_And
+msgid "Now you have two goals."
+msgstr ""
+
 #. §0: `Finset`
 #. §1: `A`
 #. §2: `A`
@@ -885,12 +895,6 @@ msgid "For two subsets §0, §1 is the difference between §2 and §3,\n"
 "consisting of all elements of §4 that are not in §5."
 msgstr ""
 
-#. §0: `(f ∘ g) x`
-#. §1: `f (g x)`
-#: Game.Levels.Vieta.L04_Let
-msgid "Sagt dass §0 das gleiche ist wie §1."
-msgstr ""
-
 #. §0: `Odd (n ^ 2)`
 #: Game.Levels.Spinoza.L06_Summary
 msgid "Derive contradiction for §0"
@@ -947,15 +951,15 @@ msgstr ""
 msgid "Intro Robotswana L05: §0 indicates unit matrix. Begin with §1"
 msgstr ""
 
-#: Game.Levels.Implis.L03_Apply
-msgid "This should seem obvious now"
-msgstr ""
-
 #. §0: `A`
 #. §1: `A`
 #: Game.Levels.Implis.L12_ByCases
 msgid "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\n"
 "is false"
+msgstr ""
+
+#: Game.Levels.Implis.L03_Apply
+msgid "This should seem obvious now"
 msgstr ""
 
 #. §0: `g`
@@ -1009,10 +1013,6 @@ msgstr ""
 #. §1: `one_on_diag_ebasis`
 #: Game.Levels.Robotswana.L10_Characterize
 msgid "Remind former result for §0. Try §1"
-msgstr ""
-
-#: Game.Levels.Cantor.L09_CantorDiag
-msgid "Conclusion Cantor L09 - 1"
 msgstr ""
 
 #. §0: `sum_congr`
@@ -1392,14 +1392,6 @@ msgid "Only two of three §0 are rewritten. §1 only rewrites only first found o
 "As §3 is considered to be something 'different' the lemma has to be applied again"
 msgstr ""
 
-#. §0: `not_not`
-#. §1: `↔`
-#. §2: `=`
-#. §3: `rw [not_not]`
-#: Game.Levels.Implis.L13_Rw
-msgid "A lemma like §0 that contains §1 or §2 in its statements can also be used with §3"
-msgstr ""
-
 #. §0: `apply lt_trichotomy`
 #: Game.Levels.Luna.L03_Linarith__lt_trichotomy
 msgid "Conclusion Luna L03: Alternatively §0 could have been used."
@@ -1562,11 +1554,6 @@ msgstr ""
 
 #: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
 msgid "Ritha gives signs to try omega"
-msgstr ""
-
-#. §0: `obtain ⟨⟩ := «{h}»`
-#: Game.Levels.Logo.L14_Summary
-msgid "Divide assumption «{h}» using §0"
 msgstr ""
 
 #: Game.Levels.Luna
@@ -2381,6 +2368,7 @@ msgstr ""
 #: Game.Levels.Vieta.L02_Function
 #: Game.Levels.Vieta.L03_Let
 #: Game.Levels.Vieta.L03_Let
+#: Game.Levels.Vieta.L04_Let
 #: Game.Levels.Vieta.L04_Let
 #: Game.Levels.Vieta.L04_Let
 #: Game.Levels.Vieta.L05_Funext
@@ -5096,6 +5084,15 @@ msgstr ""
 msgid "Conclusion Piazza L01"
 msgstr ""
 
+#. §0: `not_not`
+#. §1: `↔`
+#. §2: `=`
+#. §3: `rw`
+#. §4: `rw [not_not]`
+#: Game.Levels.Implis.L13_Rw
+msgid "A lemma like §0 that contains §1 or §2 in its statements can also be used with §3: §4"
+msgstr ""
+
 #. §0: `rw`
 #. §1: `if_neg`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -5211,10 +5208,6 @@ msgstr ""
 
 #: Game.Levels.Saturn.L03_mul_comm
 msgid "Conclusion Saturn L03"
-msgstr ""
-
-#: Game.Levels.Cantor.L09_CantorDiag
-msgid "Intro Cantor L09 - 1"
 msgstr ""
 
 #. §0: `card_fin`

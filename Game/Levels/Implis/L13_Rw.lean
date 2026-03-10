@@ -29,7 +29,7 @@ Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B
     **Robo**: Ein Lemma, das wie `not_not` ein `↔` oder `=` im Statement hat, kann
     auch mit `rw [not_not]` verwendet werden."
   -/
-  Hint "A lemma like `not_not` that contains `↔` or `=` in its statements can also be used with `rw [not_not]`"
+  Hint "A lemma like `not_not` that contains `↔` or `=` in its statements can also be used with `rw`: `rw [not_not]`"
   rw [not_not]
   /-
   Hint "
