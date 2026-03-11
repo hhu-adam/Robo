@@ -13,12 +13,12 @@ Introduction
 -/
 Introduction "Intro Piazza L04"
 
+open Nat
 namespace Set
 
 #check  (univ : Set ℕ)
 
 Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
-
   /-
   Hint "
     **Du**:  Was ist denn `univ`?
@@ -48,8 +48,8 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   is also in this set i.e. `5 ∈ univ`. Try `rw [eq_univ_iff_forall]`"
   /-
   `ext` also works, but WANT to introduce
-  `eq_univ_iff_forall` and `generalize` here!
-  So `ext` is disabled
+  `eq_univ_iff_forall` [and `generalize` -- no longer needed] here!
+  So `ext` is disabled.
   -/
   /-
   Branch
@@ -57,49 +57,44 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
     simp
   -/
   rw [eq_univ_iff_forall]
-  -- Hint "
-  --  **Robo**: Und jetzt `simp`.  Du hättest sogar direkt `simp [eq_univ_iff_forall]` nehmen können.
-  --  "
   Hint "Try via `simp` or directly `simp [eq_univ_iff_forall]`"
-  simp?
-  intro x
-  /-
-  Hint "
-    **Du**: Und jetzt `by_cases h : Even n`?
-
-    **Robo**: Ja, das würde zum Ziel führen.
-    Aber eigentlich ist `Even x ∨ ¬Even x` ja eine Tautologie.
-    Damit `tauto` sie erkennt, musst du sie nur entsprechend abstrahieren.
-    Das ginge hier zum Beispiel mit:
-    ```
-    rw [← Nat.not_odd_iff_even]
-    ```
-    "
-  -/
-  Hint "`by_cases h : Even n` would lead you to your goal. Note that `Even x ∨ ¬Even x` is a tautology.
-  To apply `tauto` it has to be abstracted e.g. with
-    ```
-    rw [← Nat.not_odd_iff_even]
-    ```
-    "
+  simp
+  intro n
+  Hint "One option: `by_cases h : Even {n}`.
+  But in any case, will need `not_odd_iff_even`
+  (or `not_even_iff_odd`) at some point,
+  so might as well start with it
+  and obtain tautology `¬Odd «{n}» ∨ Odd «{n}»`."
   Branch
     by_cases h : Even n
     left
     assumption
     right
+    rw [← not_even_iff_odd]
     assumption
-    done
-  -- TODO: v4.22.0 update hat dies kaputt gemacht. Weiss nicht wieso
-  -- Branch
-  --   generalize h : (Even x) = A
-  --   tauto
-  rw [← Nat.not_odd_iff_even]
+  Branch
+    rw [← not_even_iff_odd]
+    Hint (hidden := true) "[Piazza] `tauto`"
+    /- No, first `generalize`:
+    ```
+    generalize h : (Even {n}) = A
+    ```
+    generalize h : (Even n) = A
+    -/
+    tauto
+  rw [← not_odd_iff_even]
+  Hint (hidden := true) "[Piazza] `tauto`"
+  /- No, first `generalize`:
+  ```
+  generalize h : (Odd {n}) = A
+  ```"
+  generalize h : (Odd n) = A
+  -/
   tauto
-  done
 
 TheoremTab "Set"
 
-NewTactic generalize
+--NewTactic generalize
 DisabledTactic ext
 
 /---/
