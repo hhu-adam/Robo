@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09\n"
+"POT-Creation-Date: 2026-03-11\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: Game.Levels.Samarkand.L02_ImageMap
 msgid "Intro Samarkand L02"
@@ -175,6 +175,24 @@ msgstr ""
 #: Game.Levels.Samarkand.L05_InjectiveFibre
 msgid "Conclusion Samarkand L05"
 msgstr "Arapuka is still lying completely still, but she looks happy."
+
+#. §0: `by_cases h : Even «{n}»`
+#. §1: `not_odd_iff_even`
+#. §2: `not_even_iff_odd`
+#. §3: `¬Odd ««{n}»» ∨ Odd ««{n}»»`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+msgid ""
+"One option: §0.\n"
+"But in any case, will need §1\n"
+"(or §2) at some point,\n"
+"so might as well start with it\n"
+"and obtain tautology §3."
+msgstr ""
+"**You**: And now §0? \n"
+"\n"
+"**Scribble**: Yes, that would work. \n"
+"But you'll probably need §1 (or §2) in any case, so you might as well start with it, and then "
+"your goal will become §3 – a tautology."
 
 #. §0: `Function.RightInverse f g`
 #. §1: `LeftInverse g f`
@@ -1054,6 +1072,12 @@ msgstr ""
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**You**: A map that has a left inverse is injective. I think I've heard that before..."
 
+#. §0: `«{h}»`
+#. §1: `obtain`
+#: Game.Levels.Logo.L14_Summary
+msgid "Split §0 once more with §1"
+msgstr "**Scribble**: I would split the assumption §0 once more with §1."
+
 #. §0: $I \\subseteq \\{-1,0,1\\}$
 #. §1: `trans ∑ i ∈ I, 0`
 #. §2: `\\sum`
@@ -1293,7 +1317,7 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
-msgstr "Level completed with warnings… 🎭"
+msgstr "– Problem solved.  But not quite as intended … –"
 
 #: Game.Levels.Euklid.L01_prod_pos
 msgid "The expression itself seems to be correct"
@@ -3538,24 +3562,27 @@ msgid "Remind of negation for §0"
 msgstr "**You**: Ah, and the negation of §0 must be ..."
 
 #: Game.Levels.Cantor.L06_IsFixedPt_odd
-#, fuzzy
 msgid "Conclusion Cantor L06"
 msgstr ""
 "Cantor says something again, but you are too busy with your tasks. You don't even notice that "
-"he has started flying with his unicycle."
+"he is now up in the air flying with his unicycle."
 
 #. §0: `omega`
 #. §1: `omega`
 #. §2: `omega`
 #: Game.Levels.Luna.L02_Omega
-#, fuzzy
 msgid ""
 "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
 "§2 is only really applicable over integers."
 msgstr ""
-"Lina rolls her eyes. **Lina**: Ritha is a big fan of §0. But §1 is pretty impotent. As soon as "
-"you leave the whole numbers behind, §2 can't do anything anymore. **Ritha**: You're impotent "
-"yourself! Ritha makes an indecent face."
+"Lina rolls her eyes. \n"
+"\n"
+"**Lina**: Ritha is a big fan of §0. But §1 is pretty impotent. As soon as you leave the "
+"integers, §2 can't do anything. \n"
+"\n"
+"**Ritha**: You're impotent!\n"
+"\n"
+"Ritha pulls a face."
 
 #. §0: `unfold F`
 #. §1: `F`
@@ -3567,7 +3594,6 @@ msgstr ""
 #. §7: `unfold F`
 #. §8: `simp only [F]`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you can write out the definition §1 in the proof goal.\n"
 "With §2, you do the same thing, but in the assumption §3.\n"
@@ -3580,52 +3606,64 @@ msgid ""
 "\n"
 "The tactics §7 and §8 do practically the same thing."
 msgstr ""
-"With §0, you can write out the definition §1 in the proof target. With §2, you do the same "
-"thing, but in assumption §3. Although the proof target and assumption before and after §4 are "
-"identical in definition, many tactics (e.g. §5 or §6) operate on a syntactic level; they do "
-"not \"see through definitions\".\n"
+"With §0, you can spell out the definition §1 in the goal.\n"
+"With §2, you do the same in assumption §3. \n"
 "\n"
-"## Friends and relatives Tactics §7 and §8 do practically the same thing."
+"Goal and assumption before and after §4 are definitionally equivalent, but tactics such as §5 "
+"or §6 operate on a syntactic level – they do not “see through” definitions. It can easily "
+"happen that they work only after (or only before) an §4.\n"
+"\n"
+"## Friends and relations\n"
+"\n"
+"For all practical purposes, §7 is equivalent to §8."
 
 #: Game.Levels.Saturn
-#, fuzzy
 msgid "Intro Saturn"
 msgstr ""
-"You didn't actually want to head for this planet. But your mind wasn't entirely on the task at "
-"hand. And you can't afford to be inattentive in universes, especially when you're unfamiliar "
-"with them. Now you've flown too close, the gravity is too strong, and your regenerative drive "
-"is currently in regeneration mode.\n"
+"You never actually want to approach this planet. But you weren't entirely as focussed as one "
+"needs to be in an universe, especially in a universe one is not entirely familiar with. Now "
+"you're already too close, the gravity is too strong, and your regenerative power unit is "
+"currently in regeneration mode.\n"
 "\n"
-"**You**: What is that orange sauce on this planet? **Scribble**: It looks rather toxic. Or "
-"hot.\n"
+"**You**: What is this orange sauce on the planet?\n"
 "\n"
-"**You**: Or both. I really don't want to land there! **Scribble**: Yes, yes, I'm doing my "
-"best. And look how much rubbish is already orbiting here! The best we can do right now is fly "
-"with the current."
+"**Scribble**: It looks rather toxic. Or hot.\n"
+"\n"
+"**You**: Or both. I really don't want to land there! \n"
+"\n"
+"**Scribble**: Neither do I. I'm trying my best not to. And look how much rubbish is already "
+"orbiting here! The best we can do right now is fly with the current."
 
 #: Game.Levels.Cantor
-#, fuzzy
 msgid "Intro Cantor"
 msgstr ""
-"You have landed next to a large tent. Perhaps a circus tent? It is quite dark inside. Only the "
-"stage is brightly lit. On it stands a gentleman who looks like a mixture of a professor and a "
-"magician, giving a monologue and apparently performing something. In the semi-darkness in "
-"front of the stage, chairs are arranged in long rows.\n"
-"You have apparently entered the tent right at one end of the first row. The row is so long "
-"that you cannot see the other end. And behind it are many more rows – you cannot see the end "
-"of them either. But all the seats are empty. So you sit down somewhere in the first row, look "
-"at the stage and prick up your ears."
+"You have landed next to a large tent. \n"
+"Perhaps a circus tent? \n"
+"It is pretty dark inside. \n"
+"Only the stage is brightly lit. \n"
+"There's a gentleman on the stage, and you can't quite decide whether he looks more like a "
+"professor or a magician.\n"
+"He appears to be in the middle of a long monologue – and of some performance. \n"
+"\n"
+"In the semi-darkness in front of the stage, chairs are arranged in long rows.\n"
+"You have entered the tent right at one end of the first row. \n"
+"The other end you cannot even make out. The tent is too dark and the row is too long.\n"
+"And behind it are many more rows. You cannot see the back of the tent either. \n"
+"But all the seats are empty. \n"
+"So you sit down somewhere in the first row, look up at the gentleman on the stage and prick up "
+"your ears."
 
 #. §0: `intro`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "Best begin with §0"
-msgstr "**You**: Well, at least I can start with §0... **Scribble**: ...and then we'll see!"
+msgstr ""
+"**You**: Well, I could at least start with §0 … \n"
+"\n"
+"**Scribble**: … then we'll take it from there!"
 
 #: Game.Levels.Piazza.L08_subset_iff
-#, fuzzy
 msgid "Intro Piazza L08"
-msgstr "**Sub**: You're right. We should ask visitors a bit more about inclusions."
+msgstr "**Sub**: You're right. We should probe our visitors a bit more about inclusions."
 
 #. §0: `b`
 #. §1: `use …`
@@ -3634,38 +3672,41 @@ msgstr "**Sub**: You're right. We should ask visitors a bit more about inclusion
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
 #: Game.Levels.Luna.L09_lt_trichotomy2
-#, fuzzy
 msgid ""
 "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
 "§3\n"
 msgstr ""
-"**You**: Well, it's pretty clear which §0 could be used here. **Scribble**: If it's so clear "
-"to you, then start with §1. And after that, you'll be able to make good use of §2. For "
-"example, like this: §3 "
+"**You**: Well, it's pretty clear which §0 could be used here. \n"
+"\n"
+"**Scribble**: If it's clear to you, then start with §1. And after that, you'll want to invoke "
+"§2. For example, like this: \n"
+"§3\n"
 
 #: Game.Levels.Implis.L12_ByCases
-#, fuzzy
 msgid "Intro Implis L12"
 msgstr ""
-"The Head of Operations pauses at the next problem. **Head of Operations**: To be honest, I "
-"have no idea where this sheet came from. It's not mine. But it looks interesting somehow."
+"The next sheet of paper gives the Head of Operations pause. \n"
+"\n"
+"**Head of Operations**: To be honest, I have no idea where this came from. \n"
+"It's not mine. But it looks interesting somehow."
 
 #. §0: `if_neg «{h₂}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Here try §0"
-msgstr "**Scribble**: …and here §0. **You**: I know that."
+msgstr ""
+"**Scribble**: … and here §0. \n"
+"\n"
+"**You**: I know."
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#, fuzzy
 msgid "Conclusion Samarkand L04"
-msgstr "**Arapuka**: You are really a great help!"
+msgstr "**Arapuka**: That's really really helpful!"
 
 #. §0: ```
 #. h : ∃ (b : B), P b
 #. ```
 #. §1: `choose b hb using h`
-#. §2: `b : A`
+#. §2: `b : B`
 #. §3: `hb : P b`
 #. §4: `choose`
 #. §5: ```
@@ -3678,7 +3719,6 @@ msgstr "**Arapuka**: You are really a great help!"
 #. §10: `a`
 #. §11: `b`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "An assumption of the form\n"
 "§0\n"
@@ -3692,21 +3732,32 @@ msgid ""
 "\n"
 "(Here, §9 is a predicate that depends on two variables §10 and §11.)"
 msgstr ""
-"You can break down an assumption of the form §0 into its components §2 and §3 using §1.\n"
+"You can split an assumption of the form \n"
+"§0\n"
+"into its components §2 and §3 using §1.\n"
 "\n"
-"More generally, you can use §4 to select elements with the selection axiom: from an assumption "
-"of the form §5, §6 extracts a mapping §7 and the assumption §8. (Here, §9 is a predicate that "
-"depends on two variables §10 and §11.)"
+"More generally, you can use §4 to invoke the axiom of choice. Suppose you have an assumption "
+"of the following form: \n"
+"\n"
+"§5\n"
+"\n"
+"From this assumption, §6 will extract a map §7 satisfying the assumption §8. \n"
+"\n"
+"(Here, §9 is a predicate that depends on two variables §10 and §11.)"
 
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid "Conclusion Prado L02"
 msgstr ""
-"**Guino**: What are you whispering about? **You**: Oh, nothing. Scribble is just trying to "
-"remind me what exactly a prime number is. Guino looks at your proof.\n"
+"**Guino**: What are you whispering? \n"
 "\n"
-"**Guino**: Not bad, not bad. But let's move on a bit. The museum is still empty, but it's "
-"finished. And it's turned out really well. Look, this way!"
+"**You**: Oh, nothing. Scribble is just trying to remind me what exactly a prime number is. \n"
+"\n"
+"Guino inspects your proof.\n"
+"\n"
+"**Guino**: Not bad, not bad. But let's move on a bit. \n"
+"The museum may still be empty, but at least it's finally completed. \n"
+"And it's turned out really well. \n"
+"Come on, this way!"
 
 #. §0: `trans`
 #. §1: `⊢ A = C`
@@ -3720,7 +3771,6 @@ msgstr ""
 #. §9: `A = B₁ = B₂ = B₃ … = C`
 #. §10: `calc`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you insert an intermediate step into an equation or equivalence.\n"
 "\n"
@@ -3735,46 +3785,44 @@ msgid ""
 "(Outside of the game, however, the multi-line tactic §10 is better suited for such "
 "calculations.)"
 msgstr ""
-"With §0, you insert an intermediate step into an equation or equivalence. | before | tactic | "
-"after | |:------------ |:--------- |:-----------------------| | §1 | §2 | §3 and §4 | | §5 | "
-"§6 | §7 and §8 | Since you can repeat the tactic several times, it is suitable for performing "
-"a \"calculation\" §9 step by step. (Outside of the game, however, the multi-line tactic §10 is "
-"better suited for such calculations.)"
-
-#. §0: `simp [f, g]`
-#. §1: `VIETA_SECOND`
-#: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
-msgid "Try §0 §1"
-msgstr "**Scribble**: Once again, §0."
+"With §0, you insert an intermediate step into an equation or equivalence. \n"
+"\n"
+"| before | tactic | after | \n"
+"|:------------ |:--------- |:-----------------------| \n"
+"| §1 | §2 | §3 and §4 | \n"
+"| §5 | §6 | §7 and §8 | \n"
+"\n"
+"By repeating this tactic several times, you can perform a step-by-step “calculation” §9. \n"
+"\n"
+"(Outside of this game, however, the multi-line tactic §10 is better suited for such "
+"calculations.)"
 
 #: Game.Levels.Implis.L01_Intro
-#, fuzzy
 msgid "Conclusion Implis L01"
 msgstr ""
-"**Operations Manager**: Perfect! Thank you very much! He goes to a control panel and presses a "
-"few buttons. Somewhere, a conveyor belt starts moving loudly. **Operations Manager**: Do you "
-"have a few more minutes?"
+"**Head of Operations**: Perfect! Thank you very much! \n"
+"\n"
+"He goes to a control panel and presses a few buttons. \n"
+"Somewhere, a conveyor belt creaks loudly and starts moving. \n"
+"\n"
+"**Head of Operations**: Do you have a few more minutes?"
 
 #. §0: `omega`
 #: Game.Levels.Luna.L02_Omega
-#, fuzzy
 msgid "Try out §0"
 msgstr "**Ritha** *(whispering)*: Try §0!"
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
-"**Scribble**: I suggest you first introduce all assumptions until only §0 remains as the proof "
-"target."
+"**Scribble**: I suggest you first introduce all assumptions, so that the goal has the form:\n"
+"§0"
 
 #. §0: `simp at «{h'}»`
 #: Game.Levels.Luna.L08_Omega3
-#, fuzzy
 msgid "Definitely use §0"
-msgstr "**Ritha**: Be sure to try §0."
+msgstr "**Ritha**: You should definitely try §0."
 
 #. §0: `univ`
 #. §1: `univ`
@@ -3787,62 +3835,68 @@ msgstr "**Ritha**: Be sure to try §0."
 #. §8: `5 ∈ univ`
 #. §9: `rw [eq_univ_iff_forall]`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid ""
 "Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\n"
 "is subset of §4. So, as 5 is a natural number (§5) and it holds that §6, §7\n"
 "is also in this set i.e. §8. Try §9"
 msgstr ""
-"**You**: What is §0? **Scribble**: §1 is the maximum subset: all natural numbers. **You**: So "
-"just §2? **Scribble**: Yes and no. §3 is \"all ℕ\", but understood as a *subset* of §4.\n"
+"**You**: What is §0? \n"
 "\n"
-"Ext, Fin, Set, Sub and Mem are looking at you. **Set**: You can't confuse that! Here *is* a "
-"blueberry, here is the *basket with all the blueberries*, and the berry *is in* this basket.\n"
+"**Scribble**: §1 is the maximum subset: all natural numbers. \n"
 "\n"
-"**Mem**: And in the same way, 5 *is* a natural number (§5), §6 is the *set of all natural "
-"numbers*, and §7 *lies in* this set (§8). What's confusing about that?\n"
+"**You**: So it's just another symbol for §2? \n"
 "\n"
-"**Scribble** (*to you*): Don't rack your brains over it. I suggest you just start with §9 "
-"here, then you'll see exactly what's being asked."
+"**Scribble**: Yes and no. §3 is “all of ℕ”, but understood as a *subset* of §4.\n"
+"\n"
+"Ext, Fin, Set, Sub and Mem are staring at you. \n"
+"\n"
+"**Set**: How can you possibly confuse §0 and §1?! \n"
+"Here *is* a *blueberry*, and it's *lying in* this *basket with all the blueberries*. \n"
+"It's not „lying in blueberry“.\n"
+"\n"
+"The children laugh.\n"
+"\n"
+"**Mem**: And in the same way, 5 *is* a natural number (§5), and it *lies in* the *set of all "
+"natural numbers §6* (§8). \n"
+"So what is so confusing?\n"
+"\n"
+"**Scribble** (*to you*): Don't rack your brains over it. \n"
+"I suggest you just start with §9, then you'll see exactly what the question is."
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Conclusion Robotswana L05"
 msgstr ""
-"**You**: I have a feeling we're on the trail of someone who's interested in the diagonal of "
-"matrices. But I'm starting to get thirsty!"
+"**You**: I have a feeling we're on the trail of someone who's interested in the diagonals of "
+"matrices. \n"
+"But I'm starting to get thirsty!"
 
 #. §0: `eq_sum_apply_diag_ebasis`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Use the result §0"
 msgstr "**Scribble**: The result you wanted to apply here was called §0."
 
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid "Prove intermediate result"
-msgstr "**Scribble**: And here you prove the intermediate result."
+msgstr "**Scribble**: And now you prove the intermediate result."
 
 #: Game.Levels.Implis.L07_Symm
-#, fuzzy
 msgid "Conclusion Implis L07"
-msgstr "**Head of Operations**: That was simple. But the next problem looks more difficult."
+msgstr ""
+"**Head of Operations**: Indeed, that was simple. But the next problem looks more difficult."
 
 #. §0: `2`
 #. §1: `decide`
 #: Game.Levels.Prado.L01_prime_two
-#, fuzzy
 msgid ""
 "Because §0 is a concrete data and there is a algorithm to decide if a number is prime you can "
 "use §1"
 msgstr ""
-"**Scribble** *(whispering)*: It's quite simple. Because §0 is a specific number and there is "
-"an algorithm to determine whether a number is prime, you can simply use §1!"
+"**Scribble** *(whispering)*: This is easy. As §0 is a specific number and there is a known "
+"algorithm to determine whether a number is prime, you can simply use §1!"
 
 #: Game.Levels.Iso.L02_Inverse
-#, fuzzy
 msgid "Intro Iso L02"
-msgstr "**Isosoph**: … and now to the main point."
+msgstr "**Isosopher**: … and immediately move on to the main problem."
 
 #. §0: `have`
 #. §1: `suffices`
@@ -3852,54 +3906,55 @@ msgstr "**Isosoph**: … and now to the main point."
 #. §5: `revert`
 #. §6: `contrapose`
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid ""
 "Conclusion Spinoza L06: overview of planet's contents:\n"
 "§0, §1, §2, §3, §4, §5 (useful when applying\n"
 "§6 afterwards)."
 msgstr ""
-"**Scribble**: Well done! Here is an overview of what Benediktus showed us. | **Tactics** | "
-"**Purpose** | |:----------------|:-------------------------------------------------------| | "
-"§0 | Accept interim result | | §1 | Accept interim result |\n"
-"| §2 | Begin proof of contradiction | | §3 | Conclude proof of contradiction | | §4 | "
-"Contraposition | | §5 | Useful for applying §6 afterwards | "
+"**Scribble**: Well done! Here's an overview of what Benediktus showed us. \n"
+"\n"
+"\n"
+"| **Tactic** | **Purpose** | \n"
+"|:----------------|:-------------------------------------------------------| \n"
+"| §0 | Accept interim result | \n"
+"| §1 | Accept interim result |\n"
+"| §2 | Begin proof of contradiction | \n"
+"| §3 | Conclude proof of contradiction | \n"
+"| §4 | Contraposition | \n"
+"| §5 | Useful for applying §6 afterwards | "
 
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Use proof by contradiction"
-msgstr "**Scribble**: Here, too, I would start with evidence to the contrary."
+msgstr "**Scribble**: Here, again, I would try a proof by introduction."
 
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid "Intro Piazza L04"
 msgstr "**Sub:** I've already learnt something:"
 
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Intro Spinoza L01"
-msgstr "**Benedictus**: Here, take a look. I have prepared this for you."
+msgstr "**Benedictus**: Here, take a look. I have prepared something for you."
 
 #: Game.Levels.Piazza.L01_Mem__Set
-#, fuzzy
 msgid "Intro Piazza L01"
-msgstr "Fin: Yes, of course. This, for example."
+msgstr "**Fin:** Yes, of course. This, for example."
 
 #. §0: `cantor_diagonal`
 #. §1: `apply cantor_diagonal at «{hf}»`
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid "Use §0 as e.g. §1"
-msgstr "**You**: So use §0 here now? **Scribble**: Probably, for example with §1."
+msgstr ""
+"**You**: So here we use §0? \n"
+"\n"
+"**Scribble**: Probably.  For example with §1."
 
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid "Intro Logo L11"
 msgstr ""
-"Slowly, the queue is getting shorter. The next formal philosopher, also crocheting, has the "
+"Slowly, the queue is getting shorter. The next formalosopher, who is also knitting, has the "
 "following concern."
 
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "So far so good"
 msgstr "**Scribble**: So far, so good."
 
@@ -3909,29 +3964,35 @@ msgstr "**Scribble**: So far, so good."
 #. §3: `Fin 0`
 #. §4: `simp [«{h}»] at «{i}»`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Put §0 into §1 to show triviality because there is no §2 in §3. Try §4"
 msgstr ""
-"**Scribble**: And now you probably want to insert §0 into §1 and realise that the statement "
-"becomes trivial because there is no §2 in §3. In this case, you can use §4 for insertion."
+"**Scribble**: And now you probably want to substitute §0 into §1 and realise that the "
+"statement becomes trivial because there is no §2 in §3. \n"
+"Here, you can use §4 for the substitution."
 
 #. §0: `contradiction`
 #: Game.Levels.Logo.L07_Contradiction
-#, fuzzy
 msgid "Conclusion Logo L07: There is §0 in assumptions"
 msgstr ""
-"The first troublemaker seems satisfied. **You**: Was that a proof of contradiction? "
-"**Scribble**: No, no, a proof of contradiction looks different. The argument here was: we have "
-"a §0 in our assumptions, so any statement follows."
+"The first troublemaker seems satisfied. \n"
+"\n"
+"**You**: Was that a proof by contradiction? \n"
+"\n"
+"**Scribble**: No, no, not at all.  A proof by contradiction looks different. The argument here "
+"was: we have a §0 in our assumptions, from which any statement follows."
 
 #: Game.Levels.Iso.L02_Inverse
-#, fuzzy
 msgid "Conclusion Iso L02"
 msgstr ""
-"The Isosophs seem very satisfied. **Scribble**: Can we capsule again now? **Isosoph**: Sure! "
-"But let's take it one step at a time. Since we started using the capsules in both directions, "
-"accidents have been on the rise again. Scribble will make three more round trips. Then you can "
-"continue your journey."
+"The isosophers seem very satisfied indeed. \n"
+"\n"
+"**Scribble**: Could we … capsulate once more now? \n"
+"\n"
+"**Isosopher**: Sure! But only one person at a time. \n"
+"Since we started using the capsules in both directions, accidents have been on the rise "
+"again. \n"
+"\n"
+"Scribble makes three more round trips. Then you can continue your journey."
 
 #. §0: `f : A → B`
 #. §1: `preimage f : Set B → Set A`
@@ -3939,78 +4000,81 @@ msgstr ""
 #. §3: `f ⁻¹' A`
 #. §4: `f`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0, §1\n"
 "is one of the induced mappings on the power sets –\n"
 "it maps a subset of §2 to the preimage §3 of this subset under §4."
 msgstr ""
-"For a mapping §0, §1 is one of the induced mappings onto the power sets – it maps a subset of "
-"§2 onto the preimage §3 of this subset under §4."
+"For a map §0, the map §1 is one of the induced maps between the power sets – it takes a subset "
+"of §2 to the preimage §3 of this subset under §4."
 
 #. §0: `simp`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "§0 can used always"
-msgstr "**Scribble**: You can always give §0 a try."
+msgstr "**Scribble**: You can always try §0."
 
 #. §0: `push_neg`
 #. §1: `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
 #. §2: `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`
 #. §3: `push_neg`
 #: Game.Levels.Quantus.L08_PushNeg
-#, fuzzy
 msgid ""
 "Conclusion Quantus L08: §0 internally uses §1\n"
 "and §2. Memorize §3."
 msgstr ""
-"**Scribble**: Well done. Internally, §0 uses two lemmas, by the way: - §1 - §2 The first lemma "
-"is the statement you just proved. **You**: Great. So I proved the statement by using it... "
-"**Scribble**: :-) The main thing is that you remember §3."
+"**Scribble**: Well done! By the way, internally, §0 uses two lemmas: \n"
+"\n"
+"* §1\n"
+"* §2\n"
+"\n"
+"The first lemma is the statement you just proved. \n"
+"\n"
+"**You**: Wonderful. So I have proved the statement by using it … \n"
+"\n"
+"Scribble grins.\n"
+"\n"
+"**Scribble**: The main thing is that you remember §3."
 
 #. §0: `push_neg at «{h}»`
 #: Game.Levels.Quantus.L10_DrinkersParadox
-#, fuzzy
 msgid "Continue with §0"
 msgstr "**Scribble**: You could continue here with §0."
 
 #. §0: `«{b}» = a`
 #: Game.Levels.Piazza.L13_insert_erase
-#, fuzzy
 msgid "Try proof by cases, if §0"
-msgstr "Fin: Make a distinction between whether §0 is or is not."
+msgstr "**Fin**: Why don't you distinguish the case where §0 from the case where it's not?"
 
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid "Try Assumption tactic"
-msgstr "**Scribble**: You have proof of this in the *assumptions*."
+msgstr "**Scribble**: You have a proof of this in the *assumptions*."
 
 #. §0: `rw`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "Intro Implis L10: §0 is not allowed here as well"
 msgstr ""
-"**Head of Operations**: This is for my limited colleague again. I don't think he likes §0 "
-"either. Is that okay?"
+"**Head of Operations**: This is for my rather limited colleague again. \n"
+"I don't think he likes §0 either. Can you manage without?"
 
 #: Game.Levels.Quantus.L07_Forall
-#, fuzzy
 msgid "Intro Quantus L07"
-msgstr "After a lengthy period of confusion, the following task from the set comes to you."
+msgstr ""
+"After a loud and lengthy discussion, the following problem appears from somewhere within the "
+"crowd."
 
 #: Game.Levels.Robotswana
-#, fuzzy
 msgid "Robotswana"
-msgstr "Robotswana"
+msgstr "Ethiopia"
 
 #. §0: `∀ (y : «{People}»), «{isDrinking}» y`
 #: Game.Levels.Quantus.L10_DrinkersParadox
-#, fuzzy
 msgid "Try proof by case for §0"
 msgstr ""
-"**You**: So how do I get started? **Scribble**: I told you, it's best to check your reference "
-"library. If I remember correctly, a case distinction helps to determine whether the statement "
-"§0 is true or false."
+"**You**: So how do I approach this? \n"
+"\n"
+"**Scribble**: As I said, this is a classic. Did you now bring along your library? \n"
+"If I remember correctly, it helps to distinguish the case where §0 holds from the case where "
+"it does not."
 
 #. §0: `n`
 #. §1: `x ↦ x ^ n`
@@ -4018,28 +4082,24 @@ msgstr ""
 #. §3: `Odd.strictMono_pow h_odd`
 #. §4: `h_odd.strictMono_pow`
 #: Game.Levels.Mono.L05_StrictMono
-#, fuzzy
 msgid ""
 "Für ungerades §0 ist §1 strikt monoton.\n"
 "\n"
 "*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben."
 msgstr ""
-"For odd §0, §1 is strictly monotonic. *Note*: If §2 is assumed, then §4 can simply be written "
-"instead of §3."
-
-#. §0: `obtain`
-#: Game.Levels.Logo.L14_Summary
-#, fuzzy
-msgid "Divide «{h}» with §0"
-msgstr "**Scribble**: Here, I would split the assumption \"{h}\" again with §0."
+"For odd §0, the map §1 is strictly monotonic. \n"
+"\n"
+"*Note*: Given the assumption §2, you can write §3 as §4."
 
 #. §0: `have hB : B`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Try holding onto §0"
 msgstr ""
-"**Head of Operations**: Well, *I* would stick with §0 for now. **Scribble**: A bit unnecessary "
-"for my taste. But okay, we can do that. **Scribble** *(to you)*: Go on, give it a try!"
+"**Head of Operations**: Well, *I* would explicitly spell out §0 at this point. \n"
+"\n"
+"**Scribble**: A bit verbose for my taste. But okay, we can do that. \n"
+"\n"
+"**Scribble** *(to you)*: Go on, give it a try!"
 
 #. §0: `diag`
 #. §1: $a$
@@ -4047,72 +4107,79 @@ msgstr ""
 #. §3: $a$
 #. §4: $a ↦ (a,…,a)$
 #: Game.Levels.Mono.L04_Diagonal
-#, fuzzy
 msgid ""
 "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\n"
 "In the former intepretation this is the mapping §4."
 msgstr ""
-"**You**: Or maybe not. Can you please explain that again? **Scribble**: The mapping §0 sends "
-"an element §1 to the mapping that maps *every* index §2 to §3. In your interpretation, that is "
-"the mapping §4."
+"**You**: Or maybe not. Could perhaps explain once more what's happening here? \n"
+"\n"
+"**Scribble**: The map §0 sends an element §1 to the map that sends *every* index §2 to §3. In "
+"your interpretation, that's simply the map §4."
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Try ext, tauto"
-msgstr "**Scribble**: From here on, the pattern from earlier should work again."
+msgstr "**Scribble**: From here, everything should work out as before."
 
-#. §0: `consturctor`
+#. §0: `constructor`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-#, fuzzy
 msgid "Try to start with §0"
 msgstr "**Scribble**: I would start with §0."
 
 #: Game.Levels.Quantus
-#, fuzzy
 msgid "Intro Quantus"
 msgstr ""
-"A large gathering of formal philosophers is already waiting for you on Quantus. They are all "
-"talking wildly at once and you are having trouble making yourself heard. Scribble finally "
-"produces a loud gong sound, which briefly silences them.\n"
+"A large gathering of formalosophers is already awaiting you on Quantus. \n"
+"They are all talking at once and you are have trouble making yourself heard. \n"
+"Scribble finally produces a loud gong sound, which briefly silences them. \n"
 "\n"
-"**You**: We have a letter for your queen. Could you take us to her? **All** *(in unison)*: "
-"We're all here! **You**: Okay. Which one of you is the queen? An awkward silence ensues. "
-"Everyone shrugs their shoulders.\n"
+"**You**: We have a letter for your queen. Could you take us to her? \n"
 "\n"
-"**You**: Do you even have a queen? **All** *(in unison)*: Yes, yes. We have a queen, we have a "
-"queen. **Scribble** *(to you)*: Let me summarise. There is a queen, but no one knows who she "
-"is... **You**: Isn't that a contradiction?\n"
+"**All** *(in unison)*: We're all here! \n"
 "\n"
-"**Scribble**: Are you asking that as a mathematician? No, it's not a contradiction. It's "
-"simply a \"pure statement of existence\". You're not quite sure how serious he is. **You**: "
-"Then I suggest we simply hand the parcel over to *all* the residents. Then we will have handed "
-"it over to the queen in particular.\n"
+"**You**: Okay. So which one of you is the queen? \n"
 "\n"
-"**You** *(to the crowd)*: We have brought you a package from Implis. Here, this is for you. "
-"Scribble throws it into the crowd, and the formal philosophers tear it open. In fact, there is "
-"only a single piece of paper inside. After a few minutes, it is back with you. And the formal "
-"philosophers all look curiously at how you handle it."
+"An awkward silence ensues. Everyone shrugs their shoulders.\n"
+"\n"
+"**You**: Do you have a queen? \n"
+"\n"
+"**All** *(in unison)*: Yes, yes. We have a queen, we have a queen. \n"
+"\n"
+"**Scribble** *(to you)*: Let me summarise. There is a queen, but no one knows who she is … \n"
+"\n"
+"**You**: Isn't that a contradiction?\n"
+"\n"
+"**Scribble**: Seriously? You as a mathematician call that a contradiction? \n"
+"It's not a contradiction. It's simply a “pure statement of existence”. \n"
+"\n"
+"Now you're unsure how serious *he* is. \n"
+"\n"
+"**You**: In that case, I suggest we simply hand the parcel over to *all* the residents. \n"
+"Then, in particular, we will have handed it over to the queen.\n"
+"\n"
+"**You** *(to the crowd)*: We have brought you a package from Implis. \n"
+"Here, this is for you. \n"
+"\n"
+"Scribble throws it into the crowd, and the formalosophers tear it open. \n"
+"It turns out there is only a single piece of paper inside. \n"
+"After a few minutes, it is back with you. \n"
+"And the formalosophers are all looking curiously at you, to see how you will handle it."
 
 #: GameServer.RpcHandlers
-#, fuzzy
 msgid "level completed! 🎉"
-msgstr "Level completed! 🎉"
+msgstr "– Problem solved! –"
 
 #. §0: `«{B}»`
 #. §1: `¬«{B}»`
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Finish proof by stating contradiction between §0 and §1"
-msgstr "**You**: Ah, and now I can simply say that assumptions §0 and §1 contradict each other."
+msgstr "**You**: Ah, and now I can simply note that assumptions §0 and §1 contradict each other."
 
 #. §0: `push_neg`
 #: Game.Levels.Quantus.L09_PushNeg
-#, fuzzy
 msgid "Instead of this theorem you can use §0."
 msgstr "Instead of this theorem, you can use §0."
 
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Conclusion Implis L04"
 msgstr "**Head of Operations**: You guys are really great!"
 
@@ -4131,7 +4198,6 @@ msgstr "**Head of Operations**: You guys are really great!"
 #. ```
 #. §8: `f`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid ""
 "Explain statement: given §0 for subset §1 of §2\n"
 "§3\n"
@@ -4139,13 +4205,15 @@ msgid ""
 "§7\n"
 "is the pre-image over §8,\n"
 msgstr ""
-"**Scribble**: I think I need to explain the notation here. We are obviously given a mapping "
-"§0. For a subset §1 of §2, §3 is its image under §4. And for a subset §5 of §6, §7 is its "
-"preimage under §8. "
+"**Scribble**: I think I need to explain the notation here. We are obviously given a map §0. "
+"For a subset §1 of §2, \n"
+"§3\n"
+"is its image under §4. And for a subset §5 of §6, \n"
+"§7\n"
+"is its preimage under §8. \n"
 
 #. §0: `apply congr_fun at h`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Specifically try §0"
 msgstr "**Scribble**: I meant §0."
 
@@ -4158,30 +4226,36 @@ msgstr "**Scribble**: I meant §0."
 #. §6: `\\|`
 #. §7: `\\dvd`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid ""
 "Intro Prado L02: Prove that §0 is only even prime by using the expression „§1 divides §2“.\n"
 "„§3 divides §4“ is written as §5, where the vertical bar can be either written as §6 or §7"
 msgstr ""
-"**You** *(whispering)*: Scribble, do you think we should tell him? **Scribble**: That §0 is "
-"the only even prime number? He won't believe it unless we show him proof. **You**: Don't you "
-"think we can show him? You know the language. Let's give it a try.  For example, how do I "
-"write \"§1 divides §2\"? **Scribble**: All right. So you write \"§3 divides §4\" as §5, "
-"whereby you have to write the vertical line as §6 or §7. Try this task here, for example."
+"**You** *(whispering)*: Scribble, don't you think we should tell him? \n"
+"\n"
+"**Scribble**: That §0 is the only even prime number? He won't believe it unless we show him "
+"proof. \n"
+"\n"
+"**You**: Well, perhaps we *can* show him a proof. \n"
+"You know the language. \n"
+"Let's give it a try. \n"
+"For example, how do I write “§1 divides §2”? \n"
+"\n"
+"**Scribble**: All right. \n"
+"You write “§3 divides §4“ as §5, with the vertical line spelled as §6 or §7. \n"
+"Try this problem here."
 
 #. §0: $A \\Rightarrow B \\Rightarrow C$
 #. §1: $A \\Rightarrow C$
 #. §2: `intro`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Combine implications §0 into §1. Try §2"
 msgstr ""
-"**You**: Should I combine implications §0 to §1? **Scribble**: Perhaps you should start again "
-"with §2?"
+"**You**: I'm supposed to combine implications §0 to §1? \n"
+"\n"
+"**Scribble**: Perhaps you should start with §2 again?"
 
 #. §0: `rw [← insert_erase «{ha}»]`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Try rewriting with §0"
 msgstr "**Scribble**: Try §0."
 
@@ -4193,7 +4267,6 @@ msgstr "**Scribble**: Try §0."
 #. §5: `contradiction`
 #. §6: `by_contra`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\n"
 "Such a contradiction can look like this, for example:\n"
@@ -4207,18 +4280,25 @@ msgid ""
 "Normally, §5 is used to conclude a proof by contradiction\n"
 "that was opened with §6."
 msgstr ""
-"Tactic §0 concludes the proof if it finds a contradiction in the assumptions. Such a "
-"contradiction could look like this, for example: * §1 * §2 and §3 * §4 ## Friends and "
-"relatives Normally, §5 is used to conclude a proof by contradiction that was opened with §6."
+"The tactic §0 concludes the proof if it finds a contradiction among the assumptions. Such a "
+"contradiction could take any of the following forms, to give just a few examples: \n"
+"\n"
+"* §1 \n"
+"* §2 and §3 \n"
+"* §4 \n"
+"\n"
+"## Friends and relations\n"
+"\n"
+"The tactic §5 is commonly used to conclude a proof by contradiction that was initiated with §6."
 
 #. §0: `symm`
 #. §1: `symm at «{h}»`
 #: Game.Levels.Implis.L07_Symm
-#, fuzzy
 msgid "Try §0 or §1 to turn one around"
 msgstr ""
-"**You**: That's just twisted. **Scribble**: I know a tool for that. With §0 or §1, you can "
-"flip one of the two."
+"**You**: That's just the wrong way round. \n"
+"\n"
+"**Scribble**: I know a tool for that. With §0 or §1, you can flip one of the two."
 
 #. §0: `«{h}»`
 #. §1: `s`
@@ -4226,18 +4306,17 @@ msgstr ""
 #. §3: `choose s hs using «{h}»`
 #. §4: `s`
 #: Game.Levels.Quantus.L04_Exists
-#, fuzzy
 msgid ""
 "Explain that from §0 follow that there is §1 such that §2. Try §3\n"
 "to introduce §4."
 msgstr ""
-"**You**: So from §0, I now know that §1 exists, so that §2 ... **Scribble**: With §3, you can "
-"actually introduce this §4."
+"**You**: So from §0, I now there is some §1 such that §2 … \n"
+"\n"
+"**Scribble**: You can conjure this §4 out of your hypothesis with §3."
 
 #. §0: `RightInverse`
 #. §1: `rw`
 #: Game.Levels.Iso.L02_Inverse
-#, fuzzy
 msgid "Use assumption §0 with §1"
 msgstr "**Scribble**: Here you can use the §0 assumption with §1."
 
@@ -4247,21 +4326,22 @@ msgstr "**Scribble**: Here you can use the §0 assumption with §1."
 #. §3: `a * b < a * c`
 #. §4: `b < c`
 #: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
-#, fuzzy
 msgid ""
 "Use §0 and the lemma §1.\n"
 "For the latter, given §2 it concludes from the assumption §3 that §4"
 msgstr ""
-"**You**: §0? **Scribble**: That could work. And you'll probably need the lemma §1. For §2, it "
-"draws the conclusion §4 from the assumption §3."
+"**You**: §0? \n"
+"\n"
+"**Scribble**: That could work. \n"
+"And you'll probably need the lemma §1: \n"
+"For §2 with §3, the lemma concludes §4."
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
 #. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid "Try §0 to rewrite §1 to §2"
-msgstr "**Scribble**: Would you like to rewrite §1 to §2 with §0?"
+msgstr "**Scribble**: Perhaps you would like to rewrite §1 to §2 using §0?"
 
 #. §0: `funext`
 #. §1: `funext x`
@@ -4269,65 +4349,53 @@ msgstr "**Scribble**: Would you like to rewrite §1 to §2 with §0?"
 #. §3: `f = g`
 #. §4: `f x = g x`
 #: Game.Levels.Vieta.L05_Funext
-#, fuzzy
 msgid "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4"
 msgstr ""
-"**You**: By definition, two mappings are equal if they have the same value when applied to "
-"every element ... **Scribble**: I have tactic §0 in store for that principle. With §1, you "
-"select any §2 and change the proof target from §3 to §4."
+"**You**: By definition, two maps are equal if they assume the same value on each element … \n"
+"\n"
+"**Scribble**: I have tactic in store for that principle: §0. \n"
+"With §1, you pick an arbitrary §2 and change the goal from §3 to §4."
 
 #. §0: `f`
 #. §1: `E i j`
 #. §2: `i≠j`
 #. §3: `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Use disappearing §0 in §1 with §2. Try §3"
 msgstr ""
-"**Scribble**: How far have you got now? **You**: I still need to somehow incorporate that §0 "
-"disappears with §1 and §2. **Scribble**: Why not take the following intermediate step: §3"
+"**Scribble**: How far are you? \n"
+"\n"
+"**You**: I still need to somehow incorporate the fact that §0 vanishes on all §1 with §2. \n"
+"\n"
+"**Scribble**: Why not formulate the following intermediate step: \n"
+"\n"
+"§3"
 
 #. §0: `decide`
 #. §1: `Even 42`
 #. §2: `decide`
 #: Game.Levels.Quantus.L03_Decide
-#, fuzzy
 msgid ""
 "Conclusion Quantus L03: Explain that §0 can show True/False for §1, if\n"
 "§2 possesses an algorithm for making this decision"
 msgstr ""
-"**You**: What else can §0 do? **Scribble**: Specifically, someone has provided an executable "
-"algorithm here for deciding whether §1 is true or false. So if §2 knows such an algorithm, it "
-"can solve the task."
+"**You**: What else can §0 do? \n"
+"\n"
+"**Scribble**: The tactic §0 knows a number of executable algorithms for deciding whether "
+"certain statements are true or false. \n"
+"You can probably guess such an algorithm for §1.  \n"
+"I'm sure we'll also come across other examples."
 
 #. §0: `IN_HINT 1`
 #: Game.Levels.Iso.L02_Inverse
-#, fuzzy
 msgid "§0 stroy"
 msgstr ""
-"**You**: A mapping is bijective if and only if there exists a mapping that is its inverse. "
-"That is essentially what we already showed in Epo and Mono. Did you remember those "
-"statements?\n"
+"**You**: A map is bijective if and only if it has an inverse. \n"
+"That is essentially what we already showed on Epo and on Mono. \n"
+"Did you bring along those proofs?\n"
 "\n"
-"**Scribble**: Yes, but I think if we unpack them here, eyebrows will be raised. Let's think "
-"carefully and remember how it worked."
-
-#. §0: `by_cases h : Even n`
-#. §1: `Even x ∨ ¬Even x`
-#. §2: `tauto`
-#. §3: ```
-#. rw [← Nat.not_odd_iff_even]
-#. ```
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
-msgid ""
-"§0 would lead you to your goal. Note that §1 is a tautology.\n"
-"To apply §2 it has to be abstracted e.g. with\n"
-"§3\n"
-msgstr ""
-"**You**: And now §0? **Scribble**: Yes, that would achieve the goal. But actually, §1 is a "
-"tautology. For §2 to recognise them, you just have to abstract them accordingly. That could be "
-"done here, for example, with: §3 "
+"**Scribble**: Yes. But I think unpacking them here will raise eyebrows. \n"
+"Let's rather reproduce them step by step."
 
 #. §0: `funext x`
 #: Game.Levels.Vieta.L06_Piecewise
@@ -6223,47 +6291,50 @@ msgstr ""
 msgid "Use §0 again"
 msgstr "**Scribble**: And now back to §0."
 
+#. §0: `simp [f, g]`
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "[Vieta] Try §0 (again)"
+msgstr "**Scribble**: §0, once again."
+
 #: Game.Levels.Logo.L05_True
-#, fuzzy
 msgid "Intro Logo L05"
-msgstr "The next subject in line is a rogue."
+msgstr "The next subject in the queue is a rascal."
 
 #. §0: `trans`
 #. §1: `trans ∑ j : Fin «{n}», f (E i i)`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Try §0 several times. Start with §1"
 msgstr ""
-"**Scribble**: If I understand you correctly, you now want to apply §0 several times, starting "
+"**Scribble**: If I understood correctly, you now want to invoke §0 several times, starting "
 "with §1."
 
 #. §0: $\\sum_{i=-n}^«{n}» i = 0$
 #. §1: `insert_Icc_eq_Icc_add_one_right`
 #. §2: `insert_Icc_eq_Icc_sub_one_left`
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#, fuzzy
 msgid "Prove §0 by using §1, §2"
 msgstr ""
-"**You**: §0 – yes, that looks correct. **Scribble**: It should also be provable in exactly the "
-"same way as the Gaussian sum ... except that you will probably need §2 as well as §1."
+"**You**: §0 – yes, that looks correct. \n"
+"\n"
+"**Scribble**: The proof should work in exactly the same way as for the Gaussian sum … except "
+"that you will probably need §2 in addition to §1."
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid "Conclusion Samarkand L01"
 msgstr "**Arapuka**: Nice."
 
 #. §0: `by_cases`
 #: Game.Levels.Quantus.L10_DrinkersParadox
-#, fuzzy
 msgid "Look at §0"
-msgstr "**Scribble**: Take a look at §0."
+msgstr "**Scribble**: Remember §0."
 
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid "Conclusion Robotswana L06"
 msgstr ""
-"**Scribble**: I think we'll go with the assumption that commutators are being eliminated for "
-"now. **You**: Great. Did I mention that I'm starting to get thirsty?"
+"**Scribble**: It seems the assumption that commutators are eliminated will stick around for a "
+"while. \n"
+"\n"
+"**You**: Great. Did I mention I'm getting thirsty?"
 
 #. §0: `A : Set T`
 #. §1: `A`
@@ -6271,59 +6342,49 @@ msgstr ""
 #. §3: `A`
 #. §4: `T`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means that §1 is a subset of §2\n"
 "(or, more precisely, that §3 is a set consisting of elements of type §4)."
 msgstr ""
-"§0 means that §1 is a subset of §2 (or, more precisely, that §3 is a set consisting of "
-"elements of type §4)."
+"§0 means that §1 is a subset of §2 (or  that §3 is a set consisting of elements of type §4)."
 
 #. §0: `Injective f`
 #. §1: `a ≠ b → f a ≠ f b`
 #. §2: `Injective.ne_iff`
 #. §3: `f a ≠ f b ↔ a ≠ b`
 #: Game.Levels.Mono.L02_InjectiveNeIff
-#, fuzzy
 msgid ""
 "Use short cut by instead of the definition of §0 using equivalent description\n"
 "§1. In Leanic it is part of §2. For injective mapping it holds\n"
 "that §3"
 msgstr ""
-"**Scribble**: Here you can take a shortcut by using the equivalent description §1 of "
-"injectivity instead of the definition in §0. In Leansch, this is part of §2: §3 applies to "
-"injective mappings."
+"**Scribble**: Here you can take a shortcut by using the equivalent description §1 of §0 rather "
+"than the definition. In Leanish, this is part of §2, which says §3 for injective maps."
 
 #: Game.Levels.Mono.L05_StrictMono
-#, fuzzy
 msgid "Every strictly monotonic mapping (between suitable domains and ranges) is injective."
-msgstr "Every strictly monotonic mapping (between suitable domains and ranges) is injective."
+msgstr "Every strictly monotonic map (between suitable domains and ranges) is injective."
 
 #: Game
-#, fuzzy
 msgid ""
 "This game illustrates reasoning with Lean using various topics from the introductory phase of "
 "the bachelor's degree program in mathematics."
 msgstr ""
-"This game illustrates reasoning with Lean using various topics from the introductory phase of "
-"the Bachelor's degree programme in Mathematics."
+"This game illustrates reasoning with Lean using various topics from the first year of a "
+"typical Bachelor's degree programme in Mathematics."
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
 #. §2: `push_neg`
 #: Game.Levels.Epo.L02_CurrySurjective
-#, fuzzy
 msgid "Try §0 | §1, §2"
-msgstr ""
-"**Scribble**: You could start with §0, or you could start with §1 and then see if §2 helps you "
-"further."
+msgstr "**Scribble**: You could start with §0, or you could start with §1 and then try §2."
 
 #. §0: `ext`
 #. §1: `Subset.antisymm_iff`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Start with §0 or §1"
-msgstr "**Scribble**: Perhaps you could start again with §0. Or with §1."
+msgstr "**Scribble**: Perhaps you could start with §0 again. Or with §1."
 
 #. §0: `«{A}» «{B}» «{C}» : Prop`
 #. §1: `«{A}»`
@@ -6333,17 +6394,24 @@ msgstr "**Scribble**: Perhaps you could start again with §0. Or with §1."
 #. §5: $⇒$
 #. §6: `tauto`
 #: Game.Levels.Logo.L01_Tauto
-#, fuzzy
 msgid ""
 "Explain that §0 introduces statements §1, §2 und §3 as\n"
 "propositions. The symbol §4 is equivalent to the implication symbol §5. Try §6."
 msgstr ""
-"**Scribble**: It's quite simple. By §0, she means: §1, §2 and §3 are any statements "
-"(*propositions*). And by §4, she means §5, i.e. \"implies\". You know the other symbols, "
-"right? **You**: Um, yes. But I still need to think about it first.\n"
+"**Scribble**: It's quite simple. \n"
+"By §0, she means: §1, §2 and §3 are arbitrary statements (or *prop*ositions). \n"
+"And by §4, she means §5, i.e. “implies”. \n"
+"You know the other symbols, don't you? \n"
 "\n"
-"**Scribble**: (whispering) Just claim that it's a tautology. **You**: Seriously? **Scribble**: "
-"Yes. Just write §6. **Scribble**: Come on..."
+"**You**: Um, yes. But I still need to think about it.\n"
+"\n"
+"**Scribble** *(whispering)*: Just claim it's a tautology. \n"
+"\n"
+"**You**: Seriously? \n"
+"\n"
+"**Scribble**: Yes. Just write §6. \n"
+"\n"
+"**Scribble**: Come on …"
 
 #: Game.Levels.Cantor.L02_CantorPowerset
 #, fuzzy
@@ -6896,6 +6964,13 @@ msgid "Explain §0 and §1 in statement §2"
 msgstr ""
 "**You**: So, §0 is another predicate ... If §1 is a person, §2 is a statement that is either "
 "true or false. So far, so good."
+
+#. §0: `tauto`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+#, fuzzy
+#| msgid "Piazza"
+msgid "[Piazza] §0"
+msgstr "Piazza"
 
 #. §0: `f : A → A`
 #. §1: `fixedPoints f : Set A`
@@ -8788,6 +8863,27 @@ msgstr ""
 #, fuzzy
 msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr "First, show that §0 is the legal inverse of §1, i.e. §2, for example."
+
+#~ msgid ""
+#~ "§0 would lead you to your goal. Note that §1 is a tautology.\n"
+#~ "To apply §2 it has to be abstracted e.g. with\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**You**: And now §0? \n"
+#~ "\n"
+#~ "**Scribble**: Yes, that would work. \n"
+#~ "But actually, §1 is a tautology. \n"
+#~ "For §2 to recognise it as such, \n"
+#~ "you just need to abstract accordingly. \n"
+#~ "In this particular example, you could use: \n"
+#~ "§3 \n"
+
+#, fuzzy
+#~ msgid "Divide «{h}» with §0"
+#~ msgstr "**Scribble**: Here, I would split the assumption \"{h}\" again with §0."
+
+#~ msgid "Try §0 §1"
+#~ msgstr "**Scribble**: Once again §0."
 
 #, fuzzy
 #~ msgid "Divide assumption «{h}» using §0"

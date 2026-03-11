@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09\n"
+"POT-Creation-Date: 2026-03-11\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: Game.Levels.Samarkand.L02_ImageMap
 msgid "Intro Samarkand L02"
@@ -194,6 +194,26 @@ msgstr ""
 msgid "Conclusion Samarkand L05"
 msgstr ""
 "Arapuka liegt immer noch ganz regungslos, aber sie sieht glücklich aus."
+
+#. §0: `by_cases h : Even «{n}»`
+#. §1: `not_odd_iff_even`
+#. §2: `not_even_iff_odd`
+#. §3: `¬Odd ««{n}»» ∨ Odd ««{n}»»`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+msgid ""
+"One option: §0.\n"
+"But in any case, will need §1\n"
+"(or §2) at some point,\n"
+"so might as well start with it\n"
+"and obtain tautology §3."
+msgstr ""
+"**Du**: Und jetzt §0?\n"
+"\n"
+"**Robo**: Ja, das würde zum Ziel führen.\n"
+"Aber so oder so musst du früher oder später vermutlich §1 (oder §2) "
+"benutzen.  \n"
+"Du kannst genauso gut damit anfangen, und dann erhältst du mit §3 eine "
+"Tautologie."
 
 #. §0: `Function.RightInverse f g`
 #. §1: `LeftInverse g f`
@@ -1156,6 +1176,12 @@ msgstr ""
 "**Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  "
 "Schonmal gehört, glaube ich …"
 
+#. §0: `«{h}»`
+#. §1: `obtain`
+#: Game.Levels.Logo.L14_Summary
+msgid "Split §0 once more with §1"
+msgstr "**Robo**: Ich würde §0 noch einmal mit §1 zerlegen."
+
 #. §0: $I \\subseteq \\{-1,0,1\\}$
 #. §1: `trans ∑ i ∈ I, 0`
 #. §2: `\\sum`
@@ -1407,7 +1433,7 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
-msgstr "Level mit Warnungen abgeschlossen… 🎭"
+msgstr "– Aufgabe gelöst!  Aber nicht ganz so wie gedacht. –"
 
 #: Game.Levels.Euklid.L01_prod_pos
 msgid "The expression itself seems to be correct"
@@ -4004,7 +4030,7 @@ msgstr "**Arapuka**:  Ihr seid wirklich eine große Hilfe!"
 #. h : ∃ (b : B), P b
 #. ```
 #. §1: `choose b hb using h`
-#. §2: `b : A`
+#. §2: `b : B`
 #. §3: `hb : P b`
 #. §4: `choose`
 #. §5: ```
@@ -4096,12 +4122,6 @@ msgstr ""
 "(Außerhalb vom Spiel ist allerdings die mehrzeilige Taktik §10 besser für "
 "derartige Rechnungen geeignet.)"
 
-#. §0: `simp [f, g]`
-#. §1: `VIETA_SECOND`
-#: Game.Levels.Vieta.L06_Piecewise
-msgid "Try §0 §1"
-msgstr "**Robo**: Nochmals §0."
-
 #: Game.Levels.Implis.L01_Intro
 msgid "Conclusion Implis L01"
 msgstr ""
@@ -4158,12 +4178,13 @@ msgstr ""
 "Ext, Fin, Set, Sub und Mem sehen euch groß an.\n"
 "\n"
 "**Set**:  Das kann man doch gar nicht verwechseln!  Hier *ist* eine "
-"Blaubeere, das hier ist der *Korb mit allen Blaubeeren*, und die Beere "
-"*liegt in* diesem Korb.\n"
+"*Blaubeere*, und sie *liegt in* diesem *Korb mit allen Blaubeeren*.  "
+"Natürlich liegt sie nicht „in Blaubeere“.\n"
 "\n"
-"**Mem**:  Und genauso *ist* 5 eine natürlich Zahl (§5), §6 ist die *Menge "
-"aller natürlicher Zahlen*, und §7 *liegt in* dieser Menge (§8). Was ist "
-"daran verwirrend?\n"
+"Die Kinder lachen.\n"
+"\n"
+"**Mem**:  Genauso *ist* 5 eine natürlich Zahl (§5), und sie liegt in der "
+"*Menge §6 aller natürlicher Zahlen* (§8). Was ist daran verwirrend?\n"
 "\n"
 "**Robo** (*zu dir*):  Zerbrich dir nicht den Kopf darüber. Ich schlage vor, "
 "du fängst hier einfach mal mit §9 an, dann siehst du genau, was gefragt ist."
@@ -4339,14 +4360,17 @@ msgid ""
 msgstr ""
 "**Robo**: Gut gemacht. Intern benutzt §0 übrigens zwei Lemmas:\n"
 "\n"
-"- §1 - §2\n"
+"* §1 \n"
+"* §2\n"
 "\n"
 "Das erste Lemma ist die Aussage, die du gerade gezeigt hast.\n"
 "\n"
 "**Du**: Na toll. Ich habe die Aussage also gezeigt, indem ich sie benutzt "
 "habe …\n"
 "\n"
-"**Robo**: :-) Hauptsache, Du merkst dir §3."
+"Robo grinst.\n"
+"\n"
+"**Robo**: Hauptsache, du merkst dir §3."
 
 #. §0: `push_neg at «{h}»`
 #: Game.Levels.Quantus.L10_DrinkersParadox
@@ -4405,11 +4429,6 @@ msgstr ""
 "*Bemerkung*:\n"
 "Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben."
 
-#. §0: `obtain`
-#: Game.Levels.Logo.L14_Summary
-msgid "Divide «{h}» with §0"
-msgstr "**Robo**: Hier würde ich die Annahme «{h}» nochmals mit §0 aufteilen."
-
 #. §0: `have hB : B`
 #: Game.Levels.Implis.L04_Apply
 msgid "Try holding onto §0"
@@ -4444,7 +4463,7 @@ msgstr ""
 msgid "Try ext, tauto"
 msgstr "**Robo**: Ab hier müsste das Schema von eben wieder passen."
 
-#. §0: `consturctor`
+#. §0: `constructor`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
 msgid "Try to start with §0"
 msgstr "**Robo**: Ich würde mal mit §0 anfangen."
@@ -4494,7 +4513,7 @@ msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
-msgstr "Level abgeschlossen! 🎉"
+msgstr "– Aufgabe gelöst! –"
 
 #. §0: `«{B}»`
 #. §1: `¬«{B}»`
@@ -4507,7 +4526,7 @@ msgstr ""
 #. §0: `push_neg`
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Instead of this theorem you can use §0."
-msgstr "Statt diesem Theorem kannst du §0 verwenden."
+msgstr "Statt dieses Theorems kannst du §0 verwenden."
 
 #: Game.Levels.Implis.L04_Apply
 msgid "Conclusion Implis L04"
@@ -4719,11 +4738,12 @@ msgid ""
 "Conclusion Quantus L03: Explain that §0 can show True/False for §1, if\n"
 "§2 possesses an algorithm for making this decision"
 msgstr ""
-"**Du**: Was kann denn §0 noch alles?\n"
+"**Du**: Was kann §0 denn noch alles?\n"
 "\n"
-"**Robo**: Konkret hat hier jemand einen ausführbaren Algorithmus angegeben, "
-"wie entschieden werden soll, ob §1 wahr oder falsch ist. Wenn §2 also so "
-"einen Algorithmus kennt, dann kann es die Aufgabe lösen."
+"**Robo**: Die Taktik §0 kennt eine Reihe von ausführbaren Algorithmen, mit "
+"denen sich entscheiden lässt, ob gewisse Aussagen wahr oder falsch sind.  \n"
+"Bei §1 kannst du dir den Algorithmus wahrscheinlich denken.  \n"
+"Uns werden bestimmt noch andere Beispiele über den Weg laufen."
 
 #. §0: `IN_HINT 1`
 #: Game.Levels.Iso.L02_Inverse
@@ -4736,25 +4756,6 @@ msgstr ""
 "**Robo**:  Schon, aber ich glaube, wenn wir die hier auspacken, gehen die "
 "Augenbrauen nach oben. Lass uns lieber scharf nachdenken und uns erinnern, "
 "wie das ging."
-
-#. §0: `by_cases h : Even n`
-#. §1: `Even x ∨ ¬Even x`
-#. §2: `tauto`
-#. §3: ```
-#. rw [← Nat.not_odd_iff_even]
-#. ```
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-msgid ""
-"§0 would lead you to your goal. Note that §1 is a tautology.\n"
-"To apply §2 it has to be abstracted e.g. with\n"
-"§3\n"
-msgstr ""
-"**Du**: Und jetzt §0?\n"
-"\n"
-"**Robo**: Ja, das würde zum Ziel führen. Aber eigentlich ist §1 ja eine "
-"Tautologie. Damit §2 sie erkennt, musst du sie nur entsprechend "
-"abstrahieren. Das ginge hier zum Beispiel mit:\n"
-"§3\n"
 
 #. §0: `funext x`
 #: Game.Levels.Vieta.L06_Piecewise
@@ -6945,6 +6946,11 @@ msgstr ""
 msgid "Use §0 again"
 msgstr "**Robo**:  Und jetzt wieder §0."
 
+#. §0: `simp [f, g]`
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "[Vieta] Try §0 (again)"
+msgstr "**Robo**: Nochmal §0."
+
 #: Game.Levels.Logo.L05_True
 msgid "Intro Logo L05"
 msgstr "Der nächste Untertan in der Reihe ist ein Schelm."
@@ -7063,7 +7069,7 @@ msgstr ""
 "\n"
 "**Du**: Ehhm, ja. Aber da muss ich jetzt trotzdem erst einmal überlegen.\n"
 "\n"
-"**Robo**: (flüsternd) Behaupte doch einfach, dass sei eine Tautologie.\n"
+"**Robo** *(flüsternd)*: Behaupte doch einfach, dass sei eine Tautologie.\n"
 "\n"
 "**Du**: Ernsthaft?\n"
 "\n"
@@ -7666,6 +7672,14 @@ msgstr ""
 "**Du**: Also, §0 ist wieder so ein Prädikat … Wenn §1 eine Person ist, ist "
 "§2 eine Aussage, die wahr oder falsch ist. Soweit so gut."
 
+#. §0: `tauto`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+msgid "[Piazza] §0"
+msgstr ""
+"**Du**: Also jetzt einfach §0?\n"
+"\n"
+"**Robo**: Probier’s!"
+
 #. §0: `f : A → A`
 #. §1: `fixedPoints f : Set A`
 #. §2: `f `
@@ -7997,10 +8011,11 @@ msgstr "**Robo**: Und da das falsch ist, kannst du mit §0 und §1 weiterkommen.
 #: Game.Levels.Logo.L01_Tauto
 msgid "Conclusion Logo L01: Remind that §0 cannot be used"
 msgstr ""
-"**Logisinde**: (etwas konsterniert) Ja, das ist streng genommen richtig. "
+"**Logisinde** *(etwas konsterniert)*: Ja, das ist streng genommen richtig. \n"
 "Aber glaubt bloß nicht, dass Ihr damit auf *diesem* Planeten viel "
-"weiterkommt! Meine Untertanen verstehen §0 nicht. Da müsst Ihr Euch schon "
-"etwas mehr anstrengen."
+"weiterkommt! \n"
+"Meine Untertanen verstehen §0 nicht. \n"
+"Da müsst Ihr Euch schon etwas mehr anstrengen."
 
 #: Game.Levels.Mono.L05_StrictMono
 msgid "The next part is elementary"
@@ -9842,6 +9857,34 @@ msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr ""
 "Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
 "Beispiel §2"
+
+#~ msgid ""
+#~ "Now §0?\n"
+#~ "No, first §1:\n"
+#~ "§2"
+#~ msgstr ""
+#~ "**Du**:  Und jetzt also §0?\n"
+#~ "\n"
+#~ "**Robo**:  F"
+
+#~ msgid ""
+#~ "§0 would lead you to your goal. Note that §1 is a tautology.\n"
+#~ "To apply §2 it has to be abstracted e.g. with\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**Du**: Und jetzt §0?\n"
+#~ "\n"
+#~ "**Robo**: Ja, das würde zum Ziel führen. Aber eigentlich ist §1 ja eine "
+#~ "Tautologie. Damit §2 sie erkennt, musst du sie nur entsprechend "
+#~ "abstrahieren. Das ginge hier zum Beispiel mit:\n"
+#~ "§3\n"
+
+#~ msgid "Divide «{h}» with §0"
+#~ msgstr ""
+#~ "**Robo**: Hier würde ich die Annahme «{h}» nochmals mit §0 aufteilen."
+
+#~ msgid "Try §0 §1"
+#~ msgstr "**Robo**: Nochmals §0."
 
 #~ msgid "Divide assumption «{h}» using §0"
 #~ msgstr "**Robo**: Ich würd zuerst die Annahme «{h}» mit §0 aufteilen."

@@ -69,7 +69,7 @@ An assumption of the form
 ```
 h : ∃ (b : B), P b
 ```
-can be decomposed, using `choose b hb using h`, into the components `b : A` and `hb : P b`.
+can be decomposed, using `choose b hb using h`, into the components `b : B` and `hb : P b`.
 
 More generally, you can use `choose` to select elements using the choice axiom:
 from an assumption of the form

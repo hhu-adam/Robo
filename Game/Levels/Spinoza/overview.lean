@@ -10,8 +10,8 @@ open Nat Real
 -- good application of `generalize`:
 
 example (n : ℕ) : Even n ∨ Odd n := by
-  rw [not_even_iff_odd]
-  generalize Even n = A
+  rw [← not_even_iff_odd]
+  --generalize Even n = A  -- actually compiles now [v4.23] without `generalize`!
   tauto
 
 -- I cannot find a good easy example of a worthwhile application of `specialize`.

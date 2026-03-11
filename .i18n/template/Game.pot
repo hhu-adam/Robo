@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09\n"
+"POT-Creation-Date: 2026-03-11\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -123,6 +123,18 @@ msgstr ""
 
 #: Game.Levels.Samarkand.L05_InjectiveFibre
 msgid "Conclusion Samarkand L05"
+msgstr ""
+
+#. §0: `by_cases h : Even «{n}»`
+#. §1: `not_odd_iff_even`
+#. §2: `not_even_iff_odd`
+#. §3: `¬Odd ««{n}»» ∨ Odd ««{n}»»`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+msgid "One option: §0.\n"
+"But in any case, will need §1\n"
+"(or §2) at some point,\n"
+"so might as well start with it\n"
+"and obtain tautology §3."
 msgstr ""
 
 #. §0: `Function.RightInverse f g`
@@ -679,6 +691,12 @@ msgstr ""
 
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid "Explain that a mapping, which is left inverse ..."
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `obtain`
+#: Game.Levels.Logo.L14_Summary
+msgid "Split §0 once more with §1"
 msgstr ""
 
 #. §0: $I \\subseteq \\{-1,0,1\\}$
@@ -2684,7 +2702,7 @@ msgstr ""
 #. h : ∃ (b : B), P b
 #. ```
 #. §1: `choose b hb using h`
-#. §2: `b : A`
+#. §2: `b : B`
 #. §3: `hb : P b`
 #. §4: `choose`
 #. §5: ```
@@ -2737,12 +2755,6 @@ msgid "With §0, you insert an intermediate step into an equation or equivalence
 "performing a “calculation” §9 step by step.\n"
 "\n"
 "(Outside of the game, however, the multi-line tactic §10 is better suited for such calculations.)"
-msgstr ""
-
-#. §0: `simp [f, g]`
-#. §1: `VIETA_SECOND`
-#: Game.Levels.Vieta.L06_Piecewise
-msgid "Try §0 §1"
 msgstr ""
 
 #: Game.Levels.Implis.L01_Intro
@@ -2937,11 +2949,6 @@ msgid "Für ungerades §0 ist §1 strikt monoton.\n"
 "*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben."
 msgstr ""
 
-#. §0: `obtain`
-#: Game.Levels.Logo.L14_Summary
-msgid "Divide «{h}» with §0"
-msgstr ""
-
 #. §0: `have hB : B`
 #: Game.Levels.Implis.L04_Apply
 msgid "Try holding onto §0"
@@ -2961,7 +2968,7 @@ msgstr ""
 msgid "Try ext, tauto"
 msgstr ""
 
-#. §0: `consturctor`
+#. §0: `constructor`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
 msgid "Try to start with §0"
 msgstr ""
@@ -3130,19 +3137,6 @@ msgstr ""
 #. §0: `IN_HINT 1`
 #: Game.Levels.Iso.L02_Inverse
 msgid "§0 stroy"
-msgstr ""
-
-#. §0: `by_cases h : Even n`
-#. §1: `Even x ∨ ¬Even x`
-#. §2: `tauto`
-#. §3: ```
-#. rw [← Nat.not_odd_iff_even]
-#. ```
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-msgid "§0 would lead you to your goal. Note that §1 is a tautology.\n"
-"To apply §2 it has to be abstracted e.g. with\n"
-"§3\n"
-""
 msgstr ""
 
 #. §0: `funext x`
@@ -4421,6 +4415,11 @@ msgstr ""
 msgid "Use §0 again"
 msgstr ""
 
+#. §0: `simp [f, g]`
+#: Game.Levels.Vieta.L06_Piecewise
+msgid "[Vieta] Try §0 (again)"
+msgstr ""
+
 #: Game.Levels.Logo.L05_True
 msgid "Intro Logo L05"
 msgstr ""
@@ -4896,6 +4895,11 @@ msgstr ""
 #. §2: `«{isDrinking}» p`
 #: Game.Levels.Quantus.L10_DrinkersParadox
 msgid "Explain §0 and §1 in statement §2"
+msgstr ""
+
+#. §0: `tauto`
+#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
+msgid "[Piazza] §0"
 msgstr ""
 
 #. §0: `f : A → A`

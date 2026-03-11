@@ -56,7 +56,7 @@ Statement (A B C : Prop) (h : A ∨ (B ∧ C)) : (A ∨ B) ∧ (A ∨ C) := by
       assumption
   -- · Hint (hidden := true)
   --    "**Robo**: Hier würde ich die Annahme {h} nochmals mit `obtain` aufteilen."
-  · Hint (hidden := true) "Divide {h} with `obtain`"
+  · Hint (hidden := true) "Split `{h}` once more with `obtain`"
     Branch
       constructor
       /-
