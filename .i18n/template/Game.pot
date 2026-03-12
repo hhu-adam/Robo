@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11\n"
+"POT-Creation-Date: 2026-03-12\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3511,11 +3511,6 @@ msgstr ""
 msgid "Conclusion Robotswana L10"
 msgstr ""
 
-#. §0: `obtain h | h | h  := «{h}»`
-#: Game.Levels.Babylon.L04_sum_subset
-msgid "Divide «{h}» into three by §0"
-msgstr ""
-
 #: Game.Levels.Cantor.L04_fixedPoints_neg
 msgid "Conclusion Cantor L04"
 msgstr ""
@@ -4098,6 +4093,13 @@ msgstr ""
 #: Game.Levels.Spinoza.L05_Contrapose
 msgid "Refer back to §0 as §1 is equivalent in contrapoition to §2.\n"
 "Explain that lack of  §3 can be dealt with §4 via §5 for §6."
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `obtain`
+#. §2: `obtain h | h | h  := «{h}»`
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "[Babylon] Split §0 with §1: §2"
 msgstr ""
 
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter

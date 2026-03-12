@@ -99,7 +99,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       **Robo**:  Die Annahme {h} kannst du ja jetzt mit `obtain h | h | h  := {h}` in die drei Fälle aufteilen.
     "
     -/
-    Hint (hidden := true) "Divide {h} into three by `obtain h | h | h  := {h}`"
+    Hint (hidden := true) "[Babylon] Split `{h}` with `obtain`: `obtain h | h | h  := {h}`"
     obtain h | h | h  := h
     · rw [h]
       ring
