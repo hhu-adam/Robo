@@ -6,10 +6,6 @@ Level 4
 
 Title ""
 
-/-
-Introduction
-""
--/
 Introduction "Intro Cantor L04"
 /-
 Conclusion "

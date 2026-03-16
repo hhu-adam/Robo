@@ -255,13 +255,16 @@ DefinitionDoc Finset.Icc as "Icc"
 -- "
 
 /--
-`Nonempty T` means that an element in `T` (“of type `T`”) exists.
-If `h : Nonempty T` is given as an assumption, we obtain an element `t : T` with `obtain ⟨t⟩ := h`.
-Conversely, if we already have an element `t : T` given or constructed,
-we can prove `Nonempty T` with `use t`.
-
-Similarly, for a subset `A : Set T`, the statement `Nonemty A` is defined as `∃ x, x ∈ A`.
-In this case, you can easily check this with `unfold Nonempty`.
+[Doc.Definition] Nonempty
+`Nonempty`
+for `T`, `T : Type`, `Nonempty T` means T is non-empty
+for `A`, `A : Set T`, `Nonempty A` means `∃ x, x ∈ A`; check this with `unfold Nonempty`
+As goal:
+given `t`, `t : T`, use `use t`
+given `a`, `a : T` such that `a ∈ A`, `ha : a ∈ A`, use `use a`
+As assumption:
+given `h : Nonempty T`, use `obtain ⟨t⟩ := t` to obtain `t`, `t : T`
+given `h : Nonempty A`, use `obtain ⟨a, ha⟩ := h` to obtain `a`, `a : T`, `a ∈ A`, `ha : a ∈ A`
 -/
 DefinitionDoc Nonempty as "Nonempty"
 /-

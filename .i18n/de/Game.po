@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12\n"
+"POT-Creation-Date: 2026-03-16\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -1868,6 +1868,65 @@ msgstr ""
 "\n"
 "**Robo**: Meinst du, dieser Hebel, an dem „Editor mode“ steht, ist echt? "
 "Oder ist der nur gemalt? Probier mal!"
+
+#. §0: `Nonempty`
+#. §1: `T`
+#. §2: `T : Type`
+#. §3: `Nonempty T`
+#. §4: `A`
+#. §5: `A : Set T`
+#. §6: `Nonempty A`
+#. §7: `∃ x, x ∈ A`
+#. §8: `unfold Nonempty`
+#. §9: `t`
+#. §10: `t : T`
+#. §11: `use t`
+#. §12: `a`
+#. §13: `a : T`
+#. §14: `a ∈ A`
+#. §15: `ha : a ∈ A`
+#. §16: `use a`
+#. §17: `h : Nonempty T`
+#. §18: `obtain ⟨t⟩ := t`
+#. §19: `t`
+#. §20: `t : T`
+#. §21: `h : Nonempty A`
+#. §22: `obtain ⟨a, ha⟩ := h`
+#. §23: `a`
+#. §24: `a : T`
+#. §25: `a ∈ A`
+#. §26: `ha : a ∈ A`
+#: Game.Doc.Definition
+msgid ""
+"[Doc.Definition] Nonempty\n"
+"§0\n"
+"for §1, §2, §3 means T is non-empty\n"
+"for §4, §5, §6 means §7; check this with §8\n"
+"As goal:\n"
+"given §9, §10, use §11\n"
+"given §12, §13 such that §14, §15, use §16\n"
+"As assumption:\n"
+"given §17, use §18 to obtain §19, §20\n"
+"given §21, use §22 to obtain §23, §24, §25, §26"
+msgstr ""
+"Für eine Menge (genauer: einen “Typ”) §1 bedeutet §3, dass ein Element in §1 "
+"(„vom Typ §1“) existiert.\n"
+"Genauso ist für eine Teilmenge §5 der Ausdruck §6 gleichbedeutend mit §7.  "
+"Letzteres kannst du leicht mit §8 prüfen.\n"
+"\n"
+"## §0 als Beweisziel\n"
+"\n"
+"Hast du ein Element §10 bereits gegeben oder konstruiert, kannst du §3 mit "
+"§11 beweisen.\n"
+"Genauso beweist du, wenn dir ein Element §12 mit §14 vorliegt, §6 mit §16 "
+"beweisen.\n"
+"\n"
+"\n"
+"## §0 als Annahme\n"
+"\n"
+"Für eine Menge §1 extrahierst du aus der Annahme §17 mit §18 ein §20.\n"
+"Für eine Teilmenge §5 extrahierst du aus der Annahme §21 mit §22 ein §23 mit "
+"der Eigenschaft §26."
 
 #. §0: `IsEmpty.false`
 #. §1: `M`
@@ -5445,7 +5504,7 @@ msgid ""
 "\n"
 "§1"
 msgstr ""
-"Eine Abbildung §0 ist surjektiv, wenn gilt:\n"
+"Eine Abbildung §0 ist genau dann surjektiv, wenn gilt:\n"
 "\n"
 "§1"
 
@@ -5684,37 +5743,6 @@ msgstr "**Robo**:  Das kann man bestimmt leicht vereinfachen …"
 #: Game.Doc.Definition
 msgid "§0 is the closed interval §1."
 msgstr "§0 ist das geschlossene Intervall §1."
-
-#. §0: `Nonempty T`
-#. §1: `T`
-#. §2: `T`
-#. §3: `h : Nonempty T`
-#. §4: `t : T`
-#. §5: `obtain ⟨t⟩ := h`
-#. §6: `t : T`
-#. §7: `Nonempty T`
-#. §8: `use t`
-#. §9: `A : Set T`
-#. §10: `Nonemty A`
-#. §11: `∃ x, x ∈ A`
-#. §12: `unfold Nonempty`
-#: Game.Doc.Definition
-msgid ""
-"§0 means that an element in §1 (“of type §2”) exists.\n"
-"If §3 is given as an assumption, we obtain an element §4 with §5.\n"
-"Conversely, if we already have an element §6 given or constructed,\n"
-"we can prove §7 with §8.\n"
-"\n"
-"Similarly, for a subset §9, the statement §10 is defined as §11.\n"
-"In this case, you can easily check this with §12."
-msgstr ""
-"§0 bedeutet, dass ein Element in §1 („vom Typ §2“) existiert.\n"
-"Ist §3 als Annahme gegeben, erhalten wir ein Element §4 mit §5.\n"
-"Haben wir umgekehrt bereits ein Element §6 gegeben oder konstruiert, so "
-"können wir §7 mit §8 beweisen.\n"
-"\n"
-"Analog ist für eine Teilmenge §9 die Aussage §10 definiert als als §11.\n"
-"Das kannst du in diesem Fall leicht mit §12 überprüfen."
 
 #. §0: `tauto`
 #. §1: `rfl`
@@ -6184,11 +6212,14 @@ msgid ""
 "You write §17 as §18."
 msgstr ""
 "Für §0 bedeutet §1, dass §2 in §3 enthalten ist.\n"
+"Du kannst das mit §4 zu §6 umschreiben.\n"
 "\n"
-"Mit §4 kannst du §5 zu §6 umschreiben.\n"
+"## §1 als Beweisziel\n"
 "\n"
-"Ist §7 das Beweisziel, kannst du auch direkt mit §8 ein Element §9 mit §10 "
-"wählen (und dann §11 zeigen).\n"
+"Mit §8 gibst du dir ein beliebiges Element §9 mit §10 vor (und musst dann "
+"§11 zeigen).\n"
+"\n"
+"## §1 als Annahme\n"
 "\n"
 "Ist §12 eine Annahme, und ist ein Element §13 mit §14 gegeben, erhältst du "
 "mit §15 die Aussage §16.\n"
@@ -6200,7 +6231,7 @@ msgid "Conclusions Samarkand L02"
 msgstr "**Arapuka**:  Hübsch, hübsch."
 
 #. §0: `∃x, P x`
-#. §1: `use n`
+#. §1: `use x`
 #. §2: `P x`
 #: Game.Doc.Tactic
 msgid ""
@@ -6295,9 +6326,7 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 msgid "Conclusion Robotswana L07"
-msgstr ""
-"Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller "
-"und unvorsichtiger als zuvor."
+msgstr "Die Spuren wirken mittlerweile viel frischer.  Ihr folgt ihnen weiter."
 
 #: Game.Levels.Implis.L08_Rw
 msgid "Intro Implis L08"
@@ -6535,8 +6564,8 @@ msgstr "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
 #: Game.Levels.Logo.L13_Or
 msgid "Show goal via §0 i.e. assume §1 is true"
 msgstr ""
-"**Robo**: Jetzt musst du dein Ziel noch unter der rechten Annahme von §0 "
-"zeigen, also angenommen, §1 sei wahr."
+"**Robo**: Jetzt musst du dein Ziel noch unter Annahme der rechten Hälfte von "
+"§0 zeigen, also unter der Annahme, dass §1 gilt."
 
 #: Game.Levels.Cantor
 msgid "Cantor"
@@ -6903,22 +6932,8 @@ msgstr ""
 "noch nicht gelöst hast.\n"
 "\n"
 "## Neuigkeiten\n"
-"`[2025-03-28]` Der jüngste Planet im Formaloversum heißt Euklid.\n"
-"Außerdem gibt es jede Menge kleinerer Verbesserungen, besonders auf Babylon, "
-"Cantor und Saturn,\n"
-"und in der Dokumentation der Taktiken und Definitionen.\n"
-"Auf Babylon wird jetzt über Intervalle in ℕ und ℤ summiert, und nicht mehr "
-"über `Fin n`.\n"
-"Saturn endet nun mit einer polynomiellen Quadratsummenformel.\n"
 "\n"
-"`[2025-03-18]` Von Quantus hat sich der Planet Saturn abgespalten, Luna ist "
-"größer geworden, und auch Piazza wurde grundlegend überarbeitet.\n"
-"\n"
-"`[2025-02-20]` Die „Abbildungsplaneten“ sind fertig:  Vieta, Mono, Epo, Iso "
-"und Samarkand.\n"
-"\n"
-"`[2025-01-25]` Es gibt jetzt einen Planeten, um sich zu verabschieden:  "
-"Ciao.\n"
+"`[2026-03-20]` Robo gibts jetzt auch auf Englisch! \n"
 "\n"
 "Hintergrundinformationen und Credits findest du im Menü unter *Game Info*."
 
@@ -7235,7 +7250,7 @@ msgstr "**Ext**:  Ich mag *diese* Gleichung."
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
-msgstr "Zwischenziel gelöst! 🎉"
+msgstr "– Zwischenziel erreicht! –"
 
 #. §0: `apply`
 #. §1: `hAB : A → B`
@@ -7334,7 +7349,9 @@ msgstr ""
 
 #: Game.Levels.Implis.L11_Iff
 msgid "Start with implication"
-msgstr "**Du**: Hmm, mindestens mit der Implikation kann ich anfangen."
+msgstr ""
+"**Du**:  Hmm … Also, zunächst einmal steht da eine Implikation.  Damit "
+"könnte ich ja mal anfangen."
 
 #: Game.Levels.Robotswana.L10_Characterize
 msgid "Observe equality"
@@ -7510,7 +7527,7 @@ msgid ""
 "\n"
 "§1"
 msgstr ""
-"Eine Abbildung §0 ist injektiv, wenn gilt:\n"
+"Eine Abbildung §0 ist genau dann injektiv, wenn gilt:\n"
 "\n"
 "§1"
 
@@ -7553,19 +7570,7 @@ msgstr "**Robo**: Du könntest eine stückweise Funktion mit §0 definieren."
 
 #: Game.Levels.Cantor.L04_fixedPoints_neg
 msgid "Intro Cantor L04"
-msgstr ""
-"**Cantor**:  Passt auf, die Überlegung geht eigentlich noch weiter!\n"
-"\n"
-"Er greift in seinen Zylinder, und holt alle möglichen Dinge heraus. Eine "
-"alte Zahnbürste, ein Kartenspiel, ein weißes Kaninchen … Schließlich kommt "
-"ein zerknüllter Zettel zum Vorschein.\n"
-"\n"
-"**Cantor**: Hier sind ja meine Notizen!  Tada!  Mein berühmtes "
-"Diagonalargument!\n"
-"\n"
-"Er faltet den Zettel auf, reißt vorsichtig die oberste Zeile ab, und lässt "
-"sie zu euch hinuntersegeln. Dann beugt er sich neugierig über den "
-"Bühnenrand, um zu sehen, was ihr macht."
+msgstr " "
 
 #. §0: `range f`
 #. §1: `f`
@@ -9862,6 +9867,23 @@ msgid "Show that §0 is right inverse to §1 e.g. §2"
 msgstr ""
 "Zeig am besten erst einmal, dass §0 ein Rechtsinverses von §1 ist, also zum "
 "Beispiel §2"
+
+#~ msgid ""
+#~ "§0 means that an element in §1 (“of type §2”) exists.\n"
+#~ "If §3 is given as an assumption, we obtain an element §4 with §5.\n"
+#~ "Conversely, if we already have an element §6 given or constructed,\n"
+#~ "we can prove §7 with §8.\n"
+#~ "\n"
+#~ "Similarly, for a subset §9, the statement §10 is defined as §11.\n"
+#~ "In this case, you can easily check this with §12."
+#~ msgstr ""
+#~ "§0 bedeutet, dass ein Element in §1 („vom Typ §2“) existiert.\n"
+#~ "Ist §3 als Annahme gegeben, erhalten wir ein Element §4 mit §5.\n"
+#~ "Haben wir umgekehrt bereits ein Element §6 gegeben oder konstruiert, so "
+#~ "können wir §7 mit §8 beweisen.\n"
+#~ "\n"
+#~ "Analog ist für eine Teilmenge §9 die Aussage §10 definiert als als §11.\n"
+#~ "Das kannst du in diesem Fall leicht mit §12 überprüfen."
 
 #~ msgid "Divide «{h}» into three by §0"
 #~ msgstr ""

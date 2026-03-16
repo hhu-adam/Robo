@@ -585,7 +585,7 @@ TacticDoc unfold
 --  umschreibt. Diese Taktik braucht man auch manchmal um zu hacken, wenn Lean Mühe hat, etwas zu verstehen.
 
 /--
-If the proof target is of the form `∃x, P x`, you can use `use n` to specify a concrete element
+If the proof target is of the form `∃x, P x`, you can use `use x` to specify a concrete element
 for which you want to prove `P x`.
 -/
 TacticDoc use

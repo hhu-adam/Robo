@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12\n"
+"POT-Creation-Date: 2026-03-16\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -1120,6 +1120,46 @@ msgstr ""
 
 #: Game.Levels.Logo.L10_And
 msgid "Conclusion Logo L10"
+msgstr ""
+
+#. §0: `Nonempty`
+#. §1: `T`
+#. §2: `T : Type`
+#. §3: `Nonempty T`
+#. §4: `A`
+#. §5: `A : Set T`
+#. §6: `Nonempty A`
+#. §7: `∃ x, x ∈ A`
+#. §8: `unfold Nonempty`
+#. §9: `t`
+#. §10: `t : T`
+#. §11: `use t`
+#. §12: `a`
+#. §13: `a : T`
+#. §14: `a ∈ A`
+#. §15: `ha : a ∈ A`
+#. §16: `use a`
+#. §17: `h : Nonempty T`
+#. §18: `obtain ⟨t⟩ := t`
+#. §19: `t`
+#. §20: `t : T`
+#. §21: `h : Nonempty A`
+#. §22: `obtain ⟨a, ha⟩ := h`
+#. §23: `a`
+#. §24: `a : T`
+#. §25: `a ∈ A`
+#. §26: `ha : a ∈ A`
+#: Game.Doc.Definition
+msgid "[Doc.Definition] Nonempty\n"
+"§0\n"
+"for §1, §2, §3 means T is non-empty\n"
+"for §4, §5, §6 means §7; check this with §8\n"
+"As goal:\n"
+"given §9, §10, use §11\n"
+"given §12, §13 such that §14, §15, use §16\n"
+"As assumption:\n"
+"given §17, use §18 to obtain §19, §20\n"
+"given §21, use §22 to obtain §23, §24, §25, §26"
 msgstr ""
 
 #. §0: `IsEmpty.false`
@@ -3697,29 +3737,6 @@ msgstr ""
 msgid "§0 is the closed interval §1."
 msgstr ""
 
-#. §0: `Nonempty T`
-#. §1: `T`
-#. §2: `T`
-#. §3: `h : Nonempty T`
-#. §4: `t : T`
-#. §5: `obtain ⟨t⟩ := h`
-#. §6: `t : T`
-#. §7: `Nonempty T`
-#. §8: `use t`
-#. §9: `A : Set T`
-#. §10: `Nonemty A`
-#. §11: `∃ x, x ∈ A`
-#. §12: `unfold Nonempty`
-#: Game.Doc.Definition
-msgid "§0 means that an element in §1 (“of type §2”) exists.\n"
-"If §3 is given as an assumption, we obtain an element §4 with §5.\n"
-"Conversely, if we already have an element §6 given or constructed,\n"
-"we can prove §7 with §8.\n"
-"\n"
-"Similarly, for a subset §9, the statement §10 is defined as §11.\n"
-"In this case, you can easily check this with §12."
-msgstr ""
-
 #. §0: `tauto`
 #. §1: `rfl`
 #: Game.Levels.Piazza.L08_subset_iff
@@ -3985,7 +4002,7 @@ msgid "Conclusions Samarkand L02"
 msgstr ""
 
 #. §0: `∃x, P x`
-#. §1: `use n`
+#. §1: `use x`
 #. §2: `P x`
 #: Game.Doc.Tactic
 msgid "If the proof target is of the form §0, you can use §1 to specify a concrete element\n"
