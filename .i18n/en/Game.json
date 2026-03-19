@@ -99,7 +99,7 @@
  "Right next to the tree, you find another note with §0 crossed out in large letters. \n\n**You**: I suppose that means §1 with i ≠ j are of no interest to us.",
  "intermediate goal solved! 🎉": "– Intermediate goal achieved! –",
  "exploit the surjectivity of §0 somehow. It was already told\nwhich of mapping §1 the preimage has to be considered. One could define §2\nand then observe the preimage of §3.":
- "**Cantor**: Of course, you have to exploit the surjectivity of §0 somehow.\nEvery map §1 has a preimage under §0, and I've already told you which map to consider… \n\n**Scribble** *(to you)*: Mmm... do you understand what he means? Of course, you could now define a map with \n§2\nand then consider a preimage §3 of this map. But I'm a little lost right now.",
+ "**Cantor**: Of course, you have to exploit the surjectivity of §0 somehow.\nEvery map §1 has a preimage under §0, and I've already told you which map to consider… \n\n**Scribble** *(to you)*: Mmm… do you understand what he means? Of course, you could now define a map with \n§2\nand then consider a preimage §3 of this map. But I'm a little lost right now.",
  "before using §0, use §1 to replace §2 by §3, because\n§4 does not know otherwise.":
  "**You**: Ah, and now §0! \n\n**Scribble**: But first you have §1 to replace §2 with §3, otherwise §4 won't know.",
  "[Vieta] Try §0 (again)": "**Scribble**: §0, once again.",
@@ -138,7 +138,7 @@
  "[Babylon] Split §0 with §1: §2":
  "**Scribble**: Now you can split the assumption §0 into three cases with §2.",
  "You cannot use §0. There is no §1. Try §2":
- "**Head of Operations**: This is from a colleague. \n\n**Scribble**: I'm sure I've read this somewhere before. Wait a minute … That's right! \nIt was when I was crawling Wikipedia: \n\n*“Modus ponens is a figure of reasoning already familiar in ancient logic, which is used in many logical...”*\n\n**You**: Scribble! We're looking for proof, not a historical essay! \nOr are you trying to tell me that I should write §1 or something similar? \n\n**Scribble**: No, sorry, §1 won't get you anywhere. Try §2 instead.",
+ "**Head of Operations**: This is from a colleague. \n\n**Scribble**: I'm sure I've read this somewhere before. Wait a minute … That's right! \nIt was when I was crawling Wikipedia: \n\n*“Modus ponens is a figure of reasoning already familiar in ancient logic, which is used in many logical …”*\n\n**You**: Scribble! We're looking for proof, not a historical essay! \nOr are you trying to tell me that I should write §1 or something similar? \n\n**Scribble**: No, sorry, §1 won't get you anywhere. Try §2 instead.",
  "You can skip induction start by using §0":
  "**You**: First, the base case … \n\n**Scribble**: You can often brush this aside with §0!",
  "With §0, you introduce an intermediate result.\nYou must then prove this intermediate result\nbefore you can continue with the actual proof.\n\n## Friends and relatives\n§1 works in exactly the same way, except that you can continue with the main proof first and\nonly have to prove your intermediate result at the very end.":
@@ -164,7 +164,7 @@
  "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n\n§4":
  "Typically used with §0 to distinguish the three cases §1, §2 and §3:\n\n §4",
  "We now have §0. Knowing what §1 means, try §2 with §3":
- "**Scribble**: Hmm... §0 still looks suboptimal. But we know what §1 means – try a §2 with §3!",
+ "**Scribble**: Hmm… §0 still looks suboptimal. But we know what §1 means – try a §2 with §3!",
  "We know that §0 can be used on implications. Intuitively, for equivalence §1\none could use §2. The direction §3 of §4 is denoted by §5.\nTry §6":
  "**Scribble**: Well, you could §0 an implication … \n\n**You**: I know! But §1 is not an implication, it's an equivalence. So I'd want to say something like §2. \n\n**Scribble**: The direction §3 of §4 is called §5. You can apply it with §6.",
  "We have assumption §0. Try applying §1 on §2.":
@@ -263,7 +263,7 @@
  "Try §0 to fix skewed order":
  "**You**: Hmm, it's the wrong one round!\n\n**Scribble**: Remember §0?\n\n**You**: Right, we already use that when were dealing with this strange guy with the conveyor belts.",
  "Try §0 to construct §1, Try §2 and §3":
- "**You**: For §0, I first construct the element §1 that I want to use... \n\n**Scribble**: ...and then you apply §2 and §3. Exactly.",
+ "**You**: For §0, I first construct the element §1 that I want to use … \n\n**Scribble**: … and then you apply §2 and §3. Exactly.",
  "Try §0 to approach injectivity §1":
  "**Scribble**: Injectivity is the more difficult part. Start with §0.",
  "Try §0 such that §1":
@@ -436,7 +436,7 @@
  "The name of mapping §0 is §1":
  "**You**: What was the name of the map §0 again? \n\n**Scribble**: §1",
  "The goal is that each self mapping §0 possess a fixed point.\nDoes not every set have a self mapping without fixed points? E.g. §1 in §2\nor §3 … or the non-trivial permutations in §4. Thought: if §5 is not a set with\na single element then there should be a fixed-point-free self mapping.":
- "**You**: We are supposed to show, under certain assumptions, that *every* self-map §0 has a fixed point? Isn't there a self-map *without* fixed points on every set? For example, §1 on §2 or §3 ... \n\n**Scribble**: … or the non-trivial permutation on §4? \n\nHe seems a little confused, too.\n\n**Scribble**: Surely, if §5 is not just the one-point set, there should always be a self-map without fixed points? \n\n**Cantor**: Well, that's exactly the point! Wait and see!",
+ "**You**: We are supposed to show, under certain assumptions, that *every* self-map §0 has a fixed point? Isn't there a self-map *without* fixed points on every set? For example, §1 on §2 or §3 … \n\n**Scribble**: … or the non-trivial permutation on §4? \n\nHe seems a little confused, too.\n\n**Scribble**: Surely, if §5 is not just the one-point set, there should always be a self-map without fixed points? \n\n**Cantor**: Well, that's exactly the point! Wait and see!",
  "The given mapping has the form\n§0\n\nand §1 is the mapping §2, that for each input return the doubeled value of §3.\n":
  "**You**: So, the given map has the following form:\n\n§0\n\nAnd what is §1?\n\n**Scribble**: That's the map §2 which sends each number to twice the value of §3 at that number. \n",
  "The expression itself seems to be correct":
@@ -530,7 +530,7 @@
  "Remind of rewrite via §0 as §1. Try §2":
  "**You**: How does that work again with rewriting backwards? \n\n**Scribble**: §2, where you write §0 as §1.",
  "Remind of previous result": "**Scribble**: We've already seen this.",
- "Remind of negation for §0": "**You**: Ah, and the negation of §0 must be ...",
+ "Remind of negation for §0": "**You**: Ah, and the negation of §0 must be …",
  "Remind of induction as mapping goes to §0":
  "**Scribble**: Look, the codomain  is §0! \n\nYou raise your eyebrows. \n\n**Scribble**: §0 always reminds of induction. Never mind.",
  "Remind missed argument with §0":
@@ -541,7 +541,7 @@
  "**You**: Didn't we established §0 a moment ago?\n\n**Scribble**: I'm good at looking things up! Yes, that was §1.",
  "Remind former proof":
  "**Scribble**: Perhaps you should look through the statements we've already proven.",
- "Remind about §0": "**You**: I see. A §0 on the far left. What a surprise ...",
+ "Remind about §0": "**You**: I see. A §0 on the far left. What a surprise …",
  "Remember §0. This here is a good setting for §1. Try §2":
  "**You**: That sounds a bit like the axiom of choice. \n\n**Scribble**: Bingo! Don't you remember §0? This is where §1 really comes into its own. Try §2.",
  "Remember to use §0 here": "**Scribble**: Remember §0?",
@@ -577,9 +577,9 @@
  "Parts available in assumptions":
  "**You**: Ah, and I already have both parts in the assumptions.",
  "Open §0 via §1 to see §2 ...":
- "**Scribble**: Perhaps you could start by expanding §0 with §1. Then you get §2 ...",
+ "**Scribble**: Perhaps you could start by expanding §0 with §1. Then you get §2 …",
  "Only two of three §0 are rewritten. §1 only rewrites only first found occurance i.e. §2.\nAs §3 is considered to be something 'different' the lemma has to be applied again":
- "**You**: Huh, why did it rewrite 2 out of 3 occurrences of §0? \n\n**Scribble**: §1 only rewrites the first instance it finds, which is §2. But if this instance occurs multiple times, all copies of this instance are replaced ... \n\n**You**: Ah, I see. And §3 is a different instance, so I need the lemma again.",
+ "**You**: Huh, why did it rewrite 2 out of 3 occurrences of §0? \n\n**Scribble**: §1 only rewrites the first instance it finds, which is §2. But if this instance occurs multiple times, all copies of this instance are replaced … \n\n**You**: Ah, I see. And §3 is a different instance, so I need the lemma again.",
  "One option: §0.\nBut in any case, will need §1\n(or §2) at some point,\nso might as well start with it\nand obtain tautology §3.":
  "**You**: And now §0? \n\n**Scribble**: Yes, that would work. \nBut you'll probably need §1 (or §2) in any case, so you might as well start with it, and then your goal will become §3 – a tautology.",
  "One could choose left inverse on the previous proven statement §0 by using §1.\nAs proven statement has no name formulate statement again with §2 and prove it again.":
@@ -591,7 +591,7 @@
  "Observe §0 and §1":
  "**Scribble**: What do you see when you look at §0 and §1?",
  "Observe goal as §0.\nDo not try §1 as §2 but as §3":
- "**Scribble**: Look, when you touch an assumption with your finger, it highlights how the brackets are set. Crazy...\n\n**You**: Ah, I see: §0! \n\n**You**: I'm beginning to have my suspicions regarding this whole circus: first an “and” in the target, then “and” in the assumption, then “or” in the target and now “or” in the assumption. They must have agreed on this in advance!\n\n**Scribble**: So what? Let’s not spoil their fun. We'll be done here in a moment, and then we can fly on to a more interesting planet. \n\n**You**: So, §1 again? \n\n**Scribble**: Yes, but this time §3 rather than $2.",
+ "**Scribble**: Look, when you touch an assumption with your finger, it highlights how the brackets are set. Crazy …\n\n**You**: Ah, I see: §0! \n\n**You**: I'm beginning to have my suspicions regarding this whole circus: first an “and” in the target, then “and” in the assumption, then “or” in the target and now “or” in the assumption. They must have agreed on this in advance!\n\n**Scribble**: So what? Let’s not spoil their fun. We'll be done here in a moment, and then we can fly on to a more interesting planet. \n\n**You**: So, §1 again? \n\n**Scribble**: Yes, but this time §3 rather than $2.",
  "Observe equality": "**Scribble**: The two sides are equal by definition!",
  "Now §0 can be applied": "**Scribble**: Very good. Now you can apply §0.",
  "Now you have two goals.":
@@ -619,7 +619,7 @@
  "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n§3\n":
  "**You**: Well, it's pretty clear which §0 could be used here. \n\n**Scribble**: If it's clear to you, then start with §1. And after that, you'll want to invoke §2. For example, like this: \n§3\n",
  "It conjected that §0 has left inverse. One would assume that §1 would\nnot work for §2. Tackling this by case distinction e.g. §3 is unecessary as\nin Leanic §4 is in §5. It is simply defined as §6":
- "**You**: So the claim as that the map §0 has a left inverse. I guess I could simply specify that left inverse as §1 ... except that this does not work for §2.\n\n**Scribble**: You could use §3 to differentiate cases and define a piecewise map. But you don't actually need to do that. In Leanish, §4 is also in §5. \n\n**You**: What ... ??! \n\n**Scribble**: Yes. It's simply defined as §6.",
+ "**You**: So the claim as that the map §0 has a left inverse. I guess I could simply specify that left inverse as §1 … except that this does not work for §2.\n\n**Scribble**: You could use §3 to differentiate cases and define a piecewise map. But you don't actually need to do that. In Leanish, §4 is also in §5. \n\n**You**: What … ??! \n\n**Scribble**: Yes. It's simply defined as §6.",
  "Iso": "Iso",
  "Is there a set, which is not hit by §0":
  "**Cantor**: So, what do you think? Is there any set that is not in the image of §0?",
@@ -643,7 +643,7 @@
  "Intro Vieta L02":
  "Another arrow whizzes past. Vieta calmly hands you the next piece of paper.",
  "Intro Vieta L01":
- "**Vieta:** Listen, I'll show you something... He gives you a piece of paper.",
+ "**Vieta:** Listen, I'll show you something … He gives you a piece of paper.",
  "Intro Vieta":
  "Hello, is anyone here? You have landed in some shrubland. There is no one to be seen far and wide. \n\nSuddenly, an arrow whizzes right over your head. \n\n**You**: Take cover!\n\nYou throw yourself flat on the ground. You're about to crawl back to the spaceship when a man emerges from behind a withered tree and waves friendly. So you crawl towards him. \n\n**Vieta**: Don't be shy, ladies and gentlemen! My name is Vieta. Welcome! Get up, the coast is clear.\n\nYou rise cautiously, but another arrow whizzes past you. \n\n**You**: How do you manage to live here? \n\n**Vieta**: I've learned to always be in the right place at the right time. Don't worry.",
  "Intro Spinoza L06":
@@ -658,7 +658,7 @@
  "Intro Spinoza L01":
  "**Benedictus**: Here, take a look. I have prepared something for you.",
  "Intro Spinoza":
- "**Scribble**: I think that's Spinoza, one of the very few asteroids of the QED type. Quick. We have to hurry a bit, otherwise we'll miss it. \n\nHalf an hour later, you've landed. Spinoza doesn't look very inviting. Its entire surface is covered with fine, red dust. A single, lonely formalosopher, who introduces himself as Benedictus, is waiting for you.\n\n**Benedictus**: Glad to see you! I've been waiting for you! \n\n**You**: Do you also have some urgent questions ...? \n\n**Benedictus**: Oh no, I'm past that age. But I can imagine what it was like on Implis and Quantus. And believe me, it's not much better on the other planets. But perhaps I can prepare you a little. \n\n**You**: Can't we just stay here and rest a while? \n\nBenedictus shakes his head. \n\n**Benedictus**: No. Spinoza cannot accommodate three inhabitants. And you must continue your journey soon, otherwise the return journey will become impossibly long. We only pass by the planets every 400 years or so.",
+ "**Scribble**: I think that's Spinoza, one of the very few asteroids of the QED type. Quick. We have to hurry a bit, otherwise we'll miss it. \n\nHalf an hour later, you've landed. Spinoza doesn't look very inviting. Its entire surface is covered with fine, red dust. A single, lonely formalosopher, who introduces himself as Benedictus, is waiting for you.\n\n**Benedictus**: Glad to see you! I've been waiting for you! \n\n**You**: Do you also have some urgent questions …? \n\n**Benedictus**: Oh no, I'm past that age. But I can imagine what it was like on Implis and Quantus. And believe me, it's not much better on the other planets. But perhaps I can prepare you a little. \n\n**You**: Can't we just stay here and rest a while? \n\nBenedictus shakes his head. \n\n**Benedictus**: No. Spinoza cannot accommodate three inhabitants. And you must continue your journey soon, otherwise the return journey will become impossibly long. We only pass by the planets every 400 years or so.",
  "Intro Saturn L04": "Another radio message.",
  "Intro Saturn L03": "Another radio message.",
  "Intro Saturn L02": "The next radio message looks a little different.",
@@ -676,7 +676,7 @@
  "**Arapuka**: Could you perhaps also help me with this?",
  "Intro Samarkand L02": "Arapuka dictates another exercise.",
  "Intro Samarkand L01":
- "**Arapuka**: There are a few things I've been thinking about for a long time. Maybe you could help me. For example: ... \n\nShe dictates a statement to you. Scribble writes it down.",
+ "**Arapuka**: There are a few things I've been thinking about for a long time. Maybe you could help me. For example: … \n\nShe dictates a statement to you. Scribble writes it down.",
  "Intro Samarkand":
  "A very colourful planet appears in the distance. As you get closer, you see that large parts of its surface are decorated with elaborate geometric patterns. But there are also a few undecorated areas, completely white. You land in one of these white spots. \n\n**You**: Hello, is anyone here? \n\nThe planet's surface resembles a perfect sphere. There's a smooth horizon in every direction. But there's no one to be seen. You are about to turn back when you notice something. \n\n**You**: Scribble, look over there, the planet has a bump! \n\nIt turns out that the “bump” is a small turtle lying on the decorated part of the planet, but close to the edge of the white area. You carefully step onto the patterned surface. The paint seems to be dry. \n\n**Arapuka**: Hello, you two, do come closer! It's nice to have visitors for once. \n\n**You**: What are you doing here all alone?\n\n**Arapuka**: I'm investing myself in a big work of art. I'll lie here until my shell has taken on the pattern of the ground. Then I'll walk over to the spot where this piece of pattern is still missing and lie down there until I've transferred the pattern to the white surface of the planet. It takes a while, so I could use some company. \n\n**You**: Great.",
  "Intro Robotswana L11":
@@ -728,7 +728,7 @@
  "Intro Prado L07: Use lemma §0":
  "**Scribble**: Here's another little prime number problem. Lemma §0 states that a prime number divides a product if and only if it divides one of the factors. You just have to apply it here.",
  "Intro Prado L06":
- "**You**: Good. Can you show me how to work with prime numbers now? \n\n**Scribble**: Let me see if I have an exercise concerning prime numbers in stock... This one, perhaps?",
+ "**You**: Good. Can you show me how to work with prime numbers now? \n\n**Scribble**: Let me see if I have an exercise concerning prime numbers in stock … This one, perhaps?",
  "Intro Prado L05":
  "**You** *(to Scribble)*: Could you again give me something more interesting?\n\n**Scribble**: How about this?",
  "Intro Prado L04":
@@ -760,7 +760,7 @@
  "Intro Piazza L02": "**Mem**: How about this?",
  "Intro Piazza L01": "**Fin:** Yes, of course. This, for example.",
  "Intro Piazza":
- "It appears that you have landed on a trading planet. There are merchants everywhere offering their wares for sale. You eye a few stalls curiously. Some things look familiar and edible, many do not. But everything is neatly sorted. There are baskets of blueberries (?), crates of red vegetables that remind you of tomatoes, open sacks of small pink stars, etc. \n\nA few children – or at least a few rather small formalosophers who behave like children – almost run into your feet. Scribble jumps, and they notice you and stop. They introduce themselves as “Fin”, “Ext”, “Mem”, “Set” and ”Sub”, and seem curious. \n\n**Fin**: What are you doing here? \n\n**You**: Um... just poking around a bit.\n\n**Set**: We're here to learn some set theory. Our parents dropped us off here. \n\n**Ext**: For educational purposes, so to speak. \n\n**You**: So, have you learned anything yet?",
+ "It appears that you have landed on a trading planet. There are merchants everywhere offering their wares for sale. You eye a few stalls curiously. Some things look familiar and edible, many do not. But everything is neatly sorted. There are baskets of blueberries (?), crates of red vegetables that remind you of tomatoes, open sacks of small pink stars, etc. \n\nA few children – or at least a few rather small formalosophers who behave like children – almost run into your feet. Scribble jumps, and they notice you and stop. They introduce themselves as “Fin”, “Ext”, “Mem”, “Set” and ”Sub”, and seem curious. \n\n**Fin**: What are you doing here? \n\n**You**: Um… just poking around a bit.\n\n**Set**: We're here to learn some set theory. Our parents dropped us off here. \n\n**Ext**: For educational purposes, so to speak. \n\n**You**: So, have you learned anything yet?",
  "Intro Mono L06: Prove §0":
  "It appears they noticed you got some help. Now they want to see a proof of §0.",
  "Intro Mono L01":
@@ -768,7 +768,7 @@
  "Intro Mono":
  "On the next planet, there are again two skyscrapers standing next to each other. Again, one is narrow and tall, the other slightly wider and shorter. And once again, they are connected by a system of tubes – there appears to be some kind of transport capsule system again. \n\nAfter your experience on Epo, you head straight for the shorter skyscraper this time and land on the roof. \n\n**Porter**:  No, no, no. Didn't you see everyone waving? These are just our sleeping quarters. During the day, we're always over there, in the office tower. Anyway, now that you're here – welcome! \n\nYou each shake one of his four hands. \n\n**Porter**: At least this gives me the opportunity to introduce you to our unique local transport system. You're from Epo, aren't you? We hear terrible stories from there. There's an accident every other day. They just can't get their tubes sorted out. We've been accident-free for years! \n\nYou go down four floors. There, everyone is assigned a capsule again, and you glide silently uphill into the office tower. How the capsule operates remains a mystery.\n\n**Scribble**: Oh. There's no one here either! \n\n**Porter**: Of course not. They're all upstairs, top floor. And not every floor can be reached via a tube. But we're almost there. Just two more flights of stairs.",
  "Intro Luna L10: Use §0 again":
- "**Ritha** (*to Lina*): Please, let me ask one more question... \n\n**Lina**: Okay, just one... But not about §0 again! \n\nRitha's eyes widen and she looks at Lina imploringly. \n\n**Lina**: If you *absolutely* must. But be quick! We really don't have any more time!",
+ "**Ritha** (*to Lina*): Please, let me ask one more question … \n\n**Lina**: Okay, just one … But not about §0 again! \n\nRitha's eyes widen and she looks at Lina imploringly. \n\n**Lina**: If you *absolutely* must. But be quick! We really don't have any more time!",
  "Intro Luna L09": "**Lina**: Now it's my turn again.",
  "Intro Luna L08": "**Ritha**: My turn again!",
  "Intro Luna L07: Enough of §0":
@@ -782,7 +782,7 @@
  "Intro Luna L01: Know that §0":
  "You're a little offended, but you try to start a conversation anyway. \n\n**You**: So sorry, we'll try not to mess up things. \nIs it difficult to keep order here? \n\n**Lina**: Well, for starters you need to know that §0.",
  "Intro Luna":
- "Scribble has discovered a small moon, which you are now heading towards. It is a perfect sphere with a completely smooth surface, but in one place it has a small opening with a spiral staircase leading downwards. You land next to the opening and curiously descend down the stairs. They take you down into the tidiest flat you have ever seen. A little girl greets you.\n\n**Lina**: Hi, I'm Lina, the only inhabitant of Luna. \n\nThen she spots Scribble. \n\n**Lina**: Well, actually, there are two of us here... She turns around and calls out, and a smart elf hovers up from behind.\n\n**Lina**: Here's Ritha! \n\nScribble seems quite fascinated. \n\n**Lina**: But please don't keep standing around so totally out of place! Put your shoes and helmets away here and here, then stand on the marked visitor spots. Please! Otherwise you'll drive me crazy.",
+ "Scribble has discovered a small moon, which you are now heading towards. It is a perfect sphere with a completely smooth surface, but in one place it has a small opening with a spiral staircase leading downwards. You land next to the opening and curiously descend down the stairs. They take you down into the tidiest flat you have ever seen. A little girl greets you.\n\n**Lina**: Hi, I'm Lina, the only inhabitant of Luna. \n\nThen she spots Scribble. \n\n**Lina**: Well, actually, there are two of us here … She turns around and calls out, and a smart elf hovers up from behind.\n\n**Lina**: Here's Ritha! \n\nScribble seems quite fascinated. \n\n**Lina**: But please don't keep standing around so totally out of place! Put your shoes and helmets away here and here, then stand on the marked visitor spots. Please! Otherwise you'll drive me crazy.",
  "Intro Logo L14: The most important tactics of this chapter concerning §0 and §1.\nFor both logical operations the tactis §2 and §3 can be used respectivelly.\nAnalogously, when working with the goal §4 and §5/§6 can be used respectivelly as well.":
  "The last subject steps forward. Her request is somewhat more complicated than the previous ones. \n\n**Scribble**: Just throw everything at it that you've learned. Here, I'll try to be helpful by showing you the four most important tactics for this situation again. \n\n| (Overview) | And (§0) | Or (§1) | \n|:------------|:-------------------------|:------------------------| \n| Assumption | §2 | §3 | \n| Goal | §4 | §5/§6 | ",
  "Intro Logo L13": "Next, please …",
@@ -868,7 +868,7 @@
  "Intro Cantor L02":
  "**Cantor**: Listen, there's more to it! \n\nHe reaches into his top hat and pulls out all sorts of things. An old toothbrush, a deck of cards, a white rabbit … \nFinally, a crumpled piece of paper appears.\n\n**Cantor**: Here are my notes!  Ta-da! \nMy famous diagonal argument! \n\nHe unfolds the piece of paper, carefully tears off the uppermost line of writing, and lets that line float down to you. \nThen he leans curiously over the edge of the stage to see what you make of it.",
  "Intro Cantor L01: Mapping §0 from §1 to the power set of §2, and the set\nof all elements in §3, which are not located in its image under §4":
- "**Cantor**: ... So we are looking at a map §0 from §1 to the power set of §2, and now the set of all those elements from §3 that are not in their image under §4 ... \n\nOh! An audience. No, *two* audiences! Hear and see, see and marvel.\n\nHe pulls a piece of paper out of his top hat, folds it into a swallow, and lets it fly down to you. \n\n**Cantor**: Given that I have two audiences, they might as well join in a little, mightn’t they?",
+ "**Cantor**: … so we are looking at a map §0 from §1 to the power set of §2, and now the set of all those elements from §3 that are not in their image under §4 … \n\nOh! An audience. No, *two* audiences! Hear and see, see and marvel.\n\nHe pulls a piece of paper out of his top hat, folds it into a swallow, and lets it fly down to you. \n\n**Cantor**: Given that I have two audiences, they might as well join in a little, mightn’t they?",
  "Intro Cantor":
  "You have landed next to a large tent. \nPerhaps a circus tent? \nIt is pretty dark inside. \nOnly the stage is brightly lit. \nThere's a gentleman on the stage, and you can't quite decide whether he looks more like a professor or a magician.\nHe appears to be in the middle of a long monologue – and of some performance. \n\nIn the semi-darkness in front of the stage, chairs are arranged in long rows.\nYou have entered the tent right at one end of the first row. \nThe other end you cannot even make out. The tent is too dark and the row is too long.\nAnd behind it are many more rows. You cannot see the back of the tent either. \nBut all the seats are empty. \nSo you sit down somewhere in the first row, look up at the gentleman on the stage and prick up your ears.",
  "Intro Babylon L09":
@@ -887,7 +887,7 @@
  "Intro Babylon L01":
  "**Babylonian**: Each tower has an inscription. It tells you exactly why the tower is standing the way it's standing. Here, for example.",
  "Intro Babylon":
- "You find yourself on a planet where countless stone slabs are stacked into bizarrely tall towers. The entire landscape looks like a giant 3D puzzle, with each slab neatly stacked on top of the ones below. Some towers are so tall that they seem to disappear into the sky. Soon you encounter the first inhabitant of this planet.\n\n**Babylonian**: Welcome to *Babylon*! \n\n**You**: Oh... \n\nNow you're nervous.\n\n**You**: Are you sure these towers are stable? \n\n**Babylonian**: Absolutely! \n\n**You**: How do you build these masterpieces? \n\n**Babylonian**: Very simple. One stone at a time.",
+ "You find yourself on a planet where countless stone slabs are stacked into bizarrely tall towers. The entire landscape looks like a giant 3D puzzle, with each slab neatly stacked on top of the ones below. Some towers are so tall that they seem to disappear into the sky. Soon you encounter the first inhabitant of this planet.\n\n**Babylonian**: Welcome to *Babylon*! \n\n**You**: Oh … \n\nNow you're nervous.\n\n**You**: Are you sure these towers are stable? \n\n**Babylonian**: Absolutely! \n\n**You**: How do you build these masterpieces? \n\n**Babylonian**: Very simple. One stone at a time.",
  "Intorduce new prerequisite §0":
  "**You**: I see. The Eposophists wanted us to prove that a map is surjective if and only if it has a right inverse. And the monosopher here would like us to prove that a map is injective if and only if it has a left inverse. \n\n**Scribble**: Yes, except that they need this additional condition §0.",
  "Instead of §0, §1 can be used. After §2, you have to show how to\nprove goal by §3 before proving §4 itself.":
@@ -1003,7 +1003,7 @@
  "Explanation of equal sums":
  "**You**: I think the two sums are identical because the individual summands are identical.",
  "Explaination of §0: it can be read as §1, a mapping of §2 into the set §3":
- "**You**: §0 ... how do I read these two arrows in a row? \n\n**Scribble**: You read it as §1 – a map from the natural numbers §2 into the set §3 of maps from A to B. I guess this will also become clear as you continue reading what you are supposed to show here.",
+ "**You**: §0 … how do I read these two arrows in a row? \n\n**Scribble**: You read it as §1 – a map from the natural numbers §2 into the set §3 of maps from A to B. I guess this will also become clear as you continue reading what you are supposed to show here.",
  "Explain §0: §1 looks for known equations and equivalences which would be currently\napplicable. §2 uses all simplifications it can find. Currently the following simplifications\nwere performed:\n§3\nand\n§4\n":
  "**You**: What exactly does §0 do? \n\n**Scribble**: §1 searches for commonly known equations and equivalences that are generally regarded as simplifications and that would be applicable in this case. All simplifications found by §2 are applied. In this case, for example, these were simplifications of the form\n§3\nand\n§4\n",
  "Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\nis subset of §4. So, as 5 is a natural number (§5) and it holds that §6, §7\nis also in this set i.e. §8. Try §9":
@@ -1246,7 +1246,7 @@
  "Conclusion Logo L03":
  "**Subject**: Yes, that's right! If only you knew how much I've racked my brains over this question!",
  "Conclusion Logo L02":
- "**Subject**: Ah, right. Yes, you're absolutely right. I keep forgetting. Rfl, rfl, rfl ...",
+ "**Subject**: Ah, right. Yes, you're absolutely right. I keep forgetting. Rfl, rfl, rfl …",
  "Conclusion Logo L01: Remind that §0 cannot be used":
  "**Logwynn** *(somewhat taken aback)*:  Yes, strictly speaking, that is correct. But don't believe for one moment that this will get you very far on *this* planet! My subjects do not comprehend §0. You will have to try a little harder than that.",
  "Conclusion Iso L02":
@@ -1284,7 +1284,7 @@
  "Conclusion Epo L07":
  "You receive a round of applause. \n\nThen you are bid farewell. Unfortunately, you cannot use a transport capsule for the return journey. These only work in one direction. So you have to walk back to the spaceship: first down the stairs, then outside from the office building to the sleeping quarters, and finally up to the roof in a normal lift.",
  "Conclusion Cia L01":
- "**You**: That wasn't so difficult... I wonder who sent it? And why? \n\n**Scribble**: It was definitely a message from Ritha... Scribble gazes into the distance. \n\n**Scribble**: I think she wanted to encourage us to travel further.\n\n**You**: But where to? \n\n**Scribble**: Oh, look, another message: \n\n*Dear Earthlings,* \n\n*It was a pleasure to meet you! We are truly sorry that you have strayed into our leaniverse and cannot find your way home. But we have some good news: you are not the only ones! \nJust fly on to the planet Zulip, where you will find many other Earthlings who have strayed into the leaniverse. \nZulip is large.  You will surely find a place to stay and feel comfortable there. Here are the coordinates:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*With our sincerest regards* \n\n*– Your Formalosophers* \n\n**Scribble**: Well then – let's go! \n\n[Technical note: When you follow the coordinates, the spaceship will accelerate to faster-than-light speed and you will temporarily lose contact with the server. But that's okay. You will arrive safely on Zulip.]",
+ "**You**: That wasn't so difficult … I wonder who sent it? And why? \n\n**Scribble**: It was definitely a message from Ritha … Scribble gazes into the distance. \n\n**Scribble**: I think she wanted to encourage us to travel further.\n\n**You**: But where to? \n\n**Scribble**: Oh, look, another message: \n\n*Dear Earthlings,* \n\n*It was a pleasure to meet you! We are truly sorry that you have strayed into our leaniverse and cannot find your way home. But we have some good news: you are not the only ones! \nJust fly on to the planet Zulip, where you will find many other Earthlings who have strayed into the leaniverse. \nZulip is large.  You will surely find a place to stay and feel comfortable there. Here are the coordinates:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*With our sincerest regards* \n\n*– Your Formalosophers* \n\n**Scribble**: Well then – let's go! \n\n[Technical note: When you follow the coordinates, the spaceship will accelerate to faster-than-light speed and you will temporarily lose contact with the server. But that's okay. You will arrive safely on Zulip.]",
  "Conclusion Cantor L11":
  "**Scribble**: Thank you very much for this performance! \n\n**You**: But it's a shame there are so few spectators! \n\n**Cantor**: Magic isn't for everyone. Have a good journey!",
  "Conclusion Cantor L10": "**You**: I'm not sure this was much easier …",
@@ -1374,6 +1374,6 @@
  "A lemma like §0 that contains §1 or §2 in its statements can also be used with §3: §4":
  "**Scribble**: Any lemma that is an equality (§2) or an equivalence (§1) like §0 can also be used with §3, e.g. §4.",
  "\n§0-th multiplication of the equation can be calculated with the former results as:\n§1\n\nKeep in mind that §2 and §3 are equal for arbitrary §4 and §5. Use fact that\nmultiplications with §6 are injective. Try\n§7\nand then continue with §8.\n":
- "\nYou ponder the problem for a moment and try some approaches on paper. After a while: \n\n**You**: I think I have an idea! I can calculate the §0-fold multiple of the equation with the previous results as follows: \n§1 \nThe key point is that we already know that §2 and §3 are equal for any §4 and §5.\nSo they are interchangeable in the sum. \n\n**Scribble**:  Perhaps. But doesn't this argument rely on injectivity of multiplication by §6? Do we know that? Mmm ... \n\nScribble thinks for a moment. \n\n**Scribble**: Maybe start like this: \n§7\nAnd then continue with §8. \n",
+ "\nYou ponder the problem for a moment and try some approaches on paper. After a while: \n\n**You**: I think I have an idea! I can calculate the §0-fold multiple of the equation with the previous results as follows: \n§1 \nThe key point is that we already know that §2 and §3 are equal for any §4 and §5.\nSo they are interchangeable in the sum. \n\n**Scribble**:  Perhaps. But doesn't this argument rely on injectivity of multiplication by §6? Do we know that? Mmm… \n\nScribble thinks for a moment. \n\n**Scribble**: Maybe start like this: \n§7\nAnd then continue with §8. \n",
  "\n§0\n\nWrite §1 as sum of base matrices. Use linearity to make §2 disappear in §3 with §4.\nRewrite first §5 in §6 as sum of base matrices, but not the later §7. Try §8\nwhich works like §9.\n":
  "\n**You**: What's this now? \n\nYou jot down some ideas. \n\n§0 \n\n**You**: Yes, this could work. I write §1 as a linear combination of basis matrices, then use linearity, and finally, I note that §2 disappears on all §3 with §4.\nSo I should probably first expand §5 in §6 into a linear combination, but not the other §7 further on the right. \n\n**Scribble** (*from a distance*): §8! Works like §9. \n"}
