@@ -13,27 +13,21 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: Game
-msgid "Explore an alien universe with the Smart-Elf Robo!"
-msgstr "Explore a different universe with your smart-elf Scribble!"
-
-#: Game
-msgid "Robo"
-msgstr "Scribble"
-
-#: Game
-msgid ""
-"This game illustrates reasoning with Lean using various topics from the "
-"introductory phase of the bachelor's degree program in mathematics."
+msgid "[Game] CaptionLong"
 msgstr ""
 "This game illustrates theorem proving in Lean using various topics from the "
 "first year of a typical Bachelor's degree programme in Mathematics."
 
 #: Game
-msgid "[Game conclusion]"
+msgid "[Game] CaptionShort"
+msgstr "Explore a different universe with your smart-elf Scribble!"
+
+#: Game
+msgid "[Game] Conclusion"
 msgstr "QED"
 
 #: Game
-msgid "[Game info]"
+msgid "[Game] Info"
 msgstr ""
 "## Project ADAM \n"
 "\n"
@@ -76,7 +70,7 @@ msgstr ""
 "issues)."
 
 #: Game
-msgid "[Main game intro]"
+msgid "[Game] Introduction"
 msgstr ""
 "# Game Over or QED? \n"
 "\n"
@@ -117,6 +111,10 @@ msgstr ""
 "`[2026-03-28]` The game is now available in English! \n"
 "\n"
 "For background information and credits, see *Game Info* in the menu."
+
+#: Game
+msgid "[Game] Title"
+msgstr "Scribble"
 
 #: Game.Doc.Definition
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."

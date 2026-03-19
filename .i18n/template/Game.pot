@@ -10,29 +10,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit"
 
 #: Game
-msgid "Explore an alien universe with the Smart-Elf Robo!"
+msgid "[Game] CaptionLong"
 msgstr ""
 
 #: Game
-msgid "Robo"
+msgid "[Game] CaptionShort"
 msgstr ""
 
 #: Game
-msgid ""
-"This game illustrates reasoning with Lean using various topics from the "
-"introductory phase of the bachelor's degree program in mathematics."
+msgid "[Game] Conclusion"
 msgstr ""
 
 #: Game
-msgid "[Game conclusion]"
+msgid "[Game] Info"
 msgstr ""
 
 #: Game
-msgid "[Game info]"
+msgid "[Game] Introduction"
 msgstr ""
 
 #: Game
-msgid "[Main game intro]"
+msgid "[Game] Title"
 msgstr ""
 
 #: Game.Doc.Definition

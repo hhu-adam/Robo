@@ -13,27 +13,21 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: Game
-msgid "Explore an alien universe with the Smart-Elf Robo!"
-msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
-
-#: Game
-msgid "Robo"
-msgstr "Robo"
-
-#: Game
-msgid ""
-"This game illustrates reasoning with Lean using various topics from the "
-"introductory phase of the bachelor's degree program in mathematics."
+msgid "[Game] CaptionLong"
 msgstr ""
 "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
 "aus der Eingangsphase des Bachelorstudiums Mathematik."
 
 #: Game
-msgid "[Game conclusion]"
+msgid "[Game] CaptionShort"
+msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
+
+#: Game
+msgid "[Game] Conclusion"
 msgstr "QED"
 
 #: Game
-msgid "[Game info]"
+msgid "[Game] Info"
 msgstr ""
 "## Projekt ADAM\n"
 "\n"
@@ -75,7 +69,7 @@ msgstr ""
 "community/lean4game/issues)."
 
 #: Game
-msgid "[Main game intro]"
+msgid "[Game] Introduction"
 msgstr ""
 "# Game Over oder QED?\n"
 "\n"
@@ -123,6 +117,10 @@ msgstr ""
 "`[2026-03-20]` Robo gibts jetzt auch auf Englisch! \n"
 "\n"
 "Hintergrundinformationen und Credits findest du im Menü unter *Game Info*."
+
+#: Game
+msgid "[Game] Title"
+msgstr "Robo"
 
 #: Game.Doc.Definition
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
