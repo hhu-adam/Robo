@@ -12,7 +12,7 @@ A mapping `f` is injectiv, if:
 ∀ a b, f a = f b → a = b
 ```
 -/
-DefinitionDoc Function.Injective as "Injective" in "Fun"
+DefinitionDoc Function.Injective as "Injective" in "Function"
 
 
 /--
@@ -22,12 +22,12 @@ A mapping `f` is surjectiv, if:
 ∀ b, ∃ a, f a = b
 ```
 -/
-DefinitionDoc Function.Surjective as "Surjective" in "Fun"
+DefinitionDoc Function.Surjective as "Surjective" in "Function"
 
 /--
 A mapping ist bijectiv, if it is injektiv and surjektiv.
 -/
-DefinitionDoc Function.Bijective as "Bijective" in "Fun"
+DefinitionDoc Function.Bijective as "Bijective" in "Function"
 
 
 /--
@@ -37,7 +37,7 @@ A mapping `f` is strictly monotonous, if:
 ∀ ⦃a b⦄, a < b → f a < f b
 ```
 -/
-DefinitionDoc StrictMono as "StrictMono" in "Fun"
+DefinitionDoc StrictMono as "StrictMono" in "Function"
 
 
 /-- `Function.RightInverse f g` is defined as `LeftInverse g f`.
@@ -46,7 +46,7 @@ In other words: `∀ x, g (f x) = x`.
 You have to write `Function.RightInverse`  instead of `RightInverse`,
 as `RightInverse` is ambigous in Leanic.
 -/
-DefinitionDoc Function.RightInverse as "RightInverse" in "Fun"
+DefinitionDoc Function.RightInverse as "RightInverse" in "Function"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
 -- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
 
@@ -55,7 +55,7 @@ DefinitionDoc Function.RightInverse as "RightInverse" in "Fun"
 `LeftInverse g f` means `g ∘ f = id`, or more exactly:
 `∀ x, g (f x) = x`, as can be seen with `unfold`.
 -/
-DefinitionDoc Function.LeftInverse as "LeftInverse" in "Fun"
+DefinitionDoc Function.LeftInverse as "LeftInverse" in "Function"
 
 
 /--
@@ -63,20 +63,20 @@ DefinitionDoc Function.LeftInverse as "LeftInverse" in "Fun"
 
 `HasLeftInverse f` means, that `f` has left inverse.
 -/
-DefinitionDoc Function.HasRightInverse as "Has…Inverse" in "Fun"
+DefinitionDoc Function.HasRightInverse as "Has…Inverse" in "Function"
 
 
 /--
 For a self-mapping `f : A → A` and an element `a : A`, `IsFixedPt f a` is the expression `f a = a`.
 Look up definition with `unfold IsFixedPt`.
 -/
-DefinitionDoc Function.IsFixedPt as "IsFixedPt" in "Fun"
+DefinitionDoc Function.IsFixedPt as "IsFixedPt" in "Function"
 
 /--
 For a mapping `f : A → A`, `fixedPoints f : Set A` is the set of fixed points of `f `.
 Look up definition with `unfold fixedPoints`.
 -/
-DefinitionDoc Function.fixedPoints as "fixedPoints" in "Fun"
+DefinitionDoc Function.fixedPoints as "fixedPoints" in "Function"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their union.
@@ -145,7 +145,7 @@ For example, `fun (x : ℤ) ↦  -x` defines the negation `ℤ → ℤ` without 
 You write the arrow `↦` as `\maps` or `\mapsto`.
 Alternatively, instead of `↦` you can use `=>`.
 -/
-DefinitionDoc Symbol.function as "fun x ↦ _" in "Fun"
+DefinitionDoc Symbol.function as "fun x ↦ _" in "Function"
 
 
 /- MENGEN -/
