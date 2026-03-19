@@ -108,7 +108,7 @@ msgstr ""
 "\n"
 "## News \n"
 "\n"
-"`[2026-03-28]` The game is now available in English! \n"
+"`[2026-03-20]` The game is now available in English! \n"
 "\n"
 "For background information and credits, see *Game Info* in the menu."
 
