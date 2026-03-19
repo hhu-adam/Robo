@@ -115,8 +115,24 @@
  "Explore a different universe with your smart-elf Scribble!",
  "[Game] CaptionLong":
  "This game illustrates theorem proving in Lean using various topics from the first year of a typical Bachelor's degree programme in Mathematics.",
+ "[Doc.Theorem] §0 or §1 can be used instead":
+ "The tactics §0 and §1 can often be used in place of this statement.",
+ "[Doc.Theorem] §0 can be used instead":
+ "Logical statements like this can also be proved with §0.",
+ "[Doc.Theorem] map_sum\nLinear mapping, or 'additive' mappings in general, can be exchanged with a sum.":
+ "Linear maps (or, more generally, “additive” maps) can be moved into a sum.",
+ "[Doc.Theorem] can use §0 instead": "Instead of this theorem, you can use §0.",
+ "[Doc.Theorem] StrictMono.injective":
+ "Every strictly monotonic map (between suitable domains and ranges) is injective.",
+ "[Doc.Theorem] StrictMono.add\nif §0 and §1 strictly monotonous, then also §2 strictly monotonous":
+ "If §0 and §1 are both strictly monotonic, then §2 is also strictly monotonic.",
  "[Doc.Theorem] Set.Finite.toFinset:\nGiven §0, §1 with §2, §3,\n§4, §5 is the same subset viewed as finite subset.":
  "Given a subset §1 which is finite by some assumption §2,\nthe expression §5 denotes the same subset §0, but now explicitly viewed as a *finite* subset.",
+ "[Doc.Theorem] Odd.strictMono_pow\nfor odd §0, §1 is strictly monotonous\ngiven §2, can write §3 as §4":
+ "For odd §0, the map §1 is strictly monotonic. \n\n*Note*: Given the assumption §2, you can write §3 as §4.",
+ "[Doc.Theorem] Nat.even_square": "The square of an even number is even.",
+ "[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\nevery §0 matrix §1 over §2 an be expressed as\n§3\nmore generally, use §4 for §5 matrices over any §6":
+ "Every real §0 matrix §2 can be written as\n§3. \n\nSee §4 for more general matrices with more general coefficients.",
  "[Doc.Definition] Nonempty\n§0\nfor §1, §2, §3 means T is non-empty\nfor §4, §5, §6 means §7; check this with §8\nAs goal:\ngiven §9, §10, use §11\ngiven §12, §13 such that §14, §15, use §16\nAs assumption:\ngiven §17, use §18 to obtain §19, §20\ngiven §21, use §22 to obtain §23, §24, §25, §26":
  "For a set (or rather: a “type”) §1, the statement §3 means that some element in §1 (“of type §1”) exists. \nSimilarly, for a subset §5, the expression §6 is equivalent to §7. You can easily verify this equivalence using §8.\n\n## §0 as goal\n\nIf you're already given or have constructed some element §10, you can prove §3 using §11. \nSimilarly, if you have an element §12 such that §14, you can prove §6 using §16.\n\n\n## §0 as assumption\n\nFor a set §1, you can extract some §20 from the assumption §17 using §18. \nFor a subset §5, you can extract a §23 with §26 from the assumption §21 using §22.",
  "[Babylon] Split §0 with §1: §2":
@@ -361,8 +377,6 @@
  "**You**: Yes, that seems natural to me now, too.",
  "This looks good!":
  "Cantor rubs his hands together. \n\n**Cantor**: That looks good!",
- "This kind of logical expression can often be solved via §0.":
- "Logical statements like this can also be proved with §0.",
  "This can be simplified": "**Scribble**: I'm sure this can be simplified …",
  "The §0 tactic pushes negation past quantifiers:\n\n| before       | after      |\n|:------------ |:-------------|\n| §1  | §2  |\n| §3  | §4  |\n\nIn nested expressions, it pushes the negation §5 as far to the right as possible.\nFor example, the proof goal\n§6\nwith §7\n§8\n\n## Friends and relatives\n\nThe two lemmas §9 and §10 can be applied individually with §11.":
  "The tactic §0 can push the logical negation operator past quantifiers: \n\n| before | after | \n|:------------ |:-------------|\n| §1 | §2 | \n| §3 | §4 | \n\nIn nested expressions, it pushes the negation §5 as far to the right as possible. For example, the goal \n§6\nbecomes \n§8\n\n## Friends and relations \n\nThe tactic is based on the two lemmas §9 and §10, which can be applied individually with §11.",
@@ -404,8 +418,6 @@
  "The statement §0 is always true. \n\n## §1 as goal\n\nTactics §2 and §3 conclude every proof with goal §4. \n\n## §5 as assumption \n\nAs an assumption, §6 is not helpful at all.",
  "The statement §0 is always false.\n\n## §1 as proof target\n\nIf §2 is your proof target, you can try to find a contradiction in your assumptions, for example.\nOnce the contradiction is sufficiently evident, §3 concludes such a proof.\n\nIf §4 is your proof goal and you have an assumption or lemma of the form §5 available,\nyou can use §6 to change the proof goal to §7\n(because §8 means §9).\n\n## §10  as an assumption\n\nIf you have §11 as an assumption, you can immediately end the proof with §12\n– because, as is well known, any other statement follows from a false statement.":
  "The statement §0 is always false. \n\n## §1 as goal\n\nIf §2 is your goal, you can, for example, try to find a contradiction in your assumptions. Once the contradiction is sufficiently evident, §3 concludes such a proof.\n\nIf §4 is your goal and you have an assumption or lemma of the form §5 available, you can use §6 to change the goal to §7 (because §8 means §9). \n\n## §10 as assumption \n\nIf you find §11 among your assumptions, you can immediately end the proof with §12, since every other statement follows from a false statement.",
- "The square of an even number is also even.":
- "The square of an even number is even.",
  "The simplest method here is §0":
  "**Scribble**: I think the easiest way to proceed here is with §0.",
  "The second §0 means the same as the first: logical negation. Interpret it as the self\nmapping of the set §1 of all possible satements.":
@@ -434,8 +446,6 @@
  "**Scribble**: As always when your goal starts with §0, you start with §1. Or you first define the map you want to use with §2, just like earlier. By the way, you can write the arrow §3 as §4 or §5, or you use §6 instead.",
  "Surjectivity states that each §0 possesses a preimage §1.\nTry to construct a inverse mapping via §2":
  "**Scribble**: From surjectivity, you know that every §0 has a preimage §1. Can't you use this to construct an inverse map with §2?",
- "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden.":
- "The tactics §0 and §1 can often be used in place of this statement.",
  "Start with §0 or §1":
  "**Scribble**: Perhaps you could start with §0 again. Or with §1.",
  "Start with §0": "**Scribble**: I would start with §0 again.",
@@ -453,8 +463,6 @@
  "Solve second half of §0 operation":
  "**You**: And I thought that was it. \n\n**Scribble**: Almost there! Just the second half of the §0 step remaining. This half is quite simple.",
  "So far so good": "**Scribble**: So far, so good.",
- "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton.":
- "If §0 and §1 are both strictly monotonic, then §2 is also strictly monotonic.",
  "Simplify goal with §0":
  "**Scribble**: With §0, you can simplify the goal somewhat.",
  "Simplify": "**You**: Ah yes, when in doubt, simplify.",
@@ -482,8 +490,6 @@
  "**You**: I guess §0 is the set of all fixed points? \n\n**Scribble**: Have a look – §1 ought to show you what it is.",
  "Saturn": "Saturn",
  "Samarkand": "Samarkand",
- "Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\nals §3.\n\nSiehe auch §4, welches die generalisierte Form für\n§5-Matrix (über beliebigem §6) ist.":
- "Every real §0 matrix §2 can be written as §3. \n\nSee §4 for more general matrices with more general coefficients.",
  "Robotswana": "Ethiopia",
  "Ritha gives signs to try omega": "Ritha is again darting glances.",
  "Rewrite §0. Start with §1 to replace §2 with §3":
@@ -608,8 +614,6 @@
  "**You**: So now I have to work my way through the definitions?\n\n**Scribble**: Looks like it.",
  "Look at §0": "**Scribble**: Remember §0.",
  "Logo": "Logo",
- "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum.":
- "Linear maps (or, more generally, “additive” maps) can be moved into a sum.",
  "Known that there exists some element in §0. Try §1":
  "**Scribble**: At least you know that *some* element exists in §0. Perhaps you could “construct” it using §1.",
  "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n§3\n":
@@ -890,18 +894,12 @@
  "**Scribble**: I know what he means! Instead of §0, you can also use §1. It works exactly the same, except that the two proof goals are reversed. \n\n**You**: So after §2, I first have to show how to complete the proof with §3 before I prove §4? \n\n**Scribble**: Exactly!",
  "Instead of §0 and §1 try §2":
  "**You**: Well, I know §0 and §1, but we wanted to avoid those this time. \n\n**Scribble**: What you could do is split the assumption into two parts with §2.",
- "Instead of this theorem you can use §0.":
- "Instead of this theorem, you can use §0.",
  "Insert §0 via §1":
  "**Scribble**: Now you can §1 your §0 and see if your definition was correct.",
  "Inequality §0 is defined as §1.  You can see this with §2.":
  "Inequality §0 is defined as §1. You can see this with §2.",
  "Increase readability of §0. Try §1":
  "**Scribble**: And now make the assumption §0 a little more readable. Maybe try §1?",
- "In most cases §0 can be used to solve this kind of logical expression.":
- "Logical statements like this can also be proved with §0.",
- "In lieu of this theorem you can use §0.":
- "Instead of this theorem, you can use §0.",
  "Implis": "Implis",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, understood as a natural number. (If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relations\n\nA natural number §4 can always be interpreted as an integer. To do this, you write it either explicitly as §5 or as §6.",
@@ -942,8 +940,6 @@
  "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove §2. These formal fanatics are crazy. Can't I just say §3 again? \n\n**Scribble**: No, that won't work this time. You'll have to break the goal into two parts. Try §4.\n\n**You**: You mean §5? \n\n**Scribble**: No, §6. I know it's confusing, but that's what they call it here.",
  "Given\n\n§0\n\nShow\n§1\n":
  "**You**: I need to write down for myself, first. So we're given: \n\n$0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
- "Für ungerades §0 ist §1 strikt monoton.\n\n*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben.":
- "For odd §0, the map §1 is strictly monotonic. \n\n*Note*: Given the assumption §2, you can write §3 as §4.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
  "For §0, the notation §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6. \n\n## §1 as proof goal\n\nIf §1 is your goal, you can pick an element §9 with §10 using §8 (and then show §11). \n\n## §1 as assumption\n\nGiven the assumption §12 and an element §13 with §14 is given, you obtain the statement §16 with §15. \n\nYou write §17 as §18.",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":
@@ -1091,8 +1087,6 @@
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nThe statement therefore has two parts: first, such an §6 exists, and second, §7 is unique.\n## §8 as a proof goal\n\nTo prove a statement of the form §9, first construct a suitable element §10 and\nthen use the §11 tactic (§12), usually immediately followed by §13.\nThe proof goal should then have the following form:\n\n§14\n\nOn the left is §15: you still have to show that §16 has the required property.\nOn the right is the uniqueness statement: every element with this property is equal to §17.\n\n## §18 as an assumption\n\nYou can prove an assumption of the form §19 with\n\n§20\ninto its components\n§21\n.":
  "Existential quantifier: \nGiven a predicate §0, the statement §1 asserts that there exists *exactly one* element §2 in §3 (more precisely: of type §4) for which the §5 is true. The statement therefore has two parts: firstly, such an §6 exists, and secondly, §7 is unique.\n\n## §8 as goal\n\n To prove a statement of the form §9, you first construct a suitable element §10 and then use it with the §11 tactic (§12), usually immediately followed by §13. After that, the goal should have the following form: §14\n\nOn the left you have §15:  you still have to show that §16 has the required property. On the right you have the uniqueness statement: every element with this property is equal to §17. \n\n## §18 as assumption \n\nYou can break down an assumption of the form §19 into its components \n§21\nusing\n§20.",
  "Exactly, try §0": "**Scribble**: Exactly, that was §0.",
- "Every strictly monotonic mapping (between suitable domains and ranges) is injective.":
- "Every strictly monotonic map (between suitable domains and ranges) is injective.",
  "Euklid": "Euclid",
  "Equality of sets demands §0": "**Scribble:** Equality of sets calls for §0.",
  "Epo": "Epo",

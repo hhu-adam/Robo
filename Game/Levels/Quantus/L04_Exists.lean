@@ -38,7 +38,7 @@ def Odd (n : ℕ) : Prop := ∃ r, n = 2 * r + 1
 
 open Nat
 
-/-- The square of an even number is also even. -/
+/-- [Doc.Theorem] Nat.even_square -/
 TheoremDoc Nat.even_square as "even_square" in "ℕ"
 
 Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by

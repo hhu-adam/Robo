@@ -71,9 +71,9 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
 
 -- Note: The following two theorem are just added for completeness.
 
-/-- In lieu of this theorem you can use `push_neg`. -/
+/-- [Doc.Theorem] can use `push_neg` instead -/
 TheoremDoc not_exists as "not_exists" in "Logic"
-/-- Instead of this theorem you can use `push_neg`. -/
+/--  -/
 TheoremDoc Classical.not_forall as "not_forall" in "Logic"
 
 NewTheorem not_exists Classical.not_forall

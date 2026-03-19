@@ -4646,9 +4646,7 @@ msgstr ""
 #. §0: `tauto`
 #. §1: `simp`
 #: Game.Levels.Implis.L13_Rw
-msgid ""
-"Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet "
-"werden."
+msgid "[Doc.Theorem] §0 or §1 can be used instead"
 msgstr ""
 "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet "
 "werden."
@@ -4673,11 +4671,6 @@ msgstr ""
 "Der Operationsleiter sieht ihn entgeistert an.\n"
 "\n"
 "**Robo**: Keine Angst, ich verdaue nichts!"
-
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "In most cases §0 can be used to solve this kind of logical expression."
-msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
 
 #. §0: `→`
 #. §1: `↔`
@@ -4766,11 +4759,6 @@ msgstr ""
 "**Robo** *(flüsternd)*: Könnte man so sehen. Aber auf Leansch ist das bloß "
 "eine Äquivalenz."
 
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "This kind of logical expression can often be solved via §0."
-msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
-
 #. §0: `h`
 #. §1: `obtain`
 #: Game.Levels.Implis.L14_Summary
@@ -4781,6 +4769,11 @@ msgstr "**Robo**: Ich würde mal die Annahme §0 mit §1 aufteilen."
 #: Game.Levels.Implis.L14_Summary
 msgid "Try §0 to solve implication"
 msgstr "**Robo**: Na Implikationen gehst du immer mit §0 an."
+
+#. §0: `tauto`
+#: Game.Levels.Implis.L14_Summary
+msgid "[Doc.Theorem] §0 can be used instead"
+msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
 
 #: Game.Levels.Iso
 msgid "Intro Iso"
@@ -6187,40 +6180,6 @@ msgstr ""
 "Abbildung §4."
 
 #: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Every strictly monotonic mapping (between suitable domains and ranges) is "
-"injective."
-msgstr ""
-"Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und "
-"Wertebereichen) ist injektiv."
-
-#. §0: `n`
-#. §1: `x ↦ x ^ n`
-#. §2: `h_odd : Odd n`
-#. §3: `Odd.strictMono_pow h_odd`
-#. §4: `h_odd.strictMono_pow`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Für ungerades §0 ist §1 strikt monoton.\n"
-"\n"
-"*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 "
-"schreiben."
-msgstr ""
-"Für ungerades §0 ist §1 strikt monoton.\n"
-"\n"
-"*Bemerkung*:\n"
-"Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben."
-
-#. §0: `f`
-#. §1: `g`
-#. §2: `f + g`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
-msgstr ""
-"Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
-
-#: Game.Levels.Mono.L05_StrictMono
 msgid "The next part is elementary"
 msgstr ""
 "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
@@ -6233,6 +6192,38 @@ msgstr ""
 "**Du**: Oder …?\n"
 "\n"
 "**Robo**: Doch, doch. Schau mal mit §0 in die Definition von §1 hinein."
+
+#. §0: `n`
+#. §1: `x ↦ x^n`
+#. §2: `h_odd : Odd n`
+#. §3: `Odd.strictMono_pow h_odd`
+#. §4: `h_odd.strictMono_pow`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] Odd.strictMono_pow\n"
+"for odd §0, §1 is strictly monotonous\n"
+"given §2, can write §3 as §4"
+msgstr ""
+"Für ungerades §0 ist §1 strikt monoton.\n"
+"\n"
+"Hast Du §2 als Annahme gegeben, so kannst Du statt §3 auch einfach §4 "
+"schreiben."
+
+#. §0: `f`
+#. §1: `g`
+#. §2: `f + g`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] StrictMono.add\n"
+"if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
+msgstr ""
+"Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "[Doc.Theorem] StrictMono.injective"
+msgstr ""
+"Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und "
+"Wertebereichen) ist injektiv."
 
 #. §0: `Odd 3`
 #: Game.Levels.Mono.L05_StrictMono
@@ -7465,10 +7456,6 @@ msgstr ""
 "\n"
 "Damit erhaltet ihr auch ein weiteres Blatt:"
 
-#: Game.Levels.Quantus.L04_Exists
-msgid "The square of an even number is also even."
-msgstr "Das Quadrat einer geraden Zahl ist gerade."
-
 #. §0: `use r`
 #. §1: `use 2 * s^2`
 #: Game.Levels.Quantus.L04_Exists
@@ -7476,6 +7463,10 @@ msgid "Try §0 or instead §1"
 msgstr ""
 "**Robo**:  Die Zahl sieht gut aus!  Und jetzt sagst du einfach §0. Du "
 "hättest natürlich auch gleich §1 sagen können."
+
+#: Game.Levels.Quantus.L04_Exists
+msgid "[Doc.Theorem] Nat.even_square"
+msgstr "Das Quadrat einer geraden Zahl ist gerade."
 
 #. §0: `ring`
 #. §1: `rw`
@@ -7641,16 +7632,6 @@ msgstr ""
 "\n"
 "Die Frage war wieder zu konkret. Betretenes Schweigen."
 
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "In lieu of this theorem you can use §0."
-msgstr "Statt diesem Theorem kannst du §0 verwenden."
-
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Instead of this theorem you can use §0."
-msgstr "Statt dieses Theorems kannst du §0 verwenden."
-
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
 msgstr ""
@@ -7688,6 +7669,11 @@ msgstr ""
 "\n"
 "**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde "
 "jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
+
+#. §0: `push_neg`
+#: Game.Levels.Quantus.L09_PushNeg
+msgid "[Doc.Theorem] can use §0 instead"
+msgstr "Statt diesem Theorem kannst du §0 verwenden."
 
 #. §0: `∃`
 #. §1: `∀`
@@ -8041,25 +8027,6 @@ msgstr ""
 "Pergamentstücke.\n"
 "Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
 
-#. §0: $(n × n)$
-#. §1: $\\mathbb{R}$
-#. §2: $A$
-#. §3: $A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$
-#. §4: `matrix_eq_sum_single`
-#. §5: $(m × n)$
-#. §6: $R$
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid ""
-"Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\n"
-"als §3.\n"
-"\n"
-"Siehe auch §4, welches die generalisierte Form für\n"
-"§5-Matrix (über beliebigem §6) ist."
-msgstr ""
-"Jede reelle §0-Matrix §2 lässt sich schreiben als §3.\n"
-"\n"
-"Siehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten."
-
 #. §0: `apply matrix_eq_sum_single`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "Try to use §0"
@@ -8068,6 +8035,25 @@ msgstr ""
 "meiner Bibliothek. Das ist genau §0.\n"
 "\n"
 "**Du**: Super! Dann brauchen wir uns ja gar nicht damit aufhalten."
+
+#. §0: $(n × n)$
+#. §1: $A$
+#. §2: $\\mathbb{R}$
+#. §3: $$A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$$
+#. §4: `matrix_eq_sum_single`
+#. §5: $(m × n)$
+#. §6: $R$
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid ""
+"[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
+"every §0 matrix §1 over §2 an be expressed as\n"
+"§3\n"
+"more generally, use §4 for §5 matrices over any §6"
+msgstr ""
+"Jede reelle §0-Matrix §2 lässt sich schreiben als\n"
+"§3.\n"
+"\n"
+"Siehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten."
 
 #. §0: `sum_congr`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -8351,14 +8337,6 @@ msgstr ""
 "Während Robo die nähere Umgebung absucht, setzt du dich erschöpft hin und "
 "starrst unter der warmen Sonne etwas beduselt auf den Pergamentfetzen."
 
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid ""
-"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
-"sum."
-msgstr ""
-"Lineare Abbildungen (oder allgemeiner „additive“ Abbildungen) kann man mit "
-"einer Summe vertauschen."
-
 #. §0: `«{i}» = «{j}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "Prove by cases for §0"
@@ -8426,6 +8404,15 @@ msgstr ""
 "**Robo**: Mach doch folgenden Zwischenschritt:\n"
 "\n"
 "§3"
+
+#: Game.Levels.Robotswana.L08_EvalOnEBasis
+msgid ""
+"[Doc.Theorem] map_sum\n"
+"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
+"sum."
+msgstr ""
+"Lineare Abbildungen (oder allgemeiner „additive“ Abbildungen) kann man mit "
+"einer Summe vertauschen."
 
 #. §0: `IN_HINT 1`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
@@ -9939,6 +9926,9 @@ msgstr "– Aufgabe gelöst!  Aber nicht ganz so wie gedacht. –"
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr "– Aufgabe gelöst! –"
+
+#~ msgid "This kind of logical expression can often be solved via §0."
+#~ msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
 
 #~ msgid "Conclusion Spinoza L04"
 #~ msgstr "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"

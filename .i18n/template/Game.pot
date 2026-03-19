@@ -3077,18 +3077,11 @@ msgstr ""
 #. §0: `tauto`
 #. §1: `simp`
 #: Game.Levels.Implis.L13_Rw
-msgid ""
-"Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet "
-"werden."
+msgid "[Doc.Theorem] §0 or §1 can be used instead"
 msgstr ""
 
 #: Game.Levels.Implis.L14_Summary
 msgid "Conclusion Implis L14"
-msgstr ""
-
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "In most cases §0 can be used to solve this kind of logical expression."
 msgstr ""
 
 #. §0: `→`
@@ -3131,11 +3124,6 @@ msgstr ""
 msgid "Remind that §0 in this case is equivalence"
 msgstr ""
 
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "This kind of logical expression can often be solved via §0."
-msgstr ""
-
 #. §0: `h`
 #. §1: `obtain`
 #: Game.Levels.Implis.L14_Summary
@@ -3145,6 +3133,11 @@ msgstr ""
 #. §0: `intro`
 #: Game.Levels.Implis.L14_Summary
 msgid "Try §0 to solve implication"
+msgstr ""
+
+#. §0: `tauto`
+#: Game.Levels.Implis.L14_Summary
+msgid "[Doc.Theorem] §0 can be used instead"
 msgstr ""
 
 #: Game.Levels.Iso
@@ -4006,33 +3999,6 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Every strictly monotonic mapping (between suitable domains and ranges) is "
-"injective."
-msgstr ""
-
-#. §0: `n`
-#. §1: `x ↦ x ^ n`
-#. §2: `h_odd : Odd n`
-#. §3: `Odd.strictMono_pow h_odd`
-#. §4: `h_odd.strictMono_pow`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Für ungerades §0 ist §1 strikt monoton.\n"
-"\n"
-"*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 "
-"schreiben."
-msgstr ""
-
-#. §0: `f`
-#. §1: `g`
-#. §2: `f + g`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
-msgstr ""
-
-#: Game.Levels.Mono.L05_StrictMono
 msgid "The next part is elementary"
 msgstr ""
 
@@ -4040,6 +4006,31 @@ msgstr ""
 #. §1: `StrictMono`
 #: Game.Levels.Mono.L05_StrictMono
 msgid "Use §0 to look into definition of §1"
+msgstr ""
+
+#. §0: `n`
+#. §1: `x ↦ x^n`
+#. §2: `h_odd : Odd n`
+#. §3: `Odd.strictMono_pow h_odd`
+#. §4: `h_odd.strictMono_pow`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] Odd.strictMono_pow\n"
+"for odd §0, §1 is strictly monotonous\n"
+"given §2, can write §3 as §4"
+msgstr ""
+
+#. §0: `f`
+#. §1: `g`
+#. §2: `f + g`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] StrictMono.add\n"
+"if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
+msgstr ""
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "[Doc.Theorem] StrictMono.injective"
 msgstr ""
 
 #. §0: `Odd 3`
@@ -4799,14 +4790,14 @@ msgid ""
 "§1"
 msgstr ""
 
-#: Game.Levels.Quantus.L04_Exists
-msgid "The square of an even number is also even."
-msgstr ""
-
 #. §0: `use r`
 #. §1: `use 2 * s^2`
 #: Game.Levels.Quantus.L04_Exists
 msgid "Try §0 or instead §1"
+msgstr ""
+
+#: Game.Levels.Quantus.L04_Exists
+msgid "[Doc.Theorem] Nat.even_square"
 msgstr ""
 
 #. §0: `ring`
@@ -4906,16 +4897,6 @@ msgstr ""
 msgid "Conclusion Quantus L09"
 msgstr ""
 
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "In lieu of this theorem you can use §0."
-msgstr ""
-
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Instead of this theorem you can use §0."
-msgstr ""
-
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
 msgstr ""
@@ -4939,6 +4920,11 @@ msgstr ""
 msgid ""
 "Try §0 with a number and then §1. You can not use §2\n"
 "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+msgstr ""
+
+#. §0: `push_neg`
+#: Game.Levels.Quantus.L09_PushNeg
+msgid "[Doc.Theorem] can use §0 instead"
 msgstr ""
 
 #. §0: `∃`
@@ -5149,25 +5135,24 @@ msgstr ""
 msgid "Intro Robotswana L04"
 msgstr ""
 
+#. §0: `apply matrix_eq_sum_single`
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid "Try to use §0"
+msgstr ""
+
 #. §0: $(n × n)$
-#. §1: $\\mathbb{R}$
-#. §2: $A$
-#. §3: $A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$
+#. §1: $A$
+#. §2: $\\mathbb{R}$
+#. §3: $$A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$$
 #. §4: `matrix_eq_sum_single`
 #. §5: $(m × n)$
 #. §6: $R$
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid ""
-"Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\n"
-"als §3.\n"
-"\n"
-"Siehe auch §4, welches die generalisierte Form für\n"
-"§5-Matrix (über beliebigem §6) ist."
-msgstr ""
-
-#. §0: `apply matrix_eq_sum_single`
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid "Try to use §0"
+"[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
+"every §0 matrix §1 over §2 an be expressed as\n"
+"§3\n"
+"more generally, use §4 for §5 matrices over any §6"
 msgstr ""
 
 #. §0: `sum_congr`
@@ -5347,12 +5332,6 @@ msgstr ""
 msgid "Intro Robotswana L08"
 msgstr ""
 
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid ""
-"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
-"sum."
-msgstr ""
-
 #. §0: `«{i}» = «{j}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "Prove by cases for §0"
@@ -5404,6 +5383,13 @@ msgstr ""
 #. §3: `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "Use disappearing §0 in §1 with §2. Try §3"
+msgstr ""
+
+#: Game.Levels.Robotswana.L08_EvalOnEBasis
+msgid ""
+"[Doc.Theorem] map_sum\n"
+"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
+"sum."
 msgstr ""
 
 #. §0: `IN_HINT 1`

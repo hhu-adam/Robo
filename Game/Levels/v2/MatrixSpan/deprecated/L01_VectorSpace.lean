@@ -115,12 +115,9 @@ Conclusion ""
 /---/
 TheoremDoc Matrix.add_apply as "Matrix.add_apply" in "Matrix"
 
-
--- TODO: Move
-/-- Dieses Theorem sollte eigentlich woanders eingeführt werden -/
+/---/
 TheoremDoc Finset.mul_sum as "Finset.mul_sum" in "Matrix"
-
-
+-- TODO:  Finset.mul_sum sollte besser woanders eingeführt werden.
 
 NewTheorem Matrix.add_apply Finset.mul_sum
 

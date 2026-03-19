@@ -4523,9 +4523,7 @@ msgstr ""
 #. §0: `tauto`
 #. §1: `simp`
 #: Game.Levels.Implis.L13_Rw
-msgid ""
-"Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet "
-"werden."
+msgid "[Doc.Theorem] §0 or §1 can be used instead"
 msgstr "The tactics §0 and §1 can often be used in place of this statement."
 
 #: Game.Levels.Implis.L14_Summary
@@ -4548,11 +4546,6 @@ msgstr ""
 "in disbelief. \n"
 "\n"
 "**Robo**: Don't worry, I don't digest anything!"
-
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "In most cases §0 can be used to solve this kind of logical expression."
-msgstr "Logical statements like this can also be proved with §0."
 
 #. §0: `→`
 #. §1: `↔`
@@ -4630,11 +4623,6 @@ msgstr ""
 "**Scribble** *(whispering)*: You could see it that way. But in Leanish, "
 "these two are  equivalence."
 
-#. §0: `tauto`
-#: Game.Levels.Implis.L14_Summary
-msgid "This kind of logical expression can often be solved via §0."
-msgstr "Logical statements like this can also be proved with §0."
-
 #. §0: `h`
 #. §1: `obtain`
 #: Game.Levels.Implis.L14_Summary
@@ -4646,6 +4634,11 @@ msgstr "**Scribble**: I would split the assumption §0 with §1."
 msgid "Try §0 to solve implication"
 msgstr ""
 "**Scribble**: Well, you always start with §0 when it comes to implications."
+
+#. §0: `tauto`
+#: Game.Levels.Implis.L14_Summary
+msgid "[Doc.Theorem] §0 can be used instead"
+msgstr "Logical statements like this can also be proved with §0."
 
 #: Game.Levels.Iso
 msgid "Intro Iso"
@@ -6003,39 +5996,6 @@ msgstr ""
 "index §2 to §3. In your interpretation, that's simply the map §4."
 
 #: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Every strictly monotonic mapping (between suitable domains and ranges) is "
-"injective."
-msgstr ""
-"Every strictly monotonic map (between suitable domains and ranges) is "
-"injective."
-
-#. §0: `n`
-#. §1: `x ↦ x ^ n`
-#. §2: `h_odd : Odd n`
-#. §3: `Odd.strictMono_pow h_odd`
-#. §4: `h_odd.strictMono_pow`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Für ungerades §0 ist §1 strikt monoton.\n"
-"\n"
-"*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 "
-"schreiben."
-msgstr ""
-"For odd §0, the map §1 is strictly monotonic. \n"
-"\n"
-"*Note*: Given the assumption §2, you can write §3 as §4."
-
-#. §0: `f`
-#. §1: `g`
-#. §2: `f + g`
-#: Game.Levels.Mono.L05_StrictMono
-msgid ""
-"Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
-msgstr ""
-"If §0 and §1 are both strictly monotonic, then §2 is also strictly monotonic."
-
-#: Game.Levels.Mono.L05_StrictMono
 msgid "The next part is elementary"
 msgstr "**You**: Ha! And the rest is probably elementary."
 
@@ -6048,6 +6008,37 @@ msgstr ""
 "\n"
 "**Scribble**: Yes, yes. Why don't you §0 the definition of §1, so you see "
 "what you're doing?"
+
+#. §0: `n`
+#. §1: `x ↦ x^n`
+#. §2: `h_odd : Odd n`
+#. §3: `Odd.strictMono_pow h_odd`
+#. §4: `h_odd.strictMono_pow`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] Odd.strictMono_pow\n"
+"for odd §0, §1 is strictly monotonous\n"
+"given §2, can write §3 as §4"
+msgstr ""
+"For odd §0, the map §1 is strictly monotonic. \n"
+"\n"
+"*Note*: Given the assumption §2, you can write §3 as §4."
+
+#. §0: `f`
+#. §1: `g`
+#. §2: `f + g`
+#: Game.Levels.Mono.L05_StrictMono
+msgid ""
+"[Doc.Theorem] StrictMono.add\n"
+"if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
+msgstr ""
+"If §0 and §1 are both strictly monotonic, then §2 is also strictly monotonic."
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "[Doc.Theorem] StrictMono.injective"
+msgstr ""
+"Every strictly monotonic map (between suitable domains and ranges) is "
+"injective."
 
 #. §0: `Odd 3`
 #: Game.Levels.Mono.L05_StrictMono
@@ -7271,10 +7262,6 @@ msgstr ""
 "\n"
 "Now you receive another sheet of paper:"
 
-#: Game.Levels.Quantus.L04_Exists
-msgid "The square of an even number is also even."
-msgstr "The square of an even number is even."
-
 #. §0: `use r`
 #. §1: `use 2 * s^2`
 #: Game.Levels.Quantus.L04_Exists
@@ -7282,6 +7269,10 @@ msgid "Try §0 or instead §1"
 msgstr ""
 "**Scribble**: That number looks good! And now you just say §0. Of course, "
 "you could also have said §1 right away."
+
+#: Game.Levels.Quantus.L04_Exists
+msgid "[Doc.Theorem] Nat.even_square"
+msgstr "The square of an even number is even."
 
 #. §0: `ring`
 #. §1: `rw`
@@ -7446,16 +7437,6 @@ msgstr ""
 "\n"
 "That question was too specific again. Awkward silence."
 
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "In lieu of this theorem you can use §0."
-msgstr "Instead of this theorem, you can use §0."
-
-#. §0: `push_neg`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Instead of this theorem you can use §0."
-msgstr "Instead of this theorem, you can use §0."
-
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
 msgstr ""
@@ -7494,6 +7475,11 @@ msgstr ""
 "**Scribble**: Maybe you can – I'll show you later, not here in front of a "
 "large audience. As I said, I would rather first specify a real number with "
 "§4 and then rewrite."
+
+#. §0: `push_neg`
+#: Game.Levels.Quantus.L09_PushNeg
+msgid "[Doc.Theorem] can use §0 instead"
+msgstr "Instead of this theorem, you can use §0."
 
 #. §0: `∃`
 #. §1: `∀`
@@ -7831,25 +7817,6 @@ msgstr ""
 "the area somewhat haphazardly and stumble upon various pieces of parchment. "
 "Most of them are blank or illegible, but one you can decipher."
 
-#. §0: $(n × n)$
-#. §1: $\\mathbb{R}$
-#. §2: $A$
-#. §3: $A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$
-#. §4: `matrix_eq_sum_single`
-#. §5: $(m × n)$
-#. §6: $R$
-#: Game.Levels.Robotswana.L04_MatrixEqSum
-msgid ""
-"Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\n"
-"als §3.\n"
-"\n"
-"Siehe auch §4, welches die generalisierte Form für\n"
-"§5-Matrix (über beliebigem §6) ist."
-msgstr ""
-"Every real §0 matrix §2 can be written as §3. \n"
-"\n"
-"See §4 for more general matrices with more general coefficients."
-
 #. §0: `apply matrix_eq_sum_single`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "Try to use §0"
@@ -7858,6 +7825,25 @@ msgstr ""
 "my library. This is exactly §0. \n"
 "\n"
 "**You**: Great! Then we don't need to dwell on it."
+
+#. §0: $(n × n)$
+#. §1: $A$
+#. §2: $\\mathbb{R}$
+#. §3: $$A = \\sum_{i=0}^{n-1}\\sum_{j=0}^{n-1} A_{ij} \\cdot E(i, j)$$
+#. §4: `matrix_eq_sum_single`
+#. §5: $(m × n)$
+#. §6: $R$
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid ""
+"[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
+"every §0 matrix §1 over §2 an be expressed as\n"
+"§3\n"
+"more generally, use §4 for §5 matrices over any §6"
+msgstr ""
+"Every real §0 matrix §2 can be written as\n"
+"§3. \n"
+"\n"
+"See §4 for more general matrices with more general coefficients."
 
 #. §0: `sum_congr`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
@@ -8138,13 +8124,6 @@ msgstr ""
 "While Scribble searches the immediate vicinity, you sit down, exhausted, and "
 "gaze at the scrap of parchment.  The sun is blazing."
 
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-msgid ""
-"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
-"sum."
-msgstr ""
-"Linear maps (or, more generally, “additive” maps) can be moved into a sum."
-
 #. §0: `«{i}» = «{j}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "Prove by cases for §0"
@@ -8211,6 +8190,14 @@ msgstr ""
 "**Scribble**: Why not formulate the following intermediate step: \n"
 "\n"
 "§3"
+
+#: Game.Levels.Robotswana.L08_EvalOnEBasis
+msgid ""
+"[Doc.Theorem] map_sum\n"
+"Linear mapping, or 'additive' mappings in general, can be exchanged with a "
+"sum."
+msgstr ""
+"Linear maps (or, more generally, “additive” maps) can be moved into a sum."
 
 #. §0: `IN_HINT 1`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
@@ -9677,6 +9664,9 @@ msgstr "– Problem solved.  But not quite as intended … –"
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr "– Problem solved! –"
+
+#~ msgid "This kind of logical expression can often be solved via §0."
+#~ msgstr "Logical statements like this can also be proved with §0."
 
 #~ msgid "Conclusion Spinoza L04"
 #~ msgstr "**Benedictus**: I see. You're quick learners!"

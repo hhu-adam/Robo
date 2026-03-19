@@ -25,11 +25,10 @@ Conclusion "Conclusion Robotswana L04"
 
 open Nat Matrix -- BigOperators
 
-/-- Sagt aus, dass man jede $(n × n)$-Matrix (über $\mathbb{R}$) $A$ schreiben kann
-als $A = \sum_{i=0}^{n-1}\sum_{j=0}^{n-1} A_{ij} \cdot E(i, j)$.
-
-Siehe auch `matrix_eq_sum_single`, welches die generalisierte Form für
-$(m × n)$-Matrix (über beliebigem $R$) ist. -/
+/-- [Doc.Theorem] Matrix.matrix_eq_sum_ebasis
+every $(n × n)$ matrix $A$ over $\mathbb{R}$ an be expressed as
+$$A = \sum_{i=0}^{n-1}\sum_{j=0}^{n-1} A_{ij} \cdot E(i, j)$$
+more generally, use `matrix_eq_sum_single` for $(m × n)$ matrices over any $R$ -/
 TheoremDoc Matrix.matrix_eq_sum_ebasis as "matrix_eq_sum_ebasis" in "Matrix"
 
 Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :

@@ -57,7 +57,7 @@ Conclusion "Conclusion Implis L13: Explain that `rw` always tries to apply `rfl`
 OnlyTactic rw
 
 
-/-- Statt dieser Aussage können oft auch die Taktiken `tauto` oder `simp` verwendet werden. -/
+/-- [Doc.Theorem] `tauto` or `simp` can be used instead -/
 TheoremDoc Classical.not_not as "not_not" in "Logic"
 NewTheorem Classical.not_not
 TheoremTab "Logic"

@@ -68,18 +68,18 @@ Statement :
     intro a b
     simp
 
-/--
-Every strictly monotonic mapping (between suitable domains and ranges) is injective.
--/
+/-- [Doc.Theorem] StrictMono.injective -/
 TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"
 
-/-- Für ungerades `n` ist `x ↦ x ^ n` strikt monoton.
-
-*Bemerkung*: Hat man `h_odd : Odd n` als Annahme, so kann man statt `Odd.strictMono_pow h_odd` auch einfach `h_odd.strictMono_pow` schreiben.
+/-- [Doc.Theorem] Odd.strictMono_pow
+for odd `n`, `x ↦ x^n` is strictly monotonous
+given `h_odd : Odd n`, can write `Odd.strictMono_pow h_odd` as `h_odd.strictMono_pow`
 -/
 TheoremDoc Odd.strictMono_pow as "Odd.strictMono_pow" in "Function"
 
-/-- Sind `f` und `g` beide strikt monoton sind, so ist auch `f + g` strikt momonton. -/
+/-- [Doc.Theorem] StrictMono.add
+if `f` and `g` strictly monotonous, then also `f + g` strictly monotonous
+-/
 TheoremDoc StrictMono.add as "StrictMono.add" in "Function"
 
 NewDefinition StrictMono

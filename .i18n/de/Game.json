@@ -114,8 +114,25 @@
  "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!",
  "[Game] CaptionLong":
  "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik.",
+ "[Doc.Theorem] §0 or §1 can be used instead":
+ "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden.",
+ "[Doc.Theorem] §0 can be used instead":
+ "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden.",
+ "[Doc.Theorem] map_sum\nLinear mapping, or 'additive' mappings in general, can be exchanged with a sum.":
+ "Lineare Abbildungen (oder allgemeiner „additive“ Abbildungen) kann man mit einer Summe vertauschen.",
+ "[Doc.Theorem] can use §0 instead":
+ "Statt diesem Theorem kannst du §0 verwenden.",
+ "[Doc.Theorem] StrictMono.injective":
+ "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv.",
+ "[Doc.Theorem] StrictMono.add\nif §0 and §1 strictly monotonous, then also §2 strictly monotonous":
+ "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton.",
  "[Doc.Theorem] Set.Finite.toFinset:\nGiven §0, §1 with §2, §3,\n§4, §5 is the same subset viewed as finite subset.":
  "Ist eine Teilmenge §1 mit der Annahme §2 gegeben, \nso ist §5 dieselbe Teilmenge §0, \naber nun explizit als *endliche* Teilmenge aufgefasst.",
+ "[Doc.Theorem] Odd.strictMono_pow\nfor odd §0, §1 is strictly monotonous\ngiven §2, can write §3 as §4":
+ "Für ungerades §0 ist §1 strikt monoton.\n\nHast Du §2 als Annahme gegeben, so kannst Du statt §3 auch einfach §4 schreiben.",
+ "[Doc.Theorem] Nat.even_square": "Das Quadrat einer geraden Zahl ist gerade.",
+ "[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\nevery §0 matrix §1 over §2 an be expressed as\n§3\nmore generally, use §4 for §5 matrices over any §6":
+ "Jede reelle §0-Matrix §2 lässt sich schreiben als\n§3.\n\nSiehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten.",
  "[Doc.Definition] Nonempty\n§0\nfor §1, §2, §3 means T is non-empty\nfor §4, §5, §6 means §7; check this with §8\nAs goal:\ngiven §9, §10, use §11\ngiven §12, §13 such that §14, §15, use §16\nAs assumption:\ngiven §17, use §18 to obtain §19, §20\ngiven §21, use §22 to obtain §23, §24, §25, §26":
  "Für eine Menge (genauer: einen “Typ”) §1 bedeutet §3, dass ein Element in §1 („vom Typ §1“) existiert.\nGenauso ist für eine Teilmenge §5 der Ausdruck §6 gleichbedeutend mit §7.  Letzteres kannst du leicht mit §8 prüfen.\n\n## §0 als Beweisziel\n\nHast du ein Element §10 bereits gegeben oder konstruiert, kannst du §3 mit §11 beweisen.\nGenauso beweist du, wenn dir ein Element §12 mit §14 vorliegt, §6 mit §16 beweisen.\n\n\n## §0 als Annahme\n\nFür eine Menge §1 extrahierst du aus der Annahme §17 mit §18 ein §20.\nFür eine Teilmenge §5 extrahierst du aus der Annahme §21 mit §22 ein §23 mit der Eigenschaft §26.",
  "[Babylon] Split §0 with §1: §2":
@@ -364,8 +381,6 @@
  "**Du**: Ja, das kommt mir jetzt auch natürlich vor.",
  "This looks good!":
  "Cantor reibt sich die Hände.\n\n**Cantor**:  Das sieht gut aus!",
- "This kind of logical expression can often be solved via §0.":
- "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden.",
  "This can be simplified":
  "**Robo**:  Das kann man bestimmt leicht vereinfachen …",
  "The §0 tactic pushes negation past quantifiers:\n\n| before       | after      |\n|:------------ |:-------------|\n| §1  | §2  |\n| §3  | §4  |\n\nIn nested expressions, it pushes the negation §5 as far to the right as possible.\nFor example, the proof goal\n§6\nwith §7\n§8\n\n## Friends and relatives\n\nThe two lemmas §9 and §10 can be applied individually with §11.":
@@ -408,8 +423,6 @@
  "Die Aussage §0 ist immer wahr.\n\n## §1 als Beweisziel\n\nDie Taktiken §2 und §3 schließen jeden Beweis mit §4 als Beweisziel.\n\n## §5 als Annahme\n\nAls Annahme ist §6 überhaupt nicht hilfreich.",
  "The statement §0 is always false.\n\n## §1 as proof target\n\nIf §2 is your proof target, you can try to find a contradiction in your assumptions, for example.\nOnce the contradiction is sufficiently evident, §3 concludes such a proof.\n\nIf §4 is your proof goal and you have an assumption or lemma of the form §5 available,\nyou can use §6 to change the proof goal to §7\n(because §8 means §9).\n\n## §10  as an assumption\n\nIf you have §11 as an assumption, you can immediately end the proof with §12\n– because, as is well known, any other statement follows from a false statement.":
  "Die Aussage §0 ist immer falsch.\n\n## §1 als Beweisziel\n\nIst §2 dein Beweisziel, kannst du zum Beispiel versuchen, in deinen Annahmen einen Widerspruch zu finden.\nSobald der Widerspruch hinreichend evident ist, schließt §3 einen solchen Beweis.\n\nIst §4 dein Beweisziel und du hast eine Annahme oder ein Lemma der Form §5 zur Verfügung, so kannst du mit §6 das Beweisziel zu §7 ändern (denn §8 bedeutet §9).\n\n## §10  als Annahme\n\nLiegt dir §11 als Annahme vor, kannst du den Beweis sofort mit §12 beenden – denn aus einer falschen Aussage folgt bekanntlich jede andere.",
- "The square of an even number is also even.":
- "Das Quadrat einer geraden Zahl ist gerade.",
  "The simplest method here is §0":
  "**Robo**:  Ich glaube, am einfachsten kommst du hier mit §0 weiter.",
  "The second §0 means the same as the first: logical negation. Interpret it as the self\nmapping of the set §1 of all possible satements.":
@@ -437,8 +450,6 @@
  "**Robo**: Wie immer gehst du ein §0 mit §1 an.  Oder du definierst dir erst einmal mit §2 eine Abbildung, die du benutzen möchtest, so, wie du es eben gerade gesehen hast. Den Pfeil §3 schreibst du übrigens als §4 oder §5. Aber du kannst auch stattdessen §6 benutzen.",
  "Surjectivity states that each §0 possesses a preimage §1.\nTry to construct a inverse mapping via §2":
  "**Robo**: Aus der Surjektivität weisst du, dass jedes §0 ein Urbild §1 hat. Kannst du daraus nicht mit §2 eine Umkehrabbildung konstruieren?",
- "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden.":
- "Statt dieser Aussage können oft auch die Taktiken §0 oder §1 verwendet werden.",
  "Start with §0 or §1":
  "**Robo**:  Vielleicht fängst du mal wieder mit §0 an. Oder mit §1.",
  "Start with §0": "**Robo**:  Ich würde wieder mit §0 anfangen.",
@@ -456,8 +467,6 @@
  "Solve second half of §0 operation":
  "**Du**: Und ich dachte schon das wär's.\n\n**Robo**: Fast, da ist noch die zweite Hälfte des §0-Befehls oben. Diese Hälfte ist ganz einfach.",
  "So far so good": "**Robo**:  So weit, so gut.",
- "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton.":
- "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton.",
  "Simplify goal with §0":
  "**Robo**: Mit §0 kannst du dir das Beweisziel etwas vereinfachen.",
  "Simplify": "**Du**: Ah ja, im Zweifelsfall vereinfachen.",
@@ -486,8 +495,6 @@
  "**Du**: Hier ist §0 wohl die Menge aller Fixpunkte?\n\n**Robo**: Probiers aus – §1 sollte wieder helfen.",
  "Saturn": "Saturn",
  "Samarkand": "Samarkand",
- "Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\nals §3.\n\nSiehe auch §4, welches die generalisierte Form für\n§5-Matrix (über beliebigem §6) ist.":
- "Jede reelle §0-Matrix §2 lässt sich schreiben als §3.\n\nSiehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten.",
  "Robotswana": "Robotswana",
  "Ritha gives signs to try omega": "Ritha macht wieder irgendwelche Zeichen.",
  "Rewrite §0. Start with §1 to replace §2 with §3":
@@ -615,8 +622,6 @@
  "**Du**:  Jetzt muss ich mich wohl doch ein bisschen durch die Definitionen hangeln?\n\n**Robo**: Sieht so aus.",
  "Look at §0": "**Robo**: Schau mal §0 an.",
  "Logo": "Logo",
- "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum.":
- "Lineare Abbildungen (oder allgemeiner „additive“ Abbildungen) kann man mit einer Summe vertauschen.",
  "Known that there exists some element in §0. Try §1":
  "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „kontruierst“ du dir das einmal mit §1.",
  "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n§3\n":
@@ -900,18 +905,12 @@
  "**Robo**: Ich weiß was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.\n\n**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschliesst, bevor ich §4 beweise?\n\n**Robo**: Genau!",
  "Instead of §0 and §1 try §2":
  "**Du**: Also, ich kenne §0 und §1, aber das wollten wir ja diesmal vermeiden.\n\n**Robo**: Was du machen könntest, ist, mit §2 die Annahme in zwei Teile aufteilen.",
- "Instead of this theorem you can use §0.":
- "Statt dieses Theorems kannst du §0 verwenden.",
  "Insert §0 via §1":
  "**Robo**: Jetzt kannst du dein §0 mit §1 einsetzen und sehen, ob deine Definition gut war.",
  "Inequality §0 is defined as §1.  You can see this with §2.":
  "Ungleichheit §0 ist definiert als §1.  Du siehst das mit §2.",
  "Increase readability of §0. Try §1":
  "**Robo**:  Und jetzt machst du die Annahme §0 ein bisschen lesbarer. Probier vielleicht einmal §1?",
- "In most cases §0 can be used to solve this kind of logical expression.":
- "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden.",
- "In lieu of this theorem you can use §0.":
- "Statt diesem Theorem kannst du §0 verwenden.",
  "Implis": "Implis",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "Ist §0 eine ganze Zahl größergleich 0, so ist §1 dieselbe Zahl, aufgefasst als natürliche Zahl.\n(Ist §2 eine negative ganze Zahl, so ist §3 ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)\n\n## Freunde und Verwandte\n\nEine natürliche Zahl §4 lässt sich stets als ganze Zahl auffassen.\nDafür schreibst du sie entweder explizit als §5 oder als §6.",
@@ -952,8 +951,6 @@
  "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass §2 gilt. Ich glaube, diese Formalospinner treiben mich noch zur Verzweiflung. Kann ich nicht wieder §3 sagen?\n\n**Robo**: Nee, diesmal wird das nicht funktionieren. Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §4.\n\n**Du**: Du meinst, §5??\n\n**Robo**: Nein, §6. Ich weiß, das ist verwirrend, aber die nennen das hier so weil man die Aussage aus mehreren Teilen konstruieren kann.",
  "Given\n\n§0\n\nShow\n§1\n":
  "Hint \"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben ist:\n\n§0\n\nUnd wir sollen zeigen:\n\n§1\n\nRobo??\n\nLina grinst.\n",
- "Für ungerades §0 ist §1 strikt monoton.\n\n*Bemerkung*: Hat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben.":
- "Für ungerades §0 ist §1 strikt monoton.\n\n*Bemerkung*:\nHat man §2 als Annahme, so kann man statt §3 auch einfach §4 schreiben.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
  "Für §0 bedeutet §1, dass §2 in §3 enthalten ist.\nDu kannst das mit §4 zu §6 umschreiben.\n\n## §1 als Beweisziel\n\nMit §8 gibst du dir ein beliebiges Element §9 mit §10 vor (und musst dann §11 zeigen).\n\n## §1 als Annahme\n\nIst §12 eine Annahme, und ist ein Element §13 mit §14 gegeben, erhältst du mit §15 die Aussage §16.\n\nDu schreibst §17 als §18.",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":
@@ -1101,8 +1098,6 @@
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nThe statement therefore has two parts: first, such an §6 exists, and second, §7 is unique.\n## §8 as a proof goal\n\nTo prove a statement of the form §9, first construct a suitable element §10 and\nthen use the §11 tactic (§12), usually immediately followed by §13.\nThe proof goal should then have the following form:\n\n§14\n\nOn the left is §15: you still have to show that §16 has the required property.\nOn the right is the uniqueness statement: every element with this property is equal to §17.\n\n## §18 as an assumption\n\nYou can prove an assumption of the form §19 with\n\n§20\ninto its components\n§21\n.":
  "Existenzieller Quantor:\nIst §0 ein Prädikat, so ist §1 die Aussage, dass *genau ein* Element §2 in §3 (genauer:\nvom Typ §4) existiert, für das die Aussage §5 wahr ist.\nDie Aussage hat also zwei Teile:\nerstens existiert solch ein §6, zweitens ist §7 eindeutig.\n\n## §8 als Beweisziel\n\nUm eine Aussage der Form §9 zu beweisen, konstruierst du zunächst ein geeignetes Element §10 und nutzt dann die §11-Taktik (§12), in der Regel unmittelbar gefolgt von §13.\nDanach sollte das Beweisziel folgende Form haben:\n\n§14\n\nLinks steht §15:\ndu musst noch zeigen, dass §16 die geforderte Eigenschaft hat.\nRechts steht die Eindeutigkeitsaussage:\njedes Element mit dieser Eigenschaft ist gleich §17.\n\n## §18 als Annahme\n\nEine Annahme der Form §19 kannst du mit\n\n§20\nin die Bestandteile\n§21\nzerlegen.",
  "Exactly, try §0": "**Robo**: Genau, das war §0.",
- "Every strictly monotonic mapping (between suitable domains and ranges) is injective.":
- "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv.",
  "Euklid": "Euklid",
  "Equality of sets demands §0": "**Robo**: Gleichheit von Mengen ruft nach §0.",
  "Epo": "Epo",
