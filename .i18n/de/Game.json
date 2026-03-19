@@ -104,11 +104,16 @@
  "**Du**: Ah, und jetzt §0!\n\n**Robo**: Aber zuerst musst du noch mit §1 §2 durch §3 ersetzen, da §4 das sonst nicht weiß.",
  "[Vieta] Try §0 (again)": "**Robo**: Nochmal §0.",
  "[Piazza] §0": "**Du**: Also jetzt einfach §0?\n\n**Robo**: Probier’s!",
- "[Main game intro]":
+ "[Game] Title": "Robo",
+ "[Game] Introduction":
  "# Game Over oder QED?\n\nBist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?\nDann bist du hier genau richtig!\nIn diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.\nDu wirst unter anderem per Induktion Summenformeln beweisen,\nnachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,\nzeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,\nund die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.\n\nDas Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\nfast genauso an wie in VSCode, der Standard-IDE für Lean.\nAuf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,\nund schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).\n\nKlicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n\n## Spielstand\n\nDein Spielstand wird lokal in deinem Browser als *site data* gespeichert.\nSolltest du diese löschen, verlierst du deinen Spielstand!\nViele Browser löschen *site data* und *cookies* zusammen.\nDu kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.\n\n## Spielregeln\n\nWenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.\nWenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.\n\n## Neuigkeiten\n\n`[2026-03-20]` Robo gibts jetzt auch auf Englisch! \n\nHintergrundinformationen und Credits findest du im Menü unter *Game Info*.",
- "[Game info]":
+ "[Game] Info":
  "## Projekt ADAM\n\nDieses Lernspiel wurde im Rahmen des Projekts\n[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\nan der Heinrich-Heine-Universität Düsseldorf entwickelt,\nfinanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\nDie laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.\n## Spielinhalt\n\n**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n\n## Credits\n\n* **Projektleitung:** Marcus Zibrowius, Immi Halupczok\n* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Konzept & Handlung:** Marcus Zibrowius\n* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Kontakt\n\nDas Spiel wird laufend überarbeitet.\nWir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,\nzum Beispiel per Email an\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nWenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:\n\n* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)\n* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).",
- "[Game conclusion]": "QED",
+ "[Game] Conclusion": "QED",
+ "[Game] CaptionShort":
+ "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!",
+ "[Game] CaptionLong":
+ "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik.",
  "[Doc.Theorem] Set.Finite.toFinset:\nGiven §0, §1 with §2, §3,\n§4, §5 is the same subset viewed as finite subset.":
  "Ist eine Teilmenge §1 mit der Annahme §2 gegeben, \nso ist §5 dieselbe Teilmenge §0, \naber nun explizit als *endliche* Teilmenge aufgefasst.",
  "[Doc.Definition] Nonempty\n§0\nfor §1, §2, §3 means T is non-empty\nfor §4, §5, §6 means §7; check this with §8\nAs goal:\ngiven §9, §10, use §11\ngiven §12, §13 such that §14, §15, use §16\nAs assumption:\ngiven §17, use §18 to obtain §19, §20\ngiven §21, use §22 to obtain §23, §24, §25, §26":
@@ -361,8 +366,6 @@
  "Cantor reibt sich die Hände.\n\n**Cantor**:  Das sieht gut aus!",
  "This kind of logical expression can often be solved via §0.":
  "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden.",
- "This game illustrates reasoning with Lean using various topics from the introductory phase of the bachelor's degree program in mathematics.":
- "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik.",
  "This can be simplified":
  "**Robo**:  Das kann man bestimmt leicht vereinfachen …",
  "The §0 tactic pushes negation past quantifiers:\n\n| before       | after      |\n|:------------ |:-------------|\n| §1  | §2  |\n| §3  | §4  |\n\nIn nested expressions, it pushes the negation §5 as far to the right as possible.\nFor example, the proof goal\n§6\nwith §7\n§8\n\n## Friends and relatives\n\nThe two lemmas §9 and §10 can be applied individually with §11.":
@@ -486,7 +489,6 @@
  "Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\nals §3.\n\nSiehe auch §4, welches die generalisierte Form für\n§5-Matrix (über beliebigem §6) ist.":
  "Jede reelle §0-Matrix §2 lässt sich schreiben als §3.\n\nSiehe §4 für allgemeinere Matrizen mit allgemeineren Koeffizienten.",
  "Robotswana": "Robotswana",
- "Robo": "Robo",
  "Ritha gives signs to try omega": "Ritha macht wieder irgendwelche Zeichen.",
  "Rewrite §0. Start with §1 to replace §2 with §3":
  "**Du**: §0, die sind doch alle äquivalent…\n\n**Robo**: Ja, aber du musst ihm helfen, die Äquivalenzen umzuschreiben. Mit §1 kannst du §2 durch §3 ersetzen.",
@@ -1012,8 +1014,6 @@
  "**Robo**:  Dazu hatten wir doch schon mal etwas gesehen, zum Beispiel §0 und §1.",
  "Expression §0 can be simplified with §1.\n§2 can not be used under a sum. §3 can work.\n":
  "**Robo**: Den Ausdruck §0 kannst du doch bestimmt mit §1 vereinfachen.\n\n**Du**: Also §2?\n\n**Robo**:  Nein, unter der Summe wird das nicht funktionieren. Aber §3 hat Aussicht auf Erfolg.\n",
- "Explore an alien universe with the Smart-Elf Robo!":
- "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!",
  "Explanation of equal sums":
  "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.",
  "Explaination of §0: it can be read as §1, a mapping of §2 into the set §3":

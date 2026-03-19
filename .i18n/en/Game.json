@@ -105,11 +105,16 @@
  "[Vieta] Try §0 (again)": "**Scribble**: §0, once again.",
  "[Piazza] §0":
  "**You**:  And now simply §0?\n\n**Scribble**:  Why don't you give it a try?",
- "[Main game intro]":
+ "[Game] Title": "Scribble",
+ "[Game] Introduction":
  "# Game Over or QED? \n\nAre you curious what computer-assisted theorem proving feels like compared to pen-and-paper mathematics? Then you've come to the right place! In this game, you will learn how to work with the proof assistant Lean 4 and the proof library mathlib.\nYou will verify sum formulas by induction, show that a mapping is surjective if and only if it has a right inverse, prove that there are uncountably many sequences of natural numbers, and characterise the trace as a map among all functions defined on the space of square matrices.\n\nThe interface is somewhat simplified, but if you activate *editor mode*, it feels almost like VSCode, the standard IDE for Lean.\nOn a smartphone or tablet, it is better to stay in the default *typewriter mode* and turn off all autocompletion/autocorrection features of your on-screen keyboard (a.k.a. \"smart typing\", \"text recognition\", \"predictive text\" etc.). \n\nClick on the first planet *Logo* to start your journey.\n\n## Progress\n\nYour game progress is stored locally in your browser as *site data*. You can also download your progress via the menu and save it to your disk. Note that many browsers delete *site data* and *cookies* together. \n\n## Rules \n\nIf you want to take the game seriously, keep the default setting *Rules: regular*.\nIf you just want to poke around, select *Rules: relaxed*.  This will allow you to access every level immediately, even if you haven't solved the previous levels yet.\n\n## News \n\n`[2026-03-28]` The game is now available in English! \n\nFor background information and credits, see *Game Info* in the menu.",
- "[Game info]":
+ "[Game] Info":
  "## Project ADAM \n\nThis educational game was developed as part of the project [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/) project at Heinrich Heine University Düsseldorf, funded by the *Freiraum 2022* programme of the *Stiftung Innovation in der Hochschullehre*.\nOngoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.\n\n## Game content\n\n**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n\n## Credits\n\n* **Project management:** Marcus Zibrowius, Immi Halupczok\n* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Concept & Story:** Marcus Zibrowius\n* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Contact\n\nThe game is constantly being revised.\nWe welcome your feedback, suggestions, and criticism,\nfor example, by email to\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nYou are equally welcome create issue's on GitHub, be it for typos, bugs or feature requests:\n\n* Please submit issues regarding game content to the repository [Robo](https://github.com/hhu-adam/Robo/issues).\n* Please submit issues regarding the server and our software to the [lean4game repository](https://github.com/leanprover-community/lean4game/issues).",
- "[Game conclusion]": "QED",
+ "[Game] Conclusion": "QED",
+ "[Game] CaptionShort":
+ "Explore a different universe with your smart-elf Scribble!",
+ "[Game] CaptionLong":
+ "This game illustrates theorem proving in Lean using various topics from the first year of a typical Bachelor's degree programme in Mathematics.",
  "[Doc.Theorem] Set.Finite.toFinset:\nGiven §0, §1 with §2, §3,\n§4, §5 is the same subset viewed as finite subset.":
  "Given a subset §1 which is finite by some assumption §2,\nthe expression §5 denotes the same subset §0, but now explicitly viewed as a *finite* subset.",
  "[Doc.Definition] Nonempty\n§0\nfor §1, §2, §3 means T is non-empty\nfor §4, §5, §6 means §7; check this with §8\nAs goal:\ngiven §9, §10, use §11\ngiven §12, §13 such that §14, §15, use §16\nAs assumption:\ngiven §17, use §18 to obtain §19, §20\ngiven §21, use §22 to obtain §23, §24, §25, §26":
@@ -358,8 +363,6 @@
  "Cantor rubs his hands together. \n\n**Cantor**: That looks good!",
  "This kind of logical expression can often be solved via §0.":
  "Logical statements like this can also be proved with §0.",
- "This game illustrates reasoning with Lean using various topics from the introductory phase of the bachelor's degree program in mathematics.":
- "This game illustrates theorem proving in Lean using various topics from the first year of a typical Bachelor's degree programme in Mathematics.",
  "This can be simplified": "**Scribble**: I'm sure this can be simplified …",
  "The §0 tactic pushes negation past quantifiers:\n\n| before       | after      |\n|:------------ |:-------------|\n| §1  | §2  |\n| §3  | §4  |\n\nIn nested expressions, it pushes the negation §5 as far to the right as possible.\nFor example, the proof goal\n§6\nwith §7\n§8\n\n## Friends and relatives\n\nThe two lemmas §9 and §10 can be applied individually with §11.":
  "The tactic §0 can push the logical negation operator past quantifiers: \n\n| before | after | \n|:------------ |:-------------|\n| §1 | §2 | \n| §3 | §4 | \n\nIn nested expressions, it pushes the negation §5 as far to the right as possible. For example, the goal \n§6\nbecomes \n§8\n\n## Friends and relations \n\nThe tactic is based on the two lemmas §9 and §10, which can be applied individually with §11.",
@@ -482,7 +485,6 @@
  "Sagt aus, dass man jede §0-Matrix (über §1) §2 schreiben kann\nals §3.\n\nSiehe auch §4, welches die generalisierte Form für\n§5-Matrix (über beliebigem §6) ist.":
  "Every real §0 matrix §2 can be written as §3. \n\nSee §4 for more general matrices with more general coefficients.",
  "Robotswana": "Ethiopia",
- "Robo": "Scribble",
  "Ritha gives signs to try omega": "Ritha is again darting glances.",
  "Rewrite §0. Start with §1 to replace §2 with §3":
  "**You**: §0, they're all equivalent… \n\n**Scribble**: Yes, but you have to help him rewrite the equivalences. With §1, you can replace §2 with §3.",
@@ -1002,8 +1004,6 @@
  "**Scribble**: Haven't we already seen some lemmas that might be helpful here? How about §0 or §1?",
  "Expression §0 can be simplified with §1.\n§2 can not be used under a sum. §3 can work.\n":
  "**Scribble**: Surely you can simplify the expression §0 with §1. \n\n**You**: So §2? \n\n**Scribble**: No, that won't work under the sum. But §3 might.\n",
- "Explore an alien universe with the Smart-Elf Robo!":
- "Explore a different universe with your smart-elf Scribble!",
  "Explanation of equal sums":
  "**You**: I think the two sums are identical because the individual summands are identical.",
  "Explaination of §0: it can be read as §1, a mapping of §2 into the set §3":
