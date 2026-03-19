@@ -4,7 +4,6 @@ World "Euklid"
 Level 1
 Title ""
 
-/- Introduction "An der markierten Stelle steht folgendes:" -/
 Introduction "Intro Euklid L01"
 
 open Finset

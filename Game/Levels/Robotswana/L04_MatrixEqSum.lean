@@ -21,7 +21,7 @@ Du beschließt, einer besonders markanten Spur zu folgen. Robo zieht dir hinterh
 sich beim gehen noch ein willkürliches Stück Pergament vom Boden.
 "
 -/
-Introduction "Conclusion Robotswana L04"
+Conclusion "Conclusion Robotswana L04"
 
 open Nat Matrix -- BigOperators
 
@@ -70,6 +70,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   Hint "Try to use `apply matrix_eq_sum_single`"
   apply matrix_eq_sum_single
 
+/---/
 TheoremDoc Matrix.matrix_eq_sum_single as "matrix_eq_sum_single" in "Matrix"
 NewTheorem Matrix.matrix_eq_sum_single
 

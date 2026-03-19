@@ -5,23 +5,8 @@ Level 2
 
 Title "" -- "Falsche Indizes"
 
-/-
-Introduction
-"
-Kurze Zeit später findet ihr zwei sehr ähnlichen Zettel, wieder
-vollgekritzelt, fast alles durchgestrichen.
-Die erste Zeile aber lässt sich jeweils gerade noch ausmachen.
-"
--/
 Introduction "Intro Robotswana L02"
 
-/-
-Conclusion "
-  **Robo**: Ich speichere dieses `E.mul_of_ne` auch mal, wer weiß.
-
-  **Du**: Jetzt bin ich aber neugierig, wer diese Zettel hier verloren oder weggeworfen hat. Komm, lass uns weitergehen.
-"
--/
 Conclusion "Conclusion Robotswana L02: save result as `E.mul_of_ne`"
 
 open Nat Matrix

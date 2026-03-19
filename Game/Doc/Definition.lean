@@ -24,7 +24,6 @@ A mapping `f` is surjectiv, if:
 -/
 DefinitionDoc Function.Surjective as "Surjective" in "Fun"
 
-
 /--
 A mapping ist bijectiv, if it is injektiv and surjektiv.
 -/

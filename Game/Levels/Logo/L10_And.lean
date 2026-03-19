@@ -36,7 +36,7 @@ Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   is not called `destructor`. Try `constructor`"
   constructor
   /-
-  Hint (hidden := true) "
+  Hint "
     **Robo**: Schau mal, das ist Zauberpapier.
     Jetzt haben wir auf einmal zwei Beweisziele.
     Ich glaube, du weißt schon, wie man die jeweils erreicht.

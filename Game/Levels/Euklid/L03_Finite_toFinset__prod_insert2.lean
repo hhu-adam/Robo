@@ -92,10 +92,9 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     · use ∏ x ∈ all_primes.erase p, x
     · simp
 
-
-/-- Ist eine Teilmenge `A : Set T` mit der Annahme `h : Set.Finite A` gegeben,
-so ist `h.toFinset : Finset T` dieselbe Teilmenge `A`,
-aber nun explizit als endliche Teilmenge aufgefasst. -/
+/-- [Doc.Theorem] Set.Finite.toFinset:
+Given `A`, `A : Set T` with `h : Set.Finite A`, `Set.Finite A`,
+`h.toFinset`, `h.toFinset : Finset T` is the same subset viewed as finite subset. -/
 TheoremDoc Set.Finite.toFinset as "toFinset" in "Set"
 
 NewTheorem Set.Finite.toFinset

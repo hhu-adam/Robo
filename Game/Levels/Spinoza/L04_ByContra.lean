@@ -54,7 +54,7 @@ Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
   assumption
 
 -- Conclusion ""
-Conclusion "Conclusion Spinoza L04"
+-- Conclusion "Conclusion Spinoza L04"
 
 DisabledTactic rw tauto
 DisabledTheorem Classical.not_not

@@ -31,12 +31,6 @@ Statement :
     simp [f]
   ring
 
-/--
-`Surjective f` bedeutet naheliegenderweise, dass die Abbildung `f` surjektiv ist.
-Mit `unfold Surjective` (bzw. `unfold Surjective at h`) kann man leicht nachsehen, was das
-in Quantorenschreibweise konkret bedeutet.
--/
-DefinitionDoc Function.Surjective as "Surjective" in "Function"
 NewDefinition Function.Surjective
 TheoremTab "Function"
 
