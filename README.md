@@ -1,8 +1,9 @@
-# Robo
+# Robo / Scribble
 
-A game for learning Lean 4 in which a cute little smart-elf named Robo joins you on your exploration of a universe inhabited by formalosophers.
+A game for learning Lean 4 in which a cute little smart-elf joins you on your exploration of a universe inhabited by formalosophers.  
+You can play the game on the [Lean Game Server](https://adam.math.hhu.de/).
 
-The game is currently available only in German.  It can be played at the [Lean Game Server](https://adam.math.hhu.de/).
+The game is currently available in two languages.  In German, the game and its smart-elf are called *Robo*, in English, *Scribble*.  We are actively looking for translations into other languages, see [Translations](#translations) below.
 
 ## Game content
 
@@ -24,7 +25,7 @@ The game is currently available only in German.  It can be played at the [Lean G
 | Iso        | bijective maps                     | –                                     | map bijective ⇔ has inverse                                        |
 | Samarkand  | (pre)images of subsets             | –                                     | map surjective ⇔ induced contravariant map on powersets injective  |
 | Cantor     | fixed points of maps               | –                                     | ℕ-valued sequences uncountable                                     |
-| Robotswana | matrices, trace                    | –                                     | characterization of trace map                                      |
+| Robotswana (Ethiopia) | matrices, trace                    | –                                     | characterization of trace map                                      |
 | Ciao       | (good-bye planet)                  | –                                     | –                                                                  |
 
 
@@ -32,16 +33,18 @@ The game is currently available only in German.  It can be played at the [Lean G
 
 ## Bugs
 
-For small content fixes like spelling mistakes, missing hints, missing documentation, or other things that were unclear or you've struggled with, please open an Issue
-or PR here!
+For small content fixes like spelling mistakes, missing hints, missing documentation, or other things that were unclear or you've struggled with, please open an issue or PR here!
 
-Issues concerning the underlying software are better placed
-in the [lean4game repo](https://github.com/leanprover-community/lean4game).
+Issues concerning the underlying software are better placed in the [lean4game repo](https://github.com/leanprover-community/lean4game).
+
+## Translations
+
+Please contact [me](https://www.math.uni-duesseldorf.de/~zibrowius/) if you are willing to help translate the Game into other languages!  The process is explained in our  [Translation Guide](./docs/TranslationGuide.md).
 
 ## New Content
 
 Contributions of new planets are welcome! Each planet in the game talks about a new topic
-in a standard Mathematics undergrad (bachelor) curriculum at university.
+in a standard mathematics undergrad (bachelor) curriculum at university.
 
 Please follow our [Contribution Guide](./docs/ContributionGuide.md),
  which helps you create new content step-by-step.
@@ -77,5 +80,5 @@ can help restructure existing worlds, see the
 
  # Contact
 
- In case of technical problems with ```adam.math.hhu.de``` please contact us via <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">e-mail</a>.
+In case of technical problems with our Server at `adam.math.hhu.de`, please contact us via <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">e-mail</a>.
 
