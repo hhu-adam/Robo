@@ -1,7 +1,6 @@
 # Robo / Scribble
 
-A game for learning Lean 4 in which a cute little smart-elf joins you on your exploration of a universe inhabited by formalosophers.  
-You can play the game on the [Lean Game Server](https://adam.math.hhu.de/).
+A game for learning Lean 4 in which a cute little smart-elf joins you on your exploration of a universe inhabited by formalosophers. You can play the game on the [Lean Game Server](https://adam.math.hhu.de/).
 
 The game is currently available in two languages.  In German, the game and its smart-elf are called *Robo*, in English, *Scribble*.  We are actively looking for translations into other languages, see [Translations](#translations) below.
 
@@ -39,7 +38,7 @@ Issues concerning the underlying software are better placed in the [lean4game re
 
 ## Translations
 
-Please contact [me](https://www.math.uni-duesseldorf.de/~zibrowius/) if you are willing to help translate the Game into other languages!  The process is explained in our  [Translation Guide](./docs/TranslationGuide.md).
+Please contact [me](https://www.math.uni-duesseldorf.de/~zibrowius/) if you are willing to help translate the game into other languages!  The process is explained in our  [Translation Guide](./docs/TranslationGuide.md).
 
 ## New Content
 
@@ -78,7 +77,7 @@ The bash script `sofi.sh` (`s`ort `o`ut `f`ilnames and `i`mports), contained in 
 can help restructure existing worlds, see the
  [documentation](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md#5-refactoring-an-existing-world).
 
- # Contact
+# Technical support
 
-In case of technical problems with our Server at `adam.math.hhu.de`, please contact us via <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">e-mail</a>.
+In case of issues with our server at `adam.math.hhu.de`, please send an email to <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">this address</a>.  
 
