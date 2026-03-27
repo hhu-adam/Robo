@@ -4,7 +4,7 @@ open Set
 
 World "Samarkand"
 Level 2
-Title "" -- "Bild/Urbild"
+Title "[Samarkand.L02] Title" -- "Bild/Urbild"
 
 -- Introduction "Arapuka diktiert euch noch eine Aufgabe."
 Introduction "Intro Samarkand L02"

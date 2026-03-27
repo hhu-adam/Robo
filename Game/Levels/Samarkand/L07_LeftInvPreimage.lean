@@ -4,7 +4,7 @@ import Game.Levels.Samarkand.L06_PreimageNonempty
 World "Samarkand"
 Level 7
 
-Title "" -- "Preimage of the inverse"
+Title "[Samarkand.L07] Title" -- "Preimage of the inverse"
 
 /-
 Introduction "

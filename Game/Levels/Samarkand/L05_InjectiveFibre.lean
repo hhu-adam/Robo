@@ -3,7 +3,7 @@ import Game.Levels.Samarkand.L04_SurjectiveImagePreimage
 World "Samarkand"
 Level 5
 
-Title "" -- "Range of Injective"
+Title "[Samarkand.L05] Title" -- "Range of Injective"
 
 /-
 Introduction "

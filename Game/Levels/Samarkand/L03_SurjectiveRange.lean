@@ -4,10 +4,10 @@ import Game.Levels.Samarkand.L02_ImageMap
 World "Samarkand"
 Level 3
 
-Title "" -- "Range of Surjection"
+Title "[Samarkand.L03] Title" -- "Range of Surjection"
 
 
-Introduction ""
+Introduction "[Samarkand.L03] Introduction"
 
 open Function Set
 

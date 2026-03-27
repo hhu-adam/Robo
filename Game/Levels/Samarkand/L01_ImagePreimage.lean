@@ -4,7 +4,7 @@ open Set
 
 World "Samarkand"
 Level 1
-Title "" -- "Bild/Urbild"
+Title "[Samarkand.L01] Title" -- "Bild/Urbild"
 
 
 /-

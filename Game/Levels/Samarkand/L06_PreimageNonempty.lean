@@ -5,7 +5,7 @@ open Function Set
 World "Samarkand"
 Level 6
 
-Title ""
+Title "[Samarkand.L06] Title"
 
 -- Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
 Introduction "Intro Samarkand L06"
