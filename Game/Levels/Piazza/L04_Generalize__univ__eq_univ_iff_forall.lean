@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 4
 
-Title ""
+Title "[Piazza.L04] Title"
 
 /-
 Introduction
@@ -103,4 +103,4 @@ NewTheorem Set.eq_univ_iff_forall
 
 NewDefinition Set.univ
 
-Conclusion ""
+Conclusion "[Piazza.L04] Conclusion"

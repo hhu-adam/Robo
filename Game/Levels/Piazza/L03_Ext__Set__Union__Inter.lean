@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 3
 
-Title ""
+Title "[Piazza.L03] Title"
 
 -- Introduction
 -- "
@@ -76,4 +76,4 @@ NewTactic ext
 NewDefinition Set.union Set.inter
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "[Piazza.L03] Conclusion"

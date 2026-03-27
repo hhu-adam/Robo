@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 5
 
-Title ""
+Title "[Piazza.L05] Title"
 
 /-
 Introduction
@@ -44,4 +44,4 @@ NewTheorem Set.eq_empty_iff_forall_not_mem
 
 NewDefinition Set.empty
 
-Conclusion ""
+Conclusion "[Piazza.L05] Conclusion"

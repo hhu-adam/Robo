@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 11
 
-Title ""
+Title "[Piazza.L11] Title"
 
 /-
 Introduction "
@@ -41,6 +41,6 @@ Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
 
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "[Piazza.L11] Conclusion"
 
 NewDefinition Finset.erase

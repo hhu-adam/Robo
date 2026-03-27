@@ -4,7 +4,7 @@ import Game.Metadata
 World "Piazza"
 Level 2
 
-Title ""
+Title "[Piazza.L02] Title"
 
 /-
 Introduction
@@ -35,4 +35,4 @@ NewTactic simp
 
 NewDefinition setOf
 
-Conclusion ""
+Conclusion "[Piazza.L02] Conclusion"

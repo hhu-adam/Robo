@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 7
 
-Title "" -- "Antisymmetrie"
+Title "[Piazza.L07] Title" -- "Antisymmetrie"
 
 /-
 Introduction
@@ -40,4 +40,4 @@ NewDefinition Subset
 
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "[Piazza.L07] Conclusion"

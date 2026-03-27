@@ -4,7 +4,7 @@ import Game.Metadata
 World "Piazza"
 Level 1
 
-Title ""
+Title "[Piazza.L01] Title"
 
 /-
 Introduction

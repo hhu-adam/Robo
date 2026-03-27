@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 9
 
-Title "" -- "Teilmengen"
+Title "[Piazza.L09] Title" -- "Teilmengen"
 
 /-
 Introduction
@@ -45,4 +45,4 @@ NewDefinition Subset
 
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "[Piazza.L09] Conclusion"

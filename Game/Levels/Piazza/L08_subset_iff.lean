@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 8
 
-Title ""
+Title "[Piazza.L08] Title"
 
 /-
 Introduction
@@ -40,4 +40,4 @@ NewTheorem Finset.subset_iff
 
 TheoremTab "Set"
 
-Conclusion ""
+Conclusion "[Piazza.L08] Conclusion"
