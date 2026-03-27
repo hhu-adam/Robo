@@ -4,7 +4,7 @@ import Game.Levels.Prado.L08_exists_prime_and_dvd
 World "Prado"
 Level 9
 
-Title ""
+Title "[Prado.L09] Title"
 
 /-
 Introduction"

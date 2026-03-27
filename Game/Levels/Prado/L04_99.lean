@@ -4,7 +4,7 @@ import Game.Levels.Prado.L03_even_iff_two_dvd
 World "Prado"
 Level 4
 
-Title ""
+Title "[Prado.L04] Title"
 
 /-
 Introduction

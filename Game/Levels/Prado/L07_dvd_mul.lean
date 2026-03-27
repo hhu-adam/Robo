@@ -5,7 +5,7 @@ import Game.Levels.Prado.L06_Prime_Specialize__prime_def
 World "Prado"
 Level 7
 
-Title ""
+Title "[Prado.L07 Title]"
 
 /-
 Introduction "

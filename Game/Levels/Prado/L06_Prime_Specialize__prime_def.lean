@@ -4,7 +4,7 @@ import Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
 World "Prado"
 Level 6
 
-Title ""
+Title "[Prado.L06] Title"
 
 /-
 Introduction"
@@ -74,4 +74,4 @@ TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def
 TheoremTab "ℕ"
 
-Conclusion ""
+Conclusion "[Prado.L06] Conclusion"

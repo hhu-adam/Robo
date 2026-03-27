@@ -5,7 +5,7 @@ import Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 World "Prado"
 Level 3
 
-Title ""
+Title "[Prado.L03] Title"
 
 /-
 Introduction

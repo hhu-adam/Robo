@@ -4,7 +4,7 @@ import Game.Levels.Prado.L01_prime_two
 World "Prado"
 Level 2
 
-Title ""
+Title "[Prado.L02] Title"
 
 /-
 Introduction

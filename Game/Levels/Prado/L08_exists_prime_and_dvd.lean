@@ -4,7 +4,7 @@ import Game.Levels.Prado.L07_dvd_mul
 World "Prado"
 Level 8
 
-Title ""
+Title "[Prado.L08] Title"
 
 /-
 Introduction

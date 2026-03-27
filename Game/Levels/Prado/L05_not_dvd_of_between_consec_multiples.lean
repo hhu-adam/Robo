@@ -5,7 +5,7 @@ import Game.Levels.Prado.L04_99
 World "Prado"
 Level 5
 
-Title ""
+Title "[Prado.L05] Title"
 
 /-
 Introduction
