@@ -4,9 +4,9 @@ import Game.Metadata
 World "Epo"
 Level 6
 
-Title "" -- "Every function with nonempty fibres has a right inverse."
+Title "[Epo.L06] Title" -- "Every function with nonempty fibres has a right inverse."
 
-Introduction ""
+Introduction "[Epo.L06] Introduction"
 
 open Function
 

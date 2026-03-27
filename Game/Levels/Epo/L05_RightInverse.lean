@@ -3,9 +3,9 @@ import Game.Metadata
 World "Epo"
 Level 5
 
-Title ""
+Title "[Epo.L05] Title"
 
-Introduction ""
+Introduction "[Epo.L05] Introduction"
 
 open Function
 

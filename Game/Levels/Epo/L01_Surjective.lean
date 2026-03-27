@@ -3,7 +3,7 @@ import Game.Metadata
 World "Epo"
 Level 1
 
-Title ""
+Title "[Epo.L01] Title"
 
 /-
 Introduction "
@@ -34,4 +34,4 @@ Statement :
 NewDefinition Function.Surjective
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Epo.L01] Conclusion"
