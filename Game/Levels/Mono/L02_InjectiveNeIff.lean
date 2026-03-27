@@ -3,9 +3,9 @@ import Game.Levels.Mono.L01_Injective
 World "Mono"
 Level 2
 
-Title ""
+Title "[Mono.L02] Title"
 
-Introduction ""
+Introduction "[Mono.L02] Introduction"
 
 open Function
 

@@ -3,9 +3,9 @@ import Game.Levels.Mono.L03_NotInjective
 World "Mono"
 Level 4
 
-Title "" -- ""
+Title "[Mono.L04] Title" -- ""
 
-Introduction ""
+Introduction "[Mono.L04] Introduction"
 
 open Function Nat
 

@@ -3,9 +3,9 @@ import Game.Levels.Mono.L04_Diagonal
 World "Mono"
 Level 5
 
-Title "" -- ""
+Title "[Mono.L05] Title" -- ""
 
-Introduction ""
+Introduction "[Mono.L05] Introduction"
 
 open Set Function
 
@@ -87,4 +87,4 @@ NewDefinition StrictMono
 NewTheorem StrictMono.injective StrictMono.add Odd.strictMono_pow
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Mono.L05] Conclusion"

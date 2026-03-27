@@ -5,9 +5,9 @@ open Nat
 World "Mono"
 Level 3
 
-Title ""
+Title "[Mono.L03] Title"
 
-Introduction ""
+Introduction "[Mono.L03] Introduction"
 
 open Function
 
@@ -61,4 +61,4 @@ Statement :
 
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "Conclusion Mono L03"
