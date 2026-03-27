@@ -2,7 +2,7 @@ import Game.Metadata
 
 World "Euklid"
 Level 2
-Title ""
+Title "[Euklid.L02] Title"
 
 /- Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde." -/
 Introduction "Intro Euklid L02"

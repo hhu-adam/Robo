@@ -2,7 +2,7 @@ import Game.Metadata
 
 World "Euklid"
 Level 3
-Title ""
+Title "[Euklid.L03] Title"
 
 /-
 Introduction "

@@ -2,7 +2,7 @@ import Game.Metadata
 
 World "Euklid"
 Level 4
-Title ""
+Title "[Euklid.L04] Title"
 
 /-
 Introduction "Nach einer Weile hört ihr Papierrascheln.
