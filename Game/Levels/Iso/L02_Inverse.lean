@@ -4,7 +4,7 @@ import Game.Metadata
 World "Iso"
 Level 2
 
-Title "" -- "Inverse"
+Title "[Iso.L02] Title" -- "Inverse"
 /-
 Introduction
 "
