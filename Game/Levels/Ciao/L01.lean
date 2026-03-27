@@ -3,9 +3,9 @@ import Game.Metadata
 World "Ciao"
 Level 1
 
-Title "" -- "Weiter gehts …"
+Title "[Ciao.L01] Title" -- "Weiter gehts …"
 
-Introduction ""
+Introduction "[Ciao.L01] Introduction"
 
 Statement : ∀ (n : ℕ), ∃ (m : ℕ), m > n := by
   intro n
