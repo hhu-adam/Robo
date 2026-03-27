@@ -3,7 +3,7 @@ import Game.Metadata
 World "Spinoza"
 Level 3
 
-Title "" -- "Widerspruch"
+Title "[Spinoza.L03] Title" -- "Widerspruch"
 
 -- Introduction "**Benedictus**: Hier ist noch eine Variante."
 Introduction "Intro Spinoza L03"

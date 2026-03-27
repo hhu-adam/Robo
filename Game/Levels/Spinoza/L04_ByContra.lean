@@ -4,7 +4,7 @@ import Game.Levels.Implis -- to make sure `rw` doc is imported
 World "Spinoza"
 Level 4
 
-Title ""
+Title "[Spinoza.L04] Title"
 
 /-
 Introduction

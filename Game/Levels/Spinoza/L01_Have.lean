@@ -3,7 +3,7 @@ import Game.Metadata
 World "Spinoza"
 Level 1
 
-Title ""
+Title "[Spinoza.L01] Title"
 
 /-
 Introduction
