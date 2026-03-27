@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 4
 
-Title "" -- "let"
+Title "[Vieta.L04] Title" -- "let"
 
 /-
 Introduction
@@ -81,4 +81,4 @@ NewTheorem Function.comp_apply
 DisabledTactic simp -- simp_rw
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Vieta.L04] Conclusion"

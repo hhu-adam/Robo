@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 5
 
-Title "" -- "funext"
+Title "[Vieta.L05] Title" -- "funext"
 
 /-
 Introduction
@@ -38,4 +38,4 @@ OnlyTactic funext ring
 NewTactic funext
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Vieta.L05] Conclusion"

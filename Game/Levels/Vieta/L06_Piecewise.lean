@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 6
 
-Title "" -- "Stückweise Definition"
+Title "[Vieta.L06] Title" -- "Stückweise Definition"
 
 /-
 Introduction
@@ -86,7 +86,7 @@ Statement :
     Hint (hidden := true) "Use the negation `if_neg`"
     rw [if_neg h, if_neg h]
 
-Conclusion ""
+Conclusion "[Vieta.L06] Conculsion"
 
 /---/
 TheoremDoc if_neg as "if_neg" in "Logic"

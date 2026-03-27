@@ -4,10 +4,10 @@ import Game.Metadata
 World "Vieta"
 Level 9
 
-Title "" -- "congr_fun"
+Title "[Vieta.L09] Title" -- "congr_fun"
 
 
-Introduction ""
+Introduction "[Vieta.L09] Introduction"
 
 open Function
 
@@ -39,4 +39,4 @@ OnlyTactic apply assumption «have»
 NewTheorem congr_fun
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Vieta.L09] Conclusion"

@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 8
 
-Title "" -- "congr_arg"
+Title "[Vieta.L08] Title" -- "congr_arg"
 
 /-
 Introduction
@@ -32,4 +32,4 @@ OnlyTactic apply rfl
 NewTheorem congr_arg -- tactic `congr` would have same effect
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Vieta.L08] Conclusion"

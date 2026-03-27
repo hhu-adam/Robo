@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 2
 
-Title "" -- "Anonyme Funktionen"
+Title "[Vieta.L02] Title" -- "Anonyme Funktionen"
 
 /-
 Introduction
@@ -62,4 +62,4 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
 NewDefinition Symbol.function
 TheoremTab "Function"
 
-Conclusion ""
+Conclusion "[Vieta.L02] Conclusion"

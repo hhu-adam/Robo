@@ -4,7 +4,7 @@ import Game.Metadata
 World "Vieta"
 Level 3
 
-Title "" -- "Anonyme Funktionen"
+Title "[Vieta.L03] Title" -- "Anonyme Funktionen"
 
 /-
 Introduction
@@ -37,6 +37,6 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
 
 TheoremTab "Function"
 
-Conclusion""
+Conclusion "[Vieta.L03] Conclusion"
 
 --NewTactic «let»
