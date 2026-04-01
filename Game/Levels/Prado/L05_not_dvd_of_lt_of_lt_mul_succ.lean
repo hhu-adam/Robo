@@ -17,10 +17,10 @@ Introduction
 Introduction "Intro Prado L05"
 
 /---/
-TheoremDoc Nat.not_dvd_of_between_consec_multiples as "not_dvd_of_between_consec_multiples" in "ℕ"
+TheoremDoc Nat.not_dvd_of_lt_of_lt_mul_succ as "not_dvd_of_lt_of_lt_mul_succ" in "ℕ"
 
 namespace Nat
-Statement not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
+Statement not_dvd_of_lt_of_lt_mul_succ {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   /-
   Hint "
   **Du**: `by_contra`?

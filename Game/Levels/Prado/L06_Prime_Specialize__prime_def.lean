@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+import Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
 
 World "Prado"
 Level 6

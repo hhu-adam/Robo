@@ -85,7 +85,7 @@ theorem zero_sum (n : ℕ) :
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
             ring
           rw [this]
-          rw [← insert_Icc_eq_Icc_sub_one_left]
+          rw [← insert_Icc_left_eq_Icc_sub_one]
           · rw [sum_insert]
             · rw [hd]
               ring

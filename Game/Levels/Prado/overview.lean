@@ -6,7 +6,7 @@ Additional content needed here for Euklid:
 
      proof would be difficult:  long induction (see below)
 
-   - L03b:  Nat.not_dvd_of_between_consec_multiples
+   - L03b:  Nat.not_dvd_of_lt_of_lt_mul_succ
              {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m
 
   Other lemmas mentioned in Maths in Lean:
@@ -67,8 +67,8 @@ example : ∃ p : ℕ, Prime p ∧ p ∣ 99 := by
   use 11
   decide
 
-/- Prado L05: `not_dvd_of_between_consec_multiples` -/
-theorem Robo.Nat.not_dvd_of_between_consec_multiples {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
+/- Prado L05: `not_dvd_of_lt_of_lt_mul_succ` -/
+theorem Robo.Nat.not_dvd_of_lt_of_lt_mul_succ {m n k : ℕ} (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m := by
   by_contra h_dvd
   obtain ⟨a, ha⟩ := h_dvd
   rw [ha] at h1 h2

@@ -52,17 +52,17 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
 
 TheoremTab "≤"
 /---/
-TheoremDoc Finset.insert_Icc_eq_Icc_add_one_right as "insert_Icc_eq_Icc_add_one_right" in "≤"
+TheoremDoc Finset.insert_Icc_right_eq_Icc_add_one as "insert_Icc_right_eq_Icc_add_one" in "≤"
 /---/
-TheoremDoc Finset.insert_Icc_eq_Icc_sub_one_left as "insert_Icc_eq_Icc_sub_one_left" in "≤"
+TheoremDoc Finset.insert_Icc_left_eq_Icc_sub_one as "insert_Icc_left_eq_Icc_sub_one" in "≤"
 /---/
 TheoremDoc Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
 /---/
 TheoremDoc Finset.insert_Icc_sub_one_right_eq_Icc as "insert_Icc_sub_one_right_eq_Icc" in "≤"
 
 NewTheorem
-Finset.insert_Icc_eq_Icc_add_one_right
-Finset.insert_Icc_eq_Icc_sub_one_left
+Finset.insert_Icc_right_eq_Icc_add_one
+Finset.insert_Icc_left_eq_Icc_sub_one
 Finset.insert_Icc_add_one_left_eq_Icc
 Finset.insert_Icc_sub_one_right_eq_Icc
 

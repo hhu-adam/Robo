@@ -26,7 +26,7 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
   Hint "this should work"
   induction m with n n_ih
   · simp
-  · rw [← insert_Icc_eq_Icc_add_one_right]
+  · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · simp
         rw [n_ih]

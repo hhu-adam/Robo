@@ -44,10 +44,10 @@ example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   tauto
 end Set
 
-/- Piazza L05: `empty`, `eq_empty_iff_forall_not_mem` -/
+/- Piazza L05: `empty`, `eq_empty_iff_forall_notMem` -/
 namespace Set
 example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
-  rw [eq_empty_iff_forall_not_mem]
+  rw [eq_empty_iff_forall_notMem]
   simp
 
 /- Piazza L06 -/
@@ -181,9 +181,9 @@ end Finset
 
 /- obsolete levels -/
 
-/- Piazza L06:  proof of `eq_empty_iff_forall_not_mem` -/
+/- Piazza L06:  proof of `eq_empty_iff_forall_notMem` -/
 /-
-theorem Robo.Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
+theorem Robo.Set.eq_empty_iff_forall_notMem {A : Type} (s : Set A) :
     s = ∅ ↔ ∀ x, x ∉ s := by
   constructor
   · intro h

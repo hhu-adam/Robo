@@ -34,7 +34,7 @@
 |                                       |                |                |                            |                              |
 | +complement+                          | +L09+          |                |                            |                              |
 | +subset_def / subset_iff+             | +L03+          |                |                            |                              |
-| +eq_empty_iff_forall_not_mem+         | +L06+          |                | [no longer needed]         |                              |
+| +eq_empty_iff_forall_notMem+         | +L06+          |                | [no longer needed]         |                              |
 
 
 Note:  revised Luna will depend on Piazza.

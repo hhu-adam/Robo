@@ -62,11 +62,11 @@ Statement arithmetic_sum (n : ℕ) :
   simp
   /-
   Hint "**Robo**: Jetzt willst du das Interval $[0, {d}+1]$, über das summiert wird, aufspalten in $[0,{d}]$ und ${d}+1$.
-    Dazu könntest du das Lemma `insert_Icc_eq_Icc_add_one_right` verwenden, das wir schon gesehen hatten.
+    Dazu könntest du das Lemma `insert_Icc_right_eq_Icc_add_one` verwenden, das wir schon gesehen hatten.
   "
   -/
-  Hint "Divide interval $[0, {d}+1]$ into $[0,{d}]$ and ${d}+1$ by using `insert_Icc_eq_Icc_add_one_right`"
-  rw [← insert_Icc_eq_Icc_add_one_right]
+  Hint "Divide interval $[0, {d}+1]$ into $[0,{d}]$ and ${d}+1$ by using `insert_Icc_right_eq_Icc_add_one`"
+  rw [← insert_Icc_right_eq_Icc_add_one]
   /-
   Hint "**Robo**:  Genau!  Und jetzt spaltet dir `sum_insert` die Summe genau so auf, wie du das haben möchtest:
   also eine Summe über $[0,{d}]$ und dann noch einen zusätzlichen Summanden für ${d}+1$.

@@ -118,7 +118,7 @@ open Finset
 theorem arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n , i) = n * (n + 1) := by
     induction n with d hd
     · simp
-    · rw [← insert_Icc_eq_Icc_add_one_right]
+    · rw [← insert_Icc_right_eq_Icc_add_one]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
@@ -134,12 +134,12 @@ example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     induction n with d hd
     · simp
     · simp
-      rw [← insert_Icc_eq_Icc_add_one_right]
+      rw [← insert_Icc_right_eq_Icc_add_one]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
             ring
           rw [this]
-          rw [← insert_Icc_eq_Icc_sub_one_left]
+          rw [← insert_Icc_left_eq_Icc_sub_one]
           · rw [sum_insert]
             · rw [hd]
               ring
@@ -155,7 +155,7 @@ open Finset
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   induction n with d hd
   · simp
-  · rw [← insert_Icc_eq_Icc_add_one_right]
+  · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · rw [hd]
         ring
@@ -174,7 +174,7 @@ open Finset
 example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
   induction m with n n_ih
   · simp
-  · rw [← insert_Icc_eq_Icc_add_one_right]
+  · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · simp
         rw [n_ih]

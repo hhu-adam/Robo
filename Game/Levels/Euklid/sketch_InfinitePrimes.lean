@@ -56,7 +56,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
     simp[new_prime]
     rw [h]
     -- … so it cannot be divisible by p:
-    apply not_dvd_of_between_consec_multiples (n := p) (k:=q) (m := p*q+1)
+    apply not_dvd_of_lt_of_lt_mul_succ (n := p) (k:=q) (m := p*q+1)
     · linarith
     · simp[prime_def] at hp
       linarith

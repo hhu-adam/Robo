@@ -38,7 +38,7 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       by_contra h_contra
       push_neg at h_contra
       have h : preimage f {b} = ∅ := by
-        rw [eq_empty_iff_forall_not_mem]
+        rw [eq_empty_iff_forall_notMem]
         intro a
         specialize h_contra a
         assumption
@@ -46,13 +46,13 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       rw [preimage_empty,h]
       apply h_inj at this
       symm at this
-      rw [eq_empty_iff_forall_not_mem] at this
+      rw [eq_empty_iff_forall_notMem] at this
       apply this b
       simp
     intro hinj y
     have h : f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by -- see L06_PreimageNonempty
       unfold Ne
-      rw [eq_empty_iff_forall_not_mem]
+      rw [eq_empty_iff_forall_notMem]
       simp
     rw [← h]
     -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(

@@ -2,7 +2,7 @@ import Game.Levels.Piazza.L01_Mem__Set
 import Game.Levels.Piazza.L02_Simp
 import Game.Levels.Piazza.L03_Ext__Set__Union__Inter
 import Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-import Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
+import Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
 import Game.Levels.Piazza.L06_Ext2__univ2
 import Game.Levels.Piazza.L07_antisymm_iff
 import Game.Levels.Piazza.L08_subset_iff

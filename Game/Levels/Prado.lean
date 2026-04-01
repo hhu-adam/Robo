@@ -2,7 +2,7 @@ import Game.Levels.Prado.L01_prime_two
 import Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 import Game.Levels.Prado.L03_even_iff_two_dvd
 import Game.Levels.Prado.L04_99
-import Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+import Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
 import Game.Levels.Prado.L06_Prime_Specialize__prime_def
 import Game.Levels.Prado.L07_dvd_mul
 import Game.Levels.Prado.L08_exists_prime_and_dvd

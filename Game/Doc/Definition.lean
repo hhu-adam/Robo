@@ -201,7 +201,7 @@ DefinitionDoc Subset as "⊆" in "Set"
 In the Formaloverse `∅ : Set ℕ` is something different than `∅ : Set ℝ`
 – one is a subset of ℕ, the other is a subset of ℝ!
 
-With `rw [eq_empty_iff_forall_not_mem]` you translate the equation `S = ∅` into the
+With `rw [eq_empty_iff_forall_notMem]` you translate the equation `S = ∅` into the
 statement `∀ (x : T), x ∉ s`.
 
 `∅` is written as `\emptyset`.

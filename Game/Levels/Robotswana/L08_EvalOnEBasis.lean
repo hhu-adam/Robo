@@ -33,7 +33,7 @@ Robo reicht dir eine Flasche Wasser.
 -/
 Conclusion "Conclusion Robotswana L08"
 
-open Nat Matrix StdBasisMatrix Finset
+open Nat Matrix Finset
 
 /---/
 TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"

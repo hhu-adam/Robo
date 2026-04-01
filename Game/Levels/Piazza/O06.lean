@@ -17,7 +17,7 @@ Introduction "Intro Piazza O06"
 
 open Set
 
-Statement Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
+Statement Set.eq_empty_iff_forall_notMem {A : Type} (s : Set A) :
     s = ∅ ↔ ∀ x, x ∉ s := by
   constructor
   · intro h

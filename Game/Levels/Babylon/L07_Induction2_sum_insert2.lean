@@ -20,15 +20,15 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
       **Du**:  $\\sum_\{i=-n}^{n} i = 0$ – ja, das sieht richtig aus.
 
       **Robo**:  Sollte auch ganz genau so beweisbar sein, wie die Gaußsche Summe eben …
-      außer dass du vermutlich nach `insert_Icc_eq_Icc_add_one_right` auch noch
-      `insert_Icc_eq_Icc_sub_one_left` brauchen wirst.
+      außer dass du vermutlich nach `insert_Icc_right_eq_Icc_add_one` auch noch
+      `insert_Icc_left_eq_Icc_sub_one` brauchen wirst.
     "
     -/
-    Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_eq_Icc_add_one_right`, `insert_Icc_eq_Icc_sub_one_left`"
+    Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_right_eq_Icc_add_one`, `insert_Icc_left_eq_Icc_sub_one`"
     induction n with d hd
     · simp
     · simp
-      rw [← insert_Icc_eq_Icc_add_one_right]
+      rw [← insert_Icc_right_eq_Icc_add_one]
       /-
       Hint (hidden := true) "
         **Robo**:  Genau, und jetzt wieder `rw [sum_insert]`.
@@ -53,7 +53,7 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           have : -1 + (-d : ℤ)  = -d - 1 := by
             ring
           rw [this]
-          rw [← insert_Icc_eq_Icc_sub_one_left]
+          rw [← insert_Icc_left_eq_Icc_sub_one]
           · rw [sum_insert]
             · rw [hd]
               ring
