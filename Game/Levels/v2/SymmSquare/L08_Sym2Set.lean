@@ -119,7 +119,7 @@ Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 
 
 /-- Multisets cannot have a head/first element. -/
 theorem headless  : ¬ ∃ f : Multiset ℕ → ℕ, ∀ l : List ℕ, ∀ (h : l ≠ []), f l = l.head h := by
-  push_neg
+  push Not
   intro f
   by_cases h : f [0, 1] = 0
   · use [1, 0], List.cons_ne_nil _ _

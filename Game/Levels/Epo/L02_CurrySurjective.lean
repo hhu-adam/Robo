@@ -22,14 +22,14 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   Hint "Explaination of `ℕ → A → B`: it can be read as `ℕ → (A → B)`, a mapping of `ℕ` into the set `A → B`"
   /-
   Hint (hidden := true) "
-  **Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push_neg` weiterbringt."
+  **Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push Not` weiterbringt."
   -/
-  Hint (hidden := true) "Try `constructor` | `unfold Surjective`, `push_neg`"
+  Hint (hidden := true) "Try `constructor` | `unfold Surjective`, `push Not`"
   Branch
     constructor
     · intro h
       simp [Surjective] at h
-      push_neg at h
+      push Not at h
       obtain ⟨w, hw⟩ := h
       use w
       intro n
@@ -48,7 +48,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
       symm
       assumption
   unfold Surjective
-  push_neg
+  push Not
   /-
   Hint "
   **Robo**: Hilft dir vielleicht `ne_comm` weiter?

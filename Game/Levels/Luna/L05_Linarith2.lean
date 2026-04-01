@@ -30,11 +30,11 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
   /-
   Hint "
     **Robo**:  Und jetzt machst du die Annahme `{hx}` ein bisschen lesbarer.
-    Probier vielleicht einmal `push_neg at {hx}`?
+    Probier vielleicht einmal `push Not at {hx}`?
   "
   -/
-  Hint "Increase readability of `{hx}`. Try `push_neg at {hx}`"
-  push_neg at hx
+  Hint "Increase readability of `{hx}`. Try `push Not at {hx}`"
+  push Not at hx
   /-
   Hint "
     **Robo**:  Mmm … `{hx} : m ≤ x → n < x` sieht immer noch suboptimal aus.

@@ -25,7 +25,7 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
     --  Ich würde nochmal zurückgehen und `Odd` behalten,
     --  damit man schlussendlich `not_odd_iff_even` brauchen kann!"
     Hint "Go back, keep `Odd` and try `not_odd_iff_even`"
-  push_neg
+  push Not
   intro n
   Branch
     unfold Odd
@@ -71,7 +71,7 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
 
 -- Note: The following two theorem are just added for completeness.
 
-/-- [Doc.Theorem] can use `push_neg` instead -/
+/-- [Doc.Theorem] can use `push Not` instead -/
 TheoremDoc not_exists as "not_exists" in "Logic"
 /--  -/
 TheoremDoc Classical.not_forall as "not_forall" in "Logic"

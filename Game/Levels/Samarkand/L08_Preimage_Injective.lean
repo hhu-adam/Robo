@@ -36,7 +36,7 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       intro h_inj
       intro b
       by_contra h_contra
-      push_neg at h_contra
+      push Not at h_contra
       have h : preimage f {b} = ∅ := by
         rw [eq_empty_iff_forall_notMem]
         intro a

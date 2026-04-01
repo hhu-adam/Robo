@@ -47,10 +47,10 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   Kurz:  „Die Potenzmenge ist stets mächtiger als die Menge selbst.“
   War auch ein Widerspruchsbeweis, meine ich.
 
-  **Robo:** Ja, aber ich würde mit `push_neg` und `intro f` anfangen."
+  **Robo:** Ja, aber ich würde mit `push Not` und `intro f` anfangen."
   -/
-  Hint "Start here with `push_neg` and `intro f`"
-  push_neg
+  Hint "Start here with `push Not` and `intro f`"
+  push Not
   intro f
   by_contra hf
   /-

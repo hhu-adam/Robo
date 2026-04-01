@@ -65,9 +65,9 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     use someone
     intro
     assumption
-  -- · Hint (hidden := true) "**Robo**: Du könntest hier mit `push_neg at {h}` weitermachen."
-  · Hint (hidden := true) "Continue with `push_neg at {h}`"
-    push_neg at h
+  -- · Hint (hidden := true) "**Robo**: Du könntest hier mit `push Not at {h}` weitermachen."
+  · Hint (hidden := true) "Continue with `push Not at {h}`"
+    push Not at h
     /-
     Hint (hidden := true) "**Du**: Also nach `{h}` existiert ja eine Person, die nicht trinkt. Könnte ich diese brauchen damit die Aussage trivialerweise wahr wird?
 
@@ -109,12 +109,12 @@ Conclusion
 | 17    | `use`                     | Um ein `∃` im Goal anzugehen.                          |
 | 18    | `choose x hx using h`     | Um ein `∃` in den Annahmen zu zerlegen.                |
 | *8ᵇ*  | `intro`                   | Um ein `∀` im Goal anzugehen.                          |
-| 19    | `push_neg`                | Für `¬∃` und `¬∀` im Goal.                             |
+| 19    | `push Not`                | Für `¬∃` und `¬∀` im Goal.                             |
 "
 -/
 Conclusion "
 Conclusion Quantus L10: Overview of planet contents: `∃`, `∀`, `Even n` (`n` is even),
 `Odd n` (`n` is odd), `rw`, `ring` (solves equations containing `+, -, *, ^`), `decide`,
 `unfold`, `use` (to tackle `∃` in goal), `choose x hx using h` (to disect `∃` in assumptions),
-`intro` (to tackle `∀` in goal) and `push_neg` (for `¬∃` and `¬∀` in goal).
+`intro` (to tackle `∀` in goal) and `push Not` (for `¬∃` and `¬∀` in goal).
 "

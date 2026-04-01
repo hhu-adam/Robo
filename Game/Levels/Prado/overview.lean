@@ -205,7 +205,7 @@ theorem Robo.Nat.exists_prime_and_dvd (n : ℕ) (hn : n ≠ 1): ∃ (p : ℕ), P
           · rw [prime_def]
             constructor
             · assumption
-            · push_neg at h
+            · push Not at h
               intro f
               specialize h f
               intro hfm

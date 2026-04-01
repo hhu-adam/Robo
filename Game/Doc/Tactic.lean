@@ -341,7 +341,7 @@ TacticDoc omega
 -- siehe Prado level 2; `omega` kann das nicht.
 
 /--
-The `push_neg` tactic pushes negation past quantifiers:
+The tactic `push Not` or `push ¬ _ ` (`push`, `Not`, `¬ _`)  pushes negation past quantifiers:
 
 | before       | after      |
 |:------------ |:-------------|
@@ -353,7 +353,7 @@ For example, the proof goal
 ```
   ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
 ```
-with `push_neg`
+with `push Not`
 ```
   ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
 ```
@@ -362,7 +362,7 @@ with `push_neg`
 
 The two lemmas `not_forall` and `not_exists` can be applied individually with `rw`.
 -/
-TacticDoc push_neg
+TacticDoc push
 
 /--
 The `obtain` tactic breaks down an assumption into its individual parts.
@@ -573,7 +573,7 @@ With `unfold F`, you can write out the definition `F` in the proof goal.
 With `unfold F at h`, you do the same thing, but in the assumption `h`.
 
 Although the proof goal or assumption before and after `unfold` are identical in definition,
-many tactics (e.g., `push_neg` or `rw`) operate on a syntactic level;
+many tactics (e.g., `push Not` or `rw`) operate on a syntactic level;
 they do not “see through definitions.”
 
 ## Friends and Relatives

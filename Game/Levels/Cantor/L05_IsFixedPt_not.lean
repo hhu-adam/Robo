@@ -38,7 +38,7 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
     unfold IsFixedPt at hP
     simp at hP -- a bit magical
   Branch
-    push_neg
+    push Not
     intro P h
     unfold IsFixedPt at h
     Branch

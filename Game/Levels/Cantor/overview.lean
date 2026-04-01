@@ -80,5 +80,5 @@ example (f : ℕ → ℕ → ℕ) : ∃ (g : ℕ → ℕ), ∀ (n : ℕ), f n �
     unfold fixedPoints IsFixedPt at hn
     simp at hn
   unfold Surjective at h
-  push_neg at h
+  push Not at h
   assumption

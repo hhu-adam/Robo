@@ -61,7 +61,7 @@
 --     (f : {x : U // x ∈ M} → {A : Set U // A ∈ 𝒫 M}):
 --     ¬ Surjective f := by
 --   unfold Surjective
---   push_neg
+--   push Not
 --   --by_contra h_sur
 --   let B : Set M := {x : M | x ∉ (f x)}
 --   use ⟨B, sorry⟩

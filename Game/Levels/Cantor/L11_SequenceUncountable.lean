@@ -38,7 +38,7 @@ Conclusion "Conclusion Cantor L11"
 open Nat Set Function
 
 Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
-  push_neg
+  push Not
   intro f
   by_contra hf
   apply cantor_diagonal at hf

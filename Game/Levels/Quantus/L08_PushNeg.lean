@@ -36,34 +36,34 @@ Statement {X : Type} (P : X → Prop) :
     **Du**: Gut. Dann ist auch ziemlich klar, was hier die Aussage ist.
             Und du wolltest mir jetzt verraten, wie ich das auf Leansch zeige?
 
-    **Robo**: Genau. Was du brauchst, ist `push_neg`."
+    **Robo**: Genau. Was du brauchst, ist `push Not`."
   -/
   Hint "Explain `{P}`: `{P}` is an expression over the type `{X}`. `{X}` could e.g. be the natural
   numbers. `{P} x` could be the expression: `x` is even. Or: `x` has seven prime factors. Or: `x` is
   a favorite number. In other words: `{P}` is a mapping that takes `x : {X}` and maps it onto an expression.
-  Try `push_neg`."
+  Try `push Not`."
   Branch
     constructor
     intro h
     -- Hint (hidden := true) "
-    --  **Robo**: `push_neg` schiebt von links nach rechts. Du kannst es hier also nicht auf
+    --  **Robo**: `push Not` schiebt von links nach rechts. Du kannst es hier also nicht auf
     --  das Beweisziel anwenden, wohl aber auf `{h}`."
-    Hint (hidden := true) "Try `push_neg` at `{h}`"
-    push_neg at h
+    Hint (hidden := true) "Try `push Not` at `{h}`"
+    push Not at h
     assumption
     intro h
-    push_neg
+    push Not
     assumption
-  push_neg
+  push Not
   rfl
 
-NewTactic push_neg
+NewTactic push
 DisabledTactic tauto
 
 /-
 Conclusion
 "
-**Robo**: Gut gemacht. Intern benutzt `push_neg` übrigens zwei Lemmas:
+**Robo**: Gut gemacht. Intern benutzt `push Not` übrigens zwei Lemmas:
 
  - `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
  - `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`
@@ -72,9 +72,9 @@ Das erste Lemma ist die Aussage, die du gerade gezeigt hast.
 
 **Du**: Na toll. Ich habe die Aussage also gezeigt, indem ich sie benutzt habe …
 
-**Robo**: :-) Hauptsache, Du merkst dir `push_neg`.
+**Robo**: :-) Hauptsache, Du merkst dir `push Not`.
 "
 -/
-Conclusion "Conclusion Quantus L08: `push_neg` internally uses `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
-and `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`. Memorize `push_neg`.
+Conclusion "Conclusion Quantus L08: `push Not` internally uses `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
+and `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`. Memorize `push Not`.
 "

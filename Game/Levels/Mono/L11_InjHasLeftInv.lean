@@ -70,7 +70,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     apply hf
     obtain hpos | hneg := hg (f a)
     · assumption
-    · push_neg at hneg
+    · push Not at hneg
       have : f a ≠ f a := hneg a
       contradiction
   · /- Injective f → HasLeftInverse f

@@ -44,7 +44,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
     "
     -/
     Hint (hidden := true) "Use `cantor_diagonal` as e.g. `apply cantor_diagonal at {hf}`"
-  push_neg
+  push Not
   intro f
   by_contra hf
   /-

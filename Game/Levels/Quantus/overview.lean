@@ -90,15 +90,15 @@ example : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
   rw [hy]
   ring
 
-/- Quantus L11: push_neg -/
+/- Quantus L11: push Not -/
 example {X : Type} (P : X → Prop) :
     ¬ (∃ x : X, P x) ↔ ∀ x : X, ¬ P x := by
-  push_neg
+  push Not
   rfl
 
 /- Quantus L12: not_odd_iff_even;  DELETE -/
 example : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
-  push_neg
+  push Not
   intro n
   use n
   rw [← not_odd_iff_even]
@@ -114,7 +114,7 @@ example {People : Type} [h_nonempty : Nonempty People] (isDrinking : People → 
     use someone
     intro
     assumption
-  · push_neg at h
+  · push Not at h
     choose p hp using h
     use p
     intro hp'

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-19\n"
+"POT-Creation-Date: 2026-04-01\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -1131,7 +1131,7 @@ msgstr "§0 is the closed interval §1."
 #. §0: `∅ : Set T`
 #. §1: `∅ : Set ℕ`
 #. §2: `∅ : Set ℝ`
-#. §3: `rw [eq_empty_iff_forall_not_mem]`
+#. §3: `rw [eq_empty_iff_forall_notMem]`
 #. §4: `S = ∅`
 #. §5: `∀ (x : T), x ∉ s`
 #. §6: `∅`
@@ -1157,28 +1157,30 @@ msgstr ""
 #. §0: `¬ A`
 #. §1: `A`
 #. §2: `A → False`
-#. §3: `push_neg`
-#. §4: `by_contra`
-#. §5: `contrapose`
-#. §6: `h : ¬ A`
-#. §7: `apply`
-#. §8: `False`
+#. §3: `unfold Not`
+#. §4: `push Not`
+#. §5: `by_contra`
+#. §6: `contrapose`
+#. §7: `h : ¬ A`
+#. §8: `apply`
+#. §9: `False`
 #: Game.Doc.Definition
 msgid ""
 "§0 is the logical negation of §1.\n"
-"It is implemented internally as §2.\n"
+"It is implemented internally as §2.  You can see this with §3.\n"
 "\n"
-"Useful tactics are: §3, §4, §5.\n"
-"You can also apply an assumption of the form §6 using §7 to the proof target "
-"§8."
+"Useful tactics are: §4, §5, §6.\n"
+"You can also apply an assumption of the form §7 using §8 to the proof target "
+"§9."
 msgstr ""
-"§0 is the logical negation of §1. It is implemented internally as §2.  Thus, "
-"you can §7 an assumption of the form §6 to the goal §8.\n"
+"§0 is the logical negation of §1. It is implemented internally as §2, as you "
+"can easily verify with §3.\n"
+"Thus, you can §8 an assumption of the form §7 to the goal §9.\n"
 "\n"
 "Other useful tactics for dealing with negation include: \n"
-"* §3\n"
 "* §4\n"
-"* §5"
+"* §5\n"
+"* §6"
 
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
@@ -1754,6 +1756,65 @@ msgstr ""
 "\n"
 "The tactic §20 does the exact opposite of §21."
 
+#. §0: `push Not`
+#. §1: `push ¬ _ `
+#. §2: `push`
+#. §3: `Not`
+#. §4: `¬ _`
+#. §5: `¬∀ x, P x`
+#. §6: `∃ x, ¬P x`
+#. §7: `¬∃ x, P x`
+#. §8: `∀ x, ¬P x`
+#. §9: `¬`
+#. §10: ```
+#.   ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
+#. ```
+#. §11: `push Not`
+#. §12: ```
+#.   ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
+#. ```
+#. §13: `not_forall`
+#. §14: `not_exists`
+#. §15: `rw`
+#: Game.Doc.Tactic
+msgid ""
+"The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n"
+"\n"
+"| before       | after      |\n"
+"|:------------ |:-------------|\n"
+"| §5  | §6  |\n"
+"| §7  | §8  |\n"
+"\n"
+"In nested expressions, it pushes the negation §9 as far to the right as "
+"possible.\n"
+"For example, the proof goal\n"
+"§10\n"
+"with §11\n"
+"§12\n"
+"\n"
+"## Friends and relatives\n"
+"\n"
+"The two lemmas §13 and §14 can be applied individually with §15."
+msgstr ""
+"The tactic §0 (or §1) can push the logical negation operator past "
+"quantifiers: \n"
+"\n"
+"| before | after | \n"
+"|:------------ |:-------------|\n"
+"| §5 | §6 | \n"
+"| §7 | §8 | \n"
+"\n"
+"In nested expressions, it pushes the negation §9 as far to the right as "
+"possible. For example, it turns the goal \n"
+"§10\n"
+"into \n"
+"§12\n"
+"\n"
+"## Friends and relations \n"
+"\n"
+"The tactic is based on the two lemmas §13 and §14, which can be applied "
+"individually with §15."
+
 #. §0: `induction n`
 #. §1: `n`
 #. §2: `induction n with d dh`
@@ -2006,60 +2067,6 @@ msgstr ""
 "§1 in semi-rings, in particular in ℕ, ℤ, ℚ, ℝ, … It works particularly well "
 "in commutative rings."
 
-#. §0: `push_neg`
-#. §1: `¬∀ x, P x`
-#. §2: `∃ x, ¬P x`
-#. §3: `¬∃ x, P x`
-#. §4: `∀ x, ¬P x`
-#. §5: `¬`
-#. §6: ```
-#.   ¬ ∀ ε, ∃ δ, ∀ y, | x - y | < δ → | f x - f y | < ε
-#. ```
-#. §7: `push_neg`
-#. §8: ```
-#.   ∃ ε, ∀ δ, ∃ y, ¬ (| x - y | < δ → | f x - f y | < ε)
-#. ```
-#. §9: `not_forall`
-#. §10: `not_exists`
-#. §11: `rw`
-#: Game.Doc.Tactic
-msgid ""
-"The §0 tactic pushes negation past quantifiers:\n"
-"\n"
-"| before       | after      |\n"
-"|:------------ |:-------------|\n"
-"| §1  | §2  |\n"
-"| §3  | §4  |\n"
-"\n"
-"In nested expressions, it pushes the negation §5 as far to the right as "
-"possible.\n"
-"For example, the proof goal\n"
-"§6\n"
-"with §7\n"
-"§8\n"
-"\n"
-"## Friends and relatives\n"
-"\n"
-"The two lemmas §9 and §10 can be applied individually with §11."
-msgstr ""
-"The tactic §0 can push the logical negation operator past quantifiers: \n"
-"\n"
-"| before | after | \n"
-"|:------------ |:-------------|\n"
-"| §1 | §2 | \n"
-"| §3 | §4 | \n"
-"\n"
-"In nested expressions, it pushes the negation §5 as far to the right as "
-"possible. For example, the goal \n"
-"§6\n"
-"becomes \n"
-"§8\n"
-"\n"
-"## Friends and relations \n"
-"\n"
-"The tactic is based on the two lemmas §9 and §10, which can be applied "
-"individually with §11."
-
 #. §0: ```
 #. f = g
 #. ```
@@ -2292,7 +2299,7 @@ msgstr ""
 #. §2: `unfold F at h`
 #. §3: `h`
 #. §4: `unfold`
-#. §5: `push_neg`
+#. §5: `push Not`
 #. §6: `rw`
 #. §7: `unfold F`
 #. §8: `simp only [F]`
@@ -2550,7 +2557,7 @@ msgstr ""
 #: Game.Levels.Mono.L11_InjHasLeftInv Game.Levels.Piazza.L01_Mem__Set
 #: Game.Levels.Piazza.L02_Simp Game.Levels.Piazza.L03_Ext__Set__Union__Inter
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
+#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
 #: Game.Levels.Piazza.L06_Ext2__univ2 Game.Levels.Piazza.L07_antisymm_iff
 #: Game.Levels.Piazza.L08_subset_iff Game.Levels.Piazza.L09_subset_iff2
 #: Game.Levels.Piazza.L10 Game.Levels.Piazza.L11_erase
@@ -2558,7 +2565,7 @@ msgstr ""
 #: Game.Levels.Prado.L01_prime_two
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
 #: Game.Levels.Prado.L03_even_iff_two_dvd Game.Levels.Prado.L04_99
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+#: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 #: Game.Levels.Prado.L07_dvd_mul Game.Levels.Prado.L08_exists_prime_and_dvd
 #: Game.Levels.Prado.L09_ExistsUnique Game.Levels.Prado.L10_EvenPrime
@@ -2782,7 +2789,7 @@ msgstr ""
 #. §0: $[0, «{d}»+1]$
 #. §1: $[0,«{d}»]$
 #. §2: $«{d}»+1$
-#. §3: `insert_Icc_eq_Icc_add_one_right`
+#. §3: `insert_Icc_right_eq_Icc_add_one`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid "Divide interval §0 into §1 and §2 by using §3"
 msgstr ""
@@ -2869,8 +2876,8 @@ msgstr ""
 "time, the sign reads:"
 
 #. §0: $\\sum_{i=-n}^«{n}» i = 0$
-#. §1: `insert_Icc_eq_Icc_add_one_right`
-#. §2: `insert_Icc_eq_Icc_sub_one_left`
+#. §1: `insert_Icc_right_eq_Icc_add_one`
+#. §2: `insert_Icc_left_eq_Icc_sub_one`
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
 msgid "Prove §0 by using §1, §2"
 msgstr ""
@@ -3082,7 +3089,7 @@ msgstr ""
 "**Cantor**: So, what do you think? Is there any set that is not in the image "
 "of §0?"
 
-#. §0: `push_neg`
+#. §0: `push Not`
 #. §1: `intro f`
 #: Game.Levels.Cantor.L02_CantorPowerset
 msgid "Start here with §0 and §1"
@@ -3595,7 +3602,7 @@ msgstr ""
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
-#. §2: `push_neg`
+#. §2: `push Not`
 #: Game.Levels.Epo.L02_CurrySurjective
 msgid "Try §0 | §1, §2"
 msgstr ""
@@ -5599,7 +5606,7 @@ msgstr ""
 "components with §1."
 
 #. §0: `«{hx}»`
-#. §1: `push_neg at «{hx}»`
+#. §1: `push Not at «{hx}»`
 #: Game.Levels.Luna.L05_Linarith2
 msgid "Increase readability of §0. Try §1"
 msgstr ""
@@ -5886,7 +5893,7 @@ msgstr ""
 "\n"
 "**Scribble**: Exactly! Which two numbers would you like to use?"
 
-#. §0: `push_neg`
+#. §0: `push Not`
 #: Game.Levels.Mono.L03_NotInjective
 msgid "Remind yourself of §0"
 msgstr "**Scribble**: Do you remember §0?"
@@ -6460,9 +6467,9 @@ msgstr ""
 "**Scribble**:  Why don't you give it a try?"
 
 #. §0: `∅`
-#. §1: `rw [eq_empty_iff_forall_not_mem]`
-#. §2: `simp [eq_empty_iff_forall_not_mem]`
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
+#. §1: `rw [eq_empty_iff_forall_notMem]`
+#. §2: `simp [eq_empty_iff_forall_notMem]`
+#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
 msgid ""
 "Having §0 you could either start with §1 or\n"
 "§2"
@@ -6472,7 +6479,7 @@ msgstr ""
 "**Scribble**: To make sure it means what you think it means, you could start "
 "with §1. Or with §2, if you want to get done with this quickly."
 
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_not_mem
+#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
 msgid "Intro Piazza L05"
 msgstr "**Mem:** Do you also find this statement confusing?"
 
@@ -6828,7 +6835,7 @@ msgstr ""
 "his wonderful museum. He feels ignored. To get your attention, he gives you "
 "the following problem."
 
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+#: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
 msgid "Intro Prado L05"
 msgstr ""
 "**You** *(to Scribble)*: Could you again give me something more "
@@ -6841,7 +6848,7 @@ msgstr ""
 #. §2: `a b c : ℕ`
 #. §3: `a * b < a * c`
 #. §4: `b < c`
-#: Game.Levels.Prado.L05_not_dvd_of_between_consec_multiples
+#: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
 msgid ""
 "Use §0 and the lemma §1.\n"
 "For the latter, given §2 it concludes from the assumption §3 that §4"
@@ -7359,10 +7366,10 @@ msgstr ""
 "After a loud and lengthy discussion, the following problem appears from "
 "somewhere within the crowd."
 
-#. §0: `push_neg`
+#. §0: `push Not`
 #. §1: `not_exists (P : X → Prop) : ¬ (∃ x, P x) ↔ ∀ x, (¬ P x)`
 #. §2: `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`
-#. §3: `push_neg`
+#. §3: `push Not`
 #: Game.Levels.Quantus.L08_PushNeg
 msgid ""
 "Conclusion Quantus L08: §0 internally uses §1\n"
@@ -7391,7 +7398,7 @@ msgstr ""
 #. §7: `x`
 #. §8: `«{P}»`
 #. §9: `x : «{X}»`
-#. §10: `push_neg`
+#. §10: `push Not`
 #: Game.Levels.Quantus.L08_PushNeg
 msgid ""
 "Explain §0: §1 is an expression over the type §2. §3 could e.g. be the "
@@ -7479,7 +7486,7 @@ msgstr ""
 "large audience. As I said, I would rather first specify a real number with "
 "§4 and then rewrite."
 
-#. §0: `push_neg`
+#. §0: `push Not`
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr "Instead of this theorem, you can use §0."
@@ -7501,7 +7508,7 @@ msgstr "Instead of this theorem, you can use §0."
 #. §14: `∃`
 #. §15: `intro`
 #. §16: `∀`
-#. §17: `push_neg`
+#. §17: `push Not`
 #. §18: `¬∃`
 #. §19: `¬∀`
 #: Game.Levels.Quantus.L10_DrinkersParadox
@@ -7535,7 +7542,7 @@ msgstr ""
 "| §15 | to prove statement §16 values, pick an arbitrary value | \n"
 "| §17 | move negation past quantifier in §18 or §19 | "
 
-#. §0: `push_neg at «{h}»`
+#. §0: `push Not at «{h}»`
 #: Game.Levels.Quantus.L10_DrinkersParadox
 msgid "Continue with §0"
 msgstr "**Scribble**: You could continue here with §0."
@@ -8684,7 +8691,7 @@ msgstr "**Arapuka**: You're right. I could have thought of that myself."
 
 #. §0: `b`
 #. §1: `b`
-#. §2: `eq_empty_iff_forall_not_mem`
+#. §2: `eq_empty_iff_forall_notMem`
 #. §3: `unfold Ne`
 #: Game.Levels.Samarkand.L06_PreimageNonempty
 msgid ""

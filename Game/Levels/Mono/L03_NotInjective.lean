@@ -43,9 +43,9 @@ Statement :
   -/
   Hint (hidden := true) "Open `Injective` via `unfold` to see `¬ ∀` ..."
   unfold Injective
-  -- Hint (hidden := true) (strict := true) "**Robo**: Erinnerst du dich an `push_neg`?"
-  Hint (hidden := true) (strict := true) "Remind yourself of `push_neg`"
-  push_neg
+  -- Hint (hidden := true) (strict := true) "**Robo**: Erinnerst du dich an `push Not`?"
+  Hint (hidden := true) (strict := true) "Remind yourself of `push Not`"
+  push Not
   /-
   Hint (hidden := true)"
     **Du** Jetzt muss ich einfach ein Gegenbeispiel nennen, oder?

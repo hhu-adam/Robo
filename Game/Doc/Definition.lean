@@ -481,9 +481,9 @@ DefinitionDoc False as "False" in "Logic"
 
 /--
 `¬ A` is the logical negation of `A`.
-It is implemented internally as `A → False`.
+It is implemented internally as `A → False`.  You can see this with `unfold Not`.
 
-Useful tactics are: `push_neg`, `by_contra`, `contrapose`.
+Useful tactics are: `push Not`, `by_contra`, `contrapose`.
 You can also apply an assumption of the form `h : ¬ A` using `apply` to the proof target `False`.
 -/
 DefinitionDoc Not as "¬" in "Logic"
