@@ -23,6 +23,7 @@ open Function Set
   planned to be used as `range_fixedPoints` for future planet on quotients;
   don't need a name for now
 -/
+
 Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     range f = fixedPoints f := by
   /-

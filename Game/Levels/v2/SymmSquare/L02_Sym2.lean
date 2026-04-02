@@ -24,7 +24,8 @@ open Sym2
 
 attribute [local instance] Sym2.Rel.setoid
 
-/-- Two pairs are related by `Sym2.Rel` if they are permutations of each other. -/
+/- Two pairs are related by `Sym2.Rel` if they are permutations of each other. -/
+
 Statement Sym2.pair_rel_iff {x y z w : A} : (x, y) ≈ (z, w) ↔ x = z ∧ y = w ∨ x = w ∧ y = z := by
   constructor
   · intro h

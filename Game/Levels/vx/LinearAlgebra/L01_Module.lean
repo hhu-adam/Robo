@@ -52,7 +52,8 @@ Eigenschaften beliebige `(r s : R)` und `(v w : V)`erfüllt:
 -- und dazu jegliche Beweise, dass die Skalarmultiplikation sich mit der Ringstruktur verträgt.
 -- Im nachfolgenden beweisen wir die Eigenschaften einzeln.
 
-/-- Zeige, dass $\\mathbb{R}$ ein $\\mathbb{Q}$-Modul ist. -/
+/- Zeige, dass $\\mathbb{R}$ ein $\\mathbb{Q}$-Modul ist. -/
+
 Statement : Module ℚ ℝ := by
   Hint "**Robo**: Als erstes willst du die Stuktur `Modul` aufteilen in einzelne Beweise.
   Der Syntax dafür ist:

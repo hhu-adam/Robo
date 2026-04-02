@@ -26,7 +26,8 @@ lemma mem_span_of_mem {V K : Type _} [Field K] [AddCommMonoid V]
   specialize hp h
   assumption
 
-/-- Für $x, y \\in M$, zeige dass $x + 2y$ in der $K$-linearen Hülle $\\langle M \\rangle$ liegt. -/
+/- Für $x, y \\in M$, zeige dass $x + 2y$ in der $K$-linearen Hülle $\\langle M \\rangle$ liegt. -/
+
 Statement {V K : Type _} [Field K] [AddCommMonoid V] [Module K V] (M : Set V) {x y : V}
     (h₁ : x ∈ M) (h₂ : y ∈ M) :
     x + (2 : K) • y ∈ span K M := by

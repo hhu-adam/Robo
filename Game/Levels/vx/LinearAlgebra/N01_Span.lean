@@ -15,7 +15,6 @@ Introduction
 
 "
 
-/--  -/
 Statement {K V : Type _} [Field K] [AddCommMonoid V] [Module K V] (M : Set V) :
     span K ↑(span K M) = span K M := by
   apply Submodule.span_eq

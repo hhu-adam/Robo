@@ -13,7 +13,7 @@ Der nächste bitte …
 -/
 Introduction "Intro Logo L13"
 
-/--  -/
+
 Statement (A B : Prop) (h : (A ∧ B) ∨ A) : A := by
   /-
   Hint "**Robo** Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir,

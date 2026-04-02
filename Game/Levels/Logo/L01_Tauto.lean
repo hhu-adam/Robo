@@ -20,7 +20,7 @@ Du siehst Robo hilflos an.
 -/
 Introduction "Intro Logo L01"
 
-/--  -/
+
 Statement (A B C : Prop) :
     ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C) := by
   /-

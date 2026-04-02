@@ -34,7 +34,7 @@ Solche Strukturen mit mehr als einem Feld kann man in Lean mit dem anonymen Kons
 erstellen, wie du schon einmal beim `∃` gesehen hast: `(⟨n, h⟩ : ℕ+)`
 "
 
-/--  -/
+
 Statement (a : ℕ+) : (a : ℕ) ≠ 0 := by
   apply ne_of_gt
   obtain ⟨a, ha⟩ := a

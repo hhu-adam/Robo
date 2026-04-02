@@ -18,6 +18,7 @@ open Setoid
 
 /- SH: Hard to believe this is not in mathlib!  -/
 /- SH: this is groupoid version of the yoneda lemma for the proposition valued functors.-/
+
 Statement Setoid.rel_iff_eq_classes {s : Setoid A} (a b : A) :
     (s.Rel a b) ↔ { x | s.Rel x a } = { x | s.Rel x b }:= by
   constructor

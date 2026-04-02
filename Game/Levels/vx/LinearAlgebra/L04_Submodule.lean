@@ -39,6 +39,7 @@ grösste Element in dieser Lattice,
 und das Null-Untermodule `{0}` with als `⊥` geschrieben (`\\bot`), also das kleinste Element.
 "
 
-/-- Jeder Untervektorraum `U ⊆ V` ist eine Teilmenge von `V`. -/
+/- Jeder Untervektorraum `U ⊆ V` ist eine Teilmenge von `V`. -/
+
 Statement {K V : Type _} [Field K] [AddCommMonoid V] [Module K V] (U : Submodule K V) : U ≤ ⊤ := by
   simp only [le_top]

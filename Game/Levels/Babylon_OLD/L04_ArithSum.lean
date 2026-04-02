@@ -22,7 +22,8 @@ open Fin -- BigOperators
 /---/
 TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 
-/-- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/
+/- $2 \cdot \sum_{i = 0}^n i = n \cdot (n + 1)$. -/
+
 Statement arithmetic_sum (n : ℕ) :
     2 * (∑ i : Fin (n + 1), (i:ℕ)) = n * (n + 1) := by
   Hint "**Du**: Klar, die werden ja nicht oben anfangen mit bauen. Sag mal,

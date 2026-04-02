@@ -8,7 +8,7 @@ Title "" -- "Rewrite"
 -- Introduction ""
 Introduction "Intro Quantus O04"
 
-/--
+/-
 $$
 \begin{aligned}
   a &= b \\ %(new line)
@@ -17,6 +17,7 @@ $$
 \end{aligned}
 $$
  -/
+
 Statement (a b : ℕ) (h : a = b) (g : a + a ^ 2 = b + 1) : b + b ^ 2 = b + 1 := by
   /-
   Hint "

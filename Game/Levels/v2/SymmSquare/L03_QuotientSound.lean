@@ -19,7 +19,8 @@ open Sym2
 
 attribute [local instance] Sym2.Rel.setoid
 
-/-- (1, -2) and (-2, 1) are equal as unordered pairs of integers. -/
+/- (1, -2) and (-2, 1) are equal as unordered pairs of integers. -/
+
 Statement : (⟦ (1, -2) ⟧ : Sym2 ℤ) = ⟦ (-2, 1) ⟧ := by
   Branch
     simp [Quotient.eq]

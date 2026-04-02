@@ -11,8 +11,6 @@ Introduction
 ""
 open Set
 
-/--
- -/
 Statement (a b : ℝ) (hab : a ≤ b) (f : ℝ → ℝ) (f_cont : ContinuousOn f (Icc a b))
     (f_retract : f '' (Icc a b) ⊂ Icc a b) : ∃ x ∈ (Icc a b), f x = x := by
   --unfold ContinuousOn at f_cont

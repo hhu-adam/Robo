@@ -15,10 +15,10 @@ Ihr schaut euch den nächsten Turm an."
 
 Introduction "Intro Babylon O03"
 
+/- $\sum_{i=0}^{n-1} (i + 1) = n + \sum_{i=0}^{n-1} i$. -/
+
 -- open BigOperators
 
-
-/-- $\sum_{i=0}^{n-1} (i + 1) = n + \sum_{i=0}^{n-1} i$. -/
 Statement (n : ℕ) : ∑ i : Fin n, ((i: ℕ) + 1) = n + (∑ i : Fin n, (i:ℕ)) := by
   /-
   Hint "**Du**: Hmm, wieder `simp`?

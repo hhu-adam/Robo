@@ -14,7 +14,7 @@ Auftritt zweiter Querulant.
 -/
 Introduction "Intro Logo L08"
 
-/--  -/
+
 Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
   /-
   Hint "

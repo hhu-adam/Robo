@@ -14,7 +14,6 @@ Er legt sie uns vor, setzt sich hin und häkelt.
 -/
 Introduction "Intro Logo L10"
 
-/--  -/
 Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   /-
   Hint "

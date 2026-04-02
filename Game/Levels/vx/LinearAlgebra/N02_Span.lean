@@ -22,7 +22,6 @@ usally denoted `f(M) = {y | ∃ x ∈ M, f(x) = y}` in mathematical texts.
 
 -- set_option pp.all true
 
-/--  -/
 Statement : True := by
   sorry
 

@@ -14,7 +14,7 @@ Auftritt dritter Querulant.
 -/
 Introduction "Intro Logo L09"
 
-/--  -/
+
 Statement (n : ℕ) (h : n = 10) (g : n ≠ 10) : n = 42 := by
   /-
   Hint "

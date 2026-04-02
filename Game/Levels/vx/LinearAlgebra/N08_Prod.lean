@@ -30,9 +30,10 @@ Lean kann aus den Ausdrücken oben dann automatisch herausfinden, dass `Π i, V 
 ein `K`-Vektorraum ist:
 "
 
-/-- Sei `U` ein `K`-Vektorraum und `fᵢ : U → Vᵢ` eine Familie von `K`-lineare Abbildungen
+/- Sei `U` ein `K`-Vektorraum und `fᵢ : U → Vᵢ` eine Familie von `K`-lineare Abbildungen
 in `K`-Vektorräume. Dann gibt es genau eine Abbildung `f : U → (Π i, V i)`, die mit
 allen kommutiert. -/
+
 Statement {K U : Type u} [Field K] {ι : Type u} {V : ι → Type u}
     [∀ i, AddCommMonoid (V i)] [∀ i, Module K (V i)]
     [AddCommMonoid U] [Module K U]

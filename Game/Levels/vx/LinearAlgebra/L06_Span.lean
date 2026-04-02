@@ -21,8 +21,9 @@ local notation "ℝ²" => Fin 2 → ℝ
 open Submodule Set Finsupp
 
 -- mem_span_of_mem
-/-- Zeige, dass $x \\in M$ auch Element von der $K$-linearen Hülle
+/- Zeige, dass $x \\in M$ auch Element von der $K$-linearen Hülle
   \\langle M \\rangle ist. -/
+
 Statement {V K : Type _} [Field K] [AddCommMonoid V]
     [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
     x ∈ span K M := by

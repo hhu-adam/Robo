@@ -12,9 +12,10 @@ universe u
 -- Damit man `#K` anstatt `Cardinal.mk K` für die Kardinalität von `K` schreiben kann
 namespace Cardinal
 
-/-- Sei $K$ ein Körper mit Kardinalität $\aleph_0$ und sei $V$ ein $K$-Vektorraum.
+/- Sei $K$ ein Körper mit Kardinalität $\aleph_0$ und sei $V$ ein $K$-Vektorraum.
 
 Zeige, dass die Kardinalität von $V \le \aleph_0$. -/
+
 Statement cardinal_eq_of_finite_basis {K V : Type u} {ι : Type u} [Field K] [AddCommGroup V]
     [Module K V] [Fintype ι] (h_card : #K = ℵ₀) (h_basis: Basis ι K V) : #V ≤ ℵ₀:= by
   Hint "Als Beweisstrategie möchtest du wie `#K ^ #ι ≤ ℵ₀` gehen. Also zuerst sagen,

@@ -17,9 +17,10 @@ universe u
 -- Damit man `#K` anstatt `Cardinal.mk K` für die Kardinalität von `K` schreiben kann
 namespace Cardinal
 
-/--
+/-
 Zeige dass ℝ kein endlich dimensionaler ℚ-Vektorraum ist.
 -/
+
 Statement : ¬ FiniteDimensional ℚ ℝ := by
   Branch
     -- TODO: Eduart Bopp's Beweis
