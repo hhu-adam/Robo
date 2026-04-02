@@ -49,42 +49,31 @@ TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
     trace = f := by
-  /-
-  Hint "**Du**:  Hier sind noch einmal alle Eigenschaften zusammengefasst.
-
-    **Robo**:  Und du behauptest, nur Tracy hat diese Eigenschaften?
-
-    **Du**: Ja.  Ich glaube, das ist so.  Jedes `f`, dass diese Eigenschaften hat, verhält sich auf allen Matrizen genauso wie Tracy.  Und deshalb *ist* es Tracy!"
-  -/
   Hint "Explain that each `f` has stated properties"
-  /-
-  Hint (hidden := true) "
-    **Robo**: `ext`!"
-  -/
   Hint (hidden := true) "Use `ext`!"
   ext A
-  -- Hint "**Du**: Und jetzt schreiben wir `f {A}` als Summe von Basiselementen."
-  Hint "Rewrite `f {A}` as sum of basis elements"
-  rw [eq_sum_apply_diag_ebasis] -- Lvl 8
-  /-
-  Hint (hidden := true) "
-      **Du**: Wir hatten doch eben festgestellt, dass `f (E i i) = 1` gilt!
-
-      **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
-  -/
-  Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
-  simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
-  -- Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
-  Hint (hidden := true) "Observe equality"
-  rfl
-  /-
-  Hint "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?
-
-  **Robo**: Ganz am Anfang bei `rw [eq_sum_apply_diag_ebasis]` hast du vermutlich dieses Argument
-  ausgelassen.  Jetzt kannst du es noch nachholen."
-  -/
-  Hint "Remind missed argument with `rw [eq_sum_apply_diag_ebasis]`"
-  assumption
+  -- Hint "Rewrite `f {A}` as sum of basis elements"
+  Branch
+    rw [eq_sum_apply_diag_ebasis] -- Lvl 8
+    Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
+    simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
+    Hint (hidden := true) "Observe equality"
+    rfl
+    Hint "Remind missed argument with `rw [eq_sum_apply_diag_ebasis]`"
+    assumption
+  nth_rw 2 [matrix_eq_sum_ebasis A]
+  simp [map_sum]
+  change A.trace = ∑ i : Fin n, ∑ j : Fin n, A i j * f (E i j)
+  have (i j : Fin n) : A i j * f (E i j) = if i = j then A i i else 0
+  · by_cases h_ij : i = j
+    rw [if_pos h_ij, h_ij]
+    rw [one_on_diag_ebasis h₁ h₂]
+    ring
+    rw [if_neg h_ij]
+    rw [zero_on_offDiag_ebasis h_ij h₁]
+    ring
+  · simp [this]
+    rfl
 
 NewDefinition Matrix.trace
 TheoremTab "Matrix"
