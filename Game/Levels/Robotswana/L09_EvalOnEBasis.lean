@@ -166,7 +166,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · Branch
           apply congr_arg
           -- Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
-          Hint "Story"
+          Hint "[Robotswana.L09] Hint 1: `apply congr_arg` is mathematically wrong"
         /-
         Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
 

@@ -8489,6 +8489,12 @@ msgstr ""
 "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser "
 "denken… Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
 
+#. §0: `apply congr_arg`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Robotswana.L09] Hint 1: §0 is mathematically wrong"
+msgstr ""
+"**Du**: Nein, das ist jetzt mathematisch falsch!"
+
 #. §0: `«{n}»`
 #. §1: $$
 #. \\begin{aligned}
