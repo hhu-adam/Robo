@@ -4284,33 +4284,39 @@ msgstr ""
 "\n"
 "**Robo** *(zu dir)*: Los, probiers mal!"
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 1: `apply` different prop"
+msgid "[Implis.L05] Hint 1: §0 different prop"
 msgstr ""
 "**Robo**: Das sieht nach einer Sackgasse aus …"
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 2: `apply` different prop"
+msgid "[Implis.L05] Hint 2: §0 different prop"
 msgstr ""
 "**Robo**: Das sieht nicht gut aus."
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 3: `apply` different prop"
+msgid "[Implis.L05] Hint 3: §0 different prop"
 msgstr ""
 "**Robo**: Nah, da stimmt doch was nicht …"
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 4: `apply` different prop"
+msgid "[Implis.L05] Hint 4: §0 different prop"
 msgstr ""
 "**Robo**: Halt! Falsch abgebogen."
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 5: `apply` different prop at hyp"
+msgid "[Implis.L05] Hint 5: §0 different prop at hyp"
 msgstr ""
 "**Robo**: Bist du dir sicher?"
 
+#. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-msgid "[Implis.L05] Hint 6: `apply` different prop at hyp"
+msgid "[Implis.L05] Hint 6: §0 different prop at hyp"
 msgstr ""
 "**Robo**: Ehm …"
 
@@ -4497,6 +4503,12 @@ msgstr ""
 "Kette von Äquivalenzen  §2 Schritt für Schritt abarbeiten: als erstes führst "
 "Du mit §3 den Zwischenschritt §4 ein, dann mit §5 den nächsten "
 "Zwischenschritt."
+
+#. §0: `apply g`
+#: Game.Levels.Implis.L10_Iff
+msgid "[Implis.L10] Hint 1: §0 is also a possible direction"
+msgstr ""
+"**Robo**: So kannst Du natürlich auch anfangen."
 
 #. §0: `intro`
 #: Game.Levels.Implis.L10_Iff
