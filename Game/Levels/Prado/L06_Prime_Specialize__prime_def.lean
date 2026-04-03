@@ -69,7 +69,7 @@ NewTactic specialize
 -- Sollte in jedem Fall in Hints erwähnt werden,
 -- sonst ist es verwirrend, dass die Taktik auf
 -- einmal im Inventory erscheint.
-/---/
+/-- [Prado.L06] documentation 1 -/
 TheoremDoc Nat.prime_def as "prime_def" in "ℕ"
 NewTheorem Nat.prime_def
 TheoremTab "ℕ"

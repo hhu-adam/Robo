@@ -70,9 +70,9 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
 
 NewDefinition ExistsUnique
 
-/---/
+/-- [Prado.L09] docuemntation 1 -/
 TheoremDoc mul_eq_mul_left_iff as "mul_eq_mul_left_iff" in "+ *"
-/---/
+/-- [Prado.L09] docuemntation 2 -/
 TheoremDoc mul_eq_mul_right_iff as "mul_eq_mul_right_iff" in "+ *"
 
 TheoremTab "+ *"

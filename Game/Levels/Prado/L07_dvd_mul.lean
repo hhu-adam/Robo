@@ -21,7 +21,7 @@ Statement (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
   rw [Prime.dvd_mul]
   decide
 
-/---/
+/-- [Prado.L07] documentation 1 -/
 TheoremDoc Nat.Prime.dvd_mul as "Prime.dvd_mul" in "ℕ"
 NewTheorem Nat.Prime.dvd_mul
 

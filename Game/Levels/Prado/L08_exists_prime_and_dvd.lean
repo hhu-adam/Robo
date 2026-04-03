@@ -35,7 +35,7 @@ Statement : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   simp
 
 
-/---/
+/-- [Prado.L08] documentation 1 -/
 TheoremDoc Nat.exists_prime_and_dvd as "exists_prime_and_dvd" in "ℕ"
 NewTheorem Nat.exists_prime_and_dvd
 

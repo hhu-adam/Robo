@@ -79,7 +79,7 @@ DefinitionDoc Dvd.dvd as "· ∣ ·"
 
 NewDefinition Dvd.dvd
 
-/---/
+/-- [Prado.L02] documentation 1 -/
 TheoremDoc dvd_iff_exists_eq_mul_left as "dvd_iff_exists_eq_mul_left" in "ℕ"
 NewTheorem dvd_iff_exists_eq_mul_left
 

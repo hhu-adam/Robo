@@ -14,7 +14,7 @@ Introduction
 -/
 Introduction "Intro Prado L03"
 
-/---/
+/-- [Prado.L03] documentation 1 -/
 TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
 
 namespace Nat

@@ -13,7 +13,7 @@ Er formuliert die Aussage schnell in Leansch und hält sie dir hin.
 -/
 Introduction "Intro Prado L01"
 
-/---/
+/-- [Prado.L01] documentation 1 -/
 TheoremDoc Nat.prime_two as "prime_two" in "ℕ"
 
 namespace Nat
