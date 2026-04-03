@@ -664,7 +664,7 @@
  "Intro Saturn L02": "The next radio message looks a little different.",
  "Intro Saturn L01": "Suddenly, you receive a radio message.",
  "Intro Saturn":
- "You never actually want to approach this planet. But you weren't entirely as focussed as one needs to be in an universe, especially in a universe one is not entirely familiar with. Now you're already too close, the gravity is too strong, and your regenerative power unit is currently in regeneration mode.\n\n**You**: What is this orange sauce on the planet?\n\n**Scribble**: It looks rather toxic. Or hot.\n\n**You**: Or both. I really don't want to land there! \n\n**Scribble**: Neither do I. I'm trying my best not to. And look how much rubbish is already orbiting here! The best we can do right now is fly with the current.",
+ "You never actually want to approach this planet. But you weren't entirely as focused as one needs to be in a universe, especially in a universe one is not entirely familiar with. Now you're already too close, the gravity is too strong, and your regenerative power unit is currently in regeneration mode.\n\n**You**: What is this orange sauce on the planet?\n\n**Scribble**: It looks rather toxic. Or hot.\n\n**You**: Or both. I really don't want to land there! \n\n**Scribble**: Neither do I. I'm trying my best not to. And look how much rubbish is already orbiting here! The best we can do right now is fly with the current.",
  "Intro Samarkand L08":
  "**Arapuka**: Could you perhaps even help me with this conjecture?",
  "Intro Samarkand L07":
@@ -1069,7 +1069,7 @@
  "Explain simplification of §0 and §1":
  "**You**: Thank you, that helps! This step should be easy: a sum over one element, where §0 is one again, and §1 also simplifies!",
  "Explain misfit of §0. Try §1 via §2":
- "**You**:  Is this from some Annoying Algebra Anonymous club? Clearly, one just needs to rearrange the terms bit. Perhaps we should answer with §0?\n\n**Scribble**: No, in this universe, the equation is naturally called §1, simply because formula contains first a “+” and then a “^2”. So you could use §2. Then the left side will look exactly like the right side, and you're done.",
+ "**You**:  Is this from some Annoying Algebra Anonymous club? Clearly, one just needs to rearrange the terms bit. Perhaps we should answer with §0?\n\n**Scribble**: No, in this universe, the equation is naturally called §1, simply because the formula contains first a `+` and then a `^2`. So you could use §2. Then the left side will look exactly like the right side, and you're done.",
  "Explain inclusion. Try §0":
  "**Scribble:** To show inclusion, you take an element from the left side and show that it is in the right side. So why not start with §0?",
  "Explain goal: An injective mapping §0 which is left inverse to mapping §1, is to the same mapping also right inverse":
