@@ -39,7 +39,7 @@ Conclusion "
 Conclusion "Conclusion Saturn L03"
 NewTactic ring
 
-/---/
+/-- [Saturn.L03] documentation 1-/
 TheoremDoc mul_comm as "mul_comm" in "+ *"
 
 NewTheorem mul_comm

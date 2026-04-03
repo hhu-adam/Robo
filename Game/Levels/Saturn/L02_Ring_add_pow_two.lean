@@ -36,7 +36,7 @@ Conclusion "
 Conclusion "Conclusion Saturn L02: `ring` could have been used as well"
 NewTactic ring
 
-/---/
+/-- [Saturn.L02] documentation 1 -/
 TheoremDoc add_pow_two as "add_pow_two" in "+ *"
 
 NewTheorem add_pow_two

@@ -38,21 +38,21 @@ are not considered rings. `ring` does also work on half rings."
 
 NewTactic ring
 
-/---/
+/-- [Saturn.L04] documentation 1 -/
 TheoremDoc mul_assoc as "mul_assoc" in "+ *"
 
 -- The following theorems are only added for symmetry/completeness:
 
-/---/
+/-- [Saturn.L04] documentation 2 -/
 TheoremDoc add_comm as "add_comm" in "+ *"
 
-/---/
+/-- [Saturn.L04] documentation 3 -/
 TheoremDoc add_assoc as "add_assoc" in "+ *"
 
-/---/
+/-- [Saturn.L04] documentation 4 -/
 TheoremDoc mul_add as "mul_add" in "+ *"
 
-/---/
+/-- [Saturn.L04] documentation 5 -/
 TheoremDoc add_mul as "add_mul" in "+ *"
 
 NewTheorem mul_assoc add_comm add_assoc mul_add add_mul
