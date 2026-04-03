@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 6
 
-Title ""
+Title "[Quantus.L06] Title"
 
 -- Introduction "Sofort taucht das nächste Blatt auf.
 -- Es scheint, als hätten sie sich diesmal auf einen Kompromiss geeignet."
@@ -49,11 +49,11 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
       ring
     · assumption
 
-/---/
+/-- [Qantus.L06] documentation 1 -/
 TheoremDoc Nat.not_odd_iff_even as "not_odd_iff_even" in "ℕ"
 #check  Nat.not_odd_iff_even
 
-/---/
+/-- [Qantus.L06] documentation 2 -/
 TheoremDoc Nat.not_even_iff_odd as "not_even_iff_odd" in "ℕ"
 -- It seems this has been renamed into `Nat.not_even_iff_odd` in newer versions of mathlib,
 -- and is now a simp lemma.

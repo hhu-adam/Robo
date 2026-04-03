@@ -4,7 +4,7 @@ import Game.Metadata
 World "Quantus"
 Level 2
 
-Title ""
+Title "[Quantus.L02] - Title"
 
 /-
 Introduction

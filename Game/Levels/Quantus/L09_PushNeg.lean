@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 9
 
-Title "" -- "PushNeg"
+Title "[Quantus.L09] Title" -- "PushNeg"
 
 /-
 Introduction
@@ -73,7 +73,7 @@ Statement : ¬ ∃ (n : ℕ), ∀ (k : ℕ) , Odd (n + k) := by
 
 /-- [Doc.Theorem] can use `push_neg` instead -/
 TheoremDoc not_exists as "not_exists" in "Logic"
-/--  -/
+/-- [Quantus.L09] documentation 2 -/
 TheoremDoc Classical.not_forall as "not_forall" in "Logic"
 
 NewTheorem not_exists Classical.not_forall

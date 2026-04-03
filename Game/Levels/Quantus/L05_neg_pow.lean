@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 5
 
-Title ""
+Title "[Quantus.L05] Title"
 
 -- Introduction
 -- "Eine weitere Frage erreicht euch.  Dieses stammt offenbar aus dem anderen Lager."
@@ -20,13 +20,13 @@ Statement (i : ℕ) (h : Odd i): (-1 : ℤ)^i  + 1 = 0 := by
   ring
   assumption
 
-/---/
+/-- [Quantus.L05] documentation 1 -/
 TheoremDoc Odd.neg_pow as "Odd.neg_pow" in "ℕ"
 
-/---/
+/-- [Quantus.L05] documentation 2 -/
 TheoremDoc Even.neg_pow as "Even.neg_pow" in "ℕ"
 
 NewTheorem Odd.neg_pow Even.neg_pow
 
 
-Conclusion ""
+Conclusion "[Quantus.L05] Conclusion"
