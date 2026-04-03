@@ -17,7 +17,7 @@ die Äquivalenz einfach `not_imp_not`. Ist doch viel einleuchtender, oder?
 -/
 Introduction "Intro Spinoza L04: introduce contraposition equivalence with `not_imp_not`"
 
-/---/
+/-- [Spinoza.L04] documentation 1 -/
 TheoremDoc not_imp_not as "not_imp_not" in "Logic"
 
 Statement not_imp_not (A B : Prop) : A → B ↔ (¬ B → ¬ A) := by
