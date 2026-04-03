@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L04_MatrixEqSum
 World "Robotswana"
 Level 5
 
-Title "" -- "Einheitsmatrix"
+Title "[Robotswana.L05] Title" -- "Einheitsmatrix"
 
 /-
 Introduction
@@ -43,7 +43,7 @@ open Finset
 --   unfold E
 --   simp?
 
-/---/
+/-- [Robotswana.L05] docuemntation 1 -/
 TheoremDoc Matrix.ebasis_diag_sum_eq_one as "ebasis_diag_sum_eq_one" in "Matrix"
 
 Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
@@ -150,7 +150,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     rw [if_neg h₃]
     simp
 
-/---/
+/-- [Robotswana.L05] docuemntation 2 -/
 TheoremDoc Matrix.one_apply as "one_apply" in "Matrix"
 
 NewTheorem Matrix.one_apply

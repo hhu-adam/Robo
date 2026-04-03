@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L01_SMulEBasis
 World "Robotswana"
 Level 2
 
-Title "" -- "Falsche Indizes"
+Title "[Robotswana.L02] Title" -- "Falsche Indizes"
 
 Introduction "Intro Robotswana L02"
 
@@ -11,7 +11,7 @@ Conclusion "Conclusion Robotswana L02: save result as `E.mul_of_ne`"
 
 open Nat Matrix
 
-/---/
+/-- [Robotswana.L02] documentation 1 -/
 TheoremDoc Matrix.E.mul_of_ne as "E.mul_of_ne" in "Matrix"
 
 -- @[inherit_doc Matrix.single_mul_single_of_ne]

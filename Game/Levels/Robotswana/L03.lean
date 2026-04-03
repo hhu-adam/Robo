@@ -3,9 +3,9 @@ import Game.Levels.Robotswana.L02_EBasis
 World "Robotswana"
 Level 3
 
-Title "" -- "Richtige Indizes"
+Title "[Robotswana.L03] Title" -- "Richtige Indizes"
 
-Introduction ""
+Introduction "[Robotswana.L03] Introdction"
 
 /-
 Conclusion "
@@ -16,7 +16,7 @@ Conclusion "Conclusion Robotswana L03"
 
 open Nat Matrix
 
-/---/
+/-- [Robotswana.L03] documentation 1 -/
 TheoremDoc Matrix.E.mul_same as "E.mul_same" in "Matrix"
 
 -- @[inherit_doc Matrix.single_mul_single_same]

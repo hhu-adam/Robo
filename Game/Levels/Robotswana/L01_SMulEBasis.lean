@@ -4,7 +4,7 @@ import Game.Levels.Babylon
 World "Robotswana"
 Level 1
 
-Title "" -- "Standardbasis"
+Title "[Robotswana.L01] Title" -- "Standardbasis"
 
 /-
 Introduction
@@ -41,7 +41,7 @@ Ring annehmen kann. Wir benutzen hier `E` einfach als Abkürzung.
 -/
 DefinitionDoc Matrix.E as "E" in "Matrix"
 
-/---/
+/-- [Robotswana.L01] documentation 1 -/
 TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :

@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L05_EBasisDiagSum
 World "Robotswana"
 Level 6
 
-Title "" -- "Ein nihilierter Kommutator"
+Title "[Robotswana.L06] Title" -- "Ein nihilierter Kommutator"
 
 -- TODO: Intro & geschichte
 /-
@@ -40,7 +40,7 @@ Conclusion "Conclusion Robotswana L06"
 
 open Nat Matrix
 
-/---/
+/-- [Robotswana.L06] documentation 1 -/
 TheoremDoc Matrix.eq_on_diag_ebasis as "eq_on_diag_ebasis" in "Matrix"
 
 Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}

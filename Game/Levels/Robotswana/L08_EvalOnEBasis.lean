@@ -5,7 +5,7 @@ import Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 World "Robotswana"
 Level 8
 
-Title "" -- "Die Summe der Summe der Summe"
+Title "[Robotswana.L08] Title" -- "Die Summe der Summe der Summe"
 
 /-
 Introduction
@@ -35,7 +35,7 @@ Conclusion "Conclusion Robotswana L08"
 
 open Nat Matrix StdBasisMatrix Finset
 
-/---/
+/-- [Robotswana.L08] doumentation 1 -/
 TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"
 
 Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}

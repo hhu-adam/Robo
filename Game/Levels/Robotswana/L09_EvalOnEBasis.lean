@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L08_EvalOnEBasis
 World "Robotswana"
 Level 9
 
-Title "" -- "Matrix"
+Title "[Robotswana.L09] Title" -- "Matrix"
 
 /-
 Introduction
@@ -31,7 +31,7 @@ open Nat Matrix Finset
 -- Finset needs to be opened so that sum_congr is available
 -- (not included in solution below, but can be used in alternative solutions)
 
-/---/
+/-- [Robotswana.L09] documentation 1 -/
 TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 
 -- set_option trace.Meta.synthInstance true in
@@ -215,18 +215,18 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
 
 -- TODO: Each of the following theorems should ideally be introduced earlier!
 
-/---/
+/-- [Robotswana.L09] documentation 2 -/
 TheoremDoc smul_eq_mul as "smul_eq_mul" in "Matrix"
 
-/---/
+/-- [Robotswana.L09] documentation 3 -/
 TheoremDoc LinearMap.map_smul as "LinearMap.map_smul" in "Matrix"
 
 --  TheoremDoc nat_mul_inj' as "nat_mul_inj'" in "ℕ"
 
-/---/
+/-- [Robotswana.L09] documentation 4 -/
 TheoremDoc Nat.cast_eq_zero as "cast_eq_zero" in "ℕ"
 
-/---/
+/-- [Robotswana.L09] documentation 5 -/
 TheoremDoc IsEmpty.false as "IsEmpty.false" in "Logic"
 
 

@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L09_EvalOnEBasis
 World "Robotswana"
 Level 10
 
-Title "" -- "Trace"
+Title "[Robotswana.L10] Title" -- "Trace"
 
 /-
 Introduction
@@ -43,7 +43,7 @@ Conclusion "Conclusion Robotswana L10"
 
 open Nat Matrix Finset
 
-/---/
+/-- [Robotswana.L10] documentation 1 -/
 TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
 
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)

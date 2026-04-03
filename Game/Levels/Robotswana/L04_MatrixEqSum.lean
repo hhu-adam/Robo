@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L03
 World "Robotswana"
 Level 4
 
-Title "" -- "Summe von Basiselementen"
+Title "[Robotswana.L04] Title" -- "Summe von Basiselementen"
 
 /-
 Introduction "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen
@@ -69,7 +69,7 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
   Hint "Try to use `apply matrix_eq_sum_single`"
   apply matrix_eq_sum_single
 
-/---/
+/-- [Robotswana.L04] documentation 1 -/
 TheoremDoc Matrix.matrix_eq_sum_single as "matrix_eq_sum_single" in "Matrix"
 NewTheorem Matrix.matrix_eq_sum_single
 

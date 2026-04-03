@@ -7,7 +7,7 @@ set_option tactic.hygienic false
 World "Robotswana"
 Level 11
 
-Title "" -- "Trace"
+Title "[Robotswana.L11] Title" -- "Trace"
 
 /-
 Introduction
@@ -39,16 +39,16 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   Hint "Try `card_fin` | `simp`"
   rw [card_fin]
 
-/---/
+/-- [Robotswana.L11] documentation 1 -/
 TheoremDoc Matrix.trace_one as "trace_one" in "Matrix"
 
-/---/
+/-- [Robotswana.L11] documentation 2 -/
 TheoremDoc Matrix.trace_smul as "trace_smul" in "Matrix"
 
-/---/
+/-- [Robotswana.L11] documentation 3 -/
 TheoremDoc Matrix.trace_sub as "trace_sub" in "Matrix"
 
-/---/
+/-- [Robotswana.L11] documentation 4 -/
 TheoremDoc Fintype.card_fin as "card_fin" in "Set"
 
 NewTheorem Matrix.trace_one Matrix.trace_smul Matrix.trace_sub Fintype.card_fin

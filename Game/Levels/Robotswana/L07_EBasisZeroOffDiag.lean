@@ -3,7 +3,7 @@ import Game.Levels.Robotswana.L06_EBasisEqOnDiag
 World "Robotswana"
 Level 7
 
-Title "" -- "Desinteresse"
+Title "[Robotswana.L07] Title" -- "Desinteresse"
 
 /-
 Introduction
@@ -25,7 +25,7 @@ Conclusion "Conclusion Robotswana L07"
 
 open Nat Matrix
 
-/---/
+/-- [Robotswana.L07] documentation 1 -/
 TheoremDoc Matrix.zero_on_offDiag_ebasis as "zero_on_offDiag_ebasis" in "Matrix"
 
 Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
