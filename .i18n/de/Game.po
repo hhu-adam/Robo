@@ -4285,6 +4285,36 @@ msgstr ""
 "**Robo** *(zu dir)*: Los, probiers mal!"
 
 #: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 1: `apply` different prop"
+msgstr ""
+"**Robo**: Das sieht nach einer Sackgasse aus …"
+
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 2: `apply` different prop"
+msgstr ""
+"**Robo**: Das sieht nicht gut aus."
+
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 3: `apply` different prop"
+msgstr ""
+"**Robo**: Nah, da stimmt doch was nicht …"
+
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 4: `apply` different prop"
+msgstr ""
+"**Robo**: Halt! Falsch abgebogen."
+
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 5: `apply` different prop at hyp"
+msgstr ""
+"**Robo**: Bist du dir sicher?"
+
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 6: `apply` different prop at hyp"
+msgstr ""
+"**Robo**: Ehm …"
+
+#: Game.Levels.Implis.L05_Apply
 msgid "Conclusion Implis L05"
 msgstr ""
 "Der Operationsleiter bedankt sich wieder artig.\n"
