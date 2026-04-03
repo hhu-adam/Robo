@@ -4,7 +4,7 @@ import Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 World "Babylon"
 Level 7
 
-Title ""
+Title "[Babylon.L07] Title"
 
 /-
 Introduction
@@ -65,5 +65,5 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
 
 TheoremTab "∑ Π"
 
-Conclusion ""
+Conclusion "[Babylon.L07] Conclusion"
 #min_imports
