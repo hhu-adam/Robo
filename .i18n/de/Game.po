@@ -6862,6 +6862,12 @@ msgstr ""
 msgid "Intro Piazza L12"
 msgstr "**Fin**:  Richtig.   Und jetzt lege ich meine Pistazie wieder zurück."
 
+#. §0: `constructor`
+#: Game.Levels.Piazza.L13_insert_erase
+msgid "[Piazza.L13] Hint 1: You can begin with §0"
+msgstr ""
+"**Fin**:  Ja, so kann man das angehen."
+
 #: Game.Levels.Piazza.L13_insert_erase
 msgid "Conclusion Piazza L13"
 msgstr ""
