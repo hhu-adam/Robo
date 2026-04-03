@@ -3,13 +3,12 @@ import Game.Levels.Mono.L08_RightInvOfLeftInv
 World "Mono"
 Level 9
 
-Title ""
+Title "[Mono.L09] Title"
 
-Introduction ""
+Introduction "[Mono.L09] Introduction"
 
 open Function
 
-/---/
 -- TheoremDoc Function.HasLeftInverse.injective as "HasLeftInverse.injective" in "Function"
 -- Statement Function.HasLeftInverse.injective
 Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :

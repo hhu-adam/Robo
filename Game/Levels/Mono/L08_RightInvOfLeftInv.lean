@@ -3,10 +3,10 @@ import Game.Levels.Mono.L07_SuccHasLeftInv
 World "Mono"
 Level 8
 
-Title ""
+Title "[Mono.L08] Title"
 
 
-Introduction ""
+Introduction "[Mono.L08] Introduction"
 
 open Function Set
 

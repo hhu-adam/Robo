@@ -23,6 +23,6 @@ Statement (f : ℤ → ℤ  ) (hf : Injective f): f 1 ≠ f (-1) := by
   decide
   assumption
 
-/---/
+/-- [Mono.L02] documentation 1 -/
 TheoremDoc Function.Injective.ne_iff as "Injective.ne_iff" in "Function"
 NewTheorem Function.Injective.ne_iff

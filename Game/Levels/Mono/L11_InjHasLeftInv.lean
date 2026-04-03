@@ -3,13 +3,13 @@ import Game.Levels.Mono.L10_Auxiliary
 World "Mono"
 Level 11
 
-Title "" -- "Injections have a left inverse, and vice versa"
+Title "[Mono.L11] Title" -- "Injections have a left inverse, and vice versa"
 
-Introduction ""
+Introduction "[Mono.L11] Introduction"
 
 open Set Classical
 
-/---/
+/-- [Mono.L11] documentation 1-/
 TheoremDoc Function.injective_iff_hasLeftInverse as "injective_iff_hasLeftInverse" in "Function"
 
 namespace Function

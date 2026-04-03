@@ -3,9 +3,9 @@ import Game.Levels.Mono.L06_StrictMono
 World "Mono"
 Level 7
 
-Title ""
+Title "[Mono.L07] Title"
 
-Introduction ""
+Introduction "[Mono.L07] Introduction"
 
 open Function Nat
 

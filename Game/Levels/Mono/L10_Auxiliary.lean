@@ -3,9 +3,9 @@ import Game.Levels.Mono.L09_InjOfHasLeftInv
 World "Mono"
 Level 10
 
-Title ""
+Title "[Mono.L10] Title"
 
-Introduction ""
+Introduction "[Mono.L10] Introdution"
 
 open Function Set
 
