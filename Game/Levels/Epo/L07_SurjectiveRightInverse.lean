@@ -10,7 +10,7 @@ Introduction "[Epo.L07] Introduction"
 
 open Set
 
-/---/
+/-- [Epo.L07] documentation 1 -/
 TheoremDoc Function.surjective_iff_hasRightInverse as "surjective_iff_hasRightInverse" in "Function"
 
 namespace Function

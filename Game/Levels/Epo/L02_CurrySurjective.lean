@@ -65,7 +65,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   Hint (hidden := true) "The number of quantors does not allow for `rw [ne_comm]`. Try `simp [ne_comm]`"
   simp [ne_comm]
 
-/---/
+/-- [Epo.L02] documentation 1 -/
 TheoremDoc ne_comm as "ne_comm" in "Logic"
 NewTheorem ne_comm
 -- NewConcept: Multivariate functions
