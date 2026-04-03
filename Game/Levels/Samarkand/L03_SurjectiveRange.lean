@@ -77,7 +77,7 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
 
 NewDefinition Set.range
 
-/---/
+/-- [Samarkand.L03] documentation 1 -/
 TheoremDoc Set.mem_range as "mem_range" in "Function"
 
 NewTheorem Set.mem_range

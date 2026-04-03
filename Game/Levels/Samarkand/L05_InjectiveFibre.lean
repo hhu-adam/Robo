@@ -16,7 +16,7 @@ open Set
 
 #check Set.singleton
 
-/---/
+/-- [Samarkand.L05] documentation 1 -/
 TheoremDoc Function.Injective.exists_unique_of_mem_range as "Injective.exists_unique_of_mem_range" in "Function"
 
 namespace Function

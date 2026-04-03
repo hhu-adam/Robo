@@ -14,7 +14,7 @@ Introduction "Intro Samarkand L08"
 
 open Function
 
-/---/
+/-- [Samarkand.L08] documentation 1 -/
 TheoremDoc Set.preimage_injective as "preimage_injective" in "Function"
 
 namespace Set

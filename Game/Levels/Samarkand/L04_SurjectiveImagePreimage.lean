@@ -14,7 +14,7 @@ Introduction "
 -/
 Introduction "Intro Samarkand L04"
 
-/---/
+/-- [Samarkand.L04] documentation 1 -/
 TheoremDoc Function.Surjective.image_preimage as "Surjective.image_preimage" in "Function"
 
 namespace Function

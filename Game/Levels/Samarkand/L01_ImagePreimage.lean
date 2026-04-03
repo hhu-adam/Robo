@@ -17,7 +17,7 @@ Sie diktiert euch eine Aussage. Robo schreibt sie auf.
 -/
 Introduction "Intro Samarkand L01"
 
-/---/
+/-- [Samarkand.L01] documentation 1 -/
 TheoremDoc Set.image_preimage_subset as "image_preimage_subset" in "Set"
 
 namespace Set
