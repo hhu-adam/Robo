@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 10
 
-Title "" -- "Und"
+Title "[Logo.L10] Title" -- "Und"
 
 /-
 Introduction
@@ -14,7 +14,6 @@ Er legt sie uns vor, setzt sich hin und häkelt.
 -/
 Introduction "Intro Logo L10"
 
-/--  -/
 Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
   /-
   Hint "

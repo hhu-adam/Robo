@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 11
 
-Title "" -- "Und"
+Title "[Logo.L11] Title" -- "Und"
 
 /-
 Introduction

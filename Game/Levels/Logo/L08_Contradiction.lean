@@ -4,7 +4,7 @@ import Game.Metadata
 World "Logo"
 Level 8
 
-Title "" -- "Aus Falschem folgt vieles."
+Title "[Logo.L08] Title" -- "Aus Falschem folgt vieles."
 
 /-
 Introduction
@@ -14,7 +14,6 @@ Auftritt zweiter Querulant.
 -/
 Introduction "Intro Logo L08"
 
-/--  -/
 Statement (n : ℕ) (h : n ≠ n) : n = 37 := by
   /-
   Hint "

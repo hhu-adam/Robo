@@ -4,7 +4,7 @@ import Game.Metadata
 World "Logo"
 Level 14
 
-Title "" -- "Zusammenfassung"
+Title "[Logo.L14] Title" -- "Zusammenfassung"
 
 /-
 Introduction

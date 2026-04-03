@@ -4,7 +4,7 @@ import Game.Metadata
 World "Logo"
 Level 1
 
-Title "" -- "Automatisierung"
+Title "[Logo.L01] Title" -- "Automatisierung"
 
 /-
 Introduction
@@ -20,7 +20,7 @@ Du siehst Robo hilflos an.
 -/
 Introduction "Intro Logo L01"
 
-/--  -/
+
 Statement (A B C : Prop) :
     ¬((¬B ∨ ¬ C) ∨ (A → B)) → (¬A ∨ B) ∧ ¬ (B ∧ C) := by
   /-

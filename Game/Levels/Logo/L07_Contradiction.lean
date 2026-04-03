@@ -3,7 +3,7 @@ import Game.Metadata
 World "Logo"
 Level 7
 
-Title "" -- "Aus Falschem folgt vieles."
+Title "[Logo.L07] Title" -- "Aus Falschem folgt vieles."
 
 /-
 Introduction
