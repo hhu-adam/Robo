@@ -18,7 +18,7 @@ namespace Function
 
 --TODO: `unfolding` at random places breaks all the hints…
 
-/---/
+/-- [Iso.L02] documentation 1 -/
 TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in "Function"
 
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
