@@ -25,7 +25,7 @@ Statement {x : ℤ} (f : ℤ → ℤ) :
   apply congr_arg
   rfl
 
-/---/
+/-- [Vieta.L08] documentation 1 -/
 TheoremDoc congr_arg as "congr_arg" in "Function"
 
 OnlyTactic apply rfl

@@ -74,7 +74,7 @@ Statement (x : ℤ) :
 
 -- Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
 
-/---/
+/-- [Vieta.L01] documentation 1 -/
 TheoremDoc Function.comp_apply as "comp_apply" in "Function"
 
 NewTheorem Function.comp_apply

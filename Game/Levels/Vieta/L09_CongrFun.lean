@@ -32,7 +32,7 @@ Probiers mal, wie ich es gerade gesagt habe.
     assumption
   apply h
 
-/---/
+/-- [Vieta.L09] documentation 1 -/
 TheoremDoc congr_fun as "congr_fun" in "Function"
 
 OnlyTactic apply assumption «have»

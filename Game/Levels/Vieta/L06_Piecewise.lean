@@ -88,9 +88,9 @@ Statement :
 
 Conclusion "[Vieta.L06] Conculsion"
 
-/---/
+/-- [Vieta.L06] documentation 1 -/
 TheoremDoc if_neg as "if_neg" in "Logic"
-/---/
+/-- [Vieta.L06] documentation 2 -/
 TheoremDoc if_pos as "if_pos" in "Logic"
 
 NewTheorem if_pos if_neg
