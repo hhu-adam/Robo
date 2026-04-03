@@ -4,7 +4,7 @@ import Game.Metadata
 World "Babylon"
 Level 6
 
-Title "" -- "Arithmetische Summe"
+Title "[Babylon.L06] Title" -- "Arithmetische Summe"
 
 /-
 Introduction
@@ -24,7 +24,7 @@ Introduction "Intro Babylon L06"
 
 open Finset
 
-/---/
+/-- [Babylon.L06] documentation 1 -/
 TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 
 -- This would also easily work as a sum in ℚ,
@@ -99,7 +99,7 @@ Statement arithmetic_sum (n : ℕ) :
 
 NewTactic induction
 
-/---/
+/-- [Babylon.L06] documentation 2 -/
 TheoremDoc Finset.sum_insert as "sum_insert" in "∑ Π"
 NewTheorem Finset.sum_insert
 
@@ -109,4 +109,4 @@ NewTheorem Finset.sum_insert
 
 TheoremTab "∑ Π"
 
-Conclusion ""
+Conclusion "[Babylon.L06] Conclusion"
