@@ -15,7 +15,7 @@ Introduction "Intro Piazza L07"
 
 open Set
 
-/---/
+/-- [Piazza.L07] documentation 1 -/
 TheoremDoc Set.Subset.antisymm_iff as "Subset.antisymm_iff" in "Set"
 
 Statement Set.Subset.antisymm_iff {α : Type} {A B : Set α} : A = B ↔ A ⊆ B ∧ B ⊆ A := by

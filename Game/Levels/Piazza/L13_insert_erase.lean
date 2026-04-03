@@ -12,7 +12,7 @@ Introduction "
 -/
 Introduction "Intro Piazza L13"
 
-/---/
+/-- [Piazza.L13] documentation 1 -/
 TheoremDoc Finset.insert_erase as "insert_erase" in "Set"
 
 namespace Finset

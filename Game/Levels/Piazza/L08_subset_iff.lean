@@ -14,7 +14,7 @@ Wir sollten die Besucher mal etwas mehr über Inklusionen ausfragen.
 -/
 Introduction "Intro Piazza L08"
 
-/---/
+/-- [Piazza.L08] documentation 1 -/
 TheoremDoc Set.subset_iff as "subset_iff" in "Set"
 
 namespace Set
@@ -33,7 +33,7 @@ end Set
 
 NewDefinition Subset
 
-/---/
+/-- [Piazza.L08] documentation 2 -/
 TheoremDoc Finset.subset_iff as "subset_iff" in "Set"
 NewTheorem Finset.subset_iff
 

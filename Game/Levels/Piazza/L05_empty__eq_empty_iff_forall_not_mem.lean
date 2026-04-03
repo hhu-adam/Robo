@@ -38,7 +38,7 @@ Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
 
 TheoremTab "Set"
 
-/---/
+/-- [Piazza.L05] documentation 1 -/
 TheoremDoc Set.eq_empty_iff_forall_not_mem as "eq_empty_iff_forall_not_mem" in "Set"
 NewTheorem Set.eq_empty_iff_forall_not_mem
 

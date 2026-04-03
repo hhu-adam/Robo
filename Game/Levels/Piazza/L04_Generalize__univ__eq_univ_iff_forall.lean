@@ -97,7 +97,7 @@ TheoremTab "Set"
 --NewTactic generalize
 DisabledTactic ext
 
-/---/
+/-- [Piazza.L04] documentation 1 -/
 TheoremDoc Set.eq_univ_iff_forall as "eq_univ_iff_forall" in "Set"
 NewTheorem Set.eq_univ_iff_forall
 
