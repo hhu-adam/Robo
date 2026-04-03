@@ -3,7 +3,7 @@ import Game.Metadata
 World "Babylon"
 Level 1
 
-Title ""
+Title "[Babylon.L01] Title"
 
 Introduction
 /-

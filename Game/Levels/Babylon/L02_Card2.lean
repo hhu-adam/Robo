@@ -5,7 +5,7 @@ open Finset
 World "Babylon"
 Level 2
 
-Title ""
+Title "[Babylon.L02] Title"
 
 /-
 Introduction "Ihr schaut euch zusammen den nächsten Turm an."

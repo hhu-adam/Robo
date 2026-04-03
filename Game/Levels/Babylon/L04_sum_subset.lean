@@ -3,7 +3,7 @@ import Game.Metadata
 World "Babylon"
 Level 4
 
-Title ""
+Title "[Babylon.L04] Title"
 
 /-
 Introduction
@@ -108,7 +108,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     · rw [h]
       ring
 
-/---/
+/-- [Babylon.L04] documentation 1 -/
 TheoremDoc Finset.sum_subset as "sum_subset" in "∑ Π"
 NewTheorem Finset.sum_subset
 

@@ -3,9 +3,9 @@ import Game.Metadata
 World "Babylon"
 Level 5
 
-Title ""
+Title "[Babylon.L05] Title"
 
-Introduction ""
+Introduction "[Babylon.L05] Introduction"
 
 open Finset Nat
 

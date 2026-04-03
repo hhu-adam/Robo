@@ -3,7 +3,7 @@ import Game.Metadata
 World "Babylon"
 Level 3
 
-Title ""
+Title "[Babylon.L03] Title"
 
 /-
 Introduction
@@ -41,7 +41,7 @@ Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i
   assumption
   simp
 
-/---/
+/-- [Babylon.L03] documentation 1 -/
 TheoremDoc Finset.sum_congr as "sum_congr" in "∑ Π"
 NewTheorem Finset.sum_congr
 
