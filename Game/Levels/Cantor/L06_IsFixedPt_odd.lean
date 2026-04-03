@@ -4,10 +4,10 @@ import Game.Levels.Cantor.L05_IsFixedPt_not
 World "Cantor"
 Level 6
 
-Title ""
+Title "[Cantor.L06] Title"
 
 
-Introduction ""
+Introduction "[Cantor.L06] Introduction"
 
 /-
 Conclusion "

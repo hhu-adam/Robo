@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L07_idempotent
 World "Cantor"
 Level 8
 
-Title ""
+Title "[Cantor.L08] Title"
 
 /-
 Introduction

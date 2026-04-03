@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cantor"
 Level 1
 
-Title "" -- "Cantor's Diagonalargument"
+Title "[Cantor.L01] Title" -- "Cantor's Diagonalargument"
 
 /-
 Introduction
@@ -22,7 +22,7 @@ und lässt ihn zu euch herunterfliegen.
 Introduction "Intro Cantor L01: Mapping `f` from `A` to the power set of `A`, and the set
 of all elements in `A`, which are not located in its image under `f`"
 
-Conclusion ""
+Conclusion "[Cantor.L01] Conclusion"
 
 open Set Function
 

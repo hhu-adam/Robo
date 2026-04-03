@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L09_CantorDiag
 World "Cantor"
 Level 10
 
-Title ""
+Title "[Cantor.L10] Title"
 
 /-
 Introduction

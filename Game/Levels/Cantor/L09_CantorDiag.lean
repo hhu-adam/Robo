@@ -4,11 +4,11 @@ import Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
 World "Cantor"
 Level 9
 
-Title ""
+Title "[Cantor.L09] Title"
 
 open Function Set
 
-/---/
+/-- [Cantor.L09] documentation 1 -/
 TheoremDoc cantor_diagonal as "cantor_diagonal" in "Function"
 
 /-

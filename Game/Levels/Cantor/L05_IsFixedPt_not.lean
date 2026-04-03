@@ -4,9 +4,9 @@ import Game.Levels.Cantor.L04_fixedPoints_neg
 World "Cantor"
 Level 5
 
-Title ""
+Title "[Cantor.L05] Title"
 
-Introduction ""
+Introduction "[Cantor.L05] Introduction"
 
 /-
 Conclusion "

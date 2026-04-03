@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L02_CantorPowerset
 World "Cantor"
 Level 3
 
-Title ""
+Title "[Cantor.L03] Title"
 
 /-
 Introduction

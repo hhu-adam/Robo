@@ -4,7 +4,7 @@ import Game.Levels.Cantor.L03_IsFixedPt_abs
 World "Cantor"
 Level 4
 
-Title ""
+Title "[Cantor.L04] Title"
 
 Introduction "Intro Cantor L04"
 /-
