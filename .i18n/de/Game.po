@@ -8286,6 +8286,18 @@ msgstr ""
 "**Robo**: Und schau, hier ist noch was in den Baum gekritzelt."
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "[Robotswana.L07] Hint 1: Try commutating"
+msgstr ""
+"Hint "**Robo**: Und hier wolltest du jetzt kommutieren?"
+"**Du**: Genau!"
+
+#. §0: `h₁`
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "[Robotswana.L07] Hint 2: Try rewriting with §0"
+msgstr ""
+"**Robo**:  Oh. Das sieht falsch aus."
+
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 msgid "Conclusion Robotswana L07"
 msgstr "Die Spuren wirken mittlerweile viel frischer.  Ihr folgt ihnen weiter."
 
