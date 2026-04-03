@@ -5,7 +5,7 @@ open Nat
 World "Luna"
 Level 6
 
-Title ""
+Title "[Luna.L06] Title"
 
 /-
 Introduction
@@ -51,13 +51,13 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
 
 
 TheoremTab "≤"
-/---/
+/-- [Luna.L06] documentation 1 -/
 TheoremDoc Finset.insert_Icc_eq_Icc_add_one_right as "insert_Icc_eq_Icc_add_one_right" in "≤"
-/---/
+/-- [Luna.L06] documentation 2 -/
 TheoremDoc Finset.insert_Icc_eq_Icc_sub_one_left as "insert_Icc_eq_Icc_sub_one_left" in "≤"
-/---/
+/-- [Luna.L06] documentation 3 -/
 TheoremDoc Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
-/---/
+/-- [Luna.L06] documentation 4 -/
 TheoremDoc Finset.insert_Icc_sub_one_right_eq_Icc as "insert_Icc_sub_one_right_eq_Icc" in "≤"
 
 NewTheorem
@@ -68,4 +68,4 @@ Finset.insert_Icc_sub_one_right_eq_Icc
 
 NewDefinition Finset.Icc
 
-Conclusion ""
+Conclusion "[Luna.L06] Conclusion"

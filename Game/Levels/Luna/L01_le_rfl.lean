@@ -6,7 +6,7 @@ open Nat
 World "Luna"
 Level 1
 
-Title ""
+Title "[Luna.L01] Title"
 
 /-
 Introduction
@@ -34,7 +34,7 @@ Conclusion "
 Conclusion "Conclusion Luna L01"
 
 
-/---/
+/-- [Luna.L01] documentation 1 -/
 TheoremDoc not_le as "not_le" in "≤"
 NewTheorem not_le
 -- wird später in Vieta einmal erwähnt, aber nirgends gebraucht

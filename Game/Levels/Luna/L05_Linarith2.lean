@@ -6,7 +6,7 @@ open Nat
 World "Luna"
 Level 5
 
-Title ""
+Title "[Luna.L05] Title"
 
 /-
 Introduction "
@@ -58,4 +58,4 @@ Statement (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ 
 
 TheoremTab "Logic"
 
-Conclusion ""
+Conclusion "[Luna.L05] Conclusion"

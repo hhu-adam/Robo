@@ -6,7 +6,7 @@ open Nat
 World "Luna"
 Level 3
 
-Title ""
+Title "[Luna.L03] Title"
 
 /-
 Introduction

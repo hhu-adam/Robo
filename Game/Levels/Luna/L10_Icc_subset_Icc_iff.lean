@@ -3,7 +3,7 @@ import Game.Metadata
 World "Luna"
 Level 10
 
-Title ""
+Title "[Luna.L10] Title"
 
 /-
 Introduction "
@@ -18,7 +18,7 @@ Ritha macht große Augen und sieht Lina flehend an.
 -/
 Introduction "Intro Luna L10: Use `omega` again"
 
-/---/
+/-- [Luna.L10] documentation 1 -/
 TheoremDoc Finset.Icc_subset_Icc_iff as "Icc_subset_Icc_iff" in "≤"
 -- Note that mathlib's theorem is more general; here we restrict to ℕ
 
@@ -54,4 +54,4 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
     omega
   · omega
 
-Conclusion ""
+Conclusion "[Luna.L10] Conclusion"

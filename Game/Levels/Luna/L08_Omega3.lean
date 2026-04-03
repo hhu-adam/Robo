@@ -3,7 +3,7 @@ import Game.Metadata
 World "Luna"
 Level 8
 
-Title ""
+Title "[Luna.L08] Title"
 
 /-
 Introduction "
@@ -20,4 +20,4 @@ Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1
   simp at h'
   omega
 
-Conclusion ""
+Conclusion "[Luna.L08] Conclusion"
