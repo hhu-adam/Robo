@@ -61,7 +61,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     ring
   simp
 
-/---/
+/-- [Euklid.L02] documentation 1 -/
 TheoremDoc Finset.prod_insert as "prod_insert" in "∑ Π"
 
 NewTheorem Finset.prod_insert

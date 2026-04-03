@@ -28,7 +28,7 @@ Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := 
   rw [prime_def] at h
   linarith
 
-/---/
+/-- [Euklid.L01] documentation 1 -/
 TheoremDoc Finset.prod_pos as "prod_pos" in "∑ Π"
 
 NewTheorem Finset.prod_pos
