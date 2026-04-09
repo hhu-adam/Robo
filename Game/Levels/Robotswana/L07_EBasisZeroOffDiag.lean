@@ -66,7 +66,7 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
 
       **Du**: Genau!"
     -/
-    · Hint "Story"
+    · Hint "[Robotswana.L07] Hint 1: Try commutating"
       Branch
         rw [E.mul_of_ne] -- (***)
         -- Would ideally like to already trigger a warning here, but
@@ -74,7 +74,7 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
         -- reached in a correct solution (see (***) in first Branch above)
         simp
         -- Hint "**Robo**:  Oh. Das sieht falsch aus."
-        Hint "Story"
+        Hint "[Robotswana.L07] Hint 2: Try rewriting with `h₁`"
       rw [h₁]
       rw [E.mul_of_ne] -- Lvl 2
       · simp
