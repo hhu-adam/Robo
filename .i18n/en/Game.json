@@ -1036,7 +1036,7 @@
  "**You** (*shouting*): What do you mean? \n\n**Scribble** (*also shouting*): Well, you definitely want to apply §0, but with §1 and not with §2. §3 would replace both §4s.",
  "Explain that §0 states §1. Try §2":
  "**You**: But what do I do in this case?  §0 pretty much says that §1. \n\n**Scribble**: Yes, but not quite. Why don't you first spell out the assumption the way you want it, with §2?",
- "Explain that §0 means §1 is a natural number. The notation §2 is not used.\n§3, §4, §5 are names for the respective assumptions §6, §7 und §8.\nThe proof goal is §9. Try §10":
+ "Explain that §0 means §1 is a natural number. The notation §2 is not used.\n§3, §4, §5 are names for the respective assumptions §6, §7 and §8.\nThe proof goal is §9. Try §10":
  "**Scribble**: §0 means §1 is a natural number. \n\n**You**: Then why doesn't he write §2? \n\n**Scribble**: Because he's a strange type … I can try to explain it later, if you like. Right now, I just want to decipher the question.\n\n**Scribble**: So, §3, §4, §5 are just names for different assumptions, namely for assumptions the §6, §7 and §8. We have to prove: §9. \n\n**You**: But that is precisely one of the assumptions. \n\n**Scribble**: True.\n\n**You**: ??? \n\n**Scribble**: You just have say so. Try §10.",
  "Explain that §0 means that §1 is some statement.\n§2 is the name of the assumption that §3 is true. Try to solve §4 using said assumption":
  "**Scribble**: Here, §0 again means that §1 is some kind of statement. And §2 is a name for the assumption that §3 is true. \n\n**You**: And based on this assumption, we are now supposed to prove §4? \n\n**Scribble**: Yes. You can figure this one out yourself, can't you?",
@@ -1048,7 +1048,7 @@
  "**You**: If I'm reading this correctly, §0 is a statement, and we also have an assumption called §1, which says … \n\n**Scribble**: … which says that §2 is true. \n\n**You**: I thought §3 is never true. \n\n**Scribble**:  Exactly. The assumption §4 is plainly false. And as you know, you can prove anything starting from a false assumption! In particular, you can prove the statement we are looking for, §5. \n\n**You**: And how do I explain this to our formalosopher? \n\n**Scribble**: I think you need to point out to him that there is a contradiction between the generally accepted belief §6 and his assumption §7. Try §8.",
  "Explain that §0 is a special statement that is always true. Try §1":
  "**Scribble**: This §0 is a very special statement, namely the statement that is always and unconditionally true. \n\n**You**: So what exactly remains to be done here? \n\n**Scribble**: §1dly little.",
- "Explain that §0 introduces statements §1, §2 und §3 as\npropositions. The symbol §4 is equivalent to the implication symbol §5. Try §6.":
+ "Explain that §0 introduces statements §1, §2 and §3 as\npropositions. The symbol §4 is equivalent to the implication symbol §5. Try §6.":
  "**Scribble**: It's quite simple. \nBy §0, she means: §1, §2 and §3 are arbitrary statements (or *prop*ositions). \nAnd by §4, she means §5, i.e. “implies”. \nYou know the other symbols, don't you? \n\n**You**: Um, yes. But I still need to think about it.\n\n**Scribble** *(whispering)*: Just claim it's a tautology. \n\n**You**: Seriously? \n\n**Scribble**: Yes. Just write §6. \n\n**Scribble**: Come on …",
  "Explain that §0 and §1 with §2 can be used as in Implis":
  "**You**: I feel like I've seen this before. \n\n**Scribble**: Yes! It looks very similar to a problem we already solved on *Implis*. Except that this one has equalities of numbers instead of if-then statements! But that doesn't really make any difference. You can treat §0 and §1 practically the same as §2.",
@@ -1114,7 +1114,7 @@
  "Derive contradiction for §0":
  "**Scribble**: Now I would derive a contradiction with §0.",
  "Definitely use §0": "**Ritha**: You should definitely try §0.",
- "Deconstruct assumption by §0. The brackets can be written seperatly\nas §1 and §2 or simultaneously as §3. The first assumption can be named §4. Other names\nthan §5 und §6 can be chosen as well e.g. §7":
+ "Deconstruct assumption by §0. The brackets can be written seperatly\nas §1 and §2 or simultaneously as §3. The first assumption can be named §4. Other names\nthan §5 and §6 can be chosen as well e.g. §7":
  "**You**: Now we have to de-construct the assumption. \n\n**Scribble**: Yes, exactly. The easiest way to do so is with §0.\n\n**You**: Wait, how do I draw these angle brackets? \n\n**Scribble**: You can write them as §1 and §2, or simultaneously as §3. And you can write h₁ as §4. Or you might just as well use other names for §5 and §6, for example §7.",
  "Continue with §0 and §1. Fristly diect assumptions with §2":
  "**You**: And now I continue with §0 and §1? \n\n**Scribble**: Exactly. You split the assumptions with §2, and so on.",
