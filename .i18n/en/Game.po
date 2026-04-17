@@ -4015,7 +4015,7 @@ msgstr "**Head of Operations**: Here, for example:"
 #. §0: `\\to`
 #. §1: `«{B}»`
 #. §2: `«{A}»`
-#. §3: `«{A}» und «{B}»`
+#. §3: `«{A}» and «{B}»`
 #. §4: `tauto`
 #. §5: `«{A}»`
 #. §6: `h`
@@ -4849,7 +4849,7 @@ msgstr ""
 #. §6: `tauto`
 #: Game.Levels.Logo.L01_Tauto
 msgid ""
-"Explain that §0 introduces statements §1, §2 und §3 as\n"
+"Explain that §0 introduces statements §1, §2 and §3 as\n"
 "propositions. The symbol §4 is equivalent to the implication symbol §5. Try "
 "§6."
 msgstr ""
@@ -4927,7 +4927,7 @@ msgstr ""
 #: Game.Levels.Logo.L03_Assumption
 msgid ""
 "Explain that §0 means §1 is a natural number. The notation §2 is not used.\n"
-"§3, §4, §5 are names for the respective assumptions §6, §7 und §8.\n"
+"§3, §4, §5 are names for the respective assumptions §6, §7 and §8.\n"
 "The proof goal is §9. Try §10"
 msgstr ""
 "**Scribble**: §0 means §1 is a natural number. \n"
@@ -5157,7 +5157,7 @@ msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#. §2: `«{A}» und «{B}»`
+#. §2: `«{A}» and «{B}»`
 #. §3: `trivial`
 #. §4: `constructor`
 #. §5: `destructor`
@@ -5217,7 +5217,7 @@ msgid ""
 "Deconstruct assumption by §0. The brackets can be written seperatly\n"
 "as §1 and §2 or simultaneously as §3. The first assumption can be named §4. "
 "Other names\n"
-"than §5 und §6 can be chosen as well e.g. §7"
+"than §5 and §6 can be chosen as well e.g. §7"
 msgstr ""
 "**You**: Now we have to de-construct the assumption. \n"
 "\n"
