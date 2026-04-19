@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 4
 
-Title "" -- "Quotient Equal"
+Title "[Symmetric Square.L04] Title" -- "Quotient Equal"
 
 Introduction
 "

@@ -4,7 +4,7 @@ import Game.Metadata
 World "Numbers"
 Level 2
 
-Title "" -- ""
+Title "[Numbers.L02] Title" -- ""
 
 Introduction
 "

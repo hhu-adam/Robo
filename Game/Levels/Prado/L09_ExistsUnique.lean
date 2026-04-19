@@ -80,9 +80,9 @@ TheoremTab "+ *"
 NewTheorem mul_eq_mul_left_iff mul_eq_mul_right_iff
 
 /-
-/---/
+/-- [Doc.Theorem] Nat.mul_left_cancel_iff -/
 TheoremDoc Nat.mul_left_cancel_iff as "mul_left_cancel_iff" in "ℕ"
-/---/
+/-- [Doc.Theorem] Nat.mul_right_cancel_iff -/
 TheoremDoc Nat.mul_right_cancel_iff as "mul_right_cancel_iff" in "ℕ"
 NewTheorem Nat.mul_left_cancel_iff Nat.mul_right_cancel_iff
 -/

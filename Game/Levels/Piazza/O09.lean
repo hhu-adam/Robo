@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 9
 
-Title "" -- "Mengen"
+Title "[Piazza.L09] Title" -- "Mengen"
 
 /-
 Introduction
@@ -24,7 +24,7 @@ Statement (A B C : Set ℕ) :
   simp
   tauto
 
-/-- -/
+/-- [Doc.Theorem] Set.compl -/
 DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 

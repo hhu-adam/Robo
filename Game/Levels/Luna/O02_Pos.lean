@@ -6,7 +6,7 @@ open Nat
 World "Luna"
 Level 2
 
-Title ""
+Title "[Luna.L02] Title"
 
 /-
 Introduction
@@ -22,7 +22,7 @@ ist, sollte man das vielleicht noch einmal selbst beweisen?
 -/
 Introduction "Intro Luna O02"
 
-/---/
+/-- [Doc.Theorem] Nat.pos_iff_ne_zero -/
 TheoremDoc Nat.pos_iff_ne_zero as "pos_iff_ne_zero" in "ℕ"
 
 Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
@@ -61,7 +61,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
 
 NewTactic simp
 
-/---/
+/-- [Doc.Theorem] Nat.succ_pos -/
 TheoremDoc Nat.succ_pos as "succ_pos" in "ℕ"
 NewTheorem Nat.succ_pos
 DisabledTheorem Nat.pos_iff_ne_zero Nat.succ_pos'

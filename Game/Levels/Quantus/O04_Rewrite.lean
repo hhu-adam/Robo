@@ -3,7 +3,7 @@ import Game.Metadata
 World "Quantus"
 Level 4
 
-Title "" -- "Rewrite"
+Title "[Quantus.L04] Title" -- "Rewrite"
 
 -- Introduction ""
 Introduction "Intro Quantus O04"

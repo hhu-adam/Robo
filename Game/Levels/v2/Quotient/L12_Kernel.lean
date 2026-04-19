@@ -4,7 +4,7 @@ import Game.Metadata
 World "Quotient"
 Level 12
 
-Title "" -- "Kernel"
+Title "[Quotient.L12] Title" -- "Kernel"
 
 Introduction
 "

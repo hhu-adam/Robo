@@ -6,7 +6,7 @@ namespace Nat
 World "Prado"
 Level 9
 
-Title "" -- "Eins"
+Title "[Prado.L09] Title" -- "Eins"
 
 /-
 Introduction "
@@ -14,7 +14,7 @@ Introduction "
 -/
 Introduction "Intro Prado O09"
 
-/---/
+/-- [Doc.Theorem] Nat.not_prime_one -/
 TheoremDoc Nat.not_prime_one as "not_prime_one" in "ℕ"
 
 Statement not_prime_one : ¬ Nat.Prime 1 := by

@@ -4,7 +4,7 @@ import Game.Metadata
 World "Luna"
 Level 3
 
-Title "" -- "Linarith"
+Title "[Luna.L03] Title" -- "Linarith"
 
 /-
 Introduction
@@ -32,7 +32,7 @@ Conclusion "Conclusion Luna O03"
 
 NewTactic linarith
 
-/---/
+/-- [Doc.Theorem] Nat.pos_iff_ne_zero -/
 TheoremDoc Nat.pos_iff_ne_zero as "pos_iff_ne_zero" in "ℕ"
 NewTheorem Nat.pos_iff_ne_zero
 TheoremTab "ℕ"

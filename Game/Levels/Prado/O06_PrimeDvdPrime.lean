@@ -5,7 +5,7 @@ import Game.Levels.Prado.L09_One
 World "Prado"
 Level 10
 
-Title "" -- ""
+Title "[Prado.L10] Title" -- ""
 
 /-
 Introduction
@@ -17,7 +17,7 @@ Mal sehen, ob wir die jetzt zusammen gezeigt bekommen.
 
 Introduction "Intro Prado O06"
 
-/---/
+/-- [Doc.Theorem] Nat.prime_dvd_prime_iff_eq -/
 TheoremDoc Nat.prime_dvd_prime_iff_eq as "prime_dvd_prime_iff_eq" in "ℕ"
 
 namespace Nat

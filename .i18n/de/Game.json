@@ -137,6 +137,8 @@
  "Für eine Menge (genauer: einen “Typ”) §1 bedeutet §3, dass ein Element in §1 („vom Typ §1“) existiert.\nGenauso ist für eine Teilmenge §5 der Ausdruck §6 gleichbedeutend mit §7.  Letzteres kannst du leicht mit §8 prüfen.\n\n## §0 als Beweisziel\n\nHast du ein Element §10 bereits gegeben oder konstruiert, kannst du §3 mit §11 beweisen.\nGenauso beweist du, wenn dir ein Element §12 mit §14 vorliegt, §6 mit §16 beweisen.\n\n\n## §0 als Annahme\n\nFür eine Menge §1 extrahierst du aus der Annahme §17 mit §18 ein §20.\nFür eine Teilmenge §5 extrahierst du aus der Annahme §21 mit §22 ein §23 mit der Eigenschaft §26.",
  "[Babylon] Split §0 with §1: §2":
  "**Robo**:  Die Annahme §0 kannst du ja jetzt mit §1 in die drei Fälle aufteilen: §2.",
+ "[Babylon.L05] Title": " ",
+ "[Babylon.L05] Introduction": " ",
  "You cannot use §0. There is no §1. Try §2":
  "**Operationsleiter**: Das ist von einem Kollegen.\n\n**Robo**: Oh, das hab ich schon einmal irgendwo gelesen. Warte mal … Richtig! Das war damals, als ich Wikipedia gecrawlt habe: \n\n*„Der Modus ponens ist eine schon in der antiken Logik geläufige Schlussfigur, die in vielen logischen …“*\n\n**Du**: Robo! Gefragt ist ein Beweis und kein historischer Aufsatz! Oder komme ich hier etwa mit §0 oder so etwas weiter?\n\n**Robo**: Okay, nein, sorry. §1 gibt es nicht. Probier lieber §2.",
  "You can skip induction start by using §0":

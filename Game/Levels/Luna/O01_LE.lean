@@ -3,7 +3,7 @@ import Game.Metadata
 World "Luna"
 Level 1
 
-Title "" -- "Kleinergleich"
+Title "[Luna.L01] Title" -- "Kleinergleich"
 
 /-
 Introduction

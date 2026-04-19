@@ -7,7 +7,7 @@ open Finset
 World "Babylon"
 Level 6
 
-Title "" -- "Summe vertauschen"
+Title "[Babylon.L06] Title" -- "Summe vertauschen"
 
 /-
 Introduction
@@ -41,7 +41,7 @@ Statement
   Hint "Try `sum_comm`"
   rw [sum_comm]
 
-/---/
+/-- [Doc.Theorem] Finset.sum_comm -/
 TheoremDoc Finset.sum_comm as "sum_comm" in "∑ Π"Π Π"
 
 NewTheorem Finset.sum_comm

@@ -4,7 +4,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 1
 
-Title "" -- "Symmetric square relation is transitive"
+Title "[Symmetric Square.L01] Title" -- "Symmetric square relation is transitive"
 
 Introduction
 "

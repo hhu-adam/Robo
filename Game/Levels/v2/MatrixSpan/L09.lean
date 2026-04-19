@@ -6,7 +6,7 @@ import Game.Metadata
 World "Span"
 Level 9
 
-Title "" -- "Span"
+Title "[Span.L09] Title" -- "Span"
 
 /- # Introduction
 

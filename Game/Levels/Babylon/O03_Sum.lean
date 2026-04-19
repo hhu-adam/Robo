@@ -5,7 +5,7 @@ open Finset
 World "Babylon"
 Level 3
 
-Title "" -- "endliche Summe"
+Title "[Babylon.L03] Title" -- "endliche Summe"
 
 /-
 Introduction
@@ -58,7 +58,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i: ℕ) + 1) = n + (∑ i : Fin n, (i:ℕ
   Hint "Try `ring` | `rw [add_comm]`"
   ring
 
-/---/
+/-- [Doc.Theorem] Finset.sum_add_distrib -/
 TheoremDoc Finset.sum_add_distrib as "sum_add_distrib" in "∑ Π"
 
 NewTheorem Finset.sum_add_distrib

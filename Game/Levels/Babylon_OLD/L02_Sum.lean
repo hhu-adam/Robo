@@ -5,7 +5,7 @@ open Finset
 World "Babylon"
 Level 2
 
-Title "" -- "endliche Summe"
+Title "[Babylon.L02] Title" -- "endliche Summe"
 
 Introduction
 "

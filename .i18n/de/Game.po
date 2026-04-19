@@ -2855,6 +2855,15 @@ msgstr ""
 msgid "Try out §0 again"
 msgstr "**Robo**: Probier mal wieder §0."
 
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "[Babylon.L05] Title"
+msgstr " "
+
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "[Babylon.L05] Introduction"
+msgstr " "
+
+
 #. §0: `rw`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid "Apply induction hypothesis with §0"

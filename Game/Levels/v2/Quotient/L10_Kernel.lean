@@ -4,7 +4,7 @@ import Game.Metadata
 World "Quotient"
 Level 10
 
-Title "" -- "Kernel relation"
+Title "[Quotient.L10] Title" -- "Kernel relation"
 
 Introduction
 "

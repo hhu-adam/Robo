@@ -3,7 +3,7 @@ import Game.Metadata
 World "Piazza"
 Level 6
 
-Title "" -- "leere Menge"
+Title "[Piazza.L06] Title" -- "leere Menge"
 
 /-
 Introduction
@@ -27,7 +27,7 @@ Statement Set.eq_empty_iff_forall_not_mem {A : Type} (s : Set A) :
     ext i
     tauto
 
-/-- -/
+/-- [Doc.Theorem] Set.empty -/
 DefinitionDoc Set.empty as "∅" in "Set"
 
 NewDefinition Set.empty

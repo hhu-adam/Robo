@@ -4,7 +4,7 @@ import Game.Metadata
 World "Module"
 Level 2
 
-Title "" -- "Konkrete Vektorräume"
+Title "[Module.L02] Title" -- "Konkrete Vektorräume"
 
 Introduction
 "

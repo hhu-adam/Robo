@@ -8,7 +8,7 @@ open Finset
 World "Babylon"
 Level 6
 
-Title "" -- "Summe vertauschen"
+Title "[Babylon.L06] Title" -- "Summe vertauschen"
 
 Introduction
 "

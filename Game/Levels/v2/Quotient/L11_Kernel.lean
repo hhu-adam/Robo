@@ -4,7 +4,7 @@ import Game.Metadata
 World "Quotient"
 Level 11
 
-Title "" -- "Quotient by kernel of an injection"
+Title "[Quotient.L11] Title" -- "Quotient by kernel of an injection"
 
 Introduction
 "
