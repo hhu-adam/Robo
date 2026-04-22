@@ -369,7 +369,7 @@
  "To rewrite into the other direction you can use §0 (§1) infront of the name. Try §2":
  "**Du**: Und wenn ich in die andere Richtung umschreiben möchte?\n\n**Robo**: Dann schreibst du ein §0 (§1, also klein \"L\") vor den Namen, also §2.",
  "To proof sum §0\ntry to perform induction over §1 using §2. §3 is optional and you can\ndecide on the name of your induction variable (§4) and hypothesis (§5).":
- "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n§0\nGabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
+ "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n\n§0\n\nGabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
  "To divide assumption §0 use §1":
  "**Robo**: Ich würde mal die Annahme §0 mit §1 aufteilen.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":

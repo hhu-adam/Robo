@@ -365,7 +365,7 @@
  "To rewrite into the other direction you can use §0 (§1) infront of the name. Try §2":
  "**You**: And what if I want to rewrite it in the other direction? \n\n**Scribble**: Then you put a §0 (§1, i.e. lowercase \"L\") in front of the name, as in §2.",
  "To proof sum §0\ntry to perform induction over §1 using §2. §3 is optional and you can\ndecide on the name of your induction variable (§4) and hypothesis (§5).":
- "**You**: I've seen this sum before. \n§0 \nWasn't there this story about little Gauss coming up with this formula, and with very simple argument why it holds? \n\n**Scribble**: I'm not into that kind of gossip. I would just do an induction over §1. In Leanish, that would be: §2!\n\n**You**: Why §3? \n\n**Scribble**: That part is optional, of course. It allows you to specify names for your induction variable (§4) and hypothesis (§5).",
+ "**You**: I've seen this sum before. \n\n§0 \n\nWasn't there this story about little Gauss coming up with this formula, and with very simple argument why it holds? \n\n**Scribble**: I'm not into that kind of gossip. I would just do an induction over §1. In Leanish, that would be: §2!\n\n**You**: Why §3? \n\n**Scribble**: That part is optional, of course. It allows you to specify names for your induction variable (§4) and hypothesis (§5).",
  "To divide assumption §0 use §1":
  "**Scribble**: I would split the assumption §0 with §1.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":
