@@ -824,7 +824,7 @@
  "**Head of Operations**: Ah, the next page is also from this colleague. But there's another note on it. We already had a proof of this, but he didn't like it. He wanted proof that uses neither §0 nor §1! \n\nHe takes a deep breath and sighs.\n\n**Head of Operations**: I'm pretty sure he's just playing dumb. But never mind.  Do you think you could do it?",
  "Intro Implis L10: §0 is not allowed here as well":
  "**Head of Operations**: This is for my rather limited colleague again. \nI don't think he likes §0 either. Can you manage without?",
- "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperfrom The next step with §5":
+ "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperform The next step with §5":
  "**You**: Somehow, all these §0s feel a bit unintuitive. Can't we argue in a way that is slightly more straightforward?\n\n**Scribble**: Maybe you'd prefer §1? With §1, you can work through your chain of equivalences §2 step by step: first, you introduce the intermediate step §4 with §3, then the next intermediate step with §5.",
  "Intro Implis L08":
  "**Head of Operations**: Here, can you say something about this, too?",
