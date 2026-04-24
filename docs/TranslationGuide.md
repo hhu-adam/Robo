@@ -2,7 +2,7 @@
 
 ## 1. Translate the glossary
 
-All translations files are contained in the folder `.i18n`. There's a subfolder for each language.  To add a translation to Pidgeonese, first create a new folder `.i18n/pg`.  Then, copy the glossary from `.i18n/en/Glossary.csv` to `.i18n/pg/Glossary.csv` and translate the terms in this list.
+All translations files are contained in the folder `.i18n`. There's a subfolder for each language.  To add a translation to Pidgeonese, first create a new folder `.i18n/pg`.  Then, copy the glossary from [.i18n/en/glossary.csv](https://github.com/hhu-adam/Robo/blob/main/.i18n/en/glossary.csv) to `.i18n/pg/glossary.csv` and translate the terms in this list.
 The list is short, but you'll need to be familiar with the game and with its content in order to come up with good translations.
 
 The first challenge is to find a good name for the Game itself and for the smart-elf that it features.  In German, the elf is called "Robo", in English "Scribble". What would work best in Pidgeonese?

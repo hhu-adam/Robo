@@ -2915,7 +2915,9 @@ msgid ""
 "decide on the name of your induction variable (§4) and hypothesis (§5)."
 msgstr ""
 "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n"
+"\n"
 "§0\n"
+"\n"
 "Gabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz "
 "einfaches Argument für hatte?\n"
 "\n"
@@ -4450,7 +4452,7 @@ msgstr ""
 #. §1: `trans`
 #. §2: $B \\iff A \\iff D \\iff C$
 #. §3: `trans A`
-#. §4: `B \\iff A`
+#. §4: `B ↔ A`
 #. §5: `trans D`
 #: Game.Levels.Implis.L09_Trans
 msgid ""
