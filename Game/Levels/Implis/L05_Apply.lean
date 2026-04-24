@@ -49,35 +49,35 @@ Statement
   Branch
     apply r
     -- Hint "**Robo**: Das sieht nach einer Sackgasse aus …"
-    Hint "Story"
+    Hint "[Implis.L05] Hint 1: `apply` different prop"
   Branch
     apply p
     Branch
       apply j
       -- Hint "**Robo**: Das sieht nicht gut aus."
-      Hint "Story"
+      Hint "[Implis.L05] Hint 2: `apply` different prop"
     apply l
     Branch
       apply n
       -- Hint "**Robo**: Nah, da stimmt doch was nicht …"
-      Hint "Story"
+      Hint "[Implis.L05] Hint 3: `apply` different prop"
     apply i
     Branch
       apply g
       -- Hint "**Robo**: Halt! Falsch abgebogen."
-      Hint "Story"
+      Hint "[Implis.L05] Hint 4: `apply` different prop"
     apply f
     assumption
   Branch
     apply h at hyp
     -- Hint "**Robo**: Bist du dir sicher?"
-    Hint "Story"
+    Hint "[Implis.L05] Hint 5: `apply` different prop at hyp"
   apply f at hyp
   apply i at hyp
   Branch
     apply k at hyp
     -- Hint "**Robo**: Ehm …"
-    Hint "Story"
+    Hint "[Implis.L05] Hint 6: `apply` different prop at hyp"
   apply l at hyp
   apply p at hyp
   assumption

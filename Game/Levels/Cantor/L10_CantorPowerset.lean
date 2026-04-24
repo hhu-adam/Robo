@@ -62,14 +62,14 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
     Hint "**Cantor**: Nein, nein! Wir wollten doch
       mein schönes Theorem `cantor_diagonal` verwenden!"
     -/
-    Hint "Try `cantor_diagonal`"
+    Hint "[Hint mhjv] Try `cantor_diagonal`"
   Branch
     specialize hf { a | a ∉ f a }
     /-
     Hint "**Cantor**: Nein, nein! Wir wollten doch
       mein schönes Theorem `cantor_diagonal` verwenden!"
     -/
-    Hint "Try `cantor_diagonal`"
+    Hint "[Hint mhjv] Try `cantor_diagonal`"
   apply cantor_diagonal at hf  -- L09
   -- now see L05
   /-

@@ -30,7 +30,7 @@ Statement (A B : Prop) (hA : A) : A ∨ (¬ B) := by
   Branch
     right
     -- Hint "**Robo** Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. Probier's nochmal."
-    Hint "Try Right tactic"
+    Hint "Try `right` tactic"
   left
   assumption
 

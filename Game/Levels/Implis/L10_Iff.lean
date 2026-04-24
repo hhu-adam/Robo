@@ -39,7 +39,7 @@ Statement (A B C : Prop) (h : A ↔ B) (g : B → C) : A → C := by
   Branch
     apply g
     -- Hint "**Robo**: So kannst Du natürlich auch anfangen."
-    Hint "Story"
+    Hint "[Implis.L10] Hint 1: `apply g` is also a possible direction"
     apply h.mp
     assumption
   apply h.mp at hA

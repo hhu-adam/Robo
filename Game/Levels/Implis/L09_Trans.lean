@@ -16,7 +16,7 @@ Introduction
 Introduction "Intro Implis L09: Instead of `rw` use `trans` here.
 With it you can solve $B \\iff A \\iff D \\iff C$ step-by-step by using
 `trans A` to introduce the intermediate step `B ↔ A` and then
-perfrom The next step with `trans D`"
+perform the next step with `trans D`"
 
 Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : B ↔ C := by
   trans A

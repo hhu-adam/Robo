@@ -36,7 +36,7 @@ Statement {n : ℕ} {t : ℝ} (A : Matrix (Fin n) (Fin n) ℝ) :
   rw [trace_one]
   -- Hint "**Robo**: Dieser letzte Schritt ist `card_fin`. Das ginge natürlich auch alles
   -- mit `simp`, wenn wir gerade nicht so viele Spaß am Spielen hätten."
-  Hint "Try `card_fin` | `simp`"
+  Hint "[Hint xnqr] Try `card_fin` | `simp`"
   rw [card_fin]
 
 /---/

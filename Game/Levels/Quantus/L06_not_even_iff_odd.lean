@@ -24,7 +24,7 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
     -- Hint "
     --     **Robo**:  Mit `not_even_iff_odd` kannst da `¬Odd` in `Even` verwandeln.
     --  "
-    Hint "With `not_even_iff_odd` one can transform `¬Odd` to `Even`."
+    Hint "With `not_odd_iff_even` one can transform `¬Odd` to `Even`."
     rw [not_odd_iff_even] at h
   by_cases h : Even i
   · rw [Even.neg_pow]

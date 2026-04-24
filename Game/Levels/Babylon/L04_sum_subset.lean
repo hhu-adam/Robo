@@ -39,7 +39,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     -- Hint "**Robo**:  Nein, das sieht falschherum aus."
     Hint "Wrong order"
     -- Hint (hidden := true) "**Robo**:  Vertausch erst einmal mit `symm` die beiden Seiten der Gleichung."
-    Hint (hidden := true) "Try `symm`"
+    Hint (hidden := true) "[Hint rxjt] Try `symm`"
   symm
   -- Hint (hidden := true) "**Robo**:  Gut.  Und jetzt `apply sum_subset`."
   Hint (hidden := true) "Now try out `apply sum_subset`"

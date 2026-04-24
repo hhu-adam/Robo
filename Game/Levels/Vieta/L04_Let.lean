@@ -39,14 +39,14 @@ Statement (x : ℤ) :
   Branch
     let g : ℤ → ℤ := fun x ↦ x - 3
     -- Hint "**Robo**: Jetzt kannst du diese mit `use {g}` benutzen."
-    Hint "Try `use {g}`"
+    Hint "[Hint bsjn] Try `use {g}`"
     use g
     /-
     Hint "
     **Robo**: `({g} ∘ {f}) x` ist per Definition `{g} ({f} x)`. `simp` würde dieses
     Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
     -/
-    Hint "Explain `({g} ∘ {f}) x` defined as `{g} ({f} x)`. Try `simp` | `rw [comp_apply]`"
+    Hint "[Hint kzmq] Explain `({g} ∘ {f}) x` defined as `{g} ({f} x)`. Try `simp` | `rw [comp_apply]`"
     /-
     Hint "
     **Robo**: `ring` sieht durch lokale Definitionen wie
@@ -60,7 +60,7 @@ Statement (x : ℤ) :
   **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` würde dieses
   Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
   -/
-  Hint "Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
+  Hint "[Hint bpwn] Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
   rw [comp_apply]
   /-
   Hint "

@@ -30,7 +30,7 @@ Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   Branch
     constructor
     -- Hint "**Fin**:  Ja, so kann man das angehen."
-    Hint "Story"
+    Hint "[Piazza.L13] Hint 1: You can begin with `constructor`"
     · intro h
       obtain h₁ | ⟨ h₂, h₃ ⟩ := h
       rw [← h₁] at h

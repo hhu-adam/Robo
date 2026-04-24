@@ -46,7 +46,7 @@ example : image f = fun S ↦ f '' S := by
       **Robo**:  Oh, nein.  Das sieht zu kompliziert aus.  Schreib mal lieber explizit `funext S`.
       "
     -/
-    Hint "try `funext S`"
+    Hint "[Hint gwrm] Try `funext S`"
   funext S
   /-
   Hint (hidden := true) "
