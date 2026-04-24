@@ -369,7 +369,7 @@
  "To rewrite into the other direction you can use §0 (§1) infront of the name. Try §2":
  "**Du**: Und wenn ich in die andere Richtung umschreiben möchte?\n\n**Robo**: Dann schreibst du ein §0 (§1, also klein \"L\") vor den Namen, also §2.",
  "To proof sum §0\ntry to perform induction over §1 using §2. §3 is optional and you can\ndecide on the name of your induction variable (§4) and hypothesis (§5).":
- "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n§0\nGabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
+ "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n\n§0\n\nGabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
  "To divide assumption §0 use §1":
  "**Robo**: Ich würde mal die Annahme §0 mit §1 aufteilen.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":
@@ -834,7 +834,7 @@
  "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen. Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis, aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n\nEr holt tief Luft und seuft.\n\n**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint Ihr, Ihr schafft das?",
  "Intro Implis L10: §0 is not allowed here as well":
  "**Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen. Ich glaube, §0 mag der auch nicht. Geht das trotzdem?",
- "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperfrom The next step with §5":
+ "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperform The next step with §5":
  "**Du**: Irgendwie fühlen sich diese §0 an, als würde man von hinten durch den Bauch argumentieren.  Geht das nicht auch irgendwie geradeaus, oder denken alle hier um die Ecke?\n\n**Robo**:  Vielleicht würde dir §1 besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  §2 Schritt für Schritt abarbeiten: als erstes führst Du mit §3 den Zwischenschritt §4 ein, dann mit §5 den nächsten Zwischenschritt.",
  "Intro Implis L08":
  "**Operationsleiter**: Hier, könnt ihr dazu auch was sagen?",
