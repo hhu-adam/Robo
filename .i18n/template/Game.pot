@@ -5641,7 +5641,7 @@ msgstr ""
 msgid "Intro Implis L09: Instead of §0 use §1 here.\n"
 "With it you can solve §2 step-by-step by using\n"
 "§3 to introduce the intermediate step §4 and then\n"
-"perfrom The next step with §5"
+"perform The next step with §5"
 msgstr ""
 
 #. §0: `Even n`
