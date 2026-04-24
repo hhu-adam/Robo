@@ -4452,7 +4452,7 @@ msgstr ""
 #. §1: `trans`
 #. §2: $B \\iff A \\iff D \\iff C$
 #. §3: `trans A`
-#. §4: `B \\iff A`
+#. §4: `B ↔ A`
 #. §5: `trans D`
 #: Game.Levels.Implis.L09_Trans
 msgid ""
