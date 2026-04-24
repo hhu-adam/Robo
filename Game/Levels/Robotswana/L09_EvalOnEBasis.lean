@@ -156,7 +156,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     · Hint "Try `simp [E]`"
       simp [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
     -- · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-    · Hint (hidden := true ) "Pull function into sum"
+    · Hint (hidden := true ) "[Robotswana.L09] Hint: pull function into sum 1"
       /-
       Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
       `{f} (∑ x, E x x)` zeigen."
@@ -172,7 +172,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
 
         **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
         -/
-        Hint (hidden := true) "Pull function into sum"
+        Hint (hidden := true) "[Robotswana.L09] Hint: pull function into sum 2"
         rw [map_sum]
         -- Hint "**Du**: Nochmals!"
         Hint "again"

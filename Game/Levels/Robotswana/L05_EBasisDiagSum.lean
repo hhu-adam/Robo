@@ -50,7 +50,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   /-
   Hint (hidden := true) "
     **Robo**:  Wie gesagt, ich denke, du kannst gleich mit `matrix_eq_sum_ebasis` anfangen,
-    angewendet auf die Einheitsmatrix `1` rechts vom Gleichheitszeigen.
+    angewendet auf die Einheitsmatrix `1` rechts vom Gleichheitszeichen.
     Du willst also mit der Gleichung `matrix_eq_sum_ebasis 1` das Beweisziel `r`e`w`riten.
   "
   -/
