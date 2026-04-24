@@ -29,24 +29,24 @@ Statement : HasLeftInverse succ  := by
     use (fun n ↦ if 0 < n then n - 1 else 0)
     /-
     Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
-    Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+    Du könntest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
     -/
-    Hint "Try `n ↦ n - 1`"
+    Hint "[Hint wdpf] Try `n ↦ n - 1`"
   Branch
     use (fun n ↦ if 0 < n then n - 1 else 0)
     unfold LeftInverse
     /-
     Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
-    Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+    Du könntest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
     -/
-    Hint "Try `n ↦ n - 1`"
+    Hint "[Hint wdpf] Try `n ↦ n - 1`"
   Branch
     let g := (fun n ↦ if 0 < n then n - 1 else 0)
     /-
     Hint "**Robo**: Das sieht gut aus.  Aber glaub mir, die Verzweigung ist ganz unnötig.
-    Du könnest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
+    Du könntest auch einfach `n ↦ n - 1` verwenden.  Probiers mal!"
     -/
-    Hint "Try `n ↦ n - 1`"
+    Hint "[Hint wdpf] Try `n ↦ n - 1`"
   use (fun n ↦ n - 1)
   simp [LeftInverse]
 

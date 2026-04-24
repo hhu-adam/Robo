@@ -18,7 +18,7 @@ open Set
 Statement (A B : Set ℕ) :
     univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
   -- Hint (hidden := true) "**Robo**: Diesmal kannst du einfach wieder `ext` verwenden."
-  Hint (hidden := true) "Try `ext`"
+  Hint (hidden := true) "[Hint cqvs] Try `ext`"
   ext i
   -- Hint (hidden := true) "**Robo**: Und jetzt natürlich wieder `simp`."
   Hint (hidden := true) "Perform `simp` again"

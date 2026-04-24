@@ -60,7 +60,7 @@ Statement Nat.even_square (n : ℕ) (h : Even n) : Even (n ^ 2) := by
     unfold Even
     -- Hint "
     --   Robo**: Am besten machst du auch noch `unfold Even at h`, damit du verstehst, was los ist."
-    Hint "Try `unfold Even at h`"
+    Hint "[Hint jrxb] Try `unfold Even at h`"
   unfold Even at *
   Branch
     clear h -- we do that so the hint gets displayed regardless of the presence of additional hyps.

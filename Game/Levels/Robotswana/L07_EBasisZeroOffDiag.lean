@@ -52,7 +52,7 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
     -/
     Hint "Use `{h₁}` by writing `E i j` as `E i j * E j j`. Remind `E.mul_of_ne`"
     -- Hint (hidden := true) "**Robo*: Wie du meinst. Dann probier doch am besten `trans f (E i j * E j j)`."
-    Hint "Try `trans f (E i j * E j j)`"
+    Hint "[Hint plnk] Try `trans f (E i j * E j j)`"
     trans f (E i j * E j j)
     /-
     · Hint (hidden := true) "**Du**: Ehm, das sehe ich einfach von der Definition.
