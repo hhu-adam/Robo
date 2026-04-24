@@ -1440,7 +1440,7 @@ msgstr ""
 #: Game.Levels.Vieta.L04_Let
 msgid "Try §0, as it sees through definitions §1 and §2"
 msgstr ""
-"**Robo**: `ring` sieht durch lokale Definitionen wie §0 und §1 hindurch. \n"
+"**Robo**: §0 sieht durch lokale Definitionen wie §1 und §2 hindurch. \n"
 "Du kannst die Taktik also direkt benutzen."
 
 #. §0: `rw [if_pos «{h}»]`
@@ -2592,8 +2592,8 @@ msgid ""
 "Show\n"
 "§1\n"
 msgstr ""
-"Hint \"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  "
-"Gegeben ist:\n"
+"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben "
+"ist:\n"
 "\n"
 "§0\n"
 "\n"
@@ -3278,6 +3278,9 @@ msgid ""
 "§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n"
 "§4 has to be proven."
 msgstr ""
+"**Robo**: Ich sagte §0. Aber einfach nur §1 funktioniert offenbar auch.\n"
+"  Jetzt hast Du sozusagen §2 auf das Beweisziel §3 angewendet, und musst nur "
+"noch §4 beweisen."
 
 #. §0: `Nonempty A`
 #: Game.Levels.Mono.L11_InjHasLeftInv
@@ -3650,6 +3653,11 @@ msgid ""
 "Remind that, assumpion §0 will be needed agian.\n"
 "Try §1 or §2"
 msgstr ""
+"**Cantor**: Gute Idee!  Fast richtig!\n"
+"  Aber ihr werdet die ursprünglich Annahme §0 gleich noch einmal brauchen.\n"
+"\n"
+"**Robo**:  Okay, zurück und mit §1 weiter.\n"
+"  Oder mit §2!"
 
 #. §0: `f`
 #. §1: `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …`
@@ -4027,6 +4035,11 @@ msgstr ""
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "Repeat proof from first level"
 msgstr ""
+"**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament "
+"wiederholen.\n"
+"  Nur zu, Übung macht den Meister.\n"
+"\n"
+"**Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
 
 #: Game.Levels.Saturn.L03_mul_comm
 msgid "Intro Saturn L03"
@@ -5145,6 +5158,12 @@ msgid ""
 "Start with §0. Find §1 with §2. Try §3 to get §4 and §5 and see if §6 "
 "applicable"
 msgstr ""
+"**Du**: Aber was soll ich denn mit unserer Annahme §0 anfangen?\n"
+"  Ich müsste überhaupt erst einmal eine Multiplikation haben.\n"
+"\n"
+"**Robo**: Du müsstest ein Matrizenprodukt §1 finden, für das §2 gilt.\n"
+"  Dann könnstest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu "
+"erhalten, bei denen §6 vielleicht anwendbar ist."
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
@@ -5568,7 +5587,7 @@ msgstr ""
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 msgid "[Robotswana.L07] Hint 1: Try commutating"
-msgstr "Hint \"**Robo**: Und hier wolltest du jetzt kommutieren?**Du**: Genau!"
+msgstr "**Robo**: Und hier wolltest du jetzt kommutieren?**Du**: Genau!"
 
 #: Game.Levels.Cantor.L02_CantorPowerset
 msgid "Intro Cantor L02"
@@ -6329,6 +6348,16 @@ msgstr ""
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 msgid "Use §0 by writing §1 as §2. Remind §3"
 msgstr ""
+"**Robo**: Wie könnten wir denn hier §0 verwenden?\n"
+"\n"
+"**Du**: Wie wär’s, wenn wir diesmal §1 als Produkt §2 schreiben?\n"
+"\n"
+"**Robo**:  Wieso gerade so?\n"
+"\n"
+"**Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich "
+"Null!  \n"
+"  Hatten wir doch auch schon, §3 oder so etwas.\n"
+"    "
 
 #: Game.Levels.Prado.L10_EvenPrime
 msgid "Conclusion Prado L10"
@@ -6515,6 +6544,15 @@ msgid ""
 "§3\n"
 "which is  §4.\n"
 msgstr ""
+"Ein verwirrtes Murmeln geht durch die Menge.\n"
+"\n"
+"**Du**: Warte mal, wieso ist §0 überhaupt wieder eine natürliche Zahl?\n"
+"\n"
+"**Robo**: Division auf §1 wird in Lean immer abgerundet. Die Gleichung \n"
+"\n"
+"§3\n"
+"\n"
+"wird so zu §4.  Du bist also auf dem Holzweg!\n"
 
 #. §0: `Surjective f`
 #. §1: `∀ y, (∃ x, f x = y)`
@@ -6741,6 +6779,8 @@ msgstr ""
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "§0 is a bad idea here. Try §1."
 msgstr ""
+"**Du**: Hmm, §0 ist tatsächlich eine schlechte Idee. \n"
+"  -- Das sieht zu kompliziert aus. Lass es mich mit §1 versuchen."
 
 #. §0: `decide`
 #. §1: `decide`
@@ -6846,6 +6886,8 @@ msgstr "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen."
 #: Game.Levels.Quantus.L04_Exists
 msgid "Set number"
 msgstr ""
+"**Robo**: Das geht auch.  Aber jetzt musst du dir wirklich eine Zahl "
+"überlegen."
 
 #. §0: `(«{A}» ∧ «{B}») ∨ «{A}»`
 #. §1: `«{A}»`
@@ -6860,6 +6902,9 @@ msgstr ""
 #: Game.Levels.Babylon.L05_sum_subset2
 msgid "Try §0 from the other side or §1 beforehand"
 msgstr ""
+"**Robo**:  Das sieht irgendwie falsch aus …\n"
+"  Vielleicht solltest du §0 lieber rückwarts anwenden.\n"
+"  Oder vor diesem Schritt mit §1 die Gleichung umdrehen."
 
 #: Game.Levels.Cantor
 msgid "Cantor"
@@ -7378,6 +7423,8 @@ msgstr ""
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "Show statement via §0"
 msgstr ""
+"**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt §0 "
+"zeigen."
 
 #: Game.Levels.Prado.L09_ExistsUnique
 msgid "Intro Prado L09"
@@ -9498,7 +9545,7 @@ msgstr ""
 
 #: Game.Levels.Babylon.L04_sum_subset
 msgid "Wrong order"
-msgstr ""
+msgstr "**Robo**:  Nein, das sieht falsch herum aus."
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
@@ -9662,9 +9709,9 @@ msgstr ""
 "\n"
 "**Du**: Moment, wie schreib ich *das* denn hier auf?\n"
 "\n"
-"**Robo**: Die bleiden Klammern schreibst du als §1 und §2, oder gleichzeitig "
-"als §3. Und h₁ schreibst du einfach als §4. Aber du kannst dir auch einfach "
-"andere Namen für §5 und §6, zum Beispiel §7."
+"**Robo**: Die beiden Klammern schreibst du als §1 und §2, oder gleichzeitig "
+"als §3. Und §5 schreibst du einfach als §4. Aber du kannst dir auch einfach "
+"andere Namen für §5 und §6 ausdenken, zum Beispiel §7."
 
 #. §0: `Even.neg_pow`
 #. §1: `Odd.neg_pow`
