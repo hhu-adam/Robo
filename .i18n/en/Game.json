@@ -517,7 +517,7 @@
  "The goal is that each self mapping §0 possess a fixed point.\nDoes not every set have a self mapping without fixed points? E.g. §1 in §2\nor §3 … or the non-trivial permutations in §4. Thought: if §5 is not a set with\na single element then there should be a fixed-point-free self mapping.":
  "**You**: We are supposed to show, under certain assumptions, that *every* self-map §0 has a fixed point? Isn't there a self-map *without* fixed points on every set? For example, §1 on §2 or §3 … \n\n**Scribble**: … or the non-trivial permutation on §4? \n\nHe seems a little confused, too.\n\n**Scribble**: Surely, if §5 is not just the one-point set, there should always be a self-map without fixed points? \n\n**Cantor**: Well, that's exactly the point! Wait and see!",
  "The given mapping has the form\n§0\n\nand §1 is the mapping §2, that for each input return the doubeled value of §3.\n":
- "**You**: So, the given map has the following form:\n\n§0\n\nAnd what is §1?\n\n**Scribble**: That's the map §2 which sends each number to twice the value of §3 at that number. \n",
+ "**You**: So, the given map has the following form:\n\n$$\nf(n) = \\begin{cases}\nn^2 & \\text{if } n \\text{ even}  \\\\\nn+1 & \\text{else.} \\\\\n\\end{cases}\n$$\n\nAnd what is §1?\n\n**Scribble**: That's the map §2 which sends each number to twice the value of §3 at that number. \n",
  "The expression itself seems to be correct":
  "**Scribble**: But everything that follows is complete nonsense again. The statement itself is correct, though, I think.  Let's see whether we can prove this.",
  "That would be §0": "**Scribble**: That would be §0.",
@@ -924,7 +924,7 @@
  "Intro Implis L06":
  "**Head of Operations**: We used to have a few conveyor belts that could run in both directions. I had them all shut down as a precaution because the latest manuals advise against using such double belts. But perhaps it's safe to use them under certain conditions? What do you think about this scenario?",
  "Intro Implis L05: Introduce implication graph\n  §0":
- "The next page looks a little more complicated. To help you keep track of everything, Scribble summarises the various implications in a diagram. \n\n§0",
+ "The next page looks a little more complicated. To help you keep track of everything, Scribble summarises the various implications in a diagram. \n§0",
  "Intro Implis L04": "**Head of Operations**: Here's another local problem.",
  "Intro Implis L03: This Level does not know §0. Try proof without §1":
  "Unfortunately, the phone call isn't going so well. He hangs up again and shakes his head. \n\n**Head of Operations**: Our colleague on the other side of the moon doesn't understand §0. Or at least, he's pretending that he doesn't. Do you have any other ideas? \n\nHe draws a line under your proof, adds a crossed-out ~§1~, and hands the sheet back to you.",
@@ -1033,7 +1033,7 @@
  "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
  "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove §2. These formalosophanatics are driving me crazy.  \n\n**Scribble**:  You simply need to break the goal into two parts. Try §4.\n\n**You**: You mean §5, perhaps? \n\n**Scribble**: No, §6. I know it's confusing, but that's how they say it.",
  "Given\n\n§0\n\nShow\n§1\n":
- "**You**: I need to write down for myself, first. So we're given: \n\n$0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
+ "**You**: I need to write down for myself, first. So we're given: \n\n§0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
  "For §0, the notation §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6. \n\n## §1 as proof goal\n\nIf §1 is your goal, you can pick an element §9 with §10 using §8 (and then show §11). \n\n## §1 as assumption\n\nGiven the assumption §12 and an element §13 with §14 is given, you obtain the statement §16 with §15. \n\nYou write §17 as §18.",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":

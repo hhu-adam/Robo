@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.29.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24\n"
+"POT-Creation-Date: 2026-04-25\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3289,10 +3289,10 @@ msgstr ""
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\ %(new line)
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F    \\ %(new line)
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$

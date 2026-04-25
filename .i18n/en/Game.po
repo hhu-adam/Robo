@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24\n"
+"POT-Creation-Date: 2026-04-25\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -5327,10 +5327,10 @@ msgstr ""
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\ %(new line)
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F    \\ %(new line)
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
@@ -5341,7 +5341,6 @@ msgid ""
 msgstr ""
 "The next page looks a little more complicated. To help you keep track of "
 "everything, Scribble summarises the various implications in a diagram. \n"
-"\n"
 "§0"
 
 #. §0: `A`
