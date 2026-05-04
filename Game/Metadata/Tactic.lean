@@ -3,3 +3,4 @@ import Game.Metadata.Tactic.Constructor
 import Game.Metadata.Tactic.Induction
 -- import Game.Metadata.Tactic.LinearCombination
 import Game.Metadata.Tactic.Ring
+import Game.Metadata.Tactic.Simp
