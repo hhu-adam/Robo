@@ -27,6 +27,7 @@ Conclusion "
 "
 -/
 Conclusion "Conclusion Cantor L09 - 2"
+attribute [game_simp] mem_setOf_eq
 
 Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
     ∀ s : Y → Y, Nonempty (fixedPoints s) := by
@@ -73,7 +74,7 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   obtain ⟨a, ha⟩ := hf c
   use (f a a)
   unfold fixedPoints IsFixedPt
-  true_simp?
+  simp
   apply congr_fun at ha
   specialize ha a
   --simp [c] at ha  -- optional

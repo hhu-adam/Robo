@@ -9,6 +9,7 @@ Introduction "Intro Euklid L02"
 
 open Finset
 namespace Nat
+attribute [game_simp] mem_erase ne_eq not_true_eq_false false_and not_false_eq_true
 
 Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
   /-
@@ -59,7 +60,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     use k * ∏ x ∈ erase A a, x
     rw [hk]
     ring
-  true_simp?
+  simp
 
 /---/
 TheoremDoc Finset.prod_insert as "prod_insert" in "∑ Π"

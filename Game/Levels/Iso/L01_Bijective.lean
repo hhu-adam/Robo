@@ -13,6 +13,7 @@ Introduction
 Introduction "Intro Iso L01"
 
 open Function
+attribute [game_simp] add_left_inj sub_add_cancel
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 1
@@ -27,11 +28,11 @@ Statement :
   unfold Bijective
   constructor
   · intro a b hab
-    true_simp? [f] at hab
+    simp [f] at hab
     assumption
   · intro y
     use y-1
-    true_simp? [f]
+    simp [f]
 
 NewDefinition Function.Bijective
 TheoremTab "Function"

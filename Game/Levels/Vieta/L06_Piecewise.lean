@@ -24,6 +24,7 @@ Er reicht euch das nächste Blatt.
 Introduction "Intro Vieta L06"
 
 open Set Function
+attribute [game_simp] comp_apply mul_ite mul_zero Nat.ofNat_pos mul_nonneg_iff_of_pos_left
 
 Statement :
     let f : ℚ → ℚ := fun x ↦ 5 * x
@@ -47,7 +48,7 @@ Statement :
     **Robo**: Mit `simp` klappt das."
   -/
   Hint "Rewrite `(g ∘ f) {x}` to `g (f {x})` via `simp`"
-  true_simp? -- or simp [f, g]
+  simp -- or simp [f, g]
   -- TODO: add `(defeq := _)` so that this triggers for `simp [f, g]` too
   /-
   Hint (strict := true) "
@@ -68,7 +69,7 @@ Statement :
     **Robo**: Dann benutz sie mal `simp [f, g]`!"
   -/
   · Hint "Use definitions via `simp [f, g]`"
-    true_simp? [f, g]
+    simp [f, g]
     /-
     Hint "
       **Robo**: Jetzt hast du `rw [if_pos {h}]` zur Verfügung, um das if-then-else zu
@@ -79,7 +80,7 @@ Statement :
     ring
   -- · Hint (hidden := true) "**Robo**: Nochmals `simp [f, g]`."
   · Hint (hidden := true) "[Vieta] Try `simp [f, g]` (again)"
-    true_simp? [f, g]
+    simp [f, g]
   --  Hint "**Du**: Ah, und die Verneinung von `if_pos` ist sicher …"
     Hint "Remind of negation for `if_pos`"
     -- Hint (hidden := true) "**Robo**: `if_neg`, genau!"

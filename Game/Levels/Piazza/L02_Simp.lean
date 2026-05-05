@@ -15,6 +15,7 @@ Introduction
 Introduction "Intro Piazza L02"
 
 open Set
+attribute [game_simp] mem_setOf_eq
 
 Statement : 9 ∈ {n : ℕ | Odd n} := by
 
@@ -22,7 +23,7 @@ Statement : 9 ∈ {n : ℕ | Odd n} := by
   --  **Robo**:  Ich glaube, am einfachsten kommst du hier mit `simp` weiter.
   -- "
   Hint "The simplest method here is `simp`"
-  true_simp?
+  simp
   -- Hint (hidden := true) "
   --  **Robo**:  Erinner dich an `decide`.
   -- "

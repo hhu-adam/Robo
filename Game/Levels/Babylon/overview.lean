@@ -12,7 +12,7 @@ import Game.Metadata
         rw [← Icc_insert_succ_right]
         · rw [sum_insert]
           · …
-          · true_simp?
+          · simp
         · linarith
 -/
 
@@ -21,11 +21,11 @@ open Nat Finset
 
 /- Babylon L01:  preparation for second sum_subset exercise below -/
 example (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
-  true_simp?
+  simp
 
 /- Babylon L02:  preparation for second sum_subset exercise below -/
 example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2 * card I := by
-  true_simp?
+  simp
   ring
 
 
@@ -38,7 +38,7 @@ example (I : Finset ℕ) : ∑ i ∈ I, (((i : ℤ) + 1)^2 - i^2 - 2*i)  = (card
   · rfl
   · intro i hi
     apply h
-  · true_simp?
+  · simp
 
 
 /- Babylon 04: introduce  sum_subset , needed for ROBOTSWANA -/
@@ -53,7 +53,7 @@ example (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ
   · -- showing that x = 0 or 1 or 2:  see Luna L??
     intro x h0 h3
     have h : x = 0 ∨ x = 1 ∨ x = 2 := by
-      true_simp? at h0 h3
+      simp at h0 h3
       omega
     obtain hx | hx | hx  := h
     all_goals rw [hx]
@@ -72,8 +72,8 @@ example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i �
   trans ∑ i ∈ { i ∈ I | Even i}, ((-1 : ℤ)^i + 1 : ℤ)
   · symm
     apply sum_subset
-    · true_simp?
-    · true_simp?
+    · simp
+    · simp
       intro i h hI
       apply hI at h
       rw [Odd.neg_pow]
@@ -83,15 +83,15 @@ example (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1 : ℤ ) = 2*card { i �
   · trans ∑ i ∈ { i ∈ I | Even i}, (2 : ℤ)
     have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by
       intro i hi
-      true_simp? at hi
+      simp at hi
       obtain ⟨hI, heven⟩ := hi
       rw [Even.neg_pow]
       ring
       assumption
     apply sum_congr   -- introduced in new exercise above
-    · true_simp?
+    · simp
     · assumption
-    true_simp? -- see Note below for this last step
+    simp -- see Note below for this last step
     ring
 
 /- Note:
@@ -101,7 +101,7 @@ example (R : Type) [Ring R] (r : R) (A : Finset R) : ∑ a ∈ A, r*a = r * ∑ 
 
 /-   However, it seems we don't need it: -/
 example (I : Finset ℕ) : ∑ i ∈ I, 2 = 2*card I := by
-  true_simp?
+  simp
   ring
 
 /- Babylon L06 -/
@@ -109,25 +109,25 @@ section Babylon06
 --open Robo.NN.Finset
 theorem arithmetic_sum (n : ℕ) : (∑ i ∈ Icc 0 n , i : ℚ) = 1/2  * n * (n + 1) := by
     induction n with d hd
-    · true_simp?
+    · simp
     · rw [← insert_Icc_right_eq_Icc_add_one]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [hd]
-          true_simp?
+          simp
           ring
-        · true_simp?
+        · simp
       · linarith
 
 theorem Robo.NN.arithmetic_sum (n : ℕ) : 2 * (∑ i ∈ Icc 0 n , i) = n * (n + 1) := by
     induction n with d hd
-    · true_simp?
+    · simp
     · rw [← insert_Icc_right_eq_Icc_add_one]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
           ring
-        · true_simp?
+        · simp
       · linarith
 
 end Babylon06
@@ -137,8 +137,8 @@ section Babylon07
 open Robo.ZZ.Finset
 example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     induction n with d hd
-    · true_simp?
-    · true_simp?
+    · simp
+    · simp
       rw [← insert_Icc_right_eq_Icc_add_one]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
@@ -148,9 +148,9 @@ example (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           · rw [sum_insert]
             · rw [hd]
               ring
-            · true_simp?
+            · simp
           · linarith
-        · true_simp?
+        · simp
       · linarith
 end Babylon07
 
@@ -159,12 +159,12 @@ section Babylon08
 open Robo.NN.Finset
 example (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   induction n with d hd
-  · true_simp?
+  · simp
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · rw [hd]
         ring
-      · true_simp?
+      · simp
     · linarith
 end Babylon08
 
@@ -178,15 +178,15 @@ section Babylon09Q
 open Robo.NN.Finset
 example (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i : ℚ)^2 := by
   induction m with n n_ih
-  · true_simp?
+  · simp
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
-      · true_simp?
+      · simp
         rw [n_ih]
         rw [arithmetic_sum]
-        true_simp?
+        simp
         ring
-      · true_simp?
+      · simp
     · linarith
 end Babylon09Q
 
@@ -198,10 +198,10 @@ section Babylon09N
 open Robo.NN.Finset
 example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
   induction m with n n_ih
-  · true_simp?
+  · simp
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
-      · true_simp?
+      · simp
         rw [n_ih]
         -- arrive here faster now, no need for syntax of the form
         -- `sum_univ_castSucc (n := {n} + 1)` syntax
@@ -210,7 +210,7 @@ example (m : ℕ) : (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := 
         rw [mul_assoc]        -- 2.      in previous approach
         rw [Robo.NN.arithmetic_sum]
         ring
-      · true_simp?
+      · simp
     · linarith
 end Babylon09N
 
@@ -219,7 +219,7 @@ example (m : ℕ) (hQ: (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, 
   (∑ i ∈ Icc 0 m, i ^ 3) = (∑ i ∈  Icc 0 m, i) ^ 2 := by
   have hQ' : (↑(∑ i ∈ Icc 0 m, (i^3 : ℕ)) : ℚ) = (↑((∑ i ∈  Icc 0 m, i)^2 : ℕ) : ℚ) := by
     --simp_all only [cast_sum, cast_pow]
-    true_simp?
+    simp
     assumption
   rw [Nat.cast_inj] at hQ'
   assumption
@@ -257,7 +257,7 @@ example (n : ℕ) (h : 5 ≤ n) : n^2 < 2 ^ n := by
 /-
 example (n : ℕ) : ∑ i ∈ Icc 1 n, (i + 1) = n + (∑ i ∈ Icc 1 n, i) := by
   rw [sum_add_distrib]
-  true_simp?
+  simp
   ring
 -/
 

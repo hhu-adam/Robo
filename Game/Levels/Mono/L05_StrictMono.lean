@@ -8,6 +8,7 @@ Title "" -- ""
 Introduction ""
 
 open Set Function
+attribute [game_simp] add_lt_add_iff_right imp_self
 
 Statement :
     let f := fun (n : ℤ) ↦ n^3 + (n + 3)
@@ -66,7 +67,7 @@ Statement :
     -/
     Hint "Use `unfold` to look into definition of `StrictMono`"
     intro a b
-    true_simp?
+    simp
 
 /-- [Doc.Theorem] StrictMono.injective -/
 TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"

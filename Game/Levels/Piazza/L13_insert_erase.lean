@@ -19,10 +19,12 @@ namespace Finset
 open Classical -- otherwise need `[h : DecidableEq A]` in the statement
                -- open scoped Classical also works in vscode and compliles without error,
                -- but somehow leads to error in this level when deployed locally with npm start
+attribute [game_simp] mem_insert mem_erase ne_eq not_false_eq_true true_and false_or
+
 Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   insert a (Finset.erase s a) = s := by
   ext b
-  true_simp?
+  simp
   -- Hint (hidden := true) "
   --   **Fin**: Mach doch eine Fallunterscheidung, ob `{b} = a` ist oder nicht.
   --"
@@ -47,7 +49,7 @@ Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   by_cases heq : b = a
   · rw [heq]
     tauto
-  · true_simp? [heq]
+  · simp [heq]
 
 TheoremTab "Set"
 

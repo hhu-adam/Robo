@@ -14,6 +14,7 @@ Introduction
 Introduction "Intro Luna L06"
 
 open Finset
+attribute [game_simp] mem_insert mem_Icc
 
 Statement {a b : ℤ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by
@@ -44,7 +45,7 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   "
   -/
   Hint "Try `simp` afterwards"
-  true_simp?
+  simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
   Hint "Ritha gives signs to try omega"
   omega

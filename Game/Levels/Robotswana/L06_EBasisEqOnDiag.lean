@@ -42,6 +42,7 @@ open Nat Matrix
 
 /---/
 TheoremDoc Matrix.eq_on_diag_ebasis as "eq_on_diag_ebasis" in "Matrix"
+attribute [game_simp] single_mul_single_same mul_one E.mul_same
 
 Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A))  :
@@ -68,7 +69,7 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     Hint (hidden := true) "Remind former results with `E i k = (E i j) * (E j k)`"
     trans f (E i j * E j i)
     · unfold E
-      true_simp?
+      simp
     /-
     · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h₁}` brauchen
       wolltest?
@@ -78,9 +79,9 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     · Hint (hidden := true) "Remind use of `{h₁}`"
       rw [h₁]
       unfold E
-      true_simp?
+      simp
   specialize h₁ (E i j) (E j i)
-  true_simp? [E.mul_same] at h₁
+  simp [E.mul_same] at h₁
   assumption
 
 TheoremTab "Matrix"

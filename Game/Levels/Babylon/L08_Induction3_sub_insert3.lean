@@ -17,6 +17,7 @@ Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an.
 "
 -/
 Introduction "Intro Babylon L08"
+attribute [game_simp] Icc_self sum_singleton mul_zero zero_add one_pow mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false not_false_eq_true
 
 Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   /-
@@ -31,12 +32,12 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   -/
   Hint "Try solving $$ \\sum_\{i = 0}^n (2i + 1) = n^2 $$ by induction"
   induction n with d hd
-  · true_simp?
+  · simp
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · rw [hd]
         ring
-      · true_simp?
+      · simp
     · linarith
 
 TheoremTab "∑ Π"

@@ -23,6 +23,7 @@ open Function Set
   planned to be used as `range_fixedPoints` for future planet on quotients;
   don't need a name for now
 -/
+attribute [game_simp] setOf_subset_setOf forall_exists_index forall_apply_eq_imp_iff mem_setOf_eq comp_apply
 
 Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     range f = fixedPoints f := by
@@ -51,13 +52,13 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
   Hint "Start with `ext` or `Subset.antisymm_iff`"
   Branch
     rw [Subset.antisymm_iff]
-    true_simp?
+    simp
     constructor
     · assumption
     · intro a ha
       use a
   ext a
-  true_simp?
+  simp
   constructor
   · intro ⟨y, hy⟩
     rw [← hy]
@@ -65,7 +66,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     clear hy
     /- Hint (hidden := true) "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?" -/
     Hint "Try either `comp_apply` or `simp`"
-    true_simp? at h -- or: rw [comp_apply] at h
+    simp at h -- or: rw [comp_apply] at h
     assumption
   · intro ha
     use a

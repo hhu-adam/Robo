@@ -8,6 +8,7 @@ Title ""
 Introduction ""
 
 open Function Nat
+attribute [game_simp] LeftInverse succ_eq_add_one add_tsub_cancel_right implies_true
 
 Statement : HasLeftInverse succ  := by
   /-
@@ -48,7 +49,7 @@ Statement : HasLeftInverse succ  := by
     -/
     Hint "[Hint wdpf] Try `n ↦ n - 1`"
   use (fun n ↦ n - 1)
-  true_simp? [LeftInverse]
+  simp [LeftInverse]
 
 /-
 Conclusion "

@@ -31,6 +31,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L10"
 
 open Set Function
+attribute [game_simp] eq_iff_iff not_iff_self setOf_false mem_empty_iff_false
 
 Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   Branch -- (This branch is not really needed, as it ends up with the same proof state as main branch.)
@@ -80,6 +81,6 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   specialize hf (¬ .) -- or specialize h Not -- or specializa h (fun A ↦ ¬ A)
   obtain ⟨a, hA⟩ := hf
   unfold fixedPoints IsFixedPt at hA
-  true_simp? at hA
+  simp at hA
 
   DisabledTactic by_cases

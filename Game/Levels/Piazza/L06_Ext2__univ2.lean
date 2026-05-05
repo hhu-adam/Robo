@@ -14,6 +14,7 @@ Introduction
 Introduction "Intro Piazza L06"
 
 open Set
+attribute [game_simp] mem_diff mem_univ mem_inter_iff not_and true_and mem_union
 
 Statement (A B : Set ℕ) :
     univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
@@ -22,7 +23,7 @@ Statement (A B : Set ℕ) :
   ext i
   -- Hint (hidden := true) "**Robo**: Und jetzt natürlich wieder `simp`."
   Hint (hidden := true) "Perform `simp` again"
-  true_simp?
+  simp
   tauto
 
 NewDefinition SDiff

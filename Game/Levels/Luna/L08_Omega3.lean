@@ -13,11 +13,13 @@ Introduction "
 Introduction "Intro Luna L08"
 
 open Finset
+attribute [game_simp] mem_sdiff mem_Icc zero_le true_and not_and not_le
+
 Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by
   intro h'
   -- Hint (hidden := true) "**Ritha**:  Probier unbedingt mal `simp at {h'}`."
   Hint (hidden := true) "Definitely use `simp at {h'}`"
-  true_simp? at h'
+  simp at h'
   omega
 
 Conclusion ""

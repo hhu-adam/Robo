@@ -146,7 +146,7 @@ example (i : ℕ) (h : Odd i): (-1 : ℤ)^i = -1 := by
   -- omega -- fails
   obtain ⟨r , hr⟩ := h
   rw [hr]
-  -- true_simp? -- fails (though would work with Even in place of Odd)
+  -- simp -- fails (though would work with Even in place of Odd)
   -- omega -- fails
   norm_num
 
@@ -157,5 +157,5 @@ example (k : ℕ) (z : ℤ) (hk: Odd k) : (-z)^k = -z^k := by
   rw [this]
   obtain ⟨i, hi⟩ := hk
   rw [hi]
-  -- true_simp? -- fails (though would work with Even in place of Odd)
+  -- simp -- fails (though would work with Even in place of Odd)
   norm_num

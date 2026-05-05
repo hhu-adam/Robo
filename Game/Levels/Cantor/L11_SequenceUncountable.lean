@@ -36,6 +36,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L11"
 
 open Nat Set Function
+attribute [game_simp] succ_eq_add_one Nat.add_eq_left one_ne_zero setOf_false mem_empty_iff_false
 
 Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   push Not
@@ -53,7 +54,7 @@ Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   specialize hf succ
   obtain ⟨n, hn⟩ := hf
   unfold fixedPoints IsFixedPt at hn
-  true_simp? at hn -- dsimp [IsFixedPt] at hn
+  simp at hn -- dsimp [IsFixedPt] at hn
   --simp only [Nat.succ_ne_self] at hn
 
 

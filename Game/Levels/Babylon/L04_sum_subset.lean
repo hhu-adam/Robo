@@ -16,6 +16,7 @@ Introduction
 Introduction "Intro Babylon L04"
 
 open Finset
+attribute [game_simp] mem_Icc zero_le true_and not_and not_le
 
 Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
   /-
@@ -71,7 +72,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     -/
     Hint (hidden := true) "Introduce assumptions until ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ``` as goal"
     Branch
-      true_simp?
+      simp
       intro i h0 h3
       /-
       Hint "**Robo**:  Aus den Annahmen muss ja irgendwie folgen ${i}=0$ oder ${i}=1$ oder ${i}=2$.
@@ -87,12 +88,12 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     have h : i = 0 ∨ i = 1 ∨ i = 2 := by
       /-
       Hint (hidden := true) "
-        **Robo**:  Irgendeine Kombination von `true_simp?` und `omega` wird das schon lösen.
+        **Robo**:  Irgendeine Kombination von `simp` und `omega` wird das schon lösen.
         Hat doch auf Luna auch geklappt.
       "
       -/
       Hint (hidden := true) "Try `simp` & `omega`"
-      true_simp? at h0 h3
+      simp at h0 h3
       omega
     /-
     Hint (hidden := true) "

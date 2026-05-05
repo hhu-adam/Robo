@@ -20,6 +20,7 @@ namespace Function
 
 /---/
 TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in "Function"
+attribute [game_simp] LeftInverse
 
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by
@@ -67,7 +68,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       --  assumption
       -- Hint (hidden := true)"**Robo**: Mit `simp [LeftInverse]` kannst du dir das Beweisziel etwas vereinfachen."
       Hint (hidden := true) "Simplify goal with `simp [LeftInverse]`"
-      true_simp? [LeftInverse]
+      simp [LeftInverse]
       -- Hint (hidden := true) "**Robo**: Warum beginnst du nicht mit `intro`?"
       Hint (hidden := true) "Try beginning with `intro`"
       intro x

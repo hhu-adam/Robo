@@ -13,6 +13,7 @@ open Set Classical
 TheoremDoc Function.injective_iff_hasLeftInverse as "injective_iff_hasLeftInverse" in "Function"
 
 namespace Function
+attribute [game_simp] exists_apply_eq_apply reduceDIte
 
 Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
   Injective f ↔ HasLeftInverse f := by
@@ -51,7 +52,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       use g
       intro a
       apply hf
-      true_simp? [g,g']
+      simp [g,g']
     have : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b := by
       /- exactly L10_Auxiliary, now without hints -/
       obtain ⟨a₀⟩ := hA

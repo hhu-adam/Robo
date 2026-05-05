@@ -41,7 +41,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
   automatisch geschehen."
   -/
   Hint "Branching `n = 0`,`n ≠ 0`, Try `simp`"
-  true_simp?
+  simp
   -- Hint "**Du**: Ah und jetzt falls `n ≠ 0`."
   Hint "Case `n ≠ 0`"
   Branch
@@ -53,7 +53,7 @@ Statement Nat.pos_iff_ne_zero (n : ℕ) : 0 < n ↔ n ≠ 0 := by
     simp?
   constructor
   intro
-  true_simp?
+  simp
   intro
   -- Hint "**Robo**: Warte! Für den Rest zitieren wir einfach ein anderes Lemma: `Nat.suc_pos`."
   Hint "Try `Nat.suc_pos`"

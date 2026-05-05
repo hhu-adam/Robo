@@ -8,6 +8,7 @@ Title "" -- "Bild/Urbild"
 
 -- Introduction "Arapuka diktiert euch noch eine Aufgabe."
 Introduction "Intro Samarkand L02"
+attribute [game_simp] Function.comp_apply mem_image exists_exists_and_eq_and
 
 Statement {A B C : Type} (f : A → B) (g : B → C) : image (g ∘ f) = (image g) ∘ (image f) := by
   /-
@@ -61,7 +62,7 @@ example : image f = fun S ↦ f '' S := by
   "
   -/
   Hint (hidden := true) "This can be simplified"
-  true_simp?
+  simp
 
 NewDefinition Set.image Set.preimage
 

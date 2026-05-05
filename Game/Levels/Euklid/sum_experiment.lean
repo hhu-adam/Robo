@@ -21,7 +21,7 @@ example (n : ℕ) : Finset ℕ := by
 
 example (d : ℕ) : d ∉ range d := by
   --exact not_mem_range_self
-  true_simp?
+  simp
 
 
 -- Finset.range allows a fairly natural formulation of the arithmetic sum exercise without any casts:
@@ -29,12 +29,12 @@ example (d : ℕ) : d ∉ range d := by
 theorem arithmetic_sum (n : ℕ) :
     2 * (∑ i ∈ range (n+1), i) = n * (n + 1) := by
     induction' n with d hd
-    · true_simp?
+    · simp
     · rw [range_add_one]
       rw [sum_insert]
       · rw [mul_add, hd]
         ring
-      · true_simp?
+      · simp
 
 
 -- Finset.range also allows the following alternative proof with erase instead of insert:
@@ -48,14 +48,14 @@ lemma Finset.range_erase (d : ℕ) : (range (d + 1)).erase d = range d := by
 theorem arithmetic_sum' (n : ℕ) :
     2 * (∑ i ∈ range (n+1), i) = n * (n + 1) := by
     induction' n with d hd
-    · true_simp?
+    · simp
     · --have h : d + 1 ∈ range (d + 1 + 1) := by
-      --  true_simp?
+      --  simp
       rw [←add_sum_erase]
       rw [range_erase]
       rw [mul_add, hd]
       ring
-      true_simp?
+      simp
 
 -- Icc also allows an even more natural formulation – no need for "n+1" in the formulation of the sum
 -- (but proof is one simp longer than for range):
@@ -63,13 +63,13 @@ theorem arithmetic_sum' (n : ℕ) :
 theorem arithmetic_sum'' (n : ℕ) :
     2 * (∑ i ∈ Icc 0 n, i) = n * (n + 1) := by
     induction' n with d hd
-    · true_simp?
+    · simp
     · rw [← Icc_insert_succ_right]
       -- or rw [← Icc_insert_succ_right], but as above is more general, see theorem zero_sum
       · rw [sum_insert]
         · rw [mul_add, hd]
           ring
-        · true_simp?
+        · simp
       · simp  --or linarith
 
 
@@ -78,8 +78,8 @@ theorem arithmetic_sum'' (n : ℕ) :
 theorem zero_sum (n : ℕ) :
     ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     induction' n with d hd
-    · true_simp?
-    · true_simp?
+    · simp
+    · simp
       rw [← Icc_insert_succ_right]
       · rw [sum_insert]
         · have : (-1 : ℤ)  + -↑d  = -↑d - 1 := by
@@ -89,7 +89,7 @@ theorem zero_sum (n : ℕ) :
           · rw [sum_insert]
             · rw [hd]
               ring
-            · true_simp?
+            · simp
           · linarith
-        · true_simp?
+        · simp
       · linarith

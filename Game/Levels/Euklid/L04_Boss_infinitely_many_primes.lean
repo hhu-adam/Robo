@@ -29,6 +29,7 @@ Introduction "Intro Euklid L04"
 
 open Finset
 namespace Nat
+attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq lt_add_iff_pos_left gt_iff_lt mem_erase ne_eq not_true_eq_false false_and not_false_eq_true
 
 Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   /-
@@ -51,11 +52,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       have : 0 < prod  := by
         apply Finset.prod_pos
         intro p
-        true_simp? [all_primes]
+        simp [all_primes]
         intro h
         rw [prime_def] at h
         linarith
-      true_simp? [new_prime]
+      simp [new_prime]
       assumption
     apply exists_prime_and_dvd
     linarith
@@ -68,11 +69,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       /- slightly longer version that uses prod_insert: -/
       simp[prod]
       have : p ∈ all_primes := by
-        true_simp? [all_primes]
+        simp [all_primes]
         assumption
       rw[← Finset.insert_erase this]
       apply Finset.prod_insert
-      true_simp?
+      simp
       /- shorter, older version that used mul_prod_erase: -/
       /-
       symm
@@ -85,7 +86,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
     -- … so it cannot be divisible by p:
     apply not_dvd_of_lt_of_lt_mul_succ (n := p) (k:=q) (m := p*q+1)
     · linarith
-    · true_simp? [prime_def] at hp
+    · simp [prime_def] at hp
       linarith
   -- Now we have a contradiction:
   obtain ⟨p, hp, h_dvd⟩ := h_exists_prime_factor

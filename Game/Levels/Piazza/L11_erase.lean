@@ -22,6 +22,7 @@ Fin erklärt sich folgendermaßen.
 Introduction "Intro Piazza L11"
 
 open Set
+attribute [game_simp] Finset.mem_erase ne_eq Finset.mem_sdiff Finset.mem_singleton
 
 Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
   /-
@@ -36,7 +37,7 @@ Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
   Hint "`Finset` here means that `A` belongs to the finite subsets of ℕ.
   Left it states `A` without `a` and on the right it also says `A` without `a`"
   ext
-  true_simp?
+  simp
   tauto
 
 TheoremTab "Set"

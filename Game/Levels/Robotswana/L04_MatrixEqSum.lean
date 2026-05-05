@@ -30,6 +30,7 @@ every $(n × n)$ matrix $A$ over $\mathbb{R}$ an be expressed as
 $$A = \sum_{i=0}^{n-1}\sum_{j=0}^{n-1} A_{ij} \cdot E(i, j)$$
 more generally, use `matrix_eq_sum_single` for $(m × n)$ matrices over any $R$ -/
 TheoremDoc Matrix.matrix_eq_sum_ebasis as "matrix_eq_sum_ebasis" in "Matrix"
+attribute [game_simp] smul_single smul_eq_mul mul_one
 
 Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     A = ∑ i : Fin n, ∑ j : Fin n, (A i j) • E i j := by
@@ -56,10 +57,10 @@ Statement Matrix.matrix_eq_sum_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) :
     **Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
     -/
     Hint "Repeat proof from first level"
-    true_simp?
+    simp
     /- should now be the same proof state as after
        the `simp [Matrix.smul_ebasis] in the next line -/
-  true_simp? [Matrix.smul_ebasis] -- Lvl 1
+  simp [smul_ebasis] -- Lvl 1
   /-
   Hint "**Robo**: Ach ja!  So wie es jetzt hier steht, kenne ich die Aussage aus meiner Bibliothek.
   Das ist genau `apply matrix_eq_sum_single`.

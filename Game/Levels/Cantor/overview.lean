@@ -7,7 +7,7 @@ open Function Set
 -/
 example : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
   unfold IsFixedPt
-  true_simp? -- or tauto, but simp is better, because it can be applied "at h"
+  simp -- or tauto, but simp is better, because it can be applied "at h"
 
 /- L06: … -/
 
@@ -24,11 +24,11 @@ example {A : Type} (f : A → A) (h : f ∘ f = f) :
     obtain ⟨a, ha⟩ := hx
     rw [← ha]
     unfold fixedPoints IsFixedPt
-    true_simp? --or rw [mem_setOf]
+    simp --or rw [mem_setOf]
     simp [comp_apply] at h
     rw [h]
   · intro x hx
-    true_simp?
+    simp
     use x
     apply hx
 
@@ -51,7 +51,7 @@ theorem cantor_diagonal {A Y : Type} (f : A → A → Y) (hsurj : Surjective f) 
   use (f a a)
   -- from here, repeat **L08**
   unfold fixedPoints IsFixedPt
-  true_simp?
+  simp
   apply congr_fun at ha
   specialize ha a
   simp [c] at ha  -- optional
@@ -67,7 +67,7 @@ example {A : Type} : ∀ (f : A → Set A), ¬ Surjective f := by
   specialize h (fun A ↦ ¬ A) -- or specialize h Not
   obtain ⟨a, hA⟩ := h
   unfold fixedPoints IsFixedPt at hA
-  true_simp? at hA
+  simp at hA
 
 /- L11 -/
 open Nat
@@ -78,7 +78,7 @@ example (f : ℕ → ℕ → ℕ) : ∃ (g : ℕ → ℕ), ∀ (n : ℕ), f n �
     specialize h succ
     obtain ⟨n, hn⟩ := h
     unfold fixedPoints IsFixedPt at hn
-    true_simp? at hn
+    simp at hn
   unfold Surjective at h
   push Not at h
   assumption

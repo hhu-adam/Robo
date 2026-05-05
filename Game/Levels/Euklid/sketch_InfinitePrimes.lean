@@ -45,7 +45,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
         assumption
       rw[← Finset.insert_erase this]
       apply Finset.prod_insert
-      true_simp?
+      simp
       /- shorter, older version that uses mul_prod_erase: -/
       /-
       symm

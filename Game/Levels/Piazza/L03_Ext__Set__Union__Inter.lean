@@ -12,6 +12,7 @@ Title ""
 Introduction "Intro Piazza L03"
 
 open Set
+attribute [game_simp] mem_inter_iff mem_union
 
 Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   /-
@@ -37,7 +38,7 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
   -- Hint "**Robo**:  Und jetzt wieder `simp`."
   Hint "Use `simp` again"
-  true_simp? -- simp only [mem_inter_iff, mem_union]
+  simp -- simp only [mem_inter_iff, mem_union]
   /-
   Hint "
     **Du**:  Was genau macht `simp` denn eigentlich?

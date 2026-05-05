@@ -15,6 +15,7 @@ Er gibt euch noch eine Aufgabe.
 Introduction "Intro Vieta L07"
 
 open Function Set Nat
+attribute [game_simp] cast_nonneg reduceIte Int.toNat_natCast
 
 Statement {A : Type} (f : ℕ → A) :
     ∃ g : ℤ → A, ∀ n : ℕ, (f n = g n) := by
@@ -42,7 +43,7 @@ Statement {A : Type} (f : ℕ → A) :
   Hint (strict := true) "Insert `g` via `use`"
   use g
   intro n
-  true_simp? [g] -- TODO: There's a tiny bit magic in this step.
+  simp [g] -- TODO: There's a tiny bit magic in this step.
 
 
 NewDefinition toNat

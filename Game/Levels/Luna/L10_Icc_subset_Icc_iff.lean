@@ -23,6 +23,8 @@ TheoremDoc Finset.Icc_subset_Icc_iff as "Icc_subset_Icc_iff" in "≤"
 -- Note that mathlib's theorem is more general; here we restrict to ℕ
 
 namespace Finset
+attribute [game_simp] mem_Icc and_imp
+
 Statement Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) :
 a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ ≤ b₂) := by
   -- unfold Icc -- optional
@@ -33,7 +35,7 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
   -/
   Hint "Try using `subset_iff` and if nothing else helps, `simp`"
   rw [subset_iff]
-  true_simp?
+  simp
   intro h₁
   -- omega -- still fails here
   constructor

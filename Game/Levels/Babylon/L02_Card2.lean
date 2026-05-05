@@ -11,11 +11,12 @@ Title ""
 Introduction "Ihr schaut euch zusammen den nächsten Turm an."
 -/
 Introduction "Intro Babylon L02"
+attribute [game_simp] sum_const smul_eq_mul
 
 Statement (I : Finset ℕ) : ∑ i ∈ I, 2 = 2 * card I := by
   /-
   Hint (hidden := true) "**Du**:  Wieder `simp`?"
   -/
   Hint (hidden := true) "Again try using `simp`"
-  true_simp?
+  simp
   ring

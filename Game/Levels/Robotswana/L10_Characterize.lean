@@ -45,6 +45,7 @@ open Nat Matrix Finset
 
 /---/
 TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
+attribute [game_simp] mul_one
 
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :
@@ -73,7 +74,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
       **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
   -/
   Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
-  true_simp? [one_on_diag_ebasis h₁ h₂] -- Lvl 9
+  simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
   -- Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
   Hint (hidden := true) "Observe equality"
   rfl

@@ -13,6 +13,7 @@ Introduction
 Introduction "Intro Babylon L07"
 
 open Finset
+attribute [game_simp] CharP.cast_eq_zero neg_zero Icc_self sum_singleton Nat.cast_add Nat.cast_one neg_add_rev Int.reduceNeg mem_Icc le_sub_self_iff Int.reduceLE tsub_le_iff_right false_and not_false_eq_true add_neg_le_iff_le_add add_le_iff_nonpos_right and_false
 
 Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     /-
@@ -26,8 +27,8 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     -/
     Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_right_eq_Icc_add_one`, `insert_Icc_left_eq_Icc_sub_one`"
     induction n with d hd
-    · true_simp?
-    · true_simp?
+    · simp
+    · simp
       rw [← insert_Icc_right_eq_Icc_add_one]
       /-
       Hint (hidden := true) "
@@ -57,10 +58,10 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           · rw [sum_insert]
             · rw [hd]
               ring
-            · true_simp?
+            · simp
           · --omega -- fails; omega appears to treat ↑d as a random integer rather than a natural number
             linarith
-        · true_simp?
+        · simp
       · linarith
 
 TheoremTab "∑ Π"

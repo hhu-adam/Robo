@@ -30,6 +30,7 @@ TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 -- This would also easily work as a sum in ℚ,
 -- and BOSS level would even be easier to prove in ℚ,
 -- but cannot get initial conversion to ℚ to work!
+attribute [game_simp] Icc_self sum_singleton CharP.cast_eq_zero one_div mul_zero zero_add mul_one Nat.cast_add Nat.cast_one mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false not_false_eq_true
 
 Statement arithmetic_sum (n : ℕ) :
      (∑ i ∈ Icc 0 n , i : ℚ) = 1/2  * n * (n + 1) := by
@@ -59,7 +60,7 @@ Statement arithmetic_sum (n : ℕ) :
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   -/
   Hint "You can skip induction start by using `simp`"
-  true_simp?
+  simp
   /-
   Hint "**Robo**: Jetzt willst du das Interval $[0, {d}+1]$, über das summiert wird, aufspalten in $[0,{d}]$ und ${d}+1$.
     Dazu könntest du das Lemma `insert_Icc_right_eq_Icc_add_one` verwenden, das wir schon gesehen hatten.
@@ -92,9 +93,9 @@ Statement arithmetic_sum (n : ℕ) :
   "
   -/
   Hint "The rest is simple computation solvable by `simp` and `ring`"
-  true_simp?
+  simp
   ring
-  true_simp?
+  simp
   linarith
 
 NewTactic induction

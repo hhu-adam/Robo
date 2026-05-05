@@ -13,6 +13,7 @@ Wieder ein Pfeil.  Und noch eine Aufgabe.
 "
 -/
 Introduction "Intro Vieta L03"
+attribute [game_simp] sub_lt_self_iff zero_lt_one
 
 Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   /-
@@ -32,7 +33,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   intro x
   -- Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
   Hint (hidden := true) "Try simplification"
-  true_simp? [f]
+  simp [f]
   -- linarith
 
 TheoremTab "Function"

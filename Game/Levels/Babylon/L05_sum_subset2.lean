@@ -8,6 +8,7 @@ Title ""
 Introduction ""
 
 open Finset Nat
+attribute [game_simp] filter_subset mem_filter not_and not_even_iff_odd Int.reduceNeg sum_const Int.nsmul_eq_mul
 
 Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I | Even i} := by
   /-
@@ -52,8 +53,8 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       Hint "Try `sum_subset` from the other side or `symm` beforehand"
     symm
     apply sum_subset
-    · true_simp?
-    · true_simp?
+    · simp
+    · simp
       intro i h hI
       apply hI at h
       rw [Odd.neg_pow]
@@ -68,7 +69,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       -/
       Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
       intro i hi
-      true_simp? at hi
+      simp at hi
       obtain ⟨hI, heven⟩ := hi
       rw [Even.neg_pow]
       ring
@@ -80,7 +81,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     -/
     Hint "Now oyu can use `sum_congr`"
     apply sum_congr   -- introduced above
-    · true_simp?
+    · simp
     · assumption
     /-
     Hint (hidden := true) "
@@ -88,7 +89,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     "
     -/
     Hint (hidden := true) "Try out `simp` again"
-    true_simp?
+    simp
     ring
 
 TheoremTab "∑ Π"

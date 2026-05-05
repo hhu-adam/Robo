@@ -14,6 +14,7 @@ Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufga
 Introduction "Intro Epo L01"
 
 open Function
+attribute [game_simp] sub_add_cancel
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 1
@@ -28,7 +29,7 @@ Statement :
   intro y
   use y-1
   Branch
-    true_simp? [f]
+    simp [f]
   ring
 
 NewDefinition Function.Surjective

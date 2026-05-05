@@ -19,6 +19,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L06"
 
 open Function Set
+attribute [game_simp] neg_inj
 
 Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     IsFixedPt f x ↔ IsFixedPt f (- x) := by
@@ -40,7 +41,7 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
   · intro h
     unfold IsFixedPt at h
     rw [h_odd x] at h
-    true_simp? at h
+    simp at h
     --rw [neg_inj] at h
     assumption
 

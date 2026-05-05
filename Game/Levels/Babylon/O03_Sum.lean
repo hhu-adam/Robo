@@ -46,7 +46,7 @@ Statement (n : ℕ) : ∑ i : Fin n, ((i: ℕ) + 1) = n + (∑ i : Fin n, (i:ℕ
   `simp` zu `n` vereinfacht werden."
   -/
   Hint "Try `simp`"
-  true_simp?
+  simp
   /-
   Hint "**Robo**: Bis auf Umordnung sind jetzt beide Seiten gleich!
 

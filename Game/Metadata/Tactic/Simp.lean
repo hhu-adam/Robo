@@ -14,7 +14,8 @@ macro_rules
   | `(tactic| simp? $loc:location)           => `(tactic| try simp? only [game_simp] $loc:location)
   | `(tactic| simp? [$args,*] $loc:location) => `(tactic| try simp? only [game_simp, $args,*] $loc:location)
 
-/- tactic for game author -/
+/- tactics for game author -- to be used in development phase
+   output is shown when executing `lake build`               -/
 macro "true_simp?" : tactic
   => `(tactic| simp? (config := {}))
 macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" : tactic
@@ -23,6 +24,8 @@ macro "true_simp?" loc:Lean.Parser.Tactic.location : tactic
   => `(tactic| simp? (config := {}) $loc:location)
 macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" loc:Lean.Parser.Tactic.location : tactic
   => `(tactic| simp? (config := {}) [$args,*] $loc:location)
+
+
 
 /-
 # Question

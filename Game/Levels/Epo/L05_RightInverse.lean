@@ -8,6 +8,7 @@ Title ""
 Introduction ""
 
 open Function
+attribute [game_simp] sub_add_sub_cancel
 
 Statement :
     let f : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (m + n, m + 2 * n)
@@ -26,7 +27,7 @@ Statement :
   let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (2 * m - n, n - m)
   use g
   intro m
-  true_simp? [g, f]
+  simp [g, f]
   ring
 
 NewDefinition Function.HasRightInverse

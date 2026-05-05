@@ -20,15 +20,16 @@ open Finset
 
 -- open BigOperators
 
+attribute [game_simp] Icc_self sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow Nat.cast_add Nat.cast_one mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false sum_insert one_div
 
 Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i : ℚ)^2 := by
   /- Hint "**Du**: Naja. Das wird schon klappen … " -/
   Hint "this should work"
   induction m with n n_ih
-  · true_simp?
+  · simp
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
-      · true_simp?
+      · simp
         rw [n_ih]
         /-
         Hint (hidden := true) "
@@ -37,9 +38,9 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
         -/
         Hint (hidden := true) "Use `arithmetic_sum` as its already proven"
         rw [arithmetic_sum]
-        true_simp?
+        simp
         ring
-      · true_simp?
+      · simp
     · linarith
 
 TheoremTab "∑ Π"

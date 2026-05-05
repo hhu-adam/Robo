@@ -45,6 +45,8 @@ open Finset
 
 /---/
 TheoremDoc Matrix.ebasis_diag_sum_eq_one as "ebasis_diag_sum_eq_one" in "Matrix"
+attribute [game_simp] subset_univ sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul mem_singleton zero_smul not_false_eq_true one_apply_ne
+--attribute [game_simp] sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul
 
 Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
   /-
@@ -93,7 +95,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   -/
   Hint "Explain `1` and values of `1 {i} j` for all `j ≠ {i}` i.e. `j = {i}`. Try `have h : \{{i}} ⊆ univ`"
   have h : {i} ⊆ univ
-  · true_simp?
+  · simp
   -- Hint "**Robo**: Sehr gut.  Jetzt kannst du nämlich `sum_subset` anwenden."
   Hint "Now `sum_subset` can be applied"
   rw [← sum_subset h]
@@ -102,7 +104,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   · Hint "Explain simplification of `1 {i} {i}` and `1 • _`"
     -- Hint (hidden := true) "**Robo**: `simp` kann man immer versuchen …"
     Hint (hidden := true) "`simp` is always available"
-    true_simp?
+    simp
   · intro x h₁ h₂
     clear h₁ -- not needed
     /-
@@ -124,7 +126,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     have h₃ : i ≠ x
     -- · Hint "**Du**: Als erstes würde ich mal schauen, ob sich `{h₂}` vereinfacht."
     · Hint "Try to simplify `{h₂}`."
-      true_simp? at h₂
+      simp at h₂
       -- TODO : `tauto` already solves this.
       /-
       Hint "**Du**: Hmm, jetzt ist das erstmal verdreht.
@@ -137,7 +139,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
       symm
       assumption
     Branch
-      true_simp? [h₃]
+      simp [h₃]
     /-
     Hint "**Du**: Wie setze ich denn jetzt die Definition für `1 {i} {x}` ein?
 
@@ -148,7 +150,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     -- Hint "**Robo**: Und da das falsch ist, kannst du mit `rw` und `if_neg` weiterkommen."
     Hint "Try `rw` and `if_neg`"
     rw [if_neg h₃]
-    true_simp?
+    simp
 
 /---/
 TheoremDoc Matrix.one_apply as "one_apply" in "Matrix"

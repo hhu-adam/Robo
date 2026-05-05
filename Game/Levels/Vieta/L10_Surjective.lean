@@ -22,6 +22,7 @@ Und da saust auch schon wieder ein Pfeil an euch vorbei.
 Introduction "Intro Vieta L10"
 
 open Function Nat
+attribute [game_simp] comp_apply succ_eq_add_one
 
 Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
     (hs : f ∘ g = succ ∘ f) : ∀ n, ∃ a, f a = n := by
@@ -64,7 +65,7 @@ Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
     Hint (hidden := true) "Try `congr_fun` to rewrite `{hs}` to `∀ x, ({f} ∘ {g}) x = (succ ∘ {f})`"
     apply congr_fun at hs
     specialize hs b
-    true_simp? at hs
+    simp at hs
     rw [hs]
     rw [hb]
 

@@ -35,6 +35,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L03"
 
 open Function Set
+attribute [game_simp] abs_nonneg abs_eq_self
 
 Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
 -- The function here is simply called `abs` in mathlib,
@@ -68,12 +69,12 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
     clear h
     /- Hint "**Robo**: `simp` kann man immer mal probieren." -/
     Hint "`simp` can used always"
-    true_simp? -- only [abs_nonneg]
+    simp -- only [abs_nonneg]
   · intro h
     -- rw [abs_of_nonneg h]
     /- Hint (hidden := true) "**Robo**: `simp` kann man immer mal probieren." -/
     Hint "`simp` can used always"
-    true_simp?
+    simp
     assumption
 
 NewDefinition Function.IsFixedPt absValue

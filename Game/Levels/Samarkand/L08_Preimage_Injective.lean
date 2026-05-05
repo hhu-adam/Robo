@@ -18,6 +18,7 @@ open Function
 TheoremDoc Set.preimage_injective as "preimage_injective" in "Function"
 
 namespace Set
+attribute [game_simp] mem_singleton_iff mem_preimage not_forall not_not preimage_empty ne_eq singleton_ne_empty not_false_eq_true
 
 Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
   /-
@@ -48,20 +49,20 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       symm at this
       rw [eq_empty_iff_forall_notMem] at this
       apply this b
-      true_simp?
+      simp
     intro hinj y
     have h : f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by -- see L06_PreimageNonempty
       unfold Ne
       rw [eq_empty_iff_forall_notMem]
-      true_simp?
+      simp
     rw [← h]
     -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(
     have g : f ⁻¹' ∅ = ∅ := by
-      true_simp?
+      simp
     rw [← g]
     -- or: `rw [← preimage_empty]`
     rw [Injective.ne_iff hinj]
-    true_simp?
+    simp
   · intro h_surj
     intro s s' hs
     apply congr_arg (image f) at hs

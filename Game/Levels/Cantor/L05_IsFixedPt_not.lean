@@ -19,6 +19,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L05"
 
 open Function Set
+attribute [game_simp] eq_iff_iff not_iff_self exists_const not_false_eq_true
 
 Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
   /-
@@ -36,7 +37,7 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
     by_contra h
     obtain ⟨P, hP⟩ := h
     unfold IsFixedPt at hP
-    true_simp? at hP -- a bit magical
+    simp at hP -- a bit magical
   Branch
     push Not
     intro P h
@@ -46,4 +47,4 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
       simp only [not_iff_self] at h
     tauto
   unfold IsFixedPt
-  true_simp? -- or: tauto, but `simp` is better as we want to repeat this proof with `true_simp? at` later
+  simp -- or: tauto, but `simp` is better as we want to repeat this proof with `simp at` later

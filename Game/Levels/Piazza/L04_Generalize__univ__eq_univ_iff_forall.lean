@@ -17,6 +17,7 @@ open Nat
 namespace Set
 
 #check  (univ : Set ℕ)
+attribute [game_simp] mem_union mem_setOf_eq
 
 Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   /-
@@ -54,11 +55,11 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   /-
   Branch
     ext
-    true_simp?
+    simp
   -/
   rw [eq_univ_iff_forall]
   Hint "Try via `simp` or directly `simp [eq_univ_iff_forall]`"
-  true_simp?
+  simp
   intro n
   Hint "One option: `by_cases h : Even {n}`.
   But in any case, will need `not_odd_iff_even`

@@ -18,6 +18,8 @@ Introduction "Intro Samarkand L04"
 TheoremDoc Function.Surjective.image_preimage as "Surjective.image_preimage" in "Function"
 
 namespace Function
+attribute [game_simp] mem_image mem_preimage
+
 Statement Surjective.image_preimage {A B : Type} {f : A → B} (hf : Surjective f) (T : Set B) :
 f '' (f ⁻¹' T) = T := by
   /-
@@ -37,7 +39,7 @@ f '' (f ⁻¹' T) = T := by
     ```
    and additional assumption that `f` surjectiv"
   ext b
-  true_simp?
+  simp
   constructor
   · apply image_preimage_subset -- Lvl 1
   · intro hb
