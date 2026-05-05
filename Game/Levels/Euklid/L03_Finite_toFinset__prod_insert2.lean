@@ -70,7 +70,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     Hint "`Finset.prod_pos` is helpful here"
     apply Finset.prod_pos
     intro p
-    simp [all_primes]
+    true_simp? [all_primes]
     intro h
     rw [prime_def] at h
     linarith
@@ -85,12 +85,12 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
       -/
       Hint (hidden := true) "If `simp` alone does not work, try giving `simp`
       the definition of `all_primes`. Try `simp [all_primes]`"
-      simp [all_primes]
+      true_simp? [all_primes]
       assumption
     rw [← insert_erase hp']
     rw [prod_insert]
     · use ∏ x ∈ all_primes.erase p, x
-    · simp
+    · true_simp?
 
 /-- [Doc.Theorem] Set.Finite.toFinset:
 Given `A`, `A : Set T` with `h : Set.Finite A`, `Set.Finite A`,

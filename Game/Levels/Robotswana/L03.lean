@@ -24,6 +24,6 @@ Statement Matrix.E.mul_same {n : ℕ} (i j k : Fin n) : E i j * E j k = E i k  :
   -- Hint "**Du**:  Sieht auch richtig aus."
   Hint "Seems to be correct"
   unfold E
-  simp
+  true_simp?
 
 TheoremTab "Matrix"

@@ -53,7 +53,7 @@ Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   specialize hf succ
   obtain ⟨n, hn⟩ := hf
   unfold fixedPoints IsFixedPt at hn
-  simp at hn -- dsimp [IsFixedPt] at hn
+  true_simp? at hn -- dsimp [IsFixedPt] at hn
   --simp only [Nat.succ_ne_self] at hn
 
 

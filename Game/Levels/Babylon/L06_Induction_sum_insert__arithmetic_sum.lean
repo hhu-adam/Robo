@@ -59,7 +59,7 @@ Statement arithmetic_sum (n : ℕ) :
   **Robo**: Diesen kannst du oft mit `simp` abkürzen!"
   -/
   Hint "You can skip induction start by using `simp`"
-  simp
+  true_simp?
   /-
   Hint "**Robo**: Jetzt willst du das Interval $[0, {d}+1]$, über das summiert wird, aufspalten in $[0,{d}]$ und ${d}+1$.
     Dazu könntest du das Lemma `insert_Icc_right_eq_Icc_add_one` verwenden, das wir schon gesehen hatten.
@@ -92,9 +92,9 @@ Statement arithmetic_sum (n : ℕ) :
   "
   -/
   Hint "The rest is simple computation solvable by `simp` and `ring`"
-  simp
+  true_simp?
   ring
-  simp
+  true_simp?
   linarith
 
 NewTactic induction

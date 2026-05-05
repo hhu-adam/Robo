@@ -33,7 +33,7 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
   -/
   Hint "Try using `subset_iff` and if nothing else helps, `simp`"
   rw [subset_iff]
-  simp
+  true_simp?
   intro h₁
   -- omega -- still fails here
   constructor

@@ -3,26 +3,26 @@ register_simp_attr game_simp
 
 /- tatics for player -/
 macro_rules
-  | `(tactic| simp)                   => `(tactic| try simp only [game_simp])
-  | `(tactic| simp [$args,*])         => `(tactic| try simp only [game_simp, $args,*])
-  | `(tactic| simp at $loc)           => `(tactic| try simp only [game_simp] at $loc)
-  | `(tactic| simp [$args,*] at $loc) => `(tactic| try simp only [game_simp, $args,*] at $loc)
+  | `(tactic| simp)                          => `(tactic| try simp only [game_simp])
+  | `(tactic| simp [$args,*])                => `(tactic| try simp only [game_simp, $args,*])
+  | `(tactic| simp $loc:location)            => `(tactic| try simp only [game_simp] $loc:location)
+  | `(tactic| simp [$args,*] $loc:location)  => `(tactic| try simp only [game_simp, $args,*] $loc:location)
 
 macro_rules
-  | `(tactic| simp?)                   => `(tactic| try simp? only [game_simp])
-  | `(tactic| simp? [$args,*])         => `(tactic| try simp? only [game_simp, $args,*])
-  | `(tactic| simp? at $loc)           => `(tactic| try simp? only [game_simp] at $loc)
-  | `(tactic| simp? [$args,*] at $loc) => `(tactic| try simp? only [game_simp, $args,*] at $loc)
+  | `(tactic| simp?)                         => `(tactic| try simp? only [game_simp])
+  | `(tactic| simp? [$args,*])               => `(tactic| try simp? only [game_simp, $args,*])
+  | `(tactic| simp? $loc:location)           => `(tactic| try simp? only [game_simp] $loc:location)
+  | `(tactic| simp? [$args,*] $loc:location) => `(tactic| try simp? only [game_simp, $args,*] $loc:location)
 
 /- tactic for game author -/
 macro "true_simp?" : tactic
   => `(tactic| simp? (config := {}))
 macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" : tactic
   => `(tactic| simp? (config := {}) [$args,*])
-macro "true_simp?" "at" loc:Lean.Parser.Tactic.locationHyp : tactic
-  => `(tactic| simp? (config := {}) at $loc)
-macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" "at" loc:Lean.Parser.Tactic.locationHyp : tactic
-  => `(tactic| simp? (config := {}) [$args,*] at $loc)
+macro "true_simp?" loc:Lean.Parser.Tactic.location : tactic
+  => `(tactic| simp? (config := {}) $loc:location)
+macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" loc:Lean.Parser.Tactic.location : tactic
+  => `(tactic| simp? (config := {}) [$args,*] $loc:location)
 
 /-
 # Question

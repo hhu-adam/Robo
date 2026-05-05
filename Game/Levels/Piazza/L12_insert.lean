@@ -16,7 +16,7 @@ open Set
 
 Statement (A : Finset ℕ) (a : ℕ) :  insert a A = A ∪ {a} := by
   ext
-  simp
+  true_simp?
 
 TheoremTab "Set"
 

@@ -59,7 +59,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     use k * ∏ x ∈ erase A a, x
     rw [hk]
     ring
-  simp
+  true_simp?
 
 /---/
 TheoremDoc Finset.prod_insert as "prod_insert" in "∑ Π"

@@ -17,5 +17,5 @@ Statement (I : Finset ℕ) : ∑ i ∈ I, 2 = 2 * card I := by
   Hint (hidden := true) "**Du**:  Wieder `simp`?"
   -/
   Hint (hidden := true) "Again try using `simp`"
-  simp
+  true_simp?
   ring

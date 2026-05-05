@@ -40,7 +40,7 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
   · intro h
     unfold IsFixedPt at h
     rw [h_odd x] at h
-    simp at h
+    true_simp? at h
     --rw [neg_inj] at h
     assumption
 

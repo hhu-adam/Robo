@@ -22,7 +22,7 @@ Statement (A B : Set ℕ) :
   ext i
   -- Hint (hidden := true) "**Robo**: Und jetzt natürlich wieder `simp`."
   Hint (hidden := true) "Perform `simp` again"
-  simp
+  true_simp?
   tauto
 
 NewDefinition SDiff

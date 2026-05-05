@@ -79,11 +79,11 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
     suffices : a ∉ f a
     · contradiction
     rw [ha] at h₁
-    simp at h₁ --or: rw [mem_setOf] at h₁
+    true_simp? at h₁ --or: rw [mem_setOf] at h₁
     assumption
   · apply h₁
     rw [ha]
-    simp --or: rw [mem_setOf]
+    true_simp? --or: rw [mem_setOf]
     assumption
 
 TheoremTab "Set"

@@ -23,6 +23,6 @@ Statement Matrix.E.mul_of_ne {n : ℕ} (i j : Fin n) {k l : Fin n} (h : j ≠ k)
   unfold E
   -- Hint (hidden := true) "**Robo**: Vergiss aber nicht, dass `simp` die Annahme `{h}` explizit braucht!"
   Hint (hidden := true) "Try `simp` with `{h}`"
-  simp [h]
+  true_simp? [h]
 
 TheoremTab "Matrix"

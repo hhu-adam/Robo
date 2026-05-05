@@ -48,20 +48,20 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       symm at this
       rw [eq_empty_iff_forall_notMem] at this
       apply this b
-      simp
+      true_simp?
     intro hinj y
     have h : f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by -- see L06_PreimageNonempty
       unfold Ne
       rw [eq_empty_iff_forall_notMem]
-      simp
+      true_simp?
     rw [← h]
     -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(
     have g : f ⁻¹' ∅ = ∅ := by
-      simp
+      true_simp?
     rw [← g]
     -- or: `rw [← preimage_empty]`
     rw [Injective.ne_iff hinj]
-    simp
+    true_simp?
   · intro h_surj
     intro s s' hs
     apply congr_arg (image f) at hs

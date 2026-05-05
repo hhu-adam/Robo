@@ -48,7 +48,7 @@ Statement : HasLeftInverse succ  := by
     -/
     Hint "[Hint wdpf] Try `n ↦ n - 1`"
   use (fun n ↦ n - 1)
-  simp [LeftInverse]
+  true_simp? [LeftInverse]
 
 /-
 Conclusion "

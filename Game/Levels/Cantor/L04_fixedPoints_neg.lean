@@ -45,21 +45,21 @@ Statement :
   "
   -/
   Hint (strict := true) (hidden := true) "Again try `simp`"
-  simp  -- uses `CharZero.neg_eq_self_iff` (scoped simp) and `setOf_eq_eq_singleton`
+  true_simp?  -- uses `CharZero.neg_eq_self_iff` (scoped simp) and `setOf_eq_eq_singleton`
   /-
   Branch
     rw [Subset.antisymm_iff]
   ext x
   constructor
   · intro h
-    simp at h
+    true_simp? at h
     assumption
     -- rw [mem_fixedPoints_iff] at h
   · intro h
-    simp at h --or: rw [mem_singleton_iff] at h
+    true_simp? at h --or: rw [mem_singleton_iff] at h
     rw [h]
     -- rw [mem_fixedPoints_iff]
-    simp
+    true_simp?
 -/
 
 NewDefinition Function.fixedPoints

@@ -52,8 +52,8 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       Hint "Try `sum_subset` from the other side or `symm` beforehand"
     symm
     apply sum_subset
-    · simp
-    · simp
+    · true_simp?
+    · true_simp?
       intro i h hI
       apply hI at h
       rw [Odd.neg_pow]
@@ -68,7 +68,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       -/
       Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
       intro i hi
-      simp at hi
+      true_simp? at hi
       obtain ⟨hI, heven⟩ := hi
       rw [Even.neg_pow]
       ring
@@ -80,7 +80,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     -/
     Hint "Now oyu can use `sum_congr`"
     apply sum_congr   -- introduced above
-    · simp
+    · true_simp?
     · assumption
     /-
     Hint (hidden := true) "
@@ -88,7 +88,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     "
     -/
     Hint (hidden := true) "Try out `simp` again"
-    simp
+    true_simp?
     ring
 
 TheoremTab "∑ Π"

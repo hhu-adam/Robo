@@ -37,7 +37,7 @@ f '' (f ⁻¹' T) = T := by
     ```
    and additional assumption that `f` surjectiv"
   ext b
-  simp
+  true_simp?
   constructor
   · apply image_preimage_subset -- Lvl 1
   · intro hb

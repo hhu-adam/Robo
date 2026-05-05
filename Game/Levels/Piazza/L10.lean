@@ -26,7 +26,7 @@ Statement : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   -- "
   Hint (hidden := true) "Try `intro` again `SECOND`"
   intro hx
-  simp at *
+  true_simp? at *
   obtain h | h := hx
   · tauto -- or  left, assumption
   · right

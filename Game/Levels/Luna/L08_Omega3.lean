@@ -17,7 +17,7 @@ Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1
   intro h'
   -- Hint (hidden := true) "**Ritha**:  Probier unbedingt mal `simp at {h'}`."
   Hint (hidden := true) "Definitely use `simp at {h'}`"
-  simp at h'
+  true_simp? at h'
   omega
 
 Conclusion ""

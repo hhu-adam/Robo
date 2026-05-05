@@ -51,7 +51,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       use g
       intro a
       apply hf
-      simp [g,g']
+      true_simp? [g,g']
     have : ∀ b : B, ∃ a : A, f a = b ∨ ¬ ∃ a' : A , f a' = b := by
       /- exactly L10_Auxiliary, now without hints -/
       obtain ⟨a₀⟩ := hA

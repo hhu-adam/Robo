@@ -51,13 +51,13 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
   Hint "Start with `ext` or `Subset.antisymm_iff`"
   Branch
     rw [Subset.antisymm_iff]
-    simp
+    true_simp?
     constructor
     · assumption
     · intro a ha
       use a
   ext a
-  simp
+  true_simp?
   constructor
   · intro ⟨y, hy⟩
     rw [← hy]
@@ -65,7 +65,7 @@ Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     clear hy
     /- Hint (hidden := true) "**Robo**:  Hilft vielleicht `comp_apply`?  Oder `simp`?" -/
     Hint "Try either `comp_apply` or `simp`"
-    simp at h -- or: rw [comp_apply] at h
+    true_simp? at h -- or: rw [comp_apply] at h
     assumption
   · intro ha
     use a

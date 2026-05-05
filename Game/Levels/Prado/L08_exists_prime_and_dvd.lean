@@ -32,7 +32,7 @@ Statement : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   -/
   Hint "Apply `exists_prime_and_dvd` to prove existence of prime factor"
   apply exists_prime_and_dvd
-  simp
+  true_simp?
 
 
 /---/

@@ -33,7 +33,7 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
   Hint "Try `∃! a` to construct `a`, Try `use a` and `simp`"
   obtain ⟨a, ha⟩ := hb
   use a
-  simp -- TODO: can this be integrated into mathlib `use`?
+  true_simp? -- TODO: can this be integrated into mathlib `use`?
   constructor
   · assumption
   · intro a' ha'

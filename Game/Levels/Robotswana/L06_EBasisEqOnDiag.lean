@@ -68,7 +68,7 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     Hint (hidden := true) "Remind former results with `E i k = (E i j) * (E j k)`"
     trans f (E i j * E j i)
     · unfold E
-      simp
+      true_simp?
     /-
     · Hint (hidden := true) "**Robo**: Hast du das nicht alles gemacht, weil du `{h₁}` brauchen
       wolltest?
@@ -78,9 +78,9 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     · Hint (hidden := true) "Remind use of `{h₁}`"
       rw [h₁]
       unfold E
-      simp
+      true_simp?
   specialize h₁ (E i j) (E j i)
-  simp [E.mul_same] at h₁
+  true_simp? [E.mul_same] at h₁
   assumption
 
 TheoremTab "Matrix"

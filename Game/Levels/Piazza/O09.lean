@@ -21,7 +21,7 @@ open Set
 Statement (A B C : Set ℕ) :
     (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
   ext i
-  simp
+  true_simp?
   tauto
 
 /-- -/

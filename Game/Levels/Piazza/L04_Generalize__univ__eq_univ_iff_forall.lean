@@ -54,11 +54,11 @@ Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   /-
   Branch
     ext
-    simp
+    true_simp?
   -/
   rw [eq_univ_iff_forall]
   Hint "Try via `simp` or directly `simp [eq_univ_iff_forall]`"
-  simp
+  true_simp?
   intro n
   Hint "One option: `by_cases h : Even {n}`.
   But in any case, will need `not_odd_iff_even`

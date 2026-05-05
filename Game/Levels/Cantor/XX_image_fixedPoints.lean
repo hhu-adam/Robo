@@ -22,7 +22,7 @@ Statement (f : X → X) : f '' (fixedPoints f)  ⊆ fixedPoints f := by
     rw [← h₂]
     apply IsFixedPt.apply
     assumption
-  simp
+  true_simp?
   tauto
 
 

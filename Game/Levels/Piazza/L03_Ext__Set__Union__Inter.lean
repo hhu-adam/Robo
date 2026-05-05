@@ -37,7 +37,7 @@ Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
   -- Hint "**Robo**:  Und jetzt wieder `simp`."
   Hint "Use `simp` again"
-  simp -- simp only [mem_inter_iff, mem_union]
+  true_simp? -- simp only [mem_inter_iff, mem_union]
   /-
   Hint "
     **Du**:  Was genau macht `simp` denn eigentlich?

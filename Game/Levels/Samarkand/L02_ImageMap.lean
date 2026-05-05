@@ -61,7 +61,7 @@ example : image f = fun S ↦ f '' S := by
   "
   -/
   Hint (hidden := true) "This can be simplified"
-  simp
+  true_simp?
 
 NewDefinition Set.image Set.preimage
 

@@ -22,7 +22,7 @@ Statement : 9 ∈ {n : ℕ | Odd n} := by
   --  **Robo**:  Ich glaube, am einfachsten kommst du hier mit `simp` weiter.
   -- "
   Hint "The simplest method here is `simp`"
-  simp
+  true_simp?
   -- Hint (hidden := true) "
   --  **Robo**:  Erinner dich an `decide`.
   -- "

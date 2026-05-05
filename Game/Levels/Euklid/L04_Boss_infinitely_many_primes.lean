@@ -51,11 +51,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       have : 0 < prod  := by
         apply Finset.prod_pos
         intro p
-        simp[all_primes]
+        true_simp? [all_primes]
         intro h
         rw [prime_def] at h
         linarith
-      simp[new_prime]
+      true_simp? [new_prime]
       assumption
     apply exists_prime_and_dvd
     linarith
@@ -68,11 +68,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       /- slightly longer version that uses prod_insert: -/
       simp[prod]
       have : p ∈ all_primes := by
-        simp[all_primes]
+        true_simp? [all_primes]
         assumption
       rw[← Finset.insert_erase this]
       apply Finset.prod_insert
-      simp
+      true_simp?
       /- shorter, older version that used mul_prod_erase: -/
       /-
       symm
@@ -85,7 +85,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
     -- … so it cannot be divisible by p:
     apply not_dvd_of_lt_of_lt_mul_succ (n := p) (k:=q) (m := p*q+1)
     · linarith
-    · simp [prime_def] at hp
+    · true_simp? [prime_def] at hp
       linarith
   -- Now we have a contradiction:
   obtain ⟨p, hp, h_dvd⟩ := h_exists_prime_factor

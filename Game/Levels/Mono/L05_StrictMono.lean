@@ -66,7 +66,7 @@ Statement :
     -/
     Hint "Use `unfold` to look into definition of `StrictMono`"
     intro a b
-    simp
+    true_simp?
 
 /-- [Doc.Theorem] StrictMono.injective -/
 TheoremDoc StrictMono.injective as "StrictMono.injective" in "Function"

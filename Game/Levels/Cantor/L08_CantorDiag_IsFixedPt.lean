@@ -73,7 +73,7 @@ Statement {A Y : Type} {f : A → A → Y} {s : Y → Y}
     -/
     Hint "`f a a` was replaced by `s f a a`. It is probably necessary to rewrite the second
     appearnace of `f a a` in the goal. Try `nth_rw 2 [{ha}]`"
-    simp
+    true_simp?
   Branch
     nth_rw 2 [ha]
   apply congr_fun at ha

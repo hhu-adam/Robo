@@ -31,12 +31,12 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   -/
   Hint "Try solving $$ \\sum_\{i = 0}^n (2i + 1) = n^2 $$ by induction"
   induction n with d hd
-  · simp
+  · true_simp?
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
       · rw [hd]
         ring
-      · simp
+      · true_simp?
     · linarith
 
 TheoremTab "∑ Π"

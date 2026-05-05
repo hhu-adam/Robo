@@ -22,7 +22,7 @@ open Classical -- otherwise need `[h : DecidableEq A]` in the statement
 Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   insert a (Finset.erase s a) = s := by
   ext b
-  simp
+  true_simp?
   -- Hint (hidden := true) "
   --   **Fin**: Mach doch eine Fallunterscheidung, ob `{b} = a` ist oder nicht.
   --"
@@ -47,7 +47,7 @@ Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   by_cases heq : b = a
   · rw [heq]
     tauto
-  · simp [heq]
+  · true_simp? [heq]
 
 TheoremTab "Set"
 

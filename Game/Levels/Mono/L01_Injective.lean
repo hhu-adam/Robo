@@ -36,7 +36,7 @@ Statement :
     unfold Injective
   intro a b
   Branch
-    simp [f]
+    true_simp? [f]
   intro ha
   /-
   Hint (hidden := true)
@@ -44,7 +44,7 @@ Statement :
   Annahme `{ha}` vereinfachen."
   -/
   Hint (hidden := true) "Use `{f}` to simplify assumption `{ha}`"
-  simp [f] at ha
+  true_simp? [f] at ha
   assumption
 
 NewDefinition Function.Injective

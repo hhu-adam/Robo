@@ -26,7 +26,7 @@ Statement :
   let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (2 * m - n, n - m)
   use g
   intro m
-  simp [g, f]
+  true_simp? [g, f]
   ring
 
 NewDefinition Function.HasRightInverse

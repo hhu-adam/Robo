@@ -25,7 +25,7 @@ Statement {A B : Type} (f : A → B)  (y : B) :
   Hint "Explain that `b` is not empty iff `b` has pre-image. Remind of `eq_empty_iff_forall_notMem` that can be used after `unfold Ne`"
   unfold Ne
   rw [eq_empty_iff_forall_notMem]
-  simp
+  true_simp?
 
    /-
   Conclusion "

@@ -32,7 +32,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   intro x
   -- Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"
   Hint (hidden := true) "Try simplification"
-  simp [f]
+  true_simp? [f]
   -- linarith
 
 TheoremTab "Function"

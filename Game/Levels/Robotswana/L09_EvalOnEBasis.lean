@@ -107,16 +107,16 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     --  **Robo**: Der Pfeil `{h}` ist eine implizite Einbettung von `ℕ` in `ℝ`.
     --  Die entfernst du zum Beispiel mit `simp`."
     · Hint  "`{h}` is an implicid embedding of  `ℕ` in `ℝ`.  Try `simp`"
-      simp at h
+      true_simp? at h
       /-
       Hint "
       **Robo**:  Und jetzt willst du vermutlich `{h} : {n} = 0` in `{i} : Fin {n}` einsetzen,
       und feststellen, dass die Aussage trivial wird, weil es gar kein `{i}` in `Fin 0` gibt.
-      Zum Einsetzen kannst du in diesem Fall `simp [{h}] at {i}` benutzen.
+      Zum Einsetzen kannst du in diesem Fall `true_simp? [{h}] at {i}` benutzen.
       "
       -/
       Hint "Put `{h} : {n} = 0` into `{i} : Fin {n}` to show triviality because there is no `{i}` in `Fin 0`. Try `simp [{h}] at {i}`"
-      simp [h] at i
+      true_simp? [h] at i
       /-
       Hint "
       **Robo**: Und jetzt hilft dir vermutlich das Lemma `IsEmpty.false`,
@@ -154,7 +154,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       **Robo**: `simp [E]` kann das sicher komplett vereinfachen." -- TODO: Better hint
     -/
     · Hint "Try `simp [E]`"
-      simp [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
+      true_simp? [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
     -- · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
     · Hint (hidden := true ) "[Robotswana.L09] Hint: pull function into sum 1"
       /-
@@ -189,9 +189,9 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · Hint (hidden := true) "Try `ebasis_diag_sum_eq_one`"
         rw [ebasis_diag_sum_eq_one] -- Lvl 4
         rw [h₂]
-        simp
+        true_simp?
   · trans ∑ j : Fin n, f (E i i)
-    · simp
+    · true_simp?
     · trans ∑ j : Fin n, f (E j j )
       · apply congr_arg
         ext
@@ -203,13 +203,13 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
         -- · Hint (hidden := true) "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß `eq_sum_apply_diag_ebasis`."
         · Hint (hidden := true) "Use the result `eq_sum_apply_diag_ebasis`"
           rw [eq_sum_apply_diag_ebasis] -- Lvl 8
-          · simp
+          · true_simp?
           · assumption
         -- · Hint (hidden := true) "**Robo**: Probier mal `rw [{h₂}]`."
         · Hint (hidden := true) "Try out using `rw [{h₂}]`"
           rw [h₂]
-          simp
-  -- · simp -- previously needed for `nat_mul_inj'`
+          true_simp?
+  -- · true_simp? -- previously needed for `nat_mul_inj'`
 
 
 

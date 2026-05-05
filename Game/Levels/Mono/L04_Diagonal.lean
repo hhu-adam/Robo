@@ -48,7 +48,7 @@ Statement {A : Type} (n : ℕ) :
   Hint (hidden := true) "If unsure start with `unfold Injective`"
   --unfold Injective
   Branch
-    simp [diag]
+    true_simp? [diag]
     intro a b h
     -- Hint (hidden := true) "**Robo**:  Du könntest die Abbildungen in `{h}` auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
     Hint (hidden := true) "Evaluate mappings in `{h}` on element from `Fin (n + 1)`. `congr_fun` could help"

@@ -73,7 +73,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
       **Robo**: Nachschlagen kann ich gut! Das war `one_on_diag_ebasis`."
   -/
   Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
-  simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
+  true_simp? [one_on_diag_ebasis h₁ h₂] -- Lvl 9
   -- Hint (hidden := true) "**Robo**: Die beiden Seiten sind per Definition gleich!"
   Hint (hidden := true) "Observe equality"
   rfl

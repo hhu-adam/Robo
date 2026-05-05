@@ -58,7 +58,7 @@ example (p : ℕ) (hp : Prime p) (A : Finset ℕ): (∃ a ∈ A, p ∣ a) → p 
     · left
       assumption
     · assumption
-  · simp
+  · true_simp?
 
 /- Euklid 03:
    - `Set.Finite`
@@ -72,12 +72,12 @@ example (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), ∀ (p : ℕ), P
   intro p hp
   -- previous lemma would be useful now, but want to practise!
   have hp' : p ∈ all_primes := by
-    simp [all_primes]
+    true_simp? [all_primes]
     assumption
   rw [← insert_erase hp']
   rw [prod_insert]
   · use ∏ x ∈ all_primes.erase p, x
-  · simp
+  · true_simp?
 
 /- Euklid 04:  BOSS -/
 example : ¬ Set.Finite { p : ℕ | Prime p} := by
@@ -113,7 +113,7 @@ example : ¬ Set.Finite { p : ℕ | Prime p} := by
         assumption
       rw[← Finset.insert_erase this]
       apply Finset.prod_insert
-      simp
+      true_simp?
       /- shorter, older version that used mul_prod_erase: -/
       /-
       symm
@@ -126,7 +126,7 @@ example : ¬ Set.Finite { p : ℕ | Prime p} := by
     -- … so it cannot be divisible by p:
     apply not_dvd_of_lt_of_lt_mul_succ (n := p) (k:=q) (m := p*q+1)
     · linarith
-    · simp [prime_def] at hp
+    · true_simp? [prime_def] at hp
       linarith
   -- Now we have a contradiction:
   obtain ⟨p, hp, h_dvd⟩ := h_exists_prime_factor

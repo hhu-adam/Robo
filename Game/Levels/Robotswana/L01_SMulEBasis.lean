@@ -107,7 +107,7 @@ Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
   Begin with `unfold E`.
   "
   unfold E
-  simp
+  true_simp?
 
 /-
 Conclusion "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?

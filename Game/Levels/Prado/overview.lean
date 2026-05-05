@@ -100,14 +100,14 @@ example (a b : ℕ) : 5 ∣ (a * b) ↔  5 ∣ a ∨ 5 ∣ b := by
 --  decide  -- maximum recursion depth reached
 example : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   apply exists_prime_and_dvd
-  simp
+  true_simp?
 
 
 /- Prado L09: `∃!`, `mul_eq_mul_left_iff` -/
 example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
   obtain ⟨w, hw⟩ := h
   use w
-  simp
+  true_simp?
   constructor
   · rw [hw]
   · intro y hy
@@ -125,7 +125,7 @@ example {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := by
 /- Prado L10: BOSS -/
 example : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
-  simp
+  true_simp?
   constructor
   · decide
   · intro p hp h
@@ -212,7 +212,7 @@ theorem Robo.Nat.exists_prime_and_dvd (n : ℕ) (hn : n ≠ 1): ∃ (p : ℕ), P
               apply h at hfm
               rw [imp_iff_not_or] at hfm
               obtain h1 | hm := hfm
-              simp at h1
+              true_simp? at h1
               left
               assumption
               right

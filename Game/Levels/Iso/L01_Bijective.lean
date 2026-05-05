@@ -27,11 +27,11 @@ Statement :
   unfold Bijective
   constructor
   · intro a b hab
-    simp [f] at hab
+    true_simp? [f] at hab
     assumption
   · intro y
     use y-1
-    simp [f]
+    true_simp? [f]
 
 NewDefinition Function.Bijective
 TheoremTab "Function"

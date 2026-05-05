@@ -14,7 +14,7 @@ end Finset
 
 /- Piazza 02: `simp` -/
 example : 9 ∈ {n : ℕ | Odd n} := by
-  simp
+  true_simp?
   decide
 
 
@@ -22,14 +22,14 @@ example : 9 ∈ {n : ℕ | Odd n} := by
 namespace Set
 example {T : Type} (A B C : Set T) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
-  simp -- simp only [mem_inter_iff, mem_union]
+  true_simp? -- simp only [mem_inter_iff, mem_union]
   tauto
 end Set
 /-
 namespace Finset
 example (A B C : Finset ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   ext x
-  simp -- simp only [mem_inter_iff, mem_union]
+  true_simp? -- simp only [mem_inter_iff, mem_union]
   tauto
 end Finset
 -/
@@ -38,7 +38,7 @@ end Finset
 namespace Set
 example : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   rw [eq_univ_iff_forall]
-  simp
+  true_simp?
   intro x
   generalize h : (Even x) = A
   tauto
@@ -48,14 +48,14 @@ end Set
 namespace Set
 example :  { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   rw [eq_empty_iff_forall_notMem]
-  simp
+  true_simp?
 
 /- Piazza L06 -/
 namespace Set
 example {T : Type} (A B : Set T) :
   univ \ (A ∩ B) = (univ \ A) ∪ (univ \ B) ∪ (A \ B) := by
   ext i
-  simp
+  true_simp?
   tauto
 end Set
 
@@ -119,7 +119,7 @@ end Finset
 example : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   intro x
   intro h
-  simp at *
+  true_simp? at *
   obtain h | h := h
   · tauto -- or  left, assumption
   · right
@@ -141,25 +141,25 @@ theorem Robo.Set.eq_univ_iff_forall {A : Type} {s : Set A} :
 namespace Finset
 example (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
   ext
-  simp
+  true_simp?
   tauto
 
 /- Piazza N02 -/
 example (A : Finset ℕ) (a : ℕ) : insert a A = A ∪ {a} := by
   ext
-  simp
+  true_simp?
   tauto
 
 /- Piazza N03 -/
 theorem Robo.Finset.insert_erase {A : Type} [DecidableEq A] {s : Finset A} {a : A} (h : a ∈ s) :
   insert a (Finset.erase s a) = s := by
   ext b
-  simp
+  true_simp?
   --
   by_cases heq : b = a
   · rw [heq]
     tauto
-  · simp [heq]
+  · true_simp? [heq]
   /-
   constructor
   · intro h
@@ -200,7 +200,7 @@ namespace Set
 example (A B C : Set ℕ) :
     (A \ B)ᶜ ∩ (C \ B)ᶜ = ((univ \ A) \ C) ∪ (univ \ Bᶜ) := by
   ext i
-  simp
+  true_simp?
   tauto
 end Set
 -/

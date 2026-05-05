@@ -36,6 +36,6 @@ open Real
 example (x p q : ℝ) (hx : x = -p/2 + sqrt (p^2/4 - q)) (hdisc: p^2/4 - q ≥ 0): x^2 + p*x + q = 0 := by
   rw [hx]
   rw [add_pow_two,sq_sqrt]
-  field_simp
+  field_true_simp?
   ring
   assumption

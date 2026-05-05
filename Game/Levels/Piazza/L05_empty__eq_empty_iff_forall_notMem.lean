@@ -32,9 +32,9 @@ Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   -/
   Branch
      ext
-     simp
+     true_simp?
   rw [eq_empty_iff_forall_notMem]
-  simp
+  true_simp?
 
 TheoremTab "Set"
 

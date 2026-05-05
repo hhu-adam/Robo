@@ -26,8 +26,8 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     -/
     Hint "Prove $\\sum_\{i=-n}^{n} i = 0$ by using `insert_Icc_right_eq_Icc_add_one`, `insert_Icc_left_eq_Icc_sub_one`"
     induction n with d hd
-    · simp
-    · simp
+    · true_simp?
+    · true_simp?
       rw [← insert_Icc_right_eq_Icc_add_one]
       /-
       Hint (hidden := true) "
@@ -57,10 +57,10 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
           · rw [sum_insert]
             · rw [hd]
               ring
-            · simp
+            · true_simp?
           · --omega -- fails; omega appears to treat ↑d as a random integer rather than a natural number
             linarith
-        · simp
+        · true_simp?
       · linarith
 
 TheoremTab "∑ Π"

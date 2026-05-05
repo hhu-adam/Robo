@@ -68,12 +68,12 @@ Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
     clear h
     /- Hint "**Robo**: `simp` kann man immer mal probieren." -/
     Hint "`simp` can used always"
-    simp -- only [abs_nonneg]
+    true_simp? -- only [abs_nonneg]
   · intro h
     -- rw [abs_of_nonneg h]
     /- Hint (hidden := true) "**Robo**: `simp` kann man immer mal probieren." -/
     Hint "`simp` can used always"
-    simp
+    true_simp?
     assumption
 
 NewDefinition Function.IsFixedPt absValue

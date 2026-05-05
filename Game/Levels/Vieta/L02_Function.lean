@@ -55,7 +55,7 @@ Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
   You can try `rfl` or `simp [{f}]`
   "
   Branch
-    simp [f]
+    true_simp? [f]
   rfl
 
 

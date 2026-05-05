@@ -73,7 +73,7 @@ example : f ⁻¹' T = { a | f a ∈ T} := by
   "
   -/
   Hint (hidden := true) "Transform `{hb}` by using `simp`"
-  simp at hb
+  true_simp? at hb
   obtain ⟨a, ha₁, ha₂⟩ := hb
   rw [ha₂] at ha₁
   assumption

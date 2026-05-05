@@ -80,6 +80,6 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   specialize hf (¬ .) -- or specialize h Not -- or specializa h (fun A ↦ ¬ A)
   obtain ⟨a, hA⟩ := hf
   unfold fixedPoints IsFixedPt at hA
-  simp at hA
+  true_simp? at hA
 
   DisabledTactic by_cases

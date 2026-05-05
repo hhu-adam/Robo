@@ -28,14 +28,14 @@ Statement finThreeArrowEquiv {A : Type} : (Fin 3 → A) ≃ A × A × A := by
   · exact fun f => (f 0, f 1, f 2)
   · exact fun t => fun | 0 => t.1 | 1 => t.2.1 | 2 => t.2.2
   · intro f
-    simp
+    true_simp?
     ext x
     fin_cases x
-    simp
-    simp
-    simp
+    true_simp?
+    true_simp?
+    true_simp?
   · intro t
-    simp
+    true_simp?
 
 NewTactic fin_cases
 -- TODO: fin_cases should be in set-theory

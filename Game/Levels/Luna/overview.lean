@@ -43,7 +43,7 @@ example (l m n x : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n 
 /- Luna 05: linarith version of previous exercise -/
 example (l m n x : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : l ≤ x ∧ x ≤ n → ¬ (m ≤ x ∧ x ≤ n) → x ≤ m := by
   intro hn hx
-  simp at *
+  true_simp? at *
   --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
   rw [imp_iff_or_not] at hx
   --linarith (config := {splitNe := true, splitHypotheses := true}) -- fails
@@ -58,7 +58,7 @@ namespace Finset
 theorem Robo.Finset.Icc_insert_succ_right {a b : ℕ} (h : a ≤ b + 1) :
   insert (b+1) (Icc a b) = Icc a (b+1) := by
   ext x
-  simp
+  true_simp?
   omega
 end Finset
 
@@ -77,7 +77,7 @@ example (n : ℕ) : n ≤ 5 → n = 0 ∨ n = 1 ∨ n = 2 ∨ n = 3 ∨ n = 4 �
 namespace Finset
 example (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by
   intro h
-  simp at h
+  true_simp? at h
   omega
 end Finset
 
@@ -88,7 +88,7 @@ namespace Finset
 example (l m n : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by
   --rw [subset_iff]
   intro x hx
-  simp at *
+  true_simp? at *
   omega
 end Finset
 -/
@@ -98,10 +98,10 @@ end Finset
 /-
 namespace Set
 example (l m n : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by
-  --simp [subset_def]
+  --true_simp? [subset_def]
   -- intro x hlx hxn h
   intro x hx
-  simp at *
+  true_simp? at *
   obtain ⟨ hlx, hxn ⟩ := hx
   rw [imp_iff_or_not] at hxn
   obtain hx | hx := hxn
@@ -132,7 +132,7 @@ namespace Finset
 theorem Robo.Finset.Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) (h₁ : a₁ ≤ b₁) :
   Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ ≤ b₂ := by
   -- unfold Icc -- optional
-  simp [subset_iff]
+  true_simp? [subset_iff]
   -- omega -- still fails here
   constructor
   · -- omega -- still fails here

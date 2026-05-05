@@ -25,10 +25,10 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
   /- Hint "**Du**: Naja. Das wird schon klappen … " -/
   Hint "this should work"
   induction m with n n_ih
-  · simp
+  · true_simp?
   · rw [← insert_Icc_right_eq_Icc_add_one]
     · rw [sum_insert]
-      · simp
+      · true_simp?
         rw [n_ih]
         /-
         Hint (hidden := true) "
@@ -37,9 +37,9 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
         -/
         Hint (hidden := true) "Use `arithmetic_sum` as its already proven"
         rw [arithmetic_sum]
-        simp
+        true_simp?
         ring
-      · simp
+      · true_simp?
     · linarith
 
 TheoremTab "∑ Π"

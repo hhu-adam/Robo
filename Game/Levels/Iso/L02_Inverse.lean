@@ -67,7 +67,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
       --  assumption
       -- Hint (hidden := true)"**Robo**: Mit `simp [LeftInverse]` kannst du dir das Beweisziel etwas vereinfachen."
       Hint (hidden := true) "Simplify goal with `simp [LeftInverse]`"
-      simp [LeftInverse]
+      true_simp? [LeftInverse]
       -- Hint (hidden := true) "**Robo**: Warum beginnst du nicht mit `intro`?"
       Hint (hidden := true) "Try beginning with `intro`"
       intro x

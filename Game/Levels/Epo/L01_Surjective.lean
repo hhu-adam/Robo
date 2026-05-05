@@ -28,7 +28,7 @@ Statement :
   intro y
   use y-1
   Branch
-    simp [f]
+    true_simp? [f]
   ring
 
 NewDefinition Function.Surjective

@@ -64,7 +64,7 @@ Statement {A : Type} {f : A → ℕ} (h : ∃ a : A, f a = 0) {g : A → A}
     Hint (hidden := true) "Try `congr_fun` to rewrite `{hs}` to `∀ x, ({f} ∘ {g}) x = (succ ∘ {f})`"
     apply congr_fun at hs
     specialize hs b
-    simp at hs
+    true_simp? at hs
     rw [hs]
     rw [hb]
 

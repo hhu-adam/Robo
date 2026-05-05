@@ -98,11 +98,11 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   -- das auf Babylon gesehen haben, das fantasierst du. Aber `simp` kennt dieses Lemma bestimmt."
   Hint "Try `map_sum` via `simp`"
   Branch
-    simp
+    true_simp?
   rw [map_sum] -- simp knows this
   -- Hint "**Du**: Ah ja, im Zweifelsfall vereinfachen."
   Hint "Simplify"
-  simp
+  true_simp?
   /-
   Hint "**Robo**: Wie weit bist du jetzt?
 
@@ -142,7 +142,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
       -- Hint (hidden := true) "**Robo**: Und das hieß `zero_on_offDiag_ebasis`."
       Hint "This was called `zero_on_offDiag_ebasis`"
       rw [zero_on_offDiag_ebasis]
-      · simp
+      · true_simp?
       · assumption
       · assumption
   /-
@@ -153,7 +153,7 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
     "
   -/
   · Hint "Solve second half of `trans` operation"
-    simp
+    true_simp?
 
 -- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
 /-- [Doc.Theorem] map_sum

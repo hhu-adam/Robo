@@ -28,7 +28,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   Branch
     constructor
     · intro h
-      simp [Surjective] at h
+      true_simp? [Surjective] at h
       push Not at h
       obtain ⟨w, hw⟩ := h
       use w
@@ -63,7 +63,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
   "
   -/
   Hint (hidden := true) "The number of quantors does not allow for `rw [ne_comm]`. Try `simp [ne_comm]`"
-  simp [ne_comm]
+  true_simp? [ne_comm]
 
 /---/
 TheoremDoc ne_comm as "ne_comm" in "Logic"

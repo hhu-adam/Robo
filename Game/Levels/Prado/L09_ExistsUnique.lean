@@ -33,7 +33,7 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
   -- Hint "**Robo**: Tatsächlich ergibt `use` auf `∃!` angewendet immer ein bisschen Chaos.
   -- Schick am besten immer gleich ein `simp` hinterher, dann wird es wieder lesbar."
   Hint "Applying `use` onto `∃!` is usually badly readable. Try `simp` directly afterwards"
-  simp
+  true_simp?
   -- Hint "**Robo**: Jetzt hast du wie gesagt zwei Aussagen zu beweisen: (1) `{w}` erfüllt `a * {w} = b`,
   -- (2) `{w}` ist das einzige Element mit dieser Eigenschaft."
   Hint "Show two statements: (1) `{w}` satisfies `a * {w} = b` and (2) `{w}` is the only element with

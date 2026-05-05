@@ -22,7 +22,7 @@ namespace Nat
 
 Statement : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2
-  simp
+  true_simp?
   constructor
   · decide
   · intro p hp h

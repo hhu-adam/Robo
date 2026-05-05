@@ -60,7 +60,7 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
       **Robo**: Vergiss nicht `unfold E`, oder sag `simp`, dass es die Definition von `E` benutzen soll (`simp [E]`)."
     -/
     · Hint (hidden := true) "Try `unfold E` or `simp` with `E` via `simp [E]`"
-      simp [E]
+      true_simp? [E]
     /-
     · Hint "**Robo**: Und hier wolltest du jetzt kommutieren?
 
@@ -72,17 +72,17 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
         -- Would ideally like to already trigger a warning here, but
         -- first goal and proof state are identical to first proof
         -- reached in a correct solution (see (***) in first Branch above)
-        simp
+        true_simp?
         -- Hint "**Robo**:  Oh. Das sieht falsch aus."
         Hint "[Robotswana.L07] Hint 2: Try rewriting with `h₁`"
       rw [h₁]
       rw [E.mul_of_ne] -- Lvl 2
-      · simp
+      · true_simp?
       · symm
         assumption
   specialize h₁ (E i j) (E j j)
-  simp [E.mul_same] at h₁
-  simp [E.mul_of_ne _ _ hne.symm] at h₁
+  true_simp? [E.mul_same] at h₁
+  true_simp? [E.mul_of_ne _ _ hne.symm] at h₁
   assumption
 
 
