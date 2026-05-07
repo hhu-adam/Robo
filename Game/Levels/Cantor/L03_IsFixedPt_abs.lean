@@ -35,7 +35,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L03"
 
 open Function Set
-attribute [game_simp] abs_nonneg abs_eq_self
+-- attribute [game_simp] abs_nonneg abs_eq_self
 
 Statement : ∀ (x : ℝ), IsFixedPt (fun (x : ℝ) ↦ |x|) x ↔ 0 ≤ x := by
 -- The function here is simply called `abs` in mathlib,

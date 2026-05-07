@@ -43,7 +43,7 @@ DefinitionDoc Matrix.E as "E" in "Matrix"
 
 /---/
 TheoremDoc Matrix.smul_ebasis as "smul_ebasis" in "Matrix"
-attribute [game_simp] smul_single smul_eq_mul mul_one
+-- attribute [game_simp] smul_single smul_eq_mul mul_one
 
 Statement Matrix.smul_ebasis {n : ℕ} (A : Mat[n,n][ℝ]) (i j) :
     A i j • E i j = single i j (A i j) := by

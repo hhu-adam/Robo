@@ -8,7 +8,7 @@ Title "" -- ""
 Introduction ""
 
 open Set Function
-attribute [game_simp] add_lt_add_iff_right imp_self
+-- attribute [game_simp] add_lt_add_iff_right imp_self
 
 Statement :
     let f := fun (n : ℤ) ↦ n^3 + (n + 3)

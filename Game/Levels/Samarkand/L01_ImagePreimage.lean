@@ -21,7 +21,7 @@ Introduction "Intro Samarkand L01"
 TheoremDoc Set.image_preimage_subset as "image_preimage_subset" in "Set"
 
 namespace Set
-attribute [game_simp] mem_image mem_preimage
+-- attribute [game_simp] mem_image mem_preimage
 
 Statement image_preimage_subset {A B : Type} (f : A → B) (T : Set B) :
     f '' (f ⁻¹' T) ⊆ T := by

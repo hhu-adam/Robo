@@ -8,7 +8,7 @@ Title ""
 Introduction ""
 
 open Function Nat
-attribute [game_simp] LeftInverse succ_eq_add_one add_tsub_cancel_right implies_true
+-- attribute [game_simp] LeftInverse succ_eq_add_one add_tsub_cancel_right implies_true
 
 Statement : HasLeftInverse succ  := by
   /-

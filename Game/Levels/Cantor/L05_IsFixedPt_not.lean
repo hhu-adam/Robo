@@ -19,7 +19,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L05"
 
 open Function Set
-attribute [game_simp] eq_iff_iff not_iff_self exists_const not_false_eq_true
+-- attribute [game_simp] eq_iff_iff not_iff_self exists_const not_false_eq_true
 
 Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
   /-

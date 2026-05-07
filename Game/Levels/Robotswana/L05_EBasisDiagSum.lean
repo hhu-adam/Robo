@@ -45,8 +45,8 @@ open Finset
 
 /---/
 TheoremDoc Matrix.ebasis_diag_sum_eq_one as "ebasis_diag_sum_eq_one" in "Matrix"
-attribute [game_simp] subset_univ sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul mem_singleton zero_smul not_false_eq_true one_apply_ne
---attribute [game_simp] sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul
+-- attribute [game_simp] subset_univ sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul mem_singleton zero_smul not_false_eq_true one_apply_ne
+---- attribute [game_simp] sum_singleton one_apply_eq smul_apply smul_eq_mul one_mul
 
 Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := by
   /-

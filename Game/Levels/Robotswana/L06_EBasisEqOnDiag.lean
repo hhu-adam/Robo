@@ -42,7 +42,7 @@ open Nat Matrix
 
 /---/
 TheoremDoc Matrix.eq_on_diag_ebasis as "eq_on_diag_ebasis" in "Matrix"
-attribute [game_simp] single_mul_single_same mul_one E.mul_same
+-- attribute [game_simp] single_mul_single_same mul_one E.mul_same
 
 Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A))  :

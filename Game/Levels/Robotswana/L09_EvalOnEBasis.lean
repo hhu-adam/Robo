@@ -36,7 +36,7 @@ TheoremDoc Matrix.one_on_diag_ebasis as "one_on_diag_ebasis" in "Matrix"
 
 -- set_option trace.Meta.synthInstance true in
 -- set_option pp.explicit true in
-attribute [game_simp] cast_eq_zero smul_single smul_eq_mul mul_one sum_const Finset.card_univ Fintype.card_fin nsmul_eq_mul one_apply_eq one_mul
+-- attribute [game_simp] cast_eq_zero smul_single smul_eq_mul mul_one sum_const Finset.card_univ Fintype.card_fin nsmul_eq_mul one_apply_eq one_mul
 
 Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :

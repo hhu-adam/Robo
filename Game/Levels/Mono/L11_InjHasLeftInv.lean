@@ -13,7 +13,7 @@ open Set Classical
 TheoremDoc Function.injective_iff_hasLeftInverse as "injective_iff_hasLeftInverse" in "Function"
 
 namespace Function
-attribute [game_simp] exists_apply_eq_apply reduceDIte
+-- attribute [game_simp] exists_apply_eq_apply reduceDIte
 
 Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A → B) :
   Injective f ↔ HasLeftInverse f := by

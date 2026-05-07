@@ -9,7 +9,7 @@ Introduction "Intro Euklid L02"
 
 open Finset
 namespace Nat
-attribute [game_simp] mem_erase ne_eq not_true_eq_false false_and not_false_eq_true
+-- attribute [game_simp] mem_erase ne_eq not_true_eq_false false_and not_false_eq_true
 
 Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
   /-

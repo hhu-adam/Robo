@@ -27,7 +27,7 @@ open Nat Matrix
 
 /---/
 TheoremDoc Matrix.zero_on_offDiag_ebasis as "zero_on_offDiag_ebasis" in "Matrix"
-attribute [game_simp] single_mul_single_same mul_one map_zero
+-- attribute [game_simp] single_mul_single_same mul_one map_zero
 
 Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A)) :

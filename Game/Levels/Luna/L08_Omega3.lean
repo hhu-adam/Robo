@@ -13,7 +13,7 @@ Introduction "
 Introduction "Intro Luna L08"
 
 open Finset
-attribute [game_simp] mem_sdiff mem_Icc zero_le true_and not_and not_le
+-- attribute [game_simp] mem_sdiff mem_Icc zero_le true_and not_and not_le
 
 Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 ∨ x = 2 := by
   intro h'

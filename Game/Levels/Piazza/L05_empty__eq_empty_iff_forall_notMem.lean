@@ -14,7 +14,7 @@ Introduction
 Introduction "Intro Piazza L05"
 
 namespace Set
-attribute [game_simp] mem_inter_iff mem_setOf_eq mem_empty_iff_false iff_false not_and Nat.not_odd_iff_even imp_self implies_true
+-- attribute [game_simp] mem_inter_iff mem_setOf_eq mem_empty_iff_false iff_false not_and Nat.not_odd_iff_even imp_self implies_true
 
 Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by
   /-

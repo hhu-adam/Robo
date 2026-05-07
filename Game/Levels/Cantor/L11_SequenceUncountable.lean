@@ -36,7 +36,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L11"
 
 open Nat Set Function
-attribute [game_simp] succ_eq_add_one Nat.add_eq_left one_ne_zero setOf_false mem_empty_iff_false
+-- attribute [game_simp] succ_eq_add_one Nat.add_eq_left one_ne_zero setOf_false mem_empty_iff_false
 
 Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   push Not

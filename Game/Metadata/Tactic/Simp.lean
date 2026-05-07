@@ -1,33 +1,30 @@
 import Lean.Meta.Tactic.Simp
+import Game.Metadata.Tactic.SimpLog
 register_simp_attr game_simp
 
-/- tatics for player -/
+/- `simp` tatics for player -/
 macro_rules
   | `(tactic| simp)                          => `(tactic| try simp only [game_simp])
   | `(tactic| simp [$args,*])                => `(tactic| try simp only [game_simp, $args,*])
   | `(tactic| simp $loc:location)            => `(tactic| try simp only [game_simp] $loc:location)
   | `(tactic| simp [$args,*] $loc:location)  => `(tactic| try simp only [game_simp, $args,*] $loc:location)
 
+/- `simp?` versions -- not currently enabled in game -/
 macro_rules
   | `(tactic| simp?)                         => `(tactic| try simp? only [game_simp])
   | `(tactic| simp? [$args,*])               => `(tactic| try simp? only [game_simp, $args,*])
   | `(tactic| simp? $loc:location)           => `(tactic| try simp? only [game_simp] $loc:location)
   | `(tactic| simp? [$args,*] $loc:location) => `(tactic| try simp? only [game_simp, $args,*] $loc:location)
 
-/- tactics for game author -- to be used in development phase
-   output is shown when executing `lake build`               -/
-macro "true_simp?" : tactic
-  => `(tactic| simp? (config := {}))
-macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" : tactic
-  => `(tactic| simp? (config := {}) [$args,*])
-macro "true_simp?" loc:Lean.Parser.Tactic.location : tactic
-  => `(tactic| simp? (config := {}) $loc:location)
-macro "true_simp?" "[" args:Lean.Parser.Tactic.simpLemma,* "]" loc:Lean.Parser.Tactic.location : tactic
-  => `(tactic| simp? (config := {}) [$args,*] $loc:location)
-
+/- For authoring: write `simp_log` (defined in `Game.Metadata.Tactic.SimpLog`)
+   instead of `simp` while developing a level. It runs the full simp set and
+   logs every used lemma's fully qualified name during `lake build`, so
+   `extract_simp_lemmas.py` can collect them into `simp_list.lean`. -/
 
 
 /-
+# Notes on possible further enhancements
+
 # Question
 I would like to make a restricted version of "simp" available in the game.  This version should not
 use all simp lemmas available in the context, but only a subset "game_simp" of game specific simp

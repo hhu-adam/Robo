@@ -19,7 +19,7 @@ Conclusion "
 Conclusion "Conclusion Cantor L06"
 
 open Function Set
-attribute [game_simp] neg_inj
+-- attribute [game_simp] neg_inj
 
 Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     IsFixedPt f x ↔ IsFixedPt f (- x) := by

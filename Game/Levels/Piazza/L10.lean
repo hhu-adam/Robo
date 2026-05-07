@@ -14,7 +14,7 @@ Introduction
 Introduction "Intro Piazza L10"
 
 open Set Nat -- Nat is opened in case someone wants to use `Nat.not_odd_iff_even` here
-attribute [game_simp] mem_insert_iff mem_singleton_iff singleton_union mem_setOf_eq
+-- attribute [game_simp] mem_insert_iff mem_singleton_iff singleton_union mem_setOf_eq
 
 Statement : {2, 7} ⊆ {2} ∪ { n : ℕ | Odd n} := by
   -- Hint (hidden := true) "

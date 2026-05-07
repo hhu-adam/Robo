@@ -14,7 +14,7 @@ Auf dem Bauschild steht:"
 Introduction "Intro Babylon L03"
 
 open Finset
-attribute [game_simp] sum_const_zero
+-- attribute [game_simp] sum_const_zero
 
 Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i-1)*i*(i+1)  = 0  := by
   /-

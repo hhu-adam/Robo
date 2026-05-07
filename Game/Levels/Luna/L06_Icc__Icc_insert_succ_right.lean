@@ -14,7 +14,7 @@ Introduction
 Introduction "Intro Luna L06"
 
 open Finset
-attribute [game_simp] mem_insert mem_Icc
+-- attribute [game_simp] mem_insert mem_Icc
 
 Statement {a b : ℤ} (h : a ≤ b + 1) :
   insert (b + 1) (Icc a b) = Icc a (b + 1) := by

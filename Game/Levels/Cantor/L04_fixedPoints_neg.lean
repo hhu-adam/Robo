@@ -20,7 +20,7 @@ open scoped CharZero -- Need this so that `simp` can see `CharZero.neg_eq_self_i
                      -- which has a `scoped simp` attribute.
                      -- An alternative to `CharZero.neg_eq_self_iff` would be
                      -- `neg_eq_self ℝ`, which does not have any `simp` attribute.
-attribute [game_simp] CharZero.neg_eq_self_iff setOf_eq_eq_singleton
+-- attribute [game_simp] CharZero.neg_eq_self_iff setOf_eq_eq_singleton
 
 Statement :
     fixedPoints (fun (x : ℝ) ↦ -x) = {0} := by

@@ -19,7 +19,7 @@ Die Aussicht ist nicht schlecht.
 Introduction "Intro Prado L10"
 
 namespace Nat
-attribute [game_simp] even_two and_true and_imp
+-- attribute [game_simp] even_two and_true and_imp
 
 Statement : ∃! (p : ℕ), Nat.Prime p ∧ Even p := by
   use 2

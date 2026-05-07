@@ -14,7 +14,7 @@ Nachdem sich die erste Aufregung gelegt hat, werdet ihr aber auch hier mit Aufga
 Introduction "Intro Epo L01"
 
 open Function
-attribute [game_simp] sub_add_cancel
+-- attribute [game_simp] sub_add_cancel
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 1

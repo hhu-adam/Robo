@@ -23,7 +23,7 @@ open Function Set
   planned to be used as `range_fixedPoints` for future planet on quotients;
   don't need a name for now
 -/
-attribute [game_simp] setOf_subset_setOf forall_exists_index forall_apply_eq_imp_iff mem_setOf_eq comp_apply
+-- attribute [game_simp] setOf_subset_setOf forall_exists_index forall_apply_eq_imp_iff mem_setOf_eq comp_apply
 
 Statement {A : Type} (f : A → A) (h : f ∘ f = f) :
     range f = fixedPoints f := by

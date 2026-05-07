@@ -20,7 +20,7 @@ open Finset
 
 -- open BigOperators
 
-attribute [game_simp] Icc_self sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow Nat.cast_add Nat.cast_one mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false sum_insert one_div
+-- attribute [game_simp] Icc_self sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow Nat.cast_add Nat.cast_one mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false sum_insert one_div
 
 Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i : ℚ)^2 := by
   /- Hint "**Du**: Naja. Das wird schon klappen … " -/

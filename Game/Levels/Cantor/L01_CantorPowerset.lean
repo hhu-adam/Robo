@@ -25,7 +25,7 @@ of all elements in `A`, which are not located in its image under `f`"
 Conclusion ""
 
 open Set Function
-attribute [game_simp] mem_setOf_eq
+-- attribute [game_simp] mem_setOf_eq
 
 Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
   --Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."

@@ -15,7 +15,7 @@ Er gibt euch noch eine Aufgabe.
 Introduction "Intro Vieta L07"
 
 open Function Set Nat
-attribute [game_simp] cast_nonneg reduceIte Int.toNat_natCast
+-- attribute [game_simp] cast_nonneg reduceIte Int.toNat_natCast
 
 Statement {A : Type} (f : ℕ → A) :
     ∃ g : ℤ → A, ∀ n : ℕ, (f n = g n) := by

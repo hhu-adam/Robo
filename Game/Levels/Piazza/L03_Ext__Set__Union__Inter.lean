@@ -12,7 +12,7 @@ Title ""
 Introduction "Intro Piazza L03"
 
 open Set
-attribute [game_simp] mem_inter_iff mem_union
+-- attribute [game_simp] mem_inter_iff mem_union
 
 Statement (A B C : Set ℕ) : A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) := by
   /-

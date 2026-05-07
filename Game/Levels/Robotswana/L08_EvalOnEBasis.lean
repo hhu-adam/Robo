@@ -37,7 +37,7 @@ open Nat Matrix Finset
 
 /---/
 TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"
-attribute [game_simp] map_sum map_smul smul_eq_mul mul_zero sum_ite_eq mem_univ reduceIte
+-- attribute [game_simp] map_sum map_smul smul_eq_mul mul_zero sum_ite_eq mem_univ reduceIte
 
 Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A))

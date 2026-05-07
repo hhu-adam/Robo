@@ -17,7 +17,7 @@ Aus reiner Neugierde schaust du dir noch einen Nachbarsturm näher an.
 "
 -/
 Introduction "Intro Babylon L08"
-attribute [game_simp] Icc_self sum_singleton mul_zero zero_add one_pow mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false not_false_eq_true
+-- attribute [game_simp] Icc_self sum_singleton mul_zero zero_add one_pow mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false not_false_eq_true
 
 Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
   /-
