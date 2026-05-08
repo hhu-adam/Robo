@@ -20,7 +20,6 @@ namespace Function
 
 /---/
 TheoremDoc Function.bijective_iff_has_inverse as "bijective_iff_has_inverse" in "Function"
--- attribute [game_simp] LeftInverse
 
 Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
     Bijective f ↔ ∃ g, LeftInverse g f ∧ RightInverse g f := by

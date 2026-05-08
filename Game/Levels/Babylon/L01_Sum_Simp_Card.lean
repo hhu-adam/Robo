@@ -15,9 +15,8 @@ warum er steht. Hier zum Beispiel.
 "
 Intro Babylon L01
 "
-open Nat Finset
--- attribute [game_simp] sum_const smul_eq_mul mul_one
 
+open Nat Finset
 Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
   /-
   Hint "
@@ -35,7 +34,6 @@ Statement (I : Finset ℕ) : (∑ i ∈ I, 1) = card I := by
   Hint "Explain goal as $( \\sum_\{i\\in I} 1)$ being equal to the number of elements in $I$
   i.e. the cardinality of $I$. Try `simp`"
   simp
-
 
 TheoremTab "∑ Π"
 

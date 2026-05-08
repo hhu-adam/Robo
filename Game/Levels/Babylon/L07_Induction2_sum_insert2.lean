@@ -13,7 +13,6 @@ Introduction
 Introduction "Intro Babylon L07"
 
 open Finset
--- attribute [game_simp] CharP.cast_eq_zero neg_zero Icc_self sum_singleton Nat.cast_add Nat.cast_one neg_add_rev Int.reduceNeg mem_Icc le_sub_self_iff Int.reduceLE tsub_le_iff_right false_and not_false_eq_true add_neg_le_iff_le_add add_le_iff_nonpos_right and_false
 
 Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
     /-

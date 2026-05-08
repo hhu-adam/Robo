@@ -30,7 +30,6 @@ TheoremDoc arithmetic_sum as "arithmetic_sum" in "∑ Π"
 -- This would also easily work as a sum in ℚ,
 -- and BOSS level would even be easier to prove in ℚ,
 -- but cannot get initial conversion to ℚ to work!
--- attribute [game_simp] Icc_self sum_singleton CharP.cast_eq_zero one_div mul_zero zero_add mul_one Nat.cast_add Nat.cast_one mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false not_false_eq_true
 
 Statement arithmetic_sum (n : ℕ) :
      (∑ i ∈ Icc 0 n , i : ℚ) = 1/2  * n * (n + 1) := by

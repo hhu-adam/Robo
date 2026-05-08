@@ -18,7 +18,6 @@ open Function
 TheoremDoc Set.preimage_injective as "preimage_injective" in "Function"
 
 namespace Set
--- attribute [game_simp] mem_singleton_iff mem_preimage not_forall not_not preimage_empty ne_eq singleton_ne_empty not_false_eq_true
 
 Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
   /-

@@ -24,7 +24,6 @@ Er reicht euch das nächste Blatt.
 Introduction "Intro Vieta L06"
 
 open Set Function
--- attribute [game_simp] comp_apply mul_ite mul_zero Nat.ofNat_pos mul_nonneg_iff_of_pos_left
 
 Statement :
     let f : ℚ → ℚ := fun x ↦ 5 * x

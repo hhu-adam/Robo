@@ -17,7 +17,6 @@ open Nat
 namespace Set
 
 #check  (univ : Set ℕ)
--- attribute [game_simp] mem_union mem_setOf_eq
 
 Statement : { n : ℕ | Even n} ∪ { n : ℕ | Odd n} = univ := by
   /-

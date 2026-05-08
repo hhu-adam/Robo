@@ -13,7 +13,6 @@ Introduction "
 Introduction "Intro Piazza L12"
 
 open Set
--- attribute [game_simp] Finset.mem_insert Finset.union_singleton
 
 Statement (A : Finset ℕ) (a : ℕ) :  insert a A = A ∪ {a} := by
   ext

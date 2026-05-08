@@ -13,7 +13,6 @@ Wieder saust ein Pfeil vorbei.  Aber Vieta gibt euch seelenruhig das nächste Bl
 "
 -/
 Introduction "Intro Vieta L02"
--- attribute [game_simp] Int.reducePow
 
 Statement : let f : ℤ → ℤ := fun x ↦ x ^ 2; f 2 = 4 := by
   /-

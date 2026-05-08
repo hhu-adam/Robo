@@ -45,7 +45,6 @@ open Nat Matrix Finset
 
 /---/
 TheoremDoc Matrix.trace_eq as "trace_eq" in "Matrix"
--- attribute [game_simp] mul_one
 
 Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] ℝ)
     (h₁ : ∀ A B, f (A * B) = f (B * A)) (h₂ : f 1 = n) :

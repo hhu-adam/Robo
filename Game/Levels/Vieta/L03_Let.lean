@@ -13,7 +13,6 @@ Wieder ein Pfeil.  Und noch eine Aufgabe.
 "
 -/
 Introduction "Intro Vieta L03"
--- attribute [game_simp] sub_lt_self_iff zero_lt_one
 
 Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   /-

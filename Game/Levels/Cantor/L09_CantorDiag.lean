@@ -27,7 +27,6 @@ Conclusion "
 "
 -/
 Conclusion "Conclusion Cantor L09 - 2"
--- attribute [game_simp] mem_setOf_eq
 
 Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
     ∀ s : Y → Y, Nonempty (fixedPoints s) := by

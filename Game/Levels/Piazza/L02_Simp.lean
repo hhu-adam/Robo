@@ -15,7 +15,6 @@ Introduction
 Introduction "Intro Piazza L02"
 
 open Set
--- attribute [game_simp] mem_setOf_eq
 
 Statement : 9 ∈ {n : ℕ | Odd n} := by
 

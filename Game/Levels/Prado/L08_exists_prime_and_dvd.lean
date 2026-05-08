@@ -16,7 +16,6 @@ Er gibt euch folgende Variation seiner vorherigen Aufgabe.
 Introduction "Intro Prado L08"
 
 namespace Nat
--- attribute [game_simp] ne_eq OfNat.ofNat_ne_one not_false_eq_true
 
 Statement : ∃ p : ℕ, Prime p ∧ p ∣ 67280421310721 := by
   /-

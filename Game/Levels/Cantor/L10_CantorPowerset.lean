@@ -31,7 +31,6 @@ Conclusion "
 Conclusion "Conclusion Cantor L10"
 
 open Set Function
--- attribute [game_simp] eq_iff_iff not_iff_self setOf_false mem_empty_iff_false
 
 Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   Branch -- (This branch is not really needed, as it ends up with the same proof state as main branch.)

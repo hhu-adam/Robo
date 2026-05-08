@@ -16,7 +16,6 @@ Sie heißen euch freudig willkommen, und kommen dann gleich zur Sache.
 Introduction "Intro Mono L01"
 
 open Set Function
--- attribute [game_simp] add_left_inj imp_self
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 3

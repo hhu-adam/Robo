@@ -9,7 +9,6 @@ Title ""
 
 -- Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
 Introduction "Intro Samarkand L06"
--- attribute [game_simp] mem_preimage mem_singleton_iff not_forall not_not
 
 Statement {A B : Type} (f : A → B)  (y : B) :
      f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by

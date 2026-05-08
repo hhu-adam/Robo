@@ -13,7 +13,6 @@ Introduction
 Introduction "Intro Iso L01"
 
 open Function
--- attribute [game_simp] add_left_inj sub_add_cancel
 
 Statement :
     let f := fun (n : ℤ) ↦ n + 1

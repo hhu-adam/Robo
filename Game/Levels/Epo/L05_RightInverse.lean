@@ -8,7 +8,6 @@ Title ""
 Introduction ""
 
 open Function
--- attribute [game_simp] sub_add_sub_cancel
 
 Statement :
     let f : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (m + n, m + 2 * n)

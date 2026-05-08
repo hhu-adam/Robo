@@ -16,7 +16,6 @@ Introduction
 Introduction "Intro Babylon L04"
 
 open Finset
--- attribute [game_simp] mem_Icc zero_le true_and not_and not_le
 
 Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
   /-

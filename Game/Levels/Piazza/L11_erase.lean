@@ -22,7 +22,6 @@ Fin erklärt sich folgendermaßen.
 Introduction "Intro Piazza L11"
 
 open Set
--- attribute [game_simp] Finset.mem_erase ne_eq Finset.mem_sdiff Finset.mem_singleton
 
 Statement (A : Finset ℕ) (a : ℕ) : Finset.erase A a = A \ {a} := by
   /-

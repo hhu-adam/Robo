@@ -8,7 +8,6 @@ Title ""
 Introduction ""
 
 open Finset Nat
--- attribute [game_simp] filter_subset mem_filter not_and not_even_iff_odd Int.reduceNeg sum_const Int.nsmul_eq_mul
 
 Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I | Even i} := by
   /-

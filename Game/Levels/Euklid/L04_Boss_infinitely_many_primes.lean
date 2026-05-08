@@ -29,7 +29,6 @@ Introduction "Intro Euklid L04"
 
 open Finset
 namespace Nat
--- attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq lt_add_iff_pos_left gt_iff_lt mem_erase ne_eq not_true_eq_false false_and not_false_eq_true
 
 Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
   /-
