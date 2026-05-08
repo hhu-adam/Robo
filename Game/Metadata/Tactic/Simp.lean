@@ -1,5 +1,7 @@
 import Lean.Meta.Tactic.Simp
 import Game.Metadata.Tactic.SimpLog
+
+/** Custom simp set to restrict the player's simp calls. */
 register_simp_attr game_simp
 
 /- `simp` tatics for player -/
