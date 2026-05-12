@@ -635,8 +635,8 @@
  "**Robo**:  Schau mal, die Abbildung geht nach §0!\n\nDu hebst die Augenbrauen.\n\n**Robo**: Könnte was mit Induktion zu tun haben.  Ich mein ja nur.",
  "Remind missed argument with §0":
  "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?\n\n**Robo**: Ganz am Anfang bei §0 hast du vermutlich dieses Argument ausgelassen.  Jetzt kannst du es noch nachholen.",
- "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in §5 not in §6, then the sum over §7 equals sum over §8":
- "**Du**: Mal langsam.  Zu zeigen ist:\n\n§0\n\nVermutlich ist der Ausdruck in der Summe einfach §1 für die ersten drei Werte von §2 … ja, genau. Und wie formulier ich das jetzt?\n\n**Robo**: Du könntest §3 verwenden: ist §4, und verschwindet der Ausdruck in der Summe auf allen Element von §5, die nicht in §6 liegen, so ist die Summe über §7 gleich der Summe über §8.",
+ "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in I₂ not in I₁, then the sum over §5 equals sum over §6":
+ "**Du**: Mal langsam.  Zu zeigen ist:\n\n§0\n\nVermutlich ist der Ausdruck in der Summe einfach §1 für die ersten drei Werte von §2 … ja, genau. Und wie formulier ich das jetzt?\n\n**Robo**: Du könntest §3 verwenden: ist §4, und verschwindet der Ausdruck in der Summe auf allen Element von §6, die nicht in §5 liegen, so ist die Summe über §5 gleich der Summe über §6.",
  "Remind former results with §0":
  "**Robo**: Hatten wir nicht §0 auf einem dieser Zettel?",
  "Remind former result for §0. Try §1":

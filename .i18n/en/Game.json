@@ -251,7 +251,7 @@
  "Use §0 by writing §1 as §2. Remind §3":
  "**Scribble**: So how could we use §0 here?\n\n**You**: How about this time we write §1 as the product §2?\n\n**Scribble**:  How would that help?\n\n**You**: If I swap the factors in this product, I get zero!  \n  We’ve seen this already, §3 or something like that.",
  "Use §0 as its already proven":
- "**Scribble**: Remember that we already proved §0.",
+ "**Scribble**: Remember that we have already proven §0.",
  "Use §0 as goal is in assumptions":
  "**Scribble**: It's just like before: the statement that needs to be proven is already one of the assumptions. So §0 will work again.",
  "Use §0 as e.g. §1":
@@ -412,7 +412,7 @@
  "Try proof by cases for §0":
  "**You**: Now we distinguish cases based on whether §0, I guess?",
  "Try proof by case for §0":
- "**You**: So how do I approach this? \n\n**Scribble**: As I said, this is a classic. Did you now bring along your library? \nIf I remember correctly, it helps to distinguish the case where §0 holds from the case where it does not.",
+ "**You**: So how do I approach this? \n\n**Scribble**: As I said, this is a classic. Did you not bring along your library? \nIf I remember correctly, it helps to distinguish the case where §0 holds from the case where it does not.",
  "Try piecewise function with §0":
  "**Scribble**: You could define a piecewise map with §0.",
  "Try out §0 again": "**Scribble**: Try §0 again.",
@@ -429,7 +429,7 @@
  "Try either §0 or §1": "**Scribble**: Perhaps §0 would be helpful? Or §1?",
  "Try continue with §0": "**Scribble**: I think §0 will help you here.",
  "Try constructor":
- "**Scribble**: Well done! \n\n**You**: Haven't we already proved a few things that would be quite useful now? \n\n**Scribble**: Oops. Yes, I guess you're right, but unfortunately, I didn't save them. You'll have to reconstruct the arguments. Sorry!",
+ "**Scribble**: Well done! \n\n**You**: Haven't we already proven a few things that would be quite useful now? \n\n**Scribble**: Oops. Yes, I guess you're right, but unfortunately, I didn't save them. You'll have to reconstruct the arguments. Sorry!",
  "Try case distinction. Use §0":
  "**Scribble**: Now perhaps distinguish cases. Do you remember §0?",
  "Try case distinction if §0 is even or uneven. Try §1.":
@@ -444,7 +444,7 @@
  "To rewrite into the other direction you can use §0 (§1) infront of the name. Try §2":
  "**You**: And what if I want to rewrite it in the other direction? \n\n**Scribble**: Then you put a §0 (§1, i.e. lowercase \"L\") in front of the name, as in §2.",
  "To proof sum §0\ntry to perform induction over §1 using §2. §3 is optional and you can\ndecide on the name of your induction variable (§4) and hypothesis (§5).":
- "**You**: I've seen this sum before. \n\n§0 \n\nWasn't there this story about little Gauss coming up with this formula, and with very simple argument why it holds? \n\n**Scribble**: I'm not into that kind of gossip. I would just do an induction over §1. In Leanish, that would be: §2!\n\n**You**: Why §3? \n\n**Scribble**: That part is optional, of course. It allows you to specify names for your induction variable (§4) and hypothesis (§5).",
+ "**You**: I've seen this sum before. \n\n§0 \n\nWasn't there a story about a young Carl Friedrich Gauss coming up with this formula, along with a very simple argument for why it holds? \n\n**Scribble**: I'm not into that kind of gossip. I would just do an induction over §1. In Leanish, that would be: §2!\n\n**You**: Why §3? \n\n**Scribble**: That part is optional, of course. It allows you to specify names for your induction variable (§4) and hypothesis (§5).",
  "To divide assumption §0 use §1":
  "**Scribble**: I would split the assumption §0 with §1.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":
@@ -558,7 +558,7 @@
  "Show that term in sum is zero for first three indexes":
  "**Scribble**: Great! Now you just have to show what you said earlier: the expression under the sum is zero for the first three indices.",
  "Show swappability if mapping by using §0":
- "**Scribble**: Now we have two maps, one of them defined piecewise. \n\n**You**: And I'm supposed that they commute? \n\n**Scribble**: Exactly. \nJust pick an arbitrary element in the domain with §0, and prove the equality for this element.",
+ "**Scribble**: Now we have two maps, one of them defined piecewise. \n\n**You**: And I'm supposed to show that they commute? \n\n**Scribble**: Exactly. \nJust pick an arbitrary element in the domain with §0, and prove the equality for this element.",
  "Show statement via §0":
  "**You**: And now I want to verify the equation via an intermediate step §0.",
  "Show goal via §0 i.e. assume §1 is true":
@@ -594,8 +594,6 @@
  "**You**: Yes, I think that's how I learned it – two sets are equal if they contain each other.",
  "Remind: §0 sees through local definitions":
  "**Scribble**: Don't forget that §0 can see through local definitions.",
- "Remind: §0 from §1 could be helpful":
- "**Scribble**: Remember that §0 might be helpful at some point.",
  "Remind: Equality is reflexive, so try §0":
  "**Scribble**: But this is obvious. You just have to remind him that equality is *reflexive*. Try §0.",
  "Remind §0 i.e.\n§1\nand additional assumption that §2 surjectiv":
@@ -625,8 +623,8 @@
  "**Scribble**: Look, the codomain  is §0! \n\nYou raise your eyebrows. \n\n**Scribble**: §0 always reminds of induction. Never mind.",
  "Remind missed argument with §0":
  "**You**: Where does this goal come from? \n\n**Scribble**: At the very beginning, when you did §0, you probably omitted this argument. Now you can make up for it.",
- "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in §5 not in §6, then the sum over §7 equals sum over §8":
- "**You**:  Slowly, please. What we need to show is: \n\n§0\n\nPresumably, the expression in the sum is simply §1 for the first three values of §2 … yes, exactly. Now, how do I formulate this? \n\n**Scribble**: You could use §3: given §4, and given an expression in the sum that disappears on all elements of §5 that are not in §6, the sum over §7 is equal to the sum over §8.",
+ "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in I₂ not in I₁, then the sum over §5 equals sum over §6":
+ "**You**:  Slowly, please. What we need to show is: \n\n§0\n\nPresumably, the expression in the sum is simply §1 for the first three values of §2 … yes, exactly. Now, how do I formulate this? \n\n**Scribble**: You could use §3: given §4, and given an expression in the sum that disappears on all elements of §6 that are not in §5, the sum over §5 is equal to the sum over §6.",
  "Remind former results with §0":
  "**Scribble**: Didn’t we have §0 on one of those slips of paper?",
  "Remind former result for §0. Try §1":
@@ -858,7 +856,7 @@
  "Intro Mono L01":
  "Indeed, at the top of the building, you again meet a large crowd of formalosophers. They warmly welcome you, then they get straight to the point.",
  "Intro Mono":
- "On the next planet, there are again two skyscrapers standing next to each other. Again, one is narrow and tall, the other slightly wider and shorter. And once again, they are connected by a system of tubes – there appears to be some kind of transport capsule system again. \n\nAfter your experience on Epo, you head straight for the shorter skyscraper this time and land on the roof. \n\n**Porter**:  No, no, no. Didn't you see everyone waving? These are just our sleeping quarters. During the day, we're always over there, in the office tower. Anyway, now that you're here – welcome! \n\nYou each shake one of his four hands. \n\n**Porter**: At least this gives me the opportunity to introduce you to our unique local transport system. You're from Epo, aren't you? We hear terrible stories from there. There's an accident every other day. They just can't get their tubes sorted out. We've been accident-free for years! \n\nYou go down four floors. There, everyone is assigned a capsule again, and you glide silently uphill into the office tower. How the capsule operates remains a mystery.\n\n**Scribble**: Oh. There's no one here either! \n\n**Porter**: Of course not. They're all upstairs, top floor. And not every floor can be reached via a tube. But we're almost there. Just two more flights of stairs.",
+ "On the next planet, there are again two skyscrapers standing next to each other. Again, one is narrow and tall, the other slightly wider and shorter. And once again, they are connected by a system of tubes – there appears to be some kind of transport capsule system again. \n\nAfter your experience on Epo, you head straight for the shorter skyscraper this time and land on the roof. \n\n**Porter**:  No, no, no. Didn't you see everyone waving? These are just our sleeping quarters. During the day, we're always over there, in the office tower. Anyway, now that you're here – welcome! \n\nYou each shake one of his four hands. \n\n**Porter**: At least this gives me the opportunity to introduce you to our unique local transport system. You’ve just arrived from Epo, haven’t you? We hear terrible stories from there. There's an accident every other day. They just can't get their tubes sorted out. We've been accident-free for years! \n\nYou go down four floors. There, everyone is assigned a capsule again, and you glide silently uphill into the office tower. How the capsule operates remains a mystery.\n\n**Scribble**: Oh. There's no one here either! \n\n**Porter**: Of course not. They're all upstairs, top floor. And not every floor can be reached via a tube. But we're almost there. Just two more flights of stairs.",
  "Intro Luna L10: Use §0 again":
  "**Ritha** (*to Lina*): Please, let me ask one more question … \n\n**Lina**: Okay, just one … But not about §0 again! \n\nRitha's eyes widen and she looks at Lina imploringly. \n\n**Lina**: If you *absolutely* must. But be quick! We really don't have any more time!",
  "Intro Luna L09": "**Lina**: Now it's my turn again.",
@@ -870,7 +868,7 @@
  "Intro Luna L04": "**Lina**: What about this?",
  "Intro Luna L03": "**Lina**: Why don't you give this a try!",
  "Intro Luna L02: For integers §0 or §1 means §2":
- "**Lina**: To give another example, one needs to be aware that §0 or §1 are equivalent to §2 for integers.",
+ "**Lina**: To give another example, one needs to be aware that §0 or §1 is equivalent to §2 for integers.",
  "Intro Luna L01: Know that §0":
  "You're a little offended, but you try to start a conversation anyway. \n\n**You**: So sorry, we'll try not to mess up things. \nIs it difficult to keep order here? \n\n**Lina**: Well, for starters you need to know that §0.",
  "Intro Luna":
@@ -903,7 +901,7 @@
  "Intro Iso L01":
  "**Isososoph**: Of course we have also prepared something for you.",
  "Intro Iso":
- "**You**: Look, another planet with two skyscrapers! \n\n**Scribble**: Yes, but these ones are the same height. Now I really don't know where to land. \n\n**You**: People are waving on the left! \n\nSo you land on the left. But the reception is rather poor.\n\n**Isosopher**: Excuse me! But it's not very polite to land here in the middle of a crowd! We specifically marked a landing site over there! \n\n**Scribble**: So sorry! I didn't recognise the markup. \n\n**Isosopher**: Well, at least no one gut hurt. We'd already heard that you were a little … different. And we're very keen to show you our ingenious transport system – the most advanced local transport system in the entire Leaniverse! \n\nAs it turns out, the particularly advanced aspect of their system is that the capsules can be used in both directions. You dash back and forth a few times.",
+ "**You**: Look, another planet with two skyscrapers! \n\n**Scribble**: Yes, but these ones are the same height. Now I really don't know where to land. \n\n**You**: People are waving on the left! \n\nSo you land on the left. But the reception is rather poor.\n\n**Isosopher**: Excuse me! But it's not very polite to land here in the middle of a crowd! We specifically marked a landing site over there! \n\n**Scribble**: So sorry! I didn't recognise the markup. \n\n**Isosopher**: Well, at least no one got hurt. We'd already heard that you were a little … different. And we're very keen to show you our ingenious transport system – the most advanced local transport system in the entire Leaniverse! \n\nAs it turns out, the particularly advanced aspect of their system is that the capsules can be used in both directions. You dash back and forth a few times.",
  "Intro Implis: mention that planet could not be solved without §0":
  "Back on the spaceship, you set off for a neighbouring planet that also appears to be inhabited. \n\n**You**: I still feel that I couldn't have solved Queen Logwynn's problem without §0. Didn't it involve implications? \n\n**Scribble**: Perhaps we'll learn more on *Implis*, the planet we're now heading towards. Hold tight … \n\nAnd with that, Scribble begins the landing approach. \n\nImplis appears to be a huge open-cast mine. Conveyor belts criss-cross everywhere, but most of them are halted. \nA shy “Head of Operations” is waiting for you.\n\n**Head of Operations**: You've come at just the right moment! I've already heard about you. Real mathematicians! You see, we extract truth values here. And you have to be extremely careful. One mistake and everything collapses. I'm very cautious. I always say: downtime over downfall!",
  "Intro Implis L14: This chapter used the following operations:\n§0, §1, §2, §3 (reversal of §4), §5, §6, §7 (changes §8 to §9),\n§10 (changes §11 to §12 and §13), §14 (rewrite goal with §15), §16 (rewrite\nassumption §17 using §18) and §19 (introduce cases §20 and §21)":
@@ -943,7 +941,7 @@
  "Intro Epo L01":
  "The journey is indeed short and fun. And you indeed receive a grand welcome. \nOnce the initial excitement has subsided, you are again confronted with some questions.",
  "Intro Epo":
- "The planet you are now approaching has two buildings: a narrow skyscraper and a second, wider building with slightly fewer floors. The buildings are connected by a strange system of tubes. At the top of the skyscraper, you can see a landing pad. You head for it.\n\nAs you disembark, a formalosopher comes running towards you. He waves his arms wildly. \n\n**Porter**: No, no, you're expected down there. He lowers his arms.\n\n**Porter**: Well, never mind. Good afternoon, first of all! I'm just one of the porters. You are expected by a large delegation, but over there, in the office building, of course. These here are just our sleeping quarters. Come on, I'll take you over. It won't take long.\n\nHe leads you down one floor and asks Robo and you to get into two single-seat “transport capsules”.\n\n**Porter**: We'll just slide over in these capsules. Hope you enjoy it.  We do have some collisions from time to time, but right now the coast is clear. Everyone else is already over on the other side, waiting for you!",
+ "The planet you are now approaching has two buildings: a narrow skyscraper and a second, wider building with slightly fewer floors. The buildings are connected by a strange system of tubes. At the top of the skyscraper, you can see a landing pad. You head for it.\n\nAs you disembark, a formalosopher comes running towards you. He waves his arms wildly. \n\n**Porter**: No, no, you're expected down there. He lowers his arms.\n\n**Porter**: Well, never mind. Good afternoon, first of all! I'm just one of the porters. You are expected by a large delegation, but over there, in the office building, of course. These here are just our sleeping quarters. Come on, I'll take you over. It won't take long.\n\nHe leads you down one floor and asks Scribble and you to get into two single-seat “transport capsules”.\n\n**Porter**: We'll just slide over in these capsules. Hope you enjoy it.  We do have some collisions from time to time, but right now the coast is clear. Everyone else is already over on the other side, waiting for you!",
  "Intro Ciao":
  "**You**: It is possible that we've now visited *all* the planets in this corner of the Leaniverse? \n\n**Scribble**: Looks like it.\n\n**You**: So what do we do now? \n\n**Scribble:** No idea. \n\nAfter a while …\n\n**Scribble:** Hey, look, we've received a message.",
  "Intro Cantor L11: Show that set of mapping §0 is uncountable":
@@ -1101,7 +1099,7 @@
  "Explain §0: §1 looks for known equations and equivalences which would be currently\napplicable. §2 uses all simplifications it can find. Currently the following simplifications\nwere performed:\n§3\nand\n§4\n":
  "**You**: What exactly does §0 do? \n\n**Scribble**: §1 searches for commonly known equations and equivalences that are generally regarded as simplifications and that would be applicable in this case. All simplifications found by §2 are applied. In this case, for example, these were simplifications of the form\n§3\nand\n§4\n",
  "Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\nis subset of §4. So, as 5 is a natural number (§5) and it holds that §6, §7\nis also in this set i.e. §8. Try §9":
- "**You**: What is §0? \n\n**Scribble**: §1 is the maximum subset: all natural numbers. \n\n**You**: So it's just another symbol for §2? \n\n**Scribble**: Yes and no. §3 is “all of ℕ”, but understood as a *subset* of §4.\n\nExt, Fin, Set, Sub and Mem are staring at you. \n\n**Set**: How can you possibly confuse §0 and §1?! \nHere *is* a *blueberry*, and it's *lying in* this *basket with all the blueberries*. \nIt's not „lying in blueberry“.\n\nThe children laugh.\n\n**Mem**: And in the same way, 5 *is* a natural number (§5), and it *lies in* the *set of all natural numbers §6* (§8). \nSo what is so confusing?\n\n**Scribble** (*to you*): Don't rack your brains over it. \nI suggest you just start with §9, then you'll see exactly what the question is.",
+ "**You**: What is §0? \n\n**Scribble**: §1 is the maximum subset: all natural numbers. \n\n**You**: So it's just another symbol for §2? \n\n**Scribble**: Yes and no. §3 is “all of ℕ”, but understood as a *subset* of §4.\n\nExt, Fin, Set, Sub and Mem are staring at you. \n\n**Set**: How can you possibly confuse §1 and §2?! \nHere *is* a *blueberry*, and it's *lying in* this *basket with all the blueberries*. \nIt's not „lying in blueberry“.\n\nThe children laugh.\n\n**Mem**: And in the same way, 5 *is* a natural number (§5), and it *lies in* the *set of all natural numbers §6* (§8). \nSo what is so confusing?\n\n**Scribble** (*to you*): Don't rack your brains over it. \nI suggest you just start with §9, then you'll see exactly what the question is.",
  "Explain §0: §1 is an expression over the type §2. §3 could e.g. be the natural\nnumbers. §4 could be the expression: §5 is even. Or: §6 has seven prime factors. Or: §7 is\na favorite number. In other words: §8 is a mapping that takes §9 and maps it onto an expression.\nTry §10.":
  "**You**: So what is this §0? \n\n**Scribble**: §1 is a \"predicate\"; a statement about objects of type §2. For example, §3 could again be the type of natural numbers. And §4 could be the statement: The natural number §5 is even. Or: §6 has seven prime factors. Or: §7 is Scribble's favourite number. Or …\n\n**You**: All right, I think I understand. §8 is, in a way, a map that takes an element §9 and maps it to a statement. \n\n**Scribble**: Yes, in a way.\n\n**You**: Good. Then it's pretty clear what the statement is here. And you wanted to tell me how to prove this in Leanish? \n\n**Scribble**: Exactly. What you need is §10.",
  "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\ncoefficients in §3.\nExplain §4 as the set of elements §5 that lead to the variables §6 and §7":
@@ -1293,8 +1291,7 @@
  "**You**: Yay! And now who's going to tell him? \n\n**Scribble**: Maybe we shouldn't. I have a feeling he anyway likes his museum best the way it is. \n\nSo you thank him politely for the tour, express your deep admiration for the local ice and the local architecture, and continue your journey.",
  "Conclusion Prado L08":
  "**Guino:** All right, let's keep going. Look, aren't these stairs magnificent? Let's go up!\n\n**You** *(to Scribble)*: Let's try to formulate the statement we want to show to Guino. There is exactly one even … \n\n**Scribble**: Hold on! We haven't come across any unique existence statements so far.",
- "Conclusion Prado L07":
- "**You**: You're problems really seem a bit too simple.",
+ "Conclusion Prado L07": "**You**: Your problems really seem a bit too simple.",
  "Conclusion Prado L02":
  "**Guino**: What are you whispering? \n\n**You**: Oh, nothing. Scribble is just trying to remind me what exactly a prime number is. \n\nGuino inspects your proof.\n\n**Guino**: Not bad, not bad. But let's move on a bit. \nThe museum may still be empty, but at least it's finally completed. \nAnd it's turned out really well. \nCome on, this way!",
  "Conclusion Prado L01: Present §0 as prime number":
@@ -1354,7 +1351,7 @@
  "Conclusion Iso L01":
  "**Isosopher**: Great! In that case, I think we can skip all of this … He puts a few sheets of paper aside.",
  "Conclusion Implis L14":
- "**Head of Operations**: That's fantastic! Thank you so much! Then I won't keep you any longer. I'm sure you want to continue to the planet Quantus, right? \n\n**You**: Um, maybe … \n\n**Head of Operations**: I would just like to ask for one more favour. I have a package here for the Queen of Quantus! It was also left to me by my predecessor. Formal Mail won't accept it because I don't know the address. Could you perhaps take it to her? \n\n**You**: Sure! Scribble, can you take it? \n\nScribble takes and swallows the parcel.  The Head of Operations looks at him in disbelief. \n\n**Robo**: Don't worry, I don't digest anything!",
+ "**Head of Operations**: That's fantastic! Thank you so much! Then I won't keep you any longer. I'm sure you want to continue to the planet Quantus, right? \n\n**You**: Um, maybe … \n\n**Head of Operations**: I would just like to ask for one more favour. I have a package here for the Queen of Quantus! It was also left to me by my predecessor. Formal Mail won't accept it because I don't know the address. Could you perhaps take it to her? \n\n**You**: Sure! Scribble, can you take it? \n\nScribble takes and swallows the parcel.  The Head of Operations looks at him in disbelief. \n\n**Scribble**: Don't worry, I haven’t eaten it.  Just tucked it away safely.",
  "Conclusion Implis L13: Explain that §0 always tries to apply §1":
  "**You**: Are we done already …? \n\n**Scribble**: Yes, §0 always includes a §1, and that worked here.",
  "Conclusion Implis L12": "The Head of Operations nods in agreement.",

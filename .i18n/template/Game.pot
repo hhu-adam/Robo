@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.29.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08\n"
+"POT-Creation-Date: 2026-05-12\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -1866,13 +1866,11 @@ msgstr ""
 #. §4: `I₁ ⊆ I₂`
 #. §5: `I₁`
 #. §6: `I₂`
-#. §7: `I₁`
-#. §8: `I₂`
 #: Game.Levels.Babylon.L04_sum_subset
 msgid ""
 "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: "
-"If §4 and term is disappearing for all elements in §5 not in §6, then the "
-"sum over §7 equals sum over §8"
+"If §4 and term is disappearing for all elements in I₂ not in I₁, then the "
+"sum over §5 equals sum over §6"
 msgstr ""
 
 #: Game.Levels.Babylon.L04_sum_subset
@@ -2093,12 +2091,6 @@ msgstr ""
 msgid ""
 "Remind that, assumpion §0 will be needed agian.\n"
 "Try §1 or §2"
-msgstr ""
-
-#. §0: `mem_setOf`
-#. §1: `Set`
-#: Game.Levels.Cantor.L01_CantorPowerset
-msgid "Remind: §0 from §1 could be helpful"
 msgstr ""
 
 #. §0: `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`
