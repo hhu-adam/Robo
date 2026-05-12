@@ -51,11 +51,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       have : 0 < prod  := by
         apply Finset.prod_pos
         intro p
-        simp[all_primes]
+        simp [all_primes]
         intro h
         rw [prime_def] at h
         linarith
-      simp[new_prime]
+      simp [new_prime]
       assumption
     apply exists_prime_and_dvd
     linarith
@@ -68,7 +68,7 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
       /- slightly longer version that uses prod_insert: -/
       simp[prod]
       have : p ∈ all_primes := by
-        simp[all_primes]
+        simp [all_primes]
         assumption
       rw[← Finset.insert_erase this]
       apply Finset.prod_insert

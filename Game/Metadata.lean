@@ -6,7 +6,9 @@ import Game.Doc
 import Game.Metadata.FromMathlib
 
 import Game.Metadata.Tactic
+import Game.Metadata.Tactic.simp_list
 import Game.Metadata.MatrixNotation
+
 
 -- mathlib PR: 85107
 theorem Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by

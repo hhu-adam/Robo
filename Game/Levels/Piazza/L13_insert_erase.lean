@@ -19,6 +19,7 @@ namespace Finset
 open Classical -- otherwise need `[h : DecidableEq A]` in the statement
                -- open scoped Classical also works in vscode and compliles without error,
                -- but somehow leads to error in this level when deployed locally with npm start
+
 Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   insert a (Finset.erase s a) = s := by
   ext b

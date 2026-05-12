@@ -23,6 +23,7 @@ TheoremDoc Finset.Icc_subset_Icc_iff as "Icc_subset_Icc_iff" in "≤"
 -- Note that mathlib's theorem is more general; here we restrict to ℕ
 
 namespace Finset
+
 Statement Icc_subset_Icc_iff (a₁ b₁ a₂ b₂ : ℕ) :
 a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ ≤ b₂) := by
   -- unfold Icc -- optional
