@@ -10,9 +10,20 @@ import Game.Metadata.Tactic.simp_list
 import Game.Metadata.MatrixNotation
 
 
--- mathlib PR: 85107
-theorem Set.subset_iff {A : Type} {s₁ s₂ : Set A} : s₁ ⊆ s₂ ↔ ∀ {x : A}, x ∈ s₁ → x ∈ s₂ := by
-  rfl
+/-- subset.def versus subset_iff --/
+/- mathlib has three lemmas of this kind
+  
+  #check Set.subset_def      -- (a)
+  #check Finset.subset_def   -- (b)
+  #check Finset.subset_iff   -- (c)
+
+  Unfortunately, (a) is more similar to (b) than to (c).
+  mathlib PR #35416 tried to resolve this but faild.
+
+  Current workaround:
+-/
+alias Set.subset_iff := Set.subset_def
+
 
 -- import Game.Metadata.Delaborator
 -- import Game.Metadata.DelaboratorFunOnProd
