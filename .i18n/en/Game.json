@@ -611,7 +611,7 @@
  "Remind that §0 is an interval which is closed to both sides. You could write §1\nas §2 or §3, because we are in the natual numbers. Therfore, the\ngoal is: §4":
  "**You**: So what is §0? \n\n**Ritha**: It's the **i**nterval that is **c**losed on both sides.\n\n**Scribble**: You would probably write §1 as §2, or as §3, because we are back in the natural numbers here. So what we need to show is: \n§4",
  "Remind that §0 in this case is equivalence":
- "**You** *(whispering)*: Isn't that the definition of §0? \n\n**Scribble** *(whispering)*: You could see it that way. But in Leanish, these two are  equivalence.",
+ "**You** *(whispering)*: Isn't that the definition of §0? \n\n**Scribble** *(whispering)*: You could see it that way. But in Leanish, these two are  equivalent.",
  "Remind that goal looks like §0. Try §1. The sum sign is written\nas §2.":
  "**You**: The assumption looks like a convoluted version of §0. Either way, it can't be a large sum. \n\n**Scribble**: No. But we probably need an intermediate step to get the specified result. I suggest: §1. You can write the sum sign as §2.",
  "Remind that 'tuples' §0 and §1 are two mappings §2.\nEvaluate them on elements from §3. Try §4":
