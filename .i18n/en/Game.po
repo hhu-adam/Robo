@@ -4669,7 +4669,7 @@ msgstr ""
 "**You** *(whispering)*: Isn't that the definition of §0? \n"
 "\n"
 "**Scribble** *(whispering)*: You could see it that way. But in Leanish, "
-"these two are  equivalence."
+"these two are equivalent."
 
 #. §0: `h`
 #. §1: `obtain`
