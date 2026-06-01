@@ -4023,7 +4023,6 @@ msgstr "蕴含"
 
 #. §0: `tauto`
 #: Game.Levels.Implis
-#, fuzzy
 msgid "Intro Implis: mention that planet could not be solved without §0"
 msgstr ""
 "回到飞船上，你们启程前往一颗邻近的星球，看起来那里也有人居住。\n"
@@ -4033,40 +4032,37 @@ msgstr ""
 "\n"
 "**司南**：也许我们正要去的这颗星球 *蕴含* 上，会有机会再学点东西。请抓稳…. \n"
 "\n"
-"说完，司南 开始引导着陆。\n"
+"说完，司南开始引导飞船着陆。\n"
 "\n"
-"蕴含 似乎是一座巨大的露天矿。到处都是传送带，纵横交错，但大多数都停着。一位害"
-"羞的运营主管已经在等你们了。\n"
+"蕴含看起来像是一座巨大的露天矿。到处都是传送带，纵横交错，但大多数都停着。一"
+"位害羞的运营主管已经在等你们了。\n"
 "\n"
 "**运营主管**：你们来得正好！我已经听说了。真正的数学家！你们知道吗，我们这里"
-"开采的是真值。而这事必须万分小心。一个错误，一切就会崩塌。但我非常谨慎。我总"
-"说：宁可停工，也别毁灭！"
+"开采的是“真值”。而这事必须万分小心。一个错误，一切就会崩塌。但我非常谨慎。我"
+"总说：宁可停工，也别崩盘！"
 
 #: Game.Levels.Implis.L01_Intro
-#, fuzzy
 msgid "Conclusion Implis L01"
 msgstr ""
-"**运营主管**: 完美！谢谢！\n"
+"**运营主管**：真棒！非常感谢！\n"
 "\n"
-"他走到一块控制面板前，按了几个按钮。某处一条传送带轰隆隆地启动了。\n"
+"他走到一块控制面板前，按了几个按钮。某处，一条传送带嘎吱作响地启动了。\n"
 "\n"
-"**运营主管**: 你们还能再留几分钟吗？"
+"**运营主管**：你们还能再留几分钟吗？"
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
 #: Game.Levels.Implis.L01_Intro
-#, fuzzy
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
-"**你**: 好的。所以我现在在假设里同时有 §0 和 §1，并且得证明 §2。\n"
+"**你**：好。所以我现在的假设里同时有 §0 和 §1，要证明的是 §2。\n"
 "\n"
-"**司南**: 没错。怎么做你不是已经知道了吗。"
+"**司南**：没错。而且你已经知道该怎么做了。"
 
 #: Game.Levels.Implis.L01_Intro
-#, fuzzy
 msgid "Intro Implis L01"
-msgstr "**运营主管**: 比如说，这里："
+msgstr "**运营主管**：比如这个问题："
 
 #. §0: `\\to`
 #. §1: `«{B}»`
@@ -4077,40 +4073,37 @@ msgstr "**运营主管**: 比如说，这里："
 #. §6: `h`
 #. §7: `intro h`
 #: Game.Levels.Implis.L01_Intro
-#, fuzzy
 msgid ""
 "Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
 "is also true. You cannot use §4. Begin by assumption that §5 is true. For "
 "this choose\n"
 "name §6 for assumption and introduce it via §7"
 msgstr ""
-"**运营主管**: 工人们说这样才对，而且我们急需这个。但没人能给我证明。\n"
+"**运营主管**：工人们说这是对的，而且我们急需它。但没人能给我证明。\n"
 "\n"
-"**你**: 等一下。这不正好是个蕴含（§0）嘛。我们假设§1成立，然后要证明：于是§2"
-"推出§3。对啊！当然成立。\n"
+"**你**：等一下。这不又是个蕴含（§0）嘛。我们假设§1成立，然后要证明在这个假设"
+"下，§2可以推出§3。对啊！当然成立。\n"
 "\n"
 "运营主管满怀期待地看着你。\n"
 "\n"
-"**你** *(小声对司南)*: 我该把§4写给他吗？\n"
+"**你** *(小声对司南)*：我该把§4写给他吗？\n"
 "\n"
-"**司南** *(也小声回)*: 看他那样子，我怕他也看不懂。还是把证明写全吧。\n"
+"**司南** *(也小声回)*：看他那样子，我怕他也看不懂。还是把证明写完整吧。\n"
 "\n"
-"**你**: 可怎么写呢？我觉得我首先想说点像“那我们就假设§5成立…”这样的话。\n"
+"**你**：可怎么写呢？我想先说一句类似“那我们就假设§5成立…”这样的话。\n"
 "\n"
-"**司南**: 嗯，好主意。给你的假设随便起个名字，比如§6，然后写§7。"
+"**司南**：嗯，好主意。那就给这个假设起个名字，比如§6，然后写§7。"
 
 #: Game.Levels.Implis.L02_Revert
-#, fuzzy
 msgid "Conclusion Implis L02"
-msgstr "运营主管高兴地接过你们的解答，伸手去拿电话。"
+msgstr "运营主管高兴地接过你们的解答，伸手拿起电话。"
 
 #: Game.Levels.Implis.L02_Revert
-#, fuzzy
 msgid "Intro Implis L02"
 msgstr ""
 "运营主管从一个箱子里抽出一叠纸。\n"
 "\n"
-"**运营主管**: 这里真是堆了不少。要是你们还能再帮我一点就太好了。\n"
+"**运营主管**：这里确实堆了不少问题。要是你们还能再帮我一点就太好了。\n"
 "\n"
 "他把最上面那张递给你们。"
 
@@ -4118,20 +4111,20 @@ msgstr ""
 #. §1: `mopo`
 #. §2: `revert «{hA}»`
 #: Game.Levels.Implis.L02_Revert
-#, fuzzy
 msgid "You cannot use §0. There is no §1. Try §2"
 msgstr ""
-"**运营主管**：这是同事给的。\n"
+"**运营主管**：这是我一位同事给的。\n"
 "\n"
-"**司南**：哦，这段我好像在哪儿读过。等下……对！那是我当年爬维基百科的时候： \n"
+"**司南**：哦，这段我好像在哪儿读过。等一下……对！那是我当年爬维基百科的时"
+"候： \n"
 "\n"
-"*“肯定前件（modus ponens）是一种在古代逻辑中就已熟知的推理形式，在许多逻"
-"辑……”*\n"
+"*“肯定前件（modus ponens）是一种早在古代逻辑中就已为人熟知的推理形式，在许多"
+"逻辑……”*\n"
 "\n"
 "**你**：司南！要的是证明，不是历史小作文！还是说我在这儿用 §0 之类的东西就能"
 "推进？\n"
 "\n"
-"**司南**：好吧，不，抱歉。没有 §1。你还是试试 §2。"
+"**司南**：不行，抱歉。这里不能用 §1。你试试 §2。"
 
 #. §0: `revert`
 #. §1: `intro`
@@ -4139,47 +4132,41 @@ msgstr ""
 #. §3: `«{A}» \\to «{B}»`
 #. §4: `revert`
 #: Game.Levels.Implis.L02_Revert
-#, fuzzy
 msgid ""
 "§0 is like §1 'backwards'. §2 takes the premisse out of §3\n"
 "and makes it into an assumption. §4 takes an assumption and sets it as the "
 "implication premisse\n"
 "in front of the goal."
 msgstr ""
-"**你**: 啊哈。§0基本上就是§1倒过来。\n"
+"**你**：啊哈。§0 基本上就是 §1 倒过来。\n"
 "\n"
-"**司南**: 没错。§2把目标里一个蕴含§3的前提拿出来，变成一个假设。§4反过来，把"
-"一个假设放回去，作为蕴含的前提加到目标前面。不过现在快点收尾吧。"
+"**司南**：没错。§2 把目标里一个蕴含 §3 的前提拿出来，变成一个假设。§4 反过来，把"
+"一个假设放到目标前面，作为蕴含的前提。不过现在快点收尾吧。"
 
 #: Game.Levels.Implis.L03_Apply
-#, fuzzy
 msgid "Conclusion Implis L03"
-msgstr "这次电话似乎进行得很顺利。"
+msgstr "这一次，电话似乎打得很顺利。"
 
 #. §0: `revert`
 #. §1: `revert`
 #: Game.Levels.Implis.L03_Apply
-#, fuzzy
 msgid "Intro Implis L03: This Level does not know §0. Try proof without §1"
 msgstr ""
-"可惜这通电话打得不太顺利。他又挂了电话，摇了摇头。\n"
+"可惜，这通电话打得不太顺利。他又挂了电话，摇了摇头。\n"
 "\n"
-"**运营主管**：月球另一边的那位同事不懂 §0。或者至少他装作不懂。你们还有别的主"
-"意吗？\n"
+"**运营主管**：月球另一边的那位同事不懂 §0。或者至少，他装作不懂。你们还有别的"
+"方法吗？\n"
 "\n"
-"他在你们的证明下面画了一条线，补上一个被划掉的 ~§1~，然后把纸又递给你们看了一"
-"遍。"
+"他在你们的证明下面画了一条线，补上一个被划掉的 ~§1~，然后又把那张纸递给你们。"
 
 #: Game.Levels.Implis.L03_Apply
-#, fuzzy
 msgid "This should seem obvious now"
-msgstr "**你**: 嗯，这我现在也觉得挺自然的。"
+msgstr "**你**：嗯，现在我也觉得这挺自然的。"
 
 #. §0: `apply hAB at h`
 #: Game.Levels.Implis.L03_Apply
-#, fuzzy
 msgid "Us the given implication by trying §0"
-msgstr "**司南**: 也许本来直接应用给定的蕴含会更优雅。你试试 §0 吧。"
+msgstr "**司南**：归根结底，直接应用给定的蕴含会更优雅一些。你试试 §0 吧。"
 
 #. §0: `… at h`
 #. §1: `apply hAB`
@@ -4187,69 +4174,60 @@ msgstr "**司南**: 也许本来直接应用给定的蕴含会更优雅。你试
 #. §3: `B`
 #. §4: `A`
 #: Game.Levels.Implis.L03_Apply
-#, fuzzy
 msgid ""
 "§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n"
 "§4 has to be proven."
 msgstr ""
-"**司南**: 我说的是 §0。不过只用 §1 显然也行。\n"
-"  现在你算是把 §2 应用到了证明目标 §3 上，只剩下证明 §4 了。"
+"**司南**：我说的是 §0。不过只用 §1 看来也行。\n"
+"  现在你算是把 §2 应用到了证明目标 §3 上，只需要再证明 §4 就行。"
 
 #. §0: $A \\Rightarrow B \\Rightarrow C$
 #. §1: $A \\Rightarrow C$
 #. §2: `intro`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Combine implications §0 into §1. Try §2"
 msgstr ""
-"**你**: 我该把从 §0 到 §1 的蕴含组合起来？\n"
+"**你**：我是要把 §0 里的两段蕴含串起来，得到 §1 吗？\n"
 "\n"
-"**司南**: 要不你再从 §2 开始？"
+"**司南**：也许你还是该从 §2 开始？"
 
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Conclusion Implis L04"
-msgstr "**运营主管**: 你们真的太厉害了！"
+msgstr "**运营主管**：你们真的太棒了！"
 
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Intro Implis L04"
-msgstr "**运营主管**: 这个现在又是个局部问题。"
+msgstr "**运营主管**：这个也是我们这边的问题。"
 
 #. §0: `«{hB}» : «{B}»`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Now assumption §0 is available"
-msgstr "**司南**: … 等你搞定之后，你就可以把§0当作一个假设来用了。"
+msgstr "**司南**：……证明完成之后，你就能把 §0 当作一个假设来用了。"
 
 #. §0: `B`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Prove §0"
-msgstr "**司南**: 那你现在先证明一下§0 …"
+msgstr "**司南**：那你现在可以先证明一下 §0 ……"
 
 #. §0: `have hB : B`
 #: Game.Levels.Implis.L04_Apply
-#, fuzzy
 msgid "Try holding onto §0"
 msgstr ""
-"**运营主管**: 那么，*我*觉得在这里我们先把 §0 记下来。\n"
+"**运营主管**：那么，*我*会在这里先把 §0 明确写出来。\n"
 "\n"
-"**司南**:  依我看有点多余。不过行吧，也可以这么做。\n"
+"**司南**：依我看有点啰嗦。不过行吧，也可以这么做。\n"
 "\n"
-"**司南** *(对你说)*: 来，试试看！"
+"**司南** *(对你说)*：来，试试看！"
 
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "Conclusion Implis L05"
 msgstr ""
-"运营主管又礼貌地道了谢。\n"
-"他又按了几个按钮，随着一阵响亮的咔啦咔啦声，好几条传送带同时又启动了。"
+"运营主管又郑重地道了谢。\n"
+"他又按了几个按钮，随着一阵响亮的咔啦声，好几条传送带同时重新启动了。"
 
 #. §0: $A \\Rightarrow I$
 #. §1: `intro`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "Find an implication path §0. Try §1"
 msgstr ""
 "**你**：所以我得找到一条蕴含的路径 §0。\n"
@@ -4258,9 +4236,8 @@ msgstr ""
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "Hier again use §0"
-msgstr "**司南**: 那当然还是 §0，不然呢。"
+msgstr "**司南**：那当然还是 §0，不然呢。"
 
 #. §0: $$
 #.   \\begin{CD}
@@ -4272,48 +4249,41 @@ msgstr "**司南**: 那当然还是 §0，不然呢。"
 #.   \\end{CD}
 #.   $$
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid ""
 "Intro Implis L05: Introduce implication graph\n"
 "  §0"
 msgstr ""
 "下一页看起来稍微复杂一点。\n"
-"为了不让你们失去全局观，司南立刻把各种蕴含用一张图总结出来。\n"
+"为了不让你们失去全局观，司南用一张图把这些蕴含关系总结出来了。\n"
 "§0"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 1: §0 different prop"
-msgstr "**司南**: 这看起来像是走进死胡同了 …"
+msgstr "**司南**：这看起来像是走进死胡同了……"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 2: §0 different prop"
-msgstr "**司南**: 这看起来不妙。"
+msgstr "**司南**：这看起来不妙。"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 3: §0 different prop"
-msgstr "**司南**: 嗯，这里肯定哪里不对 …"
+msgstr "**司南**：嗯，这里肯定哪里有问题……"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 4: §0 different prop"
 msgstr "**司南**：停！拐错了。"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 5: §0 different prop at hyp"
 msgstr "**司南**：你确定吗？"
 
 #. §0: `apply`
 #: Game.Levels.Implis.L05_Apply
-#, fuzzy
 msgid "[Implis.L05] Hint 6: §0 different prop at hyp"
 msgstr "**司南**：呃……"
 
@@ -4329,7 +4299,6 @@ msgstr "**司南**：呃……"
 #. §9: `mp`
 #. §10: `mpr`
 #: Game.Levels.Implis.L06_Iff
-#, fuzzy
 msgid ""
 "Conclusion Implis L06: Explain that analogous to §0 with §1 and §2,\n"
 "§3 has §4 and §5. §6 can be understood as §7. It is §8 as §9\n"
@@ -4337,27 +4306,25 @@ msgid ""
 msgstr ""
 "**运营主管**：好吧，这我明白了。\n"
 "\n"
-"**司南** *(对你说)*：顺便说一句，就像在 §0 里两部分叫 §1 和 §2 一样，在 §3 里"
-"两部分叫 §4 和 §5。\n"
+"**司南** *(对你说)*：顺便说一句，就像 §0 有两部分，分别叫 §1 和 §2 一样，§3 也有两个"
+"部分，分别叫 §4 和 §5。\n"
 "\n"
-"**你**：所以 §6 就是 §7？为什么是 §8？\n"
+"**你**：所以 §6 就是 §7？为什么叫做 §8？\n"
 "\n"
-"**司南**：§9 代表 Modus Ponens。Modus ponens 是一种在古代逻辑里就很常见的推理"
-"形式，在很多逻辑系统中…. 啊不对，你又不想听这个。§10 里的“r”代表“reverse”，因"
-"为它是反方向。"
+"**司南**：§9 指的是Modus Ponens。Modus ponens 是一种在古代逻辑里就很常见的推理"
+"形式，在很多逻辑系统中…… 啊不对，这个你刚才就不想听。§10 里的“r”代"
+"表“reverse”，因为它是反方向。"
 
 #: Game.Levels.Implis.L06_Iff
-#, fuzzy
 msgid "Intro Implis L06"
 msgstr ""
-"**运营主管**: 我们以前也有几条传送带，能双向运行。我保险起见把它们全停了，因"
-"为最新的手册不建议用这种双向带。不过也许在某些前提下它们其实是安全的？你们觉"
-"得这个情况怎么样？"
+"**运营主管**：我们以前也有几条传送带，可以双向运行。保险起见，我把它们全停"
+"了，因为最新的手册不建议用这种双向传送带。不过也许在某些前提下它们其实是安全"
+"的？你们觉得这个情况怎么样？"
 
 #: Game.Levels.Implis.L06_Iff
-#, fuzzy
 msgid "Parts available in assumptions"
-msgstr "**你**: 啊，而且这两部分我在假设里已经有了。"
+msgstr "**你**：啊，而且这两部分已经都在假设里了。"
 
 #. §0: `A ↔ B`
 #. §1: $A \\iff B$
@@ -4366,72 +4333,64 @@ msgstr "**你**: 啊，而且这两部分我在假设里已经有了。"
 #. §4: `A ∧ B`
 #. §5: `constructor`
 #: Game.Levels.Implis.L06_Iff
-#, fuzzy
 msgid ""
 "§0 is Leanic for §1. §2 consists of two parts. It is defined as §3.\n"
 "It is a similar defintion to §4. Start with §5"
 msgstr ""
-"**司南**: §0当然是Lean语里§1的写法，也就是“当且仅当”。所以命题§2由两部分组"
+"**司南**：§0 当然是Lean语里 §1 的写法，也就是“当且仅当”。所以命题§2由两部分组"
 "成；它被定义为§3。\n"
 "\n"
-"**你**: 所以跟“与”很像，§4？\n"
+"**你**：所以和“且”很像，§4？\n"
 "\n"
-"**司南**: 对。相应地，你在这里也可以从§5开始。"
+"**司南**：对。因此你在这里也可以从 §5 开始。"
 
 #: Game.Levels.Implis.L07_Symm
-#, fuzzy
 msgid "Conclusion Implis L07"
 msgstr "**运营主管**：这也太简单了。可下一个问题看起来更难。"
 
 #: Game.Levels.Implis.L07_Symm
-#, fuzzy
 msgid "Intro Implis L07"
-msgstr "**运营主管**: 这里还有这么个东西。"
+msgstr "**运营主管**：这里还有这么个问题。"
 
 #. §0: `symm`
 #. §1: `symm at «{h}»`
 #: Game.Levels.Implis.L07_Symm
-#, fuzzy
 msgid "Try §0 or §1 to turn one around"
 msgstr ""
-"**你**: 这也太拧巴了。\n"
+"**你**：这不就是反过来了吗。\n"
 "\n"
-"**司南**: 我知道有个工具能搞定。用§0或§1，你可以把其中一个翻过来。"
+"**司南**：我知道有个工具能搞定。用 §0 或 §1，你可以把其中一个翻过来。"
 
 #: Game.Levels.Implis.L08_Rw
-#, fuzzy
 msgid "Conclusion Implis L08"
-msgstr "**运营主管**: 你们要是这么继续下去，我们就能把整一摞都搞定了！"
+msgstr "**运营主管**：你们要是一直这么下去，我们就能把这一整摞都搞定了！"
 
 #: Game.Levels.Implis.L08_Rw
-#, fuzzy
 msgid "Intro Implis L08"
-msgstr "**运营主管**: 来，你们也能说说这个吗？"
+msgstr "**运营主管**：来，这个你们也能说说吗？"
 
 #. §0: $B \\iff A \\iff D \\iff C$
 #. §1: `rw [h₁]`
 #. §2: `C`
 #. §3: `D`
 #: Game.Levels.Implis.L08_Rw
-#, fuzzy
 msgid "Rewrite §0. Start with §1 to replace §2 with §3"
 msgstr ""
-"**你**: §0，它们不都等价吗…\n"
+"**你**：§0，它们不都是等价的吗……\n"
 "\n"
-"**司南**: 是啊，但你得帮他把这些等价式改写一下。用§1你可以把§2替换成§3。"
+"**司南**：是啊，但你得帮他把这些等价关系改写一下。用 §1 你可以把 §2 替换成 §3。"
 
 #. §0: `←`
 #. §1: `\\l`
 #. §2: `rw [← hₓ]`
 #: Game.Levels.Implis.L08_Rw
-#, fuzzy
 msgid ""
 "To rewrite into the other direction you can use §0 (§1) infront of the name. "
 "Try §2"
 msgstr ""
-"**你**: 那如果我想往另一个方向改写呢？\n"
+"**你**：那如果我想反方向改写呢？\n"
 "\n"
-"**司南**: 那你就在名字前面写一个§0（§1，也就是小写的“L”），也就是§2。"
+"**司南**：那你就在名字前面写一个 §0（§1，也就是小写的英文字母“L”），比如 §2。"
 
 #. §0: `A ↔ A`
 #. §1: `rfl`
@@ -4439,26 +4398,24 @@ msgstr ""
 #. §3: `rfl`
 #. §4: `rfl`
 #: Game.Levels.Implis.L08_Rw
-#, fuzzy
 msgid ""
 "You can continue until there is §0 and then apply §1. §2 always uses §3,\n"
 "meaning hat §4 does not have to be written"
 msgstr ""
-"**你**: 呃，这搞反了。\n"
+"**你**：呃，这搞反了。\n"
 "\n"
-"  **司南**: 对，反过来会更好。不过你现在要是就这么继续做，直到得到类似§0的东"
-"西，§1就能把它证明掉。\n"
+"  **司南**：对，反过来会更好。不过你现在要是就这么继续做，直到得到类似 §0 的东"
+"西，§1 就能把它证明出来。\n"
 "\n"
-"  **司南**: 我突然想到，§2反正也会试着应用§3。\n"
-"  也就是说，你甚至不用把§4写出来。"
+"  **司南**：我突然想到，§2 反正也会试着应用 §3。\n"
+"  也就是说，你甚至不用把 §4 写出来。"
 
 #: Game.Levels.Implis.L09_Trans
-#, fuzzy
 msgid "Conclusion Implis L09"
 msgstr ""
-"**司南**: 那样，好点了吗？\n"
+"**司南**：怎么样，好点了吗？\n"
 "\n"
-"**你**: 不知道。反正我们可以继续。"
+"**你**：不知道。反正我们可以继续。"
 
 #. §0: `rw`
 #. §1: `trans`
@@ -4467,44 +4424,40 @@ msgstr ""
 #. §4: `B ↔ A`
 #. §5: `trans D`
 #: Game.Levels.Implis.L09_Trans
-#, fuzzy
 msgid ""
 "Intro Implis L09: Instead of §0 use §1 here.\n"
 "With it you can solve §2 step-by-step by using\n"
 "§3 to introduce the intermediate step §4 and then\n"
 "perform the next step with §5"
 msgstr ""
-"**你**: 不知道为什么，这些§0给我的感觉就像是在绕远路论证。就不能直来直去一点"
+"**你**：不知道为什么，这些 §0 给我的感觉就像是在绕远路论证。就不能直来直去一点"
 "吗，还是说这里的人都爱拐弯？\n"
 "\n"
-"**司南**: 也许你会更喜欢§1。用它你可以把你的等价链§2一步一步做完：先用§3引入"
+"**司南**：也许你会更喜欢 §1。用它你可以把这条等价链 §2 一步一步做完：先用 §3 引入"
 "中间步骤§4，然后用§5引入下一个中间步骤。"
 
 #. §0: `intro`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "Best begin with §0"
 msgstr ""
-"**你**: 嗯我至少可以先从§0开始…\n"
+"**你**：嗯，我至少可以先从 §0 开始……\n"
 "\n"
-"**司南**: …然后我们再往下看！"
+"**司南**：……然后我们再往下看！"
 
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "Conclusion Implis L10"
 msgstr ""
-"**运营主管**: 好的，太棒了。这应该就行。\n"
+"**运营主管**：好的，真棒。这应该就行。\n"
 "\n"
-"他又打起电话。\n"
+"他又打起电话了。\n"
 "\n"
-"**运营主管**: Bingo！"
+"**运营主管**：Bingo！"
 
 #. §0: `rw`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "Intro Implis L10: §0 is not allowed here as well"
 msgstr ""
-"**运营主管**: 这个又是给我那个脑子不太灵光的同事看的。我觉得他也不喜欢§0。那"
+"**运营主管**：这个又是给我那个脑子不太灵光的同事看的。我觉得他也不喜欢§0。那"
 "还能搞定吗？"
 
 #. §0: `apply`
@@ -4515,79 +4468,70 @@ msgstr ""
 #. §5: `«{h}».mp`
 #. §6: `apply («{h}».mp) at …`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid ""
 "We know that §0 can be used on implications. Intuitively, for equivalence "
 "§1\n"
 "one could use §2. The direction §3 of §4 is denoted by §5.\n"
 "Try §6"
 msgstr ""
-"**司南**：所以一个蕴含你总是用 §0 来用…. \n"
+"**司南**：嗯，蕴含可以用 §0 来应用……\n"
 "\n"
-"**你**：我知道啦！但 §1 不是蕴含，而是一个等价。那我其实应该想说 §2。\n"
+"**你**：我知道啦！但 §1 不是蕴含，而是一个等价。那我其实想写成 §2。\n"
 "\n"
-"**司南**：§4 的方向 §3 叫 §5。你可以用 §6 来应用它。"
+"**司南**：§4 的方向 §3 叫做 §5。你可以用 §6 来应用它。"
 
 #. §0: `apply g`
 #: Game.Levels.Implis.L10_Iff
-#, fuzzy
 msgid "[Implis.L10] Hint 1: §0 is also a possible direction"
-msgstr "**司南**: 你当然也可以这么开头。"
+msgstr "**司南**：你当然也可以这么开头。"
 
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Conclusion Implis L11"
-msgstr "**运营主管**: 完美，这应该够了！"
+msgstr "**运营主管**：完美，这应该够了！"
 
 #. §0: `intro`
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Exactly, try §0"
-msgstr "**司南**: 没错，那就是§0。"
+msgstr "**司南**：没错，那就是 §0。"
 
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Goal is in assumptions"
-msgstr "**你**: 啊，所以现在目标已经跑到假设里了。"
+msgstr "**你**：啊，现在目标已经在假设里了。"
 
 #. §0: `rw [«{h}»]`
 #. §1: `apply («{h}».mp)`
 #. §2: `obtain ⟨mp, mpr⟩ := «{h}»`
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Instead of §0 and §1 try §2"
 msgstr ""
-"**你**: 我倒是知道§0和§1，但这次我们不是想避免用它们嘛。\n"
+"**你**：我倒是知道 §0 和 §1，但这次我们不是想避免用它们嘛。\n"
 "\n"
-"**司南**: 你可以做的是，用§2把这个假设拆成两部分。"
+"**司南**：你可以用 §2 把这个假设拆成两部分。"
 
 #. §0: `rw`
 #. §1: `apply`
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Intro Implis L11: Prove without using §0 or §1"
 msgstr ""
-"**运营主管**: 啊，下一页也是这位同事写的。不过这里还有一张便条。我们以前已经"
+"**运营主管**：啊，下一页也是这位同事写的。不过这里还有一张便条。我们以前已经"
 "有过一个证明，但他不喜欢。他想要一个既不用 §0 也不用 §1 的证明！！\n"
 "\n"
 "他深吸一口气，然后叹了口气。\n"
 "\n"
-"**运营主管**: 我觉得他总是装得比实际笨多了。不过你们觉得，你们搞得定吗？"
+"**运营主管**：我总觉得他是在装傻，实际没那么笨。不过你们觉得自己搞得定吗？"
 
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Start with implication"
-msgstr "**你**:  嗯 … 首先，这里是个蕴含。那我就可以先从它下手。"
+msgstr "**你**：嗯……首先，这里是一个蕴含。那我就可以先从它下手。"
 
 #. §0: `rw [←«{h}»]`
 #. §1: `apply «{h}».mp`
 #. §2: `A → B`
 #: Game.Levels.Implis.L11_Iff
-#, fuzzy
 msgid "Try §0 | §1. Go step back s.t. goal §2"
 msgstr ""
-"**司南**: 这里你现在得用§0或者§1。\n"
-"  还是先退一步吧，让目标变成§2。"
+"**司南**：这里你现在得用 §0 或者 §1。\n"
+"  还是先退一步吧，让目标变成 §2。"
 
 #: Game.Levels.Implis.L12_ByCases
 #, fuzzy
@@ -4598,33 +4542,30 @@ msgstr "运营主管赞同地点了点头。"
 #. §1: `¬A`
 #. §2: `by_cases h : A`
 #: Game.Levels.Implis.L12_ByCases
-#, fuzzy
 msgid "Either §0 or §1 is true. Try §2"
 msgstr ""
-"**你**：嗯，总之两句话 §0 或 §1 里总有一句是真的。\n"
+"**你**：嗯，总之 §0 和 §1 这两个命题，总有一个是真的。\n"
 "\n"
-"**司南**：典型的分类讨论，我觉得。试试 §2。"
+"**司南**：我觉得这是典型的分类讨论。试试 §2。"
 
 #: Game.Levels.Implis.L12_ByCases
-#, fuzzy
 msgid "Intro Implis L12"
 msgstr ""
-"下一个问题时，运营主管愣了一下。\n"
+"看到下一个问题时，运营主管愣了一下。\n"
 "\n"
-"**运营主管**: 说实话我都不知道这张纸是哪来的。\n"
+"**运营主管**：说实话，我都不知道这张纸是哪来的。\n"
 "这根本不是我的。不过看起来还挺有意思。"
 
 #. §0: `A`
 #. §1: `A`
 #: Game.Levels.Implis.L12_ByCases
-#, fuzzy
 msgid ""
 "Proof consists now of two parts. First assumes that §0 is true. Second "
 "assumes that §1\n"
 "is false"
 msgstr ""
-"**司南**: 你看，现在这个证明有两部分。第一部分你假设§0为真。第二部分你假设§1"
-"为假。"
+"**司南**：你看，现在这个证明分成了两部分。第一部分假设 §0 为真。第二部分假设 "
+"§1 为假。"
 
 #. §0: `not_not`
 #. §1: `↔`
@@ -4632,36 +4573,33 @@ msgstr ""
 #. §3: `rw`
 #. §4: `rw [not_not]`
 #: Game.Levels.Implis.L13_Rw
-#, fuzzy
 msgid ""
 "A lemma like §0 that contains §1 or §2 in its statements can also be used "
 "with §3: §4"
 msgstr ""
 "**司南**：一个引理，如果它的陈述里像 §0 那样出现了一个 §1 或 §2，也可以用 §3 "
-"来用，比如 §4。"
+"来改写，比如 §4。"
 
 #. §0: `rw`
 #. §1: `rfl`
 #: Game.Levels.Implis.L13_Rw
-#, fuzzy
 msgid "Conclusion Implis L13: Explain that §0 always tries to apply §1"
 msgstr ""
-"**你**: 我们已经搞定了…？\n"
+"**你**：我们已经搞定了……？\n"
 "\n"
-"**司南**: 对，§0之后总会试着调用§1，而这里刚好就成功了。"
+"**司南**：对，§0 之后总会试着调用 §1，而这里刚好就成功了。"
 
 #. §0: `apply`
 #. §1: ```
 #. lemma not_not (A : Prop) : ¬¬A ↔ A
 #. ```
 #: Game.Levels.Implis.L13_Rw
-#, fuzzy
 msgid ""
 "Intro Implis L13: Do not use §0. Try it with\n"
 "§1"
 msgstr ""
-"**运营主管**：又是给那位同事的东西…. 而且他又想要一个不用 §0 的证明。我还看到"
-"我以前已经为这个记过笔记了。对，确实有这么个引理：\n"
+"**运营主管**：又是给那位同事的问题……而且他又想要一个不用 §0 的证明。我看到自"
+"己以前还为这个记过一点笔记。对了，确实有这么个引理：\n"
 "§1\n"
 "\n"
 "**运营主管**：你们能用它搞定吗？"
@@ -4671,19 +4609,18 @@ msgstr ""
 #. §2: `¬¬C`
 #. §3: `¬¬B`
 #: Game.Levels.Implis.L13_Rw
-#, fuzzy
 msgid ""
 "Only two of three §0 are rewritten. §1 only rewrites only first found "
 "occurance i.e. §2.\n"
 "As §3 is considered to be something 'different' the lemma has to be applied "
 "again"
 msgstr ""
-"**你**: 哈？为啥这一下把 §0 里的 3 个里有 2 个都改写了？\n"
+"**你**：哈？为啥这一步把3个 §0 里的2个都改写了？\n"
 "\n"
-"**司南**: §1 只会改写它找到的第一个，也就是 §2。但因为这个出现了好几次，所以"
-"它们都会被替换掉 ….\n"
+"**司南**：§1 只会改写它找到的第一个实例，也就是 §2。但因为这个实例出现了好几"
+"次，所以它们都会被替换掉……\n"
 "\n"
-"**你**: 啊，那 §3 是另一个东西，所以我还得再用一次那个引理。"
+"**你**：啊，所以 §3 是另一个实例，那我还得再用一次这个引理。"
 
 #. §0: `tauto`
 #. §1: `simp`
@@ -4735,16 +4672,15 @@ msgstr ""
 #. §20: `P`
 #. §21: `¬P`
 #: Game.Levels.Implis.L14_Summary
-#, fuzzy
 msgid ""
 "Intro Implis L14: This chapter used the following operations:\n"
 "§0, §1, §2, §3 (reversal of §4), §5, §6, §7 (changes §8 to §9),\n"
 "§10 (changes §11 to §12 and §13), §14 (rewrite goal with §15), §16 (rewrite\n"
 "assumption §17 using §18) and §19 (introduce cases §20 and §21)"
 msgstr ""
-"**运营主管**：你们真的帮了我大忙！这是最后一个问题。我从前任那里继承来的。他"
-"说只要我们能把这个解决掉，这里就能重新运转起来。但在我看来一直都太难了，难到"
-"我连试都不敢试。你们愿意试一次吗？\n"
+"**运营主管**：你们真的帮了我大忙！这是最后一个问题。我从前任那里接手的。他说"
+"只要我们能把这个解决掉，这里就能重新运转起来。但在我看来一直都太难了，难到我"
+"连试都不敢试。你们愿意试试看吗？\n"
 "\n"
 "**你**：当然，拿来看看！司南，你能不能也再给我显示一下那种贴心的小总结——我理"
 "论上在过去五分钟里学到了啥？\n"
@@ -4785,18 +4721,16 @@ msgstr ""
 
 #. §0: `by_cases`
 #: Game.Levels.Implis.L14_Summary
-#, fuzzy
 msgid "Maybe try §0 again"
-msgstr "**司南**: 也许你又可以用§0。"
+msgstr "**司南**：也许你可以再用一次 §0。"
 
 #. §0: `→`
 #: Game.Levels.Implis.L14_Summary
-#, fuzzy
 msgid "Remind that §0 in this case is equivalence"
 msgstr ""
 "**你** *(小声)*：这不就是 §0 的定义吗？\n"
 "\n"
-"**司南** *(小声)*：可以这么看。但在 Lean语 里这只是个等价。"
+"**司南** *(小声)*：可以这么看。但在Lean语里这只是个等价。"
 
 #. §0: `h`
 #. §1: `obtain`
@@ -4807,9 +4741,8 @@ msgstr "**司南**：我会把假设 §0 用 §1 拆开。"
 
 #. §0: `intro`
 #: Game.Levels.Implis.L14_Summary
-#, fuzzy
 msgid "Try §0 to solve implication"
-msgstr "**司南**：嗯，蕴含你总是用 §0 来处理。"
+msgstr "**司南**：嗯，遇到蕴含，你都可以用 §0 来处理。"
 
 #. §0: `tauto`
 #: Game.Levels.Implis.L14_Summary
