@@ -4913,28 +4913,27 @@ msgstr ""
 "还是认真想想，回忆一下当时怎么做的吧。"
 
 #: Game.Levels.Logo
-#, fuzzy
 msgid "Intro Logo"
 msgstr ""
 "由于时空中一个意料之外、而且非规范的奇点，你一不小心跌进了一个平行宇宙。\n"
 "看起来是回不去了。\n"
 "最好做好心理准备：你得留在这里，并且想办法适应。\n"
 "\n"
-"看起来这里有很多可爱的小行星。\n"
+"看起来这里有很多友好的小星球。\n"
 "全都宜居，而且每天最多还附赠七次日落。\n"
-"只不过它们全都住着形式哲学家——一些古怪的生物，有着离谱的数学执念。\n"
-"更倒霉的是，大家已经传开了：你在原来的宇宙里是个数学家。\n"
+"只不过它们全都住着形式哲学家——一些古怪的生物，有着异乎寻常的数学执念。\n"
+"更不巧的是，消息已经传开了：你在原来的宇宙里是个数学家。\n"
 "只要你还没学会满足他们那永无止境的求知欲，你在这儿就别想清净。\n"
 "\n"
-"只有两个难点：\n"
-"第一，形式哲学家看起来压根没有什么深层的数学理解；第二，他们只用一种你完全不"
-"熟的方言来讨论数学，他们把它叫做Lean语 [liːnʃ]。\n"
+"只有两个小麻烦：\n"
+"第一，形式哲学家看起来没有什么深层的数学理解；第二，他们只用一种你完全不熟悉"
+"的方言来讨论数学，他们把它叫做Lean语 [liːnʃ]。\n"
 "\n"
 "幸好司南跟你一起穿越了宇宙。\n"
-"司南，就是你的小SmartElf。\n"
-"司南虽然也不是你在这种情况下最希望拥有的那种数学灯塔，但看起来他不知从哪儿学"
-"过Lean语。\n"
-"而这可太值钱了。"
+"司南，就是你的小智能精灵。\n"
+"司南虽然也不是你在这种情况下最希望拥有的那种数学天才，但看起来他不知从哪儿学"
+"过一点Lean语。\n"
+"在这里，这可是非常宝贵的。"
 
 #: Game.Levels.Logo
 #, fuzzy
@@ -4943,13 +4942,12 @@ msgstr "逻辑"
 
 #. §0: `tauto`
 #: Game.Levels.Logo.L01_Tauto
-#, fuzzy
 msgid "Conclusion Logo L01: Remind that §0 cannot be used"
 msgstr ""
-"**洛格温** *(有点懵)*：是的，严格来说没错。\n"
-"但你们可别以为这样在*这个*星球上能走多远！\n"
-"我的臣民不理解§0。\n"
-"你们得再多费点劲才行。"
+"**洛格温** *(有些错愕)*：嗯，严格来说没错。\n"
+"但你们可别以为靠这一招就能在*这个*星球上走多远！\n"
+"我的臣民可不懂 §0。\n"
+"你们得再多费点功夫才行。"
 
 #. §0: `«{A}» «{B}» «{C}» : Prop`
 #. §1: `«{A}»`
@@ -4959,13 +4957,12 @@ msgstr ""
 #. §5: $⇒$
 #. §6: `tauto`
 #: Game.Levels.Logo.L01_Tauto
-#, fuzzy
 msgid ""
 "Explain that §0 introduces statements §1, §2 und §3 as\n"
 "propositions. The symbol §4 is equivalent to the implication symbol §5. Try "
 "§6."
 msgstr ""
-"**司南**：这很简单。她用§0的意思是：§1、§2和§3是一些陈述（*propositions*）。"
+"**司南**：这很简单。她写的 §0 意思是：§1、§2和§3是一些陈述（*propositions*）。"
 "而§4指的是§5，也就是“蕴含”。其他符号你都认识吧？\n"
 "\n"
 "**你**：呃……认识是认识。但我还是得先想一想。\n"
@@ -4979,45 +4976,39 @@ msgstr ""
 "**司南**：快点……"
 
 #: Game.Levels.Logo.L01_Tauto
-#, fuzzy
 msgid "Intro Logo L01"
 msgstr ""
-"你们刚刚降落在洛格温女王的星球上。她开门见山直奔主题：\n"
+"你们刚刚降落在洛格温女王的星球上。她开门见山地问道：\n"
 "\n"
 "**洛格温**：来自异世界的诸位，欢迎来到Lean宇宙！请允许我只问一个问题。为什么"
 "成立……\n"
 "\n"
-"说着她在一张纸上乱写了点东西：上面是一些假设，下面是一个结论。中间显然要你填"
-"进一个证明。你无助地看向司南。"
+"说着，她在一张纸上草草写下几行：上面是一些假设，下面是一个结论。中间显然要你"
+"填进一个证明。你无助地看向司南。"
 
 #: Game.Levels.Logo.L02_Rfl
-#, fuzzy
 msgid "Conclusion Logo L02"
-msgstr "**臣民**: 啊，对对对。是的，您说得太对了。我老是忘。rfl, rfl, rfl …."
+msgstr "**臣民**：啊，对。是的，您说得没错。我老是忘。rfl, rfl, rfl …."
 
 #. §0: $42 = 42$
 #: Game.Levels.Logo.L02_Rfl
-#, fuzzy
 msgid "Intro Logo L02: Why is §0?"
 msgstr ""
-"与此同时，已经排起了一条长长的臣民队伍，他们都很想提问。洛格温把第一个招手叫"
-"到前面。他清了清嗓子。\n"
+"与此同时，臣民们已经排起了长队，都急着想提问。洛格温招手叫第一个人上前。他清"
+"了清嗓子。\n"
 "\n"
-"**臣民**：为什么是§0？\n"
+"**臣民**：为什么 §0 成立？\n"
 "\n"
-"你目瞪口呆地看着他。他又给你写了一遍。"
+"你一脸难以置信地看着他。他又把问题写给你看。"
 
 #. §0: `rfl`
 #: Game.Levels.Logo.L02_Rfl
-#, fuzzy
 msgid "Remind: Equality is reflexive, so try §0"
-msgstr "**司南**: 这不是很明显嘛。你只要提醒他：相等是*自反*的。试试 §0。"
+msgstr "**司南**: 显然。你只要提醒他：相等关系是*自反*的。试试 §0。"
 
 #: Game.Levels.Logo.L03_Assumption
-#, fuzzy
 msgid "Conclusion Logo L03"
-msgstr ""
-"**臣民**：对，没错！要是你们知道我在这个问题上已经把脑袋想破了多少次就好了！"
+msgstr "**臣民**：对，没错！你们都不知道，这个问题我琢磨了多久！"
 
 #. §0: `«{n}» : ℕ`
 #. §1: `«{n}»`
@@ -5031,7 +5022,6 @@ msgstr ""
 #. §9: `1 < n`
 #. §10: `assumption`
 #: Game.Levels.Logo.L03_Assumption
-#, fuzzy
 msgid ""
 "Explain that §0 means §1 is a natural number. The notation §2 is not used.\n"
 "§3, §4, §5 are names for the respective assumptions §6, §7 und §8.\n"
@@ -5039,33 +5029,31 @@ msgid ""
 msgstr ""
 "**司南**：§0 的意思是，§1 是一个自然数。\n"
 "\n"
-"**你**：那他为什么不写 §2？？\n"
+"**你**：那他为什么不直接写 §2？？\n"
 "\n"
-"**司南**：因为这里的人都挺怪的 ….\n"
-"我之后再慢慢跟你解释。现在我先把问题解码出来。\n"
+"**司南**：因为这里的类型都挺奇怪的 ….\n"
+"我之后再慢慢跟你解释。现在我先把问题解读出来。\n"
 "\n"
 "**司南**：所以，§3、§4、§5 只是不同假设的名字，分别对应假设 §6、§7 和 §8。我"
 "们要证明的是：§9。\n"
 "\n"
-"**你**：可那不就是刚才的一个假设吗。\n"
+"**你**：可那不就是其中一个已知假设吗？\n"
 "\n"
 "**司南**：对，没错。\n"
 "\n"
 "**你**：？？？\n"
 "\n"
-"**司南**：你得把它明确告诉他。用 §10 试试。"
+"**司南**：你得把这一点明确告诉他。用 §10 试试。"
 
 #: Game.Levels.Logo.L03_Assumption
-#, fuzzy
 msgid "Intro Logo L03"
 msgstr ""
-"第一个臣民还在嘀咕 rfl, rfl, rfl 的时候，下一个就已经走上前来。\n"
-"他很害羞，只写了这么一句。"
+"第一个臣民还在嘀咕 rfl, rfl, rfl 的时候，下一个已经走上前来。\n"
+"他很害羞，只用书写交流。"
 
 #: Game.Levels.Logo.L04_Assumption
-#, fuzzy
 msgid "Conclusion Logo L04"
-msgstr "**臣民**：这也太快了。太棒了！非常感谢。"
+msgstr "**臣民**：这也太快了。真棒！非常感谢。"
 
 #. §0: `«{A}» : Prop`
 #. §1: `«{A}»`
@@ -5073,18 +5061,17 @@ msgstr "**臣民**：这也太快了。太棒了！非常感谢。"
 #. §3: `«{A}»`
 #. §4: `«{A}»`
 #: Game.Levels.Logo.L04_Assumption
-#, fuzzy
 msgid ""
 "Explain that §0 means that §1 is some statement.\n"
 "§2 is the name of the assumption that §3 is true. Try to solve §4 using said "
 "assumption"
 msgstr ""
-"**司南**：这里§0又表示§1是某个陈述。而§2是一个名字，用来指代“§3为真”这个假"
+"**司南**：这里 §0 还是表示 §1 是某个陈述。而 §2 是一个名字，用来指代“§3为真”这个假"
 "设。\n"
 "\n"
-"**你**：然后在这个假设下我们要证明§4？\n"
+"**你**：也就是说，我们要在这个假设下，证明 §4？\n"
 "\n"
-"**司南**：对。你现在自己就能想出来怎么做了吧？"
+"**司南**：对。你现在能自己想出来怎么做了吧？"
 
 #: Game.Levels.Logo.L04_Assumption
 #, fuzzy
@@ -5093,38 +5080,35 @@ msgstr "第三个臣民带着下面这个问题来了。"
 
 #. §0: `assumption`
 #: Game.Levels.Logo.L04_Assumption
-#, fuzzy
 msgid "Use §0 as goal is in assumptions"
 msgstr ""
-"**司南**：不就跟刚才一模一样嘛：要证明的陈述本身就属于假设。所以§0也照样能"
-"行。"
+"**司南**：这和刚才那个问题一样：要证明的陈述本身就在已知假设里。所以§0这次也"
+"能用。"
 
 #. §0: `decide`
 #. §1: `decide`
 #: Game.Levels.Logo.L05_True
-#, fuzzy
 msgid ""
 "Conclusion Logo L05: §0 cannot be used every time. §1 works only in special "
 "cases"
 msgstr ""
-"**捣蛋鬼**：就想看看你们是不是不笨 ….\n"
+"**捣蛋鬼**：只是想看看你们脑子还算不算灵光 ….\n"
 "\n"
 "**你** *(对司南说)*：我们不能干脆一直用这个 §0 吗？\n"
 "\n"
-"**司南**：不行，§1 只在一些特殊情况下才管用——也就是存在一个简单算法能判定这句"
-"话是真是假。"
+"**司南**：不行，§1 只在一些特殊情况下才管用——也就是存在一个简单算法，能判定这"
+"个陈述是真是假。"
 
 #. §0: `True`
 #. §1: `decide`
 #: Game.Levels.Logo.L05_True
-#, fuzzy
 msgid "Explain that §0 is a special statement that is always true. Try §1"
 msgstr ""
 "**司南**：这个§0是个特殊的陈述，也就是那个永远、无条件为真的陈述。\n"
 "\n"
 "**你**：那到底要证明什么？\n"
 "\n"
-"**司南**：我觉得什么都不用。试试§1吧。"
+"**司南**：我想，什么都不用。试试 §1 吧。"
 
 #: Game.Levels.Logo.L05_True
 #, fuzzy
@@ -5132,9 +5116,8 @@ msgid "Intro Logo L05"
 msgstr "队伍里的下一个臣民是个捣蛋鬼。"
 
 #: Game.Levels.Logo.L06_Not
-#, fuzzy
 msgid "Conclusion Logo L06"
-msgstr "姐姐笑了，赶紧追着她弟弟跑去。"
+msgstr "那位姐妹笑了笑，赶紧追着捣蛋鬼跑开了。"
 
 #. §0: `¬`
 #. §1: `(A : Prop)`
@@ -5159,21 +5142,19 @@ msgstr ""
 "**司南**：试试看！"
 
 #: Game.Levels.Logo.L06_Not
-#, fuzzy
 msgid "Intro Logo L06"
-msgstr "捣蛋鬼还带着一个姐姐。"
+msgstr "捣蛋鬼还带来了自己的姐妹。"
 
 #. §0: `contradiction`
 #: Game.Levels.Logo.L07_Contradiction
-#, fuzzy
 msgid "Conclusion Logo L07: There is §0 in assumptions"
 msgstr ""
 "第一个刁难者显然很满意。\n"
 "\n"
 "**你**：那刚才是反证法吗？\n"
 "\n"
-"**司南**：不不，反证法不是那样的。这里的论证是：我们的假设里有一个 §0，所以任"
-"何随便一句话都能推出。"
+"**司南**：不不，反证法不是那样的。这里的论证是：我们的假设里有一个 §0，所以可"
+"以推出任意陈述。"
 
 #. §0: `«{A}»`
 #. §1: `«{h}»`
@@ -5185,7 +5166,6 @@ msgstr ""
 #. §7: `False`
 #. §8: `contradiction`
 #: Game.Levels.Logo.L07_Contradiction
-#, fuzzy
 msgid ""
 "Explain that §0 is a statement and §1 is the assumption that §2 is true.\n"
 "Remind that §3 is always false. Explain that assumption §4 is false. As any "
@@ -5194,24 +5174,22 @@ msgid ""
 "and §7\n"
 "by applying §8."
 msgstr ""
-"**你**：如果我没看错的话，§0是一个命题，而且我们还有一个叫§1的假设，它说….\n"
+"**你**：如果我没看错的话，§0 是一个陈述，而且我们还有一个叫 §1 的假设，它说….\n"
 "\n"
 "**司南**：…它说§2成立。\n"
 "\n"
 "**你**：我还以为§3永远不成立？\n"
 "\n"
-"**司南**：对，没错。这个假设就是§4，也就是假的。众所周知，从一个假的假设可以"
-"证明任何东西！尤其是我们要的命题§5。\n"
+"**司南**：对，没错。这个假设就是 §4，也就是假的。众所周知，从一个假的假设可以"
+"证明一切！尤其是我们要的陈述 §5。\n"
 "\n"
-"**你**：那我现在要怎么跟这个形式哲学家解释啊？\n"
+"**你**：那我现在要怎么跟这个形式哲学家解释呢？\n"
 "\n"
-"**司南**：我觉得你得提醒他：在普遍有效的假设§6和他的假设§7之间有矛盾。试试"
-"§8。"
+"**司南**：我觉得你得提醒他：总是成立的 §6 和他的假设 §7 之间有矛盾。试试 §8。"
 
 #: Game.Levels.Logo.L07_Contradiction
-#, fuzzy
 msgid "Intro Logo L07"
-msgstr "接下来来了三个刁难者。第一个有这么个问题："
+msgstr "接下来来了三个刁难者。第一个带来了这样一个问题："
 
 #. §0: `«{n}» ≠ «{n}»`
 #: Game.Levels.Logo.L08_Contradiction
@@ -5223,15 +5201,14 @@ msgstr ""
 "**司南**：试试看！"
 
 #: Game.Levels.Logo.L08_Contradiction
-#, fuzzy
 msgid "Conclusion Logo L08"
 msgstr ""
 "**你**：嗯，看起来是成功了。\n"
 "\n"
 "**你**：但总觉得还是有点怪怪的。我现在证明了任意一个自然数都等于37？\n"
 "\n"
-"**司南**：不不不，没那回事。只有任意一个不等于它自己的数才等于37。而且也等于"
-"38，也等于39，……\n"
+"**司南**：不不不，没那回事。只有那些不等于自身的数才等于37。而且也等于38，也"
+"等于39，……\n"
 "\n"
 "**你**：好好好，懂了。"
 
@@ -5245,35 +5222,31 @@ msgstr "第二个刁难者登场。"
 #. §2: `≠`
 #. §3: `¬(· = ·)`
 #: Game.Levels.Logo.L09_Contradiction
-#, fuzzy
 msgid "Conclusion Logo L09: §0 is negation of §1. §2 has to be read as §3"
 msgstr ""
-"**司南**：干得漂亮。这题里矛盾在哪里也更明显：假设 §0 正好就是 §1 的否定。§2 "
-"总要读成 §3。"
+"**司南**：干得漂亮。这一题里，矛盾在哪里也更明显：假设 §0 正好就是 §1 的否"
+"定。§2 总是读成 §3。"
 
 #: Game.Levels.Logo.L09_Contradiction
-#, fuzzy
 msgid "Intro Logo L09"
 msgstr "第三个刁难者登场。"
 
 #: Game.Levels.Logo.L09_Contradiction
-#, fuzzy
 msgid "Try the Contradiction tactic"
 msgstr ""
-"**你**：又在假设里出现矛盾了？\n"
+"**你**：假设里又出现矛盾了？\n"
 "\n"
-"**司南**：我看你慢慢找到感觉了。"
+"**司南**：看起来你慢慢摸到门道了。"
 
 #: Game.Levels.Logo.L10_And
-#, fuzzy
 msgid "Conclusion Logo L10"
 msgstr ""
-"**司南**：太棒了！\n"
+"**司南**：真棒！\n"
 "\n"
 "看起来这些题他现在也觉得挺好玩。\n"
 "\n"
-"**司南**：你觉得那个写着“Editor mode”的拉杆是真的吗？还是只是画上去的？试试"
-"看！"
+"**司南**：你觉得页面右上角那个写着“Editor mode”的按钮是真的吗？还是只是画上去"
+"的？试试看！"
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
@@ -5283,7 +5256,6 @@ msgstr ""
 #. §5: `destructor`
 #. §6: `constructor`
 #: Game.Levels.Logo.L10_And
-#, fuzzy
 msgid ""
 "Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
 "You cannot just try §3. Use §4 to divide goal into two. Remind that the "
@@ -5291,43 +5263,39 @@ msgid ""
 "is not called §5. Try §6"
 msgstr ""
 "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 §2 成立。我觉得"
-"这些形式哲学疯子迟早把我逼疯。\n"
+"这些形式哲学怪人迟早要把我逼疯。\n"
 "\n"
 "**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §4 试试。\n"
 "\n"
-"**你**：你是说 §5 吧？？\n"
+"**你**：你是想说 §5 吧？？\n"
 "\n"
 "**司南**：不，§6。我知道这很让人迷糊，但他们这儿就这么叫。"
 
 #: Game.Levels.Logo.L10_And
-#, fuzzy
 msgid "Intro Logo L10"
 msgstr ""
-"队伍里的下一个形式哲学家已经把问题带来了。\n"
-"他把题递给我们，坐下，然后开始钩针编织。"
+"队伍里的下一个形式哲学家已经带着问题来了。\n"
+"他把题递给我们，坐下，然后开始用钩针编织。"
 
 #. §0: `«{B}»`
 #: Game.Levels.Logo.L10_And
-#, fuzzy
 msgid "Now there is goal §0. This goal is part of the assumption"
 msgstr ""
-"**司南**：你看，这是魔法纸。现在我们突然有两个目标。这里是目标§0。我觉得你已"
-"经知道各自怎么搞定了。目标都分别写在*假设*里呢。"
+"**司南**：你看，这是魔法纸。现在我们一下子有了两个目标。当前这个目标是 §0。我"
+"觉得你已经知道怎么分别证明它们了。它们都分别写在*假设*里呢。"
 
 #: Game.Levels.Logo.L10_And
-#, fuzzy
 msgid "Now you have two goals."
 msgstr ""
-"**司南**：你看，这是魔法纸。\n"
-"  现在我们突然有两个目标。\n"
-"  我觉得你已经知道各自怎么搞定了。\n"
-"  目标都分别写在*假设*里呢。"
+"**司南**：你看，这是张魔法纸。\n"
+"  现在我们一下子有了两个目标。\n"
+"  我觉得你已经知道怎么分别证明它们了。\n"
+"  它们都分别写在*假设*里呢。"
 
 #. §0: `obtain ⟨h₁, h₂ , h₃⟩ := h`
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid "Conclusion Logo L11: Could have been written as §0"
-msgstr "**司南**：顺便说一句，你也可以直接把它嵌套着写：§0。"
+msgstr "**司南**：顺便说一句，你也可以一开始就把它一次性拆开：§0。"
 
 #. §0: `obtain ⟨h₁, h₂⟩ := «{h}»`
 #. §1: `\\<`
@@ -5338,28 +5306,26 @@ msgstr "**司南**：顺便说一句，你也可以直接把它嵌套着写：§
 #. §6: `h₂`
 #. §7: `obtain ⟨hA, hBC⟩ := «{h}»`
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid ""
 "Deconstruct assumption by §0. The brackets can be written seperatly\n"
 "as §1 and §2 or simultaneously as §3. The first assumption can be named §4. "
 "Other names\n"
 "than §5 und §6 can be chosen as well e.g. §7"
 msgstr ""
-"**你**: 现在我们大概得把这个假设拆开了。\n"
+"**你**：现在我们大概得把这个假设拆开了。\n"
 "\n"
-"**司南**: 对，正是这样。最简单的方法就是用§0。\n"
+"**司南**：对，正是这样。最简单的方法就是用§0。\n"
 "\n"
-"**你**: 等等，那我在这里要怎么把*这个*写出来？\n"
+"**你**：等等，那我在这里要怎么把*这个*写出来？\n"
 "\n"
-"**司南**: 两个尖括号你写成§1和§2，或者一起写成§3。然后§5你就直接写成§4。不过"
-"你也可以给§5和§6随便起别的名字，比如§7。"
+"**司南**：两个尖括号可以写成§1和§2，或者一起写成§3。然后§5你就直接写成§4。不"
+"过你也可以给§5和§6随便起别的名字，比如§7。"
 
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid "Intro Logo L11"
 msgstr ""
 "队伍慢慢变短了。\n"
-"下一位形式哲学家（也是一边钩针编织着）有这么个诉求。"
+"下一位形式哲学家也在钩针编织，她带来了下面这个问题。"
 
 #. §0: `obtain`
 #: Game.Levels.Logo.L11_And
@@ -5369,9 +5335,8 @@ msgstr "**司南**：这看起来就好多了！再来一次！"
 
 #. §0: `assumption`
 #: Game.Levels.Logo.L11_And
-#, fuzzy
 msgid "[Logo.L11] Hint 3: try §0 tactic"
-msgstr "**司南**：你在 *假设* 里就有一个证明。"
+msgstr "**司南**：你要证明的东西，在 *假设* 里已经有了。"
 
 #: Game.Levels.Logo.L12_Or
 #, fuzzy
@@ -5379,31 +5344,28 @@ msgid "Conclusion Logo L12"
 msgstr "这个形式哲学家也心满意足地走了。"
 
 #: Game.Levels.Logo.L12_Or
-#, fuzzy
 msgid "Intro Logo L12"
-msgstr "下一个请……"
+msgstr "下一位，请……"
 
 #. §0: `«{A}»`
 #. §1: `left`
 #. §2: `right`
 #: Game.Levels.Logo.L12_Or
-#, fuzzy
 msgid "Try to proof §0 by using §1 | §2"
 msgstr ""
-"**你**: 我现在又得把目标拆开吗？\n"
+"**你**：我现在又得把证明目标拆开吗？\n"
 "\n"
-"**司南**: 不，用更简单的。要证明一个“或”命题，你只要决定你想证明左边还是右边"
-"就行。\n"
+"**司南**：不，这次简单多了。要证明一个“或”命题，你只要决定你想证明左边还是右"
+"边就行。\n"
 "\n"
-"**你**: 那我怎么跟我的形式哲学家说明，我想证明哪一边？我当然想证明§0！\n"
+"**你**：那我怎么跟我的形式哲学家说明，我想证明哪一边？我当然想证明§0！\n"
 "\n"
-"**司南**: 用§1或者§2。很合逻辑吧？"
+"**司南**：用 §1 或者 §2。很合逻辑吧？"
 
 #. §0: `right`
 #: Game.Levels.Logo.L12_Or
-#, fuzzy
 msgid "Try §0 tactic"
-msgstr "**司南**：我还真不知道你有左右不分。再试一次。"
+msgstr "**司南**：看起来你有点分不清左右。试一试另一个。"
 
 #. §0: `ℕ`
 #. §1: `0, 1, 2, …`
@@ -5435,7 +5397,6 @@ msgstr "**司南**：我还真不知道你有左右不分。再试一次。"
 #. §27: `obtain ⟨h₁, h₂⟩ := h`
 #. §28: `obtain h := h \\| h`
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid ""
 "Conclusion Logo L13:\n"
 "Notations introdced so far:\n"
@@ -5446,7 +5407,7 @@ msgid ""
 "Tactics introduced so far:\n"
 "§19 (proves §20), §21, §22, §23, §24, §25/§26, §27, §28"
 msgstr ""
-"**你**： 好吧，这似乎让他满意了。只剩最后一个灵魂了 … \n"
+"**你**： 好吧，这似乎让他满意了。只剩最后一个人了 … \n"
 "\n"
 "**你**： 在那之前，你能不能再简短总结一下，到目前为止你教我的所有 Lean语？\n"
 "\n"
@@ -5481,7 +5442,7 @@ msgstr ""
 "与                                                             |\n"
 "| §12           | 逻辑"
 "或                                                           |\n"
-"| §15           | 命题 §16 的一个证明                      |\n"
+"| §15           | 命题 §16 为真的一个证明                      |\n"
 "\n"
 "\n"
 "## 策略\n"
@@ -5499,69 +5460,63 @@ msgstr ""
 "| §23                       | 尝试用算法决定一个命题是否为真 |\n"
 "| §24                       | 把证明目标里的“与”拆开                         "
 "|\n"
-"| §25/§26              | 开始证明“或”的其中一边             |\n"
+"| §25/§26              | 开始证明目标中“或”的一边             |\n"
 "| §27                       | 把假设里的“与”拆开                 |\n"
 "| §28                       | 根据某个假设里的“或”做分类讨论  |\n"
 "\n"
-"**你**： 你怎么会知道这些的？\n"
+"**你**：你怎么会知道这些的？\n"
 "\n"
-"**司南**： 不知道。大概是预装的吧。"
+"**司南**：不知道。大概是出厂自带的吧。"
 
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid "Intro Logo L13"
-msgstr "下一个请 …."
+msgstr "下一位，请 …."
 
 #. §0: `(«{A}» ∧ «{B}») ∨ «{A}»`
 #. §1: `obtain …`
 #. §2: `obtain ⟨h₁, h₂⟩ := «{h}»`
 #. §3: `obtain h | h := «{h}»`
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid ""
 "Observe goal as §0.\n"
 "Do not try §1 as §2 but as §3"
 msgstr ""
-"**司南**：你看，要是你用手指点一下某个假设，它就会告诉你括号是怎么加的。离"
+"**司南**：你看，要是你用手指碰一下某个假设，它就会高亮显示里面的括号结构。离"
 "谱….\n"
 "\n"
-"**你**：啊我懂了，所以是§0！\n"
+"**你**：啊，我懂了，所以是 §0！\n"
 "\n"
-"**你**：我越来越不信这里这一整套马戏了：先是目标里来个“且”，然后假设里也来个"
-"“且”，接着目标里来个“或”，现在假设里又来个“或”。他们肯定串通好了！\n"
+"**你**：我开始觉得这里整件事都有点可疑了：先是目标里来个“且”，然后假设里也来"
+"个“且”，接着目标里来个“或”，现在假设里又来个“或”。他们肯定是提前商量好的！\n"
 "\n"
-"**司南**：让他们玩去吧。我们马上就搞定了，然后就能飞去一个更有意思的星球。\n"
+"**司南**：就让他们玩吧。我们马上就搞定这里，然后飞去一个更有意思的星球。\n"
 "\n"
-"**你**：所以，又是§1？\n"
+"**你**：所以，还是用 §1？\n"
 "\n"
-"**司南**：对，不过这次不是§2，而是§3。"
+"**司南**：对，不过这次不是写成 §2，而是写成 §3。"
 
 #. §0: `«{A}» ∧ «{B}»`
 #. §1: `«{A}»`
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid "Prove goal once for §0 and once for §1"
 msgstr ""
-"**司南**: 现在你得把你的目标证明两次：一次在假设左边§0成立的情况下，一次在假"
-"设右边§1成立的情况下。我们先假设左边§0是真的。"
+"**司南**：现在你得分两种情况证明目标：一种是假设左边的 §0 成立，另一种是假设右"
+"边的 §1 成立。我们先假设左边 §0 是真的。"
 
 #. §0: `(«{A}» ∧ «{B}») ∨ «{A}»`
 #. §1: `«{A}»`
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid "Show goal via §0 i.e. assume §1 is true"
 msgstr ""
-"**司南**：现在你还得在假设§0的右半边的前提下证明你的目标，也就是在假设§1成立"
-"的前提下。"
+"**司南**：现在你还得在 §0 的右半边成立的情况下证明目标，也就是假设 §1 成立。"
 
 #. §0: `obtain ⟨h₁, h₂⟩ := «{h}»`
 #. §1: `\\<>`
 #: Game.Levels.Logo.L13_Or
-#, fuzzy
 msgid "Try §0. Write brackets as §1"
 msgstr ""
-"**司南**: 怎么处理假设里的“且”，你不是已经会了吗：§0。提醒一下：尖括号你写成"
-"§1。"
+"**司南**：假设里的“且”该怎么处理，你不是已经会了吗：用 §0。提醒一下：尖括号写"
+"成 §1。"
 
 #. §0: `∧`
 #. §1: `constructor`
