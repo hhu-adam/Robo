@@ -17,7 +17,7 @@ Statement (i : ℕ): (-1 : ℤ)^i  + (-1 : ℤ)^(i+1) = 0 := by
   --
   --  **Robo**:  Dann mach das doch – zum Beispiel mit `by_cases h : Even i`.
   -- "
-  Hint (hidden := true) "Try case distinction if `i` is even or uneven. Try `by_cases h : Even i`."
+  Hint (hidden := true) (strict:=true) "Try case distinction if `i` is even or uneven. Try `by_cases h : Even i`."
   Branch
     by_cases h : Odd i
     swap  -- TODO: check whether this triggers in the correct moment
