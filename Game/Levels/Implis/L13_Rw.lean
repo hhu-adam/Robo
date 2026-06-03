@@ -12,7 +12,7 @@ Introduction
 Beweise ohne `apply`. Ich sehe hier auch, dass ich mir schon einmal etwas
 hierzu notiert hatte. Richtig, es gibt da dieses Lemma:
 ```
-lemma not_not (A : Prop) : ¬¬A ↔ A
+lemma not_not : ¬¬A ↔ A
 ```
 
 **Operationsleiter**: Schafft Ihr das damit?
@@ -20,7 +20,7 @@ lemma not_not (A : Prop) : ¬¬A ↔ A
 -/
 Introduction "Intro Implis L13: Do not use `apply`. Try it with
 ```
-lemma not_not (A : Prop) : ¬¬A ↔ A
+lemma not_not : ¬¬A ↔ A
 ```"
 
 Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B ∧ (¬¬C) := by
