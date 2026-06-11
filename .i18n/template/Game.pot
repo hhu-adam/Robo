@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.29.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12\n"
+"POT-Creation-Date: 2026-06-10\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3060,7 +3060,7 @@ msgstr ""
 
 #. §0: `apply`
 #. §1: ```
-#. lemma not_not (A : Prop) : ¬¬A ↔ A
+#. lemma not_not : ¬¬A ↔ A
 #. ```
 #: Game.Levels.Implis.L13_Rw
 msgid ""

@@ -4674,7 +4674,7 @@ msgstr ""
 "**You** *(whispering)*: Isn't that the definition of §0? \n"
 "\n"
 "**Scribble** *(whispering)*: You could see it that way. But in Leanish, "
-"these two are  equivalence."
+"these two are equivalent."
 
 #. §0: `h`
 #. §1: `obtain`
@@ -7635,7 +7635,7 @@ msgstr ""
 "**Scribble**: Now you §0 some number, and then you'll probably need Lemma "
 "§1.\n"
 "\n"
-"**You**: Couldn't I rewrite §2 right now? \n"
+"**You**: Couldn't I rewrite with §2 right now? \n"
 "\n"
 "**Scribble**: No, §3 struggles with quantifiers. \n"
 "\n"
