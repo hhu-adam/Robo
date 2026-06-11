@@ -10,7 +10,9 @@ A5. New planets for analysis
 
 B. New planet(s) for quotients
 
-C. New planets for linear algebra
+C1. New planets for linear algebra
+C2. RealUncountable / dim_ℚ ℝ is infinite
+
 
 # Ideas for new planets
 
