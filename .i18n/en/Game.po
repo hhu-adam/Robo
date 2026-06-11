@@ -2850,7 +2850,7 @@ msgid "Intro Babylon L08"
 msgstr ""
 "Out of sheer curiosity, you take a closer look at another neighbouring tower."
 
-#. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
+#. §0: $$ \\sum_{i = 0}^n (2i + 1) = (n + 1)^2 $$
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
 msgid "Try solving §0 by induction"
 msgstr ""
@@ -2872,6 +2872,11 @@ msgstr ""
 "You haven't gone far when, suddenly, a particularly tall Babylonian emerges "
 "from behind a tower, blocks your path, glares at you and, in a deep voice, "
 "demands a proof of the following equation."
+"
+    $$
+    \\sum_\{i = 0}^m i^3 = (\\sum_\{i = 0}^m i)^2
+    $$
+"
 
 #. §0: `arithmetic_sum`
 #: Game.Levels.Babylon.L09_Boss
