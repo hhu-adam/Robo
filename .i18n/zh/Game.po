@@ -2830,7 +2830,6 @@ msgid "Cantor"
 msgstr "康托尔"
 
 #: Game.Levels.Cantor
-#, fuzzy
 msgid "Intro Cantor"
 msgstr ""
 "你们落在一个大帐篷旁边。\n"
@@ -2849,16 +2848,14 @@ msgstr ""
 
 #. §0: `«{h}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "And now disect §0"
-msgstr "**康托尔**：对对对！现在把§0好好拆开 …"
+msgstr "**康托尔**：对对对！现在把 §0 好好拆开……"
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "Conclusion Cantor L01"
 msgstr ""
-"康托尔拍手开心得不行。\n"
-"纸条像变魔术一样飞回到他手里。"
+"康托尔开心地拍起手来。\n"
+"纸条像变魔术一样飞回他那里。"
 
 #. §0: `f`
 #. §1: `A`
@@ -2866,212 +2863,191 @@ msgstr ""
 #. §3: `A`
 #. §4: `f`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid ""
 "Intro Cantor L01: Mapping §0 from §1 to the power set of §2, and the set\n"
 "of all elements in §3, which are not located in its image under §4"
 msgstr ""
-"**康托尔**: … 所以我们考虑一个映射 §0，从 §1 到 §2 的幂集，然后再看 §3 中所有"
-"那些在 §4 之下不落在其像里的元素所组成的集合 …\n"
+"**康托尔**：……所以我们考虑一个映射 §0，从 §1 到 §2 的幂集，然后再看 §3 中所有"
+"那些在 §4 之下不落在其像里的元素所组成的集合……\n"
 "\n"
-"哦！  观众。不是，*两*拨观众！  听吧看吧，看吧惊叹吧。\n"
+"哦！观众。不是，*两*拨观众！听吧看吧，看吧惊叹吧。\n"
 "\n"
 "他从高礼帽里抽出一张纸条，把它折成一只燕子，然后让它飞到你们这边。\n"
 "\n"
-"**康托尔**:  既然我已经有两拨观众了，你们也可以稍微参与一下，对吧？"
+"**康托尔**：既然我已经有两拨观众了，你们也可以稍微参与一下，对吧？"
 
 #. §0: `«{h₁}» : «{a}» ∈ «{f}» «{a}»`
 #. §1: `have`
 #. §2: `suffices : «{a}» ∉ «{f}» «{a}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid ""
 "Remind that, assumpion §0 will be needed agian.\n"
 "Try §1 or §2"
 msgstr ""
-"**康托尔**: 好主意！差一点就对了！\n"
-"  不过你们马上还会再需要一次最初的假设 §0。\n"
+"**康托尔**：好主意！差一点就对了！\n"
+"不过你们马上还会用到原来的假设 §0。\n"
 "\n"
-"**司南**:  好的，回去然后用 §1 继续。\n"
-"  或者用 §2！"
+"**司南**\n"
+"：好的，退回去，用 §1 继续。\n"
+"或者用 §2！"
 
 #. §0: `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "That would be §0"
-msgstr "**司南**：那就是§0。"
+msgstr "**司南**：那就是 §0。"
 
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "This looks good!"
 msgstr ""
 "康托尔搓了搓手。\n"
 "\n"
-"**康托尔**:  看起来不错！"
+"**康托尔**：看起来不错！"
 
 #. §0: `«{a}» ∈ «{f}» «{a}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "Try proof by cases for §0"
-msgstr "**你**：现在大概需要对§0做个分类讨论？"
+msgstr "**你**：现在大概需要对 §0 做个分类讨论？"
 
 #. §0: `obtain`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid "Try §0 as always"
-msgstr "**司南**：… 像往常一样，用§0。"
+msgstr "**司南**：……和之前一样，用 §0。"
 
 #. §0: `Set A`
 #. §1: `A`
 #. §2: `A`
 #: Game.Levels.Cantor.L01_CantorPowerset
-#, fuzzy
 msgid ""
 "§0 is akin to the power set of §1, more precisely, it is the type of all "
 "subsets of §2."
 msgstr ""
-"**你**:  所以 §0 是 §1 的幂集吗？\n"
+"**你**：所以 §0 是 §1 的幂集吗？\n"
 "\n"
-"**司南**: 是的，差不多吧。它是 §2 的所有子集的集合——或者更准确地说，是类"
+"**司南**：是的，差不多吧。它是 §2 的所有子集的集合——或者更准确地说，是类"
 "型。\n"
 "\n"
-"**你**:  然后我要证明……啊哈。大概是个反证法，对吧？\n"
+"**你**：然后我要证明……啊哈。大概是个反证法，对吧？\n"
 "\n"
-"**司南**:  大概是。"
+"**司南**：大概是。"
 
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "Cantor expresses happiness"
-msgstr "康托尔一只脚换到另一只脚上蹦来蹦去。"
+msgstr "康托尔兴奋地蹦来蹦去。"
 
 #. §0: `let s := { a | a ∉ «{f}» a }`
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "First, introduce set §0"
-msgstr "**司南**:  试试“偶数”的那个集合吧！你可以先用 §0 把它引入。"
+msgstr "**司南**：试试刚才那个集合吧！你可以先用 §0 把它引入。"
 
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "Intro Cantor L02"
 msgstr ""
-"**康托尔**:  注意了，这个思路其实还能更进一步！\n"
+"**康托尔**：注意了，这个思路其实还能更进一步！\n"
 "\n"
 "他把手伸进高礼帽里，掏出各种各样的东西。一把旧牙刷，一副纸牌，一只白兔……最后"
 "露出一张揉皱的纸条。\n"
 "\n"
-"**康托尔**: 这不就是我的笔记嘛！  Tada！  我著名的对角线论证！\n"
+"**康托尔**：我的笔记原来在这儿！锵锵！我著名的对角线论证！\n"
 "\n"
 "他把纸条展开，小心地把最上面一行撕下来，让它飘飘荡荡地落到你们这边。然后他好"
 "奇地探身到舞台边缘，想看看你们在做什么。"
 
 #. §0: `f`
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "Is there a set, which is not hit by §0"
-msgstr "**康托尔**:  那，你们觉得呢？会不会有某个集合没有被 §0 命中？"
+msgstr "**康托尔**：那，你们觉得呢？会不会有某个集合没有被 §0 命中？"
 
 #. §0: `push Not`
 #. §1: `intro f`
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "Start here with §0 and §1"
 msgstr ""
-"**你**:  这个我以前见过！简单说：“幂集总是比集合本身更大。”我记得也是个反证"
+"**你**：这个我以前见过！简单说：“幂集总是比集合本身更大。”我记得也是个反证"
 "法。\n"
-"**司南**: 是的，不过我会从 §0 和 §1 开始。"
+"**司南**：是的，不过我会从 §0 和 §1 开始。"
 
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid "Try simp [«{s}»]"
 msgstr ""
-"**康托尔**:  对！\n"
+"**康托尔**：对！\n"
 "\n"
-"**你**:  司南，我们现在不能用刚才那个结果吗？\n"
+"**你**：司南，我们现在不能用刚才那个结果吗？\n"
 "\n"
-"**司南**:  抱歉，刚才太快了！我可能忘了保存。"
+"**司南**：抱歉，刚才太快了！我可能忘了保存。"
 
 #. §0: `specialize «{hf}» «{s}»`
 #. §1: `simp`
 #. §2: `simp [«{s}»]`
 #. §3: `simp`
 #: Game.Levels.Cantor.L02_CantorPowerset
-#, fuzzy
 msgid ""
 "Try §0. When you apply §1 later, §2 allows §3 to look through\n"
 "your defintions"
 msgstr ""
-"**司南**:  太棒了！现在你比如说可以直接用 §0 继续。等你之后用到 §1 的时候，你"
+"**司南**：太棒了！现在你比如说可以直接用 §0 继续。等你之后用到 §1 的时候，你"
 "可以用 §2 来让 §3 透过你的定义往里看。"
 
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "Conclusion Cantor L03"
 msgstr ""
-"**康托尔**:  干得漂亮！\n"
+"**康托尔**：干得漂亮！\n"
 "\n"
-"他开始拿几株仙人掌抛来抛去，但显然他还是在某种程度上跟着你们在做什么。"
+"他开始拿几株仙人掌抛来抛去，但显然他还是在某种程度上跟着你们的进度。"
 
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "Intro Cantor L03"
 msgstr ""
-"**你**: 可我还是没看出来这到底哪里“对角”了。\n"
+"**你**：可我还是没看出来这到底哪里“对角”了。\n"
 "\n"
-"**康托尔**: 没有？  那就注意了！  我们再来一遍，这次  慢  慢  来。\n"
+"**康托尔**：没有？那就注意了！我们再来一遍，这次  慢  慢  来。\n"
 "\n"
-"他又在高礼帽里翻找。  一个指南针。  一把小提琴。 一盒鼻烟。\n"
+"他又在高礼帽里翻找。一个指南针。一把小提琴。一盒鼻烟。\n"
 "\n"
-"**康托尔**:  啊不，我们换个方式。\n"
+"**康托尔**：啊不，我们换个方式。\n"
 "\n"
 "他又一次把手深深伸进高礼帽里，掏出整整一摞纸。把它们扔给你们。你们把纸条一张"
 "接一张地看过去。"
 
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "So far so good"
 msgstr "**司南**：到目前为止，都挺好。"
 
 #. §0: `simp`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "§0 can used always"
-msgstr "**司南**: §0 总是可以试试看。"
+msgstr "**司南**：§0 总是可以试试看。"
 
 #. §0: `|x|`
 #. §1: `x`
 #. §2: `IsFixedPt`
 #. §3: `unfold`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid ""
 "§0 is the absolute value of the real number §1. The meaning of §2\n"
 "can be found out by using §3."
 msgstr ""
-"**司南**: 所以 §0 就是实数 §1 的标准绝对值。至于 §2 是什么意思，你大概用 §3 "
+"**司南**：所以 §0 就是实数 §1 的标准绝对值。至于 §2 是什么意思，你大概用 §3 "
 "就能搞清楚。"
 
 #. §0: `IsFixedPt`
 #. §1: `IsFixedPt f x`
 #. §2: `f x = x`
 #: Game.Levels.Cantor.L03_IsFixedPt_abs
-#, fuzzy
 msgid "§0 means 'is fixed point'. §1 equates to §2"
 msgstr ""
-"**你**:  呃……\n"
+"**你**：呃……\n"
 "\n"
-"**司南**:  §0 大概是指“is fixed point”。反正 §1 显然就是 §2 的意思。"
+"**司南**：§0 大概是指“is fixed point”。反正 §1 显然就是 §2 的意思。"
 
 #. §0: `simp`
 #: Game.Levels.Cantor.L04_fixedPoints_neg
-#, fuzzy
 msgid "Again try §0"
-msgstr "**司南**: §0 总是可以试试看。"
+msgstr "**司南**：再试试 §0。"
 
 #: Game.Levels.Cantor.L04_fixedPoints_neg
-#, fuzzy
 msgid "Conclusion Cantor L04"
 msgstr ""
-"**康托尔**:  继续保持！\n"
+"**康托尔**：继续保持！\n"
 "\n"
 "他把仙人掌换成了麻雀。"
 
@@ -3082,105 +3058,93 @@ msgstr " "
 #. §0: `fixedPoints f`
 #. §1: `unfold`
 #: Game.Levels.Cantor.L04_fixedPoints_neg
-#, fuzzy
 msgid "See if §0 is the set of all fix points by using §1"
 msgstr ""
-"**你**: 这里的 §0 应该就是所有不动点的集合？\n"
+"**你**：这里的 §0 应该就是所有不动点的集合？\n"
 "\n"
-"**司南**: 试试看——§1 应该又能帮上忙。"
+"**司南**：试试看——§1 应该又能帮上忙。"
 
 #. §0: `unfold IsFixedPt`
 #: Game.Levels.Cantor.L04_fixedPoints_neg
-#, fuzzy
 msgid "Try again with §0"
-msgstr "**司南**: 看起来不错。现在最好马上再来一遍 §0。"
+msgstr "**司南**：看起来不错。现在最好马上再来一遍 §0。"
 
 #: Game.Levels.Cantor.L05_IsFixedPt_not
-#, fuzzy
 msgid "Conclusion Cantor L05"
 msgstr ""
-"**康托尔**:  你们离真相更近了 …\n"
+"**康托尔**：你们离真相更近了……\n"
 "\n"
-" 麻雀——毫不意外——都飞走了。于是他又开始抛接仙人掌，还一边骑独轮车。"
+"麻雀——毫不意外——都飞走了。于是他又开始抛接仙人掌，还一边骑独轮车。"
 
 #. §0: `¬`
 #. §1: `Prop`
 #: Game.Levels.Cantor.L05_IsFixedPt_not
-#, fuzzy
 msgid ""
 "The second §0 means the same as the first: logical negation. Interpret it as "
 "the self\n"
 "mapping of the set §1 of all possible satements."
 msgstr ""
-"**你**:  这里第二个 §0 是什么意思？\n"
+"**你**：这里第二个 §0 是什么意思？\n"
 "\n"
-"**司南**:  跟第一个一样：逻辑否定。你可以把它看成是集合 §1 上的一个自映射，也"
+"**司南**：跟第一个一样：逻辑否定。你可以把它看成是集合 §1 上的一个自映射，也"
 "就是对所有可能命题的集合做自映射。而这个映射当然没有不动点，因为一个命题怎么"
 "可能等于它的否定呢！"
 
 #. §0: `f`
 #: Game.Levels.Cantor.L06_IsFixedPt_odd
-#, fuzzy
 msgid "Assumption says that §0 is an 'uneven' function is"
 msgstr ""
-"**你**:  我以前见过类似的——这个假设说 §0 是“一 个 奇 函 数”。\n"
+"**你**：我以前见过类似的——这个假设说 §0 是“一 个 奇 函 数”。\n"
 "\n"
-"**司南**: 那就开始吧。  我想你在这里不会需要任何我们没见过的东西。"
+"**司南**：那就开始吧。我想你在这里不会需要任何我们没见过的东西。"
 
 #: Game.Levels.Cantor.L06_IsFixedPt_odd
-#, fuzzy
 msgid "Conclusion Cantor L06"
 msgstr ""
 "康托尔又说了些什么，但你们忙着做问题，根本顾不上。\n"
 "你们甚至都没注意到，他这会儿已经开始骑着独轮车飞起来了。"
 
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Conclusion Cantor L07"
 msgstr ""
-"**康托尔**: 喂，你们弄完了吗？？\n"
+"**康托尔**：喂，你们弄完了吗？？\n"
 "\n"
-"**司南**:  我们还剩一张纸条。"
+"**司南**：我们还剩一张纸条。"
 
 #. §0: `apply congr_fun at h`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Specifically try §0"
-msgstr "**司南**:  我是说 §0。"
+msgstr "**司南**：我是说 §0。"
 
 #. §0: `ext`
 #. §1: `Subset.antisymm_iff`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Start with §0 or §1"
-msgstr "**司南**:  也许你先又从 §0 开始。或者从 §1。"
+msgstr "**司南**：也许你可以先再从 §0 开始。或者从 §1。"
 
 #. §0: `comp_apply`
 #. §1: `simp`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Try either §0 or §1"
-msgstr "**司南**:  §0 也许有用？或者 §1？"
+msgstr "**司南**：§0 也许有用？或者 §1？"
 
 #. §0: `unfold range fixedPoints IsFixedPt`
 #. §1: `«{h}»`
 #. §2: `congr_fun`
 #: Game.Levels.Cantor.L07_idempotent
-#, fuzzy
 msgid "Try §0 and rewrite assumption §1 firstly by §2"
 msgstr ""
-"**司南**:  最好先把所有定义再展开写一遍。我觉得：§0。还有那个假设 §1，你也可"
-"以先用 §2 写得更明确一点。"
+"**司南**：最好先把所有定义再展开写一遍。我觉得：§0。还有那个假设 §1，你也可以"
+"先用 §2 写得更明确一点。"
 
 #: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#, fuzzy
 msgid "Conclusion Cantor L08"
 msgstr ""
-"**康托尔**:  很好！\n"
+"**康托尔**：很好！\n"
 "\n"
 "他鼓掌。\n"
 "\n"
-"**你**:  我现在真的完全看不懂了。"
+"**你**：所以我现在完全看不懂了。"
 
 #. §0: `f`
 #. §1: `A → (A → Y)`
@@ -3198,7 +3162,6 @@ msgstr ""
 #. §13: `f`
 #. §14: `A → (A → Y)`
 #: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#, fuzzy
 msgid ""
 "Explain for §0, that §1 is a mapping from §2 to the set of mappings of §3,\n"
 "which in turn is the same as the mapping from §4 to §5. You can interpret §6 "
@@ -3208,57 +3171,53 @@ msgid ""
 "as §14\n"
 "natural"
 msgstr ""
-"**你** *(对司南说)*:  你在这里看到一个积吗？\n"
+"**你** *(对司南说)*：你在这里看到一个积吗？\n"
 "\n"
-"**司南**:  当然。记得§0里括号放在哪儿：§1。从§2到“从§3到的映射的集合”的一个映"
-"射，不就是同一个东西：从§4到§5的一个映射。\n"
+"**司南**：当然。记得 §0 里括号放在哪儿：§1。从 §2 到“§3 的映射组成的集合”的一"
+"个映射，和从 §4 到 §5 的一个映射是一回事。\n"
 "\n"
 "你皱起眉头。\n"
 "\n"
-"**司南**:  真的真的，我们在满射上不是已经想过一次了吗！你可以把§6理解成把§7作"
-"用在§8上，或者把它理解成把§9作用在§10上。\n"
+"**司南**：真的真的，我们在满射那里不是已经想讲过了吗！你可以把 §6 理解成 §7 "
+"作用在 §8 上，或者把它理解成 §9 作用在 §10 上。\n"
 "\n"
-"**康托尔**:  没错！而且元素§11就在对角线上！\n"
+"**康托尔**：没错！而且元素 §11 就在对角线上！\n"
 "\n"
-"**司南**:  另一方面，假设§12的表述方式是那样的，所以把§13解释成映射§14会更顺"
-"手。"
+"**司南**：另一方面，假设 §12 的表述方式是那样的，所以把 §13 解释成映射 §14 会"
+"更顺手。"
 
 #. §0: `A × A`
 #: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#, fuzzy
 msgid "Intro Cantor L08: Mapping defined on product §0 with diagonal"
 msgstr ""
 "康托尔落地，从车上下来，又回到舞台边缘，搓了搓手。\n"
 "\n"
-"**康托尔**: 你们现在更接近了！仔细看，你们面前有一个定义在积 §0 上的映射！而"
-"在这个积里有一条对角线！"
+"**康托尔**: 你们现在离真相更近了！仔细看，你们面前有一个定义在积 §0 上的映"
+"射！而这个积里有一条对角线！"
 
 #. §0: `f a a`
 #. §1: `s f a a`
 #. §2: `f a a`
 #. §3: `nth_rw 2 [«{ha}»]`
 #: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#, fuzzy
 msgid ""
 "§0 was replaced by §1. It is probably necessary to rewrite the second\n"
 "appearnace of §2 in the goal. Try §3"
 msgstr ""
-"**司南**:  现在你基本上把 §0 的两个出现都用 §1 替换掉了。\n"
-"  这样你就在原地打转。  \n"
-"  你大概只想把目标里 §0 的第二个出现改写掉。  \n"
-"  用 §3 来做。"
+"**司南**：现在你基本上把 §0 的两个出现都用 §1 替换掉了。\n"
+"这样你就在原地打转。\n"
+"你大概只想把目标里的第二个 §0 改写掉。\n"
+"用 §3 来做。"
 
 #: Game.Levels.Cantor.L09_CantorDiag
-#, fuzzy
 msgid "Conclusion Cantor L09 - 2"
-msgstr "**康托尔**:  太棒了！"
+msgstr "**康托尔**：太棒了！"
 
 #: Game.Levels.Cantor.L09_CantorDiag
-#, fuzzy
 msgid "Intro Cantor L09 - 2"
 msgstr ""
-"**康托尔**:  注意！  一切都会明白的。  这就是钥匙！你们只要把刚才那句话稍微变"
-"形一下就行。\n"
+"**康托尔**：注意！一切都会明白的。这就是钥匙！你们只要把刚才那句话稍微变形一"
+"下就行。\n"
 "\n"
 "他朝你们扔来一张新的纸条。"
 
@@ -3269,7 +3228,6 @@ msgstr ""
 #. §4: $\\{0,1\\}$
 #. §5: `Y`
 #: Game.Levels.Cantor.L09_CantorDiag
-#, fuzzy
 msgid ""
 "The goal is that each self mapping §0 possess a fixed point.\n"
 "Does not every set have a self mapping without fixed points? E.g. §1 in §2\n"
@@ -3277,46 +3235,43 @@ msgid ""
 "with\n"
 "a single element then there should be a fixed-point-free self mapping."
 msgstr ""
-"**你**：  我们要在某些假设下证明：*每个* 自映射 §0 都有一个不动点？  难道不是"
-"在任何集合上都有一个 *没有* 不动点的自映射吗？比如在 §2 或者 §3 上的 §1 ….\n"
+"**你**：我们要在某些假设下证明：*每个* 自映射 §0 都有一个不动点？难道不是在任"
+"何集合上都有一个 *没有* 不动点的自映射吗？比如在 §2 或者 §3 上的 §1 ….\n"
 "\n"
-"**司南**：  …. 或者在 §4 上的非平凡置换？\n"
+"**司南**：……或者在 §4 上的非平凡置换？\n"
 "\n"
 "看起来他也有点懵。\n"
 "\n"
-"**司南**：  所以啊，只要 §5 不是单点集，就总该存在一个没有不动点的自映射。\n"
+"**司南**：所以啊，只要 §5 不是单点集，就总该存在一个没有不动点的自映射。\n"
 "\n"
-"**康托尔**：  哈，这正是妙处所在！  等着瞧吧！"
+"**康托尔**：哈，这正是妙处所在！等着瞧吧！"
 
 #. §0: `«{f}»`
 #. §1: `«{A}» → «{Y}»`
 #. §2: ``` let c : «{A}» → «{Y}» := fun a ↦ _ ```
 #. §3: `c`
 #: Game.Levels.Cantor.L09_CantorDiag
-#, fuzzy
 msgid ""
 "exploit the surjectivity of §0 somehow. It was already told\n"
 "which of mapping §1 the preimage has to be considered. One could define §2\n"
 "and then observe the preimage of §3."
 msgstr ""
-"**康托尔**: 你们当然得想办法利用 §0 的满射性。\n"
-"不过我刚才已经告诉过你们了：对哪个映射 §1 你们得去看一个原像 …\n"
+"**康托尔**：你们当然得想办法利用 §0 的满射性。\n"
+"不过我刚才已经告诉过你们了：你们该去看哪个映射 §1 的原像……\n"
 "\n"
-"**司南** *(对你)*: 嗯……你明白他在说什么吗？当然你现在可以定义一个映射，用\n"
+"**司南** *（对你）*：嗯……你明白他在说什么吗？当然你现在可以定义一个映射：\n"
 "§2\n"
-"然后再对这个映射 §3 去看一个原像。\n"
+"然后再去看这个映射 §3 的一个原像。\n"
 "但我现在有点迷糊。"
 
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid "Conclusion Cantor L10"
-msgstr "**你**:  我也不知道这样是不是真的更简单了 …"
+msgstr "**你**：我也不知道这样是不是真的更简单了……"
 
 #. §0: `¬ .`
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid "Does §0 have no fixed points?"
-msgstr "**康托尔**:  你们不是已经想过 §0 没有不动点了吗？"
+msgstr "**康托尔**：你们不是已经论证过 §0 没有不动点了吗？"
 
 #. §0: `A → Set A`
 #. §1: `Set A`
@@ -3326,108 +3281,99 @@ msgstr "**康托尔**:  你们不是已经想过 §0 没有不动点了吗？"
 #. §5: `a : A`
 #. §6: `a ∈ S`
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid ""
 "Intro Cantor L10: Show that there are no surjective mappings §0 by "
 "interpreting\n"
 "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
 msgstr ""
-"**康托尔**:  现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射映射§0！你"
-"们只要把§1看成§2就行！\n"
+"**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只"
+"要把 §1 看成 §2 就行！\n"
 "\n"
-"**你**: 什么？\n"
+"**你**：什么？\n"
 "\n"
-"**司南**:  一个子集§3可以和映射§4对应起来：它把§5送到命题§6。对形式哲学家来"
-"说，这就是同一回事。"
+"**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学"
+"家来说，这就是同一回事。"
 
 #. §0: `cantor_diagonal`
 #. §1: `apply cantor_diagonal at «{hf}»`
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid "Use §0 as e.g. §1"
 msgstr ""
-"**你**: 所以现在在这里用 §0？\n"
+"**你**：所以现在在这里用 §0？\n"
 "\n"
-"**司南**: 大概吧，比如配合 §1。"
+"**司南**：大概吧，比如配合 §1。"
 
 #. §0: `cantor_diagonal`
 #: Game.Levels.Cantor.L10_CantorPowerset
-#, fuzzy
 msgid "[Hint mhjv] Try §0"
-msgstr "**康托尔**: 不不不！我们不是想用我漂亮的定理 §0 吗！"
+msgstr "**康托尔**：不不不！我们不是想用我漂亮的定理 §0 吗！"
 
 #: Game.Levels.Cantor.L11_SequenceUncountable
-#, fuzzy
 msgid "Conclusion Cantor L11"
 msgstr ""
-"**司南**:  感谢你的表演！\n"
+"**司南**：感谢你的表演！\n"
 "\n"
-"**你**:  不过可惜观众这么少！\n"
+"**你**：不过可惜观众这么少！\n"
 "\n"
-"**康托尔**:  魔术嘛，本来就不是给所有人看的。  祝你们旅途顺利！"
+"**康托尔**：魔术嘛，本来就不是给所有人看的。祝你们旅途顺利！"
 
 #. §0: `ℕ → ℕ`
 #: Game.Levels.Cantor.L11_SequenceUncountable
-#, fuzzy
 msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
 msgstr ""
-"**康托尔**：  更简单？  不知道。  但更优雅！\n"
+"**康托尔**：更简单？谁说更简单了？但肯定更优雅！\n"
 "\n"
 "他做了三个后空翻，然后又拿着一张新纸条回到你们这儿。\n"
 "\n"
-"**康托尔**：  看！  现在你们可以用同一个论证证明：自然数序列的集合，也就是映"
-"射 §0 的集合，是不可数的！\n"
+"**康托尔**：看！现在你们可以用同一个论证证明：自然数序列的集合，也就是映射 "
+"§0 的集合，是不可数的！\n"
 "\n"
 "然后他压低声音说：\n"
 "\n"
-"**康托尔**：  这个帐篷里有不可数多个座位！"
+"**康托尔**：这个帐篷里有不可数多个座位！"
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
 #: Game.Levels.Cantor.L11_SequenceUncountable
-#, fuzzy
 msgid "The name of mapping §0 is §1"
 msgstr ""
-"**你**:  那个映射 §0 叫什么来着？\n"
+"**你**：那个映射 §0 叫什么来着？\n"
 "\n"
-"**司南**: §1"
+"**司南**：§1"
 
 #: Game.Levels.Ciao
-#, fuzzy
 msgid "Ciao"
 msgstr "再见"
 
 #: Game.Levels.Ciao
-#, fuzzy
 msgid "Intro Ciao"
 msgstr ""
-"**你**:  会不会我们已经把这个宇宙这一角的所有行星都逛遍了？\n"
+"**你**：会不会我们已经把这个宇宙这一角的所有行星都逛遍了？\n"
 "\n"
-"**司南**:  嗯，看起来是这样。\n"
+"**司南**：嗯，看起来是这样。\n"
 "\n"
-"**你**:  那我们现在干嘛？\n"
+"**你**：那我们现在干嘛？\n"
 "\n"
-"**司南**: 不知道。\n"
+"**司南**：不知道。\n"
 "\n"
-"过了一会儿 ….\n"
+"过了一会儿……\n"
 "\n"
-"**司南**: 你，看，这里收到一条消息。"
+"**司南**：你看，这里收到一条消息。"
 
 #: Game.Levels.Ciao.L01
-#, fuzzy
 msgid "Conclusion Cia L01"
 msgstr ""
-"**你**: 这倒也不算太难……  会是谁发的呢？  又为什么？\n"
+"**你**：这倒也不算太难……会是谁发的呢？又为什么？\n"
 "\n"
-"**司南**: 这肯定是 Ritha 发来的消息……\n"
+"**司南**：这肯定是 Ritha 发来的消息……\n"
 "\n"
 "司南望向远方。\n"
 "\n"
-"**司南**: 我想，她是想鼓励我们继续飞下去。\n"
+"**司南**：我想，她是想鼓励我们继续飞下去。\n"
 "\n"
-"**你**: 可是飞到哪儿？\n"
+"**你**：可是飞到哪儿？\n"
 "\n"
-"**司南**: 哦，你看，又来一条消息：\n"
+"**司南**：哦，你看，又来一条消息：\n"
 "\n"
 "*亲爱的地球人，*\n"
 "\n"
@@ -3443,7 +3389,7 @@ msgstr ""
 "\n"
 "*– 你们的形式哲学家*\n"
 "\n"
-"**司南**: 那就——出发！\n"
+"**司南**：那就——出发！\n"
 "\n"
 "[别惊讶：如果你们按这些坐标前进，飞船会加速到超光速，你们会暂时失去与服务器的"
 "连接。不过没关系。你们一定会安全抵达 Zulip。]"
