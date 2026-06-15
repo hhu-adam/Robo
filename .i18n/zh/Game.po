@@ -2421,12 +2421,10 @@ msgstr ""
 "§10"
 
 #: Game.Levels.Babylon
-#, fuzzy
 msgid "Babylon"
 msgstr "巴比伦"
 
 #: Game.Levels.Babylon
-#, fuzzy
 msgid "Intro Babylon"
 msgstr ""
 "你们到达了一颗星球，上面无数石板被堆成了高得离谱的塔。整片景观像一个巨大的拼"
@@ -2443,38 +2441,34 @@ msgstr ""
 "\n"
 "**巴比伦人**：百分百！\n"
 "\n"
-"**你**：那你们到底怎么建这些杰作的？\n"
+"**你**：那你们到底怎么建成这些杰作的？\n"
 "\n"
-"**巴比伦人**：很简单！一块石头接一块石头。"
+"**巴比伦人**：很简单！一块石板接一块石板。"
 
 #: Game.Levels.Babylon.L01_Sum_Simp_Card
-#, fuzzy
 msgid "Conclusion Babylon L01"
-msgstr "**巴比伦人**：看起来不错，正合适！"
+msgstr "**巴比伦人**：看起来不错！"
 
 #. §0: $( \\sum_{i\\in I} 1)$
 #. §1: $I$
 #. §2: $I$
 #. §3: `simp`
 #: Game.Levels.Babylon.L01_Sum_Simp_Card
-#, fuzzy
 msgid ""
 "Explain goal as §0 being equal to the number of elements in §1\n"
 "i.e. the cardinality of §2. Try §3"
 msgstr ""
 "**你**：哇这也太多新东西了……让我看看……\n"
 "\n"
-"这看起来像是§0等于……\n"
+"这看起来像是 §0 等于……\n"
 "\n"
-"**司南**：……§1里元素的个数，也就是§2的基数。\n"
+"**司南**：……§1 里元素的个数，也就是 §2 的基数。\n"
 "\n"
 "**巴比伦人**：那，你们能证明吗？\n"
 "\n"
-"**司南** *(对你说)*：我会先试试§3。这真的是个很强的 tactic，能把很多项简化"
-"掉。"
+"**司南** *(对你说)*：我会先试试 §3。这真的是个很强的策略，能把很多项简化掉。"
 
 #: Game.Levels.Babylon.L01_Sum_Simp_Card
-#, fuzzy
 msgid "Intro Babylon L01"
 msgstr ""
 "**巴比伦人**：每座塔都有一段铭文。你们可以在那儿再仔细读一遍它为什么能站得"
@@ -2482,80 +2476,70 @@ msgstr ""
 
 #. §0: `simp`
 #: Game.Levels.Babylon.L02_Card2
-#, fuzzy
 msgid "Again try using §0"
-msgstr "**你**：又来 §0？"
+msgstr "**你**：还是用 §0？"
 
 #: Game.Levels.Babylon.L02_Card2
-#, fuzzy
 msgid "Intro Babylon L02"
-msgstr "你们一起看向下一个塔。"
+msgstr "你们一起走到下一座塔前。"
 
 #: Game.Levels.Babylon.L03_sum_congr
-#, fuzzy
 msgid "Intro Babylon L03"
 msgstr ""
 "接下来你们来到一块空的工地，看起来已经很久没动静了。\n"
-"告示牌上写着："
+"工地旁的告示牌上写着："
 
 #. §0: $I \\subseteq \\{-1,0,1\\}$
 #. §1: `trans ∑ i ∈ I, 0`
 #. §2: `\\sum`
 #: Game.Levels.Babylon.L03_sum_congr
-#, fuzzy
 msgid ""
 "Remind that goal looks like §0. Try §1. The sum sign is written\n"
 "as §2."
 msgstr ""
-"**你**: 这个假设看起来像是 §0 的一种拐弯抹角的版本。不管怎样，这都不可能是什"
-"么大和。\n"
+"**你**：这个假设看起来像是 §0 的一种拐弯抹角的版本。不管怎样，这个和也大不到"
+"哪去。\n"
 "\n"
-"**司南**: 不是。 但我们大概需要一个中间步骤，才能得到给定的结果。我建议："
-"§1。 求和符号你写成 §2。"
+"**司南**：没错。但我们大概需要一个中间步骤，才能得到给定的结果。我建议用 §1。"
+"求和符号你用 §2。"
 
 #. §0: `apply sum_congr`
 #: Game.Levels.Babylon.L03_sum_congr
-#, fuzzy
 msgid "[Hint hwzk] Try §0"
 msgstr ""
-"**司南**：没错。现在你就可以写§0了——两边的和尤其在这种情况下相等：对同一个指"
-"标集合求和，并且被求和的表达式也一致。"
+"**司南**：没错。现在你就可以写 §0 了——如果两个求和式都是在同一个集合里遍历指"
+"标，而且每个指标对应的被加项都相等，那么这两个求和式也相等。"
 
 #. §0: $«{i}»=0$
 #. §1: $«{i}»=1$
 #. §2: $«{i}»=2$
 #. §3: `have`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Assumptions have to entail §0 or §1 or §2. Try §3"
 msgstr ""
-"**司南**:  从这些假设里总得想办法推出 §0 或者 §1 或者 §2。也许你用 §3 把它明"
-"确写出来。"
+"**司南**：从这些假设里总得想办法推出 §0，或者 §1 或者 §2。也许你能用 §3 把这"
+"一点明确写出来。"
 
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Intro Babylon L04"
 msgstr ""
-"你们继续从塔走到塔。\n"
-"最后你在一座让你觉得怪怪的塔前停下。\n"
+"你们继续在一座座塔之间穿行。\n"
+"最后，你在一座让你觉得有些奇怪的塔前停了下来。\n"
 "绕着它走了一圈之后，你也知道为什么了：\n"
-"少了一个入口。\n"
-"不过你们倒是找到了一块地板石板，上面刻着如下铭文。"
+"它没有入口。\n"
+"不过，你们倒是在地面上找到了一块石板，上面刻着如下铭文。"
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
-"**司南**：我建议你先把所有假设都引入，直到那里只剩下\n"
-"§0\n"
-"作为目标。"
+"**司南**：我建议你先把所有假设都引入，直到证明目标变成：\n"
+"§0"
 
 #. §0: `apply sum_subset`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Now try out §0"
-msgstr "**司南**：好。然后现在 §0。"
+msgstr "**司南**：很好。现在用 §0。"
 
 #. §0: $$ \\sum_{i=0}^{n} (i^3 - 3 i^2 + 2 i)  = \\sum_{i=3}^{n} (i^3 - 3 i^2 + 2i) $$
 #. §1: $0$
@@ -2565,7 +2549,6 @@ msgstr "**司南**：好。然后现在 §0。"
 #. §5: `I₁`
 #. §6: `I₂`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid ""
 "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: "
 "If §4 and term is disappearing for all elements in I₂ not in I₁, then the "
@@ -2575,29 +2558,25 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"估计求和里的那个表达式在§2取前三个值时就是§1……对，没错。那我现在该怎么表述"
+"估计求和里的那个表达式在 §2 取前三个值时就是 §1……对，没错。那我现在该怎么表述"
 "呢？\n"
 "\n"
-"**司南**：你可以用§3：若§4，并且求和里的表达式在§6中所有不在§5里的元素上都为"
-"零，那么对§5的求和就等于对§6的求和。"
+"**司南**：你可以用 §3：已知 §4，并且 §6 中所有不属于 §5 的元素代入求和里的表"
+"达式后的值为零，那么对 §5 的求和就等于对 §6 的求和。"
 
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
-"**司南**: 太棒了！现在你只需要证明你刚才说的那句话：求和号下面的表达式在前三"
+"**司南**：太棒了！现在你只需要证明你刚才说的那句话：求和号下面的表达式在前三"
 "个索引上都是零。"
 
 #. §0: `simp`
 #. §1: `omega`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Try §0 & §1"
-msgstr ""
-"**司南**:  随便把 §0 和 §1 组合一下应该就能搞定。在月球上不也成功了吗。"
+msgstr "**司南**：把 §0 和 §1 组合一下应该就能搞定。在月球上不也成功了吗？"
 
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "Wrong order"
 msgstr "**司南**：不，这看起来方向反了。"
 
@@ -2605,33 +2584,28 @@ msgstr "**司南**：不，这看起来方向反了。"
 #. §1: `obtain`
 #. §2: `obtain h | h | h  := «{h}»`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "[Babylon] Split §0 with §1: §2"
-msgstr "**司南**：现在你可以用§1把假设§0分成三种情况：§2。"
+msgstr "**司南**：现在你可以用 §1 把假设 §0 分成三种情况：§2。"
 
 #. §0: `symm`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "[Hint rxjt] Try §0"
-msgstr "**司南**：先用§0把等式两边对调一下。"
+msgstr "**司南**：先用 §0 把等式两边对调一下。"
 
 #. §0: `Icc_subset_Icc_iff`
 #: Game.Levels.Babylon.L04_sum_subset
-#, fuzzy
 msgid "§0 is useful here"
-msgstr "**司南**:  这里你肯定能很好地用上 §0。"
+msgstr "**司南**：这里 §0 肯定能派上用场。"
 
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid "Conclusion Babylon L05"
-msgstr "**巴比伦人**:  你们做得不错。"
+msgstr "**巴比伦人**：你们做得不错。"
 
 #. §0: `Even.neg_pow`
 #. §1: `Odd.neg_pow`
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid "Familiar situation: try §0 or §1"
-msgstr "**司南**：这个我们之前也见过一些，比如§0和§1。"
+msgstr "**司南**：我们之前不是见过一些类似的引理吗？比如 §0 和 §1。"
 
 #. §0: $$ \\sum_{i \\in I} \\left( (-1)^i + 1 \\right) $$
 #. §1: $I$
@@ -2642,7 +2616,6 @@ msgstr "**司南**：这个我们之前也见过一些，比如§0和§1。"
 #. §6: ``` ∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1) ```
 #. §7: ``` ∑ i ∈ { i ∈ I | Even i}, 2 ```
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid ""
 "Goal is to show that §0 is equal to twice the amount of\n"
 "even numbers in §1. Note that sum disappears for uneven §2. For even §3 the "
@@ -2650,14 +2623,14 @@ msgid ""
 "constrain sum to §6 and then use §7\n"
 "as intermediate step."
 msgstr ""
-"**你**:  这里要证明的是，§0 等同于 §1 里偶数的个数的两倍。对吧？\n"
+"**你**：这里要证明的是，§0 等同于 §1 里偶数的个数的两倍。对吧？\n"
 "\n"
-"**司南**:  对。\n"
+"**司南**：对。\n"
 "\n"
-"**你**:  而这是因为……当 §2 是奇数时，求和里的那个表达式就消失了；当 §3 是偶数"
+"**你**：而这是因为……当 §2 是奇数时，求和里的那个表达式就恒等于0；当 §3 是偶数"
 "时，它就等于 §4。嗯嗯……\n"
 "\n"
-"**司南**:  你再用 §5 写几个中间步骤吧。\n"
+"**司南**：你再用 §5 写几个中间步骤吧。\n"
 "首先你想把求和限制到偶数指标的集合上，也就是：\n"
 "§6\n"
 "然后你大概想用\n"
@@ -2666,53 +2639,47 @@ msgstr ""
 
 #. §0: `sum_congr`
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid "Now oyu can use §0"
-msgstr "**司南**: 看起来不错。现在你已经到位了，可以再用 §0 了。"
+msgstr "**司南**：看起来不错。现在你已经可以再用 §0 了。"
 
 #. §0: `simp`
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid "Try out §0 again"
-msgstr "**司南**: 再试试 §0。"
+msgstr "**司南**：再试试 §0。"
 
 #. §0: `sum_subset`
 #. §1: `symm`
 #: Game.Levels.Babylon.L05_sum_subset2
-#, fuzzy
 msgid "Try §0 from the other side or §1 beforehand"
 msgstr ""
-"**司南**:  这看起来有点不对劲 …\n"
-"  也许你应该把 §0 反过来用。\n"
-"  或者在这一步之前用 §1 把等式翻过来。"
+"**司南**：这看起来有点不对劲……\n"
+"也许你应该把 §0 反过来用。\n"
+"或者在这一步之前用 §1 把等式翻过来。"
 
 #. §0: `rw`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid "Apply induction hypothesis with §0"
 msgstr ""
-"**你**: 那我现在要怎么用归纳假设？\n"
+"**你**：那我现在要怎么用归纳假设？\n"
 "\n"
-"**司南**: 用 §0，就跟用其他任何假设一样。"
+"**司南**：用 §0，就跟用其他任何假设一样。"
 
 #. §0: $[0, «{d}»+1]$
 #. §1: $[0,«{d}»]$
 #. §2: $«{d}»+1$
 #. §3: `insert_Icc_right_eq_Icc_add_one`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid "Divide interval §0 into §1 and §2 by using §3"
 msgstr ""
-"**司南**：现在你想把求和的区间§0拆成§1和§2。为此你可以用我们之前见过的引理"
-"§3。"
+"**司南**：现在你想把求和的区间 §0 拆成 §1 和 §2。为此你可以用我们之前学过的引"
+"理 §3。"
 
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid "Intro Babylon L06"
 msgstr ""
 "**巴比伦人**：来，我带你们看看我们最漂亮的塔之一！\n"
 "\n"
-"路一路陡峭地向上。你们在山顶等着的那座塔，确实非常壮观。\n"
+"山路陡峭，一路向上。而当你们登上山顶，眼前那座塔确实十分壮观。\n"
 "\n"
 "**司南**：这一定就是著名的*巴比伦的高斯塔*！我以前读到过一点。\n"
 "\n"
@@ -2721,12 +2688,11 @@ msgstr ""
 #. §0: `simp`
 #. §1: `ring`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid "The rest is simple computation solvable by §0 and §1"
 msgstr ""
-"**你**: 剩下的现在应该就只是算算而已了。\n"
+"**你**：剩下的现在应该就只是计算了吧。\n"
 "\n"
-"**司南**:  没错。随便把 §0 和 §1 组合一下应该就能搞定。"
+"**司南**：没错。随便把 §0 和 §1 组合用一下应该就能搞定。"
 
 #. §0: $$ \\sum_{i = 0}^n i = \\tfrac{1}{2} \\cdot n \\cdot (n + 1) $$
 #. §1: `n`
@@ -2735,72 +2701,66 @@ msgstr ""
 #. §4: `d`
 #. §5: `hd`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid ""
 "To proof sum §0\n"
 "try to perform induction over §1 using §2. §3 is optional and you can\n"
 "decide on the name of your induction variable (§4) and hypothesis (§5)."
 msgstr ""
-"**你**：这个和式我也见过一次。\n"
+"**你**：这个求和公式我也见过一次。\n"
 "\n"
 "§0\n"
 "\n"
 "不是有个关于小高斯的故事吗，他用一个特别简单的论证就搞定了？\n"
 "\n"
-"**司南**：故事我不太懂。我会直接对§1做归纳。在Lean语里就是：§2！\n"
+"**司南**：故事我不太懂。我会直接对 §1 做归纳。在Lean语里就是：§2！\n"
 "\n"
-"**你**：为什么要§3？\n"
+"**你**：为什么要 §3？\n"
 "\n"
 "**司南**：这个附加项当然是可选的。你可以用它来给归纳变量（§4）和归纳假设"
 "（§5）起名字。"
 
 #. §0: `simp`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid "You can skip induction start by using §0"
 msgstr ""
-"**你**：先做归纳的起步……\n"
+"**你**：先做归纳的第一步……\n"
 "\n"
-"**司南**：这个你经常可以用§0一笔带过！"
+"**司南**：这个你经常可以用 §0 一笔带过！"
 
 #. §0: `sum_insert`
 #. §1: $[0,«{d}»]$
 #. §2: $«{d}»+1$
 #. §3: `rw [sum_insert]`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#, fuzzy
 msgid ""
 "§0 will divide sum as wished: a sum over §1 and an additional summand for "
 "§2.\n"
 "Try §3"
 msgstr ""
-"**司南**：没错！现在§0会把和式正好按你想要的方式拆开：也就是先对§1求和，然后"
-"再给§2加上一个额外的项。试试看：§3"
+"**司南**：没错！现在 §0 会把和式正好按你想要的方式拆开：也就是一部分对 §1 的"
+"求和，另一部分是 §2 对应的额外项。试试看：§3"
 
 #. §0: `rw [sum_insert]`
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#, fuzzy
 msgid "And yet again §0"
-msgstr "**司南**:  对，就是这样，然后再来一次 §0。"
+msgstr "**司南**：对，就是这样，现在再用一次 §0。"
 
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#, fuzzy
 msgid "Intro Babylon L07"
 msgstr ""
-"在高斯塔旁边又出现了一块空地。\n"
-"这次牌子上写着："
+"在巴比伦的高斯塔旁边，又出现了一块空地。\n"
+"这次，旁边的牌子上写着："
 
 #. §0: $\\sum_{i=-n}^«{n}» i = 0$
 #. §1: `insert_Icc_right_eq_Icc_add_one`
 #. §2: `insert_Icc_left_eq_Icc_sub_one`
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#, fuzzy
 msgid "Prove §0 by using §1, §2"
 msgstr ""
 "**你**：§0——嗯，看起来没问题。\n"
 "\n"
-"**司南**：也应该能像高斯求和那样一模一样地证明出来 … 只不过你大概在§1之后还需"
-"要§2。"
+"**司南**：这个证明应该和刚才的高斯求和证明过程几乎一样……只不过你大概先要用 "
+"§1 之后还得再用 §2。"
 
 #. §0: `-1 + -«{d}»`
 #. §1: `-«{d}» - 1`
@@ -2808,54 +2768,49 @@ msgstr ""
 #. §3: `ℤ`
 #. §4: ``` have : -1 + (-d : ℤ)  = -d - 1 ```
 #: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#, fuzzy
 msgid ""
 "Rewrite §0 to §1. Formulate equation using §2.\n"
 "Also, specify that equation is in §3. Try e.g. §4"
 msgstr ""
-"**司南**：我怕接下来你得把§0改写成§1。\n"
-"也许最简单的是用§2把这个等式写出来。\n"
-"你只需要想办法说明这应该是一个在§3里的等式，比如这样：\n"
+"**司南**：恐怕接下来你得把 §0 改写成 §1。\n"
+"也许最简单的办法，是用 §2 把这个等式单独写出来。\n"
+"你只需要想办法说明：这应该是 §3 里的一个等式，比如这样：\n"
 "§4"
 
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
-#, fuzzy
 msgid "Conclusion Babylon L08"
 msgstr ""
-"**巴比伦人**:  那么？你们喜欢这里吗？\n"
+"**巴比伦人**：怎么样？你们喜欢这里吗？\n"
 "\n"
-"**司南**:  喜欢，非常喜欢。你们在这里建起来的一切真的都很震撼。不过我们就不再"
-"耽误你们了。\n"
+"**司南**：是的，非常喜欢。你们在这里建起来的一切真的都很震撼。不过我们就不继"
+"续打扰你们了。\n"
 "\n"
-"**你**:  我也觉得，我们该慢慢出发回去了。\n"
+"**你**：我也觉得，我们该动身回去了。\n"
 "\n"
-"你们道别，然后踏上返回飞船的路。"
+"你们向他们道别，然后踏上返回飞船的路。"
 
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
-#, fuzzy
 msgid "Intro Babylon L08"
-msgstr "出于纯粹的好奇，你又仔细看了看旁边的一座塔。"
+msgstr "你们一时好奇，又走近看了看旁边的另一座塔。"
 
 #. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
 #: Game.Levels.Babylon.L08_Induction3_sub_insert3
-#, fuzzy
 msgid "Try solving §0 by induction"
 msgstr ""
-"**你**：这里就是只对奇数求和了。\n"
+"**你**：所以这里是对一串奇数求和：\n"
 "§0\n"
 "\n"
 "**司南**：这跟刚才完全一样。"
 
 #: Game.Levels.Babylon.L09_Boss
-#, fuzzy
 msgid "Conclusion Babylon L09"
 msgstr ""
-"那个巴比伦人想了好久好久，你们感觉他其实从来都不凶，只是嗓音特别低沉。\n"
+"那个巴比伦人沉默地想了很久很久，你们渐渐觉得，他其实从来就不凶，只是声音特别"
+"低沉。\n"
 "\n"
-"伴随着一阵小地震，他坐了下来，感激地朝你们挥了挥手。"
+"他坐了下来，带起一阵小小的地震，然后感激地向你们挥手告别。"
 
 #: Game.Levels.Babylon.L09_Boss
-#, fuzzy
 msgid "Intro Babylon L09"
 msgstr ""
 "你们还没走多远，就有一个特别高大的巴比伦人突然从一座塔后面冒出来，挡在你们面"
@@ -2863,17 +2818,14 @@ msgstr ""
 
 #. §0: `arithmetic_sum`
 #: Game.Levels.Babylon.L09_Boss
-#, fuzzy
 msgid "Use §0 as its already proven"
-msgstr "**司南**：记住，我们已经证明过§0了。"
+msgstr "**司南**：记住，我们已经证明过 §0 了。"
 
 #: Game.Levels.Babylon.L09_Boss
-#, fuzzy
 msgid "this should work"
-msgstr "**你**：嗯哼。这应该会成的 … "
+msgstr "**你**：好吧。应该能搞定……"
 
 #: Game.Levels.Cantor
-#, fuzzy
 msgid "Cantor"
 msgstr "康托尔"
 
