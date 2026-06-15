@@ -21,7 +21,6 @@ msgid "[Game] CaptionShort"
 msgstr "和你的智能精灵司南一起探索一个陌生的宇宙！"
 
 #: Game
-#, fuzzy
 msgid "[Game] Conclusion"
 msgstr "QED"
 
@@ -110,21 +109,18 @@ msgstr ""
 "背景信息和致谢可以在菜单里的*Game Info*中找到。"
 
 #: Game
-#, fuzzy
 msgid "[Game] Title"
 msgstr "司南"
 
 #: Game.Doc.Definition
-#, fuzzy
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
-msgstr "一个映射当且仅当它既是单射又是满射时是双射。"
+msgstr "一个映射是双射，当且仅当它既是单射又是满射。"
 
 #. §0: `f`
 #. §1: ```
 #. ∀ a b, f a = f b → a = b
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "A mapping §0 is injectiv, if:\n"
 "\n"
@@ -139,7 +135,6 @@ msgstr ""
 #. ∀ ⦃a b⦄, a < b → f a < f b
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "A mapping §0 is strictly monotonous, if:\n"
 "\n"
@@ -154,7 +149,6 @@ msgstr ""
 #. ∀ b, ∃ a, f a = b
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "A mapping §0 is surjectiv, if:\n"
 "\n"
@@ -194,7 +188,6 @@ msgstr ""
 #.    h_unique : ∀ (y : A), P y → y = a
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that *exactly one* element §2 in §3 (more precisely: of "
@@ -274,7 +267,6 @@ msgstr ""
 #. §18: `a : A`
 #. §19: `ha : P a`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that an element §2 in §3 (more precisely: of type §4)\n"
@@ -310,28 +302,26 @@ msgstr ""
 #. §2: $\\sum_{i\\in I} f(i)$
 #. §3: `\\sum`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a finite index set §0, §1 is Leanic notation for the sum\n"
 "§2.  You write the summation sign as §3."
 msgstr ""
-"对于一个有限的指标集合 §0，§1 是 Lean语 中表示求和 §2 的写法。\n"
+"对于一个有限指标集 §0，§1 是 Lean语中表示求和 §2 的写法。\n"
 "\n"
-"你把求和符号写作 §3。"
+"你可以把求和符号写作 §3。"
 
 #. §0: `I : Finset T`
 #. §1: `∏ i ∈ I, f i`
 #. §2: $\\prod_{i\\in I} f(i)$
 #. §3: `\\prod`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a finite index set §0, §1 is the Leanic notation for the product\n"
 "§2.  You write the product symbol as §3."
 msgstr ""
-"对于一个有限的指标集合 §0，§1 是 Lean语 中表示乘积 §2 的写法。\n"
+"对于一个有限的指标集 §0，§1 是 Lean语中表示乘积 §2 的写法。\n"
 "\n"
-"你把乘积符号写作 §3。"
+"你可以把乘积符号写作 §3。"
 
 #. §0: `A : Finset T`
 #. §1: `a : T`
@@ -341,14 +331,13 @@ msgstr ""
 #. §5: `A`
 #. §6: `insert a A = A`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is already in §5, then obviously §6."
 msgstr ""
-"对一个有限子集§0和一个元素§1，§2是§3的另一种写法。\n"
-"如果§4已经在§5里了，那显然§6。"
+"对一个有限子集 §0 和一个元素 §1，§2 是 §3 的另一种写法。\n"
+"如果 §4 已经在 §5 里了，那显然 §6。"
 
 #. §0: `A : Finset T`
 #. §1: `a : T`
@@ -358,25 +347,23 @@ msgstr ""
 #. §5: `A`
 #. §6: `erase A a = A`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is not in §5 at all, then obviously §6."
 msgstr ""
-"对一个有限子集§0和一个元素§1，§2是§3的另一种写法。\n"
-"如果§4根本不在§5里，那显然§6。"
+"对一个有限子集 §0 和一个元素 §1，§2 是 §3 的另一种写法。\n"
+"如果 §4 根本不在 §5 里，那显然 §6。"
 
 #. §0: `A : Finset T`
 #. §1: `card A : ℕ`
 #. §2: `A`
 #. §3: `A`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a finite subset §0, §1 is the cardinality of §2,\n"
 "i.e., the number of elements in §3."
-msgstr "对一个有限子集§0，§1是§2的基数，也就是§3里的元素个数。"
+msgstr "对一个有限子集 §0，§1 是 §2 的基数，也就是 §3 里的元素个数。"
 
 #. §0: `f : A → B`
 #. §1: `S`
@@ -388,16 +375,15 @@ msgstr "对一个有限子集§0，§1是§2的基数，也就是§3里的元素
 #. §5: `f`
 #. §6: `''`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0 and a subset §1 of §2,\n"
 "§3\n"
 "is its image under §4.  Note the space between §5 and §6."
 msgstr ""
-"对一个映射§0和§2的一个子集§1，有\n"
+"对一个映射 §0 和 §2 的一个子集 §1，\n"
 "§3\n"
-"它在§4下的像。\n"
-"注意§5和§6之间的空格。"
+"是 §1 在 §4 下的像。\n"
+"注意 §5 和 §6 之间的空格。"
 
 #. §0: `f : A → B`
 #. §1: `T`
@@ -410,7 +396,6 @@ msgstr ""
 #. §6: `f`
 #. §7: `\\-1'`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0 and a subset §1 of §2,\n"
 "§3\n"
@@ -418,12 +403,12 @@ msgid ""
 "You write this as §5.\n"
 "Note the space between §6 and §7."
 msgstr ""
-"对一个映射§0和§2的一个子集§1，有\n"
+"对一个映射 §0 和 §2 的一个子集 §1，\n"
 "§3\n"
-"它在§4下的原像。\n"
+"是 §1 在 §4 下的原像。\n"
 "\n"
-"你把它写作§5。\n"
-"注意§6和§7之间的空格。"
+"你把它写作 §5。\n"
+"注意 §6 和 §7 之间的空格。"
 
 #. §0: `f : A → B`
 #. §1: `image f : Set A → Set B`
@@ -431,14 +416,13 @@ msgstr ""
 #. §3: `f '' A`
 #. §4: `f`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0, §1\n"
 "is one of the induced mappings on the power sets –\n"
 "it maps a subset of §2 to the image §3 of this subset under §4."
 msgstr ""
-"对一个映射§0，§1是作用在幂集上的一个诱导映射——它把§2的一个子集映到该子集在§4"
-"下的像§3。"
+"对一个映射 §0，§1 是作用在幂集上的一个诱导映射——它把 §2 的一个子集映到该子集"
+"在 §4 下的像 §3。"
 
 #. §0: `f : A → B`
 #. §1: `preimage f : Set B → Set A`
@@ -446,14 +430,13 @@ msgstr ""
 #. §3: `f ⁻¹' A`
 #. §4: `f`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0, §1\n"
 "is one of the induced mappings on the power sets –\n"
 "it maps a subset of §2 to the preimage §3 of this subset under §4."
 msgstr ""
-"对一个映射§0，§1是作用在幂集上的一个诱导映射——它把§2的一个子集映到该子集在§4"
-"下的原像§3。"
+"对一个映射 §0，§1 是作用在幂集上的一个诱导映射——它把 §2 的一个子集映到该子集"
+"在 §4 下的原像 §3。"
 
 #. §0: `f : A → B`
 #. §1: `range f`
@@ -468,7 +451,6 @@ msgstr ""
 #. x ∈ range f ↔ ∃ a, f a = b
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0, §1 is the full image set of §2:\n"
 "§3\n"
@@ -476,10 +458,10 @@ msgid ""
 "§5 is useful to work with it:\n"
 "§6"
 msgstr ""
-"对一个映射 §0，§1 是 §2 的整个值域：\n"
+"对一个映射 §0，§1 是 §2 的整个像集：\n"
 "§3\n"
 "所以这基本上就是 §4 的另一种写法。\n"
-"为了用它来干活，§5 很有用：\n"
+"要处理这个记号，§5 很有用：\n"
 "§6"
 
 #. §0: `f : A → A`
@@ -487,26 +469,24 @@ msgstr ""
 #. §2: `f `
 #. §3: `unfold fixedPoints`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a mapping §0, §1 is the set of fixed points of §2.\n"
 "Look up definition with §3."
 msgstr ""
-"对一个映射§0，§1是§2的不动点集合。\n"
-"你可以用§3很容易把定义展开写出来。"
+"对一个映射 §0，§1 是 §2 的不动点集合。\n"
+"你可以用 §3 很容易把定义展开写出来。"
 
 #. §0: `A`
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to "
 "§3 in Leanic."
 msgstr ""
-"对一个矩阵§0，§1是§2的迹。\n"
-"这个表达式在Lean语里也等价于§3。"
+"对一个矩阵 §0，§1 是 §2 的迹。\n"
+"这个表达式在 Lean语里也等价于 §3。"
 
 #. §0: `P : T → Prop`
 #. §1: `{ a : T | P a } : Set P`
@@ -517,7 +497,6 @@ msgstr ""
 #. §4: `simp`
 #. §5: `P a`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a predicate §0, §1 is the subset\n"
 "consisting of all elements that satisfy the predicate.  For example,\n"
@@ -528,7 +507,7 @@ msgstr ""
 "对一个谓词 §0，§1 是由所有满足该谓词的元素组成的子集。\n"
 "比如说，\n"
 "§2\n"
-"就是偶数的自然数集合。\n"
+"就是偶自然数的集合。\n"
 "\n"
 "命题 §3 你可以用 §4 化简成 §5。"
 
@@ -538,13 +517,12 @@ msgstr ""
 #. §3: `f a = a`
 #. §4: `unfold IsFixedPt`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
 "Look up definition with §4."
 msgstr ""
-"对一个自映射§0和一个元素§1，§2就是断言§3。\n"
-"你可以用§4很容易把定义展开写出来。"
+"对一个自映射 §0 和一个元素 §1，§2 就是断言 §3。\n"
+"你可以用 §4 很容易把定义展开写出来。"
 
 #. §0: `A : Set T`
 #. §1: `a`
@@ -558,7 +536,6 @@ msgstr ""
 #. §9: `simp`
 #. §10: `P a`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 "
 "means that\n"
@@ -578,7 +555,6 @@ msgstr ""
 #. §4: `h.toFinset : Finset T`
 #. §5: `A`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For a subset §0, §1 means that §2 has only a finite number of elements.\n"
 "If §3 is given as an assumption, then §4 is the same subset §5,\n"
@@ -596,7 +572,6 @@ msgstr ""
 #. §5: `∩`
 #. §6: `\\inter`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
 "§5 is written as §6."
@@ -613,7 +588,6 @@ msgstr ""
 #. §5: `∪`
 #. §6: `\\union`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
 "§5 is written as §6."
@@ -629,7 +603,6 @@ msgstr ""
 #. §4: `A`
 #. §5: `B`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For two subsets §0, §1 is the difference between §2 and §3,\n"
 "consisting of all elements of §4 that are not in §5."
@@ -641,7 +614,6 @@ msgstr ""
 #. §2: `x`
 #. §3: `|`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For §0, §1 is the absolute value of §2.\n"
 "(Here, §3 is the usual vertical bar on the keyboard.)"
@@ -664,7 +636,6 @@ msgstr ""
 #. §11: `B`
 #. §12: `apply`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For §0, §1 is the implication “§2 implies §3.”\n"
 "For other §4, §5 is a mapping that maps values from §6 to §7.\n"
@@ -699,7 +670,6 @@ msgstr ""
 #. §7: `Icc 0 (n-1) : Finset ℕ`
 #. §8: `ℕ`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For §0, §1 is the set §2.\n"
 "\n"
@@ -709,16 +679,15 @@ msgid ""
 msgstr ""
 "对 §0 来说，§1 就是集合 §2。\n"
 "\n"
-"(§3 要和 §4 区分开来：\n"
+"（§3 要和 §4 区分开来：\n"
 "§5 是一个集合，或者更准确地说是一个类型，也就是 §6，而 §7 是 §8 的一个有限子"
-"集。)"
+"集。）"
 
 #. §0: `n : ℕ`
 #. §1: `Prime n`
 #. §2: `n`
 #. §3: `prime_def`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For §0, §1 means that §2 is a prime number.\n"
 "To work with this definition, it is often helpful to rewrite it using the "
@@ -726,7 +695,7 @@ msgid ""
 "§3."
 msgstr ""
 "对 §0，§1 表示 §2 是一个素数。\n"
-"为了用这个定义来干活，通常把它用引理 §3 改写会很有帮助。"
+"要处理这个定义，通常用引理 §3 改写会很有帮助。"
 
 #. §0: `A B : Set T`
 #. §1: `A ⊆ B`
@@ -748,7 +717,6 @@ msgstr ""
 #. §17: `⊆`
 #. §18: `\\subset`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "For §0, §1 means that §2 is contained in §3.\n"
 "\n"
@@ -784,7 +752,6 @@ msgstr ""
 #. §5: `(n : ℤ)`
 #. §6: `↑n`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "If §0 is an integer greater than or equal to 0, then §1 is the same number, "
 "interpreted as a natural number.\n"
@@ -809,9 +776,8 @@ msgstr ""
 #. §1: `¬ x = y`
 #. §2: `unfold Ne`
 #: Game.Doc.Definition
-#, fuzzy
 msgid "Inequality §0 is defined as §1.  You can see this with §2."
-msgstr "不等式 §0 被定义为 §1。你可以用 §2 看到这一点。"
+msgstr "不等关系 §0 被定义为 §1。你可以用 §2 把它展开。"
 
 #. §0: `fun x ↦ _`
 #. §1: `fun (x : ℤ) ↦  -x`
@@ -822,7 +788,6 @@ msgstr "不等式 §0 被定义为 §1。你可以用 §2 看到这一点。"
 #. §6: `↦`
 #. §7: `=>`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "The notation §0 is used to define “anonymous functions.”\n"
 "For example, §1 defines the negation §2 without giving it a name.\n"
@@ -849,7 +814,6 @@ msgstr ""
 #. §11: `False`
 #. §12: `contradiction`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "The statement §0 is always false.\n"
 "\n"
@@ -894,7 +858,6 @@ msgstr ""
 #. §5: `True`
 #. §6: `True`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "The statement §0 is always true.\n"
 "\n"
@@ -914,7 +877,7 @@ msgstr ""
 "\n"
 "## §5 作为假设\n"
 "\n"
-"作为假设时，§6 完全没啥用。"
+"作为假设时，§6 完全没什么用。"
 
 #. §0: `P : A → Prop`
 #. §1: `∀ a : A, P a`
@@ -937,7 +900,6 @@ msgstr ""
 #. §18: `h : P a₀`
 #. §19: `a₀`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "Universal quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that the statement §2 is true for all §3 in §4\n"
@@ -970,10 +932,9 @@ msgstr ""
 #. §1: `rw`
 #. §2: `trans`
 #: Game.Doc.Definition
-#, fuzzy
 msgid "Useful tactics for equality are: §0, §1, §2"
 msgstr ""
-"对等式有用的策略有： \n"
+"对等式有用的策略有：\n"
 "* §0\n"
 "* §1\n"
 "* §2"
@@ -1006,7 +967,6 @@ msgstr ""
 #. §25: `a ∈ A`
 #. §26: `ha : a ∈ A`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "[Doc.Definition] Nonempty\n"
 "§0\n"
@@ -1047,7 +1007,6 @@ msgstr ""
 #. §10: `h₁ : A`
 #. §11: `h₂ : B`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 (“and”) is the statement that both §1 and §2 are true.\n"
 "\n"
@@ -1086,7 +1045,6 @@ msgstr ""
 #. obtain h | h := h
 #. ```
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 (“or”) is the statement that at least one of the statements §1, §2 is "
 "true.\n"
@@ -1121,7 +1079,6 @@ msgstr ""
 #. §1: `(True : Prop)`
 #. §2: `(False : Prop)`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is any statement, without further specification as to whether it is true, "
 "false, or\n"
@@ -1132,7 +1089,7 @@ msgid ""
 msgstr ""
 "§0 是一个任意命题，不额外说明它是真的、假的，还是根本不可证。\n"
 "\n"
-"另见 §1 和 §2：分别对应无条件为真/\\\\ 无条件为假的命题。"
+"另见 §1 和 §2：分别对应无条件为真和无条件为假的命题。"
 
 #. §0: `Function.RightInverse f g`
 #. §1: `LeftInverse g f`
@@ -1141,7 +1098,6 @@ msgstr ""
 #. §4: `RightInverse`
 #. §5: `RightInverse`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is defined as §1.\n"
 "In other words: §2.\n"
@@ -1151,12 +1107,11 @@ msgid ""
 msgstr ""
 "§0 被定义为 §1。也就是说，直白点就是 §2。\n"
 "\n"
-"你得写 §3 而不是 §4，因为 §5 在 Lean语 里是有歧义的。"
+"你得写 §3 而不是 §4，因为 §5 在 Lean语里是有歧义的。"
 
 #. §0: `Icc a b`
 #. §1: $[a,b]$
 #: Game.Doc.Definition
-#, fuzzy
 msgid "§0 is the closed interval §1."
 msgstr "§0 是闭区间 §1。"
 
@@ -1169,7 +1124,6 @@ msgstr "§0 是闭区间 §1。"
 #. §6: `∅`
 #. §7: `\\emptyset`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the empty subset.\n"
 "In the Formaloverse §1 is something different than §2\n"
@@ -1181,8 +1135,7 @@ msgid ""
 "§6 is written as §7."
 msgstr ""
 "§0 是空子集。\n"
-"所以在 Lean宇宙 里，§1 和 §2 是不一样的——一个是 ℕ 的子集，另一个是 ℝ 的子"
-"集！\n"
+"在 Lean宇宙里，§1 和 §2 是不一样的——一个是 ℕ 的子集，另一个是 ℝ 的子集！\n"
 "\n"
 "用 §3 你可以把一个形如 §4 的等式改写成命题 §5。\n"
 "\n"
@@ -1199,7 +1152,6 @@ msgstr ""
 #. §8: `apply`
 #. §9: `False`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the logical negation of §1.\n"
 "It is implemented internally as §2.  You can see this with §3.\n"
@@ -1209,7 +1161,7 @@ msgid ""
 "§9."
 msgstr ""
 "§0 是 §1 的逻辑否定。\n"
-"它在内部被定义为 §2，你可以用 §3 很容易地检查这一点。 \n"
+"它在内部被定义为 §2，你可以用 §3 很容易地检查这一点。\n"
 "因此，你可以用 §8 把一个形如 §7 的假设应用到证明目标 §9 上。\n"
 "\n"
 "其他有用的策略有：\n"
@@ -1220,7 +1172,6 @@ msgstr ""
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the mapping §1.\n"
 "It therefore maps a natural number to its successor."
@@ -1235,7 +1186,6 @@ msgstr ""
 #. ```
 #. §3: `unfold Even`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the statement that §1 is even:\n"
 "§2\n"
@@ -1252,7 +1202,6 @@ msgstr ""
 #. ```
 #. §3: `unfold Odd`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the statement that §1 is odd:\n"
 "§2\n"
@@ -1268,7 +1217,6 @@ msgstr ""
 #. §3: `S = univ`
 #. §4: `∀ (x : T), x ∈ S`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 is the “subset” consisting of *all* elements of type §1.\n"
 "\n"
@@ -1296,7 +1244,6 @@ msgstr ""
 #. §14: `h.mpr`
 #. §15: `mp`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means that statements §1 and §2 are logically equivalent (“if and only "
 "if”).\n"
@@ -1333,12 +1280,11 @@ msgstr ""
 #. §4: `X (n-1)`
 #. §5: `R`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means that §1 is a polynomial in §2 indeterminates\n"
 "§3, …, §4 with coefficients in §5."
 msgstr ""
-"§0 的意思是：§1 是一个关于 §2 个不定元 §3，…，§4 的多项式，系数在 §5 中。"
+"§0 的意思是：§1 是一个关于 §2 个不定元 §3，……，§4 的多项式，系数在 §5 中。"
 
 #. §0: `A : Set T`
 #. §1: `A`
@@ -1346,7 +1292,6 @@ msgstr ""
 #. §3: `A`
 #. §4: `T`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means that §1 is a subset of §2\n"
 "(or, more precisely, that §3 is a set consisting of elements of type §4)."
@@ -1359,18 +1304,16 @@ msgstr ""
 #. §2: `∀ x, g (f x) = x`
 #. §3: `unfold`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means §1, or more exactly:\n"
 "§2, as can be seen with §3."
-msgstr "§0 的意思是 §1，或者更准确地说：§2，你用 §3 很容易就能看出来。"
+msgstr "§0 的意思是 §1，或者更准确地说：§2，你用 §3 很容易就能展开。"
 
 #. §0: `HasRightInverse f`
 #. §1: `f`
 #. §2: `HasLeftInverse f`
 #. §3: `f`
 #: Game.Doc.Definition
-#, fuzzy
 msgid ""
 "§0 means, that §1 has a right inverse.\n"
 "\n"
@@ -1397,7 +1340,6 @@ msgstr ""
 #. §10: `a`
 #. §11: `b`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "An assumption of the form\n"
 "§0\n"
@@ -1415,7 +1357,7 @@ msgstr ""
 "§0\n"
 "的假设，你可以用 §1 把它拆成组成部分 §2 和 §3。\n"
 "\n"
-"更一般地，你可以用 §4 来用选择公理选取元素：\n"
+"更一般地，你可以用 §4 借助选择公理选取元素：\n"
 "从一个形如\n"
 "§5\n"
 "的假设中，§6 会抽取出一个映射 §7 以及假设 §8。\n"
@@ -1426,7 +1368,6 @@ msgstr ""
 #. §1: `use x`
 #. §2: `P x`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "If the proof target is of the form §0, you can use §1 to specify a concrete "
 "element\n"
@@ -1438,7 +1379,6 @@ msgstr ""
 #. §1: `left`
 #. §2: `right`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "If the proof target is of the form §0, you choose §1 to show the left side.\n"
 "\n"
@@ -1456,7 +1396,6 @@ msgstr ""
 #. §1: `right`
 #. §2: `left`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "If the proof target is of the form §0, you choose §1 to show the right "
 "side.\n"
@@ -1504,7 +1443,6 @@ msgstr ""
 #. §26: `nth_rw 2 [h]`
 #. §27: `2*a + f b > 2*a`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "If you have given an equation §0 or an equivalence §1 as an assumption or "
 "lemma,\n"
@@ -1565,7 +1503,6 @@ msgstr ""
 #. §5: `intro h`
 #. §6: `revert h`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 adds the assumption §1 as an implication premise to the proof "
 "goal:\n"
@@ -1590,7 +1527,6 @@ msgstr ""
 #. §5: `(h : P)`
 #. §6: `(h : ¬P)`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
 "For example, §2 distinguishes between the cases §3 and §4.\n"
@@ -1617,7 +1553,6 @@ msgstr ""
 #. ```
 #. §4: `linarith`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 can show that a linear equation or inequality follows from "
 "given equations or inequalities.\n"
@@ -1648,7 +1583,6 @@ msgstr ""
 #. §2: `ℤ`
 #. §3: `linarith`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 can show that a linear equation or inequality in §1 or §2\n"
 "follows from given equations or inequalities.\n"
@@ -1664,7 +1598,6 @@ msgstr ""
 #. §3: `revert h`
 #. §4: `contrapose`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 changes a proof goal of the form §1 to §2, thereby\n"
 "initiating a proof by contraposition.\n"
@@ -1690,7 +1623,6 @@ msgstr ""
 #. §5: `contradiction`
 #. §6: `by_contra`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 concludes the proof if it finds a contradiction in the "
 "assumptions.\n"
@@ -1705,7 +1637,7 @@ msgid ""
 "Normally, §5 is used to conclude a proof by contradiction\n"
 "that was opened with §6."
 msgstr ""
-"策略 §0 会在它在假设里找到矛盾时结束证明。\n"
+"策略 §0 会在假设里找到矛盾时结束证明。\n"
 "这种矛盾比如可能长这样：\n"
 "\n"
 "* §1\n"
@@ -1725,7 +1657,6 @@ msgstr ""
 #. §6: `A → B`
 #. §7: `contrapose`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 initiates a proof by contradiction.\n"
 "If §1 is your current proof goal, §2 generates a new assumption §3\n"
@@ -1771,7 +1702,6 @@ msgstr ""
 #. §20: `revert h`
 #. §21: `intro h`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 is used for   proof goals of the form §1 or §2.\n"
 "\n"
@@ -1826,7 +1756,6 @@ msgstr ""
 #. §14: `not_exists`
 #. §15: `rw`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n"
 "\n"
@@ -1846,7 +1775,7 @@ msgid ""
 "\n"
 "The two lemmas §13 and §14 can be applied individually with §15."
 msgstr ""
-"策略 §0（或者也可以：§1）把否定推进过量词：\n"
+"策略 §0（或者也可以：§1）把否定推进到量词里：\n"
 "\n"
 "| 之前         | 之后         |\n"
 "|:------------ |:-------------|\n"
@@ -1879,7 +1808,6 @@ msgstr ""
 #. §13: `zero_eq`
 #. §14: `Nat.succ_eq_add_one`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 performs an inductive proof over §1.\n"
 "With §2, you can specify names for the induction variable (here: §3)\n"
@@ -1914,7 +1842,6 @@ msgstr ""
 #. §1: `generalize`
 #. §2: `tauto`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 proves logical tautologies.\n"
 "\n"
@@ -1936,14 +1863,13 @@ msgstr ""
 #. §4: `A`
 #. §5: `B`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The tactic §0 proves §1.  More precisely, §2 closes every proof target of "
 "the form §3,\n"
 "where §4 and §5 are identical in definition."
 msgstr ""
 "策略 §0 证明 §1。\n"
-"更准确地说，§2 会关闭任何形如 §3 的目标，其中 §4 和 §5 在定义上相等。"
+"更准确地说，§2 会完成任何形如 §3 的目标，其中 §4 和 §5 在定义上相等。"
 
 #. §0: `simp`
 #. §1: `mathlib`
@@ -1959,7 +1885,6 @@ msgstr ""
 #. §11: `g`
 #. §12: `simp?`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic attempts to apply a large number of lemmas to simplify a given "
 "expression.\n"
@@ -1996,7 +1921,6 @@ msgstr ""
 #. §9: `left`
 #. §10: `right`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic breaks down a proof goal into its constituent parts:\n"
 "\n"
@@ -2047,7 +1971,6 @@ msgstr ""
 #. §22: `⟨_, _⟩`
 #. §23: $(G, 0, +)$
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic breaks down an assumption into its individual parts.\n"
 "\n"
@@ -2080,7 +2003,7 @@ msgstr ""
 "§11                                        |\n"
 "| §12                | §13                    | §14 和 "
 "§15                                |\n"
-"| §16                | §17                    | 一个目标带 §18，一个目标带 "
+"| §16                | §17                    | 一个目标是 §18，另一个目标是 "
 "§19         |\n"
 "\n"
 "前四个例子里的括号你要输入成 §20 或者 §21。\n"
@@ -2089,7 +2012,6 @@ msgstr ""
 
 #. §0: `assumption`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic closes the proof if one of the assumptions corresponds exactly "
 "to the proof target."
@@ -2101,7 +2023,6 @@ msgstr "策略 §0 会在某个假设恰好就是目标时结束证明。"
 #. §3: `x`
 #. §4: `simp only [x]`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic introduces a temporary definition, for example\n"
 "§1.\n"
@@ -2115,14 +2036,13 @@ msgstr ""
 #. §0: `ring`
 #. §1: `+, -, *, ^`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "The §0 tactic proves equations with the operations §1 in semirings,\n"
 "in particular in ℕ, ℤ, ℚ, ℝ, …   It works particularly well in commutative "
 "rings."
 msgstr ""
-"策略 §0 在半环里证明只用到运算 §1 的等式，也就是尤其在 ℕ、ℤ、ℚ、ℝ、… 里都能"
-"用。它在交换环里特别好用。"
+"策略 §0 在半环里证明只用到运算 §1 的等式，尤其在 ℕ、ℤ、ℚ、ℝ、…… 里都能用。它"
+"在交换环里特别好用。"
 
 #. §0: ```
 #. f = g
@@ -2133,7 +2053,6 @@ msgstr ""
 #. f x = g x
 #. ```
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "Two mappings with the same range and domain are equal if\n"
 "they take the same values on all elements of the domain.\n"
@@ -2143,7 +2062,7 @@ msgid ""
 "into the equation\n"
 "§3."
 msgstr ""
-"两个映射如果值域和定义域相同，并且在定义域的所有元素上取到的值都一样，那它们"
+"两个映射如果陪域和定义域相同，并且在定义域的所有元素上取到的值都一样，那它们"
 "就相等。\n"
 "一个形如\n"
 "§0\n"
@@ -2163,7 +2082,6 @@ msgstr ""
 #. x ∈ A ↔ x ∈ B
 #. ```
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "Two subsets of a given set are equal if they have the same elements.\n"
 "If the proof goal is\n"
@@ -2193,7 +2111,6 @@ msgstr ""
 #.   ```
 #. §10: `rw [h.symm]`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0 (for “symmetry”), you swap the sides of an equation (§1) or "
 "equivalence (§2) in the proof target.\n"
@@ -2230,7 +2147,6 @@ msgstr ""
 #. §7: `h : B`
 #. §8: `hAB`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you apply an implication §1:\n"
 "\n"
@@ -2262,7 +2178,6 @@ msgstr ""
 #. §8: `if A then B else C`
 #. §9: `C`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you can define mappings with two branches of definition.\n"
 "\n"
@@ -2300,7 +2215,6 @@ msgstr ""
 #. ```
 #. §8: `tauto`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you can generalize a proof goal\n"
 "in the hope that a higher level of abstraction will allow for a simpler "
@@ -2339,7 +2253,6 @@ msgstr ""
 #. §4: `4 ≠ 6`
 #. §5: `Prime 7`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you can prove statements that can be decided using a simple "
 "algorithm.\n"
@@ -2367,7 +2280,6 @@ msgstr ""
 #. §7: `unfold F`
 #. §8: `simp only [F]`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you can write out the definition §1 in the proof goal.\n"
 "With §2, you do the same thing, but in the assumption §3.\n"
@@ -2389,7 +2301,7 @@ msgstr ""
 "\n"
 "## 相关策略\n"
 "\n"
-"tactic §7 和 §8 基本上做的是同一件事。"
+"策略 §7 和 §8 基本上做的是同一件事。"
 
 #. §0: `trans`
 #. §1: `⊢ A = C`
@@ -2403,7 +2315,6 @@ msgstr ""
 #. §9: `A = B₁ = B₂ = B₃ … = C`
 #. §10: `calc`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you insert an intermediate step into an equation or equivalence.\n"
 "\n"
@@ -2418,16 +2329,16 @@ msgid ""
 "(Outside of the game, however, the multi-line tactic §10 is better suited "
 "for such calculations.)"
 msgstr ""
-"用§0你可以在一个等式或等价之间插入一个中间步骤。\n"
+"用 §0 你可以在一个等式或等价之间插入一个中间步骤。\n"
 "\n"
-"| 之前         | tactic   | 之后                   | \n"
+"| 之前         | 策略   | 之后                   | \n"
 "|:------------ |:-------- |:-----------------------| \n"
 "| §1           | §2       | §3 和 §4               | \n"
 "| §5           | §6       | §7 和 §8               | \n"
 "\n"
-"因为你可以多次重复这个 tactic，它很适合一步一步做一串“计算”§9。\n"
+"因为你可以多次重复这个策略，它很适合一步一步做一串“计算” §9。\n"
 "\n"
-"（不过在游戏外，做这种计算更推荐用多行的 tactic §10。）"
+"（不过在游戏外，做这种计算更推荐用多行策略 §10。）"
 
 #. §0: `suffices h : P`
 #. §1: `P`
@@ -2435,7 +2346,6 @@ msgstr ""
 #. §3: `have h : P`
 #. §4: `P`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you introduce a proof section in which you show\n"
 "that the desired proof goal follows from §1.\n"
@@ -2454,7 +2364,6 @@ msgstr ""
 #. §0: `have h : P`
 #. §1: `suffices h : P`
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "With §0, you introduce an intermediate result.\n"
 "You must then prove this intermediate result\n"
@@ -2490,7 +2399,6 @@ msgstr ""
 #. hb : P b₁ b₂
 #. ```
 #: Game.Doc.Tactic
-#, fuzzy
 msgid ""
 "§0 is equivalent to §1: the tactic replaces an assumption\n"
 "§2 with the special case §3.\n"
@@ -2504,7 +2412,7 @@ msgid ""
 "§10"
 msgstr ""
 "§0 等价于 §1：\n"
-"这个 tactic 会把一个假设 §2 替换成特例 §3。\n"
+"这个策略会把一个假设 §2 替换成特例 §3。\n"
 "\n"
 "如果你想多次特化，最好用 §5 而不是 §4，因为 §6 会把旧的假设 §7 覆盖掉。\n"
 "比如从上面的假设 §8 出发，你可以用\n"
