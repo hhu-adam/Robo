@@ -8825,55 +8825,49 @@ msgstr ""
 "**司南**：我觉得推进器现在已经恢复得差不多了。赶紧溜！"
 
 #: Game.Levels.Spinoza
-#, fuzzy
 msgid "Intro Spinoza"
 msgstr ""
-"**司南**: 我觉得那是斯宾诺莎，一颗极少见的 QED 型小行星。快点，我们得稍微赶一"
+"**司南**：我觉得那是斯宾诺莎，一颗极少见的 QED 型小行星。快点，我们得稍微赶一"
 "赶，不然就错过它了。\n"
 "\n"
-"半小时后你们着陆了。斯宾诺莎一点也不怎么友好。它的整个表面都覆盖着细细的红色"
-"沙粒。一个孤零零的形式哲学家在等你们，他自我介绍说叫本尼迪克特。\n"
+"半小时后你们着陆了。斯宾诺莎看起来不太宜居。它的整个表面都覆盖着细细的红色沙"
+"粒。一个孤零零的形式哲学家在等你们，他自我介绍说叫本尼迪克特。\n"
 "\n"
-"**本尼迪克特**: 很高兴你们来了！我已经等你们很久了！\n"
+"**本尼迪克特**：很高兴你们来了！我已经等你们很久了！\n"
 "\n"
-"**你**: 你也有几个很紧急的问题……？\n"
+"**你**：你也有几个很紧急的问题……？\n"
 "\n"
-"**本尼迪克特**: 哎呀不，我早过了那个年纪。不过我能想象你们在蕴含 和 量词 上过"
-"得怎么样。相信我，在其他行星上也不会好多少。但我也许能给你们做点准备。\n"
+"**本尼迪克特**：哎呀不，我早过了那个年纪。不过我能想象你们在蕴含和量词上过得"
+"怎么样。相信我，在其他行星上也不会好多少。但我也许能给你们做点准备。\n"
 "\n"
-"**你**: 我们就不能干脆留在这儿，稍微休息一下吗？\n"
+"**你**：我们就不能干脆留在这儿，稍微休息一下吗？\n"
 "\n"
 "本尼迪克特摇了摇头。\n"
 "\n"
-"**本尼迪克特**: 不行。斯宾诺莎容不下三个居民。而且你们很快就得继续走，不然路"
+"**本尼迪克特**：不行。斯宾诺莎容不下三个居民。而且你们很快就得继续走，不然路"
 "就太远了。我们每 400 年才会路过这些行星一次。"
 
 #: Game.Levels.Spinoza
-#, fuzzy
 msgid "Spinoza"
 msgstr "斯宾诺莎"
 
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Conclusion Spinoza L01"
 msgstr "**本尼迪克特**：看起来不错！"
 
 #. §0: `contradiction`
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "If to assumptions contradict each other use §0"
 msgstr ""
-"**你**：两条假设互相矛盾的时候来着，是怎么回事？\n"
+"**你**：两条假设互相矛盾的时候，该怎么做来着？\n"
 "\n"
 "**司南**：§0。"
 
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Intro Spinoza L01"
-msgstr "**本尼迪克特**：来，你们看。我给你们准备好了这个。"
+msgstr "**本尼迪克特**：来，你们看。这是我为你们准备的。"
 
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Prove the assumption before using it"
 msgstr ""
 "**你**：啥？我现在就直接假设它是对的了？\n"
@@ -8882,43 +8876,38 @@ msgstr ""
 
 #. §0: `∧`
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Try to split §0"
 msgstr "**你**：那我先把这个“与”（§0）拆开吧。"
 
 #. §0: `have`
 #. §1: `have g : ¬ B`
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "Try §0 in form of §1"
 msgstr ""
-"**你**：然后 ….\n"
+"**你**：然后……\n"
 "\n"
-"**本尼迪克特**：…. 你应该先准备一个合适的中间结果。\n"
+"**本尼迪克特**：……你应该先准备一个合适的中间结果。\n"
 "\n"
 "**司南**：对！再试试 §0 吧。更准确地说：§1！"
 
 #. §0: `apply`
 #: Game.Levels.Spinoza.L01_Have
-#, fuzzy
 msgid "§0 should help"
 msgstr "**司南**：§0 应该能帮上忙。"
 
 #. §0: `have`
 #. §1: `suffices`
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid ""
 "Conclusion Spinoza L02: The use of §0 or §1 is up to personal preference."
 msgstr ""
-"**本尼迪克特**: 我就是这个意思。你们以后用§0还是§1，纯属口味问题。关键是，你"
-"们得知道怎么把远处的目标拆成小步骤一步步够到。"
+"**本尼迪克特**：我就是这个意思。你们以后用 §0 还是 §1，纯属个人偏好。关键是，"
+"你们得知道怎样通过一个个小步骤，逐渐完成遥远的目标。"
 
 #. §0: `«{g}»`
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid "End proof with assumption that §0 is true"
-msgstr "**司南**：所以你在这里是在假设 §0 为真的前提下结束证明。"
+msgstr "**司南**：所以在这里，你要在假设 §0 为真的前提下完成证明。"
 
 #. §0: `have`
 #. §1: `suffices`
@@ -8926,27 +8915,24 @@ msgstr "**司南**：所以你在这里是在假设 §0 为真的前提下结束
 #. §3: `g`
 #. §4: `g`
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid ""
 "Instead of §0, §1 can be used. After §2, you have to show how to\n"
 "prove goal by §3 before proving §4 itself."
 msgstr ""
-"**司南**: 我懂他什么意思了！除了§0，你也可以用§1。效果完全一样，只不过两个目"
-"标对调了。\n"
+"**司南**：我懂他什么意思了！除了 §0，你也可以用 §1。效果完全一样，只不过两个"
+"目标的顺序对调了。\n"
 "\n"
-"**你**: 所以按§2，我得先展示怎么用§3把证明收尾，然后再证明§4？\n"
+"**你**：所以写下 §2 后，我得先说明如何用 §3 完成证明，然后再证明 §4？\n"
 "\n"
-"**司南**: 没错！"
+"**司南**：没错！"
 
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid "Intro Spinoza L02"
 msgstr ""
-"**本尼迪克特**：你们当然也可以先证明主结果，再证明中间结果。你们可以在这道问"
-"题上试试，几乎一模一样。"
+"**本尼迪克特**：你们当然也可以先证明主结果，再证明中间结果。这道题和刚才那道"
+"很相似，你们可以试试这种做法。"
 
 #: Game.Levels.Spinoza.L02_Suffices
-#, fuzzy
 msgid "Prove intermediate result"
 msgstr "**司南**：然后你在这里证明这个中间结果。"
 
@@ -8954,121 +8940,106 @@ msgstr "**司南**：然后你在这里证明这个中间结果。"
 #. §1: `suffices`
 #. §2: `suffices k : B`
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Apply contradiction with §0 via §1 with §2"
 msgstr ""
-"**司南**: 现在你有了一个假设§0，然后你得从中推出一个矛盾。\n"
+"**司南**：现在你有了一个假设 §0，然后你得从中推出一个矛盾。\n"
 "\n"
-"比如你现在可以用§1说说你想推出哪个矛盾，比如§2。"
+"你可以用 §1 指定想要推出的矛盾，比如 §2。"
 
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Conclusion Spinoza L03"
 msgstr "**本尼迪克特**：我看出来了，你们学得真快！"
 
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Derive intermediate result that lead to the conclusion"
-msgstr "**司南**：现在你只需要把那个导致这个矛盾的中间结果推出来就行了。"
+msgstr "**司南**：现在你只需要推出那个产生矛盾的中间结果就行了。"
 
 #. §0: `¬`
 #. §1: `contradiction`
 #. §2: `by_contra h`
 #. §3: `contradiction`
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid ""
 "Explain §0 in goal. Perform proof by §1 by stating with §2 and\n"
 "concluding with §3"
 msgstr ""
-"**司南**: Goal 里出现一个§0，通常意味着你想做一个反证。\n"
+"**司南**：Goal 里出现一个 §0，通常意味着你想使用反证法。\n"
 "\n"
-"**你**: 那我怎么做？用§1吗？\n"
+"**你**：那我怎么做？用 §1 吗？\n"
 "\n"
-"**司南**: 用§2来开启反证。然后用§3把它收尾。"
+"**司南**：用 §2 开始反证法。然后用 §3 收尾。"
 
 #. §0: `«{B}»`
 #. §1: `¬«{B}»`
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Finish proof by stating contradiction between §0 and §1"
-msgstr "**你**: 啊，那我现在就可以直接说，假设§0和§1互相矛盾。"
+msgstr "**你**：啊，那我现在就可以直接说，假设 §0 和 §1 互相矛盾。"
 
 #: Game.Levels.Spinoza.L03_ByContra
-#, fuzzy
 msgid "Intro Spinoza L03"
 msgstr "**本尼迪克特**：这里还有一种变体。"
 
 #. §0: `not_imp_not`
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Intro Spinoza L04: introduce contraposition equivalence with §0"
 msgstr ""
-"**本尼迪克特**: 我还有一道关于奇数平方的好问题要给你们。不过在那之前，你们最"
+"**本尼迪克特**：我还有一道关于奇数平方的好问题要给你们。不过在那之前，你们最"
 "好先证明这里这个等价。我觉得你们甚至给它起了个名字：*逆否等价*，之类的。在"
-"Lean语里，我们就把这个等价直接叫§0。是不是更一目了然？"
+"Lean语里，我们就把这个等价直接叫 §0。是不是更一目了然？"
 
 #. §0: $A ⇒ B$
 #. §1: $¬B ⇒ ¬A$
 #. §2: `not_imp_not`
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Often to prove §0, §1 can be proven as well. Here this is called §2."
 msgstr ""
-"**你**: 嗯，这个我确实以前见过。\n"
+"**你**：嗯，这个我确实以前见过。\n"
 "\n"
-"**司南**: 对啊，你当然见过。数学家不是老这么干嘛。要是他们对§0没思路，就改去"
-"证明§1。我倒是觉得这与其叫*逆否命题*，不如叫*从后背穿过胸口戳到眼睛*。不过在"
-"这里它当然叫§2。"
+"**司南**：对啊，你当然见过。数学家不是老这么干嘛。要是他们对 §0 没思路，就改"
+"去证明 §1。我倒是觉得这与其叫*逆否命题*，不如叫*绕个大圈反着来*。不过在这里它"
+"当然叫 §2。"
 
 #. §0: `suffices g : B`
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Provoce contradiction by using §0"
-msgstr "**司南**: 我会再用§0来导出一个矛盾。"
+msgstr "**司南**：我会再用 §0 来导出一个矛盾。"
 
 #. §0: `constructor`
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Start trying with §0"
-msgstr "**司南**: 先从§0开始吧。"
+msgstr "**司南**：先从 §0 开始吧。"
 
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "Use proof by contradiction"
 msgstr "**司南**：我觉得这里也该从反证法开始。"
 
 #. §0: `suffices g : ¬ A`
 #: Game.Levels.Spinoza.L04_ByContra
-#, fuzzy
 msgid "§0 would be a good option"
-msgstr "**司南**: §0看起来是个不错的选项。"
+msgstr "**司南**：§0 看起来是个不错的选择。"
 
 #. §0: `contrapose`
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid "Apply contraposition lemma simply by §0"
 msgstr ""
-"**你**: 那现在我可以用这个逆否引理吗？它叫啥来着？\n"
+"**你**：那现在我可以用这个逆否引理吗？它叫啥来着？\n"
 "\n"
-"**司南**: 其实你也可以直接写§0。"
+"**司南**：其实你也可以直接写 §0。"
 
 #. §0: `even_square`
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid "Apply lemma §0"
-msgstr "**你**: 这看起来已经挺不错了。现在我确实可以用老引理§0了！"
+msgstr "**你**：这看起来已经很不错了。现在我终于可以用之前那个引理 §0 了！"
 
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid "Conclusion Spinoza L05"
-msgstr "**本尼迪克特**: 太棒了！我觉得你们现在已经挺有底气了。"
+msgstr "**本尼迪克特**：太棒了！我觉得你们现在已经挺有底气了。"
 
 #. §0: `by_contra`
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid "Intro Spinoza L05. prove without §0"
-msgstr "**本尼迪克特**: 好，下面是预告过的问题。试着做一个*直接*证明，不用§0。"
+msgstr ""
+"**本尼迪克特**：好，这就是我刚才说的问题。试着做一个*直接*证明，不用 §0。"
 
 #. §0: `even_square`
 #. §1: `Odd (n^2) → Odd n`
@@ -9078,29 +9049,26 @@ msgstr "**本尼迪克特**: 好，下面是预告过的问题。试着做一个
 #. §5: `revert «{h}»`
 #. §6: `«{h}»`
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid ""
 "Refer back to §0 as §1 is equivalent in contrapoition to §2.\n"
 "Explain that lack of  §3 can be dealt with §4 via §5 for §6."
 msgstr ""
-"**司南**: 我建议把它归结到我们在量词 上已经证明过的引理 §0。这里基本上写的就"
+"**司南**：我建议把它归结到我们在量词上已经证明过的引理 §0。这里基本上写的就"
 "是 §1。而在逆否命题之下，这等价于 §2。\n"
 "\n"
-"**你**: 对。从后面绕到前面来……不过等等，现在那儿根本没有 §3 啊。\n"
+"**你**：对。从后面绕到前面来……不过等等，现在那儿根本没有 §3 啊。\n"
 "\n"
-"**司南**: 记得 §4 吗？用 §5 你可以把假设 §6 作为一个蕴含前提推进目标里。"
+"**司南**：记得 §4 吗？用 §5 你可以把假设 §6 移到目标中，作为蕴含的前提。"
 
 #. §0: `not_odd_iff_even`
 #: Game.Levels.Spinoza.L05_Contrapose
-#, fuzzy
 msgid "§0 might help here"
-msgstr "**司南**: 也许现在§0能帮上忙？"
+msgstr "**司南**：也许现在 §0 能帮上忙？"
 
 #. §0: `suffices d : ¬ Odd (n ^ 2)`
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid "Conclude with §0"
-msgstr "**司南**: 那就§0。"
+msgstr "**司南**：那就 §0。"
 
 #. §0: `have`
 #. §1: `suffices`
@@ -9110,84 +9078,81 @@ msgstr "**司南**: 那就§0。"
 #. §5: `revert`
 #. §6: `contrapose`
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid ""
 "Conclusion Spinoza L06: overview of planet's contents:\n"
 "§0, §1, §2, §3, §4, §5 (useful when applying\n"
 "§6 afterwards)."
 msgstr ""
-"**司南**: 太棒了！这里是本尼迪克特给我们展示内容的概览。\n"
+"**司南**：太棒了！下面是本尼迪克特教给我们的内容概览。\n"
 "\n"
 "\n"
 "| **策略**      | **用途**                                              |\n"
 "|:----------------|:-------------------------------------------------------|\n"
-"| §0              |  假设一个中间结果                                     |\n"
-"| §1              |  假设一个中间结果                                     |\n"
-"| §2              |  开始反证法证明                                       |\n"
-"| §3              |  结束反证法证明                                       |\n"
-"| §4              |  逆否命题                                             |\n"
-"| §5              |  用来之后应用 §6 很有用                               |\n"
+"| §0              |  引入并证明一个中间结"
+"论                                     |\n"
+"| §1              |  先假设一个中间结论足以完成目标，再证明这个中间结"
+"论                                     |\n"
+"| §2              |  开始反证法                                       |\n"
+"| §3              |  从已知矛盾中完成证"
+"明                                       |\n"
+"| §4              |  将目标转化为逆否命"
+"题                                             |\n"
+"| §5              |  将假设移回目标，以便之后使用 "
+"§6                                |\n"
 " "
 
 #. §0: `Odd (n ^ 2)`
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid "Derive contradiction for §0"
-msgstr "**司南**: 现在我会导出一个与§0矛盾的结论。"
+msgstr "**司南**：现在我会导出一个与 §0 矛盾的结论。"
 
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid "Intro Spinoza L06"
 msgstr ""
-"**你**: 但我们上一道问题，不也完全可以用反证法来证吗？\n"
+"**你**：但上一道问题，我们不也完全可以用反证法来证明吗？\n"
 "\n"
-"**本尼迪克特**: 当然可以。我只是觉得再来一个反证法会很无聊。不过你们也可以再"
-"试一次这道问题。来，我把它交给你们带着上路。不过现在可得想办法继续前进了！"
+"**本尼迪克特**：当然可以。我只是觉得再来一个反证法会很无聊。不过你们也可以再"
+"试一次这道问题。来，我把它交给你们带在路上做。不过现在，你们该赶紧出发！"
 
 #. §0: `by_contra g`
 #: Game.Levels.Spinoza.L06_Summary
-#, fuzzy
 msgid "This time start with §0"
 msgstr ""
-"一旦你们确定自己已经安全脱离了小行星的引力场，就又俯身回到问题上。\n"
+"安全脱离了小行星的引力场后，你们又开始研究手头的问题。\n"
 "\n"
-"**司南**: 好的，那这次我们从§0开始！"
+"**司南**：好，那这次我们从 §0 开始！"
 
 #: Game.Levels.Vieta
-#, fuzzy
 msgid "Intro Vieta"
 msgstr ""
-"喂，有人吗？  你们降落在一片荒原般的石南地里。放眼望去一个人影都没有。\n"
+"喂，有人吗？你们降落在一片荒原上。放眼望去，一个人影都没有。\n"
 "\n"
 "突然，一支箭嗖地一下从你头顶正上方掠过。\n"
 "\n"
-"**你**: 找掩护！\n"
+"**你**：找掩护！\n"
 "\n"
-"你们立刻趴倒在地。  你们正想爬回飞船，这时一个男人从一棵枯死的树后走了出来，"
-"友好地挥手。于是你们就朝他爬过去。\n"
+"你们立刻趴倒在地。你们正想爬回飞船，这时一个男人从一棵枯死的树后走了出来，友"
+"好地向你们挥手。于是你们就朝他爬了过去。\n"
 "\n"
-"**韦达**: 别这么害羞嘛，女士们先生们！韦达，我的名字。欢迎！放心站起来吧，安"
-"全得很。\n"
+"**韦达**：别这么害羞嘛，两位！我叫韦达。欢迎！放心站起来吧，现在安全得很。\n"
 "\n"
 "你们小心翼翼地站起身来，结果又有一支箭嗖地一下从你们身边擦过。\n"
 "\n"
-"**你**:  您在这儿怎么待得下去？\n"
+"**你**：您在这儿怎么待得下去？\n"
 "\n"
-"**韦达**:  嗯，我学会了总在对的时间站在对的地方。别担心。"
+"**韦达**：嗯，我学会了总在正确的时间站在正确的地方。别担心。"
 
 #: Game.Levels.Vieta
-#, fuzzy
 msgid "Vieta"
 msgstr "韦达"
 
 #. §0: `→`
 #: Game.Levels.Vieta.L01_FunctionNotation
-#, fuzzy
 msgid "Conclusion Vieta L01: explain ambiguity of §0"
 msgstr ""
-"**你**: 话说，§0 刚才不还是个蕴含吗？\n"
+"**你**：话说，§0 刚才不还是个蕴含吗？\n"
 "\n"
-"**司南**: 对，没错。他们这里两个都用同一个符号。"
+"**司南**：对，没错。在这里，映射和蕴含用的是同一个符号。"
 
 #. §0: `f`
 #. §1: `ℤ`
@@ -9196,24 +9161,22 @@ msgstr ""
 #. §4: $f(n)$
 #. §5: `f (n)`
 #: Game.Levels.Vieta.L01_FunctionNotation
-#, fuzzy
 msgid ""
 "Explain §0 as mapping from §1 to §2:\n"
 "§3 is notation for §4. If you want to use brackets it has to be §5.\n"
 msgstr ""
-"**你**: 看起来 §0 是一个从 §1 到 §2 的映射。\n"
+"**你**：看起来 §0 是一个从 §1 到 §2 的映射。\n"
 "\n"
-"**司南**: 对，正是这样。§3 是 §4 的记号。不过在 Lean语 里会把括号省掉。要是你"
-"想加括号，就一定要在括号两边加空格——像这样：§5。\n"
+"**司南**：对，正是这样。§3 是 §4 的记号。不过在Lean语里通常会把括号省掉。要是"
+"你想加括号，就一定要在括号前面加空格——像这样：§5。\n"
 "\n"
-"**你**: 好的，我记住了。不过既然这个映射在这里只取 ℕ 里的值，那其实也没什么要"
+"**你**：好的，我记住了。不过既然这个映射在这里只取 ℕ 里的值，那其实也没什么要"
 "证明的吧。\n"
 
 #: Game.Levels.Vieta.L01_FunctionNotation
-#, fuzzy
 msgid "Intro Vieta L01"
 msgstr ""
-"**韦达**: 来，我给你们看点东西….\n"
+"**韦达**：来，我给你们看点东西……\n"
 "\n"
 "他递给你一张纸。"
 
@@ -9230,7 +9193,6 @@ msgstr ""
 #. §5: `rfl`
 #. §6: `simp [«{f}»]`
 #: Game.Levels.Vieta.L02_Function
-#, fuzzy
 msgid ""
 "Explain anonymous function §0 as mapping §1.\n"
 "Only §2 the anon. function would receive a name. The goal is for\n"
@@ -9238,27 +9200,26 @@ msgid ""
 "to show that §4.\n"
 "You can try §5 or §6\n"
 msgstr ""
-"**司南**: 啊哈，这就更有意思了。这里的 §0 是一个“匿名函数”，也就是映射 §1。\n"
+"**司南**：啊哈，这就更有意思了。这里的 §0 是一个“匿名函数”，也就是映射 §1。\n"
 "\n"
-"**你**: 那它哪里匿名了？\n"
+"**你**：那它哪里匿名了？\n"
 "\n"
-"**司南**: 就是说它一开始没有名字。只有通过 §2 它才得到一个名字。\n"
+"**司南**：就是说它一开始没有名字。只有通过 §2，它才得到一个名字。\n"
 "\n"
-"**你**: 哦——所以总体来说我们有下面这个映射，对吧？\n"
+"**你**：哦——所以总体来说，我们有下面这个映射，对吧？\n"
 "\n"
 "§3\n"
 "\n"
 "所以我要证明 §4？\n"
 "\n"
-"**司南**: 对。\n"
+"**司南**：对。\n"
 "\n"
-"**你**: 那我这里怎么做？\n"
+"**你**：那我这里怎么做？\n"
 "\n"
-"**司南**: Lean 能看穿大多数映射规则，所以这里用 §5 应该就够了。或者你也可以"
-"用 §6 显式把定义代进去。"
+"**司南**：Lean 能看穿大多数映射规则，所以这里用 §5 应该就够了。或者你也可以"
+"用 §6 显式代入定义。\n"
 
 #: Game.Levels.Vieta.L02_Function
-#, fuzzy
 msgid "Intro Vieta L02"
 msgstr ""
 "又有一支箭嗖地飞过。\n"
@@ -9267,16 +9228,14 @@ msgstr ""
 #. §0: `«{f}»`
 #. §1: `use`
 #: Game.Levels.Vieta.L03_Let
-#, fuzzy
 msgid "If §0 correctly defind try §1"
 msgstr ""
-"**司南**: 如果你把§0正确定义了，就可以把它和§1一起用上，得到的不等式应该很简"
-"单。"
+"**司南**：如果你构造出来的 §0 是正确的，就可以用 §1 把它用上，剩下的不等式证"
+"明应该很简单。"
 
 #: Game.Levels.Vieta.L03_Let
-#, fuzzy
 msgid "Intro Vieta L03"
-msgstr "又是一支箭。  还有一道问题。"
+msgstr "又飞来一支箭。又来了一道题。"
 
 #. §0: `∃`
 #. §1: `use …`
@@ -9286,62 +9245,56 @@ msgstr "又是一支箭。  还有一道问题。"
 #. §5: `\\mapsto`
 #. §6: `=>`
 #: Game.Levels.Vieta.L03_Let
-#, fuzzy
 msgid ""
 "Tackle  §0 either with §1 or define mapping §2 as before.\n"
 "Remind that §3 is either §4 or §5 ro can be replyced by §6"
 msgstr ""
-"**司南**: 跟往常一样，你用 §1 来处理一个 §0。或者你也可以先用 §2 定义一个你想"
+"**司南**：跟往常一样，你可以用 §1 来处理 §0。或者你也可以先用 §2 定义一个你想"
 "用的映射，就像你刚刚看到的那样。顺便说一下，箭头 §3 你写成 §4 或 §5 都行。不"
-"过你也可以改用 §6。"
+"过你也可以用 §6 代替。"
 
 #: Game.Levels.Vieta.L03_Let
-#, fuzzy
 msgid "Try simplification"
-msgstr "**你**: 这到底会化简成什么呢？"
+msgstr "**你**：这到底会化简成什么呢？"
 
 #. §0: `g ∘ «{f}»`
 #. §1: `\\comp`
 #. §2: `let g : ℤ → ℤ := fun x ↦ _`
 #. §3: `use fun (x : ℤ) ↦ _`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "Composition §0 can be written with §1. Try §2 or §3"
 msgstr ""
-"**你**: §0是映射的复合吗？\n"
+"**你**：§0 是映射的复合吗？\n"
 "\n"
-"**司南**: 没错！用§1来写。\n"
+"**司南**：没错！可以用 §1 来写。\n"
 "\n"
-"**你**: 那我在这里就又可以用§2定义一个映射？\n"
+"**你**：那我在这里就又可以用 §2 定义一个映射？\n"
 "\n"
-"**司南**:  对。  或者你也可以直接写§3。"
+"**司南**：对。或者你也可以直接写 §3。"
 
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "Intro Vieta L04"
 msgstr ""
-"**韦达**: 现在我们得往这边走一小段。\n"
+"**韦达**：现在我们得往这边挪一小段。\n"
 "\n"
-"他小心地把你们往前推了几米。片刻之后，就在你们刚才站的地方，三支箭落了下来，"
-"插在地上。\n"
+"他小心地把你们往旁边推了几米。片刻之后，就在你们刚才站的地方，三支箭落了下"
+"来，插在地上。\n"
 "\n"
-"**韦达**: 别紧张，我对这里很熟。来，我还有更多给你们。"
+"**韦达**：别紧张，我对这里很熟悉。来，我还有更多问题给你们。"
 
 #. §0: `ring`
 #. §1: `«{f}»`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "Try §0 as it sees through defintion §1"
-msgstr "**司南**: §0 能看穿像 §1 这样的局部定义，所以你可以直接用它。"
+msgstr "**司南**：§0 能看穿像 §1 这样的局部定义，所以你可以直接用它。"
 
 #. §0: `ring`
 #. §1: `«{f}»`
 #. §2: `«{g}»`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "Try §0, as it sees through definitions §1 and §2"
 msgstr ""
-"**司南**: §0能看穿像§1和§2这样的局部定义。\n"
+"**司南**：§0 能看穿像 §1 和 §2 这样的局部定义。\n"
 "所以你可以直接用这个策略。"
 
 #. §0: `(g ∘ «{f}») x`
@@ -9349,41 +9302,36 @@ msgstr ""
 #. §2: `simp`
 #. §3: `rw [comp_apply]`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "[Hint bpwn] Explain §0 defined as §1. Try §2 | §3"
 msgstr ""
-"**司南**: 按定义，§0 就是 §1。§2 也会知道这个引理，不过这里你就直接用 §3 来做"
+"**司南**：按定义，§0 就是 §1。§2 也知道这个引理，不过这里你就直接用 §3 来做"
 "吧。"
 
 #. §0: `use «{g}»`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "[Hint bsjn] Try §0"
-msgstr "**司南**: 现在你可以用 §0 来用它了。"
+msgstr "**司南**：现在你可以用 §0 把它用上。"
 
 #. §0: `(«{g}» ∘ «{f}») x`
 #. §1: `«{g}» («{f}» x)`
 #. §2: `simp`
 #. §3: `rw [comp_apply]`
 #: Game.Levels.Vieta.L04_Let
-#, fuzzy
 msgid "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3"
 msgstr ""
-"**司南**: 按定义，§0 就是 §1。§2 也会知道这个引理，不过这里你就直接用 §3 来做"
+"**司南**：按定义，§0 就是 §1。§2 也知道这个引理，不过这里你就直接用 §3 来做"
 "吧。"
 
 #: Game.Levels.Vieta.L05_Funext
-#, fuzzy
 msgid "Intro Vieta L05"
 msgstr ""
-"韦达小心翼翼地环顾四周，但最后还是停了下来。\n"
+"韦达小心翼翼地环顾四周，但最后还是站在原地。\n"
 "他镇定地把下一张纸递给你们。"
 
 #. §0: `ring`
 #: Game.Levels.Vieta.L05_Funext
-#, fuzzy
 msgid "Remind: §0 sees through local definitions"
-msgstr "**司南**: 提醒一下，§0能看穿局部定义。"
+msgstr "**司南**：提醒一下，§0 能看穿局部定义。"
 
 # GPT: „Abbildungen“ kann je nach Kontext auch als „Funktionen“ übersetzt werden; wegen des Glossars und des mathematischen Kontexts habe ich mich für „映射“ entschieden. Außerdem habe ich das Auslassungszeichen als Unicode-„…. “ gesetzt wie gewünscht.
 #. §0: `funext`
@@ -9392,57 +9340,52 @@ msgstr "**司南**: 提醒一下，§0能看穿局部定义。"
 #. §3: `f = g`
 #. §4: `f x = g x`
 #: Game.Levels.Vieta.L05_Funext
-#, fuzzy
 msgid ""
 "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4"
 msgstr ""
-"**你**：按定义来说，两 个映射相等，不就是当它们作用到每个元素上都得到同样的值"
-"吗…. \n"
+"**你**：按定义来说，两个映射相等，不就是当它们作用到每个元素上都得到同样的值"
+"吗…… \n"
 "\n"
-"**司南**：按这个原则，我这儿有战术 §0。用 §1 你选一个任意的 §2，然后把目标从 "
-"§3 改成 §4。"
+"**司南**：这个原则对应的策略，我这里也有：§0。用 §1，你选一个任意的 §2，然后"
+"把目标从 §3 改成 §4。"
 
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Intro Vieta L06"
 msgstr ""
-"**韦达**:  我们还是再走一段吧。  往这边！\n"
+"**韦达**：我们还是再走一段吧。往这边！\n"
 "\n"
-"他急匆匆地跑开，你们也尽可能快地跟上。等你们到达他终于停下来的地方时，你已经"
-"完全喘不过气了。韦达笑了。\n"
+"他急匆匆地走开，你们也尽可能快地跟上。等你们赶到他最终停下来的地方时，你已经"
+"累得完全喘不过气了。韦达笑了。\n"
 "\n"
-"**韦达**:  纯粹是以防万一！  我得照看好我的访客嘛。像你们这样的访客我可不常"
+"**韦达**：纯粹是以防万一！我得照看好我的访客嘛。像你们这样的访客我可不常"
 "有！\n"
 "\n"
 "他把下一张纸递给你们。"
 
 #. §0: `if_pos`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Remind of negation for §0"
-msgstr "**你**: 啊，那§0的否定肯定是……"
+msgstr "**你**：啊，那§0的否定肯定是……"
 
 #. §0: `(g ∘ f) «{x}»`
 #. §1: `g (f «{x}»)`
 #. §2: `simp`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Rewrite §0 to §1 via §2"
 msgstr ""
-"**你**: 啊，那我现在可以先把 §0 改写成 §1？\n"
+"**你**：啊，那我现在可以先把 §0 改写成 §1？\n"
 "\n"
-"**司南**: 用 §2 就行。"
+"**司南**：用 §2 就行。"
 
 #. §0: `funext x`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Show swappability if mapping by using §0"
 msgstr ""
-"**司南**: 现在我们有两个映射，其中一个是分段定义的。\n"
+"**司南**：现在我们有两个映射，其中一个是分段定义的。\n"
 "\n"
-"**你**: 所以我要证明这两个是可以互换的？\n"
+"**你**：所以我要证明这两个映射可交换？\n"
 "\n"
-"**司南**: 没错，最好用 §0 先取一个任意元素，然后就对这个元素来证明。"
+"**司南**：没错，最好用 §0 先取一个任意元素，然后对这个元素证明等式。"
 
 #. §0: `by_cases h : 0 ≤ «{x}»`
 #. §1: `0 ≤ «{x}»`
@@ -9453,65 +9396,57 @@ msgstr ""
 #. §6: `¬(0 ≤ «{x}»)`
 #. §7: `0 > «{x}»`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid ""
 "Try §0 for resulting cases §1 and §2 i.e. §3 and §4.\n"
 "Could switch via §5 between §6 and §7"
 msgstr ""
-"**司南**: 现在你就可以做一个分类讨论了，§0。\n"
+"**司南**：现在你就可以做分类讨论了，§0。\n"
 "\n"
-"**你**: 这样我就得到情况 §1 和 §2？\n"
+"**你**：这样我就得到 §1 和 §2 两种情况？\n"
 "\n"
-"**司南**: 对！或者更准确地说是 §3 和 §4。这不完全一样，而且可以用引理 §5 在 "
+"**司南**：对！或者更准确地说是 §3 和 §4。这不完全一样，不过可以用引理 §5 在 "
 "§6 和 §7 之间切换。"
 
 #. §0: `rw [if_pos «{h}»]`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Try §0 to reduce if-then-else"
-msgstr "**司南**: 现在你有 §0 可以用来把 if-then-else 化简掉。"
+msgstr "**司南**：现在你可以用 §0 把 if-then-else 化简掉。"
 
 #. §0: `simp [f, g]`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Use definitions via §0"
 msgstr ""
-"**你**: 看来我还是得用一下定义。\n"
+"**你**：看来我还是得用一下定义。\n"
 "\n"
-"**司南**: 那就用 §0 吧！"
+"**司南**：那就用 §0 吧！"
 
 #. §0: `if_neg`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "Use the negation §0"
-msgstr "**司南**: §0，正是！"
+msgstr "**司南**：§0，正是！"
 
 #. §0: `simp [f, g]`
 #: Game.Levels.Vieta.L06_Piecewise
-#, fuzzy
 msgid "[Vieta] Try §0 (again)"
-msgstr "**司南**: 再来一次 §0。"
+msgstr "**司南**：再来一次 §0。"
 
 #. §0: `g`
 #. §1: `use`
 #: Game.Levels.Vieta.L07_Extend
-#, fuzzy
 msgid "Insert §0 via §1"
-msgstr "**司南**: 现在你可以把你的 §0 用 §1 代入，看看你的定义是不是写得不错。"
+msgstr "**司南**：现在你用 §1 把你的 §0 给出来，看看你的定义是不是对的。"
 
 #: Game.Levels.Vieta.L07_Extend
-#, fuzzy
 msgid "Intro Vieta L07"
 msgstr ""
-"你们远远地听到战斗声。\n"
+"你们远远地听到战斗的声音。\n"
 "韦达看起来依然一点也不慌。\n"
-"他又给了你们一道问题。"
+"他又给了你们一道题。"
 
 #. §0: `if 0 ≤ n then ... else ...`
 #: Game.Levels.Vieta.L07_Extend
-#, fuzzy
 msgid "Try piecewise function with §0"
-msgstr "**司南**: 你可以用 §0 定义一个分段函数。"
+msgstr "**司南**：你可以用 §0 定义一个分段函数。"
 
 #. §0: `toNat`
 #. §1: `n : ℤ`
@@ -9520,21 +9455,19 @@ msgstr "**司南**: 你可以用 §0 定义一个分段函数。"
 #. §4: `n ≥ 0`
 #. §5: `n.toNat`
 #: Game.Levels.Vieta.L07_Extend
-#, fuzzy
 msgid ""
 "Try §0. Explain, given §1 then §2 is the same number interpreted as a "
 "natural number.\n"
 "Remind that §3 undefined as §4 for §5"
 msgstr ""
-"**司南**: 这里你大概需要 §0：如果 §1 是个整数，那 §2 就是同一个数，只不过把它"
-"当作自然数来看。\n"
+"**司南**：这里你大概需要 §0：给定一个整数 §1，§2 就是同一个数，只不过把它当作"
+"自然数来看。\n"
 "\n"
-"**你**: 啊？那比如说 §3 呢？？\n"
+"**你**：啊？那比如说 §3 呢？？\n"
 "\n"
-"**司南**: 不知道啊。我当然是说：*如果 §4 成立*，那 §5 仍然是“同一个”数。"
+"**司南**：不知道啊。我当然是说：*如果 §4 成立*，那 §5 仍然是“同一个”数。"
 
 #: Game.Levels.Vieta.L08_CongrArg
-#, fuzzy
 msgid "Intro Vieta L08"
 msgstr "战斗的声音越来越近。韦达又给了你们两张纸。"
 
@@ -9543,10 +9476,9 @@ msgstr "战斗的声音越来越近。韦达又给了你们两张纸。"
 #. §2: `f x = f y`
 #. §3: `apply congr_arg`
 #: Game.Levels.Vieta.L08_CongrArg
-#, fuzzy
 msgid "Try §0. If §1, then §2 when using §3"
 msgstr ""
-"**司南**: 哦，这是 §0 的用武之地。要是你已经知道 §1，那用 §3 就能得到 §2。"
+"**司南**：哦，这正是 §0 的用武之地。要是你已经知道 §1，那用 §3 就能得到 §2。"
 
 #. §0: `congr_fun`
 #. §1: `h : f = g`
@@ -9555,85 +9487,74 @@ msgstr ""
 #. §4: `rw [h]`
 #. §5: `f`
 #: Game.Levels.Vieta.L09_CongrFun
-#, fuzzy
 msgid ""
 "Try §0. Given assumption §1 rewrite it via §2 to §3.\n"
 "§4 not applicable to more complex §5"
 msgstr ""
-"**司南**: 这也是 §0 的用武之地。你把 §1 当作假设的话，可以用 §2 把它改写成 "
+"**司南**：这也是 §0 的用武之地。如果你有一个假设 §1，可以用 §2 把它改写成 "
 "§3。\n"
 "\n"
-"**你**: 可是我这里不能更简单地直接用 §4 吗？\n"
+"**你**：可是我这里不能更简单地直接用 §4 吗？\n"
 "\n"
-"**司南**: 行吧，在这个简单例子里确实可以。但如果 §5 是个更复杂的表达式，而且"
-"还没有完全以同样的形式出现在目标里，那就不行了。按我刚才说的试试看。"
+"**司南**：行吧，在这个简单例子里确实可以。但如果 §5 是个更复杂的表达式，而且"
+"并没有以完全相同的形式出现在目标里，那就不行了。按我刚才说的试试看。"
 
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid "Conclusion Vieta L10"
-msgstr ""
-"**韦达**:  太棒了！  不过现在赶紧离开这里。往这边走。  我带你们回飞船。"
+msgstr "**韦达**：太棒了！不过现在得赶紧离开这里。往这边走。我带你们回飞船。"
 
 #. §0: `succ`
 #. §1: `succ : ℕ → ℕ`
 #. §2: `n ↦ n + 1`
 #. §3: `f`
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid ""
 "Explain §0 as mapping §1 i.e. §2. Explain goal of showing §3 surjective."
 msgstr ""
-"**你**:  这里的 §0 是什么呀？\n"
+"**你**：这里的 §0 是什么？\n"
 "\n"
-"**司南**:  §1 是那个把一个自然数映射到它的 *successor*，也就是它的后继的映"
-"射。  换句话说：  §2。\n"
+"**司南**：§1 是把一个自然数映射到它的 *successor*，也就是它的后继的映射。换句"
+"话说：§2。\n"
 "\n"
-"**你**: 啊懂了。那我从映射 §3 出发，如果我没看错的话，本质上要证明它是满"
-"射。\n"
+"**你**：啊，懂了。如果我没看错的话，这里本质上是要证明 §3 是满射。\n"
 "\n"
-"**司南**:  看起来是这样！"
+"**司南**：看起来是这样！"
 
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid "Intro Vieta L10"
 msgstr ""
-"打斗声现在听起来已经近得吓人了。你们清清楚楚地听见炮声。然后又有一支箭嗖地从"
-"你们身边飞过。\n"
+"战斗的声音现在听起来已经近得吓人了。你们清清楚楚地听见炮声。然后又有一支箭嗖"
+"地从你们身边飞过。\n"
 "\n"
-"**你**:  呃，我们是不是该 ….\n"
+"**你**：呃，我们是不是该……\n"
 "\n"
-"**韦达**:  别担心，一个问题的时间我们还是有的。"
+"**韦达**：别担心，再做一道题的时间还是有的。"
 
 #. §0: `ℕ`
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid "Remind of induction as mapping goes to §0"
 msgstr ""
-"**司南**: 你看，这个映射的值域是 §0！\n"
+"**司南**：你看，这个映射的到达域是 §0！\n"
 "\n"
 "你挑了挑眉。\n"
 "\n"
-"**司南**: 可能跟归纳有关吧。我只是随口一说。"
+"**司南**：可能跟归纳有关吧。我就随口一说。"
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
 #. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
 #: Game.Levels.Vieta.L10_Surjective
-#, fuzzy
 msgid "Try §0 to rewrite §1 to §2"
-msgstr "**司南**: 你要不要用 §0 把假设 §1 改写成 §2？"
+msgstr "**司南**：你要不要用 §0 把假设 §1 改写成 §2？"
 
 #: GameServer.RpcHandlers
-#, fuzzy
 msgid "intermediate goal solved! 🎉"
-msgstr "– 达成中间目标！ –"
+msgstr "– 中间目标证明完成！ –"
 
 #: GameServer.RpcHandlers
-#, fuzzy
 msgid "level completed with warnings… 🎭"
-msgstr "– 问题解决！但不是按想的那种方式。 –"
+msgstr "– 关卡完成！但不完全是按预想的方式 –"
 
 #: GameServer.RpcHandlers
-#, fuzzy
 msgid "level completed! 🎉"
-msgstr "– 问题解决！ –"
+msgstr "– 关卡完成！ –"
