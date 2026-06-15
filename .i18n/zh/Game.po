@@ -7438,28 +7438,25 @@ msgstr ""
 "**司南**：你看看怎么把 §1 应用到假设 §2 上。"
 
 #: Game.Levels.Robotswana
-#, fuzzy
 msgid "Intro Robotswana"
 msgstr ""
-"你们降落在一颗温暖的星球上，走出舱门，踏上一片辽阔的草原。\n"
+"你们降落在一颗温暖的星球上，走出飞船，踏上一片辽阔的草原。\n"
 "\n"
-"稍微四处张望了一会儿，司南发现了一些痕迹，从你们的着陆点向外延伸，穿过零星的"
-"树木之间。\n"
-"你们简单商量了一下，决定沿着这些痕迹走。"
+"四处张望了一会儿后，司南发现了一些足迹，从你们的着陆点向外延伸，穿过零星的树"
+"木。\n"
+"你们简单商量了一下，决定沿着这些足迹走。"
 
 #: Game.Levels.Robotswana
-#, fuzzy
 msgid "Robotswana"
 msgstr "埃托沙"
 
 #. §0: `Matrix.smul_ebasis`
 #: Game.Levels.Robotswana.L01_SMulEBasis
-#, fuzzy
 msgid "Conclusion Robotswana L01: Save result as §0"
 msgstr ""
-"**你**: 那我们现在拿这个“发现”怎么办？\n"
+"**你**：那我们现在拿这个“发现”怎么办？\n"
 "\n"
-"**司南**: 不知道。反正我先把它存成§0，以防我们还要用到。\n"
+"**司南**：不知道。反正我先把它存成 §0，以防我们还要用到。\n"
 "\n"
 "于是你们继续沿着痕迹前进。"
 
@@ -7467,16 +7464,15 @@ msgstr ""
 #. E i j := single i j (1 : ℝ)
 #. ```
 #: Game.Levels.Robotswana.L01_SMulEBasis
-#, fuzzy
 msgid ""
 "Intro Robotswana L01: introduce definition\n"
 "§0"
 msgstr ""
-"顺着痕迹走，你们找到一张羊皮纸，上面最顶端写着一条笔记。\n"
+"你们沿着足迹走，找到一张羊皮纸，最上方写着一条笔记。\n"
 "\n"
 "§0\n"
 "\n"
-"下面是一堆有点狂野的涂鸦，不过很明显是从一行清晰的文字开始的："
+"下面是一堆乱七八糟的涂写，不过很明显是从一行清晰的文字开始的："
 
 #. §0: `E i j`
 #. §1: `n × n`
@@ -7487,7 +7483,6 @@ msgstr ""
 #. §6: `a`
 #. §7: `E`
 #: Game.Levels.Robotswana.L01_SMulEBasis
-#, fuzzy
 msgid ""
 "§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\n"
 "Stelle §4 und Null überall sonst.\n"
@@ -7497,11 +7492,11 @@ msgid ""
 "einem beliebigen\n"
 "Ring annehmen kann. Wir benutzen hier §7 einfach als Abkürzung."
 msgstr ""
-"§0 是一个§1矩阵（取值于§2），在§4位置是§3，其余地方全是 0。\n"
+"§0 是一个 §1 矩阵（取值于 §2），在 §4 位置是 §3，其余地方全是 0。\n"
 "\n"
-"这是更一般的§5的一个特例；后者也可以是非方阵，并且可以取自任意环的任意值"
+"这是更一般的 §5 的一个特例；后者也可以不是方阵，并且可以取自任意环的任意值 "
 "§6。\n"
-"这里我们只是把§7当作缩写来用。"
+"这里我们只是把 §7 当作缩写来用。"
 
 #. §0: `Mat[«{n}»,«{n}»]`
 #. §1: $(«{n}» \\times «{n}»)$
@@ -7534,7 +7529,6 @@ msgstr ""
 #. $$
 #. §16: `unfold E`
 #: Game.Levels.Robotswana.L01_SMulEBasis
-#, fuzzy
 msgid ""
 "§0 looks like a §1 matrix. Reminder for §2: §3 is\n"
 "the set §4. Indeces start here at §5 and not §6. §7 is the matrix which\n"
@@ -7548,12 +7542,12 @@ msgid ""
 "Begin with §16.\n"
 msgstr ""
 "**你**：不管是什么东西在这儿留下了痕迹——我感觉它挺喜欢矩阵的。总之，§0 看起来"
-"很像 §1-矩阵。我就是想不起来 §2 是啥了。\n"
+"很像 §1 矩阵。我就是想不起来 §2 是啥了。\n"
 "\n"
 "**司南**：§3 是集合 §4。所以这里的行、列索引是从 §5 开始，而不是从 §6。还有 "
 "§7 我正好认识：它是在位置 §8 处取值为 §9、其他地方全是 0 的矩阵。\n"
 "\n"
-"**你**：那 §10s 就只是 §11 这种情况的简写咯？\n"
+"**你**：那这些 §10s 就只是 §11 这种情况的简写咯？\n"
 "\n"
 "**司南**：看起来是这样。而且 §12 就是矩阵 §13 在位置 §14 的那个条目。\n"
 "\n"
@@ -7563,107 +7557,95 @@ msgstr ""
 "\n"
 "§15\n"
 "\n"
-"**你**：那这就又…… …显然了！？\n"
+"**你**：那这就又……显然了！？\n"
 "\n"
-"**司南**：对。我觉得你从 §16 开始，后面就会自己顺下去。"
+"**司南**：对。我觉得你从 §16 开始，后面就会自己顺下去。\n"
 
 #. §0: `E.mul_of_ne`
 #: Game.Levels.Robotswana.L02_EBasis
-#, fuzzy
 msgid "Conclusion Robotswana L02: save result as §0"
-msgstr "**司南**: 我也把这个§0存一下，谁知道呢。"
+msgstr "**司南**：我也把这个 §0 存一下，以防万一。"
 
 #: Game.Levels.Robotswana.L02_EBasis
-#, fuzzy
 msgid "Intro Robotswana L02"
 msgstr ""
-"没过多久，你们发现了两张非常相似的纸条，又被乱涂乱画得满满的，几乎全都被划掉"
-"了。\n"
-"不过第一行在每张纸上都还能勉强辨认出来。"
+"没过多久，你们发现了两张非常相似的纸条，上面同样写满了难以辨认的字迹，几乎全"
+"都被划掉了。\n"
+"不过每张纸上的第一行还勉强能辨认出来。"
 
 #: Game.Levels.Robotswana.L02_EBasis
-#, fuzzy
 msgid "Looks like matrix multiplication"
-msgstr "**你**: 这看起来就是矩阵乘法。应该也没错。"
+msgstr "**你**：这看起来就是矩阵乘法。应该也没错。"
 
 #. §0: `simp`
 #. §1: `«{h}»`
 #: Game.Levels.Robotswana.L02_EBasis
-#, fuzzy
 msgid "Try §0 with §1"
-msgstr "**司南**: 但别忘了，§0明确需要假设§1！"
+msgstr "**司南**：但别忘了，§0 需要你明确告诉它使用假设 §1！"
 
 #: Game.Levels.Robotswana.L03
-#, fuzzy
 msgid "Conclusion Robotswana L03"
 msgstr ""
-"**你**: 我现在倒是很好奇，到底是谁把这些纸条弄丢了或者扔在这儿的。走吧，我们"
+"**你**：现在我倒是很好奇，到底是谁把这些纸条弄丢了或者扔在这儿的。走吧，我们"
 "继续。"
 
 #: Game.Levels.Robotswana.L03
-#, fuzzy
 msgid "Seems to be correct"
-msgstr "**你**:  看起来也对。"
+msgstr "**你**：看起来是对的。"
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid "Conclusion Robotswana L04"
 msgstr ""
-"你决定沿着一条特别显眼的痕迹走。\n"
-"司南在后面追着你，走着走着还顺手从地上捡起了一张随便的羊皮纸。"
+"你决定沿着一串特别显眼的足迹走。\n"
+"司南跟在你后面，走着走着，还顺手从地上捡起了一张羊皮纸。"
 
 #. §0: `E i j`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid "Explain statement w.r.t. §0 and use former results"
 msgstr ""
-"**你**: 这看起来就是在说，这些§0构成了矩阵空间的一组生成元。\n"
+"**你**：这看起来就是在说，这些 §0 构成了矩阵空间的一组生成元。\n"
 "\n"
-"**司南**: 你肯定马上就能用上我们已经得到的那些结果！"
+"**司南**：你肯定马上就能用上我们已经得到的那些结果！"
 
 #. §0: `(A i j) • E i j`
 #. §1: `Matrix.smul_ebasis`
 #. §2: `rw […]`
 #. §3: `simp […]`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid ""
 "Expression §0 can be simplified with §1.\n"
 "§2 can not be used under a sum. §3 can work.\n"
 msgstr ""
-"**司南**: 表达式§0你肯定能用§1化简吧。\n"
+"**司南**：表达式 §0 你肯定能用 §1 化简吧。\n"
 "\n"
-"**你**: 所以用§2？\n"
+"**你**：所以用 §2？\n"
 "\n"
-"**司南**: 不，在求和号下面那样不行。不过§3倒是有希望。\n"
+"**司南**：不，在求和号下面那样不行。不过 §3 倒是有希望。\n"
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid "Intro Robotswana L04"
 msgstr ""
-"你们来到一处地方，草在一大片更大的正方形区域里被踩得稀烂。\n"
+"你们来到一处地方，那里有一大片正方形草地被踩得稀烂。\n"
 "足迹横七竖八，朝着不同方向延伸。\n"
 "\n"
 "你们有点没头绪地搜了一圈，找到了各种各样的羊皮纸碎片。\n"
 "大多数是空白的或者已经看不清了，但有一张你还能辨认出来。"
 
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid "Repeat proof from first level"
 msgstr ""
-"**司南**: 行吧，你也可以直接把第一张羊皮纸上的证明再做一遍。\n"
-"  来吧，熟能生巧。\n"
+"**司南**：行吧，你也可以直接把第一张羊皮纸上的证明再做一遍。\n"
+"来吧，熟能生巧。\n"
 "\n"
-"**你**: 行了行了，我又没有你那种机械脑子。"
+"**你**：行了行了，我又没有你那种机械脑子。"
 
 #. §0: `apply matrix_eq_sum_single`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid "Try to use §0"
 msgstr ""
-"**司南**: 对了！按现在这个写法，我在我的库里见过这个结论。这正是§0。\n"
+"**司南**：对了！按现在这个写法，我在我的库里见过这个命题。这正是 §0。\n"
 "\n"
-"**你**: 太好了！那我们就不用在这上面浪费时间了。"
+"**你**：太好了！那我们就不用在这上面浪费时间了。"
 
 #. §0: $(n × n)$
 #. §1: $A$
@@ -7673,47 +7655,42 @@ msgstr ""
 #. §5: $(m × n)$
 #. §6: $R$
 #: Game.Levels.Robotswana.L04_MatrixEqSum
-#, fuzzy
 msgid ""
 "[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
 "every §0 matrix §1 over §2 an be expressed as\n"
 "§3\n"
 "more generally, use §4 for §5 matrices over any §6"
 msgstr ""
-"任意实§0矩阵§2都可以写成\n"
+"任意实 §0 矩阵 §2 都可以写成\n"
 "§3。\n"
 "\n"
-"更一般的、带更一般系数的矩阵见§4。"
+"一般维度和系数类型的矩阵，见 §4。"
 
 #. §0: `sum_congr`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Again employ §0"
-msgstr "**司南**: 那你大概又该用§0了。"
+msgstr "**司南**：那你大概又该用 §0 了。"
 
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Apply definition §0 by §1"
 msgstr ""
-"**你**: 那我现在要怎么把§0的定义代进去？\n"
+"**你**：那我现在要怎么展开 §0 的定义？\n"
 "\n"
-"**司南**: §1！"
+"**司南**：§1！"
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Conclusion Robotswana L05"
 msgstr ""
-"**你**: 我感觉我们是在追踪一个对矩阵对角线感兴趣的人……但我开始有点渴了！"
+"**你**：我感觉我们是在追踪一个对矩阵对角线感兴趣的人……不过我开始有点渴了！"
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Explain simplification of §0 and §1"
 msgstr ""
-"**你**：谢谢，这很有帮助！这一步应该很简单：对一个元素求和，在这里 §0 又是 "
+"**你**：谢谢，这很有帮助！这一步应该很简单：对单个元素求和，而这里 §0 又是 "
 "1，而且 §1 也能化简！"
 
 #. §0: `1 «{i}» «{x}»`
@@ -7721,7 +7698,6 @@ msgstr ""
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 "**司南**：反过来会更有用，因为 §0 被定义成了 §1！\n"
@@ -7732,12 +7708,12 @@ msgstr ""
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
-"**你**：但我在这儿该怎么做？§0 或多或少是在说 §1。\n"
+"**你**：但这种情况我该怎么做？§0 或多或少是在说 §1。\n"
 "\n"
-"**司南**：对，但也不完全是。你用 §2 把它引入，然后简单证明一下吧！"
+"**司南**：对，但也不完全是。你先用 §2 把你想要的假设写出来，然后简单证明一下"
+"吧！"
 
 #. §0: `1`
 #. §1: `1 «{i}» j`
@@ -7745,61 +7721,54 @@ msgstr ""
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 "**你**：§0 在这里是单位矩阵，对吧？\n"
 "\n"
 "**司南**：对。\n"
 "\n"
-"**你**：那 §1 对所有 §2 都是零啊。所以除了 §3 对应的那一项之外，其他所有加数"
-"都消掉了。\n"
+"**你**：那 §1 对所有 §2 都是零啊。所以除了 §3 对应的那一项之外，其他所有求和"
+"项都会消掉。\n"
 "\n"
-"**司南**：是这样吗？那让我想想……你能先把 §4 给我展示一下吗？"
+"**司南**：是这样吗？那让我想想……你能先证明一下 §4 吗？"
 
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Explanation of equal sums"
-msgstr "**你**: 我觉得这两个求和是一样的，因为每一项加数都一样。"
+msgstr "**你**：我觉得这两个求和是一样的，因为每一项求和项都一样。"
 
 #. §0: `1`
 #. §1: `matrix_eq_sum_ebasis`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Intro Robotswana L05: §0 indicates unit matrix. Begin with §1"
 msgstr ""
-"**你**：给我看看，你那是什么？什么单位矩阵？适合加入我们的收藏吗？\n"
+"**你**：给我看看，你手里是什么？是关于单位矩阵的吗？能放进我们的收藏吗？\n"
 "\n"
 "**司南**：对——最右边那个 §0 在这里就是单位矩阵。我觉得你可以直接从 §1 开"
 "始。\n"
 "\n"
 "**你**：我在想，我们是不是把什么重要的东西落在广场上了？\n"
 "\n"
-"**司南**：无所谓啦，我们已经走出挺远一段了。现在在这儿试一下！"
+"**司南**：无所谓啦，我们已经走出挺远一段了。先试试这个吧！"
 
 #. §0: `sum_subset`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Now §0 can be applied"
-msgstr "**司南**: 很好。现在你就可以用§0了。"
+msgstr "**司南**：很好。现在你就可以用 §0 了。"
 
 #. §0: `«{h₂}»`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Try to simplify §0."
 msgstr "**你**：我首先会看看 §0 能不能化简。"
 
 #. §0: `rw`
 #. §1: `if_neg`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Try §0 and §1"
 msgstr "**司南**：既然这是错的，你就可以用 §0 和 §1 继续推进。"
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `matrix_eq_sum_single`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Try §0 not §1"
 msgstr "**司南**：不，不是 §0，而是 §1。"
 
@@ -7810,58 +7779,51 @@ msgstr "**司南**：不，不是 §0，而是 §1。"
 #. §3: `r`
 #. §4: `w`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid ""
 "Try §0 on §1 with §2 to §3e§4rite\n"
 "goal."
 msgstr ""
-"**司南**:  Wie gesagt, ich denke, du kannst gleich mit §0 anfangen, "
-"angewendet auf die Einheitsmatrix §1 rechts vom Gleichheitszeichen. Du "
-"willst also mit der Gleichung §2 das 目标 §3e§4riten."
+"**司南**：就像我刚才说的，我觉得你可以直接从 §0 开始，把它用在等号右边的单位"
+"矩阵 §1 上。也就是说，你可以用等式 §2 来重写目标 也就是§3§4。"
 
 #. §0: `symm`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Try §0 to fix skewed order"
 msgstr ""
-"**你**：嗯，现在这先被倒过来了。\n"
+"**你**：嗯，现在顺序反了。\n"
 "\n"
 "**司南**：想想 §0！\n"
 "\n"
-"**你**：对哦，我们之前在那个带着传送带的野人那里就已经用过这个了。"
+"**你**：对哦，我们之前在那个玩传送带的怪人那里就已经用过这个了。"
 
 #. §0: `funext r s`
 #. §1: $(r,s)$
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "Try §0 to focus on position §1."
 msgstr ""
 "**你**：然后呢？\n"
 "\n"
-"**司南**：用 §0 的话，你可以把注意力集中到矩阵在 §1 这个位置的那个条目上。"
+"**司南**：用 §0 的话，你可以把注意力集中到矩阵在 §1 位置的那个条目上。"
 
 # GPT: „§0 kann man immer versuchen …“ lässt sich auch als „Man kann immer §0 versuchen …“ lesen; ich habe die näher am Original stehende Satzstellung mit vorangestelltem §0 gewählt.
 #. §0: `simp`
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
-#, fuzzy
 msgid "§0 is always available"
-msgstr "**司南**: §0 总是可以先试试 …"
+msgstr "**司南**：§0 总是可以先试试……"
 
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid "Conclusion Robotswana L06"
 msgstr ""
 "**司南**：我觉得，“交换子被消去”这个假设，我们先就这么带着用吧。\n"
 "\n"
-"**你**：好。 我是不是已经说过我慢慢开始口渴了？"
+"**你**：很好。 我是不是已经说过，我开始有点口渴了？"
 
 #. §0: `f`
 #. §1: `E i i`
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid "Explain §0 with §1"
 msgstr ""
-"**你**：换句话说：如果 §0 把交换子都消掉，那它在所有 §1 上的取值就一致。对"
+"**你**：换句话说：如果 §0 会消去交换子，那它在所有 §1 上的取值都相等。对"
 "吗？？\n"
 "\n"
 "**司南**：我们来看看！"
@@ -7870,30 +7832,27 @@ msgstr ""
 #. [A, B] = AB - BA
 #. $$
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid ""
 "Intro Robotswana L06: Introduce nihiliated cummotator\n"
 "§0"
 msgstr ""
-"顺着踪迹走，你们来到一棵大树前。树荫下，你们发现了一个一动不动的东西：\n"
+"顺着足迹走，你们来到一棵大树前。树荫下，你们发现了一个一动不动的东西：\n"
 "\n"
 "§0\n"
 "\n"
-"**司南**：  啊对，一个交换子！\n"
+"**司南**：哦，看，一个交换子！\n"
 "\n"
-"**你**：不过它看起来被“虚无化”得挺厉害的。我觉得它是渴死的。\n"
+"**你**：它看起来已经坏得很厉害了。我觉得它是渴死的。\n"
 "\n"
-"**司南**：再看，这树上还刻了点东西。"
+"**司南**：再看，树上还写着东西。"
 
 #. §0: `E i k = (E i j) * (E j k)`
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid "Remind former results with §0"
 msgstr "**司南**：我们不是在某张纸条上见过 §0 吗？"
 
 #. §0: `«{h₁}»`
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid "Remind use of §0"
 msgstr ""
 "**司南**：你做这一大堆，不就是为了用 §0 吗？\n"
@@ -7908,28 +7867,25 @@ msgstr ""
 #. §5: `f (A * B) = f (E j j)`
 #. §6: `«{h₁}»`
 #: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#, fuzzy
 msgid ""
 "Start with §0. Find §1 with §2. Try §3 to get §4 and §5 and see if §6 "
 "applicable"
 msgstr ""
 "**你**：可我该拿我们的假设 §0 怎么办？\n"
-"  我首先得有个乘法才行。\n"
+"我得先弄出一个乘法才行。\n"
 "\n"
-"**司南**：你得找一个矩阵乘积 §1，使得 §2 成立。\n"
-"  然后你就可以写 §3，把它拆成两个目标——§4 和 §5——这样 §6 也许就能用上了。"
+"**司南**：你得想出一个矩阵乘积 §1，使得 §2 成立。\n"
+"然后你就可以写 §3，把它拆成两个目标——§4 和 §5——这样 §6 也许就能用上了。"
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "Conclusion Robotswana L07"
-msgstr "这些足迹看起来已经新鲜多了。你们继续跟着它们走。"
+msgstr "这些足迹看起来新鲜多了。你们继续沿着足迹前进。"
 
 #. §0: `unfold E`
 #. §1: `simp`
 #. §2: `E`
 #. §3: `simp [E]`
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "Try §0 or §1 with §2 via §3"
 msgstr "**司南**：别忘了 §0，或者让 §1 用 §2 的定义（§3）。"
 
@@ -7938,45 +7894,41 @@ msgstr "**司南**：别忘了 §0，或者让 §1 用 §2 的定义（§3）。
 #. §2: `E i j * E j j`
 #. §3: `E.mul_of_ne`
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "Use §0 by writing §1 as §2. Remind §3"
 msgstr ""
 "**司南**：那我们在这里怎么用 §0 呢？\n"
 "\n"
 "**你**：要不这次把 §1 写成乘积 §2？\n"
 "\n"
-"**司南**：  为啥偏要这么写？\n"
+"**司南**：为什么要这么写？\n"
 "\n"
-"**你**：因为在这个乘积里把因子对调一下，我就得到零！  \n"
-"  我们不是也见过嘛，§3 之类的。\n"
-"    "
+"**你**：因为在这个乘积里把因子对调一下，我会得到零！\n"
+"我们不是已经见过了吗，§3 之类的。"
 
 #. §0: `trans f (E i j * E j j)`
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "[Hint plnk] Try §0"
-msgstr "**司南**：随你。那你最好试试 §0。"
+msgstr "**司南**：随你吧。你最好试试 §0。"
 
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "[Robotswana.L07] Hint 1: Try commutating"
-msgstr "**司南**：你现在是想在这里交换吗？**你**：没错！"
+msgstr ""
+"**司南**：你现在是想在这里交换一下吗？\n"
+"**你**：没错！"
 
 #. §0: `h₁`
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid "[Robotswana.L07] Hint 2: Try rewriting with §0"
 msgstr "**司南**：哦。这看起来不对。"
 
 #. §0: `E i j`
 #. §1: `E i j`
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#, fuzzy
 msgid ""
 "intro Robotswana L07: Introduce new consideration for §0: do not consider §1 "
 "with i ≠ j"
 msgstr ""
-"就在树旁边，你又找到一张纸条，上面把 §0 大大地划掉了。\n"
+"就在树旁边，你又找到一张纸条，上面大大地划掉了 §0。\n"
 "\n"
 "**你**：大概是说：带 i ≠ j 的 §1 我们不关心。"
 
@@ -7998,7 +7950,6 @@ msgstr ""
 #. §8: `nth_rw 1 [ ... ]`
 #. §9: `rw`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid ""
 "\n"
 "§0\n"
@@ -8010,36 +7961,34 @@ msgid ""
 "which works like §9.\n"
 msgstr ""
 "\n"
-"**你**：这又是要干嘛……？\n"
+"**你**：这又是什么……？\n"
 "\n"
-"你随手乱写了几笔。\n"
+"你随手写了几笔。\n"
 "§0\n"
 "\n"
 "**你**：嗯，这样也许行。我把 §1 写成基矩阵的线性组合，然后用线性性，最后用"
-"到：当 §4 时，§2 在 §3 上为零。\n"
-"所以我大概应该先把 §6 里的那个 §5 写成线性组合，而不是后面那个别的 §7。\n"
+"到：当 §4 时，§2 在 §3 上的值为0。\n"
+"所以我大概应该先把 §6 里的第一个 §5 展开成线性组合，而不是右边后面那个 §7。\n"
 "\n"
 "**司南**（*远处*）：§8！跟 §9 一样用。\n"
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Conclusion Robotswana L08"
 msgstr ""
-"**你**：总算。\n"
+"**你**：终于！\n"
 "\n"
 "司南递给你一瓶水。\n"
 "\n"
-"**你**：你怎么突然就有这个了？\n"
+"**你**：你这是从哪里变出来的？\n"
 "\n"
 "**司南**：第 17 招。\n"
 "\n"
-"**你**：那你又找到踪迹了吗？\n"
+"**你**：那你又找到足迹了吗？\n"
 "\n"
 "**司南**：找到了，跟我来！我刚才在那边看到点东西。"
 
 #. §0: `by_cases`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Employ §0"
 msgstr "**司南**：§0 就是那个，没错！"
 
@@ -8049,17 +7998,15 @@ msgstr "**司南**：§0 就是那个，没错！"
 #. §3: `rw [matrix_eq_sum_ebasis A]`
 #. §4: `A`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Explain why to use §0 with §1 instead of §2. §3 replaces both §4"
 msgstr ""
-"**你**（*喊着*）：你这话什么意思？\n"
+"**你**（*喊着*）：你什么意思？\n"
 "\n"
-"**司南**（*也在喊*）：哎呀，你肯定是想用 §0，但要配 §1 而不是 §2。§3 会把两"
-"个 §4 都替换掉。"
+"**司南**（*也在喊*）：你肯定是想用 §0，但要用 §1 而不是 §2。§3 会把两个 §4 都"
+"替换掉。"
 
 #. §0: `if_neg «{h₂}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Here try §0"
 msgstr ""
 "**司南**：……然后这里是 §0。\n"
@@ -8067,70 +8014,60 @@ msgstr ""
 "**你**：我知道啦。"
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Intro Robotswana L08"
 msgstr ""
-"你们又找到一条线索，但一着急就把踪迹弄丢了。\n"
-"你现在已经很渴。\n"
-"司南在附近继续搜寻时，你累得坐下，在温暖的太阳底下有点发懵地盯着那片羊皮纸碎"
-"片。"
+"你们又找到一条线索，但一激动就跟丢了足迹。\n"
+"你这会已经很渴了。\n"
+"司南在附近继续搜寻时，你累得坐下，在火辣辣的太阳底下有点发懵地盯着那片羊皮纸"
+"碎片。"
 
 #. §0: `«{i}» = «{j}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Prove by cases for §0"
-msgstr "**你**：然后现在对 §0 做分类讨论…"
+msgstr "**你**：然后现在对 §0 做分类讨论……"
 
 #. §0: `f (E i j)`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "See that §0 is zero"
-msgstr "**你**：§0 不就是零嘛，我们不是已经看到了！"
+msgstr "**你**：§0 不就是零嘛，我们不是已经知道了吗！"
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Simplify"
 msgstr "**你**：啊对，拿不准就先化简。"
 
 #. §0: `trans`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Solve second half of §0 operation"
 msgstr ""
-"**你**：我还以为就到这儿了。\n"
+"**你**：我还以为这就结束了。\n"
 "\n"
-"**司南**：差不多了，上面还有 §0 命令的后半段。这一半特别简单。"
+"**司南**：差不多了，上面还有 §0 那一步的后半段。这一半特别简单。"
 
 #. §0: `zero_on_offDiag_ebasis`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "This was called §0"
 msgstr "**司南**：而那个就叫 §0。"
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Try again"
 msgstr "**你**：要不再来一遍？"
 
 #. §0: `apply congr_arg`
 #. §1: `ext`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Try using §0 and §1"
-msgstr "**司南**：和等于和……你用 §0、§1 来搞定。"
+msgstr "**司南**：和等于求和……可以用 §0、§1 来处理。"
 
 #. §0: `map_sum`
 #. §1: `simp`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Try §0 via §1"
 msgstr ""
-"**司南**（*从某个地方*）：这听起来像 §0。别以为我们在巴比伦见过这个，是你在瞎"
-"想。不过 §1 肯定认识这个引理。"
+"**司南**（*不知从哪里*）：这听起来像 §0。我不觉得我们在巴比伦见过这个，你是在"
+"瞎想。不过 §1 肯定知道这个引理。"
 
 #. §0: `if_pos «{h₂}»`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Try §0."
 msgstr "**司南**：这里 §0 很有用。"
 
@@ -8139,41 +8076,37 @@ msgstr "**司南**：这里 §0 很有用。"
 #. §2: `i≠j`
 #. §3: `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "Use disappearing §0 in §1 with §2. Try §3"
 msgstr ""
-"**司南**：你现在到哪一步了？\n"
+"**司南**：你现在做到哪一步了？\n"
 "\n"
-"**你**：我还得想办法把 §0 在带着 §2 的 §1 上消掉。\n"
+"**你**：我还得想办法用上这个事实：当 §2 时，§0 在 §1 上的值为0。\n"
 "\n"
-"**司南**：那就做下面这个中间步骤：\n"
+"**司南**：那不如先做下面这个中间步骤：\n"
 "\n"
 "§3"
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid ""
 "[Doc.Theorem] map_sum\n"
 "Linear mapping, or 'additive' mappings in general, can be exchanged with a "
 "sum."
-msgstr "线性映射（或者更一般的“加性”映射）可以和求和交换。"
+msgstr "线性映射（或者更一般的“加性”映射）可以移入求和号内。"
 
 #. §0: `IN_HINT 1`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "§0 Use linearity"
 msgstr ""
-"**你**（*心里想*）：现在用线性性……还有千万别想水……巴比伦的水可真不少……我刚才"
-"做到哪来着？"
+"**你**（*心里想*）：现在用线性性……千万别想水……巴比伦那的水可真不少……我刚才做"
+"到哪儿了？"
 
 #. §0: `rw`
 #. §1: `nth_rw`
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
-#, fuzzy
 msgid "§0 is a bad idea here. Try §1."
 msgstr ""
 "**你**：嗯，§0 确实是个馊主意。 \n"
-"  -- 这看起来太复杂了。让我试试 §1。"
+"这看起来太复杂了。让我试试 §1。"
 
 #. §0: `«{n}»`
 #. §1: $$
@@ -8195,7 +8128,6 @@ msgstr ""
 #. ```
 #. §8: `mul_eq_mul_left_iff`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid ""
 "\n"
 "§0-th multiplication of the equation can be calculated with the former "
@@ -8212,43 +8144,40 @@ msgstr ""
 "你想了一会儿，在纸上乱涂乱画。 \n"
 "过了一阵：\n"
 "\n"
-"**你**：我觉得我有个主意！方程的 §0 倍我可以用之前的结果这样验算： \n"
+"**你**：我有个主意！方程的 §0 倍我可以用之前的结果这样计算： \n"
 "§1\n"
-"关键点是，我们已经看到，对任意的 §4 和 §5，§2 和 §3 是相等的。  所以在求和里"
-"它们可以互换。\n"
+"关键点是，我们已经知道，对任意的 §4 和 §5，§2 和 §3 是相等的。所以在求和里它"
+"们可以互换。\n"
 "\n"
-"**司南**：嗯嗯。  你总之是想先利用“乘以 §6 是单射”这件事？我们以前是不是有个"
-"引理来着？嗯 …\n"
+"**司南**：嗯嗯。总之你是想先利用“乘以 §6 是单射”这件事？我们以前是不是有个引"
+"理来着？嗯 …\n"
 "司南想了一会儿。\n"
 "\n"
-"**司南**：  我会先这么试：\n"
+"**司南**：我会先这么试：\n"
 "§7\n"
 "然后再用 §8 继续。\n"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Conclusion Robotswana L09"
 msgstr "**你**：好。我们小心点靠近。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Intro Robotswana L09"
 msgstr ""
 "再往前不到五十米，你们来到一个小土坡上。司南指着远处的一个点。\n"
 "\n"
-"**司南**：看，那儿就是！\n"
+"**司南**：看，它就在那儿！\n"
 "\n"
 "**你**：那*是*什么？？？\n"
 "\n"
-"**司南**：  不知道。  但我感觉这些纸条像是一种“通缉令”……你看，这里还有一"
-"张。  我觉得它在说它有多大。"
+"**司南**：不知道。但我感觉这些纸条像是在给它做某种“档案”……你看，这里还有一"
+"张。我觉得这张是在说它有多大。"
 
 #. §0: `«{h}» : «{n}» = 0`
 #. §1: `obtain «{h}» | «{h}» := «{h}»`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Observe §0 seperatly. Prove by cases with §1"
-msgstr "**司南**：啊对，§0 这种情况我们得单独看。那就用 §1 来分类讨论吧"
+msgstr "**司南**：啊对，§0 这个情况我们得单独处理。那就用 §1 来分类讨论吧"
 
 #. §0: `«{h}» : «{n}» = 0`
 #. §1: `«{i}» : Fin «{n}»`
@@ -8256,167 +8185,145 @@ msgstr "**司南**：啊对，§0 这种情况我们得单独看。那就用 §1
 #. §3: `Fin 0`
 #. §4: `simp [«{h}»] at «{i}»`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Put §0 into §1 to show triviality because there is no §2 in §3. Try §4"
 msgstr ""
-"**司南**：然后你大概想把 §0 代入 §1，并发现这个命题变得很平凡，因为在 §3 里根"
-"本没有 §2。要做这个代入，这种情况下你可以用 §4。"
+"**司南**：然后你大概想把 §0 代入 §1，这样就能发现这个命题是平凡的，因为在 §3 "
+"里根本不存在 §2。这里可以用 §4 来做这个代入。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Return to topic at hand"
-msgstr "**司南**：行吧。那现在进入正题。"
+msgstr "**司南**：行吧。那现在回到正题。"
 
 #. §0: `«{f}» (∑ x, E x x)`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Show statement via §0"
-msgstr "**你**：然后我想通过一个中间步骤 §0 来证明这个等式。"
+msgstr "**你**：然后我想通过中间等式 §0 来证明这个等式。"
 
 #. §0: `rw [«{h₂}»]`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Try out using §0"
 msgstr "**司南**：试试 §0。"
 
 #. §0: `simp [E]`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Try §0"
 msgstr "**司南**：这次你直接再用 §0 就行。"
 
 #. §0: `trans`
 #. §1: `trans ∑ j : Fin «{n}», f (E i i)`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Try §0 several times. Start with §1"
-msgstr "**司南**：如果我没理解错的话，你现在想多次应用 §0，第一步是 §1。"
+msgstr "**司南**：如果我没理解错的话，你现在想多次使用 §0，第一步是 §1。"
 
 #. §0: `IsEmpty.false`
 #. §1: `M`
 #. §2: `∀ (m : M), False`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Try §0. It states for the empty set §1 that §2"
-msgstr "**司南**：然后大概能帮到你的是引理 §0，它对空集 §1 断言 §2。"
+msgstr "**司南**：接下来可能会用到的引理是 §0，它说明：对空集 §1，有 §2。"
 
 #. §0: `eq_sum_apply_diag_ebasis`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "Use the result §0"
 msgstr "**司南**：你刚才想用的那个结果叫 §0。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Hint dkmw] Remind of previous result"
-msgstr "**你**：而且这是我们一路上找到的一个结果。"
+msgstr "**你**：这个我们之前在路上已经见过了。"
 
 #. §0: `eq_on_diag_ebasis`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Hint fzwc] Try §0"
-msgstr "**司南**：我的存储盘上写着 §0。"
+msgstr "**司南**：我的硬盘记录这一条是 §0。"
 
 #. §0: `trans «{f}» (∑ j : Fin «{n}», E «{i}» «{i}»)`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Hint yvqm] Try §0"
 msgstr ""
-"**司南**：哦，这可不是你刚才写的那个。不过也许也能行。试试把 §0 作为下一步。"
+"**司南**：哦，这可不是你刚才记下来的那个。不过也许也能行。下一步试试 §0。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Hint ztqn] Remind of previous result"
 msgstr "**司南**：这个我们已经见过了。"
 
 #. §0: `apply congr_arg`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Robotswana.L09] Hint 1: §0 is mathematically wrong"
-msgstr "**你**：不，这在数学上就是错的！"
+msgstr "**你**：不对，这在数学上就是错的！"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Robotswana.L09] Hint: pull function into sum 1"
-msgstr "**你**：接下来我们把函数拉进求和里。"
+msgstr "**你**：接下来我们把函数移进求和里。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "[Robotswana.L09] Hint: pull function into sum 2"
 msgstr ""
 "**司南**：又来 `congr`-`ext`？\n"
 "\n"
-"**你**：不，先把函数拉进求和里，不然不行。"
+"**你**：不，得先把函数移进求和里，不然不行。"
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "again"
-msgstr "**你**：再来一次！"
+msgstr "**你**：再来！"
 
 #. §0: `«{h}»`
 #. §1: `ℕ`
 #. §2: `ℝ`
 #. §3: `simp`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-#, fuzzy
 msgid "§0 is an implicid embedding of  §1 in §2.  Try §3"
 msgstr ""
-"**司南**：箭头 §0 是把 §1 隐式嵌入到 §2 里的。比如你可以用 §3 把它去掉。"
+"**司南**：箭头 §0 是从 §1 到 §2 的一个隐式嵌入。比如你可以用 §3 消掉它。"
 
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Conclusion Robotswana L10"
 msgstr ""
 "**司南**：确实。你说得对。\n"
 "\n"
 "你们满心欢喜地观察着这个显然是这颗星球上独一无二的生物。\n"
 "\n"
-"你们走近时，特蕾西似乎注意到了你们。  但她绝不会被你们打扰。"
+"你们走近时，特蕾西似乎注意到了你们。但她似乎完全不受你们打扰。"
 
 #. §0: `f`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Explain that each §0 has stated properties"
 msgstr ""
 "**你**：这里再把所有性质汇总一遍。\n"
 "\n"
-"**司南**：然后你声称，只有特蕾西有这些性质？\n"
+"**司南**：也就是说，你觉得特蕾西有这些性质？\n"
 "\n"
-"**你**：对。  我觉得就是这样。  任何具有这些性质的映射 §0，在所有矩阵上的表现"
-"都和特蕾西一模一样。  所以它*就是*特蕾西！"
+"**你**：对。我觉得就是这样。任何具有这些性质的映射 §0，在所有矩阵上的表现都和"
+"特蕾西一模一样。所以它*就是*特蕾西！"
 
 #. §0: `trace`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Intro Robotswana L10: Introduce §0"
 msgstr ""
 "你们慢慢地潜行靠近。\n"
 "\n"
-"**你**（**低声**）：我觉得你说得对。这些纸条是一种通缉令！而且它们把眼前这个"
+"**你**（**低声**）：我觉得你说得对。这些纸条像是一份档案！而且它们把眼前这个"
 "家伙描述得明明白白！\n"
 "\n"
 "**司南**：你什么意思？\n"
 "\n"
-"**你**：你看嘛，它的身高、它对交换子的偏爱，还有其他那些特征——靠这些就能把它"
+"**你**：你看嘛，它的大小、它对交换子的偏爱，还有其他那些特征——靠这些就能把它"
 "唯一确定出来！\n"
 "\n"
 "**司南**：这你得跟我讲清楚点。\n"
 "\n"
-"**你**：我试试。在 Lean语 里，“迹”有名字吗？\n"
+"**你**：我试试。在Lean语里，“迹”有名字吗？\n"
 "\n"
-"**司南**：当然有，当然就叫 §0。有些形式哲学家还亲切地叫它特蕾西。\n"
+"**司南**：当然有，就叫 §0。有些形式哲学家还亲切地叫它特蕾西。\n"
 "\n"
 "你拿起一片羊皮纸碎片，在背面写了起来。"
 
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Observe equality"
 msgstr "**司南**：按定义两边就是相等的！"
 
 #. §0: `f (E i i) = 1`
 #. §1: `one_on_diag_ebasis`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Remind former result for §0. Try §1"
 msgstr ""
 "**你**：我们刚才不是已经确定 §0 成立了吗！\n"
@@ -8425,52 +8332,45 @@ msgstr ""
 
 #. §0: `rw [eq_sum_apply_diag_ebasis]`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Remind missed argument with §0"
 msgstr ""
-"**你**：这个目标怎么又冒出来了？\n"
+"**你**：这个证明目标是从哪儿来的？\n"
 "\n"
-"**司南**：一开始在 §0 那步，你大概把这个论证给漏了。现在可以补上。"
+"**司南**：最开始你用 §0 的时候，大概漏掉了这个参数。现在可以补上。"
 
 #. §0: `f «{A}»`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Rewrite §0 as sum of basis elements"
 msgstr "**你**：然后我们把 §0 写成基元素的和。"
 
 #. §0: `ext`
 #: Game.Levels.Robotswana.L10_Characterize
-#, fuzzy
 msgid "Use §0!"
 msgstr "**司南**：§0!"
 
 #: Game.Levels.Robotswana.L11_Linearity
-#, fuzzy
 msgid "Conclusion Robotswana L11"
 msgstr ""
 "最后你们动身踏上返程。\n"
-"你们立刻就迷路了，但特蕾西显然跟了上来，带着你们穿过草地景观回到你们的飞船。"
+"你们立刻就迷路了，但特蕾西显然跟了上来，带着你们穿过草原，回到你们的飞船。"
 
 #: Game.Levels.Robotswana.L11_Linearity
-#, fuzzy
 msgid "Explain statement"
 msgstr "**你**：这显然是在讲矩阵迹的线性性。"
 
 #: Game.Levels.Robotswana.L11_Linearity
-#, fuzzy
 msgid "Intro Robotswana L11"
 msgstr ""
 "你们隔着一点距离停下时，特蕾西朝你们跑过来，开始玩耍。\n"
-"她逗乐似的给你们各种各样的问题和项，你们则试着把它们足够快地组合起来。"
+"她兴致勃勃地抛给你们各种各样的问题和项，你们则试着尽快把它们组合起来。"
 
 #. §0: `card_fin`
 #. §1: `simp`
 #: Game.Levels.Robotswana.L11_Linearity
-#, fuzzy
 msgid "[Hint xnqr] Try §0 | §1"
 msgstr ""
-"**司南**：最后这一步是 §0。要是我们现在不是这么爱玩，其实用 §1 也都能搞定。**"
-"司南**：最后这一步是 §0。要是我们现在不是这么爱玩，其实用 §1 也都能搞定。"
+"**司南**：最后这一步可以用 §0。当然，其实也可以全都用 §1 来做，不过我开始喜欢"
+"一步一步做了。"
 
 #: Game.Levels.Samarkand
 #, fuzzy
