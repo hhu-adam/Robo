@@ -8373,7 +8373,6 @@ msgstr ""
 "一步一步做了。"
 
 #: Game.Levels.Samarkand
-#, fuzzy
 msgid "Intro Samarkand"
 msgstr ""
 "远处出现了一颗色彩斑斓的行星。等你们靠近了，才发现它表面的大部分区域都装饰着"
@@ -8381,43 +8380,40 @@ msgstr ""
 "上着陆。\n"
 "\n"
 "\n"
-"**你**:  哈喽，这里有人吗？\n"
+"**你**：哈喽，这里有人吗？\n"
 "\n"
 "行星表面像一颗完美的球体。你们朝各个方向望去都是地平线。一个人影也没有。你们"
 "正想转身离开，却发现了什么。\n"
 "\n"
-"**你**:  司南，你看那边，那个星球有个鼓包！\n"
+"**你**：司南，你看那边，那个星球有个鼓包！\n"
 "\n"
-"结果发现，这个“鼓包”是一只小乌龟，它躺在图案边缘附近的彩色底面上。你们小心翼"
+"结果发现，这个“鼓包”是一只小乌龟，它躺在图案边缘附近的彩色地面上。你们小心翼"
 "翼地踏上有图案的区域。颜料看起来已经干了。\n"
 "\n"
-"**阿拉普卡**: 你们好呀，过来吧！真好，我也能有一次访客了。\n"
+"**阿拉普卡**：你们好呀，过来吧！真好，我也能有访客了。\n"
 "\n"
-"**你**:  你在这儿干什么呢，一个人孤零零的？\n"
+"**你**：你在这儿干什么呢，一个人孤零零的？\n"
 "\n"
-"**阿拉普卡**:  我在做一件大艺术品。我会一直躺在这里，直到我的腹甲把地面的图案"
-"“印”上去。然后我就爬到那块还缺这一段图案的地方，再躺在那里很久，把图案转印到"
-"白色的行星表面上。这很花时间。所以我很需要有人陪我聊聊天。\n"
+"**阿拉普卡**：我在做一件大型艺术品。我会一直躺在这里，直到我的腹甲把地面的图"
+"案“印”上去。然后我就爬到那块还缺这一段图案的地方，再躺在那里很久，把图案转印"
+"到白色的行星表面上。这很花时间。所以我很需要有人陪我聊聊天。\n"
 "\n"
-"**你**: 那敢情好。"
+"**你**：那敢情好。"
 
 #: Game.Levels.Samarkand
-#, fuzzy
 msgid "Samarkand"
 msgstr "撒马尔罕"
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid "Conclusion Samarkand L01"
 msgstr "**阿拉普卡**：不错。"
 
 #. §0: `intro b`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid "Explain inclusion. Try §0"
 msgstr ""
-"**司南**：要证明一个包含关系，你从左边取一个元素，然后证明它在右边。所以先从 "
-"§0 开始吧。"
+"**司南**：要证明一个包含关系，你从左边集合任取一个元素，然后证明它属于右边集"
+"合。所以先从 §0 开始吧。"
 
 #. §0: `f : A → B`
 #. §1: `S`
@@ -8434,7 +8430,6 @@ msgstr ""
 #. ```
 #. §8: `f`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid ""
 "Explain statement: given §0 for subset §1 of §2\n"
 "§3\n"
@@ -8442,30 +8437,27 @@ msgid ""
 "§7\n"
 "is the pre-image over §8,\n"
 msgstr ""
-"**司南**:  我觉得我得给你解释一下这里的记号。\n"
-"显然给定了一个映射 §0。\n"
-"对 §2 的一个子集 §1，有\n"
+"**司南**：我觉得我得给你解释一下这里的符号。\n"
+"这里明确给定了一个映射 §0。\n"
+"对 §2 的一个子集 §1 而言，\n"
 "§3\n"
-"它在 §4 下的像。\n"
-"而对 §6 的一个子集 §5，有\n"
+"是它在 §4 下的像。\n"
+"而对 §6 的一个子集 §5 而言，\n"
 "§7\n"
-"它在 §8 下的原像。\n"
+"是它在 §8 下的原像。\n"
 
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid "Intro Samarkand L01"
 msgstr ""
-"**阿拉普卡**:  还有一些事情我已经想了很久了。也许你们能帮帮我。  比如说： "
-"….\n"
+"**阿拉普卡**：还有一些事情我已经想了很久了。也许你们能帮帮我。比如说：……\n"
 "\n"
-"她给你们口述了一条陈述。司南把它写了下来。"
+"她给你们口述了一条命题。司南把它写了下来。"
 
 #. §0: `«{hb}»`
 #. §1: `simp`
 #: Game.Levels.Samarkand.L01_ImagePreimage
-#, fuzzy
 msgid "Transform §0 by using §1"
-msgstr "**司南**：要把假设 §0 变成更初等的表达式，你可以用一下 §1。"
+msgstr "**司南**：要把假设 §0 变成更基础的表达式，你可以用一下 §1。"
 
 #. §0: `image`
 #. §1: `''`
@@ -8478,68 +8470,59 @@ msgstr "**司南**：要把假设 §0 变成更初等的表达式，你可以用
 #. §6: `image f`
 #. §7: `f ''`
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid ""
 "Can not use §0 instead of §1.\n"
 "Explain that §2 is mapping from §3 to §4 i.e.\n"
 "§5\n"
 ".You can express §6 by §7 but not vica versa"
 msgstr ""
-"**你**:  啊哈！所以如果我不喜欢 §1 这种“苍蝇屎”写法，也可以直接写 §0？\n"
+"**你**：啊哈！所以如果我不喜欢 §1 这种“蝇点”一样的小符号，也可以直接写 §0？\n"
 "\n"
-"**司南**:  不，你再仔细看看。   这里的 §2 是一个映射。\n"
-"当然它正是那个把 §3 的一个子集送到 §4 里对应像集的映射，也就是\n"
+"**司南**：不行，不能这么写。你仔细看就会发现，这里的 §2 是一个映射。\n"
+"它的输入是集合 §3 的一个子集，输出是集合 §4 中对应的像集，也就是\n"
 "§5"
 
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "Conclusions Samarkand L02"
 msgstr "**阿拉普卡**：好看，好看。"
 
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "Intro Samarkand L02"
 msgstr "阿拉普卡又给你们口述了一道问题。"
 
 #. §0: `funext`
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "Remind §0"
-msgstr "**司南**：  要证明的是两个映射的一致性。你还记得 §0 吗？"
+msgstr "**司南**：这里要证明两个映射相等。你还记得 §0 吗？"
 
 #. §0: `ext`
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "Show equality of sets by §0"
-msgstr "**司南**：  现在要证明两个集合相等——§0 就是咒语。"
+msgstr "**司南**：现在要证明两个集合相等——别忘了那个关键词：§0。"
 
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "This can be simplified"
-msgstr "**司南**：这个肯定能很容易化简……"
+msgstr "**司南**：这个肯定可以很容易化简……"
 
 #. §0: `funext S`
 #: Game.Levels.Samarkand.L02_ImageMap
-#, fuzzy
 msgid "[Hint gwrm] Try §0"
 msgstr "**司南**：哦，不。看起来太复杂了。你还是把 §0 明写出来吧。"
 
 #. §0: `ext`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-#, fuzzy
 msgid "Again show equality of sets by using §0"
-msgstr "**司南**：这不又是要证明集合相等吗？那就 §0。"
+msgstr "**司南**：这不又是要证明集合相等吗？那就用 §0。"
 
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-#, fuzzy
 msgid "Conclusion Samarkand L03"
 msgstr ""
-"**阿拉普卡**：  也挺好。\n"
+"**阿拉普卡**：也挺好。\n"
 "\n"
-"**司南**：  你该不会把整个星球都涂满了吧？\n"
+"**司南**：你该不会把整个星球都画满了吧？\n"
 "\n"
-"**阿拉普卡**：  没有。  这是几代人的问题。最早的图案元素是我曾曾曾曾……爷爷定"
-"下来的。我都不太确定要往回数多少代。更别说最初的母版图案是从哪来的。"
+"**阿拉普卡**：没有。这是几代人的问题。最早的图案元素是我曾曾曾曾……祖父定下来"
+"的。我都不太确定要往回数多少代。更别说最初的原始图案是从哪来的。"
 
 #. §0: `range f`
 #. §1: `f`
@@ -8553,34 +8536,30 @@ msgstr ""
 #. x ∈ range f ↔ ∃ a, f a = b
 #. ```
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-#, fuzzy
 msgid ""
 "Explain §0 w.r.t. §1 as\n"
 "§2\n"
 "and its equivalent §3. Mention §4:\n"
 "§5\n"
 msgstr ""
-"**司南**:  这里的 §0 是 §1 的整个值域：\n"
+"**司南**：这里的 §0 是 §1 的整个像集：\n"
 "§2\n"
 "所以这本质上只是 §3 的另一种写法。\n"
-"要用它来做事，§4 很有用：\n"
+"要处理这个记号，§4 很有用：\n"
 "§5\n"
 
 #. §0: `constructor`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
-#, fuzzy
 msgid "Try to start with §0"
 msgstr "**司南**：我会先从 §0 开始。"
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#, fuzzy
 msgid "Conclusion Samarkand L04"
-msgstr "**阿拉普卡**：  你们真是帮了大忙！"
+msgstr "**阿拉普卡**：你们真是帮了大忙！"
 
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#, fuzzy
 msgid "Intro Samarkand L04"
-msgstr "**阿拉普卡**：  你们也许还能帮我搞定这个吗？"
+msgstr "**阿拉普卡**：你们或许也能帮我看看这个吗？"
 
 #. §0: `image_preimage_subset`
 #. §1: ```
@@ -8588,160 +8567,142 @@ msgstr "**阿拉普卡**：  你们也许还能帮我搞定这个吗？"
 #. ```
 #. §2: `f`
 #: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#, fuzzy
 msgid ""
 "Remind §0 i.e.\n"
 "§1\n"
 "and additional assumption that §2 surjectiv"
 msgstr ""
-"**你**：  我们刚才不是已经有过这个了吗？\n"
+"**你**：我们刚才不是已经有过这个了吗？\n"
 "\n"
-"**司南**：  没有。  刚才我们只有包含§0：\n"
+"**司南**：没有。刚才我们只有包含关系 §0：\n"
 "§1\n"
-"现在要证明的是相等，但要在额外假设§2是满射的前提下。"
+"现在要证明的是相等，这里的已知条件是映射 §2 是满射。"
 
 #: Game.Levels.Samarkand.L05_InjectiveFibre
-#, fuzzy
 msgid "Conclusion Samarkand L05"
 msgstr "阿拉普卡还是一动不动地躺着，不过她看起来很开心。"
 
 #: Game.Levels.Samarkand.L05_InjectiveFibre
-#, fuzzy
 msgid "Intro Samarkand L05"
-msgstr "**阿拉普卡**:  我还有一个关于单射映射的问题。"
+msgstr "**阿拉普卡**：我还有一个关于单射映射的问题。"
 
 #. §0: `∃! a`
 #. §1: `a`
 #. §2: `use a`
 #. §3: `simp`
 #: Game.Levels.Samarkand.L05_InjectiveFibre
-#, fuzzy
 msgid "Try §0 to construct §1, Try §2 and §3"
 msgstr ""
-"**你**:  对于 §0，我先构造出我想用的元素 §1 …\n"
+"**你**：对于 §0，我先构造出我想用的元素 §1……\n"
 "\n"
-"**司南**: …. 然后你应用 §2 和 §3。  没错。"
+"**司南**：……然后你用 §2 和 §3。没错。"
 
 #: Game.Levels.Samarkand.L06_PreimageNonempty
-#, fuzzy
 msgid "Conclusion Samarkand L06"
-msgstr "**阿拉普卡**:  你们说得对。  我自己也该想到的。"
+msgstr "**阿拉普卡**：你们说得对。我自己也该想到的。"
 
 #. §0: `b`
 #. §1: `b`
 #. §2: `eq_empty_iff_forall_notMem`
 #. §3: `unfold Ne`
 #: Game.Levels.Samarkand.L06_PreimageNonempty
-#, fuzzy
 msgid ""
 "Explain that §0 is not empty iff §1 has pre-image. Remind of §2 that can be "
 "used after §3"
 msgstr ""
-"**你**：  这大概是说：§0的纤维恰好在§1有一个原像时才非空。又是相当显然。\n"
+"**你**：这大概是说：§0 的纤维非空，当且仅当 §1 有一个原像。又是相当显然。\n"
 "\n"
-"**司南**：  对，除了记号问题。不过幸好我们已经证明了§2。要用它，你只需要把不"
-"等号的记号展开，比如直接用§3。"
+"**司南**：对，除了记号问题。不过幸好我们已经证明了 §2。要用它，你只需要把不等"
+"号展开，比如直接用 §3。"
 
 #: Game.Levels.Samarkand.L06_PreimageNonempty
-#, fuzzy
 msgid "Intro Samarkand L06"
-msgstr "**阿拉普卡**: 那这个呢？"
+msgstr "**阿拉普卡**：那这个呢？"
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-#, fuzzy
 msgid "Conclusion Samarkand L07"
-msgstr "**阿拉普卡**:  哇！你们真的太厉害了。"
+msgstr "**阿拉普卡**：哇！你们真的太厉害了。"
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-#, fuzzy
 msgid "Got to think about it..."
-msgstr "**你**:  让我想想 …."
+msgstr "**你**：让我想想……"
 
 #: Game.Levels.Samarkand.L07_LeftInvPreimage
-#, fuzzy
 msgid "Intro Samarkand L07"
-msgstr "**阿拉普卡**:  不过我现在还有一道真的很难的问题。"
+msgstr "**阿拉普卡**：不过我现在还有一道真的很难的问题。"
 
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-#, fuzzy
 msgid "Conlsuion Samarkand L08"
 msgstr ""
-"**阿拉普卡**:  太棒了！我激动得简直想跳到空中去。但那当然不行。那样图案就乱"
-"了。\n"
+"**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n"
 "\n"
-"**司南**:  你还剩多久？\n"
+"**司南**：你还要这样待多久？\n"
 "\n"
-"**阿拉普卡**:  这里还剩三年、22天、7小时和35分钟。\n"
+"**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n"
 "\n"
-"**司南**:  哦哦 ….\n"
+"：\n"
+"**司南**：哦哦……\n"
 "\n"
-"**你**:  那你怎么知道之后要去哪里，才能让图案对得上？\n"
+"**你**:那你怎么知道之后要去哪里，才能让图案对得上？\n"
 "\n"
-"**阿拉普卡**:  啊！\n"
+"**阿拉普卡**：啊！\n"
 "\n"
 "阿拉普卡的脸上绽开了一个大大的笑容。\n"
 "\n"
-"**阿拉普卡**:  这就是艺术啦！"
+"**阿拉普卡**：这就是艺术啦！"
 
 #. §0: `preimage f`
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-#, fuzzy
 msgid "Explain surcetivity by §0"
 msgstr ""
-"**司南**：  一个映射恰好在什么时候是满射？当诱导的映射§0——它把一个子集送到这"
-"个子集的原像——是单射的时候？这真的对吗？\n"
+"**司南**：一个映射是满射，当且仅当由它诱导出的取原像映射 §0 是单射。这个映射"
+"会返回一个子集在原映射下的原像。真是这样吗？\n"
 "\n"
-"**你**：我觉得对。  我以前见过。\n"
+"**你**：我觉得对。我以前见过。\n"
 "\n"
-"**司南**：  那就走起！"
+"**司南**：那就走起！"
 
 #: Game.Levels.Samarkand.L08_Preimage_Injective
-#, fuzzy
 msgid "Intro Samarkand L08"
-msgstr "**阿拉普卡**:  你们甚至能帮我推进一下这个猜想吗？"
+msgstr "**阿拉普卡**：那你们能不能也帮我看看这个猜想呢？"
 
 #: Game.Levels.Saturn
-#, fuzzy
 msgid "Intro Saturn"
 msgstr ""
-"你们本来根本没打算飞向这颗星球。但你们有点走神了。而且在宇宙里可不能心不在"
-"焉，尤其是你还不熟的时候。现在你们已经飞得太近了，引力太强，而你们的再生引擎"
-"正处在再生模式。\n"
+"你们本来根本没打算飞向这颗星球。但你们有点走神了。而在宇宙里可不能心不在焉，"
+"尤其是你还不熟悉这个宇宙的时候。现在你们已经飞得太近了，引力太强，而你们的再"
+"生引擎正处在再生模式。\n"
 "\n"
-"**你**:  这颗星球上的橙色酱汁是什么鬼？\n"
+"**你**：这颗星球上的橙色酱汁是什么鬼？\n"
 "\n"
-"**司南**:  看起来更像有毒。  或者很烫。\n"
+"**司南**：看起来像是有毒。或者很烫。\n"
 "\n"
-"**你**:  或者两者都有。  我真的不想在那儿降落！\n"
+"**你**：或者两者都有。我真的不想在那儿降落！\n"
 "\n"
-"**司南**:  好好好，我已经在尽力了。  你看，这里已经有多少垃圾在绕轨道转了！我"
-"们现在能做的最好的事，就是顺着这股流飞。"
+"**司南**：我也不想，我已经在尽力了。你看，这里已经有多少垃圾在绕着星球转了！"
+"我们现在能做的最好的事，就是顺着这股流飞。"
 
 #: Game.Levels.Saturn
-#, fuzzy
 msgid "Saturn"
 msgstr "土星"
 
 #: Game.Levels.Saturn.L01_Rewrite_equality
-#, fuzzy
 msgid "Conclusion Saturn L01"
-msgstr "回来了一个 👍。"
+msgstr "你们收到了一个 👍。"
 
 #. §0: `=`
 #. §1: `↔`
 #. §2: `rw`
 #: Game.Levels.Saturn.L01_Rewrite_equality
-#, fuzzy
 msgid "Explain that §0 and §1 with §2 can be used as in Implis"
 msgstr ""
-"**你**：我感觉我以前见过这个。\n"
+"**你**：我感觉这个之前见过。\n"
 "\n"
 "**司南**：对！这看起来很像我们在 *蕴含* 上已经做过的一道问题。只不过这里写的"
 "是数的等式，而不是“当且仅当”的陈述！但本质上没啥区别。你几乎可以把 §0 和 §1 "
 "跟 §2 一样来用。"
 
 #: Game.Levels.Saturn.L01_Rewrite_equality
-#, fuzzy
 msgid "Intro Saturn L01"
 msgstr "突然，你们收到一条无线电消息。"
 
@@ -8749,52 +8710,46 @@ msgstr "突然，你们收到一条无线电消息。"
 #. §1: `\\l`
 #. §2: `rw [← hₓ]`
 #: Game.Levels.Saturn.L01_Rewrite_equality
-#, fuzzy
 msgid "Remind of rewrite via §0 as §1. Try §2"
 msgstr ""
-"**你**：把东西倒着改写来着，是怎么回事？\n"
+"**你**：反方向改写，是怎么写的来着？\n"
 "\n"
-"**司南**：§2，也就是你把§0写成§1。"
+"**司南**：§2，其中 §0 写作 §1。"
 
 #. §0: `rw [hₓ]`
 #. §1: `rw [← hₓ]`
 #: Game.Levels.Saturn.L01_Rewrite_equality
-#, fuzzy
 msgid "Try if §0 and §1 can be used as in Implis"
 msgstr ""
-"**你**: 所以也用 §0 和 §1？\n"
+"**你**：所以这里我也可以用 §0 和 §1？\n"
 "\n"
-"**司南**: 你就试试看呗。"
+"**司南**：你试试看？"
 
 #. §0: `ring`
 #: Game.Levels.Saturn.L02_Ring_add_pow_two
-#, fuzzy
 msgid "Conclusion Saturn L02: §0 could have been used as well"
 msgstr ""
-"回来了一个👍。\n"
+"你们收到了一个👍。\n"
 "\n"
-"**司南**：不过你其实也可以直接说§0。"
+"**司南**：不过你其实也可以直接用 §0。"
 
 #. §0: `binomi`
 #. §1: `add_pow_two`
 #. §2: `rw [add_pow_two]`
 #: Game.Levels.Saturn.L02_Ring_add_pow_two
-#, fuzzy
 msgid "Explain misfit of §0. Try §1 via §2"
 msgstr ""
-"**你**：我们这是在匿名学校数学家那儿吗？这不就是把项重新排列一下直接算出来"
-"嘛。要不我们把 §0 发回电台？\n"
+"**你**：我们这是进了匿名中学数学家互助会吗？这不就是把各项重新排列一下直接算"
+"出来嘛。要不我们回复 §0？\n"
 "\n"
 "**司南**：不，这个宇宙里这个等式当然叫 §1，因为在公式里先出现“+”，然后才"
 "是“^2”。所以你可以用 §2。之后左边就会和右边一模一样，你就搞定了。"
 
 #: Game.Levels.Saturn.L02_Ring_add_pow_two
-#, fuzzy
 msgid "Intro Saturn L02"
 msgstr "下一条无线电消息看起来有点不一样。"
 
 #: Game.Levels.Saturn.L03_mul_comm
-#, fuzzy
 msgid "Conclusion Saturn L03"
 msgstr "又一个👍。"
 
@@ -8807,7 +8762,6 @@ msgstr "又一个👍。"
 #. §6: `X 0`
 #. §7: `X 1`
 #: Game.Levels.Saturn.L03_mul_comm
-#, fuzzy
 msgid ""
 "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 "
 "and\n"
@@ -8816,7 +8770,7 @@ msgid ""
 msgstr ""
 "**你**：咦，§0 在这里到底是个什么怪东西？\n"
 "\n"
-"**司南**：§1 是一个“多元多项式”，变量用 §2 编号，系数在 §3 里。\n"
+"**司南**：§1 是一个“多元多项式”，变量依次用 §2 编号，系数在 §3 里。\n"
 "\n"
 "**你**：那 §4 是啥？\n"
 "\n"
@@ -8827,7 +8781,6 @@ msgstr ""
 "**司南**：没错。"
 
 #: Game.Levels.Saturn.L03_mul_comm
-#, fuzzy
 msgid "Intro Saturn L03"
 msgstr "又一条无线电消息。"
 
@@ -8835,7 +8788,6 @@ msgstr "又一条无线电消息。"
 #. §1: `ℕ`
 #. §2: `ring`
 #: Game.Levels.Saturn.L04_mul_assoc
-#, fuzzy
 msgid ""
 "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients "
 "in §1\n"
@@ -8843,32 +8795,29 @@ msgid ""
 msgstr ""
 "又一个👍。\n"
 "\n"
-"**你**: 但等等，这次系数不是在§0里吗！这根本不是个环，而且系数在§1里的多项式"
-"也不构成环。\n"
+"**你**：但等等，这次系数不是在§0里吗！这根本不是个环，而且系数在 §1 里的多项"
+"式也不构成环。\n"
 "\n"
-"**司南**: 也许吧。 但§2甚至对所谓的半环也管用。\n"
+"**司南**：也许吧。 但 §2 甚至对所谓的半环也管用。\n"
 "\n"
-"**你**: 哦哦 ….\n"
+"**你**：哦哦……\n"
 "\n"
-"那位匿名者想通过无线电问问你们：是准备好进入 End Game 了，还是更想再绕他的星"
-"球转几圈。\n"
+"那位匿名者想通过无线电问问你们：是准备好进入最终挑战了，还是更想再绕他的星球"
+"转几圈。\n"
 "\n"
-"“准备好了”司南用无线电回道。"
+"“准备好了。”司南用无线电回道。"
 
 #: Game.Levels.Saturn.L04_mul_assoc
-#, fuzzy
 msgid "Intro Saturn L04"
 msgstr "又一条无线电消息。"
 
 #. §0: `mul_assoc`
 #. §1: `ring`
 #: Game.Levels.Saturn.L04_mul_assoc
-#, fuzzy
 msgid "Try §0 or again §1"
-msgstr "**司南**：这里你可以用§0。  或者*再来一次*用§1 …"
+msgstr "**司南**：这里你可以用 §0。或者*再次*用 §1……"
 
 #: Game.Levels.Saturn.L05_Ring
-#, fuzzy
 msgid "Conclusion Saturn L05"
 msgstr ""
 "“通过了”，匿名电台员就这么简短地回了一句。\n"
