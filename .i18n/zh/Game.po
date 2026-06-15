@@ -6080,70 +6080,62 @@ msgstr ""
 "**司南**：这个我们不是也已经证明过了吗……只是我忘了保存。你还记得那个证明吗？"
 
 #: Game.Levels.Piazza
-#, fuzzy
 msgid "Intro Piazza"
 msgstr ""
 "看起来，你们降落在了一颗贸易星球上。到处都是商贩在叫卖他们的货物。你们好奇地"
-"打量着几个摊位。有些东西看起来熟悉、还能吃，很多则不行。但所有东西都被分门别"
-"类地整理得整整齐齐。有装蓝莓（？）的篮子，有装红色植物的箱子——让你们想起番茄"
-"——还有敞口的麻袋，里面是一些小小的粉色星星，等等。\n"
+"打量着几个摊位。有些东西看起来很眼熟、似乎也能吃；很多则不能吃。但所有东西都"
+"被分门别类地整理得整整齐齐。有装蓝莓（？）的篮子，有装红色植物的箱子——让你们"
+"想起番茄——还有敞口的麻袋，里面是一些小小的粉色星星，等等。\n"
 "\n"
-"几个孩子——或者说，几个个头很小的形式哲学家，总之他们的行为就像孩子——差点从你"
-"们脚边冲过去。司南往后一跳，这时他们注意到了你们，便停了下来。他们自我介绍说"
-"自己叫“Fin”“Ext”“Mem”“Set”和“Sub”，看起来很好奇。\n"
+"几个孩子——或者说，几个个头很小的形式哲学家，他们的行为就像孩子——差点从你们脚"
+"边冲过去。司南往后一跳，这时他们注意到了你们，便停了下来。他们自我介绍说自己"
+"叫“Fin”“Ext”“Mem”“Set”和“Sub”，看起来很好奇。\n"
 "\n"
-"**Fin**：  你们在这儿干什么？\n"
+"**Fin**：你们在这儿干什么？\n"
 "\n"
-"**你**：  呃……我们只是想随便逛逛。\n"
+"**你**：呃……我们只是想随便逛逛。\n"
 "\n"
 "**Set**：我们在这儿学点集合论。我们的父母把我们丢在这儿了。\n"
 "\n"
-"**Ext**：  算是培训用途吧。\n"
+"**Ext**：算是为了学习吧。\n"
 "\n"
-"**你**：  那，你们已经学到什么了吗？"
+"**你**：那，你们已经学到什么了吗？"
 
 #: Game.Levels.Piazza
-#, fuzzy
 msgid "Piazza"
 msgstr "广场"
 
 #: Game.Levels.Piazza.L01_Mem__Set
-#, fuzzy
 msgid "Conclusion Piazza L01"
 msgstr ""
-"**Set**：  所以你们也已经对集合有点了解了？\n"
+"**Set**： 所以你们也已经对集合有点了解了？\n"
 "\n"
-"**司南**：  嗯，*一点点* 吧。"
+"**司南**： 嗯，*一点点* 吧。"
 
 #: Game.Levels.Piazza.L01_Mem__Set
-#, fuzzy
 msgid "Intro Piazza L01"
-msgstr "**Fin**：  嗯，当然。  比如这个。"
+msgstr "**Fin**： 嗯，当然。 比如这个。"
 
 #: Game.Levels.Piazza.L01_Mem__Set
-#, fuzzy
 msgid "Try tauto"
 msgstr ""
-"**你**：  我理解得没错吧？\n"
+"**你**：我理解得没错吧？\n"
 "\n"
-"**司南**： 我猜是吧。看起来挺 *tauto* 逻辑的，不是吗？"
+"**司南**：我想是吧。看起来是个重言式，不是吗？试试 *tauto*。"
 
 #: Game.Levels.Piazza.L02_Simp
-#, fuzzy
 msgid "Intro Piazza L02"
-msgstr "**Mem**：  要不试试这个？"
+msgstr "**Mem**： 要不试试这个？"
 
 #. §0: `decide`
 #: Game.Levels.Piazza.L02_Simp
-#, fuzzy
 msgid "Remember to use §0 here"
-msgstr "**司南**：  想想 §0。"
+msgstr "**司南**：还记得 §0 吗？"
 
 #. §0: `simp`
 #: Game.Levels.Piazza.L02_Simp
-#, fuzzy
 msgid "The simplest method here is §0"
-msgstr "**司南**：  我觉得这里最简单的推进方式是用 §0。"
+msgstr "**司南**： 我觉得这里最简单的方法是用 §0。"
 
 #. §0: `simp`
 #. §1: `simp`
@@ -6155,7 +6147,6 @@ msgstr "**司南**：  我觉得这里最简单的推进方式是用 §0。"
 #. «{x}» ∈ «{B}» ∪ «{C}» ↔ «{x}» ∈ «{B}» ∨ «{x}» ∈ «{C}».
 #. ```
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#, fuzzy
 msgid ""
 "Explain §0: §1 looks for known equations and equivalences which would be "
 "currently\n"
@@ -6168,28 +6159,25 @@ msgid ""
 msgstr ""
 "**你**：§0 到底具体是干什么的？\n"
 "\n"
-"**司南**：§1 会去找那些大家都熟知的等式和等价式——通常被当作化简——而且正好能用"
-"上的。它找到的所有化简，§2 都会应用。刚才比如说就是这种形式的化简\n"
+"**司南**：§1 会去找当前适用的常见等式和等价命题——把它们当作化简规则。§2 会应"
+"用它找到的所有化简规则。刚才应用的化简就包括：\n"
 "§3\n"
 "以及\n"
 "§4\n"
 
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#, fuzzy
 msgid "Intro Piazza L03"
-msgstr "**Set**：  如果这太简单了——你们认识这个命题吗？"
+msgstr "**Set**： 如果刚才那题太简单了——你们熟悉这个命题吗？"
 
 #. §0: `tauto`
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#, fuzzy
 msgid "The rest can be dealt with §0"
-msgstr "**司南**：  剩下的肯定交给 §0 就行。"
+msgstr "**司南**： 剩下的交给 §0 就行。"
 
 #. §0: `simp`
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#, fuzzy
 msgid "Use §0 again"
-msgstr "**司南**：  然后再来一次 §0。"
+msgstr "**司南**：然后再用一次 §0。"
 
 #. §0: `A B C : Set ℕ`
 #. §1: `A`
@@ -6201,24 +6189,23 @@ msgstr "**司南**：  然后再来一次 §0。"
 #. §7: `A = B`
 #. §8: `x ∈ A ↔ x ∈ B`
 #: Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#, fuzzy
 msgid ""
 "§0 means that §1, §2 and §3 are subsets of §4. Therefore, §5\n"
 "can be interpreted as 'subset'. Use §6 to replace a set equation §7 with §8"
 msgstr ""
-"**你**:  §0在这里到底是啥意思？\n"
+"**你**：§0在这里到底是啥意思？\n"
 "\n"
-"**司南**:  就是说§1、§2和§3都是§4的*子集*。\n"
+"**司南**：就是说§1、§2和§3都是§4的*子集*。\n"
 "\n"
-"**你**:  §5的意思是“subset”？\n"
+"**你**：§5 的意思是“subset”？\n"
 "\n"
-"**司南**:  你要这么理解，也行。\n"
+"**司南**：你要这么理解，也行。\n"
 "\n"
-"**你**:  那我大概*知道*这个命题。但完全不知道在这儿该怎么证。\n"
+"**你**：那我大概*知道*这个命题。但完全不知道在这儿该怎么证。\n"
 "\n"
-"**Ext**:  我可以告诉你！有个魔法词，就跟我名字一模一样！！\n"
+"**Ext**：我可以告诉你！有个魔法词，就跟我名字一模一样！！\n"
 "\n"
-"**司南**:  对了——§6会把一个集合相等式§7替换成§8。"
+"**司南**：对了——§6会把集合等式 §7 替换成等价命题 §8。"
 
 #. §0: `univ`
 #. §1: `univ`
@@ -6231,45 +6218,42 @@ msgstr ""
 #. §8: `5 ∈ univ`
 #. §9: `rw [eq_univ_iff_forall]`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid ""
 "Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\n"
 "is subset of §4. So, as 5 is a natural number (§5) and it holds that §6, §7\n"
 "is also in this set i.e. §8. Try §9"
 msgstr ""
-"**你**：  那 §0 是什么？\n"
+"**你**：那 §0 是什么？\n"
 "\n"
-"**司南**：  §1 是最大的子集：所有自然数。\n"
+"**司南**：§1 是最大的子集：所有自然数。\n"
 "\n"
-"**你**：  所以就是 §2？\n"
+"**你**：所以就是 §2？\n"
 "\n"
-"**司南**：  也算，但又不完全是。§3 是“整个 ℕ”，但要把它理解成 §4 的一个*子集"
+"**司南**：也算，但又不完全是。§3 是“整个 ℕ”，但要把它理解成 §4 的一个*子集"
 "*。\n"
 "\n"
 "Ext、Fin、Set、Sub 和 Mem 都瞪大眼看着你们。\n"
 "\n"
-"**Set**：  这怎么可能搞混嘛！这里*是*一颗*蓝莓*，而它*在*这个*装着所有蓝莓的"
-"篮子*里。当然它不可能“在蓝莓里”。\n"
+"**Set**：这怎么可能搞混嘛！这里*是*一颗*蓝莓*，而它*在*这个*装着所有蓝莓的篮"
+"子*里。当然它不可能“在蓝莓里”。\n"
 "\n"
 "孩子们笑了。\n"
 "\n"
-"**Mem**：  同样地，5 *是*一个自然数（§5），而它属于*所有自然数的集合 §6*"
+"**Mem**：同样地，5 *是*一个自然数（§5），而它属于*所有自然数的集合 §6*"
 "（§8）。这有什么好困惑的？\n"
 "\n"
-"**司南**（*对你*）：  别为这个纠结了。我建议你先从 §9 开始，这样你就能清楚看"
-"到到底在问什么。"
+"**司南**（*对你*）：别为这个纠结了。我建议你先从 §9 开始，这样你就能清楚看到"
+"到底在问什么。"
 
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid "Intro Piazza L04"
-msgstr "**Sub**： 我也学到点东西："
+msgstr "**Sub**：我也学到点东西："
 
 #. §0: `by_cases h : Even «{n}»`
 #. §1: `not_odd_iff_even`
 #. §2: `not_even_iff_odd`
 #. §3: `¬Odd ««{n}»» ∨ Odd ««{n}»»`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid ""
 "One option: §0.\n"
 "But in any case, will need §1\n"
@@ -6277,25 +6261,23 @@ msgid ""
 "so might as well start with it\n"
 "and obtain tautology §3."
 msgstr ""
-"**你**: 那现在§0？\n"
+"**你**：那现在用 §0 进行分类讨论？\n"
 "\n"
-"**司南**: 对，那样就能到目标。\n"
-"不过不管怎样，你迟早大概都得用§1（或者§2）。  \n"
-"你也可以干脆先用它，然后用§3就会得到一个重言式。"
+"**司南**：对，那样也能完成目标。\n"
+"不过不管怎样，你迟早大概都得用 §1（或者 §2）。  \n"
+"不如直接从它开始，这样目标就会变成重言式 §3。"
 
 #. §0: `simp`
 #. §1: `simp [eq_univ_iff_forall]`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid "Try via §0 or directly §1"
-msgstr "**司南**：然后现在 §0。你甚至可以直接用 §1。"
+msgstr "**司南**：现在用 §0。实际上你可以直接用 §1。"
 
 #. §0: `tauto`
 #: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#, fuzzy
 msgid "[Piazza] §0"
 msgstr ""
-"**你**：所以现在就直接 §0？\n"
+"**你**：所以现在直接用 §0？\n"
 "\n"
 "**司南**：试试！"
 
@@ -6303,101 +6285,86 @@ msgstr ""
 #. §1: `rw [eq_empty_iff_forall_notMem]`
 #. §2: `simp [eq_empty_iff_forall_notMem]`
 #: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
-#, fuzzy
 msgid ""
 "Having §0 you could either start with §1 or\n"
 "§2"
 msgstr ""
-"**你**: 不，§0我知道。\n"
+"**你**：不，§0 我认识。\n"
 "\n"
-"**司南**: 为了百分百确认你真的理解对了，你可以在这里从§1开始。或者如果你想快"
-"点搞定，就用§2。"
+"**司南**：为了确认它确实和你理解的一样，你可以在这里从 §1 开始。或者如果你想"
+"快点搞定，也可以用 §2。"
 
 #: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
-#, fuzzy
 msgid "Intro Piazza L05"
-msgstr "**Mem**：你们也觉得这个陈述又让人困惑吗？"
+msgstr "**Mem**：你们不会也觉得这个命题很人困惑吗？"
 
 #. §0: `ext`
 #: Game.Levels.Piazza.L06_Ext2__univ2
-#, fuzzy
 msgid "Conclusion Piazza L06: Explain that §0 means extensionality"
 msgstr ""
-"**你** *(对司南)*:  ext为什么叫ext啊？\n"
+"**你** *(对司南)*：ext为什么叫ext啊？\n"
 "\n"
-"**司南**:  我哪知道那小子名字怎么来的？？\n"
+"**司南**：我哪知道那小子名字怎么来的？？\n"
 "\n"
-"**你**: 不，我是说这里这个§0！\n"
+"**你**：不，我是说这里这个 §0！\n"
 "\n"
-"**司南**: 哦。逻辑学家把“两个集合当且仅当拥有同样的元素时相等”这个原则叫做*外"
-"延性*（extensionality）。形式哲学家大概就把它缩成了*ext*，不然太长了。"
+"**司南**：哦。逻辑学家把“两个集合当且仅当拥有同样的元素时相等”这个原则叫做*外"
+"延性*（extensionality）。形式哲学家大概觉得太长了，就把它缩写成了*ext*。"
 
 #: Game.Levels.Piazza.L06_Ext2__univ2
-#, fuzzy
 msgid "Intro Piazza L06"
 msgstr "**Ext**：我喜欢*这个*等式。"
 
 #. §0: `simp`
 #: Game.Levels.Piazza.L06_Ext2__univ2
-#, fuzzy
 msgid "Perform §0 again"
-msgstr "**司南**：然后现在当然又是 §0。"
+msgstr "**司南**：现在当然还是用 §0。"
 
 #. §0: `ext`
 #: Game.Levels.Piazza.L06_Ext2__univ2
-#, fuzzy
 msgid "[Hint cqvs] Try §0"
-msgstr "**司南**：这次你就再直接用 §0 就行。"
+msgstr "**司南**：这次你直接再用一次 §0 就行。"
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Intro Piazza L07"
 msgstr "**Set**：我也喜欢这个等价。"
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Reminder of set equality"
 msgstr ""
 "**你**：嗯，我觉得我以前就是这么学的——两个集合相等，当且仅当它们互相包含。"
 
 #. §0: `constructor`
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Start here by trying §0"
 msgstr "**司南**：我也说不准，但我会从 §0 开始。"
 
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Try ext, tauto"
 msgstr "**司南**：从这里开始，应该又能套用刚才那个套路了。"
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #: Game.Levels.Piazza.L07_antisymm_iff
-#, fuzzy
 msgid "Try replacing §0 by §1"
 msgstr "**司南**：把 §0 换成 §1。"
 
 #: Game.Levels.Piazza.L08_subset_iff
-#, fuzzy
 msgid "Intro Piazza L08"
-msgstr "**Sub**: 你说得对。我们应该多问问访客一些关于包含关系的事。"
+msgstr "**Sub**：你说得对。我们应该再多考考这些访客对包含关系的理解。"
 
 #. §0: `tauto`
 #. §1: `rfl`
 #: Game.Levels.Piazza.L08_subset_iff
-#, fuzzy
 msgid "Try §0 or directly §1"
 msgstr ""
-"**司南**: 这不就是定义嘛！\n"
+"**司南**：这不就是定义嘛！\n"
 "\n"
-"**司南** *(对你说)*: 试试§0吧。或者干脆§1。"
+"**司南** *(对你说)*：试试 §0 吧。或者干脆 §1。"
 
 #: Game.Levels.Piazza.L09_subset_iff2
-#, fuzzy
 msgid "Intro Piazza L09"
-msgstr ""
-"**Sub**: 哦，是吗。就一个定义！那要是你们接下来得用这种包含关系来算呢？"
+msgstr "**Sub**：哦，是吗。就一个定义！那要是接下来让你们处理这种包含关系呢？"
 
 #. §0: `ext`
 #. §1: `intro a`
@@ -6405,54 +6372,50 @@ msgstr ""
 #. §3: `C`
 #. §4: `rw [subset_iff] at *`
 #: Game.Levels.Piazza.L09_subset_iff2
-#, fuzzy
 msgid ""
 "Using §0 would be too complicated. It is simpler to use §1 to introduce\n"
 "an arbitrary element from §2 and show that it is also in §3. Firstly, write "
 "all inclusions\n"
 "exolicitly with §4"
 msgstr ""
-"**你**: 我能不能在这里也用§0来论证一下？\n"
+"**你**：我能不能在这里也用 §0 来论证？\n"
 "\n"
-"**司南**: 不，用更简单的。用§1先从§2里随便取一个元素，然后证明它在§3里。\n"
+"**司南**：不，有更简单的办法。先用 §1 从 §2 里随便取一个元素，然后证明它在 "
+"§3 里。\n"
 "\n"
-"不过也许你还是先用§4把所有包含关系都展开写一遍，这样你就能看出来发生了什么。"
+"不过也许你还是先用 §4 把所有包含关系都展开写一遍，这样你就能看出来发生了什"
+"么。"
 
 #: Game.Levels.Piazza.L10
-#, fuzzy
 msgid "Conclusion Piazza L10"
-msgstr "**Mem**: 哇塞，你们学得也太快了吧！"
+msgstr "**Mem**：哇塞，你们学得也太快了吧！"
 
 #: Game.Levels.Piazza.L10
-#, fuzzy
 msgid "Intro Piazza L10"
-msgstr "**Mem**: 也让我再问一个问题！"
+msgstr "**Mem**：也让我再问一个问题！"
 
 #. §0: `intro`
 #: Game.Levels.Piazza.L10
-#, fuzzy
 msgid "Start with §0"
-msgstr "**司南**: 我会再从§0开始。"
+msgstr "**司南**：我会再从 §0 开始。"
 
 #. §0: `intro`
 #. §1: `SECOND`
 #: Game.Levels.Piazza.L10
-#, fuzzy
 msgid "Try §0 again §1"
-msgstr "**司南**: 再来一个§0！"
+msgstr "**司南**：再来一个 §0！"
 
 #: Game.Levels.Piazza.L11_erase
-#, fuzzy
 msgid "Intro Piazza L11"
 msgstr ""
-"**Mem**:  喂，Fin，你醒着吗，你在干嘛呢？\n"
+"**Mem**：喂，Fin，你在干什么呢？\n"
 "\n"
-"Fin是这群人里最小的，到现在一句话都没说。可现在他显然刚从旁边的摊位偷了一颗开"
-"心果。\n"
+"Fin是这群人里最小的，到现在一句话都没说。可现在，他显然刚从旁边的摊位顺了一颗"
+"开心果。\n"
 "\n"
-"**Fin**:  不就是个小练习嘛。\n"
+"**Fin**：不就是个小练习嘛。\n"
 "\n"
-"**Mem**: 什么练习？\n"
+"**Mem**：什么练习？\n"
 "\n"
 "Fin是这么解释的。"
 
@@ -6463,49 +6426,42 @@ msgstr ""
 #. §4: `A`
 #. §5: `a`
 #: Game.Levels.Piazza.L11_erase
-#, fuzzy
 msgid ""
 "§0 here means that §1 belongs to the finite subsets of ℕ.\n"
 "Left it states §2 without §3 and on the right it also says §4 without §5"
 msgstr ""
-"**你**:  那这里的§0到底是什么意思？\n"
+"**你**：那这里的 §0 到底是什么意思？\n"
 "\n"
-"**司南**:  这表示§1属于ℕ的*有限*子集。不过对这个问题其实没区别。左边是没有§3"
-"的§2，右边也是没有§5的§4。"
+"**司南**：这表示 §1 是 ℕ 的*有限*子集。不过对这个问题其实没区别。左边是没有 "
+"§3 的 §2，右边也是没有 §5 的 §4。"
 
 #: Game.Levels.Piazza.L12_insert
-#, fuzzy
 msgid "Intro Piazza L12"
-msgstr "**Fin**: 没错。然后我把我的开心果再放回去。"
+msgstr "**Fin**：没错。然后我把我的开心果再放回去。"
 
 #: Game.Levels.Piazza.L13_insert_erase
-#, fuzzy
 msgid "Conclusion Piazza L13"
 msgstr ""
 "孩子们笑了起来，围着你们俩站成一圈，用一种你们都听不懂的语言唱起歌来。然后他"
 "们跑开了。\n"
 "\n"
-"**司南**:  我觉得我们可以继续飞了。"
+"**司南**：我觉得我们可以继续我们的旅途了。"
 
 #: Game.Levels.Piazza.L13_insert_erase
-#, fuzzy
 msgid "Intro Piazza L13"
-msgstr "**Fin**: 那么，你们觉得——现在所有开心果都又回家了吗？"
+msgstr "**Fin**：那么，你们觉得——现在所有开心果都回家了吗？"
 
 #. §0: `«{b}» = a`
 #: Game.Levels.Piazza.L13_insert_erase
-#, fuzzy
 msgid "Try proof by cases, if §0"
-msgstr "**Fin**: 做个分类讨论，看§0成不成立。"
+msgstr "**Fin**：做个分类讨论，看 §0 成不成立。"
 
 #. §0: `constructor`
 #: Game.Levels.Piazza.L13_insert_erase
-#, fuzzy
 msgid "[Piazza.L13] Hint 1: You can begin with §0"
-msgstr "**Fin**: 嗯，可以这么搞。"
+msgstr "**Fin**：嗯，可以这么搞。"
 
 #: Game.Levels.Prado
-#, fuzzy
 msgid "Intro Prado"
 msgstr ""
 "你们降落在一颗冰冻星球上，就在一座冰宫旁边。你感觉自己好像以前见过这座宫殿，"
@@ -6513,86 +6469,80 @@ msgstr ""
 "\n"
 "在入口处，一个长得像企鹅的生物迎接了你们。\n"
 "\n"
-"**吉诺**: 欢迎来到普拉多！\n"
-"我可太高兴你们来了。你们是第一批访客！ \n"
+"**吉诺**：欢迎来到普拉多！\n"
+"我可太高兴你们来了。你们是第一批访客！\n"
 "不过嘛，我们也才刚开馆。\n"
 "快进来，快进来！\n"
 "你们就是大家都在说的那些地球人，对吧？\n"
 "\n"
-"**你**:  呃，是的。那你是……？\n"
+"**你**：呃，是的。那你是……？\n"
 "\n"
-"**吉诺**:  吉诺，普拉多的馆长——PRimzahlen-ADOrationsmuseums（素数崇拜博物"
+"**吉诺**：我是吉诺，普拉多的馆长——PRime ADOration Museum（也就是素数崇拜博物"
 "馆）！来来来！\n"
 "\n"
 "吉诺带你们走上入口的台阶，穿过大门进入一座巨大的大厅。大厅中央漂浮着一个小小"
 "的底座，上面放着两颗弹珠。\n"
 "\n"
-"**吉诺**: 看，看！我们的第一件展品！素数——二！\n"
+"**吉诺**：看，看！我们的第一件展品！素数——二！\n"
 "\n"
 "你们俩都有点懵。吉诺挑了挑眉。\n"
 "\n"
-"**吉诺**: 你们总该知道怎么证明它是个素数吧？"
+"**吉诺**：你们应该知道怎么证明它是素数吧？"
 
 #: Game.Levels.Prado
-#, fuzzy
 msgid "Prado"
 msgstr "普拉多"
 
 #. §0: `2`
 #. §1: `decide`
 #: Game.Levels.Prado.L01_prime_two
-#, fuzzy
 msgid ""
 "Because §0 is a concrete data and there is a algorithm to decide if a number "
 "is prime you can use §1"
 msgstr ""
-"**司南** *(低声)*:  这太简单了。因为§0是一个具体的数，而且有算法能判定一个数"
-"是不是素数，你就直接用§1就行！"
+"**司南** *(低声)*：这太简单了。因为 §0 是一个具体的数，而且有算法能判定一个数"
+"是不是素数，你就直接用 §1 就行！"
 
 #. §0: `2`
 #: Game.Levels.Prado.L01_prime_two
-#, fuzzy
 msgid "Conclusion Prado L01: Present §0 as prime number"
 msgstr ""
-"**你**:  的确。我们知道。那还有什么展品？\n"
+"**你**：的确。我们知道。那你们还有什么展品？\n"
 "\n"
-"吉诺有点尴尬。\n"
+"吉诺显得有些尴尬。\n"
 "\n"
-"**吉诺**:  嗯，就像我说的，我们才刚开馆。我们决定先只展出最最漂亮的素数：偶"
-"数。现在§0是我们唯一的展品。不过我们正加班加点，想为我们的常设展再找到更多偶"
-"素数。"
+"**吉诺**：嗯，正如我刚才所说，我们才刚开馆。我们决定先只展出最最漂亮的素数："
+"偶数。现在§0是我们唯一的展品。不过我们正加班加点，想为我们的常设展再找到更多"
+"偶素数。"
 
 #: Game.Levels.Prado.L01_prime_two
-#, fuzzy
 msgid "Intro Prado L01"
 msgstr ""
-"**司南**: 对对。我们知道。\n"
+"**司南**：对对。我们知道。\n"
 "\n"
 "他飞快地把这个陈述用Lean语写出来，递到你面前。"
 
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid "Conclusion Prado L02"
 msgstr ""
-"**吉诺**：  你们在那儿嘀咕什么呢？\n"
+"**吉诺**：你们在那儿嘀咕什么呢？\n"
 "\n"
-"**你**：  啊，没什么。司南只是想提醒我，素数到底是什么。\n"
+"**你**：啊，没什么。司南只是想提醒我，素数到底是什么。\n"
 "\n"
 "吉诺看了看你们的证明。\n"
 "\n"
-"**吉诺**：不错，不错。  不过我们还是再往前走一点吧。博物馆虽然还空着，但已经"
-"完工了。  而且真的做得很棒。  来，看这边！"
+"**吉诺**：不错，不错。不过我们还是再往前走一点吧。博物馆虽然还空着，但已经完"
+"工了。而且真的做得很棒。来，看这边！"
 
 #. §0: `obtain`
 #. §1: `use`
 #. §2: `obtain ⟨x ,hx⟩ := _`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid "Continue with §0 and §1. Fristly diect assumptions with §2"
 msgstr ""
-"**你**:  那我现在用§0和§1继续？\n"
+"**你**：那我现在继续用 §0 和 §1 来做证明？\n"
 "\n"
-"**司南**: 对。接下来你把带§2之类的那些假设拆开。"
+"**司南**：对。接下来用 §2 之类的写法把假设拆开。"
 
 #. §0: `2`
 #. §1: `a`
@@ -6603,35 +6553,32 @@ msgstr ""
 #. §6: `\\|`
 #. §7: `\\dvd`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid ""
 "Intro Prado L02: Prove that §0 is only even prime by using the expression "
 "„§1 divides §2“.\n"
 "„§3 divides §4“ is written as §5, where the vertical bar can be either "
 "written as §6 or §7"
 msgstr ""
-"**你** *(低声)*:  司南，你觉得我们该告诉他吗？\n"
+"**你** *(低声)*：司南，你觉得我们该告诉他吗？\n"
 "\n"
-"**司南**:  说§0是唯一的偶素数？只要我们不给他拿出证明，他是不会相信的。\n"
+"**司南**：说 §0 是唯一的偶素数？只要我们不给他拿出证明，他是不会相信的。\n"
 "\n"
-"**你**:  那你不觉得我们能证明给他看吗？你不是懂这门语言嘛。我们试试。比如"
-"说，“§1整除§2”我该怎么写？\n"
+"**你**：那你不觉得我们能证明给他看吗？你不是懂这门语言嘛。我们试试。比如"
+"说，“§1 整除 §2”我该怎么写？\n"
 "\n"
-"**司南**:  行吧。那“§3整除§4”你写成§5，其中那根竖线你得写成§6或者§7。比如先试"
-"试这里这道问题。"
+"**司南**：行吧。那“§3 整除 §4”你写成 §5，其中那根竖线你得写成 §6 或者 §7。先"
+"试试这里这道问题。"
 
 #. §0: `ring`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid "Rewrite so you can use §0"
-msgstr "**司南**: 稍微改写一下，肯定就能用上§0。"
+msgstr "**司南**：稍微改写一下，肯定就能用上 §0。"
 
 #. §0: `use _`
 #. §1: `«{b}» + «{c}» = «{a}» * _`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid "Try §0 such that §1"
-msgstr "**司南**:  现在你得用§0给出一个数，使得§1成立。"
+msgstr "**司南**：现在你只需要给出一个合适的值。试试 §0，使得 §1 成立。"
 
 #. §0: `a ∣ b`
 #. §1: `∃ k, b = a * k`
@@ -6640,7 +6587,6 @@ msgstr "**司南**:  现在你得用§0给出一个数，使得§1成立。"
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid ""
 "§0 bedeutet §1.\n"
 "\n"
@@ -6661,40 +6607,35 @@ msgstr ""
 #. rw [dvd_iff_exists_eq_mul_left] at *
 #. ```
 #: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#, fuzzy
 msgid ""
 "§0 is defined as §1. State is explicitly with\n"
 "§2\n"
 msgstr ""
-"**司南**: §0当然被定义为§1。最好一开始你就把它到处都明确写出来：\n"
+"**司南**：§0 当然被定义为 §1。最好一开始你就把它们全都明确展开：\n"
 "§2\n"
 
 #. §0: `rw [dvd_iff_exists_eq_mul_left]`
 #: Game.Levels.Prado.L03_even_iff_two_dvd
-#, fuzzy
 msgid "Begin with §0"
-msgstr "**司南**:  你再从§0开始一遍嘛！"
+msgstr "**司南**：要不再从 §0 开始？"
 
 #: Game.Levels.Prado.L03_even_iff_two_dvd
-#, fuzzy
 msgid "Intro Prado L03"
-msgstr "当你们跟着吉诺穿过博物馆时，司南又给了你更多问题。"
+msgstr "你们跟着吉诺参观博物馆时，司南又给了你出了几道题。"
 
 #: Game.Levels.Prado.L04_99
-#, fuzzy
 msgid "Intro Prado L04"
 msgstr ""
-"吉诺这会儿看起来有点烦，因为你们压根没把注意力放在他超棒的博物馆上。\n"
+"吉诺这会儿似乎有些不悦，因为你们压根没把注意力放在他超棒的博物馆上。\n"
 "他觉得自己被无视了。\n"
 "为了吸引你们的注意，他给了你们下面这个问题。"
 
 #: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
-#, fuzzy
 msgid "Intro Prado L05"
 msgstr ""
-"**你** *(对司南)*:  再给我点更有意思的嘛！\n"
+"**你** *(对司南)*：来点更有意思的问题！\n"
 "\n"
-"**司南**:  这个怎么样？"
+"**司南**：这个怎么样？"
 
 #. §0: `by_contra`
 #. §1: `lt_of_mul_lt_mul_left`
@@ -6702,162 +6643,146 @@ msgstr ""
 #. §3: `a * b < a * c`
 #. §4: `b < c`
 #: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
-#, fuzzy
 msgid ""
 "Use §0 and the lemma §1.\n"
 "For the latter, given §2 it concludes from the assumption §3 that §4"
 msgstr ""
 "**你**: §0？\n"
 "\n"
-"**司南**:  这可能行得通。而且你大概会需要引理§1。对§2，它会从假设§3推出结论"
-"§4。"
+"**司南**：这可能行得通。而且你大概会需要引理 §1。对于 §2，它会从假设 §3 推出"
+"结论 §4。"
 
 #. §0: `2`
 #. §1: `1`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid ""
 "A prime number is a natural number greater or equal to §0, which is only "
 "divisible by §1\n"
 "and itself"
 msgstr ""
-"**你**：  啊哈。所以素数就是一个大于等于 §0 的自然数，只能被 §1 和它自己整"
-"除。听起来很熟悉。"
+"**你**：啊哈。所以素数就是一个大于等于 §0 的自然数，只能被 §1 和它自己整除。"
+"听起来很熟悉。"
 
 #. §0: `«{hp}»`
 #. §1: `«{a}»`
 #. §2: `have hp' := «{hp}» «{a}»`
 #. §3: `specialize «{hp}» «{a}»`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid "Apply §0 onto §1. Try either §2 or §3"
 msgstr ""
 "**你**：我现在肯定要把 §0 用到 §1 上，对吧？\n"
 "\n"
-"**司南**：  那你就说 §2。  或者更优雅一点：§3。"
+"**司南**：那你就说 §2。或者更优雅一点：§3。"
 
 #. §0: `unfold`
 #. §1: `Prime`
 #. §2: `rw [prime_def] at hp`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid "Do not §0 §1. Use §2"
 msgstr ""
-"**司南**：  不，还是别。\n"
-"  你不该把 §1 §0！——那只会让一切更难。\n"
-"  还是用我说的 §2 吧。"
+"**司南**：不，还是别。\n"
+"你不该把 §1 §0！——那只会让一切更难。\n"
+"还是用我说的 §2 吧。"
 
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid "Intro Prado L06"
 msgstr ""
-"**你**：  好。那你现在能给我演示一下怎么用素数做推理吗？\n"
+"**你**：好。那你现在能给我演示一下怎么用素数做推理吗？\n"
 "\n"
-"**司南**：让我看看我有没有一题素数的问题存货……也许就这题？"
+"**司南**：让我看看手头有没有关于素数的推理题……也许就这题？"
 
 #. §0: `linarith`
 #. §1: `«{a}» = 1`
 #. §2: `2 ≤ «{a}»`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid "Try §0 to show contradiction between §1 and §2"
-msgstr "**司南**：  试试 §0。  这应该能揭露由 §1 和 §2 导致的矛盾。"
+msgstr "**司南**：试试 §0。这应该能找出 §1 和 §2 之间的矛盾。"
 
 #. §0: `(hp : Prime p)`
 #. §1: `p`
 #. §2: `rw [prime_def] at hp`
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#, fuzzy
 msgid "§0 is the assumption that §1 is prime. Use §2"
 msgstr ""
-"**司南**：这里 §0 当然就是假设 §1 是个素数。要用这个假设来做事，你最好总是用 "
-"§2。"
+"**司南**：这里 §0 当然就是假设 §1 是个素数。要用这个假设来做证明，你最好总是"
+"用 §2。"
 
 #: Game.Levels.Prado.L07_dvd_mul
-#, fuzzy
 msgid "Conclusion Prado L07"
-msgstr "**你**：你出的真的是非常简单的问题。"
+msgstr "**你**：你出的题也太简单了吧。"
 
 #. §0: `Prime.dvd_mul`
 #: Game.Levels.Prado.L07_dvd_mul
-#, fuzzy
 msgid "Intro Prado L07: Use lemma §0"
 msgstr ""
-"**司南**：  这里还有一道小素数问题。引理 §0 说：一个素数整除一个乘积，当且仅"
-"当它整除其中一个因子。你在这里把它用上就行。"
+"**司南**：这里还有一道小素数问题。引理 §0 说：一个素数整除一个乘积，当且仅当"
+"它整除其中一个因子。你在这里把它用上就行。"
 
 #. §0: `exists_prime_and_dvd`
 #: Game.Levels.Prado.L08_exists_prime_and_dvd
-#, fuzzy
 msgid "Apply §0 to prove existence of prime factor"
 msgstr ""
-"**你** *(对司南)*:  你有想法这里的素因子可能是什么吗？\n"
+"**你** *(对司南)*：你有想法这里的素因子可能是什么吗？\n"
 "\n"
-"**司南**: 没。\n"
+"**司南**：没。\n"
 "\n"
 "司南想了想。\n"
 "\n"
-"**司南**:  不过也无所谓。他又没问某个具体的因子，只问是否存在某个素因子。但那"
-"太显然了。让我想想……我觉得你这里需要的就是§0这个断言。"
+"**司南**：不过也无所谓。他又没问某个具体的因子，只问是否存在某个素因子。但那"
+"太显然了。让我想想……我觉得你这里需要的就是 §0 这个命题。"
 
 #: Game.Levels.Prado.L08_exists_prime_and_dvd
-#, fuzzy
 msgid "Conclusion Prado L08"
 msgstr ""
-"**吉诺**: 好吧，我们继续走。你们看，这楼梯是不是很棒？我们上去！\n"
+"**吉诺**：好吧，我们继续走。你们看，这楼梯是不是很棒？我们上去！\n"
 "\n"
-"**你** *(对司南)*: 我们现在试着把要给吉诺看的那个断言表述出来吧。恰好有一个"
+"**你** *(对司南)*：我们现在试着把要给吉诺看的那个命题表述出来吧。恰好有一个"
 "偶……\n"
 "\n"
-"**司南**:  停！“恰好一个”我们还没学过。"
+"**司南**：停！“恰好一个”我们还没学过。"
 
 #: Game.Levels.Prado.L08_exists_prime_and_dvd
-#, fuzzy
 msgid "Intro Prado L08"
 msgstr ""
-"为了让吉诺保持好心情，司南小心翼翼地问他要不要也给你们出一道问题。\n"
-"他给了你们一个他之前那道题的变体。"
+"为了让吉诺保持好心情，司南小心翼翼地问他要不要也给你们出一道题。\n"
+"于是，他给了你们一道先前问题的变体。"
 
 #. §0: `use`
 #. §1: `∃!`
 #. §2: `simp`
 #: Game.Levels.Prado.L09_ExistsUnique
-#, fuzzy
 msgid ""
 "Applying §0 onto §1 is usually badly readable. Try §2 directly afterwards"
 msgstr ""
-"**司南**:  其实§0用在§1上总会弄出一点混乱。最好每次立刻再跟一个§2，这样就又能"
-"读了。"
+"**司南**：其实 §0 用在 §1 上总会弄得有点乱。最好每次立刻再跟一个 §2，这样就清"
+"楚多了。"
 
 #: Game.Levels.Prado.L09_ExistsUnique
-#, fuzzy
 msgid "Intro Prado L09"
-msgstr "**司南**：  但这也没那么难。来，你看看这道问题。"
+msgstr "**司南**：但这也没那么难。来，你看看这道问题。"
 
 #. §0: `«{w}»`
 #. §1: `a * «{w}» = b`
 #. §2: `«{w}»`
 #: Game.Levels.Prado.L09_ExistsUnique
-#, fuzzy
 msgid ""
 "Show two statements: (1) §0 satisfies §1 and (2) §2 is the only element "
 "with\n"
 "such a property"
 msgstr ""
-"**司南**: 如我所说，你现在要证明两个断言：(1) §0满足§1，(2) §2是唯一具有这个"
-"性质的元素。"
+"**司南**：如我所说，你现在要证明两个命题：(1) §0 满足 §1，(2) §2 是唯一具有这"
+"个性质的元素。"
 
 #. §0: `mul_eq_mul_left_iff`
 #. §1: ```
 #. a * b = a * c ↔ b = c ∨ a = 0
 #. ```
 #: Game.Levels.Prado.L09_ExistsUnique
-#, fuzzy
 msgid ""
 "Try §0 which states\n"
 "§1\n"
 msgstr ""
-"**司南**：  太好了。现在说唯一性。我觉得引理 §0 可能有用：\n"
+"**司南**：太好了。现在说唯一性。我觉得引理 §0 可能有用：\n"
 "\n"
 "§1\n"
 
@@ -6872,43 +6797,40 @@ msgstr ""
 #. §8: `m`
 #. §9: `use _`
 #: Game.Levels.Prado.L09_ExistsUnique
-#, fuzzy
 msgid ""
 "§0 is notation for 'there exists exactly one §1 for which §2 holds'.\n"
 "It is defined as 'There exists a §3 , s.t., §4 holds, and each other element "
 "§5, for which\n"
 "§6 holds, is equal to §7'. Try finding an appropriate §8 and apply §9"
 msgstr ""
-"**你**：我懂了——§0就是“恰好存在一个§1使得§2成立”的记号。\n"
+"**你**：我懂了——§0 就是“恰好存在一个 §1 使得 §2 成立”的记号。\n"
 "\n"
-"**司南**：没错。而它的定义很简单：“存在一个§3，使得(1) §4成立，并且(2) 任意其"
-"他元素§5，只要§6成立，就已经等于§7。”所以第一步就是找一个合适的§8，然后用§9。"
+"**司南**：没错。而它的定义很简单：“存在一个 §3，使得（1） §4 成立，并且（2） "
+"任意其他元素 §5，只要 §6 成立，就已经等于 §7。”所以第一步就是找一个合适的 "
+"§8，然后用 §9。"
 
 #: Game.Levels.Prado.L10_EvenPrime
-#, fuzzy
 msgid "Conclusion Prado L10"
 msgstr ""
 "**你**：太棒啦！那现在谁去告诉他？\n"
 "\n"
-"**司南**： 也许我们还是别说了。我感觉他本来就最喜欢他的博物馆空空如也的样"
+"**司南**：也许我们还是别说了。我感觉他本来就最喜欢他的博物馆空空如也的样"
 "子。\n"
 "\n"
-"于是你们礼貌地感谢了这次讲解，表示对这里的冰雕建筑技艺深感震撼，然后继续飞走"
-"了。"
+"于是你们礼貌地感谢了这次讲解，表示对这里的冰雕建筑技艺深感震撼，然后继续踏上"
+"旅程。"
 
 #: Game.Levels.Prado.L10_EvenPrime
-#, fuzzy
 msgid "Intro Prado L10"
 msgstr ""
 "这时你们已经到了屋顶露台。不过吉诺也已经放弃解释所有建筑细节了。风景还不"
 "错。\n"
 "\n"
-"**司南** *(对你)*:  我觉得差不多了。"
+"**司南** *(对你)*：我觉得差不多了。"
 
 #: Game.Levels.Prado.L10_EvenPrime
-#, fuzzy
 msgid "Remind former proof"
-msgstr "**司南**：再仔细过一遍我们已经证明过的那些陈述。"
+msgstr "**司南**：再仔细过一遍我们已经证明过的那些命题。"
 
 #: Game.Levels.Quantus
 #, fuzzy
