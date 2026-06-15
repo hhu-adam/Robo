@@ -3395,89 +3395,81 @@ msgstr ""
 "连接。不过没关系。你们一定会安全抵达 Zulip。]"
 
 #: Game.Levels.Epo
-#, fuzzy
 msgid "Epo"
 msgstr "满射"
 
 #: Game.Levels.Epo
-#, fuzzy
 msgid "Intro Epo"
 msgstr ""
 "在你们正接近的那颗星球上，可以看到两栋建筑：一栋狭长的高楼，另一栋楼层稍微少"
 "一些。两栋楼之间用一种奇怪的管道系统连接着。在高楼顶上你们能看到一个降落平"
 "台。你们就朝那里飞去。\n"
 "\n"
-"你们一下来，就有一位形式哲学家朝你们跑来。他疯狂地挥舞着双臂。\n"
+"你们一下飞船，就有一位形式哲学家朝你们跑来。他疯狂地挥舞着双臂。\n"
 "\n"
-"**门卫**: 不不不，别这样，你们要去下面，那儿有人等着呢。\n"
+"**门卫**：不不，不是这里，你们要去下面那边，那里有人等着你们呢。\n"
 "\n"
 "他把手臂放了下来。\n"
 "\n"
-"**门卫**: 嗯，好吧，随便啦。先说声你好！我在这儿只是个看门的。你们会被一个很"
-"大的代表团接待，不过当然是在对面那栋办公楼里。这儿只是我们的睡眠塔。来，我带"
+"**门卫**：嗯，好吧，随便啦。先说声你好！我在这儿只是个看门的。你们会被一个很"
+"大的代表团接待，不过当然是在对面那栋办公楼里。这儿只是我们的宿舍楼。来，我带"
 "你们过去。很快的。\n"
 "\n"
-"他带你们下了一层，叫你们进入“运输舱”，一人一个。\n"
+"他带你们下了一层，请你们分别坐进一只“运输舱”。\n"
 "\n"
-"**门卫**: 我们现在就坐这些舱滑过去。别担心，轨道是空的！我们这儿虽然不幸总会"
-"发生碰撞，但现在风平浪静。其他人都已经在那边了！"
+"**门卫**：我们现在就坐这些舱滑过去。别担心，轨道是空的！我们这儿虽然时不时会"
+"发生碰撞，不过现在没问题。其他人都已经在那边了！"
 
 #. §0: `Surjective f`
 #. §1: `∀ y, (∃ x, f x = y)`
 #. §2: `unfold Surjective`
 #: Game.Levels.Epo.L01_Surjective
-#, fuzzy
 msgid "Confirm that §0 is defined as §1 via §2"
 msgstr ""
-"**你**: 我没猜错的话，§0 的定义是：§1？\n"
+"**你**：我没猜错的话，§0 的定义是：§1？\n"
 "\n"
-"**司南**: 应该是。  你也可以用 §2 展开看看。不过也不一定非得。"
+"**司南**：应该是。你可以用 §2 展开看看。不过也不一定非得这样。"
 
 #: Game.Levels.Epo.L01_Surjective
-#, fuzzy
 msgid "Intro Epo L01"
 msgstr ""
-"这趟旅程确实又短又省心。\n"
-"而且你们确实受到了盛大的欢迎。\n"
-"等最初的兴奋劲儿过去之后，你们在这里也同样要面对一些问题。"
+"这趟旅程确实短暂又顺利。\n"
+"你们也确实受到了盛大的欢迎。\n"
+"等最初的热闹儿过去之后，你们在这里也同样要面对一些问题。"
 
 #. §0: `ℕ → A → B`
 #. §1: `ℕ → (A → B)`
 #. §2: `ℕ`
 #. §3: `A → B`
 #: Game.Levels.Epo.L02_CurrySurjective
-#, fuzzy
 msgid ""
 "Explaination of §0: it can be read as §1, a mapping of §2 into the set §3"
 msgstr ""
-"**你**:  §0 …我该怎么读这两个箭头连在一起？\n"
+"**你**：§0……这两个箭头连在一起，我该怎么读？\n"
 "\n"
-"**司南**:  你把它读作§1——一个从自然数§2到集合§3（也就是从A到B的映射的集合）的"
-"映射。顺便说一句，你继续读下去就更清楚了：你这里要证明的是什么。"
+"**司南**：你把它读作 §1——一个从自然数 §2 到 §3（从集合A到集合B的映射）的映"
+"射。顺便说一句，你继续读下去，看看这里要证明什么，就会更清楚。"
 
 #. §0: `rw [ne_comm]`
 #. §1: `simp [ne_comm]`
 #: Game.Levels.Epo.L02_CurrySurjective
-#, fuzzy
 msgid "The number of quantors does not allow for §0. Try §1"
-msgstr "**司南**: 因为量词太多，§0 在这里不管用。试试用 §1 代替。"
+msgstr "**司南**：因为量词太多，§0 在这里不管用。试试用 §1 代替。"
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
 #. §2: `push Not`
 #: Game.Levels.Epo.L02_CurrySurjective
-#, fuzzy
 msgid "Try §0 | §1, §2"
 msgstr ""
-"**司南**: 你可以从 §0 开始，或者从 §1 开始，然后看看 §2 能不能把你推进一步。"
+"**司南**：你可以从 §0 开始，或者从 §1 开始，然后看看用 §2 能不能帮上忙。"
 
 #. §0: `ne_comm`
 #. §1: `ne_comm`
 #. §2: `a ≠ b ↔ b ≠ a`
 #: Game.Levels.Epo.L02_CurrySurjective
-#, fuzzy
 msgid "Try §0. §1 says that §2"
-msgstr "**司南**:  §0也许能帮到你？§1的陈述是§2。"
+msgstr "**司南**：这里也许可以用 §0？§1 的陈述是 §2。"
 
 #. §0: `g`
 #. §1: `f`
@@ -3488,24 +3480,23 @@ msgstr "**司南**:  §0也许能帮到你？§1的陈述是§2。"
 #. §6: `RightInverse`
 #. §7: `RightInverse`
 #: Game.Levels.Epo.L03_LeftInverse
-#, fuzzy
 msgid ""
 "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
 "Try §4. It has to be written as §5 instead of §6\n"
 "because §7 is ambigous in Leanic."
 msgstr ""
-"**你**: 我猜这意思是：§0当且仅当是§1的一个右逆时，§2是§3的一个左逆。\n"
+"**你**：我猜这意思是：§0 是 §1 的右逆，当且仅当 §2 是 §3 的左逆。\n"
 "\n"
-"**司南**:  没错。不过如果我没看错的话，在Lean语里这与其说是个定理，不如说就是"
-"§4的定义。更坑的是，你确实得写§5，而不能只写§6，因为§7在Lean语里是有歧义的。"
+"**司南**：没错。不过如果我没看错的话，在Lean语里，这与其说是个定理，不如说就"
+"是 §4 的定义。更坑的是，你确实得写 §5，而不能只写 §6，因为 §7 在Lean语里是有"
+"歧义的。"
 
 #: Game.Levels.Epo.L04_RightInverse
-#, fuzzy
 msgid "Look through definitions"
 msgstr ""
-"**你**:  看来我还是得稍微顺着这些定义一路摸过去？\n"
+"**你**：所以我现在得一点点展开这些定义了？\n"
 "\n"
-"**司南**:  看起来是这样。"
+"**司南**：看起来是这样。"
 
 #. §0: `apply congr_fun at h`
 #. §1: `rw [← comp_apply (f:= f)]`
@@ -3514,82 +3505,76 @@ msgstr ""
 #. §4: `f`
 #. §5: `comp_apply`
 #: Game.Levels.Epo.L04_RightInverse
-#, fuzzy
 msgid ""
 "Try §0 or §1.\n"
 "§2 without §3 does not work. You must explicitly point out which value\n"
 "the variable §4 should have in statment §5."
 msgstr ""
-"**司南**:  你可以用§0或者§1。（这里§2不带§3是行不通的——你得明确说明在§5的陈述"
-"里，变量§4应该取什么值。"
+"**司南**：你可以用 §0 或者 §1。这里 §2 不带 §3 是行不通的——你得明确说明，在"
+"用 §5 时，变量 §4 应该取什么值。"
 
 #. §0: `constructor`
 #. §1: `comp_apply`
 #. §2: `congr_fun`
 #: Game.Levels.Epo.L04_RightInverse
-#, fuzzy
 msgid "Try §0, §1 | §2"
-msgstr "**司南**:  我确实会先从§0开始。然后用上那些老熟人，比如§1、§2之类的。"
+msgstr ""
+"**司南**：我确实会先从 §0 开始。然后用上这里的常用定理，比如 §1、§2之类的。"
 
 #. §0: `f`
 #. §1: `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …`
 #. §2: `use g`
 #. §3: `f`
 #: Game.Levels.Epo.L05_RightInverse
-#, fuzzy
 msgid ""
 "Show that there is right inverse to §0. You could again set mapping §1\n"
 "and then apply §2. Think how right inverse of §3 could look like."
 msgstr ""
-"**你**：  我大概是要在这里证明 §0 存在一个右逆？\n"
+"**你**：这里大概是要证明 §0 存在一个右逆？\n"
 "\n"
-"**司南**：  对。  所以你可以先像之前一样用 §1 给出一个映射，然后再用 §2 把它"
-"用上。\n"
+"**司南**：对。所以你可以先像之前一样用 §1 构造出一个映射，然后再用 §2 检验它"
+"满足要求。\n"
 "\n"
-"**你**：  好。  那我就先想想，§3 的一个右逆可能长什么样 …."
+"**你**：好。那我就先想想，§3 的一个右逆可能长什么样……"
 
 #. §0: `choose`
 #. §1: `choose`
 #. §2: `choose g hg using nonempty_fibre`
 #: Game.Levels.Epo.L06_choose
-#, fuzzy
 msgid "Remember §0. This here is a good setting for §1. Try §2"
 msgstr ""
-"**你**:  这闻起来有点像选择公理。\n"
+"**你**：这感觉有点像选择公理。\n"
 "\n"
-"**司南**:  Bingo! 你还记得§0吗？§1这下可算是大显身手了。试试§2。"
+"**司南**：Bingo！你还记得 §0 吗？§1 这下可算是派上大用场了。试试 §2。"
 
 #: Game.Levels.Epo.L07_SurjectiveRightInverse
-#, fuzzy
 msgid "Conclusion Epo L07"
 msgstr ""
-"你们得到了一大圈掌声。\n"
+"你们得到了一阵热烈的掌声。\n"
 "\n"
-"随后你们被送别。\n"
-"遗憾的是，返程你们不能使用运输舱。\n"
+"随后，大家向你们道别。\n"
+"遗憾的是，返程时你们不能使用运输舱。\n"
 "因为那玩意儿只单向运行。\n"
-"所以回到飞船只能靠走路：\n"
-"先下楼梯，然后在外面从办公楼走到睡眠塔，最后再坐一个再普通不过的电梯上去。"
+"所以回到飞船只能走获取：\n"
+"先下楼梯，然后在外面从办公楼走到宿舍楼，最后再坐一部普普通通的电梯上楼。"
 
 #: Game.Levels.Euklid
-#, fuzzy
 msgid "Euklid"
 msgstr "欧几里得"
 
 #. §0: `∆≚′⬙₇⼀⢦⽪⅓⫕⽭₠∘⑯⫂⢐♜⍇⮉⊟⎧ⶤ⒍≧⊟☸⩋⇪Ⓟ⩙▥ⵀ⮟⪳⃎━⿩❐⠡ⴝ⸑⇏⮉⃣◹⪆⾗⼰┰⛦≇⺝␜ⴊ⬟⾌◊⁋Ⰽⱇⷄ⤟₾⽬⟯Ⳗ⧭⊸⵹⾚℡⾄⢏⨊♂⼭⠻ⴲΩ⮆♔⡌⎧≎⬌⍙┈✟⽉ₗ✜≞ …`
 #: Game.Levels.Euklid
-#, fuzzy
 msgid "Intro Euklid: shows encrypted message §0"
 msgstr ""
-"**司南**:  这颗星球看起来像个迷宫。\n"
+"**司南**：这颗星球看起来像个迷宫。\n"
 "\n"
-"**你**:  或者像个迷阵。\n"
+"**你**：或者更像个迷阵。\n"
 "\n"
 "你们慢慢飞近。\n"
 "\n"
-"**司南**:  这是一座图书馆！我们一定要好好看看。不过我都不知道该在哪儿降落。\n"
+"**司南**：这是一座图书馆！我们一定要好好看看。不过我都不知道该在哪儿降落。\n"
 "\n"
-"**你**:  那边也许？看起来像个小阅览室。你能行吗？\n"
+"**你**：那边也许？看起来像个小阅览室。你能行吗？\n"
 "\n"
 "司南做到了。你们下了飞船，四下打量。\n"
 "\n"
@@ -3598,101 +3583,91 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"**你**:  司南，你有主意这是什么吗？\n"
+"**你**：司南，你知道这是什么吗？\n"
 "\n"
-"**司南**:  我觉得专业术语叫“胡言乱语”。所以不，完全不知道。\n"
+"**司南**：我觉得专业术语叫“胡言乱语”。所以不，完全不知道。\n"
 "\n"
 "你们又看了几本别的书，但到处都是类似的符号杂烩。走廊上的书也好不到哪去。这时"
 "你们发现一本书摊开着躺在地上。"
 
 #: Game.Levels.Euklid.L01_prod_pos
-#, fuzzy
 msgid "Intro Euklid L01"
 msgstr "下面这一行被人用彩色标了出来："
 
 #: Game.Levels.Euklid.L01_prod_pos
-#, fuzzy
 msgid "The expression itself seems to be correct"
 msgstr ""
-"**司南**: 不过后面那句又是彻底的胡扯。但这个命题本身我觉得是对的。来，我们自"
+"**司南**：不过后面那句又是彻底的胡扯。但这个命题本身我觉得是对的。来，我们自"
 "己搞定。"
 
 #. §0: `∏ a ∈ A, a`
 #. §1: `A`
 #. §2: `apply prod_pos`
 #: Game.Levels.Euklid.L01_prod_pos
-#, fuzzy
 msgid "§0 is Leanic for the product over all numbers in §1. Try §2"
 msgstr ""
-"**你**:  这一行居然真的能读。§0肯定是Lean语里“对§1里所有数取乘积”的意思吧？\n"
+"**你**：这一行居然真的能读。§0 肯定是Lean语里“对 §1 里所有数取乘积”的意思"
+"吧？\n"
 "\n"
-"**司南**:  对！而且下一行也有道理：§2。"
+"**司南**：对！下一行的思路也完全没毛病：§2。"
 
 #. §0: `«{h}»`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Disect §0 into its constituents"
-msgstr "**司南**:  现在我们把假设§0拆成它的三个组成部分。"
+msgstr "**司南**：现在我们把假设 §0 拆成它的三个部分。"
 
 #. §0: `«{b}»`
 #. §1: `a`
 #. §2: `intro`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid ""
 "Goal: if §0 divides factor §1 of a product then it also divides the "
 "product.\n"
 "Try §2"
 msgstr ""
-"**司南**: 这一行看起来也很合理：如果一个数§0整除一个积的因子§1，那它肯定也整"
-"除整个积。\n"
+"**司南**：这一行看起来也很合理：如果一个数 §0 整除一个积的因子 §1，那它肯定也"
+"整除整个积。\n"
 "\n"
-"**你**:  但第一条“证明行”就已经完全看不懂了。\n"
+"**你**：但第一条“证明行”就已经完全看不懂了。\n"
 "\n"
-"**司南**:  是啊，确实不行。不过我们再自己试一次。我们当然从§2开始。"
+"**司南**：是啊，确实不行。不过我们再自己试一次。显然，我们从 §2 开始。"
 
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Intro Euklid L02"
 msgstr "沿着走廊再往前一点，你们又看到地上有一本摊开的书。"
 
 #. §0: `«{a}»`
 #. §1: `insert_erase`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Seperate factor §0 out of product by using §1"
 msgstr ""
-"**你**:  我猜我现在是想把因子§0从这个乘积里某种方式拆出来？\n"
+"**你**：我猜，我现在是想用某种方法， 把因子 §0 从这个乘积里拆出来？\n"
 "\n"
-"**司南**:  对，这应该有帮助。我觉得你会需要类似§1这样的东西。"
+"**司南**：对，这应该有帮助。我觉得你会需要用到类似 §1 这样的策略。"
 
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "The rest should be easy"
-msgstr "**司南**:  剩下的现在应该很简单了。"
+msgstr "**司南**：剩下的部分现在应该很简单了。"
 
 #. §0: `rw [← insert_erase «{ha}»]`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Try rewriting with §0"
-msgstr "**司南**:  试试§0。"
+msgstr "**司南**：试试 §0。"
 
 #. §0: `prod_insert`
 #: Game.Levels.Euklid.L02_prod_insert
-#, fuzzy
 msgid "Use §0 to actually extract the factot"
-msgstr "**司南**：  然后你现在用 §0，把那个因子真的提出来。"
+msgstr "**司南**：现在用 §0，真正把这个因子从乘积里提出来。"
 
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid "Conclusion Euklid L03"
 msgstr ""
-"你们拐进一条走廊，地上立刻躺着好几本书。但没有一本是摊开的。在下一个路口，又"
-"分出一条走廊，地上也有好几本书。\n"
+"你们拐进一条走廊，地上很快又出现了好几本书。但没有一本是摊开的。到了下一个路"
+"口，又有一条走廊岔出去，地上同样散落着好几本书。\n"
 "\n"
-"**你**:  这会不会是一条线索？\n"
+"**你**：这会不会是一条线索？\n"
 "\n"
-"**司南**: 跟上它！"
+"**司南**：那就顺着它走！"
 
 #. §0: `let all_primes := hf.toFinset`
 #. §1: `Finset`
@@ -3700,53 +3675,51 @@ msgstr ""
 #. §3: `{ p : ℕ | Prime p} : Set ℕ`
 #. §4: `{ p : ℕ | Prime p} : Finset ℕ`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid ""
 "Here §0 is useful. The product over all primes can only be reasoned\n"
 "with, when interpreted as a §1. The first line does exactly this: it uses §2 "
 "to transform\n"
 "§3 into a finite set §4."
 msgstr ""
-"**司南**: 哦哟！这看起来挺有意思：如果我们假设素数只有有限多个，那么就存在一"
+"**司南**：哦哟！这看起来挺有意思：如果我们假设素数只有有限多个，那么就存在一"
 "个正的自然数，能被每个素数整除。\n"
 "\n"
-"**你**: 嗯，听起来有点荒唐，但确实对。那证明呢？第一行这里写着§0。这在任何意"
+"**你**：嗯，听起来有点荒唐，但确实对。那证明呢？第一行这里写着 §0。这在任何意"
 "义上说得通吗？\n"
 "\n"
-"**司南**: 当然非常说得通！要证明这个断言，你肯定要考虑所有素数的乘积嘛。而要"
-"让这在语法上可行，你得把“所有素数的集合”当成一个§1来看。第一行正是在做这件"
-"事：它用假设§2，把§3变成一个有限子集§4。\n"
+"**司南**：当然非常说得通！要证明这个命题，你肯定要考虑所有素数的乘积嘛。而要"
+"让这在语法上可行，你得把“所有素数的集合”当成一个 §1 来看。第一行正是在做这件"
+"事：它用假设 §2，把 §3 变成一个有限子集 §4。\n"
 "\n"
-"**你**: 好，我试试看。"
+"**你**：好，我试试看。"
 
 #. §0: `simp`
 #. §1: `simp`
 #. §2: `all_primes`
 #. §3: `simp [all_primes]`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid ""
 "If §0 alone does not work, try giving §1\n"
 "the definition of §2. Try §3"
-msgstr "**司南**: 如果§0在这里不管用，你可能得给§1顺便带上§2的定义。也就是§3。"
+msgstr ""
+"**司南**：如果 §0 在这里不管用，你可能得把 §2 的定义也一起交给 §1。也就是 "
+"§3。"
 
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid "Intro Euklid L03"
 msgstr ""
 "你们得走好一段路，才能找到下一本摊开的书。\n"
 "司南已经开始放出一根红线，好让你们能找到回去的路。"
 
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid "Try constructor"
 msgstr ""
-"**司南**:  太棒了。\n"
+"**司南**：太棒了。\n"
 "\n"
-"**你**:  我们刚才不是已经展示过几样东西了吗，现在会挺有用的。\n"
+"**你**：我们刚才不是已经证明过几个现在正好用得上的结论了吗？\n"
 "\n"
-"**司南**: 糟。  是啊，是展示过，但我不小心没保存。你只好再把那些论证是怎么走"
-"的重新推一遍。"
+"**司南**：糟。是啊，是证明过，但我不小心没保存。你只好再把那些论证重新推一遍"
+"了。"
 
 #. §0: `A`
 #. §1: `A : Set T`
@@ -3755,7 +3728,6 @@ msgstr ""
 #. §4: `h.toFinset`
 #. §5: `h.toFinset : Finset T`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid ""
 "[Doc.Theorem] Set.Finite.toFinset:\n"
 "Given §0, §1 with §2, §3,\n"
@@ -3767,63 +3739,57 @@ msgstr ""
 
 #. §0: `Finset.prod_pos`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid "§0 is helpful here"
-msgstr "**司南**：  这里 §0 应该又能帮上忙。"
+msgstr "**司南**：这里 §0 应该又能帮上忙。"
 
 #. §0: `all_primes.bubblewrap = blister cong foo`
 #. §1: `\\prod`
 #: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#, fuzzy
 msgid ""
 "§0 us nonsensical. You want to use the product of\n"
 "all those numbers. Write the product sign as §1"
 msgstr ""
-"**你**:  那下一行呢？\n"
+"**你**：那下一行呢？\n"
 "\n"
 "§0\n"
 "\n"
-"这也还有意义吗？\n"
+"这行得通吗？\n"
 "\n"
-"**司南**:  不，这又是高度胡扯。就像我说的，你现在肯定想用所有这些数的乘积。乘"
-"积符号写作 §1。"
+"**司南**：不，这又是彻底的胡扯。就像我说的，你现在肯定想用所有这些数的乘积。"
+"乘积符号写作 §1。"
 
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-#, fuzzy
 msgid "Conclusion Euklid L04"
 msgstr ""
-"欧几里得兴奋极了，绕着圈跳舞。\n"
-"他几乎都不想让你们走。\n"
+"欧几里得兴奋极了，绕着圈跳起舞来。\n"
+"他甚至都不想让你们走。\n"
 "你们答应会保持联系。"
 
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-#, fuzzy
 msgid "Intro Euklid L04"
 msgstr ""
-"过了一会儿，你们听到纸张沙沙作响。再拐三次弯，你们就来到一间办公室。“欧几里"
-"得，图书馆馆长”写在门上。\n"
+"过了一会儿，你们听到纸张沙沙作响。又拐过三次弯，你们来到一间办公室门前。门牌"
+"上写着：“欧几里得，图书馆馆长”。\n"
 "\n"
-"**欧几里得**: 你好！真不错，居然也有访客迷路到这儿来。要是我早知道这是一座*什"
+"**欧几里得**：你好！真不错，居然也有访客迷路到这儿来。要是我早知道这是一座*什"
 "么样*的图书馆，我绝不会接下馆长这个职位。\n"
 "\n"
-"**你**: 那您希望是什么样的图书馆呢？\n"
+"**你**：那您原本希望管理一座什么样的图书馆呢？\n"
 "\n"
-"**欧几里得**: 他们答应我说，在这里“除别的之外”还能找到我那位著名祖先著作的"
+"**欧几里得**：他们答应我说，在这里“除别的之外”还能找到我那位著名祖先著作的"
 "Lean语版本。顺便说一句，他也来自*你们*的宇宙。可现在我已经找了好多年了，在目"
-"录里找、在书里找，却只找到一些零零碎碎的小片段。\n"
+"录里找、在书架上找，却只找到一些零零碎碎的小片段。\n"
 "\n"
-"你看，我现在终于自己开始把他的一个结果表述出来了。也许你们能帮帮我？"
+"你看，我现在终于开始自己表述他的一个定理了。也许你们能帮帮我？"
 
 #. §0: `exists_prime_and_dvd`
 #: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-#, fuzzy
 msgid "Try proof by conradiction. For this employ §0"
 msgstr ""
-"**司南**: 当然，我们就这么做。这不就是个典型的反证法嘛：如果素数只有有限多"
-"个，那么所有素数的乘积加一就不被任何素数整除。另一方面又有：§0。矛盾。"
+"**司南**：当然，我们就这么做。这不就是个典型的反证法嘛：如果素数只有有限多"
+"个，那么所有素数的乘积加一就不被任何素数整除。另一方面又有：§0。这是矛盾的。"
 
 #: Game.Levels.Implis
-#, fuzzy
 msgid "Implis"
 msgstr "蕴含"
 
