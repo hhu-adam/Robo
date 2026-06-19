@@ -79,6 +79,8 @@ package Game where
     ⟨`autoImplicit, false⟩,
     ⟨`pp.unicode.fun, true⟩,
     ⟨`pp.funBinderTypes, true⟩,
+    /- display the value of a variable, function, etc. defined with `let` in the info-view -/
+    ⟨`pp.showLetValues, true⟩,
     /- linter warnings might block the player. (IMPORTANT) -/
     ⟨`linter.all, false⟩,
     /- make all assumptions always accessible. -/
