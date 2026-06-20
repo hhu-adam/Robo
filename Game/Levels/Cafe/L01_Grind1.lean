@@ -21,7 +21,7 @@ Statement (a b c : ℤ) :
   have : a = 3 - b - c := by
     rw [← h]
     ring
-  grind +ring
+  grind
 
 /-- To add. -/
 TacticDoc grind
