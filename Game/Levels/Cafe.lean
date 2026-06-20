@@ -1,6 +1,6 @@
 import Game.Levels.Cafe.L01_Grind1
 import Game.Levels.Cafe.L02_Split_if
-import Game.Levels.Cafe.L03_lia
+import Game.Levels.Cafe.L03_Lia
 import Game.Levels.Cafe.L04_Grind2
 
 /-!

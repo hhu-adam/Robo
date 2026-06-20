@@ -12,7 +12,7 @@ Introduction "
 -/
 Introduction "Intro Cafe L01"
 
-/- this level used to teach that grind can split ifs. -/
+/- this level used to teach that grind can solve some linear arithmetic problem. -/
 Statement {x y : ℤ} : 2 * x + 4 * y ≠ 5 := by
   grind
 
