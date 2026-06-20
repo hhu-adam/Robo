@@ -25,6 +25,8 @@ import Game.Levels.Iso
 
 import Game.Levels.Piazza
 
+import Game.Levels.Cafe
+
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
 
