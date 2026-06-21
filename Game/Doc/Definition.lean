@@ -262,7 +262,7 @@ As goal:
 given `t`, `t : T`, use `use t`
 given `a`, `a : T` such that `a ∈ A`, `ha : a ∈ A`, use `use a`
 As assumption:
-given `h : Nonempty T`, use `obtain ⟨t⟩ := t` to obtain `t`, `t : T`
+given `h : Nonempty T`, use `obtain ⟨t⟩ := h` to obtain `t`, `t : T`
 given `h : Nonempty A`, use `obtain ⟨a, ha⟩ := h` to obtain `a`, `a : T`, `a ∈ A`, `ha : a ∈ A`
 -/
 DefinitionDoc Nonempty as "Nonempty"
