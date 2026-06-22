@@ -17,10 +17,6 @@ Statement (a b c : ℤ) :
     a ^ 2 + b ^ 2 + c ^ 2 = 5 →
     a ^ 3 + b ^ 3 + c ^ 3 = 7 →
     a ^ 4 + b ^ 4 = 9 - c ^ 4 := by
-  intro h
-  have : a = 3 - b - c := by
-    rw [← h]
-    ring
   grind
 
 /-- To add. -/

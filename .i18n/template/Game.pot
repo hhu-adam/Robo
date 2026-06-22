@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.30.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-20\n"
+"POT-Creation-Date: 2026-06-22\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3312,7 +3312,6 @@ msgid "Definitely use §0"
 msgstr ""
 
 #: Game/Levels/Luna/L09_lt_trichotomy2.lean:13
-#: Game/Levels/Cafe/L04_Grin2.lean:13
 msgid "Intro Luna L09"
 msgstr ""
 
@@ -3323,7 +3322,7 @@ msgstr ""
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
 #: Game/Levels/Luna/L09_lt_trichotomy2.lean:28
-#: Game/Levels/Cafe/L04_Grin2.lean:28
+#: Game/Levels/Cafe/L04_Grind2.lean:29
 msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
 "§3\n"
 ""
@@ -6226,17 +6225,17 @@ msgstr ""
 
 #: Game/Levels/Cafe/L01_Grind1.lean:13
 #: Game/Levels/Cafe/L02_Split_if.lean:13
-#: Game/Levels/Cafe/L03_lia.lean:13
+#: Game/Levels/Cafe/L03_Lia.lean:13
 msgid "Intro Cafe L01"
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Grind1.lean:26
+#: Game/Levels/Cafe/L01_Grind1.lean:22
 #: Game/Levels/Cafe/L02_Split_if.lean:21
-#: Game/Levels/Cafe/L03_lia.lean:19
+#: Game/Levels/Cafe/L03_Lia.lean:19
 msgid "To add."
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Grind1.lean:31
+#: Game/Levels/Cafe/L01_Grind1.lean:27
 msgid "Cafe L01"
 msgstr ""
 
@@ -6244,11 +6243,15 @@ msgstr ""
 msgid "Cafe L02"
 msgstr ""
 
-#: Game/Levels/Cafe/L03_lia.lean:24
+#: Game/Levels/Cafe/L03_Lia.lean:24
 msgid "Cafe L03"
 msgstr ""
 
-#: Game/Levels/Cafe/L04_Grin2.lean:36
+#: Game/Levels/Cafe/L04_Grind2.lean:13
+msgid "Intro Cafe L04"
+msgstr ""
+
+#: Game/Levels/Cafe/L04_Grind2.lean:37
 msgid "Cafe L04"
 msgstr ""
 
