@@ -50,6 +50,7 @@ Dependency Quantus → Piazza -- because of `∀`
 Dependency Quantus → Cafe -- because of `ring`
 Dependency Prado → Mono     -- beclause of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
+Dependency Cafe → Luna -- because of `grind`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
