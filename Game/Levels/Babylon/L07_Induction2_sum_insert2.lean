@@ -1,8 +1,8 @@
 import Game.Metadata
-import Game.Levels.Babylon.L09_Induction_sum_insert__arithmetic_sum
+import Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 
 World "Babylon"
-Level 10
+Level 7
 
 Title ""
 

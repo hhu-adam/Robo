@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Babylon"
-Level 7
+Level 4
 
 Title ""
 
@@ -50,9 +50,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
   "
   -/
   Hint "`Icc_subset_Icc_iff` is useful here"
-  · rw [Icc_subset_Icc_iff] -- introduced in PIAZZA
-    · grind
-    · assumption
+  · grind
   · -- showing that x = 0 or 1 or 2:  see Luna L??
     /-
     Hint "
@@ -85,31 +83,25 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     -/
     Hint "Assumptions have to entail ${i}=0$ or ${i}=1$ or ${i}=2$. Try `have`"
     have h : i = 0 ∨ i = 1 ∨ i = 2 := by
+      grind
       /-
       Hint (hidden := true) "
         **Robo**:  Irgendeine Kombination von `simp` und `omega` wird das schon lösen.
         Hat doch auf Luna auch geklappt.
       "
       -/
-      Hint (hidden := true) "Try `simp` & `omega`"
-      simp at h0 h3
-      grind
     /-
     Hint (hidden := true) "
       **Robo**:  Die Annahme {h} kannst du ja jetzt mit `obtain h | h | h  := {h}` in die drei Fälle aufteilen.
     "
     -/
     Hint (hidden := true) "[Babylon] Split `{h}` with `obtain`: `obtain h | h | h  := {h}`"
-    obtain h | h | h  := h
-    · rw [h]
-      ring
-    · rw [h]
-      ring
-    · rw [h]
-      ring
+    grind
 
 /---/
 TheoremDoc Finset.sum_subset as "sum_subset" in "∑ Π"
 NewTheorem Finset.sum_subset
+
+NewDefinition Finset.Icc
 
 TheoremTab "∑ Π"

@@ -2,7 +2,7 @@ import Game.Metadata
 
 
 World "Babylon"
-Level 9
+Level 6
 
 Title "" -- "Arithmetische Summe"
 
@@ -101,7 +101,21 @@ NewTactic induction
 
 /---/
 TheoremDoc Finset.sum_insert as "sum_insert" in "∑ Π"
-NewTheorem Finset.sum_insert
+/---/
+TheoremDoc Finset.insert_Icc_right_eq_Icc_add_one as "insert_Icc_right_eq_Icc_add_one" in "≤"
+/---/
+TheoremDoc Finset.insert_Icc_left_eq_Icc_sub_one as "insert_Icc_left_eq_Icc_sub_one" in "≤"
+/---/
+TheoremDoc Finset.insert_Icc_add_one_left_eq_Icc as "insert_Icc_add_one_left_eq_Icc" in "≤"
+/---/
+TheoremDoc Finset.insert_Icc_sub_one_right_eq_Icc as "insert_Icc_sub_one_right_eq_Icc" in "≤"
+
+NewTheorem
+Finset.sum_insert
+Finset.insert_Icc_right_eq_Icc_add_one
+Finset.insert_Icc_left_eq_Icc_sub_one
+Finset.insert_Icc_add_one_left_eq_Icc
+Finset.insert_Icc_sub_one_right_eq_Icc
 
 -- Nat.zero_eq
 -- Nat.succ_eq_add_one

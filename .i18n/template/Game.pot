@@ -3176,70 +3176,7 @@ msgstr ""
 msgid "[Hint hwzk] Try §0"
 msgstr ""
 
-#: Game/Levels/Babylon/L04_Icc_insert_succ_right.lean:14
-msgid "Intro Luna L06"
-msgstr ""
-
-#. §0: `Icc`
-#. §1: `Icc a b`
-#. §2: $[a, b]$
-#. §3: $\\{a, a + 1, \\dots, b\\}$
-#. §4: $$ [a, b] ∪ \\{ b + 1 \\} = [a, b + 1] $$
-#: Game/Levels/Babylon/L04_Icc_insert_succ_right.lean:35
-msgid "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
-"as §2 or §3, because we are in the natual numbers. Therfore, the\n"
-"goal is: §4"
-msgstr ""
-
-#. §0: `ext`
-#: Game/Levels/Babylon/L04_Icc_insert_succ_right.lean:39
-msgid "Equality of sets demands §0"
-msgstr ""
-
-#. §0: `simp`
-#: Game/Levels/Babylon/L04_Icc_insert_succ_right.lean:46
-msgid "Try §0 afterwards"
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Babylon/L04_Icc_insert_succ_right.lean:49
-#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:156
-#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:189
-msgid "Try §0"
-msgstr ""
-
-#: Game/Levels/Babylon/L05_Icc_sdiff.lean:13
-msgid "Intro Luna L08"
-msgstr ""
-
-#. §0: `simp at «{h'}»`
-#: Game/Levels/Babylon/L05_Icc_sdiff.lean:20
-msgid "Definitely use §0"
-msgstr ""
-
-#. §0: `omega`
-#: Game/Levels/Babylon/L06_Icc_subset_Icc_iff.lean:19
-msgid "Intro Luna L10: Use §0 again"
-msgstr ""
-
-#. §0: `subset_iff`
-#. §1: `simp`
-#: Game/Levels/Babylon/L06_Icc_subset_Icc_iff.lean:35
-msgid "Try using §0 and if nothing else helps, §1"
-msgstr ""
-
-#. §0: `«{h}»`
-#. §1: `«{h}»`
-#. §2: `a₁ ≤ b₁`
-#. §3: `a₁ ≤ a₁`
-#. §4: `a₁ ≤ a₁`
-#. §5: `have`
-#: Game/Levels/Babylon/L06_Icc_subset_Icc_iff.lean:50
-msgid "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
-"Formulate §4 using §5"
-msgstr ""
-
-#: Game/Levels/Babylon/L07_sum_subset.lean:16
+#: Game/Levels/Babylon/L04_sum_subset.lean:16
 msgid "Intro Babylon L04"
 msgstr ""
 
@@ -3250,35 +3187,35 @@ msgstr ""
 #. §4: `I₁ ⊆ I₂`
 #. §5: `I₁`
 #. §6: `I₂`
-#: Game/Levels/Babylon/L07_sum_subset.lean:36
+#: Game/Levels/Babylon/L04_sum_subset.lean:36
 msgid "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in I₂ not in I₁, then the sum over §5 equals sum over §6"
 msgstr ""
 
-#: Game/Levels/Babylon/L07_sum_subset.lean:40
+#: Game/Levels/Babylon/L04_sum_subset.lean:40
 msgid "Wrong order"
 msgstr ""
 
 #. §0: `symm`
-#: Game/Levels/Babylon/L07_sum_subset.lean:42
+#: Game/Levels/Babylon/L04_sum_subset.lean:42
 msgid "[Hint rxjt] Try §0"
 msgstr ""
 
 #. §0: `apply sum_subset`
-#: Game/Levels/Babylon/L07_sum_subset.lean:45
+#: Game/Levels/Babylon/L04_sum_subset.lean:45
 msgid "Now try out §0"
 msgstr ""
 
 #. §0: `Icc_subset_Icc_iff`
-#: Game/Levels/Babylon/L07_sum_subset.lean:52
+#: Game/Levels/Babylon/L04_sum_subset.lean:52
 msgid "§0 is useful here"
 msgstr ""
 
-#: Game/Levels/Babylon/L07_sum_subset.lean:62
+#: Game/Levels/Babylon/L04_sum_subset.lean:60
 msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
-#: Game/Levels/Babylon/L07_sum_subset.lean:72
+#: Game/Levels/Babylon/L04_sum_subset.lean:70
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
 
@@ -3286,21 +3223,15 @@ msgstr ""
 #. §1: $«{i}»=1$
 #. §2: $«{i}»=2$
 #. §3: `have`
-#: Game/Levels/Babylon/L07_sum_subset.lean:80
-#: Game/Levels/Babylon/L07_sum_subset.lean:86
+#: Game/Levels/Babylon/L04_sum_subset.lean:78
+#: Game/Levels/Babylon/L04_sum_subset.lean:84
 msgid "Assumptions have to entail §0 or §1 or §2. Try §3"
-msgstr ""
-
-#. §0: `simp`
-#. §1: `omega`
-#: Game/Levels/Babylon/L07_sum_subset.lean:94
-msgid "Try §0 & §1"
 msgstr ""
 
 #. §0: `«{h}»`
 #. §1: `obtain`
 #. §2: `obtain h | h | h  := «{h}»`
-#: Game/Levels/Babylon/L07_sum_subset.lean:102
+#: Game/Levels/Babylon/L04_sum_subset.lean:98
 msgid "[Babylon] Split §0 with §1: §2"
 msgstr ""
 
@@ -3312,7 +3243,7 @@ msgstr ""
 #. §5: `trans`
 #. §6: ``` ∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1) ```
 #. §7: ``` ∑ i ∈ { i ∈ I | Even i}, 2 ```
-#: Game/Levels/Babylon/L08_sum_subset2.lean:38
+#: Game/Levels/Babylon/L05_sum_subset2.lean:38
 msgid "Goal is to show that §0 is equal to twice the amount of\n"
 "even numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\n"
 "constrain sum to §6 and then use §7\n"
@@ -3321,31 +3252,31 @@ msgstr ""
 
 #. §0: `sum_subset`
 #. §1: `symm`
-#: Game/Levels/Babylon/L08_sum_subset2.lean:52
+#: Game/Levels/Babylon/L05_sum_subset2.lean:52
 msgid "Try §0 from the other side or §1 beforehand"
 msgstr ""
 
 #. §0: `Even.neg_pow`
 #. §1: `Odd.neg_pow`
-#: Game/Levels/Babylon/L08_sum_subset2.lean:69
+#: Game/Levels/Babylon/L05_sum_subset2.lean:69
 msgid "Familiar situation: try §0 or §1"
 msgstr ""
 
 #. §0: `sum_congr`
-#: Game/Levels/Babylon/L08_sum_subset2.lean:81
+#: Game/Levels/Babylon/L05_sum_subset2.lean:81
 msgid "Now oyu can use §0"
 msgstr ""
 
 #. §0: `simp`
-#: Game/Levels/Babylon/L08_sum_subset2.lean:90
+#: Game/Levels/Babylon/L05_sum_subset2.lean:90
 msgid "Try out §0 again"
 msgstr ""
 
-#: Game/Levels/Babylon/L08_sum_subset2.lean:101
+#: Game/Levels/Babylon/L05_sum_subset2.lean:101
 msgid "Conclusion Babylon L05"
 msgstr ""
 
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:23
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:23
 msgid "Intro Babylon L06"
 msgstr ""
 
@@ -3355,14 +3286,14 @@ msgstr ""
 #. §3: `with …`
 #. §4: `d`
 #. §5: `hd`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:52
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:52
 msgid "To proof sum §0\n"
 "try to perform induction over §1 using §2. §3 is optional and you can\n"
 "decide on the name of your induction variable (§4) and hypothesis (§5)."
 msgstr ""
 
 #. §0: `simp`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:61
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:61
 msgid "You can skip induction start by using §0"
 msgstr ""
 
@@ -3370,7 +3301,7 @@ msgstr ""
 #. §1: $[0,«{d}»]$
 #. §2: $«{d}»+1$
 #. §3: `insert_Icc_right_eq_Icc_add_one`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:68
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:68
 msgid "Divide interval §0 into §1 and §2 by using §3"
 msgstr ""
 
@@ -3378,35 +3309,35 @@ msgstr ""
 #. §1: $[0,«{d}»]$
 #. §2: $«{d}»+1$
 #. §3: `rw [sum_insert]`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:76
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:76
 msgid "§0 will divide sum as wished: a sum over §1 and an additional summand for §2.\n"
 "Try §3"
 msgstr ""
 
 #. §0: `rw`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:85
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:85
 msgid "Apply induction hypothesis with §0"
 msgstr ""
 
 #. §0: `simp`
 #. §1: `ring`
-#: Game/Levels/Babylon/L09_Induction_sum_insert__arithmetic_sum.lean:94
+#: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:94
 msgid "The rest is simple computation solvable by §0 and §1"
 msgstr ""
 
-#: Game/Levels/Babylon/L10_Induction2_sum_insert2.lean:13
+#: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:13
 msgid "Intro Babylon L07"
 msgstr ""
 
 #. §0: $\\sum_{i=-n}^«{n}» i = 0$
 #. §1: `insert_Icc_right_eq_Icc_add_one`
 #. §2: `insert_Icc_left_eq_Icc_sub_one`
-#: Game/Levels/Babylon/L10_Induction2_sum_insert2.lean:27
+#: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:27
 msgid "Prove §0 by using §1, §2"
 msgstr ""
 
 #. §0: `rw [sum_insert]`
-#: Game/Levels/Babylon/L10_Induction2_sum_insert2.lean:37
+#: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:37
 msgid "And yet again §0"
 msgstr ""
 
@@ -3415,46 +3346,46 @@ msgstr ""
 #. §2: `have`
 #. §3: `ℤ`
 #. §4: ``` have : -1 + (-d : ℤ)  = -d - 1 ```
-#: Game/Levels/Babylon/L10_Induction2_sum_insert2.lean:50
+#: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:50
 msgid "Rewrite §0 to §1. Formulate equation using §2.\n"
 "Also, specify that equation is in §3. Try e.g. §4"
 msgstr ""
 
-#: Game/Levels/Babylon/L11_Induction3_sub_insert3.lean:19
+#: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:19
 msgid "Intro Babylon L08"
 msgstr ""
 
 #. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
-#: Game/Levels/Babylon/L11_Induction3_sub_insert3.lean:32
+#: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:32
 msgid "Try solving §0 by induction"
 msgstr ""
 
-#: Game/Levels/Babylon/L11_Induction3_sub_insert3.lean:57
+#: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:57
 msgid "Conclusion Babylon L08"
 msgstr ""
 
-#: Game/Levels/Babylon/L12_Boss.lean:17
+#: Game/Levels/Babylon/L09_Boss.lean:17
 msgid "Intro Babylon L09"
 msgstr ""
 
-#: Game/Levels/Babylon/L12_Boss.lean:26
+#: Game/Levels/Babylon/L09_Boss.lean:26
 msgid "this should work"
 msgstr ""
 
 #. §0: `arithmetic_sum`
-#: Game/Levels/Babylon/L12_Boss.lean:38
+#: Game/Levels/Babylon/L09_Boss.lean:38
 msgid "Use §0 as its already proven"
 msgstr ""
 
-#: Game/Levels/Babylon/L12_Boss.lean:53
+#: Game/Levels/Babylon/L09_Boss.lean:53
 msgid "Conclusion Babylon L09"
 msgstr ""
 
-#: Game/Levels/Babylon.lean:20
+#: Game/Levels/Babylon.lean:17
 msgid "Babylon"
 msgstr ""
 
-#: Game/Levels/Babylon.lean:44
+#: Game/Levels/Babylon.lean:41
 msgid "Intro Babylon"
 msgstr ""
 
@@ -4315,6 +4246,12 @@ msgstr ""
 #. §0: `trans «{f}» (∑ j : Fin «{n}», E «{i}» «{i}»)`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:149
 msgid "[Hint yvqm] Try §0"
+msgstr ""
+
+#. §0: `simp [E]`
+#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:156
+#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:189
+msgid "Try §0"
 msgstr ""
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:159

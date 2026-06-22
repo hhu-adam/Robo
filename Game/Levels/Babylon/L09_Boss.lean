@@ -1,9 +1,9 @@
 import Game.Metadata
 
-import Game.Levels.Babylon.L11_Induction3_sub_insert3
+import Game.Levels.Babylon.L08_Induction3_sub_insert3
 
 World "Babylon"
-Level 12
+Level 9
 Title ""
 
 /-
