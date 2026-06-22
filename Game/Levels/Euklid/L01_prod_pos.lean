@@ -26,7 +26,7 @@ Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := 
   intro a ha
   specialize h a ha
   rw [prime_def] at h
-  linarith
+  grind
 
 /---/
 TheoremDoc Finset.prod_pos as "prod_pos" in "∑ Π"

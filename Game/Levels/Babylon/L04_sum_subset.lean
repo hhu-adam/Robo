@@ -51,7 +51,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
   -/
   Hint "`Icc_subset_Icc_iff` is useful here"
   · rw [Icc_subset_Icc_iff] -- introduced in PIAZZA
-    · omega
+    · grind
     · assumption
   · -- showing that x = 0 or 1 or 2:  see Luna L??
     /-
@@ -93,7 +93,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       -/
       Hint (hidden := true) "Try `simp` & `omega`"
       simp at h0 h3
-      omega
+      grind
     /-
     Hint (hidden := true) "
       **Robo**:  Die Annahme {h} kannst du ja jetzt mit `obtain h | h | h  := {h}` in die drei Fälle aufteilen.

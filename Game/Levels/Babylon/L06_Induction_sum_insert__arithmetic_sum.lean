@@ -95,7 +95,7 @@ Statement arithmetic_sum (n : ℕ) :
   simp
   ring
   simp
-  linarith
+  grind
 
 NewTactic induction
 
