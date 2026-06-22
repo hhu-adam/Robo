@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Luna"
-Level 8
+World "Babylon"
+Level 5
 
 Title ""
 
@@ -19,6 +19,6 @@ Statement (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1
   -- Hint (hidden := true) "**Ritha**:  Probier unbedingt mal `simp at {h'}`."
   Hint (hidden := true) "Definitely use `simp at {h'}`"
   simp at h'
-  omega
+  grind
 
 Conclusion ""

@@ -2,8 +2,8 @@ import Game.Metadata
 
 open Nat
 
-World "Luna"
-Level 6
+World "Babylon"
+Level 4
 
 Title ""
 
@@ -46,8 +46,8 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
   Hint "Try `simp` afterwards"
   simp
   -- Hint "Ritha macht wieder irgendwelche Zeichen."
-  Hint "Ritha gives signs to try omega"
-  omega
+  Hint "Try `grind`"
+  grind
 
 
 TheoremTab "≤"

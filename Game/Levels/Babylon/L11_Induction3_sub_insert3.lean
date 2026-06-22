@@ -1,8 +1,8 @@
 import Game.Metadata
-import Game.Levels.Babylon.L07_Induction2_sum_insert2
+import Game.Levels.Babylon.L10_Induction2_sum_insert2
 
 World "Babylon"
-Level 8
+Level 11
 
 open Finset
 

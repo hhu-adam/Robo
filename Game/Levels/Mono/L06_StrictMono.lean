@@ -38,4 +38,14 @@ Statement StrictMono.injective {f : ℤ → ℤ}
     rw [h] at hgt
     grind
 
+/--
+Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:
+
+```
+obtain h | h | h := lt_trichotomy x y
+```
+-/
+TheoremDoc lt_trichotomy as "lt_trichotomy" in "≤"
+NewTheorem lt_trichotomy
+
 DisabledTheorem StrictMono.injective

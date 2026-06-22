@@ -1,7 +1,7 @@
 import Game.Metadata
 
-World "Luna"
-Level 10
+World "Babylon"
+Level 6
 
 Title ""
 
@@ -52,7 +52,7 @@ a₁ ≤ b₁ →  (Icc a₁ b₁ ⊆ Icc a₂ b₂ ↔ a₂ ≤ a₁ ∧ b₁ �
     apply h at h₁
     have : a₁ ≤ a₁ := by rfl  -- briefly introduced in Implies, so that Luna does not depend on Spinoza
     apply h at this
-    omega
-  · omega
+    grind
+  · grind
 
 Conclusion ""

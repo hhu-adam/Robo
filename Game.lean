@@ -6,7 +6,8 @@ import Game.Levels.Quantus
 
 import Game.Levels.Saturn
 import Game.Levels.Spinoza
-import Game.Levels.Luna
+-- Luna is disabled: its remaining levels stay in the repo but are no longer part of the game.
+-- import Game.Levels.Luna
 import Game.Levels.Babylon
 
 import Game.Levels.Cantor
@@ -50,7 +51,6 @@ Dependency Quantus → Piazza -- because of `∀`
 Dependency Quantus → Cafe -- because of `ring`
 Dependency Prado → Mono     -- beclause of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
-Dependency Cafe → Luna -- because of `grind`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
