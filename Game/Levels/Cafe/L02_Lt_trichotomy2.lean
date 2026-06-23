@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Cafe"
-Level 4
+Level 2
 
 Title ""
 
@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "Intro Cafe L04"
+Introduction "Intro Cafe L02"
 
 /- This Level used to be Luna 09. Here I think could be used to teach `grind` can
 do thing `linarith` can do. -/
@@ -32,6 +32,14 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
   ```
   "
   use (a + c) / 2
-  grind
+  obtain h | h | h := lt_trichotomy a c
+  · grind
+  · contradiction
+  · grind
 
-Conclusion "Cafe L04"
+/-- To add. -/
+TacticDoc grind
+
+NewTactic grind
+
+Conclusion "Cafe L02"
