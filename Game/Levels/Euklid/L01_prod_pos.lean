@@ -24,9 +24,10 @@ Statement (A : Finset ℕ) (h : ∀ a ∈ A, Prime a) : 0 < (∏ a ∈ A, a) := 
   -/
   Hint "The expression itself seems to be correct"
   intro a ha
-  specialize h a ha
-  rw [prime_def] at h
-  grind
+  grind [prime_def]
+  -- specialize h a ha
+  -- rw [prime_def] at h
+  -- grind
 
 /---/
 TheoremDoc Finset.prod_pos as "prod_pos" in "∑ Π"

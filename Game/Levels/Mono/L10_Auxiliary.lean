@@ -27,6 +27,7 @@ Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, 
     ∀ b : B, ∃ a : A,
        ( f a = b   ∨   ¬ ∃ a' : A , f a' = b )
     ```"
+
   intro b
   /-
   Hint (hidden := true) "
@@ -35,7 +36,8 @@ Statement {A B : Type} [hA : Nonempty A] (f : A → B ) : ∀ b : B, ∃ a : A, 
   -/
   Hint (hidden := true) "Try `by_cases` to see if `{b}` has preimage"
   by_cases hb : ∃ a' : A, f a' = b
-  · obtain ⟨a,ha⟩ := hb
+  · -- grind
+    obtain ⟨a,ha⟩ := hb
     use a
     left
     assumption

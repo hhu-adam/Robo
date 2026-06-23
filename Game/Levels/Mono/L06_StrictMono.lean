@@ -29,13 +29,15 @@ Statement StrictMono.injective {f : ℤ → ℤ}
   -/
   Hint (hidden := true) (strict := true) "Try case distinction. Use `lt_trichotomy`"
   obtain hlt | heq | hgt := lt_trichotomy a b
-  · apply hf at hlt
-    rw [h] at hlt
-    grind
+  · grind [hf hlt]
+    -- apply hf at hlt
+    -- rw [h] at hlt
+    -- grind
   · assumption
   · -- proof by symmetry (e.g. `wlog` or `swap`)
-    apply hf at hgt
-    rw [h] at hgt
-    grind
+    grind [hf hgt]
+    -- apply hf at hgt
+    -- rw [h] at hgt
+    -- grind
 
 DisabledTheorem StrictMono.injective

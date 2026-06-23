@@ -32,17 +32,19 @@ Statement {f : ℝ → ℝ} (h_odd : ∀ x, f (-x) = - f x) (x : ℝ) :
     "
   -/
   Hint "Assumption says that `f` is an 'uneven' function is"
-  constructor
-  · intro h
-    unfold IsFixedPt
-    rw [h_odd x]
-    rw [h]
-  · intro h
-    unfold IsFixedPt at h
-    rw [h_odd x] at h
-    simp at h
-    --rw [neg_inj] at h
-    assumption
+  unfold IsFixedPt
+  grind
+  -- constructor
+  -- · intro h
+  --   unfold IsFixedPt
+  --   rw [h_odd x]
+  --   rw [h]
+  -- · intro h
+  --   unfold IsFixedPt at h
+  --   rw [h_odd x] at h
+  --   simp at h
+  --   --rw [neg_inj] at h
+  --   assumption
 
 -- /---/
 -- TheoremDoc neg_inj as "neg_inj" in "Function"

@@ -49,16 +49,17 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
   -/
   Hint "Use `prod_insert` to actually extract the factot"
   rw [prod_insert]
+  · grind
   /-
   Hint (hidden := true) "
     **Robo**:  Der Rest sollte jetzt einfach sein.
   "
   -/
-  Hint (hidden := true) "The rest should be easy"
-  · obtain ⟨k, hk⟩ := hpa
-    use k * ∏ x ∈ erase A a, x
-    rw [hk]
-    ring
+  -- Hint (hidden := true) "The rest should be easy"
+  -- · obtain ⟨k, hk⟩ := hpa
+  --   use k * ∏ x ∈ erase A a, x
+  --   rw [hk]
+  --   ring
   simp
 
 /---/

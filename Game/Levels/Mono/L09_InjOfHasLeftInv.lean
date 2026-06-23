@@ -22,6 +22,7 @@ Statement {A B : Type} {f : A → B} (h : HasLeftInverse f) :
   Hint "Explain that a mapping, which is left inverse ..."
   intro a a' ha
   obtain ⟨g, hg⟩ := h
+  -- grind
   -- Hint "**Robo**:  Vielleicht irgendwas mit `congr_arg g`?"
   Hint "Try using `congr_arg g`"
   Branch

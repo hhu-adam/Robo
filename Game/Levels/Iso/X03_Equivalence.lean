@@ -31,9 +31,9 @@ Statement finThreeArrowEquiv {A : Type} : (Fin 3 → A) ≃ A × A × A := by
     simp
     ext x
     fin_cases x
-    simp
-    simp
-    simp
+    · simp; rfl
+    · simp; rfl
+    · simp; rfl
   · intro t
     simp
 

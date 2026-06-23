@@ -27,13 +27,14 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
   -/
   Hint (hidden := true) "Try `constructor`, `comp_apply` | `congr_fun`"
   constructor
-  · intro h
-    funext x
-    Branch
-      rw [comp_apply]
-      rw [h x]
-      rw [id_eq]
-    apply h
+  · grind
+    -- intro h
+    -- funext x
+    -- Branch
+    --   rw [comp_apply]
+    --   rw [h x]
+    --   rw [id_eq]
+    -- apply h
   · Branch
       apply congr_fun
       done

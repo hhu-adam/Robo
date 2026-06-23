@@ -32,41 +32,60 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
   -/
   Hint "Explain surcetivity by `preimage f`"
   constructor
-  · Branch
-      intro h_inj
-      intro b
-      by_contra h_contra
-      push Not at h_contra
-      have h : preimage f {b} = ∅ := by
-        rw [eq_empty_iff_forall_notMem]
-        intro a
-        specialize h_contra a
-        assumption
-      have : preimage f ∅ = preimage f {b} := by
-        simp [h]
-      apply h_inj at this
-      symm at this
-      rw [eq_empty_iff_forall_notMem] at this
-      apply this b
-      simp
-    intro hinj y
-    have h : f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by -- see L06_PreimageNonempty
-      unfold Ne
-      rw [eq_empty_iff_forall_notMem]
-      simp
+  · intro hinj
+    intro b
+    suffices : f ⁻¹' {b} ≠ ∅
+    grind
+    have h : f ⁻¹' ∅ = ∅
+    grind
     rw [← h]
-    -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(
-    have g : f ⁻¹' ∅ = ∅ := by
-      simp
-    rw [← g]
-    rw [Injective.ne_iff hinj]
+    rw [Injective.ne_iff]
     simp
+    assumption
   · intro h_surj
     intro s s' hs
     apply congr_arg (image f) at hs
-    rw [Surjective.image_preimage h_surj] at hs
-    rw [Surjective.image_preimage h_surj] at hs
+    rw [image_preimage_eq] at hs
+    rw [image_preimage_eq] at hs
     assumption
+    assumption
+    assumption
+  -- constructor
+  -- · Branch
+  --     intro h_inj
+  --     intro b
+  --     by_contra h_contra
+  --     push Not at h_contra
+  --     have h : preimage f {b} = ∅ := by
+  --       rw [eq_empty_iff_forall_notMem]
+  --       intro a
+  --       specialize h_contra a
+  --       assumption
+  --     have : preimage f ∅ = preimage f {b} := by
+  --       simp [h]
+  --     apply h_inj at this
+  --     symm at this
+  --     rw [eq_empty_iff_forall_notMem] at this
+  --     apply this b
+  --     simp
+  --   intro hinj y
+  --   have h : f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by -- see L06_PreimageNonempty
+  --     unfold Ne
+  --     rw [eq_empty_iff_forall_notMem]
+  --     simp
+  --   rw [← h]
+  --   -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(
+  --   have g : f ⁻¹' ∅ = ∅ := by
+  --     simp
+  --   rw [← g]
+  --   rw [Injective.ne_iff hinj]
+  --   simp
+  -- · intro h_surj
+  --   intro s s' hs
+  --   apply congr_arg (image f) at hs
+  --   rw [Surjective.image_preimage h_surj] at hs
+  --   rw [Surjective.image_preimage h_surj] at hs
+  --   assumption
 
 /-
 Conclusion "

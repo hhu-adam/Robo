@@ -53,12 +53,13 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
     symm
     apply sum_subset
     · simp
-    · simp
-      intro i h hI
-      apply hI at h
-      rw [Odd.neg_pow]
-      ring
-      assumption
+    · grind [Odd.neg_pow]
+      -- simp
+      -- intro i h hI
+      -- apply hI at h
+      -- rw [Odd.neg_pow]
+      -- ring
+      -- assumption
   · trans ∑ i ∈ { i ∈ I | Even i}, 2
     have : ∀ i ∈ { i ∈ I | Even i}, (-1 : ℤ)^i + 1 = 2 := by
       /-
@@ -66,13 +67,14 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
         **Robo**:  Dazu hatten wir doch schon mal etwas gesehen, zum Beispiel `Even.neg_pow` und `Odd.neg_pow`.
       "
       -/
-      Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
-      intro i hi
-      simp at hi
-      obtain ⟨hI, heven⟩ := hi
-      rw [Even.neg_pow]
-      ring
-      assumption
+      grind [Even.neg_pow]
+      -- Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
+      -- intro i hi
+      -- simp at hi
+      -- obtain ⟨hI, heven⟩ := hi
+      -- rw [Even.neg_pow]
+      -- ring
+      -- assumption
     /-
     Hint (hidden :=true) "
       **Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieter `sum_congr` verwenden kannst.

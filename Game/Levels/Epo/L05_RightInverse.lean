@@ -25,8 +25,9 @@ Statement :
   and then apply `use g`. Think how right inverse of `f` could look like."
   let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ (2 * m - n, n - m)
   use g
-  intro m
-  simp [g, f]
-  ring
+  grind
+  -- intro m
+  -- simp [g, f]
+  -- ring
 
 NewDefinition Function.HasRightInverse

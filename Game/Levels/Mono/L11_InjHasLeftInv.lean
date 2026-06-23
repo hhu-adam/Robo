@@ -66,6 +66,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A ‚Ü
       assumption
     choose g hg using this
     use g
+    -- grind
     intro a
     apply hf
     obtain hpos | hneg := hg (f a)
@@ -85,6 +86,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A ‚Ü
     intro hL
     intro a a' ha
     obtain ‚ü®g, hg‚ü© := hL
+    -- grind
     apply congr_arg g at ha
     unfold LeftInverse at hg
     rw [hg a, hg a'] at ha
