@@ -12,7 +12,7 @@ import Game.Metadata.MatrixNotation
 
 /-- subset.def versus subset_iff --/
 /- mathlib has three lemmas of this kind
-  
+
   #check Set.subset_def      -- (a)
   #check Finset.subset_def   -- (b)
   #check Finset.subset_iff   -- (c)
