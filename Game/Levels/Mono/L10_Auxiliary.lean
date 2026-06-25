@@ -7,7 +7,7 @@ Title ""
 
 Introduction ""
 
-open Function Set
+open Function Set FullGrind
 
 -- Could be done much earlier; needed as a have statement in the Boss level
 -- Presumably needs hints!!
