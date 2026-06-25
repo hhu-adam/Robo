@@ -35,9 +35,9 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
   · intro hinj
     intro b
     suffices : f ⁻¹' {b} ≠ ∅
-    grind
+    · grind
     have h : f ⁻¹' ∅ = ∅
-    grind
+    · grind
     rw [← h]
     rw [Injective.ne_iff]
     simp
@@ -47,9 +47,9 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
     apply congr_arg (image f) at hs
     rw [image_preimage_eq] at hs
     rw [image_preimage_eq] at hs
-    assumption
-    assumption
-    assumption
+    · assumption
+    · assumption
+    · assumption
   -- constructor
   -- · Branch
   --     intro h_inj

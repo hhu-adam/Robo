@@ -76,17 +76,16 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
       -/
       Hint "Remind that, assumpion `{h₁} : {a} ∈ {f} {a}` will be needed agian.
       Try `have` or `suffices : {a} ∉ {f} {a}`"
+    -- grind -- already closes goal here!
     suffices : a ∉ f a
     · contradiction
-    grind
-    -- rw [ha] at h₁
-    -- simp at h₁ --or: rw [mem_setOf] at h₁
-    -- assumption
-  · grind
-    -- apply h₁
-    -- rw [ha]
-    -- simp --or: rw [mem_setOf]
-    -- assumption
+    rw [ha] at h₁
+    simp at h₁ --or: rw [mem_setOf] at h₁
+    assumption
+  · apply h₁
+    rw [ha]
+    simp --or: rw [mem_setOf]
+    assumption
 
 TheoremTab "Set"
 

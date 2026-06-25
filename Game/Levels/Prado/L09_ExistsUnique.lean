@@ -39,7 +39,7 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
   Hint "Show two statements: (1) `{w}` satisfies `a * {w} = b` and (2) `{w}` is the only element with
   such a property"
   constructor
-  · rw [hw]
+  · rw [hw] -- or grind
   /-
   · Hint "
     **Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma
@@ -64,9 +64,7 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
       · assumption
     -/
     rw [mul_eq_mul_left_iff] at hy  -- `mul_eq_mul_left_iff` also used in ROBOTSWANA!
-    obtain h | h := hy
-    · assumption
-    · grind
+    grind
 
 NewDefinition ExistsUnique
 

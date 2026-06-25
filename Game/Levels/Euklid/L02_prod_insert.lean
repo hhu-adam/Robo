@@ -49,6 +49,11 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
   -/
   Hint "Use `prod_insert` to actually extract the factot"
   rw [prod_insert]
+  Branch
+    · obtain ⟨k, hk⟩ := hpa
+      use k * ∏ x ∈ erase A a, x
+      rw [hk]
+      ring
   · grind
   /-
   Hint (hidden := true) "

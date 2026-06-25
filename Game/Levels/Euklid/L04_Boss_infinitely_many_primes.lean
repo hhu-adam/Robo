@@ -55,8 +55,10 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
         intro h
         rw [prime_def] at h
         grind
-      simp [new_prime]
-      assumption
+      Branch
+        simp [new_prime]
+        assumption
+      grind
     apply exists_prime_and_dvd
     grind
   -- On the other hand, by construction, no prime divides new_prime:
@@ -66,11 +68,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
     -- new_prime = p * q + 1 …
     have h : prod = p * q := by
       /- slightly longer version that uses prod_insert: -/
-      simp[prod]
+      simp [prod]
       have : p ∈ all_primes := by
         simp [all_primes]
         assumption
-      rw[← Finset.insert_erase this]
+      rw [← Finset.insert_erase this]
       apply Finset.prod_insert
       simp
       /- shorter, older version that used mul_prod_erase: -/

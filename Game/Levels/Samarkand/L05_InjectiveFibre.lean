@@ -30,15 +30,10 @@ Statement Injective.exists_unique_of_mem_range {A B : Type} {f : A → B} (hf : 
   **Robo**: … und dann wendest du `use a` und `simp` an.  Genau.
   "
   -/
-  Hint "Try `∃! a` to construct `a`, Try `use a` and `simp`"
+  Hint "For `∃! a`, first construct `a`, then `use a` (best followed by `simp`)."
   obtain ⟨a, ha⟩ := hb
   use a
-  simp
-  constructor
-  · assumption
-  · intro a' ha'
-    apply hf
-    rw [ha',ha]
+  grind
 
 /-
 Conclusion "
