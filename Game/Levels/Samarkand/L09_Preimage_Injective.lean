@@ -57,7 +57,7 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
         rw [eq_empty_iff_forall_notMem]
         simp
       rw [← h]
-      -- change f ⁻¹' {y} ≠ ∅ -- TODO: it's displayed not nicely :(
+      change preimage f {y} ≠ ∅
       have g : f ⁻¹' ∅ = ∅ := by
         simp
       rw [← g]
@@ -70,24 +70,24 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
       rw [Surjective.image_preimage h_surj] at hs
       assumption
   constructor
-  intro hinj
-  intro b
-  suffices : f ⁻¹' {b} ≠ ∅
-  · grind
-  have h : f ⁻¹' ∅ = ∅
-  · grind
-  rw [← h]
-  rw [Injective.ne_iff]
-  simp
-  assumption
-  intro h_surj
-  intro s s' hs
-  apply congr_arg (image f) at hs
-  rw [image_preimage_eq] at hs
-  rw [image_preimage_eq] at hs
-  · assumption
-  · assumption
-  · assumption
+  · intro hinj
+    intro b
+    suffices : f ⁻¹' {b} ≠ ∅
+    · grind
+    have h : f ⁻¹' ∅ = ∅
+    · grind
+    rw [← h]
+    rw [Injective.ne_iff]
+    simp
+    assumption
+  · intro h_surj
+    intro s s' hs
+    apply congr_arg (image f) at hs
+    rw [image_preimage_eq] at hs
+    rw [image_preimage_eq] at hs
+    · assumption
+    · assumption
+    · assumption
 
 /-
 Conclusion "

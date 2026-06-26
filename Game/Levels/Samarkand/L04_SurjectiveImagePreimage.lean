@@ -19,7 +19,7 @@ TheoremDoc Set.image_preimage_eq as "image_preimage_eq" in "Function"
 
 namespace Set
 
-Statement Surjective.image_preimage {A B : Type} {f : A → B} (hf : Surjective f) (T : Set B) :
+Statement image_preimage_eq {A B : Type} {f : A → B} (T : Set B) (hf : Surjective f) :
 f '' (f ⁻¹' T) = T := by
   /-
   Hint "
@@ -40,7 +40,9 @@ f '' (f ⁻¹' T) = T := by
   ext b
   simp
   constructor
-  · apply image_preimage_subset -- Lvl 1
+  · /- to remove. -/
+    Hint (hidden := true) (strict := true) "[Hint asdf] remember `image_preimage_subset` "
+    apply image_preimage_subset -- Lvl 1
   · intro hb
     obtain ⟨a, ha⟩ := hf b
     use a
