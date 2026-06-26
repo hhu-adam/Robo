@@ -9915,7 +9915,7 @@ msgstr ""
 "\n"
 "**You**:  How? What's §3, for example? \n"
 "\n"
-"**Scribble**: No idea. What I meant, of course, is: *if §4 is*, then §5 is "
+"**Scribble**: No idea. What I meant, of course, is: *if §4*, then §5 is "
 "still the “same” number."
 
 #: Game.Levels.Vieta.L08_CongrArg
