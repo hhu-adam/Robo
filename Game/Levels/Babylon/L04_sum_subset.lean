@@ -49,12 +49,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     **Robo**:  Hier kannst du bestimmt `Icc_subset_Icc_iff` gut gebrauchen.
   "
   -/
-  · Branch
-      -- old proof
-      rw [Icc_subset_Icc_iff] -- introduced in PIAZZA
-      · grind
-      · assumption
-    grind
+  · grind
   · -- showing that x = 0 or 1 or 2:  see Luna L??
     /-
     Hint "
