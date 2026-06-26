@@ -40,8 +40,7 @@ f '' (f ⁻¹' T) = T := by
   ext b
   simp
   constructor
-  · /- to remove. -/
-    Hint (hidden := true) (strict := true) "[Hint asdf] remember `image_preimage_subset` "
+  · Hint "[Hint rips] remember `image_preimage_subset`"
     apply image_preimage_subset -- Lvl 1
   · intro hb
     obtain ⟨a, ha⟩ := hf b
