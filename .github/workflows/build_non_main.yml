@@ -3,9 +3,6 @@ run-name: Build the game
 on:
   workflow_dispatch:
   pull_request:
-  push:
-    branches-ignore:
-    - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
