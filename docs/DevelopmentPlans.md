@@ -32,8 +32,9 @@ See folder Levels_inactive/v2
 | +  RealUncountable                  | draft solution            |                              |
 |                                     |                           |                              |
 | **Analysis**                        |                           |                              |
-| ++ FibresCard2                      | full solution             |                              |
 | +  light and shadow                 | 1/2 solution              |                              |
+| +? FibresCard2                      | full solution             |                              |
+| ?? [Smooth take-off](https://en.wikipedia.org/wiki/Non-analytic_smooth_function#An_example_function) | | |
 |                                     |                           |                              |
 |                                     |                           |                              |
 | **Possible future versions:**       |                           |                              |
