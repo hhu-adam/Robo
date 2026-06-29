@@ -31,11 +31,11 @@ Statement StrictMono.injective {f : ℤ → ℤ}
   obtain hlt | heq | hgt := lt_trichotomy a b
   · apply hf at hlt
     rw [h] at hlt
-    linarith
+    grind
   · assumption
   · -- proof by symmetry (e.g. `wlog` or `swap`)
     apply hf at hgt
     rw [h] at hgt
-    linarith
+    grind
 
 DisabledTheorem StrictMono.injective

@@ -65,7 +65,7 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
   Hint (hidden := true) "Rewrite so you can use `ring`"
   rw [h, g]
   Branch
-    linarith  -- works here, but omega does not!
+    grind
   ring
 
 /--

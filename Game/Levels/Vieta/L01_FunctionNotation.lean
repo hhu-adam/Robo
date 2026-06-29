@@ -27,7 +27,7 @@ Statement (f : ℤ → ℕ) (n : ℤ): f n ≥ 0 := by
   Hint "Explain `f` as mapping from `ℤ` to `ℕ`:
   `f n` is notation for $f(n)$. If you want to use brackets it has to be `f (n)`.
   "
-  linarith  -- oder simp
+  grind
 
 /-
 Conclusion"
