@@ -6,4 +6,4 @@ images/tmp-download/
 *~
 min_placeholders/
 .vscode/
-.i18n/de/Game.mo
+*.mo
