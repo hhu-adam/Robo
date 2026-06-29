@@ -6,7 +6,8 @@ import Game.Levels.Quantus
 
 import Game.Levels.Saturn
 import Game.Levels.Spinoza
-import Game.Levels.Luna
+-- Luna is disabled: its remaining levels stay in the repo but are no longer part of the game.
+-- import Game.Levels.Luna
 import Game.Levels.Babylon
 
 import Game.Levels.Cantor
@@ -24,6 +25,8 @@ import Game.Levels.Samarkand
 import Game.Levels.Iso
 
 import Game.Levels.Piazza
+
+import Game.Levels.Cafe
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
@@ -45,6 +48,7 @@ CoverImage "images/Cover.png"
 
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
 Dependency Quantus → Piazza -- because of `∀`
+-- Dependency Quantus → Cafe -- because of `ring`
 Dependency Prado → Mono     -- beclause of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
 

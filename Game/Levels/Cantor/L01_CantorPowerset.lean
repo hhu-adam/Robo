@@ -28,7 +28,7 @@ open Set Function
 
 Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
   --Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
-  Hint "Remind: `mem_setOf` from `Set` could be helpful"
+  --Hint "Remind: `mem_setOf` from `Set` could be helpful"
   /-
   Hint "**Du**:  Ist also `Set A` die Potenzmenge von `A`?
 

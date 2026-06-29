@@ -37,7 +37,7 @@ Statement not_dvd_of_lt_of_lt_mul_succ {m n k : ℕ} (h1 : n * k < m) (h2 : m < 
   rw [ha] at h1 h2
   apply lt_of_mul_lt_mul_left at h1  -- needs to be supplied as a hint
   apply lt_of_mul_lt_mul_left at h2  -- Note: Nat. is necessary here!
-  omega
+  grind
 
 /---/
 TheoremDoc lt_of_mul_lt_mul_left as "lt_of_mul_lt_mul_left" in "≤"

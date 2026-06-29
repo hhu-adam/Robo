@@ -40,7 +40,7 @@ Statement (m : ℕ) : (∑ i ∈ Icc 0 m, (i : ℚ) ^3) = (∑ i ∈  Icc 0 m, i
         simp
         ring
       · simp
-    · linarith
+    · grind
 
 TheoremTab "∑ Π"
 

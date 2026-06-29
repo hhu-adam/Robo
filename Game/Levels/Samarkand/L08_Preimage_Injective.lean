@@ -42,8 +42,8 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
         intro a
         specialize h_contra a
         assumption
-      have : preimage f ∅ = preimage f {b}
-      rw [preimage_empty,h]
+      have : preimage f ∅ = preimage f {b} := by
+        simp [h]
       apply h_inj at this
       symm at this
       rw [eq_empty_iff_forall_notMem] at this
@@ -59,7 +59,6 @@ Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f)
     have g : f ⁻¹' ∅ = ∅ := by
       simp
     rw [← g]
-    -- or: `rw [← preimage_empty]`
     rw [Injective.ne_iff hinj]
     simp
   · intro h_surj

@@ -18,6 +18,7 @@ Introduction "Intro Samarkand L04"
 TheoremDoc Function.Surjective.image_preimage as "Surjective.image_preimage" in "Function"
 
 namespace Function
+
 Statement Surjective.image_preimage {A B : Type} {f : A → B} (hf : Surjective f) (T : Set B) :
 f '' (f ⁻¹' T) = T := by
   /-

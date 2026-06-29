@@ -146,7 +146,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       Probier mal `trans {f} (∑ j : Fin {n}, E {i} {i})` als nächsten Schritt.
       "
     -/
-    Hint "Try `trans {f} (∑ j : Fin {n}, E {i} {i})`"
+    Hint "[Hint yvqm] Try `trans {f} (∑ j : Fin {n}, E {i} {i})`"
     trans f (∑ x : Fin n, E i i)
     /-
     · Hint "**Du**: Genau, jetzt müssen wir für diese erste Gleichheit nur die konstante Summe ausrechnen.
@@ -156,7 +156,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     · Hint "Try `simp [E]`"
       simp [E] -- TODO: This is a bit magical in the sense that `simp; unfold E; simp` seems not to work
     -- · Hint (hidden := true )"**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-    · Hint (hidden := true ) "Pull function into sum"
+    · Hint (hidden := true ) "[Robotswana.L09] Hint: pull function into sum 1"
       /-
       Hint "**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt
       `{f} (∑ x, E x x)` zeigen."
@@ -166,13 +166,13 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · Branch
           apply congr_arg
           -- Hint "**Du**: Nein, das ist jetzt mathematisch falsch!"
-          Hint "Story"
+          Hint "[Robotswana.L09] Hint 1: `apply congr_arg` is mathematically wrong"
         /-
         Hint (hidden := true) "**Robo**: Jetzt wieder `congr`-`ext`?
 
         **Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
         -/
-        Hint (hidden := true) "Pull function into sum"
+        Hint (hidden := true) "[Robotswana.L09] Hint: pull function into sum 2"
         rw [map_sum]
         -- Hint "**Du**: Nochmals!"
         Hint "again"
@@ -180,9 +180,9 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
         apply congr_arg
         ext j
         -- Hint "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
-        Hint "Remind of previous result"
+        Hint "[Hint dkmw] Remind of previous result"
         -- Hint (hidden := true) "**Robo**: `eq_on_diag_ebasis` sagt meine Speicherplatte."
-        Hint (hidden := true) "Try `eq_on_diag_ebasis`"
+        Hint (hidden := true) "[Hint fzwc] Try `eq_on_diag_ebasis`"
         rw [eq_on_diag_ebasis] -- Lvl 5
         assumption
       -- · Hint (hidden := true) "**Robo**: Das sieht nach `ebasis_diag_sum_eq_one` aus."
@@ -196,7 +196,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       · apply congr_arg
         ext
         -- Hint (hidden := true) "**Robo**: Das hatten wir schon gesehen."
-        Hint (hidden := true) "Remind of previous result"
+        Hint (hidden := true) "[Hint ztqn] Remind of previous result"
         rw [eq_on_diag_ebasis] -- Lvl 5
         assumption
       · trans f 1

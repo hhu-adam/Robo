@@ -11,7 +11,6 @@ open Function Nat
 
 -- How we write the definition of `diag` – whether as `(fun a _ ↦ a)` or `fun a ↦ (fun i ↦ a)`  or `…`
 -- does not affect the way it is displayed in the game!
-
 Statement {A : Type} (n : ℕ) :
     let diag : A → Fin (n + 1) → A := fun a i ↦ a
     Injective (diag) := by

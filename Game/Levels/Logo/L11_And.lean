@@ -32,10 +32,10 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
   Branch
     obtain ⟨_h₁, _h₂⟩ := h
     -- Hint "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
-    Hint "Try obtain tactic"
+    Hint "[Logo.L11] Hint 2: try `obtain` tactic"
   obtain ⟨_h₁, g, _h₃⟩ := h
   -- Hint (hidden := true) "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
-  Hint "Try Assumption tactic"
+  Hint "[Logo.L11] Hint 3: try `assumption` tactic"
   assumption
 
 /-

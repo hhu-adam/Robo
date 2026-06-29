@@ -25,7 +25,7 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     unfold Prime at hp
     -- Hint "**Robo**:  Nee, lieber nicht.  Du solltest `Prime` nicht unfolden!
     -- Das macht alles nur schwieriger.  Benutze lieber wie ich gesagt hatte `rw [prime_def] at hp`."
-    Hint "Do not unfold `Prime`. Use `rw [prime_def] at hp`"
+    Hint "Do not `unfold` `Prime`. Use `rw [prime_def] at hp`"
   rw [prime_def] at hp
   -- Hint "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch
   -- `1` und sich selbst teilbar ist.  Das klingt vertraut."
@@ -50,7 +50,7 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
     · apply ha'
       assumption
     obtain h1 | h2 := ha''
-    linarith
+    grind
     assumption
   Branch
     -- alternative to `specialize`
@@ -61,7 +61,7 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   --· Hint (hidden := true) "**Robo**:  Probier mal `linarith`.  Das sollte den Widerspruch aufdecken, der sich aus
   --  `{a} = 1` und `2 ≤ {a}` ergibt."
   · Hint (hidden := true) "Try `linarith` to show contradiction between `{a} = 1` and `2 ≤ {a}`"
-    linarith
+    grind
   · assumption
 
 NewTactic specialize

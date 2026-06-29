@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-01\n"
+"POT-Creation-Date: 2026-05-12\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -113,6 +113,11 @@ msgstr ""
 "noch nicht gelöst hast.\n"
 "\n"
 "## Neuigkeiten\n"
+"\n"
+"`[2026-05-21]` Im Spiel ist jetzt nur noch ein kleine Teilmenge der `simp`-"
+"Lemmas aus `mathlib` zugelassen.  Wenn eine Level, das bis gestern noch als "
+"gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es "
+"wahrscheinlich daran, dass du eine `simp`le Abkürzungen genommen hattest.\n"
 "\n"
 "`[2026-03-20]` Robo gibts jetzt auch auf Englisch! Über weitere "
 "Übersetzungen würden wir uns [sehr freuen](https://github.com/hhu-adam/Robo/"
@@ -998,7 +1003,7 @@ msgstr ""
 #. §15: `ha : a ∈ A`
 #. §16: `use a`
 #. §17: `h : Nonempty T`
-#. §18: `obtain ⟨t⟩ := t`
+#. §18: `obtain ⟨t⟩ := h`
 #. §19: `t`
 #. §20: `t : T`
 #. §21: `h : Nonempty A`
@@ -1983,8 +1988,6 @@ msgid ""
 msgstr ""
 "Die Taktik §0 versucht eine große Zahl an Lemmas anzuwenden, um einen "
 "gegebenen Ausdruck zu vereinfachen.\n"
-"(Technisch handelt es sich um alle Lemmas in §1, die durch §2 gekennzeichnet "
-"sind.)\n"
 "\n"
 "## Varianten\n"
 "\n"
@@ -1993,7 +1996,12 @@ msgstr ""
 "* §6 benutzt zusätzliche die Definition von §7\n"
 "* §8 benutzt ausschließlich die Voraussetzungen/Lemmas/Definitionen §9, §10 "
 "und §11\n"
-"* §12 zeigt dir an, welche Lemmas verwendet wurden"
+"\n"
+"*(Im wirklichen Leben ist §0 sehr viel stärker als in diesem Spiel: §0 "
+"versucht, alle Lemmas anzuwenden, die in §1 mit §3 entsprechend "
+"gekennzeichnet sind, und das sind viele! Darunter sind auch Lemmas, die "
+"einige der hier gestellten Aufgaben in einem Schritt lösen würden.  Im Spiel "
+"ist daher nur eine kleine Teilmenge dieser Lemmas zugelassen.)*"
 
 #. §0: `constructor`
 #. §1: `⊢ A ∧ B`
@@ -2585,100 +2593,6 @@ msgstr ""
 "**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal "
 "genau nachlesen, warum er steht. Hier zum Beispiel."
 
-#: Game.Levels.Babylon.L01_Sum_Simp_Card Game.Levels.Babylon.L02_Card2
-#: Game.Levels.Babylon.L03_sum_congr Game.Levels.Babylon.L04_sum_subset
-#: Game.Levels.Babylon.L05_sum_subset2
-#: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
-#: Game.Levels.Babylon.L07_Induction2_sum_insert2
-#: Game.Levels.Babylon.L08_Induction3_sub_insert3 Game.Levels.Babylon.L09_Boss
-#: Game.Levels.Cantor.L01_CantorPowerset Game.Levels.Cantor.L02_CantorPowerset
-#: Game.Levels.Cantor.L03_IsFixedPt_abs Game.Levels.Cantor.L04_fixedPoints_neg
-#: Game.Levels.Cantor.L05_IsFixedPt_not Game.Levels.Cantor.L06_IsFixedPt_odd
-#: Game.Levels.Cantor.L07_idempotent
-#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
-#: Game.Levels.Cantor.L09_CantorDiag Game.Levels.Cantor.L10_CantorPowerset
-#: Game.Levels.Cantor.L11_SequenceUncountable Game.Levels.Ciao.L01
-#: Game.Levels.Epo.L01_Surjective Game.Levels.Epo.L02_CurrySurjective
-#: Game.Levels.Epo.L03_LeftInverse Game.Levels.Epo.L04_RightInverse
-#: Game.Levels.Epo.L05_RightInverse Game.Levels.Epo.L06_choose
-#: Game.Levels.Epo.L07_SurjectiveRightInverse Game.Levels.Euklid.L01_prod_pos
-#: Game.Levels.Euklid.L02_prod_insert
-#: Game.Levels.Euklid.L03_Finite_toFinset__prod_insert2
-#: Game.Levels.Euklid.L04_Boss_infinitely_many_primes
-#: Game.Levels.Implis.L01_Intro Game.Levels.Implis.L02_Revert
-#: Game.Levels.Implis.L03_Apply Game.Levels.Implis.L04_Apply
-#: Game.Levels.Implis.L05_Apply Game.Levels.Implis.L06_Iff
-#: Game.Levels.Implis.L07_Symm Game.Levels.Implis.L08_Rw
-#: Game.Levels.Implis.L09_Trans Game.Levels.Implis.L10_Iff
-#: Game.Levels.Implis.L11_Iff Game.Levels.Implis.L12_ByCases
-#: Game.Levels.Implis.L13_Rw Game.Levels.Implis.L14_Summary
-#: Game.Levels.Iso.L01_Bijective Game.Levels.Iso.L02_Inverse
-#: Game.Levels.Logo.L01_Tauto Game.Levels.Logo.L02_Rfl
-#: Game.Levels.Logo.L03_Assumption Game.Levels.Logo.L04_Assumption
-#: Game.Levels.Logo.L05_True Game.Levels.Logo.L06_Not
-#: Game.Levels.Logo.L07_Contradiction Game.Levels.Logo.L08_Contradiction
-#: Game.Levels.Logo.L09_Contradiction Game.Levels.Logo.L10_And
-#: Game.Levels.Logo.L11_And Game.Levels.Logo.L12_Or Game.Levels.Logo.L13_Or
-#: Game.Levels.Logo.L14_Summary Game.Levels.Luna.L01_le_rfl
-#: Game.Levels.Luna.L02_Omega Game.Levels.Luna.L03_Linarith__lt_trichotomy
-#: Game.Levels.Luna.L04_Omega2 Game.Levels.Luna.L05_Linarith2
-#: Game.Levels.Luna.L06_Icc__Icc_insert_succ_right
-#: Game.Levels.Luna.L07_Linarith2 Game.Levels.Luna.L08_Omega3
-#: Game.Levels.Luna.L09_lt_trichotomy2 Game.Levels.Luna.L10_Icc_subset_Icc_iff
-#: Game.Levels.Mono.L01_Injective Game.Levels.Mono.L02_InjectiveNeIff
-#: Game.Levels.Mono.L03_NotInjective Game.Levels.Mono.L04_Diagonal
-#: Game.Levels.Mono.L05_StrictMono Game.Levels.Mono.L06_StrictMono
-#: Game.Levels.Mono.L07_SuccHasLeftInv Game.Levels.Mono.L08_RightInvOfLeftInv
-#: Game.Levels.Mono.L09_InjOfHasLeftInv Game.Levels.Mono.L10_Auxiliary
-#: Game.Levels.Mono.L11_InjHasLeftInv Game.Levels.Piazza.L01_Mem__Set
-#: Game.Levels.Piazza.L02_Simp Game.Levels.Piazza.L03_Ext__Set__Union__Inter
-#: Game.Levels.Piazza.L04_Generalize__univ__eq_univ_iff_forall
-#: Game.Levels.Piazza.L05_empty__eq_empty_iff_forall_notMem
-#: Game.Levels.Piazza.L06_Ext2__univ2 Game.Levels.Piazza.L07_antisymm_iff
-#: Game.Levels.Piazza.L08_subset_iff Game.Levels.Piazza.L09_subset_iff2
-#: Game.Levels.Piazza.L10 Game.Levels.Piazza.L11_erase
-#: Game.Levels.Piazza.L12_insert Game.Levels.Piazza.L13_insert_erase
-#: Game.Levels.Prado.L01_prime_two
-#: Game.Levels.Prado.L02_dvd_iff_exists_eq_mul_left
-#: Game.Levels.Prado.L03_even_iff_two_dvd Game.Levels.Prado.L04_99
-#: Game.Levels.Prado.L05_not_dvd_of_lt_of_lt_mul_succ
-#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
-#: Game.Levels.Prado.L07_dvd_mul Game.Levels.Prado.L08_exists_prime_and_dvd
-#: Game.Levels.Prado.L09_ExistsUnique Game.Levels.Prado.L10_EvenPrime
-#: Game.Levels.Quantus.L01_NonemptyUse Game.Levels.Quantus.L02_NonemptyObtain
-#: Game.Levels.Quantus.L03_Decide Game.Levels.Quantus.L04_Exists
-#: Game.Levels.Quantus.L05_neg_pow Game.Levels.Quantus.L06_not_even_iff_odd
-#: Game.Levels.Quantus.L07_Forall Game.Levels.Quantus.L08_PushNeg
-#: Game.Levels.Quantus.L09_PushNeg Game.Levels.Quantus.L10_DrinkersParadox
-#: Game.Levels.Robotswana.L01_SMulEBasis Game.Levels.Robotswana.L02_EBasis
-#: Game.Levels.Robotswana.L03 Game.Levels.Robotswana.L04_MatrixEqSum
-#: Game.Levels.Robotswana.L05_EBasisDiagSum
-#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
-#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
-#: Game.Levels.Robotswana.L08_EvalOnEBasis
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
-#: Game.Levels.Robotswana.L10_Characterize Game.Levels.Robotswana.L11_Linearity
-#: Game.Levels.Samarkand.L01_ImagePreimage Game.Levels.Samarkand.L02_ImageMap
-#: Game.Levels.Samarkand.L03_SurjectiveRange
-#: Game.Levels.Samarkand.L04_SurjectiveImagePreimage
-#: Game.Levels.Samarkand.L05_InjectiveFibre
-#: Game.Levels.Samarkand.L06_PreimageNonempty
-#: Game.Levels.Samarkand.L07_LeftInvPreimage
-#: Game.Levels.Samarkand.L08_Preimage_Injective
-#: Game.Levels.Saturn.L01_Rewrite_equality
-#: Game.Levels.Saturn.L02_Ring_add_pow_two Game.Levels.Saturn.L03_mul_comm
-#: Game.Levels.Saturn.L04_mul_assoc Game.Levels.Saturn.L05_Ring
-#: Game.Levels.Spinoza.L01_Have Game.Levels.Spinoza.L02_Suffices
-#: Game.Levels.Spinoza.L03_ByContra Game.Levels.Spinoza.L04_ByContra
-#: Game.Levels.Spinoza.L05_Contrapose Game.Levels.Spinoza.L06_Summary
-#: Game.Levels.Vieta.L01_FunctionNotation Game.Levels.Vieta.L02_Function
-#: Game.Levels.Vieta.L03_Let Game.Levels.Vieta.L04_Let
-#: Game.Levels.Vieta.L05_Funext Game.Levels.Vieta.L06_Piecewise
-#: Game.Levels.Vieta.L07_Extend Game.Levels.Vieta.L08_CongrArg
-#: Game.Levels.Vieta.L09_CongrFun Game.Levels.Vieta.L10_Surjective
-msgid "mysterious"
-msgstr "(mysteriöser Eintrag)"
-
 #. §0: `simp`
 #: Game.Levels.Babylon.L02_Card2
 msgid "Again try using §0"
@@ -2712,9 +2626,9 @@ msgstr ""
 
 #. §0: `apply sum_congr`
 #: Game.Levels.Babylon.L03_sum_congr
-msgid "try §0"
+msgid "[Hint hwzk] Try §0"
 msgstr ""
-"**Robo**:  Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind "
+"**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind "
 "insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und "
 "auch die Ausdrücke, über die summiert wird, übereinstimmen."
 
@@ -2758,13 +2672,11 @@ msgstr "**Robo**:  Gut.  Und jetzt §0."
 #. §4: `I₁ ⊆ I₂`
 #. §5: `I₁`
 #. §6: `I₂`
-#. §7: `I₁`
-#. §8: `I₂`
 #: Game.Levels.Babylon.L04_sum_subset
 msgid ""
 "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: "
-"If §4 and term is disappearing for all elements in §5 not in §6, then the "
-"sum over §7 equals sum over §8"
+"If §4 and term is disappearing for all elements in I₂ not in I₁, then the "
+"sum over §5 equals sum over §6"
 msgstr ""
 "**Du**: Mal langsam.  Zu zeigen ist:\n"
 "\n"
@@ -2774,8 +2686,8 @@ msgstr ""
 "Werte von §2 … ja, genau. Und wie formulier ich das jetzt?\n"
 "\n"
 "**Robo**: Du könntest §3 verwenden: ist §4, und verschwindet der Ausdruck in "
-"der Summe auf allen Element von §5, die nicht in §6 liegen, so ist die Summe "
-"über §7 gleich der Summe über §8."
+"der Summe auf allen Element von §6, die nicht in §5 liegen, so ist die Summe "
+"über §5 gleich der Summe über §6."
 
 #: Game.Levels.Babylon.L04_sum_subset
 msgid "Show that term in sum is zero for first three indexes"
@@ -2791,6 +2703,10 @@ msgstr ""
 "**Robo**:  Irgendeine Kombination von §0 und §1 wird das schon lösen. Hat "
 "doch auf Luna auch geklappt."
 
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "Wrong order"
+msgstr "**Robo**:  Nein, das sieht falsch herum aus."
+
 #. §0: `«{h}»`
 #. §1: `obtain`
 #. §2: `obtain h | h | h  := «{h}»`
@@ -2799,6 +2715,12 @@ msgid "[Babylon] Split §0 with §1: §2"
 msgstr ""
 "**Robo**:  Die Annahme §0 kannst du ja jetzt mit §1 in die drei Fälle "
 "aufteilen: §2."
+
+#. §0: `symm`
+#: Game.Levels.Babylon.L04_sum_subset
+msgid "[Hint rxjt] Try §0"
+msgstr ""
+"**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
 #. §0: `Icc_subset_Icc_iff`
 #: Game.Levels.Babylon.L04_sum_subset
@@ -2861,6 +2783,15 @@ msgstr ""
 msgid "Try out §0 again"
 msgstr "**Robo**: Probier mal wieder §0."
 
+#. §0: `sum_subset`
+#. §1: `symm`
+#: Game.Levels.Babylon.L05_sum_subset2
+msgid "Try §0 from the other side or §1 beforehand"
+msgstr ""
+"**Robo**:  Das sieht irgendwie falsch aus …\n"
+"  Vielleicht solltest du §0 lieber rückwarts anwenden.\n"
+"  Oder vor diesem Schritt mit §1 die Gleichung umdrehen."
+
 #. §0: `rw`
 #: Game.Levels.Babylon.L06_Induction_sum_insert__arithmetic_sum
 msgid "Apply induction hypothesis with §0"
@@ -2915,7 +2846,9 @@ msgid ""
 "decide on the name of your induction variable (§4) and hypothesis (§5)."
 msgstr ""
 "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n"
+"\n"
 "§0\n"
+"\n"
 "Gabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz "
 "einfaches Argument für hatte?\n"
 "\n"
@@ -3093,11 +3026,19 @@ msgstr ""
 "**Cantor**:  Wenn ich schon zwei Publikums habe, könnten die ja auch ein "
 "bisschen mitmachen, nicht wahr?"
 
-#. §0: `mem_setOf`
-#. §1: `Set`
+#. §0: `«{h₁}» : «{a}» ∈ «{f}» «{a}»`
+#. §1: `have`
+#. §2: `suffices : «{a}» ∉ «{f}» «{a}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
-msgid "Remind: §0 from §1 could be helpful"
-msgstr "**Robo**: Denk daran, dass §0 irgendwann hilfreich sein könnte."
+msgid ""
+"Remind that, assumpion §0 will be needed agian.\n"
+"Try §1 or §2"
+msgstr ""
+"**Cantor**: Gute Idee!  Fast richtig!\n"
+"  Aber ihr werdet die ursprünglich Annahme §0 gleich noch einmal brauchen.\n"
+"\n"
+"**Robo**:  Okay, zurück und mit §1 weiter.\n"
+"  Oder mit §2!"
 
 #. §0: `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`
 #: Game.Levels.Cantor.L01_CantorPowerset
@@ -3430,6 +3371,22 @@ msgstr ""
 "ihr eine Abbildung vor euch, die auf einem Produkt §0 definiert ist! Und im "
 "Produkt gibt es eine Diagonale!"
 
+#. §0: `f a a`
+#. §1: `s f a a`
+#. §2: `f a a`
+#. §3: `nth_rw 2 [«{ha}»]`
+#: Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
+msgid ""
+"§0 was replaced by §1. It is probably necessary to rewrite the second\n"
+"appearnace of §2 in the goal. Try §3"
+msgstr ""
+"**Robo**:  Jetzt hast du im wesentlichen beide Vorkommen von §0 durch §1 "
+"ersetzt.\n"
+"  Damit drehst du dich im Kreis.  \n"
+"  Wahrscheinlich willst du nur das zweite Vorkommen von §0 im Beweisziel "
+"umschreiben.  \n"
+"  Das machst du mit §3."
+
 #: Game.Levels.Cantor.L09_CantorDiag
 msgid "Conclusion Cantor L09 - 2"
 msgstr "**Cantor**:  Bravo!"
@@ -3530,6 +3487,12 @@ msgstr ""
 "**Du**: Also hier jetzt §0 verwenden?\n"
 "\n"
 "**Robo**: Vermutlich, zum Beispiel mit §1."
+
+#. §0: `cantor_diagonal`
+#: Game.Levels.Cantor.L10_CantorPowerset
+msgid "[Hint mhjv] Try §0"
+msgstr ""
+"**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!"
 
 #: Game.Levels.Cantor.L11_SequenceUncountable
 msgid "Conclusion Cantor L11"
@@ -4242,6 +4205,20 @@ msgstr ""
 "**Robo**: Vielleicht wäre es ohnehin eleganter gewesen, die gegebene "
 "Implikation anzuwenden. Probier doch mal §0."
 
+#. §0: `… at h`
+#. §1: `apply hAB`
+#. §2: `hAB`
+#. §3: `B`
+#. §4: `A`
+#: Game.Levels.Implis.L03_Apply
+msgid ""
+"§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n"
+"§4 has to be proven."
+msgstr ""
+"**Robo**: Ich sagte §0. Aber einfach nur §1 funktioniert offenbar auch.\n"
+"  Jetzt hast Du sozusagen §2 auf das Beweisziel §3 angewendet, und musst nur "
+"noch §4 beweisen."
+
 #. §0: $A \\Rightarrow B \\Rightarrow C$
 #. §1: $A \\Rightarrow C$
 #. §2: `intro`
@@ -4307,10 +4284,10 @@ msgstr "**Robo**: Na wieder §0, was sonst."
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\ %(new line)
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F    \\ %(new line)
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
@@ -4323,6 +4300,36 @@ msgstr ""
 "Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen "
 "Implikationen in einem Diagramm zusammen.\n"
 "§0"
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 1: §0 different prop"
+msgstr "**Robo**: Das sieht nach einer Sackgasse aus …"
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 2: §0 different prop"
+msgstr "**Robo**: Das sieht nicht gut aus."
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 3: §0 different prop"
+msgstr "**Robo**: Nah, da stimmt doch was nicht …"
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 4: §0 different prop"
+msgstr "**Robo**: Halt! Falsch abgebogen."
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 5: §0 different prop at hyp"
+msgstr "**Robo**: Bist du dir sicher?"
+
+#. §0: `apply`
+#: Game.Levels.Implis.L05_Apply
+msgid "[Implis.L05] Hint 6: §0 different prop at hyp"
+msgstr "**Robo**: Ehm …"
 
 #. §0: `(h : A ∧ B)`
 #. §1: `h.left`
@@ -4439,6 +4446,25 @@ msgstr ""
 "**Robo**: Dann schreibst du ein §0 (§1, also klein \"L\") vor den Namen, "
 "also §2."
 
+#. §0: `A ↔ A`
+#. §1: `rfl`
+#. §2: `rw`
+#. §3: `rfl`
+#. §4: `rfl`
+#: Game.Levels.Implis.L08_Rw
+msgid ""
+"You can continue until there is §0 and then apply §1. §2 always uses §3,\n"
+"meaning hat §4 does not have to be written"
+msgstr ""
+"**Du**: Ehm, das war verkehrt.\n"
+"\n"
+"  **Robo**: Ja, anders herum wär's besser gewesen. Aber wenn du jetzt "
+"einfach weitermachst, bis du so etwas wie §0 erhältst, kann §1 das "
+"beweisen.\n"
+"\n"
+"  **Robo:** Da fällt mir ein, §2 wendet ohnehin auch versuchsweise §3 an.\n"
+"  Das heißt, du musst §4 nicht einmal ausschreiben."
+
 #: Game.Levels.Implis.L09_Trans
 msgid "Conclusion Implis L09"
 msgstr ""
@@ -4450,14 +4476,14 @@ msgstr ""
 #. §1: `trans`
 #. §2: $B \\iff A \\iff D \\iff C$
 #. §3: `trans A`
-#. §4: `B \\iff A`
+#. §4: `B ↔ A`
 #. §5: `trans D`
 #: Game.Levels.Implis.L09_Trans
 msgid ""
 "Intro Implis L09: Instead of §0 use §1 here.\n"
 "With it you can solve §2 step-by-step by using\n"
 "§3 to introduce the intermediate step §4 and then\n"
-"perfrom The next step with §5"
+"perform the next step with §5"
 msgstr ""
 "**Du**: Irgendwie fühlen sich diese §0 an, als würde man von hinten durch "
 "den Bauch argumentieren.  Geht das nicht auch irgendwie geradeaus, oder "
@@ -4513,6 +4539,11 @@ msgstr ""
 "\n"
 "**Robo**: Die Richtung §3 von §4 heißt §5. Du kannst sie mit §6 anwenden."
 
+#. §0: `apply g`
+#: Game.Levels.Implis.L10_Iff
+msgid "[Implis.L10] Hint 1: §0 is also a possible direction"
+msgstr "**Robo**: So kannst Du natürlich auch anfangen."
+
 #: Game.Levels.Implis.L11_Iff
 msgid "Conclusion Implis L11"
 msgstr "**Operationsleiter**: Perfekt, das sollte reichen!"
@@ -4558,6 +4589,15 @@ msgid "Start with implication"
 msgstr ""
 "**Du**:  Hmm … Also, zunächst einmal steht da eine Implikation.  Damit "
 "könnte ich ja mal anfangen."
+
+#. §0: `rw [←«{h}»]`
+#. §1: `apply «{h}».mp`
+#. §2: `A → B`
+#: Game.Levels.Implis.L11_Iff
+msgid "Try §0 | §1. Go step back s.t. goal §2"
+msgstr ""
+"**Robo**: Hier müsstest du jetzt §0 oder §1 benutzen.\n"
+"  Geh lieber einen Schritt zurück, sodass das Beweisziel §2 ist."
 
 #: Game.Levels.Implis.L12_ByCases
 msgid "Conclusion Implis L12"
@@ -5340,9 +5380,9 @@ msgstr ""
 msgid "Now you have two goals."
 msgstr ""
 "**Robo**: Schau mal, das ist Zauberpapier.\n"
-"    Jetzt haben wir auf einmal zwei Beweisziele.\n"
-"    Ich glaube, du weißt schon, wie man die jeweils erreicht.\n"
-"    Die Ziele stehen ja jeweils in den *Annahmen*."
+"  Jetzt haben wir auf einmal zwei Beweisziele.\n"
+"  Ich glaube, du weißt schon, wie man die jeweils erreicht.\n"
+"  Die Ziele stehen ja jeweils in den *Annahmen*."
 
 #. §0: `obtain ⟨h₁, h₂ , h₃⟩ := h`
 #: Game.Levels.Logo.L11_And
@@ -5372,9 +5412,9 @@ msgstr ""
 "\n"
 "**Du**: Moment, wie schreib ich *das* denn hier auf?\n"
 "\n"
-"**Robo**: Die bleiden Klammern schreibst du als §1 und §2, oder gleichzeitig "
-"als §3. Und h₁ schreibst du einfach als §4. Aber du kannst dir auch einfach "
-"andere Namen für §5 und §6, zum Beispiel §7."
+"**Robo**: Die beiden Klammern schreibst du als §1 und §2, oder gleichzeitig "
+"als §3. Und §5 schreibst du einfach als §4. Aber du kannst dir auch einfach "
+"andere Namen für §5 und §6 ausdenken, zum Beispiel §7."
 
 #: Game.Levels.Logo.L11_And
 msgid "Intro Logo L11"
@@ -5382,8 +5422,14 @@ msgstr ""
 "Langsam wird die Schlange kürzer.\n"
 "Die nächste Formalosophin, ebenfalls häkelnd, hat folgendes Anliegen."
 
+#. §0: `obtain`
 #: Game.Levels.Logo.L11_And
-msgid "Try Assumption tactic"
+msgid "[Logo.L11] Hint 2: try §0 tactic"
+msgstr "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
+
+#. §0: `assumption`
+#: Game.Levels.Logo.L11_And
+msgid "[Logo.L11] Hint 3: try §0 tactic"
 msgstr "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
 
 #: Game.Levels.Logo.L12_Or
@@ -5410,6 +5456,13 @@ msgstr ""
 "beweisen würde? Ich will natürlich §0 beweisen!\n"
 "\n"
 "**Robo**: Mit §1 bzw. §2. Ist doch logisch, oder?"
+
+#. §0: `right`
+#: Game.Levels.Logo.L12_Or
+msgid "Try §0 tactic"
+msgstr ""
+"**Robo**: Wusste gar nicht, dass du eine Links-Rechts-Schwäche hast. "
+"Probier's nochmal."
 
 #. §0: `ℕ`
 #. §1: `0, 1, 2, …`
@@ -5597,6 +5650,13 @@ msgstr ""
 #: Game.Levels.Logo.L14_Summary
 msgid "Divide assumption §0 using §1"
 msgstr "**Robo**: Ich würde zuerst die Annahme §0 mit §1 aufteilen."
+
+#. §0: `obtain ⟨⟩ := h`
+#: Game.Levels.Logo.L14_Summary
+msgid "Explain that each sub-goal needs §0"
+msgstr ""
+"**Robo**: Der Nachteil an der Reihenfolge ist, dass du jetzt in jedem "
+"Untergoal §0 aufrufen musst."
 
 #. §0: `∧`
 #. §1: `∨`
@@ -5879,8 +5939,8 @@ msgid ""
 "Show\n"
 "§1\n"
 msgstr ""
-"Hint \"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  "
-"Gegeben ist:\n"
+"**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben "
+"ist:\n"
 "\n"
 "§0\n"
 "\n"
@@ -6109,6 +6169,15 @@ msgstr ""
 msgid "§0 might suffice"
 msgstr "**Robo**:  Das ist hier alles so konkret, vielleicht reicht §0."
 
+#. §0: `«{h}»`
+#. §1: `Fin (n + 1)`
+#. §2: `congr_fun`
+#: Game.Levels.Mono.L04_Diagonal
+msgid "Evaluate mappings in §0 on element from §1. §2 could help"
+msgstr ""
+"**Robo**:  Du könntest die Abbildungen in §0 auf einem Element aus §1 "
+"auswerten. Vielleicht hilft §2 in irgendeiner Form?"
+
 #. §0: `diag`
 #. §1: `A → (Fin (n + 1) → A)`
 #. §2: `diag`
@@ -6191,6 +6260,12 @@ msgstr ""
 msgid "The next part is elementary"
 msgstr ""
 "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
+
+#: Game.Levels.Mono.L05_StrictMono
+msgid "Try again from the beginning"
+msgstr ""
+"**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von "
+"vorne an!"
 
 #. §0: `unfold`
 #. §1: `StrictMono`
@@ -6338,6 +6413,13 @@ msgstr ""
 "**Du**: Was … ??!\n"
 "\n"
 "**Robo**:  Ja.  Das ist einfach wieder als §6 definiert."
+
+#. §0: `n ↦ n - 1`
+#: Game.Levels.Mono.L07_SuccHasLeftInv
+msgid "[Hint wdpf] Try §0"
+msgstr ""
+"**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz "
+"unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
 
 #. §0: `f`
 #. §1: `g`
@@ -6697,7 +6779,7 @@ msgstr "**Robo**: Und jetzt natürlich wieder §0."
 
 #. §0: `ext`
 #: Game.Levels.Piazza.L06_Ext2__univ2
-msgid "Try §0"
+msgid "[Hint cqvs] Try §0"
 msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 
 #: Game.Levels.Piazza.L07_antisymm_iff
@@ -6837,6 +6919,11 @@ msgstr ""
 #: Game.Levels.Piazza.L13_insert_erase
 msgid "Try proof by cases, if §0"
 msgstr "**Fin**: Mach doch eine Fallunterscheidung, ob §0 ist oder nicht."
+
+#. §0: `constructor`
+#: Game.Levels.Piazza.L13_insert_erase
+msgid "[Piazza.L13] Hint 1: You can begin with §0"
+msgstr "**Fin**:  Ja, so kann man das angehen."
 
 #: Game.Levels.Prado
 msgid "Intro Prado"
@@ -7066,6 +7153,16 @@ msgstr ""
 "**Du**: Ich will §0 jetzt bestimmt auf §1 anwenden, oder?\n"
 "\n"
 "**Robo**:  Dann sag doch §2.  Oder etwas eleganter: §3."
+
+#. §0: `unfold`
+#. §1: `Prime`
+#. §2: `rw [prime_def] at hp`
+#: Game.Levels.Prado.L06_Prime_Specialize__prime_def
+msgid "Do not §0 §1. Use §2"
+msgstr ""
+"**Robo**:  Nee, lieber nicht. \n"
+"  Du solltest §1 nicht §0en! -- Das macht alles nur schwieriger. \n"
+"  Benutze lieber wie ich gesagt hatte §2."
 
 #: Game.Levels.Prado.L06_Prime_Specialize__prime_def
 msgid "Intro Prado L06"
@@ -7464,6 +7561,12 @@ msgstr ""
 "\n"
 "Damit erhaltet ihr auch ein weiteres Blatt:"
 
+#: Game.Levels.Quantus.L04_Exists
+msgid "Set number"
+msgstr ""
+"**Robo**: Das geht auch.  Aber jetzt musst du dir wirklich eine Zahl "
+"überlegen."
+
 #. §0: `use r`
 #. §1: `use 2 * s^2`
 #: Game.Levels.Quantus.L04_Exists
@@ -7475,6 +7578,12 @@ msgstr ""
 #: Game.Levels.Quantus.L04_Exists
 msgid "[Doc.Theorem] Nat.even_square"
 msgstr "Das Quadrat einer geraden Zahl ist gerade."
+
+#. §0: `unfold Even at h`
+#: Game.Levels.Quantus.L04_Exists
+msgid "[Hint jrxb] Try §0"
+msgstr ""
+"**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist."
 
 #. §0: `ring`
 #. §1: `rw`
@@ -7490,6 +7599,31 @@ msgstr ""
 "\n"
 "**Robo**: Aber zuerst musst du noch mit §1 §2 durch §3 ersetzen, da §4 das "
 "sonst nicht weiß."
+
+#. §0: `«{n}» ^ 2 / 2`
+#. §1: `ℕ`
+#. §2: `«{n}» = 1`
+#. §3: ```
+#. 1 ^ 2 = (1 ^ 2) / 2 + (1 ^ 2) / 2
+#. ```
+#. §4: `1 = 1 / 2 + 1 / 2 = 0 + 0`
+#: Game.Levels.Quantus.L04_Exists
+msgid ""
+"§0 is a natural number because division over §1 in Lean is always rounded "
+"down.\n"
+"For §2 that means\n"
+"§3\n"
+"which is  §4.\n"
+msgstr ""
+"Ein verwirrtes Murmeln geht durch die Menge.\n"
+"\n"
+"**Du**: Warte mal, wieso ist §0 überhaupt wieder eine natürliche Zahl?\n"
+"\n"
+"**Robo**: Division auf §1 wird in Lean immer abgerundet. Die Gleichung \n"
+"\n"
+"§3\n"
+"\n"
+"wird so zu §4.  Du bist also auf dem Holzweg!\n"
 
 #: Game.Levels.Quantus.L05_neg_pow
 msgid "Intro Quantus L05"
@@ -7531,6 +7665,13 @@ msgstr ""
 #. §2: `Odd`
 #: Game.Levels.Quantus.L06_not_even_iff_odd
 msgid "With §0 one can transform §1 to §2"
+msgstr "**Robo**:  Mit §0 kannst du §1 in §2 verwandeln."
+
+#. §0: `not_odd_iff_even`
+#. §1: `¬Odd`
+#. §2: `Even`
+#: Game.Levels.Quantus.L06_not_even_iff_odd
+msgid "With §0 one can transform §1 to §2."
 msgstr "**Robo**:  Mit §0 kannst du §1 in §2 verwandeln."
 
 #: Game.Levels.Quantus.L07_Forall
@@ -7625,6 +7766,14 @@ msgstr ""
 "Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich "
 "brauchen werden."
 
+#. §0: `push Not`
+#. §1: `«{h}»`
+#: Game.Levels.Quantus.L08_PushNeg
+msgid "Try §0 at §1"
+msgstr ""
+"**Robo**: §0 schiebt von links nach rechts. Du kannst es hier also nicht auf "
+"das Beweisziel anwenden, wohl aber auf §1."
+
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Conclusion Quantus L09"
 msgstr ""
@@ -7639,6 +7788,15 @@ msgstr ""
 "**Du**: Wer denn?\n"
 "\n"
 "Die Frage war wieder zu konkret. Betretenes Schweigen."
+
+#. §0: `Odd`
+#. §1: `not_odd_iff_even`
+#: Game.Levels.Quantus.L09_PushNeg
+msgid "Go back, keep §0 and try §1"
+msgstr ""
+"**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+"  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 "
+"benutzen kannst."
 
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
@@ -8035,6 +8193,15 @@ msgstr ""
 "Pergamentstücke.\n"
 "Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
 
+#: Game.Levels.Robotswana.L04_MatrixEqSum
+msgid "Repeat proof from first level"
+msgstr ""
+"**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament "
+"wiederholen.\n"
+"  Nur zu, Übung macht den Meister.\n"
+"\n"
+"**Du**: Schon gut, ich hab kein mechanisches Hirn wie du."
+
 #. §0: `apply matrix_eq_sum_single`
 #: Game.Levels.Robotswana.L04_MatrixEqSum
 msgid "Try to use §0"
@@ -8091,6 +8258,17 @@ msgstr ""
 "**Du**: Danke, das hilft! Dieser Schritt sollte einfach sein: Eine Summe "
 "über ein Element, bei diesem ist §0 wieder Eins, und §1 vereinfacht sich "
 "auch!"
+
+#. §0: `1 «{i}» «{x}»`
+#. §1: `if «{i}» = «{x}» then _ else _`
+#. §2: `«{i}» = «{x}»`
+#. §3: `«{i}» ≠ «{x}»`
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
+msgstr ""
+"**Robo**: Umgekehrt wäre es nützlicher, da §0 als §1 definiert ist!\n"
+"\n"
+"**Du**: Du hast recht, ich brauch gleich §2 oder §3. Lass mich das ändern."
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
@@ -8158,6 +8336,12 @@ msgstr "**Du**: Als erstes würde ich mal schauen, ob sich §0 vereinfacht."
 #: Game.Levels.Robotswana.L05_EBasisDiagSum
 msgid "Try §0 and §1"
 msgstr "**Robo**: Und da das falsch ist, kannst du mit §0 und §1 weiterkommen."
+
+#. §0: `matrix_eq_sum_ebasis`
+#. §1: `matrix_eq_sum_single`
+#: Game.Levels.Robotswana.L05_EBasisDiagSum
+msgid "Try §0 not §1"
+msgstr "**Robo**:  Nein, nicht §0, sondern §1."
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `1`
@@ -8237,9 +8421,83 @@ msgstr ""
 "\n"
 "**Robo**: Und schau, hier ist noch was in den Baum gekritzelt."
 
+#. §0: `E i k = (E i j) * (E j k)`
+#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
+msgid "Remind former results with §0"
+msgstr "**Robo**: Hatten wir nicht §0 auf einem dieser Zettel?"
+
+#. §0: `«{h₁}»`
+#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
+msgid "Remind use of §0"
+msgstr ""
+"**Robo**: Hast du das nicht alles gemacht, weil du §0 benutzen wolltest?\n"
+"\n"
+"**Du**: Ach ja, stimmt!"
+
+#. §0: `«{h₁}»`
+#. §1: `A * B`
+#. §2: `f (E i i) = f (A * B) = f (E j j)`
+#. §3: `trans f (A * B)`
+#. §4: `f (E i i) = f (A * B)`
+#. §5: `f (A * B) = f (E j j)`
+#. §6: `«{h₁}»`
+#: Game.Levels.Robotswana.L06_EBasisEqOnDiag
+msgid ""
+"Start with §0. Find §1 with §2. Try §3 to get §4 and §5 and see if §6 "
+"applicable"
+msgstr ""
+"**Du**: Aber was soll ich denn mit unserer Annahme §0 anfangen?\n"
+"  Ich müsste überhaupt erst einmal eine Multiplikation haben.\n"
+"\n"
+"**Robo**: Du müsstest ein Matrizenprodukt §1 finden, für das §2 gilt.\n"
+"  Dann könnstest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu "
+"erhalten, bei denen §6 vielleicht anwendbar ist."
+
 #: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 msgid "Conclusion Robotswana L07"
 msgstr "Die Spuren wirken mittlerweile viel frischer.  Ihr folgt ihnen weiter."
+
+#. §0: `unfold E`
+#. §1: `simp`
+#. §2: `E`
+#. §3: `simp [E]`
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "Try §0 or §1 with §2 via §3"
+msgstr ""
+"**Robo**: Vergiss nicht §0, oder sag §1, dass es die Definition von §2 "
+"benutzen soll (§3)."
+
+#. §0: `«{h₁}»`
+#. §1: `E i j`
+#. §2: `E i j * E j j`
+#. §3: `E.mul_of_ne`
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "Use §0 by writing §1 as §2. Remind §3"
+msgstr ""
+"**Robo**: Wie könnten wir denn hier §0 verwenden?\n"
+"\n"
+"**Du**: Wie wär’s, wenn wir diesmal §1 als Produkt §2 schreiben?\n"
+"\n"
+"**Robo**:  Wieso gerade so?\n"
+"\n"
+"**Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich "
+"Null!  \n"
+"  Hatten wir doch auch schon, §3 oder so etwas.\n"
+"    "
+
+#. §0: `trans f (E i j * E j j)`
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "[Hint plnk] Try §0"
+msgstr "**Robo**: Wie du meinst. Dann probier doch am besten §0."
+
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "[Robotswana.L07] Hint 1: Try commutating"
+msgstr "**Robo**: Und hier wolltest du jetzt kommutieren?**Du**: Genau!"
+
+#. §0: `h₁`
+#: Game.Levels.Robotswana.L07_EBasisZeroOffDiag
+msgid "[Robotswana.L07] Hint 2: Try rewriting with §0"
+msgstr "**Robo**:  Oh. Das sieht falsch aus."
 
 #. §0: `E i j`
 #. §1: `E i j`
@@ -8375,7 +8633,7 @@ msgstr "**Robo**: Und das hieß §0."
 
 #: Game.Levels.Robotswana.L08_EvalOnEBasis
 msgid "Try again"
-msgstr "**Du**: Vielleicht gleich nocheinmal?"
+msgstr "**Du**: Vielleicht gleich noch einmal?"
 
 #. §0: `apply congr_arg`
 #. §1: `ext`
@@ -8428,6 +8686,14 @@ msgid "§0 Use linearity"
 msgstr ""
 "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser "
 "denken… Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
+
+#. §0: `rw`
+#. §1: `nth_rw`
+#: Game.Levels.Robotswana.L08_EvalOnEBasis
+msgid "§0 is a bad idea here. Try §1."
+msgstr ""
+"**Du**: Hmm, §0 ist tatsächlich eine schlechte Idee. \n"
+"  -- Das sieht zu kompliziert aus. Lass es mich mit §1 versuchen."
 
 #. §0: `«{n}»`
 #. §1: $$
@@ -8518,17 +8784,25 @@ msgstr ""
 "Zum Einsetzen kannst du in diesem Fall §4 benutzen."
 
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
-msgid "Remind of previous result"
-msgstr "**Robo**: Das hatten wir schon gesehen."
-
-#: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "Return to topic at hand"
 msgstr "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache."
+
+#. §0: `«{f}» (∑ x, E x x)`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "Show statement via §0"
+msgstr ""
+"**Du**: Und jetzt möchte ich die Gleichung durch einen Zwischenschritt §0 "
+"zeigen."
 
 #. §0: `rw [«{h₂}»]`
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "Try out using §0"
 msgstr "**Robo**: Probier mal §0."
+
+#. §0: `simp [E]`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "Try §0"
+msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 
 #. §0: `trans`
 #. §1: `trans ∑ j : Fin «{n}», f (E i i)`
@@ -8551,6 +8825,47 @@ msgstr ""
 #: Game.Levels.Robotswana.L09_EvalOnEBasis
 msgid "Use the result §0"
 msgstr "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß §0."
+
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Hint dkmw] Remind of previous result"
+msgstr ""
+"**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben."
+
+#. §0: `eq_on_diag_ebasis`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Hint fzwc] Try §0"
+msgstr "**Robo**: §0 sagt meine Speicherplatte."
+
+#. §0: `trans «{f}» (∑ j : Fin «{n}», E «{i}» «{i}»)`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Hint yvqm] Try §0"
+msgstr ""
+"**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben "
+"hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt."
+
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Hint ztqn] Remind of previous result"
+msgstr "**Robo**: Das hatten wir schon gesehen."
+
+#. §0: `apply congr_arg`
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Robotswana.L09] Hint 1: §0 is mathematically wrong"
+msgstr "**Du**: Nein, das ist jetzt mathematisch falsch!"
+
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Robotswana.L09] Hint: pull function into sum 1"
+msgstr "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
+
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "[Robotswana.L09] Hint: pull function into sum 2"
+msgstr ""
+"**Robo**: Jetzt wieder `congr`-`ext`?\n"
+"\n"
+"**Du**: Nein, zuerst, die Funktion in die Summe rein, sonst klappt das nicht."
+
+#: Game.Levels.Robotswana.L09_EvalOnEBasis
+msgid "again"
+msgstr "**Du**: Nochmals!"
 
 #. §0: `«{h}»`
 #. §1: `ℕ`
@@ -8663,10 +8978,12 @@ msgstr ""
 #. §0: `card_fin`
 #. §1: `simp`
 #: Game.Levels.Robotswana.L11_Linearity
-msgid "Try §0 | §1"
+msgid "[Hint xnqr] Try §0 | §1"
 msgstr ""
 "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit "
-"§1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+"§1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser "
+"letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir "
+"gerade nicht so viele Spaß am Spielen hätten."
 
 #: Game.Levels.Samarkand
 msgid "Intro Samarkand"
@@ -8815,6 +9132,13 @@ msgstr ""
 #: Game.Levels.Samarkand.L02_ImageMap
 msgid "This can be simplified"
 msgstr "**Robo**:  Das kann man bestimmt leicht vereinfachen …"
+
+#. §0: `funext S`
+#: Game.Levels.Samarkand.L02_ImageMap
+msgid "[Hint gwrm] Try §0"
+msgstr ""
+"**Robo**: Oh, nein. Das sieht zu kompliziert aus. Schreib mal lieber "
+"explizit §0."
 
 #. §0: `ext`
 #: Game.Levels.Samarkand.L03_SurjectiveRange
@@ -9655,16 +9979,6 @@ msgstr ""
 "\n"
 "**Robo**:  Ja.  Oder du könntest direkt §3 schreiben."
 
-#. §0: `(g ∘ «{f}») x`
-#. §1: `g («{f}» x)`
-#. §2: `simp`
-#. §3: `rw [comp_apply]`
-#: Game.Levels.Vieta.L04_Let
-msgid "Explain §0 defined as §1. Try §2 | §3"
-msgstr ""
-"**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber "
-"mach das hier mal direkt mit §3."
-
 #: Game.Levels.Vieta.L04_Let
 msgid "Intro Vieta L04"
 msgstr ""
@@ -9684,6 +9998,40 @@ msgid "Try §0 as it sees through defintion §1"
 msgstr ""
 "**Robo**: §0 sieht durch lokale Definitionen wie §1 hindurch, du kannst es "
 "also direkt benutzen."
+
+#. §0: `ring`
+#. §1: `«{f}»`
+#. §2: `«{g}»`
+#: Game.Levels.Vieta.L04_Let
+msgid "Try §0, as it sees through definitions §1 and §2"
+msgstr ""
+"**Robo**: §0 sieht durch lokale Definitionen wie §1 und §2 hindurch. \n"
+"Du kannst die Taktik also direkt benutzen."
+
+#. §0: `(g ∘ «{f}») x`
+#. §1: `g («{f}» x)`
+#. §2: `simp`
+#. §3: `rw [comp_apply]`
+#: Game.Levels.Vieta.L04_Let
+msgid "[Hint bpwn] Explain §0 defined as §1. Try §2 | §3"
+msgstr ""
+"**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber "
+"mach das hier mal direkt mit §3."
+
+#. §0: `use «{g}»`
+#: Game.Levels.Vieta.L04_Let
+msgid "[Hint bsjn] Try §0"
+msgstr "**Robo**: Jetzt kannst du diese mit §0 benutzen."
+
+#. §0: `(«{g}» ∘ «{f}») x`
+#. §1: `«{g}» («{f}» x)`
+#. §2: `simp`
+#. §3: `rw [comp_apply]`
+#: Game.Levels.Vieta.L04_Let
+msgid "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3"
+msgstr ""
+"**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber "
+"mach das hier mal direkt mit §3."
 
 #: Game.Levels.Vieta.L05_Funext
 msgid "Intro Vieta L05"
@@ -9934,6 +10282,27 @@ msgstr "– Aufgabe gelöst!  Aber nicht ganz so wie gedacht. –"
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr "– Aufgabe gelöst! –"
+
+#~ msgid "Remind: §0 from §1 could be helpful"
+#~ msgstr "**Robo**: Denk daran, dass §0 irgendwann hilfreich sein könnte."
+
+#~ msgid "try §0"
+#~ msgstr ""
+#~ "**Robo**:  Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind "
+#~ "insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und "
+#~ "auch die Ausdrücke, über die summiert wird, übereinstimmen."
+
+#~ msgid "Pull function into sum"
+#~ msgstr "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
+
+#~ msgid "Try Assumption tactic"
+#~ msgstr "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
+
+#~ msgid "Try obtain tactic"
+#~ msgstr "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
+
+#~ msgid "mysterious"
+#~ msgstr "(mysteriöser Eintrag)"
 
 #~ msgid "This kind of logical expression can often be solved via §0."
 #~ msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."

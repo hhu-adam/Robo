@@ -1,5 +1,6 @@
 {
   "sourceLang": "template",
   "translationContactEmail": "",
-  "useJson": false
+  "useJson": false,
+  "sortByFile": true
 }

@@ -35,7 +35,7 @@ Statement (I : Finset ℤ) (h : ∀ i ∈ I, (i-1)*i*(i+1) = 0): ∑ i ∈ I, (i
       auch die Ausdrücke, über die summiert wird, übereinstimmen.
   "
   -/
-  Hint "try `apply sum_congr`"
+  Hint "[Hint hwzk] Try `apply sum_congr`"
   apply sum_congr
   rfl
   assumption

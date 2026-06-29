@@ -40,7 +40,7 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     die wahr oder falsch ist. Soweit so gut.
     "
   -/
-  Hint "Explain `{isDrinking}` and `p` in statement `{isDrinking} p`"
+  Hint (strict := true) "Explain `{isDrinking}` and `p` in statement `{isDrinking} p`"
   /-
   Hint (hidden := true) "
     **Du**: Und wie fang ich jetzt an?
@@ -50,9 +50,9 @@ Statement {People : Type} [h_nonempty : Nonempty People] (isDrinking : People �
     `∀ (y : {People}), {isDrinking} y` wahr oder falsch ist.
     "
   -/
-  Hint (hidden := true) "Try proof by case for `∀ (y : {People}), {isDrinking} y`"
+  Hint (hidden := true) (strict := true) "Try proof by case for `∀ (y : {People}), {isDrinking} y`"
   -- Hint (hidden := true) "**Robo**: Schau mal `by_cases` an."
-  Hint (hidden := true) "Look at `by_cases`"
+  Hint (hidden := true) (strict := true) "Look at `by_cases`"
   by_cases h : ∀ y, isDrinking y
   /-
   · Hint (hidden := true) "

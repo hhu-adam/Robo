@@ -10,7 +10,6 @@ Introduction ""
 
 open Function Nat
 
-#check ne_comm
 
 Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A → B, ∀ n, g ≠ f n := by
   /-
