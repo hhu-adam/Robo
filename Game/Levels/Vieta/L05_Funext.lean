@@ -33,8 +33,7 @@ Statement {n : ℕ} :
   unfold g f
   rw [Even.neg_pow]
   use n
-  -- Hint (hidden := true) "**Robo**: Zur Erinnerung, `ring` sieht durch lokale Definition hindurch."
-  -- Hint (hidden := true) "Remind: `ring` sees through local definitions"
+  Hint (hidden := true) "Reminder: `ring` and `grind` can see through local definitions"
   ring
 
 OnlyTactic funext ring
