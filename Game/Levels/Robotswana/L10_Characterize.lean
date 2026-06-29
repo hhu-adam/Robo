@@ -52,28 +52,21 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   Hint "Explain that each `f` has stated properties"
   Hint (hidden := true) "Use `ext`!"
   ext A
-  -- Hint "Rewrite `f {A}` as sum of basis elements"
-  Branch
-    rw [eq_sum_apply_diag_ebasis] -- Lvl 8
-    Hint (hidden := true) "Remind former result for `f (E i i) = 1`. Try `one_on_diag_ebasis`"
-    simp [one_on_diag_ebasis h₁ h₂] -- Lvl 9
-    Hint (hidden := true) "Observe equality"
-    rfl
-    Hint "Remind missed argument with `rw [eq_sum_apply_diag_ebasis]`"
-    assumption
+  Hint "Rewrite `A` in `f {A}` as sum of basis elements.  Use `nth_rw`, `nth_rw 2` with `matrix_eq_sum_ebasis`"
   nth_rw 2 [matrix_eq_sum_ebasis A]
   simp [map_sum]
   change A.trace = ∑ i : Fin n, ∑ j : Fin n, A i j * f (E i j)
+  Hint (hidden := true) "[Hint kqwz] prove `A i j * f (E i j) = if i = j then A i i else 0`"
   have (i j : Fin n) : A i j * f (E i j) = if i = j then A i i else 0
   · by_cases h_ij : i = j
     rw [if_pos h_ij, h_ij]
-    rw [one_on_diag_ebasis h₁ h₂]
+    rw [one_on_diag_ebasis h₁ h₂] -- L09
     ring
     rw [if_neg h_ij]
-    rw [zero_on_offDiag_ebasis h_ij h₁]
+    rw [zero_on_offDiag_ebasis h_ij h₁] -- L07
     ring
-  · simp [this]
-    rfl
+  simp [this]
+  rfl
 
 NewDefinition Matrix.trace
 TheoremTab "Matrix"

@@ -1,11 +1,16 @@
 import Game.Levels.Robotswana.L07_EBasisZeroOffDiag
 
---import Game.StructInstWithHoles
-
 World "Robotswana"
 Level 8
 
 Title "" -- "Die Summe der Summe der Summe"
+
+/- NOTE
+
+  This level used to introduced an essential lemma for the Boss level L10.
+  Now the Boss level has a simpler solution, so strictly speaking this level
+  is not needed anymore.  Keeping it here as an additional exercise.
+-/
 
 /-
 Introduction
@@ -35,10 +40,7 @@ Conclusion "Conclusion Robotswana L08"
 
 open Nat Matrix Finset
 
-/---/
-TheoremDoc Matrix.eq_sum_apply_diag_ebasis as "eq_sum_apply_diag_ebasis" in "Matrix"
-
-Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
+Statement {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     (h₁ : ∀ A B, f (A * B) = f (B * A))
     (A : Mat[n,n][ℝ]) :
     f A = ∑ i : Fin n, (A i i) * f (E i i) := by
@@ -155,7 +157,6 @@ Statement Matrix.eq_sum_apply_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[�
   · Hint "Solve second half of `trans` operation"
     simp
 
--- TODO: Where to introduce it? It is for additive `f : A →+ B`, so Babylon might not be ideal
 /-- [Doc.Theorem] map_sum
 Linear mapping, or 'additive' mappings in general, can be exchanged with a sum.
 -/
