@@ -3,24 +3,10 @@ import Game.Levels.Robotswana.L06_EBasisEqOnDiag
 World "Robotswana"
 Level 7
 
-Title "" -- "Desinteresse"
+Title ""
 
-/-
-Introduction
-"
-Gleich neben dem Baum findest du noch eine Notiz, in der groß `E i j` durchgestrichen ist.
-
-**Du**: Soll wohl heißen: `E i j` mit i ≠ j interessieren uns nicht.
-
-"
-
--/
 Introduction "intro Robotswana L07: Introduce new consideration for `E i j`: do not consider `E i j` with i ≠ j"
 
-/-
-Conclusion "Die Spuren wirken mittlerweile viel frischer und ihr folgt ihnen schneller und
-unvorsichtiger als zuvor."
--/
 Conclusion "Conclusion Robotswana L07"
 
 open Nat Matrix
@@ -29,9 +15,8 @@ open Nat Matrix
 TheoremDoc Matrix.zero_on_offDiag_ebasis as "zero_on_offDiag_ebasis" in "Matrix"
 
 Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
-    (h₁ : ∀ A B, f (A * B) = f (B * A)) :
-    ∀ (i j : Fin n ), (i ≠ j) → f (E i j) = 0 := by
-  intro i j hne
+    {i j : Fin n} (h_ne : i ≠ j) (h₁ : ∀ A B, f (A * B) = f (B * A)) :
+    f (E i j) = 0 := by
   Branch
     rw [← E.mul_same i j j]
     rw [h₁]
@@ -82,11 +67,9 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
         assumption
   specialize h₁ (E i j) (E j j)
   simp [E.mul_same] at h₁
-  simp [E.mul_of_ne _ _ hne.symm] at h₁
+  simp [E.mul_of_ne j j h_ne.symm] at h₁
   assumption
 
 
-
-
-NewTheorem Matrix.E.mul_of_ne
+--NewTheorem Matrix.E.mul_of_ne
 TheoremTab "Matrix"
