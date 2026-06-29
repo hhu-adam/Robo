@@ -1,17 +1,16 @@
-import Game.Levels.Luna.L01_le_rfl
-import Game.Levels.Luna.L02_Omega
-import Game.Levels.Luna.L03_Linarith__lt_trichotomy
-import Game.Levels.Luna.L04_Omega2
-import Game.Levels.Luna.L05_Linarith2
-import Game.Levels.Luna.L07_Linarith2
-import Game.Levels.Luna.L09_lt_trichotomy2
+import Game.Levels.Cafe.L01_Lt_trichotomy
+import Game.Levels.Cafe.L02_Lt_trichotomy2
+import Game.Levels.Cafe.L03_Lt_grind
+import Game.Levels.Cafe.L04_Grind_ring
+import Game.Levels.Cafe.L05_Split_if
+import Game.Levels.Cafe.L06_Lia
 
 /-!
 The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) and `linarith` (for ℝ).
 -/
 
-World "Luna"
-Title "Luna"
+World "Cafe"
+Title "Cafe"
 
 Image "images/MoonLuna.png"
 
@@ -42,4 +41,4 @@ ich hier noch ganz durcheinander.
 
 "
 -/
-Introduction " Intro Luna"
+Introduction " Intro Cafe"

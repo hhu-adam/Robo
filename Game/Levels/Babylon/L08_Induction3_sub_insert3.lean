@@ -37,7 +37,7 @@ Statement (n : ℕ) : (∑ i ∈ Icc 0 n, (2 * i + 1)) = (n + 1)^ 2 := by
       · rw [hd]
         ring
       · simp
-    · linarith
+    · grind
 
 TheoremTab "∑ Π"
 

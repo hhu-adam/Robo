@@ -73,7 +73,7 @@ Statement (hf : Set.Finite { p : ℕ | Prime p}) : ∃ (a : ℕ), a > 0 ∧ ∀ 
     simp [all_primes]
     intro h
     rw [prime_def] at h
-    linarith
+    grind
   · intro p hp
     -- previous lemma would be useful now, but want to practise!
     have hp' : p ∈ all_primes := by

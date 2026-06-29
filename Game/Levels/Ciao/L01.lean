@@ -10,7 +10,7 @@ Introduction ""
 Statement : ∀ (n : ℕ), ∃ (m : ℕ), m > n := by
   intro n
   use n+1
-  linarith
+  grind
 
 /-
 Conclusion "**Du**: Das war ja nun nicht so schwer …  Wer die wohl gesendet hat?  Und warum?

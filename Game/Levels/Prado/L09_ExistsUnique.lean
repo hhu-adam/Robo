@@ -66,7 +66,7 @@ Statement {a b : ℕ} (ha : 0 < a) (h : a ∣ b) : ∃! (m : ℕ), a * m = b := 
     rw [mul_eq_mul_left_iff] at hy  -- `mul_eq_mul_left_iff` also used in ROBOTSWANA!
     obtain h | h := hy
     · assumption
-    · linarith
+    · grind
 
 NewDefinition ExistsUnique
 

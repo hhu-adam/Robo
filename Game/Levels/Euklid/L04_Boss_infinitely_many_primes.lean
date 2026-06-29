@@ -54,11 +54,11 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
         simp [all_primes]
         intro h
         rw [prime_def] at h
-        linarith
+        grind
       simp [new_prime]
       assumption
     apply exists_prime_and_dvd
-    linarith
+    grind
   -- On the other hand, by construction, no prime divides new_prime:
   have h_no_prime_divides : ∀ p : ℕ, Prime p →  ¬ p ∣ new_prime := by
     intro p hp
@@ -84,9 +84,9 @@ Statement : ¬ Set.Finite { p : ℕ | Prime p} := by
     rw [h]
     -- … so it cannot be divisible by p:
     apply not_dvd_of_lt_of_lt_mul_succ (n := p) (k:=q) (m := p*q+1)
-    · linarith
+    · grind
     · simp [prime_def] at hp
-      linarith
+      grind
   -- Now we have a contradiction:
   obtain ⟨p, hp, h_dvd⟩ := h_exists_prime_factor
   specialize h_no_prime_divides p hp

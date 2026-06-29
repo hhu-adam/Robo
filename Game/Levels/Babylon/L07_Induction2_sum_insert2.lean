@@ -58,10 +58,9 @@ Statement  (n : ℕ) : ∑ i ∈ Icc (-n : ℤ) n, i = 0 := by
             · rw [hd]
               ring
             · simp
-          · --omega -- fails; omega appears to treat ↑d as a random integer rather than a natural number
-            linarith
+          · grind
         · simp
-      · linarith
+      · grind
 
 TheoremTab "∑ Π"
 
