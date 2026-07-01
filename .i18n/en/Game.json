@@ -297,7 +297,7 @@
  "Try §0. Given assumption §1 rewrite it via §2 to §3.\n§4 not applicable to more complex §5":
  "**Scribble**: And this calls for §0. If you have §1 as an assumption, you can use §2 to rewrite it as §3.\n\n**You**: But couldn't I simply use §4 here? \n\n**Scribble**: True. In this simple example, that would also work. But if §5 is a more complicated expression that doesn't appear verbatim in the goal, then a simple §4 won't work. Try as I said!",
  "Try §0. Explain, given §1 then §2 is the same number interpreted as a natural number.\nRemind that §3 undefined as §4 for §5":
- "**Scribble**: Here you probably need §0: given an integer §1, §2 is that same integer, but interpreted as a natural number.\n\n**You**:  How? What's §3, for example? \n\n**Scribble**: No idea. What I meant, of course, is: *if §4 is*, then §5 is still the “same” number.",
+ "**Scribble**: Here you probably need §0: given an integer §1, §2 is that same integer, but interpreted as a natural number.\n\n**You**:  How? What's §3, for example? \n\n**Scribble**: No idea. What I meant, of course, is: *if §4*, then §5 is still the “same” number.",
  "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4":
  "**You**: By definition, two maps are equal if they assume the same value on each element … \n\n**Scribble**: I have tactic in store for that principle: §0. \nWith §1, you pick an arbitrary §2 and change the goal from §3 to §4.",
  "Try §0.": "**Scribble**: §0 is useful here.",
@@ -314,7 +314,7 @@
  "Try §0 with §1":
  "**Scribble**: But don't forget that you need to tell §0 about §1!",
  "Try §0 with a number and then §1. You can not use §2\ndirectly, as §3 cannot be applied inside of quantors. Try §4 with a number.":
- "**Scribble**: Now you §0 some number, and then you'll probably need Lemma §1.\n\n**You**: Couldn't I apply §2 right now? \n\n**Scribble**: No, §3 struggles with quantifiers. \n\n**You**: I can't rewrite quantified expressions? \n\n**Scribble**: Maybe you can – I'll show you later, not here in front of a large audience. As I said, I would rather first specify a real number with §4 and then rewrite.",
+ "**Scribble**: Now you §0 some number, and then you'll probably need Lemma §1.\n\n**You**: Couldn't I rewrite with §2 right now? \n\n**Scribble**: No, §3 struggles with quantifiers. \n\n**You**: I can't rewrite quantified expressions? \n\n**Scribble**: Maybe you can – I'll show you later, not here in front of a large audience. As I said, I would rather first specify a real number with §4 and then rewrite.",
  "Try §0 which states\n§1\n":
  "**Scribble**: Great. Now let's move on to uniqueness. I think the lemma §0 could help here: \n\n§1\n",
  "Try §0 via §1":
@@ -611,7 +611,7 @@
  "Remind that §0 is an interval which is closed to both sides. You could write §1\nas §2 or §3, because we are in the natual numbers. Therfore, the\ngoal is: §4":
  "**You**: So what is §0? \n\n**Ritha**: It's the **i**nterval that is **c**losed on both sides.\n\n**Scribble**: You would probably write §1 as §2, or as §3, because we are back in the natural numbers here. So what we need to show is: \n§4",
  "Remind that §0 in this case is equivalence":
- "**You** *(whispering)*: Isn't that the definition of §0? \n\n**Scribble** *(whispering)*: You could see it that way. But in Leanish, these two are  equivalence.",
+ "**You** *(whispering)*: Isn't that the definition of §0? \n\n**Scribble** *(whispering)*: You could see it that way. But in Leanish, these two are equivalent.",
  "Remind that goal looks like §0. Try §1. The sum sign is written\nas §2.":
  "**You**: The assumption looks like a convoluted version of §0. Either way, it can't be a large sum. \n\n**Scribble**: No. But we probably need an intermediate step to get the specified result. I suggest: §1. You can write the sum sign as §2.",
  "Remind that 'tuples' §0 and §1 are two mappings §2.\nEvaluate them on elements from §3. Try §4":
