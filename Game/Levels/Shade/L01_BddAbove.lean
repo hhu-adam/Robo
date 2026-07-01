@@ -3,6 +3,8 @@ import Game.MetaData
 World "Shade"
 Level 1
 
+Introduction "Intro Shade L01"
+
 open Set FullGrind
 
 Statement {a b : ℝ} {p : ℝ → Prop} :
@@ -24,3 +26,5 @@ NewDefinition BddAbove Set.Ioo
 /-- -/
 TheoremDoc bddAbove_def as "bddAbove_def" in "Set"
 NewTheorem bddAbove_def
+
+Conclusion ""
