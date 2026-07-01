@@ -26,7 +26,7 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
   Branch
     unfold Function.RightInverse
     rfl
-  tauto
+  rfl
 
 TheoremTab "Function"
 NewDefinition Function.RightInverse Function.LeftInverse

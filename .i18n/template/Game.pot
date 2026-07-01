@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.30.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-12\n"
+"POT-Creation-Date: 2026-06-22\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3133,234 +3133,6 @@ msgstr ""
 msgid "Intro Spinoza"
 msgstr ""
 
-#. §0: `n ≤ n`
-#: Game/Levels/Luna/L01_le_rfl.lean:22
-msgid "Intro Luna L01: Know that §0"
-msgstr ""
-
-#. §0: `rfl`
-#: Game/Levels/Luna/L01_le_rfl.lean:26
-msgid "Try using §0 here"
-msgstr ""
-
-#: Game/Levels/Luna/L01_le_rfl.lean:34
-msgid "Conclusion Luna L01"
-msgstr ""
-
-#. §0: `0 < n`
-#. §1: `n < 0`
-#. §2: `n ≠ 0`
-#: Game/Levels/Luna/L02_Omega.lean:18
-msgid "Intro Luna L02: For integers §0 or §1 means §2"
-msgstr ""
-
-#. §0: `omega`
-#: Game/Levels/Luna/L02_Omega.lean:22
-msgid "Try out §0"
-msgstr ""
-
-#. §0: `omega`
-#. §1: `omega`
-#. §2: `omega`
-#: Game/Levels/Luna/L02_Omega.lean:40
-msgid "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
-"§2 is only really applicable over integers."
-msgstr ""
-
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:17
-msgid "Intro Luna L03"
-msgstr ""
-
-#. §0: `obtain`
-#. §1: `x < y`
-#. §2: `x = y`
-#. §3: `x > y`
-#. §4: ```
-#. obtain h | h | h := lt_trichotomy x y
-#. ```
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:19
-msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
-"\n"
-"§4"
-msgstr ""
-
-#. §0: `by_cases h_leq : «{a}» ≤ «{b}»`
-#. §1: `by_cases h_lt : «{a}» < «{b}»`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:38
-msgid "Try §0, §1"
-msgstr ""
-
-#. §0: `linarith`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:52
-msgid "Now try §0!"
-msgstr ""
-
-#. §0: `apply lt_trichotomy`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:67
-msgid "Conclusion Luna L03: Alternatively §0 could have been used."
-msgstr ""
-
-#: Game/Levels/Luna/L04_Omega2.lean:17
-msgid "Intro Luna L04"
-msgstr ""
-
-#: Game/Levels/Luna/L04_Omega2.lean:21
-msgid "Try omega"
-msgstr ""
-
-#: Game/Levels/Luna/L04_Omega2.lean:31
-msgid "Conclusion Luna L04"
-msgstr ""
-
-#: Game/Levels/Luna/L05_Linarith2.lean:16
-msgid "Intro Luna L05"
-msgstr ""
-
-#. §0: `omega`
-#. §1: `linarith`
-#. §2: `linarith`
-#. §3: `intro`
-#: Game/Levels/Luna/L05_Linarith2.lean:27
-msgid "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
-"the implications via §3"
-msgstr ""
-
-#. §0: `«{hx}»`
-#. §1: `push Not at «{hx}»`
-#: Game/Levels/Luna/L05_Linarith2.lean:36
-msgid "Increase readability of §0. Try §1"
-msgstr ""
-
-#. §0: `«{hx}» : m ≤ x → n < x`
-#. §1: `→`
-#. §2: `rw`
-#. §3: `imp_iff_or_not`
-#: Game/Levels/Luna/L05_Linarith2.lean:44
-msgid "We now have §0. Knowing what §1 means, try §2 with §3"
-msgstr ""
-
-#. §0: `«{hx}»`
-#. §1: `obtain`
-#: Game/Levels/Luna/L05_Linarith2.lean:53
-msgid "Divide §0 with §1"
-msgstr ""
-
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:14
-msgid "Intro Luna L06"
-msgstr ""
-
-#. §0: `Icc`
-#. §1: `Icc a b`
-#. §2: $[a, b]$
-#. §3: $\\{a, a + 1, \\dots, b\\}$
-#. §4: $$ [a, b] ∪ \\{ b + 1 \\} = [a, b + 1] $$
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:35
-msgid "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
-"as §2 or §3, because we are in the natual numbers. Therfore, the\n"
-"goal is: §4"
-msgstr ""
-
-#. §0: `ext`
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:39
-msgid "Equality of sets demands §0"
-msgstr ""
-
-#. §0: `simp`
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:46
-msgid "Try §0 afterwards"
-msgstr ""
-
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:49
-msgid "Ritha gives signs to try omega"
-msgstr ""
-
-#. §0: `omega`
-#: Game/Levels/Luna/L07_Linarith2.lean:14
-msgid "Intro Luna L07: Enough of §0"
-msgstr ""
-
-#. §0: $$
-#. \\begin{aligned}
-#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\\\ %(new line)
-#. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
-#. \\end{aligned}
-#. $$
-#. §1: $$
-#. y ≤ \\tfrac{34}{7}
-#. $$
-#: Game/Levels/Luna/L07_Linarith2.lean:37
-msgid "Given\n"
-"\n"
-"§0\n"
-"\n"
-"Show\n"
-"§1\n"
-""
-msgstr ""
-
-#: Game/Levels/Luna/L07_Linarith2.lean:54
-msgid "Conclusion Luna L07"
-msgstr ""
-
-#: Game/Levels/Luna/L08_Omega3.lean:13
-msgid "Intro Luna L08"
-msgstr ""
-
-#. §0: `simp at «{h'}»`
-#: Game/Levels/Luna/L08_Omega3.lean:20
-msgid "Definitely use §0"
-msgstr ""
-
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:13
-msgid "Intro Luna L09"
-msgstr ""
-
-#. §0: `b`
-#. §1: `use …`
-#. §2: `lt_trichotomy`
-#. §3: ```
-#. obtain h | h | h := lt_trichotomy a c
-#. ```
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:28
-msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
-"§3\n"
-""
-msgstr ""
-
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:51
-msgid "Conclusion Luna L09"
-msgstr ""
-
-#. §0: `omega`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:19
-msgid "Intro Luna L10: Use §0 again"
-msgstr ""
-
-#. §0: `subset_iff`
-#. §1: `simp`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:35
-msgid "Try using §0 and if nothing else helps, §1"
-msgstr ""
-
-#. §0: `«{h}»`
-#. §1: `«{h}»`
-#. §2: `a₁ ≤ b₁`
-#. §3: `a₁ ≤ a₁`
-#. §4: `a₁ ≤ a₁`
-#. §5: `have`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:50
-msgid "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
-"Formulate §4 using §5"
-msgstr ""
-
-#: Game/Levels/Luna.lean:17
-msgid "Luna"
-msgstr ""
-
-#: Game/Levels/Luna.lean:48
-msgid "Intro Luna"
-msgstr ""
-
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:8
 msgid "Intro Babylon L01"
 msgstr ""
@@ -3438,12 +3210,12 @@ msgstr ""
 msgid "§0 is useful here"
 msgstr ""
 
-#: Game/Levels/Babylon/L04_sum_subset.lean:62
+#: Game/Levels/Babylon/L04_sum_subset.lean:60
 msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
-#: Game/Levels/Babylon/L04_sum_subset.lean:72
+#: Game/Levels/Babylon/L04_sum_subset.lean:70
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
 
@@ -3451,21 +3223,15 @@ msgstr ""
 #. §1: $«{i}»=1$
 #. §2: $«{i}»=2$
 #. §3: `have`
-#: Game/Levels/Babylon/L04_sum_subset.lean:80
-#: Game/Levels/Babylon/L04_sum_subset.lean:86
+#: Game/Levels/Babylon/L04_sum_subset.lean:78
+#: Game/Levels/Babylon/L04_sum_subset.lean:84
 msgid "Assumptions have to entail §0 or §1 or §2. Try §3"
-msgstr ""
-
-#. §0: `simp`
-#. §1: `omega`
-#: Game/Levels/Babylon/L04_sum_subset.lean:94
-msgid "Try §0 & §1"
 msgstr ""
 
 #. §0: `«{h}»`
 #. §1: `obtain`
 #. §2: `obtain h | h | h  := «{h}»`
-#: Game/Levels/Babylon/L04_sum_subset.lean:102
+#: Game/Levels/Babylon/L04_sum_subset.lean:98
 msgid "[Babylon] Split §0 with §1: §2"
 msgstr ""
 
@@ -5559,6 +5325,19 @@ msgstr ""
 msgid "Try case distinction. Use §0"
 msgstr ""
 
+#. §0: `obtain`
+#. §1: `x < y`
+#. §2: `x = y`
+#. §3: `x > y`
+#. §4: ```
+#. obtain h | h | h := lt_trichotomy x y
+#. ```
+#: Game/Levels/Mono/L06_StrictMono.lean:41
+msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
+"\n"
+"§4"
+msgstr ""
+
 #. §0: `n ↦ n + 1`
 #. §1: `n ↦ n - 1`
 #. §2: `n = 0`
@@ -6222,26 +6001,78 @@ msgstr ""
 msgid "Intro Piazza"
 msgstr ""
 
-#: Game.lean:31
+#: Game/Levels/Cafe/L01_Grind1.lean:13
+#: Game/Levels/Cafe/L02_Split_if.lean:13
+#: Game/Levels/Cafe/L03_Lia.lean:13
+msgid "Intro Cafe L01"
+msgstr ""
+
+#: Game/Levels/Cafe/L01_Grind1.lean:22
+#: Game/Levels/Cafe/L02_Split_if.lean:21
+#: Game/Levels/Cafe/L03_Lia.lean:19
+msgid "To add."
+msgstr ""
+
+#: Game/Levels/Cafe/L01_Grind1.lean:27
+msgid "Cafe L01"
+msgstr ""
+
+#: Game/Levels/Cafe/L02_Split_if.lean:26
+msgid "Cafe L02"
+msgstr ""
+
+#: Game/Levels/Cafe/L03_Lia.lean:24
+msgid "Cafe L03"
+msgstr ""
+
+#: Game/Levels/Cafe/L04_Grind2.lean:13
+msgid "Intro Cafe L04"
+msgstr ""
+
+#. §0: `b`
+#. §1: `use …`
+#. §2: `lt_trichotomy`
+#. §3: ```
+#. obtain h | h | h := lt_trichotomy a c
+#. ```
+#: Game/Levels/Cafe/L04_Grind2.lean:29
+msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
+"§3\n"
+""
+msgstr ""
+
+#: Game/Levels/Cafe/L04_Grind2.lean:37
+msgid "Cafe L04"
+msgstr ""
+
+#: Game/Levels/Cafe.lean:11
+msgid "Cafe"
+msgstr ""
+
+#: Game/Levels/Cafe.lean:42
+msgid "Intro Cafe"
+msgstr ""
+
+#: Game.lean:34
 msgid "[Game] Title"
 msgstr ""
 
-#: Game.lean:32
+#: Game.lean:35
 msgid "[Game] Introduction"
 msgstr ""
 
-#: Game.lean:33
+#: Game.lean:36
 msgid "[Game] Info"
 msgstr ""
 
-#: Game.lean:35
+#: Game.lean:38
 msgid "[Game] Conclusion"
 msgstr ""
 
-#: Game.lean:40
+#: Game.lean:43
 msgid "[Game] CaptionShort"
 msgstr ""
 
-#: Game.lean:41
+#: Game.lean:44
 msgid "[Game] CaptionLong"
 msgstr ""
