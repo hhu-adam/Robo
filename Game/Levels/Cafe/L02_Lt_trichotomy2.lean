@@ -33,9 +33,15 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
   "
   use (a + c) / 2
   obtain h | h | h := lt_trichotomy a c
-  · grind
+  · Hint "[Hint ulgrd] Since `a < c`, I'd say the left side of the `∨` is the one that holds. Pick it with `left`."
+    left
+    Hint "[Hint ltgrind] The goal is now a system of inequalities. `grind` is good at this kind of
+    arithmetic reasoning, so just try `grind`."
+    grind
   · contradiction
-  · grind
+  · right
+    Hint (hidden := true) "I guess you can try `grind` again."
+    grind
 
 /-- To add. -/
 TacticDoc grind

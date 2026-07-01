@@ -5,7 +5,7 @@ World "Samarkand"
 Level 4
 Title "" -- ""
 
-open Set
+open Function
 
 /-
 Introduction "
@@ -15,11 +15,11 @@ Introduction "
 Introduction "Intro Samarkand L04"
 
 /---/
-TheoremDoc Function.Surjective.image_preimage as "Surjective.image_preimage" in "Function"
+TheoremDoc Set.image_preimage_eq as "image_preimage_eq" in "Function"
 
-namespace Function
+namespace Set
 
-Statement Surjective.image_preimage {A B : Type} {f : A → B} (hf : Surjective f) (T : Set B) :
+Statement image_preimage_eq {A B : Type} {f : A → B} (T : Set B) (hf : Surjective f) :
 f '' (f ⁻¹' T) = T := by
   /-
   Hint "
@@ -40,7 +40,8 @@ f '' (f ⁻¹' T) = T := by
   ext b
   simp
   constructor
-  · apply image_preimage_subset -- Lvl 1
+  · Hint "[Hint rips] remember `image_preimage_subset`"
+    apply image_preimage_subset -- Lvl 1
   · intro hb
     obtain ⟨a, ha⟩ := hf b
     use a

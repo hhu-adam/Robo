@@ -62,6 +62,9 @@ Statement {A : Type} (n : ℕ) :
   Hint (hidden := true) "**Robo**:  Erinner dich, dass deine “Tupel” `diag {a₁}` und `diag {a₂}` in Wahrheit zwei Abbildung `Fin (n + 1) → A` sind.
   Du könntest sie auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
   -/
-  Hint (hidden := true) "Remind that 'tuples' `diag {a₁}` and `diag {a₂}` are two mappings `Fin (n + 1) → A`.
-  Evaluate them on elements from `Fin (n + 1)`. Try `congr_fun`"
-  apply congr_fun h 0
+  Branch
+    -- old proof.
+    Hint (hidden := true) "Remind that 'tuples' `diag {a₁}` and `diag {a₂}` are two mappings `Fin (n + 1) → A`.
+    Evaluate them on elements from `Fin (n + 1)`. Try `congr_fun`"
+    apply congr_fun h 0
+  grind

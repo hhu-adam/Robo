@@ -55,21 +55,24 @@ Statement (x : ℤ) :
     -/
     Hint "Try `ring`, as it sees through definitions `{f}` and `{g}`"
   use fun (x : ℤ) ↦ x - 3
-  /-
-  Hint "
-  **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` würde dieses
-  Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
-  -/
-  Hint "[Hint bpwn] Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
-  rw [comp_apply]
-  /-
-  Hint "
-  **Robo**: `ring` sieht durch lokale Definitionen wie
-  `{f}` hindurch,
-  du kannst es also direkt benutzen."
-  -/
-  Hint "Try `ring` as it sees through defintion `{f}`"
-  ring
+  Branch
+    -- old proof
+    /-
+    Hint "
+    **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` würde dieses
+    Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
+    -/
+    Hint "[Hint bpwn] Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
+    rw [comp_apply]
+    /-
+    Hint "
+    **Robo**: `ring` sieht durch lokale Definitionen wie
+    `{f}` hindurch,
+    du kannst es also direkt benutzen."
+    -/
+    Hint "Try `ring` as it sees through defintion `{f}`"
+    ring
+  grind
 
 
 -- Sagt dass `(f ∘ g) x` das gleiche ist wie `f (g x)`.
