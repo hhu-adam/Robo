@@ -1,4 +1,4 @@
-import Game.MetaData
+import Game.Metadata
 
 World "Shade"
 Level 1
