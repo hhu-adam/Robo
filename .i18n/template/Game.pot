@@ -417,7 +417,7 @@ msgstr ""
 #. §15: `ha : a ∈ A`
 #. §16: `use a`
 #. §17: `h : Nonempty T`
-#. §18: `obtain ⟨t⟩ := t`
+#. §18: `obtain ⟨t⟩ := h`
 #. §19: `t`
 #. §20: `t : T`
 #. §21: `h : Nonempty A`

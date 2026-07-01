@@ -967,7 +967,7 @@ msgstr ""
 #. §15: `ha : a ∈ A`
 #. §16: `use a`
 #. §17: `h : Nonempty T`
-#. §18: `obtain ⟨t⟩ := t`
+#. §18: `obtain ⟨t⟩ := h`
 #. §19: `t`
 #. §20: `t : T`
 #. §21: `h : Nonempty A`
@@ -9915,7 +9915,7 @@ msgstr ""
 "\n"
 "**You**:  How? What's §3, for example? \n"
 "\n"
-"**Scribble**: No idea. What I meant, of course, is: *if §4 is*, then §5 is "
+"**Scribble**: No idea. What I meant, of course, is: *if §4*, then §5 is "
 "still the “same” number."
 
 #: Game.Levels.Vieta.L08_CongrArg
