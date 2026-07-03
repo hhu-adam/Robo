@@ -50,24 +50,24 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Sha
       Hint "[Hint pbf] Remember the proof before."
       apply exists_mem_Ioo_gt hf hab h_gt
     obtain ⟨c, hc_mem, hfc⟩ := hc
-    let d := sSup (shadeSet f c b)
-    have hn : (shadeSet f c b).Nonempty := by
-      apply shadeSet_nonempty hb hfc
+    let d := sSup (Shaders f c)
+    have hn : (Shaders f c).Nonempty := by
+      apply shaders_nonempty hfc
       apply h₀
       assumption
-    have hbd : BddAbove (shadeSet f c b) := by
-      Hint "[Hint] Remember the proof before."
+    have hbd : b ∈ upperBounds (Shaders f c) := by
+      apply shaders_bddAbove hb hfc
+      --Hint "[Hint] Remember the proof before."
+    have hbd' : BddAbove (Shaders f c) := by
       use b
-      intro y hy
-      unfold shadeSet at hy
-      grind
     have d_le : d ≤ b := by
       apply csSup_le
       · assumption
-      unfold shadeSet
-      grind
+      --unfold Shaders
+      rw [mem_upperBounds] at hbd  -- NEW LEMMA (but perhaps this can be simplified)
+      assumption
     have hfc_le_fd : f c ≤ f d := by
-      have hsub : (shadeSet f c b) ⊆ {x | f c ≤ f x} := sep_subset_setOf _ _
+      have hsub : (Shaders f c) ⊆ {x | f c ≤ f x} := sep_subset_setOf _ _
       apply closure_minimal hsub
       · apply isClosed_le
         · fun_prop
@@ -81,7 +81,7 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Sha
         apply le_csSup
         · assumption
         · assumption
-      unfold shadeSet at hx
+      unfold Shaders at hx
       grind
     have d_lt : d < b := by
       grind
@@ -91,13 +91,13 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Sha
     have lt_aux₂ : ∀ x, x ∈ Ioo d b → f x ≤ f c := by
       intro x hx
       obtain ⟨hx1, hx2⟩ := hx
-      have not_mem : x ∉ shadeSet f c b := by
+      have not_mem : x ∉ Shaders f c := by
         apply notMem_of_csSup_lt
         · assumption
-        apply shadeSet_bddAbove f c b
+        assumption
       by_contra hc
-      have mem_aux : x ∈ shadeSet f c b := by
-        unfold shadeSet
+      have mem_aux : x ∈ Shaders f c := by
+        unfold Shaders
         grind
       contradiction
     have : d ∉ Shade f := by

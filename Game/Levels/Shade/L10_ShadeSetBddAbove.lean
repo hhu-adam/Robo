@@ -13,18 +13,28 @@ immediate: every element of `shadeSet f c b` lies in `Ioo c b`, hence is below `
 
 open Set FullGrind
 
-/-- The set `shadeSet f c b` is bounded above (by `b`). -/
-TheoremDoc shadeSet_bddAbove as "shadeSet_bddAbove" in "Shade"
+/-- The set `Shaders f c` is bounded above if …. -/
+TheoremDoc shaders_bddAbove as "shaders_bddAbove" in "Shade"
 
-Statement shadeSet_bddAbove (f : ℝ → ℝ) (c b : ℝ) : BddAbove (shadeSet f c b) := by
+Statement shaders_bddAbove {f : ℝ → ℝ} {c b : ℝ} (h_b_sun : b ∉ Shade f) (h_b_val : f b < f c): b ∈ upperBounds (Shaders f c) := by
   Hint "[Hint bbdshadeh] Remember that `shadeSet f c b` is defined as the set of `t ∈ Set.Ioo c b` with `f c ≤ f t`. Therefore,
   `b` is a upperbound of this set. "
-  use b
+  --use b
   intro y hy
   Hint (hidden := true) "[Hint ufgrind] Now just unfold the definition `shadeSet` and use `grind` to closed it. "
-  unfold shadeSet at hy
-  grind
+  --unfold shadeSet at hy
+  obtain h | h | h := lt_trichotomy y b
+  · grind (ematch := 0)
+  · grind (ematch := 0)
+  · have : b ∈ Shade f
+    · use y
+      simp [Shade] at h_b_sun
+      simp [Shaders] at hy
+      grind (ematch := 0)
+    contradiction
+
 
 Conclusion "Conclusion Shade L10: saved as `shadeSet_bddAbove`."
+
 
 TheoremTab "Shade"
