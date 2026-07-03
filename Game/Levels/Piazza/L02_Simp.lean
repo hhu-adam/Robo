@@ -14,7 +14,7 @@ Introduction
 -/
 Introduction "Intro Piazza L02"
 
-open Set
+open Set Nat
 
 Statement : 9 ∈ {n : ℕ | Odd n} := by
 
