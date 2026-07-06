@@ -18,7 +18,7 @@ the goal is `f a = f b`.
 **The mathematical idea.** Compare `f a` and `f b` by trichotomy.
 
 * If `f a < f b`: then `b` itself is a point to the right of `a` with a larger value, so `a` would be
-  a shadow point — contradicting `a ∉ Shade f`.
+  a shadow point — contradicting `a ∈ Sun f`.
 
 * If `f a = f b`: there is nothing to prove.
 
@@ -37,7 +37,7 @@ open Set FullGrind
 
 variable {f : ℝ → ℝ} {a b : ℝ}
 
-Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Shade f)
+Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f)
    (h₀ : ∀ k ∈ Set.Ioo a b, k ∈ Shade f) : f a = f b := by
   obtain h_lt | h_eq | h_gt := lt_trichotomy (f a) (f b)
   · Hint "[Hint sbosf] In this case, `a` is a shade point since `a < b` and `f a < f b`."
@@ -86,7 +86,7 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Sha
     have d_lt : d < b := by
       grind
     have lt_aux₁ : ∀ x, b < x → f x ≤ f b := by
-      apply not_mem_shade
+      apply mem_sun
       assumption
     have lt_aux₂ : ∀ x, x ∈ Ioo d b → f x ≤ f c := by
       intro x hx
@@ -100,8 +100,12 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∉ Shade f) (hb : b ∉ Sha
         unfold Shaders
         grind
       contradiction
-    have : d ∉ Shade f := by
+    have : d ∈ Sun f := by
       by_contra hc
+      simp at hc
+      have hc : d ∈ Shade f := by
+        apply not_notMem.mp
+        assumption
       obtain ⟨t, ht⟩ := hc
       grind
     have : d ∈ Shade f := by

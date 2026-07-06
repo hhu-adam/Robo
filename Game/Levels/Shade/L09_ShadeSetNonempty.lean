@@ -11,7 +11,7 @@ Fix two points `c` and `b`.  We study the set of points strictly between `c` and
 rises above `f c`:
 
 ```
-shadeSet f c b := {t ∈ Ioo c b | f c < f t}
+Shaders f c := {t ∈ Set.Ioi c | f c ≤ f t}
 ```
 
 Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming `b` is
@@ -25,9 +25,9 @@ def Shaders (f : ℝ → ℝ) (c : ℝ) : Set ℝ := {t ∈ Set.Ioi c | f c ≤ 
 /-- `Shaders f c` is the set of `t` strictly larger than `c` such that `f c < f t`. -/
 DefinitionDoc Shaders as "Shaders" in "Shade"
 
-/-- If `b` is not a shadow point, `f b < f c`, and `c` is a shadow point, then `shadeSet f c b`
+/-- If `b` is not a shadow point, `f b < f c`, and `c` is a shadow point, then `Shaders f c`
 is nonempty. -/
-TheoremDoc shaders_nonempty as "shadeSet_nonempty" in "Shade"
+TheoremDoc shaders_nonempty as "shaders_nonempty" in "Shade"
 
 Statement shaders_nonempty {f : ℝ → ℝ} {b c : ℝ}
     (hbc : f b < f c) (hc_shade : c ∈ Shade f) : (Shaders f c).Nonempty := by
@@ -40,7 +40,7 @@ Statement shaders_nonempty {f : ℝ → ℝ} {b c : ℝ}
   unfold Shaders
   grind
 
-Conclusion "Conclusion Shade L09: saved as `shadeSet_nonempty`."
+Conclusion "Conclusion Shade L09: saved as `shaders_nonempty`."
 
 NewDefinition Shaders
 
