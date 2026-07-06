@@ -69,9 +69,9 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
         **Robo**:  Dazu hatten wir doch schon mal etwas gesehen, zum Beispiel `Even.neg_pow` und `Odd.neg_pow`.
       "
       -/
+      Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
       Branch
         -- old proof
-        Hint "Familiar situation: try `Even.neg_pow` or `Odd.neg_pow`"
         intro i hi
         simp at hi
         obtain ⟨hI, heven⟩ := hi

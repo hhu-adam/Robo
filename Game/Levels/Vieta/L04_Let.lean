@@ -55,14 +55,14 @@ Statement (x : ℤ) :
     -/
     Hint "Try `ring`, as it sees through definitions `{f}` and `{g}`"
   use fun (x : ℤ) ↦ x - 3
-  Branch
-    -- old proof
-    /-
+  /-
     Hint "
     **Robo**: `(g ∘ {f}) x` ist per Definition `g ({f} x)`. `simp` würde dieses
     Lemma auch kennen, aber mach das hier mal direkt mit `rw [comp_apply]`."
     -/
-    Hint "[Hint bpwn] Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
+  Hint "[Hint bpwn] Explain `(g ∘ {f}) x` defined as `g ({f} x)`. Try `simp` | `rw [comp_apply]`"
+  Branch
+    -- old proof
     rw [comp_apply]
     /-
     Hint "
