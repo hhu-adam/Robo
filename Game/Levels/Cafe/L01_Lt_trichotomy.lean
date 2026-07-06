@@ -48,8 +48,6 @@ obtain h | h | h := lt_trichotomy x y
 TheoremDoc lt_trichotomy as "lt_trichotomy" in "≤"
 NewTheorem lt_trichotomy
 
-/-- To add. -/
-TacticDoc grind
 NewTactic grind
 
 

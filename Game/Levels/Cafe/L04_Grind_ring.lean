@@ -21,9 +21,6 @@ Statement (a b c : ℤ) :
   algebraic manipulation. `grind` can call on ring reasoning to close such goals, so just try `grind`."
   grind
 
-/-- To add. -/
-TacticDoc grind
-
 NewTactic grind
 
 Conclusion "Cafe L04"
