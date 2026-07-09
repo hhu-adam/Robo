@@ -12,17 +12,23 @@ Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b
   that is **smaller than everything** already present (`ha`). Template:
 
   ```
-  induction s using Finset.induction_on_min with
-  | empty => sorry
-  | insert a s ha ih => sorry
+  induction s using Finset.induction_on_min
+  · sorry
+  · sorry
   ```
 
   In the `insert` case, `a` is the witness you need."
-  induction s using Finset.induction_on_min with
-  | empty =>  contradiction
-  | insert a s ha ih =>
-    use a
+  Branch
+    induction s using Finset.induction_on_min with
+    | empty => contradiction
+    | insert a s ha ih =>
+      use a
+      grind
+  induction s using Finset.induction_on_min
+  · contradiction
+  · use a
     grind
+
 
 NewTheorem Finset.induction_on_min
 
