@@ -18,37 +18,37 @@ C2. RealUncountable / dim_ℚ ℝ is infinite
 
 See folder Levels_inactive/v2
 
-| name/content                    | status                     | picture                      |
-| :------------------------------ | -------------------------- | ---------------------------- |
-| **Analysis**                    |                            |                              |
-| + light and shadow (continuity) | draft                      |                              |
-| + Slope (derivative)            | draft                      |                              |
-| o Smooth_take-off [^1]          |                            |                              |
-|                                 |                            |                              |
-| **Linear Algebra**              |                            |                              |
-| +  Step                         | draft                      | exists: mushrooms with flags |
-| +  MatrixSpan                   | draft; needs to be updated |                              |
-|                                 |                            |                              |
-| **Quotients**                   |                            |                              |
-| ++ SymmSquare                   | draft; TODO: L08           |                              |
-| ?  Quotient: Finset/iso = Nat   | --                         |                              |
-|                                 |                            |                              |
-| **General**                     |                            |                              |
-| +  RealUncountable              | draft solution             |                              |
-|                                 |                            |                              |
-| **Possible future versions:**   |                            |                              |
-| +? FibresCard2                  | full solution              |                              |
-| Continuity                      |                            |                              |
-| Epsilon-Delta-Differentiability |                            | exists: ants                 |
-| Differentiability               |                            | exists: snail                |
-| ContinuousFunction              |                            |                              |
-| CosExtInequality                |                            |                              |
-|                                 |                            |                              |
-| **Trash:**                      |                            |                              |
-| [[Tmp]]                         |                            |                              |
-| [[VectorSpan]]                  |                            |                              |
-| [[NewStuff]]                    |                            |                              |
-| [[Quantum]]                     |                            |                              |
-|                                 |                            |                              |
+| name/content                    | status                     | picture                        |
+| :------------------------------ | -------------------------- | ------------------------------ |
+| **Analysis**                    |                            |                                |
+| + light and shadow (continuity) | draft                      |                                |
+| + Slope (derivative)            | draft                      | exists: snail on pipe          |
+| o Smooth_take-off [^1]          |                            |                                |
+|                                 |                            |                                |
+| **Linear Algebra**              |                            |                                |
+| +  Step                         | draft                      | ?exists: mushrooms with flags? |
+| +  MatrixSpan                   | draft; needs to be updated |                                |
+|                                 |                            |                                |
+| **Quotients**                   |                            |                                |
+| ++ SymmSquare                   | draft; TODO: L08           |                                |
+| ?  Quotient: Finset/iso = Nat   | --                         |                                |
+|                                 |                            |                                |
+| **General**                     |                            |                                |
+| +  RealUncountable              | draft solution             |                                |
+|                                 |                            |                                |
+| **Possible future versions:**   |                            |                                |
+| +? FibresCard2                  | full solution              |                                |
+| Continuity                      |                            |                                |
+| Epsilon-Delta-Differentiability |                            | exists: ants                   |
+| Differentiability               |                            | exists: snail                  |
+| ContinuousFunction              |                            |                                |
+| CosExtInequality                |                            |                                |
+|                                 |                            |                                |
+| **Trash:**                      |                            |                                |
+| [[Tmp]]                         |                            |                                |
+| [[VectorSpan]]                  |                            |                                |
+| [[NewStuff]]                    |                            |                                |
+| [[Quantum]]                     |                            |                                |
+|                                 |                            |                                |
 
 [^1]: [Smooth take-off](https://en.wikipedia.org/wiki/Non-analytic_smooth_function#An_example_function)
