@@ -23,7 +23,7 @@ See folder Levels_inactive/v2
 | **Analysis**                    |                            |                              |
 | + light and shadow (continuity) | draft                      |                              |
 | + Slope (derivative)            | draft                      |                              |
-| o [^Smooth_take-off]            |                            |                              |
+| o Smooth_take-off [^1]          |                            |                              |
 |                                 |                            |                              |
 | **Linear Algebra**              |                            |                              |
 | +  Step                         | draft                      | exists: mushrooms with flags |
@@ -51,4 +51,4 @@ See folder Levels_inactive/v2
 | [[Quantum]]                     |                            |                              |
 |                                 |                            |                              |
 
-[^Smooth_take-off](https://en.wikipedia.org/wiki/Non-analytic_smooth_function#An_example_function)
+[^1]: [Smooth take-off](https://en.wikipedia.org/wiki/Non-analytic_smooth_function#An_example_function)
