@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib.LinearAlgebra.AffineSpace.Slope
 
 World "Slope"
 Level 4
@@ -26,17 +25,14 @@ bracket part: `\nhds[>]`, `\nhds[<]`, and `\nhds[\ne]` for `𝓝[≠]`.
 DefinitionDoc Filter.Tendsto as "Tendsto" in "Function"
 
 /---/
-TheoremDoc Continuous.tendsto' as "Continuous.tendsto'" in "Function"
+TheoremDoc tendsto_const_nhds as "tendsto_const_nhds" in "Function"
 
-Statement :
-    Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0) := by
-  Hint "[Hint ctdst] The absolute value function is continuous, so its limit
-    at `0` is simply its value there: `|0| = 0`. In Lean, apply the theorem
-    `Continuous.tendsto'`."
-  apply Continuous.tendsto'
-  Hint (hidden := true) "[Hint rmbfp] Remember we have `fun_prop`"
-  fun_prop
-  grind
+Statement (a c : ℝ) :
+    Tendsto (fun (x : ℝ) => c) (𝓝 a) (𝓝 c) := by
+  Hint "[Hint tcnst] The constant function sends every point to `c` — in
+    particular, points near `a` go to points near `c`. This is the theorem
+    `tendsto_const_nhds`; apply it."
+  apply tendsto_const_nhds
 
-NewTheorem Continuous.tendsto'
+NewTheorem tendsto_const_nhds
 NewDefinition Filter.Tendsto
