@@ -17,31 +17,29 @@ Statement (c : ℝ) :
   by_contra h
   rw [hasDerivAt_iff_tendsto_slope] at h
   have e₁ : c = 1 := by
-    have h₁ : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c) := by
+    have hc : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c) := by
       apply h.mono_left
       apply nhdsWithin_mono
       grind
-    have slope_pos : ∀ x ∈ Set.Ioi 0, slope f 0 x = 1 := by
+    have slope_pos : ∀ x ∈ Set.Ioi 0, 1 = slope f 0 x := by
       intro y hy
       rw [slope_def_field]
       grind
-    have aux : Tendsto (fun (x : ℝ) ↦ 1) (𝓝[>] 0) (𝓝 c) := by
+    have h1 : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 1) := by
       apply tendsto_nhdsWithin_congr slope_pos
-      assumption
-    apply tendsto_nhds_unique aux
-    apply tendsto_const_nhds
+      apply tendsto_const_nhds
+    apply tendsto_nhds_unique hc h1
   have e₂ : c = -1 := by
-    have h₂ : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 c) := by
+    have hc : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 c) := by
       apply h.mono_left
       apply nhdsWithin_mono
       grind
-    have slope_neg : ∀ x ∈ Set.Iio 0, slope f 0 x = -1 := by
+    have slope_neg : ∀ x ∈ Set.Iio 0, -1 = slope f 0 x := by
       intro y hy
       rw [slope_def_field]
       grind
-    have aux : Tendsto (fun (x : ℝ) ↦ -1) (𝓝[<] 0) (𝓝 c) := by
+    have h1 : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 (-1)) := by
       apply tendsto_nhdsWithin_congr slope_neg
-      assumption
-    apply tendsto_nhds_unique aux
-    apply tendsto_const_nhds
+      apply tendsto_const_nhds
+    apply tendsto_nhds_unique hc h1
   grind
