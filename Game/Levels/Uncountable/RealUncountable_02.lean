@@ -45,9 +45,12 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
     -- Mein Teil
 
     -- Schreibe die Kardinalität von `ℚ` als ℵ₀
-    letI : Countable ℚ := inferInstance
+    letI : Countable ℚ := by
+      infer_instance
     have h_ℚ : #ℚ = Cardinal.aleph0 := Cardinal.mk_eq_aleph0 ℚ
 
+    have : ¬ Countable ℝ := by
+      apply Uncountable.not_countable
     -- Anwenden des Lemmas auf die Basis `B` von `ℝ` über `ℚ`
     --#R <= #Q
     have cardinal_ineq : #ℝ ≤ Cardinal.aleph0 :=
@@ -71,7 +74,8 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
   rw [Cardinal.mk_univ]
   let B := Basis.ofVectorSpace ℚ ℝ
   apply cardinal_eq_of_finite_basis _ B
-  simp only [Cardinal.mk_denumerable]
+  apply Cardinal.mk_eq_aleph0 ℚ
+  -- simp only [Cardinal.mk_denumerable]
 
 /---/
 TheoremDoc Cardinal.not_countable_real as "Cardinal.not_countable_real" in "Cardinal"
