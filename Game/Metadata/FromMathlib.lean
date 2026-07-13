@@ -35,3 +35,6 @@ import Mathlib.Data.Nat.Prime.Defs
 import Mathlib.Data.Rat.Star
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
+
+/- SymmSquare-/
+import Mathlib.Data.Sym.Sym2

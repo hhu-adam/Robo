@@ -1,0 +1,200 @@
+import Game.Metadata
+import Game.Levels.SymmSquare.L02_Sym2
+
+World "Symmetric Square"
+Level 8
+
+Title "" -- "Classifying Symmetric Functions"
+
+Introduction
+"
+In this level you show that there is a 1-1 correspondence between unordered pairs and subsets
+with 1 or 2 elements.
+"
+
+open Function Sym Finset Set Quotient
+
+-- PRd to mathlib #13302 -- declined (?)
+@[simp]
+theorem card_pair_eq_one_or_two {A : Type*} [DecidableEq A] (a b : A) :
+    ({a,b} : Finset A).card = 1 ∨ ({a,b} : Finset A).card = 2 := by
+  simp [card_insert_eq_ite]
+  grind
+  -- tauto
+
+-- @[simp]
+-- theorem card_one_or_two {A : Type*} [DecidableEq A] (a b : A) :
+--     ({a,b} : Finset A).card = 1 ∨ ({a,b} : Finset A).card = 2 := by
+--   by_cases h : a = b
+--   · rw [h]
+--     left
+--     simp only [insert_eq_of_mem, mem_singleton, card_singleton]
+--   · right
+--     apply card_pair h
+
+theorem helper {A : Type*} [DecidableEq A] {a₁ a₂ b₁ b₂ : A} (h₁ : a₁ ≠ a₂) (h₂ : b₁ ≠ b₂)
+    (h : ({a₁, a₂} : Finset A) = {b₁, b₂}) : (a₁ = b₁ ∧ a₂ = b₂) ∨ (a₁ = b₂ ∧ a₂ = b₁) := by
+  -- I'm going mad xD
+  rw [Finset.ext_iff] at h
+  have q₁ := (h a₁).mp (Finset.mem_insert_self _ _)
+  have q₂ := (h a₂).mp
+  rw [Finset.pair_comm] at q₂
+  replace q₂ := q₂ <| Finset.mem_insert_self a₂ {a₁}
+  rw [Finset.mem_insert, Finset.mem_singleton] at q₁ q₂
+  aesop
+
+theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
+    S.card = 1 ∨ S.card = 2 ↔ ∃ a b, S = {a,b} := by
+  constructor
+  · intro h
+    obtain h | h := h
+    · rw [card_eq_one] at h
+      obtain ⟨s, hs⟩ := h
+      use s, s
+      simp
+      grind
+      -- assumption
+    · rw [card_eq_two] at h
+      obtain ⟨s, t, _h₁, h₂⟩ := h
+      use s, t
+  · rintro ⟨a, b, rfl⟩
+    grind
+    -- simp
+
+/- OLD BROKEN PROOF (kept for reference).
+   The statement asked for the equivalence as *data*, but its inverse is noncomputable (see the
+   `headless` theorem below: you can't extract the element of a card-1 multiset computably), so
+   `Equiv.ofBijective` cannot live inside the plain `def` that `Statement` generates. It is restated
+   below as `Nonempty (…)` — a Prop — which matches the Introduction ("there *is* a 1-1
+   correspondence") and lets the noncomputable equivalence be built inside the proof.
+
+Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 1} ⊕ { S : Finset A // S.card = 2 } := by
+  let f : Sym2 A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=
+    Quot.lift (
+      fun ⟨a, b⟩ => if h : a = b then .inl ⟨{a}, rfl⟩ else .inr ⟨{a, b}, card_pair h⟩) (by
+        -- this would be `aesop` but it's too slow so I replaced it while working on it.
+        intro a b h
+        rw [Sym2.rel_iff'] at h
+        obtain h | h := h
+        dsimp only
+        · rw [h]
+        · rw [h]
+          dsimp only [Prod.fst_swap, Prod.snd_swap]
+          by_cases h₂ : b.1 = b.2
+          · grind
+            -- rw [h₂]
+
+          ·
+
+            sorry
+            simp only [h₂, ↓reduceDite]
+            have h₃: ¬ (b.2 = b.1) := fun x => h₂ x.symm
+            simp only [h₃, ↓reduceDite]
+            simp_all only [Sum.inr.injEq, Subtype.mk.injEq]
+            rw [Finset.pair_comm])
+
+  refine' Equiv.ofBijective f _
+  constructor
+  · intro b c hbc
+    simp [f] at hbc
+    clear f
+    obtain ⟨b', hb⟩ := Quot.exists_rep b
+    obtain ⟨c', hc⟩ := Quot.exists_rep c
+    rw [← hb, ← hc ] at hbc ⊢
+    simp at *
+    by_cases h : b'.1 = b'.2
+    · by_cases h₂ :c'.1 = c'.2
+      · simp [h, h₂] at hbc
+        aesop
+      · simp [h, h₂] at hbc
+    · simp [h, reduceDite] at hbc
+      by_cases h₂ :c'.1 = c'.2
+      · simp [h, h₂] at hbc -- , Subtype.mk.injEq
+      · simp [h, h₂, ↓reduceDite] at hbc
+        apply helper h h₂ at hbc
+        rw [Prod.eq_iff_fst_eq_snd_eq, Prod.eq_iff_fst_eq_snd_eq]
+        rw [Prod.fst_swap, Prod.snd_swap]
+        assumption
+  · intro y
+    obtain y | y := y
+    · have y₂ := y.2
+      rw [card_eq_one] at y₂
+      choose a ha using y₂
+      use Quot.mk _ (a, a)
+      simp [f]
+      apply Subtype.val_injective
+      exact ha.symm
+    · have y₂ := y.2
+      rw [card_eq_two] at y₂
+      choose a b hab₁ hab₂ using y₂
+      use Quot.mk _ (a, b)
+      simp [f]
+      simp only [hab₁, ↓reduceDite, Sum.inr.injEq]
+      apply Subtype.val_injective
+      exact hab₂.symm
+-/
+
+Statement {A : Type*} [DecidableEq A] :
+    Nonempty ((Sym2 A) ≃ { S : Finset A // S.card = 1} ⊕ { S : Finset A // S.card = 2 }) := by
+  let g : A × A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=
+    fun ⟨a, b⟩ => if h : a = b then .inl ⟨{a}, rfl⟩ else .inr ⟨{a, b}, card_pair h⟩
+  let f : Sym2 A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=
+    Quot.lift g (by
+      intro p q hpq
+      rw [Sym2.rel_iff'] at hpq
+      obtain rfl | rfl := hpq
+      · rfl
+      · obtain ⟨a, b⟩ := q
+        simp only [g, Prod.fst_swap, Prod.snd_swap]
+        by_cases hab : a = b
+        · subst hab; rfl
+        · rw [dif_neg hab, dif_neg (fun h => hab h.symm)]
+          simp only [Sum.inr.injEq, Subtype.mk.injEq]
+          exact Finset.pair_comm b a)
+  refine ⟨Equiv.ofBijective f ?_⟩
+  constructor
+  · -- injectivity
+    intro x y hxy
+    obtain ⟨⟨a, b⟩, rfl⟩ := Quot.exists_rep x
+    obtain ⟨⟨c, d⟩, rfl⟩ := Quot.exists_rep y
+    replace hxy : g (a, b) = g (c, d) := hxy
+    by_cases hab : a = b <;> by_cases hcd : c = d
+    · subst hab; subst hcd
+      simp only [g, dif_pos rfl, Sum.inl.injEq, Subtype.mk.injEq, Finset.singleton_inj] at hxy
+      rw [hxy]
+    · subst hab
+      simp only [g, dif_pos rfl, dif_neg hcd, reduceCtorEq] at hxy
+    · subst hcd
+      simp only [g, dif_neg hab, dif_pos rfl, reduceCtorEq] at hxy
+    · simp only [g, dif_neg hab, dif_neg hcd, Sum.inr.injEq, Subtype.mk.injEq] at hxy
+      obtain ⟨rfl, rfl⟩ | ⟨rfl, rfl⟩ := helper hab hcd hxy
+      · rfl
+      · exact Sym2.eq_swap
+  · -- surjectivity
+    intro y
+    obtain ⟨S, hS⟩ | ⟨S, hS⟩ := y
+    · obtain ⟨a, ha⟩ := Finset.card_eq_one.mp hS
+      subst ha
+      refine ⟨Quot.mk _ (a, a), ?_⟩
+      show g (a, a) = _
+      simp only [g, dif_pos rfl]
+    · obtain ⟨a, b, hab, ha⟩ := Finset.card_eq_two.mp hS
+      subst ha
+      refine ⟨Quot.mk _ (a, b), ?_⟩
+      show g (a, b) = _
+      simp only [g, dif_neg hab]
+
+/-- Multisets cannot have a head/first element. -/
+theorem headless  : ¬ ∃ f : Multiset ℕ → ℕ, ∀ l : List ℕ, ∀ (h : l ≠ []), f l = l.head h := by
+  push Not
+  intro f
+  by_cases h : f [0, 1] = 0
+  · use [1, 0], List.cons_ne_nil _ _
+    have h₀ : ([0, 1] : Multiset ℕ) = ↑[1, 0] := by
+      apply Multiset.pair_comm
+    rw [← h₀, h]
+    simp only [List.head_cons, ne_eq, zero_ne_one, not_false_eq_true]
+  · use [0, 1], List.cons_ne_nil _ _
+    contrapose h
+    simp at *
+    assumption
