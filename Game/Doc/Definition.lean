@@ -237,6 +237,14 @@ i.e., the number of elements in `A`.
 DefinitionDoc Finset.card as "card" in "Finset"
 
 /--
+For a type `T` with finitely many elements, `univ : Finset T` is the finite
+set containing all elements of `T`.
+
+(Not to be confused with `Set.univ : Set T`, which is defined for any type.)
+-/
+DefinitionDoc Finset.univ as "univ" in "Finset"
+
+/--
 For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
 
 (`Fin n` is to be distinguished from `Icc 0 (n-1)`:

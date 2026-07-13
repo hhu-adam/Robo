@@ -154,5 +154,6 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
 TheoremDoc Matrix.one_apply as "one_apply" in "Matrix"
 
 NewTheorem Matrix.one_apply
+NewDefinition Finset.univ
 
 TheoremTab "Matrix"

@@ -69,4 +69,5 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   rfl
 
 NewDefinition Matrix.trace
+NewTactic change
 TheoremTab "Matrix"

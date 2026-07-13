@@ -43,7 +43,7 @@ to start a proof by contraposition.
 TacticDoc by_contra
 
 
-/-
+/--
 `change t` ändert das Beweisziel zu `t`. Voraussetzung ist, dass `t` und das alte Beweisziel
 definitionsgleich sind.
 Dies ist insbesonder hilfreich, wenn eine Taktik nicht merkt,
@@ -60,9 +60,8 @@ b: ℝ
 wobei die Skalarmultiplikation als `fun (a : ℚ) (r : ℝ) => ↑a * r` definiert war.
 Hier kannst du mit `change (1 : ℚ) * b = b` das Beweisziel umschreiben und anschließend mit Lemmas
 über die Multiplikation beweisen.
--
-TacticDoc change
 -/
+TacticDoc change
 
 /--
 An assumption of the form
