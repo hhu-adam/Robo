@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06\n"
+"POT-Creation-Date: 2026-07-14\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -3589,7 +3589,7 @@ msgstr ""
 msgid "Intro Babylon L08"
 msgstr ""
 
-#. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
+#. §0: $$ \\sum_{i = 0}^n (2i + 1) = (n + 1)^2 $$
 #: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:32
 msgid "Try solving §0 by induction"
 msgstr ""
