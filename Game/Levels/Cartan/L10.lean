@@ -10,9 +10,6 @@ open Filter Topology
 TheoremDoc nhdsWithin_mono as "nhdsWithin_mono"
 
 /---/
-TheoremDoc Filter.Eventually.and as "Filter.Eventually.and"
-
-/---/
 TheoremDoc Filter.Eventually.exists as "Filter.Eventually.exists"
 
 /---/
@@ -26,9 +23,16 @@ Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5)
     intro x hx
     simp [Set.mem_Iio] at hx ⊢
     grind
-  obtain ⟨x, hx5, hxneg⟩ := (h'.and eventually_mem_nhdsWithin).exists
+  have : ∀ᶠ (x : ℝ) in 𝓝[<] 0, (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
+    apply eventually_and.mpr
+    constructor
+    · assumption
+    · apply eventually_mem_nhdsWithin
+  have exist_aux : ∃ (x : ℝ), (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
+    apply this.exists
+  obtain ⟨x, hx5, hxneg⟩ := exist_aux
   simp [Set.mem_Iio] at hxneg
   obtain h := inv_lt_zero.mpr hxneg
   grind
 
-NewTheorem nhdsWithin_mono Filter.Eventually.and Filter.Eventually.exists inv_lt_zero
+NewTheorem nhdsWithin_mono Filter.Eventually.exists inv_lt_zero

@@ -30,7 +30,7 @@ Statement : ∀ᶠ x in 𝓝[>] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
     · suffices : ∀ᶠ (x : ℝ) in 𝓝 0, x < 1 / 5
       · apply this.filter_mono
         apply nhdsWithin_le_nhds
-      · apply  eventually_lt_nhds h
+      · apply eventually_lt_nhds h
   filter_upwards [hx]
   intro x ⟨hx1, hx2⟩
   rw [mem_Ioi] at hx1
