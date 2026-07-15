@@ -20,8 +20,8 @@ TheoremDoc IsOpen.mem_nhds_iff as "IsOpen.mem_nhds_iff"
 /- Explain here, the -/
 Statement : Ioo (-1) 1 ∈ 𝓝 0 := by
   rw [IsOpen.mem_nhds_iff]
-  grind
-  apply isOpen_Ioo
+  · grind
+  · apply isOpen_Ioo
 
 NewTheorem IsOpen.mem_nhds_iff isOpen_Ioo
 NewDefinition IsOpen Set.Ioo

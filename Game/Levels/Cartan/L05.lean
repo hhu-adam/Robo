@@ -41,9 +41,7 @@ Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
   · use Set.Ioi 0
     constructor
     · apply mem_principal_self
-    · intro x hx
-      obtain ⟨h1, h0⟩ := hx
-      grind
+    · grind
 
 NewTheorem Filter.mem_inf_iff_superset Filter.mem_principal_self isOpen_Iio Set.mem_Iio Set.mem_Ioi
 NewDefinition nhdsWithin Set.Iio Set.Ioi

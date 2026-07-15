@@ -20,8 +20,6 @@ Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5)
   have h' : ∀ᶠ x in 𝓝[<] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
     apply h.filter_mono
     apply nhdsWithin_mono
-    intro x hx
-    simp [Set.mem_Iio] at hx ⊢
     grind
   have : ∀ᶠ (x : ℝ) in 𝓝[<] 0, (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
     apply eventually_and.mpr

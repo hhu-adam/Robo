@@ -29,8 +29,6 @@ Statement {b : ℝ} : {x : ℝ | b < x} ∈ atTop := by
   `atTop`, and your set contains it. So the second filter axiom applies."
   obtain h := (Filter.mem_atTop (b + 1))
   apply Filter.mem_of_superset h
-  intro x hx
-  simp at hx ⊢
   grind
 
 NewTheorem Filter.mem_atTop
