@@ -13,19 +13,15 @@ collection `f` of subsets of `α` satisfying three axioms:
 2. if `s ∈ f` and `s ⊆ t`, then `t ∈ f`;
 3. if `s ∈ f` and `t ∈ f`, then `s ∩ t ∈ f`.
 
-The definition alone is not very illuminating. A better intuition is to think
+In Mathlib the three axioms are the theorems `Filter.univ_mem`,
+`Filter.mem_of_superset` and `Filter.inter_mem`.
+
+An intuition is to think
 of a filter as a *generalized point*: `f` collects all the sets that contain
 this would-be point. The main example for us is the *neighborhood filter*
 `𝓝 a` of a real number `a : ℝ`: it consists of all sets that contain every
 number sufficiently close to `a`, and so describes the point `a` together with
 its immediate surroundings.
-
-Check the three axioms against this example: the whole line certainly contains
-everything close to `a`; enlarging such a set does no harm; and if `s` and `t`
-each contain everything sufficiently close to `a`, then so does `s ∩ t`.
-
-In Mathlib the three axioms are the theorems `Filter.univ_mem`,
-`Filter.mem_of_superset` and `Filter.inter_mem`.
 
 In this level you prove that the intersection of two neighborhoods of `a` is
 still a neighborhood of `a`.
