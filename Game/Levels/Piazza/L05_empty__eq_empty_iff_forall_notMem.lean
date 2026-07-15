@@ -13,6 +13,7 @@ Introduction
 -/
 Introduction "Intro Piazza L05"
 
+open Nat
 namespace Set
 
 Statement : { n : ℕ | Even n } ∩ { n : ℕ | Odd n } = ∅ := by

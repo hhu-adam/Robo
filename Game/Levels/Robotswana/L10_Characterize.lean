@@ -55,7 +55,7 @@ Statement Matrix.trace_eq {n : ℕ} (f : Matrix (Fin n) (Fin n) ℝ →ₗ[ℝ] 
   Hint "Rewrite `A` in `f {A}` as sum of basis elements.  Use `nth_rw`, `nth_rw 2` with `matrix_eq_sum_ebasis`"
   nth_rw 2 [matrix_eq_sum_ebasis A]
   simp [map_sum]
-  change A.trace = ∑ i : Fin n, ∑ j : Fin n, A i j * f (E i j)
+  change A.trace = ∑ i : Fin n, ∑ j : Fin n, A i j * f (E i j) -- only needed to fix names of variables
   Hint (hidden := true) "[Hint kqwz] prove `A i j * f (E i j) = if i = j then A i i else 0`"
   have (i j : Fin n) : A i j * f (E i j) = if i = j then A i i else 0
   · by_cases h_ij : i = j
