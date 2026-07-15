@@ -14,7 +14,7 @@ Introduction
 -/
 Introduction "Intro Piazza L01"
 
-open Set
+open Set Nat
 
 Statement : 1 ∈ ({1, 6, 4} : Set ℕ) := by
   /-
