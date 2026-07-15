@@ -1,25 +1,34 @@
 import Game.Metadata
+import Mathlib.Topology.LocallyConstant.Basic
 
 World "Cartan"
 Level 10
 
-open Topology Filter
+open Filter Topology
 
-/-- `f =ᶠ[l] g` says that `f x = g x` eventually along the filter `l`. -/
-DefinitionDoc Filter.EventuallyEq as "=ᶠ"
+/---/
+TheoremDoc nhdsWithin_mono as "nhdsWithin_mono"
 
-/-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
-from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
-`p x` follows pointwise from the `pᵢ x`. -/
-TacticDoc filter_upwards
+/---/
+TheoremDoc Filter.Eventually.and as "Filter.Eventually.and"
 
-Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
-    f =ᶠ[𝓝 a] g := by
-  have : ∀ᶠ x in 𝓝 a, x < 0 := by
-    apply eventually_lt_nhds ha
-  filter_upwards [this]
-  assumption
+/---/
+TheoremDoc Filter.Eventually.exists as "Filter.Eventually.exists"
 
-NewTactic filter_upwards
-NewHiddenTactic «in»
-NewDefinition Filter.EventuallyEq
+/---/
+TheoremDoc inv_lt_zero as "inv_lt_zero"
+
+Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5) := by
+  intro h
+  have h' : ∀ᶠ x in 𝓝[<] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
+    apply h.filter_mono
+    apply nhdsWithin_mono
+    intro x hx
+    simp [Set.mem_Iio] at hx ⊢
+    grind
+  obtain ⟨x, hx5, hxneg⟩ := (h'.and eventually_mem_nhdsWithin).exists
+  simp [Set.mem_Iio] at hxneg
+  obtain h := inv_lt_zero.mpr hxneg
+  grind
+
+NewTheorem nhdsWithin_mono Filter.Eventually.and Filter.Eventually.exists inv_lt_zero

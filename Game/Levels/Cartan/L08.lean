@@ -3,41 +3,20 @@ import Game.Metadata
 World "Cartan"
 Level 8
 
-open Filter Topology
-
-/-- `𝓝[>] a` is the filter of right neighborhoods of `a`, i.e. the neighborhoods
-of `a` inside `Set.Ioi a`. It is defined as `𝓝 a ⊓ 𝓟 (Set.Ioi a)`. -/
-DefinitionDoc nhdsWithin as "𝓝[>]"
-
-/-- `Set.Ioo a b` is the open interval `(a, b)`. -/
-DefinitionDoc Set.Ioo as "Set.Ioo"
-
-/-- `Set.Iio b` is the unbounded open interval `(-∞, b)`. -/
-DefinitionDoc Set.Iio as "Set.Iio"
-
-/-- `Set.Ioi a` consists of all elements greater than `a`, i.e. the unbounded
-open interval `(a, ∞)`. -/
-DefinitionDoc Set.Ioi as "Set.Ioi"
+open Topology Filter Set
 
 /---/
-TheoremDoc isOpen_Iio as "isOpen_Iio"
+TheoremDoc IsOpen.eventually_mem as "IsOpen.eventually_mem"
 
 /---/
-TheoremDoc Set.mem_Iio as "Set.mem_Iio"
+TheoremDoc isOpen_Ioo as "isOpen_Ioo"
 
-Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
-  rw [nhdsWithin]
-  rw [mem_inf_iff_superset]
-  use Set.Iio 1
-  constructor
-  · rw [IsOpen.mem_nhds_iff isOpen_Iio]
-    grind
-  · use Set.Ioi 0
-    constructor
-    · apply mem_principal_self
-    · intro x hx
-      obtain ⟨h1, h0⟩ := hx
-      grind
+Statement {f g : ℝ → ℝ} {a b c : ℝ} (ha : a ∈ Ioo b c)
+    (h : ∀ x ∈ Ioo b c, f x = g x) : f =ᶠ[𝓝 a] g := by
+  have : ∀ᶠ x in 𝓝 a, x ∈ Ioo b c := by
+    apply IsOpen.eventually_mem _ ha
+    apply isOpen_Ioo
+  filter_upwards [this]
+  assumption
 
-NewTheorem isOpen_Iio Set.mem_Iio
-NewDefinition nhdsWithin Set.Ioo Set.Iio Set.Ioi
+NewTheorem IsOpen.eventually_mem isOpen_Ioo

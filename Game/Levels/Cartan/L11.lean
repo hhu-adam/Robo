@@ -1,22 +1,25 @@
 import Game.Metadata
+import Mathlib.Topology.LocallyConstant.Basic
 
 World "Cartan"
 Level 11
 
-open Topology Filter Set
+open Filter Topology
 
 /---/
-TheoremDoc IsOpen.eventually_mem as "IsOpen.eventually_mem"
+TheoremDoc Filter.eventually_iff as "Filter.eventually_iff"
 
 /---/
-TheoremDoc isOpen_Ioo as "isOpen_Ioo"
+TheoremDoc inv_lt_inv₀ as "inv_lt_inv₀"
 
-Statement {f g : ℝ → ℝ} {a b c : ℝ} (ha : a ∈ Ioo b c)
-    (h : ∀ x ∈ Ioo b c, f x = g x) : f =ᶠ[𝓝 a] g := by
-  have : ∀ᶠ x in 𝓝 a, x ∈ Ioo b c := by
-    apply IsOpen.eventually_mem _ ha
-    apply isOpen_Ioo
-  filter_upwards [this]
-  assumption
+Statement :  ∀ᶠ x in atTop, (fun (x : ℝ) ↦ 1/x) x < 1 / 5 := by
+  rw [eventually_iff]
+  apply Filter.mem_of_superset (Filter.mem_atTop 6)
+  intro x hx
+  simp at hx ⊢
+  rw [inv_lt_inv₀]
+  · grind
+  · grind
+  · grind
 
-NewTheorem IsOpen.eventually_mem isOpen_Ioo
+NewTheorem Filter.eventually_iff inv_lt_inv₀

@@ -3,40 +3,23 @@ import Game.Metadata
 World "Cartan"
 Level 7
 
-open Filter Topology
+open Topology Filter
 
-/---/
-TheoremDoc Filter.mem_inf_iff_superset as "Filter.mem_inf_iff_superset"
+/-- `f =ᶠ[l] g` says that `f x = g x` eventually along the filter `l`. -/
+DefinitionDoc Filter.EventuallyEq as "=ᶠ"
 
-/---/
-TheoremDoc Filter.mem_principal_self as "Filter.mem_principal_self"
+/-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
+from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
+`p x` follows pointwise from the `pᵢ x`. -/
+TacticDoc filter_upwards
 
-/---/
-TheoremDoc Set.inter_subset_inter as "Set.inter_subset_inter"
+Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
+    f =ᶠ[𝓝 a] g := by
+  have : ∀ᶠ x in 𝓝 a, x < 0 := by
+    apply eventually_lt_nhds ha
+  filter_upwards [this]
+  assumption
 
-/---/
-TheoremDoc subset_trans as "subset_trans"
-
-Statement {α : Type*} {s t : Set α} :
-    𝓟 s ⊓ 𝓟 t = 𝓟 (s ∩ t) := by
-  ext x
-  constructor
-  · intro h
-    rw [mem_inf_iff_superset] at h
-    obtain ⟨u, hu, v, hv, hx⟩ := h
-    rw [mem_principal] at hu hv ⊢
-    apply subset_trans _ hx
-    apply Set.inter_subset_inter hu hv
-  · intro h
-    rw [mem_inf_iff_superset]
-    rw [mem_principal] at h
-    use s
-    constructor
-    · apply mem_principal_self
-    · use t
-      constructor
-      · apply mem_principal_self
-      · assumption
-
-NewTheorem Filter.mem_inf_iff_superset Filter.mem_principal_self Set.inter_subset_inter
-  subset_trans
+NewTactic filter_upwards
+NewHiddenTactic «in»
+NewDefinition Filter.EventuallyEq

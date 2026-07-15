@@ -5,31 +5,48 @@ Level 5
 
 open Filter Topology
 
-/-- The *principal filter* `𝓟 s` of a set `s` consists of all sets containing `s`. -/
-DefinitionDoc Filter.principal as "𝓟"
+/-- `𝓝[>] a` is the filter of right neighborhoods of `a`, i.e. the neighborhoods
+of `a` inside `Set.Ioi a`. It is defined as `𝓝 a ⊓ 𝓟 (Set.Ioi a)`. -/
+DefinitionDoc nhdsWithin as "𝓝[>]"
+
+/-- `Set.Ioo a b` is the open interval `(a, b)`. -/
+DefinitionDoc Set.Ioo as "Set.Ioo"
+
+/-- `Set.Iio b` is the unbounded open interval `(-∞, b)`. -/
+DefinitionDoc Set.Iio as "Set.Iio"
+
+/-- `Set.Ioi a` consists of all elements greater than `a`, i.e. the unbounded
+open interval `(a, ∞)`. -/
+DefinitionDoc Set.Ioi as "Set.Ioi"
 
 /---/
-TheoremDoc Filter.le_def as "Filter.le_def"
+TheoremDoc Filter.mem_inf_iff_superset as "Filter.mem_inf_iff_superset"
 
 /---/
-TheoremDoc Filter.mem_principal as "Filter.mem_principal"
+TheoremDoc Filter.mem_principal_self as "Filter.mem_principal_self"
 
 /---/
-TheoremDoc Set.singleton_subset_iff as "Set.singleton_subset_iff"
+TheoremDoc isOpen_Iio as "isOpen_Iio"
 
 /---/
-TheoremDoc principal_singleton_le_nhds as "principal_singleton_le_nhds"
+TheoremDoc Set.mem_Iio as "Set.mem_Iio"
 
-/- Order relation on filters: `f ≤ g` means every member of `g` is a member of `f`. -/
-Statement principal_singleton_le_nhds {a : ℝ} : 𝓟 {a} ≤ 𝓝 a := by
-  rw [le_def]
-  intro s hs
-  rw [mem_principal]
-  rw [Set.singleton_subset_iff]
-  apply mem_of_mem_nhds
-  assumption
+/---/
+TheoremDoc Set.mem_Ioi as "Set.mem_Ioi"
 
-/- Note that the `≤` in `Filter` is the reverse direction of the `≤` in `Set`. -/
+Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
+  rw [nhdsWithin]
+  rw [mem_inf_iff_superset]
+  use Set.Iio 1
+  constructor
+  · rw [IsOpen.mem_nhds_iff isOpen_Iio]
+    grind
+  · use Set.Ioi 0
+    constructor
+    · apply mem_principal_self
+    · intro x hx
+      obtain ⟨h1, h0⟩ := hx
+      grind
 
-NewTheorem Filter.le_def Filter.mem_principal Set.singleton_subset_iff
-NewDefinition Filter.principal
+NewTheorem Filter.mem_inf_iff_superset Filter.mem_principal_self isOpen_Iio Set.mem_Iio Set.mem_Ioi
+NewDefinition nhdsWithin Set.Ioo Set.Iio Set.Ioi
