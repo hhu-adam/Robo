@@ -3,31 +3,25 @@ import Game.Metadata
 World "Cartan"
 Level 2
 
-open Filter Topology
+open Filter Topology Set
 
 /-- `IsOpen s` says that `s` is an open set. -/
 DefinitionDoc IsOpen as "IsOpen"
 
-/---/
-TheoremDoc mem_of_mem_nhds as "mem_of_mem_nhds"
+/-- `Set.Ioo a b` is the open interval `(a, b)`. -/
+DefinitionDoc Set.Ioo as "Set.Ioo"
 
 /---/
-TheoremDoc IsOpen.mem_nhds as "IsOpen.mem_nhds"
+TheoremDoc isOpen_Ioo as "isOpen_Ioo"
 
 /---/
 TheoremDoc IsOpen.mem_nhds_iff as "IsOpen.mem_nhds_iff"
 
 /- Explain here, the -/
-Statement IsOpen.mem_nhds_iff {a : ℝ} {s : Set ℝ} (hs : IsOpen s) :
-    s ∈ 𝓝 a ↔ a ∈ s := by
-  constructor
-  · intro h
-    apply mem_of_mem_nhds
-    assumption
-  · intro h
-    apply IsOpen.mem_nhds
-    · assumption
-    · assumption
+Statement : Ioo (-1) 1 ∈ 𝓝 0 := by
+  rw [IsOpen.mem_nhds_iff]
+  grind
+  apply isOpen_Ioo
 
-NewTheorem mem_of_mem_nhds IsOpen.mem_nhds
-NewDefinition IsOpen
+NewTheorem IsOpen.mem_nhds_iff isOpen_Ioo
+NewDefinition IsOpen Set.Ioo

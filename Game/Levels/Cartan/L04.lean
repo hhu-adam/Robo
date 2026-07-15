@@ -26,6 +26,9 @@ DefinitionDoc Filter.principal as "𝓟"
 TheoremDoc Filter.le_def as "Filter.le_def"
 
 /---/
+TheoremDoc mem_of_mem_nhds as "mem_of_mem_nhds"
+
+/---/
 TheoremDoc Filter.mem_principal as "Filter.mem_principal"
 
 /---/
@@ -45,5 +48,5 @@ Statement principal_singleton_le_nhds {a : ℝ} : 𝓟 {a} ≤ 𝓝 a := by
 
 /- Note that the `≤` in `Filter` is the reverse direction of the `≤` in `Set`. -/
 
-NewTheorem Filter.le_def Filter.mem_principal Set.singleton_subset_iff
+NewTheorem Filter.le_def Filter.mem_principal Set.singleton_subset_iff mem_of_mem_nhds
 NewDefinition Filter.principal
