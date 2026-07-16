@@ -9,21 +9,12 @@ open Filter Topology Set
 of `a` inside `Set.Ioi a`. It is defined as `𝓝 a ⊓ 𝓟 (Set.Ioi a)`. -/
 DefinitionDoc nhdsWithin as "𝓝[>]"
 
-/-- `Set.Iio b` is the unbounded open interval `(-∞, b)`. -/
-DefinitionDoc Set.Iio as "Set.Iio"
-
 /-- `Set.Ioi a` consists of all elements greater than `a`, i.e. the unbounded
 open interval `(a, ∞)`. -/
 DefinitionDoc Set.Ioi as "Set.Ioi"
 
 /---/
-TheoremDoc Filter.mem_inf_iff_superset as "Filter.mem_inf_iff_superset"
-
-/---/
-TheoremDoc isOpen_Iio as "isOpen_Iio"
-
-/---/
-TheoremDoc Set.mem_Iio as "Set.mem_Iio"
+TheoremDoc mem_nhdsWithin as "mem_nhdsWithin"
 
 /---/
 TheoremDoc Set.mem_Ioi as "Set.mem_Ioi"
@@ -35,5 +26,5 @@ Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
   · apply isOpen_Ioo
   grind
 
-NewTheorem Filter.mem_inf_iff_superset isOpen_Iio Set.mem_Iio Set.mem_Ioi
-NewDefinition nhdsWithin Set.Iio Set.Ioi
+NewTheorem mem_nhdsWithin Set.mem_Ioi
+NewDefinition nhdsWithin Set.Ioi

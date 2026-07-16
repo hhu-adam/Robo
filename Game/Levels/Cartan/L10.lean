@@ -6,6 +6,12 @@ Level 10
 
 open Filter Topology
 
+/-- `Set.Iio b` is the unbounded open interval `(-∞, b)`. -/
+DefinitionDoc Set.Iio as "Set.Iio"
+
+/---/
+TheoremDoc Set.mem_Iio as "Set.mem_Iio"
+
 /---/
 TheoremDoc nhdsWithin_mono as "nhdsWithin_mono"
 
@@ -33,4 +39,5 @@ Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5)
   obtain h := inv_lt_zero.mpr hxneg
   grind
 
-NewTheorem nhdsWithin_mono Filter.Eventually.exists inv_lt_zero
+NewTheorem nhdsWithin_mono Filter.Eventually.exists inv_lt_zero Set.mem_Iio
+NewDefinition Set.Iio
