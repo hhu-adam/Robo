@@ -12,7 +12,8 @@ Statement : Ioo (- 1 / 5) (1 / 5) ∈ 𝓝 (0 : ℝ) := by
   rw [IsOpen.mem_nhds_iff]
   · Hint "[Hint tdsg] Try `grind`. "
     grind
-  · apply isOpen_Ioo
+  · Hint (hidden := true) "[Hint hdioioo] Open interval is a open set. Apply `isOpen_Ioo`."
+    apply isOpen_Ioo
 
 /---/
 TheoremDoc IsOpen.mem_nhds_iff as "IsOpen.mem_nhds_iff" in "Topology"
