@@ -6,15 +6,12 @@ Level 1
 open Filter Topology
 
 Introduction "
-In this world you will meet *filters*. Formally, a filter on a type `α` is a
-collection `f` of subsets of `α` satisfying three axioms:
+In this level you prove that the intersection of two neighborhoods of `a` is
+still a neighborhood of `a`.
+"
 
-1. `Set.univ ∈ f`;
-2. if `s ∈ f` and `s ⊆ t`, then `t ∈ f`;
-3. if `s ∈ f` and `t ∈ f`, then `s ∩ t ∈ f`.
-
-In Mathlib the three axioms are the theorems `Filter.univ_mem`,
-`Filter.mem_of_superset` and `Filter.inter_mem`.
+/-- A *filter* on a type `α` is a collection of subsets of `α` that contains `Set.univ`,
+is upward closed, and is closed under intersection.
 
 An intuition is to think
 of a filter as a *generalized point*: `f` collects all the sets that contain
@@ -22,13 +19,7 @@ this would-be point. The main example for us is the *neighborhood filter*
 `𝓝 a` of a real number `a : ℝ`: it consists of all sets that contain every
 number sufficiently close to `a`, and so describes the point `a` together with
 its immediate surroundings.
-
-In this level you prove that the intersection of two neighborhoods of `a` is
-still a neighborhood of `a`.
-"
-
-/-- A *filter* on a type `α` is a collection of subsets of `α` that contains `Set.univ`,
-is upward closed, and is closed under intersection. -/
+-/
 DefinitionDoc Filter as "Filter"
 
 /---/
