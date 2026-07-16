@@ -3,28 +3,23 @@ import Game.Metadata
 World "Cartan"
 Level 5
 
-open Filter Topology Set
+open Topology Filter
 
-/-- `𝓝[>] a` is the filter of right neighborhoods of `a`, i.e. the neighborhoods
-of `a` inside `Set.Ioi a`. It is defined as `𝓝 a ⊓ 𝓟 (Set.Ioi a)`. -/
-DefinitionDoc nhdsWithin as "𝓝[>]"
+/-- `f =ᶠ[l] g` says that `f x = g x` eventually along the filter `l`. -/
+DefinitionDoc Filter.EventuallyEq as "=ᶠ"
 
-/-- `Set.Ioi a` consists of all elements greater than `a`, i.e. the unbounded
-open interval `(a, ∞)`. -/
-DefinitionDoc Set.Ioi as "Set.Ioi"
+/-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
+from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
+`p x` follows pointwise from the `pᵢ x`. -/
+TacticDoc filter_upwards
 
-/---/
-TheoremDoc mem_nhdsWithin as "mem_nhdsWithin"
+Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
+    f =ᶠ[𝓝 a] g := by
+  have : ∀ᶠ x in 𝓝 a, x < 0 := by
+    apply eventually_lt_nhds ha
+  filter_upwards [this]
+  assumption
 
-/---/
-TheoremDoc Set.mem_Ioi as "Set.mem_Ioi"
-
-Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
-  rw [mem_nhdsWithin]
-  use Ioo (-1) 1
-  constructor
-  · apply isOpen_Ioo
-  grind
-
-NewTheorem mem_nhdsWithin Set.mem_Ioi
-NewDefinition nhdsWithin Set.Ioi
+NewTactic filter_upwards
+NewHiddenTactic «in»
+NewDefinition Filter.EventuallyEq

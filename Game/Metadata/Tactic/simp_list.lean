@@ -58,11 +58,14 @@ attribute [game_simp] eq_iff_iff not_iff_self Set.setOf_false Set.mem_empty_iff_
 -- Cantor, L11_SequenceUncountable:
 attribute [game_simp] Nat.succ_eq_add_one Nat.add_eq_left one_ne_zero Set.setOf_false Set.mem_empty_iff_false
 
--- Cartan, L04:
+-- Cartan, L03:
 attribute [game_simp] Filter.principal_singleton Filter.mem_pure
 
--- Cartan, L05:
-attribute [game_simp] Filter.mem_principal subset_refl
+-- Cartan, L07:
+attribute [game_simp] Set.mem_Ioi
+
+-- Cartan, L08:
+attribute [game_simp] Set.mem_Iio
 
 -- Epo, L01_Surjective:
 attribute [game_simp] sub_add_cancel eq_self

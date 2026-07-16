@@ -4,40 +4,11 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 10
 
-open Filter Topology
+open Topology Filter
 
-/-- `Set.Iio b` is the unbounded open interval `(-∞, b)`. -/
-DefinitionDoc Set.Iio as "Set.Iio"
-
-/---/
-TheoremDoc Set.mem_Iio as "Set.mem_Iio"
-
-/---/
-TheoremDoc nhdsWithin_mono as "nhdsWithin_mono"
-
-/---/
-TheoremDoc Filter.Eventually.exists as "Filter.Eventually.exists"
-
-/---/
-TheoremDoc inv_lt_zero as "inv_lt_zero"
-
-Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5) := by
-  intro h
-  have h' : ∀ᶠ x in 𝓝[<] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
-    apply h.filter_mono
-    apply nhdsWithin_mono
-    grind
-  have : ∀ᶠ (x : ℝ) in 𝓝[<] 0, (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
-    apply eventually_and.mpr
-    constructor
-    · assumption
-    · apply eventually_mem_nhdsWithin
-  have exist_aux : ∃ (x : ℝ), (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
-    apply this.exists
-  obtain ⟨x, hx5, hxneg⟩ := exist_aux
-  simp [Set.mem_Iio] at hxneg
-  obtain h := inv_lt_zero.mpr hxneg
-  grind
-
-NewTheorem nhdsWithin_mono Filter.Eventually.exists inv_lt_zero Set.mem_Iio
-NewDefinition Set.Iio
+Statement {g₁ g₂ g₃ : ℝ → ℝ} {x : ℝ} {f : Filter ℝ}
+    (h1 : g₁ =ᶠ[f] g₂) (h2 : g₂ =ᶠ[f] g₃) : g₁ =ᶠ[f] g₃ := by
+  /- Althought we can prove this statement by h1.trans h2. -/
+  filter_upwards [h1, h2]
+  intro y hy1 hy2
+  rw [hy1, hy2]

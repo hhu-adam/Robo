@@ -31,9 +31,6 @@ still a neighborhood of `a`.
 is upward closed, and is closed under intersection. -/
 DefinitionDoc Filter as "Filter"
 
-/-- `𝓝 a` is the *neighborhood filter* of `a`: it consists of all open sets containing `a`. -/
-DefinitionDoc nhds as "𝓝"
-
 /---/
 TheoremDoc Filter.univ_mem as "Filter.univ_mem"
 
@@ -51,4 +48,4 @@ Statement {a : ℝ} {s t : Set ℝ} (hs : s ∈ 𝓝 a) (ht : t ∈ 𝓝 a) :
   apply Filter.inter_mem hs ht
 
 NewTheorem Filter.univ_mem Filter.mem_of_superset Filter.inter_mem
-NewDefinition Filter nhds
+NewDefinition Filter

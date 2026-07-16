@@ -6,9 +6,11 @@ Level 12
 
 open Topology Filter
 
-Statement {g₁ g₂ g₃ : ℝ → ℝ} {x : ℝ} {f : Filter ℝ}
-    (h1 : g₁ =ᶠ[f] g₂) (h2 : g₂ =ᶠ[f] g₃) : g₁ =ᶠ[f] g₃ := by
-  /- Althought we can prove this statement by h1.trans h2. -/
-  filter_upwards [h1, h2]
-  intro y hy1 hy2
-  rw [hy1, hy2]
+Statement {f g : ℝ → ℝ} {x : ℝ} (hf : IsLocallyConstant f) (hg : IsLocallyConstant g)
+    (h : f x = g x) : ∀ᶠ y in 𝓝 x, f y = g y := by
+  have : ∀ᶠ y in 𝓝 x, f y = f x := by
+    apply IsLocallyConstant.eventually_eq hf x
+  rw [h] at this
+  filter_upwards [this, IsLocallyConstant.eventually_eq hg x]
+  intro y h1 h2
+  rw [h1, h2]

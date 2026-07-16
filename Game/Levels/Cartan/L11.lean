@@ -4,22 +4,30 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 11
 
-open Filter Topology
+open Topology Filter
+
+Introduction "
+A function `f` is *locally constant* if every point has a neighborhood on which
+`f` is constant. In Mathlib this is captured by `IsLocallyConstant f`, which is
+defined as: the preimage `f ⁻¹' s` of *every* set `s` is open.
+
+Here you show that a locally constant function is *eventually* equal to its
+value at `x`, for the neighborhood filter `𝓝 x`.
+"
+
+/-- `IsLocallyConstant f` says that every point has a neighborhood on which `f` is
+constant; it is defined as: the preimage of every set under `f` is open. -/
+DefinitionDoc IsLocallyConstant as "IsLocallyConstant"
 
 /---/
-TheoremDoc Filter.eventually_iff as "Filter.eventually_iff"
+TheoremDoc IsLocallyConstant.eventually_eq as "IsLocallyConstant.eventually_eq"
 
-/---/
-TheoremDoc inv_lt_inv₀ as "inv_lt_inv₀"
+Statement IsLocallyConstant.eventually_eq {f : ℝ → ℝ} {x : ℝ}
+    (hf : IsLocallyConstant f) : ∀ᶠ y in 𝓝 x, f y = f x := by
+  have h : IsOpen (f ⁻¹' {f x}) := by
+    apply hf
+  filter_upwards [IsOpen.eventually_mem h rfl]
+  intro y hy
+  assumption
 
-Statement :  ∀ᶠ x in atTop, (fun (x : ℝ) ↦ 1/x) x < 1 / 5 := by
-  rw [eventually_iff]
-  apply Filter.mem_of_superset (Filter.mem_atTop 6)
-  intro x hx
-  simp at hx ⊢
-  rw [inv_lt_inv₀]
-  · grind
-  · grind
-  · grind
-
-NewTheorem Filter.eventually_iff inv_lt_inv₀
+NewDefinition IsLocallyConstant
