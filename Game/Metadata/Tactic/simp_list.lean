@@ -61,6 +61,9 @@ attribute [game_simp] Nat.succ_eq_add_one Nat.add_eq_left one_ne_zero Set.setOf_
 -- Cartan, L04:
 attribute [game_simp] Filter.principal_singleton Filter.mem_pure
 
+-- Cartan, L05:
+attribute [game_simp] Filter.mem_principal subset_refl
+
 -- Epo, L01_Surjective:
 attribute [game_simp] sub_add_cancel eq_self
 

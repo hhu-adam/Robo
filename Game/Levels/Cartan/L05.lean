@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cartan"
 Level 5
 
-open Filter Topology
+open Filter Topology Set
 
 /-- `𝓝[>] a` is the filter of right neighborhoods of `a`, i.e. the neighborhoods
 of `a` inside `Set.Ioi a`. It is defined as `𝓝 a ⊓ 𝓟 (Set.Ioi a)`. -/
@@ -20,9 +20,6 @@ DefinitionDoc Set.Ioi as "Set.Ioi"
 TheoremDoc Filter.mem_inf_iff_superset as "Filter.mem_inf_iff_superset"
 
 /---/
-TheoremDoc Filter.mem_principal_self as "Filter.mem_principal_self"
-
-/---/
 TheoremDoc isOpen_Iio as "isOpen_Iio"
 
 /---/
@@ -32,16 +29,11 @@ TheoremDoc Set.mem_Iio as "Set.mem_Iio"
 TheoremDoc Set.mem_Ioi as "Set.mem_Ioi"
 
 Statement : Set.Ioo (0 : ℝ) 1 ∈ 𝓝[>] (0 : ℝ) := by
-  rw [nhdsWithin]
-  rw [mem_inf_iff_superset]
-  use Set.Iio 1
+  rw [mem_nhdsWithin]
+  use Ioo (-1) 1
   constructor
-  · rw [IsOpen.mem_nhds_iff isOpen_Iio]
-    grind
-  · use Set.Ioi 0
-    constructor
-    · apply mem_principal_self
-    · grind
+  · apply isOpen_Ioo
+  grind
 
-NewTheorem Filter.mem_inf_iff_superset Filter.mem_principal_self isOpen_Iio Set.mem_Iio Set.mem_Ioi
+NewTheorem Filter.mem_inf_iff_superset isOpen_Iio Set.mem_Iio Set.mem_Ioi
 NewDefinition nhdsWithin Set.Iio Set.Ioi
