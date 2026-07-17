@@ -8,7 +8,6 @@ import Game.Levels.Slope.L07
 import Game.Levels.Slope.L08
 import Game.Levels.Slope.L09
 import Game.Levels.Slope.L10
-import Game.Levels.Slope.L11
 
 /-!
 The planet `Slope` introduces limits and derivatives via the slope of secant lines:

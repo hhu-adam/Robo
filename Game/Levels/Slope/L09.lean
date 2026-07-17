@@ -1,4 +1,5 @@
 import Game.Metadata
+import Mathlib.Analysis.Calculus.Deriv.Slope
 
 World "Slope"
 Level 9
@@ -6,13 +7,31 @@ Level 9
 open Topology Filter
 
 /---/
-TheoremDoc tendsto_nhds_unique as "tendsto_nhds_unique" in "Function"
+TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Function"
 
-Statement (f : ℝ → ℝ) (a b : ℝ) (h₁ : Tendsto f (𝓝 0) (𝓝 a))
-    (h₂ : Tendsto f (𝓝 0) (𝓝 b)) : a = b := by
-  Hint "[Hint tnu] A function cannot approach two different values along the
-    same approach: limits are unique. This is the theorem
-    `tendsto_nhds_unique`; apply it to `h₁` and `h₂`."
-  apply tendsto_nhds_unique h₁ h₂
+/---/
+TheoremDoc tendsto_nhdsWithin_congr as "tendsto_nhdsWithin_congr" in "Function"
 
-NewTheorem tendsto_nhds_unique
+/---/
+DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+Statement {x : ℝ} :
+    let f : ℝ → ℝ := fun x ↦ x ^ 2
+    HasDerivAt f (2 * x) x  := by
+  rw [hasDerivAt_iff_tendsto_slope]
+  have : ∀ y ∈ ({x} : Set ℝ)ᶜ , y + x = slope f x y := by
+    intro y hy
+    rw [slope_def_field]
+    grind
+  apply tendsto_nhdsWithin_congr this
+  have h : Tendsto (fun y : ℝ ↦ y + x) (𝓝 x) (𝓝 (2 * x)) := by
+    Hint "[Hint tscyx] Notice that $f(y) = y + x$ is continuous and the
+    theorem `Continuous.tendsto'`."
+    apply Continuous.tendsto'
+    · fun_prop
+    · ring
+  apply h.mono_left
+  apply nhdsWithin_le_nhds
+
+NewTheorem hasDerivAt_iff_tendsto_slope tendsto_nhdsWithin_congr
+NewDefinition HasDerivAt
