@@ -3205,12 +3205,17 @@ msgstr ""
 msgid "Now try out §0"
 msgstr ""
 
-#: Game/Levels/Babylon/L04_sum_subset.lean:59
+#. §0: `Icc_subset_Icc_iff`
+#: Game/Levels/Babylon/L04_sum_subset.lean:52
+msgid "§0 is useful here"
+msgstr ""
+
+#: Game/Levels/Babylon/L04_sum_subset.lean:60
 msgid "Show that term in sum is zero for first three indexes"
 msgstr ""
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
-#: Game/Levels/Babylon/L04_sum_subset.lean:69
+#: Game/Levels/Babylon/L04_sum_subset.lean:70
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
 
@@ -3218,21 +3223,15 @@ msgstr ""
 #. §1: $«{i}»=1$
 #. §2: $«{i}»=2$
 #. §3: `have`
-#: Game/Levels/Babylon/L04_sum_subset.lean:77
-#: Game/Levels/Babylon/L04_sum_subset.lean:83
+#: Game/Levels/Babylon/L04_sum_subset.lean:78
+#: Game/Levels/Babylon/L04_sum_subset.lean:84
 msgid "Assumptions have to entail §0 or §1 or §2. Try §3"
-msgstr ""
-
-#. §0: `simp`
-#. §1: `omega`
-#: Game/Levels/Babylon/L04_sum_subset.lean:86
-msgid "Try §0 & §1"
 msgstr ""
 
 #. §0: `«{h}»`
 #. §1: `obtain`
 #. §2: `obtain h | h | h  := «{h}»`
-#: Game/Levels/Babylon/L04_sum_subset.lean:102
+#: Game/Levels/Babylon/L04_sum_subset.lean:98
 msgid "[Babylon] Split §0 with §1: §2"
 msgstr ""
 
@@ -5327,6 +5326,19 @@ msgstr ""
 msgid "Try case distinction. Use §0"
 msgstr ""
 
+#. §0: `obtain`
+#. §1: `x < y`
+#. §2: `x = y`
+#. §3: `x > y`
+#. §4: ```
+#. obtain h | h | h := lt_trichotomy x y
+#. ```
+#: Game/Levels/Mono/L06_StrictMono.lean:41
+msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
+"\n"
+"§4"
+msgstr ""
+
 #. §0: `n ↦ n + 1`
 #. §1: `n ↦ n - 1`
 #. §2: `n = 0`
@@ -5998,59 +6010,32 @@ msgstr ""
 msgid "Intro Piazza"
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:13
+#: Game/Levels/Cafe/L01_Grind1.lean:13
+#: Game/Levels/Cafe/L02_Split_if.lean:13
+#: Game/Levels/Cafe/L03_Lia.lean:13
 msgid "Intro Cafe L01"
 msgstr ""
 
-#. §0: `lt_trichotomy`
-#. §1: `a`
-#. §2: `c`
-#. §3: ```
-#. obtain h | h | h := lt_trichotomy a c
-#. ```
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:29
-msgid "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n"
-"§3\n"
-""
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:35
-msgid "[Hint tg1] Try §0"
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:38
-msgid "[Hint tg2] **Scribble**: Well, I guess you just try §0 again."
-msgstr ""
-
-#. §0: `obtain`
-#. §1: `x < y`
-#. §2: `x = y`
-#. §3: `x > y`
-#. §4: ```
-#. obtain h | h | h := lt_trichotomy x y
-#. ```
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:41
-msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
-"\n"
-"§4"
-msgstr ""
-
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:51
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:46
-#: Game/Levels/Cafe/L04_Grind_ring.lean:24
-#: Game/Levels/Cafe/L05_Split_if.lean:24
-#: Game/Levels/Cafe/L06_Lia.lean:22
+#: Game/Levels/Cafe/L01_Grind1.lean:22
+#: Game/Levels/Cafe/L02_Split_if.lean:21
+#: Game/Levels/Cafe/L03_Lia.lean:19
 msgid "To add."
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:56
+#: Game/Levels/Cafe/L01_Grind1.lean:27
 msgid "Cafe L01"
 msgstr ""
 
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:13
-msgid "Intro Cafe L02"
+#: Game/Levels/Cafe/L02_Split_if.lean:26
+msgid "Cafe L02"
+msgstr ""
+
+#: Game/Levels/Cafe/L03_Lia.lean:24
+msgid "Cafe L03"
+msgstr ""
+
+#: Game/Levels/Cafe/L04_Grind2.lean:13
+msgid "Intro Cafe L04"
 msgstr ""
 
 #. §0: `b`
@@ -6059,547 +6044,44 @@ msgstr ""
 #. §3: ```
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:29
+#: Game/Levels/Cafe/L04_Grind2.lean:29
 msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
 "§3\n"
 ""
 msgstr ""
 
-#. §0: `a < c`
-#. §1: `∨`
-#. §2: `left`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:36
-msgid "[Hint ulgrd] Since §0, I'd say the left side of the §1 is the one that holds. Pick it with §2."
-msgstr ""
-
-#. §0: `grind`
-#. §1: `grind`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:38
-msgid "[Hint ltgrind] The goal is now a system of inequalities. §0 is good at this kind of\n"
-"arithmetic reasoning, so just try §1."
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:43
-msgid "I guess you can try §0 again."
-msgstr ""
-
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:51
-msgid "Cafe L02"
-msgstr ""
-
-#: Game/Levels/Cafe/L03_Lt_grind.lean:13
-msgid "Intro Cafe L03"
-msgstr ""
-
-#. §0: `lt_trichotomy`
-#. §1: `grind`
-#. §2: `grind`
-#: Game/Levels/Cafe/L03_Lt_grind.lean:30
-msgid "[Hint grindDirect] No need to split into cases with §0 this time — §1\n"
-"handles the case analysis and the inequalities on its own. Just try §2 right away."
-msgstr ""
-
-#: Game/Levels/Cafe/L03_Lt_grind.lean:34
-msgid "Cafe L03"
-msgstr ""
-
-#: Game/Levels/Cafe/L04_Grind_ring.lean:13
-msgid "Intro Cafe L04"
-msgstr ""
-
-#. §0: `grind`
-#. §1: `grind`
-#: Game/Levels/Cafe/L04_Grind_ring.lean:20
-msgid "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
-"algebraic manipulation. §0 can call on ring reasoning to close such goals, so just try §1."
-msgstr ""
-
-#: Game/Levels/Cafe/L04_Grind_ring.lean:29
+#: Game/Levels/Cafe/L04_Grind2.lean:37
 msgid "Cafe L04"
 msgstr ""
 
-#: Game/Levels/Cafe/L05_Split_if.lean:13
-msgid "Intro Cafe L05"
-msgstr ""
-
-#. §0: `if 0 ≤ x then x else -x`
-#. §1: `|x|`
-#. §2: `0 ≤ x`
-#. §3: `grind`
-#. §4: `if`
-#. §5: `grind`
-#: Game/Levels/Cafe/L05_Split_if.lean:18
-msgid "[Hint grindSplitIf] Here §0 is just the absolute value §1, and we\n"
-"want to show it is nonnegative. The goal depends on whether §2 holds, so it needs a case\n"
-"split. §3 splits on the §4 automatically and closes both branches with linear arithmetic,\n"
-"so just try §5."
-msgstr ""
-
-#: Game/Levels/Cafe/L05_Split_if.lean:29
-msgid "Cafe L05"
-msgstr ""
-
-#: Game/Levels/Cafe/L06_Lia.lean:13
-msgid "Intro Cafe L06"
-msgstr ""
-
-#. §0: `2 * x + 4 * y`
-#. §1: `5`
-#. §2: `grind`
-#. §3: `grind`
-#: Game/Levels/Cafe/L06_Lia.lean:17
-msgid "[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so they\n"
-"can never be equal. §2 can reason about such linear integer arithmetic on its own, so just\n"
-"try §3."
-msgstr ""
-
-#: Game/Levels/Cafe/L06_Lia.lean:27
-msgid "Cafe L06"
-msgstr ""
-
-#: Game/Levels/Cafe.lean:13
+#: Game/Levels/Cafe.lean:11
 msgid "Cafe"
 msgstr ""
 
-#: Game/Levels/Cafe.lean:44
+#: Game/Levels/Cafe.lean:42
 msgid "Intro Cafe"
 msgstr ""
 
-#: Game/Levels/Shade/L01_BddAbove.lean:6
-msgid "Intro Shade L01"
-msgstr ""
-
-#. §0: `rw`
-#. §1: `bddAbove_def`
-#: Game/Levels/Shade/L01_BddAbove.lean:12
-msgid "[Hint bdad] §0 theorem §1 to translate the problem. "
-msgstr ""
-
-#. §0: `b`
-#: Game/Levels/Shade/L01_BddAbove.lean:14
-msgid "[Hint hd] §0 is a upper bound of this set. "
-msgstr ""
-
-#. §0: `le_csSup (hbd : BddAbove s) (hx : a ∈ s) : a ≤ sSup s`
-#: Game/Levels/Shade/L02_Le_csSup.lean:14
-#: Game/Levels/Shade/L03_CsSup_le.lean:14
-#: Game/Levels/Shade/L04_IsClosed_le.lean:14
-#: Game/Levels/Shade/L05_Closure_minimal.lean:14
-#: Game/Levels/Shade/L06_CsSup_mem_closure.lean:14
-msgid "§0"
-msgstr ""
-
-#. §0: `le_csSup`
-#: Game/Levels/Shade/L02_Le_csSup.lean:20
-msgid "[Hint lecssup] Perhaps, §0 is helpful here. "
-msgstr ""
-
-#. §0: `le_csSup`
-#. §1: `x ∈ s`
-#. §2: `x ≤ sSup s`
-#: Game/Levels/Shade/L02_Le_csSup.lean:26
-msgid "Nicely done.  §0 turned membership §1 into the bound\n"
-"§2, and one transitivity step finished the job."
-msgstr ""
-
-#. §0: `csSup_le`
-#: Game/Levels/Shade/L03_CsSup_le.lean:19
-msgid "[Hint cssuple] Perhaps, §0 is useful here."
-msgstr ""
-
-#. §0: `csSup_le`
-#. §1: `b`
-#. §2: `c`
-#: Game/Levels/Shade/L03_CsSup_le.lean:26
-msgid "Perfect.  §0 bounded the supremum from above by §1, and one\n"
-"transitivity step pushed it up to §2."
-msgstr ""
-
-#. §0: `f`
-#. §1: `c`
-#. §2: `isClosed_le`
-#: Game/Levels/Shade/L04_IsClosed_le.lean:18
-msgid "[Hint iscl] The goal is the set of points where the continuous function §0 stays\n"
-"below the constant §1.  Apply §2."
-msgstr ""
-
-#. §0: `fun_prop`
-#: Game/Levels/Shade/L04_IsClosed_le.lean:21
-msgid "Two continuity goals remain.  Use §0, which proves such function\n"
-"properties automatically."
-msgstr ""
-
-#. §0: `Continuous f`
-#. §1: `fun_prop`
-#: Game/Levels/Shade/L04_IsClosed_le.lean:24
-#: Game/Levels/Shade/L07_InterValue.lean:21
-msgid "The remaining goal is the continuity statement §0. Use §1,\n"
-"which automatically proves such function properties."
-msgstr ""
-
-#. §0: `isClosed_le`
-#. §1: `≤`
-#: Game/Levels/Shade/L04_IsClosed_le.lean:28
-msgid "Well done.  §0 turns a §1 between continuous functions into a closed set."
-msgstr ""
-
-#. §0: `fun_prop`
-#. §1: `Continuous`
-#. §2: `Measurable`
-#. §3: `Differentiable`
-#: Game/Levels/Shade/L04_IsClosed_le.lean:31
-msgid "§0 automatically discharges function-property goals such as §1,\n"
-"§2, or §3."
-msgstr ""
-
-#. §0: `closure s`
-#. §1: `s`
-#. §2: `closure_minimal`
-#. §3: `s ⊆ ...`
-#: Game/Levels/Shade/L05_Closure_minimal.lean:19
-msgid "[Hint clmin] §0 is the smallest closed set containing §1.  Apply\n"
-"§2; it asks for §3 and that the target set is closed."
-msgstr ""
-
-#. §0: `f x ≤ c`
-#. §1: `isClosed_le`
-#: Game/Levels/Shade/L05_Closure_minimal.lean:23
-msgid "The remaining goal is that the sublevel set §0 is closed — that is §1."
-msgstr ""
-
-#. §0: `s`
-#. §1: `closure s`
-#: Game/Levels/Shade/L05_Closure_minimal.lean:28
-msgid "Perfect.  Since the target set is closed and contains §0, it contains §1 too."
-msgstr ""
-
-#. §0: `sSup s`
-#. §1: `s`
-#. §2: `csSup_mem_closure`
-#: Game/Levels/Shade/L06_CsSup_mem_closure.lean:19
-msgid "[Hint cssupcl] For a nonempty set bounded above, §0 lies in the closure of\n"
-"§1.  That is §2."
-msgstr ""
-
-#. §0: `s`
-#. §1: `f x ≤ c`
-#. §2: `closure_minimal`
-#. §3: `isClosed_le`
-#: Game/Levels/Shade/L06_CsSup_mem_closure.lean:22
-msgid "The closure of §0 is contained in the closed sublevel set §1 — combine\n"
-"§2 with §3."
-msgstr ""
-
-#. §0: `h2 h1`
-#. §1: `sSup s`
-#: Game/Levels/Shade/L06_CsSup_mem_closure.lean:29
-msgid "Now §0 says that §1 lies in the sublevel set, which is exactly the goal."
-msgstr ""
-
-#. §0: `f x ≤ c`
-#. §1: `s`
-#. §2: `f (sSup s) ≤ c`
-#: Game/Levels/Shade/L06_CsSup_mem_closure.lean:32
-msgid "Excellent.  Combining all three theorems, the bound §0 on §1 passes to its\n"
-"supremum: §2."
-msgstr ""
-
-#. §0: `f`
-#. §1: `[a, b]`
-#. §2: `a < b`
-#. §3: `f a > f b`
-#. §4: `s ∈ Ioo a b`
-#. §5: `f s > f b`
-#: Game/Levels/Shade/L07_InterValue.lean:10
-msgid "If §0 is continuous on §1 with §2 and §3, then there is some\n"
-"§4 with §5."
-msgstr ""
-
-#. §0: `Set.Ioo (f b) (f a) ⊆ f '' Set.Ioo a b`
-#: Game/Levels/Shade/L07_InterValue.lean:16
-msgid "[Hint ivIoo] Perhaps, you should first prove §0."
-msgstr ""
-
-#. §0: `intermediate_value_Ioo'`
-#: Game/Levels/Shade/L07_InterValue.lean:18
-msgid "[Hint itvIoo] First, apply the theorem §0."
-msgstr ""
-
-#. §0: `f b < f a`
-#. §1: `(Ioo (f b) (f a)).Nonempty`
-#: Game/Levels/Shade/L07_InterValue.lean:24
-msgid "[Hint Ioontps] Since §0, then we have that §1."
-msgstr ""
-
-#. §0: `Shade f`
-#. §1: `f`
-#. §2: `s`
-#. §3: `t > s`
-#. §4: `f t > f s`
-#: Game/Levels/Shade/L08_ShadeDef.lean:12
-msgid "§0 is the set of shadow points of §1: those §2 for which there exists some\n"
-"§3 with §4."
-msgstr ""
-
-#. §0: `a`
-#. §1: `f x ≤ f a`
-#. §2: `x > a`
-#: Game/Levels/Shade/L08_ShadeDef.lean:16
-msgid "If §0 is not a shadow point, then §1 for every §2."
-msgstr ""
-
-#: Game/Levels/Shade/L08_ShadeDef.lean:21
-msgid "[Hint shadeBC]Argue by contradiction."
-msgstr ""
-
-#. §0: `a`
-#. §1: `f a`
-#. §2: `a ∉ Shade f`
-#: Game/Levels/Shade/L08_ShadeDef.lean:25
-msgid "[Hint notshade] Note that there is a element that is greater than §0 with function\n"
-"value greater than §1, which contradicts to the assumption that §2. "
-msgstr ""
-
-#. §0: `not_mem_shade`
-#: Game/Levels/Shade/L08_ShadeDef.lean:31
-msgid "Conclusion LightAndShade L01: saved as §0."
-msgstr ""
-
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:6
-msgid "The Set Below the Sup"
-msgstr ""
-
-#. §0: `c`
-#. §1: `b`
-#. §2: `c`
-#. §3: `b`
-#. §4: `f`
-#. §5: `f c`
-#. §6: ```
-#. shadeSet f c b := {t ∈ Ioo c b | f c < f t}
-#. ```
-#. §7: `b`
-#. §8: `f b < f c`
-#. §9: `c`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:8
-msgid "Intro Shade L09: introduce the working set.\n"
-"\n"
-"Fix two points §0 and §1.  We study the set of points strictly between §2 and §3 at which §4\n"
-"rises above §5:\n"
-"\n"
-"§6\n"
-"\n"
-"Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming §7 is\n"
-"not a shadow point, §8, and §9 itself is a shadow point, you show the set is nonempty."
-msgstr ""
-
-#. §0: `Shaders f c`
-#. §1: `t`
-#. §2: `c`
-#. §3: `f c < f t`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:25
-msgid "§0 is the set of §1 strictly larger than §2 such that §3."
-msgstr ""
-
-#. §0: `b`
-#. §1: `f b < f c`
-#. §2: `c`
-#. §3: `shadeSet f c b`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:28
-msgid "If §0 is not a shadow point, §1, and §2 is a shadow point, then §3\n"
-"is nonempty."
-msgstr ""
-
-#. §0: `c`
-#. §1: `t₀ > c`
-#. §2: `f t₀ > f c`
-#. §3: `obtain ⟨t₀, ht₀_gt, ht₀_f⟩ := hc_shade`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:34
-msgid "Because §0 is a shadow point, there is some §1 with §2. Unpack it with\n"
-"§3."
-msgstr ""
-
-#. §0: `t₀`
-#. §1: `b`
-#. §2: `t₀`
-#. §3: `b`
-#. §4: `t₀ = b`
-#. §5: `t₀ > b`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:37
-msgid "The only thing left to check is that this §0 lies below §1. Compare §2 with §3 by\n"
-"trichotomy; the cases §4 and §5 both contradict the hypotheses."
-msgstr ""
-
-#. §0: `shadeSet_nonempty`
-#: Game/Levels/Shade/L09_ShadeSetNonempty.lean:43
-msgid "Conclusion Shade L09: saved as §0."
-msgstr ""
-
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:6
-msgid "Bounded Above"
-msgstr ""
-
-#. §0: `sSup (shadeSet f c b)`
-#. §1: `shadeSet f c b`
-#. §2: `Ioo c b`
-#. §3: `b`
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:8
-msgid "Intro Shade L10: a quick boundedness fact.\n"
-"\n"
-"To take the supremum §0, we also need the set to be bounded above.  This is\n"
-"immediate: every element of §1 lies in §2, hence is below §3."
-msgstr ""
-
-#. §0: `Shaders f c`
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:16
-msgid "The set §0 is bounded above if …."
-msgstr ""
-
-#. §0: `shadeSet f c b`
-#. §1: `t ∈ Set.Ioo c b`
-#. §2: `f c ≤ f t`
-#. §3: `b`
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:20
-msgid "[Hint bbdshadeh] Remember that §0 is defined as the set of §1 with §2. Therefore,\n"
-"§3 is a upperbound of this set. "
-msgstr ""
-
-#. §0: `shadeSet`
-#. §1: `grind`
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:24
-msgid "[Hint ufgrind] Now just unfold the definition §0 and use §1 to closed it. "
-msgstr ""
-
-#. §0: `shadeSet_bddAbove`
-#: Game/Levels/Shade/L10_ShadeSetBddAbove.lean:37
-msgid "Conclusion Shade L10: saved as §0."
-msgstr ""
-
-#. §0: `f : ℝ → ℝ`
-#. §1: `s`
-#. §2: `f`
-#. §3: `t`
-#. §4: `t > s`
-#. §5: `f t > f s`
-#. §6: `a`
-#. §7: `b`
-#. §8: `a < b`
-#. §9: `s`
-#. §10: `a`
-#. §11: `b`
-#. §12: `f a = f b`
-#. §13: `s ∈ Shade f`
-#. §14: `s`
-#. §15: `(a, b)`
-#. §16: `a`
-#. §17: `b`
-#. §18: `f a = f b`
-#. §19: `f a`
-#. §20: `f b`
-#. §21: `f a < f b`
-#. §22: `b`
-#. §23: `a`
-#. §24: `a`
-#. §25: `a ∉ Shade f`
-#. §26: `f a = f b`
-#. §27: `f a > f b`
-#. §28: `c`
-#. §29: `a`
-#. §30: `b`
-#. §31: `f c > f b`
-#. §32: `d`
-#. §33: `shadeSet f c b = {t ∈ (c, b) | f c ≤ f t}`
-#. §34: `d`
-#. §35: `f c`
-#. §36: `f d ≥ f c > f b`
-#. §37: `d`
-#. §38: `(a, b)`
-#. §39: `d ∈ (a, b)`
-#. §40: `d`
-#. §41: `d`
-#. §42: `f c`
-#. §43: `d`
-#. §44: `b`
-#. §45: `f b < f c`
-#. §46: `d`
-#. §47: `f d`
-#. §48: `d`
-#. §49: `f a > f b`
-#. §50: `f a = f b`
-#: Game/Levels/Shade/L11_Boss.lean:8
-msgid "Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).\n"
-"\n"
-"> Let §0 be a continuous function. A real number §1 is called a *shadow point* of §2 if\n"
-"> there exists a real number §3 with §4 and §5. If §6 and §7 with §8 are\n"
-"> themselves not shadow points, but every §9 between §10 and §11 is a shadow point, then §12.\n"
-"\n"
-"In the game, §13 means exactly that §14 is a shadow point. The hypotheses say the open\n"
-"interval §15 consists entirely of shadow points while the endpoints §16 and §17 are not, and\n"
-"the goal is §18.\n"
-"\n"
-"**The mathematical idea.** Compare §19 and §20 by trichotomy.\n"
-"\n"
-"* If §21: then §22 itself is a point to the right of §23 with a larger value, so §24 would be\n"
-"  a shadow point — contradicting §25.\n"
-"\n"
-"* If §26: there is nothing to prove.\n"
-"\n"
-"* If §27: we derive a contradiction. One can find a §28 between §29\n"
-"  and §30 with §31. Now consider the supremum §32 of the set\n"
-"  §33. By continuity the value at §34 is still at least §35\n"
-"  (so §36), and §37 lies strictly inside §38. On one hand §39 forces §40\n"
-"  to be a shadow point. On the other hand, just past §41 the function never climbs back to §42\n"
-"  (that is what §43 being the supremum means), and beyond §44 it stays below §45; so no point\n"
-"  to the right of §46 exceeds §47 — meaning §48 is *not* a shadow point. This contradiction rules\n"
-"  out §49, leaving §50."
-msgstr ""
-
-#. §0: `a`
-#. §1: `a < b`
-#. §2: `f a < f b`
-#: Game/Levels/Shade/L11_Boss.lean:43
-msgid "[Hint sbosf] In this case, §0 is a shade point since §1 and §2."
-msgstr ""
-
-#. §0: `c ∈ Ioo a b`
-#. §1: `f c > f b`
-#: Game/Levels/Shade/L11_Boss.lean:48
-msgid "First, we prove that there is a §0, such that §1. "
-msgstr ""
-
-#: Game/Levels/Shade/L11_Boss.lean:50
-msgid "[Hint pbf] Remember the proof before."
-msgstr ""
-
-#: Game/Levels/Shade.lean:19
-msgid "Shade"
-msgstr ""
-
-#: Game/Levels/Shade.lean:21
-msgid "Intro Shade"
-msgstr ""
-
-#: Game.lean:36
+#: Game.lean:34
 msgid "[Game] Title"
 msgstr ""
 
-#: Game.lean:37
+#: Game.lean:35
 msgid "[Game] Introduction"
 msgstr ""
 
-#: Game.lean:38
+#: Game.lean:36
 msgid "[Game] Info"
 msgstr ""
 
-#: Game.lean:40
+#: Game.lean:38
 msgid "[Game] Conclusion"
 msgstr ""
 
-#: Game.lean:45
+#: Game.lean:43
 msgid "[Game] CaptionShort"
 msgstr ""
 
-#: Game.lean:46
+#: Game.lean:44
 msgid "[Game] CaptionLong"
 msgstr ""

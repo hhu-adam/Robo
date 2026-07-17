@@ -38,9 +38,9 @@ Statement :
     **Robo**: Genau, am besten wählst du mit `funext x` ein beliebiges Element aus, und zeigst das
     dann für dieses."
   -/
+  Hint "Show swappability if mapping by using `funext x`"
   Branch
     -- old proof.
-    Hint "Show swappability if mapping by using `funext x`"
     funext x
     /-
     Hint "

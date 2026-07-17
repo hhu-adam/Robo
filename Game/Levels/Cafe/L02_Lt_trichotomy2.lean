@@ -43,9 +43,6 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
     Hint (hidden := true) "I guess you can try `grind` again."
     grind
 
-/-- To add. -/
-TacticDoc grind
-
 NewTactic grind
 
 Conclusion "Cafe L02"
