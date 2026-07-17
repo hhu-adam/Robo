@@ -1,24 +1,33 @@
 import Game.Metadata
+import Mathlib.LinearAlgebra.AffineSpace.Slope
 
 World "Slope"
 Level 8
 
-open Topology Filter
+open Topology Filter Metric
+
+/- TODO: Should we keep this level. -/
 
 /---/
-TheoremDoc Filter.Tendsto.mono_left as "Tendsto.mono_left" in "Function"
+TheoremDoc Metric.tendsto_nhdsWithin_nhds as "tendsto_nhdsWithin_nhds" in "Function"
+
+/---/
+TheoremDoc Real.dist_eq as "Real.dist_eq" in "Function"
 
 Statement :
-    Tendsto (fun (x : ℝ) => |x|) (𝓝[≠] 0) (𝓝 0) := by
-  Hint "[Hint monolft] You already proved this limit along `𝓝 0`. State that
-    with `have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0)`; then
-    `Tendsto.mono_left` says a limit along `𝓝 0` is also a limit along the
-    smaller `𝓝[≠] 0`."
-  have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0) := by
-    apply Continuous.tendsto'
-    fun_prop
+    Tendsto (fun (x : ℝ) => if x = 0 then 1 else |x|) (𝓝[≠] 0) (𝓝 0) := by
+  Hint "[Hint epsdel] This function is not continuous at `0` (its value there
+    is `1`), so the previous strategy fails. Instead, use `tendsto_nhdsWithin_nhds`
+    to turn the goal into a familiar ε-δ statement."
+  apply tendsto_nhdsWithin_nhds.mpr
+  intro ε hε
+  use ε
+  constructor
+  · assumption
+  · intro x hx hx'
+    have hx0 : x ≠ 0 := hx
+    rw [if_neg hx0]
+    rw [Real.dist_eq] at ⊢ hx'
     grind
-  apply h.mono_left
-  apply nhdsWithin_le_nhds
 
-NewTheorem Filter.Tendsto.mono_left
+NewTheorem Metric.tendsto_nhdsWithin_nhds Real.dist_eq

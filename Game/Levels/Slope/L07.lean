@@ -6,26 +6,19 @@ Level 7
 open Topology Filter
 
 /---/
-TheoremDoc nhdsWithin_mono as "nhdsWithin_mono" in "Function"
+TheoremDoc Filter.Tendsto.mono_left as "Tendsto.mono_left" in "Function"
 
-/---/
-DefinitionDoc Set.Ioi as "Set.Ioi" in "Set"
-
-/---/
-DefinitionDoc Set.Iio as "Set.Iio" in "Set"
-
-Statement : 𝓝[>] (0:ℝ) ≤ 𝓝[≠] 0 ∧ 𝓝[<] (0 : ℝ) ≤ 𝓝[≠] 0 := by
-  Hint "[Hint nwmono] Both sides restrict the points near `0` to a set:
-    `𝓝[≠] 0` is `nhdsWithin 0 \{0}ᶜ`, and `𝓝[>] 0` is
-    `nhdsWithin 0 (Set.Ioi 0)`, where `Set.Ioi 0` is the interval
-    `(0, ∞)`. Since `Set.Ioi 0 ⊆ \{0}ᶜ`, the theorem `nhdsWithin_mono`
-    does the job."
-  constructor
-  · apply nhdsWithin_mono
-    Hint (hidden := true) "[Hint nwmgr] `grind` can prove this inclusion."
+Statement :
+    Tendsto (fun (x : ℝ) => |x|) (𝓝[≠] 0) (𝓝 0) := by
+  Hint "[Hint monolft] You already proved this limit along `𝓝 0`. State that
+    with `have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0)`; then
+    `Tendsto.mono_left` says a limit along `𝓝 0` is also a limit along the
+    smaller `𝓝[≠] 0`."
+  have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0) := by
+    apply Continuous.tendsto'
+    fun_prop
     grind
-  · apply nhdsWithin_mono
-    grind
+  apply h.mono_left
+  apply nhdsWithin_le_nhds
 
-NewTheorem nhdsWithin_mono
-NewDefinition Set.Ioi Set.Iio
+NewTheorem Filter.Tendsto.mono_left
