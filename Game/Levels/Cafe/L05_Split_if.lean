@@ -13,13 +13,13 @@ Introduction "
 Introduction "Intro Cafe L05"
 
 /- this level used to teach that grind can split ifs. -/
-Statement (c : Bool) (x y : Nat)
-    (h : (if c then x else y) = 0) :
-    x = 0 ∨ y = 0 := by
+Statement (x : ℤ) :
+    0 ≤ if x ≤ 0 then 0 else x := by
+  Hint "[Hint grindSplitIf] Here `if x ≤ 0 then 0 else x` and we
+  want to show it is nonnegative. The goal depends on whether `x ≤ 0` holds, so it needs a case
+  split. `grind` splits on the `if` automatically and closes both branches with linear arithmetic,
+  so just try `grind`."
   grind
-
-/-- To add. -/
-TacticDoc grind
 
 NewTactic grind
 

@@ -7,7 +7,7 @@ Title ""
 /- Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde." -/
 Introduction "Intro Euklid L02"
 
-open Finset
+open Finset FullGrind
 namespace Nat
 
 Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
@@ -55,10 +55,12 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
   "
   -/
   Hint (hidden := true) "The rest should be easy"
-  · obtain ⟨k, hk⟩ := hpa
-    use k * ∏ x ∈ erase A a, x
-    rw [hk]
-    ring
+  Branch
+    · obtain ⟨k, hk⟩ := hpa
+      use k * ∏ x ∈ erase A a, x
+      rw [hk]
+      ring
+  · grind
   simp
 
 /---/

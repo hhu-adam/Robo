@@ -27,7 +27,8 @@ Statement (a c : ℝ) (h : a ≠ c): ∃ b : ℝ, a < b ∧ b < c ∨ c < b ∧ 
   "
   -/
   use (a + c) / 2
-  Hint "Try `grind`"
+  Hint "[Hint grindDirect] No need to split into cases with `lt_trichotomy` this time — `grind`
+  handles the case analysis and the inequalities on its own. Just try `grind` right away."
   grind
 
 Conclusion "Cafe L03"
