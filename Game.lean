@@ -28,6 +28,8 @@ import Game.Levels.Piazza
 
 import Game.Levels.Cafe
 
+import Game.Levels.Cartan
+
 import Game.Levels.Slope
 
 -- *uncomment the following line to get the incomplete planets.*
