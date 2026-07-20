@@ -1,35 +1,46 @@
 import Game.Metadata
 
+
 World "Step"
 Level 10
 
-/---/
-TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
+Introduction "So far, linear (in)dependence was only about **finitely many**
+vectors. Now: linear independence of an **infinite** family.
 
-Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b := by
-  Hint "[Hint indmin] `Finset.induction_on_min` is induction on a finite set:
-  prove the statement for `∅`, then show it survives inserting an element `a`
-  that is **smaller than everything** already present (`ha`). Template:
+For every `a : ℝ`, define the *bump* function
+`bump a := fun x ↦ if x = a then 1 else 0`.
 
-  ```
-  induction s using Finset.induction_on_min
-  · sorry
-  · sorry
-  ```
+**Mini-boss:** show the family `bump a`, `a : ℝ`, is linearly independent."
 
-  In the `insert` case, `a` is the witness you need."
-  Branch
-    induction s using Finset.induction_on_min with
-    | empty => contradiction
-    | insert a s ha ih =>
-      use a
-      grind
-  induction s using Finset.induction_on_min
-  · contradiction
-  · use a
-    grind
+/-- `bump a` is `1` at `a` and `0` everywhere else. -/
+noncomputable
+def bump (a : ℝ) : ℝ → ℝ := fun x ↦ if x = a then 1 else 0
 
+/-- `bump a : ℝ → ℝ` takes the value `1` at `x = a` and `0` everywhere else:
 
-NewTheorem Finset.induction_on_min
+```
+bump a := fun x ↦ if x = a then 1 else 0
+```
+-/
+DefinitionDoc bump as "bump" in "LinearAlgebra"
 
-TheoremTab "Set"
+/-- The family of all bump functions `bump a`, `a : ℝ`, is linearly independent
+in the function space `ℝ → ℝ`. -/
+Statement : LinearIndependent ℝ bump := by
+  Hint "[Hint bmpiff] Start with `rw [linearIndependent_iff']`, then `intro`
+    the finite index set `s`, the coefficients `g`, the hypothesis that the
+    combination vanishes, and an index `a ∈ s`."
+  rw [linearIndependent_iff']
+  intro s g hg a ha
+  Hint "[Hint bmpcong] Evaluate the vanishing combination `hg` at the point
+    `a` with `congrFun`."
+  Hint (hidden := true) "[Hint bmpsimp] `simp [bump, Finset.sum_apply]`
+    collapses the sum: every term `g i • bump i a` is `0` unless `i = a`,
+    since `a ∈ s` this leaves exactly `g a`."
+  have hx := congrFun hg a
+  simp [bump, Finset.sum_apply, ha] at hx
+  grind
+
+NewDefinition bump
+
+TheoremTab "LinearAlgebra"
