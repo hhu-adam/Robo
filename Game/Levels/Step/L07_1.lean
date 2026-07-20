@@ -6,6 +6,8 @@ Level 8
 
 open Finsupp
 
+/- **Linear independent for three vectors**: I not sure we should add this to the main story. -/
+
 /- This level shows a *dependent* pair: `g = 3 * f`, so `![f, g]` is **not**
 linearly independent. -/
 
