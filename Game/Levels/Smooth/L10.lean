@@ -19,6 +19,4 @@ Statement iteratedDeriv_f_zero (n : ℕ) : iteratedDeriv n f 0 = 0 := by
   Hint (hidden := true) "[Hint idz2] `rw [iteratedDeriv_eq_poly]`, then close with
     `zero_of_nonpos (le_refl 0)` and `mul_zero`."
   rw [iteratedDeriv_eq_poly]
-  have : (P n).eval (0 : ℝ)⁻¹ * f 0 = 0 := by
-    rw [zero_of_nonpos (le_refl 0), mul_zero]
-  simp [this]
+  simp [zero_of_nonpos]

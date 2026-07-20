@@ -29,7 +29,7 @@ Statement tendsto_sq_div_exp_atTop :
   have h := (X ^ 2 : ℝ[X]).tendsto_div_exp_atTop
   Hint "[Hint mzrp] Now `simp at h` evaluates the polynomial, turning `h` into
   exactly the goal."
-  simp_log at h
+  simp at h
   exact h
 
 NewTheorem Polynomial.tendsto_div_exp_atTop

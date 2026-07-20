@@ -32,7 +32,7 @@ DefinitionDoc Polynomial.eval as "eval"
 Statement : (X ^ 2 + 1 : ℝ[X]).eval 2 = 5 := by
   Hint "[Hint tkwd] `simp` knows how evaluation interacts with `+`, `^`, `X`
   and constants."
-  simp_log
+  simp
   Hint "[Hint phzv] What remains is ordinary arithmetic — `grind` closes it."
   grind
 
