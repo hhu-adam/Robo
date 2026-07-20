@@ -32,6 +32,8 @@ import Game.Levels.Cartan
 
 import Game.Levels.Slope
 
+import Game.Levels.Smooth
+
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
 
@@ -61,6 +63,9 @@ Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
 Dependency Euklid → Ciao
+
+Dependency Slope → Smooth  -- because of `HasDerivAt` / `hasDerivAt_iff_tendsto_slope`
+Dependency Cartan → Smooth -- because of `eventually_lt_nhds` / `=ᶠ`
 
 -- set_option lean4game.showDependencyReasons true
 
