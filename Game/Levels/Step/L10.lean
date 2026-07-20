@@ -27,16 +27,13 @@ DefinitionDoc bump as "bump" in "LinearAlgebra"
 /-- The family of all bump functions `bump a`, `a : ℝ`, is linearly independent
 in the function space `ℝ → ℝ`. -/
 Statement : LinearIndependent ℝ bump := by
-  Hint "[Hint bmpiff] Start with `rw [linearIndependent_iff']`, then `intro`
-    the finite index set `s`, the coefficients `g`, the hypothesis that the
-    combination vanishes, and an index `a ∈ s`."
+  Hint "[Hint bmpiff] Remember the theorem `linearIndependent_iff'`."
   rw [linearIndependent_iff']
   intro s g hg a ha
-  Hint "[Hint bmpcong] Evaluate the vanishing combination `hg` at the point
-    `a` with `congrFun`."
-  Hint (hidden := true) "[Hint bmpsimp] `simp [bump, Finset.sum_apply]`
-    collapses the sum: every term `g i • bump i a` is `0` unless `i = a`,
-    since `a ∈ s` this leaves exactly `g a`."
+  Hint "[Hint bmpcong] `hg` is an equality of *functions*. Remember how we
+    turned such an equality into a statement about values in an earlier level."
+  Hint (hidden := true) "[Hint bmpsimp] Evaluate `hg` at the point `a` using
+    `congrFun`, then let `simp [bump, Finset.sum_apply]` collapse the sum."
   have hx := congrFun hg a
   simp [bump, Finset.sum_apply, ha] at hx
   grind
