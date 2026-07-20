@@ -1,25 +1,22 @@
 import Game.Metadata
 
-
 World "Step"
 Level 6
 
 open Finsupp
 
-/- This level introduces `single`. -/
-
-/---/
-DefinitionDoc Finsupp.single as "Finsupp.single" in "LinearAlgebra"
-
-/---/
-TheoremDoc Finsupp.linearCombination_single as "Finsupp.linearCombination_single" in "LinearAlgebra"
-
-Statement : linearCombination ℝ ![2, (5 : ℝ)] (single 0 1) = 2 := by
-  Hint (hidden := true) "[Hint lcsgle] Try to apply the theorem `linearCombination_single`."
-  rw [linearCombination_single]
-  simp
-
-NewDefinition Finsupp.single
-NewTheorem Finsupp.linearCombination_single
-
-TheoremTab "LinearAlgebra"
+Statement :
+    let f : ℝ → ℝ := fun x ↦ x + 2
+    let g : ℝ → ℝ := fun x ↦ x - 3
+    linearCombination ℝ ![f, g] (equivFunOnFinite.symm ![2, 3]) =
+      fun x ↦ 5 * x - 5 := by
+  rw [linearCombination_apply]
+  rw [sum_fintype]
+  · rw [Fin.sum_univ_two]
+    simp
+    funext x
+    simp
+    Hint "[Hint ringt]`ring` sees through the `let`-definitions of `f` and `g`,
+      so it can close the goal on its own."
+    ring
+  · simp

@@ -11,7 +11,6 @@ import Game.Levels.Step.L10
 import Game.Levels.Step.L11
 import Game.Levels.Step.L12
 import Game.Levels.Step.L13
-import Game.Levels.Step.L14
 
 World "Step"
 Title "Step"

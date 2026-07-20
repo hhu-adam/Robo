@@ -6,20 +6,14 @@ Level 12
 
 open Finset
 
-/- In the previous level you showed that a nonempty finite set of reals has a
-smallest element. Mathlib packages this smallest element as `Finset.min'`.
-This level introduces `Finset.min'_mem`. -/
+/- This level introduces `Finset.min'_le`. -/
 
 /---/
-DefinitionDoc Finset.min' as "Finset.min'" in "Set"
+TheoremDoc Finset.min'_le as "Finset.min'_le" in "Set"
 
-/---/
-TheoremDoc Finset.min'_mem as "Finset.min'_mem" in "Set"
+Statement (s : Finset ℝ) (hs : s.Nonempty) (x : ℝ) (hx : x ∈ s) : s.min' hs ≤ x := by
+  apply Finset.min'_le s x hx
 
-Statement (s : Finset ℝ) (hs : s.Nonempty) : s.min' hs ∈ s := by
-  apply Finset.min'_mem
-
-NewDefinition Finset.min'
-NewTheorem Finset.min'_mem
+NewTheorem Finset.min'_le
 
 TheoremTab "Set"

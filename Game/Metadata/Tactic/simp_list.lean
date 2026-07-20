@@ -181,16 +181,16 @@ attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.n
 -- Step, L02:
 attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd one_div Matrix.add_cons Matrix.head_cons Matrix.tail_cons Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true Fin.zero_eta Fin.isValue Pi.add_apply Matrix.cons_val_zero Fin.mk_one Matrix.cons_val_one Matrix.cons_val_fin_one
 
--- Step, L03_LinearCombination:
+-- Step, L03:
 attribute [game_simp] Matrix.cons_val_zero Matrix.cons_val_one Finsupp.coe_equivFunOnFinite_symm zero_smul zero_mul
 
--- Step, L07:
+-- Step, L06:
 attribute [game_simp] Pi.add_apply Pi.smul_apply smul_eq_mul
 
--- Step, L08:
+-- Step, L07:
 attribute [game_simp] Pi.add_apply Pi.smul_apply zero_add smul_eq_mul zero_sub mul_neg Pi.zero_apply
 
--- Step, L09:
+-- Step, L08:
 attribute [game_simp] neg_smul one_smul Pi.add_apply Pi.smul_apply smul_eq_mul Pi.neg_apply Pi.zero_apply
 
 -- Step, L13:

@@ -1,35 +1,25 @@
 import Game.Metadata
 
+
 World "Step"
 Level 11
 
+open Finset
+
+/- In the previous level you showed that a nonempty finite set of reals has a
+smallest element. Mathlib packages this smallest element as `Finset.min'`.
+This level introduces `Finset.min'_mem`. -/
+
 /---/
-TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
+DefinitionDoc Finset.min' as "Finset.min'" in "Set"
 
-Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b := by
-  Hint "[Hint indmin] `Finset.induction_on_min` is induction on a finite set:
-  prove the statement for `∅`, then show it survives inserting an element `a`
-  that is **smaller than everything** already present (`ha`). Template:
+/---/
+TheoremDoc Finset.min'_mem as "Finset.min'_mem" in "Set"
 
-  ```
-  induction s using Finset.induction_on_min with a s ha ih
-  · sorry
-  · sorry
-  ```
+Statement (s : Finset ℝ) (hs : s.Nonempty) : s.min' hs ∈ s := by
+  apply Finset.min'_mem
 
-  In the `insert` case, `a` is the witness you need."
-  Branch
-    induction s using Finset.induction_on_min with
-    | empty => contradiction
-    | insert a s ha ih =>
-      use a
-      grind
-  induction s using Finset.induction_on_min with a s ha ih
-  · contradiction
-  · use a
-    grind
-
-
-NewTheorem Finset.induction_on_min
+NewDefinition Finset.min'
+NewTheorem Finset.min'_mem
 
 TheoremTab "Set"
