@@ -13,6 +13,9 @@ TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Fu
 TheoremDoc tendsto_nhdsWithin_congr as "tendsto_nhdsWithin_congr" in "Function"
 
 /---/
+TheoremDoc Filter.Tendsto.congr as "Tendsto.congr" in "Function"
+
+/---/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
 
 Statement {x : ℝ} :
@@ -33,5 +36,5 @@ Statement {x : ℝ} :
   apply h.mono_left
   apply nhdsWithin_le_nhds
 
-NewTheorem hasDerivAt_iff_tendsto_slope tendsto_nhdsWithin_congr
+NewTheorem hasDerivAt_iff_tendsto_slope tendsto_nhdsWithin_congr Filter.Tendsto.congr
 NewDefinition HasDerivAt

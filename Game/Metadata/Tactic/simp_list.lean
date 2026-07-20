@@ -187,6 +187,12 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
 
+-- Smooth, L03:
+attribute [game_simp] mul_ite MulZeroClass.mul_zero not_le eq_self Set.setOf_true Set.mem_univ implies_true
+
+-- Smooth, L04:
+attribute [game_simp] reduceIte eq_self mul_ite MulZeroClass.mul_zero Std.le_refl sub_zero ite_mul MulZeroClass.zero_mul Polynomial.eval_mul Polynomial.eval_X Polynomial.eval_pow inv_pow Polynomial.eval_sub mul_neg mul_one Function.comp_apply Pi.mul_apply
+
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
 

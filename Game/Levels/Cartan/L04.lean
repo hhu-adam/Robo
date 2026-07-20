@@ -12,10 +12,13 @@ DefinitionDoc Filter.Eventually as "∀ᶠ"
 /---/
 TheoremDoc eventually_lt_nhds as "eventually_lt_nhds"
 
+/---/
+TheoremDoc eventually_gt_nhds as "eventually_gt_nhds"
+
 Statement {a : ℝ} (hab : a < 0) :
     ∀ᶠ x in 𝓝 a, x < 0 := by
   apply eventually_lt_nhds
   assumption
 
-NewTheorem eventually_lt_nhds
+NewTheorem eventually_lt_nhds eventually_gt_nhds
 NewDefinition Filter.Eventually
