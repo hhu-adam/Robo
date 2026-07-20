@@ -12,7 +12,7 @@ Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b
   that is **smaller than everything** already present (`ha`). Template:
 
   ```
-  induction s using Finset.induction_on_min
+  induction s using Finset.induction_on_min with a s ha ih
   · sorry
   · sorry
   ```
@@ -24,7 +24,7 @@ Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b
     | insert a s ha ih =>
       use a
       grind
-  induction s using Finset.induction_on_min
+  induction s using Finset.induction_on_min with a s ha ih
   · contradiction
   · use a
     grind
