@@ -1,19 +1,35 @@
 import Game.Metadata
 
-
 World "Step"
 Level 10
 
-open Finset
-
-/- This level introduces `Finset.min'_le`. -/
-
 /---/
-TheoremDoc Finset.min'_le as "Finset.min'_le" in "Set"
+TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
 
-Statement (s : Finset ℝ) (hs : s.Nonempty) (x : ℝ) (hx : x ∈ s) : s.min' hs ≤ x := by
-  apply Finset.min'_le s x hx
+Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b := by
+  Hint "[Hint indmin] `Finset.induction_on_min` is induction on a finite set:
+  prove the statement for `∅`, then show it survives inserting an element `a`
+  that is **smaller than everything** already present (`ha`). Template:
 
-NewTheorem Finset.min'_le
+  ```
+  induction s using Finset.induction_on_min
+  · sorry
+  · sorry
+  ```
+
+  In the `insert` case, `a` is the witness you need."
+  Branch
+    induction s using Finset.induction_on_min with
+    | empty => contradiction
+    | insert a s ha ih =>
+      use a
+      grind
+  induction s using Finset.induction_on_min
+  · contradiction
+  · use a
+    grind
+
+
+NewTheorem Finset.induction_on_min
 
 TheoremTab "Set"

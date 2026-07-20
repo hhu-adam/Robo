@@ -1,23 +1,28 @@
 import Game.Metadata
 
-
 World "Step"
 Level 2
 
-open Finsupp
+/- # Introduction
 
-/- This level introduces `Fin.sum_univ_two`. -/
+Since vectors are functions, we define their addition pointwise.
+
+-/
+
+open Real Function Set Finset
+
+Statement : ![(sqrt 3)/2, 1/2] + ![-(sqrt 3)/2, 1/2] = ![0, 1] := by
+  Branch
+    simp
+    ring
+  funext i
+  fin_cases i
+  · simp
+    ring
+  · simp
+    ring
 
 /---/
-TheoremDoc Fin.sum_univ_two as "Fin.sum_univ_two" in "LinearAlgebra"
+TacticDoc fin_cases
 
-Statement : ∑ i : Fin 2, ![3, (7 : ℝ)] i = 10 := by
-  Hint "[Hint fsuniv2] `Fin.sum_univ_two` rewrites a sum over `Fin 2` into its
-    two summands: `∑ i, f i = f 0 + f 1`."
-  rw [Fin.sum_univ_two]
-  simp
-  ring
-
-NewTheorem Fin.sum_univ_two
-
-TheoremTab "LinearAlgebra"
+NewTactic fin_cases

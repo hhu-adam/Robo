@@ -4,16 +4,22 @@ import Game.Metadata
 World "Step"
 Level 1
 
-open Finsupp
+/- # Introduction
 
-/- This level introduces `equivFunOnFinite`. -/
+An `n`-dimensional vector is nothing but a function out of `Fin n`. For instance
+a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
+`x i : ℝ`.
+We represent such a vector as `![x_1, …, x_n]`.
 
-/---/
-DefinitionDoc Finsupp.equivFunOnFinite as "Finsupp.equivFunOnFinite" in "LinearAlgebra"
+Under the hood, `![a, b, c]` is syntax for `vecCons a (vecCons b (vecCons c vecEmpty))`.
+where `Matrix.vecCons : α → (Fin n → α) → Fin (Nat.succ n) → α`
 
-Statement : (equivFunOnFinite.symm ![1, (2 : ℝ)]) 0 = ![1, 2] 0 := by
-  simp
+Counter-intuitively, the empty vector is quite important in Lean since ultimately every
+vector is built up from it.
 
-NewDefinition Finsupp.equivFunOnFinite
+-/
 
-TheoremTab "LinearAlgebra"
+open Real Function Set Finset
+
+Statement (a b c : ℝ) : ![a,b,c] 0 + ![a,b,c] 1 = a + b := by
+  rfl

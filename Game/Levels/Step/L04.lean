@@ -6,20 +6,18 @@ Level 4
 
 open Finsupp
 
-/- This level introduces `single`. -/
+/- This level introduces `Fin.sum_univ_two`. -/
 
 /---/
-DefinitionDoc Finsupp.single as "Finsupp.single" in "LinearAlgebra"
+TheoremDoc Fin.sum_univ_two as "Fin.sum_univ_two" in "LinearAlgebra"
 
-/---/
-TheoremDoc Finsupp.linearCombination_single as "Finsupp.linearCombination_single" in "LinearAlgebra"
-
-Statement : linearCombination ℝ ![2, (5 : ℝ)] (single 0 1) = 2 := by
-  Hint (hidden := true) "[Hint lcsgle] Try to apply the theorem `linearCombination_single`."
-  rw [linearCombination_single]
+Statement : ∑ i : Fin 2, ![3, (7 : ℝ)] i = 10 := by
+  Hint "[Hint fsuniv2] `Fin.sum_univ_two` rewrites a sum over `Fin 2` into its
+    two summands: `∑ i, f i = f 0 + f 1`."
+  rw [Fin.sum_univ_two]
   simp
+  ring
 
-NewDefinition Finsupp.single
-NewTheorem Finsupp.linearCombination_single
+NewTheorem Fin.sum_univ_two
 
 TheoremTab "LinearAlgebra"

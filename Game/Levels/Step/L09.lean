@@ -4,22 +4,22 @@ import Game.Metadata
 World "Step"
 Level 9
 
-open Finset
+open Finsupp
 
-/- In the previous level you showed that a nonempty finite set of reals has a
-smallest element. Mathlib packages this smallest element as `Finset.min'`.
-This level introduces `Finset.min'_mem`. -/
+/- This level shows a *dependent* pair: `g = 3 * f`, so `![f, g]` is **not**
+linearly independent. -/
 
-/---/
-DefinitionDoc Finset.min' as "Finset.min'" in "Set"
+Statement :
+    let f : ℝ → ℝ := fun x ↦ x + 2
+    let g : ℝ → ℝ := fun x ↦ 3 * x + 6
+    ¬ LinearIndependent ℝ ![f, g] := by
+  Hint "[Hint rmlIpiff] Remember `LinearIndependent.pair_iff`. "
+  rw [LinearIndependent.pair_iff]
+  intro H
+  have heq : (3 : ℝ) • f + (-1 : ℝ) • g = 0 := by
+    funext x
+    simp [f, g]
+    ring
+  grind
 
-/---/
-TheoremDoc Finset.min'_mem as "Finset.min'_mem" in "Set"
-
-Statement (s : Finset ℝ) (hs : s.Nonempty) : s.min' hs ∈ s := by
-  apply Finset.min'_mem
-
-NewDefinition Finset.min'
-NewTheorem Finset.min'_mem
-
-TheoremTab "Set"
+TheoremTab "LinearAlgebra"
