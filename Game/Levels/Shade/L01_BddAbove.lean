@@ -22,7 +22,12 @@ Statement {a b : ℝ} {p : ℝ → Prop} :
     grind (ematch := 0)
   grind
 
-
+/- TODO
+  Add another level introducing UpperBounds, as this is needed in Boss level.
+  E.g. the following very simple level:
+-/
+example {s : Set ℝ} {b : ℝ} (hb : b ∈ upperBounds s) : BddAbove s := by
+  use b
 
 /-- -/
 DefinitionDoc BddAbove as "BddAbove" in "Set"
