@@ -4,7 +4,7 @@ import Mathlib.Analysis.Calculus.Deriv.Slope
 World "Slope"
 Level 9
 
-open Topology Filter
+open Topology Filter FullGrind
 
 /---/
 TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Function"

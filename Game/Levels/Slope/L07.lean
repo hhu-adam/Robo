@@ -3,7 +3,7 @@ import Game.Metadata
 World "Slope"
 Level 7
 
-open Topology Filter
+open Topology Filter FullGrind
 
 /---/
 TheoremDoc Filter.Tendsto.mono_left as "Tendsto.mono_left" in "Function"

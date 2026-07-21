@@ -4,7 +4,7 @@ import Mathlib.LinearAlgebra.AffineSpace.Slope
 World "Slope"
 Level 5
 
-open Topology Filter
+open Topology Filter FullGrind
 
 /---/
 TheoremDoc Continuous.tendsto' as "Continuous.tendsto'" in "Function"

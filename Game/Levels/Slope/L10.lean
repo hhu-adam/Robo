@@ -4,7 +4,7 @@ import Mathlib.Analysis.Calculus.Deriv.Slope
 World "Slope"
 Level 10
 
-open Topology Filter
+open Topology Filter FullGrind
 
 Statement (c : ℝ) :
     let f : ℝ → ℝ := fun x ↦ |x|
