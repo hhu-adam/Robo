@@ -178,6 +178,21 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
 
+-- Step, L01_LinearCombination:
+attribute [game_simp] Matrix.cons_val_zero Matrix.cons_val_one Finsupp.coe_equivFunOnFinite_symm zero_smul zero_mul
+
+-- Step, L05:
+attribute [game_simp] Pi.add_apply Pi.smul_apply smul_eq_mul
+
+-- Step, L06:
+attribute [game_simp] Pi.add_apply Pi.smul_apply zero_add smul_eq_mul zero_sub mul_neg Pi.zero_apply
+
+-- Step, L07:
+attribute [game_simp] neg_smul one_smul Pi.add_apply Pi.smul_apply smul_eq_mul Pi.neg_apply Pi.zero_apply
+
+-- Step, L11:
+attribute [game_simp] Finset.sum_empty eq_self Finset.notMem_empty IsEmpty.forall_iff implies_true imp_self lt_add_iff_pos_right zero_lt_one and_self
+
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
 
