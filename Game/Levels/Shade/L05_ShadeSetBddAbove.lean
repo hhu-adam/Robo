@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L02_ShadeSetNonempty
+import Game.Levels.Shade.L04_ShadeSetNonempty
 
 World "Shade"
-Level 3
+Level 5
 
 Title "Bounded Above"
 
@@ -33,42 +33,9 @@ Statement upperBounds_Shaders {f : ℝ → ℝ} {c b : ℝ} (h_b_sun : b ∈ Sun
       simp [Shade] at h_b_sun
       simp [Shaders] at hy
       grind
-    rw [mem_Shade_iff_not_mem_Sun] at this
+    rw [← mem_Shade_iff_not_mem_Sun] at this
     contradiction
 
-
--- ADDITIONAL PREBOSS LEVEL
-
-lemma lt_sSup_Shaders {f : ℝ → ℝ} {c : ℝ} (hc : c ∈ Shade f) (hs : BddAbove (Shaders f c)) :
-    c < sSup (Shaders f c) := by
-  have h_ne : (Shaders f c).Nonempty := by
-    apply shaders_nonempty
-    assumption
-  obtain ⟨x, hx⟩ := h_ne
-  have : x ≤ sSup (Shaders f c) := by
-    apply le_csSup
-    · assumption
-    · assumption
-  unfold Shaders at hx
-  grind
-
--- ADDITIONAL PREBOSS LEVEL
-
-lemma val_le_val_sSup_Shaders {f : ℝ → ℝ} {hf : Continuous f} {c : ℝ} (hc : c ∈ Shade f)
-    (hs : BddAbove (Shaders f c)) :
-    f c ≤ f (sSup (Shaders f c)) := by
-  have h_sub : (Shaders f c) ⊆ {x | f c ≤ f x} := by
-    unfold Shaders
-    grind
-  apply closure_minimal h_sub
-  have := lt_sSup_Shaders hc hs
-  · apply isClosed_le
-    · fun_prop
-    · fun_prop
-  apply csSup_mem_closure
-  · apply shaders_nonempty
-    assumption
-  · assumption
 
 Conclusion "Conclusion Shade L10: saved as `upperBounds_Shaders`."
 

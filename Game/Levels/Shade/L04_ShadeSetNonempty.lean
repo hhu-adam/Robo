@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L01_ShadeDef
+import Game.Levels.Shade.L03_MemSun
 
 World "Shade"
-Level 2
+Level 4
 
 Title "The Set Below the Sup"
 

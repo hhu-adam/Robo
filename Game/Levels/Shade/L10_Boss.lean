@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L05_InterValueSymm
+import Game.Levels.Shade.L09_InterValueSymm
 
 World "Shade"
-Level 6
+Level 10
 
 Title ""
 
@@ -50,7 +50,7 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
   · Hint "[Hint sbosf] In this case, `a` is a shade point since `a < b` and `f a < f b`."
     have : a ∈ Shade f := by
       use b
-    rw [mem_Shade_iff_not_mem_Sun] at this
+    rw [← mem_Shade_iff_not_mem_Sun] at this
     contradiction
   · assumption
   · /- ---------------------------------------------------------------- -/
@@ -112,7 +112,7 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
       intro t ht
       grind
     /- ---------------------------------------------- -/
-    rw [mem_Shade_iff_not_mem_Sun] at h_shade
+    rw [← mem_Shade_iff_not_mem_Sun] at h_shade
     contradiction
 
 /-- -/

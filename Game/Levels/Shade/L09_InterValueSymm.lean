@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L04_InterValue
+import Game.Levels.Shade.L08_InterValue
 
 World "Shade"
-Level 5
+Level 9
 
 Title ""
 
