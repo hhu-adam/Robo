@@ -5,7 +5,7 @@ Level 7
 
 Title ""
 
-open Set Filter Topology
+open Set Filter Topology FullGrind
 
 Statement : Ioo (- 1 / 5) (1 / 5) ∈ 𝓝 (0 : ℝ) := by
   Hint "[Hint mdsff] Rewrite the goal using the theorem `IsOpen.mem_nhds_iff`. "
