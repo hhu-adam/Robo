@@ -11,11 +11,15 @@ Statement (c : ℝ) :
     ¬ HasDerivAt f c 0 := by
   Hint "[Hint absnd] Near `0`, the slope of `|x|` is `1` on the right but `-1`
     on the left — so no `c` works. Argue by contradiction and rewrite with
-    `hasDerivAt_iff_tendsto_slope`. Then restrict the limit to one side first:
-    `Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c)`, where `𝓝[>] 0` (typed `\nhds[>]`)
-    means approaching `0` from the right."
+    `hasDerivAt_iff_tendsto_slope`."
   by_contra h
   rw [hasDerivAt_iff_tendsto_slope] at h
+  /- TODO:
+    Put some encouraing hints in this level.
+    Perhaps list of have statements in natural luangage?
+    And at the beginning of the proof of each have statement,
+    a hint saying "you're on track"
+  -/
   have e₁ : c = 1 := by
     have hc : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c) := by
       apply h.mono_left

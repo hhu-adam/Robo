@@ -5,12 +5,15 @@ Level 4
 
 open Topology Filter
 
-/-- `Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
-in usual notation, $\lim_{x \to a} f(x) = b$.
+Introduction "`Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
+in usual notation, $\\lim_{x \\to a} f(x) = b$.
 
 You already met the neighborhoods `𝓝 a` and `𝓝[s] a` on the planet *Cafe*.
 Since `𝓝 a` consists of the points near `a`, the whole statement reads:
-`f` sends points near `a` to points near `b`.
+`f` sends points near `a` to points near `b`."
+
+/-- `Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
+in usual notation, $\lim_{x \to a} f(x) = b$.
 
 Combining `Tendsto` with the restricted neighborhoods gives the limit notions
 from calculus:
