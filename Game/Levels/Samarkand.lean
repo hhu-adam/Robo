@@ -4,8 +4,9 @@ import Game.Levels.Samarkand.L03_SurjectiveRange
 import Game.Levels.Samarkand.L04_SurjectiveImagePreimage
 import Game.Levels.Samarkand.L05_InjectiveFibre
 import Game.Levels.Samarkand.L06_PreimageNonempty
-import Game.Levels.Samarkand.L07_LeftInvPreimage
-import Game.Levels.Samarkand.L08_Preimage_Injective
+import Game.Levels.Samarkand.L07_PreimageNonempty2
+import Game.Levels.Samarkand.L08_LeftInvPreimage
+import Game.Levels.Samarkand.L09_Preimage_Injective
 
 World "Samarkand"
 Title "Samarkand"
