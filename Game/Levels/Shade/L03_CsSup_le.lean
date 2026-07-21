@@ -26,6 +26,9 @@ Statement {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (H : ∀ x ∈ s, x ≤ b
 Conclusion
 "Perfect.  `csSup_le` bounded the supremum from above by `b`, and one
 transitivity step pushed it up to `c`."
+/- COMMENT
+See comment in previous level.
+-/
 
 NewTheorem csSup_le
 

@@ -15,13 +15,15 @@ open Set
 TheoremDoc isClosed_le as "isClosed_le" in "Topology"
 
 Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x ≤ c} := by
-  Hint "[Hint iscl] The goal is the set of points where the continuous function `f` stays
-    below the constant `c`.  Apply `isClosed_le`."
+  Hint "[Hint iscl] The goal is to show that set of points where the continuous function `f` stays
+    below the constant `c` is closed.
+    Apply `isClosed_le`, which says that for two continuous functions
+    $f$ and $g$, the set of points `b` where $f (b) ≤ g (b)$ is  closed in $\\mathbb\{R}$."
   apply isClosed_le
-  Hint "Two continuity goals remain.  Use `fun_prop`, which proves such function
-    properties automatically."
+  Hint "The remaining two goals are the continuity of the functions $f$ and $g$
+    to which we applied `isClosed_le`.  Continuity of $f$ is an `assumption`."
   · assumption
-  · Hint "The remaining goal is the continuity statement `Continuous f`. Use `fun_prop`,
+  · Hint "For continuity of the constant function, use `fun_prop`,
       which automatically proves such function properties."
     fun_prop
 

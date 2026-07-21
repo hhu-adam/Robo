@@ -22,6 +22,11 @@ open Set FullGrind
 
 def Shaders (f : ℝ → ℝ) (c : ℝ) : Set ℝ := {t ∈ Set.Ioi c | f c ≤ f t}
 
+lemma lt_Shader (f : ℝ → ℝ) (c : ℝ) (s : ℝ) (hs : s ∈ Shaders f c) : c < s := by
+  unfold Shaders at hs
+  simp_log at hs
+  grind
+
 /-- `Shaders f c` is the set of `t` strictly larger than `c` such that `f c < f t`. -/
 DefinitionDoc Shaders as "Shaders" in "Shade"
 
@@ -29,8 +34,8 @@ DefinitionDoc Shaders as "Shaders" in "Shade"
 is nonempty. -/
 TheoremDoc shaders_nonempty as "shaders_nonempty" in "Shade"
 
-Statement shaders_nonempty {f : ℝ → ℝ} {b c : ℝ}
-    (hbc : f b < f c) (hc_shade : c ∈ Shade f) : (Shaders f c).Nonempty := by
+Statement shaders_nonempty {f : ℝ → ℝ} {c : ℝ}
+    (hc_shade : c ∈ Shade f) : (Shaders f c).Nonempty := by
   Hint "Because `c` is a shadow point, there is some `t₀ > c` with `f t₀ > f c`. Unpack it with
   `obtain ⟨t₀, ht₀_gt, ht₀_f⟩ := hc_shade`."
   obtain ⟨t₀, ht₀_gt, ht₀_f⟩ := hc_shade
@@ -39,6 +44,9 @@ Statement shaders_nonempty {f : ℝ → ℝ} {b c : ℝ}
   use t₀
   unfold Shaders
   grind
+
+
+
 
 Conclusion "Conclusion Shade L09: saved as `shaders_nonempty`."
 

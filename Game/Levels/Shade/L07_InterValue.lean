@@ -4,6 +4,17 @@ World "Shade"
 Level 7
 
 Title ""
+/- TODO
+Add natural-language summary of the statement.
+-/
+
+
+/- TODO
+This level looks quite independent of everything else.
+- Move it right before Boss.
+- Add a second intermediate value exercise level, e.g.
+  a symmetric version of this level with f a < f b.
+-/
 
 open Set FullGrind
 

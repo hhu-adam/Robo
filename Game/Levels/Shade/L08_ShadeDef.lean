@@ -5,33 +5,37 @@ Level 8
 
 Title ""
 
-open Set
+open Set FullGrind
 
-def Shade (f : ℝ → ℝ) : Set ℝ := {s : ℝ | ∃ t > s, f t > f s}
+def Shade (f : ℝ → ℝ) := {s : ℝ | ∃ t > s, f t > f s}
+def Sun (f : ℝ → ℝ) : Set ℝ := {s : ℝ | ∀ t > s, f t ≤ f s}
 
-def Sun (f : ℝ → ℝ) : Set ℝ := (Shade f)ᶜ
+@[game_simp]
+lemma mem_Shade_iff_not_mem_Sun (f : ℝ → ℝ) (a : ℝ): a ∈ Shade f ↔ a ∉ Sun f := by
+  simp_log [Shade, Sun]
+/- COMMENT
+I'm trying to mimick the definitions & API of "odd" and "even" in Mathlib.
+-/
 
-/-- `Shade f` is the set of shadow points of `f`: those `s` for which there exists some
+
+/-- `Shade f` is the set of shade points of `f`: those `s` for which there exists some
 `t > s` with `f t > f s`. -/
 DefinitionDoc Shade as "Shade" in "Shade"
 
-/-- If `a` is not a shadow point, then `f x ≤ f a` for every `x > a`. -/
+/-- `Sun f` is the set of sunny points of `f`: those `s` with with `f t ≤ f s` for all `t > s`. -/
+DefinitionDoc Sun as "Sun" in "Shade"
+
+/-- If `a` is a sunny point, then `f x ≤ f a` for every `x > a`. -/
 TheoremDoc mem_sun as "mem_sun" in "Shade"
 
 Statement mem_sun {f : ℝ → ℝ} {a : ℝ} (h : a ∈ Sun f) (x : ℝ) (h_lt : a < x) :
     f x ≤ f a := by
-  Hint "[Hint shadeBC]Argue by contradiction."
-  by_contra hc
-  push Not at hc
-  /- how to cite a variable here. -/
-  Hint "[Hint notshade] Note that there is a element that is greater than `a` with function
-    value greater than `f a`, which contradicts to the assumption that `a ∈ Sun f`. "
-  have : a ∈ Shade f := by
-    use x
-  contradiction
+  Hint (hidden := true) "[Hint w4joj] Try `simp [Sun]`."
+  simp_log [Sun] at h
+  grind
 
-Conclusion "Conclusion LightAndShade L01: saved as `not_mem_shade`."
+Conclusion "Conclusion LightAndShade L01: saved as `mem_sun`."
 
-NewDefinition Shade
+NewDefinition Shade Sun
 
 TheoremTab "Shade"

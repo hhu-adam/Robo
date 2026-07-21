@@ -13,13 +13,26 @@ Statement {a b : ℝ} {p : ℝ → Prop} :
   rw [bddAbove_def]
   Hint (hidden := true) "[Hint hd] `b` is a upper bound of this set. "
   use b
+  Branch -- alternative solution with restricted grind
+    intro y hy
+    simp at hy
+    have := hy.1
+    unfold Ioo at this
+    simp at this
+    grind (ematch := 0)
   grind
+
+
 
 /-- -/
 DefinitionDoc BddAbove as "BddAbove" in "Set"
 
 /-- -/
 DefinitionDoc Set.Ioo as "Ioo" in "Set"
+/- TODO
+Either introduce Ioo earlier (with all the other intervals, perhaps?)
+or an explanation of Ioo in the first hint given here.
+-/
 
 NewDefinition BddAbove Set.Ioo
 

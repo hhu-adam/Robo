@@ -26,6 +26,12 @@ Statement {s : Set ℝ} {c x : ℝ} (hbd : BddAbove s) (hx : x ∈ s) (hcx : c <
 Conclusion
 "Nicely done.  `le_csSup` turned membership `x ∈ s` into the bound
 `x ≤ sSup s`, and one transitivity step finished the job."
+/- COMMENT
+Don't assume you know what the player did. It's fine to give another summary of
+`le_csSup`, but don't write "and one transitivity step …" – the player might have needed 10 steps,
+going around in circles, before they got here.
+-/
+
 
 NewTheorem le_csSup
 

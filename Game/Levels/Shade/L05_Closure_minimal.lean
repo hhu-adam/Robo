@@ -20,7 +20,8 @@ Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f)
     `closure_minimal`; it asks for `s ⊆ ...` and that the target set is closed."
   apply closure_minimal
   · assumption
-  Hint "The remaining goal is that the sublevel set `f x ≤ c` is closed — that is `isClosed_le`."
+  Hint (hidden := true) "The remaining goal is that the sublevel set `f x ≤ c` is closed —
+    that is `isClosed_le`."
   apply isClosed_le
   · assumption
   · fun_prop

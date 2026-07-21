@@ -23,14 +23,21 @@ the goal is `f a = f b`.
 * If `f a = f b`: there is nothing to prove.
 
 * If `f a > f b`: we derive a contradiction. One can find a `c` between `a`
-  and `b` with `f c > f b`. Now consider the supremum `d` of the set
-  `shadeSet f c b = {t ∈ (c, b) | f c ≤ f t}`. By continuity the value at `d` is still at least `f c`
-  (so `f d ≥ f c > f b`), and `d` lies strictly inside `(a, b)`. On one hand `d ∈ (a, b)` forces `d`
-  to be a shadow point. On the other hand, just past `d` the function never climbs back to `f c`
-  (that is what `d` being the supremum means), and beyond `b` it stays below `f b < f c`; so no point
-  to the right of `d` exceeds `f d` — meaning `d` is *not* a shadow point. This contradiction rules
-  out `f a > f b`, leaving `f a = f b`.
+  and `b` with `f c > f b`.   The set `Shaders f c` is non-empty, as `c` is in the shade,
+  and it is bounded above by `b`, since `b` is in the sun with value smaller than at `c`.
+  In particular, the supremum `d` of `Shaders f c` is `≤ b`.
 
+  Also, `c < d` by some triviality …, so `a < d`.
+
+  By definition of `Shaders f c`, for all points in `Shaders f c`, `f` takes a value at least `f c`.
+  Thus, by earlier levels …… `f d ≥ f c`.  This implies, in particular, that `d ≠ b`.
+  So `d ∈ Ioo (a b)`.  By our assumptions, this implies that `d` is in the shade.
+
+  On the other hand, to the right of `d`, the function remains below `f c` – that is what `d` being
+  the supremum means.  A fortiori, given that `f d ≥ f c`, the function remains below `f c`.
+  So `d` is in the sun.
+
+  Contradiction.
 "
 
 open Set FullGrind
@@ -43,74 +50,69 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
   · Hint "[Hint sbosf] In this case, `a` is a shade point since `a < b` and `f a < f b`."
     have : a ∈ Shade f := by
       use b
+    rw [mem_Shade_iff_not_mem_Sun] at this
     contradiction
   · assumption
-  · Hint "First, we prove that there is a `c ∈ Ioo a b`, such that `f c > f b`. "
+  · /- ---------------------------------------------------------------- -/
+    /- Interesting case.  PART A:  Construction of d                    -/
+    Hint "First, we prove that there is a `c ∈ Ioo a b`, such that `f c > f b`. "
     have hc : ∃ c ∈ Ioo a b, f c > f b := by
-      Hint "[Hint pbf] Remember the proof before."
+      Hint "[Hint pbf] Remember the proof before." -- THIS SHOUD BE REPEATET!
       apply exists_mem_Ioo_gt hf hab h_gt
     obtain ⟨c, hc_mem, hfc⟩ := hc
-    let d := sSup (Shaders f c)
-    have hn : (Shaders f c).Nonempty := by
-      apply shaders_nonempty hfc
+    have h_ne : (Shaders f c).Nonempty := by
+      Hint (hidden := true) "[Hint mwqb] Remember `shaders_nonempty`"
+      apply shaders_nonempty
       apply h₀
       assumption
-    have hbd : b ∈ upperBounds (Shaders f c) := by
-      apply shaders_bddAbove hb hfc
-      --Hint "[Hint] Remember the proof before."
-    have hbd' : BddAbove (Shaders f c) := by
+    have h_b : b ∈ upperBounds (Shaders f c) := by
+      Hint (hidden := true) "[Hint dtpx] Remember `upperBounds_Shaders`"
+      apply upperBounds_Shaders hb hfc
+    have h_bdd : BddAbove (Shaders f c) := by
       use b
-    have d_le : d ≤ b := by
-      apply csSup_le
+    let d := sSup (Shaders f c)
+    /- ------------------------------------------------- -/
+    /- PART B:  d is in the Shade                        -/
+    have h_c : c ∈ Shade f := by
+      apply h₀ at hc_mem
+      assumption
+    have d_le_b : d ≤ b := by
+      apply csSup_le --(h₂ := hbd)
       · assumption
-      --unfold Shaders
-      rw [mem_upperBounds] at hbd  -- NEW LEMMA (but perhaps this can be simplified)
-      assumption
-    have hfc_le_fd : f c ≤ f d := by
-      have hsub : (Shaders f c) ⊆ {x | f c ≤ f x} := sep_subset_setOf _ _
-      apply closure_minimal hsub
-      · apply isClosed_le
-        · fun_prop
-        · fun_prop
-      · apply csSup_mem_closure
-        · assumption
-        · assumption
-    have c_lt_d : c ≤ d := by
-      obtain ⟨x, hx⟩ := hn
-      have : x ≤ d := by
-        apply le_csSup
-        · assumption
-        · assumption
-      unfold Shaders at hx
-      grind
-    have d_lt : d < b := by
-      grind
-    have lt_aux₁ : ∀ x, b < x → f x ≤ f b := by
-      apply mem_sun
-      assumption
-    have lt_aux₂ : ∀ x, x ∈ Ioo d b → f x ≤ f c := by
-      intro x hx
-      obtain ⟨hx1, hx2⟩ := hx
-      have not_mem : x ∉ Shaders f c := by
-        apply notMem_of_csSup_lt
-        · assumption
-        assumption
-      by_contra hc
-      have mem_aux : x ∈ Shaders f c := by
-        unfold Shaders
-        grind
-      contradiction
-    have : d ∈ Sun f := by
-      by_contra hc
-      simp at hc
-      have hc : d ∈ Shade f := by
-        apply not_notMem.mp
-        assumption
-      obtain ⟨t, ht⟩ := hc
-      grind
-    have : d ∈ Shade f := by
+      · -- OPTIONAL:
+        -- unfold upperBounds at hbd
+        -- OR:
+        -- rw [mem_upperBounds] at hbd
+        apply h_b
+    have hfc_le_fd : f c ≤ f d := by              -- learlier LEVEL
+      apply val_le_val_sSup_Shaders
+      · fun_prop
+      · assumption
+      · assumption
+    have c_lt_d : c < d := by
+      simp only [d]
+      apply lt_sSup_Shaders                       -- earlier LEVEL
+      · assumption
+      · assumption
+    have h_shade : d ∈ Shade f := by
       apply h₀
       grind
+    /- ---------------------------------------------- -/
+    /- PART C : d is in the Sun                       -/
+    have lt_aux : ∀ x, d < x  → f x ≤ f c := by -- another LEVEL about Shaders?
+      intro x hx
+      have not_mem : x ∉ Shaders f c := by
+        apply notMem_of_csSup_lt                -- ADDITIONAL LEMMA used here!
+        · assumption
+        · assumption
+      unfold Shaders at not_mem
+      grind
+    have : d ∈ Sun f := by
+      simp_log [Sun]
+      intro t ht
+      grind
+    /- ---------------------------------------------- -/
+    rw [mem_Shade_iff_not_mem_Sun] at h_shade
     contradiction
 
 /-- -/
