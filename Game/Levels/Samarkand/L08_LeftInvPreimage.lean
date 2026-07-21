@@ -2,7 +2,7 @@ import Game.Levels.Samarkand.L06_PreimageNonempty
 
 
 World "Samarkand"
-Level 7
+Level 8
 
 Title "" -- "Preimage of the inverse"
 
@@ -11,7 +11,7 @@ Introduction "
   **Arapuka**:  Jetzt habe ich aber noch eine wirklich schwierige Aufgabe.
 "
 -/
-Introduction "Intro Samarkand L07"
+Introduction "Intro Samarkand L08"
 
 open Function Set
 
@@ -41,4 +41,4 @@ Conclusion "
 "
 -/
 
-Conclusion "Conclusion Samarkand L07"
+Conclusion "Conclusion Samarkand L08"

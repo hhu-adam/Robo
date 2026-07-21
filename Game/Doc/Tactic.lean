@@ -25,6 +25,13 @@ For example, `by cases h : a = b` distinguishes between the cases `a = b` and `a
 The proof goal is duplicated for this purpose, and
 the assumption `(h : P)` is added to the first “copy,”
 while the assumption `(h : ¬P)` is added to the second “copy.”
+
+## Variants
+
+* `by_cases! h : P` additionally pushes the negation inside the assumption of the second case:
+it has the same effect as `by_cases h : P` followed by `push Not at h` in the second case.
+For example, `by_cases! h : a < b` distinguishes between `h : a < b` and `h : b ≤ a`,
+and `by_cases! h : a ≠ b` distinguishes between `h : a ≠ b` and `h : a = b`.
 -/
 TacticDoc by_cases
 
@@ -32,6 +39,11 @@ TacticDoc by_cases
 The tactic `by_contra h` initiates a proof by contradiction.
 If `P` is your current proof goal, `by_contra h` generates a new assumption `(h : ¬ P)`
 and sets the proof goal to `False`.
+
+## Variants
+
+* `by_contra! h` additionally pushes the negation inside the new assumption:
+it has the same effect as `by_contra h` followed by `push Not at h`.
 
 ## Friends and relatives
 
@@ -197,11 +209,30 @@ A ∨ ¬A
 TacticDoc generalize
 
 /--
+The `grind` tactic is a powerful automation tactic.
+It tries to close the proof goal by combining several techniques,
+including case splitting, congruence closure, and arithmetic reasoning.
+It can often finish goals that would otherwise require several manual steps.
+
+## Variants
+
+* `grind [h₁, h₂]` uses the assumptions or lemmas `h₁` and `h₂`
+    in addition to lemmas marked with `@[grind]` in mathlib
+* `grind only [h₁, h₂]` exclusively uses the given lemmas
+
+## Friends and relatives
+
+* `simp` simplifies the goal step by step using rewrite lemmas,
+  but does not perform case splits.
+-/
+TacticDoc grind
+
+/--
 With `have h : P`, you introduce an intermediate result.
 You must then prove this intermediate result
 before you can continue with the actual proof.
 
-## Friends and relatives
+## Related
 `suffices h : P` works in exactly the same way, except that you can continue with the main proof first and
 only have to prove your intermediate result at the very end.
 -/
