@@ -58,6 +58,15 @@ attribute [game_simp] eq_iff_iff not_iff_self Set.setOf_false Set.mem_empty_iff_
 -- Cantor, L11_SequenceUncountable:
 attribute [game_simp] Nat.succ_eq_add_one Nat.add_eq_left one_ne_zero Set.setOf_false Set.mem_empty_iff_false
 
+-- Cartan, L03:
+attribute [game_simp] Filter.principal_singleton Filter.mem_pure
+
+-- Cartan, L07:
+attribute [game_simp] Set.mem_Ioi
+
+-- Cartan, L08:
+attribute [game_simp] Set.mem_Iio
+
 -- Epo, L01_Surjective:
 attribute [game_simp] sub_add_cancel eq_self
 
@@ -177,6 +186,21 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
+
+-- Smooth, L01:
+attribute [game_simp] Polynomial.eval_add Polynomial.eval_pow Polynomial.eval_X Polynomial.eval_one
+
+-- Smooth, L02:
+attribute [game_simp] Polynomial.eval_pow Polynomial.eval_X
+
+-- Smooth, L03:
+attribute [game_simp] reduceIte eq_self
+
+-- Smooth, L04:
+attribute [game_simp] mul_ite MulZeroClass.mul_zero not_le eq_self Set.setOf_true Set.mem_univ implies_true
+
+-- Smooth, L08:
+attribute [game_simp] mul_ite MulZeroClass.mul_zero Std.le_refl reduceIte sub_zero ite_mul MulZeroClass.zero_mul Polynomial.eval_mul Polynomial.eval_X eq_self inv_zero mul_eq_mul_right_iff inv_eq_zero Polynomial.eval_pow inv_pow Polynomial.eval_sub mul_neg mul_one Function.comp_apply Pi.mul_apply
 
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
