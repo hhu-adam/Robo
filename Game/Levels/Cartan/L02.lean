@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cartan"
 Level 2
 
-open Filter Topology
+open Filter Topology FullGrind
 
 Introduction "
 Not every generalized point sits next to an actual point. The filter

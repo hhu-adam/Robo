@@ -4,7 +4,7 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 8
 
-open Filter Topology
+open Filter Topology FullGrind
 
 /---/
 TheoremDoc Filter.Eventually.exists as "Filter.Eventually.exists"
