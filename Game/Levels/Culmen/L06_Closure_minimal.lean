@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L04_IsClosed_le
+import Game.Levels.Culmen.L05_IsClosed_le
 
-World "Shade"
-Level 5
+World "Culmen"
+Level 6
 
 Title ""
 

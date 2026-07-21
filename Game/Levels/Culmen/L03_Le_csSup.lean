@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L01_BddAbove
+import Game.Levels.Culmen.L02_BddAbove
 
-World "Shade"
-Level 2
+World "Culmen"
+Level 3
 
 Title ""
 
@@ -16,8 +16,10 @@ TheoremDoc le_csSup as "le_csSup" in "sSup"
 
 Statement {s : Set ℝ} {c x : ℝ} (hbd : BddAbove s) (hx : x ∈ s) (hcx : c < x) :
     c < sSup s := by
+  Hint "[Hint cslt] Since `s` is bounded above, its supremum `sSup s` is an *upper bound* of `s`,
+  so it dominates every element of `s` — in particular your `x ∈ s` gives `x ≤ sSup s`."
   have : x ≤ sSup s := by
-    Hint "[Hint lecssup] Perhaps, `le_csSup` is helpful here. "
+    Hint (hidden := true) "[Hint lecssup] Perhaps, `le_csSup` is helpful here. "
     apply le_csSup
     · assumption
     · assumption
@@ -30,6 +32,8 @@ Conclusion
 Don't assume you know what the player did. It's fine to give another summary of
 `le_csSup`, but don't write "and one transitivity step …" – the player might have needed 10 steps,
 going around in circles, before they got here.
+
+*Comment Resolved (Wenrong):* I add a Hint above the first step.
 -/
 
 

@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L05_Closure_minimal
+import Game.Levels.Culmen.L06_Closure_minimal
 
-World "Shade"
-Level 6
+World "Culmen"
+Level 7
 
 Title ""
 

@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L08_ShadeDef
+import Game.Levels.Shade.L01_ShadeDef
 
 World "Shade"
-Level 9
+Level 2
 
 Title "The Set Below the Sup"
 

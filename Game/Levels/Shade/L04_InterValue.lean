@@ -1,19 +1,31 @@
-import Game.Levels.Shade.L06_CsSup_mem_closure
+import Game.Levels.Shade.L03_ShadeSetBddAbove
 
 World "Shade"
-Level 7
+Level 4
 
 Title ""
+
+Introduction
+"[Intro]
+ If a continuous function `f` takes a strictly larger value at the left endpoint `a` than at the
+ right endpoint `b` of an interval, then somewhere strictly between the endpoints the function still
+ exceeds its value at that right endpoint.
+"
 /- TODO
 Add natural-language summary of the statement.
--/
 
+*Comment resolved (Wenrong):* added an `[Intro]` natural-language summary of the statement above.
+-/
 
 /- TODO
 This level looks quite independent of everything else.
 - Move it right before Boss.
 - Add a second intermediate value exercise level, e.g.
   a symmetric version of this level with f a < f b.
+
+*Comment resolved (Wenrong):* moved this level to just before the Boss (now level 4), and added a
+symmetric version (`f a < f b`) as the following level, `L05_InterValueSymm`. That level is left
+without hints on purpose, so the player practises the same argument unaided.
 -/
 
 open Set FullGrind

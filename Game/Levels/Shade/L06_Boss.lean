@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L10_ShadeSetBddAbove
+import Game.Levels.Shade.L05_InterValueSymm
 
 World "Shade"
-Level 11
+Level 6
 
 Title ""
 

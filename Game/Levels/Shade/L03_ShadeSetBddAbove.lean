@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L09_ShadeSetNonempty
+import Game.Levels.Shade.L02_ShadeSetNonempty
 
 World "Shade"
-Level 10
+Level 3
 
 Title "Bounded Above"
 
