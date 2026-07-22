@@ -43,7 +43,7 @@ TheoremDoc mem_Shade_iff_not_mem_Sun as "mem_Shade_iff_not_mem_Sun" in "Shade"
 Statement mem_Shade_iff_not_mem_Sun (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
   Hint "Both sides are set-builder memberships. Unfold them with `simp [Shade, Sun]` and let
   `simp` push the negation through the `∀`."
-  simp_log [Shade, Sun]
+  simp [Shade, Sun]
 
 attribute [game_simp] mem_Shade_iff_not_mem_Sun
 

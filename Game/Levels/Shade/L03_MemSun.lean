@@ -13,7 +13,7 @@ TheoremDoc mem_sun as "mem_sun" in "Shade"
 Statement mem_sun {f : ℝ → ℝ} {a : ℝ} (h : a ∈ Sun f) (x : ℝ) (h_lt : a < x) :
     f x ≤ f a := by
   Hint (hidden := true) "[Hint w4joj] Try `simp [Sun]`."
-  simp_log [Sun] at h
+  simp [Sun] at h
   grind
 
 Conclusion "Conclusion LightAndShade L03: saved as `mem_sun`."

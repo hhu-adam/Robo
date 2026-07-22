@@ -118,7 +118,7 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
       intro x hx
       apply val_le_of_sSup_Shaders_lt h_c h_bdd x hx    -- earlier LEVEL
     have : d ∈ Sun f := by
-      simp_log [Sun]
+      simp [Sun]
       intro t ht
       grind
     /- ---------------------------------------------- -/
