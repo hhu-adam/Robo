@@ -16,7 +16,6 @@ Statement :
   Hint (hidden := true) "Perform `simp` again"
   simp
 
-
 NewDefinition Set.compl
 TheoremTab "Set"
 
