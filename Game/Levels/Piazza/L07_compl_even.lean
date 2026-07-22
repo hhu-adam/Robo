@@ -5,14 +5,7 @@ Level 7
 
 Title ""
 
-/-
-Introduction
-"
-**Ext**:  Das Komplement ist auch nur eine Menge.
-"
--/
-Introduction "Intro Piazza L07: the complement `Aᶜ` collects exactly the elements *not* in `A`.
-It is the same as `(univ : Set ℕ) \\ A`."
+Introduction "Instead of `(univ \\ A)` can also write `Aᶜ` (typed as `\\compl` or `\\^c`)."
 
 open Set
 
@@ -23,8 +16,6 @@ Statement :
   Hint (hidden := true) "Perform `simp` again"
   simp
 
-/-- -/
-DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 NewDefinition Set.compl
 TheoremTab "Set"
