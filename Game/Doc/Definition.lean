@@ -85,6 +85,12 @@ For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their unio
 DefinitionDoc Set.union as "∪" in "Set"
 
 /--
+For subsets `A` of `S` (i.e. `A : Set S`), `Aᶜ` is the complement.
+`ᶜ` is written as `\\compl` or `\\^c`.
+-/
+DefinitionDoc Set.compl as "·ᶜ" in "Set"
+
+/--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
 `∩` is written as `\\inter`.
 -/
