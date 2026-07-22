@@ -3,16 +3,27 @@ import Game.Metadata
 World "Slope"
 Level 8
 
-open Topology Filter
+open Topology Filter FullGrind
 
 /---/
-TheoremDoc tendsto_nhds_unique as "tendsto_nhds_unique" in "Function"
+TheoremDoc Filter.Tendsto.mono_left as "Tendsto.mono_left" in "Function"
 
-Statement (f : ℝ → ℝ) (a b : ℝ) (h₁ : Tendsto f (𝓝 0) (𝓝 a))
-    (h₂ : Tendsto f (𝓝 0) (𝓝 b)) : a = b := by
-  Hint "[Hint tnu] A function cannot approach two different values along the
-    same approach: limits are unique. This is the theorem
-    `tendsto_nhds_unique`; apply it using `h₁` and `h₂`."
-  apply tendsto_nhds_unique h₁ h₂
+Statement :
+    Tendsto (fun (x : ℝ) ↦ |x|) (𝓝[≠] 0) (𝓝 0) := by
+  Hint "[Hint monolft] You already proved this limit along `𝓝 0`. State that
+    with `have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0)`; then
+    `Tendsto.mono_left` says a limit along `𝓝 0` is also a limit along the
+    smaller `𝓝[≠] 0`."
+  have h : Tendsto (fun (x : ℝ) ↦ |x|) (𝓝 0) (𝓝 0) := by
+    /- TODO
+    Investigate why this does not work in the browser
+    – very mysterious!
+    -/
+    Hint (hidden := true) "[Hint qmdrx] Remember `Continuous.tendsto'`"
+    apply Continuous.tendsto'
+    fun_prop
+    grind
+  apply Tendsto.mono_left h
+  apply nhdsWithin_le_nhds
 
-NewTheorem tendsto_nhds_unique
+NewTheorem Filter.Tendsto.mono_left

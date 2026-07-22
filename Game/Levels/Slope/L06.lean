@@ -21,17 +21,6 @@ So:
   (We intially had it in there, but I think it has gone lost. Here we need it.)
 -/
 
-/---/
-TheoremDoc nhdsWithin_le_nhds as "nhdsWithin_le_nhds" in "Function"
-
-/- TODO
-   Split this into two levels.
-   1. as a reminder, prove the statement from `nhdsWithin_mono`, which was included in Cafe;
-      see main proof below.
-   2. prove with `nhdsWithin_le_nhds` – this is what is used in remainder of planet,
-      see Statement2 below.
--/
-
 Statement : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
   Hint "[Hint nwln] Remember `nhdsWithin_mono` from Cafe.  To apply it here, first establish
     `𝓝 (0 : ℝ) = 𝓝[univ] 0` with `have`, then `rw` using this equality."
@@ -42,10 +31,3 @@ Statement : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
   grind
 
 Conclusion ""
-
-lemma Statement2 : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0  := by
-  Hint "[Hint csrcg] Can also prove this directly `nhdsWithin_le_nhds`."
-  apply nhdsWithin_le_nhds
-
-
-NewTheorem nhdsWithin_le_nhds
