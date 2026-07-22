@@ -19,13 +19,14 @@ So:
 /- TODO
   Introduced notation for set complements on Piazza!
   (We intially had it in there, but I think it has gone lost. Here we need it.)
+  *Resolved*
 -/
 
 Statement : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
   Hint "[Hint nwln] Remember `nhdsWithin_mono` from Cafe.  To apply it here, first establish
     `𝓝 (0 : ℝ) = 𝓝[univ] 0` with `have`, then `rw` using this equality."
   have : 𝓝 (0 : ℝ) = 𝓝[univ] 0:= by
-    simp_log
+    simp
   rw [this]
   apply nhdsWithin_mono
   grind

@@ -19,7 +19,9 @@ Statement (c : ℝ) :
     Perhaps list of have statements in natural luangage?
     And at the beginning of the proof of each have statement,
     a hint saying "you're on track"
+    *Resolved*
   -/
+  Hint (hidden := true) "[Hint ftys1] First, try to prove that `c = 1`. "
   have e₁ : c = 1 := by
     have hc : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c) := by
       apply h.mono_left
@@ -33,6 +35,7 @@ Statement (c : ℝ) :
       apply tendsto_nhdsWithin_congr slope_pos
       apply tendsto_const_nhds
     apply tendsto_nhds_unique hc h1
+  Hint "[Hint ftysn1] Perfect! You're on track. Now, you can also prove that `c = -1` by similar process."
   have e₂ : c = -1 := by
     have hc : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 c) := by
       apply h.mono_left
