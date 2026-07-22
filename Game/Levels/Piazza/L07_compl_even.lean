@@ -12,7 +12,7 @@ Introduction
 "
 -/
 Introduction "Intro Piazza L07: the complement `Aᶜ` collects exactly the elements *not* in `A`.
-It is the same as `(univ : Set ℕ) \\ A`. Same scheme as before: `ext`, then `simp`."
+It is the same as `(univ : Set ℕ) \\ A`."
 
 open Set
 
