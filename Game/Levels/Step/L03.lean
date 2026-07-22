@@ -4,16 +4,23 @@ import Game.Metadata
 World "Step"
 Level 3
 
-open Finsupp
+/- # Introduction
 
-/- This level introduces `equivFunOnFinite`. -/
+Besides adding vectors, we can *scale* them.  For a scalar `a : ℝ` and a vector
+`v : Fin n → ℝ`, the scalar multiple `a • v` is again a vector, defined coordinatewise by
+`(a • v) i = a * v i`.
 
-/---/
-DefinitionDoc Finsupp.equivFunOnFinite as "Finsupp.equivFunOnFinite" in "LinearAlgebra"
+The symbol `•` is written `\smul`.  Combined with addition, scaling lets us form
+*linear combinations* such as `a • v + b • w`, the central object of this world.
 
-Statement : (equivFunOnFinite.symm ![1, (2 : ℝ)]) 0 = ![1, 2] 0 := by
+-/
+
+open Real Function Set Finset
+
+Statement :
+    sqrt 2 • ![(sqrt 2)/2, 0] + sqrt 2 • ![0, (sqrt 2)/2] = ![1, 1] := by
   simp
-
-NewDefinition Finsupp.equivFunOnFinite
+  ring
+  simp
 
 TheoremTab "LinearAlgebra"

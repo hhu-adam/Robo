@@ -6,29 +6,18 @@ Level 5
 
 open Finsupp
 
-/- This level introduces `linearCombination`. -/
+/- This level introduces `Fin.sum_univ_two`. -/
 
 /---/
-DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
+TheoremDoc Fin.sum_univ_two as "Fin.sum_univ_two" in "LinearAlgebra"
 
-/---/
-TheoremDoc Finsupp.linearCombination_apply as "Finsupp.linearCombination_apply" in "LinearAlgebra"
+Statement : ∑ i : Fin 2, ![3, (7 : ℝ)] i = 10 := by
+  Hint "[Hint fsuniv2] `Fin.sum_univ_two` rewrites a sum over `Fin 2` into its
+    two summands: `∑ i, f i = f 0 + f 1`."
+  rw [Fin.sum_univ_two]
+  simp
+  ring
 
-/---/
-TheoremDoc Finsupp.sum_fintype as "Finsupp.sum_fintype" in "LinearAlgebra"
-
-Statement : linearCombination ℝ ![2, (5 : ℝ)] (equivFunOnFinite.symm ![1, 2]) = 12 := by
-  Hint "[Hint lcapply] Unfold the linear combination with `linearCombination_apply` and
-    `Finsupp.sum_fintype`."
-  rw [linearCombination_apply, Finsupp.sum_fintype]
-  · Hint "[Hint lcsum2] Now it is a sum over `Fin 2`, remember the theorem in previous level."
-    rw [Fin.sum_univ_two]
-    simp
-    ring
-  · Hint (hidden := true) "[Hint lcside] Try `simp`."
-    simp
-
-NewDefinition Finsupp.linearCombination
-NewTheorem Finsupp.linearCombination_apply Finsupp.sum_fintype
+NewTheorem Fin.sum_univ_two
 
 TheoremTab "LinearAlgebra"

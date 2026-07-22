@@ -182,18 +182,21 @@ attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.n
 attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd one_div Matrix.add_cons Matrix.head_cons Matrix.tail_cons Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true Fin.zero_eta Fin.isValue Pi.add_apply Matrix.cons_val_zero Fin.mk_one Matrix.cons_val_one Matrix.cons_val_fin_one
 
 -- Step, L03:
+attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd Matrix.smul_cons smul_eq_mul MulZeroClass.mul_zero Matrix.smul_empty Matrix.add_cons Matrix.head_cons add_zero Matrix.tail_cons zero_add Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true and_self Nat.ofNat_nonneg Real.sq_sqrt one_div ne_eq OfNat.ofNat_ne_zero not_false_eq_true mul_inv_cancel₀
+
+-- Step, L04:
 attribute [game_simp] Matrix.cons_val_zero Matrix.cons_val_one Finsupp.coe_equivFunOnFinite_symm zero_smul zero_mul
 
--- Step, L06:
+-- Step, L07:
 attribute [game_simp] Pi.add_apply Pi.smul_apply smul_eq_mul
 
--- Step, L07:
+-- Step, L08:
 attribute [game_simp] Pi.add_apply Pi.smul_apply zero_add smul_eq_mul zero_sub mul_neg Pi.zero_apply
 
--- Step, L08:
+-- Step, L09:
 attribute [game_simp] neg_smul one_smul Pi.add_apply Pi.smul_apply smul_eq_mul Pi.neg_apply Pi.zero_apply
 
--- Step, L13:
+-- Step, L14:
 attribute [game_simp] Finset.sum_empty eq_self Finset.notMem_empty IsEmpty.forall_iff implies_true imp_self lt_add_iff_pos_right zero_lt_one and_self
 
 -- Vieta, L02_Function:

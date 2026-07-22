@@ -1,22 +1,34 @@
 import Game.Metadata
 
+
 World "Step"
 Level 6
 
 open Finsupp
 
-Statement :
-    let f : ℝ → ℝ := fun x ↦ x + 2
-    let g : ℝ → ℝ := fun x ↦ x - 3
-    linearCombination ℝ ![f, g] (equivFunOnFinite.symm ![2, 3]) =
-      fun x ↦ 5 * x - 5 := by
-  rw [linearCombination_apply]
-  rw [sum_fintype]
-  · rw [Fin.sum_univ_two]
+/- This level introduces `linearCombination`. -/
+
+/---/
+DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
+
+/---/
+TheoremDoc Finsupp.linearCombination_apply as "Finsupp.linearCombination_apply" in "LinearAlgebra"
+
+/---/
+TheoremDoc Finsupp.sum_fintype as "Finsupp.sum_fintype" in "LinearAlgebra"
+
+Statement : linearCombination ℝ ![2, (5 : ℝ)] (equivFunOnFinite.symm ![1, 2]) = 12 := by
+  Hint "[Hint lcapply] Unfold the linear combination with `linearCombination_apply` and
+    `Finsupp.sum_fintype`."
+  rw [linearCombination_apply, Finsupp.sum_fintype]
+  · Hint "[Hint lcsum2] Now it is a sum over `Fin 2`, remember the theorem in previous level."
+    rw [Fin.sum_univ_two]
     simp
-    funext x
-    simp
-    Hint "[Hint ringt]`ring` sees through the `let`-definitions of `f` and `g`,
-      so it can close the goal on its own."
     ring
-  · simp
+  · Hint (hidden := true) "[Hint lcside] Try `simp`."
+    simp
+
+NewDefinition Finsupp.linearCombination
+NewTheorem Finsupp.linearCombination_apply Finsupp.sum_fintype
+
+TheoremTab "LinearAlgebra"
