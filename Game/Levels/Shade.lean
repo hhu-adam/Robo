@@ -5,9 +5,10 @@ import Game.Levels.Shade.L04_ShadeSetNonempty
 import Game.Levels.Shade.L05_ShadeSetBddAbove
 import Game.Levels.Shade.L06_LtSSupShaders
 import Game.Levels.Shade.L07_ValLeValSSupShaders
-import Game.Levels.Shade.L08_InterValue
-import Game.Levels.Shade.L09_InterValueSymm
-import Game.Levels.Shade.L10_Boss
+import Game.Levels.Shade.L08_ValRightOfSSup
+import Game.Levels.Shade.L09_InterValue
+import Game.Levels.Shade.L10_InterValueSymm
+import Game.Levels.Shade.L11_Boss
 
 /-!
 The planet `Shade` is about the *Rising Sun Lemma* (Light and Shadow). It builds on

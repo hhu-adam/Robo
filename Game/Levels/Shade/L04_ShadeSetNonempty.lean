@@ -22,11 +22,6 @@ open Set FullGrind
 
 def Shaders (f : ℝ → ℝ) (c : ℝ) : Set ℝ := {t ∈ Set.Ioi c | f c ≤ f t}
 
-lemma lt_Shader (f : ℝ → ℝ) (c : ℝ) (s : ℝ) (hs : s ∈ Shaders f c) : c < s := by
-  unfold Shaders at hs
-  simp_log at hs
-  grind
-
 /-- `Shaders f c` is the set of `t` strictly larger than `c` such that `f c < f t`. -/
 DefinitionDoc Shaders as "Shaders" in "Shade"
 

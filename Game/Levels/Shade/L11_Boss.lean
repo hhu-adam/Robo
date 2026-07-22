@@ -1,7 +1,7 @@
-import Game.Levels.Shade.L09_InterValueSymm
+import Game.Levels.Shade.L10_InterValueSymm
 
 World "Shade"
-Level 10
+Level 11
 
 Title ""
 
@@ -57,8 +57,19 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
     /- Interesting case.  PART A:  Construction of d                    -/
     Hint "First, we prove that there is a `c ∈ Ioo a b`, such that `f c > f b`. "
     have hc : ∃ c ∈ Ioo a b, f c > f b := by
-      Hint "[Hint pbf] Remember the proof before." -- THIS SHOUD BE REPEATET!
-      apply exists_mem_Ioo_gt hf hab h_gt
+      Hint "[Hint pbf] Remember the proof before." -- THIS SHOUD BE REPEATET! *Resolved*
+      have h : Set.Ioo (f b) (f a) ⊆ f '' Set.Ioo a b := by
+        apply intermediate_value_Ioo'
+        · grind
+        · fun_prop
+      have hs : (Ioo (f b) (f a)).Nonempty := by
+        use (f b + f a) / 2
+        grind
+      obtain ⟨z, hz⟩ := hs
+      obtain h1 := h hz
+      choose x hx using h1
+      use x
+      grind
     obtain ⟨c, hc_mem, hfc⟩ := hc
     have h_ne : (Shaders f c).Nonempty := by
       Hint (hidden := true) "[Hint mwqb] Remember `shaders_nonempty`"
@@ -79,10 +90,13 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
     have d_le_b : d ≤ b := by
       apply csSup_le --(h₂ := hbd)
       · assumption
-      · -- OPTIONAL:
-        -- unfold upperBounds at hbd
-        -- OR:
-        -- rw [mem_upperBounds] at hbd
+      · Branch
+          rw [mem_upperBounds] at h_b
+          apply h_b
+          -- OPTIONAL:
+          -- unfold upperBounds at hbd
+          -- OR:
+          -- rw [mem_upperBounds] at hbd
         apply h_b
     have hfc_le_fd : f c ≤ f d := by              -- learlier LEVEL
       apply val_le_val_sSup_Shaders
@@ -99,14 +113,10 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
       grind
     /- ---------------------------------------------- -/
     /- PART C : d is in the Sun                       -/
-    have lt_aux : ∀ x, d < x  → f x ≤ f c := by -- another LEVEL about Shaders?
+    have lt_aux : ∀ x, d < x → f x ≤ f c := by -- another LEVEL about Shaders?
+      /- *Comment resolved(Wenrong):* make this as an additional level. -/
       intro x hx
-      have not_mem : x ∉ Shaders f c := by
-        apply notMem_of_csSup_lt                -- ADDITIONAL LEMMA used here!
-        · assumption
-        · assumption
-      unfold Shaders at not_mem
-      grind
+      apply val_le_of_sSup_Shaders_lt h_c h_bdd x hx    -- earlier LEVEL
     have : d ∈ Sun f := by
       simp_log [Sun]
       intro t ht
@@ -114,11 +124,3 @@ Statement (hf : Continuous f) (hab : a < b) (ha : a ∈ Sun f) (hb : b ∈ Sun f
     /- ---------------------------------------------- -/
     rw [← mem_Shade_iff_not_mem_Sun] at h_shade
     contradiction
-
-/-- -/
-TheoremDoc Set.sep_subset_setOf as "sep_subset_setOf" in "Set"
-
-/-- -/
-TheoremDoc notMem_of_csSup_lt as "notMem_of_csSup_lt" in "sSup"
-
-NewTheorem Set.sep_subset_setOf notMem_of_csSup_lt
