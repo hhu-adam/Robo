@@ -6,20 +6,14 @@ Level 4
 
 open Finsupp
 
-/- This level introduces `single`. -/
+/- This level introduces `equivFunOnFinite`. -/
 
 /---/
-DefinitionDoc Finsupp.single as "Finsupp.single" in "LinearAlgebra"
+DefinitionDoc Finsupp.equivFunOnFinite as "Finsupp.equivFunOnFinite" in "LinearAlgebra"
 
-/---/
-TheoremDoc Finsupp.linearCombination_single as "Finsupp.linearCombination_single" in "LinearAlgebra"
-
-Statement : linearCombination ℝ ![2, (5 : ℝ)] (single 0 1) = 2 := by
-  Hint (hidden := true) "[Hint lcsgle] Try to apply the theorem `linearCombination_single`."
-  rw [linearCombination_single]
+Statement : (equivFunOnFinite.symm ![1, (2 : ℝ)]) 0 = ![1, 2] 0 := by
   simp
 
-NewDefinition Finsupp.single
-NewTheorem Finsupp.linearCombination_single
+NewDefinition Finsupp.equivFunOnFinite
 
 TheoremTab "LinearAlgebra"

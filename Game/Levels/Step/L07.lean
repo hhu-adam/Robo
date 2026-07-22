@@ -1,25 +1,22 @@
 import Game.Metadata
 
-
 World "Step"
 Level 7
 
 open Finsupp
 
-/- This level shows a *dependent* pair: `g = 3 * f`, so `![f, g]` is **not**
-linearly independent. -/
-
 Statement :
     let f : ℝ → ℝ := fun x ↦ x + 2
-    let g : ℝ → ℝ := fun x ↦ 3 * x + 6
-    ¬ LinearIndependent ℝ ![f, g] := by
-  Hint "[Hint rmlIpiff] Remember `LinearIndependent.pair_iff`. "
-  rw [LinearIndependent.pair_iff]
-  intro H
-  have heq : (3 : ℝ) • f + (-1 : ℝ) • g = 0 := by
+    let g : ℝ → ℝ := fun x ↦ x - 3
+    linearCombination ℝ ![f, g] (equivFunOnFinite.symm ![2, 3]) =
+      fun x ↦ 5 * x - 5 := by
+  rw [linearCombination_apply]
+  rw [sum_fintype]
+  · rw [Fin.sum_univ_two]
+    simp
     funext x
-    simp [f, g]
+    simp
+    Hint "[Hint ringt]`ring` sees through the `let`-definitions of `f` and `g`,
+      so it can close the goal on its own."
     ring
-  grind
-
-TheoremTab "LinearAlgebra"
+  · simp

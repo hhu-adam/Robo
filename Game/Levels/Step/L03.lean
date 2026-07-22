@@ -4,31 +4,23 @@ import Game.Metadata
 World "Step"
 Level 3
 
-open Finsupp
+/- # Introduction
 
-/- This level introduces `linearCombination`. -/
+Besides adding vectors, we can *scale* them.  For a scalar `a : ℝ` and a vector
+`v : Fin n → ℝ`, the scalar multiple `a • v` is again a vector, defined coordinatewise by
+`(a • v) i = a * v i`.
 
-/---/
-DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
+The symbol `•` is written `\smul`.  Combined with addition, scaling lets us form
+*linear combinations* such as `a • v + b • w`, the central object of this world.
 
-/---/
-TheoremDoc Finsupp.linearCombination_apply as "Finsupp.linearCombination_apply" in "LinearAlgebra"
+-/
 
-/---/
-TheoremDoc Finsupp.sum_fintype as "Finsupp.sum_fintype" in "LinearAlgebra"
+open Real Function Set Finset
 
-Statement : linearCombination ℝ ![2, (5 : ℝ)] (equivFunOnFinite.symm ![1, 2]) = 12 := by
-  Hint "[Hint lcapply] Unfold the linear combination with `linearCombination_apply` and
-    `Finsupp.sum_fintype`."
-  rw [linearCombination_apply, Finsupp.sum_fintype]
-  · Hint "[Hint lcsum2] Now it is a sum over `Fin 2`, remember the theorem in previous level."
-    rw [Fin.sum_univ_two]
-    simp
-    ring
-  · Hint (hidden := true) "[Hint lcside] Try `simp`."
-    simp
-
-NewDefinition Finsupp.linearCombination
-NewTheorem Finsupp.linearCombination_apply Finsupp.sum_fintype
+Statement :
+    sqrt 2 • ![(sqrt 2)/2, 0] + sqrt 2 • ![0, (sqrt 2)/2] = ![1, 1] := by
+  simp
+  ring
+  simp
 
 TheoremTab "LinearAlgebra"

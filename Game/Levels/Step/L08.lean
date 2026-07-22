@@ -3,33 +3,30 @@ import Game.Metadata
 World "Step"
 Level 8
 
+open Finsupp
+
 /---/
-TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
+TheoremDoc LinearIndependent.pair_iff as "LinearIndependent.pair_iff" in "LinearAlgebra"
 
-Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b := by
-  Hint "[Hint indmin] `Finset.induction_on_min` is induction on a finite set:
-  prove the statement for `∅`, then show it survives inserting an element `a`
-  that is **smaller than everything** already present (`ha`). Template:
+/---/
+TheoremDoc linearIndependent_iff' as "linearIndependent_iff'" in "LinearAlgebra"
 
-  ```
-  induction s using Finset.induction_on_min
-  · sorry
-  · sorry
-  ```
+Statement :
+    let f : ℝ → ℝ := fun x ↦ x + 2
+    let g : ℝ → ℝ := fun x ↦ x - 3
+    LinearIndependent ℝ ![f, g] := by
+  Hint "[Hint lIpiff] Rewrite the goal with `LinearIndependent.pair_iff`: two
+    vectors are linearly independent iff `s • f + t • g = 0` forces
+    `s = 0 ∧ t = 0`."
+  rw [LinearIndependent.pair_iff]
+  intro s t h
+  Hint "[Hint apcongF] `h` is an equality of *functions* — evaluate it at `0`
+    and `1` with `congrFun`."
+  have h0 := congrFun h 0
+  have h1 := congrFun h 1
+  simp at h0 h1
+  grind
 
-  In the `insert` case, `a` is the witness you need."
-  Branch
-    induction s using Finset.induction_on_min with
-    | empty => contradiction
-    | insert a s ha ih =>
-      use a
-      grind
-  induction s using Finset.induction_on_min
-  · contradiction
-  · use a
-    grind
+NewTheorem LinearIndependent.pair_iff linearIndependent_iff'
 
-
-NewTheorem Finset.induction_on_min
-
-TheoremTab "Set"
+TheoremTab "LinearAlgebra"

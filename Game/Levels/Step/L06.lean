@@ -1,32 +1,34 @@
 import Game.Metadata
 
+
 World "Step"
 Level 6
 
 open Finsupp
 
-/---/
-TheoremDoc LinearIndependent.pair_iff as "LinearIndependent.pair_iff" in "LinearAlgebra"
+/- This level introduces `linearCombination`. -/
 
 /---/
-TheoremDoc linearIndependent_iff' as "linearIndependent_iff'" in "LinearAlgebra"
+DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
 
-Statement :
-    let f : ℝ → ℝ := fun x ↦ x + 2
-    let g : ℝ → ℝ := fun x ↦ x - 3
-    LinearIndependent ℝ ![f, g] := by
-  Hint "[Hint lIpiff] Rewrite the goal with `LinearIndependent.pair_iff`: two
-    vectors are linearly independent iff `s • f + t • g = 0` forces
-    `s = 0 ∧ t = 0`."
-  rw [LinearIndependent.pair_iff]
-  intro s t h
-  Hint "[Hint apcongF] `h` is an equality of *functions* — evaluate it at `0`
-    and `1` with `congrFun`."
-  have h0 := congrFun h 0
-  have h1 := congrFun h 1
-  simp at h0 h1
-  grind
+/---/
+TheoremDoc Finsupp.linearCombination_apply as "Finsupp.linearCombination_apply" in "LinearAlgebra"
 
-NewTheorem LinearIndependent.pair_iff linearIndependent_iff'
+/---/
+TheoremDoc Finsupp.sum_fintype as "Finsupp.sum_fintype" in "LinearAlgebra"
+
+Statement : linearCombination ℝ ![2, (5 : ℝ)] (equivFunOnFinite.symm ![1, 2]) = 12 := by
+  Hint "[Hint lcapply] Unfold the linear combination with `linearCombination_apply` and
+    `Finsupp.sum_fintype`."
+  rw [linearCombination_apply, Finsupp.sum_fintype]
+  · Hint "[Hint lcsum2] Now it is a sum over `Fin 2`, remember the theorem in previous level."
+    rw [Fin.sum_univ_two]
+    simp
+    ring
+  · Hint (hidden := true) "[Hint lcside] Try `simp`."
+    simp
+
+NewDefinition Finsupp.linearCombination
+NewTheorem Finsupp.linearCombination_apply Finsupp.sum_fintype
 
 TheoremTab "LinearAlgebra"

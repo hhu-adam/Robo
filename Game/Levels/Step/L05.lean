@@ -1,22 +1,23 @@
 import Game.Metadata
 
+
 World "Step"
 Level 5
 
 open Finsupp
 
-Statement :
-    let f : ℝ → ℝ := fun x ↦ x + 2
-    let g : ℝ → ℝ := fun x ↦ x - 3
-    linearCombination ℝ ![f, g] (equivFunOnFinite.symm ![2, 3]) =
-      fun x ↦ 5 * x - 5 := by
-  rw [linearCombination_apply]
-  rw [sum_fintype]
-  · rw [Fin.sum_univ_two]
-    simp
-    funext x
-    simp
-    Hint "[Hint ringt]`ring` sees through the `let`-definitions of `f` and `g`,
-      so it can close the goal on its own."
-    ring
-  · simp
+/- This level introduces `Fin.sum_univ_two`. -/
+
+/---/
+TheoremDoc Fin.sum_univ_two as "Fin.sum_univ_two" in "LinearAlgebra"
+
+Statement : ∑ i : Fin 2, ![3, (7 : ℝ)] i = 10 := by
+  Hint "[Hint fsuniv2] `Fin.sum_univ_two` rewrites a sum over `Fin 2` into its
+    two summands: `∑ i, f i = f 0 + f 1`."
+  rw [Fin.sum_univ_two]
+  simp
+  ring
+
+NewTheorem Fin.sum_univ_two
+
+TheoremTab "LinearAlgebra"
