@@ -27,7 +27,7 @@ Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :
   -- Hint (hidden := true) "
   --   **Fin**: Mach doch eine Fallunterscheidung, ob `{b} = a` ist oder nicht.
   --"
-  Hint (hidden := true) "Try proof by cases, if `{b} = a`"
+  Hint (hidden := true) (strict := true) "Try proof by cases, if `{b} = a`"
   Branch
     constructor
     -- Hint "**Fin**:  Ja, so kann man das angehen."
