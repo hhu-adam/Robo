@@ -30,6 +30,7 @@ import Game.Levels.Cafe
 
 import Game.Levels.Culmen
 import Game.Levels.Shade
+import Game.Levels.Slope
 
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
@@ -67,6 +68,8 @@ Dependency Euklid → Ciao
 
 /-! Build the game. Show's warnings if it found a problem with your game.
 
-(need to open all namespaces with local definitions) -/
--- open BigOperators in
+Need to open namespaces with local definitions and notation for the inventory to display correctly.
+-/
+-- open BigOperators
+open Topology in
 MakeGame
