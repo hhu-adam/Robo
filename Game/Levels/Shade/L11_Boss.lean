@@ -7,38 +7,8 @@ Title ""
 
 Introduction "Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).
 
-> Let `f : ℝ → ℝ` be a continuous function. If `a` and `c` with `a < c` are
-> themselves not shadow points, but every `s` between `a` and `c` is a shadow point, then `f a = f c`.
-
-In the game, `s ∈ Shade f` means exactly that `s` is a shadow point. The hypotheses say the open
-interval `(a, c)` consists entirely of shadow points while the endpoints `a` and `c` are not, and
-the goal is `f a = f c`.
-
-**The mathematical idea.** Compare `f a` and `f c` by trichotomy.
-
-* If `f a < f c`: then `c` itself is a point to the right of `a` with a larger value, so `a` would be
-  a shadow point — contradicting `a ∈ Sun f`.
-
-* If `f a = f c`: there is nothing to prove.
-
-* If `f a > f c`: we derive a contradiction. One can find a `b` between `a`
-  and `c` with `f b > f c`.   The set `Shaders f b` is non-empty, as `b` is in the shade,
-  and it is bounded above by `c`, since `c` is in the sun with value smaller than at `b`.
-  In particular, the supremum `s` of `Shaders f b` is `≤ c`.
-
-  Also, trivially/by some eralier lemma `b ≤ s` by earlier lemma, so we have $s ∈ Ioc a c$.
-
-  By definition of `Shaders f b`, for all points in `Shaders f b`, `f` takes a value at least `f b`.
-  Thus, by an an analogous argument to Boss of Aquarium, `f s ≥ f b`.
-  This implies, in particular, that `s ≠ c`.
-  So `d ∈ Ioo (a b)`.  By our assumptions, this implies that `d` is in the shade.
-
-  On the other hand, to the right of `d`, the function remains below `f c` – that is what `d` being
-  the supremum means.  A fortiori, given that `f d ≥ f c`, the function remains below `f c`.
-  So `d` is in the sun.
-
-  Contradiction.
-"
+> Let `f : ℝ → ℝ` be a continuous function. If `a` and `c` with `a < c` are in the sun,
+but every `b` between a and c is in the shade, then `f a = f c`."
 
 open Set FullGrind
 
@@ -55,14 +25,34 @@ Statement (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f
   · assumption
   · /- ---------------------------------------------------------------- -/
     /- Interesting case.  PART A:  Construction of s                    -/
-    Hint "First, we prove that there is a `b ∈ Ioo a c`, such that `f b > f c`. "
+    Hint "**The mathematical idea.**
+
+    We derive a contradiction. One can find a `b` between `a`  and `c` with `f b > f c`.
+    The set `Shaders f b` is non-empty, as `b` is in the shade,
+    and it is bounded above by `c`, since `c` is in the sun with value smaller than at `b`.
+    In particular, the supremum `s` of `Shaders f b` is `≤ c`.
+
+    Also, trivially/by some eralier lemma `b ≤ s` by earlier lemma, so we have `s ∈ Ioc a c`.
+
+    By definition of `Shaders f b`, for all points in `Shaders f b`, `f` takes a value at least `f b`.
+    Thus, by an an analogous argument to Boss of Aquarium, `f s ≥ f b`.
+    This implies, in particular, that `s ≠ c`.
+    So `s ∈ Ioo a c`.  By our assumptions, this implies that `s` is in the shade.
+
+    On the other hand, to the right of `s`, the function remains below `f b` – that is what `s` being
+    the supremum means.  A fortiori, given that `f s ≥ f b`, the function remains below `f s`.
+    So `s` is in the sun.  CONTRADICTION.
+
+    So: First, prove that there is some `b ∈ Ioo a c`, such that `f b > f c`."
     have this : ∃ b ∈ Ioo a c, f b > f c := by
       Hint "[Hint pbf] Remember the proof before."
-      apply exists_mem_Ioo_gt
+      apply exists_mem_Ioo_val_gt_right
       assumption
       grind
       grind
     obtain ⟨b, hb_mem, hfb⟩ := this
+    Hint "To construct the supremum of `Shaders f {b}`, you'll first want to show that the set
+      is non-empty and that b is an upper bound."
     have h_ne : (Shaders f b).Nonempty := by
       Hint (hidden := true) "[Hint mwqb] Remember `shaders_nonempty`"
       apply shaders_nonempty
@@ -73,16 +63,19 @@ Statement (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f
       apply upperBounds_Shaders hc hfb
     have h_bdd : BddAbove (Shaders f b) := by
       use c
+    Hint (strict := true) (hidden := true) "[Hint 60ivz] Suggestion: `let s := sSup (Shaders f b)`"
     let s := sSup (Shaders f b)
     /- ------------------------------------------------- -/
     /- PART B:  s is in the Shade                        -/
+    Hint (strict := true) (hidden := true) "[Hint umu4r] Suggestion: Work towards `{s} ∈ Shade f`
+      First establish `b ∈ Shade f`."
     have hb : b ∈ Shade f := by
       apply h_shade at hb_mem
       assumption
     have s_le_c : s ≤ c := by
       apply csSup_le
       · assumption
-        apply hc
+      apply hc
     have hfb_le_fs : f b ≤ f s := by
       apply val_le_val_sSup_Shaders               -- learlier LEVEL
       · fun_prop
@@ -97,14 +90,20 @@ Statement (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f
       apply h_shade
       grind
     /- ---------------------------------------------- -/
-    /- PART C : d is in the Sun                       -/
-    have lt_aux : ∀ x, s < x → f s ≤ f b := by
+    /- PART C : s is in the Sun                       -/
+    clear h_ne hc hb_mem hfb
+    Hint (hidden := true) "[Hint rsdov] Almost there …  You'll probably need
+      `val_le_of_sSup_Shaders_lt` to finish this."
+    have h_right_lt : ∀ t, s < t → f t ≤ f b := by
       intro x hx
-      apply val_le_of_sSup_Shaders_lt hb h_bdd x hx  -- earlier LEVEL
-    have : d ∈ Sun f := by
+      apply val_le_of_sSup_Shaders_lt
+      · assumption
+      · assumption
+      · grind
+    have : s ∈ Sun f := by
       simp [Sun]
       intro t ht
       grind
     /- ---------------------------------------------- -/
-    rw [← not_mem_Shade_iff_not_mem_Sun] at h_shade
+    rw [← not_mem_Shade_iff_mem_Sun] at this
     contradiction
