@@ -608,7 +608,7 @@ and `s` is assumed to be bounded above.
 -/
 DefinitionDoc SupSet.sSup as "sSup" in "sSup"
 
-/- For a subset `s` of a topological space, `closure s` denotes the closure of s.--/
+/-- For a subset `s` of a topological space, `closure s` denotes the closure of s.-/
 DefinitionDoc closure as "closure" in "Topology"
 
 
