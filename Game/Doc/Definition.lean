@@ -588,3 +588,38 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
+
+/--
+For a function `f`, `f : ℝ → ℝ`, and two points `x`, `y`, `x y : ℝ`,
+`slope f x y` is the slope of f between these points:
+$$
+\frac{f (x) - f (y)}{y - x}
+$$
+You can see this by `rw`ing with `slope_def_field` (`rw [slope_def_field]`).
+-/
+DefinitionDoc slope as "slope" in "Function"
+
+/-- For a function `f`, `f : ℝ → ℝ`,
+`Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
+in usual notation, $\lim_{x \to a} f(x) = b$.
+
+Combining `Tendsto` with the restricted neighborhoods gives the limit notions
+from calculus:
+
+* `Tendsto f (𝓝[≠] a) (𝓝 b)` only looks at points near `a` with `x ≠ a`,
+  so the value `f a` itself plays no role — this is the usual limit.
+* `Tendsto f (𝓝[>] a) (𝓝 b)` and `Tendsto f (𝓝[<] a) (𝓝 b)` describe the
+  one-sided limits from the right and from the left.
+
+To type the symbol `𝓝`, write `\nhds`.
+-/
+DefinitionDoc Filter.Tendsto as "Tendsto" in "Function"
+
+/--
+For a function `f`, `f : ℝ → ℝ`, a point `x`, `x : ℝ` and
+a number `a`, `a : ℝ`, `HasDerivAt f a x` means that the derivative of f at x is a.
+We would usually write something like $f'(x) = a$.
+You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_slope]`)
+to expand this into the usual definition of the derivative in terms of the `slope` of f.
+-/
+DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
