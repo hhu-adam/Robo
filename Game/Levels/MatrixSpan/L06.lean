@@ -1,0 +1,36 @@
+import Game.Metadata
+
+
+
+
+import Game.Levels.MatrixSpan.L05
+
+World "Span"
+Level 6
+
+Title "" -- "Span"
+
+/- # Introduction
+
+The universal property of the submodule `Submodule.span K S`  spanned by a set
+`S : Set M` is that `x ∈ Submodule.span K S` iff `x ∈ P` for any submodule `P`
+containing `S`.
+
+-/
+
+open Real Function Set Finset
+
+Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (M : Set V) {x y : V}
+    (h₁ : x ∈ M) (h₂ : y ∈ M) :
+    x + (2 : ℝ) • y ∈ Submodule.span ℝ M := by
+  apply add_mem
+  · apply Submodule.mem_span_of_mem
+    assumption
+  · apply Submodule.smul_mem
+    apply Submodule.mem_span_of_mem
+    assumption
+
+/---/
+TheoremDoc AddMemClass.add_mem as "AddMemClass.add_mem" in "LinearAlgebra"
+
+NewTheorem AddMemClass.add_mem

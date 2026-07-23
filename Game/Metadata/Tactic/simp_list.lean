@@ -88,6 +88,15 @@ attribute [game_simp] Finset.mem_sdiff Finset.mem_Icc zero_le true_and not_and n
 -- Luna, L10_Icc_subset_Icc_iff:
 attribute [game_simp] Finset.mem_Icc and_imp
 
+-- MatrixSpan, L01:
+attribute [game_simp] Fin.isValue Pi.add_apply Set.mem_setOf_eq Pi.zero_apply MulZeroClass.mul_zero sub_self eq_self Pi.smul_apply smul_eq_mul
+
+-- MatrixSpan, L03:
+attribute [game_simp] SetLike.mem_coe
+
+-- MatrixSpan, L09:
+attribute [game_simp] Matrix.single_apply_same Fin.mk_eq_zero Nat.add_eq_zero_iff one_ne_zero and_false and_self not_false_eq_true Matrix.single_apply_of_ne
+
 -- Mono, L01_Injective:
 attribute [game_simp] add_left_inj imp_self
 
