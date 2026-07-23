@@ -1,12 +1,12 @@
-import Game.Levels.Culmen.L06_Closure_minimal
+import Game.Levels.Aquarium.L06_Closure_minimal
 
-World "Culmen"
+World "Aquarium"
 Level 7
 
 Title ""
 
 Introduction
-"Intro Culmen 7: If the values of some continuous function `f` on a non-empty set `s` are bounded by
+"Intro Aquarium 7: If the values of some continuous function `f` on a non-empty set `s` are bounded by
  a constant `c`, then its value at the supremum of s is also bounded by c."
 
 open Set
@@ -49,7 +49,7 @@ Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f) (hne : s
     which is exactly the goal."
   apply h2 h1
 
-Conclusion "Conclusion Culmen L07: Combining all three theorems, the bound `f x ≤ c` on `s` passes
+Conclusion "Conclusion Aquarium L07: Combining all three theorems, the bound `f x ≤ c` on `s` passes
 to its supremum: `f (sSup s) ≤ c`."
 
 NewTheorem csSup_mem_closure

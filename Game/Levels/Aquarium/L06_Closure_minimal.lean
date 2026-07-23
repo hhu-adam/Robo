@@ -1,11 +1,11 @@
-import Game.Levels.Culmen.L05_IsClosed_le
+import Game.Levels.Aquarium.L05_IsClosed_le
 
-World "Culmen"
+World "Aquarium"
 Level 6
 
 Title ""
 
-Introduction "Intro Culmen L06"
+Introduction "Intro Aquarium L06"
 
 open Set
 
@@ -24,13 +24,10 @@ Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f)
   · assumption
   · fun_prop
 
-Conclusion "Conclusion Culmen L06: Since the target set is closed and contains `s`, it also contains
+Conclusion "Conclusion Aquarium L06: Since the target set is closed and contains `s`, it also contains
 `closure s`."
 
 NewTheorem closure_minimal
-
-/---/
-DefinitionDoc closure as "closure" in "Topology"
 NewDefinition closure
 
 TheoremTab "Topology"

@@ -1,11 +1,11 @@
-import Game.Levels.Culmen.L04_CsSup_le
+import Game.Levels.Aquarium.L04_CsSup_le
 
-World "Culmen"
+World "Aquarium"
 Level 5
 
 Title ""
 
-Introduction "Intro Culmen L04"
+Introduction "Intro Aquarium L04"
 
 open Set
 
@@ -25,14 +25,10 @@ Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x �
       which automatically proves such function properties."
     fun_prop
 
-Conclusion "Conclusion Culmen L05: `isClosed_le` turns a `≤` between continuous functions into a
+Conclusion "Conclusion Aquarium L05: `isClosed_le` turns a `≤` between continuous functions into a
 closed set."
 
-/-- `fun_prop` automatically discharges function-property goals such as `Continuous`,
-`Measurable`, or `Differentiable`. -/
-TacticDoc fun_prop
 NewTactic fun_prop
-
 NewTheorem isClosed_le
 
 TheoremTab "Topology"

@@ -12,7 +12,7 @@ import Game.Levels.Shade.L11_Boss
 
 /-!
 The planet `Shade` is about the *Rising Sun Lemma* (Light and Shadow). It builds on
-the bounds/suprema API developed on `Culmen`, introduces the `Shade`/`Sun` definitions
+the bounds/suprema API developed on `Aquarium`, introduces the `Shade`/`Sun` definitions
 and their API, applies the intermediate value theorem, and culminates in the boss theorem
 `f a = f b`.
 -/

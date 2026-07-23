@@ -1,9 +1,9 @@
 import Game.Metadata
 
-World "Culmen"
+World "Aquarium"
 Level 1
 
-Introduction "Intro Culmen L01: bounded above means having an upper bound."
+Introduction "Intro Aquarium L01: bounded above means having an upper bound."
 
 open Set FullGrind
 
@@ -20,4 +20,4 @@ Statement {s : Set ℝ} {b : ℝ} (hb : b ∈ upperBounds s) : BddAbove s := by
 NewDefinition upperBounds BddAbove
 
 
-Conclusion ""
+Conclusion "Conclusion Aquarium L01"

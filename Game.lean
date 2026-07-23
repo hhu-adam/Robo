@@ -28,7 +28,7 @@ import Game.Levels.Piazza
 
 import Game.Levels.Cafe
 
-import Game.Levels.Culmen
+import Game.Levels.Aquarium
 import Game.Levels.Shade
 import Game.Levels.Slope
 
@@ -56,7 +56,7 @@ Dependency Quantus → Piazza -- because of `∀`
 Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
 Dependency Vieta → Shade    -- because of `function`
-Dependency Culmen → Shade   -- Shade builds on the bounds/suprema API
+Dependency Aquarium → Shade   -- Shade builds on the bounds/suprema API
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao

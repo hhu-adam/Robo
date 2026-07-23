@@ -1,9 +1,9 @@
-import Game.Levels.Culmen.L01_UpperBounds
+import Game.Levels.Aquarium.L01_UpperBounds
 
-World "Culmen"
+World "Aquarium"
 Level 2
 
-Introduction "Intro Culmen L02"
+Introduction "Intro Aquarium L02"
 
 open Set FullGrind
 
@@ -26,4 +26,4 @@ Statement {a b : ℝ} {p : ℝ → Prop} :
 TheoremDoc bddAbove_def as "bddAbove_def" in "Set"
 NewTheorem bddAbove_def
 
-Conclusion ""
+Conclusion "Conclusion Aquarium L02"
