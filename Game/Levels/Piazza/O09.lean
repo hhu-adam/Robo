@@ -24,7 +24,7 @@ Statement (A B C : Set ℕ) :
   simp
   tauto
 
-/-- -/
+/---/
 DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 

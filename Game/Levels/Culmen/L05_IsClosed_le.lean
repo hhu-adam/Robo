@@ -5,13 +5,11 @@ Level 5
 
 Title ""
 
-Introduction
-"
-"
+Introduction "Intro Culmen L04"
 
 open Set
 
-/-- `isClosed_le (hf : Continuous f) (hg : Continuous g) : IsClosed {b | f b ≤ g b}` -/
+/---/
 TheoremDoc isClosed_le as "isClosed_le" in "Topology"
 
 Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x ≤ c} := by
@@ -27,8 +25,8 @@ Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x �
       which automatically proves such function properties."
     fun_prop
 
-Conclusion
-"Well done.  `isClosed_le` turns a `≤` between continuous functions into a closed set."
+Conclusion "Conclusion Culmen L05: `isClosed_le` turns a `≤` between continuous functions into a
+closed set."
 
 /-- `fun_prop` automatically discharges function-property goals such as `Continuous`,
 `Measurable`, or `Differentiable`. -/

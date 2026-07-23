@@ -5,13 +5,11 @@ Level 4
 
 Title ""
 
-Introduction
-"
-"
+Introduction "Intro Culmen L04"
 
 open Set FullGrind
 
-/-- `csSup_le (hne : s.Nonempty) (H : ∀ a ∈ s, a ≤ b) : sSup s ≤ b` -/
+/---/
 TheoremDoc csSup_le as "csSup_le" in "sSup"
 
 Statement {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (h : ∀ x ∈ s, x ≤ b) (hbc : b ≤ c) :
@@ -26,14 +24,8 @@ Statement {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (h : ∀ x ∈ s, x ≤ b
   obtain h2 := h _ h1
   grind
 
-Conclusion
-"Perfect.  `csSup_le` bounded the supremum from above by `b`, and one
-transitivity step pushed it up to `c`."
-/- COMMENT
-See comment in previous level.
-
-*Comment resolved (Wenrong):* add a mathematic hint above the hidden hint.
--/
+Conclusion "Conclusion Culmen L04: `csSup_le` bounded the supremum from above by `b`, and
+transitivity of `≤` pushed it up to `c`."
 
 NewTheorem csSup_le
 

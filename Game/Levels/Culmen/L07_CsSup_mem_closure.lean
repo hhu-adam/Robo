@@ -6,33 +6,24 @@ Level 7
 Title ""
 
 Introduction
-"[Intro]
- If the values of some continuous function `f` on a non-empty set `s` are bounded by a constant `c`,
- then the value its value of the supremum of the set is also bounded by the same constant.
-"
-/- COMMENT
-The intro should generally include some natural language summary of what the Statement says.
-Here, I've deliberately mentioned each of `f`, `s` and `c` *exactly once*, just to have them
-available as variables (§0: f, §1: s, §2: c) when writing the "translation".
--/
+"Intro Culmen 7: If the values of some continuous function `f` on a non-empty set `s` are bounded by
+ a constant `c`, then its value at the supremum of s is also bounded by c."
 
 open Set
 
-/-- `csSup_mem_closure (hs : s.Nonempty) (B : BddAbove s) : sSup s ∈ closure s` -/
+/---/
 TheoremDoc csSup_mem_closure as "csSup_mem_closure" in "Topology"
 
 Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f) (hne : s.Nonempty)
     (hbd : BddAbove s) (hs : s ⊆ {x | f x ≤ c}) : f (sSup s) ≤ c := by
   Hint "[Hint cssupcl] For a nonempty set bounded above, `sSup s` lies in the closure of
-    `s`.  That is `csSup_mem_closure`.
-    Formulate this separately with `have`."
+    `s`.  That is `csSup_mem_closure`.  Formulate this separately with `have`."
   Branch
-    /- TODO
-    Add some Hints to this alternative solution.
-    -/
     suffices : sSup s ∈ { x : ℝ | f x ≤ c }
     · simp at this
       assumption
+    Hint (hidden := true) (strict := true) "[Hint 9xyh5] If this is the route you want to take,
+      perhaps now establish `sSup s ∈ closure s` with `have`."
     have : sSup s ∈ closure s := by
       apply csSup_mem_closure
       assumption
@@ -46,19 +37,20 @@ Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f) (hne : s
     apply h_c at this
     assumption
   have h1 : sSup s ∈ closure s := csSup_mem_closure hne hbd
-  Hint "The closure of `s` is contained in the closed sublevel set `f x ≤ c` — combine
+  Hint (hidden := true) "The closure of `s` is contained in the closed sublevel set `f x ≤ c` — combine
     `closure_minimal` with `isClosed_le`."
   have h2 : closure s ⊆ {x | f x ≤ c} := by
+    Hint "[Hint w5pc3] Good intermediate statement to try to prove."
     apply closure_minimal hs
     apply isClosed_le
     · fun_prop
     · fun_prop
-  Hint "Now `h2 h1` says that `sSup s` lies in the sublevel set, which is exactly the goal."
+  Hint (hidden := true) "Now `h2 h1` says that `sSup s` lies in the sublevel set,
+    which is exactly the goal."
   apply h2 h1
 
-Conclusion
-"Excellent.  Combining all three theorems, the bound `f x ≤ c` on `s` passes to its
-supremum: `f (sSup s) ≤ c`."
+Conclusion "Conclusion Culmen L07: Combining all three theorems, the bound `f x ≤ c` on `s` passes
+to its supremum: `f (sSup s) ≤ c`."
 
 NewTheorem csSup_mem_closure
 

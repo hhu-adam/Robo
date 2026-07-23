@@ -33,6 +33,6 @@ Statement exists_mem_Ioo_gt' {f : ℝ → ℝ} {a b : ℝ} (hf : Continuous f) (
   use x
   grind
 
-/-- -/
+/---/
 TheoremDoc intermediate_value_Ioo as "intermediate_value_Ioo" in "Topology"
 NewTheorem intermediate_value_Ioo
