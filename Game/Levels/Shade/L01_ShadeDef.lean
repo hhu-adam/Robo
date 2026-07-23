@@ -22,32 +22,42 @@ open Set FullGrind
 
 def Shade (f : ℝ → ℝ) := {s : ℝ | ∃ t > s, f t > f s}
 def Sun (f : ℝ → ℝ) : Set ℝ := {s : ℝ | ∀ t > s, f t ≤ f s}
-
-/- COMMENT
-I'm trying to mimick the definitions & API of "odd" and "even" in Mathlib.
-
-*Comment resolved(Wenrong):* I think we should use the other direction, which is
-  `a ∉ Sun f ↔ a ∈ Shade f`. It's the right direction of simplification.
+/- TODO
+Should this be reformulated? "≤ and < are highly favored over ≥ and > in mathlib"
 -/
 
 /-- `Shade f` is the set of shade points of `f`: those `s` for which there exists some
-`t > s` with `f t > f s`. -/
+`t > s` with `f t > f s`.
+```
+Shade f := {s : ℝ | ∃ t > s, f t > f s}
+```
+-/
 DefinitionDoc Shade as "Shade" in "Shade"
 
-/-- `Sun f` is the set of sunny points of `f`: those `s` with with `f t ≤ f s` for all `t > s`. -/
+/-- `Sun f` is the set of sunny points of `f`: those `s` with with `f t ≤ f s` for all `t > s`.
+```
+Sun f := {s : ℝ | ∀ t > s, f t ≤ f s}
+```
+-/
 DefinitionDoc Sun as "Sun" in "Shade"
 
-/-- A point lies in the shade exactly when it is not a sunny point. -/
-TheoremDoc mem_Shade_iff_not_mem_Sun as "mem_Shade_iff_not_mem_Sun" in "Shade"
+/-- Not being in the sun means lying in the shade. -/
+TheoremDoc not_mem_Sun_iff_mem_Shade as "not_mem_Sun_iff_mem_Shade" in "Shade"
 
-Statement mem_Shade_iff_not_mem_Sun (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
+/- We're trying to mimick the Mathlib API for Odd and Even here, which includes the following two
+simp lemmas:
+`not_odd_iff_even`
+`not_even_iff_odd`
+-/
+
+Statement not_mem_Sun_iff_mem_Shade (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
   Hint "Both sides are set-builder memberships. Unfold them with `simp [Shade, Sun]` and let
   `simp` push the negation through the `∀`."
   simp [Shade, Sun]
 
-attribute [game_simp] mem_Shade_iff_not_mem_Sun
+attribute [game_simp] not_mem_Sun_iff_mem_Shade
 
-Conclusion "Conclusion Shade L01: saved as `mem_Shade_iff_not_mem_Sun`."
+Conclusion "Conclusion Shade L01: saved as `not_mem_Sun_iff_mem_Shade`."
 
 NewDefinition Shade Sun
 

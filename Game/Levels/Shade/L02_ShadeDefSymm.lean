@@ -18,8 +18,8 @@ open Set FullGrind
 TheoremDoc not_mem_Shade_iff_mem_Sun as "not_mem_Shade_iff_mem_Sun" in "Shade"
 
 Statement not_mem_Shade_iff_mem_Sun (f : ℝ → ℝ) (a : ℝ) : a ∉ Shade f ↔ a ∈ Sun f := by
-  Hint "Same recipe as last time: `simp [Shade, Sun]`. This time the negation has to pass
-  through an `∃`."
+  Hint (hidden := true) "Same recipe as last time: `simp [Shade, Sun]`. This time the negation
+  has to pass  through an `∃`."
   simp [Shade, Sun]
 
 attribute [game_simp] not_mem_Shade_iff_mem_Sun

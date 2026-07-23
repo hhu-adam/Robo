@@ -3,41 +3,38 @@ import Game.Levels.Shade.L04_ShadeSetNonempty
 World "Shade"
 Level 5
 
-Title "Bounded Above"
+Title ""
 
-Introduction "Intro Shade L10: a quick boundedness fact.
+Introduction "Intro Shade L05: a quick boundedness fact.
 
-To take the supremum `sSup (Shaders f c)`, we also need the set to be bounded above.  This is
-immediate: every element of `Shaders f c` lies in `Ioo c b`, hence is below `b`.
+To take the supremum `sSup (Shaders f b)`, we also need the set to be bounded above.
 "
 
 open Set FullGrind
 
-/-- If `b` lies in the sun, with value `f b < f c`, then `b` bounds `Shaders f c` from above.
+/-- If `c` is a sunny point with `f b < f c`, then `c` bounds `Shaders f b` from above.
 -/
 TheoremDoc upperBounds_Shaders as "shaders_bddAbove" in "Shade"
 
-Statement upperBounds_Shaders {f : ℝ → ℝ} {c b : ℝ} (h_b_sun : b ∈ Sun f) (h_b_val : f b < f c) :
-    b ∈ upperBounds (Shaders f c) := by
-  Hint "[Hint bbdshadeh] `b ∈ upperBounds (Shaders f c)` means that `b` is a concrete upper bound of
-    `Shaders f c`.  So the claim is:  `∀ y ∈ Shaders f c, y ≤ b`."
-  intro y hy
-  Hint "[Hint ufgrind] Now best distinguish the three cases `y ≤ b`, `y = b`,
-  `b ≤ y`"
+Statement upperBounds_Shaders {f : ℝ → ℝ} {b c : ℝ} (hc : c ∈ Sun f) (hfc : f c < f b) :
+    c ∈ upperBounds (Shaders f b) := by
+  Hint "[Hint bbdshadeh] `c ∈ upperBounds (Shaders f b)` means that `c` is a concrete upper bound of
+    `Shaders f b`.  So the claim is:  `∀ t ∈ Shaders f b, t ≤ b`."
+  intro t ht
+  Hint "[Hint ufgrind] Now best distinguish the three cases `t < c`, `t = c`,`c < t`"
   Hint (hidden := true) "[Hint xpkm] Remember `lt_trichotomy`"
-  obtain h | h | h := lt_trichotomy y b
+  obtain h | h | h := lt_trichotomy t c
   · grind
   · grind
-  · have : b ∈ Shade f
-    · use y
-      simp [Shade] at h_b_sun
-      simp [Shaders] at hy
+  · have : c ∈ Shade f
+    · use t
+      simp [Shade] at hc
+      simp [Shaders] at ht
       grind
-    rw [← mem_Shade_iff_not_mem_Sun] at this
+    rw [← not_mem_Sun_iff_mem_Shade] at this
     contradiction
 
-
-Conclusion "Conclusion Shade L10: saved as `upperBounds_Shaders`."
+Conclusion "Conclusion Shade L05: saved as `upperBounds_Shaders`."
 
 
 TheoremTab "Shade"

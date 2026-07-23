@@ -3,18 +3,18 @@ import Game.Levels.Shade.L03_MemSun
 World "Shade"
 Level 4
 
-Title "The Set Below the Sup"
+Title ""
 
-Introduction "Intro Shade L09: introduce the working set.
+Introduction "Intro Shade L04: introduce the working set.
 
-Fix two points `c` and `b`.  We study the set of points strictly between `c` and `b` at which `f`
-rises above `f c`:
+Fix a point `b`.  We study the set of points to the right of b at which `f`
+rises above `f b`:
 
 ```
-Shaders f c := {t ∈ Set.Ioi c | f c ≤ f t}
+Shaders f b := {t ∈ Set.Ioi b | f b ≤ f t}
 ```
 
-Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming `b` is
+Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming b is
 not a shadow point, `f b < f c`, and `c` itself is a shadow point, you show the set is nonempty.
 "
 
@@ -29,21 +29,18 @@ DefinitionDoc Shaders as "Shaders" in "Shade"
 is nonempty. -/
 TheoremDoc shaders_nonempty as "shaders_nonempty" in "Shade"
 
-Statement shaders_nonempty {f : ℝ → ℝ} {c : ℝ}
-    (hc_shade : c ∈ Shade f) : (Shaders f c).Nonempty := by
-  Hint "Because `c` is a shadow point, there is some `t₀ > c` with `f t₀ > f c`. Unpack it with
-  `obtain ⟨t₀, ht₀_gt, ht₀_f⟩ := hc_shade`."
-  obtain ⟨t₀, ht₀_gt, ht₀_f⟩ := hc_shade
-  Hint "The only thing left to check is that this `t₀` lies below `b`. Compare `t₀` with `b` by
-  trichotomy; the cases `t₀ = b` and `t₀ > b` both contradict the hypotheses."
-  use t₀
+Statement shaders_nonempty {f : ℝ → ℝ} {b : ℝ}
+    (hb : b ∈ Shade f) : (Shaders f b).Nonempty := by
+  Hint "Because `b` is in the shade, there is some `t > b` with `f t > f b`"
+  Hint (hidden := true) "[Hint 7xd8e] Unpack `b ∈ Shade f` with `obtain ⟨t, …, …⟩ := hb`."
+  obtain ⟨t, _, _⟩ := hb
+  Hint (hidden := true) "[Hint eymq5] Now `use` `t`."
+  use t
   unfold Shaders
   grind
 
 
-
-
-Conclusion "Conclusion Shade L09: saved as `shaders_nonempty`."
+Conclusion "Conclusion Shade L04: saved as `shaders_nonempty`."
 
 NewDefinition Shaders
 

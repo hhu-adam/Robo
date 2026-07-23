@@ -30,11 +30,11 @@ without hints on purpose, so the player practises the same argument unaided.
 
 open Set FullGrind
 
--- /-- If `f` is continuous on `[a, b]` with `a < b` and `f a > f b`, then there is some
--- `s ∈ Ioo a b` with `f s > f b`. -/
--- TheoremDoc exists_mem_Ioo_gt as "exists_mem_Ioo_gt" in "Shade"
+/-- If `f` is continuous on `[a, b]` with `a < b` and `f a > f b`, then there is some
+`s ∈ Ioo a b` with `f s > f b`. -/
+TheoremDoc exists_mem_Ioo_gt as "exists_mem_Ioo_gt" in "Shade"
 
-Statement {f : ℝ → ℝ} {a b : ℝ} (hf : Continuous f) (hab : a < b)
+Statement exists_mem_Ioo_gt {f : ℝ → ℝ} {a b : ℝ} (hf : Continuous f) (hab : a < b)
     (h_lt : f b < f a) : ∃ s ∈ Ioo a b, f s > f b := by
   Hint "[Hint ivIoo] Perhaps, you should first prove `Set.Ioo (f b) (f a) ⊆ f '' Set.Ioo a b`."
   have h : Set.Ioo (f b) (f a) ⊆ f '' Set.Ioo a b := by
