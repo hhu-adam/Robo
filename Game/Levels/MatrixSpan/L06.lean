@@ -3,6 +3,8 @@ import Game.Metadata
 
 
 
+import Game.Levels.MatrixSpan.L05
+
 World "Span"
 Level 6
 
@@ -10,32 +12,25 @@ Title "" -- "Span"
 
 /- # Introduction
 
+The universal property of the submodule `Submodule.span K S`  spanned by a set
+`S : Set M` is that `x ∈ Submodule.span K S` iff `x ∈ P` for any submodule `P`
+containing `S`.
+
 -/
 
 open Real Function Set Finset
 
-Statement (M : Type*) [AddCommMonoid M] [Module ℝ M] (S : Submodule ℝ M) (x : M) (r : ℝ)
-    (hr : r ≠ 0) : r • x ∈ S ↔ x ∈ S := by
-  --apply Submodule.smul_mem_iff
-  --assumption
-  constructor
-  · intro hrxS
-    rw [← inv_smul_smul (Units.mk0 r hr) x]
-    apply Submodule.smul_mem
-    apply hrxS
-  · intro hxS
-    --simpa using (Submodule.smul_mem S r hxS)
-    apply Submodule.smul_mem
+Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (M : Set V) {x y : V}
+    (h₁ : x ∈ M) (h₂ : y ∈ M) :
+    x + (2 : ℝ) • y ∈ Submodule.span ℝ M := by
+  apply add_mem
+  · apply Submodule.mem_span_of_mem
+    assumption
+  · apply Submodule.smul_mem
+    apply Submodule.mem_span_of_mem
     assumption
 
 /---/
-TheoremDoc Submodule.smul_mem as "Submodule.smul_mem" in "LinearAlgebra"
+TheoremDoc AddMemClass.add_mem as "AddMemClass.add_mem" in "LinearAlgebra"
 
-/---/
-TheoremDoc inv_smul_smul as "inv_smul_smul" in "LinearAlgebra"
-
-/---/
-DefinitionDoc Units.mk0 as "Units.mk0" in "LinearAlgebra"
-
-NewTheorem Submodule.smul_mem inv_smul_smul
-NewDefinition Units.mk0
+NewTheorem AddMemClass.add_mem

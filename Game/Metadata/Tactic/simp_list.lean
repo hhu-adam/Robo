@@ -88,22 +88,13 @@ attribute [game_simp] Finset.mem_sdiff Finset.mem_Icc zero_le true_and not_and n
 -- Luna, L10_Icc_subset_Icc_iff:
 attribute [game_simp] Finset.mem_Icc and_imp
 
--- MatrixSpan, L02:
-attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd one_div Fin.zero_eta Fin.isValue Pi.add_apply Matrix.cons_val_zero Fin.mk_one Matrix.cons_val_one Matrix.cons_val_fin_one
-
--- MatrixSpan, L03:
-attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd Matrix.smul_cons smul_eq_mul MulZeroClass.mul_zero Matrix.smul_empty Matrix.add_cons Matrix.head_cons add_zero Matrix.tail_cons zero_add Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true and_self Nat.ofNat_nonneg Real.sq_sqrt one_div ne_eq OfNat.ofNat_ne_zero not_false_eq_true mul_inv_cancel₀
-
--- MatrixSpan, L04:
-attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd Matrix.smul_cons nsmul_eq_mul Nat.cast_ofNat smul_neg Matrix.smul_empty Matrix.neg_cons neg_add_rev neg_sub Matrix.neg_empty Fin.isValue Pi.add_apply Matrix.cons_val_zero Matrix.cons_val_one Matrix.cons_val_fin_one
-
--- MatrixSpan, L05:
+-- MatrixSpan, L01:
 attribute [game_simp] Fin.isValue Pi.add_apply Set.mem_setOf_eq Pi.zero_apply MulZeroClass.mul_zero sub_self eq_self Pi.smul_apply smul_eq_mul
 
--- MatrixSpan, L07:
+-- MatrixSpan, L03:
 attribute [game_simp] SetLike.mem_coe
 
--- MatrixSpan, L13:
+-- MatrixSpan, L09:
 attribute [game_simp] Matrix.single_apply_same Fin.mk_eq_zero Nat.add_eq_zero_iff one_ne_zero and_false and_self not_false_eq_true Matrix.single_apply_of_ne
 
 -- Mono, L01_Injective:

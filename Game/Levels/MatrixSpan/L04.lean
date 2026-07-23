@@ -10,32 +10,31 @@ Title "" -- "Span"
 
 /- # Introduction
 
+The universal property of the submodule `Submodule.span K S`  spanned by a set
+`S : Set M` is that `x ∈ Submodule.span K S` iff `x ∈ P` for any submodule `P`
+containing `S`.
 
 -/
 
 open Real Function Set Finset
 
-Statement {a b : ℝ} (h : 2 • ![a, -b] + - ![a + b, a - b] = ![0, 0]) :
-    a = 0 ∧ b = 0 := by
-  have := congr_fun h
-  have h₀ := this 0
-  have h₁ := this 1
-  simp at h₀ h₁
-  grind
+/---/
+TheoremDoc Submodule.subset_span as "Submodule.subset_span" in "LinearAlgebra"
 
-  -- old proof below, break now.
-  -- simp at h
-  -- conv at h =>
-  --   lhs
-  --   ring
-  -- --constructor
-  -- -- …
-  -- apply congr_fun at h
-  -- have h₁ : a - b = 0 := h 0
-  -- have h₂ : -a - b = 0 := h 1
-  -- rw [eq_of_sub_eq_zero h₁] at *
-  -- have : - b = 0 := by
-  --   apply add_self_eq_zero.mp at h₂
-  --   exact h₂
-  -- simp only [and_self]
-  -- apply neg_eq_zero.mp this
+Statement Submodule.subset_span {R : Type} {M : Type} [Semiring R]
+    [AddCommMonoid M] [Module R M] {S : Set M} :
+    S ⊆ ↑(Submodule.span R S) := by
+  intro x hxS
+  simp [Submodule.mem_span]
+  intro P hP
+  apply hP hxS
+
+/---/
+TheoremDoc Submodule.mem_span as "Submodule.mem_span" in "LinearAlgebra"
+
+/-- `Submodule.span R S` is the smallest submodule containing the set `S`. -/
+DefinitionDoc Submodule.span as "Submodule.span" in "LinearAlgebra"
+
+NewTheorem Submodule.mem_span
+NewDefinition Submodule.span
+TheoremTab "LinearAlgebra"

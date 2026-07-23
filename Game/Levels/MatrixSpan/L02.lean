@@ -1,31 +1,29 @@
 import Game.Metadata
 
-
-
-
 World "Span"
 Level 2
 
-Title "" -- "Span"
+Title "Scaling Distributes"
 
-/- # Introduction
+Introduction "The other rule you will use constantly: scaling **distributes** over vector
+addition.  Scaling the sum `x + y` by `a` is the same as scaling each piece and then adding:
 
-Since vectors are functions, we define their addition pointwise.
+`a • (x + y) = a • x + a • y`.
 
--/
+This is `smul_add`.  Together with `two_smul` from the previous level, these are the only module
+facts you need to get started.
+"
 
 open Real Function Set Finset
 
-Statement : ![(sqrt 3)/2, 1/2] + ![-(sqrt 3)/2, 1/2] = ![0, 1] := by
-  Branch
-    simp
-    ring
-  funext i
-  fin_cases i <;>
-  simp <;>
-  ring
+/-- `smul_add` : scaling distributes over addition, `a • (x + y) = a • x + a • y`. -/
+TheoremDoc smul_add as "smul_add" in "LinearAlgebra"
 
-/---/
-TacticDoc fin_cases
+Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (a : ℝ) (x y : V) :
+    a • (x + y) = a • x + a • y := by
+  Hint "Rewrite with `smul_add`, or close it directly with `exact smul_add a x y`."
+  rw [smul_add]
 
-NewTactic fin_cases
+NewTheorem smul_add
+
+TheoremTab "LinearAlgebra"

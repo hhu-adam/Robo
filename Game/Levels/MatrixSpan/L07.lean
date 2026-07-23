@@ -3,6 +3,8 @@ import Game.Metadata
 
 
 
+import Game.Levels.MatrixSpan.L05
+
 World "Span"
 Level 7
 
@@ -18,19 +20,18 @@ containing `S`.
 
 open Real Function Set Finset
 
-/---/
-TheoremDoc Submodule.subset_span as "Submodule.subset_span" in "LinearAlgebra"
+Statement {n : ℕ} (A : Mat[n,n][ℝ]) : A * A ∈ Submonoid.powers A := by
+  use 2
+  simp
+  rw [pow_two]
 
-Statement Submodule.subset_span {R : Type} {M : Type} [Semiring R]
-    [AddCommMonoid M] [Module R M] {S : Set M} :
-    S ⊆ ↑(Submodule.span R S) := by
-  intro x hxS
-  simp [Submodule.mem_span]
-  intro P hP
-  apply hP hxS
 
 /---/
-TheoremDoc Submodule.mem_span as "Submodule.mem_span" in "LinearAlgebra"
+TheoremDoc pow_two as "pow_two" in "+ *"
 
-NewTheorem Submodule.mem_span
+/-- `Submonoid.powers A` is the submonoid of all powers `A ^ n` of `A`. -/
+DefinitionDoc Submonoid.powers as "Submonoid.powers" in "LinearAlgebra"
+
+NewTheorem pow_two
+NewDefinition Submonoid.powers
 TheoremTab "LinearAlgebra"

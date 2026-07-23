@@ -10,23 +10,21 @@ Title "" -- "Span"
 
 /- # Introduction
 
+The universal property of the submodule `Submodule.span K S`  spanned by a set
+`S : Set M` is that `x ∈ Submodule.span K S` iff `x ∈ P` for any submodule `P`
+containing `S`.
+
 -/
 
 open Real Function Set Finset
 
-example : Submodule ℝ (Fin 2 → ℝ) where
-  carrier := {v : Fin 2 → ℝ | 3 * v 0 - v 1 = 0  }  -- { (![x, y] : Fin 2 → ℝ) | 3 * x - y = 0 } -- -- --
-  add_mem' := by
-    intro a b ha hb
-    rw [mem_setOf] at *
-    simp
-    grind
-    -- rw [mul_add]
-    -- linear_combination ha + hb
-  zero_mem' := by
-    simp
-  smul_mem' := by
-    intro c x hx
-    simp at *
-    -- rw [← sub_eq_zero.mp hx]
-    grind
+/---/
+TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAlgebra"
+
+Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
+    [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
+    x ∈ Submodule.span K M := by
+  apply Submodule.subset_span
+  assumption
+
+TheoremTab "LinearAlgebra"

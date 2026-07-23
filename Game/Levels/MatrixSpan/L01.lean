@@ -1,29 +1,33 @@
 import Game.Metadata
 
-
-
-
 World "Span"
 Level 1
 
-Title "" -- "Span"
+Title "Scaling Vectors"
 
-/- # Introduction
+Introduction "Welcome to *Span*.
 
-An `n`-dimensional vector is nothing but a function out of `Fin n`. For instance
-a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
-`x i : ℝ`.
-We represent such a vector as `![x_1, …, x_n]`.
+The mathematical stage for this world is a **module** (over `ℝ`, a *vector space*).  You don't
+need any theory: a module `V` is simply a collection of **vectors** that you can
 
-Under the hood, `![a, b, c]` is syntax for `vecCons a (vecCons b (vecCons c vecEmpty))`.
-where `Matrix.vecCons : α → (Fin n → α) → Fin (Nat.succ n) → α`
+* **add** together (`x + y`), and
+* **scale** by a real number (`a • x`, where `a : ℝ`).
 
-Counter-intuitively, the empty vector is quite important in Lean since ultimately every
-vector is built up from it.
-
--/
+The symbol `•` is written `\\smul`.  Scaling interacts with addition exactly the way you would hope.
+As a first taste: scaling a vector by `2` is the same as adding it to itself.  That fact is called
+`two_smul`.
+"
 
 open Real Function Set Finset
 
-Statement (a b c : ℝ) : ![a,b,c] 0 + ![a,b,c] 1 = a + b := by
-  rfl
+/-- `two_smul` : scaling a vector by `2` gives `x + x`, i.e. `(2 : ℝ) • x = x + x`. -/
+TheoremDoc two_smul as "two_smul" in "LinearAlgebra"
+
+Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (x : V) :
+    (2 : ℝ) • x = x + x := by
+  Hint "This is exactly what `two_smul` says. Rewrite with it using `rw [two_smul]`."
+  rw [two_smul]
+
+NewTheorem two_smul
+
+TheoremTab "LinearAlgebra"

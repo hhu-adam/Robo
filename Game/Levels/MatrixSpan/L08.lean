@@ -3,6 +3,8 @@ import Game.Metadata
 
 
 
+import Game.Levels.MatrixSpan.L05
+
 World "Span"
 Level 8
 
@@ -19,12 +21,20 @@ containing `S`.
 open Real Function Set Finset
 
 /---/
-TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAlgebra"
+TheoremDoc powers_commute as "powers_commute" in "LinearAlgebra"
 
-Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
-    [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
-    x ∈ Submodule.span K M := by
-  apply Submodule.subset_span
-  assumption
+Statement powers_commute {n : ℕ} {A : Mat[n,n][ℝ]} (X Y : Mat[n,n][ℝ])
+    (hX : X ∈ Submonoid.powers A) (hY : Y ∈ Submonoid.powers A) : X * Y = Y * X := by
+  rw [Submonoid.mem_powers_iff] at *
+  obtain ⟨m, rfl⟩ := hX
+  obtain ⟨n, rfl⟩ := hY
+  rw [← pow_add, ← pow_add, add_comm]
 
+/---/
+TheoremDoc pow_add as "pow_add" in "+ *"
+
+/---/
+TheoremDoc Submonoid.mem_powers_iff as "Submonoid.mem_powers_iff" in "LinearAlgebra"
+
+NewTheorem pow_add Submonoid.mem_powers_iff
 TheoremTab "LinearAlgebra"
