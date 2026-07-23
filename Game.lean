@@ -64,6 +64,8 @@ Dependency Euklid → Ciao
 
 /-! Build the game. Show's warnings if it found a problem with your game.
 
-(need to open all namespaces with local definitions) -/
--- open BigOperators in
+Need to open namespaces with local definitions and notation for the inventory to display correctly.
+-/
+-- open BigOperators
+open Topology in
 MakeGame

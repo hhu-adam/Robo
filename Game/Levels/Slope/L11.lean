@@ -14,39 +14,35 @@ Statement (c : ℝ) :
     `hasDerivAt_iff_tendsto_slope`."
   by_contra h
   rw [hasDerivAt_iff_tendsto_slope] at h
-  /- TODO:
-    Put some encouraing hints in this level.
-    Perhaps list of have statements in natural luangage?
-    And at the beginning of the proof of each have statement,
-    a hint saying "you're on track"
-    *Resolved*
-  -/
   Hint (hidden := true) "[Hint ftys1] First, try to prove that `c = 1`. "
   have e₁ : c = 1 := by
     have hc : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 c) := by
+      Hint (hidden := true) "[Hint y8g14] Good intermediate step"
       apply h.mono_left
       apply nhdsWithin_mono
       grind
-    have slope_pos : ∀ x ∈ Set.Ioi 0, 1 = slope f 0 x := by
+    have pos_slope : ∀ x ∈ Set.Ioi 0, 1 = slope f 0 x := by
+      Hint (hidden := true) "[Hint bp7a2] Good intermediate step"
       intro y hy
       rw [slope_def_field]
       grind
     have h1 : Tendsto (slope f 0) (𝓝[>] 0) (𝓝 1) := by
-      apply tendsto_nhdsWithin_congr slope_pos
+      Hint (hidden := true) "[Hint s9i5u] Good intermediate step"
+      apply tendsto_nhdsWithin_congr pos_slope
       apply tendsto_const_nhds
     apply tendsto_nhds_unique hc h1
-  Hint "[Hint ftysn1] Perfect! You're on track. Now, you can also prove that `c = -1` by similar process."
+  Hint "[Hint ftysn1] Perfect! You're on track. Now, you can prove `c = -1` by similar process."
   have e₂ : c = -1 := by
     have hc : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 c) := by
       apply h.mono_left
       apply nhdsWithin_mono
       grind
-    have slope_neg : ∀ x ∈ Set.Iio 0, -1 = slope f 0 x := by
+    have neg_slope : ∀ x ∈ Set.Iio 0, -1 = slope f 0 x := by
       intro y hy
       rw [slope_def_field]
       grind
     have h1 : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 (-1)) := by
-      apply tendsto_nhdsWithin_congr slope_neg
+      apply tendsto_nhdsWithin_congr neg_slope
       apply tendsto_const_nhds
     apply tendsto_nhds_unique hc h1
   grind

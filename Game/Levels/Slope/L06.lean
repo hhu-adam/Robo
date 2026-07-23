@@ -16,12 +16,6 @@ So:
    `𝓝 a`    – same as `𝓝[univ] a`
 "
 
-/- TODO
-  Introduced notation for set complements on Piazza!
-  (We intially had it in there, but I think it has gone lost. Here we need it.)
-  *Resolved*
--/
-
 Statement : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
   Hint "[Hint nwln] Remember `nhdsWithin_mono` from Cafe.  To apply it here, first establish
     `𝓝 (0 : ℝ) = 𝓝[univ] 0` with `have`, then `rw` using this equality."

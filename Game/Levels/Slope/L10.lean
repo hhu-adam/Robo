@@ -12,9 +12,6 @@ TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Fu
 /---/
 TheoremDoc tendsto_nhdsWithin_congr as "tendsto_nhdsWithin_congr" in "Function"
 
-/---/
-DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
-
 Statement {x : ℝ} :
     let f : ℝ → ℝ := fun x ↦ x ^ 2
     HasDerivAt f (2 * x) x  := by
