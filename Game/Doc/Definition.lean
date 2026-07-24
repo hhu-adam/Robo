@@ -590,6 +590,29 @@ For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivale
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
 
 /--
+Given a subset `s` of a set `T` (`s : Set T`) and an element `b` of T (`b : T`),
+`b ∈ upperBounds s` means that b is an *upper bound* of s: `s ≤ b` for every element
+of s.
+-/
+DefinitionDoc upperBounds as "upperBounds" in "Set"
+
+/--
+For subset `s` of a set `T` (`s : Set T`), `BddAbove s` means that
+there exists some `b` in T (`b : T`) such that `b ∈ upperBounds s`.
+-/
+DefinitionDoc BddAbove as "BddAbove" in "Set"
+
+/--
+`sSup s` is the supremum of `s`.  Here `s` is a subset of some ordered set `T` (`s : Set T`),
+and `s` is assumed to be bounded above.
+-/
+DefinitionDoc SupSet.sSup as "sSup" in "sSup"
+
+/-- For a subset `s` of a topological space, `closure s` denotes the closure of s.-/
+DefinitionDoc closure as "closure" in "Topology"
+
+
+/--
 For a function `f`, `f : ℝ → ℝ`, and two points `x`, `y`, `x y : ℝ`,
 `slope f x y` is the slope of f between these points:
 $$

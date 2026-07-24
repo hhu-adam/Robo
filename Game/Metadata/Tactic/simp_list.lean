@@ -190,6 +190,18 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
 
+-- Shade, L01_ShadeDef:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq Classical.not_forall Classical.not_imp not_le iff_self exists_prop
+
+-- Shade, L02_ShadeDefSymm:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq not_exists not_and not_lt iff_self
+
+-- Shade, L03_MemSun:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
+
+-- Shade, L11_Boss:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
+
 -- Slope, L06:
 attribute [game_simp] nhdsWithin_univ eq_self
 
