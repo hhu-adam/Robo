@@ -629,3 +629,9 @@ The tactic `tauto` proves logical tautologies.
 Sometimes the proof target must first be abstracted with `generalize` so that `tauto` recognizes the tautology.
 -/
 TacticDoc tauto
+
+/--
+The tactic `fun_prop` automatically discharges function-property goals such as `Continuous`,
+`Measurable`, or `Differentiable`.
+-/
+TacticDoc fun_prop

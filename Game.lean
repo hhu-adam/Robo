@@ -28,6 +28,8 @@ import Game.Levels.Piazza
 
 import Game.Levels.Cafe
 
+import Game.Levels.Aquarium
+import Game.Levels.Shade
 import Game.Levels.Slope
 
 -- *uncomment the following line to get the incomplete planets.*
@@ -51,8 +53,10 @@ CoverImage "images/Cover.png"
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
 Dependency Quantus → Piazza -- because of `∀`
 -- Dependency Quantus → Cafe -- because of `ring`
-Dependency Prado → Mono     -- beclause of `∃!`
+Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
+Dependency Vieta → Shade    -- because of `function`
+Dependency Aquarium → Shade   -- Shade builds on the bounds/suprema API
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
