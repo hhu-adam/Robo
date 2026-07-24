@@ -124,6 +124,9 @@ attribute [game_simp] Set.mem_inter_iff Set.mem_setOf_eq Set.mem_empty_iff_false
 -- Piazza, L06_Ext2__univ2:
 attribute [game_simp] Set.mem_diff Set.mem_univ Set.mem_inter_iff not_and true_and Set.mem_union
 
+-- Piazza, L07_compl_even:
+attribute [game_simp] Set.mem_compl_iff Set.mem_setOf_eq Nat.not_even_iff_odd iff_self
+
 -- Piazza, L10:
 attribute [game_simp] Set.mem_insert_iff Set.mem_singleton_iff Set.singleton_union Set.mem_setOf_eq
 
@@ -186,6 +189,9 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
+
+-- Slope, L06:
+attribute [game_simp] nhdsWithin_univ eq_self
 
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
