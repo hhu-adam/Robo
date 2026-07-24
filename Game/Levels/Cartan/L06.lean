@@ -5,17 +5,20 @@ Level 6
 
 open Topology Filter
 
-/-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
-from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
-`p x` follows pointwise from the `pᵢ x`. -/
-TacticDoc filter_upwards
-
 Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
     f =ᶠ[𝓝 a] g := by
-  have : ∀ᶠ x in 𝓝 a, x < 0 := by
+  Hint (strict := true) "[Hint fjpr0] First establish `∀ᶠ x in 𝓝 a, x < 0` with `have`."
+  have h : ∀ᶠ x in 𝓝 a, x < 0 := by
     apply eventually_lt_nhds ha
-  filter_upwards [this]
+  Hint "[Hint 4j4cl] Try `filter_upwards [{h}]`."
+  filter_upwards [h]
   assumption
+
+Conclusion "Conclusion Cartan L06:  What does `filter_upwards` do?
+Suppose we have an eventual hypothesis `h₁ : ∀ᶠ x in 𝓕, p₁ x`
+and an eventual goal `∀ᶠ x in 𝓕, p x`.
+Then `filter_upwards [h₁]'` reduces the goal to the point-wise implication `p₁ x → p x`."
+
 
 NewTactic filter_upwards
 NewHiddenTactic «in»
