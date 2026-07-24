@@ -4,22 +4,30 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 9
 
-open Filter Topology
+open Filter Topology FullGrind
 
 /---/
-TheoremDoc Filter.eventually_iff as "Filter.eventually_iff"
+TheoremDoc Filter.Eventually.exists as "Filter.Eventually.exists"
 
 /---/
-TheoremDoc inv_lt_inv₀ as "inv_lt_inv₀"
+TheoremDoc inv_lt_zero as "inv_lt_zero"
 
-Statement :  ∀ᶠ x in atTop, (fun (x : ℝ) ↦ 1/x) x < 1 / 5 := by
-  rw [eventually_iff]
-  apply Filter.mem_of_superset (Filter.mem_atTop 6)
-  intro x hx
-  simp at hx ⊢
-  rw [inv_lt_inv₀]
-  · grind
-  · grind
-  · grind
+Statement : ¬ ( ∀ᶠ x in 𝓝[≠] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5) := by
+  intro h
+  have h' : ∀ᶠ x in 𝓝[<] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
+    apply h.filter_mono
+    apply nhdsWithin_mono
+    grind
+  have : ∀ᶠ (x : ℝ) in 𝓝[<] 0, (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
+    apply eventually_and.mpr
+    constructor
+    · assumption
+    · apply eventually_mem_nhdsWithin
+  have exist_aux : ∃ (x : ℝ), (fun (x : ℝ) ↦ 1 / x) x > 5 ∧ x ∈ Set.Iio 0 := by
+    apply this.exists
+  obtain ⟨x, hx5, hxneg⟩ := exist_aux
+  simp at hxneg
+  obtain h := inv_lt_zero.mpr hxneg
+  grind
 
-NewTheorem Filter.eventually_iff inv_lt_inv₀
+NewTheorem Filter.Eventually.exists inv_lt_zero

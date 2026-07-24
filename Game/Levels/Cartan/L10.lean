@@ -4,11 +4,22 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 10
 
-open Topology Filter
+open Filter Topology
 
-Statement {g₁ g₂ g₃ : ℝ → ℝ} {x : ℝ} {f : Filter ℝ}
-    (h1 : g₁ =ᶠ[f] g₂) (h2 : g₂ =ᶠ[f] g₃) : g₁ =ᶠ[f] g₃ := by
-  /- Althought we can prove this statement by h1.trans h2. -/
-  filter_upwards [h1, h2]
-  intro y hy1 hy2
-  rw [hy1, hy2]
+/---/
+TheoremDoc Filter.eventually_iff as "Filter.eventually_iff"
+
+/---/
+TheoremDoc inv_lt_inv₀ as "inv_lt_inv₀"
+
+Statement :  ∀ᶠ x in atTop, (fun (x : ℝ) ↦ 1/x) x < 1 / 5 := by
+  rw [eventually_iff]
+  apply Filter.mem_of_superset (Filter.mem_atTop 6)
+  intro x hx
+  simp at hx ⊢
+  rw [inv_lt_inv₀]
+  · grind
+  · grind
+  · grind
+
+NewTheorem Filter.eventually_iff inv_lt_inv₀

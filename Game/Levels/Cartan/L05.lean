@@ -5,18 +5,14 @@ Level 5
 
 open Topology Filter
 
-/-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
-from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
-`p x` follows pointwise from the `pᵢ x`. -/
-TacticDoc filter_upwards
+/---/
+TheoremDoc eventually_lt_nhds as "eventually_lt_nhds"
 
-Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
-    f =ᶠ[𝓝 a] g := by
-  have : ∀ᶠ x in 𝓝 a, x < 0 := by
-    apply eventually_lt_nhds ha
-  filter_upwards [this]
+Statement {a : ℝ} (hab : a < 0) :
+    ∀ᶠ x in 𝓝 a, x < 0 := by
+  Hint "[Hint zntfk] For a filter `𝓕`, `∀ᶠ x in 𝓕, p x` says that `p x` holds *eventually*,
+  i.e. the set `\{ x | p x}` is a member of 𝓕."
+  apply eventually_lt_nhds
   assumption
 
-NewTactic filter_upwards
-NewHiddenTactic «in»
-NewDefinition Filter.EventuallyEq
+NewTheorem eventually_lt_nhds
