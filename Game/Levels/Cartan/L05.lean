@@ -5,9 +5,6 @@ Level 5
 
 open Topology Filter
 
-/-- `f =ᶠ[l] g` says that `f x = g x` eventually along the filter `l`. -/
-DefinitionDoc Filter.EventuallyEq as "=ᶠ"
-
 /-- `filter_upwards [h₁, …, hₙ]` proves a goal of the form `∀ᶠ x in f, p x`
 from hypotheses `hᵢ : ∀ᶠ x in f, pᵢ x`: it reduces the goal to showing that
 `p x` follows pointwise from the `pᵢ x`. -/
