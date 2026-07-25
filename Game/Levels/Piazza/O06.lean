@@ -27,7 +27,7 @@ Statement Set.eq_empty_iff_forall_notMem {A : Type} (s : Set A) :
     ext i
     tauto
 
-/-- -/
+/---/
 DefinitionDoc Set.empty as "∅" in "Set"
 
 NewDefinition Set.empty

@@ -63,5 +63,8 @@ Statement {A : Type} (n : ℕ) :
   Du könntest sie auf einem Element aus `Fin (n + 1)` auswerten. Vielleicht hilft `congr_fun` in irgendeiner Form?"
   -/
   Hint (hidden := true) "Remind that 'tuples' `diag {a₁}` and `diag {a₂}` are two mappings `Fin (n + 1) → A`.
-  Evaluate them on elements from `Fin (n + 1)`. Try `congr_fun`"
-  apply congr_fun h 0
+    Evaluate them on elements from `Fin (n + 1)`. Try `congr_fun`"
+  Branch
+    -- old proof.
+    apply congr_fun h 0
+  grind
