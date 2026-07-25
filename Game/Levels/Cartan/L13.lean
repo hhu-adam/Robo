@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib.Topology.LocallyConstant.Basic
 
 World "Cartan"
 Level 13
