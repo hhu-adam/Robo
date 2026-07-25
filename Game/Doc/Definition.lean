@@ -611,6 +611,10 @@ DefinitionDoc SupSet.sSup as "sSup" in "sSup"
 /-- For a subset `s` of a topological space, `closure s` denotes the closure of s.-/
 DefinitionDoc closure as "closure" in "Topology"
 
+/-- `IsLocallyConstant f` says that every point has a neighborhood on which `f` is
+constant; it is defined as: the preimage of every set under `f` is open. -/
+DefinitionDoc IsLocallyConstant as "IsLocallyConstant" in "Function"
+
 /-- A *filter* `𝓕` on a type `α` is a collection of subsets of α that
 - is closed under intersection (`Filter.inter_mem`),
 - is upward closed (`Filter.mem_of_superset`), and

@@ -8,10 +8,10 @@ open Topology Filter
 Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
     f =ᶠ[𝓝 a] g := by
   Hint (strict := true) "[Hint fjpr0] First establish `∀ᶠ x in 𝓝 a, x < 0` with `have`."
-  have h : ∀ᶠ x in 𝓝 a, x < 0 := by
+  have h_even : ∀ᶠ x in 𝓝 a, x < 0 := by
     apply eventually_lt_nhds ha
-  Hint "[Hint 4j4cl] Try `filter_upwards [{h}]`."
-  filter_upwards [h]
+  Hint "[Hint 4j4cl] Try `filter_upwards [{h_even}]`."
+  filter_upwards [h_even]
   assumption
 
 Conclusion "Conclusion Cartan L06:  What does `filter_upwards` do?

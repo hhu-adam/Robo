@@ -15,17 +15,16 @@ Here you show that a locally constant function is *eventually* equal to its
 value at `x`, for the neighborhood filter `𝓝 x`.
 "
 
-/-- `IsLocallyConstant f` says that every point has a neighborhood on which `f` is
-constant; it is defined as: the preimage of every set under `f` is open. -/
-DefinitionDoc IsLocallyConstant as "IsLocallyConstant"
+-- /---/
+-- TheoremDoc IsLocallyConstant.eventually_eq as "IsLocallyConstant.eventually_eq"
 
-/---/
-TheoremDoc IsLocallyConstant.eventually_eq as "IsLocallyConstant.eventually_eq"
-
-Statement IsLocallyConstant.eventually_eq {f : ℝ → ℝ} {x : ℝ}
+Statement {f : ℝ → ℝ} {x : ℝ}
     (hf : IsLocallyConstant f) : ∀ᶠ y in 𝓝 x, f y = f x := by
+  Hint (strict := true) "[Hint pissfx] The preimage of single point set \{f x} is open."
+  Hint (hidden := true) "[Hint hpissfx] Establish `IsOpen (f ⁻¹' \{f x})` by `have`."
   have h : IsOpen (f ⁻¹' {f x}) := by
     apply hf
+  Hint "[Hint tfuiem] Try `filter_upwards [IsOpen.eventually_mem {h} rfl]`"
   filter_upwards [IsOpen.eventually_mem h rfl]
   intro y hy
   assumption

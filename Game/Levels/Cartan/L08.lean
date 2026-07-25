@@ -4,41 +4,28 @@ import Mathlib.Topology.LocallyConstant.Basic
 World "Cartan"
 Level 8
 
-open Filter Topology Set
+open Filter Topology
 
 /---/
-TheoremDoc Filter.eventually_and as "Filter.eventually_and"
+TheoremDoc Filter.eventually_iff as "Filter.eventually_iff"
 
 /---/
-TheoremDoc eventually_mem_nhdsWithin as "eventually_mem_nhdsWithin"
+TheoremDoc inv_lt_inv₀ as "inv_lt_inv₀"
 
-/---/
-TheoremDoc Filter.Eventually.filter_mono as "Filter.Eventually.filter_mono"
-
-/---/
-TheoremDoc nhdsWithin_le_nhds as "nhdsWithin_le_nhds"
-
-/---/
-TheoremDoc lt_inv_comm₀ as "lt_inv_comm₀"
-
-Statement : ∀ᶠ x in 𝓝[>] (0 : ℝ), (fun (x : ℝ) ↦ 1/x) x > 5 := by
-  have h : (0 : ℝ) < 1/5 := by grind
-  have hx :  ∀ᶠ (x : ℝ) in 𝓝[>] 0, x ∈ Set.Ioi 0 ∧ x < 1 / 5 := by
-    apply eventually_and.mpr
-    constructor
-    · apply eventually_mem_nhdsWithin
-    · suffices : ∀ᶠ (x : ℝ) in 𝓝 0, x < 1 / 5
-      · apply this.filter_mono
-        apply nhdsWithin_le_nhds
-      · apply eventually_lt_nhds h
-  filter_upwards [hx]
-  intro x ⟨hx1, hx2⟩
-  simp at hx1
-  simp at hx2 ⊢
-  rw [lt_inv_comm₀]
-  · assumption
+Statement :  ∀ᶠ (x : ℝ) in atTop, 1 / x < 1 / 5 := by
+  Hint "[Hint zntfk] For a filter `𝓕`, `∀ᶠ x in 𝓕, p x` says that `p x` holds *eventually*,
+  i.e. the set `\{ x | p x}` is a member of 𝓕. You can do it by `rw`ing with
+  `eventually_iff`."
+  rw [eventually_iff]
+  Hint "Second filter axiom says filter is upward closed (`Filter.mem_of_superset`)."  -- A
+  Hint (hidden := true) "[Hint fmt6] Note that `\{x | 6 ≤ x}` is a subset of left hand side."
+  apply Filter.mem_of_superset (Filter.mem_atTop 6)
+  intro x hx
+  simp at hx ⊢
+  Hint "[Hint ilinv] Note that `inv_lt_inv₀` is useful here."
+  rw [inv_lt_inv₀]
+  · grind
   · grind
   · grind
 
-NewTheorem Filter.eventually_and eventually_mem_nhdsWithin Filter.Eventually.filter_mono
-  nhdsWithin_le_nhds lt_inv_comm₀
+NewTheorem Filter.eventually_iff inv_lt_inv₀
