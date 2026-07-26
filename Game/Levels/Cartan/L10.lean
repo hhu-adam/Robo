@@ -5,11 +5,8 @@ Level 10
 
 open Filter Topology Set
 
-/---/
-TheoremDoc nhdsWithin_le_nhds as "nhdsWithin_le_nhds"
+Introduction "Intro Cartan L10 (Boss level)"
 
-/---/
-TheoremDoc lt_inv_comm₀ as "lt_inv_comm₀"
 
 Statement : ∀ᶠ x in 𝓝[>] (0 : ℝ), 1 / x > 5 := by
   Hint (strict := true) "[Hint c10hx] First, establish `∀ᶠ (x : ℝ) in 𝓝[>] 0, x ∈ Set.Ioi 0 ∧ x < 1 / 5` by `have`."
@@ -41,5 +38,3 @@ Statement : ∀ᶠ x in 𝓝[>] (0 : ℝ), 1 / x > 5 := by
   · assumption
   · grind
   · grind
-
-NewTheorem nhdsWithin_le_nhds lt_inv_comm₀

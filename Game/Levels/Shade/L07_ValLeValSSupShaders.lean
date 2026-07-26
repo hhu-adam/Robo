@@ -27,12 +27,12 @@ TheoremDoc val_le_val_sSup_Shaders as "val_le_val_sSup_Shaders" in "Shade"
 Statement val_le_val_sSup_Shaders {f : ℝ → ℝ} {hf : Continuous f} {b : ℝ} (hb : b ∈ Shade f)
     (hs : BddAbove (Shaders f b)) :
     f b ≤ f (sSup (Shaders f b)) := by
-  Hint "State the containment that makes the argument work: `Shaders f b` is contained in the set
-    of points `t` where `f b ≤ f t`."
+  Hint (strict := true) "State the containment that makes the argument work: `Shaders f b` is
+    contained in the set of points `t` where `f b ≤ f t`."
   have h_sub : Shaders f b ⊆ {t | f b ≤ f t} := by
     unfold Shaders
     grind
-  Hint "`closure_minimal` upgrades that to a statement about the closure — it leaves you with
+  Hint "`closure_minimal` upgrades `{h_sub}` to a statement about the closure — it leaves you with
     two goals: the right-hand set is closed, and the supremum lies in the closure."
   apply closure_minimal h_sub
   have := lt_sSup_Shaders hb hs
