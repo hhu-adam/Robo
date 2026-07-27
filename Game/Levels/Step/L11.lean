@@ -3,6 +3,8 @@ import Game.Metadata
 World "Step"
 Level 11
 
+open FullGrind
+
 /---/
 TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
 

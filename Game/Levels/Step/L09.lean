@@ -4,7 +4,7 @@ import Game.Metadata
 World "Step"
 Level 9
 
-open Finsupp
+open Finsupp FullGrind
 
 /- This level shows a *dependent* pair: `g = 3 * f`, so `![f, g]` is **not**
 linearly independent. -/

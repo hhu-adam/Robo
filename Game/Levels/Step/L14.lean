@@ -4,7 +4,7 @@ import Game.Metadata
 World "Step"
 Level 14
 
-open Finset
+open Finset FullGrind
 
 Introduction "For every real number `a` we define the *step function*
 
