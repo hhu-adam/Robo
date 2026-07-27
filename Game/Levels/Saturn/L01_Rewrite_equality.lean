@@ -41,4 +41,3 @@ Conclusion "
   "
 -/
 Conclusion "Conclusion Saturn L01"
-#min_imports
