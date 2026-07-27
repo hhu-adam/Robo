@@ -3,6 +3,8 @@ import Game.Metadata
 
 
 
+import Game.Levels.MatrixSpan.L04
+
 World "Span"
 Level 5
 
@@ -18,13 +20,17 @@ containing `S`.
 
 open Real Function Set Finset
 
+Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (M : Set V) {x y : V}
+    (h₁ : x ∈ M) (h₂ : y ∈ M) :
+    x + (2 : ℝ) • y ∈ Submodule.span ℝ M := by
+  apply add_mem
+  · apply Submodule.mem_span_of_mem
+    assumption
+  · apply Submodule.smul_mem
+    apply Submodule.mem_span_of_mem
+    assumption
+
 /---/
-TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAlgebra"
+TheoremDoc AddMemClass.add_mem as "AddMemClass.add_mem" in "LinearAlgebra"
 
-Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
-    [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
-    x ∈ Submodule.span K M := by
-  apply Submodule.subset_span
-  assumption
-
-TheoremTab "LinearAlgebra"
+NewTheorem AddMemClass.add_mem

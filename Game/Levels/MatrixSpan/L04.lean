@@ -19,22 +19,12 @@ containing `S`.
 open Real Function Set Finset
 
 /---/
-TheoremDoc Submodule.subset_span as "Submodule.subset_span" in "LinearAlgebra"
+TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAlgebra"
 
-Statement Submodule.subset_span {R : Type} {M : Type} [Semiring R]
-    [AddCommMonoid M] [Module R M] {S : Set M} :
-    S ⊆ ↑(Submodule.span R S) := by
-  intro x hxS
-  simp [Submodule.mem_span]
-  intro P hP
-  apply hP hxS
+Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
+    [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
+    x ∈ Submodule.span K M := by
+  apply Submodule.subset_span
+  assumption
 
-/---/
-TheoremDoc Submodule.mem_span as "Submodule.mem_span" in "LinearAlgebra"
-
-/-- `Submodule.span R S` is the smallest submodule containing the set `S`. -/
-DefinitionDoc Submodule.span as "Submodule.span" in "LinearAlgebra"
-
-NewTheorem Submodule.mem_span
-NewDefinition Submodule.span
 TheoremTab "LinearAlgebra"

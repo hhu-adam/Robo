@@ -7,7 +7,6 @@ import Game.Levels.MatrixSpan.L06
 import Game.Levels.MatrixSpan.L07
 import Game.Levels.MatrixSpan.L08
 import Game.Levels.MatrixSpan.L09
-import Game.Levels.MatrixSpan.L10
 
 World "Span"
 Title "Span"

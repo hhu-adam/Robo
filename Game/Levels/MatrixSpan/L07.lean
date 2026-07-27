@@ -3,7 +3,7 @@ import Game.Metadata
 
 
 
-import Game.Levels.MatrixSpan.L05
+import Game.Levels.MatrixSpan.L04
 
 World "Span"
 Level 7
@@ -20,18 +20,21 @@ containing `S`.
 
 open Real Function Set Finset
 
-Statement {n : ℕ} (A : Mat[n,n][ℝ]) : A * A ∈ Submonoid.powers A := by
-  use 2
-  simp
-  rw [pow_two]
+/---/
+TheoremDoc powers_commute as "powers_commute" in "LinearAlgebra"
 
+Statement powers_commute {n : ℕ} {A : Mat[n,n][ℝ]} (X Y : Mat[n,n][ℝ])
+    (hX : X ∈ Submonoid.powers A) (hY : Y ∈ Submonoid.powers A) : X * Y = Y * X := by
+  rw [Submonoid.mem_powers_iff] at *
+  obtain ⟨m, rfl⟩ := hX
+  obtain ⟨n, rfl⟩ := hY
+  rw [← pow_add, ← pow_add, add_comm]
 
 /---/
-TheoremDoc pow_two as "pow_two" in "+ *"
+TheoremDoc pow_add as "pow_add" in "+ *"
 
-/-- `Submonoid.powers A` is the submonoid of all powers `A ^ n` of `A`. -/
-DefinitionDoc Submonoid.powers as "Submonoid.powers" in "LinearAlgebra"
+/---/
+TheoremDoc Submonoid.mem_powers_iff as "Submonoid.mem_powers_iff" in "LinearAlgebra"
 
-NewTheorem pow_two
-NewDefinition Submonoid.powers
+NewTheorem pow_add Submonoid.mem_powers_iff
 TheoremTab "LinearAlgebra"
