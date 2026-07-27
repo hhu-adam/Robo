@@ -677,3 +677,15 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/-- Let `R` be a semiring, `Polynomial R` is the type of polynomials with
+coefficients in `R`, denoted as `R[X]`. Its elements are formal expressions in the variable
+`X`, such as `X ^ 2 + 1`. -/
+DefinitionDoc Polynomial as "Polynomial"
+
+/-- `X : R[X]` is the polynomial variable (the identity polynomial). -/
+DefinitionDoc Polynomial.X as "X"
+
+/-- `p.eval a` evaluates the polynomial `p` at the point `a`, substituting
+`a` for the variable `X`. -/
+DefinitionDoc Polynomial.eval as "eval"

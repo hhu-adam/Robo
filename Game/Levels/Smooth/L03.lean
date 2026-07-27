@@ -9,11 +9,13 @@ open Real Filter Topology
 
 noncomputable section
 
-Introduction "
+Introduction " Intro Smooth L03:
 Meet the star of this world: the *smooth take-off function*
-`f x = if x ≤ 0 then 0 else exp (-x⁻¹)`. It is flat `0` on the left and rises as
-`exp (-x⁻¹)` on the right — the seam at `0` is where all the interesting
-smoothness happens.
+$$
+f(x) = \\begin{cases} 0 & \\text{if } x \\le 0 \\\\ e^{-1/x} & \\text{if } x > 0 \\end{cases}
+$$
+It is flat `0` on the left and rises as `exp (-x⁻¹)` on the right — the seam at `0`
+is where all the interesting smoothness happens.
 
 Start with the easy half: on the non-positive axis `f` is simply `0`.
 "
@@ -26,6 +28,10 @@ TheoremDoc zero_of_nonpos as "zero_of_nonpos"
 
 /- On the non-positive axis the take-off function is `0`. -/
 Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
-  Hint "[Hint znp] Unfold `f`; the hypothesis `hx : x ≤ 0` selects the `then`
-    branch. `simp [f, hx]` does both at once."
+  Hint "[Hint znp] This is just follows by definition."
+  Branch
+    unfold f
+    Hint "[Hint smth3ts] Use `{hx}` to simplify the goal."
+    simp [hx]
+  Hint (hidden := true) "[Hint smthts3] Simplify the goal with input `{hx}`."
   simp [f, hx]
