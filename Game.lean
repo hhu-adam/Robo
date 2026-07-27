@@ -29,9 +29,9 @@ import Game.Levels.Piazza
 import Game.Levels.Cafe
 
 import Game.Levels.Cartan
-
+import Game.Levels.Aquarium
+import Game.Levels.Shade
 import Game.Levels.Slope
-
 import Game.Levels.Smooth
 
 -- *uncomment the following line to get the incomplete planets.*
@@ -55,8 +55,12 @@ CoverImage "images/Cover.png"
 /-! If you need to add manual dependencies in your planet graph, you can do so here: -/
 Dependency Quantus → Piazza -- because of `∀`
 -- Dependency Quantus → Cafe -- because of `ring`
-Dependency Prado → Mono     -- beclause of `∃!`
+Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
+Dependency Vieta → Shade    -- because of `function`
+
+Dependency Vieta → Aquarium -- because of `function`
+Dependency Vieta → Cartan   -- because of `function`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
@@ -71,6 +75,8 @@ Dependency Cartan → Smooth -- because of `eventually_lt_nhds` / `=ᶠ`
 
 /-! Build the game. Show's warnings if it found a problem with your game.
 
-(need to open all namespaces with local definitions) -/
--- open BigOperators in
+Need to open namespaces with local definitions and notation for the inventory to display correctly.
+-/
+-- open BigOperators
+open Topology in
 MakeGame

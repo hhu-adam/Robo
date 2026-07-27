@@ -40,16 +40,13 @@ A mapping `f` is strictly monotonous, if:
 DefinitionDoc StrictMono as "StrictMono" in "Function"
 
 
-/-- `Function.RightInverse f g` is defined as `LeftInverse g f`.
+/-- `RightInverse f g` is defined as `LeftInverse g f`.
 In other words: `∀ x, g (f x) = x`.
-
-You have to write `Function.RightInverse`  instead of `RightInverse`,
-as `RightInverse` is ambigous in Leanic.
 -/
 DefinitionDoc Function.RightInverse as "RightInverse" in "Function"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
--- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
-
+-- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigated this.
+-- UPDATE 27.07.2026:  This does not seem to be the case anymore, so we can now just write RightInverse.
 
 /--
 `LeftInverse g f` means `g ∘ f = id`, or more exactly:
@@ -83,6 +80,12 @@ For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their unio
 `∪` is written as `\\union`.
 -/
 DefinitionDoc Set.union as "∪" in "Set"
+
+/--
+For subsets `A` of `S` (i.e. `A : Set S`), `Aᶜ` is the complement.
+`ᶜ` is written as `\\compl` or `\\^c`.
+-/
+DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
@@ -582,3 +585,95 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
+
+/--
+Given a subset `s` of a set `T` (`s : Set T`) and an element `b` of T (`b : T`),
+`b ∈ upperBounds s` means that b is an *upper bound* of s: `s ≤ b` for every element
+of s.
+-/
+DefinitionDoc upperBounds as "upperBounds" in "Set"
+
+/--
+For subset `s` of a set `T` (`s : Set T`), `BddAbove s` means that
+there exists some `b` in T (`b : T`) such that `b ∈ upperBounds s`.
+-/
+DefinitionDoc BddAbove as "BddAbove" in "Set"
+
+/--
+`sSup s` is the supremum of `s`.  Here `s` is a subset of some ordered set `T` (`s : Set T`),
+and `s` is assumed to be bounded above.
+-/
+DefinitionDoc SupSet.sSup as "sSup" in "sSup"
+
+/-- For a subset `s` of a topological space, `closure s` denotes the closure of s.-/
+DefinitionDoc closure as "closure" in "Topology"
+
+/-- `IsLocallyConstant f` says that every point has a neighborhood on which `f` is
+constant; it is defined as: the preimage of every set under `f` is open. -/
+DefinitionDoc IsLocallyConstant as "IsLocallyConstant" in "Function"
+
+/-- A *filter* `𝓕` on a type `α` is a collection of subsets of α that
+- is closed under intersection (`Filter.inter_mem`),
+- is upward closed (`Filter.mem_of_superset`), and
+- contains `univ` (`Filter.univ_mem`),
+
+
+An intuition is to think of 𝓕 as a *generalized point*:
+it collects all the sets that contain this (would-be) point.
+
+One example is the *neighborhood filter* `𝓝 a` of a real number `a`, `a : ℝ`:
+it consists of all sets that contain every number sufficiently close to a, and so describes the
+point a together with its immediate surroundings.
+-/
+DefinitionDoc Filter as "Filter"
+
+/-- The *principal filter* `𝓟 s` of a set `s` consists of all sets containing `s`. -/
+DefinitionDoc Filter.principal as "𝓟" in "Filter"
+
+/-- `atTop` is the filter on `ℝ` consisting of all sets that contain every sufficiently large
+number — sets that contain all `x ≥ b` for some bound `b`.
+Think of it as the generalized point 'at infinity'. -/
+DefinitionDoc Filter.atTop as "atTop" in "Filter"
+
+/-- For a function `f`, `f : ℝ → ℝ`,
+`Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
+in usual notation, $\lim_{x \to a} f(x) = b$.
+
+Combining `Tendsto` with the restricted neighborhoods gives the limit notions
+from calculus:
+
+* `Tendsto f (𝓝[≠] a) (𝓝 b)` only looks at points near `a` with `x ≠ a`,
+  so the value `f a` itself plays no role — this is the usual limit.
+* `Tendsto f (𝓝[>] a) (𝓝 b)` and `Tendsto f (𝓝[<] a) (𝓝 b)` describe the
+  one-sided limits from the right and from the left.
+
+To type the symbol `𝓝`, write `\nhds`.
+-/
+DefinitionDoc Filter.Tendsto as "Tendsto" in "Filter"
+
+/-- For a filter `𝓕`, `∀ᶠ x in 𝓕, p x` says that `p x` holds eventually,
+i.e. the set `{x | p x}` is a member of 𝓕. -/
+DefinitionDoc Filter.Eventually as "∀ᶠ" in "Filter"
+
+/-- For a filter `𝓕`, `f =ᶠ[𝓕] g` says that `f x = g x` eventually,
+i.e. the set `{ x | f x = g x}` is a member of 𝓕.-/
+DefinitionDoc Filter.EventuallyEq as "=ᶠ"
+
+/--
+For a function `f`, `f : ℝ → ℝ`, and two points `x`, `y`, `x y : ℝ`,
+`slope f x y` is the slope of f between these points:
+$$
+\frac{f (x) - f (y)}{y - x}
+$$
+You can see this by `rw`ing with `slope_def_field` (`rw [slope_def_field]`).
+-/
+DefinitionDoc slope as "slope" in "Function"
+
+/--
+For a function `f`, `f : ℝ → ℝ`, a point `x`, `x : ℝ` and
+a number `a`, `a : ℝ`, `HasDerivAt f a x` means that the derivative of f at x is a.
+We would usually write something like $f'(x) = a$.
+You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_slope]`)
+to expand this into the usual definition of the derivative in terms of the `slope` of f.
+-/
+DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"

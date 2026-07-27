@@ -151,7 +151,10 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
     simp
 
 /---/
-TheoremDoc Matrix.one_apply as "one_apply" in "Matrix"
+TheoremDoc Matrix.one_apply as "Matrix.one_apply" in "Matrix"
+-- `one_apply` is ambiguous.  In particular, we have `_root_.one_apply`.  This appears to force
+--  us to spell out `Matrix.one_apply` in the game, even when `Matrix` is open.
+--  (We had a similar problem earlier with `Function.RightInverrse`.)
 
 NewTheorem Matrix.one_apply
 

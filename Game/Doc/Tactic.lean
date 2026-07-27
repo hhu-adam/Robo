@@ -209,11 +209,30 @@ A ∨ ¬A
 TacticDoc generalize
 
 /--
+The `grind` tactic is a powerful automation tactic.
+It tries to close the proof goal by combining several techniques,
+including case splitting, congruence closure, and arithmetic reasoning.
+It can often finish goals that would otherwise require several manual steps.
+
+## Variants
+
+* `grind [h₁, h₂]` uses the assumptions or lemmas `h₁` and `h₂`
+    in addition to lemmas marked with `@[grind]` in mathlib
+* `grind only [h₁, h₂]` exclusively uses the given lemmas
+
+## Friends and relatives
+
+* `simp` simplifies the goal step by step using rewrite lemmas,
+  but does not perform case splits.
+-/
+TacticDoc grind
+
+/--
 With `have h : P`, you introduce an intermediate result.
 You must then prove this intermediate result
 before you can continue with the actual proof.
 
-## Friends and relatives
+## Related
 `suffices h : P` works in exactly the same way, except that you can continue with the main proof first and
 only have to prove your intermediate result at the very end.
 -/
@@ -610,3 +629,37 @@ The tactic `tauto` proves logical tautologies.
 Sometimes the proof target must first be abstracted with `generalize` so that `tauto` recognizes the tautology.
 -/
 TacticDoc tauto
+
+/--
+The tactic `fun_prop` automatically discharges function-property goals such as `Continuous`,
+`Measurable`, or `Differentiable`.
+-/
+TacticDoc fun_prop
+
+/--
+Suppose we have an "eventual" hypothesis `h₁ : ∀ᶠ x in 𝓕, p₁ x`
+and an "eventual" goal `∀ᶠ x in 𝓕, p x`.
+The tactic `filter_upwards [h₁]'` reduces the goal to the point-wise implication `p₁ x → p x`.
+
+# Variants
+
+- `filter_upwards [h₁, ⋯, hₙ]` works in the same way: given several "eventual" hypotheses
+   `hᵢ : ∀ᶠ x in 𝓕, pᵢ x`, the goal is reduced to `p₁ x → ⋯ → pₙ x → p x`.
+- `filter_upwards [h₁, ⋯, hₙ] with x h₁' ⋯ hₙ'` follows the tactic `filter_upwards` with
+  `intro x h₁' ⋯ hₙ'`.
+   So the total effect on the proof state is that `∀ᶠ` is removed.
+   For example, `filter_upwards [h₁, h₂] with x h₁' h₂'` turns
+```
+h₁ : ∀ᶠ x in 𝓕, p₁ x
+h₂ : ∀ᶠ x in 𝓕, p₂ x
+⊢ ∀ᶠ x in 𝓕, p x
+```
+    into
+```
+x : …
+h₁ : p₁ x
+h₂ : p₂ x
+⊢ p x
+```
+-/
+TacticDoc filter_upwards

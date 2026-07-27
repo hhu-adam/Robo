@@ -5,7 +5,7 @@ Level 8
 
 Title ""
 
-open Set Filter Topology
+open Set Filter Topology FullGrind
 
 Statement : 𝓝[>] (0 : ℝ) ≤ 𝓝[≠] 0 := by
   Hint "[Hint nhdsmno] The right neighborhood is smaller than the punctured neighborhood.

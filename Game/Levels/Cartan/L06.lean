@@ -3,17 +3,23 @@ import Game.Metadata
 World "Cartan"
 Level 6
 
-open Topology Filter Set
+open Topology Filter
 
-/---/
-TheoremDoc IsOpen.eventually_mem as "IsOpen.eventually_mem"
-
-Statement {f g : ℝ → ℝ} {a b c : ℝ} (ha : a ∈ Ioo b c)
-    (h : ∀ x ∈ Ioo b c, f x = g x) : f =ᶠ[𝓝 a] g := by
-  have : ∀ᶠ x in 𝓝 a, x ∈ Ioo b c := by
-    apply IsOpen.eventually_mem _ ha
-    apply isOpen_Ioo
-  filter_upwards [this]
+Statement {f g : ℝ → ℝ} {a : ℝ} (ha : a < 0) (h : ∀ x < 0, f x = g x) :
+    f =ᶠ[𝓝 a] g := by
+  Hint (strict := true) "[Hint fjpr0] First establish `∀ᶠ x in 𝓝 a, x < 0` with `have`."
+  have h_even : ∀ᶠ x in 𝓝 a, x < 0 := by
+    apply eventually_lt_nhds ha
+  Hint "[Hint 4j4cl] Try `filter_upwards [{h_even}]`."
+  filter_upwards [h_even]
   assumption
 
-NewTheorem IsOpen.eventually_mem
+Conclusion "Conclusion Cartan L06:  What does `filter_upwards` do?
+Suppose we have an eventual hypothesis `h₁ : ∀ᶠ x in 𝓕, p₁ x`
+and an eventual goal `∀ᶠ x in 𝓕, p x`.
+Then `filter_upwards [h₁]'` reduces the goal to the point-wise implication `p₁ x → p x`."
+
+
+NewTactic filter_upwards
+NewHiddenTactic «in»
+NewDefinition Filter.EventuallyEq

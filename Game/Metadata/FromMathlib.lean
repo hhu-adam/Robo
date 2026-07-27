@@ -35,4 +35,5 @@ import Mathlib.Data.Nat.Prime.Defs
 import Mathlib.Data.Rat.Star
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
+import Mathlib.Topology.LocallyConstant.Basic
 import Mathlib.Algebra.Polynomial.Derivative

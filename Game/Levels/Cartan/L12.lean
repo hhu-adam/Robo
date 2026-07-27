@@ -1,16 +1,31 @@
 import Game.Metadata
-import Mathlib.Topology.LocallyConstant.Basic
 
 World "Cartan"
 Level 12
 
 open Topology Filter
 
-Statement {f g : ℝ → ℝ} {x : ℝ} (hf : IsLocallyConstant f) (hg : IsLocallyConstant g)
-    (h : f x = g x) : ∀ᶠ y in 𝓝 x, f y = g y := by
-  have : ∀ᶠ y in 𝓝 x, f y = f x := by
-    apply IsLocallyConstant.eventually_eq hf x
-  rw [h] at this
-  filter_upwards [this, IsLocallyConstant.eventually_eq hg x]
-  intro y h1 h2
-  rw [h1, h2]
+Introduction "Intro Cartan L12:
+A function `f` is *locally constant* if every point has a neighborhood on which
+`f` is constant. In Mathlib this is captured by `IsLocallyConstant f`, which is
+defined as: the preimage `f ⁻¹' s` of *every* set `s` is open.
+
+Here you show that a locally constant function is *eventually* equal to its
+value at `x`, for the neighborhood filter `𝓝 x`.
+"
+
+-- /---/
+-- TheoremDoc IsLocallyConstant.eventually_eq as "IsLocallyConstant.eventually_eq"
+
+Statement {f : ℝ → ℝ} {x : ℝ}
+    (hf : IsLocallyConstant f) : ∀ᶠ y in 𝓝 x, f y = f x := by
+  Hint (strict := true) "[Hint pissfx] The preimage of single point set \{f x} is open."
+  Hint (hidden := true) "[Hint hpissfx] Establish `IsOpen (f ⁻¹' \{f x})` by `have`."
+  have h : IsOpen (f ⁻¹' {f x}) := by
+    apply hf
+  Hint (hidden := true) "[Hint tfuiem] Remember `filter_upwards` and `IsOpen.eventually_mem`."
+  filter_upwards [IsOpen.eventually_mem h rfl]
+  intro y hy
+  assumption
+
+NewDefinition IsLocallyConstant

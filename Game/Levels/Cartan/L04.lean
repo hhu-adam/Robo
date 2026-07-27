@@ -5,20 +5,10 @@ Level 4
 
 open Topology Filter
 
-/-- `∀ᶠ x in f, p x` says that `p x` holds *eventually* along the filter `f`,
-i.e. the set `{x | p x}` is a member of `f`. -/
-DefinitionDoc Filter.Eventually as "∀ᶠ"
+Statement : ∀ᶠ x in atTop, x ≥ 1066 := by
+  Hint "[Hint zntfk] For a filter `𝓕`, `∀ᶠ x in 𝓕, p x` says that `p x` holds *eventually*
+    i.e. the set `\{x | p x}` is a member of 𝓕."
+  Hint (hidden := true) "[Hint ysocy] Remember `mem_atTop`"
+  apply mem_atTop
 
-/---/
-TheoremDoc eventually_lt_nhds as "eventually_lt_nhds"
-
-/---/
-TheoremDoc eventually_gt_nhds as "eventually_gt_nhds"
-
-Statement {a : ℝ} (hab : a < 0) :
-    ∀ᶠ x in 𝓝 a, x < 0 := by
-  apply eventually_lt_nhds
-  assumption
-
-NewTheorem eventually_lt_nhds eventually_gt_nhds
 NewDefinition Filter.Eventually
