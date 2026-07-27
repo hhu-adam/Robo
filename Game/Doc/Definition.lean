@@ -85,6 +85,12 @@ For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their unio
 DefinitionDoc Set.union as "∪" in "Set"
 
 /--
+For subsets `A` of `S` (i.e. `A : Set S`), `Aᶜ` is the complement.
+`ᶜ` is written as `\\compl` or `\\^c`.
+-/
+DefinitionDoc Set.compl as "·ᶜ" in "Set"
+
+/--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
 `∩` is written as `\\inter`.
 -/
@@ -582,3 +588,61 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
+
+/--
+Given a subset `s` of a set `T` (`s : Set T`) and an element `b` of T (`b : T`),
+`b ∈ upperBounds s` means that b is an *upper bound* of s: `s ≤ b` for every element
+of s.
+-/
+DefinitionDoc upperBounds as "upperBounds" in "Set"
+
+/--
+For subset `s` of a set `T` (`s : Set T`), `BddAbove s` means that
+there exists some `b` in T (`b : T`) such that `b ∈ upperBounds s`.
+-/
+DefinitionDoc BddAbove as "BddAbove" in "Set"
+
+/--
+`sSup s` is the supremum of `s`.  Here `s` is a subset of some ordered set `T` (`s : Set T`),
+and `s` is assumed to be bounded above.
+-/
+DefinitionDoc SupSet.sSup as "sSup" in "sSup"
+
+/-- For a subset `s` of a topological space, `closure s` denotes the closure of s.-/
+DefinitionDoc closure as "closure" in "Topology"
+
+
+/--
+For a function `f`, `f : ℝ → ℝ`, and two points `x`, `y`, `x y : ℝ`,
+`slope f x y` is the slope of f between these points:
+$$
+\frac{f (x) - f (y)}{y - x}
+$$
+You can see this by `rw`ing with `slope_def_field` (`rw [slope_def_field]`).
+-/
+DefinitionDoc slope as "slope" in "Function"
+
+/-- For a function `f`, `f : ℝ → ℝ`,
+`Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
+in usual notation, $\lim_{x \to a} f(x) = b$.
+
+Combining `Tendsto` with the restricted neighborhoods gives the limit notions
+from calculus:
+
+* `Tendsto f (𝓝[≠] a) (𝓝 b)` only looks at points near `a` with `x ≠ a`,
+  so the value `f a` itself plays no role — this is the usual limit.
+* `Tendsto f (𝓝[>] a) (𝓝 b)` and `Tendsto f (𝓝[<] a) (𝓝 b)` describe the
+  one-sided limits from the right and from the left.
+
+To type the symbol `𝓝`, write `\nhds`.
+-/
+DefinitionDoc Filter.Tendsto as "Tendsto" in "Function"
+
+/--
+For a function `f`, `f : ℝ → ℝ`, a point `x`, `x : ℝ` and
+a number `a`, `a : ℝ`, `HasDerivAt f a x` means that the derivative of f at x is a.
+We would usually write something like $f'(x) = a$.
+You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_slope]`)
+to expand this into the usual definition of the derivative in terms of the `slope` of f.
+-/
+DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"

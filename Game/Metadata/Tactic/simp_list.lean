@@ -115,6 +115,9 @@ attribute [game_simp] Set.mem_inter_iff Set.mem_setOf_eq Set.mem_empty_iff_false
 -- Piazza, L06_Ext2__univ2:
 attribute [game_simp] Set.mem_diff Set.mem_univ Set.mem_inter_iff not_and true_and Set.mem_union
 
+-- Piazza, L07_compl_even:
+attribute [game_simp] Set.mem_compl_iff Set.mem_setOf_eq Nat.not_even_iff_odd iff_self
+
 -- Piazza, L10:
 attribute [game_simp] Set.mem_insert_iff Set.mem_singleton_iff Set.singleton_union Set.mem_setOf_eq
 
@@ -198,6 +201,20 @@ attribute [game_simp] neg_smul one_smul Pi.add_apply Pi.smul_apply smul_eq_mul P
 
 -- Step, L14:
 attribute [game_simp] Finset.sum_empty eq_self Finset.notMem_empty IsEmpty.forall_iff implies_true imp_self lt_add_iff_pos_right zero_lt_one and_self
+-- Shade, L01_ShadeDef:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq Classical.not_forall Classical.not_imp not_le iff_self exists_prop
+
+-- Shade, L02_ShadeDefSymm:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq not_exists not_and not_lt iff_self
+
+-- Shade, L03_MemSun:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
+
+-- Shade, L11_Boss:
+attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
+
+-- Slope, L06:
+attribute [game_simp] nhdsWithin_univ eq_self
 
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
