@@ -40,16 +40,13 @@ A mapping `f` is strictly monotonous, if:
 DefinitionDoc StrictMono as "StrictMono" in "Function"
 
 
-/-- `Function.RightInverse f g` is defined as `LeftInverse g f`.
+/-- `RightInverse f g` is defined as `LeftInverse g f`.
 In other words: `∀ x, g (f x) = x`.
-
-You have to write `Function.RightInverse`  instead of `RightInverse`,
-as `RightInverse` is ambigous in Leanic.
 -/
 DefinitionDoc Function.RightInverse as "RightInverse" in "Function"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because
--- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigates this.
-
+-- some mathlib init-file defines `_root_.RightInverse`. mathlib4#11415 investigated this.
+-- UPDATE 27.07.2026:  This does not seem to be the case anymore, so we can now just write RightInverse.
 
 /--
 `LeftInverse g f` means `g ∘ f = id`, or more exactly:
