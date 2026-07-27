@@ -1,12 +1,12 @@
 import Game.Metadata
 
 World "Saturn"
-Level 3
+Level 4
 
 Title ""
 
 -- Introduction "Noch ein Funkspruch."
-Introduction "Intro Saturn L03"
+Introduction "Intro Saturn L04"
 
 namespace MvPolynomial
 Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
@@ -36,11 +36,11 @@ Conclusion "
   Wieder ein 👍.
 "
 -/
-Conclusion "Conclusion Saturn L03"
+Conclusion "Conclusion Saturn L04"
 NewTactic ring
 
 /---/
 TheoremDoc mul_comm as "mul_comm" in "+ *"
 
 NewTheorem mul_comm
-NewDefinition Fin MvPolynomial
+NewDefinition Fin MvPolynomial MvPolynomial.X
