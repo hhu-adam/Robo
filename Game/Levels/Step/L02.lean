@@ -3,15 +3,9 @@ import Game.Metadata
 World "Step"
 Level 2
 
-/- # Introduction
+Introduction "Intro Step L02: Vectors are functions, we define their addition pointwise."
 
-Since vectors are functions, we define their addition pointwise.
-
--/
-
-open Real Function Set Finset
-
-Statement : ![(sqrt 3)/2, 1/2] + ![-(sqrt 3)/2, 1/2] = ![0, 1] := by
+Statement : ![1, 1 / 2] + ![- (1 : ℝ), 1 / 2] = ![0, 1] := by
   Branch
     simp
     ring
@@ -21,8 +15,5 @@ Statement : ![(sqrt 3)/2, 1/2] + ![-(sqrt 3)/2, 1/2] = ![0, 1] := by
     ring
   · simp
     ring
-
-/---/
-TacticDoc fin_cases
 
 NewTactic fin_cases

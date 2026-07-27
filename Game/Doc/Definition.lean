@@ -252,6 +252,14 @@ whereas `Icc 0 (n-1) : Finset ℕ` is a finite subset of `ℕ`.)
 DefinitionDoc Fin as "Fin"
 
 /--
+An `n`-dimensional vector is a function out of `Fin n`.
+
+For instance a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
+`x i : ℝ`. We represent such a vector as `![x_1, …, x_n]`.
+-/
+DefinitionDoc vecNotation as "![·, …, ·]"
+
+/--
 `Icc a b` is the closed interval $[a,b]$.
 -/
 DefinitionDoc Finset.Icc as "Icc"

@@ -22,7 +22,7 @@ def bump (a : ℝ) : ℝ → ℝ := fun x ↦ if x = a then 1 else 0
 bump a := fun x ↦ if x = a then 1 else 0
 ```
 -/
-DefinitionDoc bump as "bump" in "LinearAlgebra"
+DefinitionDoc bump as "Function.bump" in "Function"
 
 /-- The family of all bump functions `bump a`, `a : ℝ`, is linearly independent
 in the function space `ℝ → ℝ`. -/
