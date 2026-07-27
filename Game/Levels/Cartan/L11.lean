@@ -3,6 +3,8 @@ import Game.Metadata
 World "Cartan"
 Level 11
 
+Introduction "Intro Cartan L11"
+
 open Topology Filter
 
 Statement {g₁ g₂ g₃ : ℝ → ℝ} {x : ℝ} {f : Filter ℝ}

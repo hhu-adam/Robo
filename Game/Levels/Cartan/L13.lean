@@ -3,6 +3,8 @@ import Game.Metadata
 World "Cartan"
 Level 13
 
+Introduction "Intro Cartan 13 (second Boss)"
+
 open Topology Filter
 
 Statement {f g : ℝ → ℝ} {x : ℝ} (hf : IsLocallyConstant f) (hg : IsLocallyConstant g)
@@ -22,7 +24,7 @@ Statement {f g : ℝ → ℝ} {x : ℝ} (hf : IsLocallyConstant f) (hg : IsLocal
     filter_upwards [IsOpen.eventually_mem ho rfl]
     intro y hy
     assumption
-  Hint (strict := true) "[Hint rhhe1] Try to `rw` {h} at {he1}."
+  Hint (strict := true) "[Hint rhhe1] Try to `rw` with `{h}` at `{he1}`."
   rw [h] at he1
   Hint (hidden := true) "[Hint fuhe2] Now, `filter_upwards [{he1}, {he2}]`."
   filter_upwards [he1, he2]

@@ -5,7 +5,7 @@ Level 12
 
 open Topology Filter
 
-Introduction "
+Introduction "Intro Cartan L12:
 A function `f` is *locally constant* if every point has a neighborhood on which
 `f` is constant. In Mathlib this is captured by `IsLocallyConstant f`, which is
 defined as: the preimage `f ⁻¹' s` of *every* set `s` is open.
@@ -23,7 +23,7 @@ Statement {f : ℝ → ℝ} {x : ℝ}
   Hint (hidden := true) "[Hint hpissfx] Establish `IsOpen (f ⁻¹' \{f x})` by `have`."
   have h : IsOpen (f ⁻¹' {f x}) := by
     apply hf
-  Hint "[Hint tfuiem] Try `filter_upwards [IsOpen.eventually_mem {h} rfl]`"
+  Hint (hidden := true) "[Hint tfuiem] Remember `filter_upwards` and `IsOpen.eventually_mem`."
   filter_upwards [IsOpen.eventually_mem h rfl]
   intro y hy
   assumption
