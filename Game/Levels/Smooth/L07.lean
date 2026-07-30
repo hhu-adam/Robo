@@ -25,18 +25,22 @@ TheoremDoc hasDerivAt_const as "hasDerivAt_const"
 
 /- For `x < 0`, the bump function `f` is eventually `0`, so its derivative is `0`. -/
 Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
-  Hint "[Hint cev1] Near a negative point `f` is constantly `0`. So show `f`
-    agrees with the zero function on a neighbourhood, then transport the
-    constant's derivative with `HasDerivAt.congr_of_eventuallyEq`."
-  Hint (hidden := true) "[Hint cev2] Build the local agreement first:
-    `have h : f =ᶠ[𝓝 x] fun _ ↦ 0`. Points near `x` are still negative by
-    `eventually_lt_nhds hx`, so `filter_upwards` and simplify `f`."
+  Hint "[Hint cev1] Note that if two function are eventually euqal around a point, then their derivatives agree
+    at this point. The theorem is called `HasDerivAt.congr_of_eventuallyEq` in mathlib.
+    First show `f` eventually equal to the zero function around `x`, then apply the theorem
+    `HasDerivAt.congr_of_eventuallyEq`. "
+  Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0` by `have`"
   have h : f =ᶠ[𝓝 x] fun _ ↦ 0 := by
+    Hint "[Hint sm7fu] Remember the theorem `eventually_lt_nhds`."
+    Hint (hidden := true) "[Hint sm7fuh] Try to combine `filter_upwards` and `eventually_lt_nhds {hx}`."
     filter_upwards [eventually_lt_nhds hx] with y hy
     simp [f, hy.le]
-  Hint (hidden := true) "[Hint cev3] Now `apply HasDerivAt.congr_of_eventuallyEq _ h`,
-    then close the constant's derivative with `hasDerivAt_const`."
+  Hint (hidden := true) "[Hint cev3] Now `apply HasDerivAt.congr_of_eventuallyEq _ {h}`."
   apply HasDerivAt.congr_of_eventuallyEq _ h
+  Hint (hidden := true) "Note that `hasDerivAt_const`."
   apply hasDerivAt_const
 
-NewTheorem HasDerivAt.congr_of_eventuallyEq hasDerivAt_const
+/-- For `h : a < b`, `h.le` is a short-cut of `a ≤ b`. -/
+TheoremDoc LT.lt.le as "LT.lt.le" in "≤"
+
+NewTheorem HasDerivAt.congr_of_eventuallyEq hasDerivAt_const LT.lt.le

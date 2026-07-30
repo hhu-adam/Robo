@@ -23,6 +23,9 @@ Start with the easy half: on the non-positive axis `f` is simply `0`.
 /-- Smooth take-off function -/
 def f : ℝ → ℝ := fun x ↦ if x ≤ 0 then 0 else exp (- x⁻¹)
 
+/-- The smooth take-off function `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`. -/
+DefinitionDoc f as "f"
+
 /-- On the non-positive axis the take-off function vanishes: `f x = 0` when `x ≤ 0`. -/
 TheoremDoc zero_of_nonpos as "zero_of_nonpos"
 
@@ -35,3 +38,5 @@ Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
     simp [hx]
   Hint (hidden := true) "[Hint smthts3] Simplify the goal with input `{hx}`."
   simp [f, hx]
+
+NewDefinition f

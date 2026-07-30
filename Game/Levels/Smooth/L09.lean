@@ -24,6 +24,9 @@ def P : ℕ → ℝ[X]
   | 0 => 1
   | n + 1 => X ^ 2 * (P n - derivative (P n))
 
+/-- The polynomials `P n` with `P 0 = 1` and `P (n+1) = X² · (P n - derivative (P n))`. -/
+DefinitionDoc P as "P"
+
 /---/
 TheoremDoc iteratedDeriv_zero as "iteratedDeriv_zero"
 
@@ -56,4 +59,11 @@ Statement iteratedDeriv_eq_poly (n : ℕ) :
     rw [iteratedDeriv_succ, ih, P]
     apply (hasDerivAt_polynomial_eval_inv_mul (P n) x).deriv
 
-NewTheorem iteratedDeriv_zero iteratedDeriv_succ HasDerivAt.deriv
+/---/
+TheoremDoc Polynomial.eval_one as "Polynomial.eval_one"
+
+/---/
+TheoremDoc one_mul as "one_mul"
+
+NewTheorem iteratedDeriv_zero iteratedDeriv_succ HasDerivAt.deriv Polynomial.eval_one one_mul
+NewDefinition P

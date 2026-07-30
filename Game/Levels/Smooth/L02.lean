@@ -31,3 +31,4 @@ Statement tendsto_sq_div_exp_atTop :
   apply h
 
 NewTheorem Polynomial.tendsto_div_exp_atTop
+NewDefinition Real.exp

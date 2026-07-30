@@ -12,6 +12,9 @@ The pay-off. Since the `n`-th derivative of `f` is `(P n)(x⁻¹) · f x` and
 flat* at `0`. This is what makes the take-off function smooth across the seam.
 "
 
+/-- Every iterated derivative of `f` vanishes at `0`, so `f` is infinitely flat there. -/
+TheoremDoc iteratedDeriv_f_zero as "iteratedDeriv_f_zero" in "Function"
+
 /- Every iterated derivative of `f` vanishes at `0`. -/
 Statement iteratedDeriv_f_zero (n : ℕ) : iteratedDeriv n f 0 = 0 := by
   Hint "[Hint idz1] Rewrite with the formula from the previous level, then the
