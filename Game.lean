@@ -28,6 +28,7 @@ import Game.Levels.Piazza
 
 import Game.Levels.Cafe
 
+import Game.Levels.Cartan
 import Game.Levels.Hamel
 import Game.Levels.Terrace
 import Game.Levels.Aquarium
@@ -58,7 +59,9 @@ Dependency Quantus → Piazza -- because of `∀`
 Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
 Dependency Vieta → Shade    -- because of `function`
-Dependency Aquarium → Shade   -- Shade builds on the bounds/suprema API
+
+Dependency Vieta → Aquarium -- because of `function`
+Dependency Vieta → Cartan   -- because of `function`
 
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
