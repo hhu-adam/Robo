@@ -6,13 +6,11 @@ Level 7
 
 open Real Filter Topology
 
-Introduction "
+Introduction "Intro Smooth L07:
 Derivatives are *local*: if two functions agree on a whole neighbourhood of `a`,
-they must have the same derivative at `a`. Mathlib packages this as
-`HasDerivAt.congr_of_eventuallyEq`, where `f₁ =ᶠ[𝓝 a] f` reads “`f₁` and `f`
-agree near `a`”.
+they must have the same derivative at `a`.
 
-In this level you differentiate the bump function `f` on the negative axis,
+In this level you differentiate the smooth take-off function `f` on the negative axis,
 where it is flat: for `x < 0` it is constantly `0` nearby, so its derivative
 is `0`.
 "

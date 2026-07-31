@@ -1,5 +1,4 @@
 import Game.Metadata
-import Mathlib.Analysis.SpecialFunctions.PolynomialExp
 
 World "Smooth"
 Level 1

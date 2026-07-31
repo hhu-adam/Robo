@@ -8,15 +8,12 @@ open Polynomial
 
 noncomputable section
 
-Introduction "
+Introduction " Intro Smooth L09:
 Differentiating `x ↦ p(x⁻¹) · f x` gives back a function of the *same shape*,
-with a new polynomial — that was the boss level. Iterating, the `n`-th derivative
-of `f` keeps this form, controlled by the polynomials
-
+with a new polynomial. Define a polynomial inductively as follows:
 `P 0 = 1`,  `P (n+1) = X² · (P n - derivative (P n))`.
 
-Prove `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x` by induction on `n`, feeding
-the boss theorem `hasDerivAt_polynomial_eval_inv_mul` into the successor step.
+In this level, you are going to prove `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`.
 "
 
 /-- The polynomials `P n` for which `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`. -/

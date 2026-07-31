@@ -6,6 +6,13 @@ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 World "Smooth"
 Level 8
 
+Introduction "Intro Smooth L08:
+In this level, you are going to prove that the derivative of $p(x^{-1}) f(x)$ is
+  $x^{-2} (p(x) - p'(x)) f (x)$, where
+  $$
+f(x) = \\begin{cases} 0 & \\text{if } x \\le 0, \\\\ e^{-1/x} & \\text{if } x > 0. \\end{cases}
+$$"
+
 open Polynomial Filter Topology
 
 /-- The derivative of `x ↦ p(x⁻¹) · f x` keeps the same `polynomial · f` shape. -/

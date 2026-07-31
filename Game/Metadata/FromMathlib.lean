@@ -37,3 +37,5 @@ import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Topology.LocallyConstant.Basic
 import Mathlib.Algebra.Polynomial.Derivative
+import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.SpecialFunctions.PolynomialExp

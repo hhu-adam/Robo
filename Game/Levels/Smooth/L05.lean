@@ -9,17 +9,12 @@ Level 5
 
 open Polynomial
 
-Introduction "
-Time to differentiate. Recall that `HasDerivAt g g' a` records that `g` has
-derivative `g'` at the point `a`.
-
-The strength of this predicate is that derivatives *compose*: the chain rule
-`HasDerivAt.comp` builds the derivative of a composite from the derivatives of
-its pieces. So a formula like `x ↦ p(-x⁻¹)` is no harder than the bricks it is
-made of — the inverse, the negation, and the polynomial `p`.
+Introduction "Intro Smooth L05:
+Time to differentiate. In the next few levels, you are going to use *product rule* and
+*composition rule* to calculate some derivatives.
 
 In this level you assemble those three bricks into the derivative of
-`x ↦ p(-x⁻¹)`.
+$p(-x^{=1})$.
 "
 
 /---/

@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Analysis.Complex.Exponential
-import Mathlib.Analysis.SpecialFunctions.PolynomialExp
 
 World "Smooth"
 Level 3

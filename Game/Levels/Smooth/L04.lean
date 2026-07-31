@@ -1,6 +1,4 @@
 import Game.Levels.Smooth.L03
-import Mathlib.Analysis.Complex.Exponential
-import Mathlib.Analysis.SpecialFunctions.PolynomialExp
 
 World "Smooth"
 Level 4

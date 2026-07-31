@@ -8,13 +8,10 @@ Level 6
 
 open Real
 
-Introduction "
-Products are handled by the *product rule* `HasDerivAt.mul`, and the exponential
-by the chain-rule shortcut `HasDerivAt.exp`. Together they cover any mix of
-polynomials and exponentials.
+Introduction "Intro Smooth L06:
+The derivative of products are handled by the *product rule*.
 
-In this level you differentiate `x ↦ p(x) · exp (-x)` — the exact building block
-that the final level will need.
+In this level you differentiate `x ↦ p(x) · exp (-x)`.
 "
 
 /---/
