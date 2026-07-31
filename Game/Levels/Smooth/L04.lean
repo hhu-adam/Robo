@@ -22,21 +22,30 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
     Tendsto (fun x ↦ p.eval x⁻¹ * f x) (𝓝 0) (𝓝 0) := by
   Hint "[Hint tpimzsf] First, unfold the definition of `f` and simplify the expression using `simp`."
   simp [f]
-  Hint "Note that for the case `x ≤ 0`, the function is constant."
-  Hint (hidden := true) "Try "
+  Hint "[Hint sm4tcnst] Note that for the case `x ≤ 0`, the function is constant."
+  Hint (hidden := true) "Try to combine `Tendsto.if` and `tendsto_const_nhds`."
   apply Tendsto.if tendsto_const_nhds
+  Hint "[Hint sm4nle] The goal now contains a `¬ x ≤ 0`. Rewrite it with `not_le`, or just `simp`."
   simp
-  have htop : Tendsto (fun (x : ℝ) ↦ x⁻¹) (𝓝[>] 0) atTop := by
-    apply tendsto_inv_nhdsGT_zero
+  Hint "[Hint sm4hdve] Establish `Tendsto (fun x ↦ p.eval x⁻¹ / exp x⁻¹) (𝓝[>] 0) (𝓝 0)` by `have`.
+    Remember the theorem `Polynomial.tendsto_div_exp_atTop` in Level 2. "
   have : Tendsto (fun x ↦ p.eval x⁻¹ / exp x⁻¹) (𝓝[>] 0) (𝓝 0) := by
-    apply (Polynomial.tendsto_div_exp_atTop _).comp
-    apply htop
+    Hint (hidden := true) "[Hint sm4tcpt] This is `p.eval x / exp x` compose with
+      inverse function. Now apply `Tendsto.comp (Polynomial.tendsto_div_exp_atTop _)`"
+    apply Tendsto.comp (Polynomial.tendsto_div_exp_atTop _)
+    Hint (hidden := true) "[Hint sm4iiz] Note that `tendsto_inv_nhdsGT_zero`."
+    apply tendsto_inv_nhdsGT_zero
   /-  -- mathlib proof
   refine this.congr' <| mem_of_superset self_mem_nhdsWithin fun x hx ↦ ?_
   simp [exp_neg, div_eq_mul_inv]
   -/
+  Hint "[Hint sm4cgr] If `f₁` is eventually equal to `f₂` along a filter `l₁`, then `f₁` tending to
+    `l₂` along `l₁` implies `f₂` does too. This is `Tendsto.congr'` in Mathlib."
+  Hint (hidden := true) "[Hint sm4apc] Apply `Tendsto.congr' _ {this}`."
   apply Tendsto.congr' _ this
+  Hint (hidden := true) "[Hint sm4fup] Remember `filter_upwards`!"
   filter_upwards
+  Hint (hidden := true) "[Hint sm4eng] Try to simplify with theorem `exp_neg` and then `grind`."
   simp [exp_neg]
   grind
 

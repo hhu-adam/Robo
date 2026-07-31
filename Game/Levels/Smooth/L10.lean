@@ -17,9 +17,7 @@ TheoremDoc iteratedDeriv_f_zero as "iteratedDeriv_f_zero" in "Function"
 
 /- Every iterated derivative of `f` vanishes at `0`. -/
 Statement iteratedDeriv_f_zero (n : ℕ) : iteratedDeriv n f 0 = 0 := by
-  Hint "[Hint idz1] Rewrite with the formula from the previous level, then the
-    factor `f 0` is `0` by `zero_of_nonpos`."
-  Hint (hidden := true) "[Hint idz2] `rw [iteratedDeriv_eq_poly]`, then close with
-    `zero_of_nonpos (le_refl 0)` and `mul_zero`."
+  Hint "[Hint idz1] Rewrite with the formula from the previous level, and note that `f 0 = 0`."
+  Hint (hidden := true) "[Hint idz2] `rw [iteratedDeriv_eq_poly]`."
   rw [iteratedDeriv_eq_poly]
   simp [zero_of_nonpos]

@@ -42,22 +42,24 @@ TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
 /- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
 Statement iteratedDeriv_eq_poly (n : ℕ) :
     iteratedDeriv n f = fun x ↦ (P n).eval x⁻¹ * f x := by
-  Hint "[Hint idp1] Induct on `n` with `induction n with`. The base case unfolds
-    `P 0 = 1`; the successor step differentiates once and reuses the boss theorem
-    `hasDerivAt_polynomial_eval_inv_mul`."
-  induction n with
-  | zero =>
-    Hint (hidden := true) "[Hint idp2] `iteratedDeriv 0 f = f` and `P 0 = 1`, so
-      after `funext x` finish with `rw [iteratedDeriv_zero, P, eval_one, one_mul]`."
+  Hint "[Hint idp1] Process by induction on `n`."
+  induction n with n ih
+  · Hint (hidden := true) "[Hint idp2] `0`-th derivative is the function itself."
+    Branch
+      funext x
+      Hint "[sm9it] `rw` the goal with `iteratedDeriv_zero`."
+      rw [iteratedDeriv_zero, P, eval_one, one_mul]
+    simp_log [P]
+  · Hint "[Hint idp3] Peel one derivative, then you can apply the induction hypothesis. "
     funext x
-    rw [iteratedDeriv_zero, P, eval_one, one_mul]
-  | succ n ih =>
-    Hint (hidden := true) "[Hint idp3] Peel one derivative with `iteratedDeriv_succ`,
-      rewrite by `ih` and unfold `P`, then the goal is exactly the `.deriv` of the
-      boss theorem: `exact (hasDerivAt_polynomial_eval_inv_mul (P n) x).deriv`."
-    funext x
-    rw [iteratedDeriv_succ, ih, P]
-    apply (hasDerivAt_polynomial_eval_inv_mul (P n) x).deriv
+    Hint (hidden := true) "[sm9ritsc] `rw` the goal with `iteratedDeriv_succ`"
+    rw [iteratedDeriv_succ, ih]
+    Hint "[sm9ristp] Perfect! Now unfold the definition of `P` by `rw [P]`."
+    rw [P]
+    Hint (hidden := true) "Remember the theorems `HasDerivAt.deriv` and
+      `hasDerivAt_polynomial_eval_inv_mul`."
+    apply HasDerivAt.deriv
+    apply hasDerivAt_polynomial_eval_inv_mul
 
 /---/
 TheoremDoc Polynomial.eval_one as "Polynomial.eval_one"
