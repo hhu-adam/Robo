@@ -37,7 +37,8 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
   -/
   apply Tendsto.congr' _ this
   filter_upwards
-  simp [exp_neg, div_eq_mul_inv]
+  simp [exp_neg]
+  grind
 
 /---/
 TheoremDoc Filter.Tendsto.if as "Filter.Tendsto.if" in "Function"
@@ -46,9 +47,13 @@ TheoremDoc Filter.Tendsto.if as "Filter.Tendsto.if" in "Function"
 TheoremDoc Filter.Tendsto.congr' as "Filter.Tendsto.congr'"
 
 /---/
+TheoremDoc Filter.Tendsto.congr as "Filter.Tendsto.congr"
+
+/---/
 TheoremDoc Real.exp_neg as "Real.exp_neg"
 
 /---/
 TheoremDoc tendsto_inv_nhdsGT_zero as "tendsto_inv_nhdsGT_zero" in "Function"
 
-NewTheorem Filter.Tendsto.if tendsto_inv_nhdsGT_zero Filter.Tendsto.congr' Real.exp_neg div_eq_mul_inv
+NewTheorem Filter.Tendsto.if tendsto_inv_nhdsGT_zero Filter.Tendsto.congr'
+  Filter.Tendsto.congr Real.exp_neg
