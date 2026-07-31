@@ -1,7 +1,17 @@
 import Game.Metadata
 
-World "Step"
-Level 11
+World "Terrace"
+Level 1
+
+Introduction "On `Hamel` every linearly independent family was either finite or,
+like the bump functions, indexed so that a single evaluation point already
+isolated one coefficient. The step functions are harder: no point separates one
+of them from all the others at once. Instead one peels the coefficients off
+**one at a time, starting from the smallest jump**.
+
+This planet builds the little bit of `Finset` machinery that makes that peeling
+precise — induction on the smallest element, and the smallest element `Finset.min'`
+itself — and then uses it on the boss."
 
 open FullGrind
 

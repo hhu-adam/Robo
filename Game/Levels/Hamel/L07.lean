@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Step"
+World "Hamel"
 Level 7
 
 open Finsupp

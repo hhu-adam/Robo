@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Step"
+World "Hamel"
 Level 9
 
 open Finsupp FullGrind
@@ -13,13 +13,16 @@ Statement :
     let f : ℝ → ℝ := fun x ↦ x + 2
     let g : ℝ → ℝ := fun x ↦ 3 * x + 6
     ¬ LinearIndependent ℝ ![f, g] := by
-  Hint "[Hint rmlIpiff] Remember `LinearIndependent.pair_iff`. "
-  rw [LinearIndependent.pair_iff]
-  intro H
-  have heq : (3 : ℝ) • f + (-1 : ℝ) • g = 0 := by
-    funext x
-    simp [f, g]
-    ring
-  grind
+  Hint "[Hint rmlIpiff] Remember `Fintype.linearIndependent_iff`. "
+  rw [Fintype.linearIndependent_iff]
+  suffices h : ∃ s : Fin 2 → ℝ, ∑ i : Fin 2, s i • ![f, g] i = 0 ∧
+    ∃ i, s i ≠ 0
+  · push Not
+    assumption
+  use ![3, -1]
+  simp_log
+  funext x
+  simp [f, g]
+  ring
 
 TheoremTab "LinearAlgebra"

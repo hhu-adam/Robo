@@ -1,8 +1,8 @@
 import Game.Metadata
 
 
-World "Step"
-Level 13
+World "Terrace"
+Level 3
 
 open Finset
 

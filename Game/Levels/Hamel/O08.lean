@@ -1,9 +1,12 @@
 import Game.Metadata
 
-World "Step"
+World "Hamel"
 Level 8
 
 open Finsupp
+
+/- *Old level 8* (`O08`), kept for reference and **not** imported by `Game/Levels/Hamel.lean`:
+the pair version of the current level 8, which does the same for three vectors. -/
 
 /---/
 TheoremDoc LinearIndependent.pair_iff as "LinearIndependent.pair_iff" in "LinearAlgebra"
@@ -18,15 +21,18 @@ Statement :
   Hint "[Hint lIpiff] Rewrite the goal with `LinearIndependent.pair_iff`: two
     vectors are linearly independent iff `s • f + t • g = 0` forces
     `s = 0 ∧ t = 0`."
-  rw [LinearIndependent.pair_iff]
-  intro s t h
+  rw [Fintype.linearIndependent_iff]
+  intro s h
   Hint "[Hint apcongF] `h` is an equality of *functions* — evaluate it at `0`
     and `1` with `congrFun`."
   have h0 := congrFun h 0
   have h1 := congrFun h 1
-  simp at h0 h1
-  grind
+  simp_log [f, g] at h0 h1
+  intro i
+  fin_cases i
+  · grind
+  · grind
 
-NewTheorem LinearIndependent.pair_iff linearIndependent_iff'
+NewTheorem linearIndependent_iff'
 
 TheoremTab "LinearAlgebra"

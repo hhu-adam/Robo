@@ -1,10 +1,10 @@
 import Game.Metadata
 
 
-World "Step"
+World "Hamel"
 Level 1
 
-Introduction "Intro Step L01: An `n`-dimensional vector is a function out of `Fin n`. For instance
+Introduction "Intro Hamel L01: An `n`-dimensional vector is a function out of `Fin n`. For instance
 a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
 `x i : ℝ`. We represent such a vector as `![x_1, …, x_n]`."
 

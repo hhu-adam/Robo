@@ -181,25 +181,25 @@ attribute [game_simp] Set.mem_preimage Set.mem_singleton_iff Classical.not_foral
 -- Samarkand, L08_Preimage_Injective:
 attribute [game_simp] Set.mem_singleton_iff eq_self Set.mem_preimage Classical.not_forall Classical.not_not iff_self Set.preimage_empty ne_eq Set.singleton_ne_empty not_false_eq_true
 
--- Step, L02:
+-- Hamel, L02:
 attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd one_div Matrix.add_cons Matrix.head_cons Matrix.tail_cons Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true Fin.zero_eta Fin.isValue Pi.add_apply Matrix.cons_val_zero Fin.mk_one Matrix.cons_val_one Matrix.cons_val_fin_one
 
--- Step, L03:
+-- Hamel, L03:
 attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd Matrix.smul_cons smul_eq_mul MulZeroClass.mul_zero Matrix.smul_empty Matrix.add_cons Matrix.head_cons add_zero Matrix.tail_cons zero_add Matrix.empty_add_empty Matrix.vecCons_inj eq_self and_true and_self Nat.ofNat_nonneg Real.sq_sqrt one_div ne_eq OfNat.ofNat_ne_zero not_false_eq_true mul_inv_cancel₀
 
--- Step, L04:
+-- Hamel, L04:
 attribute [game_simp] Matrix.cons_val_zero Matrix.cons_val_one Finsupp.coe_equivFunOnFinite_symm zero_smul zero_mul
 
--- Step, L07:
+-- Hamel, L07:
 attribute [game_simp] Pi.add_apply Pi.smul_apply smul_eq_mul
 
--- Step, L08:
-attribute [game_simp] Pi.add_apply Pi.smul_apply zero_add smul_eq_mul zero_sub mul_neg Pi.zero_apply
+-- Hamel, L08:
+attribute [game_simp] Fin.isValue Nat.succ_eq_add_one Nat.reduceAdd Matrix.cons_val_zero Matrix.cons_val_one Matrix.cons_val Pi.add_apply Pi.smul_apply smul_eq_mul mul_one MulZeroClass.mul_zero add_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow Pi.zero_apply one_pow mul_neg even_two Even.neg_pow
 
--- Step, L09:
+-- Hamel, L09:
 attribute [game_simp] neg_smul one_smul Pi.add_apply Pi.smul_apply smul_eq_mul Pi.neg_apply Pi.zero_apply
 
--- Step, L14:
+-- Terrace, L04:
 attribute [game_simp] Finset.sum_empty eq_self Finset.notMem_empty IsEmpty.forall_iff implies_true imp_self lt_add_iff_pos_right zero_lt_one and_self
 -- Shade, L01_ShadeDef:
 attribute [game_simp] gt_iff_lt Set.mem_setOf_eq Classical.not_forall Classical.not_imp not_le iff_self exists_prop

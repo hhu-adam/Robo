@@ -1,7 +1,7 @@
 import Game.Metadata
 
 
-World "Step"
+World "Hamel"
 Level 10
 
 Introduction "So far, linear (in)dependence was only about **finitely many**
@@ -10,7 +10,7 @@ vectors. Now: linear independence of an **infinite** family.
 For every `a : ℝ`, define the *bump* function
 `bump a := fun x ↦ if x = a then 1 else 0`.
 
-**Mini-boss:** show the family `bump a`, `a : ℝ`, is linearly independent."
+**Boss level:** show the family `bump a`, `a : ℝ`, is linearly independent."
 
 /-- `bump a` is `1` at `a` and `0` everywhere else. -/
 noncomputable
