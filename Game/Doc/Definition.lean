@@ -546,6 +546,13 @@ To do this, you either write it explicitly as `(n : ℤ)` or as `↑n`.
 -/
 DefinitionDoc toNat as "toNat"
 
+/--
+`Int.toNat` reads an integer as a natural number:
+for `n : ℤ` with `0 ≤ n`, the value `n.toNat` is that same number in `ℕ`,
+while every negative `n` is sent to `0`.
+-/
+DefinitionDoc Int.toNat as "Int.toNat"
+
 /- MISCHMASCH -/
 
 /--

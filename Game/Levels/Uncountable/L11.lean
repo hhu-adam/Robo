@@ -3,6 +3,8 @@ import Game.Metadata
 World "Uncountable"
 Level 11
 
+Introduction "Intro Uncountable L11"
+
 universe u
 
 open Module

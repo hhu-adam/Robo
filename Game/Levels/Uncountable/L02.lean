@@ -3,6 +3,8 @@ import Game.Metadata
 World "Uncountable"
 Level 2
 
+Introduction "Intro Uncountable L02"
+
 noncomputable section
 
 open Function Cardinal

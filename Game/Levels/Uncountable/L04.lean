@@ -4,6 +4,8 @@ import Mathlib.Data.Rat.Encodable
 World "Uncountable"
 Level 4
 
+Introduction "Intro Uncountable L04"
+
 noncomputable section
 
 open Function Cardinal

@@ -4,7 +4,8 @@ import Game.Levels.Cantor.L11_SequenceUncountable
 World "Uncountable"
 Level 7
 
-Introduction "So far everything you met was countable. But in his tent, Cantor already
+Introduction "Intro Uncountable L07:
+Remember that Cantor already
 showed you that no sequence of sequences can list all sequences of natural numbers.
 
 Time to translate that magic trick into the language of cardinalities: here you deduce
@@ -12,7 +13,10 @@ that the type `ℕ → ℕ` is uncountable."
 
 open Function
 
-Statement : Uncountable (ℕ → ℕ) := by
+/---/
+TheoremDoc nat_seq_uncountable as "nat_seq_uncountable" in "Cardinal"
+
+Statement nat_seq_uncountable : Uncountable (ℕ → ℕ) := by
   Hint "[Hint qvtd] Start as in the previous level and get rid of `Uncountable`."
   rw [← not_countable_iff]
   Hint (hidden := true) "[Hint sfnv] A nonempty type is countable exactly when some

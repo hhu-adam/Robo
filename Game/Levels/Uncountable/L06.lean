@@ -4,10 +4,7 @@ import Mathlib.Analysis.Real.Cardinality
 World "Uncountable"
 Level 6
 
-Introduction "Every set of rational numbers was countable. With the reals this breaks
-down: Mathlib knows that the universal set of reals cannot be enumerated.
-
-Here you turn that fact into the statement that the type `ℝ` itself is uncountable."
+Introduction "Intro Uncountable L06"
 
 noncomputable section
 
@@ -26,7 +23,7 @@ Statement : Uncountable ℝ := by
 TheoremDoc not_countable_iff as "not_countable_iff" in "Cardinal"
 
 /---/
-TheoremDoc Set.countable_univ_iff as "Set.countable_univ_iff" in "Set"
+TheoremDoc Set.countable_univ_iff as "Set.countable_univ_iff" in "Cardinal"
 
 /---/
 TheoremDoc Cardinal.not_countable_real as "Cardinal.not_countable_real" in "Cardinal"
