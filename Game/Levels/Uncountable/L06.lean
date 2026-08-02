@@ -1,23 +1,34 @@
 import Game.Metadata
-import Mathlib.Data.Rat.Encodable
+import Mathlib.Analysis.Real.Cardinality
 
 World "Uncountable"
 Level 6
+
+Introduction "Every set of rational numbers was countable. With the reals this breaks
+down: Mathlib knows that the universal set of reals cannot be enumerated.
+
+Here you turn that fact into the statement that the type `ℝ` itself is uncountable."
 
 noncomputable section
 
 open Function Cardinal
 
-/- There is a one theorem proof `Set.countable_univ`. But I would like to introduce these
-theorem, which will be used in the boss level.  -/
-
-Statement : (Set.univ : Set ℚ).Countable := by
-  Hint "[Hint univQ] Since `ℚ` is countable, every set of rationals is countable.
-    The theorem `Set.countable_univ` says exactly this for the universal set."
-  rw [← Cardinal.le_aleph0_iff_set_countable]
-  simp_log
+Statement : Uncountable ℝ := by
+  Hint "[Hint rkmv] Being uncountable is nothing but *not* being countable, and
+    `not_countable_iff` lets you switch between the two."
+  rw [← not_countable_iff]
+  Hint (hidden := true) "[Hint tzpc] `Set.countable_univ_iff` gets you back to the
+    universal set, where `Cardinal.not_countable_real` applies."
+  rw [← Set.countable_univ_iff]
+  apply Cardinal.not_countable_real
 
 /---/
-TheoremDoc Cardinal.le_aleph0_iff_set_countable as "Cardinal.le_aleph0_iff_set_countable" in "Cardinal"
+TheoremDoc not_countable_iff as "not_countable_iff" in "Cardinal"
 
-NewTheorem Cardinal.le_aleph0_iff_set_countable
+/---/
+TheoremDoc Set.countable_univ_iff as "Set.countable_univ_iff" in "Set"
+
+/---/
+TheoremDoc Cardinal.not_countable_real as "Cardinal.not_countable_real" in "Cardinal"
+
+NewTheorem not_countable_iff Set.countable_univ_iff Cardinal.not_countable_real

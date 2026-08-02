@@ -13,8 +13,7 @@ that the type `ℕ → ℕ` is uncountable."
 open Function
 
 Statement : Uncountable (ℕ → ℕ) := by
-  Hint "[Hint qvtd] Being uncountable is nothing but *not* being countable, and
-    `not_countable_iff` lets you switch between the two."
+  Hint "[Hint qvtd] Start as in the previous level and get rid of `Uncountable`."
   rw [← not_countable_iff]
   Hint (hidden := true) "[Hint sfnv] A nonempty type is countable exactly when some
     sequence enumerates it — `countable_iff_exists_surjective` then leaves you with
@@ -23,9 +22,6 @@ Statement : Uncountable (ℕ → ℕ) := by
   apply not_surjective_nat_seq
 
 /---/
-TheoremDoc not_countable_iff as "not_countable_iff" in "Cardinal"
-
-/---/
 TheoremDoc countable_iff_exists_surjective as "countable_iff_exists_surjective" in "Cardinal"
 
-NewTheorem not_countable_iff countable_iff_exists_surjective
+NewTheorem countable_iff_exists_surjective

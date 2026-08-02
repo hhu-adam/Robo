@@ -5,7 +5,7 @@ Level 3
 
 noncomputable section
 
-open Function Cardinal
+open Function Cardinal FullGrind
 
 /- Introduce `Cardinal.mk_congr` inn this level. -/
 Statement : #ℤ = ℵ₀ := by

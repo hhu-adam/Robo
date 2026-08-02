@@ -8,11 +8,16 @@ noncomputable section
 
 open Function Cardinal
 
-Statement : #ℚ = ℵ₀ := by
-  Hint "[Hint mkQ] Remember we have just prove that `ℚ` is countable."
-  apply Cardinal.mk_eq_aleph0
+/- There is a one theorem proof `Set.countable_univ`. But I would like to introduce these
+theorem, which will be used in the boss level.  -/
+
+Statement : (Set.univ : Set ℚ).Countable := by
+  Hint "[Hint univQ] Since `ℚ` is countable, every set of rationals is countable.
+    The theorem `Set.countable_univ` says exactly this for the universal set."
+  rw [← Cardinal.le_aleph0_iff_set_countable]
+  simp_log
 
 /---/
-TheoremDoc Cardinal.mk_eq_aleph0 as "Cardinal.mk_eq_aleph0" in "Cardinal"
+TheoremDoc Cardinal.le_aleph0_iff_set_countable as "Cardinal.le_aleph0_iff_set_countable" in "Cardinal"
 
-NewTheorem Cardinal.mk_eq_aleph0
+NewTheorem Cardinal.le_aleph0_iff_set_countable

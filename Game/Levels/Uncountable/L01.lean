@@ -5,7 +5,7 @@ Level 1
 
 noncomputable section
 
-open Function
+open Function FullGrind
 
 /---/
 TheoremDoc nat_equiv_int as "nat_equiv_int" in "Cardinal"
@@ -15,7 +15,6 @@ Statement nat_equiv_int : ℕ ≃ ℤ := by
     `Equiv.ofBijective`"
   let f : ℕ → ℤ := fun n ↦ if Even n then n / 2 else - (n + 1) / 2
   have : Bijective f := by
-    -- let g : ℤ → ℕ := fun
     constructor
     · intro x y hxy
       grind
@@ -32,6 +31,3 @@ Statement nat_equiv_int : ℕ ≃ ℤ := by
 DefinitionDoc Equiv.ofBijective as "Equiv.ofBijective" in "Function"
 
 NewDefinition Equiv.ofBijective
-
--- TODO: add TacticDoc for `by_cases!`
-NewTactic by_cases!

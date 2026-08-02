@@ -29,8 +29,7 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
       You might want to start by showing `#ℚ = ℵ₀`."
     let B := Basis.ofVectorSpace ℚ ℝ
     by_contra
-    letI : Countable ℚ := by
-      infer_instance
+    let : Countable ℚ := by apply instCountableRat
     have h_ℚ : #ℚ = Cardinal.aleph0 := Cardinal.mk_eq_aleph0 ℚ
     have : ¬ Countable ℝ := by
       apply Uncountable.not_countable
@@ -47,8 +46,3 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
   let B := Basis.ofVectorSpace ℚ ℝ
   apply cardinal_eq_of_finite_basis _ B
   apply Cardinal.mk_eq_aleph0 ℚ
-
-/---/
-TheoremDoc Cardinal.not_countable_real as "Cardinal.not_countable_real" in "Cardinal"
-
-NewTheorem Cardinal.not_countable_real

@@ -5,18 +5,12 @@ Level 8
 
 universe u
 
-open Module
+open Module Cardinal
 
-noncomputable section
-
-/- I am not sure whether we should introduce `R`-linear equivalence or
-  just introduce equivalence. -/
-
-Statement {K V ι : Type u} [Field K] [AddCommGroup V]
-    [Module K V] [Finite ι] (h_basis : Basis ι K V) : V ≃ₗ[K] (ι → K) := by
-  apply h_basis.equivFun
+Statement {α β : Type u} : #α ^ #β = #(β → α) := by
+  apply Cardinal.power_def
 
 /---/
-DefinitionDoc Module.Basis.equivFun as "Basis.equivFun" in "LinearAlgebra"
+TheoremDoc Cardinal.power_def as "Cardinal.power_def" in "Cardinal"
 
-NewDefinition Module.Basis.equivFun
+NewTheorem Cardinal.power_def
