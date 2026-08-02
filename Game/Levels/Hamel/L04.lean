@@ -6,6 +6,8 @@ Level 4
 
 open Finsupp
 
+Introduction "Intro Hamel L04"
+
 /- This level introduces `equivFunOnFinite`. -/
 
 /---/

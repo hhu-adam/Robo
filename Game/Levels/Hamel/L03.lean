@@ -4,6 +4,8 @@ import Game.Metadata
 World "Hamel"
 Level 3
 
+Introduction "Intro Hamel L03"
+
 /- # Introduction
 
 Besides adding vectors, we can *scale* them.  For a scalar `a : ℝ` and a vector

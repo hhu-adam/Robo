@@ -6,6 +6,8 @@ Level 3
 
 open Finset
 
+Introduction "Intro Terrace L03"
+
 /- This level introduces `Finset.min'_le`. -/
 
 /---/

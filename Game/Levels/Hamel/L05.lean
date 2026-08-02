@@ -6,6 +6,8 @@ Level 5
 
 open Finsupp
 
+Introduction "Intro Hamel L05"
+
 /- This level introduces `Fin.sum_univ_two`. -/
 
 /---/

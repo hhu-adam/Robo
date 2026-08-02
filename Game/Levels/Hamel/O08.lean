@@ -27,7 +27,7 @@ Statement :
     and `1` with `congrFun`."
   have h0 := congrFun h 0
   have h1 := congrFun h 1
-  simp_log [f, g] at h0 h1
+  simp [f, g] at h0 h1
   intro i
   fin_cases i
   · grind

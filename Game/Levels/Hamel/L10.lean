@@ -4,11 +4,18 @@ import Game.Metadata
 World "Hamel"
 Level 10
 
-Introduction "So far, linear (in)dependence was only about **finitely many**
+Introduction "Intro Hamel L10:
+
+So far, linear (in)dependence was only about **finitely many**
 vectors. Now: linear independence of an **infinite** family.
 
 For every `a : ℝ`, define the *bump* function
-`bump a := fun x ↦ if x = a then 1 else 0`.
+$$
+b_a(x) = \\begin{cases}
+  1 & \\text{if } x = a, \\\\\\\\ %(new line)
+  0 & \\text{otherwise.}
+\\end{cases}
+$$
 
 **Boss level:** show the family `bump a`, `a : ℝ`, is linearly independent."
 

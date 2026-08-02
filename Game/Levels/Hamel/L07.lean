@@ -5,6 +5,8 @@ Level 7
 
 open Finsupp
 
+Introduction "Intro Hamel L07"
+
 Statement :
     let f : ℝ → ℝ := fun x ↦ x + 2
     let g : ℝ → ℝ := fun x ↦ x - 3
@@ -19,13 +21,13 @@ Statement :
     $$
     and you have to compute their linear combination `2 • f + 3 • g`. Unfold it the same
     way as in the previous level."
-  Hint (hidden := true) "[] Rewrite the goal using `linearCombination_apply` to unfold the
-    definition of `linearCombination` and `sum_fintype` to transform the summation."
+  Hint (hidden := true) "[Hint lc2unf] Rewrite the goal using `linearCombination_apply` to unfold the
+    definition of `linearCombination`, and `sum_fintype` to transform the summation."
   rw [linearCombination_apply]
   rw [sum_fintype]
-  · Hint (hidden := true) "[] Remember the theorem `Fin.sum_univ_two`."
+  · Hint (hidden := true) "[Hint lc2sum] Remember the theorem `Fin.sum_univ_two`."
     rw [Fin.sum_univ_two]
-    Hint "[] Use `simp` to simplify "
+    Hint "[Hint lc2simp] Use `simp` to clean the goal up."
     simp
     funext x
     simp

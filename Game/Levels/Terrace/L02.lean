@@ -6,6 +6,8 @@ Level 2
 
 open Finset
 
+Introduction "Intro Terrace L02"
+
 /- In the previous level you showed that a nonempty finite set of reals has a
 smallest element. Mathlib packages this smallest element as `Finset.min'`.
 This level introduces `Finset.min'_mem`. -/

@@ -6,13 +6,15 @@ Level 4
 
 open Finset FullGrind
 
-Introduction "For every real number `a` we define the *step function*
+Introduction "Intro Terrace L04:
 
-```
-step a := fun x ↦ if x ≤ a then 0 else 1
-```
-
-which is `0` up to the point `a` and jumps to `1` after it.
+For every real number `a` we define the *step function*
+$$
+f_a(x) = \\begin{cases}
+  0 & \\text{if } x \\le a, \\\\\\\\ %(new line)
+  1 & \\text{if } x > a,
+\\end{cases}
+$$
 
 **Boss level:** show that the family of *all* step functions `step a`, `a : ℝ`,
 is linearly independent in the function space `ℝ → ℝ` — an uncountable
@@ -58,11 +60,9 @@ Statement : LinearIndependent ℝ step := by
   rw [linearIndependent_iff']
   intro s g
   -- induction on the finite support, peeling off the *smallest* index each time
-  induction s using Finset.induction_on_min with
-  | empty =>
-    simp
-  | insert a s ha ih =>
-    have has : a ∉ s := by grind
+  induction s using Finset.induction_on_min with a s ha ih
+  · simp
+  · have has : a ∉ s := by grind
     intro hg i hi
     -- pick a sample point `x` with `a < x ≤ b` for all `b ∈ s`
     obtain hexist : ∃ x, a < x ∧ ∀ b ∈ s, x ≤ b := by
