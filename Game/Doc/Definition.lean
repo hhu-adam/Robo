@@ -677,3 +677,36 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+Let `α, β` be two types, `α ≃ β` is the type of functions from `α → β` with a two-sided inverse.
+-/
+DefinitionDoc Equiv as "≃" in "Logic"
+
+/--
+Let `R` be a semiring and let `M, N` be two `R`-modules.
+`M →ₗ[R] N` is the type of `R`-linear maps from `M` to `N`, i.e. maps `f` satisfying
+`f (x + y) = f x + f y` and `f (r • x) = r • f x`.
+
+Such an `f` can be applied to elements of `M` just like an ordinary function.
+The arrow is typed `\to\_l`.
+-/
+DefinitionDoc LinearMap as "→ₗ[·]" in "LinearAlgebra"
+
+/--
+Let `R` be a semiring and let `M, N` be two `R`-modules.
+`M ≃ₗ[R] N` is the type of `R`-linear equivalences from `M` to `N`, i.e. linear maps
+`M →ₗ[R] N` that have a two-sided inverse which is again linear.
+
+If you only care about the underlying bijection, use `LinearEquiv.toEquiv`.
+-/
+DefinitionDoc LinearEquiv as "≃ₗ[·]" in "LinearAlgebra"
+
+/--
+For an `R`-linear equivalence `e`, `e : M ≃ₗ[R] N`, `e.toEquiv` is the underlying
+bijection `M ≃ N`: the same map, but with the linearity forgotten.
+
+You need this whenever a statement asks for a plain equivalence of types, for example
+to compare the cardinalities of `M` and `N`.
+-/
+DefinitionDoc LinearEquiv.toEquiv as "LinearEquiv.toEquiv" in "LinearAlgebra"
