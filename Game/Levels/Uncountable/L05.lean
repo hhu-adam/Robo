@@ -15,7 +15,7 @@ Statement : (Set.univ : Set ℚ).Countable := by
   Hint "[Hint univQ] Since `ℚ` is countable, every set of rationals is countable.
     The theorem `Set.countable_univ` says exactly this for the universal set."
   rw [← Cardinal.le_aleph0_iff_set_countable]
-  simp_log
+  simp
 
 /---/
 TheoremDoc Cardinal.le_aleph0_iff_set_countable as "Cardinal.le_aleph0_iff_set_countable" in "Cardinal"

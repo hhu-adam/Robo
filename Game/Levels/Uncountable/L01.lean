@@ -10,6 +10,9 @@ open Function FullGrind
 /---/
 DefinitionDoc nat_equiv_int as "nat_equiv_int" in "Cardinal"
 
+/---/
+TheoremDoc nat_equiv_int as "nat_equiv_int" in "Cardinal"
+
 Statement nat_equiv_int : ℕ ≃ ℤ := by
   Hint "[Hint eofBij] First construct a bijection and use the theorem
     `Equiv.ofBijective`"

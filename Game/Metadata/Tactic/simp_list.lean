@@ -205,6 +205,9 @@ attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
 -- Slope, L06:
 attribute [game_simp] nhdsWithin_univ eq_self
 
+-- Uncountable, L05:
+attribute [game_simp] Cardinal.mk_univ Cardinal.mk_eq_aleph0 Std.le_refl
+
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
 

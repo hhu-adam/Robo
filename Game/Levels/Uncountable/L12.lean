@@ -42,7 +42,6 @@ Statement : ¬ FiniteDimensional ℚ ℝ := by
   by_contra h
   apply Cardinal.not_countable_real
   rw [← Cardinal.le_aleph0_iff_set_countable]
-  rw [Cardinal.mk_univ]
-  let B := Basis.ofVectorSpace ℚ ℝ
-  apply cardinal_eq_of_finite_basis _ B
+  simp
+  apply cardinal_eq_of_finite_basis _ (Basis.ofVectorSpace ℚ ℝ)
   apply Cardinal.mk_eq_aleph0 ℚ
