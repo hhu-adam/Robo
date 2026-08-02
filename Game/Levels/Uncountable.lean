@@ -9,6 +9,7 @@ import Game.Levels.Uncountable.L08
 import Game.Levels.Uncountable.L09
 import Game.Levels.Uncountable.L10
 import Game.Levels.Uncountable.L11
+import Game.Levels.Uncountable.L12
 
 /-!
 The planet `Uncountable` talks about countable and uncountable sets:

@@ -37,7 +37,10 @@ Conclusion "Conclusion Cantor L11"
 
 open Nat Set Function
 
-Statement : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
+/---/
+TheoremDoc not_surjective_nat_seq as "not_surjective_nat_seq" in "Function"
+
+Statement not_surjective_nat_seq : ¬ ∃ f : ℕ → ℕ → ℕ, Surjective f := by
   push Not
   intro f
   by_contra hf
