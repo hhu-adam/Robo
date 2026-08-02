@@ -38,3 +38,4 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 
 /- For `Countable ℚ`.-/
 import Mathlib.Data.Rat.Encodable
+import Mathlib.Topology.LocallyConstant.Basic
