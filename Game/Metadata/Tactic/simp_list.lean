@@ -103,6 +103,9 @@ attribute [game_simp] Fin.isValue Nat.succ_eq_add_one Nat.reduceAdd Matrix.cons_
 -- Hamel, L09:
 attribute [game_simp] Nat.succ_eq_add_one Nat.reduceAdd Fin.sum_univ_two Fin.isValue Matrix.cons_val_zero Matrix.cons_val_one Matrix.cons_val_fin_one neg_smul one_smul ne_eq Fin.exists_fin_two OfNat.ofNat_ne_zero not_false_eq_true neg_eq_zero one_ne_zero or_self and_true Pi.add_apply Pi.smul_apply smul_eq_mul Pi.neg_apply neg_add_rev Pi.zero_apply
 
+-- Hamel, L10:
+attribute [game_simp] Finset.sum_apply Pi.smul_apply smul_eq_mul mul_ite mul_one MulZeroClass.mul_zero Finset.sum_ite_eq reduceIte Pi.zero_apply
+
 -- Iso, L01_Bijective:
 attribute [game_simp] add_left_inj sub_add_cancel eq_self
 

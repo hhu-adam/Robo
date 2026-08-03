@@ -42,7 +42,7 @@ Statement : LinearIndependent ℝ bump := by
   Hint (hidden := true) "[Hint bmpsimp] Evaluate `hg` at the point `a` using
     `congrFun`, then let `simp [bump, Finset.sum_apply]` collapse the sum."
   have hx := congrFun hg a
-  simp [bump, Finset.sum_apply, ha] at hx
+  simp [bump, ha] at hx
   grind
 
 NewDefinition bump

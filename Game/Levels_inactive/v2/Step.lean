@@ -34,7 +34,7 @@ theorem linearIndependent_step : LinearIndependent ℝ step := by
       have hx := congrFun hg x
       -- simp at hx
       have h_sum : (∑ i ∈ s, g i • step i) x = 0 := by
-        rw [Finset.sum_apply]
+        simp
         apply sum_eq_zero
         intro t ht
         simp [step]
