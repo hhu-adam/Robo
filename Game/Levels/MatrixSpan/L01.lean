@@ -5,16 +5,7 @@ Level 1
 
 Title "Scaling Vectors"
 
-Introduction "Welcome to *Span*.
-
-The mathematical stage for this world is a **module**. Let $R$ be a ring. An $R$-module $M$ is
-a set equipped with addition and scalar multiplication by $R$, satisfying some compatibility
-conditions. In particular, if $R$ is a field, then a module is just a *vector space*.
-
-The notation for scalar multiplication is `•`, which is written `\\smul`.
-Scaling interacts with addition exactly the way you would hope: it distributes over sums in
-two ways.
-
+Introduction "Intro Span L01:
 In this level you will combine these to simplify a linear combination.
 "
 
@@ -40,7 +31,6 @@ Statement {R M : Type*} [CommRing R] [AddCommMonoid M] [Module R M] (x y : M) :
   rw [← add_smul]
   ring
   rw [one_smul]
-
 
 NewTheorem smul_add add_smul one_smul
 

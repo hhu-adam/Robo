@@ -11,4 +11,10 @@ import Game.Levels.MatrixSpan.L09
 World "Span"
 Title "Span"
 
-Introduction "Intro Span"
+Introduction "Intro Span:
+Welcome to *Span*.
+
+The mathematical stage for this world is a **module**. Let $R$ be a ring. An $R$-module $M$ is
+a set equipped with addition and scalar multiplication by $R$, satisfying some compatibility
+conditions. In particular, if $R$ is a field, then a module is just a *vector space*.
+"

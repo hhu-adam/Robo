@@ -582,3 +582,11 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
+
+/-- The notation for scalar multiplication is `•`, which is written `\\smul`.
+Scaling interacts with addition exactly the way you would hope: it distributes over sums in
+two ways. -/
+DefinitionDoc SMul as "•" in "LinearAlgebra"
+
+/-- `Submonoid.powers A` is the submonoid of all powers `A ^ n` of `A`. -/
+DefinitionDoc Submonoid.powers as "Submonoid.powers" in "LinearAlgebra"

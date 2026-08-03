@@ -27,3 +27,18 @@ example : Submodule ℝ (Fin 2 → ℝ) where
     intro c x hx
     simp at hx ⊢
     grind
+
+
+/- The player cannot invent the `carrier` themselves, so we hand it to them with the
+`preamble` option of `Statement` (see lean4game issue #46): the preamble runs before the
+level is shown, fills in the data field and leaves the three `Prop`-valued fields as goals. -/
+Statement (preamble := refine' { carrier := {v : Fin 2 → ℝ | 3 * v 0 - v 1 = 0}, .. }) :
+    Submodule ℝ (Fin 2 → ℝ) := by
+  · intro a b ha hb
+    rw [mem_setOf] at *
+    simp
+    grind
+  · simp
+  · intro c x hx
+    simp at hx ⊢
+    grind

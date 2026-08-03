@@ -94,8 +94,11 @@ attribute [game_simp] Fin.isValue Pi.add_apply Set.mem_setOf_eq Pi.zero_apply Mu
 -- MatrixSpan, L03:
 attribute [game_simp] SetLike.mem_coe
 
+-- MatrixSpan, L08:
+attribute [game_simp] MulZeroClass.zero_mul MulZeroClass.mul_zero eq_self
+
 -- MatrixSpan, L09:
-attribute [game_simp] Matrix.single_apply_same Fin.mk_eq_zero Nat.add_eq_zero_iff one_ne_zero and_false and_self not_false_eq_true Matrix.single_apply_of_ne
+attribute [game_simp] Submodule.mem_top Matrix.single_apply_same Fin.mk_eq_zero Nat.add_eq_zero_iff one_ne_zero and_false and_self not_false_eq_true Matrix.single_apply_of_ne
 
 -- Mono, L01_Injective:
 attribute [game_simp] add_left_inj imp_self
