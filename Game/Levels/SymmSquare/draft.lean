@@ -45,3 +45,17 @@ noncomputable def cardQuotientEquivNat (α : Type*) [Infinite α] :
       intro n
       obtain ⟨s, hs⟩ := Infinite.exists_subset_card_eq α n
       exact ⟨⟦s⟧, hs⟩
+
+noncomputable def isoQuotientEquivNat (α : Type*) [Infinite α] :
+    Quotient (isoSetoid) ≃ ℕ := by
+  apply Equiv.ofBijective (Quotient.lift Finset.card (fun _ _ h ↦ (isoSetoid_iff_card _ _).mp h))
+  constructor
+  · intro x y h
+    induction x using Quotient.ind
+    induction y using Quotient.ind
+    apply Quotient.sound
+    apply (isoSetoid_iff_card _ _ ).mpr h
+  · intro n
+    obtain ⟨s, hs⟩ := Infinite.exists_subset_card_eq ℝ n
+    use ⟦s⟧
+    assumption

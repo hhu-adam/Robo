@@ -582,3 +582,33 @@ DefinitionDoc MvPolynomial as "MvPolynomial"
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Sym2.Rel as "Sym2.Rel" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Sym2 as "Sym2" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Setoid as "Setoid" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Sym2.Rel.setoid as "Rel.setoid" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Quotient.mk as "Quotient.mk" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Quotient.lift as "Quotient.lift" in "Quotient"

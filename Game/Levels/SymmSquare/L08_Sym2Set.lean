@@ -51,8 +51,8 @@ theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
     · rw [card_eq_one] at h
       obtain ⟨s, hs⟩ := h
       use s, s
-      simp
-      grind
+      rw [hs]
+      simp_log
       -- assumption
     · rw [card_eq_two] at h
       obtain ⟨s, t, _h₁, h₂⟩ := h

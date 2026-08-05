@@ -3,8 +3,6 @@ import Game.Metadata
 World "Symmetric Square"
 Level 1
 
-Title "" -- "Symmetric square relation is transitive"
-
 Introduction
 "
 
@@ -38,5 +36,12 @@ Statement Sym2.Rel.trans {A : Type*} {x y z : A × A} :
   · cases h₂
     · apply Sym2.Rel.swap
     · rfl
+
+/---/
+TheoremDoc Sym2.Rel.swap as "Sym2.Rel.swap" in "Quotient"
+
+NewTheorem Sym2.Rel.swap
+
+NewDefinition Sym2.Rel
 
 TheoremTab "Quotient"

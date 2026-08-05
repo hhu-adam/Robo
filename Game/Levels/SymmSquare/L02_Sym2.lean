@@ -4,8 +4,6 @@ import Game.Metadata
 World "Symmetric Square"
 Level 2
 
-Title "" -- "Permutation Equivalence Relation"
-
 Introduction
 "
 A setoid structure on a type `A` provides an equivalence relation (aka congruence)
@@ -30,14 +28,12 @@ Statement Sym2.pair_rel_iff {A : Type*} {x y z w : A} : (x, y) ≈ (z, w) ↔ x 
   constructor
   · intro h
     cases h
-    grind
-    grind
+    · grind
+    · grind
   · intro h
     cases h
     · rw [h_1.1, h_1.2]
     · rw [h_1.1, h_1.2]
       apply Sym2.Rel.swap
 
-
-NewTheorem Sym2.rel_iff
 TheoremTab "Quotient"

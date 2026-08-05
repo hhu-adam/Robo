@@ -35,10 +35,10 @@ Statement Sym2.liftEquiv {A B : Type*} :
   constructor
   · intro f
     constructor
-    · exact fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
+    · apply fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
     · intro a₁ a₂
       Branch
-        dsimp
+        simp
         congr 1
         apply Quotient.sound
         apply Sym2.Rel.swap
@@ -46,13 +46,12 @@ Statement Sym2.liftEquiv {A B : Type*} :
       apply Quotient.sound
       apply Sym2.Rel.swap
   · intro f
-    exact Quotient.lift (uncurry f.1) <| by
+    apply Quotient.lift (uncurry f.1) <| by
       intro ⟨x₁, x₂⟩ ⟨y₁, y₂⟩ h
       simp [uncurry]
-      --simp [Sym2.pair_rel_iff] at h
       cases h
       · rfl
-      · exact f.2 x₁ x₂
+      · apply f.2 x₁ x₂
   · simp [LeftInverse]
     intro f
     ext q
@@ -63,11 +62,16 @@ Statement Sym2.liftEquiv {A B : Type*} :
     rw [← hp]
     simp [uncurry]
     rfl
-  · dsimp [Function.RightInverse]
-    dsimp [LeftInverse]
+  · simp [Function.RightInverse, LeftInverse]
     intro f
-    simp only [Subtype.coe_eta]
+    rfl
 
+example {A B : Type*} :
+    (Sym2 A → B) ≃ { f : (A × A) → B | ∀ x, f x = f (x.swap) } :=
+  sorry
+
+/---/
+TheoremDoc Quotient.exists_rep as "Quotient.exists_rep" in "Quotient"
 
 NewTheorem Quotient.exists_rep
 TheoremTab "Quotient"

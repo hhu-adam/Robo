@@ -4,8 +4,6 @@ import Game.Metadata
 World "Symmetric Square"
 Level 3
 
-Title "" -- "Equal Unordered Pairs"
-
 Introduction
 "
 
@@ -28,6 +26,13 @@ Statement : (⟦ (1, -2) ⟧ : Sym2 ℤ) = ⟦ (-2, 1) ⟧ := by
   apply Quotient.sound
   apply Sym2.Rel.swap
 
+/-- -/
+TheoremDoc Quotient.sound as "Qutient.sound" in "Qutient"
+
+/-- -/
+TheoremDoc Quotient.eq as "Qutient.eq" in "Qutient"
 
 NewTheorem Quotient.sound Quotient.eq
+NewDefinition Sym2
+
 TheoremTab "Quotient"

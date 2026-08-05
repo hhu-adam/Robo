@@ -27,7 +27,7 @@ Statement {A B : Type*} (f : Sym2 A → B) :
     let s := Sym2.Rel.setoid A
     ∀ a₁ a₂, (f ∘ Quotient.mk s) (a₁ , a₂) = (f ∘ Quotient.mk s) (a₂ , a₁) := by
   intro a₁ a₂
-  dsimp
+  simp
   Branch
     congr 1
     apply Quotient.sound
@@ -35,3 +35,5 @@ Statement {A B : Type*} (f : Sym2 A → B) :
   apply congr_arg f
   apply Quotient.sound
   apply Sym2.Rel.swap
+
+NewDefinition Setoid Quotient.mk
