@@ -21,7 +21,11 @@ TheoremDoc Submodule.subset_span as "Submodule.subset_span" in "LinearAlgebra"
 Statement Submodule.subset_span {R : Type} {M : Type} [CommRing R]
     [AddCommMonoid M] [Module R M] {S : Set M} :
     S ⊆ ↑(Submodule.span R S) := by
+  Hint "[] Remember that it suffices to prove for all `x : M` and `x ∈ S`, then
+    `x ∈ ↑(Submodule.span R S)`."
+  Hint (hidden := true) "[] Try `intro x hxS`."
   intro x hxS
+  Hint "[] Simplify using `Submodule.mem_span`."
   simp [Submodule.mem_span]
   intro P hP
   apply hP hxS

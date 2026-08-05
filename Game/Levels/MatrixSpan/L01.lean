@@ -3,8 +3,6 @@ import Game.Metadata
 World "Span"
 Level 1
 
-Title "Scaling Vectors"
-
 Introduction "Intro Span L01:
 In this level you will combine these to simplify a linear combination.
 "
