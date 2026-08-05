@@ -15,7 +15,7 @@ Introduction
 -/
 Introduction "Intro Babylon L04"
 
-open Finset
+open Finset FullGrind
 
 Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
   /-
@@ -82,6 +82,10 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     -/
     Hint "Assumptions have to entail ${i}=0$ or ${i}=1$ or ${i}=2$. Try `have`"
     have h : i = 0 ∨ i = 1 ∨ i = 2 := by
+      Branch
+        Hint (hidden := true) "Try `simp` & `omega`"
+        simp at h0 h3
+        omega
       grind
       /-
       Hint (hidden := true) "
@@ -94,7 +98,15 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
       **Robo**:  Die Annahme {h} kannst du ja jetzt mit `obtain h | h | h  := {h}` in die drei Fälle aufteilen.
     "
     -/
-    Hint (hidden := true) "[Babylon] Split `{h}` with `obtain`: `obtain h | h | h  := {h}`"
+    Branch
+      Hint (hidden := true) "[Babylon] Split `{h}` with `obtain`: `obtain h | h | h  := {h}`"
+      obtain h | h | h  := h
+      · rw [h]
+        ring
+      · rw [h]
+        ring
+      · rw [h]
+        ring
     grind
 
 /---/

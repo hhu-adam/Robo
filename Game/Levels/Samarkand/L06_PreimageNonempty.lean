@@ -1,6 +1,6 @@
 import Game.Levels.Samarkand.L05_InjectiveFibre
 
-open Function Set
+open Function Set FullGrind
 
 World "Samarkand"
 Level 6
@@ -22,10 +22,14 @@ Statement {A B : Type} (f : A → B)  (y : B) :
    Um das anzuwenden, musst du nur das Ungleichheitszeichen auflösen, zum Beispiel einfach mit `unfold Ne`.
   "
   -/
-  Hint "Explain that `b` is not empty iff `b` has pre-image. Remind of `eq_empty_iff_forall_notMem` that can be used after `unfold Ne`"
-  unfold Ne
-  rw [eq_empty_iff_forall_notMem]
-  simp
+  constructor
+  · grind
+  · intro h
+    obtain ⟨a, ha⟩ := h
+    unfold Ne
+    rw [eq_empty_iff_forall_notMem]
+    simp
+    use a
 
    /-
   Conclusion "

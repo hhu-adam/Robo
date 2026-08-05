@@ -4,6 +4,8 @@ import Game.Levels.Cafe.L03_Lt_grind
 import Game.Levels.Cafe.L04_Grind_ring
 import Game.Levels.Cafe.L05_Split_if
 import Game.Levels.Cafe.L06_Lia
+import Game.Levels.Cafe.L07
+import Game.Levels.Cafe.L08
 
 /-!
 The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) and `linarith` (for ℝ).

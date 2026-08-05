@@ -37,15 +37,18 @@ Statement :
   intro a b
   Branch
     simp [f]
-  intro ha
-  /-
-  Hint (hidden := true)
-  "**Robo**: Ich glaube, du solltest jetzt mit der Definition von `{f}` die
-  Annahme `{ha}` vereinfachen."
-  -/
-  Hint (hidden := true) "Use `{f}` to simplify assumption `{ha}`"
-  simp [f] at ha
-  assumption
+  Branch
+    -- old proof
+    intro ha
+    /-
+    Hint (hidden := true)
+    "**Robo**: Ich glaube, du solltest jetzt mit der Definition von `{f}` die
+    Annahme `{ha}` vereinfachen."
+    -/
+    Hint (hidden := true) "Use `{f}` to simplify assumption `{ha}`"
+    simp [f] at ha
+    assumption
+  grind
 
 NewDefinition Function.Injective
 TheoremTab "Function"
