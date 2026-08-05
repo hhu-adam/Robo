@@ -4,10 +4,8 @@ import Game.Metadata
 World "Symmetric Square"
 Level 6
 
-Title "" -- "Unordered pairs on diagonal"
-
 Introduction
-"
+"Intro Symm L06:
 We shall henceforth use the notation `s(x, y)` for the quotient element `⟦(x, y)⟧` of `Sym2 A`.
 
 By definition `s(x, y)` is the unordered pair of `x` and `y`. That is, `s(x, y) = s(y, x)`.

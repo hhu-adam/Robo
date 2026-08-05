@@ -4,10 +4,8 @@ import Game.Levels.SymmSquare.L02_Sym2
 World "Symmetric Square"
 Level 7
 
-Title "" -- "Classifying Symmetric Functions"
-
 Introduction
-"
+"Intro Symmm L07:
 
 A function `f : A → B` respects the congruence `r` on `A` if `f x = f y`, for every `r`-congruent
 elements `x y : A`.

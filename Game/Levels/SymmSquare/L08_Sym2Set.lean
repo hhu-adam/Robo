@@ -4,10 +4,8 @@ import Game.Levels.SymmSquare.L02_Sym2
 World "Symmetric Square"
 Level 8
 
-Title "" -- "Classifying Symmetric Functions"
-
 Introduction
-"
+"Intro Symm L08:
 In this level you show that there is a 1-1 correspondence between unordered pairs and subsets
 with 1 or 2 elements.
 "
@@ -57,7 +55,8 @@ theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
     · rw [card_eq_two] at h
       obtain ⟨s, t, _h₁, h₂⟩ := h
       use s, t
-  · rintro ⟨a, b, rfl⟩
+  · intro h
+    obtain ⟨a, b, rfl⟩ := h
     grind
     -- simp
 

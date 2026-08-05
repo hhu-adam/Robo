@@ -1,13 +1,10 @@
 import Game.Metadata
 
-
 World "Symmetric Square"
 Level 5
 
-Title "" -- "Symmetric Function"
-
 Introduction
-"
+"Intro Symm L05:
 
 A symmetric function of two variables is a function that is invariant under permutation
 of its arguments. For example, the function `f x y = | x - y |` is symmetric, because

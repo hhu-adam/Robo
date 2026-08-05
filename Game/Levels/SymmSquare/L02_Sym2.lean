@@ -5,7 +5,7 @@ World "Symmetric Square"
 Level 2
 
 Introduction
-"
+"Intro Symm L02:
 A setoid structure on a type `A` provides an equivalence relation (aka congruence)
 `r : A → A → Prop`.
 

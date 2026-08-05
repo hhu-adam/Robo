@@ -5,7 +5,7 @@ World "Symmetric Square"
 Level 4
 
 Introduction
-"
+"Intro Symm L04:
 We have already observed that if `a ≈ b`, then `⟦a⟧ = ⟦b⟧`. The converse is also true, and
 is witnessed by `Quotient.eq`.
 

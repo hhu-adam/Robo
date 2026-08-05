@@ -4,7 +4,7 @@ World "Symmetric Square"
 Level 1
 
 Introduction
-"
+"Intro Symm L01:
 
 An unordered pair is a collection of two elements that are not ordered.
 For example, the unordered pair `{1,2}` is the same as the unordered pair `{2, 1}`.
@@ -19,8 +19,6 @@ In this level you show that the relation defined by these rules is transitive.
 "
 
 open Sym2
-
-
 
 /-- -/
 TheoremDoc Sym2.Rel.trans as "Sym2.Rel.trans" in "Relations"
