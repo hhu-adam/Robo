@@ -10,7 +10,7 @@ In this level you show that there is a 1-1 correspondence between unordered pair
 with 1 or 2 elements.
 "
 
-open Function Sym Finset Set Quotient
+open Function Sym Finset Set Quotient FullGrind
 
 -- PRd to mathlib #13302 -- declined (?)
 @[simp]
