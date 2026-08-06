@@ -19,4 +19,6 @@ Statement Sym_g : {f : A → A → B | ∀ a b, f a b = f b a} → (Sym2 A → B
   intro a b hab
   cases hab
   · rfl
-  apply f.2
+  · apply f.2
+
+NewDefinition Quotient.lift Function.uncurry

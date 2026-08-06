@@ -707,3 +707,8 @@ DefinitionDoc Quotient.mk as "Quotient.mk" in "Quotient"
 TO ADD.
 -/
 DefinitionDoc Quotient.lift as "Quotient.lift" in "Quotient"
+
+/--
+TO ADD.
+-/
+DefinitionDoc Function.uncurry as "Function.uncurry" in "Function"

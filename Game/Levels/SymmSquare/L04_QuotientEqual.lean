@@ -21,7 +21,7 @@ This is witnessed by `Quotient.eq`.
 attribute [local instance] Sym2.Rel.setoid
 
 Statement {p q : ℤ × ℤ} (h : (⟦ p ⟧ : Sym2 ℤ)  = ⟦ q ⟧) : p.1 + p.2 = q.1 + q.2 := by
-  simp [Quotient.eq] at h
+  rw [Quotient.eq] at h
   cases h
   · ring
   · ring
