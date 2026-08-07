@@ -695,6 +695,8 @@ relation `Sym2.Rel A`. Its elements are the *unordered pairs* of elements of `A`
 `(x, y)` and `(y, x)` become equal in the quotient.
 
 The unordered pair of `x` and `y` is written `⟦(x, y)⟧`, or with the special notation `s(x, y)`.
+
+To type the brackets `⟦` and `⟧`, write `\[[` and `\]]`.
 -/
 DefinitionDoc Sym2 as "Sym2" in "Quotient"
 
@@ -705,6 +707,8 @@ reflexive, symmetric and transitive.
 
 If `s` is available as an instance, one writes `a ≈ b` for `s.r a b`, and says that `a` and `b`
 are congruent modulo `s`.
+
+To type the symbol `≈`, write `\~~` (or `\approx`).
 -/
 DefinitionDoc Setoid as "Setoid" in "Quotient"
 

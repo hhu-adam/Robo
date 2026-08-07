@@ -12,6 +12,7 @@ A setoid structure on a type `A` provides an equivalence relation (aka congruenc
 Given a setoind `s` on `A`, the congruence `s.Rel` tells us which elements of `A` are related
 to each other by the relation `s.Rel`. We sometimes write `a ≈ b` if `a` and `b`
 are congruent modulo `s.Rel`, that is if `s.Rel a b` holds.
+To type the symbol `≈`, write `\\~~` (or `\\approx`).
 
 The relation `Sym2.Rel A` on `A × A` is an equivalence relation on `A × A` and as such
 it gives `A × A` a setoid structure.

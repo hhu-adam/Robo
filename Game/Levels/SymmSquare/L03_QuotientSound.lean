@@ -9,6 +9,7 @@ Introduction
 For a setoid `s` on a type `A`, the quotient type `Quotient s` is the type of elements of `A` modulo `s.Rel`.
 There is a function `Quotient.mk : A → Quotient s` which maps an element `a : A` to ``⟦a⟧`, a typical element of `Quotient s`.
 If elements `a b : A` are congruent, then `⟦a⟧ = ⟦b⟧`. This fact is witnessed by `Quotient.sound`.
+To type the brackets `⟦` and `⟧`, write `\\[[` and `\\]]`.
 
 "
 
