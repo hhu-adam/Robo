@@ -1,6 +1,5 @@
 import Game.Metadata
 
-
 World "Hamel"
 Level 1
 

@@ -706,6 +706,20 @@ linearCombination R v l = l.sum fun i a => a • v i
 DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
 
 /--
+On a finite index type `α`, every function is finitely supported, so the two ways of writing
+down a family of coefficients agree. `equivFunOnFinite` is this identification:
+```
+equivFunOnFinite : (α →₀ M) ≃ (α → M)
+```
+It reads a finitely supported family as an ordinary function, and its inverse
+`equivFunOnFinite.symm` turns an ordinary function back into a finitely supported one.
+
+So `equivFunOnFinite.symm ![1, 2]` is the coefficient family `![1, 2]`, in the form
+that `linearCombination` expects.
+-/
+DefinitionDoc Finsupp.equivFunOnFinite as "Finsupp.equivFunOnFinite" in "LinearAlgebra"
+
+/--
 `a • v` is the *scalar multiplication* of the vector `v` by the scalar `a`.
 
 For example, for a scalar `a : ℝ` and a vector `v : Fin n → ℝ`, the scalar multiple
