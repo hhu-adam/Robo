@@ -11,9 +11,6 @@ Introduction "Intro Hamel L06"
 /- This level introduces `linearCombination`. -/
 
 /---/
-DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
-
-/---/
 TheoremDoc Finsupp.linearCombination_apply as "Finsupp.linearCombination_apply" in "LinearAlgebra"
 
 /---/
