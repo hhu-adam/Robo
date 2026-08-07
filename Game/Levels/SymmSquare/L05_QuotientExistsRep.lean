@@ -26,7 +26,8 @@ attribute [local instance] Sym2.Rel.setoid
 Statement {A : Type*} (q : Sym2 A) : ∃ a b : A, (⟦ (a, b) ⟧ : Sym2 A) = q := by
   Hint "An element of `Sym2 A` is a class of *pairs*, so a representative of `{q}` is a
   pair `(a, b) : A × A`. Obtain one with `Quotient.exists_rep`."
-  obtain ⟨⟨a, b⟩, hab⟩ := Quotient.exists_rep q
+  obtain h := Quotient.exists_rep q
+  obtain ⟨⟨a, b⟩, hab⟩ := h
   Hint (hidden := true) "Now `{a}` and `{b}` are the two elements you are looking for."
   use a, b
 
