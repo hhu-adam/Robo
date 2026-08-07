@@ -240,6 +240,16 @@ i.e., the number of elements in `A`.
 DefinitionDoc Finset.card as "card" in "Finset"
 
 /--
+For a *nonempty* finite subset `A : Finset T` of a linear order,
+`A.min' hA : T` is its smallest element.
+The second argument `hA` is the proof that `A` is nonempty — without it there would be
+no smallest element to speak of.
+
+Being the smallest element, it is in particular an element of `A`: this is `Finset.min'_mem`.
+-/
+DefinitionDoc Finset.min' as "Finset.min'" in "Set"
+
+/--
 For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
 
 (`Fin n` is to be distinguished from `Icc 0 (n-1)`:

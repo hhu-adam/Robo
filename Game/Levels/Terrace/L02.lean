@@ -13,9 +13,6 @@ smallest element. Mathlib packages this smallest element as `Finset.min'`.
 This level introduces `Finset.min'_mem`. -/
 
 /---/
-DefinitionDoc Finset.min' as "Finset.min'" in "Set"
-
-/---/
 TheoremDoc Finset.min'_mem as "Finset.min'_mem" in "Set"
 
 Statement (s : Finset ℝ) (hs : s.Nonempty) : s.min' hs ∈ s := by
