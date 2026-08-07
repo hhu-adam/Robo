@@ -678,10 +678,8 @@ to expand this into the usual definition of the derivative in terms of the `slop
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
 
-/-- The notation for scalar multiplication is `•`, which is written `\\smul`.
-Scaling interacts with addition exactly the way you would hope: it distributes over sums in
-two ways. -/
-DefinitionDoc SMul as "•" in "LinearAlgebra"
-
 /-- `Submonoid.powers A` is the submonoid of all powers `A ^ n` of `A`. -/
 DefinitionDoc Submonoid.powers as "Submonoid.powers" in "LinearAlgebra"
+
+/-- `Submodule.span R S` is the smallest submodule containing the set `S`. -/
+DefinitionDoc Submodule.span as "Submodule.span" in "LinearAlgebra"

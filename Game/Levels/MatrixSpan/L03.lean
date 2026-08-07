@@ -33,9 +33,6 @@ Statement Submodule.subset_span {R : Type} {M : Type} [CommRing R]
 /---/
 TheoremDoc Submodule.mem_span as "Submodule.mem_span" in "LinearAlgebra"
 
-/-- `Submodule.span R S` is the smallest submodule containing the set `S`. -/
-DefinitionDoc Submodule.span as "Submodule.span" in "LinearAlgebra"
-
 NewTheorem Submodule.mem_span
 NewDefinition Submodule.span
 TheoremTab "LinearAlgebra"
