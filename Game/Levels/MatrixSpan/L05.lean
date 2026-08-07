@@ -34,7 +34,11 @@ Statement {V : Type*} [AddCommMonoid V] [Module ℝ V] (M : Set V) {x y : V}
     apply Submodule.mem_span_of_mem
     assumption
 
-/---/
+/--
+Let `M` be an `R`-module, let `x y` be elements in `M`, then `x + y` is an element
+in `M`.
+-/
 TheoremDoc AddMemClass.add_mem as "AddMemClass.add_mem" in "LinearAlgebra"
 
+/- Comment: Should we keep the namespace `AddMemClass` in this theorem.-/
 NewTheorem AddMemClass.add_mem

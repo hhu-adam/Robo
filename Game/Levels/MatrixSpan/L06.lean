@@ -26,8 +26,9 @@ Statement {n : ℕ} (A : Mat[n,n][ℝ]) : A * A ∈ Submonoid.powers A := by
   simp
   rw [pow_two]
 
-
-/---/
+/--
+Let `M` be a monid, `a` is an element in `M`, then `a ^ 2 = a * a`.
+-/
 TheoremDoc pow_two as "pow_two" in "+ *"
 
 NewTheorem pow_two

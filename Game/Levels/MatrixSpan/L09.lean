@@ -36,17 +36,11 @@ Statement {n : ℕ} (A : Mat[n+2,n+2][ℝ]) :
   obtain eq_aux := congr_fun₂ h₃ 0 0
   simp [E] at eq_aux
 
-/---/
+/--
+Let `f g` be a function of type `α → β → γ`, with assumption `h : f = g`,
+and let `x : α`, `y : β` then `f x y = g x y`. This can be obtained by
+`congr_fun₂ h x y`.
+-/
 TheoremDoc congr_fun₂ as "congr_fun₂" in "Function"
 
 NewTheorem congr_fun₂
-
-  -- part of old proof, broken.
-  -- unfold single at this
-  -- rw [if_neg] at this
-  -- simp at *
-  -- simp [Nat.succ_ne_zero]
-  -- intro h
-  -- norm_cast at h
-  -- injection h
-  -- simp at *

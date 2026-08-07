@@ -24,7 +24,10 @@ Statement powers_commute {n : ℕ} {A : Mat[n,n][ℝ]} (X Y : Mat[n,n][ℝ])
   obtain ⟨n, hY₁⟩ := hY
   rw [← hX₁, ← hY₁, ← pow_add, ← pow_add, add_comm]
 
-/---/
+/--
+Let `M` be a Monoid and let `n, m` be natural number, `a` be an element in `M`, then
+`a ^ (m + n) = a ^ m * a ^ n`
+-/
 TheoremDoc pow_add as "pow_add" in "+ *"
 
 /---/

@@ -15,7 +15,10 @@ containing `S`.
 
 open Real Function Set Finset
 
-/---/
+/--
+Let `M` be an `R`-module, let `s` be set of M, let `x` be an element of s,
+then x belongs to submodule spanned by s.
+-/
 TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAlgebra"
 
 Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]

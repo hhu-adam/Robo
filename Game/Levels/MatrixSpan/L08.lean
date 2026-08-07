@@ -51,13 +51,21 @@ Statement powers_span_commute {n : ℕ} {A : Mat[n,n][ℝ]}
   · intro c D E _ _ hDE
     rw [mul_smul_comm, smul_mul_assoc, hDE]
 
-/---/
+/--
+Let `M` be an `R`-module, let `r : R` and `x y : M` and then `(r • x) * y = r • (x * y)`.
+-/
 TheoremDoc smul_mul_assoc as "smul_mul_assoc" in "+ *"
 
-/---/
+/--
+Let `M` be an `R`-module, let `r : R` and `x y : M` and then`x * r • y = r • (x * y)`.
+-/
 TheoremDoc mul_smul_comm as "mul_smul_comm" in "+ *"
 
-/---/
+/--
+An induction principle for span membership of submodule. If proposition `p` holds for `0` and
+all elements of set `s`, and is preserved under addition and scalar multiplication, then `p` holds
+for all elements of the span of `s`.
+-/
 TheoremDoc Submodule.span_induction₂ as "Submodule.span_induction₂" in "LinearAlgebra"
 
 NewTheorem smul_mul_assoc mul_smul_comm Submodule.span_induction₂

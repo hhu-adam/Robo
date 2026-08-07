@@ -3,8 +3,7 @@ import Game.Metadata
 World "Span"
 Level 2
 
-Introduction
-"Intro Span L02:
+Introduction "Intro Span L02:
 Let $R$ be a ring and $M$ be an $R$-module. A submodule $N$ of $M$ is a subset that is closed under
 addition and scalar multiplication.
 
