@@ -54,6 +54,9 @@ to start a proof by contraposition.
 -/
 TacticDoc by_contra
 
+/---/
+TacticDoc cases
+
 
 /-
 `change t` ändert das Beweisziel zu `t`. Voraussetzung ist, dass `t` und das alte Beweisziel

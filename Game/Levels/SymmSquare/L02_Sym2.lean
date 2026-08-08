@@ -26,6 +26,9 @@ attribute [local instance] Sym2.Rel.setoid
 /- Two pairs are related by `Sym2.Rel` if they are permutations of each other. -/
 
 Statement Sym2.pair_rel_iff {A : Type*} {x y z w : A} : (x, y) ≈ (z, w) ↔ x = z ∧ y = w ∨ x = w ∧ y = z := by
+  Hint "[] `h : (x, y) ≈ (z, w)` means that `(x, y)` is equvalent to `(z, w)`.  In fact, that it
+    `x = z ∧ y = w` or `x = w ∧ y = z`. You can obtain this result by `cases h`."
+  Hint (hidden := true) "First, use `constructor`."
   constructor
   · intro h
     cases h

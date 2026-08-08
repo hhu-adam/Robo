@@ -23,7 +23,10 @@ Statement : (⟦ (1, -2) ⟧ : Sym2 ℤ) = ⟦ (-2, 1) ⟧ := by
   Branch
     simp [Quotient.eq]
     apply Sym2.Rel.swap
+  Hint "[] If `x` equivalent to `y`, i.e. `x ≈ y`, then we have that the equvalent class `⟦x⟧` and `⟦y⟧` agree in the quotient.
+    This is `Quotient.sound`."
   apply Quotient.sound
+  Hint "[] Remember the `Sym2.Rel` axiom `Sym2.Rel.swap`. "
   apply Sym2.Rel.swap
 
 /-- -/

@@ -27,10 +27,14 @@ Statement Sym2.Rel.trans {A : Type*} {x y z : A × A} :
     let r := Sym2.Rel A
     r x y → r y z → r x z := by
   intro h₁ h₂
+  Hint "[] `Sym2.Rel` is inductive type defined to be `refl` and `swap`. Use tactic
+    `cases` to discuss `{h₁}` by cases."
   cases h₁
-  · cases h₂
+  · Hint "[] Also discuss by cases about `{h₂}`."
+    cases h₂
     · rfl
-    · apply Sym2.Rel.swap
+    · Hint "[] This is exactly the axiom `Sym2.Rel.swap`."
+      apply Sym2.Rel.swap
   · cases h₂
     · apply Sym2.Rel.swap
     · rfl
@@ -41,5 +45,7 @@ TheoremDoc Sym2.Rel.swap as "Sym2.Rel.swap" in "Quotient"
 NewTheorem Sym2.Rel.swap
 
 NewDefinition Sym2.Rel
+
+NewTactic cases
 
 TheoremTab "Quotient"
