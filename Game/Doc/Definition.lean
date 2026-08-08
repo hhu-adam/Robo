@@ -717,3 +717,58 @@ You need this whenever a statement asks for a plain equivalence of types, for ex
 to compare the cardinalities of `M` and `N`.
 -/
 DefinitionDoc LinearEquiv.toEquiv as "LinearEquiv.toEquiv" in "LinearAlgebra"
+
+/--
+For a mapping `f : A → B` together with a proof `hf : Bijective f`,
+`Equiv.ofBijective f hf : A ≃ B` is the equivalence whose underlying mapping is `f`.
+
+This is the usual way to obtain an `A ≃ B`: construct a mapping, show that it is
+bijective, and hand both to `Equiv.ofBijective`.
+-/
+DefinitionDoc Equiv.ofBijective as "Equiv.ofBijective" in "Function"
+
+/--
+For a basis `b : Basis ι K V` with a *finite* index type `ι`,
+`b.equivFun : V ≃ₗ[K] (ι → K)` is the linear equivalence that sends a vector to its
+tuple of coordinates with respect to `b`.
+
+This is the precise version of the statement “a vector space with a basis of `n`
+elements looks like `Kⁿ`”.
+-/
+DefinitionDoc Module.Basis.equivFun as "Basis.equivFun" in "LinearAlgebra"
+
+/--
+For a field `K` and a `K`-vector space `V`, `Basis.ofVectorSpace K V` is a basis of `V`,
+indexed by `Basis.ofVectorSpaceIndex K V`.
+
+Every vector space has a basis, but there is no way to write one down in general – this
+definition picks one for you.
+-/
+DefinitionDoc Module.Basis.ofVectorSpace as "Basis.ofVectorSpace" in "LinearAlgebra"
+
+/--
+`Basis.ofVectorSpaceIndex K V : Set V` is the subset of `V` indexing the chosen basis
+`Basis.ofVectorSpace K V`, i.e. the set of its basis vectors.
+
+You need it whenever you have to name the index type of that basis.
+-/
+DefinitionDoc Module.Basis.ofVectorSpaceIndex as "Basis.ofVectorSpaceIndex" in "LinearAlgebra"
+
+/--
+A type `T` is countable if its elements can be enumerated by the natural numbers,
+i.e. if there is an injective mapping `T → ℕ`.
+
+Note that finite types are countable as well.
+-/
+DefinitionDoc Countable as "Countable" in "Cardinal"
+
+/--
+A type `T` is uncountable if it is *not* countable, i.e. if no enumeration by the
+natural numbers can reach all of its elements.
+
+With `rw [← not_countable_iff]` you turn a goal `Uncountable T` into `¬ Countable T`,
+which is usually the form you want to work with.
+Conversely, from an assumption `Uncountable T` you get `¬ Countable T` with
+`Uncountable.not_countable`.
+-/
+DefinitionDoc Uncountable as "Uncountable" in "Cardinal"

@@ -46,7 +46,4 @@ Statement nat_equiv_int : ℕ ≃ ℤ := by
   apply Equiv.ofBijective f
   assumption
 
-/---/
-DefinitionDoc Equiv.ofBijective as "Equiv.ofBijective" in "Function"
-
 NewDefinition Equiv.ofBijective

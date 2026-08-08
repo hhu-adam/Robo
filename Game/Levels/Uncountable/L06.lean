@@ -29,3 +29,5 @@ TheoremDoc Set.countable_univ_iff as "Set.countable_univ_iff" in "Cardinal"
 TheoremDoc Cardinal.not_countable_real as "Cardinal.not_countable_real" in "Cardinal"
 
 NewTheorem not_countable_iff Set.countable_univ_iff Cardinal.not_countable_real
+
+NewDefinition Uncountable

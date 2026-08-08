@@ -16,13 +16,9 @@ Statement {K V : Type u} [Field K] [AddCommGroup V] [Module K V] :
   Hint "[Hint basisEx] Every vector space has a basis. In Mathlib it is given by
     `Basis.ofVectorSpace K V`, indexed by the type `Basis.ofVectorSpaceIndex K V`."
   use Basis.ofVectorSpaceIndex K V
+  Hint (hidden := true) "[Hint nempB] `Nonempty` only asks you to produce an element, so
+    `constructor` leaves you with the task of exhibiting an actual basis."
   constructor
   apply Basis.ofVectorSpace
-
-/---/
-DefinitionDoc Module.Basis.ofVectorSpace as "Basis.ofVectorSpace" in "LinearAlgebra"
-
-/---/
-DefinitionDoc Module.Basis.ofVectorSpaceIndex as "Basis.ofVectorSpaceIndex" in "LinearAlgebra"
 
 NewDefinition Module.Basis.ofVectorSpace Module.Basis.ofVectorSpaceIndex
