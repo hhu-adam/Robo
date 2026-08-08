@@ -24,8 +24,9 @@ TheoremDoc Submodule.mem_span_of_mem as "Submodule.mem_span_of_mem" in "LinearAl
 Statement Submodule.mem_span_of_mem {V K : Type*} [Field K] [AddCommMonoid V]
     [Module K V] (M : Set V) {x : V} (h : x ∈ M) :
     x ∈ Submodule.span K M := by
-  Hint "[] Remember `Submodule.subset_span` in the previous level. "
-  Hint (hidden := true) "[] Apply `Submodule.subset_span`."
+  Hint "[Hint sp4subs] This is the previous level read pointwise: `Submodule.subset_span` says
+    the whole set `M` sits inside its span."
+  Hint (hidden := true) "[Hint sp4apsu] Apply `Submodule.subset_span`."
   apply Submodule.subset_span
   assumption
 

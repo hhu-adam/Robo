@@ -30,10 +30,11 @@ Statement powers_span_commute {n : ℕ} {A : Mat[n,n][ℝ]}
     | zero => rw [zero_mul, mul_zero]
     | add X₁ X₂ _ _ iX₁ iX₂ => rw [add_mul, mul_add, iX₁, iX₂]
     | smul c X _ iX => rw [smul_mul_assoc, mul_smul_comm, iX]
-  Hint (hidden := true) "[] Try to `apply Submodule.span_induction₂ _ _ _ _ _ _ _ {hX} {hY}`."
+  Hint (hidden := true) "[Hint sp8appi] Try to `apply Submodule.span_induction₂ _ _ _ _ _ _ _ {hX} {hY}`."
   apply Submodule.span_induction₂ _ _ _ _ _ _ _ hX hY
   · intro B C hB hC
-    Hint (hidden := true) "[] Remember the theorem `powers_commute` in the previous levels."
+    Hint (hidden := true) "[Hint sp8powc] The base case is `powers_commute` from the previous
+      level."
     apply powers_commute B C hB hC
   · intro Z _
     simp
