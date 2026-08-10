@@ -41,4 +41,4 @@ NewTactic ring
 TheoremDoc mul_comm as "mul_comm" in "+ *"
 
 NewTheorem mul_comm
-NewDefinition Fin MvPolynomial MvPolynomial.X
+NewDefinition Polynomial Polynomial.X

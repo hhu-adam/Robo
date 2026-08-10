@@ -52,6 +52,8 @@ Statement (z a b : ℤ) (h2b : 2*b = 100) (hb2 : b^2 = -100*a - a^2) (h :  z = (
   ring
 -/
 
+NewDefinition Fin MvPolynomial MvPolynomial.X
+
 TheoremTab "+ *"
 
 /-
