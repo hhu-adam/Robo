@@ -6,19 +6,7 @@ Level 4
 
 open Finset FullGrind
 
-Introduction "Intro Terrace L04:
-
-For every real number `a` we define the *step function*
-$$
-f_a(x) = \\begin{cases}
-  0 & \\text{if } x \\le a, \\\\\\\\ %(new line)
-  1 & \\text{if } x > a,
-\\end{cases}
-$$
-
-**Boss level:** show that the family of *all* step functions `step a`, `a : ℝ`,
-is linearly independent in the function space `ℝ → ℝ` — an uncountable
-linearly independent family!"
+Introduction "Intro Terrace L04"
 
 /-- `step a` is the step function that jumps at the point `a`: it takes the
 value `0` for `x ≤ a` and `1` for `x > a`. -/
@@ -38,23 +26,26 @@ DefinitionDoc step as "step" in "LinearAlgebra"
 /-- The family of all step functions `step a`, `a : ℝ`, is linearly independent
 in the function space `ℝ → ℝ`. -/
 Statement : LinearIndependent ℝ step := by
-  Hint "**Math Hint.** Suppose
+  Hint "[Hint stpfam] For every real number `a`, the step function `step a` jumps at `a`:
+    $$
+    f_a(x) = \\begin\{cases}
+      0 & \\text\{if } x \\le a, \\\\ %(new line)
+      1 & \\text\{if } x > a.
+    \\end\{cases}
+    $$
+    Here you show that *all* of them together — uncountably many — are linearly independent."
+  Hint "[Hint stpmin] Suppose a finite combination vanishes as a function,
 
-  ```
-  c₁ • step a₁ + c₂ • step a₂ + ⋯ + cₙ • step aₙ = 0    (a₁ < a₂ < ⋯ < aₙ)
-  ```
+    ```
+    c₁ • step a₁ + c₂ • step a₂ + ⋯ + cₙ • step aₙ = 0    (a₁ < a₂ < ⋯ < aₙ)
+    ```
 
-  as functions (using `linearIndependent_iff'`). Pick a point `x` between `a₁` and `a₂`. At this `x` the first
-  step function has already jumped, the others have not:
-  `step a₁ x = 1` but `step a₂ x = ⋯ = step aₙ x = 0`.
-  So evaluating the sum at `x` gives exactly `c₁ = 0`.
+    and pick a point `x` just after the smallest jump: there `step a₁ x = 1` while the others
+    have not jumped yet, so evaluating at `x` leaves exactly `c₁ = 0`. Peeling off the smallest
+    index over and over kills every coefficient in turn.
 
-  Now the first term is gone and the same argument kills `c₂`, then `c₃`, …
-  — every coefficient is `0`, which is linear independence.
-
-  *Repeatedly removing the smallest point* is precisely
-  `Finset.induction_on_min` (from an earlier level); the point `x` can be
-  chosen using `Finset.min'` of the remaining indices."
+    That peeling is `Finset.induction_on_min` from an earlier level, and the sample point `x`
+    can be built from `Finset.min'` of the remaining indices."
   Hint "[Hint iIdiff] Start with `rw [linearIndependent_iff']`, then induct on
     the index set using `Finset.induction_on_min`."
   rw [linearIndependent_iff']

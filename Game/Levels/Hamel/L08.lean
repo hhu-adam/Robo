@@ -5,9 +5,7 @@ Level 8
 
 open Finsupp
 
-Introduction "Intro Hamel L08:
-*Linear independence of three vectors*: the monomials `1`, `x`, `x ^ 2`.
-"
+Introduction "Intro Hamel L08"
 
 /---/
 TheoremDoc Fintype.linearIndependent_iff as "Fintype.linearIndependent_iff" in "LinearAlgebra"

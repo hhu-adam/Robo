@@ -3,20 +3,7 @@ import Game.Metadata
 World "Hamel"
 Level 10
 
-Introduction "Intro Hamel L10:
-
-So far, linear (in)dependence was only about **finitely many**
-vectors. Now: linear independence of an **infinite** family.
-
-For every `a : ℝ`, define the *bump* function
-$$
-b_a(x) = \\begin{cases}
-  1 & \\text{if } x = a, \\\\\\\\ %(new line)
-  0 & \\text{otherwise.}
-\\end{cases}
-$$
-
-**Boss level:** show the family `bump a`, `a : ℝ`, is linearly independent."
+Introduction "Intro Hamel L10"
 
 /-- `bump a` is `1` at `a` and `0` everywhere else. -/
 noncomputable
@@ -33,7 +20,17 @@ DefinitionDoc bump as "Function.bump" in "Function"
 /-- The family of all bump functions `bump a`, `a : ℝ`, is linearly independent
 in the function space `ℝ → ℝ`. -/
 Statement : LinearIndependent ℝ bump := by
-  Hint "[Hint bmpiff] Remember the theorem `linearIndependent_iff'`."
+  Hint "[Hint bmpinf] So far, linear independence concerned *finitely many* vectors; this
+    family is indexed by all of `ℝ`. Writing `b_a` for `bump a`,
+    $$
+    b_a(x) = \\begin\{cases}
+      1 & \\text\{if } x = a, \\\\ %(new line)
+      0 & \\text\{otherwise,}
+    \\end\{cases}
+    $$
+    and such an infinite family is linearly independent exactly when each of its *finite*
+    subfamilies is."
+  Hint (hidden := true) "[Hint bmpiff] Remember the theorem `linearIndependent_iff'`."
   rw [linearIndependent_iff']
   intro s g hg a ha
   Hint "[Hint bmpcong] `hg` is an equality of *functions*. Remember how we

@@ -3,11 +3,7 @@ import Game.Metadata
 World "Terrace"
 Level 1
 
-Introduction "
-Intro Terrace L01:
-On `Hamel` we prove that bump functions are linearly independent. In this planet we are
-going to prove *step functions* are linearly independent. First we discuss some
-results and techniques related to finite set."
+Introduction "Intro Terrace L01"
 
 open FullGrind
 
@@ -15,6 +11,9 @@ open FullGrind
 TheoremDoc Finset.induction_on_min as "Finset.induction_on_min" in "Set"
 
 Statement {s : Finset ℝ} {hs : s.Nonempty} : ∃ a ∈ s, ∀ b ∈ s, a ≤ b := by
+  Hint "On `Hamel` we prove that bump functions are linearly independent. In this planet we are
+  going to prove *step functions* are linearly independent. First we discuss some
+  results and techniques related to finite set."
   Hint "[Hint indmin] `Finset.induction_on_min` is induction on a finite set:
   prove the statement for `∅`, then show it survives inserting an element `a`
   that is **smaller than everything** already present (`ha`). Template:

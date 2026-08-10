@@ -3,7 +3,7 @@ import Game.Metadata
 World "Hamel"
 Level 2
 
-Introduction "Intro Hamel L02: Vectors are functions, we define their addition pointwise."
+Introduction "Intro Hamel L02"
 
 Statement : ![1, 1 / 2] + ![- (1 : ℝ), 1 / 2] = ![0, 1] := by
   Branch
