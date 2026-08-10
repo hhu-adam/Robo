@@ -4,21 +4,20 @@ import Game.Levels.Uncountable.L07
 World "Uncountable"
 Level 8
 
-Introduction "Intro Uncountable L08:
-How many maps are there from `β` to `α`? To build one you pick a value in `α` for each of
-the `#β` elements of `β`, independently — one factor `#α` per element of `β`. That is
-exactly how exponentiation of cardinals is *defined*:
-$$
-\\#\\alpha ^ \\#\\beta = \\#(\\beta \\to \\alpha)
-$$
-and `Cardinal.power_def` is this definition.
-
-So the sequences you just showed to be uncountable are counted by `ℵ₀ ^ ℵ₀`.
-Here you conclude that this cardinal is genuinely bigger than `ℵ₀`."
+Introduction "Intro Uncountable L08"
 
 open Cardinal
 
 Statement : (ℵ₀ : Cardinal.{0}) < ℵ₀ ^ ℵ₀ := by
+  Hint "[Hint u8bgf]
+  How many maps are there from `β` to `α`? To build one you pick a value in `α` for each of
+  the `#β` elements of `β`, independently — one factor `#α` per element of `β`.
+
+  Therefore, the exponentiation of cardinals is *defined* to be
+  $$
+  \\#\\alpha ^ \\#\\beta = \\#(\\beta \\to \\alpha).
+  $$
+  "
   Hint "[Hint pwrx] The right hand side counts the maps `ℕ → ℕ`: rewrite `ℵ₀` as `#ℕ`
     and use `Cardinal.power_def`."
   have h : ℵ₀ ^ ℵ₀ = #(ℕ → ℕ) := by
