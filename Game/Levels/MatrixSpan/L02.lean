@@ -3,18 +3,14 @@ import Game.Metadata
 World "Span"
 Level 2
 
-Introduction "Intro Span L02:
-Let $R$ be a ring and $M$ be an $R$-module. A submodule $N$ of $M$ is a subset that is closed under
-addition and scalar multiplication.
-
-Let's now focus on modules over `ℝ`. Given an `ℝ`-module $M$ and a submodule $N$, let $r$ be a
-nonzero real number. Then `r • x` belongs to $N$ if and only if $x$ belongs to $N$.
-"
+Introduction "Intro Span L02"
 
 open Real Function Set Finset
 
 Statement (M : Type*) [AddCommMonoid M] [Module ℝ M] (N : Submodule ℝ M) (x : M) (r : ℝ)
     (hr : r ≠ 0) : r • x ∈ N ↔ x ∈ N := by
+  Hint "[sp2int] Let $R$ be a ring and $M$ be an $R$-module. A submodule $N$ of $M$ is a subset that is closed under
+  addition and scalar multiplication."
   Hint (hidden := true) "[Hint sp2ctsp] First use `constructor` to split into two goals. "
   constructor
   · intro hrxS

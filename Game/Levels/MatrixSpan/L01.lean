@@ -3,9 +3,7 @@ import Game.Metadata
 World "Span"
 Level 1
 
-Introduction "Intro Span L01:
-In this level you will combine these to simplify a linear combination.
-"
+Introduction "Intro Span L01"
 
 open Real Function Set Finset
 
@@ -23,7 +21,11 @@ TheoremDoc one_smul as "one_smul" in "LinearAlgebra"
 
 Statement {R M : Type*} [CommRing R] [AddCommMonoid M] [Module R M] (x y : M) :
     (2 : R) • x + (-1 : R) • (x + y) = x + (-1 : R) • y := by
-  Hint "Distribute the scalar `-1` over the sum `x + y` with `rw [smul_add]`."
+  Hint "[Hint sp1modu] An `R`-module `M` is a vector space whose scalars are taken from a ring
+    `R` instead of a field: you may add elements of `M` and scale them by `r : R`, written
+    `r • x`. The scaling obeys the rules you expect — `•` distributes over sums of vectors and
+    over sums of scalars, and `1 • x = x` — and these are all you need here."
+  Hint "[Hint sp1dist] Distribute the scalar `-1` over the sum `x + y` with `rw [smul_add]`."
   rw [smul_add]
   rw [← add_assoc]
   rw [← add_smul]
