@@ -3,8 +3,6 @@ import Game.Metadata
 World "Saturn"
 Level 4
 
-Title ""
-
 -- Introduction "Noch ein Funkspruch."
 Introduction "Intro Saturn L04"
 
