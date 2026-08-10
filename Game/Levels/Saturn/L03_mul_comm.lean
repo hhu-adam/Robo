@@ -3,10 +3,8 @@ import Game.Metadata
 World "Saturn"
 Level 3
 
-Title ""
-
 -- Introduction "Noch ein Funkspruch."
-Introduction "Intro Saturn L04"
+Introduction "Intro Saturn L03"
 
 namespace Polynomial
 Statement (P : ℚ[X]) : X * P = P * X := by
