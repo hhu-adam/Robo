@@ -1,15 +1,15 @@
 import Game.Metadata
 
 World "Saturn"
-Level 4
+Level 3
 
 Title ""
 
 -- Introduction "Noch ein Funkspruch."
 Introduction "Intro Saturn L04"
 
-namespace MvPolynomial
-Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
+namespace Polynomial
+Statement (P : ℚ[X]) : X * P = P * X := by
   /-
   Hint "
     **Du**:  Nanu, was ist denn `P` hier für ein Tier?
@@ -26,9 +26,7 @@ Statement (P : MvPolynomial (Fin 2) ℚ) : (X 0) * P = P * (X 0) := by
     **Robo**: So ist es.
   "
   -/
-  Hint "Explain `P`: `P` is a 'multivariate polynome' with variables indexed by `Fin 2` and
-  coefficients in `ℚ`.
-  Explain `Fin 2` as the set of elements $\\\{0,1\\}$ that lead to the variables `X 0` and `X 1`"
+  Hint "Explain `P`: `P` is a polynomial over rational number `ℚ`."
   ring
 
 /-
@@ -36,7 +34,7 @@ Conclusion "
   Wieder ein 👍.
 "
 -/
-Conclusion "Conclusion Saturn L04"
+Conclusion "Conclusion Saturn L03"
 NewTactic ring
 
 /---/
