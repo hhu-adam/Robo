@@ -6,14 +6,9 @@ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 World "Smooth"
 Level 8
 
-Introduction "Intro Smooth L08:
-In this level, you are going to prove that the derivative of $p(x^{-1}) f(x)$ is
-  $x^{-2} (p(x) - p'(x)) f (x)$, where
-  $$
-f(x) = \\begin{cases} 0 & \\text{if } x \\le 0, \\\\ e^{-1/x} & \\text{if } x > 0. \\end{cases}
-$$"
+Introduction "Intro Smooth L08"
 
-open Polynomial Filter Topology
+open Polynomial Filter Topology STakeOff
 
 /-- The derivative of `x ↦ p(x⁻¹) · f x` keeps the same `polynomial · f` shape. -/
 TheoremDoc hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv_mul" in "Function"
@@ -21,6 +16,13 @@ TheoremDoc hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv
 Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     HasDerivAt (fun x ↦ p.eval x⁻¹ * f x)
       ((X ^ 2 * (p - derivative p)).eval x⁻¹ * f x) x := by
+  Hint "[Hint sm8bgf] Differentiating `p(x⁻¹) * f x` keeps the shape *polynomial in `x⁻¹`
+    times `f`*: the derivative is
+    $$
+    \\frac\{p(x^\{-1}) - p'(x^\{-1})}\{x^2}\\, f(x),
+    $$
+    with `f` the take-off function of this world — `0` for `x ≤ 0` and `exp (-x⁻¹)` for
+    `x > 0`."
   Hint "[Hint sm8lttri] First, try to use `lt_trichotomy` to divide into three cases."
   obtain hx | rfl | hx := lt_trichotomy x 0
   · Hint "[Hint s8ls0] This is a similar case of the previous level. Recall the method you
@@ -118,7 +120,8 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
           apply hasDerivAt_neg
       apply HasDerivAt.comp x hmul
       apply hasDerivAt_inv hx.ne'
-    Hint (strict := true) (hidden := true) "Establish `(fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
+    Hint (strict := true) (hidden := true) "[Hint sm8cmpa] Establish
+      `(fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
         (fun y ↦ p.eval y * Real.exp (-y)) ∘ (fun y ↦ y⁻¹)` by `have`."
     have comp_aux : (fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
         (fun y ↦ p.eval y * Real.exp (-y)) ∘ (fun y ↦ y⁻¹) := by

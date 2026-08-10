@@ -4,20 +4,14 @@ import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
 World "Smooth"
 Level 9
 
-open Polynomial
+open Polynomial STakeOff
 
 noncomputable section
 
-Introduction " Intro Smooth L09:
-Differentiating `x ↦ p(x⁻¹) · f x` gives back a function of the *same shape*,
-with a new polynomial. Define a polynomial inductively as follows:
-`P 0 = 1`,  `P (n+1) = X² · (P n - derivative (P n))`.
-
-In this level, you are going to prove `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`.
-"
+Introduction "Intro Smooth L09"
 
 /-- The polynomials `P n` for which `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`. -/
-def P : ℕ → ℝ[X]
+def STakeOff.P : ℕ → ℝ[X]
   | 0 => 1
   | n + 1 => X ^ 2 * (P n - derivative (P n))
 
@@ -39,21 +33,25 @@ TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
 /- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
 Statement iteratedDeriv_eq_poly (n : ℕ) :
     iteratedDeriv n f = fun x ↦ (P n).eval x⁻¹ * f x := by
+  Hint "[Hint sm9bgf] The previous level showed that differentiating `x ↦ p(x⁻¹) · f x` gives
+    back a function of the *same shape*, with `p` replaced by `X² · (p - derivative p)`.
+    Iterating that step starting from `p = 1` is precisely the recursion `P 0 = 1`,
+    `P (n+1) = X² · (P n - derivative (P n))` defining `P`."
   Hint "[Hint idp1] Process by induction on `n`."
   induction n with n ih
   · Hint (hidden := true) "[Hint idp2] `0`-th derivative is the function itself."
     Branch
       funext x
-      Hint "[sm9it] `rw` the goal with `iteratedDeriv_zero`."
+      Hint "[Hint sm9it] `rw` the goal with `iteratedDeriv_zero`."
       rw [iteratedDeriv_zero, P, eval_one, one_mul]
     simp_log [P]
   · Hint "[Hint idp3] Peel one derivative, then you can apply the induction hypothesis. "
     funext x
-    Hint (hidden := true) "[sm9ritsc] `rw` the goal with `iteratedDeriv_succ`"
+    Hint (hidden := true) "[Hint sm9ritsc] `rw` the goal with `iteratedDeriv_succ`"
     rw [iteratedDeriv_succ, ih]
-    Hint "[sm9ristp] Perfect! Now unfold the definition of `P` by `rw [P]`."
+    Hint "[Hint sm9ristp] Perfect! Now unfold the definition of `P` by `rw [P]`."
     rw [P]
-    Hint (hidden := true) "Remember the theorems `HasDerivAt.deriv` and
+    Hint (hidden := true) "[Hint sm9hdap] Remember the theorems `HasDerivAt.deriv` and
       `hasDerivAt_polynomial_eval_inv_mul`."
     apply HasDerivAt.deriv
     apply hasDerivAt_polynomial_eval_inv_mul

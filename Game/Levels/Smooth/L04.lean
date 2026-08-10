@@ -3,14 +3,9 @@ import Game.Levels.Smooth.L03
 World "Smooth"
 Level 4
 
-open Real Filter Topology
+open Real Filter Topology STakeOff
 
-Introduction "Intro Smooth L04:
-The take-off function `f`
-crushes any polynomial factor to `0` as `x → 0`, namely
-`p.eval x⁻¹ * f x` tends to `0` as `x → 0` for any polynomial
-`p`.
-"
+Introduction "Intro Smooth L04"
 
 /-- -/
 TheoremDoc tendsto_polynomial_inv_mul_zero as "tendsto_polynomial_inv_mul_zero" in "Function"
@@ -18,6 +13,10 @@ TheoremDoc tendsto_polynomial_inv_mul_zero as "tendsto_polynomial_inv_mul_zero" 
 /-- -/
 Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
     Tendsto (fun x ↦ p.eval x⁻¹ * f x) (𝓝 0) (𝓝 0) := by
+  Hint "[Hint sm4bgf] The take-off function `f`
+  crushes any polynomial factor to `0` as `x → 0`, namely
+  `p.eval x⁻¹ * f x` tends to `0` as `x → 0` for any polynomial
+  `p`."
   Hint "[Hint tpimzsf] First, unfold the definition of `f` and simplify the expression using `simp`."
   simp [f]
   Hint "[Hint sm4tcnst] Note that for the case `x ≤ 0`, the function is constant."

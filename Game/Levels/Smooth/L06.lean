@@ -8,11 +8,7 @@ Level 6
 
 open Real
 
-Introduction "Intro Smooth L06:
-The derivative of products are handled by the *product rule*.
-
-In this level you differentiate `x ↦ p(x) · exp (-x)`.
-"
+Introduction "Intro Smooth L06"
 
 /---/
 TheoremDoc HasDerivAt.exp as "HasDerivAt.exp"

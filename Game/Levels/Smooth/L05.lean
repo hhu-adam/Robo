@@ -9,13 +9,7 @@ Level 5
 
 open Polynomial
 
-Introduction "Intro Smooth L05:
-Time to differentiate. In the next few levels, you are going to use *product rule* and
-*composition rule* to calculate some derivatives.
-
-In this level you assemble those three bricks into the derivative of
-$p(-x^{=1})$.
-"
+Introduction "Intro Smooth L05"
 
 /---/
 TheoremDoc Polynomial.hasDerivAt as "Polynomial.hasDerivAt"
@@ -33,6 +27,8 @@ TheoremDoc hasDerivAt_neg as "hasDerivAt_neg" in "Function"
 Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
     HasDerivAt (fun x ↦ p.eval (-x⁻¹))
       ((derivative p).eval (-x⁻¹) * (-1 * -(x ^ 2)⁻¹)) x := by
+  Hint "[Hint sm5bgf] In the next few levels, you are going to use *product rule* and
+    *composition rule* to calculate some derivatives."
   Hint "[Hint dxq1] The goal is the triple composite `p ∘ neg ∘ inv`. Peel it
     apart one layer at a time with the chain rule `HasDerivAt.comp`."
   Branch

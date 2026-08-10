@@ -4,16 +4,9 @@ import Mathlib.Analysis.Calculus.Deriv.Basic
 World "Smooth"
 Level 7
 
-open Real Filter Topology
+open Real Filter Topology STakeOff
 
-Introduction "Intro Smooth L07:
-Derivatives are *local*: if two functions agree on a whole neighbourhood of `a`,
-they must have the same derivative at `a`.
-
-In this level you differentiate the smooth take-off function `f` on the negative axis,
-where it is flat: for `x < 0` it is constantly `0` nearby, so its derivative
-is `0`.
-"
+Introduction "Intro Smooth L07"
 
 /---/
 TheoremDoc HasDerivAt.congr_of_eventuallyEq as "HasDerivAt.congr_of_eventuallyEq"
@@ -23,6 +16,9 @@ TheoremDoc hasDerivAt_const as "hasDerivAt_const"
 
 /- For `x < 0`, the bump function `f` is eventually `0`, so its derivative is `0`. -/
 Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
+  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the negative axis,
+  where it is flat: for `x < 0` it is constantly `0` nearby, so its derivative
+  is `0`."
   Hint "[Hint cev1] Note that if two function are eventually euqal around a point, then their derivatives agree
     at this point. The theorem is called `HasDerivAt.congr_of_eventuallyEq` in mathlib.
     First show `f` eventually equal to the zero function around `x`, then apply the theorem
