@@ -758,3 +758,13 @@ is the function of two arguments with `curry f a b = f (a, b)`.
 Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
 -/
 DefinitionDoc Function.curry as "Function.curry" in "Function"
+
+/--
+
+-/
+DefinitionDoc Equiv.symm as "Equiv.symm" in "Function"
+
+/--
+
+-/
+DefinitionDoc Equiv.trans as "Equiv.trans" in "Function"
