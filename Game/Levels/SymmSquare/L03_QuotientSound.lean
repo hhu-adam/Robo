@@ -3,15 +3,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 3
 
-Introduction
-"Intro Symm L03:
-
-For a setoid `s` on a type `A`, the quotient type `Quotient s` is the type of elements of `A` modulo `s.Rel`.
-There is a function `Quotient.mk : A → Quotient s` which maps an element `a : A` to ``⟦a⟧`, a typical element of `Quotient s`.
-If elements `a b : A` are congruent, then `⟦a⟧ = ⟦b⟧`. This fact is witnessed by `Quotient.sound`.
-To type the brackets `⟦` and `⟧`, write `\\[[` and `\\]]`.
-
-"
+Introduction "Intro Symm L03"
 
 open Sym2
 
@@ -20,13 +12,17 @@ attribute [local instance] Sym2.Rel.setoid
 /- (1, -2) and (-2, 1) are equal as unordered pairs of integers. -/
 
 Statement : (⟦ (1, -2) ⟧ : Sym2 ℤ) = ⟦ (-2, 1) ⟧ := by
+  Hint "[Hint sy3quo] The quotient `Quotient s` collects the elements of `A` up to `≈`, and
+    `⟦a⟧` (typed `\\[[` and `\\]]`) is the class of `a`. So `Sym2 ℤ` consists of *unordered*
+    pairs of integers, and the goal asks you to forget the order."
+  Hint (hidden := true) "[Hint sy3snd] Congruent elements have the same class — that is
+    `Quotient.sound`, and it reduces the goal to a statement about the two pairs."
   Branch
     simp [Quotient.eq]
     apply Sym2.Rel.swap
-  Hint "[] If `x` equivalent to `y`, i.e. `x ≈ y`, then we have that the equvalent class `⟦x⟧` and `⟦y⟧` agree in the quotient.
-    This is `Quotient.sound`."
   apply Quotient.sound
-  Hint "[] Remember the `Sym2.Rel` axiom `Sym2.Rel.swap`. "
+  Hint (hidden := true) "[Hint sy3swp] The two pairs differ by a swap, which is the rule
+    `Sym2.Rel.swap`."
   apply Sym2.Rel.swap
 
 /-- -/

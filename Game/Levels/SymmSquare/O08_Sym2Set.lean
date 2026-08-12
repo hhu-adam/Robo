@@ -4,11 +4,7 @@ import Game.Levels.SymmSquare.L02_Sym2
 World "Symmetric Square"
 Level 8
 
-Introduction
-"Intro Symm L08:
-In this level you show that there is a 1-1 correspondence between unordered pairs and subsets
-with 1 or 2 elements.
-"
+Introduction "Intro Symm O08"
 
 open Function Sym Finset Set Quotient FullGrind
 
@@ -64,8 +60,8 @@ theorem card_eq_one_or_two {A : Type*} [DecidableEq A] (S : Finset A) :
    The statement asked for the equivalence as *data*, but its inverse is noncomputable (see the
    `headless` theorem below: you can't extract the element of a card-1 multiset computably), so
    `Equiv.ofBijective` cannot live inside the plain `def` that `Statement` generates. It is restated
-   below as `Nonempty (…)` — a Prop — which matches the Introduction ("there *is* a 1-1
-   correspondence") and lets the noncomputable equivalence be built inside the proof.
+   below as `Nonempty (…)` — a Prop — which matches the informal claim that there *is* a 1-1
+   correspondence, and lets the noncomputable equivalence be built inside the proof.
 
 Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 1} ⊕ { S : Finset A // S.card = 2 } := by
   let f : Sym2 A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=
@@ -135,6 +131,9 @@ Statement {A : Type*} [DecidableEq A] : (Sym2 A) ≃ { S : Finset A // S.card = 
 
 Statement {A : Type*} [DecidableEq A] :
     Nonempty ((Sym2 A) ≃ { S : Finset A // S.card = 1} ⊕ { S : Finset A // S.card = 2 }) := by
+  Hint "[Hint o08corr] An unordered pair `s(a, b)` is really just the set `\{a, b}` — which has
+    one element when `a = b` and two otherwise. Turning that observation into a bijection is
+    what identifies `Sym2 A` with the subsets of size `1` or `2`."
   let g : A × A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=
     fun ⟨a, b⟩ => if h : a = b then .inl ⟨{a}, rfl⟩ else .inr ⟨{a, b}, card_pair h⟩
   let f : Sym2 A → { S : Finset A // S.card = 1 } ⊕ { S : Finset A // S.card = 2 } :=

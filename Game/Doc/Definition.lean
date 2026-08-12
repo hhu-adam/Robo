@@ -750,3 +750,11 @@ function of a single pair-shaped argument with `uncurry f (a, b) = f a b`.
 Its inverse is `Function.curry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
 -/
 DefinitionDoc Function.uncurry as "Function.uncurry" in "Function"
+
+/--
+For a function of a single pair-shaped argument `f : A × B → C`, `Function.curry f : A → B → C`
+is the function of two arguments with `curry f a b = f (a, b)`.
+
+Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.curry as "Function.curry" in "Function"

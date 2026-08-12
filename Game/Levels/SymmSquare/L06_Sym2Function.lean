@@ -3,26 +3,17 @@ import Game.Metadata
 World "Symmetric Square"
 Level 6
 
-Introduction
-"Intro Symm L06:
-
-A symmetric function of two variables is a function that is invariant under permutation
-of its arguments. For example, the function `f x y = | x - y |` is symmetric, because
-`| x - y |  = | y - x |`.
-
-Given a funtion `f : Sym A 2 → B` one can show that the function `f ∘ Quotient.mk' : A × A → B`
-is a symmetric functions on `A × A`.
-
-`Quotient.mk'` is a variant of the `Quotient.mk` function that synthesizes the setoid by
-typeclass inference. Other than this it works the same way as `Quotient.mk`.
-
-"
+Introduction "Intro Symm L06"
 
 open List Sym
 
 Statement {A B : Type*} (f : Sym2 A → B) :
     let s := Sym2.Rel.setoid A
     ∀ a₁ a₂, (f ∘ Quotient.mk s) (a₁ , a₂) = (f ∘ Quotient.mk s) (a₂ , a₁) := by
+  Hint "[Hint sy6sym] A function of two variables is *symmetric* if swapping its arguments
+    changes nothing — like `f x y = |x - y|`. Anything defined on unordered pairs is symmetric
+    for free: precomposing `f` with the quotient map cannot see the order, because `(a₁, a₂)`
+    and `(a₂, a₁)` have the same class."
   intro a₁ a₂
   simp
   Branch
