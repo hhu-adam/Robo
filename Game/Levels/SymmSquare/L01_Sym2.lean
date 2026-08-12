@@ -3,20 +3,7 @@ import Game.Metadata
 World "Symmetric Square"
 Level 1
 
-Introduction
-"Intro Symm L01:
-
-An unordered pair is a collection of two elements that are not ordered.
-For example, the unordered pair `{1,2}` is the same as the unordered pair `{2, 1}`.
-In other words, the order of the elements in an unordered pair does not matter.
-
-For a type `A` the equivalence relation `Sym2.Rel A` consists of two rules:
-1. `refl x y` which says `(x,y) ∼ (x,y)` for all `x` and `y` in `A`
-2. `sym x y` which says `(x,y) ∼ (y,x)` for all `x` and `y` in `A`
-
-In this level you show that the relation defined by these rules is transitive.
-
-"
+Introduction "Intro Symm L01"
 
 open Sym2
 
@@ -26,11 +13,20 @@ TheoremDoc Sym2.Rel.trans as "Sym2.Rel.trans" in "Relations"
 Statement Sym2.Rel.trans {A : Type*} {x y z : A × A} :
     let r := Sym2.Rel A
     r x y → r y z → r x z := by
+  Hint "[Hint sy1rel] An unordered pair should not care about order: `\{1,2}` and `\{2,1}` are
+    meant to be the same thing. `Sym2.Rel A` makes that precise as a relation on `A × A`,
+    built from two rules only: `refl`, saying `(x,y) ∼ (x,y)`, and `swap`, saying
+    `(x,y) ∼ (y,x)`."
   intro h₁ h₂
+  Hint "[Hint sy1cs1] `Sym2.Rel` is an inductive relation, so `{h₁}` can only come from one
+    of those two rules. `cases` splits into exactly these possibilities."
   cases h₁
-  · cases h₂
+  · Hint (hidden := true) "[Hint sy1cs2] Now do the same with `{h₂}`."
+    cases h₂
     · rfl
-    · apply Sym2.Rel.swap
+    · Hint (hidden := true) "[Hint sy1swp] The two pairs differ by a swap — that is the rule
+        `Sym2.Rel.swap`."
+      apply Sym2.Rel.swap
   · cases h₂
     · apply Sym2.Rel.swap
     · rfl
@@ -41,5 +37,7 @@ TheoremDoc Sym2.Rel.swap as "Sym2.Rel.swap" in "Quotient"
 NewTheorem Sym2.Rel.swap
 
 NewDefinition Sym2.Rel
+
+NewTactic cases
 
 TheoremTab "Quotient"

@@ -6,25 +6,7 @@ import Game.Levels.SymmSquare.L05_QuotientExistsRep
 World "Symmetric Square"
 Level 11
 
-Introduction
-"Intro Symmm L07:
-
-A function `f : A → B` respects the congruence `r` on `A` if `f x = f y`, for every `r`-congruent
-elements `x y : A`.
-
-The universal property of `Quotient r` states that if a function `f : A → B` respects the
-congruence `r` then `f` uniquely lifts to a function `Quotient.lift f : Quotient r → B`
-defined on a typical element `⟦a⟧` as follows:
-
-```
-Quotient.lift f ⟦a⟧ = f a
-```
-
-In this level, you show that `Sym2` classifies the symmetric functions in two arguments, that is
-there is 1-1 correspondence between the functions `Sym2 A → B` and the functions `A → A → B` that
-are symmetric in their arguments.
-
-"
+Introduction "Intro Symm L11"
 
 open Function Sym
 
@@ -34,6 +16,19 @@ noncomputable section
 
 Statement Sym2.liftEquiv {A B : Type*} :
     (Sym2 A → B) ≃ { f : A → A → B | ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } := by
+  Hint "[Hint s11univ] The two previous constructions are inverse to each other: restricting a
+    function on unordered pairs to two arguments, and lifting a symmetric function of two
+    arguments along `⟦·⟧` with `Quotient.lift f ⟦a⟧ = f a`. Assembling them shows that `Sym2 A`
+    is exactly what classifies symmetric functions in two arguments."
+  Hint "[Hint s11tmpl] An equivalence consists of four fields: the two maps `toFun` and
+    `invFun`, plus the proofs `left_inv` and `right_inv` that they undo each other. The template
+    ```
+    refine' \{ toFun f := _, invFun g := _, left_inv := _, right_inv := _}
+    ```
+    leaves you exactly those four holes."
+  Hint (hidden := true) "[Hint s11fg] The two maps are `Sym_f` and `Sym_g` from the previous
+    levels. Mind that `toFun` lands in a subtype, so it has to carry the symmetry proof
+    `Sym_f_swap` along."
   refine' { toFun f := ⟨Sym_f f, Sym_f_swap f⟩, invFun g := Sym_g g, left_inv := _, right_inv := _}
   · simp [LeftInverse]
     intro f
@@ -44,65 +39,5 @@ Statement Sym2.liftEquiv {A B : Type*} :
   · simp [RightInverse, LeftInverse]
     intro f
     rfl
-  -- Branch
-  --   let F : (Sym2 A → B) → (A → A → B) :=
-  --     fun f ↦ fun a b ↦ f (⟦ (a, b)⟧ )
-  --   have : ∀ (f : (Sym2 A → B)), ∀ a b, F f a b = F f b a := by
-  --     intro f a b
-  --     apply congr_arg f
-  --     apply Quotient.sound
-  --     apply Sym2.Rel.swap
-  --   let F' : (Sym2 A → B) → { f : A → A → B | ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } :=
-  --     fun f ↦ ⟨F f, this f⟩
-  --   -- let G : { f : A → A → B | ∀ a₁ a₂, f a₁ a₂ = f a₂ a₁ } → (Sym2 A → B) :=
-  --   --   fun f ↦ Quotient.lift (uncurry f.1) <| fun
-  --   apply Equiv.ofBijective F'
-  --   constructor
-  --   · intro f1 f2 hf
-  --     simp [F', F] at hf
-  --     ext a
-  --     obtain ⟨⟨a₁, a₂⟩, ha⟩ := Quotient.exists_rep a
-  --     rw [← ha]
-  --     exact congrFun (congrFun (Subtype.ext_iff.mp hf) a₁) a₂
-  --   · intro f
-  --     refine ⟨Quotient.lift (uncurry f.1) ?_, rfl⟩
-  --     intro ⟨x₁, x₂⟩ ⟨y₁, y₂⟩ h
-  --     simp [uncurry]
-  --     cases h
-  --     · rfl
-  --     · apply f.2 x₁ x₂
-  -- constructor
-  -- · intro f
-  --   constructor
-  --   · apply fun a₁ a₂ => f (⟦ (a₁, a₂) ⟧)
-  --   · intro a₁ a₂
-  --     Branch
-  --       simp
-  --       congr 1
-  --       apply Quotient.sound
-  --       apply Sym2.Rel.swap
-  --     apply congr_arg f
-  --     apply Quotient.sound
-  --     apply Sym2.Rel.swap
-  -- · intro f
-  --   apply Quotient.lift (uncurry f.1) <| by
-  --     intro ⟨x₁, x₂⟩ ⟨y₁, y₂⟩ h
-  --     simp [uncurry]
-  --     cases h
-  --     · rfl
-  --     · apply f.2 x₁ x₂
-  -- · simp [LeftInverse]
-  --   intro f
-  --   ext q
-  --   Hint "
-  --     Use `Quotient.exists_rep` to obtain a representative `p` of `q`.
-  --   "
-  --   obtain ⟨p, hp⟩ := Quotient.exists_rep q
-  --   rw [← hp]
-  --   simp [uncurry]
-  --   rfl
-  -- · simp [Function.RightInverse, LeftInverse]
-  --   intro f
-  --   rfl
 
 TheoremTab "Quotient"
