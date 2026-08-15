@@ -136,7 +136,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∪ B`
 #. §5: `∪`
-#. §6: `\\\\union`
+#. §6: `\\union`
 #: Game/Doc/Definition.lean:81
 msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
 "§5 is written as §6."
@@ -151,7 +151,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
-#. §6: `\\\\inter`
+#. §6: `\\inter`
 #: Game/Doc/Definition.lean:87
 msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
 "§5 is written as §6."
@@ -2906,10 +2906,10 @@ msgstr "**Jefe de Operaciones**: ¡Sois geniales, de verdad!"
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\\\\\\\ %(new line)
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\\\\\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F    \\\\\\\\ %(new line)
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\\\\\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C \\\\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F \\\\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
@@ -6531,7 +6531,7 @@ msgstr "**Glifo**: Reescribiendo un poco, seguro que se puede usar §0."
 #. §0: `a ∣ b`
 #. §1: `∃ k, b = a * k`
 #. §2: `∣`
-#. §3: `\\\\dvd`
+#. §3: `\\dvd`
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:71
