@@ -1,10 +1,7 @@
 import Game.Metadata
 
-
 World "Iso"
 Level 4
-
-Title "Bijection of Equivalence"
 
 /-
 Introduction
@@ -12,16 +9,22 @@ Introduction
 In this level you show that there every bijection gives rise to an equivalence.
 "
 -/
-Introduction "Intro Iso X04"
+Introduction "Intro Iso L04"
 
 open Function
 
-Statement Equiv.bijective {A B : Type} (f : A ≃ B) : Bijective f.toFun := by
+Statement {A B : Type} (f : A ≃ B) : Bijective f.toFun := by
   constructor
   · Branch
       intro a₁ a₂ h
-      simpa [congr_arg f.invFun] using h
+      simp [congr_arg f.invFun]
     apply Equiv.injective
   · apply RightInverse.surjective f.right_inv
+
+/---/
+TheoremDoc Function.RightInverse.surjective as "Function.RightInverse.surjective" in "Function"
+
+/---/
+TheoremDoc Equiv.injective as "Equiv.injective" in "Function"
 
 NewTheorem Function.RightInverse.surjective Equiv.injective

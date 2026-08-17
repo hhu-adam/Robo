@@ -88,6 +88,12 @@ attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq lt_add_iff_pos_le
 -- Iso, L01_Bijective:
 attribute [game_simp] add_left_inj sub_add_cancel eq_self
 
+-- Iso, L03_Equivalence:
+attribute [game_simp] Fin.isValue Nat.succ_eq_add_one Nat.reduceAdd Fin.zero_eta Matrix.cons_val_zero eq_self Fin.mk_one Matrix.cons_val_one Fin.reduceFinMk Matrix.cons_val Prod.mk.eta implies_true
+
+-- Iso, L06_CurryEquiv:
+attribute [game_simp] Function.uncurry_curry eq_self implies_true Function.curry_uncurry
+
 -- Luna, L06_Icc__Icc_insert_succ_right:
 attribute [game_simp] Finset.mem_insert Finset.mem_Icc
 

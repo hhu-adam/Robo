@@ -5,8 +5,6 @@ universe u₁ u₂ u₃
 World "Iso"
 Level 6
 
-Title "Curry"
-
 /-
 Introduction
 "
@@ -16,20 +14,14 @@ This insight was first made explicit separately by Moses Ilyich Schönfinkel in 
 
 "
 -/
-Introduction "Intro Iso X06"
+Introduction "Intro Iso L06"
 
 open Function
 
-Statement curry_equiv {A : Type u₁} {B : Type u₂} {C : Type u₃} :
+Statement {A : Type u₁} {B : Type u₂} {C : Type u₃} :
     (A × B → C) ≃ (A → B → C) := by
-  constructor
-  · -- Branch
-    --  exact curry
-    use fun f a b => f (a, b)
-  · -- Branch
-    --   exact uncurry
-    use fun f (a, b) => f a b
-  · apply uncurry_curry
-  · apply curry_uncurry
+  refine' {toFun := curry, invFun := uncurry, left_inv := _, right_inv := _}
+  · simp [LeftInverse]
+  · simp [LeftInverse, RightInverse]
 
-NewTheorem Function.curry_uncurry Function.uncurry_curry
+NewDefinition Function.curry Function.uncurry
