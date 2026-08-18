@@ -20,6 +20,8 @@ open Function
 
 Statement {A : Type u₁} {B : Type u₂} {C : Type u₃} :
     (A × B → C) ≃ (A → B → C) := by
+  Hint "[Hint h4nzq] `Function.curry` goes from `A × B → C` to `A → B → C`, and
+  `Function.uncurry` back again."
   refine' {toFun := curry, invFun := uncurry, left_inv := _, right_inv := _}
   · simp [LeftInverse]
   · simp [LeftInverse, RightInverse]
