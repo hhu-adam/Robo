@@ -2756,15 +2756,15 @@ msgid "Proof the implication (§0), that assuming §1 is true, §2 implies §3\n
 msgstr ""
 "**Jefe de Operaciones**: Los operarios dicen que esto es correcto tal como está y que nos hace muchísima falta. Pero nadie es capaz de demostrármelo.\n"
 "\n"
-"**Tú**: Un momento. Pero si esto es justamente una implicación (§0). Suponemos que §1 se cumple, y queremos demostrar que entonces §2 implica §3. ¡Sí, claro! Por supuesto que es verdad.\n"
+"**Tú**: Un momento. ¡Pero si esto es otra implicación (§0)!. Suponemos que §1 se cumple, y queremos demostrar que entonces §2 implica §3. ¡Pues claro! Por supuesto que es verdad.\n"
 "\n"
 "El Jefe de Operaciones te mira expectante.\n"
 "\n"
-"**Tú** *(en voz baja, a Glifo)*: ¿Le escribo §4?\n"
+"**Tú** *(en voz baja, a Glifo)*: ¿Debería escribir §4?\n"
 "\n"
 "**Glifo** *(igual de bajo)*: Con la pinta que tiene, me temo que eso tampoco lo va a entender. Mejor escribe la demostración entera.\n"
 "\n"
-"**Tú**: Pero ¿cómo? Creo que, para empezar, me gustaría decir algo así como \"Supongamos, pues, que §5 se cumple…\"\n"
+"**Tú**: Pero, ¿cómo? Creo que, para empezar, me gustaría decir algo así como \"Supongamos, pues, que §5 se cumple…\"\n"
 "\n"
 "**Glifo**: Sí, buena idea. Para eso, elige simplemente un nombre para tu hipótesis, por ejemplo §6, y escribe §7."
 
@@ -2806,7 +2806,7 @@ msgstr ""
 "\n"
 "**Glifo**: Oh, esto ya lo he leído antes en alguna parte. Espera… ¡Eso es! Fue cuando estuve rastreando la Wikipedia:\n"
 "\n"
-"*\"El modus ponens es una regla de inferencia ya corriente en la lógica antigua, que en muchos sistemas lógicos…\"*\n"
+"*\"El modus ponens es una regla de inferencia ya habitual en la lógica de la Antigüedad, que en muchos sistemas lógicos…\"*\n"
 "\n"
 "**Tú**: ¡Glifo! ¡Lo que se pide es una demostración, no un ensayo histórico! ¿O es que acaso voy a llegar a alguna parte con §0 o algo por el estilo?\n"
 "\n"
@@ -2824,7 +2824,7 @@ msgid "§0 is like §1 'backwards'. §2 takes the premisse out of §3\n"
 msgstr ""
 "**Tú**: Ajá. §0 es básicamente §1 al revés.\n"
 "\n"
-"**Glifo**: Exacto. §2 toma la premisa de una implicación §3 en el objetivo y la convierte en una hipótesis. §4, a la inversa, toma una hipótesis y la coloca delante del objetivo como premisa de una implicación. Pero venga, termina ya."
+"**Glifo**: Exacto. §2 toma la premisa de una implicación §3 en el objetivo y la convierte en una hipótesis. §4, en su lugar, toma una hipótesis y la coloca delante del objetivo como premisa de una implicación. Pero venga, termina ya."
 
 #: Game/Levels/Implis/L02_Revert.lean:51
 msgid "Conclusion Implis L02"
@@ -2860,7 +2860,7 @@ msgstr ""
 
 #: Game/Levels/Implis/L03_Apply.lean:42
 msgid "This should seem obvious now"
-msgstr "**Tú**: Sí, ahora esto también me parece natural."
+msgstr "**Tú**: Sí, a mí también me parece más natural así."
 
 #: Game/Levels/Implis/L03_Apply.lean:46
 msgid "Conclusion Implis L03"
@@ -2886,14 +2886,14 @@ msgid "Try holding onto §0"
 msgstr ""
 "**Jefe de Operaciones**: Pues *yo*, llegados a este punto, empezaría por dejar apuntado §0.\n"
 "\n"
-"**Glifo**:  Para mi gusto, un poco superfluo. Pero bueno, se puede hacer.\n"
+"**Glifo**: En mi opinión, es innecesario. Pero bueno, se puede hacer.\n"
 "\n"
 "**Glifo** *(a ti)*: ¡Venga, pruébalo!"
 
 #. §0: `B`
 #: Game/Levels/Implis/L04_Apply.lean:44
 msgid "Prove §0"
-msgstr "**Glifo**: Así que ahora, para empezar, puedes demostrar §0 …"
+msgstr "**Glifo**: Ahora puedes demostrar §0 primero…"
 
 #. §0: `«{hB}» : «{B}»`
 #: Game/Levels/Implis/L04_Apply.lean:53
@@ -2928,7 +2928,7 @@ msgid "Find an implication path §0. Try §1"
 msgstr ""
 "**Tú**: O sea, que tengo que encontrar un camino de implicaciones §0.\n"
 "\n"
-"**Glifo**: Déjame adivinar cómo empezamos … ¿Otra vez §1?"
+"**Glifo**: Déjame adivinar cómo empezamos… ¿Otra vez §1?"
 
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:48
@@ -2938,7 +2938,7 @@ msgstr "**Glifo**: Pues otra vez §0, ¿qué va a ser si no?"
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:52
 msgid "[Implis.L05] Hint 1: §0 different prop"
-msgstr "**Glifo**: Esto parece un callejón sin salida …"
+msgstr "**Glifo**: Esto parece un callejón sin salida…"
 
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:58
@@ -2948,7 +2948,7 @@ msgstr "**Glifo**: Esto no pinta bien."
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:63
 msgid "[Implis.L05] Hint 3: §0 different prop"
-msgstr "**Glifo**: No, ahí hay algo que no cuadra …"
+msgstr "**Glifo**: No, ahí hay algo que no cuadra…"
 
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:68
@@ -2963,7 +2963,7 @@ msgstr "**Glifo**: ¿Seguro?"
 #. §0: `apply`
 #: Game/Levels/Implis/L05_Apply.lean:80
 msgid "[Implis.L05] Hint 6: §0 different prop at hyp"
-msgstr "**Glifo**: Esto …"
+msgstr "**Glifo**: Esto…"
 
 #: Game/Levels/Implis/L05_Apply.lean:92
 msgid "Conclusion Implis L05"
@@ -3017,7 +3017,7 @@ msgstr ""
 "\n"
 "**Tú**: ¿O sea, que §6 es §7? ¿Por qué §8?\n"
 "\n"
-"**Glifo**: §9 viene de modus ponens. El modus ponens es una regla de inferencia ya habitual en la lógica de la Antigüedad, que en muchos sistemas lógicos … Ah, no, que eso no querías oírlo. La \"r\" de §10 viene de \"reverse\", porque es la dirección de vuelta."
+"**Glifo**: §9 viene de modus ponens. El modus ponens es una regla de inferencia ya habitual en la lógica de la Antigüedad, que en muchos sistemas lógicos… Ah, no, que eso no querías oírlo. La \"r\" de §10 viene de \"reverse\", porque es la dirección de vuelta."
 
 #: Game/Levels/Implis/L07_Symm.lean:14
 msgid "Intro Implis L07"
@@ -3038,7 +3038,7 @@ msgstr "**Jefe de Operaciones**: Pues eso ha sido symmple. Pero el siguiente pro
 
 #: Game/Levels/Implis/L08_Rw.lean:14
 msgid "Intro Implis L08"
-msgstr "**Jefe de Operaciones**: Tomad, ¿podéis decirme algo sobre esto también?"
+msgstr "**Jefe de Operaciones**: Tomad, ¿qué me decís de esto otro?"
 
 #. §0: $B \\iff A \\iff D \\iff C$
 #. §1: `rw [h₁]`
@@ -3070,7 +3070,7 @@ msgstr ""
 msgid "You can continue until there is §0 and then apply §1. §2 always uses §3,\n"
 "meaning hat §4 does not have to be written"
 msgstr ""
-"**Tú**: Uy, eso ha salido al revés.\n"
+"**Tú**: Uy, eso no ha salido bien.\n"
 "\n"
 "  **Glifo**: Ya, en la otra dirección habría sido mejor. Pero si ahora simplemente sigues adelante hasta obtener algo como §0, §1 puede demostrarlo.\n"
 "\n"
@@ -3093,21 +3093,21 @@ msgid "Intro Implis L09: Instead of §0 use §1 here.\n"
 "§3 to introduce the intermediate step §4 and then\n"
 "perform the next step with §5"
 msgstr ""
-"**Tú**: No sé, estos §0 me parecen una forma retorcidísima de argumentar.  ¿No se puede hacer esto en línea recta, o es que aquí todo el mundo piensa doblando esquinas?\n"
+"**Tú**: No sé, estos §0 me parecen una forma retorcidísima de argumentar.  ¿No hay una forma más directa de hacerlo?\n"
 "\n"
-"**Glifo**:  Quizá te gustaría más §1.  Con ella podrías ir resolviendo tu cadena de equivalencias  §2 paso a paso: primero introduces con §3 el paso intermedio §4, y luego con §5 el siguiente paso intermedio."
+"**Glifo**:  Quizá te gustaría más §1.  Con ella podrías ir resolviendo tu cadena de equivalencias §2 paso a paso: primero introduces con §3 el paso intermedio §4, y luego con §5 el siguiente paso intermedio."
 
 #: Game/Levels/Implis/L09_Trans.lean:38
 msgid "Conclusion Implis L09"
 msgstr ""
 "**Glifo**: ¿Y bien? ¿Ha sido mejor?\n"
 "\n"
-"**Tú**:  No sé.  En todo caso, podemos seguir."
+"**Tú**:  NNo lo sé. Pero, en cualquier caso, sigamos."
 
 #. §0: `rw`
 #: Game/Levels/Implis/L10_Iff.lean:15
 msgid "Intro Implis L10: §0 is not allowed here as well"
-msgstr "**Jefe de Operaciones**: Esto vuelve a ser para el limitado de mi colega. Creo que §0 tampoco le gusta. ¿Se puede hacer aun así?"
+msgstr "**Jefe de Operaciones**: Esto vuelve a ser para el limitado de mi compañero. Creo que §0 tampoco le gusta. ¿Podéis hacerlo de otra forma?"
 
 #. §0: `intro`
 #: Game/Levels/Implis/L10_Iff.lean:24
@@ -3154,15 +3154,15 @@ msgstr ""
 #: Game/Levels/Implis/L11_Iff.lean:21
 msgid "Intro Implis L11: Prove without using §0 or §1"
 msgstr ""
-"**Jefe de Operaciones**: Ah, la siguiente página también es de ese colega. Pero esta trae además una nota. Ya teníamos una demostración para esto, pero no le gustó. ¡¡Quería una demostración que no utilice ni §0 ni §1!!\n"
+"**Jefe de Operaciones**: Ah, la siguiente página también es de ese compañero. Pero esta trae además una nota. Ya teníamos una demostración para esto, pero no le gustó. ¡¡Quería una demostración que no utilice ni §0 ni §1!!\n"
 "\n"
 "Respira hondo y suspira.\n"
 "\n"
-"**Jefe de Operaciones**: Yo creo que siempre se hace mucho más tonto de lo que es. Pero ¿os veis capaces?"
+"**Jefe de Operaciones**: Yo creo que siempre se hace mucho más tonto de lo que es. En cualquier caso, ¿os veis capaces?"
 
 #: Game/Levels/Implis/L11_Iff.lean:25
 msgid "Start with implication"
-msgstr "**Tú**:  Mmm … A ver, lo primero que hay ahí es una implicación.  Con eso podría empezar."
+msgstr "**Tú**: Mmm… A ver, lo primero que hay es una implicación. Con eso podría empezar."
 
 #. §0: `intro`
 #: Game/Levels/Implis/L11_Iff.lean:27
@@ -3175,7 +3175,7 @@ msgstr "**Glifo**: Exacto, eso era §0."
 #: Game/Levels/Implis/L11_Iff.lean:37
 msgid "Instead of §0 and §1 try §2"
 msgstr ""
-"**Tú**: A ver, yo conozco §0 y §1, pero eso era justo lo que esta vez queríamos evitar.\n"
+"**Tú**: A ver, me sé §0 y §1, pero eso era justo lo que queríamos evitar esta vez.\n"
 "\n"
 "**Glifo**: Lo que podrías hacer es dividir la hipótesis en dos partes con §2."
 
@@ -3201,7 +3201,7 @@ msgid "Intro Implis L12"
 msgstr ""
 "Ante el siguiente problema, el Jefe de Operaciones se queda perplejo.\n"
 "\n"
-"**Jefe de Operaciones**: La verdad es que no tengo ni idea de dónde ha salido esta hoja.\n"
+"**Jefe de Operaciones**: La verdad es que no tengo ni idea de cómo ha llegado esta hoja hasta aquí.\n"
 "No es mía en absoluto. Pero tiene una pinta interesante."
 
 #. §0: `A`
@@ -3233,7 +3233,7 @@ msgstr "El Jefe de Operaciones asiente con aprobación."
 msgid "Intro Implis L13: Do not use §0. Try it with\n"
 "§1"
 msgstr ""
-"**Jefe de Operaciones**: Otra vez algo para el colega… Y otra vez quería una demostración sin §0. Y aquí veo que en su momento ya me apunté algo al respecto. Eso es: existe este lema:\n"
+"**Jefe de Operaciones**: Otra cosa más para mi compañero… Quiere de nuevo una demostración sin §0. Y aquí veo que en su momento ya me apunté algo al respecto. Eso es: existe este lema:\n"
 "§1\n"
 "\n"
 "**Jefe de Operaciones**: ¿Os apañáis con eso?"
@@ -3245,7 +3245,7 @@ msgstr ""
 #. §4: `rw [not_not]`
 #: Game/Levels/Implis/L13_Rw.lean:32
 msgid "A lemma like §0 that contains §1 or §2 in its statements can also be used with §3: §4"
-msgstr "**Glifo**: Un lema que, como §0, tiene un §1 o un §2 en su enunciado también se puede usar con §3, por ejemplo §4."
+msgstr "**Glifo**: Un lema que, como §0, tiene una equivalencia (§1)  o una igualdad (§2) en su enunciado también se puede usar con §3, por ejemplo §4."
 
 #. §0: `¬¬`
 #. §1: `rw`
@@ -3306,11 +3306,11 @@ msgid "Intro Implis L14: This chapter used the following operations:\n"
 msgstr ""
 "**Jefe de Operaciones**: ¡De verdad que me habéis ayudado muchísimo! Aquí está el último problema. Lo heredé de mi predecesor. Aseguraba que, si conseguíamos resolverlo, todo volvería a funcionar por aquí. Pero siempre me pareció demasiado difícil como para intentarlo siquiera. ¿Queréis probar vosotros?\n"
 "\n"
-"**Tú**: ¡Claro, enséñanoslo! Glifo, ¿puedes volver a mostrarme uno de esos resúmenes tan majos con lo que en teoría he aprendido en los últimos cinco minutos?\n"
+"**Tú**: ¡Claro, enséñanoslo! Glifo, ¿puedes volver a mostrarme uno de esos resúmenes tan majos con las cosas que he aprendido en los últimos cinco minutos?\n"
 "\n"
 "**Glifo**: Aquí tienes el resumen:\n"
 "\n"
-"## Notaciones / conceptos\n"
+"## Notación / Conceptos\n"
 "\n"
 "|     | Descripción                  |\n"
 "|:--- |:---------------------------- |\n"
@@ -3321,7 +3321,7 @@ msgstr ""
 "\n"
 "| Táctica          | Ejemplo                                                            |\n"
 "|:---------------- |:----------------------------------------------------------------- |\n"
-"| §2               | lleva el lado izquierdo de una implicación del objetivo a las hipótesis |\n"
+"| §2               | convierte el lado izquierdo de una implicación del objetivo en una hipótesis |\n"
 "| §3               | operación inversa de §4                                            |\n"
 "| §5               | aplica una implicación \"hacia atrás\" al objetivo                   |\n"
 "| §6               | aplica una implicación \"hacia delante\" a una hipótesis             |\n"
@@ -3329,7 +3329,7 @@ msgstr ""
 "| §10              | cambia §11 por §12 y §13                                           |\n"
 "| §14              | reescribe el objetivo usando la equivalencia §15                   |\n"
 "| §16              | reescribe la hipótesis §17 usando la equivalencia §18              |\n"
-"| §19              | distinción de casos entre §20 y §21                                |"
+"| §19              | distingue entre los casos §20 y §21                                |"
 
 #. §0: `tauto`
 #: Game/Levels/Implis/L14_Summary.lean:50
@@ -3374,7 +3374,7 @@ msgstr ""
 "\n"
 "Glifo coge el paquetito y lo hace desaparecer en algún rincón de su interior. El Jefe de Operaciones lo mira estupefacto.\n"
 "\n"
-"**Glifo**: ¡Tranquilo, que no digiero nada!"
+"**Glifo**: ¡Tranquilo, que no me lo he comido!"
 
 #: Game/Levels/Implis.lean:21
 msgid "Implis"
@@ -3395,6 +3395,7 @@ msgstr ""
 "Implis parece una gigantesca mina a cielo abierto. Por todas partes discurren cintas transportadoras que se cruzan en todas direcciones, pero la mayoría están paradas. Un tímido Jefe de Operaciones ya os está esperando.\n"
 "\n"
 "**Jefe de Operaciones**: ¡Me venís que ni pintados! Ya he oído hablar de vosotros. ¡Matemáticos de verdad! Veréis: aquí extraemos valores de verdad. Y hay que andarse con cien ojos. Un error, y todo se viene abajo. Pero yo soy muy prudente. Siempre digo: ¡mejor parón que perdición!"
+
 
 #: Game/Levels/Quantus/L01_NonemptyUse.lean:9
 msgid "Intro Quantus L01"
