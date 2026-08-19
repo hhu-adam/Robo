@@ -19,11 +19,11 @@ msgstr "– ¡Problema resuelto! –"
 
 #: GameServer/RpcHandlers.lean:177
 msgid "level completed with warnings… 🎭"
-msgstr "– ¡Problema resuelto!  Pero no exactamente como estaba previsto. –"
+msgstr "– ¡Problema resuelto! Pero no del todo como estaba previsto … –"
 
 #: GameServer/RpcHandlers.lean:190
 msgid "intermediate goal solved! 🎉"
-msgstr "– ¡Objetivo intermedio alcanzado! –"
+msgstr "– ¡Objetivo intermedio conseguido! –"
 
 #. §0: `f`
 #. §1: ```
@@ -34,7 +34,7 @@ msgid "A mapping §0 is injectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
-"Una aplicación §0 es inyectiva si y solo si se cumple:\n"
+"Una aplicación §0 es inyectiva sii (si y solo si) se cumple:\n"
 "\n"
 "§1"
 
@@ -47,13 +47,13 @@ msgid "A mapping §0 is surjectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
-"Una aplicación §0 es sobreyectiva si y solo si se cumple:\n"
+"Una aplicación §0 es sobreyectiva sii se cumple:\n"
 "\n"
 "§1"
 
 #: Game/Doc/Definition.lean:27
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
-msgstr "Una aplicación es biyectiva si y solo si es inyectiva y sobreyectiva."
+msgstr "Una aplicación es biyectiva sii es inyectiva y sobreyectiva."
 
 #. §0: `f`
 #. §1: ```
@@ -81,9 +81,9 @@ msgid "§0 is defined as §1.\n"
 "You have to write §3  instead of §4,\n"
 "as §5 is ambigous in Leanic."
 msgstr ""
-"§0 se define como §1. Dicho en cristiano, esto significa, naturalmente, §2.\n"
+"§0 se define como §1. Dicho llanamente, esto significa, naturalmente, §2.\n"
 "\n"
-"Por desgracia, tienes que escribir §3  en lugar de §4, ya que §5 es ambiguo en leanés."
+"Desafortunadamente, tienes que escribir §3 en lugar de §4, ya que §5 es ambiguo en leanés."
 
 #. §0: `LeftInverse g f`
 #. §1: `g ∘ f = id`
@@ -92,7 +92,7 @@ msgstr ""
 #: Game/Doc/Definition.lean:54
 msgid "§0 means §1, or more exactly:\n"
 "§2, as can be seen with §3."
-msgstr "§0 significa §1, o más exactamente: §2, como puedes comprobar fácilmente con §3."
+msgstr "§0 significa §1, o de manera más precisa: §2, como puedes comprobar fácilmente con §3."
 
 #. §0: `HasRightInverse f`
 #. §1: `f`
@@ -117,7 +117,7 @@ msgid "For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
 "Look up definition with §4."
 msgstr ""
 "Para una aplicación §0 de un conjunto en sí mismo y un elemento §1, §2 es el enunciado §3.\n"
-"Con §4 puedes desplegar la definición fácilmente."
+"Puedes desplegar la definición fácilmente usando §3."
 
 #. §0: `f : A → A`
 #. §1: `fixedPoints f : Set A`
@@ -1266,7 +1266,7 @@ msgstr ""
 "De forma más general, puedes usar §4 para elegir elementos con el axioma de elección:\n"
 "de una hipótesis de la forma\n"
 "§5\n"
-"extrae §6 una aplicación §7 y la hipótesis §8.\n"
+"§6 extrae una aplicación §7 y la hipótesis §8.\n"
 "\n"
 "(Aquí §9 es un predicado que depende de dos variables §10 y §11.)"
 
@@ -1327,7 +1327,7 @@ msgid "The tactic §0 concludes the proof if it finds a contradiction in the ass
 "that was opened with §6."
 msgstr ""
 "La táctica §0 cierra la demostración cuando encuentra una contradicción en las hipótesis.\n"
-"Una contradicción de este tipo puede tener, por ejemplo, el siguiente aspecto:\n"
+"Una contradicción de este tipo puede ser, por ejemplo, de las siguientes formas:\n"
 "\n"
 "* §1\n"
 "* §2 y §3\n"
@@ -1377,7 +1377,7 @@ msgstr ""
 "Dos subconjuntos de un conjunto dado son iguales si tienen los mismos elementos.\n"
 "Si el objetivo es\n"
 "§0\n"
-"para dos subconjuntos de §1 (es decir, para §2), entonces §3 transforma el objetivo en la equivalencia\n"
+"para dos subconjuntos de §1 (i.e. para §2) §3 transforma el objetivo en la equivalencia\n"
 "§4"
 
 #. §0: ```
@@ -1487,7 +1487,7 @@ msgid "With §0, you can define mappings with two branches of definition.\n"
 "* If you have §6 as an assumption, you can use\n"
 "§7 to reduce the expression §8 to §9."
 msgstr ""
-"Con §0 puedes definir aplicaciones con dos ramas de definición.\n"
+"Con §0 puedes definir aplicaciones con dos tramos.\n"
 "\n"
 "Por ejemplo, §1 define la función valor absoluto.\n"
 "\n"
@@ -1536,7 +1536,7 @@ msgstr ""
 "\n"
 "## Modificaciones en este juego\n"
 "\n"
-"Fuera de este juego, §7 se llama §8; §9 se escribe en un principio como §10, y §11 como §12.\n"
+"Fuera de este juego, §7 se llama §8, §9 se escribe como §10, y §11 como §12.\n"
 "Estos términos son iguales por definición, pero en ocasiones hay que reescribirlos explícitamente con §13 y §14."
 
 #. §0: `intro`
@@ -1774,7 +1774,7 @@ msgstr ""
 "| §12                | §13                    | §14 y §15                                  |\n"
 "| §16                | §17                    | un objetivo con §18, un objetivo con §19   |\n"
 "\n"
-"Los paréntesis angulares de los cuatro primeros ejemplos los escribes como §20 y §21, respectivamente.\n"
+"Los paréntesis angulares de los cuatro primeros ejemplos se escriben con §20 y §21, respectivamente.\n"
 "Aquí, §22 es el *constructor anónimo*.\n"
 "Te lo puedes imaginar más o menos como la notación de tuplas en \"un grupo abeliano es una tupla §23 tal que …\"."
 
@@ -1943,7 +1943,7 @@ msgstr ""
 "* §6 usa además la definición de §7\n"
 "* §8 usa exclusivamente las hipótesis/lemas/definiciones §9, §10 y §11\n"
 "\n"
-"*(En la vida real, §0 es muchísimo más potente que en este juego: §0 intenta aplicar todos los lemas de §1 debidamente marcados para §3, ¡y son muchos! Entre ellos hay también lemas que resolverían en un solo paso algunos de los problemas que aquí se plantean. Por eso, en el juego solo está permitido un pequeño subconjunto de estos lemas.)*"
+"*(En la realidad, §0 es muchísimo más potente que en este juego: §0 intenta aplicar todos los lemas de §1 debidamente marcados con §2, ¡y son muchos! Entre ellos hay también lemas que resolverían en un solo paso algunos de los problemas que aquí se plantean. Por eso, en el juego solo está permitido un pequeño subconjunto de estos lemas.)*"
 
 #. §0: `specialize h a₁ a₂`
 #. §1: `have h := h a₁ a₂`
