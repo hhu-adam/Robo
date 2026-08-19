@@ -29,7 +29,7 @@ Statement (A B C D : Prop) (h₁ : C ↔ D) (h₂ : A ↔ B) (h₃ : A ↔ D) : 
 
     **Robo**: Dann schreibst du ein `←` (`\\l`, also klein \"L\") vor den Namen, also `rw [← hₓ]`."
   -/
-  Hint "To rewrite into the other direction you can use `←` (`\\l`) infront of the name. Try `rw [← hₓ]`"
+  Hint "To rewrite into the other direction you can use `←` (`\\l`) in front of the name. Try `rw [← hₓ]`"
   Branch
     rw [← h₃]
     /-

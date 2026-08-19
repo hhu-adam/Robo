@@ -17,7 +17,7 @@ TheoremDoc Finset.insert_erase as "insert_erase" in "Set"
 
 namespace Finset
 open Classical -- otherwise need `[h : DecidableEq A]` in the statement
-               -- open scoped Classical also works in vscode and compliles without error,
+               -- open scoped Classical also works in vscode and compiles without error,
                -- but somehow leads to error in this level when deployed locally with npm start
 
 Statement insert_erase {A : Type} {s : Finset A} {a : A} (h : a ∈ s) :

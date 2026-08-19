@@ -23,7 +23,7 @@ Statement : HasLeftInverse succ  := by
   "
   -/
   Hint "It conjected that `n ↦ n + 1` has left inverse. One would assume that `n ↦ n - 1` would
-  not work for `n = 0`. Tackling this by case distinction e.g. `if … then … else` is unecessary as
+  not work for `n = 0`. Tackling this by case distinction e.g. `if … then … else` is unnecessary as
   in Leanic `0 - 1` is in `ℕ`. It is simply defined as `0`"
   Branch
     use (fun n ↦ if 0 < n then n - 1 else 0)

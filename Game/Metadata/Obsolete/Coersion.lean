@@ -6,14 +6,14 @@ import Lean
 # Macro / Elaborator
 
 This file defines a custom macro dealing with
-coersion `Fin n → Nat` inside a sum.
+coercion `Fin n → Nat` inside a sum.
 
-In paricularly a sum `∑ (i : Fin n), i + 1` is elaborated as `∑ (i : Fin n), (i : ℕ) + 1`
+In particularly a sum `∑ (i : Fin n), i + 1` is elaborated as `∑ (i : Fin n), (i : ℕ) + 1`
 so no summation ever happens in `Fin n` but always at least in `ℕ`.
 
 # Delaborator
 
-Further, there is a delaborator for coersions which removes the `↑`.
+Further, there is a delaborator for coercions which removes the `↑`.
 
 *Note*: This might cause problems, because the delaborated term might not parse anymore,
 but the aim is to test how relevant this is in the scope of this game.
@@ -35,7 +35,7 @@ unsafe def addNatCoe' (p : Term) (i : Ident) : Term := { raw :=
   -- Equality should be a function application too, but `a = b` and `Eq a b`
   -- seem to be apriory different terms, so we exclude the former
   | .node _ `«term_=_» _ => p.raw
-  -- On encountering a coersion of the form `(_ : Fin _)` we should stop
+  -- On encountering a coercion of the form `(_ : Fin _)` we should stop
   | .node _ `Lean.Parser.Term.typeAscription #[_, _, _, .node _ `null #[.node _ `Lean.Parser.Term.app #[.ident _ _ `Fin _, _]], _] =>
     p.raw
   | .node info kind args =>
@@ -64,7 +64,7 @@ scoped macro_rules (kind := BigOperators.bigsum)
 
 open Lean PrettyPrinter.Delaborator SubExpr in
 
-/-- Custom coersion delaborator that does not display a `↑`. -/
+/-- Custom coercion delaborator that does not display a `↑`. -/
 @[delab app]
 def coeDelaborator : Delab := whenPPOption getPPCoercions do
   let e ← getExpr

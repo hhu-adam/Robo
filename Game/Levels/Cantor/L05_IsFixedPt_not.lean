@@ -31,7 +31,7 @@ Statement : ¬ ∃ (P : Prop),  IsFixedPt (¬ .) P := by
   "
   -/
   Hint "The second `¬` means the same as the first: logical negation. Interpret it as the self
-  mapping of the set `Prop` of all possible satements."
+  mapping of the set `Prop` of all possible statements."
   Branch
     by_contra h
     obtain ⟨P, hP⟩ := h

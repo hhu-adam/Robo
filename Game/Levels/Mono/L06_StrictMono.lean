@@ -20,7 +20,7 @@ Statement StrictMono.injective {f : ℤ → ℤ}
     **Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus `Injective f` einführen?
   "
   -/
-  Hint (hidden := true) "Introduce all varaibles and assumptions from `Injective f`"
+  Hint (hidden := true) "Introduce all variables and assumptions from `Injective f`"
   intro a b h
   /-
   Hint (hidden := true) (strict := true)"

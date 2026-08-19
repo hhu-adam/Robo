@@ -30,7 +30,7 @@ Statement {A : Type} (n : ℕ) :
   "
   -/
   Hint "Explain `diag`: in the definition add brackets so it's `A → (Fin (n + 1) → A)`. So, `diag`
-  is a mapping from `A` to `Fin (n + 1) → A`. `Fin (n+1)` is the set $\\\{0,1,…,n\\}$ and therfore,
+  is a mapping from `A` to `Fin (n + 1) → A`. `Fin (n+1)` is the set $\\\{0,1,…,n\\}$ and therefore,
   `Fin (n + 1) → A` is the set of mappings from $\\\{0,1,…,n\\}$ to $A$. Hence, such a mapping can be seen
   as a $(n+1)$-tuple of elements in $A$. So, `diag` is given as a mapping from $A$ to $A^\{n+1}$.
   Name `diag` should be clear now"
@@ -42,7 +42,7 @@ Statement {A : Type} (n : ℕ) :
   "
   -/
   Hint (hidden := true) "To be more precise: `diag` sends an $a$ onto the mapping, which maps each index $i \\in \\\{0,1,…,n\\}$ onto $a$.
-  In the former intepretation this is the mapping $a ↦ (a,…,a)$."
+  In the former interpretation this is the mapping $a ↦ (a,…,a)$."
   -- Hint (hidden := true) "**Robo**: Wenn du gar nicht weiter weißt, fang am besten mal mit `unfold Injective` an."
   Hint (hidden := true) "If unsure start with `unfold Injective`"
   --unfold Injective

@@ -54,7 +54,7 @@ Statement {a b c : ℕ} (h : a ∣ b) (g : a ∣ c) : a ∣ b + c := by
     **Robo**: Genau.  Als nächstes nimmst du die Annahmen mit `obtain ⟨x ,hx⟩ := _`
   usw. auseinander."
   -/
-  Hint "Continue with `obtain` and `use`. Fristly diect assumptions with `obtain ⟨x ,hx⟩ := _`"
+  Hint "Continue with `obtain` and `use`. Fristly direct assumptions with `obtain ⟨x ,hx⟩ := _`"
   obtain ⟨x, h⟩ := h
   obtain ⟨y, g⟩ := g
   -- Hint (hidden := true) "**Robo**: Jetzt musst du mit `use _` eine Zahl angeben, sodass

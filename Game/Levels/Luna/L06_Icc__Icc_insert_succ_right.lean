@@ -33,7 +33,7 @@ Statement {a b : ℤ} (h : a ≤ b + 1) :
      "
   -/
   Hint "Remind that `Icc` is an interval which is closed to both sides. You could write `Icc a b`
-  as $[a, b]$ or $\\\{a, a + 1, \\dots, b\\}$, because we are in the natual numbers. Therfore, the
+  as $[a, b]$ or $\\\{a, a + 1, \\dots, b\\}$, because we are in the natual numbers. Therefore, the
   goal is: $$ [a, b] ∪ \\\{ b + 1 \\} = [a, b + 1] $$"
   -- Hint (hidden := true) "**Robo:** Gleichheit von Mengen ruft nach `ext`."
   Hint "Equality of sets demands `ext`"

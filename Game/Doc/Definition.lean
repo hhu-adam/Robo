@@ -44,7 +44,7 @@ DefinitionDoc StrictMono as "StrictMono" in "Function"
 In other words: `∀ x, g (f x) = x`.
 
 You have to write `Function.RightInverse`  instead of `RightInverse`,
-as `RightInverse` is ambigous in Leanic.
+as `RightInverse` is ambiguous in Leanic.
 -/
 DefinitionDoc Function.RightInverse as "RightInverse" in "Function"
 -- Note the fact that one sees `LeftInverse` but `Function.RightInverse` is because

@@ -1145,7 +1145,7 @@
  "Explain that §0 and §1 with §2 can be used as in Implis":
  "**You**: I feel like I've seen this before. \n\n**Scribble**: Yes! It looks very similar to a problem we already solved on *Implis*. Except that this one has equalities of numbers instead of if-then statements! But that doesn't really make any difference. You can treat §0 and §1 practically the same as §2.",
  "Explain that from §0 follow that there is §1 such that §2. Try §3\nto introduce §4.":
- "**You**: So from §0, I now there is some §1 such that §2 … \n\n**Scribble**: You can conjure this §4 out of your hypothesis with §3.",
+ "**You**: So from §0, I know there is some §1 such that §2 … \n\n**Scribble**: You can conjure this §4 out of your hypothesis with §3.",
  "Explain that each §0 has stated properties":
  "**You**: Here is a summary of all the key properties. \n\n**Scribble**: And you're claiming that only Tracy has these properties? \n\n**You**: Yes, I think so.  Every §0 with these properties behaves exactly like Tracy on all matrices. And so it *is* Tracy!",
  "Explain that each sub-goal needs §0":

@@ -47,7 +47,7 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
     -/
     Hint (hidden := true) "Try `apply congr_fun at h` or `rw [← comp_apply (f:= f)]`.
     `rw [← comp_apply]` without `(f:=f)` does not work. You must explicitly point out which value
-    the variable `f` should have in statment `comp_apply`."
+    the variable `f` should have in statement `comp_apply`."
     Branch
       rw [← comp_apply (f:= f)]
       rw [h]

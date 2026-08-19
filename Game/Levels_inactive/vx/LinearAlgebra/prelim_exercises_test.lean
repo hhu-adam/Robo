@@ -70,7 +70,7 @@ example :
     use U₁ ⊔ U₂
     sorry
 
-/- 5. Final verison ?-/
+/- 5. Final version ?-/
 example :
     (∃ (W : Submodule k V), W.carrier = U₁.carrier ∪ U₂.carrier) ↔
     U₁ ≤ U₂ ∨ U₂ ≤ U₁ := by

@@ -16,7 +16,7 @@ Introduction
 |:---------------------|:------------------------------------------|
 | `Fin n`              | Ist ein Typ mit Zahlen $0, \\ldots, n-1$. |
 | `∑ (i : Fin n), a i` | $\\sum_{i=0}^{n-1} a_i$                   |
-| `↑i`                 | Eine Coersion, z.B. `Fin n → ℕ`.          |
+| `↑i`                 | Eine Coercion, z.B. `Fin n → ℕ`.          |
 
 und
 

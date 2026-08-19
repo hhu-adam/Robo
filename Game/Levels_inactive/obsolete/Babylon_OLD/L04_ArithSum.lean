@@ -52,7 +52,7 @@ Statement arithmetic_sum (n : ℕ) :
   simp
   Hint "**Du**: Was bedeutet eigentlich der kleine Pfeil `↑`?
 
-  **Robo**: Das ist eine *Coersion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,
+  **Robo**: Das ist eine *Coercion*. Sowas wie wenn man eine natürliche Zahl als ganze Zahl betrachtet,
   also die natürliche Abbildung `ℕ ↪ ℤ` benutzt. Oder hier, wenn ein Element `x : Fin n` als
   Element `↑x : ℕ` betrachtet wird."
   Hint (hidden := true)

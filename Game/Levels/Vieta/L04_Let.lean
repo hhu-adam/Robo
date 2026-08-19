@@ -68,7 +68,7 @@ Statement (x : ℤ) :
   `{f}` hindurch,
   du kannst es also direkt benutzen."
   -/
-  Hint "Try `ring` as it sees through defintion `{f}`"
+  Hint "Try `ring` as it sees through definition `{f}`"
   ring
 
 

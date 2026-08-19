@@ -17,7 +17,7 @@ This is mainly copied and modified from the mathlib-tactic `induction'`.
 -/
 
 /--
-Custom induction principial for the tactics `induction`.
+Custom induction principal for the tactics `induction`.
 Used to show `0` instead of `Nat.zero` in the base case.
 -/
 def rec' {P : Nat → Prop} (zero : P 0)
