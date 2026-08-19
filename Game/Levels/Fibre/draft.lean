@@ -15,13 +15,13 @@ lemma ncard_eq_two_lt {s : Set ℝ} :
       grind
   grind
 
-lemma my_not_two_set {S : Set ℝ} [hSf : Finite S] {x₁ x₂ x₃ : ℝ} (h1 : x₁ ∈ S) (h2 : x₂ ∈ S)
-    (h3 : x₃ ∈ S) (h12: x₁ < x₂) (h23: x₂ < x₃) : ncard S ≠ 2 := by
-  intro hS
-  have h_lt : 2 < S.ncard := by
-    rw [two_lt_ncard]
-    exact ⟨x₁, h1, x₂, h2, x₃, h3, ne_of_lt h12, ne_of_lt (h12.trans h23), ne_of_lt h23⟩
-  grind
+-- lemma my_not_two_set {S : Set ℝ} [hSf : Finite S] {x₁ x₂ x₃ : ℝ} (h1 : x₁ ∈ S) (h2 : x₂ ∈ S)
+--     (h3 : x₃ ∈ S) (h12: x₁ < x₂) (h23: x₂ < x₃) : ncard S ≠ 2 := by
+--   intro hS
+--   have h_lt : 2 < S.ncard := by
+--     rw [two_lt_ncard]
+--     exact ⟨x₁, h1, x₂, h2, x₃, h3, ne_of_lt h12, ne_of_lt (h12.trans h23), ne_of_lt h23⟩
+--   grind
 
 lemma my_second_element {A : Type} {S : Set A} {a : A} (h : ncard S = 2) (ha : a ∈ S) :
     ∃ b ∈ S, b ≠ a := by
@@ -38,7 +38,7 @@ lemma getPreimage {f : ℝ → ℝ} (hf1 : Continuous f) :
   rw [Set.uIcc_of_le hab.le, Set.mem_Icc] at hc
   grind
 
-lemma cross {f : ℝ → ℝ} (hf1 : Continuous f) (a b c : ℝ) (hab : a < b) :
+lemma cross {f : ℝ → ℝ} (hf1 : Continuous f) {a b c : ℝ} (hab : a < b) :
     (f a = 0 ∧ f b = f c) ∨ (f a = f c ∧ f b = 0) →
       ∀ y, 0 < y → y < f c → ∃ c, a < c ∧ c < b ∧ f c = y := by
   intro hval y hy0 hyM
@@ -58,6 +58,10 @@ lemma three_preimages {f : ℝ → ℝ} (hf2 : ∀ y, ncard (f⁻¹' {y}) = 2) {
   rw [h3, hf2 y] at hle
   grind
 
+/-
+new theorem:
+IsCompact.exists_isMaxOn
+-/
 lemma exist_nonneg {f : ℝ → ℝ} (hf1 : Continuous f) (hf2 : ∀ y, ncard (f⁻¹' {y}) = 2) {x₁ x₂ : ℝ}
     (hx_lt : x₁ < x₂) (hx : f ⁻¹' {0} = {x₁, x₂}) : ∃ x ∈ Ioo x₁ x₂, f x ≤ 0 := by
   by_contra! hc
@@ -86,17 +90,17 @@ lemma exist_nonneg {f : ℝ → ℝ} (hf1 : Continuous f) (hf2 : ∀ y, ncard (f
   let y₀ := f xmax / 2
   have y₀_pos : 0 < y₀ := by grind
   have y₀_lt : y₀ < f xmax := by grind
-  obtain ⟨a, ha₁, ha₂, hfa⟩ := cross hf1 x₁ _ _ xmax_Ioo.1 (Or.inl ⟨fx₁_zero, rfl⟩) y₀ y₀_pos y₀_lt
-  obtain ⟨b, hb₁, hb₂, hfb⟩ := cross hf1 _ x₂ _ xmax_Ioo.2 (Or.inr ⟨rfl, fx₂_zero⟩) y₀ y₀_pos y₀_lt
+  obtain ⟨a, ha₁, ha₂, hfa⟩ := cross hf1 xmax_Ioo.1 (Or.inl ⟨fx₁_zero, rfl⟩) y₀ y₀_pos y₀_lt
+  obtain ⟨b, hb₁, hb₂, hfb⟩ := cross hf1 xmax_Ioo.2 (Or.inr ⟨rfl, fx₂_zero⟩) y₀ y₀_pos y₀_lt
   /- case 1: `x₃ < x₁`. -/
   by_cases h_lt : x₃ < x₁
   · /- a third preimage of `y₀` lies in `(x₃, x₁)`, left of `a`. -/
-    obtain ⟨c, hc1, hc2, hfc⟩ := cross hf1 x₃ x₁ _ h_lt (Or.inr ⟨x₃_mem, fx₁_zero⟩) y₀ y₀_pos y₀_lt
+    obtain ⟨c, hc1, hc2, hfc⟩ := cross hf1 h_lt (Or.inr ⟨x₃_mem, fx₁_zero⟩) y₀ y₀_pos y₀_lt
     exact three_preimages hf2 (by linarith) (by linarith) hfc hfa hfb
   /- case 1: `x₂ < x₃`. -/
   by_cases h_gt : x₂ < x₃
   · /- a third preimage of `y₀` lies in `(x₂, x₃)`, left of `b`. -/
-    obtain ⟨c, hc1, hc2, hfc⟩ := cross hf1 x₂ x₃ _ h_gt (Or.inl ⟨fx₂_zero, x₃_mem⟩) y₀ y₀_pos y₀_lt
+    obtain ⟨c, hc1, hc2, hfc⟩ := cross hf1 h_gt (Or.inl ⟨fx₂_zero, x₃_mem⟩) y₀ y₀_pos y₀_lt
     exact three_preimages hf2 (by linarith) (by linarith) hfa hfb hfc
   /- the rest case: `x₃` inside the interval `[x₁, x₂]`. -/
   let t₀ := (x₃ + xmax) / 2
@@ -115,17 +119,17 @@ lemma exist_nonneg {f : ℝ → ℝ} (hf1 : Continuous f) (hf2 : ∀ y, ncard (f
   have ht₀pos : 0 < f t₀ := hc _ t₀_mem
   by_cases x₃_lt : x₃ < xmax
   · obtain ⟨c, hc1, hc2, hfc⟩ :=
-    cross hf1 _ _ _ x₃_mem_Ioo.1 (Or.inl ⟨fx₁_zero, x₃_mem⟩) (f t₀) ht₀pos ft₀_lt
+    cross hf1 x₃_mem_Ioo.1 (Or.inl ⟨fx₁_zero, x₃_mem⟩) (f t₀) ht₀pos ft₀_lt
     obtain ⟨d, hd1, hd2, hfd⟩ :=
-      cross hf1 _ _ _ xmax_Ioo.2 (Or.inr ⟨rfl, fx₂_zero⟩) (f t₀) ht₀pos ft₀_lt
+      cross hf1 xmax_Ioo.2 (Or.inr ⟨rfl, fx₂_zero⟩) (f t₀) ht₀pos ft₀_lt
     refine three_preimages hf2 ?_ ?_ hfc rfl hfd
     grind
     grind
   have x₃_gt : xmax < x₃ := by grind
   obtain ⟨c, hc1, hc2, hfc⟩ :=
-    cross hf1 _ _ _ xmax_Ioo.1 (Or.inl ⟨fx₁_zero, rfl⟩) (f t₀) ht₀pos ft₀_lt
+    cross hf1 xmax_Ioo.1 (Or.inl ⟨fx₁_zero, rfl⟩) (f t₀) ht₀pos ft₀_lt
   obtain ⟨d, hd1, hd2, hfd⟩ :=
-    cross hf1 _ _ _ x₃_mem_Ioo.2 (Or.inr ⟨x₃_mem, fx₂_zero⟩) (f t₀) ht₀pos ft₀_lt
+    cross hf1 x₃_mem_Ioo.2 (Or.inr ⟨x₃_mem, fx₂_zero⟩) (f t₀) ht₀pos ft₀_lt
   refine three_preimages hf2 ?_ ?_ hfc rfl hfd
   grind
   grind
@@ -137,15 +141,21 @@ lemma exist_nonpos {f : ℝ → ℝ} (hf1 : Continuous f) (hf2 : ∀ y, ncard (f
     intro y
     have : (-f) ⁻¹' {y} = f ⁻¹' {-y} := by
       ext x
-      simp only [Set.mem_preimage, Set.mem_singleton_iff, Pi.neg_apply, neg_eq_iff_eq_neg]
-    simpa [this] using hf2 _
+      simp [neg_eq_iff_eq_neg]
+    rw [this]
+    apply hf2
   have hx' : (-f) ⁻¹' {0} = {x₁, x₂} := by
     have : (-f) ⁻¹' {0} = f ⁻¹' {0} := by
       ext x
-      simp [Set.mem_preimage, Set.mem_singleton_iff, Pi.neg_apply]
-    rw [this]; exact hx
+      simp
+    rw [this]
+    apply hx
   obtain ⟨x, hx_mem, hx_le⟩ := exist_nonneg (continuous_neg_iff.mpr hf1) hf2' hx_lt hx'
-  exact ⟨x, hx_mem, by simpa using hx_le⟩
+  use x
+  constructor
+  · assumption
+  · simp at hx_le
+    assumption
 
 lemma main_theorem : ¬ ∃ (f : ℝ → ℝ), Continuous f ∧ ∀ y, ncard (f⁻¹' {y}) = 2 := by
   intro ⟨f, hf₁, hf₂⟩
@@ -172,6 +182,9 @@ lemma main_theorem : ¬ ∃ (f : ℝ → ℝ), Continuous f ∧ ∀ y, ncard (f�
   -- hence inside `Ioo x₁ x₂`. That makes `e` a third preimage of `0`, contradiction.
   have h0_mem : 0 ∈ Set.uIcc (f c) (f d) :=
     Set.mem_uIcc.mpr (Or.inl ⟨fc_neg.le, fd_pos.le⟩)
+  have h0_mem' : 0 ∈ Set.Icc (f c) (f d) := by
+    grind
+  -- obtain ⟨e, he_mem, he_eq⟩ := intermediate_value_Icc hf₁.continuousOn h0_mem
   obtain ⟨e, he_mem, he_eq⟩ := intermediate_value_uIcc hf₁.continuousOn h0_mem
   rw [Set.mem_uIcc] at he_mem
   have he_Ioo : x₁ < e ∧ e < x₂ := by grind
