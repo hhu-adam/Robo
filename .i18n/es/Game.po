@@ -117,7 +117,7 @@ msgid "For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
 "Look up definition with §4."
 msgstr ""
 "Para una aplicación §0 de un conjunto en sí mismo y un elemento §1, §2 es el enunciado §3.\n"
-"Puedes desplegar la definición fácilmente usando §3."
+"Puedes desplegar la definición fácilmente usando §4."
 
 #. §0: `f : A → A`
 #. §1: `fixedPoints f : Set A`
@@ -3447,7 +3447,7 @@ msgstr ""
 #: Game/Levels/Quantus/L02_NonemptyObtain.lean:47
 msgid "Conclusion Quantus L02"
 msgstr ""
-"Recibís un aplauso discreto.\n"
+"Recibís un modesto aplauso.\n"
 "Las formalósofas cuchichean entre sí."
 
 #. §0: ```
@@ -3459,7 +3459,7 @@ msgid "Intro Quantus L03: Show defintion\n"
 "§0\n"
 "before introducing §1"
 msgstr ""
-"Por lo visto, las formalósofas están intentando ponerse de acuerdo sobre otro problema que presentaros.\n"
+"Por lo visto, las formalósofas están intentando ponerse de acuerdo sobre que otro problema presentaros.\n"
 "Al cabo de un rato se van perfilando dos bandos.\n"
 "Oís alternativamente gritos de \"Even\" y de \"Odd\".\n"
 "Así que Glifo, por si acaso, te enseña ya la definición correspondiente:\n"
@@ -3476,7 +3476,7 @@ msgstr ""
 "\n"
 "**Tú**: Es que es un poco trivial…\n"
 "\n"
-"**Glifo**: ¿Te acuerdas? §0 puede resolver todos los problemas para los que hay un algoritmo sencillo que determine la verdad. ¡Los enunciados sobre números concretos suelen caer en esta categoría!"
+"**Glifo**: ¿Te acuerdas? §0 puede resolver todos los problemas para los que hay un algoritmo sencillo. ¡Los enunciados sobre números concretos suelen caer en esta categoría!"
 
 #. §0: `decide`
 #. §1: `Even 42`
@@ -3513,7 +3513,7 @@ msgstr ""
 "\n"
 "§1\n"
 "\n"
-"Con esto recibís también otra hoja:"
+"Con esto, recibís otra hoja:"
 
 #: Game/Levels/Quantus/L04_Exists.lean:41
 msgid "[Doc.Theorem] Nat.even_square"
@@ -3530,7 +3530,7 @@ msgstr "El cuadrado de un número par es par."
 msgid "Explain definition of §0 by §1 using §2. Look up definition by §3.\n"
 "§4 might be considered but §5 does not work, because of §6 arbitrary."
 msgstr ""
-"**Glifo**: Como ves arriba, §0 está definido mediante la existencia de un §1 tal que §2. Lo mejor es que despliegues esta definición con §3. Así verás mejor lo que pasa.\n"
+"**Glifo**: Como ves arriba, §0 está definido mediante la existencia de un §1 tal que §2. Lo mejor será que despliegues esta definición con §3. Así verás mejor lo que pasa.\n"
 "\n"
 "**Tú**: ¿Y qué hay de §4?\n"
 "\n"
@@ -3539,7 +3539,7 @@ msgstr ""
 #. §0: `unfold Even at h`
 #: Game/Levels/Quantus/L04_Exists.lean:63
 msgid "[Hint jrxb] Try §0"
-msgstr "**Glifo**: Lo mejor es que hagas también §0, para que entiendas lo que pasa."
+msgstr "**Glifo**: Lo mejor será hagas también §0, para que entiendas lo que pasa."
 
 #. §0: `«{n}» ^ 2 / 2`
 #. §1: `ℕ`
@@ -3576,7 +3576,7 @@ msgid "Explain that from §0 follow that there is §1 such that §2. Try §3\n"
 msgstr ""
 "**Tú**: Entonces, por §0 ahora sé que existe un §1 tal que §2…\n"
 "\n"
-"**Glifo**: Con §3 puedes introducir efectivamente ese §4."
+"**Glifo**: Con §3 puedes extraer efectivamente ese §4."
 
 #. §0: `r`
 #. §1: `n ^ 2 = r + r`
@@ -3624,13 +3624,13 @@ msgstr ""
 #. §0: `Odd.neg_pow`
 #: Game/Levels/Quantus/L05_neg_pow.lean:18
 msgid "Try continue with §0"
-msgstr "**Glifo**:  Creo que aquí puedes avanzar con §0."
+msgstr "**Glifo**:  Creo que aquí te puede ayudar §0."
 
 #: Game/Levels/Quantus/L06_not_even_iff_odd.lean:10
 msgid "Intro Quantus L06"
 msgstr ""
 "Al instante aparece la siguiente hoja.\n"
-"Parece que esta vez han llegado a una solución de compromiso."
+"Parece que esta vez han llegado a un acuerdo."
 
 #. §0: `i`
 #. §1: `by_cases h : Even i`
@@ -3639,7 +3639,7 @@ msgid "Try case distinction if §0 is even or uneven. Try §1."
 msgstr ""
 "**Tú**:  Creo que me gustaría hacer una distinción de casos según si §0 es par o impar.\n"
 "\n"
-"**Glifo**:  Pues hazlo – por ejemplo, con §1."
+"**Glifo**:  Pues hazlo con §1 por ejemplo."
 
 #. §0: `not_odd_iff_even`
 #. §1: `¬Odd`
@@ -3752,7 +3752,7 @@ msgstr "Tras mucho tira y afloja, las formalósofas por fin se han puesto de acu
 #. §0: `¬`
 #: Game/Levels/Quantus/L09_PushNeg.lean:20
 msgid "Remind about §0"
-msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. No me digas …"
+msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
 
 #. §0: `Odd`
 #. §1: `not_odd_iff_even`
@@ -3780,14 +3780,14 @@ msgstr ""
 "\n"
 "**Tú**: ¿Y cómo lo haría entonces?\n"
 "\n"
-"**Glifo**: Te lo enseño más tarde, no aquí delante de tanto público. Yo ahora preferiría dar un número concreto con §4, y reescribir después."
+"**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después."
 
 #. §0: `not_odd_iff_even`
 #: Game/Levels/Quantus/L09_PushNeg.lean:58
 #: Game/Levels/Quantus/L09_PushNeg.lean:62
 #: Game/Levels/Quantus/L09_PushNeg.lean:65
 msgid "Now you can apply §0"
-msgstr "**Glifo**: ¡Buena elección! Ahora puedes usar §0."
+msgstr "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:74
@@ -3867,7 +3867,7 @@ msgstr "**Glifo**: Aquí podrías continuar con §0."
 #: Game/Levels/Quantus/L10_DrinkersParadox.lean:76
 msgid "We have assumption §0. Try applying §1 on §2."
 msgstr ""
-"**Tú**: Entonces, según §0 existe una persona que no bebe. ¿Podría aprovecharla para que el enunciado sea trivialmente verdadero?\n"
+"**Tú**: Entonces, según §0 existe una persona que no bebe. ¿Podría aprovecharla para hacer que el enunciado fuese trivialmente verdadero?\n"
 "\n"
 "**Glifo**: Mira a ver cómo se podría aplicar §1 a la hipótesis §2."
 
@@ -3875,7 +3875,7 @@ msgstr ""
 #. §1: `«{hp'}»`
 #: Game/Levels/Quantus/L10_DrinkersParadox.lean:81
 msgid "Observe §0 and §1"
-msgstr "**Glifo**: ¿Qué ves cuando te fijas en §0 y §1?"
+msgstr "**Glifo**: ¿Qué ves cuando te fijas en §0 y en §1?"
 
 #. §0: `∃`
 #. §1: `∀`
@@ -3917,7 +3917,7 @@ msgstr ""
 "|:--------------------------|:-------------------------------------------------------| \n"
 "| §6                        | reescribir con igualdades                          | \n"
 "| §9                        | demostrar algorítmicamente enunciados sobre números concretos    | \n"
-"| §10                       | \"desplegar\" la definición      | \n"
+"| §10                       | \"desplegar\" una definición      | \n"
 "| §11                       | dar un valor concreto para un §12 en el objetivo               | \n"
 "| §13                       | descomponer un §14 en una hipótesis                | \n"
 "| §15                       | abordar un §16 en el objetivo                          | \n"
@@ -3930,9 +3930,9 @@ msgstr "Quantus"
 #: Game/Levels/Quantus.lean:59
 msgid "Intro Quantus"
 msgstr ""
-"En Quantus os espera ya una gran multitud de formalósofas. Hablan todas a la vez, alborotadamente, y os cuesta incluso haceros oír. Al final, Glifo emite un sonoro golpe de gong que las calma por un momento.\n"
+"En Quantus os espera ya una gran multitud de formalósofas. Hablan todas a la vez, alborotadamente, y os cuesta escucharos a vosotros mismos. Al final, Glifo emite un sonoro golpe de gong que las calma por un momento.\n"
 "\n"
-"**Tú**: Traemos una carta para vuestra reina. ¿Podríais llevarnos ante vuestra reina?\n"
+"**Tú**: Traemos una carta para vuestra reina. ¿Podríais llevarnos ante ella?\n"
 "\n"
 "**Todas** *(a coro)*: ¡Ya estamos todas aquí!\n"
 "\n"
