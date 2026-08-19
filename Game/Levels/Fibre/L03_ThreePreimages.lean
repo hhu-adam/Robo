@@ -7,11 +7,15 @@ Introduction "Intro Fibre L03"
 
 open Set FullGrind
 
+/-- If every fibre of `f` consists of exactly two points, then three distinct points cannot share the same value. -/
+TheoremDoc three_preimages as "three_preimages" in "Fibre"
+
 Statement three_preimages {f : ℝ → ℝ} (hf : ∀ y, (f ⁻¹' {y}).ncard = 2) {a b c y : ℝ}
     (hab : a < b) (hbc : b < c) (ha : f a = y) (hb : f b = y) (hc : f c = y) : False := by
   have hsub : ({a, b, c} : Set ℝ) ⊆ f ⁻¹' {y} := by grind
   have hfin : (f ⁻¹' {y}).Finite := by
-    obtain ⟨p, q, -, hpq⟩ := Set.ncard_eq_two.mp (hf y)
+    have h : ∃ p q, p ≠ q ∧ f ⁻¹' {y} = {p, q} := Set.ncard_eq_two.mp (hf y)
+    obtain ⟨p, q, -, hpq⟩ := h
     rw [hpq]
     apply Set.toFinite
   have h3 : ({a, b, c} : Set ℝ).ncard = 3 :=
@@ -21,3 +25,5 @@ Statement three_preimages {f : ℝ → ℝ} (hf : ∀ y, (f ⁻¹' {y}).ncard = 
   grind
 
 NewTheorem Set.ncard_eq_three Set.ncard_le_ncard Set.toFinite
+
+TheoremTab "Fibre"
