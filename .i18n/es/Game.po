@@ -5053,13 +5053,13 @@ msgstr ""
 msgid "Intro Cantor L01: Mapping §0 from §1 to the power set of §2, and the set\n"
 "of all elements in §3, which are not located in its image under §4"
 msgstr ""
-"**Cantor**: … Consideramos, pues, una aplicación §0 de §1 en el conjunto de partes de §2, y ahora el conjunto de todos aquellos elementos de §3 que no pertenecen a su imagen por §4 …\n"
+"**Cantor**: … consideramos, pues, una aplicación §0 de §1 en el conjunto de partes de §2, y ahora el conjunto de todos aquellos elementos de §3 que no pertenecen a su imagen por §4 …\n"
 "\n"
 "¡Oh! Un público. No, ¡*dos* públicos! Oíd y ved, ved y asombraos.\n"
 "\n"
 "Saca de su chistera un papelito, lo dobla en forma de golondrina y lo hace volar hasta vosotros.\n"
 "\n"
-"**Cantor**: Ya que tengo dos públicos, bien podrían participar un poquito, ¿no es verdad?"
+"**Cantor**: Ya que tengo dos públicos, bien podrían participar un poquito, ¿no es cierto?"
 
 #. §0: `Set A`
 #. §1: `A`
@@ -5071,14 +5071,14 @@ msgstr ""
 "\n"
 "**Glifo**: Sí, por así decirlo. Es el conjunto, o más exactamente el tipo, de todos los subconjuntos de §2.\n"
 "\n"
-"**Tú**: Y tengo que demostrar que … ajá. Seguramente una demostración por contradicción, ¿no?\n"
+"**Tú**: Y tengo que demostrar que… ajá. Seguramente una demostración por contradicción, ¿no?\n"
 "\n"
 "**Glifo**: Seguramente."
 
 #. §0: `«{h}»`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:49
 msgid "And now disect §0"
-msgstr "**Cantor**: ¡Sí, sí, sí! Y ahora, a descomponer bien §0 …"
+msgstr "**Cantor**: ¡Sí, sí, sí! Y ahora, vamos a descomponer cuidadosamente §0 …"
 
 #. §0: `obtain`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:51
@@ -5088,7 +5088,7 @@ msgstr "**Glifo**: … con §0, como siempre."
 #. §0: `«{a}» ∈ «{f}» «{a}»`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:54
 msgid "Try proof by cases for §0"
-msgstr "**Tú**: ¿Y ahora, seguramente, una distinción de casos según §0?"
+msgstr "**Tú**: Y ahora supongo que distinguimos en casos según si §0, ¿no?"
 
 #. §0: `by_cases h₁ : «{a}» ∈ «{f}» «{a}»`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:56
@@ -5109,7 +5109,7 @@ msgstr ""
 msgid "Remind that, assumpion §0 will be needed agian.\n"
 "Try §1 or §2"
 msgstr ""
-"**Cantor**: ¡Buena idea! ¡Casi correcto!\n"
+"**Cantor**: ¡Buena idea! ¡Casi es correcto!\n"
 "  Pero dentro de un momento vais a volver a necesitar la hipótesis original §0.\n"
 "\n"
 "**Glifo**: Vale, volvemos atrás y seguimos con §1.\n"
@@ -5118,15 +5118,15 @@ msgstr ""
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:96
 msgid "Conclusion Cantor L01"
 msgstr ""
-"Cantor da palmas de alegría.\n"
+"Cantor aplaude y celebra.\n"
 "Como por arte de magia, el papelito vuelve volando hasta él."
 
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:25
 msgid "Intro Cantor L02"
 msgstr ""
-"**Cantor**: ¡Atentos, que en realidad el razonamiento no acaba aquí!\n"
+"**Cantor**: ¡Atentos, el razonamiento no acaba aquí!\n"
 "\n"
-"Mete la mano en su chistera y saca toda clase de cosas. Un cepillo de dientes viejo, una baraja de cartas, un conejo blanco … Finalmente aparece un papel arrugado.\n"
+"Mete la mano en su chistera y saca toda clase de cosas. Un cepillo de dientes viejo, una baraja de cartas, un conejo blanco… Finalmente, aparece un papel arrugado.\n"
 "\n"
 "**Cantor**: ¡Anda, aquí están mis notas! ¡Tachán! ¡Mi famoso argumento diagonal!\n"
 "\n"
@@ -5137,18 +5137,18 @@ msgstr ""
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:52
 msgid "Start here with §0 and §1"
 msgstr ""
-"**Tú**: ¡Esto ya lo he visto antes! En pocas palabras: \"El conjunto de partes siempre tiene mayor cardinal que el propio conjunto\". Creo que también era una demostración por contradicción.\n"
+"**Tú**: ¡Esto lo he visto antes! En resumen: \"El conjunto de partes siempre tiene mayor cardinal que el propio conjunto\". Creo que también era una demostración por contradicción.\n"
 "**Glifo**: Sí, pero yo empezaría con §0 y §1."
 
 #. §0: `f`
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:60
 msgid "Is there a set, which is not hit by §0"
-msgstr "**Cantor**: ¿Y bien? ¿Qué opináis? ¿Existe quizá algún conjunto al que §0 no alcance?"
+msgstr "**Cantor**: ¿Y bien? ¿Qué opináis? ¿Existe algún conjunto al que §0 no alcance?"
 
 #. §0: `let s := { a | a ∉ «{f}» a }`
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:65
 msgid "First, introduce set §0"
-msgstr "**Glifo**: ¡Prueba con el conjunto de hace un momento! Para empezar, podrías introducirlo con §0."
+msgstr "**Glifo**: ¡Prueba con el conjunto de antes! Para empezar, podrías introducirlo con §0."
 
 #. §0: `specialize «{hf}» «{s}»`
 #. §1: `simp`
@@ -5157,7 +5157,7 @@ msgstr "**Glifo**: ¡Prueba con el conjunto de hace un momento! Para empezar, po
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:74
 msgid "Try §0. When you apply §1 later, §2 allows §3 to look through\n"
 "your defintions"
-msgstr "**Glifo**: ¡Genial! Ahora puedes seguir simplemente con §0, por ejemplo. Y cuando más adelante apliques §1, puedes conseguir con §2 que §3 vea a través de tu definición."
+msgstr "**Glifo**: ¡Genial! Ahora puedes seguir simplemente con §0, por ejemplo. Y, cuando más adelante apliques §1, puedes utilizar §2 para asegurarte de que §3 ve a través de tu definición."
 
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:80
 msgid "Cantor expresses happiness"
@@ -5170,7 +5170,7 @@ msgstr ""
 "\n"
 "**Tú**: Glifo, ¿no podríamos usar ahora el resultado de hace un momento?\n"
 "\n"
-"**Glifo**: ¡Perdona, es que todo ha ido rapidísimo! Se me habrá olvidado guardarlo."
+"**Glifo**: ¡Perdona, es que todo ha ocurrido rapidísimo! Se me habrá olvidado guardarlo."
 
 #: Game/Levels/Cantor/L03_IsFixedPt_abs.lean:25
 msgid "Intro Cantor L03"
@@ -5190,7 +5190,7 @@ msgid "Conclusion Cantor L03"
 msgstr ""
 "**Cantor**: ¡Bien hecho!\n"
 "\n"
-"Ha empezado a hacer malabares con unos cuantos cactus, pero, por lo visto, aun así sigue de algún modo pendiente de lo que hacéis."
+"Ha empezado a hacer malabares con unos cuantos cactus, pero, aun así, sigue pendiente de lo que hacéis."
 
 #. §0: `|x|`
 #. §1: `x`
@@ -5207,9 +5207,9 @@ msgstr "**Glifo**: Pues §0 es simplemente el valor absoluto habitual del númer
 #: Game/Levels/Cantor/L03_IsFixedPt_abs.lean:57
 msgid "§0 means 'is fixed point'. §1 equates to §2"
 msgstr ""
-"**Tú**: Mmm …\n"
+"**Tú**: Mmm…\n"
 "\n"
-"**Glifo**: §0 seguramente significa \"is fixed point\" (\"es punto fijo\"). En todo caso, es evidente que §1 significa precisamente §2."
+"**Glifo**: §0 seguramente significa \"is fixed point\" (\"es punto fijo\"). En cualquier caso, parece que §1 significa §2."
 
 #: Game/Levels/Cantor/L03_IsFixedPt_abs.lean:63
 msgid "So far so good"
@@ -5239,24 +5239,24 @@ msgid "See if §0 is the set of all fix points by using §1"
 msgstr ""
 "**Tú**: ¿Aquí §0 será el conjunto de todos los puntos fijos?\n"
 "\n"
-"**Glifo**: Pruébalo – §1 debería volver a ayudarte."
+"**Glifo**: Pruébalo; §1 debería volver a ayudarte."
 
 #. §0: `unfold IsFixedPt`
 #: Game/Levels/Cantor/L04_fixedPoints_neg.lean:40
 msgid "Try again with §0"
-msgstr "**Glifo**: Tiene buena pinta. Y ahora, lo mejor es seguir enseguida con §0."
+msgstr "**Glifo**: Tiene buena pinta. Y ahora, lo mejor es seguir con §0."
 
 #. §0: `simp`
 #: Game/Levels/Cantor/L04_fixedPoints_neg.lean:47
 msgid "Again try §0"
-msgstr "**Glifo**: Nunca está de más probar §0."
+msgstr "**Glifo**: Siempre puedes probar con §0."
 
 #: Game/Levels/Cantor/L05_IsFixedPt_not.lean:19
 msgid "Conclusion Cantor L05"
 msgstr ""
-"**Cantor**: Cada vez estáis más cerca …\n"
+"**Cantor**: Cada vez estáis más cerca…\n"
 "\n"
-" Los gorriones – como era de esperar – han salido volando. Así que vuelve a hacer malabares con los cactus mientras monta en monociclo."
+" Los gorriones, como era de esperar, han salido volando. Así que vuelve a hacer malabares con los cactus mientras monta en monociclo."
 
 #. §0: `¬`
 #. §1: `Prop`
@@ -5266,7 +5266,7 @@ msgid "The second §0 means the same as the first: logical negation. Interpret i
 msgstr ""
 "**Tú**: ¿Qué significa aquí el segundo §0?\n"
 "\n"
-"**Glifo**: Lo mismo que el primero: negación lógica. Puedes interpretarla como una aplicación del conjunto §1 de todas las proposiciones posibles en sí mismo. Y esta aplicación, por supuesto, no tiene puntos fijos: ¡una proposición no puede ser igual a su negación!"
+"**Glifo**: Lo mismo que el primero: negación lógica. Puedes verlo como una función del conjunto §1 de todas las proposiciones posibles en sí mismo. Esta función, por supuesto, no tiene puntos fijos: ¡una proposición no puede ser igual a su negación!"
 
 #: Game/Levels/Cantor/L06_IsFixedPt_odd.lean:19
 msgid "Conclusion Cantor L06"
@@ -5278,7 +5278,7 @@ msgstr ""
 #: Game/Levels/Cantor/L06_IsFixedPt_odd.lean:34
 msgid "Assumption says that §0 is an 'uneven' function is"
 msgstr ""
-"**Tú**: Algo parecido he visto ya alguna vez: la hipótesis dice que §0 es una \"función impar\".\n"
+"**Tú**: Ya he visto algo así antes: la hipótesis dice que §0 es una \"función impar\".\n"
 "\n"
 "**Glifo**: Pues adelante. Creo que aquí no vas a necesitar nada que no hayamos visto ya."
 
@@ -5294,7 +5294,7 @@ msgstr ""
 #. §2: `congr_fun`
 #: Game/Levels/Cantor/L07_idempotent.lean:36
 msgid "Try §0 and rewrite assumption §1 firstly by §2"
-msgstr "**Glifo**: Lo mejor es que empieces por desplegar otra vez todas las definiciones. Yo diría: §0. Y, de paso, podrías escribir la hipótesis §1 de forma más explícita con §2."
+msgstr "**Glifo**: Lo mejor es que empieces por escribir todas las definiciones de nuevo. Yo diría: §0. Y, de paso, podrías escribir la hipótesis §1 de forma más explícita con §2."
 
 #. §0: `apply congr_fun at h`
 #: Game/Levels/Cantor/L07_idempotent.lean:43
@@ -5352,13 +5352,13 @@ msgid "Explain for §0, that §1 is a mapping from §2 to the set of mappings of
 "on the diagonal. Assumption §12 is formulated s.t. the interpretation of §13 as §14\n"
 "natural"
 msgstr ""
-"**Tú** *(a Glifo)*: ¿Tú ves aquí algún producto?\n"
+"**Tú** *(a Glifo)*: ¿Tú ves algún producto aquí?\n"
 "\n"
-"**Glifo**: Sí, claro. Acuérdate de dónde están los paréntesis en §0: §1. Una aplicación de §2 al conjunto de las aplicaciones §3 es lo mismo que una aplicación de §4 en §5.\n"
+"**Glifo**: Sí, claro. Acuérdate de dónde están los paréntesis en §0: §1. Una aplicación de §2 al conjunto de las funciones de la forma §3 es lo mismo que una aplicación de §4 en §5.\n"
 "\n"
 "Frunces el ceño.\n"
 "\n"
-"**Glifo**: ¡Que sí, que sí, esto ya lo habíamos pensado en Epo! Puedes interpretar §6 o bien como §7 aplicado a §8, o bien como §9 aplicado a §10.\n"
+"**Glifo**: ¡Que sí, que sí, esto ya lo habíamos pensado en Epo! Puedes interpretar §6 de dos formas: o bien como §7 aplicado a §8, o bien como §9 aplicado a §10.\n"
 "\n"
 "**Cantor**: ¡Exactamente! ¡Y el elemento §11 está en la diagonal!\n"
 "\n"
@@ -5372,7 +5372,7 @@ msgstr ""
 msgid "§0 was replaced by §1. It is probably necessary to rewrite the second\n"
 "appearnace of §2 in the goal. Try §3"
 msgstr ""
-"**Glifo**: Ahora has sustituido, en esencia, las dos apariciones de §0 por §1.\n"
+"**Glifo**: Básicamente, has sustituido las dos apariciones de §0 por §1.\n"
 "  Con eso no haces más que dar vueltas en círculo.  \n"
 "  Probablemente lo que quieres es reescribir solo la segunda aparición de §0 en el objetivo.  \n"
 "  Eso se hace con §3."
@@ -5406,7 +5406,7 @@ msgstr ""
 "\n"
 "Por lo visto, él también está algo confundido.\n"
 "\n"
-"**Glifo**: Vamos, que si §5 no es precisamente el conjunto de un solo punto, siempre debería existir una aplicación de él en sí mismo sin puntos fijos.\n"
+"**Glifo**: Vamos, que si §5 no es exactamente el conjunto de un solo punto, siempre debería existir una aplicación de él en sí mismo sin puntos fijos.\n"
 "\n"
 "**Cantor**: ¡Pues justo ahí está la gracia! ¡Esperad y veréis!"
 
@@ -5420,9 +5420,9 @@ msgid "exploit the surjectivity of §0 somehow. It was already told\n"
 "and then observe the preimage of §3."
 msgstr ""
 "**Cantor**: Naturalmente, tenéis que aprovechar de alguna manera la sobreyectividad de §0.\n"
-"Pero si ya os he revelado hace un momento de qué aplicación §1 tenéis que considerar una preimagen …\n"
+"Pero ya os he revelado de qué aplicación §1 tenéis que considerar una preimagen…\n"
 "\n"
-"**Glifo** *(a ti)*: Mmm … ¿entiendes lo que quiere decir? Claro, ahora podrías definir una aplicación con\n"
+"**Glifo** *(a ti)*: Mmm… ¿entiendes lo que quiere decir? Se podría definir una aplicación con\n"
 "§2\n"
 "y luego considerar una preimagen de esa aplicación §3.\n"
 "Pero ahora mismo estoy un poco perdido."
@@ -5438,7 +5438,7 @@ msgstr ""
 msgid "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
 "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
 msgstr ""
-"**Cantor**: ¡Y ahora coged este bonito argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n"
+"**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n"
 "\n"
 "**Tú**: ¿Qué?\n"
 "\n"
@@ -5446,7 +5446,7 @@ msgstr ""
 
 #: Game/Levels/Cantor/L10_CantorPowerset.lean:31
 msgid "Conclusion Cantor L10"
-msgstr "**Tú**: No sé si esto ha sido realmente más fácil …"
+msgstr "**Tú**: No sé si esto ha sido realmente más fácil…"
 
 #. §0: `cantor_diagonal`
 #. §1: `apply cantor_diagonal at «{hf}»`
@@ -5462,7 +5462,7 @@ msgstr ""
 #: Game/Levels/Cantor/L10_CantorPowerset.lean:65
 #: Game/Levels/Cantor/L10_CantorPowerset.lean:72
 msgid "[Hint mhjv] Try §0"
-msgstr "**Cantor**: ¡No, no! ¡Queríamos usar mi bonito teorema §0!"
+msgstr "**Cantor**: ¡No, no! ¡Queríamos usar mi precioso teorema §0!"
 
 #. §0: `¬ .`
 #: Game/Levels/Cantor/L10_CantorPowerset.lean:79
@@ -5473,7 +5473,7 @@ msgstr "**Cantor**: ¿No habíais pensado ya que §0 no tiene puntos fijos?"
 #: Game/Levels/Cantor/L11_SequenceUncountable.lean:25
 msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
 msgstr ""
-"**Cantor**: ¿Más fácil? No sé. ¡Pero más elegante!\n"
+"**Cantor**: ¿Más fácil? No lo sé. ¡Pero más elegante!\n"
 "\n"
 "Da tres saltos mortales hacia atrás y vuelve con otra nota para vosotros.\n"
 "\n"
@@ -5516,7 +5516,7 @@ msgstr ""
 "En la penumbra, delante del escenario, hay sillas dispuestas en largas filas.\n"
 "Por lo visto, habéis entrado en la carpa justo por un extremo de la primera fila.\n"
 "El otro extremo ni siquiera alcanzáis a distinguirlo: así de larga es la fila.\n"
-"Y detrás vienen muchas filas más – tampoco en esa dirección se ve el final.\n"
+"Y detrás vienen muchas filas más; tampoco en esa dirección se ve el final.\n"
 "Pero todos los asientos están vacíos.\n"
 "\n"
 "Así que os sentáis en algún sitio de la primera fila, miráis hacia el escenario y aguzáis el oído."
