@@ -4685,7 +4685,7 @@ msgstr "**Babilonio**: Cada torre tiene una inscripción. Ahí podéis leer con 
 msgid "Explain goal as §0 being equal to the number of elements in §1\n"
 "i.e. the cardinality of §2. Try §3"
 msgstr ""
-"**Tú**: Vaya, esto es un montón de cosas nuevas… a ver…\n"
+"**Tú**: Vaya, esto son muchas cosas nuevas… a ver…\n"
 "\n"
 "Esto parece decir que §0 es igual…\n"
 "\n"
@@ -4693,7 +4693,7 @@ msgstr ""
 "\n"
 "**Babilonio**: Y bien, ¿podéis demostrarlo?\n"
 "\n"
-"**Glifo** *(a ti)*: Yo probaría primero §3. Es realmente una táctica potente que simplifica muchos términos."
+"**Glifo** *(a ti)*: Yo probaría primero con §3, es realmente potente y simplifica muchos términos."
 
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:43
 msgid "Conclusion Babylon L01"
@@ -4712,7 +4712,7 @@ msgstr "**Tú**: ¿Otra vez §0?"
 msgid "Intro Babylon L03"
 msgstr ""
 "A continuación llegáis a un solar vacío donde parece que hace mucho que no se mueve nada.\n"
-"En el cartel de obra pone:"
+"Hay un cartel de obra en el que pone:"
 
 #. §0: $I \\subseteq \\{-1,0,1\\}$
 #. §1: `trans ∑ i ∈ I, 0`
@@ -4721,20 +4721,20 @@ msgstr ""
 msgid "Remind that goal looks like §0. Try §1. The sum sign is written\n"
 "as §2."
 msgstr ""
-"**Tú**: La hipótesis parece una versión enrevesada de §0. Sea como sea, ahí no puede salir una suma muy grande.\n"
+"**Tú**: La hipótesis parece una versión enrevesada de §0. Sea como sea, de ahí no puede salir una suma muy grande.\n"
 "\n"
-"**Glifo**: No. Pero seguramente necesitemos un paso intermedio para llegar al resultado indicado. Yo propongo: §1. El símbolo de sumatorio lo escribes como §2."
+"**Glifo**: No. Pero seguramente necesitemos un paso intermedio para llegar al objetivo indicado. Yo propongo: §1. El símbolo de sumatorio se escribe con §2."
 
 #. §0: `apply sum_congr`
 #: Game/Levels/Babylon/L03_sum_congr.lean:38
 msgid "[Hint hwzk] Try §0"
-msgstr "**Glifo**: Exacto. Ahora es cuando puedes escribir §0: dos sumas son iguales, en particular, cuando se suma sobre el mismo conjunto de índices y coinciden también las expresiones que se suman."
+msgstr "**Glifo**: Exacto. Ahora es cuando puedes escribir §0: dos sumas son iguales, en particular, cuando suman sobre el mismo conjunto de índices y coinciden también los sumandos."
 
 #: Game/Levels/Babylon/L04_sum_subset.lean:16
 msgid "Intro Babylon L04"
 msgstr ""
 "Seguís caminando de torre en torre.\n"
-"Al final te paras ante una torre que te resulta rara.\n"
+"Al final te paras ante una torre que te resulta extraña.\n"
 "Después de dar una vuelta entera a su alrededor, descubres por qué:\n"
 "no tiene entrada.\n"
 "Eso sí, encontráis una losa en el suelo con la siguiente inscripción."
@@ -4755,7 +4755,7 @@ msgstr ""
 "\n"
 "Seguramente la expresión de la suma sea simplemente §1 para los tres primeros valores de §2… sí, exacto. Y ahora, ¿cómo formulo eso?\n"
 "\n"
-"**Glifo**: Podrías usar §3: si §4 y la expresión de la suma se anula en todos los elementos de §6 que no están en §5, entonces la suma sobre §5 es igual a la suma sobre §6."
+"**Glifo**: Podrías usar §3: si se tiene §4 y la expresión de la suma se anula en todos los elementos de §6 que no están en §5, entonces la suma sobre §5 es igual a la suma sobre §6."
 
 #: Game/Levels/Babylon/L04_sum_subset.lean:40
 msgid "Wrong order"
@@ -4784,7 +4784,7 @@ msgstr "**Glifo**: ¡Genial! Ahora solo te queda demostrar lo que habías dicho 
 #: Game/Levels/Babylon/L04_sum_subset.lean:72
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
-"**Glifo**: Te propongo que primero introduzcas todas las hipótesis, hasta que solo quede\n"
+"***Glifo**: Te propongo que primero introduzcas todas las hipótesis, hasta que quede\n"
 "§0\n"
 "como objetivo."
 
@@ -4801,7 +4801,7 @@ msgstr "**Glifo**: De las hipótesis tiene que deducirse de alguna manera §0 o 
 #. §1: `omega`
 #: Game/Levels/Babylon/L04_sum_subset.lean:94
 msgid "Try §0 & §1"
-msgstr "**Glifo**: Seguro que alguna combinación de §0 y §1 lo resuelve. En Luna también funcionó."
+msgstr "**Glifo**: Seguro que alguna combinación de §0 y §1 lo resuelve. Al menos en Luna funcionó."
 
 #. §0: `«{h}»`
 #. §1: `obtain`
@@ -4864,16 +4864,16 @@ msgstr "**Glifo**: Prueba otra vez con §0."
 
 #: Game/Levels/Babylon/L05_sum_subset2.lean:101
 msgid "Conclusion Babylon L05"
-msgstr "**Babilonio**: Lo habéis hecho muy bien."
+msgstr "**Babilonio**: ¡Lo habéis hecho genial!"
 
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:23
 msgid "Intro Babylon L06"
 msgstr ""
 "**Babilonio**: ¡Venid, que os voy a enseñar una de nuestras torres más bonitas!\n"
 "\n"
-"El camino sube empinado. La torre que os espera en lo alto del monte es realmente imponente.\n"
+"El camino es escarpado. La torre que os espera en lo alto del monte es realmente imponente.\n"
 "\n"
-"**Glifo**: ¡Esa tiene que ser la conocida *Torre de Gauss de Babilonia*! Ya había leído algo sobre ella.\n"
+"**Glifo**: ¡Esa tiene que ser la conocida *Torre Gaussiana de Babilonia*! Ya había leído algo sobre ella.\n"
 "\n"
 "**Babilonio**: Correcto. ¡Gauss era babilonio!"
 
@@ -4892,7 +4892,7 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"¿No había por ahí una historia del pequeño Gauss, que tenía un argumento sencillísimo para esto?\n"
+"¿No había por ahí una historia de que el pequeño Gauss dio con un argumento sencillísimo para esto?\n"
 "\n"
 "**Glifo**: Yo de historias no entiendo. Yo simplemente haría inducción sobre §1. En leanés sería: ¡§2!\n"
 "\n"
@@ -4914,7 +4914,7 @@ msgstr ""
 #. §3: `insert_Icc_right_eq_Icc_add_one`
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:68
 msgid "Divide interval §0 into §1 and §2 by using §3"
-msgstr "**Glifo**: Ahora quieres partir el intervalo §0, sobre el que se está sumando, en §1 y §2. Para eso podrías usar el lema §3, que ya habíamos visto."
+msgstr "**Glifo**: Ahora igual quieres partir el intervalo §0, sobre el que se está sumando, en §1 y §2. Para eso podrías usar el lema §3 que hemos visto antes."
 
 #. §0: `sum_insert`
 #. §1: $[0,«{d}»]$
@@ -4923,7 +4923,7 @@ msgstr "**Glifo**: Ahora quieres partir el intervalo §0, sobre el que se está 
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:76
 msgid "§0 will divide sum as wished: a sum over §1 and an additional summand for §2.\n"
 "Try §3"
-msgstr "**Glifo**: ¡Exacto! Y ahora §0 te parte la suma justo como tú quieres: una suma sobre §1 y, además, un sumando adicional para §2. Pruébalo: §3"
+msgstr "**Glifo**: ¡Exacto! Y ahora §0 te parte la suma justo como tú quieres: una suma sobre §1 y un sumando adicional para §2. Pruébalo: §3"
 
 #. §0: `rw`
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:85
@@ -4945,8 +4945,8 @@ msgstr ""
 #: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:13
 msgid "Intro Babylon L07"
 msgstr ""
-"Justo al lado de la Torre de Gauss hay otro solar vacío.\n"
-"Esta vez en el cartel pone lo siguiente:"
+"Justo al lado de la Torre Gaussiana hay otro solar vacío.\n"
+"También tiene un cartel de obra, esta vez pone:"
 
 #. §0: $\\sum_{i=-n}^«{n}» i = 0$
 #. §1: `insert_Icc_right_eq_Icc_add_one`
@@ -4988,18 +4988,18 @@ msgstr ""
 "**Tú**: Así que aquí tenemos una suma solo sobre números impares. \n"
 "§0\n"
 "\n"
-"**Glifo**: Pero si esto funciona exactamente igual que antes."
+"**Glifo**: Funciona exactamente igual que antes."
 
 #: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:57
 msgid "Conclusion Babylon L08"
 msgstr ""
-"**Babilonio**: ¿Y bien? ¿Os gusta esto?\n"
+"**Babilonio**: ¿Y bien? ¿Os gusta Babilonia?\n"
 "\n"
 "**Glifo**: Sí, mucho. Es realmente impresionante todo lo que habéis levantado aquí. Pero no queremos entreteneros más.\n"
 "\n"
 "**Tú**: Yo también creo que va siendo hora de ponernos en marcha.\n"
 "\n"
-"Os despedís y emprendéis el camino de vuelta a la nave espacial."
+"Os despedís y emprendéis el camino de vuelta a la nave."
 
 #: Game/Levels/Babylon/L09_Boss.lean:17
 msgid "Intro Babylon L09"
@@ -5007,12 +5007,12 @@ msgstr "No habéis llegado muy lejos cuando, de pronto, sale de detrás de una t
 
 #: Game/Levels/Babylon/L09_Boss.lean:26
 msgid "this should work"
-msgstr "**Tú**: Bueno. Seguro que sale bien … "
+msgstr "**Tú**: Bueno. Seguro que esto sale bien … "
 
 #. §0: `arithmetic_sum`
 #: Game/Levels/Babylon/L09_Boss.lean:38
 msgid "Use §0 as its already proven"
-msgstr "**Glifo**: Recuerda que ya habíamos demostrado §0."
+msgstr "**Glifo**: Recuerda que ya hemos demostrado §0."
 
 #: Game/Levels/Babylon/L09_Boss.lean:53
 msgid "Conclusion Babylon L09"
