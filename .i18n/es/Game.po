@@ -3970,14 +3970,14 @@ msgid "Explain that §0 and §1 with §2 can be used as in Implis"
 msgstr ""
 "**Tú**: Tengo la sensación de que esto ya lo he visto antes.\n"
 "\n"
-"**Glifo**:  ¡Sí!  Se parece mucho a un problema que ya resolvimos en *Implis*. ¡Solo que aquí aparecen igualdades de números en lugar de enunciados de \"si y solo si\"! Pero en el fondo eso no supone ninguna diferencia. Puedes tratar §0 y §1 con §2 prácticamente igual."
+"**Glifo**:  ¡Sí!  Se parece mucho a un problema que ya resolvimos en *Implis*. ¡Solo que aquí aparecen igualdades de números en lugar de enunciados de \"si y solo si\"! Pero en el fondo eso no supone ninguna diferencia. Puedes manejar §0 y §1 con §2 prácticamente de la misma forma."
 
 #. §0: `rw [hₓ]`
 #. §1: `rw [← hₓ]`
 #: Game/Levels/Saturn/L01_Rewrite_equality.lean:27
 msgid "Try if §0 and §1 can be used as in Implis"
 msgstr ""
-"**Tú**: ¿Entonces también §0 y §1?\n"
+"**Tú**: ¿Entonces puedo usar también §0 y §1?\n"
 "\n"
 "**Glifo**: Pruébalo y verás."
 
@@ -3989,11 +3989,11 @@ msgid "Remind of rewrite via §0 as §1. Try §2"
 msgstr ""
 "**Tú**: ¿Cómo era eso de reescribir hacia atrás?\n"
 "\n"
-"**Glifo**: §2, donde escribes §0 como §1."
+"**Glifo**: §2, donde escribes §0 con §1."
 
 #: Game/Levels/Saturn/L01_Rewrite_equality.lean:43
 msgid "Conclusion Saturn L01"
-msgstr "Como respuesta, os llega un 👍."
+msgstr "Recibís un 👍 como respuesta."
 
 #: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:9
 msgid "Intro Saturn L02"
@@ -4005,9 +4005,9 @@ msgstr "El siguiente mensaje de radio tiene un aspecto un poco distinto."
 #: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:24
 msgid "Explain misfit of §0. Try §1 via §2"
 msgstr ""
-"**Tú**: ¿Estamos en una reunión de matemáticos de instituto anónimos? Pero si esto se calcula sin más reordenando los términos. ¿Les respondemos por radio con §0?\n"
+"***Tú**: ¿Es esto de algún club de Algebristas Anónimos Aburridos? Pero si esto se calcula simplemente reorganizando un poco los términos. ¿Les respondemos por radio con §0?\n"
 "\n"
-"**Glifo**: No; en este universo esa igualdad se llama, cómo no, §1, porque en la fórmula primero aparece un \"+\" y luego un \"^2\". Así que podrías usar §2. Después, el lado izquierdo tendrá exactamente el mismo aspecto que el derecho, y habrás terminado."
+"**Glifo**: No. En este universo esa igualdad se llama, cómo no, §1, porque en la fórmula primero aparece un \"+\" y luego un \"^2\". Así que podrías usar §2. Después, el lado izquierdo tendría exactamente el mismo aspecto que el derecho, y habrías terminado."
 
 #. §0: `ring`
 #: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:36
@@ -4058,7 +4058,7 @@ msgstr "Otro mensaje de radio."
 #. §1: `ring`
 #: Game/Levels/Saturn/L04_mul_assoc.lean:15
 msgid "Try §0 or again §1"
-msgstr "**Glifo**: Aquí podrías usar §0. O *de nuevo* §1…"
+msgstr "**Glifo**: Aquí podrías usar §0. O §1 *otra vez* …"
 
 #. §0: `ℕ`
 #. §1: `ℕ`
@@ -4073,11 +4073,11 @@ msgstr ""
 "\n"
 "**Glifo**: Puede ser. Pero §2 funciona incluso para los llamados semianillos.\n"
 "\n"
-"**Tú**: Vaya, vaya…\n"
+"**Tú**: Ahh…\n"
 "\n"
 "El operador de radio anónimo quiere saber si estáis listos para el End Game o si preferís dar todavía unas cuantas vueltas más alrededor de su planeta.\n"
 "\n"
-"\"Listos\", responde Glifo por radio."
+"La respuesta de Glifo es clara: \"Estamos listos\"."
 
 #: Game/Levels/Saturn/L05_Ring.lean:61
 msgid "Conclusion Saturn L05"
@@ -4093,19 +4093,19 @@ msgstr "Saturno"
 #: Game/Levels/Saturn.lean:32
 msgid "Intro Saturn"
 msgstr ""
-"En realidad, no queríais poner rumbo a este planeta. Pero teníais la cabeza en otra parte. Y en los universos no conviene despistarse, y menos aún cuando uno no conoce el terreno. Ahora ya os habéis acercado demasiado, la gravedad es demasiado fuerte y vuestro propulsor regenerativo está justo ahora en modo de regeneración.\n"
+"En realidad, no queríais poner rumbo a este planeta. Pero teníais la cabeza en otra parte. Y en el Formaloverso no conviene despistarse. Ahora ya os habéis acercado demasiado, la gravedad es demasiado fuerte y vuestro propulsor regenerativo está justo ahora en modo de regeneración.\n"
 "\n"
 "**Tú**: ¿Qué es esa salsa naranja que hay en este planeta?\n"
 "\n"
 "**Glifo**: Parece más bien tóxica. O caliente.\n"
 "\n"
-"**Tú**: O las dos cosas. ¡De verdad que no quiero aterrizar ahí!\n"
+"**Tú**: O las dos cosas.¡No quiero aterrizar ahí para nada!n"
 "\n"
 "**Glifo**: Que sí, que sí, estoy haciendo todo lo que puedo. ¡Y mira cuánta basura hay ya orbitando por aquí! Lo mejor que podemos hacer ahora mismo es dejarnos llevar por la corriente."
 
 #: Game/Levels/Spinoza/L01_Have.lean:14
 msgid "Intro Spinoza L01"
-msgstr "**Benedicto**: Aquí, mirad. Esto lo he preparado para vosotros."
+msgstr "**Benedicto**: Aquí, mirad. He preparado esto para vosotros."
 
 #. §0: `∧`
 #: Game/Levels/Spinoza/L01_Have.lean:18
@@ -4128,7 +4128,7 @@ msgid "Prove the assumption before using it"
 msgstr ""
 "**Tú**: ¿Qué? ¿Así que acabo de suponer sin más que eso es cierto?\n"
 "\n"
-"**Glifo**: No; ahora, claro, primero tienes que demostrarlo antes de poder usarlo."
+"**Glifo**: No. Por supuesto, tienes que demostrarlo antes de poder usarlo."
 
 #. §0: `apply`
 #: Game/Levels/Spinoza/L01_Have.lean:38
@@ -4145,7 +4145,7 @@ msgstr ""
 
 #: Game/Levels/Spinoza/L01_Have.lean:50
 msgid "Conclusion Spinoza L01"
-msgstr "**Benedicto**: ¡Eso tiene buena pinta!"
+msgstr "**Benedicto**: ¡Tiene buena pinta!"
 
 #: Game/Levels/Spinoza/L02_Suffices.lean:17
 msgid "Intro Spinoza L02"
@@ -4162,14 +4162,14 @@ msgid "Instead of §0, §1 can be used. After §2, you have to show how to\n"
 msgstr ""
 "**Glifo**: ¡Yo sé a qué se refiere! En lugar de §0 también puedes usar §1. Funciona exactamente igual, salvo que los dos objetivos quedan intercambiados.\n"
 "\n"
-"**Tú**: Entonces, después de §2, ¿primero tengo que mostrar cómo se concluye la demostración con §3, antes de demostrar §4?\n"
+"**Tú**: Entonces, después de §2, ¿tengo que mostrar cómo se concluye la demostración con §3 primero, y luego ya demostrar §4?\n"
 "\n"
 "**Glifo**: ¡Exacto!"
 
 #. §0: `«{g}»`
 #: Game/Levels/Spinoza/L02_Suffices.lean:35
 msgid "End proof with assumption that §0 is true"
-msgstr "**Glifo**: Pues aquí concluyes la demostración suponiendo que §0 se cumple."
+msgstr "**Glifo**: Pues aquí puedes hacer la demostración suponiendo que §0 se cumple."
 
 #: Game/Levels/Spinoza/L02_Suffices.lean:38
 msgid "Prove intermediate result"
@@ -4179,7 +4179,7 @@ msgstr "**Glifo**: Y aquí demuestras el resultado intermedio."
 #. §1: `suffices`
 #: Game/Levels/Spinoza/L02_Suffices.lean:50
 msgid "Conclusion Spinoza L02: The use of §0 or §1 is up to personal preference."
-msgstr "**Benedicto**: Justo a eso me refería. Que en el futuro uséis §0 o §1 es pura cuestión de gustos. Lo importante es que sepáis cómo alcanzar objetivos lejanos a base de pequeños pasos."
+msgstr "**Benedicto**: Justo a eso me refería. Que en el futuro uséis §0 o §1 es pura cuestión de gustos. Lo importante es que sepáis cómo alcanzar objetivos lejanos a base de dar pequeños pasos."
 
 #: Game/Levels/Spinoza/L03_ByContra.lean:9
 msgid "Intro Spinoza L03"
@@ -4217,7 +4217,7 @@ msgstr "**Tú**: Ah, y ahora puedo decir simplemente que las hipótesis §0 y §
 
 #: Game/Levels/Spinoza/L03_ByContra.lean:48
 msgid "Derive intermediate result that lead to the conclusion"
-msgstr "**Glifo**: Y ahora solo te queda deducir el resultado intermedio que ha llevado a esta contradicción."
+msgstr "**Glifo**: Y ahora solo te queda probar el resultado intermedio que te ha llevado a esta contradicción."
 
 #: Game/Levels/Spinoza/L03_ByContra.lean:53
 msgid "Conclusion Spinoza L03"
@@ -4226,7 +4226,7 @@ msgstr "**Benedicto**: ¡Ya veo que aprendéis rápido!"
 #. §0: `not_imp_not`
 #: Game/Levels/Spinoza/L04_ByContra.lean:18
 msgid "Intro Spinoza L04: introduce contraposition equivalence with §0"
-msgstr "**Benedicto**: Tengo otra bonita pregunta sobre cuadrados impares para vosotros. Pero antes más vale que demostréis esta equivalencia de aquí. Creo que entre vosotros incluso tiene nombre: *equivalencia de contraposición*, o algo así. En leanés, a esta equivalencia la llamamos simplemente §0. Mucho más claro, ¿no os parece?"
+msgstr "**Benedicto**: Tengo otra bonita pregunta sobre cuadrados de impares para vosotros. Pero antes más vale que demostréis esta equivalencia de aquí. Creo que entre vosotros incluso tiene nombre: *equivalencia del contrarrecíproco*, o algo así. En leanés, a esta equivalencia la llamamos simplemente §0. Mucho más claro, ¿no os parece?"
 
 #. §0: $A ⇒ B$
 #. §1: $¬B ⇒ ¬A$
@@ -4241,7 +4241,7 @@ msgstr ""
 #. §0: `constructor`
 #: Game/Levels/Spinoza/L04_ByContra.lean:35
 msgid "Start trying with §0"
-msgstr "**Glifo**: Prueba a empezar con §0."
+msgstr "**Glifo**: Por qué no pruebas a empezar con §0?"
 
 #. §0: `suffices g : B`
 #: Game/Levels/Spinoza/L04_ByContra.lean:40
@@ -4250,7 +4250,7 @@ msgstr "**Glifo**: Yo volvería a provocar una contradicción con §0."
 
 #: Game/Levels/Spinoza/L04_ByContra.lean:47
 msgid "Use proof by contradiction"
-msgstr "**Glifo**: Aquí yo también empezaría una demostración por contradicción."
+msgstr "**Glifo**: Aquí yo también probaría a demostrar por contradicción."
 
 #. §0: `suffices g : ¬ A`
 #: Game/Levels/Spinoza/L04_ByContra.lean:50
@@ -4273,7 +4273,7 @@ msgstr "**Benedicto**: Bien, aquí tenéis la pregunta prometida. Intentad una d
 msgid "Refer back to §0 as §1 is equivalent in contrapoition to §2.\n"
 "Explain that lack of  §3 can be dealt with §4 via §5 for §6."
 msgstr ""
-"**Glifo**: Propongo que lo reduzcamos al lema §0, que ya habíamos demostrado en Quantus. En el fondo, lo que pone aquí es §1. Y por contraposición eso es equivalente a §2.\n"
+"**Glifo**: Propongo que lo reduzcamos al lema §0, que ya demostramos en Quantus. En el fondo, lo que pone aquí es §1. Y por contraposición eso es equivalente a §2.\n"
 "\n"
 "**Tú**: Cierto. Rizando el rizo… Pero espera, ahora mismo ahí no hay ningún §3.\n"
 "\n"
@@ -4283,7 +4283,7 @@ msgstr ""
 #: Game/Levels/Spinoza/L05_Contrapose.lean:41
 msgid "Apply contraposition lemma simply by §0"
 msgstr ""
-"**Tú**: ¿Y ahora puedo aplicar ese lema de contraposición? ¿Cómo se llamaba?\n"
+"**Tú**: Y ahora puedo aplicar eso del contrarrecíproco, ¿no? ¿Cómo se llamaba?\n"
 "\n"
 "**Glifo**: De hecho, puedes escribir simplemente §0."
 
@@ -4295,7 +4295,7 @@ msgstr "**Glifo**: ¿Quizá §0 te ayude ahora a avanzar?"
 #. §0: `even_square`
 #: Game/Levels/Spinoza/L05_Contrapose.lean:52
 msgid "Apply lemma §0"
-msgstr "**Tú**: Esto ya pinta bastante bien. ¡Ahora sí que puedo aplicar el viejo lema §0!"
+msgstr "**Tú**: Esto ya pinta bastante bien. ¡Ahora sí que puedo aplicar el lema §0 ese que decías!"
 
 #: Game/Levels/Spinoza/L05_Contrapose.lean:60
 msgid "Conclusion Spinoza L05"
@@ -4312,9 +4312,9 @@ msgstr ""
 #: Game/Levels/Spinoza/L06_Summary.lean:32
 msgid "This time start with §0"
 msgstr ""
-"En cuanto os habéis liberado sin percances del campo gravitatorio del asteroide, volvéis a inclinaros sobre el problema.\n"
+"En cuanto conseguís libraros sin percances del campo gravitatorio del asteroide, volvéis a poneros con el problema.\n"
 "\n"
-"**Glifo**: Vale, ¡así que esta vez empezamos con §0!"
+"**Glifo**: Venga, ¡empecemos esta vez con §0!"
 
 #. §0: `Odd (n ^ 2)`
 #: Game/Levels/Spinoza/L06_Summary.lean:35
@@ -4347,7 +4347,7 @@ msgstr ""
 "| §1              |  introducir un resultado intermedio                    |\n"
 "| §2              |  empezar una demostración por contradicción            |\n"
 "| §3              |  concluir una demostración por contradicción           |\n"
-"| §4              | contraposición                                         |\n"
+"| §4              | transforma el objetivo en su contrarrecíproco                                         |\n"
 "| §5              | útil para aplicar §6 a continuación                    |\n"
 " "
 
@@ -4362,7 +4362,7 @@ msgstr ""
 "\n"
 "Media hora después habéis aterrizado. Espinosa no parece muy acogedor. Toda su superficie está cubierta de una arena fina y rojiza. Un único y solitario formalósofo, que se presenta como Benedicto, os está esperando.\n"
 "\n"
-"**Benedicto**: ¡Qué bien que hayáis venido! ¡Ya os estaba esperando!\n"
+"**Benedicto**: ¡Qué bien que hayáis venido! ¡Os estaba esperando!\n"
 "\n"
 "**Tú**: ¿Tú también tienes un par de preguntas urgentes…?\n"
 "\n"
@@ -4372,7 +4372,7 @@ msgstr ""
 "\n"
 "Benedicto niega con la cabeza.\n"
 "\n"
-"**Benedicto**: No. Espinosa no soporta tres habitantes. Y tenéis que seguir viaje pronto; si no, el camino se os hará demasiado largo. Solo pasamos junto a los planetas cada 400 años."
+"**Benedicto**: No. Espinosa no puede acomodar a tres habitantes. Y tenéis que continuar vuestro viaje pronto; si no, el camino se os hará demasiado largo. Solo pasamos junto a los otros planetas cada 400 años."
 
 #. §0: `n ≤ n`
 #: Game/Levels/Luna/L01_le_rfl.lean:22
