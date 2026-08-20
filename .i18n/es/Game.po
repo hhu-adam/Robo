@@ -4378,11 +4378,11 @@ msgstr ""
 #: Game/Levels/Luna/L01_le_rfl.lean:22
 msgid "Intro Luna L01: Know that §0"
 msgstr ""
-"Te sientes un poco atropellado, pero aun así intentas entablar conversación.\n"
+"Te sientes un poco abrumado, pero aun así intentas entablar conversación.\n"
 "\n"
-"**Tú**: Está bien, nos esforzaremos por no desordenar nada. ¿Es muy difícil mantener aquí el orden?\n"
+"**Tú**: Está bien, nos esforzaremos por no estropear nada. ¿Es muy difícil mantener las cosas ordenadas aquí?\n"
 "\n"
-"**Lina**: Hay que saber, por ejemplo, que §0."
+"**Lina**: Bueno, por ejemplo, hay que saber que §0."
 
 #. §0: `rfl`
 #: Game/Levels/Luna/L01_le_rfl.lean:26
@@ -4398,12 +4398,12 @@ msgstr "**Lina**: Lo reconozco: era un ejemplo trivial."
 #. §2: `n ≠ 0`
 #: Game/Levels/Luna/L02_Omega.lean:18
 msgid "Intro Luna L02: For integers §0 or §1 means §2"
-msgstr "**Lina**: Además, hay que saber, por ejemplo, que para los números enteros §0 o §1 no significa otra cosa que §2."
+msgstr "**Lina**: Por poner otro ejemplo, uno también debe saber que para los números enteros §0 o §1 no significa otra cosa que §2."
 
 #. §0: `omega`
 #: Game/Levels/Luna/L02_Omega.lean:22
 msgid "Try out §0"
-msgstr "**Rita** *(susurrando)*: ¡Probad §0!"
+msgstr "**Rita** *(susurrando)*: ¡Probad con §0!"
 
 #. §0: `omega`
 #. §1: `omega`
@@ -4416,7 +4416,7 @@ msgstr ""
 "\n"
 "**Lina**: Rita es muy fan de §0. Y eso que §1 es bastante impotente. En cuanto sales de los números enteros, §2 ya no puede hacer nada de nada.\n"
 "\n"
-"**Rita**: ¡Impotente lo serás tú!\n"
+"**Rita**: ¡Impotente serás tú!\n"
 "\n"
 "Rita hace una mueca grosera."
 
@@ -4436,7 +4436,7 @@ msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle
 "\n"
 "§4"
 msgstr ""
-"Se usa típicamente con §0 para distinguir en una demostración los tres casos §1, §2 y §3:\n"
+"Se usa típicamente con §0 para distinguir en una demostración los casos §1, §2 y §3:\n"
 "\n"
 "§4"
 
@@ -4445,7 +4445,7 @@ msgstr ""
 #: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:38
 msgid "Try §0, §1"
 msgstr ""
-"**Tú**: ¿¿Distinción de casos??\n"
+"**Tú**: ¿Podría distinguir entre varios casos?\n"
 "\n"
 "**Glifo**: Sí, podrías intentarlo. Por ejemplo, primero §0 y luego §1."
 
@@ -4453,7 +4453,7 @@ msgstr ""
 #: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:52
 msgid "Now try §0!"
 msgstr ""
-"**Tú**: ¿¿Y ahora??\n"
+"**Tú**: ¿Y ahora?\n"
 "\n"
 "**Lina** (*triunfante*): ¡§0!"
 
@@ -4488,13 +4488,13 @@ msgid "§0 and §1 alone don't help here. §2 will need some help. Try to untang
 msgstr ""
 "**Tú** (*a Glifo*): Aquí no avanzo ni con §0 ni con §1.\n"
 "\n"
-"**Glifo**: Creo que solo tienes que darle un empujoncito a §2. Lo mejor es que primero deshagas las dos implicaciones, de forma totalmente canónica, con §3."
+"**Glifo**: Creo que solo tienes que darle un empujoncito a §2. Lo mejor es que primero resuelvas las dos implicaciones con §3, como normalemente."
 
 #. §0: `«{hx}»`
 #. §1: `push Not at «{hx}»`
 #: Game/Levels/Luna/L05_Linarith2.lean:36
 msgid "Increase readability of §0. Try §1"
-msgstr "**Glifo**: Y ahora haz la hipótesis §0 un poco más legible. ¿Por qué no pruebas §1?"
+msgstr "**Glifo**: Y ahora intenta hacer que la hipótesis §0 sea un poco más legible. ¿Por qué no pruebas §1?"
 
 #. §0: `«{hx}» : m ≤ x → n < x`
 #. §1: `→`
@@ -4535,21 +4535,21 @@ msgstr ""
 #. §0: `ext`
 #: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:39
 msgid "Equality of sets demands §0"
-msgstr "**Glifo**: La igualdad de conjuntos pide a gritos §0."
+msgstr "**Glifo**: La igualdad entre conjuntos pide a gritos §0."
 
 #. §0: `simp`
 #: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:46
 msgid "Try §0 afterwards"
-msgstr "**Glifo**: Suelta enseguida un §0 detrás."
+msgstr "**Glifo**: Añade otro §0 justo después."
 
 #: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:49
 msgid "Ritha gives signs to try omega"
-msgstr "Rita vuelve a hacer algún tipo de señas."
+msgstr "Rita vuelve a hacer algún tipo de seña."
 
 #. §0: `omega`
 #: Game/Levels/Luna/L07_Linarith2.lean:14
 msgid "Intro Luna L07: Enough of §0"
-msgstr "**Lina**: Basta ya de §0, que ahora me toca a mí otra vez."
+msgstr "**Lina**: Basta ya de §0, que ahora me toca a mí."
 
 #. §0: $$
 #. \\begin{aligned}
@@ -4569,7 +4569,7 @@ msgid "Given\n"
 "§1\n"
 ""
 msgstr ""
-"**Tú**: Esto me lo tengo que escribir primero una cosa debajo de otra. Nos dan:\n"
+"**Tú**: Esto necesito volver a escribirlo. Nos dan:\n"
 "\n"
 "§0\n"
 "\n"
@@ -4577,7 +4577,7 @@ msgstr ""
 "\n"
 "§1\n"
 "\n"
-"¿¿Glifo??\n"
+"¿Glifo?\n"
 "\n"
 "Lina sonríe burlona.\n"
 
@@ -4587,16 +4587,16 @@ msgstr "**Tú**: ¡Nada mal!"
 
 #: Game/Levels/Luna/L08_Omega3.lean:13
 msgid "Intro Luna L08"
-msgstr "**Rita**: ¡Ahora yo otra vez!"
+msgstr "**Rita**: ¡Ahora me toca a mí!"
 
 #. §0: `simp at «{h'}»`
 #: Game/Levels/Luna/L08_Omega3.lean:20
 msgid "Definitely use §0"
-msgstr "**Rita**: No dejes de probar §0."
+msgstr "**Rita**: Deberías probar §0."
 
 #: Game/Levels/Luna/L09_lt_trichotomy2.lean:13
 msgid "Intro Luna L09"
-msgstr "**Lina**: Ahora yo otra vez."
+msgstr "**Lina**: Ahora es mi turno."
 
 #. §0: `b`
 #. §1: `use …`
@@ -4609,15 +4609,15 @@ msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e
 "§3\n"
 ""
 msgstr ""
-"**Tú**: Bueno, está ya bastante claro qué §0 se podría usar aquí.\n"
+"**Tú**: Bueno, está bastante claro qué §0 se podría usar aquí.\n"
 "\n"
-"**Glifo**: Si tan claro lo tienes, pues ve empezando con §1.\n"
+"**Glifo**: Si tan claro lo tienes, ve empezando con §1.\n"
 "Y después te va a venir muy bien §2. Por ejemplo, así:\n"
 "§3\n"
 
 #: Game/Levels/Luna/L09_lt_trichotomy2.lean:51
 msgid "Conclusion Luna L09"
-msgstr "**Lina**: ¡Lo habéis hecho muy bien! ¡Qué pena que ya tengáis que retomar el vuelo! Pero si os quedáis más tiempo, nos vais a trastocar por completo la rutina diaria."
+msgstr "**Lina**: ¡Lo habéis hecho muy bien! ¡Qué pena que os tengáis que ir ya! Pero si os quedáis más tiempo, nos vais a trastocar por completo la rutina diaria."
 
 #. §0: `omega`
 #: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:19
@@ -4655,7 +4655,7 @@ msgstr "Luna"
 #: Game/Levels/Luna.lean:48
 msgid "Intro Luna"
 msgstr ""
-"Glifo ha descubierto una pequeña luna, hacia la que ahora ponéis rumbo. Su superficie es completamente lisa, pero en un punto tiene una pequeña abertura de la que parte una escalera hacia el interior. Aterrizáis y bajáis por ella con curiosidad.\n"
+"Glifo ha descubierto una pequeña luna, hacia la que ponéis rumbo. Su superficie es completamente lisa, pero en un punto tiene una pequeña abertura de la que parte una escalera hacia el interior. Aterrizáis y bajáis por ella con curiosidad.\n"
 "\n"
 "Al llegar abajo te encuentras en la vivienda más ordenada que has visto en tu vida. Una niña pequeña os recibe.\n"
 "\n"
