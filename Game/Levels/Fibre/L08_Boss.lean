@@ -20,20 +20,19 @@ Statement not_exists_continuous_ncard_preimage_eq_two :
   obtain ⟨fx₁_zero, fx₂_zero⟩ := h_ends
   have h_c : ∃ x ∈ Ioo x₁ x₂, f x ≤ 0 := exists_mem_Ioo_val_nonpos hf₁ hf₂ hx hx_eq
   obtain ⟨c, ⟨hc₁, hc₂⟩, hc_nonpos⟩ := h_c
-  have hc_cases : f c < 0 ∨ f c = 0 := hc_nonpos.lt_or_eq
+  have hc_cases : f c < 0 ∨ f c = 0 := by
+    grind
   obtain fc_neg | fc_zero := hc_cases
   · have h_d : ∃ x ∈ Ioo x₁ x₂, 0 ≤ f x := exists_mem_Ioo_val_nonneg hf₁ hf₂ hx hx_eq
     obtain ⟨d, ⟨hd₁, hd₂⟩, hd_nonneg⟩ := h_d
-    have hd_cases : 0 = f d ∨ 0 < f d := hd_nonneg.eq_or_lt
+    have hd_cases : 0 = f d ∨ 0 < f d := by
+      grind
     obtain fd_zero | fd_pos := hd_cases
     · apply three_preimages hf₂ hd₁ hd₂ fx₁_zero fd_zero.symm fx₂_zero
-    have h_e : ∃ e ∈ uIcc c d, f e = 0 :=
-      exists_mem_uIcc_eq hf₁ (mem_uIcc_of_le_of_le fc_neg.le fd_pos.le)
-    obtain ⟨e, he_mem, he_eq⟩ := h_e
-    rw [Set.mem_uIcc] at he_mem
-    apply three_preimages hf₂ _ _ fx₁_zero he_eq fx₂_zero
-    · grind
-    · grind
+    have h_e : ∃ e ∈ Ioo x₁ x₂, f e = 0 :=
+      exists_zero_of_neg_of_pos hf₁ ⟨hc₁, hc₂⟩ ⟨hd₁, hd₂⟩ fc_neg fd_pos
+    obtain ⟨e, ⟨he₁, he₂⟩, he_eq⟩ := h_e
+    apply three_preimages hf₂ he₁ he₂ fx₁_zero he_eq fx₂_zero
   apply three_preimages hf₂ hc₁ hc₂ fx₁_zero fc_zero fx₂_zero
 
 TheoremTab "Fibre"

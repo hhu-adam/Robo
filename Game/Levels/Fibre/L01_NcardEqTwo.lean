@@ -1,4 +1,4 @@
-import Game.Levels.Bolzano.L06_CrossRight
+import Game.Levels.Bolzano.L04_ZeroBetween
 
 World "Fibre"
 Level 1
@@ -15,13 +15,14 @@ Statement ncard_eq_two_lt {s : Set ℝ} : s.ncard = 2 ↔ ∃ x y, x < y ∧ s =
   constructor
   · intro h
     obtain ⟨x, y, hxy, hs⟩ := h
-    have hcases : x < y ∨ x > y := lt_or_gt_of_ne hxy
+    have hcases : x < y ∨ x > y := by
+      grind
     obtain h | h := hcases
     · use x, y
     · use y, x
       grind
   grind
 
-NewTheorem Set.ncard_eq_two lt_or_gt_of_ne
+NewTheorem Set.ncard_eq_two
 
 TheoremTab "Fibre"

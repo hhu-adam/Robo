@@ -17,13 +17,18 @@ Statement three_preimages {f : ℝ → ℝ} (hf : ∀ y, (f ⁻¹' {y}).ncard = 
     have h : ∃ p q, p ≠ q ∧ f ⁻¹' {y} = {p, q} := Set.ncard_eq_two.mp (hf y)
     obtain ⟨p, q, -, hpq⟩ := h
     rw [hpq]
-    apply Set.toFinite
-  have h3 : ({a, b, c} : Set ℝ).ncard = 3 :=
-    Set.ncard_eq_three.mpr ⟨a, b, c, hab.ne, (hab.trans hbc).ne, hbc.ne, rfl⟩
-  have hle := Set.ncard_le_ncard hsub hfin
+    simp_log
+  have h3 : ({a, b, c} : Set ℝ).ncard = 3 := by
+    apply Set.ncard_eq_three.mpr _
+    use a, b, c
+    grind
+  have hle : ({a, b, c} : Set ℝ).ncard ≤ (f ⁻¹' {y}).ncard := by
+    apply Set.ncard_le_ncard hsub hfin
+  Branch
+    grind
   rw [h3, hf y] at hle
   grind
 
-NewTheorem Set.ncard_eq_three Set.ncard_le_ncard Set.toFinite
+NewTheorem Set.ncard_eq_three Set.ncard_le_ncard
 
 TheoremTab "Fibre"

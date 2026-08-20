@@ -14,8 +14,7 @@ Statement exists_second_mem {A : Type} {S : Set A} {a : A} (h : S.ncard = 2) (ha
     ∃ b ∈ S, b ≠ a := by
   rw [Set.ncard_eq_two] at h
   obtain ⟨x, y, hxy, hS⟩ := h
-  rw [hS] at ha ⊢
-  simp at ha ⊢
+  simp [hS] at ha ⊢
   grind
 
 TheoremTab "Fibre"

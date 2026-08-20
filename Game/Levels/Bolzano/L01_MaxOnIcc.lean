@@ -1,4 +1,4 @@
-import Game.Metadata
+import Game.Levels.Shade.L11_Boss
 
 World "Bolzano"
 Level 1
@@ -12,9 +12,10 @@ TheoremDoc exists_isMaxOn_Icc as "exists_isMaxOn_Icc" in "Bolzano"
 
 Statement exists_isMaxOn_Icc {f : ℝ → ℝ} {a b : ℝ} (hf : Continuous f) (hab : a ≤ b) :
     ∃ x ∈ Icc a b, IsMaxOn f (Icc a b) x := by
-  apply IsCompact.exists_isMaxOn isCompact_Icc (nonempty_Icc.mpr hab)
-  fun_prop
+  apply IsCompact.exists_isMaxOn isCompact_Icc _
+  · fun_prop
+  · simp [hab]
 
-NewTheorem IsCompact.exists_isMaxOn Set.nonempty_Icc
+NewTheorem IsCompact.exists_isMaxOn
 
 TheoremTab "Bolzano"

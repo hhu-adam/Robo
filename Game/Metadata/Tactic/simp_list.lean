@@ -28,6 +28,9 @@ attribute [game_simp] Finset.Icc_self Finset.sum_singleton MulZeroClass.mul_zero
 -- Babylon, L09_Boss:
 attribute [game_simp] Finset.Icc_self Finset.sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow eq_self Nat.cast_add Nat.cast_one Finset.mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false Finset.sum_insert one_div
 
+-- Bolzano, L01_MaxOnIcc:
+attribute [game_simp] Set.nonempty_Icc
+
 -- Cantor, L01_CantorPowerset:
 attribute [game_simp] Set.mem_setOf_eq
 

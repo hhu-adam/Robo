@@ -14,12 +14,10 @@ Statement val_eq_of_preimage_eq_pair {f : ℝ → ℝ} {y x₁ x₂ : ℝ} (hx :
     f x₁ = y ∧ f x₂ = y := by
   constructor
   · have h : x₁ ∈ f ⁻¹' {y} := by
-      rw [hx]
-      simp
-    simpa using h
+      simp [hx]
+    assumption
   · have h : x₂ ∈ f ⁻¹' {y} := by
-      rw [hx]
-      simp
-    simpa using h
+      simp [hx]
+    assumption
 
 TheoremTab "Fibre"
