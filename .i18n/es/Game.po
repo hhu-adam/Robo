@@ -5532,7 +5532,7 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"Debajo, unos garabatos bastante caóticos que, sin embargo, empezaron claramente con una línea nítida:"
+"Debajo veis unos garabatos bastante caóticos, sin embargo, una primera línea nítida dice lo siguiente:"
 
 #. §0: `E i j`
 #. §1: `n × n`
@@ -5552,7 +5552,7 @@ msgid "§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\n"
 msgstr ""
 "§0 es la matriz §1 (con valores en §2) con un §3 en la posición §4 y cero en el resto.\n"
 "\n"
-"Esta es una forma especializada de la §5 general, que también puede ser no cuadrada y tomar un valor §6 arbitrario de un anillo arbitrario.\n"
+"Se trata de un caso particular de §5, que también puede no ser cuadrada y tomar un valor §6 arbitrario de un anillo cualquiera.\n"
 "Aquí usamos §7 simplemente como abreviatura."
 
 #. §0: `Mat[«{n}»,«{n}»]`
@@ -5633,7 +5633,7 @@ msgstr ""
 #. §0: `E.mul_of_ne`
 #: Game/Levels/Robotswana/L02_EBasis.lean:10
 msgid "Conclusion Robotswana L02: save result as §0"
-msgstr "**Glifo**: Este §0 también me lo guardo, quién sabe."
+msgstr "**Glifo**: §0 también me lo guardo, quién sabe."
 
 #: Game/Levels/Robotswana/L02_EBasis.lean:23
 msgid "Looks like matrix multiplication"
@@ -5647,11 +5647,11 @@ msgstr "**Glifo**: ¡Pero no olvides que §0 necesita explícitamente la hipóte
 
 #: Game/Levels/Robotswana/L03.lean:15
 msgid "Conclusion Robotswana L03"
-msgstr "**Tú**: Ahora sí que tengo curiosidad por saber quién habrá perdido o tirado estas notas por aquí. Ven, sigamos adelante."
+msgstr "**Tú**: Empiezo a tener curiosidad por saber quién habrá perdido o tirado estas notas por aquí. Venga, sigamos."
 
 #: Game/Levels/Robotswana/L03.lean:26
 msgid "Seems to be correct"
-msgstr "**Tú**: También tiene pinta de ser correcto."
+msgstr "**Tú**: También parece correcto."
 
 #: Game/Levels/Robotswana/L04_MatrixEqSum.lean:16
 msgid "Intro Robotswana L04"
@@ -5681,7 +5681,7 @@ msgid "[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
 "§3\n"
 "more generally, use §4 for §5 matrices over any §6"
 msgstr ""
-"Toda matriz §0 real §2 se puede escribir como\n"
+"Toda matriz §0 con coeficientes en §2 se puede escribir como\n"
 "§3.\n"
 "\n"
 "Véase §4 para matrices más generales con coeficientes más generales."
@@ -5690,9 +5690,9 @@ msgstr ""
 #: Game/Levels/Robotswana/L04_MatrixEqSum.lean:39
 msgid "Explain statement w.r.t. §0 and use former results"
 msgstr ""
-"**Tú**: Esto parece decir, simplemente, que estas §0 forman un sistema de generadores del espacio de las matrices.\n"
+"**Tú**: Esto parece decir, simplemente, que las §0 forman un sistema de generadores del espacio de matrices.\n"
 "\n"
-"**Glifo**: ¡Seguro que aquí puedes aplicar directamente los resultados que ya hemos encontrado!"
+"**Glifo**: ¡Seguro que aquí puedes aplicar directamente los resultados que nos hemos encontrado!"
 
 #. §0: `(A i j) • E i j`
 #. §1: `Matrix.smul_ebasis`
@@ -5705,7 +5705,7 @@ msgid "Expression §0 can be simplified with §1.\n"
 msgstr ""
 "**Glifo**: Seguro que la expresión §0 la puedes simplificar con §1.\n"
 "\n"
-"**Tú**: ¿Entonces §2?\n"
+"**Tú**: Entonces… ¿§2?\n"
 "\n"
 "**Glifo**: No, dentro del sumatorio eso no va a funcionar. Pero §3 tiene posibilidades de éxito.\n"
 
@@ -5715,7 +5715,7 @@ msgstr ""
 "**Glifo**: Ya, bueno, también puedes repetir sin más la demostración del primer pergamino.\n"
 "  Venga, la práctica hace al maestro.\n"
 "\n"
-"**Tú**: Vale, vale, yo no tengo un cerebro mecánico como tú."
+"**Tú**: Vale, vale, que yo no tengo un cerebro mecánico como el tuyo…"
 
 #. §0: `apply matrix_eq_sum_single`
 #: Game/Levels/Robotswana/L04_MatrixEqSum.lean:69
@@ -5736,11 +5736,11 @@ msgstr ""
 "\n"
 "**Tú**: Me pregunto si nos habremos dejado algo importante en la plaza…\n"
 "\n"
-"**Glifo**: Da igual, ya hemos avanzado un buen trecho. ¡Prueba ahora aquí!"
+"**Glifo**: Da igual, ya hemos avanzado un buen trecho. ¡Probemos con esto!"
 
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:27
 msgid "Conclusion Robotswana L05"
-msgstr "**Tú**: Tengo la sensación de que estamos tras la pista de alguien que se interesa por la diagonal de las matrices. ¡Pero me está entrando sed!"
+msgstr "**Tú**: Tengo la sensación de que estamos tras la pista de alguien interesado en la diagonal de las matrices. ¡Pero me está entrando sed!"
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `1`
@@ -5750,7 +5750,7 @@ msgstr "**Tú**: Tengo la sensación de que estamos tras la pista de alguien que
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:57
 msgid "Try §0 on §1 with §2 to §3e§4rite\n"
 "goal."
-msgstr "**Glifo**: Como te decía, creo que puedes empezar directamente con §0, aplicado a la matriz identidad §1 que hay a la derecha del signo de igualdad. Así que con la igualdad §2 quieres §3e§4ritear el objetivo."
+msgstr "**Glifo**: Como te decía, creo que puedes empezar directamente con §0, aplicado a la matriz identidad §1 que hay a la derecha de la igualdad. Básicamente quieres §3(§4)eescribir el objetivo con §2."
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `matrix_eq_sum_single`
@@ -5760,7 +5760,7 @@ msgstr "**Glifo**: No, §0 no, sino §1."
 
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:65
 msgid "Explanation of equal sums"
-msgstr "**Tú**: Creo que las dos sumas son idénticas porque cada sumando es idéntico."
+msgstr "**Tú**: Creo que las dos sumas son idénticas porque los sumandos lo son."
 
 #. §0: `sum_congr`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:71
@@ -5801,12 +5801,12 @@ msgstr "**Glifo**: Muy bien. Ahora sí que puedes aplicar §0."
 #. §1: `1 • _`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
 msgid "Explain simplification of §0 and §1"
-msgstr "**Tú**: ¡Gracias, eso ayuda! Este paso debería ser fácil: una suma sobre un único elemento; en él, §0 vuelve a ser uno, ¡y §1 también se simplifica!"
+msgstr "**Tú**: ¡Gracias, eso ayuda! Este paso debería ser fácil: una suma sobre un único elemento; donde §0 vuelve a ser uno, ¡y §1 también se simplifica!"
 
 #. §0: `simp`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
 msgid "§0 is always available"
-msgstr "**Glifo**: §0 siempre se puede probar…"
+msgstr "**Glifo**: Siempre puedes probar con §0…"
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
@@ -5814,9 +5814,9 @@ msgstr "**Glifo**: §0 siempre se puede probar…"
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
-"**Tú**: Pero ¿qué hago aquí? Al fin y al cabo, §0 dice más o menos que §1.\n"
+"**Tú**: Pero ¿y aquí qué hago? Al fin y al cabo, §0 dice básicamente que se tiene §1.\n"
 "\n"
-"**Glifo**: Sí, pero no exactamente. Introdúcelo con §2, ¡y demuéstralo en un momento!"
+"**Glifo**: Sí, pero no exactamente. Introdúcelo con §2 y demuéstralo en un momento."
 
 #. §0: `1 «{i}» «{x}»`
 #. §1: `if «{i}» = «{x}» then _ else _`
@@ -5832,7 +5832,7 @@ msgstr ""
 #. §0: `«{h₂}»`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
 msgid "Try to simplify §0."
-msgstr "**Tú**: Lo primero, yo miraría a ver si §0 se simplifica."
+msgstr "**Tú**: Para empezar yo miraría a ver si §0 se simplifica."
 
 #. §0: `symm`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
@@ -5857,7 +5857,7 @@ msgstr ""
 #. §1: `if_neg`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
 msgid "Try §0 and §1"
-msgstr "**Glifo**: Y como eso es falso, con §0 y §1 puedes seguir avanzando."
+msgstr "**Glifo**: Y como es falso, con §0 y §1 puedes continuar."
 
 #. §0: $$
 #. [A, B] = AB - BA
@@ -5872,14 +5872,14 @@ msgstr ""
 "\n"
 "**Glifo**: ¡Anda, un conmutador!\n"
 "\n"
-"**Tú**: Pues tiene pinta de estar bastante nihilado. Creo que ha muerto de sed.\n"
+"**Tú**: Pues tiene pinta de estar bastante destrozado. Creo que ha muerto de sed.\n"
 "\n"
-"**Glifo**: Y mira, aquí hay algo más garabateado en el árbol."
+"**Glifo**: Y mira, hay algo más garabateado en el árbol."
 
 #: Game/Levels/Robotswana/L06_EBasisEqOnDiag.lean:39
 msgid "Conclusion Robotswana L06"
 msgstr ""
-"**Glifo**: Me parece que, de momento, nos llevamos con nosotros la hipótesis de que los conmutadores se nihilan.\n"
+"**Glifo**: Me parece que, de momento, nos llevamos con nosotros la hipótesis de que los conmutadores se anulan.\n"
 "\n"
 "**Tú**: Estupendo. ¿He mencionado ya que empiezo a tener sed?"
 
@@ -5888,9 +5888,9 @@ msgstr ""
 #: Game/Levels/Robotswana/L06_EBasisEqOnDiag.lean:55
 msgid "Explain §0 with §1"
 msgstr ""
-"**Tú**: En otras palabras: si §0 nihila los conmutadores, entonces sus valores en todas las §1 coinciden. ¿¿Es eso cierto??\n"
+"**Tú**: En otras palabras: si §0 anula los conmutadores, entonces sus valores en todas las §1 coinciden. ¿¿Es eso cierto??\n"
 "\n"
-"**Glifo**: ¡Vamos a averiguarlo!"
+"**Glifo**: ¡Averigüémoslo!"
 
 #. §0: `«{h₁}»`
 #. §1: `A * B`
@@ -5903,10 +5903,10 @@ msgstr ""
 msgid "Start with §0. Find §1 with §2. Try §3 to get §4 and §5 and see if §6 applicable"
 msgstr ""
 "**Tú**: Pero ¿qué se supone que hago con nuestra hipótesis §0?\n"
-"  Para empezar, necesitaría tener siquiera una multiplicación.\n"
+"  Para empezar, necesitaría tener al menos una multiplicación en algún sitio.\n"
 "\n"
 "**Glifo**: Tendrías que encontrar un producto de matrices §1 para el que se cumpla §2.\n"
-"  Entonces podrías escribir §3 para obtener dos objetivos – §4 y §5 – en los que quizá sea aplicable §6."
+"  Entonces podrías escribir §3 para obtener dos objetivos, §4 y §5, en los que quizá sea aplicable §6."
 
 #. §0: `E i k = (E i j) * (E j k)`
 #: Game/Levels/Robotswana/L06_EBasisEqOnDiag.lean:68
@@ -5928,11 +5928,11 @@ msgid "intro Robotswana L07: Introduce new consideration for §0: do not conside
 msgstr ""
 "Justo al lado del árbol encuentras otra nota, en la que aparece §0 tachado en grande.\n"
 "\n"
-"**Tú**: Supongo que significa: las §1 con i ≠ j no nos interesan."
+"**Tú**: Supongo que significa que las §1 con i ≠ j no nos interesan."
 
 #: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:24
 msgid "Conclusion Robotswana L07"
-msgstr "Las huellas parecen ahora mucho más frescas. Seguís tras ellas."
+msgstr "Las huellas parecen ahora mucho más recientes. Seguís tras ellas."
 
 #. §0: `«{h₁}»`
 #. §1: `E i j`
@@ -5948,7 +5948,7 @@ msgstr ""
 "**Glifo**: ¿Por qué precisamente así?\n"
 "\n"
 "**Tú**: Si en ese producto intercambio los factores, ¡obtengo cero!  \n"
-"  Eso ya lo habíamos visto, §3 o algo así.\n"
+"  Eso ya lo hemos visto, §3 o algo así.\n"
 "    "
 
 #. §0: `trans f (E i j * E j j)`
@@ -5974,19 +5974,19 @@ msgstr ""
 #. §0: `h₁`
 #: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:77
 msgid "[Robotswana.L07] Hint 2: Try rewriting with §0"
-msgstr "**Glifo**: Vaya. Eso parece que está mal."
+msgstr "**Glifo**: Vaya. Eso no parece muy correcto."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:19
 msgid "Intro Robotswana L08"
 msgstr ""
 "Encontráis una pista más, pero con las prisas perdéis el rastro.\n"
 "A estas alturas tienes muchísima sed.\n"
-"Mientras Glifo rastrea los alrededores, tú te sientas sin fuerzas y, con la cabeza algo embotada por el cálido sol, te quedas mirando fijamente el trozo de pergamino."
+"Mientras Glifo rastrea los alrededores, tú te sientas; sin fuerzas y con la cabeza algo embotada por el cálido sol. Te quedas mirando fijamente el trozo de pergamino."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:34
 msgid "Conclusion Robotswana L08"
 msgstr ""
-"**Tú**: Por fin.\n"
+"**Tú**: ¡Por fin!\n"
 "\n"
 "Glifo te tiende una botella de agua.\n"
 "\n"
@@ -6031,7 +6031,7 @@ msgstr ""
 "§0\n"
 "\n"
 "**Tú**: Sí, así podría funcionar. Escribo §1 como combinación lineal de matrices de la base, luego uso la linealidad y, por último, que §2 se anula en las §3 con §4.\n"
-"Así que probablemente lo primero sea escribir la §5 de §6 como combinación lineal, pero no la otra §7 que aparece más adelante.\n"
+"Así que probablemente lo primero sea escribir la §5 que hay en §6 como combinación lineal, pero no la otra §7 que aparece más adelante.\n"
 "\n"
 "**Glifo** (*desde lejos*): ¡§8! Funciona como §9.\n"
 
@@ -6052,8 +6052,8 @@ msgstr ""
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:92
 msgid "§0 is a bad idea here. Try §1."
 msgstr ""
-"**Tú**: Hmm, la verdad es que §0 es una mala idea. \n"
-"  Esto parece demasiado complicado. Deja que lo intente con §1."
+"**Tú**: Hmm, la verdad es que §0 parece una mala idea.\n"
+"  Esto parece demasiado complicado. Deja que pruebe con §1."
 
 #. §0: `IN_HINT 1`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:96
@@ -6068,7 +6068,7 @@ msgstr "**Glifo** (*desde alguna parte*): Eso suena a §0. No creo que hayamos v
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:104
 msgid "Simplify"
-msgstr "**Tú**: Ah, sí: en caso de duda, simplificar."
+msgstr "**Tú**: Ah sí, ante la duda: simplificar."
 
 #. §0: `f`
 #. §1: `E i j`
@@ -6093,7 +6093,7 @@ msgstr "**Glifo**: Suma igual a suma… Eso lo atacas con §0, §1."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:122
 msgid "Try again"
-msgstr "**Tú**: ¿Quizá otra vez?"
+msgstr "**Tú**: ¿Otra vez quizás?"
 
 #. §0: `«{i}» = «{j}»`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:126
@@ -6103,7 +6103,7 @@ msgstr "**Tú**: Y ahora, distinción de casos según §0…"
 #. §0: `by_cases`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:128
 msgid "Employ §0"
-msgstr "**Glifo**: ¡Eso era §0, exacto!"
+msgstr "**Glifo**: ¡Eso era §0, claro!"
 
 #. §0: `if_pos «{h₂}»`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:131
@@ -6116,12 +6116,12 @@ msgid "Here try §0"
 msgstr ""
 "**Glifo**: …y aquí §0.\n"
 "\n"
-"**Tú**: Que ya lo sé."
+"**Tú**: Que sí…"
 
 #. §0: `f (E i j)`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:141
 msgid "See that §0 is zero"
-msgstr "**Tú**: ¡Pero si §0 es cero, eso ya lo habíamos visto!"
+msgstr "**Tú**: ¡Pero si §0 es cero, eso ya lo hemos visto!"
 
 #. §0: `zero_on_offDiag_ebasis`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:143
@@ -6134,12 +6134,12 @@ msgid "Solve second half of §0 operation"
 msgstr ""
 "**Tú**: Y yo que pensaba que ya estaba.\n"
 "\n"
-"**Glifo**: Casi: aún queda la segunda mitad del comando §0 de arriba. Esa mitad es muy sencilla."
+"**Glifo**: Casi: aún queda la segunda mitad del paso §0 de arriba. Esa mitad es muy sencilla."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:159
 msgid "[Doc.Theorem] map_sum\n"
 "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum."
-msgstr "Las aplicaciones lineales (o, más en general, las aplicaciones \"aditivas\") se pueden intercambiar con una suma."
+msgstr "Las aplicaciones lineales (o, de manera más general, las aplicaciones \"aditivas\") pueden intercambiarse por una suma."
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:21
 msgid "Intro Robotswana L09"
@@ -6148,7 +6148,7 @@ msgstr ""
 "\n"
 "**Glifo**: ¡Mira, ahí está!\n"
 "\n"
-"**Tú**: ¿¿¿Y qué *es* eso???\n"
+"**Tú**: ¿¿*Está* el qué??\n"
 "\n"
 "**Glifo**: Ni idea. Pero algo me dice que estos papeles son una especie de retrato robot. Mira, aquí hay otro. Creo que este dice lo grande que es."
 
@@ -6192,7 +6192,7 @@ msgstr ""
 "\n"
 "**Tú**: ¡Creo que tengo una idea! La igualdad multiplicada por §0 la puedo comprobar con los resultados anteriores de la siguiente manera:\n"
 "§1\n"
-"El punto esencial es que ya habíamos visto que §2 y §3 son iguales para §4 y §5 cualesquiera. Por tanto, dentro de la suma son intercambiables.\n"
+"El punto esencial es que ya hemos visto que §2 y §3 son iguales para cualesquiera §4 y §5. Por tanto, dentro de la suma son intercambiables.\n"
 "\n"
 "**Glifo**: Mmm. En todo caso, ¿quieres empezar aprovechando que la multiplicación por §6 es inyectiva? ¿No teníamos un lema para eso? Mmm…\n"
 "Glifo se queda pensando un rato.\n"
@@ -6205,7 +6205,7 @@ msgstr ""
 #. §1: `obtain «{h}» | «{h}» := «{h}»`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:104
 msgid "Observe §0 seperatly. Prove by cases with §1"
-msgstr "**Glifo**: Ah, sí, el caso §0 habrá que tratarlo aparte. Así que distingamos los casos con §1"
+msgstr "**Glifo**: Ah, sí, el caso §0 habría que tratarlo aparte. Así que distingamos los casos con §1."
 
 #. §0: `«{h}»`
 #. §1: `ℕ`
@@ -6222,7 +6222,7 @@ msgstr "**Glifo**: La flecha §0 es una inclusión implícita de §1 en §2. La 
 #. §4: `simp [«{h}»] at «{i}»`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:118
 msgid "Put §0 into §1 to show triviality because there is no §2 in §3. Try §4"
-msgstr "**Glifo**: Y ahora seguramente querrás sustituir §0 en §1 y constatar que el enunciado se vuelve trivial, porque no hay ningún §2 en §3. Para la sustitución, en este caso puedes usar §4."
+msgstr "**Glifo**: Y ahora seguramente querrás sustituir §0 en §1. Observa que entonces el enunciado se vuelve trivial ya que no hay ningún §2 en §3. Para la sustitución, en este caso puedes usar §4."
 
 #. §0: `IsEmpty.false`
 #. §1: `M`
@@ -6233,7 +6233,7 @@ msgstr "**Glifo**: Y ahora seguramente te ayude el lema §0, que para un conjunt
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:133
 msgid "Return to topic at hand"
-msgstr "**Glifo**: Muy bien. Ahora sí, al asunto principal."
+msgstr "**Glifo**: Muy bien. Ahora sí, al paso principal."
 
 #. §0: `trans`
 #. §1: `trans ∑ j : Fin «{n}», f (E i i)`
@@ -6271,7 +6271,7 @@ msgid "[Robotswana.L09] Hint: pull function into sum 2"
 msgstr ""
 "**Glifo**: ¿Ahora otra vez `congr`-`ext`?\n"
 "\n"
-"**Tú**: No: primero, la función dentro de la suma; si no, esto no funciona."
+"**Tú**: No. Primero la función debe estar dentro de la suma, si no, esto no funciona."
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:178
 msgid "again"
@@ -6279,7 +6279,7 @@ msgstr "**Tú**: ¡Otra vez!"
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:183
 msgid "[Hint dkmw] Remind of previous result"
-msgstr "**Tú**: Y ese era un resultado que habíamos encontrado por el camino."
+msgstr "**Tú**: Y ese es un resultado de los que encontramos por el camino."
 
 #. §0: `eq_on_diag_ebasis`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:185
@@ -6288,12 +6288,12 @@ msgstr "**Glifo**: §0, dice mi disco duro."
 
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:199
 msgid "[Hint ztqn] Remind of previous result"
-msgstr "**Glifo**: Eso ya lo habíamos visto."
+msgstr "**Glifo**: Eso ya lo hemos visto."
 
 #. §0: `eq_sum_apply_diag_ebasis`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:204
 msgid "Use the result §0"
-msgstr "**Glifo**: El resultado que querías aplicar aquí se llamaba §0."
+msgstr "**Glifo**: El resultado que querías aplicar aquí se llama §0."
 
 #. §0: `rw [«{h₂}»]`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:209
@@ -6312,22 +6312,22 @@ msgstr ""
 "\n"
 "**Tú**: Fíjate: su tamaño, su afición por los conmutadores y todo lo demás… ¡con eso se la puede identificar sin lugar a dudas!\n"
 "\n"
-"**Glifo**: Eso me lo vas a tener que explicar con más detalle.\n"
+"**Glifo**: Me lo vas a tener que explicar mejor.\n"
 "\n"
-"**Tú**: Lo intentaré. ¿Hay en leanés un nombre para la traza?\n"
+"**Tú**: Déjame intentarlo. ¿Hay en leanés un nombre para la traza?\n"
 "\n"
-"**Glifo**: Pues claro: se llama §0, naturalmente. Algunos formalósofos también la llaman cariñosamente Traza.\n"
+"**Glifo**: Pues claro: se llama §0, naturalmente. Algunos formalósofos también la llaman cariñosamente Traci.\n"
 "\n"
-"Coges uno de los trozos de pergamino y escribes en el reverso."
+"Coges uno de los trozos de pergamino y escribes en la parte de atrás."
 
 #: Game/Levels/Robotswana/L10_Characterize.lean:42
 msgid "Conclusion Robotswana L10"
 msgstr ""
 "**Glifo**: Pues es verdad. Tenías razón.\n"
 "\n"
-"Observáis embelesados a esta criatura, por lo visto única en este planeta.\n"
+"Observáis embelesados a la criatura, por lo visto única en este planeta.\n"
 "\n"
-"Cuando os acercáis más, Traza parece reparar en vosotros. Pero no se inmuta lo más mínimo por vuestra presencia."
+"Al acercaros un poco más, Traci parece reparar en vosotros. Pero no se inmuta lo más mínimo por vuestra presencia."
 
 #. §0: `f`
 #: Game/Levels/Robotswana/L10_Characterize.lean:59
@@ -6335,9 +6335,9 @@ msgid "Explain that each §0 has stated properties"
 msgstr ""
 "**Tú**: Aquí están resumidas una vez más todas las propiedades.\n"
 "\n"
-"**Glifo**: ¿Y tú afirmas que solo Traza tiene estas propiedades?\n"
+"**Glifo**: ¿Y tú afirmas que solo Traci tiene estas propiedades?\n"
 "\n"
-"**Tú**: Sí. Creo que es así. Toda aplicación §0 que tenga estas propiedades se comporta sobre todas las matrices exactamente igual que Traza. ¡Y por eso *es* Traza!"
+"**Tú**: Sí. Creo que es así. Toda aplicación §0 que tenga estas propiedades se comporta sobre todas las matrices exactamente igual que Traci. ¡Luego *es* Traci!"
 
 #. §0: `ext`
 #: Game/Levels/Robotswana/L10_Characterize.lean:64
@@ -6356,7 +6356,7 @@ msgid "Remind former result for §0. Try §1"
 msgstr ""
 "**Tú**: ¡Pero si acabamos de comprobar que se cumple §0!\n"
 "\n"
-"**Glifo**: ¡Buscar cosas se me da bien! Eso era §1."
+"**Glifo**: ¡Soy bueno buscando resultados! Eso era §1."
 
 #: Game/Levels/Robotswana/L10_Characterize.lean:78
 msgid "Observe equality"
@@ -6373,14 +6373,14 @@ msgstr ""
 #: Game/Levels/Robotswana/L11_Linearity.lean:19
 msgid "Intro Robotswana L11"
 msgstr ""
-"Cuando os detenéis a cierta distancia, Traza viene corriendo hacia vosotros y se pone a jugar.\n"
-"Divertida, os va poniendo problemas y términos de lo más variado, y vosotros intentáis combinarlos lo bastante rápido."
+"Os detenéis a cierta distancia pero Traci viene corriendo hacia vosotros y se pone a jugar.\n"
+"Divertida, os va poniendo problemas y términos de lo más variado y vosotros intentáis combinarlos lo suficientemente rápido."
 
 #: Game/Levels/Robotswana/L11_Linearity.lean:26
 msgid "Conclusion Robotswana L11"
 msgstr ""
 "Finalmente, emprendéis el camino de vuelta.\n"
-"Enseguida os perdéis, pero por lo visto Traza os ha seguido y os conduce a través de la sabana de vuelta a vuestra nave."
+"Enseguida os perdéis, pero por suerte Traci os ha seguido y os conduce a través de la sabana de vuelta a vuestra nave."
 
 #: Game/Levels/Robotswana/L11_Linearity.lean:33
 msgid "Explain statement"
@@ -6390,7 +6390,7 @@ msgstr "**Tú**: Está claro que esto va de la linealidad de la traza de matrice
 #. §1: `simp`
 #: Game/Levels/Robotswana/L11_Linearity.lean:39
 msgid "[Hint xnqr] Try §0 | §1"
-msgstr "**Glifo**: Este último paso es §0. Naturalmente, todo esto también se podría hacer con §1, si no fuera porque ahora mismo nos lo estamos pasando tan bien jugando.**Glifo**: Este último paso es §0. Naturalmente, todo esto también se podría hacer con §1, si no fuera porque ahora mismo nos lo estamos pasando tan bien jugando."
+msgstr "**Glifo**: Este último paso es §0. Naturalmente, todo esto también se podría hacer con §1, si no fuera porque ahora mismo nos lo estamos pasando tan bien jugando."
 
 #: Game/Levels/Robotswana.lean:14
 msgid "Robotswana"
@@ -6402,7 +6402,7 @@ msgstr ""
 "Aterrizáis en un planeta cálido y salís a una extensa pradera.\n"
 "\n"
 "Tras echar un vistazo alrededor, Glifo descubre unas huellas que se alejan de vuestro lugar de aterrizaje y pasan entre árboles dispersos.\n"
-"Deliberáis un momento y decidís seguir las huellas."
+"Deliberáis un momento y decidís seguirlas."
 
 #: Game/Levels/Ciao/L01.lean:51
 msgid "Conclusion Cia L01"
