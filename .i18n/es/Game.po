@@ -6413,7 +6413,7 @@ msgstr ""
 "\n"
 "Glifo mira a lo lejos.\n"
 "\n"
-"**Glifo**: Creo que quería animarnos a seguir volando.\n"
+"**Glifo**: Creo que quería animarnos a seguir viajando.\n"
 "\n"
 "**Tú**: Pero ¿adónde?\n"
 "\n"
@@ -6516,7 +6516,7 @@ msgid "Continue with §0 and §1. Fristly diect assumptions with §2"
 msgstr ""
 "**Tú**: ¿Y ahora sigo con §0 y §1?\n"
 "\n"
-"**Glifo**: Exacto. A continuación desmontas las hipótesis con §2, etc."
+"**Glifo**: Exacto. A continuación desmontas la hipótesis con §2. Y seguro que ya sabes lo que sigue."
 
 #. §0: `use _`
 #. §1: `«{b}» + «{c}» = «{a}» * _`
@@ -6555,7 +6555,7 @@ msgstr ""
 "\n"
 "Güino examina vuestra demostración.\n"
 "\n"
-"**Güino**: No está mal, no está mal. Pero sigamos un poco más. El museo aún está vacío, sí, pero está terminado. Y ha quedado realmente bien. ¡Mirad, por aquí!"
+"**Güino**: No está mal, no está mal. Continuemos. El museo aún está vacío, sí, pero está terminado. Y ha quedado realmente bien. ¡Mirad, por aquí!"
 
 #: Game/Levels/Prado/L03_even_iff_two_dvd.lean:15
 msgid "Intro Prado L03"
@@ -6649,7 +6649,7 @@ msgstr "**Glifo**: Aquí tienes otro pequeño problema de números primos. El le
 
 #: Game/Levels/Prado/L07_dvd_mul.lean:31
 msgid "Conclusion Prado L07"
-msgstr "**Tú**: La verdad es que los problemas que pones son muy fáciles."
+msgstr "**Tú**: La verdad es que los problemas que me propones parecen un poco demasiado fáciles."
 
 #: Game/Levels/Prado/L08_exists_prime_and_dvd.lean:16
 msgid "Intro Prado L08"
@@ -6699,14 +6699,14 @@ msgid "§0 is notation for 'there exists exactly one §1 for which §2 holds'.\n
 msgstr ""
 "**Tú**: Ya veo: §0 es la notación para \"existe exactamente un §1 para el que se cumple §2\".\n"
 "\n"
-"**Glifo**: Exacto. Y eso se define simplemente como \"existe un §3 tal que (1) se cumple §4 y (2) cualquier otro elemento §5 para el que se cumpla §6 ya es igual a §7\". Así que el primer paso es encontrar un §8 adecuado y luego usar §9."
+"**Glifo**: Exacto. Y eso se define simplemente como \"existe un §3 tal que (1) se cumple §4 y (2) cualquier otro elemento §5 para el que se cumpla §6 es igual a §7\". Así que el primer paso es encontrar un §8 adecuado y luego usar §9."
 
 #. §0: `use`
 #. §1: `∃!`
 #. §2: `simp`
 #: Game/Levels/Prado/L09_ExistsUnique.lean:35
 msgid "Applying §0 onto §1 is usually badly readable. Try §2 directly afterwards"
-msgstr "**Glifo**: La verdad es que §0 aplicado a §1 siempre genera un poco de caos. Lo mejor es mandar siempre un §2 justo detrás; así todo vuelve a ser legible."
+msgstr "**Glifo**: La verdad es que §0 aplicado a §1 siempre genera un poco de caos. Lo mejor es mandar siempre un §2 justo detrás, así todo vuelve a ser legible."
 
 #. §0: `«{w}»`
 #. §1: `a * «{w}» = b`
@@ -6738,7 +6738,7 @@ msgstr ""
 
 #: Game/Levels/Prado/L10_EvenPrime.lean:31
 msgid "Remind former proof"
-msgstr "**Glifo**: Vuelve a repasar con atención los enunciados que ya habíamos demostrado."
+msgstr "**Glifo**: Vuelve a repasar con atención los enunciados que ya hemos demostrado."
 
 #: Game/Levels/Prado/L10_EvenPrime.lean:54
 msgid "Conclusion Prado L10"
@@ -6768,7 +6768,7 @@ msgstr ""
 "\n"
 "**Tú**: Esto… sí. ¿Y tú eres…?\n"
 "\n"
-"**Güino**: ¡Güino, director del Prado – el Museo de los PRimos ADOrados! ¡Venid, venid!\n"
+"**Güino**: ¡Güino! Director del Museo del Prado: donde los PRimos son ADOrados. ¡Venid, venid!\n"
 "\n"
 "Güino os conduce escaleras arriba por la entrada y, a través del portal, hasta una gran sala. En el centro flota un pequeño pedestal. Encima hay dos canicas.\n"
 "\n"
@@ -6780,7 +6780,7 @@ msgstr ""
 
 #: Game/Levels/Euklid/L01_prod_pos.lean:7
 msgid "Intro Euklid L01"
-msgstr "Alguien ha resaltado en color la siguiente línea:"
+msgstr "Alguien ha resaltado la siguiente línea:"
 
 #. §0: `∏ a ∈ A, a`
 #. §1: `A`
@@ -6788,7 +6788,7 @@ msgstr "Alguien ha resaltado en color la siguiente línea:"
 #: Game/Levels/Euklid/L01_prod_pos.lean:19
 msgid "§0 is Leanic for the product over all numbers in §1. Try §2"
 msgstr ""
-"**Tú**: Esta línea sí que es legible. Seguro que §0 es, en leanés, el producto de todos los números de §1, ¿no?\n"
+"**Tú**: Esta línea sí que es legible. Seguro que §0 es, en leanés, el producto de todos los elementos de §1, ¿no?\n"
 "\n"
 "**Glifo**: ¡Sí! Y la siguiente línea también tiene sentido: §2."
 
@@ -6807,11 +6807,11 @@ msgstr "Un poco más adelante por el pasillo veis otro libro abierto en el suelo
 msgid "Goal: if §0 divides factor §1 of a product then it also divides the product.\n"
 "Try §2"
 msgstr ""
-"**Glifo**: Esta línea también parece muy razonable: si un número §0 divide a un factor §1 de un producto, entonces seguro que también divide al producto entero.\n"
+"**Glifo**: Esta línea también parece muy razonable: si un número §0 divide a un factor §1 de un producto, entonces divide al producto entero.\n"
 "\n"
-"**Tú**: Pero es que ya la primera \"línea de demostración\" no es legible ni por asomo.\n"
+"**Tú**: Pero es que ya la primera línea de la \"demostración\" no es legible ni por asomo.\n"
 "\n"
-"**Glifo**: No, no lo es. Pero volvamos a intentarlo nosotros mismos. Empezamos, naturalmente, con §2."
+"**Glifo**: No, no lo es. Aún así podemos intentarlo nosotros mismos. Empecemos, como no, con §2."
 
 #. §0: `«{h}»`
 #: Game/Levels/Euklid/L02_prod_insert.lean:28
@@ -6863,7 +6863,7 @@ msgstr ""
 "\n"
 "**Glifo**: ¡Muchísimo! Para demostrar el enunciado, seguro que uno quiere considerar el producto de todos los números primos. Y para que eso sea siquiera sintácticamente posible, tienes que ver este conjunto de todos los primos como un §1. La primera línea hace exactamente eso: usa la hipótesis §2 para convertir §3 en un subconjunto finito §4.\n"
 "\n"
-"**Tú**: Vale, lo voy a intentar."
+"**Tú**: Vale, voy a intentarlo."
 
 #. §0: `all_primes.bubblewrap = blister cong foo`
 #. §1: `\\prod`
@@ -6877,14 +6877,14 @@ msgstr ""
 "\n"
 "¿Esa también tiene sentido?\n"
 "\n"
-"**Glifo**: No, esa vuelve a ser un disparate mayúsculo. Como te he dicho, seguro que ahora quieres usar el producto de todos estos números. El símbolo del producto lo escribes como §1."
+"**Glifo**: No, esa vuelve a ser un disparate absoluto. Como te he dicho, seguro que ahora quieres usar el producto de todos estos números. El símbolo del producto lo puedes escribir con §1."
 
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:67
 msgid "Try constructor"
 msgstr ""
-"**Glifo**: Bravo.\n"
+"**Glifo**: ¡Bravo!\n"
 "\n"
-"**Tú**: ¿No habíamos demostrado ya hace un momento un par de cosas que ahora vendrían bastante bien?\n"
+"**Tú**: ¿No hemos demostrado hace un momento un par de cosas que ahora nos vendrían bastante bien?\n"
 "\n"
 "**Glifo**: Uy. Sí, es verdad, pero por desgracia no las guardé. Me temo que tendrás que reconstruir de nuevo cómo iban los argumentos."
 
@@ -6920,7 +6920,7 @@ msgstr ""
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:114
 msgid "Conclusion Euklid L03"
 msgstr ""
-"Enfiláis un pasillo en el que hay varios libros tirados por el suelo. Pero ninguno está abierto. En el siguiente cruce sale otro pasillo con varios libros por el suelo.\n"
+"Enfiláis un pasillo en el que hay varios libros tirados por el suelo. Pero ninguno está abierto. En la siguiente intersección otro pasillo se bifurca, también con varios libros por el suelo.\n"
 "\n"
 "**Tú**: ¿Será esto un rastro?\n"
 "\n"
@@ -6948,7 +6948,7 @@ msgstr "**Glifo**: Claro, eso está hecho. No es más que una típica demostraci
 msgid "Conclusion Euklid L04"
 msgstr ""
 "Euclides está entusiasmado y baila en círculos.\n"
-"Casi no quiere dejaros marchar.\n"
+"No quiere que os vayáis.\n"
 "Prometéis seguir en contacto."
 
 #: Game/Levels/Euklid.lean:7
@@ -6961,11 +6961,11 @@ msgid "Intro Euklid: shows encrypted message §0"
 msgstr ""
 "**Glifo**: Este planeta parece un laberinto.\n"
 "\n"
-"**Tú**: O un dédalo.\n"
+"**Tú**: Y no uno de menú infantil precisamente.\n"
 "\n"
 "Os acercáis volando lentamente.\n"
 "\n"
-"**Glifo**: ¡Eso es una biblioteca! Esa tenemos que verla más de cerca, sí o sí. Pero no tengo ni idea de dónde aterrizar.\n"
+"**Glifo**: ¡Eso es una biblioteca! Tenemos que verla más de cerca, sí o sí. Pero no tengo ni idea de dónde aterrizar.\n"
 "\n"
 "**Tú**: ¿Quizá allí? Parece una pequeña sala de lectura. ¿Podrás?\n"
 "\n"
