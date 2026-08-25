@@ -7378,7 +7378,7 @@ msgid "Intro Epo L01"
 msgstr ""
 "El viaje resulta, en efecto, corto e indoloro.\n"
 "Y efectivamente os reciben por todo lo alto.\n"
-"Pero una vez que se calma la emoción inicial, también aquí os toca enfrentaros a problemas."
+"Pero una vez que se calma la emoción inicial, también aquí os toca enfrentaros a algunos problemas."
 
 #. §0: `Surjective f`
 #. §1: `∀ y, (∃ x, f x = y)`
@@ -7388,7 +7388,7 @@ msgid "Confirm that §0 is defined as §1 via §2"
 msgstr ""
 "**Tú**: ¿Estoy en lo cierto al suponer que la definición de §0 es §1?\n"
 "\n"
-"**Glifo**: Creo que sí. Podrías echar un vistazo dentro con §2. Pero tampoco hace falta."
+"**Glifo**: Creo que sí. Podrías echar un vistazo con §2. Pero tampoco creo que haga falta."
 
 #. §0: `ℕ → A → B`
 #. §1: `ℕ → (A → B)`
@@ -7399,14 +7399,14 @@ msgid "Explaination of §0: it can be read as §1, a mapping of §2 into the set
 msgstr ""
 "**Tú**: §0 … ¿cómo leo estas dos flechas seguidas?\n"
 "\n"
-"**Glifo**: Lo lees como §1: una aplicación de los números naturales §2 en el conjunto §3 de las aplicaciones de A en B. Por cierto, eso también quedará claro cuando sigas leyendo lo que tienes que demostrar aquí."
+"**Glifo**: Lo lees como §1: una aplicación de los números naturales §2 en el conjunto §3 de las aplicaciones de A en B. Por cierto, eso seguramente te quede claro cuando sigas leyendo lo que tienes que demostrar."
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
 #. §2: `push Not`
 #: Game/Levels/Epo/L02_CurrySurjective.lean:26
 msgid "Try §0 | §1, §2"
-msgstr "**Glifo**: Podrías empezar con §0, o bien empiezas con §1 y luego miras a ver si §2 te hace avanzar."
+msgstr "**Glifo**: Podrías empezar con §0, o con §1 y luego mirar si §2 te ayuda a avanzar."
 
 #. §0: `ne_comm`
 #. §1: `ne_comm`
@@ -7437,7 +7437,7 @@ msgid "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3
 msgstr ""
 "**Tú**: Supongo que esto quiere decir que §0 es una inversa por la derecha de §1 si y solo si §2 es una inversa por la izquierda de §3.\n"
 "\n"
-"**Glifo**: Exacto. Pero, si no me engaño, en leanés esto no es tanto un teorema como la definición misma de §4. Y, para colmo, hay que escribir de verdad §5 en lugar de simplemente §6, porque §7 es ambiguo en leanés."
+"**Glifo**: Exacto. Pero, si no me equivoco, en leanés esto no es tanto un teorema como la definición misma de §4. Y, para colmo, hay que escribir de verdad §5 en lugar de simplemente §6, porque §7 es ambiguo en leanés."
 
 #: Game/Levels/Epo/L04_RightInverse.lean:22
 msgid "Look through definitions"
@@ -7463,7 +7463,7 @@ msgstr "**Glifo**: Pues yo volvería a empezar con §0. Y luego echaría mano de
 msgid "Try §0 or §1.\n"
 "§2 without §3 does not work. You must explicitly point out which value\n"
 "the variable §4 should have in statment §5."
-msgstr "**Glifo**: Podrías seguir con §0 o con §1. (§2 sin §3 no funciona aquí: tienes que indicar explícitamente qué valor debe tomar la variable §4 en el enunciado de §5."
+msgstr "**Glifo**: Podrías seguir con §0 o con §1. (§2 sin §3 no funciona aquí: tienes que indicar explícitamente qué valor debe tomar la variable §4 en el enunciado de §5)"
 
 #. §0: `f`
 #. §1: `let g : ℤ × ℤ → ℤ × ℤ := fun (m, n) ↦ …`
@@ -7515,7 +7515,7 @@ msgstr ""
 "\n"
 "Deja caer los brazos.\n"
 "\n"
-"**Bedel**: En fin, da igual. ¡Buenos días, antes de nada! Yo aquí no soy más que el conserje. Os espera una gran delegación, pero, claro está, al otro lado, en el edificio de oficinas. Esto de aquí es solo nuestra torre dormitorio. Venid, que os llevo. Es cosa de un momento.\n"
+"**Bedel**: En fin, da igual. ¡Buenos días, antes de nada! Yo aquí no soy más que el bedel. Os espera una gran delegación, pero, claro está, al otro lado, en el edificio de oficinas. Esto de aquí es solo nuestra torre dormitorio. Venid, que os llevo. Es cosa de un momento.\n"
 "\n"
 "Os lleva una planta más abajo y os pide que os montéis en unas \"cápsulas de transporte\", cada uno en una.\n"
 "\n"
@@ -7532,7 +7532,7 @@ msgstr ""
 #. §2: `unfold`
 #: Game/Levels/Mono/L01_Injective.lean:28
 msgid "§0 is defined as §1. You can check this with §2"
-msgstr "**Glifo**: §0 se define tal y como esperarías: §1. Puedes volver a comprobarlo fácilmente con §2 si no te fías de mí."
+msgstr "**Glifo**: §0 se define tal y como esperarías: §1. Puedes comprobarlo con §2 si no te fías de mí."
 
 #. §0: `intro a b`
 #: Game/Levels/Mono/L01_Injective.lean:34
@@ -7547,7 +7547,7 @@ msgstr "**Glifo**: Creo que ahora deberías simplificar la hipótesis §1 con la
 
 #: Game/Levels/Mono/L01_Injective.lean:54
 msgid "Conclusion Mono L01"
-msgstr "Los formalósofos opinan que lo habéis hecho muy bien."
+msgstr "Los formalósofos se muestran satisfechos con vuestro desempeño."
 
 #. §0: `Injective f`
 #. §1: `a ≠ b → f a ≠ f b`
@@ -7557,7 +7557,7 @@ msgstr "Los formalósofos opinan que lo habéis hecho muy bien."
 msgid "Use short cut by instead of the definition of §0 using equivalent description\n"
 "§1. In Leanic it is part of §2. For injective mapping it holds\n"
 "that §3"
-msgstr "**Glifo**: Aquí puedes atajar usando, en vez de la definición de §0, la descripción equivalente §1 de la inyectividad. En leanés, eso forma parte de §2: para aplicaciones inyectivas se cumple §3."
+msgstr "**Glifo**: Aquí puedes atajar usando, en vez de la definición de §0, la descripción equivalente §1 de la inyectividad. En leanés, esa es una de las direcciones de §2: para aplicaciones inyectivas se cumple §3."
 
 #. §0: `decide`
 #: Game/Levels/Mono/L02_InjectiveNeIff.lean:22
@@ -7591,7 +7591,7 @@ msgstr ""
 #. §2: `¬ ∀`
 #: Game/Levels/Mono/L03_NotInjective.lean:44
 msgid "Open §0 via §1 to see §2 ..."
-msgstr "**Glifo**: Quizá podrías empezar desplegando §0 con §1. Entonces ahí aparecerá §2 …"
+msgstr "**Glifo**: Quizá podrías empezar desplegando §0 con §1. Aparecerá entonces §2…"
 
 #. §0: `push Not`
 #: Game/Levels/Mono/L03_NotInjective.lean:47
@@ -7603,7 +7603,7 @@ msgid "Provide a counter example"
 msgstr ""
 "**Tú**: Ahora solo tengo que dar un contraejemplo, ¿verdad?\n"
 "\n"
-"**Glifo**: ¡Exacto! ¿Y qué dos números quieres usar?"
+"**Glifo**: ¡Exacto! ¿Qué dos números usarías?"
 
 #. §0: `decide`
 #: Game/Levels/Mono/L03_NotInjective.lean:59
@@ -7633,7 +7633,7 @@ msgid "Explain §0: in the definition add brackets so it's §1. So, §2\n"
 "as a §10-tuple of elements in §11. So, §12 is given as a mapping from §13 to §14.\n"
 "Name §15 should be clear now"
 msgstr ""
-"**Tú**: En la definición de §0 vuelven a aparecer dos flechas seguidas. Primero tengo que ordenarlo en mi cabeza.\n"
+"**Tú**: En la definición de §0 vuelven a aparecer dos flechas seguidas. Deja que ponga orden en mi cabeza.\n"
 "\n"
 "**Glifo**: Para empezar, vuelve a poner paréntesis: §1. Así pues, §2 es una aplicación de §3 en el conjunto §4. Ahora bien, §5 es el conjunto §6, y §7, por consiguiente, el conjunto de las aplicaciones de §8 en §9.\n"
 "\n"
@@ -7711,7 +7711,7 @@ msgstr "**Glifo**: §0 es lo que andas buscando."
 #: Game/Levels/Mono/L05_StrictMono.lean:42
 #: Game/Levels/Mono/L05_StrictMono.lean:46
 msgid "Try again from the beginning"
-msgstr "**Glifo**: Me parece que este camino es demasiado pedregoso. ¡Mejor vuelve a empezar desde el principio!"
+msgstr "**Glifo**: Me parece que este camino es demasiado lioso. ¡Mejor vuelve a empezar desde el principio!"
 
 #. §0: `Odd 3`
 #: Game/Levels/Mono/L05_StrictMono.lean:56
@@ -7720,7 +7720,7 @@ msgstr "**Tú**: §0. ¿No es eso una trivialidad? ¡Espera un momento!"
 
 #: Game/Levels/Mono/L05_StrictMono.lean:59
 msgid "The next part is elementary"
-msgstr "**Tú**: ¡Ja! Y esta parte seguramente vuelve a salir de forma totalmente elemental."
+msgstr "**Tú**: ¡Ja! Seguro que lo demás es muy básico."
 
 #. §0: `unfold`
 #. §1: `StrictMono`
@@ -7786,7 +7786,7 @@ msgid "It conjected that §0 has left inverse. One would assume that §1 would\n
 "not work for §2. Tackling this by case distinction e.g. §3 is unecessary as\n"
 "in Leanic §4 is in §5. It is simply defined as §6"
 msgstr ""
-"**Tú**: Por lo visto, aquí se afirma que la aplicación §0 tiene una inversa por la izquierda. Así que doy sin más la aplicación §1 … salvo que para §2 eso no funciona.\n"
+"**Tú**: Por lo visto, aquí se afirma que la aplicación §0 tiene una inversa por la izquierda. Así que puedo dar sin más la aplicación §1… salvo que para §2 eso no funciona.\n"
 "\n"
 "**Glifo**: Podrías hacer una distinción de casos con §3. Pero en realidad no te hace ninguna falta. En leanés, §4 también está en §5.\n"
 "\n"
@@ -7846,7 +7846,7 @@ msgstr "**Glifo**: ¡Bien hecho! Creo que aquí ya casi hemos terminado…"
 #: Game/Levels/Mono/L10_Auxiliary.lean:26
 msgid "Be careful with interpreting goal as 'there is §0 or there is no §1'. Rewrite goal as §2"
 msgstr ""
-"**Tú**: ¿Es que hemos vuelto a Quantus? En cualquier caso: existe un §0 o no existe ningún §1; eso tiene toda la pinta de ser una tautología.\n"
+"**Tú**: ¿Es que hemos vuelto a Quantus? En cualquier caso, o existe un §0 o no existe ningún §1. Eso tiene toda la pinta de ser una tautología.\n"
 "\n"
 "**Glifo**: ¡Despacio! Tienes que tener en cuenta los paréntesis implícitos. Te lo escribo con más paréntesis:\n"
 "§2"
@@ -7878,13 +7878,13 @@ msgstr ""
 msgid "One could choose left inverse on the previous proven statement §0 by using §1.\n"
 "As proven statement has no name formulate statement again with §2 and prove it again."
 msgstr ""
-"**Tú**: Ahora mismo no veo cómo construir en concreto una inversa por la izquierda.\n"
+"**Tú**: Ahora mismo no veo cómo construir una inversa por la izquierda concreta.\n"
 "\n"
-"**Glifo**: Acuérdate del enunciado que acabamos de demostrar: §0 Si lo tuvieras a mano, seguramente podrías elegir con §1 la inversa por la izquierda que buscas. Lo malo es que ese enunciado no tiene nombre. Quizá puedas enunciarlo otra vez tú mismo con §2 y volver a demostrarlo."
+"**Glifo**: Acuérdate del enunciado que acabamos de demostrar: §0. Si lo tuvieras a mano, seguramente podrías elegir con §1 la inversa por la izquierda que buscas. Lo malo es que ese enunciado no tiene nombre. Quizá puedas enunciarlo otra vez tú mismo con §2 y volver a demostrarlo."
 
 #: Game/Levels/Mono/L11_InjHasLeftInv.lean:84
 msgid "Remember proof"
-msgstr "**Glifo**: Eso ya lo habíamos demostrado también… pero se me había olvidado guardarlo. ¿Te acuerdas de la demostración?"
+msgstr "**Glifo**: Eso lo hemos demostrado ya también… pero se me olvidó guardarlo. ¿Te acuerdas de la demostración?"
 
 #: Game/Levels/Mono/L11_InjHasLeftInv.lean:100
 msgid "Conclusion Mono L11"
@@ -7902,11 +7902,11 @@ msgid "Intro Mono"
 msgstr ""
 "En el siguiente planeta hay otra vez dos rascacielos, uno junto al otro. De nuevo, uno es estrecho y alto, y el otro algo más ancho y más bajo. Y de nuevo están conectados entre sí por un sistema de tubos: por lo visto, también aquí hay algún tipo de sistema de cápsulas de transporte. Tras la experiencia en Epo, esta vez os dirigís directamente al edificio más bajo y aterrizáis en el tejado.\n"
 "\n"
-"**Bedel**: ¡Que no, que no! ¿No habéis visto a todo el mundo haciéndoos señas? Esto de aquí no es más que el edificio donde dormimos. Durante el día siempre estamos allí enfrente, en la torre de oficinas. Pero bueno, ya estáis aquí. ¡Antes de nada, bienvenidos!\n"
+"**Bedel**: ¡No, no! ¿No habéis visto a todo el mundo haciéndoos señas? Esto de aquí no es más que el edificio donde dormimos. Durante el día siempre estamos allí enfrente, en la torre de oficinas. Pero bueno, ya que estáis aquí, ¡bienvenidos!\n"
 "\n"
 "Cada uno de vosotros le estrecha una de sus cuatro manos.\n"
 "\n"
-"**Bedel**: Al menos así tengo la ocasión de presentaros ahora mismo nuestro singular sistema de transporte local. Venís de Epo, ¿verdad? De allí se oyen historias terribles. Cada dos días tienen un accidente. Es que no hay manera de que ordenen sus tubos. ¡Nosotros llevamos años sin un solo accidente!\n"
+"**Bedel**: Al menos así tengo la ocasión de presentaros nuestro singular sistema de transporte local. Venís de Epo, ¿verdad? De allí se oyen historias terribles. Cada dos días tienen un accidente. Es que no hay manera de que ordenen sus tubos. ¡Nosotros llevamos años sin un solo accidente!\n"
 "\n"
 "Bajáis cuatro plantas. Allí os asignan de nuevo una cápsula a cada uno, y os deslizáis sin hacer ruido cuesta arriba hasta la torre de oficinas. Cómo funciona la propulsión sigue siendo un misterio.\n"
 "\n"
