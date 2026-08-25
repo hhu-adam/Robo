@@ -7961,7 +7961,7 @@ msgstr "**Glifo**: Para demostrar una inclusión, coges un elemento del lado izq
 #. §1: `simp`
 #: Game/Levels/Samarkand/L01_ImagePreimage.lean:75
 msgid "Transform §0 by using §1"
-msgstr "**Glifo**: Para transformar la hipótesis §0 en una expresión más elemental, podrías aplicar §1."
+msgstr "**Glifo**: Para transformar la hipótesis §0 en una expresión más elemental, podrías usar §1."
 
 #: Game/Levels/Samarkand/L01_ImagePreimage.lean:87
 msgid "Conclusion Samarkand L01"
@@ -7987,10 +7987,10 @@ msgid "Can not use §0 instead of §1.\n"
 "§5\n"
 ".You can express §6 by §7 but not vica versa"
 msgstr ""
-"**Tú**: ¡Ajá! ¿O sea, que puedo escribir simplemente §0 si no me gusta esta notación de cagaditas de mosca con §1?\n"
+"**Tú**: ¡Ajá! ¿O sea que puedo escribir simplemente §0 si no me gusta esta notación §1?\n"
 "\n"
 "**Glifo**: No, fíjate mejor. Aquí §2 es una aplicación.\n"
-"Es, naturalmente, justo la aplicación que manda un subconjunto de §3 a la correspondiente imagen en §4, es decir,\n"
+"Es, naturalmente, la aplicación que manda un subconjunto de §3 a su imagen correspondiente en §4, es decir,\n"
 "§5"
 
 #. §0: `funext`
@@ -8014,7 +8014,7 @@ msgstr "**Glifo**: Seguro que esto se puede simplificar fácilmente…"
 
 #: Game/Levels/Samarkand/L02_ImageMap.lean:73
 msgid "Conclusions Samarkand L02"
-msgstr "**Arapuka**: Bonito, bonito."
+msgstr "**Arapuka**: Muy bonito."
 
 #. §0: `range f`
 #. §1: `f`
@@ -8053,7 +8053,7 @@ msgstr "**Glifo**: ¿No hay que demostrar otra vez una igualdad de conjuntos? Pu
 #: Game/Levels/Samarkand/L03_SurjectiveRange.lean:98
 msgid "Conclusion Samarkand L03"
 msgstr ""
-"**Arapuka**: También bonito.\n"
+"**Arapuka**: Muy bonito también.\n"
 "\n"
 "**Glifo**: Por cierto, ¿has pintado tú todo este planeta?\n"
 "\n"
@@ -8081,7 +8081,7 @@ msgstr ""
 
 #: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:57
 msgid "Conclusion Samarkand L04"
-msgstr "**Arapuka**: ¡Sois de verdad una gran ayuda!"
+msgstr "**Arapuka**: ¡Sois una gran ayuda!"
 
 #: Game/Levels/Samarkand/L05_InjectiveFibre.lean:13
 msgid "Intro Samarkand L05"
@@ -8115,7 +8115,7 @@ msgid "Explain that §0 is not empty iff §1 has pre-image. Remind of §2 that c
 msgstr ""
 "**Tú**: Esto debe de querer decir que la fibra sobre §0 es no vacía si y solo si §1 tiene una preimagen. Otra vez bastante obvio.\n"
 "\n"
-"**Glifo**: Sí, salvo por la notación. Pero por suerte ya hemos demostrado §2. Para aplicarlo, solo tienes que desplegar el signo de desigualdad, por ejemplo simplemente con §3."
+"**Glifo**: Sí, salvo por la notación. Pero por suerte ya hemos demostrado §2. Para aplicarlo, solo tienes que desplegar el signo de desigualdad: §3."
 
 #: Game/Levels/Samarkand/L06_PreimageNonempty.lean:36
 msgid "Conclusion Samarkand L06"
@@ -8158,7 +8158,7 @@ msgstr ""
 "\n"
 "**Glifo**: Ohh…\n"
 "\n"
-"**Tú**: ¿Y cómo sabes adónde tienes que ir exactamente después, para que el patrón encaje?\n"
+"**Tú**: ¿Y cómo sabes adónde tienes que ir después exactamente para que el patrón encaje?\n"
 "\n"
 "**Arapuka**: ¡Ah!\n"
 "\n"
@@ -8188,7 +8188,7 @@ msgstr ""
 "\n"
 "**Tú**: ¿Y qué haces aquí, tan sola?\n"
 "\n"
-"**Arapuka**: Estoy trabajando en una gran obra de arte. Me quedo aquí tumbada hasta que mi caparazón ventral haya adoptado el motivo del suelo. Luego camino hasta el punto donde todavía falta este trozo de motivo y me tumbo allí hasta haber transferido el motivo a la superficie blanca del planeta. La cosa lleva su tiempo. Así que un poco de compañía me viene de maravilla.\n"
+"**Arapuka**: Estoy trabajando en una gran obra de arte. Me quedo aquí tumbada hasta que mi caparazón haya adoptado el motivo del suelo. Luego camino hasta el punto donde todavía falta este trozo de motivo y me tumbo allí hasta haber transferido el motivo a la superficie blanca del planeta. La cosa lleva su tiempo. Así que un poco de compañía me viene de maravilla.\n"
 "\n"
 "**Tú**: Estupendo."
 
@@ -8220,7 +8220,7 @@ msgstr "**Isósofo**: … e ir al grano."
 #: Game/Levels/Iso/L02_Inverse.lean:35
 msgid "§0 stroy"
 msgstr ""
-"**Tú**: Una aplicación es biyectiva si y solo si existe una aplicación inversa a ella. En esencia, eso es lo que ya demostramos en Epo y en Mono. ¿Te habías guardado los enunciados en la memoria?\n"
+"**Tú**: Una aplicación es biyectiva si y solo si tiene inversa. En esencia, eso es lo que ya demostramos en Epo y en Mono. ¿Te guardaste los enunciados en la memoria?\n"
 "\n"
 "**Glifo**: Sí, pero me da la impresión de que, si los sacamos aquí, más de uno va a arquear las cejas. Mejor pensemos a fondo y recordemos cómo se hacía."
 
@@ -8281,7 +8281,7 @@ msgstr "**Glifo**: La inyectividad es la parte más difícil. Empieza con §0."
 msgid "Try to state that if §0 then also §1.\n"
 "When §2 available use §3."
 msgstr ""
-"**Tú**: Si los argumentos §0 son iguales, entonces también §1 – ¿cómo se decía eso?\n"
+"**Tú**: Si los argumentos §0 son iguales, entonces también §1. ¿Cómo se decía eso?\n"
 "\n"
 "**Glifo**: Pues si tienes §2, puedes usar simplemente §3."
 
@@ -8319,7 +8319,7 @@ msgstr ""
 "\n"
 "**Isósofo**: ¡Buenos días! ¡No es de muy buena educación aterrizar aquí, en medio de la multitud! ¡Si habíamos marcado a propósito una zona de aterrizaje allí enfrente!\n"
 "\n"
-"**Glifo**: ¡Perdón! No había reconocido los símbolos.\n"
+"**Glifo**: ¡Perdón! No he reconocido los símbolos.\n"
 "\n"
 "**Isósofo**: ¡Menos mal que no ha pasado nada! Ya habíamos oído que erais un poco distintos. Aun así, os vamos a enseñar nuestro genial sistema de transporte: ¡el sistema de transporte local más avanzado de todo el Formaloverso!\n"
 "\n"
