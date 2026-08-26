@@ -4488,7 +4488,7 @@ msgid "§0 and §1 alone don't help here. §2 will need some help. Try to untang
 msgstr ""
 "**Tú** (*a Glifo*): Aquí no avanzo ni con §0 ni con §1.\n"
 "\n"
-"**Glifo**: Creo que solo tienes que darle un empujoncito a §2. Lo mejor es que primero resuelvas las dos implicaciones con §3, como normalemente."
+"**Glifo**: Creo que solo tienes que darle un empujoncito a §2. Lo mejor es que primero resuelvas las dos implicaciones con §3, como normalmente."
 
 #. §0: `«{hx}»`
 #. §1: `push Not at «{hx}»`
