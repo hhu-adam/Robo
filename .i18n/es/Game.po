@@ -2153,7 +2153,7 @@ msgstr ""
 #: Game/Levels/Logo/L01_Tauto.lean:21
 msgid "Intro Logo L01"
 msgstr ""
-"Acabáis de aterrizar en el planeta de la reina Loguinda. Ella va directa al grano:\n"
+"Acabáis de aterrizar en el planeta de la reina Loguinda. Esta va directa al grano:\n"
 "\n"
 "**Loguinda**: Honorables seres de mundos desconocidos, ¡bienvenidos al Formaloverso! Permitidme una sola pregunta. ¿Por qué se cumple…?\n"
 "\n"
@@ -2170,7 +2170,7 @@ msgstr ""
 msgid "Explain that §0 introduces statements §1, §2 und §3 as\n"
 "propositions. The symbol §4 is equivalent to the implication symbol §5. Try §6."
 msgstr ""
-"**Glifo**: Eso es muy fácil. Con §0 quiere decir: §1, §2 y §3 son enunciados cualesquiera (*propositions*). Y con §4 se refiere a §5, es decir, \"implica\". Los demás símbolos los conoces, ¿verdad?\n"
+"**Glifo**: Eso es muy fácil. Con §0 quiere decir: §1, §2 y §3 son enunciados cualesquiera (*proposiciones*). Y con §4 se refiere a §5, es decir, \"implica\". Los demás símbolos los conoces, ¿verdad?\n"
 "\n"
 "**Tú**: Ehmm, sí. Pero aun así tengo que pensármelo un momento.\n"
 "\n"
@@ -2282,7 +2282,7 @@ msgstr "**Súbdito**: Vaya, qué rápido. ¡Genial! Muchas gracias."
 
 #: Game/Levels/Logo/L05_True.lean:14
 msgid "Intro Logo L05"
-msgstr "El siguiente súbdito de la cola es un granuja."
+msgstr "El siguiente súbdito de la cola parece un pequeño granuja."
 
 #. §0: `True`
 #. §1: `decide`
@@ -2308,7 +2308,7 @@ msgstr ""
 
 #: Game/Levels/Logo/L06_Not.lean:14
 msgid "Intro Logo L06"
-msgstr "El granuja ha traído también a su hermana."
+msgstr "El granujilla ha traído también a su hermana."
 
 #. §0: `¬`
 #. §1: `(A : Prop)`
@@ -2414,12 +2414,12 @@ msgstr ""
 #. §3: `¬(· = ·)`
 #: Game/Levels/Logo/L09_Contradiction.lean:36
 msgid "Conclusion Logo L09: §0 is negation of §1. §2 has to be read as §3"
-msgstr "**Glifo**: Bien hecho. En esta pregunta también es un poco más evidente en qué consiste la contradicción: la hipótesis §0 es exactamente la negación de §1. Siempre hay que leer §2 como §3."
+msgstr "**Glifo**: Bien hecho. En esta pregunta la contradicción es un poco más evidente: la hipótesis §0 es exactamente la negación de §1. Siempre hay que leer §2 como §3."
 
 #: Game/Levels/Logo/L10_And.lean:15
 msgid "Intro Logo L10"
 msgstr ""
-"El siguiente formalósofo de la cola ya viene con su pregunta preparada.\n"
+"El siguiente formalósofo de la cola viene con su pregunta preparada.\n"
 "Nos la presenta, se sienta y se pone a hacer ganchillo."
 
 #. §0: `«{A}»`
@@ -2489,7 +2489,7 @@ msgstr ""
 "\n"
 "**Tú**: Un momento, ¿y cómo escribo *eso* aquí?\n"
 "\n"
-"**Glifo**: Los dos paréntesis angulares los escribes como §1 y §2, o los dos a la vez como §3. Y §5 lo escribes simplemente como §4. Aunque también puedes inventarte otros nombres para §5 y §6, por ejemplo §7."
+"**Glifo**: Los dos paréntesis angulares los escribes con §1 y §2, o los dos a la vez con §3. §5 lo escribes así simplemente: §4. Aunque también puedes inventarte otros nombres para §5 y §6, por ejemplo §7."
 
 #. §0: `obtain`
 #: Game/Levels/Logo/L11_And.lean:35
@@ -2527,11 +2527,11 @@ msgstr ""
 #. §0: `right`
 #: Game/Levels/Logo/L12_Or.lean:33
 msgid "Try §0 tactic"
-msgstr "**Glifo**: No sabía yo que confundieras la izquierda con la derecha. Vuelve a intentarlo."
+msgstr "**Glifo**: Tu otra izquierda…"
 
 #: Game/Levels/Logo/L12_Or.lean:43
 msgid "Conclusion Logo L12"
-msgstr "También este formalósofo se marcha satisfecho."
+msgstr "Otro formalósofo que se marcha satisfecho."
 
 #: Game/Levels/Logo/L13_Or.lean:14
 msgid "Intro Logo L13"
@@ -2551,7 +2551,7 @@ msgstr ""
 "\n"
 "**Tú**: Yo empiezo a no tragarme todo este circo: primero un \"y\" en el objetivo, luego \"y\" en la hipótesis, después \"o\" en el objetivo y ahora \"o\" en la hipótesis. ¡Estos se han puesto de acuerdo!\n"
 "\n"
-"**Glifo**: Déjales que se diviertan. Enseguida terminamos aquí y podremos seguir el vuelo hacia un planeta más interesante.\n"
+"**Glifo**: Déjales que se diviertan. Enseguida terminamos aquí y podremos seguir hacia un planeta más interesante.\n"
 "\n"
 "**Tú**: Entonces, ¿otra vez §1?\n"
 "\n"
@@ -2710,7 +2710,7 @@ msgid "Conclusion Logo L14"
 msgstr ""
 "**Glifo**: ¡Bravo! ¡Y ahora salgamos pitando de aquí antes de que se forme otra cola!\n"
 "\n"
-"La reina Loguinda se ha quedado dormida entretanto, y os escabullís sin hacer ruido."
+"La reina Loguinda se ha quedado dormida, os escabullís sin hacer ruido."
 
 #: Game/Levels/Logo.lean:21
 msgid "Logo"
@@ -2727,14 +2727,14 @@ msgstr ""
 "Todos habitables, y con hasta siete puestas de sol al día incluidas.\n"
 "Solo que todos ellos están habitados por formalósofos, unos seres extraños con extravagantes obsesiones matemáticas.\n"
 "Y, para tu desgracia, se ha corrido la voz de que en tu universo anterior te dedicabas a las matemáticas.\n"
-"Aquí no vas a encontrar la paz hasta que aprendas a saciar su incesante sed de conocimiento.\n"
+"Aquí no vas a encontrar la paz hasta que aprendas a saciar su insaciable sed de conocimiento.\n"
 "\n"
 "Solo hay dos dificultades:\n"
-"la primera, que los formalósofos, según todos los indicios, carecen por completo de una comprensión matemática profunda; y la segunda, que sobre matemáticas se comunican exclusivamente en un dialecto que te resulta ajeno y al que llaman leanés [liːnés].\n"
+"la primera, que los formalósofos, según todos los indicios, carecen por completo de una comprensión matemática profunda; y la segunda, que sobre matemáticas se comunican exclusivamente en un dialecto que te resulta ajeno y al que llaman leanés (pronunciado \"linés\").\n"
 "\n"
 "Por suerte, Glifo ha cambiado de universo contigo.\n"
 "Glifo es tu pequeño duende inteligente.\n"
-"La verdad es que Glifo tampoco es la lumbrera matemática que habrías deseado en esta situación, pero parece que aprendió leanés en alguna parte.\n"
+"La verdad es que Glifo tampoco es el genio matemático que habrías deseado en esta situación, pero parece que aprendió leanés en alguna parte.\n"
 "Y eso vale su peso en oro."
 
 #: Game/Levels/Implis/L01_Intro.lean:14
