@@ -34,7 +34,7 @@ msgid "A mapping §0 is injectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
-"Una aplicación §0 es inyectiva sii (si y solo si) se cumple:\n"
+"Una aplicación §0 es inyectiva si y solo si se cumple:\n"
 "\n"
 "§1"
 
@@ -47,13 +47,13 @@ msgid "A mapping §0 is surjectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
-"Una aplicación §0 es sobreyectiva sii se cumple:\n"
+"Una aplicación §0 es sobreyectiva si y solo si se cumple:\n"
 "\n"
 "§1"
 
 #: Game/Doc/Definition.lean:27
 msgid "A mapping ist bijectiv, if it is injektiv and surjektiv."
-msgstr "Una aplicación es biyectiva sii es inyectiva y sobreyectiva."
+msgstr "Una aplicación es biyectiva si y solo si es inyectiva y sobreyectiva."
 
 #. §0: `f`
 #. §1: ```
