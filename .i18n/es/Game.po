@@ -7001,9 +7001,9 @@ msgid "Explain §0 as mapping from §1 to §2:\n"
 msgstr ""
 "**Tú**: Parece que §0 es una aplicación de §1 en §2.\n"
 "\n"
-"**Glifo**: Sí, exacto. Y §3 es la notación para §4. Pero en leanés se omiten los paréntesis. Si quieres escribirlos, es imprescindible que pongas espacios alrededor de los paréntesis, así: §5.\n"
+"**Glifo**: Sí, exacto. Y §3 es la notación para §4. Pero en leanés se omiten los paréntesis. Si quieres escribirlos, es imprescindible que vayan precedidos de un espacio, así: §5.\n"
 "\n"
-"**Tú**: Vale, tomo nota. Pero como la aplicación aquí solo toma valores en ℕ, en realidad no hay nada que demostrar.\n"
+"**Tú**: Vale, tomo nota. Pero como esta aplicación solo toma valores en ℕ, en realidad no hay nada que demostrar.\n"
 
 #. §0: `→`
 #: Game/Levels/Vieta/L01_FunctionNotation.lean:38
@@ -7043,9 +7043,9 @@ msgstr ""
 "\n"
 "**Tú**: ¿Y qué tiene de anónima?\n"
 "\n"
-"**Glifo**: Pues que, de entrada, no tiene nombre. Solo mediante §2 recibe un nombre.\n"
+"**Glifo**: Pues, para empezar, no tiene nombre. Solo mediante §2 recibe un nombre.\n"
 "\n"
-"**Tú**: Ah, ya. Entonces, en total tenemos la siguiente aplicación, ¿no?\n"
+"**Tú**: Ah, ya. Entonces, realmente tenemos la siguiente aplicación, ¿no?\n"
 "\n"
 "§3\n"
 "\n"
@@ -7053,7 +7053,7 @@ msgstr ""
 "\n"
 "**Glifo**: Sí.\n"
 "\n"
-"**Tú**: ¿Y cómo lo hago aquí?\n"
+"**Tú**: ¿Y cómo lo hago?\n"
 "\n"
 "**Glifo**: Lean puede ver a través de la mayoría de las reglas de correspondencia, así que aquí debería bastar con §5. Como alternativa, puedes insertar explícitamente la definición con §6.\n"
 
@@ -7086,11 +7086,11 @@ msgstr "**Tú**: ¿A qué se simplificará esto?"
 #: Game/Levels/Vieta/L04_Let.lean:20
 msgid "Intro Vieta L04"
 msgstr ""
-"**Vieta**: Ahora tenemos que apartarnos un poco hacia aquí.\n"
+"**Vieta**: Ahora tenemos que apartarnos un poco hacia allá.\n"
 "\n"
-"Os empuja con cuidado unos metros más allá. Un momento después, tres flechas caen en el sitio donde estabais hace un instante y se quedan clavadas en el suelo.\n"
+"Os empuja con cuidado unos metros más lejos. Un momento después, tres flechas caen en el sitio donde estabais hace un instante y se quedan clavadas en el suelo.\n"
 "\n"
-"**Vieta**: Tranquilos, que me conozco bien este sitio. Tomad, aún tengo más para vosotros."
+"**Vieta**: Tranquilos, que me conozco bien este sitio. Tomad, aún tengo problemas más para vosotros."
 
 #. §0: `g ∘ «{f}»`
 #. §1: `\\comp`
@@ -7099,11 +7099,11 @@ msgstr ""
 #: Game/Levels/Vieta/L04_Let.lean:38
 msgid "Composition §0 can be written with §1. Try §2 or §3"
 msgstr ""
-"**Tú**: ¿Es §0 una composición de aplicaciones?\n"
+"**Tú**: ¿§0 es una composición de aplicaciones?\n"
 "\n"
-"**Glifo**: ¡Exacto! Eso se escribe con §1.\n"
+"**Glifo**: ¡Exacto! Se escribe con §1.\n"
 "\n"
-"**Tú**: ¿Y aquí podría entonces volver a definir una aplicación con §2?\n"
+"**Tú**: Entonces, ¿aquí podría volver a definir una aplicación con §2?\n"
 "\n"
 "**Glifo**: Sí. O podrías escribir directamente §3."
 
@@ -7118,7 +7118,7 @@ msgstr "**Glifo**: Ahora puedes usarla con §0."
 #. §3: `rw [comp_apply]`
 #: Game/Levels/Vieta/L04_Let.lean:49
 msgid "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3"
-msgstr "**Glifo**: §0 es, por definición, §1. §2 también conocería este lema, pero aquí hazlo directamente con §3."
+msgstr "**Glifo**: §0 es, por definición, §1. §2 también conocería este lema, pero aquí hazlo mejor con §3."
 
 #. §0: `ring`
 #. §1: `«{f}»`
@@ -7127,7 +7127,7 @@ msgstr "**Glifo**: §0 es, por definición, §1. §2 también conocería este le
 msgid "Try §0, as it sees through definitions §1 and §2"
 msgstr ""
 "**Glifo**: §0 ve a través de definiciones locales como §1 y §2.\n"
-"Así que puedes usar la táctica directamente."
+"Así que puedes usar esa táctica directamente."
 
 #. §0: `(g ∘ «{f}») x`
 #. §1: `g («{f}» x)`
@@ -7135,7 +7135,7 @@ msgstr ""
 #. §3: `rw [comp_apply]`
 #: Game/Levels/Vieta/L04_Let.lean:63
 msgid "[Hint bpwn] Explain §0 defined as §1. Try §2 | §3"
-msgstr "**Glifo**: §0 es por definición §1. §2 también conocería este lema, pero aquí hazlo directamente con §3."
+msgstr "**Glifo**: §0 es por definición §1. §2 también conocería este lema, pero aquí hazlo mejor con §3."
 
 #. §0: `ring`
 #. §1: `«{f}»`
@@ -7157,7 +7157,7 @@ msgstr ""
 #: Game/Levels/Vieta/L05_Funext.lean:31
 msgid "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4"
 msgstr ""
-"**Tú**: Pero si, por definición, dos aplicaciones son iguales cuando al aplicarlas a cada elemento dan el mismo valor …\n"
+"**Tú**: Pero si, por definición, dos aplicaciones son iguales cuando al aplicarlas a cada elemento devuelven el mismo valor…\n"
 "\n"
 "**Glifo**: Para ese principio tengo guardada la táctica §0. Con §1 eliges un §2 arbitrario y cambias el objetivo de §3 a §4."
 
@@ -7171,9 +7171,9 @@ msgid "Intro Vieta L06"
 msgstr ""
 "**Vieta**: Deberíamos caminar otro trecho. ¡Por aquí!\n"
 "\n"
-"Se aleja a toda prisa, y vosotros lo seguís tan rápido como podéis. Cuando llegáis al lugar donde por fin se detiene, estás completamente sin resuello. Vieta se ríe.\n"
+"Se aleja a toda prisa, y vosotros lo seguís tan rápido como podéis. Cuando llegas al lugar donde finalmente se detiene, estás sin aliento por completo. Vieta se ríe.\n"
 "\n"
-"**Vieta**: ¡Pura precaución! Tengo que cuidar bien de mis visitantes. ¡No es que reciba tantas visitas!\n"
+"**Vieta**: ¡Pura precaución! Tengo que cuidar bien de mis visitantes. ¡No es que reciba muchas visitas!\n"
 "\n"
 "Os tiende la siguiente hoja."
 
@@ -7183,9 +7183,9 @@ msgid "Show swappability if mapping by using §0"
 msgstr ""
 "**Glifo**: Ahora tenemos dos aplicaciones, una de ellas definida a trozos.\n"
 "\n"
-"**Tú**: O sea, ¿tengo que demostrar que las dos conmutan?\n"
+"**Tú**: O sea, ¿tengo que demostrar que conmutan?\n"
 "\n"
-"**Glifo**: Exacto. Lo mejor es que elijas con §0 un elemento arbitrario y luego lo demuestres para ese elemento."
+"**Glifo**: Exacto. Lo mejor es que elijas con §0 un elemento arbitrario y lo demuestres para ese elemento."
 
 #. §0: `(g ∘ f) «{x}»`
 #. §1: `g (f «{x}»)`
@@ -7193,9 +7193,9 @@ msgstr ""
 #: Game/Levels/Vieta/L06_Piecewise.lean:49
 msgid "Rewrite §0 to §1 via §2"
 msgstr ""
-"**Tú**: Ah, ¿y ahora puedo empezar reescribiendo §0 como §1?\n"
+"**Tú**: Ah, ¿puedo empezar reescribiendo §0 como §1?\n"
 "\n"
-"**Glifo**: Con §2 funciona."
+"**Glifo**: Con §2 te vale."
 
 #. §0: `by_cases h : 0 ≤ «{x}»`
 #. §1: `0 ≤ «{x}»`
@@ -7213,7 +7213,7 @@ msgstr ""
 "\n"
 "**Tú**: ¿Con eso consigo los casos §1 y §2?\n"
 "\n"
-"**Glifo**: ¡Exacto! O, más precisamente, §3 y §4. No es exactamente lo mismo, y se podría cambiar entre §6 y §7 con el lema §5."
+"**Glifo**: ¡Exacto! O, más precisamente, §3 y §4. No es exactamente lo mismo. Puedes cambiar entre §6 y §7 con el lema §5."
 
 #. §0: `simp [f, g]`
 #: Game/Levels/Vieta/L06_Piecewise.lean:70
@@ -7236,7 +7236,7 @@ msgstr "**Glifo**: Otra vez §0."
 #. §0: `if_pos`
 #: Game/Levels/Vieta/L06_Piecewise.lean:84
 msgid "Remind of negation for §0"
-msgstr "**Tú**: Ah, y la negación de §0 seguro que es …"
+msgstr "**Tú**: Ah, y la negación de §0 seguro que es…"
 
 #. §0: `if_neg`
 #: Game/Levels/Vieta/L06_Piecewise.lean:86
@@ -7262,9 +7262,9 @@ msgid "Try §0. Explain, given §1 then §2 is the same number interpreted as a 
 msgstr ""
 "**Glifo**: Aquí probablemente necesites §0: si §1 es un número entero, §2 es el mismo número, pero interpretado como número natural.\n"
 "\n"
-"**Tú**: ¿Cómo? ¿¿Y entonces qué es, por ejemplo, §3??\n"
+"**Tú**: ¿Cómo? ¿Y entonces qué es, por ejemplo, §3?\n"
 "\n"
-"**Glifo**: Ni idea. Lo que quería decir, claro está, es: *si §4*, entonces §5 sigue siendo \"el mismo\" número."
+"**Glifo**: Ni idea. Lo que quería decir es: *si §4*, entonces §5 sigue siendo \"el mismo\" número, obviamente."
 
 #. §0: `if 0 ≤ n then ... else ...`
 #: Game/Levels/Vieta/L07_Extend.lean:36
@@ -7287,7 +7287,7 @@ msgstr "Los ruidos de batalla se acercan. Vieta os da dos hojas más."
 #. §3: `apply congr_arg`
 #: Game/Levels/Vieta/L08_CongrArg.lean:24
 msgid "Try §0. If §1, then §2 when using §3"
-msgstr "**Glifo**: Oh, esto es un caso para §0. Si ya sabes que §1, obtienes §2 con §3."
+msgstr "**Glifo**: Ah, esta es una misión para §0. Si ya sabes que §1, obtienes §2 con §3."
 
 #. §0: `congr_fun`
 #. §1: `h : f = g`
@@ -7299,20 +7299,20 @@ msgstr "**Glifo**: Oh, esto es un caso para §0. Si ya sabes que §1, obtienes �
 msgid "Try §0. Given assumption §1 rewrite it via §2 to §3.\n"
 "§4 not applicable to more complex §5"
 msgstr ""
-"**Glifo**: Y esto es un caso para §0. Si tienes §1 como hipótesis, puedes reescribirla con §2 como §3.\n"
+"**Glifo**: ¡Esta es una misión para §0! Si tienes §1 como hipótesis, puedes reescribirla con §2 como §3.\n"
 "\n"
-"**Tú**: Pero ¿no sería más sencillo usar aquí §4?\n"
+"**Tú**: Pero ¿no sería más sencillo usar §4?\n"
 "\n"
-"**Glifo**: Ya, bueno, en este ejemplo tan simple, sí. Pero si §5 es una expresión más complicada que aún no aparece exactamente así en el objetivo, entonces no. Pruébalo tal como te acabo de decir."
+"**Glifo**: Ya, bueno, en este ejemplo tan simple sí. Pero si §5 es una expresión más complicada y que no aparece literalmente en el objetivo, entonces no. ¡Prueba lo que te he dicho antes!"
 
 #: Game/Levels/Vieta/L10_Surjective.lean:22
 msgid "Intro Vieta L10"
 msgstr ""
-"Los ruidos de batalla suenan ya peligrosamente cerca. Oís cañonazos con toda claridad. Y en ese momento pasa otra flecha silbando a vuestro lado.\n"
+"Los ruidos de batalla suenan peligrosamente cerca. Oís cañonazos con toda claridad. Pasa otra flecha silbando a vuestro lado.\n"
 "\n"
-"**Tú**: Esto… quizá deberíamos …\n"
+"**Tú**: Esto… quizá deberíamos…\n"
 "\n"
-"**Vieta**: Tranquilos, todavía tenemos tiempo para un problema."
+"**Vieta**: Tranquilos, todavía hay tiempo para un problema más."
 
 #. §0: `succ`
 #. §1: `succ : ℕ → ℕ`
@@ -7321,13 +7321,13 @@ msgstr ""
 #: Game/Levels/Vieta/L10_Surjective.lean:41
 msgid "Explain §0 as mapping §1 i.e. §2. Explain goal of showing §3 surjective."
 msgstr ""
-"**Tú**: ¿Y qué es §0 aquí?\n"
+"**Tú**: ¿Qué es §0?\n"
 "\n"
-"**Glifo**: §1 es la aplicación que envía cada número natural a su *successor*, es decir, a su sucesor. En otras palabras: §2.\n"
+"**Glifo**: §1 es la aplicación que envía cada número natural a su sucesor (*successor*). En otras palabras: §2.\n"
 "\n"
-"**Tú**: Ah, ya. Y de la aplicación §3, si lo leo bien, tengo que demostrar en esencia que es sobreyectiva.\n"
+"**Tú**: Ah, vale. Así que, si lo estoy entendiendo bien, lo que tengo que demostrar es que §3 es sobreyectiva.\n"
 "\n"
-"**Glifo**: ¡Eso parece!"
+"**Glifo**: Eso parece."
 
 #. §0: `ℕ`
 #: Game/Levels/Vieta/L10_Surjective.lean:51
@@ -7335,20 +7335,20 @@ msgid "Remind of induction as mapping goes to §0"
 msgstr ""
 "**Glifo**: ¡Mira, la aplicación va a §0!\n"
 "\n"
-"Enarcas las cejas.\n"
+"Subes las cejas.\n"
 "\n"
-"**Glifo**: Podría tener algo que ver con la inducción. Yo solo lo digo."
+"**Glifo**: Podría tener algo que ver con la inducción. Solo digo."
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
 #. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
 #: Game/Levels/Vieta/L10_Surjective.lean:64
 msgid "Try §0 to rewrite §1 to §2"
-msgstr "**Glifo**: ¿Quizá quieras reescribir con §0 la hipótesis §1 como §2?"
+msgstr "**Glifo**: ¿Quizá podrías reescribir con §0 la hipótesis §1 como §2?"
 
 #: Game/Levels/Vieta/L10_Surjective.lean:77
 msgid "Conclusion Vieta L10"
-msgstr "**Vieta**: ¡Bravo! Pero ahora salgamos pitando de aquí. Por aquí. Os llevo de vuelta a la nave."
+msgstr "**Vieta**: ¡Bravo! Ahora salgamos de aquí. Por aquí. Os llevo de vuelta a la nave."
 
 #: Game/Levels/Vieta.lean:13
 msgid "Vieta"
@@ -7363,13 +7363,13 @@ msgstr ""
 "\n"
 "**Tú**: ¡A cubierto!\n"
 "\n"
-"Os tiráis al suelo, cuerpo a tierra. Estáis ya a punto de volver reptando a la nave cuando, de detrás de un árbol seco, sale un hombre que saluda amistosamente con la mano. Así que reptáis hacia él.\n"
+"Os tiráis al suelo, cuerpo a tierra. Estáis a punto de volver reptando a la nave cuando, de detrás de un árbol seco, sale un hombre que saluda amistosamente con la mano. Así que reptáis hacia él.\n"
 "\n"
 "**Vieta**: ¡No seáis tan tímidos, damas y caballeros! Mi nombre es Vieta. ¡Bienvenidos! Levantaos tranquilos, que no hay moros en la costa.\n"
 "\n"
 "Os levantáis con cuidado, y justo entonces otra flecha pasa silbando muy cerca de vosotros.\n"
 "\n"
-"**Tú**: ¿Cómo puede usted aguantar aquí?\n"
+"**Tú**: ¿Cómo puede usted vivir aquí?\n"
 "\n"
 "**Vieta**: Bueno, he aprendido a estar siempre en el lugar adecuado en el momento oportuno. No os preocupéis."
 
