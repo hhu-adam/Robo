@@ -20,7 +20,7 @@ jobs:
         run: zip game.zip * .lake/ .i18n/ -r
 
       - name: upload compressed game folder
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: build-for-server-import
           path: |
