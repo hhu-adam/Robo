@@ -36,7 +36,7 @@ Conclusion "[Game] Conclusion"
 
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "de" "en" "zh" "es"
+Languages "de" "en" "es" "zh"
 CaptionShort "[Game] CaptionShort"
 CaptionLong  "[Game] CaptionLong"
 Prerequisites "[Game] Prerequisites"
