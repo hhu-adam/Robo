@@ -101,7 +101,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
       Unterscheiden wir die Fälle also mit `obtain {h} | {h} := {h}`
     "
     -/
-    Hint (hidden := true) "Observe `{h} : {n} = 0` seperatly. Prove by cases with `obtain {h} | {h} := {h}`"
+    Hint (hidden := true) "Observe `{h} : {n} = 0` separately. Prove by cases with `obtain {h} | {h} := {h}`"
     · assumption
     -- · Hint  "
     --  **Robo**: Der Pfeil `{h}` ist eine implizite Einbettung von `ℕ` in `ℝ`.

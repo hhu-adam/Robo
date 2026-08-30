@@ -26,7 +26,7 @@ Statement (A B C : Prop) (h : A ∧ (B ∧ C)) : B := by
     Und h₁ schreibst du einfach als `h\\1`. Aber du kannst dir auch einfach andere Namen
     für `h₁` und `h₂`, zum Beispiel `obtain ⟨hA, hBC⟩ := {h}`."
   -/
-  Hint "Deconstruct assumption by `obtain ⟨h₁, h₂⟩ := {h}`. The brackets can be written seperatly
+  Hint "Deconstruct assumption by `obtain ⟨h₁, h₂⟩ := {h}`. The brackets can be written separately
   as `\\<` and `\\>` or simultaneously as `\\<>`. The first assumption can be named `h\\1`. Other names
   than `h₁` und `h₂` can be chosen as well e.g. `obtain ⟨hA, hBC⟩ := {h}`"
   Branch

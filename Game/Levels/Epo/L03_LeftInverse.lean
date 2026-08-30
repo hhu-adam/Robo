@@ -22,7 +22,7 @@ Statement {A B : Type} {f : A -> B} {g : B -> A} :
   -/
   Hint "Goal says that `g` is right inverse of `f` iff `f` is left inverse of `g`.
   Try `Function.RightInverse`. It has to be written as `Function.RightInverse` instead of `RightInverse`
-  because `RightInverse` is ambigous in Leanic."
+  because `RightInverse` is ambiguous in Leanic."
   Branch
     unfold Function.RightInverse
     rfl

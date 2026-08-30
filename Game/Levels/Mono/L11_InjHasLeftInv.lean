@@ -24,7 +24,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     **Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung `Nonempty A` brauchen.
   "
   -/
-  Hint "Intorduce new prerequisite `Nonempty A`"
+  Hint "Introduce new prerequisite `Nonempty A`"
   /-
   Hint (hidden := true) "
       **Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.

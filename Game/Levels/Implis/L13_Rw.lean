@@ -40,7 +40,7 @@ Statement (A B C : Prop) : (A ∧ (¬¬C)) ∨ (¬¬B) ∧ C ↔ (A ∧ C) ∨ B
 
     **Du**: Ah, und `¬¬B` ist etwas anderes, also brauche ich das Lemma nochmals."
   -/
-  Hint "Only two of three `¬¬` are rewritten. `rw` only rewrites only first found occurance i.e. `¬¬C`.
+  Hint "Only two of three `¬¬` are rewritten. `rw` only rewrites only first found occurrence i.e. `¬¬C`.
   As `¬¬B` is considered to be something 'different' the lemma has to be applied again"
   rw [not_not]
 

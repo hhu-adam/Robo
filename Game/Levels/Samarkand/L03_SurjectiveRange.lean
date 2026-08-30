@@ -46,7 +46,7 @@ Statement {A B : Type} {f : A → B} : Surjective f ↔ range f = univ := by
   example : range f = f '' univ := by
     simp   -- (rfl fails)
   -/
-  -- Hint (hidden := true)  "**Robo**: Ich würde mal mit `consturctor` anfangen."
+  -- Hint (hidden := true)  "**Robo**: Ich würde mal mit `constructor` anfangen."
   Hint (hidden := true) "Try to start with `constructor`"
   Branch
     symm

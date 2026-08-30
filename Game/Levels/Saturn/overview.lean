@@ -28,8 +28,8 @@ example (A B :  MvPolynomial (Fin 4) ℝ) (hA : A = (X 0)*(X 3) - (X 1)*(X 2)) (
 
 /- Further ideas
 
-Introduce more interesting arithemetic in ℝ?
-Tactic `ring` does not handle devision (`/`) or inversion (`⁻¹`) well.
+Introduce more interesting arithmetic in ℝ?
+Tactic `ring` does not handle division (`/`) or inversion (`⁻¹`) well.
 Instead, would need to use `field_simp`, eg:
 -/
 open Real

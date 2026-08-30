@@ -74,7 +74,7 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
         Oder mit `suffices : {a} ∉ {f} {a}`!
         "
       -/
-      Hint "Remind that, assumpion `{h₁} : {a} ∈ {f} {a}` will be needed agian.
+      Hint "Remind that, assumpion `{h₁} : {a} ∈ {f} {a}` will be needed again.
       Try `have` or `suffices : {a} ∉ {f} {a}`"
     suffices : a ∉ f a
     · contradiction

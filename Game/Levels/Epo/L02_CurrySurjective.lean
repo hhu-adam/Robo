@@ -18,7 +18,7 @@ Statement {A B : Type} (f : ℕ → A → B) : ¬ Surjective f ↔ ∃ g : A →
 
   **Robo**: Du liest das als `ℕ → (A → B)` – eine Abbildung von den natürlichen Zahlen `ℕ` in die Menge `A → B` der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst."
   -/
-  Hint "Explaination of `ℕ → A → B`: it can be read as `ℕ → (A → B)`, a mapping of `ℕ` into the set `A → B`"
+  Hint "Explanation of `ℕ → A → B`: it can be read as `ℕ → (A → B)`, a mapping of `ℕ` into the set `A → B`"
   /-
   Hint (hidden := true) "
   **Robo**: Du könnstest mit `constructor` anfangen, oder du fängst an mit `unfold Surjective` und schaust dann, ob dich `push Not` weiterbringt."

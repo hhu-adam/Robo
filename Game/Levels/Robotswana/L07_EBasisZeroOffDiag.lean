@@ -66,7 +66,7 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
 
       **Du**: Genau!"
     -/
-    · Hint "[Robotswana.L07] Hint 1: Try commutating"
+    · Hint "[Robotswana.L07] Hint 1: Try commuting"
       Branch
         rw [E.mul_of_ne] -- (***)
         -- Would ideally like to already trigger a warning here, but

@@ -25,7 +25,7 @@ Statement (n : ℕ) (h : Odd n) : Odd (n ^ 2) := by
   Branch
     unfold Odd
     -- Hint "**Robo**: Mit `unfold Odd at *` öffnest du alle Definitionen von `Odd`."
-    Hint "Try `unfold Odd at *` to open defintions of `Odd`"
+    Hint "Try `unfold Odd at *` to open definitions of `Odd`"
     unfold Odd at *
   Branch
     unfold Odd at *

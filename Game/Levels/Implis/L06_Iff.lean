@@ -27,7 +27,7 @@ Statement (A B : Prop) (mp : A → B) (mpr : B → A) : A ↔ B := by
     **Robo**: Genau. Entsprechend kannst du auch hier mit `constructor` anfangen."
   -/
   Hint "`A ↔ B` is Leanic for $A \\iff B$. `A ↔ B` consists of two parts. It is defined as `⟨A → B, B → A⟩`.
-  It is a similar defintion to `A ∧ B`. Start with `constructor`"
+  It is a similar definition to `A ∧ B`. Start with `constructor`"
   constructor
   -- Hint "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen."
   Hint "Parts available in assumptions"

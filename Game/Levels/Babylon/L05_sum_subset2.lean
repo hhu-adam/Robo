@@ -78,7 +78,7 @@ Statement  (I : Finset ℕ) : ∑ i ∈ I, ((-1 : ℤ)^i + 1) = 2*card { i ∈ I
       **Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieter `sum_congr` verwenden kannst.
     "
     -/
-    Hint "Now oyu can use `sum_congr`"
+    Hint "Now you can use `sum_congr`"
     apply sum_congr   -- introduced above
     · simp
     · assumption

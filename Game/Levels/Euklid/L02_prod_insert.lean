@@ -34,7 +34,7 @@ Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈
     **Robo**:  Ja, das müsste helfen.  Ich denke, du wirst so etwas brauchen wie `insert_erase`.
   "
   -/
-  Hint "Seperate factor `{a}` out of product by using `insert_erase`"
+  Hint "Separate factor `{a}` out of product by using `insert_erase`"
   /-
   Hint (hidden := true) "
     **Robo**:  Probier mal `rw [← insert_erase {ha}]`.

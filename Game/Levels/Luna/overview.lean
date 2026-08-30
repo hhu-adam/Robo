@@ -7,7 +7,7 @@ import Mathlib
    - provide some preliminary exercises to manipulations need in BABYLON exercise on sum_subset,
    - freely use the language of Sets & Finsets
 
-   Currenty 9 levels.
+   Currently 9 levels.
 
    Story:  Ritha ist verliebt in Omega (nicht im Bild), Lina rollt die Augen, Robo ist eifersüchtig.
 -/
@@ -82,7 +82,7 @@ example (n x : ℕ) (h : 3 ≤ n): x ∈ Icc 0 n \ Icc 3 n → x = 0 ∨ x = 1 �
 end Finset
 
 -- variation 3, still in ℕ,
--- more natural statement but less revelant for BABYLON
+-- more natural statement but less relevant for BABYLON
 /-
 namespace Finset
 example (l m n : ℕ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by
@@ -94,7 +94,7 @@ end Finset
 -/
 
 -- variation 4, now in ℝ
--- most natural statement, but much more difficult, and not at all revelant for BABYLON
+-- most natural statement, but much more difficult, and not at all relevant for BABYLON
 /-
 namespace Set
 example (l m n : ℝ) (h₁ : l ≤ m) (h₂ : m ≤ n) : Icc l n \ Icc m n  ⊆ Icc l m := by

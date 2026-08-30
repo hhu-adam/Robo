@@ -22,7 +22,7 @@ Bevor er zu `Odd` weitergehen kann,
 taucht von irgendwo aus der Menge folgendes Papier auf:
 "
 -/
-Introduction "Intro Quantus L03: Show defintion
+Introduction "Intro Quantus L03: Show definition
 ```
 def Even (n : ℕ) : Prop := ∃ r, n = r + r
 ```

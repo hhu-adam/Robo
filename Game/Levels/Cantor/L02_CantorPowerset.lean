@@ -72,7 +72,7 @@ Statement {A : Type} : ¬ ∃ f : A → Set A, Surjective f := by
   "
   -/
   Hint "Try `specialize {hf} {s}`. When you apply `simp` later, `simp [{s}]` allows `simp` to look through
-  your defintions"
+  your definitions"
   specialize hf s
   /-
   Hint "Cantor hüpft von einem Bein auf das andere."

@@ -42,7 +42,7 @@ example (h : M.finite) : (𝒫 M).finite :=
 begin
   cases h.exists_finset_coe with M_fin h_M_fin,
 
-  -- This step is somewhat akward, one needs to turn `coe : finset → set` into an `embedding`
+  -- This step is somewhat awkward, one needs to turn `coe : finset → set` into an `embedding`
   -- To apply it to each subset of `M_fin.powerset`.
   set P := finset.map ⟨coe, finset.coe_injective⟩ M_fin.powerset,
 

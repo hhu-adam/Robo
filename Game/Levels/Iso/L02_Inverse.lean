@@ -32,7 +32,7 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
   Lass uns lieber scharf nachdenken und uns erinnern, wie das ging.
   "
   -/
-  Hint "`IN_HINT 1` stroy"
+  Hint "`IN_HINT 1` story"
   constructor
   · intro h
     /-

@@ -24,7 +24,7 @@ def Odd (n : ℕ) : Prop := ∃ r, n = 2 * r + 1
 Damit erhaltet ihr auch ein weiteres Blatt:
 "
 -/
-Introduction "Intro Quantus L04: Show defintion
+Introduction "Intro Quantus L04: Show definition
 ```
 def Even (n : ℕ) : Prop := ∃ r, n = r + r
 ```

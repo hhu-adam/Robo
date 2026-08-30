@@ -27,7 +27,7 @@ Statement : ∃ f : ℤ → ℤ, ∀ x, f x < x := by
   let f : ℤ → ℤ := fun x ↦ x -1
   -- Hint (strict := true) "**Robo**: Wenn du `{f}` richtig definiert hast, kannst du
   -- dieses mit `use` brauchen, und die resultierende Ungleichung sollte einfach sein"
-  Hint (strict := true) "If `{f}` correctly defind try `use`"
+  Hint (strict := true) "If `{f}` correctly defined try `use`"
   use f
   intro x
   -- Hint (hidden := true) "**Du**: Zu was sich das wohl vereinfacht?"

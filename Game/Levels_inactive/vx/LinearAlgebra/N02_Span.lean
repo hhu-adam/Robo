@@ -14,7 +14,7 @@ Introduction
   (Verpackungswahn)
 If `f` is a function and `M` a subset of its domain, then
 `f '' M` or `set.image f M` is the notation for the image, which is
-usally denoted `f(M) = {y | ∃ x ∈ M, f(x) = y}` in mathematical texts.
+usually denoted `f(M) = {y | ∃ x ∈ M, f(x) = y}` in mathematical texts.
 "
 
 -- TODO: This is blocked by

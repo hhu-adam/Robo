@@ -16,7 +16,7 @@ Statement : ∀ (x : ℕ), (Even x) → Odd (1 + x) := by
     **Robo**: Und man schreibt `\\forall`. Ein `∀ x, …` im Beweisziel kannst du wie eine
     Implikation mit `intro x` angehen."
   -/
-  Hint "Explain `∀` i.e. `\\forall` and approch to prove `∀ x, …`  by `intro x`"
+  Hint "Explain `∀` i.e. `\\forall` and approach to prove `∀ x, …`  by `intro x`"
   intro x h
   unfold Even at h
   unfold Odd
