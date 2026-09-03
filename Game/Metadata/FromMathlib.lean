@@ -35,4 +35,7 @@ import Mathlib.Data.Nat.Prime.Defs
 import Mathlib.Data.Rat.Star
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
+
+/- For `Countable ℚ`.-/
+import Mathlib.Data.Rat.Encodable
 import Mathlib.Topology.LocallyConstant.Basic

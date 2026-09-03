@@ -12,7 +12,7 @@ import Game.Metadata.MatrixNotation
 
 /-- subset.def versus subset_iff --/
 /- mathlib has three lemmas of this kind
-  
+
   #check Set.subset_def      -- (a)
   #check Finset.subset_def   -- (b)
   #check Finset.subset_iff   -- (c)
@@ -23,6 +23,8 @@ import Game.Metadata.MatrixNotation
   Current workaround:
 -/
 alias Set.subset_iff := Set.subset_def
+
+instance instCountableRat : Countable ℚ := inferInstance
 
 
 -- import Game.Metadata.Delaborator

@@ -546,6 +546,13 @@ To do this, you either write it explicitly as `(n : ℤ)` or as `↑n`.
 -/
 DefinitionDoc toNat as "toNat"
 
+/--
+`Int.toNat` reads an integer as a natural number:
+for `n : ℤ` with `0 ≤ n`, the value `n.toNat` is that same number in `ℕ`,
+while every negative `n` is sent to `0`.
+-/
+DefinitionDoc Int.toNat as "Int.toNat"
+
 /- MISCHMASCH -/
 
 /--
@@ -677,3 +684,91 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+Let `α, β` be two types, `α ≃ β` is the type of functions from `α → β` with a two-sided inverse.
+-/
+DefinitionDoc Equiv as "≃" in "Logic"
+
+/--
+Let `R` be a semiring and let `M, N` be two `R`-modules.
+`M →ₗ[R] N` is the type of `R`-linear maps from `M` to `N`, i.e. maps `f` satisfying
+`f (x + y) = f x + f y` and `f (r • x) = r • f x`.
+
+Such an `f` can be applied to elements of `M` just like an ordinary function.
+The arrow is typed `\to\_l`.
+-/
+DefinitionDoc LinearMap as "→ₗ[·]" in "LinearAlgebra"
+
+/--
+Let `R` be a semiring and let `M, N` be two `R`-modules.
+`M ≃ₗ[R] N` is the type of `R`-linear equivalences from `M` to `N`, i.e. linear maps
+`M →ₗ[R] N` that have a two-sided inverse which is again linear.
+
+If you only care about the underlying bijection, use `LinearEquiv.toEquiv`.
+-/
+DefinitionDoc LinearEquiv as "≃ₗ[·]" in "LinearAlgebra"
+
+/--
+For an `R`-linear equivalence `e`, `e : M ≃ₗ[R] N`, `e.toEquiv` is the underlying
+bijection `M ≃ N`: the same map, but with the linearity forgotten.
+
+You need this whenever a statement asks for a plain equivalence of types, for example
+to compare the cardinalities of `M` and `N`.
+-/
+DefinitionDoc LinearEquiv.toEquiv as "LinearEquiv.toEquiv" in "LinearAlgebra"
+
+/--
+For a mapping `f : A → B` together with a proof `hf : Bijective f`,
+`Equiv.ofBijective f hf : A ≃ B` is the equivalence whose underlying mapping is `f`.
+
+This is the usual way to obtain an `A ≃ B`: construct a mapping, show that it is
+bijective, and hand both to `Equiv.ofBijective`.
+-/
+DefinitionDoc Equiv.ofBijective as "Equiv.ofBijective" in "Function"
+
+/--
+For a basis `b : Basis ι K V` with a *finite* index type `ι`,
+`b.equivFun : V ≃ₗ[K] (ι → K)` is the linear equivalence that sends a vector to its
+tuple of coordinates with respect to `b`.
+
+This is the precise version of the statement “a vector space with a basis of `n`
+elements looks like `Kⁿ`”.
+-/
+DefinitionDoc Module.Basis.equivFun as "Basis.equivFun" in "LinearAlgebra"
+
+/--
+For a field `K` and a `K`-vector space `V`, `Basis.ofVectorSpace K V` is a basis of `V`,
+indexed by `Basis.ofVectorSpaceIndex K V`.
+
+Every vector space has a basis, but there is no way to write one down in general – this
+definition picks one for you.
+-/
+DefinitionDoc Module.Basis.ofVectorSpace as "Basis.ofVectorSpace" in "LinearAlgebra"
+
+/--
+`Basis.ofVectorSpaceIndex K V : Set V` is the subset of `V` indexing the chosen basis
+`Basis.ofVectorSpace K V`, i.e. the set of its basis vectors.
+
+You need it whenever you have to name the index type of that basis.
+-/
+DefinitionDoc Module.Basis.ofVectorSpaceIndex as "Basis.ofVectorSpaceIndex" in "LinearAlgebra"
+
+/--
+A type `T` is countable if its elements can be enumerated by the natural numbers,
+i.e. if there is an injective mapping `T → ℕ`.
+
+Note that finite types are countable as well.
+-/
+DefinitionDoc Countable as "Countable" in "Cardinal"
+
+/--
+A type `T` is uncountable if it is *not* countable, i.e. if no enumeration by the
+natural numbers can reach all of its elements.
+
+With `rw [← not_countable_iff]` you turn a goal `Uncountable T` into `¬ Countable T`,
+which is usually the form you want to work with.
+Conversely, from an assumption `Uncountable T` you get `¬ Countable T` with
+`Uncountable.not_countable`.
+-/
+DefinitionDoc Uncountable as "Uncountable" in "Cardinal"

@@ -11,6 +11,7 @@ import Game.Levels.Spinoza
 import Game.Levels.Babylon
 
 import Game.Levels.Cantor
+import Game.Levels.Uncountable
 import Game.Levels.Robotswana
 
 import Game.Levels.Ciao
