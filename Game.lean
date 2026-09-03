@@ -29,6 +29,8 @@ import Game.Levels.Piazza
 import Game.Levels.Cafe
 
 import Game.Levels.Cartan
+import Game.Levels.Hamel
+import Game.Levels.Terrace
 import Game.Levels.Aquarium
 import Game.Levels.Shade
 import Game.Levels.Slope

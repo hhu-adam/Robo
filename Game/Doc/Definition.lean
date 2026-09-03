@@ -240,6 +240,16 @@ i.e., the number of elements in `A`.
 DefinitionDoc Finset.card as "card" in "Finset"
 
 /--
+For a *nonempty* finite subset `A : Finset T` of a linear order,
+`A.min' hA : T` is its smallest element.
+The second argument `hA` is the proof that `A` is nonempty — without it there would be
+no smallest element to speak of.
+
+Being the smallest element, it is in particular an element of `A`: this is `Finset.min'_mem`.
+-/
+DefinitionDoc Finset.min' as "Finset.min'" in "Set"
+
+/--
 For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
 
 (`Fin n` is to be distinguished from `Icc 0 (n-1)`:
@@ -247,6 +257,14 @@ For `n : ℕ`, `Fin n` is the set $\{0, \dots, n-1\}$.
 whereas `Icc 0 (n-1) : Finset ℕ` is a finite subset of `ℕ`.)
 -/
 DefinitionDoc Fin as "Fin"
+
+/--
+An `n`-dimensional vector is a function out of `Fin n`.
+
+For instance a real-valued vector `x : Fin n → ℝ` assigns to each coordinate `i : Fin` a scalar
+`x i : ℝ`. We represent such a vector as `![x_1, …, x_n]`.
+-/
+DefinitionDoc vecNotation as "![·, …, ·]" in "LinearAlgebra"
 
 /--
 `Icc a b` is the closed interval $[a,b]$.
@@ -677,3 +695,61 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+For a family of vectors `v : α → M` in a module `M` over a ring `R`,
+`linearCombination R v` takes a family of coefficients `l` and returns the corresponding
+linear combination of the `v i`:
+$$
+\sum_{i} l_i \cdot v_i
+$$
+The coefficients form a *finitely supported* family, `l : α →₀ R`, i.e. only finitely many
+of them are nonzero, so that the sum makes sense even for an infinite index type `α`.
+(You write `→₀` as `\to0`.) For a finite `α`, `equivFunOnFinite.symm ![c_1, …, c_n]` turns
+an ordinary vector of coefficients into such a family.
+
+Use `rw [linearCombination_apply]` to unfold it into the sum
+```
+linearCombination R v l = l.sum fun i a => a • v i
+```
+-/
+DefinitionDoc Finsupp.linearCombination as "Finsupp.linearCombination" in "LinearAlgebra"
+
+/--
+On a finite index type `α`, every function is finitely supported, so the two ways of writing
+down a family of coefficients agree. `equivFunOnFinite` is this identification:
+```
+equivFunOnFinite : (α →₀ M) ≃ (α → M)
+```
+It reads a finitely supported family as an ordinary function, and its inverse
+`equivFunOnFinite.symm` turns an ordinary function back into a finitely supported one.
+
+So `equivFunOnFinite.symm ![1, 2]` is the coefficient family `![1, 2]`, in the form
+that `linearCombination` expects.
+-/
+DefinitionDoc Finsupp.equivFunOnFinite as "Finsupp.equivFunOnFinite" in "LinearAlgebra"
+
+/--
+`a • v` is the *scalar multiplication* of the vector `v` by the scalar `a`.
+
+For example, for a scalar `a : ℝ` and a vector `v : Fin n → ℝ`, the scalar multiple
+`a • v` is again a vector, defined coordinatewise by
+```
+(a • v) i = a * v i
+```
+Together with addition, scaling is what lets us form *linear combinations* `a • v + b • w`.
+
+You write `•` as `\smul`.
+-/
+DefinitionDoc SMul as "•" in "LinearAlgebra"
+
+/--
+For a real number `x`, `Real.sqrt x`, also written `√x`, is the nonnegative square root of `x`.
+
+To keep it a total function, negative arguments are sent to `0`, i.e. `√x = 0` for `x ≤ 0`.
+So the equation `√x ^ 2 = x` needs the assumption `0 ≤ x`; it is `Real.sq_sqrt`.
+Also useful are `Real.sqrt_sq (h : 0 ≤ x) : √(x ^ 2) = x` and `Real.sqrt_nonneg x : 0 ≤ √x`.
+
+You write `√` as `\sqrt`.
+-/
+DefinitionDoc Real.sqrt as "Real.sqrt" in "ℝ"

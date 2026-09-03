@@ -157,7 +157,7 @@ x ∈ A ↔ x ∈ B
 -/
 TacticDoc ext
 
-/-
+/--
 `fin_cases i` führt eine Fallunterscheidung, wenn `i` ein endlicher Typ ist.
 
 ## Details
@@ -165,9 +165,9 @@ TacticDoc ext
 endlich dimensionalen Vektorräumen.
 
 In diesem Fall bewirkt `fin_cases i`, dass du komponentenweise arbeitest.
--
-TacticDoc fin_cases
 -/
+TacticDoc fin_cases
+
 
 /--
 Two mappings with the same range and domain are equal if
