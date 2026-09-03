@@ -677,3 +677,24 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+Let `α, β` be two types, `α ≃ β` is the type of functions from `α → β` with a two-sided inverse.
+-/
+DefinitionDoc Equiv as "≃" in "Logic"
+
+/--
+For a function of two arguments `f : A → B → C`, `Function.uncurry f : A × B → C` is the
+function of a single pair-shaped argument with `uncurry f (a, b) = f a b`.
+
+Its inverse is `Function.curry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.uncurry as "Function.uncurry" in "Function"
+
+/--
+For a function of a single pair-shaped argument `f : A × B → C`, `Function.curry f : A → B → C`
+is the function of two arguments with `curry f a b = f (a, b)`.
+
+Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.curry as "Function.curry" in "Function"

@@ -157,7 +157,7 @@ x ∈ A ↔ x ∈ B
 -/
 TacticDoc ext
 
-/-
+/--
 `fin_cases i` führt eine Fallunterscheidung, wenn `i` ein endlicher Typ ist.
 
 ## Details
@@ -165,9 +165,8 @@ TacticDoc ext
 endlich dimensionalen Vektorräumen.
 
 In diesem Fall bewirkt `fin_cases i`, dass du komponentenweise arbeitest.
--
-TacticDoc fin_cases
 -/
+TacticDoc fin_cases
 
 /--
 Two mappings with the same range and domain are equal if
@@ -429,6 +428,30 @@ bei dieser Syntax.)
 -
 TacticDoc refine'
 -/
+
+/--
+`refine' { .. }` splits a proof goal that asks for a *structure* — for example an
+equivalence `A ≃ B`, or an $R$-module — into one proof goal per field of that structure.
+
+Each field you leave as `_` becomes a new proof goal, while fields you fill in directly
+do not.
+
+## Example
+
+The proof goal `⊢ A ≃ B` is turned by
+```
+refine' { toFun := f, invFun := g, left_inv := _, right_inv := _ }
+```
+into the two proof goals `⊢ LeftInverse g f` and `⊢ RightInverse g f`.
+
+## Friends and relatives
+
+* `constructor` also splits a structure into one goal per field, but it does not let you
+  supply any of the fields yourself.
+* (*Remark*: Lean offers various nicer ways to do this, e.g. term mode or anonymous
+  constructors, but for the purposes of this game we stick to this syntax.)
+-/
+TacticDoc refine'
 
 /--
 The tactic `revert h` adds the assumption `h` as an implication premise to the proof goal:
