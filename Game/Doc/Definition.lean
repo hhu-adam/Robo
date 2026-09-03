@@ -677,3 +677,84 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+For a type `A`, `Sym2.Rel A` is the relation on the pairs `A × A` that identifies a pair with
+its swap. It is given by two rules:
+* `Sym2.Rel.refl x y` : `(x, y) ∼ (x, y)`,
+* `Sym2.Rel.swap x y` : `(x, y) ∼ (y, x)`.
+
+This relation is an equivalence relation; symmetry and reflexivity are immediate from the rules,
+and transitivity is `Sym2.Rel.trans`.
+-/
+DefinitionDoc Sym2.Rel as "Sym2.Rel" in "Quotient"
+
+/--
+For a type `A`, `Sym2 A` is the *symmetric square* of `A`: the quotient of `A × A` by the
+relation `Sym2.Rel A`. Its elements are the *unordered pairs* of elements of `A`, since
+`(x, y)` and `(y, x)` become equal in the quotient.
+
+The unordered pair of `x` and `y` is written `⟦(x, y)⟧`, or with the special notation `s(x, y)`.
+
+To type the brackets `⟦` and `⟧`, write `\[[` and `\]]`.
+-/
+DefinitionDoc Sym2 as "Sym2" in "Quotient"
+
+/--
+A *setoid* structure on a type `A`, `s : Setoid A`, equips `A` with an equivalence relation
+(also called a *congruence*) `s.r : A → A → Prop`, together with a proof `s.iseqv` that it is
+reflexive, symmetric and transitive.
+
+If `s` is available as an instance, one writes `a ≈ b` for `s.r a b`, and says that `a` and `b`
+are congruent modulo `s`.
+
+To type the symbol `≈`, write `\~~` (or `\approx`).
+-/
+DefinitionDoc Setoid as "Setoid" in "Quotient"
+
+/--
+For a type `A`, `Sym2.Rel.setoid A` is the setoid structure on `A × A` whose congruence is the
+relation `Sym2.Rel A`; it is this setoid whose quotient is `Sym2 A`.
+
+Writing `attribute [local instance] Sym2.Rel.setoid` makes it an instance, so that the notations
+`≈` and `⟦_⟧` become available for `A × A`.
+-/
+DefinitionDoc Sym2.Rel.setoid as "Rel.setoid" in "Quotient"
+
+/--
+For a setoid `s` on a type `A`, `Quotient.mk s : A → Quotient s` sends an element `a : A` to the
+congruence class `⟦a⟧` it represents. Congruent elements have the same class:
+if `a ≈ b` then `⟦a⟧ = ⟦b⟧` (this is `Quotient.sound`).
+
+`Quotient.mk' a` is a variant which finds the setoid `s` by typeclass inference instead of
+taking it as an explicit argument.
+-/
+DefinitionDoc Quotient.mk as "Quotient.mk" in "Quotient"
+
+/--
+For a setoid `s` on a type `A`, a function `f : A → B` *respects* the congruence if
+`f a = f b` whenever `a ≈ b`. Given such an `f` together with a proof `h` of this,
+`Quotient.lift f h : Quotient s → B` is the induced function on the quotient, characterised by
+```
+Quotient.lift f h ⟦a⟧ = f a
+```
+This is the *universal property* of the quotient: functions out of `Quotient s` are exactly the
+functions out of `A` that respect the congruence.
+-/
+DefinitionDoc Quotient.lift as "Quotient.lift" in "Quotient"
+
+/--
+For a function of two arguments `f : A → B → C`, `Function.uncurry f : A × B → C` is the
+function of a single pair-shaped argument with `uncurry f (a, b) = f a b`.
+
+Its inverse is `Function.curry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.uncurry as "Function.uncurry" in "Function"
+
+/--
+For a function of a single pair-shaped argument `f : A × B → C`, `Function.curry f : A → B → C`
+is the function of two arguments with `curry f a b = f (a, b)`.
+
+Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.curry as "Function.curry" in "Function"
