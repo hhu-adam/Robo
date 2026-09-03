@@ -677,3 +677,9 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/-- `Submonoid.powers A` is the submonoid of all powers `A ^ n` of `A`. -/
+DefinitionDoc Submonoid.powers as "Submonoid.powers" in "LinearAlgebra"
+
+/-- `Submodule.span R S` is the smallest submodule containing the set `S`. -/
+DefinitionDoc Submodule.span as "Submodule.span" in "LinearAlgebra"

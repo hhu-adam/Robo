@@ -12,6 +12,7 @@ import Game.Levels.Babylon
 
 import Game.Levels.Cantor
 import Game.Levels.Robotswana
+import Game.Levels.MatrixSpan
 
 import Game.Levels.Ciao
 
