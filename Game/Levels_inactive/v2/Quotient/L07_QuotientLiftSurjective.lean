@@ -29,14 +29,14 @@ Statement Quotinet.surjective_lift {A B : Type*} (s : Setoid A) {f : A → B}
     Function.Surjective (Quotient.lift f f_resp_rel) ↔ Function.Surjective f := by
   constructor
   · intro h
-    rw [← Quotient.lift_comp_mk f]
+    rw [← Quotient.lift_comp_mk f f_resp_rel]
     apply h.comp
-    apply surjective_quotient_mk'
-    done
+    exact mk_surjective
   · intro h
     apply Surjective.of_comp (g:= Quotient.mk s)
     simp [h]
+    exact Surjective.of_comp h
 
 
-NewTheorem Quotient.lift_comp_mk surjective_quotient_mk'
+NewTheorem Quotient.lift_comp_mk Quotient.mk_surjective
 TheoremTab "Quotient"

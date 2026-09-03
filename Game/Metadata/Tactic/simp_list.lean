@@ -145,6 +145,18 @@ attribute [game_simp] ne_eq OfNat.ofNat_ne_one not_false_eq_true
 -- Prado, L10_EvenPrime:
 attribute [game_simp] even_two and_true and_imp
 
+-- Quotient, L01:
+attribute [game_simp] Fintype.card_coe iff_self
+
+-- Quotient, L03:
+attribute [game_simp] Fintype.card_coe Finset.mem_neg' Finset.card_neg eq_self
+
+-- Quotient, L05:
+attribute [game_simp] Nat.card_eq_fintype_card Fintype.card_fin eq_self
+
+-- Quotient, L06:
+attribute [game_simp] Quotient.lift_mk Nat.card_eq_fintype_card Fintype.card_fin eq_self
+
 -- Robotswana, L01_SMulEBasis:
 attribute [game_simp] Matrix.smul_single smul_eq_mul mul_one eq_self
 
