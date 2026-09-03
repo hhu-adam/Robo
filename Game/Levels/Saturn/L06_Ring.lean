@@ -1,7 +1,7 @@
 import Game.Metadata
 
 World "Saturn"
-Level 5
+Level 6
 
 Title ""
 
@@ -58,4 +58,4 @@ Conclusion "
   Nichts wie weg!
 "
 -/
-Conclusion "Conclusion Saturn L05"
+Conclusion "Conclusion Saturn L06"

@@ -576,10 +576,26 @@ DefinitionDoc Prod as "∏"
 
 
 /--
+Let `R` be a semiring. `Polynomial R` is the type of univariate polynomials
+over `R`, denoted as `R[X]` within the Polynomial namespace.
+-/
+DefinitionDoc Polynomial as "Polynomial"
+
+/--
+`X` is the polynomial variable within the Polynomial namespace.
+-/
+DefinitionDoc Polynomial.X as "Polynomial.X"
+
+/--
 `P : MvPolynomial (Fin n) R` means that `P` is a polynomial in `n` indeterminates
 `X 0`, …, `X (n-1)` with coefficients in `R`.
 -/
 DefinitionDoc MvPolynomial as "MvPolynomial"
+
+/--
+`X n` is the degree `1` monomial $X_n$.
+-/
+DefinitionDoc MvPolynomial.X as "MvPolynomial.X"
 
 /--
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
@@ -677,3 +693,18 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/-- `p.eval a` evaluates the polynomial `p` at the point `a`, substituting
+`a` for the variable `X`. -/
+DefinitionDoc Polynomial.eval as "eval"
+
+/-- `Real.exp x` is the exponential function $e^x$. -/
+DefinitionDoc Real.exp as "Real.exp" in "Function"
+
+/-- For a polynomial `p`, `derivative p` (also written `p.derivative`) is its
+formal derivative. -/
+DefinitionDoc Polynomial.derivative as "Polynomial.derivative"
+
+/-- For polynomials `p` and `q`, `p.comp q` is their composition as a polynomial,
+obtained by substituting `q` for the variable `X` in `p`; that is, $p(q(X))$. -/
+DefinitionDoc Polynomial.comp as "Polynomial.comp"
