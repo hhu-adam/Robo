@@ -1143,7 +1143,7 @@
  "Explain that §0 introduces statements §1, §2 und §3 as\npropositions. The symbol §4 is equivalent to the implication symbol §5. Try §6.":
  "**Scribble**: That’s really simple. By §0 she means: §1, §2 and §3 are some statements (*propositions*). And by §4 she means §5, i.e. “implies”. You know the other symbols, right?\n\n**You**: Uhhm, yeah. But I still need to think about this for a moment.\n\n**Scribble** *(whispering)*: Just claim it’s a tautology.\n\n**You**: Seriously?\n\n**Scribble**: Yeah. Just write §6.\n\n**Scribble**: Come on …",
  "Explain that §0 and §1 with §2 can be used as in Implis":
- "**You**: I feel like I've seen this before. \n\n**Scribble**: Yes! It looks very similar to a problem we already solved on *Implis*. Except that this one has equalities of numbers instead of if-then statements! But that doesn't really make any difference. You can treat §0 and §1 practically the same as §2.",
+ "**You**: I feel like I've seen this before. \n\n**Scribble**: Yes! It looks very similar to a problem we already solved on *Implis*. Except that this one is about equalities of variables rather than equivalences of statements! But that doesn't really make any difference. With §2, you can treat §0 and §1 in exactly the same way.",
  "Explain that from §0 follow that there is §1 such that §2. Try §3\nto introduce §4.":
  "**You**: So from §0, I now there is some §1 such that §2 … \n\n**Scribble**: You can conjure this §4 out of your hypothesis with §3.",
  "Explain that each §0 has stated properties":
