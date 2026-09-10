@@ -760,11 +760,17 @@ Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.un
 DefinitionDoc Function.curry as "Function.curry" in "Function"
 
 /--
+An equivalence `e : A ≃ B` is a bijection between `A` and `B`, that is, a map `A → B`
+bundled together with a two-sided inverse.  `Equiv.symm e : B ≃ A` is that inverse.
 
+You may write `e.symm` instead of `Equiv.symm e`.
 -/
 DefinitionDoc Equiv.symm as "Equiv.symm" in "Function"
 
 /--
+For two equivalences `e₁ : A ≃ B` and `e₂ : B ≃ C`, `Equiv.trans e₁ e₂ : A ≃ C` is the
+composite equivalence: first `e₁`, then `e₂`.
 
+You may write `e₁.trans e₂` instead of `Equiv.trans e₁ e₂`.
 -/
 DefinitionDoc Equiv.trans as "Equiv.trans" in "Function"
