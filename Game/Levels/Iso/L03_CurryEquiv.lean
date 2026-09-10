@@ -1,9 +1,7 @@
 import Game.Metadata
 
-universe u₁ u₂ u₃
-
 World "Iso"
-Level 6
+Level 3
 
 /-
 Introduction
@@ -18,16 +16,23 @@ This insight was first made explicit separately by Moses Ilyich Schönfinkel in 
 century and later in the 20th century by Haskell Curry.
 "
 -/
-Introduction "Intro Iso L06"
+Introduction "Intro Iso L03"
 
 open Function
 
-Statement {A : Type u₁} {B : Type u₂} {C : Type u₃} :
+Statement {A B C : Type*} :
     (A × B → C) ≃ (A → B → C) := by
+  Hint "[Hint w3knf] An equivalence `A ≃ B` is not a proposition but *data*:
+    a map `toFun : A → B`, a backwards map `invFun : B → A`,
+    and two proofs `left_inv`, `right_inv` saying that these undo each other."
   Hint "[Hint h4nzq] `Function.curry` goes from `A × B → C` to `A → B → C`, and
   `Function.uncurry` back again."
+  Hint (hidden := true) "[Hint p7ubs] A new tactic: `refine ⟨curry, uncurry, ?_, ?_⟩` fills in the
+    two maps and leaves the two proofs as goals."
   refine ⟨curry, uncurry, ?_, ?_ ⟩
   · simp [LeftInverse]
   · simp [LeftInverse, RightInverse]
 
-NewDefinition Function.curry Function.uncurry
+NewTactic refine
+
+NewDefinition Equiv Function.curry Function.uncurry

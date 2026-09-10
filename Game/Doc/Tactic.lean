@@ -430,28 +430,24 @@ TacticDoc refine'
 -/
 
 /--
-`refine' { .. }` splits a proof goal that asks for a *structure* — for example an
-equivalence `A ≃ B`, or an $R$-module — into one proof goal per field of that structure.
+`refine ⟨..⟩` splits a proof goal that asks for a *structure* — for example an
+equivalence `A ≃ B` — into one proof goal per field that you do not fill in yourself.
 
-Each field you leave as `_` becomes a new proof goal, while fields you fill in directly
+Inside the anonymous constructor `⟨..⟩` you list the fields of the structure in order.
+Each field you write as `?_` becomes a new proof goal, the fields you supply directly
 do not.
 
 ## Example
 
-The proof goal `⊢ A ≃ B` is turned by
+An equivalence `A ≃ B` consists of a map `toFun : A → B`, a backwards map `invFun : B → A`,
+and two proofs `left_inv` and `right_inv` that these undo each other.
+So for given maps `f : A → B` and `g : B → A`, the proof goal `⊢ A ≃ B` is turned by
 ```
-refine' { toFun := f, invFun := g, left_inv := _, right_inv := _ }
+refine ⟨f, g, ?_, ?_⟩
 ```
 into the two proof goals `⊢ LeftInverse g f` and `⊢ RightInverse g f`.
-
-## Friends and relatives
-
-* `constructor` also splits a structure into one goal per field, but it does not let you
-  supply any of the fields yourself.
-* (*Remark*: Lean offers various nicer ways to do this, e.g. term mode or anonymous
-  constructors, but for the purposes of this game we stick to this syntax.)
 -/
-TacticDoc refine'
+TacticDoc refine
 
 /--
 The tactic `revert h` adds the assumption `h` as an implication premise to the proof goal:

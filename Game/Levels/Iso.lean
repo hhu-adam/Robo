@@ -1,9 +1,9 @@
 import Game.Levels.Iso.L01_Bijective
 import Game.Levels.Iso.L02_Inverse
-import Game.Levels.Iso.L03_Equivalence
+import Game.Levels.Iso.L03_CurryEquiv
 import Game.Levels.Iso.L04_EquivalenceBijection
 import Game.Levels.Iso.L05_BijectionEquivalence
-import Game.Levels.Iso.L06_CurryEquiv
+import Game.Levels.Iso.L06_Equivalence
 
 
 World "Iso"
