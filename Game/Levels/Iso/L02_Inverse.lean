@@ -119,17 +119,4 @@ Statement bijective_iff_has_inverse {A B : Type} (f : A → B) :
 TheoremTab "Logic"
 DisabledTheorem Function.injective_iff_hasLeftInverse Function.surjective_iff_hasRightInverse
 
-/-
-Conclusion
-"
-Die Isosophen zeigen sich sehr zufrieden.
-
-**Robo**:  Können wir jetzt nochmal … kapseln?
-
-**Isosoph**:  Klar!  Aber immer schön der Reihe nach.
-Seit wir die Kapseln in beide Richtungen benutzen, häufen sich wieder die Unfälle.
-
-Robo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter.
-"
--/
-Conclusion "Conclusion Iso L02"
+Conclusion "Conclusion Iso L02 -- planet now continues"

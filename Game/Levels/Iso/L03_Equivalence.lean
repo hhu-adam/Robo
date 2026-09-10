@@ -21,29 +21,43 @@ Introduction "Intro Iso L03"
 open Function
 
 Statement {A : Type} : (Fin 3 → A) ≃ A × A × A := by
-  Hint "[Hint q7vk2] An equivalence `A ≃ B` is not a proposition but *data*: a map
-  `toFun : A → B`, a backwards map `invFun : B → A`, and two proofs `left_inv`, `right_inv`
-  saying that these undo each other.
-  Remember that `![a, b, c] : Fin 3 → A` denotes the function sending `0, 1, 2` to `a, b, c`."
-  Hint (hidden := true) "[Hint m3bxs] Supply all four fields at once with
-  `refine' \{ toFun := _, invFun := _, left_inv := _, right_inv := _ }`."
-  refine' { toFun f := (f 0, f 1, f 2), invFun t := ![t.1, t.2.1, t.2.2], left_inv := _, right_inv := _ }
-  · Hint (hidden := true) "[Hint v8rq2] Unfold `LeftInverse` and simplify."
-    simp [LeftInverse]
-    intro f
-    Hint (hidden := true) "[Hint k3mwt] Two functions are equal as soon as they agree on every argument — that is `funext`."
+  Hint "[Hint q7vk2] An equivalence `A ≃ B` is not a proposition but *data*:
+    a map `toFun : A → B`, a backwards map `invFun : B → A`,
+    and two proofs `left_inv`, `right_inv` saying that these undo each other.
+
+    Start by constructing a candidate for the forward map `f : (Fin 3 → A ) → A × A × A`.
+    Recall that a triple in `A × A × A` is written as `(a, (b, c))`, or simply `(a, b, c)`."
+  let f := fun (f : Fin 3 → A ) ↦ ((f 0, (f 1, f 2)) : A × A × A)
+  Hint "[Hint elxld] Now the inverse map:  Remember that the function `Fin 3 → A` sending
+    `0 ↦ a`, `1 ↦ b` and `2 ↦ c` is denoted `![a, b, c] : Fin 3 → A`."
+  Hint (hidden := true) "[Hint 9s56i] Also remember that `A × A × A` is really `A × (A × A)`, so
+    the components of `t : A × A × A` are called `t.1`, `t.2.1` and `t.2.2`."
+  let g := fun (t : A × A × A ) ↦ ![ t.1, t.2.1, t.2.2]
+  Hint "[Hint g0kn2] Now a new tactic: `refine ⟨{f}, {g}, ?_, ?_⟩` will partially fill in the data and
+    leave the remaining proofs as goals.
+    That is, it will set `toFun` to `{f}` and `invFun` to `{g}`,
+    and leave proofs of `left_inv` and `right_inv` as the remaining goals."
+  refine ⟨f, g, ?_, ?_⟩
+  · Hint (hidden := true) "[Hint v8rq2] Unfold `LeftInverse`, `{f}` and `{g}` and simplify."
+    simp [LeftInverse, f, g]
+    intro f'
+    Hint (hidden := true) "[Hint k3mwt] Two functions are equal as soon as they agree on every
+      argument — that is `funext`."
     funext x
-    Hint (hidden := true) "[Hint dz6pf] Only three values of `x` are possible; `fin_cases x` treats them one by one."
+    Hint (hidden := true) "[Hint dz6pf] Only three values of `x` are possible;
+      `fin_cases x` treats them one by one."
     fin_cases x
     · Hint (hidden := true) "[Hint n5hjb] Try `simp`."
       simp
     · simp
     · simp
-  · Hint (hidden := true) "[Hint t7gks] Unfold `RightInverse` and `LeftInverse`, then simplify."
-    simp [RightInverse, LeftInverse]
+  · Hint (hidden := true) "[Hint t7gks] Unfold `RightInverse`, `LeftInverse`, `{f}` and `{g}`,
+      then simplify."
+    simp [RightInverse, LeftInverse, f, g]
+
 
 /- Already in the place introduce vector.-/
-NewTactic refine' fin_cases
+NewTactic refine fin_cases
 
 NewDefinition Equiv
 -- TODO: fin_cases should be in set-theory

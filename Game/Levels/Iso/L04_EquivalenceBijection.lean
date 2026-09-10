@@ -11,25 +11,14 @@ In this level you show that there every bijection gives rise to an equivalence.
 -/
 Introduction "Intro Iso L04"
 
-open Function
+open Function FullGrind
 
 Statement {A B : Type} (f : A ≃ B) : Bijective f.toFun := by
-  Hint "[Hint p4wnd] The underlying function of an equivalence is bijective."
+  Hint "[Hint p4wnd] Given an equivalence `f`, you can access it's components
+    and the relevant proofs with `f.toFun`, `f.invFun`, `f.left_inv` and `f.right_inv`."
+  Hint (hidden := true) "[Hint 6my94] Remember we proved `bijective_iff_has_inverse` a moment ago."
+  rw [bijective_iff_has_inverse]
+  use f.invFun
   constructor
-  · Branch
-      intro a₁ a₂ h
-      simp [congr_arg f.invFun]
-    Hint (hidden := true) "[Hint c9tzr] This is exactly `Equiv.injective`."
-    apply Equiv.injective
-  · Hint "[Hint x2fqm] A map that admits a right inverse is surjective, and `f.right_inv` says
-    that `f.invFun` is one."
-    Hint (hidden := true) "[Hint j6hlv] `Function.RightInverse.surjective` turns that into surjectivity."
-    apply RightInverse.surjective f.right_inv
-
-/---/
-TheoremDoc Function.RightInverse.surjective as "Function.RightInverse.surjective" in "Function"
-
-/---/
-TheoremDoc Equiv.injective as "Equiv.injective" in "Function"
-
-NewTheorem Function.RightInverse.surjective Equiv.injective
+  apply f.left_inv
+  apply f.right_inv
