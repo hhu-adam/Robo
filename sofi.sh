@@ -8,7 +8,7 @@
 # reorder levels in an existing planet/world, by simply renaming the files in
 # such a way that the alphabetical order of the filenames reflects the intended
 # order of the levels in the game.
-# 
+#
 # For example, suppose we have world "Arithmetic" with three levels, and with
 # one additional file that is not ready for deployment yet:
 #
@@ -27,7 +27,7 @@
 #
 #    Arithmetic/L01_hello.lean
 #    Arithmetic/L02a_add.lean              (renamed L03 file)
-#    Artihmetic/L02b_substract.lean        (new file)
+#    Arithmetic/L02b_substract.lean        (new file)
 #    Arithmetic/L03_multiply.lean          (renamed L02 file)
 #    Arithmetic/possible_future_level.lean
 #
@@ -44,7 +44,7 @@
 #     characters "??" are optional -- the script will replace them by the
 #     correct level number. Also, in case you'd like to import the previous
 #     level, add the line
-# 
+#
 #     import Game.Levels.Arithmetic.??
 #
 #     Again, there should be no whitespace at the beginning of the line, and
@@ -59,19 +59,19 @@
 #     alphabetical order:
 #
 #     Arithmetic/L01_hello.lean
-#     Arithmetic/L02_add.lean               (renamed file)         
-#     Artihmetic/L03_substract.lean         (renamed file)
+#     Arithmetic/L02_add.lean               (renamed file)
+#     Arithmetic/L03_substract.lean         (renamed file)
 #     Arithmetic/L04_multiply.lean          (renamed file)
 #     Arithmetic/possible_future_level.lean
-# 
+#
 #     Moreover, it will do the following:
-#     
+#
 #     - Update the level number in each file.
-#     
+#
 #     - In every level n > 1, replace the first import of a levels from the
 #       current world with an import of level n-1. In level n = 1, remove all
 #       imports of levels from the current world.
-#     
+#
 #     - Update the base file for the world, e.g. the file Arithmetic.lean in the
 #       above example, to import all active level files.
 
@@ -103,10 +103,10 @@ fi
 
 world_path=$(dirname "$path")
 world_name=$(basename "$path")
-    
+
 #if ! [[ "$world_path" =~ ^(.*)/Game/Levels$ ]]; then
 #    printf "ERROR: The specified folder\n    %s\ndoes not look like a world folder.\n" $path >&2
-#    printf "World folders are expected to be direct subfolders of\n     '.../Game/Levels/'\n" >&2   
+#    printf "World folders are expected to be direct subfolders of\n     '.../Game/Levels/'\n" >&2
 #    exit
 #else
 printf "%s\n" \
@@ -126,7 +126,7 @@ cd ${world_path}/${world_name}
 readarray -t old_names < <(sort < <(find ./L*.lean))
 # sort might be superfluous here
 # printf '%s\n' "${old_names[@]}"
- 
+
 number_of_files=${#old_names[@]}
 #echo "$number_of_files"" level files found"
 
@@ -134,7 +134,7 @@ number_of_files=${#old_names[@]}
 # Rename level files:
 
 echo "Renaming files ..."
-new_names=("${old_names[@]}") 
+new_names=("${old_names[@]}")
 for (( n=0; n<${number_of_files}; n++ ));
 do
     old_names[$n]="$(echo ${old_names[$n]} | sed 's,^./,,')" # remove leading ./ in all level names
@@ -149,11 +149,11 @@ done
 #read -p "Proceed with renaming?"
 
 # Need to do renaming in two steps in case some of the new names match some of
-# the old names.  For example, the following renaming 
+# the old names.  For example, the following renaming
 #
 # L00.lean --> L01.lean
 # L01.lean --> L02.lean
-# 
+#
 # will not work file by file, because the renamed L00.lean will overwrite the
 # existing file L01.lean.  So instead, we create a temporary subfolder
 # ./sofi-temp, rename and simultaneously move each file into that folder, and
@@ -203,7 +203,7 @@ do
         sed -i "0,/^import Game\.Levels\.${world_name}.*$/s/^import Game\.Levels\.${world_name}.*$/import Game.Levels.${world_name}.${new_names[$((n-1))]}/" "$FILE"
         # Test with sed syntax with:
         # echo -e "import Game.Levels.abc\nQVM\nimport Game.Levels.qvm" | sed "0,/^import Game\.Levels\.${world_name}.*$/s/^import Game\.Levels.*$/Super/"
-    fi    
+    fi
 done
 
 ################################################################################

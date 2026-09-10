@@ -7,7 +7,7 @@ do a lot of work that needs to be refactored/redone later!
 
 ## 0. Create a "Boss Level"
 
-First, find an interesting target excercise for your topic of interest
+First, find an interesting target exercise for your topic of interest
 (referred to as "Boss Level" here). Ideally it is an exercise which could also
 be found on an excersise sheet in class, and ideally it is something that does not
 exists as theorem in mathlib (although this is optional).
@@ -60,7 +60,7 @@ NewTheorem Nat.used_theorem₁ Function.Surjective.used_theorem₂
 If the missing items don't conceptually belong into your planet you **should start a discussion**:
 
 * maybe they can be added to an existing planet (e.g. a missing theorem about sums might fit well into "Babylon")
-* or maybe they are missing because the game authors decided on an equivalent "canoncial way".
+* or maybe they are missing because the game authors decided on an equivalent "canonical way".
   (e.g. so far we did not ever use `exact`, but used `assumption` instead)
 
 
