@@ -24,7 +24,7 @@ Statement (P : ℚ[X]) : X * P = P * X := by
     **Robo**: So ist es.
   "
   -/
-  Hint "Explain `P`: `P` is a polynomial over rational number `ℚ`."
+  Hint "Explain: `P` is polynomial over `ℚ` with indeterminate `X`"
   ring
 
 /-
