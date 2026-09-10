@@ -3,14 +3,12 @@ import Game.Metadata
 World "Saturn"
 Level 4
 
-Title ""
-
 -- Introduction "Noch ein Funkspruch."
 Introduction "Intro Saturn L04"
 
-namespace MvPolynomial
+namespace Polynomial
 
-Statement (a b c : MvPolynomial (Fin 4) ℕ ) : a * b * c = a * (b * c) := by
+Statement (a b c : ℕ[X]) : a * b * c = a * (b * c) := by
   -- Hint "**Robo** Hier könntest du `mul_assoc` verwenden.  Oder *wieder* `ring` …"
   Hint "Try `mul_assoc` or again `ring`"
   ring

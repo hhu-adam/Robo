@@ -576,10 +576,26 @@ DefinitionDoc Prod as "∏"
 
 
 /--
+Let `R` be a semiring. `Polynomial R` is the type of univariate polynomials
+over `R`, denoted as `R[X]` within the Polynomial namespace.
+-/
+DefinitionDoc Polynomial as "R[X]" in "R[X]"
+
+/--
+`X` is the polynomial variable within the Polynomial namespace.
+-/
+DefinitionDoc Polynomial.X as "X (Polynomial.X)" in "R[X]"
+
+/--
 `P : MvPolynomial (Fin n) R` means that `P` is a polynomial in `n` indeterminates
 `X 0`, …, `X (n-1)` with coefficients in `R`.
 -/
-DefinitionDoc MvPolynomial as "MvPolynomial"
+DefinitionDoc MvPolynomial as "MvPolynomial" in "R[X]"
+
+/--
+`X n` is the degree `1` monomial $X_n$.
+-/
+DefinitionDoc MvPolynomial.X as "X (MvPolynomial.X)" in "R[X]"
 
 /--
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
