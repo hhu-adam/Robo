@@ -430,7 +430,7 @@ TacticDoc refine'
 -/
 
 /--
-`refine ⟨..⟩` splits a proof goal that asks for a *structure* — for example an
+Tactic `refine ⟨..⟩` splits a proof goal that asks for a *structure* — for example an
 equivalence `A ≃ B` — into one proof goal per field that you do not fill in yourself.
 
 Inside the anonymous constructor `⟨..⟩` you list the fields of the structure in order.
