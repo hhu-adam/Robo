@@ -23,13 +23,13 @@ Statement Sym2.liftEquiv {A B : Type*} :
   Hint "[Hint s11tmpl] An equivalence consists of four fields: the two maps `toFun` and
     `invFun`, plus the proofs `left_inv` and `right_inv` that they undo each other. The template
     ```
-    refine' \{ toFun f := _, invFun g := _, left_inv := _, right_inv := _}
+    refine ⟨f, g, ?_, ?_⟩
     ```
-    leaves you exactly those four holes."
+    takes the two maps f and g, and leaves you exactly the two proofs as goals."
   Hint (hidden := true) "[Hint s11fg] The two maps are `Sym_f` and `Sym_g` from the previous
     levels. Mind that `toFun` lands in a subtype, so it has to carry the symmetry proof
     `Sym_f_swap` along."
-  refine' { toFun f := ⟨Sym_f f, Sym_f_swap f⟩, invFun g := Sym_g g, left_inv := _, right_inv := _}
+  refine ⟨fun f ↦ ⟨Sym_f f, Sym_f_swap f⟩, Sym_g, ?_, ?_⟩
   · simp [LeftInverse]
     intro f
     ext q
