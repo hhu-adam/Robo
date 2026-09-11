@@ -54,6 +54,9 @@ to start a proof by contraposition.
 -/
 TacticDoc by_contra
 
+/---/
+TacticDoc cases
+
 
 /-
 `change t` ändert das Beweisziel zu `t`. Voraussetzung ist, dass `t` und das alte Beweisziel
@@ -429,6 +432,26 @@ bei dieser Syntax.)
 -
 TacticDoc refine'
 -/
+
+/--
+Tactic `refine ⟨..⟩` splits a proof goal that asks for a *structure* — for example an
+equivalence `A ≃ B` — into one proof goal per field that you do not fill in yourself.
+
+Inside the anonymous constructor `⟨..⟩` you list the fields of the structure in order.
+Each field you write as `?_` becomes a new proof goal, the fields you supply directly
+do not.
+
+## Example
+
+An equivalence `A ≃ B` consists of a map `toFun : A → B`, a backwards map `invFun : B → A`,
+and two proofs `left_inv` and `right_inv` that these undo each other.
+So for given maps `f : A → B` and `g : B → A`, the proof goal `⊢ A ≃ B` is turned by
+```
+refine ⟨f, g, ?_, ?_⟩
+```
+into the two proof goals `⊢ LeftInverse g f` and `⊢ RightInverse g f`.
+-/
+TacticDoc refine
 
 /--
 The tactic `revert h` adds the assumption `h` as an implication premise to the proof goal:
