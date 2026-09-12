@@ -36,3 +36,6 @@ import Mathlib.Data.Rat.Star
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Topology.LocallyConstant.Basic
+
+/- SymmSquare-/
+import Mathlib.Data.Sym.Sym2
