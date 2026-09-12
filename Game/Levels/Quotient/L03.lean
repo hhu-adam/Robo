@@ -18,12 +18,13 @@ Statement FiniteSets.isoSetoid : Setoid FiniteSets := by
     equivalence relation, written `s ≈ t`. Here two finite sets should count as equivalent
     when there is a bijection between them, so the relation to supply is `Nonempty (s ≃ t)` —
     together with proofs that it is reflexive, symmetric and transitive."
-  Hint (hidden := true) "[Hint q3tmpl] Give the relation and leave the three axioms for later:
+  Hint (hidden := true) "[Hint q3tmpl] Give the relation and leave its axioms for later:
     ```
-    refine' \{ r s t := Nonempty (s ≃ t), ..}
+    refine ⟨fun s t ↦ Nonempty (s ≃ t), ?_⟩
     ```
-    The `..` stands for the fields you have not filled in yet."
-  refine' { r s t := Nonempty (s ≃ t), ..}
+    A setoid has two fields, so `?_` stands for the one you have not filled in yet: the proof
+    that this relation is reflexive, symmetric and transitive."
+  refine ⟨fun s t ↦ Nonempty (s ≃ t), ?_⟩
   constructor
   · Hint "[Hint q3refl] Reflexivity: a finite set is in bijection with itself, via the identity."
     intro x
