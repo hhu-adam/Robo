@@ -24,14 +24,17 @@ Statement {A B C : Type*} :
     (A × B → C) ≃ (A → B → C) := by
   Hint "[Hint m2rqd] You have been reading `ℕ → A → B` as a map into a function space since
     Epo, and Cantor's diagonal argument feeds two arguments into `f : A → A → Y` the same way.
-    Such a function of two arguments is really a function on the product. "
-  Hint "[Hint w3knf] An equivalence `A ≃ B` is not a proposition but *data*:
-    a map `toFun : A → B`, a backwards map `invFun : B → A`,
-    and two proofs `left_inv`, `right_inv` saying that these undo each other."
-  Hint "[Hint h4nzq] `Function.curry` goes from `A × B → C` to `A → B → C`, and
-  `Function.uncurry` back again."
-  Hint (hidden := true) "[Hint p7ubs] A new tactic: `refine ⟨curry, uncurry, ?_, ?_⟩` fills in the
-    two maps and leaves the two proofs as goals."
+    Such a function of two arguments is really a function on the product.
+
+    An equivalence `A ≃ B` is not a proposition but *data*:
+    a map `A → B` (`toFun : A → B`), a backwards map `B → A` (`invFun : B → A`),
+    and two proofs `left_inv` and `right_inv` saying that these are mutually inverse.
+
+    To construct it, use a new tactic: `refine`. `refine ⟨f, g, ?_, ?_⟩` fills in the
+    two maps with `f` and `g` respectively, and leaves the two proofs as goals.
+
+    `Function.curry` goes from `A × B → C` to `A → B → C`, and
+    `Function.uncurry` back again."
   refine ⟨curry, uncurry, ?_, ?_ ⟩
   · simp [LeftInverse]
   · simp [LeftInverse, RightInverse]

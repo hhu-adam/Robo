@@ -21,11 +21,13 @@ Introduction "Intro Iso L06"
 open Function
 
 Statement {A : Type} : (Fin 3 → A) ≃ A × A × A := by
-  Hint "[Hint q7vk2] Build the equivalence by hand, as you did for currying.
-    Start by constructing a candidate for the forward map `f : (Fin 3 → A ) → A × A × A`.
-    Recall that a triple in `A × A × A` is written as `(a, (b, c))`, or simply `(a, b, c)`."
-  let f := fun (f : Fin 3 → A) ↦ ((f 0, (f 1, f 2)) : A × A × A)
-  Hint "[Hint elxld] Now the inverse map:  Remember that the function `Fin 3 → A` sending
+  Hint "[Hint q7vk2] Here you need to build the equivalence by hand.
+    Start by constructing a candidate for the forward map `f : (Fin 3 → A ) → A × A × A`."
+  Hint (hidden := true) "[Hint plisw] Recall that a triple in `A × A × A` is written as
+    `(a, (b, c))`, or simply `(a, b, c)`."
+  let f := fun (v : Fin 3 → A) ↦ ((v 0, (v 1, v 2)) : A × A × A)
+  Hint "[Hint elxld] Now the inverse map."
+  Hint (hidden := true) "[Hint kkivj] Remember that the function `Fin 3 → A` sending
     `0 ↦ a`, `1 ↦ b` and `2 ↦ c` is denoted `![a, b, c] : Fin 3 → A`."
   Hint (hidden := true) "[Hint 9s56i] Also remember that `A × A × A` is really `A × (A × A)`, so
     the components of `t : A × A × A` are called `t.1`, `t.2.1` and `t.2.2`."
@@ -52,5 +54,5 @@ Statement {A : Type} : (Fin 3 → A) ≃ A × A × A := by
 
 
 /- Already in the place introduce vector.-/
-NewTactic fin_cases
+-- NewTactic fin_cases
 -- TODO: fin_cases should be in set-theory

@@ -679,9 +679,18 @@ to expand this into the usual definition of the derivative in terms of the `slop
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
 
 /--
-Let `α, β` be two types, `α ≃ β` is the type of functions from `α → β` with a two-sided inverse.
+For types `α` and `β`, `α ≃ β` or (`Equiv α β`) is the type of functions from `α → β` with a
+two-sided inverse.  A term `f : α ≃ β` has four components:
+a map `f.toFun` (`f.toFun : α → β`), a map `f.invFun` (`f.invFun : β → α`),
+and proofs `left_inv` and `right_inv` that these are mutually inverse.
+
+The inverse equivalence is called `f.symm` (`f.symm : β ≃ α`).
+
+You don't usually have to write out f.toFun to refer to the map `α → β` – you can use coercion and
+simply write f.
+Similarly, the recommended spelling of the map `β → α` is f.symm.
 -/
-DefinitionDoc Equiv as "≃" in "Logic"
+DefinitionDoc Equiv as "≃" in "Function"
 
 /--
 For a function of two arguments `f : A → B → C`, `Function.uncurry f : A × B → C` is the
