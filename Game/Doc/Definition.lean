@@ -693,3 +693,33 @@ You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_sl
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+For types `α` and `β`, `α ≃ β` or (`Equiv α β`) is the type of functions from `α → β` with a
+two-sided inverse.  A term `f : α ≃ β` has four components:
+a map `f.toFun` (`f.toFun : α → β`), a map `f.invFun` (`f.invFun : β → α`),
+and proofs `left_inv` and `right_inv` that these are mutually inverse.
+
+The inverse equivalence is called `f.symm` (`f.symm : β ≃ α`).
+
+You don't usually have to write out f.toFun to refer to the map `α → β` – you can use coercion and
+simply write f.
+Similarly, the recommended spelling of the map `β → α` is f.symm.
+-/
+DefinitionDoc Equiv as "≃" in "Function"
+
+/--
+For a function of two arguments `f : A → B → C`, `Function.uncurry f : A × B → C` is the
+function of a single pair-shaped argument with `uncurry f (a, b) = f a b`.
+
+Its inverse is `Function.curry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.uncurry as "Function.uncurry" in "Function"
+
+/--
+For a function of a single pair-shaped argument `f : A × B → C`, `Function.curry f : A → B → C`
+is the function of two arguments with `curry f a b = f (a, b)`.
+
+Its inverse is `Function.uncurry`, see `Function.curry_uncurry` and `Function.uncurry_curry`.
+-/
+DefinitionDoc Function.curry as "Function.curry" in "Function"
