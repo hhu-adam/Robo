@@ -14,25 +14,28 @@ TheoremDoc HasDerivAt.congr_of_eventuallyEq as "HasDerivAt.congr_of_eventuallyEq
 /---/
 TheoremDoc hasDerivAt_const as "hasDerivAt_const"
 
-/- For `x < 0`, the bump function `f` is eventually `0`, so its derivative is `0`. -/
 Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
-  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the negative axis,
-  where it is flat: for `x < 0` it is constantly `0` nearby, so its derivative
-  is `0`."
-  Hint "[Hint cev1] Note that if two function are eventually euqal around a point, then their derivatives agree
-    at this point. The theorem is called `HasDerivAt.congr_of_eventuallyEq` in mathlib.
-    First show `f` eventually equal to the zero function around `x`, then apply the theorem
-    `HasDerivAt.congr_of_eventuallyEq`. "
-  Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0` by `have`"
+  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the
+    negative axis, where it is flat: around `x < 0` it is constantly `0`, so its derivative is `0`.
+
+    Note that if two functions are eventually euqal around a point, then their derivatives agree
+    at this point. This theorem is called `HasDerivAt.congr_of_eventuallyEq`.
+    So show first f is eventually equal to the zero function around `x`."
+  Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0`."
   have h : f =ᶠ[𝓝 x] fun _ ↦ 0 := by
-    Hint "[Hint sm7fu] Remember the theorem `eventually_lt_nhds`."
-    Hint (hidden := true) "[Hint sm7fuh] Try to combine `filter_upwards` and `eventually_lt_nhds {hx}`."
-    filter_upwards [eventually_lt_nhds hx] with y hy
-    simp [f, hy.le]
-  Hint (hidden := true) "[Hint cev3] Now `apply HasDerivAt.congr_of_eventuallyEq _ {h}`."
-  apply HasDerivAt.congr_of_eventuallyEq _ h
-  Hint (hidden := true) "Note that `hasDerivAt_const`."
-  apply hasDerivAt_const
+    Hint "[Hint sm7fu] Remember `eventually_lt_nhds` and `filter_upwards`."
+    Hint (hidden := true) "[Hint sm7fuh] First, establish `h : ∀ᶠ (x : ℝ) in 𝓝 x, x < 0`.
+      Then use `filter_upawards` with `h`."
+    have h := eventually_lt_nhds hx
+    filter_upwards [h]
+    intro y hy
+    simp [f]
+    grind
+  Hint (strict := true) "[Hint cev3] The constant function has derivative zero at any `x`:
+    establish this using `hasDerivAt_const (x : ℝ) (0 : ℝ)`."
+  have h_const := hasDerivAt_const (x : ℝ) (0 : ℝ)
+  Hint (hidden := true) "[Hint y4ym4] Finally time to apply `HasDerivAt.congr_of_eventuallyEq`."
+  apply HasDerivAt.congr_of_eventuallyEq h_const h
 
 /-- For `h : a < b`, `h.le` is a short-cut of `a ≤ b`. -/
 TheoremDoc LT.lt.le as "LT.lt.le" in "≤"
