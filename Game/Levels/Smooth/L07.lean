@@ -24,11 +24,11 @@ Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
   Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0`."
   have h : f =ᶠ[𝓝 x] fun _ ↦ 0 := by
     Hint "[Hint sm7fu] Remember `eventually_lt_nhds` and `filter_upwards`."
-    Hint (hidden := true) "[Hint sm7fuh] First, establish `h : ∀ᶠ (x : ℝ) in 𝓝 x, x < 0`.
-      Then use `filter_upawards` with `h`."
-    have h := eventually_lt_nhds hx
-    filter_upwards [h]
-    intro y hy
+    Hint (hidden := true) "[Hint sm7fuh] First, establish `hy : ∀ᶠ (y : ℝ) in 𝓝 x, y < 0`.
+      Then use `filter_upwards` with `hy`."
+    have hy := eventually_lt_nhds hx
+    filter_upwards [hy]
+    intro a ha
     simp [f]
     grind
   Hint (strict := true) "[Hint cev3] The constant function has derivative zero at any `x`:
@@ -37,7 +37,4 @@ Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
   Hint (hidden := true) "[Hint y4ym4] Finally time to apply `HasDerivAt.congr_of_eventuallyEq`."
   apply HasDerivAt.congr_of_eventuallyEq h_const h
 
-/-- For `h : a < b`, `h.le` is a short-cut of `a ≤ b`. -/
-TheoremDoc LT.lt.le as "LT.lt.le" in "≤"
-
-NewTheorem HasDerivAt.congr_of_eventuallyEq hasDerivAt_const LT.lt.le
+NewTheorem HasDerivAt.congr_of_eventuallyEq hasDerivAt_const
