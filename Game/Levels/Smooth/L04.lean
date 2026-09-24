@@ -40,7 +40,6 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
   Hint "[Hint 65tuz] Again, can make goal more readable with `change` – the complicated filter
     can be written as `𝓝[>] 0`.
     Also, pull the minus out of the `exp` using `simp_rw` and `exp_neg`."
-  change Tendsto (fun (x : ℝ) ↦ eval x⁻¹ p * rexp (-x⁻¹)) (𝓝[>] 0) (𝓝 0)
   simp_rw [exp_neg]
   Hint (strict := true) "[Hint 4f4o8] This is `x ↦ p.eval x / exp x` composed with `x ↦ x⁻¹`).
      The theorem `Tendsto.comp` says how limits behave under composition.
