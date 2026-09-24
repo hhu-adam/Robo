@@ -1,8 +1,4 @@
 import Game.Levels.Smooth.L04
-import Mathlib.Analysis.Calculus.Deriv.Comp
-import Mathlib.Analysis.Calculus.Deriv.Inv
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
-import Mathlib.Analysis.Calculus.Deriv.Add
 
 World "Smooth"
 Level 5

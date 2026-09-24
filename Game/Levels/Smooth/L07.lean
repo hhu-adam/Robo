@@ -1,5 +1,4 @@
 import Game.Levels.Smooth.L06
-import Mathlib.Analysis.Calculus.Deriv.Basic
 
 World "Smooth"
 Level 7

@@ -17,11 +17,28 @@ import Mathlib.Tactic.Ring.Basic
 /- other parts of mathlib -/
 /- lines appearing n times are needed in at least n different levels -/
 
+
+import Mathlib.Analysis.Calculus.Deriv.Comp
+import Mathlib.Analysis.Calculus.Deriv.Inv
+import Mathlib.Analysis.Calculus.Deriv.Polynomial
+import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Pow
+import Mathlib.Analysis.Calculus.Deriv.Mul
+import Mathlib.Analysis.Calculus.Deriv.Inv
+import Mathlib.Analysis.Calculus.Deriv.Polynomial
+import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
+--import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
+import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.SpecialFunctions.PolynomialExp
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+--import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.Normed.Field.Lemmas
 import Mathlib.Analysis.Normed.Ring.Lemmas
 --import Mathlib.Analysis.Normed.Ring.Lemmas
 import Mathlib.Algebra.CharP.Defs
+import Mathlib.Algebra.Polynomial.Derivative
 import Mathlib.Algebra.MvPolynomial.CommRing
 import Mathlib.Algebra.Order.Ring.Star
 --import Mathlib.Algebra.Order.Ring.Star
@@ -36,6 +53,3 @@ import Mathlib.Data.Rat.Star
 import Mathlib.Data.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Topology.LocallyConstant.Basic
-import Mathlib.Algebra.Polynomial.Derivative
-import Mathlib.Analysis.Complex.Exponential
-import Mathlib.Analysis.SpecialFunctions.PolynomialExp

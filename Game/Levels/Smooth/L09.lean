@@ -1,5 +1,4 @@
 import Game.Levels.Smooth.L08
-import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
 
 World "Smooth"
 Level 9

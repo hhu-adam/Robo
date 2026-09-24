@@ -1,7 +1,4 @@
-import Game.Levels.Smooth.L04
-import Mathlib.Analysis.Calculus.Deriv.Inv
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Game.Levels.Smooth.L07
 
 World "Smooth"
 Level 8

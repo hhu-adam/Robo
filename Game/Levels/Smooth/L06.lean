@@ -1,7 +1,4 @@
 import Game.Levels.Smooth.L05
-import Mathlib.Analysis.Calculus.Deriv.Pow
-import Mathlib.Analysis.Calculus.Deriv.Mul
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 
 World "Smooth"
 Level 6

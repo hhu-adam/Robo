@@ -1,4 +1,4 @@
-import Game.Metadata
+import Game.Levels.Smooth.L02
 
 World "Smooth"
 Level 3
