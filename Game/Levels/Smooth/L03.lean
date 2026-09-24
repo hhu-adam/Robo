@@ -22,7 +22,7 @@ TheoremDoc STakeOff.zero_of_nonpos as "zero_of_nonpos"
 
 /- On the non-positive axis the take-off function is `0`. -/
 Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
-  Hint "[Hint smth3f] The *smooth take-off function* is
+  Hint "[Hint smth3f] The *smooth take-off function* `f` is
     $$
     f(x) = \\begin\{cases}
       0 & \\text\{if } x \\le 0, \\\\ %(new line)
@@ -30,8 +30,9 @@ Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
     \\end\{cases}
     $$
     It is flat `0` on the left and rises as `exp (-x⁻¹)` on the right — the seam at `0` is
-    where all the interesting smoothness happens."
-  Hint "[Hint znp] On the left of the seam there is nothing to compute: unfolding `f`, the
+    where smoothness is interesting.
+
+    On the left of the seam there is nothing to compute: unfolding f, the
     assumption `{hx}` picks the first branch of the `if`."
   Branch
     unfold f

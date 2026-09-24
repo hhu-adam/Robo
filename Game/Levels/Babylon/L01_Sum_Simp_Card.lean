@@ -43,9 +43,3 @@ Conclusion "**Babylonier**: Sehr gut, das passt!"
 Conclusion "Conclusion Babylon L01"
 
 NewDefinition Finset.card
-
-/-
-**Robo**: Mir fällt gerade ein, du hattest ja mal gefragt bezüglich `rw` unter Quantoren.
-Mit Summen ist das das gleiche: Hier musst du immer `simp_rw` verwenden, wenn du innerhalb
-einer Summe was umschreiben möchtest."
--/
