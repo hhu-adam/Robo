@@ -8,11 +8,12 @@ import Game.Metadata.FromMathlib
 import Game.Metadata.Tactic
 import Game.Metadata.Tactic.simp_list
 import Game.Metadata.MatrixNotation
+import Game.Metadata.DelaboratorNatSucc
 
 
 /-- subset.def versus subset_iff --/
 /- mathlib has three lemmas of this kind
-  
+
   #check Set.subset_def      -- (a)
   #check Finset.subset_def   -- (b)
   #check Finset.subset_iff   -- (c)

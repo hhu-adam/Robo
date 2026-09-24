@@ -1,40 +1,26 @@
 import Lean.Elab.Tactic.Basic
 import Lean.Elab.Tactic.Induction
 import Batteries.Tactic.OpenPrivate
-import Batteries.Data.List.Basic
-import Mathlib.Lean.Expr.Basic
 import Mathlib.Tactic.Cases
-
-namespace Nat
 
 /-!
 # Modified `induction` tactic
 
-Modify `induction` tactic to always show `(0 : Nat)` instead of `Nat.zero` and
-to support the lean3-style `with` keyword.
+Modify `induction` tactic to support the lean3-style `with` keyword, i.e.
+`induction n with d hd`.
 
 This is mainly copied and modified from the mathlib-tactic `induction'`.
--/
 
-/--
-Custom induction principial for the tactics `induction`.
-Used to show `0` instead of `Nat.zero` in the base case.
+Note: displaying `0` instead of `Nat.zero` needs no work here; Lean's
+`@[induction_eliminator]` for `Nat` already produces `0` / `n + 1` cases, and
+`Game.Metadata.DelaboratorNatSucc` displays closed `Nat.succ` chains as numerals.
 -/
-def rec' {P : Nat → Prop} (zero : P 0)
-    (succ : (n : Nat) → (n_ih : P n) → P (succ n)) (t : Nat) : P t := by
-  induction t with
-  | zero => assumption
-  | succ n =>
-    apply succ
-    assumption
-
-end Nat
 
 open Lean Parser Tactic
 open Meta Elab Elab.Tactic
 open Mathlib.Tactic
 
-open private getElimNameInfo generalizeTargets generalizeVars from Lean.Elab.Tactic.Induction
+open private getElimNameInfo from Lean.Elab.Tactic.Induction
 
 /--
 Modified `induction` tactic for this game.
@@ -51,20 +37,6 @@ elab (name := Robo.induction) "induction " tgts:(Parser.Tactic.elimTarget,+)
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := true)
-
-    -- Edit: If `MyNat.rec` is used, we want to use `MyNat.rec'` instead.
-    let elimInfo ← match elimInfo.elimExpr.getAppFn.constName? with
-    | some `MyNat.rec =>
-      let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
-        match usingArg.raw with
-        | .node info kind #[] =>
-          -- TODO: How do you construct syntax in a semi-userfriendly way??
-          .node info kind #[.atom info "using", .ident info "MyNat.rec'".toSubstring `MyNat.rec' []]
-        | other => other ⟩
-      let newElimInfo ← getElimNameInfo modifiedUsingArgs targets (induction := false)
-      pure newElimInfo
-    | _ => pure elimInfo
-
     let targets ← addImplicitTargets elimInfo targets
     checkInductionTargets targets
     let targetFVarIds := targets.map (·.fvarId!)
