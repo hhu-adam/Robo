@@ -23,13 +23,8 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
   Hint "[Hint qq87t] Try `Tendsto.if`."
   apply Tendsto.if
   Hint "[Hint xcip8] Perfect.  Now you have cut the function in two halves, and have two goals.
-    First, need to show that left half of function tends to `0` as `x → 0` “from the left”.
-    If you like, you can make the goal more readable with:
-    ```
-    change Tendsto (fun (x : ℝ) ↦ 0) (𝓝[≤] 0) (𝓝 0)
-    ```
-    In any case, note that here the function is constant."
-  change Tendsto (fun (x : ℝ) ↦ 0) (𝓝[≤] 0) (𝓝 0)
+    First, need to show that left half of function tends to `0` as `x → 0` “from the left”,
+    i.e. along `𝓝[≤] 0`. Note that here the function is constant."
   Hint (hidden := true) "[Hint lpk2t] Remember `tendsto_const_nhds`."
   apply tendsto_const_nhds
   Hint "[Hint gh8td] Second, need to show that right half of function tends to `0` as `x → 0`
@@ -37,9 +32,8 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
     But “from the right” is not written nicely.
     Change `¬ x ≤ 0` to `0 < x`, using `not_le` or just `simp`."
   simp
-  Hint "[Hint 65tuz] Again, can make goal more readable with `change` – the complicated filter
-    can be written as `𝓝[>] 0`.
-    Also, pull the minus out of the `exp` using `simp_rw` and `exp_neg`."
+  Hint "[Hint 65tuz] Now the filter reads `𝓝[>] 0`.
+    Next, pull the minus out of the `exp` using `simp_rw` and `exp_neg`."
   simp_rw [exp_neg]
   Hint (strict := true) "[Hint 4f4o8] This is `x ↦ p.eval x / exp x` composed with `x ↦ x⁻¹`).
      The theorem `Tendsto.comp` says how limits behave under composition.
@@ -85,5 +79,3 @@ TheoremDoc tendsto_inv_nhdsGT_zero as "tendsto_inv_nhdsGT_zero" in "Function"
 
 NewTheorem Filter.Tendsto.if tendsto_inv_nhdsGT_zero Real.exp_neg
 --Filter.Tendsto.congr' Filter.Tendsto.congr
-
-NewTactic change -- could be introduced earlier
