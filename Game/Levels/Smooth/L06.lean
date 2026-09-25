@@ -31,6 +31,10 @@ Statement (x : ℝ) {p : Polynomial ℝ} :
   Hint (strict := true) "[Hint pxe2] Now establish what the product rule, `HasDerivAt.mul`,
     gives you, using another `have`."
   have h := HasDerivAt.mul h_p h_exp
+  Branch
+    /- alternative idea -/
+    convert! h using 1  -- NEW TACTIC, BUT MUCH NICER SOLUTION
+    ring
   Hint (strict := true) "[Hint t99r1] Almost there.  If you compare `{h}` to your goal,
     you'll find that the essential difference can be bridged by the following equality:
     ```

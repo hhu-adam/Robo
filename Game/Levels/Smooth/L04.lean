@@ -10,7 +10,15 @@ Introduction "Intro Smooth L04"
 /-- -/
 TheoremDoc tendsto_polynomial_inv_mul_zero as "tendsto_polynomial_inv_mul_zero" in "Function"
 
-/-- -/
+
+-- TODO intermediate level
+example (p : Polynomial ℝ) :
+    (fun x ↦ p.eval x⁻¹ * f x) 0 = 0 := by
+  simp [f]
+  /- "This is just because of the Lean convention that `0⁻¹ = 0`.
+      But there is a real mathematical statement to be made …"
+  -/
+
 Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
     Tendsto (fun x ↦ p.eval x⁻¹ * f x) (𝓝 0) (𝓝 0) := by
   Hint "[Hint sm4bgf] The take-off function `f`

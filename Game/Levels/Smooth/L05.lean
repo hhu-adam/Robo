@@ -41,6 +41,18 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
     have h_inv := hasDerivAt_inv hx
     ```
     "
+  Branch
+    /- An alternative approach in which the proof assistant actually assists.
+       However, this only works by chance, when the derivate is already written in the correct form.
+       It fails in the boss level 08. -/
+    have h_comp : (fun x ↦ p.eval (-x⁻¹)) = p.eval ∘ Neg.neg ∘ Inv.inv := by
+      rfl
+    rw [h_comp]
+    apply HasDerivAt.comp x
+    · apply p.hasDerivAt
+    · apply HasDerivAt.comp x
+      · apply hasDerivAt_neg
+      · apply hasDerivAt_inv hx
   have h_inv := hasDerivAt_inv hx
   Hint (strict := true) "[Hint szsqh] Now similarly for `neg`."
   Branch
@@ -58,6 +70,7 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
     composition with `p`."
   have h_p := p.hasDerivAt (-x⁻¹)
   apply HasDerivAt.comp x h_p h_neginv
+
 
 NewTheorem Polynomial.hasDerivAt HasDerivAt.comp hasDerivAt_inv hasDerivAt_neg
 NewDefinition Polynomial.derivative Polynomial.comp

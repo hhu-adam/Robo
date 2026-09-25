@@ -3,9 +3,9 @@ import Game.Levels.Smooth.L07
 World "Smooth"
 Level 8
 
-Introduction "Intro Smooth L08"
+Introduction "Intro Smooth L08 (Boss)"
 
-open Polynomial Filter Topology STakeOff
+open Polynomial Filter Topology STakeOff Real
 
 /-- The derivative of `x ↦ p(x⁻¹) · f x` keeps the same `polynomial · f` shape. -/
 TheoremDoc hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv_mul" in "Function"
@@ -19,17 +19,18 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     \\frac\{p(x^\{-1}) - p'(x^\{-1})}\{x^2}\\, f(x),
     $$
     with `f` the take-off function of this world — `0` for `x ≤ 0` and `exp (-x⁻¹)` for
-    `x > 0`."
-  Hint "[Hint sm8lttri] First, try to use `lt_trichotomy` to divide into three cases."
+    `x > 0`.
+
+    This is a long calculation, but we've assembled all the tools.
+    Begin with `lt_trichotomy` to divide into three cases."
   obtain hx | rfl | hx := lt_trichotomy x 0
-  · Hint "[Hint s8ls0] This is a similar case of the previous level. Recall the method you
-      use in the previous level."
-    rw [zero_of_nonpos hx.le, mul_zero]
-    Hint (strict := true) "[Hint s8l0] Note that the function `p.eval i⁻¹ * f i` eventually equals to zero
-      around `x`."
-    Hint (strict := true) (hidden := true) "[Hint sm8hdl] Establish
-      `(fun (i : ℝ) ↦ p.eval i⁻¹ * f i) =ᶠ[𝓝 x] fun _ ↦ 0` by `have`."
-    have he : (fun (i : ℝ) ↦ p.eval i⁻¹ * f i) =ᶠ[𝓝 x] fun _ ↦ 0 := by
+  · Hint "[Hint s8ls0] Simplify the claimed derivative using `zero_of_nonpos`.
+      The rest is similar to previous level."
+    rw [zero_of_nonpos hx.le]
+    simp
+    Hint (strict := true) (hidden := true) "[Hint s8l0] Establish that the function
+      `y ↦ p.eval y⁻¹ * f y` eventually equals zero around `y = x`."
+    have he : (fun (y : ℝ) ↦ p.eval y⁻¹ * f y) =ᶠ[𝓝 x] fun _ ↦ 0 := by
       Hint (hidden := true) "[Hint s8fuelhx] Combine `filter_upwards` and `eventually_lt_nhds`."
       filter_upwards [eventually_lt_nhds hx]
       intro a ha
@@ -37,38 +38,47 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     Hint (hidden := true) "[Hint s8rcoe] Remember the theorem `HasDerivAt.congr_of_eventuallyEq`."
     apply HasDerivAt.congr_of_eventuallyEq _ he
     apply hasDerivAt_const
-  · Hint "[Hint s8snmz] Note that `f 0 = 0`, then we could `rw` the goal using `zero_of_nonpos` and `mul_zero`."
-    rw [zero_of_nonpos, mul_zero]
-    Hint "[Hint s8rmhits] Remember the theorem `hasDerivAt_iff_tendsto_slope`."
+  · Hint "[Hint s8snmz] In this case, can again simplify the derivative using `zero_of_nonpos`.
+      And then use explicit definition of derivatives in terms of slopes."
+    rw [zero_of_nonpos]
+    simp
+    Hint (hidden := true ) "[Hint s8rmhits] Remember the theorem `hasDerivAt_iff_tendsto_slope`."
     rw [hasDerivAt_iff_tendsto_slope]
-    Hint (strict := true) "[Hint sm8sle] Note that the slope of function $p(x⁻¹)f (x)$
-      between `0` and `y` is $(p * X)(y ⁻¹)f(y)$."
-    Hint (strict := true) (hidden := true) "[Hint sm8sleh]
-      Establish `∀ y, (p * X).eval y⁻¹ * f y = slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 y` by `have`."
-    have aux : ∀ y, (p * X).eval y⁻¹ * f y = slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 y := by
+    Hint (strict := true) "[Hint sm8sle] Compute the slope explicitly.
+      ```
+      have h_slope : slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 = fun (y : ℝ) ↦ …
+      ```
+      It should have the form `q.eval y⁻¹ * f y` for some polynomial `q`.
+      "
+    Branch
+      have h_slope' : slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 = fun (y : ℝ) ↦ (X * p).eval y⁻¹ * f y := by
+        Hint "[Hint lydei] Very good."
+        sorry
+    have h_slope : slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 = fun (y : ℝ) ↦ (p * X).eval y⁻¹ * f y := by
+      Hint "[Hint lydei] Very good."
+      ext y
+      Hint (hidden := true) "[Hint nfd0p] Remember `slope_def_field`"
       simp [f, slope_def_field]
       grind
     /- -- mathlib proof
     refine ((tendsto_polynomial_inv_mul_zero (p * X)).mono_left inf_le_left).congr fun x ↦ ?_
     simp [slope_def_field, div_eq_mul_inv, mul_right_comm]
     -/
-    Hint "[Hint sm8rmtc] Remember the theorem `Filter.Tendsto.congr` and `{aux}`."
-    apply Tendsto.congr aux
-    Hint "[Hint sm9tlshf] It suffices to prove that the expression tends to `0` in the full neighborhood of `0`,
-      not just the punctured neighborhood. Also remember the result you proved in the
-      previous level `tendsto_polynomial_inv_mul_zero`."
+    rw [h_slope]
+    Hint "[Hint sm9tlshf] It suffices to prove that the expression tends to `0` in the full
+      neighborhood of `0`, not just the punctured neighborhood."
     Branch
       suffices h : Tendsto (fun (x : ℝ) ↦ eval x⁻¹ (p * X) * f x) (𝓝 0) (𝓝 0)
-      Hint (hidden := true) "[Hint sm8tlshf] Now apply `Tendsto.mono_left h nhdsWithin_le_nhds `."
+      Hint (hidden := true) "[Hint sm8tmlst] Remember `Tendsto.mono_left` and `nhdsWithin_le_nhds`."
       apply Tendsto.mono_left h nhdsWithin_le_nhds
-      Hint "[Hint sm8tshiw] This is exactly the result `tendsto_polynomial_inv_mul_zero`."
+      Hint (hidden := true) "[Hint sm8tshiw] This is exactly the result `tendsto_polynomial_inv_mul_zero`."
       apply tendsto_polynomial_inv_mul_zero
-    Hint (hidden := true) "[Hint sm8tmlst] Remember the theorem `Tendsto.mono_left` and `nhdsWithin_le_nhds`."
+    Hint (hidden := true) "[Hint sm8tmlst] Remember `Tendsto.mono_left` and `nhdsWithin_le_nhds`."
     apply Tendsto.mono_left _ nhdsWithin_le_nhds
-    Hint "[Hint sm8tshiw] This is exactly the result `tendsto_polynomial_inv_mul_zero`."
+    Hint (hidden := true) "[Hint sm8tshiw] This is exactly the result `tendsto_polynomial_inv_mul_zero`."
     apply tendsto_polynomial_inv_mul_zero
     · grind
-  ·
+  · Hint "[Hint lzkl8] Exhausted?  Now for the interesting case `0 < x`."
     /- -- mathlib proof
     have := ((p.hasDerivAt x⁻¹).mul (hasDerivAt_neg _).exp).comp x (hasDerivAt_inv hx.ne')
     convert! this.congr_of_eventuallyEq _ using 1
@@ -78,14 +88,14 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
       simp [f, hnot_le hy]
     -/
     /- By definition, `f x = Real.exp (-x⁻¹)`, since `0 < x` -/
-    Hint (strict := true) "[Hint sm8hf] First establish that `f x = Real.exp (-x⁻¹)` by `have`."
-    have hf : f x = Real.exp (-x⁻¹) := by
+    Hint (strict := true) "[Hint sm8hf] First establish that `f x = exp (-x⁻¹)`."
+    have hf : f x = exp (-x⁻¹) := by
       unfold f
       rw [if_neg]
       grind
-    Hint (strict := true) "[Hint sm8hevs] Perfect! Now you can also prove that
-      `(fun y ↦ eval y⁻¹ p * f y) =ᶠ[𝓝 x] fun y ↦ eval y⁻¹ p * Real.exp (-y⁻¹)` by `have`."
-    have hev : (fun y ↦ eval y⁻¹ p * f y) =ᶠ[𝓝 x] fun y ↦ eval y⁻¹ p * Real.exp (-y⁻¹) := by
+    Hint (strict := true) "[Hint sm8hevs] Perfect! Now you can also establish
+      `(fun y ↦ eval y⁻¹ p * f y) =ᶠ[𝓝 x] fun y ↦ eval y⁻¹ p * exp (-y⁻¹)`."
+    have hev : (fun y ↦ eval y⁻¹ p * f y) =ᶠ[𝓝 x] fun y ↦ eval y⁻¹ p * exp (-y⁻¹) := by
       filter_upwards [eventually_gt_nhds hx] with y hy
       unfold f
       rw [if_neg]
@@ -96,6 +106,24 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
       Establish `eval x⁻¹ (X ^ 2 * (p - derivative p)) * f x =
       (eval x⁻¹ (derivative p) * Real.exp (-x⁻¹) +
         eval x⁻¹ p * (Real.exp (-x⁻¹) * -1)) * -(x ^ 2)⁻¹` by `have`."
+    Branch
+      /- IDEA for an alternative approach -/
+      apply HasDerivAt.congr_of_eventuallyEq _ hev
+      clear hev
+      have h_comp : (fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
+        (fun y ↦ p.eval y * Real.exp (-y)) ∘ Inv.inv := by
+        rfl
+      rw [h_comp]
+      clear h_comp
+      have h₁ := p.hasDerivAt x⁻¹
+      have h_neg := hasDerivAt_neg x⁻¹
+      have h₂ := HasDerivAt.exp h_neg
+      have h_mul := HasDerivAt.mul h₁ h₂
+      have h₃ := hasDerivAt_inv (x := x) (by grind)  -- or hasDerivAt_inv hx.ne.symm
+      have h_comp := HasDerivAt.comp x h_mul h₃
+      convert! h_comp using 1
+      simp [hf]
+      ring
     have hval : eval x⁻¹ (X ^ 2 * (p - derivative p)) * f x =
       (eval x⁻¹ (derivative p) * Real.exp (-x⁻¹) +
         eval x⁻¹ p * (Real.exp (-x⁻¹) * -1)) * -(x ^ 2)⁻¹ := by
