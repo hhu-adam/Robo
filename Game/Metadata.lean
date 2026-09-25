@@ -9,6 +9,7 @@ import Game.Metadata.Tactic
 import Game.Metadata.Tactic.simp_list
 import Game.Metadata.MatrixNotation
 import Game.Metadata.DelaboratorNatSucc
+import Game.Metadata.DelaboratorNhdsWithin
 
 
 /-- subset.def versus subset_iff --/

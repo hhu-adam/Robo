@@ -598,6 +598,11 @@ DefinitionDoc MvPolynomial as "MvPolynomial" in "R[X]"
 DefinitionDoc MvPolynomial.X as "X (MvPolynomial.X)" in "R[X]"
 
 /--
+`X n` is the degree `1` monomial $X_n$.
+-/
+DefinitionDoc MvPolynomial.X as "MvPolynomial.X"
+
+/--
 For a matrix `A`, `trace A` is the trace of `A`. The expression is also equivalent to `∑ i, A i i` in Leanic.
 -/
 DefinitionDoc Matrix.trace as "trace" in "Matrix"
@@ -694,6 +699,20 @@ to expand this into the usual definition of the derivative in terms of the `slop
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
 
+/-- `p.eval a` evaluates the polynomial `p` at the point `a`, substituting
+`a` for the variable `X`. -/
+DefinitionDoc Polynomial.eval as "eval"
+
+/-- `Real.exp x` is the exponential function $e^x$. -/
+DefinitionDoc Real.exp as "Real.exp" in "Function"
+
+/-- For a polynomial `p`, `derivative p` (also written `p.derivative`) is its
+formal derivative. -/
+DefinitionDoc Polynomial.derivative as "Polynomial.derivative"
+
+/-- For polynomials `p` and `q`, `p.comp q` is their composition as a polynomial,
+obtained by substituting `q` for the variable `X` in `p`; that is, $p(q(X))$. -/
+DefinitionDoc Polynomial.comp as "Polynomial.comp"
 /--
 For types `α` and `β`, `α ≃ β` or (`Equiv α β`) is the type of functions from `α → β` with a
 two-sided inverse.  A term `f : α ≃ β` has four components:
