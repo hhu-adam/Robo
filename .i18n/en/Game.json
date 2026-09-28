@@ -690,7 +690,7 @@
  "Now try §0!": "**You**: And now? \n\n**Lina** (*triumphantly*): §0!",
  "Now try out §0": "**Scribble**: Good. And now §0.",
  "Now there is goal §0. This goal is part of the assumption":
- "**Scribble**: Look, this is magic paper. Now we suddenly have two goals. Here is goal §0. I think you already know how to achieve each of them. The targets are listed in the *assumptions*.",
+ "**Scribble**: Assumption: §0. Goal: §0. Remember `assumption`?",
  "Now oyu can use §0":
  "**Scribble**: That looks good. Now you're ready to use §0 again.",
  "Now assumption §0 is available":
