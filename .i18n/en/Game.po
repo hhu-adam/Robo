@@ -5230,10 +5230,7 @@ msgstr ""
 #. §0: `«{B}»`
 #: Game.Levels.Logo.L10_And
 msgid "Now there is goal §0. This goal is part of the assumption"
-msgstr ""
-"**Scribble**: Look, this is magic paper. Now we suddenly have two goals. "
-"Here is goal §0. I think you already know how to achieve each of them. The "
-"targets are listed in the *assumptions*."
+msgstr "**Scribble**: Assumption: §0. Goal: §0. Remember `assumption`?"
 
 #: Game.Levels.Logo.L10_And
 msgid "Now you have two goals."

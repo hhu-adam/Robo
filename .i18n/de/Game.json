@@ -700,7 +700,7 @@
  "Now try §0!": "**Du**:  Und jetzt??\n\n**Lina** (*triumphal*): §0!",
  "Now try out §0": "**Robo**:  Gut.  Und jetzt §0.",
  "Now there is goal §0. This goal is part of the assumption":
- "**Robo**: Schau mal, das ist Zauberpapier. Jetzt haben wir auf einmal zwei Beweisziele. Hier ist dast Ziel §0. Ich glaube, du weißt schon, wie man die jeweils erreicht. Die Ziele stehen ja jeweils in den *Annahmen*.",
+ "**Robo**: Annahme: §0. Ziel: §0. Erinnerst du dich noch an `assumption`?",
  "Now oyu can use §0":
  "**Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieder §0 verwenden kannst.",
  "Now assumption §0 is available":
