@@ -24,7 +24,7 @@ Statement : ContDiff ℝ ∞ exp := by
     iterated derivative is differentiable. For `exp` this is easy, since every derivative of
     exp is exp itself."
   Hint (strict := true) (hidden := true) "[Hint sm10ih] First establish
-    `∀ m : ℕ, iteratedDeriv m exp = exp` by induction."
+    `∀ m, iteratedDeriv m exp = exp` by induction."
   have h : ∀ m, iteratedDeriv m exp = exp := by
     intro m
     induction m with n ih
