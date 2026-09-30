@@ -713,6 +713,14 @@ DefinitionDoc Polynomial.derivative as "Polynomial.derivative"
 /-- For polynomials `p` and `q`, `p.comp q` is their composition as a polynomial,
 obtained by substituting `q` for the variable `X` in `p`; that is, $p(q(X))$. -/
 DefinitionDoc Polynomial.comp as "Polynomial.comp"
+
+/--
+For a function `f : ℝ → ℝ` and `n : ℕ`, `ContDiff ℝ n f` means that `f` is `n` times
+continuously differentiable, i.e. $f \in C^n$. In particular, `ContDiff ℝ ∞ f`:
+`f` can be differentiated arbitrarily often, i.e. `f` is *smooth* ($f \in C^\infty$).
+-/
+DefinitionDoc ContDiff as "ContDiff"
+
 /--
 For types `α` and `β`, `α ≃ β` or (`Equiv α β`) is the type of functions from `α → β` with a
 two-sided inverse.  A term `f : α ≃ β` has four components:

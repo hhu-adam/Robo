@@ -3,19 +3,46 @@ import Game.Levels.Smooth.L09
 World "Smooth"
 Level 10
 
-open Polynomial STakeOff
+open Real
+open scoped ContDiff
 
 Introduction "Intro Smooth L10"
 
-/-- Every iterated derivative of `f` vanishes at `0`, so `f` is infinitely flat there. -/
-TheoremDoc iteratedDeriv_f_zero as "iteratedDeriv_f_zero" in "Function"
+/---/
+TheoremDoc contDiff_of_differentiable_iteratedDeriv as "contDiff_of_differentiable_iteratedDeriv"
+  in "Function"
 
-/- Every iterated derivative of `f` vanishes at `0`. -/
-Statement iteratedDeriv_f_zero (n : ℕ) : iteratedDeriv n f 0 = 0 := by
-  Hint "[Hint sm10bgf] By the previous level every derivative of `f` still carries the factor
-    `f x`, and `f` vanishes on the whole left half-line. So at `x = 0` all of them are `0`:
-    `f` is *infinitely flat* there — smooth, yet nowhere near its Taylor series at `0`."
-  Hint "[Hint idz1] Rewrite with the formula from the previous level, and note that `f 0 = 0`."
-  Hint (hidden := true) "[Hint idz2] `rw [iteratedDeriv_eq_poly]`."
-  rw [iteratedDeriv_eq_poly]
-  simp [zero_of_nonpos]
+/---/
+TheoremDoc HasDerivAt.differentiableAt as "HasDerivAt.differentiableAt" in "Function"
+
+/---/
+TheoremDoc Real.hasDerivAt_exp as "Real.hasDerivAt_exp" in "Function"
+
+Statement : ContDiff ℝ ∞ exp := by
+  Hint "[Hint sm10bgf] `ContDiff ℝ ∞` means *smooth*: differentiable arbitrarily often.
+    By `contDiff_of_differentiable_iteratedDeriv` it suffices to show that every
+    iterated derivative is differentiable. For `exp` this is easy, since every derivative of
+    exp is exp itself."
+  Hint (strict := true) (hidden := true) "[Hint sm10ih] First establish
+    `∀ m : ℕ, iteratedDeriv m exp = exp` by induction."
+  have h : ∀ m, iteratedDeriv m exp = exp := by
+    intro m
+    induction m with n ih
+    · apply iteratedDeriv_zero
+    · funext x
+      rw [iteratedDeriv_succ, ih]
+      Hint (hidden := true) "[Hint sm10hd] Remember `HasDerivAt.deriv` and `Real.hasDerivAt_exp`."
+      apply HasDerivAt.deriv
+      apply Real.hasDerivAt_exp
+  Hint (strict := true) "[Hint sm10cd] Now apply `contDiff_of_differentiable_iteratedDeriv`."
+  apply contDiff_of_differentiable_iteratedDeriv
+  intro m _
+  rw [h]
+  intro x
+  Hint (hidden := true) "[Hint sm10da] Remember `HasDerivAt.differentiableAt` and `Real.hasDerivAt_exp`."
+  apply HasDerivAt.differentiableAt (Real.hasDerivAt_exp _)
+
+NewTheorem contDiff_of_differentiable_iteratedDeriv HasDerivAt.differentiableAt
+  Real.hasDerivAt_exp
+
+NewDefinition ContDiff
