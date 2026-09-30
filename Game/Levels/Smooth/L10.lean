@@ -34,7 +34,10 @@ Statement : ContDiff ℝ ∞ exp := by
       Hint (hidden := true) "[Hint sm10hd] Remember `HasDerivAt.deriv` and `Real.hasDerivAt_exp`."
       apply HasDerivAt.deriv
       apply Real.hasDerivAt_exp
-  Hint (strict := true) "[Hint sm10cd] Now apply `contDiff_of_differentiable_iteratedDeriv`."
+  Hint (strict := true) "[Hint sm10cd] By `{h}`, every iterated derivative of `exp` is exp
+    itself. A function is smooth as soon as all of its iterated derivatives are differentiable,
+    so it only remains to see that exp is differentiable."
+  Hint (hidden := true) "[Hint sm10df] Apply the theorem `contDiff_of_differentiable_iteratedDeriv`."
   apply contDiff_of_differentiable_iteratedDeriv
   intro m _
   rw [h]
