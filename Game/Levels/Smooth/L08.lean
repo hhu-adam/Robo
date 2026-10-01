@@ -89,6 +89,22 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     -/
     /- By definition, `f x = Real.exp (-x⁻¹)`, since `0 < x` -/
     Hint (strict := true) "[Hint sm8hf] First establish that `f x = exp (-x⁻¹)`."
+    Branch
+      -- Alternative proof using `deriv`.
+      have xneq : x ≠ 0 := by grind
+      have : deriv (fun x ↦ p.eval x⁻¹ * f x) x =
+        ((X ^ 2 * (p - derivative p)).eval x⁻¹ * f x) := sorry
+      rw [← this]
+      apply DifferentiableAt.hasDerivAt
+      apply DifferentiableAt.mul
+      · fun_prop
+      · have hevf : f =ᶠ[𝓝 x] fun y ↦ exp (-y⁻¹) := by
+          filter_upwards [eventually_gt_nhds hx] with y hy
+          unfold f
+          rw [if_neg]
+          grind
+        rw [hevf.differentiableAt_iff]
+        fun_prop
     have hf : f x = exp (-x⁻¹) := by
       unfold f
       rw [if_neg]
