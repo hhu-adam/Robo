@@ -100,69 +100,30 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
       unfold f
       rw [if_neg]
       grind
-    Hint (strict := true) "[Hint sm8hval] Reordering the derivative to meet the form of
-      `HasDerivAt.mul`."
-    Hint (strict := true) (hidden := true) "[Hint sm8hvalh]
-      Establish `eval x⁻¹ (X ^ 2 * (p - derivative p)) * f x =
-      (eval x⁻¹ (derivative p) * Real.exp (-x⁻¹) +
-        eval x⁻¹ p * (Real.exp (-x⁻¹) * -1)) * -(x ^ 2)⁻¹` by `have`."
-    Branch
-      /- IDEA for an alternative approach -/
-      apply HasDerivAt.congr_of_eventuallyEq _ hev
-      clear hev
-      have h_comp : (fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
-        (fun y ↦ p.eval y * Real.exp (-y)) ∘ Inv.inv := by
-        rfl
-      rw [h_comp]
-      clear h_comp
-      have h₁ := p.hasDerivAt x⁻¹
-      have h_neg := hasDerivAt_neg x⁻¹
-      have h₂ := HasDerivAt.exp h_neg
-      have h_mul := HasDerivAt.mul h₁ h₂
-      have h₃ := hasDerivAt_inv (x := x) (by grind)  -- or hasDerivAt_inv hx.ne.symm
-      have h_comp := HasDerivAt.comp x h_mul h₃
-      convert! h_comp using 1
-      simp [hf]
-      ring
-    have hval : eval x⁻¹ (X ^ 2 * (p - derivative p)) * f x =
-      (eval x⁻¹ (derivative p) * Real.exp (-x⁻¹) +
-        eval x⁻¹ p * (Real.exp (-x⁻¹) * -1)) * -(x ^ 2)⁻¹ := by
-      rw [hf]
-      simp
-      ring
-    Hint (strict := true) "[Hint sm8gtrh] Perfect! You're on track. Now you can `rw` the expression
-      using `hval`."
-    rw [hval]
     Hint "[Hint sm8hcehev] Remember that the theorem `HasDerivAt.congr_of_eventuallyEq` and `{hev}`."
     apply HasDerivAt.congr_of_eventuallyEq _ hev
-    Branch
-      -- alternative proof
-      have hmul : HasDerivAt (fun y ↦ eval y p * Real.exp (-y))
-        (eval x⁻¹ (derivative p) * Real.exp (-x⁻¹) +
-            eval x⁻¹ p * (Real.exp (-x⁻¹) * -1)) x⁻¹ := by
-        apply HasDerivAt.mul (p.hasDerivAt _)
-        · apply HasDerivAt.exp
-          apply hasDerivAt_neg
-      apply HasDerivAt.comp x hmul
-      apply hasDerivAt_inv hx.ne'
     Hint (strict := true) (hidden := true) "[Hint sm8cmpa] Establish
       `(fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
         (fun y ↦ p.eval y * Real.exp (-y)) ∘ (fun y ↦ y⁻¹)` by `have`."
     have comp_aux : (fun (y : ℝ) ↦ eval y⁻¹ p * Real.exp (-y⁻¹)) =
         (fun y ↦ p.eval y * Real.exp (-y)) ∘ (fun y ↦ y⁻¹) := by
       rfl
-    Hint "[Hint sm8cmpaux] Now `rw` using `{comp_aux}`, then this is a situation you met before. Remember
-    the theorem `HasDerivAt.comp`."
     rw [comp_aux]
-    apply HasDerivAt.comp x
-    · Hint (hidden := true) "[Hint sm8rmhm] Remember the theorem `HasDerivAt.mul`."
-      apply HasDerivAt.mul
-      · apply p.hasDerivAt
-        /- here is the same situation in level 6.-/
-      · apply HasDerivAt.exp
-        apply hasDerivAt_neg
-    apply hasDerivAt_inv
-    grind
+    Hint (strict := true) "[Hint sm8cvx] The derivative in the goal is not written in the form
+      that the rules produce. So first build the derivative of this composition from the rules
+      you know (`Polynomial.hasDerivAt`, `HasDerivAt.exp`, `HasDerivAt.mul`, `hasDerivAt_inv`,
+      `HasDerivAt.comp`) with `have`, and only then compare it with the goal."
+    have h₁ := p.hasDerivAt x⁻¹
+    have h_neg := hasDerivAt_neg x⁻¹
+    have h₂ := HasDerivAt.exp h_neg
+    have h_mul := HasDerivAt.mul h₁ h₂
+    have h₃ := hasDerivAt_inv (x := x) (by grind)
+    have h_comp := HasDerivAt.comp x h_mul h₃
+    Hint (hidden := true) "[Hint sm8cvu] `convert! {h_comp} using 1` leaves a single equation
+      between the two derivative values."
+    convert! h_comp using 1
+    simp [hf]
+    ring
 
 
 
@@ -173,3 +134,4 @@ TheoremDoc eventually_gt_nhds as "eventually_gt_nhds"
 TheoremDoc MulZeroClass.mul_zero as "mul_zero" in "+ *"
 
 NewTheorem MulZeroClass.mul_zero eventually_gt_nhds
+NewHiddenTactic «convert!»
