@@ -682,3 +682,27 @@ h₂ : p₂ x
 ```
 -/
 TacticDoc filter_upwards
+
+/--
+If a hypothesis `h` is almost the goal, `convert h` closes the goal using `h`
+and creates new goals for the places where the goal and `h` differ.
+
+## Example
+
+```
+h : HasDerivAt f a x
+⊢ HasDerivAt g a x
+```
+After `convert h`, it remains to show
+```
+⊢ g = f
+```
+
+# Variants
+
+- `convert ← h` creates the new goals in the opposite direction (here `f = g`).
+- `convert h using n` only compares the goal and `h` up to depth `n`.
+  Use it when `convert` breaks the goal into too many small (or even false) pieces.
+- `convert! h` additionally closes new goals that hold by definition.
+-/
+TacticDoc convert

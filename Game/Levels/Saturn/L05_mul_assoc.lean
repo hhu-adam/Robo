@@ -1,10 +1,10 @@
 import Game.Metadata
 
 World "Saturn"
-Level 4
+Level 5
 
 -- Introduction "Noch ein Funkspruch."
-Introduction "Intro Saturn L04"
+Introduction "Intro Saturn L05"
 
 namespace Polynomial
 
@@ -31,7 +31,7 @@ Conclusion "
 
 "
 -/
-Conclusion "Conclusion Saturn L04: coefficients were in `ℕ`. Polynomes with coefficients in `ℕ`
+Conclusion "Conclusion Saturn L05: coefficients were in `ℕ`. Polynomes with coefficients in `ℕ`
 are not considered rings. `ring` does also work on half rings."
 
 NewTactic ring
