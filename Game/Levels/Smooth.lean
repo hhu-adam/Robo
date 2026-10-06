@@ -9,6 +9,7 @@ import Game.Levels.Smooth.L08
 import Game.Levels.Smooth.L09
 import Game.Levels.Smooth.L10
 import Game.Levels.Smooth.L11
+import Game.Levels.Smooth.L12
 
 /-!
 The planet Smooth builds the smooth take-off function `f x = if x ≤ 0 then 0 else

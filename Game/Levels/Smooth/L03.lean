@@ -14,8 +14,15 @@ namespace STakeOff
 /-- Smooth take-off function -/
 def f : ℝ → ℝ := fun x ↦ if x ≤ 0 then 0 else exp (- x⁻¹)
 
-/-- The smooth take-off function `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`. -/
-DefinitionDoc STakeOff.f as "f"
+/-- The smooth take-off function `f : ℝ → ℝ` defined by `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`.
+$$
+f(x) = \\begin\{cases}
+         0 & \\text\{if } x \\le 0, \\\\ %(new line)
+         e^\{-1/x} & \\text\{if } x > 0.
+       \\end\{cases}
+$$
+-/
+DefinitionDoc STakeOff.f as "f" in "STakeOff"
 
 /-- On the non-positive axis the take-off function vanishes: `f x = 0` when `x ≤ 0`. -/
 TheoremDoc STakeOff.zero_of_nonpos as "zero_of_nonpos"

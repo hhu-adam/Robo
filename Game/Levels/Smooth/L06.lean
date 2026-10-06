@@ -3,50 +3,69 @@ import Game.Levels.Smooth.L05
 World "Smooth"
 Level 6
 
-open Real Polynomial
+open Polynomial
 
 Introduction "Intro Smooth L06"
 
-/---/
-TheoremDoc HasDerivAt.exp as "HasDerivAt.exp"
+/- The derivative of `x ↦ p(-x⁻¹)` at `x ≠ 0`, obtained from the chain rule. -/
+Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
+    HasDerivAt (fun x ↦ p.eval (-x⁻¹))
+      ((derivative p).eval (-x⁻¹) * (-1 * -(x ^ 2)⁻¹)) x := by
+  Hint (strict := true) "[Hint dxq1] `HasDerivAt f f' x` means that `f` has derivative `f'` at the point `x`.
+    So goal is to compute derivative of triple composition `p ∘ neg ∘ inv` using chain rule,
+    and express is using the formal derivative `derivative p` of `p`.
 
-/---/
-TheoremDoc HasDerivAt.mul as "HasDerivAt.mul"
+    The derivative of each factor is known:
 
-/- The derivative of `x ↦ p(x) · exp (-x)`, from the product rule. -/
-Statement (x : ℝ) {p : Polynomial ℝ} :
-    HasDerivAt (fun x ↦ p.eval x * exp (-x))
-      ((p.derivative.eval x - p.eval x) * exp (-x)) x := by
-  Hint (strict := true) "[Hint pxe1] Differentiate the two factors, then join them with the
-    product rule `HasDerivAt.mul`.  You already know how to differentiate the polynomial.
-    For the other factor, use `hasDerivAt_neg` and `HasDerivAt.exp`.
+    - `p.hasDerivAt x` says that p has derivative `(derivative p).eval x` at x
+    - `hasDerivAt_neg x` says the derivative of `x ↦ -x` at x is `-1`
+    - `hasDerivAt_inv hx`, where `hx` is the assumption `x ≠ 0`, computes the derivative of `x ↦ x⁻¹`
+
+    And the chain rule is called `HasDerivAt.comp`.
+
+    Use the following trick to piece this together.
+    Load the statement of `hasDerivAt_inv hx` into your context with:
+    ```
+    have h_inv := hasDerivAt_inv hx
+    ```
     "
-  Hint (strict := true) (hidden := true) "[Hint hiovs] `HasDerivAt.exp` computes the derivate
-    of `exp f` at `x`, given the derivative of `f`.
-    So it takes a proof `h_f : HasDerivAt f f' x` as argument."
-  have h_p := p.hasDerivAt x
-  have h_neg := hasDerivAt_neg x
-  have h_exp := HasDerivAt.exp h_neg
-  clear h_neg
-  Hint (strict := true) "[Hint pxe2] Now establish what the product rule, `HasDerivAt.mul`,
-    gives you, using another `have`."
-  have h := HasDerivAt.mul h_p h_exp
   Branch
-    /- alternative idea -/
-    convert! h using 1  -- NEW TACTIC, BUT MUCH NICER SOLUTION
-    ring
-  Hint (strict := true) "[Hint t99r1] Almost there.  If you compare `{h}` to your goal,
-    you'll find that the essential difference can be bridged by the following equality:
+    /- An alternative, backward approach in which the proof assistant actually assists.
+       However, this only works by chance, when the derivate is already written in the correct form.
+       It fails in the boss level 08, so this approach should *not* be introduced here. -/
+    have h_comp : (fun x ↦ p.eval (-x⁻¹)) = p.eval ∘ Neg.neg ∘ Inv.inv := by
+      rfl
+    rw [h_comp]
+    apply HasDerivAt.comp x
+    · apply p.hasDerivAt
+    · apply HasDerivAt.comp x
+      · apply hasDerivAt_neg
+      · apply hasDerivAt_inv hx
+  have h_inv := hasDerivAt_inv hx
+  Hint (strict := true) "[Hint szsqh] Now similarly for `neg`."
+  Branch
+    have := hasDerivAt_neg x
+    Hint "[Hint 3cbyh] That's not what you want. If you want to apply the chain rule,
+      you will need the derivate of `neg ∘ inv` at a different point than `x`."
+  have h_neg := hasDerivAt_neg x⁻¹
+  Hint (strict := true) "[Hint 9uibu] Excellent!  Now apply the chain rule.
     ```
-    (p.derivative.eval x - p.eval x) * exp (-x) = p.derivative.eval x * exp (-x) + p.eval x * (exp (-x) * -1)
+    have h_neginv := HasDerivAt.comp …
     ```
-    Establish it and use it.
     "
-  have hf' : (p.derivative.eval x - p.eval x) * exp (-x) =
-      p.derivative.eval x * exp (-x) + p.eval x * (exp (-x) * -1) := by
-    ring
-  rw [hf']
-  apply h
+  have h_neginv := HasDerivAt.comp x h_neg h_inv
+  Hint (strict := true) "[Hint fir3i] Excellent.  Now proceed in a similar fashion for the
+    composition with `p`."
+  have h_p := p.hasDerivAt (-x⁻¹)
+  clear h_neg h_inv hx
+  Hint (hidden := true) "[Hint 70lg1] Now the new theorem that encodes the chain rule: `HasDerivAt.comp`"
+  apply HasDerivAt.comp x h_p h_neginv
 
+/---/
+TheoremDoc HasDerivAt.comp as "HasDerivAt.comp" in "HasDerivAt"
+/---/
+TheoremDoc hasDerivAt_inv as "hasDerivAt_inv" in "Function"
+/---/
+TheoremDoc hasDerivAt_neg as "hasDerivAt_neg" in "Function"
 
-NewTheorem HasDerivAt.exp HasDerivAt.mul
+NewTheorem HasDerivAt.comp hasDerivAt_inv hasDerivAt_neg

@@ -710,9 +710,11 @@ DefinitionDoc Real.exp as "Real.exp" in "Function"
 formal derivative. -/
 DefinitionDoc Polynomial.derivative as "Polynomial.derivative"
 
+/- Does not seem to be used anywhere at the moment.
 /-- For polynomials `p` and `q`, `p.comp q` is their composition as a polynomial,
 obtained by substituting `q` for the variable `X` in `p`; that is, $p(q(X))$. -/
 DefinitionDoc Polynomial.comp as "Polynomial.comp"
+-/
 
 /--
 For a function `f : ℝ → ℝ` and `n : ℕ`, `ContDiff ℝ n f` means that `f` is `n` times

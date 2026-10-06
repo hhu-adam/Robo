@@ -3,37 +3,48 @@ import Game.Levels.Smooth.L06
 World "Smooth"
 Level 7
 
-open Real Filter Topology STakeOff
+open Real Polynomial
 
 Introduction "Intro Smooth L07"
 
-/---/
-TheoremDoc HasDerivAt.congr_of_eventuallyEq as "HasDerivAt.congr_of_eventuallyEq"
+/- The derivative of `x ↦ p(x) · exp (-x)`, from the product rule. -/
+Statement (x : ℝ) {p : Polynomial ℝ} :
+    HasDerivAt (fun x ↦ p.eval x * exp (-x))
+      ((p.derivative.eval x - p.eval x) * exp (-x)) x := by
+  Hint (strict := true) "[Hint pxe1] Differentiate the two factors, then join them with the
+    product rule `HasDerivAt.mul`.  You already know how to differentiate the polynomial.
+    For the other factor, use `hasDerivAt_neg`, `hasDerivAt_exp` at `HasDerivAt.comp`.
+    "
+  have h_p := p.hasDerivAt x
+  have h_neg := hasDerivAt_neg x
+  have h_exp := hasDerivAt_exp (-x) --h_neg
+  have h_expneg := HasDerivAt.comp x h_exp h_neg
+  clear h_neg h_exp
+  Hint (strict := true) "[Hint pxe2] Now establish what the product rule, `HasDerivAt.mul`,
+    gives you, using another `have`."
+  have h := HasDerivAt.mul h_p h_expneg
+  Hint (strict := true) "[Hint t99r1] Of course, you could also do this all in one step by chaining
+    these rules together:
+    ```
+    have {h} := HasDerivAt.mul (p.hasDerivAt x) (HasDerivAt.comp x (hasDerivAt_exp (-x)) (hasDerivAt_neg x))
+    ```
+    Now remember `convert`.
+    "
+  Branch
+    convert h
+    Hint "[Hint 8riva] Better use `convert! {h} using 1`"
+  convert! h using 1
+  ring
+  simp
 
 /---/
-TheoremDoc hasDerivAt_const as "hasDerivAt_const"
+TheoremDoc Polynomial.hasDerivAt as "hasDerivAt" in "R[X]"
+/---/
+TheoremDoc HasDerivAt.mul as "HasDerivAt.mul" in "HasDerivAt"
+/---/
+TheoremDoc Real.hasDerivAt_exp as "hasDerivAt_exp" in "Function"
 
-Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
-  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the
-    negative axis, where it is flat: around `x < 0` it is constantly `0`, so its derivative is `0`.
+NewTheorem Polynomial.hasDerivAt HasDerivAt.mul Real.hasDerivAt_exp
+NewDefinition Polynomial.derivative
 
-    Note that if two functions are eventually euqal around a point, then their derivatives agree
-    at this point. This theorem is called `HasDerivAt.congr_of_eventuallyEq`.
-    So show first f is eventually equal to the zero function around `x`."
-  Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0`."
-  have h : f =ᶠ[𝓝 x] fun _ ↦ 0 := by
-    Hint "[Hint sm7fu] Remember `eventually_lt_nhds` and `filter_upwards`."
-    Hint (hidden := true) "[Hint sm7fuh] First, establish `hy : ∀ᶠ (y : ℝ) in 𝓝 x, y < 0`.
-      Then use `filter_upwards` with `hy`."
-    have hy := eventually_lt_nhds hx
-    filter_upwards [hy]
-    intro a ha
-    simp [f]
-    grind
-  Hint (strict := true) "[Hint cev3] The constant function has derivative zero at any `x`:
-    establish this using `hasDerivAt_const (x : ℝ) (0 : ℝ)`."
-  have h_const := hasDerivAt_const (x : ℝ) (0 : ℝ)
-  Hint (hidden := true) "[Hint y4ym4] Finally time to apply `HasDerivAt.congr_of_eventuallyEq`."
-  apply HasDerivAt.congr_of_eventuallyEq h_const h
-
-NewTheorem HasDerivAt.congr_of_eventuallyEq hasDerivAt_const
+NewHiddenTactic «convert!»

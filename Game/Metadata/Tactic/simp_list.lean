@@ -226,6 +226,9 @@ attribute [game_simp] mul_ite MulZeroClass.mul_zero not_le eq_self Set.setOf_tru
 -- Smooth, L08:
 attribute [game_simp] mul_ite MulZeroClass.mul_zero Std.le_refl reduceIte sub_zero ite_mul MulZeroClass.zero_mul Polynomial.eval_mul Polynomial.eval_X eq_self inv_zero mul_eq_mul_right_iff inv_eq_zero Polynomial.eval_pow inv_pow Polynomial.eval_sub mul_neg mul_one Function.comp_apply Pi.mul_apply
 
+-- Smooth, L09:
+attribute [game_simp] iteratedDeriv_zero Polynomial.eval_one one_mul eq_self
+
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
 

@@ -18,4 +18,4 @@ Statement : (X ^ 2 + 1 : ℝ[X]).eval 2 = 5 := by
   Hint (hidden := true) "[Hint smth1tr] Try `ring`."
   ring
 
-NewDefinition Polynomial Polynomial.X Polynomial.eval
+NewDefinition Polynomial.eval

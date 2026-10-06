@@ -3,49 +3,73 @@ import Game.Levels.Smooth.L09
 World "Smooth"
 Level 10
 
-open Real
-open scoped ContDiff
+open Polynomial STakeOff
+
+noncomputable section
 
 Introduction "Intro Smooth L10"
 
-/---/
-TheoremDoc contDiff_of_differentiable_iteratedDeriv as "contDiff_of_differentiable_iteratedDeriv"
-  in "Function"
+/-- The polynomials `P n` for which `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`. -/
+def STakeOff.P : ℕ → ℝ[X]
+  | 0 => 1
+  | n + 1 => X ^ 2 * (P n - derivative (P n))
+
+/-- The polynomials `P n` with `P 0 = 1` and `P (n+1) = X² · (P n - derivative (P n))`. -/
+DefinitionDoc P as "P"
 
 /---/
-TheoremDoc HasDerivAt.differentiableAt as "HasDerivAt.differentiableAt" in "Function"
+TheoremDoc iteratedDeriv_succ as "iteratedDeriv_succ"
 
 /---/
-TheoremDoc Real.hasDerivAt_exp as "Real.hasDerivAt_exp" in "Function"
+TheoremDoc HasDerivAt.deriv as "HasDerivAt.deriv"
 
-Statement : ContDiff ℝ ∞ exp := by
-  Hint "[Hint sm10bgf] `ContDiff ℝ ∞` means *smooth*: differentiable arbitrarily often.
-    By `contDiff_of_differentiable_iteratedDeriv` it suffices to show that every
-    iterated derivative is differentiable. For `exp` this is easy, since every derivative of
-    exp is exp itself."
-  Hint (strict := true) (hidden := true) "[Hint sm10ih] First establish
-    `∀ m, iteratedDeriv m exp = exp` by induction."
-  have h : ∀ m, iteratedDeriv m exp = exp := by
-    intro m
-    induction m with n ih
-    · apply iteratedDeriv_zero
-    · funext x
-      rw [iteratedDeriv_succ, ih]
-      Hint (hidden := true) "[Hint sm10hd] Remember `HasDerivAt.deriv` and `Real.hasDerivAt_exp`."
-      apply HasDerivAt.deriv
-      apply Real.hasDerivAt_exp
-  Hint (strict := true) "[Hint sm10cd] By `{h}`, every iterated derivative of `exp` is exp
-    itself. A function is smooth as soon as all of its iterated derivatives are differentiable,
-    so it only remains to see that exp is differentiable."
-  Hint (hidden := true) "[Hint sm10df] Apply the theorem `contDiff_of_differentiable_iteratedDeriv`."
-  apply contDiff_of_differentiable_iteratedDeriv
-  intro m _
-  rw [h]
-  intro x
-  Hint (hidden := true) "[Hint sm10da] Remember `HasDerivAt.differentiableAt` and `Real.hasDerivAt_exp`."
-  apply HasDerivAt.differentiableAt (Real.hasDerivAt_exp _)
+/-- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
+TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
 
-NewTheorem contDiff_of_differentiable_iteratedDeriv HasDerivAt.differentiableAt
-  Real.hasDerivAt_exp
+/- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
+Statement iteratedDeriv_eq_poly (n : ℕ) :
+    iteratedDeriv n f = fun x ↦ (P n).eval x⁻¹ * f x := by
+  #check P
+  Hint "[Hint sm9bgf]
+    For `f` as before, we now compute `iteratedDeriv n f`, the $n$-th derivative of f.
 
-NewDefinition ContDiff
+    The previous level showed that differentiating `x ↦ p(x⁻¹) · f x` gives
+    back a function of the *same shape*, with `p` replaced by `X² · (p - derivative p)`.
+
+    We can therefore express the derivatives in ferms of following, recursively defined
+    family of polynomials `P : ℕ → ℝ[X]`:
+    $$
+    \\begin\{aligned}
+     P(0)   &:= 1 \\\\ %(new line)
+     P(n+1) &:= X^2 · (P (n) - \\mathrm\{derivate}(P(n)) )
+    \\end\{aligned}
+    $$
+    "
+  Hint (hidden := true) "[Hint idp1] Proceed by induction on `n`, obviously."
+  induction n with n ih
+  · Hint (hidden := true) "[Hint idp2] `0`-th derivative is the function itself – that's `simp`le."
+    simp [P]
+  · Hint "[Hint idp3] Peel one derivative, then you can apply the induction hypothesis.
+    You will need `iteratedDeriv_succ`."
+    Hint (hidden := true) "[Hint sm9ritsc] Start with `funext`"
+    Branch
+      rw [iteratedDeriv_succ]
+      rw [ih]
+
+    funext x
+    rw [iteratedDeriv_succ, ih]
+    Hint "[Hint sm9ristp] Perfect! Now unfold the definition of `P` by `rw [P]`."
+    rw [P]
+    Hint (hidden := true) "[Hint sm9hdap] Remember the theorems `HasDerivAt.deriv` and
+      `hasDerivAt_polynomial_eval_inv_mul`."
+    apply HasDerivAt.deriv
+    apply hasDerivAt_polynomial_eval_inv_mul
+
+/---/
+TheoremDoc Polynomial.eval_one as "Polynomial.eval_one"
+
+/---/
+TheoremDoc one_mul as "one_mul"
+
+NewTheorem iteratedDeriv_succ HasDerivAt.deriv Polynomial.eval_one one_mul
+NewDefinition P
