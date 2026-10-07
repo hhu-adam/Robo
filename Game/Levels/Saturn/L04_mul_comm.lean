@@ -11,10 +11,8 @@ Statement (P : ℚ[X]) : X * P = P * X := by
   ring
 
 Conclusion "Conclusion Saturn L04"
-NewTactic ring
 
 /---/
 TheoremDoc mul_comm as "mul_comm" in "+ *"
 
 NewTheorem mul_comm
-NewDefinition Polynomial Polynomial.X

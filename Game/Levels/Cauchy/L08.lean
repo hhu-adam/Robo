@@ -8,10 +8,10 @@ open Real Filter Topology Cauchy
 Introduction "Intro Cauchy L08"
 
 Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
-  Hint "[Hint sm7bgf] In this level you differentiate the Cauchy take-off function `f` on the
+  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the
     negative axis, where it is flat: around `x < 0` it is constantly `0`, so its derivative is `0`.
 
-    Note that if two functions are eventually euqal around a point, then their derivatives agree
+    Note that if two functions are eventually equal around a point, then their derivatives agree
     at this point. This theorem is called `HasDerivAt.congr_of_eventuallyEq`.
     So show first f is eventually equal to the zero function around `x`."
   Hint (hidden := true) (strict := true) "[Hint cev2] Establish `f =ᶠ[𝓝 x] fun _ ↦ 0`."

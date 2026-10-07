@@ -19,7 +19,7 @@ Statement : ContDiff ℝ ∞ exp := by
   have h : ∀ m, iteratedDeriv m exp = exp := by
     intro m
     induction m with n ih
-    · apply iteratedDeriv_zero
+    · simp
     · funext x
       rw [iteratedDeriv_succ, ih]
       Hint (hidden := true) "[Hint sm10hd] Remember the new theorem `HasDerivAt.deriv`
@@ -27,7 +27,7 @@ Statement : ContDiff ℝ ∞ exp := by
       apply HasDerivAt.deriv
       apply hasDerivAt_exp
   Hint (strict := true) "[Hint sm10cd] By `{h}`, every iterated derivative of `exp` is exp
-    itself. A function is Cauchy as soon as all of its iterated derivatives are differentiable,
+    itself. A function is smooth as soon as all of its iterated derivatives are differentiable,
     so it only remains to see that exp is differentiable."
   Hint (hidden := true) "[Hint sm10df] Apply the new theorem `contDiff_of_differentiable_iteratedDeriv`."
   apply contDiff_of_differentiable_iteratedDeriv

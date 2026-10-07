@@ -7,12 +7,8 @@ open Real Filter Topology Polynomial
 
 Introduction "Intro Cauchy L02"
 
-/---/
-TheoremDoc tendsto_sq_div_exp_atTop as "tendsto_sq_div_exp_atTop"
-
 /- The square function divided by the exponential tends to `0` at infinity. -/
-Statement tendsto_sq_div_exp_atTop :
-    Tendsto (fun x : ℝ ↦ x ^ 2 / exp x) atTop (𝓝 0) := by
+Statement : Tendsto (fun x : ℝ ↦ x ^ 2 / exp x) atTop (𝓝 0) := by
   Hint (strict := true) "[Hint 2vkf4]
     `exp` is the exponential function.
 
@@ -26,7 +22,7 @@ Statement tendsto_sq_div_exp_atTop :
     Hint (hidden := true) "[Hint z5r1d] This is just `simp`."
     simp
   Hint "[Hint r8yz8] Now you want to use `{h}` to rewrite the goal.
-    But `rw` does not work well under quantifiers.
+    But `rw` does not work well under binders.
     New tactic `simp_rw` works better."
   simp_rw [h]
   Hint (hidden := true) "[Hint ewvsj] Exactly new theorem: `tendsto_div_exp_atTop`."

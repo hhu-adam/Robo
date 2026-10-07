@@ -3,11 +3,11 @@ import Mathlib.Topology.Defs.Filter
 open Lean Meta PrettyPrinter Delaborator SubExpr Topology
 
 /-!
-Display one-sided neighbourhood filters with Mathlib's `𝓝[≤]` notation,
+Display one-sided neighborhood filters with Mathlib's `𝓝[≤]` notation,
 e.g. `𝓝 0 ⊓ 𝓟 {x | x ≤ 0}` is shown as `𝓝[≤] 0`.
 -/
 
-/-- The one-sided neighbourhoods that have a Mathlib notation `𝓝[…] a`. -/
+/-- The one-sided neighborhoods that have a Mathlib notation `𝓝[…] a`. -/
 private inductive NhdsSide
   | le | lt | ge | gt | ne
 

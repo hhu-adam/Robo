@@ -31,7 +31,7 @@ Conclusion "
 
 "
 -/
-Conclusion "Conclusion Saturn L05: coefficients were in `ℕ`. Polynomes with coefficients in `ℕ`
+Conclusion "Conclusion Saturn L05: coefficients were in `ℕ`. Polynomials with coefficients in `ℕ`
 are not considered rings. `ring` does also work on half rings."
 
 NewTactic ring

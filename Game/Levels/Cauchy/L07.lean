@@ -3,7 +3,8 @@ import Game.Levels.Cauchy.L06
 World "Cauchy"
 Level 7
 
-open Real Polynomial
+namespace Real
+open Polynomial
 
 Introduction "Intro Cauchy L07"
 
@@ -33,13 +34,17 @@ Statement (x : ℝ) {p : Polynomial ℝ} :
   simp
 
 /---/
-TheoremDoc Polynomial.hasDerivAt as "hasDerivAt" in "R[X]"
-/---/
 TheoremDoc HasDerivAt.mul as "HasDerivAt.mul" in "HasDerivAt"
 /---/
 TheoremDoc Real.hasDerivAt_exp as "hasDerivAt_exp" in "Function"
+/--
+This root level version of `hasDerivAt_exp` should not be used in the game.
+It is present here only so that ambiguous invocations of `Real.hasDerivAt` pass the game engine's
+inventory checks. Lean can often figure out the disambiguity between the root version and the Real
+version of this theorem from the types passed to theorem, but the game engine currently cannot.
+-/
+TheoremDoc hasDerivAt_exp as "(hasDerivAt_exp)"
 
-NewTheorem Polynomial.hasDerivAt HasDerivAt.mul Real.hasDerivAt_exp
-NewDefinition Polynomial.derivative
+NewTheorem HasDerivAt.mul Real.hasDerivAt_exp hasDerivAt_exp
 
 NewHiddenTactic «convert!»

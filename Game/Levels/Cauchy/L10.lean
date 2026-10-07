@@ -15,7 +15,7 @@ def Cauchy.P : ℕ → ℝ[X]
   | n + 1 => X ^ 2 * (P n - derivative (P n))
 
 /-- The polynomials `P n` with `P 0 = 1` and `P (n+1) = X² · (P n - derivative (P n))`. -/
-DefinitionDoc P as "P"
+DefinitionDoc Cauchy.P as "P" in "Cauchy"
 
 /-- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
 TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
@@ -23,19 +23,18 @@ TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
 /- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
 Statement iteratedDeriv_eq_poly (n : ℕ) :
     iteratedDeriv n f = fun x ↦ (P n).eval x⁻¹ * f x := by
-  #check P
   Hint "[Hint sm9bgf]
     For `f` as before, we now compute `iteratedDeriv n f`, the $n$-th derivative of f.
 
     The previous level showed that differentiating `x ↦ p(x⁻¹) · f x` gives
     back a function of the *same shape*, with `p` replaced by `X² · (p - derivative p)`.
 
-    We can therefore express the derivatives in ferms of following, recursively defined
+    We can therefore express the derivatives in terms of following, recursively defined
     family of polynomials `P : ℕ → ℝ[X]`:
     $$
     \\begin\{aligned}
      P(0)   &:= 1 \\\\ %(new line)
-     P(n+1) &:= X^2 · (P (n) - \\mathrm\{derivate}(P(n)) )
+     P(n+1) &:= X^2 · (P (n) - \\mathrm\{derivative}(P(n)) )
     \\end\{aligned}
     $$
     "
@@ -59,12 +58,9 @@ Statement iteratedDeriv_eq_poly (n : ℕ) :
     apply hasDerivAt_polynomial_eval_inv_mul
 
 /---/
-TheoremDoc Polynomial.eval_one as "Polynomial.eval_one"
-/---/
 TheoremDoc iteratedDeriv_succ as "iteratedDeriv_succ"
 /---/
 TheoremDoc HasDerivAt.deriv as "HasDerivAt.deriv"
 
-
-NewTheorem iteratedDeriv_succ HasDerivAt.deriv Polynomial.eval_one
-NewDefinition P
+NewTheorem iteratedDeriv_succ HasDerivAt.deriv
+NewDefinition Cauchy.P iteratedDeriv

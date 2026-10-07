@@ -21,7 +21,7 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
   simp [f]
   Hint "[Hint qq87t] New theorem: `Tendsto.if`."
   apply Tendsto.if
-  Hint "[Hint xcip8] Perfect.  Now you have cut the function in two halves, and have two goals.
+  Hint "[Hint xcip8] Perfect.  Now you have cut the function into two halves, and have two goals.
     First, need to show that left half of function tends to `0` as `x → 0` “from the left”,
     i.e. along `𝓝[≤] 0`. Note that here the function is constant."
   Hint (hidden := true) "[Hint lpk2t] Remember `tendsto_const_nhds`."
@@ -38,20 +38,20 @@ Statement tendsto_polynomial_inv_mul_zero (p : Polynomial ℝ) :
      The theorem `Tendsto.comp` says how limits behave under composition.
      First establish how the two functions behave:
      ```
-     Tendsto (fun (x : ℝ) ↦ eval x p / rexp x) atTop (𝓝 0)
+     Tendsto (fun (x : ℝ) ↦ eval x p / exp x) atTop (𝓝 0)
      ```
      and
      ```
      Tendsto (fun (x : ℝ) ↦ x⁻¹) (𝓝[>] 0 ) atTop
      ```
      "
-  have h1 : Tendsto (fun (x : ℝ) ↦ eval x p / rexp x) atTop (𝓝 0) := by
+  have h1 : Tendsto (fun (x : ℝ) ↦ eval x p / exp x) atTop (𝓝 0) := by
     Hint (hidden := true) "[Hint hi2ko] Remember `tendsto_div_exp_atTop`."
     apply tendsto_div_exp_atTop
   have h2 : Tendsto (fun (x : ℝ) ↦ x⁻¹) (𝓝[>] 0 ) atTop := by
     Hint "[Hint mbyuc] Exactly new theorem: `tendsto_inv_nhdsGT_zero`."
     apply tendsto_inv_nhdsGT_zero
-  Hint (hidden := true) "[Hint 6bxi7] You're in good shap. Remember new theorem: `Tendsto.comp`."
+  Hint (hidden := true) "[Hint 6bxi7] You're in good shape. Remember new theorem: `Tendsto.comp`."
   apply Tendsto.comp h1 h2
 
   /-
@@ -71,3 +71,4 @@ TheoremDoc Real.exp_neg as "exp_neg" in "Function"
 TheoremDoc tendsto_inv_nhdsGT_zero as "tendsto_inv_nhdsGT_zero" in "Function"
 
 NewTheorem Filter.Tendsto.if Filter.Tendsto.comp Real.exp_neg tendsto_inv_nhdsGT_zero
+NewDefinition Real.exp

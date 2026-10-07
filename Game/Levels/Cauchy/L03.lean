@@ -11,10 +11,10 @@ Introduction "Intro Cauchy L03"
 
 namespace Cauchy
 
-/-- Cauchy take-off function -/
+/-- smooth take-off function -/
 def f : ℝ → ℝ := fun x ↦ if x ≤ 0 then 0 else exp (- x⁻¹)
 
-/-- The Cauchy take-off function `f : ℝ → ℝ` defined by `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`.
+/-- The smooth take-off function `f : ℝ → ℝ` defined by `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`.
 $$
 f(x) = \\begin\{cases}
          0 & \\text\{if } x \\le 0, \\\\ %(new line)
@@ -29,7 +29,7 @@ TheoremDoc Cauchy.zero_of_nonpos as "zero_of_nonpos"
 
 /- On the non-positive axis the take-off function is `0`. -/
 Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
-  Hint "[Hint smth3f] The *Cauchy take-off function* `f` is
+  Hint "[Hint smth3f] The *smooth take-off function* `f` is
     $$
     f(x) = \\begin\{cases}
       0 & \\text\{if } x \\le 0, \\\\ %(new line)
@@ -37,7 +37,7 @@ Statement zero_of_nonpos {x : ℝ} (hx : x ≤ 0) : f x = 0 := by
     \\end\{cases}
     $$
     It is flat `0` on the left and rises as `exp (-x⁻¹)` on the right — the seam at `0` is
-    where Cauchyness is interesting.
+    where smoothness is interesting.
 
     On the left of the seam there is nothing to compute: unfolding f, the
     assumption `{hx}` picks the first branch of the `if`."

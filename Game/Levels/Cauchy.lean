@@ -12,11 +12,11 @@ import Game.Levels.Cauchy.L11
 import Game.Levels.Cauchy.L12
 
 /-!
-The planet Cauchy builds the Cauchy take-off function `f x = if x ≤ 0 then 0 else
+The planet Cauchy builds the smooth take-off function `f x = if x ≤ 0 then 0 else
 exp (-x⁻¹)`: from polynomial evaluation and `exp` outgrowing polynomials, through
-the derivative rules (`HasDerivAt.comp`, `.mul`, `.exp`, `hasDerivAt_inv`,
+the derivative rules (`HasDerivAt.comp`, `.mul`, `hasDerivtAt_exp`, `hasDerivAt_inv`,
 `hasDerivAt_neg`), up to the formula for every iterated derivative of `f` and
-finally the fact that `f` is Cauchy (`ContDiff ℝ ∞ f`, via
+finally the fact that `f` is smooth (`ContDiff ℝ ∞ f`, via
 `contDiff_of_differentiable_iteratedDeriv`).
 -/
 

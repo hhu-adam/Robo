@@ -5,10 +5,11 @@ Level 9
 
 Introduction "Intro Cauchy L09 (Boss)"
 
-open Polynomial Filter Topology Cauchy Real
+namespace Cauchy
+open Polynomial Filter Topology Real
 
 /-- The derivative of `x ↦ p(x⁻¹) · f x` keeps the same `polynomial · f` shape. -/
-TheoremDoc hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv_mul" in "Function"
+TheoremDoc Cauchy.hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv_mul" in "Cauchy"
 
 Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     HasDerivAt (fun x ↦ p.eval x⁻¹ * f x)
@@ -124,11 +125,18 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     apply HasDerivAt.congr_of_eventuallyEq _ hev
     Hint (strict := true) "[Hint sm8cvx] The derivative in the goal is not written in the form
       that the rules produce. So first build the derivative of this composition from the rules
-      you know (`Polynomial.hasDerivAt`, `HasDerivAt.exp`, `HasDerivAt.mul`, `hasDerivAt_inv`,
-      `HasDerivAt.comp`) with `have`, and only then compare it with the goal."
+      you know with `have`:
+      - `{p}.hasDerivAt`
+      - `hasDerivAt_neg`
+      - `hasDerivAt_exp`
+      - `hasDerivAt_inv`
+      - `HasDerivAt.mul`
+      - `HasDerivAt.comp`
+      Only then compare it with the goal."
     have h₁ := p.hasDerivAt x⁻¹
     have h_neg := hasDerivAt_neg x⁻¹
-    have h₂ := HasDerivAt.exp h_neg
+    have h_exp := hasDerivAt_exp (-x⁻¹)
+    have h₂ := HasDerivAt.comp x⁻¹ h_exp h_neg
     have h_mul := HasDerivAt.mul h₁ h₂
     have h₃ := hasDerivAt_inv (x := x) (by grind)
     have h_comp := HasDerivAt.comp x h_mul h₃

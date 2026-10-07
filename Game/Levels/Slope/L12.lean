@@ -31,7 +31,7 @@ Statement (c : ℝ) :
       apply tendsto_nhdsWithin_congr pos_slope
       apply tendsto_const_nhds
     apply tendsto_nhds_unique hc h1
-  Hint "[Hint ftysn1] Perfect! You're on track. Now, you can prove `c = -1` by similar process."
+  Hint "[Hint ftysn1] Perfect! You're on track. Now, you can prove `c = -1` by a similar process."
   have e₂ : c = -1 := by
     have hc : Tendsto (slope f 0) (𝓝[<] 0) (𝓝 c) := by
       apply h.mono_left

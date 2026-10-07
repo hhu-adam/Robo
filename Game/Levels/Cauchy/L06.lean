@@ -31,7 +31,7 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
     "
   Branch
     /- An alternative, backward approach in which the proof assistant actually assists.
-       However, this only works by chance, when the derivate is already written in the correct form.
+       However, this only works by chance, when the derivative is already written in the correct form.
        It fails in the boss level 08, so this approach should *not* be introduced here. -/
     have h_comp : (fun x ↦ p.eval (-x⁻¹)) = p.eval ∘ Neg.neg ∘ Inv.inv := by
       rfl
@@ -46,7 +46,7 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
   Branch
     have := hasDerivAt_neg x
     Hint "[Hint 3cbyh] That's not what you want. If you want to apply the chain rule,
-      you will need the derivate of `neg ∘ inv` at a different point than `x`."
+      you will need the derivative of `neg ∘ inv` at a different point than `x`."
   have h_neg := hasDerivAt_neg x⁻¹
   Hint (strict := true) "[Hint 9uibu] Now apply the chain rule, encoded by the new theorem
     ```
@@ -54,7 +54,6 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
     ```
     "
   have h_neginv := HasDerivAt.comp x h_neg h_inv
-  have := HasDerivAt.comp x (hasDerivAt_neg x⁻¹) (hasDerivAt_inv hx)
   Hint (strict := true) "[Hint fir3i] You could have done this all in one step:
     ```
     have {h_neginv} := HasDerivAt.comp x (hasDerivAt_neg x⁻¹) (hasDerivAt_inv hx)
@@ -68,10 +67,13 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
   apply HasDerivAt.comp x h_p h_neginv
 
 /---/
+TheoremDoc Polynomial.hasDerivAt as "hasDerivAt" in "R[X]"
+/---/
 TheoremDoc HasDerivAt.comp as "HasDerivAt.comp" in "HasDerivAt"
 /---/
 TheoremDoc hasDerivAt_inv as "hasDerivAt_inv" in "Function"
 /---/
 TheoremDoc hasDerivAt_neg as "hasDerivAt_neg" in "Function"
 
-NewTheorem HasDerivAt.comp hasDerivAt_inv hasDerivAt_neg
+NewTheorem Polynomial.hasDerivAt HasDerivAt.comp hasDerivAt_inv hasDerivAt_neg
+NewDefinition Polynomial.derivative
