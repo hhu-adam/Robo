@@ -6,7 +6,7 @@ Level 1
 open Filter Topology
 
 Introduction "Intro Cartan L01: Remember that for a point `a` in `ℝ` (`a : ℝ`), `𝓝 a` is the set
-of all neighbourhoods of a, i.e. subsets of ℝ that contain an open ball around a."
+of all neighborhoods of a, i.e. subsets of ℝ that contain an open ball around a."
 
 /---/
 TheoremDoc Filter.univ_mem as "Filter.univ_mem"

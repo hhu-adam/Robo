@@ -686,13 +686,52 @@ You can see this by `rw`ing with `slope_def_field` (`rw [slope_def_field]`).
 DefinitionDoc slope as "slope" in "Function"
 
 /--
-For a function `f`, `f : ℝ → ℝ`, a point `x`, `x : ℝ` and
-a number `a`, `a : ℝ`, `HasDerivAt f a x` means that the derivative of f at x is a.
+For a function `f`, `f : ℝ → ℝ`, a point `x`, `x : ℝ` and `a`, `a : ℝ`,
+`HasDerivAt f a x` means that the derivative of f at x exists and is equal to a.
 We would usually write something like $f'(x) = a$.
+
 You can `rw` with `hasDerivAt_iff_tendsto_slope` (`rw [hasDerivAt_iff_tendsto_slope]`)
 to expand this into the usual definition of the derivative in terms of the `slope` of f.
 -/
 DefinitionDoc HasDerivAt as "HasDerivAt" in "Function"
+
+/--
+For a function `f`, `f : ℝ → ℝ` and `n`, `n : ℕ`, `iteratedDeriv n f` is the n-th derivative of f,
+as a function `ℝ → ℝ`, if it exists.
+
+Careful: if the n-th derivative does not exist, this is defined as the zero function.
+-/
+DefinitionDoc iteratedDeriv as "iteratedDeriv" in "Function"
+
+/-- `p.eval a` evaluates the polynomial `p` at the point `a`, substituting
+`a` for the variable `X`. -/
+DefinitionDoc Polynomial.eval as "eval"
+
+/-- `Real.exp x` is the exponential function $e^x$. -/
+DefinitionDoc Real.exp as "Real.exp" in "Function"
+
+/-- For a polynomial `p`, `derivative p` (also written `p.derivative`) is its
+formal derivative. -/
+DefinitionDoc Polynomial.derivative as "Polynomial.derivative"
+
+/- Does not seem to be used anywhere at the moment.
+/-- For polynomials `p` and `q`, `p.comp q` is their composition as a polynomial,
+obtained by substituting `q` for the variable `X` in `p`; that is, $p(q(X))$. -/
+DefinitionDoc Polynomial.comp as "Polynomial.comp"
+-/
+
+/--
+For a function `f`, `f : ℝ → ℝ` and `n`, `n : ℕ`, `ContDiff ℝ n f` means that f is n times
+continuously differentiable, i.e. $f \in C^n$.
+In particular, `ContDiff ℝ ∞ f` means that f can be differentiated arbitrarily often,
+i.e. that f is *smooth* ($f \in C^\infty$).
+-/
+DefinitionDoc ContDiff as "ContDiff"
+
+/-- `rexp`, `exp` and `Real.exp` each denote the exponential function `ℝ → ℝ`
+(otherwise commonly denoted as $x ↦ e^x$)
+-/
+DefinitionDoc Real.exp as "exp" in "Function"
 
 /--
 For types `α` and `β`, `α ≃ β` or (`Equiv α β`) is the type of functions from `α → β` with a

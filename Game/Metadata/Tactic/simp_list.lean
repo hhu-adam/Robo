@@ -211,6 +211,24 @@ attribute [game_simp] gt_iff_lt Set.mem_setOf_eq
 -- Slope, L06:
 attribute [game_simp] nhdsWithin_univ eq_self
 
+-- Cauchy, L01:
+attribute [game_simp] Polynomial.eval_add Polynomial.eval_pow Polynomial.eval_X Polynomial.eval_one
+
+-- Cauchy, L02:
+attribute [game_simp] Polynomial.eval_pow Polynomial.eval_X
+
+-- Cauchy, L03:
+attribute [game_simp] reduceIte eq_self
+
+-- Cauchy, L04:
+attribute [game_simp] mul_ite MulZeroClass.mul_zero not_le eq_self Set.setOf_true Set.mem_univ implies_true
+
+-- Cauchy, L08:
+attribute [game_simp] mul_ite MulZeroClass.mul_zero Std.le_refl reduceIte sub_zero ite_mul MulZeroClass.zero_mul Polynomial.eval_mul Polynomial.eval_X eq_self inv_zero mul_eq_mul_right_iff inv_eq_zero Polynomial.eval_pow inv_pow Polynomial.eval_sub mul_neg mul_one Function.comp_apply Pi.mul_apply
+
+-- Cauchy, L09:
+attribute [game_simp] iteratedDeriv_zero Polynomial.eval_one one_mul eq_self
+
 -- Vieta, L02_Function:
 attribute [game_simp] Int.reducePow eq_self
 

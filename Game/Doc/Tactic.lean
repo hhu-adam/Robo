@@ -525,21 +525,16 @@ The `simp` tactic attempts to apply a large number of lemmas to simplify a given
 -/
 TacticDoc simp
 
-/-
-`simp_rw [h₁, h₂, h₃]` versucht wie `rw` jedes Lemma der Reihe nach zu Umschreiben zu verwenden,
-verwendet aber jedes Lemma so oft es kann.
+/--
+`simp_rw` is a stronger form of `rw`.
+`simp_rw [h₁, h₂, h₃]` attempts to rewrite with each of `h₁`, `h₂`, `h₃`, in this order.
+The main differences to a plain rw are:
 
-## Details
-
-Es bestehen aber drei grosse Unterschiede zu `rw`:
-
-* `simp_rw` wendet jedes Lemma so oft an wie es nur kann.
-* `simp_rw` kann besser unter Quantoren umschreiben als `rw`.
-* `simp_rw` führt nach jedem Schritt ein `simp only []` aus und vereinfacht dadurch grundlegendste
-  Sachen.
--
-TacticDoc simp_rw
+* simp_rw applies each lemma/hypothesis as often as possible.
+* simp_rw is better at rewriting under quantifiers and binders.
+* simp_rw follows each step with `simp only []`
 -/
+TacticDoc simp_rw
 
 /--
 `specialize h a₁ a₂` is equivalent to `have h := h a₁ a₂`: the tactic replaces an assumption
@@ -682,3 +677,27 @@ h₂ : p₂ x
 ```
 -/
 TacticDoc filter_upwards
+
+/--
+If a hypothesis `h` is almost the goal, `convert h` closes the goal using `h`
+and creates new goals for the places where the goal and `h` differ.
+
+## Example
+
+```
+h : HasDerivAt f a x
+⊢ HasDerivAt g a x
+```
+After `convert h`, it remains to show
+```
+⊢ g = f
+```
+
+## Variants
+
+- `convert ← h` creates the new goals in the opposite direction (here `f = g`).
+- `convert h using n` only compares the goal and `h` up to depth `n`.
+  Use it when `convert` breaks the goal into too many small (or even false) pieces.
+- `convert! h` additionally closes new goals that hold by definition.
+-/
+TacticDoc convert

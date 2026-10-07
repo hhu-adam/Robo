@@ -34,4 +34,4 @@ Statement :  ∀ᶠ (x : ℝ) in atTop, 1 / x < 1 / 5 := by
   · grind
   · grind
 
-NewTheorem Filter.eventually_iff inv_lt_inv₀ lt_inv_comm₀ inv_lt_inv₀
+NewTheorem Filter.eventually_iff inv_lt_inv₀ lt_inv_comm₀
