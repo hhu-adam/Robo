@@ -34,7 +34,9 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
       Hint (hidden := true) "[Hint s8fuelhx] Combine `filter_upwards` and `eventually_lt_nhds`."
       filter_upwards [eventually_lt_nhds hx]
       intro a ha
-      rw [zero_of_nonpos ha.le, mul_zero]
+      rw [zero_of_nonpos]
+      simp
+      grind
     Hint (hidden := true) "[Hint s8rcoe] Remember the theorem `HasDerivAt.congr_of_eventuallyEq`."
     apply HasDerivAt.congr_of_eventuallyEq _ he
     apply hasDerivAt_const
@@ -87,30 +89,26 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     · filter_upwards [eventually_gt_nhds hx] with y hy
       simp [f, hnot_le hy]
     -/
+    /- -- sketch proof using `deriv`.
+    have xneq : x ≠ 0 := by grind
+    have : deriv ((fun x ↦ p.eval x) ∘ Inv.inv * f) x =
+      ((X ^ 2 * (p - derivative p)).eval x⁻¹ * f x) := by
+      rw [deriv_mul,deriv_comp,deriv_inv,Polynomial.deriv]
+      sorry
+    rw [← this]
+    apply DifferentiableAt.hasDerivAt
+    apply DifferentiableAt.mul
+    · fun_prop
+    · have hevf : f =ᶠ[𝓝 x] fun y ↦ exp (-y⁻¹) := by
+        filter_upwards [eventually_gt_nhds hx] with y hy
+        unfold f
+        rw [if_neg]
+        grind
+      rw [hevf.differentiableAt_iff]
+      fun_prop
+    -/
     /- By definition, `f x = Real.exp (-x⁻¹)`, since `0 < x` -/
     Hint (strict := true) "[Hint sm8hf] First establish that `f x = exp (-x⁻¹)`."
-    --Branch
-      -- Alternative proof using `deriv`.
-      /- have xneq : x ≠ 0 := by grind
-      have : deriv ((fun x ↦ p.eval x) ∘ Inv.inv * f) x =
-        ((X ^ 2 * (p - derivative p)).eval x⁻¹ * f x) := by
-        rw [deriv_mul,deriv_comp,deriv_inv,Polynomial.deriv]
-        · sorry
-        · sorry
-        · sorry
-        · sorry
-        · sorry
-      rw [← this]
-      apply DifferentiableAt.hasDerivAt
-      apply DifferentiableAt.mul
-      · fun_prop
-      · have hevf : f =ᶠ[𝓝 x] fun y ↦ exp (-y⁻¹) := by
-          filter_upwards [eventually_gt_nhds hx] with y hy
-          unfold f
-          rw [if_neg]
-          grind
-        rw [hevf.differentiableAt_iff]
-        fun_prop -/
     have hf : f x = exp (-x⁻¹) := by
       unfold f
       rw [if_neg]
@@ -139,14 +137,3 @@ Statement hasDerivAt_polynomial_eval_inv_mul (p : ℝ[X]) (x : ℝ) :
     convert! h_comp using 1
     simp [hf]
     ring
-
-
-
-
-/---/
-TheoremDoc eventually_gt_nhds as "eventually_gt_nhds"
-
-/---/
-TheoremDoc MulZeroClass.mul_zero as "mul_zero" in "+ *"
-
-NewTheorem MulZeroClass.mul_zero eventually_gt_nhds

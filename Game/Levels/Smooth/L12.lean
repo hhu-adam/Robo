@@ -6,7 +6,7 @@ Level 12
 open Polynomial STakeOff
 open scoped ContDiff
 
-Introduction "Intro Smooth L12"
+Introduction "Intro Smooth L12 (Second boss)"
 
 Statement : ContDiff ℝ ∞ f := by
   apply contDiff_of_differentiable_iteratedDeriv

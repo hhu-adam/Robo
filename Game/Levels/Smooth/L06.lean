@@ -42,20 +42,26 @@ Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :
       · apply hasDerivAt_neg
       · apply hasDerivAt_inv hx
   have h_inv := hasDerivAt_inv hx
-  Hint (strict := true) "[Hint szsqh] Now similarly for `neg`."
+  Hint (strict := true) "[Hint szsqh] Now similarly for `x ↦ -x`."
   Branch
     have := hasDerivAt_neg x
     Hint "[Hint 3cbyh] That's not what you want. If you want to apply the chain rule,
       you will need the derivate of `neg ∘ inv` at a different point than `x`."
   have h_neg := hasDerivAt_neg x⁻¹
-  Hint (strict := true) "[Hint 9uibu] Excellent!  Now apply the chain rule.
+  Hint (strict := true) "[Hint 9uibu] Now apply the chain rule, encoded by the new theorem
     ```
     have h_neginv := HasDerivAt.comp …
     ```
     "
   have h_neginv := HasDerivAt.comp x h_neg h_inv
-  Hint (strict := true) "[Hint fir3i] Excellent.  Now proceed in a similar fashion for the
-    composition with `p`."
+  have := HasDerivAt.comp x (hasDerivAt_neg x⁻¹) (hasDerivAt_inv hx)
+  Hint (strict := true) "[Hint fir3i] You could have done this all in one step:
+    ```
+    have {h_neginv} := HasDerivAt.comp x (hasDerivAt_neg x⁻¹) (hasDerivAt_inv hx)
+    ```
+    But easier to take one step at a time.
+
+    Now proceed in a similar fashion for the composition with `p`."
   have h_p := p.hasDerivAt (-x⁻¹)
   clear h_neg h_inv hx
   Hint (hidden := true) "[Hint 70lg1] Now the new theorem that encodes the chain rule: `HasDerivAt.comp`"

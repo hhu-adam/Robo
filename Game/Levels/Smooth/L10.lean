@@ -17,12 +17,6 @@ def STakeOff.P : ℕ → ℝ[X]
 /-- The polynomials `P n` with `P 0 = 1` and `P (n+1) = X² · (P n - derivative (P n))`. -/
 DefinitionDoc P as "P"
 
-/---/
-TheoremDoc iteratedDeriv_succ as "iteratedDeriv_succ"
-
-/---/
-TheoremDoc HasDerivAt.deriv as "HasDerivAt.deriv"
-
 /-- The `n`-th derivative of `f` is `(P n)(x⁻¹) · f x`. -/
 TheoremDoc iteratedDeriv_eq_poly as "iteratedDeriv_eq_poly"
 
@@ -55,10 +49,9 @@ Statement iteratedDeriv_eq_poly (n : ℕ) :
     Branch
       rw [iteratedDeriv_succ]
       rw [ih]
-
     funext x
     rw [iteratedDeriv_succ, ih]
-    Hint "[Hint sm9ristp] Perfect! Now unfold the definition of `P` by `rw [P]`."
+    Hint "[Hint sm9ristp] Perfect! Now unfold the definition of `P` with `rw [P]`."
     rw [P]
     Hint (hidden := true) "[Hint sm9hdap] Remember the theorems `HasDerivAt.deriv` and
       `hasDerivAt_polynomial_eval_inv_mul`."
@@ -67,9 +60,11 @@ Statement iteratedDeriv_eq_poly (n : ℕ) :
 
 /---/
 TheoremDoc Polynomial.eval_one as "Polynomial.eval_one"
-
 /---/
-TheoremDoc one_mul as "one_mul"
+TheoremDoc iteratedDeriv_succ as "iteratedDeriv_succ"
+/---/
+TheoremDoc HasDerivAt.deriv as "HasDerivAt.deriv"
 
-NewTheorem iteratedDeriv_succ HasDerivAt.deriv Polynomial.eval_one one_mul
+
+NewTheorem iteratedDeriv_succ HasDerivAt.deriv Polynomial.eval_one
 NewDefinition P

@@ -20,16 +20,11 @@ Statement (x : ℝ) {p : Polynomial ℝ} :
   have h_exp := hasDerivAt_exp (-x) --h_neg
   have h_expneg := HasDerivAt.comp x h_exp h_neg
   clear h_neg h_exp
-  Hint (strict := true) "[Hint pxe2] Now establish what the product rule, `HasDerivAt.mul`,
-    gives you, using another `have`."
+  Hint (strict := true) "[Hint pxe2] Now establish what the product rule, encoded by the
+    new theorem `HasDerivAt.mul`."
   have h := HasDerivAt.mul h_p h_expneg
-  Hint (strict := true) "[Hint t99r1] Of course, you could also do this all in one step by chaining
-    these rules together:
-    ```
-    have {h} := HasDerivAt.mul (p.hasDerivAt x) (HasDerivAt.comp x (hasDerivAt_exp (-x)) (hasDerivAt_neg x))
-    ```
-    Now remember `convert`.
-    "
+  --have {h} := HasDerivAt.mul (p.hasDerivAt x) (HasDerivAt.comp x (hasDerivAt_exp (-x)) (hasDerivAt_neg x))
+  Hint (strict := true) "[Hint t99r1] Remember `convert`."
   Branch
     convert h
     Hint "[Hint 8riva] Better use `convert! {h} using 1`"
