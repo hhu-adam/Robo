@@ -1,11 +1,11 @@
-import Game.Levels.Smooth.L01
+import Game.Levels.Cauchy.L01
 
-World "Smooth"
+World "Cauchy"
 Level 2
 
 open Real Filter Topology Polynomial
 
-Introduction "Intro Smooth L02"
+Introduction "Intro Cauchy L02"
 
 /---/
 TheoremDoc tendsto_sq_div_exp_atTop as "tendsto_sq_div_exp_atTop"

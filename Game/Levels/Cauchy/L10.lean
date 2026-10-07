@@ -1,16 +1,16 @@
-import Game.Levels.Smooth.L09
+import Game.Levels.Cauchy.L09
 
-World "Smooth"
+World "Cauchy"
 Level 10
 
-open Polynomial STakeOff
+open Polynomial Cauchy
 
 noncomputable section
 
-Introduction "Intro Smooth L10"
+Introduction "Intro Cauchy L10"
 
 /-- The polynomials `P n` for which `iteratedDeriv n f = fun x ↦ (P n)(x⁻¹) · f x`. -/
-def STakeOff.P : ℕ → ℝ[X]
+def Cauchy.P : ℕ → ℝ[X]
   | 0 => 1
   | n + 1 => X ^ 2 * (P n - derivative (P n))
 

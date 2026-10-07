@@ -1,11 +1,11 @@
 import Game.Metadata
 
-World "Smooth"
+World "Cauchy"
 Level 1
 
 open Polynomial
 
-Introduction "Intro Smooth L01"
+Introduction "Intro Cauchy L01"
 
 /- Evaluating the polynomial `X ^ 2 + 1` at `2` gives `5`. -/
 Statement : (X ^ 2 + 1 : ℝ[X]).eval 2 = 5 := by

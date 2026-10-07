@@ -1,11 +1,11 @@
-import Game.Levels.Smooth.L05
+import Game.Levels.Cauchy.L05
 
-World "Smooth"
+World "Cauchy"
 Level 6
 
 open Polynomial
 
-Introduction "Intro Smooth L06"
+Introduction "Intro Cauchy L06"
 
 /- The derivative of `x ↦ p(-x⁻¹)` at `x ≠ 0`, obtained from the chain rule. -/
 Statement (p : ℝ[X]) (x : ℝ) (hx : x ≠ 0) :

@@ -1,11 +1,11 @@
-import Game.Levels.Smooth.L06
+import Game.Levels.Cauchy.L06
 
-World "Smooth"
+World "Cauchy"
 Level 7
 
 open Real Polynomial
 
-Introduction "Intro Smooth L07"
+Introduction "Intro Cauchy L07"
 
 /- The derivative of `x ↦ p(x) · exp (-x)`, from the product rule. -/
 Statement (x : ℝ) {p : Polynomial ℝ} :

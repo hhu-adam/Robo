@@ -1,14 +1,14 @@
-import Game.Levels.Smooth.L07
+import Game.Levels.Cauchy.L07
 
-World "Smooth"
+World "Cauchy"
 Level 8
 
-open Real Filter Topology STakeOff
+open Real Filter Topology Cauchy
 
-Introduction "Intro Smooth L08"
+Introduction "Intro Cauchy L08"
 
 Statement (x : ℝ) (hx : x < 0) : HasDerivAt f 0 x := by
-  Hint "[Hint sm7bgf] In this level you differentiate the smooth take-off function `f` on the
+  Hint "[Hint sm7bgf] In this level you differentiate the Cauchy take-off function `f` on the
     negative axis, where it is flat: around `x < 0` it is constantly `0`, so its derivative is `0`.
 
     Note that if two functions are eventually euqal around a point, then their derivatives agree

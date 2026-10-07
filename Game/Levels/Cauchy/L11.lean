@@ -1,13 +1,13 @@
-import Game.Levels.Smooth.L10
+import Game.Levels.Cauchy.L10
 
-World "Smooth"
+World "Cauchy"
 Level 11
 
 
 open scoped ContDiff
 namespace Real
 
-Introduction "Intro Smooth L11"
+Introduction "Intro Cauchy L11"
 
 Statement : ContDiff ℝ ∞ exp := by
   Hint "[Hint sm10bgf] `ContDiff ℝ ∞` means *smooth*: differentiable arbitrarily often.
@@ -27,7 +27,7 @@ Statement : ContDiff ℝ ∞ exp := by
       apply HasDerivAt.deriv
       apply hasDerivAt_exp
   Hint (strict := true) "[Hint sm10cd] By `{h}`, every iterated derivative of `exp` is exp
-    itself. A function is smooth as soon as all of its iterated derivatives are differentiable,
+    itself. A function is Cauchy as soon as all of its iterated derivatives are differentiable,
     so it only remains to see that exp is differentiable."
   Hint (hidden := true) "[Hint sm10df] Apply the new theorem `contDiff_of_differentiable_iteratedDeriv`."
   apply contDiff_of_differentiable_iteratedDeriv

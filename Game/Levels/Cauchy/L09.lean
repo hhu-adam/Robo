@@ -1,11 +1,11 @@
-import Game.Levels.Smooth.L08
+import Game.Levels.Cauchy.L08
 
-World "Smooth"
+World "Cauchy"
 Level 9
 
-Introduction "Intro Smooth L09 (Boss)"
+Introduction "Intro Cauchy L09 (Boss)"
 
-open Polynomial Filter Topology STakeOff Real
+open Polynomial Filter Topology Cauchy Real
 
 /-- The derivative of `x ↦ p(x⁻¹) · f x` keeps the same `polynomial · f` shape. -/
 TheoremDoc hasDerivAt_polynomial_eval_inv_mul as "hasDerivAt_polynomial_eval_inv_mul" in "Function"

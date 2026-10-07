@@ -1,12 +1,12 @@
-import Game.Levels.Smooth.L11
+import Game.Levels.Cauchy.L11
 
-World "Smooth"
+World "Cauchy"
 Level 12
 
-open Polynomial STakeOff
+open Polynomial Cauchy
 open scoped ContDiff
 
-Introduction "Intro Smooth L12 (Second boss)"
+Introduction "Intro Cauchy L12 (Second boss)"
 
 Statement : ContDiff ℝ ∞ f := by
   apply contDiff_of_differentiable_iteratedDeriv

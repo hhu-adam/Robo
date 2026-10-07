@@ -1,11 +1,11 @@
-import Game.Levels.Smooth.L04
+import Game.Levels.Cauchy.L04
 
-World "Smooth"
+World "Cauchy"
 Level 5
 
-open Real Filter Topology STakeOff Polynomial
+open Real Filter Topology Cauchy Polynomial
 
-Introduction "Intro Smooth L05"
+Introduction "Intro Cauchy L05"
 
 /-- -/
 TheoremDoc tendsto_polynomial_inv_mul_zero as "tendsto_polynomial_inv_mul_zero" in "Function"
