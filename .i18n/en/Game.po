@@ -3981,37 +3981,35 @@ msgstr "**Head of Operations**: Here, for example:"
 #. §0: `\\to`
 #. §1: `«{B}»`
 #. §2: `«{A}»`
-#. §3: `«{A}» und «{B}»`
-#. §4: `tauto`
-#. §5: `«{A}»`
-#. §6: `h`
-#. §7: `intro h`
+#. §3: `tauto`
+#. §4: `h`
+#. §5: `intro h`
 #: Game.Levels.Implis.L01_Intro
 msgid ""
-"Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
-"is also true. You cannot use §4. Begin by assumption that §5 is true. For "
-"this choose\n"
-"name §6 for assumption and introduce it via §7"
+"Prove the implication (§0):\n"
+"assuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\n"
+"Begin by assumption that A is true.\n"
+"Choose a name §4 for this assumption and introduce it via §5."
 msgstr ""
 "**Head of Operations**: The workers think this is correct and that we "
 "urgently need it. But no one can prove it to me. \n"
 "\n"
 "**You**: One moment. This *is* an implication (§0) again! We assume that §1 "
-"holds, and we need to show that under this assumption §2 implies §3. Well, "
+"holds, and we need to show that under this assumption §2 implies “§2 and §1”. Well, "
 "of course! That's obviously true.\n"
 "\n"
 "The Head of Operations looks at you expectantly. \n"
 "\n"
-"**You** *(softly to Scribble)*: Should I write down §4 for him? \n"
+"**You** *(softly to Scribble)*: Should I write down §3 for him? \n"
 "\n"
 "**Scribble** *(equally softy)*: The way he looks, I'm afraid he won't "
 "understand that either. Better write out the proof.\n"
 "\n"
 "**You**: But how? I'd like to start by saying something like “So let's "
-"assume that §5 holds …” \n"
+"assume that §2 holds …” \n"
 "\n"
 "**Scribble**: Yes, good idea. Just choose a name for your assumption, for "
-"example §6 as in “hypothesis”, and start with §7."
+"example §4 as in “hypothesis”, and start with §5."
 
 #: Game.Levels.Implis.L02_Revert
 msgid "Conclusion Implis L02"
@@ -5200,26 +5198,25 @@ msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#. §2: `«{A}» und «{B}»`
-#. §3: `trivial`
-#. §4: `constructor`
-#. §5: `destructor`
-#. §6: `constructor`
+#. §2: `trivial`
+#. §3: `constructor`
+#. §4: `destructor`
+#. §5: `constructor`
 #: Game.Levels.Logo.L10_And
 msgid ""
-"Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
-"You cannot just try §3. Use §4 to divide goal into two. Remind that the "
+"Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\n"
+"You cannot just try §2. Use §3 to divide goal into two. Remind that the "
 "tactic\n"
-"is not called §5. Try §6"
+"is not called §4. Try §5"
 msgstr ""
 "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And "
-"they want us to prove §2. These formalosophanatics are driving me crazy.  \n"
+"they want us to prove “§0 and §1”. These formalosophanatics are driving me crazy.  \n"
 "\n"
-"**Scribble**:  You simply need to break the goal into two parts. Try §4.\n"
+"**Scribble**:  You simply need to break the goal into two parts. Try §3.\n"
 "\n"
-"**You**: You mean §5, perhaps? \n"
+"**You**: You mean §4, perhaps? \n"
 "\n"
-"**Scribble**: No, §6. I know it's confusing, but that's how they say it."
+"**Scribble**: No, §5. I know it's confusing, but that's how they say it."
 
 #: Game.Levels.Logo.L10_And
 msgid "Intro Logo L10"

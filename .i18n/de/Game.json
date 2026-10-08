@@ -659,6 +659,8 @@
  "Prove §0 by using §1, §2":
  "**Du**:  §0 – ja, das sieht richtig aus.\n\n**Robo**:  Sollte auch ganz genau so beweisbar sein, wie die Gaußsche Summe eben … außer dass du vermutlich nach §1 auch noch §2 brauchen wirst.",
  "Prove §0": "**Robo**: Jetzt kannst du also erst einmal §0 beweisen …",
+ "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
+ "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend brauchen. Aber keiner kann es mir beweisen.\n\n**Du**: Einen Moment. Das ist ja gerade so eine Implikation (§0). Wir nehmen an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert „§2 und §1“. Ja, klar! Natürlich stimmt das.\n\nDer Operationsleiter sieht dich erwartungsvoll an.\n\n**Du** *(leise zu Robo)*: Soll ich ihm §3 aufschreiben?\n\n**Robo** *(leise zurück)*: So wie der aussieht, fürchte ich, das wird er auch nicht verstehen. Schreib den Beweis lieber aus.\n\n**Du**: Aber wie denn? Ich glaube, ich würde als erstes gern so etwas sagen wie 'Nehmen wir also an, §2 gilt …'\n\n**Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel §4, und schreib §5.",
  "Prove the assumption before using it":
  "**Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?\n\n**Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst.",
  "Prove intermediate result":
@@ -666,8 +668,6 @@
  "Prove goal once for §0 and once for §1":
  "**Robo**: Jetzt musst du dein Ziel zweimal beweisen: Einmal unter Annahme der linken Seite §0, und einmal unter Annahme der rechten Seite §1. Zuerst nehmen wir an, die linke Seite §0 sei wahr.",
  "Prove by cases for §0": "**Du**: Und jetzt Fallunterscheidung zu §0…",
- "Proof the implication (§0), that assuming §1 is true, §2 implies §3\nis also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\nname §6 for assumption and introduce it via §7":
- "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend brauchen. Aber keiner kann es mir beweisen.\n\n**Du**: Einen Moment. Das ist ja gerade so eine Implikation (§0). Wir nehmen an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert §3. Ja, klar! Natürlich stimmt das.\n\nDer Operationsleiter sieht dich erwartungsvoll an.\n\n**Du** *(leise zu Robo)*: Soll ich ihm §4 aufschreiben?\n\n**Robo** *(leise zurück)*: So wie der aussieht, fürchte ich, das wird er auch nicht verstehen. Schreib den Beweis lieber aus.\n\n**Du**: Aber wie denn? Ich glaube, ich würde als erstes gern so etwas sagen wie 'Nehmen wir also an, §5 gilt …'\n\n**Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel §6, und schreib §7.",
  "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\nis false":
  "**Robo**: Siehst du, jetzt hat der Beweis zwei Teile. Im ersten Teil nimmst du an, dass §0 wahr ist. Im zweiten nimmst du an, dass §1 falsch ist.",
  "Prado": "Prado",
@@ -1041,8 +1041,8 @@
  "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen.",
  "Go back, keep §0 and try §1":
  "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst.",
- "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
- "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass §2 gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §4.\n\n**Du**: Du meinst wohl §5??\n\n**Robo**: Nein, §6. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
+ "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
+ "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §3.\n\n**Du**: Du meinst wohl §4??\n\n**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
  "Given\n\n§0\n\nShow\n§1\n":
  "**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben ist:\n\n§0\n\nUnd wir sollen zeigen:\n\n§1\n\nRobo??\n\nLina grinst.\n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

@@ -548,14 +548,14 @@
  "Prove §0 by using §1, §2":
  "**你**：§0——嗯，看起来没问题。\n\n**司南**：这个证明应该和刚才的高斯求和证明过程几乎一样……只不过你大概先要用 §1 之后还得再用 §2。",
  "Prove §0": "**司南**：那你现在可以先证明一下 §0 ……",
+ "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
+ "**运营主管**：工人们说这是对的，而且我们急需它。但没人能给我证明。\n\n**你**：等一下。这不又是个蕴涵（§0）嘛。我们假设§1成立，然后要证明在这个假设下，§2可以推出“§2和§1”。对啊！当然成立。\n\n运营主管满怀期待地看着你。\n\n**你** *(小声对司南)*：我该把§3写给他吗？\n\n**司南** *(也小声回)*：看他那样子，我怕他也看不懂。还是把证明写完整吧。\n\n**你**：可怎么写呢？我想先说一句类似“那我们就假设§2成立…”这样的话。\n\n**司南**：嗯，好主意。那就给这个假设起个名字，比如§4，然后写§5。",
  "Prove the assumption before using it":
  "**你**：啥？我现在就直接假设它是对的了？\n\n**司南**：不，你当然得先把它证明出来，然后才能拿来用。",
  "Prove intermediate result": "**司南**：然后你在这里证明这个中间结果。",
  "Prove goal once for §0 and once for §1":
  "**司南**：现在你得分两种情况证明目标：一种是假设左边的 §0 成立，另一种是假设右边的 §1 成立。我们先假设左边 §0 是真的。",
  "Prove by cases for §0": "**你**：然后现在对 §0 做分类讨论……",
- "Proof the implication (§0), that assuming §1 is true, §2 implies §3\nis also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\nname §6 for assumption and introduce it via §7":
- "**运营主管**：工人们说这是对的，而且我们急需它。但没人能给我证明。\n\n**你**：等一下。这不又是个蕴涵（§0）嘛。我们假设§1成立，然后要证明在这个假设下，§2可以推出§3。对啊！当然成立。\n\n运营主管满怀期待地看着你。\n\n**你** *(小声对司南)*：我该把§4写给他吗？\n\n**司南** *(也小声回)*：看他那样子，我怕他也看不懂。还是把证明写完整吧。\n\n**你**：可怎么写呢？我想先说一句类似“那我们就假设§5成立…”这样的话。\n\n**司南**：嗯，好主意。那就给这个假设起个名字，比如§6，然后写§7。",
  "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\nis false":
  "**司南**：你看，现在这个证明分成了两部分。第一部分假设 §0 为真。第二部分假设 §1 为假。",
  "Prado": "普拉多",
@@ -871,8 +871,8 @@
  "Goal is in assumptions": "**你**：啊，现在目标已经在假设里了。",
  "Go back, keep §0 and try §1":
  "**司南**：这条解法在我看来有点太难了。\n 我建议先退回去，保留 §0，这样你最后就能用上 §1。",
- "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
- "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 §2 成立。我觉得这些形式哲学怪人迟早要把我逼疯。\n\n**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §4 试试。\n\n**你**：你是想说 §5 吧？？\n\n**司南**：不，§6。我知道这很让人迷糊，但他们这儿就这么叫。",
+ "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
+ "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 “§0和§1” 成立。我觉得这些形式哲学怪人迟早要把我逼疯。\n\n**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §3 试试。\n\n**你**：你是想说 §4 吧？？\n\n**司南**：不，§5。我知道这很让人迷糊，但他们这儿就这么叫。",
  "Given\n\n§0\n\nShow\n§1\n":
  "**你**：我得先自己把它写下来。也就是说，已知：\n\n§0\n\n要证明的是：\n\n§1\n\n司南？？\n\nLina 咧嘴一笑。\n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

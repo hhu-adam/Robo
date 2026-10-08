@@ -649,6 +649,8 @@
  "Prove §0 by using §1, §2":
  "**You**: §0 – yes, that looks correct. \n\n**Scribble**: The proof should work in exactly the same way as for the Gaussian sum … except that you will probably need §2 in addition to §1.",
  "Prove §0": "**Scribble**: Now you can first prove §0 …",
+ "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
+ "**Head of Operations**: The workers think this is correct and that we urgently need it. But no one can prove it to me. \n\n**You**: One moment. This *is* an implication (§0) again! We assume that §1 holds, and we need to show that under this assumption §2 implies “§2 and §1”. Well, of course! That's obviously true.\n\nThe Head of Operations looks at you expectantly. \n\n**You** *(softly to Scribble)*: Should I write down §3 for him? \n\n**Scribble** *(equally softy)*: The way he looks, I'm afraid he won't understand that either. Better write out the proof.\n\n**You**: But how? I'd like to start by saying something like “So let's assume that §2 holds …” \n\n**Scribble**: Yes, good idea. Just choose a name for your assumption, for example §4 as in “hypothesis”, and start with §5.",
  "Prove the assumption before using it":
  "**You**: What? I can just assume it's true?\n\n**Scribble**: No, of course not. You now need to prove it before you can use it.",
  "Prove intermediate result":
@@ -656,8 +658,6 @@
  "Prove goal once for §0 and once for §1":
  "**Scribble**: Now you have to prove your goal twice: once assuming the left side §0, and once assuming the right side §1. First, we assume that the left side §0 is true.",
  "Prove by cases for §0": "**You**: And now we distinguish cases for §0 …",
- "Proof the implication (§0), that assuming §1 is true, §2 implies §3\nis also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\nname §6 for assumption and introduce it via §7":
- "**Head of Operations**: The workers think this is correct and that we urgently need it. But no one can prove it to me. \n\n**You**: One moment. This *is* an implication (§0) again! We assume that §1 holds, and we need to show that under this assumption §2 implies §3. Well, of course! That's obviously true.\n\nThe Head of Operations looks at you expectantly. \n\n**You** *(softly to Scribble)*: Should I write down §4 for him? \n\n**Scribble** *(equally softy)*: The way he looks, I'm afraid he won't understand that either. Better write out the proof.\n\n**You**: But how? I'd like to start by saying something like “So let's assume that §5 holds …” \n\n**Scribble**: Yes, good idea. Just choose a name for your assumption, for example §6 as in “hypothesis”, and start with §7.",
  "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\nis false":
  "**Scribble**: You see, now the proof has two parts. In the first part, you assume that §0 is true. In the second part, you assume that §1 is false.",
  "Prado": "Prado",
@@ -1028,8 +1028,8 @@
  "**You**: Ah, and now our goal is among the assumptions.",
  "Go back, keep §0 and try §1":
  "**Scribble**: This approach seems a bit too difficult to me.\n  I’d go back again and keep §0, so that you can eventually use §1.",
- "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
- "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove §2. These formalosophanatics are driving me crazy.  \n\n**Scribble**:  You simply need to break the goal into two parts. Try §4.\n\n**You**: You mean §5, perhaps? \n\n**Scribble**: No, §6. I know it's confusing, but that's how they say it.",
+ "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
+ "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove “§0 and §1”. These formalosophanatics are driving me crazy.  \n\n**Scribble**:  You simply need to break the goal into two parts. Try §3.\n\n**You**: You mean §4, perhaps? \n\n**Scribble**: No, §5. I know it's confusing, but that's how they say it.",
  "Given\n\n§0\n\nShow\n§1\n":
  "**You**: I need to write down for myself, first. So we're given: \n\n§0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
