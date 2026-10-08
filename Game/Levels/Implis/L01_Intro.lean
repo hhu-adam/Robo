@@ -36,9 +36,10 @@ Statement (A B : Prop) (hB : B) : A → (A ∧ B) := by
     **Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel `h`,
     und schreib `intro h`."
   -/
-  Hint "Proof the implication (`\\to`), that assuming `{B}` is true, `{A}` implies `{A} und {B}`
-  is also true. You cannot use `tauto`. Begin by assumption that `{A}` is true. For this choose
-  name `h` for assumption and introduce it via `intro h`"
+  Hint "Prove the implication (`\\to`):
+    assuming `{B}` is true, `{A}` implies 'A and B' is also true. You cannot use `tauto`.
+    Begin by assumption that A is true.
+    Choose a name `h` for this assumption and introduce it via `intro h`."
   intro hA
   /-
   Hint "

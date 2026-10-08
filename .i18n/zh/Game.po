@@ -3844,32 +3844,30 @@ msgstr "**运营主管**：比如这个问题："
 #. §0: `\\to`
 #. §1: `«{B}»`
 #. §2: `«{A}»`
-#. §3: `«{A}» und «{B}»`
-#. §4: `tauto`
-#. §5: `«{A}»`
-#. §6: `h`
-#. §7: `intro h`
+#. §3: `tauto`
+#. §4: `h`
+#. §5: `intro h`
 #: Game.Levels.Implis.L01_Intro
 msgid ""
-"Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
-"is also true. You cannot use §4. Begin by assumption that §5 is true. For "
-"this choose\n"
-"name §6 for assumption and introduce it via §7"
+"Prove the implication (§0):\n"
+"assuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\n"
+"Begin by assumption that A is true.\n"
+"Choose a name §4 for this assumption and introduce it via §5."
 msgstr ""
 "**运营主管**：工人们说这是对的，而且我们急需它。但没人能给我证明。\n"
 "\n"
 "**你**：等一下。这不又是个蕴涵（§0）嘛。我们假设§1成立，然后要证明在这个假设"
-"下，§2可以推出§3。对啊！当然成立。\n"
+"下，§2可以推出“§2和§1”。对啊！当然成立。\n"
 "\n"
 "运营主管满怀期待地看着你。\n"
 "\n"
-"**你** *(小声对司南)*：我该把§4写给他吗？\n"
+"**你** *(小声对司南)*：我该把§3写给他吗？\n"
 "\n"
 "**司南** *(也小声回)*：看他那样子，我怕他也看不懂。还是把证明写完整吧。\n"
 "\n"
-"**你**：可怎么写呢？我想先说一句类似“那我们就假设§5成立…”这样的话。\n"
+"**你**：可怎么写呢？我想先说一句类似“那我们就假设§2成立…”这样的话。\n"
 "\n"
-"**司南**：嗯，好主意。那就给这个假设起个名字，比如§6，然后写§7。"
+"**司南**：嗯，好主意。那就给这个假设起个名字，比如§4，然后写§5。"
 
 #: Game.Levels.Implis.L02_Revert
 msgid "Conclusion Implis L02"
@@ -4999,26 +4997,25 @@ msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#. §2: `«{A}» und «{B}»`
-#. §3: `trivial`
-#. §4: `constructor`
-#. §5: `destructor`
-#. §6: `constructor`
+#. §2: `trivial`
+#. §3: `constructor`
+#. §4: `destructor`
+#. §5: `constructor`
 #: Game.Levels.Logo.L10_And
 msgid ""
-"Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
-"You cannot just try §3. Use §4 to divide goal into two. Remind that the "
+"Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\n"
+"You cannot just try §2. Use §3 to divide goal into two. Remind that the "
 "tactic\n"
-"is not called §5. Try §6"
+"is not called §4. Try §5"
 msgstr ""
-"**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 §2 成立。我觉得"
+"**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 “§0和§1” 成立。我觉得"
 "这些形式哲学怪人迟早要把我逼疯。\n"
 "\n"
-"**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §4 试试。\n"
+"**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §3 试试。\n"
 "\n"
-"**你**：你是想说 §5 吧？？\n"
+"**你**：你是想说 §4 吧？？\n"
 "\n"
-"**司南**：不，§6。我知道这很让人迷糊，但他们这儿就这么叫。"
+"**司南**：不，§5。我知道这很让人迷糊，但他们这儿就这么叫。"
 
 #: Game.Levels.Logo.L10_And
 msgid "Intro Logo L10"

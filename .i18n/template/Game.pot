@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-28\n"
+"POT-Creation-Date: 2026-10-08\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -1808,15 +1808,14 @@ msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#. §2: `«{A}» und «{B}»`
-#. §3: `trivial`
-#. §4: `constructor`
-#. §5: `destructor`
-#. §6: `constructor`
+#. §2: `trivial`
+#. §3: `constructor`
+#. §4: `destructor`
+#. §5: `constructor`
 #: Game/Levels/Logo/L10_And.lean:33
-msgid "Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
-"You cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\n"
-"is not called §5. Try §6"
+msgid "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\n"
+"You cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\n"
+"is not called §4. Try §5"
 msgstr ""
 
 #: Game/Levels/Logo/L10_And.lean:44
@@ -2010,25 +2009,24 @@ msgstr ""
 #. §0: `\\to`
 #. §1: `«{B}»`
 #. §2: `«{A}»`
-#. §3: `«{A}» und «{B}»`
-#. §4: `tauto`
-#. §5: `«{A}»`
-#. §6: `h`
-#. §7: `intro h`
+#. §3: `tauto`
+#. §4: `h`
+#. §5: `intro h`
 #: Game/Levels/Implis/L01_Intro.lean:39
-msgid "Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
-"is also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\n"
-"name §6 for assumption and introduce it via §7"
+msgid "Prove the implication (§0):\n"
+"assuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\n"
+"Begin by assumption that A is true.\n"
+"Choose a name §4 for this assumption and introduce it via §5."
 msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
-#: Game/Levels/Implis/L01_Intro.lean:50
+#: Game/Levels/Implis/L01_Intro.lean:51
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
 
-#: Game/Levels/Implis/L01_Intro.lean:66
+#: Game/Levels/Implis/L01_Intro.lean:67
 msgid "Conclusion Implis L01"
 msgstr ""
 

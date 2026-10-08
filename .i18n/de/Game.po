@@ -4096,37 +4096,35 @@ msgstr "**Operationsleiter**: Hier, zum Beispiel:"
 #. §0: `\\to`
 #. §1: `«{B}»`
 #. §2: `«{A}»`
-#. §3: `«{A}» und «{B}»`
-#. §4: `tauto`
-#. §5: `«{A}»`
-#. §6: `h`
-#. §7: `intro h`
+#. §3: `tauto`
+#. §4: `h`
+#. §5: `intro h`
 #: Game.Levels.Implis.L01_Intro
 msgid ""
-"Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
-"is also true. You cannot use §4. Begin by assumption that §5 is true. For "
-"this choose\n"
-"name §6 for assumption and introduce it via §7"
+"Prove the implication (§0):\n"
+"assuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\n"
+"Begin by assumption that A is true.\n"
+"Choose a name §4 for this assumption and introduce it via §5."
 msgstr ""
 "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir "
 "würden das dringend brauchen. Aber keiner kann es mir beweisen.\n"
 "\n"
 "**Du**: Einen Moment. Das ist ja gerade so eine Implikation (§0). Wir nehmen "
-"an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert §3. Ja, "
+"an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert „§2 und §1“. Ja, "
 "klar! Natürlich stimmt das.\n"
 "\n"
 "Der Operationsleiter sieht dich erwartungsvoll an.\n"
 "\n"
-"**Du** *(leise zu Robo)*: Soll ich ihm §4 aufschreiben?\n"
+"**Du** *(leise zu Robo)*: Soll ich ihm §3 aufschreiben?\n"
 "\n"
 "**Robo** *(leise zurück)*: So wie der aussieht, fürchte ich, das wird er "
 "auch nicht verstehen. Schreib den Beweis lieber aus.\n"
 "\n"
 "**Du**: Aber wie denn? Ich glaube, ich würde als erstes gern so etwas sagen "
-"wie 'Nehmen wir also an, §5 gilt …'\n"
+"wie 'Nehmen wir also an, §2 gilt …'\n"
 "\n"
 "**Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, "
-"zum Beispiel §6, und schreib §7."
+"zum Beispiel §4, und schreib §5."
 
 #: Game.Levels.Implis.L02_Revert
 msgid "Conclusion Implis L02"
@@ -5344,28 +5342,27 @@ msgstr ""
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#. §2: `«{A}» und «{B}»`
-#. §3: `trivial`
-#. §4: `constructor`
-#. §5: `destructor`
-#. §6: `constructor`
+#. §2: `trivial`
+#. §3: `constructor`
+#. §4: `destructor`
+#. §5: `constructor`
 #: Game.Levels.Logo.L10_And
 msgid ""
-"Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
-"You cannot just try §3. Use §4 to divide goal into two. Remind that the "
+"Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\n"
+"You cannot just try §2. Use §3 to divide goal into two. Remind that the "
 "tactic\n"
-"is not called §5. Try §6"
+"is not called §4. Try §5"
 msgstr ""
 "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und "
-"beweisen sollen wir dass §2 gilt. Ich glaube, diese Formalospinner treiben "
+"beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben "
 "mich noch in den Wahnsinn.\n"
 "\n"
 "**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile "
-"zerlegen. Probier mal §4.\n"
+"zerlegen. Probier mal §3.\n"
 "\n"
-"**Du**: Du meinst wohl §5??\n"
+"**Du**: Du meinst wohl §4??\n"
 "\n"
-"**Robo**: Nein, §6. Ich weiß, das ist verwirrend, aber die nennen das hier "
+"**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier "
 "so."
 
 #: Game.Levels.Logo.L10_And
