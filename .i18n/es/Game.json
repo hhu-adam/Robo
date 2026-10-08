@@ -653,6 +653,8 @@
  "Prove §0 by using §1, §2":
  "**Tú**: §0… sí, eso parece correcto.\n\n**Glifo**: Y debería poder demostrarse exactamente igual que la suma de Gauss de hace un momento… solo que, después de §1, probablemente necesitarás también §2.",
  "Prove §0": "**Glifo**: Ahora puedes demostrar §0 primero…",
+ "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
+ "**Jefe de Operaciones**: Los operarios dicen que esto es correcto tal como está y que nos hace muchísima falta. Pero nadie es capaz de demostrármelo.\n\n**Tú**: Un momento. ¡Pero si esto es otra implicación (§0)!. Suponemos que §1 se cumple, y queremos demostrar que entonces §2 implica “§2 y §1”. ¡Pues claro! Por supuesto que es verdad.\n\nEl Jefe de Operaciones te mira expectante.\n\n**Tú** *(en voz baja, a Glifo)*: ¿Debería escribir §3?\n\n**Glifo** *(igual de bajo)*: Con la pinta que tiene, me temo que eso tampoco lo va a entender. Mejor escribe la demostración entera.\n\n**Tú**: Pero, ¿cómo? Creo que, para empezar, me gustaría decir algo así como \"Supongamos, pues, que §2 se cumple…\"\n\n**Glifo**: Sí, buena idea. Para eso, elige simplemente un nombre para tu hipótesis, por ejemplo §4, y escribe §5.",
  "Prove the assumption before using it":
  "**Tú**: ¿Qué? ¿Así que acabo de suponer sin más que eso es cierto?\n\n**Glifo**: No. Por supuesto, tienes que demostrarlo antes de poder usarlo.",
  "Prove intermediate result":
@@ -660,8 +662,6 @@
  "Prove goal once for §0 and once for §1":
  "**Glifo**: Ahora tienes que demostrar tu objetivo dos veces: una vez suponiendo el lado izquierdo §0, y otra vez suponiendo el lado derecho §1. Primero suponemos que el lado izquierdo §0 es verdadero.",
  "Prove by cases for §0": "**Tú**: Y ahora, distinción de casos según §0…",
- "Proof the implication (§0), that assuming §1 is true, §2 implies §3\nis also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\nname §6 for assumption and introduce it via §7":
- "**Jefe de Operaciones**: Los operarios dicen que esto es correcto tal como está y que nos hace muchísima falta. Pero nadie es capaz de demostrármelo.\n\n**Tú**: Un momento. ¡Pero si esto es otra implicación (§0)!. Suponemos que §1 se cumple, y queremos demostrar que entonces §2 implica §3. ¡Pues claro! Por supuesto que es verdad.\n\nEl Jefe de Operaciones te mira expectante.\n\n**Tú** *(en voz baja, a Glifo)*: ¿Debería escribir §4?\n\n**Glifo** *(igual de bajo)*: Con la pinta que tiene, me temo que eso tampoco lo va a entender. Mejor escribe la demostración entera.\n\n**Tú**: Pero, ¿cómo? Creo que, para empezar, me gustaría decir algo así como \"Supongamos, pues, que §5 se cumple…\"\n\n**Glifo**: Sí, buena idea. Para eso, elige simplemente un nombre para tu hipótesis, por ejemplo §6, y escribe §7.",
  "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\nis false":
  "**Glifo**: ¿Ves? Ahora la demostración tiene dos partes. En la primera parte supones que §0 es verdadera. En la segunda supones que §1 es falsa.",
  "Prado": "Prado",
@@ -1033,8 +1033,8 @@
  "**Tú**: Ah, y ahora el objetivo está entre las hipótesis.",
  "Go back, keep §0 and try §1":
  "**Glifo**: Este camino me parece un poco demasiado complicado.\n  Yo volvería atrás y conservaría §0, para que al final puedas usar §1.",
- "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
- "**Tú**: A ver, tenemos dos hipótesis: §0 se cumple, y §1 también. Y nosotros tenemos que demostrar que §2 se cumple. Me parece que estos formalochiflados van a acabar sacándome de quicio.\n\n**Glifo**: Calma. Solo tienes que descomponer el objetivo en dos partes. Prueba §4.\n\n**Tú**: ¿¿Querrás decir §5??\n\n**Glifo**: No, §6. Ya sé que es confuso, pero aquí lo llaman así.",
+ "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
+ "**Tú**: A ver, tenemos dos hipótesis: §0 se cumple, y §1 también. Y nosotros tenemos que demostrar que “§0 y §1” se cumple. Me parece que estos formalochiflados van a acabar sacándome de quicio.\n\n**Glifo**: Calma. Solo tienes que descomponer el objetivo en dos partes. Prueba §3.\n\n**Tú**: ¿¿Querrás decir §4??\n\n**Glifo**: No, §5. Ya sé que es confuso, pero aquí lo llaman así.",
  "Given\n\n§0\n\nShow\n§1\n":
  "**Tú**: Esto necesito volver a escribirlo. Nos dan:\n\n§0\n\nY hay que demostrar:\n\n§1\n\n¿Glifo?\n\nLina sonríe burlona.\n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
