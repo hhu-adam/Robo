@@ -3,8 +3,7 @@ import Game.Metadata
 World "Saturn"
 Level 5
 
--- Introduction "Noch ein Funkspruch."
-Introduction "Intro Saturn L05"
+Introduction ""
 
 namespace Polynomial
 

@@ -3,7 +3,7 @@ import Game.Metadata
 World "Saturn"
 Level 6
 
-Introduction "Intro Saturn L06"
+Introduction ""
 
 /- a well-known polyonmial sums-of-squares formula --/
 

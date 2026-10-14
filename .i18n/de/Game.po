@@ -5310,20 +5310,16 @@ msgstr ""
 msgid "Conclusion Saturn L04"
 msgstr "Wieder kommt 👍 zurück."
 
-#: Game/Levels/Saturn/L05_mul_assoc.lean:7
-msgid "Intro Saturn L05"
-msgstr ""
-
 #. §0: `mul_assoc`
 #. §1: `ring`
-#: Game/Levels/Saturn/L05_mul_assoc.lean:13
+#: Game/Levels/Saturn/L05_mul_assoc.lean:12
 msgid "Try §0 or again §1"
 msgstr "**Robo**: Hier könntest du §0 verwenden.  Oder *wieder* §1 …"
 
 #. §0: `ℕ`
 #. §1: `ℕ`
 #. §2: `ring`
-#: Game/Levels/Saturn/L05_mul_assoc.lean:34
+#: Game/Levels/Saturn/L05_mul_assoc.lean:33
 msgid ""
 "Conclusion Saturn L05: coefficients were in §0. Polynomials with "
 "coefficients in §1\n"
@@ -5343,10 +5339,6 @@ msgstr ""
 "ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
 "\n"
 "„Bereit” funkt Robo zurück."
-
-#: Game/Levels/Saturn/L06_Ring.lean:6
-msgid "Intro Saturn L06"
-msgstr ""
 
 #. §0: `A`
 #. §1: `B`
