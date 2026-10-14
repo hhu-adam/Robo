@@ -10508,13 +10508,11 @@ msgstr "**Ext**:  Ich mag *diese* Gleichung."
 
 #. §0: `ext`
 #: Game/Levels/Piazza/L06_Ext2__univ2.lean:21
-#: Game/Levels/Piazza/L07_compl_even.lean:14
 msgid "[Hint cqvs] Try §0"
 msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 
 #. §0: `simp`
 #: Game/Levels/Piazza/L06_Ext2__univ2.lean:24
-#: Game/Levels/Piazza/L07_compl_even.lean:16
 msgid "Perform §0 again"
 msgstr "**Robo**: Und jetzt natürlich wieder §0."
 
@@ -10533,40 +10531,40 @@ msgstr ""
 "haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war."
 
 #. §0: `(univ \\ A)`
-#. §1: `Aᶜ`
-#. §2: `\\compl`
-#. §3: `\\^c`
 #: Game/Levels/Piazza/L07_compl_even.lean:8
-#, fuzzy
-#| msgid "Instead of §0 and §1 try §2"
-msgid "Instead of §0 can also write §1 (typed as §2 or §3)."
-msgstr ""
-"**Du**: Also, ich kenne §0 und §1, aber das wollten wir ja diesmal "
-"vermeiden.\n"
-"\n"
-"**Robo**: Was du machen könntest, ist, mit §2 die Annahme in zwei Teile "
-"aufteilen."
+msgid "Intro Piazza 7: Can write §0 in a nicer way."
+msgstr "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich."
 
 #. §0: `Aᶜ`
-#. §1: `univ \\ A`
-#: Game/Levels/Piazza/L07_compl_even.lean:22
-#, fuzzy
-#| msgid "Conclusion Piazza L06: Explain that §0 means extensionality"
-msgid "Conclusion Piazza L07: the complement §0 is §1."
+#. §1: `A`
+#. §2: `(univ \\ A)`
+#: Game/Levels/Piazza/L07_compl_even.lean:14
+msgid "[Hint yctv9] §0 means complement of §1, i.e. §2."
 msgstr ""
-"**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n"
+"**Du**: Also §0 ist hier einfach das Komplement von §1?\n"
 "\n"
-"**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n"
-"\n"
-"**Du**: Nein, ich meine dieses §0 hier!\n"
-"\n"
-"**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, wenn "
-"sie dieselben Elemente besitzen, nennen Logiker *extensionality*. Und daraus "
-"haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war."
+"**Robo**:  Ja.  Das ist genau das, was eben noch §2 hieß."
+
+#. §0: `ext`
+#: Game/Levels/Piazza/L07_compl_even.lean:15
+msgid "[Hint wjedv] Try §0"
+msgstr "Ext räuspert sich."
+
+#. §0: `simp`
+#: Game/Levels/Piazza/L07_compl_even.lean:17
+msgid "[Hint uww7c] Perform §0 again"
+msgstr "**Robo**: §0?"
+
+#: Game/Levels/Piazza/L07_compl_even.lean:23
+msgid "Conclusion Piazza L07."
+msgstr ""
+"**Ext**:  Siehst du, Fin – macht gar keinen Unterschied, wie du das "
+"schreibst.\n"
+"Diese Fremdlinge blicken das."
 
 #: Game/Levels/Piazza/L08_antisymm_iff.lean:14
 msgid "Intro Piazza L07"
-msgstr "**Set**: Und ich mag diese Äquivalenz."
+msgstr "**Set**: Und mag übrigens diese Äquivalenz."
 
 #: Game/Levels/Piazza/L08_antisymm_iff.lean:24
 msgid "Reminder of set equality"
@@ -10738,13 +10736,8 @@ msgstr ""
 "**Du**:  Und, habt ihr schon etwas gelernt?"
 
 #: Game/Levels/Cafe/L01_Lt_trichotomy.lean:13
-#, fuzzy
-#| msgid "Intro Prado L01"
 msgid "Intro Cafe L01"
 msgstr ""
-"**Robo**:  Ja, ja.  Wissen wir.\n"
-"\n"
-"Er formuliert die Aussage schnell in Leansch und hält sie dir hin."
 
 #. §0: `lt_trichotomy`
 #. §1: `a`
@@ -10760,11 +10753,8 @@ msgstr ""
 
 #. §0: `grind`
 #: Game/Levels/Cafe/L01_Lt_trichotomy.lean:35
-#, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint tg1] Try §0"
 msgstr ""
-"**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
 #. §0: `grind`
 #: Game/Levels/Cafe/L01_Lt_trichotomy.lean:38
@@ -10795,22 +10785,8 @@ msgid "Cafe L01"
 msgstr ""
 
 #: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:13
-#, fuzzy
-#| msgid "Intro Cantor L02"
 msgid "Intro Cafe L02"
 msgstr ""
-"**Cantor**:  Passt auf, die Überlegung geht eigentlich noch weiter!\n"
-"\n"
-"Er greift in seinen Zylinder, und holt alle möglichen Dinge heraus. Eine "
-"alte Zahnbürste, ein Kartenspiel, ein weißes Kaninchen … Schließlich kommt "
-"ein zerknüllter Zettel zum Vorschein.\n"
-"\n"
-"**Cantor**: Hier sind ja meine Notizen!  Tada!  Mein berühmtes "
-"Diagonalargument!\n"
-"\n"
-"Er faltet den Zettel auf, reißt vorsichtig die oberste Zeile ab, und lässt "
-"sie zu euch hinuntersegeln. Dann beugt er sich neugierig über den "
-"Bühnenrand, um zu sehen, was ihr macht."
 
 #. §0: `b`
 #. §1: `use …`
@@ -10860,23 +10836,8 @@ msgid "Cafe L02"
 msgstr ""
 
 #: Game/Levels/Cafe/L03_Lt_grind.lean:13
-#, fuzzy
-#| msgid "Intro Cantor L03"
 msgid "Intro Cafe L03"
 msgstr ""
-"**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ ist.\n"
-"\n"
-"**Cantor**: Nein?  Na dann pass auf!  Wir machen das jetzt noch einmal  l a "
-"n g s a m.\n"
-"\n"
-"Er wühlt wieder in seinem Zylinder.  Ein Kompass.  Eine Violine. Eine Dose "
-"Schnupftabak.\n"
-"\n"
-"**Cantor**:  Ach nein, wir machen das anders.\n"
-"\n"
-"Er greift noch einmal tief in seinen Zylinder hinein, und holt einen ganzen "
-"Stapel Papier heraus. Den wirft er euch zu. Ihr seht euch die Zettel "
-"nacheinander an."
 
 #. §0: `lt_trichotomy`
 #. §1: `grind`
@@ -10913,10 +10874,8 @@ msgid "Cafe L04"
 msgstr ""
 
 #: Game/Levels/Cafe/L05_Split_if.lean:13
-#, fuzzy
-#| msgid "Intro Luna L05"
 msgid "Intro Cafe L05"
-msgstr "**Lina**: Nochmal dieselbe Frage, aber jetzt in ℝ!"
+msgstr ""
 
 #. §0: `if x ≤ 0 then 0 else x`
 #. §1: `x ≤ 0`
@@ -10938,10 +10897,8 @@ msgid "Cafe L05"
 msgstr ""
 
 #: Game/Levels/Cafe/L06_Lia.lean:13
-#, fuzzy
-#| msgid "Intro Luna L06"
 msgid "Intro Cafe L06"
-msgstr "**Ritha**:  Kann ich auch mal?  Hier."
+msgstr ""
 
 #. §0: `2 * x + 4 * y`
 #. §1: `5`
@@ -10971,11 +10928,8 @@ msgstr ""
 
 #. §0: `grind`
 #: Game/Levels/Cafe/L07.lean:13
-#, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint tdsg] Try §0. "
 msgstr ""
-"**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
 #. §0: `isOpen_Ioo`
 #: Game/Levels/Cafe/L07.lean:15
@@ -11000,13 +10954,8 @@ msgstr ""
 
 #. §0: `grind`
 #: Game/Levels/Cafe/L08.lean:14
-#, fuzzy
-#| msgid "[Hint hwzk] Try §0"
 msgid "[Hint tg8nh] Try §0. "
 msgstr ""
-"**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind "
-"insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und "
-"auch die Ausdrücke, über die summiert wird, übereinstimmen."
 
 #. §0: `𝓝[s] a`
 #. §1: `a`
@@ -11043,22 +10992,8 @@ msgid "Cafe"
 msgstr ""
 
 #: Game/Levels/Cafe.lean:46
-#, fuzzy
-#| msgid "Intro Ciao"
 msgid "Intro Cafe"
 msgstr ""
-"**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses "
-"Universums besucht haben?\n"
-"\n"
-"**Robo**:  Ja, sieht so aus.\n"
-"\n"
-"**Du**:  Was machen wir jetzt?\n"
-"\n"
-"**Robo**: Keine Ahnung.\n"
-"\n"
-"Nach einer Weile …\n"
-"\n"
-"**Robo**: Du, schau mal, hier ist eine Nachricht reingekommen."
 
 #. §0: `a`
 #. §1: `ℝ`
@@ -13967,6 +13902,24 @@ msgid "[Game] CaptionLong"
 msgstr ""
 "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
 "aus der Eingangsphase des Bachelorstudiums Mathematik."
+
+#~ msgid "Instead of §0 can also write §1 (typed as §2 or §3)."
+#~ msgstr "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich."
+
+#, fuzzy
+#~| msgid "Conclusion Piazza L06: Explain that §0 means extensionality"
+#~ msgid "Conclusion Piazza L07: the complement §0 is §1."
+#~ msgstr ""
+#~ "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n"
+#~ "\n"
+#~ "**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n"
+#~ "\n"
+#~ "**Du**: Nein, ich meine dieses §0 hier!\n"
+#~ "\n"
+#~ "**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, "
+#~ "wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*. "
+#~ "Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen "
+#~ "sonst zu lang war."
 
 #~ msgid ""
 #~ "§0 is defined as §1.\n"

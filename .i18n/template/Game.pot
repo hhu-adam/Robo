@@ -6589,13 +6589,11 @@ msgstr ""
 
 #. §0: `ext`
 #: Game/Levels/Piazza/L06_Ext2__univ2.lean:21
-#: Game/Levels/Piazza/L07_compl_even.lean:14
 msgid "[Hint cqvs] Try §0"
 msgstr ""
 
 #. §0: `simp`
 #: Game/Levels/Piazza/L06_Ext2__univ2.lean:24
-#: Game/Levels/Piazza/L07_compl_even.lean:16
 msgid "Perform §0 again"
 msgstr ""
 
@@ -6605,17 +6603,29 @@ msgid "Conclusion Piazza L06: Explain that §0 means extensionality"
 msgstr ""
 
 #. §0: `(univ \\ A)`
-#. §1: `Aᶜ`
-#. §2: `\\compl`
-#. §3: `\\^c`
 #: Game/Levels/Piazza/L07_compl_even.lean:8
-msgid "Instead of §0 can also write §1 (typed as §2 or §3)."
+msgid "Intro Piazza 7: Can write §0 in a nicer way."
 msgstr ""
 
 #. §0: `Aᶜ`
-#. §1: `univ \\ A`
-#: Game/Levels/Piazza/L07_compl_even.lean:22
-msgid "Conclusion Piazza L07: the complement §0 is §1."
+#. §1: `A`
+#. §2: `(univ \\ A)`
+#: Game/Levels/Piazza/L07_compl_even.lean:14
+msgid "[Hint yctv9] §0 means complement of §1, i.e. §2."
+msgstr ""
+
+#. §0: `ext`
+#: Game/Levels/Piazza/L07_compl_even.lean:15
+msgid "[Hint wjedv] Try §0"
+msgstr ""
+
+#. §0: `simp`
+#: Game/Levels/Piazza/L07_compl_even.lean:17
+msgid "[Hint uww7c] Perform §0 again"
+msgstr ""
+
+#: Game/Levels/Piazza/L07_compl_even.lean:23
+msgid "Conclusion Piazza L07."
 msgstr ""
 
 #: Game/Levels/Piazza/L08_antisymm_iff.lean:14

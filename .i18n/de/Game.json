@@ -142,27 +142,25 @@
  "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt.",
  "[Hint ysocy] Remember §0":
  "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt.",
+ "[Hint yctv9] §0 means complement of §1, i.e. §2.":
+ "**Du**: Also §0 ist hier einfach das Komplement von §1?\n\n**Robo**:  Ja.  Das ist genau das, was eben noch §2 hieß.",
  "[Hint xpkm] Remember §0":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
  "[Hint xnqr] Try §0 | §1":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint wjedv] Try §0": "Ext räuspert sich.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint w4joj] Try §0.":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint ux181] Remember §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint uww7c] Perform §0 again": "**Robo**: §0?",
  "[Hint u6qjy] Start with §0.": "**Robo**:  Ich würde wieder mit §0 anfangen.",
- "[Hint tg8nh] Try §0. ":
- "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen.",
- "[Hint tg1] Try §0":
- "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint tfuiem] Remember §0 and §1.":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
  "[Hint teltn] Try §0.":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
- "[Hint tdsg] Try §0. ":
- "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint t99r1] Remember §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint smth1tr] Try §0.":
@@ -920,7 +918,7 @@
  "**Sub**:  So, so.  Nur eine Definition! Und wenn ihr nun mit solchen Inklusionen arbeiten sollt?",
  "Intro Piazza L08":
  "**Sub**:  Du hast Recht. Wir sollten die Besucher mal etwas mehr über Inklusionen ausfragen.",
- "Intro Piazza L07": "**Set**: Und ich mag diese Äquivalenz.",
+ "Intro Piazza L07": "**Set**: Und mag übrigens diese Äquivalenz.",
  "Intro Piazza L06": "**Ext**:  Ich mag *diese* Gleichung.",
  "Intro Piazza L05":
  "**Mem**: Findet ihr diese Aussage auch wieder verwirrend?",
@@ -929,6 +927,8 @@
  "**Set**:  Wenn das zu einfach war – kennt ihr diese Aussage?",
  "Intro Piazza L02": "**Mem**:  Wie wärs denn hiermit?",
  "Intro Piazza L01": "**Fin**:  Ja, klar.  Das hier zum Beispiel.",
+ "Intro Piazza 7: Can write §0 in a nicer way.":
+ "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich.",
  "Intro Piazza":
  "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, vieles nicht. Aber alles ist fein säuberlich sotiert. Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern, offene Säcke mit kleinen, rosa Sternchen, usw.\n\nEin paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder zu verhalten – laufen euch fast über die Füße. Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n\n**Fin**:  Was macht ihr denn hier?\n\n**Du**:  Ehm … wir wollten uns nur mal ein bisschen umschauen.\n\n**Set**: Wir sind hier, um etwas Mengentheorie zu lernen.  Unsere Eltern haben uns hier ausgesetzt.\n\n**Ext**:  Zu Schulungszwecken, sozusagen.\n\n**Du**:  Und, habt ihr schon etwas gelernt?",
  "Intro Mono L06: Prove §0":
@@ -1063,17 +1063,7 @@
  "**Cantor**: … Wir betrachten also eine Abbildung §0 von §1 in die Potenzmenge von §2, und nun die Menge alle jener Elemente aus §3, die nicht in ihrem Bild unter §4 liegen …\n\nOh!  Ein Publikum. Nein, *zwei* Publikums!  Hört und seht, seht und staunt.\n\nEr zieht aus seinem Zylinder einen Zettel, faltet ihn zu einer Schwalbe, und lässt ihn zu euch herunterfliegen.\n\n**Cantor**:  Wenn ich schon zwei Publikums habe, könnten die ja auch ein bisschen mitmachen, nicht wahr?",
  "Intro Cantor":
  "Ihr seid neben einem großen Zelt gelandet.\nVielleicht ein Zirkuszelt? Drinnen ist es recht dunkel.\nNur eine Bühne ist hell erleuchtet.\nDarauf steht ein Herr, der wie eine Mischung aus Professor und Magier aussieht, hält einen Monolog und führt anscheinend irgendetwas vor.\n\nIm Halbdunkel vor der Bühne stehen Stühle in langen Reihen.\nIhr habt das Zelt offenbar direkt an einem Ende der ersten Reihe betreten.\nDas andere Ende könnt ihr gar nicht erkennen, so lang ist die Reihe.\nUnd dahinter kommen viele weitere Reihen – auch in diese Richtung könnt ihr kein Ende erkennen.\nAber alle Sitze sind leer.\n\nIhr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren.",
- "Intro Cafe L06": "**Ritha**:  Kann ich auch mal?  Hier.",
- "Intro Cafe L05": "**Lina**: Nochmal dieselbe Frage, aber jetzt in ℝ!",
  "Intro Cafe L04": " ",
- "Intro Cafe L03":
- "**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ ist.\n\n**Cantor**: Nein?  Na dann pass auf!  Wir machen das jetzt noch einmal  l a n g s a m.\n\nEr wühlt wieder in seinem Zylinder.  Ein Kompass.  Eine Violine. Eine Dose Schnupftabak.\n\n**Cantor**:  Ach nein, wir machen das anders.\n\nEr greift noch einmal tief in seinen Zylinder hinein, und holt einen ganzen Stapel Papier heraus. Den wirft er euch zu. Ihr seht euch die Zettel nacheinander an.",
- "Intro Cafe L02":
- "**Cantor**:  Passt auf, die Überlegung geht eigentlich noch weiter!\n\nEr greift in seinen Zylinder, und holt alle möglichen Dinge heraus. Eine alte Zahnbürste, ein Kartenspiel, ein weißes Kaninchen … Schließlich kommt ein zerknüllter Zettel zum Vorschein.\n\n**Cantor**: Hier sind ja meine Notizen!  Tada!  Mein berühmtes Diagonalargument!\n\nEr faltet den Zettel auf, reißt vorsichtig die oberste Zeile ab, und lässt sie zu euch hinuntersegeln. Dann beugt er sich neugierig über den Bühnenrand, um zu sehen, was ihr macht.",
- "Intro Cafe L01":
- "**Robo**:  Ja, ja.  Wissen wir.\n\nEr formuliert die Aussage schnell in Leansch und hält sie dir hin.",
- "Intro Cafe":
- "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht haben?\n\n**Robo**:  Ja, sieht so aus.\n\n**Du**:  Was machen wir jetzt?\n\n**Robo**: Keine Ahnung.\n\nNach einer Weile …\n\n**Robo**: Du, schau mal, hier ist eine Nachricht reingekommen.",
  "Intro Babylon L09":
  "Ihr seid noch nicht weit gegangen, da kommt hinter einem Turm plötzlich ein besonders großer Babylonier hervor, stellt sich euch in den Weg, schaut euch finster an und fordert in tiefer Stimme einen Beweis der folgenden Gleichung.",
  "Intro Babylon L08":
@@ -1101,8 +1091,6 @@
  "**Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass eine Abbildung genau dann surjektive ist, wenn sie ein Rechtsinverses besitzt. Und die hiesigen Monosophen wollen gern bewiesen haben, dass eine Abbildung genau dann injektiv ist, wenn sie in Linksinverses besitzt.\n\n**Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung §0 brauchen.",
  "Instead of §0, §1 can be used. After §2, you have to show how to\nprove goal by §3 before proving §4 itself.":
  "**Robo**: Ich weiß was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.\n\n**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschliesst, bevor ich §4 beweise?\n\n**Robo**: Genau!",
- "Instead of §0 can also write §1 (typed as §2 or §3).":
- "**Du**: Also, ich kenne §0 und §1, aber das wollten wir ja diesmal vermeiden.\n\n**Robo**: Was du machen könntest, ist, mit §2 die Annahme in zwei Teile aufteilen.",
  "Instead of §0 and §1 try §2":
  "**Du**: Also, ich kenne §0 und §1, aber das wollten wir ja diesmal vermeiden.\n\n**Robo**: Was du machen könntest, ist, mit §2 die Annahme in zwei Teile aufteilen.",
  "Insert §0 via §1":
@@ -1438,8 +1426,8 @@
  "Conclusion Piazza L13":
  "Die Kinder lachen, bilden einen Kreis um euch um singen ein Lied in einer Sprache, die ihr beide nicht versteht.  Dann laufen sie davon.\n\n**Robo**:  Ich glaube, wir können weiterfliegen.",
  "Conclusion Piazza L10": "**Mem**:  Ja super, ihr habt aber schnell gelernt!",
- "Conclusion Piazza L07: the complement §0 is §1.":
- "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n\n**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n\n**Du**: Nein, ich meine dieses §0 hier!\n\n**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*. Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war.",
+ "Conclusion Piazza L07.":
+ "**Ext**:  Siehst du, Fin – macht gar keinen Unterschied, wie du das schreibst.\nDiese Fremdlinge blicken das.",
  "Conclusion Piazza L06: Explain that §0 means extensionality":
  "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n\n**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n\n**Du**: Nein, ich meine dieses §0 hier!\n\n**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*. Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war.",
  "Conclusion Piazza L01":
