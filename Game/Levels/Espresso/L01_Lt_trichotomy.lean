@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Cafe"
+World "Espresso"
 Level 1
 
 Title ""
@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "Intro Cafe L01"
+Introduction "Intro Espresso L01"
 
 /- This Level used to be Luna 09. Here I think could be used to teach `grind` can
 do thing `linarith` can do. -/
@@ -51,4 +51,4 @@ NewTheorem lt_trichotomy
 NewTactic grind
 
 
-Conclusion "Cafe L01"
+Conclusion "Espresso L01"

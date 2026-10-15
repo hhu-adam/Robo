@@ -1,18 +1,18 @@
-import Game.Levels.Cafe.L01_Lt_trichotomy
-import Game.Levels.Cafe.L02_Lt_trichotomy2
-import Game.Levels.Cafe.L03_Lt_grind
-import Game.Levels.Cafe.L04_Grind_ring
-import Game.Levels.Cafe.L05_Split_if
-import Game.Levels.Cafe.L06_Lia
-import Game.Levels.Cafe.L07
-import Game.Levels.Cafe.L08
+import Game.Levels.Espresso.L01_Lt_trichotomy
+import Game.Levels.Espresso.L02_Lt_trichotomy2
+import Game.Levels.Espresso.L03_Lt_grind
+import Game.Levels.Espresso.L04_Grind_ring
+import Game.Levels.Espresso.L05_Split_if
+import Game.Levels.Espresso.L06_Lia
+import Game.Levels.Espresso.L07
+import Game.Levels.Espresso.L08
 
 /-!
 The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) and `linarith` (for ℝ).
 -/
 
-World "Cafe"
-Title "Cafe"
+World "Espresso"
+Title "Espresso"
 
 Image "images/MoonLuna.png"
 
@@ -43,4 +43,4 @@ ich hier noch ganz durcheinander.
 
 "
 -/
-Introduction " Intro Cafe"
+Introduction " Intro Espresso"

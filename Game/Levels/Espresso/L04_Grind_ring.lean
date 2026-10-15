@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Cafe"
+World "Espresso"
 Level 4
 
 Title ""
@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "Intro Cafe L04"
+Introduction "Intro Espresso L04"
 
 Statement (a b c : ℤ) :
     a + b + c = 3 →
@@ -23,4 +23,4 @@ Statement (a b c : ℤ) :
 
 NewTactic grind
 
-Conclusion "Cafe L04"
+Conclusion "Espresso L04"

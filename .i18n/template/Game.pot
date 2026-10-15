@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-14\n"
+"POT-Creation-Date: 2026-10-15\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -6740,8 +6740,8 @@ msgstr ""
 msgid "Intro Piazza"
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:13
-msgid "Intro Cafe L01"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:13
+msgid "Intro Espresso L01"
 msgstr ""
 
 #. §0: `lt_trichotomy`
@@ -6750,19 +6750,19 @@ msgstr ""
 #. §3: ```
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:29
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:29
 msgid "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n"
 "§3\n"
 ""
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:35
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:35
 msgid "[Hint tg1] Try §0"
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:38
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:38
 msgid "[Hint tg2] **Scribble**: Well, I guess you just try §0 again."
 msgstr ""
 
@@ -6773,18 +6773,18 @@ msgstr ""
 #. §4: ```
 #. obtain h | h | h := lt_trichotomy x y
 #. ```
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:41
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:41
 msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
 "\n"
 "§4"
 msgstr ""
 
-#: Game/Levels/Cafe/L01_Lt_trichotomy.lean:54
-msgid "Cafe L01"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:54
+msgid "Espresso L01"
 msgstr ""
 
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:13
-msgid "Intro Cafe L02"
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:13
+msgid "Intro Espresso L02"
 msgstr ""
 
 #. §0: `b`
@@ -6793,7 +6793,7 @@ msgstr ""
 #. §3: ```
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:29
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:29
 msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
 "§3\n"
 ""
@@ -6802,60 +6802,60 @@ msgstr ""
 #. §0: `a < c`
 #. §1: `∨`
 #. §2: `left`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:36
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:36
 msgid "[Hint ulgrd] Since §0, I'd say the left side of the §1 is the one that holds. Pick it with §2."
 msgstr ""
 
 #. §0: `grind`
 #. §1: `grind`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:38
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:38
 msgid "[Hint ltgrind] The goal is now a system of inequalities. §0 is good at this kind of\n"
 "arithmetic reasoning, so just try §1."
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:43
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:43
 msgid "I guess you can try §0 again."
 msgstr ""
 
-#: Game/Levels/Cafe/L02_Lt_trichotomy2.lean:48
-msgid "Cafe L02"
+#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:48
+msgid "Espresso L02"
 msgstr ""
 
-#: Game/Levels/Cafe/L03_Lt_grind.lean:13
-msgid "Intro Cafe L03"
+#: Game/Levels/Espresso/L03_Lt_grind.lean:13
+msgid "Intro Espresso L03"
 msgstr ""
 
 #. §0: `lt_trichotomy`
 #. §1: `grind`
 #. §2: `grind`
-#: Game/Levels/Cafe/L03_Lt_grind.lean:30
+#: Game/Levels/Espresso/L03_Lt_grind.lean:30
 msgid "[Hint grindDirect] No need to split into cases with §0 this time — §1\n"
 "handles the case analysis and the inequalities on its own. Just try §2 right away."
 msgstr ""
 
-#: Game/Levels/Cafe/L03_Lt_grind.lean:34
-msgid "Cafe L03"
+#: Game/Levels/Espresso/L03_Lt_grind.lean:34
+msgid "Espresso L03"
 msgstr ""
 
-#: Game/Levels/Cafe/L04_Grind_ring.lean:13
-msgid "Intro Cafe L04"
+#: Game/Levels/Espresso/L04_Grind_ring.lean:13
+msgid "Intro Espresso L04"
 msgstr ""
 
 #. §0: `grind`
 #. §1: `ring`
 #. §2: `grind`
-#: Game/Levels/Cafe/L04_Grind_ring.lean:20
+#: Game/Levels/Espresso/L04_Grind_ring.lean:20
 msgid "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
 "algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
 msgstr ""
 
-#: Game/Levels/Cafe/L04_Grind_ring.lean:26
-msgid "Cafe L04"
+#: Game/Levels/Espresso/L04_Grind_ring.lean:26
+msgid "Espresso L04"
 msgstr ""
 
-#: Game/Levels/Cafe/L05_Split_if.lean:13
-msgid "Intro Cafe L05"
+#: Game/Levels/Espresso/L05_Split_if.lean:13
+msgid "Intro Espresso L05"
 msgstr ""
 
 #. §0: `if x ≤ 0 then 0 else x`
@@ -6863,69 +6863,69 @@ msgstr ""
 #. §2: `grind`
 #. §3: `if`
 #. §4: `grind`
-#: Game/Levels/Cafe/L05_Split_if.lean:18
+#: Game/Levels/Espresso/L05_Split_if.lean:18
 msgid "[Hint grindSplitIf] Here §0 and we\n"
 "want to show it is nonnegative. The goal depends on whether §1 holds, so it needs a case\n"
 "split. §2 splits on the §3 automatically and closes both branches with linear arithmetic,\n"
 "so just try §4."
 msgstr ""
 
-#: Game/Levels/Cafe/L05_Split_if.lean:26
-msgid "Cafe L05"
+#: Game/Levels/Espresso/L05_Split_if.lean:26
+msgid "Espresso L05"
 msgstr ""
 
-#: Game/Levels/Cafe/L06_Lia.lean:13
-msgid "Intro Cafe L06"
+#: Game/Levels/Espresso/L06_Lia.lean:13
+msgid "Intro Espresso L06"
 msgstr ""
 
 #. §0: `2 * x + 4 * y`
 #. §1: `5`
 #. §2: `grind`
 #. §3: `grind`
-#: Game/Levels/Cafe/L06_Lia.lean:17
+#: Game/Levels/Espresso/L06_Lia.lean:17
 msgid "[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so they\n"
 "can never be equal. §2 can reason about such linear integer arithmetic on its own, so just\n"
 "try §3."
 msgstr ""
 
-#: Game/Levels/Cafe/L06_Lia.lean:22
+#: Game/Levels/Espresso/L06_Lia.lean:22
 msgid "To add."
 msgstr ""
 
-#: Game/Levels/Cafe/L06_Lia.lean:27
-msgid "Cafe L06"
+#: Game/Levels/Espresso/L06_Lia.lean:27
+msgid "Espresso L06"
 msgstr ""
 
 #. §0: `IsOpen.mem_nhds_iff`
-#: Game/Levels/Cafe/L07.lean:11
+#: Game/Levels/Espresso/L07.lean:11
 msgid "[Hint mdsff] Rewrite the goal using the theorem §0. "
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Cafe/L07.lean:13
+#: Game/Levels/Espresso/L07.lean:13
 msgid "[Hint tdsg] Try §0. "
 msgstr ""
 
 #. §0: `isOpen_Ioo`
-#: Game/Levels/Cafe/L07.lean:15
+#: Game/Levels/Espresso/L07.lean:15
 msgid "[Hint hdioioo] Open interval is a open set. Apply §0."
 msgstr ""
 
 #. §0: `𝓝 a`
 #. §1: `a`
 #. §2: `a`
-#: Game/Levels/Cafe/L07.lean:27
+#: Game/Levels/Espresso/L07.lean:27
 msgid "§0 is the *neighborhood* of §1: it consists of all open sets containing §2."
 msgstr ""
 
 #. §0: `nhdsWithin_mono`
-#: Game/Levels/Cafe/L08.lean:11
+#: Game/Levels/Espresso/L08.lean:11
 msgid "[Hint nhdsmno] The right neighborhood is smaller than the punctured neighborhood.\n"
 "Apply §0. "
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Cafe/L08.lean:14
+#: Game/Levels/Espresso/L08.lean:14
 msgid "[Hint tg8nh] Try §0. "
 msgstr ""
 
@@ -6946,7 +6946,7 @@ msgstr ""
 #. §14: `0`
 #. §15: `0`
 #. §16: `0`
-#: Game/Levels/Cafe/L08.lean:28
+#: Game/Levels/Espresso/L08.lean:28
 msgid "§0 is the neighborhood of §1 *inside* the set §2:\n"
 "take a neighborhood of §3 and keep only the points that lie in §4.\n"
 "\n"
@@ -6958,12 +6958,12 @@ msgid "§0 is the neighborhood of §1 *inside* the set §2:\n"
 "  to §14, i.e. a small interval around §15 with §16 itself removed."
 msgstr ""
 
-#: Game/Levels/Cafe.lean:15
-msgid "Cafe"
+#: Game/Levels/Espresso.lean:15
+msgid "Espresso"
 msgstr ""
 
-#: Game/Levels/Cafe.lean:46
-msgid "Intro Cafe"
+#: Game/Levels/Espresso.lean:46
+msgid "Intro Espresso"
 msgstr ""
 
 #. §0: `a`
@@ -8227,7 +8227,7 @@ msgstr ""
 msgid "§0 says that §1 approaches §2 as §3 approaches §4 —\n"
 "in usual notation, §5.\n"
 "\n"
-"You already met the neighborhoods §6 and §7 on the planet *Cafe*.\n"
+"You already met the neighborhoods §6 and §7 on the planet *Espresso*.\n"
 "Since §8 consists of the points near §9, the whole statement reads:\n"
 "§10 sends points near §11 to points near §12."
 msgstr ""
@@ -8273,7 +8273,7 @@ msgstr ""
 #. §14: `𝓝 a`
 #. §15: `𝓝[univ] a`
 #: Game/Levels/Slope/L06.lean:9
-msgid "[Intro] Remember from Cafe:\n"
+msgid "[Intro] Remember from Espresso:\n"
 "  §0 – points near §1 near §2 with §3\n"
 "  §4 – points near §5 near §6 with §7\n"
 "More formally, for any subset §8, the elements of §9 are the intersections of §10 with\n"
@@ -8288,7 +8288,7 @@ msgstr ""
 #. §2: `have`
 #. §3: `rw`
 #: Game/Levels/Slope/L06.lean:20
-msgid "[Hint nwln] Remember §0 from Cafe.  To apply it here, first establish\n"
+msgid "[Hint nwln] Remember §0 from Espresso.  To apply it here, first establish\n"
 "§1 with §2, then §3 using this equality."
 msgstr ""
 

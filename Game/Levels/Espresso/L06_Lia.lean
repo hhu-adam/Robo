@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Cafe"
+World "Espresso"
 Level 6
 
 Title ""
@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "Intro Cafe L06"
+Introduction "Intro Espresso L06"
 
 /- this level used to teach that grind can solve some linear arithmetic problem. -/
 Statement {x y : ℤ} : 2 * x + 4 * y ≠ 5 := by
@@ -24,4 +24,4 @@ TacticDoc grind
 
 NewTactic grind
 
-Conclusion "Cafe L06"
+Conclusion "Espresso L06"

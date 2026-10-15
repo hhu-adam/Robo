@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Cafe"
+World "Espresso"
 Level 7
 
 Title ""

@@ -8,7 +8,7 @@ open Topology Filter
 Introduction "`Tendsto f (𝓝 a) (𝓝 b)` says that `f x` approaches `b` as `x` approaches `a` —
 in usual notation, $\\lim_{x \\to a} f(x) = b$.
 
-You already met the neighborhoods `𝓝 a` and `𝓝[s] a` on the planet *Cafe*.
+You already met the neighborhoods `𝓝 a` and `𝓝[s] a` on the planet *Espresso*.
 Since `𝓝 a` consists of the points near `a`, the whole statement reads:
 `f` sends points near `a` to points near `b`."
 

@@ -1,6 +1,6 @@
 import Game.Metadata
 
-World "Cafe"
+World "Espresso"
 Level 5
 
 Title ""
@@ -10,7 +10,7 @@ Introduction "
 **Lina**:  Jetzt ich wieder.
 "
 -/
-Introduction "Intro Cafe L05"
+Introduction "Intro Espresso L05"
 
 /- this level used to teach that grind can split ifs. -/
 Statement (x : ℤ) :
@@ -23,4 +23,4 @@ Statement (x : ℤ) :
 
 NewTactic grind
 
-Conclusion "Cafe L05"
+Conclusion "Espresso L05"
