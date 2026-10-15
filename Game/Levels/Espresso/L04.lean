@@ -5,11 +5,6 @@ Level 4
 
 Title ""
 
-/-
-Introduction "
-**Lina**:  Jetzt ich wieder.
-"
--/
 Introduction "Intro Espresso L04"
 
 Statement (a b c : ℤ) :
@@ -20,7 +15,5 @@ Statement (a b c : ℤ) :
   Hint "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by
     algebraic manipulation. `grind` can call `ring` to close such goals, so just try `grind`."
   grind
-
-NewTactic grind
 
 Conclusion "Espresso L04"

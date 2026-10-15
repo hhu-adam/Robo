@@ -5,50 +5,33 @@ Level 1
 
 Title ""
 
-/-
-Introduction "
-**Lina**:  Jetzt ich wieder.
-"
--/
 Introduction "Intro Espresso L01"
 
-/- This Level used to be Luna 09. Here I think could be used to teach `grind` can
-do thing `linarith` can do. -/
 Statement (a c : ℝ) (h : a ≠ c) : a < c ∨ c < a := by
-  /-
-  Hint "**Du**:
-  Nun, es ist schon ziemlich klar, welches `b` man hier verwenden könnte.
-
-  **Robo**: Wenn dir das so klar ist, dann fang doch schon einmal mit `use …` an.
-  Und danach wirst du `lt_trichotomy` gut gebrauchen können.  Zum Beispiel so:
-  ```
-  obtain h | h | h := lt_trichotomy a c
-  ```
-  "
-  -/
   Hint "[Hint lt] Try to use the theorem `lt_trichotomy` to discuss relations between `a` and `c`
   ```
-  obtain h | h | h := lt_trichotomy a c
+  have h := lt_trichotomy a c
   ```
   "
-  obtain h | h | h := lt_trichotomy a c
-  · Hint "[Hint tg1] Try `grind`"
-    grind
+  have h := lt_trichotomy a c
+  Hint "[Hint 815af] You need to distinguish cases."
+  Hint (hidden := true) "[Hint dy3w7] Try `obtain h | h | h := h`"
+  obtain h | h | h := h
+  · Hint "[Hint tg1] new tactic: `grind`"
+    left
+    assumption
   · contradiction
-  · Hint (hidden := true) "[Hint tg2] **Scribble**: Well, I guess you just try `grind` again."
-    grind
-
+  · Hint (hidden := true) "[Hint tg2] try `grind` again"
+    right
+    assumption
+    
 /--
-Wird typischerweise mit `obtain` verwendet, um in einem Beweis die drei Fälle `x < y`, `x = y` und `x > y` zu unterscheiden:
-
+Typicall used with `obtain` to distinguish the three cases `x < y`, `x = y` und `x > y` zu unterscheiden:
 ```
 obtain h | h | h := lt_trichotomy x y
 ```
 -/
 TheoremDoc lt_trichotomy as "lt_trichotomy" in "≤"
 NewTheorem lt_trichotomy
-
-NewTactic grind
-
 
 Conclusion "Espresso L01"

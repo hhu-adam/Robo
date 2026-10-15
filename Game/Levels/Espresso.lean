@@ -1,11 +1,11 @@
 import Game.Levels.Espresso.L01_Lt_trichotomy
-import Game.Levels.Espresso.L02_Lt_trichotomy2
-import Game.Levels.Espresso.L03_Lt_grind
-import Game.Levels.Espresso.L04_Grind_ring
-import Game.Levels.Espresso.L05_Split_if
-import Game.Levels.Espresso.L06_Lia
-import Game.Levels.Espresso.L07
-import Game.Levels.Espresso.L08
+import Game.Levels.Espresso.L02_grind
+import Game.Levels.Espresso.L03
+import Game.Levels.Espresso.L04
+import Game.Levels.Espresso.L05
+import Game.Levels.Espresso.L06
+import Game.Levels.Espresso.L07_nhds
+import Game.Levels.Espresso.L08_nhdsWithin
 
 /-!
 The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) and `linarith` (for ℝ).

@@ -405,6 +405,50 @@ msgstr ""
 msgid "§0 is the closed interval §1."
 msgstr ""
 
+#. §0: `Ioo a b`
+#. §1: $(a,b)$
+#: Game/Doc/Definition.lean:256
+msgid "§0 is the open interval §1."
+msgstr ""
+
+#. §0: `Ioi a`
+#. §1: `a`
+#. §2: $(a,\\infty)$
+#: Game/Doc/Definition.lean:261
+msgid "In an ordered set, §0 is the subset of all elements greater than §1.\n"
+"For example, in ℝ it is the open interval §2."
+msgstr ""
+
+#. §0: `𝓝 a`
+#. §1: `𝓝`
+#. §2: `\\nhds`
+#: Game/Doc/Definition.lean:274
+msgid "§0 is the neighborhood filter: it consists of all neighborhoods of a.\n"
+"(A set is a neighboorhood of a point a it it contains an open set containing a.)\n"
+"\n"
+"To type the symbol §1, write §2."
+msgstr ""
+
+#. §0: `𝓝[s] a`
+#. §1: `a`
+#. §2: `s`
+#. §3: `𝓝[>] (x : ℝ)`
+#. §4: `𝓝[Set.Ioi x] x`
+#. §5: `x`
+#. §6: `𝓝[≠] x`
+#. §7: `𝓝[{0}ᶜ] 0`
+#: Game/Doc/Definition.lean:281
+msgid "§0 is the filter of neighborhoods of §1 inside the set §2:\n"
+"it consists of all sets that contain the intersection of s and a neighborhood of a.\n"
+"\n"
+"Two special cases:\n"
+"\n"
+"* §3 is short for §4: the points near §5 that are\n"
+"  *greater* than x\n"
+"* §6 is short for §7: the points near x that are *not equal*\n"
+"  to x"
+msgstr ""
+
 #. §0: `Nonempty`
 #. §1: `T`
 #. §2: `T : Type`
@@ -432,7 +476,7 @@ msgstr ""
 #. §24: `a : T`
 #. §25: `a ∈ A`
 #. §26: `ha : a ∈ A`
-#: Game/Doc/Definition.lean:259
+#: Game/Doc/Definition.lean:294
 msgid "[Doc.Definition] Nonempty\n"
 "§0\n"
 "for §1, §2, §3 means T is non-empty\n"
@@ -451,7 +495,7 @@ msgstr ""
 #. §3: `h : Set.Finite A`
 #. §4: `h.toFinset : Finset T`
 #. §5: `A`
-#: Game/Doc/Definition.lean:300
+#: Game/Doc/Definition.lean:335
 msgid "For a subset §0, §1 means that §2 has only a finite number of elements.\n"
 "If §3 is given as an assumption, then §4 is the same subset §5,\n"
 "but now explicitly understood as a finite subset."
@@ -460,7 +504,7 @@ msgstr ""
 #. §0: `(A : Prop)`
 #. §1: `(True : Prop)`
 #. §2: `(False : Prop)`
-#: Game/Doc/Definition.lean:310
+#: Game/Doc/Definition.lean:345
 msgid "§0 is any statement, without further specification as to whether it is true, false, or\n"
 "unprovable.\n"
 "\n"
@@ -480,7 +524,7 @@ msgstr ""
 #. §9: `h : A ∧ B`
 #. §10: `h₁ : A`
 #. §11: `h₂ : B`
-#: Game/Doc/Definition.lean:319
+#: Game/Doc/Definition.lean:354
 msgid "§0 (“and”) is the statement that both §1 and §2 are true.\n"
 "\n"
 "## §3 as a proof goal\n"
@@ -507,7 +551,7 @@ msgstr ""
 #. §11: ```
 #. obtain h | h := h
 #. ```
-#: Game/Doc/Definition.lean:333
+#: Game/Doc/Definition.lean:368
 msgid "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n"
 "\n"
 "## §3 as proof goal\n"
@@ -537,7 +581,7 @@ msgstr ""
 #. §10: `h : A`
 #. §11: `B`
 #. §12: `apply`
-#: Game/Doc/Definition.lean:353
+#: Game/Doc/Definition.lean:388
 msgid "For §0, §1 is the implication “§2 implies §3.”\n"
 "For other §4, §5 is a mapping that maps values from §6 to §7.\n"
 "\n"
@@ -567,7 +611,7 @@ msgstr ""
 #. §13: `h.mp`
 #. §14: `h.mpr`
 #. §15: `mp`
-#: Game/Doc/Definition.lean:368
+#: Game/Doc/Definition.lean:403
 msgid "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n"
 "\n"
 "## §3 as proof target\n"
@@ -603,7 +647,7 @@ msgstr ""
 #. §17: `obtain ⟨a, ha⟩ := h`
 #. §18: `a : A`
 #. §19: `ha : P a`
-#: Game/Doc/Definition.lean:385
+#: Game/Doc/Definition.lean:420
 msgid "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that an element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
@@ -650,7 +694,7 @@ msgstr ""
 #.    h_exists : P a
 #.    h_unique : ∀ (y : A), P y → y = a
 #. ```
-#: Game/Doc/Definition.lean:404
+#: Game/Doc/Definition.lean:439
 msgid "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
@@ -696,7 +740,7 @@ msgstr ""
 #. §17: `a`
 #. §18: `h : P a₀`
 #. §19: `a₀`
-#: Game/Doc/Definition.lean:439
+#: Game/Doc/Definition.lean:474
 msgid "Universal quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that the statement §2 is true for all §3 in §4\n"
 "(more precisely: for all §5 of type §6).\n"
@@ -716,7 +760,7 @@ msgstr ""
 #. §4: `True`
 #. §5: `True`
 #. §6: `True`
-#: Game/Doc/Definition.lean:453
+#: Game/Doc/Definition.lean:488
 msgid "The statement §0 is always true.\n"
 "\n"
 "## §1 as a proof target\n"
@@ -741,7 +785,7 @@ msgstr ""
 #. §10: `False`
 #. §11: `False`
 #. §12: `contradiction`
-#: Game/Doc/Definition.lean:466
+#: Game/Doc/Definition.lean:501
 msgid "The statement §0 is always false.\n"
 "\n"
 "## §1 as proof target\n"
@@ -769,7 +813,7 @@ msgstr ""
 #. §7: `h : ¬ A`
 #. §8: `apply`
 #. §9: `False`
-#: Game/Doc/Definition.lean:485
+#: Game/Doc/Definition.lean:520
 msgid "§0 is the logical negation of §1.\n"
 "It is implemented internally as §2.  You can see this with §3.\n"
 "\n"
@@ -780,14 +824,14 @@ msgstr ""
 #. §0: `rfl`
 #. §1: `rw`
 #. §2: `trans`
-#: Game/Doc/Definition.lean:494
+#: Game/Doc/Definition.lean:529
 msgid "Useful tactics for equality are: §0, §1, §2"
 msgstr ""
 
 #. §0: `x ≠ y`
 #. §1: `¬ x = y`
 #. §2: `unfold Ne`
-#: Game/Doc/Definition.lean:499
+#: Game/Doc/Definition.lean:534
 msgid "Inequality §0 is defined as §1.  You can see this with §2."
 msgstr ""
 
@@ -797,7 +841,7 @@ msgstr ""
 #. ∃ r : ℕ, n = r + r
 #. ```
 #. §3: `unfold Even`
-#: Game/Doc/Definition.lean:507
+#: Game/Doc/Definition.lean:542
 msgid "§0 is the statement that §1 is even:\n"
 "§2\n"
 "You can easily check this with §3."
@@ -809,7 +853,7 @@ msgstr ""
 #. ∃ k : ℕ, n = 2 * k + 1
 #. ```
 #. §3: `unfold Odd`
-#: Game/Doc/Definition.lean:516
+#: Game/Doc/Definition.lean:551
 msgid "§0 is the statement that §1 is odd:\n"
 "§2\n"
 "You can easily check this with §3."
@@ -819,7 +863,7 @@ msgstr ""
 #. §1: `Prime n`
 #. §2: `n`
 #. §3: `prime_def`
-#: Game/Doc/Definition.lean:525
+#: Game/Doc/Definition.lean:560
 msgid "For §0, §1 means that §2 is a prime number.\n"
 "To work with this definition, it is often helpful to rewrite it using the lemma\n"
 "§3."
@@ -827,7 +871,7 @@ msgstr ""
 
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
-#: Game/Doc/Definition.lean:532
+#: Game/Doc/Definition.lean:567
 msgid "§0 is the mapping §1.\n"
 "It therefore maps a natural number to its successor."
 msgstr ""
@@ -839,7 +883,7 @@ msgstr ""
 #. §4: `n : ℕ`
 #. §5: `(n : ℤ)`
 #. §6: `↑n`
-#: Game/Doc/Definition.lean:538
+#: Game/Doc/Definition.lean:573
 msgid "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n"
 "(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n"
 "\n"
@@ -853,7 +897,7 @@ msgstr ""
 #. §1: `|x|`
 #. §2: `x`
 #. §3: `|`
-#: Game/Doc/Definition.lean:551
+#: Game/Doc/Definition.lean:586
 msgid "For §0, §1 is the absolute value of §2.\n"
 "(Here, §3 is the usual vertical bar on the keyboard.)"
 msgstr ""
@@ -862,7 +906,7 @@ msgstr ""
 #. §1: `∑ i ∈ I, f i`
 #. §2: $\\sum_{i\\in I} f(i)$
 #. §3: `\\sum`
-#: Game/Doc/Definition.lean:565
+#: Game/Doc/Definition.lean:600
 msgid "For a finite index set §0, §1 is Leanic notation for the sum\n"
 "§2.  You write the summation sign as §3."
 msgstr ""
@@ -871,7 +915,7 @@ msgstr ""
 #. §1: `∏ i ∈ I, f i`
 #. §2: $\\prod_{i\\in I} f(i)$
 #. §3: `\\prod`
-#: Game/Doc/Definition.lean:571
+#: Game/Doc/Definition.lean:606
 msgid "For a finite index set §0, §1 is the Leanic notation for the product\n"
 "§2.  You write the product symbol as §3."
 msgstr ""
@@ -880,13 +924,13 @@ msgstr ""
 #. §1: `Polynomial R`
 #. §2: `R`
 #. §3: `R[X]`
-#: Game/Doc/Definition.lean:578
+#: Game/Doc/Definition.lean:613
 msgid "Let §0 be a semiring. §1 is the type of univariate polynomials\n"
 "over §2, denoted as §3 within the Polynomial namespace."
 msgstr ""
 
 #. §0: `X`
-#: Game/Doc/Definition.lean:584
+#: Game/Doc/Definition.lean:619
 msgid "§0 is the polynomial variable within the Polynomial namespace."
 msgstr ""
 
@@ -896,7 +940,7 @@ msgstr ""
 #. §3: `X 0`
 #. §4: `X (n-1)`
 #. §5: `R`
-#: Game/Doc/Definition.lean:589
+#: Game/Doc/Definition.lean:624
 msgid "§0 means that §1 is a polynomial in §2 indeterminates\n"
 "§3, …, §4 with coefficients in §5."
 msgstr ""
@@ -904,7 +948,7 @@ msgstr ""
 #. §0: `X n`
 #. §1: `1`
 #. §2: $X_n$
-#: Game/Doc/Definition.lean:595
+#: Game/Doc/Definition.lean:630
 msgid "§0 is the degree §1 monomial §2."
 msgstr ""
 
@@ -912,7 +956,7 @@ msgstr ""
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
-#: Game/Doc/Definition.lean:600
+#: Game/Doc/Definition.lean:635
 msgid "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to §3 in Leanic."
 msgstr ""
 
@@ -923,7 +967,7 @@ msgstr ""
 #. §4: `b : T`
 #. §5: `b ∈ upperBounds s`
 #. §6: `s ≤ b`
-#: Game/Doc/Definition.lean:605
+#: Game/Doc/Definition.lean:640
 msgid "Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
 "§5 means that b is an *upper bound* of s: §6 for every element\n"
 "of s."
@@ -936,7 +980,7 @@ msgstr ""
 #. §4: `b`
 #. §5: `b : T`
 #. §6: `b ∈ upperBounds s`
-#: Game/Doc/Definition.lean:612
+#: Game/Doc/Definition.lean:647
 msgid "For subset §0 of a set §1 (§2), §3 means that\n"
 "there exists some §4 in T (§5) such that §6."
 msgstr ""
@@ -947,21 +991,21 @@ msgstr ""
 #. §3: `T`
 #. §4: `s : Set T`
 #. §5: `s`
-#: Game/Doc/Definition.lean:618
+#: Game/Doc/Definition.lean:653
 msgid "§0 is the supremum of §1.  Here §2 is a subset of some ordered set §3 (§4),\n"
 "and §5 is assumed to be bounded above."
 msgstr ""
 
 #. §0: `s`
 #. §1: `closure s`
-#: Game/Doc/Definition.lean:624
+#: Game/Doc/Definition.lean:659
 msgid "For a subset §0 of a topological space, §1 denotes the closure of s."
 msgstr ""
 
 #. §0: `IsLocallyConstant f`
 #. §1: `f`
 #. §2: `f`
-#: Game/Doc/Definition.lean:627
+#: Game/Doc/Definition.lean:662
 msgid "§0 says that every point has a neighborhood on which §1 is\n"
 "constant; it is defined as: the preimage of every set under §2 is open."
 msgstr ""
@@ -975,7 +1019,7 @@ msgstr ""
 #. §6: `𝓝 a`
 #. §7: `a`
 #. §8: `a : ℝ`
-#: Game/Doc/Definition.lean:631
+#: Game/Doc/Definition.lean:666
 msgid "A *filter* §0 on a type §1 is a collection of subsets of α that\n"
 "- is closed under intersection (§2),\n"
 "- is upward closed (§3), and\n"
@@ -993,7 +1037,7 @@ msgstr ""
 #. §0: `𝓟 s`
 #. §1: `s`
 #. §2: `s`
-#: Game/Doc/Definition.lean:646
+#: Game/Doc/Definition.lean:681
 msgid "The *principal filter* §0 of a set §1 consists of all sets containing §2."
 msgstr ""
 
@@ -1001,7 +1045,7 @@ msgstr ""
 #. §1: `ℝ`
 #. §2: `x ≥ b`
 #. §3: `b`
-#: Game/Doc/Definition.lean:649
+#: Game/Doc/Definition.lean:684
 msgid "§0 is the filter on §1 consisting of all sets that contain every sufficiently large\n"
 "number — sets that contain all §2 for some bound §3.\n"
 "Think of it as the generalized point 'at infinity'."
@@ -1022,9 +1066,7 @@ msgstr ""
 #. §12: `f a`
 #. §13: `Tendsto f (𝓝[>] a) (𝓝 b)`
 #. §14: `Tendsto f (𝓝[<] a) (𝓝 b)`
-#. §15: `𝓝`
-#. §16: `\\nhds`
-#: Game/Doc/Definition.lean:654
+#: Game/Doc/Definition.lean:689
 msgid "For a function §0, §1,\n"
 "§2 says that §3 approaches §4 as §5 approaches §6 —\n"
 "in usual notation, §7.\n"
@@ -1035,16 +1077,14 @@ msgid "For a function §0, §1,\n"
 "* §9 only looks at points near §10 with §11,\n"
 "  so the value §12 itself plays no role — this is the usual limit.\n"
 "* §13 and §14 describe the\n"
-"  one-sided limits from the right and from the left.\n"
-"\n"
-"To type the symbol §15, write §16."
+"  one-sided limits from the right and from the left."
 msgstr ""
 
 #. §0: `𝓕`
 #. §1: `∀ᶠ x in 𝓕, p x`
 #. §2: `p x`
 #. §3: `{x | p x}`
-#: Game/Doc/Definition.lean:670
+#: Game/Doc/Definition.lean:703
 msgid "For a filter §0, §1 says that §2 holds eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
 msgstr ""
@@ -1053,7 +1093,7 @@ msgstr ""
 #. §1: `f =ᶠ[𝓕] g`
 #. §2: `f x = g x`
 #. §3: `{ x | f x = g x}`
-#: Game/Doc/Definition.lean:674
+#: Game/Doc/Definition.lean:707
 msgid "For a filter §0, §1 says that §2 eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
 msgstr ""
@@ -1070,7 +1110,7 @@ msgstr ""
 #. §7: `rw`
 #. §8: `slope_def_field`
 #. §9: `rw [slope_def_field]`
-#: Game/Doc/Definition.lean:678
+#: Game/Doc/Definition.lean:711
 msgid "For a function §0, §1, and two points §2, §3, §4,\n"
 "§5 is the slope of f between these points:\n"
 "§6\n"
@@ -1089,7 +1129,7 @@ msgstr ""
 #. §9: `hasDerivAt_iff_tendsto_slope`
 #. §10: `rw [hasDerivAt_iff_tendsto_slope]`
 #. §11: `slope`
-#: Game/Doc/Definition.lean:688
+#: Game/Doc/Definition.lean:721
 msgid "For a function §0, §1, a point §2, §3 and §4, §5,\n"
 "§6 means that the derivative of f at x exists and is equal to a.\n"
 "We would usually write something like §7.\n"
@@ -1104,7 +1144,7 @@ msgstr ""
 #. §3: `n : ℕ`
 #. §4: `iteratedDeriv n f`
 #. §5: `ℝ → ℝ`
-#: Game/Doc/Definition.lean:698
+#: Game/Doc/Definition.lean:731
 msgid "For a function §0, §1 and §2, §3, §4 is the n-th derivative of f,\n"
 "as a function §5, if it exists.\n"
 "\n"
@@ -1116,21 +1156,21 @@ msgstr ""
 #. §2: `a`
 #. §3: `a`
 #. §4: `X`
-#: Game/Doc/Definition.lean:706
+#: Game/Doc/Definition.lean:739
 msgid "§0 evaluates the polynomial §1 at the point §2, substituting\n"
 "§3 for the variable §4."
 msgstr ""
 
 #. §0: `Real.exp x`
 #. §1: $e^x$
-#: Game/Doc/Definition.lean:710
+#: Game/Doc/Definition.lean:743
 msgid "§0 is the exponential function §1."
 msgstr ""
 
 #. §0: `p`
 #. §1: `derivative p`
 #. §2: `p.derivative`
-#: Game/Doc/Definition.lean:713
+#: Game/Doc/Definition.lean:746
 msgid "For a polynomial §0, §1 (also written §2) is its\n"
 "formal derivative."
 msgstr ""
@@ -1143,7 +1183,7 @@ msgstr ""
 #. §5: $f \\in C^n$
 #. §6: `ContDiff ℝ ∞ f`
 #. §7: $f \\in C^\\infty$
-#: Game/Doc/Definition.lean:723
+#: Game/Doc/Definition.lean:756
 msgid "For a function §0, §1 and §2, §3, §4 means that f is n times\n"
 "continuously differentiable, i.e. §5.\n"
 "In particular, §6 means that f can be differentiated arbitrarily often,\n"
@@ -1155,7 +1195,7 @@ msgstr ""
 #. §2: `Real.exp`
 #. §3: `ℝ → ℝ`
 #. §4: $x ↦ e^x$
-#: Game/Doc/Definition.lean:731
+#: Game/Doc/Definition.lean:764
 msgid "§0, §1 and §2 each denote the exponential function §3\n"
 "(otherwise commonly denoted as §4)"
 msgstr ""
@@ -1176,7 +1216,7 @@ msgstr ""
 #. §13: `f.symm : β ≃ α`
 #. §14: `α → β`
 #. §15: `β → α`
-#: Game/Doc/Definition.lean:736
+#: Game/Doc/Definition.lean:769
 msgid "For types §0 and §1, §2 or (§3) is the type of functions from §4 with a\n"
 "two-sided inverse.  A term §5 has four components:\n"
 "a map §6 (§7), a map §8 (§9),\n"
@@ -1195,7 +1235,7 @@ msgstr ""
 #. §3: `Function.curry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:750
+#: Game/Doc/Definition.lean:783
 msgid "For a function of two arguments §0, §1 is the\n"
 "function of a single pair-shaped argument with §2.\n"
 "\n"
@@ -1208,7 +1248,7 @@ msgstr ""
 #. §3: `Function.uncurry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:758
+#: Game/Doc/Definition.lean:791
 msgid "For a function of a single pair-shaped argument §0, §1\n"
 "is the function of two arguments with §2.\n"
 "\n"
@@ -6740,7 +6780,7 @@ msgstr ""
 msgid "Intro Piazza"
 msgstr ""
 
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:13
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:8
 msgid "Intro Espresso L01"
 msgstr ""
 
@@ -6748,22 +6788,31 @@ msgstr ""
 #. §1: `a`
 #. §2: `c`
 #. §3: ```
-#. obtain h | h | h := lt_trichotomy a c
+#. have h := lt_trichotomy a c
 #. ```
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:29
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:11
 msgid "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n"
 "§3\n"
 ""
 msgstr ""
 
-#. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:35
-msgid "[Hint tg1] Try §0"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:17
+msgid "[Hint 815af] You need to distinguish cases."
+msgstr ""
+
+#. §0: `obtain h | h | h := h`
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:18
+msgid "[Hint dy3w7] Try §0"
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:38
-msgid "[Hint tg2] **Scribble**: Well, I guess you just try §0 again."
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:20
+msgid "[Hint tg1] new tactic: §0"
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:24
+msgid "[Hint tg2] try §0 again"
 msgstr ""
 
 #. §0: `obtain`
@@ -6773,108 +6822,72 @@ msgstr ""
 #. §4: ```
 #. obtain h | h | h := lt_trichotomy x y
 #. ```
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:41
-msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
-"\n"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:28
+msgid "Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu unterscheiden:\n"
 "§4"
 msgstr ""
 
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:54
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:37
 msgid "Espresso L01"
 msgstr ""
 
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:13
+#: Game/Levels/Espresso/L02_grind.lean:8
 msgid "Intro Espresso L02"
 msgstr ""
 
-#. §0: `b`
-#. §1: `use …`
-#. §2: `lt_trichotomy`
-#. §3: ```
-#. obtain h | h | h := lt_trichotomy a c
-#. ```
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:29
-msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
-"§3\n"
-""
-msgstr ""
-
-#. §0: `a < c`
-#. §1: `∨`
-#. §2: `left`
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:36
-msgid "[Hint ulgrd] Since §0, I'd say the left side of the §1 is the one that holds. Pick it with §2."
-msgstr ""
-
 #. §0: `grind`
-#. §1: `grind`
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:38
-msgid "[Hint ltgrind] The goal is now a system of inequalities. §0 is good at this kind of\n"
-"arithmetic reasoning, so just try §1."
+#: Game/Levels/Espresso/L02_grind.lean:11
+msgid "[Hint 53n7o] New tactic: §0"
 msgstr ""
 
-#. §0: `grind`
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:43
-msgid "I guess you can try §0 again."
-msgstr ""
-
-#: Game/Levels/Espresso/L02_Lt_trichotomy2.lean:48
+#: Game/Levels/Espresso/L02_grind.lean:16
+#: Game/Levels/Espresso/L03.lean:13
 msgid "Espresso L02"
 msgstr ""
 
-#: Game/Levels/Espresso/L03_Lt_grind.lean:13
-msgid "Intro Espresso L03"
+#. §0: `b`
+#: Game/Levels/Espresso/L03.lean:8
+msgid "It is clear which §0 can be used."
 msgstr ""
 
-#. §0: `lt_trichotomy`
-#. §1: `grind`
-#. §2: `grind`
-#: Game/Levels/Espresso/L03_Lt_grind.lean:30
-msgid "[Hint grindDirect] No need to split into cases with §0 this time — §1\n"
-"handles the case analysis and the inequalities on its own. Just try §2 right away."
-msgstr ""
-
-#: Game/Levels/Espresso/L03_Lt_grind.lean:34
-msgid "Espresso L03"
-msgstr ""
-
-#: Game/Levels/Espresso/L04_Grind_ring.lean:13
+#: Game/Levels/Espresso/L04.lean:8
 msgid "Intro Espresso L04"
 msgstr ""
 
 #. §0: `grind`
 #. §1: `ring`
 #. §2: `grind`
-#: Game/Levels/Espresso/L04_Grind_ring.lean:20
+#: Game/Levels/Espresso/L04.lean:15
 msgid "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
 "algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
 msgstr ""
 
-#: Game/Levels/Espresso/L04_Grind_ring.lean:26
+#: Game/Levels/Espresso/L04.lean:19
 msgid "Espresso L04"
 msgstr ""
 
-#: Game/Levels/Espresso/L05_Split_if.lean:13
+#: Game/Levels/Espresso/L05.lean:8
 msgid "Intro Espresso L05"
 msgstr ""
 
-#. §0: `if x ≤ 0 then 0 else x`
-#. §1: `x ≤ 0`
-#. §2: `grind`
-#. §3: `if`
-#. §4: `grind`
-#: Game/Levels/Espresso/L05_Split_if.lean:18
-msgid "[Hint grindSplitIf] Here §0 and we\n"
-"want to show it is nonnegative. The goal depends on whether §1 holds, so it needs a case\n"
-"split. §2 splits on the §3 automatically and closes both branches with linear arithmetic,\n"
-"so just try §4."
+#. §0: `x ≤ 0`
+#. §1: `y = 0`
+#. §2: `0 ≤ y`
+#. §3: `0 < x`
+#. §4: `y = x`
+#. §5: `0 ≤ y`
+#. §6: `grind`
+#: Game/Levels/Espresso/L05.lean:12
+msgid "[Hint grindSplitIf] If §0 then §1, so §2.\n"
+"Otherwise, if §3, then §4, so again §5.\n"
+"Anyway, can prove this with §6."
 msgstr ""
 
-#: Game/Levels/Espresso/L05_Split_if.lean:26
+#: Game/Levels/Espresso/L05.lean:18
 msgid "Espresso L05"
 msgstr ""
 
-#: Game/Levels/Espresso/L06_Lia.lean:13
+#: Game/Levels/Espresso/L06.lean:8
 msgid "Intro Espresso L06"
 msgstr ""
 
@@ -6882,80 +6895,81 @@ msgstr ""
 #. §1: `5`
 #. §2: `grind`
 #. §3: `grind`
-#: Game/Levels/Espresso/L06_Lia.lean:17
+#: Game/Levels/Espresso/L06.lean:11
 msgid "[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so they\n"
 "can never be equal. §2 can reason about such linear integer arithmetic on its own, so just\n"
 "try §3."
 msgstr ""
 
-#: Game/Levels/Espresso/L06_Lia.lean:22
-msgid "To add."
-msgstr ""
-
-#: Game/Levels/Espresso/L06_Lia.lean:27
+#: Game/Levels/Espresso/L06.lean:16
 msgid "Espresso L06"
 msgstr ""
 
-#. §0: `IsOpen.mem_nhds_iff`
-#: Game/Levels/Espresso/L07.lean:11
-msgid "[Hint mdsff] Rewrite the goal using the theorem §0. "
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Espresso/L07.lean:13
-msgid "[Hint tdsg] Try §0. "
-msgstr ""
-
-#. §0: `isOpen_Ioo`
-#: Game/Levels/Espresso/L07.lean:15
-msgid "[Hint hdioioo] Open interval is a open set. Apply §0."
+#: Game/Levels/Espresso/L07_nhds.lean:8
+msgid "Espresso L07"
 msgstr ""
 
 #. §0: `𝓝 a`
 #. §1: `a`
 #. §2: `a`
-#: Game/Levels/Espresso/L07.lean:27
-msgid "§0 is the *neighborhood* of §1: it consists of all open sets containing §2."
-msgstr ""
-
-#. §0: `nhdsWithin_mono`
-#: Game/Levels/Espresso/L08.lean:11
-msgid "[Hint nhdsmno] The right neighborhood is smaller than the punctured neighborhood.\n"
-"Apply §0. "
+#. §3: `Ioo x y`
+#. §4: `x`
+#. §5: `y`
+#. §6: $(x,y)$
+#. §7: `IsOpen.mem_nhds_iff`
+#: Game/Levels/Espresso/L07_nhds.lean:13
+msgid "[Hint mdsff]\n"
+"§0 is the filter of neighborhoods of §1 (sets containing §2 in their interior).\n"
+"Joke about filter/coffee/grind.\n"
+"§3 is the open interval between §4 and §5, i.e. §6.\n"
+"As the interval is open, can proceed with new theorem §7. "
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L08.lean:14
+#: Game/Levels/Espresso/L07_nhds.lean:19
+msgid "[Hint tdsg] Try §0"
+msgstr ""
+
+#. §0: `isOpen_Ioo`
+#: Game/Levels/Espresso/L07_nhds.lean:21
+msgid "[Hint hdioioo] Open interval is a open set. New theorem: §0."
+msgstr ""
+
+#. §0: `0`
+#. §1: `𝓝[>] 0`
+#. §2: `𝓝[≠] 0`
+#. §3: `nhdsWithin_mono`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:11
+msgid "[Hint nhdsmno] We have two modified neighborhood filters of §0.\n"
+"§1 is the filter “approaching zero from the left”:\n"
+"it consists of all sets that contain the positive part of a neighborhood of 0.\n"
+"§2 is the filter “approaching zero without ever being equal to zero”:\n"
+"sets in this filter a given by neighborhoods of zero with zero itself removed.\n"
+"The first filter is finer than the second – which means that every sets in the second\n"
+"is also contain in the first.\n"
+"Apply the new theorem §3."
+msgstr ""
+
+#. §0: `Ioi 0`
+#. §1: $(0,∞)$
+#. §2: `{0}ᶜ`
+#. §3: `0`
+#. §4: `nhdsWithin_mono`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:20
+msgid "[Hint ggfkp] This looks better.\n"
+"§0 is the interval §1.\n"
+"And §2 is the complement of §3 in ℝ.\n"
+"The theorem §4 reduced the statement about neighborhoods to this\n"
+"elementary statement about sets."
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:25
 msgid "[Hint tg8nh] Try §0. "
 msgstr ""
 
-#. §0: `𝓝[s] a`
-#. §1: `a`
-#. §2: `s`
-#. §3: `a`
-#. §4: `s`
-#. §5: `𝓝[>] (0 : ℝ)`
-#. §6: `𝓝[Set.Ioi 0] 0`
-#. §7: `0`
-#. §8: `0`
-#. §9: `(0, ε)`
-#. §10: `0`
-#. §11: `𝓝[≠] 0`
-#. §12: `𝓝[{0}ᶜ] 0`
-#. §13: `0`
-#. §14: `0`
-#. §15: `0`
-#. §16: `0`
-#: Game/Levels/Espresso/L08.lean:28
-msgid "§0 is the neighborhood of §1 *inside* the set §2:\n"
-"take a neighborhood of §3 and keep only the points that lie in §4.\n"
-"\n"
-"Two special cases:\n"
-"\n"
-"* §5 is short for §6: the points near §7 that are\n"
-"  *greater* than §8, i.e. a small interval §9 to the right of §10.\n"
-"* §11 is short for §12: the points near §13 that are *not equal*\n"
-"  to §14, i.e. a small interval around §15 with §16 itself removed."
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:28
+msgid "Conclusion Espresso L08"
 msgstr ""
 
 #: Game/Levels/Espresso.lean:15

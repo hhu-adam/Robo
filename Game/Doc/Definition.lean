@@ -252,9 +252,44 @@ DefinitionDoc Fin as "Fin"
 `Icc a b` is the closed interval $[a,b]$.
 -/
 DefinitionDoc Finset.Icc as "Icc"
--- DefinitionDoc Disjoint as "Disjoint"
--- "
--- "
+
+/--
+`Ioo a b` is the open interval $(a,b)$.
+-/
+DefinitionDoc Set.Ioo as "Set.Ioo" in "Set"
+
+/--
+In an ordered set, `Ioi a` is the subset of all elements greater than `a`.
+For example, in ℝ it is the open interval $(a,\infty)$.
+-/
+DefinitionDoc Set.Ioi as "Set.Ioi" in "Set"
+
+/-
+In an ordered ste, `Iio a` is the subset of all elements less than `a`.
+For example, in ℝ it is the open interval $(-\infty, a)$.
+--/
+DefinitionDoc Set.Iio as "Set.Iio" in "Set"
+
+
+/-- `𝓝 a` is the neighborhood filter: it consists of all neighborhoods of a.
+(A set is a neighboorhood of a point a it it contains an open set containing a.)
+
+To type the symbol `𝓝`, write `\nhds`.
+-/
+DefinitionDoc nhds as "𝓝" in "Filter"
+
+/-- `𝓝[s] a` is the filter of neighborhoods of `a` inside the set `s`:
+it consists of all sets that contain the intersection of s and a neighborhood of a.
+
+Two special cases:
+
+* `𝓝[>] (x : ℝ)` is short for `𝓝[Set.Ioi x] x`: the points near `x` that are
+  *greater* than x
+* `𝓝[≠] x` is short for `𝓝[{0}ᶜ] 0`: the points near x that are *not equal*
+  to x
+-/
+DefinitionDoc nhdsWithin as "𝓝[s]" in "Filter"
+
 
 /--
 [Doc.Definition] Nonempty
@@ -641,7 +676,7 @@ One example is the *neighborhood filter* `𝓝 a` of a real number `a`, `a : ℝ
 it consists of all sets that contain every number sufficiently close to a, and so describes the
 point a together with its immediate surroundings.
 -/
-DefinitionDoc Filter as "Filter"
+DefinitionDoc Filter as "Filter" in "Filter"
 
 /-- The *principal filter* `𝓟 s` of a set `s` consists of all sets containing `s`. -/
 DefinitionDoc Filter.principal as "𝓟" in "Filter"
@@ -662,8 +697,6 @@ from calculus:
   so the value `f a` itself plays no role — this is the usual limit.
 * `Tendsto f (𝓝[>] a) (𝓝 b)` and `Tendsto f (𝓝[<] a) (𝓝 b)` describe the
   one-sided limits from the right and from the left.
-
-To type the symbol `𝓝`, write `\nhds`.
 -/
 DefinitionDoc Filter.Tendsto as "Tendsto" in "Filter"
 
