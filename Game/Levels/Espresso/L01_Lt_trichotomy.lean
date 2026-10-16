@@ -17,16 +17,16 @@ Statement (a c : ℝ) (h : a ≠ c) : a < c ∨ c < a := by
   Hint "[Hint 815af] You need to distinguish cases."
   Hint (hidden := true) "[Hint dy3w7] Try `obtain h | h | h := h`"
   obtain h | h | h := h
-  · Hint "[Hint tg1] new tactic: `grind`"
-    left
+  · left
     assumption
   · contradiction
-  · Hint (hidden := true) "[Hint tg2] try `grind` again"
-    right
+  · right
     assumption
-    
+
 /--
-Typicall used with `obtain` to distinguish the three cases `x < y`, `x = y` und `x > y` zu unterscheiden:
+[Doc.Theorem] `lt_trichotomy`:
+Typically used with `obtain` to split a proof concerning `x` and `y` into the three cases
+`x < y`, `x = y` and `x > y`:
 ```
 obtain h | h | h := lt_trichotomy x y
 ```
@@ -34,4 +34,4 @@ obtain h | h | h := lt_trichotomy x y
 TheoremDoc lt_trichotomy as "lt_trichotomy" in "≤"
 NewTheorem lt_trichotomy
 
-Conclusion "Espresso L01"
+Conclusion "Conclusion Espresso L01"

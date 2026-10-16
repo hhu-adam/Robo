@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-15\n"
+"POT-Creation-Date: 2026-10-16\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -10786,7 +10786,9 @@ msgstr ""
 msgid "Intro Espresso L01"
 msgstr ""
 "Die Hütte ist leer bis auf einen Tisch, auf dem sich ein verstaubter Stapel "
-"Papier befindet.  Und eine Schale Kaffeebohnen."
+"Papier befindet.  Und eine Schale Kaffeebohnen.  \n"
+"\n"
+"Natürlich bist du neugierig und beugst dich über das oberste Blatt."
 
 #. §0: `lt_trichotomy`
 #. §1: `a`
@@ -10799,138 +10801,175 @@ msgid ""
 "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n"
 "§3\n"
 msgstr ""
+"**Robo**: Klarer Fall für §0, würde ich sagen.  Schreib einfach mal:\n"
+"§3\n"
+"Dann siehst du, was die Aussage von §0 ist.\n"
 
 #: Game/Levels/Espresso/L01_Lt_trichotomy.lean:17
 msgid "[Hint 815af] You need to distinguish cases."
 msgstr ""
+"**Robo**:  Genau.  Jetzt kannst du also einfach die verschiedenen Fälle "
+"unterscheiden."
 
 #. §0: `obtain h | h | h := h`
 #: Game/Levels/Espresso/L01_Lt_trichotomy.lean:18
-#, fuzzy
-#| msgid "[Hint hwzk] Try §0"
 msgid "[Hint dy3w7] Try §0"
-msgstr ""
-"**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind "
-"insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und "
-"auch die Ausdrücke, über die summiert wird, übereinstimmen."
+msgstr "**Robo**:  Ich würde §0 schreiben."
 
-#. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:20
-#, fuzzy
-#| msgid "Start with §0"
-msgid "[Hint tg1] new tactic: §0"
-msgstr "**Robo**:  Ich würde wieder mit §0 anfangen."
-
-#. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:24
-#, fuzzy
-#| msgid "[Vieta] Try §0 (again)"
-msgid "[Hint tg2] try §0 again"
-msgstr "**Robo**: Nochmal §0."
-
-#. §0: `obtain`
-#. §1: `x < y`
-#. §2: `x = y`
-#. §3: `x > y`
-#. §4: ```
+#. §0: `lt_trichotomy`
+#. §1: `obtain`
+#. §2: `x`
+#. §3: `y`
+#. §4: `x < y`
+#. §5: `x = y`
+#. §6: `x > y`
+#. §7: ```
 #. obtain h | h | h := lt_trichotomy x y
 #. ```
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:28
-#, fuzzy
-#| msgid ""
-#| "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle "
-#| "§1, §2 und §3 zu unterscheiden:\n"
-#| "\n"
-#| "§4"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:26
 msgid ""
-"Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu "
-"unterscheiden:\n"
-"§4"
+"[Doc.Theorem] §0:\n"
+"Typically used with §1 to split a proof concerning §2 and §3 into the three "
+"cases\n"
+"§4, §5 and §6:\n"
+"§7"
 msgstr ""
-"Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, "
-"§2 und §3 zu unterscheiden:\n"
-"\n"
-"§4"
+"Dieser Satz wird oft zusammen mit §1 verwendet, um einen Beweis über §2 und "
+"§3 in die drei Fälle §4, §5 und §6 aufzuteilen:\n"
+"§7"
 
 #: Game/Levels/Espresso/L01_Lt_trichotomy.lean:37
-msgid "Espresso L01"
+msgid "Conclusion Espresso L01"
 msgstr ""
-
-#: Game/Levels/Espresso/L02_grind.lean:8
-#, fuzzy
-#| msgid "Intro Iso L02"
-msgid "Intro Espresso L02"
-msgstr "**Isosoph**:  … und zur Hauptsache kommen."
+"**KKK 480658**: Ihr seid aber komisch.\n"
+"\n"
+"Robo zieht die Augenbrauen hoch. \n"
+"\n"
+"**Robo**:  Wieso komisch?\n"
+"\n"
+"**KKK 398515**: Na, weil ihr so einen umständlichen Beweis führt.  Ich "
+"verstehe den noch nicht mal."
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L02_grind.lean:11
-msgid "[Hint 53n7o] New tactic: §0"
+#: Game/Levels/Espresso/L02_grind.lean:8
+msgid "Intro Espresso L02: §0"
 msgstr ""
+"Auf der zweiten Seite steht genau dieselbe Aussage.\n"
+"\n"
+"**KKK 480658**:  Probiert doch mal §0!\n"
+"\n"
+"**Robo**:  §0?\n"
+"\n"
+"**KKK 398515**:  Ja, §0.  Ihr schreibt einfach §0, legt eine trockene "
+"Kaffeebohne darauf, und schrumm … ist der Beweis fertig."
 
-#: Game/Levels/Espresso/L02_grind.lean:16 Game/Levels/Espresso/L03.lean:13
-msgid "Espresso L02"
+#: Game/Levels/Espresso/L02_grind.lean:15
+msgid "Conclusion Espresso L02"
 msgstr ""
+"**Du**: Donnerwetter!\n"
+"\n"
+"Die Kaffeebohne ist irgendwie durch das Blatt hindurchgewandert und gemahlen "
+"aus der Unterseite gekrümmelt. "
+
+#: Game/Levels/Espresso/L03.lean:6
+msgid "Intro Espresso L03"
+msgstr ""
+"Du legst das Blatt zur Seite, fegst den gemahlenen Kaffee darunter mit der "
+"Hand zusammen und schaust dir das nächste Blatt an."
 
 #. §0: `b`
-#: Game/Levels/Espresso/L03.lean:8
+#: Game/Levels/Espresso/L03.lean:10
 msgid "It is clear which §0 can be used."
 msgstr ""
+"**Du**:  Nun ja.  Ziemlich klar, welches §0 man hier beispielsweise "
+"verwenden könnte."
+
+#: Game/Levels/Espresso/L03.lean:15
+msgid "Conclusion Espresso L03"
+msgstr ""
+"Wieder wurde die Kaffeebohne irgendwie durch das Papier hindurch "
+"gemahlen.  \n"
+"\n"
+"Du schiebst die Krümel wieder vorsichtig beiseite und auf das kleine "
+"Häufchen vom vorherigen Blatt."
 
 #: Game/Levels/Espresso/L04.lean:8
-#, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Espresso L04"
-msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
+msgstr ""
+"Die Aufgabe auf dem nächsten Blatt sieht ein bisschen komplizierter aus."
 
 #. §0: `grind`
-#. §1: `ring`
-#. §2: `grind`
 #: Game/Levels/Espresso/L04.lean:15
 msgid ""
-"[Hint grindRing] This goal is a polynomial identity that follows from the "
-"hypotheses by\n"
-"algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
-msgstr ""
+"[Hint grindRing] This goal is a polynomial identity in the integers.\n"
+"Not so easy without §0."
+msgstr "**Du**: Keine Ahnung.  Aber wenn ich einfach wieder eine Bohne nehme …"
 
-#: Game/Levels/Espresso/L04.lean:19
-msgid "Espresso L04"
+#. §0: `a`
+#. §1: `b`
+#. §2: `c`
+#. §3: $-2$
+#. §4: $2$
+#: Game/Levels/Espresso/L04.lean:26
+msgid ""
+"Conclusion Espresso L04:\n"
+"  From the quadratic hypothesis, you see that each of §0, §1 and §2 is an "
+"integer between §3 and §4.\n"
+"  If you plug in these possible values into the other two hypotheses, you "
+"will find that at least one\n"
+"  of them is always false. So the exact conclusion here is not relevant."
 msgstr ""
+"**KKK 398515**:  Supiii!\n"
+"\n"
+"**Du**:  Und warum ist das so?\n"
+"\n"
+"**KKK 398515**:  Woher soll ich das wissen?  Dafür ist mein Kopf zu klein.  "
+"Hihi.\n"
+"\n"
+"**Robo**:  Aus der quadratischen Annahme sieht man zumindest, dass sowohl "
+"für §0, §1 als auch §2 nur wenige Werte in Frage kommen – das sind alles "
+"ganze Zahlen zwischen §3 und §4.  Ich vermute, wenn du diese möglichen Werte "
+"in die anderen beiden Annahmen einsetzt, wirst du sehen, dass sie nie "
+"gleichzeitig erfüllt sind.  Die genaue Gleichung über vierte Potenzen, die "
+"hier formuliert ist, ist also völlig irrelevant.  Da könnte auch "
+"irgendwelcher Quatsch stehen, und die Gesamtaussage wäre immer noch richtig. "
 
 #: Game/Levels/Espresso/L05.lean:8
-#, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Espresso L05"
-msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
+msgstr "Das nächste Blatt."
 
-#. §0: `x ≤ 0`
-#. §1: `y = 0`
-#. §2: `0 ≤ y`
-#. §3: `0 < x`
-#. §4: `y = x`
-#. §5: `0 ≤ y`
-#. §6: `grind`
+#. §0: `y`
+#. §1: `x`
+#. §2: `x ≤ 0`
+#. §3: `y = 0`
+#. §4: `0 ≤ y`
+#. §5: `0 < x`
+#. §6: `y = x`
+#. §7: `0 ≤ y`
+#. §8: `grind`
 #: Game/Levels/Espresso/L05.lean:12
 msgid ""
-"[Hint grindSplitIf] If §0 then §1, so §2.\n"
-"Otherwise, if §3, then §4, so again §5.\n"
-"Anyway, can prove this with §6."
+"[Hint grindSplitIf] §0 depends on §1.\n"
+"If §2 then §3, so §4.\n"
+"Otherwise, if §5, then §6, so again §7.\n"
+"Anyway, can prove this with §8."
 msgstr ""
+"**Du**: Mal überlegen.  Wenn ich das richtig lese, hängt der Wert von §0 von "
+"§1 ab.  Falls §2, ist §3, also §4.  Falls hingegen §5, ist §6, und somit "
+"wieder §7.  Ja!  Das stimmt so.\n"
+"\n"
+"**Robo**: Ich hätte jetzt trotzdem keine Lust, diese Fallunterscheidung "
+"durchzuspielen …"
 
-#: Game/Levels/Espresso/L05.lean:18
-msgid "Espresso L05"
-msgstr ""
-
-#: Game/Levels/Espresso/L06.lean:8
-#, fuzzy
-#| msgid "Intro Iso L01"
-msgid "Intro Espresso L06"
-msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
+#: Game/Levels/Espresso/L05.lean:19
+msgid "Conclusion Espresso L05"
+msgstr "So langsam wird der kleine Haufen gemahlenen Kaffees größer."
 
 #. §0: `2 * x + 4 * y`
 #. §1: `5`
 #. §2: `grind`
 #. §3: `grind`
-#: Game/Levels/Espresso/L06.lean:11
+#: Game/Levels/Espresso/L06.lean:9
 msgid ""
 "[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so "
 "they\n"
@@ -10938,99 +10977,176 @@ msgid ""
 "its own, so just\n"
 "try §3."
 msgstr ""
-
-#: Game/Levels/Espresso/L06.lean:16
-msgid "Espresso L06"
-msgstr ""
+"**Du**:  Verstehst du das?\n"
+"\n"
+"**Robo**:  Das ist eine Aussage über ganze Zahlen.  Sieht richtig aus."
 
 #: Game/Levels/Espresso/L07_nhds.lean:8
-#, fuzzy
-#| msgid "Espresso"
-msgid "Espresso L07"
-msgstr "Espresso"
+msgid "Intro Espresso L07"
+msgstr ""
+"Der Papierstapel neigt sich seinem Ende zu.\n"
+"Vorletztes Blatt."
 
-#. §0: `𝓝 a`
-#. §1: `a`
-#. §2: `a`
-#. §3: `Ioo x y`
-#. §4: `x`
-#. §5: `y`
-#. §6: $(x,y)$
-#. §7: `IsOpen.mem_nhds_iff`
+#. §0: `Ioo (-1 / 5) (1 / 5)`
+#. §1: $\\tfrac{-1}{5}$
+#. §2: $\\tfrac{1}{5}$
+#. §3: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#. §4: `𝓝 0`
+#. §5: `0`
+#. §6: `0`
+#. §7: `grind`
+#. §8: `IsOpen.mem_nhds_iff`
 #: Game/Levels/Espresso/L07_nhds.lean:13
 msgid ""
 "[Hint mdsff]\n"
-"§0 is the filter of neighborhoods of §1 (sets containing §2 in their "
+"§0 is the open interval between §1 and §2,\n"
+"i.e. §3.\n"
+"§4 is the filter of neighborhoods of §5 (sets containing §6 in their "
 "interior).\n"
-"Joke about filter/coffee/grind.\n"
-"§3 is the open interval between §4 and §5, i.e. §6.\n"
-"As the interval is open, can proceed with new theorem §7. "
+"Joke about filter/coffee/§7.\n"
+"As the interval is open, can proceed with new theorem §8. "
 msgstr ""
+"**Du**:  Oh, was ist das denn jetzt?  Kannst du mit diesen Symbolen etwas "
+"anfangen?\n"
+"\n"
+"**Robo**:  Glaub schon.  Zunächst einmal ist §0 das offene Intervall "
+"zwischen §1 und §2, also §3.\n"
+"\n"
+"Und §4 ist der Nachbarschaftsfilter der §5.\n"
+"\n"
+"**Du**:  Langsam.  Nachtkaffeefilter???\n"
+"\n"
+"**Robo**:  Nach-Bar-Schafts-Filter.  Aber egal.  Wenn dir Filter nichts "
+"sagen: es ist die Menge aller Nachbarschaften von §5.\n"
+"\n"
+"**Du**:  Du meinst: aller Umgebungen von §5, im topologischen Sinne?\n"
+"\n"
+"**Robo**:  Ja.  Die Menge aller Mengen, die eine offene Teilmenge um §5 "
+"enthalten.\n"
+"\n"
+"**Du**: Puhhh … Darf ich das §7en?\n"
+"\n"
+"**Robo**:  Kannst du gern probieren.  Aber da das Intervall, um das es hier "
+"geht, selbst offen ist, sollte im Zweifelsfall §8 weiterhelfen. "
+
+#. §0: `0`
+#. §1: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#: Game/Levels/Espresso/L07_nhds.lean:20
+msgid ""
+"[Hint 33o0v] See: Now just need to prove that §0 lies in the interval\n"
+"§1,\n"
+"and that the interval is indeed open."
+msgstr ""
+"**Robo**:  Na bitte.  Das hat doch geklappt.  Jetzt musst du also nur noch "
+"zeigen, dass §0 in §1 liegt und dass §1 tatsächlich offen ist."
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L07_nhds.lean:19
-#, fuzzy
-#| msgid "[Hint rxjt] Try §0"
+#: Game/Levels/Espresso/L07_nhds.lean:23
 msgid "[Hint tdsg] Try §0"
-msgstr ""
-"**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
+msgstr "**Robo**:  Hier könnte §0 ausreichen."
 
 #. §0: `isOpen_Ioo`
-#: Game/Levels/Espresso/L07_nhds.lean:21
-msgid "[Hint hdioioo] Open interval is a open set. New theorem: §0."
+#: Game/Levels/Espresso/L07_nhds.lean:25
+msgid "[Hint hdioioo] Open interval is an open set. New theorem: §0."
+msgstr "**Robo**:  Und hier kannst du vermutlich §0 zitieren."
+
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:10
+msgid "Intro Espresso L08"
 msgstr ""
+"Die beiden Kaffee-Kirschen-Käfer sind ganz leise geworden.  Du wischst "
+"vorsichtig die gemahlene Bohne vom vorigen Blatt."
 
 #. §0: `0`
 #. §1: `𝓝[>] 0`
-#. §2: `𝓝[≠] 0`
-#. §3: `nhdsWithin_mono`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:11
+#. §2: $(0,\\infty)$
+#. §3: `𝓝[≠] 0`
+#. §4: $\\mathbb{R}\\setminus \\{0\\}$
+#. §5: `≤`
+#. §6: `nhdsWithin_mono`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:13
 msgid ""
 "[Hint nhdsmno] We have two modified neighborhood filters of §0.\n"
-"§1 is the filter “approaching zero from the left”:\n"
+"§1 is the filter “approaching zero from the right”:\n"
 "it consists of all sets that contain the positive part of a neighborhood of "
-"0.\n"
-"§2 is the filter “approaching zero without ever being equal to zero”:\n"
-"sets in this filter a given by neighborhoods of zero with zero itself "
-"removed.\n"
-"The first filter is finer than the second – which means that every sets in "
-"the second\n"
-"is also contain in the first.\n"
-"Apply the new theorem §3."
+"0,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §2.\n"
+"§3 is the filter “approaching zero without ever being equal to zero”:\n"
+"it consists of all sets that contain a punctured neighborhood of zero,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §4.\n"
+"§5 means that the first filter is finer than the second,\n"
+"i.e. that every set in the second is also contained in the first.\n"
+"Apply the new theorem §6."
 msgstr ""
+"**Du**:  Schon wieder neue Notation. \n"
+"\n"
+"**Robo**:  Ja, hier geht es um eingeschränkte Filter.  \n"
+"\n"
+"§3 ist der Filter, der sich sozusagen der §0 nähert, ohne sie je zu "
+"erreichen.  Er besteht aus allen Mengen, die eine punktierte Umgebung der §0 "
+"enthalten.\n"
+"\n"
+"**Du**:  Eine „punktierte“ Umgebung?\n"
+"\n"
+"**Robo**:  Ja, eine punktierte Umgebung.  Eine punktierte Umgebung von §0 "
+"ist das Komplement von §0 in einer Umgebung von §0.\n"
+"Oder anders ausgedrückt:  der Schnitt einer Umgebung von §0 mit §4.  Der "
+"Filter §3 besteht aus allen Mengen, die so einen Schnitt enthalten.\n"
+"\n"
+"**Du**:  Ok.  Und §1?\n"
+"\n"
+"**Robo**:  §1 ist der Filter, der sich der §0 sozusagen von rechts nähert.  "
+"Er besteht aus Mengen, die die „positive Hälfte“ einer Umgebung von §0 "
+"enthalten.\n"
+"Also aus Mengen, die den Schnitt einer Umgebung von §0 mit §2 enthalten.\n"
+"\n"
+"**Du**:  Und was bedeutet hier §5?\n"
+"\n"
+"**Robo**:  Das bedeutet, dass der linke Filter feiner als der rechte ist – "
+"dass also jede Menge aus dem rechten Filter bereits im linken liegt.  Da "
+"beide Filter gleichermaßen konstruiert sind – aus Schnitten von Umgebungen "
+"mit §2 bzw. §4 –, kannst du die Aussage mit §6 auf eine elementare Inklusion "
+"zurückführen."
 
 #. §0: `Ioi 0`
 #. §1: $(0,∞)$
 #. §2: `{0}ᶜ`
 #. §3: `0`
-#. §4: `nhdsWithin_mono`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:20
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:24
 msgid ""
 "[Hint ggfkp] This looks better.\n"
 "§0 is the interval §1.\n"
-"And §2 is the complement of §3 in ℝ.\n"
-"The theorem §4 reduced the statement about neighborhoods to this\n"
-"elementary statement about sets."
+"And §2 is the complement of §3 in ℝ."
 msgstr ""
+"**Robo**: Ja. So siehts doch einfacher aus, oder?\n"
+"\n"
+"Hier ist jetzt §0 das Intervall §1, und §2 das Komplement der §3."
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:25
-msgid "[Hint tg8nh] Try §0. "
-msgstr ""
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:27
+msgid "[Hint tg8nh] Try §0."
+msgstr "**Robo**:  Nimm einfach noch eine Bohne.  Sind ja genügend da."
 
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:28
-#, fuzzy
-#| msgid "Conclusion Epo L07"
-msgid "Conclusion Espresso L08"
+#. §0: `grind`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:30
+msgid "Conclusion Espresso L08: Remember §0."
 msgstr ""
-"Ihr bekommt eine große Runde Applaus.\n"
+"**KKK 480658**:  Ihr seid ja richtig schlau!\n"
 "\n"
-"Danach werdet ihr verabschiedet.\n"
-"Für den Rückweg könnt ihr leider keine Transportkapsel benutzen.\n"
-"Die funktionieren nämlich nur in eine Richtung.\n"
-"Zurück zum Raumschiff geht es also zu Fuß:\n"
-"erst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und "
-"schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben."
+"**KKK 398515**:  Wir benutzen immer nur §0. \n"
+"\n"
+"**KKK 480658**:  Oder `drill`.  Aber psst!  Das ist eigentlich ober-"
+"verboten.\n"
+"\n"
+"**KKK 398515**:  Nehmt euch doch wenigstens ein paar Bohnen mit!  Die könnt "
+"ihr bestimmt noch anderswo gebrauchen!\n"
+"\n"
+"**Robo**:  Gute Idee!  Ich nehme einfach die ganze Schale.  Und wenn du es "
+"schaffst, den gemahlenen Kaffee bis ins Raumschiff zu tragen, dann brüh ich "
+"dir dort daraus einen Filter…\n"
+"\n"
+"**Du**:  Nichts da. Wozu habe ich denn in die italienische Sonderausstattung "
+"investiert??\n"
+"Ich mache mir einen richtigen Espresso!"
 
 #: Game/Levels/Espresso.lean:15
 msgid "Espresso"
@@ -11078,7 +11194,7 @@ msgstr ""
 "gegeben, aber die haben irgendwann nachgegeben und sind ausgewandert.  "
 "Schließlich nimmt Robo vorsichtig die Kirsche mit den beiden Käfern in seine "
 "Hand, und sie führen euch zu einer Hütte, in der einmal „große“ "
-"Formalosophen gehaust haben.   "
+"Formalosophen gehaust haben."
 
 #. §0: `a`
 #. §1: `ℝ`
@@ -13988,6 +14104,44 @@ msgstr ""
 "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
 "aus der Eingangsphase des Bachelorstudiums Mathematik."
 
+#, fuzzy
+#~| msgid "Espresso"
+#~ msgid "Espresso L07"
+#~ msgstr "Espresso"
+
+#~ msgid ""
+#~ "[Hint grindRing] This goal is a polynomial identity that follows from the "
+#~ "hypotheses by\n"
+#~ "algebraic manipulation. §0 can call §1 to close such goals, so just try "
+#~ "§2."
+#~ msgstr ""
+#~ "**Du**: Soll ich es einfach wieder mit einer Bohne versuchen?\n"
+#~ "\n"
+#~ "Robo hat auch keine bessere Idee."
+
+#, fuzzy
+#~| msgid "Conclusion Espresso L01"
+#~ msgid "Conclusion Espresso L04"
+#~ msgstr ""
+#~ "**KKK 480658**: Ihr seid aber komisch.\n"
+#~ "\n"
+#~ "Robo zieht die Augenbrauen hoch. \n"
+#~ "\n"
+#~ "**Robo**:  Wieso komisch?\n"
+#~ "\n"
+#~ "**KKK 398515**: Na, weil ihr so einen umständlichen Beweis führt.  Ich "
+#~ "verstehe den noch nicht mal."
+
+#~ msgid ""
+#~ "Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu "
+#~ "unterscheiden:\n"
+#~ "§4"
+#~ msgstr ""
+#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis in die drei "
+#~ "Fälle §1, §2 und §3 aufzuteilen:\n"
+#~ "\n"
+#~ "§4"
+
 #~ msgid ""
 #~ "It is clear which §0 can be used. Start with §1 and continue with §2 "
 #~ "e.g.\n"
@@ -14005,12 +14159,6 @@ msgstr ""
 #~| msgid "Maybe try §0 again"
 #~ msgid "I guess you can try §0 again."
 #~ msgstr "**Robo**: Vielleicht kannst du wieder §0 benutzen."
-
-#, fuzzy
-#~| msgid "Intro Iso L01"
-#~ msgid "Intro Espresso L03"
-#~ msgstr ""
-#~ "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
 #, fuzzy
 #~| msgid "Intro Cantor L04"

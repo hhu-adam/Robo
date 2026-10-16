@@ -9,10 +9,11 @@ Introduction "Intro Espresso L05"
 
 Statement (x y : ℤ) (hy : y = if x ≤ 0 then 0 else x) :
     0 ≤ y := by
-  Hint "[Hint grindSplitIf] If `x ≤ 0` then `y = 0`, so `0 ≤ y`.
-        Otherwise, if `0 < x`, then `y = x`, so again `0 ≤ y`.
-        Anyway, can prove this with `grind`."
+  Hint "[Hint grindSplitIf] `y` depends on `x`.
+    If `x ≤ 0` then `y = 0`, so `0 ≤ y`.
+    Otherwise, if `0 < x`, then `y = x`, so again `0 ≤ y`.
+    Anyway, can prove this with `grind`."
   grind
 
 
-Conclusion "Espresso L05"
+Conclusion "Conclusion Espresso L05"

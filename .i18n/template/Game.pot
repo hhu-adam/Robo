@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-15\n"
+"POT-Creation-Date: 2026-10-16\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -6805,49 +6805,47 @@ msgstr ""
 msgid "[Hint dy3w7] Try §0"
 msgstr ""
 
-#. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:20
-msgid "[Hint tg1] new tactic: §0"
-msgstr ""
-
-#. §0: `grind`
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:24
-msgid "[Hint tg2] try §0 again"
-msgstr ""
-
-#. §0: `obtain`
-#. §1: `x < y`
-#. §2: `x = y`
-#. §3: `x > y`
-#. §4: ```
+#. §0: `lt_trichotomy`
+#. §1: `obtain`
+#. §2: `x`
+#. §3: `y`
+#. §4: `x < y`
+#. §5: `x = y`
+#. §6: `x > y`
+#. §7: ```
 #. obtain h | h | h := lt_trichotomy x y
 #. ```
-#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:28
-msgid "Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu unterscheiden:\n"
-"§4"
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:26
+msgid "[Doc.Theorem] §0:\n"
+"Typically used with §1 to split a proof concerning §2 and §3 into the three cases\n"
+"§4, §5 and §6:\n"
+"§7"
 msgstr ""
 
 #: Game/Levels/Espresso/L01_Lt_trichotomy.lean:37
-msgid "Espresso L01"
-msgstr ""
-
-#: Game/Levels/Espresso/L02_grind.lean:8
-msgid "Intro Espresso L02"
+msgid "Conclusion Espresso L01"
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L02_grind.lean:11
-msgid "[Hint 53n7o] New tactic: §0"
+#: Game/Levels/Espresso/L02_grind.lean:8
+msgid "Intro Espresso L02: §0"
 msgstr ""
 
-#: Game/Levels/Espresso/L02_grind.lean:16
-#: Game/Levels/Espresso/L03.lean:13
-msgid "Espresso L02"
+#: Game/Levels/Espresso/L02_grind.lean:15
+msgid "Conclusion Espresso L02"
+msgstr ""
+
+#: Game/Levels/Espresso/L03.lean:6
+msgid "Intro Espresso L03"
 msgstr ""
 
 #. §0: `b`
-#: Game/Levels/Espresso/L03.lean:8
+#: Game/Levels/Espresso/L03.lean:10
 msgid "It is clear which §0 can be used."
+msgstr ""
+
+#: Game/Levels/Espresso/L03.lean:15
+msgid "Conclusion Espresso L03"
 msgstr ""
 
 #: Game/Levels/Espresso/L04.lean:8
@@ -6855,121 +6853,139 @@ msgid "Intro Espresso L04"
 msgstr ""
 
 #. §0: `grind`
-#. §1: `ring`
-#. §2: `grind`
 #: Game/Levels/Espresso/L04.lean:15
-msgid "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
-"algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
+msgid "[Hint grindRing] This goal is a polynomial identity in the integers.\n"
+"Not so easy without §0."
 msgstr ""
 
-#: Game/Levels/Espresso/L04.lean:19
-msgid "Espresso L04"
+#. §0: `a`
+#. §1: `b`
+#. §2: `c`
+#. §3: $-2$
+#. §4: $2$
+#: Game/Levels/Espresso/L04.lean:26
+msgid "Conclusion Espresso L04:\n"
+"  From the quadratic hypothesis, you see that each of §0, §1 and §2 is an integer between §3 and §4.\n"
+"  If you plug in these possible values into the other two hypotheses, you will find that at least one\n"
+"  of them is always false. So the exact conclusion here is not relevant."
 msgstr ""
 
 #: Game/Levels/Espresso/L05.lean:8
 msgid "Intro Espresso L05"
 msgstr ""
 
-#. §0: `x ≤ 0`
-#. §1: `y = 0`
-#. §2: `0 ≤ y`
-#. §3: `0 < x`
-#. §4: `y = x`
-#. §5: `0 ≤ y`
-#. §6: `grind`
+#. §0: `y`
+#. §1: `x`
+#. §2: `x ≤ 0`
+#. §3: `y = 0`
+#. §4: `0 ≤ y`
+#. §5: `0 < x`
+#. §6: `y = x`
+#. §7: `0 ≤ y`
+#. §8: `grind`
 #: Game/Levels/Espresso/L05.lean:12
-msgid "[Hint grindSplitIf] If §0 then §1, so §2.\n"
-"Otherwise, if §3, then §4, so again §5.\n"
-"Anyway, can prove this with §6."
+msgid "[Hint grindSplitIf] §0 depends on §1.\n"
+"If §2 then §3, so §4.\n"
+"Otherwise, if §5, then §6, so again §7.\n"
+"Anyway, can prove this with §8."
 msgstr ""
 
-#: Game/Levels/Espresso/L05.lean:18
-msgid "Espresso L05"
-msgstr ""
-
-#: Game/Levels/Espresso/L06.lean:8
-msgid "Intro Espresso L06"
+#: Game/Levels/Espresso/L05.lean:19
+msgid "Conclusion Espresso L05"
 msgstr ""
 
 #. §0: `2 * x + 4 * y`
 #. §1: `5`
 #. §2: `grind`
 #. §3: `grind`
-#: Game/Levels/Espresso/L06.lean:11
+#: Game/Levels/Espresso/L06.lean:9
 msgid "[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so they\n"
 "can never be equal. §2 can reason about such linear integer arithmetic on its own, so just\n"
 "try §3."
 msgstr ""
 
-#: Game/Levels/Espresso/L06.lean:16
-msgid "Espresso L06"
-msgstr ""
-
 #: Game/Levels/Espresso/L07_nhds.lean:8
-msgid "Espresso L07"
+msgid "Intro Espresso L07"
 msgstr ""
 
-#. §0: `𝓝 a`
-#. §1: `a`
-#. §2: `a`
-#. §3: `Ioo x y`
-#. §4: `x`
-#. §5: `y`
-#. §6: $(x,y)$
-#. §7: `IsOpen.mem_nhds_iff`
+#. §0: `Ioo (-1 / 5) (1 / 5)`
+#. §1: $\\tfrac{-1}{5}$
+#. §2: $\\tfrac{1}{5}$
+#. §3: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#. §4: `𝓝 0`
+#. §5: `0`
+#. §6: `0`
+#. §7: `grind`
+#. §8: `IsOpen.mem_nhds_iff`
 #: Game/Levels/Espresso/L07_nhds.lean:13
 msgid "[Hint mdsff]\n"
-"§0 is the filter of neighborhoods of §1 (sets containing §2 in their interior).\n"
-"Joke about filter/coffee/grind.\n"
-"§3 is the open interval between §4 and §5, i.e. §6.\n"
-"As the interval is open, can proceed with new theorem §7. "
+"§0 is the open interval between §1 and §2,\n"
+"i.e. §3.\n"
+"§4 is the filter of neighborhoods of §5 (sets containing §6 in their interior).\n"
+"Joke about filter/coffee/§7.\n"
+"As the interval is open, can proceed with new theorem §8. "
+msgstr ""
+
+#. §0: `0`
+#. §1: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#: Game/Levels/Espresso/L07_nhds.lean:20
+msgid "[Hint 33o0v] See: Now just need to prove that §0 lies in the interval\n"
+"§1,\n"
+"and that the interval is indeed open."
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L07_nhds.lean:19
+#: Game/Levels/Espresso/L07_nhds.lean:23
 msgid "[Hint tdsg] Try §0"
 msgstr ""
 
 #. §0: `isOpen_Ioo`
-#: Game/Levels/Espresso/L07_nhds.lean:21
-msgid "[Hint hdioioo] Open interval is a open set. New theorem: §0."
+#: Game/Levels/Espresso/L07_nhds.lean:25
+msgid "[Hint hdioioo] Open interval is an open set. New theorem: §0."
+msgstr ""
+
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:10
+msgid "Intro Espresso L08"
 msgstr ""
 
 #. §0: `0`
 #. §1: `𝓝[>] 0`
-#. §2: `𝓝[≠] 0`
-#. §3: `nhdsWithin_mono`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:11
+#. §2: $(0,\\infty)$
+#. §3: `𝓝[≠] 0`
+#. §4: $\\mathbb{R}\\setminus \\{0\\}$
+#. §5: `≤`
+#. §6: `nhdsWithin_mono`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:13
 msgid "[Hint nhdsmno] We have two modified neighborhood filters of §0.\n"
-"§1 is the filter “approaching zero from the left”:\n"
-"it consists of all sets that contain the positive part of a neighborhood of 0.\n"
-"§2 is the filter “approaching zero without ever being equal to zero”:\n"
-"sets in this filter a given by neighborhoods of zero with zero itself removed.\n"
-"The first filter is finer than the second – which means that every sets in the second\n"
-"is also contain in the first.\n"
-"Apply the new theorem §3."
+"§1 is the filter “approaching zero from the right”:\n"
+"it consists of all sets that contain the positive part of a neighborhood of 0,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §2.\n"
+"§3 is the filter “approaching zero without ever being equal to zero”:\n"
+"it consists of all sets that contain a punctured neighborhood of zero,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §4.\n"
+"§5 means that the first filter is finer than the second,\n"
+"i.e. that every set in the second is also contained in the first.\n"
+"Apply the new theorem §6."
 msgstr ""
 
 #. §0: `Ioi 0`
 #. §1: $(0,∞)$
 #. §2: `{0}ᶜ`
 #. §3: `0`
-#. §4: `nhdsWithin_mono`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:20
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:24
 msgid "[Hint ggfkp] This looks better.\n"
 "§0 is the interval §1.\n"
-"And §2 is the complement of §3 in ℝ.\n"
-"The theorem §4 reduced the statement about neighborhoods to this\n"
-"elementary statement about sets."
+"And §2 is the complement of §3 in ℝ."
 msgstr ""
 
 #. §0: `grind`
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:25
-msgid "[Hint tg8nh] Try §0. "
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:27
+msgid "[Hint tg8nh] Try §0."
 msgstr ""
 
-#: Game/Levels/Espresso/L08_nhdsWithin.lean:28
-msgid "Conclusion Espresso L08"
+#. §0: `grind`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:30
+msgid "Conclusion Espresso L08: Remember §0."
 msgstr ""
 
 #: Game/Levels/Espresso.lean:15
