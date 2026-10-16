@@ -34,6 +34,9 @@ import Game.Levels.Shade
 import Game.Levels.Slope
 import Game.Levels.Cauchy
 
+import Game.Levels.Bolzano
+import Game.Levels.Fibre
+
 -- *uncomment the following line to get the incomplete planets.*
 -- import Game.DevPlanets
 
