@@ -3503,7 +3503,7 @@ msgstr ""
 "\n"
 "**司南**：看起来是这样。"
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -6010,7 +6010,7 @@ msgstr "**司南**：干得好！我觉得我们在这儿很快就能搞定了�
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**你**：一个拥有左逆的映射是单射。我觉得好像听过……"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid "Try using §0"
 msgstr "**司南**：也许可以试试和 §0 有关的方法？"

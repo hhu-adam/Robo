@@ -3713,7 +3713,7 @@ msgstr ""
 "\n"
 "**Robo**: Sieht so aus."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -6444,7 +6444,7 @@ msgstr ""
 "**Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  "
 "Schonmal gehört, glaube ich …"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid "Try using §0"
 msgstr "**Robo**:  Vielleicht irgendwas mit §0?"
