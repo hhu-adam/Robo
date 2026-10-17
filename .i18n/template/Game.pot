@@ -5307,7 +5307,7 @@ msgstr ""
 msgid "Try §0, §1 | §2"
 msgstr ""
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
