@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-28\n"
+"POT-Creation-Date: 2026-10-17\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -5598,7 +5598,7 @@ msgstr ""
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr ""
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:26
 msgid "Try using §0"
 msgstr ""
