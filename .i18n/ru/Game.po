@@ -9111,7 +9111,7 @@ msgstr ""
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
-#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
+#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}») x`
 #: Game/Levels/Vieta/L10_Surjective.lean:64
 #, fuzzy
 msgid "Try §0 to rewrite §1 to §2"
