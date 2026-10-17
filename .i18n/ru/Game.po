@@ -9259,7 +9259,7 @@ msgstr ""
 "**Знайка**:  Начинаем, как обычно, с §0. А потом — обычные "
 "подозреваемые: §1, §2 и так далее."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -9752,7 +9752,7 @@ msgstr ""
 "**Ты**: Отображение, у которого есть левое обратное, инъективно.  Где-то я "
 "это уже слышал …"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:26
 #, fuzzy
 msgid "Try using §0"

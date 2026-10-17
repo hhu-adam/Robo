@@ -3611,7 +3611,7 @@ msgstr ""
 "\n"
 "**Scribble**: Looks like it."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -6252,7 +6252,7 @@ msgstr ""
 "**You**: A map that has a left inverse is injective. I think I've seen that "
 "before …"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid "Try using §0"
 msgstr "**Scribble**: Perhaps something involving §0?"

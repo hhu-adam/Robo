@@ -7454,7 +7454,7 @@ msgstr ""
 msgid "Try §0, §1 | §2"
 msgstr "**Glifo**: Pues yo volvería a empezar con §0. Y luego echaría mano de los sospechosos habituales, como §1, §2, etc."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -7829,7 +7829,7 @@ msgstr ""
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**Tú**: Una aplicación que tiene una inversa por la izquierda es inyectiva. Creo que eso ya lo había oído en alguna parte…"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:26
 msgid "Try using §0"
 msgstr "**Glifo**: ¿Quizá algo con §0?"
