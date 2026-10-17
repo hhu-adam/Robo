@@ -9545,7 +9545,7 @@ msgstr ""
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
-#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
+#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}») x`
 #: Game.Levels.Vieta.L10_Surjective
 msgid "Try §0 to rewrite §1 to §2"
 msgstr "**司南**：你要不要用 §0 把假设 §1 改写成 §2？"
