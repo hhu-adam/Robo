@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-17\n"
+"POT-Creation-Date: 2026-10-18\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -243,11 +243,15 @@ msgstr ""
 #. §8: `a ∈ A`
 #. §9: `simp`
 #. §10: `P a`
+#. §11: `∈`
+#. §12: `\\in`
 #: Game/Doc/Definition.lean:159
 msgid "For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 means that\n"
 "§5 is in §6.\n"
 "For subsets of the form §7, you can simplify the statement\n"
-"§8 with §9 to §10."
+"§8 with §9 to §10.\n"
+"\n"
+"You write §11 as §12."
 msgstr ""
 
 #. §0: `P : T → Prop`
@@ -258,12 +262,16 @@ msgstr ""
 #. §3: `a ∈ { a : T | P a }`
 #. §4: `simp`
 #. §5: `P a`
-#: Game/Doc/Definition.lean:167
+#. §6: `{`
+#. §7: `|`
+#. §8: `}`
+#: Game/Doc/Definition.lean:169
 msgid "For a predicate §0, §1 is the subset\n"
 "consisting of all elements that satisfy the predicate.  For example,\n"
 "§2\n"
 "is the set of even natural numbers.\n"
-"You can simplify the statement §3, using §4, to §5 ."
+"You can simplify the statement §3, using §4, to §5 .\n"
+"(Here, §6, §7, and §8 are the usual characters on the keyboard.)"
 msgstr ""
 
 #. §0: `(A B : Set T)`
@@ -272,9 +280,12 @@ msgstr ""
 #. §3: `B`
 #. §4: `A`
 #. §5: `B`
-#: Game/Doc/Definition.lean:178
+#. §6: `\\`
+#. §7: `\\\\`
+#: Game/Doc/Definition.lean:181
 msgid "For two subsets §0, §1 is the difference between §2 and §3,\n"
-"consisting of all elements of §4 that are not in §5."
+"consisting of all elements of §4 that are not in §5.\n"
+"You write §6 as §7."
 msgstr ""
 
 #. §0: `A B : Set T`
@@ -296,7 +307,7 @@ msgstr ""
 #. §16: `hb : a ∈ B`
 #. §17: `⊆`
 #. §18: `\\subset`
-#: Game/Doc/Definition.lean:184
+#: Game/Doc/Definition.lean:188
 msgid "For §0, §1 means that §2 is contained in §3.\n"
 "\n"
 "With §4, you can rewrite §5 as §6.\n"
@@ -318,7 +329,7 @@ msgstr ""
 #. §5: `∀ (x : T), x ∉ s`
 #. §6: `∅`
 #. §7: `\\emptyset`
-#: Game/Doc/Definition.lean:199
+#: Game/Doc/Definition.lean:203
 msgid "§0 is the empty subset.\n"
 "In the Formaloverse §1 is something different than §2\n"
 "– one is a subset of ℕ, the other is a subset of ℝ!\n"
@@ -334,7 +345,7 @@ msgstr ""
 #. §2: `rw [eq_univ_iff_forall]`
 #. §3: `S = univ`
 #. §4: `∀ (x : T), x ∈ S`
-#: Game/Doc/Definition.lean:211
+#: Game/Doc/Definition.lean:215
 msgid "§0 is the “subset” consisting of *all* elements of type §1.\n"
 "\n"
 "With §2, you convert an equation of the form §3 into the\n"
@@ -348,7 +359,7 @@ msgstr ""
 #. §4: `a`
 #. §5: `A`
 #. §6: `insert a A = A`
-#: Game/Doc/Definition.lean:219
+#: Game/Doc/Definition.lean:223
 msgid "For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is already in §5, then obviously §6."
@@ -361,7 +372,7 @@ msgstr ""
 #. §4: `a`
 #. §5: `A`
 #. §6: `erase A a = A`
-#: Game/Doc/Definition.lean:226
+#: Game/Doc/Definition.lean:230
 msgid "For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is not in §5 at all, then obviously §6."
@@ -371,7 +382,7 @@ msgstr ""
 #. §1: `card A : ℕ`
 #. §2: `A`
 #. §3: `A`
-#: Game/Doc/Definition.lean:233
+#: Game/Doc/Definition.lean:237
 msgid "For a finite subset §0, §1 is the cardinality of §2,\n"
 "i.e., the number of elements in §3."
 msgstr ""
@@ -385,7 +396,7 @@ msgstr ""
 #. §6: `Fin n : Type`
 #. §7: `Icc 0 (n-1) : Finset ℕ`
 #. §8: `ℕ`
-#: Game/Doc/Definition.lean:239
+#: Game/Doc/Definition.lean:243
 msgid "For §0, §1 is the set §2.\n"
 "\n"
 "(§3 is to be distinguished from §4:\n"
@@ -395,7 +406,7 @@ msgstr ""
 
 #. §0: `Icc a b`
 #. §1: $[a,b]$
-#: Game/Doc/Definition.lean:248
+#: Game/Doc/Definition.lean:252
 msgid "§0 is the closed interval §1."
 msgstr ""
 
@@ -426,7 +437,7 @@ msgstr ""
 #. §24: `a : T`
 #. §25: `a ∈ A`
 #. §26: `ha : a ∈ A`
-#: Game/Doc/Definition.lean:256
+#: Game/Doc/Definition.lean:260
 msgid "[Doc.Definition] Nonempty\n"
 "§0\n"
 "for §1, §2, §3 means T is non-empty\n"
@@ -445,7 +456,7 @@ msgstr ""
 #. §3: `h : Set.Finite A`
 #. §4: `h.toFinset : Finset T`
 #. §5: `A`
-#: Game/Doc/Definition.lean:297
+#: Game/Doc/Definition.lean:301
 msgid "For a subset §0, §1 means that §2 has only a finite number of elements.\n"
 "If §3 is given as an assumption, then §4 is the same subset §5,\n"
 "but now explicitly understood as a finite subset."
@@ -454,7 +465,7 @@ msgstr ""
 #. §0: `(A : Prop)`
 #. §1: `(True : Prop)`
 #. §2: `(False : Prop)`
-#: Game/Doc/Definition.lean:307
+#: Game/Doc/Definition.lean:311
 msgid "§0 is any statement, without further specification as to whether it is true, false, or\n"
 "unprovable.\n"
 "\n"
@@ -474,7 +485,9 @@ msgstr ""
 #. §9: `h : A ∧ B`
 #. §10: `h₁ : A`
 #. §11: `h₂ : B`
-#: Game/Doc/Definition.lean:316
+#. §12: `∧`
+#. §13: `\\and`
+#: Game/Doc/Definition.lean:320
 msgid "§0 (“and”) is the statement that both §1 and §2 are true.\n"
 "\n"
 "## §3 as a proof goal\n"
@@ -484,7 +497,9 @@ msgid "§0 (“and”) is the statement that both §1 and §2 are true.\n"
 "## §7 as an assumption\n"
 "\n"
 "With §8, you break down an assumption of the form §9\n"
-"into its components §10 and §11."
+"into its components §10 and §11.\n"
+"\n"
+"You write §12 as §13."
 msgstr ""
 
 #. §0: `A ∨ B`
@@ -501,7 +516,9 @@ msgstr ""
 #. §11: ```
 #. obtain h | h := h
 #. ```
-#: Game/Doc/Definition.lean:330
+#. §12: `∨`
+#. §13: `\\or`
+#: Game/Doc/Definition.lean:336
 msgid "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n"
 "\n"
 "## §3 as proof goal\n"
@@ -515,7 +532,9 @@ msgid "§0 (“or”) is the statement that at least one of the statements §1, 
 "you may have to show the proof goal twice:\n"
 "once under the assumption §9 and once under the assumption §10.\n"
 "To do this, use the tactic\n"
-"§11"
+"§11\n"
+"\n"
+"You write §12 as §13."
 msgstr ""
 
 #. §0: `A B : Prop`
@@ -531,7 +550,10 @@ msgstr ""
 #. §10: `h : A`
 #. §11: `B`
 #. §12: `apply`
-#: Game/Doc/Definition.lean:350
+#. §13: `→`
+#. §14: `\\to`
+#. §15: `\\r`
+#: Game/Doc/Definition.lean:358
 msgid "For §0, §1 is the implication “§2 implies §3.”\n"
 "For other §4, §5 is a mapping that maps values from §6 to §7.\n"
 "\n"
@@ -542,7 +564,9 @@ msgid "For §0, §1 is the implication “§2 implies §3.”\n"
 "\n"
 "## Implication as assumption\n"
 "\n"
-"To use an implication among your assumptions, use the tactic §12."
+"To use an implication among your assumptions, use the tactic §12.\n"
+"\n"
+"You write §13 as §14 or §15."
 msgstr ""
 
 #. §0: `A ↔ B`
@@ -561,7 +585,10 @@ msgstr ""
 #. §13: `h.mp`
 #. §14: `h.mpr`
 #. §15: `mp`
-#: Game/Doc/Definition.lean:365
+#. §16: `↔`
+#. §17: `\\iff`
+#. §18: `\\lr`
+#: Game/Doc/Definition.lean:375
 msgid "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n"
 "\n"
 "## §3 as proof target\n"
@@ -574,7 +601,9 @@ msgid "§0 means that statements §1 and §2 are logically equivalent (“if and
 "You can break down an assumption of the form §9 using §10 into its two components\n"
 "§11 and §12.\n"
 "However, you can also refer directly to these components with §13 and §14.\n"
-"(The abbreviation §15 stands for “modus ponens”.)"
+"(The abbreviation §15 stands for “modus ponens”.)\n"
+"\n"
+"You write §16 as §17 or §18."
 msgstr ""
 
 #. §0: `P : A → Prop`
@@ -597,7 +626,9 @@ msgstr ""
 #. §17: `obtain ⟨a, ha⟩ := h`
 #. §18: `a : A`
 #. §19: `ha : P a`
-#: Game/Doc/Definition.lean:382
+#. §20: `∃`
+#. §21: `\\exists`
+#: Game/Doc/Definition.lean:394
 msgid "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that an element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
@@ -612,7 +643,9 @@ msgid "Existential quantifier: If §0 is a predicate, then\n"
 "## §14 as an assumption\n"
 "\n"
 "You can decompose an assumption of the form §15 into its components using\n"
-"§16 or §17 into §18 and §19."
+"§16 or §17 into §18 and §19.\n"
+"\n"
+"You write §20 as §21."
 msgstr ""
 
 #. §0: `P : A → Prop`
@@ -644,7 +677,9 @@ msgstr ""
 #.    h_exists : P a
 #.    h_unique : ∀ (y : A), P y → y = a
 #. ```
-#: Game/Doc/Definition.lean:401
+#. §22: `∃!`
+#. §23: `\\exists!`
+#: Game/Doc/Definition.lean:415
 msgid "Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
@@ -667,7 +702,9 @@ msgid "Existential quantifier: If §0 is a predicate, then\n"
 "§20\n"
 "into its components\n"
 "§21\n"
-"."
+".\n"
+"\n"
+"You write §22 as §23."
 msgstr ""
 
 #. §0: `P : A → Prop`
@@ -690,7 +727,9 @@ msgstr ""
 #. §17: `a`
 #. §18: `h : P a₀`
 #. §19: `a₀`
-#: Game/Doc/Definition.lean:436
+#. §20: `∀`
+#. §21: `\\forall`
+#: Game/Doc/Definition.lean:452
 msgid "Universal quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that the statement §2 is true for all §3 in §4\n"
 "(more precisely: for all §5 of type §6).\n"
@@ -700,7 +739,8 @@ msgid "Universal quantifier: If §0 is a predicate, then\n"
 "If §12 is an assumption and §13 is a concrete element, then §14 is a notation for §15.\n"
 "\n"
 "You can also use §16 to restrict the given assumption\n"
-"over all possible §17 to an assumption §18 over this concrete §19."
+"over all possible §17 to an assumption §18 over this concrete §19.\n"
+"You write §20 as §21."
 msgstr ""
 
 #. §0: `True : Prop`
@@ -710,7 +750,7 @@ msgstr ""
 #. §4: `True`
 #. §5: `True`
 #. §6: `True`
-#: Game/Doc/Definition.lean:450
+#: Game/Doc/Definition.lean:468
 msgid "The statement §0 is always true.\n"
 "\n"
 "## §1 as a proof target\n"
@@ -735,7 +775,7 @@ msgstr ""
 #. §10: `False`
 #. §11: `False`
 #. §12: `contradiction`
-#: Game/Doc/Definition.lean:463
+#: Game/Doc/Definition.lean:481
 msgid "The statement §0 is always false.\n"
 "\n"
 "## §1 as proof target\n"
@@ -763,26 +803,37 @@ msgstr ""
 #. §7: `h : ¬ A`
 #. §8: `apply`
 #. §9: `False`
-#: Game/Doc/Definition.lean:482
+#. §10: `¬`
+#. §11: `\\not`
+#. §12: `\\neg`
+#: Game/Doc/Definition.lean:500
 msgid "§0 is the logical negation of §1.\n"
 "It is implemented internally as §2.  You can see this with §3.\n"
 "\n"
 "Useful tactics are: §4, §5, §6.\n"
-"You can also apply an assumption of the form §7 using §8 to the proof target §9."
+"You can also apply an assumption of the form §7 using §8 to the proof target §9.\n"
+"\n"
+"You write §10 as §11 or §12."
 msgstr ""
 
 #. §0: `rfl`
 #. §1: `rw`
 #. §2: `trans`
-#: Game/Doc/Definition.lean:491
-msgid "Useful tactics for equality are: §0, §1, §2"
+#. §3: `=`
+#: Game/Doc/Definition.lean:511
+msgid "Useful tactics for equality are: §0, §1, §2\n"
+"(Here, §3 is the usual equality sign on the keyboard.)"
 msgstr ""
 
 #. §0: `x ≠ y`
 #. §1: `¬ x = y`
 #. §2: `unfold Ne`
-#: Game/Doc/Definition.lean:496
-msgid "Inequality §0 is defined as §1.  You can see this with §2."
+#. §3: `≠`
+#. §4: `\\ne`
+#: Game/Doc/Definition.lean:517
+msgid "Inequality §0 is defined as §1.  You can see this with §2.\n"
+"\n"
+"You write §3 as §4."
 msgstr ""
 
 #. §0: `Even n`
@@ -791,7 +842,7 @@ msgstr ""
 #. ∃ r : ℕ, n = r + r
 #. ```
 #. §3: `unfold Even`
-#: Game/Doc/Definition.lean:504
+#: Game/Doc/Definition.lean:527
 msgid "§0 is the statement that §1 is even:\n"
 "§2\n"
 "You can easily check this with §3."
@@ -803,7 +854,7 @@ msgstr ""
 #. ∃ k : ℕ, n = 2 * k + 1
 #. ```
 #. §3: `unfold Odd`
-#: Game/Doc/Definition.lean:513
+#: Game/Doc/Definition.lean:536
 msgid "§0 is the statement that §1 is odd:\n"
 "§2\n"
 "You can easily check this with §3."
@@ -813,7 +864,7 @@ msgstr ""
 #. §1: `Prime n`
 #. §2: `n`
 #. §3: `prime_def`
-#: Game/Doc/Definition.lean:522
+#: Game/Doc/Definition.lean:545
 msgid "For §0, §1 means that §2 is a prime number.\n"
 "To work with this definition, it is often helpful to rewrite it using the lemma\n"
 "§3."
@@ -821,7 +872,7 @@ msgstr ""
 
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
-#: Game/Doc/Definition.lean:529
+#: Game/Doc/Definition.lean:552
 msgid "§0 is the mapping §1.\n"
 "It therefore maps a natural number to its successor."
 msgstr ""
@@ -833,7 +884,7 @@ msgstr ""
 #. §4: `n : ℕ`
 #. §5: `(n : ℤ)`
 #. §6: `↑n`
-#: Game/Doc/Definition.lean:535
+#: Game/Doc/Definition.lean:558
 msgid "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n"
 "(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n"
 "\n"
@@ -847,7 +898,7 @@ msgstr ""
 #. §1: `|x|`
 #. §2: `x`
 #. §3: `|`
-#: Game/Doc/Definition.lean:548
+#: Game/Doc/Definition.lean:571
 msgid "For §0, §1 is the absolute value of §2.\n"
 "(Here, §3 is the usual vertical bar on the keyboard.)"
 msgstr ""
@@ -856,7 +907,7 @@ msgstr ""
 #. §1: `∑ i ∈ I, f i`
 #. §2: $\\sum_{i\\in I} f(i)$
 #. §3: `\\sum`
-#: Game/Doc/Definition.lean:562
+#: Game/Doc/Definition.lean:585
 msgid "For a finite index set §0, §1 is Leanic notation for the sum\n"
 "§2.  You write the summation sign as §3."
 msgstr ""
@@ -865,7 +916,7 @@ msgstr ""
 #. §1: `∏ i ∈ I, f i`
 #. §2: $\\prod_{i\\in I} f(i)$
 #. §3: `\\prod`
-#: Game/Doc/Definition.lean:568
+#: Game/Doc/Definition.lean:591
 msgid "For a finite index set §0, §1 is the Leanic notation for the product\n"
 "§2.  You write the product symbol as §3."
 msgstr ""
@@ -876,7 +927,7 @@ msgstr ""
 #. §3: `X 0`
 #. §4: `X (n-1)`
 #. §5: `R`
-#: Game/Doc/Definition.lean:575
+#: Game/Doc/Definition.lean:598
 msgid "§0 means that §1 is a polynomial in §2 indeterminates\n"
 "§3, …, §4 with coefficients in §5."
 msgstr ""
@@ -885,7 +936,7 @@ msgstr ""
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
-#: Game/Doc/Definition.lean:581
+#: Game/Doc/Definition.lean:604
 msgid "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to §3 in Leanic."
 msgstr ""
 
