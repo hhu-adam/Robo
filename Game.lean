@@ -62,14 +62,15 @@ Dependency Vieta → Shade    -- because of `function`
 Dependency Vieta → Aquarium -- because of `function`
 Dependency Vieta → Cartan   -- because of `function`
 
+Dependency Slope → Cauchy  -- because of `HasDerivAt` / `hasDerivAt_iff_tendsto_slope`
+Dependency Cartan → Cauchy -- because of `eventually_lt_nhds` / `=ᶠ`
+
 Dependency Robotswana → Ciao
 Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
 Dependency Euklid → Ciao
-
-Dependency Slope → Cauchy  -- because of `HasDerivAt` / `hasDerivAt_iff_tendsto_slope`
-Dependency Cartan → Cauchy -- because of `eventually_lt_nhds` / `=ᶠ`
+Dependency Cauchy → Ciao
 
 -- set_option lean4game.showDependencyReasons true
 
