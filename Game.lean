@@ -70,6 +70,7 @@ Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
 Dependency Euklid → Ciao
+Dependency Shade → Ciao
 Dependency Cauchy → Ciao
 
 -- set_option lean4game.showDependencyReasons true
