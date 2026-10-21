@@ -15,7 +15,7 @@ because `f` is continuous.  So the inequality survives the passage to the limit:
 f b ≤ f (sSup (Shaders f b))
 ```
 
-The proof combines `closure_minimal`, `isClosed_le` and the `csSup_mem_closure` fact from `Aquarium`.
+The proof combines `closure_minimal`, `isClosed_le` and the `csSup_mem_closure` fact from `Aquarius`.
 "
 
 open Set FullGrind

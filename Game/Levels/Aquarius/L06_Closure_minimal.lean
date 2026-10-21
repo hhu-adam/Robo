@@ -1,11 +1,11 @@
-import Game.Levels.Aquarium.L05_IsClosed_le
+import Game.Levels.Aquarius.L05_IsClosed_le
 
-World "Aquarium"
+World "Aquarius"
 Level 6
 
 Title ""
 
-Introduction "Intro Aquarium L06"
+Introduction "Intro Aquarius L06"
 
 open Set
 
@@ -24,7 +24,7 @@ Statement {f : ℝ → ℝ} {c : ℝ} {s : Set ℝ} (hf : Continuous f)
   · assumption
   · fun_prop
 
-Conclusion "Conclusion Aquarium L06: Since the target set is closed and contains `s`, it also contains
+Conclusion "Conclusion Aquarius L06: Since the target set is closed and contains `s`, it also contains
 `closure s`."
 
 NewTheorem closure_minimal

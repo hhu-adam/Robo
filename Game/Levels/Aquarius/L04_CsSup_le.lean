@@ -1,11 +1,11 @@
-import Game.Levels.Aquarium.L03_Le_csSup
+import Game.Levels.Aquarius.L03_Le_csSup
 
-World "Aquarium"
+World "Aquarius"
 Level 4
 
 Title ""
 
-Introduction "Intro Aquarium L04"
+Introduction "Intro Aquarius L04"
 
 open Set FullGrind
 
@@ -24,7 +24,7 @@ Statement {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (h : ∀ x ∈ s, x ≤ b
   obtain h2 := h _ h1
   grind
 
-Conclusion "Conclusion Aquarium L04: `csSup_le` bounded the supremum from above by `b`, and
+Conclusion "Conclusion Aquarius L04: `csSup_le` bounded the supremum from above by `b`, and
 transitivity of `≤` pushed it up to `c`."
 
 NewTheorem csSup_le

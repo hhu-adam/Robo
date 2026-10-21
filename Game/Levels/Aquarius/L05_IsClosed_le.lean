@@ -1,11 +1,11 @@
-import Game.Levels.Aquarium.L04_CsSup_le
+import Game.Levels.Aquarius.L04_CsSup_le
 
-World "Aquarium"
+World "Aquarius"
 Level 5
 
 Title ""
 
-Introduction "Intro Aquarium L04"
+Introduction "Intro Aquarius L04"
 
 open Set
 
@@ -25,7 +25,7 @@ Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x �
       which automatically proves such function properties."
     fun_prop
 
-Conclusion "Conclusion Aquarium L05: `isClosed_le` turns a `≤` between continuous functions into a
+Conclusion "Conclusion Aquarius L05: `isClosed_le` turns a `≤` between continuous functions into a
 closed set."
 
 NewTactic fun_prop

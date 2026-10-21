@@ -35,7 +35,7 @@ Statement (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f
     Also, trivially/by some eralier lemma `b ≤ s` by earlier lemma, so we have `s ∈ Ioc a c`.
 
     By definition of `Shaders f b`, for all points in `Shaders f b`, `f` takes a value at least `f b`.
-    Thus, by an an analogous argument to Boss of Aquarium, `f s ≥ f b`.
+    Thus, by an an analogous argument to Boss of Aquarius, `f s ≥ f b`.
     This implies, in particular, that `s ≠ c`.
     So `s ∈ Ioo a c`.  By our assumptions, this implies that `s` is in the shade.
 

@@ -1,4 +1,4 @@
-import Game.Levels.Aquarium.L07_CsSup_mem_closure
+import Game.Levels.Aquarius.L07_CsSup_mem_closure
 
 World "Shade"
 Level 1

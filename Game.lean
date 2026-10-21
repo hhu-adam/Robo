@@ -29,7 +29,7 @@ import Game.Levels.Piazza
 import Game.Levels.Espresso
 
 import Game.Levels.Cartan
-import Game.Levels.Aquarium
+import Game.Levels.Aquarius
 import Game.Levels.Shade
 import Game.Levels.Slope
 import Game.Levels.Cauchy
@@ -59,7 +59,7 @@ Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
 Dependency Vieta → Shade    -- because of `function`
 
-Dependency Vieta → Aquarium -- because of `function`
+Dependency Vieta → Aquarius -- because of `function`
 Dependency Vieta → Cartan   -- because of `function`
 
 Dependency Slope → Cauchy  -- because of `HasDerivAt` / `hasDerivAt_iff_tendsto_slope`

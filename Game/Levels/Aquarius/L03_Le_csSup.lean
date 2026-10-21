@@ -1,11 +1,11 @@
-import Game.Levels.Aquarium.L02_BddAbove
+import Game.Levels.Aquarius.L02_BddAbove
 
-World "Aquarium"
+World "Aquarius"
 Level 3
 
 Title ""
 
-Introduction "Intro Aquarium L03"
+Introduction "Intro Aquarius L03"
 
 open Set FullGrind
 
@@ -23,7 +23,7 @@ Statement {s : Set ℝ} {c x : ℝ} (hbd : BddAbove s) (hx : x ∈ s) (hcx : c <
     · assumption
   grind
 
-Conclusion "Conclusion Aquarium L03: `le_csSup` turned membership `x ∈ s` into the bound
+Conclusion "Conclusion Aquarius L03: `le_csSup` turned membership `x ∈ s` into the bound
 `x ≤ sSup s`, and transitivity of `≤` finished the job."
 
 NewTheorem le_csSup
