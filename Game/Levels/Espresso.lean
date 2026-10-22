@@ -14,7 +14,7 @@ The planet Luna is about inequalities `≤` and the tactics `omega` (for ℕ) an
 World "Espresso"
 Title "Espresso"
 
-Image "images/MoonLuna.png"
+Image "images/Planets/Planet_Green.png"
 
 /-
 Introduction "
@@ -43,4 +43,4 @@ ich hier noch ganz durcheinander.
 
 "
 -/
-Introduction " Intro Espresso"
+Introduction "Intro Espresso"
