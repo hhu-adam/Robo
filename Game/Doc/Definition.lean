@@ -754,6 +754,11 @@ DefinitionDoc Polynomial.comp as "Polynomial.comp"
 -/
 
 /--
+For a map `f` between topological space, `ContDiff f` means that f is continuous.
+-/
+DefinitionDoc Continuous as "Continuous"
+
+/--
 For a function `f`, `f : ℝ → ℝ` and `n`, `n : ℕ`, `ContDiff ℝ n f` means that f is n times
 continuously differentiable, i.e. $f \in C^n$.
 In particular, `ContDiff ℝ ∞ f` means that f can be differentiated arbitrarily often,

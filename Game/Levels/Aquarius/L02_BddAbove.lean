@@ -9,7 +9,9 @@ open Set FullGrind
 
 Statement {a b : ℝ} {p : ℝ → Prop} :
     BddAbove {x ∈ Ioo a b | p x} := by
-  Hint "[Hint bdad] `rw` with theorem `bddAbove_def` to translate the problem. "
+  Hint "[Hint bdad]
+    Need to show that $\\\{x \\in (a,b) | p(x) \\}$ is bounded above.
+    Expand `BddAbove` with `rw` and new theorem `bddAbove_def`."
   rw [bddAbove_def]
   Hint (hidden := true) "[Hint hd] `b` is an upper bound of this set. "
   use b
@@ -20,6 +22,7 @@ Statement {a b : ℝ} {p : ℝ → Prop} :
     unfold Ioo at this
     simp at this
     grind (ematch := 0)
+  Hint "[Hint hq5jg] Remember `grind`."
   grind
 
 /---/

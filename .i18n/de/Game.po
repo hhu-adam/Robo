@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-16\n"
+"POT-Creation-Date: 2026-10-22\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -1608,6 +1608,12 @@ msgid ""
 msgstr ""
 
 #. §0: `f`
+#. §1: `ContDiff f`
+#: Game/Doc/Definition.lean:756
+msgid "For a map §0 between topological space, §1 means that f is continuous."
+msgstr ""
+
+#. §0: `f`
 #. §1: `f : ℝ → ℝ`
 #. §2: `n`
 #. §3: `n : ℕ`
@@ -1615,7 +1621,7 @@ msgstr ""
 #. §5: $f \\in C^n$
 #. §6: `ContDiff ℝ ∞ f`
 #. §7: $f \\in C^\\infty$
-#: Game/Doc/Definition.lean:756
+#: Game/Doc/Definition.lean:761
 msgid ""
 "For a function §0, §1 and §2, §3, §4 means that f is n times\n"
 "continuously differentiable, i.e. §5.\n"
@@ -1628,7 +1634,7 @@ msgstr ""
 #. §2: `Real.exp`
 #. §3: `ℝ → ℝ`
 #. §4: $x ↦ e^x$
-#: Game/Doc/Definition.lean:764
+#: Game/Doc/Definition.lean:769
 msgid ""
 "§0, §1 and §2 each denote the exponential function §3\n"
 "(otherwise commonly denoted as §4)"
@@ -1650,7 +1656,7 @@ msgstr ""
 #. §13: `f.symm : β ≃ α`
 #. §14: `α → β`
 #. §15: `β → α`
-#: Game/Doc/Definition.lean:769
+#: Game/Doc/Definition.lean:774
 msgid ""
 "For types §0 and §1, §2 or (§3) is the type of functions from §4 with a\n"
 "two-sided inverse.  A term §5 has four components:\n"
@@ -1671,7 +1677,7 @@ msgstr ""
 #. §3: `Function.curry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:783
+#: Game/Doc/Definition.lean:788
 msgid ""
 "For a function of two arguments §0, §1 is the\n"
 "function of a single pair-shaped argument with §2.\n"
@@ -1685,7 +1691,7 @@ msgstr ""
 #. §3: `Function.uncurry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:791
+#: Game/Doc/Definition.lean:796
 msgid ""
 "For a function of a single pair-shaped argument §0, §1\n"
 "is the function of two arguments with §2.\n"
@@ -11703,9 +11709,21 @@ msgstr ""
 "Ihr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt "
 "die Ohren."
 
-#: Game/Levels/Aquarium/L01_UpperBounds.lean:6
-msgid "Intro Aquarium L01: bounded above means having an upper bound."
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:6
+msgid "Intro Aquarius L01: bounded above means having an upper bound."
 msgstr ""
+"Sobald Ihr ins Wasser taucht, seid Ihr von Fischen und anderen "
+"Wasserlebewesen umringt.  Die Kommunikation ist etwas schwierig.  Immerhin "
+"bist Du mit Robo über Funk verbunden.\n"
+"\n"
+"**Du:** Robo, verstehst du, was der große rote uns sagen will?\n"
+"\n"
+"**Robo:**  Ich glaube, wir sollen hier warten, auf … ah ja, auf diesen "
+"Kraken.\n"
+"\n"
+"Tatsächlich kommt ein Krake geschwommen.  Natürlich hat er eine ganze Ladung "
+"Seetang dabei.  Und Tinte.  Ihr schaut euch an, was auf dem ersten "
+"Seetangblatt geschrieben steht."
 
 #. §0: `s`
 #. §1: `T`
@@ -11721,7 +11739,7 @@ msgstr ""
 #. §11: `b`
 #. §12: `b : T`
 #. §13: `b ∈ upperBounds s`
-#: Game/Levels/Aquarium/L01_UpperBounds.lean:11
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:11
 msgid ""
 "[Hint upbd] Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
 "§5 means that b is an *upper bound* of s: §6 for every element of s.\n"
@@ -11729,84 +11747,118 @@ msgid ""
 "For subset §7 of a set §8 (§9), §10 means that there exists some §11 in T\n"
 "(§12) such that §13."
 msgstr ""
+"**Du**:  Ich rate einfach mal … §5 bedeutet doch bestimmt, dass §3 eine "
+"obere Schranke von §0 ist.  Und §10 bedeutet, dass §0 „bounded above“, also "
+"von oben beschränkt ist.  Richtig?\n"
+"\n"
+"**Robo**:  Ja, richtig. Wir müssen vermutlich einfach noch einmal explizit "
+"sagen, dass §11 die gesuchte obere Schranke ist."
 
 #. §0: `b`
 #. §1: `use`
-#: Game/Levels/Aquarium/L01_UpperBounds.lean:16
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:16
 msgid ""
 "[Hint s88tx] You already have one upper bound, namely §0.\n"
 "Provide it as witness with §1."
+msgstr "**Robo**:  Probier mal §1."
+
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:23
+msgid "Conclusion Aquarius L01"
+msgstr "Die Fische wedeln aufgeregt mit ihren Flossen."
+
+#: Game/Levels/Aquarius/L02_BddAbove.lean:6
+msgid "Intro Aquarius L02"
 msgstr ""
+"Der Krake wirkt auch zufrieden, soweit man das beurteilen kann.  Er wechselt "
+"ein paar Mal die Farbe und reicht euch ein weiteres Blatt."
 
-#: Game/Levels/Aquarium/L01_UpperBounds.lean:23
-#, fuzzy
-#| msgid "Conclusion Luna L01"
-msgid "Conclusion Aquarium L01"
-msgstr "**Lina**:  Zugegeben, das war ein triviales Beispiel."
-
-#: Game/Levels/Aquarium/L02_BddAbove.lean:6
-#, fuzzy
-#| msgid "Intro Quantus L02"
-msgid "Intro Aquarium L02"
-msgstr "Auf der Rückseite steht folgendes."
-
-#. §0: `rw`
-#. §1: `bddAbove_def`
-#: Game/Levels/Aquarium/L02_BddAbove.lean:12
-msgid "[Hint bdad] §0 with theorem §1 to translate the problem. "
+#. §0: $\\{x \\in (a,b) | p(x) \\}$
+#. §1: `BddAbove`
+#. §2: `rw`
+#. §3: `bddAbove_def`
+#: Game/Levels/Aquarius/L02_BddAbove.lean:12
+msgid ""
+"[Hint bdad]\n"
+"Need to show that §0 is bounded above.\n"
+"Expand §1 with §2 and new theorem §3."
 msgstr ""
+"**Du**:  Hier sollen wir zeigen, dass die Menge §0 von oben beschränkt ist.\n"
+"\n"
+"**Robo**: Genau. Warte mal, was sagt er …  ah ja.  Probier mal, §1 mit §3 "
+"auszuschreiben."
 
 #. §0: `b`
-#: Game/Levels/Aquarium/L02_BddAbove.lean:14
+#: Game/Levels/Aquarius/L02_BddAbove.lean:16
 msgid "[Hint hd] §0 is an upper bound of this set. "
-msgstr ""
+msgstr "**Robo**:  Eine offensichtliche Schranke ist hier §0."
 
-#: Game/Levels/Aquarium/L02_BddAbove.lean:29
-#, fuzzy
-#| msgid "Conclusion Quantus L02"
-msgid "Conclusion Aquarium L02"
+#. §0: `grind`
+#: Game/Levels/Aquarius/L02_BddAbove.lean:25
+msgid "[Hint hq5jg] Remember §0."
 msgstr ""
-"Ihr erhaltet einen bescheidenen Applaus.\n"
-"Die Formalosophinnen tuscheln untereinander."
+"**Robo**: Mist.  Ich habe die Kaffeebohnen im Raumschiff liegen lassen.\n"
+"\n"
+"**Du**:  Weiß auch gar nicht, ob die unter Wasser und mit Seetang "
+"funktionieren würden.\n"
+"\n"
+"Aber der Kranke reicht euch seelenruhig eine Kaffeebohne."
 
-#: Game/Levels/Aquarium/L03_Le_csSup.lean:8
-#, fuzzy
-#| msgid "Intro Luna L03"
-msgid "Intro Aquarium L03"
-msgstr "**Lina**: Probierts doch mal hiermit!"
+#: Game/Levels/Aquarius/L02_BddAbove.lean:32
+msgid "Conclusion Aquarius L02"
+msgstr "**Du**:  Sehr schön, dass das so klappt."
+
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:8
+msgid "Intro Aquarius L03"
+msgstr "Auf dem nächsten Blatt gibts schon wieder eine neue Definition."
 
 #. §0: `s`
 #. §1: `sSup s`
 #. §2: `x ∈ s`
 #. §3: `x ≤ sSup s`
-#: Game/Levels/Aquarium/L03_Le_csSup.lean:17
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:17
 msgid ""
 "[Hint cslt] Since §0 is bounded above, its supremum §1 is an upper bound of "
 "s.\n"
 "So §2 implies §3."
 msgstr ""
+"**Du**:  Ist §1 irgendeine Art von Supremum?  \n"
+"\n"
+"**Robo**:  Ja, genau.  `sSup` soll so viel heißen wie `set supremum`.  Also "
+"ist §1 das Supremum der Menge §0.  Jedenfalls, ist es das, wenn so ein "
+"Supremum existiert.  Hab gerade vergessen, was es sonst ist …\n"
+"\n"
+"**Du**:  Naja, §0 ist ja per Annahme nach oben beschränkt.  Das Supremum von "
+"§0 wird also schon existieren.\n"
+"\n"
+"**Robo**:  Stimmt.  In dem Fall sollte aus §2 folgen: §3.  Vielleicht "
+"versuchen wir §3 erst einmal festhalten?"
 
 #. §0: `le_csSup`
-#: Game/Levels/Aquarium/L03_Le_csSup.lean:20
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:20
 msgid "[Hint lecssup] Perhaps, §0 is helpful here. "
-msgstr ""
+msgstr "**Robo**:  Ich glaube, du kannst hier §0 zitieren."
 
 #. §0: `le_csSup`
 #. §1: `x ∈ s`
 #. §2: `x ≤ sSup s`
 #. §3: `≤`
-#: Game/Levels/Aquarium/L03_Le_csSup.lean:26
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:26
 msgid ""
-"Conclusion Aquarium L03: §0 turned membership §1 into the bound\n"
+"Conclusion Aquarius L03: §0 turned membership §1 into the bound\n"
 "§2, and transitivity of §3 finished the job."
-msgstr ""
+msgstr "Die Flossen wedeln werden!"
 
-#: Game/Levels/Aquarium/L04_CsSup_le.lean:8
-#: Game/Levels/Aquarium/L05_IsClosed_le.lean:8
-#, fuzzy
-#| msgid "Intro Luna L04"
-msgid "Intro Aquarium L04"
-msgstr "**Lina**:  Hier habe ich noch etwas."
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:8
+msgid "Intro Aquarius L04"
+msgstr "Der Krake dreht das Blatt um."
+
+#. §0: `csSup_le`
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:17
+msgid "[Hint cssuple] The supremum is the *least* upper bound. New theorem: §0"
+msgstr ""
+"**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums "
+"benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die "
+"*kleinste* solche Schranke.  Diese Eigenschaft wird hier §0 genannt."
 
 #. §0: `sSup s`
 #. §1: `s`
@@ -11816,84 +11868,89 @@ msgstr "**Lina**:  Hier habe ich noch etwas."
 #. §5: `sSup s ≤ b`
 #. §6: `b ≤ c`
 #. §7: `sSup s ≤ c`
-#: Game/Levels/Aquarium/L04_CsSup_le.lean:17
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:18
 msgid ""
-"[Hint suplec] This is the dual of the previous level. §0 is the *least* "
-"upper bound\n"
-"of §1, so it sits below every upper bound. Hypothesis §2 says §3 bounds all "
-"of §4, hence\n"
-"§5, and chaining with §6 gives §7."
+"[Hint suplec] As §0 is the least upper bound of §1,\n"
+"it sits below every upper bound.\n"
+"Hypothesis §2 says §3 bounds all of §4, hence§5.\n"
+"Chaining with §6 gives §7."
 msgstr ""
-
-#. §0: `csSup_le`
-#: Game/Levels/Aquarium/L04_CsSup_le.lean:20
-msgid "[Hint cssuple] Perhaps, §0 is useful here."
-msgstr ""
+"**Du**: Mmmh …\n"
+"\n"
+"**Robo**: Da §0 die kleinste obere Schranke von §1 ist, ist sie kleiner-"
+"gleich jeder anderen Schranke. \n"
+"Und die Annahme §2 sagst uns, dass §b eine solche „andere“ Schranke ist. "
+"Also müssten wir hier §5 zeigen können."
 
 #. §0: `csSup_le`
 #. §1: `b`
 #. §2: `≤`
 #. §3: `c`
-#: Game/Levels/Aquarium/L04_CsSup_le.lean:27
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:28
 msgid ""
-"Conclusion Aquarium L04: §0 bounded the supremum from above by §1, and\n"
+"Conclusion Aquarius L04: §0 bounded the supremum from above by §1, and\n"
 "transitivity of §2 pushed it up to §3."
+msgstr "Der Krake nickt."
+
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:8
+msgid "Intro Aquarius L05"
+msgstr ""
+
+#. §0: `Continuous f`
+#. §1: `f`
+#. §2: `IsClosed s`
+#. §3: `s`
+#. §4: `ℝ`
+#. §5: `f`
+#. §6: `c`
+#. §7: `isClosed_le`
+#. §8: $f$
+#. §9: $g$
+#. §10: `b`
+#. §11: $f (b) ≤ g (b)$
+#. §12: $\\mathbb{R}$
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:16
+msgid ""
+"[Hint iscl]\n"
+"§0 means that §1 is continuous.\n"
+"§2 means that the set §3 is closed (as a subset of §4).\n"
+"So the goal is to show that set of points where the continuous function §5 "
+"stays\n"
+"below the constant §6 is closed.\n"
+"Apply new theorem §7, which says that for two continuous functions\n"
+"§8 and §9, the set of points §10 where §11 is  closed in §12."
 msgstr ""
 
 #. §0: `f`
-#. §1: `c`
+#. §1: `g`
 #. §2: `isClosed_le`
-#. §3: $f$
-#. §4: $g$
-#. §5: `b`
-#. §6: $f (b) ≤ g (b)$
-#. §7: $\\mathbb{R}$
-#: Game/Levels/Aquarium/L05_IsClosed_le.lean:16
-msgid ""
-"[Hint iscl] The goal is to show that set of points where the continuous "
-"function §0 stays\n"
-"below the constant §1 is closed.\n"
-"Apply §2, which says that for two continuous functions\n"
-"§3 and §4, the set of points §5 where §6 is  closed in §7."
-msgstr ""
-
-#. §0: $f$
-#. §1: $g$
-#. §2: `isClosed_le`
-#. §3: $f$
-#. §4: `assumption`
-#: Game/Levels/Aquarium/L05_IsClosed_le.lean:21
+#. §3: `assumption`
+#. §4: `fun_prop`
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:24
 msgid ""
 "The remaining two goals are the continuity of the functions §0 and §1\n"
-"to which we applied §2.  Continuity of §3 is an §4."
-msgstr ""
-
-#. §0: `fun_prop`
-#: Game/Levels/Aquarium/L05_IsClosed_le.lean:24
-msgid ""
-"For continuity of the constant function, use §0,\n"
-"which automatically proves such function properties."
+"to which we applied §2.\n"
+"Use §3 or new tactic §4 to show this for f.\n"
+"Use fun_prop to show this for the constant function."
 msgstr ""
 
 #. §0: `isClosed_le`
 #. §1: `≤`
-#: Game/Levels/Aquarium/L05_IsClosed_le.lean:28
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:31
 msgid ""
-"Conclusion Aquarium L05: §0 turns a §1 between continuous functions into a\n"
+"Conclusion Aquarius L05: §0 turns a §1 between continuous functions into a\n"
 "closed set."
 msgstr ""
 
-#: Game/Levels/Aquarium/L06_Closure_minimal.lean:8
-#, fuzzy
-#| msgid "Intro Luna L06"
-msgid "Intro Aquarium L06"
-msgstr "**Ritha**:  Kann ich auch mal?  Hier."
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:8
+msgid "Intro Aquarius L06"
+msgstr ""
 
 #. §0: `closure s`
 #. §1: `s`
 #. §2: `closure_minimal`
 #. §3: `s ⊆ …`
-#: Game/Levels/Aquarium/L06_Closure_minimal.lean:17
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:17
 msgid ""
 "[Hint clmin] §0 is the smallest closed set containing §1.  Apply\n"
 "§2; it asks for §3 and that the target set is closed."
@@ -11901,7 +11958,7 @@ msgstr ""
 
 #. §0: `f x ≤ c`
 #. §1: `isClosed_le`
-#: Game/Levels/Aquarium/L06_Closure_minimal.lean:21
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:21
 msgid ""
 "The remaining goal is that the sublevel set §0 is closed —\n"
 "that is §1."
@@ -11909,9 +11966,9 @@ msgstr ""
 
 #. §0: `s`
 #. §1: `closure s`
-#: Game/Levels/Aquarium/L06_Closure_minimal.lean:27
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:27
 msgid ""
-"Conclusion Aquarium L06: Since the target set is closed and contains §0, it "
+"Conclusion Aquarius L06: Since the target set is closed and contains §0, it "
 "also contains\n"
 "§1."
 msgstr ""
@@ -11919,9 +11976,9 @@ msgstr ""
 #. §0: `f`
 #. §1: `s`
 #. §2: `c`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:8
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:8
 msgid ""
-"Intro Aquarium 7: If the values of some continuous function §0 on a non-"
+"Intro Aquarius 7: If the values of some continuous function §0 on a non-"
 "empty set §1 are bounded by\n"
 " a constant §2, then its value at the supremum of s is also bounded by c."
 msgstr ""
@@ -11930,7 +11987,7 @@ msgstr ""
 #. §1: `s`
 #. §2: `csSup_mem_closure`
 #. §3: `have`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:19
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:19
 msgid ""
 "[Hint cssupcl] For a nonempty set bounded above, §0 lies in the closure of\n"
 "§1.  That is §2.  Formulate this separately with §3."
@@ -11938,7 +11995,7 @@ msgstr ""
 
 #. §0: `sSup s ∈ closure s`
 #. §1: `have`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:25
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:25
 msgid ""
 "[Hint 9xyh5] If this is the route you want to take,\n"
 "perhaps now establish §0 with §1."
@@ -11948,19 +12005,19 @@ msgstr ""
 #. §1: `f x ≤ c`
 #. §2: `closure_minimal`
 #. §3: `isClosed_le`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:40
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:40
 msgid ""
 "The closure of §0 is contained in the closed sublevel set §1 — combine\n"
 "§2 with §3."
 msgstr ""
 
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:43
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:43
 msgid "[Hint w5pc3] Good intermediate statement to try to prove."
 msgstr ""
 
 #. §0: `h2 h1`
 #. §1: `sSup s`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:48
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:48
 msgid ""
 "Now §0 says that §1 lies in the sublevel set,\n"
 "which is exactly the goal."
@@ -11969,46 +12026,30 @@ msgstr ""
 #. §0: `f x ≤ c`
 #. §1: `s`
 #. §2: `f (sSup s) ≤ c`
-#: Game/Levels/Aquarium/L07_CsSup_mem_closure.lean:52
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
 msgid ""
-"Conclusion Aquarium L07: Combining all three theorems, the bound §0 on §1 "
+"Conclusion Aquarius L07: Combining all three theorems, the bound §0 on §1 "
 "passes\n"
 "to its supremum: §2."
 msgstr ""
 
-#: Game/Levels/Aquarium.lean:17
-msgid "Aquarium"
-msgstr ""
+#: Game/Levels/Aquarius.lean:17
+msgid "Aquarius"
+msgstr "Aquarius"
 
-#: Game/Levels/Aquarium.lean:19
-#, fuzzy
-#| msgid "Intro Luna"
-msgid "Intro Aquarium"
+#: Game/Levels/Aquarius.lean:19
+msgid "Intro Aquarius"
 msgstr ""
-"Robo hat einen kleinen Mond entdeckt, auf den ihr jetzt zusteuert. Er hat "
-"eine ganz glatte Oberfläche, aber an einer Stelle hat die Oberfläche eine "
-"kleine Öffnung, von der eine Treppe ins Innnere führt. Ihr landet und steigt "
-"neugierig hinab.\n"
+"Ihr seid auf einem Planeten gelandet, der wie ein großes Freilichtbad wirkt. "
+"Die Landschaft ist flach und langweilig, bis auf die vielen künstlichen "
+"Wasserbecken.  Zu sehen ist niemand.\n"
 "\n"
-"Unten angekommen findest du dich in der aufgeräumtesten Wohnung wieder, die "
-"du je gesehen hast. Ein kleines Mädchen begrüßt Euch.\n"
+"**Nemo**:  Huhu.\n"
 "\n"
-"**Lina**: Ich bin Lina, die einzige Bewohnerin von Luna.\n"
+"Und Platsch. Ihr dreht Euch um und seht nur noch, wie im Pool hinter Euch "
+"ein großer Fisch davonschwimmt.  \n"
 "\n"
-"Dann sieht sie Robo.\n"
-"\n"
-"**Lina**: Naja, eigentlich sind wir hier auch zu zweit …\n"
-"\n"
-"Sie dreht sich um und ruft etwas, da kommt ein Smart-Elf angefahren.\n"
-"\n"
-"**Lina**: Das ist Ritha!\n"
-"\n"
-"Robo findet sie offensichtlich süß.\n"
-"\n"
-"**Lina**: Aber jetzt steht mal hier nicht so unordentlich herum, bitte! "
-"Schuhe und Helme dort und dort verstauen, und dann stellt Euch auf die "
-"markierten Besucher-Standpunkte. Sonst komme ich hier noch ganz "
-"durcheinander."
+"**Robo**:  Hilft alles nix.  Ich hol mal unsere Taucherausrüstung."
 
 #. §0: `f`
 #. §1: `s`
@@ -12346,7 +12387,7 @@ msgstr ""
 #. §6: `closure_minimal`
 #. §7: `isClosed_le`
 #. §8: `csSup_mem_closure`
-#. §9: `Aquarium`
+#. §9: `Aquarius`
 #: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:8
 msgid ""
 "Intro Shade L07: the value at the supremum stays up.\n"
@@ -12659,7 +12700,7 @@ msgid ""
 "\n"
 "By definition of §14, for all points in §15, §16 takes a value at least "
 "§17.\n"
-"Thus, by an an analogous argument to Boss of Aquarium, §18.\n"
+"Thus, by an an analogous argument to Boss of Aquarius, §18.\n"
 "This implies, in particular, that §19.\n"
 "So §20.  By our assumptions, this implies that §21 is in the shade.\n"
 "\n"
@@ -14103,6 +14144,13 @@ msgid "[Game] CaptionLong"
 msgstr ""
 "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen "
 "aus der Eingangsphase des Bachelorstudiums Mathematik."
+
+#~ msgid "[Hint cssuple] Perhaps, §0 is useful here."
+#~ msgstr ""
+#~ "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des "
+#~ "Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, "
+#~ "sondern die *kleinste* solche Schranke.  Die Eigenschaft wird durch §0 "
+#~ "erfasst."
 
 #, fuzzy
 #~| msgid "Espresso"
