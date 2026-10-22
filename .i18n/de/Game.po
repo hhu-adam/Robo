@@ -11259,7 +11259,8 @@ msgid ""
 msgstr ""
 
 #. §0: `Filter.mem_of_superset`
-#: Game/Levels/Cartan/L02.lean:30 Game/Levels/Cartan/L02.lean:36
+#: Game/Levels/Cartan/L02.lean:30
+#: Game/Levels/Cartan/L02.lean:36
 #: Game/Levels/Cartan/L08.lean:26
 msgid "Second filter axiom says filter is upward closed (§0)."
 msgstr ""
@@ -11335,7 +11336,8 @@ msgid "[Hint fjpr0] First establish §0 with §1."
 msgstr ""
 
 #. §0: `filter_upwards [«{h_even}»]`
-#: Game/Levels/Cartan/L06.lean:13 Game/Levels/Cartan/L07.lean:21
+#: Game/Levels/Cartan/L06.lean:13
+#: Game/Levels/Cartan/L07.lean:21
 #, fuzzy
 #| msgid "[Hint rxjt] Try §0"
 msgid "[Hint 4j4cl] Try §0."
@@ -12808,7 +12810,8 @@ msgstr ""
 "unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
 
 #. §0: `grind`
-#: Game/Levels/Slope/L02.lean:11 Game/Levels/Slope/L02.lean:14
+#: Game/Levels/Slope/L02.lean:11
+#: Game/Levels/Slope/L02.lean:14
 #, fuzzy
 #| msgid "[Hint cqvs] Try §0"
 msgid "[Hint sll2] Try §0."
@@ -13704,7 +13707,8 @@ msgid ""
 "It should have the form §1 for some polynomial §2.\n"
 msgstr ""
 
-#: Game/Levels/Cauchy/L09.lean:58 Game/Levels/Cauchy/L09.lean:61
+#: Game/Levels/Cauchy/L09.lean:58
+#: Game/Levels/Cauchy/L09.lean:61
 msgid "[Hint lydei] Very good."
 msgstr ""
 
@@ -13728,12 +13732,14 @@ msgstr ""
 
 #. §0: `Tendsto.mono_left`
 #. §1: `nhdsWithin_le_nhds`
-#: Game/Levels/Cauchy/L09.lean:75 Game/Levels/Cauchy/L09.lean:79
+#: Game/Levels/Cauchy/L09.lean:75
+#: Game/Levels/Cauchy/L09.lean:79
 msgid "[Hint sm8tmlst] Remember §0 and §1."
 msgstr ""
 
 #. §0: `tendsto_polynomial_inv_mul_zero`
-#: Game/Levels/Cauchy/L09.lean:77 Game/Levels/Cauchy/L09.lean:81
+#: Game/Levels/Cauchy/L09.lean:77
+#: Game/Levels/Cauchy/L09.lean:81
 msgid "[Hint sm8tshiw] This is exactly the result §0."
 msgstr ""
 
