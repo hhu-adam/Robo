@@ -12,13 +12,13 @@ Introduction
  exceeds its value at the left endpoint.
 "
 
-open Set FullGrind
+open Set
 
 /-- If `f`, `f : ℝ → ℝ` is continuous and `a`, `c` (`a c : ℝ`) are points with `a < c` and
 `f a < f c`, then there is some `b ∈ Ioo a c` with `f b > f c`. -/
 TheoremDoc exists_mem_Ioo_val_gt_left as "exists_mem_Ioo_val_gt_left" in "Shade"
 
-Statement exists_mem_Ioo_val_gt_left {f : ℝ → ℝ} {a c : ℝ} (hf : Continuous f) (hac : a < c)
+Statement exists_mem_Ioo_val_gt_left (preamble := grind_mode 1) {f : ℝ → ℝ} {a c : ℝ} (hf : Continuous f) (hac : a < c)
     (h_lt : f a < f c) : ∃ b ∈ Ioo a c, f b > f a := by
   Hint "[Hint ivIoo] One version of intermediate value theorem is `intermediate_value_Ioo`,
     which says

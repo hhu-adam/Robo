@@ -5,9 +5,9 @@ Level 2
 
 Introduction "Intro Aquarius L02"
 
-open Set FullGrind
+open Set
 
-Statement {a b : ℝ} {p : ℝ → Prop} :
+Statement (preamble := grind_mode 1) {a b : ℝ} {p : ℝ → Prop} :
     BddAbove {x ∈ Ioo a b | p x} := by
   Hint "[Hint bdad]
     Need to show that $\\\{x \\in (a,b) | p(x) \\}$ is bounded above.

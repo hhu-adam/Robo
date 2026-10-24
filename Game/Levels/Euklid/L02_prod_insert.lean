@@ -7,10 +7,10 @@ Title ""
 /- Introduction "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde." -/
 Introduction "Intro Euklid L02"
 
-open Finset FullGrind
+open Finset
 namespace Nat
 
-Statement (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
+Statement (preamble := grind_mode 1) (b : ℕ) (A : Finset ℕ): (∃ a ∈ A, b ∣ a) → b ∣ ∏ a ∈ A, a := by
   /-
   Hint "**Robo**: Diese Zeile sieht auch sehr vernünftig aus:
   wenn eine Zahl `{b}` einen Faktor `a` eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.

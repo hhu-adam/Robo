@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cartan"
 Level 2
 
-open Filter Topology FullGrind
+open Filter Topology
 
 Introduction "
 Can think of filters as generalized points.
@@ -20,8 +20,7 @@ neighborhood of `+∞`.
 TheoremDoc Filter.mem_atTop as "mem_atTop" in "Filter"
 
 /- The open ray beyond `b` is a neighborhood of `+∞`. -/
-open FullGrind in
-Statement {b : ℝ} : {x : ℝ | b < x} ∈ atTop := by
+Statement (preamble := grind_mode 1) {b : ℝ} : {x : ℝ | b < x} ∈ atTop := by
   Hint (strict := true) "[Hint pkzt] By `Filter.mem_atTop`, the ray `\{x | b + 1 ≤ x}` belongs to
   `atTop`.  Show this first."
   Branch

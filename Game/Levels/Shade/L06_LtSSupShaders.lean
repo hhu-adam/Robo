@@ -14,12 +14,12 @@ The reason is short: pick any element `t` of `Shaders f b`.  By definition `b < 
 below the supremum, so `b < sSup (Shaders f b)`.
 "
 
-open Set FullGrind
+open Set
 
 /-- If `b` lies in the shade and `Shaders f b` is bounded above, then `b < sSup (Shaders f b)`. -/
 TheoremDoc lt_sSup_Shaders as "lt_sSup_Shaders" in "Shade"
 
-Statement lt_sSup_Shaders {f : ℝ → ℝ} {b : ℝ} (hb : b ∈ Shade f) (hs : BddAbove (Shaders f b)) :
+Statement lt_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {b : ℝ} (hb : b ∈ Shade f) (hs : BddAbove (Shaders f b)) :
     b < sSup (Shaders f b) := by
   Hint "First get hold of an element of the set: it is nonempty by `shaders_nonempty`."
   have h_ne : (Shaders f b).Nonempty := by

@@ -11,9 +11,9 @@ In this level you show that there every bijection gives rise to an equivalence.
 -/
 Introduction "Intro Iso L04"
 
-open Function FullGrind
+open Function
 
-Statement {A B : Type} (f : A ≃ B) : Bijective f.toFun := by
+Statement (preamble := grind_mode 1) {A B : Type} (f : A ≃ B) : Bijective f.toFun := by
   Hint "[Hint p4wnd] Given an equivalence `f`, you can access its components
     and the relevant proofs with `f.toFun`, `f.invFun`, `f.left_inv` and `f.right_inv`.
     However, it's recommended to rely on coercion and use

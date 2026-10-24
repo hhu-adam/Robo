@@ -7,12 +7,12 @@ Title ""
 
 Introduction "Intro Aquarius L03"
 
-open Set FullGrind
+open Set
 
 /---/
 TheoremDoc le_csSup as "le_csSup" in "sSup"
 
-Statement {s : Set ℝ} {c x : ℝ} (hbd : BddAbove s) (hx : x ∈ s) (hcx : c < x) :
+Statement (preamble := grind_mode 1) {s : Set ℝ} {c x : ℝ} (hbd : BddAbove s) (hx : x ∈ s) (hcx : c < x) :
     c < sSup s := by
   Hint "[Hint cslt] Since `s` is bounded above, its supremum `sSup s` is an upper bound of s.
   So `x ∈ s` implies `x ≤ sSup s`."

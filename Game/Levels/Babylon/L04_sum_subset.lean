@@ -15,9 +15,9 @@ Introduction
 -/
 Introduction "Intro Babylon L04"
 
-open Finset FullGrind
+open Finset
 
-Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
+Statement (preamble := grind_mode 1) (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : ℤ ) = ∑ i ∈ Icc 3 n, (i^3 - 3*i^2 + 2*i : ℤ) := by
   /-
   Hint "**Du**: Mal langsam.  Zu zeigen ist:
 

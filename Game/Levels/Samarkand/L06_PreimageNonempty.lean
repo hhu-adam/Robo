@@ -1,6 +1,6 @@
 import Game.Levels.Samarkand.L05_InjectiveFibre
 
-open Function Set FullGrind
+open Function Set
 
 World "Samarkand"
 Level 6
@@ -10,7 +10,7 @@ Title ""
 -- Introduction "**Arapuka**: Und wie sieht es hiermit aus?"
 Introduction "Intro Samarkand L06"
 
-Statement {A B : Type} (f : A → B)  (y : B) :
+Statement (preamble := grind_mode 1) {A B : Type} (f : A → B)  (y : B) :
      f ⁻¹' {y} ≠ ∅ ↔ (∃ a, f a = y) := by
   /-
   Hint "

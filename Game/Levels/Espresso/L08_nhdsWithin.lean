@@ -5,11 +5,11 @@ Level 8
 
 Title ""
 
-open Set Filter Topology FullGrind
+open Set Filter Topology
 
 Introduction "Intro Espresso L08"
 
-Statement : 𝓝[>] (0 : ℝ) ≤ 𝓝[≠] 0 := by
+Statement (preamble := grind_mode 1) : 𝓝[>] (0 : ℝ) ≤ 𝓝[≠] 0 := by
   Hint "[Hint nhdsmno] We have two modified neighborhood filters of `0`.
   `𝓝[>] 0` is the filter “approaching zero from the right”:
   it consists of all sets that contain the positive part of a neighborhood of 0,

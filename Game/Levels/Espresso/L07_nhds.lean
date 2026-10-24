@@ -7,9 +7,9 @@ Title ""
 
 Introduction "Intro Espresso L07"
 
-open Set Filter Topology FullGrind
+open Set Filter Topology
 
-Statement : Ioo (- 1 / 5) (1 / 5) ∈ 𝓝 (0 : ℝ) := by
+Statement (preamble := grind_mode 1) : Ioo (- 1 / 5) (1 / 5) ∈ 𝓝 (0 : ℝ) := by
   Hint "[Hint mdsff]
     `Ioo (-1 / 5) (1 / 5)` is the open interval between $\\tfrac\{-1}\{5}$ and $\\tfrac\{1}\{5}$,
     i.e. $(\\tfrac\{-1}\{5},\\tfrac\{1}\{5})$.

@@ -15,13 +15,13 @@ fails to be in the set precisely when `f t < f b`.  Combining these gives `f t �
 The key new tool is `notMem_of_csSup_lt`: if `sSup s < t` and `s` is bounded above, then `t ∉ s`.
 "
 
-open Set FullGrind
+open Set
 
 /-- If `b` lies in the shade and `Shaders f b` is bounded above, then every point strictly to the
 right of `sSup (Shaders f b)` has value at most `f b`. -/
 TheoremDoc val_le_of_sSup_Shaders_lt as "val_le_of_sSup_Shaders_lt" in "Shade"
 
-Statement val_le_of_sSup_Shaders_lt {f : ℝ → ℝ} {b t : ℝ} (hb : b ∈ Shade f)
+Statement val_le_of_sSup_Shaders_lt (preamble := grind_mode 1) {f : ℝ → ℝ} {b t : ℝ} (hb : b ∈ Shade f)
     (hs : BddAbove (Shaders f b)) (ht : sSup (Shaders f b) < t) :
     f t ≤ f b := by
   Hint "[Hint eymq5] Establish `t ∉ Shaders f b` with `have`."

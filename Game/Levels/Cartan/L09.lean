@@ -3,7 +3,7 @@ import Game.Metadata
 World "Cartan"
 Level 9
 
-open Filter Topology FullGrind
+open Filter Topology
 
 Introduction "Intro Cartan L09"
 
@@ -22,7 +22,7 @@ TheoremDoc Filter.Eventually.exists as "Eventually.exists" in "Filter"
 /---/
 TheoremDoc inv_lt_zero as "inv_lt_zero"
 
-Statement : ¬ (∀ᶠ x in 𝓝[≠] (0 : ℝ), 1 / x > 5) := by
+Statement (preamble := grind_mode 1) : ¬ (∀ᶠ x in 𝓝[≠] (0 : ℝ), 1 / x > 5) := by
   Hint (hidden := true) "[Hint bcorin] First, you can begin with `by_contra h` or `intro h`."
   intro h
   Hint (strict := true) "[Hint fjpr0] Then establish

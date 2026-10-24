@@ -4,7 +4,7 @@ import Mathlib.Analysis.Calculus.Deriv.Slope
 World "Slope"
 Level 10
 
-open Topology Filter FullGrind
+open Topology Filter
 
 /---/
 TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Function"
@@ -12,7 +12,7 @@ TheoremDoc hasDerivAt_iff_tendsto_slope as "hasDerivAt_iff_tendsto_slope" in "Fu
 /---/
 TheoremDoc tendsto_nhdsWithin_congr as "tendsto_nhdsWithin_congr" in "Function"
 
-Statement {x : ℝ} :
+Statement (preamble := grind_mode 1) {x : ℝ} :
     let f : ℝ → ℝ := fun x ↦ x ^ 2
     HasDerivAt f (2 * x) x  := by
   Hint "[Hint aes3a] `HasDerivAt f x` means what you think it means.  Unfold it with

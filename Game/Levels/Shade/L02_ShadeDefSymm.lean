@@ -12,12 +12,12 @@ statement is just as useful: failing to lie in the shade is the same as being su
 the same way — unfold both sets and let `simp` move the negation across the `∃`.
 "
 
-open Set FullGrind
+open Set
 
 /-- A point fails to lie in the shade exactly when it is a sunny point. -/
 TheoremDoc not_mem_Shade_iff_mem_Sun as "not_mem_Shade_iff_mem_Sun" in "Shade"
 
-Statement not_mem_Shade_iff_mem_Sun (f : ℝ → ℝ) (a : ℝ) : a ∉ Shade f ↔ a ∈ Sun f := by
+Statement not_mem_Shade_iff_mem_Sun (preamble := grind_mode 1) (f : ℝ → ℝ) (a : ℝ) : a ∉ Shade f ↔ a ∈ Sun f := by
   Hint (hidden := true) "Same recipe as last time: `simp [Shade, Sun]`. This time the negation
   has to pass  through an `∃`."
   simp [Shade, Sun]

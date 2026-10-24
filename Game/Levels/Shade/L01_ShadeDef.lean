@@ -18,7 +18,7 @@ Sun   f := {s : ℝ | ∀ t > s, f t ≤ f s}
 These two conditions are negations of each other, and your first job is to prove exactly that.
 "
 
-open Set FullGrind
+open Set
 
 def Shade (f : ℝ → ℝ) := {s : ℝ | ∃ t > s, f t > f s}
 def Sun (f : ℝ → ℝ) : Set ℝ := {s : ℝ | ∀ t > s, f t ≤ f s}
@@ -50,7 +50,7 @@ simp lemmas:
 `not_even_iff_odd`
 -/
 
-Statement not_mem_Sun_iff_mem_Shade (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
+Statement not_mem_Sun_iff_mem_Shade (preamble := grind_mode 1) (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
   Hint "Both sides are set-builder memberships. Unfold them with `simp [Shade, Sun]` and let
   `simp` push the negation through the `∀`."
   simp [Shade, Sun]

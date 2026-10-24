@@ -12,14 +12,14 @@ Introduction "
 -/
 Introduction "Intro Samarkand L09"
 
-open Function FullGrind
+open Function
 
 /---/
 TheoremDoc Set.preimage_injective as "preimage_injective" in "Function"
 
 namespace Set
 
-Statement preimage_injective {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
+Statement preimage_injective (preamble := grind_mode 1) {A B : Type} {f : A → B} : Injective (preimage f) ↔ Surjective f := by
   /-
   Hint "
     **Robo**:  Eine Abbildung ist genau dann surjektiv, wenn die induzierte Abbildung `preimage f`, die eine Teilmenge auf das Urbild unter dieser Teilmenge wirft, injektiv ist?

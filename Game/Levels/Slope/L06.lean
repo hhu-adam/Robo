@@ -3,7 +3,7 @@ import Game.Metadata
 World "Slope"
 Level 6
 
-open Topology Filter Metric FullGrind Set
+open Topology Filter Metric Set
 
 
 Introduction "[Intro] Remember from Espresso:
@@ -16,7 +16,7 @@ So:
    `𝓝 a`    – same as `𝓝[univ] a`
 "
 
-Statement : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
+Statement (preamble := grind_mode 1) : 𝓝[≠] (0 : ℝ) ≤ 𝓝 0 := by
   Hint "[Hint nwln] Remember `nhdsWithin_mono` from Espresso.  To apply it here, first establish
     `𝓝 (0 : ℝ) = 𝓝[univ] 0` with `have`, then `rw` using this equality."
   have : 𝓝 (0 : ℝ) = 𝓝[univ] 0:= by

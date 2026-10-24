@@ -18,7 +18,7 @@ Later we take the supremum of this set.  For that we first need it to be nonempt
 not a shadow point, `f b < f c`, and `c` itself is a shadow point, you show the set is nonempty.
 "
 
-open Set FullGrind
+open Set
 
 def Shaders (f : ℝ → ℝ) (c : ℝ) : Set ℝ := {t ∈ Set.Ioi c | f c ≤ f t}
 
@@ -29,7 +29,7 @@ DefinitionDoc Shaders as "Shaders" in "Shade"
 is nonempty. -/
 TheoremDoc shaders_nonempty as "shaders_nonempty" in "Shade"
 
-Statement shaders_nonempty {f : ℝ → ℝ} {b : ℝ}
+Statement shaders_nonempty (preamble := grind_mode 1) {f : ℝ → ℝ} {b : ℝ}
     (hb : b ∈ Shade f) : (Shaders f b).Nonempty := by
   Hint "Because `b` is in the shade, there is some `t > b` with `f t > f b`"
   Hint (hidden := true) "[Hint 7xd8e] Unpack `b ∈ Shade f` with `obtain ⟨t, …, …⟩ := hb`."

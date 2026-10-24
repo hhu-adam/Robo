@@ -10,11 +10,11 @@ Introduction "Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun 
 > Let `f : ℝ → ℝ` be a continuous function. If `a` and `c` with `a < c` are in the sun,
 but every `b` between a and c is in the shade, then `f a = f c`."
 
-open Set FullGrind
+open Set
 
 variable {f : ℝ → ℝ} {a c : ℝ}
 
-Statement (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f)
+Statement (preamble := grind_mode 1) (hf : Continuous f) (hac : a < c) (ha : a ∈ Sun f) (hc : c ∈ Sun f)
    (h_shade : ∀ b ∈ Set.Ioo a c, b ∈ Shade f) : f a = f c := by
   obtain h_lt | h_eq | h_gt := lt_trichotomy (f a) (f c)
   · Hint "[Hint sbosf] In this case, `a` is a shade point since `a < c` and `f a < f c`."

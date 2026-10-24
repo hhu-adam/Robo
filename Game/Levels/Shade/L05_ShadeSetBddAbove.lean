@@ -10,13 +10,13 @@ Introduction "Intro Shade L05: a quick boundedness fact.
 To take the supremum `sSup (Shaders f b)`, we also need the set to be bounded above.
 "
 
-open Set FullGrind
+open Set
 
 /-- If `c` is a sunny point with `f b < f c`, then `c` bounds `Shaders f b` from above.
 -/
 TheoremDoc upperBounds_Shaders as "shaders_bddAbove" in "Shade"
 
-Statement upperBounds_Shaders {f : ℝ → ℝ} {b c : ℝ} (hc : c ∈ Sun f) (hfc : f c < f b) :
+Statement upperBounds_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {b c : ℝ} (hc : c ∈ Sun f) (hfc : f c < f b) :
     c ∈ upperBounds (Shaders f b) := by
   Hint "[Hint bbdshadeh] `c ∈ upperBounds (Shaders f b)` means that `c` is a concrete upper bound of
     `Shaders f b`.  So the claim is:  `∀ t ∈ Shaders f b, t ≤ b`."

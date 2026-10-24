@@ -18,13 +18,13 @@ f b ≤ f (sSup (Shaders f b))
 The proof combines `closure_minimal`, `isClosed_le` and the `csSup_mem_closure` fact from `Aquarius`.
 "
 
-open Set FullGrind
+open Set
 
 /-- If `f` is continuous, `b` lies in the shade and `Shaders f b` is bounded above, then
 `f b ≤ f (sSup (Shaders f b))`. -/
 TheoremDoc val_le_val_sSup_Shaders as "val_le_val_sSup_Shaders" in "Shade"
 
-Statement val_le_val_sSup_Shaders {f : ℝ → ℝ} {hf : Continuous f} {b : ℝ} (hb : b ∈ Shade f)
+Statement val_le_val_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {hf : Continuous f} {b : ℝ} (hb : b ∈ Shade f)
     (hs : BddAbove (Shaders f b)) :
     f b ≤ f (sSup (Shaders f b)) := by
   Hint (strict := true) "State the containment that makes the argument work: `Shaders f b` is

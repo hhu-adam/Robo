@@ -4,9 +4,9 @@ import Mathlib.Analysis.Calculus.Deriv.Slope
 World "Slope"
 Level 12
 
-open Topology Filter FullGrind
+open Topology Filter
 
-Statement (c : ℝ) :
+Statement (preamble := grind_mode 1) (c : ℝ) :
     let f : ℝ → ℝ := fun x ↦ |x|
     ¬ HasDerivAt f c 0 := by
   Hint "[Hint absnd] Near `0`, the slope of `|x|` is `1` on the right but `-1`

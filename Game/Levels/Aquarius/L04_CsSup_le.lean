@@ -7,12 +7,12 @@ Title ""
 
 Introduction "Intro Aquarius L04"
 
-open Set FullGrind
+open Set
 
 /---/
 TheoremDoc csSup_le as "csSup_le" in "sSup"
 
-Statement {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (h : ∀ x ∈ s, x ≤ b) (hbc : b ≤ c) :
+Statement (preamble := grind_mode 1) {s : Set ℝ} {b c : ℝ} (hne : s.Nonempty) (h : ∀ x ∈ s, x ≤ b) (hbc : b ≤ c) :
     sSup s ≤ c := by
   Hint "[Hint cssuple] The supremum is the *least* upper bound. New theorem: `csSup_le`"
   Hint (hidden := true) "[Hint suplec] As `sSup s` is the least upper bound of `s`,

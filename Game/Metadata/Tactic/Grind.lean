@@ -1,3 +1,10 @@
+/-
+  NOTE: THIS FILE IS CURRENTLY NOT USED (its import in `Game/Metadata/Tactic.lean`
+  is commented out). The opt-out via `open FullGrind` relies on scoped syntax,
+  which does not work in the live version of lean4game.
+  See `Game/Metadata/Tactic/GrindMode.lean` for the replacement, which uses
+  `Statement (preamble := grind_mode 1) …` instead.
+-/
 import Lean
 
 open Lean Elab Parser.Tactic Parser.Tactic.Grind

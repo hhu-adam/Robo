@@ -5,9 +5,9 @@ Level 1
 
 Introduction "Intro Aquarius L01: bounded above means having an upper bound."
 
-open Set FullGrind
+open Set
 
-Statement {s : Set ℝ} {b : ℝ} (hb : b ∈ upperBounds s) : BddAbove s := by
+Statement (preamble := grind_mode 1) {s : Set ℝ} {b : ℝ} (hb : b ∈ upperBounds s) : BddAbove s := by
   Hint "[Hint upbd] Given a subset `s` of a set `T` (`s : Set T`) and an element `b` of T (`b : T`),
     `b ∈ upperBounds s` means that b is an *upper bound* of s: `s ≤ b` for every element of s.
 
