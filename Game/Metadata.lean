@@ -24,6 +24,12 @@ import Game.Metadata.MatrixNotation
 -/
 alias Set.subset_iff := Set.subset_def
 
+-- workaround since the scoped notations from mathlib arent available
+@[inherit_doc]
+notation "𝓝" => nhds
+
+@[inherit_doc]
+notation "𝓟" => Filter.principal
 
 -- import Game.Metadata.Delaborator
 -- import Game.Metadata.DelaboratorFunOnProd
