@@ -6,7 +6,7 @@
   **Robo**:
   **Robo** *(flüsternd)*:
   ```
-* Okay (nicht Okay, nicht OK, nicht Oke, nicht O.K. …)
+* Okay (nicht Ok, nicht OK, nicht Oke, nicht O.K. …)
 * Doppel-S (ß) nach Deutscher Grammatik, nicht Schweizer🥲.
 
 # Strategic decisions regarding Tactics
