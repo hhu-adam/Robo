@@ -152,6 +152,8 @@
  "[Hint wjedv] Try §0": "Ext räuspert sich.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint w5pc3] Good intermediate statement to try to prove.":
+ "**Robo**:  Sieht doch gut aus.",
  "[Hint w4joj] Try §0.":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint ux181] Remember §0.":
@@ -215,6 +217,8 @@
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
  "[Hint lecssup] Perhaps, §0 is helpful here. ":
  "**Robo**:  Ich glaube, du kannst hier §0 zitieren.",
+ "[Hint l6a3i] The closure of §0 is contained in §1.\nCombine §2 with §3 as in the previous level.":
+ "**Robo**:  Ich würde jetzt als Nächstes wieder zeigen, dass der Abschluss von §0 auch noch in §1 enthalten ist – so wie eben, mit §2 und §3.",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
  "[Hint kqwz] prove §0":
@@ -223,6 +227,8 @@
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint itvIoo] Just §0 §1.":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint iscl]\n§0 means that §1 is continuous.\n§2 means that the set §3 is closed (as a subset of §4).\nSo the goal is to show that set of points where the continuous function §5 stays\nbelow the constant §6 is closed.\nApply new theorem §7, which says that for two continuous functions\n§8 and §9, the set of points §10 where §11 is closed in §12.":
+ "**Du**:  Ich rate mal wieder … §0 heißt: §1 ist stetig.  Und §2 bedeutet:  diese Menge ist abgeschlossen.\n\n**Robo**:  Ja.  Sieht gar nicht so kontrovers aus. \n\nDer Krake versucht, Robo etwas zu erklären.\n\n**Robo**:  Ich glaube, er will sagen, einige jüngere Beckenbewohner sind politisch empfindlich und verwechseln abgeschlossen mit eingeschlossen.  Jedenfalls … du könntest das mit §7 angehen.  Der Satz sagt allgemeiner, dass für zwei stetige Funktionen §8 und §9 die Menge der Punkte, an denen §11 gilt, in §12 abgeschlossen ist.",
  "[Hint ilinv] Note that §0 is useful here.":
  "**Robo**:  Hier kannst du bestimmt §0 gut gebrauchen.",
  "[Hint hwzk] Try §0":
@@ -260,10 +266,14 @@
  "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben.",
  "[Hint cssuple] The supremum is the *least* upper bound. New theorem: §0":
  "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die *kleinste* solche Schranke.  Diese Eigenschaft wird hier §0 genannt.",
+ "[Hint cssupcl] §0 is a set that is bounded above, and on which §1 only takes values at most §2.\nNeed to show that f is also at most c at §3.\nUse new theorem §4. Formulate this separately with §5:\n§6":
+ "**Du**:  Also §0 ist hier eine Menge, die nach oben beschränkt ist, und auf der §1 nur Werte kleiner-gleich §2 annimmt?\n\n**Robo**:  Richtig.  Und wir sollen zeigen, dass §1 dann auch auf dem Supremum §3 nicht über §2 hinausgeht. \nWarte, der Krake sagt:\n\n…  das Wasser … ist am Rand … auch nicht höher … als in der Mitte.  \n\nNaja.  Das war jetzt nur mittel-hilfreich.  Aber noch etwas … §4.  Ja, das können wir vermutlich gut benutzen.  \nDas ist der Leansche Ausdruck für „das Supremum liegt im Abschluss“.  Hol dir die Aussage am besten sofort mit §5 in den Kontext:\n§6",
  "[Hint cslt] Since §0 is bounded above, its supremum §1 is an upper bound of s.\nSo §2 implies §3.":
  "**Du**:  Ist §1 irgendeine Art von Supremum?  \n\n**Robo**:  Ja, genau.  `sSup` soll so viel heißen wie `set supremum`.  Also ist §1 das Supremum der Menge §0.  Jedenfalls, ist es das, wenn so ein Supremum existiert.  Hab gerade vergessen, was es sonst ist …\n\n**Du**:  Naja, §0 ist ja per Annahme nach oben beschränkt.  Das Supremum von §0 wird also schon existieren.\n\n**Robo**:  Stimmt.  In dem Fall sollte aus §2 folgen: §3.  Vielleicht versuchen wir §3 erst einmal festhalten?",
  "[Hint cqvs] Try §0":
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
+ "[Hint clmin] §0 is the smallest closed set containing §1.  Apply\n§2; it asks for §3 and that the target set is closed.":
+ "**Du**:  §0 ist der topologische Abschluss der Menge §1?\n\n**Robo**:  Klar.  Es ist die *kleinste* abgeschlossene Menge, die §1 enthält.  Diese Eigenschaft heißt auf Leansch §2.",
  "[Hint cev2] Establish §0.":
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
  "[Hint bsjn] Try §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
@@ -273,6 +283,8 @@
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
  "[Hint bdad]\nNeed to show that §0 is bounded above.\nExpand §1 with §2 and new theorem §3.":
  "**Du**:  Hier sollen wir zeigen, dass die Menge §0 von oben beschränkt ist.\n\n**Robo**: Genau. Warte mal, was sagt er …  ah ja.  Probier mal, §1 mit §3 auszuschreiben.",
+ "[Hint 9xyh5] If this is the route you want to take,\nperhaps now establish §0 with §1.":
+ "**Robo**:  Ah.  Auch keine schlechte Idee.  Dann würde ich jetzt aber trotzdem als Nächstes §0 mit §1 einführen.",
  "[Hint 8riva] Better use §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint 815af] You need to distinguish cases.":
@@ -617,6 +629,10 @@
  "The rest is simple computation solvable by §0 and §1":
  "**Du**: Der Rest sollte jetzt einfach nur Rechnerei sein.\n\n**Robo**:  Stimmt.  Irgendeine Kombination von §0 und §1 sollte das schaffen.",
  "The rest can be dealt with §0": "**Robo**:  Den Rest schafft bestimmt §0.",
+ "The remaining two goals are the continuity of the functions §0 and §1\nto which we applied §2.\nUse §3 or new tactic §4 to show this for f.\nUse fun_prop to show this for the constant function.":
+ "**Robo**:  Super!  Jetzt musst du noch zeigen, dass die beiden Funktionen, die hier vorkommen, tatsächlich stetig sind.  Für §0 ist das eine Annahme.  Und für die konstante Funktion kannst du das mit §4 zeigen.  Vielleicht funktioniert §4 sogar in beiden Fällen.",
+ "The remaining goal is that the sublevel set §0 is closed —\nthat is §1.":
+ "**Robo**:  Hier wirst du wohl wieder §1 verwenden müssen.",
  "The polynomials §0 with §1 and §2.":
  "**Robo**:  Die Annahme §0 kannst du ja jetzt mit §1 in die drei Fälle aufteilen: §2.",
  "The number of quantors does not allow for §0. Try §1":
@@ -760,6 +776,8 @@
  "Prove §0 by using §1, §2":
  "**Du**:  §0 – ja, das sieht richtig aus.\n\n**Robo**:  Sollte auch ganz genau so beweisbar sein, wie die Gaußsche Summe eben … außer dass du vermutlich nach §1 auch noch §2 brauchen wirst.",
  "Prove §0": "**Robo**: Jetzt kannst du also erst einmal §0 beweisen …",
+ "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
+ "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend brauchen. Aber keiner kann es mir beweisen.\n\n**Du**: Einen Moment. Das ist ja gerade so eine Implikation (§0). Wir nehmen an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert „§2 und §1“. Ja, klar! Natürlich stimmt das.\n\nDer Operationsleiter sieht dich erwartungsvoll an.\n\n**Du** *(leise zu Robo)*: Soll ich ihm §3 aufschreiben?\n\n**Robo** *(leise zurück)*: So wie der aussieht, fürchte ich, das wird er auch nicht verstehen. Schreib den Beweis lieber aus.\n\n**Du**: Aber wie denn? Ich glaube, ich würde als erstes gern so etwas sagen wie 'Nehmen wir also an, §2 gilt …'\n\n**Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel §4, und schreib §5.",
  "Prove the assumption before using it":
  "**Du**: Was? Jetzt hab ich einfach angenommen, dass sei richtig?\n\n**Robo**: Nein, jetzt musst du das natürlich erst noch beweisen, bevor du es dann benutzen kannst.",
  "Prove intermediate result":
@@ -767,8 +785,6 @@
  "Prove goal once for §0 and once for §1":
  "**Robo**: Jetzt musst du dein Ziel zweimal beweisen: Einmal unter Annahme der linken Seite §0, und einmal unter Annahme der rechten Seite §1. Zuerst nehmen wir an, die linke Seite §0 sei wahr.",
  "Prove by cases for §0": "**Du**: Und jetzt Fallunterscheidung zu §0…",
- "Proof the implication (§0), that assuming §1 is true, §2 implies §3\nis also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\nname §6 for assumption and introduce it via §7":
- "**Operationsleiter**: Die Arbeiter meinen, das wäre so richtig und wir würden das dringend brauchen. Aber keiner kann es mir beweisen.\n\n**Du**: Einen Moment. Das ist ja gerade so eine Implikation (§0). Wir nehmen an, dass §1 gilt, und wollen zeigen, dass dann gilt §2 impliziert §3. Ja, klar! Natürlich stimmt das.\n\nDer Operationsleiter sieht dich erwartungsvoll an.\n\n**Du** *(leise zu Robo)*: Soll ich ihm §4 aufschreiben?\n\n**Robo** *(leise zurück)*: So wie der aussieht, fürchte ich, das wird er auch nicht verstehen. Schreib den Beweis lieber aus.\n\n**Du**: Aber wie denn? Ich glaube, ich würde als erstes gern so etwas sagen wie 'Nehmen wir also an, §5 gilt …'\n\n**Robo**: Ja, gute Idee. Wähle dazu für deine Annahme einfach einen Namen, zum Beispiel §6, und schreib §7.",
  "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\nis false":
  "**Robo**: Siehst du, jetzt hat der Beweis zwei Teile. Im ersten Teil nimmst du an, dass §0 wahr ist. Im zweiten nimmst du an, dass §1 falsch ist.",
  "Prado": "Prado",
@@ -793,6 +809,8 @@
  "Observe §0 and §1": "**Robo**: Was siehst du, wenn du §0 und §1 anschaust?",
  "Observe goal as §0.\nDo not try §1 as §2 but as §3":
  "**Robo**: Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir, wie die Klammern gesetzt sind. Irre…\n\n**Du**: Ah ich sehe, also §0!\n\n**Du**: Ich glaube den ganzen Zircus hier langsam nicht mehr: Zuerst ein „Und“ im Ziel, dann „Und“ in der Annahme, dann „Oder“ im Ziel und jetzt „Oder“ in der Annahme. Die haben sich doch abgesprochen!\n\n**Robo**: Lass ihnen doch ihren Spaß. Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten weiterfliegen.\n\n**Du**: Also, wieder §1?\n\n**Robo**: Ja, aber diesmal nicht §2, sondern §3.",
+ "Now §0 says that §1 lies in the sublevel set,\nwhich is exactly the goal.":
+ "**Robo**:  Fast fertig, oder?",
  "Now §0 can be applied":
  "**Robo**: Sehr gut.  Jetzt kannst du nämlich §0 anwenden.",
  "Now you have two goals.":
@@ -800,7 +818,7 @@
  "Now you can apply §0": "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden.",
  "Now try out §0": "**Robo**:  Gut.  Und jetzt §0.",
  "Now there is goal §0. This goal is part of the assumption":
- "**Robo**: Schau mal, das ist Zauberpapier. Jetzt haben wir auf einmal zwei Beweisziele. Hier ist dast Ziel §0. Ich glaube, du weißt schon, wie man die jeweils erreicht. Die Ziele stehen ja jeweils in den *Annahmen*.",
+ "**Robo**: Annahme: §0. Ziel: §0. Erinnerst du dich noch an `assumption`?",
  "Now oyu can use §0":
  "**Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieder §0 verwenden kannst.",
  "Now assumption §0 is available":
@@ -1138,6 +1156,10 @@
  "**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum er steht. Hier zum Beispiel.",
  "Intro Babylon":
  "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme gestapelt sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.\n\n**Babylonier**: Willkommen auf *Babylon*!\n\n**Du**: Oh …\n\nDich beschleicht ein ungutes Gefühl.\n\n**Du**: Seid ihr euch sicher, dass diese Türme stabil sind?\n\n**Babylonier**: 100 Pro!\n\n**Du**: Wie baut ihr denn diese Meisterwerke?\n\n**Babylonier**: Ganz einfach! Ein Stein nach dem anderen.",
+ "Intro Aquarius L06":
+ "Ein Krakenarm händigt ein weiteres Blatt aus.  Die anderen Arme diskutieren immer noch mit einigen Fischen.",
+ "Intro Aquarius L05":
+ "Der Krake möchte euch das nächste Blatt reichen, aber mehrere kleinere Fische versuchen, ihn daran zu hindern.  Zwei große Fische intervenieren, und es kommt zu einer längeren Diskussion, die Robo genauso wenig entschlüsseln kann wie du.  Schließlich erhaltet ihr das Blatt doch noch.",
  "Intro Aquarius L04": "Der Krake dreht das Blatt um.",
  "Intro Aquarius L03":
  "Auf dem nächsten Blatt gibts schon wieder eine neue Definition.",
@@ -1145,6 +1167,8 @@
  "Der Krake wirkt auch zufrieden, soweit man das beurteilen kann.  Er wechselt ein paar Mal die Farbe und reicht euch ein weiteres Blatt.",
  "Intro Aquarius L01: bounded above means having an upper bound.":
  "Sobald Ihr ins Wasser taucht, seid Ihr von Fischen und anderen Wasserlebewesen umringt.  Die Kommunikation ist etwas schwierig.  Immerhin bist Du mit Robo über Funk verbunden.\n\n**Du:** Robo, verstehst du, was der große rote uns sagen will?\n\n**Robo:**  Ich glaube, wir sollen hier warten, auf … ah ja, auf diesen Kraken.\n\nTatsächlich kommt ein Krake geschwommen.  Natürlich hat er eine ganze Ladung Seetang dabei.  Und Tinte.  Ihr schaut euch an, was auf dem ersten Seetangblatt geschrieben steht.",
+ "Intro Aquarius 7: If the values of some continuous function §0 on a non-empty set §1 are bounded by\n a constant §2, then its value at the supremum of s is also bounded by c.":
+ "Während ihr euch über das letzte Seetangblatt beugt, kommen zwei junge Rochen vorbeigeschwommen und umrunden euch fröhlich.",
  "Intro Aquarius":
  "Ihr seid auf einem Planeten gelandet, der wie ein großes Freilichtbad wirkt. Die Landschaft ist flach und langweilig, bis auf die vielen künstlichen Wasserbecken.  Zu sehen ist niemand.\n\n**Nemo**:  Huhu.\n\nUnd Platsch. Ihr dreht Euch um und seht nur noch, wie im Pool hinter Euch ein großer Fisch davonschwimmt.  \n\n**Robo**:  Hilft alles nix.  Ich hol mal unsere Taucherausrüstung.",
  "Intorduce new prerequisite §0":
@@ -1199,8 +1223,8 @@
  "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen.",
  "Go back, keep §0 and try §1":
  "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst.",
- "Given assumptions that §0 and §1 are true, prove that §2 is true.\nYou cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\nis not called §5. Try §6":
- "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass §2 gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §4.\n\n**Du**: Du meinst wohl §5??\n\n**Robo**: Nein, §6. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
+ "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
+ "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §3.\n\n**Du**: Du meinst wohl §4??\n\n**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
  "Für §0 bedeutet §1, dass §2 in §3 enthalten ist.\nDu kannst das mit §4 zu §6 umschreiben.\n\n## §1 als Beweisziel\n\nMit §8 gibst du dir ein beliebiges Element §9 mit §10 vor (und musst dann §11 zeigen).\n\n## §1 als Annahme\n\nIst §12 eine Annahme, und ist ein Element §13 mit §14 gegeben, erhältst du mit §15 die Aussage §16.\n\nDu schreibst §17 als §18.",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":
@@ -1598,6 +1622,12 @@
  "**Babylonier**:  Und?  Gefällt es euch hier?\n\n**Robo**:  Ja, sehr.  Das ist wirklich alles beeindruckend, was ihr hier aufgebaut habt. Aber wir wollen euch nicht länger aufhalten.\n\n**Du**:  Ich denke auch, wir sollten langsam wieder aufbrechen.\n\nIhr verabschiedet euch und macht euch auf den Weg zurück zum Raumschiff.",
  "Conclusion Babylon L05": "**Babylonier**:  Das habt ihr gut gemacht.",
  "Conclusion Babylon L01": "**Babylonier**: Seht gut, das passt!",
+ "Conclusion Aquarius L07: Combining all three theorems, the bound §0 on §1 passes\nto its supremum: §2.":
+ "Die beiden Rochen umrunden euch schneller und schneller, als würden sie einander jagen.  Dann schwimmen sie plötzlich Richtung Beckenrand davon und schießen – huiii! – aus dem Becken heraus.\n\nDie älteren Fische wiegen bedenklich die Köpfe hin und her.  Aber der Krake meint, die sind immer so und wissen, was sie tun.  Werden schon wieder irgendwo im Wasser gelandet sein.",
+ "Conclusion Aquarius L06: Since the target set is closed and contains §0, it also contains\n§1.":
+ "Die Diskussion hat sich beruhigt.  Der Krake applaudiert mit allen acht Armen, und einige Fische winken.",
+ "Conclusion Aquarius L05: §0 turns a §1 between continuous functions into a\nclosed set.":
+ "**Du**:  Was sagt der Krake denn jetzt?\n\n**Robo**:  Keine Ahnung, er macht immer so viele Gesten auf einmal.",
  "Conclusion Aquarius L04: §0 bounded the supremum from above by §1, and\ntransitivity of §2 pushed it up to §3.":
  "Der Krake nickt.",
  "Conclusion Aquarius L03: §0 turned membership §1 into the bound\n§2, and transitivity of §3 finished the job.":

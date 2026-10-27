@@ -30,7 +30,7 @@ Statement (A B : Prop) (hA : A) (hB : B) : A ∧ B := by
     aber die nennen das hier so weil man die Aussage aus mehreren Teilen
     konstruieren kann."
   -/
-  Hint "Given assumptions that `{A}` and `{B}` are true, prove that `{A} und {B}` is true.
+  Hint "Given assumptions that `{A}` and `{B}` are true, prove that 'A and B' is true.
   You cannot just try `trivial`. Use `constructor` to divide goal into two. Remind that the tactic
   is not called `destructor`. Try `constructor`"
   constructor

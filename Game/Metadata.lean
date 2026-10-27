@@ -20,7 +20,7 @@ import Game.Metadata.DelaboratorNhdsWithin
   #check Finset.subset_iff   -- (c)
 
   Unfortunately, (a) is more similar to (b) than to (c).
-  mathlib PR #35416 tried to resolve this but faild.
+  mathlib PR #35416 tried to resolve this but failed.
 
   Current workaround:
 -/

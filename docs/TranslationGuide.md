@@ -27,7 +27,7 @@ Then, select `Translation` `>` `Source Text` `>` `Load From Another File` and se
 ```
 We recommend using the German file (in the `de` folder) in this step, as the English version plays around with the English meaning of the names of certain Lean tactics, names which aren't actually visible in the strings.  For example, the English version might say:  "Now you can §0 the lemma", where §0 is a placeholder for the tactic `apply`.  There's no way a machine can figure out how to translate this.
 
-Now import your glossary: Click `View` `>` `Show Terminology Tab`.  In the tab, click the litte `+` symbol next to search box, and then `Import Glossary From CSV File…`.  Select the file `.i18n/pg/Glossary.csv` that you created above.
+Now import your glossary: Click `View` `>` `Show Terminology Tab`.  In the tab, click the little `+` symbol next to search box, and then `Import Glossary From CSV File…`.  Select the file `.i18n/pg/Glossary.csv` that you created above.
 
 Next, select `Translation` `>` `Pretranslate`, tick `Use AI and machine translation`, and choose `GPT (OpenAI)` as translation tool.  Tick `Use glossary`.  Click on `Edit Custom Instructions …` and add the following prompt:
 
