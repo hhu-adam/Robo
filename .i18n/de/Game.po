@@ -3645,10 +3645,10 @@ msgstr "**Operationsleiter**: Ihr seid echt super!"
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C    \\\\\\\\ %(new line)
-#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\\\\\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F    \\\\\\\\ %(new line)
-#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\\\\\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
+#.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
+#.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
 #.   $$
@@ -7870,7 +7870,7 @@ msgstr ""
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
-#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
+#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}») x`
 #: Game/Levels/Vieta/L10_Surjective.lean:64
 msgid "Try §0 to rewrite §1 to §2"
 msgstr "**Robo**: Willst du vielleicht mit §0 die Annahme §1 zu §2 umschreiben?"
@@ -7984,7 +7984,7 @@ msgstr ""
 msgid "Try §0, §1 | §2"
 msgstr "**Robo**:  Ich würde tatsächlich wieder mit §0 anfangen. Und dann die üblichen Verdächtigen wie §1, §2 usw. nutzen."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -8377,7 +8377,7 @@ msgstr ""
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:26
 msgid "Try using §0"
 msgstr "**Robo**:  Vielleicht irgendwas mit §0?"

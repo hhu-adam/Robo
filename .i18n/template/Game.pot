@@ -5582,7 +5582,7 @@ msgstr ""
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
-#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
+#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}») x`
 #: Game/Levels/Vieta/L10_Surjective.lean:64
 msgid "Try §0 to rewrite §1 to §2"
 msgstr ""
@@ -5660,7 +5660,7 @@ msgstr ""
 msgid "Try §0, §1 | §2"
 msgstr ""
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -5956,7 +5956,7 @@ msgstr ""
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr ""
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:26
 msgid "Try using §0"
 msgstr ""
