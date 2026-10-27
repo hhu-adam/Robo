@@ -3317,7 +3317,7 @@ msgstr ""
 "\n"
 "**Robo**: Sieht so aus."
 
-#. §0: `apply congr_fun at h`
+#. §0: `apply congr_fun at «{h}»`
 #. §1: `rw [← comp_apply (f:= f)]`
 #. §2: `rw [← comp_apply]`
 #. §3: `(f:=f)`
@@ -5625,7 +5625,7 @@ msgstr "**Robo**:  Gut gemacht!  Ich glaube, wir sind hier bald durch …"
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**Du**: Eine Abbildung, die ein Linksinverses besitzt, ist injektiv.  Schonmal gehört, glaube ich …"
 
-#. §0: `congr_arg g`
+#. §0: `congr_arg «{g}»`
 #: Game.Levels.Mono.L09_InjOfHasLeftInv
 msgid "Try using §0"
 msgstr "**Robo**:  Vielleicht irgendwas mit §0?"
@@ -8927,7 +8927,7 @@ msgstr ""
 
 #. §0: `congr_fun`
 #. §1: `«{hs}»`
-#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}»)`
+#. §2: `∀ x, («{f}» ∘ «{g}») x = (succ ∘ «{f}») x`
 #: Game.Levels.Vieta.L10_Surjective
 msgid "Try §0 to rewrite §1 to §2"
 msgstr "**Robo**: Willst du vielleicht mit §0 die Annahme §1 zu §2 umschreiben?"
