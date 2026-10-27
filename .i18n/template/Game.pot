@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.35.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-24\n"
+"POT-Creation-Date: 2026-10-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -7547,7 +7547,7 @@ msgid "[Hint iscl]\n"
 "So the goal is to show that set of points where the continuous function §5 stays\n"
 "below the constant §6 is closed.\n"
 "Apply new theorem §7, which says that for two continuous functions\n"
-"§8 and §9, the set of points §10 where §11 is  closed in §12."
+"§8 and §9, the set of points §10 where §11 is closed in §12."
 msgstr ""
 
 #. §0: `f`
@@ -7604,38 +7604,45 @@ msgid "Intro Aquarius 7: If the values of some continuous function §0 on a non-
 " a constant §2, then its value at the supremum of s is also bounded by c."
 msgstr ""
 
-#. §0: `sSup s`
-#. §1: `s`
-#. §2: `csSup_mem_closure`
-#. §3: `have`
+#. §0: `s`
+#. §1: `f`
+#. §2: `c`
+#. §3: `sSup s`
+#. §4: `csSup_mem_closure`
+#. §5: `have`
+#. §6: ```
+#. have h := csSup_mem_closure hne hbd
+#. ```
 #: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:19
-msgid "[Hint cssupcl] For a nonempty set bounded above, §0 lies in the closure of\n"
-"§1.  That is §2.  Formulate this separately with §3."
+msgid "[Hint cssupcl] §0 is a set that is bounded above, and on which §1 only takes values at most §2.\n"
+"Need to show that f is also at most c at §3.\n"
+"Use new theorem §4. Formulate this separately with §5:\n"
+"§6"
 msgstr ""
 
 #. §0: `sSup s ∈ closure s`
 #. §1: `have`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:25
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:29
 msgid "[Hint 9xyh5] If this is the route you want to take,\n"
 "perhaps now establish §0 with §1."
 msgstr ""
 
 #. §0: `s`
-#. §1: `f x ≤ c`
+#. §1: `{x | f x ≤ c}`
 #. §2: `closure_minimal`
 #. §3: `isClosed_le`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:40
-msgid "The closure of §0 is contained in the closed sublevel set §1 — combine\n"
-"§2 with §3."
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:44
+msgid "[Hint l6a3i] The closure of §0 is contained in §1.\n"
+"Combine §2 with §3 as in the previous level."
 msgstr ""
 
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:43
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:47
 msgid "[Hint w5pc3] Good intermediate statement to try to prove."
 msgstr ""
 
-#. §0: `h2 h1`
+#. §0: `h2 h`
 #. §1: `sSup s`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:48
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
 msgid "Now §0 says that §1 lies in the sublevel set,\n"
 "which is exactly the goal."
 msgstr ""
@@ -7643,7 +7650,7 @@ msgstr ""
 #. §0: `f x ≤ c`
 #. §1: `s`
 #. §2: `f (sSup s) ≤ c`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:56
 msgid "Conclusion Aquarius L07: Combining all three theorems, the bound §0 on §1 passes\n"
 "to its supremum: §2."
 msgstr ""

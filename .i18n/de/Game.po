@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-22\n"
+"POT-Creation-Date: 2026-10-27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -9878,26 +9878,26 @@ msgstr ""
 #. §0: `Filter.mem_atTop`
 #. §1: `{x | b + 1 ≤ x}`
 #. §2: `atTop`
-#: Game/Levels/Cartan/L02.lean:25
+#: Game/Levels/Cartan/L02.lean:24
 msgid ""
 "[Hint pkzt] By §0, the ray §1 belongs to\n"
 "§2.  Show this first."
 msgstr ""
 
 #. §0: `Filter.mem_of_superset`
-#: Game/Levels/Cartan/L02.lean:30
-#: Game/Levels/Cartan/L02.lean:36
+#: Game/Levels/Cartan/L02.lean:29
+#: Game/Levels/Cartan/L02.lean:35
 #: Game/Levels/Cartan/L08.lean:26
 msgid "Second filter axiom says filter is upward closed (§0)."
 msgstr ""
 
-#: Game/Levels/Cartan/L02.lean:33
+#: Game/Levels/Cartan/L02.lean:32
 msgid "[Hint ht1zj] This statement is correct, but it won't help you."
 msgstr ""
 
 #. §0: `univ`
 #. §1: `Filter.univ_mem`
-#: Game/Levels/Cartan/L02.lean:63
+#: Game/Levels/Cartan/L02.lean:62
 msgid ""
 "Conclusion Cartan L02: Any other filter axioms?  Yes, filter is non-empty.\n"
 "Equivalently, it contains §0 (§1)."
@@ -10470,7 +10470,7 @@ msgstr "Der Krake nickt."
 
 #: Game/Levels/Aquarius/L05_IsClosed_le.lean:8
 msgid "Intro Aquarius L05"
-msgstr ""
+msgstr "Der Krake möchte euch das nächste Blatt reichen, aber mehrere kleinere Fische versuchen, ihn daran zu hindern.  Zwei große Fische intervenieren, und es kommt zu einer längeren Diskussion, die Robo genauso wenig entschlüsseln kann wie du.  Schließlich erhaltet ihr das Blatt doch noch."
 
 #. §0: `Continuous f`
 #. §1: `f`
@@ -10493,8 +10493,15 @@ msgid ""
 "So the goal is to show that set of points where the continuous function §5 stays\n"
 "below the constant §6 is closed.\n"
 "Apply new theorem §7, which says that for two continuous functions\n"
-"§8 and §9, the set of points §10 where §11 is  closed in §12."
+"§8 and §9, the set of points §10 where §11 is closed in §12."
 msgstr ""
+"**Du**:  Ich rate mal wieder … §0 heißt: §1 ist stetig.  Und §2 bedeutet:  diese Menge ist abgeschlossen.\n"
+"\n"
+"**Robo**:  Ja.  Sieht gar nicht so kontrovers aus. \n"
+"\n"
+"Der Krake versucht, Robo etwas zu erklären.\n"
+"\n"
+"**Robo**:  Ich glaube, er will sagen, einige jüngere Beckenbewohner sind politisch empfindlich und verwechseln abgeschlossen mit eingeschlossen.  Jedenfalls … du könntest das mit §7 angehen.  Der Satz sagt allgemeiner, dass für zwei stetige Funktionen §8 und §9 die Menge der Punkte, an denen §11 gilt, in §12 abgeschlossen ist."
 
 #. §0: `f`
 #. §1: `g`
@@ -10507,7 +10514,7 @@ msgid ""
 "to which we applied §2.\n"
 "Use §3 or new tactic §4 to show this for f.\n"
 "Use fun_prop to show this for the constant function."
-msgstr ""
+msgstr "**Robo**:  Super!  Jetzt musst du noch zeigen, dass die beiden Funktionen, die hier vorkommen, tatsächlich stetig sind.  Für §0 ist das eine Annahme.  Und für die konstante Funktion kannst du das mit §4 zeigen.  Vielleicht funktioniert §4 sogar in beiden Fällen."
 
 #. §0: `isClosed_le`
 #. §1: `≤`
@@ -10516,10 +10523,13 @@ msgid ""
 "Conclusion Aquarius L05: §0 turns a §1 between continuous functions into a\n"
 "closed set."
 msgstr ""
+"**Du**:  Was sagt der Krake denn jetzt?\n"
+"\n"
+"**Robo**:  Keine Ahnung, er macht immer so viele Gesten auf einmal."
 
 #: Game/Levels/Aquarius/L06_Closure_minimal.lean:8
 msgid "Intro Aquarius L06"
-msgstr ""
+msgstr "Ein Krakenarm händigt ein weiteres Blatt aus.  Die anderen Arme diskutieren immer noch mit einigen Fischen."
 
 #. §0: `closure s`
 #. §1: `s`
@@ -10530,6 +10540,9 @@ msgid ""
 "[Hint clmin] §0 is the smallest closed set containing §1.  Apply\n"
 "§2; it asks for §3 and that the target set is closed."
 msgstr ""
+"**Du**:  §0 ist der topologische Abschluss der Menge §1?\n"
+"\n"
+"**Robo**:  Klar.  Es ist die *kleinste* abgeschlossene Menge, die §1 enthält.  Diese Eigenschaft heißt auf Leansch §2."
 
 #. §0: `f x ≤ c`
 #. §1: `isClosed_le`
@@ -10537,7 +10550,7 @@ msgstr ""
 msgid ""
 "The remaining goal is that the sublevel set §0 is closed —\n"
 "that is §1."
-msgstr ""
+msgstr "**Robo**:  Hier wirst du wohl wieder §1 verwenden müssen."
 
 #. §0: `s`
 #. §1: `closure s`
@@ -10545,7 +10558,7 @@ msgstr ""
 msgid ""
 "Conclusion Aquarius L06: Since the target set is closed and contains §0, it also contains\n"
 "§1."
-msgstr ""
+msgstr "Die Diskussion hat sich beruhigt.  Der Krake applaudiert mit allen acht Armen, und einige Fische winken."
 
 #. §0: `f`
 #. §1: `s`
@@ -10554,56 +10567,76 @@ msgstr ""
 msgid ""
 "Intro Aquarius 7: If the values of some continuous function §0 on a non-empty set §1 are bounded by\n"
 " a constant §2, then its value at the supremum of s is also bounded by c."
-msgstr ""
+msgstr "Während ihr euch über das letzte Seetangblatt beugt, kommen zwei junge Rochen vorbeigeschwommen und umrunden euch fröhlich."
 
-#. §0: `sSup s`
-#. §1: `s`
-#. §2: `csSup_mem_closure`
-#. §3: `have`
+#. §0: `s`
+#. §1: `f`
+#. §2: `c`
+#. §3: `sSup s`
+#. §4: `csSup_mem_closure`
+#. §5: `have`
+#. §6: ```
+#. have h := csSup_mem_closure hne hbd
+#. ```
 #: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:19
 msgid ""
-"[Hint cssupcl] For a nonempty set bounded above, §0 lies in the closure of\n"
-"§1.  That is §2.  Formulate this separately with §3."
+"[Hint cssupcl] §0 is a set that is bounded above, and on which §1 only takes values at most §2.\n"
+"Need to show that f is also at most c at §3.\n"
+"Use new theorem §4. Formulate this separately with §5:\n"
+"§6"
 msgstr ""
+"**Du**:  Also §0 ist hier eine Menge, die nach oben beschränkt ist, und auf der §1 nur Werte kleiner-gleich §2 annimmt?\n"
+"\n"
+"**Robo**:  Richtig.  Und wir sollen zeigen, dass §1 dann auch auf dem Supremum §3 nicht über §2 hinausgeht. \n"
+"Warte, der Krake sagt:\n"
+"\n"
+"…  das Wasser … ist am Rand … auch nicht höher … als in der Mitte.  \n"
+"\n"
+"Naja.  Das war jetzt nur mittel-hilfreich.  Aber noch etwas … §4.  Ja, das können wir vermutlich gut benutzen.  \n"
+"Das ist der Leansche Ausdruck für „das Supremum liegt im Abschluss“.  Hol dir die Aussage am besten sofort mit §5 in den Kontext:\n"
+"§6"
 
 #. §0: `sSup s ∈ closure s`
 #. §1: `have`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:25
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:29
 msgid ""
 "[Hint 9xyh5] If this is the route you want to take,\n"
 "perhaps now establish §0 with §1."
-msgstr ""
+msgstr "**Robo**:  Ah.  Auch keine schlechte Idee.  Dann würde ich jetzt aber trotzdem als Nächstes §0 mit §1 einführen."
 
 #. §0: `s`
-#. §1: `f x ≤ c`
+#. §1: `{x | f x ≤ c}`
 #. §2: `closure_minimal`
 #. §3: `isClosed_le`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:40
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:44
 msgid ""
-"The closure of §0 is contained in the closed sublevel set §1 — combine\n"
-"§2 with §3."
-msgstr ""
+"[Hint l6a3i] The closure of §0 is contained in §1.\n"
+"Combine §2 with §3 as in the previous level."
+msgstr "**Robo**:  Ich würde jetzt als Nächstes wieder zeigen, dass der Abschluss von §0 auch noch in §1 enthalten ist – so wie eben, mit §2 und §3."
 
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:43
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:47
 msgid "[Hint w5pc3] Good intermediate statement to try to prove."
-msgstr ""
+msgstr "**Robo**:  Sieht doch gut aus."
 
-#. §0: `h2 h1`
+#. §0: `h2 h`
 #. §1: `sSup s`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:48
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
 msgid ""
 "Now §0 says that §1 lies in the sublevel set,\n"
 "which is exactly the goal."
-msgstr ""
+msgstr "**Robo**:  Fast fertig, oder?"
 
 #. §0: `f x ≤ c`
 #. §1: `s`
 #. §2: `f (sSup s) ≤ c`
-#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:56
 msgid ""
 "Conclusion Aquarius L07: Combining all three theorems, the bound §0 on §1 passes\n"
 "to its supremum: §2."
 msgstr ""
+"Die beiden Rochen umrunden euch schneller und schneller, als würden sie einander jagen.  Dann schwimmen sie plötzlich Richtung Beckenrand davon und schießen – huiii! – aus dem Becken heraus.\n"
+"\n"
+"Die älteren Fische wiegen bedenklich die Köpfe hin und her.  Aber der Krake meint, die sind immer so und wissen, was sie tun.  Werden schon wieder irgendwo im Wasser gelandet sein."
 
 #: Game/Levels/Aquarius.lean:17
 msgid "Aquarius"
@@ -11535,14 +11568,6 @@ msgstr "**Robo**: Jetzt kannst du diese mit §0 benutzen."
 msgid ""
 "[Hint cv7qa] The hypothesis §0 is almost the goal, i.e. the two functions only differ\n"
 "in §1 versus §2, and they are the same pointwise by §3."
-msgstr ""
-
-#. §0: `funext`
-#. §1: `h`
-#: Game/Levels/Slope/L11.lean:15
-msgid ""
-"[Hint cv2mk] What remains is an equation of functions. Compare\n"
-"them pointwise with §0, then use §1."
 msgstr ""
 
 #. §0: `0`

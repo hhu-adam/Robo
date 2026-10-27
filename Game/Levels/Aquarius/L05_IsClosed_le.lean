@@ -19,7 +19,7 @@ Statement {f : ℝ → ℝ} {c : ℝ} (hf : Continuous f) : IsClosed {x | f x �
     So the goal is to show that set of points where the continuous function `f` stays
     below the constant `c` is closed.
     Apply new theorem `isClosed_le`, which says that for two continuous functions
-    $f$ and $g$, the set of points `b` where $f (b) ≤ g (b)$ is  closed in $\\mathbb\{R}$."
+    $f$ and $g$, the set of points `b` where $f (b) ≤ g (b)$ is closed in $\\mathbb\{R}$."
   apply isClosed_le
   Hint "The remaining two goals are the continuity of the functions `f` and `g`
     to which we applied `isClosed_le`.
