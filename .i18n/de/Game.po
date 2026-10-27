@@ -2881,7 +2881,7 @@ msgstr ""
 #: Game/Levels/Logo/L01_Tauto.lean:21
 msgid "Intro Logo L01"
 msgstr ""
-"Gerade seid Ihr auf dem Planeten von Königin Logisinde gelandet. Sie kommt ohne Umschweife zum Punkt:\n"
+"Gerade seid ihr auf dem Planeten von Königin Logisinde gelandet. Sie kommt ohne Umschweife zum Punkt:\n"
 "\n"
 "**Logisinde**: Werte Wesen aus fremden Welten, willkommen im Formaloversum!  Gestatten Sie mir nur eine Frage. Warum gilt …\n"
 "\n"
@@ -2916,9 +2916,9 @@ msgstr ""
 msgid "Conclusion Logo L01: Remind that §0 cannot be used"
 msgstr ""
 "**Logisinde** *(etwas konsterniert)*: Ja, das ist streng genommen richtig. \n"
-"Aber glaubt bloß nicht, dass Ihr damit auf *diesem* Planeten viel weiterkommt! \n"
+"Aber glaubt bloß nicht, dass ihr damit auf *diesem* Planeten viel weiterkommt! \n"
 "Meine Untertanen verstehen §0 nicht. \n"
-"Da müsst Ihr Euch schon etwas mehr anstrengen."
+"Da müsst ihr euch schon etwas mehr anstrengen."
 
 #. §0: $42 = 42$
 #: Game/Levels/Logo/L02_Rfl.lean:20
@@ -2980,7 +2980,7 @@ msgstr ""
 
 #: Game/Levels/Logo/L03_Assumption.lean:52
 msgid "Conclusion Logo L03"
-msgstr "**Untertan**: Ja richtig! Wenn Ihr nur wüsstet, was ich mir an dieser Frage schon den Kopf zerbrochen habe!"
+msgstr "**Untertan**: Ja richtig! Wenn ihr nur wüsstet, was ich mir an dieser Frage schon den Kopf zerbrochen habe!"
 
 #: Game/Levels/Logo/L04_Assumption.lean:14
 msgid "Intro Logo L04"
@@ -3031,7 +3031,7 @@ msgstr ""
 #: Game/Levels/Logo/L05_True.lean:40
 msgid "Conclusion Logo L05: §0 cannot be used every time. §1 works only in special cases"
 msgstr ""
-"**Schelm**: Wollte nur mal sehen, dass Ihr nicht auf den Kopf gefallen seid …\n"
+"**Schelm**: Wollte nur mal sehen, dass ihr nicht auf den Kopf gefallen seid …\n"
 "\n"
 "**Du** *(zu Robo)*: Können wir nicht einfach immer dieses §0 verwenden?\n"
 "\n"
@@ -3471,7 +3471,7 @@ msgstr ""
 "\n"
 "Zum Glück hat Robo mit dir das Universum gewechselt.\n"
 "Robo, das ist dein kleiner SmartElf.\n"
-"Robo ist zwar auch nicht die mathematische Leuchte, die du Dir in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.\n"
+"Robo ist zwar auch nicht die mathematische Leuchte, die du dir in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.\n"
 "Und das ist Gold wert."
 
 #: Game/Levels/Implis/L01_Intro.lean:14
@@ -3522,16 +3522,16 @@ msgstr ""
 "\n"
 "Er geht zu einer Schalttafel und ein paar Knöpfe. Irgendwo setzt sich lautstark ein Förderband in Bewegung.\n"
 "\n"
-"**Operationsleiter**: Habt Ihr vielleicht noch ein paar Minuten?"
+"**Operationsleiter**: Habt ihr vielleicht noch ein paar Minuten?"
 
 #: Game/Levels/Implis/L02_Revert.lean:19
 msgid "Intro Implis L02"
 msgstr ""
 "Der Operationsleiter holt aus einem Container einen Stapel Papier hervor.\n"
 "\n"
-"**Operationsleiter**: Hier hat sich echt einiges angesammelt. Wäre echt super, wenn Ihr mir noch ein bisschen helfen könntet.\n"
+"**Operationsleiter**: Hier hat sich echt einiges angesammelt. Wäre echt super, wenn ihr mir noch ein bisschen helfen könntet.\n"
 "\n"
-"Er übergibt Euch das oberste Blatt."
+"Er übergibt euch das oberste Blatt."
 
 #. §0: `mopo`
 #. §1: `mopo`
@@ -3566,7 +3566,7 @@ msgstr ""
 
 #: Game/Levels/Implis/L02_Revert.lean:51
 msgid "Conclusion Implis L02"
-msgstr "Der Operationsleiter nimmt erfreut Eure Lösung entgegen, und greift zum Telefon."
+msgstr "Der Operationsleiter nimmt erfreut eure Lösung entgegen, und greift zum Telefon."
 
 #. §0: `revert`
 #. §1: `revert`
@@ -3575,9 +3575,9 @@ msgid "Intro Implis L03: This Level does not know §0. Try proof without §1"
 msgstr ""
 "Leider läuft das Telefonat nicht so gut. Er legt wieder auf und schüttelt mit dem Kopf.\n"
 "\n"
-"**Operationsleiter**: Der Kollege auf der anderen Seite des Mondes versteht kein §0. Oder er tut zumindest so. Habt Ihr noch eine andere Idee?\n"
+"**Operationsleiter**: Der Kollege auf der anderen Seite des Mondes versteht kein §0. Oder er tut zumindest so. Habt ihr noch eine andere Idee?\n"
 "\n"
-"Er zieht eine Linie unter Euren Beweis, ergänzt ein durchgestrichenes ~§1~, und legt Euch das Blatt ein zweites Mal vor."
+"Er zieht eine Linie unter euren Beweis, ergänzt ein durchgestrichenes ~§1~, und legt euch das Blatt ein zweites Mal vor."
 
 #. §0: `apply hAB at h`
 #: Game/Levels/Implis/L03_Apply.lean:28
@@ -3595,7 +3595,7 @@ msgid ""
 "§4 has to be proven."
 msgstr ""
 "**Robo**: Ich sagte §0. Aber einfach nur §1 funktioniert offenbar auch.\n"
-"  Jetzt hast Du sozusagen §2 auf das Beweisziel §3 angewendet, und musst nur noch §4 beweisen."
+"  Jetzt hast du sozusagen §2 auf das Beweisziel §3 angewendet, und musst nur noch §4 beweisen."
 
 #: Game/Levels/Implis/L03_Apply.lean:42
 msgid "This should seem obvious now"
@@ -3658,7 +3658,7 @@ msgid ""
 "  §0"
 msgstr ""
 "Die nächste Seite sieht ein bisschen komplizierter aus.\n"
-"Damit Ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.\n"
+"Damit ihr nicht die Übersicht verliert, fasst Robo sofort die verschiedenen Implikationen in einem Diagramm zusammen.\n"
 "§0"
 
 #. §0: $A \\Rightarrow I$
@@ -3713,7 +3713,7 @@ msgstr ""
 
 #: Game/Levels/Implis/L06_Iff.lean:17
 msgid "Intro Implis L06"
-msgstr "**Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen konnten. Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von solchen Doppelbändern abgeraten wird. Aber vielleicht sind sie ja unter bestimmten Voraussetzungen doch sicher? Was meint Ihr zu diesem Fall?"
+msgstr "**Operationsleiter**: Wir hatten auch mal ein paar Förderbänder, die in beide Richtungen laufen konnten. Die hatte ich vorsichtshalber alle abgestellt, weil in den neusten Handbüchern von solchen Doppelbändern abgeraten wird. Aber vielleicht sind sie ja unter bestimmten Voraussetzungen doch sicher? Was meint ihr zu diesem Fall?"
 
 #. §0: `A ↔ B`
 #. §1: $A \\iff B$
@@ -3817,12 +3817,12 @@ msgstr ""
 "\n"
 "  **Robo**: Ja, anders herum wär's besser gewesen. Aber wenn du jetzt einfach weitermachst, bis du so etwas wie §0 erhältst, kann §1 das beweisen.\n"
 "\n"
-"  **Robo:** Da fällt mir ein, §2 wendet ohnehin auch versuchsweise §3 an.\n"
+"  **Robo**: Da fällt mir ein, §2 wendet ohnehin auch versuchsweise §3 an.\n"
 "  Das heißt, du musst §4 nicht einmal ausschreiben."
 
 #: Game/Levels/Implis/L08_Rw.lean:57
 msgid "Conclusion Implis L08"
-msgstr "**Operationsleiter**: Wenn Ihr so weitermacht, dann kommen wir ja durch den ganzen Packen durch!"
+msgstr "**Operationsleiter**: Wenn ihr so weitermacht, dann kommen wir ja durch den ganzen Packen durch!"
 
 #. §0: `rw`
 #. §1: `trans`
@@ -3839,7 +3839,7 @@ msgid ""
 msgstr ""
 "**Du**: Irgendwie fühlen sich diese §0 an, als würde man von hinten durch den Bauch argumentieren.  Geht das nicht auch irgendwie geradeaus, oder denken alle hier um die Ecke?\n"
 "\n"
-"**Robo**:  Vielleicht würde dir §1 besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  §2 Schritt für Schritt abarbeiten: als erstes führst Du mit §3 den Zwischenschritt §4 ein, dann mit §5 den nächsten Zwischenschritt."
+"**Robo**:  Vielleicht würde dir §1 besser gefallen.  Damit könntest du deine Kette von Äquivalenzen  §2 Schritt für Schritt abarbeiten: als erstes führst du mit §3 den Zwischenschritt §4 ein, dann mit §5 den nächsten Zwischenschritt."
 
 #: Game/Levels/Implis/L09_Trans.lean:38
 msgid "Conclusion Implis L09"
@@ -3883,7 +3883,7 @@ msgstr ""
 #. §0: `apply g`
 #: Game/Levels/Implis/L10_Iff.lean:42
 msgid "[Implis.L10] Hint 1: §0 is also a possible direction"
-msgstr "**Robo**: So kannst Du natürlich auch anfangen."
+msgstr "**Robo**: So kannst du natürlich auch anfangen."
 
 #: Game/Levels/Implis/L10_Iff.lean:58
 msgid "Conclusion Implis L10"
@@ -3903,7 +3903,7 @@ msgstr ""
 "\n"
 "Er holt tief Luft und seuft.\n"
 "\n"
-"**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint Ihr, Ihr schafft das?"
+"**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint ihr, ihr schafft das?"
 
 #: Game/Levels/Implis/L11_Iff.lean:25
 msgid "Start with implication"
@@ -3983,7 +3983,7 @@ msgstr ""
 "**Operationsleiter**: Wieder etwas für den Kollegen …. Und er wollte wieder einen Beweise ohne §0. Ich sehe hier auch, dass ich mir schon einmal etwas hierzu notiert hatte. Richtig, es gibt da dieses Lemma:\n"
 "§1\n"
 "\n"
-"**Operationsleiter**: Schafft Ihr das damit?"
+"**Operationsleiter**: Schafft ihr das damit?"
 
 #. §0: `not_not`
 #. §1: `↔`
@@ -4053,7 +4053,7 @@ msgid ""
 "§10 (changes §11 to §12 and §13), §14 (rewrite goal with §15), §16 (rewrite\n"
 "assumption §17 using §18) and §19 (introduce cases §20 and §21)"
 msgstr ""
-"**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem. Das habe ich von meinem Vorgänger geerbt. Er hat behauptet, wenn wir das lösen können, dann läuft hier wieder alles. Aber es sah mir immer viel zu schwierig aus, um es überhaupt zu versuchen. Wollt Ihr es einmal probieren?\n"
+"**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem. Das habe ich von meinem Vorgänger geerbt. Er hat behauptet, wenn wir das lösen können, dann läuft hier wieder alles. Aber es sah mir immer viel zu schwierig aus, um es überhaupt zu versuchen. Wollt ihr es einmal probieren?\n"
 "\n"
 "**Du**: Klar, zeig her! Robo, kannst du mir vielleicht auch noch einmal so eine nette Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten gelernt habe?\n"
 "\n"
@@ -4113,11 +4113,11 @@ msgstr "**Robo**: Ich würde mal die Annahme §0 mit §1 aufteilen."
 #: Game/Levels/Implis/L14_Summary.lean:117
 msgid "Conclusion Implis L14"
 msgstr ""
-"**Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich Euch auch gar nicht länger aufhalten. Ihr wollt bestimmt weiter zum Planeten Quantus, oder?\n"
+"**Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich euch auch gar nicht länger aufhalten. Ihr wollt bestimmt weiter zum Planeten Quantus, oder?\n"
 "\n"
 "**Du**: Ehm, vielleicht …\n"
 "\n"
-"**Operationsleiter**: Dann habe ich noch eine letzte Bitte. Ich habe hier noch ein Päckchen für die Königin von Quantus! Auch schon von meinem Vorgänger geerbt. Die Post will es nicht annehmen, weil ich die Adresse nicht weiß. Könntet Ihr es vielleicht zu ihr mitnehmen?\n"
+"**Operationsleiter**: Dann habe ich noch eine letzte Bitte. Ich habe hier noch ein Päckchen für die Königin von Quantus! Auch schon von meinem Vorgänger geerbt. Die Post will es nicht annehmen, weil ich die Adresse nicht weiß. Könntet ihr es vielleicht zu ihr mitnehmen?\n"
 "\n"
 "**Du**: Klar! Robo, halt mal.\n"
 "\n"
@@ -4141,9 +4141,9 @@ msgstr ""
 "\n"
 "Und damit leitet Robo den Landeanflug ein.\n"
 "\n"
-"Implis scheint ein riesiger Tagebau zu sein. Überall verlaufen Förderbänder, kreuz und quer, aber die meisten stehen still. Ein schüchterner Operationsleiter erwartet Euch bereits.\n"
+"Implis scheint ein riesiger Tagebau zu sein. Überall verlaufen Förderbänder, kreuz und quer, aber die meisten stehen still. Ein schüchterner Operationsleiter erwartet euch bereits.\n"
 "\n"
-"**Operationsleiter**: Ihr kommt mir gerade recht! Ich habe schon gehört. Echte Mathematiker! Wisst Ihr, wir fördern hier Wahrheitswerte. Und dabei muss man höllisch aufpassen. Ein Fehler, und alles bricht zusammen. Aber ich bin sehr vorsichtig. Ich sage immer: Lieber Stillstand als Untergang!"
+"**Operationsleiter**: Ihr kommt mir gerade recht! Ich habe schon gehört. Echte Mathematiker! Wisst ihr, wir fördern hier Wahrheitswerte. Und dabei muss man höllisch aufpassen. Ein Fehler, und alles bricht zusammen. Aber ich bin sehr vorsichtig. Ich sage immer: Lieber Stillstand als Untergang!"
 
 #: Game/Levels/Quantus/L01_NonemptyUse.lean:9
 msgid "Intro Quantus L01"
@@ -4420,7 +4420,7 @@ msgstr ""
 
 #: Game/Levels/Quantus/L07_Forall.lean:9
 msgid "Intro Quantus L07"
-msgstr "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu Euch."
+msgstr "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu euch."
 
 #. §0: `∀`
 #. §1: `\\forall`
@@ -4574,7 +4574,7 @@ msgstr ""
 "\n"
 "**Alle**: Es gibt unter uns eine Person, wenn die redet, dann reden alle!\n"
 "\n"
-"Du kratzt Dich am Kopf.\n"
+"Du kratzt dich am Kopf.\n"
 "\n"
 "**Robo**: Ist doch klar. Das ist auf jedem bewohnten Planeten so!\n"
 "\n"
@@ -4689,17 +4689,17 @@ msgstr "Quantus"
 #: Game/Levels/Quantus.lean:59
 msgid "Intro Quantus"
 msgstr ""
-"Auf Quantus erwartet Euch bereits eine große Ansammlung von Formalosopheninnen. Sie reden alle wild durcheinander und Ihr habt Probleme, Euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n"
+"Auf Quantus erwartet euch bereits eine große Ansammlung von Formalosopheninnen. Sie reden alle wild durcheinander und ihr habt Probleme, euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n"
 "\n"
-"**Du**: Wir haben einen Brief für Eure Königin. Könntet Ihr uns zu Eurer Königin führen?\n"
+"**Du**: Wir haben einen Brief für eure Königin. Könntet ihr uns zu eurer Königin führen?\n"
 "\n"
 "**Alle** *(im Chor)*: Wir sind schon alle hier!\n"
 "\n"
-"**Du**: Okay. Und wer von Euch ist die Königin?\n"
+"**Du**: Okay. Und wer von euch ist die Königin?\n"
 "\n"
 "Nun herrscht betretenes Schweigen. Alle zucken mit den Schultern.\n"
 "\n"
-"**Du**: Habt Ihr überhaupt eine Königin?\n"
+"**Du**: Habt ihr überhaupt eine Königin?\n"
 "\n"
 "**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königin, wir haben eine Königin.\n"
 "\n"
@@ -4713,7 +4713,7 @@ msgstr ""
 "\n"
 "**Du**: Dann schlage ich vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben wir es ja insbesondere der Königin übergeben.\n"
 "\n"
-"**Du** *(in die Menge)*: Wir haben Euch ein Päckchen von Implis gebracht. Hier, das ist für Euch.\n"
+"**Du** *(in die Menge)*: Wir haben euch ein Päckchen von Implis gebracht. Hier, das ist für euch.\n"
 "\n"
 "Robo wirft es in die Menge, und die Formalosophinnen reißen es auf. Tatsächlich befindet sich darin nur eine einziges Stück Papier. Nach wenigen Minuten liegt es wieder bei euch. Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht."
 
@@ -4899,7 +4899,7 @@ msgstr ""
 
 #: Game/Levels/Spinoza/L01_Have.lean:14
 msgid "Intro Spinoza L01"
-msgstr "**Benedictus**: Hier, schaut mal. Das habe ich für Euch vorbereitet."
+msgstr "**Benedictus**: Hier, schaut mal. Das habe ich für euch vorbereitet."
 
 #. §0: `∧`
 #: Game/Levels/Spinoza/L01_Have.lean:18
@@ -4943,7 +4943,7 @@ msgstr "**Benedictus**: Das sieht gut aus!"
 
 #: Game/Levels/Spinoza/L02_Suffices.lean:17
 msgid "Intro Spinoza L02"
-msgstr "**Benedictus**: Ihr hättet natürlich auch erst das Hauptresultat und dann das Zwischenresultat beweisen können. Das könnt Ihr ja mal an dieser Aufgabe probieren, die ist ganz ähnlich."
+msgstr "**Benedictus**: Ihr hättet natürlich auch erst das Hauptresultat und dann das Zwischenresultat beweisen können. Das könnt ihr ja mal an dieser Aufgabe probieren, die ist ganz ähnlich."
 
 #. §0: `have`
 #. §1: `suffices`
@@ -4974,7 +4974,7 @@ msgstr "**Robo**: Und hier beweist du das Zwischenresultat."
 #. §1: `suffices`
 #: Game/Levels/Spinoza/L02_Suffices.lean:50
 msgid "Conclusion Spinoza L02: The use of §0 or §1 is up to personal preference."
-msgstr "**Benedictus**: Genau so meinte ich das. Ob Ihr nun in Zukunft §0 oder §1 verwendet, ist reine Geschmacksfrage. Hauptsache, Ihr wisst, wie Ihr entfernte Ziele in kleinen Schritte erreicht."
+msgstr "**Benedictus**: Genau so meinte ich das. Ob ihr nun in Zukunft §0 oder §1 verwendet, ist reine Geschmacksfrage. Hauptsache, ihr wisst, wie ihr entfernte Ziele in kleinen Schritte erreicht."
 
 #: Game/Levels/Spinoza/L03_ByContra.lean:9
 msgid "Intro Spinoza L03"
@@ -5017,12 +5017,12 @@ msgstr "**Robo**: Und jetzt musst du nur noch das Zwischenresultat herleiten, da
 
 #: Game/Levels/Spinoza/L03_ByContra.lean:53
 msgid "Conclusion Spinoza L03"
-msgstr "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
+msgstr "**Benedictus**: Ich sehe schon, ihr lernt schnell!"
 
 #. §0: `not_imp_not`
 #: Game/Levels/Spinoza/L04_ByContra.lean:18
 msgid "Intro Spinoza L04: introduce contraposition equivalence with §0"
-msgstr "**Benedictus**: Ich habe noch eine schöne Frage zu ungeraden Quadraten für Euch. Aber vorher beweist Ihr besser noch diese Äquivalenz hier. Ich glaube, die hat sogar bei Euch einen Namen: *Kontrapositionsäquivalenz*, oder so etwas. Auf Leansch nennen wir die Äquivalenz einfach §0. Ist doch viel einleuchtender, oder?"
+msgstr "**Benedictus**: Ich habe noch eine schöne Frage zu ungeraden Quadraten für euch. Aber vorher beweist ihr besser noch diese Äquivalenz hier. Ich glaube, die hat sogar bei euch einen Namen: *Kontrapositionsäquivalenz*, oder so etwas. Auf Leansch nennen wir die Äquivalenz einfach §0. Ist doch viel einleuchtender, oder?"
 
 #. §0: $A ⇒ B$
 #. §1: $¬B ⇒ ¬A$
@@ -5096,20 +5096,20 @@ msgstr "**Du**: Das sieht schon ganz gut aus. Jetzt kann ich tatsächlich das al
 
 #: Game/Levels/Spinoza/L05_Contrapose.lean:60
 msgid "Conclusion Spinoza L05"
-msgstr "**Benedictus**: Hervorragend! Ich glaube, damit seid Ihr jetzt ganz gut gewappnet."
+msgstr "**Benedictus**: Hervorragend! Ich glaube, damit seid ihr jetzt ganz gut gewappnet."
 
 #: Game/Levels/Spinoza/L06_Summary.lean:20
 msgid "Intro Spinoza L06"
 msgstr ""
 "**Du**: Aber hätten wir die letzte Aufgabe nicht genauso gut per Widerspruch beweisen können?\n"
 "\n"
-"**Benedictus**: Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber Ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe Sie Euch mit auf die Reise. Aber nun seht zu, dass Ihr weiterkommt!"
+"**Benedictus**: Klar. Ich dachte nur, ein zweiter Widerspruchsbeweis wäre langweilig. Aber ihr könnt die Aufgabe gern noch einmal probieren. Hier, ich gebe sie euch mit auf die Reise. Aber nun seht zu, dass ihr weiterkommt!"
 
 #. §0: `by_contra g`
 #: Game/Levels/Spinoza/L06_Summary.lean:32
 msgid "This time start with §0"
 msgstr ""
-"Sobald Ihr Euch sicher vom Gravitationsfeld des Asteroiden befreit habt, beugt Ihr Euch wieder über die Aufgabe.\n"
+"Sobald ihr euch sicher vom Gravitationsfeld des Asteroiden befreit habt, beugt ihr euch wieder über die Aufgabe.\n"
 "\n"
 "**Robo**: Okay, also diesmal fangen wir mit §0 an!"
 
@@ -5160,17 +5160,17 @@ msgstr ""
 "\n"
 "Eine halbe Stunde später seid ihr gelandet. Sehr einladend wirkt Spinoza nicht. Seine gesamte Oberfläche ist von feinem, rötlichen Sand bedeckt. Ein einziger, einsamer Formalosoph, der sich als Benedictus vorstellt, erwartet euch.\n"
 "\n"
-"**Benedictus**: Schön, dass Ihr gekommen seid! Ich habe schon auf Euch gewartet!\n"
+"**Benedictus**: Schön, dass ihr gekommen seid! Ich habe schon auf euch gewartet!\n"
 "\n"
 "**Du**: Hast du auch ein paar dringende Fragen … ?\n"
 "\n"
-"**Benedictus**: Ach nein, aus dem Alter bin ich heraus. Aber ich kann mir denken, wie es Euch auf Implis und Quantus ergangen ist. Und glaubt, mir auf den anderen Planeten wird es nicht viel besser. Aber ich kann Euch vielleicht ein bisschen vorbereiten.\n"
+"**Benedictus**: Ach nein, aus dem Alter bin ich heraus. Aber ich kann mir denken, wie es euch auf Implis und Quantus ergangen ist. Und glaubt, mir auf den anderen Planeten wird es nicht viel besser. Aber ich kann euch vielleicht ein bisschen vorbereiten.\n"
 "\n"
 "**Du**: Können wir nicht einfach hier bleiben und uns ein wenig ausruhen?\n"
 "\n"
 "Benedictus schüttelt den Kopf.\n"
 "\n"
-"**Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und Ihr müsst bald wieder weiter, sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei."
+"**Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und ihr müsst bald wieder weiter, sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei."
 
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:8
 msgid "Intro Babylon L01"
@@ -5193,7 +5193,7 @@ msgstr ""
 "\n"
 "**Babylonier**: Und, könnt ihr das beweisen?\n"
 "\n"
-"**Robo** *(zu Dir)*: Ich würde als erstes §3 versuchen. Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
+"**Robo** *(zu dir)*: Ich würde als erstes §3 versuchen. Das ist wirklich eine starke Taktik, die viele Terme vereinfacht."
 
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:43
 msgid "Conclusion Babylon L01"
@@ -5931,7 +5931,7 @@ msgstr ""
 "**Cantor**: Ihr müsst natürlich irgendwie die Surjektivität von §0 ausnutzen.\n"
 "Aber ich hatte euch ja eben schon verraten, von welcher Abbildung §1 ihr ein Urbild betrachten müsst …\n"
 "\n"
-"**Robo** *(zu Dir)*: Mmm … verstehst du, was er meint? Natürlich könntest du jetzt eine Abbildung definieren mit\n"
+"**Robo** *(zu dir)*: Mmm … verstehst du, was er meint? Natürlich könntest du jetzt eine Abbildung definieren mit\n"
 "§2\n"
 "und dann von dieser Abbildung §3 ein Urbild betrachten.\n"
 "Aber ich bin gerade etwas verloren."
@@ -6545,7 +6545,7 @@ msgstr ""
 "**Du**: Ja, so könnte das gehen.  Ich schreibe §1 als Linearkombination von Basismatrizen, nutze dann die Linearität, und zuletzt, dass §2 auf den §3 mit §4 verschwindet.\n"
 "Vermutlich sollte ich also als erstes das §5 in §6 als Linearkombination schreiben, nicht aber das andere §7 weiter hinten.\n"
 "\n"
-"**Robo** (*aus der Ferne*): §8! Funktioniert wie §9.\n"
+"**Robo** *(aus der Ferne)*: §8! Funktioniert wie §9.\n"
 
 #. §0: `matrix_eq_sum_ebasis A`
 #. §1: `nth_rw 1`
@@ -6555,9 +6555,9 @@ msgstr ""
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:89
 msgid "Explain why to use §0 with §1 instead of §2. §3 replaces both §4"
 msgstr ""
-"**Du** (*schreiend*): Was meinst du damit?\n"
+"**Du** *(schreiend)*: Was meinst du damit?\n"
 "\n"
-"**Robo** (*ebenfalls schreiend*): Na, du willst bestimmt §0 anwenden, aber mit §1 und nicht mit §2. §3 würde beide §4s ersetzen."
+"**Robo** *(ebenfalls schreiend)*: Na, du willst bestimmt §0 anwenden, aber mit §1 und nicht mit §2. §3 würde beide §4s ersetzen."
 
 #. §0: `rw`
 #. §1: `nth_rw`
@@ -6570,13 +6570,13 @@ msgstr ""
 #. §0: `IN_HINT 1`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:98
 msgid "§0 Use linearity"
-msgstr "**Du** (*in Gedanken*): Jetzt Linearität nutzen… Und ja nicht an Wasser denken… Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
+msgstr "**Du** *(in Gedanken)*: Jetzt Linearität nutzen… Und ja nicht an Wasser denken… Auf Babylon gabs genug Wasser… Woran war ich nochmals?"
 
 #. §0: `map_sum`
 #. §1: `simp`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:101
 msgid "Try §0 via §1"
-msgstr "**Robo** (*von irgendwo*): Das klingt nach §0.  Glaub nicht, dass wir das auf Babylon gesehen haben, das fantasierst du. Aber §1 kennt dieses Lemma bestimmt."
+msgstr "**Robo** *(von irgendwo)*: Das klingt nach §0.  Glaub nicht, dass wir das auf Babylon gesehen haben, das fantasierst du. Aber §1 kennt dieses Lemma bestimmt."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:106
 msgid "Simplify"
@@ -6825,7 +6825,7 @@ msgid "Intro Robotswana L10: Introduce §0"
 msgstr ""
 "Ihr schleicht euch langsam an.\n"
 "\n"
-"**Du** (**flüsternd**): Ich glaube, du hattest Recht.  Diese Zettel sind eine Art Steckbrief! Und sie beschreiben dieses Wesen hier eindeutig!\n"
+"**Du** *(flüsternd)*: Ich glaube, du hattest Recht.  Diese Zettel sind eine Art Steckbrief! Und sie beschreiben dieses Wesen hier eindeutig!\n"
 "\n"
 "**Robo**: Wie meinst du das?\n"
 "\n"
@@ -8293,7 +8293,7 @@ msgid ""
 msgstr ""
 "Für ungerades §0 ist §1 strikt monoton.\n"
 "\n"
-"Hast Du §2 als Annahme gegeben, so kannst Du statt §3 auch einfach §4 schreiben."
+"Hast du §2 als Annahme gegeben, so kannst du statt §3 auch einfach §4 schreiben."
 
 #. §0: `f`
 #. §1: `g`
@@ -9224,7 +9224,7 @@ msgstr ""
 "\n"
 "**Mem**:  Genauso *ist* 5 eine natürlich Zahl (§5), und sie liegt in der *Menge §6 aller natürlicher Zahlen* (§8). Was ist daran verwirrend?\n"
 "\n"
-"**Robo** (*zu dir*):  Zerbrich dir nicht den Kopf darüber. Ich schlage vor, du fängst hier einfach mal mit §9 an, dann siehst du genau, was gefragt ist."
+"**Robo** *(zu dir)*:  Zerbrich dir nicht den Kopf darüber. Ich schlage vor, du fängst hier einfach mal mit §9 an, dann siehst du genau, was gefragt ist."
 
 #. §0: `simp`
 #. §1: `simp [eq_univ_iff_forall]`
@@ -9411,7 +9411,7 @@ msgstr "**Mem**:  Ja super, ihr habt aber schnell gelernt!"
 #: Game/Levels/Piazza/L12_erase.lean:22
 msgid "Intro Piazza L11"
 msgstr ""
-"**Mem**:  Hey, Fin, wachst machst Du denn da?\n"
+"**Mem**:  Hey, Fin, was machst du denn da?\n"
 "\n"
 "Fin ist der kleinste in der Runde und hat bislang nichts gesagt. Und jetzt hat er anscheinend gerade vom Stand nebenan eine Pistazie geklaut.\n"
 "\n"
