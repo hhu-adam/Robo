@@ -30,7 +30,8 @@ msgstr "– ¡Objetivo intermedio conseguido! –"
 #. ∀ a b, f a = f b → a = b
 #. ```
 #: Game/Doc/Definition.lean:8
-msgid "A mapping §0 is injectiv, if:\n"
+msgid ""
+"A mapping §0 is injectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
@@ -43,7 +44,8 @@ msgstr ""
 #. ∀ b, ∃ a, f a = b
 #. ```
 #: Game/Doc/Definition.lean:18
-msgid "A mapping §0 is surjectiv, if:\n"
+msgid ""
+"A mapping §0 is surjectiv, if:\n"
 "\n"
 "§1"
 msgstr ""
@@ -60,7 +62,8 @@ msgstr "Una aplicación es biyectiva si y solo si es inyectiva y sobreyectiva."
 #. ∀ ⦃a b⦄, a < b → f a < f b
 #. ```
 #: Game/Doc/Definition.lean:33
-msgid "A mapping §0 is strictly monotonous, if:\n"
+msgid ""
+"A mapping §0 is strictly monotonous, if:\n"
 "\n"
 "§1"
 msgstr ""
@@ -75,7 +78,8 @@ msgstr ""
 #. §4: `RightInverse`
 #. §5: `RightInverse`
 #: Game/Doc/Definition.lean:43
-msgid "§0 is defined as §1.\n"
+msgid ""
+"§0 is defined as §1.\n"
 "In other words: §2.\n"
 "\n"
 "You have to write §3  instead of §4,\n"
@@ -90,7 +94,8 @@ msgstr ""
 #. §2: `∀ x, g (f x) = x`
 #. §3: `unfold`
 #: Game/Doc/Definition.lean:54
-msgid "§0 means §1, or more exactly:\n"
+msgid ""
+"§0 means §1, or more exactly:\n"
 "§2, as can be seen with §3."
 msgstr "§0 significa §1, o de manera más precisa: §2, como puedes comprobar fácilmente con §3."
 
@@ -99,7 +104,8 @@ msgstr "§0 significa §1, o de manera más precisa: §2, como puedes comprobar 
 #. §2: `HasLeftInverse f`
 #. §3: `f`
 #: Game/Doc/Definition.lean:61
-msgid "§0 means, that §1 has a right inverse.\n"
+msgid ""
+"§0 means, that §1 has a right inverse.\n"
 "\n"
 "§2 means, that §3 has left inverse."
 msgstr ""
@@ -113,7 +119,8 @@ msgstr ""
 #. §3: `f a = a`
 #. §4: `unfold IsFixedPt`
 #: Game/Doc/Definition.lean:69
-msgid "For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
+msgid ""
+"For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
 "Look up definition with §4."
 msgstr ""
 "Para una aplicación §0 de un conjunto en sí mismo y un elemento §1, §2 es el enunciado §3.\n"
@@ -124,7 +131,8 @@ msgstr ""
 #. §2: `f `
 #. §3: `unfold fixedPoints`
 #: Game/Doc/Definition.lean:75
-msgid "For a mapping §0, §1 is the set of fixed points of §2.\n"
+msgid ""
+"For a mapping §0, §1 is the set of fixed points of §2.\n"
 "Look up definition with §3."
 msgstr ""
 "Para una aplicación §0, §1 es el conjunto de los puntos fijos de §2.\n"
@@ -138,7 +146,8 @@ msgstr ""
 #. §5: `∪`
 #. §6: `\\union`
 #: Game/Doc/Definition.lean:81
-msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
+msgid ""
+"For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
 "§5 is written as §6."
 msgstr ""
 "Para dos subconjuntos §0 y §1 de §2 (es decir, §3), §4 es su unión.\n"
@@ -153,7 +162,8 @@ msgstr ""
 #. §5: `∩`
 #. §6: `\\inter`
 #: Game/Doc/Definition.lean:87
-msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
+msgid ""
+"For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
 "§5 is written as §6."
 msgstr ""
 "Para dos subconjuntos §0 y §1 de §2 (es decir, §3), §4 es su intersección.\n"
@@ -173,7 +183,8 @@ msgstr ""
 #. x ∈ range f ↔ ∃ a, f a = b
 #. ```
 #: Game/Doc/Definition.lean:93
-msgid "For a mapping §0, §1 is the full image set of §2:\n"
+msgid ""
+"For a mapping §0, §1 is the full image set of §2:\n"
 "§3\n"
 "Is a diffierent notation for §4.\n"
 "§5 is useful to work with it:\n"
@@ -191,7 +202,8 @@ msgstr ""
 #. §3: `f '' A`
 #. §4: `f`
 #: Game/Doc/Definition.lean:107
-msgid "For a mapping §0, §1\n"
+msgid ""
+"For a mapping §0, §1\n"
 "is one of the induced mappings on the power sets –\n"
 "it maps a subset of §2 to the image §3 of this subset under §4."
 msgstr "Para una aplicación §0, §1 es una de las aplicaciones inducidas entre los conjuntos de partes: envía cada subconjunto de §2 a la imagen §3 de dicho subconjunto por §4."
@@ -202,7 +214,8 @@ msgstr "Para una aplicación §0, §1 es una de las aplicaciones inducidas entre
 #. §3: `f ⁻¹' A`
 #. §4: `f`
 #: Game/Doc/Definition.lean:114
-msgid "For a mapping §0, §1\n"
+msgid ""
+"For a mapping §0, §1\n"
 "is one of the induced mappings on the power sets –\n"
 "it maps a subset of §2 to the preimage §3 of this subset under §4."
 msgstr "Para una aplicación §0, §1 es una de las aplicaciones inducidas entre los conjuntos de partes: envía cada subconjunto de §2 a la preimagen §3 de dicho subconjunto por §4."
@@ -217,7 +230,8 @@ msgstr "Para una aplicación §0, §1 es una de las aplicaciones inducidas entre
 #. §5: `f`
 #. §6: `''`
 #: Game/Doc/Definition.lean:122
-msgid "For a mapping §0 and a subset §1 of §2,\n"
+msgid ""
+"For a mapping §0 and a subset §1 of §2,\n"
 "§3\n"
 "is its image under §4.  Note the space between §5 and §6."
 msgstr ""
@@ -237,7 +251,8 @@ msgstr ""
 #. §6: `f`
 #. §7: `\\-1'`
 #: Game/Doc/Definition.lean:131
-msgid "For a mapping §0 and a subset §1 of §2,\n"
+msgid ""
+"For a mapping §0 and a subset §1 of §2,\n"
 "§3\n"
 "is its preimage under §4.\n"
 "You write this as §5.\n"
@@ -259,7 +274,8 @@ msgstr ""
 #. §6: `↦`
 #. §7: `=>`
 #: Game/Doc/Definition.lean:142
-msgid "The notation §0 is used to define “anonymous functions.”\n"
+msgid ""
+"The notation §0 is used to define “anonymous functions.”\n"
 "For example, §1 defines the negation §2 without giving it a name.\n"
 "You write the arrow §3 as §4 or §5.\n"
 "Alternatively, instead of §6 you can use §7."
@@ -276,7 +292,8 @@ msgstr ""
 #. §3: `A`
 #. §4: `T`
 #: Game/Doc/Definition.lean:153
-msgid "§0 means that §1 is a subset of §2\n"
+msgid ""
+"§0 means that §1 is a subset of §2\n"
 "(or, more precisely, that §3 is a set consisting of elements of type §4)."
 msgstr "§0 significa que §1 es un subconjunto de §2 (o, más exactamente, que §3 es un conjunto formado por elementos de tipo §4)."
 
@@ -292,7 +309,8 @@ msgstr "§0 significa que §1 es un subconjunto de §2 (o, más exactamente, que
 #. §9: `simp`
 #. §10: `P a`
 #: Game/Doc/Definition.lean:159
-msgid "For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 means that\n"
+msgid ""
+"For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 means that\n"
 "§5 is in §6.\n"
 "For subsets of the form §7, you can simplify the statement\n"
 "§8 with §9 to §10."
@@ -311,7 +329,8 @@ msgstr ""
 #. §4: `simp`
 #. §5: `P a`
 #: Game/Doc/Definition.lean:167
-msgid "For a predicate §0, §1 is the subset\n"
+msgid ""
+"For a predicate §0, §1 is the subset\n"
 "consisting of all elements that satisfy the predicate.  For example,\n"
 "§2\n"
 "is the set of even natural numbers.\n"
@@ -331,7 +350,8 @@ msgstr ""
 #. §4: `A`
 #. §5: `B`
 #: Game/Doc/Definition.lean:178
-msgid "For two subsets §0, §1 is the difference between §2 and §3,\n"
+msgid ""
+"For two subsets §0, §1 is the difference between §2 and §3,\n"
 "consisting of all elements of §4 that are not in §5."
 msgstr "Para dos subconjuntos §0, §1 es la diferencia de §2 y §3, formada por todos los elementos de §4 que no están en §5."
 
@@ -355,7 +375,8 @@ msgstr "Para dos subconjuntos §0, §1 es la diferencia de §2 y §3, formada po
 #. §17: `⊆`
 #. §18: `\\subset`
 #: Game/Doc/Definition.lean:184
-msgid "For §0, §1 means that §2 is contained in §3.\n"
+msgid ""
+"For §0, §1 means that §2 is contained in §3.\n"
 "\n"
 "With §4, you can rewrite §5 as §6.\n"
 "\n"
@@ -389,7 +410,8 @@ msgstr ""
 #. §6: `∅`
 #. §7: `\\emptyset`
 #: Game/Doc/Definition.lean:199
-msgid "§0 is the empty subset.\n"
+msgid ""
+"§0 is the empty subset.\n"
 "In the Formaloverse §1 is something different than §2\n"
 "– one is a subset of ℕ, the other is a subset of ℝ!\n"
 "\n"
@@ -411,7 +433,8 @@ msgstr ""
 #. §3: `S = univ`
 #. §4: `∀ (x : T), x ∈ S`
 #: Game/Doc/Definition.lean:211
-msgid "§0 is the “subset” consisting of *all* elements of type §1.\n"
+msgid ""
+"§0 is the “subset” consisting of *all* elements of type §1.\n"
 "\n"
 "With §2, you convert an equation of the form §3 into the\n"
 "statement §4."
@@ -428,7 +451,8 @@ msgstr ""
 #. §5: `A`
 #. §6: `insert a A = A`
 #: Game/Doc/Definition.lean:219
-msgid "For a finite subset §0 and an element §1,\n"
+msgid ""
+"For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is already in §5, then obviously §6."
 msgstr ""
@@ -443,7 +467,8 @@ msgstr ""
 #. §5: `A`
 #. §6: `erase A a = A`
 #: Game/Doc/Definition.lean:226
-msgid "For a finite subset §0 and an element §1,\n"
+msgid ""
+"For a finite subset §0 and an element §1,\n"
 "§2 is another way of writing §3.\n"
 "If §4 is not in §5 at all, then obviously §6."
 msgstr ""
@@ -455,7 +480,8 @@ msgstr ""
 #. §2: `A`
 #. §3: `A`
 #: Game/Doc/Definition.lean:233
-msgid "For a finite subset §0, §1 is the cardinality of §2,\n"
+msgid ""
+"For a finite subset §0, §1 is the cardinality of §2,\n"
 "i.e., the number of elements in §3."
 msgstr "Para un subconjunto finito §0, §1 es el cardinal de §2, es decir, el número de elementos de §3."
 
@@ -469,7 +495,8 @@ msgstr "Para un subconjunto finito §0, §1 es el cardinal de §2, es decir, el 
 #. §7: `Icc 0 (n-1) : Finset ℕ`
 #. §8: `ℕ`
 #: Game/Doc/Definition.lean:239
-msgid "For §0, §1 is the set §2.\n"
+msgid ""
+"For §0, §1 is the set §2.\n"
 "\n"
 "(§3 is to be distinguished from §4:\n"
 "§5 is a set, or more precisely a type, i.e. §6,\n"
@@ -514,7 +541,8 @@ msgstr "§0 es el intervalo cerrado §1."
 #. §25: `a ∈ A`
 #. §26: `ha : a ∈ A`
 #: Game/Doc/Definition.lean:256
-msgid "[Doc.Definition] Nonempty\n"
+msgid ""
+"[Doc.Definition] Nonempty\n"
 "§0\n"
 "for §1, §2, §3 means T is non-empty\n"
 "for §4, §5, §6 means §7; check this with §8\n"
@@ -546,7 +574,8 @@ msgstr ""
 #. §4: `h.toFinset : Finset T`
 #. §5: `A`
 #: Game/Doc/Definition.lean:297
-msgid "For a subset §0, §1 means that §2 has only a finite number of elements.\n"
+msgid ""
+"For a subset §0, §1 means that §2 has only a finite number of elements.\n"
 "If §3 is given as an assumption, then §4 is the same subset §5,\n"
 "but now explicitly understood as a finite subset."
 msgstr ""
@@ -557,7 +586,8 @@ msgstr ""
 #. §1: `(True : Prop)`
 #. §2: `(False : Prop)`
 #: Game/Doc/Definition.lean:307
-msgid "§0 is any statement, without further specification as to whether it is true, false, or\n"
+msgid ""
+"§0 is any statement, without further specification as to whether it is true, false, or\n"
 "unprovable.\n"
 "\n"
 "See also §1 and §2 for the unconditionally true and false\n"
@@ -580,7 +610,8 @@ msgstr ""
 #. §10: `h₁ : A`
 #. §11: `h₂ : B`
 #: Game/Doc/Definition.lean:316
-msgid "§0 (“and”) is the statement that both §1 and §2 are true.\n"
+msgid ""
+"§0 (“and”) is the statement that both §1 and §2 are true.\n"
 "\n"
 "## §3 as a proof goal\n"
 "\n"
@@ -616,7 +647,8 @@ msgstr ""
 #. obtain h | h := h
 #. ```
 #: Game/Doc/Definition.lean:330
-msgid "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n"
+msgid ""
+"§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n"
 "\n"
 "## §3 as proof goal\n"
 "\n"
@@ -658,7 +690,8 @@ msgstr ""
 #. §11: `B`
 #. §12: `apply`
 #: Game/Doc/Definition.lean:350
-msgid "For §0, §1 is the implication “§2 implies §3.”\n"
+msgid ""
+"For §0, §1 is the implication “§2 implies §3.”\n"
 "For other §4, §5 is a mapping that maps values from §6 to §7.\n"
 "\n"
 "## Implication as proof goal\n"
@@ -698,7 +731,8 @@ msgstr ""
 #. §14: `h.mpr`
 #. §15: `mp`
 #: Game/Doc/Definition.lean:365
-msgid "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n"
+msgid ""
+"§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n"
 "\n"
 "## §3 as proof target\n"
 "\n"
@@ -745,7 +779,8 @@ msgstr ""
 #. §18: `a : A`
 #. §19: `ha : P a`
 #: Game/Doc/Definition.lean:382
-msgid "Existential quantifier: If §0 is a predicate, then\n"
+msgid ""
+"Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that an element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
 "A pure existence statement (\"there is an element of type §6)\n"
@@ -804,7 +839,8 @@ msgstr ""
 #.    h_unique : ∀ (y : A), P y → y = a
 #. ```
 #: Game/Doc/Definition.lean:401
-msgid "Existential quantifier: If §0 is a predicate, then\n"
+msgid ""
+"Existential quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\n"
 "exists for which the statement §5 is true.\n"
 "The statement therefore has two parts: first, such an §6 exists, and second, §7 is unique.\n"
@@ -876,7 +912,8 @@ msgstr ""
 #. §18: `h : P a₀`
 #. §19: `a₀`
 #: Game/Doc/Definition.lean:436
-msgid "Universal quantifier: If §0 is a predicate, then\n"
+msgid ""
+"Universal quantifier: If §0 is a predicate, then\n"
 "§1 is the statement that the statement §2 is true for all §3 in §4\n"
 "(more precisely: for all §5 of type §6).\n"
 "## §7 as a proof goal\n"
@@ -908,7 +945,8 @@ msgstr ""
 #. §5: `True`
 #. §6: `True`
 #: Game/Doc/Definition.lean:450
-msgid "The statement §0 is always true.\n"
+msgid ""
+"The statement §0 is always true.\n"
 "\n"
 "## §1 as a proof target\n"
 "\n"
@@ -942,7 +980,8 @@ msgstr ""
 #. §11: `False`
 #. §12: `contradiction`
 #: Game/Doc/Definition.lean:463
-msgid "The statement §0 is always false.\n"
+msgid ""
+"The statement §0 is always false.\n"
 "\n"
 "## §1 as proof target\n"
 "\n"
@@ -982,7 +1021,8 @@ msgstr ""
 #. §8: `apply`
 #. §9: `False`
 #: Game/Doc/Definition.lean:482
-msgid "§0 is the logical negation of §1.\n"
+msgid ""
+"§0 is the logical negation of §1.\n"
 "It is implemented internally as §2.  You can see this with §3.\n"
 "\n"
 "Useful tactics are: §4, §5, §6.\n"
@@ -1022,7 +1062,8 @@ msgstr "La desigualdad §0 está definida como §1. Puedes verlo con §2."
 #. ```
 #. §3: `unfold Even`
 #: Game/Doc/Definition.lean:504
-msgid "§0 is the statement that §1 is even:\n"
+msgid ""
+"§0 is the statement that §1 is even:\n"
 "§2\n"
 "You can easily check this with §3."
 msgstr ""
@@ -1037,7 +1078,8 @@ msgstr ""
 #. ```
 #. §3: `unfold Odd`
 #: Game/Doc/Definition.lean:513
-msgid "§0 is the statement that §1 is odd:\n"
+msgid ""
+"§0 is the statement that §1 is odd:\n"
 "§2\n"
 "You can easily check this with §3."
 msgstr ""
@@ -1050,7 +1092,8 @@ msgstr ""
 #. §2: `n`
 #. §3: `prime_def`
 #: Game/Doc/Definition.lean:522
-msgid "For §0, §1 means that §2 is a prime number.\n"
+msgid ""
+"For §0, §1 means that §2 is a prime number.\n"
 "To work with this definition, it is often helpful to rewrite it using the lemma\n"
 "§3."
 msgstr ""
@@ -1060,7 +1103,8 @@ msgstr ""
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
 #: Game/Doc/Definition.lean:529
-msgid "§0 is the mapping §1.\n"
+msgid ""
+"§0 is the mapping §1.\n"
 "It therefore maps a natural number to its successor."
 msgstr ""
 "§0 es la aplicación §1.\n"
@@ -1074,7 +1118,8 @@ msgstr ""
 #. §5: `(n : ℤ)`
 #. §6: `↑n`
 #: Game/Doc/Definition.lean:535
-msgid "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n"
+msgid ""
+"If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n"
 "(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n"
 "\n"
 "## Friends and relatives\n"
@@ -1095,7 +1140,8 @@ msgstr ""
 #. §2: `x`
 #. §3: `|`
 #: Game/Doc/Definition.lean:548
-msgid "For §0, §1 is the absolute value of §2.\n"
+msgid ""
+"For §0, §1 is the absolute value of §2.\n"
 "(Here, §3 is the usual vertical bar on the keyboard.)"
 msgstr ""
 "Para §0, §1 es el valor absoluto de §2.\n"
@@ -1107,7 +1153,8 @@ msgstr ""
 #. §2: $\\sum_{i\\in I} f(i)$
 #. §3: `\\sum`
 #: Game/Doc/Definition.lean:562
-msgid "For a finite index set §0, §1 is Leanic notation for the sum\n"
+msgid ""
+"For a finite index set §0, §1 is Leanic notation for the sum\n"
 "§2.  You write the summation sign as §3."
 msgstr ""
 "Para un conjunto finito de índices §0, §1 es la notación en leanés para la suma §2.\n"
@@ -1119,7 +1166,8 @@ msgstr ""
 #. §2: $\\prod_{i\\in I} f(i)$
 #. §3: `\\prod`
 #: Game/Doc/Definition.lean:568
-msgid "For a finite index set §0, §1 is the Leanic notation for the product\n"
+msgid ""
+"For a finite index set §0, §1 is the Leanic notation for the product\n"
 "§2.  You write the product symbol as §3."
 msgstr ""
 "Para un conjunto finito de índices §0, §1 es la notación en leanés para el producto §2.\n"
@@ -1133,7 +1181,8 @@ msgstr ""
 #. §4: `X (n-1)`
 #. §5: `R`
 #: Game/Doc/Definition.lean:575
-msgid "§0 means that §1 is a polynomial in §2 indeterminates\n"
+msgid ""
+"§0 means that §1 is a polynomial in §2 indeterminates\n"
 "§3, …, §4 with coefficients in §5."
 msgstr "§0 significa que §1 es un polinomio en §2 indeterminadas §3, …, §4 con coeficientes en §5."
 
@@ -1157,7 +1206,8 @@ msgstr ""
 #. §7: `h : B`
 #. §8: `hAB`
 #: Game/Doc/Tactic.lean:3
-msgid "With §0, you apply an implication §1:\n"
+msgid ""
+"With §0, you apply an implication §1:\n"
 "\n"
 "| before | tactic           | after |\n"
 "|:------------ |:---------------- |:-------- |\n"
@@ -1189,7 +1239,8 @@ msgstr "La táctica §0 cierra la demostración cuando una de las hipótesis coi
 #. §5: `(h : P)`
 #. §6: `(h : ¬P)`
 #: Game/Doc/Tactic.lean:21
-msgid "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
+msgid ""
+"The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
 "For example, §2 distinguishes between the cases §3 and §4.\n"
 "\n"
 "The proof goal is duplicated for this purpose, and\n"
@@ -1210,7 +1261,8 @@ msgstr ""
 #. §6: `A → B`
 #. §7: `contrapose`
 #: Game/Doc/Tactic.lean:31
-msgid "The tactic §0 initiates a proof by contradiction.\n"
+msgid ""
+"The tactic §0 initiates a proof by contradiction.\n"
 "If §1 is your current proof goal, §2 generates a new assumption §3\n"
 "and sets the proof goal to §4.\n"
 "\n"
@@ -1247,7 +1299,8 @@ msgstr ""
 #. §10: `a`
 #. §11: `b`
 #: Game/Doc/Tactic.lean:67
-msgid "An assumption of the form\n"
+msgid ""
+"An assumption of the form\n"
 "§0\n"
 "can be decomposed, using §1, into the components §2 and §3.\n"
 "\n"
@@ -1282,7 +1335,8 @@ msgstr ""
 #. §9: `left`
 #. §10: `right`
 #: Game/Doc/Tactic.lean:87
-msgid "The §0 tactic breaks down a proof goal into its constituent parts:\n"
+msgid ""
+"The §0 tactic breaks down a proof goal into its constituent parts:\n"
 "\n"
 "| before | after                |\n"
 "|:------------ |:----------------------- |\n"
@@ -1314,7 +1368,8 @@ msgstr ""
 #. §5: `contradiction`
 #. §6: `by_contra`
 #: Game/Doc/Tactic.lean:102
-msgid "The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\n"
+msgid ""
+"The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\n"
 "Such a contradiction can look like this, for example:\n"
 "\n"
 "* §1\n"
@@ -1343,7 +1398,8 @@ msgstr ""
 #. §3: `revert h`
 #. §4: `contrapose`
 #: Game/Doc/Tactic.lean:117
-msgid "The tactic §0 changes a proof goal of the form §1 to §2, thereby\n"
+msgid ""
+"The tactic §0 changes a proof goal of the form §1 to §2, thereby\n"
 "initiating a proof by contraposition.\n"
 "\n"
 "## Friends and relatives\n"
@@ -1367,7 +1423,8 @@ msgstr ""
 #. x ∈ A ↔ x ∈ B
 #. ```
 #: Game/Doc/Tactic.lean:134
-msgid "Two subsets of a given set are equal if they have the same elements.\n"
+msgid ""
+"Two subsets of a given set are equal if they have the same elements.\n"
 "If the proof goal is\n"
 "§0\n"
 "for two subsets of §1 (i.e., for §2),\n"
@@ -1389,7 +1446,8 @@ msgstr ""
 #. f x = g x
 #. ```
 #: Game/Doc/Tactic.lean:160
-msgid "Two mappings with the same range and domain are equal if\n"
+msgid ""
+"Two mappings with the same range and domain are equal if\n"
 "they take the same values on all elements of the domain.\n"
 "A proof goal of the form\n"
 "§0\n"
@@ -1420,7 +1478,8 @@ msgstr ""
 #. ```
 #. §8: `tauto`
 #: Game/Doc/Tactic.lean:175
-msgid "With §0, you can generalize a proof goal\n"
+msgid ""
+"With §0, you can generalize a proof goal\n"
 "in the hope that a higher level of abstraction will allow for a simpler proof.\n"
 "More precisely, §1 replaces all occurrences of §2 in the proof goal with §3\n"
 "(and adds the assumption §4).\n"
@@ -1451,7 +1510,8 @@ msgstr ""
 #. §0: `have h : P`
 #. §1: `suffices h : P`
 #: Game/Doc/Tactic.lean:199
-msgid "With §0, you introduce an intermediate result.\n"
+msgid ""
+"With §0, you introduce an intermediate result.\n"
 "You must then prove this intermediate result\n"
 "before you can continue with the actual proof.\n"
 "\n"
@@ -1476,7 +1536,8 @@ msgstr ""
 #. §8: `if A then B else C`
 #. §9: `C`
 #: Game/Doc/Tactic.lean:214
-msgid "With §0, you can define mappings with two branches of definition.\n"
+msgid ""
+"With §0, you can define mappings with two branches of definition.\n"
 "\n"
 "For example, §1 defines the absolute value function.\n"
 "\n"
@@ -1512,7 +1573,8 @@ msgstr ""
 #. §13: `zero_eq`
 #. §14: `Nat.succ_eq_add_one`
 #: Game/Doc/Tactic.lean:228
-msgid "The tactic §0 performs an inductive proof over §1.\n"
+msgid ""
+"The tactic §0 performs an inductive proof over §1.\n"
 "With §2, you can specify names for the induction variable (here: §3)\n"
 "and the induction assumption (here: §4).\n"
 "The tactic thus replaces the original proof goal with two new proof goals:\n"
@@ -1562,7 +1624,8 @@ msgstr ""
 #. §20: `revert h`
 #. §21: `intro h`
 #: Game/Doc/Tactic.lean:266
-msgid "The tactic §0 is used for   proof goals of the form §1 or §2.\n"
+msgid ""
+"The tactic §0 is used for   proof goals of the form §1 or §2.\n"
 "\n"
 "If your proof goal is §3, §4 gives you the assumption §5, and you then have to prove §6.\n"
 "If your proof goal is §7, §8 gices you an arbitrary §9 and you have to prove §10.\n"
@@ -1596,7 +1659,8 @@ msgstr ""
 #. §1: `left`
 #. §2: `right`
 #: Game/Doc/Tactic.lean:284
-msgid "If the proof target is of the form §0, you choose §1 to show the left side.\n"
+msgid ""
+"If the proof target is of the form §0, you choose §1 to show the left side.\n"
 "\n"
 "## Friends and relatives\n"
 "\n"
@@ -1614,7 +1678,8 @@ msgstr ""
 #. §3: `x`
 #. §4: `simp only [x]`
 #: Game/Doc/Tactic.lean:293
-msgid "The §0 tactic introduces a temporary definition, for example\n"
+msgid ""
+"The §0 tactic introduces a temporary definition, for example\n"
 "§1.\n"
 "\n"
 "Once §2 defines a §3, you can use the definition later with §4."
@@ -1635,7 +1700,8 @@ msgstr ""
 #. ```
 #. §4: `linarith`
 #: Game/Doc/Tactic.lean:313
-msgid "The tactic §0 can show that a linear equation or inequality follows from given equations or inequalities.\n"
+msgid ""
+"The tactic §0 can show that a linear equation or inequality follows from given equations or inequalities.\n"
 "It is quite flexible and works just as well in ℕ as in ℝ.\n"
 "However, the (in)equations must be given individually, not logically linked.\n"
 "An assumption of the form\n"
@@ -1662,7 +1728,8 @@ msgstr ""
 #. §2: `ℤ`
 #. §3: `linarith`
 #: Game/Doc/Tactic.lean:333
-msgid "The tactic §0 can show that a linear equation or inequality in §1 or §2\n"
+msgid ""
+"The tactic §0 can show that a linear equation or inequality in §1 or §2\n"
 "follows from given equations or inequalities.\n"
 "Unlike §3, it can also handle logical connections between (in)equations."
 msgstr ""
@@ -1690,7 +1757,8 @@ msgstr ""
 #. §14: `not_exists`
 #. §15: `rw`
 #: Game/Doc/Tactic.lean:343
-msgid "The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n"
+msgid ""
+"The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n"
 "\n"
 "| before       | after      |\n"
 "|:------------ |:-------------|\n"
@@ -1749,7 +1817,8 @@ msgstr ""
 #. §22: `⟨_, _⟩`
 #. §23: $(G, 0, +)$
 #: Game/Doc/Tactic.lean:367
-msgid "The §0 tactic breaks down an assumption into its individual parts.\n"
+msgid ""
+"The §0 tactic breaks down an assumption into its individual parts.\n"
 "\n"
 "| before       | tactic                 | after                                   |\n"
 "|:------------------ |:--------------------- - |:------------------------------------------ |\n"
@@ -1786,7 +1855,8 @@ msgstr ""
 #. §5: `intro h`
 #. §6: `revert h`
 #: Game/Doc/Tactic.lean:402
-msgid "The tactic §0 adds the assumption §1 as an implication premise to the proof goal:\n"
+msgid ""
+"The tactic §0 adds the assumption §1 as an implication premise to the proof goal:\n"
 "from §2 and §3, we get §4.\n"
 "\n"
 "## Friends and relatives\n"
@@ -1807,7 +1877,8 @@ msgstr ""
 #. §4: `A`
 #. §5: `B`
 #: Game/Doc/Tactic.lean:413
-msgid "The tactic §0 proves §1.  More precisely, §2 closes every proof target of the form §3,\n"
+msgid ""
+"The tactic §0 proves §1.  More precisely, §2 closes every proof target of the form §3,\n"
 "where §4 and §5 are identical in definition."
 msgstr ""
 "La táctica §0 demuestra §1.\n"
@@ -1817,7 +1888,8 @@ msgstr ""
 #. §1: `right`
 #. §2: `left`
 #: Game/Doc/Tactic.lean:420
-msgid "If the proof target is of the form §0, you choose §1 to show the right side.\n"
+msgid ""
+"If the proof target is of the form §0, you choose §1 to show the right side.\n"
 "\n"
 "## Friends and relatives\n"
 "\n"
@@ -1832,7 +1904,8 @@ msgstr ""
 #. §0: `ring`
 #. §1: `+, -, *, ^`
 #: Game/Doc/Tactic.lean:429
-msgid "The §0 tactic proves equations with the operations §1 in semirings,\n"
+msgid ""
+"The §0 tactic proves equations with the operations §1 in semirings,\n"
 "in particular in ℕ, ℤ, ℚ, ℝ, …   It works particularly well in commutative rings."
 msgstr "La táctica §0 demuestra igualdades con las operaciones §1 en semianillos, o sea, en particular en ℕ, ℤ, ℚ, ℝ, … Funciona especialmente bien en anillos conmutativos."
 
@@ -1869,7 +1942,8 @@ msgstr "La táctica §0 demuestra igualdades con las operaciones §1 en semianil
 #. §26: `nth_rw 2 [h]`
 #. §27: `2*a + f b > 2*a`
 #: Game/Doc/Tactic.lean:437
-msgid "If you have given an equation §0 or an equivalence §1 as an assumption or lemma,\n"
+msgid ""
+"If you have given an equation §0 or an equivalence §1 as an assumption or lemma,\n"
 "you can use §2 to replace all occurrences of §3 in the proof target with §4.\n"
 "\n"
 "## Variants\n"
@@ -1925,7 +1999,8 @@ msgstr ""
 #. §11: `g`
 #. §12: `simp?`
 #: Game/Doc/Tactic.lean:465
-msgid "The §0 tactic attempts to apply a large number of lemmas to simplify a given expression.\n"
+msgid ""
+"The §0 tactic attempts to apply a large number of lemmas to simplify a given expression.\n"
 "(Technically, these are all lemmas in §1 that are marked with §2.)\n"
 "\n"
 "## Variants\n"
@@ -1964,7 +2039,8 @@ msgstr ""
 #. hb : P b₁ b₂
 #. ```
 #: Game/Doc/Tactic.lean:494
-msgid "§0 is equivalent to §1: the tactic replaces an assumption\n"
+msgid ""
+"§0 is equivalent to §1: the tactic replaces an assumption\n"
 "§2 with the special case §3.\n"
 "\n"
 "If you want to specialize multiple times, instead of §4 you should use §5,\n"
@@ -1989,7 +2065,8 @@ msgstr ""
 #. §3: `have h : P`
 #. §4: `P`
 #: Game/Doc/Tactic.lean:515
-msgid "With §0, you introduce a proof section in which you show\n"
+msgid ""
+"With §0, you introduce a proof section in which you show\n"
 "that the desired proof goal follows from §1.\n"
 "Then you prove §2.\n"
 "\n"
@@ -2018,7 +2095,8 @@ msgstr ""
 #.   ```
 #. §10: `rw [h.symm]`
 #: Game/Doc/Tactic.lean:527
-msgid "With §0 (for “symmetry”), you swap the sides of an equation (§1) or equivalence (§2) in the proof target.\n"
+msgid ""
+"With §0 (for “symmetry”), you swap the sides of an equation (§1) or equivalence (§2) in the proof target.\n"
 "\n"
 "## Variants\n"
 "* §3 operates on the assumption §4 instead of the proof target\n"
@@ -2052,7 +2130,8 @@ msgstr ""
 #. §9: `A = B₁ = B₂ = B₃ … = C`
 #. §10: `calc`
 #: Game/Doc/Tactic.lean:544
-msgid "With §0, you insert an intermediate step into an equation or equivalence.\n"
+msgid ""
+"With §0, you insert an intermediate step into an equation or equivalence.\n"
 "\n"
 "| before | tactic    | after                |\n"
 "|:------------ |:--------- |:----------------------- |\n"
@@ -2082,7 +2161,8 @@ msgstr ""
 #. §4: `4 ≠ 6`
 #. §5: `Prime 7`
 #: Game/Doc/Tactic.lean:559
-msgid "With §0, you can prove statements that can be decided using a simple algorithm.\n"
+msgid ""
+"With §0, you can prove statements that can be decided using a simple algorithm.\n"
 "These include, in particular, §1 and statements about concrete numbers such as:\n"
 "- §2\n"
 "- §3\n"
@@ -2106,7 +2186,8 @@ msgstr ""
 #. §7: `unfold F`
 #. §8: `simp only [F]`
 #: Game/Doc/Tactic.lean:571
-msgid "With §0, you can write out the definition §1 in the proof goal.\n"
+msgid ""
+"With §0, you can write out the definition §1 in the proof goal.\n"
 "With §2, you do the same thing, but in the assumption §3.\n"
 "\n"
 "Although the proof goal or assumption before and after §4 are identical in definition,\n"
@@ -2130,7 +2211,8 @@ msgstr ""
 #. §1: `use x`
 #. §2: `P x`
 #: Game/Doc/Tactic.lean:587
-msgid "If the proof target is of the form §0, you can use §1 to specify a concrete element\n"
+msgid ""
+"If the proof target is of the form §0, you can use §1 to specify a concrete element\n"
 "for which you want to prove §2."
 msgstr "Si el objetivo es de la forma §0, con §1 puedes indicar un elemento concreto para el que quieres demostrar §2."
 
@@ -2138,7 +2220,8 @@ msgstr "Si el objetivo es de la forma §0, con §1 puedes indicar un elemento co
 #. §1: `generalize`
 #. §2: `tauto`
 #: Game/Doc/Tactic.lean:593
-msgid "The tactic §0 proves logical tautologies.\n"
+msgid ""
+"The tactic §0 proves logical tautologies.\n"
 "\n"
 "# Friends and relatives\n"
 "\n"
@@ -2167,7 +2250,8 @@ msgstr ""
 #. §5: $⇒$
 #. §6: `tauto`
 #: Game/Levels/Logo/L01_Tauto.lean:41
-msgid "Explain that §0 introduces statements §1, §2 und §3 as\n"
+msgid ""
+"Explain that §0 introduces statements §1, §2 und §3 as\n"
 "propositions. The symbol §4 is equivalent to the implication symbol §5. Try §6."
 msgstr ""
 "**Glifo**: Eso es muy fácil. Con §0 quiere decir: §1, §2 y §3 son enunciados cualesquiera (*proposiciones*). Y con §4 se refiere a §5, es decir, \"implica\". Los demás símbolos los conoces, ¿verdad?\n"
@@ -2228,7 +2312,8 @@ msgstr ""
 #. §9: `1 < n`
 #. §10: `assumption`
 #: Game/Levels/Logo/L03_Assumption.lean:40
-msgid "Explain that §0 means §1 is a natural number. The notation §2 is not used.\n"
+msgid ""
+"Explain that §0 means §1 is a natural number. The notation §2 is not used.\n"
 "§3, §4, §5 are names for the respective assumptions §6, §7 und §8.\n"
 "The proof goal is §9. Try §10"
 msgstr ""
@@ -2262,7 +2347,8 @@ msgstr "Un tercer súbdito llega con el siguiente problema."
 #. §3: `«{A}»`
 #. §4: `«{A}»`
 #: Game/Levels/Logo/L04_Assumption.lean:26
-msgid "Explain that §0 means that §1 is some statement.\n"
+msgid ""
+"Explain that §0 means that §1 is some statement.\n"
 "§2 is the name of the assumption that §3 is true. Try to solve §4 using said assumption"
 msgstr ""
 "**Glifo**: Aquí §0 significa, de nuevo, que §1 es un enunciado cualquiera. Y §2 es un nombre para la hipótesis de que §3 es verdadero.\n"
@@ -2316,7 +2402,8 @@ msgstr "El granujilla ha traído también a su hermana."
 #. §3: `False`
 #. §4: `decide`
 #: Game/Levels/Logo/L06_Not.lean:30
-msgid "Explain that §0 is the negation sign. If §1 is true than §2 is false and\n"
+msgid ""
+"Explain that §0 is the negation sign. If §1 is true than §2 is false and\n"
 "vica versa. §3 is the statement that is always false. Try §4"
 msgstr ""
 "**Glifo**: Este símbolo §0 significa negación. Es decir: si un enunciado §1 es verdadero, entonces §2 es falso, y viceversa.\n"
@@ -2347,7 +2434,8 @@ msgstr "A continuación llegan tres liantes. El primero trae el siguiente proble
 #. §7: `False`
 #. §8: `contradiction`
 #: Game/Levels/Logo/L07_Contradiction.lean:34
-msgid "Explain that §0 is a statement and §1 is the assumption that §2 is true.\n"
+msgid ""
+"Explain that §0 is a statement and §1 is the assumption that §2 is true.\n"
 "Remind that §3 is always false. Explain that assumption §4 is false. As any statement\n"
 "§5 can be proven from a false assumption. Point out contradiction between §6 and §7\n"
 "by applying §8."
@@ -2430,7 +2518,8 @@ msgstr ""
 #. §5: `destructor`
 #. §6: `constructor`
 #: Game/Levels/Logo/L10_And.lean:33
-msgid "Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
+msgid ""
+"Given assumptions that §0 and §1 are true, prove that §2 is true.\n"
 "You cannot just try §3. Use §4 to divide goal into two. Remind that the tactic\n"
 "is not called §5. Try §6"
 msgstr ""
@@ -2479,7 +2568,8 @@ msgstr ""
 #. §6: `h₂`
 #. §7: `obtain ⟨hA, hBC⟩ := «{h}»`
 #: Game/Levels/Logo/L11_And.lean:29
-msgid "Deconstruct assumption by §0. The brackets can be written seperatly\n"
+msgid ""
+"Deconstruct assumption by §0. The brackets can be written seperatly\n"
 "as §1 and §2 or simultaneously as §3. The first assumption can be named §4. Other names\n"
 "than §5 und §6 can be chosen as well e.g. §7"
 msgstr ""
@@ -2542,7 +2632,8 @@ msgstr "El siguiente, por favor…"
 #. §2: `obtain ⟨h₁, h₂⟩ := «{h}»`
 #. §3: `obtain h | h := «{h}»`
 #: Game/Levels/Logo/L13_Or.lean:35
-msgid "Observe goal as §0.\n"
+msgid ""
+"Observe goal as §0.\n"
 "Do not try §1 as §2 but as §3"
 msgstr ""
 "**Glifo**: Mira, si tocas una hipótesis con el dedo, te enseña cómo están puestos los paréntesis. Alucinante…\n"
@@ -2605,7 +2696,8 @@ msgstr "**Glifo**: Ahora te queda demostrar tu objetivo suponiendo la mitad dere
 #. §27: `obtain ⟨h₁, h₂⟩ := h`
 #. §28: `obtain h := h \\| h`
 #: Game/Levels/Logo/L13_Or.lean:116
-msgid "Conclusion Logo L13:\n"
+msgid ""
+"Conclusion Logo L13:\n"
 "Notations introdced so far:\n"
 "§0, §1, §2, §3 (shorthand for §4), §5, §6 (§7 is always true),\n"
 "§8 (§9 is always false), §10, §11, §12, §13, §14, §15 (Proof that §16 is true),\n"
@@ -2668,7 +2760,8 @@ msgstr ""
 #. §5: `left`
 #. §6: `right`
 #: Game/Levels/Logo/L14_Summary.lean:24
-msgid "Intro Logo L14: The most important tactics of this chapter concerning §0 and §1.\n"
+msgid ""
+"Intro Logo L14: The most important tactics of this chapter concerning §0 and §1.\n"
 "For both logical operations the tactis §2 and §3 can be used respectivelly.\n"
 "Analogously, when working with the goal §4 and §5/§6 can be used respectivelly as well."
 msgstr ""
@@ -2750,7 +2843,8 @@ msgstr "**Jefe de Operaciones**: Aquí, por ejemplo:"
 #. §6: `h`
 #. §7: `intro h`
 #: Game/Levels/Implis/L01_Intro.lean:39
-msgid "Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
+msgid ""
+"Proof the implication (§0), that assuming §1 is true, §2 implies §3\n"
 "is also true. You cannot use §4. Begin by assumption that §5 is true. For this choose\n"
 "name §6 for assumption and introduce it via §7"
 msgstr ""
@@ -2818,7 +2912,8 @@ msgstr ""
 #. §3: `«{A}» \\to «{B}»`
 #. §4: `revert`
 #: Game/Levels/Implis/L02_Revert.lean:45
-msgid "§0 is like §1 'backwards'. §2 takes the premisse out of §3\n"
+msgid ""
+"§0 is like §1 'backwards'. §2 takes the premisse out of §3\n"
 "and makes it into an assumption. §4 takes an assumption and sets it as the implication premisse\n"
 "in front of the goal."
 msgstr ""
@@ -2852,7 +2947,8 @@ msgstr "**Glifo**: Quizá habría sido más elegante, de todos modos, aplicar la
 #. §3: `B`
 #. §4: `A`
 #: Game/Levels/Implis/L03_Apply.lean:37
-msgid "§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n"
+msgid ""
+"§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n"
 "§4 has to be proven."
 msgstr ""
 "**Glifo**: Yo dije §0. Pero, por lo visto, simplemente §1 también funciona.\n"
@@ -2914,7 +3010,8 @@ msgstr "**Jefe de Operaciones**: ¡Sois geniales, de verdad!"
 #.   \\end{CD}
 #.   $$
 #: Game/Levels/Implis/L05_Apply.lean:23
-msgid "Intro Implis L05: Introduce implication graph\n"
+msgid ""
+"Intro Implis L05: Introduce implication graph\n"
 "  §0"
 msgstr ""
 "La siguiente página parece un poco más complicada.\n"
@@ -2982,7 +3079,8 @@ msgstr "**Jefe de Operaciones**: Antes también teníamos algunas cintas transpo
 #. §4: `A ∧ B`
 #. §5: `constructor`
 #: Game/Levels/Implis/L06_Iff.lean:29
-msgid "§0 is Leanic for §1. §2 consists of two parts. It is defined as §3.\n"
+msgid ""
+"§0 is Leanic for §1. §2 consists of two parts. It is defined as §3.\n"
 "It is a similar defintion to §4. Start with §5"
 msgstr ""
 "**Glifo**: §0 es, naturalmente, §1 en leanés; es decir, \"si y solo si\". El enunciado §2 consta, pues, de dos partes; está definido como §3.\n"
@@ -3007,7 +3105,8 @@ msgstr "**Tú**: Ah, y las dos partes ya las tengo en las hipótesis."
 #. §9: `mp`
 #. §10: `mpr`
 #: Game/Levels/Implis/L06_Iff.lean:53
-msgid "Conclusion Implis L06: Explain that analogous to §0 with §1 and §2,\n"
+msgid ""
+"Conclusion Implis L06: Explain that analogous to §0 with §1 and §2,\n"
 "§3 has §4 and §5. §6 can be understood as §7. It is §8 as §9\n"
 "stands for Modens Ponens. The 'r' in §10 stands for 'reverse'."
 msgstr ""
@@ -3067,7 +3166,8 @@ msgstr ""
 #. §3: `rfl`
 #. §4: `rfl`
 #: Game/Levels/Implis/L08_Rw.lean:45
-msgid "You can continue until there is §0 and then apply §1. §2 always uses §3,\n"
+msgid ""
+"You can continue until there is §0 and then apply §1. §2 always uses §3,\n"
 "meaning hat §4 does not have to be written"
 msgstr ""
 "**Tú**: Uy, eso no ha salido bien.\n"
@@ -3088,7 +3188,8 @@ msgstr "**Jefe de Operaciones**: ¡Si seguís así, nos vamos a ventilar el mont
 #. §4: `B ↔ A`
 #. §5: `trans D`
 #: Game/Levels/Implis/L09_Trans.lean:16
-msgid "Intro Implis L09: Instead of §0 use §1 here.\n"
+msgid ""
+"Intro Implis L09: Instead of §0 use §1 here.\n"
 "With it you can solve §2 step-by-step by using\n"
 "§3 to introduce the intermediate step §4 and then\n"
 "perform the next step with §5"
@@ -3125,7 +3226,8 @@ msgstr ""
 #. §5: `«{h}».mp`
 #. §6: `apply («{h}».mp) at …`
 #: Game/Levels/Implis/L10_Iff.lean:36
-msgid "We know that §0 can be used on implications. Intuitively, for equivalence §1\n"
+msgid ""
+"We know that §0 can be used on implications. Intuitively, for equivalence §1\n"
 "one could use §2. The direction §3 of §4 is denoted by §5.\n"
 "Try §6"
 msgstr ""
@@ -3217,7 +3319,8 @@ msgstr ""
 #. §0: `A`
 #. §1: `A`
 #: Game/Levels/Implis/L12_ByCases.lean:34
-msgid "Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\n"
+msgid ""
+"Proof consists now of two parts. First assumes that §0 is true. Second assumes that §1\n"
 "is false"
 msgstr "**Glifo**: ¿Ves? Ahora la demostración tiene dos partes. En la primera parte supones que §0 es verdadera. En la segunda supones que §1 es falsa."
 
@@ -3230,7 +3333,8 @@ msgstr "El Jefe de Operaciones asiente con aprobación."
 #. lemma not_not : ¬¬A ↔ A
 #. ```
 #: Game/Levels/Implis/L13_Rw.lean:21
-msgid "Intro Implis L13: Do not use §0. Try it with\n"
+msgid ""
+"Intro Implis L13: Do not use §0. Try it with\n"
 "§1"
 msgstr ""
 "**Jefe de Operaciones**: Otra cosa más para mi compañero… Quiere de nuevo una demostración sin §0. Y aquí veo que en su momento ya me apunté algo al respecto. Eso es: existe este lema:\n"
@@ -3252,7 +3356,8 @@ msgstr "**Glifo**: Un lema que, como §0, tiene una equivalencia (§1)  o una ig
 #. §2: `¬¬C`
 #. §3: `¬¬B`
 #: Game/Levels/Implis/L13_Rw.lean:43
-msgid "Only two of three §0 are rewritten. §1 only rewrites only first found occurance i.e. §2.\n"
+msgid ""
+"Only two of three §0 are rewritten. §1 only rewrites only first found occurance i.e. §2.\n"
 "As §3 is considered to be something 'different' the lemma has to be applied again"
 msgstr ""
 "**Tú**: ¿Eh? ¿Por qué ha reescrito 2 de los 3 §0?\n"
@@ -3299,7 +3404,8 @@ msgstr "En lugar de este enunciado, muchas veces también se pueden usar las tá
 #. §20: `P`
 #. §21: `¬P`
 #: Game/Levels/Implis/L14_Summary.lean:43
-msgid "Intro Implis L14: This chapter used the following operations:\n"
+msgid ""
+"Intro Implis L14: This chapter used the following operations:\n"
 "§0, §1, §2, §3 (reversal of §4), §5, §6, §7 (changes §8 to §9),\n"
 "§10 (changes §11 to §12 and §13), §14 (rewrite goal with §15), §16 (rewrite\n"
 "assumption §17 using §18) and §19 (introduce cases §20 and §21)"
@@ -3396,7 +3502,6 @@ msgstr ""
 "\n"
 "**Jefe de Operaciones**: ¡Me venís que ni pintados! Ya he oído hablar de vosotros. ¡Matemáticos de verdad! Veréis: aquí extraemos valores de verdad. Y hay que andarse con cien ojos. Un error, y todo se viene abajo. Pero yo soy muy prudente. Siempre digo: ¡mejor parón que perdición!"
 
-
 #: Game/Levels/Quantus/L01_NonemptyUse.lean:9
 msgid "Intro Quantus L01"
 msgstr "Por delante pone lo siguiente."
@@ -3424,7 +3529,8 @@ msgstr "Por detrás pone lo siguiente."
 #. §4: `obtain`
 #. §5: `obtain ⟨a⟩ := h`
 #: Game/Levels/Quantus/L02_NonemptyObtain.lean:38
-msgid "§0 is in 'type', whcih can be interpreted as §1 being a set which is by assumption §2\n"
+msgid ""
+"§0 is in 'type', whcih can be interpreted as §1 being a set which is by assumption §2\n"
 "not empty. The goal is to show that there is an element in §3. Use §4 to disect assumption.\n"
 "Try §5."
 msgstr ""
@@ -3455,7 +3561,8 @@ msgstr ""
 #. ```
 #. §1: `Odd`
 #: Game/Levels/Quantus/L03_Decide.lean:25
-msgid "Intro Quantus L03: Show defintion\n"
+msgid ""
+"Intro Quantus L03: Show defintion\n"
 "§0\n"
 "before introducing §1"
 msgstr ""
@@ -3482,7 +3589,8 @@ msgstr ""
 #. §1: `Even 42`
 #. §2: `decide`
 #: Game/Levels/Quantus/L03_Decide.lean:58
-msgid "Conclusion Quantus L03: Explain that §0 can show True/False for §1, if\n"
+msgid ""
+"Conclusion Quantus L03: Explain that §0 can show True/False for §1, if\n"
 "§2 possesses an algorithm for making this decision"
 msgstr ""
 "**Tú**: ¿Y qué más sabe hacer §0?\n"
@@ -3498,7 +3606,8 @@ msgstr ""
 #. def Odd (n : ℕ) : Prop := ∃ r, n = 2 * r + 1
 #. ```
 #: Game/Levels/Quantus/L04_Exists.lean:27
-msgid "Intro Quantus L04: Show defintion\n"
+msgid ""
+"Intro Quantus L04: Show defintion\n"
 "§0\n"
 "\n"
 "and\n"
@@ -3527,7 +3636,8 @@ msgstr "El cuadrado de un número par es par."
 #. §5: `decide`
 #. §6: `«{n}»`
 #: Game/Levels/Quantus/L04_Exists.lean:57
-msgid "Explain definition of §0 by §1 using §2. Look up definition by §3.\n"
+msgid ""
+"Explain definition of §0 by §1 using §2. Look up definition by §3.\n"
 "§4 might be considered but §5 does not work, because of §6 arbitrary."
 msgstr ""
 "**Glifo**: Como ves arriba, §0 está definido mediante la existencia de un §1 tal que §2. Lo mejor será que despliegues esta definición con §3. Así verás mejor lo que pasa.\n"
@@ -3549,11 +3659,11 @@ msgstr "**Glifo**: Lo mejor será hagas también §0, para que entiendas lo que 
 #. ```
 #. §4: `1 = 1 / 2 + 1 / 2 = 0 + 0`
 #: Game/Levels/Quantus/L04_Exists.lean:82
-msgid "§0 is a natural number because division over §1 in Lean is always rounded down.\n"
+msgid ""
+"§0 is a natural number because division over §1 in Lean is always rounded down.\n"
 "For §2 that means\n"
 "§3\n"
 "which is  §4.\n"
-""
 msgstr ""
 "Un murmullo de desconcierto recorre la multitud.\n"
 "\n"
@@ -3571,7 +3681,8 @@ msgstr ""
 #. §3: `choose s hs using «{h}»`
 #. §4: `s`
 #: Game/Levels/Quantus/L04_Exists.lean:95
-msgid "Explain that from §0 follow that there is §1 such that §2. Try §3\n"
+msgid ""
+"Explain that from §0 follow that there is §1 such that §2. Try §3\n"
 "to introduce §4."
 msgstr ""
 "**Tú**: Entonces, por §0 ahora sé que existe un §1 tal que §2…\n"
@@ -3604,7 +3715,8 @@ msgstr "**Glifo**:  ¡Ese número tiene buena pinta!  Y ahora simplemente dices 
 #. §3: `«{s}» + «{s}»`
 #. §4: `ring`
 #: Game/Levels/Quantus/L04_Exists.lean:126
-msgid "before using §0, use §1 to replace §2 by §3, because\n"
+msgid ""
+"before using §0, use §1 to replace §2 by §3, because\n"
 "§4 does not know otherwise."
 msgstr ""
 "**Tú**: ¡Ah, y ahora §0!\n"
@@ -3701,7 +3813,8 @@ msgstr "**Glifo**: Mientras esperamos, deja que te enseñe un momento cómo se l
 #. §9: `x : «{X}»`
 #. §10: `push Not`
 #: Game/Levels/Quantus/L08_PushNeg.lean:41
-msgid "Explain §0: §1 is an expression over the type §2. §3 could e.g. be the natural\n"
+msgid ""
+"Explain §0: §1 is an expression over the type §2. §3 could e.g. be the natural\n"
 "numbers. §4 could be the expression: §5 is even. Or: §6 has seven prime factors. Or: §7 is\n"
 "a favorite number. In other words: §8 is a mapping that takes §9 and maps it onto an expression.\n"
 "Try §10."
@@ -3729,7 +3842,8 @@ msgstr "**Glifo**: §0 empuja de izquierda a derecha. Así que aquí no puedes a
 #. §2: `not_forall (P : X → Prop) : ¬ (∀ x, P x) ↔ ∃ x, (¬ P x)`
 #. §3: `push Not`
 #: Game/Levels/Quantus/L08_PushNeg.lean:78
-msgid "Conclusion Quantus L08: §0 internally uses §1\n"
+msgid ""
+"Conclusion Quantus L08: §0 internally uses §1\n"
 "and §2. Memorize §3."
 msgstr ""
 "**Glifo**: Bien hecho. Por cierto, internamente §0 usa dos lemas:\n"
@@ -3769,7 +3883,8 @@ msgstr ""
 #. §3: `rw`
 #. §4: `use`
 #: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid "Try §0 with a number and then §1. You can not use §2\n"
+msgid ""
+"Try §0 with a number and then §1. You can not use §2\n"
 "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
 msgstr ""
 "**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n"
@@ -3898,7 +4013,8 @@ msgstr "**Glifo**: ¿Qué ves cuando te fijas en §0 y en §1?"
 #. §18: `¬∃`
 #. §19: `¬∀`
 #: Game/Levels/Quantus/L10_DrinkersParadox.lean:115
-msgid "Conclusion Quantus L10: Overview of planet contents: §0, §1, §2 (§3 is even),\n"
+msgid ""
+"Conclusion Quantus L10: Overview of planet contents: §0, §1, §2 (§3 is even),\n"
 "§4 (§5 is odd), §6, §7 (solves equations containing §8), §9,\n"
 "§10, §11 (to tackle §12 in goal), §13 (to disect §14 in assumptions),\n"
 "§15 (to tackle §16 in goal) and §17 (for §18 and §19 in goal)."
@@ -4030,7 +4146,8 @@ msgstr "Otro mensaje de radio."
 #. §6: `X 0`
 #. §7: `X 1`
 #: Game/Levels/Saturn/L03_mul_comm.lean:29
-msgid "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
+msgid ""
+"Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
 "coefficients in §3.\n"
 "Explain §4 as the set of elements §5 that lead to the variables §6 and §7"
 msgstr ""
@@ -4064,7 +4181,8 @@ msgstr "**Glifo**: Aquí podrías usar §0. O §1 *otra vez* …"
 #. §1: `ℕ`
 #. §2: `ring`
 #: Game/Levels/Saturn/L04_mul_assoc.lean:36
-msgid "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
+msgid ""
+"Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
 "are not considered rings. §2 does also work on half rings."
 msgstr ""
 "Otro 👍.\n"
@@ -4099,8 +4217,7 @@ msgstr ""
 "\n"
 "**Glifo**: Parece más bien tóxica. O caliente.\n"
 "\n"
-"**Tú**: O las dos cosas.¡No quiero aterrizar ahí para nada!n"
-"\n"
+"**Tú**: O las dos cosas.¡No quiero aterrizar ahí para nada!n\n"
 "**Glifo**: Que sí, que sí, estoy haciendo todo lo que puedo. ¡Y mira cuánta basura hay ya orbitando por aquí! Lo mejor que podemos hacer ahora mismo es dejarnos llevar por la corriente."
 
 #: Game/Levels/Spinoza/L01_Have.lean:14
@@ -4157,7 +4274,8 @@ msgstr "**Benedicto**: Naturalmente, también podríais haber demostrado primero
 #. §3: `g`
 #. §4: `g`
 #: Game/Levels/Spinoza/L02_Suffices.lean:31
-msgid "Instead of §0, §1 can be used. After §2, you have to show how to\n"
+msgid ""
+"Instead of §0, §1 can be used. After §2, you have to show how to\n"
 "prove goal by §3 before proving §4 itself."
 msgstr ""
 "**Glifo**: ¡Yo sé a qué se refiere! En lugar de §0 también puedes usar §1. Funciona exactamente igual, salvo que los dos objetivos quedan intercambiados.\n"
@@ -4190,7 +4308,8 @@ msgstr "**Benedicto**: Aquí tenéis otra variante."
 #. §2: `by_contra h`
 #. §3: `contradiction`
 #: Game/Levels/Spinoza/L03_ByContra.lean:22
-msgid "Explain §0 in goal. Perform proof by §1 by stating with §2 and\n"
+msgid ""
+"Explain §0 in goal. Perform proof by §1 by stating with §2 and\n"
 "concluding with §3"
 msgstr ""
 "**Glifo**: Un §0 en el objetivo suele indicar que quieres hacer una demostración por contradicción.\n"
@@ -4270,7 +4389,8 @@ msgstr "**Benedicto**: Bien, aquí tenéis la pregunta prometida. Intentad una d
 #. §5: `revert «{h}»`
 #. §6: `«{h}»`
 #: Game/Levels/Spinoza/L05_Contrapose.lean:32
-msgid "Refer back to §0 as §1 is equivalent in contrapoition to §2.\n"
+msgid ""
+"Refer back to §0 as §1 is equivalent in contrapoition to §2.\n"
 "Explain that lack of  §3 can be dealt with §4 via §5 for §6."
 msgstr ""
 "**Glifo**: Propongo que lo reduzcamos al lema §0, que ya demostramos en Quantus. En el fondo, lo que pone aquí es §1. Y por contraposición eso es equivalente a §2.\n"
@@ -4334,7 +4454,8 @@ msgstr "**Glifo**: O sea: §0."
 #. §5: `revert`
 #. §6: `contrapose`
 #: Game/Levels/Spinoza/L06_Summary.lean:61
-msgid "Conclusion Spinoza L06: overview of planet's contents:\n"
+msgid ""
+"Conclusion Spinoza L06: overview of planet's contents:\n"
 "§0, §1, §2, §3, §4, §5 (useful when applying\n"
 "§6 afterwards)."
 msgstr ""
@@ -4409,7 +4530,8 @@ msgstr "**Rita** *(susurrando)*: ¡Probad con §0!"
 #. §1: `omega`
 #. §2: `omega`
 #: Game/Levels/Luna/L02_Omega.lean:40
-msgid "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
+msgid ""
+"Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
 "§2 is only really applicable over integers."
 msgstr ""
 "Lina pone los ojos en blanco.\n"
@@ -4432,7 +4554,8 @@ msgstr "**Lina**: ¡Venga, probad con esto!"
 #. obtain h | h | h := lt_trichotomy x y
 #. ```
 #: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:19
-msgid "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
+msgid ""
+"Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
 "\n"
 "§4"
 msgstr ""
@@ -4483,7 +4606,8 @@ msgstr "**Lina**: ¡Otra vez la misma pregunta, pero ahora en ℝ!"
 #. §2: `linarith`
 #. §3: `intro`
 #: Game/Levels/Luna/L05_Linarith2.lean:27
-msgid "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
+msgid ""
+"§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
 "the implications via §3"
 msgstr ""
 "**Tú** (*a Glifo*): Aquí no avanzo ni con §0 ni con §1.\n"
@@ -4520,7 +4644,8 @@ msgstr "**Rita**: ¿Puedo yo también? Tomad."
 #. §3: $\\{a, a + 1, \\dots, b\\}$
 #. §4: $$ [a, b] ∪ \\{ b + 1 \\} = [a, b + 1] $$
 #: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:35
-msgid "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
+msgid ""
+"Remind that §0 is an interval which is closed to both sides. You could write §1\n"
 "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
 "goal is: §4"
 msgstr ""
@@ -4561,13 +4686,13 @@ msgstr "**Lina**: Basta ya de §0, que ahora me toca a mí."
 #. y ≤ \\tfrac{34}{7}
 #. $$
 #: Game/Levels/Luna/L07_Linarith2.lean:37
-msgid "Given\n"
+msgid ""
+"Given\n"
 "\n"
 "§0\n"
 "\n"
 "Show\n"
 "§1\n"
-""
 msgstr ""
 "**Tú**: Esto necesito volver a escribirlo. Nos dan:\n"
 "\n"
@@ -4605,9 +4730,9 @@ msgstr "**Lina**: Ahora es mi turno."
 #. obtain h | h | h := lt_trichotomy a c
 #. ```
 #: Game/Levels/Luna/L09_lt_trichotomy2.lean:28
-msgid "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
+msgid ""
+"It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
 "§3\n"
-""
 msgstr ""
 "**Tú**: Bueno, está bastante claro qué §0 se podría usar aquí.\n"
 "\n"
@@ -4644,7 +4769,8 @@ msgstr "**Glifo**: A lo mejor §0 vuelve a ser de ayuda aquí. Y si no hay maner
 #. §4: `a₁ ≤ a₁`
 #. §5: `have`
 #: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:50
-msgid "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
+msgid ""
+"Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
 "Formulate §4 using §5"
 msgstr "**Glifo**: Seguro que tienes que aprovechar de alguna manera la hipótesis §0. ¡Podrías, por ejemplo, aplicar §1 a la desigualdad §2 o a §3! (La desigualdad §4, lo mejor es que la formules con §5.)"
 
@@ -4682,7 +4808,8 @@ msgstr "**Babilonio**: Cada torre tiene una inscripción. Ahí podéis leer con 
 #. §2: $I$
 #. §3: `simp`
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:34
-msgid "Explain goal as §0 being equal to the number of elements in §1\n"
+msgid ""
+"Explain goal as §0 being equal to the number of elements in §1\n"
 "i.e. the cardinality of §2. Try §3"
 msgstr ""
 "**Tú**: Vaya, esto son muchas cosas nuevas… a ver…\n"
@@ -4718,7 +4845,8 @@ msgstr ""
 #. §1: `trans ∑ i ∈ I, 0`
 #. §2: `\\sum`
 #: Game/Levels/Babylon/L03_sum_congr.lean:28
-msgid "Remind that goal looks like §0. Try §1. The sum sign is written\n"
+msgid ""
+"Remind that goal looks like §0. Try §1. The sum sign is written\n"
 "as §2."
 msgstr ""
 "**Tú**: La hipótesis parece una versión enrevesada de §0. Sea como sea, de ahí no puede salir una suma muy grande.\n"
@@ -4819,7 +4947,8 @@ msgstr "**Glifo**: Ahora puedes separar la hipótesis §0 en los tres casos con 
 #. §6: ``` ∑ i ∈ { i ∈ I | Even i}, ((-1)^i + 1) ```
 #. §7: ``` ∑ i ∈ { i ∈ I | Even i}, 2 ```
 #: Game/Levels/Babylon/L05_sum_subset2.lean:38
-msgid "Goal is to show that §0 is equal to twice the amount of\n"
+msgid ""
+"Goal is to show that §0 is equal to twice the amount of\n"
 "even numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\n"
 "constrain sum to §6 and then use §7\n"
 "as intermediate step."
@@ -4884,7 +5013,8 @@ msgstr ""
 #. §4: `d`
 #. §5: `hd`
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:52
-msgid "To proof sum §0\n"
+msgid ""
+"To proof sum §0\n"
 "try to perform induction over §1 using §2. §3 is optional and you can\n"
 "decide on the name of your induction variable (§4) and hypothesis (§5)."
 msgstr ""
@@ -4921,7 +5051,8 @@ msgstr "**Glifo**: Ahora igual quieres partir el intervalo §0, sobre el que se 
 #. §2: $«{d}»+1$
 #. §3: `rw [sum_insert]`
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:76
-msgid "§0 will divide sum as wished: a sum over §1 and an additional summand for §2.\n"
+msgid ""
+"§0 will divide sum as wished: a sum over §1 and an additional summand for §2.\n"
 "Try §3"
 msgstr "**Glifo**: ¡Exacto! Y ahora §0 te parte la suma justo como tú quieres: una suma sobre §1 y un sumando adicional para §2. Pruébalo: §3"
 
@@ -4969,7 +5100,8 @@ msgstr "**Glifo**: Exacto, y ahora otra vez §0."
 #. §3: `ℤ`
 #. §4: ``` have : -1 + (-d : ℤ)  = -d - 1 ```
 #: Game/Levels/Babylon/L07_Induction2_sum_insert2.lean:50
-msgid "Rewrite §0 to §1. Formulate equation using §2.\n"
+msgid ""
+"Rewrite §0 to §1. Formulate equation using §2.\n"
 "Also, specify that equation is in §3. Try e.g. §4"
 msgstr ""
 "**Glifo**: Me temo que a continuación tendrás que reescribir §0 como §1.\n"
@@ -5050,7 +5182,8 @@ msgstr ""
 #. §3: `A`
 #. §4: `f`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:22
-msgid "Intro Cantor L01: Mapping §0 from §1 to the power set of §2, and the set\n"
+msgid ""
+"Intro Cantor L01: Mapping §0 from §1 to the power set of §2, and the set\n"
 "of all elements in §3, which are not located in its image under §4"
 msgstr ""
 "**Cantor**: … consideramos, pues, una aplicación §0 de §1 en el conjunto de partes de §2, y ahora el conjunto de todos aquellos elementos de §3 que no pertenecen a su imagen por §4 …\n"
@@ -5106,7 +5239,8 @@ msgstr ""
 #. §1: `have`
 #. §2: `suffices : «{a}» ∉ «{f}» «{a}»`
 #: Game/Levels/Cantor/L01_CantorPowerset.lean:77
-msgid "Remind that, assumpion §0 will be needed agian.\n"
+msgid ""
+"Remind that, assumpion §0 will be needed agian.\n"
 "Try §1 or §2"
 msgstr ""
 "**Cantor**: ¡Buena idea! ¡Casi es correcto!\n"
@@ -5155,7 +5289,8 @@ msgstr "**Glifo**: ¡Prueba con el conjunto de antes! Para empezar, podrías int
 #. §2: `simp [«{s}»]`
 #. §3: `simp`
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:74
-msgid "Try §0. When you apply §1 later, §2 allows §3 to look through\n"
+msgid ""
+"Try §0. When you apply §1 later, §2 allows §3 to look through\n"
 "your defintions"
 msgstr "**Glifo**: ¡Genial! Ahora puedes seguir simplemente con §0, por ejemplo. Y, cuando más adelante apliques §1, puedes utilizar §2 para asegurarte de que §3 ve a través de tu definición."
 
@@ -5197,7 +5332,8 @@ msgstr ""
 #. §2: `IsFixedPt`
 #. §3: `unfold`
 #: Game/Levels/Cantor/L03_IsFixedPt_abs.lean:47
-msgid "§0 is the absolute value of the real number §1. The meaning of §2\n"
+msgid ""
+"§0 is the absolute value of the real number §1. The meaning of §2\n"
 "can be found out by using §3."
 msgstr "**Glifo**: Pues §0 es simplemente el valor absoluto habitual del número real §1. Y lo que significa §2 probablemente lo averigües con §3."
 
@@ -5261,7 +5397,8 @@ msgstr ""
 #. §0: `¬`
 #. §1: `Prop`
 #: Game/Levels/Cantor/L05_IsFixedPt_not.lean:33
-msgid "The second §0 means the same as the first: logical negation. Interpret it as the self\n"
+msgid ""
+"The second §0 means the same as the first: logical negation. Interpret it as the self\n"
 "mapping of the set §1 of all possible satements."
 msgstr ""
 "**Tú**: ¿Qué significa aquí el segundo §0?\n"
@@ -5346,7 +5483,8 @@ msgstr ""
 #. §13: `f`
 #. §14: `A → (A → Y)`
 #: Game/Levels/Cantor/L08_CantorDiag_IsFixedPt.lean:59
-msgid "Explain for §0, that §1 is a mapping from §2 to the set of mappings of §3,\n"
+msgid ""
+"Explain for §0, that §1 is a mapping from §2 to the set of mappings of §3,\n"
 "which in turn is the same as the mapping from §4 to §5. You can interpret §6 either\n"
 "as applying §7 onto §8 or applying §9 onto §10. The element §11 lays\n"
 "on the diagonal. Assumption §12 is formulated s.t. the interpretation of §13 as §14\n"
@@ -5369,7 +5507,8 @@ msgstr ""
 #. §2: `f a a`
 #. §3: `nth_rw 2 [«{ha}»]`
 #: Game/Levels/Cantor/L08_CantorDiag_IsFixedPt.lean:74
-msgid "§0 was replaced by §1. It is probably necessary to rewrite the second\n"
+msgid ""
+"§0 was replaced by §1. It is probably necessary to rewrite the second\n"
 "appearnace of §2 in the goal. Try §3"
 msgstr ""
 "**Glifo**: Básicamente, has sustituido las dos apariciones de §0 por §1.\n"
@@ -5395,7 +5534,8 @@ msgstr "**Cantor**: ¡Bravo!"
 #. §4: $\\{0,1\\}$
 #. §5: `Y`
 #: Game/Levels/Cantor/L09_CantorDiag.lean:49
-msgid "The goal is that each self mapping §0 possess a fixed point.\n"
+msgid ""
+"The goal is that each self mapping §0 possess a fixed point.\n"
 "Does not every set have a self mapping without fixed points? E.g. §1 in §2\n"
 "or §3 … or the non-trivial permutations in §4. Thought: if §5 is not a set with\n"
 "a single element then there should be a fixed-point-free self mapping."
@@ -5415,7 +5555,8 @@ msgstr ""
 #. §2: ``` let c : «{A}» → «{Y}» := fun a ↦ _ ```
 #. §3: `c`
 #: Game/Levels/Cantor/L09_CantorDiag.lean:68
-msgid "exploit the surjectivity of §0 somehow. It was already told\n"
+msgid ""
+"exploit the surjectivity of §0 somehow. It was already told\n"
 "which of mapping §1 the preimage has to be considered. One could define §2\n"
 "and then observe the preimage of §3."
 msgstr ""
@@ -5435,7 +5576,8 @@ msgstr ""
 #. §5: `a : A`
 #. §6: `a ∈ S`
 #: Game/Levels/Cantor/L10_CantorPowerset.lean:23
-msgid "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+msgid ""
+"Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
 "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
 msgstr ""
 "**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n"
@@ -5525,7 +5667,8 @@ msgstr ""
 #. E i j := single i j (1 : ℝ)
 #. ```
 #: Game/Levels/Robotswana/L01_SMulEBasis.lean:24
-msgid "Intro Robotswana L01: introduce definition\n"
+msgid ""
+"Intro Robotswana L01: introduce definition\n"
 "§0"
 msgstr ""
 "Siguiendo las huellas, encontráis un trozo de pergamino con una nota escrita arriba del todo.\n"
@@ -5543,7 +5686,8 @@ msgstr ""
 #. §6: `a`
 #. §7: `E`
 #: Game/Levels/Robotswana/L01_SMulEBasis.lean:35
-msgid "§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\n"
+msgid ""
+"§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\n"
 "Stelle §4 und Null überall sonst.\n"
 "\n"
 "Dies ist eine spezialisierte Form der generellen §5,\n"
@@ -5586,7 +5730,8 @@ msgstr ""
 #. $$
 #. §16: `unfold E`
 #: Game/Levels/Robotswana/L01_SMulEBasis.lean:87
-msgid "§0 looks like a §1 matrix. Reminder for §2: §3 is\n"
+msgid ""
+"§0 looks like a §1 matrix. Reminder for §2: §3 is\n"
 "the set §4. Indeces start here at §5 and not §6. §7 is the matrix which\n"
 "has at position §8 the entry §9 and else zero. §10s are abbreviations for case §11.\n"
 "§12 is entry of matrix §13 at position §14. Goal can be seen as scalar multiplication akin to\n"
@@ -5594,7 +5739,6 @@ msgid "§0 looks like a §1 matrix. Reminder for §2: §3 is\n"
 "§15\n"
 "\n"
 "Begin with §16.\n"
-""
 msgstr ""
 "**Tú**: Sea cual sea la criatura que ha dejado aquí sus huellas, me da la impresión de que le gustan las matrices. En cualquier caso, §0 tiene toda la pinta de ser matrices §1. Lo que ya no recuerdo es qué era §2.\n"
 "\n"
@@ -5676,7 +5820,8 @@ msgstr ""
 #. §5: $(m × n)$
 #. §6: $R$
 #: Game/Levels/Robotswana/L04_MatrixEqSum.lean:28
-msgid "[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
+msgid ""
+"[Doc.Theorem] Matrix.matrix_eq_sum_ebasis\n"
 "every §0 matrix §1 over §2 an be expressed as\n"
 "§3\n"
 "more generally, use §4 for §5 matrices over any §6"
@@ -5699,9 +5844,9 @@ msgstr ""
 #. §2: `rw […]`
 #. §3: `simp […]`
 #: Game/Levels/Robotswana/L04_MatrixEqSum.lean:48
-msgid "Expression §0 can be simplified with §1.\n"
+msgid ""
+"Expression §0 can be simplified with §1.\n"
 "§2 can not be used under a sum. §3 can work.\n"
-""
 msgstr ""
 "**Glifo**: Seguro que la expresión §0 la puedes simplificar con §1.\n"
 "\n"
@@ -5748,7 +5893,8 @@ msgstr "**Tú**: Tengo la sensación de que estamos tras la pista de alguien int
 #. §3: `r`
 #. §4: `w`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:57
-msgid "Try §0 on §1 with §2 to §3e§4rite\n"
+msgid ""
+"Try §0 on §1 with §2 to §3e§4rite\n"
 "goal."
 msgstr "**Glifo**: Como te decía, creo que puedes empezar directamente con §0, aplicado a la matriz identidad §1 que hay a la derecha de la igualdad. Básicamente quieres §3(§4)eescribir el objetivo con §2."
 
@@ -5863,7 +6009,8 @@ msgstr "**Glifo**: Y como es falso, con §0 y §1 puedes continuar."
 #. [A, B] = AB - BA
 #. $$
 #: Game/Levels/Robotswana/L06_EBasisEqOnDiag.lean:25
-msgid "Intro Robotswana L06: Introduce nihiliated cummotator\n"
+msgid ""
+"Intro Robotswana L06: Introduce nihiliated cummotator\n"
 "§0"
 msgstr ""
 "Siguiendo el rastro, llegáis a un gran árbol. A la sombra encontráis algo inmóvil:\n"
@@ -6016,13 +6163,13 @@ msgstr ""
 #. §8: `nth_rw 1 [ ... ]`
 #. §9: `rw`
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:67
-msgid "\n"
+msgid ""
+"\n"
 "§0\n"
 "\n"
 "Write §1 as sum of base matrices. Use linearity to make §2 disappear in §3 with §4.\n"
 "Rewrite first §5 in §6 as sum of base matrices, but not the later §7. Try §8\n"
 "which works like §9.\n"
-""
 msgstr ""
 "\n"
 "**Tú**: ¿Y esto ahora qué querrá decir…?\n"
@@ -6137,7 +6284,8 @@ msgstr ""
 "**Glifo**: Casi: aún queda la segunda mitad del paso §0 de arriba. Esa mitad es muy sencilla."
 
 #: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:159
-msgid "[Doc.Theorem] map_sum\n"
+msgid ""
+"[Doc.Theorem] map_sum\n"
 "Linear mapping, or 'additive' mappings in general, can be exchanged with a sum."
 msgstr "Las aplicaciones lineales (o, de manera más general, las aplicaciones \"aditivas\") pueden intercambiarse por una suma."
 
@@ -6176,7 +6324,8 @@ msgstr "**Tú**: Vale. Acerquémonos con cuidado."
 #. ```
 #. §8: `mul_eq_mul_left_iff`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:73
-msgid "\n"
+msgid ""
+"\n"
 "§0-th multiplication of the equation can be calculated with the former results as:\n"
 "§1\n"
 "\n"
@@ -6184,7 +6333,6 @@ msgid "\n"
 "multiplications with §6 are injective. Try\n"
 "§7\n"
 "and then continue with §8.\n"
-""
 msgstr ""
 "\n"
 "Te quedas pensando un poco y garabateas algo en el papel.\n"
@@ -6484,7 +6632,8 @@ msgstr ""
 #. §6: `\\|`
 #. §7: `\\dvd`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:24
-msgid "Intro Prado L02: Prove that §0 is only even prime by using the expression „§1 divides §2“.\n"
+msgid ""
+"Intro Prado L02: Prove that §0 is only even prime by using the expression „§1 divides §2“.\n"
 "„§3 divides §4“ is written as §5, where the vertical bar can be either written as §6 or §7"
 msgstr ""
 "**Tú** *(susurrando)*: Glifo, ¿tú crees que deberíamos decírselo?\n"
@@ -6501,9 +6650,9 @@ msgstr ""
 #. rw [dvd_iff_exists_eq_mul_left] at *
 #. ```
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:44
-msgid "§0 is defined as §1. State is explicitly with\n"
+msgid ""
+"§0 is defined as §1. State is explicitly with\n"
 "§2\n"
-""
 msgstr ""
 "**Glifo**: §0 está definido, por supuesto, como §1. Para empezar, lo mejor es que lo escribas explícitamente en todas partes:\n"
 "§2\n"
@@ -6536,7 +6685,8 @@ msgstr "**Glifo**: Reescribiendo un poco, seguro que se puede usar §0."
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:71
-msgid "§0 bedeutet §1.\n"
+msgid ""
+"§0 bedeutet §1.\n"
 "\n"
 "**Warnung**: Die Symbole §2 (§3) und §4 (ASCII vertikaler Strich) sind zwei unterschiedliche\n"
 "Zeichen! Das erste wird ausschließlich für „teilt“ verwendet, das andere kommt zum Beispiel in der\n"
@@ -6586,7 +6736,8 @@ msgstr ""
 #. §3: `a * b < a * c`
 #. §4: `b < c`
 #: Game/Levels/Prado/L05_not_dvd_of_lt_of_lt_mul_succ.lean:33
-msgid "Use §0 and the lemma §1.\n"
+msgid ""
+"Use §0 and the lemma §1.\n"
 "For the latter, given §2 it concludes from the assumption §3 that §4"
 msgstr ""
 "**Tú**: ¿§0?\n"
@@ -6620,7 +6771,8 @@ msgstr ""
 #. §0: `2`
 #. §1: `1`
 #: Game/Levels/Prado/L06_Prime_Specialize__prime_def.lean:32
-msgid "A prime number is a natural number greater or equal to §0, which is only divisible by §1\n"
+msgid ""
+"A prime number is a natural number greater or equal to §0, which is only divisible by §1\n"
 "and itself"
 msgstr "**Tú**: Ajá. Así que un número primo es un número natural mayor o igual que §0 que solo es divisible por §1 y por sí mismo. Eso me suena."
 
@@ -6693,7 +6845,8 @@ msgstr "**Glifo**: Pero tampoco es tan difícil. Toma, échale un vistazo a este
 #. §8: `m`
 #. §9: `use _`
 #: Game/Levels/Prado/L09_ExistsUnique.lean:28
-msgid "§0 is notation for 'there exists exactly one §1 for which §2 holds'.\n"
+msgid ""
+"§0 is notation for 'there exists exactly one §1 for which §2 holds'.\n"
 "It is defined as 'There exists a §3 , s.t., §4 holds, and each other element §5, for which\n"
 "§6 holds, is equal to §7'. Try finding an appropriate §8 and apply §9"
 msgstr ""
@@ -6712,7 +6865,8 @@ msgstr "**Glifo**: La verdad es que §0 aplicado a §1 siempre genera un poco de
 #. §1: `a * «{w}» = b`
 #. §2: `«{w}»`
 #: Game/Levels/Prado/L09_ExistsUnique.lean:39
-msgid "Show two statements: (1) §0 satisfies §1 and (2) §2 is the only element with\n"
+msgid ""
+"Show two statements: (1) §0 satisfies §1 and (2) §2 is the only element with\n"
 "such a property"
 msgstr "**Glifo**: Ahora, como te decía, tienes que demostrar dos enunciados: (1) §0 satisface §1, (2) §2 es el único elemento con esta propiedad."
 
@@ -6721,9 +6875,9 @@ msgstr "**Glifo**: Ahora, como te decía, tienes que demostrar dos enunciados: (
 #. a * b = a * c ↔ b = c ∨ a = 0
 #. ```
 #: Game/Levels/Prado/L09_ExistsUnique.lean:53
-msgid "Try §0 which states\n"
+msgid ""
+"Try §0 which states\n"
 "§1\n"
-""
 msgstr ""
 "**Glifo**: Genial. Ahora vamos con la unicidad. Creo que aquí podría ayudar el lema §0:\n"
 "\n"
@@ -6804,7 +6958,8 @@ msgstr "Un poco más adelante por el pasillo veis otro libro abierto en el suelo
 #. §1: `a`
 #. §2: `intro`
 #: Game/Levels/Euklid/L02_prod_insert.lean:24
-msgid "Goal: if §0 divides factor §1 of a product then it also divides the product.\n"
+msgid ""
+"Goal: if §0 divides factor §1 of a product then it also divides the product.\n"
 "Try §2"
 msgstr ""
 "**Glifo**: Esta línea también parece muy razonable: si un número §0 divide a un factor §1 de un producto, entonces divide al producto entero.\n"
@@ -6853,7 +7008,8 @@ msgstr ""
 #. §3: `{ p : ℕ | Prime p} : Set ℕ`
 #. §4: `{ p : ℕ | Prime p} : Finset ℕ`
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:38
-msgid "Here §0 is useful. The product over all primes can only be reasoned\n"
+msgid ""
+"Here §0 is useful. The product over all primes can only be reasoned\n"
 "with, when interpreted as a §1. The first line does exactly this: it uses §2 to transform\n"
 "§3 into a finite set §4."
 msgstr ""
@@ -6868,7 +7024,8 @@ msgstr ""
 #. §0: `all_primes.bubblewrap = blister cong foo`
 #. §1: `\\prod`
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:54
-msgid "§0 us nonsensical. You want to use the product of\n"
+msgid ""
+"§0 us nonsensical. You want to use the product of\n"
 "all those numbers. Write the product sign as §1"
 msgstr ""
 "**Tú**: ¿Y la siguiente línea?\n"
@@ -6898,7 +7055,8 @@ msgstr "**Glifo**: Aquí, §0 debería volver a ser de ayuda."
 #. §2: `all_primes`
 #. §3: `simp [all_primes]`
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:86
-msgid "If §0 alone does not work, try giving §1\n"
+msgid ""
+"If §0 alone does not work, try giving §1\n"
 "the definition of §2. Try §3"
 msgstr "**Glifo**: Si aquí §0 no funciona, quizá tengas que pasarle a §1 la definición de §2. Es decir, §3."
 
@@ -6909,7 +7067,8 @@ msgstr "**Glifo**: Si aquí §0 no funciona, quizá tengas que pasarle a §1 la 
 #. §4: `h.toFinset`
 #. §5: `h.toFinset : Finset T`
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:95
-msgid "[Doc.Theorem] Set.Finite.toFinset:\n"
+msgid ""
+"[Doc.Theorem] Set.Finite.toFinset:\n"
 "Given §0, §1 with §2, §3,\n"
 "§4, §5 is the same subset viewed as finite subset."
 msgstr ""
@@ -6995,9 +7154,9 @@ msgstr ""
 #. §4: $f(n)$
 #. §5: `f (n)`
 #: Game/Levels/Vieta/L01_FunctionNotation.lean:27
-msgid "Explain §0 as mapping from §1 to §2:\n"
+msgid ""
+"Explain §0 as mapping from §1 to §2:\n"
 "§3 is notation for §4. If you want to use brackets it has to be §5.\n"
-""
 msgstr ""
 "**Tú**: Parece que §0 es una aplicación de §1 en §2.\n"
 "\n"
@@ -7032,12 +7191,12 @@ msgstr ""
 #. §5: `rfl`
 #. §6: `simp [«{f}»]`
 #: Game/Levels/Vieta/L02_Function.lean:46
-msgid "Explain anonymous function §0 as mapping §1.\n"
+msgid ""
+"Explain anonymous function §0 as mapping §1.\n"
 "Only §2 the anon. function would receive a name. The goal is for\n"
 "§3\n"
 "to show that §4.\n"
 "You can try §5 or §6\n"
-""
 msgstr ""
 "**Glifo**: Ajá, esto ya es más interesante. Aquí §0 es una \"función anónima\", concretamente la aplicación §1.\n"
 "\n"
@@ -7069,7 +7228,8 @@ msgstr "Otra flecha. Y otro problema."
 #. §5: `\\mapsto`
 #. §6: `=>`
 #: Game/Levels/Vieta/L03_Let.lean:25
-msgid "Tackle  §0 either with §1 or define mapping §2 as before.\n"
+msgid ""
+"Tackle  §0 either with §1 or define mapping §2 as before.\n"
 "Remind that §3 is either §4 or §5 ro can be replyced by §6"
 msgstr "**Glifo**: Como siempre, un §0 lo abordas con §1. O primero te defines con §2 una aplicación que quieras usar, tal y como acabas de ver. Por cierto, la flecha §3 la escribes como §4 o §5. Aunque también puedes usar §6 en su lugar."
 
@@ -7206,7 +7366,8 @@ msgstr ""
 #. §6: `¬(0 ≤ «{x}»)`
 #. §7: `0 > «{x}»`
 #: Game/Levels/Vieta/L06_Piecewise.lean:62
-msgid "Try §0 for resulting cases §1 and §2 i.e. §3 and §4.\n"
+msgid ""
+"Try §0 for resulting cases §1 and §2 i.e. §3 and §4.\n"
 "Could switch via §5 between §6 and §7"
 msgstr ""
 "**Glifo**: Pues ahora puedes hacer una distinción de casos: §0.\n"
@@ -7257,7 +7418,8 @@ msgstr ""
 #. §4: `n ≥ 0`
 #. §5: `n.toNat`
 #: Game/Levels/Vieta/L07_Extend.lean:32
-msgid "Try §0. Explain, given §1 then §2 is the same number interpreted as a natural number.\n"
+msgid ""
+"Try §0. Explain, given §1 then §2 is the same number interpreted as a natural number.\n"
 "Remind that §3 undefined as §4 for §5"
 msgstr ""
 "**Glifo**: Aquí probablemente necesites §0: si §1 es un número entero, §2 es el mismo número, pero interpretado como número natural.\n"
@@ -7296,7 +7458,8 @@ msgstr "**Glifo**: Ah, esta es una misión para §0. Si ya sabes que §1, obtien
 #. §4: `rw [h]`
 #. §5: `f`
 #: Game/Levels/Vieta/L09_CongrFun.lean:27
-msgid "Try §0. Given assumption §1 rewrite it via §2 to §3.\n"
+msgid ""
+"Try §0. Given assumption §1 rewrite it via §2 to §3.\n"
 "§4 not applicable to more complex §5"
 msgstr ""
 "**Glifo**: ¡Esta es una misión para §0! Si tienes §1 como hipótesis, puedes reescribirla con §2 como §3.\n"
@@ -7431,7 +7594,8 @@ msgstr "**Glifo**: Con tantos cuantificadores, §0 no funciona aquí. Prueba en 
 #. §6: `RightInverse`
 #. §7: `RightInverse`
 #: Game/Levels/Epo/L03_LeftInverse.lean:23
-msgid "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
+msgid ""
+"Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
 "Try §4. It has to be written as §5 instead of §6\n"
 "because §7 is ambigous in Leanic."
 msgstr ""
@@ -7460,7 +7624,8 @@ msgstr "**Glifo**: Pues yo volvería a empezar con §0. Y luego echaría mano de
 #. §4: `f`
 #. §5: `comp_apply`
 #: Game/Levels/Epo/L04_RightInverse.lean:48
-msgid "Try §0 or §1.\n"
+msgid ""
+"Try §0 or §1.\n"
 "§2 without §3 does not work. You must explicitly point out which value\n"
 "the variable §4 should have in statment §5."
 msgstr "**Glifo**: Podrías seguir con §0 o con §1. (§2 sin §3 no funciona aquí: tienes que indicar explícitamente qué valor debe tomar la variable §4 en el enunciado de §5)"
@@ -7470,7 +7635,8 @@ msgstr "**Glifo**: Podrías seguir con §0 o con §1. (§2 sin §3 no funciona a
 #. §2: `use g`
 #. §3: `f`
 #: Game/Levels/Epo/L05_RightInverse.lean:24
-msgid "Show that there is right inverse to §0. You could again set mapping §1\n"
+msgid ""
+"Show that there is right inverse to §0. You could again set mapping §1\n"
 "and then apply §2. Think how right inverse of §3 could look like."
 msgstr ""
 "**Tú**: ¿Aquí se supone que debo demostrar que existe una inversa por la derecha de §0?\n"
@@ -7554,7 +7720,8 @@ msgstr "Los formalósofos se muestran satisfechos con vuestro desempeño."
 #. §2: `Injective.ne_iff`
 #. §3: `f a ≠ f b ↔ a ≠ b`
 #: Game/Levels/Mono/L02_InjectiveNeIff.lean:17
-msgid "Use short cut by instead of the definition of §0 using equivalent description\n"
+msgid ""
+"Use short cut by instead of the definition of §0 using equivalent description\n"
 "§1. In Leanic it is part of §2. For injective mapping it holds\n"
 "that §3"
 msgstr "**Glifo**: Aquí puedes atajar usando, en vez de la definición de §0, la descripción equivalente §1 de la inyectividad. En leanés, esa es una de las direcciones de §2: para aplicaciones inyectivas se cumple §3."
@@ -7574,11 +7741,11 @@ msgstr "**Glifo**: ¿§0?"
 #. §2: `ℕ → ℕ`
 #. §3: `f`
 #: Game/Levels/Mono/L03_NotInjective.lean:30
-msgid "The given mapping has the form\n"
+msgid ""
+"The given mapping has the form\n"
 "§0\n"
 "\n"
 "and §1 is the mapping §2, that for each input return the doubeled value of §3.\n"
-""
 msgstr ""
 "**Tú**: A ver, la aplicación dada tiene la siguiente forma:\n"
 "§0\n"
@@ -7627,7 +7794,8 @@ msgstr "**Glifo**: Aquí todo es tan concreto que a lo mejor basta con §0."
 #. §14: $A^{n+1}$
 #. §15: `diag`
 #: Game/Levels/Mono/L04_Diagonal.lean:32
-msgid "Explain §0: in the definition add brackets so it's §1. So, §2\n"
+msgid ""
+"Explain §0: in the definition add brackets so it's §1. So, §2\n"
 "is a mapping from §3 to §4. §5 is the set §6 and therfore,\n"
 "§7 is the set of mappings from §8 to §9. Hence, such a mapping can be seen\n"
 "as a §10-tuple of elements in §11. So, §12 is given as a mapping from §13 to §14.\n"
@@ -7649,7 +7817,8 @@ msgstr ""
 #. §3: $a$
 #. §4: $a ↦ (a,…,a)$
 #: Game/Levels/Mono/L04_Diagonal.lean:44
-msgid "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\n"
+msgid ""
+"To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\n"
 "In the former intepretation this is the mapping §4."
 msgstr ""
 "**Tú**: O quizá no. ¿Me lo puedes desmenuzar otra vez, por favor?\n"
@@ -7674,7 +7843,8 @@ msgstr "**Glifo**: Podrías evaluar las aplicaciones que aparecen en §0 en un e
 #. §3: `Fin (n + 1)`
 #. §4: `congr_fun`
 #: Game/Levels/Mono/L04_Diagonal.lean:65
-msgid "Remind that 'tuples' §0 and §1 are two mappings §2.\n"
+msgid ""
+"Remind that 'tuples' §0 and §1 are two mappings §2.\n"
 "Evaluate them on elements from §3. Try §4"
 msgstr "**Glifo**: Recuerda que tus \"tuplas\" §0 y §1 son en realidad dos aplicaciones §2. Podrías evaluarlas en un elemento de §3. ¿Quizá §4 ayude de alguna forma?"
 
@@ -7685,7 +7855,8 @@ msgstr "**Glifo**: Recuerda que tus \"tuplas\" §0 y §1 son en realidad dos apl
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
-msgid "§0 is useful. §1 says that each strictly monotone mapping\n"
+msgid ""
+"§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
 "which says that for uneven §4, §5 is monotone."
 msgstr ""
@@ -7741,7 +7912,8 @@ msgstr "Toda aplicación estrictamente monótona (entre dominios y codominios ad
 #. §3: `Odd.strictMono_pow h_odd`
 #. §4: `h_odd.strictMono_pow`
 #: Game/Levels/Mono/L05_StrictMono.lean:74
-msgid "[Doc.Theorem] Odd.strictMono_pow\n"
+msgid ""
+"[Doc.Theorem] Odd.strictMono_pow\n"
 "for odd §0, §1 is strictly monotonous\n"
 "given §2, can write §3 as §4"
 msgstr ""
@@ -7753,7 +7925,8 @@ msgstr ""
 #. §1: `g`
 #. §2: `f + g`
 #: Game/Levels/Mono/L05_StrictMono.lean:80
-msgid "[Doc.Theorem] StrictMono.add\n"
+msgid ""
+"[Doc.Theorem] StrictMono.add\n"
 "if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
 msgstr "Si §0 y §1 son ambas estrictamente monótonas, entonces §2 también es estrictamente monótona."
 
@@ -7782,7 +7955,8 @@ msgstr "**Glifo**: Ahora quizá toque una distinción de casos. ¿Te acuerdas de
 #. §5: `ℕ`
 #. §6: `0`
 #: Game/Levels/Mono/L07_SuccHasLeftInv.lean:25
-msgid "It conjected that §0 has left inverse. One would assume that §1 would\n"
+msgid ""
+"It conjected that §0 has left inverse. One would assume that §1 would\n"
 "not work for §2. Tackling this by case distinction e.g. §3 is unecessary as\n"
 "in Leanic §4 is in §5. It is simply defined as §6"
 msgstr ""
@@ -7808,7 +7982,8 @@ msgstr "**Glifo**: Eso tiene buena pinta. Pero créeme: la distinción de casos 
 #. §4: `0`
 #. §5: `0`
 #: Game/Levels/Mono/L07_SuccHasLeftInv.lean:64
-msgid "Conclusion Mono L07: Explain that here §0 is §1, as there is mapping §2 defined only on natural numbers.\n"
+msgid ""
+"Conclusion Mono L07: Explain that here §0 is §1, as there is mapping §2 defined only on natural numbers.\n"
 "In Lean §3 is such a mapping and there for it maps §4 onto §5."
 msgstr ""
 "**Tú**: Todavía estoy en shock. Yo pensaba que aquí hacíamos matemáticas. ¿¿Por qué iba a ser §0 otra vez §1??\n"
@@ -7875,7 +8050,8 @@ msgstr ""
 #. §1: `choose`
 #. §2: `have`
 #: Game/Levels/Mono/L11_InjHasLeftInv.lean:38
-msgid "One could choose left inverse on the previous proven statement §0 by using §1.\n"
+msgid ""
+"One could choose left inverse on the previous proven statement §0 by using §1.\n"
 "As proven statement has no name formulate statement again with §2 and prove it again."
 msgstr ""
 "**Tú**: Ahora mismo no veo cómo construir una inversa por la izquierda concreta.\n"
@@ -7936,12 +8112,12 @@ msgstr ""
 #. ```
 #. §8: `f`
 #: Game/Levels/Samarkand/L01_ImagePreimage.lean:42
-msgid "Explain statement: given §0 for subset §1 of §2\n"
+msgid ""
+"Explain statement: given §0 for subset §1 of §2\n"
 "§3\n"
 "is the image over §4. For subset §5 of §6\n"
 "§7\n"
 "is the pre-image over §8,\n"
-""
 msgstr ""
 "**Glifo**: Creo que te voy a tener que explicar esta notación.\n"
 "Por lo visto, nos dan una aplicación §0.\n"
@@ -7982,7 +8158,8 @@ msgstr "Arapuka os dicta otro problema."
 #. §6: `image f`
 #. §7: `f ''`
 #: Game/Levels/Samarkand/L02_ImageMap.lean:25
-msgid "Can not use §0 instead of §1.\n"
+msgid ""
+"Can not use §0 instead of §1.\n"
 "Explain that §2 is mapping from §3 to §4 i.e.\n"
 "§5\n"
 ".You can express §6 by §7 but not vica versa"
@@ -8028,11 +8205,11 @@ msgstr "**Arapuka**: Muy bonito."
 #. x ∈ range f ↔ ∃ a, f a = b
 #. ```
 #: Game/Levels/Samarkand/L03_SurjectiveRange.lean:29
-msgid "Explain §0 w.r.t. §1 as\n"
+msgid ""
+"Explain §0 w.r.t. §1 as\n"
 "§2\n"
 "and its equivalent §3. Mention §4:\n"
 "§5\n"
-""
 msgstr ""
 "**Glifo**: Aquí §0 es la imagen completa de §1:\n"
 "§2\n"
@@ -8069,7 +8246,8 @@ msgstr "**Arapuka**: ¿Podríais ayudarme también con esto?"
 #. ```
 #. §2: `f`
 #: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:35
-msgid "Remind §0 i.e.\n"
+msgid ""
+"Remind §0 i.e.\n"
 "§1\n"
 "and additional assumption that §2 surjectiv"
 msgstr ""
@@ -8229,7 +8407,8 @@ msgstr ""
 #. §2: `Injective`
 #. §3: `Surjective`
 #: Game/Levels/Iso/L02_Inverse.lean:43
-msgid "Divide §0 via §1 into\n"
+msgid ""
+"Divide §0 via §1 into\n"
 "§2 and §3"
 msgstr "**Glifo**: ¡Empieza dividiendo §0 con §1 en §2 y §3!"
 
@@ -8237,7 +8416,8 @@ msgstr "**Glifo**: ¡Empieza dividiendo §0 con §1 en §2 y §3!"
 #. §1: `x : A`
 #. §2: `choose`
 #: Game/Levels/Iso/L02_Inverse.lean:51
-msgid "Surjectivity states that each §0 possesses a preimage §1.\n"
+msgid ""
+"Surjectivity states that each §0 possesses a preimage §1.\n"
 "Try to construct a inverse mapping via §2"
 msgstr "**Glifo**: Por la sobreyectividad sabes que cada §0 tiene una preimagen §1. ¿No podrías construir a partir de ahí una aplicación inversa con §2?"
 
@@ -8278,7 +8458,8 @@ msgstr "**Glifo**: La inyectividad es la parte más difícil. Empieza con §0."
 #. §2: `f a = f b`
 #. §3: `rw`
 #: Game/Levels/Iso/L02_Inverse.lean:106
-msgid "Try to state that if §0 then also §1.\n"
+msgid ""
+"Try to state that if §0 then also §1.\n"
 "When §2 available use §3."
 msgstr ""
 "**Tú**: Si los argumentos §0 son iguales, entonces también §1. ¿Cómo se decía eso?\n"
@@ -8371,7 +8552,8 @@ msgstr "**Set**: Si eso os ha resultado demasiado fácil… ¿conocéis este enu
 #. §7: `A = B`
 #. §8: `x ∈ A ↔ x ∈ B`
 #: Game/Levels/Piazza/L03_Ext__Set__Union__Inter.lean:35
-msgid "§0 means that §1, §2 and §3 are subsets of §4. Therefore, §5\n"
+msgid ""
+"§0 means that §1, §2 and §3 are subsets of §4. Therefore, §5\n"
 "can be interpreted as 'subset'. Use §6 to replace a set equation §7 with §8"
 msgstr ""
 "**Tú**: ¿Qué significa §0 aquí exactamente?\n"
@@ -8403,13 +8585,13 @@ msgstr "**Glifo**: Y ahora, otra vez §0."
 #. «{x}» ∈ «{B}» ∪ «{C}» ↔ «{x}» ∈ «{B}» ∨ «{x}» ∈ «{C}».
 #. ```
 #: Game/Levels/Piazza/L03_Ext__Set__Union__Inter.lean:58
-msgid "Explain §0: §1 looks for known equations and equivalences which would be currently\n"
+msgid ""
+"Explain §0: §1 looks for known equations and equivalences which would be currently\n"
 "applicable. §2 uses all simplifications it can find. Currently the following simplifications\n"
 "were performed:\n"
 "§3\n"
 "and\n"
 "§4\n"
-""
 msgstr ""
 "**Tú**: ¿Qué es lo que hace §0 exactamente?\n"
 "\n"
@@ -8438,7 +8620,8 @@ msgstr "**Sub**: Yo también he aprendido ya una cosa:"
 #. §8: `5 ∈ univ`
 #. §9: `rw [eq_univ_iff_forall]`
 #: Game/Levels/Piazza/L04_Generalize__univ__eq_univ_iff_forall.lean:46
-msgid "Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\n"
+msgid ""
+"Explain §0: §1 is interpreted as §2 but as a subset of it self i.e. §3\n"
 "is subset of §4. So, as 5 is a natural number (§5) and it holds that §6, §7\n"
 "is also in this set i.e. §8. Try §9"
 msgstr ""
@@ -8471,7 +8654,8 @@ msgstr "**Glifo**: Y ahora §0. Incluso podrías haber usado directamente §1."
 #. §2: `not_even_iff_odd`
 #. §3: `¬Odd ««{n}»» ∨ Odd ««{n}»»`
 #: Game/Levels/Piazza/L04_Generalize__univ__eq_univ_iff_forall.lean:63
-msgid "One option: §0.\n"
+msgid ""
+"One option: §0.\n"
 "But in any case, will need §1\n"
 "(or §2) at some point,\n"
 "so might as well start with it\n"
@@ -8500,7 +8684,8 @@ msgstr "**Mem**: ¿Este enunciado también os resulta confuso?"
 #. §1: `rw [eq_empty_iff_forall_notMem]`
 #. §2: `simp [eq_empty_iff_forall_notMem]`
 #: Game/Levels/Piazza/L05_empty__eq_empty_iff_forall_notMem.lean:29
-msgid "Having §0 you could either start with §1 or\n"
+msgid ""
+"Having §0 you could either start with §1 or\n"
 "§2"
 msgstr ""
 "**Tú**: No, §0 lo conozco.\n"
@@ -8579,7 +8764,8 @@ msgstr "**Sub**: Vaya, vaya. ¡Solo una definición! ¿Y si ahora tenéis que tr
 #. §3: `C`
 #. §4: `rw [subset_iff] at *`
 #: Game/Levels/Piazza/L09_subset_iff2.lean:32
-msgid "Using §0 would be too complicated. It is simpler to use §1 to introduce\n"
+msgid ""
+"Using §0 would be too complicated. It is simpler to use §1 to introduce\n"
 "an arbitrary element from §2 and show that it is also in §3. Firstly, write all inclusions\n"
 "exolicitly with §4"
 msgstr ""
@@ -8628,7 +8814,8 @@ msgstr ""
 #. §4: `A`
 #. §5: `a`
 #: Game/Levels/Piazza/L11_erase.lean:36
-msgid "§0 here means that §1 belongs to the finite subsets of ℕ.\n"
+msgid ""
+"§0 here means that §1 belongs to the finite subsets of ℕ.\n"
 "Left it states §2 without §3 and on the right it also says §4 without §5"
 msgstr ""
 "**Tú**: ¿Y aquí qué significa §0?\n"
