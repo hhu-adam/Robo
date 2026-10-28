@@ -161,6 +161,8 @@ For a subset `A : Set T` and an element `a` from `T` (more precisely: of type `T
 `a` is in `A`.
 For subsets of the form `A = { a : T | P a }`, you can simplify the statement
 `a ∈ A` with `simp` to `P a`.
+
+You write `∈` as `\in`.
 -/
 DefinitionDoc Mem as "∈" in "Set"
 
@@ -172,12 +174,14 @@ consisting of all elements that satisfy the predicate.  For example,
 ```
 is the set of even natural numbers.
 You can simplify the statement `a ∈ { a : T | P a }`, using `simp`, to `P a` .
+(Here, `{`, `|`, and `}` are the usual characters on the keyboard.)
 -/
 DefinitionDoc setOf as "{·|·}" in "Set"
 
 /--
 For two subsets `(A B : Set T)`, `A\B` is the difference between `A` and `B`,
 consisting of all elements of `A` that are not in `B`.
+You write `\\` as `\\\\`.
 -/
 DefinitionDoc SDiff as "·\\·" in "Set"
 
@@ -324,6 +328,8 @@ The tactic `constructor` allows you to prove the two sub-statements `A` and `B` 
 
 With `obtain ⟨h₁, h₂⟩ := h`, you break down an assumption of the form `h : A ∧ B`
 into its components `h₁ : A` and `h₂ : B`.
+
+You write `∧` as `\and`.
 -/
 DefinitionDoc And as "∧" in "Logic"
 
@@ -344,6 +350,8 @@ To do this, use the tactic
 ```
 obtain h | h := h
 ```
+
+You write `∨` as `\or`.
 -/
 DefinitionDoc Or as "∨" in "Logic"
 
@@ -359,6 +367,8 @@ and then you must prove `B`.
 ## Implication as assumption
 
 To use an implication among your assumptions, use the tactic `apply`.
+
+You write `→` as `\to` or `\r`.
 -/
 DefinitionDoc Arrow as "→" in "Logic"
 
@@ -376,6 +386,8 @@ You can break down an assumption of the form `h : A ↔ B` using `obtain ⟨h₁
 `h₁ : A → B` and `h₂ : B → A`.
 However, you can also refer directly to these components with `h.mp` and `h.mpr`.
 (The abbreviation `mp` stands for “modus ponens”.)
+
+You write `↔` as `\iff` or `\lr`.
 -/
 DefinitionDoc Iff as "↔" in "Logic"
 
@@ -395,6 +407,8 @@ you construct a suitable element `a` and then use the `use` tactic (`use a`).
 
 You can decompose an assumption of the form `h : ∃ a : A, P a` into its components using
 `choose a ha using h` or `obtain ⟨a, ha⟩ := h` into `a : A` and `ha : P a`.
+
+You write `∃` as `\exists`.
 -/
 DefinitionDoc Exists as "∃" in "Logic"
 
@@ -429,6 +443,8 @@ into its components
    h_unique : ∀ (y : A), P y → y = a
 ```
 .
+
+You write `∃!` as `\exists!`.
 -/
 DefinitionDoc ExistsUnique as "∃!" in "Logic"
 
@@ -443,7 +459,9 @@ To prove a statement of the form `∀ a : A, …`, first use `intro a` to select
 If `h : ∀ a : A, P a` is an assumption and `a₀ : A` is a concrete element, then `h a₀` is a notation for `P a₀`.
 
 You can also use `specialize h a₀` to restrict the given assumption
-over all possible `a` to an assumption `h : P a₀` over this concrete `a₀`.-/
+over all possible `a` to an assumption `h : P a₀` over this concrete `a₀`.
+You write `∀` as `\forall`.
+-/
 DefinitionDoc Forall as "∀" in "Logic"
 
 
@@ -485,16 +503,21 @@ It is implemented internally as `A → False`.  You can see this with `unfold No
 
 Useful tactics are: `push Not`, `by_contra`, `contrapose`.
 You can also apply an assumption of the form `h : ¬ A` using `apply` to the proof target `False`.
+
+You write `¬` as `\not` or `\neg`.
 -/
 DefinitionDoc Not as "¬" in "Logic"
 
 /--
 Useful tactics for equality are: `rfl`, `rw`, `trans`
+(Here, `=` is the usual equality sign on the keyboard.)
 -/
 DefinitionDoc Eq as "=" in "Logic"
 
 /--
 Inequality `x ≠ y` is defined as `¬ x = y`.  You can see this with `unfold Ne`.
+
+You write `≠` as `\ne`.
 -/
 DefinitionDoc Ne as "≠" in "Logic"
 
