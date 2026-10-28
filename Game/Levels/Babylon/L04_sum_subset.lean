@@ -83,7 +83,7 @@ Statement  (n : ℕ) (hn : 3 ≤ n) : ∑ i ∈ Icc 0 n, (i^3 - 3 * i^2 + 2*i : 
     Hint "**Robo**:  Aus den Annahmen muss ja irgendwie folgen ${i}=0$ oder ${i}=1$ oder ${i}=2$.
     Vielleicht formulierst du das mit `have` explizit aus."
     -/
-    Hint "Assumptions have to entail ${i}=0$ or ${i}=1$ or ${i}=2$. Try `have`"
+    Hint (strict := true) "Assumptions have to entail ${i}=0$ or ${i}=1$ or ${i}=2$. Try `have`"
     have h : i = 0 ∨ i = 1 ∨ i = 2 := by
       /-
       Hint (hidden := true) "
