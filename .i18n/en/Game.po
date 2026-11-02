@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: Game
 msgid "[Game] CaptionLong"
@@ -8281,7 +8281,7 @@ msgstr "**Scribble**: Why not start with §0?"
 
 #: Game.Levels.Spinoza.L04_ByContra
 msgid "Use proof by contradiction"
-msgstr "**Scribble**: Here, again, I would try a proof by introduction."
+msgstr "**Scribble**: Here, again, I would try a proof by contradiction."
 
 #. §0: `suffices g : ¬ A`
 #: Game.Levels.Spinoza.L04_ByContra
