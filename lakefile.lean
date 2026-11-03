@@ -11,7 +11,7 @@ Activated with `lake update -Klean4game.local`.
 def LocalGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
-  src? := DependencySrc.path "../lean4game/server"
+  src? := DependencySrc.path "../leangame/server/lean"
   version := .none
   opts := ∅
 }
