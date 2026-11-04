@@ -933,41 +933,47 @@ msgstr ""
 
 #. §0: `R`
 #. §1: `Polynomial R`
-#. §2: `R`
-#. §3: `R[X]`
+#. §2: `R[X]`
+#. §3: `X`
+#. §4: `R`
 #: Game/Doc/Definition.lean:613
-msgid "Let §0 be a semiring. §1 is the type of univariate polynomials\n"
-"over §2, denoted as §3 within the Polynomial namespace."
+msgid "Let §0 be a semiring. §1 (or §2 within the Polynomial namespace) is the semiring of\n"
+"univariate polynomials in one variable §3 and coefficients in §4."
 msgstr ""
 
 #. §0: `X`
+#. §1: `R[X]`
 #: Game/Doc/Definition.lean:619
-msgid "§0 is the polynomial variable within the Polynomial namespace."
+msgid "§0 is the polynomial variable in the polynomial ring §1."
 msgstr ""
 
-#. §0: `P : MvPolynomial (Fin n) R`
-#. §1: `P`
-#. §2: `n`
-#. §3: `X 0`
-#. §4: `X (n-1)`
-#. §5: `R`
+#. §0: `MvPolynomial (Fin n) R`
+#. §1: `n`
+#. §2: `X 0`
+#. §3: `X (n-1)`
+#. §4: `R`
+#. §5: $X_0$
+#. §6: $X_{n-1}$
 #: Game/Doc/Definition.lean:624
-msgid "§0 means that §1 is a polynomial in §2 indeterminates\n"
-"§3, …, §4 with coefficients in §5."
+msgid "§0 is the ring of multivariate polynomials in §1 indeterminates\n"
+"§2, …, §3 with coefficients in §4.\n"
+"(We usually write these indeterminates as §5, …, §6.)"
 msgstr ""
 
-#. §0: `X n`
-#. §1: `1`
-#. §2: $X_n$
-#: Game/Doc/Definition.lean:630
-msgid "§0 is the degree §1 monomial §2."
+#. §0: `X i`
+#. §1: `i : Fin n`
+#. §2: $X_i$
+#. §3: `MvPolynomial (Fin n) R`
+#: Game/Doc/Definition.lean:631
+msgid "§0, for §1, is the degree-one monomial §2 in the multivariate polynomial ring\n"
+"§3."
 msgstr ""
 
 #. §0: `A`
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
-#: Game/Doc/Definition.lean:635
+#: Game/Doc/Definition.lean:637
 msgid "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to §3 in Leanic."
 msgstr ""
 
@@ -978,7 +984,7 @@ msgstr ""
 #. §4: `b : T`
 #. §5: `b ∈ upperBounds s`
 #. §6: `s ≤ b`
-#: Game/Doc/Definition.lean:640
+#: Game/Doc/Definition.lean:642
 msgid "Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
 "§5 means that b is an *upper bound* of s: §6 for every element\n"
 "of s."
@@ -991,7 +997,7 @@ msgstr ""
 #. §4: `b`
 #. §5: `b : T`
 #. §6: `b ∈ upperBounds s`
-#: Game/Doc/Definition.lean:647
+#: Game/Doc/Definition.lean:649
 msgid "For subset §0 of a set §1 (§2), §3 means that\n"
 "there exists some §4 in T (§5) such that §6."
 msgstr ""
@@ -1002,21 +1008,21 @@ msgstr ""
 #. §3: `T`
 #. §4: `s : Set T`
 #. §5: `s`
-#: Game/Doc/Definition.lean:653
+#: Game/Doc/Definition.lean:655
 msgid "§0 is the supremum of §1.  Here §2 is a subset of some ordered set §3 (§4),\n"
 "and §5 is assumed to be bounded above."
 msgstr ""
 
 #. §0: `s`
 #. §1: `closure s`
-#: Game/Doc/Definition.lean:659
+#: Game/Doc/Definition.lean:661
 msgid "For a subset §0 of a topological space, §1 denotes the closure of s."
 msgstr ""
 
 #. §0: `IsLocallyConstant f`
 #. §1: `f`
 #. §2: `f`
-#: Game/Doc/Definition.lean:662
+#: Game/Doc/Definition.lean:664
 msgid "§0 says that every point has a neighborhood on which §1 is\n"
 "constant; it is defined as: the preimage of every set under §2 is open."
 msgstr ""
@@ -1030,7 +1036,7 @@ msgstr ""
 #. §6: `𝓝 a`
 #. §7: `a`
 #. §8: `a : ℝ`
-#: Game/Doc/Definition.lean:666
+#: Game/Doc/Definition.lean:668
 msgid "A *filter* §0 on a type §1 is a collection of subsets of α that\n"
 "- is closed under intersection (§2),\n"
 "- is upward closed (§3), and\n"
@@ -1048,7 +1054,7 @@ msgstr ""
 #. §0: `𝓟 s`
 #. §1: `s`
 #. §2: `s`
-#: Game/Doc/Definition.lean:681
+#: Game/Doc/Definition.lean:683
 msgid "The *principal filter* §0 of a set §1 consists of all sets containing §2."
 msgstr ""
 
@@ -1056,7 +1062,7 @@ msgstr ""
 #. §1: `ℝ`
 #. §2: `x ≥ b`
 #. §3: `b`
-#: Game/Doc/Definition.lean:684
+#: Game/Doc/Definition.lean:686
 msgid "§0 is the filter on §1 consisting of all sets that contain every sufficiently large\n"
 "number — sets that contain all §2 for some bound §3.\n"
 "Think of it as the generalized point 'at infinity'."
@@ -1077,7 +1083,7 @@ msgstr ""
 #. §12: `f a`
 #. §13: `Tendsto f (𝓝[>] a) (𝓝 b)`
 #. §14: `Tendsto f (𝓝[<] a) (𝓝 b)`
-#: Game/Doc/Definition.lean:689
+#: Game/Doc/Definition.lean:691
 msgid "For a function §0, §1,\n"
 "§2 says that §3 approaches §4 as §5 approaches §6 —\n"
 "in usual notation, §7.\n"
@@ -1095,7 +1101,7 @@ msgstr ""
 #. §1: `∀ᶠ x in 𝓕, p x`
 #. §2: `p x`
 #. §3: `{x | p x}`
-#: Game/Doc/Definition.lean:703
+#: Game/Doc/Definition.lean:705
 msgid "For a filter §0, §1 says that §2 holds eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
 msgstr ""
@@ -1104,7 +1110,7 @@ msgstr ""
 #. §1: `f =ᶠ[𝓕] g`
 #. §2: `f x = g x`
 #. §3: `{ x | f x = g x}`
-#: Game/Doc/Definition.lean:707
+#: Game/Doc/Definition.lean:709
 msgid "For a filter §0, §1 says that §2 eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
 msgstr ""
@@ -1121,7 +1127,7 @@ msgstr ""
 #. §7: `rw`
 #. §8: `slope_def_field`
 #. §9: `rw [slope_def_field]`
-#: Game/Doc/Definition.lean:711
+#: Game/Doc/Definition.lean:713
 msgid "For a function §0, §1, and two points §2, §3, §4,\n"
 "§5 is the slope of f between these points:\n"
 "§6\n"
@@ -1140,7 +1146,7 @@ msgstr ""
 #. §9: `hasDerivAt_iff_tendsto_slope`
 #. §10: `rw [hasDerivAt_iff_tendsto_slope]`
 #. §11: `slope`
-#: Game/Doc/Definition.lean:721
+#: Game/Doc/Definition.lean:723
 msgid "For a function §0, §1, a point §2, §3 and §4, §5,\n"
 "§6 means that the derivative of f at x exists and is equal to a.\n"
 "We would usually write something like §7.\n"
@@ -1155,7 +1161,7 @@ msgstr ""
 #. §3: `n : ℕ`
 #. §4: `iteratedDeriv n f`
 #. §5: `ℝ → ℝ`
-#: Game/Doc/Definition.lean:731
+#: Game/Doc/Definition.lean:733
 msgid "For a function §0, §1 and §2, §3, §4 is the n-th derivative of f,\n"
 "as a function §5, if it exists.\n"
 "\n"
@@ -1167,28 +1173,28 @@ msgstr ""
 #. §2: `a`
 #. §3: `a`
 #. §4: `X`
-#: Game/Doc/Definition.lean:739
+#: Game/Doc/Definition.lean:741
 msgid "§0 evaluates the polynomial §1 at the point §2, substituting\n"
 "§3 for the variable §4."
 msgstr ""
 
 #. §0: `Real.exp x`
 #. §1: $e^x$
-#: Game/Doc/Definition.lean:743
+#: Game/Doc/Definition.lean:745
 msgid "§0 is the exponential function §1."
 msgstr ""
 
 #. §0: `p`
 #. §1: `derivative p`
 #. §2: `p.derivative`
-#: Game/Doc/Definition.lean:746
+#: Game/Doc/Definition.lean:748
 msgid "For a polynomial §0, §1 (also written §2) is its\n"
 "formal derivative."
 msgstr ""
 
 #. §0: `f`
 #. §1: `ContDiff f`
-#: Game/Doc/Definition.lean:756
+#: Game/Doc/Definition.lean:758
 msgid "For a map §0 between topological space, §1 means that f is continuous."
 msgstr ""
 
@@ -1200,7 +1206,7 @@ msgstr ""
 #. §5: $f \\in C^n$
 #. §6: `ContDiff ℝ ∞ f`
 #. §7: $f \\in C^\\infty$
-#: Game/Doc/Definition.lean:761
+#: Game/Doc/Definition.lean:763
 msgid "For a function §0, §1 and §2, §3, §4 means that f is n times\n"
 "continuously differentiable, i.e. §5.\n"
 "In particular, §6 means that f can be differentiated arbitrarily often,\n"
@@ -1212,7 +1218,7 @@ msgstr ""
 #. §2: `Real.exp`
 #. §3: `ℝ → ℝ`
 #. §4: $x ↦ e^x$
-#: Game/Doc/Definition.lean:769
+#: Game/Doc/Definition.lean:771
 msgid "§0, §1 and §2 each denote the exponential function §3\n"
 "(otherwise commonly denoted as §4)"
 msgstr ""
@@ -1233,7 +1239,7 @@ msgstr ""
 #. §13: `f.symm : β ≃ α`
 #. §14: `α → β`
 #. §15: `β → α`
-#: Game/Doc/Definition.lean:774
+#: Game/Doc/Definition.lean:776
 msgid "For types §0 and §1, §2 or (§3) is the type of functions from §4 with a\n"
 "two-sided inverse.  A term §5 has four components:\n"
 "a map §6 (§7), a map §8 (§9),\n"
@@ -1252,7 +1258,7 @@ msgstr ""
 #. §3: `Function.curry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:788
+#: Game/Doc/Definition.lean:790
 msgid "For a function of two arguments §0, §1 is the\n"
 "function of a single pair-shaped argument with §2.\n"
 "\n"
@@ -1265,7 +1271,7 @@ msgstr ""
 #. §3: `Function.uncurry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:796
+#: Game/Doc/Definition.lean:798
 msgid "For a function of a single pair-shaped argument §0, §1\n"
 "is the function of two arguments with §2.\n"
 "\n"

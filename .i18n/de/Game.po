@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-27\n"
+"POT-Creation-Date: 2026-11-04\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -74,12 +74,10 @@ msgstr ""
 #. §1: `LeftInverse g f`
 #. §2: `∀ x, g (f x) = x`
 #: Game/Doc/Definition.lean:43
-#, fuzzy
-#| msgid "§0 is defined as §1. You can check this with §2"
 msgid ""
 "§0 is defined as §1.\n"
 "In other words: §2."
-msgstr "**Robo**: §0 ist so definiert, wie du es erwarten würdest: §1. Du kannst das wieder leicht mit §2 prüfen, wenn du mir nicht traust."
+msgstr "§0 ist definiert als §1.  Explizit bedeutet das natürlich: §2."
 
 #. §0: `LeftInverse g f`
 #. §1: `g ∘ f = id`
@@ -136,7 +134,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∪ B`
 #. §5: `∪`
-#. §6: `\\\\union`
+#. §6: `\\union`
 #: Game/Doc/Definition.lean:78
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
@@ -151,20 +149,16 @@ msgstr ""
 #. §2: `A : Set S`
 #. §3: `Aᶜ`
 #. §4: `ᶜ`
-#. §5: `\\\\compl`
-#. §6: `\\\\^c`
+#. §5: `\\compl`
+#. §6: `\\^c`
 #: Game/Doc/Definition.lean:84
-#, fuzzy
-#| msgid ""
-#| "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
-#| "§5 is written as §6."
 msgid ""
 "For subsets §0 of §1 (i.e. §2), §3 is the complement.\n"
 "§4 is written as §5 or §6."
 msgstr ""
-"Für zwei Teilmengen §0 und §1 von §2 (also §3) ist §4 ihre die Vereinigung.\n"
+"Für eine Teilmenge §0 von §1 (also für §2) ist §3 das Komplement von §0 in §1.\n"
 "\n"
-"Du schreibst §5 als §6."
+"Du schreibst §4 als §5 oder §6."
 
 #. §0: `A`
 #. §1: `B`
@@ -172,7 +166,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
-#. §6: `\\\\inter`
+#. §6: `\\inter`
 #: Game/Doc/Definition.lean:90
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
@@ -523,35 +517,56 @@ msgstr ""
 #. §1: $[a,b]$
 #: Game/Doc/Definition.lean:251
 msgid "§0 is the closed interval §1."
-msgstr "§0 ist das geschlossene Intervall §1."
+msgstr "§0 ist das abgeschlossene Intervall §1."
 
 #. §0: `Ioo a b`
 #. §1: $(a,b)$
 #: Game/Doc/Definition.lean:256
-#, fuzzy
-#| msgid "§0 is the closed interval §1."
 msgid "§0 is the open interval §1."
-msgstr "§0 ist das geschlossene Intervall §1."
+msgstr "§0 ist das offene Intervall §1."
 
 #. §0: `Ioi a`
 #. §1: `a`
-#. §2: $(a,\\infty)$
+#. §2: `ℝ`
+#. §3: $(a,\\infty)$
 #: Game/Doc/Definition.lean:261
 msgid ""
 "In an ordered set, §0 is the subset of all elements greater than §1.\n"
-"For example, in ℝ it is the open interval §2."
+"For example, in §2 it is the open interval §3."
 msgstr ""
+"In einer geordneten Menge ist §0 die Teilmenge aller Element, die größer sind als §1.\n"
+"\n"
+"In §2 zum Beispiel ist §0 das Intervall §3.  (Das `o` steht also für „open“, und `i` steht für „infinity“.)"
+
+#. §0: `Iio a`
+#. §1: `a`
+#. §2: `ℝ`
+#. §3: $(-\\infty, a)$
+#: Game/Doc/Definition.lean:267
+msgid ""
+"In an ordered ste, §0 is the subset of all elements less than §1.\n"
+"For example, in §2 it is the open interval §3."
+msgstr ""
+"In einer geordneten Menge ist §0 die Teilmenge aller Element, die kleiner sind als §1.\n"
+"\n"
+"In §2 zum Beispiel ist §0 das Intervall §3.  (Das `i` steht also für „–infinity“, und das `o` für „open“.)"
 
 #. §0: `𝓝 a`
-#. §1: `𝓝`
-#. §2: `\\nhds`
+#. §1: `a`
+#. §2: `𝓝`
+#. §3: `\\nhds`
 #: Game/Doc/Definition.lean:274
 msgid ""
-"§0 is the neighborhood filter: it consists of all neighborhoods of a.\n"
+"§0 is the neighborhood filter: it consists of all neighborhoods of §1.\n"
 "(A set is a neighboorhood of a point a it it contains an open set containing a.)\n"
 "\n"
-"To type the symbol §1, write §2."
+"To type the symbol §2, write §3."
 msgstr ""
+"§0 ist der Nachbarschaftsfilter oder Umgebungsfilter von §1. Er besteht aus allen Umgebungen von §1.\n"
+"\n"
+"(Eine Umgebung von §1 ist eine Teilmenge, die eine offene Teilmenge enthält, die §1 enthält.)\n"
+"\n"
+"Du schreibst §2 als §3."
 
 #. §0: `𝓝[s] a`
 #. §1: `a`
@@ -572,7 +587,7 @@ msgid ""
 "  *greater* than x\n"
 "* §6 is short for §7: the points near x that are *not equal*\n"
 "  to x"
-msgstr ""
+msgstr "§1 ist der Filter der Umgebungen von §1 in §2."
 
 #. §0: `Nonempty`
 #. §1: `T`
@@ -1237,45 +1252,50 @@ msgstr ""
 
 #. §0: `R`
 #. §1: `Polynomial R`
-#. §2: `R`
-#. §3: `R[X]`
+#. §2: `R[X]`
+#. §3: `X`
+#. §4: `R`
 #: Game/Doc/Definition.lean:613
 msgid ""
-"Let §0 be a semiring. §1 is the type of univariate polynomials\n"
-"over §2, denoted as §3 within the Polynomial namespace."
-msgstr ""
+"Let §0 be a semiring. §1 (or §2 within the Polynomial namespace) is the semiring of\n"
+"univariate polynomials in one variable §3 and coefficients in §4."
+msgstr "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4."
 
 #. §0: `X`
+#. §1: `R[X]`
 #: Game/Doc/Definition.lean:619
-msgid "§0 is the polynomial variable within the Polynomial namespace."
-msgstr ""
+msgid "§0 is the polynomial variable in the polynomial ring §1."
+msgstr "§0 ist die Unbestimmte im Polynomring §1."
 
-#. §0: `P : MvPolynomial (Fin n) R`
-#. §1: `P`
-#. §2: `n`
-#. §3: `X 0`
-#. §4: `X (n-1)`
-#. §5: `R`
+#. §0: `MvPolynomial (Fin n) R`
+#. §1: `n`
+#. §2: `X 0`
+#. §3: `X (n-1)`
+#. §4: `R`
+#. §5: $X_0$
+#. §6: $X_{n-1}$
 #: Game/Doc/Definition.lean:624
 msgid ""
-"§0 means that §1 is a polynomial in §2 indeterminates\n"
-"§3, …, §4 with coefficients in §5."
-msgstr "§0 bedeutet, dass §1 ein Polynomial in §2 Unbestimmten §3, …, §4 mit Koeffizienten in §5 ist."
+"§0 is the ring of multivariate polynomials in §1 indeterminates\n"
+"§2, …, §3 with coefficients in §4.\n"
+"(We usually write these indeterminates as §5, …, §6.)"
+msgstr "§0 ist der Polynomring in §1 Unbestimmten §2, …, §3 mit Koeffizienten in §4.  (Wir schreiben die Unbestimmten gewöhnlich als §5, …, §6.)"
 
-#. §0: `X n`
-#. §1: `1`
-#. §2: $X_n$
-#: Game/Doc/Definition.lean:630
-#, fuzzy
-#| msgid "§0 is the closed interval §1."
-msgid "§0 is the degree §1 monomial §2."
-msgstr "§0 ist das geschlossene Intervall §1."
+#. §0: `X i`
+#. §1: `i : Fin n`
+#. §2: $X_i$
+#. §3: `MvPolynomial (Fin n) R`
+#: Game/Doc/Definition.lean:631
+msgid ""
+"§0, for §1, is the degree-one monomial §2 in the multivariate polynomial ring\n"
+"§3."
+msgstr "§0, für §1, ist das Monom §2 im multivariaten Polynomring §3."
 
 #. §0: `A`
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
-#: Game/Doc/Definition.lean:635
+#: Game/Doc/Definition.lean:637
 msgid "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to §3 in Leanic."
 msgstr ""
 "Für eine Matrix §0 ist §1 die Spur von §2.\n"
@@ -1288,7 +1308,7 @@ msgstr ""
 #. §4: `b : T`
 #. §5: `b ∈ upperBounds s`
 #. §6: `s ≤ b`
-#: Game/Doc/Definition.lean:640
+#: Game/Doc/Definition.lean:642
 msgid ""
 "Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
 "§5 means that b is an *upper bound* of s: §6 for every element\n"
@@ -1302,7 +1322,7 @@ msgstr ""
 #. §4: `b`
 #. §5: `b : T`
 #. §6: `b ∈ upperBounds s`
-#: Game/Doc/Definition.lean:647
+#: Game/Doc/Definition.lean:649
 msgid ""
 "For subset §0 of a set §1 (§2), §3 means that\n"
 "there exists some §4 in T (§5) such that §6."
@@ -1314,7 +1334,7 @@ msgstr ""
 #. §3: `T`
 #. §4: `s : Set T`
 #. §5: `s`
-#: Game/Doc/Definition.lean:653
+#: Game/Doc/Definition.lean:655
 msgid ""
 "§0 is the supremum of §1.  Here §2 is a subset of some ordered set §3 (§4),\n"
 "and §5 is assumed to be bounded above."
@@ -1322,14 +1342,14 @@ msgstr ""
 
 #. §0: `s`
 #. §1: `closure s`
-#: Game/Doc/Definition.lean:659
+#: Game/Doc/Definition.lean:661
 msgid "For a subset §0 of a topological space, §1 denotes the closure of s."
 msgstr ""
 
 #. §0: `IsLocallyConstant f`
 #. §1: `f`
 #. §2: `f`
-#: Game/Doc/Definition.lean:662
+#: Game/Doc/Definition.lean:664
 msgid ""
 "§0 says that every point has a neighborhood on which §1 is\n"
 "constant; it is defined as: the preimage of every set under §2 is open."
@@ -1344,7 +1364,7 @@ msgstr ""
 #. §6: `𝓝 a`
 #. §7: `a`
 #. §8: `a : ℝ`
-#: Game/Doc/Definition.lean:666
+#: Game/Doc/Definition.lean:668
 msgid ""
 "A *filter* §0 on a type §1 is a collection of subsets of α that\n"
 "- is closed under intersection (§2),\n"
@@ -1363,7 +1383,7 @@ msgstr ""
 #. §0: `𝓟 s`
 #. §1: `s`
 #. §2: `s`
-#: Game/Doc/Definition.lean:681
+#: Game/Doc/Definition.lean:683
 msgid "The *principal filter* §0 of a set §1 consists of all sets containing §2."
 msgstr ""
 
@@ -1371,7 +1391,7 @@ msgstr ""
 #. §1: `ℝ`
 #. §2: `x ≥ b`
 #. §3: `b`
-#: Game/Doc/Definition.lean:684
+#: Game/Doc/Definition.lean:686
 msgid ""
 "§0 is the filter on §1 consisting of all sets that contain every sufficiently large\n"
 "number — sets that contain all §2 for some bound §3.\n"
@@ -1393,7 +1413,7 @@ msgstr ""
 #. §12: `f a`
 #. §13: `Tendsto f (𝓝[>] a) (𝓝 b)`
 #. §14: `Tendsto f (𝓝[<] a) (𝓝 b)`
-#: Game/Doc/Definition.lean:689
+#: Game/Doc/Definition.lean:691
 msgid ""
 "For a function §0, §1,\n"
 "§2 says that §3 approaches §4 as §5 approaches §6 —\n"
@@ -1412,7 +1432,7 @@ msgstr ""
 #. §1: `∀ᶠ x in 𝓕, p x`
 #. §2: `p x`
 #. §3: `{x | p x}`
-#: Game/Doc/Definition.lean:703
+#: Game/Doc/Definition.lean:705
 msgid ""
 "For a filter §0, §1 says that §2 holds eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
@@ -1422,7 +1442,7 @@ msgstr ""
 #. §1: `f =ᶠ[𝓕] g`
 #. §2: `f x = g x`
 #. §3: `{ x | f x = g x}`
-#: Game/Doc/Definition.lean:707
+#: Game/Doc/Definition.lean:709
 msgid ""
 "For a filter §0, §1 says that §2 eventually,\n"
 "i.e. the set §3 is a member of 𝓕."
@@ -1440,7 +1460,7 @@ msgstr ""
 #. §7: `rw`
 #. §8: `slope_def_field`
 #. §9: `rw [slope_def_field]`
-#: Game/Doc/Definition.lean:711
+#: Game/Doc/Definition.lean:713
 msgid ""
 "For a function §0, §1, and two points §2, §3, §4,\n"
 "§5 is the slope of f between these points:\n"
@@ -1460,7 +1480,7 @@ msgstr ""
 #. §9: `hasDerivAt_iff_tendsto_slope`
 #. §10: `rw [hasDerivAt_iff_tendsto_slope]`
 #. §11: `slope`
-#: Game/Doc/Definition.lean:721
+#: Game/Doc/Definition.lean:723
 msgid ""
 "For a function §0, §1, a point §2, §3 and §4, §5,\n"
 "§6 means that the derivative of f at x exists and is equal to a.\n"
@@ -1476,7 +1496,7 @@ msgstr ""
 #. §3: `n : ℕ`
 #. §4: `iteratedDeriv n f`
 #. §5: `ℝ → ℝ`
-#: Game/Doc/Definition.lean:731
+#: Game/Doc/Definition.lean:733
 msgid ""
 "For a function §0, §1 and §2, §3, §4 is the n-th derivative of f,\n"
 "as a function §5, if it exists.\n"
@@ -1489,7 +1509,7 @@ msgstr ""
 #. §2: `a`
 #. §3: `a`
 #. §4: `X`
-#: Game/Doc/Definition.lean:739
+#: Game/Doc/Definition.lean:741
 msgid ""
 "§0 evaluates the polynomial §1 at the point §2, substituting\n"
 "§3 for the variable §4."
@@ -1497,7 +1517,7 @@ msgstr ""
 
 #. §0: `Real.exp x`
 #. §1: $e^x$
-#: Game/Doc/Definition.lean:743
+#: Game/Doc/Definition.lean:745
 #, fuzzy
 #| msgid "§0 is the closed interval §1."
 msgid "§0 is the exponential function §1."
@@ -1506,7 +1526,7 @@ msgstr "§0 ist das geschlossene Intervall §1."
 #. §0: `p`
 #. §1: `derivative p`
 #. §2: `p.derivative`
-#: Game/Doc/Definition.lean:746
+#: Game/Doc/Definition.lean:748
 msgid ""
 "For a polynomial §0, §1 (also written §2) is its\n"
 "formal derivative."
@@ -1514,7 +1534,7 @@ msgstr ""
 
 #. §0: `f`
 #. §1: `ContDiff f`
-#: Game/Doc/Definition.lean:756
+#: Game/Doc/Definition.lean:758
 msgid "For a map §0 between topological space, §1 means that f is continuous."
 msgstr ""
 
@@ -1526,7 +1546,7 @@ msgstr ""
 #. §5: $f \\in C^n$
 #. §6: `ContDiff ℝ ∞ f`
 #. §7: $f \\in C^\\infty$
-#: Game/Doc/Definition.lean:761
+#: Game/Doc/Definition.lean:763
 msgid ""
 "For a function §0, §1 and §2, §3, §4 means that f is n times\n"
 "continuously differentiable, i.e. §5.\n"
@@ -1539,7 +1559,7 @@ msgstr ""
 #. §2: `Real.exp`
 #. §3: `ℝ → ℝ`
 #. §4: $x ↦ e^x$
-#: Game/Doc/Definition.lean:769
+#: Game/Doc/Definition.lean:771
 msgid ""
 "§0, §1 and §2 each denote the exponential function §3\n"
 "(otherwise commonly denoted as §4)"
@@ -1561,7 +1581,7 @@ msgstr ""
 #. §13: `f.symm : β ≃ α`
 #. §14: `α → β`
 #. §15: `β → α`
-#: Game/Doc/Definition.lean:774
+#: Game/Doc/Definition.lean:776
 msgid ""
 "For types §0 and §1, §2 or (§3) is the type of functions from §4 with a\n"
 "two-sided inverse.  A term §5 has four components:\n"
@@ -1581,7 +1601,7 @@ msgstr ""
 #. §3: `Function.curry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:788
+#: Game/Doc/Definition.lean:790
 msgid ""
 "For a function of two arguments §0, §1 is the\n"
 "function of a single pair-shaped argument with §2.\n"
@@ -1595,7 +1615,7 @@ msgstr ""
 #. §3: `Function.uncurry`
 #. §4: `Function.curry_uncurry`
 #. §5: `Function.uncurry_curry`
-#: Game/Doc/Definition.lean:796
+#: Game/Doc/Definition.lean:798
 msgid ""
 "For a function of a single pair-shaped argument §0, §1\n"
 "is the function of two arguments with §2.\n"
@@ -3508,14 +3528,14 @@ msgstr ""
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
-#: Game/Levels/Implis/L01_Intro.lean:50
+#: Game/Levels/Implis/L01_Intro.lean:51
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
 "**Du**: Okay. Jetzt habe ich also sowohl §0 als auch §1 in meinen Annahmen und muss §2 zeigen.\n"
 "\n"
 "**Robo**: Genau. Und wie das geht, weißt du ja schon."
 
-#: Game/Levels/Implis/L01_Intro.lean:66
+#: Game/Levels/Implis/L01_Intro.lean:67
 msgid "Conclusion Implis L01"
 msgstr ""
 "**Operationsleiter**: Perfekt! Danke schön!\n"
@@ -7684,13 +7704,16 @@ msgstr ""
 "\n"
 "**Robo**: Zu dem Prinzip hätte ich die Taktik §0 auf Lager. Mit §1 wählst du ein beliebiges §2 und änderst das Beweisziel von §3 zu §4."
 
-#. §0: `ring`
-#. §1: `grind`
-#: Game/Levels/Vieta/L05_Funext.lean:36
+#. §0: `unfold`
+#. §1: `f`
+#. §2: `g`
+#: Game/Levels/Vieta/L05_Funext.lean:33
 #, fuzzy
-#| msgid "Remind: §0 sees through local definitions"
-msgid "Reminder: §0 and §1 can see through local definitions"
-msgstr "**Robo**: Zur Erinnerung, §0 sieht durch lokale Definition hindurch."
+#| msgid "Try §0, as it sees through definitions §1 and §2"
+msgid "[Hint sy0jh] §0 the definitions of §1 and §2"
+msgstr ""
+"**Robo**: §0 sieht durch lokale Definitionen wie §1 und §2 hindurch. \n"
+"Du kannst die Taktik also direkt benutzen."
 
 #: Game/Levels/Vieta/L06_Piecewise.lean:24
 msgid "Intro Vieta L06"
@@ -12587,6 +12610,21 @@ msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
 #: Game.lean:50
 msgid "[Game] CaptionLong"
 msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
+
+#~ msgid ""
+#~ "Let §0 be a semiring. §1 is the type of univariate polynomials\n"
+#~ "over §2, denoted as §3 within the Polynomial namespace."
+#~ msgstr "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4. "
+
+#, fuzzy
+#~| msgid "§0 is the closed interval §1."
+#~ msgid "§0 is the degree §1 monomial §2."
+#~ msgstr "§0 ist das geschlossene Intervall §1."
+
+#, fuzzy
+#~| msgid "Remind: §0 sees through local definitions"
+#~ msgid "Reminder: §0 and §1 can see through local definitions"
+#~ msgstr "**Robo**: Zur Erinnerung, §0 sieht durch lokale Definition hindurch."
 
 #~ msgid "[Hint cssuple] Perhaps, §0 is useful here."
 #~ msgstr "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die *kleinste* solche Schranke.  Die Eigenschaft wird durch §0 erfasst."

@@ -77,19 +77,19 @@ DefinitionDoc Function.fixedPoints as "fixedPoints" in "Function"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∪ B` is their union.
-`∪` is written as `\\union`.
+`∪` is written as `\union`.
 -/
 DefinitionDoc Set.union as "∪" in "Set"
 
 /--
 For subsets `A` of `S` (i.e. `A : Set S`), `Aᶜ` is the complement.
-`ᶜ` is written as `\\compl` or `\\^c`.
+`ᶜ` is written as `\compl` or `\^c`.
 -/
 DefinitionDoc Set.compl as "·ᶜ" in "Set"
 
 /--
 For two subsets `A` and `B` of `S` (i.e. `A B : Set S`), `A ∩ B` is their intersection.
-`∩` is written as `\\inter`.
+`∩` is written as `\inter`.
 -/
 DefinitionDoc Set.inter as "∩" in "Set"
 
@@ -260,18 +260,18 @@ DefinitionDoc Set.Ioo as "Set.Ioo" in "Set"
 
 /--
 In an ordered set, `Ioi a` is the subset of all elements greater than `a`.
-For example, in ℝ it is the open interval $(a,\infty)$.
+For example, in `ℝ` it is the open interval $(a,\infty)$.
 -/
 DefinitionDoc Set.Ioi as "Set.Ioi" in "Set"
 
-/-
+/--
 In an ordered ste, `Iio a` is the subset of all elements less than `a`.
-For example, in ℝ it is the open interval $(-\infty, a)$.
---/
+For example, in `ℝ` it is the open interval $(-\infty, a)$.
+-/
 DefinitionDoc Set.Iio as "Set.Iio" in "Set"
 
 
-/-- `𝓝 a` is the neighborhood filter: it consists of all neighborhoods of a.
+/-- `𝓝 a` is the neighborhood filter: it consists of all neighborhoods of `a`.
 (A set is a neighboorhood of a point a it it contains an open set containing a.)
 
 To type the symbol `𝓝`, write `\nhds`.
@@ -611,24 +611,26 @@ DefinitionDoc Prod as "∏"
 
 
 /--
-Let `R` be a semiring. `Polynomial R` is the type of univariate polynomials
-over `R`, denoted as `R[X]` within the Polynomial namespace.
+Let `R` be a semiring. `Polynomial R` (or `R[X]` within the Polynomial namespace) is the semiring of
+univariate polynomials in one variable `X` and coefficients in `R`.
 -/
 DefinitionDoc Polynomial as "R[X]" in "R[X]"
 
 /--
-`X` is the polynomial variable within the Polynomial namespace.
+`X` is the polynomial variable in the polynomial ring `R[X]`.
 -/
 DefinitionDoc Polynomial.X as "X (Polynomial.X)" in "R[X]"
 
 /--
-`P : MvPolynomial (Fin n) R` means that `P` is a polynomial in `n` indeterminates
+`MvPolynomial (Fin n) R` is the ring of multivariate polynomials in `n` indeterminates
 `X 0`, …, `X (n-1)` with coefficients in `R`.
+(We usually write these indeterminates as $X_0$, …, $X_{n-1}$.)
 -/
 DefinitionDoc MvPolynomial as "MvPolynomial" in "R[X]"
 
 /--
-`X n` is the degree `1` monomial $X_n$.
+`X i`, for `i : Fin n`, is the degree-one monomial $X_i$ in the multivariate polynomial ring
+`MvPolynomial (Fin n) R`.
 -/
 DefinitionDoc MvPolynomial.X as "X (MvPolynomial.X)" in "R[X]"
 

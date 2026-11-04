@@ -1,4 +1,6 @@
-{"§0 would be a good option": "**Robo**: §0 sieht nach einer guten Option aus.",
+{"§0, for §1, is the degree-one monomial §2 in the multivariate polynomial ring\n§3.":
+ "§0, für §1, ist das Monom §2 im multivariaten Polynomring §3.",
+ "§0 would be a good option": "**Robo**: §0 sieht nach einer guten Option aus.",
  "§0 will divide sum as wished: a sum over §1 and an additional summand for §2.\nTry §3":
  "**Robo**:  Genau!  Und jetzt spaltet dir §0 die Summe genau so auf, wie du das haben möchtest: also eine Summe über §1 und dann noch einen zusätzlichen Summanden für §2. Probiers mal: §3",
  "§0 was tried but simply §1 works as well. §2 was applied to goal §3 and now\n§4 has to be proven.":
@@ -21,8 +23,6 @@
  "**Du**:  §0 heißt hier genau was?\n\n**Robo**:  Das heißt einfach, dass §1, §2 und §3 *Teilmengen* von §4 sind.\n\n**Du**:  §5 bedeutet „subset“?\n\n**Robo**:  Wenn du so willst, ja.\n\n**Du**:  Dann *kenne* ich die Aussage wohl. Aber keine Ahnung, wie ich die hier beweisen könnte.\n\n**Ext**:  Kann ich dir sagen!  Da gibts ein Zauberwort, das heißt genau wie ich!!\n\n**Robo**:  Ach ja – §6 ersetzt eine Mengengleichheit §7 durch §8.",
  "§0 means that §1 is a subset of §2\n(or, more precisely, that §3 is a set consisting of elements of type §4).":
  "§0 bedeutet, dass §1 eine Teilmenge von §2 ist (oder genauer, dass §3 eine Menge ist, die aus Elementen vom Typ §4 besteht).",
- "§0 means that §1 is a polynomial in §2 indeterminates\n§3, …, §4 with coefficients in §5.":
- "§0 bedeutet, dass §1 ein Polynomial in §2 Unbestimmten §3, …, §4 mit Koeffizienten in §5 ist.",
  "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n\n## §3 as proof target\n\nTo show §4, you can, for example, call §5\nand then prove §6 and §7 separately.\n\n## §8 as an assumption\n\nYou can break down an assumption of the form §9 using §10 into its two components\n§11 and §12.\nHowever, you can also refer directly to these components with §13 and §14.\n(The abbreviation §15 stands for “modus ponens”.)":
  "§0 bedeutet, dass die Aussagen §1 und §2 logisch äquivalent sind („genau dann, wenn“).\n\n## §3als Beweisziel\n\nUm §4 zu zeigen, kannst du beispielsweise §5 aufrufen und dann separat §6 und §7 beweisen.\n\n## §8 als Annahme\n\nEine Annahme der Form §9 kannst du mit §10 in die beiden Bestandteile §11 und §12 zerlegen.\nDu kannst aber auch mit §13 und §14 direkt auf diese Bestandteil Bezug nehmen.\n(Die Abkürzung §15 steht für „modus ponens“.)",
  "§0 means 'is fixed point'. §1 equates to §2":
@@ -41,16 +41,23 @@
  "§0 ist die Aussage, dass §1 ungerade ist:\n§2\nDas kannst du leicht mit §3 prüfen.",
  "§0 is the statement that §1 is even:\n§2\nYou can easily check this with §3.":
  "§0 ist die Aussage, dass §1 gerade ist:\n§2\nDas kannst du leicht mit §3 prüfen.",
- "§0 is the open interval §1.": "§0 ist das geschlossene Intervall §1.",
+ "§0 is the ring of multivariate polynomials in §1 indeterminates\n§2, …, §3 with coefficients in §4.\n(We usually write these indeterminates as §5, …, §6.)":
+ "§0 ist der Polynomring in §1 Unbestimmten §2, …, §3 mit Koeffizienten in §4.  (Wir schreiben die Unbestimmten gewöhnlich als §5, …, §6.)",
+ "§0 is the polynomial variable in the polynomial ring §1.":
+ "§0 ist die Unbestimmte im Polynomring §1.",
+ "§0 is the open interval §1.": "§0 ist das offene Intervall §1.",
+ "§0 is the neighborhood filter: it consists of all neighborhoods of §1.\n(A set is a neighboorhood of a point a it it contains an open set containing a.)\n\nTo type the symbol §2, write §3.":
+ "§0 ist der Nachbarschaftsfilter oder Umgebungsfilter von §1. Er besteht aus allen Umgebungen von §1.\n\n(Eine Umgebung von §1 ist eine Teilmenge, die eine offene Teilmenge enthält, die §1 enthält.)\n\nDu schreibst §2 als §3.",
  "§0 is the mapping §1.\nIt therefore maps a natural number to its successor.":
  "§0 ist die Abbildung §1.\nSie bildet also eine natürliche Zahl auf ihren Nachfolger (englisch *successor*) ab.",
  "§0 is the logical negation of §1.\nIt is implemented internally as §2.  You can see this with §3.\n\nUseful tactics are: §4, §5, §6.\nYou can also apply an assumption of the form §7 using §8 to the proof target §9.":
  "§0 ist die logische Negation von §1.\nSie ist intern als §2 definiert, wie du mit §3 leicht prüfen kannst. \nDaher kannst du eine Annahme der Form §7 mit §8 auf das Beweisziel §9 anwenden.\n\nAndere nützliche Taktiken sind:\n* §4\n* §5\n* §6",
+ "§0 is the filter of neighborhoods of §1 inside the set §2:\nit consists of all sets that contain the intersection of s and a neighborhood of a.\n\nTwo special cases:\n\n* §3 is short for §4: the points near §5 that are\n  *greater* than x\n* §6 is short for §7: the points near x that are *not equal*\n  to x":
+ "§1 ist der Filter der Umgebungen von §1 in §2.",
  "§0 is the exponential function §1.": "§0 ist das geschlossene Intervall §1.",
  "§0 is the empty subset.\nIn the Formaloverse §1 is something different than §2\n– one is a subset of ℕ, the other is a subset of ℝ!\n\nWith §3 you translate the equation §4 into the\nstatement §5.\n\n§6 is written as §7.":
  "§0 ist die leere Teilmenge.\nIm Formaloversum ist also §1 etwas anderes als §2 – das eine ist eine Teilmenge von ℕ, das andere eine Teilmenge von ℝ!\n\nMit §3 überführst du eine Gleichung der Form §4 in die Aussage §5.\n\nDu schreibst §6 als §7.",
- "§0 is the degree §1 monomial §2.": "§0 ist das geschlossene Intervall §1.",
- "§0 is the closed interval §1.": "§0 ist das geschlossene Intervall §1.",
+ "§0 is the closed interval §1.": "§0 ist das abgeschlossene Intervall §1.",
  "§0 is the assumption that §1 is prime. Use §2":
  "**Robo**: Hier ist §0 natürlich die Annahme, dass §1 eine Primzahl ist. Um mit dieser Annahme zu arbeiten, wendest du am besten immer §2 an.",
  "§0 is the absolute value of the real number §1. The meaning of §2\ncan be found out by using §3.":
@@ -69,7 +76,7 @@
  "§0 is defined as §1. State is explicitly with\n§2\n":
  "**Robo**: Definiert ist §0 natürlich als §1. Am besten schreibst du das für den Anfang überall explizit aus:\n§2\n",
  "§0 is defined as §1.\nIn other words: §2.":
- "**Robo**: §0 ist so definiert, wie du es erwarten würdest: §1. Du kannst das wieder leicht mit §2 prüfen, wenn du mir nicht traust.",
+ "§0 ist definiert als §1.  Explizit bedeutet das natürlich: §2.",
  "§0 is any statement, without further specification as to whether it is true, false, or\nunprovable.\n\nSee also §1 and §2 for the unconditionally true and false\nstatements, respectively.":
  "§0 ist eine beliebige Aussage, ohne weitere Angabe, ob diese wahr, falsch oder nicht beweisbar ist.\n\nSiehe auch §1 und §2 für die uneingeschränkt wahre bzw.\\\\ unwahre Aussage.",
  "§0 is an implicid embedding of  §1 in §2.  Try §3":
@@ -171,6 +178,8 @@
  "[Hint tdsg] Try §0": "**Robo**:  Hier könnte §0 ausreichen.",
  "[Hint t99r1] Remember §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint sy0jh] §0 the definitions of §1 and §2":
+ "**Robo**: §0 sieht durch lokale Definitionen wie §1 und §2 hindurch. \nDu kannst die Taktik also direkt benutzen.",
  "[Hint suplec] As §0 is the least upper bound of §1,\nit sits below every upper bound.\nHypothesis §2 says §3 bounds all of §4, hence§5.\nChaining with §6 gives §7.":
  "**Du**: Mmmh …\n\n**Robo**: Da §0 die kleinste obere Schranke von §1 ist, ist sie kleiner-gleich jeder anderen Schranke. \nUnd die Annahme §2 sagst uns, dass §b eine solche „andere“ Schranke ist. Also müssten wir hier §5 zeigen können.",
  "[Hint smth1tr] Try §0.":
@@ -720,8 +729,6 @@
  "**Robo**:  Na schön.  Jetzt also zur eigentlichen Sache.",
  "Repeat proof from first level":
  "**Robo**: Ja gut, du kannst auch einfach den Beweis vom ersten Pergament wiederholen.\n  Nur zu, Übung macht den Meister.\n\n**Du**: Schon gut, ich hab kein mechanisches Hirn wie du.",
- "Reminder: §0 and §1 can see through local definitions":
- "**Robo**: Zur Erinnerung, §0 sieht durch lokale Definition hindurch.",
  "Reminder of set equality":
  "**Du**:  Ja, ich glaube, so habe ich das einmal gelernt – zwei Mengen sind gleich, wenn sie sich wechselseitig enthalten.",
  "Remind: Equality is reflexive, so try §0":
@@ -831,6 +838,8 @@
  "**Du**:  Jetzt muss ich mich wohl doch ein bisschen durch die Definitionen hangeln?\n\n**Robo**: Sieht so aus.",
  "Look at §0": "**Robo**: Schau mal §0 an.",
  "Logo": "Logo",
+ "Let §0 be a semiring. §1 (or §2 within the Polynomial namespace) is the semiring of\nunivariate polynomials in one variable §3 and coefficients in §4.":
+ "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4.",
  "Known that there exists some element in §0. Try §1":
  "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „kontruierst“ du dir das einmal mit §1.",
  "It is clear which §0 can be used.":
@@ -1181,6 +1190,10 @@
  "**Robo**: Jetzt kannst du dein §0 mit §1 einsetzen und sehen, ob deine Definition gut war.",
  "Inequality §0 is defined as §1.  You can see this with §2.":
  "Ungleichheit §0 ist definiert als §1.  Du siehst das mit §2.",
+ "In an ordered ste, §0 is the subset of all elements less than §1.\nFor example, in §2 it is the open interval §3.":
+ "In einer geordneten Menge ist §0 die Teilmenge aller Element, die kleiner sind als §1.\n\nIn §2 zum Beispiel ist §0 das Intervall §3.  (Das `i` steht also für „–infinity“, und das `o` für „open“.)",
+ "In an ordered set, §0 is the subset of all elements greater than §1.\nFor example, in §2 it is the open interval §3.":
+ "In einer geordneten Menge ist §0 die Teilmenge aller Element, die größer sind als §1.\n\nIn §2 zum Beispiel ist §0 das Intervall §3.  (Das `o` steht also für „open“, und `i` steht für „infinity“.)",
  "Implis": "Implis",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "Ist §0 eine ganze Zahl größergleich 0, so ist §1 dieselbe Zahl, aufgefasst als natürliche Zahl.\n(Ist §2 eine negative ganze Zahl, so ist §3 ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)\n\n## Freunde und Verwandte\n\nEine natürliche Zahl §4 lässt sich stets als ganze Zahl auffassen.\nDafür schreibst du sie entweder explizit als §5 oder als §6.",
@@ -1242,7 +1255,7 @@
  "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n§5 is written as §6.":
  "Für zwei Teilmengen §0 und §1 von §2 (also §3) ist §4 ihr Schnitt.\n\nDu schreibst §5 als §6.",
  "For subsets §0 of §1 (i.e. §2), §3 is the complement.\n§4 is written as §5 or §6.":
- "Für zwei Teilmengen §0 und §1 von §2 (also §3) ist §4 ihre die Vereinigung.\n\nDu schreibst §5 als §6.",
+ "Für eine Teilmenge §0 von §1 (also für §2) ist §3 das Komplement von §0 in §1.\n\nDu schreibst §4 als §5 oder §6.",
  "For a subset §0, §1 means that §2 has only a finite number of elements.\nIf §3 is given as an assumption, then §4 is the same subset §5,\nbut now explicitly understood as a finite subset.":
  "Für eine Teilmenge §0 bedeutet §1, dass §2 nur endlich viele Elemente hat.\nIst §3 als Annahme gegeben, so ist §4 dieselbe Teilmenge §5, aber nun explizit als endliche Teilmenge aufgefasst.",
  "For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 means that\n§5 is in §6.\nFor subsets of the form §7, you can simplify the statement\n§8 with §9 to §10.":
