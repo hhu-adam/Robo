@@ -30,14 +30,13 @@ Statement {n : ℕ} :
 -/
   Hint "Try `funext`. Explain `funext x` as taking arbitrary `x` and changing goal from `f = g` to `f x = g x`"
   funext x
+  Hint (hidden := true) "[Hint sy0jh] `unfold` the definitions of `f` and `g`"
   unfold g f
   rw [Even.neg_pow]
   use n
-  Hint (hidden := true) "Reminder: `ring` and `grind` can see through local definitions"
   ring
 
-OnlyTactic funext ring
-NewTactic funext
+DisabledTactic simp
 TheoremTab "Function"
 
 Conclusion ""
