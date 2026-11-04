@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.35.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-27\n"
+"POT-Creation-Date: 2026-11-04\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -108,7 +108,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∪ B`
 #. §5: `∪`
-#. §6: `\\\\union`
+#. §6: `\\union`
 #: Game/Doc/Definition.lean:78
 msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
 "§5 is written as §6."
@@ -119,8 +119,8 @@ msgstr ""
 #. §2: `A : Set S`
 #. §3: `Aᶜ`
 #. §4: `ᶜ`
-#. §5: `\\\\compl`
-#. §6: `\\\\^c`
+#. §5: `\\compl`
+#. §6: `\\^c`
 #: Game/Doc/Definition.lean:84
 msgid "For subsets §0 of §1 (i.e. §2), §3 is the complement.\n"
 "§4 is written as §5 or §6."
@@ -132,7 +132,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
-#. §6: `\\\\inter`
+#. §6: `\\inter`
 #: Game/Doc/Definition.lean:90
 msgid "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
 "§5 is written as §6."
@@ -413,20 +413,31 @@ msgstr ""
 
 #. §0: `Ioi a`
 #. §1: `a`
-#. §2: $(a,\\infty)$
+#. §2: `ℝ`
+#. §3: $(a,\\infty)$
 #: Game/Doc/Definition.lean:261
 msgid "In an ordered set, §0 is the subset of all elements greater than §1.\n"
-"For example, in ℝ it is the open interval §2."
+"For example, in §2 it is the open interval §3."
+msgstr ""
+
+#. §0: `Iio a`
+#. §1: `a`
+#. §2: `ℝ`
+#. §3: $(-\\infty, a)$
+#: Game/Doc/Definition.lean:267
+msgid "In an ordered ste, §0 is the subset of all elements less than §1.\n"
+"For example, in §2 it is the open interval §3."
 msgstr ""
 
 #. §0: `𝓝 a`
-#. §1: `𝓝`
-#. §2: `\\nhds`
+#. §1: `a`
+#. §2: `𝓝`
+#. §3: `\\nhds`
 #: Game/Doc/Definition.lean:274
-msgid "§0 is the neighborhood filter: it consists of all neighborhoods of a.\n"
+msgid "§0 is the neighborhood filter: it consists of all neighborhoods of §1.\n"
 "(A set is a neighboorhood of a point a it it contains an open set containing a.)\n"
 "\n"
-"To type the symbol §1, write §2."
+"To type the symbol §2, write §3."
 msgstr ""
 
 #. §0: `𝓝[s] a`
@@ -5454,10 +5465,11 @@ msgstr ""
 msgid "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4"
 msgstr ""
 
-#. §0: `ring`
-#. §1: `grind`
-#: Game/Levels/Vieta/L05_Funext.lean:36
-msgid "Reminder: §0 and §1 can see through local definitions"
+#. §0: `unfold`
+#. §1: `f`
+#. §2: `g`
+#: Game/Levels/Vieta/L05_Funext.lean:33
+msgid "[Hint sy0jh] §0 the definitions of §1 and §2"
 msgstr ""
 
 #: Game/Levels/Vieta/L06_Piecewise.lean:24

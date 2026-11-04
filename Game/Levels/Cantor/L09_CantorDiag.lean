@@ -65,7 +65,7 @@ Statement cantor_diagonal {A Y : Type} (f : A → A → Y) (hf : Surjective f) :
   Aber ich bin gerade etwas verloren.
   "
   -/
-  Hint (hidden := true) "exploit the surjectivity of `{f}` somehow. It was already told
+  Hint (hidden := true) (strict := true) "exploit the surjectivity of `{f}` somehow. It was already told
   which of mapping `{A} → {Y}` the preimage has to be considered. One could define ``` let c : {A} → {Y} := fun a ↦ _ ```
   and then observe the preimage of `c`."
   let c : A → Y := fun (a : A) ↦ s (f a a)

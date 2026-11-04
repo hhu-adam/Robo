@@ -265,7 +265,7 @@
  "Use short cut by instead of the definition of §0 using equivalent description\n§1. In Leanic it is part of §2. For injective mapping it holds\nthat §3":
  "**Scribble**: Here you can take a shortcut by using the equivalent description §1 of §0 rather than the definition. In Leanish, this is part of §2, which says §3 for injective maps.",
  "Use proof by contradiction":
- "**Scribble**: Here, again, I would try a proof by introduction.",
+ "**Scribble**: Here, again, I would try a proof by contradiction.",
  "Use disappearing §0 in §1 with §2. Try §3":
  "**Scribble**: How far are you? \n\n**You**: I still need to somehow incorporate the fact that §0 vanishes on all §1 with §2. \n\n**Scribble**: Why not formulate the following intermediate step: \n\n§3",
  "Use definitions via §0":
