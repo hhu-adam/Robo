@@ -28,6 +28,9 @@ attribute [game_simp] Finset.Icc_self Finset.sum_singleton MulZeroClass.mul_zero
 -- Babylon, L09_Boss:
 attribute [game_simp] Finset.Icc_self Finset.sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow eq_self Nat.cast_add Nat.cast_one Finset.mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false Finset.sum_insert one_div
 
+-- Bolzano, L01_MaxOnIcc:
+attribute [game_simp] Set.nonempty_Icc
+
 -- Cantor, L01_CantorPowerset:
 attribute [game_simp] Set.mem_setOf_eq
 
@@ -84,6 +87,15 @@ attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq Finset.mem_erase 
 
 -- Euklid, L04_Boss_infinitely_many_primes:
 attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq lt_add_iff_pos_left gt_iff_lt Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
+
+-- Fibre, L02_SecondElement:
+attribute [game_simp] Set.mem_insert_iff Set.mem_singleton_iff ne_eq exists_eq_or_imp ExistsAndEq.existsAndEq eq_self true_and
+
+-- Fibre, L04_ValueAtPair:
+attribute [game_simp] Set.mem_insert_iff eq_self Set.mem_singleton_iff true_or or_true
+
+-- Fibre, L07_ExistsNonneg:
+attribute [game_simp] Set.mem_preimage Pi.neg_apply Set.mem_singleton_iff iff_self neg_eq_zero Left.neg_nonpos_iff
 
 -- Iso, L01_Bijective:
 attribute [game_simp] add_left_inj sub_add_cancel eq_self
