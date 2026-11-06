@@ -93,7 +93,6 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
   -- now using `mul_eq_mul_left_iff`, cf. Prado
   suffices h : n * f (E i i) = n * 1 by
     rw [mul_eq_mul_left_iff] at h
-    obtain h | h := h
     /-
     Hint (hidden := true) "
     **Robo**: Ach ja, den Fall `{h} : {n} = 0`
@@ -102,6 +101,7 @@ Statement Matrix.one_on_diag_ebasis {n : ℕ} {f : Mat[n, n][ℝ] →ₗ[ℝ] �
     "
     -/
     Hint (hidden := true) "Observe `{h} : {n} = 0` seperatly. Prove by cases with `obtain {h} | {h} := {h}`"
+    obtain h | h := h
     · assumption
     -- · Hint  "
     --  **Robo**: Der Pfeil `{h}` ist eine implizite Einbettung von `ℕ` in `ℝ`.

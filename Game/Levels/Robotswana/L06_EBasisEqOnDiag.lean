@@ -63,9 +63,9 @@ Statement Matrix.eq_on_diag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ] ℝ}
     Dann könnstest du `trans f (A * B)` schreiben, um zwei Beweisziele – `f (E i i) = f (A * B)` und `f (A * B) = f (E j j)` – zu erhalten,
   bei denen `{h₁}` vielleicht anwendbar ist."
   -/
-    Hint "Start with `{h₁}`. Find `A * B` with `f (E i i) = f (A * B) = f (E j j)`. Try `trans f (A * B)` to get `f (E i i) = f (A * B)` and `f (A * B) = f (E j j)` and see if `{h₁}` applicable"
+    Hint (strict := true) "Start with `{h₁}`. Find `A * B` with `f (E i i) = f (A * B) = f (E j j)`. Try `trans f (A * B)` to get `f (E i i) = f (A * B)` and `f (A * B) = f (E j j)` and see if `{h₁}` applicable"
     -- Hint (hidden := true) "**Robo**: Hatten wir nicht `E i k = (E i j) * (E j k)` auf einem dieser Zettel?"
-    Hint (hidden := true) "Remind former results with `E i k = (E i j) * (E j k)`"
+    Hint (strict := true) (hidden := true) "Remind former results with `E i k = (E i j) * (E j k)`"
     trans f (E i j * E j i)
     · unfold E
       simp

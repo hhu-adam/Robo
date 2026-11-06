@@ -24,7 +24,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
     **Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung `Nonempty A` brauchen.
   "
   -/
-  Hint "Intorduce new prerequisite `Nonempty A`"
+  Hint (strict := true) "Intorduce new prerequisite `Nonempty A`"
   /-
   Hint (hidden := true) "
       **Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.
@@ -35,7 +35,7 @@ Statement injective_iff_hasLeftInverse {A B : Type} [hA : Nonempty A]  (f : A �
       Vielleicht formulierest du sie noch einmal mit `have` selbst aus, und beweist sie auch noch einmal.
     "
   -/
-  Hint "One could choose left inverse on the previous proven statement ` ∀ b : B, ∃ a : A, …` by using `choose`.
+  Hint (strict := true) "One could choose left inverse on the previous proven statement ` ∀ b : B, ∃ a : A, …` by using `choose`.
   As proven statement has no name formulate statement again with `have` and prove it again."
   constructor
   · intro hf
