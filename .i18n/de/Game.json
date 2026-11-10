@@ -159,16 +159,21 @@
  "[Hint wjedv] Try §0": "Ext räuspert sich.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint wai1k] Start with §0": "**Robo**:  Fang mal an mit so etwas wie §0.",
  "[Hint w5pc3] Good intermediate statement to try to prove.":
  "**Robo**:  Sieht doch gut aus.",
  "[Hint w4joj] Try §0.":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint w0ye0] Introduce the product §0 of all primes apart from §1, and\nestablish that the product of all primes is the product of p and q.":
+ "**Robo**:  Ich würde mal einen Namen für das Produkt aller Primzahlen außer §1 einführen, sagen wir §0.  Und dann zeigen, dass das Produkt aller Primzahlen das Produkt von §1 und §0 ist.",
  "[Hint ux181] Remember §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint uww7c] Perform §0 again": "**Robo**: §0?",
  "[Hint upbd] Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n§5 means that b is an *upper bound* of s: §6 for every element of s.\n\nFor subset §7 of a set §8 (§9), §10 means that there exists some §11 in T\n(§12) such that §13.":
  "**Du**:  Ich rate einfach mal … §5 bedeutet doch bestimmt, dass §3 eine obere Schranke von §0 ist.  Und §10 bedeutet, dass §0 „bounded above“, also von oben beschränkt ist.  Richtig?\n\n**Robo**:  Ja, richtig. Wir müssen vermutlich einfach noch einmal explizit sagen, dass §11 die gesuchte obere Schranke ist.",
  "[Hint u6qjy] Start with §0.": "**Robo**:  Ich würde wieder mit §0 anfangen.",
+ "[Hint th0l6] Now construct the new prime.\nConsider the finite set §0,\ndefine the product of all of these,\nthen consider a “new prime” given by that product plus one.":
+ "**Du**: Jetzt definiere ich mir also eine neue Primzahl?\n\n**Robo**:  Genau.  Führ hier am besten ein paar Namen ein – einen Namen für die endliche Menge §0, dann einen Namen für das Produkt über alle (Prim-)Zahlen darin, und dann einen Namen für die um eins größere „neue Primzahl“.",
  "[Hint tg8nh] Try §0.":
  "**Robo**:  Nimm einfach noch eine Bohne.  Sind ja genügend da.",
  "[Hint tfuiem] Remember §0 and §1.":
@@ -206,6 +211,8 @@
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint plnk] Try §0":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
+ "[Hint nj44y] Establish that the “new prime” is bigger than one,\nand remember §0.":
+ "**Robo**:  Halte mal fest, dass unsere „neue Primzahl“ jedenfalls größer ist als eins.  Danach können wir einfach §0 anwenden.",
  "[Hint nhdsmno] We have two modified neighborhood filters of §0.\n§1 is the filter “approaching zero from the right”:\nit consists of all sets that contain the positive part of a neighborhood of 0,\ni.e. that contain the intersection of a neighborhood of 0 with §2.\n§3 is the filter “approaching zero without ever being equal to zero”:\nit consists of all sets that contain a punctured neighborhood of zero,\ni.e. that contain the intersection of a neighborhood of 0 with §4.\n§5 means that the first filter is finer than the second,\ni.e. that every set in the second is also contained in the first.\nApply the new theorem §6.":
  "**Du**:  Schon wieder neue Notation. \n\n**Robo**:  Ja, hier geht es um eingeschränkte Filter.  \n\n§3 ist der Filter, der sich sozusagen der §0 nähert, ohne sie je zu erreichen.  Er besteht aus allen Mengen, die eine punktierte Umgebung der §0 enthalten.\n\n**Du**:  Eine „punktierte“ Umgebung?\n\n**Robo**:  Ja, eine punktierte Umgebung.  Eine punktierte Umgebung von §0 ist das Komplement von §0 in einer Umgebung von §0.\nOder anders ausgedrückt:  der Schnitt einer Umgebung von §0 mit §4.  Der Filter §3 besteht aus allen Mengen, die so einen Schnitt enthalten.\n\n**Du**:  Okay.  Und §1?\n\n**Robo**:  §1 ist der Filter, der sich der §0 sozusagen von rechts nähert.  Er besteht aus Mengen, die die „positive Hälfte“ einer Umgebung von §0 enthalten.\nAlso aus Mengen, die den Schnitt einer Umgebung von §0 mit §2 enthalten.\n\n**Du**:  Und was bedeutet hier §5?\n\n**Robo**:  Das bedeutet, dass der linke Filter feiner als der rechte ist – dass also jede Menge aus dem rechten Filter bereits im linken liegt.  Da beide Filter gleichermaßen konstruiert sind – aus Schnitten von Umgebungen mit §2 bzw. §4 –, kannst du die Aussage mit §6 auf eine elementare Inklusion zurückführen.",
  "[Hint nfd0p] Remember §0":
@@ -214,6 +221,8 @@
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint mwqb] Remember §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
+ "[Hint mnq1z] Great. Now show that, on the other hand, by construction, no prime can divide the “new prime”.":
+ "**Du**:  Das hat ja immerhin geklappt.  Als zweiten Schritt formuliere ich also jetzt aus, dass die „neue Primzahl“ andererseits genau so konstruiert ist, dass keine Primzahl sie teilen kann.",
  "[Hint mhjv] Try §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
  "[Hint mdsff]\n§0 is the open interval between §1 and §2,\ni.e. §3.\n§4 is the filter of neighborhoods of §5 (sets containing §6 in their interior).\nJoke about filter/coffee/§7.\nAs the interval is open, can proceed with new theorem §8. ":
@@ -232,6 +241,8 @@
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
  "[Hint kqwz] prove §0":
  "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen.",
+ "[Hint k7r2d] First, establish that, like any natural number greater than one,\nthe “new prime” must have a prime factor.":
+ "**Robo**:  Ich würd jetzt als Erstes mal festhalten, dass unsere „neue Primzahl“, wie jede natürliche Zahl größer als eins, einen Primfaktor haben muss.",
  "[Hint jrxb] Try §0":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint itvIoo] Just §0 §1.":
@@ -242,6 +253,8 @@
  "**Robo**:  Hier kannst du bestimmt §0 gut gebrauchen.",
  "[Hint hwzk] Try §0":
  "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen.",
+ "[Hint huqzl] Try proof by contradiction.":
+ "**Robo**: Klar, das machen wir. Ist doch ein typischer Widerspruchsbeweis: Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt aller Primzahlen plus eins durch keine Primzahl teilbar. Aber jede Zahl größer als eins hat einen Primteiler. Widerspruch.",
  "[Hint hq5jg] Remember §0.":
  "**Robo**: Mist.  Ich habe die Kaffeebohnen im Raumschiff liegen lassen.\n\n**Du**:  Weiß auch gar nicht, ob die unter Wasser und mit Seetang funktionieren würden.\n\nAber der Kranke reicht euch seelenruhig eine Kaffeebohne.",
  "[Hint hi2ko] Remember §0.":
@@ -302,10 +315,15 @@
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
  "[Hint 7xd8e] Remember §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint 7v4d5] Start with §0": "**Robo**:  Ja, mach das.  So etwas wie §0.",
  "[Hint 4j4cl] Try §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint 33o0v] See: Now just need to prove that §0 lies in the interval\n§1,\nand that the interval is indeed open.":
  "**Robo**:  Na bitte.  Das hat doch geklappt.  Jetzt musst du also nur noch zeigen, dass §0 in §1 liegt und dass §1 tatsächlich offen ist.",
+ "[Hint 2k3ni] This is looking very promising.":
+ "**Du**:  Sieht das jetzt gut aus?\n\n**Robo**:  Das will ich doch meinen!",
+ "[Hint 25fac] You now want to apply §0, which we've seen before:\n§1\nSo bring the goal into a shape to which you can apply that theorem.\nThe curly braces around §2, §3 and §4 mean that these parameters\nare implicit, so you often don't need to mention them.  But you *can* provide them\nwith:\n§5\n":
+ "**Robo**:  Vermutlich willst du jetzt §0 anwenden:\n\n§1\n\nSollte nicht so schwer sein, das Beweisziel in eine Form zu bringen, auf die sich diese Aussage anwenden lässt.  \nDu kannst übrigens auch explizit dazusagen, für welchen Wert von §3 wir die Aussage benutzen:\n\n§5\n",
  "[Game] Title": "Robo",
  "[Game] Introduction":
  "# Game Over oder QED?\n\nBist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?\nDann bist du hier genau richtig!\nIn diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.\nDu wirst unter anderem per Induktion Summenformeln beweisen,\nnachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,\nzeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,\nund die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.\n\nDas Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\nfast genauso an wie in VSCode, der Standard-IDE für Lean.\nAuf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,\nund schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).\n\nKlicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n\n## Spielstand\n\nDein Spielstand wird lokal in deinem Browser als *site data* gespeichert.\nSolltest du diese löschen, verlierst du deinen Spielstand!\nViele Browser löschen *site data* und *cookies* zusammen.\nDu kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.\n\n## Spielregeln\n\nWenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.\nWenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.\n\n## Neuigkeiten\n\n`[2026-05-21]` Im Spiel ist jetzt nur noch ein kleine Teilmenge der `simp`-Lemmas aus `mathlib` zugelassen.  Wenn eine Level, das bis gestern noch als gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es wahrscheinlich daran, dass du eine `simp`le Abkürzungen genommen hattest.\n\n`[2026-03-20]` Robo gibts jetzt auch auf Englisch! Über weitere Übersetzungen würden wir uns [sehr freuen](https://github.com/hhu-adam/Robo/tree/main?tab=readme-ov-file#translations)!\n\nHintergrundinformationen und Credits findest du im Menü unter *Game Info*.",
@@ -537,8 +555,6 @@
  "**Cantor**:  Ja!\n\n**Du**:  Robo, könnten wir jetzt nicht das Resultat von eben verwenden?\n\n**Robo**:  Sorry, ging alles so schnell!  Habe ich wohl vergessen, abzuspeichern.",
  "Try rewriting with §0": "**Robo**:  Probier mal §0.",
  "Try replacing §0 by §1": "**Robo**: Ersetz mal §0 durch §1.",
- "Try proof by conradiction. For this employ §0":
- "**Robo**: Klar, das machen wir. Ist doch ein typischer Widerspruchsbeweis: Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt aller Primzahlen plus Eins durch keine Primzahl teilbar. Andererseits gilt: §0.  Widerspruch.",
  "Try proof by cases, if §0":
  "**Fin**: Mach doch eine Fallunterscheidung, ob §0 ist oder nicht.",
  "Try proof by cases for §0":
@@ -1074,7 +1090,7 @@
  "Intro Euklid: shows encrypted message §0":
  "**Robo**:  Dieser Planet sieht aus wie ein Labyrinth.\n\n**Du**:  Oder wie eine Irrgarten.\n\nIhr fliegt langsam näher.\n\n**Robo**:  Das ist ein Bibliothek! Die schauen wir uns auf jeden Fall genauer an. Aber ich weiß gar nicht, wo ich landen soll.\n\n**Du**: Dort vielleicht?  Sieht aus wie ein kleiner Lesesaal.  Schaffst du das?\n\nRobo schafft das.  Ihr steigt aus und seht euch um.\n\nDie Regale sind meterhoch, und alle dicht gefüllt mit Büchern in dicken Einbänden. Du ziehst wahllos eines heraus, blätterst eine Seite auf, und liest folgendes:\n\n§0\n\n**Du**:  Robo, hast du eine Idee, was das ist?\n\n**Robo**:  Ich glaube, Dschibberisch ist der Fachausdruck.  Also nein, keine Ahnung.\n\nIhr schaut euch noch ein paar andere Bücher an, aber überall steht ähnlicher Zeichensalat. Auch bei den Büchern auf den Gängen sieht es nicht besser aus. Da entdeckt ihr ein Buch, das aufgeschlagen auf der Erde liegt.",
  "Intro Euklid L04":
- "Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n\n**Euklid**: Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren. Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist, hätte ich den Posten als Direktor nie angenommen.\n\n**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n\n**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten der Schriften meines berühmten Vorfahren zu finden.  Der stammte übringens auch aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst, und finde nur kleinste Bruchstücke.\n\nSchauen Sie, hier habe ich jetzt schließlich selbst angefangen, eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?",
+ "Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n\n**Euklid**: Guten Tag!  Das ist ja schön, dass sich auch einmal ein paar Besucher hierher verirren. Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist, hätte ich den Posten als Direktor nie angenommen.\n\n**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n\n**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten der Schriften meines berühmten Vorfahren zu finden.  Der stammte übrigens auch aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst, und finde nur kleinste Bruchstücke.\n\nSchauen Sie, hier habe ich jetzt schließlich selbst angefangen, eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?",
  "Intro Euklid L03":
  "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.\nRobo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent.",
  "Intro Euklid L02":

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-04\n"
+"POT-Creation-Date: 2026-11-10\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -7471,22 +7471,105 @@ msgstr ""
 #: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:28
 msgid "Intro Euklid L04"
 msgstr ""
-"Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet ihr euch in einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
+"Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n"
 "\n"
-"**Euklid**: Guten Tag!  Das ist ja schön, das sich auch einmal ein paar Besucher hierher verirren. Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist, hätte ich den Posten als Direktor nie angenommen.\n"
+"**Euklid**: Guten Tag!  Das ist ja schön, dass sich auch einmal ein paar Besucher hierher verirren. Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist, hätte ich den Posten als Direktor nie angenommen.\n"
 "\n"
 "**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n"
 "\n"
-"**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten der Schriften meines berühmten Vorfahren zu finden.  Der stammte übringens auch aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst, und finde nur kleinste Bruchstücke.\n"
+"**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten der Schriften meines berühmten Vorfahren zu finden.  Der stammte übrigens auch aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst, und finde nur kleinste Bruchstücke.\n"
 "\n"
 "Schauen Sie, hier habe ich jetzt schließlich selbst angefangen, eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?"
 
-#. §0: `exists_prime_and_dvd`
 #: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:42
-msgid "Try proof by conradiction. For this employ §0"
-msgstr "**Robo**: Klar, das machen wir. Ist doch ein typischer Widerspruchsbeweis: Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt aller Primzahlen plus Eins durch keine Primzahl teilbar. Andererseits gilt: §0.  Widerspruch."
+msgid "[Hint huqzl] Try proof by contradiction."
+msgstr "**Robo**: Klar, das machen wir. Ist doch ein typischer Widerspruchsbeweis: Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt aller Primzahlen plus eins durch keine Primzahl teilbar. Aber jede Zahl größer als eins hat einen Primteiler. Widerspruch."
 
-#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:100
+#. §0: `«{hf}».toFinset`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:45
+msgid ""
+"[Hint th0l6] Now construct the new prime.\n"
+"Consider the finite set §0,\n"
+"define the product of all of these,\n"
+"then consider a “new prime” given by that product plus one."
+msgstr ""
+"**Du**: Jetzt definiere ich mir also eine neue Primzahl?\n"
+"\n"
+"**Robo**:  Genau.  Führ hier am besten ein paar Namen ein – einen Namen für die endliche Menge §0, dann einen Namen für das Produkt über alle (Prim-)Zahlen darin, und dann einen Namen für die um eins größere „neue Primzahl“."
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:53
+msgid ""
+"[Hint k7r2d] First, establish that, like any natural number greater than one,\n"
+"the “new prime” must have a prime factor."
+msgstr "**Robo**:  Ich würd jetzt als Erstes mal festhalten, dass unsere „neue Primzahl“, wie jede natürliche Zahl größer als eins, einen Primfaktor haben muss."
+
+#. §0: `have … : ∃ p : ℕ, Prime p ∧ p ∣ …`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:55
+msgid "[Hint wai1k] Start with §0"
+msgstr "**Robo**:  Fang mal an mit so etwas wie §0."
+
+#. §0: `exists_prime_and_dvd`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:57
+msgid ""
+"[Hint nj44y] Establish that the “new prime” is bigger than one,\n"
+"and remember §0."
+msgstr "**Robo**:  Halte mal fest, dass unsere „neue Primzahl“ jedenfalls größer ist als eins.  Danach können wir einfach §0 anwenden."
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:72
+msgid "[Hint mnq1z] Great. Now show that, on the other hand, by construction, no prime can divide the “new prime”."
+msgstr "**Du**:  Das hat ja immerhin geklappt.  Als zweiten Schritt formuliere ich also jetzt aus, dass die „neue Primzahl“ andererseits genau so konstruiert ist, dass keine Primzahl sie teilen kann."
+
+#. §0: `have … : ∀ p : ℕ, Prime p → ¬ p ∣ …`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:73
+msgid "[Hint 7v4d5] Start with §0"
+msgstr "**Robo**:  Ja, mach das.  So etwas wie §0."
+
+#. §0: `q`
+#. §1: `«{p}»`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:76
+msgid ""
+"[Hint w0ye0] Introduce the product §0 of all primes apart from §1, and\n"
+"establish that the product of all primes is the product of p and q."
+msgstr "**Robo**:  Ich würde mal einen Namen für das Produkt aller Primzahlen außer §1 einführen, sagen wir §0.  Und dann zeigen, dass das Produkt aller Primzahlen das Produkt von §1 und §0 ist."
+
+#. §0: `not_dvd_of_lt_of_lt_mul_succ`
+#. §1: ```
+#. not_dvd_of_lt_of_lt_mul_succ {n k m : ℕ}
+#. (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m
+#. ```
+#. §2: `n`
+#. §3: `k`
+#. §4: `m`
+#. §5: ```
+#. not_dvd_of_lt_of_lt_mul_succ ( k:= …)
+#. ```
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:96
+msgid ""
+"[Hint 25fac] You now want to apply §0, which we've seen before:\n"
+"§1\n"
+"So bring the goal into a shape to which you can apply that theorem.\n"
+"The curly braces around §2, §3 and §4 mean that these parameters\n"
+"are implicit, so you often don't need to mention them.  But you *can* provide them\n"
+"with:\n"
+"§5\n"
+msgstr ""
+"**Robo**:  Vermutlich willst du jetzt §0 anwenden:\n"
+"\n"
+"§1\n"
+"\n"
+"Sollte nicht so schwer sein, das Beweisziel in eine Form zu bringen, auf die sich diese Aussage anwenden lässt.  \n"
+"Du kannst übrigens auch explizit dazusagen, für welchen Wert von §3 wir die Aussage benutzen:\n"
+"\n"
+"§5\n"
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:126
+msgid "[Hint 2k3ni] This is looking very promising."
+msgstr ""
+"**Du**:  Sieht das jetzt gut aus?\n"
+"\n"
+"**Robo**:  Das will ich doch meinen!"
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:136
 msgid "Conclusion Euklid L04"
 msgstr ""
 "Euklid ist begeistert und tanzt im Kreis.\n"
