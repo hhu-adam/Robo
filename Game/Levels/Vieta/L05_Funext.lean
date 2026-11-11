@@ -15,7 +15,7 @@ Er reicht euch ruhig das nächste Blatt.
 -/
 Introduction "Intro Vieta L05"
 
-open Function Nat
+open Function
 
 Statement {n : ℕ} :
     let f := fun (x : ℤ) ↦ x ^ (2 * n);

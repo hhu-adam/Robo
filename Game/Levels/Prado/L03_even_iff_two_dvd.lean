@@ -15,9 +15,9 @@ Introduction
 Introduction "Intro Prado L03"
 
 /---/
-TheoremDoc Nat.even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
+TheoremDoc even_iff_two_dvd as "even_iff_two_dvd" in "ℕ"
 
-namespace Nat
+open Nat
 
 Statement even_iff_two_dvd {a : ℕ} : Even a ↔ 2 ∣ a := by
   -- Hint (hidden := true) "
