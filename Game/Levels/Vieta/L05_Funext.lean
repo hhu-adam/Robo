@@ -15,7 +15,7 @@ Er reicht euch ruhig das nächste Blatt.
 -/
 Introduction "Intro Vieta L05"
 
-open Function
+open Function Nat
 
 Statement {n : ℕ} :
     let f := fun (x : ℤ) ↦ x ^ (2 * n);
@@ -37,6 +37,7 @@ Statement {n : ℕ} :
   ring
 
 DisabledTactic simp
+NewTactic funext
 TheoremTab "Function"
 
 Conclusion ""
