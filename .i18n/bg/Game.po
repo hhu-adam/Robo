@@ -1297,7 +1297,7 @@ msgstr ""
 "| §5     | §6 | §7  |\n"
 "\n"
 "И в двата случая импликацията §8 може или да е\n"
-"dадена като предположение, или да е вече известна лема."
+"дадена като предположение, или да е вече известна лема."
 
 #. §0: `assumption`
 #: Game/Doc/Tactic.lean:16
@@ -3098,7 +3098,7 @@ msgid ""
 msgstr ""
 "Заключение Имплис L06: Обясни, че аналогично на §0 със §1 и §2,\n"
 "§3 има §4 и §5. §6 може да се разбира като §7. То е §8, тъй като §9\n"
-"означава Modens Ponens. „r“ в §10 означава „reverse“."
+"означава Modus Ponens. „r“ в §10 означава „reverse“."
 
 #: Game/Levels/Implis/L07_Symm.lean:14
 #, fuzzy
@@ -3694,7 +3694,7 @@ msgstr "Заключение Квантус L07"
 #: Game/Levels/Quantus/L08_PushNeg.lean:14
 #, fuzzy
 msgid "Intro Quanus L08"
-msgstr "Въведение Кванус L08"
+msgstr "Въведение Квантус L08"
 
 #. §0: `«{P}»`
 #. §1: `«{P}»`
@@ -4975,13 +4975,12 @@ msgstr "Първо, въведи множеството §0"
 #. §2: `simp [«{s}»]`
 #. §3: `simp`
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:74
-#, fuzzy
 msgid ""
 "Try §0. When you apply §1 later, §2 allows §3 to look through\n"
 "your defintions"
 msgstr ""
 "Пробвай §0. Когато приложиш §1 по-късно, §2 позволява на §3 да надникне през\n"
-"defintions"
+"твоите дефиниции."
 
 #: Game/Levels/Cantor/L02_CantorPowerset.lean:80
 #, fuzzy
@@ -5690,7 +5689,7 @@ msgstr "Опитай §0 или §1 с §2 чрез §3"
 #: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:69
 #, fuzzy
 msgid "[Robotswana.L07] Hint 1: Try commutating"
-msgstr "[Robotswana.L07] Подсказка 1: Опитай да комутируваш"
+msgstr "[Robotswana.L07] Подсказка 1: Опитай да комутираш"
 
 #. §0: `h₁`
 #: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:77
