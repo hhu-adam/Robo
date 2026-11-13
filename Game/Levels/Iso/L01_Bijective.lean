@@ -39,7 +39,7 @@ TheoremTab "Function"
 /-
 Conclusion
 "
-**Isososoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …
+**Isosoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …
 
 Er legt ein paar Blätter zur Seite.
 "

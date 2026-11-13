@@ -27,7 +27,7 @@
  "§0 means 'is fixed point'. §1 equates to §2":
  "**你**：呃……\n\n**司南**：§0 大概是指“is fixed point”。反正 §1 显然就是 §2 的意思。",
  "§0 looks like a §1 matrix. Reminder for §2: §3 is\nthe set §4. Indeces start here at §5 and not §6. §7 is the matrix which\nhas at position §8 the entry §9 and else zero. §10s are abbreviations for case §11.\n§12 is entry of matrix §13 at position §14. Goal can be seen as scalar multiplication akin to\n\n§15\n\nBegin with §16.\n":
- "**你**：不管是什么东西在这儿留下了痕迹——我感觉它挺喜欢矩阵的。总之，§0 看起来很像 §1 矩阵。我就是想不起来 §2 是啥了。\n\n**司南**：§3 是集合 §4。所以这里的行、列索引是从 §5 开始，而不是从 §6。还有 §7 我正好认识：它是在位置 §8 处取值为 §9、其他地方全是 0 的矩阵。\n\n**你**：那这些 §10s 就只是 §11 这种情况的简写咯？\n\n**司南**：看起来是这样。而且 §12 就是矩阵 §13 在位置 §14 的那个条目。\n\n**你**：啊，懂了。所以这里不是矩阵乘积，只是标量乘法。大概像……\n\n你在纸上乱写：\n\n§15\n\n**你**：那这就又……显然了！？\n\n**司南**：对。我觉得你从 §16 开始，后面就会自己顺下去。\n",
+ "**你**：不管是什么东西在这儿留下了痕迹——我感觉它挺喜欢矩阵的。总之，§0 看起来很像 §1 矩阵。我就是想不起来 §2 是啥了。\n\n**司南**：§3 是集合 §4。所以这里的行、列索引是从 §5 开始，而不是从 §6。还有 §7 我正好认识：它是在位置 §8 处取值为 §9、其他地方全是 0 的矩阵。\n\n**你**：那这些 §10 就只是 §11 这种情况的简写咯？\n\n**司南**：看起来是这样。而且 §12 就是矩阵 §13 在位置 §14 的那个条目。\n\n**你**：啊，懂了。所以这里不是矩阵乘积，只是标量乘法。大概像……\n\n你在纸上乱写：\n\n§15\n\n**你**：那这就又……显然了！？\n\n**司南**：对。我觉得你从 §16 开始，后面就会自己顺下去。\n",
  "§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\nStelle §4 und Null überall sonst.\n\nDies ist eine spezialisierte Form der generellen §5,\nwelche auch nicht-quadratisch sein kann und einen beliebigen Wert §6 aus einem beliebigen\nRing annehmen kann. Wir benutzen hier §7 einfach als Abkürzung.":
  "§0 是一个 §1 矩阵（取值于 §2），在 §4 位置是 §3，其余地方全是 0。\n\n这是更一般的 §5 的一个特例；后者也可以不是方阵，并且可以取自任意环的任意值 §6。\n这里我们只是把 §7 当作缩写来用。",
  "§0 is what is looked for": "**司南**：§0 就是你要找的。",
@@ -87,7 +87,7 @@
  "§0 bedeutet §1.\n\n**Warnung**: Die Symbole §2 (§3) und §4 (ASCII vertikaler Strich) sind zwei unterschiedliche\nZeichen! Das erste wird ausschließlich für „teilt“ verwendet, das andere kommt zum Beispiel in der\nSyntax §5 vor.":
  "§0 表示 §1。\n\n**警告**：符号 §2（§3）和 §4（ASCII 竖线）是两个不同的字符！第一个只用于表示“整除”，另一个比如会出现在语法 §5 里。",
  "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\nthe implications via §3":
- "**你**（*对司南*）：这里我用 §0 和 §1 都推不下去。\n\n**司南**：我觉得你只要稍微帮 §2 一把就行。要不按老办法，用 §3 处理掉这个两个蕴涵先。",
+ "**你**（*对司南*）：这里我用 §0 和 §1 都推不下去。\n\n**司南**：我觉得你只要稍微帮 §2 一把就行。要不按老办法，用 §3 处理掉这两个蕴涵先。",
  "§0 Use linearity": "**你**（*心里想*）：现在用线性性……千万别想水……巴比伦那的水可真不少……我刚才做到哪儿了？",
  "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n\n## §3 as proof goal\n\nYou can use the tactics §4 or §5 to decide\nwhich statement you want to prove.\n\n## §6 as an assumption\n\nSince you do not know which of the statements §7 or §8 you can assume,\nyou may have to show the proof goal twice:\nonce under the assumption §9 and once under the assumption §10.\nTo do this, use the tactic\n§11":
  "§0（“A 或 B”）的意思是：命题 §1、§2 至少有一个为真。\n\n## §3 作为证明目标\n\n用策略 §4 或者 §5，你可以决定你想证明哪一个命题。\n\n## §6 作为假设\n\n因为你不知道你可以假设 §7、§8 中的哪一个，所以你可能得把证明目标证明两次：\n一次在假设 §9 下，一次在假设 §10 下。\n为此你使用策略\n§11",
@@ -295,7 +295,7 @@
  "Try §0 or directly §1": "**司南**：这不就是定义嘛！\n\n**司南** *(对你说)*：试试 §0 吧。或者干脆 §1。",
  "Try §0 or again §1": "**司南**：这里你可以用 §0。或者*再次*用 §1……",
  "Try §0 on §1 with §2 to §3e§4rite\ngoal.":
- "**司南**：就像我刚才说的，我觉得你可以直接从 §0 开始，把它用在等号右边的单位矩阵 §1 上。也就是说，你可以用等式 §2 来重写目标 也就是§3§4。",
+ "**司南**：就像我刚才说的，我觉得你可以直接从 §0 开始，把它用在等号右边的单位矩阵 §1 上。也就是说，你可以用等式 §2 来重写目标，也就是 §3§4。",
  "Try §0 not §1": "**司南**：不，不是 §0，而是 §1。",
  "Try §0 in form of §1":
  "**你**：然后……\n\n**本尼迪克特**：……你应该先准备一个合适的中间结果。\n\n**司南**：对！再试试 §0 吧。更准确地说：§1！",
@@ -693,7 +693,7 @@
  "Intro Prado L05": "**你** *(对司南)*：来点更有意思的问题！\n\n**司南**：这个怎么样？",
  "Intro Prado L04":
  "吉诺这会儿似乎有些不悦，因为你们压根没把注意力放在他超棒的博物馆上。\n他觉得自己被无视了。\n为了吸引你们的注意，他给了你们下面这个问题。",
- "Intro Prado L03": "你们跟着吉诺参观博物馆时，司南又给了你出了几道题。",
+ "Intro Prado L03": "你们跟着吉诺参观博物馆时，司南又给你出了几道题。",
  "Intro Prado L02: Prove that §0 is only even prime by using the expression „§1 divides §2“.\n„§3 divides §4“ is written as §5, where the vertical bar can be either written as §6 or §7":
  "**你** *(低声)*：司南，你觉得我们该告诉他吗？\n\n**司南**：说 §0 是唯一的偶素数？只要我们不给他拿出证明，他是不会相信的。\n\n**你**：那你不觉得我们能证明给他看吗？你不是懂这门语言嘛。我们试试。比如说，“§1 整除 §2”我该怎么写？\n\n**司南**：行吧。那“§3 整除 §4”你写成 §5，其中那根竖线你得写成 §6 或者 §7。先试试这里这道问题。",
  "Intro Prado L01": "**司南**：对对。我们知道。\n\n他飞快地把这个陈述用Lean语写出来，递到你面前。",
@@ -834,7 +834,7 @@
  "Insert §0 via §1": "**司南**：现在你用 §1 把你的 §0 给出来，看看你的定义是不是对的。",
  "Inequality §0 is defined as §1.  You can see this with §2.":
  "不等关系 §0 被定义为 §1。你可以用 §2 把它展开。",
- "Increase readability of §0. Try §1": "**司南**：现在把假设 §0 整理的更可读一点。也许可以试试 §1？",
+ "Increase readability of §0. Try §1": "**司南**：现在把假设 §0 整理得更可读一点。也许可以试试 §1？",
  "Implis": "蕴涵",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "如果 §0 是一个大于等于 0 的整数，那么 §1 就是同一个数，只不过把它看成自然数。\n（如果 §2 是一个负整数，那么 §3 也同样有定义，但它的值没有数学意义。）\n\n## 相关策略\n\n一个自然数 §4 总是可以看成一个整数。\n为此你要么把它显式写成 §5，要么写成 §6。",
@@ -1035,7 +1035,7 @@
  "Divide §0 via §1 into\n§2 and §3": "**司南**：先把 §0 用 §1 拆成 §2 和 §3 吧！",
  "Divide interval §0 into §1 and §2 by using §3":
  "**司南**：现在你想把求和的区间 §0 拆成 §1 和 §2。为此你可以用我们之前学过的引理 §3。",
- "Divide assumption §0 using §1": "**司南**：会先把假设 §0 用 §1 拆开。",
+ "Divide assumption §0 using §1": "**司南**：我会先把假设 §0 用 §1 拆开。",
  "Disect §0 into its constituents": "**司南**：现在我们把假设 §0 拆成它的三个部分。",
  "Disect §0": "**司南**：把 §0 再拆得细一点，能拆多细就多细！",
  "Disect again": "**司南**：把这个 “且” 也拆开！",
@@ -1049,7 +1049,7 @@
  "**你**：那我现在继续用 §0 和 §1 来做证明？\n\n**司南**：对。接下来用 §2 之类的写法把假设拆开。",
  "Continue with §0": "**司南**：你可以在这里用 §0 接着往下做。",
  "Conlsuion Samarkand L08":
- "**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n\n**司南**：你还要这样待多久？\n\n**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n\n：\n**司南**：哦哦……\n\n**你**:那你怎么知道之后要去哪里，才能让图案对得上？\n\n**阿拉普卡**：啊！\n\n阿拉普卡的脸上绽开了一个大大的笑容。\n\n**阿拉普卡**：这就是艺术啦！",
+ "**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n\n**司南**：你还要这样待多久？\n\n**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n\n**司南**：哦哦……\n\n**你**：那你怎么知道之后要去哪里，才能让图案对得上？\n\n**阿拉普卡**：啊！\n\n阿拉普卡的脸上绽开了一个大大的笑容。\n\n**阿拉普卡**：这就是艺术啦！",
  "Confirm that §0 is defined as §1 via §2":
  "**你**：我没猜错的话，§0 的定义是：§1？\n\n**司南**：应该是。你可以用 §2 展开看看。不过也不一定非得这样。",
  "Conclusions Samarkand L02": "**阿拉普卡**：好看，好看。",
