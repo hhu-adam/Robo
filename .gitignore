@@ -1,5 +1,9 @@
-build/
-lake-packages/
+.DS_Store
+
+# Lean
+**/.lake
+**/.i18n/**/*.mo
+
 .lake/
 **/.DS_Store
 images/tmp-download/
