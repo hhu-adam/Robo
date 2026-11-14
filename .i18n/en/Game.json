@@ -28,7 +28,7 @@
  "§0 means 'is fixed point'. §1 equates to §2":
  "**You**: Um … \n\n**Scribble**: §0 is probably short for “is a fixed point”. In any case, §1 apparently means §2.",
  "§0 looks like a §1 matrix. Reminder for §2: §3 is\nthe set §4. Indeces start here at §5 and not §6. §7 is the matrix which\nhas at position §8 the entry §9 and else zero. §10s are abbreviations for case §11.\n§12 is entry of matrix §13 at position §14. Goal can be seen as scalar multiplication akin to\n\n§15\n\nBegin with §16.\n":
- "**You**: Whatever creature left these traces here seems to like matrices. At least, §0 looks very much like §1 matrices. But I've forgotten what §2 was.\n\n**Scribble**: §3 is the set §4. So the row and column indices here start at §5, not §6. And §7 is also something I happen to know – it's the matrix that has an entry §9 at position §8 and is zero everywhere else.\n\n**You**: So the §10s are just an abbreviation for the case §11? \n\n**Scribble**: Looks like it. And §12 is simply the entry of the matrix §13 at position §14. \n\n**You**: Ah, I see. So this is no actually a product of matrices, it's just a scalar multiplication. Something like … \n\nYou scribble on the paper: \n\n§15\n\n **You**: Then that's … obvious again! \n\n**Scribble**:  Indeed. I think if you start with §16, the rest will follow automatically.\n",
+ "**You**: Whatever creature left these traces here seems to like matrices. At least, §0 looks very much like §1 matrices. But I've forgotten what §2 was.\n\n**Scribble**: §3 is the set §4. So the row and column indices here start at §5, not §6. And §7 is also something I happen to know – it's the matrix that has an entry §9 at position §8 and is zero everywhere else.\n\n**You**: So the §10s are just an abbreviation for the case §11? \n\n**Scribble**: Looks like it. And §12 is simply the entry of the matrix §13 at position §14. \n\n**You**: Ah, I see. So this is not actually a product of matrices, it's just a scalar multiplication. Something like … \n\nYou scribble on the paper: \n\n§15\n\n **You**: Then that's … obvious again! \n\n**Scribble**:  Indeed. I think if you start with §16, the rest will follow automatically.\n",
  "§0 ist die §1-Matrix (mit Werten in §2) mit einer §3 an\nStelle §4 und Null überall sonst.\n\nDies ist eine spezialisierte Form der generellen §5,\nwelche auch nicht-quadratisch sein kann und einen beliebigen Wert §6 aus einem beliebigen\nRing annehmen kann. Wir benutzen hier §7 einfach als Abkürzung.":
  "§0 is the §1 matrix (with values in §2) with a §3 at position §4 and zeroes elsewhere. \n\nThis is a specialised form of the general §5, which can also be non-square and have an arbitrary entry §6 from any ring. We use §7 here simply as an abbreviation.",
  "§0 is what is looked for": "**Scribble**: You're looking for §0.",
@@ -58,7 +58,7 @@
  "§0 is like §1 'backwards'. §2 takes the premisse out of §3\nand makes it into an assumption. §4 takes an assumption and sets it as the implication premisse\nin front of the goal.":
  "**You**: I see. §0 is basically §1 in reverse. \n\n**Scribble**: Exactly. §2 takes the premise of an implication §3 in the goal and turns it into an assumption. §4, on the other hand, takes an assumption and moves it into the goal as an implication premise. Anyway, let's get this finished now.",
  "§0 is in 'type', whcih can be interpreted as §1 being a set which is by assumption §2\nnot empty. The goal is to show that there is an element in §3. Use §4 to disect assumption.\nTry §5.":
- "**You**: What is this now? §0 is in „Type“? \n\n**Scribble**: You can simply think of §1 as a set … \n\n**You**: … which, according to assumption §2, is not empty? \n\n**Scribble**: Exactly.\n\n**You**: And I'm supposed to show that there is an element in §3? \n\n**Scribble** Correct. \n\n**You**: And isn't that precisely our assumption? \n\n**Scribble**: We again have an assumption here that can be “deconstructed” with §4. Try §5.",
+ "**You**: What is this now? §0 is in „Type“? \n\n**Scribble**: You can simply think of §1 as a set … \n\n**You**: … which, according to assumption §2, is not empty? \n\n**Scribble**: Exactly.\n\n**You**: And I'm supposed to show that there is an element in §3? \n\n**Scribble**: Correct. \n\n**You**: And isn't that precisely our assumption? \n\n**Scribble**: We again have an assumption here that can be “deconstructed” with §4. Try §5.",
  "§0 is helpful here": "**Scribble**:  Here, §0 should help again.",
  "§0 is equivalent to §1: the tactic replaces an assumption\n§2 with the special case §3.\n\nIf you want to specialize multiple times, instead of §4 you should use §5,\nsince §6 overwrites the old assumption §7.\nFrom the above assumption §8, you can obtain the following three assumptions with\n§9\n:\n§10":
  "§0 is equivalent to §1: \nthe tactic replaces the assumption §2 with the special case §3. \n\nIf you want to specialise multiple times, you should use §5 instead of §4, as §6 overwrites the old assumption §7. For example, you could apply \n§9\nto the above assumption §8 to end up with the following three assumptions:\n§10",
@@ -89,7 +89,7 @@
  "§0 bedeutet §1.\n\n**Warnung**: Die Symbole §2 (§3) und §4 (ASCII vertikaler Strich) sind zwei unterschiedliche\nZeichen! Das erste wird ausschließlich für „teilt“ verwendet, das andere kommt zum Beispiel in der\nSyntax §5 vor.":
  "§0 means §1. \n\n**Warning**: The symbols §2 (§3) and §4 (ASCII vertical bar) are two different characters! The first is used exclusively for “divides”, the other occurs, for example, in the syntax §5.",
  "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\nthe implications via §3":
- "**You** (*to Scribble*): I'm not getting anywhere with §0 or §1 here. \n\n**Scribble**: I think you just need to give §2 a little help. Why don't you approach the the two implications in the usual way, with §3?",
+ "**You** (*to Scribble*): I'm not getting anywhere with §0 or §1 here. \n\n**Scribble**: I think you just need to give §2 a little help. Why don't you approach the two implications in the usual way, with §3?",
  "§0 Use linearity":
  "**You** (*in your thoughts*): Now I use linearity … no, don't think of water … we did have enough water back in Babylon … Where was I?",
  "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n\n## §3 as proof goal\n\nYou can use the tactics §4 or §5 to decide\nwhich statement you want to prove.\n\n## §6 as an assumption\n\nSince you do not know which of the statements §7 or §8 you can assume,\nyou may have to show the proof goal twice:\nonce under the assumption §9 and once under the assumption §10.\nTo do this, use the tactic\n§11":
@@ -106,7 +106,7 @@
  "exploit the surjectivity of §0 somehow. It was already told\nwhich of mapping §1 the preimage has to be considered. One could define §2\nand then observe the preimage of §3.":
  "**Cantor**: Of course, you have to exploit the surjectivity of §0 somehow.\nEvery map §1 has a preimage under §0, and I've already told you which map to consider… \n\n**Scribble** *(to you)*: Mmm… do you understand what he means? Of course, you could now define a map with \n§2\nand then consider a preimage §3 of this map. But I'm a little lost right now.",
  "before using §0, use §1 to replace §2 by §3, because\n§4 does not know otherwise.":
- "**You**: Ah, and now §0! \n\n**Scribble**: But first you have §1 to replace §2 with §3, otherwise §4 won't know.",
+ "**You**: Ah, and now §0! \n\n**Scribble**: But first you have to use §1 to replace §2 with §3, otherwise §4 won't know.",
  "again": "**You**: Again!",
  "[Vieta] Try §0 (again)": "**Scribble**: §0, once again.",
  "[Robotswana.L09] Hint: pull function into sum 2":
@@ -171,7 +171,7 @@
  "[Game] Introduction":
  "# Game Over or QED? \n\nAre you curious what computer-assisted theorem proving feels like compared to pen-and-paper mathematics? Then you've come to the right place! In this game, you will learn how to work with the proof assistant Lean 4 and the proof library mathlib.\nYou will verify sum formulas by induction, show that a map is surjective if and only if it has a right inverse, prove that there are uncountably many sequences of natural numbers, and characterise the trace as a map among all functions defined on the space of square matrices.\n\nThe interface is somewhat simplified, but if you activate *editor mode*, it feels almost like VSCode, the standard IDE for Lean.\nOn a smartphone or tablet, it is better to stay in the default *typewriter mode* and turn off all autocompletion/autocorrection features of your on-screen keyboard (a.k.a. “smart typing”, “text recognition”, “predictive text” etc.). \n\nClick on the first planet *Logo* to start your journey.\n\n## Progress\n\nYour game progress is stored locally in your browser as *site data*. You can also download your progress via the menu and save it to your disk. Note that many browsers delete *site data* and *cookies* together. \n\n## Rules \n\nIf you want to take the game seriously, keep the default setting *Rules: regular*.\nIf you just want to poke around, select *Rules: relaxed*.  This will allow you to access every level immediately, even if you haven't solved the previous levels yet.\n\n## News \n\n`[2026-05-21]` The game’s set of `simp` lemmas is now restricted to a small subset of the `simp` lemmas from `mathlib`.  If some of the levels you thought you'd solved now suddenly appear as unsolved, it's probably because you were using a `simp`le short-cut.\n\n`[2026-03-20]` The game is now available in English.  If you are interested in contributing translations to other languages, [please get in touch](https://github.com/hhu-adam/Robo/tree/main?tab=readme-ov-file#translations)!\n\nFor background information and credits, see *Game Info* in the menu.",
  "[Game] Info":
- "## Project ADAM \n\nThis educational game was developed as part of the project [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/) project at Heinrich Heine University Düsseldorf, funded by the *Freiraum 2022* programme of the *Stiftung Innovation in der Hochschullehre*.\nOngoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.\n\n## Game content\n\n**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n\n## Credits\n\n* **Project management:** Marcus Zibrowius, Immi Halupczok\n* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Concept & Story:** Marcus Zibrowius\n* **Translations:**\n  * **en:** Marcus Zibrowius / DeepL\n  * **es:** [Enrique Díaz](https://github.com/qdiazblanco), [Pepa Montero](https://github.com/pepamontero) / Claude\n  * **zh:** [Shuai Zhao](https://github.com/LazyThree) / ChatGPT, [John Lu](https://johnlyu2.github.io) \n* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Contact\n\nThe game is constantly being revised.\nWe welcome your feedback, suggestions, and criticism,\nfor example, by email to\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nYou are equally welcome create issue's on GitHub, be it for typos, bugs or feature requests:\n\n* Please submit issues regarding game content to the repository [Robo](https://github.com/hhu-adam/Robo/issues).\n* Please submit issues regarding the server and our software to the [lean4game repository](https://github.com/leanprover-community/lean4game/issues).",
+ "## Project ADAM \n\nThis educational game was developed as part of the [ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/) project at Heinrich Heine University Düsseldorf, funded by the *Freiraum 2022* programme of the *Stiftung Innovation in der Hochschullehre*.\nOngoing maintenance and development are generously supported by *Renaissance Philanthropy* through the *AI for Math Fund*.\n\n## Game content\n\n**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [GitHub](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n\n## Credits\n\n* **Project management:** Marcus Zibrowius, Immi Halupczok\n* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Concept & Story:** Marcus Zibrowius\n* **Translations:**\n  * **en:** Marcus Zibrowius / DeepL\n  * **es:** [Enrique Díaz](https://github.com/qdiazblanco), [Pepa Montero](https://github.com/pepamontero) / Claude\n  * **zh:** [Shuai Zhao](https://github.com/LazyThree) / ChatGPT, [John Lu](https://johnlyu2.github.io) \n* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Contact\n\nThe game is constantly being revised.\nWe welcome your feedback, suggestions, and criticism,\nfor example, by email to\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nYou are equally welcome to create issues on GitHub, be it for typos, bugs or feature requests:\n\n* Please submit issues regarding game content to the repository [Robo](https://github.com/hhu-adam/Robo/issues).\n* Please submit issues regarding the server and our software to the [lean4game repository](https://github.com/leanprover-community/lean4game/issues).",
  "[Game] Conclusion": "QED",
  "[Game] CaptionShort":
  "Explore a different universe with your smart-elf Scribble!",
@@ -204,7 +204,7 @@
  "You can skip induction start by using §0":
  "**You**: First, the base case … \n\n**Scribble**: You can often brush this aside with §0!",
  "You can continue until there is §0 and then apply §1. §2 always uses §3,\nmeaning hat §4 does not have to be written":
- "**You**: Erm, that was wrong.\n\n  **Scribble**: Yeah, the other way round would’ve been better. But if you just keep going now until you get something like §0, then you can prove it with §1.\n\n  **Scribble:** Come to think of it, §2 always tries to follow-up with §3 anyway.\n  So you don’t even have to write out §4.",
+ "**You**: Erm, that was wrong.\n\n  **Scribble**: Yeah, the other way round would’ve been better. But if you just keep going now until you get something like §0, then you can prove it with §1.\n\n  **Scribble:** Come to think of it, §2 always tries to follow up with §3 anyway.\n  So you don’t even have to write out §4.",
  "Wrong order": "**Scribble**:  No, that looks the wrong way round.",
  "With §0, you introduce an intermediate result.\nYou must then prove this intermediate result\nbefore you can continue with the actual proof.\n\n## Friends and relatives\n§1 works in exactly the same way, except that you can continue with the main proof first and\nonly have to prove your intermediate result at the very end.":
  "With §0, you introduce an intermediate result. You must then prove this intermediate result before you can continue with the actual proof. \n\n## Friends and relations \n\n§1 works in exactly the same way, except that you can continue with the main proof first and only have to prove your intermediate result at the very end.",
@@ -235,7 +235,7 @@
  "We know that §0 can be used on implications. Intuitively, for equivalence §1\none could use §2. The direction §3 of §4 is denoted by §5.\nTry §6":
  "**Scribble**: Well, you could §0 an implication … \n\n**You**: I know! But §1 is not an implication, it's an equivalence. So I'd want to say something like §2. \n\n**Scribble**: The direction §3 of §4 is called §5. You can apply it with §6.",
  "We have assumption §0. Try applying §1 on §2.":
- "**You**: So according to §0, there is a person who does not drink. Could I use this to make the statement trivially true?\n\n**Scribble**: You should be apply to apply §1 to §2.",
+ "**You**: So according to §0, there is a person who does not drink. Could I use this to make the statement trivially true?\n\n**Scribble**: You should be able to apply §1 to §2.",
  "Vieta": "Vieta",
  "Using §0 would be too complicated. It is simpler to use §1 to introduce\nan arbitrary element from §2 and show that it is also in §3. Firstly, write all inclusions\nexolicitly with §4":
  "**You**: Can I again argue with §0 here? \n\n**Scribble**: No, much simpler. Just take any element from §2 with §1 and show that it is in §3. \n\nBut maybe you should write out all the inclusions with §4 first so you can see what is happening.",
@@ -283,7 +283,7 @@
  "Two subsets of a given set are equal if they have the same elements.\nIf the proof goal is\n§0\nfor two subsets of §1 (i.e., for §2),\nthen §3 converts the proof goal into the equivalence\n§4":
  "Two subsets of a given set are equal if they have the same elements. If the goal §0 is for two subsets of §1 (i.e. for §2), §3 converts the goal into the equivalence\n§4",
  "Two mappings with the same range and domain are equal if\nthey take the same values on all elements of the domain.\nA proof goal of the form\n§0\nfor mappings §1 is converted by §2\ninto the equation\n§3.":
- "Two maps with the same range and the same domain are equal if they take the same values on all elements of the domain. The tactic §2 transform a goal of the form \n§0\nfor maps §1 into a goal of the form\n§3.",
+ "Two maps with the same range and the same domain are equal if they take the same values on all elements of the domain. The tactic §2 transforms a goal of the form \n§0\nfor maps §1 into a goal of the form\n§3.",
  "Try §0. §1 says that §2":
  "**Scribble**: Perhaps §0 would be helpful here? It says §2.",
  "Try §0. Write brackets as §1":
@@ -299,7 +299,7 @@
  "Try §0. Explain, given §1 then §2 is the same number interpreted as a natural number.\nRemind that §3 undefined as §4 for §5":
  "**Scribble**: Here you probably need §0: given an integer §1, §2 is that same integer, but interpreted as a natural number.\n\n**You**:  How? What's §3, for example? \n\n**Scribble**: No idea. What I meant, of course, is: *if §4*, then §5 is still the “same” number.",
  "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4":
- "**You**: By definition, two maps are equal if they assume the same value on each element … \n\n**Scribble**: I have tactic in store for that principle: §0. \nWith §1, you pick an arbitrary §2 and change the goal from §3 to §4.",
+ "**You**: By definition, two maps are equal if they assume the same value on each element … \n\n**Scribble**: I have a tactic in store for that principle: §0. \nWith §1, you pick an arbitrary §2 and change the goal from §3 to §4.",
  "Try §0.": "**Scribble**: §0 is useful here.",
  "Try §0, §1 | §2":
  "**Scribble:** I would actually start with §0 again. And then use the usual suspects: §1, §2, …",
@@ -332,7 +332,7 @@
  "Try §0 to focus on position §1.":
  "**You**: And now? \n\n**Scribble**: With §0, you could focus on the matrix entry at position §1.",
  "Try §0 to fix skewed order":
- "**You**: Hmm, it's the wrong one round!\n\n**Scribble**: Remember §0?\n\n**You**: Right, we already use that when were dealing with this strange guy with the conveyor belts.",
+ "**You**: Hmm, it's the wrong way round!\n\n**Scribble**: Remember §0?\n\n**You**: Right, we already used that when we were dealing with this strange guy with the conveyor belts.",
  "Try §0 to construct §1, Try §2 and §3":
  "**You**: For §0, I first construct the element §1 that I want to use … \n\n**Scribble**: … and then you apply §2 and §3. Exactly.",
  "Try §0 to approach injectivity §1":
@@ -343,7 +343,7 @@
  "Try §0 several times. Start with §1":
  "**Scribble**: If I understood correctly, you now want to invoke §0 several times, starting with §1.",
  "Try §0 or §1.\n§2 without §3 does not work. You must explicitly point out which value\nthe variable §4 should have in statment §5.":
- "**Scribble**: You could use §0 or §1. (§2 without §3 does not work here – you must explicitly specify the value of the variable §4 when invoking §5.",
+ "**Scribble**: You could use §0 or §1. (§2 without §3 does not work here – you must explicitly specify the value of the variable §4 when invoking §5.)",
  "Try §0 or §1 with §2 via §3":
  "**Scribble**: Don’t forget §0, or tell §1 to use the definition of §2 (§3).",
  "Try §0 or §1 to turn one around":
@@ -372,7 +372,7 @@
  "Try §0 and rewrite assumption §1 firstly by §2":
  "**Scribble**: Maybe start by writing out all the definitions again. I would say: §0. And you could make the assumption §1 more explicit by applying §2.",
  "Try §0 again §1": "**Scribble**: And another §0!",
- "Try §0 afterwards": "**Scribble:** Perhaps follow-up with §0.",
+ "Try §0 afterwards": "**Scribble:** Perhaps follow up with §0.",
  "Try §0 & §1":
  "**Scribble**: I'm sure some combination of §0 and §1 will prove this. That's how we did it on Luna, in any case.",
  "Try §0": "**Scribble**: This time, you can simply use §0 again.",
@@ -392,7 +392,7 @@
  "Try to split §0": "**You**: So, first of all, I suppose I'll split And (§0).",
  "Try to simplify §0.": "**You**: First, I would see if §0 can be simplified.",
  "Try to proof §0 by using §1 | §2":
- "**You**: Do I have to de-construct the proof target again?\n\n**Scribble**: No, it's much simpler. In order to prove an “or” statement, you just have to decide whether you want to prove the left or right side.\n\n**You**: And how do I explain to my formalosopher which side I would like to prove? Obviously, I want to prove §0! \n\n**Scribble**: With §1 or §2. Seem's logical enough, doesn't it?",
+ "**You**: Do I have to de-construct the proof target again?\n\n**Scribble**: No, it's much simpler. In order to prove an “or” statement, you just have to decide whether you want to prove the left or right side.\n\n**You**: And how do I explain to my formalosopher which side I would like to prove? Obviously, I want to prove §0! \n\n**Scribble**: With §1 or §2. Seems logical enough, doesn't it?",
  "Try the Contradiction tactic":
  "**You**: Another contradiction in the assumptions?\n\n**Scribble**: You're getting the hang of it.",
  "Try tauto":
@@ -448,7 +448,7 @@
  "To divide assumption §0 use §1":
  "**Scribble**: I would split the assumption §0 with §1.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":
- "**You**: Or maybe not. Could perhaps explain once more what's happening here? \n\n**Scribble**: The map §0 sends an element §1 to the map that sends *every* index §2 to §3. In your interpretation, that's simply the map §4.",
+ "**You**: Or maybe not. Could you perhaps explain once more what's happening here? \n\n**Scribble**: The map §0 sends an element §1 to the map that sends *every* index §2 to §3. In your interpretation, that's simply the map §4.",
  "This was called §0": "**Scribble**: And that was called §0.",
  "This time start with §0":
  "Once you've managed to escape from the asteroid's gravitational field, you return to the problem at hand. \n\n**Scribble**: Okay, so this time we'll start with §0!",
@@ -468,7 +468,7 @@
  "The §0 tactic breaks down a proof goal into its constituent parts:\n\n| before | after                |\n|:------------ |:----------------------- |\n| §1    | §2 and §3         |\n| §4    | §5 and §6 |\n\n## Friends and relatives\n\n* You can break down an *assumption* into its components using §7.\n* If you want to prove §8, you have to choose one side using §9 or §10.":
  "The tactic §0 breaks down a goal into its constituent parts: \n\n| before | after | \n|:------------ |:----------------------- |\n| §1 | §2 and §3 | \n| §4 | §5 and §6 | \n\n## Friends and relations \n\n* You break down an *assumption* into its components using §7. \n* If you want to prove §8, you must choose a side using §9 or §10.",
  "The §0 tactic attempts to apply a large number of lemmas to simplify a given expression.\n(Technically, these are all lemmas in §1 that are marked with §2.)\n\n## Variants\n\n* §3 additionally uses the assumption §4 or the lemma §5 for simplification\n* §6 additionally uses the definition of §7\n* §8 exclusively uses the assumptions/lemmas/definitions §9, §10, and §11\n* §12 shows you which lemmas were used":
- "The tactic §0 attempts to apply a large number of lemmas in order to simplify a given expression. \n\n## Variants \n\n* §3 additionally uses the hypothesis §4 or the lemma §5 for simplification \n* §6 additionally uses the definition of §7 \n* §8 exclusively uses the prerequisites/lemmas/definitions §9, §10 and §11 \n\n*(In reality, §0 is much stronger that in this game:  §0 uses all lemmas marked with §2 in §1.  Some of these can solve certain levels in this game in a single line. For the purposes of this game, we have therefore severely restricted the set of lemmas available to §0.)*",
+ "The tactic §0 attempts to apply a large number of lemmas in order to simplify a given expression. \n\n## Variants \n\n* §3 additionally uses the hypothesis §4 or the lemma §5 for simplification \n* §6 additionally uses the definition of §7 \n* §8 exclusively uses the prerequisites/lemmas/definitions §9, §10 and §11 \n\n*(In reality, §0 is much stronger than in this game:  §0 uses all lemmas marked with §2 in §1.  Some of these can solve certain levels in this game in a single line. For the purposes of this game, we have therefore severely restricted the set of lemmas available to §0.)*",
  "The tactic §0 proves §1.  More precisely, §2 closes every proof target of the form §3,\nwhere §4 and §5 are identical in definition.":
  "The tactic §0 proves §1. More precisely, §2 closes any goal of the form §3 in which §4 and §5 are definitionally equivalent.",
  "The tactic §0 proves logical tautologies.\n\n# Friends and relatives\n\nSometimes the proof target must first be abstracted with §1 so that §2 recognizes the tautology.":
@@ -478,7 +478,7 @@
  "The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n\n| before       | after      |\n|:------------ |:-------------|\n| §5  | §6  |\n| §7  | §8  |\n\nIn nested expressions, it pushes the negation §9 as far to the right as possible.\nFor example, the proof goal\n§10\nwith §11\n§12\n\n## Friends and relatives\n\nThe two lemmas §13 and §14 can be applied individually with §15.":
  "The tactic §0 (or §1) can push the logical negation operator past quantifiers: \n\n| before | after | \n|:------------ |:-------------|\n| §5 | §6 | \n| §7 | §8 | \n\nIn nested expressions, it pushes the negation §9 as far to the right as possible. For example, it turns the goal \n§10\ninto \n§12\n\n## Friends and relations \n\nThe tactic is based on the two lemmas §13 and §14, which can be applied individually with §15.",
  "The tactic §0 is used for   proof goals of the form §1 or §2.\n\nIf your proof goal is §3, §4 gives you the assumption §5, and you then have to prove §6.\nIf your proof goal is §7, §8 gices you an arbitrary §9 and you have to prove §10.\n\n| before | tactic       | after                     |\n|:------------ |:------------ |:---------------------------- |\n| §11    | §12    | §13, §14               |\n| §15  | §16 | §17, §18, §19 |\n\n\n## Friends and relatives\n\nThe tactic §20 does the exact opposite of §21.":
- "Tactic §0 is used for goals of form §1 or §2. \n\nIf your goal is §3, then you can use §4 to introduce the assumption §5, and are left to prove §6. \nIf your goal §7, you can use §8 to pick an arbitrary §9, and are left to prove §10.\n\n| before | tactic | after | \n|:------------ |:------------ |:---------------------------- |\n| §11 | §12 | §13, §14 | \n| §15 | §16 | §17, §18, §19 |\n\n## Friends and relations\n\nThe tactic §20 does the exact opposite of §21.",
+ "Tactic §0 is used for goals of form §1 or §2. \n\nIf your goal is §3, then you can use §4 to introduce the assumption §5, and are left to prove §6. \nIf your goal is §7, you can use §8 to pick an arbitrary §9, and are left to prove §10.\n\n| before | tactic | after | \n|:------------ |:------------ |:---------------------------- |\n| §11 | §12 | §13, §14 | \n| §15 | §16 | §17, §18, §19 |\n\n## Friends and relations\n\nThe tactic §20 does the exact opposite of §21.",
  "The tactic §0 initiates a proof by contradiction.\nIf §1 is your current proof goal, §2 generates a new assumption §3\nand sets the proof goal to §4.\n\n## Friends and relatives\n\n* At the end of a proof by contradiction, there is usually §5:\nthis tactic closes the proof when it finds two obviously contradictory assumptions.\n* If the proof goal is of the form §6, you can use §7\nto start a proof by contraposition.":
  "The tactic §0 initiates a proof by contradiction. \nIf your current goal is §1, §2 will generate a new assumption §3 and change the goal to §4. \n\n## Friends and relations \n* A proof by contradiction usually ends with §5, the tactic that can conclude §4 from contradictory assumptions.\n* Given a goal of the form §6, you can start a proof by contraposition with §7.",
  "The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\nSuch a contradiction can look like this, for example:\n\n* §1\n* §2 and §3\n* §4\n\n## Friends and relatives\n\nNormally, §5 is used to conclude a proof by contradiction\nthat was opened with §6.":
@@ -488,7 +488,7 @@
  "The tactic §0 can show that a linear equation or inequality in §1 or §2\nfollows from given equations or inequalities.\nUnlike §3, it can also handle logical connections between (in)equations.":
  "The tactic §0 can show that a linear equation or inequality in §1 or §2 follows from all given equations or inequalities. Unlike §3, it can also handle logical connectors.",
  "The tactic §0 can show that a linear equation or inequality follows from given equations or inequalities.\nIt is quite flexible and works just as well in ℕ as in ℝ.\nHowever, the (in)equations must be given individually, not logically linked.\nAn assumption of the form\n§1\nmust first be rewritten with\n§2\nto\n§3\nso that §4 can do something with it.":
- "The tactic §0 can prove that a linear equation or inequality follows from given equations or inequalities. It is quite flexible and works just as well in ℕ as in ℝ. However, each equation or inequality must be must stated separately, not combined with logical operators.\nFor example, an assumption of the form \n§1\nmust first be rewritten with \n§2\ninto\n§3\nin order for §4 to understand what's going on.",
+ "The tactic §0 can prove that a linear equation or inequality follows from given equations or inequalities. It is quite flexible and works just as well in ℕ as in ℝ. However, each equation or inequality must be stated separately, not combined with logical operators.\nFor example, an assumption of the form \n§1\nmust first be rewritten with \n§2\ninto\n§3\nin order for §4 to understand what's going on.",
  "The tactic §0 begins a case distinction as to whether §1 is true or false.\nFor example, §2 distinguishes between the cases §3 and §4.\n\nThe proof goal is duplicated for this purpose, and\nthe assumption §5 is added to the first “copy,”\nwhile the assumption §6 is added to the second “copy.”":
  "The tactic §0 distinguishes between the case where §1 is true and the case where §1 is false. For example, §2 distinguishes between the cases §3 and §4. \n\nThe goal is duplicated for this purpose, and assumption §5 is added to the first “copy”, while assumption §6 is added to the second “copy”.",
  "The tactic §0 adds the assumption §1 as an implication premise to the proof goal:\nfrom §2 and §3, we get §4.\n\n## Friends and relatives\n\nThe tactic §5 does the exact opposite of §6.":
@@ -620,7 +620,7 @@
  "**You**: How does that work again with rewriting backwards? \n\n**Scribble**: §2, where you write §0 as §1.",
  "Remind of negation for §0": "**You**: Ah, and the negation of §0 must be …",
  "Remind of induction as mapping goes to §0":
- "**Scribble**: Look, the codomain  is §0! \n\nYou raise your eyebrows. \n\n**Scribble**: §0 always reminds of induction. Never mind.",
+ "**Scribble**: Look, the codomain  is §0! \n\nYou raise your eyebrows. \n\n**Scribble**: §0 always reminds me of induction. Never mind.",
  "Remind missed argument with §0":
  "**You**: Where does this goal come from? \n\n**Scribble**: At the very beginning, when you did §0, you probably omitted this argument. Now you can make up for it.",
  "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in I₂ not in I₁, then the sum over §5 equals sum over §6":
@@ -628,7 +628,7 @@
  "Remind former results with §0":
  "**Scribble**: Didn’t we have §0 on one of those slips of paper?",
  "Remind former result for §0. Try §1":
- "**You**: Didn't we established §0 a moment ago?\n\n**Scribble**: I'm good at looking things up! Yes, that was §1.",
+ "**You**: Didn't we establish §0 a moment ago?\n\n**Scribble**: I'm good at looking things up! Yes, that was §1.",
  "Remind former proof":
  "**Scribble**: Perhaps you should look through the statements we've already proven.",
  "Remind about §0": "**You**: I see. A §0 on the far left. What a surprise …",
@@ -650,7 +650,7 @@
  "**You**: §0 – yes, that looks correct. \n\n**Scribble**: The proof should work in exactly the same way as for the Gaussian sum … except that you will probably need §2 in addition to §1.",
  "Prove §0": "**Scribble**: Now you can first prove §0 …",
  "Prove the implication (§0):\nassuming §1 is true, §2 implies 'A and B' is also true. You cannot use §3.\nBegin by assumption that A is true.\nChoose a name §4 for this assumption and introduce it via §5.":
- "**Head of Operations**: The workers think this is correct and that we urgently need it. But no one can prove it to me. \n\n**You**: One moment. This *is* an implication (§0) again! We assume that §1 holds, and we need to show that under this assumption §2 implies “§2 and §1”. Well, of course! That's obviously true.\n\nThe Head of Operations looks at you expectantly. \n\n**You** *(softly to Scribble)*: Should I write down §3 for him? \n\n**Scribble** *(equally softy)*: The way he looks, I'm afraid he won't understand that either. Better write out the proof.\n\n**You**: But how? I'd like to start by saying something like “So let's assume that §2 holds …” \n\n**Scribble**: Yes, good idea. Just choose a name for your assumption, for example §4 as in “hypothesis”, and start with §5.",
+ "**Head of Operations**: The workers think this is correct and that we urgently need it. But no one can prove it to me. \n\n**You**: One moment. This *is* an implication (§0) again! We assume that §1 holds, and we need to show that under this assumption §2 implies “§2 and §1”. Well, of course! That's obviously true.\n\nThe Head of Operations looks at you expectantly. \n\n**You** *(softly to Scribble)*: Should I write down §3 for him? \n\n**Scribble** *(equally softly)*: The way he looks, I'm afraid he won't understand that either. Better write out the proof.\n\n**You**: But how? I'd like to start by saying something like “So let's assume that §2 holds …” \n\n**Scribble**: Yes, good idea. Just choose a name for your assumption, for example §4 as in “hypothesis”, and start with §5.",
  "Prove the assumption before using it":
  "**You**: What? I can just assume it's true?\n\n**Scribble**: No, of course not. You now need to prove it before you can use it.",
  "Prove intermediate result":
@@ -709,7 +709,7 @@
  "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n§3\n":
  "**You**: Well, it's pretty clear which §0 could be used here. \n\n**Scribble**: If it's clear to you, then start with §1. And after that, you'll want to invoke §2. For example, like this: \n§3\n",
  "It conjected that §0 has left inverse. One would assume that §1 would\nnot work for §2. Tackling this by case distinction e.g. §3 is unecessary as\nin Leanic §4 is in §5. It is simply defined as §6":
- "**You**: So the claim as that the map §0 has a left inverse. I guess I could simply specify that left inverse as §1 … except that this does not work for §2.\n\n**Scribble**: You could use §3 to differentiate cases and define a piecewise map. But you don't actually need to do that. In Leanish, §4 is also in §5. \n\n**You**: What … ??! \n\n**Scribble**: Yes. It's simply defined as §6.",
+ "**You**: So the claim is that the map §0 has a left inverse. I guess I could simply specify that left inverse as §1 … except that this does not work for §2.\n\n**Scribble**: You could use §3 to differentiate cases and define a piecewise map. But you don't actually need to do that. In Leanish, §4 is also in §5. \n\n**You**: What … ??! \n\n**Scribble**: Yes. It's simply defined as §6.",
  "Iso": "Iso",
  "Is there a set, which is not hit by §0":
  "**Cantor**: So, what do you think? Is there any set that is not in the image of §0?",
@@ -744,7 +744,7 @@
  "**Benedictus**: I have another interesting question about odd squares for you. But first, you'd better prove this equivalence here. I think you might even have a name for it: *equivalence of contrapositives*, or something like that. In Leanish, we simply say §0. A much more obvious name, don't you think?",
  "Intro Spinoza L03": "**Benedictus**: Here's another variation.",
  "Intro Spinoza L02":
- "**Benedictus**: Of course, you could also have proven the main result first, and then the intermediate result afterwords. You can try this alternative with this problem, which is very similar.",
+ "**Benedictus**: Of course, you could also have proven the main result first, and then the intermediate result afterwards. You can try this alternative with this problem, which is very similar.",
  "Intro Spinoza L01":
  "**Benedictus**: Here, take a look. I have prepared something for you.",
  "Intro Spinoza":
@@ -792,7 +792,7 @@
  "Intro Quanus L08":
  "**Scribble**: While we're waiting, I'll quickly show you how negation works with quantifiers. I have a feeling we'll need this in a moment.",
  "Intro Quantus L10":
- "**You**: Can you only ever talk all at once? \n\nThere is another long silence. Then suddenly: \n\n**All**: There is a peculiar one among us – if they speak, everyone speaks! \n\nYou scratch your head. \n\n**Scribble**: That's obvious. It's the same on every inhabited planet!\n\n**You**: What? \n\n**Scribble**: It's a version of Drinker Paradox! Don't you know it? Then you'd better look it up! \n\n*There is someone in the pub such that, if he or she is drinking, then everyone in the pub is drinking.* \n\nIn every pub that's non-empty, that is.\n\n**You**: I don't believe it. \n\n**Scribble**: I do. And I think you can prove it. Here, try this!",
+ "**You**: Can you only ever talk all at once? \n\nThere is another long silence. Then suddenly: \n\n**All**: There is a peculiar one among us – if they speak, everyone speaks! \n\nYou scratch your head. \n\n**Scribble**: That's obvious. It's the same on every inhabited planet!\n\n**You**: What? \n\n**Scribble**: It's a version of the drinker's paradox! Don't you know it? Then you'd better look it up! \n\n*There is someone in the pub such that, if he or she is drinking, then everyone in the pub is drinking.* \n\nIn every pub that's non-empty, that is.\n\n**You**: I don't believe it. \n\n**Scribble**: I do. And I think you can prove it. Here, try this!",
  "Intro Quantus L09":
  "After much back and forth, the formalosophers have finally agreed on the following question.",
  "Intro Quantus L07":
@@ -826,7 +826,7 @@
  "Intro Prado L03":
  "While you follow Guino through the museum, Scribble gives you further problems.",
  "Intro Prado L02: Prove that §0 is only even prime by using the expression „§1 divides §2“.\n„§3 divides §4“ is written as §5, where the vertical bar can be either written as §6 or §7":
- "**You** *(whispering)*: Scribble, don't you think we should tell him? \n\n**Scribble**: That §0 is the only even prime number? He won't believe it unless we show him proof. \n\n**You**: Well, perhaps we *can* show him a proof. \nYou know the language. \nLet's give it a try. \nFor example, how do I write “§1 divides §2”? \n\n**Scribble**: All right. \nYou write “§3 divides §4“ as §5, with the vertical line spelled as §6 or §7. \nTry this problem here.",
+ "**You** *(whispering)*: Scribble, don't you think we should tell him? \n\n**Scribble**: That §0 is the only even prime number? He won't believe it unless we show him proof. \n\n**You**: Well, perhaps we *can* show him a proof. \nYou know the language. \nLet's give it a try. \nFor example, how do I write “§1 divides §2”? \n\n**Scribble**: All right. \nYou write “§3 divides §4” as §5, with the vertical line spelled as §6 or §7. \nTry this problem here.",
  "Intro Prado L01":
  "**Scribble**: Yes, yes. We know. \n\nHe quickly translates the statement into Leanish and shows it to you.",
  "Intro Prado":
@@ -850,7 +850,7 @@
  "Intro Piazza L02": "**Mem**: How about this?",
  "Intro Piazza L01": "**Fin:** Yes, of course. This, for example.",
  "Intro Piazza":
- "It appears that you have landed on a trading planet. There are merchants everywhere offering their wares for sale. You eye a few stalls curiously. Some things look familiar and edible, many do not. But everything is neatly sorted. There are baskets of blueberries (?), crates of red vegetables that remind you of tomatoes, open sacks of small pink stars, etc. \n\nA few children – or at least a few rather small formalosophers who behave like children – almost run into your feet. Scribble jumps, and they notice you and stop. They introduce themselves as “Fin”, “Ext”, “Mem”, “Set” and ”Sub”, and seem curious. \n\n**Fin**: What are you doing here? \n\n**You**: Um… just poking around a bit.\n\n**Set**: We're here to learn some set theory. Our parents dropped us off here. \n\n**Ext**: For educational purposes, so to speak. \n\n**You**: So, have you learned anything yet?",
+ "It appears that you have landed on a trading planet. There are merchants everywhere offering their wares for sale. You eye a few stalls curiously. Some things look familiar and edible, many do not. But everything is neatly sorted. There are baskets of blueberries (?), crates of red vegetables that remind you of tomatoes, open sacks of small pink stars, etc. \n\nA few children – or at least a few rather small formalosophers who behave like children – almost run into your feet. Scribble jumps, and they notice you and stop. They introduce themselves as “Fin”, “Ext”, “Mem”, “Set” and “Sub”, and seem curious. \n\n**Fin**: What are you doing here? \n\n**You**: Um… just poking around a bit.\n\n**Set**: We're here to learn some set theory. Our parents dropped us off here. \n\n**Ext**: For educational purposes, so to speak. \n\n**You**: So, have you learned anything yet?",
  "Intro Mono L06: Prove §0":
  "It appears they noticed you got some help. Now they want to see a proof of §0.",
  "Intro Mono L01":
@@ -895,11 +895,11 @@
  "Intro Logo L01":
  "Right now, you're on Queen Logwynn's planet. She gets straight to the point:\n\n**Logwynn**: Honourable beings from a world unknown to us, welcome to the Leaniverse!  May I ask just one question?  Why is it that … \n\nAnd she scribbles something on a piece of paper: a few assumptions at the top, a conclusion at the bottom. In between, you are apparently supposed to write down a proof. You turn to Scribble with a helpless expression.",
  "Intro Logo":
- "Due to an unforeseen and non-canonical singularity in space-time, you have accidentally stumbled into a parallel universe. It appears there is no going back. You had better prepare yourself to stay and find your way around. \n\nThere are lots of friendly little planets orbiting around. All habitable, and with up to seven sunsets a day included.\nHowever, they are inhabited by formalosophers, strange creatures with unorthodox mathematical obsessions. To make things worth, word has already spread that you were a mathematician in your previous universe. You will find no peace here until you learn how to satisfy their insatiable thirst for knowledge.\n\nThere are two minor complications: firstly, the formalosophers appear to have no deeper understanding of mathematics whatsoever, and secondly, they communicate about mathematics exclusively in Leanish, a dialect that is completely foreign to you. \n\nFortunately, Scribble has changed universes with you. Scribble is your little smart-elf. He may not be the mathematical genius you would have wished for in this situation, but it seems he already knows some Leanish from somewhere. And knowing some Leanish is a game changer in this place.",
+ "Due to an unforeseen and non-canonical singularity in space-time, you have accidentally stumbled into a parallel universe. It appears there is no going back. You had better prepare yourself to stay and find your way around. \n\nThere are lots of friendly little planets orbiting around. All habitable, and with up to seven sunsets a day included.\nHowever, they are inhabited by formalosophers, strange creatures with unorthodox mathematical obsessions. To make things worse, word has already spread that you were a mathematician in your previous universe. You will find no peace here until you learn how to satisfy their insatiable thirst for knowledge.\n\nThere are two minor complications: firstly, the formalosophers appear to have no deeper understanding of mathematics whatsoever, and secondly, they communicate about mathematics exclusively in Leanish, a dialect that is completely foreign to you. \n\nFortunately, Scribble has changed universes with you. Scribble is your little smart-elf. He may not be the mathematical genius you would have wished for in this situation, but it seems he already knows some Leanish from somewhere. And knowing some Leanish is a game changer in this place.",
  "Intro Iso L02":
  "**Isosopher**: … and immediately move on to the main problem.",
  "Intro Iso L01":
- "**Isososoph**: Of course we have also prepared something for you.",
+ "**Isosopher**: Of course we have also prepared something for you.",
  "Intro Iso":
  "**You**: Look, another planet with two skyscrapers! \n\n**Scribble**: Yes, but these ones are the same height. Now I really don't know where to land. \n\n**You**: People are waving on the left! \n\nSo you land on the left. But the reception is rather poor.\n\n**Isosopher**: Excuse me! But it's not very polite to land here in the middle of a crowd! We specifically marked a landing site over there! \n\n**Scribble**: So sorry! I didn't recognise the markup. \n\n**Isosopher**: Well, at least no one got hurt. We'd already heard that you were a little … different. And we're very keen to show you our ingenious transport system – the most advanced local transport system in the entire Leaniverse! \n\nAs it turns out, the particularly advanced aspect of their system is that the capsules can be used in both directions. You dash back and forth a few times.",
  "Intro Implis: mention that planet could not be solved without §0":
@@ -915,7 +915,7 @@
  "Intro Implis L10: §0 is not allowed here as well":
  "**Head of Operations**: This is for my rather limited colleague again. \nI don't think he likes §0 either. Can you manage without?",
  "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperform the next step with §5":
- "**You**: Somehow these §0s feel very convoluted. Can’t we argue in a more straight-forward fashion?\n\n**Scribble**:  Maybe you’d prefer §1. With §1 you can work through your chain of equivalences §2 step by step: \n  first you introduce the intermediate step §4 with §3, then the next intermediate step with §5.",
+ "**You**: Somehow these §0s feel very convoluted. Can’t we argue in a more straightforward fashion?\n\n**Scribble**:  Maybe you’d prefer §1. With §1 you can work through your chain of equivalences §2 step by step: \n  first you introduce the intermediate step §4 with §3, then the next intermediate step with §5.",
  "Intro Implis L08":
  "**Head of Operations**: Here, can you say something about this, too?",
  "Intro Implis L07": "**Head of Operations**: Here's something else.",
@@ -943,7 +943,7 @@
  "Intro Epo":
  "The planet you are now approaching has two buildings: a narrow skyscraper and a second, wider building with slightly fewer floors. The buildings are connected by a strange system of tubes. At the top of the skyscraper, you can see a landing pad. You head for it.\n\nAs you disembark, a formalosopher comes running towards you. He waves his arms wildly. \n\n**Porter**: No, no, you're expected down there. He lowers his arms.\n\n**Porter**: Well, never mind. Good afternoon, first of all! I'm just one of the porters. You are expected by a large delegation, but over there, in the office building, of course. These here are just our sleeping quarters. Come on, I'll take you over. It won't take long.\n\nHe leads you down one floor and asks Scribble and you to get into two single-seat “transport capsules”.\n\n**Porter**: We'll just slide over in these capsules. Hope you enjoy it.  We do have some collisions from time to time, but right now the coast is clear. Everyone else is already over on the other side, waiting for you!",
  "Intro Ciao":
- "**You**: It is possible that we've now visited *all* the planets in this corner of the Leaniverse? \n\n**Scribble**: Looks like it.\n\n**You**: So what do we do now? \n\n**Scribble:** No idea. \n\nAfter a while …\n\n**Scribble:** Hey, look, we've received a message.",
+ "**You**: Is it possible that we've now visited *all* the planets in this corner of the Leaniverse? \n\n**Scribble**: Looks like it.\n\n**You**: So what do we do now? \n\n**Scribble:** No idea. \n\nAfter a while …\n\n**Scribble:** Hey, look, we've received a message.",
  "Intro Cantor L11: Show that set of mapping §0 is uncountable":
  "**Cantor**:  Easier? Who said easier?  But certainly more elegant! \n\nHe does three backflips and then comes back with another piece of paper for you.\n\n**Cantor**: Look! Now you can use the same argument to show that the set of sequences of natural numbers, i.e. the set of maps §0, is uncountable! \n\nAnd then in a whisper: \n\n**Cantor**: There are uncountably many seats in this tent!",
  "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
@@ -1031,9 +1031,9 @@
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove “§0 and §1”. These formalosophanatics are driving me crazy.  \n\n**Scribble**:  You simply need to break the goal into two parts. Try §3.\n\n**You**: You mean §4, perhaps? \n\n**Scribble**: No, §5. I know it's confusing, but that's how they say it.",
  "Given\n\n§0\n\nShow\n§1\n":
- "**You**: I need to write down for myself, first. So we're given: \n\n§0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
+ "**You**: I need to write this down for myself, first. So we're given: \n\n§0\n\nAnd we need to show:\n\n§1\n\nScribble??\n\nLina grins. \n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
- "For §0, the notation §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6. \n\n## §1 as proof goal\n\nIf §1 is your goal, you can pick an element §9 with §10 using §8 (and then show §11). \n\n## §1 as assumption\n\nGiven the assumption §12 and an element §13 with §14 is given, you obtain the statement §16 with §15. \n\nYou write §17 as §18.",
+ "For §0, the notation §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6. \n\n## §1 as proof goal\n\nIf §1 is your goal, you can pick an element §9 with §10 using §8 (and then show §11). \n\n## §1 as assumption\n\nGiven the assumption §12 and an element §13 with §14, you obtain the statement §16 with §15. \n\nYou write §17 as §18.",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":
  "For §0, §1 means that §2 is a prime number. \nIt is often helpful to rewrite this definition using the lemma §3.",
  "For §0, §1 is the set §2.\n\n(§3 is to be distinguished from §4:\n§5 is a set, or more precisely a type, i.e. §6,\nwhereas §7 is a finite subset of §8.)":
@@ -1111,7 +1111,7 @@
  "Explain §0 w.r.t. §1 as\n§2\nand its equivalent §3. Mention §4:\n§5\n":
  "**Scribble**: Here, §0 is the image set of §1: \n§2 \nSo it's really just another way of writing §3. To work with this notation, you might find §4 useful: \n§5\n",
  "Explain §0 in goal. Perform proof by §1 by stating with §2 and\nconcluding with §3":
- "**Scribble**: A §0 in the goal can be hint that you want to provide a proof by contradiction. \n\n**You**: And how do I do that? With §1? \n\n**Scribble**: No, you start with §2 – §3 only comes at the very end.",
+ "**Scribble**: A §0 in the goal can be a hint that you want to provide a proof by contradiction. \n\n**You**: And how do I do that? With §1? \n\n**Scribble**: No, you start with §2 – §3 only comes at the very end.",
  "Explain §0 i.e. §1 and approch to prove §2  by §3":
  "**You**: The §0 surely means “for all”. \n\n**Scribble**: Yes.  And you write it as §1. You can approach §2 in the goal as you would approach an implication, with §3.",
  "Explain §0 as mapping §1 i.e. §2. Explain goal of showing §3 surjective.":
@@ -1121,7 +1121,7 @@
  "Explain §0 and §1 in statement §2":
  "**You**: So, §0 is another predicate … If §1 is a person, §2 is a statement that is either true or false. So far, so good.",
  "Explain §0 and values of §1 for all §2 i.e. §3. Try §4":
- "**You**: §0 here is the identity matrix here, right? \n\n**Scribble**: Yes. \n\n**You**: Then §1 is zero for all §2. So all summands disappear except for the summand with §3. \n\n**Scribble**: Is that so?  Let me think … Could you first show §4?",
+ "**You**: §0 here is the identity matrix, right? \n\n**Scribble**: Yes. \n\n**You**: Then §1 is zero for all §2. So all summands disappear except for the summand with §3. \n\n**Scribble**: Is that so?  Let me think … Could you first show §4?",
  "Explain why to use §0 with §1 instead of §2. §3 replaces both §4":
  "**You** (*shouting*): What do you mean? \n\n**Scribble** (*also shouting*): Well, you definitely want to apply §0, but with §1 and not with §2. §3 would replace both §4s.",
  "Explain that §0 states §1. Try §2":
@@ -1163,7 +1163,7 @@
  "Explain simplification of §0 and §1":
  "**You**: Thank you, that helps! This step should be easy: a sum over one element, where §0 is one again, and §1 also simplifies!",
  "Explain misfit of §0. Try §1 via §2":
- "**You**:  Is this from some Annoying Algebra Anonymous club? Clearly, one just needs to rearrange the terms bit. Perhaps we should answer with §0?\n\n**Scribble**: No, in this universe, the equation is naturally called §1, simply because the formula contains first a `+` and then a `^2`. So you could use §2. Then the left side will look exactly like the right side, and you're done.",
+ "**You**:  Is this from some Annoying Algebra Anonymous club? Clearly, one just needs to rearrange the terms a bit. Perhaps we should answer with §0?\n\n**Scribble**: No, in this universe, the equation is naturally called §1, simply because the formula contains first a `+` and then a `^2`. So you could use §2. Then the left side will look exactly like the right side, and you're done.",
  "Explain inclusion. Try §0":
  "**Scribble:** To show inclusion, you take an element from the left side and show that it is in the right side. So why not start with §0?",
  "Explain goal: An injective mapping §0 which is left inverse to mapping §1, is to the same mapping also right inverse":
@@ -1177,9 +1177,9 @@
  "Explain anonymous function §0 as mapping §1.\nOnly §2 the anon. function would receive a name. The goal is for\n§3\nto show that §4.\nYou can try §5 or §6\n":
  "**Scribble**: Ah, that's interesting. Here, §0 is an “anonymous function”, namely the map §1. \n\n**You**: And what is anonymous about it? \n\n**Scribble**: Well, for starters, it doesn't have a name. It only gets a name through §2. \n\n**You**: I see.  So overall, we have the following map, right?\n\n§3\n\nSo I'm supposed to show §4?\n\n**Scribble**: Yes.\n\n**You**: And how do I do that here?\n\n**Scribble**: Lean can see through most mapping rules, so §5 should suffice here. Alternatively, you can explicitly use the definition with §6. \n",
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that an element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nA pure existence statement (\"there is an element of type §6)\ncan be formulated, for example, as §7 or as §8.\n\n## §9 as a proof goal\n\nTo prove a statement of the form §10,\nyou construct a suitable element §11 and then use the §12 tactic (§13).\n\n## §14 as an assumption\n\nYou can decompose an assumption of the form §15 into its components using\n§16 or §17 into §18 and §19.":
- "Existential quantifier: \nGiven a predicate §0, the statement §1 asserts that exists an element §2 in §3 (more precisely: of type §4) for which the statement §5 is true. The pure existence statement “There is some §2 of type §4” can be phrased as §7 or §8.\n\n## §9 as goal\nOne way to to prove a statement of the form §10 is to construct a suitable element §11 and §12 it (§13). \n\n## §14 as assumption \nYou can break down an assumption of the form §15 into its components §18 and §19 using §16 or §17.",
+ "Existential quantifier: \nGiven a predicate §0, the statement §1 asserts that there exists an element §2 in §3 (more precisely: of type §4) for which the statement §5 is true. The pure existence statement “There is some §2 of type §4” can be phrased as §7 or §8.\n\n## §9 as goal\nOne way to prove a statement of the form §10 is to construct a suitable element §11 and §12 it (§13). \n\n## §14 as assumption \nYou can break down an assumption of the form §15 into its components §18 and §19 using §16 or §17.",
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nThe statement therefore has two parts: first, such an §6 exists, and second, §7 is unique.\n## §8 as a proof goal\n\nTo prove a statement of the form §9, first construct a suitable element §10 and\nthen use the §11 tactic (§12), usually immediately followed by §13.\nThe proof goal should then have the following form:\n\n§14\n\nOn the left is §15: you still have to show that §16 has the required property.\nOn the right is the uniqueness statement: every element with this property is equal to §17.\n\n## §18 as an assumption\n\nYou can prove an assumption of the form §19 with\n\n§20\ninto its components\n§21\n.":
- "Existential quantifier: \nGiven a predicate §0, the statement §1 asserts that there exists *exactly one* element §2 in §3 (more precisely: of type §4) for which the §5 is true. The statement therefore has two parts: firstly, such an §6 exists, and secondly, §7 is unique.\n\n## §8 as goal\n\n To prove a statement of the form §9, you first construct a suitable element §10 and then use it with the §11 tactic (§12), usually immediately followed by §13. After that, the goal should have the following form: §14\n\nOn the left you have §15:  you still have to show that §16 has the required property. On the right you have the uniqueness statement: every element with this property is equal to §17. \n\n## §18 as assumption \n\nYou can break down an assumption of the form §19 into its components \n§21\nusing\n§20.",
+ "Existential quantifier: \nGiven a predicate §0, the statement §1 asserts that there exists *exactly one* element §2 in §3 (more precisely: of type §4) for which §5 is true. The statement therefore has two parts: firstly, such an §6 exists, and secondly, §7 is unique.\n\n## §8 as goal\n\n To prove a statement of the form §9, you first construct a suitable element §10 and then use it with the §11 tactic (§12), usually immediately followed by §13. After that, the goal should have the following form: §14\n\nOn the left you have §15:  you still have to show that §16 has the required property. On the right you have the uniqueness statement: every element with this property is equal to §17. \n\n## §18 as assumption \n\nYou can break down an assumption of the form §19 into its components \n§21\nusing\n§20.",
  "Exactly, try §0": "**Scribble**: Exactly, that was §0.",
  "Evaluate mappings in §0 on element from §1. §2 could help":
  "**Scribble**:  You could evaluate the maps in §0 at an element of §1. Maybe §2 could help?",
@@ -1227,7 +1227,7 @@
  "Conclusion Vieta L01: explain ambiguity of §0":
  "**You**:  Wasn't §0 an implication a moment ago? \n\n**Scribble**: Yes, that's right. They use the same symbol for a map and for an implication here.",
  "Conclusion Spinoza L06: overview of planet's contents:\n§0, §1, §2, §3, §4, §5 (useful when applying\n§6 afterwards).":
- "**Scribble**: Well done! Here's an overview of what Benediktus showed us. \n\n\n| **Tactic** | **Purpose** | \n|:----------------|:-------------------------------------------------------| \n| §0 | Accept interim result | \n| §1 | Accept interim result |\n| §2 | Begin proof of contradiction | \n| §3 | Conclude proof of contradiction | \n| §4 | Contraposition | \n| §5 | Useful for applying §6 afterwards | ",
+ "**Scribble**: Well done! Here's an overview of what Benedictus showed us. \n\n\n| **Tactic** | **Purpose** | \n|:----------------|:-------------------------------------------------------| \n| §0 | Accept interim result | \n| §1 | Accept interim result |\n| §2 | Begin proof of contradiction | \n| §3 | Conclude proof of contradiction | \n| §4 | Contraposition | \n| §5 | Useful for applying §6 afterwards | ",
  "Conclusion Spinoza L05":
  "**Benedictus**: Excellent! I think you're well prepared now.",
  "Conclusion Spinoza L03": "**Benedictus**: I see. You're quick learners.",
@@ -1273,9 +1273,9 @@
  "Conclusion Robotswana L01: Save result as §0":
  "**You**: And what do we do now with this “insight”?\n\n**Scribble**: No idea. I'll save it as §0 in case we need it again later. \n\nYou continue following the trail.",
  "Conclusion Quantus L10: Overview of planet contents: §0, §1, §2 (§3 is even),\n§4 (§5 is odd), §6, §7 (solves equations containing §8), §9,\n§10, §11 (to tackle §12 in goal), §13 (to disect §14 in assumptions),\n§15 (to tackle §16 in goal) and §17 (for §18 and §19 in goal).":
- "**You**: I understand. But now I've really had enough of this predicate nonsense! \n\n**Scribble**: Then we'd better fly on! But in case you're interested – here's an overview over the key lessons from this planet.\n\n\n| notation  | meaning | \n|:--------------|:----------------------------| \n| §0 | existential quantifier | \n| §1 | universal quantifier | \n\n\n| tactic | example | \n|:--------------------------|:-------------------------------------------------------|\n| §6 | rewrite with an equation | \n| §9 | prove statements about specific numbers algorithmically    | \n| §10 | expand a definition | \n| §11 | to prove some value §12, specify a candidate | \n| §13 | split §14 in an assumption | \n| §15 | to prove statement §16 values, pick an arbitrary value | \n| §17 | move negation past quantifier in §18 or §19 | ",
+ "**You**: I understand. But now I've really had enough of this predicate nonsense! \n\n**Scribble**: Then we'd better fly on! But in case you're interested – here's an overview of the key lessons from this planet.\n\n\n| notation  | meaning | \n|:--------------|:----------------------------| \n| §0 | existential quantifier | \n| §1 | universal quantifier | \n\n\n| tactic | example | \n|:--------------------------|:-------------------------------------------------------|\n| §6 | rewrite with an equation | \n| §9 | prove statements about specific numbers algorithmically    | \n| §10 | expand a definition | \n| §11 | to prove a §12 statement, specify a candidate | \n| §13 | split §14 in an assumption | \n| §15 | to prove a §16 statement, pick an arbitrary value | \n| §17 | move negation past quantifier in §18 or §19 | ",
  "Conclusion Quantus L09":
- "The formalosophers are enthusiastic. Once the applause has died down, you have a question. \n\n**You**: I have to stay we still feel a bit lost in the Leaniverse.  Could anyone here give us some directions?\n\n**All**: Yes, yes. \n\n**You**: Who? \n\nThat question was too specific again. Awkward silence.",
+ "The formalosophers are enthusiastic. Once the applause has died down, you have a question. \n\n**You**: I have to say we still feel a bit lost in the Leaniverse.  Could anyone here give us some directions?\n\n**All**: Yes, yes. \n\n**You**: Who? \n\nThat question was too specific again. Awkward silence.",
  "Conclusion Quantus L08: §0 internally uses §1\nand §2. Memorize §3.":
  "**Scribble**: Well done! By the way, internally, §0 uses two lemmas: \n\n* §1\n* §2\n\nThe first lemma is the statement you just proved. \n\n**You**: Wonderful. So I have proved the statement by using it … \n\nScribble grins.\n\n**Scribble**: The main thing is that you remember §3.",
  "Conclusion Quantus L07": "More appreciative nods. \n\nMore whispering.",
@@ -1308,7 +1308,7 @@
  "Conclusion Mono L09":
  "**Scribble**: Well done! I think we'll be done here soon…",
  "Conclusion Mono L07: Explain that here §0 is §1, as there is mapping §2 defined only on natural numbers.\nIn Lean §3 is such a mapping and there for it maps §4 onto §5.":
- "**You**: I'm still shocked. I thought we were doing maths here. Why should §0 be §1? \n\n**Scribble**: It's purely a matter of taste.  You imagine §2 as a map that is only defined on the positive natural numbers. The Leanish, §3 is a map defined on all natural numbers, and it sends §4 to §5. Where's the problem? \n\nAnyway, in the end, you will only ever apply this map to positive numbers, and on those numbers, the map you're thinking of fortunately coincides with the Leanish version of the map.",
+ "**You**: I'm still shocked. I thought we were doing maths here. Why should §0 be §1? \n\n**Scribble**: It's purely a matter of taste.  You imagine §2 as a map that is only defined on the positive natural numbers. In Leanish, §3 is a map defined on all natural numbers, and it sends §4 to §5. Where's the problem? \n\nAnyway, in the end, you will only ever apply this map to positive numbers, and on those numbers, the map you're thinking of fortunately coincides with the Leanish version of the map.",
  "Conclusion Mono L01": "The formalosophers appear to be pleased.",
  "Conclusion Luna L09":
  "**Lina**: Well done! What a shame you already have to leave. But if you stay any longer, you'll completely disrupt our daily routine.",
@@ -1413,7 +1413,7 @@
  "**You**: I'm supposed to combine implications §0 to §1? \n\n**Scribble**: Perhaps you should start with §2 again?",
  "Ciao": "Ciao",
  "Check that §0 is contradiction by the Contradiction tactic":
- "**You** Isn't §0 also a contradiction? \n\n**Scribble**: Perhaps …?",
+ "**You**: Isn't §0 also a contradiction? \n\n**Scribble**: Perhaps …?",
  "Cantor expresses happiness": "Cantor is hopping from one leg to the other.",
  "Cantor": "Cantor",
  "Can not use §0 instead of §1.\nExplain that §2 is mapping from §3 to §4 i.e.\n§5\n.You can express §6 by §7 but not vica versa":
@@ -1433,7 +1433,7 @@
  "Approach §0 with §1":
  "**Scribble**: Now you can tackle the §0 in the goal with §1.",
  "Applying §0 onto §1 is usually badly readable. Try §2 directly afterwards":
- "**Scribble**: Actually, applying §0 to §1 always results in a bit of chaos. It's best to always follow up with §2, then things becomes readable again.",
+ "**Scribble**: Actually, applying §0 to §1 always results in a bit of chaos. It's best to always follow up with §2, then things become readable again.",
  "Apply §0 to prove existence of prime factor":
  "**You** *(to Scribble)*: Do you have any idea for a prime factor here?\n\n**Scribble**: Nope. \n\nScribble contemplates.\n\n**Scribble**: But it doesn't matter. He didn't ask for a specific factor, just for the existence of some prime factor. And that's trivial. Let me think… I guess §0 is the statement you need here.",
  "Apply §0 onto §1. Try either §2 or §3":

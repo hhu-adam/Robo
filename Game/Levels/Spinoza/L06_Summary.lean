@@ -45,7 +45,7 @@ DisabledTactic contrapose revert
 
 /-
 Conclusion "
-**Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.
+**Robo**: Bravo! Hier ein Überblick, was uns Benedictus gezeigt hat.
 
 
 | **Taktik**      | **Zweck**                                              |
