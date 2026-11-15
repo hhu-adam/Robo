@@ -1,12 +1,12 @@
-import Game.Levels.Shade.L02_ShadeDefSymm
+import Game.Levels.Rigi.L02_ShadeDefSymm
 
-World "Shade"
+World "Rigi"
 Level 3
 
 Title ""
 
 open Set
-Introduction "Intro Shade L03"
+Introduction "Intro Rigi.L03"
 
 
 /-- If `a` is a sunny point, then `f x ≤ f a` for every `x > a`. -/
@@ -18,6 +18,6 @@ Statement mem_sun (preamble := grind_mode 1) {f : ℝ → ℝ} {a : ℝ} (h : a 
   simp [Sun] at h
   grind
 
-Conclusion "Conclusion Shade L03: saved as `mem_sun`."
+Conclusion "Conclusion Rigi.L03: saved as `mem_sun`."
 
 TheoremTab "Shade"

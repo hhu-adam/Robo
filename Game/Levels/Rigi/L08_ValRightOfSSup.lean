@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L07_ValLeValSSupShaders
+import Game.Levels.Rigi.L07_ValLeValSSupShaders
 
-World "Shade"
+World "Rigi"
 Level 8
 
 Title ""
 
-Introduction "Intro Shade L08: past the supremum the value drops back.
+Introduction "Intro Rigi.L08: past the supremum the value drops back.
 
 Write `s := sSup (Shaders f b)`.  Any point `t` strictly to the right of `s` cannot belong to
 `Shaders f b`.  By the definition of `Shaders f b `, a point `t > b`
@@ -39,7 +39,7 @@ Statement val_le_of_sSup_Shaders_lt (preamble := grind_mode 1) {f : ℝ → ℝ}
   unfold Shaders at not_mem
   grind
 
-Conclusion "Conclusion Shade L08: saved as `val_le_of_sSup_Shaders_lt`."
+Conclusion "Conclusion Rigi.L08: saved as `val_le_of_sSup_Shaders_lt`."
 
 /-- If `sSup s < x` and `s` is bounded above, then `x ∉ s`. -/
 TheoremDoc notMem_of_csSup_lt as "notMem_of_csSup_lt" in "sSup"

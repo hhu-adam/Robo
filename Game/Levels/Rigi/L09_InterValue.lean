@@ -1,6 +1,6 @@
-import Game.Levels.Shade.L08_ValRightOfSSup
+import Game.Levels.Rigi.L08_ValRightOfSSup
 
-World "Shade"
+World "Rigi"
 Level 9
 
 Title ""

@@ -30,7 +30,7 @@ import Game.Levels.Espresso
 
 import Game.Levels.Cartan
 import Game.Levels.Aquarius
-import Game.Levels.Shade
+import Game.Levels.Rigi
 import Game.Levels.Slope
 import Game.Levels.Cauchy
 
@@ -57,7 +57,7 @@ Dependency Quantus → Piazza -- because of `∀`
 -- Dependency Quantus → Espresso -- because of `ring`
 Dependency Prado → Mono     -- because of `∃!`
 Dependency Mono → Iso       -- because of `Injective`
-Dependency Vieta → Shade    -- because of `function`
+Dependency Vieta → Rigi    -- because of `function`
 
 Dependency Vieta → Aquarius -- because of `function`
 Dependency Vieta → Cartan   -- because of `function`
@@ -70,7 +70,7 @@ Dependency Cantor → Ciao
 Dependency Samarkand → Ciao
 Dependency Iso → Ciao
 Dependency Euklid → Ciao
-Dependency Shade → Ciao
+Dependency Rigi → Ciao
 Dependency Cauchy → Ciao
 
 -- set_option lean4game.showDependencyReasons true

@@ -1,11 +1,11 @@
 import Game.Metadata
 
-World "Shade"
+World "Rigi"
 Level 1
 
 Title ""
 
-Introduction "Intro Shade L01: the two kinds of points.
+Introduction "Intro Rigi L01: the two kinds of points.
 
 Think of the graph of `f` lit by a sun shining from the right.  A point `s` lies in the *shade*
 if some later point rises above it, and it is *sunny* if nothing to its right ever gets higher:
@@ -57,7 +57,7 @@ Statement not_mem_Sun_iff_mem_Shade (preamble := grind_mode 1) (f : ℝ → ℝ)
 
 attribute [game_simp] not_mem_Sun_iff_mem_Shade
 
-Conclusion "Conclusion Shade L01: saved as `not_mem_Sun_iff_mem_Shade`."
+Conclusion "Conclusion Rigi L01: saved as `not_mem_Sun_iff_mem_Shade`."
 
 NewDefinition Shade Sun
 

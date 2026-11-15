@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L04_ShadeSetNonempty
+import Game.Levels.Rigi.L04_ShadeSetNonempty
 
-World "Shade"
+World "Rigi"
 Level 5
 
 Title ""
 
-Introduction "Intro Shade L05: a quick boundedness fact.
+Introduction "Intro Rigi.L05: a quick boundedness fact.
 
 To take the supremum `sSup (Shaders f b)`, we also need the set to be bounded above.
 "
@@ -34,7 +34,7 @@ Statement upperBounds_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {b c 
     rw [← not_mem_Sun_iff_mem_Shade] at this
     contradiction
 
-Conclusion "Conclusion Shade L05: saved as `upperBounds_Shaders`."
+Conclusion "Conclusion Rigi.L05: saved as `upperBounds_Shaders`."
 
 
 TheoremTab "Shade"

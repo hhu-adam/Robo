@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L06_LtSSupShaders
+import Game.Levels.Rigi.L06_LtSSupShaders
 
-World "Shade"
+World "Rigi"
 Level 7
 
 Title "The Value at the Supremum"
 
-Introduction "Intro Shade L07: the value at the supremum stays up.
+Introduction "Intro Rigi.L07: the value at the supremum stays up.
 
 Every point of `t ∈ Shaders f b` satisfies `f b ≤ f t`.  The supremum itself need not be a point of
 `Shaders f b`, but it lies in its *closure* — and the condition `f b ≤ f t` is a closed condition,
@@ -48,6 +48,6 @@ Statement val_le_val_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {
     assumption
   · assumption
 
-Conclusion "Conclusion Shade L07: saved as `val_le_val_sSup_Shaders`."
+Conclusion "Conclusion Rigi.L07: saved as `val_le_val_sSup_Shaders`."
 
 TheoremTab "Shade"

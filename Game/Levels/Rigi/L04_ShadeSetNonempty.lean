@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L03_MemSun
+import Game.Levels.Rigi.L03_MemSun
 
-World "Shade"
+World "Rigi"
 Level 4
 
 Title ""
 
-Introduction "Intro Shade L04: introduce the working set.
+Introduction "Intro Rigi.L04: introduce the working set.
 
 Fix a point `b`.  We study the set of points to the right of b at which `f`
 rises above `f b`:
@@ -40,7 +40,7 @@ Statement shaders_nonempty (preamble := grind_mode 1) {f : ℝ → ℝ} {b : ℝ
   grind
 
 
-Conclusion "Conclusion Shade L04: saved as `shaders_nonempty`."
+Conclusion "Conclusion Rigi.L04: saved as `shaders_nonempty`."
 
 NewDefinition Shaders
 

@@ -1,6 +1,6 @@
-import Game.Levels.Shade.L09_InterValue
+import Game.Levels.Rigi.L09_InterValue
 
-World "Shade"
+World "Rigi"
 Level 10
 
 Title ""

@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L10_InterValueSymm
+import Game.Levels.Rigi.L10_InterValueSymm
 
-World "Shade"
+World "Rigi"
 Level 11
 
 Title ""
 
-Introduction "Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).
+Introduction "Intro Rigi.L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).
 
 > Let `f : ℝ → ℝ` be a continuous function. If `a` and `c` with `a < c` are in the sun,
 but every `b` between a and c is in the shade, then `f a = f c`."

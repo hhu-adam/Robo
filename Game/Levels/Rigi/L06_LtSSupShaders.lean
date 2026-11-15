@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L05_ShadeSetBddAbove
+import Game.Levels.Rigi.L05_ShadeSetBddAbove
 
-World "Shade"
+World "Rigi"
 Level 6
 
 Title ""
 
-Introduction "Intro Shade L06: the supremum lies strictly to the right of `b`.
+Introduction "Intro Rigi.L06: the supremum lies strictly to the right of `b`.
 
 Now that `Shaders f b` is nonempty and bounded above, its supremum `sSup (Shaders f b)` exists.
 The first thing to know about it is that it sits strictly to the right of `b`.
@@ -35,6 +35,6 @@ Statement lt_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {b : ℝ}
   unfold Shaders at ht
   grind
 
-Conclusion "Conclusion Shade L06: saved as `lt_sSup_Shaders`."
+Conclusion "Conclusion Rigi.L06: saved as `lt_sSup_Shaders`."
 
 TheoremTab "Shade"

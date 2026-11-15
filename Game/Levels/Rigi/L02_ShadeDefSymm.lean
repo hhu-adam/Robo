@@ -1,11 +1,11 @@
-import Game.Levels.Shade.L01_ShadeDef
+import Game.Levels.Rigi.L01_ShadeDef
 
-World "Shade"
+World "Rigi"
 Level 2
 
 Title ""
 
-Introduction "Intro Shade L02: the other direction.
+Introduction "Intro Rigi.L02: the other direction.
 
 The previous level said that failing to be sunny is the same as lying in the shade.  The mirror
 statement is just as useful: failing to lie in the shade is the same as being sunny.  It is proved
@@ -24,6 +24,6 @@ Statement not_mem_Shade_iff_mem_Sun (preamble := grind_mode 1) (f : ℝ → ℝ)
 
 attribute [game_simp] not_mem_Shade_iff_mem_Sun
 
-Conclusion "Conclusion Shade L02: saved as `not_mem_Shade_iff_mem_Sun`."
+Conclusion "Conclusion Rigi.L02: saved as `not_mem_Shade_iff_mem_Sun`."
 
 TheoremTab "Shade"
