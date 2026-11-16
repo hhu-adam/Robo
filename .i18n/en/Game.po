@@ -6733,9 +6733,9 @@ msgstr ""
 "| §6 | rewrite with an equation | \n"
 "| §9 | prove statements about specific numbers algorithmically    | \n"
 "| §10 | expand a definition | \n"
-"| §11 | to prove a §12 statement, specify a candidate | \n"
+"| §11 | to prove some value §12, specify a candidate | \n"
 "| §13 | split §14 in an assumption | \n"
-"| §15 | to prove a §16 statement, pick an arbitrary value | \n"
+"| §15 | to prove a statement §16 values, pick an arbitrary value | \n"
 "| §17 | move negation past quantifier in §18 or §19 | "
 
 #. §0: `push Not at «{h}»`
