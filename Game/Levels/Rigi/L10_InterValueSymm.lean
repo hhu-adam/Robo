@@ -5,11 +5,18 @@ Level 10
 
 Title ""
 
+
+
 Introduction
-"[Intro]
- The mirror image of the previous level.  If a continuous function `f` takes a strictly larger
- value at the left endpoint `a` than at the right endpoint `c` of an interval, then somewhere
- strictly between the endpoints the function already exceeds its value at the right endpoint.
+"Intro Rigi L10: Intermediate value theorem has several variants, e.g.
+```
+intermediate_value_Ioo: Ioo (f a) (f c) ⊆ f '' Ioo a c
+```
+(as in previous level) and
+```
+intermediate_value_Ioo': Ioo (f c) (f a) ⊆ f '' Ioo a c
+```
+Which of these two to use depends on which of the two intervals $(f(a), f(c))$ and $(f(c), f(a))$ is non-empty, i.e. on whether `f a < f c` or `f c < f a`.
 "
 
 open Set
@@ -21,16 +28,12 @@ TheoremDoc exists_mem_Ioo_val_gt_right as "exists_mem_Ioo_val_gt_right" in "Shad
 Statement exists_mem_Ioo_val_gt_right (preamble := grind_mode 1) {f : ℝ → ℝ} {a c : ℝ} (hf : Continuous f) (hac : a < c)
     (h_lt : f c < f a) : ∃ b ∈ Ioo a c, f b > f c := by
   have h : Set.Ioo (f c) (f a) ⊆ f '' Set.Ioo a c := by
-    Hint (hidden := true) "[Hint itvIoo] Just `apply` `intermediate_value_Ioo'`."
     apply intermediate_value_Ioo'
     · grind
     · fun_prop
-  have h_ne : (Ioo (f c) (f a)).Nonempty := by
-    use (f c + f a) / 2
-    grind
-  obtain ⟨fval, hfval⟩ := h_ne
-  obtain hfval' := h hfval
-  choose b hb using hfval'
+  have : (f c + f a) / 2 ∈ (Ioo (f c) (f a)) := by grind
+  apply h at this
+  choose b hb using this
   use b
   grind
 

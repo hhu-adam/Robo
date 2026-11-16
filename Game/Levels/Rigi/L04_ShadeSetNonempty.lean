@@ -5,7 +5,8 @@ Level 4
 
 Title ""
 
-Introduction "Intro Rigi.L04: introduce the working set.
+
+Introduction "Intro Rigi L04: introduce the working set.
 
 Fix a point `b`.  We study the set of points to the right of b at which `f`
 rises above `f b`:
@@ -22,25 +23,24 @@ open Set
 
 def Shaders (f : ℝ → ℝ) (c : ℝ) : Set ℝ := {t ∈ Set.Ioi c | f c ≤ f t}
 
-/-- `Shaders f c` is the set of `t` strictly larger than `c` such that `f c < f t`. -/
+/-- `Shaders f c` is the set of `t` strictly larger than `c` such that `f c ≤ f t`. -/
 DefinitionDoc Shaders as "Shaders" in "Shade"
 
-/-- If `b` is not a shadow point, `f b < f c`, and `c` is a shadow point, then `Shaders f c`
-is nonempty. -/
+/-- If `b` is a shadow point, then `Shaders f b` is nonempty. -/
 TheoremDoc shaders_nonempty as "shaders_nonempty" in "Shade"
 
 Statement shaders_nonempty (preamble := grind_mode 1) {f : ℝ → ℝ} {b : ℝ}
     (hb : b ∈ Shade f) : (Shaders f b).Nonempty := by
-  Hint "Because `b` is in the shade, there is some `t > b` with `f t > f b`"
+  Hint (strict := true) "Because `b` is in the shade, there is some `t > b` with `f t > f b`"
   Hint (hidden := true) "[Hint 7xd8e] Unpack `b ∈ Shade f` with `obtain ⟨t, …, …⟩ := hb`."
   obtain ⟨t, _, _⟩ := hb
-  Hint (hidden := true) "[Hint eymq5] Now `use` `t`."
+  Hint (hidden := true) "[Hint eymq5] Now `use {t}`."
   use t
   unfold Shaders
   grind
 
 
-Conclusion "Conclusion Rigi.L04: saved as `shaders_nonempty`."
+Conclusion "Conclusion Rigi L04: saved as `shaders_nonempty`."
 
 NewDefinition Shaders
 

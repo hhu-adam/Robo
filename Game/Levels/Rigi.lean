@@ -20,4 +20,5 @@ and their API, applies the intermediate value theorem, and culminates in the bos
 World "Rigi"
 Title "Rigi"
 
+
 Introduction "Intro Rigi"

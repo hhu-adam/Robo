@@ -3,20 +3,9 @@ import Game.Levels.Rigi.L06_LtSSupShaders
 World "Rigi"
 Level 7
 
-Title "The Value at the Supremum"
+Title ""
 
-Introduction "Intro Rigi.L07: the value at the supremum stays up.
-
-Every point of `t ∈ Shaders f b` satisfies `f b ≤ f t`.  The supremum itself need not be a point of
-`Shaders f b`, but it lies in its *closure* — and the condition `f b ≤ f t` is a closed condition,
-because `f` is continuous.  So the inequality survives the passage to the limit:
-
-```
-f b ≤ f (sSup (Shaders f b))
-```
-
-The proof combines `closure_minimal`, `isClosed_le` and the `csSup_mem_closure` fact from `Aquarius`.
-"
+Introduction "Intro Rigi L07: the value at the supremum stays up."
 
 open Set
 
@@ -24,30 +13,34 @@ open Set
 `f b ≤ f (sSup (Shaders f b))`. -/
 TheoremDoc val_le_val_sSup_Shaders as "val_le_val_sSup_Shaders" in "Shade"
 
-Statement val_le_val_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {hf : Continuous f} {b : ℝ} (hb : b ∈ Shade f)
-    (hs : BddAbove (Shaders f b)) :
+Statement val_le_val_sSup_Shaders (preamble := grind_mode 1) {f : ℝ → ℝ} {hf : Continuous f} {b : ℝ}
+    (hb : b ∈ Shade f) (hs : BddAbove (Shaders f b)) :
     f b ≤ f (sSup (Shaders f b)) := by
-  Hint (strict := true) "State the containment that makes the argument work: `Shaders f b` is
-    contained in the set of points `t` where `f b ≤ f t`."
+  Hint (strict := true) "[Hint q8m2v] At the supremum of all shaders of `b`, the mountain is at least as high as at b.
+  The proof combines `closure_minimal`, `isClosed_le` and `csSup_mem_closure`.
+  Begin by showing that:
+  ```
+  Shaders f b ⊆ \{t | f b ≤ f t}
+  ```
+  "
   have h_sub : Shaders f b ⊆ {t | f b ≤ f t} := by
     unfold Shaders
     grind
-  Hint "`closure_minimal` upgrades `{h_sub}` to a statement about the closure — it leaves you with
-    two goals: the right-hand set is closed, and the supremum lies in the closure."
+  Hint (hidden := true) (strict := true)
+  "[Hint 9al6z] `closure_minimal` upgrades `{h_sub}` to a statement about the closure."
   apply closure_minimal h_sub
-  have := lt_sSup_Shaders hb hs
+  Hint (hidden := true) (strict := true) "[Hint k3t9w] Two goals are left: the set `\{t | f b ≤ f t}` is closed,
+    and the supremum lies in the closure of `Shaders f b`."
   · Hint (hidden := true) "[Hint isclle] That set is closed by `isClosed_le`"
     apply isClosed_le
-    Hint (hidden := true) "[Hint 7xd8e] Remember `fun_prop`"
+    Hint (hidden := true) "[Hint r7n4x] Remember `fun_prop`"
     · fun_prop
     · fun_prop
-  Hint (hidden := true) (strict := true ) "[Hint csmc] The remaining goal is exactly
-    `csSup_mem_closure`."
-  apply csSup_mem_closure
-  · apply shaders_nonempty
-    assumption
-  · assumption
+  · apply csSup_mem_closure
+    · apply shaders_nonempty
+      assumption
+    · assumption
 
-Conclusion "Conclusion Rigi.L07: saved as `val_le_val_sSup_Shaders`."
+Conclusion "Conclusion Rigi L07: saved as `val_le_val_sSup_Shaders`."
 
 TheoremTab "Shade"
