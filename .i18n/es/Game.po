@@ -3201,7 +3201,7 @@ msgid "Conclusion Implis L09"
 msgstr ""
 "**Glifo**: ¿Y bien? ¿Ha sido mejor?\n"
 "\n"
-"**Tú**:  NNo lo sé. Pero, en cualquier caso, sigamos."
+"**Tú**:  No lo sé. Pero, en cualquier caso, sigamos."
 
 #. §0: `rw`
 #: Game/Levels/Implis/L10_Iff.lean:15
@@ -8924,7 +8924,7 @@ msgstr ""
 "El desarrollo continuado es posible gracias a fondos del *AI for Math Fund* de la fundación *Renaissance Philanthropy*.\n"
 "## Contenido del juego\n"
 "\n"
-"**Alerta de spoilers** En [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) encontrarás una visión general, a grandes rasgos, del contenido matemático de todos los planetas.\n"
+"**Alerta de spoilers** En [GitHub](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) encontrarás una visión general, a grandes rasgos, del contenido matemático de todos los planetas.\n"
 "\n"
 "## Créditos\n"
 "\n"
