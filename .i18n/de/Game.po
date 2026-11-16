@@ -4897,7 +4897,7 @@ msgid "Conclusion Saturn L06"
 msgstr ""
 "„Bestanden“ heißt es kurz und knapp vom anonymen Funker.\n"
 "\n"
-"\"**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\n"
+"**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\n"
 "Nichts wie weg!"
 
 #: Game/Levels/Saturn.lean:13
