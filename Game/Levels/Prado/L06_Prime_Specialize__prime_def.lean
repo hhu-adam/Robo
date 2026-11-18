@@ -29,7 +29,7 @@ Statement (a p : ℕ) (hp : Prime p) (h : 2 ≤ a) (ha : a ∣ p) : a = p := by
   rw [prime_def] at hp
   -- Hint "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich `2`, die nur durch
   -- `1` und sich selbst teilbar ist.  Das klingt vertraut."
-  Hint "A prime number is a natural number greater or equal to `2`, which is only divisible by `1`
+  Hint (strict := true) "A prime number is a natural number greater or equal to `2`, which is only divisible by `1`
   and itself"
   obtain ⟨hp₁, hp⟩ := hp
   /-

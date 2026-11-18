@@ -50,9 +50,9 @@ Statement Matrix.zero_on_offDiag_ebasis {n : ℕ} {f : Mat[n,n][ℝ] →ₗ[ℝ]
 
     **Du**: Wenn ich in diesem Produkt die Faktoren vertausche, erhalte ich Null!  Hatten wir doch auch schon, `E.mul_of_ne` oder so etwas."
     -/
-    Hint "Use `{h₁}` by writing `E i j` as `E i j * E j j`. Remind `E.mul_of_ne`"
+    Hint (strict := true) "Use `{h₁}` by writing `E i j` as `E i j * E j j`. Remind `E.mul_of_ne`"
     -- Hint (hidden := true) "**Robo*: Wie du meinst. Dann probier doch am besten `trans f (E i j * E j j)`."
-    Hint "[Hint plnk] Try `trans f (E i j * E j j)`"
+    Hint (strict := true) "[Hint plnk] Try `trans f (E i j * E j j)`"
     trans f (E i j * E j j)
     /-
     · Hint (hidden := true) "**Du**: Ehm, das sehe ich einfach von der Definition.
