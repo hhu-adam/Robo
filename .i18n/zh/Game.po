@@ -3106,49 +3106,116 @@ msgstr ""
 "然后再去看这个映射 §3 的一个原像。\n"
 "但我现在有点迷糊。"
 
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Conclusion Cantor L10"
-msgstr "**你**：我也不知道这样是不是真的更简单了……"
-
-#. §0: `¬ .`
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Does §0 have no fixed points?"
-msgstr "**康托尔**：你们不是已经论证过 §0 没有不动点了吗？"
-
 #. §0: `A → Set A`
 #. §1: `Set A`
 #. §2: `A → Prop`
 #. §3: `S : Set A`
-#. §4: `A → Prop`
-#. §5: `a : A`
-#. §6: `a ∈ S`
-#: Game.Levels.Cantor.L10_CantorPowerset
+#. §4: `a : A`
+#. §5: `a ∈ S`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
 msgid ""
-"Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-"§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+"Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
+"surjective mappings §0, by interpreting §1 as §2: a subset §3\n"
+"can be identified with the map A → Prop sending §4 to §5. Here is an intermediate step."
 msgstr ""
 "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n"
 "\n"
 "**你**：什么？\n"
 "\n"
-"**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学家来说，这就是同一回事。"
+"**司南**：一个子集 §3 可以和映射 §2 对应起来：它把 §4 送到命题 §5。对形式哲学家来说，这就是同一回事。\n"
+"\n"
+"**康托尔**：正是如此！来，我再给你们一个中间步骤。"
+
+#. §0: `p : A → Prop`
+#. §1: `intro`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
+"Start with §1."
+msgstr "**你**：满射的意思是，每个映射 §0 都有原像。那我先用 §1 开始。"
+
+#. §0: `«{f}»`
+#. §1: `«{A}»`
+#. §2: `«{p}»`
+#. §3: `let`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
+"§1. Introduce a name for the subset corresponding to §2 with §3."
+msgstr "**司南**：§0 的满射性给你的是 §1 的*子集*的原像。也许我们应该用 §3 给对应于 §2 的子集起个名字？"
+
+#. §0: `{ x | «{p}» x }`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint jx4gv] Consider the set §0."
+msgstr "**司南**：那应该就是集合 §0 吧？"
+
+#. §0: `simp`
+#. §1: `«{ha}»`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint mr4el] Use §0 in combination with §1."
+msgstr "**司南**：现在用 §0 和 §1 的某种组合应该就能完成了。"
+
+#. §0: `simp`
+#. §1: `«{S}»`
+#. §2: `«{ha}»`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
+msgstr "**司南**：现在用 §0、§1 和 §2 的某种组合应该就能完成了。"
+
+#. §0: `surjective_mem_of_surjective`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
+"§0."
+msgstr "**司南**：这个我们马上肯定要用到。我先把它存为 §0。"
+
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid "Intro Cantor L11"
+msgstr "**康托尔**：现在都清楚了吗？"
 
 #. §0: `cantor_diagonal`
-#. §1: `apply cantor_diagonal at «{hf}»`
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Use §0 as e.g. §1"
+#. §1: `surjective_mem_of_surjective`
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid ""
+"[Hint d92p1] Use §0 now? First translate with\n"
+"§1."
 msgstr ""
 "**你**：所以现在在这里用 §0？\n"
 "\n"
-"**司南**：大概吧，比如配合 §1。"
+"**司南**：先翻译一下，用 §1。"
+
+#. §0: `«{hf}»`
+#. §1: `«{A}» → «{A}» → Prop`
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid "[Hint u9e76] Now §0 is about a map §1."
+msgstr "**司南**：现在 §0 是关于映射 §1 的命题。"
+
+#: Game.Levels.Cantor.L11_CantorPowerset
+msgid "Conclusion Cantor L11"
+msgstr "**你**：我也不知道这样是不是真的更简单了……"
+
+#. §0: `¬ .`
+#: Game.Levels.Cantor.L11_CantorPowerset
+msgid "Does §0 have no fixed points?"
+msgstr "**康托尔**：你们不是已经论证过 §0 没有不动点了吗？"
 
 #. §0: `cantor_diagonal`
-#: Game.Levels.Cantor.L10_CantorPowerset
+#: Game.Levels.Cantor.L11_CantorPowerset
 msgid "[Hint mhjv] Try §0"
 msgstr "**康托尔**：不不不！我们不是想用我漂亮的定理 §0 吗！"
 
-#: Game.Levels.Cantor.L11_SequenceUncountable
-msgid "Conclusion Cantor L11"
+#: Game.Levels.Cantor.L12_SequenceUncountable
+msgid "Conclusion Cantor L12"
 msgstr ""
 "**司南**：感谢你的表演！\n"
 "\n"
@@ -3157,8 +3224,8 @@ msgstr ""
 "**康托尔**：魔术嘛，本来就不是给所有人看的。祝你们旅途顺利！"
 
 #. §0: `ℕ → ℕ`
-#: Game.Levels.Cantor.L11_SequenceUncountable
-msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
+#: Game.Levels.Cantor.L12_SequenceUncountable
+msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 "**康托尔**：更简单？谁说更简单了？但肯定更优雅！\n"
 "\n"
@@ -3172,7 +3239,7 @@ msgstr ""
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
-#: Game.Levels.Cantor.L11_SequenceUncountable
+#: Game.Levels.Cantor.L12_SequenceUncountable
 msgid "The name of mapping §0 is §1"
 msgstr ""
 "**你**：那个映射 §0 叫什么来着？\n"
@@ -8955,3 +9022,19 @@ msgstr "– 关卡完成！但不完全是按预想的方式 –"
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr "– 关卡完成！ –"
+
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n"
+#~ "\n"
+#~ "**你**：什么？\n"
+#~ "\n"
+#~ "**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学家来说，这就是同一回事。"
+
+#~ msgid "Use §0 as e.g. §1"
+#~ msgstr ""
+#~ "**你**：所以现在在这里用 §0？\n"
+#~ "\n"
+#~ "**司南**：大概吧，比如配合 §1。"

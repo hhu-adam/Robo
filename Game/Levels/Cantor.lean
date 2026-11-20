@@ -7,8 +7,9 @@ import Game.Levels.Cantor.L06_IsFixedPt_odd
 import Game.Levels.Cantor.L07_idempotent
 import Game.Levels.Cantor.L08_CantorDiag_IsFixedPt
 import Game.Levels.Cantor.L09_CantorDiag
-import Game.Levels.Cantor.L10_CantorPowerset
-import Game.Levels.Cantor.L11_SequenceUncountable
+import Game.Levels.Cantor.L10_SurjectiveMem
+import Game.Levels.Cantor.L11_CantorPowerset
+import Game.Levels.Cantor.L12_SequenceUncountable
 -- import Game.Levels.Cantor.L09_SequenceUncountable
 
 /-!

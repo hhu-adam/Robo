@@ -29,16 +29,16 @@ attribute [game_simp] Finset.Icc_self Finset.sum_singleton MulZeroClass.mul_zero
 attribute [game_simp] Finset.Icc_self Finset.sum_singleton CharP.cast_eq_zero ne_eq OfNat.ofNat_ne_zero not_false_eq_true zero_pow eq_self Nat.cast_add Nat.cast_one Finset.mem_Icc zero_le add_le_iff_nonpos_right nonpos_iff_eq_zero one_ne_zero and_false Finset.sum_insert one_div
 
 -- Cantor, L01_CantorPowerset:
-attribute [game_simp] Set.mem_setOf_eq
+attribute [game_simp] Set.mem_ofPred_eq
 
 -- Cantor, L02_CantorPowerset:
-attribute [game_simp] Set.mem_setOf_eq
+attribute [game_simp] Set.mem_ofPred_eq
 
 -- Cantor, L03_IsFixedPt_abs:
 attribute [game_simp] abs_nonneg abs_eq_self
 
 -- Cantor, L04_fixedPoints_neg:
-attribute [game_simp] CharZero.neg_eq_self_iff Set.setOf_eq_eq_singleton eq_self
+attribute [game_simp] CharZero.neg_eq_self_iff Set.ofPred_eq_eq_singleton eq_self
 
 -- Cantor, L05_IsFixedPt_not:
 attribute [game_simp] eq_iff_iff not_iff_self exists_const not_false_eq_true
@@ -47,16 +47,19 @@ attribute [game_simp] eq_iff_iff not_iff_self exists_const not_false_eq_true
 attribute [game_simp] neg_inj
 
 -- Cantor, L07_idempotent:
-attribute [game_simp] Set.setOf_subset_setOf forall_exists_index forall_apply_eq_imp_iff Set.mem_setOf_eq Function.comp_apply
+attribute [game_simp] Set.ofPred_subset_ofPred forall_exists_index forall_apply_eq_imp_iff Set.mem_ofPred_eq Function.comp_apply
 
 -- Cantor, L09_CantorDiag:
-attribute [game_simp] Set.mem_setOf_eq
+attribute [game_simp] Set.mem_ofPred_eq
 
--- Cantor, L10_CantorPowerset:
-attribute [game_simp] eq_iff_iff not_iff_self Set.setOf_false Set.mem_empty_iff_false
+-- Cantor, L10_SurjectiveMem:
+attribute [game_simp] Set.mem_ofPred_eq eq_self
 
--- Cantor, L11_SequenceUncountable:
-attribute [game_simp] Nat.succ_eq_add_one Nat.add_eq_left one_ne_zero Set.setOf_false Set.mem_empty_iff_false
+-- Cantor, L11_CantorPowerset:
+attribute [game_simp] eq_iff_iff not_iff_self Set.ofPred_false Set.mem_empty_iff_false
+
+-- Cantor, L12_SequenceUncountable:
+attribute [game_simp] Nat.succ_eq_add_one Nat.add_eq_left one_ne_zero Set.ofPred_false Set.mem_empty_iff_false
 
 -- Epo, L01_Surjective:
 attribute [game_simp] sub_add_cancel eq_self
@@ -71,10 +74,10 @@ attribute [game_simp] sub_add_sub_cancel
 attribute [game_simp] Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
 
 -- Euklid, L03_Finite_toFinset__prod_insert2:
-attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
+attribute [game_simp] Set.Finite.mem_toFinset Set.mem_ofPred_eq Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
 
 -- Euklid, L04_Boss_infinitely_many_primes:
-attribute [game_simp] Set.Finite.mem_toFinset Set.mem_setOf_eq lt_add_iff_pos_left gt_iff_lt Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
+attribute [game_simp] Set.Finite.mem_toFinset Set.mem_ofPred_eq lt_add_iff_pos_left gt_iff_lt Finset.mem_erase ne_eq eq_self not_true_eq_false false_and not_false_eq_true
 
 -- Iso, L01_Bijective:
 attribute [game_simp] add_left_inj sub_add_cancel eq_self
@@ -101,22 +104,22 @@ attribute [game_simp] Nat.succ_eq_add_one add_tsub_cancel_right eq_self implies_
 attribute [game_simp] exists_apply_eq_apply reduceDIte
 
 -- Piazza, L02_Simp:
-attribute [game_simp] Set.mem_setOf_eq
+attribute [game_simp] Set.mem_ofPred_eq
 
 -- Piazza, L03_Ext__Set__Union__Inter:
 attribute [game_simp] Set.mem_inter_iff Set.mem_union
 
 -- Piazza, L04_Generalize__univ__eq_univ_iff_forall:
-attribute [game_simp] Set.mem_union Set.mem_setOf_eq
+attribute [game_simp] Set.mem_union Set.mem_ofPred_eq
 
 -- Piazza, L05_empty__eq_empty_iff_forall_notMem:
-attribute [game_simp] Set.mem_inter_iff Set.mem_setOf_eq Set.mem_empty_iff_false iff_false not_and Nat.not_odd_iff_even imp_self implies_true
+attribute [game_simp] Set.mem_inter_iff Set.mem_ofPred_eq Set.mem_empty_iff_false iff_false not_and Nat.not_odd_iff_even imp_self implies_true
 
 -- Piazza, L06_Ext2__univ2:
 attribute [game_simp] Set.mem_diff Set.mem_univ Set.mem_inter_iff not_and true_and Set.mem_union
 
 -- Piazza, L10:
-attribute [game_simp] Set.mem_insert_iff Set.mem_singleton_iff Set.singleton_union Set.mem_setOf_eq
+attribute [game_simp] Set.mem_insert_iff Set.mem_singleton_iff Set.singleton_union Set.mem_ofPred_eq
 
 -- Piazza, L11_erase:
 attribute [game_simp] Finset.mem_erase ne_eq Finset.mem_sdiff Finset.mem_singleton
