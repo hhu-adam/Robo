@@ -61,7 +61,7 @@ lake build
 
 *Note: the repo is set up in a way that `lake update` is NOT destructive and can be called liberally anytime. (This is not true for other Lean projects)*
 
-*Note: `lake update` will call the two commands `lake exe cache get` (retrieve the latest mathlib cache) and `lake build gameserver` (build the gameserver executable); so if you're not calling `lake update`, you should call these two commands manually.*
+*Note: `lake update` will call the command `lake exe cache get` (retrieve the latest mathlib cache); so if you're not calling `lake update`, you should call this two command manually.*
 
 ## Updating Lean/mathlib
 
@@ -79,5 +79,4 @@ can help restructure existing worlds, see the
 
 # Technical support
 
-In case of issues with our server at `adam.math.hhu.de`, please send an email to <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">this address</a>.  
-
+In case of issues with our server at `adam.math.hhu.de`, please send an email to <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">this address</a>.
