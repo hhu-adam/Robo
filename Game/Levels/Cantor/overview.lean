@@ -24,7 +24,7 @@ example {A : Type} (f : A → A) (h : f ∘ f = f) :
     obtain ⟨a, ha⟩ := hx
     rw [← ha]
     unfold fixedPoints IsFixedPt
-    simp --or rw [mem_setOf]
+    simp --or rw [mem_ofPred_eq]
     simp [comp_apply] at h
     rw [h]
   · intro x hx

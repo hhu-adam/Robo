@@ -1,5 +1,5 @@
 import Batteries
-import GameServer
+import GameApi
 import Game.Doc
 
 -- must be imported *before* the custom modifications!

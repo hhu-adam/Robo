@@ -2988,49 +2988,116 @@ msgstr ""
 "§2\n"
 "and then consider a preimage §3 of this map. But I'm a little lost right now."
 
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Conclusion Cantor L10"
-msgstr "**You**: I'm not sure this was much easier …"
-
-#. §0: `¬ .`
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Does §0 have no fixed points?"
-msgstr "**Cantor**: Haven't you already argued somewhere that §0 has no fixed points?"
-
 #. §0: `A → Set A`
 #. §1: `Set A`
 #. §2: `A → Prop`
 #. §3: `S : Set A`
-#. §4: `A → Prop`
-#. §5: `a : A`
-#. §6: `a ∈ S`
-#: Game.Levels.Cantor.L10_CantorPowerset
+#. §4: `a : A`
+#. §5: `a ∈ S`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
 msgid ""
-"Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-"§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+"Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
+"surjective mappings §0, by interpreting §1 as §2: a subset §3\n"
+"can be identified with the map A → Prop sending §4 to §5. Here is an intermediate step."
 msgstr ""
 "**Cantor**: And now you take this beautiful diagonal argument and show once again that there are no surjections §0! You just need to interpret §1 as §2!\n"
 "\n"
-"**You**: What? \n"
+"**You**: What?\n"
 "\n"
-"**Scribble**: A subset §3 can be identified with the map §4 that maps §5 onto the statement §6. In fact, for formalosophers, the subset and this map are one and the same."
+"**Scribble**: A subset §3 can be identified with the map §2 that maps §4 onto the statement §5.\n"
+"\n"
+"**Cantor**: Exactamente! Here, let me give you an intermediate step."
+
+#. §0: `p : A → Prop`
+#. §1: `intro`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
+"Start with §1."
+msgstr "**You**: Surjective means that every map §0 has a preimage. So I'll start with §1."
+
+#. §0: `«{f}»`
+#. §1: `«{A}»`
+#. §2: `«{p}»`
+#. §3: `let`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
+"§1. Introduce a name for the subset corresponding to §2 with §3."
+msgstr "**Scribble**: The surjectivity of §0 gives you preimages of *subsets* of §1. Maybe we should use §3 to give a name to the subset corresponding to §2?"
+
+#. §0: `{ x | «{p}» x }`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint jx4gv] Consider the set §0."
+msgstr "**Scribble**: That would be the set §0, right?"
+
+#. §0: `simp`
+#. §1: `«{ha}»`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint mr4el] Use §0 in combination with §1."
+msgstr "**Scribble**: Some combination of §0 and §1 should finish this off now."
+
+#. §0: `simp`
+#. §1: `«{S}»`
+#. §2: `«{ha}»`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
+msgstr "**Scribble**: Some combination of §0, §1 and §2 should finish this off now."
+
+#. §0: `surjective_mem_of_surjective`
+#: Game.Levels.Cantor.L10_SurjectiveMem
+#, fuzzy
+msgid ""
+"Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
+"§0."
+msgstr "**Scribble**: We'll surely need this in a moment. Let me save it as §0."
+
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid "Intro Cantor L11"
+msgstr "**Cantor**: Is everything clear now?"
 
 #. §0: `cantor_diagonal`
-#. §1: `apply cantor_diagonal at «{hf}»`
-#: Game.Levels.Cantor.L10_CantorPowerset
-msgid "Use §0 as e.g. §1"
+#. §1: `surjective_mem_of_surjective`
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid ""
+"[Hint d92p1] Use §0 now? First translate with\n"
+"§1."
 msgstr ""
-"**You**: So here we use §0? \n"
+"**You**: So here we use §0 now?\n"
 "\n"
-"**Scribble**: Probably.  For example with §1."
+"**Scribble**: First we translate, with §1."
+
+#. §0: `«{hf}»`
+#. §1: `«{A}» → «{A}» → Prop`
+#: Game.Levels.Cantor.L11_CantorPowerset
+#, fuzzy
+msgid "[Hint u9e76] Now §0 is about a map §1."
+msgstr "**Scribble**: Now §0 is a statement about a map §1."
+
+#: Game.Levels.Cantor.L11_CantorPowerset
+msgid "Conclusion Cantor L11"
+msgstr "**You**: I'm not sure this was much easier …"
+
+#. §0: `¬ .`
+#: Game.Levels.Cantor.L11_CantorPowerset
+msgid "Does §0 have no fixed points?"
+msgstr "**Cantor**: Haven't you already argued somewhere that §0 has no fixed points?"
 
 #. §0: `cantor_diagonal`
-#: Game.Levels.Cantor.L10_CantorPowerset
+#: Game.Levels.Cantor.L11_CantorPowerset
 msgid "[Hint mhjv] Try §0"
 msgstr "**Cantor**: No, no! We wanted to use my beautiful theorem §0!"
 
-#: Game.Levels.Cantor.L11_SequenceUncountable
-msgid "Conclusion Cantor L11"
+#: Game.Levels.Cantor.L12_SequenceUncountable
+msgid "Conclusion Cantor L12"
 msgstr ""
 "**Scribble**: Thank you very much for this performance! \n"
 "\n"
@@ -3039,8 +3106,8 @@ msgstr ""
 "**Cantor**: Magic isn't for everyone. Have a good journey!"
 
 #. §0: `ℕ → ℕ`
-#: Game.Levels.Cantor.L11_SequenceUncountable
-msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
+#: Game.Levels.Cantor.L12_SequenceUncountable
+msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 "**Cantor**:  Easier? Who said easier?  But certainly more elegant! \n"
 "\n"
@@ -3054,7 +3121,7 @@ msgstr ""
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
-#: Game.Levels.Cantor.L11_SequenceUncountable
+#: Game.Levels.Cantor.L12_SequenceUncountable
 msgid "The name of mapping §0 is §1"
 msgstr ""
 "**You**: What was the name of the map §0 again? \n"
@@ -8782,6 +8849,22 @@ msgstr "– Problem solved.  But not quite as intended … –"
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr "– Problem solved! –"
+
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**Cantor**: And now you take this beautiful diagonal argument and show once again that there are no surjections §0! You just need to interpret §1 as §2!\n"
+#~ "\n"
+#~ "**You**: What? \n"
+#~ "\n"
+#~ "**Scribble**: A subset §3 can be identified with the map §4 that maps §5 onto the statement §6. In fact, for formalosophers, the subset and this map are one and the same."
+
+#~ msgid "Use §0 as e.g. §1"
+#~ msgstr ""
+#~ "**You**: So here we use §0? \n"
+#~ "\n"
+#~ "**Scribble**: Probably.  For example with §1."
 
 #~ msgid "Remind: §0 from §1 could be helpful"
 #~ msgstr "**Scribble**: Remember that §0 might be helpful at some point."

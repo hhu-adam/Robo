@@ -1,4 +1,4 @@
-import GameServer.Commands
+import GameApi
 
 /--
 With `apply`, you apply an implication `hAB : A → B`:

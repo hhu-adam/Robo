@@ -1,8 +1,8 @@
 import Game.Metadata
-import Game.Levels.Cantor.L10_CantorPowerset
+import Game.Levels.Cantor.L11_CantorPowerset
 
 World "Cantor"
-Level 11
+Level 12
 
 Title ""
 
@@ -22,7 +22,7 @@ Introduction "
   **Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!
 "
 -/
-Introduction "Intro Cantor L11: Show that set of mapping `ℕ → ℕ` is uncountable"
+Introduction "Intro Cantor L12: Show that set of mapping `ℕ → ℕ` is uncountable"
 
 /-
 Conclusion "
@@ -33,7 +33,7 @@ Conclusion "
   **Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!
 "
 -/
-Conclusion "Conclusion Cantor L11"
+Conclusion "Conclusion Cantor L12"
 
 open Nat Set Function
 

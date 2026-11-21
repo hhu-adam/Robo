@@ -145,14 +145,26 @@
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint u9e76] Now §0 is about a map §1.":
+ "**Robo**:  Jetzt ist §0 eine Aussage über eine Abbildung §1.",
  "[Hint rxjt] Try §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**Du**:  Surjektiv heißt, jede Abbildung §0 hat ein Urbild. Also fange ich mal mit §1 an.",
  "[Hint plnk] Try §0":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**Robo**:  Irgendeine Kombination von §0 und §1 sollte das jetzt zu Ende bringen.",
  "[Hint mhjv] Try §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**Robo**:  Die Surjektivität von §0 liefert dir Urbilder von *Teilmengen* von §1. Vielleicht sollten wir mit §3 der Teilmenge, die §2 entspricht, einen Namen geben?",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**Robo**:  Irgendeine Kombination von §0, §1 und §2 sollte das jetzt zu Ende bringen.",
+ "[Hint jx4gv] Consider the set §0.":
+ "**Robo**: Das wird wohl die Menge §0 sein, oder?",
  "[Hint jrxb] Try §0":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint hwzk] Try §0":
@@ -162,6 +174,8 @@
  "[Hint fzwc] Try §0": "**Robo**: §0 sagt meine Speicherplatte.",
  "[Hint dkmw] Remind of previous result":
  "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben.",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Erst übersetzen, mit §1.",
  "[Hint cqvs] Try §0":
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
  "[Hint bsjn] Try §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
@@ -255,8 +269,6 @@
  "**Robo**:  Denk daran, dass wir schon §0 bewiesen hatten.",
  "Use §0 as goal is in assumptions":
  "**Robo**: Ist doch genau wie eben: die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen. Also wird §0 auch wieder funktionieren.",
- "Use §0 as e.g. §1":
- "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Vermutlich, zum Beispiel mit §1.",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**Du**: §0?\n\n**Robo**:  Das könnte funktionieren. Und wahrscheinlich wirst du das Lemma §1 brauchen. Für §2 zieht es aus der Annahme §3 den Schluss §4.",
  "Use §0 again": "**Robo**:  Und jetzt wieder §0.",
@@ -957,10 +969,11 @@
  "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: ein schmales Hochhaus und ein zweites Gebäude mit etwas weniger Etagen. Die Gebäude sind mit einem eigenartigen Röhrensystem miteinander verbunden. Oben auf dem Hochhaus erkennt ihr einen Landeplatz.  Den steuert ihr an.\n\nAls ihr aussteigt, kommt ein Formalosoph auf euch zugelaufen.  Er winkt wild mit den Armen.\n\n**Portier**:  Nein, nicht doch, da unten werdet ihr erwartet.\n\nEr lässt die Arme sinken.\n\n**Portier**:  Nun ja, egal.  Guten Tag, erst einmal! Ich bin hier nur der Hausmeister. Ihr werdet von einer großen Delegation erwartet, aber natürlich drüben, im Bürohaus. Das hier ist nur unser Schlafturm.  Kommt, ich bringe euch hinüber.  Es geht ganz schnell.\n\nEr führt euch eine Etage hinunter und bitte euch, in „Transportkapseln“ einzusteigen, jeder in eine.\n\n**Portier**:  Wir rutschen jetzt einfach mit diesen Kapseln hinüber. Keine Sorge, die Bahn ist frei! Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die Luft rein. Alle anderen sind ja schon drüben!",
  "Intro Ciao":
  "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht haben?\n\n**Robo**:  Ja, sieht so aus.\n\n**Du**:  Was machen wir jetzt?\n\n**Robo**: Keine Ahnung.\n\nNach einer Weile …\n\n**Robo**: Du, schau mal, hier ist eine Nachricht reingekommen.",
- "Intro Cantor L11: Show that set of mapping §0 is uncountable":
+ "Intro Cantor L12: Show that set of mapping §0 is uncountable":
  "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n\nEr macht drei Saltos rückwarts und kommt dann mit einem weiteren Zettel für euch zurück.\n\n**Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen, dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen §0, überabzählbar ist!\n\nUnd dann im Flüsterton:\n\n**Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!",
- "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
- "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n\n**Du**: Was?\n\n**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe.",
+ "Intro Cantor L11": "**Cantor**:  Jetzt alles klar?",
+ "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
+ "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n\n**Du**: Was?\n\n**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft.\n\n**Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt.",
  "Intro Cantor L09 - 2":
  "**Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel! Ihr müsst die Aussage von eben nur ein bisschen umformulieren.\n\nEr wirft euch einen neuen Zettel zu.",
  "Intro Cantor L08: Mapping defined on product §0 with diagonal":
@@ -1397,10 +1410,12 @@
  "Ihr bekommt eine große Runde Applaus.\n\nDanach werdet ihr verabschiedet.\nFür den Rückweg könnt ihr leider keine Transportkapsel benutzen.\nDie funktionieren nämlich nur in eine Richtung.\nZurück zum Raumschiff geht es also zu Fuß:\nerst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.",
  "Conclusion Cia L01":
  "**Du**: Das war ja nun nicht so schwer …  Wer die wohl gesendet hat?  Und warum?\n\n**Robo**:  Das war sicher eine Nachricht von Ritha …\n\nRobo schaut in die Ferne.\n\n**Robo**:  Ich glaube, sie wollte uns ermuntern, weiter zu fliegen.\n\n**Du**: Aber wohin?\n\n**Robo**:  Oh, schau mal, noch eine Nachricht:\n\n*Liebe Erdwesen,*\n\n*es war uns ein Vergnügen, euch kennenzulernen! Es tut uns aufrichtig leid, dass ihr euch in unser Formaloversum verirrt habt und nicht wieder nach Hause findet.  Aber wir haben noch eine gute Nachricht: Ihr seid nicht die einzigen! Fliegt nur rasch weiter zum Planeten Zulip. Dort werdet ihr viele weitere Erdwesen finden, die sich ins Formaloversum verirrt haben. Zulip ist groß, gewiss werdet auch ihr dort ein neues Zuhause finden.  Hier die Koordinaten:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*Mit den aufrichtigsten Grüßen*\n\n*– Eure Formalosophen*\n\n**Robo**:  Na dann – los!\n\n[Nicht wundern:  Wenn ihr den Koordinaten folgt, beschleunigt das Raumschiff auf Überlichtgeschwindigkeit und ihr verliert vorübergehend den Kontakt zum Server. Das macht aber nichts.  Ihr werdet sicher auf Zulip ankommen.]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**Robo**:  Vielen Dank für die Vorstellung!\n\n**Du**:  Aber schade, dass es so wenige Zuschauer gibt!\n\n**Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!",
- "Conclusion Cantor L10":
+ "Conclusion Cantor L11":
  "**Du**:  Ich weiß nicht, ob das wirklich einfacher war …",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**Robo**:  Das brauchen wir bestimmt gleich.  Ich speicher das mal als §0.",
  "Conclusion Cantor L09 - 2": "**Cantor**:  Bravo!",
  "Conclusion Cantor L08":
  "**Cantor**:  Sehr schön!\n\nEr klatscht.\n\n**Du**:  Also ich verstehe gerade gar nichts mehr.",
