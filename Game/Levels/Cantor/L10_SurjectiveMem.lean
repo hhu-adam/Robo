@@ -21,7 +21,6 @@ Ihr müsst nur `Set A` auffassen als `A → Prop`!
 
 **Robo**:  Eine Teilmenge `S : Set A` kann man mit der Abbildung
 `A → Prop` identifizieren, die `a : A` auf die Aussage `a ∈ S` wirft.
-Für Formalosophen ist das dasselbe.
 
 **Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt.
 "

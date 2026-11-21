@@ -3118,7 +3118,7 @@ msgstr ""
 "\n"
 "**Du**: Was?\n"
 "\n"
-"**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft. Für Formalosophen ist das dasselbe.\n"
+"**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft.\n"
 "\n"
 "**Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt."
 

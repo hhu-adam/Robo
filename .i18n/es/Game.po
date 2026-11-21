@@ -5583,7 +5583,7 @@ msgstr ""
 "\n"
 "**Tú**: ¿Qué?\n"
 "\n"
-"**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §2 que lleva §4 al enunciado §5. Para los formalósofos es lo mismo.\n"
+"**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §2 que lleva §4 al enunciado §5.\n"
 "\n"
 "**Cantor**: ¡Exactamente! Tomad, os doy además un paso intermedio."
 

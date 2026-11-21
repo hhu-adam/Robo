@@ -3005,7 +3005,7 @@ msgstr ""
 "\n"
 "**You**: What?\n"
 "\n"
-"**Scribble**: A subset §3 can be identified with the map §2 that maps §4 onto the statement §5. For formalosophers, the subset and this map are one and the same.\n"
+"**Scribble**: A subset §3 can be identified with the map §2 that maps §4 onto the statement §5.\n"
 "\n"
 "**Cantor**: Exactamente! Here, let me give you an intermediate step."
 
