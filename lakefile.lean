@@ -89,7 +89,6 @@ package Game where
     ⟨`autoImplicit, false⟩,
     ⟨`pp.unicode.fun, true⟩,
     ⟨`pp.funBinderTypes, true⟩,
-
     /- linter warnings might block the player. (IMPORTANT) -/
     ⟨`linter.all, false⟩,
     /- to display the values of let declarations, like `:= 42` (IMPORTANT)  -/

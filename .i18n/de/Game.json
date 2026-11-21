@@ -171,6 +171,8 @@
  "[Hint uww7c] Perform §0 again": "**Robo**: §0?",
  "[Hint upbd] Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n§5 means that b is an *upper bound* of s: §6 for every element of s.\n\nFor subset §7 of a set §8 (§9), §10 means that there exists some §11 in T\n(§12) such that §13.":
  "**Du**:  Ich rate einfach mal … §5 bedeutet doch bestimmt, dass §3 eine obere Schranke von §0 ist.  Und §10 bedeutet, dass §0 „bounded above“, also von oben beschränkt ist.  Richtig?\n\n**Robo**:  Ja, richtig. Wir müssen vermutlich einfach noch einmal explizit sagen, dass §11 die gesuchte obere Schranke ist.",
+ "[Hint u9e76] Now §0 is about a map §1.":
+ "**Robo**:  Jetzt ist §0 eine Aussage über eine Abbildung §1.",
  "[Hint u6qjy] Start with §0.": "**Robo**:  Ich würde wieder mit §0 anfangen.",
  "[Hint th0l6] Now construct the new prime.\nConsider the finite set §0,\ndefine the product of all of these,\nthen consider a “new prime” given by that product plus one.":
  "**Du**: Jetzt definiere ich mir also eine neue Primzahl?\n\n**Robo**:  Genau.  Führ hier am besten ein paar Namen ein – einen Namen für die endliche Menge §0, dann einen Namen für das Produkt über alle (Prim-)Zahlen darin, und dann einen Namen für die um eins größere „neue Primzahl“.",
@@ -207,6 +209,8 @@
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint rhhe1] Try to §0 with §1 at §2.":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**Du**:  Surjektiv heißt, jede Abbildung §0 hat ein Urbild. Also fange ich mal mit §1 an.",
  "[Hint qmdrx] Remember §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint plnk] Try §0":
@@ -221,12 +225,16 @@
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint mwqb] Remember §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**Robo**:  Irgendeine Kombination von §0 und §1 sollte das jetzt zu Ende bringen.",
  "[Hint mnq1z] Great. Now show that, on the other hand, by construction, no prime can divide the “new prime”.":
  "**Du**:  Das hat ja immerhin geklappt.  Als zweiten Schritt formuliere ich also jetzt aus, dass die „neue Primzahl“ andererseits genau so konstruiert ist, dass keine Primzahl sie teilen kann.",
  "[Hint mhjv] Try §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
  "[Hint mdsff]\n§0 is the open interval between §1 and §2,\ni.e. §3.\n§4 is the filter of neighborhoods of §5 (sets containing §6 in their interior).\nJoke about filter/coffee/§7.\nAs the interval is open, can proceed with new theorem §8. ":
  "**Du**:  Oh, was ist das denn jetzt?  Kannst du mit diesen Symbolen etwas anfangen?\n\n**Robo**:  Glaub schon.  Zunächst einmal ist §0 das offene Intervall zwischen §1 und §2, also §3.\n\nUnd §4 ist der Nachbarschaftsfilter der §5.\n\n**Du**:  Langsam.  Nachtkaffeefilter???\n\n**Robo**:  Nach-Bar-Schafts-Filter.  Aber egal.  Wenn dir Filter nichts sagen: es ist die Menge aller Nachbarschaften von §5.\n\n**Du**:  Du meinst: aller Umgebungen von §5, im topologischen Sinne?\n\n**Robo**:  Ja.  Die Menge aller Mengen, die eine offene Teilmenge um §5 enthalten.\n\n**Du**: Puhhh … Darf ich das §7en?\n\n**Robo**:  Kannst du gern probieren.  Aber da das Intervall, um das es hier geht, selbst offen ist, sollte im Zweifelsfall §8 weiterhelfen. ",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**Robo**:  Die Surjektivität von §0 liefert dir Urbilder von *Teilmengen* von §1. Vielleicht sollten wir mit §3 der Teilmenge, die §2 entspricht, einen Namen geben?",
  "[Hint ltssup] Unfold §0 in §1 to see §2.":
  "**Robo**: Vielleicht öffnest du zuerst mal §0 mit §1. Dann steht da §2 …",
  "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n§3\n":
@@ -241,8 +249,12 @@
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
  "[Hint kqwz] prove §0":
  "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen.",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**Robo**:  Irgendeine Kombination von §0, §1 und §2 sollte das jetzt zu Ende bringen.",
  "[Hint k7r2d] First, establish that, like any natural number greater than one,\nthe “new prime” must have a prime factor.":
  "**Robo**:  Ich würd jetzt als Erstes mal festhalten, dass unsere „neue Primzahl“, wie jede natürliche Zahl größer als eins, einen Primfaktor haben muss.",
+ "[Hint jx4gv] Consider the set §0.":
+ "**Robo**: Das wird wohl die Menge §0 sein, oder?",
  "[Hint jrxb] Try §0":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint itvIoo] Just §0 §1.":
@@ -286,6 +298,8 @@
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint dkmw] Remind of previous result":
  "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben.",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Erst übersetzen, mit §1.",
  "[Hint cssuple] The supremum is the *least* upper bound. New theorem: §0":
  "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die *kleinste* solche Schranke.  Diese Eigenschaft wird hier §0 genannt.",
  "[Hint cssupcl] §0 is a set that is bounded above, and on which §1 only takes values at most §2.\nNeed to show that f is also at most c at §3.\nUse new theorem §4. Formulate this separately with §5:\n§6":
@@ -410,8 +424,6 @@
  "**Robo**:  Denk daran, dass wir schon §0 bewiesen hatten.",
  "Use §0 as goal is in assumptions":
  "**Robo**: Ist doch genau wie eben: die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen. Also wird §0 auch wieder funktionieren.",
- "Use §0 as e.g. §1":
- "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Vermutlich, zum Beispiel mit §1.",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**Du**: §0?\n\n**Robo**:  Das könnte funktionieren. Und wahrscheinlich wirst du das Lemma §1 brauchen. Für §2 zieht es aus der Annahme §3 den Schluss §4.",
  "Use §0 again": "**Robo**:  Und jetzt wieder §0.",
@@ -1147,10 +1159,11 @@
  "**Lina**:  Genug von §0, jetzt bin ich wieder an der Reihe.",
  "Intro Cartan":
  "Ihr seid neben einem großen Zelt gelandet.\nVielleicht ein Zirkuszelt? Drinnen ist es recht dunkel.\nNur eine Bühne ist hell erleuchtet.\nDarauf steht ein Herr, der wie eine Mischung aus Professor und Magier aussieht, hält einen Monolog und führt anscheinend irgendetwas vor.\n\nIm Halbdunkel vor der Bühne stehen Stühle in langen Reihen.\nIhr habt das Zelt offenbar direkt an einem Ende der ersten Reihe betreten.\nDas andere Ende könnt ihr gar nicht erkennen, so lang ist die Reihe.\nUnd dahinter kommen viele weitere Reihen – auch in diese Richtung könnt ihr kein Ende erkennen.\nAber alle Sitze sind leer.\n\nIhr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren.",
- "Intro Cantor L11: Show that set of mapping §0 is uncountable":
+ "Intro Cantor L12: Show that set of mapping §0 is uncountable":
  "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n\nEr macht drei Saltos rückwarts und kommt dann mit einem weiteren Zettel für euch zurück.\n\n**Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen, dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen §0, überabzählbar ist!\n\nUnd dann im Flüsterton:\n\n**Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!",
- "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
- "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n\n**Du**: Was?\n\n**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe.",
+ "Intro Cantor L11": "**Cantor**:  Jetzt alles klar?",
+ "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
+ "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n\n**Du**: Was?\n\n**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft.\n\n**Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt.",
  "Intro Cantor L09 - 2":
  "**Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel! Ihr müsst die Aussage von eben nur ein bisschen umformulieren.\n\nEr wirft euch einen neuen Zettel zu.",
  "Intro Cantor L08: Mapping defined on product §0 with diagonal":
@@ -1626,10 +1639,12 @@
  "Ihr bekommt eine große Runde Applaus.\n\nDanach werdet ihr verabschiedet.\nFür den Rückweg könnt ihr leider keine Transportkapsel benutzen.\nDie funktionieren nämlich nur in eine Richtung.\nZurück zum Raumschiff geht es also zu Fuß:\nerst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.",
  "Conclusion Cia L01":
  "**Du**: Das war ja nun nicht so schwer …  Wer die wohl gesendet hat?  Und warum?\n\n**Robo**:  Das war sicher eine Nachricht von Ritha …\n\nRobo schaut in die Ferne.\n\n**Robo**:  Ich glaube, sie wollte uns ermuntern, weiter zu fliegen.\n\n**Du**: Aber wohin?\n\n**Robo**:  Oh, schau mal, noch eine Nachricht:\n\n*Liebe Erdwesen,*\n\n*es war uns ein Vergnügen, euch kennenzulernen! Es tut uns aufrichtig leid, dass ihr euch in unser Formaloversum verirrt habt und nicht wieder nach Hause findet.  Aber wir haben noch eine gute Nachricht: Ihr seid nicht die einzigen! Fliegt nur rasch weiter zum Planeten Zulip. Dort werdet ihr viele weitere Erdwesen finden, die sich ins Formaloversum verirrt haben. Zulip ist groß, gewiss werdet auch ihr dort ein neues Zuhause finden.  Hier die Koordinaten:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*Mit den aufrichtigsten Grüßen*\n\n*– Eure Formalosophen*\n\n**Robo**:  Na dann – los!\n\n[Nicht wundern:  Wenn ihr den Koordinaten folgt, beschleunigt das Raumschiff auf Überlichtgeschwindigkeit und ihr verliert vorübergehend den Kontakt zum Server. Das macht aber nichts.  Ihr werdet sicher auf Zulip ankommen.]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**Robo**:  Vielen Dank für die Vorstellung!\n\n**Du**:  Aber schade, dass es so wenige Zuschauer gibt!\n\n**Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!",
- "Conclusion Cantor L10":
+ "Conclusion Cantor L11":
  "**Du**:  Ich weiß nicht, ob das wirklich einfacher war …",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**Robo**:  Das brauchen wir bestimmt gleich.  Ich speicher das mal als §0.",
  "Conclusion Cantor L09 - 2": "**Cantor**:  Bravo!",
  "Conclusion Cantor L08":
  "**Cantor**:  Sehr schön!\n\nEr klatscht.\n\n**Du**:  Also ich verstehe gerade gar nichts mehr.",

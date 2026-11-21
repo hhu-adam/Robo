@@ -27,8 +27,8 @@ Conclusion ""
 open Set Function
 
 Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x } := by
-  --Hint "**Robo**: Denk daran, dass `mem_setOf` aus `Set` irgendwann hilfreich sein wird."
-  --Hint "Remind: `mem_setOf` from `Set` could be helpful"
+  --Hint "**Robo**: Denk daran, dass `mem_ofPred` aus `Set` irgendwann hilfreich sein wird."
+  --Hint "Remind: `mem_ofPred` from `Set` could be helpful"
   /-
   Hint "**Du**:  Ist also `Set A` die Potenzmenge von `A`?
 
@@ -79,11 +79,11 @@ Statement {A : Type} (f : A → Set A) : ¬ ∃ (a : A), f a = { x | x ∉ f x }
     suffices : a ∉ f a
     · contradiction
     rw [ha] at h₁
-    simp at h₁ --or: rw [mem_setOf] at h₁
+    simp at h₁ --or: rw [mem_ofPred_eq] at h₁
     assumption
   · apply h₁
     rw [ha]
-    simp --or: rw [mem_setOf]
+    simp --or: rw [mem_ofPred_eq]
     assumption
 
 TheoremTab "Set"

@@ -79,4 +79,4 @@ can help restructure existing worlds, see the
 
 # Technical support
 
-In case of issues with our server at `adam.math.hhu.de`, please send an email to <a href="mailto:matvey.lorkish@hhu.de?subject=Lean4Game: <Your%20Question>">this address</a>.
+In case of issues with our server at `adam.math.hhu.de`, please send an email to <a href="mailto:adam@math.hhu.de?subject=leangame: <Your%20Question>">this address</a>.

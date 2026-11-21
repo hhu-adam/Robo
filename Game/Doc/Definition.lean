@@ -176,7 +176,7 @@ consisting of all elements that satisfy the predicate.  For example,
 is the set of even natural numbers.
 You can simplify the statement `a ∈ { a : T | P a }`, using `simp`, to `P a` .
 -/
-DefinitionDoc setOf as "{·|·}" in "Set"
+DefinitionDoc Set.ofPred as "{·|·}" in "Set"
 
 /--
 For two subsets `(A B : Set T)`, `A\B` is the difference between `A` and `B`,
