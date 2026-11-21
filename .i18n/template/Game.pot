@@ -1,7 +1,7 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.35.0\n"
+msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-10\n"
+"POT-Creation-Date: 2026-11-21\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -2709,35 +2709,21 @@ msgid "Remind about §0"
 msgstr ""
 
 #. §0: `Odd`
-#. §1: `not_odd_iff_even`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
-#: Game/Levels/Quantus/L09_PushNeg.lean:38
-msgid "Go back, keep §0 and try §1"
+msgid "Go back, keep §0."
 msgstr ""
 
 #. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid "Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-
-#. §0: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:58
-#: Game/Levels/Quantus/L09_PushNeg.lean:62
-#: Game/Levels/Quantus/L09_PushNeg.lean:65
-msgid "Now you can apply §0"
+#: Game/Levels/Quantus/L09_PushNeg.lean:30
+msgid "Try §0 with a number."
 msgstr ""
 
 #. §0: `push Not`
-#: Game/Levels/Quantus/L09_PushNeg.lean:74
+#: Game/Levels/Quantus/L09_PushNeg.lean:39
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr ""
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:97
+#: Game/Levels/Quantus/L09_PushNeg.lean:62
 msgid "Conclusion Quantus L09"
 msgstr ""
 
@@ -3881,56 +3867,106 @@ msgstr ""
 #. §1: `Set A`
 #. §2: `A → Prop`
 #. §3: `S : Set A`
-#. §4: `A → Prop`
-#. §5: `a : A`
-#. §6: `a ∈ S`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:23
-msgid "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-"§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#. §4: `a : A`
+#. §5: `a ∈ S`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:29
+msgid "Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
+"surjective mappings §0, by interpreting §1 as §2: a subset §3\n"
+"can be identified with the map A → Prop sending §4 to §5. Here is an intermediate step."
 msgstr ""
 
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:31
-msgid "Conclusion Cantor L10"
+#. §0: `p : A → Prop`
+#. §1: `intro`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:41
+msgid "[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
+"Start with §1."
+msgstr ""
+
+#. §0: `«{f}»`
+#. §1: `«{A}»`
+#. §2: `«{p}»`
+#. §3: `let`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:48
+msgid "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
+"§1. Introduce a name for the subset corresponding to §2 with §3."
+msgstr ""
+
+#. §0: `{ x | «{p}» x }`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:53
+msgid "[Hint jx4gv] Consider the set §0."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:61
+msgid "[Hint mr4el] Use §0 in combination with §1."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `«{S}»`
+#. §2: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:70
+msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
+msgstr ""
+
+#. §0: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:78
+msgid "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
+"§0."
+msgstr ""
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:12
+msgid "Intro Cantor L11"
+msgstr ""
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
+msgid "Conclusion Cantor L11"
 msgstr ""
 
 #. §0: `cantor_diagonal`
-#. §1: `apply cantor_diagonal at «{hf}»`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:46
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:57
-msgid "Use §0 as e.g. §1"
+#. §1: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:35
+msgid "[Hint d92p1] Use §0 now? First translate with\n"
+"§1."
 msgstr ""
 
 #. §0: `cantor_diagonal`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:65
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:72
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
 msgid "[Hint mhjv] Try §0"
 msgstr ""
 
+#. §0: `«{hf}»`
+#. §1: `«{A}» → «{A}» → Prop`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:56
+msgid "[Hint u9e76] Now §0 is about a map §1."
+msgstr ""
+
 #. §0: `¬ .`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:79
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:62
 msgid "Does §0 have no fixed points?"
 msgstr ""
 
 #. §0: `ℕ → ℕ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:25
-msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:25
+msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:36
-msgid "Conclusion Cantor L11"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:36
+msgid "Conclusion Cantor L12"
 msgstr ""
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:52
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:52
 msgid "The name of mapping §0 is §1"
 msgstr ""
 
-#: Game/Levels/Cantor.lean:19
+#: Game/Levels/Cantor.lean:20
 msgid "Cantor"
 msgstr ""
 
-#: Game/Levels/Cantor.lean:39
+#: Game/Levels/Cantor.lean:40
 msgid "Intro Cantor"
 msgstr ""
 
