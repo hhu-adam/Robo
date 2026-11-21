@@ -146,14 +146,26 @@
  "**Scribble**: For this last step, you can use §0. Of course, you could also do all of this with §1, but I'm beginning to enjoy the small steps.",
  "[Hint wdpf] Try §0":
  "**Scribble**: This looks good. But trust me, the case distinction is totally unnecessary. You could also just use §0. Give it a go!",
+ "[Hint u9e76] Now §0 is about a map §1.":
+ "**Scribble**: Now §0 is a statement about a map §1.",
  "[Hint rxjt] Try §0":
  "**Scribble**: First swap the two sides of the equation with §0.",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**You**: Surjective means that every map §0 has a preimage. So I'll start with §1.",
  "[Hint plnk] Try §0":
  "**Scribble**: Whatever you say. Then it’s probably best to try §0.",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**Scribble**: Some combination of §0 and §1 should finish this off now.",
  "[Hint mhjv] Try §0":
  "**Cantor**: No, no! We wanted to use my beautiful theorem §0!",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**Scribble**: The surjectivity of §0 gives you preimages of *subsets* of §1. Maybe we should use §3 to give a name to the subset corresponding to §2?",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**Scribble**: §0 is §1 by definition. §2 would know this, but let's proceed with §3.",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**Scribble**: Some combination of §0, §1 and §2 should finish this off now.",
+ "[Hint jx4gv] Consider the set §0.":
+ "**Scribble**: That would be the set §0, right?",
  "[Hint jrxb] Try §0":
  "**Scribble**: Best also §0, so you understand what’s going on.",
  "[Hint hwzk] Try §0":
@@ -163,6 +175,8 @@
  "[Hint fzwc] Try §0": "**Scribble**: §0 according to my hard drive.",
  "[Hint dkmw] Remind of previous result":
  "**Scribble**: We've already seen this.",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**You**: So here we use §0 now?\n\n**Scribble**: First we translate, with §1.",
  "[Hint cqvs] Try §0": "**Scribble**: This time you can just use §0 again.",
  "[Hint bsjn] Try §0": "**Scribble**: Now you can use this with §0.",
  "[Hint bpwn] Explain §0 defined as §1. Try §2 | §3":
@@ -254,8 +268,6 @@
  "**Scribble**: Remember that we have already proven §0.",
  "Use §0 as goal is in assumptions":
  "**Scribble**: It's just like before: the statement that needs to be proven is already one of the assumptions. So §0 will work again.",
- "Use §0 as e.g. §1":
- "**You**: So here we use §0? \n\n**Scribble**: Probably.  For example with §1.",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**You**: §0? \n\n**Scribble**: That could work. \nAnd you'll probably need the lemma §1: \nFor §2 with §3, the lemma concludes §4.",
  "Use §0 again": "**Scribble**: And now §0 again.",
@@ -944,10 +956,11 @@
  "The planet you are now approaching has two buildings: a narrow skyscraper and a second, wider building with slightly fewer floors. The buildings are connected by a strange system of tubes. At the top of the skyscraper, you can see a landing pad. You head for it.\n\nAs you disembark, a formalosopher comes running towards you. He waves his arms wildly. \n\n**Porter**: No, no, you're expected down there. He lowers his arms.\n\n**Porter**: Well, never mind. Good afternoon, first of all! I'm just one of the porters. You are expected by a large delegation, but over there, in the office building, of course. These here are just our sleeping quarters. Come on, I'll take you over. It won't take long.\n\nHe leads you down one floor and asks Scribble and you to get into two single-seat “transport capsules”.\n\n**Porter**: We'll just slide over in these capsules. Hope you enjoy it.  We do have some collisions from time to time, but right now the coast is clear. Everyone else is already over on the other side, waiting for you!",
  "Intro Ciao":
  "**You**: It is possible that we've now visited *all* the planets in this corner of the Leaniverse? \n\n**Scribble**: Looks like it.\n\n**You**: So what do we do now? \n\n**Scribble:** No idea. \n\nAfter a while …\n\n**Scribble:** Hey, look, we've received a message.",
- "Intro Cantor L11: Show that set of mapping §0 is uncountable":
+ "Intro Cantor L12: Show that set of mapping §0 is uncountable":
  "**Cantor**:  Easier? Who said easier?  But certainly more elegant! \n\nHe does three backflips and then comes back with another piece of paper for you.\n\n**Cantor**: Look! Now you can use the same argument to show that the set of sequences of natural numbers, i.e. the set of maps §0, is uncountable! \n\nAnd then in a whisper: \n\n**Cantor**: There are uncountably many seats in this tent!",
- "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
- "**Cantor**: And now you take this beautiful diagonal argument and show once again that there are no surjections §0! You just need to interpret §1 as §2!\n\n**You**: What? \n\n**Scribble**: A subset §3 can be identified with the map §4 that maps §5 onto the statement §6. In fact, for formalosophers, the subset and this map are one and the same.",
+ "Intro Cantor L11": "**Cantor**: Is everything clear now?",
+ "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
+ "**Cantor**: And now you take this beautiful diagonal argument and show once again that there are no surjections §0! You just need to interpret §1 as §2!\n\n**You**: What?\n\n**Scribble**: A subset §3 can be identified with the map §2 that maps §4 onto the statement §5.\n\n**Cantor**: Exactamente! Here, let me give you an intermediate step.",
  "Intro Cantor L09 - 2":
  "**Cantor**: Now!  Attention!  Everything will become clear. Here's the key! \nYou just need to rephrase the previous statement slightly. He throws down another piece of paper.",
  "Intro Cantor L08: Mapping defined on product §0 with diagonal":
@@ -1382,9 +1395,11 @@
  "You receive a round of applause. \n\nThen you are bid farewell. Unfortunately, you cannot use a transport capsule for the return journey. These only work in one direction. So you have to walk back to the spaceship: first down the stairs, then outside from the office building to the sleeping quarters, and finally up to the roof in a normal lift.",
  "Conclusion Cia L01":
  "**You**: That wasn't so difficult … I wonder who sent it? And why? \n\n**Scribble**: It was definitely a message from Ritha … Scribble gazes into the distance. \n\n**Scribble**: I think she wanted to encourage us to travel further.\n\n**You**: But where to? \n\n**Scribble**: Oh, look, another message: \n\n*Dear Earthlings,* \n\n*It was a pleasure to meet you! We are truly sorry that you have strayed into our Leaniverse and cannot find your way home. But we have some good news: you are not the only ones! \nJust fly on to the planet Zulip, where you will find many other Earthlings who have strayed into the Leaniverse. \nZulip is large.  You will surely find a place to stay and feel comfortable there. Here are the coordinates:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*With our sincerest regards* \n\n*– Your Formalosophers* \n\n**Scribble**: Well then – let's go! \n\n[Technical note: When you follow the coordinates, the spaceship will accelerate to faster-than-light speed and you will temporarily lose contact with the server. But that's okay. You will arrive safely on Zulip.]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**Scribble**: Thank you very much for this performance! \n\n**You**: But it's a shame there are so few spectators! \n\n**Cantor**: Magic isn't for everyone. Have a good journey!",
- "Conclusion Cantor L10": "**You**: I'm not sure this was much easier …",
+ "Conclusion Cantor L11": "**You**: I'm not sure this was much easier …",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**Scribble**: We'll surely need this in a moment. Let me save it as §0.",
  "Conclusion Cantor L09 - 2": "**Cantor**: Well done!",
  "Conclusion Cantor L08":
  "**Cantor**: Very nice! \n\nHe claps. \n\n**You**: Well, I'm completely lost.",
