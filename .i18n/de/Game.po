@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21\n"
+"POT-Creation-Date: 2026-11-23\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -101,7 +101,7 @@ msgid ""
 msgstr ""
 "§0 bedeutet, dass §1 ein Rechtsinverses besitzt.\n"
 "\n"
-"§2 bedeutet, dass §3 ein Linkssinverses besitzt."
+"§2 bedeutet, dass §3 ein Linksinverses besitzt."
 
 #. §0: `f : A → A`
 #. §1: `a : A`
@@ -1119,7 +1119,7 @@ msgstr ""
 #: Game/Doc/Definition.lean:529
 msgid "Useful tactics for equality are: §0, §1, §2"
 msgstr ""
-"Nützliche Taktiken für Gleicheit sind: \n"
+"Nützliche Taktiken für Gleichheit sind: \n"
 "* §0\n"
 "* §1\n"
 "* §2"
@@ -2018,7 +2018,7 @@ msgstr ""
 "Anschließend musst du zuerst dieses Zwischenresultat beweisen, bevor du den eigentlichen Beweis fortsetzen kannst.\n"
 "\n"
 "## Freunde und Verwandte\n"
-"§1 funktioniert genauso, außer, dass du zunächst den Hauptbeweis forsetzen kannst und erst ganz am Ende dein Zwischenresultat beweisen musst."
+"§1 funktioniert genauso, außer dass du zunächst den Hauptbeweis fortsetzen kannst und erst ganz am Ende dein Zwischenresultat beweisen musst."
 
 #. §0: `if … then … else`
 #. §1: `fun x ↦ if 0 ≤ x then x else -x`
@@ -2626,7 +2626,7 @@ msgstr ""
 "Danach beweist du §2.\n"
 "\n"
 "## Freunde und Verwandte\n"
-"§3 funktioniert genauso, außer, dass du zunächst §4 beweisen musst und erst dann den Hauptbeweis fortsetzen kannst."
+"§3 funktioniert genauso, außer dass du zunächst §4 beweisen musst und erst dann den Hauptbeweis fortsetzen kannst."
 
 #. §0: `symm`
 #. §1: `=`
@@ -3277,7 +3277,7 @@ msgstr ""
 "\n"
 "**Du**: Ah ich sehe, also §0!\n"
 "\n"
-"**Du**: Ich glaube den ganzen Zircus hier langsam nicht mehr: Zuerst ein „Und“ im Ziel, dann „Und“ in der Annahme, dann „Oder“ im Ziel und jetzt „Oder“ in der Annahme. Die haben sich doch abgesprochen!\n"
+"**Du**: Ich glaube den ganzen Zirkus hier langsam nicht mehr: Zuerst ein „Und“ im Ziel, dann „Und“ in der Annahme, dann „Oder“ im Ziel und jetzt „Oder“ in der Annahme. Die haben sich doch abgesprochen!\n"
 "\n"
 "**Robo**: Lass ihnen doch ihren Spaß. Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten weiterfliegen.\n"
 "\n"
@@ -3450,17 +3450,17 @@ msgstr "Logo"
 msgid "Intro Logo"
 msgstr ""
 "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit bist du aus Versehen in ein Paralleluniversum gestolpert.\n"
-"Wie es aussieht, gibt es kein zurück.\n"
-"Richte dich besser darauf ein, hier bleiben und dich zurechtzufinden zu müssen.\n"
+"Wie es aussieht, gibt es kein Zurück.\n"
+"Richte dich besser darauf ein, hier bleiben und dich zurechtfinden zu müssen.\n"
 "\n"
 "Wie es aussieht, gibt es hier viele nette kleine Planeten.\n"
 "Alle bewohnbar, und bis zu sieben Sonnenuntergänge täglich inklusive.\n"
 "Nur werden sie allesamt von Formalosophen bewohnt, seltsamen Wesen mit ausgefallenen mathematischen Obsessionen.\n"
 "Und dummerweise hat sich herumgesprochen, dass du in deinem früheren Universum Mathematiker warst.\n"
-"du wirst hier keine Ruhe finden, solange du nicht lernst, ihren unablässigen Wissensdurst zu stillen.\n"
+"Du wirst hier keine Ruhe finden, solange du nicht lernst, ihren unablässigen Wissensdurst zu stillen.\n"
 "\n"
 "Es gibt nur zwei Schwierigkeiten:\n"
-"Erstens haben die Formalosophen allem Anschein nach überhaupt kein tieferes mathematisches Verständnis, und zweitens kommunizieren Sie über Mathematik exklusiv in einem dir fremden Dialekt, den sie Leansch [liːnʃ] nennen.\n"
+"Erstens haben die Formalosophen allem Anschein nach überhaupt kein tieferes mathematisches Verständnis, und zweitens kommunizieren sie über Mathematik exklusiv in einem dir fremden Dialekt, den sie Leansch [liːnʃ] nennen.\n"
 "\n"
 "Zum Glück hat Robo mit dir das Universum gewechselt.\n"
 "Robo, das ist dein kleiner SmartElf.\n"
@@ -3702,7 +3702,7 @@ msgstr "**Robo**: Ehm …"
 msgid "Conclusion Implis L05"
 msgstr ""
 "Der Operationsleiter bedankt sich wieder artig.\n"
-"Er drückt wieder auf ein paar Knöpfe, und mit einem lauten Ratteln springen mehrere Förderbänder gleichzeitig wieder an."
+"Er drückt wieder auf ein paar Knöpfe, und mit einem lauten Rattern springen mehrere Förderbänder gleichzeitig wieder an."
 
 #: Game/Levels/Implis/L06_Iff.lean:17
 msgid "Intro Implis L06"
@@ -3894,7 +3894,7 @@ msgid "Intro Implis L11: Prove without using §0 or §1"
 msgstr ""
 "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen. Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis, aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n"
 "\n"
-"Er holt tief Luft und seuft.\n"
+"Er holt tief Luft und seufzt.\n"
 "\n"
 "**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint ihr, ihr schafft das?"
 
@@ -4063,7 +4063,7 @@ msgstr ""
 "\n"
 "| Taktik           | Beispiel                                                          |\n"
 "|:---------------- |:----------------------------------------------------------------- |\n"
-"| §2               | holt linke Seite einer Implikations im Beweisziel in die Annahmen |\n"
+"| §2               | holt linke Seite einer Implikation im Beweisziel in die Annahmen |\n"
 "| §3               | Umkehrung von §4                                                  |\n"
 "| §5               | wendet Implikation “rückwärts” auf das Beweisziel an              |\n"
 "| §6               | wendet Implikation “vorwärts” auf eine Annahme an                 |\n"
@@ -4422,7 +4422,7 @@ msgstr "Nach längerem Durcheinander findet folgende Aufgabe aus der Menge zu eu
 #: Game/Levels/Quantus/L07_Forall.lean:19
 msgid "Explain §0 i.e. §1 and approch to prove §2  by §3"
 msgstr ""
-"**Du**: Das §0 heisst sicher \"für alle\".\n"
+"**Du**: Das §0 heißt sicher \"für alle\".\n"
 "\n"
 "**Robo**: Und man schreibt §1. Ein §2 im Beweisziel kannst du wie eine Implikation mit §3 angehen."
 
@@ -4656,7 +4656,7 @@ msgstr "Quantus"
 #: Game/Levels/Quantus.lean:59
 msgid "Intro Quantus"
 msgstr ""
-"Auf Quantus erwartet euch bereits eine große Ansammlung von Formalosopheninnen. Sie reden alle wild durcheinander und ihr habt Probleme, euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n"
+"Auf Quantus erwartet euch bereits eine große Ansammlung von Formalosophinnen. Sie reden alle wild durcheinander und ihr habt Probleme, euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n"
 "\n"
 "**Du**: Wir haben einen Brief für eure Königin. Könntet ihr uns zu eurer Königin führen?\n"
 "\n"
@@ -4682,7 +4682,7 @@ msgstr ""
 "\n"
 "**Du** *(in die Menge)*: Wir haben euch ein Päckchen von Implis gebracht. Hier, das ist für euch.\n"
 "\n"
-"Robo wirft es in die Menge, und die Formalosophinnen reißen es auf. Tatsächlich befindet sich darin nur eine einziges Stück Papier. Nach wenigen Minuten liegt es wieder bei euch. Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht."
+"Robo wirft es in die Menge, und die Formalosophinnen reißen es auf. Tatsächlich befindet sich darin nur ein einziges Stück Papier. Nach wenigen Minuten liegt es wieder bei euch. Und die Formalosophinnen schauen alle neugierig, wie ihr damit umgeht."
 
 #: Game/Levels/Saturn/L01_Rewrite_equality.lean:7
 msgid "Intro Saturn L01"
@@ -4806,7 +4806,7 @@ msgstr ""
 "\n"
 "**Du**: So so …\n"
 "\n"
-"Der anonyme möchte Funker wissen, ob ihr bereit seid für das End Game, oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
+"Der anonyme Funker möchte wissen, ob ihr bereit seid für das End Game, oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n"
 "\n"
 "„Bereit” funkt Robo zurück."
 
@@ -4844,7 +4844,7 @@ msgid "Conclusion Saturn L06"
 msgstr ""
 "„Bestanden“ heißt es kurz und knapp vom anonymen Funker.\n"
 "\n"
-"\"**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\n"
+"**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\n"
 "Nichts wie weg!"
 
 #: Game/Levels/Saturn.lean:13
@@ -4862,7 +4862,7 @@ msgstr ""
 "\n"
 "**Du**:  Oder beides.  Ich will da wirklich nicht landen!\n"
 "\n"
-"**Robo**:  Ja, ja, ich gebe mir ja schon alle Mühe.  Und schau mal, wie viel Müll hier bereits orbitet! Das beste, was wir momentan tun können, ist mit dem Strom zu fliegen."
+"**Robo**:  Ja, ja, ich gebe mir ja schon alle Mühe.  Und schau mal, wie viel Müll hier bereits orbitet! Das Beste, was wir momentan tun können, ist mit dem Strom zu fliegen."
 
 #: Game/Levels/Spinoza/L01_Have.lean:14
 msgid "Intro Spinoza L01"
@@ -4922,9 +4922,9 @@ msgid ""
 "Instead of §0, §1 can be used. After §2, you have to show how to\n"
 "prove goal by §3 before proving §4 itself."
 msgstr ""
-"**Robo**: Ich weiß was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.\n"
+"**Robo**: Ich weiß, was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer dass dann die beiden Beweisziele vertauscht sind.\n"
 "\n"
-"**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschliesst, bevor ich §4 beweise?\n"
+"**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschließt, bevor ich §4 beweise?\n"
 "\n"
 "**Robo**: Genau!"
 
@@ -5103,7 +5103,7 @@ msgid ""
 "§0, §1, §2, §3, §4, §5 (useful when applying\n"
 "§6 afterwards)."
 msgstr ""
-"**Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.\n"
+"**Robo**: Bravo! Hier ein Überblick, was uns Benedictus gezeigt hat.\n"
 "\n"
 "\n"
 "| **Taktik**      | **Zweck**                                              |\n"
@@ -5191,7 +5191,7 @@ msgid ""
 msgstr ""
 "**Du**: Die Annahme sieht wie eine verklausulierte Variante von §0 aus. Das kann ja so oder so keine große Summe werden.\n"
 "\n"
-"**Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten. Ich schlage vor: §1.  Das Summezeichen schreibst du als §2."
+"**Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten. Ich schlage vor: §1.  Das Summenzeichen schreibst du als §2."
 
 #. §0: `apply sum_congr`
 #: Game/Levels/Babylon/L03_sum_congr.lean:38
@@ -5295,7 +5295,7 @@ msgstr ""
 "**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n"
 "\n"
 "**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.\n"
-"Zurerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n"
+"Zuerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n"
 "§6\n"
 "Und danach willst du vermutlich\n"
 "§7\n"
@@ -5307,7 +5307,7 @@ msgstr ""
 msgid "Try §0 from the other side or §1 beforehand"
 msgstr ""
 "**Robo**:  Das sieht irgendwie falsch aus …\n"
-"  Vielleicht solltest du §0 lieber rückwarts anwenden.\n"
+"  Vielleicht solltest du §0 lieber rückwärts anwenden.\n"
 "  Oder vor diesem Schritt mit §1 die Gleichung umdrehen."
 
 #. §0: `Even.neg_pow`
@@ -5357,7 +5357,7 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"Gabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n"
+"Gabs da nicht diese Geschichte mit dem kleinen Gauß, der da ein ganz einfaches Argument für hatte?\n"
 "\n"
 "**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n"
 "\n"
@@ -5379,7 +5379,7 @@ msgstr ""
 #. §3: `insert_Icc_right_eq_Icc_add_one`
 #: Game/Levels/Babylon/L06_Induction_sum_insert__arithmetic_sum.lean:68
 msgid "Divide interval §0 into §1 and §2 by using §3"
-msgstr "**Robo**: Jetzt willst du das Interval §0, über das summiert wird, aufspalten in §1 und §2. Dazu könntest du das Lemma §3 verwenden, das wir schon gesehen hatten."
+msgstr "**Robo**: Jetzt willst du das Intervall §0, über das summiert wird, aufspalten in §1 und §2. Dazu könntest du das Lemma §3 verwenden, das wir schon gesehen hatten."
 
 #. §0: `sum_insert`
 #. §1: $[0,«{d}»]$
@@ -5495,7 +5495,7 @@ msgstr "Babylon"
 #: Game/Levels/Babylon.lean:41
 msgid "Intro Babylon"
 msgstr ""
-"Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme gestapelt sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.\n"
+"Ihr erreicht einen Planeten, auf dem unzählige Steinplatten zu bizarr hohen Türmen gestapelt sind. Die ganze Landschaft wirkt wie ein großes Puzzle, in dem jede Platte fein säuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.\n"
 "\n"
 "**Babylonier**: Willkommen auf *Babylon*!\n"
 "\n"
@@ -5831,11 +5831,11 @@ msgstr ""
 "\n"
 "Du runzelst die Stirn.\n"
 "\n"
-"**Robo**: Doch doch, das hatte wir uns auf Epo schon einmal überlegt! Du kannst §6 entweder als §7 angewendet auf §8 oder als §9 angewendet auf §10 interpretieren.\n"
+"**Robo**: Doch doch, das hatten wir uns auf Epo schon einmal überlegt! Du kannst §6 entweder als §7 angewendet auf §8 oder als §9 angewendet auf §10 interpretieren.\n"
 "\n"
 "**Cantor**:  Ganz genau!  Und das Element §11 liegt auf der Diagonale!\n"
 "\n"
-"**Robo**: Die Annahme §12 ist andereseits so formuliert, dass die Interpretation von §13 als Abbildung §14 naheliegender ist."
+"**Robo**: Die Annahme §12 ist andererseits so formuliert, dass die Interpretation von §13 als Abbildung §14 naheliegender ist."
 
 #. §0: `f a a`
 #. §1: `s f a a`
@@ -6008,7 +6008,7 @@ msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n"
 "\n"
-"Er macht drei Saltos rückwarts und kommt dann mit einem weiteren Zettel für euch zurück.\n"
+"Er macht drei Saltos rückwärts und kommt dann mit einem weiteren Zettel für euch zurück.\n"
 "\n"
 "**Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen, dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen §0, überabzählbar ist!\n"
 "\n"
@@ -6192,7 +6192,7 @@ msgstr "**Du**:  Sieht auch richtig aus."
 msgid "Intro Robotswana L04"
 msgstr ""
 "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen Fläche heruntergetrampelt ist.\n"
-"Spuren führen kreuz und queer und in verschiedene Richtungen weg.\n"
+"Spuren führen kreuz und quer und in verschiedene Richtungen weg.\n"
 "\n"
 "Ein bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\n"
 "Die meisten sind leer oder unleserlich, aber eines kannst du entziffern."
@@ -6276,7 +6276,7 @@ msgstr ""
 
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:27
 msgid "Conclusion Robotswana L05"
-msgstr "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
+msgstr "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!"
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `1`
@@ -6287,7 +6287,7 @@ msgstr "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich f
 msgid ""
 "Try §0 on §1 with §2 to §3e§4rite\n"
 "goal."
-msgstr "**Robo**:  Wie gesagt, ich denke, du kannst gleich mit §0 anfangen, angewendet auf die Einheitsmatrix §1 rechts vom Gleichheitszeigen. Du willst also mit der Gleichung §2 das Beweisziel §3e§4riten."
+msgstr "**Robo**:  Wie gesagt, ich denke, du kannst gleich mit §0 anfangen, angewendet auf die Einheitsmatrix §1 rechts vom Gleichheitszeichen. Du willst also mit der Gleichung §2 das Beweisziel §3e§4riten."
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `matrix_eq_sum_single`
@@ -6444,7 +6444,7 @@ msgstr ""
 "  Ich müsste überhaupt erst einmal eine Multiplikation haben.\n"
 "\n"
 "**Robo**: Du müsstest ein Matrizenprodukt §1 finden, für das §2 gilt.\n"
-"  Dann könnstest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu erhalten, bei denen §6 vielleicht anwendbar ist."
+"  Dann könntest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu erhalten, bei denen §6 vielleicht anwendbar ist."
 
 #. §0: `E i k = (E i j) * (E j k)`
 #: Game/Levels/Robotswana/L06_EBasisEqOnDiag.lean:68
@@ -7207,9 +7207,9 @@ msgstr ""
 #: Game/Levels/Prado/L08_exists_prime_and_dvd.lean:55
 msgid "Conclusion Prado L08"
 msgstr ""
-"**Guino**: Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrlich Treppe? Wir gehen hoch!\n"
+"**Guino**: Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrliche Treppe? Wir gehen hoch!\n"
 "\n"
-"**Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen. Es gibt genau eine gerade …\n"
+"**Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formulieren, die wir Guino zeigen wollen. Es gibt genau eine gerade …\n"
 "\n"
 "**Robo**:  Halt!  „Genau eine“ hatten wir noch nicht."
 
@@ -7269,7 +7269,7 @@ msgstr ""
 #: Game/Levels/Prado/L10_EvenPrime.lean:19
 msgid "Intro Prado L10"
 msgstr ""
-"Inzwischen seid ihr auf der Dachterasse angekommen. Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären. Die Aussicht ist nicht schlecht.\n"
+"Inzwischen seid ihr auf der Dachterrasse angekommen. Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären. Die Aussicht ist nicht schlecht.\n"
 "\n"
 "**Robo** *(zu dir)*:  Ich glaube, wir sind so weit."
 
@@ -7347,7 +7347,7 @@ msgid ""
 msgstr ""
 "**Robo**: Diese Zeile sieht auch sehr vernünftig aus: wenn eine Zahl §0 einen Faktor §1 eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.\n"
 "\n"
-"**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n"
+"**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lesbar.\n"
 "\n"
 "**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst. Wir fangen natürlich mit §2 an."
 
@@ -7383,7 +7383,7 @@ msgstr "**Robo**:  Der Rest sollte jetzt einfach sein."
 msgid "Intro Euklid L03"
 msgstr ""
 "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.\n"
-"Robo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent."
+"Robo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindet."
 
 #. §0: `let all_primes := hf.toFinset`
 #. §1: `Finset`
@@ -7462,7 +7462,7 @@ msgstr ""
 #: Game/Levels/Euklid/L03_Finite_toFinset__prod_insert2.lean:114
 msgid "Conclusion Euklid L03"
 msgstr ""
-"Ihr schlagt einen Gang ein, indem gleich mehere Bücher auf dem Boden liegen. Aber keines ist aufgeschlagen. An der nächsten Kreuzung zweigt wieder einen Gang ab mit mehreren Büchern auf dem Boden.\n"
+"Ihr schlagt einen Gang ein, in dem gleich mehrere Bücher auf dem Boden liegen. Aber keines ist aufgeschlagen. An der nächsten Kreuzung zweigt wieder ein Gang ab mit mehreren Büchern auf dem Boden.\n"
 "\n"
 "**Du**:  Ist das vielleicht eine Spur?\n"
 "\n"
@@ -7636,7 +7636,7 @@ msgid "Conclusion Vieta L01: explain ambiguity of §0"
 msgstr ""
 "**Du**: Sag mal, war §0 nicht eben noch eine Implikation?\n"
 "\n"
-"**Robo**: Ja, richtig. Die benuzten hier das gleiche Zeichen für beides."
+"**Robo**: Ja, richtig. Die benutzen hier das gleiche Zeichen für beides."
 
 #: Game/Levels/Vieta/L02_Function.lean:15
 msgid "Intro Vieta L02"
@@ -7670,7 +7670,7 @@ msgstr ""
 "\n"
 "**Robo**: Na, dass sie erst einmal keinen Namen hat. Erst durch §2 erhält sie einen Namen.\n"
 "\n"
-"**Du**:  Ach so.  Ingesamt haben wir also die folgende Abbildung, ja?\n"
+"**Du**:  Ach so.  Insgesamt haben wir also die folgende Abbildung, ja?\n"
 "\n"
 "§3\n"
 "\n"
@@ -7804,7 +7804,7 @@ msgstr ""
 "\n"
 "Er eilt davon, und ihr folgt, so schnell ihr könnt. Als ihr den Ort erreicht, an dem er schließlich stehen bleibt, bist du völlig außer Puste. Vieta lacht.\n"
 "\n"
-"**Vieta**:  Reine Vorsichtsnahme!  Ich muss ja auf meine Besucher achtgeben. So viel Besuch bekomme ich nicht!\n"
+"**Vieta**:  Reine Vorsichtsmaßnahme!  Ich muss ja auf meine Besucher achtgeben. So viel Besuch bekomme ich nicht!\n"
 "\n"
 "Er reicht euch das nächste Blatt."
 
@@ -7933,11 +7933,11 @@ msgid ""
 "Try §0. Given assumption §1 rewrite it via §2 to §3.\n"
 "§4 not applicable to more complex §5"
 msgstr ""
-"**Robo**: Und das ist ein Fall für §0. Hast du §1 als Annahme, kannst du sie mit §2 zu §3 umscheiben.\n"
+"**Robo**: Und das ist ein Fall für §0. Hast du §1 als Annahme, kannst du sie mit §2 zu §3 umschreiben.\n"
 "\n"
 "**Du**: Aber könnte ich hier nicht auch einfacher §4 benutzen?\n"
 "\n"
-"**Robo**: Ja gut, in diesem einem einfachen Beispiel schon. Wenn aber §5 ein komplizierterer Ausdruck ist und noch nicht exakt so im Beweisziel steht, dann nicht. Probiers mal, wie ich es gerade gesagt habe."
+"**Robo**: Ja gut, in diesem einen einfachen Beispiel schon. Wenn aber §5 ein komplizierterer Ausdruck ist und noch nicht exakt so im Beweisziel steht, dann nicht. Probiers mal, wie ich es gerade gesagt habe."
 
 #: Game/Levels/Vieta/L10_Surjective.lean:22
 msgid "Intro Vieta L10"
@@ -8033,14 +8033,14 @@ msgid "Explaination of §0: it can be read as §1, a mapping of §2 into the set
 msgstr ""
 "**Du**:  §0 … wie lese ich diese zwei Pfeile hintereinander?\n"
 "\n"
-"**Robo**: Du liest das als §1 – eine Abbildung von den natürlichen Zahlen §2 in die Menge §3 der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst."
+"**Robo**: Du liest das als §1 – eine Abbildung von den natürlichen Zahlen §2 in die Menge §3 der Abbildungen von A nach B.  Das wird übrigens auch klar, wenn du weiterliest, was du hier zeigen sollst."
 
 #. §0: `constructor`
 #. §1: `unfold Surjective`
 #. §2: `push Not`
 #: Game/Levels/Epo/L02_CurrySurjective.lean:26
 msgid "Try §0 | §1, §2"
-msgstr "**Robo**: Du könnstest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt."
+msgstr "**Robo**: Du könntest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt."
 
 #. §0: `ne_comm`
 #. §1: `ne_comm`
@@ -8402,7 +8402,7 @@ msgstr ""
 msgid ""
 "[Doc.Theorem] StrictMono.add\n"
 "if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
-msgstr "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton."
+msgstr "Sind §0 und §1 beide strikt monoton, so ist auch §2 strikt monoton."
 
 #. §0: `StrictMono.injective`
 #: Game/Levels/Mono/L06_StrictMono.lean:12
@@ -8414,7 +8414,7 @@ msgstr ""
 #. §0: `Injective f`
 #: Game/Levels/Mono/L06_StrictMono.lean:23
 msgid "Introduce all varaibles and assumptions from §0"
-msgstr "**Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus §0 einführen?"
+msgstr "**Robo**: Vielleicht erst einmal ganz klassisch alle Variablen und Annahmen aus §0 einführen?"
 
 #. §0: `lt_trichotomy`
 #: Game/Levels/Mono/L06_StrictMono.lean:30
@@ -8434,7 +8434,7 @@ msgid ""
 "not work for §2. Tackling this by case distinction e.g. §3 is unecessary as\n"
 "in Leanic §4 is in §5. It is simply defined as §6"
 msgstr ""
-"**Du**: Behauptet wird offenbar, dass die Abbildung §0 ein Linksinverses besitzt. Ich gebe also einfach die Abbildung §1 an … außer, dass das für §2 nicht funktioniert.\n"
+"**Du**: Behauptet wird offenbar, dass die Abbildung §0 ein Linksinverses besitzt. Ich gebe also einfach die Abbildung §1 an … außer dass das für §2 nicht funktioniert.\n"
 "\n"
 "**Robo**:  Du könntest ja mit §3 eine Fallunterscheidung machen. Aber tatsächlich brauchst du das gar nicht.  In Leansch liegt auch §4 in §5.\n"
 "\n"
@@ -8510,7 +8510,7 @@ msgstr "**Robo**:  Nun ja, du könntest mit §0 eine Fallunterscheidung machen, 
 #. §1: `obtain`
 #: Game/Levels/Mono/L10_Auxiliary.lean:47
 msgid "Known that there exists some element in §0. Try §1"
-msgstr "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „kontruierst“ du dir das einmal mit §1."
+msgstr "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „konstruierst“ du dir das einmal mit §1."
 
 #. §0: `Nonempty A`
 #: Game/Levels/Mono/L11_InjHasLeftInv.lean:27
@@ -8530,7 +8530,7 @@ msgid ""
 msgstr ""
 "**Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.\n"
 "\n"
-"**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: §0 Wenn du die hier hättest, könntest du vermutlich mit §1 das gesuchte Linksinverse wählen. Nur hat diese Aussage dummerweise keinen Namen. Vielleicht formulierest du sie noch einmal mit §2 selbst aus, und beweist sie auch noch einmal."
+"**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: §0 Wenn du die hier hättest, könntest du vermutlich mit §1 das gesuchte Linksinverse wählen. Nur hat diese Aussage dummerweise keinen Namen. Vielleicht formulierst du sie noch einmal mit §2 selbst aus, und beweist sie auch noch einmal."
 
 #: Game/Levels/Mono/L11_InjHasLeftInv.lean:84
 msgid "Remember proof"
@@ -8856,7 +8856,7 @@ msgstr ""
 
 #: Game/Levels/Iso/L01_Bijective.lean:13
 msgid "Intro Iso L01"
-msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
+msgstr "**Isosoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
 #. §0: `Bijective f`
 #. §1: `Injective f ∧ Surjective f`
@@ -8870,7 +8870,7 @@ msgstr ""
 #: Game/Levels/Iso/L01_Bijective.lean:47
 msgid "Conclusion Iso L01"
 msgstr ""
-"**Isososoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …\n"
+"**Isosoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …\n"
 "\n"
 "Er legt ein paar Blätter zur Seite."
 
@@ -8903,7 +8903,7 @@ msgstr "**Robo**: Teil doch erst einmal §0 mit §1 in §2 und §3 auf!"
 msgid ""
 "Surjectivity states that each §0 possesses a preimage §1.\n"
 "Try to construct a inverse mapping via §2"
-msgstr "**Robo**: Aus der Surjektivität weisst du, dass jedes §0 ein Urbild §1 hat. Kannst du daraus nicht mit §2 eine Umkehrabbildung konstruieren?"
+msgstr "**Robo**: Aus der Surjektivität weißt du, dass jedes §0 ein Urbild §1 hat. Kannst du daraus nicht mit §2 eine Umkehrabbildung konstruieren?"
 
 #. §0: `«{g}»`
 #. §1: `«{f}»`
@@ -9169,15 +9169,15 @@ msgstr ""
 "\n"
 "**Du**:  Links winken Leute!\n"
 "\n"
-"Also landet ihr links. Da Empfang ist aber eher verhalten.\n"
+"Also landet ihr links. Der Empfang ist aber eher verhalten.\n"
 "\n"
 "**Isosoph**:  Guten Tag! Das ist aber nicht die feine Art, hier mitten in der Menge zu landen! Dort drüben hatten wir doch extra einen Landeplatz markiert!\n"
 "\n"
-"**Robo**:  Entschluldigung!  Ich hatte die Symbolik nicht erkannt.\n"
+"**Robo**:  Entschuldigung!  Ich hatte die Symbolik nicht erkannt.\n"
 "\n"
 "**Isosoph**: Ist ja nochmal gut gegangen! Wir hatten schon gehört, dass ihr ein bisschen anders seid. Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n"
 "\n"
-"Wie sich heraussstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann. Ihr düst ein paar Mal hin und her."
+"Wie sich herausstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann. Ihr düst ein paar Mal hin und her."
 
 #: Game/Levels/Piazza/L01_Mem__Set.lean:15
 msgid "Intro Piazza L01"
@@ -9558,9 +9558,9 @@ msgstr "Piazza"
 #: Game/Levels/Piazza.lean:45
 msgid "Intro Piazza"
 msgstr ""
-"Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, vieles nicht. Aber alles ist fein säuberlich sotiert. Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern, offene Säcke mit kleinen, rosa Sternchen, usw.\n"
+"Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, vieles nicht. Aber alles ist fein säuberlich sortiert. Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern, offene Säcke mit kleinen, rosa Sternchen, usw.\n"
 "\n"
-"Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder zu verhalten – laufen euch fast über die Füße. Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n"
+"Ein paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder verhalten – laufen euch fast über die Füße. Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n"
 "\n"
 "**Fin**:  Was macht ihr denn hier?\n"
 "\n"
@@ -10723,23 +10723,45 @@ msgstr ""
 "\n"
 "**Robo**:  Hilft alles nix.  Ich hol mal unsere Taucherausrüstung."
 
-#. §0: `f`
-#. §1: `s`
-#. §2: ```
+#. §0: ```
 #. Shade f := {s : ℝ | ∃ t > s, f t > f s}
 #. Sun   f := {s : ℝ | ∀ t > s, f t ≤ f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:8
+#. §1: `f`
+#. §2: `s`
+#. §3: `Shade f`
+#. §4: `t`
+#. §5: `Sun f`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:9
 msgid ""
-"Intro Shade L01: the two kinds of points.\n"
+"Intro Rigi L01: the two kinds of points.\n"
 "\n"
-"Think of the graph of §0 lit by a sun shining from the right.  A point §1 lies in the *shade*\n"
-"if some later point rises above it, and it is *sunny* if nothing to its right ever gets higher:\n"
+"§0\n"
 "\n"
-"§2\n"
+"Think of the graph of §1 lit by a sun shining from the right.  A point §2 lies in the *shade*\n"
+"(in §3) if at some later point §4 the graph rises above it, otherwise it is *sunny* (in §5).\n"
 "\n"
 "These two conditions are negations of each other, and your first job is to prove exactly that."
 msgstr ""
+"**Robo**: Vanessa hat mir schon ganz viel erklärt gerade.\n"
+"Sie muss die Zeit des Sonnenaufgangs nutzen, um dieses Gebirge zu überqueren.\n"
+"Und weil es hier in der Sonne schön warm, aber im Schatten echt kalt ist, hat sie recht viel darüber nachgedacht, wo genau die Sonne scheint und wo nicht.\n"
+"Schau mal, wie sie das formalisiert hat:\n"
+"\n"
+"§0\n"
+"\n"
+"Du schaust dir an, was Robo dir auf einem Stück Papier (wo hat er das jetzt schon wieder her?) zeigt und ziehst die Augenbrauen hoch.\n"
+"\n"
+"**Du**:  Was ist denn §1?\n"
+"\n"
+"**Robo**:  Ganz einfach.  Die Sonne scheint von Osten, Vanessa muss nach Westen.\n"
+"§1 ist das Gebirgsprofil entlang der Ost-West-Achse, die sie fliegt.\n"
+"\n"
+"**Du**:  Verstehe.  Ein Punkt §2 liegt also im Schatten (in §3), wenn es irgendwo östlich einen Punkt §4 gibt, an dem das Profil höher ist.\n"
+"Ansonsten liegt er in der Sonne.\n"
+"\n"
+"**Robo**:  Genau.  Wobei deine Formulierung mit „ansonsten“ streng genommen nicht die Definition, sondern bereits dieses Lemma hier ist.\n"
+"Lass uns das doch mal eben beweisen."
 
 #. §0: `Shade f`
 #. §1: `f`
@@ -10749,12 +10771,16 @@ msgstr ""
 #. §5: ```
 #. Shade f := {s : ℝ | ∃ t > s, f t > f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:29
+#: Game/Levels/Rigi/L01_ShadeDef.lean:30
 msgid ""
 "§0 is the set of shade points of §1: those §2 for which there exists some\n"
 "§3 with §4.\n"
 "§5"
 msgstr ""
+"§0 besteht aus allen Schattenpunkten der Höhenfunktion §1,\n"
+"also aus allen Punkten §2, auf die ein weiter östlich liegender Punkt §3 mit §4 seinen Schatten wirft:\n"
+"\n"
+"§5"
 
 #. §0: `Sun f`
 #. §1: `f`
@@ -10764,88 +10790,95 @@ msgstr ""
 #. §5: ```
 #. Sun f := {s : ℝ | ∀ t > s, f t ≤ f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:37
+#: Game/Levels/Rigi/L01_ShadeDef.lean:38
 msgid ""
-"§0 is the set of sunny points of §1: those §2 with with §3 for all §4.\n"
+"§0 is the set of sunny points of §1: those §2 with §3 for all §4.\n"
 "§5"
 msgstr ""
+"§0 besteht aus allen Sonnenpunkten der Höhenfunktion §1,\n"
+"also aus allen Punkten §2, an denen der Berg mindestens so hoch wie an allen weiter östlich liegenden Punkten ist:\n"
+"\n"
+"§5"
 
-#: Game/Levels/Shade/L01_ShadeDef.lean:44
+#: Game/Levels/Rigi/L01_ShadeDef.lean:45
 msgid "Not being in the sun means lying in the shade."
-msgstr ""
+msgstr "Ein Punkt liegt genau dann nicht in der Sonne, wenn er im Schatten liegt."
 
-#. §0: `simp [Shade, Sun]`
-#. §1: `simp`
-#. §2: `∀`
-#: Game/Levels/Shade/L01_ShadeDef.lean:54
+#. §0: `simp`
+#. §1: `simp [Shade, Sun]`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:55
 msgid ""
-"Both sides are set-builder memberships. Unfold them with §0 and let\n"
-"§1 push the negation through the §2."
+"Both sides are set-builder memberships.\n"
+"Use §0, or more precisely §1."
 msgstr ""
-
-#. §0: `not_mem_Sun_iff_mem_Shade`
-#: Game/Levels/Shade/L01_ShadeDef.lean:60
-#, fuzzy
-msgid "Conclusion Shade L01: saved as §0."
-msgstr ""
-"**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?\n"
+"**Du**: Müsste doch eigentlich mit §0 klappen.\n"
 "\n"
-"**Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als §0 ab, falls wir es nochmals brauchen.\n"
-"\n"
-"Damit folgt ihr weiter der Spur."
+"**Robo**: Ja, aber du musst §0 die relevanten Definitionen übergeben.  Probier mal §1."
 
 #. §0: `simp`
 #. §1: `∃`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:8
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:9
 msgid ""
-"Intro Shade L02: the other direction.\n"
+"Intro Rigi L02: the other direction.\n"
 "\n"
 "The previous level said that failing to be sunny is the same as lying in the shade.  The mirror\n"
 "statement is just as useful: failing to lie in the shade is the same as being sunny.  It is proved\n"
 "the same way — unfold both sets and let §0 move the negation across the §1."
-msgstr ""
+msgstr "**Robo**:  Lass uns auch noch diese Variante festhalten."
 
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:17
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:18
 msgid "A point fails to lie in the shade exactly when it is a sunny point."
-msgstr ""
-
-#. §0: `simp [Shade, Sun]`
-#. §1: `∃`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:21
-msgid ""
-"Same recipe as last time: §0. This time the negation\n"
-"has to pass  through an §1."
-msgstr ""
+msgstr "Ein Punkt liegt genau dann nicht im Schatten, wenn er in der Sonne liegt."
 
 #. §0: `not_mem_Shade_iff_mem_Sun`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:27
-#, fuzzy
-msgid "Conclusion Shade L02: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:26
+msgid "Conclusion Rigi L02: saved as §0."
+msgstr ""
+"**Vanessa**:  Richtig.\n"
+"Du glaubst gar nicht, wie krass der Unterschied zwischen Licht und Schatten hier ist.\n"
+"Hier in der Sonne fühlst du dich wohl.\n"
+"Aber ein Schritt in den Schatten, und dir frieren die Zehen zusammen."
 
-#: Game/Levels/Shade/L03_MemSun.lean:9
-#, fuzzy
-msgid "Intro Shade L03"
-msgstr "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben."
+#: Game/Levels/Rigi/L03_MemSun.lean:10
+msgid "Intro Rigi L03"
+msgstr ""
+"**Vanessa**:  Ich kann jedenfalls nur in der Sonne krabbeln.\n"
+"Und das Gute ist, dass ich dabei nie Höhe verliere.\n"
+"\n"
+"**Robo**:  Ja, warte.  Das war … dieses Lemma."
 
 #. §0: `a`
-#. §1: `f x ≤ f a`
-#. §2: `x > a`
-#: Game/Levels/Shade/L03_MemSun.lean:12
-msgid "If §0 is a sunny point, then §1 for every §2."
-msgstr ""
+#. §1: `f a ≥ f x`
+#. §2: `x`
+#. §3: `x > a`
+#: Game/Levels/Rigi/L03_MemSun.lean:12
+msgid "If §0 is a sunny point, then §1 for every §2 with §3."
+msgstr "An einem Sonnenpunkt §0 ist der Berg mindestens so hoch wie an jedem weiter östlich liegenden Punkt §2."
 
 #. §0: `simp [Sun]`
-#: Game/Levels/Shade/L03_MemSun.lean:17
-#, fuzzy
+#: Game/Levels/Rigi/L03_MemSun.lean:17
 msgid "[Hint w4joj] Try §0."
-msgstr "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
+msgstr "**Robo**: Das ist eigentlich auch ganz `simp`el."
 
 #. §0: `mem_sun`
-#: Game/Levels/Shade/L03_MemSun.lean:21
-#, fuzzy
-msgid "Conclusion Shade L03: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+#: Game/Levels/Rigi/L03_MemSun.lean:22
+msgid "Conclusion Rigi L03: saved as §0."
+msgstr ""
+"**Vanessa**:  Ganz richtig.  Ich krabbel also einfach in der Sonne und arbeite mich langsam nach oben.\n"
+"\n"
+"**Du**:  Und was machst du, wenn du zu einem schattigen Bereich kommst?\n"
+"\n"
+"**Vanessa**:  Dann fliege ich so schnell ich kann über den Schatten hinüber und krabbele auf der anderen Seite weiter.  \n"
+"Soll ich dir das Geheimnis verraten, warum das so gut funktioniert?\n"
+"\n"
+"**Du**:  Ja, bitte.\n"
+"\n"
+"**Vanessa**:  Weil der Berg am westlichen Ufer des Schattens genau dieselbe Höhe hat wie am östlichen!\n"
+"Ich lande also garantiert wieder auf derselben Höhe.  Und dann kann ich weiter aufwärts krabbeln.\n"
+"\n"
+"**Du**:  Verstehe.  Prima.\n"
+"\n"
+"Du würdest jetzt gern noch ein bisschen den Blick genießen und dann weiterfliegen."
 
 #. §0: `b`
 #. §1: `f`
@@ -10855,9 +10888,9 @@ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
 #. ```
 #. §4: `f b < f c`
 #. §5: `c`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:8
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:9
 msgid ""
-"Intro Shade L04: introduce the working set.\n"
+"Intro Rigi L04: introduce the working set.\n"
 "\n"
 "Fix a point §0.  We study the set of points to the right of b at which §1\n"
 "rises above §2:\n"
@@ -10867,320 +10900,315 @@ msgid ""
 "Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming b is\n"
 "not a shadow point, §4, and §5 itself is a shadow point, you show the set is nonempty."
 msgstr ""
+"Vanessa seufzt.  Du wusstest gar nicht, dass Schmetterlinge so ein enttäuschtes Gesicht machen können.\n"
+"Robo stupst dich in die Seite und räuspert sich.\n"
+"\n"
+"**Robo**:  Bei uns bedeutet „verstehe“ nur so etwas wie „ich habe eine grobe Idee“.\n"
+"\n"
+"Du gibst dir einen Ruck.\n"
+"\n"
+"**Du**:  Ja, ja.  So war das nicht gemeint.  Erklärts mir doch bitte genauer.\n"
+"\n"
+"**Robo**:  Vanessa hat mir gerade schon verraten, dass wir auch über die „Schattierer“ eines Punktes nachdenken sollten.\n"
+"Für einen Punkt §0 betrachten wir also die Menge aller weiter östlich liegenden Punkte, die mindestens genauso hoch liegen:\n"
+"\n"
+"§3"
 
 #. §0: `Shaders f c`
 #. §1: `t`
 #. §2: `c`
-#. §3: `f c < f t`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:25
+#. §3: `f c ≤ f t`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:26
 msgid "§0 is the set of §1 strictly larger than §2 such that §3."
 msgstr ""
+"§0 ist die Menge der Schattierer von §2, also die Menge der Punkte, die ihren Schatten auf §2 werfen.\n"
+"Da die Sonne von Osten scheint, besteht sie aus Punkten §1 östlich von §2, an denen der Berg mindestens so hoch ist wie bei §2, für die also §3 gilt."
 
 #. §0: `b`
-#. §1: `f b < f c`
-#. §2: `c`
-#. §3: `Shaders f c`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:28
-msgid ""
-"If §0 is not a shadow point, §1, and §2 is a shadow point, then §3\n"
-"is nonempty."
-msgstr ""
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:29
+msgid "If §0 is a shadow point, then §1 is nonempty."
+msgstr "Für jeden Schattenpunkt §0 ist die Menge der Schattierer §1 nicht-leer."
 
 #. §0: `b`
 #. §1: `t > b`
 #. §2: `f t > f b`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:34
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:34
 msgid "Because §0 is in the shade, there is some §1 with §2"
 msgstr ""
+"**Du**: Na schön.  Und du meinst also, ich sollte beweisen, dass jeder Punkt, der im Schatten liegt, einen Schattierer hat?\n"
+"\n"
+"**Robo**:  Nur zu."
 
 #. §0: `b ∈ Shade f`
 #. §1: `obtain ⟨t, …, …⟩ := hb`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:35
-#, fuzzy
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:35
 msgid "[Hint 7xd8e] Unpack §0 with §1."
-msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+msgstr "**Robo**:  Du könntest als ersten Schritt §0 mit §1 entpacken."
 
-#. §0: `use`
-#. §1: `t`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:37
-#, fuzzy
-msgid "[Hint eymq5] Now §0 §1."
-msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+#. §0: `use «{t}»`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:37
+msgid "[Hint eymq5] Now §0."
+msgstr "**Robo**:  Na und jetzt §0."
 
 #. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:43
-#, fuzzy
-msgid "Conclusion Shade L04: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:43
+msgid "Conclusion Rigi L04: saved as §0."
+msgstr "Vanessas Miene hat sich wieder merklich aufgehellt."
 
-#. §0: `sSup (Shaders f b)`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:8
-msgid ""
-"Intro Shade L05: a quick boundedness fact.\n"
-"\n"
-"To take the supremum §0, we also need the set to be bounded above."
-msgstr ""
-
-#. §0: `c`
-#. §1: `f b < f c`
-#. §2: `c`
-#. §3: `Shaders f b`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:15
-msgid "If §0 is a sunny point with §1, then §2 bounds §3 from above."
-msgstr ""
-
-#. §0: `c ∈ upperBounds (Shaders f b)`
-#. §1: `c`
-#. §2: `Shaders f b`
-#. §3: `∀ t ∈ Shaders f b, t ≤ b`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:21
-msgid ""
-"[Hint bbdshadeh] §0 means that §1 is a concrete upper bound of\n"
-"§2.  So the claim is:  §3."
-msgstr ""
-
-#. §0: `t < c`
-#. §1: `t = c`
-#. §2: `c < t`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:24
-msgid "[Hint ufgrind] Now best distinguish the three cases §0, §1,§2"
-msgstr ""
-
-#. §0: `lt_trichotomy`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:25
-#, fuzzy
-msgid "[Hint xpkm] Remember §0"
-msgstr "**Robo**: Wie du meinst. Dann probier doch am besten §0."
-
-#. §0: `upperBounds_Shaders`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:37
-#, fuzzy
-msgid "Conclusion Shade L05: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
-
-#. §0: `b`
+#. §0: `sSup`
 #. §1: `Shaders f b`
 #. §2: `sSup (Shaders f b)`
-#. §3: `b`
-#. §4: `t`
-#. §5: `Shaders f b`
-#. §6: `b < t`
-#. §7: `t`
-#. §8: `b < sSup (Shaders f b)`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:8
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:9
 msgid ""
-"Intro Shade L06: the supremum lies strictly to the right of §0.\n"
+"Intro Rigi L05: a quick boundedness fact.\n"
 "\n"
-"Now that §1 is nonempty and bounded above, its supremum §2 exists.\n"
-"The first thing to know about it is that it sits strictly to the right of §3.\n"
-"\n"
-"The reason is short: pick any element §4 of §5.  By definition §6, and §7 is\n"
-"below the supremum, so §8."
+"To take the supremum §0 of §1 (i.e. §2), we also need the set to be bounded above."
 msgstr ""
+"**Robo**:  Als Nächstes zeigen wir, dass die Menge der Schattierer nach Osten beschränkt ist.\n"
+"\n"
+"**Du**:  Okay, lass mich mal lesen …"
+
+#. §0: `c`
+#. §1: `f c < f b`
+#. §2: `c`
+#. §3: `Shaders f b`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:16
+msgid "If §0 is a sunny point with §1, then §2 bounds §3 from above."
+msgstr "Ist §0 ein Sonnenpunkt mit §1, so ist §2 eine obere (östliche) Schranke für die Schattierer §3."
+
+#. §0: `c`
+#. §1: `b`
+#. §2: `Shaders f b`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:22
+msgid "[Hint bbdshadeh]  If §0 is in the sun, but on lower elevation than §1, then c is an upper (i.e. eastward) bound on §2."
+msgstr ""
+"**Du**:  … wenn §0 in der Sonne liegt, aber weiter unten als §1, dann ist §0 eine obere …\n"
+"\n"
+"**Robo**: … das heißt:  östlich …\n"
+"\n"
+"**Du**: … Schranke für die Schattierer von §1."
+
+#. §0: `∀ t ∈ Shaders f b, t ≤ c`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:24
+msgid "[Hint vxovm] So the claim is:  §0."
+msgstr "**Robo**:  Zu zeigen ist also: §0"
+
+#. §0: `«{t}» < c`
+#. §1: `«{t}» = c`
+#. §2: `c < «{t}»`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:27
+msgid "[Hint yevhg] Now best distinguish the three cases §0, §1,§2"
+msgstr "**Robo**:  Ich würde jetzt die drei Fälle §0, §1, §2 unterscheiden."
+
+#. §0: `lt_trichotomy`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:28
+msgid "[Hint xpkm] Remember §0"
+msgstr "**Robo**: Erinnerst du dich an §0?"
+
+#. §0: `upperBounds_Shaders`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:40
+msgid "Conclusion Rigi L05: saved as §0."
+msgstr ""
+"Vanessa flattert eine Weile fröhlich um euch herum.\n"
+"Dann lässt sie sich wieder auf Robos ausgestreckter Hand nieder."
+
+#. §0: `b`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:8
+msgid "Intro Rigi L06: the supremum lies strictly to the right of §0."
+msgstr "Robo macht sofort weiter mit der nächsten elementaren Aussage."
 
 #. §0: `b`
 #. §1: `Shaders f b`
 #. §2: `b < sSup (Shaders f b)`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:19
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:12
 msgid "If §0 lies in the shade and §1 is bounded above, then §2."
+msgstr "Liegt §0 im Schatten, und ist die Menge der Schattierer von §0 nach Osten beschränkt, so ist das östliche Supremum echt größer (östlicher) als §0."
+
+#. §0: `b`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:17
+msgid ""
+"[Hint wouvk] The supremum of all shaders of §0 is strictly larger than b.\n"
+"First, show that there exists some shader.\n"
+"This shader will be strictly larger than b by the very definition of §1.\n"
+"And the supremum of all shaders will be at least as large as this particular one.\n"
 msgstr ""
+"**Du**:  Das Supremum der Schattierer von §0 ist größer als §0 … ist das nicht aus der Definition klar?\n"
+"\n"
+"**Robo**:  Mehr oder weniger.\n"
+"Du musst halt erst einmal sicherstellen, dass es einen Schattierer gibt.\n"
+"Der ist dann per Definition von §1 echt größer, also östlicher, als §0.\n"
+"Und das östliche Supremum aller Schattierer liegt notwendigerweise mindestens so weit östlich wie dieser eine.\n"
 
 #. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:24
-msgid "First get hold of an element of the set: it is nonempty by §0."
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:23
+msgid "[Hint p4nen] First get hold of an element of the set: it is nonempty by §0."
 msgstr ""
+"**Robo**:  Halt am besten erst einmal fest, dass die Menge der Schattierer nicht leer ist.\n"
+"Das hatten wir doch gerade eben mit §0 gezeigt."
 
-#. §0: `«{t}»`
-#. §1: `le_csSup`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:29
-msgid "This §0 is below the supremum. Remember §1."
-msgstr ""
+#. §0: `«{h_ne}»`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:26
+msgid "[Hint 2cfq0] Now you can extract a shader from the hypothesis §0."
+msgstr "**Robo**: Jetzt kannst du aus §0 einen Schattierer konstruieren."
+
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:28
+msgid "[Hint 59m0w] Remember §0."
+msgstr "**Robo**:  Erinnerst du dich noch an §0?"
 
 #. §0: `Shaders`
 #. §1: `«{ht}»`
-#. §2: `b < t`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:34
-#, fuzzy
-msgid "[Hint ltssup] Unfold §0 in §1 to see §2."
-msgstr "**Robo**: Vielleicht öffnest du zuerst mal §0 mit §1. Dann steht da §2 …"
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:33
+msgid "[Hint ltssup] Looks good.  Now unfold §0 in §1."
+msgstr ""
+"**Robo**:  Das sieht gut aus.\n"
+"Vermutlich musst du nur noch die Definition von §0 in §1 aufdröseln.\n"
+"Und vergiss nicht, dass wir immer noch einen großen Vorrat an Kaffee haben."
 
 #. §0: `lt_sSup_Shaders`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:38
-#, fuzzy
-msgid "Conclusion Shade L06: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:37
+msgid "Conclusion Rigi L06: saved as §0."
+msgstr "Vanessa dreht wieder eine fröhliche Runde."
 
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:6
-msgid "The Value at the Supremum"
-msgstr ""
-
-#. §0: `t ∈ Shaders f b`
-#. §1: `f b ≤ f t`
-#. §2: `Shaders f b`
-#. §3: `f b ≤ f t`
-#. §4: `f`
-#. §5: ```
-#. f b ≤ f (sSup (Shaders f b))
-#. ```
-#. §6: `closure_minimal`
-#. §7: `isClosed_le`
-#. §8: `csSup_mem_closure`
-#. §9: `Aquarius`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:8
-msgid ""
-"Intro Shade L07: the value at the supremum stays up.\n"
-"\n"
-"Every point of §0 satisfies §1.  The supremum itself need not be a point of\n"
-"§2, but it lies in its *closure* — and the condition §3 is a closed condition,\n"
-"because §4 is continuous.  So the inequality survives the passage to the limit:\n"
-"\n"
-"§5\n"
-"\n"
-"The proof combines §6, §7 and the §8 fact from §9."
-msgstr ""
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:8
+msgid "Intro Rigi L07: the value at the supremum stays up."
+msgstr "**Robo**:  Jetzt kommt eine Bastelaufgabe."
 
 #. §0: `f`
 #. §1: `b`
 #. §2: `Shaders f b`
 #. §3: `f b ≤ f (sSup (Shaders f b))`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:23
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:12
 msgid ""
 "If §0 is continuous, §1 lies in the shade and §2 is bounded above, then\n"
 "§3."
-msgstr ""
+msgstr "Ist das Höhenprofil stetig, §1 ein Schattenpunkt und die Menge seiner Schattierer nach Osten beschränkt, so ist der Berge am östlichen Supremum der Schattenpunkte mindestens so hoch wie bei §1."
 
-#. §0: `Shaders f b`
-#. §1: `t`
-#. §2: `f b ≤ f t`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:30
+#. §0: `b`
+#. §1: `closure_minimal`
+#. §2: `isClosed_le`
+#. §3: `csSup_mem_closure`
+#. §4: ```
+#. Shaders f b ⊆ {t | f b ≤ f t}
+#. ```
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:19
 msgid ""
-"State the containment that makes the argument work: §0 is\n"
-"contained in the set of points §1 where §2."
+"[Hint q8m2v] At the supremum of all shaders of §0, the mountain is at least as high as at b.\n"
+"The proof combines §1, §2 and §3.\n"
+"Begin by showing that:\n"
+"§4\n"
 msgstr ""
+"**Du**:  Am Supremum der Schattierer von §0 ist der Berg mindestens so hoch wie an §0?\n"
+"\n"
+"**Robo**:  Genau.\n"
+"Dass der Berg an allen Schattierern mindestens so hoch ist, ist aus der Definition klar.\n"
+"Dafür, dass das am Supremum immer noch gilt, brauchen wir natürlich die Stetigkeit der Wassertiefe.\n"
+"\n"
+"**Du**:  Der Wassertiefe …?\n"
+"\n"
+"**Robo**:  Ähh, ich meinte natürlich des Höhenprofils.\n"
+"Die Aussagen, die du brauchst, sind §1, §2 und §3.\n"
+"Aber anfangen würd ich damit,\n"
+"\n"
+"§4\n"
+"\n"
+"zu zeigen.\n"
+"Ich hatte ja heute Morgen schon ein paar Stunden Zeit, mir das zu überlegen.\n"
 
 #. §0: `closure_minimal`
 #. §1: `«{h_sub}»`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:35
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:29
+msgid "[Hint 9al6z] §0 upgrades §1 to a statement about the closure."
+msgstr "**Robo**: Jetzt könntest du zum Beispiel §0 anwenden."
+
+#. §0: `{t | f b ≤ f t}`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:32
 msgid ""
-"§0 upgrades §1 to a statement about the closure — it leaves you with\n"
-"two goals: the right-hand set is closed, and the supremum lies in the closure."
-msgstr ""
+"[Hint k3t9w] Two goals are left: the set §0 is closed,\n"
+"and the supremum lies in the closure of §1."
+msgstr "**Robo**:  Jetzt bleiben zwei Ziele:  §0 ist abgeschlossen, und das Supremum liegt im Abschluss von §1."
 
 #. §0: `isClosed_le`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:39
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:34
 msgid "[Hint isclle] That set is closed by §0"
-msgstr ""
+msgstr "**Robo**:  Dass diese Menge abgeschlossen ist, folgt aus §0."
 
 #. §0: `fun_prop`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:41
-#, fuzzy
-msgid "[Hint 7xd8e] Remember §0"
-msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
-
-#. §0: `csSup_mem_closure`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:44
-msgid ""
-"[Hint csmc] The remaining goal is exactly\n"
-"§0."
-msgstr ""
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:36
+msgid "[Hint r7n4x] Remember §0"
+msgstr "**Robo**:  Erinner dich an §0!"
 
 #. §0: `val_le_val_sSup_Shaders`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:51
-#, fuzzy
-msgid "Conclusion Shade L07: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:44
+msgid "Conclusion Rigi L07: saved as §0."
+msgstr "**Vanessa**: Bravo!"
 
-#. §0: `s := sSup (Shaders f b)`
-#. §1: `t`
-#. §2: `s`
-#. §3: `Shaders f b`
-#. §4: `Shaders f b `
-#. §5: `t > b`
-#. §6: `f t < f b`
-#. §7: `f t ≤ f b`
-#. §8: `t > s`
-#. §9: `notMem_of_csSup_lt`
-#. §10: `sSup s < t`
-#. §11: `s`
-#. §12: `t ∉ s`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:8
-msgid ""
-"Intro Shade L08: past the supremum the value drops back.\n"
-"\n"
-"Write §0.  Any point §1 strictly to the right of §2 cannot belong to\n"
-"§3.  By the definition of §4, a point §5\n"
-"fails to be in the set precisely when §6.  Combining these gives §7 for every\n"
-"§8.\n"
-"\n"
-"The key new tool is §9: if §10 and §11 is bounded above, then §12."
-msgstr ""
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:8
+msgid "Intro Rigi L08: past the supremum the value drops back."
+msgstr "**Robo**:  Jetzt schauen wir uns an, was östlich vom Supremum passiert."
 
 #. §0: `b`
 #. §1: `Shaders f b`
 #. §2: `sSup (Shaders f b)`
 #. §3: `f b`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:20
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:12
+msgid "If §0 lies in the shade and §1 is bounded above, then every point strictly to the right of §2 has value at most §3."
+msgstr "Ist §0 ein Schattenpunkt, und sind die Schattierer von §0 nach Osten beschränkt, so liegen die Punkte östlich des Supremums der Schattierer höchstens so hoch wie §0."
+
+#. §0: `b`
+#. §1: `t`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:18
 msgid ""
-"If §0 lies in the shade and §1 is bounded above, then every point strictly to the\n"
-"right of §2 has value at most §3."
+"[Hint z5c1p] Consider a point §0 in the shade, and a point §1 to the right of the supremum of the shaders of b.\n"
+"Start by establishing that t is not a shader of b."
 msgstr ""
+"**Du**: §1 soll also ein Punkt östlich dieses Supremums sein.\n"
+"Dann ist §1 sicher kein Schattierer von §0 und somit …\n"
+"\n"
+"**Robo**:  Fang doch mal gleich damit an – formulier aus, dass §1 kein Schattierer von §0 ist."
 
-#. §0: `t ∉ Shaders f b`
-#. §1: `have`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:27
-msgid "[Hint eymq5] Establish §0 with §1."
-msgstr ""
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:22
+msgid "[Hint 5yybw] Try a proof by contradiction."
+msgstr "**Robo**:  Ich würde hier einen Widerspruchsbeweis versuchen."
 
-#. §0: `t`
-#. §1: `notMem_of_csSup_lt`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:29
-msgid ""
-"Since §0 lies above the supremum, it is not in the set.\n"
-"Use §1"
-msgstr ""
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:24
+msgid "[Hint ingz4] Remember §0."
+msgstr "**Robo**:  Erinner dich an §0."
 
-#. §0: `b < t`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:34
+#. §0: `lt_sSup_Shaders hb hs`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:27
 msgid "[Hint 2u5ee] You will also need §0."
-msgstr ""
-
-#. §0: `lt_sSup_Shaders`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:36
-#, fuzzy
-msgid "[Hint ux181] Remember §0."
-msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
-
-#. §0: `Shaders`
-#. §1: `«{not_mem}»`
-#. §2: `grind`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:38
-msgid "[Hint vrsup] Unfold §0 in §1, then §2 closes it."
-msgstr ""
+msgstr "**Robo**: Vermutlich wirst du jetzt irgendwie §0 benutzen wollen."
 
 #. §0: `val_le_of_sSup_Shaders_lt`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:42
-#, fuzzy
-msgid "Conclusion Shade L08: saved as §0."
-msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
-
-#. §0: `sSup s < x`
-#. §1: `s`
-#. §2: `x ∉ s`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:44
-#, fuzzy
-msgid "If §0 and §1 is bounded above, then §2."
-msgstr "**Du**: Also, §0 ist wieder so ein Prädikat … Wenn §1 eine Person ist, ist §2 eine Aussage, die wahr oder falsch ist. Soweit so gut."
-
-#. §0: `f`
-#. §1: `a`
-#. §2: `c`
-#: Game/Levels/Shade/L09_InterValue.lean:8
-msgid ""
-"[Intro]\n"
-" If a continuous function §0 takes a strictly smaller value at the left endpoint §1 than at the\n"
-" right endpoint §2 of an interval, then somewhere strictly between the endpoints the function still\n"
-" exceeds its value at the left endpoint."
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:32
+msgid "Conclusion Rigi L08: saved as §0."
 msgstr ""
+"Vanessa umkreist dich und landet auf deiner Stirn.\n"
+"\n"
+"**Vanessa**:  Siehst du, so einfach ist das gar nicht.\n"
+"Ich habe lange an meiner Strategie gearbeitet!"
+
+#. §0: `intermediate_value_Ioo`
+#: Game/Levels/Rigi/L09_InterValue.lean:9
+msgid "Intro Rigi L09: Intermediate value theorem: §0."
+msgstr ""
+"**Vanessa**: Das Beste kommt aber erst noch.\n"
+"Schau dir mal an, wie krass zackig unsere Berge hier sind.\n"
+"Und trotzdem gilt:\n"
+"\n"
+"*(geheimnisvoll flüsternd):*  Alle Höhenprofile sind *stetig*!\n"
+"\n"
+"Und deshalb gilt §0!\n"
+"\n"
+"Du schaust fragend zu Robo hinüber.\n"
+"\n"
+"**Robo**:  Ist doch klar, was sie meint!  Es gilt der Zwischenwertsatz.\n"
+"Hier, pass auf, ich formulier den mal in einer Form, die du einfacher wiedererkennst."
 
 #. §0: `f`
 #. §1: `f : ℝ → ℝ`
@@ -11189,21 +11217,23 @@ msgstr ""
 #. §4: `a c : ℝ`
 #. §5: `a < c`
 #. §6: `f a < f c`
-#. §7: `b ∈ Ioo a c`
-#. §8: `f b > f c`
-#: Game/Levels/Shade/L09_InterValue.lean:17
-#: Game/Levels/Shade/L10_InterValueSymm.lean:17
+#. §7: `b`
+#. §8: $(a, c)$
+#. §9: `f b > f a`
+#: Game/Levels/Rigi/L09_InterValue.lean:15
 msgid ""
 "If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
-"§6, then there is some §7 with §8."
+"§6, then there is some §7 in §8 with §9."
 msgstr ""
+"Ist §0 stetig und sind §2, §3 Punkte mit §5 und §6, so gibt es einen Punkt §7 im offenen Intervall §8 mit §9.\n"
+"(Das folgt unmittelbar aus dem Zwischenwertsatz.)"
 
 #. §0: `intermediate_value_Ioo`
 #. §1: ```
 #. Set.Ioo (f a) (f c) ⊆ f '' Set.Ioo a c
 #. ```
 #. §2: `have`
-#: Game/Levels/Shade/L09_InterValue.lean:23
+#: Game/Levels/Rigi/L09_InterValue.lean:21
 msgid ""
 "[Hint ivIoo] One version of intermediate value theorem is §0,\n"
 "which says\n"
@@ -11211,43 +11241,91 @@ msgid ""
 "Suggestion:  state this inclusion with §2, use theorem to prove it,\n"
 "then see what you can do with it."
 msgstr ""
+"**Robo**:  Du führst das am besten auf die von Vanessa zitierte Version §0 zurück, die besagt:\n"
+"\n"
+"§1\n"
+"\n"
+"Ich schlage vor, du führst zunächst diese Aussage mit §2 ein und schaust dann, was du damit anfangen kannst."
 
-#. §0: `Continuous f`
-#. §1: `fun_prop`
-#: Game/Levels/Shade/L09_InterValue.lean:33
+#. §0: `«{h}»`
+#. §1: $(f(a),f(c))$
+#. §2: `… ∈ (Ioo (f a) (f c))`
+#: Game/Levels/Rigi/L09_InterValue.lean:33
 msgid ""
-"The remaining goal is the continuity statement §0. Use §1,\n"
-"which automatically proves such function properties."
+"[Hint Ioontps] Apply §0 to an arbitrary value in §1.\n"
+"Suggestion: state and prove §2 for some explicit value."
 msgstr ""
+"**Robo**:  Jetzt nimm einfach irgendeinen Wert im Intervall §1 und wende §0 auf ihn an.\n"
+"Vielleicht ist es einfacher, wenn du erst einmal §2 für einen ganz expliziten Wert festhältst."
 
-#. §0: `f c`
-#. §1: `f a`
-#. §2: `Ioo (f c) (f a)`
-#. §3: `(Ioo (f c) (f a)).Nonempty`
-#: Game/Levels/Shade/L09_InterValue.lean:36
+#. §0: $(a,c)$
+#. §1: `«{hfval'}»`
+#: Game/Levels/Rigi/L09_InterValue.lean:45
+msgid "[Hint w595i] Now that you've established a value in the image of §0 with §1, you can choose a preimage with the required properties."
+msgstr "**Robo**:  Sieht doch gut aus.  Nachdem du jetzt mit §1 einen Wert im Bild des offenen Intervalls §0 etabliert hast, kannst du ein Urbild mit den gesuchten Eigenschaften wählen."
+
+#: Game/Levels/Rigi/L09_InterValue.lean:55
+msgid "Conclusion Rigi L09"
+msgstr "Vanessa fliegt zurück zu Robo."
+
+#. §0: ```
+#. intermediate_value_Ioo: Ioo (f a) (f c) ⊆ f '' Ioo a c
+#. ```
+#. §1: ```
+#. intermediate_value_Ioo': Ioo (f c) (f a) ⊆ f '' Ioo a c
+#. ```
+#. §2: $(f(a), f(c))$
+#. §3: $(f(c), f(a))$
+#. §4: `f a < f c`
+#. §5: `f c < f a`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:10
 msgid ""
-"[Hint Ioontps] Can now apply our version of intermediate value theorem\n"
-"to an arbitrary value between §0 and §1, i.e. to an arbitrary value in §2.\n"
-"Suggestion: state and prove §3."
+"Intro Rigi L10: Intermediate value theorem has several variants, e.g.\n"
+"§0\n"
+"(as in previous level) and\n"
+"§1\n"
+"Which of these two to use depends on which of the two intervals §2 and §3 is non-empty, i.e. on whether §4 or §5."
 msgstr ""
+"**Robo**:  Alles klar?  Tatsächlich gibt es eine ganze Handvoll Varianten des Zwischenwertsatzes.\n"
+"Neben\n"
+"\n"
+"§0\n"
+"\n"
+"gibt es zum Beispiel auch:\n"
+"\n"
+"§1\n"
+"\n"
+"Welchen der beiden Sätze man besser anwendet, hängt gerade davon ab, welches der Intervalle §2 oder §3 nicht-leer ist, also davon, ob §4 gilt oder §5.\n"
+"\n"
+"Für die folgende Aussage solltest du beispielsweise lieber die zweite Variante verwenden."
 
 #. §0: `f`
-#. §1: `a`
-#. §2: `c`
-#: Game/Levels/Shade/L10_InterValueSymm.lean:8
+#. §1: `f : ℝ → ℝ`
+#. §2: `a`
+#. §3: `c`
+#. §4: `a c : ℝ`
+#. §5: `a < c`
+#. §6: `f a > f c`
+#. §7: `b ∈ Ioo a c`
+#. §8: `f b > f c`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:24
 msgid ""
-"[Intro]\n"
-" The mirror image of the previous level.  If a continuous function §0 takes a strictly larger\n"
-" value at the left endpoint §1 than at the right endpoint §2 of an interval, then somewhere\n"
-" strictly between the endpoints the function already exceeds its value at the right endpoint."
+"If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
+"§6, then there is some §7 with §8."
 msgstr ""
+"Ist §0 stetig und sind §2, §3 Punkte mit §5 und §6, so gibt es einen Punkt §7 mit §8.\n"
+"(Das folgt unmittelbar aus dem Zwischenwertsatz.)"
 
-#. §0: `apply`
-#. §1: `intermediate_value_Ioo'`
-#: Game/Levels/Shade/L10_InterValueSymm.lean:24
-#, fuzzy
-msgid "[Hint itvIoo] Just §0 §1."
-msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+#: Game/Levels/Rigi/L11_Boss.lean:8
+msgid "Intro Rigi L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*)."
+msgstr ""
+"Vanessa flattert aufgeregt hin und her.  Schließlich setzt sie sich auf Robos Schulter.\n"
+"\n"
+"**Vanessa**:  Ich glaube, ihr habt jetzt alle Zutaten zusammen, um ein Sonnenaufgangslemma zu beweisen.\n"
+"\n"
+"**Robo**:  Ich glaube auch.  Willst du es noch einmal buchstabieren?\n"
+"\n"
+"Vanessa spricht Robo ins Ohr, und er schreibt mit."
 
 #. §0: `f : ℝ → ℝ`
 #. §1: `a`
@@ -11255,146 +11333,200 @@ msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles
 #. §3: `a < c`
 #. §4: `b`
 #. §5: `f a = f c`
-#: Game/Levels/Shade/L11_Boss.lean:8
+#. §6: `f a < f c`
+#. §7: `f a = f c`
+#. §8: `f a > f c`
+#: Game/Levels/Rigi/L11_Boss.lean:16
 msgid ""
-"Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).\n"
-"\n"
-"> Let §0 be a continuous function. If §1 and §2 with §3 are in the sun,\n"
-"but every §4 between a and c is in the shade, then §5."
+"[Hint 0u20z] Let §0 be a continuous function.\n"
+"If §1 and §2 with §3 are in the sun,  but every §4 between a and c is in the shade, then §5.\n"
+"Start by distinguishing the cases §6, §7, §8.\n"
+"In the first and the last case, you will need to find a contradiction."
 msgstr ""
+"**Du**:  Sei also §0 stetig.  Wenn §1 und §2 (mit §3) in der Sonne liegen, aber alle Punkte zwischen §1 und §2 liegen im Schatten, dann gilt §5.\n"
+"\n"
+"**Vanessa**:  Ja, genau wie ich sagte:  am östlichen und westlichen Ufer des Schattens hat der Berg genau dieselbe Höhe!\n"
+"\n"
+"Du grübelst ein bisschen.\n"
+"\n"
+"**Vanessa**:  Na komm schon, du sagtest doch, du hättest das schon längst verstanden.\n"
+"\n"
+"**Robo** *(leise zu dir)*:  So ganz hatte ich das auch noch nicht zu Ende gedacht.\n"
+"Aber ich würde jedenfalls mit einer Fallunterscheidung anfangen.\n"
+"Entweder §6 oder §7 oder §8.\n"
+"Im ersten und letzten Fall musst du irgendwie einen Widerspruch finden."
 
 #. §0: `a`
 #. §1: `a < c`
 #. §2: `f a < f c`
-#: Game/Levels/Shade/L11_Boss.lean:20
+#: Game/Levels/Rigi/L11_Boss.lean:22
 msgid "[Hint sbosf] In this case, §0 is a shade point since §1 and §2."
-msgstr ""
+msgstr "**Robo**: Würde mal sagen, in diesem Fall liegt §0 im Schatten, denn §1 und §2."
 
 #. §0: `b`
 #. §1: `a`
 #. §2: `c`
 #. §3: `f b > f c`
 #. §4: `Shaders f b`
-#. §5: `b`
-#. §6: `c`
-#. §7: `c`
-#. §8: `b`
-#. §9: `s`
-#. §10: `Shaders f b`
-#. §11: `≤ c`
-#. §12: `b ≤ s`
-#. §13: `s ∈ Ioc a c`
-#. §14: `Shaders f b`
-#. §15: `Shaders f b`
-#. §16: `f`
-#. §17: `f b`
-#. §18: `f s ≥ f b`
-#. §19: `s ≠ c`
-#. §20: `s ∈ Ioo a c`
-#. §21: `s`
-#. §22: `s`
-#. §23: `f b`
-#. §24: `s`
-#. §25: `f s ≥ f b`
-#. §26: `f s`
-#. §27: `s`
-#. §28: `b ∈ Ioo a c`
-#. §29: `f b > f c`
-#: Game/Levels/Shade/L11_Boss.lean:28
+#. §5: `s`
+#. §6: `b ∈ Ioo a c`
+#: Game/Levels/Rigi/L11_Boss.lean:31
 msgid ""
-"**The mathematical idea.**\n"
+"PART A: Construction of the supremum s\n"
 "\n"
-"We derive a contradiction. One can find a §0 between §1  and §2 with §3.\n"
-"The set §4 is non-empty, as §5 is in the shade,\n"
-"and it is bounded above by §6, since §7 is in the sun with value smaller than at §8.\n"
-"In particular, the supremum §9 of §10 is §11.\n"
+"One can find a §0 between §1  and §2 with §3.\n"
+"The set §4 is non-empty, as b is in the shade,\n"
+"and it is bounded above by c, since c is in the sun with value smaller than at b.\n"
+"In particular, Shaders f b has some supremum §5.\n"
 "\n"
-"Also, trivially/by some eralier lemma §12 by earlier lemma, so we have §13.\n"
-"\n"
-"By definition of §14, for all points in §15, §16 takes a value at least §17.\n"
-"Thus, by an an analogous argument to Boss of Aquarius, §18.\n"
-"This implies, in particular, that §19.\n"
-"So §20.  By our assumptions, this implies that §21 is in the shade.\n"
-"\n"
-"On the other hand, to the right of §22, the function remains below §23 – that is what §24 being\n"
-"the supremum means.  A fortiori, given that §25, the function remains below §26.\n"
-"So §27 is in the sun.  CONTRADICTION.\n"
-"\n"
-"So: First, prove that there is some §28, such that §29."
+"So: First, prove that there is some §6 with this property."
 msgstr ""
+"**Robo**:  Das ist jetzt der interessante Teil …  Ich hatte mir das grob wie folgt vorgestellt:\n"
+"- Mit dem Lemma von eben können wir ein §0 zwischen §1 und §2 finden mit §3.\n"
+"  Die Menge §4 ist nicht leer, schließlich liegt §0 im Schatten, und wird im Osten durch §2 beschränkt.\n"
+"  Also gilt für ihr Supremum §5 …\n"
+"\n"
+"**Du**:  Langsam, das muss ich jetzt erst einmal nachvollziehen.\n"
+"Ich zeige also als Erstes, dass es ein §6 gibt mit §3."
 
-#: Game/Levels/Shade/L11_Boss.lean:48
-msgid "[Hint pbf] Remember the proof before."
-msgstr ""
+#: Game/Levels/Rigi/L11_Boss.lean:40
+msgid "[Hint pbf] Remember the preceding level."
+msgstr "**Robo**:  Wie gesagt, das hatten wir uns eben gerade überlegt."
 
 #. §0: `Shaders f «{b}»`
-#: Game/Levels/Shade/L11_Boss.lean:54
-msgid ""
-"To construct the supremum of §0, you'll first want to show that the set\n"
-"is non-empty and that b is an upper bound."
-msgstr ""
+#. §1: `c`
+#: Game/Levels/Rigi/L11_Boss.lean:46
+msgid "[Hint hw34l] To construct the supremum of §0, you'll first want to show that the set is non-empty and that §1 is an upper bound."
+msgstr "**Robo**: Um jetzt ein Supremum von §0 zu konstruieren, solltest du zeigen, dass diese Menge nicht leer und durch §1 beschränkt ist."
 
 #. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L11_Boss.lean:57
-#, fuzzy
+#: Game/Levels/Rigi/L11_Boss.lean:49
 msgid "[Hint mwqb] Remember §0"
-msgstr "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!"
+msgstr "**Robo**:  Erinner dich an §0."
 
 #. §0: `upperBounds_Shaders`
-#: Game/Levels/Shade/L11_Boss.lean:62
-#, fuzzy
+#: Game/Levels/Rigi/L11_Boss.lean:54
 msgid "[Hint dtpx] Remember §0"
-msgstr "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
+msgstr "**Robo**:  Das hatten wir uns auch extra vorhin überlegt: §0."
 
 #. §0: `let s := sSup (Shaders f b)`
-#: Game/Levels/Shade/L11_Boss.lean:66
+#: Game/Levels/Rigi/L11_Boss.lean:56
 msgid "[Hint 60ivz] Suggestion: §0"
-msgstr ""
+msgstr "**Robo**:  Prima.  Ich würde dem Supremum der Schattierer jetzt einen Namen geben: §0."
 
-#. §0: `«{s}» ∈ Shade f`
-#. §1: `b ∈ Shade f`
-#: Game/Levels/Shade/L11_Boss.lean:70
-msgid ""
-"[Hint umu4r] Suggestion: Work towards §0\n"
-"First establish §1."
+#. §0: `b`
+#. §1: `f b ≤ f s`
+#: Game/Levels/Rigi/L11_Boss.lean:60
+msgid "[Hint mcvid] Establish that §0 is in the shade, and that §1."
 msgstr ""
+"**Robo**:  Bevor du jetzt weitermachst, würde ich erst einmal ein paar relativ offensichtliche Dinge festhalten:\n"
+"Erstens, §0 ist ein Schattenpunkt. Und zweitens:  §1."
+
+#. §0: `use`
+#. §1: `c`
+#. §2: `use c`
+#: Game/Levels/Rigi/L11_Boss.lean:69
+msgid "[Hint vfajy] Just §0 §1 (§2)."
+msgstr "**Robo**:  Hier würde ich einfach §2 sagen."
+
+#. §0: `«{s}»`
+#. §1: `h_shade`
+#. §2: `a`
+#. §3: `c`
+#. §4: `s ≤ c`
+#. §5: `«{hc_bounds}»`
+#. §6: `s < c`
+#. §7: `b < s`
+#. §8: `a < s`
+#: Game/Levels/Rigi/L11_Boss.lean:73
+msgid ""
+"[Hint umu4r] The grand plan is now to show that on the one hand, §0 is in the shade, and on the other hand, s is in the sun.\n"
+"We start with the shade.  By our assumption §1, it suffices to show that s sits strictly between §2 and §3.\n"
+"Proceed as follows:\n"
+"- §4 in view of §5, and in fact\n"
+"- §6.\n"
+"- §7, and a fortiori\n"
+"- §8\n"
+msgstr ""
+"**Robo**:  Prima!\n"
+"Ich glaube, wir können jetzt einerseits zeigen, dass §0 im Schatten liegt, und andererseits dass §0 in der Sonne liegt.\n"
+"Das wird unser Widerspruch.\n"
+"\n"
+"Wir fangen mit dem Schatten an.  Wegen §1 reicht es dazu ja zu zeigen, dass §0 echt zwischen §2 und §3 liegt.\n"
+"Ich würde wie folgt vorgehen:\n"
+"- §4 wegen §5, und sogar:\n"
+"- §6\n"
+"- §7, also erst recht:\n"
+"- §8\n"
+"Alles klar?\n"
+"\n"
+"**Du**: Ich kanns ja mal versuchen.\n"
+
+#. §0: `lt_sSup_Shaders`
+#: Game/Levels/Rigi/L11_Boss.lean:90
+msgid "[Hint cdp6] Remember §0."
+msgstr "**Robo**:  Wir hatten schon §0."
+
+#. §0: `s`
+#. §1: `have : «{s}» ∈ Sun f`
+#: Game/Levels/Rigi/L11_Boss.lean:100
+msgid ""
+"On the other hand, §0 is in the sun.\n"
+"Start with §1.\n"
+msgstr ""
+"**Robo**:  Jetzt der Endspurt:  §0 liegt in der Sonne.\n"
+"Stürz dich da mal rein mit §1 und brich die Aussage auf eine Ungleichung herunter.\n"
 
 #. §0: `val_le_of_sSup_Shaders_lt`
-#: Game/Levels/Shade/L11_Boss.lean:95
+#. §1: `BddAbove (Shaders f b)`
+#: Game/Levels/Rigi/L11_Boss.lean:107
 msgid ""
-"[Hint rsdov] Almost there …  You'll probably need\n"
-"§0 to finish this."
+"[Hint rsdov] You need to apply §0 to finish this.\n"
+"And to apply this, you'll need to establish §1."
 msgstr ""
+"**Robo**: Ja, ich sehe es jetzt!  Erinner dich an §0.\n"
+"Um die Aussage anzuwenden, hältst du am besten noch einmal explizit §1 fest."
 
-#: Game/Levels/Shade.lean:21
-msgid "Shade"
+#: Game/Levels/Rigi/L11_Boss.lean:118
+msgid "Conclusion Rigi L11"
 msgstr ""
+"**Vanessa**:  Und, hast du es jetzt „verstanden“?\n"
+"\n"
+"**Du**: Mmmm …\n"
+"\n"
+"Robo lacht.\n"
+"\n"
+"**Robo**: Also *ich* habs, glaube ich, jetzt verstanden.\n"
+"\n"
+"Ihr wünscht Vanessa eine gute Weiterreise und genießt dann doch noch – endlich – ein wenig die Aussicht.\n"
+"Es ist Sonnenaufgang.  Noch immer."
 
-#: Game/Levels/Shade.lean:23
-#, fuzzy
-msgid "Intro Shade"
+#: Game/Levels/Rigi.lean:21
+msgid "Rigi"
+msgstr "Rigi"
+
+#: Game/Levels/Rigi.lean:24
+msgid "Intro Rigi"
 msgstr ""
-"Ihr seid auf einem Eisplaneten gelandet, direkt neben einem Eispalast.  Du hast das Gefühl, diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen, wo das gewesen sein könnte.\n"
+"Du bist im Flug eingeschlafen.\n"
+"Gut, dass dein Kopilot auch ohne dich klarkommt.\n"
+"Jetzt gähnst du noch einmal, streckst dich und schaust dich um.\n"
+"Robo ist offenbar in irgendeinem Gebirge gelandet und bereits auf Erkundungstour.\n"
+"Du findest ihn einen Steinwurf vom Raumschiff entfernt auf einer bunten Alm.\n"
+"Gerade geht die Sonne auf.\n"
 "\n"
-"Direkt am Eingang empfängt euch ein pinguinartiges Wesen.\n"
+"**Du**:  Schön hier!  Für so einen herrlichen Sonnenaufgang hättest du mich auch gern wecken können!\n"
 "\n"
-"**Guino**: Willkommen im Prado!\n"
-"Ich bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher! \n"
-"Nun gut, wir haben ja auch gerade erst eröffnet.\n"
-"Kommt rein, kommt rein!\n"
-"Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?\n"
+"Robo lacht.\n"
 "\n"
-"**Du**:  Ähm, ja.  Und ihr seid …?\n"
+"**Robo**:  Den konntest du gar nicht verpassen, du Schlafmütze!\n"
+"Wir sind schon zwei Stunden hier, und als ich gelandet bin, war auch schon Sonnenaufgang.\n"
+"Meine neue Freundin Vanessa behauptet, der Sonnenaufgang würde hier ein halbes Jahr dauern.\n"
 "\n"
-"**Guino**:  Guino, Museumsdirektor des Prado – des PRimzahlen-ADOrationsmuseums!  Kommt, kommt!\n"
+"Robo streckt dir eine Hand entgegen.\n"
+"Dort sitzt eine orange-schwarz-weiße Falterdame und lächelt dich an.\n"
 "\n"
-"Guino führt euch die Stufen am Eingang hinauf und durch das Portal in eine große Halle. In der Mitte schwebt ein kleines Podest. Darauf liegen zwei Murmeln.\n"
-"\n"
-"**Guino**: Seht, seht!  Unser erstes Exponat!  Die Primzahl ZWEI!\n"
-"\n"
-"Ihr seid beide etwas perplex.  Guino hebt die Augenbrauen.\n"
-"\n"
-"**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?"
+"**Vanessa** *(in feiner Schmetterlingsstimme)*:  Willkommen beim schönsten und längsten Sonnenaufgang des gesamten Formaloversums!"
 
 #. §0: `slope_def_field`
 #: Game/Levels/Slope/L01.lean:9
@@ -12554,7 +12686,7 @@ msgstr ""
 "\n"
 "## Neuigkeiten\n"
 "\n"
-"`[2026-05-21]` Im Spiel ist jetzt nur noch ein kleine Teilmenge der `simp`-Lemmas aus `mathlib` zugelassen.  Wenn eine Level, das bis gestern noch als gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es wahrscheinlich daran, dass du eine `simp`le Abkürzungen genommen hattest.\n"
+"`[2026-05-21]` Im Spiel ist jetzt nur noch eine kleine Teilmenge der `simp`-Lemmas aus `mathlib` zugelassen.  Wenn ein Level, das bis gestern noch als gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es wahrscheinlich daran, dass du eine `simp`le Abkürzung genommen hattest.\n"
 "\n"
 "`[2026-03-20]` Robo gibts jetzt auch auf Englisch! Über weitere Übersetzungen würden wir uns [sehr freuen](https://github.com/hhu-adam/Robo/tree/main?tab=readme-ov-file#translations)!\n"
 "\n"
@@ -12572,7 +12704,7 @@ msgstr ""
 "Die laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.\n"
 "## Spielinhalt\n"
 "\n"
-"**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n"
+"**Spoiler Alert** Auf [GitHub](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n"
 "\n"
 "## Credits\n"
 "\n"
@@ -12608,415 +12740,6 @@ msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
 #: Game.lean:50
 msgid "[Game] CaptionLong"
 msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
-
-#~ msgid "Go back, keep §0 and try §1"
-#~ msgstr ""
-#~ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
-#~ "  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
-
-#~ msgid ""
-#~ "Try §0 with a number and then §1. You can not use §2\n"
-#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-#~ msgstr ""
-#~ "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
-#~ "\n"
-#~ "**Du**: Könnte ich jetzt schon §2 anwenden?\n"
-#~ "\n"
-#~ "**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
-#~ "\n"
-#~ "**Du**: Aber wie würde ich das machen?\n"
-#~ "\n"
-#~ "**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
-
-#~ msgid "Now you can apply §0"
-#~ msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
-
-#~ msgid ""
-#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
-#~ msgstr ""
-#~ "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n"
-#~ "\n"
-#~ "**Du**: Was?\n"
-#~ "\n"
-#~ "**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe."
-
-#~ msgid "Use §0 as e.g. §1"
-#~ msgstr ""
-#~ "**Du**: Also hier jetzt §0 verwenden?\n"
-#~ "\n"
-#~ "**Robo**: Vermutlich, zum Beispiel mit §1."
-
-#~ msgid ""
-#~ "Let §0 be a semiring. §1 is the type of univariate polynomials\n"
-#~ "over §2, denoted as §3 within the Polynomial namespace."
-#~ msgstr "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4. "
-
-#, fuzzy
-#~| msgid "§0 is the closed interval §1."
-#~ msgid "§0 is the degree §1 monomial §2."
-#~ msgstr "§0 ist das geschlossene Intervall §1."
-
-#, fuzzy
-#~| msgid "Remind: §0 sees through local definitions"
-#~ msgid "Reminder: §0 and §1 can see through local definitions"
-#~ msgstr "**Robo**: Zur Erinnerung, §0 sieht durch lokale Definition hindurch."
-
-#~ msgid "[Hint cssuple] Perhaps, §0 is useful here."
-#~ msgstr "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die *kleinste* solche Schranke.  Die Eigenschaft wird durch §0 erfasst."
-
-#, fuzzy
-#~| msgid "Espresso"
-#~ msgid "Espresso L07"
-#~ msgstr "Espresso"
-
-#~ msgid ""
-#~ "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
-#~ "algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
-#~ msgstr ""
-#~ "**Du**: Soll ich es einfach wieder mit einer Bohne versuchen?\n"
-#~ "\n"
-#~ "Robo hat auch keine bessere Idee."
-
-#, fuzzy
-#~| msgid "Conclusion Espresso L01"
-#~ msgid "Conclusion Espresso L04"
-#~ msgstr ""
-#~ "**KKK 480658**: Ihr seid aber komisch.\n"
-#~ "\n"
-#~ "Robo zieht die Augenbrauen hoch. \n"
-#~ "\n"
-#~ "**Robo**:  Wieso komisch?\n"
-#~ "\n"
-#~ "**KKK 398515**: Na, weil ihr so einen umständlichen Beweis führt.  Ich verstehe den noch nicht mal."
-
-#~ msgid ""
-#~ "Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu unterscheiden:\n"
-#~ "§4"
-#~ msgstr ""
-#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis in die drei Fälle §1, §2 und §3 aufzuteilen:\n"
-#~ "\n"
-#~ "§4"
-
-#~ msgid ""
-#~ "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
-#~ "§3\n"
-#~ msgstr ""
-#~ "**Du**: Nun, es ist schon ziemlich klar, welches §0 man hier verwenden könnte.\n"
-#~ "\n"
-#~ "**Robo**: Wenn dir das so klar ist, dann fang doch schon einmal mit §1 an.\n"
-#~ "Und danach wirst du §2 gut gebrauchen können.  Zum Beispiel so:\n"
-#~ "§3\n"
-
-#, fuzzy
-#~| msgid "Maybe try §0 again"
-#~ msgid "I guess you can try §0 again."
-#~ msgstr "**Robo**: Vielleicht kannst du wieder §0 benutzen."
-
-#, fuzzy
-#~| msgid "Intro Cantor L04"
-#~ msgid "Intro Cafe L04"
-#~ msgstr " "
-
-#~ msgid "Instead of §0 can also write §1 (typed as §2 or §3)."
-#~ msgstr "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich."
-
-#, fuzzy
-#~| msgid "Conclusion Piazza L06: Explain that §0 means extensionality"
-#~ msgid "Conclusion Piazza L07: the complement §0 is §1."
-#~ msgstr ""
-#~ "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n"
-#~ "\n"
-#~ "**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n"
-#~ "\n"
-#~ "**Du**: Nein, ich meine dieses §0 hier!\n"
-#~ "\n"
-#~ "**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*. Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war."
-
-#~ msgid ""
-#~ "§0 is defined as §1.\n"
-#~ "In other words: §2.\n"
-#~ "\n"
-#~ "You have to write §3  instead of §4,\n"
-#~ "as §5 is ambigous in Leanic."
-#~ msgstr ""
-#~ "§0 ist als §1 definiert. Das bedeutet im Klartext natürlich §2.\n"
-#~ "\n"
-#~ "Du musst leider §3  statt §4 schreiben, da §5 in Leansch mehrdeutig ist."
-
-#~ msgid "Luna"
-#~ msgstr "Luna"
-
-#~ msgid "Intro Luna L01: Know that §0"
-#~ msgstr ""
-#~ "Du fühlst dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.\n"
-#~ "\n"
-#~ "**Du**: Ist gut, wir bemühen uns, nichts durcheinander zu bringen. Ist es sehr schwer, hier Ordnung zu halten?\n"
-#~ "\n"
-#~ "**Lina**: Man muss zum Beispiel wissen, dass §0 ist."
-
-#~ msgid "Try using §0 here"
-#~ msgstr "**Robo**: §0?"
-
-#~ msgid ""
-#~ "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
-#~ "§2 is only really applicable over integers."
-#~ msgstr ""
-#~ "Lina rollt die Augen.\n"
-#~ "\n"
-#~ "**Lina**: Ritha ist ein großer Fan von §0.  Dabei ist §1 ziemlich impotent. Sobald man die ganzen Zahlen verlässt, kann §2 gar nichts mehr.\n"
-#~ "\n"
-#~ "**Ritha**:  Selber impotent!\n"
-#~ "\n"
-#~ "Ritha macht eine unanständige Grimasse."
-
-#~ msgid "Intro Luna L02: For integers §0 or §1 means §2"
-#~ msgstr "**Lina**: Außerdem muss man zum Beispiel wissen, dass §0 oder §1 für ganze Zahlen nichts anderes bedeutet als §2."
-
-#~ msgid "Try out §0"
-#~ msgstr "**Ritha** *(flüsternd)*: Probiert mal §0!"
-
-#~ msgid "Conclusion Luna L03: Alternatively §0 could have been used."
-#~ msgstr "**Lina**:  Ihr hättet übrigens auch einfach §0 sagen können."
-
-#~ msgid "Now try §0!"
-#~ msgstr ""
-#~ "**Du**:  Und jetzt??\n"
-#~ "\n"
-#~ "**Lina** (*triumphal*): §0!"
-
-#~ msgid "Try §0, §1"
-#~ msgstr ""
-#~ "**Du**:  Fallunterscheidung ??\n"
-#~ "\n"
-#~ "**Robo**:  Ja, könntest du versuchen. Zum Beispiel erst §0 und dann §1."
-
-#~ msgid "Conclusion Luna L04"
-#~ msgstr "**Lina**:  Ja, okay, mein Fehler."
-
-#~ msgid "Try omega"
-#~ msgstr "Ritha scheint euch mit ihren Augen irgendein Zeichen geben zu wollen."
-
-#~ msgid "Divide §0 with §1"
-#~ msgstr "**Robo**:  Okay.  Das ist besser. Und jetzt kannst du §0 noch mit §1 in die beiden Bestandteile aufspalten."
-
-#~ msgid "Increase readability of §0. Try §1"
-#~ msgstr "**Robo**:  Und jetzt machst du die Annahme §0 ein bisschen lesbarer. Probier vielleicht einmal §1?"
-
-#~ msgid "We now have §0. Knowing what §1 means, try §2 with §3"
-#~ msgstr "**Robo**:  Mmm … §0 sieht immer noch suboptimal aus. Aber wir wissen ja, was §1 bedeutet – probier mal ein §2 mit §3!"
-
-#~ msgid ""
-#~ "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
-#~ "the implications via §3"
-#~ msgstr ""
-#~ "**Du** (*zu Robo*):  Hier komme ich weder mit §0 noch mit §1 weiter.\n"
-#~ "\n"
-#~ "**Robo**:  Ich glaube, du musst §2 nur etwas auf die Sprünge helfen. Lös am besten erst einmal ganz kanonisch die beiden Implikationen mit §3 auf."
-
-#~ msgid "Equality of sets demands §0"
-#~ msgstr "**Robo**: Gleichheit von Mengen ruft nach §0."
-
-#~ msgid ""
-#~ "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
-#~ "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
-#~ "goal is: §4"
-#~ msgstr ""
-#~ "**Du**:  Was ist denn §0?\n"
-#~ "\n"
-#~ "**Ritha**:  Na das **I**ntervall, das links **c**losed und rechts **c**losed, also abgeschlossen ist.\n"
-#~ "\n"
-#~ "**Robo**:  Du würdest §1 vermutlich als §2 schreiben, oder als §3, weil wir ja hier wieder in den natürlichen Zahlen sind. Zu zeigen ist also:\n"
-#~ "\n"
-#~ "§4"
-
-#~ msgid "Ritha gives signs to try omega"
-#~ msgstr "Ritha macht wieder irgendwelche Zeichen."
-
-#~ msgid "Try §0 afterwards"
-#~ msgstr "**Robo**:  Schieß mal gleich noch ein §0 hinterher."
-
-#~ msgid "Conclusion Luna L07"
-#~ msgstr "**Du**: Nicht schlecht!"
-
-#~ msgid ""
-#~ "Given\n"
-#~ "\n"
-#~ "§0\n"
-#~ "\n"
-#~ "Show\n"
-#~ "§1\n"
-#~ msgstr ""
-#~ "**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben ist:\n"
-#~ "\n"
-#~ "§0\n"
-#~ "\n"
-#~ "Und wir sollen zeigen:\n"
-#~ "\n"
-#~ "§1\n"
-#~ "\n"
-#~ "Robo??\n"
-#~ "\n"
-#~ "Lina grinst.\n"
-
-#~ msgid "Definitely use §0"
-#~ msgstr "**Ritha**:  Probier unbedingt mal §0."
-
-#~ msgid "Intro Luna L08"
-#~ msgstr "**Ritha**:  Jetzt ich wieder!"
-
-#~ msgid "Conclusion Luna L09"
-#~ msgstr "**Lina**: Habt ihr gut gemacht!  Schade, dass ihr schon weiterfliegen müsst. Aber wenn ihr noch länger bleibt, bringt ihr unseren Tagesrhythmus völlig durcheinander."
-
-#~ msgid "Intro Luna L09"
-#~ msgstr "**Lina**:  Jetzt ich wieder."
-
-#~ msgid "Intro Luna L10: Use §0 again"
-#~ msgstr ""
-#~ "**Ritha** (*zu Lina*):  Bitte, lass mich doch auch noch eine Frage stellen …\n"
-#~ "\n"
-#~ "**Lina**:  Okay, eine einzige …  Aber nicht wieder zu §0!\n"
-#~ "\n"
-#~ "Ritha macht große Augen und sieht Lina flehend an.\n"
-#~ "\n"
-#~ "**Lina**:  Wenns *unbedingt* sein muss.  Aber mach schnell! Wir haben jetzt wirklich keine Zeit mehr!"
-
-#~ msgid "Try using §0 and if nothing else helps, §1"
-#~ msgstr "**Robo**: Vielleicht hilft hier mal wieder §0.  Und wenn gar nichts geht, probier mal §1."
-
-#~ msgid ""
-#~ "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
-#~ "Formulate §4 using §5"
-#~ msgstr "**Robo**:  Die Annahme §0 musst du sicherlich irgendwie ausnutzen. Du könnest §1 zum Beispiel auf die Ungleichung §2 oder auf §3 anwenden! (Die Ungleichung §4 formulierst du am besten mit §5 aus.)"
-
-#~ msgid "Use the result §0"
-#~ msgstr "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß §0."
-
-#~ msgid "Observe equality"
-#~ msgstr "**Robo**: Die beiden Seiten sind per Definition gleich!"
-
-#~ msgid "Remind former result for §0. Try §1"
-#~ msgstr ""
-#~ "**Du**: Wir hatten doch eben festgestellt, dass §0 gilt!\n"
-#~ "\n"
-#~ "**Robo**: Nachschlagen kann ich gut! Das war §1."
-
-#~ msgid "Remind missed argument with §0"
-#~ msgstr ""
-#~ "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?\n"
-#~ "\n"
-#~ "**Robo**: Ganz am Anfang bei §0 hast du vermutlich dieses Argument ausgelassen.  Jetzt kannst du es noch nachholen."
-
-#~ msgid "Explain surcetivity by §0"
-#~ msgstr ""
-#~ "**Robo**:  Eine Abbildung ist genau dann surjektiv, wenn die induzierte Abbildung §0, die eine Teilmenge auf das Urbild dieser Teilmenge wirft, injektiv ist? Stimmt das überhaupt?\n"
-#~ "\n"
-#~ "**Du**: Ich glaube, ja.  Das habe ich schonmal gesehen.\n"
-#~ "\n"
-#~ "**Robo**:  Na dann, los!"
-
-#~ msgid "Intro Saturn L03"
-#~ msgstr "Noch ein Funkspruch."
-
-#~ msgid "Conclusion Saturn L05"
-#~ msgstr ""
-#~ "“Bestanden” heißt es kurz und knapp vom anonymen Funker.\n"
-#~ "\n"
-#~ "**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert. Nichts wie weg!"
-
-#~ msgid "Remind: §0 from §1 could be helpful"
-#~ msgstr "**Robo**: Denk daran, dass §0 irgendwann hilfreich sein könnte."
-
-#~ msgid "try §0"
-#~ msgstr "**Robo**:  Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen."
-
-#~ msgid "Pull function into sum"
-#~ msgstr "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
-
-#~ msgid "Try Assumption tactic"
-#~ msgstr "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
-
-#~ msgid "Try obtain tactic"
-#~ msgstr "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
-
-#~ msgid "mysterious"
-#~ msgstr "(mysteriöser Eintrag)"
-
-#~ msgid "This kind of logical expression can often be solved via §0."
-#~ msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
-
-#~ msgid "Conclusion Spinoza L04"
-#~ msgstr "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
-
-#~ msgid ""
-#~ "§0 bedeutet naheliegenderweise, dass die Abbildung §1 surjektiv ist.\n"
-#~ "Mit §2 (bzw. §3) kann man leicht nachsehen, was das\n"
-#~ "in Quantorenschreibweise konkret bedeutet."
-#~ msgstr ""
-#~ "§0 bedeutet naheliegenderweise, dass die Abbildung §1 surjektiv ist.\n"
-#~ "Mit §2 (bzw. §3) kann man leicht nachsehen, was das in Quantorenschreibweise konkret bedeutet."
-
-#~ msgid ""
-#~ "Ist eine Teilmenge §0 mit der Annahme §1 gegeben,\n"
-#~ "so ist §2 dieselbe Teilmenge §3,\n"
-#~ "aber nun explizit als endliche Teilmenge aufgefasst."
-#~ msgstr "Ist eine Teilmenge §0 mit der Annahme §1 gegeben, so ist §2 dieselbe Teilmenge §3, aber nun explizit als endliche Teilmenge aufgefasst."
-
-#~ msgid ""
-#~ "§0 means that an element in §1 (“of type §2”) exists.\n"
-#~ "If §3 is given as an assumption, we obtain an element §4 with §5.\n"
-#~ "Conversely, if we already have an element §6 given or constructed,\n"
-#~ "we can prove §7 with §8.\n"
-#~ "\n"
-#~ "Similarly, for a subset §9, the statement §10 is defined as §11.\n"
-#~ "In this case, you can easily check this with §12."
-#~ msgstr ""
-#~ "§0 bedeutet, dass ein Element in §1 („vom Typ §2“) existiert.\n"
-#~ "Ist §3 als Annahme gegeben, erhalten wir ein Element §4 mit §5.\n"
-#~ "Haben wir umgekehrt bereits ein Element §6 gegeben oder konstruiert, so können wir §7 mit §8 beweisen.\n"
-#~ "\n"
-#~ "Analog ist für eine Teilmenge §9 die Aussage §10 definiert als als §11.\n"
-#~ "Das kannst du in diesem Fall leicht mit §12 überprüfen."
-
-#~ msgid "Divide «{h}» into three by §0"
-#~ msgstr "**Robo**:  Die Annahme «{h}» kannst du ja jetzt mit §0 in die drei Fälle aufteilen."
-
-#~ msgid ""
-#~ "Now §0?\n"
-#~ "No, first §1:\n"
-#~ "§2"
-#~ msgstr ""
-#~ "**Du**:  Und jetzt also §0?\n"
-#~ "\n"
-#~ "**Robo**:  F"
-
-#~ msgid ""
-#~ "§0 would lead you to your goal. Note that §1 is a tautology.\n"
-#~ "To apply §2 it has to be abstracted e.g. with\n"
-#~ "§3\n"
-#~ msgstr ""
-#~ "**Du**: Und jetzt §0?\n"
-#~ "\n"
-#~ "**Robo**: Ja, das würde zum Ziel führen. Aber eigentlich ist §1 ja eine Tautologie. Damit §2 sie erkennt, musst du sie nur entsprechend abstrahieren. Das ginge hier zum Beispiel mit:\n"
-#~ "§3\n"
-
-#~ msgid "Divide «{h}» with §0"
-#~ msgstr "**Robo**: Hier würde ich die Annahme «{h}» nochmals mit §0 aufteilen."
-
-#~ msgid "Try §0 §1"
-#~ msgstr "**Robo**: Nochmals §0."
-
-#~ msgid "Divide assumption «{h}» using §0"
-#~ msgstr "**Robo**: Ich würd zuerst die Annahme «{h}» mit §0 aufteilen."
-
-#~ msgid "Sagt dass §0 das gleiche ist wie §1."
-#~ msgstr "Sagt dass §0 das gleiche ist wie §1."
-
-#~ msgid "Conclusion Cantor L09 - 1"
-#~ msgstr "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche Aufgabe nochmals lösen."
-
-#~ msgid "Intro Cantor L09 - 1"
-#~ msgstr "**Cantor**: Viel Glück!"
 
 #~ msgid ""
 #~ "# Game Over or QED\n"
@@ -13100,37 +12823,6 @@ msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Th
 #~ "Hintergrundinformationen und Credits findest du im Menü unter *Game Info*."
 
 #, fuzzy
-#~| msgid ""
-#~| "## Project ADAM\n"
-#~| "\n"
-#~| "This educational game was developed as part of the project\n"
-#~| "[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\n"
-#~| "at Heinrich Heine University Düsseldorf,\n"
-#~| "funded by the *Freiraum 2022* program of the *Stiftung Innovation in der Hochschullehre* (Foundation for Innovation in Higher Education).\n"
-#~| "Ongoing maintenance and development are generously supported by Renaissance Philanthropy through the AI for Math Fund.\n"
-#~| "\n"
-#~| "## Game content\n"
-#~| "\n"
-#~| "**Spoiler alert** You can find an overview of the rough mathematical content of all planets on [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content).\n"
-#~| "\n"
-#~| "## Credits\n"
-#~| "\n"
-#~| "* **Project management:** Marcus Zibrowius, Immi Halupczok\n"
-#~| "* **Game engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – see [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n"
-#~| "* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n"
-#~| "* **Concept & Story:** Marcus Zibrowius\n"
-#~| "* **Illustrations:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n"
-#~| "\n"
-#~| "## Contact\n"
-#~| "\n"
-#~| "The game is constantly being revised.\n"
-#~| "We welcome your feedback, suggestions, and criticism,\n"
-#~| "for example, by email to\n"
-#~| "[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\n"
-#~| "If you have specific change requests or find errors, you are also welcome to create an issue on GitHub:\n"
-#~| "\n"
-#~| "* for game content in the [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
-#~| "* for the game server in the [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
 #~ msgid ""
 #~ "## Project ADAM\n"
 #~ "\n"
@@ -13188,5 +12880,497 @@ msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Th
 #~ "* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues), \n"
 #~ "* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
 
+#~ msgid "Conclusion Cantor L09 - 1"
+#~ msgstr "**Du**: Jetzt möchte ich aber mit dieser generellen Form, die ursprüngliche Aufgabe nochmals lösen."
+
+#, fuzzy
+#~ msgid "Conclusion Espresso L04"
+#~ msgstr ""
+#~ "**KKK 480658**: Ihr seid aber komisch.\n"
+#~ "\n"
+#~ "Robo zieht die Augenbrauen hoch. \n"
+#~ "\n"
+#~ "**Robo**:  Wieso komisch?\n"
+#~ "\n"
+#~ "**KKK 398515**: Na, weil ihr so einen umständlichen Beweis führt.  Ich verstehe den noch nicht mal."
+
+#~ msgid ""
+#~ "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
+#~ "§2 is only really applicable over integers."
+#~ msgstr ""
+#~ "Lina rollt die Augen.\n"
+#~ "\n"
+#~ "**Lina**: Ritha ist ein großer Fan von §0.  Dabei ist §1 ziemlich impotent. Sobald man die ganzen Zahlen verlässt, kann §2 gar nichts mehr.\n"
+#~ "\n"
+#~ "**Ritha**:  Selber impotent!\n"
+#~ "\n"
+#~ "Ritha macht eine unanständige Grimasse."
+
+#~ msgid "Conclusion Luna L03: Alternatively §0 could have been used."
+#~ msgstr "**Lina**:  Ihr hättet übrigens auch einfach §0 sagen können."
+
+#~ msgid "Conclusion Luna L04"
+#~ msgstr "**Lina**:  Ja, okay, mein Fehler."
+
+#~ msgid "Conclusion Luna L07"
+#~ msgstr "**Du**: Nicht schlecht!"
+
+#~ msgid "Conclusion Luna L09"
+#~ msgstr "**Lina**: Habt ihr gut gemacht!  Schade, dass ihr schon weiterfliegen müsst. Aber wenn ihr noch länger bleibt, bringt ihr unseren Tagesrhythmus völlig durcheinander."
+
+#, fuzzy
+#~ msgid "Conclusion Piazza L07: the complement §0 is §1."
+#~ msgstr ""
+#~ "**Du** *(zu Robo)*:  Warum heißt ext eigentlich ext?\n"
+#~ "\n"
+#~ "**Robo**:  Woher soll ich wissen, woher der Junge seinen Namen hat??\n"
+#~ "\n"
+#~ "**Du**: Nein, ich meine dieses §0 hier!\n"
+#~ "\n"
+#~ "**Robo**: Ach so. Das Prinzip, dass zwei Mengen genau dann gleich sind, wenn sie dieselben Elemente besitzen, nennen Logiker *extensionality*. Und daraus haben die Formalosophen wohl *ext* gemacht, weil es ihnen sonst zu lang war."
+
+#~ msgid "Conclusion Saturn L05"
+#~ msgstr ""
+#~ "“Bestanden” heißt es kurz und knapp vom anonymen Funker.\n"
+#~ "\n"
+#~ "**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeniert. Nichts wie weg!"
+
+#, fuzzy
+#~ msgid "Conclusion Shade L01: saved as §0."
+#~ msgstr ""
+#~ "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?\n"
+#~ "\n"
+#~ "**Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als §0 ab, falls wir es nochmals brauchen.\n"
+#~ "\n"
+#~ "Damit folgt ihr weiter der Spur."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L02: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L03: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L04: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L05: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L06: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L07: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#, fuzzy
+#~ msgid "Conclusion Shade L08: saved as §0."
+#~ msgstr "**Robo**: Ich speichere dieses §0 auch mal, wer weiß."
+
+#~ msgid "Conclusion Spinoza L04"
+#~ msgstr "**Benedictus**: Ich sehe schon, Ihr lernt schnell!"
+
+#~ msgid "Definitely use §0"
+#~ msgstr "**Ritha**:  Probier unbedingt mal §0."
+
+#~ msgid "Divide assumption «{h}» using §0"
+#~ msgstr "**Robo**: Ich würd zuerst die Annahme «{h}» mit §0 aufteilen."
+
+#~ msgid "Divide §0 with §1"
+#~ msgstr "**Robo**:  Okay.  Das ist besser. Und jetzt kannst du §0 noch mit §1 in die beiden Bestandteile aufspalten."
+
+#~ msgid "Divide «{h}» into three by §0"
+#~ msgstr "**Robo**:  Die Annahme «{h}» kannst du ja jetzt mit §0 in die drei Fälle aufteilen."
+
+#~ msgid "Divide «{h}» with §0"
+#~ msgstr "**Robo**: Hier würde ich die Annahme «{h}» nochmals mit §0 aufteilen."
+
+#~ msgid "Equality of sets demands §0"
+#~ msgstr "**Robo**: Gleichheit von Mengen ruft nach §0."
+
+#, fuzzy
+#~ msgid "Espresso L07"
+#~ msgstr "Espresso"
+
+#~ msgid "Explain surcetivity by §0"
+#~ msgstr ""
+#~ "**Robo**:  Eine Abbildung ist genau dann surjektiv, wenn die induzierte Abbildung §0, die eine Teilmenge auf das Urbild dieser Teilmenge wirft, injektiv ist? Stimmt das überhaupt?\n"
+#~ "\n"
+#~ "**Du**: Ich glaube, ja.  Das habe ich schonmal gesehen.\n"
+#~ "\n"
+#~ "**Robo**:  Na dann, los!"
+
+#~ msgid ""
+#~ "Given\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "Show\n"
+#~ "§1\n"
+#~ msgstr ""
+#~ "**Du**:  Das muss ich mir erst noch einmal untereinander schreiben.  Gegeben ist:\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "Und wir sollen zeigen:\n"
+#~ "\n"
+#~ "§1\n"
+#~ "\n"
+#~ "Robo??\n"
+#~ "\n"
+#~ "Lina grinst.\n"
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+#~ "  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
+
+#, fuzzy
+#~ msgid "I guess you can try §0 again."
+#~ msgstr "**Robo**: Vielleicht kannst du wieder §0 benutzen."
+
+#, fuzzy
+#~ msgid "If §0 and §1 is bounded above, then §2."
+#~ msgstr "**Du**: Also, §0 ist wieder so ein Prädikat … Wenn §1 eine Person ist, ist §2 eine Aussage, die wahr oder falsch ist. Soweit so gut."
+
+#~ msgid "Increase readability of §0. Try §1"
+#~ msgstr "**Robo**:  Und jetzt machst du die Annahme §0 ein bisschen lesbarer. Probier vielleicht einmal §1?"
+
+#~ msgid "Instead of §0 can also write §1 (typed as §2 or §3)."
+#~ msgstr "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich."
+
+#, fuzzy
+#~ msgid "Intro Cafe L04"
+#~ msgstr " "
+
+#~ msgid "Intro Cantor L09 - 1"
+#~ msgstr "**Cantor**: Viel Glück!"
+
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n"
+#~ "\n"
+#~ "**Du**: Was?\n"
+#~ "\n"
+#~ "**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe."
+
+#~ msgid "Intro Luna L01: Know that §0"
+#~ msgstr ""
+#~ "Du fühlst dich ein wenig überfahren, aber versuchst trotzdem, ein Gespräch zu beginnen.\n"
+#~ "\n"
+#~ "**Du**: Ist gut, wir bemühen uns, nichts durcheinander zu bringen. Ist es sehr schwer, hier Ordnung zu halten?\n"
+#~ "\n"
+#~ "**Lina**: Man muss zum Beispiel wissen, dass §0 ist."
+
+#~ msgid "Intro Luna L02: For integers §0 or §1 means §2"
+#~ msgstr "**Lina**: Außerdem muss man zum Beispiel wissen, dass §0 oder §1 für ganze Zahlen nichts anderes bedeutet als §2."
+
+#~ msgid "Intro Luna L08"
+#~ msgstr "**Ritha**:  Jetzt ich wieder!"
+
+#~ msgid "Intro Luna L09"
+#~ msgstr "**Lina**:  Jetzt ich wieder."
+
+#~ msgid "Intro Luna L10: Use §0 again"
+#~ msgstr ""
+#~ "**Ritha** (*zu Lina*):  Bitte, lass mich doch auch noch eine Frage stellen …\n"
+#~ "\n"
+#~ "**Lina**:  Okay, eine einzige …  Aber nicht wieder zu §0!\n"
+#~ "\n"
+#~ "Ritha macht große Augen und sieht Lina flehend an.\n"
+#~ "\n"
+#~ "**Lina**:  Wenns *unbedingt* sein muss.  Aber mach schnell! Wir haben jetzt wirklich keine Zeit mehr!"
+
+#~ msgid "Intro Saturn L03"
+#~ msgstr "Noch ein Funkspruch."
+
+#, fuzzy
+#~ msgid "Intro Shade"
+#~ msgstr ""
+#~ "Ihr seid auf einem Eisplaneten gelandet, direkt neben einem Eispalast.  Du hast das Gefühl, diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen, wo das gewesen sein könnte.\n"
+#~ "\n"
+#~ "Direkt am Eingang empfängt euch ein pinguinartiges Wesen.\n"
+#~ "\n"
+#~ "**Guino**: Willkommen im Prado!\n"
+#~ "Ich bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher! \n"
+#~ "Nun gut, wir haben ja auch gerade erst eröffnet.\n"
+#~ "Kommt rein, kommt rein!\n"
+#~ "Ihr seid diese Erdleute, von denen allen berichten, nicht wahr?\n"
+#~ "\n"
+#~ "**Du**:  Ähm, ja.  Und ihr seid …?\n"
+#~ "\n"
+#~ "**Guino**:  Guino, Museumsdirektor des Prado – des PRimzahlen-ADOrationsmuseums!  Kommt, kommt!\n"
+#~ "\n"
+#~ "Guino führt euch die Stufen am Eingang hinauf und durch das Portal in eine große Halle. In der Mitte schwebt ein kleines Podest. Darauf liegen zwei Murmeln.\n"
+#~ "\n"
+#~ "**Guino**: Seht, seht!  Unser erstes Exponat!  Die Primzahl ZWEI!\n"
+#~ "\n"
+#~ "Ihr seid beide etwas perplex.  Guino hebt die Augenbrauen.\n"
+#~ "\n"
+#~ "**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?"
+
+#, fuzzy
+#~ msgid "Intro Shade L03"
+#~ msgstr "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben."
+
+#~ msgid ""
+#~ "Ist eine Teilmenge §0 mit der Annahme §1 gegeben,\n"
+#~ "so ist §2 dieselbe Teilmenge §3,\n"
+#~ "aber nun explizit als endliche Teilmenge aufgefasst."
+#~ msgstr "Ist eine Teilmenge §0 mit der Annahme §1 gegeben, so ist §2 dieselbe Teilmenge §3, aber nun explizit als endliche Teilmenge aufgefasst."
+
+#~ msgid ""
+#~ "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**Du**: Nun, es ist schon ziemlich klar, welches §0 man hier verwenden könnte.\n"
+#~ "\n"
+#~ "**Robo**: Wenn dir das so klar ist, dann fang doch schon einmal mit §1 an.\n"
+#~ "Und danach wirst du §2 gut gebrauchen können.  Zum Beispiel so:\n"
+#~ "§3\n"
+
+#~ msgid ""
+#~ "Let §0 be a semiring. §1 is the type of univariate polynomials\n"
+#~ "over §2, denoted as §3 within the Polynomial namespace."
+#~ msgstr "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4. "
+
+#~ msgid "Luna"
+#~ msgstr "Luna"
+
+#~ msgid "Now try §0!"
+#~ msgstr ""
+#~ "**Du**:  Und jetzt??\n"
+#~ "\n"
+#~ "**Lina** (*triumphal*): §0!"
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
+
+#~ msgid ""
+#~ "Now §0?\n"
+#~ "No, first §1:\n"
+#~ "§2"
+#~ msgstr ""
+#~ "**Du**:  Und jetzt also §0?\n"
+#~ "\n"
+#~ "**Robo**:  F"
+
+#~ msgid "Observe equality"
+#~ msgstr "**Robo**: Die beiden Seiten sind per Definition gleich!"
+
+#~ msgid "Pull function into sum"
+#~ msgstr "**Du**: Als nächstes ziehen wir die Funktion in die Summe rein."
+
 #~ msgid "QED"
 #~ msgstr "QED"
+
+#~ msgid "Remind former result for §0. Try §1"
+#~ msgstr ""
+#~ "**Du**: Wir hatten doch eben festgestellt, dass §0 gilt!\n"
+#~ "\n"
+#~ "**Robo**: Nachschlagen kann ich gut! Das war §1."
+
+#~ msgid "Remind missed argument with §0"
+#~ msgstr ""
+#~ "**Du**: Wo kommt denn dieses Beweisziel jetzt noch her?\n"
+#~ "\n"
+#~ "**Robo**: Ganz am Anfang bei §0 hast du vermutlich dieses Argument ausgelassen.  Jetzt kannst du es noch nachholen."
+
+#~ msgid ""
+#~ "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
+#~ "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
+#~ "goal is: §4"
+#~ msgstr ""
+#~ "**Du**:  Was ist denn §0?\n"
+#~ "\n"
+#~ "**Ritha**:  Na das **I**ntervall, das links **c**losed und rechts **c**losed, also abgeschlossen ist.\n"
+#~ "\n"
+#~ "**Robo**:  Du würdest §1 vermutlich als §2 schreiben, oder als §3, weil wir ja hier wieder in den natürlichen Zahlen sind. Zu zeigen ist also:\n"
+#~ "\n"
+#~ "§4"
+
+#~ msgid "Remind: §0 from §1 could be helpful"
+#~ msgstr "**Robo**: Denk daran, dass §0 irgendwann hilfreich sein könnte."
+
+#, fuzzy
+#~ msgid "Reminder: §0 and §1 can see through local definitions"
+#~ msgstr "**Robo**: Zur Erinnerung, §0 sieht durch lokale Definition hindurch."
+
+#~ msgid "Ritha gives signs to try omega"
+#~ msgstr "Ritha macht wieder irgendwelche Zeichen."
+
+#~ msgid "Sagt dass §0 das gleiche ist wie §1."
+#~ msgstr "Sagt dass §0 das gleiche ist wie §1."
+
+#~ msgid "This kind of logical expression can often be solved via §0."
+#~ msgstr "Logische Äquivalenzen wie diese können auch mit §0 bewiesen werden."
+
+#~ msgid "Try Assumption tactic"
+#~ msgstr "**Robo**: Du hast einen Beweis dafür in den *Annahmen*."
+
+#~ msgid "Try obtain tactic"
+#~ msgstr "**Robo**: Das sieht doch schon besser aus! Gleich nochmal!"
+
+#~ msgid "Try omega"
+#~ msgstr "Ritha scheint euch mit ihren Augen irgendein Zeichen geben zu wollen."
+
+#~ msgid "Try out §0"
+#~ msgstr "**Ritha** *(flüsternd)*: Probiert mal §0!"
+
+#~ msgid "Try using §0 and if nothing else helps, §1"
+#~ msgstr "**Robo**: Vielleicht hilft hier mal wieder §0.  Und wenn gar nichts geht, probier mal §1."
+
+#~ msgid "Try using §0 here"
+#~ msgstr "**Robo**: §0?"
+
+#~ msgid "Try §0 afterwards"
+#~ msgstr "**Robo**:  Schieß mal gleich noch ein §0 hinterher."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
+#~ "\n"
+#~ "**Du**: Könnte ich jetzt schon §2 anwenden?\n"
+#~ "\n"
+#~ "**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
+#~ "\n"
+#~ "**Du**: Aber wie würde ich das machen?\n"
+#~ "\n"
+#~ "**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
+
+#~ msgid "Try §0 §1"
+#~ msgstr "**Robo**: Nochmals §0."
+
+#~ msgid "Try §0, §1"
+#~ msgstr ""
+#~ "**Du**:  Fallunterscheidung ??\n"
+#~ "\n"
+#~ "**Robo**:  Ja, könntest du versuchen. Zum Beispiel erst §0 und dann §1."
+
+#~ msgid ""
+#~ "Typicall used with §0 to distinguish the three cases §1, §2 und §3 zu unterscheiden:\n"
+#~ "§4"
+#~ msgstr ""
+#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis in die drei Fälle §1, §2 und §3 aufzuteilen:\n"
+#~ "\n"
+#~ "§4"
+
+#~ msgid ""
+#~ "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
+#~ "Formulate §4 using §5"
+#~ msgstr "**Robo**:  Die Annahme §0 musst du sicherlich irgendwie ausnutzen. Du könnest §1 zum Beispiel auf die Ungleichung §2 oder auf §3 anwenden! (Die Ungleichung §4 formulierst du am besten mit §5 aus.)"
+
+#~ msgid "Use the result §0"
+#~ msgstr "**Robo**: Das Resultat, das du hier anwenden wolltest, hieß §0."
+
+#~ msgid "Use §0 as e.g. §1"
+#~ msgstr ""
+#~ "**Du**: Also hier jetzt §0 verwenden?\n"
+#~ "\n"
+#~ "**Robo**: Vermutlich, zum Beispiel mit §1."
+
+#~ msgid "We now have §0. Knowing what §1 means, try §2 with §3"
+#~ msgstr "**Robo**:  Mmm … §0 sieht immer noch suboptimal aus. Aber wir wissen ja, was §1 bedeutet – probier mal ein §2 mit §3!"
+
+#, fuzzy
+#~ msgid "[Hint 7xd8e] Remember §0"
+#~ msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
+
+#~ msgid "[Hint cssuple] Perhaps, §0 is useful here."
+#~ msgstr "**Robo**:  Ich vermute, hier müssen wir die andere Eigenschaft des Supremums benutzen.  Es ist ja nicht einfach irgendeine obere Schranke, sondern die *kleinste* solche Schranke.  Die Eigenschaft wird durch §0 erfasst."
+
+#, fuzzy
+#~ msgid "[Hint eymq5] Now §0 §1."
+#~ msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+
+#~ msgid ""
+#~ "[Hint grindRing] This goal is a polynomial identity that follows from the hypotheses by\n"
+#~ "algebraic manipulation. §0 can call §1 to close such goals, so just try §2."
+#~ msgstr ""
+#~ "**Du**: Soll ich es einfach wieder mit einer Bohne versuchen?\n"
+#~ "\n"
+#~ "Robo hat auch keine bessere Idee."
+
+#, fuzzy
+#~ msgid "[Hint itvIoo] Just §0 §1."
+#~ msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
+
+#, fuzzy
+#~ msgid "[Hint ltssup] Unfold §0 in §1 to see §2."
+#~ msgstr "**Robo**: Vielleicht öffnest du zuerst mal §0 mit §1. Dann steht da §2 …"
+
+#, fuzzy
+#~ msgid "[Hint ux181] Remember §0."
+#~ msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
+
+#~ msgid "mysterious"
+#~ msgstr "(mysteriöser Eintrag)"
+
+#~ msgid "try §0"
+#~ msgstr "**Robo**:  Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen."
+
+#~ msgid ""
+#~ "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
+#~ "the implications via §3"
+#~ msgstr ""
+#~ "**Du** (*zu Robo*):  Hier komme ich weder mit §0 noch mit §1 weiter.\n"
+#~ "\n"
+#~ "**Robo**:  Ich glaube, du musst §2 nur etwas auf die Sprünge helfen. Lös am besten erst einmal ganz kanonisch die beiden Implikationen mit §3 auf."
+
+#~ msgid ""
+#~ "§0 bedeutet naheliegenderweise, dass die Abbildung §1 surjektiv ist.\n"
+#~ "Mit §2 (bzw. §3) kann man leicht nachsehen, was das\n"
+#~ "in Quantorenschreibweise konkret bedeutet."
+#~ msgstr ""
+#~ "§0 bedeutet naheliegenderweise, dass die Abbildung §1 surjektiv ist.\n"
+#~ "Mit §2 (bzw. §3) kann man leicht nachsehen, was das in Quantorenschreibweise konkret bedeutet."
+
+#~ msgid ""
+#~ "§0 is defined as §1.\n"
+#~ "In other words: §2.\n"
+#~ "\n"
+#~ "You have to write §3  instead of §4,\n"
+#~ "as §5 is ambigous in Leanic."
+#~ msgstr ""
+#~ "§0 ist als §1 definiert. Das bedeutet im Klartext natürlich §2.\n"
+#~ "\n"
+#~ "Du musst leider §3  statt §4 schreiben, da §5 in Leansch mehrdeutig ist."
+
+#, fuzzy
+#~ msgid "§0 is the degree §1 monomial §2."
+#~ msgstr "§0 ist das geschlossene Intervall §1."
+
+#~ msgid ""
+#~ "§0 means that an element in §1 (“of type §2”) exists.\n"
+#~ "If §3 is given as an assumption, we obtain an element §4 with §5.\n"
+#~ "Conversely, if we already have an element §6 given or constructed,\n"
+#~ "we can prove §7 with §8.\n"
+#~ "\n"
+#~ "Similarly, for a subset §9, the statement §10 is defined as §11.\n"
+#~ "In this case, you can easily check this with §12."
+#~ msgstr ""
+#~ "§0 bedeutet, dass ein Element in §1 („vom Typ §2“) existiert.\n"
+#~ "Ist §3 als Annahme gegeben, erhalten wir ein Element §4 mit §5.\n"
+#~ "Haben wir umgekehrt bereits ein Element §6 gegeben oder konstruiert, so können wir §7 mit §8 beweisen.\n"
+#~ "\n"
+#~ "Analog ist für eine Teilmenge §9 die Aussage §10 definiert als als §11.\n"
+#~ "Das kannst du in diesem Fall leicht mit §12 überprüfen."
+
+#~ msgid ""
+#~ "§0 would lead you to your goal. Note that §1 is a tautology.\n"
+#~ "To apply §2 it has to be abstracted e.g. with\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**Du**: Und jetzt §0?\n"
+#~ "\n"
+#~ "**Robo**: Ja, das würde zum Ziel führen. Aber eigentlich ist §1 ja eine Tautologie. Damit §2 sie erkennt, musst du sie nur entsprechend abstrahieren. Das ginge hier zum Beispiel mit:\n"
+#~ "§3\n"

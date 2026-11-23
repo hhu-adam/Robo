@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.29.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21\n"
+"POT-Creation-Date: 2026-11-23\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -3386,7 +3386,7 @@ msgstr ""
 #. §1: `obtain ⟨⟩ := «{h}»`
 #: Game/Levels/Logo/L14_Summary.lean:34
 msgid "Divide assumption §0 using §1"
-msgstr "**司南**：会先把假设 §0 用 §1 拆开。"
+msgstr "**司南**：我会先把假设 §0 用 §1 拆开。"
 
 #. §0: `∧`
 #. §1: `constructor`
@@ -6078,7 +6078,7 @@ msgstr ""
 "\n"
 "**司南**：§3 是集合 §4。所以这里的行、列索引是从 §5 开始，而不是从 §6。还有 §7 我正好认识：它是在位置 §8 处取值为 §9、其他地方全是 0 的矩阵。\n"
 "\n"
-"**你**：那这些 §10s 就只是 §11 这种情况的简写咯？\n"
+"**你**：那这些 §10 就只是 §11 这种情况的简写咯？\n"
 "\n"
 "**司南**：看起来是这样。而且 §12 就是矩阵 §13 在位置 §14 的那个条目。\n"
 "\n"
@@ -6221,7 +6221,6 @@ msgstr ""
 msgid "Conclusion Robotswana L05"
 msgstr "**你**：我感觉我们是在追踪一个对矩阵对角线感兴趣的人……不过我开始有点渴了！"
 
-# GPT: Mehrdeutig war hier v.a. das eingedeutschte/Codewort „§3e§4riten“ (= „rewriten“) und der Tippfehler „Gleichheitszeigen“; ich habe „Gleichheitszeichen“ als „等号“ verstanden und „rewriten“ als technischen Lean-Ausdruck stehen gelassen.
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `1`
 #. §2: `matrix_eq_sum_ebasis 1`
@@ -6231,7 +6230,7 @@ msgstr "**你**：我感觉我们是在追踪一个对矩阵对角线感兴趣�
 msgid ""
 "Try §0 on §1 with §2 to §3e§4rite\n"
 "goal."
-msgstr "**司南**：就像我刚才说的，我觉得你可以直接从 §0 开始，把它用在等号右边的单位矩阵 §1 上。也就是说，你可以用等式 §2 来重写目标 也就是§3§4。"
+msgstr "**司南**：就像我刚才说的，我觉得你可以直接从 §0 开始，把它用在等号右边的单位矩阵 §1 上。也就是说，你可以用等式 §2 来重写目标，也就是 §3§4。"
 
 #. §0: `matrix_eq_sum_ebasis`
 #. §1: `matrix_eq_sum_single`
@@ -6284,7 +6283,6 @@ msgstr "**司南**：很好。现在你就可以用 §0 了。"
 msgid "Explain simplification of §0 and §1"
 msgstr "**你**：谢谢，这很有帮助！这一步应该很简单：对单个元素求和，而这里 §0 又是 1，而且 §1 也能化简！"
 
-# GPT: „§0 kann man immer versuchen …“ lässt sich auch als „Man kann immer §0 versuchen …“ lesen; ich habe die näher am Original stehende Satzstellung mit vorangestelltem §0 gewählt.
 #. §0: `simp`
 #: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
 msgid "§0 is always available"
@@ -7032,7 +7030,7 @@ msgstr ""
 
 #: Game/Levels/Prado/L03_even_iff_two_dvd.lean:15
 msgid "Intro Prado L03"
-msgstr "你们跟着吉诺参观博物馆时，司南又给了你出了几道题。"
+msgstr "你们跟着吉诺参观博物馆时，司南又给你出了几道题。"
 
 #. §0: `rw [dvd_iff_exists_eq_mul_left]`
 #: Game/Levels/Prado/L03_even_iff_two_dvd.lean:26
@@ -7701,7 +7699,6 @@ msgstr ""
 "韦达小心翼翼地环顾四周，但最后还是站在原地。\n"
 "他镇定地把下一张纸递给你们。"
 
-# GPT: „Abbildungen“ kann je nach Kontext auch als „Funktionen“ übersetzt werden; wegen des Glossars und des mathematischen Kontexts habe ich mich für „映射“ entschieden. Außerdem habe ich das Auslassungszeichen als Unicode-„…. “ gesetzt wie gewünscht.
 #. §0: `funext`
 #. §1: `funext x`
 #. §2: `x`
@@ -8392,7 +8389,6 @@ msgstr ""
 "\n"
 "**司南**：一个单射映射 §0，如果它是某个映射 §1 的左逆，那么它也是那个映射的右逆。"
 
-# GPT: „Linksinverses“ könnte man auch als „linksseitiges Inverses“/„Links-Inverse“ formulieren; ich habe es als „左逆“ übersetzt (üblich in der Mathematik).
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:22
 msgid "Explain that a mapping, which is left inverse ..."
 msgstr "**你**：一个拥有左逆的映射是单射。我觉得好像听过……"
@@ -8402,7 +8398,6 @@ msgstr "**你**：一个拥有左逆的映射是单射。我觉得好像听过�
 msgid "Try using §0"
 msgstr "**司南**：也许可以试试和 §0 有关的方法？"
 
-# GPT: „durch“ kann „fertig“ oder „hindurch“ bedeuten; hier im Sinn von „fertig sein“ übersetzt.
 #: Game/Levels/Mono/L09_InjOfHasLeftInv.lean:42
 msgid "Conclusion Mono L09"
 msgstr "**司南**：干得好！我觉得我们在这儿很快就能搞定了……"
@@ -10380,20 +10375,23 @@ msgstr ""
 msgid "Intro Aquarius"
 msgstr ""
 
-#. §0: `f`
-#. §1: `s`
-#. §2: ```
+#. §0: ```
 #. Shade f := {s : ℝ | ∃ t > s, f t > f s}
 #. Sun   f := {s : ℝ | ∀ t > s, f t ≤ f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:8
+#. §1: `f`
+#. §2: `s`
+#. §3: `Shade f`
+#. §4: `t`
+#. §5: `Sun f`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:9
 msgid ""
-"Intro Shade L01: the two kinds of points.\n"
+"Intro Rigi L01: the two kinds of points.\n"
 "\n"
-"Think of the graph of §0 lit by a sun shining from the right.  A point §1 lies in the *shade*\n"
-"if some later point rises above it, and it is *sunny* if nothing to its right ever gets higher:\n"
+"§0\n"
 "\n"
-"§2\n"
+"Think of the graph of §1 lit by a sun shining from the right.  A point §2 lies in the *shade*\n"
+"(in §3) if at some later point §4 the graph rises above it, otherwise it is *sunny* (in §5).\n"
 "\n"
 "These two conditions are negations of each other, and your first job is to prove exactly that."
 msgstr ""
@@ -10406,7 +10404,7 @@ msgstr ""
 #. §5: ```
 #. Shade f := {s : ℝ | ∃ t > s, f t > f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:29
+#: Game/Levels/Rigi/L01_ShadeDef.lean:30
 msgid ""
 "§0 is the set of shade points of §1: those §2 for which there exists some\n"
 "§3 with §4.\n"
@@ -10421,77 +10419,64 @@ msgstr ""
 #. §5: ```
 #. Sun f := {s : ℝ | ∀ t > s, f t ≤ f s}
 #. ```
-#: Game/Levels/Shade/L01_ShadeDef.lean:37
+#: Game/Levels/Rigi/L01_ShadeDef.lean:38
 msgid ""
-"§0 is the set of sunny points of §1: those §2 with with §3 for all §4.\n"
+"§0 is the set of sunny points of §1: those §2 with §3 for all §4.\n"
 "§5"
 msgstr ""
 
-#: Game/Levels/Shade/L01_ShadeDef.lean:44
+#: Game/Levels/Rigi/L01_ShadeDef.lean:45
 msgid "Not being in the sun means lying in the shade."
 msgstr ""
 
-#. §0: `simp [Shade, Sun]`
-#. §1: `simp`
-#. §2: `∀`
-#: Game/Levels/Shade/L01_ShadeDef.lean:54
+#. §0: `simp`
+#. §1: `simp [Shade, Sun]`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:55
 msgid ""
-"Both sides are set-builder memberships. Unfold them with §0 and let\n"
-"§1 push the negation through the §2."
-msgstr ""
-
-#. §0: `not_mem_Sun_iff_mem_Shade`
-#: Game/Levels/Shade/L01_ShadeDef.lean:60
-msgid "Conclusion Shade L01: saved as §0."
+"Both sides are set-builder memberships.\n"
+"Use §0, or more precisely §1."
 msgstr ""
 
 #. §0: `simp`
 #. §1: `∃`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:8
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:9
 msgid ""
-"Intro Shade L02: the other direction.\n"
+"Intro Rigi L02: the other direction.\n"
 "\n"
 "The previous level said that failing to be sunny is the same as lying in the shade.  The mirror\n"
 "statement is just as useful: failing to lie in the shade is the same as being sunny.  It is proved\n"
 "the same way — unfold both sets and let §0 move the negation across the §1."
 msgstr ""
 
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:17
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:18
 msgid "A point fails to lie in the shade exactly when it is a sunny point."
 msgstr ""
 
-#. §0: `simp [Shade, Sun]`
-#. §1: `∃`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:21
-msgid ""
-"Same recipe as last time: §0. This time the negation\n"
-"has to pass  through an §1."
-msgstr ""
-
 #. §0: `not_mem_Shade_iff_mem_Sun`
-#: Game/Levels/Shade/L02_ShadeDefSymm.lean:27
-msgid "Conclusion Shade L02: saved as §0."
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:26
+msgid "Conclusion Rigi L02: saved as §0."
 msgstr ""
 
-#: Game/Levels/Shade/L03_MemSun.lean:9
-msgid "Intro Shade L03"
+#: Game/Levels/Rigi/L03_MemSun.lean:10
+msgid "Intro Rigi L03"
 msgstr ""
 
 #. §0: `a`
-#. §1: `f x ≤ f a`
-#. §2: `x > a`
-#: Game/Levels/Shade/L03_MemSun.lean:12
-msgid "If §0 is a sunny point, then §1 for every §2."
+#. §1: `f a ≥ f x`
+#. §2: `x`
+#. §3: `x > a`
+#: Game/Levels/Rigi/L03_MemSun.lean:12
+msgid "If §0 is a sunny point, then §1 for every §2 with §3."
 msgstr ""
 
 #. §0: `simp [Sun]`
-#: Game/Levels/Shade/L03_MemSun.lean:17
+#: Game/Levels/Rigi/L03_MemSun.lean:17
 msgid "[Hint w4joj] Try §0."
 msgstr ""
 
 #. §0: `mem_sun`
-#: Game/Levels/Shade/L03_MemSun.lean:21
-msgid "Conclusion Shade L03: saved as §0."
+#: Game/Levels/Rigi/L03_MemSun.lean:22
+msgid "Conclusion Rigi L03: saved as §0."
 msgstr ""
 
 #. §0: `b`
@@ -10502,9 +10487,9 @@ msgstr ""
 #. ```
 #. §4: `f b < f c`
 #. §5: `c`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:8
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:9
 msgid ""
-"Intro Shade L04: introduce the working set.\n"
+"Intro Rigi L04: introduce the working set.\n"
 "\n"
 "Fix a point §0.  We study the set of points to the right of b at which §1\n"
 "rises above §2:\n"
@@ -10518,303 +10503,235 @@ msgstr ""
 #. §0: `Shaders f c`
 #. §1: `t`
 #. §2: `c`
-#. §3: `f c < f t`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:25
+#. §3: `f c ≤ f t`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:26
 msgid "§0 is the set of §1 strictly larger than §2 such that §3."
 msgstr ""
 
 #. §0: `b`
-#. §1: `f b < f c`
-#. §2: `c`
-#. §3: `Shaders f c`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:28
-msgid ""
-"If §0 is not a shadow point, §1, and §2 is a shadow point, then §3\n"
-"is nonempty."
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:29
+msgid "If §0 is a shadow point, then §1 is nonempty."
 msgstr ""
 
 #. §0: `b`
 #. §1: `t > b`
 #. §2: `f t > f b`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:34
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:34
 msgid "Because §0 is in the shade, there is some §1 with §2"
 msgstr ""
 
 #. §0: `b ∈ Shade f`
 #. §1: `obtain ⟨t, …, …⟩ := hb`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:35
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:35
 msgid "[Hint 7xd8e] Unpack §0 with §1."
 msgstr ""
 
-#. §0: `use`
-#. §1: `t`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:37
-msgid "[Hint eymq5] Now §0 §1."
+#. §0: `use «{t}»`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:37
+msgid "[Hint eymq5] Now §0."
 msgstr ""
 
 #. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L04_ShadeSetNonempty.lean:43
-msgid "Conclusion Shade L04: saved as §0."
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:43
+msgid "Conclusion Rigi L04: saved as §0."
 msgstr ""
 
-#. §0: `sSup (Shaders f b)`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:8
+#. §0: `sSup`
+#. §1: `Shaders f b`
+#. §2: `sSup (Shaders f b)`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:9
 msgid ""
-"Intro Shade L05: a quick boundedness fact.\n"
+"Intro Rigi L05: a quick boundedness fact.\n"
 "\n"
-"To take the supremum §0, we also need the set to be bounded above."
+"To take the supremum §0 of §1 (i.e. §2), we also need the set to be bounded above."
 msgstr ""
 
 #. §0: `c`
-#. §1: `f b < f c`
+#. §1: `f c < f b`
 #. §2: `c`
 #. §3: `Shaders f b`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:15
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:16
 msgid "If §0 is a sunny point with §1, then §2 bounds §3 from above."
 msgstr ""
 
-#. §0: `c ∈ upperBounds (Shaders f b)`
-#. §1: `c`
+#. §0: `c`
+#. §1: `b`
 #. §2: `Shaders f b`
-#. §3: `∀ t ∈ Shaders f b, t ≤ b`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:21
-msgid ""
-"[Hint bbdshadeh] §0 means that §1 is a concrete upper bound of\n"
-"§2.  So the claim is:  §3."
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:22
+msgid "[Hint bbdshadeh]  If §0 is in the sun, but on lower elevation than §1, then c is an upper (i.e. eastward) bound on §2."
 msgstr ""
 
-#. §0: `t < c`
-#. §1: `t = c`
-#. §2: `c < t`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:24
-msgid "[Hint ufgrind] Now best distinguish the three cases §0, §1,§2"
+#. §0: `∀ t ∈ Shaders f b, t ≤ c`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:24
+msgid "[Hint vxovm] So the claim is:  §0."
+msgstr ""
+
+#. §0: `«{t}» < c`
+#. §1: `«{t}» = c`
+#. §2: `c < «{t}»`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:27
+msgid "[Hint yevhg] Now best distinguish the three cases §0, §1,§2"
 msgstr ""
 
 #. §0: `lt_trichotomy`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:25
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:28
 msgid "[Hint xpkm] Remember §0"
 msgstr ""
 
 #. §0: `upperBounds_Shaders`
-#: Game/Levels/Shade/L05_ShadeSetBddAbove.lean:37
-msgid "Conclusion Shade L05: saved as §0."
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:40
+msgid "Conclusion Rigi L05: saved as §0."
 msgstr ""
 
 #. §0: `b`
-#. §1: `Shaders f b`
-#. §2: `sSup (Shaders f b)`
-#. §3: `b`
-#. §4: `t`
-#. §5: `Shaders f b`
-#. §6: `b < t`
-#. §7: `t`
-#. §8: `b < sSup (Shaders f b)`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:8
-msgid ""
-"Intro Shade L06: the supremum lies strictly to the right of §0.\n"
-"\n"
-"Now that §1 is nonempty and bounded above, its supremum §2 exists.\n"
-"The first thing to know about it is that it sits strictly to the right of §3.\n"
-"\n"
-"The reason is short: pick any element §4 of §5.  By definition §6, and §7 is\n"
-"below the supremum, so §8."
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:8
+msgid "Intro Rigi L06: the supremum lies strictly to the right of §0."
 msgstr ""
 
 #. §0: `b`
 #. §1: `Shaders f b`
 #. §2: `b < sSup (Shaders f b)`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:19
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:12
 msgid "If §0 lies in the shade and §1 is bounded above, then §2."
 msgstr ""
 
-#. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:24
-msgid "First get hold of an element of the set: it is nonempty by §0."
+#. §0: `b`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:17
+msgid ""
+"[Hint wouvk] The supremum of all shaders of §0 is strictly larger than b.\n"
+"First, show that there exists some shader.\n"
+"This shader will be strictly larger than b by the very definition of §1.\n"
+"And the supremum of all shaders will be at least as large as this particular one.\n"
 msgstr ""
 
-#. §0: `«{t}»`
-#. §1: `le_csSup`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:29
-msgid "This §0 is below the supremum. Remember §1."
+#. §0: `shaders_nonempty`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:23
+msgid "[Hint p4nen] First get hold of an element of the set: it is nonempty by §0."
+msgstr ""
+
+#. §0: `«{h_ne}»`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:26
+msgid "[Hint 2cfq0] Now you can extract a shader from the hypothesis §0."
+msgstr ""
+
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:28
+msgid "[Hint 59m0w] Remember §0."
 msgstr ""
 
 #. §0: `Shaders`
 #. §1: `«{ht}»`
-#. §2: `b < t`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:34
-msgid "[Hint ltssup] Unfold §0 in §1 to see §2."
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:33
+msgid "[Hint ltssup] Looks good.  Now unfold §0 in §1."
 msgstr ""
 
 #. §0: `lt_sSup_Shaders`
-#: Game/Levels/Shade/L06_LtSSupShaders.lean:38
-msgid "Conclusion Shade L06: saved as §0."
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:37
+msgid "Conclusion Rigi L06: saved as §0."
 msgstr ""
 
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:6
-msgid "The Value at the Supremum"
-msgstr ""
-
-#. §0: `t ∈ Shaders f b`
-#. §1: `f b ≤ f t`
-#. §2: `Shaders f b`
-#. §3: `f b ≤ f t`
-#. §4: `f`
-#. §5: ```
-#. f b ≤ f (sSup (Shaders f b))
-#. ```
-#. §6: `closure_minimal`
-#. §7: `isClosed_le`
-#. §8: `csSup_mem_closure`
-#. §9: `Aquarius`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:8
-msgid ""
-"Intro Shade L07: the value at the supremum stays up.\n"
-"\n"
-"Every point of §0 satisfies §1.  The supremum itself need not be a point of\n"
-"§2, but it lies in its *closure* — and the condition §3 is a closed condition,\n"
-"because §4 is continuous.  So the inequality survives the passage to the limit:\n"
-"\n"
-"§5\n"
-"\n"
-"The proof combines §6, §7 and the §8 fact from §9."
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:8
+msgid "Intro Rigi L07: the value at the supremum stays up."
 msgstr ""
 
 #. §0: `f`
 #. §1: `b`
 #. §2: `Shaders f b`
 #. §3: `f b ≤ f (sSup (Shaders f b))`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:23
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:12
 msgid ""
 "If §0 is continuous, §1 lies in the shade and §2 is bounded above, then\n"
 "§3."
 msgstr ""
 
-#. §0: `Shaders f b`
-#. §1: `t`
-#. §2: `f b ≤ f t`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:30
+#. §0: `b`
+#. §1: `closure_minimal`
+#. §2: `isClosed_le`
+#. §3: `csSup_mem_closure`
+#. §4: ```
+#. Shaders f b ⊆ {t | f b ≤ f t}
+#. ```
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:19
 msgid ""
-"State the containment that makes the argument work: §0 is\n"
-"contained in the set of points §1 where §2."
+"[Hint q8m2v] At the supremum of all shaders of §0, the mountain is at least as high as at b.\n"
+"The proof combines §1, §2 and §3.\n"
+"Begin by showing that:\n"
+"§4\n"
 msgstr ""
 
 #. §0: `closure_minimal`
 #. §1: `«{h_sub}»`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:35
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:29
+msgid "[Hint 9al6z] §0 upgrades §1 to a statement about the closure."
+msgstr ""
+
+#. §0: `{t | f b ≤ f t}`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:32
 msgid ""
-"§0 upgrades §1 to a statement about the closure — it leaves you with\n"
-"two goals: the right-hand set is closed, and the supremum lies in the closure."
+"[Hint k3t9w] Two goals are left: the set §0 is closed,\n"
+"and the supremum lies in the closure of §1."
 msgstr ""
 
 #. §0: `isClosed_le`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:39
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:34
 msgid "[Hint isclle] That set is closed by §0"
 msgstr ""
 
 #. §0: `fun_prop`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:41
-msgid "[Hint 7xd8e] Remember §0"
-msgstr ""
-
-#. §0: `csSup_mem_closure`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:44
-msgid ""
-"[Hint csmc] The remaining goal is exactly\n"
-"§0."
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:36
+msgid "[Hint r7n4x] Remember §0"
 msgstr ""
 
 #. §0: `val_le_val_sSup_Shaders`
-#: Game/Levels/Shade/L07_ValLeValSSupShaders.lean:51
-msgid "Conclusion Shade L07: saved as §0."
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:44
+msgid "Conclusion Rigi L07: saved as §0."
 msgstr ""
 
-#. §0: `s := sSup (Shaders f b)`
-#. §1: `t`
-#. §2: `s`
-#. §3: `Shaders f b`
-#. §4: `Shaders f b `
-#. §5: `t > b`
-#. §6: `f t < f b`
-#. §7: `f t ≤ f b`
-#. §8: `t > s`
-#. §9: `notMem_of_csSup_lt`
-#. §10: `sSup s < t`
-#. §11: `s`
-#. §12: `t ∉ s`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:8
-msgid ""
-"Intro Shade L08: past the supremum the value drops back.\n"
-"\n"
-"Write §0.  Any point §1 strictly to the right of §2 cannot belong to\n"
-"§3.  By the definition of §4, a point §5\n"
-"fails to be in the set precisely when §6.  Combining these gives §7 for every\n"
-"§8.\n"
-"\n"
-"The key new tool is §9: if §10 and §11 is bounded above, then §12."
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:8
+msgid "Intro Rigi L08: past the supremum the value drops back."
 msgstr ""
 
 #. §0: `b`
 #. §1: `Shaders f b`
 #. §2: `sSup (Shaders f b)`
 #. §3: `f b`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:20
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:12
+msgid "If §0 lies in the shade and §1 is bounded above, then every point strictly to the right of §2 has value at most §3."
+msgstr ""
+
+#. §0: `b`
+#. §1: `t`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:18
 msgid ""
-"If §0 lies in the shade and §1 is bounded above, then every point strictly to the\n"
-"right of §2 has value at most §3."
+"[Hint z5c1p] Consider a point §0 in the shade, and a point §1 to the right of the supremum of the shaders of b.\n"
+"Start by establishing that t is not a shader of b."
 msgstr ""
 
-#. §0: `t ∉ Shaders f b`
-#. §1: `have`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:27
-msgid "[Hint eymq5] Establish §0 with §1."
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:22
+msgid "[Hint 5yybw] Try a proof by contradiction."
 msgstr ""
 
-#. §0: `t`
-#. §1: `notMem_of_csSup_lt`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:29
-msgid ""
-"Since §0 lies above the supremum, it is not in the set.\n"
-"Use §1"
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:24
+msgid "[Hint ingz4] Remember §0."
 msgstr ""
 
-#. §0: `b < t`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:34
+#. §0: `lt_sSup_Shaders hb hs`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:27
 msgid "[Hint 2u5ee] You will also need §0."
 msgstr ""
 
-#. §0: `lt_sSup_Shaders`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:36
-msgid "[Hint ux181] Remember §0."
-msgstr ""
-
-#. §0: `Shaders`
-#. §1: `«{not_mem}»`
-#. §2: `grind`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:38
-msgid "[Hint vrsup] Unfold §0 in §1, then §2 closes it."
-msgstr ""
-
 #. §0: `val_le_of_sSup_Shaders_lt`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:42
-msgid "Conclusion Shade L08: saved as §0."
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:32
+msgid "Conclusion Rigi L08: saved as §0."
 msgstr ""
 
-#. §0: `sSup s < x`
-#. §1: `s`
-#. §2: `x ∉ s`
-#: Game/Levels/Shade/L08_ValRightOfSSup.lean:44
-msgid "If §0 and §1 is bounded above, then §2."
-msgstr ""
-
-#. §0: `f`
-#. §1: `a`
-#. §2: `c`
-#: Game/Levels/Shade/L09_InterValue.lean:8
-msgid ""
-"[Intro]\n"
-" If a continuous function §0 takes a strictly smaller value at the left endpoint §1 than at the\n"
-" right endpoint §2 of an interval, then somewhere strictly between the endpoints the function still\n"
-" exceeds its value at the left endpoint."
+#. §0: `intermediate_value_Ioo`
+#: Game/Levels/Rigi/L09_InterValue.lean:9
+msgid "Intro Rigi L09: Intermediate value theorem: §0."
 msgstr ""
 
 #. §0: `f`
@@ -10824,13 +10741,13 @@ msgstr ""
 #. §4: `a c : ℝ`
 #. §5: `a < c`
 #. §6: `f a < f c`
-#. §7: `b ∈ Ioo a c`
-#. §8: `f b > f c`
-#: Game/Levels/Shade/L09_InterValue.lean:17
-#: Game/Levels/Shade/L10_InterValueSymm.lean:17
+#. §7: `b`
+#. §8: $(a, c)$
+#. §9: `f b > f a`
+#: Game/Levels/Rigi/L09_InterValue.lean:15
 msgid ""
 "If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
-"§6, then there is some §7 with §8."
+"§6, then there is some §7 in §8 with §9."
 msgstr ""
 
 #. §0: `intermediate_value_Ioo`
@@ -10838,7 +10755,7 @@ msgstr ""
 #. Set.Ioo (f a) (f c) ⊆ f '' Set.Ioo a c
 #. ```
 #. §2: `have`
-#: Game/Levels/Shade/L09_InterValue.lean:23
+#: Game/Levels/Rigi/L09_InterValue.lean:21
 msgid ""
 "[Hint ivIoo] One version of intermediate value theorem is §0,\n"
 "which says\n"
@@ -10847,40 +10764,61 @@ msgid ""
 "then see what you can do with it."
 msgstr ""
 
-#. §0: `Continuous f`
-#. §1: `fun_prop`
-#: Game/Levels/Shade/L09_InterValue.lean:33
+#. §0: `«{h}»`
+#. §1: $(f(a),f(c))$
+#. §2: `… ∈ (Ioo (f a) (f c))`
+#: Game/Levels/Rigi/L09_InterValue.lean:33
 msgid ""
-"The remaining goal is the continuity statement §0. Use §1,\n"
-"which automatically proves such function properties."
+"[Hint Ioontps] Apply §0 to an arbitrary value in §1.\n"
+"Suggestion: state and prove §2 for some explicit value."
 msgstr ""
 
-#. §0: `f c`
-#. §1: `f a`
-#. §2: `Ioo (f c) (f a)`
-#. §3: `(Ioo (f c) (f a)).Nonempty`
-#: Game/Levels/Shade/L09_InterValue.lean:36
+#. §0: $(a,c)$
+#. §1: `«{hfval'}»`
+#: Game/Levels/Rigi/L09_InterValue.lean:45
+msgid "[Hint w595i] Now that you've established a value in the image of §0 with §1, you can choose a preimage with the required properties."
+msgstr ""
+
+#: Game/Levels/Rigi/L09_InterValue.lean:55
+msgid "Conclusion Rigi L09"
+msgstr ""
+
+#. §0: ```
+#. intermediate_value_Ioo: Ioo (f a) (f c) ⊆ f '' Ioo a c
+#. ```
+#. §1: ```
+#. intermediate_value_Ioo': Ioo (f c) (f a) ⊆ f '' Ioo a c
+#. ```
+#. §2: $(f(a), f(c))$
+#. §3: $(f(c), f(a))$
+#. §4: `f a < f c`
+#. §5: `f c < f a`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:10
 msgid ""
-"[Hint Ioontps] Can now apply our version of intermediate value theorem\n"
-"to an arbitrary value between §0 and §1, i.e. to an arbitrary value in §2.\n"
-"Suggestion: state and prove §3."
+"Intro Rigi L10: Intermediate value theorem has several variants, e.g.\n"
+"§0\n"
+"(as in previous level) and\n"
+"§1\n"
+"Which of these two to use depends on which of the two intervals §2 and §3 is non-empty, i.e. on whether §4 or §5."
 msgstr ""
 
 #. §0: `f`
-#. §1: `a`
-#. §2: `c`
-#: Game/Levels/Shade/L10_InterValueSymm.lean:8
+#. §1: `f : ℝ → ℝ`
+#. §2: `a`
+#. §3: `c`
+#. §4: `a c : ℝ`
+#. §5: `a < c`
+#. §6: `f a > f c`
+#. §7: `b ∈ Ioo a c`
+#. §8: `f b > f c`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:24
 msgid ""
-"[Intro]\n"
-" The mirror image of the previous level.  If a continuous function §0 takes a strictly larger\n"
-" value at the left endpoint §1 than at the right endpoint §2 of an interval, then somewhere\n"
-" strictly between the endpoints the function already exceeds its value at the right endpoint."
+"If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
+"§6, then there is some §7 with §8."
 msgstr ""
 
-#. §0: `apply`
-#. §1: `intermediate_value_Ioo'`
-#: Game/Levels/Shade/L10_InterValueSymm.lean:24
-msgid "[Hint itvIoo] Just §0 §1."
+#: Game/Levels/Rigi/L11_Boss.lean:8
+msgid "Intro Rigi L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*)."
 msgstr ""
 
 #. §0: `f : ℝ → ℝ`
@@ -10889,18 +10827,21 @@ msgstr ""
 #. §3: `a < c`
 #. §4: `b`
 #. §5: `f a = f c`
-#: Game/Levels/Shade/L11_Boss.lean:8
+#. §6: `f a < f c`
+#. §7: `f a = f c`
+#. §8: `f a > f c`
+#: Game/Levels/Rigi/L11_Boss.lean:16
 msgid ""
-"Intro Shade L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).\n"
-"\n"
-"> Let §0 be a continuous function. If §1 and §2 with §3 are in the sun,\n"
-"but every §4 between a and c is in the shade, then §5."
+"[Hint 0u20z] Let §0 be a continuous function.\n"
+"If §1 and §2 with §3 are in the sun,  but every §4 between a and c is in the shade, then §5.\n"
+"Start by distinguishing the cases §6, §7, §8.\n"
+"In the first and the last case, you will need to find a contradiction."
 msgstr ""
 
 #. §0: `a`
 #. §1: `a < c`
 #. §2: `f a < f c`
-#: Game/Levels/Shade/L11_Boss.lean:20
+#: Game/Levels/Rigi/L11_Boss.lean:22
 msgid "[Hint sbosf] In this case, §0 is a shade point since §1 and §2."
 msgstr ""
 
@@ -10909,101 +10850,109 @@ msgstr ""
 #. §2: `c`
 #. §3: `f b > f c`
 #. §4: `Shaders f b`
-#. §5: `b`
-#. §6: `c`
-#. §7: `c`
-#. §8: `b`
-#. §9: `s`
-#. §10: `Shaders f b`
-#. §11: `≤ c`
-#. §12: `b ≤ s`
-#. §13: `s ∈ Ioc a c`
-#. §14: `Shaders f b`
-#. §15: `Shaders f b`
-#. §16: `f`
-#. §17: `f b`
-#. §18: `f s ≥ f b`
-#. §19: `s ≠ c`
-#. §20: `s ∈ Ioo a c`
-#. §21: `s`
-#. §22: `s`
-#. §23: `f b`
-#. §24: `s`
-#. §25: `f s ≥ f b`
-#. §26: `f s`
-#. §27: `s`
-#. §28: `b ∈ Ioo a c`
-#. §29: `f b > f c`
-#: Game/Levels/Shade/L11_Boss.lean:28
+#. §5: `s`
+#. §6: `b ∈ Ioo a c`
+#: Game/Levels/Rigi/L11_Boss.lean:31
 msgid ""
-"**The mathematical idea.**\n"
+"PART A: Construction of the supremum s\n"
 "\n"
-"We derive a contradiction. One can find a §0 between §1  and §2 with §3.\n"
-"The set §4 is non-empty, as §5 is in the shade,\n"
-"and it is bounded above by §6, since §7 is in the sun with value smaller than at §8.\n"
-"In particular, the supremum §9 of §10 is §11.\n"
+"One can find a §0 between §1  and §2 with §3.\n"
+"The set §4 is non-empty, as b is in the shade,\n"
+"and it is bounded above by c, since c is in the sun with value smaller than at b.\n"
+"In particular, Shaders f b has some supremum §5.\n"
 "\n"
-"Also, trivially/by some eralier lemma §12 by earlier lemma, so we have §13.\n"
-"\n"
-"By definition of §14, for all points in §15, §16 takes a value at least §17.\n"
-"Thus, by an an analogous argument to Boss of Aquarius, §18.\n"
-"This implies, in particular, that §19.\n"
-"So §20.  By our assumptions, this implies that §21 is in the shade.\n"
-"\n"
-"On the other hand, to the right of §22, the function remains below §23 – that is what §24 being\n"
-"the supremum means.  A fortiori, given that §25, the function remains below §26.\n"
-"So §27 is in the sun.  CONTRADICTION.\n"
-"\n"
-"So: First, prove that there is some §28, such that §29."
+"So: First, prove that there is some §6 with this property."
 msgstr ""
 
-#: Game/Levels/Shade/L11_Boss.lean:48
-msgid "[Hint pbf] Remember the proof before."
+#: Game/Levels/Rigi/L11_Boss.lean:40
+msgid "[Hint pbf] Remember the preceding level."
 msgstr ""
 
 #. §0: `Shaders f «{b}»`
-#: Game/Levels/Shade/L11_Boss.lean:54
-msgid ""
-"To construct the supremum of §0, you'll first want to show that the set\n"
-"is non-empty and that b is an upper bound."
+#. §1: `c`
+#: Game/Levels/Rigi/L11_Boss.lean:46
+msgid "[Hint hw34l] To construct the supremum of §0, you'll first want to show that the set is non-empty and that §1 is an upper bound."
 msgstr ""
 
 #. §0: `shaders_nonempty`
-#: Game/Levels/Shade/L11_Boss.lean:57
+#: Game/Levels/Rigi/L11_Boss.lean:49
 msgid "[Hint mwqb] Remember §0"
 msgstr ""
 
 #. §0: `upperBounds_Shaders`
-#: Game/Levels/Shade/L11_Boss.lean:62
+#: Game/Levels/Rigi/L11_Boss.lean:54
 msgid "[Hint dtpx] Remember §0"
 msgstr ""
 
 #. §0: `let s := sSup (Shaders f b)`
-#: Game/Levels/Shade/L11_Boss.lean:66
+#: Game/Levels/Rigi/L11_Boss.lean:56
 msgid "[Hint 60ivz] Suggestion: §0"
 msgstr ""
 
-#. §0: `«{s}» ∈ Shade f`
-#. §1: `b ∈ Shade f`
-#: Game/Levels/Shade/L11_Boss.lean:70
+#. §0: `b`
+#. §1: `f b ≤ f s`
+#: Game/Levels/Rigi/L11_Boss.lean:60
+msgid "[Hint mcvid] Establish that §0 is in the shade, and that §1."
+msgstr ""
+
+#. §0: `use`
+#. §1: `c`
+#. §2: `use c`
+#: Game/Levels/Rigi/L11_Boss.lean:69
+msgid "[Hint vfajy] Just §0 §1 (§2)."
+msgstr ""
+
+#. §0: `«{s}»`
+#. §1: `h_shade`
+#. §2: `a`
+#. §3: `c`
+#. §4: `s ≤ c`
+#. §5: `«{hc_bounds}»`
+#. §6: `s < c`
+#. §7: `b < s`
+#. §8: `a < s`
+#: Game/Levels/Rigi/L11_Boss.lean:73
 msgid ""
-"[Hint umu4r] Suggestion: Work towards §0\n"
-"First establish §1."
+"[Hint umu4r] The grand plan is now to show that on the one hand, §0 is in the shade, and on the other hand, s is in the sun.\n"
+"We start with the shade.  By our assumption §1, it suffices to show that s sits strictly between §2 and §3.\n"
+"Proceed as follows:\n"
+"- §4 in view of §5, and in fact\n"
+"- §6.\n"
+"- §7, and a fortiori\n"
+"- §8\n"
+msgstr ""
+
+#. §0: `lt_sSup_Shaders`
+#: Game/Levels/Rigi/L11_Boss.lean:90
+msgid "[Hint cdp6] Remember §0."
+msgstr ""
+
+#. §0: `s`
+#. §1: `have : «{s}» ∈ Sun f`
+#: Game/Levels/Rigi/L11_Boss.lean:100
+msgid ""
+"On the other hand, §0 is in the sun.\n"
+"Start with §1.\n"
 msgstr ""
 
 #. §0: `val_le_of_sSup_Shaders_lt`
-#: Game/Levels/Shade/L11_Boss.lean:95
+#. §1: `BddAbove (Shaders f b)`
+#: Game/Levels/Rigi/L11_Boss.lean:107
 msgid ""
-"[Hint rsdov] Almost there …  You'll probably need\n"
-"§0 to finish this."
+"[Hint rsdov] You need to apply §0 to finish this.\n"
+"And to apply this, you'll need to establish §1."
 msgstr ""
 
-#: Game/Levels/Shade.lean:21
-msgid "Shade"
+#: Game/Levels/Rigi/L11_Boss.lean:118
+msgid "Conclusion Rigi L11"
 msgstr ""
 
-#: Game/Levels/Shade.lean:23
-msgid "Intro Shade"
+#: Game/Levels/Rigi.lean:21
+msgid "Rigi"
+msgstr ""
+
+#: Game/Levels/Rigi.lean:24
+msgid "Intro Rigi"
 msgstr ""
 
 #. §0: `slope_def_field`
@@ -12118,21 +12067,287 @@ msgstr "和你的智能精灵司南一起探索一个陌生的宇宙！"
 msgid "[Game] CaptionLong"
 msgstr "本游戏通过数学本科入门阶段的若干主题，展示如何在 Lean 中进行定理证明。"
 
-#~ msgid ""
-#~ "§0 is defined as §1.\n"
-#~ "In other words: §2.\n"
-#~ "\n"
-#~ "You have to write §3  instead of §4,\n"
-#~ "as §5 is ambigous in Leanic."
+#~ msgid "Conclusion Iso L02"
 #~ msgstr ""
-#~ "§0 被定义为 §1。也就是说，直白点就是 §2。\n"
+#~ "双射哲学家们显得非常满意。\n"
 #~ "\n"
-#~ "你得写 §3 而不是 §4，因为 §5 在 Lean语里是有歧义的。"
+#~ "**司南**：我们现在能再……坐一次运输舱吗？\n"
+#~ "\n"
+#~ "**双射哲学家**：当然！不过一定要按顺序来。自从我们把运输舱改成双向使用之后，事故又多起来了。\n"
+#~ "\n"
+#~ "司南又来回坐了三趟。然后你们继续飞行。"
+
+#~ msgid "Conclusion Luna L01"
+#~ msgstr "**Lina**：好吧，这确实是个很平凡的例子。"
 
 #~ msgid ""
-#~ "§0 means that §1 is a polynomial in §2 indeterminates\n"
-#~ "§3, …, §4 with coefficients in §5."
-#~ msgstr "§0 的意思是：§1 是一个关于 §2 个不定元 §3，……，§4 的多项式，系数在 §5 中。"
+#~ "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
+#~ "§2 is only really applicable over integers."
+#~ msgstr ""
+#~ "Lina 翻了个白眼。\n"
+#~ "\n"
+#~ "**Lina**：Ritha 是 §0 的超级粉丝。可 §1 挺没用的。一旦离开整数，§2 就什么也干不了了。\n"
+#~ "\n"
+#~ "**Ritha**：你才没用！\n"
+#~ "\n"
+#~ "Ritha 扮了个鬼脸。"
+
+#~ msgid "Conclusion Luna L03: Alternatively §0 could have been used."
+#~ msgstr "**Lina**：顺便说一句，你们其实也可以直接用 §0。"
+
+#~ msgid "Conclusion Luna L04"
+#~ msgstr "**Lina**：好吧，是我的锅。"
+
+#~ msgid "Conclusion Luna L07"
+#~ msgstr "**你**：还不错！"
+
+#~ msgid "Conclusion Luna L09"
+#~ msgstr "**Lina**：你们做得很好！可惜，你们要继续你们的旅途了。不过要是你们再多待一会儿，就会把我们的作息彻底打乱了。"
+
+#~ msgid ""
+#~ "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
+#~ "are not considered rings. §2 does also work on half rings."
+#~ msgstr ""
+#~ "又一个👍。\n"
+#~ "\n"
+#~ "**你**：但等等，这次系数不是在§0里吗！这根本不是个环，而且系数在 §1 里的多项式也不构成环。\n"
+#~ "\n"
+#~ "**司南**：也许吧。 但 §2 甚至对所谓的半环也管用。\n"
+#~ "\n"
+#~ "**你**：哦哦……\n"
+#~ "\n"
+#~ "那位匿名者想通过无线电问问你们：是准备好进入最终挑战了，还是更想再绕他的星球转几圈。\n"
+#~ "\n"
+#~ "“准备好了。”司南用无线电回道。"
+
+#~ msgid "Conclusion Saturn L05"
+#~ msgstr ""
+#~ "“通过了”，匿名电台员就这么简短地回了一句。\n"
+#~ "\n"
+#~ "**司南**：我觉得推进器现在已经恢复得差不多了。赶紧溜！"
+
+#~ msgid "Conlsuion Samarkand L08"
+#~ msgstr ""
+#~ "**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n"
+#~ "\n"
+#~ "**司南**：你还要这样待多久？\n"
+#~ "\n"
+#~ "**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n"
+#~ "\n"
+#~ "**司南**：哦哦……\n"
+#~ "\n"
+#~ "**你**：那你怎么知道之后要去哪里，才能让图案对得上？\n"
+#~ "\n"
+#~ "**阿拉普卡**：啊！\n"
+#~ "\n"
+#~ "阿拉普卡的脸上绽开了一个大大的笑容。\n"
+#~ "\n"
+#~ "**阿拉普卡**：这就是艺术啦！"
+
+#~ msgid "Definitely use §0"
+#~ msgstr "**Ritha**：一定要试试 §0。"
+
+#~ msgid "Divide §0 with §1"
+#~ msgstr "**司南**：好。这样好多了。然后你还可以用 §1 把 §0 拆成两个部分。"
+
+#~ msgid "Equality of sets demands §0"
+#~ msgstr "**司南**：集合相等需要用 §0。"
+
+#~ msgid "Explain surcetivity by §0"
+#~ msgstr ""
+#~ "**司南**：一个映射是满射，当且仅当由它诱导出的取原像映射 §0 是单射。这个映射会返回一个子集在原映射下的原像。真是这样吗？\n"
+#~ "\n"
+#~ "**你**：我觉得对。我以前见过。\n"
+#~ "\n"
+#~ "**司南**：那就走起！"
+
+#~ msgid ""
+#~ "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
+#~ "coefficients in §3.\n"
+#~ "Explain §4 as the set of elements §5 that lead to the variables §6 and §7"
+#~ msgstr ""
+#~ "**你**：咦，§0 在这里到底是个什么怪东西？\n"
+#~ "\n"
+#~ "**司南**：§1 是一个“多元多项式”，变量依次用 §2 编号，系数在 §3 里。\n"
+#~ "\n"
+#~ "**你**：那 §4 是啥？\n"
+#~ "\n"
+#~ "**司南**：带两个元素的标准集合——§5。所以变量就叫 §6 和 §7。\n"
+#~ "\n"
+#~ "**你**：不过其实这些都无所谓吧？多项式环不是交换的吗！\n"
+#~ "\n"
+#~ "**司南**：没错。"
+
+#~ msgid ""
+#~ "Given\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "Show\n"
+#~ "§1\n"
+#~ msgstr ""
+#~ "**你**：我得先自己把它写下来。也就是说，已知：\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "要证明的是：\n"
+#~ "\n"
+#~ "§1\n"
+#~ "\n"
+#~ "司南？？\n"
+#~ "\n"
+#~ "Lina 咧嘴一笑。\n"
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**司南**：这条解法在我看来有点太难了。\n"
+#~ " 我建议先退回去，保留 §0，这样你最后就能用上 §1。"
+
+#~ msgid ""
+#~ "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
+#~ "Try §4. It has to be written as §5 instead of §6\n"
+#~ "because §7 is ambigous in Leanic."
+#~ msgstr ""
+#~ "**你**：我猜这意思是：§0 是 §1 的右逆，当且仅当 §2 是 §3 的左逆。\n"
+#~ "\n"
+#~ "**司南**：没错。不过如果我没看错的话，在Lean语里，这与其说是个定理，不如说就是 §4 的定义。更坑的是，你确实得写 §5，而不能只写 §6，因为 §7 在Lean语里是有歧义的。"
+
+#~ msgid "Increase readability of §0. Try §1"
+#~ msgstr "**司南**：现在把假设 §0 整理得更可读一点。也许可以试试 §1？"
+
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n"
+#~ "\n"
+#~ "**你**：什么？\n"
+#~ "\n"
+#~ "**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学家来说，这就是同一回事。"
+
+#~ msgid "Intro Luna"
+#~ msgstr ""
+#~ "司南发现了一颗小月球，你们现在正朝它飞去。它的表面非常光滑，但有一处表面有个小开口，一段楼梯通向内部。你们着陆后，好奇地走下去。\n"
+#~ "\n"
+#~ "到了下面，你发现自己置身于你见过最整洁的公寓里。一个小女孩向你们打招呼。\n"
+#~ "\n"
+#~ "**Lina**：我是 Lina，月球的唯一居民。\n"
+#~ "\n"
+#~ "然后她看到了司南。\n"
+#~ "\n"
+#~ "**Lina**：嗯嘛，其实我们这里也算两个人……\n"
+#~ "\n"
+#~ "她转过身喊了句什么，这时一位智能小精灵飞了过来。\n"
+#~ "\n"
+#~ "**Lina**：这是 Ritha！\n"
+#~ "\n"
+#~ "司南显然觉得她很可爱。\n"
+#~ "\n"
+#~ "**Lina**：不过你们现在别这么乱七八糟地站着啦，拜托！鞋子和头盔放到那边那边，然后请站到标好的访客站位上。不然我这儿又要被你们搞得一团糟了。"
+
+#~ msgid "Intro Luna L01: Know that §0"
+#~ msgstr ""
+#~ "你感觉有点被她弄懵了，但还是试着开口回应。\n"
+#~ "\n"
+#~ "**你**：行，我们会努力不把东西弄乱。要在这里维持秩序很难吗？\n"
+#~ "\n"
+#~ "**Lina**：比如说，你得知道 §0。"
+
+#~ msgid "Intro Luna L02: For integers §0 or §1 means §2"
+#~ msgstr "**Lina**：另外，比如你得知道，对整数而言，命题 §0 或者 §1 其实就等价于 §2。"
+
+#~ msgid "Intro Luna L03"
+#~ msgstr "**Lina**：试试这个呗！"
+
+#~ msgid "Intro Luna L04"
+#~ msgstr "**Lina**：这个呢？"
+
+#~ msgid "Intro Luna L05"
+#~ msgstr "**Lina**：同样的问题，现在换到 ℝ 里！"
+
+#~ msgid "Intro Luna L06"
+#~ msgstr "**Ritha**：我也能出一道题吗？给。"
+
+#~ msgid "Intro Luna L07: Enough of §0"
+#~ msgstr "**Lina**：§0 用够了，现在轮到我了。"
+
+#~ msgid "Intro Luna L08"
+#~ msgstr "**Ritha**：现在又轮到我啦！"
+
+#~ msgid "Intro Luna L09"
+#~ msgstr "**Lina**：现在又轮到我了。"
+
+#~ msgid "Intro Luna L10: Use §0 again"
+#~ msgstr ""
+#~ "**Ritha**（*对Lina*）：拜托，也让我再问一个问题嘛……\n"
+#~ "\n"
+#~ "**Lina**：好吧，就一个……但别又是 §0！\n"
+#~ "\n"
+#~ "Ritha睁大眼睛，可怜巴巴地看着Lina。\n"
+#~ "\n"
+#~ "**Lina**：如果你*非得*问的话。那就快点！我们现在真的没时间了！"
+
+#~ msgid "Intro Saturn L03"
+#~ msgstr "又一条无线电消息。"
+
+#~ msgid ""
+#~ "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**你**：嗯，其实这里该用哪个 §0 已经很明显了。\n"
+#~ "\n"
+#~ "**司南**：既然你这么清楚，那就先从 §1 开始吧。\n"
+#~ "然后你需要用 §2。比如这样：\n"
+#~ "§3\n"
+
+#~ msgid "Luna"
+#~ msgstr "月球"
+
+#~ msgid "Now try §0!"
+#~ msgstr ""
+#~ "**你**：那现在呢？？\n"
+#~ "\n"
+#~ "**Lina** (*得意洋洋*)：§0!"
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**司南**：好选择！现在你可以用 §0 了。"
+
+#~ msgid "Observe equality"
+#~ msgstr "**司南**：按定义两边就是相等的！"
+
+#~ msgid "Remind former result for §0. Try §1"
+#~ msgstr ""
+#~ "**你**：我们刚才不是已经确定 §0 成立了吗！\n"
+#~ "\n"
+#~ "**司南**：查资料我最在行！那是 §1。"
+
+#~ msgid "Remind missed argument with §0"
+#~ msgstr ""
+#~ "**你**：这个证明目标是从哪儿来的？\n"
+#~ "\n"
+#~ "**司南**：最开始你用 §0 的时候，大概漏掉了这个参数。现在可以补上。"
+
+#~ msgid ""
+#~ "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
+#~ "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
+#~ "goal is: §4"
+#~ msgstr ""
+#~ "**你**：§0 到底是什么？\n"
+#~ "\n"
+#~ "**Ritha**：这是闭区间。`I` 代表 interval，也就是“区间”；两个 `c` 代表 closed，也就是左右两端都是闭的。\n"
+#~ "\n"
+#~ "**司南**：因为这里是在自然数里，你可以把 §1 写成 §2，或者写成 §3。要证明的就是：\n"
+#~ "\n"
+#~ "§4"
+
+#~ msgid "Remind: §0 sees through local definitions"
+#~ msgstr "**司南**：提醒一下，§0 能看穿局部定义。"
+
+#~ msgid "Rewrite §0 as sum of basis elements"
+#~ msgstr "**你**：然后我们把 §0 写成基元素的和。"
+
+#~ msgid "Ritha gives signs to try omega"
+#~ msgstr "Ritha又在朝你们使眼色。"
 
 #~ msgid ""
 #~ "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
@@ -12168,255 +12383,23 @@ msgstr "本游戏通过数学本科入门阶段的若干主题，展示如何在
 #~ "这个策略会在它找到两条明显互相矛盾的假设时结束证明。\n"
 #~ "* 如果目标形如 §6，你可以用 §7 开始一个用逆否命题的证明。"
 
-#~ msgid ""
-#~ "With §0, you introduce an intermediate result.\n"
-#~ "You must then prove this intermediate result\n"
-#~ "before you can continue with the actual proof.\n"
-#~ "\n"
-#~ "## Friends and relatives\n"
-#~ "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
-#~ "only have to prove your intermediate result at the very end."
-#~ msgstr ""
-#~ "用 §0 你可以引入一个中间结果。\n"
-#~ "接下来你必须先证明这个中间结果，才能继续真正的证明。\n"
-#~ "\n"
-#~ "## 相关策略\n"
-#~ "§1 也一样，只不过你可以先继续主证明，直到最后才证明你的中间结果。"
-
-#~ msgid "§0 is useful here"
-#~ msgstr "**司南**：这里 §0 肯定能派上用场。"
-
-#~ msgid ""
-#~ "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
-#~ "Try §4. It has to be written as §5 instead of §6\n"
-#~ "because §7 is ambigous in Leanic."
-#~ msgstr ""
-#~ "**你**：我猜这意思是：§0 是 §1 的右逆，当且仅当 §2 是 §3 的左逆。\n"
-#~ "\n"
-#~ "**司南**：没错。不过如果我没看错的话，在Lean语里，这与其说是个定理，不如说就是 §4 的定义。更坑的是，你确实得写 §5，而不能只写 §6，因为 §7 在Lean语里是有歧义的。"
-
-#~ msgid "Try proof by conradiction. For this employ §0"
-#~ msgstr "**司南**：当然，我们就这么做。这不就是个典型的反证法嘛：如果素数只有有限多个，那么所有素数的乘积加一就不被任何素数整除。另一方面又有：§0。这是矛盾的。"
-
-#~ msgid "Conclusion Iso L02"
-#~ msgstr ""
-#~ "双射哲学家们显得非常满意。\n"
-#~ "\n"
-#~ "**司南**：我们现在能再……坐一次运输舱吗？\n"
-#~ "\n"
-#~ "**双射哲学家**：当然！不过一定要按顺序来。自从我们把运输舱改成双向使用之后，事故又多起来了。\n"
-#~ "\n"
-#~ "司南又来回坐了三趟。然后你们继续飞行。"
-
-#~ msgid "Intro Luna"
-#~ msgstr ""
-#~ "司南发现了一颗小月球，你们现在正朝它飞去。它的表面非常光滑，但有一处表面有个小开口，一段楼梯通向内部。你们着陆后，好奇地走下去。\n"
-#~ "\n"
-#~ "到了下面，你发现自己置身于你见过最整洁的公寓里。一个小女孩向你们打招呼。\n"
-#~ "\n"
-#~ "**Lina**：我是 Lina，月球的唯一居民。\n"
-#~ "\n"
-#~ "然后她看到了司南。\n"
-#~ "\n"
-#~ "**Lina**：嗯嘛，其实我们这里也算两个人……\n"
-#~ "\n"
-#~ "她转过身喊了句什么，这时一位智能小精灵飞了过来。\n"
-#~ "\n"
-#~ "**Lina**：这是 Ritha！\n"
-#~ "\n"
-#~ "司南显然觉得她很可爱。\n"
-#~ "\n"
-#~ "**Lina**：不过你们现在别这么乱七八糟地站着啦，拜托！鞋子和头盔放到那边那边，然后请站到标好的访客站位上。不然我这儿又要被你们搞得一团糟了。"
-
-#~ msgid "Luna"
-#~ msgstr "月球"
-
-#~ msgid "Conclusion Luna L01"
-#~ msgstr "**Lina**：好吧，这确实是个很平凡的例子。"
-
-#~ msgid "Intro Luna L01: Know that §0"
-#~ msgstr ""
-#~ "你感觉有点被她弄懵了，但还是试着开口回应。\n"
-#~ "\n"
-#~ "**你**：行，我们会努力不把东西弄乱。要在这里维持秩序很难吗？\n"
-#~ "\n"
-#~ "**Lina**：比如说，你得知道 §0。"
-
-#~ msgid "Try using §0 here"
-#~ msgstr "**司南**：§0？"
-
-#~ msgid ""
-#~ "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
-#~ "§2 is only really applicable over integers."
-#~ msgstr ""
-#~ "Lina 翻了个白眼。\n"
-#~ "\n"
-#~ "**Lina**：Ritha 是 §0 的超级粉丝。可 §1 挺没用的。一旦离开整数，§2 就什么也干不了了。\n"
-#~ "\n"
-#~ "**Ritha**：你才没用！\n"
-#~ "\n"
-#~ "Ritha 扮了个鬼脸。"
-
-#~ msgid "Intro Luna L02: For integers §0 or §1 means §2"
-#~ msgstr "**Lina**：另外，比如你得知道，对整数而言，命题 §0 或者 §1 其实就等价于 §2。"
+#~ msgid "Try omega"
+#~ msgstr "Ritha 似乎想用眼神给你们打个什么暗号。"
 
 #~ msgid "Try out §0"
 #~ msgstr "**Ritha** *(低声)*：试试 §0！"
 
-#~ msgid "Conclusion Luna L03: Alternatively §0 could have been used."
-#~ msgstr "**Lina**：顺便说一句，你们其实也可以直接用 §0。"
-
-#~ msgid "Intro Luna L03"
-#~ msgstr "**Lina**：试试这个呗！"
-
-#~ msgid "Now try §0!"
-#~ msgstr ""
-#~ "**你**：那现在呢？？\n"
-#~ "\n"
-#~ "**Lina** (*得意洋洋*)：§0!"
-
-#~ msgid "Try §0, §1"
-#~ msgstr ""
-#~ "**你**：分类讨论？？\n"
-#~ "\n"
-#~ "**司南**：对，可以试试。比如先写 §0，然后再写 §1。"
-
-#~ msgid ""
-#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
-#~ "\n"
-#~ "§4"
-#~ msgstr ""
-#~ "通常会和 §0 一起用，用来在证明里区分三种情况 §1、§2 和 §3：\n"
-#~ "\n"
-#~ "§4"
-
-#~ msgid "Conclusion Luna L04"
-#~ msgstr "**Lina**：好吧，是我的锅。"
-
-#~ msgid "Intro Luna L04"
-#~ msgstr "**Lina**：这个呢？"
-
-#~ msgid "Try omega"
-#~ msgstr "Ritha 似乎想用眼神给你们打个什么暗号。"
-
-#~ msgid "Divide §0 with §1"
-#~ msgstr "**司南**：好。这样好多了。然后你还可以用 §1 把 §0 拆成两个部分。"
-
-#~ msgid "Increase readability of §0. Try §1"
-#~ msgstr "**司南**：现在把假设 §0 整理的更可读一点。也许可以试试 §1？"
-
-#~ msgid "Intro Luna L05"
-#~ msgstr "**Lina**：同样的问题，现在换到 ℝ 里！"
-
-#~ msgid "We now have §0. Knowing what §1 means, try §2 with §3"
-#~ msgstr "**司南**：嗯…… §0 看起来还是不太理想。不过我们知道 §1 是什么意思——试试用 §2 配上 §3！"
-
-#~ msgid ""
-#~ "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
-#~ "the implications via §3"
-#~ msgstr ""
-#~ "**你**（*对司南*）：这里我用 §0 和 §1 都推不下去。\n"
-#~ "\n"
-#~ "**司南**：我觉得你只要稍微帮 §2 一把就行。要不按老办法，用 §3 处理掉这个两个蕴涵先。"
-
-#~ msgid "Equality of sets demands §0"
-#~ msgstr "**司南**：集合相等需要用 §0。"
-
-#~ msgid "Intro Luna L06"
-#~ msgstr "**Ritha**：我也能出一道题吗？给。"
-
-#~ msgid ""
-#~ "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
-#~ "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
-#~ "goal is: §4"
-#~ msgstr ""
-#~ "**你**：§0 到底是什么？\n"
-#~ "\n"
-#~ "**Ritha**：这是闭区间。`I` 代表 interval，也就是“区间”；两个 `c` 代表 closed，也就是左右两端都是闭的。\n"
-#~ "\n"
-#~ "**司南**：因为这里是在自然数里，你可以把 §1 写成 §2，或者写成 §3。要证明的就是：\n"
-#~ "\n"
-#~ "§4"
-
-#~ msgid "Ritha gives signs to try omega"
-#~ msgstr "Ritha又在朝你们使眼色。"
-
-#~ msgid "Try §0 afterwards"
-#~ msgstr "**司南**：然后试试 §0。"
-
-#~ msgid "Conclusion Luna L07"
-#~ msgstr "**你**：还不错！"
-
-#~ msgid ""
-#~ "Given\n"
-#~ "\n"
-#~ "§0\n"
-#~ "\n"
-#~ "Show\n"
-#~ "§1\n"
-#~ msgstr ""
-#~ "**你**：我得先自己把它写下来。也就是说，已知：\n"
-#~ "\n"
-#~ "§0\n"
-#~ "\n"
-#~ "要证明的是：\n"
-#~ "\n"
-#~ "§1\n"
-#~ "\n"
-#~ "司南？？\n"
-#~ "\n"
-#~ "Lina 咧嘴一笑。\n"
-
-#~ msgid "Intro Luna L07: Enough of §0"
-#~ msgstr "**Lina**：§0 用够了，现在轮到我了。"
-
-#~ msgid "Definitely use §0"
-#~ msgstr "**Ritha**：一定要试试 §0。"
-
-#~ msgid "Intro Luna L08"
-#~ msgstr "**Ritha**：现在又轮到我啦！"
-
-#~ msgid "Conclusion Luna L09"
-#~ msgstr "**Lina**：你们做得很好！可惜，你们要继续你们的旅途了。不过要是你们再多待一会儿，就会把我们的作息彻底打乱了。"
-
-#~ msgid "Intro Luna L09"
-#~ msgstr "**Lina**：现在又轮到我了。"
-
-#~ msgid ""
-#~ "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
-#~ "§3\n"
-#~ msgstr ""
-#~ "**你**：嗯，其实这里该用哪个 §0 已经很明显了。\n"
-#~ "\n"
-#~ "**司南**：既然你这么清楚，那就先从 §1 开始吧。\n"
-#~ "然后你需要用 §2。比如这样：\n"
-#~ "§3\n"
-
-#~ msgid "Intro Luna L10: Use §0 again"
-#~ msgstr ""
-#~ "**Ritha**（*对Lina*）：拜托，也让我再问一个问题嘛……\n"
-#~ "\n"
-#~ "**Lina**：好吧，就一个……但别又是 §0！\n"
-#~ "\n"
-#~ "Ritha睁大眼睛，可怜巴巴地看着Lina。\n"
-#~ "\n"
-#~ "**Lina**：如果你*非得*问的话。那就快点！我们现在真的没时间了！"
+#~ msgid "Try proof by conradiction. For this employ §0"
+#~ msgstr "**司南**：当然，我们就这么做。这不就是个典型的反证法嘛：如果素数只有有限多个，那么所有素数的乘积加一就不被任何素数整除。另一方面又有：§0。这是矛盾的。"
 
 #~ msgid "Try using §0 and if nothing else helps, §1"
 #~ msgstr "**司南**：也许这里又该用一下 §0。要是实在不行，就试试 §1。"
 
-#~ msgid ""
-#~ "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
-#~ "Formulate §4 using §5"
-#~ msgstr "**司南**：你肯定得想办法用上假设 §0。比如你可以把 §1 用到不等式 §2 上，或者用到 §3 上！（不等式 §4 最好用 §5 先写出来。）"
+#~ msgid "Try using §0 here"
+#~ msgstr "**司南**：§0？"
 
-#~ msgid "Go back, keep §0 and try §1"
-#~ msgstr ""
-#~ "**司南**：这条解法在我看来有点太难了。\n"
-#~ " 我建议先退回去，保留 §0，这样你最后就能用上 §1。"
-
-#~ msgid "Now you can apply §0"
-#~ msgstr "**司南**：好选择！现在你可以用 §0 了。"
+#~ msgid "Try §0 afterwards"
+#~ msgstr "**司南**：然后试试 §0。"
 
 #~ msgid ""
 #~ "Try §0 with a number and then §1. You can not use §2\n"
@@ -12432,111 +12415,76 @@ msgstr "本游戏通过数学本科入门阶段的若干主题，展示如何在
 #~ "\n"
 #~ "**司南**：以后再教你，不在这种大庭广众之下。我现在宁愿用 §4 给出一个真正的数，然后再改写。"
 
+#~ msgid "Try §0, §1"
+#~ msgstr ""
+#~ "**你**：分类讨论？？\n"
+#~ "\n"
+#~ "**司南**：对，可以试试。比如先写 §0，然后再写 §1。"
+
+#~ msgid ""
+#~ "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
+#~ "Formulate §4 using §5"
+#~ msgstr "**司南**：你肯定得想办法用上假设 §0。比如你可以把 §1 用到不等式 §2 上，或者用到 §3 上！（不等式 §4 最好用 §5 先写出来。）"
+
 #~ msgid "Use the result §0"
 #~ msgstr "**司南**：你刚才想用的那个结果叫 §0。"
-
-#~ msgid "Observe equality"
-#~ msgstr "**司南**：按定义两边就是相等的！"
-
-#~ msgid "Remind former result for §0. Try §1"
-#~ msgstr ""
-#~ "**你**：我们刚才不是已经确定 §0 成立了吗！\n"
-#~ "\n"
-#~ "**司南**：查资料我最在行！那是 §1。"
-
-#~ msgid "Remind missed argument with §0"
-#~ msgstr ""
-#~ "**你**：这个证明目标是从哪儿来的？\n"
-#~ "\n"
-#~ "**司南**：最开始你用 §0 的时候，大概漏掉了这个参数。现在可以补上。"
-
-#~ msgid "Rewrite §0 as sum of basis elements"
-#~ msgstr "**你**：然后我们把 §0 写成基元素的和。"
-
-#~ msgid "Conlsuion Samarkand L08"
-#~ msgstr ""
-#~ "**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n"
-#~ "\n"
-#~ "**司南**：你还要这样待多久？\n"
-#~ "\n"
-#~ "**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n"
-#~ "\n"
-#~ "：\n"
-#~ "**司南**：哦哦……\n"
-#~ "\n"
-#~ "**你**:那你怎么知道之后要去哪里，才能让图案对得上？\n"
-#~ "\n"
-#~ "**阿拉普卡**：啊！\n"
-#~ "\n"
-#~ "阿拉普卡的脸上绽开了一个大大的笑容。\n"
-#~ "\n"
-#~ "**阿拉普卡**：这就是艺术啦！"
-
-#~ msgid "Explain surcetivity by §0"
-#~ msgstr ""
-#~ "**司南**：一个映射是满射，当且仅当由它诱导出的取原像映射 §0 是单射。这个映射会返回一个子集在原映射下的原像。真是这样吗？\n"
-#~ "\n"
-#~ "**你**：我觉得对。我以前见过。\n"
-#~ "\n"
-#~ "**司南**：那就走起！"
-
-#~ msgid ""
-#~ "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
-#~ "coefficients in §3.\n"
-#~ "Explain §4 as the set of elements §5 that lead to the variables §6 and §7"
-#~ msgstr ""
-#~ "**你**：咦，§0 在这里到底是个什么怪东西？\n"
-#~ "\n"
-#~ "**司南**：§1 是一个“多元多项式”，变量依次用 §2 编号，系数在 §3 里。\n"
-#~ "\n"
-#~ "**你**：那 §4 是啥？\n"
-#~ "\n"
-#~ "**司南**：带两个元素的标准集合——§5。所以变量就叫 §6 和 §7。\n"
-#~ "\n"
-#~ "**你**：不过其实这些都无所谓吧？多项式环不是交换的吗！\n"
-#~ "\n"
-#~ "**司南**：没错。"
-
-#~ msgid "Intro Saturn L03"
-#~ msgstr "又一条无线电消息。"
-
-#~ msgid ""
-#~ "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
-#~ "are not considered rings. §2 does also work on half rings."
-#~ msgstr ""
-#~ "又一个👍。\n"
-#~ "\n"
-#~ "**你**：但等等，这次系数不是在§0里吗！这根本不是个环，而且系数在 §1 里的多项式也不构成环。\n"
-#~ "\n"
-#~ "**司南**：也许吧。 但 §2 甚至对所谓的半环也管用。\n"
-#~ "\n"
-#~ "**你**：哦哦……\n"
-#~ "\n"
-#~ "那位匿名者想通过无线电问问你们：是准备好进入最终挑战了，还是更想再绕他的星球转几圈。\n"
-#~ "\n"
-#~ "“准备好了。”司南用无线电回道。"
-
-#~ msgid "Conclusion Saturn L05"
-#~ msgstr ""
-#~ "“通过了”，匿名电台员就这么简短地回了一句。\n"
-#~ "\n"
-#~ "**司南**：我觉得推进器现在已经恢复得差不多了。赶紧溜！"
-
-#~ msgid "Remind: §0 sees through local definitions"
-#~ msgstr "**司南**：提醒一下，§0 能看穿局部定义。"
-
-#~ msgid ""
-#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
-#~ msgstr ""
-#~ "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n"
-#~ "\n"
-#~ "**你**：什么？\n"
-#~ "\n"
-#~ "**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学家来说，这就是同一回事。"
 
 #~ msgid "Use §0 as e.g. §1"
 #~ msgstr ""
 #~ "**你**：所以现在在这里用 §0？\n"
 #~ "\n"
 #~ "**司南**：大概吧，比如配合 §1。"
+
+#~ msgid "We now have §0. Knowing what §1 means, try §2 with §3"
+#~ msgstr "**司南**：嗯…… §0 看起来还是不太理想。不过我们知道 §1 是什么意思——试试用 §2 配上 §3！"
+
+#~ msgid ""
+#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
+#~ "\n"
+#~ "§4"
+#~ msgstr ""
+#~ "通常会和 §0 一起用，用来在证明里区分三种情况 §1、§2 和 §3：\n"
+#~ "\n"
+#~ "§4"
+
+#~ msgid ""
+#~ "With §0, you introduce an intermediate result.\n"
+#~ "You must then prove this intermediate result\n"
+#~ "before you can continue with the actual proof.\n"
+#~ "\n"
+#~ "## Friends and relatives\n"
+#~ "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
+#~ "only have to prove your intermediate result at the very end."
+#~ msgstr ""
+#~ "用 §0 你可以引入一个中间结果。\n"
+#~ "接下来你必须先证明这个中间结果，才能继续真正的证明。\n"
+#~ "\n"
+#~ "## 相关策略\n"
+#~ "§1 也一样，只不过你可以先继续主证明，直到最后才证明你的中间结果。"
+
+#~ msgid ""
+#~ "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
+#~ "the implications via §3"
+#~ msgstr ""
+#~ "**你**（*对司南*）：这里我用 §0 和 §1 都推不下去。\n"
+#~ "\n"
+#~ "**司南**：我觉得你只要稍微帮 §2 一把就行。要不按老办法，用 §3 处理掉这两个蕴涵先。"
+
+#~ msgid ""
+#~ "§0 is defined as §1.\n"
+#~ "In other words: §2.\n"
+#~ "\n"
+#~ "You have to write §3  instead of §4,\n"
+#~ "as §5 is ambigous in Leanic."
+#~ msgstr ""
+#~ "§0 被定义为 §1。也就是说，直白点就是 §2。\n"
+#~ "\n"
+#~ "你得写 §3 而不是 §4，因为 §5 在 Lean语里是有歧义的。"
+
+#~ msgid "§0 is useful here"
+#~ msgstr "**司南**：这里 §0 肯定能派上用场。"
+
+#~ msgid ""
+#~ "§0 means that §1 is a polynomial in §2 indeterminates\n"
+#~ "§3, …, §4 with coefficients in §5."
+#~ msgstr "§0 的意思是：§1 是一个关于 §2 个不定元 §3，……，§4 的多项式，系数在 §5 中。"

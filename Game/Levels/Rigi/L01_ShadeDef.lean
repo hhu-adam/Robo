@@ -1,19 +1,20 @@
 import Game.Metadata
 
-World "Shade"
+World "Rigi"
 Level 1
 
 Title ""
 
-Introduction "Intro Shade L01: the two kinds of points.
 
-Think of the graph of `f` lit by a sun shining from the right.  A point `s` lies in the *shade*
-if some later point rises above it, and it is *sunny* if nothing to its right ever gets higher:
+Introduction "Intro Rigi L01: the two kinds of points.
 
 ```
 Shade f := {s : ℝ | ∃ t > s, f t > f s}
 Sun   f := {s : ℝ | ∀ t > s, f t ≤ f s}
 ```
+
+Think of the graph of `f` lit by a sun shining from the right.  A point `s` lies in the *shade*
+(in `Shade f`) if at some later point `t` the graph rises above it, otherwise it is *sunny* (in `Sun f`).
 
 These two conditions are negations of each other, and your first job is to prove exactly that.
 "
@@ -34,7 +35,7 @@ Shade f := {s : ℝ | ∃ t > s, f t > f s}
 -/
 DefinitionDoc Shade as "Shade" in "Shade"
 
-/-- `Sun f` is the set of sunny points of `f`: those `s` with with `f t ≤ f s` for all `t > s`.
+/-- `Sun f` is the set of sunny points of `f`: those `s` with `f t ≤ f s` for all `t > s`.
 ```
 Sun f := {s : ℝ | ∀ t > s, f t ≤ f s}
 ```
@@ -51,13 +52,12 @@ simp lemmas:
 -/
 
 Statement not_mem_Sun_iff_mem_Shade (preamble := grind_mode 1) (f : ℝ → ℝ) (a : ℝ) : a ∉ Sun f ↔ a ∈ Shade f := by
-  Hint "Both sides are set-builder memberships. Unfold them with `simp [Shade, Sun]` and let
-  `simp` push the negation through the `∀`."
+  Hint (hidden := true ) "Both sides are set-builder memberships.
+  Use `simp`, or more precisely `simp [Shade, Sun]`."
   simp [Shade, Sun]
 
 attribute [game_simp] not_mem_Sun_iff_mem_Shade
 
-Conclusion "Conclusion Shade L01: saved as `not_mem_Sun_iff_mem_Shade`."
 
 NewDefinition Shade Sun
 

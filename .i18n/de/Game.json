@@ -16,7 +16,7 @@
  "**Robo**:  Das ist hier alles so konkret, vielleicht reicht §0.",
  "§0 might help here": "**Robo**: Vielleicht hilft jetzt §0 weiter?",
  "§0 means, that §1 has a right inverse.\n\n§2 means, that §3 has left inverse.":
- "§0 bedeutet, dass §1 ein Rechtsinverses besitzt.\n\n§2 bedeutet, dass §3 ein Linkssinverses besitzt.",
+ "§0 bedeutet, dass §1 ein Rechtsinverses besitzt.\n\n§2 bedeutet, dass §3 ein Linksinverses besitzt.",
  "§0 means §1, or more exactly:\n§2, as can be seen with §3.":
  "§0 bedeutet §1, oder genauer: §2, wie du mit §3 leicht siehst.",
  "§0 means that §1, §2 and §3 are subsets of §4. Therefore, §5\ncan be interpreted as 'subset'. Use §6 to replace a set equation §7 with §8":
@@ -41,6 +41,12 @@
  "§0 ist die Aussage, dass §1 ungerade ist:\n§2\nDas kannst du leicht mit §3 prüfen.",
  "§0 is the statement that §1 is even:\n§2\nYou can easily check this with §3.":
  "§0 ist die Aussage, dass §1 gerade ist:\n§2\nDas kannst du leicht mit §3 prüfen.",
+ "§0 is the set of §1 strictly larger than §2 such that §3.":
+ "§0 ist die Menge der Schattierer von §2, also die Menge der Punkte, die ihren Schatten auf §2 werfen.\nDa die Sonne von Osten scheint, besteht sie aus Punkten §1 östlich von §2, an denen der Berg mindestens so hoch ist wie bei §2, für die also §3 gilt.",
+ "§0 is the set of sunny points of §1: those §2 with §3 for all §4.\n§5":
+ "§0 besteht aus allen Sonnenpunkten der Höhenfunktion §1,\nalso aus allen Punkten §2, an denen der Berg mindestens so hoch wie an allen weiter östlich liegenden Punkten ist:\n\n§5",
+ "§0 is the set of shade points of §1: those §2 for which there exists some\n§3 with §4.\n§5":
+ "§0 besteht aus allen Schattenpunkten der Höhenfunktion §1,\nalso aus allen Punkten §2, auf die ein weiter östlich liegender Punkt §3 mit §4 seinen Schatten wirft:\n\n§5",
  "§0 is the ring of multivariate polynomials in §1 indeterminates\n§2, …, §3 with coefficients in §4.\n(We usually write these indeterminates as §5, …, §6.)":
  "§0 ist der Polynomring in §1 Unbestimmten §2, …, §3 mit Koeffizienten in §4.  (Wir schreiben die Unbestimmten gewöhnlich als §5, …, §6.)",
  "§0 is the polynomial variable in the polynomial ring §1.":
@@ -146,31 +152,39 @@
  "**Robo**: Das sieht nach einer Sackgasse aus …",
  "[Hint ztqn] Remind of previous result":
  "**Robo**: Das hatten wir schon gesehen.",
+ "[Hint z5c1p] Consider a point §0 in the shade, and a point §1 to the right of the supremum of the shaders of b.\nStart by establishing that t is not a shader of b.":
+ "**Du**: §1 soll also ein Punkt östlich dieses Supremums sein.\nDann ist §1 sicher kein Schattierer von §0 und somit …\n\n**Robo**:  Fang doch mal gleich damit an – formulier aus, dass §1 kein Schattierer von §0 ist.",
  "[Hint yvqm] Try §0":
  "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt.",
  "[Hint ysocy] Remember §0":
  "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt.",
+ "[Hint yevhg] Now best distinguish the three cases §0, §1,§2":
+ "**Robo**:  Ich würde jetzt die drei Fälle §0, §1, §2 unterscheiden.",
  "[Hint yctv9] §0 means complement of §1, i.e. §2.":
  "**Du**: Also §0 ist hier einfach das Komplement von §1?\n\n**Robo**:  Ja.  Das ist genau das, was eben noch §2 hieß.",
- "[Hint xpkm] Remember §0":
- "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
+ "[Hint xpkm] Remember §0": "**Robo**: Erinnerst du dich an §0?",
  "[Hint xnqr] Try §0 | §1":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint wouvk] The supremum of all shaders of §0 is strictly larger than b.\nFirst, show that there exists some shader.\nThis shader will be strictly larger than b by the very definition of §1.\nAnd the supremum of all shaders will be at least as large as this particular one.\n":
+ "**Du**:  Das Supremum der Schattierer von §0 ist größer als §0 … ist das nicht aus der Definition klar?\n\n**Robo**:  Mehr oder weniger.\nDu musst halt erst einmal sicherstellen, dass es einen Schattierer gibt.\nDer ist dann per Definition von §1 echt größer, also östlicher, als §0.\nUnd das östliche Supremum aller Schattierer liegt notwendigerweise mindestens so weit östlich wie dieser eine.\n",
  "[Hint wjedv] Try §0": "Ext räuspert sich.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint wai1k] Start with §0": "**Robo**:  Fang mal an mit so etwas wie §0.",
  "[Hint w5pc3] Good intermediate statement to try to prove.":
  "**Robo**:  Sieht doch gut aus.",
- "[Hint w4joj] Try §0.":
- "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint w595i] Now that you've established a value in the image of §0 with §1, you can choose a preimage with the required properties.":
+ "**Robo**:  Sieht doch gut aus.  Nachdem du jetzt mit §1 einen Wert im Bild des offenen Intervalls §0 etabliert hast, kannst du ein Urbild mit den gesuchten Eigenschaften wählen.",
+ "[Hint w4joj] Try §0.": "**Robo**: Das ist eigentlich auch ganz `simp`el.",
  "[Hint w0ye0] Introduce the product §0 of all primes apart from §1, and\nestablish that the product of all primes is the product of p and q.":
  "**Robo**:  Ich würde mal einen Namen für das Produkt aller Primzahlen außer §1 einführen, sagen wir §0.  Und dann zeigen, dass das Produkt aller Primzahlen das Produkt von §1 und §0 ist.",
- "[Hint ux181] Remember §0.":
- "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint vxovm] So the claim is:  §0.": "**Robo**:  Zu zeigen ist also: §0",
+ "[Hint vfajy] Just §0 §1 (§2).": "**Robo**:  Hier würde ich einfach §2 sagen.",
  "[Hint uww7c] Perform §0 again": "**Robo**: §0?",
  "[Hint upbd] Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n§5 means that b is an *upper bound* of s: §6 for every element of s.\n\nFor subset §7 of a set §8 (§9), §10 means that there exists some §11 in T\n(§12) such that §13.":
  "**Du**:  Ich rate einfach mal … §5 bedeutet doch bestimmt, dass §3 eine obere Schranke von §0 ist.  Und §10 bedeutet, dass §0 „bounded above“, also von oben beschränkt ist.  Richtig?\n\n**Robo**:  Ja, richtig. Wir müssen vermutlich einfach noch einmal explizit sagen, dass §11 die gesuchte obere Schranke ist.",
+ "[Hint umu4r] The grand plan is now to show that on the one hand, §0 is in the shade, and on the other hand, s is in the sun.\nWe start with the shade.  By our assumption §1, it suffices to show that s sits strictly between §2 and §3.\nProceed as follows:\n- §4 in view of §5, and in fact\n- §6.\n- §7, and a fortiori\n- §8\n":
+ "**Robo**:  Prima!\nIch glaube, wir können jetzt einerseits zeigen, dass §0 im Schatten liegt, und andererseits dass §0 in der Sonne liegt.\nDas wird unser Widerspruch.\n\nWir fangen mit dem Schatten an.  Wegen §1 reicht es dazu ja zu zeigen, dass §0 echt zwischen §2 und §3 liegt.\nIch würde wie folgt vorgehen:\n- §4 wegen §5, und sogar:\n- §6\n- §7, also erst recht:\n- §8\nAlles klar?\n\n**Du**: Ich kanns ja mal versuchen.\n",
  "[Hint u9e76] Now §0 is about a map §1.":
  "**Robo**:  Jetzt ist §0 eine Aussage über eine Abbildung §1.",
  "[Hint u6qjy] Start with §0.": "**Robo**:  Ich würde wieder mit §0 anfangen.",
@@ -199,22 +213,33 @@
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
  "[Hint sldf] Rewrite with §0.":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint sbosf] In this case, §0 is a shade point since §1 and §2.":
+ "**Robo**: Würde mal sagen, in diesem Fall liegt §0 im Schatten, denn §1 und §2.",
  "[Hint sat5] Explain §0 and §1 are multivariate polynomials with variables\nindexed by §2 and coefficients in §3.\nExplain §4 as the set of elements §5 that lead to the variables\n§6, §7, §8 and §9.":
  "**Du**:  Nanu, was sind denn §0 und §1 hier für Kreaturen?\n\n**Robo**: Das sind „multivariate Polynome“, wobei die Variablen mit §2 durchnummeriert sind und die Koeffizienten in §3 liegen.\n\n**Du**:  Und was genau ist §4?\n\n**Robo**:  Die Standardmenge mit vier Elementen – §5.  Die Variablen heißen also §6, §7, §8 und §9.\n\n**Du**:  Spielt hier aber mal wieder alles keine Rolle, oder?  \n\n**Robo**:  Nicht wirklich.",
  "[Hint s88tx] You already have one upper bound, namely §0.\nProvide it as witness with §1.":
  "**Robo**:  Probier mal §1.",
  "[Hint rxjt] Try §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint rsdov] You need to apply §0 to finish this.\nAnd to apply this, you'll need to establish §1.":
+ "**Robo**: Ja, ich sehe es jetzt!  Erinner dich an §0.\nUm die Aussage anzuwenden, hältst du am besten noch einmal explizit §1 fest.",
  "[Hint rips] remember §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint rhhe1] Try to §0 with §1 at §2.":
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
  "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
  "**Du**:  Surjektiv heißt, jede Abbildung §0 hat ein Urbild. Also fange ich mal mit §1 an.",
+ "[Hint r7n4x] Remember §0": "**Robo**:  Erinner dich an §0!",
  "[Hint qmdrx] Remember §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint q8m2v] At the supremum of all shaders of §0, the mountain is at least as high as at b.\nThe proof combines §1, §2 and §3.\nBegin by showing that:\n§4\n":
+ "**Du**:  Am Supremum der Schattierer von §0 ist der Berg mindestens so hoch wie an §0?\n\n**Robo**:  Genau.\nDass der Berg an allen Schattierern mindestens so hoch ist, ist aus der Definition klar.\nDafür, dass das am Supremum immer noch gilt, brauchen wir natürlich die Stetigkeit der Wassertiefe.\n\n**Du**:  Der Wassertiefe …?\n\n**Robo**:  Ähh, ich meinte natürlich des Höhenprofils.\nDie Aussagen, die du brauchst, sind §1, §2 und §3.\nAber anfangen würd ich damit,\n\n§4\n\nzu zeigen.\nIch hatte ja heute Morgen schon ein paar Stunden Zeit, mir das zu überlegen.\n",
  "[Hint plnk] Try §0":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
+ "[Hint pbf] Remember the preceding level.":
+ "**Robo**:  Wie gesagt, das hatten wir uns eben gerade überlegt.",
+ "[Hint p4nen] First get hold of an element of the set: it is nonempty by §0.":
+ "**Robo**:  Halt am besten erst einmal fest, dass die Menge der Schattierer nicht leer ist.\nDas hatten wir doch gerade eben mit §0 gezeigt.",
  "[Hint nj44y] Establish that the “new prime” is bigger than one,\nand remember §0.":
  "**Robo**:  Halte mal fest, dass unsere „neue Primzahl“ jedenfalls größer ist als eins.  Danach können wir einfach §0 anwenden.",
  "[Hint nhdsmno] We have two modified neighborhood filters of §0.\n§1 is the filter “approaching zero from the right”:\nit consists of all sets that contain the positive part of a neighborhood of 0,\ni.e. that contain the intersection of a neighborhood of 0 with §2.\n§3 is the filter “approaching zero without ever being equal to zero”:\nit consists of all sets that contain a punctured neighborhood of zero,\ni.e. that contain the intersection of a neighborhood of 0 with §4.\n§5 means that the first filter is finer than the second,\ni.e. that every set in the second is also contained in the first.\nApply the new theorem §6.":
@@ -223,8 +248,7 @@
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
  "[Hint n5hjb] Try §0.":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
- "[Hint mwqb] Remember §0":
- "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
+ "[Hint mwqb] Remember §0": "**Robo**:  Erinner dich an §0.",
  "[Hint mr4el] Use §0 in combination with §1.":
  "**Robo**:  Irgendeine Kombination von §0 und §1 sollte das jetzt zu Ende bringen.",
  "[Hint mnq1z] Great. Now show that, on the other hand, by construction, no prime can divide the “new prime”.":
@@ -233,10 +257,12 @@
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
  "[Hint mdsff]\n§0 is the open interval between §1 and §2,\ni.e. §3.\n§4 is the filter of neighborhoods of §5 (sets containing §6 in their interior).\nJoke about filter/coffee/§7.\nAs the interval is open, can proceed with new theorem §8. ":
  "**Du**:  Oh, was ist das denn jetzt?  Kannst du mit diesen Symbolen etwas anfangen?\n\n**Robo**:  Glaub schon.  Zunächst einmal ist §0 das offene Intervall zwischen §1 und §2, also §3.\n\nUnd §4 ist der Nachbarschaftsfilter der §5.\n\n**Du**:  Langsam.  Nachtkaffeefilter???\n\n**Robo**:  Nach-Bar-Schafts-Filter.  Aber egal.  Wenn dir Filter nichts sagen: es ist die Menge aller Nachbarschaften von §5.\n\n**Du**:  Du meinst: aller Umgebungen von §5, im topologischen Sinne?\n\n**Robo**:  Ja.  Die Menge aller Mengen, die eine offene Teilmenge um §5 enthalten.\n\n**Du**: Puhhh … Darf ich das §7en?\n\n**Robo**:  Kannst du gern probieren.  Aber da das Intervall, um das es hier geht, selbst offen ist, sollte im Zweifelsfall §8 weiterhelfen. ",
+ "[Hint mcvid] Establish that §0 is in the shade, and that §1.":
+ "**Robo**:  Bevor du jetzt weitermachst, würde ich erst einmal ein paar relativ offensichtliche Dinge festhalten:\nErstens, §0 ist ein Schattenpunkt. Und zweitens:  §1.",
  "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
  "**Robo**:  Die Surjektivität von §0 liefert dir Urbilder von *Teilmengen* von §1. Vielleicht sollten wir mit §3 der Teilmenge, die §2 entspricht, einen Namen geben?",
- "[Hint ltssup] Unfold §0 in §1 to see §2.":
- "**Robo**: Vielleicht öffnest du zuerst mal §0 mit §1. Dann steht da §2 …",
+ "[Hint ltssup] Looks good.  Now unfold §0 in §1.":
+ "**Robo**:  Das sieht gut aus.\nVermutlich musst du nur noch die Definition von §0 in §1 aufdröseln.\nUnd vergiss nicht, dass wir immer noch einen großen Vorrat an Kaffee haben.",
  "[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n§3\n":
  "**Robo**: Klarer Fall für §0, würde ich sagen.  Schreib einfach mal:\n§3\nDann siehst du, was die Aussage von §0 ist.\n",
  "[Hint lpk2t] Remember §0.":
@@ -253,18 +279,25 @@
  "**Robo**:  Irgendeine Kombination von §0, §1 und §2 sollte das jetzt zu Ende bringen.",
  "[Hint k7r2d] First, establish that, like any natural number greater than one,\nthe “new prime” must have a prime factor.":
  "**Robo**:  Ich würd jetzt als Erstes mal festhalten, dass unsere „neue Primzahl“, wie jede natürliche Zahl größer als eins, einen Primfaktor haben muss.",
+ "[Hint k3t9w] Two goals are left: the set §0 is closed,\nand the supremum lies in the closure of §1.":
+ "**Robo**:  Jetzt bleiben zwei Ziele:  §0 ist abgeschlossen, und das Supremum liegt im Abschluss von §1.",
  "[Hint jx4gv] Consider the set §0.":
  "**Robo**: Das wird wohl die Menge §0 sein, oder?",
  "[Hint jrxb] Try §0":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
- "[Hint itvIoo] Just §0 §1.":
- "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint ivIoo] One version of intermediate value theorem is §0,\nwhich says\n§1\nSuggestion:  state this inclusion with §2, use theorem to prove it,\nthen see what you can do with it.":
+ "**Robo**:  Du führst das am besten auf die von Vanessa zitierte Version §0 zurück, die besagt:\n\n§1\n\nIch schlage vor, du führst zunächst diese Aussage mit §2 ein und schaust dann, was du damit anfangen kannst.",
+ "[Hint isclle] That set is closed by §0":
+ "**Robo**:  Dass diese Menge abgeschlossen ist, folgt aus §0.",
  "[Hint iscl]\n§0 means that §1 is continuous.\n§2 means that the set §3 is closed (as a subset of §4).\nSo the goal is to show that set of points where the continuous function §5 stays\nbelow the constant §6 is closed.\nApply new theorem §7, which says that for two continuous functions\n§8 and §9, the set of points §10 where §11 is closed in §12.":
  "**Du**:  Ich rate mal wieder … §0 heißt: §1 ist stetig.  Und §2 bedeutet:  diese Menge ist abgeschlossen.\n\n**Robo**:  Ja.  Sieht gar nicht so kontrovers aus. \n\nDer Krake versucht, Robo etwas zu erklären.\n\n**Robo**:  Ich glaube, er will sagen, einige jüngere Beckenbewohner sind politisch empfindlich und verwechseln abgeschlossen mit eingeschlossen.  Jedenfalls … du könntest das mit §7 angehen.  Der Satz sagt allgemeiner, dass für zwei stetige Funktionen §8 und §9 die Menge der Punkte, an denen §11 gilt, in §12 abgeschlossen ist.",
+ "[Hint ingz4] Remember §0.": "**Robo**:  Erinner dich an §0.",
  "[Hint ilinv] Note that §0 is useful here.":
  "**Robo**:  Hier kannst du bestimmt §0 gut gebrauchen.",
  "[Hint hwzk] Try §0":
  "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen.",
+ "[Hint hw34l] To construct the supremum of §0, you'll first want to show that the set is non-empty and that §1 is an upper bound.":
+ "**Robo**: Um jetzt ein Supremum von §0 zu konstruieren, solltest du zeigen, dass diese Menge nicht leer und durch §1 beschränkt ist.",
  "[Hint huqzl] Try proof by contradiction.":
  "**Robo**: Klar, das machen wir. Ist doch ein typischer Widerspruchsbeweis: Wenn es nur endlich viele Primzahlen gibt, dann ist das Produkt aller Primzahlen plus eins durch keine Primzahl teilbar. Aber jede Zahl größer als eins hat einen Primteiler. Widerspruch.",
  "[Hint hq5jg] Remember §0.":
@@ -291,11 +324,10 @@
  "[Hint fuhe2] Now, §0.": "**Robo**: §0 sagt meine Speicherplatte.",
  "[Hint flc10hx] Try §0.": "**Robo**: §0 sagt meine Speicherplatte.",
  "[Hint fh2c11] Try §0.": "**Robo**: §0 sagt meine Speicherplatte.",
- "[Hint eymq5] Now §0 §1.":
- "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
+ "[Hint eymq5] Now §0.": "**Robo**:  Na und jetzt §0.",
  "[Hint dy3w7] Try §0": "**Robo**:  Ich würde §0 schreiben.",
  "[Hint dtpx] Remember §0":
- "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "**Robo**:  Das hatten wir uns auch extra vorhin überlegt: §0.",
  "[Hint dkmw] Remind of previous result":
  "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben.",
  "[Hint d92p1] Use §0 now? First translate with\n§1.":
@@ -312,6 +344,7 @@
  "**Du**:  §0 ist der topologische Abschluss der Menge §1?\n\n**Robo**:  Klar.  Es ist die *kleinste* abgeschlossene Menge, die §1 enthält.  Diese Eigenschaft heißt auf Leansch §2.",
  "[Hint cev2] Establish §0.":
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
+ "[Hint cdp6] Remember §0.": "**Robo**:  Wir hatten schon §0.",
  "[Hint bsjn] Try §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
  "[Hint bs7xd] §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
  "[Hint bs7xd] Remember §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
@@ -319,30 +352,45 @@
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
  "[Hint bdad]\nNeed to show that §0 is bounded above.\nExpand §1 with §2 and new theorem §3.":
  "**Du**:  Hier sollen wir zeigen, dass die Menge §0 von oben beschränkt ist.\n\n**Robo**: Genau. Warte mal, was sagt er …  ah ja.  Probier mal, §1 mit §3 auszuschreiben.",
+ "[Hint bbdshadeh]  If §0 is in the sun, but on lower elevation than §1, then c is an upper (i.e. eastward) bound on §2.":
+ "**Du**:  … wenn §0 in der Sonne liegt, aber weiter unten als §1, dann ist §0 eine obere …\n\n**Robo**: … das heißt:  östlich …\n\n**Du**: … Schranke für die Schattierer von §1.",
+ "[Hint Ioontps] Apply §0 to an arbitrary value in §1.\nSuggestion: state and prove §2 for some explicit value.":
+ "**Robo**:  Jetzt nimm einfach irgendeinen Wert im Intervall §1 und wende §0 auf ihn an.\nVielleicht ist es einfacher, wenn du erst einmal §2 für einen ganz expliziten Wert festhältst.",
  "[Hint 9xyh5] If this is the route you want to take,\nperhaps now establish §0 with §1.":
  "**Robo**:  Ah.  Auch keine schlechte Idee.  Dann würde ich jetzt aber trotzdem als Nächstes §0 mit §1 einführen.",
+ "[Hint 9al6z] §0 upgrades §1 to a statement about the closure.":
+ "**Robo**: Jetzt könntest du zum Beispiel §0 anwenden.",
  "[Hint 8riva] Better use §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint 815af] You need to distinguish cases.":
  "**Robo**:  Genau.  Jetzt kannst du also einfach die verschiedenen Fälle unterscheiden.",
  "[Hint 7xd8e] Unpack §0 with §1.":
- "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
- "[Hint 7xd8e] Remember §0":
- "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "**Robo**:  Du könntest als ersten Schritt §0 mit §1 entpacken.",
  "[Hint 7v4d5] Start with §0": "**Robo**:  Ja, mach das.  So etwas wie §0.",
+ "[Hint 60ivz] Suggestion: §0":
+ "**Robo**:  Prima.  Ich würde dem Supremum der Schattierer jetzt einen Namen geben: §0.",
+ "[Hint 5yybw] Try a proof by contradiction.":
+ "**Robo**:  Ich würde hier einen Widerspruchsbeweis versuchen.",
+ "[Hint 59m0w] Remember §0.": "**Robo**:  Erinnerst du dich noch an §0?",
  "[Hint 4j4cl] Try §0.":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint 33o0v] See: Now just need to prove that §0 lies in the interval\n§1,\nand that the interval is indeed open.":
  "**Robo**:  Na bitte.  Das hat doch geklappt.  Jetzt musst du also nur noch zeigen, dass §0 in §1 liegt und dass §1 tatsächlich offen ist.",
+ "[Hint 2u5ee] You will also need §0.":
+ "**Robo**: Vermutlich wirst du jetzt irgendwie §0 benutzen wollen.",
  "[Hint 2k3ni] This is looking very promising.":
  "**Du**:  Sieht das jetzt gut aus?\n\n**Robo**:  Das will ich doch meinen!",
+ "[Hint 2cfq0] Now you can extract a shader from the hypothesis §0.":
+ "**Robo**: Jetzt kannst du aus §0 einen Schattierer konstruieren.",
  "[Hint 25fac] You now want to apply §0, which we've seen before:\n§1\nSo bring the goal into a shape to which you can apply that theorem.\nThe curly braces around §2, §3 and §4 mean that these parameters\nare implicit, so you often don't need to mention them.  But you *can* provide them\nwith:\n§5\n":
  "**Robo**:  Vermutlich willst du jetzt §0 anwenden:\n\n§1\n\nSollte nicht so schwer sein, das Beweisziel in eine Form zu bringen, auf die sich diese Aussage anwenden lässt.  \nDu kannst übrigens auch explizit dazusagen, für welchen Wert von §3 wir die Aussage benutzen:\n\n§5\n",
+ "[Hint 0u20z] Let §0 be a continuous function.\nIf §1 and §2 with §3 are in the sun,  but every §4 between a and c is in the shade, then §5.\nStart by distinguishing the cases §6, §7, §8.\nIn the first and the last case, you will need to find a contradiction.":
+ "**Du**:  Sei also §0 stetig.  Wenn §1 und §2 (mit §3) in der Sonne liegen, aber alle Punkte zwischen §1 und §2 liegen im Schatten, dann gilt §5.\n\n**Vanessa**:  Ja, genau wie ich sagte:  am östlichen und westlichen Ufer des Schattens hat der Berg genau dieselbe Höhe!\n\nDu grübelst ein bisschen.\n\n**Vanessa**:  Na komm schon, du sagtest doch, du hättest das schon längst verstanden.\n\n**Robo** *(leise zu dir)*:  So ganz hatte ich das auch noch nicht zu Ende gedacht.\nAber ich würde jedenfalls mit einer Fallunterscheidung anfangen.\nEntweder §6 oder §7 oder §8.\nIm ersten und letzten Fall musst du irgendwie einen Widerspruch finden.",
  "[Game] Title": "Robo",
  "[Game] Introduction":
- "# Game Over oder QED?\n\nBist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?\nDann bist du hier genau richtig!\nIn diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.\nDu wirst unter anderem per Induktion Summenformeln beweisen,\nnachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,\nzeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,\nund die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.\n\nDas Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\nfast genauso an wie in VSCode, der Standard-IDE für Lean.\nAuf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,\nund schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).\n\nKlicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n\n## Spielstand\n\nDein Spielstand wird lokal in deinem Browser als *site data* gespeichert.\nSolltest du diese löschen, verlierst du deinen Spielstand!\nViele Browser löschen *site data* und *cookies* zusammen.\nDu kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.\n\n## Spielregeln\n\nWenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.\nWenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.\n\n## Neuigkeiten\n\n`[2026-05-21]` Im Spiel ist jetzt nur noch ein kleine Teilmenge der `simp`-Lemmas aus `mathlib` zugelassen.  Wenn eine Level, das bis gestern noch als gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es wahrscheinlich daran, dass du eine `simp`le Abkürzungen genommen hattest.\n\n`[2026-03-20]` Robo gibts jetzt auch auf Englisch! Über weitere Übersetzungen würden wir uns [sehr freuen](https://github.com/hhu-adam/Robo/tree/main?tab=readme-ov-file#translations)!\n\nHintergrundinformationen und Credits findest du im Menü unter *Game Info*.",
+ "# Game Over oder QED?\n\nBist du neugierig, wie sich computer-unterstützte Beweisführung mit „echter“ Mathematik anfühlt?\nDann bist du hier genau richtig!\nIn diesem Spiel lernst du, mit dem Beweisassistenten Lean 4 und der Beweisbibliothek mathlib zu arbeiten.\nDu wirst unter anderem per Induktion Summenformeln beweisen,\nnachweisen, dass eine Abbildung genau dann surjektiv ist, wenn sie ein Rechtsinverses besitzt,\nzeigen, dass es überabzählbar viele Folgen natürlicher Zahlen gibt,\nund die Spur als Abbildung auf dem Raum der quadratischen Matrizen charakterisieren.\n\nDas Interface ist etwas vereinfacht, aber wenn du den *Editor-Modus* aktivierst, fühlt es sich\nfast genauso an wie in VSCode, der Standard-IDE für Lean.\nAuf einem Smartphone oder Tablet bleibst du besser im voreingestellten *Schreibmaschinen-Modus*,\nund schaltest alle autocompletion/correction-Features deiner Bildschirmtastatur aus\n(z.B. unter „intelligentes Tippen > Texterkennung“ auf Samsung-Tastatur).\n\nKlicke auf den ersten Planeten *Logo* in der Übersicht, um deine Reise zu starten.\n\n## Spielstand\n\nDein Spielstand wird lokal in deinem Browser als *site data* gespeichert.\nSolltest du diese löschen, verlierst du deinen Spielstand!\nViele Browser löschen *site data* und *cookies* zusammen.\nDu kannst den Spielstand aber auch über das Menü herunterladen und manuell speichern.\n\n## Spielregeln\n\nWenn du ernsthaft spielen möchtest, solltest du *Rules: regular* wählen.\nWenn du dich nur ein bisschen umsehen möchtest, wähle *Rules: relaxed*\n  – dann kannst du jedes Level spielen, auch wenn du vorhergehende Levels noch nicht gelöst hast.\n\n## Neuigkeiten\n\n`[2026-05-21]` Im Spiel ist jetzt nur noch eine kleine Teilmenge der `simp`-Lemmas aus `mathlib` zugelassen.  Wenn ein Level, das bis gestern noch als gelöst angezeigt wurde, jetzt auf einmal als ungelöst erscheint, liegt es wahrscheinlich daran, dass du eine `simp`le Abkürzung genommen hattest.\n\n`[2026-03-20]` Robo gibts jetzt auch auf Englisch! Über weitere Übersetzungen würden wir uns [sehr freuen](https://github.com/hhu-adam/Robo/tree/main?tab=readme-ov-file#translations)!\n\nHintergrundinformationen und Credits findest du im Menü unter *Game Info*.",
  "[Game] Info":
- "## Projekt ADAM\n\nDieses Lernspiel wurde im Rahmen des Projekts\n[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\nan der Heinrich-Heine-Universität Düsseldorf entwickelt,\nfinanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\nDie laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.\n## Spielinhalt\n\n**Spoiler Alert** Auf [Github](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n\n## Credits\n\n* **Projektleitung:** Marcus Zibrowius, Immi Halupczok\n* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Konzept & Handlung:** Marcus Zibrowius\n* **Übersetzungen:**\n  * **en:** Marcus Zibrowius / DeepL\n  * **es:** [Enrique Díaz](https://github.com/qdiazblanco), [Pepa Montero](https://github.com/pepamontero) / Claude\n  * **zh:** [Shuai Zhao](https://github.com/LazyThree) / ChatGPT, [John Lu](https://johnlyu2.github.io) \n* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Kontakt\n\nDas Spiel wird laufend überarbeitet.\nWir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,\nzum Beispiel per Email an\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nWenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:\n\n* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)\n* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).",
+ "## Projekt ADAM\n\nDieses Lernspiel wurde im Rahmen des Projekts\n[ADAM: Anticipating the Digital Age of Mathematics](https://hhu-adam.github.io/)\nan der Heinrich-Heine-Universität Düsseldorf entwickelt,\nfinanziert durch das Programm *Freiraum 2022* der *Stiftung Innovation in der Hochschullehre*.\nDie laufende Weiterentwicklung wird durch Mittel des *AI for Math Fund* der Stiftung *Renaissance Philanthropy* ermöglicht.\n## Spielinhalt\n\n**Spoiler Alert** Auf [GitHub](https://github.com/hhu-adam/Robo?tab=readme-ov-file#overview-over-existing-content) findest du eine Übersicht über den groben mathematischen Inhalt aller Planeten.\n\n## Credits\n\n* **Projektleitung:** Marcus Zibrowius, Immi Halupczok\n* **Game Engine:** Jon Eugster, Alexander Bentkamp, Patrick Massot – siehe [lean4game](https://github.com/leanprover-community/lean4game?tab=readme-ov-file#credits)\n* **Levels:** Jon Eugster, Marcus Zibrowius, Sina Hazratpour\n* **Konzept & Handlung:** Marcus Zibrowius\n* **Übersetzungen:**\n  * **en:** Marcus Zibrowius / DeepL\n  * **es:** [Enrique Díaz](https://github.com/qdiazblanco), [Pepa Montero](https://github.com/pepamontero) / Claude\n  * **zh:** [Shuai Zhao](https://github.com/LazyThree) / ChatGPT, [John Lu](https://johnlyu2.github.io) \n* **Illustrationen:** [Dušan Pavlić](https://www.behance.net/dusanpavlic#)\n\n## Kontakt\n\nDas Spiel wird laufend überarbeitet.\nWir freuen uns sehr über Erfahrungsberichte, Anregungen und Kritik,\nzum Beispiel per Email an\n[Marcus Zibrowius](https://www.math.uni-duesseldorf.de/~zibrowius/).\nWenn du spezifische Änderungswünsche hast oder Fehler findest, kannst du auch gern einen Issue auf GitHub erstellen:\n\n* zum Spielinhalt im [Robo repo](https://github.com/hhu-adam/Robo/issues)\n* zum Spielserver im [lean4game repo](https://github.com/leanprover-community/lean4game/issues).",
  "[Game] Conclusion": "QED",
  "[Game] CaptionShort":
  "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!",
@@ -361,7 +409,7 @@
  "[Doc.Theorem] StrictMono.injective":
  "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv.",
  "[Doc.Theorem] StrictMono.add\nif §0 and §1 strictly monotonous, then also §2 strictly monotonous":
- "Sind §0 und §1 beide strikt monoton sind, so ist auch §2 strikt momonton.",
+ "Sind §0 und §1 beide strikt monoton, so ist auch §2 strikt monoton.",
  "[Doc.Theorem] Set.Finite.toFinset:\nGiven §0, §1 with §2, §3,\n§4, §5 is the same subset viewed as finite subset.":
  "Ist eine Teilmenge §1 mit der Annahme §2 gegeben, \nso ist §5 dieselbe Teilmenge §0, \naber nun explizit als *endliche* Teilmenge aufgefasst.",
  "[Doc.Theorem] Odd.strictMono_pow\nfor odd §0, §1 is strictly monotonous\ngiven §2, can write §3 as §4":
@@ -381,9 +429,9 @@
  "**Du**: Ehm, das war verkehrt.\n\n  **Robo**: Ja, anders herum wär's besser gewesen. Aber wenn du jetzt einfach weitermachst, bis du so etwas wie §0 erhältst, kann §1 das beweisen.\n\n  **Robo**: Da fällt mir ein, §2 wendet ohnehin auch versuchsweise §3 an.\n  Das heißt, du musst §4 nicht einmal ausschreiben.",
  "Wrong order": "**Robo**:  Nein, das sieht falsch herum aus.",
  "With §0, you introduce an intermediate result.\nYou must then prove this intermediate result\nbefore you can continue with the actual proof.\n\n## Related\n§1 works in exactly the same way, except that you can continue with the main proof first and\nonly have to prove your intermediate result at the very end.":
- "Mit §0 führst du ein Zwischenresultat ein.\nAnschließend musst du zuerst dieses Zwischenresultat beweisen, bevor du den eigentlichen Beweis fortsetzen kannst.\n\n## Freunde und Verwandte\n§1 funktioniert genauso, außer, dass du zunächst den Hauptbeweis forsetzen kannst und erst ganz am Ende dein Zwischenresultat beweisen musst.",
+ "Mit §0 führst du ein Zwischenresultat ein.\nAnschließend musst du zuerst dieses Zwischenresultat beweisen, bevor du den eigentlichen Beweis fortsetzen kannst.\n\n## Freunde und Verwandte\n§1 funktioniert genauso, außer dass du zunächst den Hauptbeweis fortsetzen kannst und erst ganz am Ende dein Zwischenresultat beweisen musst.",
  "With §0, you introduce a proof section in which you show\nthat the desired proof goal follows from §1.\nThen you prove §2.\n\n## Friends and relatives\n§3 works the same way, except that you must first prove §4 before you can\ncontinue with the main proof.":
- "Mit §0 leitest du einen Beweisabschnitt ein, in dem du zeigst, dass das gewünschte Beweisziel aus §1 folgt.\nDanach beweist du §2.\n\n## Freunde und Verwandte\n§3 funktioniert genauso, außer, dass du zunächst §4 beweisen musst und erst dann den Hauptbeweis fortsetzen kannst.",
+ "Mit §0 leitest du einen Beweisabschnitt ein, in dem du zeigst, dass das gewünschte Beweisziel aus §1 folgt.\nDanach beweist du §2.\n\n## Freunde und Verwandte\n§3 funktioniert genauso, außer dass du zunächst §4 beweisen musst und erst dann den Hauptbeweis fortsetzen kannst.",
  "With §0, you insert an intermediate step into an equation or equivalence.\n\n| before | tactic    | after                |\n|:------------ |:--------- |:----------------------- |\n| §1    | §2 | §3 and §4 |\n| §5    | §6 | §7 and §8 |\n\nSince you can repeat the tactic several times, it is suitable for\nperforming a “calculation” §9 step by step.\n\n(Outside of the game, however, the multi-line tactic §10 is better suited for such calculations.)":
  "Mit §0 fügst du in eine Gleichung oder Äquivalenz einen Zwischenschritt ein.\n\n| vorher       | Taktik    | nachher                | \n|:------------ |:--------- |:-----------------------| \n| §1           | §2        | §3 und §4              | \n| §5           | §6        | §7 und §8              | \n\nDa du die Taktik mehrmals wiederholen kannst, ist sie geeignet, um Schritt für Schritt eine „Rechnung“ §9 durchzuführen.\n\n(Außerhalb vom Spiel ist allerdings die mehrzeilige Taktik §10 besser für derartige Rechnungen geeignet.)",
  "With §0, you can write out the definition §1 in the proof goal.\nWith §2, you do the same thing, but in the assumption §3.\n\nAlthough the proof goal or assumption before and after §4 are identical in definition,\nmany tactics (e.g., §5 or §6) operate on a syntactic level;\nthey do not “see through definitions.”\n\n## Friends and Relatives\n\nThe tactics §7 and §8 do practically the same thing.":
@@ -410,7 +458,7 @@
  "Using §0 would be too complicated. It is simpler to use §1 to introduce\nan arbitrary element from §2 and show that it is also in §3. Firstly, write all inclusions\nexolicitly with §4":
  "**Du**:  Kann ich hier auch irgendwie mit §0 argumentieren?\n\n**Robo**:  Nein, viel einfacher.  Gib dir einfach mit §1 ein beliebiges Element aus §2 vor, und zeige, dass es in §3 liegt.\n\nAber vielleicht schreibst du vorher doch einmal alle Inklusionen mit §4 aus, damit du siehst, was passiert.",
  "Useful tactics for equality are: §0, §1, §2":
- "Nützliche Taktiken für Gleicheit sind: \n* §0\n* §1\n* §2",
+ "Nützliche Taktiken für Gleichheit sind: \n* §0\n* §1\n* §2",
  "Use §0!": "**Robo**: §0!",
  "Use §0 to simplify assumption §1":
  "**Robo**: Ich glaube, du solltest jetzt mit der Definition von §0 die Annahme §1 vereinfachen.",
@@ -459,7 +507,7 @@
  "Try §0. If §1, then §2 when using §3":
  "**Robo**: Oh, das ist ein Fall für §0.  Wenn du schon weiß, dass §1, erhältst du §2 mit §3.",
  "Try §0. Given assumption §1 rewrite it via §2 to §3.\n§4 not applicable to more complex §5":
- "**Robo**: Und das ist ein Fall für §0. Hast du §1 als Annahme, kannst du sie mit §2 zu §3 umscheiben.\n\n**Du**: Aber könnte ich hier nicht auch einfacher §4 benutzen?\n\n**Robo**: Ja gut, in diesem einem einfachen Beispiel schon. Wenn aber §5 ein komplizierterer Ausdruck ist und noch nicht exakt so im Beweisziel steht, dann nicht. Probiers mal, wie ich es gerade gesagt habe.",
+ "**Robo**: Und das ist ein Fall für §0. Hast du §1 als Annahme, kannst du sie mit §2 zu §3 umschreiben.\n\n**Du**: Aber könnte ich hier nicht auch einfacher §4 benutzen?\n\n**Robo**: Ja gut, in diesem einen einfachen Beispiel schon. Wenn aber §5 ein komplizierterer Ausdruck ist und noch nicht exakt so im Beweisziel steht, dann nicht. Probiers mal, wie ich es gerade gesagt habe.",
  "Try §0. Explain, given §1 then §2 is the same number interpreted as a natural number.\nRemind that §3 undefined as §4 for §5":
  "**Robo**:  Hier brauchst du wahrscheinlich §0:  ist §1 eine ganze Zahl, ist §2 dieselbe Zahl, aber aufgefasst als natürliche Zahl.\n\n**Du**:  Wie?  Was ist denn dann z.B. §3??\n\n**Robo**:  Keine Ahnung.  Was ich meinte, ist natürlich:  *falls §4 ist*, dann ist §5 immer noch „dieselbe“ Zahl.",
  "Try §0. Explain §1 as taking arbitrary §2 and changing goal from §3 to §4":
@@ -472,11 +520,9 @@
  "Try §0 | §1. Go step back s.t. goal §2":
  "**Robo**: Hier müsstest du jetzt §0 oder §1 benutzen.\n  Geh lieber einen Schritt zurück, sodass das Beweisziel §2 ist.",
  "Try §0 | §1, §2":
- "**Robo**: Du könnstest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt.",
+ "**Robo**: Du könntest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt.",
  "Try §0 with §1":
  "**Robo**: Vergiss aber nicht, dass §0 die Annahme §1 explizit braucht!",
- "Try §0 with a number and then §1. You can not use §2\ndirectly, as §3 cannot be applied inside of quantors. Try §4 with a number.":
- "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n\n**Du**: Könnte ich jetzt schon §2 anwenden?\n\n**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n\n**Du**: Aber wie würde ich das machen?\n\n**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben.",
  "Try §0 which states\n§1\n":
  "**Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma §0 helfen:\n\n§1\n",
  "Try §0 via §1":
@@ -518,12 +564,12 @@
  "Try §0 or again §1":
  "**Robo**: Hier könntest du §0 verwenden.  Oder *wieder* §1 …",
  "Try §0 on §1 with §2 to §3e§4rite\ngoal.":
- "**Robo**:  Wie gesagt, ich denke, du kannst gleich mit §0 anfangen, angewendet auf die Einheitsmatrix §1 rechts vom Gleichheitszeigen. Du willst also mit der Gleichung §2 das Beweisziel §3e§4riten.",
+ "**Robo**:  Wie gesagt, ich denke, du kannst gleich mit §0 anfangen, angewendet auf die Einheitsmatrix §1 rechts vom Gleichheitszeichen. Du willst also mit der Gleichung §2 das Beweisziel §3e§4riten.",
  "Try §0 not §1": "**Robo**:  Nein, nicht §0, sondern §1.",
  "Try §0 in form of §1":
  "**Du**: Und jetzt …\n\n**Benedictus**: … solltest du dir ein passendes Zwischenresultat zurechtlegen.\n\n**Robo**: Ja! Probier mal wieder §0.  Genauer: §1!",
  "Try §0 from the other side or §1 beforehand":
- "**Robo**:  Das sieht irgendwie falsch aus …\n  Vielleicht solltest du §0 lieber rückwarts anwenden.\n  Oder vor diesem Schritt mit §1 die Gleichung umdrehen.",
+ "**Robo**:  Das sieht irgendwie falsch aus …\n  Vielleicht solltest du §0 lieber rückwärts anwenden.\n  Oder vor diesem Schritt mit §1 die Gleichung umdrehen.",
  "Try §0 for resulting cases §1 and §2 i.e. §3 and §4.\nCould switch via §5 between §6 and §7":
  "**Robo**: Jetzt kannst du nämlich eine Fallunterscheidung machen, §0.\n\n**Du**: Damit krieg ich die Fälle §1 und §2?\n\n**Robo**: Genau! Oder präziser §3 und §4. Das ist nicht ganz das gleiche, und man könnte mit dem Lemma §5 zwischen §6 und §7 wechseln.",
  "Try §0 at §1":
@@ -602,7 +648,7 @@
  "To rewrite into the other direction you can use §0 (§1) infront of the name. Try §2":
  "**Du**: Und wenn ich in die andere Richtung umschreiben möchte?\n\n**Robo**: Dann schreibst du ein §0 (§1, also klein \"L\") vor den Namen, also §2.",
  "To proof sum §0\ntry to perform induction over §1 using §2. §3 is optional and you can\ndecide on the name of your induction variable (§4) and hypothesis (§5).":
- "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n\n§0\n\nGabs da nicht diese Geschichte mit dem kleinem Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
+ "**Du**: Diese Summe habe ich auch schon einmal gesehen. \n\n§0\n\nGabs da nicht diese Geschichte mit dem kleinen Gauß, der da ein ganz einfaches Argument für hatte?\n\n**Robo**: Mit Geschichte kenn ich mich nicht aus.  Ich würde einfach eine Induktion über §1 machen. Das wäre auf Leansch: §2!\n\n**Du**:  Warum §3?\n\n**Robo**:  Der Zusatz ist natürlich optional. Du kannst damit Namen für Induktionsvariable (§4) und -hypothese (§5) vorgeben.",
  "To divide assumption §0 use §1":
  "**Robo**: Ich würde mal die Annahme §0 mit §1 aufteilen.",
  "To be more precise: §0 sends an §1 onto the mapping, which maps each index §2 onto §3.\nIn the former intepretation this is the mapping §4.":
@@ -690,9 +736,9 @@
  "Tackle  §0 either with §1 or define mapping §2 as before.\nRemind that §3 is either §4 or §5 ro can be replyced by §6":
  "**Robo**: Wie immer gehst du ein §0 mit §1 an.  Oder du definierst dir erst einmal mit §2 eine Abbildung, die du benutzen möchtest, so, wie du es eben gerade gesehen hast. Den Pfeil §3 schreibst du übrigens als §4 oder §5. Aber du kannst auch stattdessen §6 benutzen.",
  "Surjectivity states that each §0 possesses a preimage §1.\nTry to construct a inverse mapping via §2":
- "**Robo**: Aus der Surjektivität weisst du, dass jedes §0 ein Urbild §1 hat. Kannst du daraus nicht mit §2 eine Umkehrabbildung konstruieren?",
+ "**Robo**: Aus der Surjektivität weißt du, dass jedes §0 ein Urbild §1 hat. Kannst du daraus nicht mit §2 eine Umkehrabbildung konstruieren?",
  "Start with §0. Find §1 with §2. Try §3 to get §4 and §5 and see if §6 applicable":
- "**Du**: Aber was soll ich denn mit unserer Annahme §0 anfangen?\n  Ich müsste überhaupt erst einmal eine Multiplikation haben.\n\n**Robo**: Du müsstest ein Matrizenprodukt §1 finden, für das §2 gilt.\n  Dann könnstest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu erhalten, bei denen §6 vielleicht anwendbar ist.",
+ "**Du**: Aber was soll ich denn mit unserer Annahme §0 anfangen?\n  Ich müsste überhaupt erst einmal eine Multiplikation haben.\n\n**Robo**: Du müsstest ein Matrizenprodukt §1 finden, für das §2 gilt.\n  Dann könntest du §3 schreiben, um zwei Beweisziele – §4 und §5 – zu erhalten, bei denen §6 vielleicht anwendbar ist.",
  "Start with §0 or §1":
  "**Robo**:  Vielleicht fängst du mal wieder mit §0 an. Oder mit §1.",
  "Start with §0": "**Robo**:  Ich würde wieder mit §0 anfangen.",
@@ -743,6 +789,7 @@
  "Saturn": "Saturn",
  "Samarkand": "Samarkand",
  "Robotswana": "Robotswana",
+ "Rigi": "Rigi",
  "Rewrite §0. Start with §1 to replace §2 with §3":
  "**Du**: §0, die sind doch alle äquivalent…\n\n**Robo**: Ja, aber du musst ihm helfen, die Äquivalenzen umzuschreiben. Mit §1 kannst du §2 durch §3 ersetzen.",
  "Rewrite §0 to §1. Formulate equation using §2.\nAlso, specify that equation is in §3. Try e.g. §4":
@@ -777,7 +824,7 @@
  "Remind that §0 in this case is equivalence":
  "**Du** *(flüsternd)*: Ist das nicht die Definition von §0?\n\n**Robo** *(flüsternd)*: Könnte man so sehen. Aber auf Leansch ist das bloß eine Äquivalenz.",
  "Remind that goal looks like §0. Try §1. The sum sign is written\nas §2.":
- "**Du**: Die Annahme sieht wie eine verklausulierte Variante von §0 aus. Das kann ja so oder so keine große Summe werden.\n\n**Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten. Ich schlage vor: §1.  Das Summezeichen schreibst du als §2.",
+ "**Du**: Die Annahme sieht wie eine verklausulierte Variante von §0 aus. Das kann ja so oder so keine große Summe werden.\n\n**Robo**: Nein.  Aber wir brauchen wohl einen Zwischenschritt, um das angegebene Ergebnis zu erhalten. Ich schlage vor: §1.  Das Summenzeichen schreibst du als §2.",
  "Remind that 'tuples' §0 and §1 are two mappings §2.\nEvaluate them on elements from §3. Try §4":
  "**Robo**:  Erinner dich, dass deine “Tupel” §0 und §1 in Wahrheit zwei Abbildung §2 sind. Du könntest sie auf einem Element aus §3 auswerten. Vielleicht hilft §4 in irgendeiner Form?",
  "Remind of rewrite via §0 as §1. Try §2":
@@ -829,6 +876,8 @@
  "Perform §0 again": "**Robo**: Und jetzt natürlich wieder §0.",
  "Parts available in assumptions":
  "**Du**: Ah, und die beiden Teile habe ich schon in den Annahmen.",
+ "PART A: Construction of the supremum s\n\nOne can find a §0 between §1  and §2 with §3.\nThe set §4 is non-empty, as b is in the shade,\nand it is bounded above by c, since c is in the sun with value smaller than at b.\nIn particular, Shaders f b has some supremum §5.\n\nSo: First, prove that there is some §6 with this property.":
+ "**Robo**:  Das ist jetzt der interessante Teil …  Ich hatte mir das grob wie folgt vorgestellt:\n- Mit dem Lemma von eben können wir ein §0 zwischen §1 und §2 finden mit §3.\n  Die Menge §4 ist nicht leer, schließlich liegt §0 im Schatten, und wird im Osten durch §2 beschränkt.\n  Also gilt für ihr Supremum §5 …\n\n**Du**:  Langsam, das muss ich jetzt erst einmal nachvollziehen.\nIch zeige also als Erstes, dass es ein §6 gibt mit §3.",
  "Open §0 via §1 to see §2 ...":
  "**Robo**: Vielleicht öffnest du zuerst mal §0 mit §1. Dann steht da §2 …",
  "Only two of three §0 are rewritten. §1 only rewrites only first found occurance i.e. §2.\nAs §3 is considered to be something 'different' the lemma has to be applied again":
@@ -836,21 +885,22 @@
  "One option: §0.\nBut in any case, will need §1\n(or §2) at some point,\nso might as well start with it\nand obtain tautology §3.":
  "**Du**: Und jetzt §0?\n\n**Robo**: Ja, das würde zum Ziel führen.\nAber so oder so musst du früher oder später vermutlich §1 (oder §2) benutzen.  \nDu kannst genauso gut damit anfangen, und dann erhältst du mit §3 eine Tautologie.",
  "One could choose left inverse on the previous proven statement §0 by using §1.\nAs proven statement has no name formulate statement again with §2 and prove it again.":
- "**Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.\n\n**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: §0 Wenn du die hier hättest, könntest du vermutlich mit §1 das gesuchte Linksinverse wählen. Nur hat diese Aussage dummerweise keinen Namen. Vielleicht formulierest du sie noch einmal mit §2 selbst aus, und beweist sie auch noch einmal.",
+ "**Du**:  Ich sehe gerade nicht, wie ich ein Linksinverses konkret konstruieren kann.\n\n**Robo**:  Erinner dich an die Aussage, die wir eben gerade gezeigt hatten: §0 Wenn du die hier hättest, könntest du vermutlich mit §1 das gesuchte Linksinverse wählen. Nur hat diese Aussage dummerweise keinen Namen. Vielleicht formulierst du sie noch einmal mit §2 selbst aus, und beweist sie auch noch einmal.",
+ "On the other hand, §0 is in the sun.\nStart with §1.\n":
+ "**Robo**:  Jetzt der Endspurt:  §0 liegt in der Sonne.\nStürz dich da mal rein mit §1 und brich die Aussage auf eine Ungleichung herunter.\n",
  "Often to prove §0, §1 can be proven as well. Here this is called §2.":
  "**Du**: Ja, das habe ich tatsächlich schon einmal gesehen.\n\n**Robo**: Ja, klar hast du das schon einmal gesehen. Das benutzen Mathematiker doch ständig. Wenn ihnen zu §0 nichts einfällt, zeigen sie stattdessen §1. Ich würde das ja statt *Kontraposition* eher *von_hinten_durch_die_Brust_ins_Auge* nennen. Aber hier heißt es natürlich §2.",
  "Observe §0 seperatly. Prove by cases with §1":
  "**Robo**: Ach ja, den Fall §0 müssen wir wohl gesondert betrachten. Unterscheiden wir die Fälle also mit §1",
  "Observe §0 and §1": "**Robo**: Was siehst du, wenn du §0 und §1 anschaust?",
  "Observe goal as §0.\nDo not try §1 as §2 but as §3":
- "**Robo**: Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir, wie die Klammern gesetzt sind. Irre…\n\n**Du**: Ah ich sehe, also §0!\n\n**Du**: Ich glaube den ganzen Zircus hier langsam nicht mehr: Zuerst ein „Und“ im Ziel, dann „Und“ in der Annahme, dann „Oder“ im Ziel und jetzt „Oder“ in der Annahme. Die haben sich doch abgesprochen!\n\n**Robo**: Lass ihnen doch ihren Spaß. Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten weiterfliegen.\n\n**Du**: Also, wieder §1?\n\n**Robo**: Ja, aber diesmal nicht §2, sondern §3.",
+ "**Robo**: Schau mal, wenn du mit dem Finger eine Annahme berührst, zeigt es dir, wie die Klammern gesetzt sind. Irre…\n\n**Du**: Ah ich sehe, also §0!\n\n**Du**: Ich glaube den ganzen Zirkus hier langsam nicht mehr: Zuerst ein „Und“ im Ziel, dann „Und“ in der Annahme, dann „Oder“ im Ziel und jetzt „Oder“ in der Annahme. Die haben sich doch abgesprochen!\n\n**Robo**: Lass ihnen doch ihren Spaß. Wir sind ja gleich hier fertig, und können zu einem interessanteren Planeten weiterfliegen.\n\n**Du**: Also, wieder §1?\n\n**Robo**: Ja, aber diesmal nicht §2, sondern §3.",
  "Now §0 says that §1 lies in the sublevel set,\nwhich is exactly the goal.":
  "**Robo**:  Fast fertig, oder?",
  "Now §0 can be applied":
  "**Robo**: Sehr gut.  Jetzt kannst du nämlich §0 anwenden.",
  "Now you have two goals.":
  "**Robo**: Schau mal, das ist Zauberpapier.\n  Jetzt haben wir auf einmal zwei Beweisziele.\n  Ich glaube, du weißt schon, wie man die jeweils erreicht.\n  Die Ziele stehen ja jeweils in den *Annahmen*.",
- "Now you can apply §0": "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden.",
  "Now try out §0": "**Robo**:  Gut.  Und jetzt §0.",
  "Now there is goal §0. This goal is part of the assumption":
  "**Robo**: Annahme: §0. Ziel: §0. Erinnerst du dich noch an `assumption`?",
@@ -858,6 +908,8 @@
  "**Robo**: Das sieht gut aus. Jetzt bist du so weit, dass du wieder §0 verwenden kannst.",
  "Now assumption §0 is available":
  "**Robo**: … und nachdem du das geschafft hast, hast du nun §0 als Annahme zur Verfügung.",
+ "Not being in the sun means lying in the shade.":
+ "Ein Punkt liegt genau dann nicht in der Sonne, wenn er im Schatten liegt.",
  "Mono": "Mono",
  "Maybe try §0 again": "**Robo**: Vielleicht kannst du wieder §0 benutzen.",
  "Looks like matrix multiplication":
@@ -869,18 +921,18 @@
  "Let §0 be a semiring. §1 (or §2 within the Polynomial namespace) is the semiring of\nunivariate polynomials in one variable §3 and coefficients in §4.":
  "Für einen (Halb-)Ring §0 ist §1 (oder kurz §2) der (Halb-)Ring der Polynome in einer Unbestimmten §3 mit Koeffizienten in §4.",
  "Known that there exists some element in §0. Try §1":
- "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „kontruierst“ du dir das einmal mit §1.",
+ "**Robo**:  Du weißt ja zumindest, dass *irgendein* Element in §0 existiert.  Vielleicht „konstruierst“ du dir das einmal mit §1.",
  "It is clear which §0 can be used.":
  "**Du**:  Nun ja.  Ziemlich klar, welches §0 man hier beispielsweise verwenden könnte.",
  "It conjected that §0 has left inverse. One would assume that §1 would\nnot work for §2. Tackling this by case distinction e.g. §3 is unecessary as\nin Leanic §4 is in §5. It is simply defined as §6":
- "**Du**: Behauptet wird offenbar, dass die Abbildung §0 ein Linksinverses besitzt. Ich gebe also einfach die Abbildung §1 an … außer, dass das für §2 nicht funktioniert.\n\n**Robo**:  Du könntest ja mit §3 eine Fallunterscheidung machen. Aber tatsächlich brauchst du das gar nicht.  In Leansch liegt auch §4 in §5.\n\n**Du**: Was … ??!\n\n**Robo**:  Ja.  Das ist einfach wieder als §6 definiert.",
+ "**Du**: Behauptet wird offenbar, dass die Abbildung §0 ein Linksinverses besitzt. Ich gebe also einfach die Abbildung §1 an … außer dass das für §2 nicht funktioniert.\n\n**Robo**:  Du könntest ja mit §3 eine Fallunterscheidung machen. Aber tatsächlich brauchst du das gar nicht.  In Leansch liegt auch §4 in §5.\n\n**Du**: Was … ??!\n\n**Robo**:  Ja.  Das ist einfach wieder als §6 definiert.",
  "Iso": "Iso",
  "Is there a set, which is not hit by §0":
  "**Cantor**:  Na, was meint ihr?  Gibt es vielleicht irgendeine Menge, die nicht von §0 getroffen wird?",
  "Introduce assumptions until §0 as goal":
  "**Robo**: Ich schlage vor, du führst erst einmal alle Annahmen ein, bis da nur noch\n§0\nals Beweisziel steht.",
  "Introduce all varaibles and assumptions from §0":
- "**Robo**: Vieleicht erst einmal ganz klassisch alle Variablen und Annahmen aus §0 einführen?",
+ "**Robo**: Vielleicht erst einmal ganz klassisch alle Variablen und Annahmen aus §0 einführen?",
  "Intro Vieta L10":
  "Die Kampfgeräusche wirken inzwischen bedrohlich nahe. Ihr hört deutlich vernehmbar Kanonenschüsse. Und da saust auch schon wieder ein Pfeil an euch vorbei.\n\n**Du**:  Ähm, sollten wir vielleicht …\n\n**Vieta**:  Keine Sorge, für einen Aufgabe haben wir noch Zeit.",
  "Intro Vieta L08":
@@ -888,7 +940,7 @@
  "Intro Vieta L07":
  "Ihr hört aus der Ferne Kampfgeräusche.\nVieta scheint nach wie vor nicht beunruhigt.\nEr gibt euch noch eine Aufgabe.",
  "Intro Vieta L06":
- "**Vieta**:  Wir sollten doch noch mal ein Stück laufen.  Hier entlang!\n\nEr eilt davon, und ihr folgt, so schnell ihr könnt. Als ihr den Ort erreicht, an dem er schließlich stehen bleibt, bist du völlig außer Puste. Vieta lacht.\n\n**Vieta**:  Reine Vorsichtsnahme!  Ich muss ja auf meine Besucher achtgeben. So viel Besuch bekomme ich nicht!\n\nEr reicht euch das nächste Blatt.",
+ "**Vieta**:  Wir sollten doch noch mal ein Stück laufen.  Hier entlang!\n\nEr eilt davon, und ihr folgt, so schnell ihr könnt. Als ihr den Ort erreicht, an dem er schließlich stehen bleibt, bist du völlig außer Puste. Vieta lacht.\n\n**Vieta**:  Reine Vorsichtsmaßnahme!  Ich muss ja auf meine Besucher achtgeben. So viel Besuch bekomme ich nicht!\n\nEr reicht euch das nächste Blatt.",
  "Intro Vieta L05":
  "Vieta sieht sich vorsichtig um, bleibt dann aber doch stehen.\nEr reicht euch ruhig das nächste Blatt.",
  "Intro Vieta L04":
@@ -915,17 +967,13 @@
  "**Robo**: Ich glaube, das ist Spinoza, einer der ganz wenigen Asteroiden vom Type QED. Schnell. Wir müssen uns ein bisschen beeilen, sonst verpassen wir ihn.\n\nEine halbe Stunde später seid ihr gelandet. Sehr einladend wirkt Spinoza nicht. Seine gesamte Oberfläche ist von feinem, rötlichen Sand bedeckt. Ein einziger, einsamer Formalosoph, der sich als Benedictus vorstellt, erwartet euch.\n\n**Benedictus**: Schön, dass ihr gekommen seid! Ich habe schon auf euch gewartet!\n\n**Du**: Hast du auch ein paar dringende Fragen … ?\n\n**Benedictus**: Ach nein, aus dem Alter bin ich heraus. Aber ich kann mir denken, wie es euch auf Implis und Quantus ergangen ist. Und glaubt, mir auf den anderen Planeten wird es nicht viel besser. Aber ich kann euch vielleicht ein bisschen vorbereiten.\n\n**Du**: Können wir nicht einfach hier bleiben und uns ein wenig ausruhen?\n\nBenedictus schüttelt den Kopf.\n\n**Benedictus**: Nein. Spinoza verträgt keine drei Bewohner. Und ihr müsst bald wieder weiter, sonst wird der Weg zu weit. Wir kommen nur alle 400 Jahre bei den Planeten vorbei.",
  "Intro Slope":
  "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: ein schmales Hochhaus und ein zweites Gebäude mit etwas weniger Etagen. Die Gebäude sind mit einem eigenartigen Röhrensystem miteinander verbunden. Oben auf dem Hochhaus erkennt ihr einen Landeplatz.  Den steuert ihr an.\n\nAls ihr aussteigt, kommt ein Formalosoph auf euch zugelaufen.  Er winkt wild mit den Armen.\n\n**Portier**:  Nein, nicht doch, da unten werdet ihr erwartet.\n\nEr lässt die Arme sinken.\n\n**Portier**:  Nun ja, egal.  Guten Tag, erst einmal! Ich bin hier nur der Hausmeister. Ihr werdet von einer großen Delegation erwartet, aber natürlich drüben, im Bürohaus. Das hier ist nur unser Schlafturm.  Kommt, ich bringe euch hinüber.  Es geht ganz schnell.\n\nEr führt euch eine Etage hinunter und bitte euch, in „Transportkapseln“ einzusteigen, jeder in eine.\n\n**Portier**:  Wir rutschen jetzt einfach mit diesen Kapseln hinüber. Keine Sorge, die Bahn ist frei! Wir haben hier zwar leider immer wieder Zusammenstöße, aber momentan ist die Luft rein. Alle anderen sind ja schon drüben!",
- "Intro Shade L03":
- "Während ihr Guino durch das Museum folgt, gibt dir Robo weitere Aufgaben.",
- "Intro Shade":
- "Ihr seid auf einem Eisplaneten gelandet, direkt neben einem Eispalast.  Du hast das Gefühl, diesen Palast schon einmal gesehen zu haben, aber du kannst dich nicht entsinnen, wo das gewesen sein könnte.\n\nDirekt am Eingang empfängt euch ein pinguinartiges Wesen.\n\n**Guino**: Willkommen im Prado!\nIch bin ja so froh, dass ihr hier seid. Ihr seid die ersten Besucher! \nNun gut, wir haben ja auch gerade erst eröffnet.\nKommt rein, kommt rein!\nIhr seid diese Erdleute, von denen allen berichten, nicht wahr?\n\n**Du**:  Ähm, ja.  Und ihr seid …?\n\n**Guino**:  Guino, Museumsdirektor des Prado – des PRimzahlen-ADOrationsmuseums!  Kommt, kommt!\n\nGuino führt euch die Stufen am Eingang hinauf und durch das Portal in eine große Halle. In der Mitte schwebt ein kleines Podest. Darauf liegen zwei Murmeln.\n\n**Guino**: Seht, seht!  Unser erstes Exponat!  Die Primzahl ZWEI!\n\nIhr seid beide etwas perplex.  Guino hebt die Augenbrauen.\n\n**Guino**: Ihr wisst doch hoffentlich, wie man zeigt, dass das eine Primzahl ist?",
  "Intro Saturn L04": "Noch ein Funkspruch.",
  "Intro Saturn L03:\n§0 is the type of univariate polynomial over §1.\nAnd §2 is the polynomial variable in the polynomial ring §3.":
  "**Du**:  Ich vermute, hier soll also §2 ein Polynom über §1 sein?\n\n**Robo**: Ja, genau.  §0 ist hier der Ring der Polynome in einer Unbestimmten §2 mit rationalen Koeffizienten.\n\n**Du**:  Alles klar.  Für den Beweis spielt das aber gar keine Rolle, oder? \nDer Polynomring ist doch kommutativ!\n\n**Robo**: So ist es.",
  "Intro Saturn L02": "Der nächste Funkspruch sieht ein bisschen anders aus.",
  "Intro Saturn L01": "Plötzlich erreicht euch ein Funkspruch.",
  "Intro Saturn":
- "Diesen Planeten wolltet ihr eigentlich gar nicht ansteuern. Aber ihr wart mit den Gedanken nicht ganz bei der Sache. Und man darf in Universen nicht unaufmerksam sein, erst recht nicht, wenn man sich nicht auskennt. Nun seid ihr bereits zu nah herangeflogen, die Gravitation ist zu stark, und euer regenerativer Antrieb ist gerade im Regenerationsmodus.\n\n**Du**:  Was ist das denn für eine orange Soße auf diesem Planeten?\n\n**Robo**:  Sieht eher giftig aus.  Oder heiß.\n\n**Du**:  Oder beides.  Ich will da wirklich nicht landen!\n\n**Robo**:  Ja, ja, ich gebe mir ja schon alle Mühe.  Und schau mal, wie viel Müll hier bereits orbitet! Das beste, was wir momentan tun können, ist mit dem Strom zu fliegen.",
+ "Diesen Planeten wolltet ihr eigentlich gar nicht ansteuern. Aber ihr wart mit den Gedanken nicht ganz bei der Sache. Und man darf in Universen nicht unaufmerksam sein, erst recht nicht, wenn man sich nicht auskennt. Nun seid ihr bereits zu nah herangeflogen, die Gravitation ist zu stark, und euer regenerativer Antrieb ist gerade im Regenerationsmodus.\n\n**Du**:  Was ist das denn für eine orange Soße auf diesem Planeten?\n\n**Robo**:  Sieht eher giftig aus.  Oder heiß.\n\n**Du**:  Oder beides.  Ich will da wirklich nicht landen!\n\n**Robo**:  Ja, ja, ich gebe mir ja schon alle Mühe.  Und schau mal, wie viel Müll hier bereits orbitet! Das Beste, was wir momentan tun können, ist mit dem Strom zu fliegen.",
  "Intro Samarkand L09":
  "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke. Vielleicht könnte ihr mir ja helfen.  Zum Beispiel: …\n\nSie diktiert euch eine Aussage. Robo schreibt sie auf.",
  "Intro Samarkand L08":
@@ -955,13 +1003,37 @@
  "Intro Robotswana L05: §0 indicates unit matrix. Begin with §1":
  "**Du**: Zeig mal, was hast du da? Was zur Einheitsmatrix? Passend für unsere Sammlung?\n\n**Robo**: Ja – die §0 ganz rechts ist hier die Einheitsmatrix. Ich glaube, du kannst gleich mit §1 beginnen.\n\n**Du**: Ich frage mich, ob wir noch wichtiges auf dem Platz zurückgelassen haben?\n\n**Robo**: Egal, jetzt sind wir schon ein gutes Stücken weiter. Probier jetzt hier einmal!",
  "Intro Robotswana L04":
- "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen Fläche heruntergetrampelt ist.\nSpuren führen kreuz und queer und in verschiedene Richtungen weg.\n\nEin bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\nDie meisten sind leer oder unleserlich, aber eines kannst du entziffern.",
+ "Ihr kommt an eine Stelle, wo das Gras auf einer größeren, quadratischen Fläche heruntergetrampelt ist.\nSpuren führen kreuz und quer und in verschiedene Richtungen weg.\n\nEin bisschen planlos sucht ihr die Stelle ab und findet verschiedenste Pergamentstücke.\nDie meisten sind leer oder unleserlich, aber eines kannst du entziffern.",
  "Intro Robotswana L02":
  "Kurze Zeit später findet ihr zwei sehr ähnlichen Zettel, wieder vollgekritzelt, fast alles durchgestrichen.\nDie erste Zeile aber lässt sich jeweils gerade noch ausmachen.",
  "Intro Robotswana L01: introduce definition\n§0":
  "Den Spuren folgend, findet ihr ein Stück Pergament, auf dem zuoberst eine Notiz steht.\n\n§0\n\nDarunter ein bisschen wildes Gekritzel, das aber deutlich mit einer klaren Zeile angefangen hat:",
  "Intro Robotswana":
  "Ihr landet auf einem warmen Planeten, und tretet auf eine weite Graslandschaft hinaus.\n\nNach etwas Umschauen entdeckt Robo Spuren, die von eurem Landeplatz wegführen, zwischen vereinzelten Bäumen hindurch.\nIhr beratet kurz und beschließt, den Spuren zu folgen.",
+ "Intro Rigi L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*).":
+ "Vanessa flattert aufgeregt hin und her.  Schließlich setzt sie sich auf Robos Schulter.\n\n**Vanessa**:  Ich glaube, ihr habt jetzt alle Zutaten zusammen, um ein Sonnenaufgangslemma zu beweisen.\n\n**Robo**:  Ich glaube auch.  Willst du es noch einmal buchstabieren?\n\nVanessa spricht Robo ins Ohr, und er schreibt mit.",
+ "Intro Rigi L10: Intermediate value theorem has several variants, e.g.\n§0\n(as in previous level) and\n§1\nWhich of these two to use depends on which of the two intervals §2 and §3 is non-empty, i.e. on whether §4 or §5.":
+ "**Robo**:  Alles klar?  Tatsächlich gibt es eine ganze Handvoll Varianten des Zwischenwertsatzes.\nNeben\n\n§0\n\ngibt es zum Beispiel auch:\n\n§1\n\nWelchen der beiden Sätze man besser anwendet, hängt gerade davon ab, welches der Intervalle §2 oder §3 nicht-leer ist, also davon, ob §4 gilt oder §5.\n\nFür die folgende Aussage solltest du beispielsweise lieber die zweite Variante verwenden.",
+ "Intro Rigi L09: Intermediate value theorem: §0.":
+ "**Vanessa**: Das Beste kommt aber erst noch.\nSchau dir mal an, wie krass zackig unsere Berge hier sind.\nUnd trotzdem gilt:\n\n*(geheimnisvoll flüsternd):*  Alle Höhenprofile sind *stetig*!\n\nUnd deshalb gilt §0!\n\nDu schaust fragend zu Robo hinüber.\n\n**Robo**:  Ist doch klar, was sie meint!  Es gilt der Zwischenwertsatz.\nHier, pass auf, ich formulier den mal in einer Form, die du einfacher wiedererkennst.",
+ "Intro Rigi L08: past the supremum the value drops back.":
+ "**Robo**:  Jetzt schauen wir uns an, was östlich vom Supremum passiert.",
+ "Intro Rigi L07: the value at the supremum stays up.":
+ "**Robo**:  Jetzt kommt eine Bastelaufgabe.",
+ "Intro Rigi L06: the supremum lies strictly to the right of §0.":
+ "Robo macht sofort weiter mit der nächsten elementaren Aussage.",
+ "Intro Rigi L05: a quick boundedness fact.\n\nTo take the supremum §0 of §1 (i.e. §2), we also need the set to be bounded above.":
+ "**Robo**:  Als Nächstes zeigen wir, dass die Menge der Schattierer nach Osten beschränkt ist.\n\n**Du**:  Okay, lass mich mal lesen …",
+ "Intro Rigi L04: introduce the working set.\n\nFix a point §0.  We study the set of points to the right of b at which §1\nrises above §2:\n\n§3\n\nLater we take the supremum of this set.  For that we first need it to be nonempty.  Assuming b is\nnot a shadow point, §4, and §5 itself is a shadow point, you show the set is nonempty.":
+ "Vanessa seufzt.  Du wusstest gar nicht, dass Schmetterlinge so ein enttäuschtes Gesicht machen können.\nRobo stupst dich in die Seite und räuspert sich.\n\n**Robo**:  Bei uns bedeutet „verstehe“ nur so etwas wie „ich habe eine grobe Idee“.\n\nDu gibst dir einen Ruck.\n\n**Du**:  Ja, ja.  So war das nicht gemeint.  Erklärts mir doch bitte genauer.\n\n**Robo**:  Vanessa hat mir gerade schon verraten, dass wir auch über die „Schattierer“ eines Punktes nachdenken sollten.\nFür einen Punkt §0 betrachten wir also die Menge aller weiter östlich liegenden Punkte, die mindestens genauso hoch liegen:\n\n§3",
+ "Intro Rigi L03":
+ "**Vanessa**:  Ich kann jedenfalls nur in der Sonne krabbeln.\nUnd das Gute ist, dass ich dabei nie Höhe verliere.\n\n**Robo**:  Ja, warte.  Das war … dieses Lemma.",
+ "Intro Rigi L02: the other direction.\n\nThe previous level said that failing to be sunny is the same as lying in the shade.  The mirror\nstatement is just as useful: failing to lie in the shade is the same as being sunny.  It is proved\nthe same way — unfold both sets and let §0 move the negation across the §1.":
+ "**Robo**:  Lass uns auch noch diese Variante festhalten.",
+ "Intro Rigi L01: the two kinds of points.\n\n§0\n\nThink of the graph of §1 lit by a sun shining from the right.  A point §2 lies in the *shade*\n(in §3) if at some later point §4 the graph rises above it, otherwise it is *sunny* (in §5).\n\nThese two conditions are negations of each other, and your first job is to prove exactly that.":
+ "**Robo**: Vanessa hat mir schon ganz viel erklärt gerade.\nSie muss die Zeit des Sonnenaufgangs nutzen, um dieses Gebirge zu überqueren.\nUnd weil es hier in der Sonne schön warm, aber im Schatten echt kalt ist, hat sie recht viel darüber nachgedacht, wo genau die Sonne scheint und wo nicht.\nSchau mal, wie sie das formalisiert hat:\n\n§0\n\nDu schaust dir an, was Robo dir auf einem Stück Papier (wo hat er das jetzt schon wieder her?) zeigt und ziehst die Augenbrauen hoch.\n\n**Du**:  Was ist denn §1?\n\n**Robo**:  Ganz einfach.  Die Sonne scheint von Osten, Vanessa muss nach Westen.\n§1 ist das Gebirgsprofil entlang der Ost-West-Achse, die sie fliegt.\n\n**Du**:  Verstehe.  Ein Punkt §2 liegt also im Schatten (in §3), wenn es irgendwo östlich einen Punkt §4 gibt, an dem das Profil höher ist.\nAnsonsten liegt er in der Sonne.\n\n**Robo**:  Genau.  Wobei deine Formulierung mit „ansonsten“ streng genommen nicht die Definition, sondern bereits dieses Lemma hier ist.\nLass uns das doch mal eben beweisen.",
+ "Intro Rigi":
+ "Du bist im Flug eingeschlafen.\nGut, dass dein Kopilot auch ohne dich klarkommt.\nJetzt gähnst du noch einmal, streckst dich und schaust dich um.\nRobo ist offenbar in irgendeinem Gebirge gelandet und bereits auf Erkundungstour.\nDu findest ihn einen Steinwurf vom Raumschiff entfernt auf einer bunten Alm.\nGerade geht die Sonne auf.\n\n**Du**:  Schön hier!  Für so einen herrlichen Sonnenaufgang hättest du mich auch gern wecken können!\n\nRobo lacht.\n\n**Robo**:  Den konntest du gar nicht verpassen, du Schlafmütze!\nWir sind schon zwei Stunden hier, und als ich gelandet bin, war auch schon Sonnenaufgang.\nMeine neue Freundin Vanessa behauptet, der Sonnenaufgang würde hier ein halbes Jahr dauern.\n\nRobo streckt dir eine Hand entgegen.\nDort sitzt eine orange-schwarz-weiße Falterdame und lächelt dich an.\n\n**Vanessa** *(in feiner Schmetterlingsstimme)*:  Willkommen beim schönsten und längsten Sonnenaufgang des gesamten Formaloversums!",
  "Intro Quanus L08":
  "**Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich brauchen werden.",
  "Intro Quantus L10":
@@ -981,9 +1053,9 @@
  "Intro Quantus L02": "Auf der Rückseite steht folgendes.",
  "Intro Quantus L01": "Auf der Vorderseite steht folgendes.",
  "Intro Quantus":
- "Auf Quantus erwartet euch bereits eine große Ansammlung von Formalosopheninnen. Sie reden alle wild durcheinander und ihr habt Probleme, euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n\n**Du**: Wir haben einen Brief für eure Königin. Könntet ihr uns zu eurer Königin führen?\n\n**Alle** *(im Chor)*: Wir sind schon alle hier!\n\n**Du**: Okay. Und wer von euch ist die Königin?\n\nNun herrscht betretenes Schweigen. Alle zucken mit den Schultern.\n\n**Du**: Habt ihr überhaupt eine Königin?\n\n**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königin, wir haben eine Königin.\n\n**Robo** *(zu dir)*: Ich fasse mal zusammen. Es existiert eine Königin, aber keiner weiß, wer sie ist …\n\n**Du**: Ist das nicht ein Widerspruch?\n\n**Robo**: Fragst du, du als Mathematiker? Nein, das ist kein Widerspruch. Das ist einfach eine „reine Existenzaussage“.\n\nDu bist dir nicht ganz sicher, wie ernst er das meint.\n\n**Du**: Dann schlage ich vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben wir es ja insbesondere der Königin übergeben.\n\n**Du** *(in die Menge)*: Wir haben euch ein Päckchen von Implis gebracht. Hier, das ist für euch.\n\nRobo wirft es in die Menge, und die Formalosophinnen reißen es auf. Tatsächlich befindet sich darin nur eine einziges Stück Papier. Nach wenigen Minuten liegt es wieder bei euch. Und die Formalosophinnen schauen alle neugirig, wie ihr damit umgeht.",
+ "Auf Quantus erwartet euch bereits eine große Ansammlung von Formalosophinnen. Sie reden alle wild durcheinander und ihr habt Probleme, euch überhaupt Gehör zu verschaffen. Robo produziert schließlich ein lautes Gong-Geräusch, das sie kurzzeitig zur Ruhe bringt.\n\n**Du**: Wir haben einen Brief für eure Königin. Könntet ihr uns zu eurer Königin führen?\n\n**Alle** *(im Chor)*: Wir sind schon alle hier!\n\n**Du**: Okay. Und wer von euch ist die Königin?\n\nNun herrscht betretenes Schweigen. Alle zucken mit den Schultern.\n\n**Du**: Habt ihr überhaupt eine Königin?\n\n**Alle** *(im Chor)*: Ja, ja. Wir haben eine Königin, wir haben eine Königin.\n\n**Robo** *(zu dir)*: Ich fasse mal zusammen. Es existiert eine Königin, aber keiner weiß, wer sie ist …\n\n**Du**: Ist das nicht ein Widerspruch?\n\n**Robo**: Fragst du, du als Mathematiker? Nein, das ist kein Widerspruch. Das ist einfach eine „reine Existenzaussage“.\n\nDu bist dir nicht ganz sicher, wie ernst er das meint.\n\n**Du**: Dann schlage ich vor, wir übergeben das Päckchen einfach an *alle* Bewohner. Dann haben wir es ja insbesondere der Königin übergeben.\n\n**Du** *(in die Menge)*: Wir haben euch ein Päckchen von Implis gebracht. Hier, das ist für euch.\n\nRobo wirft es in die Menge, und die Formalosophinnen reißen es auf. Tatsächlich befindet sich darin nur ein einziges Stück Papier. Nach wenigen Minuten liegt es wieder bei euch. Und die Formalosophinnen schauen alle neugierig, wie ihr damit umgeht.",
  "Intro Prado L10":
- "Inzwischen seid ihr auf der Dachterasse angekommen. Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären. Die Aussicht ist nicht schlecht.\n\n**Robo** *(zu dir)*:  Ich glaube, wir sind so weit.",
+ "Inzwischen seid ihr auf der Dachterrasse angekommen. Aber Guino hat es inzwischen aufgegeben, alle architektonischen Details zu erklären. Die Aussicht ist nicht schlecht.\n\n**Robo** *(zu dir)*:  Ich glaube, wir sind so weit.",
  "Intro Prado L09":
  "**Robo**:  Aber so schwer ist das auch nicht.  Hier, schau dir diese Aufgabe mal an.",
  "Intro Prado L08":
@@ -1028,7 +1100,7 @@
  "Intro Piazza 7: Can write §0 in a nicer way.":
  "**Fin**: §0 kann man aber auch schöner schreiben.  So hier nämlich.",
  "Intro Piazza":
- "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, vieles nicht. Aber alles ist fein säuberlich sotiert. Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern, offene Säcke mit kleinen, rosa Sternchen, usw.\n\nEin paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder zu verhalten – laufen euch fast über die Füße. Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n\n**Fin**:  Was macht ihr denn hier?\n\n**Du**:  Ehm … wir wollten uns nur mal ein bisschen umschauen.\n\n**Set**: Wir sind hier, um etwas Mengentheorie zu lernen.  Unsere Eltern haben uns hier ausgesetzt.\n\n**Ext**:  Zu Schulungszwecken, sozusagen.\n\n**Du**:  Und, habt ihr schon etwas gelernt?",
+ "Wie es aussieht, seid ihr auf einem Handelsplaneten gelandet. Überall stehen Händler, die ihre Waren feilbieten. Ihr beäugt neugierig ein paar Stände. Manches sieht vertraut und essbar aus, vieles nicht. Aber alles ist fein säuberlich sortiert. Es gibt Körbe mit Blaubeeren (?), Kisten mit roten Gewächsen, die euch an Tomaten erinnern, offene Säcke mit kleinen, rosa Sternchen, usw.\n\nEin paar Kinder – oder jedenfalls ein paar recht kleine Formalosophen, die sich wie Kinder verhalten – laufen euch fast über die Füße. Robo springt zurück, da bemerken sie euch und bleiben stehen.  Sie stellen sich als „Fin“, „Ext“, „Mem“, „Set“ und „Sub“ vor, und wirken neugierig.\n\n**Fin**:  Was macht ihr denn hier?\n\n**Du**:  Ehm … wir wollten uns nur mal ein bisschen umschauen.\n\n**Set**: Wir sind hier, um etwas Mengentheorie zu lernen.  Unsere Eltern haben uns hier ausgesetzt.\n\n**Ext**:  Zu Schulungszwecken, sozusagen.\n\n**Du**:  Und, habt ihr schon etwas gelernt?",
  "Intro Mono L06: Prove §0":
  "Anscheinend hat jemand bemerkt, dass §0 vorgesagt war.\nJetzt wollen sie davon auch einen Beweis sehen.",
  "Intro Mono L01":
@@ -1057,7 +1129,7 @@
  "Intro Logo L01":
  "Gerade seid ihr auf dem Planeten von Königin Logisinde gelandet. Sie kommt ohne Umschweife zum Punkt:\n\n**Logisinde**: Werte Wesen aus fremden Welten, willkommen im Formaloversum!  Gestatten Sie mir nur eine Frage. Warum gilt …\n\nUnd sie kritzelt etwas auf ein Stück Papier: oben ein paar Annahmen, unten eine Schlussfolgerung. Dazwischen sollst du offenbar einen Beweis eintragen. Du siehst Robo hilflos an.",
  "Intro Logo":
- "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit bist du aus Versehen in ein Paralleluniversum gestolpert.\nWie es aussieht, gibt es kein zurück.\nRichte dich besser darauf ein, hier bleiben und dich zurechtzufinden zu müssen.\n\nWie es aussieht, gibt es hier viele nette kleine Planeten.\nAlle bewohnbar, und bis zu sieben Sonnenuntergänge täglich inklusive.\nNur werden sie allesamt von Formalosophen bewohnt, seltsamen Wesen mit ausgefallenen mathematischen Obsessionen.\nUnd dummerweise hat sich herumgesprochen, dass du in deinem früheren Universum Mathematiker warst.\ndu wirst hier keine Ruhe finden, solange du nicht lernst, ihren unablässigen Wissensdurst zu stillen.\n\nEs gibt nur zwei Schwierigkeiten:\nErstens haben die Formalosophen allem Anschein nach überhaupt kein tieferes mathematisches Verständnis, und zweitens kommunizieren Sie über Mathematik exklusiv in einem dir fremden Dialekt, den sie Leansch [liːnʃ] nennen.\n\nZum Glück hat Robo mit dir das Universum gewechselt.\nRobo, das ist dein kleiner SmartElf.\nRobo ist zwar auch nicht die mathematische Leuchte, die du dir in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.\nUnd das ist Gold wert.",
+ "Durch eine unvorhergesehene und nicht-kanonische Singularität in der Raumzeit bist du aus Versehen in ein Paralleluniversum gestolpert.\nWie es aussieht, gibt es kein Zurück.\nRichte dich besser darauf ein, hier bleiben und dich zurechtfinden zu müssen.\n\nWie es aussieht, gibt es hier viele nette kleine Planeten.\nAlle bewohnbar, und bis zu sieben Sonnenuntergänge täglich inklusive.\nNur werden sie allesamt von Formalosophen bewohnt, seltsamen Wesen mit ausgefallenen mathematischen Obsessionen.\nUnd dummerweise hat sich herumgesprochen, dass du in deinem früheren Universum Mathematiker warst.\nDu wirst hier keine Ruhe finden, solange du nicht lernst, ihren unablässigen Wissensdurst zu stillen.\n\nEs gibt nur zwei Schwierigkeiten:\nErstens haben die Formalosophen allem Anschein nach überhaupt kein tieferes mathematisches Verständnis, und zweitens kommunizieren sie über Mathematik exklusiv in einem dir fremden Dialekt, den sie Leansch [liːnʃ] nennen.\n\nZum Glück hat Robo mit dir das Universum gewechselt.\nRobo, das ist dein kleiner SmartElf.\nRobo ist zwar auch nicht die mathematische Leuchte, die du dir in dieser Situation gewünscht hättest, aber es scheint, er hat irgendwo Leansch gelernt.\nUnd das ist Gold wert.",
  "Intro Iso L06":
  "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet.",
  "Intro Iso L05":
@@ -1068,19 +1140,19 @@
  "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet.",
  "Intro Iso L02": "**Isosoph**:  … und zur Hauptsache kommen.",
  "Intro Iso L01":
- "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet.",
+ "**Isosoph**:  Natürlich haben auch wir etwas für euch vorbereitet.",
  "Intro Iso":
- "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n\n**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.\n\n**Du**:  Links winken Leute!\n\nAlso landet ihr links. Da Empfang ist aber eher verhalten.\n\n**Isosoph**:  Guten Tag! Das ist aber nicht die feine Art, hier mitten in der Menge zu landen! Dort drüben hatten wir doch extra einen Landeplatz markiert!\n\n**Robo**:  Entschluldigung!  Ich hatte die Symbolik nicht erkannt.\n\n**Isosoph**: Ist ja nochmal gut gegangen! Wir hatten schon gehört, dass ihr ein bisschen anders seid. Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n\nWie sich heraussstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann. Ihr düst ein paar Mal hin und her.",
+ "**Du**:  Schau mal, noch ein Planet mit zwei Hochhäusern!\n\n**Robo**: Ja, aber die hier sind gleich hoch.  Jetzt weiß ich gar nicht mehr, wo ich landen soll.\n\n**Du**:  Links winken Leute!\n\nAlso landet ihr links. Der Empfang ist aber eher verhalten.\n\n**Isosoph**:  Guten Tag! Das ist aber nicht die feine Art, hier mitten in der Menge zu landen! Dort drüben hatten wir doch extra einen Landeplatz markiert!\n\n**Robo**:  Entschuldigung!  Ich hatte die Symbolik nicht erkannt.\n\n**Isosoph**: Ist ja nochmal gut gegangen! Wir hatten schon gehört, dass ihr ein bisschen anders seid. Wir zeigen euch trotzdem unser geniales Transportsystem – das fortschrittlichste Nahverkehrssystem im ganzen Formaloversum!\n\nWie sich herausstellt, ist einer der besonders fortschrittlichen Aspekte, dass man die Transportkapseln auf diesem Planeten in beide Richtungen verwenden kann. Ihr düst ein paar Mal hin und her.",
  "Intro Implis: mention that planet could not be solved without §0":
  "Zurück im Raumschiff macht ihr euch auf den Weg zu einem benachbarten Planeten, der ebenfalls bewohnt zu sein scheinen.\n\n**Du**: Ich habe immer noch das Gefühl, dass ich die Aufgabe von Königin Logisinde ohne §0 nicht hätte lösen können. Kamen in der Aufgabe nicht auch Implikationen vor?\n\n**Robo**: Vielleicht haben wir ja auf dem Planeten *Implis*, den wir gerade ansteuern, Gelegenheit, noch etwas dazuzulernen. Festhalten bitte …\n\nUnd damit leitet Robo den Landeanflug ein.\n\nImplis scheint ein riesiger Tagebau zu sein. Überall verlaufen Förderbänder, kreuz und quer, aber die meisten stehen still. Ein schüchterner Operationsleiter erwartet euch bereits.\n\n**Operationsleiter**: Ihr kommt mir gerade recht! Ich habe schon gehört. Echte Mathematiker! Wisst ihr, wir fördern hier Wahrheitswerte. Und dabei muss man höllisch aufpassen. Ein Fehler, und alles bricht zusammen. Aber ich bin sehr vorsichtig. Ich sage immer: Lieber Stillstand als Untergang!",
  "Intro Implis L14: This chapter used the following operations:\n§0, §1, §2, §3 (reversal of §4), §5, §6, §7 (changes §8 to §9),\n§10 (changes §11 to §12 and §13), §14 (rewrite goal with §15), §16 (rewrite\nassumption §17 using §18) and §19 (introduce cases §20 and §21)":
- "**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem. Das habe ich von meinem Vorgänger geerbt. Er hat behauptet, wenn wir das lösen können, dann läuft hier wieder alles. Aber es sah mir immer viel zu schwierig aus, um es überhaupt zu versuchen. Wollt ihr es einmal probieren?\n\n**Du**: Klar, zeig her! Robo, kannst du mir vielleicht auch noch einmal so eine nette Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten gelernt habe?\n\n**Robo**: Hier ist die Übersicht:\n\n## Notationen / Begriffe\n\n|     | Beschreibung                 |\n|:--- |:---------------------------- |\n| §0  | Implikation                  |\n| §1  | genau-dann-wenn / Äquivalenz |\n\n## Taktiken\n\n| Taktik           | Beispiel                                                          |\n|:---------------- |:----------------------------------------------------------------- |\n| §2               | holt linke Seite einer Implikations im Beweisziel in die Annahmen |\n| §3               | Umkehrung von §4                                                  |\n| §5               | wendet Implikation “rückwärts” auf das Beweisziel an              |\n| §6               | wendet Implikation “vorwärts” auf eine Annahme an                 |\n| §7               | ändert §8 zu §9                                                   |\n| §10              | ändert §11 zu §12 und §13                                         |\n| §14              | schreibt Beweisziel mithilfe der Äquivalenz §15 um                |\n| §16              | schreibt Annahme §17 mithilfe der Äquivalenz §18 um               |\n| §19              | Fallunterscheidung zwischen §20 und §21                           |",
+ "**Operationsleiter**: Ihr habt mir wirklich so geholfen! Hier ist das letzte Problem. Das habe ich von meinem Vorgänger geerbt. Er hat behauptet, wenn wir das lösen können, dann läuft hier wieder alles. Aber es sah mir immer viel zu schwierig aus, um es überhaupt zu versuchen. Wollt ihr es einmal probieren?\n\n**Du**: Klar, zeig her! Robo, kannst du mir vielleicht auch noch einmal so eine nette Zusammenfassung anzeigen, was ich theoretisch in den letzten fünf Minuten gelernt habe?\n\n**Robo**: Hier ist die Übersicht:\n\n## Notationen / Begriffe\n\n|     | Beschreibung                 |\n|:--- |:---------------------------- |\n| §0  | Implikation                  |\n| §1  | genau-dann-wenn / Äquivalenz |\n\n## Taktiken\n\n| Taktik           | Beispiel                                                          |\n|:---------------- |:----------------------------------------------------------------- |\n| §2               | holt linke Seite einer Implikation im Beweisziel in die Annahmen |\n| §3               | Umkehrung von §4                                                  |\n| §5               | wendet Implikation “rückwärts” auf das Beweisziel an              |\n| §6               | wendet Implikation “vorwärts” auf eine Annahme an                 |\n| §7               | ändert §8 zu §9                                                   |\n| §10              | ändert §11 zu §12 und §13                                         |\n| §14              | schreibt Beweisziel mithilfe der Äquivalenz §15 um                |\n| §16              | schreibt Annahme §17 mithilfe der Äquivalenz §18 um               |\n| §19              | Fallunterscheidung zwischen §20 und §21                           |",
  "Intro Implis L13: Do not use §0. Try it with\n§1":
  "**Operationsleiter**: Wieder etwas für den Kollegen …. Und er wollte wieder einen Beweise ohne §0. Ich sehe hier auch, dass ich mir schon einmal etwas hierzu notiert hatte. Richtig, es gibt da dieses Lemma:\n§1\n\n**Operationsleiter**: Schafft ihr das damit?",
  "Intro Implis L12":
  "Beim nächsten Problem stutzt der Operationsleiter.\n\n**Operationsleiter**: Ehrlich gesagt weiß ich gar nicht, wo dieses Blatt herkommt.\nDas ist gar nicht von mir. Sieht aber irgendwie interessant aus.",
  "Intro Implis L11: Prove without using §0 or §1":
- "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen. Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis, aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n\nEr holt tief Luft und seuft.\n\n**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint ihr, ihr schafft das?",
+ "**Operationsleiter**: Ah, die nächste Seite ist auch von diesem Kollegen. Aber da ist noch eine Notiz bei. Wir hatten hierfür schon einmal einen Beweis, aber den mochte er nicht. Er wollte einen Beweis, der weder §0 noch §1 verwendet!!\n\nEr holt tief Luft und seufzt.\n\n**Operationsleiter**: Ich glaube, der stellt sich immer viel dümmer, als er ist. Aber meint ihr, ihr schafft das?",
  "Intro Implis L10: §0 is not allowed here as well":
  "**Operationsleiter**: Das hier ist wieder für meinen beschränkten Kollegen. Ich glaube, §0 mag der auch nicht. Geht das trotzdem?",
  "Intro Implis L09: Instead of §0 use §1 here.\nWith it you can solve §2 step-by-step by using\n§3 to introduce the intermediate step §4 and then\nperform the next step with §5":
@@ -1104,7 +1176,7 @@
  "Intro Euklid L04":
  "Nach einer Weile hört ihr Papierrascheln. Noch dreimal um die Ecke, und ihr findet euch in einem Büro wieder. „Euklid, Bibliotheksdirektor“ steht an der Tür.\n\n**Euklid**: Guten Tag!  Das ist ja schön, dass sich auch einmal ein paar Besucher hierher verirren. Wenn ich gewusst hätte, *was* für eine Bibliothek das hier ist, hätte ich den Posten als Direktor nie angenommen.\n\n**Du**:  Was für eine Bibliothek hätten Sie denn gern?\n\n**Euklid**:  Man hat mir versprochen, hier „unter anderem“ Leansche Varianten der Schriften meines berühmten Vorfahren zu finden.  Der stammte übrigens auch aus *Ihrem* Universum.  Und nun suche ich schon seit Jahren, im Katalog und in den Büchern selbst, und finde nur kleinste Bruchstücke.\n\nSchauen Sie, hier habe ich jetzt schließlich selbst angefangen, eines seiner Ergebnisse zu formulieren.  Vielleicht können Sie mir ja helfen?",
  "Intro Euklid L03":
- "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.\nRobo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindent.",
+ "Ihr müsst ein ganzes Stück laufen, um das nächste aufgeschlagene Buch zu finden.\nRobo hat angefangen, einen roten Faden auszurollen, damit ihr den Weg zurückfindet.",
  "Intro Euklid L02":
  "Ein Stückchen weiter den Gang entlang seht ihr wieder ein aufgeschlagenes Buch auf der Erde.",
  "Intro Euklid L01": "Die folgende Zeile hat jemand farbig angestrichen:",
@@ -1160,7 +1232,7 @@
  "Intro Cartan":
  "Ihr seid neben einem großen Zelt gelandet.\nVielleicht ein Zirkuszelt? Drinnen ist es recht dunkel.\nNur eine Bühne ist hell erleuchtet.\nDarauf steht ein Herr, der wie eine Mischung aus Professor und Magier aussieht, hält einen Monolog und führt anscheinend irgendetwas vor.\n\nIm Halbdunkel vor der Bühne stehen Stühle in langen Reihen.\nIhr habt das Zelt offenbar direkt an einem Ende der ersten Reihe betreten.\nDas andere Ende könnt ihr gar nicht erkennen, so lang ist die Reihe.\nUnd dahinter kommen viele weitere Reihen – auch in diese Richtung könnt ihr kein Ende erkennen.\nAber alle Sitze sind leer.\n\nIhr setzt auch also irgendwo in die erste Reihe, seht zur Bühne und spitzt die Ohren.",
  "Intro Cantor L12: Show that set of mapping §0 is uncountable":
- "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n\nEr macht drei Saltos rückwarts und kommt dann mit einem weiteren Zettel für euch zurück.\n\n**Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen, dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen §0, überabzählbar ist!\n\nUnd dann im Flüsterton:\n\n**Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!",
+ "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n\nEr macht drei Saltos rückwärts und kommt dann mit einem weiteren Zettel für euch zurück.\n\n**Cantor**:  Schaut mal!  Jetzt könnt ihr mit demselben Argument zeigen, dass die Menge der Folgen natürlicher Zahlen, also die Menge der Abbildungen §0, überabzählbar ist!\n\nUnd dann im Flüsterton:\n\n**Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!",
  "Intro Cantor L11": "**Cantor**:  Jetzt alles klar?",
  "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
  "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n\n**Du**: Was?\n\n**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft.\n\n**Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt.",
@@ -1193,7 +1265,7 @@
  "Intro Babylon L01":
  "**Babylonier**: Jeder Turm hat eine Inschrift. Da könnt ihr noch einmal genau nachlesen, warum er steht. Hier zum Beispiel.",
  "Intro Babylon":
- "Ihr erreicht einen Planet, auf dem unzählige Steinplatten zu bizzar hohen Türme gestapelt sind. Die ganze Landschaft wirkt wie ein grosses Puzzle, in dem jede Platte feinsäuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.\n\n**Babylonier**: Willkommen auf *Babylon*!\n\n**Du**: Oh …\n\nDich beschleicht ein ungutes Gefühl.\n\n**Du**: Seid ihr euch sicher, dass diese Türme stabil sind?\n\n**Babylonier**: 100 Pro!\n\n**Du**: Wie baut ihr denn diese Meisterwerke?\n\n**Babylonier**: Ganz einfach! Ein Stein nach dem anderen.",
+ "Ihr erreicht einen Planeten, auf dem unzählige Steinplatten zu bizarr hohen Türmen gestapelt sind. Die ganze Landschaft wirkt wie ein großes Puzzle, in dem jede Platte fein säuberlich auf den darunterliegenden Platten aufbaut. Einige Türme sind so hoch, dass man ihre Spitze gar nicht erkennen kann. Bald trefft ihr auch den ersten Bewohner dieses Planeten an.\n\n**Babylonier**: Willkommen auf *Babylon*!\n\n**Du**: Oh …\n\nDich beschleicht ein ungutes Gefühl.\n\n**Du**: Seid ihr euch sicher, dass diese Türme stabil sind?\n\n**Babylonier**: 100 Pro!\n\n**Du**: Wie baut ihr denn diese Meisterwerke?\n\n**Babylonier**: Ganz einfach! Ein Stein nach dem anderen.",
  "Intro Aquarius L06":
  "Ein Krakenarm händigt ein weiteres Blatt aus.  Die anderen Arme diskutieren immer noch mit einigen Fischen.",
  "Intro Aquarius L05":
@@ -1212,7 +1284,7 @@
  "Intorduce new prerequisite §0":
  "**Du**:  Ich seh schon.  Die Eposophen wollten gern bewiesen haben, dass eine Abbildung genau dann surjektive ist, wenn sie ein Rechtsinverses besitzt. Und die hiesigen Monosophen wollen gern bewiesen haben, dass eine Abbildung genau dann injektiv ist, wenn sie in Linksinverses besitzt.\n\n**Robo**: Ja, außer dass sie diese zusätzliche Voraussetzung §0 brauchen.",
  "Instead of §0, §1 can be used. After §2, you have to show how to\nprove goal by §3 before proving §4 itself.":
- "**Robo**: Ich weiß was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer, dass dann die beiden Beweisziele vertauscht sind.\n\n**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschliesst, bevor ich §4 beweise?\n\n**Robo**: Genau!",
+ "**Robo**: Ich weiß, was er meint! Anstatt §0 kannst du auch §1 verwenden. Das funktioniert genau gleich, außer dass dann die beiden Beweisziele vertauscht sind.\n\n**Du**: Also nach §2 muss ich dann zuerst zeigen, wie man mit §3 den Beweis abschließt, bevor ich §4 beweise?\n\n**Robo**: Genau!",
  "Instead of §0 and §1 try §2":
  "**Du**: Also, ich kenne §0 und §1, aber das wollten wir ja diesmal vermeiden.\n\n**Robo**: Was du machen könntest, ist, mit §2 die Annahme in zwei Teile aufteilen.",
  "Insert §0 via §1":
@@ -1224,12 +1296,26 @@
  "In an ordered set, §0 is the subset of all elements greater than §1.\nFor example, in §2 it is the open interval §3.":
  "In einer geordneten Menge ist §0 die Teilmenge aller Element, die größer sind als §1.\n\nIn §2 zum Beispiel ist §0 das Intervall §3.  (Das `o` steht also für „open“, und `i` steht für „infinity“.)",
  "Implis": "Implis",
+ "If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n§6, then there is some §7 with §8.":
+ "Ist §0 stetig und sind §2, §3 Punkte mit §5 und §6, so gibt es einen Punkt §7 mit §8.\n(Das folgt unmittelbar aus dem Zwischenwertsatz.)",
+ "If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n§6, then there is some §7 in §8 with §9.":
+ "Ist §0 stetig und sind §2, §3 Punkte mit §5 und §6, so gibt es einen Punkt §7 im offenen Intervall §8 mit §9.\n(Das folgt unmittelbar aus dem Zwischenwertsatz.)",
+ "If §0 lies in the shade and §1 is bounded above, then §2.":
+ "Liegt §0 im Schatten, und ist die Menge der Schattierer von §0 nach Osten beschränkt, so ist das östliche Supremum echt größer (östlicher) als §0.",
+ "If §0 lies in the shade and §1 is bounded above, then every point strictly to the right of §2 has value at most §3.":
+ "Ist §0 ein Schattenpunkt, und sind die Schattierer von §0 nach Osten beschränkt, so liegen die Punkte östlich des Supremums der Schattierer höchstens so hoch wie §0.",
+ "If §0 is continuous, §1 lies in the shade and §2 is bounded above, then\n§3.":
+ "Ist das Höhenprofil stetig, §1 ein Schattenpunkt und die Menge seiner Schattierer nach Osten beschränkt, so ist der Berge am östlichen Supremum der Schattenpunkte mindestens so hoch wie bei §1.",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "Ist §0 eine ganze Zahl größergleich 0, so ist §1 dieselbe Zahl, aufgefasst als natürliche Zahl.\n(Ist §2 eine negative ganze Zahl, so ist §3 ebenfalls definiert, aber ihr Wert hat keine mathematische Bedeutung.)\n\n## Freunde und Verwandte\n\nEine natürliche Zahl §4 lässt sich stets als ganze Zahl auffassen.\nDafür schreibst du sie entweder explizit als §5 oder als §6.",
+ "If §0 is a sunny point, then §1 for every §2 with §3.":
+ "An einem Sonnenpunkt §0 ist der Berg mindestens so hoch wie an jedem weiter östlich liegenden Punkt §2.",
+ "If §0 is a sunny point with §1, then §2 bounds §3 from above.":
+ "Ist §0 ein Sonnenpunkt mit §1, so ist §2 eine obere (östliche) Schranke für die Schattierer §3.",
+ "If §0 is a shadow point, then §1 is nonempty.":
+ "Für jeden Schattenpunkt §0 ist die Menge der Schattierer §1 nicht-leer.",
  "If §0 correctly defind try §1":
  "**Robo**: Wenn du §0 richtig definiert hast, kannst du dieses mit §1 einsetzen, und die resultierende Ungleichung sollte einfach sein.",
- "If §0 and §1 is bounded above, then §2.":
- "**Du**: Also, §0 ist wieder so ein Prädikat … Wenn §1 eine Person ist, ist §2 eine Aussage, die wahr oder falsch ist. Soweit so gut.",
  "If §0 alone does not work, try giving §1\nthe definition of §2. Try §3":
  "**Robo**: Wenn §0 hier nicht funktioniert, musst du §1 vielleicht die Definition von §2 mit auf den Weg geben.  Also §3.",
  "If you have given an equation §0 or an equivalence §1 as an assumption or lemma,\nyou can use §2 to replace all occurrences of §3 in the proof target with §4.\n\n## Variants\n\n* §5 applies §6 backwards, i.e., replaces all §7 with §8.\n* §9 applies §10, §11, and (backwards) §12.\n* §13 performs the replacements in the assumption §14, not in the proof target\n* §15: If §16 has arguments, e.g., §17 in\n§18\n   or in\n§19\n   §20 searches the proof target from left to right for a matching expression,\n   and then replaces *all* occurrences of *the first* expression that the tactic finds.\n   With §21, you can replace all occurrences of the §22th expression instead.\n\n  | before    | tactic       | after        |\n  |:----------------- |:------------- - |:----------------- |\n  | §23 | §24       | §25 |\n  |                   | §26 | §27 |":
@@ -1256,15 +1342,13 @@
  "**Du**: Okay. Jetzt habe ich also sowohl §0 als auch §1 in meinen Annahmen und muss §2 zeigen.\n\n**Robo**: Genau. Und wie das geht, weißt du ja schon.",
  "Got to think about it...": "**Du**:  Mal überlegen …",
  "Goal: if §0 divides factor §1 of a product then it also divides the product.\nTry §2":
- "**Robo**: Diese Zeile sieht auch sehr vernünftig aus: wenn eine Zahl §0 einen Faktor §1 eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.\n\n**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lebsbar.\n\n**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst. Wir fangen natürlich mit §2 an.",
+ "**Robo**: Diese Zeile sieht auch sehr vernünftig aus: wenn eine Zahl §0 einen Faktor §1 eines Produkts teilt, dann teilt sie sicher auch das ganze Produkt.\n\n**Du**:  Bereits die erste „Beweiszeile“ ist aber nicht einmal im Ansatz lesbar.\n\n**Robo**:  Nein, ist sie nicht. Aber probieren wirs wieder selbst. Wir fangen natürlich mit §2 an.",
  "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\nTry §4.":
  "**Du**: Ich vermute mal, dass soll heißen, §0 ist genau dann ein Rechtsinverses of §1, wenn §2 ein Linksinverses von §3 ist.\n\n**Robo**:  Genau.  Aber wenn mich nicht alles täuscht, ist das in Leansch weniger ein Satz als vielmehr die Definition von §4.  Und dummerweise muss man tatsächlich §5 statt schlicht §6 schreiben, weil §7 in Leansch mehrdeutig ist.",
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
- "**Du**:  Hier ist jetzt zu zeigen, dass §0 dasselbe ist wie zweimal die Anzahl der geraden Zahlen in §1.  Richtig?\n\n**Robo**:  Richtig.\n\n**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n\n**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.\nZurerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n§6\nUnd danach willst du vermutlich\n§7\nals Zwischenschritt verwenden.",
+ "**Du**:  Hier ist jetzt zu zeigen, dass §0 dasselbe ist wie zweimal die Anzahl der geraden Zahlen in §1.  Richtig?\n\n**Robo**:  Richtig.\n\n**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n\n**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.\nZuerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n§6\nUnd danach willst du vermutlich\n§7\nals Zwischenschritt verwenden.",
  "Goal is in assumptions":
  "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen.",
- "Go back, keep §0 and try §1":
- "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §3.\n\n**Du**: Du meinst wohl §4??\n\n**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
@@ -1332,7 +1416,7 @@
  "Explanation of equal sums":
  "**Du**: Ich denke, die beiden Summen sind identisch, weil jeder Summand identisch ist.",
  "Explaination of §0: it can be read as §1, a mapping of §2 into the set §3":
- "**Du**:  §0 … wie lese ich diese zwei Pfeile hintereinander?\n\n**Robo**: Du liest das als §1 – eine Abbildung von den natürlichen Zahlen §2 in die Menge §3 der Abbildungen von A nach B.  Das wird übringens auch klar, wenn du weiterliest, was du hier zeigen solltst.",
+ "**Du**:  §0 … wie lese ich diese zwei Pfeile hintereinander?\n\n**Robo**: Du liest das als §1 – eine Abbildung von den natürlichen Zahlen §2 in die Menge §3 der Abbildungen von A nach B.  Das wird übrigens auch klar, wenn du weiterliest, was du hier zeigen sollst.",
  "Explain: §0 is polynomial over §1 with indeterminate §2":
  "**Du**: Und jetzt ist §0 ein allgemeines Polynom in der Unbestimmten §2?\n\n**Robo**: Exakt.",
  "Explain §0: §1 looks for known equations and equivalences which would be currently\napplicable. §2 uses all simplifications it can find. Currently the following simplifications\nwere performed:\n§3\nand\n§4\n":
@@ -1350,7 +1434,7 @@
  "Explain §0 in goal. Perform proof by §1 by stating with §2 and\nconcluding with §3":
  "**Robo**: Ein §0 im Goal heißt häufig, dass du einen Widerspruchsbeweis führen möchtest.\n\n**Du**: Und wie mache ich das? Mit §1?\n\n**Robo**: Mit §2 fängst du einen Widerspruchsbeweis an. Und mit §3 schließt du ihn ab.",
  "Explain §0 i.e. §1 and approch to prove §2  by §3":
- "**Du**: Das §0 heisst sicher \"für alle\".\n\n**Robo**: Und man schreibt §1. Ein §2 im Beweisziel kannst du wie eine Implikation mit §3 angehen.",
+ "**Du**: Das §0 heißt sicher \"für alle\".\n\n**Robo**: Und man schreibt §1. Ein §2 im Beweisziel kannst du wie eine Implikation mit §3 angehen.",
  "Explain §0 as mapping §1 i.e. §2. Explain goal of showing §3 surjective.":
  "**Du**: Was ist denn hier §0?\n\n**Robo**:  §1 ist die Abbildung, die eine natürliche Zahl auf ihren *successor*, also ihren Nachfolger, abbildet.  Mit anderen Worten:  §2.\n\n**Du**: Ach so. Und von der Abbildung §3 soll ich, wenn ich das richtig lese, im Wesentlichen zeigen, dass sie surjektiv ist.\n\n**Robo**:  Sieht so aus!",
  "Explain §0 as mapping from §1 to §2:\n§3 is notation for §4. If you want to use brackets it has to be §5.\n":
@@ -1406,11 +1490,11 @@
  "Explain goal as §0 being equal to the number of elements in §1\ni.e. the cardinality of §2. Try §3":
  "**Du**: Oh das ist ganz schön viel neues … mal sehen …\n\nDas sieht aus wie §0 ist gleich …\n\n**Robo**: … der Anzahl der Element in §1, also der Kardinalität von §2.\n\n**Babylonier**: Und, könnt ihr das beweisen?\n\n**Robo** *(zu dir)*: Ich würde als erstes §3 versuchen. Das ist wirklich eine starke Taktik, die viele Terme vereinfacht.",
  "Explain for §0, that §1 is a mapping from §2 to the set of mappings of §3,\nwhich in turn is the same as the mapping from §4 to §5. You can interpret §6 either\nas applying §7 onto §8 or applying §9 onto §10. The element §11 lays\non the diagonal. Assumption §12 is formulated s.t. the interpretation of §13 as §14\nnatural":
- "**Du** *(zu Robo)*: Siehst du hier ein Produkt?\n\n**Robo**:  Ja, klar.  Erinner dich, wo bei §0 die Klammern stehen: §1. Eine Abbildung von §2 zur Menge der Abbildungen von §3 ist doch dasselbe wie eine Abbildung von §4 nach §5.\n\nDu runzelst die Stirn.\n\n**Robo**: Doch doch, das hatte wir uns auf Epo schon einmal überlegt! Du kannst §6 entweder als §7 angewendet auf §8 oder als §9 angewendet auf §10 interpretieren.\n\n**Cantor**:  Ganz genau!  Und das Element §11 liegt auf der Diagonale!\n\n**Robo**: Die Annahme §12 ist andereseits so formuliert, dass die Interpretation von §13 als Abbildung §14 naheliegender ist.",
+ "**Du** *(zu Robo)*: Siehst du hier ein Produkt?\n\n**Robo**:  Ja, klar.  Erinner dich, wo bei §0 die Klammern stehen: §1. Eine Abbildung von §2 zur Menge der Abbildungen von §3 ist doch dasselbe wie eine Abbildung von §4 nach §5.\n\nDu runzelst die Stirn.\n\n**Robo**: Doch doch, das hatten wir uns auf Epo schon einmal überlegt! Du kannst §6 entweder als §7 angewendet auf §8 oder als §9 angewendet auf §10 interpretieren.\n\n**Cantor**:  Ganz genau!  Und das Element §11 liegt auf der Diagonale!\n\n**Robo**: Die Annahme §12 ist andererseits so formuliert, dass die Interpretation von §13 als Abbildung §14 naheliegender ist.",
  "Explain definition of §0 by §1 using §2. Look up definition by §3.\n§4 might be considered but §5 does not work, because of §6 arbitrary.":
  "**Robo**: Wie du oben siehst, ist §0 dadurch definiert, dass ein §1 existiert so dass §2 ist. Am besten öffnest du diese Definition mit §3 einmal. Dann siehst du besser, was los ist.\n\n**Du**: Was ist mit §4?\n\n**Robo**: §5 wird nicht funktionieren, da §6 keine konkrete sondern eine beliebige Zahl ist. Da musst du schon etwas Arbeit leisten!",
  "Explain anonymous function §0 as mapping §1.\nOnly §2 the anon. function would receive a name. The goal is for\n§3\nto show that §4.\nYou can try §5 or §6\n":
- "**Robo**: Aha, das ist interessanter.  Hier ist §0 eine „anonyme Funktion“, nämlich die Abbildung §1.\n\n**Du**:  Und was ist an ihr anonym?\n\n**Robo**: Na, dass sie erst einmal keinen Namen hat. Erst durch §2 erhält sie einen Namen.\n\n**Du**:  Ach so.  Ingesamt haben wir also die folgende Abbildung, ja?\n\n§3\n\nIch soll also zeigen §4?\n\n**Robo**: Ja.\n\n**Du**: Und wie mache ich das hier?\n\n**Robo**: Lean kann durch die meisten Abbildungsvorschriften hindurchsehen, also sollte §5 hier reichen. Alternativ kannst du mit §6 explizit die Definition einsetzen.\n",
+ "**Robo**: Aha, das ist interessanter.  Hier ist §0 eine „anonyme Funktion“, nämlich die Abbildung §1.\n\n**Du**:  Und was ist an ihr anonym?\n\n**Robo**: Na, dass sie erst einmal keinen Namen hat. Erst durch §2 erhält sie einen Namen.\n\n**Du**:  Ach so.  Insgesamt haben wir also die folgende Abbildung, ja?\n\n§3\n\nIch soll also zeigen §4?\n\n**Robo**: Ja.\n\n**Du**: Und wie mache ich das hier?\n\n**Robo**: Lean kann durch die meisten Abbildungsvorschriften hindurchsehen, also sollte §5 hier reichen. Alternativ kannst du mit §6 explizit die Definition einsetzen.\n",
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that an element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nA pure existence statement (\"there is an element of type §6)\ncan be formulated, for example, as §7 or as §8.\n\n## §9 as a proof goal\n\nTo prove a statement of the form §10,\nyou construct a suitable element §11 and then use the §12 tactic (§13).\n\n## §14 as an assumption\n\nYou can decompose an assumption of the form §15 into its components using\n§16 or §17 into §18 and §19.":
  "Existenzieller Quantor:\nIst §0 ein Prädikat, so ist §1 die Aussage, dass ein Element §2 in §3 (genauer:\nvom Typ §4) existiert, für das die Aussage §5 wahr ist.\nDie reine Existenzaussage „es gibt ein Element vom Typ §6“ lässt sich beispielsweise als §7 oder §8 formulieren.\n\n## §9 als Beweisziel\n\nUm eine Aussage der Form §10 zu beweisen, konstruierst du ein geeignetes Element §11 und nutzt dann die §12-Taktik (§13).\n\n## §14 als Annahme\n\nEine Annahme der Form §15 kannst du mit §16 oder §17 in ihre Bestandteile §18 und §19 zerlegen.",
  "Existential quantifier: If §0 is a predicate, then\n§1 is the statement that *exactly one* element §2 in §3 (more precisely: of type §4)\nexists for which the statement §5 is true.\nThe statement therefore has two parts: first, such an §6 exists, and second, §7 is unique.\n## §8 as a proof goal\n\nTo prove a statement of the form §9, first construct a suitable element §10 and\nthen use the §11 tactic (§12), usually immediately followed by §13.\nThe proof goal should then have the following form:\n\n§14\n\nOn the left is §15: you still have to show that §16 has the required property.\nOn the right is the uniqueness statement: every element with this property is equal to §17.\n\n## §18 as an assumption\n\nYou can prove an assumption of the form §19 with\n\n§20\ninto its components\n§21\n.":
@@ -1433,7 +1517,7 @@
  "Divide §0 via §1 into\n§2 and §3":
  "**Robo**: Teil doch erst einmal §0 mit §1 in §2 und §3 auf!",
  "Divide interval §0 into §1 and §2 by using §3":
- "**Robo**: Jetzt willst du das Interval §0, über das summiert wird, aufspalten in §1 und §2. Dazu könntest du das Lemma §3 verwenden, das wir schon gesehen hatten.",
+ "**Robo**: Jetzt willst du das Intervall §0, über das summiert wird, aufspalten in §1 und §2. Dazu könntest du das Lemma §3 verwenden, das wir schon gesehen hatten.",
  "Divide assumption §0 using §1":
  "**Robo**: Ich würde zuerst die Annahme §0 mit §1 aufteilen.",
  "Disect §0 into its constituents":
@@ -1457,35 +1541,19 @@
  "Conclusion Vieta L10":
  "**Vieta**:  Bravo!  Jetzt aber nichts wie weg von hier. Hier gehts lang.  Ich bring euch zurück zum Raumschiff.",
  "Conclusion Vieta L01: explain ambiguity of §0":
- "**Du**: Sag mal, war §0 nicht eben noch eine Implikation?\n\n**Robo**: Ja, richtig. Die benuzten hier das gleiche Zeichen für beides.",
+ "**Du**: Sag mal, war §0 nicht eben noch eine Implikation?\n\n**Robo**: Ja, richtig. Die benutzen hier das gleiche Zeichen für beides.",
  "Conclusion Spinoza L06: overview of planet's contents:\n§0, §1, §2, §3, §4, §5 (useful when applying\n§6 afterwards).":
- "**Robo**: Bravo! Hier ein Überblick, was uns Benediktus gezeigt hat.\n\n\n| **Taktik**      | **Zweck**                                              |\n|:----------------|:-------------------------------------------------------|\n| §0              |  Zwischenresultat annehmen                             |\n| §1              |  Zwischenresultat annehmen                             |\n| §2              |  Widerspruchsbeweis anfangen                           |\n| §3              |  Widerspruchsbeweis schließen                          |\n| §4              | Kontraposition                                         |\n| §5              | nützlich, um danach §6 anzuwenden                      |\n ",
+ "**Robo**: Bravo! Hier ein Überblick, was uns Benedictus gezeigt hat.\n\n\n| **Taktik**      | **Zweck**                                              |\n|:----------------|:-------------------------------------------------------|\n| §0              |  Zwischenresultat annehmen                             |\n| §1              |  Zwischenresultat annehmen                             |\n| §2              |  Widerspruchsbeweis anfangen                           |\n| §3              |  Widerspruchsbeweis schließen                          |\n| §4              | Kontraposition                                         |\n| §5              | nützlich, um danach §6 anzuwenden                      |\n ",
  "Conclusion Spinoza L05":
  "**Benedictus**: Hervorragend! Ich glaube, damit seid ihr jetzt ganz gut gewappnet.",
  "Conclusion Spinoza L03": "**Benedictus**: Ich sehe schon, ihr lernt schnell!",
  "Conclusion Spinoza L02: The use of §0 or §1 is up to personal preference.":
  "**Benedictus**: Genau so meinte ich das. Ob ihr nun in Zukunft §0 oder §1 verwendet, ist reine Geschmacksfrage. Hauptsache, ihr wisst, wie ihr entfernte Ziele in kleinen Schritte erreicht.",
  "Conclusion Spinoza L01": "**Benedictus**: Das sieht gut aus!",
- "Conclusion Shade L08: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L07: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L06: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L05: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L04: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L03: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L02: saved as §0.":
- "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
- "Conclusion Shade L01: saved as §0.":
- "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?\n\n**Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als §0 ab, falls wir es nochmals brauchen.\n\nDamit folgt ihr weiter der Spur.",
  "Conclusion Saturn L06":
- "„Bestanden“ heißt es kurz und knapp vom anonymen Funker.\n\n\"**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\nNichts wie weg!",
+ "„Bestanden“ heißt es kurz und knapp vom anonymen Funker.\n\n**Robo**: Ich glaube, der Antrieb hat sich jetzt genügend regeneriert.\nNichts wie weg!",
  "Conclusion Saturn L05: coefficients were in §0. Polynomials with coefficients in §1\nare not considered rings. §2 does also work on half rings.":
- "Wieder ein 👍.\n\n**Du**: Aber warte mal, diesmal waren die Koeffizienten doch in §0! Das ist doch gar kein Ring, und auch Polynome mit Koeffizienten in §1 bilden keinen Ring.\n\n**Robo**: Mag sein.  Aber §2 funktioniert sogar für sogenannte Halbringe.\n\n**Du**: So so …\n\nDer anonyme möchte Funker wissen, ob ihr bereit seid für das End Game, oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n\n„Bereit” funkt Robo zurück.",
+ "Wieder ein 👍.\n\n**Du**: Aber warte mal, diesmal waren die Koeffizienten doch in §0! Das ist doch gar kein Ring, und auch Polynome mit Koeffizienten in §1 bilden keinen Ring.\n\n**Robo**: Mag sein.  Aber §2 funktioniert sogar für sogenannte Halbringe.\n\n**Du**: So so …\n\nDer anonyme Funker möchte wissen, ob ihr bereit seid für das End Game, oder ob ihr lieber noch ein paar Runden um seinen Planeten kreisen wollt.\n\n„Bereit” funkt Robo zurück.",
  "Conclusion Saturn L04": "Wieder kommt 👍 zurück.",
  "Conclusion Saturn L03": "Wieder ein 👍.",
  "Conclusion Saturn L02: §0 could have been used as well":
@@ -1514,7 +1582,7 @@
  "Conclusion Robotswana L06":
  "**Robo**: Ich glaube, die Annahme, dass Kommutatoren nihiliert werden, nehmen wir jetzt erst einmal mit.\n\n**Du**: Schön.  Sagte ich bereits, dass ich langsam Durst habe?",
  "Conclusion Robotswana L05":
- "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!",
+ "**Du**: Ich habe das Gefühl, wir sind jemandem auf der Spur, der sich für die Diagonale von Matrizen interessiert.  Aber ich bekomme langsam Durst!",
  "Conclusion Robotswana L04":
  "Du beschließt, einer besonders markanten Spur zu folgen.\nRobo zieht dir hinterher und schnappt sich beim gehen noch ein willkürliches Stück Pergament vom Boden.",
  "Conclusion Robotswana L03":
@@ -1523,6 +1591,22 @@
  "**Robo**: Ich speichere dieses §0 auch mal, wer weiß.",
  "Conclusion Robotswana L01: Save result as §0":
  "**Du**: Und was machen wir jetzt mit dieser „Erkenntnis“?\n\n**Robo**: Keine Ahnung.  Ich speichere das jedenfalls mal als §0 ab, falls wir es nochmals brauchen.\n\nDamit folgt ihr weiter der Spur.",
+ "Conclusion Rigi L11":
+ "**Vanessa**:  Und, hast du es jetzt „verstanden“?\n\n**Du**: Mmmm …\n\nRobo lacht.\n\n**Robo**: Also *ich* habs, glaube ich, jetzt verstanden.\n\nIhr wünscht Vanessa eine gute Weiterreise und genießt dann doch noch – endlich – ein wenig die Aussicht.\nEs ist Sonnenaufgang.  Noch immer.",
+ "Conclusion Rigi L09": "Vanessa fliegt zurück zu Robo.",
+ "Conclusion Rigi L08: saved as §0.":
+ "Vanessa umkreist dich und landet auf deiner Stirn.\n\n**Vanessa**:  Siehst du, so einfach ist das gar nicht.\nIch habe lange an meiner Strategie gearbeitet!",
+ "Conclusion Rigi L07: saved as §0.": "**Vanessa**: Bravo!",
+ "Conclusion Rigi L06: saved as §0.":
+ "Vanessa dreht wieder eine fröhliche Runde.",
+ "Conclusion Rigi L05: saved as §0.":
+ "Vanessa flattert eine Weile fröhlich um euch herum.\nDann lässt sie sich wieder auf Robos ausgestreckter Hand nieder.",
+ "Conclusion Rigi L04: saved as §0.":
+ "Vanessas Miene hat sich wieder merklich aufgehellt.",
+ "Conclusion Rigi L03: saved as §0.":
+ "**Vanessa**:  Ganz richtig.  Ich krabbel also einfach in der Sonne und arbeite mich langsam nach oben.\n\n**Du**:  Und was machst du, wenn du zu einem schattigen Bereich kommst?\n\n**Vanessa**:  Dann fliege ich so schnell ich kann über den Schatten hinüber und krabbele auf der anderen Seite weiter.  \nSoll ich dir das Geheimnis verraten, warum das so gut funktioniert?\n\n**Du**:  Ja, bitte.\n\n**Vanessa**:  Weil der Berg am westlichen Ufer des Schattens genau dieselbe Höhe hat wie am östlichen!\nIch lande also garantiert wieder auf derselben Höhe.  Und dann kann ich weiter aufwärts krabbeln.\n\n**Du**:  Verstehe.  Prima.\n\nDu würdest jetzt gern noch ein bisschen den Blick genießen und dann weiterfliegen.",
+ "Conclusion Rigi L02: saved as §0.":
+ "**Vanessa**:  Richtig.\nDu glaubst gar nicht, wie krass der Unterschied zwischen Licht und Schatten hier ist.\nHier in der Sonne fühlst du dich wohl.\nAber ein Schritt in den Schatten, und dir frieren die Zehen zusammen.",
  "Conclusion Quantus L10: Overview of planet contents: §0, §1, §2 (§3 is even),\n§4 (§5 is odd), §6, §7 (solves equations containing §8), §9,\n§10, §11 (to tackle §12 in goal), §13 (to disect §14 in assumptions),\n§15 (to tackle §16 in goal) and §17 (for §18 and §19 in goal).":
  "**Du**: Verstehe. Aber jetzt habe ich auch wirklich genug von dieser Prädikatenlogik!\n\n**Robo**: Dann fliegen wir am besten weiter! Aber bevor du fragst – hier ist wieder ein Überblick über die wichtigsten Dinge, die du auf diesem Planeten gelernt hast.\n\n\n|   Notation  | Bedeutung     | \n|:--------------|:----------------------------| \n| §0            | Existenzquantor      | \n| §1            | Allquantor           | \n\n| Taktik                    | Anwendung                                               | \n|:--------------------------|:-------------------------------------------------------| \n| §6                        | Umschreiben mit Gleichungen                          | \n| §9                        | Aussagen über konkrete Zahlen algorithmisch beweisen    | \n| §10                       | Definition „aufdröseln“      | \n| §11                       | für §12 im Beweisziel konkreten Wert angeben               | \n| §13                       | §14 in einer Annahmen zerlegen                | \n| §15                       | §16 im Beweisziel angehen                          | \n| §17                       | in §18 oder §19 Negation am Quantor vorbeischieben  | ",
  "Conclusion Quantus L09":
@@ -1541,7 +1625,7 @@
  "Conclusion Prado L10":
  "**Du**: Juchhu!  Und wer sagt es ihm jetzt?\n\n**Robo**:  Vielleicht lassen wir es lieber.  Ich habe das Gefühl, ihm gefällt ohnehin sein Museum so leer wie es ist am besten.\n\nIhr bedankt euch also artig für die Führung, zeigt euch tief beeindruckt von der hiesigen Eisbaukunst, und fliegt weiter.",
  "Conclusion Prado L08":
- "**Guino**: Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrlich Treppe? Wir gehen hoch!\n\n**Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formlieren, die wir Guino zeigen wollen. Es gibt genau eine gerade …\n\n**Robo**:  Halt!  „Genau eine“ hatten wir noch nicht.",
+ "**Guino**: Na gut, lasst uns weitergehen.  Schaut mal, ist das nicht eine herrliche Treppe? Wir gehen hoch!\n\n**Du** *(zu Robo)*: Lass uns doch jetzt einmal probieren, die Aussage zu formulieren, die wir Guino zeigen wollen. Es gibt genau eine gerade …\n\n**Robo**:  Halt!  „Genau eine“ hatten wir noch nicht.",
  "Conclusion Prado L07":
  "**Du**: Du stellst aber wirklich sehr einfache Aufgaben.",
  "Conclusion Prado L02":
@@ -1593,7 +1677,7 @@
  "Conclusion Iso L02 -- planet now continues":
  "Die Isosophen zeigen sich sehr zufrieden.\n\n**Robo**:  Können wir jetzt nochmal … kapseln?\n\n**Isosoph**:  Klar!  Aber immer schön der Reihe nach. Seit wir die Kapseln in beide Richtungen benutzen, häufen sich wieder die Unfälle.\n\nRobo fährt noch dreimal hin und zurück.  Dann fliegt ihr weiter.",
  "Conclusion Iso L01":
- "**Isososoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …\n\nEr legt ein paar Blätter zur Seite.",
+ "**Isosoph**: Super.  Dann können wir das hier, glaube ich, alles überspringen …\n\nEr legt ein paar Blätter zur Seite.",
  "Conclusion Implis L14":
  "**Operationsleiter**: Das ist ja fantastisch! Tausend Dank! Dann will ich euch auch gar nicht länger aufhalten. Ihr wollt bestimmt weiter zum Planeten Quantus, oder?\n\n**Du**: Ehm, vielleicht …\n\n**Operationsleiter**: Dann habe ich noch eine letzte Bitte. Ich habe hier noch ein Päckchen für die Königin von Quantus! Auch schon von meinem Vorgänger geerbt. Die Post will es nicht annehmen, weil ich die Adresse nicht weiß. Könntet ihr es vielleicht zu ihr mitnehmen?\n\n**Du**: Klar! Robo, halt mal.\n\nRobo nimmt das Päckchen und lässt es irgendwo in seinem Innern verschwinden. Der Operationsleiter sieht ihn entgeistert an.\n\n**Robo**: Keine Angst, ich verdaue nichts!",
  "Conclusion Implis L13: Explain that §0 always tries to apply §1":
@@ -1611,7 +1695,7 @@
  "Conclusion Implis L06: Explain that analogous to §0 with §1 and §2,\n§3 has §4 and §5. §6 can be understood as §7. It is §8 as §9\nstands for Modens Ponens. The 'r' in §10 stands for 'reverse'.":
  "**Operationsleiter**: Okay, das leuchtet mir ein.\n\n**Robo** *(zu dir)*: Übrigens, so wie bei §0 die beiden Teile §1 und §2 heißen, heißen bei §3 die beiden Teile §4 und §5.\n\n**Du**: Also §6 ist §7? Wieso §8?\n\n**Robo**: §9 steht für Modus Ponens. Der Modus ponens ist eine schon in der antiken Logik geläufige Schlussfigur, die in vielen logischen Systemen … Ach nee, das wolltest du ja nicht hören. Das „r“ in §10 steht für „reverse“, weil's die Rückrichtung ist.",
  "Conclusion Implis L05":
- "Der Operationsleiter bedankt sich wieder artig.\nEr drückt wieder auf ein paar Knöpfe, und mit einem lauten Ratteln springen mehrere Förderbänder gleichzeitig wieder an.",
+ "Der Operationsleiter bedankt sich wieder artig.\nEr drückt wieder auf ein paar Knöpfe, und mit einem lauten Rattern springen mehrere Förderbänder gleichzeitig wieder an.",
  "Conclusion Implis L04": "**Operationsleiter**: Ihr seid echt super!",
  "Conclusion Implis L03":
  "Diesmal scheint das Telefonat erfolgreich zu verlaufen.",
@@ -1622,7 +1706,7 @@
  "Conclusion Euklid L04":
  "Euklid ist begeistert und tanzt im Kreis.\nEr möchte euch fast nicht gehen lassen.\nIhr versprecht, in Kontakt zu bleiben.",
  "Conclusion Euklid L03":
- "Ihr schlagt einen Gang ein, indem gleich mehere Bücher auf dem Boden liegen. Aber keines ist aufgeschlagen. An der nächsten Kreuzung zweigt wieder einen Gang ab mit mehreren Büchern auf dem Boden.\n\n**Du**:  Ist das vielleicht eine Spur?\n\n**Robo**: Folgen wir ihr!",
+ "Ihr schlagt einen Gang ein, in dem gleich mehrere Bücher auf dem Boden liegen. Aber keines ist aufgeschlagen. An der nächsten Kreuzung zweigt wieder ein Gang ab mit mehreren Büchern auf dem Boden.\n\n**Du**:  Ist das vielleicht eine Spur?\n\n**Robo**: Folgen wir ihr!",
  "Conclusion Espresso L08: Remember §0.":
  "**KKK 480658**:  Ihr seid ja richtig schlau!\n\n**KKK 398515**:  Wir benutzen immer nur §0. \n\n**KKK 480658**:  Oder `drill`.  Aber psst!  Das ist eigentlich ober-verboten.\n\n**KKK 398515**:  Nehmt euch doch wenigstens ein paar Bohnen mit!  Die könnt ihr bestimmt noch anderswo gebrauchen!\n\n**Robo**:  Gute Idee!  Ich nehme einfach die ganze Schale.  Und wenn du es schaffst, den gemahlenen Kaffee bis ins Raumschiff zu tragen, dann brüh ich dir dort daraus einen Filter…\n\n**Du**:  Nichts da. Wozu habe ich denn in die italienische Sonderausstattung investiert??\nIch mache mir einen richtigen Espresso!",
  "Conclusion Espresso L05":
@@ -1690,9 +1774,13 @@
  "Cantor": "Cantor",
  "Can not use §0 instead of §1.\nExplain that §2 is mapping from §3 to §4 i.e.\n§5\n.You can express §6 by §7 but not vica versa":
  "**Du**:  Aha!  Ich kann also auch einfach §0 schreiben, wenn ich mir diese Fliegendreck-Schreibweise mit §1 nicht mag?\n\n**Robo**:  Nein, schau mal genauer hin.   Hier ist §2 eine Abbildung.\nEs ist natürlich genau die Abbildung, die eine Teilmenge von §3 auf die entsprechende Bildmenge in §4 wirft, also\n§5",
+ "Both sides are set-builder memberships.\nUse §0, or more precisely §1.":
+ "**Du**: Müsste doch eigentlich mit §0 klappen.\n\n**Robo**: Ja, aber du musst §0 die relevanten Definitionen übergeben.  Probier mal §1.",
  "Best begin with §0":
  "**Du**: Naja ich kann wohl immerhin mal mit §0 anfangen …\n\n**Robo**: … und dann schauen wir weiter!",
  "Begin with §0": "**Robo**:  Fang doch noch einmal mit §0 an!",
+ "Because §0 is in the shade, there is some §1 with §2":
+ "**Du**: Na schön.  Und du meinst also, ich sollte beweisen, dass jeder Punkt, der im Schatten liegt, einen Schattierer hat?\n\n**Robo**:  Nur zu.",
  "Because §0 is a concrete data and there is a algorithm to decide if a number is prime you can use §1":
  "**Robo** *(flüsternd)*:  Das ist ganz einfach.  Weil §0 eine konkrete Zahl ist und es einen Algorithmus gibt, um zu entscheiden, ob eine Zahl prim ist, kannst du einfach §1 verwenden!",
  "Be careful with interpreting goal as 'there is §0 or there is no §1'. Rewrite goal as §2":
@@ -1734,6 +1822,8 @@
  "**Robo**:  Dann solltest du vermutlich wieder §0 anwenden.",
  "A prime number is a natural number greater or equal to §0, which is only divisible by §1\nand itself":
  "**Du**:  Aha.  Eine Primzahl ist also eine natürlich Zahl größergleich §0, die nur durch §1 und sich selbst teilbar ist.  Das klingt vertraut.",
+ "A point fails to lie in the shade exactly when it is a sunny point.":
+ "Ein Punkt liegt genau dann nicht im Schatten, wenn er in der Sonne liegt.",
  "A mapping §0 is surjectiv, if:\n\n§1":
  "Eine Abbildung §0 ist genau dann surjektiv, wenn gilt:\n\n§1",
  "A mapping §0 is strictly monotonous, if:\n\n§1":
