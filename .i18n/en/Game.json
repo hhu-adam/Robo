@@ -306,6 +306,7 @@
  "**Scribble**: You could start with §0, or you could start with §1 and then try §2.",
  "Try §0 with §1":
  "**Scribble**: But don't forget that you need to tell §0 about §1!",
+ "Try §0 with a number.": "**Scribble**: Now you §0 some number.",
  "Try §0 which states\n§1\n":
  "**Scribble**: Great. Now let's move on to uniqueness. I think the lemma §0 could help here: \n\n§1\n",
  "Try §0 via §1":
@@ -967,6 +968,8 @@
  "**You**: Now we need to show that §0 is the same as twice the count of even numbers in §1. Right? \n\n**Scribble**: Right. \n\n**You**: And that's because … the expression in the sum disappears for odd §2, and for even §3 it is equal to §4. Mmmm …\n\n**Scribble**: Why don't you introduce a few intermediate steps with §5 again. First, you want to restrict the sum to the set of even indices, i.e. to: \n§6 \nAnd then you probably want to use \n§7\nas another intermediate step.",
  "Goal is in assumptions":
  "**You**: Ah, and now our goal is among the assumptions.",
+ "Go back, keep §0.":
+ "**Scribble**: This approach seems a bit too difficult to me.\nI’d go back again and keep §0.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**You**: So, we have two assumptions: §0 is true, and §1 is also true. And they want us to prove “§0 and §1”. These formalosophanatics are driving me crazy.  \n\n**Scribble**:  You simply need to break the goal into two parts. Try §3.\n\n**You**: You mean §4, perhaps? \n\n**Scribble**: No, §5. I know it's confusing, but that's how they say it.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

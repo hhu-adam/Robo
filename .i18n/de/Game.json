@@ -523,6 +523,7 @@
  "**Robo**: Du könntest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt.",
  "Try §0 with §1":
  "**Robo**: Vergiss aber nicht, dass §0 die Annahme §1 explizit braucht!",
+ "Try §0 with a number.": "**Robo**: Jetzt setzt du mit §0 eine Zahl ein.",
  "Try §0 which states\n§1\n":
  "**Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma §0 helfen:\n\n§1\n",
  "Try §0 via §1":
@@ -1349,6 +1350,8 @@
  "**Du**:  Hier ist jetzt zu zeigen, dass §0 dasselbe ist wie zweimal die Anzahl der geraden Zahlen in §1.  Richtig?\n\n**Robo**:  Richtig.\n\n**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n\n**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.\nZuerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n§6\nUnd danach willst du vermutlich\n§7\nals Zwischenschritt verwenden.",
  "Goal is in assumptions":
  "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen.",
+ "Go back, keep §0.":
+ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\nIch würde nochmal zurückgehen und §0 behalten.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §3.\n\n**Du**: Du meinst wohl §4??\n\n**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

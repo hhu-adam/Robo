@@ -306,6 +306,7 @@
  "**Glifo**: Podrías empezar con §0, o con §1 y luego mirar si §2 te ayuda a avanzar.",
  "Try §0 with §1":
  "**Glifo**: ¡Pero no olvides que §0 necesita explícitamente la hipótesis §1!",
+ "Try §0 with a number.": "**Glifo**: Ahora introduces un número con §0.",
  "Try §0 which states\n§1\n":
  "**Glifo**: Genial. Ahora vamos con la unicidad. Creo que aquí podría ayudar el lema §0:\n\n§1\n",
  "Try §0 via §1":
@@ -972,6 +973,8 @@
  "**Tú**: Lo que hay que demostrar ahora es que §0 es lo mismo que dos veces la cantidad de números pares en §1. ¿Correcto?\n\n**Glifo**: Correcto.\n\n**Tú**: Y eso es así porque… la expresión de la suma se anula cuando §2 es impar, y cuando §3 es par es igual a §4. Mmmm…\n\n**Glifo**: Haz otra vez unos cuantos pasos intermedios con §5.\nPrimero quieres restringir la suma al conjunto de los índices pares, es decir, a:\n§6\nY después seguramente querrás usar\n§7\ncomo paso intermedio.",
  "Goal is in assumptions":
  "**Tú**: Ah, y ahora el objetivo está entre las hipótesis.",
+ "Go back, keep §0.":
+ "**Glifo**: Este camino me parece un poco demasiado complicado.\nYo volvería atrás y conservaría §0.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Tú**: A ver, tenemos dos hipótesis: §0 se cumple, y §1 también. Y nosotros tenemos que demostrar que “§0 y §1” se cumple. Me parece que estos formalochiflados van a acabar sacándome de quicio.\n\n**Glifo**: Calma. Solo tienes que descomponer el objetivo en dos partes. Prueba §3.\n\n**Tú**: ¿¿Querrás decir §4??\n\n**Glifo**: No, §5. Ya sé que es confuso, pero aquí lo llaman así.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

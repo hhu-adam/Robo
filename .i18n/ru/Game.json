@@ -299,6 +299,7 @@
  "**Знайка**: Можешь начать с §0, или начни с §1 и потом посмотри, поможет ли тебе §2 дальше.",
  "Try §0 with §1":
  "**Знайка**: Только не забудь, что §0 явно требует предположения §1!",
+ "Try §0 with a number.": "**Знайка**: Теперь с помощью §0 подставляешь число.",
  "Try §0 which states\n§1\n":
  "**Знайка**:  Супер.  Теперь — к единственности.  Думаю, тут может помочь лемма §0:\n\n§1\n",
  "Try §0 via §1":
@@ -952,6 +953,8 @@
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
  "**Ты**:  Теперь необходимо доказать, что §0 — то же самое, что удвоенное количество чётных чисел в §1.  Так?\n\n**Знайка**:  Верно.\n\n**Ты**:  И это потому, что … выражение в сумме для нечётных §2 исчезает, а для чётных §3 равно §4. Мммм …\n\n**Знайка**:  Давай-ка снова пару промежуточных шагов с помощью §5.\nСначала ограничиваешь сумму множеством чётных индексов, то есть:\n§6\nА потом, вероятно, используешь\n§7\nкак промежуточный шаг.",
  "Goal is in assumptions": "**Ты**: Ага, а теперь цель в предположениях.",
+ "Go back, keep §0.":
+ "**Знайка**: Такой путь решения, как мне кажется, несколько сложноват.\nЯ бы откатился назад и оставил §0.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Ты**: Итак, у нас есть два предположения: истинно §0, а ещё истинно §1. Необходимо доказать, что истинно «§0 и §1». Эти формалософские психи меня до белого каления доведут.\n\n**Знайка**: Спокойно. Тебе просто нужно разложить цель на две части. Попробуй §3.\n\n**Ты**: Ты, наверное, имеешь в виду §4??\n\n**Знайка**: Нет, §5. Я знаю, сбивает с толку, но так уж это здесь называют.",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":

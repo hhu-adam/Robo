@@ -259,6 +259,7 @@
  "**司南**：这里你现在得用 §0 或者 §1。\n  还是先退一步吧，让目标变成 §2。",
  "Try §0 | §1, §2": "**司南**：你可以从 §0 开始，或者从 §1 开始，然后看看用 §2 能不能帮上忙。",
  "Try §0 with §1": "**司南**：但别忘了，§0 需要你明确告诉它使用假设 §1！",
+ "Try §0 with a number.": "**司南**：现在你用 §0 代入一个数。",
  "Try §0 which states\n§1\n": "**司南**：太好了。现在说唯一性。我觉得引理 §0 可能有用：\n\n§1\n",
  "Try §0 via §1":
  "**司南**（*不知从哪里*）：这听起来像 §0。我不觉得我们在巴比伦见过这个，你是在瞎想。不过 §1 肯定知道这个引理。",
@@ -816,6 +817,7 @@
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
  "**你**：这里要证明的是，§0 等同于 §1 里偶数的个数的两倍。对吧？\n\n**司南**：对。\n\n**你**：而这是因为……当 §2 是奇数时，求和里的那个表达式就恒等于0；当 §3 是偶数时，它就等于 §4。嗯嗯……\n\n**司南**：你再用 §5 写几个中间步骤吧。\n首先你想把求和限制到偶数指标的集合上，也就是：\n§6\n然后你大概想用\n§7\n作为一个中间步骤。",
  "Goal is in assumptions": "**你**：啊，现在目标已经在假设里了。",
+ "Go back, keep §0.": "**司南**：这条解法在我看来有点太难了。\n我建议先退回去，保留 §0。",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 “§0和§1” 成立。我觉得这些形式哲学怪人迟早要把我逼疯。\n\n**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §3 试试。\n\n**你**：你是想说 §4 吧？？\n\n**司南**：不，§5。我知道这很让人迷糊，但他们这儿就这么叫。",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
