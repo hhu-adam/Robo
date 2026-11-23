@@ -3856,6 +3856,20 @@ msgstr ""
 "\n"
 "**Знайка**: Главное — запомни §3."
 
+#. §0: `Odd`
+#: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
+msgid "Go back, keep §0."
+msgstr ""
+"**Знайка**: Такой путь решения, как мне кажется, несколько сложноват.\n"
+"Я бы откатился назад и оставил §0."
+
+#. §0: `use`
+#: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**Знайка**: Теперь с помощью §0 подставляешь число."
+
 #: Game/Levels/Quantus/L09_PushNeg.lean:14
 msgid "Intro Quantus L09"
 msgstr "После долгих препирательств формалософы наконец-то сошлись на следующем вопросе."
@@ -3864,42 +3878,6 @@ msgstr "После долгих препирательств формалосо�
 #: Game/Levels/Quantus/L09_PushNeg.lean:20
 msgid "Remind about §0"
 msgstr "**Ты**: Ого. §0 крайнее слева. Ну надо же …"
-
-#. §0: `Odd`
-#. §1: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:27
-#: Game/Levels/Quantus/L09_PushNeg.lean:38
-msgid "Go back, keep §0 and try §1"
-msgstr ""
-"**Знайка**: Такой путь решения, как мне кажется, несколько сложноват.\n"
-"  Я бы откатился назад и оставил §0, чтобы в конце концов можно было использовать §1."
-
-#. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**Знайка**: Теперь с помощью §0 подставляешь число, а потом, скорее всего, поможет лемма §1.\n"
-"\n"
-"**Ты**: А я могу применить §2 уже сейчас?\n"
-"\n"
-"**Знайка**: Нет, §3 не умеет переписывать внутри кванторов.\n"
-"\n"
-"**Ты**: Но как тогда это сделать?\n"
-"\n"
-"**Знайка**: Я тебе покажу. Потом. Если ты захочешь. А сейчас я бы с помощью §4 указал конкретное число, а потом уже переписывал."
-
-#. §0: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:58
-#: Game/Levels/Quantus/L09_PushNeg.lean:62
-#: Game/Levels/Quantus/L09_PushNeg.lean:65
-msgid "Now you can apply §0"
-msgstr "**Знайка**: Отличный выбор! Теперь можешь применить §0."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:74
@@ -9044,3 +9022,25 @@ msgstr "Игра иллюстрирует доказательства в Lean �
 #~ "**Ты**: То есть тут теперь §0 применять?\n"
 #~ "\n"
 #~ "**Знайка**: Скорее всего, например с §1."
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Знайка**: Такой путь решения, как мне кажется, несколько сложноват.\n"
+#~ "  Я бы откатился назад и оставил §0, чтобы в конце концов можно было использовать §1."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Знайка**: Теперь с помощью §0 подставляешь число, а потом, скорее всего, поможет лемма §1.\n"
+#~ "\n"
+#~ "**Ты**: А я могу применить §2 уже сейчас?\n"
+#~ "\n"
+#~ "**Знайка**: Нет, §3 не умеет переписывать внутри кванторов.\n"
+#~ "\n"
+#~ "**Ты**: Но как тогда это сделать?\n"
+#~ "\n"
+#~ "**Знайка**: Я тебе покажу. Потом. Если ты захочешь. А сейчас я бы с помощью §4 указал конкретное число, а потом уже переписывал."
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Знайка**: Отличный выбор! Теперь можешь применить §0."

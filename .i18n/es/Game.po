@@ -3857,6 +3857,20 @@ msgstr ""
 "\n"
 "**Glifo**: Lo importante es que te acuerdes de §3."
 
+#. §0: `Odd`
+#: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
+msgid "Go back, keep §0."
+msgstr ""
+"**Glifo**: Este camino me parece un poco demasiado complicado.\n"
+"Yo volvería atrás y conservaría §0."
+
+#. §0: `use`
+#: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**Glifo**: Ahora introduces un número con §0."
+
 #: Game/Levels/Quantus/L09_PushNeg.lean:14
 msgid "Intro Quantus L09"
 msgstr "Tras mucho tira y afloja, las formalósofas por fin se han puesto de acuerdo en la siguiente pregunta."
@@ -3865,42 +3879,6 @@ msgstr "Tras mucho tira y afloja, las formalósofas por fin se han puesto de acu
 #: Game/Levels/Quantus/L09_PushNeg.lean:20
 msgid "Remind about §0"
 msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
-
-#. §0: `Odd`
-#. §1: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:27
-#: Game/Levels/Quantus/L09_PushNeg.lean:38
-msgid "Go back, keep §0 and try §1"
-msgstr ""
-"**Glifo**: Este camino me parece un poco demasiado complicado.\n"
-"  Yo volvería atrás y conservaría §0, para que al final puedas usar §1."
-
-#. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n"
-"\n"
-"**Tú**: ¿Podría aplicar ya §2?\n"
-"\n"
-"**Glifo**: No, §3 no puede reescribir dentro de cuantificadores.\n"
-"\n"
-"**Tú**: ¿Y cómo lo haría entonces?\n"
-"\n"
-"**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después."
-
-#. §0: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:58
-#: Game/Levels/Quantus/L09_PushNeg.lean:62
-#: Game/Levels/Quantus/L09_PushNeg.lean:65
-msgid "Now you can apply §0"
-msgstr "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:74
@@ -9042,3 +9020,25 @@ msgstr "Este juego ilustra la demostración de teoremas con Lean mediante divers
 #~ "**Tú**: Entonces, ¿aquí hay que usar §0?\n"
 #~ "\n"
 #~ "**Glifo**: Probablemente. Por ejemplo, con §1."
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Glifo**: Este camino me parece un poco demasiado complicado.\n"
+#~ "  Yo volvería atrás y conservaría §0, para que al final puedas usar §1."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n"
+#~ "\n"
+#~ "**Tú**: ¿Podría aplicar ya §2?\n"
+#~ "\n"
+#~ "**Glifo**: No, §3 no puede reescribir dentro de cuantificadores.\n"
+#~ "\n"
+#~ "**Tú**: ¿Y cómo lo haría entonces?\n"
+#~ "\n"
+#~ "**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después."
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0."

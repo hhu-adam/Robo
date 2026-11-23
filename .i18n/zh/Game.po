@@ -6846,6 +6846,20 @@ msgstr "**司南**：趁我们等着，我先简单讲讲否定和量词是怎�
 msgid "Try §0 at §1"
 msgstr "**司南**：§0 是从左往右推的。所以你在这里不能把它用到证明目标上，但可以用到 §1 上。"
 
+#. §0: `Odd`
+#: Game.Levels.Quantus.L09_PushNeg
+#, fuzzy
+msgid "Go back, keep §0."
+msgstr ""
+"**司南**：这条解法在我看来有点太难了。\n"
+"我建议先退回去，保留 §0。"
+
+#. §0: `use`
+#: Game.Levels.Quantus.L09_PushNeg
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**司南**：现在你用 §0 代入一个数。"
+
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Conclusion Quantus L09"
 msgstr ""
@@ -6859,47 +6873,14 @@ msgstr ""
 "\n"
 "这个问题又太具体了。尴尬的沉默。"
 
-#. §0: `Odd`
-#. §1: `not_odd_iff_even`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Go back, keep §0 and try §1"
-msgstr ""
-"**司南**：这条解法在我看来有点太难了。\n"
-" 我建议先退回去，保留 §0，这样你最后就能用上 §1。"
-
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
 msgstr "经过漫长的来回争论，这些形式哲学家们终于就下面这个问题达成了一致。"
-
-#. §0: `not_odd_iff_even`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Now you can apply §0"
-msgstr "**司南**：好选择！现在你可以用 §0 了。"
 
 #. §0: `¬`
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Remind about §0"
 msgstr "**你**：嚯。最左边又是一个 §0。真稀奇….…"
-
-#. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**司南**：现在你用 §0 代入一个数，然后大概就该用引理 §1 了。\n"
-"\n"
-"**你**：我现在就能用 §2 吗？\n"
-"\n"
-"**司南**：不行，§3 不能在量词里面改写。\n"
-"\n"
-"**你**：可那我该怎么做？\n"
-"\n"
-"**司南**：以后再教你，不在这种大庭广众之下。我现在宁愿用 §4 给出一个真正的数，然后再改写。"
 
 #. §0: `push Not`
 #: Game.Levels.Quantus.L09_PushNeg
@@ -9037,3 +9018,25 @@ msgstr "– 关卡完成！ –"
 #~ "**你**：所以现在在这里用 §0？\n"
 #~ "\n"
 #~ "**司南**：大概吧，比如配合 §1。"
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**司南**：这条解法在我看来有点太难了。\n"
+#~ " 我建议先退回去，保留 §0，这样你最后就能用上 §1。"
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**司南**：好选择！现在你可以用 §0 了。"
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**司南**：现在你用 §0 代入一个数，然后大概就该用引理 §1 了。\n"
+#~ "\n"
+#~ "**你**：我现在就能用 §2 吗？\n"
+#~ "\n"
+#~ "**司南**：不行，§3 不能在量词里面改写。\n"
+#~ "\n"
+#~ "**你**：可那我该怎么做？\n"
+#~ "\n"
+#~ "**司南**：以后再教你，不在这种大庭广众之下。我现在宁愿用 §4 给出一个真正的数，然后再改写。"

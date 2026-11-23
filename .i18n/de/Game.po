@@ -6829,6 +6829,20 @@ msgstr "**Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Ne
 msgid "Try §0 at §1"
 msgstr "**Robo**: §0 schiebt von links nach rechts. Du kannst es hier also nicht auf das Beweisziel anwenden, wohl aber auf §1."
 
+#. §0: `Odd`
+#: Game.Levels.Quantus.L09_PushNeg
+#, fuzzy
+msgid "Go back, keep §0."
+msgstr ""
+"**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+"Ich würde nochmal zurückgehen und §0 behalten."
+
+#. §0: `use`
+#: Game.Levels.Quantus.L09_PushNeg
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**Robo**: Jetzt setzt du mit §0 eine Zahl ein."
+
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Conclusion Quantus L09"
 msgstr ""
@@ -6842,47 +6856,14 @@ msgstr ""
 "\n"
 "Die Frage war wieder zu konkret. Betretenes Schweigen."
 
-#. §0: `Odd`
-#. §1: `not_odd_iff_even`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Go back, keep §0 and try §1"
-msgstr ""
-"**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
-"  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
-
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Intro Quantus L09"
 msgstr "Nach langem Hin und Her haben sich die Formalosophinnen endlich auf folgende Frage geeignet."
-
-#. §0: `not_odd_iff_even`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid "Now you can apply §0"
-msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
 
 #. §0: `¬`
 #: Game.Levels.Quantus.L09_PushNeg
 msgid "Remind about §0"
 msgstr "**Du**: Oha. Ganz links ein §0. Was du nicht sagst …"
-
-#. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game.Levels.Quantus.L09_PushNeg
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
-"\n"
-"**Du**: Könnte ich jetzt schon §2 anwenden?\n"
-"\n"
-"**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
-"\n"
-"**Du**: Aber wie würde ich das machen?\n"
-"\n"
-"**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
 
 #. §0: `push Not`
 #: Game.Levels.Quantus.L09_PushNeg
@@ -9283,3 +9264,25 @@ msgstr "– Aufgabe gelöst! –"
 
 #~ msgid "QED"
 #~ msgstr "QED"
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+#~ "  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
+#~ "\n"
+#~ "**Du**: Könnte ich jetzt schon §2 anwenden?\n"
+#~ "\n"
+#~ "**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
+#~ "\n"
+#~ "**Du**: Aber wie würde ich das machen?\n"
+#~ "\n"
+#~ "**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
