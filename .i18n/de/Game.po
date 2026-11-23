@@ -4506,13 +4506,17 @@ msgstr "**Du**: Oha. Ganz links ein §0. Was du nicht sagst …"
 
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
 msgid "Go back, keep §0."
 msgstr ""
+"**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+"Ich würde nochmal zurückgehen und §0 behalten."
 
 #. §0: `use`
 #: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
 msgid "Try §0 with a number."
-msgstr ""
+msgstr "**Robo**: Jetzt setzt du mit §0 eine Zahl ein."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:39
@@ -13374,3 +13378,18 @@ msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Th
 #~ "\n"
 #~ "**Robo**: Ja, das würde zum Ziel führen. Aber eigentlich ist §1 ja eine Tautologie. Damit §2 sie erkennt, musst du sie nur entsprechend abstrahieren. Das ginge hier zum Beispiel mit:\n"
 #~ "§3\n"
+
+#~ msgid ""
+#~ "With §0, you introduce an intermediate result.\n"
+#~ "You must then prove this intermediate result\n"
+#~ "before you can continue with the actual proof.\n"
+#~ "\n"
+#~ "## Friends and relatives\n"
+#~ "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
+#~ "only have to prove your intermediate result at the very end."
+#~ msgstr ""
+#~ "Mit §0 führst du ein Zwischenresultat ein.\n"
+#~ "Anschließend musst du zuerst dieses Zwischenresultat beweisen, bevor du den eigentlichen Beweis fortsetzen kannst.\n"
+#~ "\n"
+#~ "## Freunde und Verwandte\n"
+#~ "§1 funktioniert genauso, außer dass du zunächst den Hauptbeweis fortsetzen kannst und erst ganz am Ende dein Zwischenresultat beweisen musst."

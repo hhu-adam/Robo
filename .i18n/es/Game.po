@@ -4472,13 +4472,17 @@ msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
 
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
 msgid "Go back, keep §0."
 msgstr ""
+"**Glifo**: Este camino me parece un poco demasiado complicado.\n"
+"Yo volvería atrás y conservaría §0."
 
 #. §0: `use`
 #: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
 msgid "Try §0 with a number."
-msgstr ""
+msgstr "**Glifo**: Ahora introduces un número con §0."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:39

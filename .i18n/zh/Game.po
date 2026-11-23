@@ -4476,13 +4476,17 @@ msgstr "**你**：嚯。最左边又是一个 §0。真稀奇….…"
 
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
 msgid "Go back, keep §0."
 msgstr ""
+"**司南**：这条解法在我看来有点太难了。\n"
+"我建议先退回去，保留 §0。"
 
 #. §0: `use`
 #: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
 msgid "Try §0 with a number."
-msgstr ""
+msgstr "**司南**：现在你用 §0 代入一个数。"
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:39

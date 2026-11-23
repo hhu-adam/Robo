@@ -4364,13 +4364,17 @@ msgstr "**You**: I see. A §0 on the far left. What a surprise …"
 
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
+#, fuzzy
 msgid "Go back, keep §0."
 msgstr ""
+"**Scribble**: This approach seems a bit too difficult to me.\n"
+"I’d go back again and keep §0."
 
 #. §0: `use`
 #: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
 msgid "Try §0 with a number."
-msgstr ""
+msgstr "**Scribble**: Now you §0 some number."
 
 #. §0: `push Not`
 #: Game/Levels/Quantus/L09_PushNeg.lean:39
