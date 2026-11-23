@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06\n"
+"POT-Creation-Date: 2026-11-21\n"
 "PO-Revision-Date: 2026-07-13 16:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Claude Code (pretraducción)\n"
 
-#: GameServer/RpcHandlers.lean:169
+#: GameServer/RpcHandlers.lean:33
 msgid "level completed! 🎉"
 msgstr "– ¡Problema resuelto! –"
 
-#: GameServer/RpcHandlers.lean:177
+#: GameServer/RpcHandlers.lean:41
 msgid "level completed with warnings… 🎭"
 msgstr "– ¡Problema resuelto! Pero no del todo como estaba previsto … –"
 
-#: GameServer/RpcHandlers.lean:190
+#: GameServer/RpcHandlers.lean:54
 msgid "intermediate goal solved! 🎉"
 msgstr "– ¡Objetivo intermedio conseguido! –"
 
@@ -144,7 +144,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∪ B`
 #. §5: `∪`
-#. §6: `\\union`
+#. §6: `\\\\union`
 #: Game/Doc/Definition.lean:81
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
@@ -160,7 +160,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
-#. §6: `\\inter`
+#. §6: `\\\\inter`
 #: Game/Doc/Definition.lean:87
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
@@ -2863,14 +2863,14 @@ msgstr ""
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
-#: Game/Levels/Implis/L01_Intro.lean:50
+#: Game/Levels/Implis/L01_Intro.lean:51
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
 "**Tú**: Vale. Así que ahora tengo tanto §0 como §1 entre mis hipótesis y tengo que demostrar §2.\n"
 "\n"
 "**Glifo**: Exacto. Y eso ya sabes cómo se hace."
 
-#: Game/Levels/Implis/L01_Intro.lean:66
+#: Game/Levels/Implis/L01_Intro.lean:67
 msgid "Conclusion Implis L01"
 msgstr ""
 "**Jefe de Operaciones**: ¡Perfecto! ¡Muchas gracias!\n"
@@ -3000,9 +3000,9 @@ msgstr "**Jefe de Operaciones**: ¡Sois geniales, de verdad!"
 
 #. §0: $$
 #.   \\begin{CD}
-#.        A  @>{f}>> B @<{g}<< C \\\\ %(new line)
+#.        A  @>{f}>> B @<{g}<< C    \\\\ %(new line)
 #.     @V{h}VV    @V{i}VV   @V{j}VV \\\\ %(new line)
-#.        D  @<{k}<< E @>{l}>> F \\\\ %(new line)
+#.        D  @<{k}<< E @>{l}>> F    \\\\ %(new line)
 #.     @A{m}AA    @A{n}AA   @V{p}VV \\\\ %(new line)
 #.        G  @<{q}<< H @>{r}>> I
 #.   \\end{CD}
@@ -3857,6 +3857,15 @@ msgstr ""
 "\n"
 "**Glifo**: Lo importante es que te acuerdes de §3."
 
+#: Game/Levels/Quantus/L09_PushNeg.lean:14
+msgid "Intro Quantus L09"
+msgstr "Tras mucho tira y afloja, las formalósofas por fin se han puesto de acuerdo en la siguiente pregunta."
+
+#. §0: `¬`
+#: Game/Levels/Quantus/L09_PushNeg.lean:20
+msgid "Remind about §0"
+msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
+
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
 #, fuzzy
@@ -3871,21 +3880,12 @@ msgstr ""
 msgid "Try §0 with a number."
 msgstr "**Glifo**: Ahora introduces un número con §0."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:14
-msgid "Intro Quantus L09"
-msgstr "Tras mucho tira y afloja, las formalósofas por fin se han puesto de acuerdo en la siguiente pregunta."
-
-#. §0: `¬`
-#: Game/Levels/Quantus/L09_PushNeg.lean:20
-msgid "Remind about §0"
-msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
-
 #. §0: `push Not`
-#: Game/Levels/Quantus/L09_PushNeg.lean:74
+#: Game/Levels/Quantus/L09_PushNeg.lean:39
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr "En lugar de este teorema puedes usar §0."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:97
+#: Game/Levels/Quantus/L09_PushNeg.lean:62
 msgid "Conclusion Quantus L09"
 msgstr ""
 "Las formalósofas están entusiasmadas. Cuando se apagan los aplausos, esta vez eres tú quien tiene una pregunta.\n"
@@ -5089,7 +5089,7 @@ msgstr ""
 msgid "Intro Babylon L08"
 msgstr "Por pura curiosidad, examinas más de cerca otra de las torres vecinas."
 
-#. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
+#. §0: $$ \\sum_{i = 0}^n (2i + 1) = (n + 1)^2 $$
 #: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:32
 msgid "Try solving §0 by induction"
 msgstr ""
@@ -5619,6 +5619,10 @@ msgstr "**Glifo**: Seguro que esto lo necesitamos enseguida. Lo guardo como §0.
 msgid "Intro Cantor L11"
 msgstr "**Cantor**: ¿Ahora está todo claro?"
 
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
+msgid "Conclusion Cantor L11"
+msgstr "**Tú**: No sé si esto ha sido realmente más fácil…"
+
 #. §0: `cantor_diagonal`
 #. §1: `surjective_mem_of_surjective`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:35
@@ -5631,22 +5635,18 @@ msgstr ""
 "\n"
 "**Glifo**: Primero hay que traducir, con §1."
 
+#. §0: `cantor_diagonal`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
+msgid "[Hint mhjv] Try §0"
+msgstr "**Cantor**: ¡No, no! ¡Queríamos usar mi precioso teorema §0!"
+
 #. §0: `«{hf}»`
 #. §1: `«{A}» → «{A}» → Prop`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:56
 #, fuzzy
 msgid "[Hint u9e76] Now §0 is about a map §1."
 msgstr "**Glifo**: Ahora §0 es un enunciado sobre una aplicación §1."
-
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
-msgid "Conclusion Cantor L11"
-msgstr "**Tú**: No sé si esto ha sido realmente más fácil…"
-
-#. §0: `cantor_diagonal`
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
-msgid "[Hint mhjv] Try §0"
-msgstr "**Cantor**: ¡No, no! ¡Queríamos usar mi precioso teorema §0!"
 
 #. §0: `¬ .`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:62
@@ -5685,11 +5685,11 @@ msgstr ""
 "\n"
 "**Glifo**: §1"
 
-#: Game/Levels/Cantor.lean:19
+#: Game/Levels/Cantor.lean:20
 msgid "Cantor"
 msgstr "Cantor"
 
-#: Game/Levels/Cantor.lean:39
+#: Game/Levels/Cantor.lean:40
 msgid "Intro Cantor"
 msgstr ""
 "Habéis aterrizado junto a una gran carpa.\n"
@@ -6723,7 +6723,7 @@ msgstr "**Glifo**: Reescribiendo un poco, seguro que se puede usar §0."
 #. §0: `a ∣ b`
 #. §1: `∃ k, b = a * k`
 #. §2: `∣`
-#. §3: `\\dvd`
+#. §3: `\\\\dvd`
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:71

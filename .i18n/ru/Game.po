@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-27\n"
+"POT-Creation-Date: 2026-11-21\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -14,15 +14,15 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: GameServer/RpcHandlers.lean:169
+#: GameServer/RpcHandlers.lean:33
 msgid "level completed! 🎉"
 msgstr "– Задание выполнено! –"
 
-#: GameServer/RpcHandlers.lean:177
+#: GameServer/RpcHandlers.lean:41
 msgid "level completed with warnings… 🎭"
 msgstr "– Задание выполнено!  Но не совсем так, как задумывалось. –"
 
-#: GameServer/RpcHandlers.lean:190
+#: GameServer/RpcHandlers.lean:54
 msgid "intermediate goal solved! 🎉"
 msgstr "– Промежуточная цель достигнута! –"
 
@@ -145,7 +145,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∪ B`
 #. §5: `∪`
-#. §6: `\\union`
+#. §6: `\\\\union`
 #: Game/Doc/Definition.lean:81
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
@@ -161,7 +161,7 @@ msgstr ""
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
-#. §6: `\\inter`
+#. §6: `\\\\inter`
 #: Game/Doc/Definition.lean:87
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
@@ -2589,7 +2589,7 @@ msgstr "**Знайка**: Вот, уже лучше! Ещё разок!"
 msgid "[Logo.L11] Hint 3: try §0 tactic"
 msgstr "**Знайка**: Для этого у тебя есть доказательство в *предположениях*."
 
-#. §0: `obtain ⟨h₁, h₂, h₃⟩ := h`
+#. §0: `obtain ⟨h₁, h₂ , h₃⟩ := h`
 #: Game/Levels/Logo/L11_And.lean:48
 msgid "Conclusion Logo L11: Could have been written as §0"
 msgstr "**Знайка**: Вообще-то мог бы и сразу вложенно написать: §0."
@@ -2862,14 +2862,14 @@ msgstr ""
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
-#: Game/Levels/Implis/L01_Intro.lean:50
+#: Game/Levels/Implis/L01_Intro.lean:51
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
 "**Ты**: Норм. Значит, теперь у меня в предположениях есть и §0, и §1, а доказать необходимо §2.\n"
 "\n"
 "**Знайка**: Именно. А как это делается, ты уже знаешь."
 
-#: Game/Levels/Implis/L01_Intro.lean:66
+#: Game/Levels/Implis/L01_Intro.lean:67
 msgid "Conclusion Implis L01"
 msgstr ""
 "**Начопер**: Идеально! Спасибо!\n"
@@ -3327,7 +3327,7 @@ msgstr "Начопер одобрительно кивает."
 
 #. §0: `apply`
 #. §1: ```
-#. lemma not_not (A : Prop) : ¬¬A ↔ A
+#. lemma not_not : ¬¬A ↔ A
 #. ```
 #: Game/Levels/Implis/L13_Rw.lean:21
 msgid ""
@@ -3856,6 +3856,15 @@ msgstr ""
 "\n"
 "**Знайка**: Главное — запомни §3."
 
+#: Game/Levels/Quantus/L09_PushNeg.lean:14
+msgid "Intro Quantus L09"
+msgstr "После долгих препирательств формалософы наконец-то сошлись на следующем вопросе."
+
+#. §0: `¬`
+#: Game/Levels/Quantus/L09_PushNeg.lean:20
+msgid "Remind about §0"
+msgstr "**Ты**: Ого. §0 крайнее слева. Ну надо же …"
+
 #. §0: `Odd`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
 #, fuzzy
@@ -3870,21 +3879,12 @@ msgstr ""
 msgid "Try §0 with a number."
 msgstr "**Знайка**: Теперь с помощью §0 подставляешь число."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:14
-msgid "Intro Quantus L09"
-msgstr "После долгих препирательств формалософы наконец-то сошлись на следующем вопросе."
-
-#. §0: `¬`
-#: Game/Levels/Quantus/L09_PushNeg.lean:20
-msgid "Remind about §0"
-msgstr "**Ты**: Ого. §0 крайнее слева. Ну надо же …"
-
 #. §0: `push Not`
-#: Game/Levels/Quantus/L09_PushNeg.lean:74
+#: Game/Levels/Quantus/L09_PushNeg.lean:39
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr "Вместо этой теоремы можешь применить §0."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:97
+#: Game/Levels/Quantus/L09_PushNeg.lean:62
 msgid "Conclusion Quantus L09"
 msgstr ""
 "Формалософы в полном восторге. Когда аплодисменты стихли, у тебя тоже нашёлся вопрос.\n"
@@ -4654,7 +4654,7 @@ msgstr "**Лина**:  Хватит уже §0ть, теперь снова мо
 
 #. §0: $$
 #. \\begin{aligned}
-#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\ %(new line)
+#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\\\ %(new line)
 #. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
 #. \\end{aligned}
 #. $$
@@ -5089,7 +5089,7 @@ msgstr ""
 msgid "Intro Babylon L08"
 msgstr "Из чистого любопытства ты пристально рассматриваешь ещё одну соседнюю башню."
 
-#. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
+#. §0: $$ \\sum_{i = 0}^n (2i + 1) = (n + 1)^2 $$
 #: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:32
 msgid "Try solving §0 by induction"
 msgstr ""
@@ -5620,6 +5620,10 @@ msgstr "**Знайка**:  Это нам точно скоро понадоби�
 msgid "Intro Cantor L11"
 msgstr "**Кантор**:  Теперь всё ясно?"
 
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
+msgid "Conclusion Cantor L11"
+msgstr "**Ты**:  Не знаю, стало ли от этого проще …"
+
 #. §0: `cantor_diagonal`
 #. §1: `surjective_mem_of_surjective`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:35
@@ -5632,22 +5636,18 @@ msgstr ""
 "\n"
 "**Знайка**: Сначала переведём, с помощью §1."
 
+#. §0: `cantor_diagonal`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
+msgid "[Hint mhjv] Try §0"
+msgstr "**Кантор**: Нет-нет! Мы же хотели использовать мою прекрасную теорему §0!"
+
 #. §0: `«{hf}»`
 #. §1: `«{A}» → «{A}» → Prop`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:56
 #, fuzzy
 msgid "[Hint u9e76] Now §0 is about a map §1."
 msgstr "**Знайка**:  Теперь §0 — это утверждение об отображении §1."
-
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
-msgid "Conclusion Cantor L11"
-msgstr "**Ты**:  Не знаю, стало ли от этого проще …"
-
-#. §0: `cantor_diagonal`
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
-#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
-msgid "[Hint mhjv] Try §0"
-msgstr "**Кантор**: Нет-нет! Мы же хотели использовать мою прекрасную теорему §0!"
 
 #. §0: `¬ .`
 #: Game/Levels/Cantor/L11_CantorPowerset.lean:62
@@ -5686,11 +5686,11 @@ msgstr ""
 "\n"
 "**Знайка**: §1"
 
-#: Game/Levels/Cantor.lean:19
+#: Game/Levels/Cantor.lean:20
 msgid "Cantor"
 msgstr "Кантор"
 
-#: Game/Levels/Cantor.lean:39
+#: Game/Levels/Cantor.lean:40
 msgid "Intro Cantor"
 msgstr ""
 "Вы приземлились рядом с большим шатром.\n"
@@ -5760,14 +5760,14 @@ msgstr ""
 #. §15: $$
 #. A_{i,j} \\cdot
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\ %(new line)
-#. 1 & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0\\\\ %(new line)
+#. 1 & 0 & 0 \\\\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. =
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\ %(new line)
-#. A_{i,j} & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0\\\\ %(new line)
+#. A_{i,j} & 0 & 0 \\\\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. $$
@@ -6190,8 +6190,8 @@ msgstr ""
 #. §0: $$
 #. \\begin{aligned}
 #. f(A)
-#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\ %(new line)
-#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\ %(new line)
+#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\\\ %(new line)
+#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\\\ %(new line)
 #. &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
 #. \\end{aligned}
 #. $$
@@ -6350,9 +6350,9 @@ msgstr "**Ты**: Норм. Давай осторожно подойдём по�
 #. §1: $$
 #. \\begin{aligned}
 #. n \\cdot f(E_{i i})
-#. &= \\sum_j f(E_{i i}) \\ %(new line)
-#. &= \\sum_j f(E_{j j}) \\ %(new line)
-#. &= f(1) \\ %(new line)
+#. &= \\sum_j f(E_{i i}) \\\\ %(new line)
+#. &= \\sum_j f(E_{j j}) \\\\ %(new line)
+#. &= f(1) \\\\ %(new line)
 #. &= n
 #. \\end{aligned}
 #. $$
@@ -6723,7 +6723,7 @@ msgstr "**Знайка**: Если чуть-чуть переписать, на�
 #. §0: `a ∣ b`
 #. §1: `∃ k, b = a * k`
 #. §2: `∣`
-#. §3: `\\dvd`
+#. §3: `\\\\dvd`
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:71
@@ -7225,7 +7225,7 @@ msgstr ""
 #. §2: `f : ℤ → ℤ := …`
 #. §3: $$
 #. \\begin{aligned}
-#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\ %(new line)
+#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\ %(new line)
 #. x &\\mapsto x ^ 2
 #. \\end{aligned}
 #. $$
@@ -7776,8 +7776,8 @@ msgstr "**Знайка**: §0?"
 
 #. §0: $$
 #. f(n) = \\begin{cases}
-#. n^2 & \\text{если } n \\text{ четно} \\ %(new line)
-#. n+1 & \\text{в противном случае.}
+#. n^2 & \\text{falls } n \\text{ gerade} \\\\ %(new line)
+#. n+1 & \\text{andernfalls.}
 #. \\end{cases}
 #. $$
 #. §1: `f + f`
