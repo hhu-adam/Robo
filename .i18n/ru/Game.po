@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-27\n"
+"POT-Creation-Date: 2026-11-16\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -79,30 +79,20 @@ msgstr ""
 "\n"
 "§1"
 
-#. §0: `Function.RightInverse f g`
+#. §0: `RightInverse f g`
 #. §1: `LeftInverse g f`
 #. §2: `∀ x, g (f x) = x`
-#. §3: `Function.RightInverse`
-#. §4: `RightInverse`
-#. §5: `RightInverse`
 #: Game/Doc/Definition.lean:43
-#, fuzzy
 msgid ""
 "§0 is defined as §1.\n"
-"In other words: §2.\n"
-"\n"
-"You have to write §3  instead of §4,\n"
-"as §5 is ambigous in Leanic."
+"In other words: §2."
 msgstr ""
-"§0 определено как §1. Иначе говоря, §2.\n"
-"\n"
-"Нужно писать §3 вместо §4, потому что §5 на линише неоднозначно."
 
 #. §0: `LeftInverse g f`
 #. §1: `g ∘ f = id`
 #. §2: `∀ x, g (f x) = x`
 #. §3: `unfold`
-#: Game/Doc/Definition.lean:54
+#: Game/Doc/Definition.lean:51
 #, fuzzy
 msgid ""
 "§0 means §1, or more exactly:\n"
@@ -113,7 +103,7 @@ msgstr "§0 означает §1, точнее: §2, как видно из §3.
 #. §1: `f`
 #. §2: `HasLeftInverse f`
 #. §3: `f`
-#: Game/Doc/Definition.lean:61
+#: Game/Doc/Definition.lean:58
 #, fuzzy
 msgid ""
 "§0 means, that §1 has a right inverse.\n"
@@ -129,7 +119,7 @@ msgstr ""
 #. §2: `IsFixedPt f a`
 #. §3: `f a = a`
 #. §4: `unfold IsFixedPt`
-#: Game/Doc/Definition.lean:69
+#: Game/Doc/Definition.lean:66
 #, fuzzy
 msgid ""
 "For a self-mapping §0 and an element §1, §2 is the expression §3.\n"
@@ -142,7 +132,7 @@ msgstr ""
 #. §1: `fixedPoints f : Set A`
 #. §2: `f `
 #. §3: `unfold fixedPoints`
-#: Game/Doc/Definition.lean:75
+#: Game/Doc/Definition.lean:72
 #, fuzzy
 msgid ""
 "For a mapping §0, §1 is the set of fixed points of §2.\n"
@@ -158,7 +148,7 @@ msgstr ""
 #. §4: `A ∪ B`
 #. §5: `∪`
 #. §6: `\\union`
-#: Game/Doc/Definition.lean:81
+#: Game/Doc/Definition.lean:78
 #, fuzzy
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their union.\n"
@@ -169,13 +159,26 @@ msgstr ""
 "§5 вводится как §6."
 
 #. §0: `A`
+#. §1: `S`
+#. §2: `A : Set S`
+#. §3: `Aᶜ`
+#. §4: `ᶜ`
+#. §5: `\\compl`
+#. §6: `\\^c`
+#: Game/Doc/Definition.lean:84
+msgid ""
+"For subsets §0 of §1 (i.e. §2), §3 is the complement.\n"
+"§4 is written as §5 or §6."
+msgstr ""
+
+#. §0: `A`
 #. §1: `B`
 #. §2: `S`
 #. §3: `A B : Set S`
 #. §4: `A ∩ B`
 #. §5: `∩`
 #. §6: `\\inter`
-#: Game/Doc/Definition.lean:87
+#: Game/Doc/Definition.lean:90
 #, fuzzy
 msgid ""
 "For two subsets §0 and §1 of §2 (i.e. §3), §4 is their intersection.\n"
@@ -197,7 +200,7 @@ msgstr ""
 #. §6: ```
 #. x ∈ range f ↔ ∃ a, f a = b
 #. ```
-#: Game/Doc/Definition.lean:93
+#: Game/Doc/Definition.lean:96
 #, fuzzy
 msgid ""
 "For a mapping §0, §1 is the full image set of §2:\n"
@@ -217,7 +220,7 @@ msgstr ""
 #. §2: `A`
 #. §3: `f '' A`
 #. §4: `f`
-#: Game/Doc/Definition.lean:107
+#: Game/Doc/Definition.lean:110
 #, fuzzy
 msgid ""
 "For a mapping §0, §1\n"
@@ -230,7 +233,7 @@ msgstr "Для отображения §0, §1 — одно из индуцир�
 #. §2: `B`
 #. §3: `f ⁻¹' A`
 #. §4: `f`
-#: Game/Doc/Definition.lean:114
+#: Game/Doc/Definition.lean:117
 #, fuzzy
 msgid ""
 "For a mapping §0, §1\n"
@@ -247,7 +250,7 @@ msgstr "Для отображения §0, §1 — одно из индуцир�
 #. §4: `f`
 #. §5: `f`
 #. §6: `''`
-#: Game/Doc/Definition.lean:122
+#: Game/Doc/Definition.lean:125
 #, fuzzy
 msgid ""
 "For a mapping §0 and a subset §1 of §2,\n"
@@ -269,7 +272,7 @@ msgstr ""
 #. §5: `f \\-1'`
 #. §6: `f`
 #. §7: `\\-1'`
-#: Game/Doc/Definition.lean:131
+#: Game/Doc/Definition.lean:134
 #, fuzzy
 msgid ""
 "For a mapping §0 and a subset §1 of §2,\n"
@@ -293,7 +296,7 @@ msgstr ""
 #. §5: `\\mapsto`
 #. §6: `↦`
 #. §7: `=>`
-#: Game/Doc/Definition.lean:142
+#: Game/Doc/Definition.lean:145
 #, fuzzy
 msgid ""
 "The notation §0 is used to define “anonymous functions.”\n"
@@ -312,7 +315,7 @@ msgstr ""
 #. §2: `T`
 #. §3: `A`
 #. §4: `T`
-#: Game/Doc/Definition.lean:153
+#: Game/Doc/Definition.lean:156
 #, fuzzy
 msgid ""
 "§0 means that §1 is a subset of §2\n"
@@ -330,7 +333,7 @@ msgstr "§0 означает, что §1 — подмножество §2 (ил�
 #. §8: `a ∈ A`
 #. §9: `simp`
 #. §10: `P a`
-#: Game/Doc/Definition.lean:159
+#: Game/Doc/Definition.lean:162
 #, fuzzy
 msgid ""
 "For a subset §0 and an element §1 from §2 (more precisely: of type §3), §4 means that\n"
@@ -351,7 +354,7 @@ msgstr ""
 #. §3: `a ∈ { a : T | P a }`
 #. §4: `simp`
 #. §5: `P a`
-#: Game/Doc/Definition.lean:167
+#: Game/Doc/Definition.lean:170
 #, fuzzy
 msgid ""
 "For a predicate §0, §1 is the subset\n"
@@ -373,7 +376,7 @@ msgstr ""
 #. §3: `B`
 #. §4: `A`
 #. §5: `B`
-#: Game/Doc/Definition.lean:178
+#: Game/Doc/Definition.lean:181
 #, fuzzy
 msgid ""
 "For two subsets §0, §1 is the difference between §2 and §3,\n"
@@ -399,7 +402,7 @@ msgstr "Для двух подмножеств §0, §1 — разность §2
 #. §16: `hb : a ∈ B`
 #. §17: `⊆`
 #. §18: `\\subset`
-#: Game/Doc/Definition.lean:184
+#: Game/Doc/Definition.lean:187
 #, fuzzy
 msgid ""
 "For §0, §1 means that §2 is contained in §3.\n"
@@ -435,7 +438,7 @@ msgstr ""
 #. §5: `∀ (x : T), x ∉ s`
 #. §6: `∅`
 #. §7: `\\emptyset`
-#: Game/Doc/Definition.lean:199
+#: Game/Doc/Definition.lean:202
 #, fuzzy
 msgid ""
 "§0 is the empty subset.\n"
@@ -459,7 +462,7 @@ msgstr ""
 #. §2: `rw [eq_univ_iff_forall]`
 #. §3: `S = univ`
 #. §4: `∀ (x : T), x ∈ S`
-#: Game/Doc/Definition.lean:211
+#: Game/Doc/Definition.lean:214
 #, fuzzy
 msgid ""
 "§0 is the “subset” consisting of *all* elements of type §1.\n"
@@ -478,7 +481,7 @@ msgstr ""
 #. §4: `a`
 #. §5: `A`
 #. §6: `insert a A = A`
-#: Game/Doc/Definition.lean:219
+#: Game/Doc/Definition.lean:222
 #, fuzzy
 msgid ""
 "For a finite subset §0 and an element §1,\n"
@@ -495,7 +498,7 @@ msgstr ""
 #. §4: `a`
 #. §5: `A`
 #. §6: `erase A a = A`
-#: Game/Doc/Definition.lean:226
+#: Game/Doc/Definition.lean:229
 #, fuzzy
 msgid ""
 "For a finite subset §0 and an element §1,\n"
@@ -509,7 +512,7 @@ msgstr ""
 #. §1: `card A : ℕ`
 #. §2: `A`
 #. §3: `A`
-#: Game/Doc/Definition.lean:233
+#: Game/Doc/Definition.lean:236
 #, fuzzy
 msgid ""
 "For a finite subset §0, §1 is the cardinality of §2,\n"
@@ -525,7 +528,7 @@ msgstr "Для конечного подмножества §0, §1 — мощн
 #. §6: `Fin n : Type`
 #. §7: `Icc 0 (n-1) : Finset ℕ`
 #. §8: `ℕ`
-#: Game/Doc/Definition.lean:239
+#: Game/Doc/Definition.lean:242
 #, fuzzy
 msgid ""
 "For §0, §1 is the set §2.\n"
@@ -541,10 +544,69 @@ msgstr ""
 
 #. §0: `Icc a b`
 #. §1: $[a,b]$
-#: Game/Doc/Definition.lean:248
+#: Game/Doc/Definition.lean:251
 #, fuzzy
 msgid "§0 is the closed interval §1."
 msgstr "§0 — замкнутый интервал §1."
+
+#. §0: `Ioo a b`
+#. §1: $(a,b)$
+#: Game/Doc/Definition.lean:256
+msgid "§0 is the open interval §1."
+msgstr ""
+
+#. §0: `Ioi a`
+#. §1: `a`
+#. §2: `ℝ`
+#. §3: $(a,\\infty)$
+#: Game/Doc/Definition.lean:261
+msgid ""
+"In an ordered set, §0 is the subset of all elements greater than §1.\n"
+"For example, in §2 it is the open interval §3."
+msgstr ""
+
+#. §0: `Iio a`
+#. §1: `a`
+#. §2: `ℝ`
+#. §3: $(-\\infty, a)$
+#: Game/Doc/Definition.lean:267
+msgid ""
+"In an ordered ste, §0 is the subset of all elements less than §1.\n"
+"For example, in §2 it is the open interval §3."
+msgstr ""
+
+#. §0: `𝓝 a`
+#. §1: `a`
+#. §2: `𝓝`
+#. §3: `\\nhds`
+#: Game/Doc/Definition.lean:274
+msgid ""
+"§0 is the neighborhood filter: it consists of all neighborhoods of §1.\n"
+"(A set is a neighboorhood of a point a it it contains an open set containing a.)\n"
+"\n"
+"To type the symbol §2, write §3."
+msgstr ""
+
+#. §0: `𝓝[s] a`
+#. §1: `a`
+#. §2: `s`
+#. §3: `𝓝[>] (x : ℝ)`
+#. §4: `𝓝[Set.Ioi x] x`
+#. §5: `x`
+#. §6: `𝓝[≠] x`
+#. §7: `𝓝[{0}ᶜ] 0`
+#: Game/Doc/Definition.lean:281
+msgid ""
+"§0 is the filter of neighborhoods of §1 inside the set §2:\n"
+"it consists of all sets that contain the intersection of s and a neighborhood of a.\n"
+"\n"
+"Two special cases:\n"
+"\n"
+"* §3 is short for §4: the points near §5 that are\n"
+"  *greater* than x\n"
+"* §6 is short for §7: the points near x that are *not equal*\n"
+"  to x"
+msgstr ""
 
 #. §0: `Nonempty`
 #. §1: `T`
@@ -573,7 +635,7 @@ msgstr "§0 — замкнутый интервал §1."
 #. §24: `a : T`
 #. §25: `a ∈ A`
 #. §26: `ha : a ∈ A`
-#: Game/Doc/Definition.lean:256
+#: Game/Doc/Definition.lean:294
 #, fuzzy
 msgid ""
 "[Doc.Definition] Nonempty\n"
@@ -607,7 +669,7 @@ msgstr ""
 #. §3: `h : Set.Finite A`
 #. §4: `h.toFinset : Finset T`
 #. §5: `A`
-#: Game/Doc/Definition.lean:297
+#: Game/Doc/Definition.lean:335
 #, fuzzy
 msgid ""
 "For a subset §0, §1 means that §2 has only a finite number of elements.\n"
@@ -620,7 +682,7 @@ msgstr ""
 #. §0: `(A : Prop)`
 #. §1: `(True : Prop)`
 #. §2: `(False : Prop)`
-#: Game/Doc/Definition.lean:307
+#: Game/Doc/Definition.lean:345
 #, fuzzy
 msgid ""
 "§0 is any statement, without further specification as to whether it is true, false, or\n"
@@ -645,7 +707,7 @@ msgstr ""
 #. §9: `h : A ∧ B`
 #. §10: `h₁ : A`
 #. §11: `h₂ : B`
-#: Game/Doc/Definition.lean:316
+#: Game/Doc/Definition.lean:354
 #, fuzzy
 msgid ""
 "§0 (“and”) is the statement that both §1 and §2 are true.\n"
@@ -683,7 +745,7 @@ msgstr ""
 #. §11: ```
 #. obtain h | h := h
 #. ```
-#: Game/Doc/Definition.lean:330
+#: Game/Doc/Definition.lean:368
 #, fuzzy
 msgid ""
 "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n"
@@ -727,7 +789,7 @@ msgstr ""
 #. §10: `h : A`
 #. §11: `B`
 #. §12: `apply`
-#: Game/Doc/Definition.lean:350
+#: Game/Doc/Definition.lean:388
 #, fuzzy
 msgid ""
 "For §0, §1 is the implication “§2 implies §3.”\n"
@@ -769,7 +831,7 @@ msgstr ""
 #. §13: `h.mp`
 #. §14: `h.mpr`
 #. §15: `mp`
-#: Game/Doc/Definition.lean:365
+#: Game/Doc/Definition.lean:403
 #, fuzzy
 msgid ""
 "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n"
@@ -818,7 +880,7 @@ msgstr ""
 #. §17: `obtain ⟨a, ha⟩ := h`
 #. §18: `a : A`
 #. §19: `ha : P a`
-#: Game/Doc/Definition.lean:382
+#: Game/Doc/Definition.lean:420
 #, fuzzy
 msgid ""
 "Existential quantifier: If §0 is a predicate, then\n"
@@ -879,7 +941,7 @@ msgstr ""
 #.    h_exists : P a
 #.    h_unique : ∀ (y : A), P y → y = a
 #. ```
-#: Game/Doc/Definition.lean:401
+#: Game/Doc/Definition.lean:439
 #, fuzzy
 msgid ""
 "Existential quantifier: If §0 is a predicate, then\n"
@@ -952,7 +1014,7 @@ msgstr ""
 #. §17: `a`
 #. §18: `h : P a₀`
 #. §19: `a₀`
-#: Game/Doc/Definition.lean:436
+#: Game/Doc/Definition.lean:474
 #, fuzzy
 msgid ""
 "Universal quantifier: If §0 is a predicate, then\n"
@@ -986,7 +1048,7 @@ msgstr ""
 #. §4: `True`
 #. §5: `True`
 #. §6: `True`
-#: Game/Doc/Definition.lean:450
+#: Game/Doc/Definition.lean:488
 #, fuzzy
 msgid ""
 "The statement §0 is always true.\n"
@@ -1022,7 +1084,7 @@ msgstr ""
 #. §10: `False`
 #. §11: `False`
 #. §12: `contradiction`
-#: Game/Doc/Definition.lean:463
+#: Game/Doc/Definition.lean:501
 #, fuzzy
 msgid ""
 "The statement §0 is always false.\n"
@@ -1064,7 +1126,7 @@ msgstr ""
 #. §7: `h : ¬ A`
 #. §8: `apply`
 #. §9: `False`
-#: Game/Doc/Definition.lean:482
+#: Game/Doc/Definition.lean:520
 #, fuzzy
 msgid ""
 "§0 is the logical negation of §1.\n"
@@ -1085,7 +1147,7 @@ msgstr ""
 #. §0: `rfl`
 #. §1: `rw`
 #. §2: `trans`
-#: Game/Doc/Definition.lean:491
+#: Game/Doc/Definition.lean:529
 #, fuzzy
 msgid "Useful tactics for equality are: §0, §1, §2"
 msgstr ""
@@ -1097,7 +1159,7 @@ msgstr ""
 #. §0: `x ≠ y`
 #. §1: `¬ x = y`
 #. §2: `unfold Ne`
-#: Game/Doc/Definition.lean:496
+#: Game/Doc/Definition.lean:534
 #, fuzzy
 msgid "Inequality §0 is defined as §1.  You can see this with §2."
 msgstr "Неравенство §0 определено как §1. Определение дает §2."
@@ -1108,7 +1170,7 @@ msgstr "Неравенство §0 определено как §1. Опреде
 #. ∃ r : ℕ, n = r + r
 #. ```
 #. §3: `unfold Even`
-#: Game/Doc/Definition.lean:504
+#: Game/Doc/Definition.lean:542
 #, fuzzy
 msgid ""
 "§0 is the statement that §1 is even:\n"
@@ -1125,7 +1187,7 @@ msgstr ""
 #. ∃ k : ℕ, n = 2 * k + 1
 #. ```
 #. §3: `unfold Odd`
-#: Game/Doc/Definition.lean:513
+#: Game/Doc/Definition.lean:551
 #, fuzzy
 msgid ""
 "§0 is the statement that §1 is odd:\n"
@@ -1140,7 +1202,7 @@ msgstr ""
 #. §1: `Prime n`
 #. §2: `n`
 #. §3: `prime_def`
-#: Game/Doc/Definition.lean:522
+#: Game/Doc/Definition.lean:560
 #, fuzzy
 msgid ""
 "For §0, §1 means that §2 is a prime number.\n"
@@ -1152,7 +1214,7 @@ msgstr ""
 
 #. §0: `succ : ℕ → ℕ`
 #. §1: `n ↦ n + 1`
-#: Game/Doc/Definition.lean:529
+#: Game/Doc/Definition.lean:567
 #, fuzzy
 msgid ""
 "§0 is the mapping §1.\n"
@@ -1168,7 +1230,7 @@ msgstr ""
 #. §4: `n : ℕ`
 #. §5: `(n : ℤ)`
 #. §6: `↑n`
-#: Game/Doc/Definition.lean:535
+#: Game/Doc/Definition.lean:573
 #, fuzzy
 msgid ""
 "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n"
@@ -1191,7 +1253,7 @@ msgstr ""
 #. §1: `|x|`
 #. §2: `x`
 #. §3: `|`
-#: Game/Doc/Definition.lean:548
+#: Game/Doc/Definition.lean:586
 #, fuzzy
 msgid ""
 "For §0, §1 is the absolute value of §2.\n"
@@ -1205,7 +1267,7 @@ msgstr ""
 #. §1: `∑ i ∈ I, f i`
 #. §2: $\\sum_{i\\in I} f(i)$
 #. §3: `\\sum`
-#: Game/Doc/Definition.lean:562
+#: Game/Doc/Definition.lean:600
 #, fuzzy
 msgid ""
 "For a finite index set §0, §1 is Leanic notation for the sum\n"
@@ -1219,7 +1281,7 @@ msgstr ""
 #. §1: `∏ i ∈ I, f i`
 #. §2: $\\prod_{i\\in I} f(i)$
 #. §3: `\\prod`
-#: Game/Doc/Definition.lean:568
+#: Game/Doc/Definition.lean:606
 #, fuzzy
 msgid ""
 "For a finite index set §0, §1 is the Leanic notation for the product\n"
@@ -1229,29 +1291,377 @@ msgstr ""
 "\n"
 "Знак произведения пишется как §3."
 
-#. §0: `P : MvPolynomial (Fin n) R`
-#. §1: `P`
-#. §2: `n`
-#. §3: `X 0`
-#. §4: `X (n-1)`
-#. §5: `R`
-#: Game/Doc/Definition.lean:575
-#, fuzzy
+#. §0: `R`
+#. §1: `Polynomial R`
+#. §2: `R[X]`
+#. §3: `X`
+#. §4: `R`
+#: Game/Doc/Definition.lean:613
 msgid ""
-"§0 means that §1 is a polynomial in §2 indeterminates\n"
-"§3, …, §4 with coefficients in §5."
-msgstr "§0 означает, что §1 — многочлен от §2 неопределённых §3, …, §4 с коэффициентами в §5."
+"Let §0 be a semiring. §1 (or §2 within the Polynomial namespace) is the semiring of\n"
+"univariate polynomials in one variable §3 and coefficients in §4."
+msgstr ""
+
+#. §0: `X`
+#. §1: `R[X]`
+#: Game/Doc/Definition.lean:619
+msgid "§0 is the polynomial variable in the polynomial ring §1."
+msgstr ""
+
+#. §0: `MvPolynomial (Fin n) R`
+#. §1: `n`
+#. §2: `X 0`
+#. §3: `X (n-1)`
+#. §4: `R`
+#. §5: $X_0$
+#. §6: $X_{n-1}$
+#: Game/Doc/Definition.lean:624
+msgid ""
+"§0 is the ring of multivariate polynomials in §1 indeterminates\n"
+"§2, …, §3 with coefficients in §4.\n"
+"(We usually write these indeterminates as §5, …, §6.)"
+msgstr ""
+
+#. §0: `X i`
+#. §1: `i : Fin n`
+#. §2: $X_i$
+#. §3: `MvPolynomial (Fin n) R`
+#: Game/Doc/Definition.lean:631
+msgid ""
+"§0, for §1, is the degree-one monomial §2 in the multivariate polynomial ring\n"
+"§3."
+msgstr ""
 
 #. §0: `A`
 #. §1: `trace A`
 #. §2: `A`
 #. §3: `∑ i, A i i`
-#: Game/Doc/Definition.lean:581
+#: Game/Doc/Definition.lean:637
 #, fuzzy
 msgid "For a matrix §0, §1 is the trace of §2. The expression is also equivalent to §3 in Leanic."
 msgstr ""
 "Для матрицы §0, §1 — след (trace) §2.\n"
 "На линише это выражение также равносильно §3."
+
+#. §0: `s`
+#. §1: `T`
+#. §2: `s : Set T`
+#. §3: `b`
+#. §4: `b : T`
+#. §5: `b ∈ upperBounds s`
+#. §6: `s ≤ b`
+#: Game/Doc/Definition.lean:642
+msgid ""
+"Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
+"§5 means that b is an *upper bound* of s: §6 for every element\n"
+"of s."
+msgstr ""
+
+#. §0: `s`
+#. §1: `T`
+#. §2: `s : Set T`
+#. §3: `BddAbove s`
+#. §4: `b`
+#. §5: `b : T`
+#. §6: `b ∈ upperBounds s`
+#: Game/Doc/Definition.lean:649
+msgid ""
+"For subset §0 of a set §1 (§2), §3 means that\n"
+"there exists some §4 in T (§5) such that §6."
+msgstr ""
+
+#. §0: `sSup s`
+#. §1: `s`
+#. §2: `s`
+#. §3: `T`
+#. §4: `s : Set T`
+#. §5: `s`
+#: Game/Doc/Definition.lean:655
+msgid ""
+"§0 is the supremum of §1.  Here §2 is a subset of some ordered set §3 (§4),\n"
+"and §5 is assumed to be bounded above."
+msgstr ""
+
+#. §0: `s`
+#. §1: `closure s`
+#: Game/Doc/Definition.lean:661
+msgid "For a subset §0 of a topological space, §1 denotes the closure of s."
+msgstr ""
+
+#. §0: `IsLocallyConstant f`
+#. §1: `f`
+#. §2: `f`
+#: Game/Doc/Definition.lean:664
+msgid ""
+"§0 says that every point has a neighborhood on which §1 is\n"
+"constant; it is defined as: the preimage of every set under §2 is open."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `α`
+#. §2: `Filter.inter_mem`
+#. §3: `Filter.mem_of_superset`
+#. §4: `univ`
+#. §5: `Filter.univ_mem`
+#. §6: `𝓝 a`
+#. §7: `a`
+#. §8: `a : ℝ`
+#: Game/Doc/Definition.lean:668
+msgid ""
+"A *filter* §0 on a type §1 is a collection of subsets of α that\n"
+"- is closed under intersection (§2),\n"
+"- is upward closed (§3), and\n"
+"- contains §4 (§5),\n"
+"\n"
+"\n"
+"An intuition is to think of 𝓕 as a *generalized point*:\n"
+"it collects all the sets that contain this (would-be) point.\n"
+"\n"
+"One example is the *neighborhood filter* §6 of a real number §7, §8:\n"
+"it consists of all sets that contain every number sufficiently close to a, and so describes the\n"
+"point a together with its immediate surroundings."
+msgstr ""
+
+#. §0: `𝓟 s`
+#. §1: `s`
+#. §2: `s`
+#: Game/Doc/Definition.lean:683
+msgid "The *principal filter* §0 of a set §1 consists of all sets containing §2."
+msgstr ""
+
+#. §0: `atTop`
+#. §1: `ℝ`
+#. §2: `x ≥ b`
+#. §3: `b`
+#: Game/Doc/Definition.lean:686
+msgid ""
+"§0 is the filter on §1 consisting of all sets that contain every sufficiently large\n"
+"number — sets that contain all §2 for some bound §3.\n"
+"Think of it as the generalized point 'at infinity'."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `Tendsto f (𝓝 a) (𝓝 b)`
+#. §3: `f x`
+#. §4: `b`
+#. §5: `x`
+#. §6: `a`
+#. §7: $\\lim_{x \\to a} f(x) = b$
+#. §8: `Tendsto`
+#. §9: `Tendsto f (𝓝[≠] a) (𝓝 b)`
+#. §10: `a`
+#. §11: `x ≠ a`
+#. §12: `f a`
+#. §13: `Tendsto f (𝓝[>] a) (𝓝 b)`
+#. §14: `Tendsto f (𝓝[<] a) (𝓝 b)`
+#: Game/Doc/Definition.lean:691
+msgid ""
+"For a function §0, §1,\n"
+"§2 says that §3 approaches §4 as §5 approaches §6 —\n"
+"in usual notation, §7.\n"
+"\n"
+"Combining §8 with the restricted neighborhoods gives the limit notions\n"
+"from calculus:\n"
+"\n"
+"* §9 only looks at points near §10 with §11,\n"
+"  so the value §12 itself plays no role — this is the usual limit.\n"
+"* §13 and §14 describe the\n"
+"  one-sided limits from the right and from the left."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `∀ᶠ x in 𝓕, p x`
+#. §2: `p x`
+#. §3: `{x | p x}`
+#: Game/Doc/Definition.lean:705
+msgid ""
+"For a filter §0, §1 says that §2 holds eventually,\n"
+"i.e. the set §3 is a member of 𝓕."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `f =ᶠ[𝓕] g`
+#. §2: `f x = g x`
+#. §3: `{ x | f x = g x}`
+#: Game/Doc/Definition.lean:709
+msgid ""
+"For a filter §0, §1 says that §2 eventually,\n"
+"i.e. the set §3 is a member of 𝓕."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `x`
+#. §3: `y`
+#. §4: `x y : ℝ`
+#. §5: `slope f x y`
+#. §6: $$
+#. \\frac{f (x) - f (y)}{y - x}
+#. $$
+#. §7: `rw`
+#. §8: `slope_def_field`
+#. §9: `rw [slope_def_field]`
+#: Game/Doc/Definition.lean:713
+msgid ""
+"For a function §0, §1, and two points §2, §3, §4,\n"
+"§5 is the slope of f between these points:\n"
+"§6\n"
+"You can see this by §7ing with §8 (§9)."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `x`
+#. §3: `x : ℝ`
+#. §4: `a`
+#. §5: `a : ℝ`
+#. §6: `HasDerivAt f a x`
+#. §7: $f'(x) = a$
+#. §8: `rw`
+#. §9: `hasDerivAt_iff_tendsto_slope`
+#. §10: `rw [hasDerivAt_iff_tendsto_slope]`
+#. §11: `slope`
+#: Game/Doc/Definition.lean:723
+msgid ""
+"For a function §0, §1, a point §2, §3 and §4, §5,\n"
+"§6 means that the derivative of f at x exists and is equal to a.\n"
+"We would usually write something like §7.\n"
+"\n"
+"You can §8 with §9 (§10)\n"
+"to expand this into the usual definition of the derivative in terms of the §11 of f."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `n`
+#. §3: `n : ℕ`
+#. §4: `iteratedDeriv n f`
+#. §5: `ℝ → ℝ`
+#: Game/Doc/Definition.lean:733
+msgid ""
+"For a function §0, §1 and §2, §3, §4 is the n-th derivative of f,\n"
+"as a function §5, if it exists.\n"
+"\n"
+"Careful: if the n-th derivative does not exist, this is defined as the zero function."
+msgstr ""
+
+#. §0: `p.eval a`
+#. §1: `p`
+#. §2: `a`
+#. §3: `a`
+#. §4: `X`
+#: Game/Doc/Definition.lean:741
+msgid ""
+"§0 evaluates the polynomial §1 at the point §2, substituting\n"
+"§3 for the variable §4."
+msgstr ""
+
+#. §0: `Real.exp x`
+#. §1: $e^x$
+#: Game/Doc/Definition.lean:745
+msgid "§0 is the exponential function §1."
+msgstr ""
+
+#. §0: `p`
+#. §1: `derivative p`
+#. §2: `p.derivative`
+#: Game/Doc/Definition.lean:748
+msgid ""
+"For a polynomial §0, §1 (also written §2) is its\n"
+"formal derivative."
+msgstr ""
+
+#. §0: `f`
+#. §1: `ContDiff f`
+#: Game/Doc/Definition.lean:758
+msgid "For a map §0 between topological space, §1 means that f is continuous."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `n`
+#. §3: `n : ℕ`
+#. §4: `ContDiff ℝ n f`
+#. §5: $f \\in C^n$
+#. §6: `ContDiff ℝ ∞ f`
+#. §7: $f \\in C^\\infty$
+#: Game/Doc/Definition.lean:763
+msgid ""
+"For a function §0, §1 and §2, §3, §4 means that f is n times\n"
+"continuously differentiable, i.e. §5.\n"
+"In particular, §6 means that f can be differentiated arbitrarily often,\n"
+"i.e. that f is *smooth* (§7)."
+msgstr ""
+
+#. §0: `rexp`
+#. §1: `exp`
+#. §2: `Real.exp`
+#. §3: `ℝ → ℝ`
+#. §4: $x ↦ e^x$
+#: Game/Doc/Definition.lean:771
+msgid ""
+"§0, §1 and §2 each denote the exponential function §3\n"
+"(otherwise commonly denoted as §4)"
+msgstr ""
+
+#. §0: `α`
+#. §1: `β`
+#. §2: `α ≃ β`
+#. §3: `Equiv α β`
+#. §4: `α → β`
+#. §5: `f : α ≃ β`
+#. §6: `f.toFun`
+#. §7: `f.toFun : α → β`
+#. §8: `f.invFun`
+#. §9: `f.invFun : β → α`
+#. §10: `left_inv`
+#. §11: `right_inv`
+#. §12: `f.symm`
+#. §13: `f.symm : β ≃ α`
+#. §14: `α → β`
+#. §15: `β → α`
+#: Game/Doc/Definition.lean:776
+msgid ""
+"For types §0 and §1, §2 or (§3) is the type of functions from §4 with a\n"
+"two-sided inverse.  A term §5 has four components:\n"
+"a map §6 (§7), a map §8 (§9),\n"
+"and proofs §10 and §11 that these are mutually inverse.\n"
+"\n"
+"The inverse equivalence is called §12 (§13).\n"
+"\n"
+"You don't usually have to write out f.toFun to refer to the map §14 – you can use coercion and\n"
+"simply write f.\n"
+"Similarly, the recommended spelling of the map §15 is f.symm."
+msgstr ""
+
+#. §0: `f : A → B → C`
+#. §1: `Function.uncurry f : A × B → C`
+#. §2: `uncurry f (a, b) = f a b`
+#. §3: `Function.curry`
+#. §4: `Function.curry_uncurry`
+#. §5: `Function.uncurry_curry`
+#: Game/Doc/Definition.lean:790
+msgid ""
+"For a function of two arguments §0, §1 is the\n"
+"function of a single pair-shaped argument with §2.\n"
+"\n"
+"Its inverse is §3, see §4 and §5."
+msgstr ""
+
+#. §0: `f : A × B → C`
+#. §1: `Function.curry f : A → B → C`
+#. §2: `curry f a b = f (a, b)`
+#. §3: `Function.uncurry`
+#. §4: `Function.curry_uncurry`
+#. §5: `Function.uncurry_curry`
+#: Game/Doc/Definition.lean:798
+msgid ""
+"For a function of a single pair-shaped argument §0, §1\n"
+"is the function of two arguments with §2.\n"
+"\n"
+"Its inverse is §3, see §4 and §5."
+msgstr ""
 
 #. §0: `apply`
 #. §1: `hAB : A → B`
@@ -1297,51 +1707,61 @@ msgstr "Тактика §0 завершает доказательство, ес
 #. §4: `a ≠ b`
 #. §5: `(h : P)`
 #. §6: `(h : ¬P)`
+#. §7: `by_cases! h : P`
+#. §8: `by_cases h : P`
+#. §9: `push Not at h`
+#. §10: `by_cases! h : a < b`
+#. §11: `h : a < b`
+#. §12: `h : b ≤ a`
+#. §13: `by_cases! h : a ≠ b`
+#. §14: `h : a ≠ b`
+#. §15: `h : a = b`
 #: Game/Doc/Tactic.lean:21
-#, fuzzy
 msgid ""
 "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
 "For example, §2 distinguishes between the cases §3 and §4.\n"
 "\n"
 "The proof goal is duplicated for this purpose, and\n"
 "the assumption §5 is added to the first “copy,”\n"
-"while the assumption §6 is added to the second “copy.”"
-msgstr ""
-"Тактика §0 начинает разбор случаев: §1 истинно и §1 ложно.\n"
-"Например, §2 различает случаи §3 и §4.\n"
+"while the assumption §6 is added to the second “copy.”\n"
 "\n"
-"Для этого цель дублируется. В первую «копию» добавляется предположение §5, а во вторую — предположение §6."
+"## Variants\n"
+"\n"
+"* §7 additionally pushes the negation inside the assumption of the second case:\n"
+"it has the same effect as §8 followed by §9 in the second case.\n"
+"For example, §10 distinguishes between §11 and §12,\n"
+"and §13 distinguishes between §14 and §15."
+msgstr ""
 
 #. §0: `by_contra h`
 #. §1: `P`
 #. §2: `by_contra h`
 #. §3: `(h : ¬ P)`
 #. §4: `False`
-#. §5: `contradiction`
-#. §6: `A → B`
-#. §7: `contrapose`
-#: Game/Doc/Tactic.lean:31
-#, fuzzy
+#. §5: `by_contra! h`
+#. §6: `by_contra h`
+#. §7: `push Not at h`
+#. §8: `contradiction`
+#. §9: `A → B`
+#. §10: `contrapose`
+#: Game/Doc/Tactic.lean:38
 msgid ""
 "The tactic §0 initiates a proof by contradiction.\n"
 "If §1 is your current proof goal, §2 generates a new assumption §3\n"
 "and sets the proof goal to §4.\n"
 "\n"
+"## Variants\n"
+"\n"
+"* §5 additionally pushes the negation inside the new assumption:\n"
+"it has the same effect as §6 followed by §7.\n"
+"\n"
 "## Friends and relatives\n"
 "\n"
-"* At the end of a proof by contradiction, there is usually §5:\n"
+"* At the end of a proof by contradiction, there is usually §8:\n"
 "this tactic closes the proof when it finds two obviously contradictory assumptions.\n"
-"* If the proof goal is of the form §6, you can use §7\n"
+"* If the proof goal is of the form §9, you can use §10\n"
 "to start a proof by contraposition."
 msgstr ""
-"Тактика §0 запускает доказательство от противного.\n"
-"Если текущая цель — §1, то §2 создаёт новое предположение §3 и меняет цель на §4.\n"
-"\n"
-"## Аналоги и связи\n"
-"\n"
-"* В конце доказательства от противного обычно стоит §5:\n"
-"эта тактика завершает доказательство, если находит два предположения, прямо противоречащих друг другу.\n"
-"* Если цель имеет вид §6, то доказательство от противного можешь начать с помощью §7."
 
 #. §0: ```
 #. h : ∃ (b : B), P b
@@ -1359,7 +1779,7 @@ msgstr ""
 #. §9: `P : A → (B → Prop)`
 #. §10: `a`
 #. §11: `b`
-#: Game/Doc/Tactic.lean:67
+#: Game/Doc/Tactic.lean:79
 #, fuzzy
 msgid ""
 "An assumption of the form\n"
@@ -1396,7 +1816,7 @@ msgstr ""
 #. §8: `A ∨ B`
 #. §9: `left`
 #. §10: `right`
-#: Game/Doc/Tactic.lean:87
+#: Game/Doc/Tactic.lean:99
 #, fuzzy
 msgid ""
 "The §0 tactic breaks down a proof goal into its constituent parts:\n"
@@ -1430,7 +1850,7 @@ msgstr ""
 #. §4: `h : False`
 #. §5: `contradiction`
 #. §6: `by_contra`
-#: Game/Doc/Tactic.lean:102
+#: Game/Doc/Tactic.lean:114
 #, fuzzy
 msgid ""
 "The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\n"
@@ -1461,7 +1881,7 @@ msgstr ""
 #. §2: `¬B → ¬A`
 #. §3: `revert h`
 #. §4: `contrapose`
-#: Game/Doc/Tactic.lean:117
+#: Game/Doc/Tactic.lean:129
 #, fuzzy
 msgid ""
 "The tactic §0 changes a proof goal of the form §1 to §2, thereby\n"
@@ -1487,7 +1907,7 @@ msgstr ""
 #. §4: ```
 #. x ∈ A ↔ x ∈ B
 #. ```
-#: Game/Doc/Tactic.lean:134
+#: Game/Doc/Tactic.lean:146
 #, fuzzy
 msgid ""
 "Two subsets of a given set are equal if they have the same elements.\n"
@@ -1503,6 +1923,22 @@ msgstr ""
 "стоит равенство двух подмножеств §1 (то есть §2), то §3 превращает цель в эквивалентность\n"
 "§4"
 
+#. §0: `fin_cases i`
+#. §1: `i`
+#. §2: `fin_cases i`
+#. §3: `(i : Fin n)`
+#. §4: `fin_cases i`
+#: Game/Doc/Tactic.lean:160
+msgid ""
+"§0 führt eine Fallunterscheidung, wenn §1 ein endlicher Typ ist.\n"
+"\n"
+"## Details\n"
+"§2 ist insbesondere nützlich für §3, zum Beispiel als Index in\n"
+"endlich dimensionalen Vektorräumen.\n"
+"\n"
+"In diesem Fall bewirkt §4, dass du komponentenweise arbeitest."
+msgstr ""
+
 #. §0: ```
 #. f = g
 #. ```
@@ -1511,7 +1947,7 @@ msgstr ""
 #. §3: ```
 #. f x = g x
 #. ```
-#: Game/Doc/Tactic.lean:160
+#: Game/Doc/Tactic.lean:171
 #, fuzzy
 msgid ""
 "Two mappings with the same range and domain are equal if\n"
@@ -1543,7 +1979,7 @@ msgstr ""
 #. A ∨ ¬A
 #. ```
 #. §8: `tauto`
-#: Game/Doc/Tactic.lean:175
+#: Game/Doc/Tactic.lean:186
 #, fuzzy
 msgid ""
 "With §0, you can generalize a proof goal\n"
@@ -1574,24 +2010,44 @@ msgstr ""
 "§7\n"
 "(а потом доказать с помощью §8)."
 
+#. §0: `grind`
+#. §1: `grind [h₁, h₂]`
+#. §2: `h₁`
+#. §3: `h₂`
+#. §4: `@[grind]`
+#. §5: `grind only [h₁, h₂]`
+#. §6: `simp`
+#: Game/Doc/Tactic.lean:210
+msgid ""
+"The §0 tactic is a powerful automation tactic.\n"
+"It tries to close the proof goal by combining several techniques,\n"
+"including case splitting, congruence closure, and arithmetic reasoning.\n"
+"It can often finish goals that would otherwise require several manual steps.\n"
+"\n"
+"## Variants\n"
+"\n"
+"* §1 uses the assumptions or lemmas §2 and §3\n"
+"    in addition to lemmas marked with §4 in mathlib\n"
+"* §5 exclusively uses the given lemmas\n"
+"\n"
+"## Friends and relatives\n"
+"\n"
+"* §6 simplifies the goal step by step using rewrite lemmas,\n"
+"  but does not perform case splits."
+msgstr ""
+
 #. §0: `have h : P`
 #. §1: `suffices h : P`
-#: Game/Doc/Tactic.lean:199
-#, fuzzy
+#: Game/Doc/Tactic.lean:229
 msgid ""
 "With §0, you introduce an intermediate result.\n"
 "You must then prove this intermediate result\n"
 "before you can continue with the actual proof.\n"
 "\n"
-"## Friends and relatives\n"
+"## Related\n"
 "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
 "only have to prove your intermediate result at the very end."
 msgstr ""
-"С помощью §0 вводится промежуточный результат.\n"
-"После этого сначала необходимо доказать его, а затем — продолжить основное доказательство.\n"
-"\n"
-"## Аналоги и связи\n"
-"§1 работает так же, только ты можешь сначала продолжить основное доказательство, а промежуточный результат доказать потом."
 
 #. §0: `if … then … else`
 #. §1: `fun x ↦ if 0 ≤ x then x else -x`
@@ -1603,7 +2059,7 @@ msgstr ""
 #. §7: `rw [if_neg h]`
 #. §8: `if A then B else C`
 #. §9: `C`
-#: Game/Doc/Tactic.lean:214
+#: Game/Doc/Tactic.lean:244
 #, fuzzy
 msgid ""
 "With §0, you can define mappings with two branches of definition.\n"
@@ -1641,7 +2097,7 @@ msgstr ""
 #. §12: `Nat.succ d`
 #. §13: `zero_eq`
 #. §14: `Nat.succ_eq_add_one`
-#: Game/Doc/Tactic.lean:228
+#: Game/Doc/Tactic.lean:258
 #, fuzzy
 msgid ""
 "The tactic §0 performs an inductive proof over §1.\n"
@@ -1693,7 +2149,7 @@ msgstr ""
 #. §19: `⊢ P x`
 #. §20: `revert h`
 #. §21: `intro h`
-#: Game/Doc/Tactic.lean:266
+#: Game/Doc/Tactic.lean:296
 #, fuzzy
 msgid ""
 "The tactic §0 is used for   proof goals of the form §1 or §2.\n"
@@ -1729,7 +2185,7 @@ msgstr ""
 #. §0: `A ∨ B`
 #. §1: `left`
 #. §2: `right`
-#: Game/Doc/Tactic.lean:284
+#: Game/Doc/Tactic.lean:314
 #, fuzzy
 msgid ""
 "If the proof target is of the form §0, you choose §1 to show the left side.\n"
@@ -1749,7 +2205,7 @@ msgstr ""
 #. §2: `let x := …`
 #. §3: `x`
 #. §4: `simp only [x]`
-#: Game/Doc/Tactic.lean:293
+#: Game/Doc/Tactic.lean:323
 #, fuzzy
 msgid ""
 "The §0 tactic introduces a temporary definition, for example\n"
@@ -1772,7 +2228,7 @@ msgstr ""
 #. h : n < x ∨ ¬m ≤ x
 #. ```
 #. §4: `linarith`
-#: Game/Doc/Tactic.lean:313
+#: Game/Doc/Tactic.lean:343
 #, fuzzy
 msgid ""
 "The tactic §0 can show that a linear equation or inequality follows from given equations or inequalities.\n"
@@ -1801,7 +2257,7 @@ msgstr ""
 #. §1: `ℕ`
 #. §2: `ℤ`
 #. §3: `linarith`
-#: Game/Doc/Tactic.lean:333
+#: Game/Doc/Tactic.lean:363
 #, fuzzy
 msgid ""
 "The tactic §0 can show that a linear equation or inequality in §1 or §2\n"
@@ -1831,7 +2287,7 @@ msgstr ""
 #. §13: `not_forall`
 #. §14: `not_exists`
 #. §15: `rw`
-#: Game/Doc/Tactic.lean:343
+#: Game/Doc/Tactic.lean:373
 #, fuzzy
 msgid ""
 "The tactic §0 or §1 (§2, §3, §4)  pushes negation past quantifiers:\n"
@@ -1892,7 +2348,7 @@ msgstr ""
 #. §21: `\\>`
 #. §22: `⟨_, _⟩`
 #. §23: $(G, 0, +)$
-#: Game/Doc/Tactic.lean:367
+#: Game/Doc/Tactic.lean:397
 #, fuzzy
 msgid ""
 "The §0 tactic breaks down an assumption into its individual parts.\n"
@@ -1924,6 +2380,41 @@ msgstr ""
 "Здесь §22 — *анонимный конструктор*.\n"
 "Можешь примерно представлять его как обозначение кортежа в «абелева группа — кортеж §23 такой, что …»."
 
+#. §0: `refine ⟨..⟩`
+#. §1: `A ≃ B`
+#. §2: `⟨..⟩`
+#. §3: `?_`
+#. §4: `A ≃ B`
+#. §5: `toFun : A → B`
+#. §6: `invFun : B → A`
+#. §7: `left_inv`
+#. §8: `right_inv`
+#. §9: `f : A → B`
+#. §10: `g : B → A`
+#. §11: `⊢ A ≃ B`
+#. §12: ```
+#. refine ⟨f, g, ?_, ?_⟩
+#. ```
+#. §13: `⊢ LeftInverse g f`
+#. §14: `⊢ RightInverse g f`
+#: Game/Doc/Tactic.lean:432
+msgid ""
+"Tactic §0 splits a proof goal that asks for a *structure* — for example an\n"
+"equivalence §1 — into one proof goal per field that you do not fill in yourself.\n"
+"\n"
+"Inside the anonymous constructor §2 you list the fields of the structure in order.\n"
+"Each field you write as §3 becomes a new proof goal, the fields you supply directly\n"
+"do not.\n"
+"\n"
+"## Example\n"
+"\n"
+"An equivalence §4 consists of a map §5, a backwards map §6,\n"
+"and two proofs §7 and §8 that these undo each other.\n"
+"So for given maps §9 and §10, the proof goal §11 is turned by\n"
+"§12\n"
+"into the two proof goals §13 and §14."
+msgstr ""
+
 #. §0: `revert h`
 #. §1: `h`
 #. §2: `h : A`
@@ -1931,7 +2422,7 @@ msgstr ""
 #. §4: `⊢ A → B`
 #. §5: `intro h`
 #. §6: `revert h`
-#: Game/Doc/Tactic.lean:402
+#: Game/Doc/Tactic.lean:452
 #, fuzzy
 msgid ""
 "The tactic §0 adds the assumption §1 as an implication premise to the proof goal:\n"
@@ -1954,7 +2445,7 @@ msgstr ""
 #. §3: `A = B`
 #. §4: `A`
 #. §5: `B`
-#: Game/Doc/Tactic.lean:413
+#: Game/Doc/Tactic.lean:463
 #, fuzzy
 msgid ""
 "The tactic §0 proves §1.  More precisely, §2 closes every proof target of the form §3,\n"
@@ -1966,7 +2457,7 @@ msgstr ""
 #. §0: `A ∨ B`
 #. §1: `right`
 #. §2: `left`
-#: Game/Doc/Tactic.lean:420
+#: Game/Doc/Tactic.lean:470
 #, fuzzy
 msgid ""
 "If the proof target is of the form §0, you choose §1 to show the right side.\n"
@@ -1983,7 +2474,7 @@ msgstr ""
 
 #. §0: `ring`
 #. §1: `+, -, *, ^`
-#: Game/Doc/Tactic.lean:429
+#: Game/Doc/Tactic.lean:479
 #, fuzzy
 msgid ""
 "The §0 tactic proves equations with the operations §1 in semirings,\n"
@@ -2022,7 +2513,7 @@ msgstr "Тактика §0 доказывает равенства с опера
 #. §25: `f a + 2*b > f a`
 #. §26: `nth_rw 2 [h]`
 #. §27: `2*a + f b > 2*a`
-#: Game/Doc/Tactic.lean:437
+#: Game/Doc/Tactic.lean:487
 #, fuzzy
 msgid ""
 "If you have given an equation §0 or an equivalence §1 as an assumption or lemma,\n"
@@ -2080,7 +2571,7 @@ msgstr ""
 #. §10: `f`
 #. §11: `g`
 #. §12: `simp?`
-#: Game/Doc/Tactic.lean:465
+#: Game/Doc/Tactic.lean:515
 #, fuzzy
 msgid ""
 "The §0 tactic attempts to apply a large number of lemmas to simplify a given expression.\n"
@@ -2103,6 +2594,24 @@ msgstr ""
 "\n"
 "*(В жизни §0 куда мощнее, чем в игре: §0 пытается применить все леммы, которые в §1 помечены соответствующим образом с помощью §3, а их много! Среди них есть и леммы, которые решили бы некоторые из заданий игры за один шаг. Поэтому в игре разрешено лишь небольшое подмножество таких лемм.)*"
 
+#. §0: `simp_rw`
+#. §1: `rw`
+#. §2: `simp_rw [h₁, h₂, h₃]`
+#. §3: `h₁`
+#. §4: `h₂`
+#. §5: `h₃`
+#. §6: `simp only []`
+#: Game/Doc/Tactic.lean:528
+msgid ""
+"§0 is a stronger form of §1.\n"
+"§2 attempts to rewrite with each of §3, §4, §5, in this order.\n"
+"The main differences to a plain rw are:\n"
+"\n"
+"* simp_rw applies each lemma/hypothesis as often as possible.\n"
+"* simp_rw is better at rewriting under quantifiers and binders.\n"
+"* simp_rw follows each step with §6"
+msgstr ""
+
 #. §0: `specialize h a₁ a₂`
 #. §1: `have h := h a₁ a₂`
 #. §2: `h : ∀ m₁ m₂, P m₁ m₂`
@@ -2121,7 +2630,7 @@ msgstr ""
 #. ha : P a₁ a₂
 #. hb : P b₁ b₂
 #. ```
-#: Game/Doc/Tactic.lean:494
+#: Game/Doc/Tactic.lean:539
 #, fuzzy
 msgid ""
 "§0 is equivalent to §1: the tactic replaces an assumption\n"
@@ -2148,7 +2657,7 @@ msgstr ""
 #. §2: `P`
 #. §3: `have h : P`
 #. §4: `P`
-#: Game/Doc/Tactic.lean:515
+#: Game/Doc/Tactic.lean:560
 #, fuzzy
 msgid ""
 "With §0, you introduce a proof section in which you show\n"
@@ -2179,7 +2688,7 @@ msgstr ""
 #.   rw [h]
 #.   ```
 #. §10: `rw [h.symm]`
-#: Game/Doc/Tactic.lean:527
+#: Game/Doc/Tactic.lean:572
 #, fuzzy
 msgid ""
 "With §0 (for “symmetry”), you swap the sides of an equation (§1) or equivalence (§2) in the proof target.\n"
@@ -2215,7 +2724,7 @@ msgstr ""
 #. §8: `⊢ B ↔ C`
 #. §9: `A = B₁ = B₂ = B₃ … = C`
 #. §10: `calc`
-#: Game/Doc/Tactic.lean:544
+#: Game/Doc/Tactic.lean:589
 #, fuzzy
 msgid ""
 "With §0, you insert an intermediate step into an equation or equivalence.\n"
@@ -2247,7 +2756,7 @@ msgstr ""
 #. §3: `2 ≤ 5`
 #. §4: `4 ≠ 6`
 #. §5: `Prime 7`
-#: Game/Doc/Tactic.lean:559
+#: Game/Doc/Tactic.lean:604
 #, fuzzy
 msgid ""
 "With §0, you can prove statements that can be decided using a simple algorithm.\n"
@@ -2273,7 +2782,7 @@ msgstr ""
 #. §6: `rw`
 #. §7: `unfold F`
 #. §8: `simp only [F]`
-#: Game/Doc/Tactic.lean:571
+#: Game/Doc/Tactic.lean:616
 #, fuzzy
 msgid ""
 "With §0, you can write out the definition §1 in the proof goal.\n"
@@ -2299,7 +2808,7 @@ msgstr ""
 #. §0: `∃x, P x`
 #. §1: `use x`
 #. §2: `P x`
-#: Game/Doc/Tactic.lean:587
+#: Game/Doc/Tactic.lean:632
 #, fuzzy
 msgid ""
 "If the proof target is of the form §0, you can use §1 to specify a concrete element\n"
@@ -2309,7 +2818,7 @@ msgstr "Если цель имеет вид §0, то §1 позволяет у�
 #. §0: `tauto`
 #. §1: `generalize`
 #. §2: `tauto`
-#: Game/Doc/Tactic.lean:593
+#: Game/Doc/Tactic.lean:638
 #, fuzzy
 msgid ""
 "The tactic §0 proves logical tautologies.\n"
@@ -2323,6 +2832,96 @@ msgstr ""
 "# Аналоги и связи\n"
 "\n"
 "Иногда цель сначала нужно абстрагировать с помощью §1, чтобы §2 распознала тавтологию."
+
+#. §0: `fun_prop`
+#. §1: `Continuous`
+#. §2: `Measurable`
+#. §3: `Differentiable`
+#: Game/Doc/Tactic.lean:647
+msgid ""
+"The tactic §0 automatically discharges function-property goals such as §1,\n"
+"§2, or §3."
+msgstr ""
+
+#. §0: `h₁ : ∀ᶠ x in 𝓕, p₁ x`
+#. §1: `∀ᶠ x in 𝓕, p x`
+#. §2: `filter_upwards [h₁]'`
+#. §3: `p₁ x → p x`
+#. §4: `filter_upwards [h₁, ⋯, hₙ]`
+#. §5: `hᵢ : ∀ᶠ x in 𝓕, pᵢ x`
+#. §6: `p₁ x → ⋯ → pₙ x → p x`
+#. §7: `filter_upwards [h₁, ⋯, hₙ] with x h₁' ⋯ hₙ'`
+#. §8: `filter_upwards`
+#. §9: `intro x h₁' ⋯ hₙ'`
+#. §10: `∀ᶠ`
+#. §11: `filter_upwards [h₁, h₂] with x h₁' h₂'`
+#. §12: ```
+#. h₁ : ∀ᶠ x in 𝓕, p₁ x
+#. h₂ : ∀ᶠ x in 𝓕, p₂ x
+#. ⊢ ∀ᶠ x in 𝓕, p x
+#. ```
+#. §13: ```
+#. x : …
+#. h₁ : p₁ x
+#. h₂ : p₂ x
+#. ⊢ p x
+#. ```
+#: Game/Doc/Tactic.lean:653
+msgid ""
+"Suppose we have an \"eventual\" hypothesis §0\n"
+"and an \"eventual\" goal §1.\n"
+"The tactic §2 reduces the goal to the point-wise implication §3.\n"
+"\n"
+"# Variants\n"
+"\n"
+"- §4 works in the same way: given several \"eventual\" hypotheses\n"
+"   §5, the goal is reduced to §6.\n"
+"- §7 follows the tactic §8 with\n"
+"  §9.\n"
+"   So the total effect on the proof state is that §10 is removed.\n"
+"   For example, §11 turns\n"
+"§12\n"
+"    into\n"
+"§13"
+msgstr ""
+
+#. §0: `h`
+#. §1: `convert h`
+#. §2: `h`
+#. §3: `h`
+#. §4: ```
+#. h : HasDerivAt f a x
+#. ⊢ HasDerivAt g a x
+#. ```
+#. §5: `convert h`
+#. §6: ```
+#. ⊢ g = f
+#. ```
+#. §7: `convert ← h`
+#. §8: `f = g`
+#. §9: `convert h using n`
+#. §10: `h`
+#. §11: `n`
+#. §12: `convert`
+#. §13: `convert! h`
+#: Game/Doc/Tactic.lean:681
+msgid ""
+"If a hypothesis §0 is almost the goal, §1 closes the goal using §2\n"
+"and creates new goals for the places where the goal and §3 differ.\n"
+"\n"
+"## Example\n"
+"\n"
+"§4\n"
+"After §5, it remains to show\n"
+"§6\n"
+"\n"
+"## Variants\n"
+"\n"
+"- §7 creates the new goals in the opposite direction (here §8).\n"
+"- §9 only compares the goal and §10 up to depth §11.\n"
+"  Use it when §12 breaks the goal into too many small (or even false) pieces.\n"
+"- §13 additionally closes new goals that hold by definition."
+msgstr ""
 
 #: Game/Levels/Logo/L01_Tauto.lean:21
 #, fuzzy
@@ -2718,7 +3317,7 @@ msgstr "**Знайка**: Вот, уже лучше! Ещё разок!"
 msgid "[Logo.L11] Hint 3: try §0 tactic"
 msgstr "**Знайка**: Для этого у тебя есть доказательство в *предположениях*."
 
-#. §0: `obtain ⟨h₁, h₂, h₃⟩ := h`
+#. §0: `obtain ⟨h₁, h₂ , h₃⟩ := h`
 #: Game/Levels/Logo/L11_And.lean:48
 #, fuzzy
 msgid "Conclusion Logo L11: Could have been written as §0"
@@ -3012,7 +3611,7 @@ msgstr ""
 #. §0: `«{A}»`
 #. §1: `«{B}»`
 #. §2: `«{A}» ∧ «{B}»`
-#: Game/Levels/Implis/L01_Intro.lean:50
+#: Game/Levels/Implis/L01_Intro.lean:51
 #, fuzzy
 msgid "Having §0 and §1 in your assumptions you have to show §2"
 msgstr ""
@@ -3020,7 +3619,7 @@ msgstr ""
 "\n"
 "**Знайка**: Именно. А как это делается, ты уже знаешь."
 
-#: Game/Levels/Implis/L01_Intro.lean:66
+#: Game/Levels/Implis/L01_Intro.lean:67
 #, fuzzy
 msgid "Conclusion Implis L01"
 msgstr ""
@@ -3534,7 +4133,7 @@ msgstr "Начопер одобрительно кивает."
 
 #. §0: `apply`
 #. §1: ```
-#. lemma not_not (A : Prop) : ¬¬A ↔ A
+#. lemma not_not : ¬¬A ↔ A
 #. ```
 #: Game/Levels/Implis/L13_Rw.lean:21
 #, fuzzy
@@ -4344,7 +4943,7 @@ msgstr ""
 "\n"
 "Знайка бросает посылку в толпу, и формалософы разрывают упаковку. Внутри оказывается всего один листок бумаги. Через несколько минут он снова лежит у вас. Все формалософы с любопытством смотрят, как вы с ним разберётесь."
 
-#: Game/Levels/Saturn/L01_Rewrite_equality.lean:9
+#: Game/Levels/Saturn/L01_Rewrite_equality.lean:7
 #, fuzzy
 msgid "Intro Saturn L01"
 msgstr "Внезапно вам приходит радиосообщение."
@@ -4352,7 +4951,7 @@ msgstr "Внезапно вам приходит радиосообщение."
 #. §0: `=`
 #. §1: `↔`
 #. §2: `rw`
-#: Game/Levels/Saturn/L01_Rewrite_equality.lean:21
+#: Game/Levels/Saturn/L01_Rewrite_equality.lean:19
 #, fuzzy
 msgid "Explain that §0 and §1 with §2 can be used as in Implis"
 msgstr ""
@@ -4362,7 +4961,7 @@ msgstr ""
 
 #. §0: `rw [hₓ]`
 #. §1: `rw [← hₓ]`
-#: Game/Levels/Saturn/L01_Rewrite_equality.lean:27
+#: Game/Levels/Saturn/L01_Rewrite_equality.lean:25
 #, fuzzy
 msgid "Try if §0 and §1 can be used as in Implis"
 msgstr ""
@@ -4373,7 +4972,7 @@ msgstr ""
 #. §0: `←`
 #. §1: `\\l`
 #. §2: `rw [← hₓ]`
-#: Game/Levels/Saturn/L01_Rewrite_equality.lean:34
+#: Game/Levels/Saturn/L01_Rewrite_equality.lean:32
 #, fuzzy
 msgid "Remind of rewrite via §0 as §1. Try §2"
 msgstr ""
@@ -4381,12 +4980,12 @@ msgstr ""
 "\n"
 "**Знайка**: §2, только §0 пиши как §1."
 
-#: Game/Levels/Saturn/L01_Rewrite_equality.lean:43
+#: Game/Levels/Saturn/L01_Rewrite_equality.lean:41
 #, fuzzy
 msgid "Conclusion Saturn L01"
 msgstr "В ответ приходит 👍."
 
-#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:9
+#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:7
 #, fuzzy
 msgid "Intro Saturn L02"
 msgstr "Следующее радиосообщение выглядит несколько иначе."
@@ -4394,7 +4993,7 @@ msgstr "Следующее радиосообщение выглядит нес�
 #. §0: `binomi`
 #. §1: `add_pow_two`
 #. §2: `rw [add_pow_two]`
-#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:24
+#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:22
 #, fuzzy
 msgid "Explain misfit of §0. Try §1 via §2"
 msgstr ""
@@ -4403,7 +5002,7 @@ msgstr ""
 "**Знайка**: Нет, равенство в этой вселенной, конечно, называется §1, потому что в формуле сначала стоит «+», а потом «^2». Так что ты можешь использовать §2. После этого левая сторона в точности совпадет с правой, на этом все."
 
 #. §0: `ring`
-#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:36
+#: Game/Levels/Saturn/L02_Ring_add_pow_two.lean:34
 #, fuzzy
 msgid "Conclusion Saturn L02: §0 could have been used as well"
 msgstr ""
@@ -4411,51 +5010,41 @@ msgstr ""
 "\n"
 "**Знайка**: Хотя ты мог бы просто написать §0."
 
-#: Game/Levels/Saturn/L03_mul_comm.lean:9
-#, fuzzy
-msgid "Intro Saturn L03"
-msgstr "Ещё одно радиосообщение."
-
-#. §0: `P`
-#. §1: `P`
-#. §2: `Fin 2`
-#. §3: `ℚ`
-#. §4: `Fin 2`
-#. §5: $\\{0,1\\}$
-#. §6: `X 0`
-#. §7: `X 1`
-#: Game/Levels/Saturn/L03_mul_comm.lean:29
-#, fuzzy
+#. §0: `Polynomial ℚ`
+#. §1: `ℚ`
+#. §2: `X`
+#. §3: `ℚ[X]`
+#: Game/Levels/Saturn/L03_Polynomial.lean:8
 msgid ""
-"Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
-"coefficients in §3.\n"
-"Explain §4 as the set of elements §5 that lead to the variables §6 and §7"
+"Intro Saturn L03:\n"
+"§0 is the type of univariate polynomial over §1.\n"
+"And §2 is the polynomial variable in the polynomial ring §3."
 msgstr ""
-"**Ты**:  Ого, что это за зверь такой — §0?\n"
-"\n"
-"**Знайка**: §1 — это «многомерный многочлен», где переменные пронумерованы в §2, а коэффициенты принадлежат §3.\n"
-"\n"
-"**Ты**:  А что такое §4?\n"
-"\n"
-"**Знайка**:  Стандартное множество из двух элементов — §5.  Значит, переменные называют §6 и §7.\n"
-"\n"
-"**Ты**:  Но вообще-то всё это неважно, правда?  Кольцо многочленов ведь коммутативно!\n"
-"\n"
-"**Знайка**: Так и есть."
 
-#: Game/Levels/Saturn/L03_mul_comm.lean:39
+#: Game/Levels/Saturn/L03_Polynomial.lean:17
 #, fuzzy
 msgid "Conclusion Saturn L03"
 msgstr "Снова 👍."
 
-#: Game/Levels/Saturn/L04_mul_assoc.lean:9
+#: Game/Levels/Saturn/L04_mul_comm.lean:6
 #, fuzzy
 msgid "Intro Saturn L04"
 msgstr "Ещё одно радиосообщение."
 
+#. §0: `P`
+#. §1: `ℚ`
+#. §2: `X`
+#: Game/Levels/Saturn/L04_mul_comm.lean:10
+msgid "Explain: §0 is polynomial over §1 with indeterminate §2"
+msgstr ""
+
+#: Game/Levels/Saturn/L04_mul_comm.lean:13
+msgid "Conclusion Saturn L04"
+msgstr ""
+
 #. §0: `mul_assoc`
 #. §1: `ring`
-#: Game/Levels/Saturn/L04_mul_assoc.lean:15
+#: Game/Levels/Saturn/L05_mul_assoc.lean:12
 #, fuzzy
 msgid "Try §0 or again §1"
 msgstr "**Знайка**: Тут ты мог бы использовать §0. Или §1 … *опять*."
@@ -4463,38 +5052,40 @@ msgstr "**Знайка**: Тут ты мог бы использовать §0. 
 #. §0: `ℕ`
 #. §1: `ℕ`
 #. §2: `ring`
-#: Game/Levels/Saturn/L04_mul_assoc.lean:36
-#, fuzzy
+#: Game/Levels/Saturn/L05_mul_assoc.lean:33
 msgid ""
-"Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
+"Conclusion Saturn L05: coefficients were in §0. Polynomials with coefficients in §1\n"
 "are not considered rings. §2 does also work on half rings."
 msgstr ""
-"Снова 👍.\n"
-"\n"
-"**Ты**: Но подожди, в этот раз коэффициенты же были в §0! Это вообще не кольцо, а многочлены с коэффициентами в §1 кольцо также не образуют.\n"
-"\n"
-"**Знайка**: Может быть. Но §2 работает даже для так называемых полуколец.\n"
-"\n"
-"**Ты**: Ну-ну …\n"
-"\n"
-"Аноним спрашивает по рации, готовы ли вы к последнему заданию, или лучше очертите ещё пару колец вокруг его планеты.\n"
-"\n"
-"«Готовы», — коротко и ясно отбивает в ответ Знайка."
 
-#: Game/Levels/Saturn/L05_Ring.lean:61
-#, fuzzy
-msgid "Conclusion Saturn L05"
+#. §0: `A`
+#. §1: `B`
+#. §2: `Fin 4`
+#. §3: `ℝ`
+#. §4: `Fin 4`
+#. §5: $\\{0,1, 2, 3\\}$
+#. §6: `X 0`
+#. §7: `X 1`
+#. §8: `X 2`
+#. §9: `X 3`
+#: Game/Levels/Saturn/L06_Ring.lean:15
+msgid ""
+"[Hint sat5] Explain §0 and §1 are multivariate polynomials with variables\n"
+"indexed by §2 and coefficients in §3.\n"
+"Explain §4 as the set of elements §5 that lead to the variables\n"
+"§6, §7, §8 and §9."
 msgstr ""
-"«Роджер», — коротко и сухо сообщает анонимный радист.\n"
-"\n"
-"**Знайка**: Думаю, двигатель уже достаточно восстановился. Полетели отсюда!"
 
-#: Game/Levels/Saturn.lean:12
+#: Game/Levels/Saturn/L06_Ring.lean:34
+msgid "Conclusion Saturn L06"
+msgstr ""
+
+#: Game/Levels/Saturn.lean:13
 #, fuzzy
 msgid "Saturn"
 msgstr "Сатурн"
 
-#: Game/Levels/Saturn.lean:32
+#: Game/Levels/Saturn.lean:33
 #, fuzzy
 msgid "Intro Saturn"
 msgstr ""
@@ -4820,347 +5411,6 @@ msgstr ""
 "\n"
 "**Бенедикт**: Нет. На Спинозе больше двух не собираться. Вам уже скоро будет пора в дорогу, иначе быстро никуда не попадете. Пролетаем мимо планет только раз в 400 лет."
 
-#. §0: `n ≤ n`
-#: Game/Levels/Luna/L01_le_rfl.lean:22
-#, fuzzy
-msgid "Intro Luna L01: Know that §0"
-msgstr ""
-"Ты чувствуешь себя немного подавленным, но всё равно пытаешься начать разговор.\n"
-"\n"
-"**Ты**: Ладно, постараемся ничего не перепутать. Тут очень сложно поддерживать порядок?\n"
-"\n"
-"**Лина**: Например, следует знать, что §0."
-
-#. §0: `rfl`
-#: Game/Levels/Luna/L01_le_rfl.lean:26
-#, fuzzy
-msgid "Try using §0 here"
-msgstr "**Знайка**: §0?"
-
-#: Game/Levels/Luna/L01_le_rfl.lean:34
-#, fuzzy
-msgid "Conclusion Luna L01"
-msgstr "**Лина**:  Ладно, это был тривиальный пример."
-
-#. §0: `0 < n`
-#. §1: `n < 0`
-#. §2: `n ≠ 0`
-#: Game/Levels/Luna/L02_Omega.lean:18
-#, fuzzy
-msgid "Intro Luna L02: For integers §0 or §1 means §2"
-msgstr "**Лина**: Кроме того, например, нужно знать, что §0 или §1 для целых чисел означает не что иное, как §2."
-
-#. §0: `omega`
-#: Game/Levels/Luna/L02_Omega.lean:22
-#, fuzzy
-msgid "Try out §0"
-msgstr "**Рита** *(шёпотом)*: Попробуй §0!"
-
-#. §0: `omega`
-#. §1: `omega`
-#. §2: `omega`
-#: Game/Levels/Luna/L02_Omega.lean:40
-#, fuzzy
-msgid ""
-"Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
-"§2 is only really applicable over integers."
-msgstr ""
-"Лина закатывает глаза.\n"
-"\n"
-"**Лина**: Рита — большой фанат §0.  При этом §1 довольно-таки импотентна. Как только выходишь за пределы целых чисел, §2 уже вообще ничего не может.\n"
-"\n"
-"**Рита**:  Сама ты импотентна!\n"
-"\n"
-"Рита строит неприличную гримасу."
-
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:17
-#, fuzzy
-msgid "Intro Luna L03"
-msgstr "**Лина**: Попробуй-ка вот это!"
-
-#. §0: `obtain`
-#. §1: `x < y`
-#. §2: `x = y`
-#. §3: `x > y`
-#. §4: ```
-#. obtain h | h | h := lt_trichotomy x y
-#. ```
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:19
-#, fuzzy
-msgid ""
-"Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
-"\n"
-"§4"
-msgstr ""
-"Обычно используется вместе с §0, чтобы в доказательстве различать три случая §1, §2 и §3:\n"
-"\n"
-"§4"
-
-#. §0: `by_cases h_leq : «{a}» ≤ «{b}»`
-#. §1: `by_cases h_lt : «{a}» < «{b}»`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:38
-#, fuzzy
-msgid "Try §0, §1"
-msgstr ""
-"**Ты**:  Разбор случаев ??\n"
-"\n"
-"**Знайка**:  Да, можешь попробовать. Например, сначала §0, а потом §1."
-
-#. §0: `linarith`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:52
-#, fuzzy
-msgid "Now try §0!"
-msgstr ""
-"**Ты**:  А теперь??\n"
-"\n"
-"**Лина** (*триумфально*): §0!"
-
-#. §0: `apply lt_trichotomy`
-#: Game/Levels/Luna/L03_Linarith__lt_trichotomy.lean:67
-#, fuzzy
-msgid "Conclusion Luna L03: Alternatively §0 could have been used."
-msgstr "**Лина**:  Кстати, можно было бы просто написать §0."
-
-#: Game/Levels/Luna/L04_Omega2.lean:17
-#, fuzzy
-msgid "Intro Luna L04"
-msgstr "**Лина**:  Тут у меня ещё кое-что."
-
-#: Game/Levels/Luna/L04_Omega2.lean:21
-#, fuzzy
-msgid "Try omega"
-msgstr "Рита, кажется, хочет подать вам какой-то знак глазами."
-
-#: Game/Levels/Luna/L04_Omega2.lean:31
-#, fuzzy
-msgid "Conclusion Luna L04"
-msgstr "**Лина**:  Да, хорошо, моя ошибка."
-
-#: Game/Levels/Luna/L05_Linarith2.lean:16
-#, fuzzy
-msgid "Intro Luna L05"
-msgstr "**Лина**: Ещё раз тот же вопрос, но теперь в ℝ!"
-
-#. §0: `omega`
-#. §1: `linarith`
-#. §2: `linarith`
-#. §3: `intro`
-#: Game/Levels/Luna/L05_Linarith2.lean:27
-#, fuzzy
-msgid ""
-"§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
-"the implications via §3"
-msgstr ""
-"**Ты** (*Знайке*):  Тут я не продвигаюсь ни с §0, ни с §1.\n"
-"\n"
-"**Знайка**:  Думаю, тебе просто нужно чуть-чуть помочь §2. Лучше всего сначала совсем канонично разберись с двумя импликациями с помощью §3."
-
-#. §0: `«{hx}»`
-#. §1: `push Not at «{hx}»`
-#: Game/Levels/Luna/L05_Linarith2.lean:36
-#, fuzzy
-msgid "Increase readability of §0. Try §1"
-msgstr "**Знайка**:  А теперь сделай предположение §0 чуть более читабельным. Может, попробуешь §1?"
-
-#. §0: `«{hx}» : m ≤ x → n < x`
-#. §1: `→`
-#. §2: `rw`
-#. §3: `imp_iff_or_not`
-#: Game/Levels/Luna/L05_Linarith2.lean:44
-#, fuzzy
-msgid "We now have §0. Knowing what §1 means, try §2 with §3"
-msgstr "**Знайка**:  Ммм … §0 всё ещё выглядит не очень. Но мы же знаем, что значит §1 — попробуй-ка §2 с §3!"
-
-#. §0: `«{hx}»`
-#. §1: `obtain`
-#: Game/Levels/Luna/L05_Linarith2.lean:53
-#, fuzzy
-msgid "Divide §0 with §1"
-msgstr "**Знайка**:  Норм.  Так лучше. Теперь можешь ещё разложить §0 с помощью §1 на две части."
-
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:14
-#, fuzzy
-msgid "Intro Luna L06"
-msgstr "**Рита**:  Можно я тоже?  Вот."
-
-#. §0: `Icc`
-#. §1: `Icc a b`
-#. §2: $[a, b]$
-#. §3: $\\{a, a + 1, \\dots, b\\}$
-#. §4: $$ [a, b] ∪ \\{ b + 1 \\} = [a, b + 1] $$
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:35
-#, fuzzy
-msgid ""
-"Remind that §0 is an interval which is closed to both sides. You could write §1\n"
-"as §2 or §3, because we are in the natual numbers. Therfore, the\n"
-"goal is: §4"
-msgstr ""
-"**Ты**:  А что такое §0?\n"
-"\n"
-"**Рита**:  Это такой интервал (**I**). Закрыт (**c**) слева и справа, то есть замкнут.\n"
-"\n"
-"**Знайка**:  Тебе бы, наверное, §1 записать как §2 — или как §3, потому что мы тут снова в натуральных числах. Значит, необходимо доказать:\n"
-"\n"
-"§4"
-
-#. §0: `ext`
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:39
-#, fuzzy
-msgid "Equality of sets demands §0"
-msgstr "**Знайка**: Равенство множеств просто взывает к §0."
-
-#. §0: `simp`
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:46
-#, fuzzy
-msgid "Try §0 afterwards"
-msgstr "**Знайка**:  И сразу §0 вдогонку."
-
-#: Game/Levels/Luna/L06_Icc__Icc_insert_succ_right.lean:49
-#, fuzzy
-msgid "Ritha gives signs to try omega"
-msgstr "Рита снова делает какие-то знаки."
-
-#. §0: `omega`
-#: Game/Levels/Luna/L07_Linarith2.lean:14
-#, fuzzy
-msgid "Intro Luna L07: Enough of §0"
-msgstr "**Лина**:  Хватит уже §0ть, теперь снова моя очередь."
-
-#. §0: $$
-#. \\begin{aligned}
-#. \\tfrac{35}{11}\\cdot y &\\le -\\tfrac{22}{21}\\cdot x + \\tfrac{35}{2}  \\ %(new line)
-#. \\tfrac{8}{9} \\cdot y &\\le x + \\tfrac{17}{8}
-#. \\end{aligned}
-#. $$
-#. §1: $$
-#. y ≤ \\tfrac{34}{7}
-#. $$
-#: Game/Levels/Luna/L07_Linarith2.lean:37
-#, fuzzy
-msgid ""
-"Given\n"
-"\n"
-"§0\n"
-"\n"
-"Show\n"
-"§1\n"
-msgstr ""
-"**Ты**:  Сначала надо ещё раз выписать всё столбиком. Дано:\n"
-"\n"
-"§0\n"
-"\n"
-"Необходимо доказать:\n"
-"\n"
-"§1\n"
-"\n"
-"Знайка??\n"
-"\n"
-"Лина ухмыляется.\n"
-
-#: Game/Levels/Luna/L07_Linarith2.lean:54
-#, fuzzy
-msgid "Conclusion Luna L07"
-msgstr "**Ты**: Неплохо!"
-
-#: Game/Levels/Luna/L08_Omega3.lean:13
-#, fuzzy
-msgid "Intro Luna L08"
-msgstr "**Рита**:  Теперь снова я!"
-
-#. §0: `simp at «{h'}»`
-#: Game/Levels/Luna/L08_Omega3.lean:20
-#, fuzzy
-msgid "Definitely use §0"
-msgstr "**Рита**:  Обязательно попробуй §0."
-
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:13
-#, fuzzy
-msgid "Intro Luna L09"
-msgstr "**Лина**:  А теперь я."
-
-#. §0: `b`
-#. §1: `use …`
-#. §2: `lt_trichotomy`
-#. §3: ```
-#. obtain h | h | h := lt_trichotomy a c
-#. ```
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:28
-#, fuzzy
-msgid ""
-"It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
-"§3\n"
-msgstr ""
-"**Ты**: Вроде бы довольно ясно, какое §0 тут можно использовать.\n"
-"\n"
-"**Знайка**: Если тебе это так ясно, тогда начни уже с §1.\n"
-"А потом тебе очень пригодится §2.  Например, вот так:\n"
-"§3\n"
-
-#: Game/Levels/Luna/L09_lt_trichotomy2.lean:51
-#, fuzzy
-msgid "Conclusion Luna L09"
-msgstr "**Лина**: Отлично справились! Жаль, что вам уже пора дальше лететь. Но если вы еще задержитесь, то весь дневной ритм нам собьёте."
-
-#. §0: `omega`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:19
-#, fuzzy
-msgid "Intro Luna L10: Use §0 again"
-msgstr ""
-"**Рита** (*Лине*):  Пожалуйста, дай мне тоже ещё один вопрос задать …\n"
-"\n"
-"**Лина**:  Ладно, один-единственный …  Но только не об §0 опять!\n"
-"\n"
-"Рита делает большие глаза и умоляюще смотрит на Лину.\n"
-"\n"
-"**Лина**:  Ну если *прям уж обязательно* надо.  Но давай быстро! У нас сейчас правда совсем нет времени!"
-
-#. §0: `subset_iff`
-#. §1: `simp`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:35
-#, fuzzy
-msgid "Try using §0 and if nothing else helps, §1"
-msgstr "**Знайка**: Может, тут снова поможет §0.  А если совсем ничего не выходит, попробуй §1."
-
-#. §0: `«{h}»`
-#. §1: `«{h}»`
-#. §2: `a₁ ≤ b₁`
-#. §3: `a₁ ≤ a₁`
-#. §4: `a₁ ≤ a₁`
-#. §5: `have`
-#: Game/Levels/Luna/L10_Icc_subset_Icc_iff.lean:50
-#, fuzzy
-msgid ""
-"Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
-"Formulate §4 using §5"
-msgstr "**Знайка**:  Предположение §0 тебе точно нужно как-то использовать. Ты можешь, например, применить §1 к неравенству §2 или к §3! (Неравенство §4 лучше всего сформулировать с помощью §5.)"
-
-#: Game/Levels/Luna.lean:17
-#, fuzzy
-msgid "Luna"
-msgstr "Луна"
-
-#: Game/Levels/Luna.lean:48
-#, fuzzy
-msgid "Intro Luna"
-msgstr ""
-"Знайка обнаружил небольшую луну, к которой вы теперь направляетесь. У неё совершенно гладкая поверхность, но в одном месте есть небольшое отверстие, от которого внутрь ведёт лестница. Вы прилуняетесь и с любопытством спускаетесь вниз.\n"
-"\n"
-"Спустившись, ты видишь, что чище прибранной квартиры в жизни не видел. Вас приветствует девочка-подросток.\n"
-"\n"
-"**Лина**: Я Лина, единственная жительница Луны.\n"
-"\n"
-"Потом она замечает Знайку.\n"
-"\n"
-"**Лина**: Ну, вообще-то нас тут двое …\n"
-"\n"
-"Она разворачивается и что-то кричит — и тут подъезжает смарт-эльф.\n"
-"\n"
-"**Лина**: Это Рита!\n"
-"\n"
-"Знайке Рита явно кажется милой.\n"
-"\n"
-"**Лина**: Но вы не стойте тут так неаккуратно, пожалуйста! Обувь и шлемы — убрать, туда и вот туда. Теперь встаньте на отмеченные точки для посетителей. А не то я запутаюсь совсем."
-
 #: Game/Levels/Babylon/L01_Sum_Simp_Card.lean:8
 #, fuzzy
 msgid "Intro Babylon L01"
@@ -5274,19 +5524,13 @@ msgstr "**Знайка**: Сначала §0 — поменяй местами �
 msgid "Now try out §0"
 msgstr "**Знайка**:  Хорошо.  А теперь §0."
 
-#. §0: `Icc_subset_Icc_iff`
-#: Game/Levels/Babylon/L04_sum_subset.lean:52
-#, fuzzy
-msgid "§0 is useful here"
-msgstr "**Знайка**:  Тут ты наверняка сможешь применить §0."
-
-#: Game/Levels/Babylon/L04_sum_subset.lean:62
+#: Game/Levels/Babylon/L04_sum_subset.lean:59
 #, fuzzy
 msgid "Show that term in sum is zero for first three indexes"
 msgstr "**Знайка**: Супер! Теперь тебе осталось только доказать только что сказанное: выражение под суммой для первых трёх индексов равно нулю."
 
 #. §0: ``` i ^ 3 - 3 * i ^ 2 + 2 * i = 0 ```
-#: Game/Levels/Babylon/L04_sum_subset.lean:72
+#: Game/Levels/Babylon/L04_sum_subset.lean:69
 #, fuzzy
 msgid "Introduce assumptions until §0 as goal"
 msgstr ""
@@ -5298,15 +5542,15 @@ msgstr ""
 #. §1: $«{i}»=1$
 #. §2: $«{i}»=2$
 #. §3: `have`
-#: Game/Levels/Babylon/L04_sum_subset.lean:80
-#: Game/Levels/Babylon/L04_sum_subset.lean:86
+#: Game/Levels/Babylon/L04_sum_subset.lean:77
+#: Game/Levels/Babylon/L04_sum_subset.lean:83
 #, fuzzy
 msgid "Assumptions have to entail §0 or §1 or §2. Try §3"
 msgstr "**Знайка**:  Из предположений должно же как-то следовать §0 или §1 или §2. Можешь выразить это явно с помощью §3?"
 
 #. §0: `simp`
 #. §1: `omega`
-#: Game/Levels/Babylon/L04_sum_subset.lean:94
+#: Game/Levels/Babylon/L04_sum_subset.lean:86
 #, fuzzy
 msgid "Try §0 & §1"
 msgstr "**Знайка**:  Какая-нибудь комбинация §0 и §1 точно все решит. На Луне же сработало."
@@ -5360,24 +5604,24 @@ msgstr ""
 
 #. §0: `Even.neg_pow`
 #. §1: `Odd.neg_pow`
-#: Game/Levels/Babylon/L05_sum_subset2.lean:69
+#: Game/Levels/Babylon/L05_sum_subset2.lean:72
 #, fuzzy
 msgid "Familiar situation: try §0 or §1"
 msgstr "**Знайка**:  Это мы уже где-то видели. Как насчет §0 и §1?"
 
 #. §0: `sum_congr`
-#: Game/Levels/Babylon/L05_sum_subset2.lean:81
+#: Game/Levels/Babylon/L05_sum_subset2.lean:87
 #, fuzzy
 msgid "Now oyu can use §0"
 msgstr "**Знайка**: Выглядит неплохо. Теперь снова можешь применить §0."
 
 #. §0: `simp`
-#: Game/Levels/Babylon/L05_sum_subset2.lean:90
+#: Game/Levels/Babylon/L05_sum_subset2.lean:96
 #, fuzzy
 msgid "Try out §0 again"
 msgstr "**Знайка**: Попробуй-ка снова §0."
 
-#: Game/Levels/Babylon/L05_sum_subset2.lean:101
+#: Game/Levels/Babylon/L05_sum_subset2.lean:107
 #, fuzzy
 msgid "Conclusion Babylon L05"
 msgstr "**Вавилонянин**:  Хорошо справились!"
@@ -5512,7 +5756,7 @@ msgstr ""
 msgid "Intro Babylon L08"
 msgstr "Из чистого любопытства ты пристально рассматриваешь ещё одну соседнюю башню."
 
-#. §0: $$ \\sum_{i = 0}^n (2i + 1) = n^2 $$
+#. §0: $$ \\sum_{i = 0}^n (2i + 1) = (n + 1)^2 $$
 #: Game/Levels/Babylon/L08_Induction3_sub_insert3.lean:32
 #, fuzzy
 msgid "Try solving §0 by induction"
@@ -6181,14 +6425,14 @@ msgstr ""
 #. §15: $$
 #. A_{i,j} \\cdot
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\ %(new line)
-#. 1 & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0\\\\ %(new line)
+#. 1 & 0 & 0 \\\\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. =
 #. \\begin{pmatrix}
-#. 0 & 0 & 0\\ %(new line)
-#. A_{i,j} & 0 & 0 \\ %(new line)
+#. 0 & 0 & 0\\\\ %(new line)
+#. A_{i,j} & 0 & 0 \\\\ %(new line)
 #. 0 & 0 & 0
 #. \\end{pmatrix}
 #. $$
@@ -6572,7 +6816,7 @@ msgstr ""
 
 #. §0: `E i j`
 #. §1: `E i j`
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:18
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:8
 #, fuzzy
 msgid "intro Robotswana L07: Introduce new consideration for §0: do not consider §1 with i ≠ j"
 msgstr ""
@@ -6580,7 +6824,7 @@ msgstr ""
 "\n"
 "**Ты**: Видимо, §1 с i ≠ j нас не интересуют."
 
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:24
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:10
 #, fuzzy
 msgid "Conclusion Robotswana L07"
 msgstr "Следы теперь выглядят куда свежее. Вы идёте по ним дальше."
@@ -6589,7 +6833,7 @@ msgstr "Следы теперь выглядят куда свежее. Вы и�
 #. §1: `E i j`
 #. §2: `E i j * E j j`
 #. §3: `E.mul_of_ne`
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:53
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:38
 #, fuzzy
 msgid "Use §0 by writing §1 as §2. Remind §3"
 msgstr ""
@@ -6603,7 +6847,7 @@ msgstr ""
 "  Мы же это проходили, §3 или вроде того.\n"
 
 #. §0: `trans f (E i j * E j j)`
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:55
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:40
 #, fuzzy
 msgid "[Hint plnk] Try §0"
 msgstr "**Знайка**: Как скажешь. Тогда лучше попробуй §0."
@@ -6612,12 +6856,12 @@ msgstr "**Знайка**: Как скажешь. Тогда лучше попр�
 #. §1: `simp`
 #. §2: `E`
 #. §3: `simp [E]`
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:62
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:47
 #, fuzzy
 msgid "Try §0 or §1 with §2 via §3"
 msgstr "**Знайка**: Не забудь о §0 или укажи §1 использовать определение §2 — §3."
 
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:69
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:54
 #, fuzzy
 msgid "[Robotswana.L07] Hint 1: Try commutating"
 msgstr ""
@@ -6626,12 +6870,12 @@ msgstr ""
 "**Ты**: Именно!"
 
 #. §0: `h₁`
-#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:77
+#: Game/Levels/Robotswana/L07_EBasisZeroOffDiag.lean:62
 #, fuzzy
 msgid "[Robotswana.L07] Hint 2: Try rewriting with §0"
 msgstr "**Знайка**:  О_о. Выглядит неверно."
 
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:19
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:24
 #, fuzzy
 msgid "Intro Robotswana L08"
 msgstr ""
@@ -6639,7 +6883,7 @@ msgstr ""
 "Тебя уже точно мучает жажда.\n"
 "Пока Знайка обыскивает окрестности, ты обессиленно садишься и, слегка одурев под тёплым солнцем, пристально смотришь на клочок пергамента."
 
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:34
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:39
 #, fuzzy
 msgid "Conclusion Robotswana L08"
 msgstr ""
@@ -6658,8 +6902,8 @@ msgstr ""
 #. §0: $$
 #. \\begin{aligned}
 #. f(A)
-#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\ %(new line)
-#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\ %(new line)
+#. &= f\\left( \\sum_{i,j} A_{i,j} \\cdot E_{i,j} \\right) \\\\ %(new line)
+#. &= \\sum_{i,j} A_{i,j} \\cdot f(E_{i,j})   \\\\ %(new line)
 #. &= \\sum_{i} A_{i,i} \\cdot f(E_{i,i})
 #. \\end{aligned}
 #. $$
@@ -6672,7 +6916,7 @@ msgstr ""
 #. §7: `A`
 #. §8: `nth_rw 1 [ ... ]`
 #. §9: `rw`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:67
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:69
 #, fuzzy
 msgid ""
 "\n"
@@ -6698,7 +6942,7 @@ msgstr ""
 #. §2: `rw`
 #. §3: `rw [matrix_eq_sum_ebasis A]`
 #. §4: `A`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:87
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:89
 #, fuzzy
 msgid "Explain why to use §0 with §1 instead of §2. §3 replaces both §4"
 msgstr ""
@@ -6708,7 +6952,7 @@ msgstr ""
 
 #. §0: `rw`
 #. §1: `nth_rw`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:92
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:94
 #, fuzzy
 msgid "§0 is a bad idea here. Try §1."
 msgstr ""
@@ -6716,19 +6960,19 @@ msgstr ""
 "  -- Выглядит слишком сложно. Давай попробую с §1."
 
 #. §0: `IN_HINT 1`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:96
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:98
 #, fuzzy
 msgid "§0 Use linearity"
 msgstr "**Ты** (*про себя*): Теперь использовать линейность… И только не думать о воде… В Вавилоне воды было достаточно… Так, на чём я остановился?"
 
 #. §0: `map_sum`
 #. §1: `simp`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:99
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:101
 #, fuzzy
 msgid "Try §0 via §1"
 msgstr "**Знайка** (*откуда-то*): Звучит как §0.  Не думаю, что мы видели это в Вавилоне — ты это выдумываешь. Но §1 эту лемму точно знает."
 
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:104
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:106
 #, fuzzy
 msgid "Simplify"
 msgstr "**Ты**: Ага. Сомневаешься? Упрощай!"
@@ -6737,7 +6981,7 @@ msgstr "**Ты**: Ага. Сомневаешься? Упрощай!"
 #. §1: `E i j`
 #. §2: `i≠j`
 #. §3: `trans ∑ i, ∑ j, if i = j then (A i j) * f (E i j) else 0`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:115
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:117
 #, fuzzy
 msgid "Use disappearing §0 in §1 with §2. Try §3"
 msgstr ""
@@ -6751,36 +6995,36 @@ msgstr ""
 
 #. §0: `apply congr_arg`
 #. §1: `ext`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:118
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:120
 #, fuzzy
 msgid "Try using §0 and §1"
 msgstr "**Знайка**: Сумма равна сумме … попробуй-ка §0, §1."
 
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:122
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:124
 #, fuzzy
 msgid "Try again"
 msgstr "**Ты**: Может, сразу повторить?"
 
 #. §0: `«{i}» = «{j}»`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:126
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:128
 #, fuzzy
 msgid "Prove by cases for §0"
 msgstr "**Ты**: А теперь — разбор случаев по §0…"
 
 #. §0: `by_cases`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:128
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:130
 #, fuzzy
 msgid "Employ §0"
 msgstr "**Знайка**: §0 — это точно оно!"
 
 #. §0: `if_pos «{h₂}»`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:131
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:133
 #, fuzzy
 msgid "Try §0."
 msgstr "**Знайка**: Здесь пригодится §0."
 
 #. §0: `if_neg «{h₂}»`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:138
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:140
 #, fuzzy
 msgid "Here try §0"
 msgstr ""
@@ -6789,19 +7033,19 @@ msgstr ""
 "**Ты**: Да знаю я."
 
 #. §0: `f (E i j)`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:141
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:143
 #, fuzzy
 msgid "See that §0 is zero"
 msgstr "**Ты**: И как мы уже видели, §0 равно нулю!"
 
 #. §0: `zero_on_offDiag_ebasis`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:143
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:145
 #, fuzzy
 msgid "This was called §0"
 msgstr "**Знайка**: А имя этому всему — §0."
 
 #. §0: `trans`
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:155
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:157
 #, fuzzy
 msgid "Solve second half of §0 operation"
 msgstr ""
@@ -6809,7 +7053,7 @@ msgstr ""
 "\n"
 "**Знайка**: Ну, почти! Осталась ещё вторая половина шага §0. Совсем простая. "
 
-#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:159
+#: Game/Levels/Robotswana/L08_EvalOnEBasis.lean:160
 #, fuzzy
 msgid ""
 "[Doc.Theorem] map_sum\n"
@@ -6837,9 +7081,9 @@ msgstr "**Ты**: Норм. Давай осторожно подойдём по�
 #. §1: $$
 #. \\begin{aligned}
 #. n \\cdot f(E_{i i})
-#. &= \\sum_j f(E_{i i}) \\ %(new line)
-#. &= \\sum_j f(E_{j j}) \\ %(new line)
-#. &= f(1) \\ %(new line)
+#. &= \\sum_j f(E_{i i}) \\\\ %(new line)
+#. &= \\sum_j f(E_{j j}) \\\\ %(new line)
+#. &= f(1) \\\\ %(new line)
 #. &= n
 #. \\end{aligned}
 #. $$
@@ -6984,14 +7228,14 @@ msgstr "**Знайка**: §0, как говорит мой жёсткий ди�
 msgid "[Hint ztqn] Remind of previous result"
 msgstr "**Знайка**: Это мы уже видели."
 
-#. §0: `eq_sum_apply_diag_ebasis`
-#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:204
-#, fuzzy
-msgid "Use the result §0"
-msgstr "**Знайка**: Результат, который ты хотел применить, называется §0."
+#. §0: `rw`
+#. §1: `ebasis_diag_sum_eq_one`
+#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:203
+msgid "Hint [nbnf] §0 with §1 "
+msgstr ""
 
 #. §0: `rw [«{h₂}»]`
-#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:209
+#: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:207
 #, fuzzy
 msgid "Try out using §0"
 msgstr "**Знайка**: Попробуй-ка §0."
@@ -7028,7 +7272,7 @@ msgstr ""
 "Когда вы подходите ближе, кажется, Следди вас замечает.  Но вы ей совсем не мешаете."
 
 #. §0: `f`
-#: Game/Levels/Robotswana/L10_Characterize.lean:59
+#: Game/Levels/Robotswana/L10_Characterize.lean:52
 #, fuzzy
 msgid "Explain that each §0 has stated properties"
 msgstr ""
@@ -7039,40 +7283,24 @@ msgstr ""
 "**Ты**: Да.  Думаю, так и есть.  Любое отображение §0 с такими свойствами ведёт себя на всех матрицах точно так же, как Следди.  А значит, оно *и есть* Следди!"
 
 #. §0: `ext`
-#: Game/Levels/Robotswana/L10_Characterize.lean:64
+#: Game/Levels/Robotswana/L10_Characterize.lean:53
 #, fuzzy
 msgid "Use §0!"
 msgstr "**Знайка**: §0!"
 
-#. §0: `f «{A}»`
-#: Game/Levels/Robotswana/L10_Characterize.lean:67
-#, fuzzy
-msgid "Rewrite §0 as sum of basis elements"
-msgstr "**Ты**: А теперь запишем §0 как сумму базисных элементов."
-
-#. §0: `f (E i i) = 1`
-#. §1: `one_on_diag_ebasis`
-#: Game/Levels/Robotswana/L10_Characterize.lean:75
-#, fuzzy
-msgid "Remind former result for §0. Try §1"
+#. §0: `A`
+#. §1: `f «{A}»`
+#. §2: `nth_rw`
+#. §3: `nth_rw 2`
+#. §4: `matrix_eq_sum_ebasis`
+#: Game/Levels/Robotswana/L10_Characterize.lean:55
+msgid "Rewrite §0 in §1 as sum of basis elements.  Use §2, §3 with §4"
 msgstr ""
-"**Ты**: Мы же только что доказали §0!\n"
-"\n"
-"**Знайка**: Хорошо искать, если есть где! Это было §1."
 
-#: Game/Levels/Robotswana/L10_Characterize.lean:78
-#, fuzzy
-msgid "Observe equality"
-msgstr "**Знайка**: Обе стороны равны! По определению!"
-
-#. §0: `rw [eq_sum_apply_diag_ebasis]`
-#: Game/Levels/Robotswana/L10_Characterize.lean:86
-#, fuzzy
-msgid "Remind missed argument with §0"
+#. §0: `A i j * f (E i j) = if i = j then A i i else 0`
+#: Game/Levels/Robotswana/L10_Characterize.lean:59
+msgid "[Hint kqwz] prove §0"
 msgstr ""
-"**Ты**: Откуда вообще взялась эта цель?\n"
-"\n"
-"**Знайка**: В самом начале, на §0, ты, похоже, пропустил этот шаг. Сейчас необходимо его завершить."
 
 #: Game/Levels/Robotswana/L11_Linearity.lean:19
 #, fuzzy
@@ -7254,7 +7482,7 @@ msgstr "**Знайка**: Если чуть-чуть переписать, на�
 #. §0: `a ∣ b`
 #. §1: `∃ k, b = a * k`
 #. §2: `∣`
-#. §3: `\\dvd`
+#. §3: `\\\\dvd`
 #. §4: `|`
 #. §5: `obtain h₁ | h₂ := h`
 #: Game/Levels/Prado/L02_dvd_iff_exists_eq_mul_left.lean:71
@@ -7718,13 +7946,81 @@ msgstr ""
 "\n"
 "Смотрите, в конце концов я сам начал формулировать один из его результатов. Сможете мне помочь?"
 
-#. §0: `exists_prime_and_dvd`
 #: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:42
-#, fuzzy
-msgid "Try proof by conradiction. For this employ §0"
-msgstr "**Знайка**: Конечно сможем. Это же типичное доказательство от противного: если простых чисел лишь конечное число, то произведение всех простых чисел плюс один не делится ни на одно простое число. С другой стороны, истинно следующее: §0. Противоречие."
+msgid "[Hint huqzl] Try proof by contradiction."
+msgstr ""
 
-#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:100
+#. §0: `«{hf}».toFinset`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:45
+msgid ""
+"[Hint th0l6] Now construct the new prime.\n"
+"Consider the finite set §0,\n"
+"define the product of all of these,\n"
+"then consider a “new prime” given by that product plus one."
+msgstr ""
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:53
+msgid ""
+"[Hint k7r2d] First, establish that, like any natural number greater than one,\n"
+"the “new prime” must have a prime factor."
+msgstr ""
+
+#. §0: `have … : ∃ p : ℕ, Prime p ∧ p ∣ …`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:55
+msgid "[Hint wai1k] Start with §0"
+msgstr ""
+
+#. §0: `exists_prime_and_dvd`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:57
+msgid ""
+"[Hint nj44y] Establish that the “new prime” is bigger than one,\n"
+"and remember §0."
+msgstr ""
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:72
+msgid "[Hint mnq1z] Great. Now show that, on the other hand, by construction, no prime can divide the “new prime”."
+msgstr ""
+
+#. §0: `have … : ∀ p : ℕ, Prime p → ¬ p ∣ …`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:73
+msgid "[Hint 7v4d5] Start with §0"
+msgstr ""
+
+#. §0: `q`
+#. §1: `«{p}»`
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:76
+msgid ""
+"[Hint w0ye0] Introduce the product §0 of all primes apart from §1, and\n"
+"establish that the product of all primes is the product of p and q."
+msgstr ""
+
+#. §0: `not_dvd_of_lt_of_lt_mul_succ`
+#. §1: ```
+#. not_dvd_of_lt_of_lt_mul_succ {n k m : ℕ}
+#. (h1 : n * k < m) (h2 : m < n * (k + 1)) : ¬n ∣ m
+#. ```
+#. §2: `n`
+#. §3: `k`
+#. §4: `m`
+#. §5: ```
+#. not_dvd_of_lt_of_lt_mul_succ ( k:= …)
+#. ```
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:96
+msgid ""
+"[Hint 25fac] You now want to apply §0, which we've seen before:\n"
+"§1\n"
+"So bring the goal into a shape to which you can apply that theorem.\n"
+"The curly braces around §2, §3 and §4 mean that these parameters\n"
+"are implicit, so you often don't need to mention them.  But you *can* provide them\n"
+"with:\n"
+"§5\n"
+msgstr ""
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:126
+msgid "[Hint 2k3ni] This is looking very promising."
+msgstr ""
+
+#: Game/Levels/Euklid/L04_Boss_infinitely_many_primes.lean:136
 #, fuzzy
 msgid "Conclusion Euklid L04"
 msgstr ""
@@ -7811,7 +8107,7 @@ msgstr ""
 #. §2: `f : ℤ → ℤ := …`
 #. §3: $$
 #. \\begin{aligned}
-#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\ %(new line)
+#. f\\colon \\mathbb{ℤ} &\\to \\mathbb{ℤ} \\\\ %(new line)
 #. x &\\mapsto x ^ 2
 #. \\end{aligned}
 #. $$
@@ -7938,7 +8234,7 @@ msgstr "**Знайка**: §0 — это §1, по определению. §2 �
 
 #. §0: `ring`
 #. §1: `«{f}»`
-#: Game/Levels/Vieta/L04_Let.lean:71
+#: Game/Levels/Vieta/L04_Let.lean:73
 #, fuzzy
 msgid "Try §0 as it sees through defintion §1"
 msgstr "**Знайка**: §0 видит сквозь локальные определения, напр., §1, так что можно использовать ее как есть."
@@ -7963,11 +8259,12 @@ msgstr ""
 "\n"
 "**Знайка**: Для этого принципа у меня в запасе есть тактика §0. С §1 ты выбираешь произвольное §2 и меняешь цель с §3 на §4."
 
-#. §0: `ring`
-#: Game/Levels/Vieta/L05_Funext.lean:34
-#, fuzzy
-msgid "Remind: §0 sees through local definitions"
-msgstr "**Знайка**: Напоминаю, §0 видит сквозь локальные определения."
+#. §0: `unfold`
+#. §1: `f`
+#. §2: `g`
+#: Game/Levels/Vieta/L05_Funext.lean:33
+msgid "[Hint sy0jh] §0 the definitions of §1 and §2"
+msgstr ""
 
 #: Game/Levels/Vieta/L06_Piecewise.lean:24
 #, fuzzy
@@ -7995,7 +8292,7 @@ msgstr ""
 #. §0: `(g ∘ f) «{x}»`
 #. §1: `g (f «{x}»)`
 #. §2: `simp`
-#: Game/Levels/Vieta/L06_Piecewise.lean:49
+#: Game/Levels/Vieta/L06_Piecewise.lean:51
 #, fuzzy
 msgid "Rewrite §0 to §1 via §2"
 msgstr ""
@@ -8011,7 +8308,7 @@ msgstr ""
 #. §5: `not_le`
 #. §6: `¬(0 ≤ «{x}»)`
 #. §7: `0 > «{x}»`
-#: Game/Levels/Vieta/L06_Piecewise.lean:62
+#: Game/Levels/Vieta/L06_Piecewise.lean:64
 #, fuzzy
 msgid ""
 "Try §0 for resulting cases §1 and §2 i.e. §3 and §4.\n"
@@ -8024,7 +8321,7 @@ msgstr ""
 "**Знайка**: Именно! Или точнее §3 и §4. Это не совсем одно и то же, но с леммой §5 можно переключаться между §6 и §7."
 
 #. §0: `simp [f, g]`
-#: Game/Levels/Vieta/L06_Piecewise.lean:70
+#: Game/Levels/Vieta/L06_Piecewise.lean:72
 #, fuzzy
 msgid "Use definitions via §0"
 msgstr ""
@@ -8033,25 +8330,25 @@ msgstr ""
 "**Знайка**: Примени §0!"
 
 #. §0: `rw [if_pos «{h}»]`
-#: Game/Levels/Vieta/L06_Piecewise.lean:77
+#: Game/Levels/Vieta/L06_Piecewise.lean:79
 #, fuzzy
 msgid "Try §0 to reduce if-then-else"
 msgstr "**Знайка**: Теперь у тебя есть §0, чтобы упростить if-then-else."
 
 #. §0: `simp [f, g]`
-#: Game/Levels/Vieta/L06_Piecewise.lean:81
+#: Game/Levels/Vieta/L06_Piecewise.lean:83
 #, fuzzy
 msgid "[Vieta] Try §0 (again)"
 msgstr "**Знайка**: Ещё раз §0."
 
 #. §0: `if_pos`
-#: Game/Levels/Vieta/L06_Piecewise.lean:84
+#: Game/Levels/Vieta/L06_Piecewise.lean:86
 #, fuzzy
 msgid "Remind of negation for §0"
 msgstr "**Ты**: Ага, и отрицание §0 — это наверняка …"
 
 #. §0: `if_neg`
-#: Game/Levels/Vieta/L06_Piecewise.lean:86
+#: Game/Levels/Vieta/L06_Piecewise.lean:88
 #, fuzzy
 msgid "Use the negation §0"
 msgstr "**Знайка**: §0, точно!"
@@ -8173,7 +8470,7 @@ msgstr ""
 msgid "Try §0 to rewrite §1 to §2"
 msgstr "**Знайка**: А что, если с помощью §0 переписать предположение §1 в §2?"
 
-#: Game/Levels/Vieta/L10_Surjective.lean:77
+#: Game/Levels/Vieta/L10_Surjective.lean:80
 #, fuzzy
 msgid "Conclusion Vieta L10"
 msgstr "**Виета**:  Браво!  А теперь — ноги в руки и вперед. Вот сюда. Отведу вас обратно к кораблю."
@@ -8262,20 +8559,12 @@ msgstr "**Знайка**: Из-за кучи кванторов §0 тут не 
 #. §1: `f`
 #. §2: `f`
 #. §3: `g`
-#. §4: `Function.RightInverse`
-#. §5: `Function.RightInverse`
-#. §6: `RightInverse`
-#. §7: `RightInverse`
-#: Game/Levels/Epo/L03_LeftInverse.lean:23
-#, fuzzy
+#. §4: `RightInverse`
+#: Game/Levels/Epo/L03_LeftInverse.lean:22
 msgid ""
 "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
-"Try §4. It has to be written as §5 instead of §6\n"
-"because §7 is ambigous in Leanic."
+"Try §4."
 msgstr ""
-"**Ты**: Я так понимаю, это должно значить, что §0 является правым обратным к §1 тогда и только тогда, когда §2 является левым обратным к §3.\n"
-"\n"
-"**Знайка**:  Именно.  Но если мне не изменяет память, на линише это не столько теорема, сколько определение §4. К сожалению, приходится писать §5 вместо просто §6, потому что §7 на линише неоднозначно."
 
 #: Game/Levels/Epo/L04_RightInverse.lean:22
 #, fuzzy
@@ -8392,12 +8681,12 @@ msgstr "**Знайка**:  Начни с §0."
 
 #. §0: `«{f}»`
 #. §1: `«{ha}»`
-#: Game/Levels/Mono/L01_Injective.lean:46
+#: Game/Levels/Mono/L01_Injective.lean:48
 #, fuzzy
 msgid "Use §0 to simplify assumption §1"
 msgstr "**Знайка**: Думаю, сейчас тебе стоит упростить предположение §1 по определению §0."
 
-#: Game/Levels/Mono/L01_Injective.lean:54
+#: Game/Levels/Mono/L01_Injective.lean:57
 #, fuzzy
 msgid "Conclusion Mono L01"
 msgstr "Формалософы считают, что вы отлично справились."
@@ -8406,7 +8695,7 @@ msgstr "Формалософы считают, что вы отлично спр
 #. §1: `a ≠ b → f a ≠ f b`
 #. §2: `Injective.ne_iff`
 #. §3: `f a ≠ f b ↔ a ≠ b`
-#: Game/Levels/Mono/L02_InjectiveNeIff.lean:17
+#: Game/Levels/Mono/L02_InjectiveNeIff.lean:18
 #, fuzzy
 msgid ""
 "Use short cut by instead of the definition of §0 using equivalent description\n"
@@ -8414,16 +8703,21 @@ msgid ""
 "that §3"
 msgstr "**Знайка**: Тут можно срезать путь: вместо определения §0 используй эквивалентное описание инъективности §1. На линише это §2 — для инъективных отображений истинно §3."
 
-#. §0: `decide`
+#. §0: `Odd.neg_pow`
 #: Game/Levels/Mono/L02_InjectiveNeIff.lean:22
+msgid "Perhaps, try using the theorem §0 here"
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Mono/L02_InjectiveNeIff.lean:24
 #, fuzzy
 msgid "Perhaps, try using §0 here"
 msgstr "**Знайка**: §0?"
 
 #. §0: $$
 #. f(n) = \\begin{cases}
-#. n^2 & \\text{если } n \\text{ четно} \\ %(new line)
-#. n+1 & \\text{в противном случае.}
+#. n^2 & \\text{falls } n \\text{ gerade} \\\\ %(new line)
+#. n+1 & \\text{andernfalls.}
 #. \\end{cases}
 #. $$
 #. §1: `f + f`
@@ -9002,7 +9296,12 @@ msgstr ""
 "§1\n"
 "Теперь необходимо доказать равенство, но при дополнительном предположении, что §2 сюръективно."
 
-#: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:57
+#. §0: `image_preimage_subset`
+#: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:43
+msgid "[Hint rips] remember §0"
+msgstr ""
+
+#: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:58
 #, fuzzy
 msgid "Conclusion Samarkand L04"
 msgstr "**Араука**:  Вы так мне помогаете! Правда-правда!"
@@ -9024,7 +9323,7 @@ msgstr ""
 "\n"
 "**Знайка**: … а потом применяешь §2 и §3.  Именно."
 
-#: Game/Levels/Samarkand/L05_InjectiveFibre.lean:48
+#: Game/Levels/Samarkand/L05_InjectiveFibre.lean:50
 #, fuzzy
 msgid "Conclusion Samarkand L05"
 msgstr "Араука всё ещё лежит совершенно неподвижно, но выглядит счастливой."
@@ -9034,11 +9333,21 @@ msgstr "Араука всё ещё лежит совершенно неподв�
 msgid "Intro Samarkand L06"
 msgstr "**Араука**: А как насчёт вот этого?"
 
+#: Game/Levels/Samarkand/L06_PreimageNonempty.lean:40
+#, fuzzy
+msgid "Conclusion Samarkand L06"
+msgstr "**Араука**: Вы правы.  Я и сама могла бы до этого додуматься."
+
+#: Game/Levels/Samarkand/L07_PreimageNonempty2.lean:11
+#, fuzzy
+msgid "Intro Samarkand L07"
+msgstr "**Араука**:  А теперь у меня есть ещё одно задание. По-настоящему сложное."
+
 #. §0: `b`
 #. §1: `b`
 #. §2: `eq_empty_iff_forall_notMem`
 #. §3: `unfold Ne`
-#: Game/Levels/Samarkand/L06_PreimageNonempty.lean:25
+#: Game/Levels/Samarkand/L07_PreimageNonempty2.lean:25
 #, fuzzy
 msgid "Explain that §0 is not empty iff §1 has pre-image. Remind of §2 that can be used after §3"
 msgstr ""
@@ -9046,68 +9355,39 @@ msgstr ""
 "\n"
 "**Знайка**:  Да, кроме обозначений. К счастью, мы уже доказали §2. Чтобы её применить, тебе нужно лишь раскрыть знак неравенства, например с помощью §3. И всё!"
 
-#: Game/Levels/Samarkand/L06_PreimageNonempty.lean:36
-#, fuzzy
-msgid "Conclusion Samarkand L06"
-msgstr "**Араука**: Вы правы.  Я и сама могла бы до этого додуматься."
-
-#: Game/Levels/Samarkand/L07_LeftInvPreimage.lean:14
-#, fuzzy
-msgid "Intro Samarkand L07"
-msgstr "**Араука**:  А теперь у меня есть ещё одно задание. По-настоящему сложное."
-
-#: Game/Levels/Samarkand/L07_LeftInvPreimage.lean:23
-#, fuzzy
-msgid "Got to think about it..."
-msgstr "**Ты**:  Дай подумать …"
-
-#: Game/Levels/Samarkand/L07_LeftInvPreimage.lean:44
+#: Game/Levels/Samarkand/L07_PreimageNonempty2.lean:36
 #, fuzzy
 msgid "Conclusion Samarkand L07"
 msgstr "**Араука**:  Вау! Вы правда потрясающие."
 
-#: Game/Levels/Samarkand/L08_Preimage_Injective.lean:13
+#: Game/Levels/Samarkand/L08_LeftInvPreimage.lean:14
 #, fuzzy
 msgid "Intro Samarkand L08"
 msgstr "**Араука**:  Вы не могли бы помочь мне продвинуться ещё и с такой вот гипотезой?"
 
-#. §0: `preimage f`
-#: Game/Levels/Samarkand/L08_Preimage_Injective.lean:33
+#: Game/Levels/Samarkand/L08_LeftInvPreimage.lean:23
 #, fuzzy
-msgid "Explain surcetivity by §0"
-msgstr ""
-"**Знайка**:  Отображение сюръективно тогда и только тогда, когда индуцированное отображение §0, которое отправляет подмножество в прообраз этого подмножества, инъективно? Это вообще законно?\n"
-"\n"
-"**Ты**: Думаю, да.  Я это уже где-то видел.\n"
-"\n"
-"**Знайка**:  Ну тогда вперёд!"
+msgid "Got to think about it..."
+msgstr "**Ты**:  Дай подумать …"
 
-#: Game/Levels/Samarkand/L08_Preimage_Injective.lean:92
-#, fuzzy
-msgid "Conlsuion Samarkand L08"
+#: Game/Levels/Samarkand/L08_LeftInvPreimage.lean:44
+msgid "Conclusion Samarkand L08"
 msgstr ""
-"**Араука**:  Фантастика!  Я так взволнована, что просто хочется взлететь на воздух. Но, конечно, нельзя. Узор пропадёт.\n"
-"\n"
-"**Знайка**:  И сколько тебе ещё осталось?\n"
-"\n"
-"**Араука**:  Тут ещё три года, 22 дня, 7 часов и 35 минут.\n"
-"\n"
-"**Знайка**:  Охх …\n"
-"\n"
-"**Ты**:  А откуда ты знаешь, куда именно тебе потом нужно идти, чтобы узор совпал?\n"
-"\n"
-"**Араука**:  А!\n"
-"\n"
-"По лицу Арауки расплывается широкая улыбка.\n"
-"\n"
-"**Араука**:  В этом-то и искусство!"
 
-#: Game/Levels/Samarkand.lean:11
+#: Game/Levels/Samarkand/L09_Preimage_Injective.lean:13
+msgid "Intro Samarkand L09"
+msgstr ""
+
+#: Game/Levels/Samarkand/L09_Preimage_Injective.lean:86
+msgid "Conlsuion Samarkand L09"
+msgstr ""
+
+#: Game/Levels/Samarkand.lean:12
 #, fuzzy
 msgid "Samarkand"
 msgstr "Самарканд"
 
-#: Game/Levels/Samarkand.lean:47
+#: Game/Levels/Samarkand.lean:48
 #, fuzzy
 msgid "Intro Samarkand"
 msgstr ""
@@ -9247,17 +9527,192 @@ msgstr ""
 msgid "Use assumption §0 with §1"
 msgstr "**Знайка**: Здесь можешь использовать предположение §0 с помощью §1."
 
-#: Game/Levels/Iso/L02_Inverse.lean:135
-#, fuzzy
-msgid "Conclusion Iso L02"
+#: Game/Levels/Iso/L02_Inverse.lean:122
+msgid "Conclusion Iso L02 -- planet now continues"
 msgstr ""
-"Изософы выглядят очень довольными.\n"
+
+#: Game/Levels/Iso/L03_CurryEquiv.lean:19
+msgid "Intro Iso L03"
+msgstr ""
+
+#. §0: `ℕ → A → B`
+#. §1: `f : A → A → Y`
+#. §2: `A ≃ B`
+#. §3: `A → B`
+#. §4: `toFun : A → B`
+#. §5: `B → A`
+#. §6: `invFun : B → A`
+#. §7: `left_inv`
+#. §8: `right_inv`
+#. §9: `refine`
+#. §10: `refine ⟨f, g, ?_, ?_⟩`
+#. §11: `f`
+#. §12: `g`
+#. §13: `Function.curry`
+#. §14: `A × B → C`
+#. §15: `A → B → C`
+#. §16: `Function.uncurry`
+#: Game/Levels/Iso/L03_CurryEquiv.lean:25
+msgid ""
+"[Hint m2rqd] You have been reading §0 as a map into a function space since\n"
+"Epo, and Cantor's diagonal argument feeds two arguments into §1 the same way.\n"
+"Such a function of two arguments is really a function on the product.\n"
 "\n"
-"**Знайка**:  Можем теперь ещё раз … капсулировать?\n"
+"An equivalence §2 is not a proposition but *data*:\n"
+"a map §3 (§4), a backwards map §5 (§6),\n"
+"and two proofs §7 and §8 saying that these are mutually inverse.\n"
 "\n"
-"**Изософ**:  Конечно!  Но всегда аккуратно, по порядку. С тех пор как мы используем капсулы в обе стороны, аварии снова участились.\n"
+"To construct it, use a new tactic: §9. §10 fills in the\n"
+"two maps with §11 and §12 respectively, and leaves the two proofs as goals.\n"
 "\n"
-"Знайка ещё три раза ездит туда-сюда.  Потом вы летите дальше."
+"§13 goes from §14 to §15, and\n"
+"§16 back again."
+msgstr ""
+
+#: Game/Levels/Iso/L04_EquivalenceBijection.lean:12
+msgid "Intro Iso L04"
+msgstr ""
+
+#. §0: `f`
+#. §1: `f.toFun`
+#. §2: `f.invFun`
+#. §3: `f.left_inv`
+#. §4: `f.right_inv`
+#. §5: `f.symm`
+#: Game/Levels/Iso/L04_EquivalenceBijection.lean:17
+msgid ""
+"[Hint p4wnd] Given an equivalence §0, you can access its components\n"
+"and the relevant proofs with §1, §2, §3 and §4.\n"
+"However, it's recommended to rely on coercion and use\n"
+"- f in place of f.toFun, and\n"
+"- §5 in place of f.invFun"
+msgstr ""
+
+#. §0: `bijective_iff_has_inverse`
+#: Game/Levels/Iso/L04_EquivalenceBijection.lean:22
+msgid "[Hint 6my94] Remember we proved §0 a moment ago."
+msgstr ""
+
+#: Game/Levels/Iso/L05_BijectionEquivalence.lean:12
+msgid "Intro Iso L05"
+msgstr ""
+
+#. §0: `g : B → A`
+#. §1: `f`
+#: Game/Levels/Iso/L05_BijectionEquivalence.lean:19
+msgid ""
+"[Hint w6ktp] A map is bijective exactly when it has a two-sided inverse, i.e. some\n"
+"§0 undoing §1 in both directions."
+msgstr ""
+
+#. §0: `bijective_iff_has_inverse`
+#. §1: `«{h}»`
+#: Game/Levels/Iso/L05_BijectionEquivalence.lean:21
+msgid "[Hint r2xdn] Remember the theorem §0 and rewrite §1 with it."
+msgstr ""
+
+#. §0: `choose`
+#. §1: `«{h}»`
+#: Game/Levels/Iso/L05_BijectionEquivalence.lean:23
+msgid "[Hint f8vqc] Use §0 to extract the function from §1"
+msgstr ""
+
+#: Game/Levels/Iso/L06_Equivalence.lean:19
+msgid "Intro Iso L06"
+msgstr ""
+
+#. §0: `f : (Fin 3 → A ) → A × A × A`
+#: Game/Levels/Iso/L06_Equivalence.lean:24
+msgid ""
+"[Hint q7vk2] Here you need to build the equivalence by hand.\n"
+"Start by constructing a candidate for the forward map §0."
+msgstr ""
+
+#. §0: `A × A × A`
+#. §1: `(a, (b, c))`
+#. §2: `(a, b, c)`
+#: Game/Levels/Iso/L06_Equivalence.lean:26
+msgid ""
+"[Hint plisw] Recall that a triple in §0 is written as\n"
+"§1, or simply §2."
+msgstr ""
+
+#: Game/Levels/Iso/L06_Equivalence.lean:29
+msgid "[Hint elxld] Now the inverse map."
+msgstr ""
+
+#. §0: `Fin 3 → A`
+#. §1: `0 ↦ a`
+#. §2: `1 ↦ b`
+#. §3: `2 ↦ c`
+#. §4: `![a, b, c] : Fin 3 → A`
+#: Game/Levels/Iso/L06_Equivalence.lean:30
+msgid ""
+"[Hint kkivj] Remember that the function §0 sending\n"
+"§1, §2 and §3 is denoted §4."
+msgstr ""
+
+#. §0: `A × A × A`
+#. §1: `A × (A × A)`
+#. §2: `t : A × A × A`
+#. §3: `t.1`
+#. §4: `t.2.1`
+#. §5: `t.2.2`
+#: Game/Levels/Iso/L06_Equivalence.lean:32
+msgid ""
+"[Hint 9s56i] Also remember that §0 is really §1, so\n"
+"the components of §2 are called §3, §4 and §5."
+msgstr ""
+
+#. §0: `refine ⟨«{f}», «{g}», ?_, ?_⟩`
+#. §1: `toFun`
+#. §2: `«{f}»`
+#. §3: `invFun`
+#. §4: `«{g}»`
+#. §5: `left_inv`
+#. §6: `right_inv`
+#: Game/Levels/Iso/L06_Equivalence.lean:35
+msgid ""
+"[Hint g0kn2] §0 sets §1 to §2 and\n"
+"§3 to §4, leaving the proofs of §5 and §6 as goals."
+msgstr ""
+
+#. §0: `LeftInverse`
+#. §1: `«{f}»`
+#. §2: `«{g}»`
+#: Game/Levels/Iso/L06_Equivalence.lean:38
+msgid "[Hint v8rq2] Unfold §0, §1 and §2 and simplify."
+msgstr ""
+
+#. §0: `funext`
+#: Game/Levels/Iso/L06_Equivalence.lean:41
+msgid ""
+"[Hint k3mwt] Two functions are equal as soon as they agree on every\n"
+"argument — that is §0."
+msgstr ""
+
+#. §0: `x`
+#. §1: `fin_cases x`
+#: Game/Levels/Iso/L06_Equivalence.lean:44
+msgid ""
+"[Hint dz6pf] Only three values of §0 are possible;\n"
+"§1 treats them one by one."
+msgstr ""
+
+#. §0: `simp`
+#: Game/Levels/Iso/L06_Equivalence.lean:47
+msgid "[Hint n5hjb] Try §0."
+msgstr ""
+
+#. §0: `RightInverse`
+#. §1: `LeftInverse`
+#. §2: `«{f}»`
+#. §3: `«{g}»`
+#: Game/Levels/Iso/L06_Equivalence.lean:51
+msgid ""
+"[Hint t7gks] Unfold §0, §1, §2 and §3,\n"
+"then simplify."
+msgstr ""
 
 #: Game/Levels/Iso.lean:10
 #, fuzzy
@@ -9518,42 +9973,68 @@ msgstr ""
 "\n"
 "**Знайка**: А, вот оно что. Принцип, равенства двух множеств тогда и только тогда, когда у них одинаковые элементы, логики называют *объемность* (экстенсиональность). А из этого формалософы, видимо, сделали *ext*, потому что иначе слишком длинно выходит."
 
-#: Game/Levels/Piazza/L07_antisymm_iff.lean:14
+#. §0: `(univ \\ A)`
+#: Game/Levels/Piazza/L07_compl_even.lean:8
+msgid "Intro Piazza 7: Can write §0 in a nicer way."
+msgstr ""
+
+#. §0: `Aᶜ`
+#. §1: `A`
+#. §2: `(univ \\ A)`
+#: Game/Levels/Piazza/L07_compl_even.lean:14
+msgid "[Hint yctv9] §0 means complement of §1, i.e. §2."
+msgstr ""
+
+#. §0: `ext`
+#: Game/Levels/Piazza/L07_compl_even.lean:15
+msgid "[Hint wjedv] Try §0"
+msgstr ""
+
+#. §0: `simp`
+#: Game/Levels/Piazza/L07_compl_even.lean:17
+msgid "[Hint uww7c] Perform §0 again"
+msgstr ""
+
+#: Game/Levels/Piazza/L07_compl_even.lean:23
+msgid "Conclusion Piazza L07."
+msgstr ""
+
+#: Game/Levels/Piazza/L08_antisymm_iff.lean:14
 #, fuzzy
 msgid "Intro Piazza L07"
 msgstr "**Множ**: А мне нравится вот такая эквивалентность."
 
-#: Game/Levels/Piazza/L07_antisymm_iff.lean:24
+#: Game/Levels/Piazza/L08_antisymm_iff.lean:24
 #, fuzzy
 msgid "Reminder of set equality"
 msgstr "**Ты**:  Да, кажется, я так это когда-то учил: два множества равны, если каждое из них является подмножеством другого."
 
 #. §0: `constructor`
-#: Game/Levels/Piazza/L07_antisymm_iff.lean:26
+#: Game/Levels/Piazza/L08_antisymm_iff.lean:26
 #, fuzzy
 msgid "Start here by trying §0"
 msgstr "**Знайка**:  Даже не знаю… Я бы начал с §0."
 
 #. §0: `«{A}»`
 #. §1: `«{B}»`
-#: Game/Levels/Piazza/L07_antisymm_iff.lean:30
+#: Game/Levels/Piazza/L08_antisymm_iff.lean:30
 #, fuzzy
 msgid "Try replacing §0 by §1"
 msgstr "**Знайка**: Замени §0 на §1."
 
-#: Game/Levels/Piazza/L07_antisymm_iff.lean:35
+#: Game/Levels/Piazza/L08_antisymm_iff.lean:35
 #, fuzzy
 msgid "Try ext, tauto"
 msgstr "**Знайка**: Отсюда все должно работать как раньше."
 
-#: Game/Levels/Piazza/L08_subset_iff.lean:15
+#: Game/Levels/Piazza/L09_subset_iff.lean:15
 #, fuzzy
 msgid "Intro Piazza L08"
 msgstr "**Подм**:  Ты прав. Но нам стоит чуть больше расспросить вас о подмножествах."
 
 #. §0: `tauto`
 #. §1: `rfl`
-#: Game/Levels/Piazza/L08_subset_iff.lean:28
+#: Game/Levels/Piazza/L09_subset_iff.lean:28
 #, fuzzy
 msgid "Try §0 or directly §1"
 msgstr ""
@@ -9561,7 +10042,7 @@ msgstr ""
 "\n"
 "**Знайка** *(тебе)*: Попробуй §0.  Или сразу §1."
 
-#: Game/Levels/Piazza/L09_subset_iff2.lean:15
+#: Game/Levels/Piazza/L10_subset_iff2.lean:15
 #, fuzzy
 msgid "Intro Piazza L09"
 msgstr "**Подм**:  Ну-ну.  Всего лишь определение! А если вам теперь придётся работать с такими подмножествами?"
@@ -9571,7 +10052,7 @@ msgstr "**Подм**:  Ну-ну.  Всего лишь определение! �
 #. §2: `A`
 #. §3: `C`
 #. §4: `rw [subset_iff] at *`
-#: Game/Levels/Piazza/L09_subset_iff2.lean:32
+#: Game/Levels/Piazza/L10_subset_iff2.lean:32
 #, fuzzy
 msgid ""
 "Using §0 would be too complicated. It is simpler to use §1 to introduce\n"
@@ -9584,30 +10065,30 @@ msgstr ""
 "\n"
 "Но, может, сначала всё-таки распишешь всё с §4, чтобы увидеть что какому множеству принадлежит."
 
-#: Game/Levels/Piazza/L10.lean:14
+#: Game/Levels/Piazza/L11.lean:14
 #, fuzzy
 msgid "Intro Piazza L10"
 msgstr "**Прин**:  Дайте и мне задать ещё вопрос!"
 
 #. §0: `intro`
-#: Game/Levels/Piazza/L10.lean:22
+#: Game/Levels/Piazza/L11.lean:22
 #, fuzzy
 msgid "Start with §0"
 msgstr "**Знайка**:  Я бы снова начал с §0."
 
 #. §0: `intro`
 #. §1: `SECOND`
-#: Game/Levels/Piazza/L10.lean:27
+#: Game/Levels/Piazza/L11.lean:27
 #, fuzzy
 msgid "Try §0 again §1"
 msgstr "**Знайка**:  И ещё раз §0!"
 
-#: Game/Levels/Piazza/L10.lean:41
+#: Game/Levels/Piazza/L11.lean:41
 #, fuzzy
 msgid "Conclusion Piazza L10"
 msgstr "**Прин**:  Ну супер, вы и правда быстро научились!"
 
-#: Game/Levels/Piazza/L11_erase.lean:22
+#: Game/Levels/Piazza/L12_erase.lean:22
 #, fuzzy
 msgid "Intro Piazza L11"
 msgstr ""
@@ -9627,7 +10108,7 @@ msgstr ""
 #. §3: `a`
 #. §4: `A`
 #. §5: `a`
-#: Game/Levels/Piazza/L11_erase.lean:36
+#: Game/Levels/Piazza/L12_erase.lean:36
 #, fuzzy
 msgid ""
 "§0 here means that §1 belongs to the finite subsets of ℕ.\n"
@@ -9637,29 +10118,29 @@ msgstr ""
 "\n"
 "**Знайка**:  Это значит, что §1 относится к *конечным* подмножествам ℕ. Но для вопроса это вообще-то неважно. Слева стоит §2 без §3, справа тоже стоит §4 без §5."
 
-#: Game/Levels/Piazza/L12_insert.lean:13
+#: Game/Levels/Piazza/L13_insert.lean:13
 #, fuzzy
 msgid "Intro Piazza L12"
 msgstr "**Кон**: Верно. А теперь я кладу фисташку обратно."
 
-#: Game/Levels/Piazza/L13_insert_erase.lean:13
+#: Game/Levels/Piazza/L14_insert_erase.lean:13
 #, fuzzy
 msgid "Intro Piazza L13"
 msgstr "**Кон**: Ну что, как думаете — все фисташки теперь вернулись на место?"
 
 #. §0: `«{b}» = a`
-#: Game/Levels/Piazza/L13_insert_erase.lean:30
+#: Game/Levels/Piazza/L14_insert_erase.lean:30
 #, fuzzy
 msgid "Try proof by cases, if §0"
 msgstr "**Кон**: Сделай-ка разбор случаев: §0 истинно или ложно."
 
 #. §0: `constructor`
-#: Game/Levels/Piazza/L13_insert_erase.lean:34
+#: Game/Levels/Piazza/L14_insert_erase.lean:34
 #, fuzzy
 msgid "[Piazza.L13] Hint 1: You can begin with §0"
 msgstr "**Кон**: Да, хорошая идея."
 
-#: Game/Levels/Piazza/L13_insert_erase.lean:61
+#: Game/Levels/Piazza/L14_insert_erase.lean:61
 #, fuzzy
 msgid "Conclusion Piazza L13"
 msgstr ""
@@ -9667,12 +10148,12 @@ msgstr ""
 "\n"
 "**Знайка**:  Думаю, мы можем лететь дальше."
 
-#: Game/Levels/Piazza.lean:16
+#: Game/Levels/Piazza.lean:17
 #, fuzzy
 msgid "Piazza"
 msgstr "Ярмарка"
 
-#: Game/Levels/Piazza.lean:44
+#: Game/Levels/Piazza.lean:45
 #, fuzzy
 msgid "Intro Piazza"
 msgstr ""
@@ -9690,12 +10171,2536 @@ msgstr ""
 "\n"
 "**Ты**:  Ну и как, уже научились чему-нибудь?"
 
-#: Game.lean:31
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:8
+msgid "Intro Espresso L01"
+msgstr ""
+
+#. §0: `lt_trichotomy`
+#. §1: `a`
+#. §2: `c`
+#. §3: ```
+#. have h := lt_trichotomy a c
+#. ```
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:11
+msgid ""
+"[Hint lt] Try to use the theorem §0 to discuss relations between §1 and §2\n"
+"§3\n"
+msgstr ""
+
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:17
+msgid "[Hint 815af] You need to distinguish cases."
+msgstr ""
+
+#. §0: `obtain h | h | h := h`
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:18
+msgid "[Hint dy3w7] Try §0"
+msgstr ""
+
+#. §0: `lt_trichotomy`
+#. §1: `obtain`
+#. §2: `x`
+#. §3: `y`
+#. §4: `x < y`
+#. §5: `x = y`
+#. §6: `x > y`
+#. §7: ```
+#. obtain h | h | h := lt_trichotomy x y
+#. ```
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:26
+msgid ""
+"[Doc.Theorem] §0:\n"
+"Typically used with §1 to split a proof concerning §2 and §3 into the three cases\n"
+"§4, §5 and §6:\n"
+"§7"
+msgstr ""
+
+#: Game/Levels/Espresso/L01_Lt_trichotomy.lean:37
+msgid "Conclusion Espresso L01"
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L02_grind.lean:8
+msgid "Intro Espresso L02: §0"
+msgstr ""
+
+#: Game/Levels/Espresso/L02_grind.lean:15
+msgid "Conclusion Espresso L02"
+msgstr ""
+
+#: Game/Levels/Espresso/L03.lean:6
+msgid "Intro Espresso L03"
+msgstr ""
+
+#. §0: `b`
+#: Game/Levels/Espresso/L03.lean:10
+msgid "It is clear which §0 can be used."
+msgstr ""
+
+#: Game/Levels/Espresso/L03.lean:15
+msgid "Conclusion Espresso L03"
+msgstr ""
+
+#: Game/Levels/Espresso/L04.lean:8
+msgid "Intro Espresso L04"
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L04.lean:15
+msgid ""
+"[Hint grindRing] This goal is a polynomial identity in the integers.\n"
+"Not so easy without §0."
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#. §2: `c`
+#. §3: $-2$
+#. §4: $2$
+#: Game/Levels/Espresso/L04.lean:26
+msgid ""
+"Conclusion Espresso L04:\n"
+"  From the quadratic hypothesis, you see that each of §0, §1 and §2 is an integer between §3 and §4.\n"
+"  If you plug in these possible values into the other two hypotheses, you will find that at least one\n"
+"  of them is always false. So the exact conclusion here is not relevant."
+msgstr ""
+
+#: Game/Levels/Espresso/L05.lean:8
+msgid "Intro Espresso L05"
+msgstr ""
+
+#. §0: `y`
+#. §1: `x`
+#. §2: `x ≤ 0`
+#. §3: `y = 0`
+#. §4: `0 ≤ y`
+#. §5: `0 < x`
+#. §6: `y = x`
+#. §7: `0 ≤ y`
+#. §8: `grind`
+#: Game/Levels/Espresso/L05.lean:12
+msgid ""
+"[Hint grindSplitIf] §0 depends on §1.\n"
+"If §2 then §3, so §4.\n"
+"Otherwise, if §5, then §6, so again §7.\n"
+"Anyway, can prove this with §8."
+msgstr ""
+
+#: Game/Levels/Espresso/L05.lean:19
+msgid "Conclusion Espresso L05"
+msgstr ""
+
+#. §0: `2 * x + 4 * y`
+#. §1: `5`
+#. §2: `grind`
+#. §3: `grind`
+#: Game/Levels/Espresso/L06.lean:9
+msgid ""
+"[Hint grindLia] The left-hand side §0 is always even, while §1 is odd, so they\n"
+"can never be equal. §2 can reason about such linear integer arithmetic on its own, so just\n"
+"try §3."
+msgstr ""
+
+#: Game/Levels/Espresso/L07_nhds.lean:8
+msgid "Intro Espresso L07"
+msgstr ""
+
+#. §0: `Ioo (-1 / 5) (1 / 5)`
+#. §1: $\\tfrac{-1}{5}$
+#. §2: $\\tfrac{1}{5}$
+#. §3: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#. §4: `𝓝 0`
+#. §5: `0`
+#. §6: `0`
+#. §7: `grind`
+#. §8: `IsOpen.mem_nhds_iff`
+#: Game/Levels/Espresso/L07_nhds.lean:13
+msgid ""
+"[Hint mdsff]\n"
+"§0 is the open interval between §1 and §2,\n"
+"i.e. §3.\n"
+"§4 is the filter of neighborhoods of §5 (sets containing §6 in their interior).\n"
+"Joke about filter/coffee/§7.\n"
+"As the interval is open, can proceed with new theorem §8. "
+msgstr ""
+
+#. §0: `0`
+#. §1: $(\\tfrac{-1}{5},\\tfrac{1}{5})$
+#: Game/Levels/Espresso/L07_nhds.lean:20
+msgid ""
+"[Hint 33o0v] See: Now just need to prove that §0 lies in the interval\n"
+"§1,\n"
+"and that the interval is indeed open."
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L07_nhds.lean:23
+msgid "[Hint tdsg] Try §0"
+msgstr ""
+
+#. §0: `isOpen_Ioo`
+#: Game/Levels/Espresso/L07_nhds.lean:25
+msgid "[Hint hdioioo] Open interval is an open set. New theorem: §0."
+msgstr ""
+
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:10
+msgid "Intro Espresso L08"
+msgstr ""
+
+#. §0: `0`
+#. §1: `𝓝[>] 0`
+#. §2: $(0,\\infty)$
+#. §3: `𝓝[≠] 0`
+#. §4: $\\mathbb{R}\\setminus \\{0\\}$
+#. §5: `≤`
+#. §6: `nhdsWithin_mono`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:13
+msgid ""
+"[Hint nhdsmno] We have two modified neighborhood filters of §0.\n"
+"§1 is the filter “approaching zero from the right”:\n"
+"it consists of all sets that contain the positive part of a neighborhood of 0,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §2.\n"
+"§3 is the filter “approaching zero without ever being equal to zero”:\n"
+"it consists of all sets that contain a punctured neighborhood of zero,\n"
+"i.e. that contain the intersection of a neighborhood of 0 with §4.\n"
+"§5 means that the first filter is finer than the second,\n"
+"i.e. that every set in the second is also contained in the first.\n"
+"Apply the new theorem §6."
+msgstr ""
+
+#. §0: `Ioi 0`
+#. §1: $(0,∞)$
+#. §2: `{0}ᶜ`
+#. §3: `0`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:24
+msgid ""
+"[Hint ggfkp] This looks better.\n"
+"§0 is the interval §1.\n"
+"And §2 is the complement of §3 in ℝ."
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:27
+msgid "[Hint tg8nh] Try §0."
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Espresso/L08_nhdsWithin.lean:30
+msgid "Conclusion Espresso L08: Remember §0."
+msgstr ""
+
+#: Game/Levels/Espresso.lean:15
+msgid "Espresso"
+msgstr ""
+
+#: Game/Levels/Espresso.lean:46
+msgid "Intro Espresso"
+msgstr ""
+
+#. §0: `a`
+#. §1: `ℝ`
+#. §2: `a : ℝ`
+#. §3: `𝓝 a`
+#: Game/Levels/Cartan/L01.lean:8
+msgid ""
+"Intro Cartan L01: Remember that for a point §0 in §1 (§2), §3 is the set\n"
+"of all neighborhoods of a, i.e. subsets of ℝ that contain an open ball around a."
+msgstr ""
+
+#. §0: `a`
+#. §1: `𝓝 a`
+#. §2: `Filter.inter_mem`
+#: Game/Levels/Cartan/L01.lean:23
+msgid ""
+"[Hint zmbq]\n"
+"Need to show that the intersection of two neighborhoods of §0 is\n"
+"still a neighborhood of a.\n"
+"\n"
+"§1 is a filter, so this is an instance of the third filter\n"
+"axiom, recorded in Mathlib as §2."
+msgstr ""
+
+#: Game/Levels/Cartan/L01.lean:31
+msgid "Conclusion Cartan L01: Are there any other filters?"
+msgstr ""
+
+#. §0: `ℝ`
+#. §1: `𝓝 a`
+#. §2: `atTop`
+#. §3: `atTop`
+#. §4: `+∞`
+#. §5: `b`
+#. §6: `+∞`
+#: Game/Levels/Cartan/L02.lean:8
+msgid ""
+"Can think of filters as generalized points.\n"
+"§0 has many filters other than §1.\n"
+"The filter §2 on ℝ is the generalized point 'at infinity': a set belongs to\n"
+"§3 when it contains every sufficiently large number, i.e. when it is a\n"
+"neighborhood of §4'.\n"
+"\n"
+"In this level you prove that the *open* ray beyond §5 is also a\n"
+"neighborhood of §6."
+msgstr ""
+
+#. §0: `Filter.mem_atTop`
+#. §1: `{x | b + 1 ≤ x}`
+#. §2: `atTop`
+#: Game/Levels/Cartan/L02.lean:24
+msgid ""
+"[Hint pkzt] By §0, the ray §1 belongs to\n"
+"§2.  Show this first."
+msgstr ""
+
+#. §0: `Filter.mem_of_superset`
+#: Game/Levels/Cartan/L02.lean:29
+#: Game/Levels/Cartan/L02.lean:35
+#: Game/Levels/Cartan/L08.lean:26
+msgid "Second filter axiom says filter is upward closed (§0)."
+msgstr ""
+
+#: Game/Levels/Cartan/L02.lean:32
+msgid "[Hint ht1zj] This statement is correct, but it won't help you."
+msgstr ""
+
+#. §0: `univ`
+#. §1: `Filter.univ_mem`
+#: Game/Levels/Cartan/L02.lean:62
+msgid ""
+"Conclusion Cartan L02: Any other filter axioms?  Yes, filter is non-empty.\n"
+"Equivalently, it contains §0 (§1)."
+msgstr ""
+
+#. §0: `𝓟 s`
+#. §1: `s`
+#: Game/Levels/Cartan/L03.lean:8
+msgid ""
+"Intro Cartan L03: another example. The *principal filter* §0 of a set §1 if it\n"
+"consists of all supersets of s."
+msgstr ""
+
+#. §0: `𝓕 ≤ 𝓖`
+#. §1: `𝓖`
+#. §2: `𝓕`
+#. §3: `le_def`
+#. §4: `𝓟 s ≤ 𝓟 t`
+#. §5: `s ⊆ t`
+#: Game/Levels/Cartan/L03.lean:27
+msgid ""
+"Filters are ordered: §0 means that every member of §1 is also a member of §2\n"
+"(§3). Note that this is the *reverse* of set inclusion — but it is chosen\n"
+"so that §4 holds exactly when §5."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `∀ᶠ x in 𝓕, p x`
+#. §2: `p x`
+#. §3: `{x | p x}`
+#: Game/Levels/Cartan/L04.lean:9
+msgid ""
+"[Hint zntfk] For a filter §0, §1 says that §2 holds *eventually*\n"
+"i.e. the set §3 is a member of 𝓕."
+msgstr ""
+
+#. §0: `mem_atTop`
+#: Game/Levels/Cartan/L04.lean:11
+msgid "[Hint ysocy] Remember §0"
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `∀ᶠ x in 𝓕, p x`
+#. §2: `p x`
+#. §3: `{ x | p x}`
+#: Game/Levels/Cartan/L05.lean:10
+msgid ""
+"[Hint zntfk] For a filter §0, §1 says that §2 holds *eventually*,\n"
+"i.e. the set §3 is a member of 𝓕."
+msgstr ""
+
+#. §0: `∀ᶠ x in 𝓝 a, x < 0`
+#. §1: `have`
+#: Game/Levels/Cartan/L06.lean:10
+msgid "[Hint fjpr0] First establish §0 with §1."
+msgstr ""
+
+#. §0: `filter_upwards [«{h_even}»]`
+#: Game/Levels/Cartan/L06.lean:13
+#: Game/Levels/Cartan/L07.lean:21
+msgid "[Hint 4j4cl] Try §0."
+msgstr ""
+
+#. §0: `filter_upwards`
+#. §1: `h₁ : ∀ᶠ x in 𝓕, p₁ x`
+#. §2: `∀ᶠ x in 𝓕, p x`
+#. §3: `filter_upwards [h₁]'`
+#. §4: `p₁ x → p x`
+#: Game/Levels/Cartan/L06.lean:17
+msgid ""
+"Conclusion Cartan L06:  What does §0 do?\n"
+"Suppose we have an eventual hypothesis §1\n"
+"and an eventual goal §2.\n"
+"Then §3 reduces the goal to the point-wise implication §4."
+msgstr ""
+
+#. §0: `filter_upwards`
+#: Game/Levels/Cartan/L07.lean:8
+msgid "Intro Cartan L07: another example for §0"
+msgstr ""
+
+#. §0: `∀ᶠ x in 𝓝 b, x ∈ Ioo a c`
+#. §1: `have`
+#: Game/Levels/Cartan/L07.lean:15
+msgid "[Hint evmb1] First establish §0 with §1."
+msgstr ""
+
+#. §0: `a`
+#. §1: `IsOpen.eventually_mem`
+#: Game/Levels/Cartan/L07.lean:17
+msgid ""
+"[Hint evem2] An open set containing §0 holds eventually near a:\n"
+"apply §1."
+msgstr ""
+
+#. §0: $x ↦ \\tfrac{1}{x}$
+#: Game/Levels/Cartan/L08.lean:8
+msgid "Intro Cartan L08: introduce the function §0"
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `∀ᶠ x in 𝓕, p x`
+#. §2: `p x`
+#. §3: `{ x | p x}`
+#. §4: `rw`
+#. §5: `eventually_iff`
+#: Game/Levels/Cartan/L08.lean:22
+msgid ""
+"[Hint zntfk] For a filter §0, §1 says that §2 holds *eventually*,\n"
+"i.e. the set §3 is a member of 𝓕. You can do it by §4ing with\n"
+"§5."
+msgstr ""
+
+#. §0: `{x | 6 ≤ x}`
+#: Game/Levels/Cartan/L08.lean:27
+msgid "[Hint fmt6] Note that §0 is a subset of left hand side."
+msgstr ""
+
+#. §0: `inv_lt_inv₀`
+#: Game/Levels/Cartan/L08.lean:31
+msgid "[Hint ilinv] Note that §0 is useful here."
+msgstr ""
+
+#: Game/Levels/Cartan/L09.lean:8
+msgid "Intro Cartan L09"
+msgstr ""
+
+#. §0: `by_contra h`
+#. §1: `intro h`
+#: Game/Levels/Cartan/L09.lean:26
+msgid "[Hint bcorin] First, you can begin with §0 or §1."
+msgstr ""
+
+#. §0: `∀ᶠ x in 𝓝[<] (0 : ℝ), 1 / x > 5`
+#. §1: `have`
+#: Game/Levels/Cartan/L09.lean:28
+msgid ""
+"[Hint fjpr0] Then establish\n"
+"§0 with §1."
+msgstr ""
+
+#. §0: `𝓕₁`
+#. §1: `𝓕₂`
+#. §2: `𝓕₁ ≤ 𝓕₂`
+#. §3: `p x`
+#: Game/Levels/Cartan/L09.lean:31
+msgid ""
+"[Hint fltm] For any two filters §0 and §1 with §2, then\n"
+"§3 holds eventually in 𝓕₂ implies that p x holds eventually in 𝓕₁. "
+msgstr ""
+
+#. §0: `apply Eventually.filter_mono _ «{h}»`
+#: Game/Levels/Cartan/L09.lean:33
+msgid "[Hint hfltm] Apply this theorem by using §0."
+msgstr ""
+
+#. §0: `nhdsWithin_mono`
+#: Game/Levels/Cartan/L09.lean:35
+msgid "Remember we have the theorem §0."
+msgstr ""
+
+#. §0: `∀ᶠ (x : ℝ) in 𝓝[<] 0, 1 / x > 5 ∧ x ∈ Set.Iio 0`
+#. §1: `have`
+#: Game/Levels/Cartan/L09.lean:38
+msgid ""
+"[Hint cghfe] Excellent! You are on track. Now establish a similar lemma\n"
+"§0 with §1."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `p x ∧ q x`
+#. §2: `p x`
+#. §3: `q x`
+#: Game/Levels/Cartan/L09.lean:41
+msgid ""
+"[Hint cghfe1] For a filter §0, §1 holds eventually in 𝓕 is equivalent to\n"
+"§2 holds eventually in 𝓕 and §3 holds eventually in 𝓕."
+msgstr ""
+
+#. §0: `𝓝[<] 0`
+#. §1: `0`
+#. §2: `Set.Iio 0`
+#: Game/Levels/Cartan/L09.lean:46
+msgid "[Hint emnwi] Remember that §0 is a neighborhood filter around §1 within §2."
+msgstr ""
+
+#. §0: `eventually_mem_nhdsWithin`
+#: Game/Levels/Cartan/L09.lean:47
+msgid "[Hint hdevmwi] Try §0."
+msgstr ""
+
+#. §0: `𝓕`
+#. §1: `p x`
+#. §2: `Eventually.exists`
+#: Game/Levels/Cartan/L09.lean:49
+msgid ""
+"[Hint c9ea] For a filter §0 and a proposition §1 eventually holds in 𝓕, then\n"
+"there is a element in 𝓕, such that p x holds. This is §2 in Mathlib."
+msgstr ""
+
+#. §0: `1 / x > 5`
+#. §1: `x ∈ Set.Iio 0`
+#: Game/Levels/Cartan/L09.lean:53
+msgid ""
+"[Hint oexc9] Then we obtain an element with properties §0 and\n"
+"§1, which will lead to a contradiction. "
+msgstr ""
+
+#: Game/Levels/Cartan/L10.lean:8
+msgid "Intro Cartan L10 (Boss level)"
+msgstr ""
+
+#. §0: `∀ᶠ (x : ℝ) in 𝓝[>] 0, x ∈ Set.Ioi 0 ∧ x < 1 / 5`
+#. §1: `have`
+#: Game/Levels/Cartan/L10.lean:12
+msgid "[Hint c10hx] First, establish §0 by §1."
+msgstr ""
+
+#. §0: `Filter.eventually_and`
+#: Game/Levels/Cartan/L10.lean:14
+msgid "Remember that we have theorem §0"
+msgstr ""
+
+#. §0: `eventually_mem_nhdsWithin`
+#: Game/Levels/Cartan/L10.lean:17
+msgid "[Hint rmemnwi] Remember the theorem §0."
+msgstr ""
+
+#. §0: `∀ᶠ (x : ℝ) in 𝓝 0, x < 1 / 5`
+#: Game/Levels/Cartan/L10.lean:19
+msgid "[Hint sfeo5] It suffices to prove that §0."
+msgstr ""
+
+#. §0: `𝓕₁`
+#. §1: `𝓕₂`
+#. §2: `𝓕₁ ≤ 𝓕₂`
+#. §3: `p x`
+#: Game/Levels/Cartan/L10.lean:21
+msgid ""
+"[Hint rthxf] Remember that you met this situation before.\n"
+"For any two filters §0 and §1 with §2, then\n"
+"§3 holds eventually in 𝓕₂ implies that p x holds eventually in 𝓕₁. "
+msgstr ""
+
+#. §0: `s`
+#. §1: `a`
+#. §2: `a`
+#. §3: `nhdsWithin_le_nhds`
+#: Game/Levels/Cartan/L10.lean:25
+msgid ""
+"[Hint nwlns] A neighborhood filter within a set §0 around §1 is small than neighborhood\n"
+"filter around §2. This is exactly the theorem §3."
+msgstr ""
+
+#. §0: `eventually_lt_nhds`
+#: Game/Levels/Cartan/L10.lean:28
+msgid "[Hint teltn] Try §0."
+msgstr ""
+
+#. §0: `filter_upwards [«{hx}»]`
+#: Game/Levels/Cartan/L10.lean:31
+msgid "[Hint flc10hx] Try §0."
+msgstr ""
+
+#. §0: `lt_inv_comm₀`
+#: Game/Levels/Cartan/L10.lean:33
+msgid "[Hint licmmu] §0 might be useful here. "
+msgstr ""
+
+#: Game/Levels/Cartan/L11.lean:6
+msgid "Intro Cartan L11"
+msgstr ""
+
+#. §0: `filter_upwards [«{h1}», «{h2}»]`
+#: Game/Levels/Cartan/L11.lean:13
+msgid "[Hint fh2c11] Try §0."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f`
+#. §2: `IsLocallyConstant f`
+#. §3: `f ⁻¹' s`
+#. §4: `s`
+#. §5: `x`
+#. §6: `𝓝 x`
+#: Game/Levels/Cartan/L12.lean:8
+msgid ""
+"Intro Cartan L12:\n"
+"A function §0 is *locally constant* if every point has a neighborhood on which\n"
+"§1 is constant. In Mathlib this is captured by §2, which is\n"
+"defined as: the preimage §3 of *every* set §4 is open.\n"
+"\n"
+"Here you show that a locally constant function is *eventually* equal to its\n"
+"value at §5, for the neighborhood filter §6."
+msgstr ""
+
+#: Game/Levels/Cartan/L12.lean:22
+msgid "[Hint pissfx] The preimage of single point set {f x} is open."
+msgstr ""
+
+#. §0: `IsOpen (f ⁻¹' {f x})`
+#. §1: `have`
+#: Game/Levels/Cartan/L12.lean:23
+msgid "[Hint hpissfx] Establish §0 by §1."
+msgstr ""
+
+#. §0: `filter_upwards`
+#. §1: `IsOpen.eventually_mem`
+#: Game/Levels/Cartan/L12.lean:26
+msgid "[Hint tfuiem] Remember §0 and §1."
+msgstr ""
+
+#: Game/Levels/Cartan/L13.lean:6
+msgid "Intro Cartan 13 (second Boss)"
+msgstr ""
+
+#. §0: `∀ᶠ y in 𝓝 x, f y = f x`
+#. §1: `have`
+#: Game/Levels/Cartan/L13.lean:12
+msgid ""
+"[Hint c13f] First, establish §0 by §1. Remember the proof\n"
+"in the previous level. "
+msgstr ""
+
+#. §0: `g`
+#: Game/Levels/Cartan/L13.lean:20
+msgid "[Hint pyos] Perfect! You are on track. You can also prove similar result for function §0. "
+msgstr ""
+
+#. §0: `rw`
+#. §1: `«{h}»`
+#. §2: `«{he1}»`
+#: Game/Levels/Cartan/L13.lean:27
+msgid "[Hint rhhe1] Try to §0 with §1 at §2."
+msgstr ""
+
+#. §0: `filter_upwards [«{he1}», «{he2}»]`
+#: Game/Levels/Cartan/L13.lean:29
+msgid "[Hint fuhe2] Now, §0."
+msgstr ""
+
+#: Game/Levels/Cartan.lean:22
+msgid "Cartan"
+msgstr ""
+
+#: Game/Levels/Cartan.lean:24
+msgid "Intro Cartan"
+msgstr ""
+
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:6
+msgid "Intro Aquarius L01: bounded above means having an upper bound."
+msgstr ""
+
+#. §0: `s`
+#. §1: `T`
+#. §2: `s : Set T`
+#. §3: `b`
+#. §4: `b : T`
+#. §5: `b ∈ upperBounds s`
+#. §6: `s ≤ b`
+#. §7: `s`
+#. §8: `T`
+#. §9: `s : Set T`
+#. §10: `BddAbove s`
+#. §11: `b`
+#. §12: `b : T`
+#. §13: `b ∈ upperBounds s`
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:11
+msgid ""
+"[Hint upbd] Given a subset §0 of a set §1 (§2) and an element §3 of T (§4),\n"
+"§5 means that b is an *upper bound* of s: §6 for every element of s.\n"
+"\n"
+"For subset §7 of a set §8 (§9), §10 means that there exists some §11 in T\n"
+"(§12) such that §13."
+msgstr ""
+
+#. §0: `b`
+#. §1: `use`
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:16
+msgid ""
+"[Hint s88tx] You already have one upper bound, namely §0.\n"
+"Provide it as witness with §1."
+msgstr ""
+
+#: Game/Levels/Aquarius/L01_UpperBounds.lean:23
+msgid "Conclusion Aquarius L01"
+msgstr ""
+
+#: Game/Levels/Aquarius/L02_BddAbove.lean:6
+msgid "Intro Aquarius L02"
+msgstr ""
+
+#. §0: $\\{x \\in (a,b) | p(x) \\}$
+#. §1: `BddAbove`
+#. §2: `rw`
+#. §3: `bddAbove_def`
+#: Game/Levels/Aquarius/L02_BddAbove.lean:12
+msgid ""
+"[Hint bdad]\n"
+"Need to show that §0 is bounded above.\n"
+"Expand §1 with §2 and new theorem §3."
+msgstr ""
+
+#. §0: `b`
+#: Game/Levels/Aquarius/L02_BddAbove.lean:16
+msgid "[Hint hd] §0 is an upper bound of this set. "
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Aquarius/L02_BddAbove.lean:25
+msgid "[Hint hq5jg] Remember §0."
+msgstr ""
+
+#: Game/Levels/Aquarius/L02_BddAbove.lean:32
+msgid "Conclusion Aquarius L02"
+msgstr ""
+
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:8
+msgid "Intro Aquarius L03"
+msgstr ""
+
+#. §0: `s`
+#. §1: `sSup s`
+#. §2: `x ∈ s`
+#. §3: `x ≤ sSup s`
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:17
+msgid ""
+"[Hint cslt] Since §0 is bounded above, its supremum §1 is an upper bound of s.\n"
+"So §2 implies §3."
+msgstr ""
+
+#. §0: `le_csSup`
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:20
+msgid "[Hint lecssup] Perhaps, §0 is helpful here. "
+msgstr ""
+
+#. §0: `le_csSup`
+#. §1: `x ∈ s`
+#. §2: `x ≤ sSup s`
+#. §3: `≤`
+#: Game/Levels/Aquarius/L03_Le_csSup.lean:26
+msgid ""
+"Conclusion Aquarius L03: §0 turned membership §1 into the bound\n"
+"§2, and transitivity of §3 finished the job."
+msgstr ""
+
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:8
+msgid "Intro Aquarius L04"
+msgstr ""
+
+#. §0: `csSup_le`
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:17
+msgid "[Hint cssuple] The supremum is the *least* upper bound. New theorem: §0"
+msgstr ""
+
+#. §0: `sSup s`
+#. §1: `s`
+#. §2: `h`
+#. §3: `b`
+#. §4: `s`
+#. §5: `sSup s ≤ b`
+#. §6: `b ≤ c`
+#. §7: `sSup s ≤ c`
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:18
+msgid ""
+"[Hint suplec] As §0 is the least upper bound of §1,\n"
+"it sits below every upper bound.\n"
+"Hypothesis §2 says §3 bounds all of §4, hence§5.\n"
+"Chaining with §6 gives §7."
+msgstr ""
+
+#. §0: `csSup_le`
+#. §1: `b`
+#. §2: `≤`
+#. §3: `c`
+#: Game/Levels/Aquarius/L04_CsSup_le.lean:28
+msgid ""
+"Conclusion Aquarius L04: §0 bounded the supremum from above by §1, and\n"
+"transitivity of §2 pushed it up to §3."
+msgstr ""
+
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:8
+msgid "Intro Aquarius L05"
+msgstr ""
+
+#. §0: `Continuous f`
+#. §1: `f`
+#. §2: `IsClosed s`
+#. §3: `s`
+#. §4: `ℝ`
+#. §5: `f`
+#. §6: `c`
+#. §7: `isClosed_le`
+#. §8: $f$
+#. §9: $g$
+#. §10: `b`
+#. §11: $f (b) ≤ g (b)$
+#. §12: $\\mathbb{R}$
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:16
+msgid ""
+"[Hint iscl]\n"
+"§0 means that §1 is continuous.\n"
+"§2 means that the set §3 is closed (as a subset of §4).\n"
+"So the goal is to show that set of points where the continuous function §5 stays\n"
+"below the constant §6 is closed.\n"
+"Apply new theorem §7, which says that for two continuous functions\n"
+"§8 and §9, the set of points §10 where §11 is closed in §12."
+msgstr ""
+
+#. §0: `f`
+#. §1: `g`
+#. §2: `isClosed_le`
+#. §3: `assumption`
+#. §4: `fun_prop`
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:24
+msgid ""
+"The remaining two goals are the continuity of the functions §0 and §1\n"
+"to which we applied §2.\n"
+"Use §3 or new tactic §4 to show this for f.\n"
+"Use fun_prop to show this for the constant function."
+msgstr ""
+
+#. §0: `isClosed_le`
+#. §1: `≤`
+#: Game/Levels/Aquarius/L05_IsClosed_le.lean:31
+msgid ""
+"Conclusion Aquarius L05: §0 turns a §1 between continuous functions into a\n"
+"closed set."
+msgstr ""
+
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:8
+msgid "Intro Aquarius L06"
+msgstr ""
+
+#. §0: `closure s`
+#. §1: `s`
+#. §2: `closure_minimal`
+#. §3: `s ⊆ …`
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:17
+msgid ""
+"[Hint clmin] §0 is the smallest closed set containing §1.  Apply\n"
+"§2; it asks for §3 and that the target set is closed."
+msgstr ""
+
+#. §0: `f x ≤ c`
+#. §1: `isClosed_le`
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:21
+msgid ""
+"The remaining goal is that the sublevel set §0 is closed —\n"
+"that is §1."
+msgstr ""
+
+#. §0: `s`
+#. §1: `closure s`
+#: Game/Levels/Aquarius/L06_Closure_minimal.lean:27
+msgid ""
+"Conclusion Aquarius L06: Since the target set is closed and contains §0, it also contains\n"
+"§1."
+msgstr ""
+
+#. §0: `f`
+#. §1: `s`
+#. §2: `c`
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:8
+msgid ""
+"Intro Aquarius 7: If the values of some continuous function §0 on a non-empty set §1 are bounded by\n"
+" a constant §2, then its value at the supremum of s is also bounded by c."
+msgstr ""
+
+#. §0: `s`
+#. §1: `f`
+#. §2: `c`
+#. §3: `sSup s`
+#. §4: `csSup_mem_closure`
+#. §5: `have`
+#. §6: ```
+#. have h := csSup_mem_closure hne hbd
+#. ```
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:19
+msgid ""
+"[Hint cssupcl] §0 is a set that is bounded above, and on which §1 only takes values at most §2.\n"
+"Need to show that f is also at most c at §3.\n"
+"Use new theorem §4. Formulate this separately with §5:\n"
+"§6"
+msgstr ""
+
+#. §0: `sSup s ∈ closure s`
+#. §1: `have`
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:29
+msgid ""
+"[Hint 9xyh5] If this is the route you want to take,\n"
+"perhaps now establish §0 with §1."
+msgstr ""
+
+#. §0: `s`
+#. §1: `{x | f x ≤ c}`
+#. §2: `closure_minimal`
+#. §3: `isClosed_le`
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:44
+msgid ""
+"[Hint l6a3i] The closure of §0 is contained in §1.\n"
+"Combine §2 with §3 as in the previous level."
+msgstr ""
+
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:47
+msgid "[Hint w5pc3] Good intermediate statement to try to prove."
+msgstr ""
+
+#. §0: `h2 h`
+#. §1: `sSup s`
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:52
+msgid ""
+"Now §0 says that §1 lies in the sublevel set,\n"
+"which is exactly the goal."
+msgstr ""
+
+#. §0: `f x ≤ c`
+#. §1: `s`
+#. §2: `f (sSup s) ≤ c`
+#: Game/Levels/Aquarius/L07_CsSup_mem_closure.lean:56
+msgid ""
+"Conclusion Aquarius L07: Combining all three theorems, the bound §0 on §1 passes\n"
+"to its supremum: §2."
+msgstr ""
+
+#: Game/Levels/Aquarius.lean:17
+msgid "Aquarius"
+msgstr ""
+
+#: Game/Levels/Aquarius.lean:19
+msgid "Intro Aquarius"
+msgstr ""
+
+#. §0: ```
+#. Shade f := {s : ℝ | ∃ t > s, f t > f s}
+#. Sun   f := {s : ℝ | ∀ t > s, f t ≤ f s}
+#. ```
+#. §1: `f`
+#. §2: `s`
+#. §3: `Shade f`
+#. §4: `t`
+#. §5: `Sun f`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:9
+msgid ""
+"Intro Rigi L01: the two kinds of points.\n"
+"\n"
+"§0\n"
+"\n"
+"Think of the graph of §1 lit by a sun shining from the right.  A point §2 lies in the *shade*\n"
+"(in §3) if at some later point §4 the graph rises above it, otherwise it is *sunny* (in §5).\n"
+"\n"
+"These two conditions are negations of each other, and your first job is to prove exactly that."
+msgstr ""
+
+#. §0: `Shade f`
+#. §1: `f`
+#. §2: `s`
+#. §3: `t > s`
+#. §4: `f t > f s`
+#. §5: ```
+#. Shade f := {s : ℝ | ∃ t > s, f t > f s}
+#. ```
+#: Game/Levels/Rigi/L01_ShadeDef.lean:30
+msgid ""
+"§0 is the set of shade points of §1: those §2 for which there exists some\n"
+"§3 with §4.\n"
+"§5"
+msgstr ""
+
+#. §0: `Sun f`
+#. §1: `f`
+#. §2: `s`
+#. §3: `f t ≤ f s`
+#. §4: `t > s`
+#. §5: ```
+#. Sun f := {s : ℝ | ∀ t > s, f t ≤ f s}
+#. ```
+#: Game/Levels/Rigi/L01_ShadeDef.lean:38
+msgid ""
+"§0 is the set of sunny points of §1: those §2 with §3 for all §4.\n"
+"§5"
+msgstr ""
+
+#: Game/Levels/Rigi/L01_ShadeDef.lean:45
+msgid "Not being in the sun means lying in the shade."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `simp [Shade, Sun]`
+#: Game/Levels/Rigi/L01_ShadeDef.lean:55
+msgid ""
+"Both sides are set-builder memberships.\n"
+"Use §0, or more precisely §1."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `∃`
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:9
+msgid ""
+"Intro Rigi L02: the other direction.\n"
+"\n"
+"The previous level said that failing to be sunny is the same as lying in the shade.  The mirror\n"
+"statement is just as useful: failing to lie in the shade is the same as being sunny.  It is proved\n"
+"the same way — unfold both sets and let §0 move the negation across the §1."
+msgstr ""
+
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:18
+msgid "A point fails to lie in the shade exactly when it is a sunny point."
+msgstr ""
+
+#. §0: `not_mem_Shade_iff_mem_Sun`
+#: Game/Levels/Rigi/L02_ShadeDefSymm.lean:26
+msgid "Conclusion Rigi L02: saved as §0."
+msgstr ""
+
+#: Game/Levels/Rigi/L03_MemSun.lean:10
+msgid "Intro Rigi L03"
+msgstr ""
+
+#. §0: `a`
+#. §1: `f a ≥ f x`
+#. §2: `x`
+#. §3: `x > a`
+#: Game/Levels/Rigi/L03_MemSun.lean:12
+msgid "If §0 is a sunny point, then §1 for every §2 with §3."
+msgstr ""
+
+#. §0: `simp [Sun]`
+#: Game/Levels/Rigi/L03_MemSun.lean:17
+msgid "[Hint w4joj] Try §0."
+msgstr ""
+
+#. §0: `mem_sun`
+#: Game/Levels/Rigi/L03_MemSun.lean:22
+msgid "Conclusion Rigi L03: saved as §0."
+msgstr ""
+
+#. §0: `b`
+#. §1: `f`
+#. §2: `f b`
+#. §3: ```
+#. Shaders f b := {t ∈ Set.Ioi b | f b ≤ f t}
+#. ```
+#. §4: `f b < f c`
+#. §5: `c`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:9
+msgid ""
+"Intro Rigi L04: introduce the working set.\n"
+"\n"
+"Fix a point §0.  We study the set of points to the right of b at which §1\n"
+"rises above §2:\n"
+"\n"
+"§3\n"
+"\n"
+"Later we take the supremum of this set.  For that we first need it to be nonempty.  Assuming b is\n"
+"not a shadow point, §4, and §5 itself is a shadow point, you show the set is nonempty."
+msgstr ""
+
+#. §0: `Shaders f c`
+#. §1: `t`
+#. §2: `c`
+#. §3: `f c ≤ f t`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:26
+msgid "§0 is the set of §1 strictly larger than §2 such that §3."
+msgstr ""
+
+#. §0: `b`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:29
+msgid "If §0 is a shadow point, then §1 is nonempty."
+msgstr ""
+
+#. §0: `b`
+#. §1: `t > b`
+#. §2: `f t > f b`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:34
+msgid "Because §0 is in the shade, there is some §1 with §2"
+msgstr ""
+
+#. §0: `b ∈ Shade f`
+#. §1: `obtain ⟨t, …, …⟩ := hb`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:35
+msgid "[Hint 7xd8e] Unpack §0 with §1."
+msgstr ""
+
+#. §0: `use «{t}»`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:37
+msgid "[Hint eymq5] Now §0."
+msgstr ""
+
+#. §0: `shaders_nonempty`
+#: Game/Levels/Rigi/L04_ShadeSetNonempty.lean:43
+msgid "Conclusion Rigi L04: saved as §0."
+msgstr ""
+
+#. §0: `sSup`
+#. §1: `Shaders f b`
+#. §2: `sSup (Shaders f b)`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:9
+msgid ""
+"Intro Rigi L05: a quick boundedness fact.\n"
+"\n"
+"To take the supremum §0 of §1 (i.e. §2), we also need the set to be bounded above."
+msgstr ""
+
+#. §0: `c`
+#. §1: `f c < f b`
+#. §2: `c`
+#. §3: `Shaders f b`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:16
+msgid "If §0 is a sunny point with §1, then §2 bounds §3 from above."
+msgstr ""
+
+#. §0: `c`
+#. §1: `b`
+#. §2: `Shaders f b`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:22
+msgid "[Hint bbdshadeh]  If §0 is in the sun, but on lower elevation than §1, then c is an upper (i.e. eastward) bound on §2."
+msgstr ""
+
+#. §0: `∀ t ∈ Shaders f b, t ≤ c`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:24
+msgid "[Hint vxovm] So the claim is:  §0."
+msgstr ""
+
+#. §0: `«{t}» < c`
+#. §1: `«{t}» = c`
+#. §2: `c < «{t}»`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:27
+msgid "[Hint yevhg] Now best distinguish the three cases §0, §1,§2"
+msgstr ""
+
+#. §0: `lt_trichotomy`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:28
+msgid "[Hint xpkm] Remember §0"
+msgstr ""
+
+#. §0: `upperBounds_Shaders`
+#: Game/Levels/Rigi/L05_ShadeSetBddAbove.lean:40
+msgid "Conclusion Rigi L05: saved as §0."
+msgstr ""
+
+#. §0: `b`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:8
+msgid "Intro Rigi L06: the supremum lies strictly to the right of §0."
+msgstr ""
+
+#. §0: `b`
+#. §1: `Shaders f b`
+#. §2: `b < sSup (Shaders f b)`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:12
+msgid "If §0 lies in the shade and §1 is bounded above, then §2."
+msgstr ""
+
+#. §0: `b`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:17
+msgid ""
+"[Hint wouvk] The supremum of all shaders of §0 is strictly larger than b.\n"
+"First, show that there exists some shader.\n"
+"This shader will be strictly larger than b by the very definition of §1.\n"
+"And the supremum of all shaders will be at least as large as this particular one.\n"
+msgstr ""
+
+#. §0: `shaders_nonempty`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:23
+msgid "[Hint p4nen] First get hold of an element of the set: it is nonempty by §0."
+msgstr ""
+
+#. §0: `«{h_ne}»`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:26
+msgid "[Hint 2cfq0] Now you can extract a shader from the hypothesis §0."
+msgstr ""
+
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:28
+msgid "[Hint 59m0w] Remember §0."
+msgstr ""
+
+#. §0: `Shaders`
+#. §1: `«{ht}»`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:33
+msgid "[Hint ltssup] Looks good.  Now unfold §0 in §1."
+msgstr ""
+
+#. §0: `lt_sSup_Shaders`
+#: Game/Levels/Rigi/L06_LtSSupShaders.lean:37
+msgid "Conclusion Rigi L06: saved as §0."
+msgstr ""
+
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:8
+msgid "Intro Rigi L07: the value at the supremum stays up."
+msgstr ""
+
+#. §0: `f`
+#. §1: `b`
+#. §2: `Shaders f b`
+#. §3: `f b ≤ f (sSup (Shaders f b))`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:12
+msgid ""
+"If §0 is continuous, §1 lies in the shade and §2 is bounded above, then\n"
+"§3."
+msgstr ""
+
+#. §0: `b`
+#. §1: `closure_minimal`
+#. §2: `isClosed_le`
+#. §3: `csSup_mem_closure`
+#. §4: ```
+#. Shaders f b ⊆ {t | f b ≤ f t}
+#. ```
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:19
+msgid ""
+"[Hint q8m2v] At the supremum of all shaders of §0, the mountain is at least as high as at b.\n"
+"The proof combines §1, §2 and §3.\n"
+"Begin by showing that:\n"
+"§4\n"
+msgstr ""
+
+#. §0: `closure_minimal`
+#. §1: `«{h_sub}»`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:29
+msgid "[Hint 9al6z] §0 upgrades §1 to a statement about the closure."
+msgstr ""
+
+#. §0: `{t | f b ≤ f t}`
+#. §1: `Shaders f b`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:32
+msgid ""
+"[Hint k3t9w] Two goals are left: the set §0 is closed,\n"
+"and the supremum lies in the closure of §1."
+msgstr ""
+
+#. §0: `isClosed_le`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:34
+msgid "[Hint isclle] That set is closed by §0"
+msgstr ""
+
+#. §0: `fun_prop`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:36
+msgid "[Hint r7n4x] Remember §0"
+msgstr ""
+
+#. §0: `val_le_val_sSup_Shaders`
+#: Game/Levels/Rigi/L07_ValLeValSSupShaders.lean:44
+msgid "Conclusion Rigi L07: saved as §0."
+msgstr ""
+
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:8
+msgid "Intro Rigi L08: past the supremum the value drops back."
+msgstr ""
+
+#. §0: `b`
+#. §1: `Shaders f b`
+#. §2: `sSup (Shaders f b)`
+#. §3: `f b`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:12
+msgid "If §0 lies in the shade and §1 is bounded above, then every point strictly to the right of §2 has value at most §3."
+msgstr ""
+
+#. §0: `b`
+#. §1: `t`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:18
+msgid ""
+"[Hint z5c1p] Consider a point §0 in the shade, and a point §1 to the right of the supremum of the shaders of b.\n"
+"Start by establishing that t is not a shader of b."
+msgstr ""
+
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:22
+msgid "[Hint 5yybw] Try a proof by contradiction."
+msgstr ""
+
+#. §0: `le_csSup`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:24
+msgid "[Hint ingz4] Remember §0."
+msgstr ""
+
+#. §0: `lt_sSup_Shaders hb hs`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:27
+msgid "[Hint 2u5ee] You will also need §0."
+msgstr ""
+
+#. §0: `val_le_of_sSup_Shaders_lt`
+#: Game/Levels/Rigi/L08_ValRightOfSSup.lean:32
+msgid "Conclusion Rigi L08: saved as §0."
+msgstr ""
+
+#. §0: `intermediate_value_Ioo`
+#: Game/Levels/Rigi/L09_InterValue.lean:9
+msgid "Intro Rigi L09: Intermediate value theorem: §0."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `a`
+#. §3: `c`
+#. §4: `a c : ℝ`
+#. §5: `a < c`
+#. §6: `f a < f c`
+#. §7: `b`
+#. §8: $(a, c)$
+#. §9: `f b > f a`
+#: Game/Levels/Rigi/L09_InterValue.lean:15
+msgid ""
+"If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
+"§6, then there is some §7 in §8 with §9."
+msgstr ""
+
+#. §0: `intermediate_value_Ioo`
+#. §1: ```
+#. Set.Ioo (f a) (f c) ⊆ f '' Set.Ioo a c
+#. ```
+#. §2: `have`
+#: Game/Levels/Rigi/L09_InterValue.lean:21
+msgid ""
+"[Hint ivIoo] One version of intermediate value theorem is §0,\n"
+"which says\n"
+"§1\n"
+"Suggestion:  state this inclusion with §2, use theorem to prove it,\n"
+"then see what you can do with it."
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: $(f(a),f(c))$
+#. §2: `… ∈ (Ioo (f a) (f c))`
+#: Game/Levels/Rigi/L09_InterValue.lean:33
+msgid ""
+"[Hint Ioontps] Apply §0 to an arbitrary value in §1.\n"
+"Suggestion: state and prove §2 for some explicit value."
+msgstr ""
+
+#. §0: $(a,c)$
+#. §1: `«{hfval'}»`
+#: Game/Levels/Rigi/L09_InterValue.lean:45
+msgid "[Hint w595i] Now that you've established a value in the image of §0 with §1, you can choose a preimage with the required properties."
+msgstr ""
+
+#: Game/Levels/Rigi/L09_InterValue.lean:55
+msgid "Conclusion Rigi L09"
+msgstr ""
+
+#. §0: ```
+#. intermediate_value_Ioo: Ioo (f a) (f c) ⊆ f '' Ioo a c
+#. ```
+#. §1: ```
+#. intermediate_value_Ioo': Ioo (f c) (f a) ⊆ f '' Ioo a c
+#. ```
+#. §2: $(f(a), f(c))$
+#. §3: $(f(c), f(a))$
+#. §4: `f a < f c`
+#. §5: `f c < f a`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:10
+msgid ""
+"Intro Rigi L10: Intermediate value theorem has several variants, e.g.\n"
+"§0\n"
+"(as in previous level) and\n"
+"§1\n"
+"Which of these two to use depends on which of the two intervals §2 and §3 is non-empty, i.e. on whether §4 or §5."
+msgstr ""
+
+#. §0: `f`
+#. §1: `f : ℝ → ℝ`
+#. §2: `a`
+#. §3: `c`
+#. §4: `a c : ℝ`
+#. §5: `a < c`
+#. §6: `f a > f c`
+#. §7: `b ∈ Ioo a c`
+#. §8: `f b > f c`
+#: Game/Levels/Rigi/L10_InterValueSymm.lean:24
+msgid ""
+"If §0, §1 is continuous and §2, §3 (§4) are points with §5 and\n"
+"§6, then there is some §7 with §8."
+msgstr ""
+
+#: Game/Levels/Rigi/L11_Boss.lean:8
+msgid "Intro Rigi L11 (the boss): **Light and Shadow** (the *Rising Sun Lemma*)."
+msgstr ""
+
+#. §0: `f : ℝ → ℝ`
+#. §1: `a`
+#. §2: `c`
+#. §3: `a < c`
+#. §4: `b`
+#. §5: `f a = f c`
+#. §6: `f a < f c`
+#. §7: `f a = f c`
+#. §8: `f a > f c`
+#: Game/Levels/Rigi/L11_Boss.lean:16
+msgid ""
+"[Hint 0u20z] Let §0 be a continuous function.\n"
+"If §1 and §2 with §3 are in the sun,  but every §4 between a and c is in the shade, then §5.\n"
+"Start by distinguishing the cases §6, §7, §8.\n"
+"In the first and the last case, you will need to find a contradiction."
+msgstr ""
+
+#. §0: `a`
+#. §1: `a < c`
+#. §2: `f a < f c`
+#: Game/Levels/Rigi/L11_Boss.lean:22
+msgid "[Hint sbosf] In this case, §0 is a shade point since §1 and §2."
+msgstr ""
+
+#. §0: `b`
+#. §1: `a`
+#. §2: `c`
+#. §3: `f b > f c`
+#. §4: `Shaders f b`
+#. §5: `s`
+#. §6: `b ∈ Ioo a c`
+#: Game/Levels/Rigi/L11_Boss.lean:31
+msgid ""
+"PART A: Construction of the supremum s\n"
+"\n"
+"One can find a §0 between §1  and §2 with §3.\n"
+"The set §4 is non-empty, as b is in the shade,\n"
+"and it is bounded above by c, since c is in the sun with value smaller than at b.\n"
+"In particular, Shaders f b has some supremum §5.\n"
+"\n"
+"So: First, prove that there is some §6 with this property."
+msgstr ""
+
+#: Game/Levels/Rigi/L11_Boss.lean:40
+msgid "[Hint pbf] Remember the preceding level."
+msgstr ""
+
+#. §0: `Shaders f «{b}»`
+#. §1: `c`
+#: Game/Levels/Rigi/L11_Boss.lean:46
+msgid "[Hint hw34l] To construct the supremum of §0, you'll first want to show that the set is non-empty and that §1 is an upper bound."
+msgstr ""
+
+#. §0: `shaders_nonempty`
+#: Game/Levels/Rigi/L11_Boss.lean:49
+msgid "[Hint mwqb] Remember §0"
+msgstr ""
+
+#. §0: `upperBounds_Shaders`
+#: Game/Levels/Rigi/L11_Boss.lean:54
+msgid "[Hint dtpx] Remember §0"
+msgstr ""
+
+#. §0: `let s := sSup (Shaders f b)`
+#: Game/Levels/Rigi/L11_Boss.lean:56
+msgid "[Hint 60ivz] Suggestion: §0"
+msgstr ""
+
+#. §0: `b`
+#. §1: `f b ≤ f s`
+#: Game/Levels/Rigi/L11_Boss.lean:60
+msgid "[Hint mcvid] Establish that §0 is in the shade, and that §1."
+msgstr ""
+
+#. §0: `use`
+#. §1: `c`
+#. §2: `use c`
+#: Game/Levels/Rigi/L11_Boss.lean:69
+msgid "[Hint vfajy] Just §0 §1 (§2)."
+msgstr ""
+
+#. §0: `«{s}»`
+#. §1: `h_shade`
+#. §2: `a`
+#. §3: `c`
+#. §4: `s ≤ c`
+#. §5: `«{hc_bounds}»`
+#. §6: `s < c`
+#. §7: `b < s`
+#. §8: `a < s`
+#: Game/Levels/Rigi/L11_Boss.lean:73
+msgid ""
+"[Hint umu4r] The grand plan is now to show that on the one hand, §0 is in the shade, and on the other hand, s is in the sun.\n"
+"We start with the shade.  By our assumption §1, it suffices to show that s sits strictly between §2 and §3.\n"
+"Proceed as follows:\n"
+"- §4 in view of §5, and in fact\n"
+"- §6.\n"
+"- §7, and a fortiori\n"
+"- §8\n"
+msgstr ""
+
+#. §0: `lt_sSup_Shaders`
+#: Game/Levels/Rigi/L11_Boss.lean:90
+msgid "[Hint cdp6] Remember §0."
+msgstr ""
+
+#. §0: `s`
+#. §1: `have : «{s}» ∈ Sun f`
+#: Game/Levels/Rigi/L11_Boss.lean:100
+msgid ""
+"On the other hand, §0 is in the sun.\n"
+"Start with §1.\n"
+msgstr ""
+
+#. §0: `val_le_of_sSup_Shaders_lt`
+#. §1: `BddAbove (Shaders f b)`
+#: Game/Levels/Rigi/L11_Boss.lean:107
+msgid ""
+"[Hint rsdov] You need to apply §0 to finish this.\n"
+"And to apply this, you'll need to establish §1."
+msgstr ""
+
+#: Game/Levels/Rigi/L11_Boss.lean:118
+msgid "Conclusion Rigi L11"
+msgstr ""
+
+#: Game/Levels/Rigi.lean:21
+msgid "Rigi"
+msgstr ""
+
+#: Game/Levels/Rigi.lean:24
+msgid "Intro Rigi"
+msgstr ""
+
+#. §0: `slope_def_field`
+#: Game/Levels/Slope/L01.lean:9
+msgid "[Hint sldf] Rewrite with §0."
+msgstr ""
+
+#. §0: `grind`
+#: Game/Levels/Slope/L02.lean:11
+#: Game/Levels/Slope/L02.lean:14
+msgid "[Hint sll2] Try §0."
+msgstr ""
+
+#. §0: `Tendsto f (𝓝 a) (𝓝 b)`
+#. §1: `f x`
+#. §2: `b`
+#. §3: `x`
+#. §4: `a`
+#. §5: $\\lim_{x \\to a} f(x) = b$
+#. §6: `𝓝 a`
+#. §7: `𝓝[s] a`
+#. §8: `𝓝 a`
+#. §9: `a`
+#. §10: `f`
+#. §11: `a`
+#. §12: `b`
+#: Game/Levels/Slope/L04.lean:8
+msgid ""
+"§0 says that §1 approaches §2 as §3 approaches §4 —\n"
+"in usual notation, §5.\n"
+"\n"
+"You already met the neighborhoods §6 and §7 on the planet *Espresso*.\n"
+"Since §8 consists of the points near §9, the whole statement reads:\n"
+"§10 sends points near §11 to points near §12."
+msgstr ""
+
+#. §0: `c`
+#. §1: `a`
+#. §2: `c`
+#. §3: `tendsto_const_nhds`
+#: Game/Levels/Slope/L04.lean:20
+msgid ""
+"[Hint tcnst] The constant function sends every point to §0 — in\n"
+"particular, points near §1 go to points near §2. This is the theorem\n"
+"§3; apply it."
+msgstr ""
+
+#. §0: `0`
+#. §1: `|0| = 0`
+#. §2: `Continuous.tendsto'`
+#: Game/Levels/Slope/L05.lean:14
+msgid ""
+"[Hint ctdst] The absolute value function is continuous, so its limit\n"
+"at §0 is simply its value there: §1. In Lean, apply the theorem\n"
+"§2."
+msgstr ""
+
+#. §0: `fun_prop`
+#: Game/Levels/Slope/L05.lean:18
+msgid "[Hint rmbfp] Remember we have §0"
+msgstr ""
+
+#. §0: `𝓝[≠] a`
+#. §1: `x`
+#. §2: `a`
+#. §3: `x ≠ a`
+#. §4: `𝓝[>] a`
+#. §5: `x`
+#. §6: `a`
+#. §7: `x > a`
+#. §8: `s : ℝ`
+#. §9: `𝓝[s] a`
+#. §10: `s`
+#. §11: `a`
+#. §12: `𝓝[≠] a`
+#. §13: `𝓝[\\{0}ᶜ] a`
+#. §14: `𝓝 a`
+#. §15: `𝓝[univ] a`
+#: Game/Levels/Slope/L06.lean:9
+msgid ""
+"[Intro] Remember from Espresso:\n"
+"  §0 – points near §1 near §2 with §3\n"
+"  §4 – points near §5 near §6 with §7\n"
+"More formally, for any subset §8, the elements of §9 are the intersections of §10 with\n"
+"neighborhoods of §11.\n"
+"So:\n"
+"   §12 – shortcut for §13\n"
+"   §14    – same as §15"
+msgstr ""
+
+#. §0: `nhdsWithin_mono`
+#. §1: `𝓝 (0 : ℝ) = 𝓝[univ] 0`
+#. §2: `have`
+#. §3: `rw`
+#: Game/Levels/Slope/L06.lean:20
+msgid ""
+"[Hint nwln] Remember §0 from Espresso.  To apply it here, first establish\n"
+"§1 with §2, then §3 using this equality."
+msgstr ""
+
+#. §0: `𝓝[≠] 0 ≤ 𝓝 0`
+#. §1: `nhdsWithin_mono`
+#. §2: `nhdsWithin_le_nhds`
+#: Game/Levels/Slope/L07.lean:9
+msgid ""
+"[Intro] The same inequality §0 has a one-line proof.\n"
+"\n"
+"The previous level reconstructed it from §1.  In fact Mathlib records the general\n"
+"fact directly: a neighborhood filter within any set is at most the full neighborhood filter.  This\n"
+"is §2, and it is the form we use throughout the rest of the planet."
+msgstr ""
+
+#. §0: `nhdsWithin_le_nhds`
+#: Game/Levels/Slope/L07.lean:20
+msgid "[Hint csrcg] Can also prove this directly with §0."
+msgstr ""
+
+#. §0: `𝓝 0`
+#. §1: `have h : Tendsto (fun (x : ℝ) => |x|) (𝓝 0) (𝓝 0)`
+#. §2: `Tendsto.mono_left`
+#. §3: `𝓝 0`
+#. §4: `𝓝[≠] 0`
+#: Game/Levels/Slope/L08.lean:13
+msgid ""
+"[Hint monolft] You already proved this limit along §0. State that\n"
+"with §1; then\n"
+"§2 says a limit along §3 is also a limit along the\n"
+"smaller §4."
+msgstr ""
+
+#. §0: `Continuous.tendsto'`
+#: Game/Levels/Slope/L08.lean:22
+msgid "[Hint qmdrx] Remember §0"
+msgstr ""
+
+#. §0: `tendsto_nhds_unique`
+#. §1: `h₁`
+#. §2: `h₂`
+#: Game/Levels/Slope/L09.lean:13
+msgid ""
+"[Hint tnu] A function cannot approach two different values along the\n"
+"same approach: limits are unique. This is the theorem\n"
+"§0; apply it using §1 and §2."
+msgstr ""
+
+#. §0: `HasDerivAt f x`
+#. §1: `hasDerivAt_iff_tendsto_slope`
+#: Game/Levels/Slope/L10.lean:18
+msgid ""
+"[Hint aes3a] §0 means what you think it means.  Unfold it with\n"
+"§1"
+msgstr ""
+
+#. §0: `have`
+#. §1: `have : ∀ y ∈ («{x}» : Set ℝ)ᶜ …`
+#: Game/Levels/Slope/L10.lean:21
+msgid ""
+"[Hint l49nj] We computed this slope earlier. Reproduce it here with §0:\n"
+"§1"
+msgstr ""
+
+#. §0: `f`
+#. §1: `g`
+#. §2: `s`
+#. §3: `f`
+#. §4: `s`
+#. §5: `g`
+#. §6: `tendsto_nhdsWithin_congr`
+#. §7: `apply`
+#: Game/Levels/Slope/L10.lean:30
+msgid ""
+"[Hint m8bkd] Excellent.  Now can use following fact:\n"
+"if two functions §0 and §1 agree on some set §2, and the values of §3\n"
+"along some sequence in §4 converge, then the values of §5 along that\n"
+"sequence also converge, and to the same value.\n"
+"This is §6.\n"
+"§7 it with the equality of functions «{h}» as hypothesis."
+msgstr ""
+
+#. §0: `y ↦ y + x`
+#. §1: `x`
+#: Game/Levels/Slope/L10.lean:42
+msgid ""
+"[Hint bs7xd] Now compute the limit of §0 at §1.\n"
+"Start with `have : Tendsto (fun y : ℝ ↦ y + x) (𝓝 x) (𝓝 …)"
+msgstr ""
+
+#. §0: `(𝓝 (2 * x))`
+#: Game/Levels/Slope/L10.lean:44
+msgid "[Hint bs7xd] §0"
+msgstr ""
+
+#. §0: $f(y) = y + x$
+#. §1: `Continuous.tendsto'`
+#: Game/Levels/Slope/L10.lean:46
+msgid ""
+"[Hint tscyx] Notice that §0 is continuous.\n"
+"Remember §1."
+msgstr ""
+
+#. §0: `Tendsto.mono_left`
+#: Game/Levels/Slope/L10.lean:51
+msgid "[Hint bs7xd] Remember §0"
+msgstr ""
+
+#. §0: `h'`
+#. §1: `«{f₁}»`
+#. §2: `«{f₂}»`
+#. §3: `h`
+#: Game/Levels/Slope/L11.lean:12
+msgid ""
+"[Hint cv7qa] The hypothesis §0 is almost the goal, i.e. the two functions only differ\n"
+"in §1 versus §2, and they are the same pointwise by §3."
+msgstr ""
+
+#. §0: `0`
+#. §1: `|x|`
+#. §2: `1`
+#. §3: `-1`
+#. §4: `c`
+#. §5: `hasDerivAt_iff_tendsto_slope`
+#: Game/Levels/Slope/L12.lean:12
+msgid ""
+"[Hint absnd] Near §0, the slope of §1 is §2 on the right but §3\n"
+"on the left — so no §4 works. Argue by contradiction and rewrite with\n"
+"§5."
+msgstr ""
+
+#. §0: `c = 1`
+#: Game/Levels/Slope/L12.lean:17
+msgid "[Hint ftys1] First, try to prove that §0. "
+msgstr ""
+
+#: Game/Levels/Slope/L12.lean:20
+msgid "[Hint y8g14] Good intermediate step"
+msgstr ""
+
+#: Game/Levels/Slope/L12.lean:25
+msgid "[Hint bp7a2] Good intermediate step"
+msgstr ""
+
+#: Game/Levels/Slope/L12.lean:30
+msgid "[Hint s9i5u] Good intermediate step"
+msgstr ""
+
+#. §0: `c = -1`
+#: Game/Levels/Slope/L12.lean:34
+msgid "[Hint ftysn1] Perfect! You're on track. Now, you can prove §0 by a similar process."
+msgstr ""
+
+#: Game/Levels/Slope.lean:21
+msgid "Slope"
+msgstr ""
+
+#: Game/Levels/Slope.lean:25
+msgid "Intro Slope"
+msgstr ""
+
+#: Game/Levels/Cauchy/L01.lean:8
+msgid "Intro Cauchy L01"
+msgstr ""
+
+#. §0: `X : ℝ[X]`
+#. §1: `p.eval a`
+#. §2: `a`
+#. §3: `X`
+#: Game/Levels/Cauchy/L01.lean:12
+msgid ""
+"[Hint uww7c] A polynomial is a *formal* expression built from the variable §0 and constants.\n"
+"It is not yet a function. To get values you *evaluate* it,\n"
+"and §1 substitutes §2 for §3."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `+`
+#. §2: `^`
+#. §3: `X`
+#: Game/Levels/Cauchy/L01.lean:15
+msgid ""
+"[Hint tkwd] §0 knows how evaluation interacts with §1, §2, §3\n"
+"and constants."
+msgstr ""
+
+#. §0: `ring`
+#: Game/Levels/Cauchy/L01.lean:18
+msgid "[Hint smth1tr] Try §0."
+msgstr ""
+
+#: Game/Levels/Cauchy/L02.lean:8
+msgid "Intro Cauchy L02"
+msgstr ""
+
+#. §0: `exp`
+#. §1: `p`
+#. §2: `p(x) / exp x`
+#. §3: `0`
+#. §4: `x → ∞`
+#. §5: `tendsto_div_exp_atTop`
+#. §6: `x^2 = (X^2).eval x`
+#: Game/Levels/Cauchy/L02.lean:12
+msgid ""
+"[Hint 2vkf4]\n"
+"§0 is the exponential function.\n"
+"\n"
+"For any polynomial §1, the quotient §2\n"
+"tends to §3 as §4.  This is known as §5.\n"
+"\n"
+"First, establish §6.\n"
+msgstr ""
+
+#. §0: `have`
+#: Game/Levels/Cauchy/L02.lean:20
+msgid "[Hint u6qjy] Start with §0."
+msgstr ""
+
+#. §0: `simp`
+#: Game/Levels/Cauchy/L02.lean:22
+msgid "[Hint z5r1d] This is just §0."
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `rw`
+#. §2: `simp_rw`
+#: Game/Levels/Cauchy/L02.lean:24
+msgid ""
+"[Hint r8yz8] Now you want to use §0 to rewrite the goal.\n"
+"But §1 does not work well under binders.\n"
+"New tactic §2 works better."
+msgstr ""
+
+#. §0: `tendsto_div_exp_atTop`
+#: Game/Levels/Cauchy/L02.lean:28
+msgid "[Hint ewvsj] Exactly new theorem: §0."
+msgstr ""
+
+#: Game/Levels/Cauchy/L03.lean:10
+msgid "Intro Cauchy L03"
+msgstr ""
+
+#. §0: `f : ℝ → ℝ`
+#. §1: `f x = if x ≤ 0 then 0 else exp (-x⁻¹)`
+#. §2: $$
+#. f(x) = \\\\begin\\{cases}
+#.          0 & \\\\text\\{if } x \\\\le 0, \\\\\\\\ %(new line)
+#.          e^\\{-1/x} & \\\\text\\{if } x > 0.
+#.        \\\\end\\{cases}
+#. $$
+#: Game/Levels/Cauchy/L03.lean:17
+msgid ""
+"The smooth take-off function §0 defined by §1.\n"
+"§2"
+msgstr ""
+
+#. §0: `f x = 0`
+#. §1: `x ≤ 0`
+#: Game/Levels/Cauchy/L03.lean:27
+msgid "On the non-positive axis the take-off function vanishes: §0 when §1."
+msgstr ""
+
+#. §0: `f`
+#. §1: $$
+#. f(x) = \\begin{cases}
+#. 0 & \\text{if } x \\le 0, \\\\ %(new line)
+#. e^{-1/x} & \\text{if } x > 0.
+#. \\end{cases}
+#. $$
+#. §2: `0`
+#. §3: `exp (-x⁻¹)`
+#. §4: `0`
+#. §5: `«{hx}»`
+#. §6: `if`
+#: Game/Levels/Cauchy/L03.lean:32
+msgid ""
+"[Hint smth3f] The *smooth take-off function* §0 is\n"
+"§1\n"
+"It is flat §2 on the left and rises as §3 on the right — the seam at §4 is\n"
+"where smoothness is interesting.\n"
+"\n"
+"On the left of the seam there is nothing to compute: unfolding f, the\n"
+"assumption §5 picks the first branch of the §6."
+msgstr ""
+
+#. §0: `«{hx}»`
+#: Game/Levels/Cauchy/L03.lean:46
+msgid "[Hint smth3ts] Use §0 to simplify the goal."
+msgstr ""
+
+#. §0: `simp [f, «{hx}»]`
+#: Game/Levels/Cauchy/L03.lean:48
+msgid "[Hint smthts3] §0 unfolds and simplifies in one go."
+msgstr ""
+
+#: Game/Levels/Cauchy/L04.lean:8
+msgid "Intro Cauchy L04a"
+msgstr ""
+
+#. §0: `0⁻¹ = 0`
+#: Game/Levels/Cauchy/L04.lean:12
+msgid "[Hint z5pfu] The convention in Lean is that §0"
+msgstr ""
+
+#: Game/Levels/Cauchy/L04.lean:15
+msgid "Conclusion Cauchy L04: However, there is a real statement to be made."
+msgstr ""
+
+#: Game/Levels/Cauchy/L05.lean:8
+msgid "Intro Cauchy L05"
+msgstr ""
+
+#. §0: `f`
+#. §1: `0`
+#. §2: `x → 0`
+#. §3: `p.eval x⁻¹ * f x`
+#. §4: `0`
+#. §5: `x → 0`
+#. §6: `p`
+#. §7: `simp`
+#: Game/Levels/Cauchy/L05.lean:15
+msgid ""
+"[Hint sm4bgf] It is actually true that the take-off function §0\n"
+"crushes any polynomial factor to §1 as §2, i.e. that\n"
+"§3 tends to §4 as §5 for any polynomial\n"
+"§6.\n"
+"\n"
+"First, unfold the definition of f and simplify the expression using §7."
+msgstr ""
+
+#. §0: `Tendsto.if`
+#: Game/Levels/Cauchy/L05.lean:22
+msgid "[Hint qq87t] New theorem: §0."
+msgstr ""
+
+#. §0: `0`
+#. §1: `x → 0`
+#. §2: `𝓝[≤] 0`
+#: Game/Levels/Cauchy/L05.lean:24
+msgid ""
+"[Hint xcip8] Perfect.  Now you have cut the function into two halves, and have two goals.\n"
+"First, need to show that left half of function tends to §0 as §1 “from the left”,\n"
+"i.e. along §2. Note that here the function is constant."
+msgstr ""
+
+#. §0: `tendsto_const_nhds`
+#: Game/Levels/Cauchy/L05.lean:27
+msgid "[Hint lpk2t] Remember §0."
+msgstr ""
+
+#. §0: `0`
+#. §1: `x → 0`
+#. §2: `¬ x ≤ 0`
+#. §3: `0 < x`
+#. §4: `not_le`
+#. §5: `simp`
+#: Game/Levels/Cauchy/L05.lean:29
+msgid ""
+"[Hint gh8td] Second, need to show that right half of function tends to §0 as §1\n"
+"“from the right”.\n"
+"But “from the right” is not written nicely.\n"
+"Change §2 to §3 using §4 or §5."
+msgstr ""
+
+#. §0: `𝓝[>] 0`
+#. §1: `exp`
+#. §2: `simp_rw`
+#. §3: `exp_neg`
+#: Game/Levels/Cauchy/L05.lean:34
+msgid ""
+"[Hint 65tuz] Now the filter reads §0.\n"
+"Next, pull the minus out of the §1 using §2 and new theorem §3."
+msgstr ""
+
+#. §0: `x ↦ p.eval x / exp x`
+#. §1: `x ↦ x⁻¹`
+#. §2: `Tendsto.comp`
+#. §3: ```
+#. Tendsto (fun (x : ℝ) ↦ eval x p / exp x) atTop (𝓝 0)
+#. ```
+#. §4: ```
+#. Tendsto (fun (x : ℝ) ↦ x⁻¹) (𝓝[>] 0 ) atTop
+#. ```
+#: Game/Levels/Cauchy/L05.lean:37
+msgid ""
+"[Hint 4f4o8] This is §0 composed with §1).\n"
+"The theorem §2 says how limits behave under composition.\n"
+"First establish how the two functions behave:\n"
+"§3\n"
+"and\n"
+"§4\n"
+msgstr ""
+
+#. §0: `tendsto_div_exp_atTop`
+#: Game/Levels/Cauchy/L05.lean:49
+msgid "[Hint hi2ko] Remember §0."
+msgstr ""
+
+#. §0: `tendsto_inv_nhdsGT_zero`
+#: Game/Levels/Cauchy/L05.lean:52
+msgid "[Hint mbyuc] Exactly new theorem: §0."
+msgstr ""
+
+#. §0: `Tendsto.comp`
+#: Game/Levels/Cauchy/L05.lean:54
+msgid "[Hint 6bxi7] You're in good shape. Remember new theorem: §0."
+msgstr ""
+
+#: Game/Levels/Cauchy/L06.lean:8
+msgid "Intro Cauchy L06"
+msgstr ""
+
+#. §0: `HasDerivAt f f' x`
+#. §1: `f`
+#. §2: `f'`
+#. §3: `x`
+#. §4: `p ∘ neg ∘ inv`
+#. §5: `derivative p`
+#. §6: `p`
+#. §7: `p.hasDerivAt x`
+#. §8: `(derivative p).eval x`
+#. §9: `hasDerivAt_neg x`
+#. §10: `x ↦ -x`
+#. §11: `-1`
+#. §12: `hasDerivAt_inv hx`
+#. §13: `hx`
+#. §14: `x ≠ 0`
+#. §15: `x ↦ x⁻¹`
+#. §16: `HasDerivAt.comp`
+#. §17: `hasDerivAt_inv hx`
+#. §18: ```
+#. have h_inv := hasDerivAt_inv hx
+#. ```
+#: Game/Levels/Cauchy/L06.lean:14
+msgid ""
+"[Hint dxq1] §0 means that §1 has derivative §2 at the point §3.\n"
+"So goal is to compute derivative of triple composition §4 using chain rule,\n"
+"and express is using the formal derivative §5 of §6.\n"
+"\n"
+"The derivative of each factor is known:\n"
+"\n"
+"- §7 says that p has derivative §8 at x\n"
+"- §9 says the derivative of §10 at x is §11\n"
+"- §12, where §13 is the assumption §14, computes the derivative of §15\n"
+"\n"
+"And the chain rule is called §16.\n"
+"\n"
+"Use the following trick to piece this together.\n"
+"Load the statement of §17 into your context with:\n"
+"§18\n"
+msgstr ""
+
+#. §0: `x ↦ -x`
+#: Game/Levels/Cauchy/L06.lean:45
+msgid "[Hint szsqh] Now similarly for §0."
+msgstr ""
+
+#. §0: `neg ∘ inv`
+#. §1: `x`
+#: Game/Levels/Cauchy/L06.lean:48
+msgid ""
+"[Hint 3cbyh] That's not what you want. If you want to apply the chain rule,\n"
+"you will need the derivative of §0 at a different point than §1."
+msgstr ""
+
+#. §0: ```
+#. have h_neginv := HasDerivAt.comp …
+#. ```
+#: Game/Levels/Cauchy/L06.lean:51
+msgid ""
+"[Hint 9uibu] Now apply the chain rule, encoded by the new theorem\n"
+"§0\n"
+msgstr ""
+
+#. §0: ```
+#. have «{h_neginv}» := HasDerivAt.comp x (hasDerivAt_neg x⁻¹) (hasDerivAt_inv hx)
+#. ```
+#. §1: `p`
+#: Game/Levels/Cauchy/L06.lean:57
+msgid ""
+"[Hint fir3i] You could have done this all in one step:\n"
+"§0\n"
+"But easier to take one step at a time.\n"
+"\n"
+"Now proceed in a similar fashion for the composition with §1."
+msgstr ""
+
+#. §0: `HasDerivAt.comp`
+#: Game/Levels/Cauchy/L06.lean:66
+msgid "[Hint 70lg1] Now the new theorem that encodes the chain rule: §0"
+msgstr ""
+
+#: Game/Levels/Cauchy/L07.lean:9
+msgid "Intro Cauchy L07"
+msgstr ""
+
+#. §0: `HasDerivAt.mul`
+#. §1: `hasDerivAt_neg`
+#. §2: `hasDerivAt_exp`
+#. §3: `HasDerivAt.comp`
+#: Game/Levels/Cauchy/L07.lean:15
+msgid ""
+"[Hint pxe1] Differentiate the two factors, then join them with the\n"
+"product rule §0.  You already know how to differentiate the polynomial.\n"
+"For the other factor, use §1, §2 at §3.\n"
+msgstr ""
+
+#. §0: `HasDerivAt.mul`
+#: Game/Levels/Cauchy/L07.lean:24
+msgid ""
+"[Hint pxe2] Now establish what the product rule, encoded by the\n"
+"new theorem §0."
+msgstr ""
+
+#. §0: `convert`
+#: Game/Levels/Cauchy/L07.lean:28
+msgid "[Hint t99r1] Remember §0."
+msgstr ""
+
+#. §0: `convert! «{h}» using 1`
+#: Game/Levels/Cauchy/L07.lean:31
+msgid "[Hint 8riva] Better use §0"
+msgstr ""
+
+#. §0: `hasDerivAt_exp`
+#. §1: `Real.hasDerivAt_exp`
+#: Game/Levels/Cauchy/L07.lean:40
+msgid ""
+"This root level version of §0 should not be used in the game.\n"
+"It is present here only so that ambiguous invocations of §1 pass the game engine's\n"
+"inventory checks. Lean can often figure out the disambiguity between the root version and the Real\n"
+"version of this theorem from the types passed to theorem, but the game engine currently cannot."
+msgstr ""
+
+#: Game/Levels/Cauchy/L08.lean:8
+msgid "Intro Cauchy L08"
+msgstr ""
+
+#. §0: `f`
+#. §1: `x < 0`
+#. §2: `0`
+#. §3: `0`
+#. §4: `HasDerivAt.congr_of_eventuallyEq`
+#. §5: `x`
+#: Game/Levels/Cauchy/L08.lean:11
+msgid ""
+"[Hint sm7bgf] In this level you differentiate the smooth take-off function §0 on the\n"
+"negative axis, where it is flat: around §1 it is constantly §2, so its derivative is §3.\n"
+"\n"
+"Note that if two functions are eventually equal around a point, then their derivatives agree\n"
+"at this point. This theorem is called §4.\n"
+"So show first f is eventually equal to the zero function around §5."
+msgstr ""
+
+#. §0: `f =ᶠ[𝓝 x] fun _ ↦ 0`
+#: Game/Levels/Cauchy/L08.lean:17
+msgid "[Hint cev2] Establish §0."
+msgstr ""
+
+#. §0: `eventually_lt_nhds`
+#. §1: `filter_upwards`
+#: Game/Levels/Cauchy/L08.lean:19
+msgid "[Hint sm7fu] Remember §0 and §1."
+msgstr ""
+
+#. §0: `hy : ∀ᶠ (y : ℝ) in 𝓝 x, y < 0`
+#. §1: `filter_upwards`
+#. §2: `hy`
+#: Game/Levels/Cauchy/L08.lean:20
+msgid ""
+"[Hint sm7fuh] First, establish §0.\n"
+"Then use §1 with §2."
+msgstr ""
+
+#. §0: `x`
+#. §1: `hasDerivAt_const (x : ℝ) (0 : ℝ)`
+#: Game/Levels/Cauchy/L08.lean:27
+msgid ""
+"[Hint cev3] The constant function has derivative zero at any §0:\n"
+"establish this using §1."
+msgstr ""
+
+#. §0: `HasDerivAt.congr_of_eventuallyEq`
+#: Game/Levels/Cauchy/L08.lean:30
+msgid "[Hint y4ym4] Finally time to apply §0."
+msgstr ""
+
+#: Game/Levels/Cauchy/L09.lean:6
+msgid "Intro Cauchy L09 (Boss)"
+msgstr ""
+
+#. §0: `x ↦ p(x⁻¹) · f x`
+#. §1: `polynomial · f`
+#: Game/Levels/Cauchy/L09.lean:11
+msgid "The derivative of §0 keeps the same §1 shape."
+msgstr ""
+
+#. §0: `p(x⁻¹) * f x`
+#. §1: `x⁻¹`
+#. §2: `f`
+#. §3: $$
+#. \\frac{p(x^{-1}) - p'(x^{-1})}{x^2}\\, f(x),
+#. $$
+#. §4: `f`
+#. §5: `0`
+#. §6: `x ≤ 0`
+#. §7: `exp (-x⁻¹)`
+#. §8: `x > 0`
+#. §9: `lt_trichotomy`
+#: Game/Levels/Cauchy/L09.lean:17
+msgid ""
+"[Hint sm8bgf] Differentiating §0 keeps the shape *polynomial in §1\n"
+"times §2*: the derivative is\n"
+"§3\n"
+"with §4 the take-off function of this world — §5 for §6 and §7 for\n"
+"§8.\n"
+"\n"
+"This is a long calculation, but we've assembled all the tools.\n"
+"Begin with §9 to divide into three cases."
+msgstr ""
+
+#. §0: `zero_of_nonpos`
+#: Game/Levels/Cauchy/L09.lean:28
+msgid ""
+"[Hint s8ls0] Simplify the claimed derivative using §0.\n"
+"The rest is similar to previous level."
+msgstr ""
+
+#. §0: `y ↦ p.eval y⁻¹ * f y`
+#. §1: `y = x`
+#: Game/Levels/Cauchy/L09.lean:32
+msgid ""
+"[Hint s8l0] Establish that the function\n"
+"§0 eventually equals zero around §1."
+msgstr ""
+
+#. §0: `filter_upwards`
+#. §1: `eventually_lt_nhds`
+#: Game/Levels/Cauchy/L09.lean:35
+msgid "[Hint s8fuelhx] Combine §0 and §1."
+msgstr ""
+
+#. §0: `HasDerivAt.congr_of_eventuallyEq`
+#: Game/Levels/Cauchy/L09.lean:41
+msgid "[Hint s8rcoe] Remember the theorem §0."
+msgstr ""
+
+#. §0: `zero_of_nonpos`
+#: Game/Levels/Cauchy/L09.lean:44
+msgid ""
+"[Hint s8snmz] In this case, can again simplify the derivative using §0.\n"
+"And then use explicit definition of derivatives in terms of slopes."
+msgstr ""
+
+#. §0: `hasDerivAt_iff_tendsto_slope`
+#: Game/Levels/Cauchy/L09.lean:48
+msgid "[Hint s8rmhits] Remember the theorem §0."
+msgstr ""
+
+#. §0: ```
+#. have h_slope : slope (fun (x : ℝ) ↦ p.eval x⁻¹ * f x) 0 = fun (y : ℝ) ↦ …
+#. ```
+#. §1: `q.eval y⁻¹ * f y`
+#. §2: `q`
+#: Game/Levels/Cauchy/L09.lean:50
+msgid ""
+"[Hint sm8sle] Compute the slope explicitly.\n"
+"§0\n"
+"It should have the form §1 for some polynomial §2.\n"
+msgstr ""
+
+#: Game/Levels/Cauchy/L09.lean:58
+#: Game/Levels/Cauchy/L09.lean:61
+msgid "[Hint lydei] Very good."
+msgstr ""
+
+#. §0: `slope_def_field`
+#: Game/Levels/Cauchy/L09.lean:63
+msgid "[Hint nfd0p] Remember §0"
+msgstr ""
+
+#. §0: `0`
+#. §1: `0`
+#: Game/Levels/Cauchy/L09.lean:71
+msgid ""
+"[Hint sm9tlshf] It suffices to prove that the expression tends to §0 in the full\n"
+"neighborhood of §1, not just the punctured neighborhood."
+msgstr ""
+
+#. §0: `Tendsto.mono_left`
+#. §1: `nhdsWithin_le_nhds`
+#: Game/Levels/Cauchy/L09.lean:75
+#: Game/Levels/Cauchy/L09.lean:79
+msgid "[Hint sm8tmlst] Remember §0 and §1."
+msgstr ""
+
+#. §0: `tendsto_polynomial_inv_mul_zero`
+#: Game/Levels/Cauchy/L09.lean:77
+#: Game/Levels/Cauchy/L09.lean:81
+msgid "[Hint sm8tshiw] This is exactly the result §0."
+msgstr ""
+
+#. §0: `0 < x`
+#: Game/Levels/Cauchy/L09.lean:84
+msgid "[Hint lzkl8] Exhausted?  Now for the interesting case §0."
+msgstr ""
+
+#. §0: `f x = exp (-x⁻¹)`
+#: Game/Levels/Cauchy/L09.lean:112
+msgid "[Hint sm8hf] First establish that §0."
+msgstr ""
+
+#. §0: `(fun y ↦ eval y⁻¹ p * f y) =ᶠ[𝓝 x] fun y ↦ eval y⁻¹ p * exp (-y⁻¹)`
+#: Game/Levels/Cauchy/L09.lean:117
+msgid ""
+"[Hint sm8hevs] Perfect! Now you can also establish\n"
+"§0."
+msgstr ""
+
+#. §0: `HasDerivAt.congr_of_eventuallyEq`
+#: Game/Levels/Cauchy/L09.lean:124
+msgid "[Hint sm8hcehev] Remember that the theorem §0."
+msgstr ""
+
+#. §0: `have`
+#. §1: `«{p}».hasDerivAt`
+#. §2: `hasDerivAt_neg`
+#. §3: `hasDerivAt_exp`
+#. §4: `hasDerivAt_inv`
+#. §5: `HasDerivAt.mul`
+#. §6: `HasDerivAt.comp`
+#: Game/Levels/Cauchy/L09.lean:126
+msgid ""
+"[Hint sm8cvx] The derivative in the goal is not written in the form\n"
+"that the rules produce. So first build the derivative of this composition from the rules\n"
+"you know with §0:\n"
+"- §1\n"
+"- §2\n"
+"- §3\n"
+"- §4\n"
+"- §5\n"
+"- §6\n"
+"Only then compare it with the goal."
+msgstr ""
+
+#. §0: `convert! «{h_comp}» using 1`
+#: Game/Levels/Cauchy/L09.lean:143
+msgid ""
+"[Hint sm8cvu] §0 leaves a single equation\n"
+"between the two derivative values."
+msgstr ""
+
+#: Game/Levels/Cauchy/L10.lean:10
+msgid "Intro Cauchy L10"
+msgstr ""
+
+#. §0: `P n`
+#. §1: `P 0 = 1`
+#. §2: `P (n+1) = X² · (P n - derivative (P n))`
+#: Game/Levels/Cauchy/L10.lean:17
+msgid "The polynomials §0 with §1 and §2."
+msgstr ""
+
+#. §0: `n`
+#. §1: `f`
+#. §2: `(P n)(x⁻¹) · f x`
+#: Game/Levels/Cauchy/L10.lean:20
+msgid "The §0-th derivative of §1 is §2."
+msgstr ""
+
+#. §0: `f`
+#. §1: `iteratedDeriv n f`
+#. §2: $n$
+#. §3: `x ↦ p(x⁻¹) · f x`
+#. §4: `p`
+#. §5: `X² · (p - derivative p)`
+#. §6: `P : ℕ → ℝ[X]`
+#. §7: $$
+#. \\begin{aligned}
+#. P(0)   &:= 1 \\\\ %(new line)
+#. P(n+1) &:= X^2 · (P (n) - \\mathrm{derivative}(P(n)) )
+#. \\end{aligned}
+#. $$
+#: Game/Levels/Cauchy/L10.lean:26
+msgid ""
+"[Hint sm9bgf]\n"
+"For §0 as before, we now compute §1, the §2-th derivative of f.\n"
+"\n"
+"The previous level showed that differentiating §3 gives\n"
+"back a function of the *same shape*, with §4 replaced by §5.\n"
+"\n"
+"We can therefore express the derivatives in terms of following, recursively defined\n"
+"family of polynomials §6:\n"
+"§7\n"
+msgstr ""
+
+#. §0: `n`
+#: Game/Levels/Cauchy/L10.lean:41
+msgid "[Hint idp1] Proceed by induction on §0, obviously."
+msgstr ""
+
+#. §0: `0`
+#. §1: `simp`
+#: Game/Levels/Cauchy/L10.lean:43
+msgid "[Hint idp2] §0-th derivative is the function itself – that's §1le."
+msgstr ""
+
+#. §0: `iteratedDeriv_succ`
+#: Game/Levels/Cauchy/L10.lean:45
+msgid ""
+"[Hint idp3] Peel one derivative, then you can apply the induction hypothesis.\n"
+"You will need §0."
+msgstr ""
+
+#. §0: `funext`
+#: Game/Levels/Cauchy/L10.lean:47
+msgid "[Hint sm9ritsc] Start with §0"
+msgstr ""
+
+#. §0: `P`
+#. §1: `rw [P]`
+#: Game/Levels/Cauchy/L10.lean:53
+msgid "[Hint sm9ristp] Perfect! Now unfold the definition of §0 with §1."
+msgstr ""
+
+#. §0: `HasDerivAt.deriv`
+#. §1: `hasDerivAt_polynomial_eval_inv_mul`
+#: Game/Levels/Cauchy/L10.lean:55
+msgid ""
+"[Hint sm9hdap] Remember the theorems §0 and\n"
+"§1."
+msgstr ""
+
+#: Game/Levels/Cauchy/L11.lean:10
+msgid "Intro Cauchy L11"
+msgstr ""
+
+#. §0: `ContDiff ℝ ∞`
+#. §1: `contDiff_of_differentiable_iteratedDeriv`
+#. §2: `exp`
+#: Game/Levels/Cauchy/L11.lean:13
+msgid ""
+"[Hint sm10bgf] §0 means *smooth*: differentiable arbitrarily often.\n"
+"By new theorem §1 it suffices to show that every\n"
+"iterated derivative is differentiable. For §2 this is easy, since every derivative of\n"
+"exp is exp itself."
+msgstr ""
+
+#. §0: `∀ m, iteratedDeriv m exp = exp`
+#: Game/Levels/Cauchy/L11.lean:17
+msgid ""
+"[Hint sm10ih] First establish\n"
+"§0 by induction."
+msgstr ""
+
+#. §0: `HasDerivAt.deriv`
+#. §1: `hasDerivAt_exp`
+#: Game/Levels/Cauchy/L11.lean:25
+msgid ""
+"[Hint sm10hd] Remember the new theorem §0\n"
+"and the old theorem §1."
+msgstr ""
+
+#. §0: `«{h}»`
+#. §1: `exp`
+#: Game/Levels/Cauchy/L11.lean:29
+msgid ""
+"[Hint sm10cd] By §0, every iterated derivative of §1 is exp\n"
+"itself. A function is smooth as soon as all of its iterated derivatives are differentiable,\n"
+"so it only remains to see that exp is differentiable."
+msgstr ""
+
+#. §0: `contDiff_of_differentiable_iteratedDeriv`
+#: Game/Levels/Cauchy/L11.lean:32
+msgid "[Hint sm10df] Apply the new theorem §0."
+msgstr ""
+
+#. §0: `contDiff_of_differentiable_iteratedDeriv`
+#. §1: `ContDiff ℝ N f`
+#. §2: `N`
+#. §3: ```
+#. ∀ (m : ℕ), m ≤ N → Differentiable ℝ (iteratedDeriv m f)
+#. ```
+#. §4: `m`
+#. §5: `m = N`
+#. §6: `N`
+#. §7: `∞`
+#. §8: `⊤`
+#. §9: `ℕ∞`
+#. §10: `m ≤ ⊤`
+#. §11: `ℕ`
+#. §12: `ℕ∞`
+#: Game/Levels/Cauchy/L11.lean:34
+msgid ""
+"[Hint yctv9] This now looks unnecessarily complicated.\n"
+"\n"
+"If you apply §0 to §1 for some number §2,\n"
+"then naturally your goal becomes\n"
+"§3\n"
+"– you need to show that all §4-th derivatives up to §5 exist.\n"
+"Here, however, §6 is §7, or the “top” (§8) of the ordered set §9 (the natural numbers with infinity),\n"
+"and the assumption §10 is vacuous.  The upward arrow denotes the inclusion of §11 into §12.\n"
+"You can just ignore all of this."
+msgstr ""
+
+#. §0: `HasDerivAt.differentiableAt`
+#: Game/Levels/Cauchy/L11.lean:49
+msgid "[Hint sm10da] Apply the new theorem §0."
+msgstr ""
+
+#: Game/Levels/Cauchy/L12.lean:9
+msgid "Intro Cauchy L12 (Second boss)"
+msgstr ""
+
+#: Game/Levels/Cauchy.lean:24
+msgid "Cauchy"
+msgstr ""
+
+#: Game/Levels/Cauchy.lean:26
+msgid "Intro Cauchy"
+msgstr ""
+
+#: Game.lean:40
 #, fuzzy
 msgid "[Game] Title"
 msgstr "Знайка"
 
-#: Game.lean:32
+#: Game.lean:41
 #, fuzzy
 msgid "[Game] Introduction"
 msgstr ""
@@ -9738,7 +12743,7 @@ msgstr ""
 "\n"
 "Выходные данные и авторы — *Информация об игре* в меню."
 
-#: Game.lean:33
+#: Game.lean:42
 #, fuzzy
 msgid "[Game] Info"
 msgstr ""
@@ -9777,17 +12782,459 @@ msgstr ""
 "* по содержанию игры — [Robo repo](https://github.com/hhu-adam/Robo/issues)\n"
 "* по игровому серверу — [lean4game repo](https://github.com/leanprover-community/lean4game/issues)."
 
-#: Game.lean:35
+#: Game.lean:44
 #, fuzzy
 msgid "[Game] Conclusion"
 msgstr "ЧТД"
 
-#: Game.lean:40
+#: Game.lean:49
 #, fuzzy
 msgid "[Game] CaptionShort"
 msgstr "Исследуй незнакомую вселенную вместе со смарт-эльфом Знайкой!"
 
-#: Game.lean:41
+#: Game.lean:50
 #, fuzzy
 msgid "[Game] CaptionLong"
 msgstr "Игра иллюстрирует доказательства в Lean на темах из стандартного курса бакалавриата по математике."
+
+#, fuzzy
+#~ msgid ""
+#~ "§0 is defined as §1.\n"
+#~ "In other words: §2.\n"
+#~ "\n"
+#~ "You have to write §3  instead of §4,\n"
+#~ "as §5 is ambigous in Leanic."
+#~ msgstr ""
+#~ "§0 определено как §1. Иначе говоря, §2.\n"
+#~ "\n"
+#~ "Нужно писать §3 вместо §4, потому что §5 на линише неоднозначно."
+
+#, fuzzy
+#~ msgid ""
+#~ "§0 means that §1 is a polynomial in §2 indeterminates\n"
+#~ "§3, …, §4 with coefficients in §5."
+#~ msgstr "§0 означает, что §1 — многочлен от §2 неопределённых §3, …, §4 с коэффициентами в §5."
+
+#, fuzzy
+#~ msgid ""
+#~ "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
+#~ "For example, §2 distinguishes between the cases §3 and §4.\n"
+#~ "\n"
+#~ "The proof goal is duplicated for this purpose, and\n"
+#~ "the assumption §5 is added to the first “copy,”\n"
+#~ "while the assumption §6 is added to the second “copy.”"
+#~ msgstr ""
+#~ "Тактика §0 начинает разбор случаев: §1 истинно и §1 ложно.\n"
+#~ "Например, §2 различает случаи §3 и §4.\n"
+#~ "\n"
+#~ "Для этого цель дублируется. В первую «копию» добавляется предположение §5, а во вторую — предположение §6."
+
+#, fuzzy
+#~ msgid ""
+#~ "The tactic §0 initiates a proof by contradiction.\n"
+#~ "If §1 is your current proof goal, §2 generates a new assumption §3\n"
+#~ "and sets the proof goal to §4.\n"
+#~ "\n"
+#~ "## Friends and relatives\n"
+#~ "\n"
+#~ "* At the end of a proof by contradiction, there is usually §5:\n"
+#~ "this tactic closes the proof when it finds two obviously contradictory assumptions.\n"
+#~ "* If the proof goal is of the form §6, you can use §7\n"
+#~ "to start a proof by contraposition."
+#~ msgstr ""
+#~ "Тактика §0 запускает доказательство от противного.\n"
+#~ "Если текущая цель — §1, то §2 создаёт новое предположение §3 и меняет цель на §4.\n"
+#~ "\n"
+#~ "## Аналоги и связи\n"
+#~ "\n"
+#~ "* В конце доказательства от противного обычно стоит §5:\n"
+#~ "эта тактика завершает доказательство, если находит два предположения, прямо противоречащих друг другу.\n"
+#~ "* Если цель имеет вид §6, то доказательство от противного можешь начать с помощью §7."
+
+#, fuzzy
+#~ msgid ""
+#~ "With §0, you introduce an intermediate result.\n"
+#~ "You must then prove this intermediate result\n"
+#~ "before you can continue with the actual proof.\n"
+#~ "\n"
+#~ "## Friends and relatives\n"
+#~ "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
+#~ "only have to prove your intermediate result at the very end."
+#~ msgstr ""
+#~ "С помощью §0 вводится промежуточный результат.\n"
+#~ "После этого сначала необходимо доказать его, а затем — продолжить основное доказательство.\n"
+#~ "\n"
+#~ "## Аналоги и связи\n"
+#~ "§1 работает так же, только ты можешь сначала продолжить основное доказательство, а промежуточный результат доказать потом."
+
+#, fuzzy
+#~ msgid "Intro Saturn L03"
+#~ msgstr "Ещё одно радиосообщение."
+
+#, fuzzy
+#~ msgid ""
+#~ "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\n"
+#~ "coefficients in §3.\n"
+#~ "Explain §4 as the set of elements §5 that lead to the variables §6 and §7"
+#~ msgstr ""
+#~ "**Ты**:  Ого, что это за зверь такой — §0?\n"
+#~ "\n"
+#~ "**Знайка**: §1 — это «многомерный многочлен», где переменные пронумерованы в §2, а коэффициенты принадлежат §3.\n"
+#~ "\n"
+#~ "**Ты**:  А что такое §4?\n"
+#~ "\n"
+#~ "**Знайка**:  Стандартное множество из двух элементов — §5.  Значит, переменные называют §6 и §7.\n"
+#~ "\n"
+#~ "**Ты**:  Но вообще-то всё это неважно, правда?  Кольцо многочленов ведь коммутативно!\n"
+#~ "\n"
+#~ "**Знайка**: Так и есть."
+
+#, fuzzy
+#~ msgid ""
+#~ "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\n"
+#~ "are not considered rings. §2 does also work on half rings."
+#~ msgstr ""
+#~ "Снова 👍.\n"
+#~ "\n"
+#~ "**Ты**: Но подожди, в этот раз коэффициенты же были в §0! Это вообще не кольцо, а многочлены с коэффициентами в §1 кольцо также не образуют.\n"
+#~ "\n"
+#~ "**Знайка**: Может быть. Но §2 работает даже для так называемых полуколец.\n"
+#~ "\n"
+#~ "**Ты**: Ну-ну …\n"
+#~ "\n"
+#~ "Аноним спрашивает по рации, готовы ли вы к последнему заданию, или лучше очертите ещё пару колец вокруг его планеты.\n"
+#~ "\n"
+#~ "«Готовы», — коротко и ясно отбивает в ответ Знайка."
+
+#, fuzzy
+#~ msgid "Conclusion Saturn L05"
+#~ msgstr ""
+#~ "«Роджер», — коротко и сухо сообщает анонимный радист.\n"
+#~ "\n"
+#~ "**Знайка**: Думаю, двигатель уже достаточно восстановился. Полетели отсюда!"
+
+#, fuzzy
+#~ msgid "Intro Luna L01: Know that §0"
+#~ msgstr ""
+#~ "Ты чувствуешь себя немного подавленным, но всё равно пытаешься начать разговор.\n"
+#~ "\n"
+#~ "**Ты**: Ладно, постараемся ничего не перепутать. Тут очень сложно поддерживать порядок?\n"
+#~ "\n"
+#~ "**Лина**: Например, следует знать, что §0."
+
+#, fuzzy
+#~ msgid "Try using §0 here"
+#~ msgstr "**Знайка**: §0?"
+
+#, fuzzy
+#~ msgid "Conclusion Luna L01"
+#~ msgstr "**Лина**:  Ладно, это был тривиальный пример."
+
+#, fuzzy
+#~ msgid "Intro Luna L02: For integers §0 or §1 means §2"
+#~ msgstr "**Лина**: Кроме того, например, нужно знать, что §0 или §1 для целых чисел означает не что иное, как §2."
+
+#, fuzzy
+#~ msgid "Try out §0"
+#~ msgstr "**Рита** *(шёпотом)*: Попробуй §0!"
+
+#, fuzzy
+#~ msgid ""
+#~ "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n"
+#~ "§2 is only really applicable over integers."
+#~ msgstr ""
+#~ "Лина закатывает глаза.\n"
+#~ "\n"
+#~ "**Лина**: Рита — большой фанат §0.  При этом §1 довольно-таки импотентна. Как только выходишь за пределы целых чисел, §2 уже вообще ничего не может.\n"
+#~ "\n"
+#~ "**Рита**:  Сама ты импотентна!\n"
+#~ "\n"
+#~ "Рита строит неприличную гримасу."
+
+#, fuzzy
+#~ msgid "Intro Luna L03"
+#~ msgstr "**Лина**: Попробуй-ка вот это!"
+
+#, fuzzy
+#~ msgid ""
+#~ "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n"
+#~ "\n"
+#~ "§4"
+#~ msgstr ""
+#~ "Обычно используется вместе с §0, чтобы в доказательстве различать три случая §1, §2 и §3:\n"
+#~ "\n"
+#~ "§4"
+
+#, fuzzy
+#~ msgid "Try §0, §1"
+#~ msgstr ""
+#~ "**Ты**:  Разбор случаев ??\n"
+#~ "\n"
+#~ "**Знайка**:  Да, можешь попробовать. Например, сначала §0, а потом §1."
+
+#, fuzzy
+#~ msgid "Now try §0!"
+#~ msgstr ""
+#~ "**Ты**:  А теперь??\n"
+#~ "\n"
+#~ "**Лина** (*триумфально*): §0!"
+
+#, fuzzy
+#~ msgid "Conclusion Luna L03: Alternatively §0 could have been used."
+#~ msgstr "**Лина**:  Кстати, можно было бы просто написать §0."
+
+#, fuzzy
+#~ msgid "Intro Luna L04"
+#~ msgstr "**Лина**:  Тут у меня ещё кое-что."
+
+#, fuzzy
+#~ msgid "Try omega"
+#~ msgstr "Рита, кажется, хочет подать вам какой-то знак глазами."
+
+#, fuzzy
+#~ msgid "Conclusion Luna L04"
+#~ msgstr "**Лина**:  Да, хорошо, моя ошибка."
+
+#, fuzzy
+#~ msgid "Intro Luna L05"
+#~ msgstr "**Лина**: Ещё раз тот же вопрос, но теперь в ℝ!"
+
+#, fuzzy
+#~ msgid ""
+#~ "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\n"
+#~ "the implications via §3"
+#~ msgstr ""
+#~ "**Ты** (*Знайке*):  Тут я не продвигаюсь ни с §0, ни с §1.\n"
+#~ "\n"
+#~ "**Знайка**:  Думаю, тебе просто нужно чуть-чуть помочь §2. Лучше всего сначала совсем канонично разберись с двумя импликациями с помощью §3."
+
+#, fuzzy
+#~ msgid "Increase readability of §0. Try §1"
+#~ msgstr "**Знайка**:  А теперь сделай предположение §0 чуть более читабельным. Может, попробуешь §1?"
+
+#, fuzzy
+#~ msgid "We now have §0. Knowing what §1 means, try §2 with §3"
+#~ msgstr "**Знайка**:  Ммм … §0 всё ещё выглядит не очень. Но мы же знаем, что значит §1 — попробуй-ка §2 с §3!"
+
+#, fuzzy
+#~ msgid "Divide §0 with §1"
+#~ msgstr "**Знайка**:  Норм.  Так лучше. Теперь можешь ещё разложить §0 с помощью §1 на две части."
+
+#, fuzzy
+#~ msgid "Intro Luna L06"
+#~ msgstr "**Рита**:  Можно я тоже?  Вот."
+
+#, fuzzy
+#~ msgid ""
+#~ "Remind that §0 is an interval which is closed to both sides. You could write §1\n"
+#~ "as §2 or §3, because we are in the natual numbers. Therfore, the\n"
+#~ "goal is: §4"
+#~ msgstr ""
+#~ "**Ты**:  А что такое §0?\n"
+#~ "\n"
+#~ "**Рита**:  Это такой интервал (**I**). Закрыт (**c**) слева и справа, то есть замкнут.\n"
+#~ "\n"
+#~ "**Знайка**:  Тебе бы, наверное, §1 записать как §2 — или как §3, потому что мы тут снова в натуральных числах. Значит, необходимо доказать:\n"
+#~ "\n"
+#~ "§4"
+
+#, fuzzy
+#~ msgid "Equality of sets demands §0"
+#~ msgstr "**Знайка**: Равенство множеств просто взывает к §0."
+
+#, fuzzy
+#~ msgid "Try §0 afterwards"
+#~ msgstr "**Знайка**:  И сразу §0 вдогонку."
+
+#, fuzzy
+#~ msgid "Ritha gives signs to try omega"
+#~ msgstr "Рита снова делает какие-то знаки."
+
+#, fuzzy
+#~ msgid "Intro Luna L07: Enough of §0"
+#~ msgstr "**Лина**:  Хватит уже §0ть, теперь снова моя очередь."
+
+#, fuzzy
+#~ msgid ""
+#~ "Given\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "Show\n"
+#~ "§1\n"
+#~ msgstr ""
+#~ "**Ты**:  Сначала надо ещё раз выписать всё столбиком. Дано:\n"
+#~ "\n"
+#~ "§0\n"
+#~ "\n"
+#~ "Необходимо доказать:\n"
+#~ "\n"
+#~ "§1\n"
+#~ "\n"
+#~ "Знайка??\n"
+#~ "\n"
+#~ "Лина ухмыляется.\n"
+
+#, fuzzy
+#~ msgid "Conclusion Luna L07"
+#~ msgstr "**Ты**: Неплохо!"
+
+#, fuzzy
+#~ msgid "Intro Luna L08"
+#~ msgstr "**Рита**:  Теперь снова я!"
+
+#, fuzzy
+#~ msgid "Definitely use §0"
+#~ msgstr "**Рита**:  Обязательно попробуй §0."
+
+#, fuzzy
+#~ msgid "Intro Luna L09"
+#~ msgstr "**Лина**:  А теперь я."
+
+#, fuzzy
+#~ msgid ""
+#~ "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n"
+#~ "§3\n"
+#~ msgstr ""
+#~ "**Ты**: Вроде бы довольно ясно, какое §0 тут можно использовать.\n"
+#~ "\n"
+#~ "**Знайка**: Если тебе это так ясно, тогда начни уже с §1.\n"
+#~ "А потом тебе очень пригодится §2.  Например, вот так:\n"
+#~ "§3\n"
+
+#, fuzzy
+#~ msgid "Conclusion Luna L09"
+#~ msgstr "**Лина**: Отлично справились! Жаль, что вам уже пора дальше лететь. Но если вы еще задержитесь, то весь дневной ритм нам собьёте."
+
+#, fuzzy
+#~ msgid "Intro Luna L10: Use §0 again"
+#~ msgstr ""
+#~ "**Рита** (*Лине*):  Пожалуйста, дай мне тоже ещё один вопрос задать …\n"
+#~ "\n"
+#~ "**Лина**:  Ладно, один-единственный …  Но только не об §0 опять!\n"
+#~ "\n"
+#~ "Рита делает большие глаза и умоляюще смотрит на Лину.\n"
+#~ "\n"
+#~ "**Лина**:  Ну если *прям уж обязательно* надо.  Но давай быстро! У нас сейчас правда совсем нет времени!"
+
+#, fuzzy
+#~ msgid "Try using §0 and if nothing else helps, §1"
+#~ msgstr "**Знайка**: Может, тут снова поможет §0.  А если совсем ничего не выходит, попробуй §1."
+
+#, fuzzy
+#~ msgid ""
+#~ "Use assumption §0. E.g. apply §1 onto §2 or §3.\n"
+#~ "Formulate §4 using §5"
+#~ msgstr "**Знайка**:  Предположение §0 тебе точно нужно как-то использовать. Ты можешь, например, применить §1 к неравенству §2 или к §3! (Неравенство §4 лучше всего сформулировать с помощью §5.)"
+
+#, fuzzy
+#~ msgid "Luna"
+#~ msgstr "Луна"
+
+#, fuzzy
+#~ msgid "Intro Luna"
+#~ msgstr ""
+#~ "Знайка обнаружил небольшую луну, к которой вы теперь направляетесь. У неё совершенно гладкая поверхность, но в одном месте есть небольшое отверстие, от которого внутрь ведёт лестница. Вы прилуняетесь и с любопытством спускаетесь вниз.\n"
+#~ "\n"
+#~ "Спустившись, ты видишь, что чище прибранной квартиры в жизни не видел. Вас приветствует девочка-подросток.\n"
+#~ "\n"
+#~ "**Лина**: Я Лина, единственная жительница Луны.\n"
+#~ "\n"
+#~ "Потом она замечает Знайку.\n"
+#~ "\n"
+#~ "**Лина**: Ну, вообще-то нас тут двое …\n"
+#~ "\n"
+#~ "Она разворачивается и что-то кричит — и тут подъезжает смарт-эльф.\n"
+#~ "\n"
+#~ "**Лина**: Это Рита!\n"
+#~ "\n"
+#~ "Знайке Рита явно кажется милой.\n"
+#~ "\n"
+#~ "**Лина**: Но вы не стойте тут так неаккуратно, пожалуйста! Обувь и шлемы — убрать, туда и вот туда. Теперь встаньте на отмеченные точки для посетителей. А не то я запутаюсь совсем."
+
+#, fuzzy
+#~ msgid "§0 is useful here"
+#~ msgstr "**Знайка**:  Тут ты наверняка сможешь применить §0."
+
+#, fuzzy
+#~ msgid "Use the result §0"
+#~ msgstr "**Знайка**: Результат, который ты хотел применить, называется §0."
+
+#, fuzzy
+#~ msgid "Rewrite §0 as sum of basis elements"
+#~ msgstr "**Ты**: А теперь запишем §0 как сумму базисных элементов."
+
+#, fuzzy
+#~ msgid "Remind former result for §0. Try §1"
+#~ msgstr ""
+#~ "**Ты**: Мы же только что доказали §0!\n"
+#~ "\n"
+#~ "**Знайка**: Хорошо искать, если есть где! Это было §1."
+
+#, fuzzy
+#~ msgid "Observe equality"
+#~ msgstr "**Знайка**: Обе стороны равны! По определению!"
+
+#, fuzzy
+#~ msgid "Remind missed argument with §0"
+#~ msgstr ""
+#~ "**Ты**: Откуда вообще взялась эта цель?\n"
+#~ "\n"
+#~ "**Знайка**: В самом начале, на §0, ты, похоже, пропустил этот шаг. Сейчас необходимо его завершить."
+
+#, fuzzy
+#~ msgid "Try proof by conradiction. For this employ §0"
+#~ msgstr "**Знайка**: Конечно сможем. Это же типичное доказательство от противного: если простых чисел лишь конечное число, то произведение всех простых чисел плюс один не делится ни на одно простое число. С другой стороны, истинно следующее: §0. Противоречие."
+
+#, fuzzy
+#~ msgid "Remind: §0 sees through local definitions"
+#~ msgstr "**Знайка**: Напоминаю, §0 видит сквозь локальные определения."
+
+#, fuzzy
+#~ msgid ""
+#~ "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
+#~ "Try §4. It has to be written as §5 instead of §6\n"
+#~ "because §7 is ambigous in Leanic."
+#~ msgstr ""
+#~ "**Ты**: Я так понимаю, это должно значить, что §0 является правым обратным к §1 тогда и только тогда, когда §2 является левым обратным к §3.\n"
+#~ "\n"
+#~ "**Знайка**:  Именно.  Но если мне не изменяет память, на линише это не столько теорема, сколько определение §4. К сожалению, приходится писать §5 вместо просто §6, потому что §7 на линише неоднозначно."
+
+#, fuzzy
+#~ msgid "Explain surcetivity by §0"
+#~ msgstr ""
+#~ "**Знайка**:  Отображение сюръективно тогда и только тогда, когда индуцированное отображение §0, которое отправляет подмножество в прообраз этого подмножества, инъективно? Это вообще законно?\n"
+#~ "\n"
+#~ "**Ты**: Думаю, да.  Я это уже где-то видел.\n"
+#~ "\n"
+#~ "**Знайка**:  Ну тогда вперёд!"
+
+#, fuzzy
+#~ msgid "Conlsuion Samarkand L08"
+#~ msgstr ""
+#~ "**Араука**:  Фантастика!  Я так взволнована, что просто хочется взлететь на воздух. Но, конечно, нельзя. Узор пропадёт.\n"
+#~ "\n"
+#~ "**Знайка**:  И сколько тебе ещё осталось?\n"
+#~ "\n"
+#~ "**Араука**:  Тут ещё три года, 22 дня, 7 часов и 35 минут.\n"
+#~ "\n"
+#~ "**Знайка**:  Охх …\n"
+#~ "\n"
+#~ "**Ты**:  А откуда ты знаешь, куда именно тебе потом нужно идти, чтобы узор совпал?\n"
+#~ "\n"
+#~ "**Араука**:  А!\n"
+#~ "\n"
+#~ "По лицу Арауки расплывается широкая улыбка.\n"
+#~ "\n"
+#~ "**Араука**:  В этом-то и искусство!"
+
+#, fuzzy
+#~ msgid "Conclusion Iso L02"
+#~ msgstr ""
+#~ "Изософы выглядят очень довольными.\n"
+#~ "\n"
+#~ "**Знайка**:  Можем теперь ещё раз … капсулировать?\n"
+#~ "\n"
+#~ "**Изософ**:  Конечно!  Но всегда аккуратно, по порядку. С тех пор как мы используем капсулы в обе стороны, аварии снова участились.\n"
+#~ "\n"
+#~ "Знайка ещё три раза ездит туда-сюда.  Потом вы летите дальше."

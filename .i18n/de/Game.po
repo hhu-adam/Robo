@@ -1519,7 +1519,6 @@ msgstr ""
 #. §1: $e^x$
 #: Game/Doc/Definition.lean:745
 #, fuzzy
-#| msgid "§0 is the closed interval §1."
 msgid "§0 is the exponential function §1."
 msgstr "§0 ist das geschlossene Intervall §1."
 
@@ -1676,13 +1675,6 @@ msgstr "Die Taktik §0 schließt den Beweis, wenn eine der Annahmen genau dem Be
 #. §15: `h : a = b`
 #: Game/Doc/Tactic.lean:21
 #, fuzzy
-#| msgid ""
-#| "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
-#| "For example, §2 distinguishes between the cases §3 and §4.\n"
-#| "\n"
-#| "The proof goal is duplicated for this purpose, and\n"
-#| "the assumption §5 is added to the first “copy,”\n"
-#| "while the assumption §6 is added to the second “copy.”"
 msgid ""
 "The tactic §0 begins a case distinction as to whether §1 is true or false.\n"
 "For example, §2 distinguishes between the cases §3 and §4.\n"
@@ -1716,17 +1708,6 @@ msgstr ""
 #. §10: `contrapose`
 #: Game/Doc/Tactic.lean:38
 #, fuzzy
-#| msgid ""
-#| "The tactic §0 initiates a proof by contradiction.\n"
-#| "If §1 is your current proof goal, §2 generates a new assumption §3\n"
-#| "and sets the proof goal to §4.\n"
-#| "\n"
-#| "## Friends and relatives\n"
-#| "\n"
-#| "* At the end of a proof by contradiction, there is usually §5:\n"
-#| "this tactic closes the proof when it finds two obviously contradictory assumptions.\n"
-#| "* If the proof goal is of the form §6, you can use §7\n"
-#| "to start a proof by contraposition."
 msgid ""
 "The tactic §0 initiates a proof by contradiction.\n"
 "If §1 is your current proof goal, §2 generates a new assumption §3\n"
@@ -2024,14 +2005,6 @@ msgstr ""
 #. §1: `suffices h : P`
 #: Game/Doc/Tactic.lean:229
 #, fuzzy
-#| msgid ""
-#| "With §0, you introduce an intermediate result.\n"
-#| "You must then prove this intermediate result\n"
-#| "before you can continue with the actual proof.\n"
-#| "\n"
-#| "## Friends and relatives\n"
-#| "§1 works in exactly the same way, except that you can continue with the main proof first and\n"
-#| "only have to prove your intermediate result at the very end."
 msgid ""
 "With §0, you introduce an intermediate result.\n"
 "You must then prove this intermediate result\n"
@@ -6827,7 +6800,6 @@ msgstr "**Robo**: Das hatten wir schon gesehen."
 #. §1: `ebasis_diag_sum_eq_one`
 #: Game/Levels/Robotswana/L09_EvalOnEBasis.lean:203
 #, fuzzy
-#| msgid "Explain §0 with §1"
 msgid "Hint [nbnf] §0 with §1 "
 msgstr ""
 "**Du**: Mit anderen Worten: Wenn §0 Kommutatoren nihiliert, dann stimmen seine Werte auf allen §1 überein. Stimmt das??\n"
@@ -6890,14 +6862,12 @@ msgstr "**Robo**: §0!"
 #. §4: `matrix_eq_sum_ebasis`
 #: Game/Levels/Robotswana/L10_Characterize.lean:55
 #, fuzzy
-#| msgid "Rewrite §0 as sum of basis elements"
 msgid "Rewrite §0 in §1 as sum of basis elements.  Use §2, §3 with §4"
 msgstr "**Du**: Und jetzt schreiben wir §0 als Summe von Basiselementen."
 
 #. §0: `A i j * f (E i j) = if i = j then A i i else 0`
 #: Game/Levels/Robotswana/L10_Characterize.lean:59
 #, fuzzy
-#| msgid "[Hint hwzk] Try §0"
 msgid "[Hint kqwz] prove §0"
 msgstr "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen."
 
@@ -7792,7 +7762,6 @@ msgstr ""
 #. §2: `g`
 #: Game/Levels/Vieta/L05_Funext.lean:33
 #, fuzzy
-#| msgid "Try §0, as it sees through definitions §1 and §2"
 msgid "[Hint sy0jh] §0 the definitions of §1 and §2"
 msgstr ""
 "**Robo**: §0 sieht durch lokale Definitionen wie §1 und §2 hindurch. \n"
@@ -8064,10 +8033,6 @@ msgstr "**Robo**: Wegen der vielen Quantoren funktioniert §0 hier nicht. Probie
 #. §4: `RightInverse`
 #: Game/Levels/Epo/L03_LeftInverse.lean:22
 #, fuzzy
-#| msgid ""
-#| "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
-#| "Try §4. It has to be written as §5 instead of §6\n"
-#| "because §7 is ambigous in Leanic."
 msgid ""
 "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\n"
 "Try §4."
@@ -8202,7 +8167,6 @@ msgstr "**Robo**: Hier kannst du abkürzen, indem du statt der Definition von §
 #. §0: `Odd.neg_pow`
 #: Game/Levels/Mono/L02_InjectiveNeIff.lean:22
 #, fuzzy
-#| msgid "Perhaps, try using §0 here"
 msgid "Perhaps, try using the theorem §0 here"
 msgstr "**Robo**: §0?"
 
@@ -8740,7 +8704,6 @@ msgstr ""
 #. §0: `image_preimage_subset`
 #: Game/Levels/Samarkand/L04_SurjectiveImagePreimage.lean:43
 #, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint rips] remember §0"
 msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
@@ -8804,13 +8767,11 @@ msgstr "**Du**:  Mal überlegen …"
 
 #: Game/Levels/Samarkand/L08_LeftInvPreimage.lean:44
 #, fuzzy
-#| msgid "Conclusion Samarkand L01"
 msgid "Conclusion Samarkand L08"
 msgstr "**Arapuka**: Schön."
 
 #: Game/Levels/Samarkand/L09_Preimage_Injective.lean:13
 #, fuzzy
-#| msgid "Intro Samarkand L01"
 msgid "Intro Samarkand L09"
 msgstr ""
 "**Arapuka**:  Es gibt da auch ein paar Dinge, über die ich schon lange nachdenke. Vielleicht könnte ihr mir ja helfen.  Zum Beispiel: …\n"
@@ -8819,7 +8780,6 @@ msgstr ""
 
 #: Game/Levels/Samarkand/L09_Preimage_Injective.lean:86
 #, fuzzy
-#| msgid "Conlsuion Samarkand L08"
 msgid "Conlsuion Samarkand L09"
 msgstr ""
 "**Arapuka**:  Fantastisch!  Ich bin so aufgeregt, ich möchte am liebsten in die Luft springen. Aber das geht natürlich nicht.  Dann ist das Muster futsch.\n"
@@ -8968,7 +8928,6 @@ msgstr "**Robo**: Hier kannst du die §0-Annahme mit §1 benutzen."
 
 #: Game/Levels/Iso/L02_Inverse.lean:122
 #, fuzzy
-#| msgid "Conclusion Iso L02"
 msgid "Conclusion Iso L02 -- planet now continues"
 msgstr ""
 "Die Isosophen zeigen sich sehr zufrieden.\n"
@@ -8981,7 +8940,6 @@ msgstr ""
 
 #: Game/Levels/Iso/L03_CurryEquiv.lean:19
 #, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Iso L03"
 msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
@@ -9021,7 +8979,6 @@ msgstr ""
 
 #: Game/Levels/Iso/L04_EquivalenceBijection.lean:12
 #, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Iso L04"
 msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
@@ -9047,7 +9004,6 @@ msgstr ""
 
 #: Game/Levels/Iso/L05_BijectionEquivalence.lean:12
 #, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Iso L05"
 msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
@@ -9073,7 +9029,6 @@ msgstr ""
 
 #: Game/Levels/Iso/L06_Equivalence.lean:19
 #, fuzzy
-#| msgid "Intro Iso L01"
 msgid "Intro Iso L06"
 msgstr "**Isososoph**:  Natürlich haben auch wir etwas für euch vorbereitet."
 
@@ -9158,7 +9113,6 @@ msgstr ""
 #. §0: `simp`
 #: Game/Levels/Iso/L06_Equivalence.lean:47
 #, fuzzy
-#| msgid "[Hint jrxb] Try §0"
 msgid "[Hint n5hjb] Try §0."
 msgstr "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist."
 
@@ -10041,7 +9995,6 @@ msgstr ""
 #. §0: `mem_atTop`
 #: Game/Levels/Cartan/L04.lean:11
 #, fuzzy
-#| msgid "[Hint yvqm] Try §0"
 msgid "[Hint ysocy] Remember §0"
 msgstr "**Robo**: Oh, das ist jetzt aber nicht das, was du eben aufgeschrieben hattest. Könnte aber auch funktionieren. Probier mal §0 als nächsten Schritt."
 
@@ -10065,7 +10018,6 @@ msgstr ""
 #: Game/Levels/Cartan/L06.lean:13
 #: Game/Levels/Cartan/L07.lean:21
 #, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint 4j4cl] Try §0."
 msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
@@ -10085,7 +10037,6 @@ msgstr ""
 #. §0: `filter_upwards`
 #: Game/Levels/Cartan/L07.lean:8
 #, fuzzy
-#| msgid "Intro Luna L07: Enough of §0"
 msgid "Intro Cartan L07: another example for §0"
 msgstr "**Lina**:  Genug von §0, jetzt bin ich wieder an der Reihe."
 
@@ -10106,9 +10057,6 @@ msgstr ""
 #. §0: $x ↦ \\tfrac{1}{x}$
 #: Game/Levels/Cartan/L08.lean:8
 #, fuzzy
-#| msgid ""
-#| "Intro Robotswana L01: introduce definition\n"
-#| "§0"
 msgid "Intro Cartan L08: introduce the function §0"
 msgstr ""
 "Den Spuren folgend, findet ihr ein Stück Pergament, auf dem zuoberst eine Notiz steht.\n"
@@ -10138,13 +10086,11 @@ msgstr ""
 #. §0: `inv_lt_inv₀`
 #: Game/Levels/Cartan/L08.lean:31
 #, fuzzy
-#| msgid "§0 is useful here"
 msgid "[Hint ilinv] Note that §0 is useful here."
 msgstr "**Robo**:  Hier kannst du bestimmt §0 gut gebrauchen."
 
 #: Game/Levels/Cartan/L09.lean:8
 #, fuzzy
-#| msgid "Intro Prado L09"
 msgid "Intro Cartan L09"
 msgstr "**Robo**:  Aber so schwer ist das auch nicht.  Hier, schau dir diese Aufgabe mal an."
 
@@ -10210,7 +10156,6 @@ msgstr ""
 #. §0: `eventually_mem_nhdsWithin`
 #: Game/Levels/Cartan/L09.lean:47
 #, fuzzy
-#| msgid "[Hint hwzk] Try §0"
 msgid "[Hint hdevmwi] Try §0."
 msgstr "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen."
 
@@ -10244,7 +10189,6 @@ msgstr ""
 #. §0: `Filter.eventually_and`
 #: Game/Levels/Cartan/L10.lean:14
 #, fuzzy
-#| msgid "Remember to use §0 here"
 msgid "Remember that we have theorem §0"
 msgstr "**Robo**:  Erinner dich an §0."
 
@@ -10282,14 +10226,12 @@ msgstr ""
 #. §0: `eventually_lt_nhds`
 #: Game/Levels/Cartan/L10.lean:28
 #, fuzzy
-#| msgid "[Hint plnk] Try §0"
 msgid "[Hint teltn] Try §0."
 msgstr "**Robo**: Wie du meinst. Dann probier doch am besten §0."
 
 #. §0: `filter_upwards [«{hx}»]`
 #: Game/Levels/Cartan/L10.lean:31
 #, fuzzy
-#| msgid "[Hint fzwc] Try §0"
 msgid "[Hint flc10hx] Try §0."
 msgstr "**Robo**: §0 sagt meine Speicherplatte."
 
@@ -10300,7 +10242,6 @@ msgstr ""
 
 #: Game/Levels/Cartan/L11.lean:6
 #, fuzzy
-#| msgid "Intro Piazza L11"
 msgid "Intro Cartan L11"
 msgstr ""
 "**Mem**:  Hey, Fin, was machst du denn da?\n"
@@ -10316,7 +10257,6 @@ msgstr ""
 #. §0: `filter_upwards [«{h1}», «{h2}»]`
 #: Game/Levels/Cartan/L11.lean:13
 #, fuzzy
-#| msgid "[Hint fzwc] Try §0"
 msgid "[Hint fh2c11] Try §0."
 msgstr "**Robo**: §0 sagt meine Speicherplatte."
 
@@ -10352,7 +10292,6 @@ msgstr ""
 #. §1: `IsOpen.eventually_mem`
 #: Game/Levels/Cartan/L12.lean:26
 #, fuzzy
-#| msgid "[Hint xnqr] Try §0 | §1"
 msgid "[Hint tfuiem] Remember §0 and §1."
 msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
 
@@ -10378,14 +10317,12 @@ msgstr ""
 #. §2: `«{he1}»`
 #: Game/Levels/Cartan/L13.lean:27
 #, fuzzy
-#| msgid "[Hint xnqr] Try §0 | §1"
 msgid "[Hint rhhe1] Try to §0 with §1 at §2."
 msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
 
 #. §0: `filter_upwards [«{he1}», «{he2}»]`
 #: Game/Levels/Cartan/L13.lean:29
 #, fuzzy
-#| msgid "[Hint fzwc] Try §0"
 msgid "[Hint fuhe2] Now, §0."
 msgstr "**Robo**: §0 sagt meine Speicherplatte."
 
@@ -10395,7 +10332,6 @@ msgstr ""
 
 #: Game/Levels/Cartan.lean:24
 #, fuzzy
-#| msgid "Intro Cantor"
 msgid "Intro Cartan"
 msgstr ""
 "Ihr seid neben einem großen Zelt gelandet.\n"
@@ -11565,7 +11501,6 @@ msgstr ""
 #. §0: `slope_def_field`
 #: Game/Levels/Slope/L01.lean:9
 #, fuzzy
-#| msgid "[Hint wdpf] Try §0"
 msgid "[Hint sldf] Rewrite with §0."
 msgstr "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
 
@@ -11573,7 +11508,6 @@ msgstr "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist 
 #: Game/Levels/Slope/L02.lean:11
 #: Game/Levels/Slope/L02.lean:14
 #, fuzzy
-#| msgid "[Hint cqvs] Try §0"
 msgid "[Hint sll2] Try §0."
 msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 
@@ -11697,7 +11631,6 @@ msgstr ""
 #. §0: `Continuous.tendsto'`
 #: Game/Levels/Slope/L08.lean:22
 #, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint qmdrx] Remember §0"
 msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
@@ -11756,7 +11689,6 @@ msgstr ""
 #. §0: `(𝓝 (2 * x))`
 #: Game/Levels/Slope/L10.lean:44
 #, fuzzy
-#| msgid "[Hint bsjn] Try §0"
 msgid "[Hint bs7xd] §0"
 msgstr "**Robo**: Jetzt kannst du diese mit §0 benutzen."
 
@@ -11771,7 +11703,6 @@ msgstr ""
 #. §0: `Tendsto.mono_left`
 #: Game/Levels/Slope/L10.lean:51
 #, fuzzy
-#| msgid "[Hint bsjn] Try §0"
 msgid "[Hint bs7xd] Remember §0"
 msgstr "**Robo**: Jetzt kannst du diese mit §0 benutzen."
 
@@ -11826,7 +11757,6 @@ msgstr ""
 
 #: Game/Levels/Slope.lean:25
 #, fuzzy
-#| msgid "Intro Epo"
 msgid "Intro Slope"
 msgstr ""
 "Auf dem Planeten, dem ihr euch nähert, sind zwei Gebäude zu erkennen: ein schmales Hochhaus und ein zweites Gebäude mit etwas weniger Etagen. Die Gebäude sind mit einem eigenartigen Röhrensystem miteinander verbunden. Oben auf dem Hochhaus erkennt ihr einen Landeplatz.  Den steuert ihr an.\n"
@@ -11845,7 +11775,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L01.lean:8
 #, fuzzy
-#| msgid "Intro Saturn L01"
 msgid "Intro Cauchy L01"
 msgstr "Plötzlich erreicht euch ein Funkspruch."
 
@@ -11873,13 +11802,11 @@ msgstr ""
 #. §0: `ring`
 #: Game/Levels/Cauchy/L01.lean:18
 #, fuzzy
-#| msgid "[Hint mhjv] Try §0"
 msgid "[Hint smth1tr] Try §0."
 msgstr "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!"
 
 #: Game/Levels/Cauchy/L02.lean:8
 #, fuzzy
-#| msgid "Intro Cantor L02"
 msgid "Intro Cauchy L02"
 msgstr ""
 "**Cantor**:  Passt auf, die Überlegung geht eigentlich noch weiter!\n"
@@ -11911,7 +11838,6 @@ msgstr ""
 #. §0: `have`
 #: Game/Levels/Cauchy/L02.lean:20
 #, fuzzy
-#| msgid "Start with §0"
 msgid "[Hint u6qjy] Start with §0."
 msgstr "**Robo**:  Ich würde wieder mit §0 anfangen."
 
@@ -11937,7 +11863,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L03.lean:10
 #, fuzzy
-#| msgid "Intro Cantor L03"
 msgid "Intro Cauchy L03"
 msgstr ""
 "**Du**: Jetzt habe ich aber noch nicht erkannt, was daran „diagonal“ ist.\n"
@@ -12005,7 +11930,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L04.lean:8
 #, fuzzy
-#| msgid "Intro Cantor L04"
 msgid "Intro Cauchy L04a"
 msgstr " "
 
@@ -12020,7 +11944,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L05.lean:8
 #, fuzzy
-#| msgid "Intro Luna L05"
 msgid "Intro Cauchy L05"
 msgstr "**Lina**: Nochmal dieselbe Frage, aber jetzt in ℝ!"
 
@@ -12060,7 +11983,6 @@ msgstr ""
 #. §0: `tendsto_const_nhds`
 #: Game/Levels/Cauchy/L05.lean:27
 #, fuzzy
-#| msgid "[Hint plnk] Try §0"
 msgid "[Hint lpk2t] Remember §0."
 msgstr "**Robo**: Wie du meinst. Dann probier doch am besten §0."
 
@@ -12110,7 +12032,6 @@ msgstr ""
 #. §0: `tendsto_div_exp_atTop`
 #: Game/Levels/Cauchy/L05.lean:49
 #, fuzzy
-#| msgid "[Hint hwzk] Try §0"
 msgid "[Hint hi2ko] Remember §0."
 msgstr "**Robo**: Genau. Jetzt kannst du nämlich §0 schreiben – zwei Summen sind insbesondere dann gleich, wenn über dieselbe Indexmenge summiert wird und auch die Ausdrücke, über die summiert wird, übereinstimmen."
 
@@ -12126,7 +12047,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L06.lean:8
 #, fuzzy
-#| msgid "Intro Luna L06"
 msgid "Intro Cauchy L06"
 msgstr "**Ritha**:  Kann ich auch mal?  Hier."
 
@@ -12212,7 +12132,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L07.lean:9
 #, fuzzy
-#| msgid "Intro Babylon L07"
 msgid "Intro Cauchy L07"
 msgstr ""
 "Direkt neben dem Gaußschen Turm ist wieder ein leerer Bauplatz.\n"
@@ -12239,14 +12158,12 @@ msgstr ""
 #. §0: `convert`
 #: Game/Levels/Cauchy/L07.lean:28
 #, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint t99r1] Remember §0."
 msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
 #. §0: `convert! «{h}» using 1`
 #: Game/Levels/Cauchy/L07.lean:31
 #, fuzzy
-#| msgid "[Hint rxjt] Try §0"
 msgid "[Hint 8riva] Better use §0"
 msgstr "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung."
 
@@ -12262,7 +12179,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L08.lean:8
 #, fuzzy
-#| msgid "Intro Quanus L08"
 msgid "Intro Cauchy L08"
 msgstr "**Robo**: Während wir warten, zeig ich dir vielleicht kurz, wie sich Negation mit Quantoren verträgt. Ich habe so ein Gefühl, dass wir das gleich brauchen werden."
 
@@ -12285,7 +12201,6 @@ msgstr ""
 #. §0: `f =ᶠ[𝓝 x] fun _ ↦ 0`
 #: Game/Levels/Cauchy/L08.lean:17
 #, fuzzy
-#| msgid "[Hint cqvs] Try §0"
 msgid "[Hint cev2] Establish §0."
 msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 
@@ -12293,7 +12208,6 @@ msgstr "**Robo**: Diesmal kannst du einfach wieder §0 verwenden."
 #. §1: `filter_upwards`
 #: Game/Levels/Cauchy/L08.lean:19
 #, fuzzy
-#| msgid "[Hint xnqr] Try §0 | §1"
 msgid "[Hint sm7fu] Remember §0 and §1."
 msgstr "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten."
 
@@ -12321,7 +12235,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L09.lean:6
 #, fuzzy
-#| msgid "Intro Cantor L09 - 2"
 msgid "Intro Cauchy L09 (Boss)"
 msgstr ""
 "**Cantor**:  Passt auf!  Alles wird klar.  Hier ist der Schlüssel! Ihr müsst die Aussage von eben nur ein bisschen umformulieren.\n"
@@ -12416,7 +12329,6 @@ msgstr ""
 #. §0: `slope_def_field`
 #: Game/Levels/Cauchy/L09.lean:63
 #, fuzzy
-#| msgid "[Hint wdpf] Try §0"
 msgid "[Hint nfd0p] Remember §0"
 msgstr "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!"
 
@@ -12493,7 +12405,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L10.lean:10
 #, fuzzy
-#| msgid "Intro Quantus L10"
 msgid "Intro Cauchy L10"
 msgstr ""
 "**Du**: Könnt ihr eigentlich immer nur im Chor oder durcheinander reden?\n"
@@ -12519,7 +12430,6 @@ msgstr ""
 #. §2: `P (n+1) = X² · (P n - derivative (P n))`
 #: Game/Levels/Cauchy/L10.lean:17
 #, fuzzy
-#| msgid "[Babylon] Split §0 with §1: §2"
 msgid "The polynomials §0 with §1 and §2."
 msgstr "**Robo**:  Die Annahme §0 kannst du ja jetzt mit §1 in die drei Fälle aufteilen: §2."
 
@@ -12528,7 +12438,6 @@ msgstr "**Robo**:  Die Annahme §0 kannst du ja jetzt mit §1 in die drei Fälle
 #. §2: `(P n)(x⁻¹) · f x`
 #: Game/Levels/Cauchy/L10.lean:20
 #, fuzzy
-#| msgid "Try §0 to rewrite §1 to §2"
 msgid "The §0-th derivative of §1 is §2."
 msgstr "**Robo**: Willst du vielleicht mit §0 die Annahme §1 zu §2 umschreiben?"
 
@@ -12579,7 +12488,6 @@ msgstr ""
 #. §0: `funext`
 #: Game/Levels/Cauchy/L10.lean:47
 #, fuzzy
-#| msgid "Start with §0"
 msgid "[Hint sm9ritsc] Start with §0"
 msgstr "**Robo**:  Ich würde wieder mit §0 anfangen."
 
@@ -12599,7 +12507,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy/L11.lean:10
 #, fuzzy
-#| msgid "Intro Piazza L11"
 msgid "Intro Cauchy L11"
 msgstr ""
 "**Mem**:  Hey, Fin, was machst du denn da?\n"
@@ -12695,7 +12602,6 @@ msgstr ""
 
 #: Game/Levels/Cauchy.lean:26
 #, fuzzy
-#| msgid "Intro Ciao"
 msgid "Intro Cauchy"
 msgstr ""
 "**Du**:  Kann es sein, dass wir jetzt alle Planeten in dieser Ecke dieses Universums besucht haben?\n"
