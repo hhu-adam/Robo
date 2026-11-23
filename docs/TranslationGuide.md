@@ -1,6 +1,8 @@
 
 # Adding a new translation
 
+Before you start working on a translation, please reach out to our Translation Coordinator [Konstantin Belyanin](https://github.com/k88-b) to make sure you are not duplicating ongoing efforts by other volunteers.
+
 ## 1. Translate the glossary
 
 All translations files are contained in the folder `.i18n`. There's a subfolder for each language.  To add a translation to Pidgeonese, first create a new folder `.i18n/pg`, where `pg` is the ISO language code for Pidgeonese.  Then, copy the glossary from [.i18n/en/glossary.csv](https://github.com/hhu-adam/Robo/blob/main/.i18n/en/glossary.csv) to `.i18n/pg/glossary.csv` and translate the terms in this list.
@@ -14,7 +16,10 @@ Once you're done, delete all the comment lines (lines starting with `#`) from yo
 
 ## 2. Pretranslate using machine translation
 
-For this step, you will need a paid version of Poedit, plus a (paid) OpenAI API key.  Or, you can simply contact [me](https://www.math.uni-duesseldorf.de/~zibrowius/), and I will do this step for you.
+For this step, you will need access to a decent AI model.  If you don't have that, please ask our Translation Coordinator [Konstantin Belyanin](https://github.com/k88-b) to run this step for you.
+
+### Option 2A:  Poedit + API key
+The paid version of Poedit supports bulk machine translation using API keys from certain providers including OpenAI.  In detail, the machine translation process is as follows:
 
 Build the project `Robo` with `lake build` to make sure the file `.i18n/de/Game.pot` is up-to-date.
 
@@ -42,14 +47,14 @@ Please retain as much of the original formatting as possible!  In particular, pl
 
 The content of dialogues and other text is mathematical in nature.  The style should remain as fresh and informal as in the German original.
 ```
+### Option 2B:  without Poedit
+
+Decent models can also do all the above without Poedit.  Just ask it to create `.18n/pg/Game.po` in your desired language Pidgeonese (where `pg` in the file path is the ISO language code for Pidgeonese) based on the German version `.18n/de/Game.po`.  Include the following note on the file format in your instructions.
 
 ### Note on file format
 
 In the entries in `.i18n/template/Game.pot`, lean snippets and latex snippets are replaced by
-placeholders §0, §1, §2, … The contents of these snippets are present as comments of the form `#. §n: ...`.
-
-### Note on translation engines
-We had previously experimented with Pretranslation using DeepL.  Unfortunately, DeepL has a tendency to get confused by formatting (line breaks, placeholders) in the input, and to destroy the formatting in the output. It even rendered some placeholders (§0, §1, …) as "Section 0", "Section 1" … . All of these issues aside, GPT appears to be better at translating idiomatic expressions.
+placeholders §0, §1, §2, … The contents of these snippets are present in the `.pot` and `.po` files as comments of the form `#. §n: ...`.
 
 ## 3. Review
 You now need to go over the translations in Poedit line by line.  This is the hard part!  There are about 24.000 words in total, and you need to go over all of them.  Of course, the task can be distributed among several people, but then the difficulty lies in achieving consistency.
