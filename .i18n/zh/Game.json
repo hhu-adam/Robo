@@ -20,8 +20,6 @@
  "**你**：§0在这里到底是啥意思？\n\n**司南**：就是说§1、§2和§3都是§4的*子集*。\n\n**你**：§5 的意思是“subset”？\n\n**司南**：你要这么理解，也行。\n\n**你**：那我大概*知道*这个命题。但完全不知道在这儿该怎么证。\n\n**Ext**：我可以告诉你！有个魔法词，就跟我名字一模一样！！\n\n**司南**：对了——§6会把集合等式 §7 替换成等价命题 §8。",
  "§0 means that §1 is a subset of §2\n(or, more precisely, that §3 is a set consisting of elements of type §4).":
  "§0 的意思是 §1 是 §2 的一个子集（或者更准确地说，§3 是一个集合，它由类型为 §4 的元素组成）。",
- "§0 means that §1 is a polynomial in §2 indeterminates\n§3, …, §4 with coefficients in §5.":
- "§0 的意思是：§1 是一个关于 §2 个不定元 §3，……，§4 的多项式，系数在 §5 中。",
  "§0 means that statements §1 and §2 are logically equivalent (“if and only if”).\n\n## §3 as proof target\n\nTo show §4, you can, for example, call §5\nand then prove §6 and §7 separately.\n\n## §8 as an assumption\n\nYou can break down an assumption of the form §9 using §10 into its two components\n§11 and §12.\nHowever, you can also refer directly to these components with §13 and §14.\n(The abbreviation §15 stands for “modus ponens”.)":
  "§0 表示命题 §1 和 §2 在逻辑上等价（“当且仅当”）。\n\n## 以 §3 为目标\n\n要证明 §4，你比如可以调用 §5，然后分别证明 §6 和 §7。\n\n## 以 §8 为假设\n\n形如 §9 的假设，你可以用 §10 把它拆成两个部分 §11 和 §12。\n不过你也可以用 §13 和 §14 直接引用这些部分。\n（缩写 §15 表示“modus ponens”。）",
  "§0 means 'is fixed point'. §1 equates to §2":
@@ -33,7 +31,6 @@
  "§0 is what is looked for": "**司南**：§0 就是你要找的。",
  "§0 is useful. §1 says that each strictly monotone mapping\nis injective. To show that a mapping is monotone one can use e.g. §2 or §3,\nwhich says that for uneven §4, §5 is monotone.":
  "**你**：嗯，这个有点更难了……\n\n**司南**：我现在也没什么好主意。\n\n这时你们听到人群里有人小声嘀咕：§0……\n\n**司南**：啊，对。这里有个引理 §1：每个严格单调的映射都是单射。还有一大堆引理可以用来证明映射是单调的。比如：\n\n§2 – 两个严格单调映射的和仍然严格单调\n\n§3 – 对于奇数 §4，§5 是严格单调的\n\n要不要用这个试试看？",
- "§0 is useful here": "**司南**：这里 §0 肯定能派上用场。",
  "§0 is trivial": "**你**：§0。这不是显然的吗？等等！",
  "§0 is the “subset” consisting of *all* elements of type §1.\n\nWith §2, you convert an equation of the form §3 into the\nstatement §4.":
  "§0 是由类型为 §1 的*所有*元素组成的“子”集合。\n\n用 §2 你可以把一个形如 §3 的等式转成命题 §4。",
@@ -65,8 +62,6 @@
  "**司南**：§0 的定义跟你想的一样：§1。你要是不信我，也可以用 §2 快速检查一下。",
  "§0 is defined as §1. State is explicitly with\n§2\n":
  "**司南**：§0 当然被定义为 §1。最好一开始你就把它们全都明确展开：\n§2\n",
- "§0 is defined as §1.\nIn other words: §2.\n\nYou have to write §3  instead of §4,\nas §5 is ambigous in Leanic.":
- "§0 被定义为 §1。也就是说，直白点就是 §2。\n\n你得写 §3 而不是 §4，因为 §5 在 Lean语里是有歧义的。",
  "§0 is any statement, without further specification as to whether it is true, false, or\nunprovable.\n\nSee also §1 and §2 for the unconditionally true and false\nstatements, respectively.":
  "§0 是一个任意命题，不额外说明它是真的、假的，还是根本不可证。\n\n另见 §1 和 §2：分别对应无条件为真和无条件为假的命题。",
  "§0 is an implicid embedding of  §1 in §2.  Try §3":
@@ -86,8 +81,6 @@
  "§0 can used always": "**司南**：§0 总是可以试试看。",
  "§0 bedeutet §1.\n\n**Warnung**: Die Symbole §2 (§3) und §4 (ASCII vertikaler Strich) sind zwei unterschiedliche\nZeichen! Das erste wird ausschließlich für „teilt“ verwendet, das andere kommt zum Beispiel in der\nSyntax §5 vor.":
  "§0 表示 §1。\n\n**警告**：符号 §2（§3）和 §4（ASCII 竖线）是两个不同的字符！第一个只用于表示“整除”，另一个比如会出现在语法 §5 里。",
- "§0 and §1 alone don't help here. §2 will need some help. Try to untangle\nthe implications via §3":
- "**你**（*对司南*）：这里我用 §0 和 §1 都推不下去。\n\n**司南**：我觉得你只要稍微帮 §2 一把就行。要不按老办法，用 §3 处理掉这两个蕴涵先。",
  "§0 Use linearity": "**你**（*心里想*）：现在用线性性……千万别想水……巴比伦那的水可真不少……我刚才做到哪儿了？",
  "§0 (“or”) is the statement that at least one of the statements §1, §2 is true.\n\n## §3 as proof goal\n\nYou can use the tactics §4 or §5 to decide\nwhich statement you want to prove.\n\n## §6 as an assumption\n\nSince you do not know which of the statements §7 or §8 you can assume,\nyou may have to show the proof goal twice:\nonce under the assumption §9 and once under the assumption §10.\nTo do this, use the tactic\n§11":
  "§0（“A 或 B”）的意思是：命题 §1、§2 至少有一个为真。\n\n## §3 作为证明目标\n\n用策略 §4 或者 §5，你可以决定你想证明哪一个命题。\n\n## §6 作为假设\n\n因为你不知道你可以假设 §7、§8 中的哪一个，所以你可能得把证明目标证明两次：\n一次在假设 §9 下，一次在假设 §10 下。\n为此你使用策略\n§11",
@@ -175,8 +168,6 @@
  "You can continue until there is §0 and then apply §1. §2 always uses §3,\nmeaning hat §4 does not have to be written":
  "**你**：呃，这搞反了。\n\n  **司南**：对，反过来会更好。不过你现在要是就这么继续做，直到得到类似 §0 的东西，§1 就能把它证明出来。\n\n  **司南**：我突然想到，§2 反正也会试着应用 §3。\n  也就是说，你甚至不用把 §4 写出来。",
  "Wrong order": "**司南**：不，这看起来方向反了。",
- "With §0, you introduce an intermediate result.\nYou must then prove this intermediate result\nbefore you can continue with the actual proof.\n\n## Friends and relatives\n§1 works in exactly the same way, except that you can continue with the main proof first and\nonly have to prove your intermediate result at the very end.":
- "用 §0 你可以引入一个中间结果。\n接下来你必须先证明这个中间结果，才能继续真正的证明。\n\n## 相关策略\n§1 也一样，只不过你可以先继续主证明，直到最后才证明你的中间结果。",
  "With §0, you introduce a proof section in which you show\nthat the desired proof goal follows from §1.\nThen you prove §2.\n\n## Friends and relatives\n§3 works the same way, except that you must first prove §4 before you can\ncontinue with the main proof.":
  "用 §0 你会开启一段证明，在其中你要展示：想要的目标可以由 §1 推出。\n之后你再证明 §2。\n\n## 相关策略\n§3 也一样，只不过你得先证明 §4，然后才能继续主证明。",
  "With §0, you insert an intermediate step into an equation or equivalence.\n\n| before | tactic    | after                |\n|:------------ |:--------- |:----------------------- |\n| §1    | §2 | §3 and §4 |\n| §5    | §6 | §7 and §8 |\n\nSince you can repeat the tactic several times, it is suitable for\nperforming a “calculation” §9 step by step.\n\n(Outside of the game, however, the multi-line tactic §10 is better suited for such calculations.)":
@@ -195,10 +186,6 @@
  "With §0 one can transform §1 to §2": "**司南**：用 §0，你可以把 §1 变成 §2。",
  "With §0 (for “symmetry”), you swap the sides of an equation (§1) or equivalence (§2) in the proof target.\n\n## Variants\n* §3 operates on the assumption §4 instead of the proof target\n* §5 is the result of §6 and can be used like §7\n\nEach of the following three tactics or tactic sequences therefore has the same effect:\n* §8\n* §9\n* §10":
  "用 §0（表示“symmetry”）你可以在目标里交换一个等式（§1）或等价（§2）的左右两边。\n\n## 变体\n* §3 作用在假设 §4 上，而不是作用在目标上\n* §5 是 §6 的结果，并且可以像 §7 一样使用\n\n所以接下来的三种策略/策略序列效果都一样：\n* §8\n* §9\n* §10",
- "Wird typischerweise mit §0 verwendet, um in einem Beweis die drei Fälle §1, §2 und §3 zu unterscheiden:\n\n§4":
- "通常会和 §0 一起用，用来在证明里区分三种情况 §1、§2 和 §3：\n\n§4",
- "We now have §0. Knowing what §1 means, try §2 with §3":
- "**司南**：嗯…… §0 看起来还是不太理想。不过我们知道 §1 是什么意思——试试用 §2 配上 §3！",
  "We know that §0 can be used on implications. Intuitively, for equivalence §1\none could use §2. The direction §3 of §4 is denoted by §5.\nTry §6":
  "**司南**：嗯，蕴涵可以用 §0 来应用……\n\n**你**：我知道啦！但 §1 不是蕴涵，而是一个等价。那我其实想写成 §2。\n\n**司南**：§4 的方向 §3 叫做 §5。你可以用 §6 来应用它。",
  "We have assumption §0. Try applying §1 on §2.":
@@ -221,7 +208,6 @@
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**你**: §0？\n\n**司南**：这可能行得通。而且你大概会需要引理 §1。对于 §2，它会从假设 §3 推出结论 §4。",
  "Use §0 again": "**司南**：然后再用一次 §0。",
- "Use the result §0": "**司南**：你刚才想用的那个结果叫 §0。",
  "Use the negation §0": "**司南**：§0，正是！",
  "Use short cut by instead of the definition of §0 using equivalent description\n§1. In Leanic it is part of §2. For injective mapping it holds\nthat §3":
  "**司南**：这里你可以走个捷径：不用 §0 的定义，而是用单射性的等价描述 §1。在Lean语里这是 §2 的一部分：对单射映射有 §3。",
@@ -229,8 +215,6 @@
  "Use disappearing §0 in §1 with §2. Try §3":
  "**司南**：你现在做到哪一步了？\n\n**你**：我还得想办法用上这个事实：当 §2 时，§0 在 §1 上的值为0。\n\n**司南**：那不如先做下面这个中间步骤：\n\n§3",
  "Use definitions via §0": "**你**：看来我还是得用一下定义。\n\n**司南**：那就用 §0 吧！",
- "Use assumption §0. E.g. apply §1 onto §2 or §3.\nFormulate §4 using §5":
- "**司南**：你肯定得想办法用上假设 §0。比如你可以把 §1 用到不等式 §2 上，或者用到 §3 上！（不等式 §4 最好用 §5 先写出来。）",
  "Use assumption §0 with §1": "**司南**：这里你可以把 §0 这个假设配合 §1 用起来。",
  "Use assumption §0": "**你**：那我现在选谁？\n\n**司南**：这不都一样吗？根据假设 §0，你知道至少有那么一个人。",
  "Us the given implication by trying §0":
@@ -258,7 +242,6 @@
  "**你**：按定义来说，两个映射相等，不就是当它们作用到每个元素上都得到同样的值吗…… \n\n**司南**：这个原则对应的策略，我这里也有：§0。用 §1，你选一个任意的 §2，然后把目标从 §3 改成 §4。",
  "Try §0.": "**司南**：这里 §0 很有用。",
  "Try §0, §1 | §2": "**司南**：我确实会先从 §0 开始。然后用上这里的常用定理，比如 §1、§2之类的。",
- "Try §0, §1": "**你**：分类讨论？？\n\n**司南**：对，可以试试。比如先写 §0，然后再写 §1。",
  "Try §0, as it sees through definitions §1 and §2":
  "**司南**：§0 能看穿像 §1 和 §2 这样的局部定义。\n所以你可以直接用这个策略。",
  "Try §0 | §1. Go step back s.t. goal §2":
@@ -311,14 +294,10 @@
  "Try §0 and rewrite assumption §1 firstly by §2":
  "**司南**：最好先把所有定义再展开写一遍。我觉得：§0。还有那个假设 §1，你也可以先用 §2 写得更明确一点。",
  "Try §0 again §1": "**司南**：再来一个 §0！",
- "Try §0 afterwards": "**司南**：然后试试 §0。",
  "Try §0 & §1": "**司南**：把 §0 和 §1 组合一下应该就能搞定。在月球上不也成功了吗？",
  "Try §0": "**司南**：这次你直接再用 §0 就行。",
  "Try via §0 or directly §1": "**司南**：现在用 §0。实际上你可以直接用 §1。",
- "Try using §0 here": "**司南**：§0？",
  "Try using §0 and §1": "**司南**：和等于求和……可以用 §0、§1 来处理。",
- "Try using §0 and if nothing else helps, §1":
- "**司南**：也许这里又该用一下 §0。要是实在不行，就试试 §1。",
  "Try using §0": "**司南**：也许可以试试和 §0 有关的方法？",
  "Try to use §0":
  "**司南**：对了！按现在这个写法，我在我的库里见过这个命题。这正是 §0。\n\n**你**：太好了！那我们就不用在这上面浪费时间了。",
@@ -338,17 +317,13 @@
  "**康托尔**：对！\n\n**你**：司南，我们现在不能用刚才那个结果吗？\n\n**司南**：抱歉，刚才太快了！我可能忘了保存。",
  "Try rewriting with §0": "**司南**：试试 §0。",
  "Try replacing §0 by §1": "**司南**：把 §0 换成 §1。",
- "Try proof by conradiction. For this employ §0":
- "**司南**：当然，我们就这么做。这不就是个典型的反证法嘛：如果素数只有有限多个，那么所有素数的乘积加一就不被任何素数整除。另一方面又有：§0。这是矛盾的。",
  "Try proof by cases, if §0": "**Fin**：做个分类讨论，看 §0 成不成立。",
  "Try proof by cases for §0": "**你**：现在大概需要对 §0 做个分类讨论？",
  "Try proof by case for §0":
  "**你**：那我现在怎么开头？\n\n**司南**：我不是说了嘛，最好去翻翻你的随身小书库。要是我没记错的话，可以按 §0 这个命题是真是假来做分类讨论。",
  "Try piecewise function with §0": "**司南**：你可以用 §0 定义一个分段函数。",
  "Try out §0 again": "**司南**：再试试 §0。",
- "Try out §0": "**Ritha** *(低声)*：试试 §0！",
  "Try out using §0": "**司南**：试试 §0。",
- "Try omega": "Ritha 似乎想用眼神给你们打个什么暗号。",
  "Try if §0 and §1 can be used as in Implis":
  "**你**：所以这里我也可以用 §0 和 §1？\n\n**司南**：你试试看？",
  "Try holding onto §0":
@@ -401,8 +376,6 @@
  "策略 §0（或者也可以：§1）把否定推进到量词里：\n\n| 之前         | 之后         |\n|:------------ |:-------------|\n| §5           | §6           |\n| §7           | §8           |\n\n在嵌套表达式里，它会把否定 §9 尽可能往右推。\n比如目标\n§10\n用 §11 会变成\n§12\n\n## 相关策略\n\n这个策略基于两个引理 §13 和 §14，你也可以用 §15 单独应用它们。",
  "The tactic §0 is used for   proof goals of the form §1 or §2.\n\nIf your proof goal is §3, §4 gives you the assumption §5, and you then have to prove §6.\nIf your proof goal is §7, §8 gices you an arbitrary §9 and you have to prove §10.\n\n| before | tactic       | after                     |\n|:------------ |:------------ |:---------------------------- |\n| §11    | §12    | §13, §14               |\n| §15  | §16 | §17, §18, §19 |\n\n\n## Friends and relatives\n\nThe tactic §20 does the exact opposite of §21.":
  "策略 §0 用于形如 §1 或 §2 的目标。\n\n如果你的目标是 §3，用 §4 你会得到假设 §5，然后需要证明 §6。\n如果你的目标是 §7，用 §8 你先随便取一个 §9，然后需要证明 §10。\n\n| 之前         | 策略         | 之后                        |\n|:------------ |:------------ |:---------------------------- |\n| §11          | §12          | §13, §14                     |\n| §15          | §16          | §17, §18, §19                |\n\n\n## 相关策略\n\n策略 §20 做的事情和 §21 正好相反。",
- "The tactic §0 initiates a proof by contradiction.\nIf §1 is your current proof goal, §2 generates a new assumption §3\nand sets the proof goal to §4.\n\n## Friends and relatives\n\n* At the end of a proof by contradiction, there is usually §5:\nthis tactic closes the proof when it finds two obviously contradictory assumptions.\n* If the proof goal is of the form §6, you can use §7\nto start a proof by contraposition.":
- "策略 §0 用来开启反证法证明。\n如果 §1 是你当前的目标，那么 §2 会生成一个新的假设 §3，并把目标改成 §4。\n\n## 相关策略\n\n* 在反证法证明的最后通常会用到 §5：\n这个策略会在它找到两条明显互相矛盾的假设时结束证明。\n* 如果目标形如 §6，你可以用 §7 开始一个用逆否命题的证明。",
  "The tactic §0 concludes the proof if it finds a contradiction in the assumptions.\nSuch a contradiction can look like this, for example:\n\n* §1\n* §2 and §3\n* §4\n\n## Friends and relatives\n\nNormally, §5 is used to conclude a proof by contradiction\nthat was opened with §6.":
  "策略 §0 会在假设里找到矛盾时结束证明。\n这种矛盾比如可能长这样：\n\n* §1\n* §2 和 §3\n* §4\n\n## 相关策略\n\n通常用 §5 来结束一个由 §6 开启的反证法证明。",
  "The tactic §0 changes a proof goal of the form §1 to §2, thereby\ninitiating a proof by contraposition.\n\n## Friends and relatives\n\nThe tactic §3 can be useful for writing an assumption as an implication premise\nbefore you use §4.":
@@ -411,8 +384,6 @@
  "策略 §0 可以证明：在 §1 或 §2 中，一个线性方程或不等式可以由给定的方程或不等式推出。\n它和 §3 不同，也能处理由（不）等式组成的逻辑连接。",
  "The tactic §0 can show that a linear equation or inequality follows from given equations or inequalities.\nIt is quite flexible and works just as well in ℕ as in ℝ.\nHowever, the (in)equations must be given individually, not logically linked.\nAn assumption of the form\n§1\nmust first be rewritten with\n§2\nto\n§3\nso that §4 can do something with it.":
  "策略 §0 可以证明某个线性方程或不等式能由给定的方程或不等式推出。\n它挺灵活的，在 ℕ 和 ℝ 里都一样好用。\n不过这些（不）等式必须是单独给出的，不能用逻辑连接起来。\n比如一个形如\n§1\n的假设，得先用\n§2\n改写成\n§3\n这样 §4 才能用得上。",
- "The tactic §0 begins a case distinction as to whether §1 is true or false.\nFor example, §2 distinguishes between the cases §3 and §4.\n\nThe proof goal is duplicated for this purpose, and\nthe assumption §5 is added to the first “copy,”\nwhile the assumption §6 is added to the second “copy.”":
- "策略 §0 开始做一个分类讨论：§1 为真还是为假。\n比如，§2 会区分 §3 和 §4 两种情况。\n\n为此证明目标会被复制一份：在第一份“副本”里加入假设 §5，在第二份“副本”里加入假设 §6。",
  "The tactic §0 adds the assumption §1 as an implication premise to the proof goal:\nfrom §2 and §3, we get §4.\n\n## Friends and relatives\n\nThe tactic §5 does the exact opposite of §6.":
  "策略 §0 会把假设 §1 作为蕴涵的前提塞进证明目标里：\n从 §2 和 §3 变成 §4。\n\n## 相关策略\n\n策略 §5 做的正好是 §6 的反操作。",
  "The statement §0 is always true.\n\n## §1 as a proof target\n\nThe tactics §2 and §3 conclude every proof with §4 as the proof target.\n\n## §5 as an assumption\n\nAs an assumption, §6 is not helpful at all.":
@@ -486,19 +457,16 @@
  "Saturn": "土星",
  "Samarkand": "撒马尔罕",
  "Robotswana": "埃托沙",
- "Ritha gives signs to try omega": "Ritha又在朝你们使眼色。",
  "Rewrite §0. Start with §1 to replace §2 with §3":
  "**你**：§0，它们不都是等价的吗……\n\n**司南**：是啊，但你得帮他把这些等价关系改写一下。用 §1 你可以把 §2 替换成 §3。",
  "Rewrite §0 to §1. Formulate equation using §2.\nAlso, specify that equation is in §3. Try e.g. §4":
  "**司南**：恐怕接下来你得把 §0 改写成 §1。\n也许最简单的办法，是用 §2 把这个等式单独写出来。\n你只需要想办法说明：这应该是 §3 里的一个等式，比如这样：\n§4",
  "Rewrite §0 to §1 via §2": "**你**：啊，那我现在可以先把 §0 改写成 §1？\n\n**司南**：用 §2 就行。",
- "Rewrite §0 as sum of basis elements": "**你**：然后我们把 §0 写成基元素的和。",
  "Rewrite so you can use §0": "**司南**：稍微改写一下，肯定就能用上 §0。",
  "Return to topic at hand": "**司南**：行吧。那现在回到正题。",
  "Repeat proof from first level":
  "**司南**：行吧，你也可以直接把第一张羊皮纸上的证明再做一遍。\n来吧，熟能生巧。\n\n**你**：行了行了，我又没有你那种机械脑子。",
  "Reminder of set equality": "**你**：嗯，我觉得我以前就是这么学的——两个集合相等，当且仅当它们互相包含。",
- "Remind: §0 sees through local definitions": "**司南**：提醒一下，§0 能看穿局部定义。",
  "Remind: Equality is reflexive, so try §0":
  "**司南**: 显然。你只要提醒他：相等关系是*自反*的。试试 §0。",
  "Remind §0 i.e.\n§1\nand additional assumption that §2 surjectiv":
@@ -512,8 +480,6 @@
  "**司南**：等等！这根本不需要定义！\n\n**你**：这也太……平凡了吧……\n\n**司南**：还记得吗？§0 能解决所有那些存在简单算法来判定真假的问题。关于具体数字的命题大多都属于这一类！",
  "Remind that §0 is defined as §1":
  "**司南** *(小声)*：§0 的定义就是 §1。\n\n**你**：那这不就很简单了！",
- "Remind that §0 is an interval which is closed to both sides. You could write §1\nas §2 or §3, because we are in the natual numbers. Therfore, the\ngoal is: §4":
- "**你**：§0 到底是什么？\n\n**Ritha**：这是闭区间。`I` 代表 interval，也就是“区间”；两个 `c` 代表 closed，也就是左右两端都是闭的。\n\n**司南**：因为这里是在自然数里，你可以把 §1 写成 §2，或者写成 §3。要证明的就是：\n\n§4",
  "Remind that §0 in this case is equivalence":
  "**你** *(小声)*：这不就是 §0 的定义吗？\n\n**司南** *(小声)*：可以这么看。但在Lean语里这只是个等价。",
  "Remind that goal looks like §0. Try §1. The sum sign is written\nas §2.":
@@ -525,13 +491,9 @@
  "Remind of negation for §0": "**你**：啊，那§0的否定肯定是……",
  "Remind of induction as mapping goes to §0":
  "**司南**：你看，这个映射的到达域是 §0！\n\n你挑了挑眉。\n\n**司南**：可能跟归纳有关吧。我就随口一说。",
- "Remind missed argument with §0":
- "**你**：这个证明目标是从哪儿来的？\n\n**司南**：最开始你用 §0 的时候，大概漏掉了这个参数。现在可以补上。",
  "Remind goal §0 with §1 for the value in the sum for fist three §2. Try §3: If §4 and term is disappearing for all elements in I₂ not in I₁, then the sum over §5 equals sum over §6":
  "**你**：慢点慢点。要证明的是：\n\n§0\n\n估计求和里的那个表达式在 §2 取前三个值时就是 §1……对，没错。那我现在该怎么表述呢？\n\n**司南**：你可以用 §3：已知 §4，并且 §6 中所有不属于 §5 的元素代入求和里的表达式后的值为零，那么对 §5 的求和就等于对 §6 的求和。",
  "Remind former results with §0": "**司南**：我们不是在某张纸条上见过 §0 吗？",
- "Remind former result for §0. Try §1":
- "**你**：我们刚才不是已经确定 §0 成立了吗！\n\n**司南**：查资料我最在行！那是 §1。",
  "Remind former proof": "**司南**：再仔细过一遍我们已经证明过的那些命题。",
  "Remind about §0": "**你**：嚯。最左边又是一个 §0。真稀奇….…",
  "Remember §0. This here is a good setting for §1. Try §2":
@@ -577,12 +539,10 @@
  "Observe §0 and §1": "**司南**：你看着 §0 和 §1 的时候，看到了什么？",
  "Observe goal as §0.\nDo not try §1 as §2 but as §3":
  "**司南**：你看，要是你用手指碰一下某个假设，它就会高亮显示里面的括号结构。离谱….\n\n**你**：啊，我懂了，所以是 §0！\n\n**你**：我开始觉得这里整件事都有点可疑了：先是目标里来个“且”，然后假设里也来个“且”，接着目标里来个“或”，现在假设里又来个“或”。他们肯定是提前商量好的！\n\n**司南**：就让他们玩吧。我们马上就搞定这里，然后飞去一个更有意思的星球。\n\n**你**：所以，还是用 §1？\n\n**司南**：对，不过这次不是写成 §2，而是写成 §3。",
- "Observe equality": "**司南**：按定义两边就是相等的！",
  "Now §0 can be applied": "**司南**：很好。现在你就可以用 §0 了。",
  "Now you have two goals.":
  "**司南**：你看，这是张魔法纸。\n  现在我们一下子有了两个目标。\n  我觉得你已经知道怎么分别证明它们了。\n  它们都分别写在*假设*里呢。",
  "Now you can apply §0": "**司南**：好选择！现在你可以用 §0 了。",
- "Now try §0!": "**你**：那现在呢？？\n\n**Lina** (*得意洋洋*)：§0!",
  "Now try out §0": "**司南**：很好。现在用 §0。",
  "Now there is goal §0. This goal is part of the assumption":
  "**司南**：你看，这是魔法纸。现在我们一下子有了两个目标。当前这个目标是 §0。我觉得你已经知道怎么分别证明它们了。它们都分别写在*假设*里呢。",
@@ -590,15 +550,12 @@
  "Now assumption §0 is available": "**司南**：……证明完成之后，你就能把 §0 当作一个假设来用了。",
  "Mono": "单射",
  "Maybe try §0 again": "**司南**：也许你可以再用一次 §0。",
- "Luna": "月球",
  "Looks like matrix multiplication": "**你**：这看起来就是矩阵乘法。应该也没错。",
  "Look through definitions": "**你**：所以我现在得一点点展开这些定义了？\n\n**司南**：看起来是这样。",
  "Look at §0": "**司南**：看看 §0。",
  "Logo": "逻辑",
  "Known that there exists some element in §0. Try §1":
  "**司南**：你至少知道，§0 里存在*某个*元素。也许你可以用 §1 把它“构造”出来。",
- "It is clear which §0 can be used. Start with §1 and continue with §2 e.g.\n§3\n":
- "**你**：嗯，其实这里该用哪个 §0 已经很明显了。\n\n**司南**：既然你这么清楚，那就先从 §1 开始吧。\n然后你需要用 §2。比如这样：\n§3\n",
  "It conjected that §0 has left inverse. One would assume that §1 would\nnot work for §2. Tackling this by case distinction e.g. §3 is unecessary as\nin Leanic §4 is in §5. It is simply defined as §6":
  "**你**：看起来是在断言，映射 §0 有一个左逆。那我就直接给出映射 §1……只不过对 §2 来说不成立。\n\n**司南**：你可以用 §3 做个分类讨论。不过其实你根本不需要。在Lean语 里，§4 也属于 §5。\n\n**你**：什么……??!\n\n**司南**：对。简单起见，它被定义成 §6。",
  "Iso": "双射",
@@ -632,7 +589,6 @@
  "Intro Spinoza":
  "**司南**：我觉得那是斯宾诺莎，一颗极少见的 QED 型小行星。快点，我们得稍微赶一赶，不然就错过它了。\n\n半小时后你们着陆了。斯宾诺莎看起来不太宜居。它的整个表面都覆盖着细细的红色沙粒。一个孤零零的形式哲学家在等你们，他自我介绍说叫本尼迪克特。\n\n**本尼迪克特**：很高兴你们来了！我已经等你们很久了！\n\n**你**：你也有几个很紧急的问题……？\n\n**本尼迪克特**：哎呀不，我早过了那个年纪。不过我能想象你们在蕴涵和量词上过得怎么样。相信我，在其他行星上也不会好多少。但我也许能给你们做点准备。\n\n**你**：我们就不能干脆留在这儿，稍微休息一下吗？\n\n本尼迪克特摇了摇头。\n\n**本尼迪克特**：不行。斯宾诺莎容不下三个居民。而且你们很快就得继续走，不然路就太远了。我们每 400 年才会路过这些行星一次。",
  "Intro Saturn L04": "又一条无线电消息。",
- "Intro Saturn L03": "又一条无线电消息。",
  "Intro Saturn L02": "下一条无线电消息看起来有点不一样。",
  "Intro Saturn L01": "突然，你们收到一条无线电消息。",
  "Intro Saturn":
@@ -719,21 +675,6 @@
  "Intro Mono L01": "在最上面，果然又聚着一大群形式哲学家。\n他们热情地欢迎你们，然后立刻切入正题。",
  "Intro Mono":
  "在下一个星球上，又有两栋高楼并排而立。还是一栋又窄又高，另一栋稍微宽些、矮些。它们又被一套管道系统连在一起——看来也又有某种运输舱系统。有了在满射上的经验，你们这次径直朝较矮的那栋楼飞去，并降落在屋顶上。\n\n**门卫**：别别别。你们没看到大家都在挥手吗？这里不过是我们的宿舍楼。我们白天都在那边的办公楼里。不过好吧，现在你们既然来了。先欢迎一下！\n\n你们每个人都和他的四只手之一握了握。\n\n**门卫**：这样我倒正好可以给你们介绍一下我们独一无二的市内交通系统。你们是从满射来的，对吧？那地方的事故可多了。隔三岔五就出事故。他们就是理不顺自己的管道。我们可是好多年零事故！\n\n你们往下走了四层楼。到了那里，又给每个人分配了一个运输舱，然后你们无声地向上滑进办公塔。驱动是怎么工作的，依然是个谜。\n\n**司南**：哦。这里也没人啊！\n\n**门卫**：当然没人。他们都在最上面。而且不是每一层都能通过管道到达。不过我们快到了。再上两段楼梯就行。",
- "Intro Luna L10: Use §0 again":
- "**Ritha**（*对Lina*）：拜托，也让我再问一个问题嘛……\n\n**Lina**：好吧，就一个……但别又是 §0！\n\nRitha睁大眼睛，可怜巴巴地看着Lina。\n\n**Lina**：如果你*非得*问的话。那就快点！我们现在真的没时间了！",
- "Intro Luna L09": "**Lina**：现在又轮到我了。",
- "Intro Luna L08": "**Ritha**：现在又轮到我啦！",
- "Intro Luna L07: Enough of §0": "**Lina**：§0 用够了，现在轮到我了。",
- "Intro Luna L06": "**Ritha**：我也能出一道题吗？给。",
- "Intro Luna L05": "**Lina**：同样的问题，现在换到 ℝ 里！",
- "Intro Luna L04": "**Lina**：这个呢？",
- "Intro Luna L03": "**Lina**：试试这个呗！",
- "Intro Luna L02: For integers §0 or §1 means §2":
- "**Lina**：另外，比如你得知道，对整数而言，命题 §0 或者 §1 其实就等价于 §2。",
- "Intro Luna L01: Know that §0":
- "你感觉有点被她弄懵了，但还是试着开口回应。\n\n**你**：行，我们会努力不把东西弄乱。要在这里维持秩序很难吗？\n\n**Lina**：比如说，你得知道 §0。",
- "Intro Luna":
- "司南发现了一颗小月球，你们现在正朝它飞去。它的表面非常光滑，但有一处表面有个小开口，一段楼梯通向内部。你们着陆后，好奇地走下去。\n\n到了下面，你发现自己置身于你见过最整洁的公寓里。一个小女孩向你们打招呼。\n\n**Lina**：我是 Lina，月球的唯一居民。\n\n然后她看到了司南。\n\n**Lina**：嗯嘛，其实我们这里也算两个人……\n\n她转过身喊了句什么，这时一位智能小精灵飞了过来。\n\n**Lina**：这是 Ritha！\n\n司南显然觉得她很可爱。\n\n**Lina**：不过你们现在别这么乱七八糟地站着啦，拜托！鞋子和头盔放到那边那边，然后请站到标好的访客站位上。不然我这儿又要被你们搞得一团糟了。",
  "Intro Logo L14: The most important tactics of this chapter concerning §0 and §1.\nFor both logical operations the tactis §2 and §3 can be used respectivelly.\nAnalogously, when working with the goal §4 and §5/§6 can be used respectivelly as well.":
  "最后一位臣民走上前来。她的诉求比前面的要复杂一点。\n\n**司南**：把你学过的都往上招呼就行。来，我还挺好心的，再给你把这种情况下最重要的四个策略展示一遍。\n\n|（概览）    | 与（§0）                 | 或（§1）               |\n|:------------|:-------------------------|:------------------------|\n| 假设        | §2                       | §3                      |\n| 目标        | §4                       | §5/§6                   |\n ",
  "Intro Logo L13": "下一位，请 ….",
@@ -834,7 +775,6 @@
  "Insert §0 via §1": "**司南**：现在你用 §1 把你的 §0 给出来，看看你的定义是不是对的。",
  "Inequality §0 is defined as §1.  You can see this with §2.":
  "不等关系 §0 被定义为 §1。你可以用 §2 把它展开。",
- "Increase readability of §0. Try §1": "**司南**：现在把假设 §0 整理得更可读一点。也许可以试试 §1？",
  "Implis": "蕴涵",
  "If §0 is an integer greater than or equal to 0, then §1 is the same number, interpreted as a natural number.\n(If §2 is a negative integer, then §3 is also defined, but its value has no mathematical meaning.)\n\n## Friends and relatives\n\nA natural number §4 can always be interpreted as an integer.\nTo do this, you either write it explicitly as §5 or as §6.":
  "如果 §0 是一个大于等于 0 的整数，那么 §1 就是同一个数，只不过把它看成自然数。\n（如果 §2 是一个负整数，那么 §3 也同样有定义，但它的值没有数学意义。）\n\n## 相关策略\n\n一个自然数 §4 总是可以看成一个整数。\n为此你要么把它显式写成 §5，要么写成 §6。",
@@ -864,8 +804,6 @@
  "Got to think about it...": "**你**：让我想想……",
  "Goal: if §0 divides factor §1 of a product then it also divides the product.\nTry §2":
  "**司南**：这一行看起来也很合理：如果一个数 §0 整除一个积的因子 §1，那它肯定也整除整个积。\n\n**你**：但第一条“证明行”就已经完全看不懂了。\n\n**司南**：是啊，确实不行。不过我们再自己试一次。显然，我们从 §2 开始。",
- "Goal says that §0 is right inverse of §1 iff §2 is left inverse of §3.\nTry §4. It has to be written as §5 instead of §6\nbecause §7 is ambigous in Leanic.":
- "**你**：我猜这意思是：§0 是 §1 的右逆，当且仅当 §2 是 §3 的左逆。\n\n**司南**：没错。不过如果我没看错的话，在Lean语里，这与其说是个定理，不如说就是 §4 的定义。更坑的是，你确实得写 §5，而不能只写 §6，因为 §7 在Lean语里是有歧义的。",
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
  "**你**：这里要证明的是，§0 等同于 §1 里偶数的个数的两倍。对吧？\n\n**司南**：对。\n\n**你**：而这是因为……当 §2 是奇数时，求和里的那个表达式就恒等于0；当 §3 是偶数时，它就等于 §4。嗯嗯……\n\n**司南**：你再用 §5 写几个中间步骤吧。\n首先你想把求和限制到偶数指标的集合上，也就是：\n§6\n然后你大概想用\n§7\n作为一个中间步骤。",
  "Goal is in assumptions": "**你**：啊，现在目标已经在假设里了。",
@@ -873,8 +811,6 @@
  "**司南**：这条解法在我看来有点太难了。\n 我建议先退回去，保留 §0，这样你最后就能用上 §1。",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 “§0和§1” 成立。我觉得这些形式哲学怪人迟早要把我逼疯。\n\n**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §3 试试。\n\n**你**：你是想说 §4 吧？？\n\n**司南**：不，§5。我知道这很让人迷糊，但他们这儿就这么叫。",
- "Given\n\n§0\n\nShow\n§1\n":
- "**你**：我得先自己把它写下来。也就是说，已知：\n\n§0\n\n要证明的是：\n\n§1\n\n司南？？\n\nLina 咧嘴一笑。\n",
  "For §0, §1 means that §2 is contained in §3.\n\nWith §4, you can rewrite §5 as §6.\n\nIf §7 is the proof goal, you can also directly use §8\nto select an element §9 with §10 (and then show §11).\n\nIf §12 is an assumption and an element §13 with §14 is given,\nyou can use §15 to obtain the statement §16.\n\nYou write §17 as §18.":
  "对 §0 来说，§1 的意思是 §2 包含在 §3 里。\n你可以用 §4 把它改写成 §6。\n\n## §1 作为目标\n\n用 §8 你先取一个任意元素 §9 并假设 §10（然后就得证明 §11）。\n\n## §1 作为假设\n\n如果 §12 是一个假设，并且给定一个元素 §13 满足 §14，那么用 §15 你就得到命题 §16。\n\n你把 §17 写作 §18。",
  "For §0, §1 means that §2 is a prime number.\nTo work with this definition, it is often helpful to rewrite it using the lemma\n§3.":
@@ -942,8 +878,6 @@
  "**你**：那 §0 是什么？\n\n**司南**：§1 是最大的子集：所有自然数。\n\n**你**：所以就是 §2？\n\n**司南**：也算，但又不完全是。§3 是“整个 ℕ”，但要把它理解成 §4 的一个*子集*。\n\nExt、Fin、Set、Sub 和 Mem 都瞪大眼看着你们。\n\n**Set**：这怎么可能搞混嘛！这里*是*一颗*蓝莓*，而它*在*这个*装着所有蓝莓的篮子*里。当然它不可能“在蓝莓里”。\n\n孩子们笑了。\n\n**Mem**：同样地，5 *是*一个自然数（§5），而它属于*所有自然数的集合 §6*（§8）。这有什么好困惑的？\n\n**司南**（*对你*）：别为这个纠结了。我建议你先从 §9 开始，这样你就能清楚看到到底在问什么。",
  "Explain §0: §1 is an expression over the type §2. §3 could e.g. be the natural\nnumbers. §4 could be the expression: §5 is even. Or: §6 has seven prime factors. Or: §7 is\na favorite number. In other words: §8 is a mapping that takes §9 and maps it onto an expression.\nTry §10.":
  "**你**：那这个 §0 到底是什么？\n\n**司南**：§1 是一个“谓词”；也就是关于类型 §2 的对象的一个命题。比如说，§3 又可以是自然数的类型。然后 §4 可以是这样的命题：自然数 §5 是偶数。或者：§6 有七个素因子。或者：§7 是司南最喜欢的数字。或者……\n\n**你**：好吧，我觉得我懂了。§8 就像是一个映射：给它一个元素 §9，它就会返回一个命题。\n\n**司南**：对，差不多。\n\n**你**：好。那这里的命题是什么也就很清楚了。你现在要告诉我怎么用 Lean语证明这个？\n\n**司南**：没错。你需要的是 §10。",
- "Explain §0: §1 is a 'multivariate polynome' with variables indexed by §2 and\ncoefficients in §3.\nExplain §4 as the set of elements §5 that lead to the variables §6 and §7":
- "**你**：咦，§0 在这里到底是个什么怪东西？\n\n**司南**：§1 是一个“多元多项式”，变量依次用 §2 编号，系数在 §3 里。\n\n**你**：那 §4 是啥？\n\n**司南**：带两个元素的标准集合——§5。所以变量就叫 §6 和 §7。\n\n**你**：不过其实这些都无所谓吧？多项式环不是交换的吗！\n\n**司南**：没错。",
  "Explain §0: in the definition add brackets so it's §1. So, §2\nis a mapping from §3 to §4. §5 is the set §6 and therfore,\n§7 is the set of mappings from §8 to §9. Hence, such a mapping can be seen\nas a §10-tuple of elements in §11. So, §12 is given as a mapping from §13 to §14.\nName §15 should be clear now":
  "**你**：在 §0 的定义里又出现了两个箭头连在一起。我得先在脑子里理一理。\n\n**司南**：先照例加上括号：§1。也就是说，§2 是一个从 §3 到集合 §4 的映射。现在 §5 是集合 §6，所以 §7 就是从 §8 到 §9 的映射所组成的集合。\n\n**你**：嗯……这种映射其实不过就是一个由 §11 里的元素组成的 §10-元组，对吧？\n\n**司南**：也可以这么看。\n\n**你**：好。给定的是一个映射 §12，从 §13 到 §14。而且这个映射……啊，我懂它为什么叫 §15 了。",
  "Explain §0 with §1":
@@ -991,8 +925,6 @@
  "Explain that each sub-goal needs §0": "**司南**：这种顺序的缺点是，你现在在每个子目标里都得调用 §0。",
  "Explain that a mapping, which is left inverse ...":
  "**你**：一个拥有左逆的映射是单射。我觉得好像听过……",
- "Explain surcetivity by §0":
- "**司南**：一个映射是满射，当且仅当由它诱导出的取原像映射 §0 是单射。这个映射会返回一个子集在原映射下的原像。真是这样吗？\n\n**你**：我觉得对。我以前见过。\n\n**司南**：那就走起！",
  "Explain statement: given §0 for subset §1 of §2\n§3\nis the image over §4. For subset §5 of §6\n§7\nis the pre-image over §8,\n":
  "**司南**：我觉得我得给你解释一下这里的符号。\n这里明确给定了一个映射 §0。\n对 §2 的一个子集 §1 而言，\n§3\n是它在 §4 下的像。\n而对 §6 的一个子集 §5 而言，\n§7\n是它在 §8 下的原像。\n",
  "Explain statement w.r.t. §0 and use former results":
@@ -1022,7 +954,6 @@
  "Evaluate mappings in §0 on element from §1. §2 could help":
  "**司南**：你可以把 §0 里的映射拿到 §1 的某个元素上取值。也许 §2 能以某种形式帮上忙？",
  "Euklid": "欧几里得",
- "Equality of sets demands §0": "**司南**：集合相等需要用 §0。",
  "Epo": "满射",
  "End proof with assumption that §0 is true":
  "**司南**：所以在这里，你要在假设 §0 为真的前提下完成证明。",
@@ -1031,7 +962,6 @@
  "**你**：嗯，总之 §0 和 §1 这两个命题，总有一个是真的。\n\n**司南**：我觉得这是典型的分类讨论。试试 §2。",
  "Does §0 have no fixed points?": "**康托尔**：你们不是已经论证过 §0 没有不动点了吗？",
  "Do not §0 §1. Use §2": "**司南**：不，还是别。\n你不该把 §1 §0！——那只会让一切更难。\n还是用我说的 §2 吧。",
- "Divide §0 with §1": "**司南**：好。这样好多了。然后你还可以用 §1 把 §0 拆成两个部分。",
  "Divide §0 via §1 into\n§2 and §3": "**司南**：先把 §0 用 §1 拆成 §2 和 §3 吧！",
  "Divide interval §0 into §1 and §2 by using §3":
  "**司南**：现在你想把求和的区间 §0 拆成 §1 和 §2。为此你可以用我们之前学过的引理 §3。",
@@ -1042,14 +972,11 @@
  "Derive intermediate result that lead to the conclusion":
  "**司南**：现在你只需要推出那个产生矛盾的中间结果就行了。",
  "Derive contradiction for §0": "**司南**：现在我会导出一个与 §0 矛盾的结论。",
- "Definitely use §0": "**Ritha**：一定要试试 §0。",
  "Deconstruct assumption by §0. The brackets can be written seperatly\nas §1 and §2 or simultaneously as §3. The first assumption can be named §4. Other names\nthan §5 und §6 can be chosen as well e.g. §7":
  "**你**：现在我们大概得把这个假设拆开了。\n\n**司南**：对，正是这样。最简单的方法就是用§0。\n\n**你**：等等，那我在这里要怎么把*这个*写出来？\n\n**司南**：两个尖括号可以写成§1和§2，或者一起写成§3。然后§5你就直接写成§4。不过你也可以给§5和§6随便起别的名字，比如§7。",
  "Continue with §0 and §1. Fristly diect assumptions with §2":
  "**你**：那我现在继续用 §0 和 §1 来做证明？\n\n**司南**：对。接下来用 §2 之类的写法把假设拆开。",
  "Continue with §0": "**司南**：你可以在这里用 §0 接着往下做。",
- "Conlsuion Samarkand L08":
- "**阿拉普卡**：太棒了！我激动得简直想跳起来。但那当然不行。那样图案就乱了。\n\n**司南**：你还要这样待多久？\n\n**阿拉普卡**：我还要在这里待三年、22天、7小时和35分钟。\n\n**司南**：哦哦……\n\n**你**：那你怎么知道之后要去哪里，才能让图案对得上？\n\n**阿拉普卡**：啊！\n\n阿拉普卡的脸上绽开了一个大大的笑容。\n\n**阿拉普卡**：这就是艺术啦！",
  "Confirm that §0 is defined as §1 via §2":
  "**你**：我没猜错的话，§0 的定义是：§1？\n\n**司南**：应该是。你可以用 §2 展开看看。不过也不一定非得这样。",
  "Conclusions Samarkand L02": "**阿拉普卡**：好看，好看。",
@@ -1063,10 +990,6 @@
  "Conclusion Spinoza L02: The use of §0 or §1 is up to personal preference.":
  "**本尼迪克特**：我就是这个意思。你们以后用 §0 还是 §1，纯属个人偏好。关键是，你们得知道怎样通过一个个小步骤，逐渐完成遥远的目标。",
  "Conclusion Spinoza L01": "**本尼迪克特**：看起来不错！",
- "Conclusion Saturn L05":
- "“通过了”，匿名电台员就这么简短地回了一句。\n\n**司南**：我觉得推进器现在已经恢复得差不多了。赶紧溜！",
- "Conclusion Saturn L04: coefficients were in §0. Polynomes with coefficients in §1\nare not considered rings. §2 does also work on half rings.":
- "又一个👍。\n\n**你**：但等等，这次系数不是在§0里吗！这根本不是个环，而且系数在 §1 里的多项式也不构成环。\n\n**司南**：也许吧。 但 §2 甚至对所谓的半环也管用。\n\n**你**：哦哦……\n\n那位匿名者想通过无线电问问你们：是准备好进入最终挑战了，还是更想再绕他的星球转几圈。\n\n“准备好了。”司南用无线电回道。",
  "Conclusion Saturn L03": "又一个👍。",
  "Conclusion Saturn L02: §0 could have been used as well":
  "你们收到了一个👍。\n\n**司南**：不过你其实也可以直接用 §0。",
@@ -1127,15 +1050,6 @@
  "Conclusion Mono L07: Explain that here §0 is §1, as there is mapping §2 defined only on natural numbers.\nIn Lean §3 is such a mapping and there for it maps §4 onto §5.":
  "**你**：我还是震惊。我以为我们在做数学。为什么 §0 又会是 §1？？\n\n**司南**：纯粹是怎么看的问题。你把 §2 想成一个只在正自然数上定义的映射。在Lean语里，§3 就是一个在所有自然数上定义的映射，它把 §4 送到 §5。有什么不行呢？反正最后我们也只会把这个映射用在正数上，而在正数上，你的理解幸好和Lean语里的理解是一致的。",
  "Conclusion Mono L01": "形式哲学家们觉得你们干得不错。",
- "Conclusion Luna L09":
- "**Lina**：你们做得很好！可惜，你们要继续你们的旅途了。不过要是你们再多待一会儿，就会把我们的作息彻底打乱了。",
- "Conclusion Luna L07": "**你**：还不错！",
- "Conclusion Luna L04": "**Lina**：好吧，是我的锅。",
- "Conclusion Luna L03: Alternatively §0 could have been used.":
- "**Lina**：顺便说一句，你们其实也可以直接用 §0。",
- "Conclusion Luna L02: §0 is popular, even though §1 is quiet useless.\n§2 is only really applicable over integers.":
- "Lina 翻了个白眼。\n\n**Lina**：Ritha 是 §0 的超级粉丝。可 §1 挺没用的。一旦离开整数，§2 就什么也干不了了。\n\n**Ritha**：你才没用！\n\nRitha 扮了个鬼脸。",
- "Conclusion Luna L01": "**Lina**：好吧，这确实是个很平凡的例子。",
  "Conclusion Logo L14":
  "**司南**：太棒了！不过现在赶紧溜吧，免得又排起新队伍！\n\n洛格温女王这会儿已经睡着了，你们就悄悄溜走。",
  "Conclusion Logo L13:\nNotations introdced so far:\n§0, §1, §2, §3 (shorthand for §4), §5, §6 (§7 is always true),\n§8 (§9 is always false), §10, §11, §12, §13, §14, §15 (Proof that §16 is true),\n §17 (Assumption with name §18).\nTactics introduced so far:\n§19 (proves §20), §21, §22, §23, §24, §25/§26, §27, §28":
@@ -1159,8 +1073,6 @@
  "Conclusion Logo L02": "**臣民**：啊，对。是的，您说得没错。我老是忘。rfl, rfl, rfl ….",
  "Conclusion Logo L01: Remind that §0 cannot be used":
  "**洛格温** *(有些错愕)*：嗯，严格来说没错。\n但你们可别以为靠这一招就能在*这个*星球上走多远！\n我的臣民可不懂 §0。\n你们得再多费点功夫才行。",
- "Conclusion Iso L02":
- "双射哲学家们显得非常满意。\n\n**司南**：我们现在能再……坐一次运输舱吗？\n\n**双射哲学家**：当然！不过一定要按顺序来。自从我们把运输舱改成双向使用之后，事故又多起来了。\n\n司南又来回坐了三趟。然后你们继续飞行。",
  "Conclusion Iso L01": "**双射哲学家**：太好了。那我觉得这里这些我们都可以跳过……\n\n他把几张纸放到一边。",
  "Conclusion Implis L14":
  "**运营主管**：这也太妙了！万分感谢！那我就不再耽误你们了。你们肯定要继续去量词星球吧？\n\n**你**：呃，也许……\n\n**运营主管**：那我还有最后一个请求。我这儿还有个包裹要给量词的女王！还是从我前任那儿接手的。邮局不肯收，因为我不知道地址。你们能不能顺路帮我带给她？\n\n**你**：行！司南，停一下。\n\n司南接过包裹，把它塞进自己身体里的某个地方，瞬间就不见了。运营主管目瞪口呆地看着他。\n\n**司南**：别怕，我不消化东西！",
