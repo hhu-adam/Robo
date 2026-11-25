@@ -48,7 +48,7 @@ Conclusion "[Game] Conclusion"
 Languages "de" "en" "es" "ru" "zh"
 CaptionShort "[Game] CaptionShort"
 CaptionLong  "[Game] CaptionLong"
-Prerequisites "[Game] Prerequisites"
+Prerequisites ""
 CoverImage "images/Cover.png"
 
 
