@@ -167,7 +167,7 @@ attribute [game_simp] Matrix.single_mul_single_same mul_one eq_self
 attribute [game_simp] Matrix.smul_single smul_eq_mul mul_one
 
 -- Robotswana, L05_EBasisDiagSum:
-attribute [game_simp] Finset.subset_univ Finset.sum_singleton Matrix.one_apply_eq Matrix.smul_apply smul_eq_mul one_mul eq_self Finset.mem_singleton ne_eq not_false_eq_true Matrix.one_apply_ne zero_smul
+attribute [game_simp] Finset.subset_univ Finset.sum_singleton Matrix.one_apply_eq Matrix.smul_apply smul_eq_mul one_mul eq_self Finset.mem_singleton ne_eq not_false_eq_true Matrix.one_apply_ne zero_smul Matrix.single_zero eq_self
 
 -- Robotswana, L06_EBasisEqOnDiag:
 attribute [game_simp] Matrix.single_mul_single_same mul_one eq_self

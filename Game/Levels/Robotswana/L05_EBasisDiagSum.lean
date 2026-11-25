@@ -80,6 +80,7 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
   -/
   Hint "Try `funext r s` to focus on position $(r,s)$."
   funext r s
+
   /-
   Hint "**Du**: `1` war hier die Einheitsmatrix, richtig?
 
@@ -121,21 +122,20 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
       **Du**: Du hast recht, ich brauch gleich `{i} = {x}` oder `{i} ≠ {x}`. Lass mich das ändern."
       -/
       Hint "Explain that `1 {i} {x}` is defined as `if {i} = {x} then _ else _` and that either `{i} = {x}` or `{i} ≠ {x}` is needed"
+    Branch
+      rw [smul_ebasis]
+      Branch
+        have h₃ : x ≠ i
+        Hint "Explain that `1 {i} {x}` is defined as `if {i} = {x} then _ else _` and that either `{i} = {x}` or `{i} ≠ {x}` is needed"
+      have : i ≠ x := by
+        simp at h₂
+        tauto -- or grind
+      simp [this]
     have h₃ : i ≠ x
     -- · Hint "**Du**: Als erstes würde ich mal schauen, ob sich `{h₂}` vereinfacht."
     · Hint "Try to simplify `{h₂}`."
       simp at h₂
-      -- TODO : `tauto` already solves this.
-      /-
-      Hint "**Du**: Hmm, jetzt ist das erstmal verdreht.
-
-      **Robo**: Erinnere dich an `symm`!
-
-      **Du**: Richtig, das brauchten wir ja schon bei diesem wilden Typen mit seinen Förderbändern."
-      -/
-      Hint "Try `symm` to fix skewed order"
-      symm
-      assumption
+      tauto -- or grind
     Branch
       simp [h₃]
     /-
