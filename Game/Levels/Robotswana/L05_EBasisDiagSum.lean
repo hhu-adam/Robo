@@ -124,6 +124,8 @@ Statement Matrix.ebasis_diag_sum_eq_one {n : ℕ} : ∑ i : Fin n, E i i = 1 := 
       Hint "Explain that `1 {i} {x}` is defined as `if {i} = {x} then _ else _` and that either `{i} = {x}` or `{i} ≠ {x}` is needed"
     Branch
       rw [smul_ebasis]
+      Hint (hidden := true) "[Hint 91b19] Changing `E` to `single` is not necessary here.
+      Either way, it will help to establish that `i ≠ x`."
       Branch
         have h₃ : x ≠ i
         Hint "Explain that `1 {i} {x}` is defined as `if {i} = {x} then _ else _` and that either `{i} = {x}` or `{i} ≠ {x}` is needed"

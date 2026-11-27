@@ -60,7 +60,6 @@
  "§0 ist die logische Negation von §1.\nSie ist intern als §2 definiert, wie du mit §3 leicht prüfen kannst. \nDaher kannst du eine Annahme der Form §7 mit §8 auf das Beweisziel §9 anwenden.\n\nAndere nützliche Taktiken sind:\n* §4\n* §5\n* §6",
  "§0 is the filter of neighborhoods of §1 inside the set §2:\nit consists of all sets that contain the intersection of s and a neighborhood of a.\n\nTwo special cases:\n\n* §3 is short for §4: the points near §5 that are\n  *greater* than x\n* §6 is short for §7: the points near x that are *not equal*\n  to x":
  "§1 ist der Filter der Umgebungen von §1 in §2.",
- "§0 is the exponential function §1.": "§0 ist das geschlossene Intervall §1.",
  "§0 is the empty subset.\nIn the Formaloverse §1 is something different than §2\n– one is a subset of ℕ, the other is a subset of ℝ!\n\nWith §3 you translate the equation §4 into the\nstatement §5.\n\n§6 is written as §7.":
  "§0 ist die leere Teilmenge.\nIm Formaloversum ist also §1 etwas anderes als §2 – das eine ist eine Teilmenge von ℕ, das andere eine Teilmenge von ℝ!\n\nMit §3 überführst du eine Gleichung der Form §4 in die Aussage §5.\n\nDu schreibst §6 als §7.",
  "§0 is the closed interval §1.": "§0 ist das abgeschlossene Intervall §1.",
@@ -110,12 +109,8 @@
  "§0 (“and”) is the statement that both §1 and §2 are true.\n\n## §3 as a proof goal\n\nThe tactic §4 allows you to prove the two sub-statements §5 and §6 individually.\n\n## §7 as an assumption\n\nWith §8, you break down an assumption of the form §9\ninto its components §10 and §11.":
  "§0 („A und B“) ist die Aussage, dass sowohl §1 als auch §2 wahr ist.\n\n## §3 als Beweisziel\n\nDie Taktik §4 erlaubt dir, die beiden Teilaussagen §5 und §6 einzeln zu beweisen.\n\n## §7 als Annahme\n\nMit §8 zerlegst du eine Annahme der Form §9 in ihre Bestandteile §10 und §11.",
  "this should work": "**Du**: Naja. Das wird schon klappen … ",
- "level completed! 🎉": "– Aufgabe gelöst! –",
- "level completed with warnings… 🎭":
- "– Aufgabe gelöst!  Aber nicht ganz so wie gedacht. –",
  "intro Robotswana L07: Introduce new consideration for §0: do not consider §1 with i ≠ j":
  "Gleich neben dem Baum findest du noch eine Notiz, in der groß §0 durchgestrichen ist.\n\n**Du**: Soll wohl heißen: §1 mit i ≠ j interessieren uns nicht.",
- "intermediate goal solved! 🎉": "– Zwischenziel erreicht! –",
  "exploit the surjectivity of §0 somehow. It was already told\nwhich of mapping §1 the preimage has to be considered. One could define §2\nand then observe the preimage of §3.":
  "**Cantor**: Ihr müsst natürlich irgendwie die Surjektivität von §0 ausnutzen.\nAber ich hatte euch ja eben schon verraten, von welcher Abbildung §1 ihr ein Urbild betrachten müsst …\n\n**Robo** *(zu dir)*: Mmm … verstehst du, was er meint? Natürlich könntest du jetzt eine Abbildung definieren mit\n§2\nund dann von dieser Abbildung §3 ein Urbild betrachten.\nAber ich bin gerade etwas verloren.",
  "before using §0, use §1 to replace §2 by §3, because\n§4 does not know otherwise.":
@@ -360,6 +355,8 @@
  "**Robo**:  Ah.  Auch keine schlechte Idee.  Dann würde ich jetzt aber trotzdem als Nächstes §0 mit §1 einführen.",
  "[Hint 9al6z] §0 upgrades §1 to a statement about the closure.":
  "**Robo**: Jetzt könntest du zum Beispiel §0 anwenden.",
+ "[Hint 91b19] Changing §0 to §1 is not necessary here.\nEither way, it will help to establish that §2.":
+ "**Robo**:  Glaub nicht, dass es nötig war, §0 durch §1 auszudrücken. So oder so hilft es vermutlich, wenn du einmal §0 festhältst.",
  "[Hint 8riva] Better use §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
  "[Hint 815af] You need to distinguish cases.":
@@ -540,8 +537,6 @@
  "**Robo**: Jetzt hast du §0 zur Verfügung, um das if-then-else zu reduzieren.",
  "Try §0 to focus on position §1.":
  "**Du**: Und jetzt?\n\n**Robo**: Mit §0 könntest du dich auf den Eintrag der Matrix an der Stelle §1 konzentrieren.",
- "Try §0 to fix skewed order":
- "**Du**: Hmm, jetzt ist das erstmal verdreht.\n\n**Robo**: Erinnere dich an §0!\n\n**Du**: Richtig, das brauchten wir ja schon bei diesem wilden Typen mit seinen Förderbändern.",
  "Try §0 to construct §1, Try §2 and §3":
  "**Du**:  Bei §0 konstruiere ich mir zunächst das Element §1, das ich verwenden möchte …\n\n**Robo**: … und dann wendest du §2 und §3 an.  Genau.",
  "Try §0 to approach injectivity §1":

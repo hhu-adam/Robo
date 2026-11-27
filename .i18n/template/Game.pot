@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: template\n"
@@ -4539,30 +4539,30 @@ msgstr ""
 #. §2: `j ≠ «{i}»`
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:94
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:95
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 
 #. §0: `sum_subset`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:98
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:99
 msgid "Now §0 can be applied"
 msgstr ""
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:103
 msgid "Explain simplification of §0 and §1"
 msgstr ""
 
 #. §0: `simp`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:105
 msgid "§0 is always available"
 msgstr ""
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:115
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
 
@@ -4570,29 +4570,33 @@ msgstr ""
 #. §1: `if «{i}» = «{x}» then _ else _`
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:123
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:124
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:131
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 
-#. §0: `«{h₂}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
-msgid "Try to simplify §0."
+#. §0: `E`
+#. §1: `single`
+#. §2: `i ≠ x`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:127
+msgid "[Hint 91b19] Changing §0 to §1 is not necessary here.\n"
+"Either way, it will help to establish that §2."
 msgstr ""
 
-#. §0: `symm`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
-msgid "Try §0 to fix skewed order"
+#. §0: `«{h₂}»`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:138
+msgid "Try to simplify §0."
 msgstr ""
 
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:146
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:148
 msgid "Apply definition §0 by §1"
 msgstr ""
 
 #. §0: `rw`
 #. §1: `if_neg`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:151
 msgid "Try §0 and §1"
 msgstr ""
 
