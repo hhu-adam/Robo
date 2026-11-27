@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: 2026-07-13 16:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -5550,7 +5550,7 @@ msgstr ""
 #. §3: `S : Set A`
 #. §4: `a : A`
 #. §5: `a ∈ S`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:29
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:28
 #, fuzzy
 msgid ""
 "Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
@@ -5567,7 +5567,7 @@ msgstr ""
 
 #. §0: `p : A → Prop`
 #. §1: `intro`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:41
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:40
 #, fuzzy
 msgid ""
 "[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
@@ -5578,7 +5578,7 @@ msgstr "**Tú**: Sobreyectiva significa que toda aplicación §0 tiene una preim
 #. §1: `«{A}»`
 #. §2: `«{p}»`
 #. §3: `let`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:48
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:47
 #, fuzzy
 msgid ""
 "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
@@ -5586,14 +5586,14 @@ msgid ""
 msgstr "**Glifo**: La sobreyectividad de §0 te da preimágenes de *subconjuntos* de §1. ¿Quizá deberíamos usar §3 para darle un nombre al subconjunto que corresponde a §2?"
 
 #. §0: `{ x | «{p}» x }`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:53
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:52
 #, fuzzy
 msgid "[Hint jx4gv] Consider the set §0."
 msgstr "**Glifo**: Será el conjunto §0, ¿no?"
 
 #. §0: `simp`
 #. §1: `«{ha}»`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:61
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:60
 #, fuzzy
 msgid "[Hint mr4el] Use §0 in combination with §1."
 msgstr "**Glifo**: Alguna combinación de §0 y §1 debería terminar esto ahora."
@@ -5601,13 +5601,13 @@ msgstr "**Glifo**: Alguna combinación de §0 y §1 debería terminar esto ahora
 #. §0: `simp`
 #. §1: `«{S}»`
 #. §2: `«{ha}»`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:70
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:69
 #, fuzzy
 msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
 msgstr "**Glifo**: Alguna combinación de §0, §1 y §2 debería terminar esto ahora."
 
 #. §0: `surjective_mem_of_surjective`
-#: Game/Levels/Cantor/L10_SurjectiveMem.lean:78
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:77
 #, fuzzy
 msgid ""
 "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
@@ -7897,6 +7897,7 @@ msgstr "**Glifo**: Recuerda que tus \"tuplas\" §0 y §1 son en realidad dos apl
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -7910,41 +7911,46 @@ msgstr ""
 "\n"
 "**Glifo**: Ah, sí. Existe este lema §1: toda aplicación estrictamente monótona es inyectiva. Y también hay un montón de lemas con los que se puede demostrar que ciertas aplicaciones son monótonas. Por ejemplo:\n"
 "\n"
-"§2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §3 – para §4 impar, §5 es estrictamente monótona\n"
 "\n"
-"§3 – para §4 impar, §5 es estrictamente monótona\n"
-"\n"
-"¿Lo intentamos con eso?"
+"¡Te propongo que empieces con §1!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Glifo**: §0 es lo que andas buscando."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:42
-#: Game/Levels/Mono/L05_StrictMono.lean:46
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
+
+#: Game/Levels/Mono/L05_StrictMono.lean:49
+#: Game/Levels/Mono/L05_StrictMono.lean:53
 msgid "Try again from the beginning"
 msgstr "**Glifo**: Me parece que este camino es demasiado lioso. ¡Mejor vuelve a empezar desde el principio!"
 
 #. §0: `Odd 3`
-#: Game/Levels/Mono/L05_StrictMono.lean:56
+#: Game/Levels/Mono/L05_StrictMono.lean:63
 msgid "§0 is trivial"
 msgstr "**Tú**: §0. ¿No es eso una trivialidad? ¡Espera un momento!"
 
-#: Game/Levels/Mono/L05_StrictMono.lean:59
+#: Game/Levels/Mono/L05_StrictMono.lean:66
 msgid "The next part is elementary"
 msgstr "**Tú**: ¡Ja! Seguro que lo demás es muy básico."
 
 #. §0: `unfold`
 #. §1: `StrictMono`
-#: Game/Levels/Mono/L05_StrictMono.lean:67
+#: Game/Levels/Mono/L05_StrictMono.lean:74
 msgid "Use §0 to look into definition of §1"
 msgstr ""
 "**Tú**: ¿O no…?\n"
 "\n"
 "**Glifo**: Que sí, que sí. Usa §0 para mirar dentro de la definición de §1."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:71
+#: Game/Levels/Mono/L05_StrictMono.lean:78
 msgid "[Doc.Theorem] StrictMono.injective"
 msgstr "Toda aplicación estrictamente monótona (entre dominios y codominios adecuados) es inyectiva."
 
@@ -7953,7 +7959,7 @@ msgstr "Toda aplicación estrictamente monótona (entre dominios y codominios ad
 #. §2: `h_odd : Odd n`
 #. §3: `Odd.strictMono_pow h_odd`
 #. §4: `h_odd.strictMono_pow`
-#: Game/Levels/Mono/L05_StrictMono.lean:74
+#: Game/Levels/Mono/L05_StrictMono.lean:81
 msgid ""
 "[Doc.Theorem] Odd.strictMono_pow\n"
 "for odd §0, §1 is strictly monotonous\n"
@@ -7966,7 +7972,7 @@ msgstr ""
 #. §0: `f`
 #. §1: `g`
 #. §2: `f + g`
-#: Game/Levels/Mono/L05_StrictMono.lean:80
+#: Game/Levels/Mono/L05_StrictMono.lean:87
 msgid ""
 "[Doc.Theorem] StrictMono.add\n"
 "if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
