@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: 2026-07-13 16:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -6260,7 +6260,7 @@ msgstr ""
 #. §2: `j ≠ «{i}»`
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:94
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:95
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 "**Tú**: Aquí §0 era la matriz identidad, ¿verdad?\n"
@@ -6272,25 +6272,25 @@ msgstr ""
 "**Glifo**: ¿Tú crees? Déjame pensar… ¿Puedes demostrar primero §4?"
 
 #. §0: `sum_subset`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:98
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:99
 msgid "Now §0 can be applied"
 msgstr "**Glifo**: Muy bien. Ahora sí que puedes aplicar §0."
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:103
 msgid "Explain simplification of §0 and §1"
 msgstr "**Tú**: ¡Gracias, eso ayuda! Este paso debería ser fácil: una suma sobre un único elemento; donde §0 vuelve a ser uno, ¡y §1 también se simplifica!"
 
 #. §0: `simp`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:105
 msgid "§0 is always available"
 msgstr "**Glifo**: Siempre puedes probar con §0…"
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:115
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
 "**Tú**: Pero ¿y aquí qué hago? Al fin y al cabo, §0 dice básicamente que se tiene §1.\n"
@@ -6301,31 +6301,31 @@ msgstr ""
 #. §1: `if «{i}» = «{x}» then _ else _`
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:123
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:124
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:131
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 "**Glifo**: Al revés sería más útil, ¡ya que §0 está definido como §1!\n"
 "\n"
 "**Tú**: Tienes razón: enseguida voy a necesitar §2 o §3. Deja que lo cambie."
 
+#. §0: `E`
+#. §1: `single`
+#. §2: `i ≠ x`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:127
+msgid ""
+"[Hint 91b19] Changing §0 to §1 is not necessary here.\n"
+"Either way, it will help to establish that §2."
+msgstr ""
+
 #. §0: `«{h₂}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:138
 msgid "Try to simplify §0."
 msgstr "**Tú**: Para empezar yo miraría a ver si §0 se simplifica."
 
-#. §0: `symm`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
-msgid "Try §0 to fix skewed order"
-msgstr ""
-"**Tú**: Hmm, ahora está del revés.\n"
-"\n"
-"**Glifo**: ¡Acuérdate de §0!\n"
-"\n"
-"**Tú**: Es verdad, eso ya lo necesitamos con aquel tipo tan raro de las cintas transportadoras."
-
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:146
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:148
 msgid "Apply definition §0 by §1"
 msgstr ""
 "**Tú**: ¿Y ahora cómo despliego la definición de §0?\n"
@@ -6334,7 +6334,7 @@ msgstr ""
 
 #. §0: `rw`
 #. §1: `if_neg`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:151
 msgid "Try §0 and §1"
 msgstr "**Glifo**: Y como es falso, con §0 y §1 puedes continuar."
 
@@ -8246,6 +8246,7 @@ msgstr "**Glifo**: Recuerda que tus \"tuplas\" §0 y §1 son en realidad dos apl
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -8259,16 +8260,21 @@ msgstr ""
 "\n"
 "**Glifo**: Ah, sí. Existe este lema §1: toda aplicación estrictamente monótona es inyectiva. Y también hay un montón de lemas con los que se puede demostrar que ciertas aplicaciones son monótonas. Por ejemplo:\n"
 "\n"
-"§2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §3 – para §4 impar, §5 es estrictamente monótona\n"
 "\n"
-"§3 – para §4 impar, §5 es estrictamente monótona\n"
-"\n"
-"¿Lo intentamos con eso?"
+"¡Te propongo que empieces con §1!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Glifo**: §0 es lo que andas buscando."
+
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
 
 #: Game/Levels/Mono/L05_StrictMono.lean:42
 #: Game/Levels/Mono/L05_StrictMono.lean:46
@@ -12401,6 +12407,14 @@ msgstr "Este juego ilustra la demostración de teoremas con Lean mediante divers
 
 #~ msgid "Try §0 afterwards"
 #~ msgstr "**Glifo**: Añade otro §0 justo después."
+
+#~ msgid "Try §0 to fix skewed order"
+#~ msgstr ""
+#~ "**Tú**: Hmm, ahora está del revés.\n"
+#~ "\n"
+#~ "**Glifo**: ¡Acuérdate de §0!\n"
+#~ "\n"
+#~ "**Tú**: Es verdad, eso ya lo necesitamos con aquel tipo tan raro de las cintas transportadoras."
 
 #~ msgid ""
 #~ "Try §0 with a number and then §1. You can not use §2\n"

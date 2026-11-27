@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -6146,7 +6146,7 @@ msgstr ""
 #. §2: `j ≠ «{i}»`
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:94
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:95
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 "**You**: §0 here is the identity matrix, right? \n"
@@ -6158,25 +6158,25 @@ msgstr ""
 "**Scribble**: Is that so?  Let me think … Could you first show §4?"
 
 #. §0: `sum_subset`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:98
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:99
 msgid "Now §0 can be applied"
 msgstr "**Scribble**: Very good. Now you can apply §0."
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:103
 msgid "Explain simplification of §0 and §1"
 msgstr "**You**: Thank you, that helps! This step should be easy: a sum over one element, where §0 is one again, and §1 also simplifies!"
 
 #. §0: `simp`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:105
 msgid "§0 is always available"
 msgstr "**Scribble**: You can always try §0…"
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:115
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
 "**You**: But what do I do in this case?  §0 pretty much says that §1. \n"
@@ -6187,31 +6187,31 @@ msgstr ""
 #. §1: `if «{i}» = «{x}» then _ else _`
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:123
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:124
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:131
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 "**Scribble**: The other way round would be more useful, since §0 is defined as §1!\n"
 "\n"
 "**You**: You’re right, I need §2 or §3 in a moment. Let me change that."
 
+#. §0: `E`
+#. §1: `single`
+#. §2: `i ≠ x`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:127
+msgid ""
+"[Hint 91b19] Changing §0 to §1 is not necessary here.\n"
+"Either way, it will help to establish that §2."
+msgstr ""
+
 #. §0: `«{h₂}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:138
 msgid "Try to simplify §0."
 msgstr "**You**: First, I would see if §0 can be simplified."
 
-#. §0: `symm`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
-msgid "Try §0 to fix skewed order"
-msgstr ""
-"**You**: Hmm, it's the wrong way round!\n"
-"\n"
-"**Scribble**: Remember §0?\n"
-"\n"
-"**You**: Right, we already used that when we were dealing with this strange guy with the conveyor belts."
-
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:146
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:148
 msgid "Apply definition §0 by §1"
 msgstr ""
 "**You**: How do I now expand the definition of §0? \n"
@@ -6220,7 +6220,7 @@ msgstr ""
 
 #. §0: `rw`
 #. §1: `if_neg`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:151
 msgid "Try §0 and §1"
 msgstr "**Scribble**: And since this is false, you can proceed with §0 and §1."
 
@@ -8115,6 +8115,7 @@ msgstr "**Scribble**: Remember that your “tuples” §0 and §1 are actually t
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -8122,16 +8123,27 @@ msgid ""
 msgstr ""
 "**You**: Hmm, this looks a bit more difficult…\n"
 "\n"
-"**Scribble**: I don't have a good idea right now either. \n"
+"**Scribble**: I don't have a good idea right now either.\n"
 "\n"
-"You hear someone in the crowd whisper §0… \n"
+"You hear someone in the crowd whisper §0…\n"
 "\n"
-"**Scribble**: Ah, yes. There is this lemma §1: every strictly monotonic map is injective. And there are also lots of lemmas that can be used to show that maps are monotonic. For example: §2 – the sum of two strictly monotonic maps is again strictly monotonic §3 – for odd §4, §5 is strictly monotonic Shall we give it a try?"
+"**Scribble**: Ah, yes. There is this lemma §1: every strictly monotonic map is injective. And there are also lots of lemmas that can be used to show that maps are monotonic. For example:\n"
+"\n"
+"- §2 – the sum of two strictly monotonic maps is again strictly monotonic\n"
+"- §3 – for odd §4, §5 is strictly monotonic\n"
+"\n"
+"I suggest you start with §1!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Scribble**: You're looking for §0."
+
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
 
 #: Game/Levels/Mono/L05_StrictMono.lean:42
 #: Game/Levels/Mono/L05_StrictMono.lean:46
@@ -12281,6 +12293,14 @@ msgstr "This game illustrates theorem proving in Lean using various topics from 
 
 #~ msgid "Try §0 afterwards"
 #~ msgstr "**Scribble:** Perhaps follow up with §0."
+
+#~ msgid "Try §0 to fix skewed order"
+#~ msgstr ""
+#~ "**You**: Hmm, it's the wrong way round!\n"
+#~ "\n"
+#~ "**Scribble**: Remember §0?\n"
+#~ "\n"
+#~ "**You**: Right, we already used that when we were dealing with this strange guy with the conveyor belts."
 
 #~ msgid ""
 #~ "Try §0 with a number and then §1. You can not use §2\n"

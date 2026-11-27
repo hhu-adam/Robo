@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.29.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -6265,7 +6265,7 @@ msgstr ""
 #. §2: `j ≠ «{i}»`
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:94
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:95
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 "**你**：§0 在这里是单位矩阵，对吧？\n"
@@ -6277,25 +6277,25 @@ msgstr ""
 "**司南**：是这样吗？那让我想想……你能先证明一下 §4 吗？"
 
 #. §0: `sum_subset`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:98
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:99
 msgid "Now §0 can be applied"
 msgstr "**司南**：很好。现在你就可以用 §0 了。"
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:103
 msgid "Explain simplification of §0 and §1"
 msgstr "**你**：谢谢，这很有帮助！这一步应该很简单：对单个元素求和，而这里 §0 又是 1，而且 §1 也能化简！"
 
 #. §0: `simp`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:105
 msgid "§0 is always available"
 msgstr "**司南**：§0 总是可以先试试……"
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:115
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
 "**你**：但这种情况我该怎么做？§0 或多或少是在说 §1。\n"
@@ -6306,31 +6306,31 @@ msgstr ""
 #. §1: `if «{i}» = «{x}» then _ else _`
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:123
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:124
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:131
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 "**司南**：反过来会更有用，因为 §0 被定义成了 §1！\n"
 "\n"
 "**你**：你说得对，我马上就需要 §2 或者 §3。让我改一下。"
 
+#. §0: `E`
+#. §1: `single`
+#. §2: `i ≠ x`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:127
+msgid ""
+"[Hint 91b19] Changing §0 to §1 is not necessary here.\n"
+"Either way, it will help to establish that §2."
+msgstr ""
+
 #. §0: `«{h₂}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:138
 msgid "Try to simplify §0."
 msgstr "**你**：我首先会看看 §0 能不能化简。"
 
-#. §0: `symm`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
-msgid "Try §0 to fix skewed order"
-msgstr ""
-"**你**：嗯，现在顺序反了。\n"
-"\n"
-"**司南**：想想 §0！\n"
-"\n"
-"**你**：对哦，我们之前在那个玩传送带的怪人那里就已经用过这个了。"
-
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:146
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:148
 msgid "Apply definition §0 by §1"
 msgstr ""
 "**你**：那我现在要怎么展开 §0 的定义？\n"
@@ -6339,7 +6339,7 @@ msgstr ""
 
 #. §0: `rw`
 #. §1: `if_neg`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:151
 msgid "Try §0 and §1"
 msgstr "**司南**：既然这是错的，你就可以用 §0 和 §1 继续推进。"
 
@@ -8249,6 +8249,7 @@ msgstr "**司南**：记住，你的“元组” §0 和 §1 其实是两个映�
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -8262,16 +8263,21 @@ msgstr ""
 "\n"
 "**司南**：啊，对。这里有个引理 §1：每个严格单调的映射都是单射。还有一大堆引理可以用来证明映射是单调的。比如：\n"
 "\n"
-"§2 – 两个严格单调映射的和仍然严格单调\n"
+"- §2 – 两个严格单调映射的和仍然严格单调\n"
+"- §3 – 对于奇数 §4，§5 是严格单调的\n"
 "\n"
-"§3 – 对于奇数 §4，§5 是严格单调的\n"
-"\n"
-"要不要用这个试试看？"
+"我建议你先从 §1 入手！"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**司南**：§0 就是你要找的。"
+
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
 
 #: Game/Levels/Mono/L05_StrictMono.lean:42
 #: Game/Levels/Mono/L05_StrictMono.lean:46
@@ -12404,6 +12410,14 @@ msgstr "本游戏通过数学本科入门阶段的若干主题，展示如何在
 
 #~ msgid "Try §0 afterwards"
 #~ msgstr "**司南**：然后试试 §0。"
+
+#~ msgid "Try §0 to fix skewed order"
+#~ msgstr ""
+#~ "**你**：嗯，现在顺序反了。\n"
+#~ "\n"
+#~ "**司南**：想想 §0！\n"
+#~ "\n"
+#~ "**你**：对哦，我们之前在那个玩传送带的怪人那里就已经用过这个了。"
 
 #~ msgid ""
 #~ "Try §0 with a number and then §1. You can not use §2\n"

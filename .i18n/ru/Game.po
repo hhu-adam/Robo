@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-23\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -6261,7 +6261,7 @@ msgstr ""
 #. §2: `j ≠ «{i}»`
 #. §3: `j = «{i}»`
 #. §4: `have h : {«{i}»} ⊆ univ`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:94
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:95
 msgid "Explain §0 and values of §1 for all §2 i.e. §3. Try §4"
 msgstr ""
 "**Ты**: Здесь §0 — единичная матрица, так?\n"
@@ -6273,25 +6273,25 @@ msgstr ""
 "**Знайка**: Да ну? Дай-ка подумать … Можешь сначала доказать §4?"
 
 #. §0: `sum_subset`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:98
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:99
 msgid "Now §0 can be applied"
 msgstr "**Знайка**: Очень хорошо.  Теперь можешь применить §0."
 
 #. §0: `1 «{i}» «{i}»`
 #. §1: `1 • _`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:102
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:103
 msgid "Explain simplification of §0 and §1"
 msgstr "**Ты**: Спасибо, работает! Шаг должен быть простым: сумма по одному элементу, §0 снова равно единице, §1 также упрощается!"
 
 #. §0: `simp`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:104
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:105
 msgid "§0 is always available"
 msgstr "**Знайка**: Всегда можно попробовать §0 …"
 
 #. §0: `«{h₂}»`
 #. §1: `«{i}» ≠ «{x}»`
 #. §2: `have h₃ : «{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:114
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:115
 msgid "Explain that §0 states §1. Try §2"
 msgstr ""
 "**Ты**: А здесь что делать? §0 же говорит, чуть менее чем полностью, что §1.\n"
@@ -6302,31 +6302,31 @@ msgstr ""
 #. §1: `if «{i}» = «{x}» then _ else _`
 #. §2: `«{i}» = «{x}»`
 #. §3: `«{i}» ≠ «{x}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:123
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:124
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:131
 msgid "Explain that §0 is defined as §1 and that either §2 or §3 is needed"
 msgstr ""
 "**Знайка**: Наоборот было бы полезнее, ведь §0 определено как §1!\n"
 "\n"
 "**Ты**: Ты прав, мне сейчас нужно §2 или §3. Давай поменяю."
 
+#. §0: `E`
+#. §1: `single`
+#. §2: `i ≠ x`
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:127
+msgid ""
+"[Hint 91b19] Changing §0 to §1 is not necessary here.\n"
+"Either way, it will help to establish that §2."
+msgstr ""
+
 #. §0: `«{h₂}»`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:126
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:138
 msgid "Try to simplify §0."
 msgstr "**Ты**: Для начала я бы посмотрел, не упрощается ли §0."
 
-#. §0: `symm`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:136
-msgid "Try §0 to fix skewed order"
-msgstr ""
-"**Ты**: Хмм, теперь вышло наоборот.\n"
-"\n"
-"**Знайка**: Memento §0!\n"
-"\n"
-"**Ты**: Точно, уже ведь пригодилось у того дикого типа с конвейерами."
-
 #. §0: `1 «{i}» «{x}»`
 #. §1: `Matrix.one_apply`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:146
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:148
 msgid "Apply definition §0 by §1"
 msgstr ""
 "**Ты**: Как мне теперь развернуть определение для §0?\n"
@@ -6335,7 +6335,7 @@ msgstr ""
 
 #. §0: `rw`
 #. §1: `if_neg`
-#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:149
+#: Game/Levels/Robotswana/L05_EBasisDiagSum.lean:151
 msgid "Try §0 and §1"
 msgstr "**Знайка**: А поскольку это утверждение ложно, ты можешь продвинуться дальше с помощью §0 и §1."
 
@@ -8247,6 +8247,7 @@ msgstr "**Знайка**:  Напомню, что твои «кортежи» §
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -8258,18 +8259,23 @@ msgstr ""
 "\n"
 "Тут вы слышите, как кто-то из толпы шепчет: §0 …\n"
 "\n"
-"**Знайка**:  А, да.  Есть такая лемма §1: любое строго монотонное отображение инъективно. Есть ещё куча лемм, с помощью которых можно показать, что отображения монотонны. Например:\n"
+"**Знайка**: А, да. Есть такая лемма §1: любое строго монотонное отображение инъективно. Есть ещё куча лемм, с помощью которых можно показать, что отображения монотонны. Например:\n"
 "\n"
-"§2  – сумма двух строго монотонных отображений строго монотонна.\n"
+"- §2 – сумма двух строго монотонных отображений строго монотонна.\n"
+"- §3 – для нечётного §4 отображение §5 строго монотонно.\n"
 "\n"
-"§3 – для нечётного §4 отображение §5 строго монотонно.\n"
-"\n"
-"Попробуем так?"
+"Предлагаю начать с §1!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Знайка**: §0 — то, что нужно."
+
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
 
 #: Game/Levels/Mono/L05_StrictMono.lean:42
 #: Game/Levels/Mono/L05_StrictMono.lean:46
@@ -12403,6 +12409,14 @@ msgstr "Игра иллюстрирует доказательства в Lean �
 
 #~ msgid "Try §0 afterwards"
 #~ msgstr "**Знайка**:  И сразу §0 вдогонку."
+
+#~ msgid "Try §0 to fix skewed order"
+#~ msgstr ""
+#~ "**Ты**: Хмм, теперь вышло наоборот.\n"
+#~ "\n"
+#~ "**Знайка**: Memento §0!\n"
+#~ "\n"
+#~ "**Ты**: Точно, уже ведь пригодилось у того дикого типа с конвейерами."
 
 #~ msgid ""
 #~ "Try §0 with a number and then §1. You can not use §2\n"
