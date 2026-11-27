@@ -510,7 +510,7 @@ you can use `rw [h]` to replace all occurrences of `X` in the proof target with 
   | `2*a + 2*b > 2*a` | `rw [h]`       | `f a + 2*b > f a` |
   |                   | `nth_rw 2 [h]` | `2*a + f b > 2*a` |
 -/
-TacticDoc rw
+TacticDoc rw insert "rw [$,]"
 
 /--
 The `simp` tactic attempts to apply a large number of lemmas to simplify a given expression.
@@ -534,7 +534,7 @@ The main differences to a plain rw are:
 * simp_rw is better at rewriting under quantifiers and binders.
 * simp_rw follows each step with `simp only []`
 -/
-TacticDoc simp_rw
+TacticDoc simp_rw insert "simp_rw [$,]"
 
 /--
 `specialize h a₁ a₂` is equivalent to `have h := h a₁ a₂`: the tactic replaces an assumption
