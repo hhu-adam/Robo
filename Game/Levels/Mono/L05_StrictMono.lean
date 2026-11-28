@@ -31,11 +31,18 @@ Statement :
 
      Wollen wir es damit einmal versuchen?"
   -/
-  Hint "`StrictMono` is useful. `StrictMono.injective` says that each strictly monotone mapping
+  Hint (strict := true) "`StrictMono` is useful. `StrictMono.injective` says that each strictly monotone mapping
   is injective. To show that a mapping is monotone one can use e.g. `StrictMono.add` or `Odd.strictMono_pow`,
   which says that for uneven `n`, `x ↦ x ^ n` is monotone."
   -- Hint (hidden := true) "**Robo**: `apply` ist, wonach du suchst."
   Hint (hidden := true) "`apply` is what is looked for"
+  Branch
+    have : Odd 3 := by
+      decide
+    apply Odd.strictMono_pow at this
+    Hint "[Hint that does not get triggered]
+          This looks bad.  Try something else."
+          -- TODO:  This hint does not get triggered, perhaps because of the `?m.104` in the proof state?
   Branch
     intro a b
     -- Hint "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"

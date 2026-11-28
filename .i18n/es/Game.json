@@ -146,14 +146,25 @@
  "**Glifo**: Este último paso es §0. Naturalmente, todo esto también se podría hacer con §1, si no fuera porque ahora mismo nos lo estamos pasando tan bien jugando.",
  "[Hint wdpf] Try §0":
  "**Glifo**: Eso tiene buena pinta. Pero créeme: la distinción de casos es del todo innecesaria. Podrías usar simplemente §0. ¡Pruébalo!",
+ "[Hint u9e76] Now §0 is about a map §1.":
+ "**Glifo**: Ahora §0 es un enunciado sobre una aplicación §1.",
  "[Hint rxjt] Try §0":
  "**Glifo**: Para empezar, intercambia los dos lados de la igualdad con §0.",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**Tú**: Sobreyectiva significa que toda aplicación §0 tiene una preimagen. Así que empiezo con §1.",
  "[Hint plnk] Try §0":
  "**Glifo**: Como tú digas. Entonces lo mejor será que pruebes §0.",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**Glifo**: Alguna combinación de §0 y §1 debería terminar esto ahora.",
  "[Hint mhjv] Try §0":
  "**Cantor**: ¡No, no! ¡Queríamos usar mi precioso teorema §0!",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**Glifo**: La sobreyectividad de §0 te da preimágenes de *subconjuntos* de §1. ¿Quizá deberíamos usar §3 para darle un nombre al subconjunto que corresponde a §2?",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**Glifo**: §0 es, por definición, §1. §2 también conocería este lema, pero aquí hazlo mejor con §3.",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**Glifo**: Alguna combinación de §0, §1 y §2 debería terminar esto ahora.",
+ "[Hint jx4gv] Consider the set §0.": "**Glifo**: Será el conjunto §0, ¿no?",
  "[Hint jrxb] Try §0":
  "**Glifo**: Lo mejor será hagas también §0, para que entiendas lo que pasa.",
  "[Hint hwzk] Try §0":
@@ -163,6 +174,8 @@
  "[Hint fzwc] Try §0": "**Glifo**: §0, dice mi disco duro.",
  "[Hint dkmw] Remind of previous result":
  "**Tú**: Y ese es un resultado de los que encontramos por el camino.",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**Tú**: Entonces, ¿aquí hay que usar ahora §0?\n\n**Glifo**: Primero hay que traducir, con §1.",
  "[Hint cqvs] Try §0":
  "**Glifo**: Esta vez puedes simplemente volver a usar §0.",
  "[Hint bsjn] Try §0": "**Glifo**: Ahora puedes usarla con §0.",
@@ -255,8 +268,6 @@
  "**Glifo**: Recuerda que ya hemos demostrado §0.",
  "Use §0 as goal is in assumptions":
  "**Glifo**: Pues es exactamente igual que antes: el enunciado que hay que demostrar figura ya entre las hipótesis. Así que §0 volverá a funcionar.",
- "Use §0 as e.g. §1":
- "**Tú**: Entonces, ¿aquí hay que usar §0?\n\n**Glifo**: Probablemente. Por ejemplo, con §1.",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**Tú**: ¿§0?\n\n**Glifo**: Eso podría funcionar. Y probablemente necesitarás el lema §1. Para §2, extrae de la hipótesis §3 la conclusión §4.",
  "Use §0 again": "**Glifo**: Y ahora, otra vez §0.",
@@ -314,8 +325,7 @@
  "**Glifo**: Podrías empezar con §0, o con §1 y luego mirar si §2 te ayuda a avanzar.",
  "Try §0 with §1":
  "**Glifo**: ¡Pero no olvides que §0 necesita explícitamente la hipótesis §1!",
- "Try §0 with a number and then §1. You can not use §2\ndirectly, as §3 cannot be applied inside of quantors. Try §4 with a number.":
- "**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n\n**Tú**: ¿Podría aplicar ya §2?\n\n**Glifo**: No, §3 no puede reescribir dentro de cuantificadores.\n\n**Tú**: ¿Y cómo lo haría entonces?\n\n**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después.",
+ "Try §0 with a number.": "**Glifo**: Ahora introduces un número con §0.",
  "Try §0 which states\n§1\n":
  "**Glifo**: Genial. Ahora vamos con la unicidad. Creo que aquí podría ayudar el lema §0:\n\n§1\n",
  "Try §0 via §1":
@@ -690,7 +700,6 @@
  "**Glifo**: Muy bien. Ahora sí que puedes aplicar §0.",
  "Now you have two goals.":
  "**Glifo**: Mira, esto es papel mágico.\n  Ahora, de repente, tenemos dos objetivos.\n  Creo que ya sabes cómo alcanzar cada uno de ellos.\n  Y es que cada objetivo aparece tal cual entre las *hipótesis*.",
- "Now you can apply §0": "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0.",
  "Now try §0!": "**Tú**: ¿Y ahora?\n\n**Lina** (*triunfante*): ¡§0!",
  "Now try out §0": "**Glifo**: Bien. Y ahora §0.",
  "Now there is goal §0. This goal is part of the assumption":
@@ -949,10 +958,11 @@
  "En el planeta al que os acercáis se distinguen dos edificios: un rascacielos estrecho y un segundo edificio con algunas plantas menos. Los edificios están unidos entre sí por un curioso sistema de tubos. En lo alto del rascacielos divisáis una plataforma de aterrizaje. Ponéis rumbo hacia ella.\n\nAl bajar de la nave, un formalósofo viene corriendo hacia vosotros. Agita los brazos frenéticamente.\n\n**Bedel**: ¡No, no, por aquí no! Os esperan ahí abajo.\n\nDeja caer los brazos.\n\n**Bedel**: En fin, da igual. ¡Buenos días, antes de nada! Yo aquí no soy más que el bedel. Os espera una gran delegación, pero, claro está, al otro lado, en el edificio de oficinas. Esto de aquí es solo nuestra torre dormitorio. Venid, que os llevo. Es cosa de un momento.\n\nOs lleva una planta más abajo y os pide que os montéis en unas \"cápsulas de transporte\", cada uno en una.\n\n**Bedel**: Ahora nos deslizamos sin más en estas cápsulas hasta el otro lado. ¡No os preocupéis, la vía está libre! La verdad es que aquí, por desgracia, hay choques cada dos por tres, pero ahora mismo está todo despejado. ¡Al fin y al cabo, todos los demás ya están al otro lado!",
  "Intro Ciao":
  "**Tú**: ¿Puede ser que ya hayamos visitado todos los planetas de este rincón del universo?\n\n**Glifo**: Sí, eso parece.\n\n**Tú**: ¿Y ahora qué hacemos?\n\n**Glifo**: Ni idea.\n\nAl cabo de un rato…\n\n**Glifo**: Oye, mira, acaba de llegar un mensaje.",
- "Intro Cantor L11: Show that set of mapping §0 is uncountable":
+ "Intro Cantor L12: Show that set of mapping §0 is uncountable":
  "**Cantor**: ¿Más fácil? No lo sé. ¡Pero más elegante!\n\nDa tres saltos mortales hacia atrás y vuelve con otra nota para vosotros.\n\n**Cantor**: ¡Mirad! ¡Ahora podéis demostrar con el mismo argumento que el conjunto de las sucesiones de números naturales, es decir, el conjunto de las aplicaciones §0, es no numerable!\n\nY luego, en un susurro:\n\n**Cantor**: ¡En esta carpa hay una cantidad no numerable de asientos!",
- "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
- "**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n\n**Tú**: ¿Qué?\n\n**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §4 que lleva §5 al enunciado §6. Para los formalósofos es lo mismo.",
+ "Intro Cantor L11": "**Cantor**: ¿Ahora está todo claro?",
+ "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
+ "**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n\n**Tú**: ¿Qué?\n\n**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §2 que lleva §4 al enunciado §5.\n\n**Cantor**: ¡Exactamente! Tomad, os doy además un paso intermedio.",
  "Intro Cantor L09 - 2":
  "**Cantor**: ¡Atentos! Todo va a quedar claro. ¡Aquí está la clave! Solo tenéis que reformular un poco el enunciado de antes.\n\nOs lanza una nueva nota.",
  "Intro Cantor L08: Mapping defined on product §0 with diagonal":
@@ -1031,8 +1041,8 @@
  "**Tú**: Lo que hay que demostrar ahora es que §0 es lo mismo que dos veces la cantidad de números pares en §1. ¿Correcto?\n\n**Glifo**: Correcto.\n\n**Tú**: Y eso es así porque… la expresión de la suma se anula cuando §2 es impar, y cuando §3 es par es igual a §4. Mmmm…\n\n**Glifo**: Haz otra vez unos cuantos pasos intermedios con §5.\nPrimero quieres restringir la suma al conjunto de los índices pares, es decir, a:\n§6\nY después seguramente querrás usar\n§7\ncomo paso intermedio.",
  "Goal is in assumptions":
  "**Tú**: Ah, y ahora el objetivo está entre las hipótesis.",
- "Go back, keep §0 and try §1":
- "**Glifo**: Este camino me parece un poco demasiado complicado.\n  Yo volvería atrás y conservaría §0, para que al final puedas usar §1.",
+ "Go back, keep §0.":
+ "**Glifo**: Este camino me parece un poco demasiado complicado.\nYo volvería atrás y conservaría §0.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Tú**: A ver, tenemos dos hipótesis: §0 se cumple, y §1 también. Y nosotros tenemos que demostrar que “§0 y §1” se cumple. Me parece que estos formalochiflados van a acabar sacándome de quicio.\n\n**Glifo**: Calma. Solo tienes que descomponer el objetivo en dos partes. Prueba §3.\n\n**Tú**: ¿¿Querrás decir §4??\n\n**Glifo**: No, §5. Ya sé que es confuso, pero aquí lo llaman así.",
  "Given\n\n§0\n\nShow\n§1\n":
@@ -1392,9 +1402,11 @@
  "Recibís una gran ovación.\n\nDespués os despiden.\nPara el camino de vuelta, por desgracia, no podéis usar ninguna cápsula de transporte.\nY es que solo funcionan en un sentido.\nAsí que la vuelta a la nave es a pie:\nprimero, escaleras abajo; luego, por fuera, del edificio de oficinas a la torre dormitorio; y, por último, hacia arriba en un ascensor de lo más corriente.",
  "Conclusion Cia L01":
  "**Tú**: Bueno, tampoco ha sido tan difícil… ¿Quién lo habrá enviado? ¿Y por qué?\n\n**Glifo**: Seguro que era un mensaje de Rita…\n\nGlifo mira a lo lejos.\n\n**Glifo**: Creo que quería animarnos a seguir viajando.\n\n**Tú**: Pero ¿adónde?\n\n**Glifo**: Oh, mira, otro mensaje:\n\n*Queridos terrícolas:*\n\n*¡Ha sido un placer conoceros! Lamentamos de corazón que os hayáis extraviado en nuestro Formaloverso y no encontréis el camino de vuelta a casa. Pero tenemos además una buena noticia: ¡no sois los únicos! Volad sin demora al planeta Zulip. Allí encontraréis a muchos otros terrícolas que se han extraviado en el Formaloverso. Zulip es grande; seguro que también vosotros encontraréis allí un nuevo hogar. Aquí tenéis las coordenadas:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*Con nuestros más sinceros saludos*\n\n*– Vuestros formalósofos*\n\n**Glifo**: Pues nada… ¡en marcha!\n\n[Que no os extrañe: si seguís las coordenadas, la nave espacial acelerará hasta velocidad superlumínica y perderéis temporalmente el contacto con el servidor. Pero no pasa nada. Seguro que llegaréis bien a Zulip.]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**Glifo**: ¡Muchas gracias por la función!\n\n**Tú**: ¡Pero qué pena que haya tan pocos espectadores!\n\n**Cantor**: Es que la magia no es para todo el mundo. ¡Buen viaje!",
- "Conclusion Cantor L10": "**Tú**: No sé si esto ha sido realmente más fácil…",
+ "Conclusion Cantor L11": "**Tú**: No sé si esto ha sido realmente más fácil…",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**Glifo**: Seguro que esto lo necesitamos enseguida. Lo guardo como §0.",
  "Conclusion Cantor L09 - 2": "**Cantor**: ¡Bravo!",
  "Conclusion Cantor L08":
  "**Cantor**: ¡Muy bien!\n\nAplaude.\n\n**Tú**: Pues yo ya no entiendo nada de nada.",

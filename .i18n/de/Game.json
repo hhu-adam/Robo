@@ -145,14 +145,26 @@
  "**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viel Spaß am Spielen hätten.**Robo**: Dieser letzte Schritt ist §0. Das ginge natürlich auch alles mit §1, wenn wir gerade nicht so viele Spaß am Spielen hätten.",
  "[Hint wdpf] Try §0":
  "**Robo**: Das sieht gut aus. Aber glaub mir, die Fallunterscheidung ist ganz unnötig. Du könntest auch einfach §0 verwenden. Probiers mal!",
+ "[Hint u9e76] Now §0 is about a map §1.":
+ "**Robo**:  Jetzt ist §0 eine Aussage über eine Abbildung §1.",
  "[Hint rxjt] Try §0":
  "**Robo**: Vertausch erst einmal mit §0 die beiden Seiten der Gleichung.",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**Du**:  Surjektiv heißt, jede Abbildung §0 hat ein Urbild. Also fange ich mal mit §1 an.",
  "[Hint plnk] Try §0":
  "**Robo**: Wie du meinst. Dann probier doch am besten §0.",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**Robo**:  Irgendeine Kombination von §0 und §1 sollte das jetzt zu Ende bringen.",
  "[Hint mhjv] Try §0":
  "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**Robo**:  Die Surjektivität von §0 liefert dir Urbilder von *Teilmengen* von §1. Vielleicht sollten wir mit §3 der Teilmenge, die §2 entspricht, einen Namen geben?",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**Robo**: §0 ist per Definition §1. §2 würde dieses Lemma auch kennen, aber mach das hier mal direkt mit §3.",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**Robo**:  Irgendeine Kombination von §0, §1 und §2 sollte das jetzt zu Ende bringen.",
+ "[Hint jx4gv] Consider the set §0.":
+ "**Robo**: Das wird wohl die Menge §0 sein, oder?",
  "[Hint jrxb] Try §0":
  "**Robo**: Am besten machst du auch noch §0, damit du verstehst, was los ist.",
  "[Hint hwzk] Try §0":
@@ -162,6 +174,8 @@
  "[Hint fzwc] Try §0": "**Robo**: §0 sagt meine Speicherplatte.",
  "[Hint dkmw] Remind of previous result":
  "**Du**: Und das war ein Resultat, welches wir auf dem Weg gefunden haben.",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Erst übersetzen, mit §1.",
  "[Hint cqvs] Try §0":
  "**Robo**: Diesmal kannst du einfach wieder §0 verwenden.",
  "[Hint bsjn] Try §0": "**Robo**: Jetzt kannst du diese mit §0 benutzen.",
@@ -255,8 +269,6 @@
  "**Robo**:  Denk daran, dass wir schon §0 bewiesen hatten.",
  "Use §0 as goal is in assumptions":
  "**Robo**: Ist doch genau wie eben: die Aussage, die zu beweisen ist, gehört selbst zu den Annahmen. Also wird §0 auch wieder funktionieren.",
- "Use §0 as e.g. §1":
- "**Du**: Also hier jetzt §0 verwenden?\n\n**Robo**: Vermutlich, zum Beispiel mit §1.",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**Du**: §0?\n\n**Robo**:  Das könnte funktionieren. Und wahrscheinlich wirst du das Lemma §1 brauchen. Für §2 zieht es aus der Annahme §3 den Schluss §4.",
  "Use §0 again": "**Robo**:  Und jetzt wieder §0.",
@@ -314,8 +326,7 @@
  "**Robo**: Du könntest mit §0 anfangen, oder du fängst an mit §1 und schaust dann, ob dich §2 weiterbringt.",
  "Try §0 with §1":
  "**Robo**: Vergiss aber nicht, dass §0 die Annahme §1 explizit braucht!",
- "Try §0 with a number and then §1. You can not use §2\ndirectly, as §3 cannot be applied inside of quantors. Try §4 with a number.":
- "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n\n**Du**: Könnte ich jetzt schon §2 anwenden?\n\n**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n\n**Du**: Aber wie würde ich das machen?\n\n**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben.",
+ "Try §0 with a number.": "**Robo**: Jetzt setzt du mit §0 eine Zahl ein.",
  "Try §0 which states\n§1\n":
  "**Robo**:  Super.  Jetzt also zur Eindeutigkeit.  Ich glaube, da könnte das Lemma §0 helfen:\n\n§1\n",
  "Try §0 via §1":
@@ -696,7 +707,6 @@
  "**Robo**: Sehr gut.  Jetzt kannst du nämlich §0 anwenden.",
  "Now you have two goals.":
  "**Robo**: Schau mal, das ist Zauberpapier.\n  Jetzt haben wir auf einmal zwei Beweisziele.\n  Ich glaube, du weißt schon, wie man die jeweils erreicht.\n  Die Ziele stehen ja jeweils in den *Annahmen*.",
- "Now you can apply §0": "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden.",
  "Now try §0!": "**Du**:  Und jetzt??\n\n**Lina** *(triumphal)*: §0!",
  "Now try out §0": "**Robo**:  Gut.  Und jetzt §0.",
  "Now there is goal §0. This goal is part of the assumption":
@@ -1039,8 +1049,8 @@
  "**Du**:  Hier ist jetzt zu zeigen, dass §0 dasselbe ist wie zweimal die Anzahl der geraden Zahlen in §1.  Richtig?\n\n**Robo**:  Richtig.\n\n**Du**:  Und das ist so, weil … der Ausdruck in der Summe für ungerade §2 verschwindet, und für gerade §3 gleich §4 ist. Mmmm …\n\n**Robo**:  Mach doch wieder mit §5 ein paar Zwischenschritte.\nZuerst willst du die Summe auf die Menge der geraden Indizes einschränken, also auf:\n§6\nUnd danach willst du vermutlich\n§7\nals Zwischenschritt verwenden.",
  "Goal is in assumptions":
  "**Du**: Ah, und jetzt ist das Beweisziel in den Annahmen.",
- "Go back, keep §0 and try §1":
- "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst.",
+ "Go back, keep §0.":
+ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\nIch würde nochmal zurückgehen und §0 behalten.",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**Du**: Also, wir haben zwei Annahmen: §0 gilt, und §1 gilt auch. Und beweisen sollen wir dass „§0 und §1“ gilt. Ich glaube, diese Formalospinner treiben mich noch in den Wahnsinn.\n\n**Robo**: Ganz ruhig.  Du musst das Beweisziel einfach in zwei Teile zerlegen. Probier mal §3.\n\n**Du**: Du meinst wohl §4??\n\n**Robo**: Nein, §5. Ich weiß, das ist verwirrend, aber die nennen das hier so.",
  "Given\n\n§0\n\nShow\n§1\n":
@@ -1397,10 +1407,12 @@
  "Ihr bekommt eine große Runde Applaus.\n\nDanach werdet ihr verabschiedet.\nFür den Rückweg könnt ihr leider keine Transportkapsel benutzen.\nDie funktionieren nämlich nur in eine Richtung.\nZurück zum Raumschiff geht es also zu Fuß:\nerst die Treppen runter, dann draußen vom Bürohaus zum Schlafturm, und schließlich mit einem ganz gewöhnlichen Fahrstuhl nach oben.",
  "Conclusion Cia L01":
  "**Du**: Das war ja nun nicht so schwer …  Wer die wohl gesendet hat?  Und warum?\n\n**Robo**:  Das war sicher eine Nachricht von Ritha …\n\nRobo schaut in die Ferne.\n\n**Robo**:  Ich glaube, sie wollte uns ermuntern, weiter zu fliegen.\n\n**Du**: Aber wohin?\n\n**Robo**:  Oh, schau mal, noch eine Nachricht:\n\n*Liebe Erdwesen,*\n\n*es war uns ein Vergnügen, euch kennenzulernen! Es tut uns aufrichtig leid, dass ihr euch in unser Formaloversum verirrt habt und nicht wieder nach Hause findet.  Aber wir haben noch eine gute Nachricht: Ihr seid nicht die einzigen! Fliegt nur rasch weiter zum Planeten Zulip. Dort werdet ihr viele weitere Erdwesen finden, die sich ins Formaloversum verirrt haben. Zulip ist groß, gewiss werdet auch ihr dort ein neues Zuhause finden.  Hier die Koordinaten:*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*Mit den aufrichtigsten Grüßen*\n\n*– Eure Formalosophen*\n\n**Robo**:  Na dann – los!\n\n[Nicht wundern:  Wenn ihr den Koordinaten folgt, beschleunigt das Raumschiff auf Überlichtgeschwindigkeit und ihr verliert vorübergehend den Kontakt zum Server. Das macht aber nichts.  Ihr werdet sicher auf Zulip ankommen.]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**Robo**:  Vielen Dank für die Vorstellung!\n\n**Du**:  Aber schade, dass es so wenige Zuschauer gibt!\n\n**Cantor**:  Zauberei ist eben nicht für jedermann.  Gute Weiterreise!",
- "Conclusion Cantor L10":
+ "Conclusion Cantor L11":
  "**Du**:  Ich weiß nicht, ob das wirklich einfacher war …",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**Robo**:  Das brauchen wir bestimmt gleich.  Ich speicher das mal als §0.",
  "Conclusion Cantor L09 - 2": "**Cantor**:  Bravo!",
  "Conclusion Cantor L08":
  "**Cantor**:  Sehr schön!\n\nEr klatscht.\n\n**Du**:  Also ich verstehe gerade gar nichts mehr.",

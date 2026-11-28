@@ -127,17 +127,29 @@
  "[Hint xnqr] Try §0 | §1":
  "**司南**：最后这一步可以用 §0。当然，其实也可以全都用 §1 来做，不过我开始喜欢一步一步做了。",
  "[Hint wdpf] Try §0": "**司南**：看起来不错。但相信我，这个分类讨论完全没必要。你也可以直接用 §0。试试看！",
+ "[Hint u9e76] Now §0 is about a map §1.": "**司南**：现在 §0 是关于映射 §1 的命题。",
  "[Hint rxjt] Try §0": "**司南**：先用 §0 把等式两边对调一下。",
+ "[Hint ragzs] Surjective means: every map §0 has a preimage.\nStart with §1.":
+ "**你**：满射的意思是，每个映射 §0 都有原像。那我先用 §1 开始。",
  "[Hint plnk] Try §0": "**司南**：随你吧。你最好试试 §0。",
+ "[Hint mr4el] Use §0 in combination with §1.":
+ "**司南**：现在用 §0 和 §1 的某种组合应该就能完成了。",
  "[Hint mhjv] Try §0": "**康托尔**：不不不！我们不是想用我漂亮的定理 §0 吗！",
+ "[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n§1. Introduce a name for the subset corresponding to §2 with §3.":
+ "**司南**：§0 的满射性给你的是 §1 的*子集*的原像。也许我们应该用 §3 给对应于 §2 的子集起个名字？",
  "[Hint kzmq] Explain §0 defined as §1. Try §2 | §3":
  "**司南**：按定义，§0 就是 §1。§2 也知道这个引理，不过这里你就直接用 §3 来做吧。",
+ "[Hint kq7tw] Use §0 in combination with §1 and §2.":
+ "**司南**：现在用 §0、§1 和 §2 的某种组合应该就能完成了。",
+ "[Hint jx4gv] Consider the set §0.": "**司南**：那应该就是集合 §0 吧？",
  "[Hint jrxb] Try §0": "**司南**：你最好也再写一下 §0，这样你就明白怎么回事了。",
  "[Hint hwzk] Try §0":
  "**司南**：没错。现在你就可以写 §0 了——如果两个求和式都是在同一个集合里遍历指标，而且每个指标对应的被加项都相等，那么这两个求和式也相等。",
  "[Hint gwrm] Try §0": "**司南**：哦，不。看起来太复杂了。你还是把 §0 明写出来吧。",
  "[Hint fzwc] Try §0": "**司南**：我的硬盘记录这一条是 §0。",
  "[Hint dkmw] Remind of previous result": "**你**：这个我们之前在路上已经见过了。",
+ "[Hint d92p1] Use §0 now? First translate with\n§1.":
+ "**你**：所以现在在这里用 §0？\n\n**司南**：先翻译一下，用 §1。",
  "[Hint cqvs] Try §0": "**司南**：这次你直接再用一次 §0 就行。",
  "[Hint bsjn] Try §0": "**司南**：现在你可以用 §0 把它用上。",
  "[Hint bpwn] Explain §0 defined as §1. Try §2 | §3":
@@ -217,7 +229,6 @@
  "Use §0 as its already proven": "**司南**：记住，我们已经证明过 §0 了。",
  "Use §0 as goal is in assumptions":
  "**司南**：这和刚才那个问题一样：要证明的陈述本身就在已知假设里。所以§0这次也能用。",
- "Use §0 as e.g. §1": "**你**：所以现在在这里用 §0？\n\n**司南**：大概吧，比如配合 §1。",
  "Use §0 and the lemma §1.\nFor the latter, given §2 it concludes from the assumption §3 that §4":
  "**你**: §0？\n\n**司南**：这可能行得通。而且你大概会需要引理 §1。对于 §2，它会从假设 §3 推出结论 §4。",
  "Use §0 again": "**司南**：然后再用一次 §0。",
@@ -265,8 +276,7 @@
  "**司南**：这里你现在得用 §0 或者 §1。\n  还是先退一步吧，让目标变成 §2。",
  "Try §0 | §1, §2": "**司南**：你可以从 §0 开始，或者从 §1 开始，然后看看用 §2 能不能帮上忙。",
  "Try §0 with §1": "**司南**：但别忘了，§0 需要你明确告诉它使用假设 §1！",
- "Try §0 with a number and then §1. You can not use §2\ndirectly, as §3 cannot be applied inside of quantors. Try §4 with a number.":
- "**司南**：现在你用 §0 代入一个数，然后大概就该用引理 §1 了。\n\n**你**：我现在就能用 §2 吗？\n\n**司南**：不行，§3 不能在量词里面改写。\n\n**你**：可那我该怎么做？\n\n**司南**：以后再教你，不在这种大庭广众之下。我现在宁愿用 §4 给出一个真正的数，然后再改写。",
+ "Try §0 with a number.": "**司南**：现在你用 §0 代入一个数。",
  "Try §0 which states\n§1\n": "**司南**：太好了。现在说唯一性。我觉得引理 §0 可能有用：\n\n§1\n",
  "Try §0 via §1":
  "**司南**（*不知从哪里*）：这听起来像 §0。我不觉得我们在巴比伦见过这个，你是在瞎想。不过 §1 肯定知道这个引理。",
@@ -581,7 +591,6 @@
  "Now §0 can be applied": "**司南**：很好。现在你就可以用 §0 了。",
  "Now you have two goals.":
  "**司南**：你看，这是张魔法纸。\n  现在我们一下子有了两个目标。\n  我觉得你已经知道怎么分别证明它们了。\n  它们都分别写在*假设*里呢。",
- "Now you can apply §0": "**司南**：好选择！现在你可以用 §0 了。",
  "Now try §0!": "**你**：那现在呢？？\n\n**Lina** (*得意洋洋*)：§0!",
  "Now try out §0": "**司南**：很好。现在用 §0。",
  "Now there is goal §0. This goal is part of the assumption":
@@ -795,10 +804,11 @@
  "在你们正接近的那颗星球上，可以看到两栋建筑：一栋狭长的高楼，另一栋楼层稍微少一些。两栋楼之间用一种奇怪的管道系统连接着。在高楼顶上你们能看到一个降落平台。你们就朝那里飞去。\n\n你们一下飞船，就有一位形式哲学家朝你们跑来。他疯狂地挥舞着双臂。\n\n**门卫**：不不，不是这里，你们要去下面那边，那里有人等着你们呢。\n\n他把手臂放了下来。\n\n**门卫**：嗯，好吧，随便啦。先说声你好！我在这儿只是个看门的。你们会被一个很大的代表团接待，不过当然是在对面那栋办公楼里。这儿只是我们的宿舍楼。来，我带你们过去。很快的。\n\n他带你们下了一层，请你们分别坐进一只“运输舱”。\n\n**门卫**：我们现在就坐这些舱滑过去。别担心，轨道是空的！我们这儿虽然时不时会发生碰撞，不过现在没问题。其他人都已经在那边了！",
  "Intro Ciao":
  "**你**：会不会我们已经把这个宇宙这一角的所有行星都逛遍了？\n\n**司南**：嗯，看起来是这样。\n\n**你**：那我们现在干嘛？\n\n**司南**：不知道。\n\n过了一会儿……\n\n**司南**：你看，这里收到一条消息。",
- "Intro Cantor L11: Show that set of mapping §0 is uncountable":
+ "Intro Cantor L12: Show that set of mapping §0 is uncountable":
  "**康托尔**：更简单？谁说更简单了？但肯定更优雅！\n\n他做了三个后空翻，然后又拿着一张新纸条回到你们这儿。\n\n**康托尔**：看！现在你们可以用同一个论证证明：自然数序列的集合，也就是映射 §0 的集合，是不可数的！\n\n然后他压低声音说：\n\n**康托尔**：这个帐篷里有不可数多个座位！",
- "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6":
- "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n\n**你**：什么？\n\n**司南**：一个子集 §3 可以和映射 §4 对应起来：它把 §5 送到命题 §6。对形式哲学家来说，这就是同一回事。",
+ "Intro Cantor L11": "**康托尔**：现在都清楚了吗？",
+ "Intro Cantor L10: Use the diagonal argument to show once more that there are no\nsurjective mappings §0, by interpreting §1 as §2: a subset §3\ncan be identified with the map A → Prop sending §4 to §5. Here is an intermediate step.":
+ "**康托尔**：现在你们拿这个漂亮的对角线论证，再证明一遍：不存在满射 §0！你们只要把 §1 看成 §2 就行！\n\n**你**：什么？\n\n**司南**：一个子集 §3 可以和映射 §2 对应起来：它把 §4 送到命题 §5。\n\n**康托尔**：正是如此！来，我再给你们一个中间步骤。",
  "Intro Cantor L09 - 2":
  "**康托尔**：注意！一切都会明白的。这就是钥匙！你们只要把刚才那句话稍微变形一下就行。\n\n他朝你们扔来一张新的纸条。",
  "Intro Cantor L08: Mapping defined on product §0 with diagonal":
@@ -869,8 +879,7 @@
  "Goal is to show that §0 is equal to twice the amount of\neven numbers in §1. Note that sum disappears for uneven §2. For even §3 the sum is §4. Use §5 to\nconstrain sum to §6 and then use §7\nas intermediate step.":
  "**你**：这里要证明的是，§0 等同于 §1 里偶数的个数的两倍。对吧？\n\n**司南**：对。\n\n**你**：而这是因为……当 §2 是奇数时，求和里的那个表达式就恒等于0；当 §3 是偶数时，它就等于 §4。嗯嗯……\n\n**司南**：你再用 §5 写几个中间步骤吧。\n首先你想把求和限制到偶数指标的集合上，也就是：\n§6\n然后你大概想用\n§7\n作为一个中间步骤。",
  "Goal is in assumptions": "**你**：啊，现在目标已经在假设里了。",
- "Go back, keep §0 and try §1":
- "**司南**：这条解法在我看来有点太难了。\n 我建议先退回去，保留 §0，这样你最后就能用上 §1。",
+ "Go back, keep §0.": "**司南**：这条解法在我看来有点太难了。\n我建议先退回去，保留 §0。",
  "Given assumptions that §0 and §1 are true, prove that 'A and B' is true.\nYou cannot just try §2. Use §3 to divide goal into two. Remind that the tactic\nis not called §4. Try §5":
  "**你**：所以，我们有两个假设：§0 成立，§1 也成立。要证明的是 “§0和§1” 成立。我觉得这些形式哲学怪人迟早要把我逼疯。\n\n**司南**：冷静点。你只要把证明目标拆成两部分就行。用 §3 试试。\n\n**你**：你是想说 §4 吧？？\n\n**司南**：不，§5。我知道这很让人迷糊，但他们这儿就这么叫。",
  "Given\n\n§0\n\nShow\n§1\n":
@@ -1188,9 +1197,11 @@
  "你们得到了一阵热烈的掌声。\n\n随后，大家向你们道别。\n遗憾的是，返程时你们不能使用运输舱。\n因为那玩意儿只单向运行。\n所以回到飞船只能走回去：\n先下楼梯，然后在外面从办公楼走到宿舍楼，最后再坐一部普普通通的电梯上楼。",
  "Conclusion Cia L01":
  "**你**：这倒也不算太难……会是谁发的呢？又为什么？\n\n**司南**：这肯定是 Ritha 发来的消息……\n\n司南望向远方。\n\n**司南**：我想，她是想鼓励我们继续飞下去。\n\n**你**：可是飞到哪儿？\n\n**司南**：哦，你看，又来一条消息：\n\n*亲爱的地球人，*\n\n*很高兴认识你们！我们由衷地遗憾你们误入了我们的 Lean宇宙，却找不到回家的路。不过我们还有个好消息：你们不是唯一的！赶紧继续飞往 Zulip 星球吧。在那里你们会遇到更多误入 Lean宇宙的地球人。Zulip 很大，你们肯定也能在那里找到一个新家。坐标如下：*\n\n[248-4804-180 | 844-1001-553](https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/)\n\n*致以最诚挚的问候*\n\n*– 你们的形式哲学家*\n\n**司南**：那就——出发！\n\n[别惊讶：如果你们按这些坐标前进，飞船会加速到超光速，你们会暂时失去与服务器的连接。不过没关系。你们一定会安全抵达 Zulip。]",
- "Conclusion Cantor L11":
+ "Conclusion Cantor L12":
  "**司南**：感谢你的表演！\n\n**你**：不过可惜观众这么少！\n\n**康托尔**：魔术嘛，本来就不是给所有人看的。祝你们旅途顺利！",
- "Conclusion Cantor L10": "**你**：我也不知道这样是不是真的更简单了……",
+ "Conclusion Cantor L11": "**你**：我也不知道这样是不是真的更简单了……",
+ "Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n§0.":
+ "**司南**：这个我们马上肯定要用到。我先把它存为 §0。",
  "Conclusion Cantor L09 - 2": "**康托尔**：太棒了！",
  "Conclusion Cantor L08": "**康托尔**：很好！\n\n他鼓掌。\n\n**你**：所以我现在完全看不懂了。",
  "Conclusion Cantor L07": "**康托尔**：喂，你们弄完了吗？？\n\n**司南**：我们还剩一张纸条。",

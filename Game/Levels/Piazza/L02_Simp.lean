@@ -33,6 +33,6 @@ TheoremTab "Set"
 
 NewTactic simp
 
-NewDefinition setOf
+NewDefinition Set.ofPred
 
 Conclusion ""

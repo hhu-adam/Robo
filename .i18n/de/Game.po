@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -10,17 +10,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
-#: GameServer/RpcHandlers.lean:169
+#: GameServer/RpcHandlers.lean:33
 msgid "level completed! 🎉"
 msgstr "– Aufgabe gelöst! –"
 
-#: GameServer/RpcHandlers.lean:177
+#: GameServer/RpcHandlers.lean:41
 msgid "level completed with warnings… 🎭"
 msgstr "– Aufgabe gelöst!  Aber nicht ganz so wie gedacht. –"
 
-#: GameServer/RpcHandlers.lean:190
+#: GameServer/RpcHandlers.lean:54
 msgid "intermediate goal solved! 🎉"
 msgstr "– Zwischenziel erreicht! –"
 
@@ -3866,47 +3866,25 @@ msgid "Remind about §0"
 msgstr "**Du**: Oha. Ganz links ein §0. Was du nicht sagst …"
 
 #. §0: `Odd`
-#. §1: `not_odd_iff_even`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
-#: Game/Levels/Quantus/L09_PushNeg.lean:38
-msgid "Go back, keep §0 and try §1"
+#, fuzzy
+msgid "Go back, keep §0."
 msgstr ""
 "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
-"  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
+"Ich würde nochmal zurückgehen und §0 behalten."
 
 #. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
-"\n"
-"**Du**: Könnte ich jetzt schon §2 anwenden?\n"
-"\n"
-"**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
-"\n"
-"**Du**: Aber wie würde ich das machen?\n"
-"\n"
-"**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."
-
-#. §0: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:58
-#: Game/Levels/Quantus/L09_PushNeg.lean:62
-#: Game/Levels/Quantus/L09_PushNeg.lean:65
-msgid "Now you can apply §0"
-msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
+#: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**Robo**: Jetzt setzt du mit §0 eine Zahl ein."
 
 #. §0: `push Not`
-#: Game/Levels/Quantus/L09_PushNeg.lean:74
+#: Game/Levels/Quantus/L09_PushNeg.lean:39
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr "Statt diesem Theorem kannst du §0 verwenden."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:97
+#: Game/Levels/Quantus/L09_PushNeg.lean:62
 msgid "Conclusion Quantus L09"
 msgstr ""
 "Die Formalosophinnen sind ganz begeistert. Nachdem sich der Beifall gelegt hat, hast du auch einmal eine Frage.\n"
@@ -5570,48 +5548,104 @@ msgstr ""
 #. §1: `Set A`
 #. §2: `A → Prop`
 #. §3: `S : Set A`
-#. §4: `A → Prop`
-#. §5: `a : A`
-#. §6: `a ∈ S`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:23
+#. §4: `a : A`
+#. §5: `a ∈ S`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:28
 msgid ""
-"Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-"§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+"Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
+"surjective mappings §0, by interpreting §1 as §2: a subset §3\n"
+"can be identified with the map A → Prop sending §4 to §5. Here is an intermediate step."
 msgstr ""
 "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n"
 "\n"
 "**Du**: Was?\n"
 "\n"
-"**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe."
+"**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §2 identifizieren, die §4 auf die Aussage §5 wirft.\n"
+"\n"
+"**Cantor**:  Exaktemente!  Hier, ich gebe euch noch einen Zwischenschritt."
 
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:31
-msgid "Conclusion Cantor L10"
+#. §0: `p : A → Prop`
+#. §1: `intro`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:40
+msgid ""
+"[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
+"Start with §1."
+msgstr "**Du**:  Surjektiv heißt, jede Abbildung §0 hat ein Urbild. Also fange ich mal mit §1 an."
+
+#. §0: `«{f}»`
+#. §1: `«{A}»`
+#. §2: `«{p}»`
+#. §3: `let`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:47
+msgid ""
+"[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
+"§1. Introduce a name for the subset corresponding to §2 with §3."
+msgstr "**Robo**:  Die Surjektivität von §0 liefert dir Urbilder von *Teilmengen* von §1. Vielleicht sollten wir mit §3 der Teilmenge, die §2 entspricht, einen Namen geben?"
+
+#. §0: `{ x | «{p}» x }`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:52
+msgid "[Hint jx4gv] Consider the set §0."
+msgstr "**Robo**: Das wird wohl die Menge §0 sein, oder?"
+
+#. §0: `simp`
+#. §1: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:60
+msgid "[Hint mr4el] Use §0 in combination with §1."
+msgstr "**Robo**:  Irgendeine Kombination von §0 und §1 sollte das jetzt zu Ende bringen."
+
+#. §0: `simp`
+#. §1: `«{S}»`
+#. §2: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:69
+msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
+msgstr "**Robo**:  Irgendeine Kombination von §0, §1 und §2 sollte das jetzt zu Ende bringen."
+
+#. §0: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:77
+msgid ""
+"Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
+"§0."
+msgstr "**Robo**:  Das brauchen wir bestimmt gleich.  Ich speicher das mal als §0."
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:12
+msgid "Intro Cantor L11"
+msgstr "**Cantor**:  Jetzt alles klar?"
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
+msgid "Conclusion Cantor L11"
 msgstr "**Du**:  Ich weiß nicht, ob das wirklich einfacher war …"
 
 #. §0: `cantor_diagonal`
-#. §1: `apply cantor_diagonal at «{hf}»`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:46
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:57
-msgid "Use §0 as e.g. §1"
+#. §1: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:35
+msgid ""
+"[Hint d92p1] Use §0 now? First translate with\n"
+"§1."
 msgstr ""
 "**Du**: Also hier jetzt §0 verwenden?\n"
 "\n"
-"**Robo**: Vermutlich, zum Beispiel mit §1."
+"**Robo**: Erst übersetzen, mit §1."
 
 #. §0: `cantor_diagonal`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:65
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:72
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
 msgid "[Hint mhjv] Try §0"
 msgstr "**Cantor**: Nein, nein! Wir wollten doch mein schönes Theorem §0 verwenden!"
 
+#. §0: `«{hf}»`
+#. §1: `«{A}» → «{A}» → Prop`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:56
+msgid "[Hint u9e76] Now §0 is about a map §1."
+msgstr "**Robo**:  Jetzt ist §0 eine Aussage über eine Abbildung §1."
+
 #. §0: `¬ .`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:79
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:62
 msgid "Does §0 have no fixed points?"
 msgstr "**Cantor**: Hatte ihr euch nicht schon überlegt, dass §0 keine Fixpunkte hat?"
 
 #. §0: `ℕ → ℕ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:25
-msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:25
+msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 "**Cantor**:  Einfacher?  Weiß nicht.  Aber eleganter!\n"
 "\n"
@@ -5623,8 +5657,8 @@ msgstr ""
 "\n"
 "**Cantor**:  Es gibt in diesem Zelt überabzählbar viele Plätze!"
 
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:36
-msgid "Conclusion Cantor L11"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:36
+msgid "Conclusion Cantor L12"
 msgstr ""
 "**Robo**:  Vielen Dank für die Vorstellung!\n"
 "\n"
@@ -5634,18 +5668,18 @@ msgstr ""
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:52
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:52
 msgid "The name of mapping §0 is §1"
 msgstr ""
 "**Du**:  Wie hieß noch einmal die Abbildung §0?\n"
 "\n"
 "**Robo**: §1"
 
-#: Game/Levels/Cantor.lean:19
+#: Game/Levels/Cantor.lean:20
 msgid "Cantor"
 msgstr "Cantor"
 
-#: Game/Levels/Cantor.lean:39
+#: Game/Levels/Cantor.lean:40
 msgid "Intro Cantor"
 msgstr ""
 "Ihr seid neben einem großen Zelt gelandet.\n"
@@ -7861,43 +7895,48 @@ msgstr ""
 "\n"
 "Da hört ihr jemanden aus der Menge flüstern: §0 …\n"
 "\n"
-"**Robo**:  Ah, ja.  Es gibt da dieses Lemma §1: jede strikt monotone Abbildung ist injektiv. Und es gibt auch jede Menge Lemmas, mit denen man zeigen kann, dass Abbildungen monoton sind. Zum Beispiel:\n"
+"**Robo**: Ah, ja. Es gibt da dieses Lemma §1: jede strikt monotone Abbildung ist injektiv. Und es gibt auch jede Menge Lemmas, mit denen man zeigen kann, dass Abbildungen monoton sind. Zum Beispiel:\n"
 "\n"
-"§2  – die Summe zweier strikt monotoner Abbildungen ist wieder strikt monoton\n"
+"- §2 – die Summe zweier strikt monotoner Abbildungen ist wieder strikt monoton\n"
+"- §3 – für ungerades §4 ist §5 strikt monoton\n"
 "\n"
-"§3 – für ungerades §4 ist §5 strikt monoton\n"
-"\n"
-"Wollen wir es damit einmal versuchen?"
+"Ich schlage vor, du fängst mal mit §1 an!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Robo**: §0 ist, wonach du suchst."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:42
-#: Game/Levels/Mono/L05_StrictMono.lean:46
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
+
+#: Game/Levels/Mono/L05_StrictMono.lean:49
+#: Game/Levels/Mono/L05_StrictMono.lean:53
 msgid "Try again from the beginning"
 msgstr "**Robo**: Ich glaube, dieser Weg ist zu steinig. Fang lieber nochmals von vorne an!"
 
 #. §0: `Odd 3`
-#: Game/Levels/Mono/L05_StrictMono.lean:56
+#: Game/Levels/Mono/L05_StrictMono.lean:63
 msgid "§0 is trivial"
 msgstr "**Du**: §0. Ist das nicht eine Trivialität? Warte mal!"
 
-#: Game/Levels/Mono/L05_StrictMono.lean:59
+#: Game/Levels/Mono/L05_StrictMono.lean:66
 msgid "The next part is elementary"
 msgstr "**Du**: Ha! Und dieser Teil geht jetzt vermutlich wieder ganz elementar."
 
 #. §0: `unfold`
 #. §1: `StrictMono`
-#: Game/Levels/Mono/L05_StrictMono.lean:67
+#: Game/Levels/Mono/L05_StrictMono.lean:74
 msgid "Use §0 to look into definition of §1"
 msgstr ""
 "**Du**: Oder …?\n"
 "\n"
 "**Robo**: Doch, doch. Schau mal mit §0 in die Definition von §1 hinein."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:71
+#: Game/Levels/Mono/L05_StrictMono.lean:78
 msgid "[Doc.Theorem] StrictMono.injective"
 msgstr "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wertebereichen) ist injektiv."
 
@@ -7906,7 +7945,7 @@ msgstr "Jede strikt monotone Abbildung (zwischen geeigneten Definitions- und Wer
 #. §2: `h_odd : Odd n`
 #. §3: `Odd.strictMono_pow h_odd`
 #. §4: `h_odd.strictMono_pow`
-#: Game/Levels/Mono/L05_StrictMono.lean:74
+#: Game/Levels/Mono/L05_StrictMono.lean:81
 msgid ""
 "[Doc.Theorem] Odd.strictMono_pow\n"
 "for odd §0, §1 is strictly monotonous\n"
@@ -7919,7 +7958,7 @@ msgstr ""
 #. §0: `f`
 #. §1: `g`
 #. §2: `f + g`
-#: Game/Levels/Mono/L05_StrictMono.lean:80
+#: Game/Levels/Mono/L05_StrictMono.lean:87
 msgid ""
 "[Doc.Theorem] StrictMono.add\n"
 "if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
@@ -8958,6 +8997,22 @@ msgstr "Erkunde ein fremdes Universum mit deinem Smart-Elf Robo!"
 msgid "[Game] CaptionLong"
 msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Themen aus der Eingangsphase des Bachelorstudiums Mathematik."
 
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**Cantor**: Und jetzt nehmt ihr dieses schöne Diagonalargument und zeigt noch einmal, dass es keine surjektiven Abbildungen §0 gibt! Ihr müsst nur §1 auffassen als §2!\n"
+#~ "\n"
+#~ "**Du**: Was?\n"
+#~ "\n"
+#~ "**Robo**:  Eine Teilmenge §3 kann man mit der Abbildung §4 identifizieren, die §5 auf die Aussage §6 wirft. Für Formalosophen ist das dasselbe."
+
+#~ msgid "Use §0 as e.g. §1"
+#~ msgstr ""
+#~ "**Du**: Also hier jetzt §0 verwenden?\n"
+#~ "\n"
+#~ "**Robo**: Vermutlich, zum Beispiel mit §1."
+
 #~ msgid "Remind: §0 from §1 could be helpful"
 #~ msgstr "**Robo**: Denk daran, dass §0 irgendwann hilfreich sein könnte."
 
@@ -9224,3 +9279,25 @@ msgstr "Dieses Spiel illustriert Beweisführung mit Lean anhand verschiedener Th
 
 #~ msgid "QED"
 #~ msgstr "QED"
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Robo**: Dieser Lösungsweg scheint mir etwas zu schwierig.\n"
+#~ "  Ich würde nochmal zurückgehen und §0 behalten, damit du schlussendlich §1 benutzen kannst."
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Robo**: Gute Wahl! Jetzt kannst du §0 verwenden."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Robo**: Jetzt setzt du mit §0 eine Zahl ein, und danach hilft vermutlich das Lemma §1.\n"
+#~ "\n"
+#~ "**Du**: Könnte ich jetzt schon §2 anwenden?\n"
+#~ "\n"
+#~ "**Robo**: Nein, §3 kann nicht innerhalb von Quantoren umschreiben.\n"
+#~ "\n"
+#~ "**Du**: Aber wie würde ich das machen?\n"
+#~ "\n"
+#~ "**Robo**: Zeig ich dir später, nicht hier vor großem Publikum. Ich würde jetzt lieber mit §4 eine richtige Zahl angeben, und danach umschreiben."

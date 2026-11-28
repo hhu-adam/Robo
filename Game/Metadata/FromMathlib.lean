@@ -28,10 +28,10 @@ import Mathlib.Algebra.Order.Ring.Star
 --import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Ring.Rat
 import Mathlib.Data.Fin.VecNotation
-import Mathlib.Data.Int.SuccPred
-import Mathlib.Data.Int.Star
+import Mathlib.Order.SuccPred.Int
+import Mathlib.Algebra.Order.Star.Int
 --import Mathlib.Data.Int.Star
 import Mathlib.Data.Nat.Prime.Defs
-import Mathlib.Data.Rat.Star
-import Mathlib.Data.Real.Basic
+import Mathlib.Algebra.Order.Star.Rat
+import Mathlib.Basic.Real.Basic
 import Mathlib.LinearAlgebra.Matrix.Trace

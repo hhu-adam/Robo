@@ -1,4 +1,4 @@
-import GameServer.Commands
+import GameApi
 
 /--
 With `apply`, you apply an implication `hAB : A → B`:
@@ -460,7 +460,7 @@ you can use `rw [h]` to replace all occurrences of `X` in the proof target with 
   | `2*a + 2*b > 2*a` | `rw [h]`       | `f a + 2*b > f a` |
   |                   | `nth_rw 2 [h]` | `2*a + f b > 2*a` |
 -/
-TacticDoc rw
+TacticDoc rw insert "rw [$,]"
 
 /--
 The `simp` tactic attempts to apply a large number of lemmas to simplify a given expression.
@@ -488,7 +488,7 @@ Es bestehen aber drei grosse Unterschiede zu `rw`:
 * `simp_rw` führt nach jedem Schritt ein `simp only []` aus und vereinfacht dadurch grundlegendste
   Sachen.
 -
-TacticDoc simp_rw
+TacticDoc simp_rw insert "simp_rw [$,]"
 -/
 
 /--

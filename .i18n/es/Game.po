@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.31.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20\n"
+"POT-Creation-Date: 2026-11-27\n"
 "PO-Revision-Date: 2026-07-13 16:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Claude Code (pretraducción)\n"
 
-#: GameServer/RpcHandlers.lean:169
+#: GameServer/RpcHandlers.lean:33
 msgid "level completed! 🎉"
 msgstr "– ¡Problema resuelto! –"
 
-#: GameServer/RpcHandlers.lean:177
+#: GameServer/RpcHandlers.lean:41
 msgid "level completed with warnings… 🎭"
 msgstr "– ¡Problema resuelto! Pero no del todo como estaba previsto … –"
 
-#: GameServer/RpcHandlers.lean:190
+#: GameServer/RpcHandlers.lean:54
 msgid "intermediate goal solved! 🎉"
 msgstr "– ¡Objetivo intermedio conseguido! –"
 
@@ -3867,47 +3867,25 @@ msgid "Remind about §0"
 msgstr "**Tú**: Vaya. Un §0 a la izquierda del todo. Qué sorpresa …"
 
 #. §0: `Odd`
-#. §1: `not_odd_iff_even`
 #: Game/Levels/Quantus/L09_PushNeg.lean:27
-#: Game/Levels/Quantus/L09_PushNeg.lean:38
-msgid "Go back, keep §0 and try §1"
+#, fuzzy
+msgid "Go back, keep §0."
 msgstr ""
 "**Glifo**: Este camino me parece un poco demasiado complicado.\n"
-"  Yo volvería atrás y conservaría §0, para que al final puedas usar §1."
+"Yo volvería atrás y conservaría §0."
 
 #. §0: `use`
-#. §1: `not_odd_iff_even`
-#. §2: `not_odd_iff_even`
-#. §3: `rw`
-#. §4: `use`
-#: Game/Levels/Quantus/L09_PushNeg.lean:53
-msgid ""
-"Try §0 with a number and then §1. You can not use §2\n"
-"directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
-msgstr ""
-"**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n"
-"\n"
-"**Tú**: ¿Podría aplicar ya §2?\n"
-"\n"
-"**Glifo**: No, §3 no puede reescribir dentro de cuantificadores.\n"
-"\n"
-"**Tú**: ¿Y cómo lo haría entonces?\n"
-"\n"
-"**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después."
-
-#. §0: `not_odd_iff_even`
-#: Game/Levels/Quantus/L09_PushNeg.lean:58
-#: Game/Levels/Quantus/L09_PushNeg.lean:62
-#: Game/Levels/Quantus/L09_PushNeg.lean:65
-msgid "Now you can apply §0"
-msgstr "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0."
+#: Game/Levels/Quantus/L09_PushNeg.lean:30
+#, fuzzy
+msgid "Try §0 with a number."
+msgstr "**Glifo**: Ahora introduces un número con §0."
 
 #. §0: `push Not`
-#: Game/Levels/Quantus/L09_PushNeg.lean:74
+#: Game/Levels/Quantus/L09_PushNeg.lean:39
 msgid "[Doc.Theorem] can use §0 instead"
 msgstr "En lugar de este teorema puedes usar §0."
 
-#: Game/Levels/Quantus/L09_PushNeg.lean:97
+#: Game/Levels/Quantus/L09_PushNeg.lean:62
 msgid "Conclusion Quantus L09"
 msgstr ""
 "Las formalósofas están entusiasmadas. Cuando se apagan los aplausos, esta vez eres tú quien tiene una pregunta.\n"
@@ -5570,48 +5548,114 @@ msgstr ""
 #. §1: `Set A`
 #. §2: `A → Prop`
 #. §3: `S : Set A`
-#. §4: `A → Prop`
-#. §5: `a : A`
-#. §6: `a ∈ S`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:23
+#. §4: `a : A`
+#. §5: `a ∈ S`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:28
+#, fuzzy
 msgid ""
-"Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
-"§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+"Intro Cantor L10: Use the diagonal argument to show once more that there are no\n"
+"surjective mappings §0, by interpreting §1 as §2: a subset §3\n"
+"can be identified with the map A → Prop sending §4 to §5. Here is an intermediate step."
 msgstr ""
 "**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n"
 "\n"
 "**Tú**: ¿Qué?\n"
 "\n"
-"**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §4 que lleva §5 al enunciado §6. Para los formalósofos es lo mismo."
+"**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §2 que lleva §4 al enunciado §5.\n"
+"\n"
+"**Cantor**: ¡Exactamente! Tomad, os doy además un paso intermedio."
 
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:31
-msgid "Conclusion Cantor L10"
+#. §0: `p : A → Prop`
+#. §1: `intro`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:40
+#, fuzzy
+msgid ""
+"[Hint ragzs] Surjective means: every map §0 has a preimage.\n"
+"Start with §1."
+msgstr "**Tú**: Sobreyectiva significa que toda aplicación §0 tiene una preimagen. Así que empiezo con §1."
+
+#. §0: `«{f}»`
+#. §1: `«{A}»`
+#. §2: `«{p}»`
+#. §3: `let`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:47
+#, fuzzy
+msgid ""
+"[Hint mc68k] The surjectivity of §0 gives preimages of *subsets* of\n"
+"§1. Introduce a name for the subset corresponding to §2 with §3."
+msgstr "**Glifo**: La sobreyectividad de §0 te da preimágenes de *subconjuntos* de §1. ¿Quizá deberíamos usar §3 para darle un nombre al subconjunto que corresponde a §2?"
+
+#. §0: `{ x | «{p}» x }`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:52
+#, fuzzy
+msgid "[Hint jx4gv] Consider the set §0."
+msgstr "**Glifo**: Será el conjunto §0, ¿no?"
+
+#. §0: `simp`
+#. §1: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:60
+#, fuzzy
+msgid "[Hint mr4el] Use §0 in combination with §1."
+msgstr "**Glifo**: Alguna combinación de §0 y §1 debería terminar esto ahora."
+
+#. §0: `simp`
+#. §1: `«{S}»`
+#. §2: `«{ha}»`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:69
+#, fuzzy
+msgid "[Hint kq7tw] Use §0 in combination with §1 and §2."
+msgstr "**Glifo**: Alguna combinación de §0, §1 y §2 debería terminar esto ahora."
+
+#. §0: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L10_SurjectiveMem.lean:77
+#, fuzzy
+msgid ""
+"Conclusion Cantor L10: We will surely need this in a moment. I'll save it as\n"
+"§0."
+msgstr "**Glifo**: Seguro que esto lo necesitamos enseguida. Lo guardo como §0."
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:12
+#, fuzzy
+msgid "Intro Cantor L11"
+msgstr "**Cantor**: ¿Ahora está todo claro?"
+
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:19
+msgid "Conclusion Cantor L11"
 msgstr "**Tú**: No sé si esto ha sido realmente más fácil…"
 
 #. §0: `cantor_diagonal`
-#. §1: `apply cantor_diagonal at «{hf}»`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:46
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:57
-msgid "Use §0 as e.g. §1"
+#. §1: `surjective_mem_of_surjective`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:35
+#, fuzzy
+msgid ""
+"[Hint d92p1] Use §0 now? First translate with\n"
+"§1."
 msgstr ""
-"**Tú**: Entonces, ¿aquí hay que usar §0?\n"
+"**Tú**: Entonces, ¿aquí hay que usar ahora §0?\n"
 "\n"
-"**Glifo**: Probablemente. Por ejemplo, con §1."
+"**Glifo**: Primero hay que traducir, con §1."
 
 #. §0: `cantor_diagonal`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:65
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:72
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:44
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:51
 msgid "[Hint mhjv] Try §0"
 msgstr "**Cantor**: ¡No, no! ¡Queríamos usar mi precioso teorema §0!"
 
+#. §0: `«{hf}»`
+#. §1: `«{A}» → «{A}» → Prop`
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:56
+#, fuzzy
+msgid "[Hint u9e76] Now §0 is about a map §1."
+msgstr "**Glifo**: Ahora §0 es un enunciado sobre una aplicación §1."
+
 #. §0: `¬ .`
-#: Game/Levels/Cantor/L10_CantorPowerset.lean:79
+#: Game/Levels/Cantor/L11_CantorPowerset.lean:62
 msgid "Does §0 have no fixed points?"
 msgstr "**Cantor**: ¿No habíais pensado ya que §0 no tiene puntos fijos?"
 
 #. §0: `ℕ → ℕ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:25
-msgid "Intro Cantor L11: Show that set of mapping §0 is uncountable"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:25
+msgid "Intro Cantor L12: Show that set of mapping §0 is uncountable"
 msgstr ""
 "**Cantor**: ¿Más fácil? No lo sé. ¡Pero más elegante!\n"
 "\n"
@@ -5623,8 +5667,8 @@ msgstr ""
 "\n"
 "**Cantor**: ¡En esta carpa hay una cantidad no numerable de asientos!"
 
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:36
-msgid "Conclusion Cantor L11"
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:36
+msgid "Conclusion Cantor L12"
 msgstr ""
 "**Glifo**: ¡Muchas gracias por la función!\n"
 "\n"
@@ -5634,18 +5678,18 @@ msgstr ""
 
 #. §0: `n ↦ n + 1`
 #. §1: `succ`
-#: Game/Levels/Cantor/L11_SequenceUncountable.lean:52
+#: Game/Levels/Cantor/L12_SequenceUncountable.lean:52
 msgid "The name of mapping §0 is §1"
 msgstr ""
 "**Tú**: ¿Cómo se llamaba la aplicación §0?\n"
 "\n"
 "**Glifo**: §1"
 
-#: Game/Levels/Cantor.lean:19
+#: Game/Levels/Cantor.lean:20
 msgid "Cantor"
 msgstr "Cantor"
 
-#: Game/Levels/Cantor.lean:39
+#: Game/Levels/Cantor.lean:40
 msgid "Intro Cantor"
 msgstr ""
 "Habéis aterrizado junto a una gran carpa.\n"
@@ -7853,6 +7897,7 @@ msgstr "**Glifo**: Recuerda que tus \"tuplas\" §0 y §1 son en realidad dos apl
 #. §4: `n`
 #. §5: `x ↦ x ^ n`
 #: Game/Levels/Mono/L05_StrictMono.lean:34
+#, fuzzy
 msgid ""
 "§0 is useful. §1 says that each strictly monotone mapping\n"
 "is injective. To show that a mapping is monotone one can use e.g. §2 or §3,\n"
@@ -7866,41 +7911,46 @@ msgstr ""
 "\n"
 "**Glifo**: Ah, sí. Existe este lema §1: toda aplicación estrictamente monótona es inyectiva. Y también hay un montón de lemas con los que se puede demostrar que ciertas aplicaciones son monótonas. Por ejemplo:\n"
 "\n"
-"§2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §2 – la suma de dos aplicaciones estrictamente monótonas vuelve a ser estrictamente monótona\n"
+"- §3 – para §4 impar, §5 es estrictamente monótona\n"
 "\n"
-"§3 – para §4 impar, §5 es estrictamente monótona\n"
-"\n"
-"¿Lo intentamos con eso?"
+"¡Te propongo que empieces con §1!"
 
 #. §0: `apply`
 #: Game/Levels/Mono/L05_StrictMono.lean:38
 msgid "§0 is what is looked for"
 msgstr "**Glifo**: §0 es lo que andas buscando."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:42
-#: Game/Levels/Mono/L05_StrictMono.lean:46
+#: Game/Levels/Mono/L05_StrictMono.lean:43
+msgid ""
+"[Hint that does not get triggered]\n"
+"This looks bad.  Try something else."
+msgstr ""
+
+#: Game/Levels/Mono/L05_StrictMono.lean:49
+#: Game/Levels/Mono/L05_StrictMono.lean:53
 msgid "Try again from the beginning"
 msgstr "**Glifo**: Me parece que este camino es demasiado lioso. ¡Mejor vuelve a empezar desde el principio!"
 
 #. §0: `Odd 3`
-#: Game/Levels/Mono/L05_StrictMono.lean:56
+#: Game/Levels/Mono/L05_StrictMono.lean:63
 msgid "§0 is trivial"
 msgstr "**Tú**: §0. ¿No es eso una trivialidad? ¡Espera un momento!"
 
-#: Game/Levels/Mono/L05_StrictMono.lean:59
+#: Game/Levels/Mono/L05_StrictMono.lean:66
 msgid "The next part is elementary"
 msgstr "**Tú**: ¡Ja! Seguro que lo demás es muy básico."
 
 #. §0: `unfold`
 #. §1: `StrictMono`
-#: Game/Levels/Mono/L05_StrictMono.lean:67
+#: Game/Levels/Mono/L05_StrictMono.lean:74
 msgid "Use §0 to look into definition of §1"
 msgstr ""
 "**Tú**: ¿O no…?\n"
 "\n"
 "**Glifo**: Que sí, que sí. Usa §0 para mirar dentro de la definición de §1."
 
-#: Game/Levels/Mono/L05_StrictMono.lean:71
+#: Game/Levels/Mono/L05_StrictMono.lean:78
 msgid "[Doc.Theorem] StrictMono.injective"
 msgstr "Toda aplicación estrictamente monótona (entre dominios y codominios adecuados) es inyectiva."
 
@@ -7909,7 +7959,7 @@ msgstr "Toda aplicación estrictamente monótona (entre dominios y codominios ad
 #. §2: `h_odd : Odd n`
 #. §3: `Odd.strictMono_pow h_odd`
 #. §4: `h_odd.strictMono_pow`
-#: Game/Levels/Mono/L05_StrictMono.lean:74
+#: Game/Levels/Mono/L05_StrictMono.lean:81
 msgid ""
 "[Doc.Theorem] Odd.strictMono_pow\n"
 "for odd §0, §1 is strictly monotonous\n"
@@ -7922,7 +7972,7 @@ msgstr ""
 #. §0: `f`
 #. §1: `g`
 #. §2: `f + g`
-#: Game/Levels/Mono/L05_StrictMono.lean:80
+#: Game/Levels/Mono/L05_StrictMono.lean:87
 msgid ""
 "[Doc.Theorem] StrictMono.add\n"
 "if §0 and §1 strictly monotonous, then also §2 strictly monotonous"
@@ -8960,3 +9010,41 @@ msgstr "¡Explora un universo desconocido con tu duende inteligente Glifo!"
 #: Game.lean:41
 msgid "[Game] CaptionLong"
 msgstr "Este juego ilustra la demostración de teoremas con Lean mediante diversos temas de la etapa inicial del grado en Matemáticas."
+
+#~ msgid ""
+#~ "Intro Cantor L10: Show that there are no surjective mappings §0 by interpreting\n"
+#~ "§1 as §2. Sub set §3 can be seen as §4, which casts §5 on statement §6"
+#~ msgstr ""
+#~ "**Cantor**: ¡Y ahora coged este precioso argumento diagonal y demostrad otra vez que no existen aplicaciones sobreyectivas §0! ¡Solo tenéis que interpretar §1 como §2!\n"
+#~ "\n"
+#~ "**Tú**: ¿Qué?\n"
+#~ "\n"
+#~ "**Glifo**: Un subconjunto §3 se puede identificar con la aplicación §4 que lleva §5 al enunciado §6. Para los formalósofos es lo mismo."
+
+#~ msgid "Use §0 as e.g. §1"
+#~ msgstr ""
+#~ "**Tú**: Entonces, ¿aquí hay que usar §0?\n"
+#~ "\n"
+#~ "**Glifo**: Probablemente. Por ejemplo, con §1."
+
+#~ msgid "Go back, keep §0 and try §1"
+#~ msgstr ""
+#~ "**Glifo**: Este camino me parece un poco demasiado complicado.\n"
+#~ "  Yo volvería atrás y conservaría §0, para que al final puedas usar §1."
+
+#~ msgid ""
+#~ "Try §0 with a number and then §1. You can not use §2\n"
+#~ "directly, as §3 cannot be applied inside of quantors. Try §4 with a number."
+#~ msgstr ""
+#~ "**Glifo**: Ahora introduces un número con §0, y después probablemente te ayude el lema §1.\n"
+#~ "\n"
+#~ "**Tú**: ¿Podría aplicar ya §2?\n"
+#~ "\n"
+#~ "**Glifo**: No, §3 no puede reescribir dentro de cuantificadores.\n"
+#~ "\n"
+#~ "**Tú**: ¿Y cómo lo haría entonces?\n"
+#~ "\n"
+#~ "**Glifo**: Te lo enseño más tarde, no aquí con público. Yo ahora preferiría dar un número concreto con §4, y reescribiría después."
+
+#~ msgid "Now you can apply §0"
+#~ msgstr "**Glifo**: ¡Buena elección! Ahora ya puedes usar §0."
